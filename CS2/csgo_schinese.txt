@@ -1583,8 +1583,6 @@
 		"MidBridge"		 "中桥"
 		"Oven"				"烤箱"
 		"Engine"			"引擎"
-		//"LongDog"			"楼梯间"
-		//Jura
 		"Church"			"教堂"
 		"TLong"				"T长廊"
 		"Bench"				"长凳"
