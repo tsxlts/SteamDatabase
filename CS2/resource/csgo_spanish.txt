@@ -2671,7 +2671,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"Attrib_OperationMVPs"						"JMV en la operación: %s1"
 		"Attrib_ItemsCount"							"Número de objetos: %s1"
 		"Attrib_KeychainSeed"						"Plantilla del colgante: %s1"
-
 		"Attrib_StarsAttained"						"Estrellas de la operación obtenidas: %s1"
 		"Attrib_QuestsComplete"						"Misiones completadas en la campaña de la operación: %s1"
 		"Attrib_EventsComplete"						"Misiones de Operación Blitz completadas: %s1"
@@ -2987,7 +2986,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"CSGO_Event_Details_Desc"					"Se obtuvo de forma aleatoria durante la partida de %s1 entre %s2 y %s3."
 		"CSGO_Event_Details_MvpDesc"				"Se obtuvo de forma aleatoria durante la partida de %s1 entre %s2 y %s3. Está autografiado por %s4, quien fue el Jugador Más Valioso de la ronda."
 		"CSGO_Event_Details_MvpDesc_UnknownPlayer"	"Se obtuvo de forma aleatoria durante la partida de %s1 entre %s2 y %s3. Está autografiado por el jugador profesional que fue el Jugador Más Valioso de la ronda."
-
 		"CSGO_Special_Event_Desc_1"					"Este artículo conmemora el lanzamiento inicial de Danger Zone. Se entregó durante las primeras semanas de partidas de Danger Zone en Blacksite."
 		"StickerKit_dz_blacksite_foil"				"Blacksite (reflectante)"
 		//-------------------------------------------------------------------------------------------
@@ -4279,7 +4277,7 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"CSGO_crate_key_community_35"			"Llave de caja Fiebre"
 		"CSGO_crate_key_community_35_desc"		"Esta llave solo abre cajas Fiebre"
 		
-"SprayKit_vcap1_ace_01"		"Ace"
+		"SprayKit_vcap1_ace_01"		"Ace"
 "SprayKit_vcap1_banana"		"Banana"
 "SprayKit_vcap1_cerberus"		"Cerbero"
 "SprayKit_vcap1_clutch_01"		"Rey Clutch"
@@ -4727,7 +4725,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"CSGO_Tournament_Event_Stage_46"		"Fase de grupos"
 		"CSGO_Tournament_Event_Stage_47"		"Fase de grupos"
 		"CSGO_Tournament_Event_Stage_48"		"Fase de grupos"
-
 		"CSGO_Tournament_Event_Stage_Display_1"			"Exhibición"
 		"CSGO_Tournament_Event_Stage_Display_2"			"Fase de grupos | Primera fase"
 		"CSGO_Tournament_Event_Stage_Display_3"			"BYOC"
@@ -4776,7 +4773,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"CSGO_Tournament_Event_Stage_Display_46"		"Fase de grupos | Partida eliminatoria 1 de 3"
 		"CSGO_Tournament_Event_Stage_Display_47"		"Fase de grupos | Partida eliminatoria 2 de 3"
 		"CSGO_Tournament_Event_Stage_Display_48"		"Fase de grupos | Partida eliminatoria"
-
 		// Match global stats stage names
 		"CSGO_MatchInfo_Stage_Group"	"Fase de grupos"
 		"CSGO_MatchInfo_Stage_GroupStage"	"Fase de grupos"
@@ -4972,9 +4968,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"CSGO_TeamID_131"       "Rare Atom"
 		"CSGO_TeamID_132"       "Flyquest"
 		"CSGO_TeamID_133"       "Passion UA"
-
-
-
 		"Place_Name_1st"		"Campeón"
 		"Place_Name_2nd"		"Gran finalista"
 		"Place_Name_3rd-4th"	"Semifinalista"
@@ -24155,8 +24148,13 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"CSGO_Watch_Loading_Tournament_23"   "Cargando partidas del Perfect World Shanghái 2024..."
 
 		//
-		// 2024 Perfect World Shanghai 2024 CS2 Major Championship Strings Block End
+//
+//
+//
+	//
+		// 2025 BLAST.tv Austin 2025 CS2 Major Championship Strings Block End
 		// ======================================
+
 
 // ---------------------------------------------------------------------------------------------
 // PERFECTWORLD_02 MUSIC KIT
@@ -24871,7 +24869,7 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"StickerKit_elemental_craft_foil_fire_three"						"Fuego sinuoso (reflectante)"
 		"StickerKit_elemental_craft_lenticular_blood_one"					"Corriente rubí (lenticular)"
 		"StickerKit_elemental_craft_lenticular_blood_two"					"Ola rubí (lenticular)"
-		"PatchKit_patch_banana"            "Banana loca"
+"PatchKit_patch_banana"            "Banana loca"
 		"PatchKit_desc_patch_banana"       "<i>El agente te servirá como escala.</i>"
 		"PatchKit_patch_boss"              "El jefe"
 		"PatchKit_desc_patch_boss"         "<i>Pesado es el agente que lleva la corona.</i>"
@@ -36686,8 +36684,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"SFUI_ProPlayer_ultimate" "Roland Tomkowiak"
 		"SFUI_ProPlayer_zerrofix" "Eduard Petrovskyi"
 		"SFUI_ProPlayer_ztr" "Erik Gustafsson"
-
-
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Leaderboards
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -42167,13 +42163,16 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"quest_11015_var_desc:p{mission-points}"	 	"Gana {d:mission-points} ronda en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>.#|#Gana {d:mission-points} rondas en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Gana {d:mission-points} ronda.#|#Gana {d:mission-points} rondas."
 
-// crow_mask_44853_comment
-// crow_mask_44854_comment
+// crow_mask_46950_comment
+// crow_mask_46951_comment
 }
 
 
 
 
 }
+
+
+
 
 

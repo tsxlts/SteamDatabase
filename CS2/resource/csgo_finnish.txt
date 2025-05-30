@@ -2670,7 +2670,6 @@
 		"Attrib_OperationMVPs"						"Operaatiotähtiä: %s1"
 		"Attrib_ItemsCount"							"Esineiden määrä: %s1"
 		"Attrib_KeychainSeed"						"Riipuspohja: %s1"
-
 		"Attrib_StarsAttained"						"Saadut operaation tähdet: %s1"
 		"Attrib_QuestsComplete"						"Suoritettuja operaation kampanjatehtäviä: %s1"
 		"Attrib_EventsComplete"						"operaatio Blitz Missions toteutui: %s1"
@@ -2986,7 +2985,6 @@
 		"CSGO_Event_Details_Desc"					"Löydettiin joukkueiden %s2 ja %s3 välisessä %s1."
 		"CSGO_Event_Details_MvpDesc"				"Löydettiin joukkueiden %s2 ja %s3 välisessä %s1, sisältää erän arvokkaimman pelaajan %s4 nimikirjoituksen."
 		"CSGO_Event_Details_MvpDesc_UnknownPlayer"	"Löydettiin joukkueiden %s2 ja %s3 välisessä %s1, sisältää erän arvokkaimman ammattilaistason pelaajan nimikirjoituksen."
-
 		"CSGO_Special_Event_Desc_1"					"Tämä esine on julkaistu Vaaravyöhykkeen alkuperäisjulkaisun muistoksi. Se tuli esinelöytönä Blacksite-kartassa Vaaravyöhyke-pelien ensimmäisten viikkojen ajan."
 		"StickerKit_dz_blacksite_foil"				"Blacksite (kiilto)"
 		//-------------------------------------------------------------------------------------------
@@ -4326,7 +4324,7 @@
 		"CSGO_crate_key_community_35"			"Fever-aselaatikon avain"
 		"CSGO_crate_key_community_35_desc"		"Tämä avain avaa vain Fever-aselaatikoita"
 		
-"SprayKit_vcap1_ace_01"		"Ässä"
+		"SprayKit_vcap1_ace_01"		"Ässä"
 "SprayKit_desc_vcap1_ace_01"	" "
 "SprayKit_vcap1_banana"		"Banaani"
 "SprayKit_desc_vcap1_banana"	" "
@@ -4836,7 +4834,6 @@
 		"CSGO_Tournament_Event_Stage_46"		"Lohkovaihe"
 		"CSGO_Tournament_Event_Stage_47"		"Lohkovaihe"
 		"CSGO_Tournament_Event_Stage_48"		"Lohkovaihe"
-
 		"CSGO_Tournament_Event_Stage_Display_1"			"Näytösottelu"
 		"CSGO_Tournament_Event_Stage_Display_2"			"Lohkovaihe | Ensimmäinen vaihe"
 		"CSGO_Tournament_Event_Stage_Display_3"			"BYOC"
@@ -4885,7 +4882,6 @@
 		"CSGO_Tournament_Event_Stage_Display_46"		"Lohkovaihe | Pudotusottelu 1/3"
 		"CSGO_Tournament_Event_Stage_Display_47"		"Lohkovaihe | Pudotusottelu 2/3"
 		"CSGO_Tournament_Event_Stage_Display_48"		"Lohkovaihe | Pudotusottelu"
-
 		// Match global stats stage names
 		"CSGO_MatchInfo_Stage_Group"	"Lohkovaihe"
 		"CSGO_MatchInfo_Stage_GroupStage"	"Lohkovaihe"
@@ -5081,9 +5077,6 @@
 		"CSGO_TeamID_131"       "Rare Atom"
 		"CSGO_TeamID_132"       "Flyquest"
 		"CSGO_TeamID_133"       "Passion UA"
-
-
-
 		"Place_Name_1st"		"Mestarit"
 		"Place_Name_2nd"		"Finalisti"
 		"Place_Name_3rd-4th"	"Välierä"
@@ -24924,8 +24917,13 @@
 		"CSGO_Watch_Loading_Tournament_23"   "Ladataan Perfect World Shanghai 2024 -otteluita"
 
 		//
-		// 2024 Perfect World Shanghai 2024 CS2 Major Championship Strings Block End
+//
+//
+//
+	//
+		// 2025 BLAST.tv Austin 2025 CS2 Major Championship Strings Block End
 		// ======================================
+
 
 // ---------------------------------------------------------------------------------------------
 // PERFECTWORLD_02 MUSIC KIT
@@ -25858,7 +25856,7 @@
 		"StickerKit_elemental_craft_foil_fire_three"						"Kärvennyskiemura (kiilto)"
 		"StickerKit_elemental_craft_lenticular_blood_one"					"Rubiininpunainen roiskaus (live)"
 		"StickerKit_elemental_craft_lenticular_blood_two"					"Rubiinipunainen aalto (live)"
-		"PatchKit_patch_banana"            "Hullu banaani"
+"PatchKit_patch_banana"            "Hullu banaani"
 		"PatchKit_desc_patch_banana"       "<i>Vertailukelpoinen agentti.</i>"
 		"PatchKit_patch_boss"              "Kingi"
 		"PatchKit_desc_patch_boss"         "<i>Levoton kruunun painama on agentin pää.</i>"
@@ -37748,8 +37746,6 @@ Huomaa! Et voi käyttää kivääriä panssarihyökkäyspuvun kanssa."
 		"SFUI_ProPlayer_ultimate" "Roland Tomkowiak"
 		"SFUI_ProPlayer_zerrofix" "Eduard Petrovskyi"
 		"SFUI_ProPlayer_ztr" "Erik Gustafsson"
-
-
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Leaderboards
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -43241,13 +43237,16 @@ Huomaa! Et voi käyttää kivääriä panssarihyökkäyspuvun kanssa."
 		"quest_11015_var_desc:p{mission-points}"	 	"Voita {d:mission-points} erä pelimuodossa <b>{s:gamemode}: {s:location}</b>.#|#Voita {d:mission-points} erää pelimuodossa <b>{s:gamemode}: {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Voita {d:mission-points} erä.#|#Voita {d:mission-points} erää."
 
-// crow_mask_44853_comment
-// crow_mask_44854_comment
+// crow_mask_46950_comment
+// crow_mask_46951_comment
 }
 
 
 
 
 }
+
+
+
 
 

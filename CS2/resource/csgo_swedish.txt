@@ -2670,7 +2670,6 @@
 		"Attrib_OperationMVPs"						"Antal MVPs under operationen: %s1"
 		"Attrib_ItemsCount"							"Antal föremål: %s1"
 		"Attrib_KeychainSeed"						"Hängesmall: %s1"
-
 		"Attrib_StarsAttained"						"Uppnådda Operation-stjärnor: %s1"
 		"Attrib_QuestsComplete"						"Antal operationsuppdrag avklarade: %s1"
 		"Attrib_EventsComplete"						"Avklarade Blitz-uppdrag under operationen: %s1"
@@ -2986,7 +2985,6 @@
 		"CSGO_Event_Details_Desc"					"Den släpptes under %s1-matchen mellan %s2 och %s3."
 		"CSGO_Event_Details_MvpDesc"				"Den släpptes under %s1-matchen mellan %s2 och %s3, och signerades av %s4 som var den mest värdefulla spelaren under den rundan."
 		"CSGO_Event_Details_MvpDesc_UnknownPlayer"	"Den släpptes under %s1-matchen mellan %s2 och %s3, och signerades av den professionella spelaren som var den mest värdefulla spelaren i den rundan."
-
 		"CSGO_Special_Event_Desc_1"					"Detta föremål hyllar Danger Zone-lanseringen. Den kunde fås under de första veckorna i Danger Zone-matcher på Blacksite."
 		"StickerKit_dz_blacksite_foil"				"Blacksite (Foil)"
 		//-------------------------------------------------------------------------------------------
@@ -4278,7 +4276,7 @@
 		"CSGO_crate_key_community_35"			"Fever-nyckel"
 		"CSGO_crate_key_community_35_desc"		"Denna nyckel öppnar endast Fever-lådor"
 		
-"SprayKit_vcap1_ace_01"		"Ace"
+		"SprayKit_vcap1_ace_01"		"Ace"
 "SprayKit_vcap1_banana"		"Banana"
 "SprayKit_vcap1_cerberus"		"Cerberus"
 "SprayKit_vcap1_clutch_01"		"Clutch King"
@@ -4726,7 +4724,6 @@
 		"CSGO_Tournament_Event_Stage_46"		"Gruppspel"
 		"CSGO_Tournament_Event_Stage_47"		"Gruppspel"
 		"CSGO_Tournament_Event_Stage_48"		"Gruppspel"
-
 		"CSGO_Tournament_Event_Stage_Display_1"			"Uppvisning"
 		"CSGO_Tournament_Event_Stage_Display_2"			"Gruppspel | Första etappen"
 		"CSGO_Tournament_Event_Stage_Display_3"			"BYOC"
@@ -4775,7 +4772,6 @@
 		"CSGO_Tournament_Event_Stage_Display_46"		"Gruppspel | Utslagsmatch 1 av 3"
 		"CSGO_Tournament_Event_Stage_Display_47"		"Gruppspel | Utslagsmatch 2 av 3"
 		"CSGO_Tournament_Event_Stage_Display_48"		"Gruppspel | Utslagsmatch"
-
 		// Match global stats stage names
 		"CSGO_MatchInfo_Stage_Group"	"Gruppspel"
 		"CSGO_MatchInfo_Stage_GroupStage"	"Gruppspel"
@@ -4971,9 +4967,6 @@
 		"CSGO_TeamID_131"       "Rare Atom"
 		"CSGO_TeamID_132"       "FlyQuest"
 		"CSGO_TeamID_133"       "Passion UA"
-
-
-
 		"Place_Name_1st"		"Mästare"
 		"Place_Name_2nd"		"Finalist"
 		"Place_Name_3rd-4th"	"Semifinalist"
@@ -24084,8 +24077,13 @@
 		"CSGO_Watch_Loading_Tournament_23"   "Läser in matcher från Perfect World Shanghai 2024 ..."
 
 		//
-		// 2024 Perfect World Shanghai 2024 CS2 Major Championship Strings Block End
+//
+//
+//
+	//
+		// 2025 BLAST.tv Austin 2025 CS2 Major Championship Strings Block End
 		// ======================================
+
 
 // ---------------------------------------------------------------------------------------------
 // PERFECTWORLD_02 MUSIC KIT
@@ -24828,7 +24826,7 @@
 		"StickerKit_elemental_craft_foil_fire_three"						"Winding Scorch (folie)"
 		"StickerKit_elemental_craft_lenticular_blood_one"					"Ruby Stream (lentikulärt)"
 		"StickerKit_elemental_craft_lenticular_blood_two"					"Ruby Wave (lentikulärt)"
-		"PatchKit_patch_banana"            "Crazy Banana"
+"PatchKit_patch_banana"            "Crazy Banana"
 		"PatchKit_desc_patch_banana"       "<i>Agent for scale</i>"
 		"PatchKit_patch_boss"              "The Boss"
 		"PatchKit_desc_patch_boss"         "<i>Betungad är agenten som bär på kronan</i>"
@@ -36316,8 +36314,6 @@
 		"SFUI_ProPlayer_ultimate" "Roland Tomkowiak"
 		"SFUI_ProPlayer_zerrofix" "Eduard Petrovskyi"
 		"SFUI_ProPlayer_ztr" "Erik Gustafsson"
-
-
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Leaderboards
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -41469,13 +41465,16 @@ Om samma match redan laddats ner lokalt och filen blivit förstörd, radera då 
 		"quest_11015_var_desc:p{mission-points}"	 	"Vinn {d:mission-points} runda i <b>{s:gamemode}: {s:location}</b>.#|#Vinn {d:mission-points} rundor i <b>{s:gamemode}: {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Vinn {d:mission-points} runda#|#Vinn {d:mission-points} rundor"
 
-// crow_mask_44853_comment
-// crow_mask_44854_comment
+// crow_mask_46950_comment
+// crow_mask_46951_comment
 }
 
 
 
 
 }
+
+
+
 
 

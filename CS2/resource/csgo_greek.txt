@@ -2670,7 +2670,6 @@
 		"Attrib_OperationMVPs"						"MVP επιχείρησης: %s1"
 		"Attrib_ItemsCount"							"Αριθμός αντικειμένων: %s1"
 		"Attrib_KeychainSeed"						"Πρότυπο γουριού: %s1"
-
 		"Attrib_StarsAttained"						"Αποκτήσεις αστεριών επιχείρησης: %s1"
 		"Attrib_QuestsComplete"						"Ολοκληρωμένες αποστολές εκστρατείας επιχείρησης: %s1"
 		"Attrib_EventsComplete"						"Ολοκληρωμένες αποστολές Επιχείρησης Blitz: %s1"
@@ -2986,7 +2985,6 @@
 		"CSGO_Event_Details_Desc"					"Δόθηκε κατά τη διάρκεια του αγώνα %s1 μεταξύ %s2 και %s3."
 		"CSGO_Event_Details_MvpDesc"				"Δόθηκε κατά τη διάρκεια του αγώνα «%s1» μεταξύ των %s2 και %s3, και έχει αυτόγραφο του %s4 που ήταν ο πιο πολύτιμος παίκτης σε εκείνο τον γύρο."
 		"CSGO_Event_Details_MvpDesc_UnknownPlayer"	"Δόθηκε κατά τη διάρκεια του αγώνα «%s1» μεταξύ των %s2 και %s3, και έχει αυτόγραφο του επαγγελματία παίκτη που ήταν ο πιο πολύτιμος παίκτης σε εκείνο τον γύρο."
-
 		"CSGO_Special_Event_Desc_1"					"Αυτό το αντικείμενο γιορτάζει την αρχική κυκλοφορία της Ζώνης κινδύνου. Εμφανιζόταν στις αρχικές εβδομάδες αγώνων Ζώνης κινδύνου στο Blacksite."
 		"StickerKit_dz_blacksite_foil"				"Blacksite (Μεταλ.)"
 		//-------------------------------------------------------------------------------------------
@@ -4328,7 +4326,7 @@
 		"CSGO_crate_key_community_35"			"Κλειδί θήκης Fever"
 		"CSGO_crate_key_community_35_desc"		"Αυτό το κλειδί ανοίγει μόνο θήκες Fever"
 		
-"SprayKit_vcap1_ace_01"		"Ace"
+		"SprayKit_vcap1_ace_01"		"Ace"
 "SprayKit_desc_vcap1_ace_01"	" "
 "SprayKit_vcap1_banana"		"Banana"
 "SprayKit_desc_vcap1_banana"	" "
@@ -4838,7 +4836,6 @@
 		"CSGO_Tournament_Event_Stage_46"		"Φάση ομίλων"
 		"CSGO_Tournament_Event_Stage_47"		"Φάση ομίλων"
 		"CSGO_Tournament_Event_Stage_48"		"Φάση ομίλων"
-
 		"CSGO_Tournament_Event_Stage_Display_1"			"Έκθεση"
 		"CSGO_Tournament_Event_Stage_Display_2"			"Φάση Ομίλων | Πρώτη Φάση"
 		"CSGO_Tournament_Event_Stage_Display_3"			"BYOC"
@@ -4887,7 +4884,6 @@
 		"CSGO_Tournament_Event_Stage_Display_46"		"Φάση ομίλων | Αγώνας αποκλεισμού 1 από 3"
 		"CSGO_Tournament_Event_Stage_Display_47"		"Φάση ομίλων | Αγώνας αποκλεισμού 2 από 3"
 		"CSGO_Tournament_Event_Stage_Display_48"		"Φάση ομίλων | Αγώνας αποκλεισμού"
-
 		// Match global stats stage names
 		"CSGO_MatchInfo_Stage_Group"	"Φάση ομίλων"
 		"CSGO_MatchInfo_Stage_GroupStage"	"Φάση ομίλων"
@@ -5083,9 +5079,6 @@
 		"CSGO_TeamID_131"       "Rare Atom"
 		"CSGO_TeamID_132"       "Flyquest"
 		"CSGO_TeamID_133"       "Passion UA"
-
-
-
 		"Place_Name_1st"		"Πρωταθλητές"
 		"Place_Name_2nd"		"Φιναλίστ"
 		"Place_Name_3rd-4th"	"Φιναλίστ ημιτελικών"
@@ -24940,8 +24933,13 @@
 		"CSGO_Watch_Loading_Tournament_23"   "Φόρτωση αγώνων Perfect World Σαγκάη 2024…"
 
 		//
-		// 2024 Perfect World Shanghai 2024 CS2 Major Championship Strings Block End
+//
+//
+//
+	//
+		// 2025 BLAST.tv Austin 2025 CS2 Major Championship Strings Block End
 		// ======================================
+
 
 // ---------------------------------------------------------------------------------------------
 // PERFECTWORLD_02 MUSIC KIT
@@ -26004,7 +26002,7 @@
 		"StickerKit_elemental_craft_foil_fire_three"						"Winding Scorch (Μεταλ.)"
 		"StickerKit_elemental_craft_lenticular_blood_one"					"Ruby Stream (Αμφίκυρτο)"
 		"StickerKit_elemental_craft_lenticular_blood_two"					"Ruby Wave (Αμφίκυρτο)"
-		"PatchKit_patch_banana"            "Crazy Banana"
+"PatchKit_patch_banana"            "Crazy Banana"
 		"PatchKit_desc_patch_banana"       "<i>Πράκτορας για κλίμακα</i>"
 		"PatchKit_patch_boss"              "The Boss"
 		"PatchKit_desc_patch_boss"         "<i>Βαρύ βαρύ του πράκτορα το στέμμα</i>"
@@ -37929,8 +37927,6 @@
 		"SFUI_ProPlayer_ultimate" "Roland Tomkowiak"
 		"SFUI_ProPlayer_zerrofix" "Eduard Petrovskyi"
 		"SFUI_ProPlayer_ztr" "Erik Gustafsson"
-
-
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Leaderboards
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -43436,13 +43432,16 @@
 		"quest_11015_var_desc:p{mission-points}"	 	"Κερδίστε {d:mission-points} γύρο σε <b>{s:gamemode}: {s:location}</b>.#|#Κερδίστε {d:mission-points} γύρους σε <b>{s:gamemode}: {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Κερδίστε {d:mission-points} γύρο#|#Κερδίστε {d:mission-points} γύρους"
 
-// crow_mask_44853_comment
-// crow_mask_44854_comment
+// crow_mask_46950_comment
+// crow_mask_46951_comment
 }
 
 
 
 
 }
+
+
+
 
 

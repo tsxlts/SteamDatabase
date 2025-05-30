@@ -2677,7 +2677,6 @@
 		"Attrib_OperationMVPs"						"行動 MVP 次數：%s1"
 		"Attrib_ItemsCount"							"物品數量：%s1"
 		"Attrib_KeychainSeed"						"吊飾樣板：%s1"
-
 		"Attrib_StarsAttained"						"已獲得行動之星：%s1"
 		"Attrib_QuestsComplete"						"已完成行動戰役任務：%s1"
 		"Attrib_EventsComplete"						"完成的閃擊戰行動任務：%s1"
@@ -2993,7 +2992,6 @@
 		"CSGO_Event_Details_Desc"					"該物品是在 %s2 與 %s3 的 %s1 賽事期間掉落的。"
 		"CSGO_Event_Details_MvpDesc"				"該物品是在 %s2 與 %s3 的 %s1 賽事期間掉落的，並由該回合最有價值選手 %s4 簽名。"
 		"CSGO_Event_Details_MvpDesc_UnknownPlayer"	"該物品是在 %s2 與 %s3 的 %s1 賽事期間掉落的，並由該回合最有價值的職業選手簽名。"
-
 		"CSGO_Special_Event_Desc_1"					"此物品是為了紀念危險區域的初次推出。在危險區域開始的前幾週於 Blacksite 掉落。"
 		"StickerKit_dz_blacksite_foil"				"Blacksite（閃亮）"
 		//-------------------------------------------------------------------------------------------
@@ -4331,7 +4329,7 @@
 		"CSGO_crate_key_community_35"			"狂熱武器箱鑰匙"
 		"CSGO_crate_key_community_35_desc"		"這把鑰匙只能打開狂熱武器箱"
 		
-"SprayKit_vcap1_ace_01"		"Ace"
+		"SprayKit_vcap1_ace_01"		"Ace"
 "SprayKit_vcap1_banana"		"香蕉"
 "SprayKit_vcap1_cerberus"		"地獄犬"
 "SprayKit_vcap1_clutch_01"		"殘局之王"
@@ -4779,7 +4777,6 @@
 		"CSGO_Tournament_Event_Stage_46"		"小組賽"
 		"CSGO_Tournament_Event_Stage_47"		"小組賽"
 		"CSGO_Tournament_Event_Stage_48"		"小組賽"
-
 		"CSGO_Tournament_Event_Stage_Display_1"			"展覽會"
 		"CSGO_Tournament_Event_Stage_Display_2"			"小組賽 | 第一階段"
 		"CSGO_Tournament_Event_Stage_Display_3"			"BYOC"
@@ -4828,7 +4825,6 @@
 		"CSGO_Tournament_Event_Stage_Display_46"		"小組賽 | 淘汰賽 3 之 1"
 		"CSGO_Tournament_Event_Stage_Display_47"		"小組賽 | 淘汰賽 3 之 2"
 		"CSGO_Tournament_Event_Stage_Display_48"		"小組賽 | 淘汰賽"
-
 		// Match global stats stage names
 		"CSGO_MatchInfo_Stage_Group"	"小組賽"
 		"CSGO_MatchInfo_Stage_GroupStage"	"小組賽"
@@ -5024,9 +5020,6 @@
 		"CSGO_TeamID_131"       "Rare Atom"
 		"CSGO_TeamID_132"       "Flyquest"
 		"CSGO_TeamID_133"       "Passion UA"
-
-
-
 		"Place_Name_1st"		"冠軍"
 		"Place_Name_2nd"		"亞軍"
 		"Place_Name_3rd-4th"	"準決賽隊伍"
@@ -24873,8 +24866,13 @@
 		"CSGO_Watch_Loading_Tournament_23"   "載入 Perfect World Shanghai 2024 比賽中…"
 
 		//
-		// 2024 Perfect World Shanghai 2024 CS2 Major Championship Strings Block End
+//
+//
+//
+	//
+		// 2025 BLAST.tv Austin 2025 CS2 Major Championship Strings Block End
 		// ======================================
+
 
 // ---------------------------------------------------------------------------------------------
 // PERFECTWORLD_02 MUSIC KIT
@@ -25691,7 +25689,7 @@
 		"StickerKit_elemental_craft_foil_fire_three"						"蜿蜒火球（閃亮）"
 		"StickerKit_elemental_craft_lenticular_blood_one"					"紅血流（光柵）"
 		"StickerKit_elemental_craft_lenticular_blood_two"					"紅血浪（光柵）"
-		"PatchKit_patch_banana"            "瘋狂香蕉"
+"PatchKit_patch_banana"            "瘋狂香蕉"
 		"PatchKit_desc_patch_banana"       "<i>幹員比例尺</i>"
 		"PatchKit_patch_boss"              "老大"
 		"PatchKit_desc_patch_boss"         "<i>要戴上皇冠，必須擔得起其重量</i>"
@@ -37538,8 +37536,6 @@
 		"SFUI_ProPlayer_ultimate" "Roland Tomkowiak"
 		"SFUI_ProPlayer_zerrofix" "Eduard Petrovskyi"
 		"SFUI_ProPlayer_ztr" "Erik Gustafsson"
-
-
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Leaderboards
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -43022,13 +43018,16 @@
 		"quest_11015_var_desc:p{mission-points}"	 	"在<b>{s:gamemode}：{s:location}</b> 中贏得 {d:mission-points} 回合。#|#在<b>{s:gamemode}：{s:location}</b> 中贏得 {d:mission-points} 回合。"
 		"quest_11015_var_ingame:p{mission-points}"		"贏得 {d:mission-points} 回合#|#贏得 {d:mission-points} 回合"
 
-// crow_mask_44853_comment
-// crow_mask_44854_comment
+// crow_mask_46950_comment
+// crow_mask_46951_comment
 }
 
 
 
 
 }
+
+
+
 
 

@@ -2667,7 +2667,6 @@
 		"Attrib_OperationMVPs"						"작전 중 MVP를 획득한 횟수: %s1"
 		"Attrib_ItemsCount"							"아이템 개수: %s1"
 		"Attrib_KeychainSeed"						"참 장식 템플릿: %s1"
-
 		"Attrib_StarsAttained"						"획득한 작전 별: %s1"
 		"Attrib_QuestsComplete"						"작전 캠페인 임무 완수: %s1회"
 		"Attrib_EventsComplete"						"맹공 임무 작전 수행: %s1회"
@@ -2983,7 +2982,6 @@
 		"CSGO_Event_Details_Desc"					"이 아이템은 %s2 대 %s3의 %s1 매치 관전 중 획득했습니다."
 		"CSGO_Event_Details_MvpDesc"				"이 아이템은 %s2 대 %s3의 %s1 매치 중 획득했으며, 해당 라운드의 최우수 선수로 선정된 %s4의 사인이 포함되어 있습니다."
 		"CSGO_Event_Details_MvpDesc_UnknownPlayer"	"이 아이템은 %s2 대 %s3의 %s1 매치 관전 중 획득했으며, 해당 라운드의 최우수 선수 사인이 포함되어 있습니다."
-
 		"CSGO_Special_Event_Desc_1"					"이 아이템은 위험지대 출시 기념으로 출시되었습니다. 블랙사이트 맵이 위험지대에 추가된 뒤 일정 기간 동안 드롭되었습니다."
 		"StickerKit_dz_blacksite_foil"				"블랙사이트(은박)"
 		//-------------------------------------------------------------------------------------------
@@ -4275,7 +4273,7 @@
 		"CSGO_crate_key_community_35"			"열정 상자 열쇠"
 		"CSGO_crate_key_community_35_desc"		"이 열쇠는 열정 상자만 열 수 있습니다."
 		
-"SprayKit_vcap1_ace_01"		"에이스"
+		"SprayKit_vcap1_ace_01"		"에이스"
 "SprayKit_vcap1_banana"		"바나나"
 "SprayKit_vcap1_cerberus"		"케르베로스"
 "SprayKit_vcap1_clutch_01"		"클러치 제왕"
@@ -4723,7 +4721,6 @@
 		"CSGO_Tournament_Event_Stage_46"		"그룹 스테이지"
 		"CSGO_Tournament_Event_Stage_47"		"그룹 스테이지"
 		"CSGO_Tournament_Event_Stage_48"		"그룹 스테이지"
-
 		"CSGO_Tournament_Event_Stage_Display_1"			"시범전"
 		"CSGO_Tournament_Event_Stage_Display_2"			"그룹 스테이지 | 첫 매치"
 		"CSGO_Tournament_Event_Stage_Display_3"			"BYOC 예선"
@@ -4772,7 +4769,6 @@
 		"CSGO_Tournament_Event_Stage_Display_46"		"그룹 스테이지 | 탈락 결정전 1/3"
 		"CSGO_Tournament_Event_Stage_Display_47"		"그룹 스테이지 | 탈락 결정전 2/3"
 		"CSGO_Tournament_Event_Stage_Display_48"		"그룹 스테이지 | 탈락 결정전"
-
 		// Match global stats stage names
 		"CSGO_MatchInfo_Stage_Group"	"그룹 스테이지"
 		"CSGO_MatchInfo_Stage_GroupStage"	"그룹 스테이지"
@@ -4968,9 +4964,6 @@
 		"CSGO_TeamID_131"       "Rare Atom"
 		"CSGO_TeamID_132"       "Flyquest"
 		"CSGO_TeamID_133"       "Passion UA"
-
-
-
 		"Place_Name_1st"		"우승"
 		"Place_Name_2nd"		"준우승"
 		"Place_Name_3rd-4th"	"4강 진출"
@@ -24157,8 +24150,13 @@
 		"CSGO_Watch_Loading_Tournament_23"   "Perfect World 상하이 2024 경기 불러오는 중..."
 
 		//
-		// 2024 Perfect World Shanghai 2024 CS2 Major Championship Strings Block End
+//
+//
+//
+	//
+		// 2025 BLAST.tv Austin 2025 CS2 Major Championship Strings Block End
 		// ======================================
+
 
 // ---------------------------------------------------------------------------------------------
 // PERFECTWORLD_02 MUSIC KIT
@@ -24873,7 +24871,7 @@
 		"StickerKit_elemental_craft_foil_fire_three"						"굽이치는 화염(은박)"
 		"StickerKit_elemental_craft_lenticular_blood_one"					"핏빛 물결(렌티큘러)"
 		"StickerKit_elemental_craft_lenticular_blood_two"					"핏빛 파도(렌티큘러)"
-		"PatchKit_patch_banana"            "정신 나간 바나나"
+"PatchKit_patch_banana"            "정신 나간 바나나"
 		"PatchKit_desc_patch_banana"       "<i>요원 측정</i>"
 		"PatchKit_patch_boss"              "보스"
 		"PatchKit_desc_patch_boss"         "<i>보스는 왕관을 쓴 요원이다.</i>"
@@ -36701,8 +36699,6 @@
 		"SFUI_ProPlayer_ultimate" "Roland Tomkowiak"
 		"SFUI_ProPlayer_zerrofix" "Eduard Petrovskyi"
 		"SFUI_ProPlayer_ztr" "Erik Gustafsson"
-
-
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Leaderboards
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -42183,13 +42179,16 @@
 		"quest_11015_var_desc:p{mission-points}"	 	"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 {d:mission-points}번 승리하세요."
 		"quest_11015_var_ingame:p{mission-points}"		"라운드 {d:mission-points}번 승리"
 
-// crow_mask_44853_comment
-// crow_mask_44854_comment
+// crow_mask_46950_comment
+// crow_mask_46951_comment
 }
 
 
 
 
 }
+
+
+
 
 

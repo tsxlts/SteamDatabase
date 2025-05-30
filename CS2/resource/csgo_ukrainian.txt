@@ -2670,7 +2670,6 @@
 		"Attrib_OperationMVPs"						"Зірок в операції: %s1"
 		"Attrib_ItemsCount"							"Кількість предметів: %s1"
 		"Attrib_KeychainSeed"						"Шаблон брелока: %s1"
-
 		"Attrib_StarsAttained"						"Здобутих зірок операції: %s1"
 		"Attrib_QuestsComplete"						"Виконано завдань кампанії в операції: %s1"
 		"Attrib_EventsComplete"						"Виконано швидких завдань операції: %s1"
@@ -2986,7 +2985,6 @@
 		"CSGO_Event_Details_Desc"					"Цей предмет випав під час матчу на стадії %s1 між %s2 і %s3."
 		"CSGO_Event_Details_MvpDesc"				"Цей предмет випав під час матчу на стадії %s1 між %s2 і %s3, а також підписаний гравцем %s4, який був найбільш цінним гравцем у минулому раунді."
 		"CSGO_Event_Details_MvpDesc_UnknownPlayer"	"Цей предмет випав під час матчу на стадії %s1 між %s2 і %s3, а також був підписаний професійним гравцем, який був найбільш цінним гравцем у минулому раунді."
-
 		"CSGO_Special_Event_Desc_1"					"Цей предмет відзначає випуск режиму «Небезпечна зона». Він випав під час перших тижнів матчів «Небезпечної зони» на мапі Blacksite."
 		"StickerKit_dz_blacksite_foil"				"Blacksite (лискуча)"
 		//-------------------------------------------------------------------------------------------
@@ -4336,7 +4334,7 @@
 		"CSGO_crate_key_community_35"			"Ключ від футляра «Лихоманка»"
 		"CSGO_crate_key_community_35_desc"		"Цей ключ відкриває лише футляри «Лихоманка»."
 		
-"SprayKit_vcap1_ace_01"		"Ас"
+		"SprayKit_vcap1_ace_01"		"Ас"
 "SprayKit_desc_vcap1_ace_01"	"<font color='#F2A93E'>Ace</font>."
 "SprayKit_vcap1_banana"		"Банан"
 "SprayKit_desc_vcap1_banana"	"<font color='#F2A93E'>Banana</font>."
@@ -4836,7 +4834,6 @@
 		"CSGO_Tournament_Event_Stage_46"		"Груповий етап"
 		"CSGO_Tournament_Event_Stage_47"		"Груповий етап"
 		"CSGO_Tournament_Event_Stage_48"		"Груповий етап"
-
 		"CSGO_Tournament_Event_Stage_Display_1"			"Виставка"
 		"CSGO_Tournament_Event_Stage_Display_2"			"Груповий етап | Перша стадія"
 		"CSGO_Tournament_Event_Stage_Display_3"			"Свої комп’ютери"
@@ -4885,7 +4882,6 @@
 		"CSGO_Tournament_Event_Stage_Display_46"		"Груповий етап | 1 з 3 матчів на вибування"
 		"CSGO_Tournament_Event_Stage_Display_47"		"Груповий етап | 2 з 3 матчів на вибування"
 		"CSGO_Tournament_Event_Stage_Display_48"		"Груповий етап | Матч на вибування"
-
 		// Match global stats stage names
 		"CSGO_MatchInfo_Stage_Group"	"Груповий етап"
 		"CSGO_MatchInfo_Stage_GroupStage"	"Груповий етап"
@@ -5081,6 +5077,14 @@
 		"CSGO_TeamID_131"       "Rare Atom"
 		"CSGO_TeamID_132"       "Flyquest"
 		"CSGO_TeamID_133"       "Passion UA"
+		"CSGO_TeamID_134"       "Aurora"
+		"CSGO_TeamID_135"       "B8"
+		"CSGO_TeamID_136"       "Bestia"
+		"CSGO_TeamID_137"       "BetBoom"
+		"CSGO_TeamID_138"       "Chinggis Warriors"
+		"CSGO_TeamID_139"       "Falcons"
+		"CSGO_TeamID_140"       "M80"
+		"CSGO_TeamID_141"       "Metizport"
 
 
 
@@ -24926,8 +24930,15 @@
 		"CSGO_Watch_Loading_Tournament_23"   "Завантаження матчів «Perfect World Шанхай 2024»…"
 
 		//
-		// 2024 Perfect World Shanghai 2024 CS2 Major Championship Strings Block End
+//
+//
+//
+	"CSGO_Tournament_Event_NameShort_24"	"BLAST.tv Остін 2025"
+		"CSGO_Tournament_Event_Location_24"		"Остін 2025"
+		//
+		// 2025 BLAST.tv Austin 2025 CS2 Major Championship Strings Block End
 		// ======================================
+
 
 // ---------------------------------------------------------------------------------------------
 // PERFECTWORLD_02 MUSIC KIT
@@ -26036,7 +26047,7 @@
 		"StickerKit_elemental_craft_foil_fire_three"						"Хвилясте полум’я (лискуча)"
 		"StickerKit_elemental_craft_lenticular_blood_one"					"Рубіновий потік (оптична)"
 		"StickerKit_elemental_craft_lenticular_blood_two"					"Рубінова хвиля (оптична)"
-		"PatchKit_patch_banana"            "Скажений банан"
+"PatchKit_patch_banana"            "Скажений банан"
 		"PatchKit_desc_patch_banana"       "<i>Для порівняння</i>"
 		"PatchKit_patch_boss"              "Бос"
 		"PatchKit_desc_patch_boss"         "<i>Корона тягарем важким на агентові лежить</i>"
@@ -37784,7 +37795,7 @@
 		"SFUI_ProPlayer_spinx"    "Лотан Ґіладі"
 		"SFUI_ProPlayer_zevy"    "Romeu Rocco"
 		"SFUI_ProPlayer_nekiz"    "Ґабріел Шенату"
-		"SFUI_ProPlayer_jabbi"    "Jakob Nygaard"
+		"SFUI_ProPlayer_jabbi"    "Якоб Нюґор"
 		"SFUI_ProPlayer_deathzz"    "Raúl Jordán Nieto"
 		"SFUI_ProPlayer_acor"    "Фредерік Ґюльдстран"
 		"SFUI_ProPlayer_hooxi"    "Расмус Нільсен"
@@ -37845,7 +37856,7 @@
 		"SFUI_ProPlayer_sener1" "Sener Mahmuti"
 		"SFUI_ProPlayer_shalfey" "Aleksandr Marenov"
 		"SFUI_ProPlayer_sinnopsyy" "Dionis Budeci"
-		"SFUI_ProPlayer_sk0r" "Tengis Batjargal"
+		"SFUI_ProPlayer_sk0r" "Тенґіс Батжарґалин"
 		"SFUI_ProPlayer_techno4k" "Содбаяр Мунхболдин"
 		"SFUI_ProPlayer_tuurtle" "Matheus Anhaia"
 		"SFUI_ProPlayer_wood7" "Adriano Cerato"
@@ -37963,6 +37974,54 @@
 		"SFUI_ProPlayer_ultimate" "Роланд Томковяк"
 		"SFUI_ProPlayer_zerrofix" "Едуард Петровський"
 		"SFUI_ProPlayer_ztr" "Ерік Ґустафсон"
+		"SFUI_ProPlayer_1eer" "Олександр Нагорний"
+		"SFUI_ProPlayer_adamb" "Адам Онґстрем"
+		"SFUI_ProPlayer_alex666" "Олексій Ярмощук"
+		"SFUI_ProPlayer_ariucle" "Аріунжарґал Ядамин"
+		"SFUI_ProPlayer_buzz" "Крістіан Андерсен"
+		"SFUI_ProPlayer_c4llm3su3" "Ціхао Су"
+		"SFUI_ProPlayer_cass1n" "Кассіу Сантуш"
+		"SFUI_ProPlayer_chayjesus" "Рішард Сейді"
+		"SFUI_ProPlayer_chr1zn" "Крістофер Сторґор"
+		"SFUI_ProPlayer_controlez" "Оноделґер Баасанжарґалин"
+		"SFUI_ProPlayer_cool4st" "Содбілеґ Батбаатарин"
+		"SFUI_ProPlayer_cxzi" "Денні Стжельчик"
+		"SFUI_ProPlayer_efire" "Тоґс-Ердене Ерденеболдин"
+		"SFUI_ProPlayer_esenthial" "Дмитро Цвір"
+		"SFUI_ProPlayer_jamyoung" "Ї Ян"
+		"SFUI_ProPlayer_jeorge" "Джордж Ендікот"
+		"SFUI_ProPlayer_jottaaa" "Самет Коклю"
+		"SFUI_ProPlayer_kensizor" "Артем Капран"
+		"SFUI_ProPlayer_khan" "Бексултан Оспан"
+		"SFUI_ProPlayer_kye" "Кайке Бертолуччі"
+		"SFUI_ProPlayer_l00m1" "Лукас Гоукланд"
+		"SFUI_ProPlayer_lake" "Мейсон Сандерсон"
+		"SFUI_ProPlayer_luchov" "Лусіано Еррера"
+		"SFUI_ProPlayer_magnojez" "Кирил Роднов"
+		"SFUI_ProPlayer_mercury" "Цзінсян Ван"
+		"SFUI_ProPlayer_mlhzin" "Матеус Марсола"
+		"SFUI_ProPlayer_molodoy" "Даніл Голубенко"
+		"SFUI_ProPlayer_moseyuh" "Цяньхао Чень"
+		"SFUI_ProPlayer_nettik" "Корі Браун"
+		"SFUI_ProPlayer_nicx" "Нік Лі"
+		"SFUI_ProPlayer_noktse" "Ніколас Давіла"
+		"SFUI_ProPlayer_piriajr" "Ґільєрме Барбоза"
+		"SFUI_ProPlayer_reck" "Ітан Серрано"
+		"SFUI_ProPlayer_regali" "Юліан Харжеу"
+		"SFUI_ProPlayer_riskyb0b" "Максим Чуріков"
+		"SFUI_ProPlayer_roux" "Ундрахбаяр Золбаярин"
+		"SFUI_ProPlayer_s1n" "Еліас Штайн"
+		"SFUI_ProPlayer_spooke" "Олле Ґрундстрем"
+		"SFUI_ProPlayer_swisher" "Майкл Шмід"
+		"SFUI_ProPlayer_timo" "Крістіан Перес"
+		"SFUI_ProPlayer_tn1r" "Андрій Татаринович"
+		"SFUI_ProPlayer_tomaszin" "Томас Корна"
+		"SFUI_ProPlayer_xant3r" "Кирил Кононов"
+		"SFUI_ProPlayer_yxngstxr" "Сімон Боє"
+		"SFUI_ProPlayer_zweih" "Іван Ґоґін"
+		"SFUI_ProPlayer_br0" "Александер Бро"
+		"SFUI_ProPlayer_saadzin" "Ґільєрме Пашеку"
+
 
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -43471,8 +43530,8 @@
 		"quest_11015_var_desc:p{mission-points}"	 	"Виграйте {d:mission-points} раунд у режимі <b>«{s:gamemode}» на мапі {s:location}</b>.#|#Виграйте {d:mission-points} раунди в режимі <b>«{s:gamemode}» на мапі {s:location}</b>.#|#Виграйте {d:mission-points} раундів у режимі <b>«{s:gamemode}» на мапі {s:location}</b>.#|#Виграйте {d:mission-points} раундів у режимі <b>«{s:gamemode}» на мапі {s:location}</b>.#|#Виграйте {d:mission-points} раунду в режимі <b>«{s:gamemode}» на мапі {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Виграйте {d:mission-points} раунд#|#Виграйте {d:mission-points} раунди#|#Виграйте {d:mission-points} раундів#|#Виграйте {d:mission-points} раундів#|#Виграйте {d:mission-points} раунду"
 
-// crow_mask_44853_comment
-// crow_mask_44854_comment
+// crow_mask_46950_comment
+// crow_mask_46951_comment
 }
 
 

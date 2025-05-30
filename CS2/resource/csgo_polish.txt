@@ -2670,7 +2670,6 @@
 		"Attrib_OperationMVPs"						"Liczba MVP podczas operacji: %s1"
 		"Attrib_ItemsCount"							"Liczba przedmiotów: %s1"
 		"Attrib_KeychainSeed"						"Szablon przywieszki: %s1"
-
 		"Attrib_StarsAttained"						"Uzyskane gwiazdy operacji: %s1"
 		"Attrib_QuestsComplete"						"Wypełnionych misji kampanii podczas operacji: %s1"
 		"Attrib_EventsComplete"						"Wypełnionych misji błyskawicznych podczas operacji: %s1"
@@ -2986,7 +2985,6 @@
 		"CSGO_Event_Details_Desc"					"Został przyznany podczas meczu pomiędzy %s2 i %s3 (%s1)."
 		"CSGO_Event_Details_MvpDesc"				"Został przyznany podczas meczu pomiędzy %s2 i %s3 i zawiera autograf gracza %s4, który był MVP rundy, po której przyznano pakiet (%s1)."
 		"CSGO_Event_Details_MvpDesc_UnknownPlayer"	"Został przyznany podczas meczu pomiędzy %s2 i %s3 i zawiera autograf profesjonalnego gracza, który był MVP rundy, po której przyznano pakiet (%s1)."
-
 		"CSGO_Special_Event_Desc_1"					"Ten przedmiot upamiętnia wydanie trybu Strefy zagrożenia. Przyznano go podczas pierwszych tygodni meczów w tym trybie na mapie Blacksite."
 		"StickerKit_dz_blacksite_foil"				"Blacksite (foliowana)"
 		//-------------------------------------------------------------------------------------------
@@ -4278,7 +4276,7 @@
 		"CSGO_crate_key_community_35"			"Klucz do skrzyni Gorączki"
 		"CSGO_crate_key_community_35_desc"		"Ten klucz otwiera tylko skrzynie Gorączki."
 		
-"SprayKit_vcap1_ace_01"		"As"
+		"SprayKit_vcap1_ace_01"		"As"
 "SprayKit_vcap1_banana"		"Banan"
 "SprayKit_vcap1_cerberus"		"Cerber"
 "SprayKit_vcap1_clutch_01"		"Król clutchów"
@@ -4726,7 +4724,6 @@
 		"CSGO_Tournament_Event_Stage_46"		"Faza grupowa"
 		"CSGO_Tournament_Event_Stage_47"		"Faza grupowa"
 		"CSGO_Tournament_Event_Stage_48"		"Faza grupowa"
-
 		"CSGO_Tournament_Event_Stage_Display_1"			"Mecz towarzyski"
 		"CSGO_Tournament_Event_Stage_Display_2"			"Faza grupowa | Pierwszy etap"
 		"CSGO_Tournament_Event_Stage_Display_3"			"BYOC"
@@ -4775,7 +4772,6 @@
 		"CSGO_Tournament_Event_Stage_Display_46"		"Faza grupowa | Mecz eliminacyjny 1 z 3"
 		"CSGO_Tournament_Event_Stage_Display_47"		"Faza grupowa | Mecz eliminacyjny 2 z 3"
 		"CSGO_Tournament_Event_Stage_Display_48"		"Faza grupowa | Mecz eliminacyjny"
-
 		// Match global stats stage names
 		"CSGO_MatchInfo_Stage_Group"	"Faza grupowa"
 		"CSGO_MatchInfo_Stage_GroupStage"	"Faza grupowa"
@@ -4971,9 +4967,6 @@
 		"CSGO_TeamID_131"       "Rare Atom"
 		"CSGO_TeamID_132"       "Flyquest"
 		"CSGO_TeamID_133"       "Passion UA"
-
-
-
 		"Place_Name_1st"		"Mistrzowie"
 		"Place_Name_2nd"		"Finalista"
 		"Place_Name_3rd-4th"	"Półfinalista"
@@ -24154,8 +24147,34 @@
 		"CSGO_Watch_Loading_Tournament_23"   "Wczytywanie meczów z Perfect World Shanghai 2024..."
 
 		//
-		// 2024 Perfect World Shanghai 2024 CS2 Major Championship Strings Block End
+//
+//
+//
+	"CSGO_TournamentPass_aus2025_store_desc" "Przepustka widza, naklejki, autografy i więcej"
+
+	"CSGO_TournamentPass_aus2025_pack_tinyname" "Przepustka i monety"
+	"CSGO_TournamentChallenge_aus2025_activate_pass" "Aktywuj swój żeton przed zakończeniem turnieju."
+	"CSGO_TournamentChallenge_aus2025_grandfinal_calender" "Wytypuj wszystkie 7 drużyn w Wyzwaniu Pick'Em przed rozpoczęciem fazy pucharowej."
+	"CSGO_TournamentChallenge_aus2025_quarterfinals_pickem" "Poprawnie wytypuj przynajmniej 2 zwycięzców meczów ćwierćfinałowych."
+	"CSGO_TournamentChallenge_aus2025_semifinals_pickem" "Poprawnie wytypuj przynajmniej 1 zwycięzcę meczu półfinałowego."
+	"CSGO_TournamentChallenge_aus2025_grandfinal_pickem" "Poprawnie wytypuj zwycięzcę meczu finałowego."
+
+	"CSGO_crate_store_pack_aus2025_legends_groupname" "Naklejki legend"
+	"CSGO_crate_store_pack_aus2025_challengers_groupname" "Naklejki pretendentów"
+	"CSGO_crate_store_pack_aus2025_contenders_groupname" "Naklejki kandydatów"
+
+	"CSGO_crate_sticker_pack_aus2025_legends_tinyname" "Naklejki legend"
+	"CSGO_crate_sticker_pack_aus2025_challengers_tinyname" "Naklejki pretendentów"
+	"CSGO_crate_sticker_pack_aus2025_contenders_tinyname" "Naklejki kandydatów"
+	"CSGO_crate_store_pack_aus2025_signatures_groupname" "Autografy graczy"
+	"CSGO_crate_signature_pack_aus2025_group_legends_tinyname" "Autografy legend"
+	"CSGO_crate_signature_pack_aus2025_group_challengers_tinyname" "Autografy pretendentów"
+	"CSGO_crate_signature_pack_aus2025_group_contenders_tinyname" "Autografy kandydatów"
+	"CSGO_crate_signature_pack_aus2025_group_champions_tinyname" "Autografy mistrzów"
+	//
+		// 2025 BLAST.tv Austin 2025 CS2 Major Championship Strings Block End
 		// ======================================
+
 
 // ---------------------------------------------------------------------------------------------
 // PERFECTWORLD_02 MUSIC KIT
@@ -24870,7 +24889,7 @@
 		"StickerKit_elemental_craft_foil_fire_three"						"Żarzysty zawijas (foliowana)"
 		"StickerKit_elemental_craft_lenticular_blood_one"					"Rubinowy strumień (soczewkowa)"
 		"StickerKit_elemental_craft_lenticular_blood_two"					"Rubinowa fala (soczewkowa)"
-		"PatchKit_patch_banana"            "Szalony banan"
+"PatchKit_patch_banana"            "Szalony banan"
 		"PatchKit_desc_patch_banana"       "<i>Agent dla skali</i>"
 		"PatchKit_patch_boss"              "Szef"
 		"PatchKit_desc_patch_boss"         "<i>Ciężkie jest brzemię gracza noszącego koronę</i>"
@@ -36685,8 +36704,6 @@
 		"SFUI_ProPlayer_ultimate" "Roland Tomkowiak"
 		"SFUI_ProPlayer_zerrofix" "Eduard Petrowskij"
 		"SFUI_ProPlayer_ztr" "Erik Gustafsson"
-
-
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Leaderboards
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -42166,8 +42183,8 @@
 		"quest_11015_var_desc:p{mission-points}"	 	"Wygraj {d:mission-points} rundę w trybie <b>{s:gamemode}: {s:location}</b>.#|#Wygraj {d:mission-points} rundy w trybie <b>{s:gamemode}: {s:location}</b>.#|#Wygraj {d:mission-points} rund w trybie <b>{s:gamemode}: {s:location}</b>.#|#Wygraj {d:mission-points} rundy w trybie <b>{s:gamemode}: {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Wygraj {d:mission-points} rundę.#|#Wygraj {d:mission-points} rundy.#|#Wygraj {d:mission-points} rund.#|#Wygraj {d:mission-points} rundy."
 
-// crow_mask_44853_comment
-// crow_mask_44854_comment
+// crow_mask_46950_comment
+// crow_mask_46951_comment
 }
 
 

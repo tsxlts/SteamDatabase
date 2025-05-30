@@ -2679,6 +2679,7 @@
 		"Attrib_OperationMVPs"						"НЦИ в операцията: %s1"
 		"Attrib_ItemsCount"							"Брой артикули: %s1"
 		"Attrib_KeychainSeed"						"Шаблон за джунджурия: %s1"
+		"Attrib_HighlightReel"						"Най-добър момент: %s1"
 
 		"Attrib_StarsAttained"						"Достигнати звезди от операцията: %s1"
 		"Attrib_QuestsComplete"						"Изпълнени мисии в кампании от операция: %s1"
@@ -2995,7 +2996,6 @@
 		"CSGO_Event_Details_Desc"					"Беше получен по време на %s1 мач между %s2 и %s3."
 		"CSGO_Event_Details_MvpDesc"				"Беше получен по време на %s1 мач между %s2 и %s3, с автограф от %s4 , който беше най-ценния играч през този рунд."
 		"CSGO_Event_Details_MvpDesc_UnknownPlayer"	"Беше получен по време на %s1 мач между %s2 и %s3, с автограф от професионален играч, който беше най-ценния участник през този рунд."
-
 		"CSGO_Special_Event_Desc_1"					"Този артикул ознаменува първоначалното излизане на „Опасната зона“. Паднал се е по време на откриващите седмици на мачове в „Опасната зона“ от Blacksite."
 		"StickerKit_dz_blacksite_foil"				"Blacksite (ламиниран)"
 		"StickerKit_desc_dz_blacksite_foil"			"<b><font color='#F2A93E'>Blacksite (Foil)</font></b>"
@@ -4422,7 +4422,7 @@
 		"CSGO_crate_key_community_35"			"Ключ за сандък „Треска“"
 		"CSGO_crate_key_community_35_desc"		"<b><font color='#F2A93E'>Fever Case Key</font></b>\n \nТози ключ отваря само сандъци „Треска“."
 		
-"SprayKit_vcap1_ace_01"		"Ас"
+		"SprayKit_vcap1_ace_01"		"Ас"
 "SprayKit_desc_vcap1_ace_01"	"<b><font color='#F2A93E'>Ace</font></b>"
 "SprayKit_vcap1_banana"		"Банан"
 "SprayKit_desc_vcap1_banana"	"<b><font color='#F2A93E'>Banana</font></b>"
@@ -4932,6 +4932,54 @@
 		"CSGO_Tournament_Event_Stage_46"		"Групов етап"
 		"CSGO_Tournament_Event_Stage_47"		"Групов етап"
 		"CSGO_Tournament_Event_Stage_48"		"Групов етап"
+		"CSGO_Tournament_Event_Stage_49"		"Етап I"
+		"CSGO_Tournament_Event_Stage_50"		"Етап I"
+		"CSGO_Tournament_Event_Stage_51"		"Етап I"
+		"CSGO_Tournament_Event_Stage_52"		"Етап I"
+		"CSGO_Tournament_Event_Stage_53"		"Етап I"
+		"CSGO_Tournament_Event_Stage_54"		"Етап I"
+		"CSGO_Tournament_Event_Stage_55"		"Етап I"
+		"CSGO_Tournament_Event_Stage_56"		"Етап I"
+		"CSGO_Tournament_Event_Stage_57"		"Етап I"
+		"CSGO_Tournament_Event_Stage_58"		"Етап I"
+		"CSGO_Tournament_Event_Stage_59"		"Етап I"
+		"CSGO_Tournament_Event_Stage_60"		"Етап I"
+		"CSGO_Tournament_Event_Stage_61"		"Етап I"
+		"CSGO_Tournament_Event_Stage_62"		"Етап I"
+		"CSGO_Tournament_Event_Stage_63"		"Етап I"
+		"CSGO_Tournament_Event_Stage_64"		"Етап I"
+		"CSGO_Tournament_Event_Stage_65"		"Етап II"
+		"CSGO_Tournament_Event_Stage_66"		"Етап II"
+		"CSGO_Tournament_Event_Stage_67"		"Етап II"
+		"CSGO_Tournament_Event_Stage_68"		"Етап II"
+		"CSGO_Tournament_Event_Stage_69"		"Етап II"
+		"CSGO_Tournament_Event_Stage_70"		"Етап II"
+		"CSGO_Tournament_Event_Stage_71"		"Етап II"
+		"CSGO_Tournament_Event_Stage_72"		"Етап II"
+		"CSGO_Tournament_Event_Stage_73"		"Етап II"
+		"CSGO_Tournament_Event_Stage_74"		"Етап II"
+		"CSGO_Tournament_Event_Stage_75"		"Етап II"
+		"CSGO_Tournament_Event_Stage_76"		"Етап II"
+		"CSGO_Tournament_Event_Stage_77"		"Етап II"
+		"CSGO_Tournament_Event_Stage_78"		"Етап II"
+		"CSGO_Tournament_Event_Stage_79"		"Етап II"
+		"CSGO_Tournament_Event_Stage_80"		"Етап II"
+		"CSGO_Tournament_Event_Stage_81"		"Етап III"
+		"CSGO_Tournament_Event_Stage_82"		"Етап III"
+		"CSGO_Tournament_Event_Stage_83"		"Етап III"
+		"CSGO_Tournament_Event_Stage_84"		"Етап III"
+		"CSGO_Tournament_Event_Stage_85"		"Етап III"
+		"CSGO_Tournament_Event_Stage_86"		"Етап III"
+		"CSGO_Tournament_Event_Stage_87"		"Етап III"
+		"CSGO_Tournament_Event_Stage_88"		"Етап III"
+		"CSGO_Tournament_Event_Stage_89"		"Етап III"
+		"CSGO_Tournament_Event_Stage_90"		"Етап III"
+		"CSGO_Tournament_Event_Stage_91"		"Етап III"
+		"CSGO_Tournament_Event_Stage_92"		"Етап III"
+		"CSGO_Tournament_Event_Stage_93"		"Етап III"
+		"CSGO_Tournament_Event_Stage_94"		"Етап III"
+		"CSGO_Tournament_Event_Stage_95"		"Етап III"
+		"CSGO_Tournament_Event_Stage_96"		"Етап III"
 
 		"CSGO_Tournament_Event_Stage_Display_1"			"Изложба"
 		"CSGO_Tournament_Event_Stage_Display_2"			"Групов етап | Първи етап"
@@ -4947,7 +4995,7 @@
 		"CSGO_Tournament_Event_Stage_Display_12"		"Гранд финал | Мач 2 от 3"
 		"CSGO_Tournament_Event_Stage_Display_13"		"Гранд финал | Решителен мач"
 		"CSGO_Tournament_Event_Stage_Display_14"		"Звезден"
-		"CSGO_Tournament_Event_Stage_Display_15"		"Групов етап | Мачът на победителите"
+		"CSGO_Tournament_Event_Stage_Display_15"		"Групов етап | Мач на победителите"
 		"CSGO_Tournament_Event_Stage_Display_16"		"Групов етап | Елиминационен мач"
 		"CSGO_Tournament_Event_Stage_Display_17"		"Групов етап | Решителен мач"
 		"CSGO_Tournament_Event_Stage_Display_18"		"Квалификация | Мач 1 от 3"
@@ -4960,7 +5008,7 @@
 		"CSGO_Tournament_Event_Stage_Display_25"		"Групов етап | Долна група"
 		"CSGO_Tournament_Event_Stage_Display_26"		"Групов етап | Средна група"
 		"CSGO_Tournament_Event_Stage_Display_27"		"Етап за претенденти | Първи етап"
-		"CSGO_Tournament_Event_Stage_Display_28"		"Етап за претенденти | Мачът на победителите"
+		"CSGO_Tournament_Event_Stage_Display_28"		"Етап за претенденти | Мач на победителите"
 		"CSGO_Tournament_Event_Stage_Display_29"		"Етап за претенденти | Елиминационен мач"
 		"CSGO_Tournament_Event_Stage_Display_30"		"Етап за претенденти | Решителен мач"
 		"CSGO_Tournament_Event_Stage_Display_31"		"Етап за претенденти | Горен набор"
@@ -4969,19 +5017,31 @@
 		"CSGO_Tournament_Event_Stage_Display_34"		"Етап за претенденти | Решителен мач 1 от 3"
 		"CSGO_Tournament_Event_Stage_Display_35"		"Етап за претенденти | Решителен мач 2 от 3"
 		"CSGO_Tournament_Event_Stage_Display_36"		"Етап за претенденти | Решителен мач"
-		"CSGO_Tournament_Event_Stage_Display_37"		"Етап за претенденти | Мачът на победителите 1 от 3"
-		"CSGO_Tournament_Event_Stage_Display_38"		"Етап за претенденти | Мачът на победителите 2 от 3"
-		"CSGO_Tournament_Event_Stage_Display_39"		"Етап за претенденти | Мачът на победителите"
+		"CSGO_Tournament_Event_Stage_Display_37"		"Етап за претенденти | Мач на победителите 1 от 3"
+		"CSGO_Tournament_Event_Stage_Display_38"		"Етап за претенденти | Мач на победителите 2 от 3"
+		"CSGO_Tournament_Event_Stage_Display_39"		"Етап за претенденти | Мач на победителите"
 		"CSGO_Tournament_Event_Stage_Display_40"		"Етап за претенденти | Елиминационен мач 1 от 3"
 		"CSGO_Tournament_Event_Stage_Display_41"		"Етап за претенденти | Елиминационен мач 2 от 3"
 		"CSGO_Tournament_Event_Stage_Display_42"		"Етап за претенденти | Елиминационен мач"
-		"CSGO_Tournament_Event_Stage_Display_43"		"Групов етап | Мачът на победителите 1 от 3"
-		"CSGO_Tournament_Event_Stage_Display_44"		"Групов етап | Мачът на победителите 2 от 3"
-		"CSGO_Tournament_Event_Stage_Display_45"		"Групов етап | Мачът на победителите"
+		"CSGO_Tournament_Event_Stage_Display_43"		"Групов етап | Мач на победителите 1 от 3"
+		"CSGO_Tournament_Event_Stage_Display_44"		"Групов етап | Мач на победителите 2 от 3"
+		"CSGO_Tournament_Event_Stage_Display_45"		"Групов етап | Мач на победителите"
 		"CSGO_Tournament_Event_Stage_Display_46"		"Групов етап | Елиминационен мач 1 от 3"
 		"CSGO_Tournament_Event_Stage_Display_47"		"Групов етап | Елиминационен мач 2 от 3"
 		"CSGO_Tournament_Event_Stage_Display_48"		"Групов етап | Елиминационен мач"
-
+		"CSGO_Tournament_Event_Stage_Display_49"		"Етап I — Откриващ мач"
+		"CSGO_Tournament_Event_Stage_Display_50"		"Етап I — Мач на победителите"
+		"CSGO_Tournament_Event_Stage_Display_52"		"Етап I — Решителен мач"
+		"CSGO_Tournament_Event_Stage_Display_55"		"Етап I — Трети мач"
+		"CSGO_Tournament_Event_Stage_Display_58"		"Етап I — Решителен мач"
+		"CSGO_Tournament_Event_Stage_Display_61"		"Етап I — Мач на победителите"
+		"CSGO_Tournament_Event_Stage_Display_65"		"Етап II — Откриващ мач"
+		"CSGO_Tournament_Event_Stage_Display_66"		"Етап II — Мач на победителите"
+		"CSGO_Tournament_Event_Stage_Display_68"		"Етап II — Решителен мач"
+		"CSGO_Tournament_Event_Stage_Display_71"		"Етап II — Трети мач"
+		"CSGO_Tournament_Event_Stage_Display_74"		"Етап II — Решителен мач"
+		"CSGO_Tournament_Event_Stage_Display_77"		"Етап II — Мач на победителите"
+		"CSGO_Tournament_Event_Stage_Display_87"		"Етап III — Трети мач"
 		// Match global stats stage names
 		"CSGO_MatchInfo_Stage_Group"	"Групов етап"
 		"CSGO_MatchInfo_Stage_GroupStage"	"Групов етап"
@@ -5015,8 +5075,8 @@
 		"CSGO_MatchInfoTxt_Group0"	"%name% | Първи етап"
 		"CSGO_MatchInfoTxt_GroupSwRnd2"	"%name% | Втори етап"
 		"CSGO_MatchInfoTxt_GroupSwRnd3"	"%name% | Трети етап"
-		"CSGO_MatchInfoTxt_Group1W"	"%name% | Мачът на победителите"
-		"CSGO_MatchInfoTxt_Group1WSeries"	"%name% | Мачът на победителите %idx% от %count%"
+		"CSGO_MatchInfoTxt_Group1W"	"%name% | Мач на победителите"
+		"CSGO_MatchInfoTxt_Group1WSeries"	"%name% | Мач на победителите %idx% от %count%"
 		"CSGO_MatchInfoTxt_Group1L"	"%name% | Елиминационен мач"
 		"CSGO_MatchInfoTxt_Group1LSeries"	"%name% | Елиминационен мач %idx% от %count%"
 		"CSGO_MatchInfoTxt_Group2"	"%name% | Решителен мач"
@@ -5177,6 +5237,14 @@
 		"CSGO_TeamID_131"       "Rare Atom"
 		"CSGO_TeamID_132"       "Flyquest"
 		"CSGO_TeamID_133"       "Passion UA"
+		"CSGO_TeamID_134"       "Aurora"
+		"CSGO_TeamID_135"       "B8"
+		"CSGO_TeamID_136"       "Bestia"
+		"CSGO_TeamID_137"       "BetBoom"
+		"CSGO_TeamID_138"       "Chinggis Warriors"
+		"CSGO_TeamID_139"       "Falcons"
+		"CSGO_TeamID_140"       "M80"
+		"CSGO_TeamID_141"       "Metizport"
 
 
 
@@ -16885,7 +16953,7 @@
 	"CSGO_TournamentChallenge_berlin2019_grandfinal_pickem" "Направете правилна „Pick'Em“ прогноза за гранд финала"
 	"CSGO_TournamentChallenge_berlin2019_grandfinal_watchem" "Гледайте поне един мач на живо по време на етапа на шампионите"
 
-	"EventItemDesc_berlin2019_sticker_team" " "
+	"EventItemDesc_berlin2019_sticker_team" ""
 	"EventItemDesc_berlin2019_sticker_org" " "
 	"EventItemDesc_berlin2019_graffiti_team" " "
 	"EventItemDesc_berlin2019_graffiti_org" " "
@@ -25173,6 +25241,63 @@
 		// 2024 Perfect World Shanghai 2024 CS2 Major Championship Strings Block End
 		// ======================================
 
+
+		//
+		// 2025 BLAST.tv Austin 2025 CS2 Major Championship Strings Block Begin
+		// ======================================
+
+//
+// Strings for all team stickers and capsules for Austin 2025 (auto-generated section)
+//
+	"CSGO_TournamentPass_aus2025_store_title" "AUSTIN 2025 АРТИКУЛИ"
+	"CSGO_TournamentPass_aus2025" "Austin 2025 зрителски пропуск"
+	"CSGO_TournamentPass_aus2025_tinyname" "Пропуск"
+	"CSGO_TournamentPass_aus2025_pack_tinyname" "Пропуск и жетони"
+	"CSGO_TournamentJournal_aus2025" "Austin 2025 монета"
+	"CSGO_TournamentJournal_aus2025_Silver" "Austin 2025 сребърна монета"
+	"CSGO_TournamentJournal_aus2025_Gold" "Austin 2025 златна монета"
+	"CSGO_TournamentJournal_aus2025_Crystal" "Austin 2025 диамантена монета"
+
+	"EventItemDesc_aus2025_sticker_team" ""
+	"EventItemDesc_aus2025_sticker_org" ""
+	"EventItemDesc_aus2025_graffiti_team" ""
+	"EventItemDesc_aus2025_graffiti_org" ""
+
+	"StickerKit_aus2025_team_vita_foil" "Vitality (ламиниран) | Austin 2025"
+	"StickerKit_aus2025_team_mouz_foil" "MOUZ (ламиниран) | Austin 2025"
+	"StickerKit_aus2025_team_m80_foil" "M80 (ламиниран) | Austin 2025"
+	"StickerKit_aus2025_team_m80_holo" "M80 (холограмен) | Austin 2025"
+	"StickerKit_aus2025_team_b8_foil" "B8 (ламиниран) | Austin 2025"
+	"StickerKit_aus2025_team_b8_holo" "B8 (холограмен) | Austin 2025"
+	"StickerKit_aus2025_team_og_foil" "OG (ламиниран) | Austin 2025"
+	"StickerKit_aus2025_team_og_holo" "OG (холограмен) | Austin 2025"
+	"StickerKit_aus2025_team_nrg_foil" "NRG (ламиниран) | Austin 2025"
+	"StickerKit_aus2025_team_nrg_holo" "NRG (холограмен) | Austin 2025"
+	"CSGO_crate_store_pack_aus2025_legends_groupname" "Стикери на легенди"
+	"CSGO_crate_store_pack_aus2025_challengers_groupname" "Стикери на претенденти"
+	"CSGO_crate_store_pack_aus2025_contenders_groupname" "Стикери на съперници"
+
+	"CSGO_crate_sticker_pack_aus2025_legends_tinyname" "Стикери на легенди"
+	"CSGO_crate_sticker_pack_aus2025_challengers_tinyname" "Стикери на претенденти"
+	"CSGO_crate_sticker_pack_aus2025_contenders_tinyname" "Стикери на съперници"
+	"CSGO_crate_store_pack_aus2025_signatures_groupname" "Автографи на играчи"
+	"CSGO_crate_signature_pack_aus2025_group_legends_tinyname" "Автографи на легенди"
+	"CSGO_crate_signature_pack_aus2025_group_challengers_tinyname" "Автографи на претенденти"
+	"CSGO_crate_signature_pack_aus2025_group_contenders_tinyname" "Автографи на съперници"
+	"CSGO_crate_signature_pack_aus2025_group_champions_tinyname" "Автографи на шампиони"
+	"StickerKit_aus2025_signature_910_foil" "910 (ламиниран) | Austin 2025"
+	"StickerKit_aus2025_signature_910_holo" "910 (холограмен) | Austin 2025"
+	"StickerKit_aus2025_signature_jl_foil" "jL (ламиниран) | Austin 2025"
+	"StickerKit_aus2025_signature_jl_holo" "jL (холограмен) | Austin 2025"
+	"StickerKit_aus2025_signature_im_foil" "iM (ламиниран) | Austin 2025"
+	"StickerKit_aus2025_signature_im_holo" "iM (холограмен) | Austin 2025"
+	"StickerKit_aus2025_signature_jt_foil" "JT (ламиниран) | Austin 2025"
+	"StickerKit_aus2025_signature_jt_holo" "JT (холограмен) | Austin 2025"
+	//
+		// 2025 BLAST.tv Austin 2025 CS2 Major Championship Strings Block End
+		// ======================================
+
+
 // ---------------------------------------------------------------------------------------------
 // PERFECTWORLD_02 MUSIC KIT
 // ---------------------------------------------------------------------------------------------
@@ -27125,8 +27250,7 @@
 		
 		"StickerKit_elemental_craft_lenticular_blood_two"					"Рубинена вълна (лещовиден)"
 		"StickerKit_desc_elemental_craft_lenticular_blood_two"				"<b><font color='#F2A93E'>Ruby Wave (Lenticular)</font></b>"
-		
-		"PatchKit_patch_banana"            "Луд банан"
+"PatchKit_patch_banana"            "Луд банан"
 		"PatchKit_desc_patch_banana"       "<b><font color='#F2A93E'>Crazy Banana</font></b>\n \n<i>Агент за мащаб</i>"
 		"PatchKit_patch_boss"              "Шефът"
 		"PatchKit_desc_patch_boss"         "<b><font color='#F2A93E'>The Boss</font></b>\n \n<i>Тежка е царската корона</i>"
@@ -39468,8 +39592,6 @@ Counter-Strike разполага с четири основни игрални 
 		"SFUI_ProPlayer_ultimate" "Роланд Томковяк"
 		"SFUI_ProPlayer_zerrofix" "Едуард Петровский"
 		"SFUI_ProPlayer_ztr" "Ерик Густафсон"
-
-
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Leaderboards
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -45034,8 +45156,8 @@ Counter-Strike разполага с четири основни игрални 
 		"quest_11015_var_desc:p{mission-points}"	 	"Спечелете {d:mission-points} рунд в <b>„{s:gamemode}“ — {s:location}</b>.#|#Спечелете {d:mission-points} рунда в <b>„{s:gamemode}“ — {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Спечелете {d:mission-points} рунд.#|#Спечелете {d:mission-points} рунда."
 
-// crow_mask_44853_comment
-// crow_mask_44854_comment
+// crow_mask_46950_comment
+// crow_mask_46951_comment
 }
 
 
