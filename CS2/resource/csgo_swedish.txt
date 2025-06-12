@@ -2519,6 +2519,7 @@
 		"rarity4"								"Ovanlig"
 		"strange"								"StatTrak™"
 		"completed"								"Slutförd"
+		"highlight"								"Höjdpunkt"
 
 		// Team Usability
 		"noteam"								"Inget lag"
@@ -3000,6 +3001,7 @@
 
 		"ItemNameUniqueFormat"				"%s1%s2%s3"			// will turn into "The Battalion's Backup #1"; foreign languages that have gender/declension can change this to be "Shotgun #1" or whatever
 		"ItemNameWithQualityFormat"			"%s1 %s2%s3"		// will turn into "Strange Shotgun #1"; foreign languages that have gender for adjectives can change this to be "Shotgun #1 (Strange)" or whatever
+		"ItemNameWithQualityFormat_13"		"%s2 (%s1)%s3"		// will turn into "Souvenir Package (Highlight) #1"; foreign languages that have gender for adjectives can change this to be "Shotgun (with Highlight) #1" or whatever
 		"ItemNameCraftNumberFormat"			" #%s1"
 
 		"TF_Tag_Category_Quality"	"Kategori"
@@ -5111,6 +5113,9 @@
 		"CSGO_set_community_35"					"Fever-kollektionen"
 		"CSGO_set_train_2025"					"Train-kollektionen 2025"
 		"CSGO_set_train_2025_short"				"Train-kollektionen 2025"
+		"CSGO_set_train_2025_storepromo_key_contestwinner"			"Train-kollektionen 2025 – workshopbidragare"
+		"CSGO_set_train_2025_storepromo_key_contestwinner_desc"	"Tilldelas workshopbidragare till Train 2025-kollektionen."
+		
 		"CSGO_set_timed_drops_warm"				"Radiant-kollektionen"
 		"CSGO_set_timed_drops_neutral"			"Boreal-kollektionen"
 		"CSGO_set_timed_drops_cool"				"Ascent-kollektionen"
@@ -21575,7 +21580,6 @@
 	"CSGO_crate_store_pack_cph2024_signatures_groupname" "Spelarautografer"
 	"CSGO_crate_signature_pack_cph2024_group_players_tag" "Copenhagen 2024 – Spelarautografer"
 	
-	"CSGO_crate_signature_pack_cph2024_group_legends"     "Copenhagen 2024 – kapsel med legendeautografer"
 	"CSGO_crate_signature_pack_cph2024_group_legends_tinyname" "Legendautografer"
 	"CSGO_crate_signature_pack_cph2024_group_legends_desc" "Denna kapsel innehåller ett klistermärke i papper, glitter, holo eller guld signerat av en av legendspelarna från Copenhagen 2024.\n\n50 % av intäkterna från försäljningen av kapseln stödjer de inkluderade spelarna och organisationerna.\n\nKlistermärket kan appliceras på något av dina egna vapen och kan skrapas för att se mer slitet ut. Du kan skrapa samma klistermärke flera gånger, vilket gör att det blir mer slitet varje gång, tills det tas bort från vapnet."
 	"CSGO_crate_signature_pack_cph2024_group_challengers"     "Copenhagen 2024 – kapsel med utmanarautografer"
@@ -24080,7 +24084,16 @@
 //
 //
 //
-	//
+	"CSGO_crate_aus2025_promo_de_inferno^highlight"		"Austin 2025: Inferno – höjdpunktspaket"
+	"CSGO_crate_aus2025_promo_de_mirage^highlight"		"Austin 2025: Mirage – höjdpunktspaket"
+	"CSGO_crate_aus2025_promo_de_anubis^highlight"		"Austin 2025: Anubis – höjdpunktspaket"
+	"CSGO_crate_aus2025_promo_de_dust2^highlight"		"Austin 2025: Dust II – höjdpunktspaket"
+	"CSGO_crate_aus2025_promo_de_ancient^highlight"		"Austin 2025: Ancient – höjdpunktspaket"
+	"CSGO_crate_aus2025_promo_de_nuke^highlight"		"Austin 2025: Nuke – höjdpunktspaket"
+	"CSGO_crate_aus2025_promo_de_train^highlight"		"Austin 2025: Train – höjdpunktspaket"
+
+	"CSGO_Tournament_Event_Location_24"		"Austin 2025"
+		//
 		// 2025 BLAST.tv Austin 2025 CS2 Major Championship Strings Block End
 		// ======================================
 
@@ -32798,6 +32811,9 @@
 		"PANOHUD_Spectate_Navigation_New_Cameraman_On"		"[{s:bind_radio}] Sätt på kameraman "
 		"PANOHUD_Spectate_Navigation_ToggleSpec"			"[{s:bind_drop}] Miniresultattavla "
 		"PANOHUD_Spectate_Navigation_ToggleOverview"		"[{s:bind_duck}] Översikt "
+		"PANOHUD_Spectate_Navigation_PlayHighlight"			"[{s:bind_radialradio2}] Spela upp höjdpunkt"	
+		"PANOHUD_Spectate_Navigation_CopyHighlight"			"[{s:bind_radialradio2}] Kopiera till urklipp och stäng"		
+	
 		"PANOHUD_GhostBecomeSpectator"						"Tryck [%s1] för att bli en åskådare"
 
 		"SFUIHUD_Spectate_You_Are_Dead"				"<font color=\"%s1\">Följer %s2</font>"
@@ -37972,7 +37988,7 @@ Om samma match redan laddats ner lokalt och filen blivit förstörd, radera då 
 	"Panorama_Lang_Footer_Turkish"			"TURKISKA"
 	"Panorama_Lang_Footer_Ukrainian"			"UKRAINSKA"
 	
-	"Panorama_MoviePlaybackError"		"Ett fel uppstod vid uppspelning"
+	"Panorama_MoviePlaybackError"		"Uppspelningsfel"
 
 	"Debugger_PaintInfo"				"Visa färginfo"
 	"Debugger_Style"				"Stil"
@@ -41465,16 +41481,13 @@ Om samma match redan laddats ner lokalt och filen blivit förstörd, radera då 
 		"quest_11015_var_desc:p{mission-points}"	 	"Vinn {d:mission-points} runda i <b>{s:gamemode}: {s:location}</b>.#|#Vinn {d:mission-points} rundor i <b>{s:gamemode}: {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Vinn {d:mission-points} runda#|#Vinn {d:mission-points} rundor"
 
-// crow_mask_46950_comment
-// crow_mask_46951_comment
+// crow_mask_46964_comment
+// crow_mask_46965_comment
 }
 
 
 
 
 }
-
-
-
 
 

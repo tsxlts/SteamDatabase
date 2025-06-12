@@ -180,6 +180,12 @@
 			"weight"		"50"
 			"hexColor"		"#FFD700"
 		}
+		"highlight"
+		{
+			"value"		"13"
+			"weight"		"50"
+			"hexColor"		"#FFD7AA"
+		}
 	}
 	"colors"
 	{
@@ -211722,6 +211728,18 @@
 			"prefab"		"weapon_case_key"
 		}
 	}
+	"items"
+	{
+		"30115"
+		{
+			"name"		"set_train_2025_storepromo_key - Item Contest Winner"
+			"item_name"		"#CSGO_set_train_2025_storepromo_key_contestwinner"
+			"item_description"		"#CSGO_set_train_2025_storepromo_key_contestwinner_Desc"
+			"image_inventory"		"econ/tools/set_train_2025_storepromo_key"
+			"first_sale_date"		"2025-05-29"
+			"prefab"		"weapon_case_key"
+		}
+	}
 	"paint_kits"
 	{
 		"106"
@@ -217353,7 +217371,7 @@
 			"name"		"kc_aus2025"
 			"loc_name"		"#keychain_kc_aus2025"
 			"loc_description"		"#keychain_kc_aus2025_desc"
-			"item_rarity"		"ancient"
+			"item_rarity"		"rare"
 			"item_quality"		"tournament"
 			"image_inventory"		"econ/keychains/aus2025/kc_aus2025"
 			"pedestal_display_model"		"weapons/keychains/aus2025/kc_aus2025.vmdl"

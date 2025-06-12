@@ -2522,6 +2522,7 @@
 		"rarity4"								"Unusual"
 		"strange"								"StatTrak™"
 		"completed"								"Completed"
+		"highlight"								"Top okamžik"
 
 		// Team Usability
 		"noteam"								"Žádný tým"
@@ -3009,6 +3010,7 @@
 
 		"ItemNameUniqueFormat"				"%s2%s3"			// will turn into "The Battalion's Backup #1"; foreign languages that have gender/declension can change this to be "Shotgun #1" or whatever
 		"ItemNameWithQualityFormat"			"%s2%s3 (%s1)"		// will turn into "Strange Shotgun #1"; foreign languages that have gender for adjectives can change this to be "Shotgun #1 (Strange)" or whatever
+		"ItemNameWithQualityFormat_13"		"%s2 (%s1)%s3"		// will turn into "Souvenir Package (Highlight) #1"; foreign languages that have gender for adjectives can change this to be "Shotgun (with Highlight) #1" or whatever
 		"ItemNameCraftNumberFormat"			" #%s1"
 
 		"TF_Tag_Category_Quality"	"Kategorie"
@@ -5338,6 +5340,9 @@
 		"CSGO_set_community_35"					"Kolekce Fever"
 		"CSGO_set_train_2025"					"Kolekce Train 2025"
 		"CSGO_set_train_2025_short"				"Kolekce Train 2025"
+		"CSGO_set_train_2025_storepromo_key_contestwinner"			"Train 2025 Collection Workshop Contributor"
+		"CSGO_set_train_2025_storepromo_key_contestwinner_desc"	"Uděleno komunitním přispěvatelům do kolekce Train 2025."
+		
 		"CSGO_set_timed_drops_warm"				"Kolekce Radiant"
 		"CSGO_set_timed_drops_neutral"			"Kolekce Boreal"
 		"CSGO_set_timed_drops_cool"				"Kolekce Ascent"
@@ -25595,13 +25600,13 @@
 	"StickerKit_desc_aus2025_signature_elige_gold" "Tuto zlatou samolepku podepsal profesionální hráč Jonathan Jablonowski, který na šampionátu BLAST.tv Austin 2025 hrál za tým FaZe Clan."
 
 	"StickerKit_aus2025_signature_frozen" "frozen | BLAST.tv Austin 2025"
-	"StickerKit_desc_aus2025_signature_frozen" "Tuto samolepku podepsal profesionální hráč David Cernansky, který na šampionátu BLAST.tv Austin 2025 hrál za tým FaZe Clan."
+	"StickerKit_desc_aus2025_signature_frozen" "Tuto samolepku podepsal profesionální hráč David Čerňanský, který na šampionátu BLAST.tv Austin 2025 hrál za tým FaZe Clan."
 	"StickerKit_aus2025_signature_frozen_foil" "frozen (speciální) | BLAST.tv Austin 2025"
-	"StickerKit_desc_aus2025_signature_frozen_foil" "Tuto speciální samolepku podepsal profesionální hráč David Cernansky, který na šampionátu BLAST.tv Austin 2025 hrál za tým FaZe Clan."
+	"StickerKit_desc_aus2025_signature_frozen_foil" "Tuto speciální samolepku podepsal profesionální hráč David Čerňanský, který na šampionátu BLAST.tv Austin 2025 hrál za tým FaZe Clan."
 	"StickerKit_aus2025_signature_frozen_holo" "frozen (holografická) | BLAST.tv Austin 2025"
-	"StickerKit_desc_aus2025_signature_frozen_holo" "Tuto holografickou samolepku podepsal profesionální hráč David Cernansky, který na šampionátu BLAST.tv Austin 2025 hrál za tým FaZe Clan."
+	"StickerKit_desc_aus2025_signature_frozen_holo" "Tuto holografickou samolepku podepsal profesionální hráč David Čerňanský, který na šampionátu BLAST.tv Austin 2025 hrál za tým FaZe Clan."
 	"StickerKit_aus2025_signature_frozen_gold" "frozen (zlatá) | BLAST.tv Austin 2025"
-	"StickerKit_desc_aus2025_signature_frozen_gold" "Tuto zlatou samolepku podepsal profesionální hráč David Cernansky, který na šampionátu BLAST.tv Austin 2025 hrál za tým FaZe Clan."
+	"StickerKit_desc_aus2025_signature_frozen_gold" "Tuto zlatou samolepku podepsal profesionální hráč David Čerňanský, který na šampionátu BLAST.tv Austin 2025 hrál za tým FaZe Clan."
 
 	"StickerKit_aus2025_signature_rain" "rain | BLAST.tv Austin 2025"
 	"StickerKit_desc_aus2025_signature_rain" "Tuto samolepku podepsal profesionální hráč Håvard Nygaard, který na šampionátu BLAST.tv Austin 2025 hrál za tým FaZe Clan."
@@ -25982,13 +25987,13 @@
 	"StickerKit_desc_aus2025_signature_tn1r_gold" "Tuto zlatou samolepku podepsal profesionální hráč Andrei Tatarynovich, který na šampionátu BLAST.tv Austin 2025 hrál za tým HEROIC."
 
 	"StickerKit_aus2025_signature_sunpayus" "SunPayus | BLAST.tv Austin 2025"
-	"StickerKit_desc_aus2025_signature_sunpayus" "Tuto samolepku podepsal profesionální hráč Alvaro Garcia, který na šampionátu BLAST.tv Austin 2025 hrál za tým HEROIC."
+	"StickerKit_desc_aus2025_signature_sunpayus" "Tuto samolepku podepsal profesionální hráč Álvaro García, který na šampionátu BLAST.tv Austin 2025 hrál za tým HEROIC."
 	"StickerKit_aus2025_signature_sunpayus_foil" "SunPayus (speciální) | BLAST.tv Austin 2025"
-	"StickerKit_desc_aus2025_signature_sunpayus_foil" "Tuto speciální samolepku podepsal profesionální hráč Alvaro Garcia, který na šampionátu BLAST.tv Austin 2025 hrál za tým HEROIC."
+	"StickerKit_desc_aus2025_signature_sunpayus_foil" "Tuto speciální samolepku podepsal profesionální hráč Álvaro García, který na šampionátu BLAST.tv Austin 2025 hrál za tým HEROIC."
 	"StickerKit_aus2025_signature_sunpayus_holo" "SunPayus (holografická) | BLAST.tv Austin 2025"
-	"StickerKit_desc_aus2025_signature_sunpayus_holo" "Tuto holografickou samolepku podepsal profesionální hráč Alvaro Garcia, který na šampionátu BLAST.tv Austin 2025 hrál za tým HEROIC."
+	"StickerKit_desc_aus2025_signature_sunpayus_holo" "Tuto holografickou samolepku podepsal profesionální hráč Álvaro García, který na šampionátu BLAST.tv Austin 2025 hrál za tým HEROIC."
 	"StickerKit_aus2025_signature_sunpayus_gold" "SunPayus (zlatá) | BLAST.tv Austin 2025"
-	"StickerKit_desc_aus2025_signature_sunpayus_gold" "Tuto zlatou samolepku podepsal profesionální hráč Alvaro Garcia, který na šampionátu BLAST.tv Austin 2025 hrál za tým HEROIC."
+	"StickerKit_desc_aus2025_signature_sunpayus_gold" "Tuto zlatou samolepku podepsal profesionální hráč Álvaro García, který na šampionátu BLAST.tv Austin 2025 hrál za tým HEROIC."
 
 	"StickerKit_aus2025_signature_xfl0ud" "xfl0ud | BLAST.tv Austin 2025"
 	"StickerKit_desc_aus2025_signature_xfl0ud" "Tuto samolepku podepsal profesionální hráč Yasin Koc, který na šampionátu BLAST.tv Austin 2025 hrál za tým HEROIC."
@@ -26288,49 +26293,49 @@
 	"StickerKit_desc_aus2025_signature_jeorge_gold" "Tuto zlatou samolepku podepsal profesionální hráč Jeorge Endicott, který na šampionátu BLAST.tv Austin 2025 hrál za tým NRG."
 
 	"StickerKit_aus2025_signature_ins" "INS | BLAST.tv Austin 2025"
-	"StickerKit_desc_aus2025_signature_ins" "Tuto samolepku podepsal profesionální hráč Joshua Potter, který na šampionátu BLAST.tv Austin 2025 hrál za tým Flyquest."
+	"StickerKit_desc_aus2025_signature_ins" "Tuto samolepku podepsal profesionální hráč Joshua Potter, který na šampionátu BLAST.tv Austin 2025 hrál za tým FlyQuest."
 	"StickerKit_aus2025_signature_ins_foil" "INS (speciální) | BLAST.tv Austin 2025"
-	"StickerKit_desc_aus2025_signature_ins_foil" "Tuto speciální samolepku podepsal profesionální hráč Joshua Potter, který na šampionátu BLAST.tv Austin 2025 hrál za tým Flyquest."
+	"StickerKit_desc_aus2025_signature_ins_foil" "Tuto speciální samolepku podepsal profesionální hráč Joshua Potter, který na šampionátu BLAST.tv Austin 2025 hrál za tým FlyQuest."
 	"StickerKit_aus2025_signature_ins_holo" "INS (holografická) | BLAST.tv Austin 2025"
-	"StickerKit_desc_aus2025_signature_ins_holo" "Tuto holografickou samolepku podepsal profesionální hráč Joshua Potter, který na šampionátu BLAST.tv Austin 2025 hrál za tým Flyquest."
+	"StickerKit_desc_aus2025_signature_ins_holo" "Tuto holografickou samolepku podepsal profesionální hráč Joshua Potter, který na šampionátu BLAST.tv Austin 2025 hrál za tým FlyQuest."
 	"StickerKit_aus2025_signature_ins_gold" "INS (zlatá) | BLAST.tv Austin 2025"
-	"StickerKit_desc_aus2025_signature_ins_gold" "Tuto zlatou samolepku podepsal profesionální hráč Joshua Potter, který na šampionátu BLAST.tv Austin 2025 hrál za tým Flyquest."
+	"StickerKit_desc_aus2025_signature_ins_gold" "Tuto zlatou samolepku podepsal profesionální hráč Joshua Potter, který na šampionátu BLAST.tv Austin 2025 hrál za tým FlyQuest."
 
 	"StickerKit_aus2025_signature_liazz" "Liazz | BLAST.tv Austin 2025"
-	"StickerKit_desc_aus2025_signature_liazz" "Tuto samolepku podepsal profesionální hráč John Tregillgas, který na šampionátu BLAST.tv Austin 2025 hrál za tým Flyquest."
+	"StickerKit_desc_aus2025_signature_liazz" "Tuto samolepku podepsal profesionální hráč John Tregillgas, který na šampionátu BLAST.tv Austin 2025 hrál za tým FlyQuest."
 	"StickerKit_aus2025_signature_liazz_foil" "Liazz (speciální) | BLAST.tv Austin 2025"
-	"StickerKit_desc_aus2025_signature_liazz_foil" "Tuto speciální samolepku podepsal profesionální hráč John Tregillgas, který na šampionátu BLAST.tv Austin 2025 hrál za tým Flyquest."
+	"StickerKit_desc_aus2025_signature_liazz_foil" "Tuto speciální samolepku podepsal profesionální hráč John Tregillgas, který na šampionátu BLAST.tv Austin 2025 hrál za tým FlyQuest."
 	"StickerKit_aus2025_signature_liazz_holo" "Liazz (holografická) | BLAST.tv Austin 2025"
-	"StickerKit_desc_aus2025_signature_liazz_holo" "Tuto holografickou samolepku podepsal profesionální hráč John Tregillgas, který na šampionátu BLAST.tv Austin 2025 hrál za tým Flyquest."
+	"StickerKit_desc_aus2025_signature_liazz_holo" "Tuto holografickou samolepku podepsal profesionální hráč John Tregillgas, který na šampionátu BLAST.tv Austin 2025 hrál za tým FlyQuest."
 	"StickerKit_aus2025_signature_liazz_gold" "Liazz (zlatá) | BLAST.tv Austin 2025"
-	"StickerKit_desc_aus2025_signature_liazz_gold" "Tuto zlatou samolepku podepsal profesionální hráč John Tregillgas, který na šampionátu BLAST.tv Austin 2025 hrál za tým Flyquest."
+	"StickerKit_desc_aus2025_signature_liazz_gold" "Tuto zlatou samolepku podepsal profesionální hráč John Tregillgas, který na šampionátu BLAST.tv Austin 2025 hrál za tým FlyQuest."
 
 	"StickerKit_aus2025_signature_vexite" "vexite | BLAST.tv Austin 2025"
-	"StickerKit_desc_aus2025_signature_vexite" "Tuto samolepku podepsal profesionální hráč Declan Portelli, který na šampionátu BLAST.tv Austin 2025 hrál za tým Flyquest."
+	"StickerKit_desc_aus2025_signature_vexite" "Tuto samolepku podepsal profesionální hráč Declan Portelli, který na šampionátu BLAST.tv Austin 2025 hrál za tým FlyQuest."
 	"StickerKit_aus2025_signature_vexite_foil" "vexite (speciální) | BLAST.tv Austin 2025"
-	"StickerKit_desc_aus2025_signature_vexite_foil" "Tuto speciální samolepku podepsal profesionální hráč Declan Portelli, který na šampionátu BLAST.tv Austin 2025 hrál za tým Flyquest."
+	"StickerKit_desc_aus2025_signature_vexite_foil" "Tuto speciální samolepku podepsal profesionální hráč Declan Portelli, který na šampionátu BLAST.tv Austin 2025 hrál za tým FlyQuest."
 	"StickerKit_aus2025_signature_vexite_holo" "vexite (holografická) | BLAST.tv Austin 2025"
-	"StickerKit_desc_aus2025_signature_vexite_holo" "Tuto holografickou samolepku podepsal profesionální hráč Declan Portelli, který na šampionátu BLAST.tv Austin 2025 hrál za tým Flyquest."
+	"StickerKit_desc_aus2025_signature_vexite_holo" "Tuto holografickou samolepku podepsal profesionální hráč Declan Portelli, který na šampionátu BLAST.tv Austin 2025 hrál za tým FlyQuest."
 	"StickerKit_aus2025_signature_vexite_gold" "vexite (zlatá) | BLAST.tv Austin 2025"
-	"StickerKit_desc_aus2025_signature_vexite_gold" "Tuto zlatou samolepku podepsal profesionální hráč Declan Portelli, který na šampionátu BLAST.tv Austin 2025 hrál za tým Flyquest."
+	"StickerKit_desc_aus2025_signature_vexite_gold" "Tuto zlatou samolepku podepsal profesionální hráč Declan Portelli, který na šampionátu BLAST.tv Austin 2025 hrál za tým FlyQuest."
 
 	"StickerKit_aus2025_signature_regali" "regali | BLAST.tv Austin 2025"
-	"StickerKit_desc_aus2025_signature_regali" "Tuto samolepku podepsal profesionální hráč Iulian Harjău, který na šampionátu BLAST.tv Austin 2025 hrál za tým Flyquest."
+	"StickerKit_desc_aus2025_signature_regali" "Tuto samolepku podepsal profesionální hráč Iulian Harjău, který na šampionátu BLAST.tv Austin 2025 hrál za tým FlyQuest."
 	"StickerKit_aus2025_signature_regali_foil" "regali (speciální) | BLAST.tv Austin 2025"
-	"StickerKit_desc_aus2025_signature_regali_foil" "Tuto speciální samolepku podepsal profesionální hráč Iulian Harjău, který na šampionátu BLAST.tv Austin 2025 hrál za tým Flyquest."
+	"StickerKit_desc_aus2025_signature_regali_foil" "Tuto speciální samolepku podepsal profesionální hráč Iulian Harjău, který na šampionátu BLAST.tv Austin 2025 hrál za tým FlyQuest."
 	"StickerKit_aus2025_signature_regali_holo" "regali (holografická) | BLAST.tv Austin 2025"
-	"StickerKit_desc_aus2025_signature_regali_holo" "Tuto holografickou samolepku podepsal profesionální hráč Iulian Harjău, který na šampionátu BLAST.tv Austin 2025 hrál za tým Flyquest."
+	"StickerKit_desc_aus2025_signature_regali_holo" "Tuto holografickou samolepku podepsal profesionální hráč Iulian Harjău, který na šampionátu BLAST.tv Austin 2025 hrál za tým FlyQuest."
 	"StickerKit_aus2025_signature_regali_gold" "regali (zlatá) | BLAST.tv Austin 2025"
-	"StickerKit_desc_aus2025_signature_regali_gold" "Tuto zlatou samolepku podepsal profesionální hráč Iulian Harjău, který na šampionátu BLAST.tv Austin 2025 hrál za tým Flyquest."
+	"StickerKit_desc_aus2025_signature_regali_gold" "Tuto zlatou samolepku podepsal profesionální hráč Iulian Harjău, který na šampionátu BLAST.tv Austin 2025 hrál za tým FlyQuest."
 
 	"StickerKit_aus2025_signature_nettik" "nettik | BLAST.tv Austin 2025"
-	"StickerKit_desc_aus2025_signature_nettik" "Tuto samolepku podepsal profesionální hráč Corey Browne, který na šampionátu BLAST.tv Austin 2025 hrál za tým Flyquest."
+	"StickerKit_desc_aus2025_signature_nettik" "Tuto samolepku podepsal profesionální hráč Corey Browne, který na šampionátu BLAST.tv Austin 2025 hrál za tým FlyQuest."
 	"StickerKit_aus2025_signature_nettik_foil" "nettik (speciální) | BLAST.tv Austin 2025"
-	"StickerKit_desc_aus2025_signature_nettik_foil" "Tuto speciální samolepku podepsal profesionální hráč Corey Browne, který na šampionátu BLAST.tv Austin 2025 hrál za tým Flyquest."
+	"StickerKit_desc_aus2025_signature_nettik_foil" "Tuto speciální samolepku podepsal profesionální hráč Corey Browne, který na šampionátu BLAST.tv Austin 2025 hrál za tým FlyQuest."
 	"StickerKit_aus2025_signature_nettik_holo" "nettik (holografická) | BLAST.tv Austin 2025"
-	"StickerKit_desc_aus2025_signature_nettik_holo" "Tuto holografickou samolepku podepsal profesionální hráč Corey Browne, který na šampionátu BLAST.tv Austin 2025 hrál za tým Flyquest."
+	"StickerKit_desc_aus2025_signature_nettik_holo" "Tuto holografickou samolepku podepsal profesionální hráč Corey Browne, který na šampionátu BLAST.tv Austin 2025 hrál za tým FlyQuest."
 	"StickerKit_aus2025_signature_nettik_gold" "nettik (zlatá) | BLAST.tv Austin 2025"
-	"StickerKit_desc_aus2025_signature_nettik_gold" "Tuto zlatou samolepku podepsal profesionální hráč Corey Browne, který na šampionátu BLAST.tv Austin 2025 hrál za tým Flyquest."
+	"StickerKit_desc_aus2025_signature_nettik_gold" "Tuto zlatou samolepku podepsal profesionální hráč Corey Browne, který na šampionátu BLAST.tv Austin 2025 hrál za tým FlyQuest."
 
 	"StickerKit_aus2025_signature_hampus" "hampus | BLAST.tv Austin 2025"
 	"StickerKit_desc_aus2025_signature_hampus" "Tuto samolepku podepsal profesionální hráč Hampus Poser, který na šampionátu BLAST.tv Austin 2025 hrál za tým Metizport."
@@ -26605,12 +26610,19 @@
 
 	"CSGO_crate_aus2025_promo"		"Suvenýr | BLAST.tv Austin 2025"
 	"CSGO_crate_aus2025_promo_de_inferno"		"Austin 2025 Inferno Souvenir Package"
+	"CSGO_crate_aus2025_promo_de_inferno^highlight"		"Austin 2025 Inferno Souvenir Highlight Package"
 	"CSGO_crate_aus2025_promo_de_mirage"		"Austin 2025 Mirage Souvenir Package"
+	"CSGO_crate_aus2025_promo_de_mirage^highlight"		"Austin 2025 Mirage Souvenir Highlight Package"
 	"CSGO_crate_aus2025_promo_de_anubis"		"Austin 2025 Anubis Souvenir Package"
+	"CSGO_crate_aus2025_promo_de_anubis^highlight"		"Austin 2025 Anubis Souvenir Highlight Package"
 	"CSGO_crate_aus2025_promo_de_dust2"		"Austin 2025 Dust II Souvenir Package"
+	"CSGO_crate_aus2025_promo_de_dust2^highlight"		"Austin 2025 Dust II Souvenir Highlight Package"
 	"CSGO_crate_aus2025_promo_de_ancient"		"Austin 2025 Ancient Souvenir Package"
+	"CSGO_crate_aus2025_promo_de_ancient^highlight"		"Austin 2025 Ancient Souvenir Highlight Package"
 	"CSGO_crate_aus2025_promo_de_nuke"		"Austin 2025 Nuke Souvenir Package"
+	"CSGO_crate_aus2025_promo_de_nuke^highlight"		"Austin 2025 Nuke Souvenir Highlight Package"
 	"CSGO_crate_aus2025_promo_de_train"		"Austin 2025 Train Souvenir Package"
+	"CSGO_crate_aus2025_promo_de_train^highlight"		"Austin 2025 Train Souvenir Highlight Package"
 
 	"keychain_kc_aus2025"			"Highlight | BLAST.tv Austin 2025"
 	"keychain_kc_aus2025_desc"		"Tento přívěsek je připomínkou šampionátu BLAST.tv Austin 2025 a zahrnuje top okamžik z jednoho zápasu."
@@ -34405,7 +34417,7 @@
 		"CSGO_Demo_Toggle"							"[Shift+F2]"
 		"CSGO_Demo_Time"							"{s:current_time} / {s:total_time}"
 		"CSGO_Demo_Round"							"Kolo:"
-		"CSGO_Demo_Highlight"						"Důležitá sekce:"
+		"CSGO_Demo_Highlight"						"Významný okamžik:"
 		"CSGO_Demo_End_Playback"					"Ukončit přehrávání"
 		"CSGO_Demo_End_Playback_Overwatch"			"Přeskočit na verdikt"
 		"CSGO_Demo_End_Playback_Overwatch_Finished"	"Přejít na verdikt"
@@ -35598,6 +35610,9 @@
 		"PANOHUD_Spectate_Navigation_New_Cameraman_On"		"[{s:bind_radio}] Zapnout kameramana "
 		"PANOHUD_Spectate_Navigation_ToggleSpec"			"[{s:bind_drop}] Zjednodušené statistiky "
 		"PANOHUD_Spectate_Navigation_ToggleOverview"		"[{s:bind_duck}] Přehled "
+		"PANOHUD_Spectate_Navigation_PlayHighlight"			"[{s:bind_radialradio2}] Přehrát top okamžik"	
+		"PANOHUD_Spectate_Navigation_CopyHighlight"			"[{s:bind_radialradio2}] Kopírovat do schránky a zavřít"		
+	
 		"PANOHUD_GhostBecomeSpectator"						"Stiskem [%s1] se staneš divákem"
 
 		"SFUIHUD_Spectate_You_Are_Dead"				"<font color=\"%s1\">Sleduješ hráče %s2</font>"
@@ -41062,7 +41077,7 @@
 	"Panorama_Lang_Footer_Turkish"			"TUREČTINA"
 	"Panorama_Lang_Footer_Ukrainian"			"UKRAJINŠTINA"
 	
-	"Panorama_MoviePlaybackError"		"Během přehrávání došlo k chybě"
+	"Panorama_MoviePlaybackError"		"Chyba přehrávání videa"
 
 	"Debugger_PaintInfo"				"Zobrazit informace o barvě"
 	"Debugger_Style"				"Styl"
@@ -42894,7 +42909,7 @@
 		"tooltip_unequip_flair"						"Sundat tento předmět"
 		"tooltip_prime"								"Primární účet"
 
-		"tooltip_demo_highlights_toggle"			"Zapnout přehrávání důležitých sekcí"
+		"tooltip_demo_highlights_toggle"			"Zapnout přehrávání významných okamžiků"
 
 		"mainmenu_go_to_character_loadout"			"Zobrazit agenta ve vybavení"
 		"mainmenu_switch_vanity_to_t"				"Zobrazit vybaveného agenta T"
@@ -44871,8 +44886,8 @@
 		"quest_11015_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> | Vyhraj {d:mission-points} kolo.#|#<b>{s:gamemode}: {s:location}</b> | Vyhraj {d:mission-points} kola.#|#<b>{s:gamemode}: {s:location}</b> | Vyhraj {d:mission-points} kol.#|#<b>{s:gamemode}: {s:location}</b> | Vyhraj {d:mission-points} kola."
 		"quest_11015_var_ingame:p{mission-points}"		"Vyhraj {d:mission-points} kolo#|#Vyhraj {d:mission-points} kola#|#Vyhraj {d:mission-points} kol#|#Vyhraj {d:mission-points} kola"
 
-// crow_mask_46950_comment
-// crow_mask_46951_comment
+// crow_mask_46964_comment
+// crow_mask_46965_comment
 }
 
 

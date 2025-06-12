@@ -2523,6 +2523,7 @@
 		"rarity4"								"Inusual"
 		"strange"								"StatTrak™"
 		"completed"								"Completo"
+		"highlight"								"Destaque"
 
 		// Team Usability
 		"noteam"								"Sem equipa"
@@ -3010,6 +3011,7 @@
 
 		"ItemNameUniqueFormat"				"%s2%s3"			// will turn into "The Battalion's Backup #1"; foreign languages that have gender/declension can change this to be "Shotgun #1" or whatever
 		"ItemNameWithQualityFormat"			"%s2%s3 %s1"		// will turn into "Strange Shotgun #1"; foreign languages that have gender for adjectives can change this to be "Shotgun #1 (Strange)" or whatever
+		"ItemNameWithQualityFormat_13"		"%s2 (%s1)%s3"		// will turn into "Souvenir Package (Highlight) #1"; foreign languages that have gender for adjectives can change this to be "Shotgun (with Highlight) #1" or whatever
 		"ItemNameCraftNumberFormat"			" No. %s1"
 
 		"TF_Tag_Category_Quality"	"Categoria"
@@ -5248,6 +5250,9 @@
 		"CSGO_set_community_35"					"A Coleção Fever"
 		"CSGO_set_train_2025"					"A Coleção Train 2025"
 		"CSGO_set_train_2025_short"				"Coleção Train 2025"
+		"CSGO_set_train_2025_storepromo_key_contestwinner"			"Colaborador do Workshop - Coleção Train 2025"
+		"CSGO_set_train_2025_storepromo_key_contestwinner_desc"	"Atribuído a um colaborador do Steam Workshop envolvido na Coleção Train 2025."
+		
 		"CSGO_set_timed_drops_warm"				"A Coleção Radiant"
 		"CSGO_set_timed_drops_neutral"			"A Coleção Boreal"
 		"CSGO_set_timed_drops_cool"				"A Coleção Ascent"
@@ -24620,13 +24625,13 @@
 	"StickerKit_desc_aus2025_signature_chopper_gold" "Este autocolante dourado foi autografado pelo jogador profissional Leonid Vishnyakov, que jogou pelos Team Spirit no Major de CS2 de Austin 2025 da BLAST.tv."
 
 	"StickerKit_aus2025_signature_magixx" "magixx | Austin 2025"
-	"StickerKit_desc_aus2025_signature_magixx" "Este autocolante foi autografado pelo jogador profissional Borislav Vorobev, que jogou pelos Team Spirit no Major de CS2 de Austin 2025 da BLAST.tv."
+	"StickerKit_desc_aus2025_signature_magixx" "Este autocolante foi autografado pelo jogador profissional Borislav Vorobiev, que jogou pelos Team Spirit no Major de CS2 de Austin 2025 da BLAST.tv."
 	"StickerKit_aus2025_signature_magixx_foil" "magixx (Foil) | Austin 2025"
-	"StickerKit_desc_aus2025_signature_magixx_foil" "Este autocolante \"foil\" foi autografado pelo jogador profissional Borislav Vorobev, que jogou pelos Team Spirit no Major de CS2 de Austin 2025 da BLAST.tv."
+	"StickerKit_desc_aus2025_signature_magixx_foil" "Este autocolante \"foil\" foi autografado pelo jogador profissional Borislav Vorobiev, que jogou pelos Team Spirit no Major de CS2 de Austin 2025 da BLAST.tv."
 	"StickerKit_aus2025_signature_magixx_holo" "magixx (Holo) | Austin 2025"
-	"StickerKit_desc_aus2025_signature_magixx_holo" "Este autocolante holográfico foi autografado pelo jogador profissional Borislav Vorobev, que jogou pelos Team Spirit no Major de CS2 de Austin 2025 da BLAST.tv."
+	"StickerKit_desc_aus2025_signature_magixx_holo" "Este autocolante holográfico foi autografado pelo jogador profissional Borislav Vorobiev, que jogou pelos Team Spirit no Major de CS2 de Austin 2025 da BLAST.tv."
 	"StickerKit_aus2025_signature_magixx_gold" "magixx (Gold) | Austin 2025"
-	"StickerKit_desc_aus2025_signature_magixx_gold" "Este autocolante dourado foi autografado pelo jogador profissional Borislav Vorobev, que jogou pelos Team Spirit no Major de CS2 de Austin 2025 da BLAST.tv."
+	"StickerKit_desc_aus2025_signature_magixx_gold" "Este autocolante dourado foi autografado pelo jogador profissional Borislav Vorobiev, que jogou pelos Team Spirit no Major de CS2 de Austin 2025 da BLAST.tv."
 
 	"StickerKit_aus2025_signature_donk" "donk | Austin 2025"
 	"StickerKit_desc_aus2025_signature_donk" "Este autocolante foi autografado pelo jogador profissional Danil Kryshkovets, que jogou pelos Team Spirit no Major de CS2 de Austin 2025 da BLAST.tv."
@@ -25340,13 +25345,13 @@
 	"StickerKit_desc_aus2025_signature_tn1r_gold" "Este autocolante dourado foi autografado pelo jogador profissional Andrei Tatarynovich, que jogou pelos HEROIC no Major de CS2 de Austin 2025 da BLAST.tv."
 
 	"StickerKit_aus2025_signature_sunpayus" "SunPayus | Austin 2025"
-	"StickerKit_desc_aus2025_signature_sunpayus" "Este autocolante foi autografado pelo jogador profissional Alvaro Garcia, que jogou pelos HEROIC no Major de CS2 de Austin 2025 da BLAST.tv."
+	"StickerKit_desc_aus2025_signature_sunpayus" "Este autocolante foi autografado pelo jogador profissional Álvaro Garcia, que jogou pelos HEROIC no Major de CS2 de Austin 2025 da BLAST.tv."
 	"StickerKit_aus2025_signature_sunpayus_foil" "SunPayus (Foil) | Austin 2025"
-	"StickerKit_desc_aus2025_signature_sunpayus_foil" "Este autocolante \"foil\" foi autografado pelo jogador profissional Alvaro Garcia, que jogou pelos HEROIC no Major de CS2 de Austin 2025 da BLAST.tv."
+	"StickerKit_desc_aus2025_signature_sunpayus_foil" "Este autocolante \"foil\" foi autografado pelo jogador profissional Álvaro Garcia, que jogou pelos HEROIC no Major de CS2 de Austin 2025 da BLAST.tv."
 	"StickerKit_aus2025_signature_sunpayus_holo" "SunPayus (Holo) | Austin 2025"
-	"StickerKit_desc_aus2025_signature_sunpayus_holo" "Este autocolante holográfico foi autografado pelo jogador profissional Alvaro Garcia, que jogou pelos HEROIC no Major de CS2 de Austin 2025 da BLAST.tv."
+	"StickerKit_desc_aus2025_signature_sunpayus_holo" "Este autocolante holográfico foi autografado pelo jogador profissional Álvaro Garcia, que jogou pelos HEROIC no Major de CS2 de Austin 2025 da BLAST.tv."
 	"StickerKit_aus2025_signature_sunpayus_gold" "SunPayus (Gold) | Austin 2025"
-	"StickerKit_desc_aus2025_signature_sunpayus_gold" "Este autocolante dourado foi autografado pelo jogador profissional Alvaro Garcia, que jogou pelos HEROIC no Major de CS2 de Austin 2025 da BLAST.tv."
+	"StickerKit_desc_aus2025_signature_sunpayus_gold" "Este autocolante dourado foi autografado pelo jogador profissional Álvaro Garcia, que jogou pelos HEROIC no Major de CS2 de Austin 2025 da BLAST.tv."
 
 	"StickerKit_aus2025_signature_xfl0ud" "xfl0ud | Austin 2025"
 	"StickerKit_desc_aus2025_signature_xfl0ud" "Este autocolante foi autografado pelo jogador profissional Yasin Koc, que jogou pelos HEROIC no Major de CS2 de Austin 2025 da BLAST.tv."
@@ -25963,12 +25968,19 @@
 
 	"CSGO_crate_aus2025_promo"		"Brinde de Austin 2025"
 	"CSGO_crate_aus2025_promo_de_inferno"		"Brinde (Inferno) - Austin 2025"
+	"CSGO_crate_aus2025_promo_de_inferno^highlight"		"Brinde com Destaque (Inferno) - Austin 2025"
 	"CSGO_crate_aus2025_promo_de_mirage"		"Brinde (Mirage) - Austin 2025"
+	"CSGO_crate_aus2025_promo_de_mirage^highlight"		"Brinde com Destaque (Mirage) - Austin 2025"
 	"CSGO_crate_aus2025_promo_de_anubis"		"Brinde (Anubis) - Austin 2025"
+	"CSGO_crate_aus2025_promo_de_anubis^highlight"		"Brinde com Destaque (Anubis) - Austin 2025"
 	"CSGO_crate_aus2025_promo_de_dust2"		"Brinde (Dust II) - Austin 2025"
+	"CSGO_crate_aus2025_promo_de_dust2^highlight"		"Brinde com Destaque (Dust II) - Austin 2025"
 	"CSGO_crate_aus2025_promo_de_ancient"		"Brinde (Ancient) - Austin 2025"
+	"CSGO_crate_aus2025_promo_de_ancient^highlight"		"Brinde com Destaque (Ancient) - Austin 2025"
 	"CSGO_crate_aus2025_promo_de_nuke"		"Brinde (Nuke) - Austin 2025"
+	"CSGO_crate_aus2025_promo_de_nuke^highlight"		"Brinde com Destaque (Nuke) - Austin 2025"
 	"CSGO_crate_aus2025_promo_de_train"		"Brinde (Train) - Austin 2025"
+	"CSGO_crate_aus2025_promo_de_train^highlight"		"Brinde com Destaque (Train) - Austin 2025"
 
 	"keychain_kc_aus2025"			"Destaque | Austin 2025"
 	"keychain_kc_aus2025_desc"		"Este amuleto comemora o Major de CS2 de Austin 2025 da BLAST.tv e contém um destaque de uma partida."
@@ -34995,6 +35007,9 @@
 		"PANOHUD_Spectate_Navigation_New_Cameraman_On"		"[{s:bind_radio}] Ligar cameraman "
 		"PANOHUD_Spectate_Navigation_ToggleSpec"			"[{s:bind_drop}] Pontuações "
 		"PANOHUD_Spectate_Navigation_ToggleOverview"		"[{s:bind_duck}] Vista geral "
+		"PANOHUD_Spectate_Navigation_PlayHighlight"			"[{s:bind_radialradio2}] Reproduzir destaque"	
+		"PANOHUD_Spectate_Navigation_CopyHighlight"			"[{s:bind_radialradio2}] Copiar para área de transferência e fechar"		
+	
 		"PANOHUD_GhostBecomeSpectator"						"Pressiona [%s1] para te tornares num espectador"
 
 		"SFUIHUD_Spectate_You_Are_Dead"				"<font color=\"%s1\">A seguir %s2</font>"
@@ -40455,7 +40470,7 @@
 	"Panorama_Lang_Footer_Turkish"			"TURCO"
 	"Panorama_Lang_Footer_Ukrainian"			"UCRANIANO"
 	
-	"Panorama_MoviePlaybackError"		"Ocorreu um erro durante a reprodução"
+	"Panorama_MoviePlaybackError"		"Erro na reprodução de vídeo"
 
 	"Debugger_PaintInfo"				"Mostrar dados de pintura"
 	"Debugger_Style"				"Estilo"
@@ -44264,8 +44279,8 @@
 		"quest_11015_var_desc:p{mission-points}"	 	"Vence {d:mission-points} ronda no modo <b>{s:gamemode} ({s:location})</b>.#|#Vence {d:mission-points} rondas no modo <b>{s:gamemode}: {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Vence {d:mission-points} ronda#|#Vence {d:mission-points} rondas"
 
-// crow_mask_46950_comment
-// crow_mask_46951_comment
+// crow_mask_46964_comment
+// crow_mask_46965_comment
 }
 
 
