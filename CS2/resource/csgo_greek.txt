@@ -25276,6 +25276,51 @@
 	"CSGO_crate_signature_pack_aus2025_group_champions_tinyname" "Αυτόγραφα Πρωταθλητών"
 	"CSGO_crate_signature_pack_aus2025_group_champions_desc" "Αυτή η κάψουλα περιέχει ένα Χάρτινο, Μεταλλικό, Ολογραφικό ή Χρυσό αυτοκόλλητο με την υπογραφή ενός Πρωταθλητή από το πρωτάθλημα Όστιν 2025.\n\nΤο 50% των εσόδων από την πώληση αυτής της κάψουλας υποστηρίζει τους συμπεριλαμβανόμενους παίκτες και οργανισμούς.\n\nΑυτό το αυτοκόλλητο μπορεί να εφαρμοστεί σε οποιοδήποτε από τα όπλα σας και μπορεί να ξυθεί για να φαίνεται πιο φθαρμένο. Μπορείτε να ξύσετε το ίδιο αυτοκόλλητο πολλές φορές, κάνοντάς το όλο και πιο φθαρμένο κάθε φορά, μέχρι να αφαιρεθεί εντελώς από το όπλο."
 
+	"StickerKit_aus2025_signature_apex_champion" "apEX (Πρωταθλητής) | Όστιν 2025"
+	"StickerKit_desc_aus2025_signature_apex_champion" "Αυτό το αυτοκόλλητο έχει αυτόγραφο του επαγγελματία παίκτη Dan Madesclaire, που έπαιζε για τους Vitality, τους Πρωταθλητές στο Πρωτάθλημα Major BLAST.tv Όστιν 2025 του CS2."
+	"StickerKit_aus2025_signature_apex_champion_foil" "apEX (Μεταλ., Πρωταθλητής) | Όστιν 2025"
+	"StickerKit_desc_aus2025_signature_apex_champion_foil" "Αυτό το μεταλλικό αυτοκόλλητο έχει αυτόγραφο του επαγγελματία παίκτη Dan Madesclaire, που έπαιζε για τους Vitality, τους Πρωταθλητές στο Πρωτάθλημα Major BLAST.tv Όστιν 2025 του CS2."
+	"StickerKit_aus2025_signature_apex_champion_holo" "apEX (Ολογρ., Πρωταθλητής) | Όστιν 2025"
+	"StickerKit_desc_aus2025_signature_apex_champion_holo" "Αυτό το ολογραφικό αυτοκόλλητο έχει αυτόγραφο του επαγγελματία παίκτη Dan Madesclaire, που έπαιζε για τους Vitality, τους Πρωταθλητές στο Πρωτάθλημα Major BLAST.tv Όστιν 2025 του CS2."
+	"StickerKit_aus2025_signature_apex_champion_gold" "apEX (Χρυσό, Πρωταθλητής) | Όστιν 2025"
+	"StickerKit_desc_aus2025_signature_apex_champion_gold" "Αυτό το χρυσό αυτοκόλλητο έχει αυτόγραφο του επαγγελματία παίκτη Dan Madesclaire, που έπαιζε για τους Vitality, τους Πρωταθλητές στο Πρωτάθλημα Major BLAST.tv Όστιν 2025 του CS2."
+
+	"StickerKit_aus2025_signature_zywoo_champion" "ZywOo (Πρωταθλητής) | Όστιν 2025"
+	"StickerKit_desc_aus2025_signature_zywoo_champion" "Αυτό το αυτοκόλλητο έχει αυτόγραφο του επαγγελματία παίκτη Mathieu Herbaut, που έπαιζε για τους Vitality, τους Πρωταθλητές στο Πρωτάθλημα Major BLAST.tv Όστιν 2025 του CS2."
+	"StickerKit_aus2025_signature_zywoo_champion_foil" "ZywOo (Μεταλ., Πρωταθλητής) | Όστιν 2025"
+	"StickerKit_desc_aus2025_signature_zywoo_champion_foil" "Αυτό το μεταλλικό αυτοκόλλητο έχει αυτόγραφο του επαγγελματία παίκτη Mathieu Herbaut, που έπαιζε για τους Vitality, τους Πρωταθλητές στο Πρωτάθλημα Major BLAST.tv Όστιν 2025 του CS2."
+	"StickerKit_aus2025_signature_zywoo_champion_holo" "ZywOo (Ολογρ., Πρωταθλητής) | Όστιν 2025"
+	"StickerKit_desc_aus2025_signature_zywoo_champion_holo" "Αυτό το ολογραφικό αυτοκόλλητο έχει αυτόγραφο του επαγγελματία παίκτη Mathieu Herbaut, που έπαιζε για τους Vitality, τους Πρωταθλητές στο Πρωτάθλημα Major BLAST.tv Όστιν 2025 του CS2."
+	"StickerKit_aus2025_signature_zywoo_champion_gold" "ZywOo (Χρυσό, Πρωταθλητής) | Όστιν 2025"
+	"StickerKit_desc_aus2025_signature_zywoo_champion_gold" "Αυτό το χρυσό αυτοκόλλητο έχει αυτόγραφο του επαγγελματία παίκτη Mathieu Herbaut, που έπαιζε για τους Vitality, τους Πρωταθλητές στο Πρωτάθλημα Major BLAST.tv Όστιν 2025 του CS2."
+
+	"StickerKit_aus2025_signature_flamez_champion" "FlameZ (Πρωταθλητής) | Όστιν 2025"
+	"StickerKit_desc_aus2025_signature_flamez_champion" "Αυτό το αυτοκόλλητο έχει αυτόγραφο του επαγγελματία παίκτη Shahar Hai Shoshan, που έπαιζε για τους Vitality, τους Πρωταθλητές στο Πρωτάθλημα Major BLAST.tv Όστιν 2025 του CS2."
+	"StickerKit_aus2025_signature_flamez_champion_foil" "FlameZ (Μεταλ., Πρωταθλητής) | Όστιν 2025"
+	"StickerKit_desc_aus2025_signature_flamez_champion_foil" "Αυτό το μεταλλικό αυτοκόλλητο έχει αυτόγραφο του επαγγελματία παίκτη Shahar Hai Shoshan, που έπαιζε για τους Vitality, τους Πρωταθλητές στο Πρωτάθλημα Major BLAST.tv Όστιν 2025 του CS2."
+	"StickerKit_aus2025_signature_flamez_champion_holo" "FlameZ (Ολογρ., Πρωταθλητής) | Όστιν 2025"
+	"StickerKit_desc_aus2025_signature_flamez_champion_holo" "Αυτό το ολογραφικό αυτοκόλλητο έχει αυτόγραφο του επαγγελματία παίκτη Shahar Hai Shoshan, που έπαιζε για τους Vitality, τους Πρωταθλητές στο Πρωτάθλημα Major BLAST.tv Όστιν 2025 του CS2."
+	"StickerKit_aus2025_signature_flamez_champion_gold" "FlameZ (Χρυσό, Πρωταθλητής) | Όστιν 2025"
+	"StickerKit_desc_aus2025_signature_flamez_champion_gold" "Αυτό το χρυσό αυτοκόλλητο έχει αυτόγραφο του επαγγελματία παίκτη Shahar Hai Shoshan, που έπαιζε για τους Vitality, τους Πρωταθλητές στο Πρωτάθλημα Major BLAST.tv Όστιν 2025 του CS2."
+
+	"StickerKit_aus2025_signature_mezii_champion" "mezii (Πρωταθλητής) | Όστιν 2025"
+	"StickerKit_desc_aus2025_signature_mezii_champion" "Αυτό το αυτοκόλλητο έχει αυτόγραφο του επαγγελματία παίκτη William Cameron Merriman, που έπαιζε για τους Vitality, τους Πρωταθλητές στο Πρωτάθλημα Major BLAST.tv Όστιν 2025 του CS2."
+	"StickerKit_aus2025_signature_mezii_champion_foil" "mezii (Μεταλ., Πρωταθλητής) | Όστιν 2025"
+	"StickerKit_desc_aus2025_signature_mezii_champion_foil" "Αυτό το μεταλλικό αυτοκόλλητο έχει αυτόγραφο του επαγγελματία παίκτη William Cameron Merriman, που έπαιζε για τους Vitality, τους Πρωταθλητές στο Πρωτάθλημα Major BLAST.tv Όστιν 2025 του CS2."
+	"StickerKit_aus2025_signature_mezii_champion_holo" "mezii (Ολογρ., Πρωταθλητής) | Όστιν 2025"
+	"StickerKit_desc_aus2025_signature_mezii_champion_holo" "Αυτό το ολογραφικό αυτοκόλλητο έχει αυτόγραφο του επαγγελματία παίκτη William Cameron Merriman, που έπαιζε για τους Vitality, τους Πρωταθλητές στο Πρωτάθλημα Major BLAST.tv Όστιν 2025 του CS2."
+	"StickerKit_aus2025_signature_mezii_champion_gold" "mezii (Χρυσό, Πρωταθλητής) | Όστιν 2025"
+	"StickerKit_desc_aus2025_signature_mezii_champion_gold" "Αυτό το χρυσό αυτοκόλλητο έχει αυτόγραφο του επαγγελματία παίκτη William Cameron Merriman, που έπαιζε για τους Vitality, τους Πρωταθλητές στο Πρωτάθλημα Major BLAST.tv Όστιν 2025 του CS2."
+
+	"StickerKit_aus2025_signature_ropz_champion" "ropz (Πρωταθλητής) | Όστιν 2025"
+	"StickerKit_desc_aus2025_signature_ropz_champion" "Αυτό το αυτοκόλλητο έχει αυτόγραφο του επαγγελματία παίκτη Robin Kool, που έπαιζε για τους Vitality, τους Πρωταθλητές στο Πρωτάθλημα Major BLAST.tv Όστιν 2025 του CS2."
+	"StickerKit_aus2025_signature_ropz_champion_foil" "ropz (Μεταλ., Πρωταθλητής) | Όστιν 2025"
+	"StickerKit_desc_aus2025_signature_ropz_champion_foil" "Αυτό το μεταλλικό αυτοκόλλητο έχει αυτόγραφο του επαγγελματία παίκτη Robin Kool, που έπαιζε για τους Vitality, τους Πρωταθλητές στο Πρωτάθλημα Major BLAST.tv Όστιν 2025 του CS2."
+	"StickerKit_aus2025_signature_ropz_champion_holo" "ropz (Ολογρ., Πρωταθλητής) | Όστιν 2025"
+	"StickerKit_desc_aus2025_signature_ropz_champion_holo" "Αυτό το ολογραφικό αυτοκόλλητο έχει αυτόγραφο του επαγγελματία παίκτη Robin Kool, που έπαιζε για τους Vitality, τους Πρωταθλητές στο Πρωτάθλημα Major BLAST.tv Όστιν 2025 του CS2."
+	"StickerKit_aus2025_signature_ropz_champion_gold" "ropz (Χρυσό, Πρωταθλητής) | Όστιν 2025"
+	"StickerKit_desc_aus2025_signature_ropz_champion_gold" "Αυτό το χρυσό αυτοκόλλητο έχει αυτόγραφο του επαγγελματία παίκτη Robin Kool, που έπαιζε για τους Vitality, τους Πρωταθλητές στο Πρωτάθλημα Major BLAST.tv Όστιν 2025 του CS2."
+
 
 	"StickerKit_aus2025_signature_apex" "apEX | Όστιν 2025"
 	"StickerKit_desc_aus2025_signature_apex" "Αυτό το αυτοκόλλητο έχει αυτόγραφο του επαγγελματία παίκτη Dan Madesclaire, που έπαιζε για τους Vitality στο Πρωτάθλημα Major BLAST.tv Όστιν 2025 του CS2."
@@ -26736,7 +26781,6 @@
 
 	"keychain_kc_aus2025"			"Καλύτερη Στιγμή – Όστιν 2025"
 	"keychain_kc_aus2025_desc"		"Αυτό το γούρι σουβενίρ τιμά το Πρωτάθλημα Major BLAST.tv Όστιν 2025 του CS2 και διαθέτει ένα βίντεο με τις καλύτερες στιγμές."
-
 	"CSGO_CollectibleCoin_aus2025_Champion"				"Πρωταθλητής στο BLAST.tv Όστιν 2025"
 	"CSGO_CollectibleCoin_aus2025_Champion_Desc"			"Αυτό το τρόπαιο πρωταθλήματος απονεμήθηκε στον Πρωταθλητή του Πρωταθλήματος Major BLAST.tv Όστιν 2025 του CS2."
 	"CSGO_CollectibleCoin_aus2025_Finalist"				"Φιναλίστ στο BLAST.tv Όστιν 2025"
@@ -36114,9 +36158,8 @@
 		"PANOHUD_Spectate_Navigation_New_Cameraman_On"		"[{s:bind_radio}] Ενεργοποίηση εικονολήπτη"
 		"PANOHUD_Spectate_Navigation_ToggleSpec"			"[{s:bind_drop}] Μικρός βαθμολογικός πίνακας"
 		"PANOHUD_Spectate_Navigation_ToggleOverview"		"[{s:bind_duck}] Επισκόπηση"
-		"PANOHUD_Spectate_Navigation_PlayHighlight"			"[{s:bind_radialradio2}] Αναπαραγωγή καλύτερης στιγμής"	
-		"PANOHUD_Spectate_Navigation_CopyHighlight"			"[{s:bind_radialradio2}] Αντιγραφή στο πρόχειρο και κλείσιμο"		
-	
+		"PANOHUD_Spectate_Navigation_PlayHighlight"			"[{s:bind_lookatweapon}] Αναπαραγωγή καλύτερης στιγμής"
+		"PANOHUD_Spectate_Navigation_CopyHighlightAndClose"	"[{s:bind_lookatweapon}] Αντιγραφή στο πρόχειρο και κλείσιμο"
 		"PANOHUD_GhostBecomeSpectator"						"Πατήστε [%s1] για να γίνετε θεατής"
 
 		"SFUIHUD_Spectate_You_Are_Dead"				"<font color=\"%s1\">Παρακολουθείτε %s2</font>"
@@ -37909,15 +37952,6 @@
 
 		"SFUI_UserAlert_HighPings"			"Το καλύτερο ping σας σε επίσημους διακομιστές είναι %s1 ms."
 		"SFUI_UserAlert_Unreachable"		"Αποτυχία επικοινωνίας με επίσημους διακομιστές."
-		"SFUI_UserAlert_UnreachableText"	"Αποτυχία επικοινωνίας με οποιονδήποτε επίσημο διακομιστή. Μπορεί να υπάρχει ένα πρόβλημα με τη σύνδεσή σας στο διαδίκτυο ή με τη διαμόρφωση του τείχους προστασίας σας. Ελέγξτε τις ρυθμίσεις δικτύου σας και προσπαθήστε ξανά."
-		"SFUI_UserAlert_Unreachable_Reason-102"	"Οι απαιτούμενοι πόροι δικτύου δεν είναι διαθέσιμοι και η ενημέρωση της διαμόρφωσης δικτύου απέτυχε."
-		"SFUI_UserAlert_Unreachable_Reason-101"	"Έχουν αποτύχει πολλές προσπάθειες απόκτησης των απαιτούμενων πόρων."
-		"SFUI_UserAlert_Unreachable_Reason-100"	"Οι απαιτούμενοι πόροι δικτύου δεν είναι διαθέσιμοι αυτή τη στιγμή."
-		"SFUI_UserAlert_Unreachable_Reason-10"	"Θα συνεχίσουμε να προσπαθούμε να εδραιώσουμε τη σύνδεση στο παρασκήνιο."
-		"SFUI_UserAlert_Unreachable_Reason1"	"Αποτυχία αρχικοποίησης της σύνδεσης δικτύου."
-		"SFUI_UserAlert_Unreachable_Reason2"	"Αναμονή για τους απαιτούμενους πόρους δικτύου."
-		"SFUI_UserAlert_Unreachable_Reason3"	"Λήξη χρονικού ορίου αναμονής για τη δημιουργία της σύνδεσης δικτύου."
-		"SFUI_UserAlert_Unreachable_Reason100"	"Η σύνδεση δικτύου εδραιώθηκε με επιτυχία, αλλά δεν είναι δυνατή η επικοινωνία με τους επίσημους διακομιστές."
 		"SFUI_UserAlert_Unreachable_Reason0"	"Παρουσιάστηκε άγνωστο σφάλμα δικτύου."
 
 		"SFUI_UserAlertNoteType_1"			"Οι διακομιστές σε %s1 αντιμετωπίζουν υψηλό φόρτο."
@@ -42664,6 +42698,7 @@
 		"tournament_coin_show_your_support" "Δείξτε την υποστήριξη σας"
 		"tournament_coin_team_graffiti_popup_title"		"Επιλέξτε το γκράφιτι ομάδας σας"
 		"tournament_coin_completed_challenges_int"	"<b>{d:challenges}</b> ολοκληρωμένες προκλήσεις"
+		"tournament_items_not_released_h"		"Το αντικείμενο που περιέχεται σε αυτό το πακέτο σουβενίρ καλύτερων στιγμών περιέχει ένα γούρι σουβενίρ με μια καλύτερη στιγμή από αυτόν τον αγώνα. Αυτά τα πακέτα σουβενίρ καλύτερων στιγμών θα κυκλοφορήσουν μετά την ολοκλήρωση του Major."
 		"tournament_items_not_released_1"		"Αυτά τα αντικείμενα διαθέτουν αυτόγραφα από τους Πρωταθλητές. Θα κυκλοφορήσουν αφότου ολοκληρωθεί το Major."
 		"tournament_items_not_released"		"Αυτά τα αντικείμενα διαθέτουν αυτόγραφα από τους Πρωταθλητές και τους Φιναλίστ. Θα κυκλοφορήσουν αφότου ολοκληρωθεί το Major."
 		"tournament_items_notice"		"Μόνο ένα Πάσο μπορεί να ενεργοποιηθεί.\nΤα αγορασμένα Πάσο δεν θα είναι ανταλλάξιμα/εμπορεύσιμα για μία εβδομάδα."
@@ -45220,6 +45255,20 @@
 		"Chatwheel_negative"	"Όχι"
 		"Chatwheel_peptalk"	"Προετοιμασία"
 		"Chatwheel_cheer"	"Εμψύχωση"
+
+		"Chatwheel_plantingata"	"Τοποθετώ τη βόμβα στην Α"
+		"Chatwheel_plantingatb"	"Τοποθετώ τη βόμβα στη Β"
+		"Chatwheel_plantedata"	"Τοποθέτησα τη βόμβα στην Α"
+		"Chatwheel_plantedatb"	"Τοποθέτησα τη βόμβα στη Β"
+		"Chatwheel_planted"	"Τοποθετήσαμε τη βόμβα"
+
+		"Chatwheel_seehostagestaken"	"Οι όμηροι διασώζονται"
+		"Chatwheel_requestgethostages"	"Πάρτε τους ομήρους"
+
+		"Chatwheel_guardinga"	"Φυλάω την Α"
+		"Chatwheel_guardingb"	"Φυλάω τη Β"
+		
+
 		
 		"Chatwheel_section_command"	"Εντολές"
 		"Chatwheel_section_report"	"Αναφορά"
@@ -45396,8 +45445,8 @@
 		"quest_11015_var_desc:p{mission-points}"	 	"Κερδίστε {d:mission-points} γύρο σε <b>{s:gamemode}: {s:location}</b>.#|#Κερδίστε {d:mission-points} γύρους σε <b>{s:gamemode}: {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Κερδίστε {d:mission-points} γύρο#|#Κερδίστε {d:mission-points} γύρους"
 
-// crow_mask_46964_comment
-// crow_mask_46965_comment
+// crow_mask_48003_comment
+// crow_mask_48004_comment
 }
 
 

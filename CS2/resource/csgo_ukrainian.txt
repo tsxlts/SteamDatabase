@@ -101,8 +101,8 @@
 		"tooltip_copycrosshair"				"Копіювати перехрестя"
 		"GameUI_Xhair_Copy_Code_Confirm"		"Замінити поточне перехрестя?"
 
-		"settings_damage_prediction"			"Прогнозування шкоди"
-		"settings_damage_prediction_info"		"Одразу відтворювати звукові та візуальні ефекти завдання шкоди без очікування на підтвердження від сервера. Завдяки прогнозуванню шкоди стрільба може відчуватися набагато динамічнішою, проте є ризик інколи помилятися (як-от внаслідок влучань, зниження мобільності та смертей, про які клієнт ще не знає). Прогнозування шкоди не діє, якщо у вас високий пінґ."
+		"settings_damage_prediction"			"Передбачення шкоди"
+		"settings_damage_prediction_info"		"Одразу відтворювати звукові та візуальні ефекти завдання шкоди без очікування на підтвердження від сервера. Завдяки передбаченню шкоди стрільба може відчуватися набагато динамічнішою, проте є ризик інколи помилятися (як-от внаслідок влучань, зниження мобільності та смертей, про які клієнт ще не знає). Передбачення шкоди не діє, якщо у вас високий пінґ."
 		"GameUI_PredictBodyShotEffects"			"Передбачення влучань у тіло"
 		"GameUI_PredictBodyShotEffects_Tooltip"	"Відтворює звукові та візуальні ефекти влучання в тіло (як-от бризки крові та звуки влучання) на основі передбачення."
 		"GameUI_PredictHeadShotEffects"			"Передбачення влучань у голову"
@@ -25262,7 +25262,6 @@
 	"CSGO_crate_signature_pack_aus2025_group_champions_tinyname" "Автографи чемпіонів"
 	"CSGO_crate_signature_pack_aus2025_group_champions_desc" "Ця капсула містить одну паперову, лискучу, голографічну або золоту наліпку з автографом одного з гравців команди-чемпіона на турнірі «Остін 2025».\n\n50% коштів, отриманих із продажу цієї капсули, буде передано вказаному гравцеві та організації.\n\nЦю наліпку можна приклеїти на будь-яку вашу зброю. Її можна пошкрябати, щоби надати зношеного вигляду. Ви можете шкрябати наліпку кілька разів, щоразу роблячи її обшарпанішою, аж доки вона не відпаде зі зброї."
 
-
 	"StickerKit_aus2025_signature_apex" "apEX | Остін 2025"
 	"StickerKit_desc_aus2025_signature_apex" "Цю наліпку підписав професійний гравець Ден Мадесклер із команди Vitality на великому турнірі з CS2 «BLAST.tv Остін 2025»."
 	"StickerKit_aus2025_signature_apex_foil" "apEX (лискуча) | Остін 2025"
@@ -26722,7 +26721,6 @@
 
 	"keychain_kc_aus2025"			"Яскравий момент на «Остін 2025»"
 	"keychain_kc_aus2025_desc"		"Цей сувенірний брелок присвячений великому турніру з CS2 «BLAST.tv Остін 2025» і містить коротке відео з яскравим моментом."
-
 	"CSGO_CollectibleCoin_aus2025_Champion"				"Чемпіон «BLAST.tv Остін 2025»"
 	"CSGO_CollectibleCoin_aus2025_Champion_Desc"			"Цю нагороду вручено переможцю великого турніру з CS2 «BLAST.tv Остін 2025»."
 	"CSGO_CollectibleCoin_aus2025_Finalist"				"Фіналіст «BLAST.tv Остін 2025»"
@@ -36151,9 +36149,6 @@
 		"PANOHUD_Spectate_Navigation_New_Cameraman_On"		"[{s:bind_radio}] Увімкнути операторство"
 		"PANOHUD_Spectate_Navigation_ToggleSpec"			"[{s:bind_drop}] Міні-таблиця результатів"
 		"PANOHUD_Spectate_Navigation_ToggleOverview"		"[{s:bind_duck}] Мапа"
-		"PANOHUD_Spectate_Navigation_PlayHighlight"			"[{s:bind_radialradio2}] Дивитися яскравий момент"	
-		"PANOHUD_Spectate_Navigation_CopyHighlight"			"[{s:bind_radialradio2}] Скопіювати й закрити"		
-	
 		"PANOHUD_GhostBecomeSpectator"						"Натисніть [%s1], щоби стати глядачем"
 
 		"SFUIHUD_Spectate_You_Are_Dead"				"<font color=\"%s1\">Нагляд за %s2</font>"
@@ -37945,15 +37940,6 @@
 
 		"SFUI_UserAlert_HighPings"			"Ваша найкраща затримка для офіційних серверів — %s1 мс."
 		"SFUI_UserAlert_Unreachable"		"Не вдалося підключитися до офіційних серверів."
-		"SFUI_UserAlert_UnreachableText"	"Не вдалося отримати доступ до офіційних серверів. Можливо, сталася проблема з вашим підключенням до Інтернету або конфігурацією брандмауера. Будь ласка, перевірте ваші налаштування мережі та спробуйте знову."
-		"SFUI_UserAlert_Unreachable_Reason-102"	"Необхідні мережеві ресурси недоступні, тож не вдалося оновити конфігурацію мережі."
-		"SFUI_UserAlert_Unreachable_Reason-101"	"Кілька спроб отримати необхідні мережеві ресурси зазнали невдачі."
-		"SFUI_UserAlert_Unreachable_Reason-100"	"Необхідні мережеві ресурси наразі недоступні."
-		"SFUI_UserAlert_Unreachable_Reason-10"	"Ми продовжуватимемо намагатися встановити підключення у фоновому режимі."
-		"SFUI_UserAlert_Unreachable_Reason1"	"Не вдалося ініціювати підключення до мережі."
-		"SFUI_UserAlert_Unreachable_Reason2"	"Очікування необхідних мережевих ресурсів."
-		"SFUI_UserAlert_Unreachable_Reason3"	"Сплинув час очікування на встановлення підключення до мережі."
-		"SFUI_UserAlert_Unreachable_Reason100"	"Підключення до мережі встановлено успішно, але офіційні сервери недоступні."
 		"SFUI_UserAlert_Unreachable_Reason0"	"Сталася невідома помилка мережі."
 
 		"SFUI_UserAlertNoteType_1"			"%s1 — сервери сильно навантажені."
@@ -42597,7 +42583,7 @@
 		"popup_decodeable_desc"			"Розблокувати <b>{s:itemname}</b>"
 		"popup_decodeable_xray_desc"	"<b>{s:itemname}</b>"
 		"popup_decodeable_desc_graffiti"	"Відкрити <b>{s:itemname}</b>"
-		"popup_decodeable_desc_fantoken"	"Активувати <b>{s:itemname}</b>"
+		"popup_decodeable_desc_fantoken"	"Активувати: <b>{s:itemname}</b>"
 		"popup_decodeable_warning"		"Цей контейнер одноразовий"
 		"popup_decodeable_warning_graffiti"		"Це графіти можна відкрити лише раз"
 		"popup_decodeable_warning_fantoken"		"Цей предмет можна активувати лише раз"
@@ -42697,6 +42683,7 @@
 		"tournament_coin_show_your_support" "Покажіть вашу підтримку"
 		"tournament_coin_team_graffiti_popup_title"		"Вибрати графіті команди"
 		"tournament_coin_completed_challenges_int"	"Виконаних випробувань: <b>{d:challenges}</b>"
+		"tournament_items_not_released_h"		"Предмет у цьому сувенірному наборі містить брелок з яскравим моментом з цього матчу. Ці сувенірні набори буде випущено після завершення великого турніру."
 		"tournament_items_not_released_1"		"Ці предмети міститимуть автографи чемпіонів. Їх буде випущено після завершення великого турніру."
 		"tournament_items_not_released"		"Ці предмети міститимуть автографи чемпіонів та фіналістів. Їх буде випущено після завершення великого турніру."
 		"tournament_items_notice"		"Можна активувати лише одну перепустку.\nПридбані перепустки не можна вимінювати/продавати протягом одного тижня."
@@ -45255,6 +45242,20 @@
 		"Chatwheel_negative"	"Ні"
 		"Chatwheel_peptalk"	"Мотиваційна промова"
 		"Chatwheel_cheer"	"Підбадьорення"
+
+		"Chatwheel_plantingata"	"Закладаю бомбу на «A»"
+		"Chatwheel_plantingatb"	"Закладаю бомбу на «B»"
+		"Chatwheel_plantedata"	"Закладено бомбу на «A»"
+		"Chatwheel_plantedatb"	"Закладено бомбу на «B»"
+		"Chatwheel_planted"	"Ми заклали бомбу"
+
+		"Chatwheel_seehostagestaken"	"Хтось підібрав заручників"
+		"Chatwheel_requestgethostages"	"Рятуйте заручників"
+
+		"Chatwheel_guardinga"	"Захищаю «A»"
+		"Chatwheel_guardingb"	"Захищаю «B»"
+		
+
 		
 		"Chatwheel_section_command"	"Команди"
 		"Chatwheel_section_report"	"Поскаржитися"
@@ -45428,6 +45429,19 @@
 		"quest_11014_var_desc:p{mission-points}"	 	"Виграйте {d:mission-points} раунд у режимі <b>«{s:gamemode}» на мапі {s:location}</b>.#|#Виграйте {d:mission-points} раунди в режимі <b>«{s:gamemode}» на мапі {s:location}</b>.#|#Виграйте {d:mission-points} раундів у режимі <b>«{s:gamemode}» на мапі {s:location}</b>.#|#Виграйте {d:mission-points} раундів у режимі <b>«{s:gamemode}» на мапі {s:location}</b>.#|#Виграйте {d:mission-points} раунду в режимі <b>«{s:gamemode}» на мапі {s:location}</b>."
 		"quest_11014_var_ingame:p{mission-points}"		"Виграйте {d:mission-points} раунд#|#Виграйте {d:mission-points} раунди#|#Виграйте {d:mission-points} раундів#|#Виграйте {d:mission-points} раундів#|#Виграйте {d:mission-points} раунду"
 		
+		"quest_11015_var_desc:p{mission-points}"	 	"Виграйте {d:mission-points} раунд у режимі <b>«{s:gamemode}» на мапі {s:location}</b>.#|#Виграйте {d:mission-points} раунди в режимі <b>«{s:gamemode}» на мапі {s:location}</b>.#|#Виграйте {d:mission-points} раундів у режимі <b>«{s:gamemode}» на мапі {s:location}</b>.#|#Виграйте {d:mission-points} раундів у режимі <b>«{s:gamemode}» на мапі {s:location}</b>.#|#Виграйте {d:mission-points} раунду в режимі <b>«{s:gamemode}» на мапі {s:location}</b>."
+		"quest_11015_var_ingame:p{mission-points}"		"Виграйте {d:mission-points} раунд#|#Виграйте {d:mission-points} раунди#|#Виграйте {d:mission-points} раундів#|#Виграйте {d:mission-points} раундів#|#Виграйте {d:mission-points} раунду"
+
+// crow_mask_48003_comment
+// crow_mask_48004_comment
+}
+
+
+
+
+}
+
+
 		"quest_11015_var_desc:p{mission-points}"	 	"Виграйте {d:mission-points} раунд у режимі <b>«{s:gamemode}» на мапі {s:location}</b>.#|#Виграйте {d:mission-points} раунди в режимі <b>«{s:gamemode}» на мапі {s:location}</b>.#|#Виграйте {d:mission-points} раундів у режимі <b>«{s:gamemode}» на мапі {s:location}</b>.#|#Виграйте {d:mission-points} раундів у режимі <b>«{s:gamemode}» на мапі {s:location}</b>.#|#Виграйте {d:mission-points} раунду в режимі <b>«{s:gamemode}» на мапі {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Виграйте {d:mission-points} раунд#|#Виграйте {d:mission-points} раунди#|#Виграйте {d:mission-points} раундів#|#Виграйте {d:mission-points} раундів#|#Виграйте {d:mission-points} раунду"
 

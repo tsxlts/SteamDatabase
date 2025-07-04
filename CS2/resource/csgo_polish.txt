@@ -24490,7 +24490,6 @@
 	"CSGO_crate_signature_pack_aus2025_group_champions_tinyname" "Autografy mistrzów"
 	"CSGO_crate_signature_pack_aus2025_group_champions_desc" "Ten pojemnik zawiera pojedynczą papierową, foliowaną, holograficzną lub złotą naklejkę z autografem jednego z graczy drużyn mistrzów BLAST.tv Austin 2025.\n\n50% wpływów ze sprzedaży tego pojemnika zostanie przeznaczonych na wsparcie graczy i organizacji biorących udział w tym turnieju.\n\nTa naklejka może zostać naklejona na twoją dowolną broń. Naklejka może zostać podrapana, aby wyglądała na nieco zużytą. Możesz podrapać tę samą naklejkę kilkukrotnie, za każdym razem uszkadzając ją bardziej, dopóki nie zostanie ona usunięta z broni."
 
-
 	"StickerKit_aus2025_signature_apex" "apEX | Austin 2025"
 	"StickerKit_desc_aus2025_signature_apex" "Na tej naklejce swój autograf zostawił profesjonalny gracz Dan Madesclaire reprezentujący drużynę Vitality na Wielkich Mistrzostwach CS2 BLAST.tv Austin 2025."
 	"StickerKit_aus2025_signature_apex_foil" "apEX (foliowana) | Austin 2025"
@@ -25950,7 +25949,6 @@
 
 	"keychain_kc_aus2025"			"Zagranie z BLAST.tv Austin 2025"
 	"keychain_kc_aus2025_desc"		"Ta przywieszka upamiętnia Wielkie Mistrzostwa CS2 BLAST.tv Austin 2025 i zawiera powtórkę z zagraniem."
-
 	"CSGO_CollectibleCoin_aus2025_Champion"				"Mistrz BLAST.tv Austin 2025"
 	"CSGO_CollectibleCoin_aus2025_Champion_Desc"			"To trofeum zostało przyznane członkom zwycięskiej drużyny na Wielkich Mistrzostwach CS2 BLAST.tv Austin 2025."
 	"CSGO_CollectibleCoin_aus2025_Finalist"				"Finalista BLAST.tv Austin 2025"
@@ -34879,9 +34877,6 @@
 		"PANOHUD_Spectate_Navigation_New_Cameraman_On"		"[{s:bind_radio}] Włącz kamerzystę"
 		"PANOHUD_Spectate_Navigation_ToggleSpec"			"[{s:bind_drop}] Minitabela wyników "
 		"PANOHUD_Spectate_Navigation_ToggleOverview"		"[{s:bind_duck}] Mapa "
-		"PANOHUD_Spectate_Navigation_PlayHighlight"			"[{s:bind_radialradio2}] Obejrzyj zagranie"	
-		"PANOHUD_Spectate_Navigation_CopyHighlight"			"[{s:bind_radialradio2}] Skopiuj do schowka i zamknij"		
-	
 		"PANOHUD_GhostBecomeSpectator"						"Wciśnij [%s1], aby stać się widzem"
 
 		"SFUIHUD_Spectate_You_Are_Dead"				"<font color=\"%s1\">Obserwujesz: %s2</font>"
@@ -36673,15 +36668,6 @@
 
 		"SFUI_UserAlert_HighPings"			"Twój obecny najlepszy ping na oficjalnych serwerach to %s1 ms."
 		"SFUI_UserAlert_Unreachable"		"Nie udało się uzyskać odpowiedzi od żadnego oficjalnego serwera."
-		"SFUI_UserAlert_UnreachableText"	"Nie udało się połączyć z żadnym oficjalnym serwerem. Możliwe, że masz problem z połączeniem internetowym albo ustawieniami zapory. Sprawdź swoje ustawienia sieciowe i spróbuj ponownie później."
-		"SFUI_UserAlert_Unreachable_Reason-102"	"Wymagane zasoby sieciowe są niedostępne, a aktualizacja konfiguracji sieciowej się nie powiodła."
-		"SFUI_UserAlert_Unreachable_Reason-101"	"Wielokrotne próby uzyskania wymaganych zasobów sieciowych zakończyły się niepowodzeniem."
-		"SFUI_UserAlert_Unreachable_Reason-100"	"Wymagane zasoby sieciowe są obecnie niedostępne."
-		"SFUI_UserAlert_Unreachable_Reason-10"	"Będziemy nadal próbować nawiązać połączenie z siecią w tle."
-		"SFUI_UserAlert_Unreachable_Reason1"	"Nie udało się zainicjować połączenia z siecią."
-		"SFUI_UserAlert_Unreachable_Reason2"	"Oczekiwanie na wymagane zasoby sieciowe."
-		"SFUI_UserAlert_Unreachable_Reason3"	"Przekroczono czas oczekiwania na nawiązanie połączenia sieciowego."
-		"SFUI_UserAlert_Unreachable_Reason100"	"Połączenie sieciowe zostało nawiązane pomyślnie, ale oficjalne serwery są nieosiągalne."
 		"SFUI_UserAlert_Unreachable_Reason0"	"Wystąpił nieznany błąd sieci."
 
 		"SFUI_UserAlertNoteType_1"			"%s1 – serwer znajduje się pod dużym obciążeniem."
@@ -41418,6 +41404,7 @@
 		"tournament_coin_show_your_support" "Okaż swoje wsparcie"
 		"tournament_coin_team_graffiti_popup_title"		"Wybierz graffiti swojej drużyny"
 		"tournament_coin_completed_challenges_int"	"Ukończone wyzwania: <b>{d:challenges}</b>"
+		"tournament_items_not_released_h"		"Przedmiot zawarty w tym zestawie pamiątkowym z zagraniem ma przywieszkę pamiątkową wyróżniającą zagranie z tego meczu. Te zestawy zostaną wydane po zakończeniu Wielkich Mistrzostw."
 		"tournament_items_not_released_1"		"Te przedmioty będą zawierać autografy mistrzów. Zostaną one wydane po zakończeniu Wielkich Mistrzostw."
 		"tournament_items_not_released"		"Te przedmioty będą zawierać autografy mistrzów i finalistów. Zostaną one wydane po zakończeniu Wielkich Mistrzostw."
 		"tournament_items_notice"		"Można aktywować tylko jedną przepustkę.\nZakupiona przepustka nie będzie wymienialna/zbywalna przez tydzień."
@@ -43950,6 +43937,20 @@
 		"Chatwheel_negative"	"Nie"
 		"Chatwheel_peptalk"	"Otucha"
 		"Chatwheel_cheer"	"Hurra"
+
+		"Chatwheel_plantingata"	"Podkładam na A"
+		"Chatwheel_plantingatb"	"Podkładam na B"
+		"Chatwheel_plantedata"	"Podłożona na A"
+		"Chatwheel_plantedatb"	"Podłożona na B"
+		"Chatwheel_planted"	"Podłożyliśmy bombę"
+
+		"Chatwheel_seehostagestaken"	"Odbijają zakładników"
+		"Chatwheel_requestgethostages"	"Odbić zakładników"
+
+		"Chatwheel_guardinga"	"Pilnuję A"
+		"Chatwheel_guardingb"	"Pilnuję B"
+		
+
 		
 		"Chatwheel_section_command"	"Rozkazy"
 		"Chatwheel_section_report"	"Meldunki"
@@ -44122,6 +44123,21 @@
 		
 		"quest_11014_var_desc:p{mission-points}"	 	"Wygraj {d:mission-points} rundę w trybie <b>{s:gamemode}: {s:location}</b>.#|#Wygraj {d:mission-points} rundy w trybie <b>{s:gamemode}: {s:location}</b>.#|#Wygraj {d:mission-points} rund w trybie <b>{s:gamemode}: {s:location}</b>.#|#Wygraj {d:mission-points} rundy w trybie <b>{s:gamemode}: {s:location}</b>."
 		"quest_11014_var_ingame:p{mission-points}"		"Wygraj {d:mission-points} rundę.#|#Wygraj {d:mission-points} rundy.#|#Wygraj {d:mission-points} rund.#|#Wygraj {d:mission-points} rundy."
+		
+		"quest_11015_var_desc:p{mission-points}"	 	"Wygraj {d:mission-points} rundę w trybie <b>{s:gamemode}: {s:location}</b>.#|#Wygraj {d:mission-points} rundy w trybie <b>{s:gamemode}: {s:location}</b>.#|#Wygraj {d:mission-points} rund w trybie <b>{s:gamemode}: {s:location}</b>.#|#Wygraj {d:mission-points} rundy w trybie <b>{s:gamemode}: {s:location}</b>."
+		"quest_11015_var_ingame:p{mission-points}"		"Wygraj {d:mission-points} rundę.#|#Wygraj {d:mission-points} rundy.#|#Wygraj {d:mission-points} rund.#|#Wygraj {d:mission-points} rundy."
+
+// crow_mask_48003_comment
+// crow_mask_48004_comment
+}
+
+
+
+
+}
+
+
+-points} rundy.#|#Wygraj {d:mission-points} rund.#|#Wygraj {d:mission-points} rundy."
 		
 		"quest_11015_var_desc:p{mission-points}"	 	"Wygraj {d:mission-points} rundę w trybie <b>{s:gamemode}: {s:location}</b>.#|#Wygraj {d:mission-points} rundy w trybie <b>{s:gamemode}: {s:location}</b>.#|#Wygraj {d:mission-points} rund w trybie <b>{s:gamemode}: {s:location}</b>.#|#Wygraj {d:mission-points} rundy w trybie <b>{s:gamemode}: {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Wygraj {d:mission-points} rundę.#|#Wygraj {d:mission-points} rundy.#|#Wygraj {d:mission-points} rund.#|#Wygraj {d:mission-points} rundy."

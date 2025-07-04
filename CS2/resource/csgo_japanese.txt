@@ -23870,7 +23870,6 @@
 	"CSGO_crate_signature_pack_aus2025_group_champions_tinyname" "Champions サイン"
 	"CSGO_crate_signature_pack_aus2025_group_champions_desc" "このカプセルには、Austin 2025 Champions 選手の 1 人がサインしたステッカー（ペーパー、キラ、ホログラムまたはゴールド）が 1 つ入っています。\n\nこのカプセルの販売による収入の半分は参加選手や関連組織に分配されます。\n\nステッカーは所有しているどの武器にも貼り付けることができ、より擦り切れて見えるように削ることもできます。同じステッカーを何度も削ることができますが、毎回少しずつ擦り切れていき、最終的には武器から剥がれ落ちます。"
 
-
 	"StickerKit_aus2025_signature_apex" "apEX | Austin 2025"
 	"StickerKit_desc_aus2025_signature_apex" "このステッカーは、BLAST.tv Austin 2025 CS2 Major Championship に出場した Vitality 所属のプロ選手 Dan Madesclaire によってサインされました。"
 	"StickerKit_aus2025_signature_apex_foil" "apEX (キラ) | Austin 2025"
@@ -25330,7 +25329,6 @@
 
 	"keychain_kc_aus2025"			"Austin 2025 ハイライト"
 	"keychain_kc_aus2025_desc"		"この記念チャームは、BLAST.tv Austin 2025 CS2 Major Championship を記念したもので、ハイライト映像が収められています。"
-
 	"CSGO_CollectibleCoin_aus2025_Champion"				"BLAST.tv Austin 2025 優勝"
 	"CSGO_CollectibleCoin_aus2025_Champion_Desc"			"このチャンピオンシップトロフィーは BLAST.tv Austin 2025 CS2 Major Championship 優勝者に贈呈されました。"
 	"CSGO_CollectibleCoin_aus2025_Finalist"				"BLAST.tv Austin 2025 決勝進出"
@@ -34370,9 +34368,6 @@
 		"PANOHUD_Spectate_Navigation_New_Cameraman_On"		"[{s:bind_radio}] カメラマンモードをオンにする "
 		"PANOHUD_Spectate_Navigation_ToggleSpec"			"[{s:bind_drop}] ミニスコアボード"
 		"PANOHUD_Spectate_Navigation_ToggleOverview"		"[{s:bind_duck}] 概要"
-		"PANOHUD_Spectate_Navigation_PlayHighlight"			"[{s:bind_radialradio2}] ハイライトを視聴"	
-		"PANOHUD_Spectate_Navigation_CopyHighlight"			"[{s:bind_radialradio2}] クリップボードにコピーして閉じる"		
-	
 		"PANOHUD_GhostBecomeSpectator"						"[%s1] を押して観戦"
 
 		"SFUIHUD_Spectate_You_Are_Dead"				"<font color=\"%s1\">次の %s2</font>"
@@ -36164,15 +36159,6 @@
 
 		"SFUI_UserAlert_HighPings"			"公式サーバーへの最速PINGは %s1 ms です。"
 		"SFUI_UserAlert_Unreachable"		"公式サーバーに接続できませんでした。"
-		"SFUI_UserAlert_UnreachableText"	"どの公式サーバーにもアクセスできませんでした。お使いのインターネット接続あるいはファイアウォール設定に問題があるかもしれません。ネットワーク設定を確認してもう一度お試しください。"
-		"SFUI_UserAlert_Unreachable_Reason-102"	"必要なネットワークリソースを使用できず、ネットワーク構成を更新できませんでした。"
-		"SFUI_UserAlert_Unreachable_Reason-101"	"必要なネットワークリソースの取得を複数回試みましたが、いずれも失敗しました。"
-		"SFUI_UserAlert_Unreachable_Reason-100"	"現在、必要なネットワークリソースを使用できません。"
-		"SFUI_UserAlert_Unreachable_Reason-10"	"引き続きバックグラウンドで接続の確立を試みます。"
-		"SFUI_UserAlert_Unreachable_Reason1"	"ネットワーク接続を開始できませんでした。"
-		"SFUI_UserAlert_Unreachable_Reason2"	"必要なネットワークリソースの待機中です。"
-		"SFUI_UserAlert_Unreachable_Reason3"	"ネットワーク接続の確立を試みましたが、タイムアウトしました。"
-		"SFUI_UserAlert_Unreachable_Reason100"	"ネットワーク接続は正常に確立されましたが、公式サーバーにアクセスできません。"
 		"SFUI_UserAlert_Unreachable_Reason0"	"不明なネットワークエラーが発生しました。"
 
 		"SFUI_UserAlertNoteType_1"			"%s1 のサーバーには高い負荷がかかっています。"
@@ -40912,6 +40898,7 @@
 		"tournament_coin_show_your_support" "応援する"
 		"tournament_coin_team_graffiti_popup_title"		"チームグラフィティを選択"
 		"tournament_coin_completed_challenges_int"	"完了したチャレンジ: <b>{d:challenges}</b> 件"
+		"tournament_items_not_released_h"		"この記念ハイライトパッケージに含まれるアイテムには、このマッチのハイライトをモチーフにした記念チャームが付いています。この記念ハイライトパッケージは、メジャー大会終了後に発売されます。"
 		"tournament_items_not_released_1"		"これらのアイテムは優勝者によってサインされ、Major 終了後にリリースされます。"
 		"tournament_items_not_released"		"これらのアイテムは優勝者と準優勝者によってサインされ、Major 終了後にリリースされます。"
 		"tournament_items_notice"		"有効化できるパスは1つだけです。\n購入したパスは1週間トレード/売買できません。"
@@ -43449,6 +43436,20 @@
 		"Chatwheel_negative"	"いいえ"
 		"Chatwheel_peptalk"	"激励"
 		"Chatwheel_cheer"	"歓声"
+
+		"Chatwheel_plantingata"	"A に設置中"
+		"Chatwheel_plantingatb"	"B に設置中"
+		"Chatwheel_plantedata"	"A に設置した"
+		"Chatwheel_plantedatb"	"B に設置した"
+		"Chatwheel_planted"	" 爆弾を設置した"
+
+		"Chatwheel_seehostagestaken"	"人質が移動中"
+		"Chatwheel_requestgethostages"	"人質を確保しろ"
+
+		"Chatwheel_guardinga"	"A を守ってる"
+		"Chatwheel_guardingb"	"B を守ってる"
+		
+
 		
 		"Chatwheel_section_command"	"命令"
 		"Chatwheel_section_report"	"報告"
@@ -43615,6 +43616,27 @@
 		
 		"quest_11012_var_desc:p{mission-points}"	 	" <b>{s:gamemode}：{s:location}</b>にて{d:mission-points}ラウンド勝利する。"
 		"quest_11012_var_ingame:p{mission-points}"		"{d:mission-points}ラウンド勝利する"
+		
+		"quest_11013_var_desc:p{mission-points}"	 	" <b>{s:gamemode}：{s:location}</b>にて{d:mission-points}ラウンド勝利する。"
+		"quest_11013_var_ingame:p{mission-points}"		"{d:mission-points}ラウンド勝利する"
+		
+		"quest_11014_var_desc:p{mission-points}"	 	" <b>{s:gamemode}：{s:location}</b>にて{d:mission-points}ラウンド勝利する。"
+		"quest_11014_var_ingame:p{mission-points}"		"{d:mission-points}ラウンド勝利する"
+		
+		"quest_11015_var_desc:p{mission-points}"	 	" <b>{s:gamemode}：{s:location}</b>にて{d:mission-points}ラウンド勝利する。"
+		"quest_11015_var_ingame:p{mission-points}"		"{d:mission-points}ラウンド勝利する"
+
+// crow_mask_48003_comment
+// crow_mask_48004_comment
+}
+
+
+
+
+}
+
+
+r_ingame:p{mission-points}"		"{d:mission-points}ラウンド勝利する"
 		
 		"quest_11013_var_desc:p{mission-points}"	 	" <b>{s:gamemode}：{s:location}</b>にて{d:mission-points}ラウンド勝利する。"
 		"quest_11013_var_ingame:p{mission-points}"		"{d:mission-points}ラウンド勝利する"

@@ -24491,7 +24491,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 	"CSGO_crate_signature_pack_aus2025_group_champions_tinyname" "Autógrafos de los campeones"
 	"CSGO_crate_signature_pack_aus2025_group_champions_desc" "Esta cápsula contiene una pegatina normal, reflectante, holográfica o dorada autografiada por uno de los campeones de Austin 2025.\n\nEl 50 % de los beneficios de la venta de esta cápsula se destina a los jugadores y las organizaciones incluidos.\n\nLa pegatina puede colocarse en cualquier arma que tengas y rasparse para que parezca más desgastada. Puedes raspar la misma pegatina varias veces para desgastarla progresivamente hasta eliminarla del arma."
 
-
 	"StickerKit_aus2025_signature_apex" "apEX | Austin 2025"
 	"StickerKit_desc_aus2025_signature_apex" "Esta pegatina está autografiada por Dan Madesclaire, jugador profesional del equipo Vitality en el Major Championship de CS2 BLAST.tv de Austin 2025."
 	"StickerKit_aus2025_signature_apex_foil" "apEX (reflectante) | Austin 2025"
@@ -25951,7 +25950,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 
 	"keychain_kc_aus2025"			"Momento destacado de Austin 2025"
 	"keychain_kc_aus2025_desc"		"Este colgante de regalo conmemora el Major Championship de CS2 BLAST.tv de Austin 2025 e incluye un vídeo de un momento destacado."
-
 	"CSGO_CollectibleCoin_aus2025_Champion"				"Campeón del BLAST.tv de Austin 2025"
 	"CSGO_CollectibleCoin_aus2025_Champion_Desc"			"Este trofeo fue otorgado a los campeones del Major Championship de CS2 BLAST.tv de Austin 2025."
 	"CSGO_CollectibleCoin_aus2025_Finalist"				"Finalista del BLAST.tv de Austin 2025"
@@ -33393,7 +33391,7 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"CSGO_Fantasy_Player_Status_byeday"	"<font color='##89B2D2'>Día de exención</font>"
 		
 		"CSGO_Fantasy_NoSTickers_In_Table" "Actualmente no tienes ninguna pegatina autografiada por un jugador de <b>%s1</b>.\nPuedes comprar cápsulas de pegatinas de equipo o conseguir pegatinas autografiadas directamente en el mercado."
-		"major_hub_souvenir_package_desc"	"Haz clic en cualquiera de las partidas finalizadas de abajo para reclamar un regalo o comprar uno por <span class=\"major-hub-store__souvenir__price\">{s:souvenir_price}</span>"
+		"major_hub_souvenir_package_desc"	"Haz clic en una partida finalizada de abajo para reclamar o comprar un regalo por <span class=\"major-hub-store__souvenir__price\">{s:souvenir_price}</span>"
 		"major_hub_souvenir_package_desc_no_price"	"Haz clic en cualquier partida finalizada de abajo para reclamar un regalo."
 		
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -34880,9 +34878,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"PANOHUD_Spectate_Navigation_New_Cameraman_On"		"[{s:bind_radio}] Activar camarógrafo"
 		"PANOHUD_Spectate_Navigation_ToggleSpec"			"[{s:bind_drop}] Minimarcador "
 		"PANOHUD_Spectate_Navigation_ToggleOverview"		"[{s:bind_duck}] Vista general "
-		"PANOHUD_Spectate_Navigation_PlayHighlight"			"[{s:bind_radialradio2}] Ver momento destacado"	
-		"PANOHUD_Spectate_Navigation_CopyHighlight"			"[{s:bind_radialradio2}] Copiar al portapapeles y cerrar"		
-	
 		"PANOHUD_GhostBecomeSpectator"						"Pulsa [%s1] para hacerte espectador"
 
 		"SFUIHUD_Spectate_You_Are_Dead"				"<font color=\"%s1\">Viendo a %s2</font>"
@@ -36674,15 +36669,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 
 		"SFUI_UserAlert_HighPings"			"Tu mejor ping obtenido en servidores oficiales es de %s1 ms."
 		"SFUI_UserAlert_Unreachable"		"No se ha podido contactar con ningún servidor oficial."
-		"SFUI_UserAlert_UnreachableText"	"No fue posible conectar con ningún servidor oficial. Es posible que haya algún problema en tu conexión a internet o en la configuración del firewall. Revisa la configuración de la red y vuelve a intentarlo."
-		"SFUI_UserAlert_Unreachable_Reason-102"	"Los recursos de red necesarios no están disponibles y no se pudo actualizar la configuración de la red."
-		"SFUI_UserAlert_Unreachable_Reason-101"	"No fue posible adquirir los recursos de red necesarios."
-		"SFUI_UserAlert_Unreachable_Reason-100"	"Los recursos de red necesarios no están disponibles en estos momentos."
-		"SFUI_UserAlert_Unreachable_Reason-10"	"Seguiremos intentando establecer la conexión en segundo plano."
-		"SFUI_UserAlert_Unreachable_Reason1"	"No se pudo iniciar la conexión a la red."
-		"SFUI_UserAlert_Unreachable_Reason2"	"A la espera de que los recursos de red necesarios estén disponibles."
-		"SFUI_UserAlert_Unreachable_Reason3"	"Se agotó el tiempo de espera para establecer la conexión."
-		"SFUI_UserAlert_Unreachable_Reason100"	"La conexión a la red se estableció correctamente, pero no es posible acceder a los servidores oficiales."
 		"SFUI_UserAlert_Unreachable_Reason0"	"Se produjo un error de red desconocido."
 
 		"SFUI_UserAlertNoteType_1"			"Los servidores de %s1 están experimentando un alto nivel de carga."
@@ -41419,6 +41405,7 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"tournament_coin_show_your_support" "Muestra tu apoyo"
 		"tournament_coin_team_graffiti_popup_title"		"Elige tu grafiti de equipo"
 		"tournament_coin_completed_challenges_int"	"<b>{d:challenges}</b> desafíos completados"
+		"tournament_items_not_released_h"		"El artículo incluido en este paquete regalo de momentos destacados tiene un colgante de regalo que incluye un momento destacado de esta partida. Los paquetes regalo de momentos destacados se liberarán cuando termine el Major."
 		"tournament_items_not_released_1"		"Estos artículos tendrán autógrafos de los campeones. Se lanzarán cuando haya concluido el Major."
 		"tournament_items_not_released"		"Estos artículos tendrán autógrafos de los campeones y finalistas. Se lanzarán cuando haya concluido el Major."
 		"tournament_items_notice"		"Solo se puede activar un pase.\nEl pase comprado no será intercambiable ni comerciable durante una semana."
@@ -43951,6 +43938,20 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"Chatwheel_negative"	"No"
 		"Chatwheel_peptalk"	"A darse ánimo"
 		"Chatwheel_cheer"	"¡Hurra!"
+
+		"Chatwheel_plantingata"	"Colocando la bomba en A"
+		"Chatwheel_plantingatb"	"Colocando la bomba en B"
+		"Chatwheel_plantedata"	"Bomba colocada en A"
+		"Chatwheel_plantedatb"	"Comba colocada en B"
+		"Chatwheel_planted"	"Hemos colocado la bomba"
+
+		"Chatwheel_seehostagestaken"	"Se están llevando a los rehenes"
+		"Chatwheel_requestgethostages"	"Rescata a los rehenes"
+
+		"Chatwheel_guardinga"	"Estoy vigilando A"
+		"Chatwheel_guardingb"	"Estoy vigilando B"
+		
+
 		
 		"Chatwheel_section_command"	"Órdenes"
 		"Chatwheel_section_report"	"Denunciar"
@@ -44122,6 +44123,22 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"quest_11013_var_ingame:p{mission-points}"		"Gana {d:mission-points} ronda.#|#Gana {d:mission-points} rondas."
 		
 		"quest_11014_var_desc:p{mission-points}"	 	"Gana {d:mission-points} ronda en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>.#|#Gana {d:mission-points} rondas en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>."
+		"quest_11014_var_ingame:p{mission-points}"		"Gana {d:mission-points} ronda.#|#Gana {d:mission-points} rondas."
+		
+		"quest_11015_var_desc:p{mission-points}"	 	"Gana {d:mission-points} ronda en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>.#|#Gana {d:mission-points} rondas en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>."
+		"quest_11015_var_ingame:p{mission-points}"		"Gana {d:mission-points} ronda.#|#Gana {d:mission-points} rondas."
+
+// crow_mask_48003_comment
+// crow_mask_48004_comment
+}
+
+
+
+
+}
+
+
+amemode}</b>.#|#Gana {d:mission-points} rondas en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>."
 		"quest_11014_var_ingame:p{mission-points}"		"Gana {d:mission-points} ronda.#|#Gana {d:mission-points} rondas."
 		
 		"quest_11015_var_desc:p{mission-points}"	 	"Gana {d:mission-points} ronda en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>.#|#Gana {d:mission-points} rondas en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>."

@@ -24493,7 +24493,6 @@ Certo che no, cazzo."
 	"CSGO_crate_signature_pack_aus2025_group_champions_tinyname" "Autografi dei Campioni"
 	"CSGO_crate_signature_pack_aus2025_group_champions_desc" "Questa capsula contiene un adesivo di carta, foil, olografico o dorato autografato da uno dei giocatori Campioni del Major di Austin 2025.\n\nIl 50% dei ricavi della vendita di questa capsula andrà alle organizzazioni e ai giocatori coinvolti.\n\nQuesto adesivo può essere applicato a qualunque arma tu possieda e può essere raschiato per apparire più consumato. Puoi raschiarlo più volte facendolo apparire via via sempre più consumato, finché non lo rimuoverai del tutto dall'arma."
 
-
 	"StickerKit_aus2025_signature_apex" "apEX | Austin 2025"
 	"StickerKit_desc_aus2025_signature_apex" "Questo adesivo è stato autografato dal giocatore professionista Dan Madesclaire, che ha giocato per Vitality al campionato Major di CS2 BLAST.tv di Austin 2025."
 	"StickerKit_aus2025_signature_apex_foil" "apEX (Foil) | Austin 2025"
@@ -25953,7 +25952,6 @@ Certo che no, cazzo."
 
 	"keychain_kc_aus2025"			"Momenti salienti - Austin 2025"
 	"keychain_kc_aus2025_desc"		"Questo ciondolo souvenir commemora il campionato Major di CS2 BLAST.tv di Austin 2025 e include un reel di un momento saliente."
-
 	"CSGO_CollectibleCoin_aus2025_Champion"				"Campione del BLAST.tv di Austin 2025"
 	"CSGO_CollectibleCoin_aus2025_Champion_Desc"			"Questo trofeo è stato conferito al campione del Major di CS2 BLAST.tv di Austin 2025."
 	"CSGO_CollectibleCoin_aus2025_Finalist"				"Finalista del BLAST.tv di Austin 2025"
@@ -34885,9 +34883,6 @@ Certo che no, cazzo."
 		"PANOHUD_Spectate_Navigation_New_Cameraman_On"		"[{s:bind_radio}] Attiva la regia"
 		"PANOHUD_Spectate_Navigation_ToggleSpec"			"[{s:bind_drop}] Mini-tabella"
 		"PANOHUD_Spectate_Navigation_ToggleOverview"		"[{s:bind_duck}] Panoramica"
-		"PANOHUD_Spectate_Navigation_PlayHighlight"			"[{s:bind_radialradio2}] Riproduci momento saliente"	
-		"PANOHUD_Spectate_Navigation_CopyHighlight"			"[{s:bind_radialradio2}] Copia negli appunti e chiudi"		
-	
 		"PANOHUD_GhostBecomeSpectator"						"Premi [%s1] per diventare uno spettatore"
 
 		"SFUIHUD_Spectate_You_Are_Dead"				"<font color=\"%s1\">Stai guardando %s2</font>"
@@ -36679,15 +36674,6 @@ Certo che no, cazzo."
 
 		"SFUI_UserAlert_HighPings"			"Il tuo ping migliore su server ufficiali è %s1 ms."
 		"SFUI_UserAlert_Unreachable"		"Impossibile contattare i server ufficiali."
-		"SFUI_UserAlert_UnreachableText"	"Impossibile connettersi a server ufficiali. Potrebbe esserci un problema con la tua connessione internet o con la configurazione del tuo firewall. Verifica le impostazioni di rete e riprova."
-		"SFUI_UserAlert_Unreachable_Reason-102"	"Le risorse di rete richieste non sono disponibili e la configurazione di rete non è stata aggiornata."
-		"SFUI_UserAlert_Unreachable_Reason-101"	"Diversi tentativi di acquisizione delle risorse di rete richieste sono falliti."
-		"SFUI_UserAlert_Unreachable_Reason-100"	"Le risorse di rete richieste non sono attualmente disponibili."
-		"SFUI_UserAlert_Unreachable_Reason-10"	"Continueremo a cercare di stabilire la connessione in background."
-		"SFUI_UserAlert_Unreachable_Reason1"	"Impossibile avviare la connessione di rete."
-		"SFUI_UserAlert_Unreachable_Reason2"	"In attesa delle risorse di rete richieste."
-		"SFUI_UserAlert_Unreachable_Reason3"	"Tempo scaduto in attesa di stabilire la connessione di rete."
-		"SFUI_UserAlert_Unreachable_Reason100"	"Connessione di rete stabilita con successo, ma i server ufficiali non sono raggiungibili."
 		"SFUI_UserAlert_Unreachable_Reason0"	"Si è verificato un errore di rete sconosciuto."
 
 		"SFUI_UserAlertNoteType_1"			"I server della regione %s1 stanno riscontrando un carico eccessivo."
@@ -41427,6 +41413,7 @@ Vuoi attivare il tuo pass ora?"
 		"tournament_coin_show_your_support" "Dimostra il tuo supporto"
 		"tournament_coin_team_graffiti_popup_title"		"Scegli il graffito della tua squadra"
 		"tournament_coin_completed_challenges_int"	"<b>{d:challenges}</b> sfide completate"
+		"tournament_items_not_released_h"		"L'oggetto contenuto in questo pacchetto di souvenir dei momenti salienti include un ciondolo souvenir con un momento saliente di questa partita. Questi pacchetti di souvenir dei momenti salienti verranno resi disponibili al termine del Major."
 		"tournament_items_not_released_1"		"Questi oggetti conterranno gli autografi dei campioni e verranno rilasciati dopo il termine del Major."
 		"tournament_items_not_released"		"Questi oggetti conterranno gli autografi dei campioni e dei finalisti e verranno rilasciati dopo il termine del Major."
 		"tournament_items_notice"		"È possibile attivare un solo pass.\nI pass acquistati non potranno essere scambiati o venduti nel Mercato per una settimana."
@@ -43959,6 +43946,20 @@ Vuoi attivare il tuo pass ora?"
 		"Chatwheel_negative"	"No."
 		"Chatwheel_peptalk"	"Incoraggiamento."
 		"Chatwheel_cheer"	"Evviva!"
+
+		"Chatwheel_plantingata"	"Piazzo la bomba in A"
+		"Chatwheel_plantingatb"	"Piazzo la bomba in B"
+		"Chatwheel_plantedata"	"Bomba piazzata in A"
+		"Chatwheel_plantedatb"	"Bomba piazzata in B"
+		"Chatwheel_planted"	"Abbiamo piazzato la bomba"
+
+		"Chatwheel_seehostagestaken"	"Ostaggi in fase di recupero"
+		"Chatwheel_requestgethostages"	"Recuperate gli ostaggi"
+
+		"Chatwheel_guardinga"	"Controllo A"
+		"Chatwheel_guardingb"	"Controllo B"
+		
+
 		
 		"Chatwheel_section_command"	"Comandi."
 		"Chatwheel_section_report"	"Segnalazioni."
@@ -44130,6 +44131,22 @@ Vuoi attivare il tuo pass ora?"
 		"quest_11013_var_ingame:p{mission-points}"		"Vinci {d:mission-points} round#|#Vinci {d:mission-points} round"
 		
 		"quest_11014_var_desc:p{mission-points}"	 	"Vinci {d:mission-points} round in <b>{s:gamemode}: {s:location}</b>.#|#Vinci {d:mission-points} round in <b>{s:gamemode}: {s:location}</b>."
+		"quest_11014_var_ingame:p{mission-points}"		"Vinci {d:mission-points} round#|#Vinci {d:mission-points} round"
+		
+		"quest_11015_var_desc:p{mission-points}"	 	"Vinci {d:mission-points} round in <b>{s:gamemode}: {s:location}</b>.#|#Vinci {d:mission-points} round in <b>{s:gamemode}: {s:location}</b>."
+		"quest_11015_var_ingame:p{mission-points}"		"Vinci {d:mission-points} round#|#Vinci {d:mission-points} round"
+
+// crow_mask_48003_comment
+// crow_mask_48004_comment
+}
+
+
+
+
+}
+
+
+ <b>{s:gamemode}: {s:location}</b>.#|#Vinci {d:mission-points} round in <b>{s:gamemode}: {s:location}</b>."
 		"quest_11014_var_ingame:p{mission-points}"		"Vinci {d:mission-points} round#|#Vinci {d:mission-points} round"
 		
 		"quest_11015_var_desc:p{mission-points}"	 	"Vinci {d:mission-points} round in <b>{s:gamemode}: {s:location}</b>.#|#Vinci {d:mission-points} round in <b>{s:gamemode}: {s:location}</b>."

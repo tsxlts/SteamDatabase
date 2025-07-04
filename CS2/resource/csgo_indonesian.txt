@@ -23816,7 +23816,6 @@
 	"CSGO_crate_signature_pack_aus2025_group_champions_tinyname" "Tanda Tangan Juara"
 	"CSGO_crate_signature_pack_aus2025_group_champions_desc" "Kapsul ini berisi satu stiker Klasik, Perak, Holo, atau Emas yang ditandatangani oleh salah satu pemain tim Juara di Austin 2025.\n\n50% dari hasil penjualan kapsul ini mendukung pemain dan organisasi yang terlibat.\n\nStiker dapat ditempel pada senjata apa pun yang kamu miliki dan dapat dikikis agar terlihat lebih usang. Kamu dapat mengikis stiker yang sama beberapa kali, membuatnya terlihat lebih usang lagi, sampai stiker dilepas dari senjata."
 
-
 	"StickerKit_aus2025_signature_apex" "apEX | Austin 2025"
 	"StickerKit_desc_aus2025_signature_apex" "Stiker ini ditandatangani oleh pemain profesional Dan Madesclaire yang bermain untuk Vitality di Turnamen Major CS2 BLAST.tv Austin 2025."
 	"StickerKit_aus2025_signature_apex_foil" "apEX (Perak) | Austin 2025"
@@ -25276,7 +25275,6 @@
 
 	"keychain_kc_aus2025"			"Sorotan Austin 2025"
 	"keychain_kc_aus2025_desc"		"Gantungan suvenir ini memperingati Turnamen Major CS2 BLAST.tv Austin 2025 dan menampilkan reel sorotan pertandingan."
-
 	"CSGO_CollectibleCoin_aus2025_Champion"				"Juara BLAST.TV Austin 2025"
 	"CSGO_CollectibleCoin_aus2025_Champion_Desc"			"Piala ini diberikan kepada Juara Turnamen Major CS2 BLAST.tv Austin 2025."
 	"CSGO_CollectibleCoin_aus2025_Finalist"				"Finalis BLAST.tv Austin 2025"
@@ -34201,9 +34199,6 @@
 		"PANOHUD_Spectate_Navigation_New_Cameraman_On"		"[{s:bind_radio}] Aktifkan Cameraman "
 		"PANOHUD_Spectate_Navigation_ToggleSpec"			"[{s:bind_drop}] Papan Skor Mini "
 		"PANOHUD_Spectate_Navigation_ToggleOverview"		"[{s:bind_duck}] Ringkasan "
-		"PANOHUD_Spectate_Navigation_PlayHighlight"			"[{s:bind_radialradio2}] Putar Sorotan"	
-		"PANOHUD_Spectate_Navigation_CopyHighlight"			"[{s:bind_radialradio2}] Salin ke Clipboard & Tutup"		
-	
 		"PANOHUD_GhostBecomeSpectator"						"Tekan [%s1] untuk menjadi penonton"
 
 		"SFUIHUD_Spectate_You_Are_Dead"				"<font color=\"%s1\">Mengikuti %s2</font>"
@@ -35995,15 +35990,6 @@
 
 		"SFUI_UserAlert_HighPings"			"Ping terbaik kamu ke server resmi adalah %s1 ms."
 		"SFUI_UserAlert_Unreachable"		"Gagal terhubung ke server resmi."
-		"SFUI_UserAlert_UnreachableText"	"Gagal terhubung ke server resmi. Mungkin terdapat masalah pada koneksi internet atau konfigurasi firewall kamu. Silakan verifikasi pengaturan jaringan kamu dan coba lagi."
-		"SFUI_UserAlert_Unreachable_Reason-102"	"Sumber daya jaringan yang diperlukan tidak tersedia dan konfigurasi jaringan gagal diperbarui."
-		"SFUI_UserAlert_Unreachable_Reason-101"	"Beberapa percobaan untuk mendapatkan sumber daya jaringan telah gagal."
-		"SFUI_UserAlert_Unreachable_Reason-100"	"Sumber daya jaringan yang diperlukan tidak tersedia saat ini."
-		"SFUI_UserAlert_Unreachable_Reason-10"	"Kami akan terus mencoba membangun koneksi di latar belakang."
-		"SFUI_UserAlert_Unreachable_Reason1"	"Gagal menginisiasi koneksi jaringan."
-		"SFUI_UserAlert_Unreachable_Reason2"	"Menunggu sumber daya jaringan yang diperlukan."
-		"SFUI_UserAlert_Unreachable_Reason3"	"Waktu habis saat mencoba membangun koneksi jaringan."
-		"SFUI_UserAlert_Unreachable_Reason100"	"Berhasil membangun koneksi jaringan, tapi tidak dapat terhubung ke server resmi."
 		"SFUI_UserAlert_Unreachable_Reason0"	"Terjadi kesalahan jaringan yang tidak diketahui."
 
 		"SFUI_UserAlertNoteType_1"			"Server di %s1 sedang penuh."
@@ -40740,6 +40726,7 @@
 		"tournament_coin_show_your_support" "Tunjukkan Dukunganmu"
 		"tournament_coin_team_graffiti_popup_title"		"Pilih Grafiti Timmu"
 		"tournament_coin_completed_challenges_int"	"<b>{d:challenges}</b> Tantangan Selesai"
+		"tournament_items_not_released_h"		"Item yang ada di dalam Paket Suvenir Sorotan ini memiliki Gantungan Suvenir yang menampilkan sorotan dari pertandingan ini. Paket Suvenir Sorotan ini akan diriilis setelah Major berakhir."
 		"tournament_items_not_released_1"		"Item ini dilengkapi dengan tanda tangan dari para Juara. Item ini akan dirilis setelah Major selesai."
 		"tournament_items_not_released"		"Item ini dilengkapi dengan tanda tangan dari para Juara dan Finalis. Item ini akan dirilis setelah Major selesai."
 		"tournament_items_notice"		"Hanya satu Pas yang bisa diaktifkan.\nPas yang dibeli tidak akan bisa ditukar/dipasarkan untuk satu minggu."
@@ -43272,6 +43259,20 @@
 		"Chatwheel_negative"	"Tidak"
 		"Chatwheel_peptalk"	"Motivasi"
 		"Chatwheel_cheer"	"Semangat"
+
+		"Chatwheel_plantingata"	"Memasang di A"
+		"Chatwheel_plantingatb"	"Memasang di B"
+		"Chatwheel_plantedata"	"Terpasang di A"
+		"Chatwheel_plantedatb"	"Terpasang di B"
+		"Chatwheel_planted"	"Bom terpasang"
+
+		"Chatwheel_seehostagestaken"	"Sandera sedang dibawa"
+		"Chatwheel_requestgethostages"	"Selamatkan sandera"
+
+		"Chatwheel_guardinga"	"Menjaga A"
+		"Chatwheel_guardingb"	"Menjaga B"
+		
+
 		
 		"Chatwheel_section_command"	"Perintah"
 		"Chatwheel_section_report"	"Laporan"
@@ -43440,6 +43441,25 @@
 		"quest_11012_var_ingame:p{mission-points}"		"Menangkan {d:mission-points} ronde"
 		
 		"quest_11013_var_desc:p{mission-points}"	 	"Menangkan {d:mission-points} ronde di mode <b>{s:gamemode}: {s:location}</b>."
+		"quest_11013_var_ingame:p{mission-points}"		"Menangkan {d:mission-points} ronde"
+		
+		"quest_11014_var_desc:p{mission-points}"	 	"Menangkan {d:mission-points} ronde di mode <b>{s:gamemode}: {s:location}</b>."
+		"quest_11014_var_ingame:p{mission-points}"		"Menangkan {d:mission-points} ronde"
+		
+		"quest_11015_var_desc:p{mission-points}"	 	"Menangkan {d:mission-points} ronde di mode <b>{s:gamemode}: {s:location}</b>."
+		"quest_11015_var_ingame:p{mission-points}"		"Menangkan {d:mission-points} ronde"
+
+// crow_mask_48003_comment
+// crow_mask_48004_comment
+}
+
+
+
+
+}
+
+
+mode <b>{s:gamemode}: {s:location}</b>."
 		"quest_11013_var_ingame:p{mission-points}"		"Menangkan {d:mission-points} ronde"
 		
 		"quest_11014_var_desc:p{mission-points}"	 	"Menangkan {d:mission-points} ronde di mode <b>{s:gamemode}: {s:location}</b>."
