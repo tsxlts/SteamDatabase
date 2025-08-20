@@ -186,6 +186,12 @@
 			"weight"		"50"
 			"hexColor"		"#FFD7AA"
 		}
+		"volatile"
+		{
+			"value"		"14"
+			"weight"		"50"
+			"hexColor"		"#B43232"
+		}
 	}
 	"colors"
 	{
@@ -1966,7 +1972,7 @@
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_c4.vtf"
 			"model_player"		"weapons/models/c4/weapon_c4.vmdl"
 			"model_world"		"weapons/models/c4/weapon_c4.vmdl"
-			"model_dropped"		"weapons/models/c4/weapon_c4.vmdl"
+			"model_ag2"		"phase2/weapons/models/c4/weapon_c4_ag2.vmdl"
 			"mouse_pressed_sound"		"sounds/weapons/c4/c4_draw.vsnd"
 			"drop_sound"		"sounds/weapons/c4/c4_plant.vsnd"
 			"item_gear_slot"		"item"
@@ -2024,6 +2030,7 @@
 			"item_name"		"#SFUI_WPNHUD_Knife"
 			"model_player"		"weapons/models/knife/knife_default_ct/weapon_knife_default_ct.vmdl"
 			"model_world"		"weapons/models/knife/knife_default_ct/weapon_knife_default_ct.vmdl"
+			"model_ag2"		"phase2/weapons/models/knife/knife_default_ct/weapon_knife_default_ct_ag2.vmdl"
 			"item_gear_slot"		"melee"
 			"item_gear_slot_position"		"0"
 			"capabilities"
@@ -2293,7 +2300,7 @@
 			"image_inventory"		"econ/weapons/base_weapons/weapon_deagle"
 			"model_player"		"weapons/models/deagle/weapon_pist_deagle.vmdl"
 			"model_world"		"weapons/models/deagle/weapon_pist_deagle.vmdl"
-			"model_dropped"		"weapons/models/deagle/weapon_pist_deagle.vmdl"
+			"model_ag2"		"phase2/weapons/models/deagle/weapon_pist_deagle_ag2.vmdl"
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_deagle.vtf"
 			"used_by_classes"
 			{
@@ -2406,7 +2413,7 @@
 			"image_inventory"		"econ/weapons/base_weapons/weapon_elite"
 			"model_player"		"weapons/models/elite/weapon_pist_elite.vmdl"
 			"model_world"		"weapons/models/elite/weapon_pist_elite.vmdl"
-			"model_dropped"		"weapons/models/elite/weapon_pist_elite.vmdl"
+			"model_ag2"		"phase2/weapons/models/elite/weapon_pist_elite_ag2.vmdl"
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_elite.vtf"
 			"used_by_classes"
 			{
@@ -2509,7 +2516,7 @@
 			"image_inventory"		"econ/weapons/base_weapons/weapon_fiveseven"
 			"model_player"		"weapons/models/fiveseven/weapon_pist_fiveseven.vmdl"
 			"model_world"		"weapons/models/fiveseven/weapon_pist_fiveseven.vmdl"
-			"model_dropped"		"weapons/models/fiveseven/weapon_pist_fiveseven.vmdl"
+			"model_ag2"		"phase2/weapons/models/fiveseven/weapon_pist_fiveseven_ag2.vmdl"
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_fiveseven.vtf"
 			"used_by_classes"
 			{
@@ -2615,7 +2622,7 @@
 			"image_inventory"		"econ/weapons/base_weapons/weapon_glock"
 			"model_player"		"weapons/models/glock18/weapon_pist_glock18.vmdl"
 			"model_world"		"weapons/models/glock18/weapon_pist_glock18.vmdl"
-			"model_dropped"		"weapons/models/glock18/weapon_pist_glock18.vmdl"
+			"model_ag2"		"phase2/weapons/models/glock18/weapon_pist_glock18_ag2.vmdl"
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_glock.vtf"
 			"used_by_classes"
 			{
@@ -2724,7 +2731,7 @@
 			"image_inventory"		"econ/weapons/base_weapons/weapon_hkp2000"
 			"model_player"		"weapons/models/hkp2000/weapon_pist_hkp2000.vmdl"
 			"model_world"		"weapons/models/hkp2000/weapon_pist_hkp2000.vmdl"
-			"model_dropped"		"weapons/models/hkp2000/weapon_pist_hkp2000.vmdl"
+			"model_ag2"		"phase2/weapons/models/hkp2000/weapon_pist_hkp2000_ag2.vmdl"
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_hkp2000.vtf"
 			"used_by_classes"
 			{
@@ -2843,7 +2850,7 @@
 			"image_inventory"		"econ/weapons/base_weapons/weapon_p250"
 			"model_player"		"weapons/models/p250/weapon_pist_p250.vmdl"
 			"model_world"		"weapons/models/p250/weapon_pist_p250.vmdl"
-			"model_dropped"		"weapons/models/p250/weapon_pist_p250.vmdl"
+			"model_ag2"		"phase2/weapons/models/p250/weapon_pist_p250_ag2.vmdl"
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_p250.vtf"
 			"attributes"
 			{
@@ -2947,7 +2954,7 @@
 			"item_description"		"#CSGO_Item_Desc_cz75a"
 			"model_player"		"weapons/models/cz75a/weapon_pist_cz75a.vmdl"
 			"model_world"		"weapons/models/cz75a/weapon_pist_cz75a.vmdl"
-			"model_dropped"		"weapons/models/cz75a/weapon_pist_cz75a.vmdl"
+			"model_ag2"		"phase2/weapons/models/cz75a/weapon_pist_cz75a_ag2.vmdl"
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_cz75a.vtf"
 			"image_inventory"		"econ/weapons/base_weapons/weapon_cz75a"
 			"attributes"
@@ -3063,7 +3070,7 @@
 			"image_inventory"		"econ/weapons/base_weapons/weapon_tec9"
 			"model_player"		"weapons/models/tec9/weapon_pist_tec9.vmdl"
 			"model_world"		"weapons/models/tec9/weapon_pist_tec9.vmdl"
-			"model_dropped"		"weapons/models/tec9/weapon_pist_tec9.vmdl"
+			"model_ag2"		"phase2/weapons/models/tec9/weapon_pist_tec9_ag2.vmdl"
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_tec9.vtf"
 			"used_by_classes"
 			{
@@ -3183,7 +3190,7 @@
 			"image_inventory"		"econ/weapons/base_weapons/weapon_bizon"
 			"model_player"		"weapons/models/bizon/weapon_smg_bizon.vmdl"
 			"model_world"		"weapons/models/bizon/weapon_smg_bizon.vmdl"
-			"model_dropped"		"weapons/models/bizon/weapon_smg_bizon.vmdl"
+			"model_ag2"		"phase2/weapons/models/bizon/weapon_smg_bizon_ag2.vmdl"
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_bizon.vtf"
 			"used_by_classes"
 			{
@@ -3292,7 +3299,7 @@
 			"image_inventory"		"econ/weapons/base_weapons/weapon_mac10"
 			"model_player"		"weapons/models/mac10/weapon_smg_mac10.vmdl"
 			"model_world"		"weapons/models/mac10/weapon_smg_mac10.vmdl"
-			"model_dropped"		"weapons/models/mac10/weapon_smg_mac10.vmdl"
+			"model_ag2"		"phase2/weapons/models/mac10/weapon_smg_mac10_ag2.vmdl"
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_mac10.vtf"
 			"used_by_classes"
 			{
@@ -3400,7 +3407,7 @@
 			"image_inventory"		"econ/weapons/base_weapons/weapon_mp7"
 			"model_player"		"weapons/models/mp7/weapon_smg_mp7.vmdl"
 			"model_world"		"weapons/models/mp7/weapon_smg_mp7.vmdl"
-			"model_dropped"		"weapons/models/mp7/weapon_smg_mp7.vmdl"
+			"model_ag2"		"phase2/weapons/models/mp7/weapon_smg_mp7_ag2.vmdl"
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_mp7.vtf"
 			"used_by_classes"
 			{
@@ -3511,7 +3518,7 @@
 			"image_inventory"		"econ/weapons/base_weapons/weapon_mp5sd"
 			"model_player"		"weapons/models/mp5sd/weapon_smg_mp5sd.vmdl"
 			"model_world"		"weapons/models/mp5sd/weapon_smg_mp5sd.vmdl"
-			"model_dropped"		"weapons/models/mp5sd/weapon_smg_mp5sd.vmdl"
+			"model_ag2"		"phase2/weapons/models/mp5sd/weapon_smg_mp5sd_ag2.vmdl"
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_mp5sd.vtf"
 			"used_by_classes"
 			{
@@ -3625,7 +3632,7 @@
 			"image_inventory"		"econ/weapons/base_weapons/weapon_mp9"
 			"model_player"		"weapons/models/mp9/weapon_smg_mp9.vmdl"
 			"model_world"		"weapons/models/mp9/weapon_smg_mp9.vmdl"
-			"model_dropped"		"weapons/models/mp9/weapon_smg_mp9.vmdl"
+			"model_ag2"		"phase2/weapons/models/mp9/weapon_smg_mp9_ag2.vmdl"
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_mp9.vtf"
 			"used_by_classes"
 			{
@@ -3636,7 +3643,7 @@
 				"magazine model"		"weapons/models/mp9/weapon_smg_mp9_mag.vmdl"
 				"primary reserve ammo max"		"120"
 				"inaccuracy jump initial"		"37.279999"
-				"inaccuracy jump"		"18.430000"
+				"inaccuracy jump"		"50.000000"
 				"heat per shot"		"0.300000"
 				"tracer frequency"		"3"
 				"max player speed"		"240"
@@ -3664,7 +3671,7 @@
 				"recovery time stand"		"0.257890"
 				"recoil angle"		"0"
 				"recoil angle variance"		"70"
-				"recoil magnitude"		"19"
+				"recoil magnitude"		"21"
 				"recoil magnitude variance"		"1"
 				"recoil seed"		"50729"
 				"primary clip size"		"30"
@@ -3672,7 +3679,7 @@
 				"weapon weight"		"25"
 				"inaccuracy crouch alt"		"5.500000"
 				"inaccuracy fire alt"		"3.700000"
-				"inaccuracy jump alt"		"18.430000"
+				"inaccuracy jump alt"		"50.000000"
 				"inaccuracy ladder alt"		"148.912506"
 				"inaccuracy land alt"		"0.056000"
 				"inaccuracy move alt"		"29.040001"
@@ -3680,7 +3687,7 @@
 				"max player speed alt"		"240"
 				"recoil angle alt"		"0"
 				"recoil angle variance alt"		"70"
-				"recoil magnitude alt"		"19"
+				"recoil magnitude alt"		"21"
 				"recoil magnitude variance alt"		"1"
 				"recovery time crouch final"		"0.184207"
 				"recovery time stand final"		"0.257890"
@@ -3740,7 +3747,7 @@
 			"image_inventory"		"econ/weapons/base_weapons/weapon_p90"
 			"model_player"		"weapons/models/p90/weapon_smg_p90.vmdl"
 			"model_world"		"weapons/models/p90/weapon_smg_p90.vmdl"
-			"model_dropped"		"weapons/models/p90/weapon_smg_p90.vmdl"
+			"model_ag2"		"phase2/weapons/models/p90/weapon_smg_p90_ag2.vmdl"
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_p90.vtf"
 			"used_by_classes"
 			{
@@ -3863,7 +3870,7 @@
 			"image_inventory"		"econ/weapons/base_weapons/weapon_ump45"
 			"model_player"		"weapons/models/ump45/weapon_smg_ump45.vmdl"
 			"model_world"		"weapons/models/ump45/weapon_smg_ump45.vmdl"
-			"model_dropped"		"weapons/models/ump45/weapon_smg_ump45.vmdl"
+			"model_ag2"		"phase2/weapons/models/ump45/weapon_smg_ump45_ag2.vmdl"
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_ump45.vtf"
 			"used_by_classes"
 			{
@@ -3970,7 +3977,7 @@
 			"image_inventory"		"econ/weapons/base_weapons/weapon_ak47"
 			"model_player"		"weapons/models/ak47/weapon_rif_ak47.vmdl"
 			"model_world"		"weapons/models/ak47/weapon_rif_ak47.vmdl"
-			"model_dropped"		"weapons/models/ak47/weapon_rif_ak47.vmdl"
+			"model_ag2"		"phase2/weapons/models/ak47/weapon_rif_ak47_ag2.vmdl"
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_ak47.vtf"
 			"used_by_classes"
 			{
@@ -4073,7 +4080,7 @@
 			"image_inventory"		"econ/weapons/base_weapons/weapon_aug"
 			"model_player"		"weapons/models/aug/weapon_rif_aug.vmdl"
 			"model_world"		"weapons/models/aug/weapon_rif_aug.vmdl"
-			"model_dropped"		"weapons/models/aug/weapon_rif_aug.vmdl"
+			"model_ag2"		"phase2/weapons/models/aug/weapon_rif_aug_ag2.vmdl"
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_aug.vtf"
 			"zoom_in_sound"		"Weapon_AUG.ZoomIn"
 			"zoom_out_sound"		"Weapon_AUG.ZoomOut"
@@ -4209,7 +4216,7 @@
 			"image_inventory"		"econ/weapons/base_weapons/weapon_famas"
 			"model_player"		"weapons/models/famas/weapon_rif_famas.vmdl"
 			"model_world"		"weapons/models/famas/weapon_rif_famas.vmdl"
-			"model_dropped"		"weapons/models/famas/weapon_rif_famas.vmdl"
+			"model_ag2"		"phase2/weapons/models/famas/weapon_rif_famas_ag2.vmdl"
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_famas.vtf"
 			"used_by_classes"
 			{
@@ -4318,7 +4325,7 @@
 			"image_inventory"		"econ/weapons/base_weapons/weapon_galilar"
 			"model_player"		"weapons/models/galilar/weapon_rif_galilar.vmdl"
 			"model_world"		"weapons/models/galilar/weapon_rif_galilar.vmdl"
-			"model_dropped"		"weapons/models/galilar/weapon_rif_galilar.vmdl"
+			"model_ag2"		"phase2/weapons/models/galilar/weapon_rif_galilar_ag2.vmdl"
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_galilar.vtf"
 			"used_by_classes"
 			{
@@ -4419,7 +4426,7 @@
 			"image_inventory"		"econ/weapons/base_weapons/weapon_m4a1"
 			"model_player"		"weapons/models/m4a4/weapon_rif_m4a4.vmdl"
 			"model_world"		"weapons/models/m4a4/weapon_rif_m4a4.vmdl"
-			"model_dropped"		"weapons/models/m4a4/weapon_rif_m4a4.vmdl"
+			"model_ag2"		"phase2/weapons/models/m4a4/weapon_rif_m4a4_ag2.vmdl"
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_m4a1.vtf"
 			"used_by_classes"
 			{
@@ -4528,7 +4535,7 @@
 			"image_inventory"		"econ/weapons/base_weapons/weapon_sg556"
 			"model_player"		"weapons/models/sg556/weapon_rif_sg556.vmdl"
 			"model_world"		"weapons/models/sg556/weapon_rif_sg556.vmdl"
-			"model_dropped"		"weapons/models/sg556/weapon_rif_sg556.vmdl"
+			"model_ag2"		"phase2/weapons/models/sg556/weapon_rif_sg556_ag2.vmdl"
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_sg556.vtf"
 			"zoom_in_sound"		"Weapon_sg556.ZoomIn"
 			"zoom_out_sound"		"Weapon_sg556.ZoomOut"
@@ -4651,7 +4658,7 @@
 			"image_inventory"		"econ/weapons/base_weapons/weapon_awp"
 			"model_player"		"weapons/models/awp/weapon_snip_awp.vmdl"
 			"model_world"		"weapons/models/awp/weapon_snip_awp.vmdl"
-			"model_dropped"		"weapons/models/awp/weapon_snip_awp.vmdl"
+			"model_ag2"		"phase2/weapons/models/awp/weapon_snip_awp_ag2.vmdl"
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_awp.vtf"
 			"zoom_in_sound"		"Weapon_AWP.Zoom"
 			"zoom_out_sound"		"Weapon_AWP.ZoomOut"
@@ -4788,7 +4795,7 @@
 			"image_inventory"		"econ/weapons/base_weapons/weapon_g3sg1"
 			"model_player"		"weapons/models/g3sg1/weapon_snip_g3sg1.vmdl"
 			"model_world"		"weapons/models/g3sg1/weapon_snip_g3sg1.vmdl"
-			"model_dropped"		"weapons/models/g3sg1/weapon_snip_g3sg1.vmdl"
+			"model_ag2"		"phase2/weapons/models/g3sg1/weapon_snip_g3sg1_ag2.vmdl"
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_g3sg1.vtf"
 			"zoom_in_sound"		"Weapon_G3SG1.Zoom"
 			"zoom_out_sound"		"Weapon_G3SG1.Zoom"
@@ -4900,7 +4907,7 @@
 			"image_inventory"		"econ/weapons/base_weapons/weapon_scar20"
 			"model_player"		"weapons/models/scar20/weapon_snip_scar20.vmdl"
 			"model_world"		"weapons/models/scar20/weapon_snip_scar20.vmdl"
-			"model_dropped"		"weapons/models/scar20/weapon_snip_scar20.vmdl"
+			"model_ag2"		"phase2/weapons/models/scar20/weapon_snip_scar20_ag2.vmdl"
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_scar20.vtf"
 			"zoom_in_sound"		"Weapon_SCAR20.Zoom"
 			"zoom_out_sound"		"Weapon_SCAR20.Zoom"
@@ -5012,7 +5019,7 @@
 			"image_inventory"		"econ/weapons/base_weapons/weapon_ssg08"
 			"model_player"		"weapons/models/ssg08/weapon_snip_ssg08.vmdl"
 			"model_world"		"weapons/models/ssg08/weapon_snip_ssg08.vmdl"
-			"model_dropped"		"weapons/models/ssg08/weapon_snip_ssg08.vmdl"
+			"model_ag2"		"phase2/weapons/models/ssg08/weapon_snip_ssg08_ag2.vmdl"
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_ssg08.vtf"
 			"zoom_in_sound"		"Weapon_SSG08.Zoom"
 			"zoom_out_sound"		"Weapon_SSG08.Zoom"
@@ -5141,7 +5148,7 @@
 			"image_inventory"		"econ/weapons/base_weapons/weapon_mag7"
 			"model_player"		"weapons/models/mag7/weapon_shot_mag7.vmdl"
 			"model_world"		"weapons/models/mag7/weapon_shot_mag7.vmdl"
-			"model_dropped"		"weapons/models/mag7/weapon_shot_mag7.vmdl"
+			"model_ag2"		"phase2/weapons/models/mag7/weapon_shot_mag7_ag2.vmdl"
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_mag7.vtf"
 			"used_by_classes"
 			{
@@ -5262,7 +5269,7 @@
 			"image_inventory"		"econ/weapons/base_weapons/weapon_nova"
 			"model_player"		"weapons/models/nova/weapon_shot_nova.vmdl"
 			"model_world"		"weapons/models/nova/weapon_shot_nova.vmdl"
-			"model_dropped"		"weapons/models/nova/weapon_shot_nova.vmdl"
+			"model_ag2"		"phase2/weapons/models/nova/weapon_shot_nova_ag2.vmdl"
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_nova.vtf"
 			"used_by_classes"
 			{
@@ -5389,7 +5396,7 @@
 			"image_inventory"		"econ/weapons/base_weapons/weapon_sawedoff"
 			"model_player"		"weapons/models/sawedoff/weapon_shot_sawedoff.vmdl"
 			"model_world"		"weapons/models/sawedoff/weapon_shot_sawedoff.vmdl"
-			"model_dropped"		"weapons/models/sawedoff/weapon_shot_sawedoff.vmdl"
+			"model_ag2"		"phase2/weapons/models/sawedoff/weapon_shot_sawedoff_ag2.vmdl"
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_sawedoff.vtf"
 			"used_by_classes"
 			{
@@ -5505,7 +5512,7 @@
 			"image_inventory"		"econ/weapons/base_weapons/weapon_xm1014"
 			"model_player"		"weapons/models/xm1014/weapon_shot_xm1014.vmdl"
 			"model_world"		"weapons/models/xm1014/weapon_shot_xm1014.vmdl"
-			"model_dropped"		"weapons/models/xm1014/weapon_shot_xm1014.vmdl"
+			"model_ag2"		"phase2/weapons/models/xm1014/weapon_shot_xm1014_ag2.vmdl"
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_xm1014.vtf"
 			"used_by_classes"
 			{
@@ -5631,7 +5638,7 @@
 			"image_inventory"		"econ/weapons/base_weapons/weapon_m249"
 			"model_player"		"weapons/models/m249/weapon_mach_m249.vmdl"
 			"model_world"		"weapons/models/m249/weapon_mach_m249.vmdl"
-			"model_dropped"		"weapons/models/m249/weapon_mach_m249.vmdl"
+			"model_ag2"		"phase2/weapons/models/m249/weapon_mach_m249_ag2.vmdl"
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_m249.vtf"
 			"used_by_classes"
 			{
@@ -5739,7 +5746,7 @@
 			"image_inventory"		"econ/weapons/base_weapons/weapon_negev"
 			"model_player"		"weapons/models/negev/weapon_mach_negev.vmdl"
 			"model_world"		"weapons/models/negev/weapon_mach_negev.vmdl"
-			"model_dropped"		"weapons/models/negev/weapon_mach_negev.vmdl"
+			"model_ag2"		"phase2/weapons/models/negev/weapon_mach_negev_ag2.vmdl"
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_negev.vtf"
 			"used_by_classes"
 			{
@@ -5861,7 +5868,7 @@
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_decoy.vtf"
 			"model_player"		"weapons/models/grenade/decoy/weapon_decoy.vmdl"
 			"model_world"		"weapons/models/grenade/decoy/weapon_decoy.vmdl"
-			"model_dropped"		"weapons/models/grenade/decoy/weapon_decoy.vmdl"
+			"model_ag2"		"phase2/weapons/models/grenade/decoy/weapon_decoy_ag2.vmdl"
 			"used_by_classes"
 			{
 				"terrorists"		"1"
@@ -5906,7 +5913,7 @@
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_decoy.vtf"
 			"model_player"		"weapons/models/grenade/decoy/weapon_decoy.vmdl"
 			"model_world"		"weapons/models/grenade/decoy/weapon_decoy.vmdl"
-			"model_dropped"		"weapons/models/grenade/decoy/weapon_decoy.vmdl"
+			"model_ag2"		"phase2/weapons/models/grenade/decoy/weapon_decoy_ag2.vmdl"
 		}
 		"weapon_flashbang_prefab"
 		{
@@ -5918,7 +5925,7 @@
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_flashbang.vtf"
 			"model_player"		"weapons/models/grenade/flashbang/weapon_flashbang.vmdl"
 			"model_world"		"weapons/models/grenade/flashbang/weapon_flashbang.vmdl"
-			"model_dropped"		"weapons/models/grenade/flashbang/weapon_flashbang.vmdl"
+			"model_ag2"		"phase2/weapons/models/grenade/flashbang/weapon_flashbang_ag2.vmdl"
 			"used_by_classes"
 			{
 				"terrorists"		"1"
@@ -5965,7 +5972,7 @@
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_hegrenade.vtf"
 			"model_player"		"weapons/models/grenade/hegrenade/weapon_hegrenade.vmdl"
 			"model_world"		"weapons/models/grenade/hegrenade/weapon_hegrenade.vmdl"
-			"model_dropped"		"weapons/models/grenade/hegrenade/weapon_hegrenade.vmdl"
+			"model_ag2"		"phase2/weapons/models/grenade/hegrenade/weapon_hegrenade_ag2.vmdl"
 			"used_by_classes"
 			{
 				"counter-terrorists"		"1"
@@ -5981,7 +5988,7 @@
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_hegrenade.vtf"
 			"model_player"		"weapons/models/grenade/hegrenade/weapon_hegrenade.vmdl"
 			"model_world"		"weapons/models/grenade/hegrenade/weapon_hegrenade.vmdl"
-			"model_dropped"		"weapons/models/grenade/hegrenade/weapon_hegrenade.vmdl"
+			"model_ag2"		"phase2/weapons/models/grenade/hegrenade/weapon_hegrenade_ag2.vmdl"
 		}
 		"weapon_fire_grenade_prefab"
 		{
@@ -6002,7 +6009,7 @@
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_incgrenade.vtf"
 			"model_player"		"weapons/models/grenade/incendiary/weapon_incendiarygrenade.vmdl"
 			"model_world"		"weapons/models/grenade/incendiary/weapon_incendiarygrenade.vmdl"
-			"model_dropped"		"weapons/models/grenade/incendiary/weapon_incendiarygrenade.vmdl"
+			"model_ag2"		"phase2/weapons/models/grenade/incendiary/weapon_incendiarygrenade_ag2.vmdl"
 			"used_by_classes"
 			{
 				"counter-terrorists"		"1"
@@ -6047,7 +6054,7 @@
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_molotov.vtf"
 			"model_player"		"weapons/models/grenade/molotov/weapon_molotov.vmdl"
 			"model_world"		"weapons/models/grenade/molotov/weapon_molotov.vmdl"
-			"model_dropped"		"weapons/models/grenade/molotov/weapon_molotov.vmdl"
+			"model_ag2"		"phase2/weapons/models/grenade/molotov/weapon_molotov_ag2.vmdl"
 			"used_by_classes"
 			{
 				"terrorists"		"1"
@@ -6089,7 +6096,7 @@
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_molotov.vtf"
 			"model_player"		"weapons/models/grenade/molotov/weapon_molotov.vmdl"
 			"model_world"		"weapons/models/grenade/molotov/weapon_molotov.vmdl"
-			"model_dropped"		"weapons/models/grenade/molotov/weapon_molotov.vmdl"
+			"model_ag2"		"phase2/weapons/models/grenade/molotov/weapon_molotov_ag2.vmdl"
 		}
 		"weapon_smokegrenade_prefab"
 		{
@@ -6101,7 +6108,7 @@
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_smokegrenade.vtf"
 			"model_player"		"weapons/models/grenade/smokegrenade/weapon_smokegrenade.vmdl"
 			"model_world"		"weapons/models/grenade/smokegrenade/weapon_smokegrenade.vmdl"
-			"model_dropped"		"weapons/models/grenade/smokegrenade/weapon_smokegrenade.vmdl"
+			"model_ag2"		"phase2/weapons/models/grenade/smokegrenade/weapon_smokegrenade_ag2.vmdl"
 			"used_by_classes"
 			{
 				"terrorists"		"1"
@@ -6150,7 +6157,7 @@
 			"image_inventory"		"econ/weapons/base_weapons/weapon_m4a1_silencer"
 			"model_player"		"weapons/models/m4a1_silencer/weapon_rif_m4a1_silencer.vmdl"
 			"model_world"		"weapons/models/m4a1_silencer/weapon_rif_m4a1_silencer.vmdl"
-			"model_dropped"		"weapons/models/m4a1_silencer/weapon_rif_m4a1_silencer.vmdl"
+			"model_ag2"		"phase2/weapons/models/m4a1_silencer/weapon_rif_m4a1_silencer_ag2.vmdl"
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_m4a1_silencer.vtf"
 			"used_by_classes"
 			{
@@ -6266,7 +6273,7 @@
 			"image_inventory"		"econ/weapons/base_weapons/weapon_usp_silencer"
 			"model_player"		"weapons/models/usp_silencer/weapon_pist_usp_silencer.vmdl"
 			"model_world"		"weapons/models/usp_silencer/weapon_pist_usp_silencer.vmdl"
-			"model_dropped"		"weapons/models/usp_silencer/weapon_pist_usp_silencer.vmdl"
+			"model_ag2"		"phase2/weapons/models/usp_silencer/weapon_pist_usp_silencer_ag2.vmdl"
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_usp_silencer.vtf"
 			"used_by_classes"
 			{
@@ -6371,7 +6378,7 @@
 			"item_rarity"		"common"
 			"model_player"		"weapons/models/revolver/weapon_pist_revolver.vmdl"
 			"model_world"		"weapons/models/revolver/weapon_pist_revolver.vmdl"
-			"model_dropped"		"weapons/models/revolver/weapon_pist_revolver.vmdl"
+			"model_ag2"		"phase2/weapons/models/revolver/weapon_pist_revolver_ag2.vmdl"
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_revolver.vtf"
 			"used_by_classes"
 			{
@@ -6481,7 +6488,7 @@
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_taser.vtf"
 			"model_player"		"weapons/models/taser/weapon_pist_taser.vmdl"
 			"model_world"		"weapons/models/taser/weapon_pist_taser.vmdl"
-			"model_dropped"		"weapons/models/taser/weapon_pist_taser.vmdl"
+			"model_ag2"		"phase2/weapons/models/taser/weapon_pist_taser_ag2.vmdl"
 			"item_gear_slot"		"melee"
 			"item_gear_slot_position"		"1"
 			"inv_group_equipment"		"misc"
@@ -6568,7 +6575,7 @@
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_healthshot.vtf"
 			"model_player"		"weapons/models/healthshot/weapon_healthshot.vmdl"
 			"model_world"		"weapons/models/healthshot/weapon_healthshot.vmdl"
-			"model_dropped"		"weapons/models/healthshot/weapon_healthshot.vmdl"
+			"model_ag2"		"phase2/weapons/models/healthshot/weapon_healthshot_ag2.vmdl"
 			"used_by_classes"
 			{
 				"terrorists"		"1"
@@ -6669,6 +6676,11 @@
 			"capabilities"
 			{
 				"paintable"		"1"
+			}
+			"used_by_classes"
+			{
+				"counter-terrorists"		"1"
+				"terrorists"		"1"
 			}
 		}
 		"customplayer"
@@ -7264,7 +7276,7 @@
 			"image_inventory"		"econ/weapons/base_weapons/weapon_knife"
 			"model_player"		"weapons/models/knife/knife_default_t/weapon_knife_default_t.vmdl"
 			"model_world"		"weapons/models/knife/knife_default_t/weapon_knife_default_t.vmdl"
-			"model_dropped"		"weapons/models/knife/knife_default_t/weapon_knife_default_t.vmdl"
+			"model_ag2"		"phase2/weapons/models/knife/knife_default_ct/weapon_knife_default_ct_ag2.vmdl"
 			"inventory_image_data"
 			{
 				"camera_angles"		"0.0 -70.0 25.0"
@@ -7288,7 +7300,7 @@
 			"image_inventory"		"econ/weapons/base_weapons/weapon_knife"
 			"model_player"		"weapons/models/knife/knife_default_ct/weapon_knife_default_ct.vmdl"
 			"model_world"		"weapons/models/knife/knife_default_ct/weapon_knife_default_ct.vmdl"
-			"model_dropped"		"weapons/models/knife/knife_default_ct/weapon_knife_default_ct.vmdl"
+			"model_ag2"		"phase2/weapons/models/knife/knife_default_ct/weapon_knife_default_ct_ag2.vmdl"
 			"used_by_classes"
 			{
 				"counter-terrorists"		"1"
@@ -7379,6 +7391,7 @@
 			"image_inventory"		"econ/weapons/base_weapons/weapon_c4"
 			"model_player"		"weapons/models/c4/weapon_c4.vmdl"
 			"model_world"		"weapons/models/c4/weapon_c4.vmdl"
+			"model_ag2"		"phase2/weapons/models/c4/weapon_c4_ag2.vmdl"
 			"paint_data"
 			{
 				"PaintableMaterial0"
@@ -7404,7 +7417,6 @@
 			"flexible_loadout_default"		"1"
 			"model_player"		"models/weapons/w_eq_armor.vmdl"
 			"model_world"		"models/weapons/w_eq_armor.vmdl"
-			"model_dropped"		"models/weapons/w_eq_armor.vmdl"
 			"used_by_classes"
 			{
 				"terrorists"		"1"
@@ -7428,7 +7440,6 @@
 			"flexible_loadout_default"		"1"
 			"model_player"		"models/weapons/w_eq_armor_helmet.vmdl"
 			"model_world"		"models/weapons/w_eq_armor_helmet.vmdl"
-			"model_dropped"		"models/weapons/w_eq_armor_helmet.vmdl"
 			"used_by_classes"
 			{
 				"terrorists"		"1"
@@ -7449,7 +7460,6 @@
 			"baseitem"		"0"
 			"flexible_loadout_default"		"1"
 			"model_world"		"models/props_survival/upgrades/upgrade_heavy_armor.vmdl"
-			"model_dropped"		"models/props_survival/upgrades/upgrade_heavy_armor.vmdl"
 			"used_by_classes"
 			{
 				"terrorists"		"1"
@@ -7483,7 +7493,6 @@
 			"flexible_loadout_default"		"1"
 			"model_player"		"weapons/models/defuser/defuser.vmdl"
 			"model_world"		"weapons/models/defuser/defuser.vmdl"
-			"model_dropped"		"weapons/models/defuser/defuser.vmdl"
 			"used_by_classes"
 			{
 				"counter-terrorists"		"1"
@@ -7505,7 +7514,6 @@
 			"flexible_loadout_default"		"0"
 			"model_player"		"weapons/models/defuser/defuser.vmdl"
 			"model_world"		"weapons/models/defuser/defuser.vmdl"
-			"model_dropped"		"weapons/models/defuser/defuser.vmdl"
 			"used_by_classes"
 			{
 				"counter-terrorists"		"1"
@@ -7560,7 +7568,7 @@
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_t.vtf"
 			"model_player"		"weapons/models/knife/knife_default_t/weapon_knife_default_t.vmdl"
 			"model_world"		"weapons/models/knife/knife_default_t/weapon_knife_default_t.vmdl"
-			"model_dropped"		"weapons/models/knife/knife_default_t/weapon_knife_default_t.vmdl"
+			"model_ag2"		"phase2/weapons/models/knife/knife_default_t/weapon_knife_default_t_ag2.vmdl"
 			"used_by_classes"
 			{
 				"terrorists"		"1"
@@ -7655,6 +7663,7 @@
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_bayonet.vtf"
 			"model_player"		"weapons/models/knife/knife_bayonet/weapon_knife_bayonet.vmdl"
 			"model_world"		"weapons/models/knife/knife_bayonet/weapon_knife_bayonet.vmdl"
+			"model_ag2"		"phase2/weapons/models/knife/knife_bayonet/weapon_knife_bayonet_ag2.vmdl"
 			"used_by_classes"
 			{
 				"terrorists"		"1"
@@ -7687,6 +7696,7 @@
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_css.vtf"
 			"model_player"		"weapons/models/knife/knife_css/weapon_knife_css.vmdl"
 			"model_world"		"weapons/models/knife/knife_css/weapon_knife_css.vmdl"
+			"model_ag2"		"phase2/weapons/models/knife/knife_css/weapon_knife_css_ag2.vmdl"
 			"used_by_classes"
 			{
 				"terrorists"		"1"
@@ -7742,6 +7752,7 @@
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_flip.vtf"
 			"model_player"		"weapons/models/knife/knife_flip/weapon_knife_flip.vmdl"
 			"model_world"		"weapons/models/knife/knife_flip/weapon_knife_flip.vmdl"
+			"model_ag2"		"phase2/weapons/models/knife/knife_flip/weapon_knife_flip_ag2.vmdl"
 			"used_by_classes"
 			{
 				"terrorists"		"1"
@@ -7779,6 +7790,7 @@
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_gut.vtf"
 			"model_player"		"weapons/models/knife/knife_gut/weapon_knife_gut.vmdl"
 			"model_world"		"weapons/models/knife/knife_gut/weapon_knife_gut.vmdl"
+			"model_ag2"		"phase2/weapons/models/knife/knife_gut/weapon_knife_gut_ag2.vmdl"
 			"used_by_classes"
 			{
 				"terrorists"		"1"
@@ -7817,6 +7829,7 @@
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_karambit.vtf"
 			"model_player"		"weapons/models/knife/knife_karambit/weapon_knife_karambit.vmdl"
 			"model_world"		"weapons/models/knife/knife_karambit/weapon_knife_karambit.vmdl"
+			"model_ag2"		"phase2/weapons/models/knife/knife_karambit/weapon_knife_karambit_ag2.vmdl"
 			"used_by_classes"
 			{
 				"terrorists"		"1"
@@ -7855,6 +7868,7 @@
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_m9_bayonet.vtf"
 			"model_player"		"weapons/models/knife/knife_m9/weapon_knife_m9.vmdl"
 			"model_world"		"weapons/models/knife/knife_m9/weapon_knife_m9.vmdl"
+			"model_ag2"		"phase2/weapons/models/knife/knife_m9/weapon_knife_m9_ag2.vmdl"
 			"used_by_classes"
 			{
 				"terrorists"		"1"
@@ -7892,6 +7906,7 @@
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_tactical.vtf"
 			"model_player"		"weapons/models/knife/knife_tactical/weapon_knife_tactical.vmdl"
 			"model_world"		"weapons/models/knife/knife_tactical/weapon_knife_tactical.vmdl"
+			"model_ag2"		"phase2/weapons/models/knife/knife_tactical/weapon_knife_tactical_ag2.vmdl"
 			"used_by_classes"
 			{
 				"terrorists"		"1"
@@ -7939,6 +7954,7 @@
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_falchion.vtf"
 			"model_player"		"weapons/models/knife/knife_falchion/weapon_knife_falchion.vmdl"
 			"model_world"		"weapons/models/knife/knife_falchion/weapon_knife_falchion.vmdl"
+			"model_ag2"		"phase2/weapons/models/knife/knife_falchion/weapon_knife_falchion_ag2.vmdl"
 			"used_by_classes"
 			{
 				"terrorists"		"1"
@@ -7986,7 +8002,7 @@
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_survival_bowie.vtf"
 			"model_player"		"weapons/models/knife/knife_bowie/weapon_knife_bowie.vmdl"
 			"model_world"		"weapons/models/knife/knife_bowie/weapon_knife_bowie.vmdl"
-			"model_dropped"		"weapons/models/knife/knife_bowie/weapon_knife_bowie.vmdl"
+			"model_ag2"		"phase2/weapons/models/knife/knife_bowie/weapon_knife_bowie_ag2.vmdl"
 			"used_by_classes"
 			{
 				"terrorists"		"1"
@@ -8034,6 +8050,7 @@
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_butterfly.vtf"
 			"model_player"		"weapons/models/knife/knife_butterfly/weapon_knife_butterfly.vmdl"
 			"model_world"		"weapons/models/knife/knife_butterfly/weapon_knife_butterfly.vmdl"
+			"model_ag2"		"phase2/weapons/models/knife/knife_butterfly/weapon_knife_butterfly_ag2.vmdl"
 			"used_by_classes"
 			{
 				"terrorists"		"1"
@@ -8089,7 +8106,7 @@
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_push.vtf"
 			"model_player"		"weapons/models/knife/knife_push/weapon_knife_push.vmdl"
 			"model_world"		"weapons/models/knife/knife_push/weapon_knife_push.vmdl"
-			"model_dropped"		"weapons/models/knife/knife_push/weapon_knife_push.vmdl"
+			"model_ag2"		"phase2/weapons/models/knife/knife_push/weapon_knife_push_ag2.vmdl"
 			"used_by_classes"
 			{
 				"terrorists"		"1"
@@ -8149,7 +8166,7 @@
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_cord.vtf"
 			"model_player"		"weapons/models/knife/knife_cord/weapon_knife_cord.vmdl"
 			"model_world"		"weapons/models/knife/knife_cord/weapon_knife_cord.vmdl"
-			"model_dropped"		"weapons/models/knife/knife_cord/weapon_knife_cord.vmdl"
+			"model_ag2"		"phase2/weapons/models/knife/knife_cord/weapon_knife_cord_ag2.vmdl"
 			"used_by_classes"
 			{
 				"terrorists"		"1"
@@ -8197,7 +8214,7 @@
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_canis.vtf"
 			"model_player"		"weapons/models/knife/knife_canis/weapon_knife_canis.vmdl"
 			"model_world"		"weapons/models/knife/knife_canis/weapon_knife_canis.vmdl"
-			"model_dropped"		"weapons/models/knife/knife_canis/weapon_knife_canis.vmdl"
+			"model_ag2"		"phase2/weapons/models/knife/knife_canis/weapon_knife_canis_ag2.vmdl"
 			"used_by_classes"
 			{
 				"terrorists"		"1"
@@ -8245,7 +8262,7 @@
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_ursus.vtf"
 			"model_player"		"weapons/models/knife/knife_ursus/weapon_knife_ursus.vmdl"
 			"model_world"		"weapons/models/knife/knife_ursus/weapon_knife_ursus.vmdl"
-			"model_dropped"		"weapons/models/knife/knife_ursus/weapon_knife_ursus.vmdl"
+			"model_ag2"		"phase2/weapons/models/knife/knife_ursus/weapon_knife_ursus_ag2.vmdl"
 			"used_by_classes"
 			{
 				"terrorists"		"1"
@@ -8299,7 +8316,7 @@
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_gypsy_jackknife.vtf"
 			"model_player"		"weapons/models/knife/knife_navaja/weapon_knife_navaja.vmdl"
 			"model_world"		"weapons/models/knife/knife_navaja/weapon_knife_navaja.vmdl"
-			"model_dropped"		"weapons/models/knife/knife_navaja/weapon_knife_navaja.vmdl"
+			"model_ag2"		"phase2/weapons/models/knife/knife_navaja/weapon_knife_navaja_ag2.vmdl"
 			"used_by_classes"
 			{
 				"terrorists"		"1"
@@ -8353,7 +8370,7 @@
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_outdoor.vtf"
 			"model_player"		"weapons/models/knife/knife_outdoor/weapon_knife_outdoor.vmdl"
 			"model_world"		"weapons/models/knife/knife_outdoor/weapon_knife_outdoor.vmdl"
-			"model_dropped"		"weapons/models/knife/knife_outdoor/weapon_knife_outdoor.vmdl"
+			"model_ag2"		"phase2/weapons/models/knife/knife_outdoor/weapon_knife_outdoor_ag2.vmdl"
 			"used_by_classes"
 			{
 				"terrorists"		"1"
@@ -8401,7 +8418,7 @@
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_stiletto.vtf"
 			"model_player"		"weapons/models/knife/knife_stiletto/weapon_knife_stiletto.vmdl"
 			"model_world"		"weapons/models/knife/knife_stiletto/weapon_knife_stiletto.vmdl"
-			"model_dropped"		"weapons/models/knife/knife_stiletto/weapon_knife_stiletto.vmdl"
+			"model_ag2"		"phase2/weapons/models/knife/knife_stiletto/weapon_knife_stiletto_ag2.vmdl"
 			"used_by_classes"
 			{
 				"terrorists"		"1"
@@ -8460,7 +8477,7 @@
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_widowmaker.vtf"
 			"model_player"		"weapons/models/knife/knife_talon/weapon_knife_talon.vmdl"
 			"model_world"		"weapons/models/knife/knife_talon/weapon_knife_talon.vmdl"
-			"model_dropped"		"weapons/models/knife/knife_talon/weapon_knife_talon.vmdl"
+			"model_ag2"		"phase2/weapons/models/knife/knife_talon/weapon_knife_talon_ag2.vmdl"
 			"used_by_classes"
 			{
 				"terrorists"		"1"
@@ -8508,7 +8525,7 @@
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_skeleton.vtf"
 			"model_player"		"weapons/models/knife/knife_skeleton/weapon_knife_skeleton.vmdl"
 			"model_world"		"weapons/models/knife/knife_skeleton/weapon_knife_skeleton.vmdl"
-			"model_dropped"		"weapons/models/knife/knife_skeleton/weapon_knife_skeleton.vmdl"
+			"model_ag2"		"phase2/weapons/models/knife/knife_skeleton/weapon_knife_skeleton_ag2.vmdl"
 			"used_by_classes"
 			{
 				"terrorists"		"1"
@@ -8556,7 +8573,7 @@
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_kukri.vtf"
 			"model_player"		"weapons/models/knife/knife_kukri/weapon_knife_kukri.vmdl"
 			"model_world"		"weapons/models/knife/knife_kukri/weapon_knife_kukri.vmdl"
-			"model_dropped"		"weapons/models/knife/knife_kukri/weapon_knife_kukri.vmdl"
+			"model_ag2"		"phase2/weapons/models/knife/knife_kukri/weapon_knife_kukri_ag2.vmdl"
 			"used_by_classes"
 			{
 				"terrorists"		"1"
@@ -14442,6 +14459,616 @@
 				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_2_coin_eg.vmdl"
 			}
 		}
+		"5140"
+		{
+			"name"		"premier season coin s=3"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_eg"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
+		"5141"
+		{
+			"name"		"premier season coin s=3 c=1 b=1"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_11"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"premier season clrs"		"1"
+				"premier season bars"		"1"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
+		"5142"
+		{
+			"name"		"premier season coin s=3 c=1 b=2"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_12"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"premier season clrs"		"1"
+				"premier season bars"		"2"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
+		"5143"
+		{
+			"name"		"premier season coin s=3 c=1 b=3"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_13"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"premier season clrs"		"1"
+				"premier season bars"		"3"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
+		"5144"
+		{
+			"name"		"premier season coin s=3 c=1 b=4"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_14"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"premier season clrs"		"1"
+				"premier season bars"		"4"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
+		"5145"
+		{
+			"name"		"premier season coin s=3 c=1 b=5"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_15"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"premier season clrs"		"1"
+				"premier season bars"		"5"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
+		"5146"
+		{
+			"name"		"premier season coin s=3 c=2 b=1"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_21"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"premier season clrs"		"2"
+				"premier season bars"		"1"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
+		"5147"
+		{
+			"name"		"premier season coin s=3 c=2 b=2"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_22"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"premier season clrs"		"2"
+				"premier season bars"		"2"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
+		"5148"
+		{
+			"name"		"premier season coin s=3 c=2 b=3"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_23"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"premier season clrs"		"2"
+				"premier season bars"		"3"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
+		"5149"
+		{
+			"name"		"premier season coin s=3 c=2 b=4"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_24"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"premier season clrs"		"2"
+				"premier season bars"		"4"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
+		"5150"
+		{
+			"name"		"premier season coin s=3 c=2 b=5"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_25"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"premier season clrs"		"2"
+				"premier season bars"		"5"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
+		"5151"
+		{
+			"name"		"premier season coin s=3 c=3 b=1"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_31"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"premier season clrs"		"3"
+				"premier season bars"		"1"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
+		"5152"
+		{
+			"name"		"premier season coin s=3 c=3 b=2"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_32"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"premier season clrs"		"3"
+				"premier season bars"		"2"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
+		"5153"
+		{
+			"name"		"premier season coin s=3 c=3 b=3"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_33"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"premier season clrs"		"3"
+				"premier season bars"		"3"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
+		"5154"
+		{
+			"name"		"premier season coin s=3 c=3 b=4"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_34"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"premier season clrs"		"3"
+				"premier season bars"		"4"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
+		"5155"
+		{
+			"name"		"premier season coin s=3 c=3 b=5"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_35"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"premier season clrs"		"3"
+				"premier season bars"		"5"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
+		"5156"
+		{
+			"name"		"premier season coin s=3 c=4 b=1"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_41"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"premier season clrs"		"4"
+				"premier season bars"		"1"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
+		"5157"
+		{
+			"name"		"premier season coin s=3 c=4 b=2"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_42"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"premier season clrs"		"4"
+				"premier season bars"		"2"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
+		"5158"
+		{
+			"name"		"premier season coin s=3 c=4 b=3"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_43"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"premier season clrs"		"4"
+				"premier season bars"		"3"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
+		"5159"
+		{
+			"name"		"premier season coin s=3 c=4 b=4"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_44"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"premier season clrs"		"4"
+				"premier season bars"		"4"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
+		"5160"
+		{
+			"name"		"premier season coin s=3 c=4 b=5"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_45"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"premier season clrs"		"4"
+				"premier season bars"		"5"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
+		"5161"
+		{
+			"name"		"premier season coin s=3 c=5 b=1"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_51"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"premier season clrs"		"5"
+				"premier season bars"		"1"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
+		"5162"
+		{
+			"name"		"premier season coin s=3 c=5 b=2"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_52"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"premier season clrs"		"5"
+				"premier season bars"		"2"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
+		"5163"
+		{
+			"name"		"premier season coin s=3 c=5 b=3"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_53"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"premier season clrs"		"5"
+				"premier season bars"		"3"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
+		"5164"
+		{
+			"name"		"premier season coin s=3 c=5 b=4"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_54"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"premier season clrs"		"5"
+				"premier season bars"		"4"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
+		"5165"
+		{
+			"name"		"premier season coin s=3 c=5 b=5"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_55"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"premier season clrs"		"5"
+				"premier season bars"		"5"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
+		"5166"
+		{
+			"name"		"premier season coin s=3 c=6 b=1"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_61"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"premier season clrs"		"6"
+				"premier season bars"		"1"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
+		"5167"
+		{
+			"name"		"premier season coin s=3 c=6 b=2"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_62"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"premier season clrs"		"6"
+				"premier season bars"		"2"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
+		"5168"
+		{
+			"name"		"premier season coin s=3 c=6 b=3"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_63"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"premier season clrs"		"6"
+				"premier season bars"		"3"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
+		"5169"
+		{
+			"name"		"premier season coin s=3 c=6 b=4"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_64"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"premier season clrs"		"6"
+				"premier season bars"		"4"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
+		"5170"
+		{
+			"name"		"premier season coin s=3 c=6 b=5"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_65"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"premier season clrs"		"6"
+				"premier season bars"		"5"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
+		"5171"
+		{
+			"name"		"premier season coin s=3 c=7 b=1"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_71"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"premier season clrs"		"7"
+				"premier season bars"		"1"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
+		"5172"
+		{
+			"name"		"premier season coin s=3 c=7 b=2"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_72"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"premier season clrs"		"7"
+				"premier season bars"		"2"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
+		"5173"
+		{
+			"name"		"premier season coin s=3 c=7 b=3"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_73"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"premier season clrs"		"7"
+				"premier season bars"		"3"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
+		"5174"
+		{
+			"name"		"premier season coin s=3 c=7 b=4"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_74"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"premier season clrs"		"7"
+				"premier season bars"		"4"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
+		"5175"
+		{
+			"name"		"premier season coin s=3 c=7 b=5"
+			"prefab"		"premier_season_coin"
+			"item_name"		"#CSGO_Collectible_PremierSeason3Coin"
+			"item_description"		"#CSGO_Collectible_PremierSeason3Coin_Desc"
+			"image_inventory"		"econ/premier_seasons/premier_season_3_coin_75"
+			"attributes"
+			{
+				"premier season"		"3"
+				"premier season clrs max"		"7"
+				"premier season bars max"		"5"
+				"premier season clrs"		"7"
+				"premier season bars"		"5"
+				"pedestal display model"		"models/inventory_items/premier_seasons/premier_season_3_coin_eg.vmdl"
+			}
+		}
 		"4001"
 		{
 			"item_name"		"#CSGO_crate_valve_1"
@@ -18467,53 +19094,22 @@
 		{
 			"name"		"studded_bloodhound_gloves"
 			"prefab"		"hands_paintable"
-			"model_player"		"models/weapons/v_models/arms/glove_bloodhound/v_glove_bloodhound.vmdl"
+			"model_player"		"characters/models/shared/arms/glove_bloodhound/v_glove_bloodhound.vmdl"
+			"model_world"		"characters/models/shared/arms/glove_bloodhound/w_glove_bloodhound.vmdl"
 			"item_name"		"#CSGO_Wearable_t_studdedgloves"
 			"item_description"		"#CSGO_Wearable_t_studdedgloves_Desc"
-			"model_world"		"models/weapons/w_models/arms/w_glove_bloodhound.vmdl"
-			"model_dropped"		"models/weapons/w_models/arms/w_glove_bloodhound.vmdl"
-			"icon_default_image"		"materials/icons/inventory_icon_studded_bloodhound_gloves.vtf"
-			"attributes"
-			{
-				"icon display model"		"models/weapons/v_models/arms/glove_bloodhound/v_glove_bloodhound_icon.vmdl"
-			}
-			"used_by_classes"
-			{
-				"counter-terrorists"		"1"
-				"terrorists"		"1"
-			}
-			"paint_data"
-			{
-				"PaintableMaterial0"
-				{
-					"Name"		"materials/models/weapons/v_models/arms/glove_bloodhound/glove_bloodhound_left.vmat"
-					"ViewmodelDim"		"1024"
-					"WorldDim"		"128"
-				}
-				"PaintableMaterial1"
-				{
-					"Name"		"materials/models/weapons/v_models/arms/glove_bloodhound/glove_bloodhound_right.vmat"
-					"ViewmodelDim"		"1024"
-					"WorldDim"		"128"
-					"MirrorPattern"		"1"
-				}
-			}
 		}
 		"5028"
 		{
 			"name"		"t_gloves"
 			"prefab"		"hands"
-			"model_player"		"models/weapons/v_models/arms/glove_fingerless/v_glove_fingerless.vmdl"
+			"model_player"		"characters/models/shared/arms/glove_fingerless/v_glove_fingerless.vmdl"
 			"item_name"		"#CSGO_Wearable_t_defaultgloves"
 			"item_description"		"#CSGO_Wearable_t_defaultgloves_Desc"
 			"image_inventory"		"econ/weapons/base_weapons/t_gloves"
 			"used_by_classes"
 			{
 				"terrorists"		"1"
-			}
-			"attributes"
-			{
-				"icon display model"		"models/weapons/v_models/arms/glove_fingerless/v_glove_fingerless_icon.vmdl"
 			}
 			"baseitem"		"1"
 			"flexible_loadout_default"		"1"
@@ -18522,17 +19118,13 @@
 		{
 			"name"		"ct_gloves"
 			"prefab"		"hands"
-			"model_player"		"models/weapons/v_models/arms/glove_hardknuckle/v_glove_hardknuckle.vmdl"
+			"model_player"		"characters/models/shared/arms/glove_hardknuckle/v_glove_hardknuckle.vmdl"
 			"item_name"		"#CSGO_Wearable_ct_defaultgloves"
 			"item_description"		"#CSGO_Wearable_ct_defaultgloves_Desc"
 			"image_inventory"		"econ/weapons/base_weapons/ct_gloves"
 			"used_by_classes"
 			{
 				"counter-terrorists"		"1"
-			}
-			"attributes"
-			{
-				"icon display model"		"models/weapons/v_models/arms/glove_hardknuckle/v_glove_ct_hardknuckle_icon.vmdl"
 			}
 			"baseitem"		"1"
 			"flexible_loadout_default"		"1"
@@ -18541,259 +19133,71 @@
 		{
 			"name"		"sporty_gloves"
 			"prefab"		"hands_paintable"
-			"model_player"		"models/weapons/v_models/arms/glove_sporty/v_glove_sporty.vmdl"
+			"model_player"		"characters/models/shared/arms/glove_sporty/v_glove_sporty.vmdl"
+			"model_world"		"characters/models/shared/arms/glove_sporty/w_glove_sporty.vmdl"
 			"item_name"		"#CSGO_Wearable_v_sporty_glove"
 			"item_description"		"#CSGO_Wearable_v_sporty_glove_Desc"
-			"model_world"		"models/weapons/w_models/arms/w_glove_sporty.vmdl"
-			"model_dropped"		"models/weapons/w_models/arms/w_glove_sporty.vmdl"
-			"icon_default_image"		"materials/icons/inventory_icon_sporty_gloves.vtf"
-			"used_by_classes"
-			{
-				"counter-terrorists"		"1"
-				"terrorists"		"1"
-			}
-			"attributes"
-			{
-				"icon display model"		"models/weapons/v_models/arms/glove_sporty/v_glove_sporty_icon.vmdl"
-			}
-			"paint_data"
-			{
-				"PaintableMaterial0"
-				{
-					"Name"		"materials/models/weapons/v_models/arms/glove_sporty/glove_sporty_left.vmat"
-					"ViewmodelDim"		"1024"
-					"WorldDim"		"128"
-				}
-				"PaintableMaterial1"
-				{
-					"Name"		"materials/models/weapons/v_models/arms/glove_sporty/glove_sporty_right.vmat"
-					"ViewmodelDim"		"1024"
-					"WorldDim"		"128"
-					"MirrorPattern"		"1"
-				}
-			}
 		}
 		"5031"
 		{
 			"name"		"slick_gloves"
 			"prefab"		"hands_paintable"
-			"model_player"		"models/weapons/v_models/arms/glove_slick/v_glove_slick.vmdl"
+			"model_player"		"characters/models/shared/arms/glove_slick/v_glove_slick.vmdl"
+			"model_world"		"characters/models/shared/arms/glove_slick/w_glove_slick.vmdl"
 			"item_name"		"#CSGO_Wearable_v_slick_glove"
 			"item_description"		"#CSGO_Wearable_v_slick_glove_Desc"
-			"model_world"		"models/weapons/w_models/arms/w_glove_slick.vmdl"
-			"model_dropped"		"models/weapons/w_models/arms/w_glove_slick.vmdl"
-			"icon_default_image"		"materials/icons/inventory_icon_sporty_gloves.vtf"
-			"used_by_classes"
-			{
-				"counter-terrorists"		"1"
-				"terrorists"		"1"
-			}
-			"attributes"
-			{
-				"icon display model"		"models/weapons/v_models/arms/glove_slick/v_glove_slick_icon.vmdl"
-			}
-			"paint_data"
-			{
-				"PaintableMaterial0"
-				{
-					"Name"		"materials/models/weapons/v_models/arms/glove_slick/glove_slick_left.vmat"
-					"ViewmodelDim"		"1024"
-					"WorldDim"		"128"
-				}
-				"PaintableMaterial1"
-				{
-					"Name"		"materials/models/weapons/v_models/arms/glove_slick/glove_slick_right.vmat"
-					"ViewmodelDim"		"1024"
-					"WorldDim"		"128"
-					"MirrorPattern"		"1"
-				}
-			}
 		}
 		"5032"
 		{
 			"name"		"leather_handwraps"
 			"prefab"		"hands_paintable"
-			"model_player"		"models/weapons/v_models/arms/glove_handwrap_leathery/v_glove_handwrap_leathery.vmdl"
+			"model_player"		"characters/models/shared/arms/glove_handwrap/v_glove_handwrap.vmdl"
+			"model_world"		"characters/models/shared/arms/glove_handwrap/w_glove_handwrap.vmdl"
 			"item_name"		"#CSGO_Wearable_v_leather_handwrap"
 			"item_description"		"#CSGO_Wearable_v_leather_handwrap_Desc"
-			"model_world"		"models/weapons/w_models/arms/w_glove_handwrap_leathery.vmdl"
-			"model_dropped"		"models/weapons/w_models/arms/w_glove_handwrap_leathery.vmdl"
-			"icon_default_image"		"materials/icons/inventory_icon_leather_handwraps.vtf"
-			"used_by_classes"
-			{
-				"counter-terrorists"		"1"
-				"terrorists"		"1"
-			}
-			"attributes"
-			{
-				"icon display model"		"models/weapons/v_models/arms/glove_handwrap_leathery/glove_handwrap_leathery_icon.vmdl"
-			}
-			"paint_data"
-			{
-				"PaintableMaterial0"
-				{
-					"Name"		"materials/models/weapons/v_models/arms/glove_handwrap_leathery/glove_handwrap_leathery_left.vmat"
-					"ViewmodelDim"		"1024"
-					"WorldDim"		"128"
-				}
-				"PaintableMaterial1"
-				{
-					"Name"		"materials/models/weapons/v_models/arms/glove_handwrap_leathery/glove_handwrap_leathery_right.vmat"
-					"ViewmodelDim"		"1024"
-					"WorldDim"		"128"
-					"MirrorPattern"		"1"
-				}
-			}
 		}
 		"5033"
 		{
 			"name"		"motorcycle_gloves"
 			"prefab"		"hands_paintable"
-			"model_player"		"models/weapons/v_models/arms/glove_motorcycle/v_glove_motorcycle.vmdl"
+			"model_player"		"characters/models/shared/arms/glove_motorcycle/v_glove_motorcycle.vmdl"
+			"model_world"		"characters/models/shared/arms/glove_motorcycle/w_glove_motorcycle.vmdl"
 			"item_name"		"#CSGO_Wearable_v_motorcycle_glove"
 			"item_description"		"#CSGO_Wearable_v_motorcycle_glove_Desc"
-			"model_world"		"models/weapons/w_models/arms/w_glove_motorcycle.vmdl"
-			"model_dropped"		"models/weapons/w_models/arms/w_glove_motorcycle.vmdl"
-			"icon_default_image"		"materials/icons/inventory_icon_motorcycle_gloves.vtf"
-			"used_by_classes"
-			{
-				"counter-terrorists"		"1"
-				"terrorists"		"1"
-			}
-			"attributes"
-			{
-				"icon display model"		"models/weapons/v_models/arms/glove_motorcycle/v_glove_motorcycle_icon.vmdl"
-			}
-			"paint_data"
-			{
-				"PaintableMaterial0"
-				{
-					"Name"		"materials/models/weapons/v_models/arms/glove_motorcycle/glove_motorcycle_left.vmat"
-					"ViewmodelDim"		"1024"
-					"WorldDim"		"128"
-				}
-				"PaintableMaterial1"
-				{
-					"Name"		"materials/models/weapons/v_models/arms/glove_motorcycle/glove_motorcycle_right.vmat"
-					"ViewmodelDim"		"1024"
-					"WorldDim"		"128"
-					"MirrorPattern"		"1"
-				}
-			}
 		}
 		"5034"
 		{
 			"name"		"specialist_gloves"
 			"prefab"		"hands_paintable"
-			"model_player"		"models/weapons/v_models/arms/glove_specialist/v_glove_specialist.vmdl"
+			"model_player"		"characters/models/shared/arms/glove_specialist/v_glove_specialist.vmdl"
+			"model_world"		"characters/models/shared/arms/glove_specialist/w_glove_specialist.vmdl"
 			"item_name"		"#CSGO_Wearable_v_specialist_glove"
 			"item_description"		"#CSGO_Wearable_v_specialist_glove_Desc"
-			"model_world"		"models/weapons/w_models/arms/w_glove_specialist.vmdl"
-			"model_dropped"		"models/weapons/w_models/arms/w_glove_specialist.vmdl"
-			"icon_default_image"		"materials/icons/inventory_icon_specialist_gloves.vtf"
-			"used_by_classes"
-			{
-				"counter-terrorists"		"1"
-				"terrorists"		"1"
-			}
-			"attributes"
-			{
-				"icon display model"		"models/weapons/v_models/arms/glove_specialist/v_glove_specialist_icon.vmdl"
-			}
-			"paint_data"
-			{
-				"PaintableMaterial0"
-				{
-					"Name"		"materials/models/weapons/v_models/arms/glove_specialist/glove_specialist_left.vmat"
-					"ViewmodelDim"		"1024"
-					"WorldDim"		"128"
-				}
-				"PaintableMaterial1"
-				{
-					"Name"		"materials/models/weapons/v_models/arms/glove_specialist/glove_specialist_right.vmat"
-					"ViewmodelDim"		"1024"
-					"WorldDim"		"128"
-					"MirrorPattern"		"1"
-				}
-			}
 		}
 		"5035"
 		{
 			"name"		"studded_hydra_gloves"
 			"prefab"		"hands_paintable"
-			"model_player"		"models/weapons/v_models/arms/glove_bloodhound/v_glove_bloodhound_hydra.vmdl"
+			"model_player"		"characters/models/shared/arms/glove_hydra/v_glove_hydra.vmdl"
+			"model_world"		"characters/models/shared/arms/glove_hydra/w_glove_hydra.vmdl"
 			"item_name"		"#CSGO_Wearable_t_studded_hydra_gloves"
 			"item_description"		"#CSGO_Wearable_t_studded_hydra_gloves_Desc"
-			"model_world"		"models/weapons/w_models/arms/w_glove_bloodhound_hydra.vmdl"
-			"model_dropped"		"models/weapons/w_models/arms/w_glove_bloodhound_hydra.vmdl"
-			"icon_default_image"		"materials/icons/inventory_icon_studded_bloodhound_gloves.vtf"
-			"attributes"
-			{
-				"icon display model"		"models/weapons/v_models/arms/glove_bloodhound/v_glove_bloodhound_hydra_icon.vmdl"
-			}
-			"used_by_classes"
-			{
-				"counter-terrorists"		"1"
-				"terrorists"		"1"
-			}
-			"paint_data"
-			{
-				"PaintableMaterial0"
-				{
-					"Name"		"materials/models/weapons/v_models/arms/glove_bloodhound/glove_hydra_left.vmat"
-					"ViewmodelDim"		"1024"
-					"WorldDim"		"128"
-				}
-				"PaintableMaterial1"
-				{
-					"Name"		"materials/models/weapons/v_models/arms/glove_bloodhound/glove_hydra_right.vmat"
-					"ViewmodelDim"		"1024"
-					"WorldDim"		"128"
-					"MirrorPattern"		"1"
-				}
-			}
 		}
 		"4725"
 		{
 			"name"		"studded_brokenfang_gloves"
 			"prefab"		"hands_paintable"
-			"model_player"		"models/weapons/v_models/arms/glove_bloodhound/v_glove_bloodhound_brokenfang.vmdl"
+			"model_player"		"characters/models/shared/arms/glove_brokenfang/v_glove_brokenfang.vmdl"
+			"model_world"		"characters/models/shared/arms/glove_brokenfang/w_glove_brokenfang.vmdl"
 			"item_name"		"#CSGO_Wearable_t_studded_brokenfang_gloves"
 			"item_description"		"#CSGO_Wearable_t_studded_brokenfang_gloves_Desc"
-			"model_world"		"models/weapons/w_models/arms/w_glove_bloodhound_brokenfang.vmdl"
-			"model_dropped"		"models/weapons/w_models/arms/w_glove_bloodhound_brokenfang.vmdl"
-			"icon_default_image"		"materials/icons/inventory_icon_studded_bloodhound_gloves.vtf"
-			"attributes"
-			{
-				"icon display model"		"models/weapons/v_models/arms/glove_bloodhound/v_glove_bloodhound_brokenfang_icon.vmdl"
-			}
-			"used_by_classes"
-			{
-				"counter-terrorists"		"1"
-				"terrorists"		"1"
-			}
-			"paint_data"
-			{
-				"PaintableMaterial0"
-				{
-					"Name"		"materials/models/weapons/v_models/arms/glove_bloodhound/glove_brokenfang_left.vmat"
-					"ViewmodelDim"		"1024"
-					"WorldDim"		"128"
-				}
-				"PaintableMaterial1"
-				{
-					"Name"		"materials/models/weapons/v_models/arms/glove_bloodhound/glove_brokenfang_right.vmat"
-					"ViewmodelDim"		"1024"
-					"WorldDim"		"128"
-					"MirrorPattern"		"1"
-				}
-			}
 		}
 		"5036"
 		{
 			"name"		"customplayer_t_map_based"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_t_map_based"
 			"item_description"		"#CSGO_CustomPlayer_t_map_based_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_phoenix"
@@ -18813,6 +19217,7 @@
 			"name"		"customplayer_ct_map_based"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_sas/ctm_sas.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ct_map_based"
 			"item_description"		"#CSGO_CustomPlayer_ct_map_based_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_sas"
@@ -21743,7 +22148,7 @@
 			"description_format"		"value_is_additive"
 			"hidden"		"1"
 			"effect_type"		"neutral"
-			"stored_as_integer"		"0"
+			"stored_as_integer"		"float_floor_to_integer"
 		}
 		"8"
 		{
@@ -24215,7 +24620,7 @@
 			"description_string"		"#Attrib_KeychainSeed"
 			"effect_type"		"positive"
 			"stored_as_integer"		"1"
-			"hidden"		"classdefidx:1355"
+			"hidden"		"1"
 		}
 		"307"
 		{
@@ -24281,6 +24686,26 @@
 			"description_string"		"#Attrib_HighlightReel"
 			"hidden"		"1"
 			"effect_type"		"positive"
+			"stored_as_integer"		"1"
+		}
+		"315"
+		{
+			"name"		"volatile container"
+			"attribute_class"		"volatile_container"
+			"description_string"		"#Attrib_SupplyCrateSeries"
+			"description_format"		"value_is_additive"
+			"hidden"		"1"
+			"effect_type"		"neutral"
+			"stored_as_integer"		"1"
+		}
+		"316"
+		{
+			"name"		"purchase price"
+			"attribute_class"		"in_game_price"
+			"description_string"		"#Attrib_SupplyCrateSeries"
+			"description_format"		"value_is_additive"
+			"hidden"		"1"
+			"effect_type"		"neutral"
 			"stored_as_integer"		"1"
 		}
 	}
@@ -61933,12 +62358,6 @@
 				}
 			}
 		}
-	}
-	"quest_schedule"
-	{
-		"start"		"1632254400"
-		"length"		"P9W"
-		"slack"		"P3W"
 	}
 	"skirmish_modes"
 	{
@@ -114009,13 +114428,13 @@
 			}
 			"operational_point_redeemable"
 			{
-				"points"		"15"
-				"item_name"		"lootlist:set_xpshop_wpn_02"
+				"points"		"25"
+				"item_name"		"lootlist:set_xpshop_wpn_03"
 				"ui_order"		"1"
 				"callout"		"#CSGO_set_xpshop_wpn_01_short"
 				"ui_image_thumbnail"		"backgrounds/xpshop/set_xpshop_wpn_01_thumbnail"
-				"ui_set_image"		"set_set_xpshop_wpn_01"
-				"limited_until"		"1752526800"
+				"ui_set_image"		"set_xpshop_wpn_01"
+				"limited_until"		"1762812000"
 				"ui_show_new_tag"		"1746082800"
 			}
 			"operational_point_redeemable"
@@ -114916,9 +115335,9 @@
 				"106"		"3"
 				"102"		"3"
 				"81"		"4"
-				"12"		"4"
-				"61"		"4"
 				"85"		"4"
+				"61"		"4"
+				"12"		"4"
 				"31"		"5"
 				"126"		"5"
 				"59"		"5"
@@ -149620,6 +150039,7 @@
 			"name"		"customplayer_tm_anarchist"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_anarchist"
 			"item_description"		"#CSGO_CustomPlayer_tm_anarchist_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_anarchist"
@@ -149635,6 +150055,7 @@
 			"name"		"customplayer_tm_anarchist_varianta"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_anarchist_varianta"
 			"item_description"		"#CSGO_CustomPlayer_tm_anarchist_varianta_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_anarchist_varianta"
@@ -149650,6 +150071,7 @@
 			"name"		"customplayer_tm_anarchist_variantb"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_anarchist_variantb"
 			"item_description"		"#CSGO_CustomPlayer_tm_anarchist_variantb_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_anarchist_variantb"
@@ -149665,6 +150087,7 @@
 			"name"		"customplayer_tm_anarchist_variantc"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_anarchist_variantc"
 			"item_description"		"#CSGO_CustomPlayer_tm_anarchist_variantc_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_anarchist_variantc"
@@ -149680,6 +150103,7 @@
 			"name"		"customplayer_tm_anarchist_variantd"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_anarchist_variantd"
 			"item_description"		"#CSGO_CustomPlayer_tm_anarchist_variantd_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_anarchist_variantd"
@@ -149695,6 +150119,7 @@
 			"name"		"customplayer_tm_pirate"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_pirate"
 			"item_description"		"#CSGO_CustomPlayer_tm_pirate_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_pirate"
@@ -149710,6 +150135,7 @@
 			"name"		"customplayer_tm_pirate_varianta"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_pirate_varianta"
 			"item_description"		"#CSGO_CustomPlayer_tm_pirate_varianta_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_pirate_varianta"
@@ -149725,6 +150151,7 @@
 			"name"		"customplayer_tm_pirate_variantb"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_pirate_variantb"
 			"item_description"		"#CSGO_CustomPlayer_tm_pirate_variantb_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_pirate_variantb"
@@ -149740,6 +150167,7 @@
 			"name"		"customplayer_tm_pirate_variantc"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_pirate_variantc"
 			"item_description"		"#CSGO_CustomPlayer_tm_pirate_variantc_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_pirate_variantc"
@@ -149755,6 +150183,7 @@
 			"name"		"customplayer_tm_pirate_variantd"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_pirate_variantd"
 			"item_description"		"#CSGO_CustomPlayer_tm_pirate_variantd_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_pirate_variantd"
@@ -149770,6 +150199,7 @@
 			"name"		"customplayer_tm_professional"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_professional"
 			"item_description"		"#CSGO_CustomPlayer_tm_professional_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_professional"
@@ -149785,6 +150215,7 @@
 			"name"		"customplayer_tm_professional_var1"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_professional_var1"
 			"item_description"		"#CSGO_CustomPlayer_tm_professional_var1_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_professional_var1"
@@ -149800,6 +150231,7 @@
 			"name"		"customplayer_tm_professional_var2"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_professional_var2"
 			"item_description"		"#CSGO_CustomPlayer_tm_professional_var2_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_professional_var2"
@@ -149815,6 +150247,7 @@
 			"name"		"customplayer_tm_professional_var3"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_professional_var3"
 			"item_description"		"#CSGO_CustomPlayer_tm_professional_var3_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_professional_var3"
@@ -149830,6 +150263,7 @@
 			"name"		"customplayer_tm_professional_var4"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_professional_var4"
 			"item_description"		"#CSGO_CustomPlayer_tm_professional_var4_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_professional_var4"
@@ -149845,6 +150279,7 @@
 			"name"		"customplayer_tm_separatist"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_separatist"
 			"item_description"		"#CSGO_CustomPlayer_tm_separatist_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_separatist"
@@ -149860,6 +150295,7 @@
 			"name"		"customplayer_tm_separatist_varianta"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_separatist_varianta"
 			"item_description"		"#CSGO_CustomPlayer_tm_separatist_varianta_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_separatist_varianta"
@@ -149875,6 +150311,7 @@
 			"name"		"customplayer_tm_separatist_variantb"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_separatist_variantb"
 			"item_description"		"#CSGO_CustomPlayer_tm_separatist_variantb_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_separatist_variantb"
@@ -149890,6 +150327,7 @@
 			"name"		"customplayer_tm_separatist_variantc"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_separatist_variantc"
 			"item_description"		"#CSGO_CustomPlayer_tm_separatist_variantc_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_separatist_variantc"
@@ -149905,6 +150343,7 @@
 			"name"		"customplayer_tm_separatist_variantd"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_separatist_variantd"
 			"item_description"		"#CSGO_CustomPlayer_tm_separatist_variantd_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_separatist_variantd"
@@ -149920,6 +150359,7 @@
 			"name"		"customplayer_ctm_gign"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_sas/ctm_sas.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_gign"
 			"item_description"		"#CSGO_CustomPlayer_ctm_gign_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_gign"
@@ -149935,6 +150375,7 @@
 			"name"		"customplayer_ctm_gign_varianta"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_sas/ctm_sas.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_gign_varianta"
 			"item_description"		"#CSGO_CustomPlayer_ctm_gign_varianta_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_gign_varianta"
@@ -149950,6 +150391,7 @@
 			"name"		"customplayer_ctm_gign_variantb"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_sas/ctm_sas.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_gign_variantb"
 			"item_description"		"#CSGO_CustomPlayer_ctm_gign_variantb_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_gign_variantb"
@@ -149965,6 +150407,7 @@
 			"name"		"customplayer_ctm_gign_variantc"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_sas/ctm_sas.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_gign_variantc"
 			"item_description"		"#CSGO_CustomPlayer_ctm_gign_variantc_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_gign_variantc"
@@ -149980,6 +150423,7 @@
 			"name"		"customplayer_ctm_gign_variantd"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_sas/ctm_sas.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_gign_variantd"
 			"item_description"		"#CSGO_CustomPlayer_ctm_gign_variantd_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_gign_variantd"
@@ -149995,6 +150439,7 @@
 			"name"		"customplayer_ctm_gsg9"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_sas/ctm_sas.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_gsg9"
 			"item_description"		"#CSGO_CustomPlayer_ctm_gsg9_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_gsg9"
@@ -150010,6 +150455,7 @@
 			"name"		"customplayer_ctm_gsg9_varianta"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_sas/ctm_sas.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_gsg9_varianta"
 			"item_description"		"#CSGO_CustomPlayer_ctm_gsg9_varianta_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_gsg9_varianta"
@@ -150025,6 +150471,7 @@
 			"name"		"customplayer_ctm_gsg9_variantb"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_sas/ctm_sas.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_gsg9_variantb"
 			"item_description"		"#CSGO_CustomPlayer_ctm_gsg9_variantb_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_gsg9_variantb"
@@ -150040,6 +150487,7 @@
 			"name"		"customplayer_ctm_gsg9_variantc"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_sas/ctm_sas.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_gsg9_variantc"
 			"item_description"		"#CSGO_CustomPlayer_ctm_gsg9_variantc_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_gsg9_variantc"
@@ -150055,6 +150503,7 @@
 			"name"		"customplayer_ctm_gsg9_variantd"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_sas/ctm_sas.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_gsg9_variantd"
 			"item_description"		"#CSGO_CustomPlayer_ctm_gsg9_variantd_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_gsg9_variantd"
@@ -150070,6 +150519,7 @@
 			"name"		"customplayer_ctm_idf"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_sas/ctm_sas.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_idf"
 			"item_description"		"#CSGO_CustomPlayer_ctm_idf_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_idf"
@@ -150085,6 +150535,7 @@
 			"name"		"customplayer_ctm_idf_variantb"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_sas/ctm_sas.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_idf_variantb"
 			"item_description"		"#CSGO_CustomPlayer_ctm_idf_variantb_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_idf_variantb"
@@ -150100,6 +150551,7 @@
 			"name"		"customplayer_ctm_idf_variantc"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_sas/ctm_sas.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_idf_variantc"
 			"item_description"		"#CSGO_CustomPlayer_ctm_idf_variantc_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_idf_variantc"
@@ -150115,6 +150567,7 @@
 			"name"		"customplayer_ctm_idf_variantd"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_sas/ctm_sas.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_idf_variantd"
 			"item_description"		"#CSGO_CustomPlayer_ctm_idf_variantd_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_idf_variantd"
@@ -150130,6 +150583,7 @@
 			"name"		"customplayer_ctm_idf_variante"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_sas/ctm_sas.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_idf_variante"
 			"item_description"		"#CSGO_CustomPlayer_ctm_idf_variante_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_idf_variante"
@@ -150145,6 +150599,7 @@
 			"name"		"customplayer_ctm_idf_variantf"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_sas/ctm_sas.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_idf_variantf"
 			"item_description"		"#CSGO_CustomPlayer_ctm_idf_variantf_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_idf_variantf"
@@ -150160,6 +150615,7 @@
 			"name"		"customplayer_ctm_swat"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_sas/ctm_sas.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_swat"
 			"item_description"		"#CSGO_CustomPlayer_ctm_swat_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_swat"
@@ -150175,6 +150631,7 @@
 			"name"		"customplayer_ctm_swat_varianta"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_sas/ctm_sas.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_swat_varianta"
 			"item_description"		"#CSGO_CustomPlayer_ctm_swat_varianta_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_swat_varianta"
@@ -150190,6 +150647,7 @@
 			"name"		"customplayer_ctm_swat_variantb"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_sas/ctm_sas.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_swat_variantb"
 			"item_description"		"#CSGO_CustomPlayer_ctm_swat_variantb_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_swat_variantb"
@@ -150205,6 +150663,7 @@
 			"name"		"customplayer_ctm_swat_variantc"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_sas/ctm_sas.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_swat_variantc"
 			"item_description"		"#CSGO_CustomPlayer_ctm_swat_variantc_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_swat_variantc"
@@ -150220,6 +150679,7 @@
 			"name"		"customplayer_ctm_swat_variantd"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_sas/ctm_sas.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_swat_variantd"
 			"item_description"		"#CSGO_CustomPlayer_ctm_swat_variantd_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_swat_variantd"
@@ -150235,6 +150695,7 @@
 			"name"		"customplayer_ctm_sas_varianta"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_sas/ctm_sas.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_sas_varianta"
 			"item_description"		"#CSGO_CustomPlayer_ctm_sas_varianta_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_sas_varianta"
@@ -150250,6 +150711,7 @@
 			"name"		"customplayer_ctm_sas_variantb"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_sas/ctm_sas.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_sas_variantb"
 			"item_description"		"#CSGO_CustomPlayer_ctm_sas_variantb_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_sas_variantb"
@@ -150265,6 +150727,7 @@
 			"name"		"customplayer_ctm_sas_variantc"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_sas/ctm_sas.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_sas_variantc"
 			"item_description"		"#CSGO_CustomPlayer_ctm_sas_variantc_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_sas_variantc"
@@ -150280,6 +150743,7 @@
 			"name"		"customplayer_ctm_sas_variantd"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_sas/ctm_sas.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_sas_variantd"
 			"item_description"		"#CSGO_CustomPlayer_ctm_sas_variantd_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_sas_variantd"
@@ -150295,6 +150759,7 @@
 			"name"		"customplayer_ctm_st6"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_sas/ctm_sas.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_st6"
 			"item_description"		"#CSGO_CustomPlayer_ctm_st6_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_st6"
@@ -150310,6 +150775,7 @@
 			"name"		"customplayer_ctm_st6_varianta"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_sas/ctm_sas.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_st6_varianta"
 			"item_description"		"#CSGO_CustomPlayer_ctm_st6_varianta_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_st6_varianta"
@@ -150325,6 +150791,7 @@
 			"name"		"customplayer_ctm_st6_variantb"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_sas/ctm_sas.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_st6_variantb"
 			"item_description"		"#CSGO_CustomPlayer_ctm_st6_variantb_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_st6_variantb"
@@ -150340,6 +150807,7 @@
 			"name"		"customplayer_ctm_st6_variantc"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_sas/ctm_sas.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_st6_variantc"
 			"item_description"		"#CSGO_CustomPlayer_ctm_st6_variantc_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_st6_variantc"
@@ -150355,6 +150823,7 @@
 			"name"		"customplayer_ctm_st6_variantd"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_sas/ctm_sas.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_st6_variantd"
 			"item_description"		"#CSGO_CustomPlayer_ctm_st6_variantd_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_st6_variantd"
@@ -150370,6 +150839,7 @@
 			"name"		"customplayer_tm_balkan_variante"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_balkan_variante"
 			"item_description"		"#CSGO_CustomPlayer_tm_balkan_variante_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_balkan_variante"
@@ -150385,6 +150855,7 @@
 			"name"		"customplayer_tm_balkan_varianta"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_balkan_varianta"
 			"item_description"		"#CSGO_CustomPlayer_tm_balkan_varianta_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_balkan_varianta"
@@ -150400,6 +150871,7 @@
 			"name"		"customplayer_tm_balkan_variantb"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_balkan_variantb"
 			"item_description"		"#CSGO_CustomPlayer_tm_balkan_variantb_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_balkan_variantb"
@@ -150415,6 +150887,7 @@
 			"name"		"customplayer_tm_balkan_variantc"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_balkan_variantc"
 			"item_description"		"#CSGO_CustomPlayer_tm_balkan_variantc_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_balkan_variantc"
@@ -150430,6 +150903,7 @@
 			"name"		"customplayer_tm_balkan_variantd"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_balkan_variantd"
 			"item_description"		"#CSGO_CustomPlayer_tm_balkan_variantd_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_balkan_variantd"
@@ -150445,6 +150919,7 @@
 			"name"		"customplayer_tm_jumpsuit_varianta"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_jumpsuit/tm_jumpsuit_varianta.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_jumpsuit_varianta"
 			"item_description"		"#CSGO_CustomPlayer_tm_jumpsuit_varianta_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_jumpsuit_varianta"
@@ -150460,6 +150935,7 @@
 			"name"		"customplayer_tm_jumpsuit_variantb"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_jumpsuit/tm_jumpsuit_variantb.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_jumpsuit_variantb"
 			"item_description"		"#CSGO_CustomPlayer_tm_jumpsuit_variantb_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_jumpsuit_variantb"
@@ -150475,6 +150951,7 @@
 			"name"		"customplayer_tm_jumpsuit_variantc"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_jumpsuit/tm_jumpsuit_variantc.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_jumpsuit_variantc"
 			"item_description"		"#CSGO_CustomPlayer_tm_jumpsuit_variantc_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_jumpsuit_variantc"
@@ -150490,6 +150967,7 @@
 			"name"		"customplayer_tm_phoenix_heavy"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix_heavy.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_phoenix_heavy"
 			"item_description"		"#CSGO_CustomPlayer_tm_phoenix_heavy_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_phoenix_heavy"
@@ -150505,6 +150983,7 @@
 			"name"		"customplayer_ctm_heavy"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_heavy/ctm_heavy.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_heavy"
 			"item_description"		"#CSGO_CustomPlayer_ctm_heavy_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_heavy"
@@ -150523,6 +151002,7 @@
 			"name"		"customplayer_tm_leet_varianta"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_leet/tm_leet_varianta.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_leet_varianta"
 			"item_description"		"#CSGO_CustomPlayer_tm_leet_varianta_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_leet_varianta"
@@ -150538,6 +151018,7 @@
 			"name"		"customplayer_tm_leet_variantb"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_leet/tm_leet_variantb.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_leet_variantb"
 			"item_description"		"#CSGO_CustomPlayer_tm_leet_variantb_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_leet_variantb"
@@ -150553,6 +151034,7 @@
 			"name"		"customplayer_tm_leet_variantc"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_leet/tm_leet_variantc.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_leet_variantc"
 			"item_description"		"#CSGO_CustomPlayer_tm_leet_variantc_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_leet_variantc"
@@ -150568,6 +151050,7 @@
 			"name"		"customplayer_tm_leet_variantd"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_leet/tm_leet_variantd.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_leet_variantd"
 			"item_description"		"#CSGO_CustomPlayer_tm_leet_variantd_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_leet_variantd"
@@ -150583,6 +151066,7 @@
 			"name"		"customplayer_tm_leet_variante"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_leet/tm_leet_variante.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_leet_variante"
 			"item_description"		"#CSGO_CustomPlayer_tm_leet_variante_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_leet_variante"
@@ -150598,6 +151082,7 @@
 			"name"		"customplayer_tm_leet_variantg"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/tm_leet/tm_leet_variantg.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_leet_variantg"
 			"item_description"		"#CSGO_CustomPlayer_tm_leet_variantg_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_leet_variantg"
@@ -150622,6 +151107,7 @@
 			"name"		"customplayer_tm_leet_varianth"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/tm_leet/tm_leet_varianth.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_leet_varianth"
 			"item_description"		"#CSGO_CustomPlayer_tm_leet_varianth_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_leet_varianth"
@@ -150646,6 +151132,7 @@
 			"name"		"customplayer_tm_leet_varianti"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/tm_leet/tm_leet_varianti.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_leet_varianti"
 			"item_description"		"#CSGO_CustomPlayer_tm_leet_varianti_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_leet_varianti"
@@ -150670,6 +151157,7 @@
 			"name"		"customplayer_tm_leet_variantf"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/tm_leet/tm_leet_variantf.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_leet_variantf"
 			"item_description"		"#CSGO_CustomPlayer_tm_leet_variantf_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_leet_variantf"
@@ -150697,6 +151185,7 @@
 			"name"		"customplayer_tm_leet_variantj"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/tm_leet/tm_leet_variantj.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_leet_variantj"
 			"item_description"		"#CSGO_CustomPlayer_tm_leet_variantj_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_leet_variantj"
@@ -150724,6 +151213,7 @@
 			"name"		"customplayer_tm_phoenix"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_phoenix"
 			"item_description"		"#CSGO_CustomPlayer_tm_phoenix_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_phoenix"
@@ -150739,6 +151229,7 @@
 			"name"		"customplayer_tm_phoenix_varianta"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix_varianta.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_phoenix_varianta"
 			"item_description"		"#CSGO_CustomPlayer_tm_phoenix_varianta_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_phoenix_varianta"
@@ -150754,6 +151245,7 @@
 			"name"		"customplayer_tm_phoenix_variantb"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix_variantb.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_phoenix_variantb"
 			"item_description"		"#CSGO_CustomPlayer_tm_phoenix_variantb_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_phoenix_variantb"
@@ -150769,6 +151261,7 @@
 			"name"		"customplayer_tm_phoenix_variantc"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix_variantc.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_phoenix_variantc"
 			"item_description"		"#CSGO_CustomPlayer_tm_phoenix_variantc_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_phoenix_variantc"
@@ -150784,6 +151277,7 @@
 			"name"		"customplayer_tm_phoenix_variantd"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix_variantd.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_phoenix_variantd"
 			"item_description"		"#CSGO_CustomPlayer_tm_phoenix_variantd_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_phoenix_variantd"
@@ -150799,6 +151293,7 @@
 			"name"		"customplayer_tm_phoenix_varianth"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix_varianth.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_phoenix_varianth"
 			"item_description"		"#CSGO_CustomPlayer_tm_phoenix_varianth_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_phoenix_varianth"
@@ -150823,6 +151318,7 @@
 			"name"		"customplayer_tm_phoenix_variantf"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix_variantf.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_phoenix_variantf"
 			"item_description"		"#CSGO_CustomPlayer_tm_phoenix_variantf_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_phoenix_variantf"
@@ -150847,6 +151343,7 @@
 			"name"		"customplayer_tm_phoenix_variantg"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix_variantg.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_phoenix_variantg"
 			"item_description"		"#CSGO_CustomPlayer_tm_phoenix_variantg_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_phoenix_variantg"
@@ -150871,6 +151368,7 @@
 			"name"		"customplayer_tm_phoenix_varianti"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/tm_phoenix/tm_phoenix_varianti.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_phoenix_varianti"
 			"item_description"		"#CSGO_CustomPlayer_tm_phoenix_varianti_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_phoenix_varianti"
@@ -150898,6 +151396,7 @@
 			"name"		"customplayer_ctm_fbi"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_fbi/ctm_fbi.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_fbi"
 			"item_description"		"#CSGO_CustomPlayer_ctm_fbi_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_fbi"
@@ -150913,6 +151412,7 @@
 			"name"		"customplayer_ctm_fbi_varianta"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_fbi/ctm_fbi_varianta.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_fbi_varianta"
 			"item_description"		"#CSGO_CustomPlayer_ctm_fbi_varianta_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_fbi_varianta"
@@ -150928,6 +151428,7 @@
 			"name"		"customplayer_ctm_fbi_variantc"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_fbi/ctm_fbi_variantc.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_fbi_variantc"
 			"item_description"		"#CSGO_CustomPlayer_ctm_fbi_variantc_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_fbi_variantc"
@@ -150943,6 +151444,7 @@
 			"name"		"customplayer_ctm_fbi_variantd"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_fbi/ctm_fbi_variantd.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_fbi_variantd"
 			"item_description"		"#CSGO_CustomPlayer_ctm_fbi_variantd_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_fbi_variantd"
@@ -150958,6 +151460,7 @@
 			"name"		"customplayer_ctm_fbi_variante"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_fbi/ctm_fbi_variante.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_fbi_variante"
 			"item_description"		"#CSGO_CustomPlayer_ctm_fbi_variante_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_fbi_variante"
@@ -150973,6 +151476,7 @@
 			"name"		"customplayer_ctm_fbi_variantf"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/ctm_fbi/ctm_fbi_variantf.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_fbi_variantf"
 			"item_description"		"#CSGO_CustomPlayer_ctm_fbi_variantf_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_fbi_variantf"
@@ -150997,6 +151501,7 @@
 			"name"		"customplayer_ctm_fbi_variantg"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/ctm_fbi/ctm_fbi_variantg.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_fbi_variantg"
 			"item_description"		"#CSGO_CustomPlayer_ctm_fbi_variantg_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_fbi_variantg"
@@ -151021,6 +151526,7 @@
 			"name"		"customplayer_ctm_fbi_varianth"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/ctm_fbi/ctm_fbi_varianth.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_fbi_varianth"
 			"item_description"		"#CSGO_CustomPlayer_ctm_fbi_varianth_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_fbi_varianth"
@@ -151045,6 +151551,7 @@
 			"name"		"customplayer_ctm_fbi_variantb"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/ctm_fbi/ctm_fbi_variantb.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_fbi_variantb"
 			"item_description"		"#CSGO_CustomPlayer_ctm_fbi_variantb_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_fbi_variantb"
@@ -151075,6 +151582,7 @@
 			"name"		"customplayer_ctm_st6_variantk"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/ctm_st6/ctm_st6_variantk.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_st6_variantk"
 			"item_description"		"#CSGO_CustomPlayer_ctm_st6_variantk_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_st6_variantk"
@@ -151100,6 +151608,7 @@
 			"name"		"customplayer_ctm_st6_variante"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/ctm_st6/ctm_st6_variante.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_st6_variante"
 			"item_description"		"#CSGO_CustomPlayer_ctm_st6_variante_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_st6_variante"
@@ -151124,6 +151633,7 @@
 			"name"		"customplayer_ctm_st6_variantg"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/ctm_st6/ctm_st6_variantg.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_st6_variantg"
 			"item_description"		"#CSGO_CustomPlayer_ctm_st6_variantg_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_st6_variantg"
@@ -151148,6 +151658,7 @@
 			"name"		"customplayer_ctm_st6_variantm"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/ctm_st6/ctm_st6_variantm.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_st6_variantm"
 			"item_description"		"#CSGO_CustomPlayer_ctm_st6_variantm_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_st6_variantm"
@@ -151172,6 +151683,7 @@
 			"name"		"customplayer_ctm_st6_varianti"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/ctm_st6/ctm_st6_varianti.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_st6_varianti"
 			"item_description"		"#CSGO_CustomPlayer_ctm_st6_varianti_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_st6_varianti"
@@ -151199,6 +151711,7 @@
 			"name"		"customplayer_ctm_st6_variantj"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/ctm_st6/ctm_st6_variantj.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_st6_variantj"
 			"item_description"		"#CSGO_CustomPlayer_ctm_st6_variantj_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_st6_variantj"
@@ -151223,6 +151736,7 @@
 			"name"		"customplayer_ctm_st6_variantl"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/ctm_st6/ctm_st6_variantl.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_st6_variantl"
 			"item_description"		"#CSGO_CustomPlayer_ctm_st6_variantl_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_st6_variantl"
@@ -151247,6 +151761,7 @@
 			"name"		"customplayer_ctm_st6_variantn"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/ctm_st6/ctm_st6_variantn.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_st6_variantn"
 			"item_description"		"#CSGO_CustomPlayer_ctm_st6_variantn_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_st6_variantn"
@@ -151274,6 +151789,7 @@
 			"name"		"customplayer_tm_balkan_variantf"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/tm_balkan/tm_balkan_variantf.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_balkan_variantf"
 			"item_description"		"#CSGO_CustomPlayer_tm_balkan_variantf_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_balkan_variantf"
@@ -151298,6 +151814,7 @@
 			"name"		"customplayer_tm_balkan_varianti"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/tm_balkan/tm_balkan_varianti.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_balkan_varianti"
 			"item_description"		"#CSGO_CustomPlayer_tm_balkan_varianti_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_balkan_varianti"
@@ -151322,6 +151839,7 @@
 			"name"		"customplayer_tm_balkan_variantg"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/tm_balkan/tm_balkan_variantg.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_balkan_variantg"
 			"item_description"		"#CSGO_CustomPlayer_tm_balkan_variantg_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_balkan_variantg"
@@ -151346,6 +151864,7 @@
 			"name"		"customplayer_tm_balkan_variantj"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/tm_balkan/tm_balkan_variantj.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_balkan_variantj"
 			"item_description"		"#CSGO_CustomPlayer_tm_balkan_variantj_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_balkan_variantj"
@@ -151370,6 +151889,7 @@
 			"name"		"customplayer_tm_balkan_varianth"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/tm_balkan/tm_balkan_varianth.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_balkan_varianth"
 			"item_description"		"#CSGO_CustomPlayer_tm_balkan_varianth_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_balkan_varianth"
@@ -151397,6 +151917,7 @@
 			"name"		"customplayer_tm_balkan_variantk"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/tm_balkan/tm_balkan_variantk.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_balkan_variantk"
 			"item_description"		"#CSGO_CustomPlayer_tm_balkan_variantk_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_balkan_variantk"
@@ -151421,6 +151942,7 @@
 			"name"		"customplayer_tm_balkan_variantl"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/tm_balkan/tm_balkan_variantl.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_balkan_variantl"
 			"item_description"		"#CSGO_CustomPlayer_tm_balkan_variantl_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_balkan_variantl"
@@ -151448,6 +151970,7 @@
 			"name"		"customplayer_ctm_sas"
 			"prefab"		"customplayer"
 			"model_player"		"characters/models/ctm_sas/ctm_sas.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_sas"
 			"item_description"		"#CSGO_CustomPlayer_ctm_sas_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_sas"
@@ -151463,6 +151986,7 @@
 			"name"		"customplayer_ctm_sas_variantf"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/ctm_sas/ctm_sas_variantf.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_sas_variantf"
 			"item_description"		"#CSGO_CustomPlayer_ctm_sas_variantf_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_sas_variantf"
@@ -151487,6 +152011,7 @@
 			"name"		"customplayer_ctm_sas_variantg"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/ctm_sas/ctm_sas_variantg.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_sas_variantg"
 			"item_description"		"#CSGO_CustomPlayer_ctm_sas_variantg_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_sas_variantg"
@@ -151514,6 +152039,7 @@
 			"name"		"customplayer_ctm_swat_variante"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/ctm_swat/ctm_swat_variante.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_swat_variante"
 			"item_description"		"#CSGO_CustomPlayer_ctm_swat_variante_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_swat_variante"
@@ -151541,6 +152067,7 @@
 			"name"		"customplayer_ctm_swat_variantf"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/ctm_swat/ctm_swat_variantf.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_swat_variantf"
 			"item_description"		"#CSGO_CustomPlayer_ctm_swat_variantf_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_swat_variantf"
@@ -151566,6 +152093,7 @@
 			"name"		"customplayer_ctm_swat_variantg"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/ctm_swat/ctm_swat_variantg.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_swat_variantg"
 			"item_description"		"#CSGO_CustomPlayer_ctm_swat_variantg_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_swat_variantg"
@@ -151590,6 +152118,7 @@
 			"name"		"customplayer_ctm_swat_varianth"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/ctm_swat/ctm_swat_varianth.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_swat_varianth"
 			"item_description"		"#CSGO_CustomPlayer_ctm_swat_varianth_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_swat_varianth"
@@ -151614,6 +152143,7 @@
 			"name"		"customplayer_ctm_swat_varianti"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/ctm_swat/ctm_swat_varianti.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_swat_varianti"
 			"item_description"		"#CSGO_CustomPlayer_ctm_swat_varianti_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_swat_varianti"
@@ -151638,6 +152168,7 @@
 			"name"		"customplayer_ctm_swat_variantj"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/ctm_swat/ctm_swat_variantj.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_swat_variantj"
 			"item_description"		"#CSGO_CustomPlayer_ctm_swat_variantj_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_swat_variantj"
@@ -151662,6 +152193,7 @@
 			"name"		"customplayer_ctm_swat_variantk"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/ctm_swat/ctm_swat_variantk.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_swat_variantk"
 			"item_description"		"#CSGO_CustomPlayer_ctm_swat_variantk_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_swat_variantk"
@@ -151690,6 +152222,7 @@
 			"name"		"customplayer_tm_professional_varf"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/tm_professional/tm_professional_varf.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_professional_varf"
 			"item_description"		"#CSGO_CustomPlayer_tm_professional_varf_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_professional_varf"
@@ -151717,6 +152250,7 @@
 			"name"		"customplayer_tm_professional_varf1"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/tm_professional/tm_professional_varf1.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_professional_varf1"
 			"item_description"		"#CSGO_CustomPlayer_tm_professional_varf1_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_professional_varf1"
@@ -151744,6 +152278,7 @@
 			"name"		"customplayer_tm_professional_varf2"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/tm_professional/tm_professional_varf2.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_professional_varf2"
 			"item_description"		"#CSGO_CustomPlayer_tm_professional_varf2_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_professional_varf2"
@@ -151771,6 +152306,7 @@
 			"name"		"customplayer_tm_professional_varf3"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/tm_professional/tm_professional_varf3.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_professional_varf3"
 			"item_description"		"#CSGO_CustomPlayer_tm_professional_varf3_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_professional_varf3"
@@ -151798,6 +152334,7 @@
 			"name"		"customplayer_tm_professional_varf4"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/tm_professional/tm_professional_varf4.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_professional_varf4"
 			"item_description"		"#CSGO_CustomPlayer_tm_professional_varf4_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_professional_varf4"
@@ -151825,6 +152362,7 @@
 			"name"		"customplayer_tm_professional_varg"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/tm_professional/tm_professional_varg.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_professional_varg"
 			"item_description"		"#CSGO_CustomPlayer_tm_professional_varg_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_professional_varg"
@@ -151850,6 +152388,7 @@
 			"name"		"customplayer_tm_professional_varh"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/tm_professional/tm_professional_varh.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_professional_varh"
 			"item_description"		"#CSGO_CustomPlayer_tm_professional_varh_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_professional_varh"
@@ -151874,6 +152413,7 @@
 			"name"		"customplayer_tm_professional_vari"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/tm_professional/tm_professional_vari.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_professional_vari"
 			"item_description"		"#CSGO_CustomPlayer_tm_professional_vari_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_professional_vari"
@@ -151898,6 +152438,7 @@
 			"name"		"customplayer_tm_professional_varj"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/tm_professional/tm_professional_varj.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_professional_varj"
 			"item_description"		"#CSGO_CustomPlayer_tm_professional_varj_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_professional_varj"
@@ -151923,6 +152464,7 @@
 			"name"		"customplayer_tm_professional_varf5"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/tm_professional/tm_professional_varf5.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_professional_varf5"
 			"item_description"		"#CSGO_CustomPlayer_tm_professional_varf5_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_professional_varf5"
@@ -151951,6 +152493,7 @@
 			"name"		"customplayer_ctm_gendarmerie_varianta"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/ctm_gendarmerie/ctm_gendarmerie_varianta.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_gendarmerie_varianta"
 			"item_description"		"#CSGO_CustomPlayer_ctm_gendarmerie_varianta_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_gendarmerie_varianta"
@@ -151976,6 +152519,7 @@
 			"name"		"customplayer_ctm_gendarmerie_variantb"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/ctm_gendarmerie/ctm_gendarmerie_variantb.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_gendarmerie_variantb"
 			"item_description"		"#CSGO_CustomPlayer_ctm_gendarmerie_variantb_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_gendarmerie_variantb"
@@ -152001,6 +152545,7 @@
 			"name"		"customplayer_ctm_gendarmerie_variantc"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/ctm_gendarmerie/ctm_gendarmerie_variantc.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_gendarmerie_variantc"
 			"item_description"		"#CSGO_CustomPlayer_ctm_gendarmerie_variantc_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_gendarmerie_variantc"
@@ -152028,6 +152573,7 @@
 			"name"		"customplayer_ctm_gendarmerie_variantd"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/ctm_gendarmerie/ctm_gendarmerie_variantd.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_gendarmerie_variantd"
 			"item_description"		"#CSGO_CustomPlayer_ctm_gendarmerie_variantd_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_gendarmerie_variantd"
@@ -152053,6 +152599,7 @@
 			"name"		"customplayer_ctm_gendarmerie_variante"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/ctm_gendarmerie/ctm_gendarmerie_variante.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_gendarmerie_variante"
 			"item_description"		"#CSGO_CustomPlayer_ctm_gendarmerie_variante_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_gendarmerie_variante"
@@ -152081,6 +152628,7 @@
 			"name"		"customplayer_ctm_diver_varianta"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/ctm_diver/ctm_diver_varianta.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_diver_varianta"
 			"item_description"		"#CSGO_CustomPlayer_ctm_diver_varianta_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_diver_varianta"
@@ -152108,6 +152656,7 @@
 			"name"		"customplayer_ctm_diver_variantb"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/ctm_diver/ctm_diver_variantb.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_diver_variantb"
 			"item_description"		"#CSGO_CustomPlayer_ctm_diver_variantb_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_diver_variantb"
@@ -152135,6 +152684,7 @@
 			"name"		"customplayer_ctm_diver_variantc"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/ctm_diver/ctm_diver_variantc.vmdl"
+			"model_ag2"		"phase2/characters/models/ctm_sas/ctm_sas_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_ctm_diver_variantc"
 			"item_description"		"#CSGO_CustomPlayer_ctm_diver_variantc_Desc"
 			"image_inventory"		"econ/characters/customplayer_ctm_diver_variantc"
@@ -152163,6 +152713,7 @@
 			"name"		"customplayer_tm_jungle_raider_varianta"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/tm_jungle_raider/tm_jungle_raider_varianta.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_jungle_raider_varianta"
 			"item_description"		"#CSGO_CustomPlayer_tm_jungle_raider_varianta_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_jungle_raider_varianta"
@@ -152188,6 +152739,7 @@
 			"name"		"customplayer_tm_jungle_raider_variantb"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/tm_jungle_raider/tm_jungle_raider_variantb.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_jungle_raider_variantb"
 			"item_description"		"#CSGO_CustomPlayer_tm_jungle_raider_variantb_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_jungle_raider_variantb"
@@ -152215,6 +152767,7 @@
 			"name"		"customplayer_tm_jungle_raider_variantc"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/tm_jungle_raider/tm_jungle_raider_variantc.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_jungle_raider_variantc"
 			"item_description"		"#CSGO_CustomPlayer_tm_jungle_raider_variantc_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_jungle_raider_variantc"
@@ -152240,6 +152793,7 @@
 			"name"		"customplayer_tm_jungle_raider_variantd"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/tm_jungle_raider/tm_jungle_raider_variantd.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_jungle_raider_variantd"
 			"item_description"		"#CSGO_CustomPlayer_tm_jungle_raider_variantd_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_jungle_raider_variantd"
@@ -152265,6 +152819,7 @@
 			"name"		"customplayer_tm_jungle_raider_variante"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/tm_jungle_raider/tm_jungle_raider_variante.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_jungle_raider_variante"
 			"item_description"		"#CSGO_CustomPlayer_tm_jungle_raider_variante_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_jungle_raider_variante"
@@ -152292,6 +152847,7 @@
 			"name"		"customplayer_tm_jungle_raider_variantf"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/tm_jungle_raider/tm_jungle_raider_variantf.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_jungle_raider_variantf"
 			"item_description"		"#CSGO_CustomPlayer_tm_jungle_raider_variantf_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_jungle_raider_variantf"
@@ -152317,6 +152873,7 @@
 			"name"		"customplayer_tm_jungle_raider_variantb2"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/tm_jungle_raider/tm_jungle_raider_variantb2.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_jungle_raider_variantb2"
 			"item_description"		"#CSGO_CustomPlayer_tm_jungle_raider_variantb2_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_jungle_raider_variantb2"
@@ -152344,6 +152901,7 @@
 			"name"		"customplayer_tm_jungle_raider_variantf2"
 			"prefab"		"customplayertradable"
 			"model_player"		"characters/models/tm_jungle_raider/tm_jungle_raider_variantf2.vmdl"
+			"model_ag2"		"phase2/characters/models/tm_phoenix/tm_phoenix_ag2.vmdl"
 			"item_name"		"#CSGO_CustomPlayer_tm_jungle_raider_variantf2"
 			"item_description"		"#CSGO_CustomPlayer_tm_jungle_raider_variantf2_Desc"
 			"image_inventory"		"econ/characters/customplayer_tm_jungle_raider_variantf2"
@@ -213806,6 +214364,16 @@
 			"wear_remap_max"		"0.350000"
 			"composite_material_path"		"weapons/paints/set_train_2025/train_shapes_01.vcompmat"
 		}
+		"1338"
+		{
+			"name"		"soch_mountains_m4a1s"
+			"description_string"		"#PaintKit_soch_mountains_xm1014"
+			"description_tag"		"#PaintKit_soch_mountains_xm1014_Tag"
+			"style"		"2"
+			"wear_remap_min"		"0.000000"
+			"wear_remap_max"		"0.700000"
+			"composite_material_path"		"weapons/paints/limited_time/soch_mountains_m4a1s.vcompmat"
+		}
 	}
 	"sticker_kits"
 	{
@@ -215395,6 +215963,116 @@
 		{
 			"public_list_contents"		"1"
 			"[perfectworld_02]musickit"		"1"
+		}
+	}
+	"music_definitions"
+	{
+		"87"
+		{
+			"name"		"adambeyer_01"
+			"loc_name"		"#MusicKit_adambeyer_01"
+			"loc_description"		"#MusicKit_adambeyer_01_desc"
+			"image_inventory"		"econ/music_kits/adambeyer_01"
+			"pedestal_display_model"		"models/inventory_items/music_kits/music_kit_adambeyer_01.vmdl"
+		}
+	}
+	"music_definitions"
+	{
+		"88"
+		{
+			"name"		"ghost_01"
+			"loc_name"		"#MusicKit_ghost_01"
+			"loc_description"		"#MusicKit_ghost_01_desc"
+			"image_inventory"		"econ/music_kits/ghost_01"
+			"pedestal_display_model"		"models/inventory_items/music_kits/music_kit_ghost_01.vmdl"
+		}
+	}
+	"music_definitions"
+	{
+		"89"
+		{
+			"name"		"health_01"
+			"loc_name"		"#MusicKit_health_01"
+			"loc_description"		"#MusicKit_health_01_desc"
+			"image_inventory"		"econ/music_kits/health_01"
+			"pedestal_display_model"		"models/inventory_items/music_kits/music_kit_health_01.vmdl"
+		}
+	}
+	"music_definitions"
+	{
+		"90"
+		{
+			"name"		"jamesandthecoldgun_01"
+			"loc_name"		"#MusicKit_jamesandthecoldgun_01"
+			"loc_description"		"#MusicKit_jamesandthecoldgun_01_desc"
+			"image_inventory"		"econ/music_kits/jamesandthecoldgun_01"
+			"pedestal_display_model"		"models/inventory_items/music_kits/music_kit_jamesandthecoldgun_01.vmdl"
+		}
+	}
+	"music_definitions"
+	{
+		"91"
+		{
+			"name"		"jonathanyoung_01"
+			"loc_name"		"#MusicKit_jonathanyoung_01"
+			"loc_description"		"#MusicKit_jonathanyoung_01_desc"
+			"image_inventory"		"econ/music_kits/jonathanyoung_01"
+			"pedestal_display_model"		"models/inventory_items/music_kits/music_kit_jonathanyoung_01.vmdl"
+		}
+	}
+	"music_definitions"
+	{
+		"92"
+		{
+			"name"		"juelz_02"
+			"loc_name"		"#MusicKit_juelz_02"
+			"loc_description"		"#MusicKit_juelz_02_desc"
+			"image_inventory"		"econ/music_kits/juelz_02"
+			"pedestal_display_model"		"models/inventory_items/music_kits/music_kit_juelz_02.vmdl"
+		}
+	}
+	"music_definitions"
+	{
+		"93"
+		{
+			"name"		"killermike_01"
+			"loc_name"		"#MusicKit_killermike_01"
+			"loc_description"		"#MusicKit_killermike_01_desc"
+			"image_inventory"		"econ/music_kits/killermike_01"
+			"pedestal_display_model"		"models/inventory_items/music_kits/music_kit_killermike_01.vmdl"
+		}
+	}
+	"music_definitions"
+	{
+		"94"
+		{
+			"name"		"pvris_01"
+			"loc_name"		"#MusicKit_pvris_01"
+			"loc_description"		"#MusicKit_pvris_01_desc"
+			"image_inventory"		"econ/music_kits/pvris_01"
+			"pedestal_display_model"		"models/inventory_items/music_kits/music_kit_pvris_01.vmdl"
+		}
+	}
+	"music_definitions"
+	{
+		"95"
+		{
+			"name"		"selectiveresponse_01"
+			"loc_name"		"#MusicKit_selectiveresponse_01"
+			"loc_description"		"#MusicKit_selectiveresponse_01_desc"
+			"image_inventory"		"econ/music_kits/selectiveresponse_01"
+			"pedestal_display_model"		"models/inventory_items/music_kits/music_kit_selectiveresponse_01.vmdl"
+		}
+	}
+	"music_definitions"
+	{
+		"96"
+		{
+			"name"		"tigercub_01"
+			"loc_name"		"#MusicKit_tigercub_01"
+			"loc_description"		"#MusicKit_tigercub_01_desc"
+			"image_inventory"		"econ/music_kits/tigercub_01"
+			"pedestal_display_model"		"models/inventory_items/music_kits/music_kit_tigercub_01.vmdl"
 		}
 	}
 	"items"
@@ -217031,6 +217709,21 @@
 	}
 	"client_loot_lists"
 	{
+		"set_xpshop_wpn_03_legendary"
+		{
+			"[soch_mountains_m4a1s]weapon_m4a1_silencer"		"1"
+		}
+		"set_xpshop_wpn_03"
+		{
+			"set_xpshop_wpn_03_legendary"		"1"
+		}
+	}
+	"paint_kits_rarity"
+	{
+		"soch_mountains_m4a1s"		"mythical"
+	}
+	"client_loot_lists"
+	{
 		"keychain_pack_kc_missinglink_rare"
 		{
 			"[kc_missinglink_ava]keychain"		"1"
@@ -217213,6 +217906,7 @@
 			{
 				"[soch_mountains_limited_time]weapon_xm1014"		"1"
 				"[aq_deagle_case_hardened_2]weapon_deagle"		"1"
+				"[soch_mountains_m4a1s]weapon_m4a1_silencer"		"1"
 			}
 		}
 	}
@@ -217307,6 +218001,103 @@
 	"prefabs"
 	{
 		"coupon_masterminds2_capsule_prefab"
+		{
+			"prefab"		"coupon_prefab"
+		}
+	}
+	"items"
+	{
+		"7019"
+		{
+			"name"		"crate_musickit_deluge_capsule"
+			"item_name"		"#CSGO_crate_musickit_deluge_capsule"
+			"item_description"		"#CSGO_crate_musickit_deluge_capsule_desc"
+			"image_inventory"		"econ/weapon_cases/crate_musickit_deluge_capsule"
+			"first_sale_date"		"2025-06-27"
+			"prefab"		"weapon_case_base"
+			"attributes"
+			{
+				"set supply crate series"
+				{
+					"attribute_class"		"supply_crate_series"
+					"value"		"450"
+				}
+			}
+		}
+		"7020"
+		{
+			"name"		"coupon - deluge_musickit_capsule"
+			"item_name"		"#coupon_deluge_musickit_capsule"
+			"item_description"		"#coupon_desc"
+			"loot_list_name"		"coupon loot list - deluge_musickit_capsule"
+			"prefab"		"coupon_deluge_capsule_prefab"
+		}
+		"7021"
+		{
+			"name"		"crate_musickit_deluge_stattrak_capsule"
+			"item_name"		"#CSGO_crate_musickit_deluge_stattrak_capsule"
+			"item_description"		"#CSGO_crate_musickit_deluge_stattrak_capsule_desc"
+			"image_inventory"		"econ/weapon_cases/crate_musickit_deluge_stattrak_capsule"
+			"first_sale_date"		"2025-06-27"
+			"prefab"		"weapon_case_base"
+			"attributes"
+			{
+				"set supply crate series"
+				{
+					"attribute_class"		"supply_crate_series"
+					"value"		"451"
+				}
+			}
+		}
+		"7022"
+		{
+			"name"		"coupon - deluge_stattrak_musickit_capsule"
+			"item_name"		"#coupon_deluge_stattrak_musickit_capsule"
+			"item_description"		"#coupon_desc"
+			"loot_list_name"		"coupon loot list - deluge_stattrak_musickit_capsule"
+			"prefab"		"coupon_deluge_capsule_prefab"
+			"will_produce_stattrak"		"1"
+		}
+	}
+	"revolving_loot_lists"
+	{
+		"450"		"crate_musickit_deluge_capsule_lootlist"
+		"451"		"crate_musickit_deluge_stattrak_capsule_lootlist"
+	}
+	"client_loot_lists"
+	{
+		"crate_musickit_deluge_capsule_lootlist"
+		{
+			"[adambeyer_01]musickit"		"1"
+			"[ghost_01]musickit"		"1"
+			"[health_01]musickit"		"1"
+			"[jamesandthecoldgun_01]musickit"		"1"
+			"[jonathanyoung_01]musickit"		"1"
+			"[juelz_02]musickit"		"1"
+			"[killermike_01]musickit"		"1"
+			"[pvris_01]musickit"		"1"
+			"[selectiveresponse_01]musickit"		"1"
+			"[tigercub_01]musickit"		"1"
+		}
+		"crate_musickit_deluge_stattrak_capsule_lootlist"
+		{
+			"will_produce_stattrak"		"1"
+			"crate_musickit_deluge_capsule_lootlist"		"1"
+		}
+		"coupon loot list - deluge_musickit_capsule"
+		{
+			"public_list_contents"		"1"
+			"crate_musickit_deluge_capsule"		"1"
+		}
+		"coupon loot list - deluge_stattrak_musickit_capsule"
+		{
+			"public_list_contents"		"1"
+			"crate_musickit_deluge_stattrak_capsule"		"1"
+		}
+	}
+	"prefabs"
+	{
+		"coupon_deluge_capsule_prefab"
 		{
 			"prefab"		"coupon_prefab"
 		}
@@ -217409,13 +218200,6 @@
 					"force_gc_to_generate"		"1"
 				}
 			}
-			"tool"
-			{
-				"type"		"spraypaint"
-			}
-			"item_slot2"		"spray"
-			"item_sub_position2"		"spray0"
-			"inv_graphic_art"		"graffiti"
 		}
 	}
 	"keychain_definitions"
