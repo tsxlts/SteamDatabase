@@ -989,31 +989,6 @@
 	"Console_Title"		"コンソール"
 	"Console_Submit"	"送信"
 
-	"FileOpenDialog_Open"		"開く"
-	"FileOpenDialog_Save"		"保存"
-	"FileOpenDialog_Select"		"選択"
-	"FileOpenDialog_Cancel"		"キャンセル"
-	"FileOpenDialog_Look_in"	"場所："
-	"FileOpenDialog_File_Name"	"ファイル名:"
-	"FileOpenDialog_Directory_Name"	"ディレクトリ名:"
-	"FileOpenDialog_File_Type"	"ファイル形式:"
-	"FileOpenDialog_Icon"		""
-	"FileOpenDialog_Name"		"名前"
-	"FileOpenDialog_Type"		"タイプ"
-	"FileOpenDialog_Col_Name"	"名前"
-	"FileOpenDialog_Col_Size"	"サイズ"
-	"FileOpenDialog_Col_Type"	"タイプ"
-	"FileOpenDialog_Col_DateModified" "更新日時"
-	"FileOpenDialog_Col_DateCreated" "作成日時"
-	"FileOpenDialog_Col_Attributes"	"属性"
-	"FileOpenDialog_FileType_Folder" "ファイルフォルダ"
-	"FileOpenDialog_ToolTip_Up"	"上へ"
-	"FileOpenDialog_ToolTip_NewFolder" "新しいフォルダ"
-	"FileOpenDialog_NewFolder_InputTitle"  "新しいフォルダ"
-	"FileOpenDialog_NewFolderPrompt" "名前:"
-	"FileOpenDialog_NewFolder_DefaultName" "新しいフォルダ"
-	"FileOpenDialog_ToolTip_OpenInExplorerButton" "エクスプローラで開く"
-
 	"vgui_ok"			"OK"
 	"vgui_close"			"閉じる"
 	"vgui_Cancel"			"キャンセル"
@@ -1714,7 +1689,7 @@
 		"SFUI_WPNHUD_REVOLVER"					"R8 Revolver"
 		"SFUI_WPNHUD_USP_SILENCER"				"USP-S"
 		"SFUI_WPNHUD_KnifeBayonet"				"銃剣"
-		"SFUI_WPNHUD_KnifeFlip"					"折りたたみナイフ"
+		"SFUI_WPNHUD_KnifeFlip"					"Flip ナイフ"
 		"SFUI_WPNHUD_KnifeGut"					"ガットナイフ"
 		"SFUI_WPNHUD_KnifeCSS"					"クラシックナイフ"
 		"SFUI_WPNHUD_KnifeM9"					"M9バヨネット"
@@ -2536,6 +2511,8 @@
 		"strange"								"StatTrak™"
 		"completed"								"完了"
 		"highlight"								"ハイライト"
+		"volatile"								"Volatile"
+
 		// Team Usability
 		"noteam"								"非チーム"
 		"terrorists"							"テロリスト"
@@ -2661,6 +2638,7 @@
 		"Attrib_MatchWins"							"Operation マップでの対戦勝利数: %s1"
 		"Attrib_HasSilencer"						"サイレンサー"
 		"Attrib_HasBurstMode"						"3点バースト"
+		"Attrib_SecureConnectionLine"				"Secure Connection Line #%s1"
 		"Attrib_SupplyCrateSeries"					"コンテナシリーズ #%s1"
 		"Attrib_KillEater"							"このアイテムには StatTrak™ 技術が搭載されており、所有者が装備している際に特定の統計を追跡します。"
 		"Attrib_ReferencedItem"						"内容: %s1"
@@ -32448,7 +32426,7 @@
 		"SFUI_Map_workshop_preview_inferno"	"Inferno プレビュー"
 
 		"SFUI_Map_warehouse"	"Warehouse"
-		"SFUI_Map_mainmenu"		"メインメニュー (現在{s:mainmenu_bkgnd})"
+		"SFUI_Map_mainmenu"		"メインメニュー - {s:mainmenu_bkgnd}"
 		
 		// Single player dialog
 		"SFUI_CreateSinglePlayerTitle"		"シングルプレイヤー"
@@ -41727,6 +41705,7 @@
 		"inv_context_no_valid_actions"		"実行可能アクションなし"
 		"inv_context_look_inside"			"コンテナをプレビュー"
 		"inv_context_inspect_contents"		"コレクションを確認"
+		"inv_context_secure_connection_line" "Connect with Arms Dealer"
 		"inv_context_xray"					"X線スキャナーを使用"
 		"inv_context_goto_xray"				"X線スキャナーに移動"
 		"inv_context_unequip"				"装備解除"
@@ -44756,6 +44735,31 @@
 		"quest_11010_var_ingame:p{mission-points}"	 	"{s:item1}でキルする"
 		
 		"quest_11011_var_desc:p{mission-points}"	 	" <b>{s:gamemode}：{s:location}</b>でラウンド勝利する。"
+		"quest_11011_var_ingame:p{mission-points}"		"ラウンド勝利する"
+		
+		"quest_11012_var_desc:p{mission-points}"	 	" <b>{s:gamemode}：{s:location}</b>でラウンド勝利する。"
+		"quest_11012_var_ingame:p{mission-points}"		"ラウンド勝利する"
+		
+		"quest_11013_var_desc:p{mission-points}"	 	" <b>{s:gamemode}：{s:location}</b>でラウンド勝利する。"
+		"quest_11013_var_ingame:p{mission-points}"		"ラウンド勝利する"
+		
+		"quest_11014_var_desc:p{mission-points}"	 	" <b>{s:gamemode}：{s:location}</b>でラウンド勝利する。"
+		"quest_11014_var_ingame:p{mission-points}"		"ラウンド勝利する"
+		
+		"quest_11015_var_desc:p{mission-points}"	 	" <b>{s:gamemode}：{s:location}</b>でラウンド勝利する。"
+		"quest_11015_var_ingame:p{mission-points}"		"ラウンド勝利する"
+
+// crow_mask_48113_comment
+// crow_mask_48114_comment
+}
+
+
+
+
+}
+
+
+mode}：{s:location}</b>でラウンド勝利する。"
 		"quest_11011_var_ingame:p{mission-points}"		"ラウンド勝利する"
 		
 		"quest_11012_var_desc:p{mission-points}"	 	" <b>{s:gamemode}：{s:location}</b>でラウンド勝利する。"

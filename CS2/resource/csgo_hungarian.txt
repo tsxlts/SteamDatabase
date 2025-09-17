@@ -989,31 +989,6 @@
 	"Console_Title"		"Konzol"
 	"Console_Submit"	"Elküld"
 
-	"FileOpenDialog_Open"		"Megnyitás"
-	"FileOpenDialog_Save"		"Ment"
-	"FileOpenDialog_Select"		"Kiválaszt"
-	"FileOpenDialog_Cancel"		"Mégse"
-	"FileOpenDialog_Look_in"	"Tallózás:"
-	"FileOpenDialog_File_Name"	"Fájlnév:"
-	"FileOpenDialog_Directory_Name"	"Könyvtárnév:"
-	"FileOpenDialog_File_Type"	"Fájltípus:"
-	"FileOpenDialog_Icon"		" "
-	"FileOpenDialog_Name"		"Név"
-	"FileOpenDialog_Type"		"Típus"
-	"FileOpenDialog_Col_Name"	"Név"
-	"FileOpenDialog_Col_Size"	"Méret"
-	"FileOpenDialog_Col_Type"	"Típus"
-	"FileOpenDialog_Col_DateModified" "Módosítás dátuma"
-	"FileOpenDialog_Col_DateCreated" "Létrehozás dátuma"
-	"FileOpenDialog_Col_Attributes"	"Attribútumok"
-	"FileOpenDialog_FileType_Folder" "Fájlmappa"
-	"FileOpenDialog_ToolTip_Up"	"Fel"
-	"FileOpenDialog_ToolTip_NewFolder" "Új mappa"
-	"FileOpenDialog_NewFolder_InputTitle"  "Új mappa"
-	"FileOpenDialog_NewFolderPrompt" "Név:"
-	"FileOpenDialog_NewFolder_DefaultName" "Új mappa"
-	"FileOpenDialog_ToolTip_OpenInExplorerButton" "Megnyitás intézőben"
-
 	"vgui_ok"			"OK"
 	"vgui_close"			"Bezár"
 	"vgui_Cancel"			"Mégse"
@@ -33357,7 +33332,7 @@
 		"SFUI_Map_workshop_preview_inferno"	"Inferno előnézet"
 
 		"SFUI_Map_warehouse"	"Warehouse"
-		"SFUI_Map_mainmenu"		"Főmenü (jelenleg {s:mainmenu_bkgnd})"
+		"SFUI_Map_mainmenu"		"Főmenü – {s:mainmenu_bkgnd}"
 		
 		// Single player dialog
 		"SFUI_CreateSinglePlayerTitle"		"EGYJÁTÉKOS MÓD"
@@ -45695,6 +45670,28 @@
 		"quest_11011_var_ingame:p{mission-points}"		"Nyerj egy kört.#|#Nyerj köröket."
 		
 		"quest_11012_var_desc:p{mission-points}"	 	"Nyerj egy kört <b>{s:gamemode} játékban: {s:location}</b>.#|#Nyerj köröket <b>{s:gamemode} játékban: {s:location}</b>."
+		"quest_11012_var_ingame:p{mission-points}"		"Nyerj egy kört.#|#Nyerj köröket."
+		
+		"quest_11013_var_desc:p{mission-points}"	 	"Nyerj egy kört <b>{s:gamemode} játékban: {s:location}</b>.#|#Nyerj köröket <b>{s:gamemode} játékban: {s:location}</b>."
+		"quest_11013_var_ingame:p{mission-points}"		"Nyerj egy kört.#|#Nyerj köröket."
+		
+		"quest_11014_var_desc:p{mission-points}"	 	"Nyerj egy kört <b>{s:gamemode} játékban: {s:location}</b>.#|#Nyerj köröket <b>{s:gamemode} játékban: {s:location}</b>."
+		"quest_11014_var_ingame:p{mission-points}"		"Nyerj egy kört.#|#Nyerj köröket."
+		
+		"quest_11015_var_desc:p{mission-points}"	 	"Nyerj egy kört <b>{s:gamemode} játékban: {s:location}</b>.#|#Nyerj köröket <b>{s:gamemode} játékban: {s:location}</b>."
+		"quest_11015_var_ingame:p{mission-points}"		"Nyerj egy kört.#|#Nyerj köröket."
+
+// crow_mask_48113_comment
+// crow_mask_48114_comment
+}
+
+
+
+
+}
+
+
+>{s:gamemode} játékban: {s:location}</b>.#|#Nyerj köröket <b>{s:gamemode} játékban: {s:location}</b>."
 		"quest_11012_var_ingame:p{mission-points}"		"Nyerj egy kört.#|#Nyerj köröket."
 		
 		"quest_11013_var_desc:p{mission-points}"	 	"Nyerj egy kört <b>{s:gamemode} játékban: {s:location}</b>.#|#Nyerj köröket <b>{s:gamemode} játékban: {s:location}</b>."

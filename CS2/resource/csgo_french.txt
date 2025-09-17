@@ -472,6 +472,12 @@
 		"loadingscreen_title_de_ancient_3"		"Milieu"
 		"loadingscreen_title_de_ancient_4"		"Couloir latéral"
 
+		"loadingscreen_title_de_ancient_night"		"Ancient"
+		"loadingscreen_title_de_ancient_night_1"	"Site de bombe A"
+		"loadingscreen_title_de_ancient_night_2"	"Site de bombe B"
+		"loadingscreen_title_de_ancient_night_3"	"Milieu"
+		"loadingscreen_title_de_ancient_night_4"	"Couloir latéral"
+		
 		"loadingscreen_title_de_anubis"			"Anubis"
 		"loadingscreen_title_de_anubis_1"		"Eau"
 		"loadingscreen_title_de_anubis_2"		"Site de bombe A"
@@ -538,6 +544,12 @@
 		"loadingscreen_title_ar_shoots_2"		"Shoots"
 		"loadingscreen_title_ar_shoots_3"		"Shoots"
 		"loadingscreen_title_ar_shoots_4"		"Shoots"
+
+		"loadingscreen_title_ar_shoots_night"		"Shoots"
+		"loadingscreen_title_ar_shoots_night_1"		"Shoots"
+		"loadingscreen_title_ar_shoots_night_2"		"Shoots"
+		"loadingscreen_title_ar_shoots_night_3"		"Shoots"
+		"loadingscreen_title_ar_shoots_night_4"		"Shoots"
 
 		"GameUI_Settings_ShowLocation"					"Icônes"
 		"GameUI_Settings_ShowLocationAndName"			"Noms, icônes et santé"
@@ -976,31 +988,6 @@
 
 	"Console_Title"		"Console"
 	"Console_Submit"	"Soumettre"
-
-	"FileOpenDialog_Open"		"Ouvrir"
-	"FileOpenDialog_Save"		"Enregistrer"
-	"FileOpenDialog_Select"		"Sélectionner"
-	"FileOpenDialog_Cancel"		"Annuler"
-	"FileOpenDialog_Look_in"	"Empla. :"
-	"FileOpenDialog_File_Name"	"Nom :"
-	"FileOpenDialog_Directory_Name"	"Nom du répertoire :"
-	"FileOpenDialog_File_Type"	"Type :"
-	"FileOpenDialog_Icon"		" "
-	"FileOpenDialog_Name"		"Nom"
-	"FileOpenDialog_Type"		"Type"
-	"FileOpenDialog_Col_Name"	"Nom"
-	"FileOpenDialog_Col_Size"	"Taille"
-	"FileOpenDialog_Col_Type"	"Type"
-	"FileOpenDialog_Col_DateModified" "Date de modification"
-	"FileOpenDialog_Col_DateCreated" "Date de création"
-	"FileOpenDialog_Col_Attributes"	"Attributs"
-	"FileOpenDialog_FileType_Folder" "Dossier de fichiers"
-	"FileOpenDialog_ToolTip_Up"	"Précédent"
-	"FileOpenDialog_ToolTip_NewFolder" "Nouveau dossier"
-	"FileOpenDialog_NewFolder_InputTitle"  "Nouveau dossier"
-	"FileOpenDialog_NewFolderPrompt" "Nom :"
-	"FileOpenDialog_NewFolder_DefaultName" "Nouveau dossier"
-	"FileOpenDialog_ToolTip_OpenInExplorerButton" "Ouvrir dans l'Explorateur"
 
 	"vgui_ok"			"OK"
 	"vgui_close"			"Fermer"
@@ -2343,6 +2330,9 @@
 		"Econ_Revolving_Loot_List"				"Contient l'un des items suivants :"
 		"Econ_Revolving_Loot_List_Single"		"À l'ouverture, recevez l'un des items suivants :"
 		"Econ_Revolving_Loot_List_Rental"		"<img src='file://{images}/icons/ui/hourglass.svg' class='popup-decodable-lootlist-single-icon'/> Louez toutes les armes de ce conteneur (à l'exception de l'item extrêmement rare) pendant 7 jours "
+		"Econ_Revolving_Loot_SecureConnectionLine"	"Offre la possibilité d'acheter l'un des items suivants :"
+
+		
 		"Econ_Revolving_Loot_List_Rare_Item"	"ou un item spécial extrêmement rare !"
 		"Exceedingly_Rare_Item"					"★ Item spécial rare ★"
 
@@ -2517,6 +2507,8 @@
 		"strange"								"StatTrak™"
 		"completed"								"Achevé"
 		"highlight"								"Action décisive"
+		"volatile"								"Volatil"
+
 		// Team Usability
 		"noteam"								"Aucune équipe"
 		"terrorists"							"Terroristes"
@@ -2642,6 +2634,7 @@
 		"Attrib_MatchWins"							"Victoires en compétitif sur les cartes Opération : %s1"
 		"Attrib_HasSilencer"						"Silencieux"
 		"Attrib_HasBurstMode"						"Rafale de trois coups"
+		"Attrib_SecureConnectionLine"				"Ligne de connexion sécurisée #%s1"
 		"Attrib_SupplyCrateSeries"					"Conteneur série N°%s1"
 		"Attrib_KillEater"							"Cet item utilise la technologie StatTrak™ : certaines statistiques seront enregistrées lorsqu'il sera équipé."
 		"Attrib_ReferencedItem"						"Contient : %s1"
@@ -4105,6 +4098,14 @@
 		"CSGO_crate_musickit_masterminds2_stattrak_capsule_desc"	"Cette caisse contient de nombreux kits de musiques StatTrak™ de différents artistes."
 		"coupon_masterminds2_stattrak_musickit_capsule"				"Caisse de kits de musiques StatTrak™ des virtuoses 2"
 		
+		"CSGO_crate_musickit_deluge_capsule"	   		"Caisse de kits de musiques Deluge"
+		"CSGO_crate_musickit_deluge_capsule_desc"		"Cette caisse contient de nombreux kits de musiques de différents artistes. Elle est sortie en aout 2025."
+		"coupon_deluge_musickit_capsule"				"Caisse de kits de musiques Deluge"
+		
+		"CSGO_crate_musickit_deluge_stattrak_capsule"	    		"Caisse de kits de musiques StatTrak™ Deluge"
+		"CSGO_crate_musickit_deluge_stattrak_capsule_desc"			"Cette caisse contient de nombreux kits de musiques StatTrak™ de différents artistes. Elle est sortie en juillet 2025."
+		"coupon_deluge_stattrak_musickit_capsule"					"Caisse de kits de musiques StatTrak™ Deluge"
+		
 		//
 		// Sprays capsule vcap1
 		//
@@ -5196,7 +5197,7 @@
 		"CSGO_set_nuke_2"			"Collection Nuke 2018"
 		"CSGO_set_community_21"			"Collection Zone de danger"
 		"CSGO_set_xraymachine"		"Collection à rayons X"
-		"CSGO_set_blacksite"		"Collection Backsite"
+		"CSGO_set_blacksite"		"Collection Blacksite"
 		"CSGO_set_community_22"				"Collection Prisma"
 		"CSGO_set_community_23"			"Collection Shattered Web"
 		"CSGO_set_community_24"			"Collection CS20"
@@ -5704,7 +5705,57 @@
 		"coupon_treeadams_01"					"Kit de musiques | Tree Adams, Seventh Moon"
 		"coupon_treeadams_01_stattrak"			"Kit de musiques StatTrak™ | Tree Adams, Seventh Moon"
 		
-				//////////////////
+				"musickit_juelz_02"					"Juelz, Floorspace"
+		"musickit_juelz_02_desc"			"Besoin d'espace ? Cet énorme kit de musiques extrait du premier album de Juelz contient des synthés néo-rave, des lignes de basse brutes et des percussions robustes. Floorspace a été repensé pour Counter-Strike 2, et l'hymne du MVP, « Gossip », donne envie aux joueurs et joueuses d'installer, puis de déposer, un mur LED."
+		"coupon_juelz_02"					"Kit de musiques | Juelz, Floorspace"
+		"coupon_juelz_02_stattrak"			"Kit de musiques StatTrak™ | Juelz, Floorspace"
+		
+		"musickit_pvris_01"					"PVRIS, Evergreen"
+		"musickit_pvris_01_desc"			"La seule chose que nous aimons plus qu'un adversaire redoutable ? Une bande son d'enfer. Laissez le nouveau kit de musiques PVRIS donner de l'élan à votre équipe et perpétuez votre série de victoires."
+		"coupon_pvris_01"					"Kit de musiques | PVRIS, Evergreen"
+		"coupon_pvris_01_stattrak"			"Kit de musiques StatTrak™ | PVRIS, Evergreen"
+		
+		"musickit_selectiveresponse_01"					"Selective Response, No Love Only Pleasure"
+		"musickit_selectiveresponse_01_desc"			"Donnez libre cours à vos envies avec ce kit de musiques dynamiques et plein d'énergie de l'icône techno américaine Selective Response. Chargé et prêt à passer à l'action."
+		"coupon_selectiveresponse_01"					"Kit de musiques | Selective Response, No Love Only Pleasure"
+		"coupon_selectiveresponse_01_stattrak"			"Kit de musiques StatTrak™ | Selective Response, No Love Only Pleasure"
+		
+		"musickit_jonathanyoung_01"					"Jonathan Young, Starship Velociraptor"
+		"musickit_jonathanyoung_01_desc"			"Du space métal de pirate intergalactaire, c'est ce qui manque à votre jeu ! Montez à bord du Starship Velociraptor et laissez-vous emporter par les sons de l'album inspiré de l'anime et des jeux vidéo de Jonathan Young pour donner une nouvelle dimension à vos matchs."
+		"coupon_jonathanyoung_01"					"Kit de musiques | Jonathan Young, Starship Velociraptor"
+		"coupon_jonathanyoung_01_stattrak"			"Kit de musiques StatTrak™ | Jonathan Young, Starship Velociraptor"
+		
+		"musickit_adambeyer_01"					"Adam Beyer, Red Room"
+		"musickit_adambeyer_01_desc"			"La légende techno suédoise Adam Beyer vous apporte un kit de musique onirique pour vous aider à pendre vos ennemis en rouge."
+		"coupon_adambeyer_01"					"Kit de musiques | Adam Beyer, Red Room"
+		"coupon_adambeyer_01_stattrak"			"Kit de musiques StatTrak™ | Adam Beyer, Red Room"
+		
+		"musickit_ghost_01"					"Ghost, Skeletá"
+		"musickit_ghost_01_desc"			"MESSAGE DU CLERGÉ — Papa V Perpetua honore Counter-Strike avec un magnifique spectacle de heavy métal. Échappez aux difficultés de la vie quotidienne en pulvérisant jusqu'à l'au-delà."
+		"coupon_ghost_01"					"Kit de musiques | Ghost, Skeletá"
+		"coupon_ghost_01_stattrak"			"Kit de musiques StatTrak™ | Ghost, Skeletá"
+	
+		"musickit_killermike_01"				"Killer Mike, MICHAEL"
+		"musickit_killermike_01_desc"			"Découvrez l'album hip-hop triplement récompensé aux Grammy Awards dans l'univers de Counter-Strike. La voix de Killer Mike vous motivera à progresser et à améliorer vos compétences."
+		"coupon_killermike_01"					"Kit de musiques | Killer Mike, MICHAEL"
+		"coupon_killermike_01_stattrak"			"Kit de musiques StatTrak™ | Killer Mike, MICHAEL"
+		
+		"musickit_health_01"				"HEALTH, RAT WARS"
+		"musickit_health_01_desc"			"Découvrez HEALTH dans Counter-Strike. Prenez les armes et profitez du son métal industriel brutal et éprouvant de RAT WARS."
+		"coupon_health_01"					"Kit de musiques | HEALTH, RAT WARS"
+		"coupon_health_01_stattrak"			"Kit de musiques StatTrak™ | HEALTH, RAT WARS"
+		
+		"musickit_tigercub_01"				"Tigercub, The Perfume of Decay"
+		"musickit_tigercub_01_desc"			"Le groupe de rock britannique Tigercub propose un mix mélodique sérieux, alliant une intensité alt-rock brute à une touche sensible moderne pour créer un kit de musiques époustouflant."
+		"coupon_tigercub_01"				"Kit de musiques | Tigercub, The Perfume of Decay"
+		"coupon_tigercub_01_stattrak"		"Kit de musiques StatTrak™ | Tigercub, The Perfume of Decay"
+		
+		"musickit_jamesandthecoldgun_01"				"James and the Cold Gun, Chewing Glass"
+		"musickit_jamesandthecoldgun_01_desc"			"Le duo de rock gallois James and the Cold Gun dégage une énergie pure et sans filtre, mélangeant une attitude punk classique à une touche d'alt-rock moderne pour créer un kit de musiques torride."
+		"coupon_jamesandthecoldgun_01"					"Kit de musiques | James and the Cold Gun, Chewing Glass"
+		"coupon_jamesandthecoldgun_01_stattrak"			"Kit de musiques StatTrak™ | James and the Cold Gun, Chewing Glass"
+
+//////////////////
 
 	"csgo_thousands_separator"			" " // Note: This only supports , and .
 
@@ -25983,7 +26034,7 @@
 	"CSGO_crate_aus2025_promo_de_anubis^highlight"		"Paquet souvenir d'action décisive sur Anubis d'Austin 2025"
 	"CSGO_crate_aus2025_promo_de_dust2"		"Paquet souvenir Dust II d'Austin 2025"
 	"CSGO_crate_aus2025_promo_de_dust2^highlight"		"Paquet souvenir d'action décisive sur Dust II d'Austin 2025"
-	"CSGO_crate_aus2025_promo_de_ancient"		"Paquet souvenir Anubis d'Austin 2025"
+	"CSGO_crate_aus2025_promo_de_ancient"		"Paquet souvenir Ancient d'Austin 2025"
 	"CSGO_crate_aus2025_promo_de_ancient^highlight"		"Paquet souvenir d'action décisive sur Ancient d'Austin 2025"
 	"CSGO_crate_aus2025_promo_de_nuke"		"Paquet souvenir Nuke d'Austin 2025"
 	"CSGO_crate_aus2025_promo_de_nuke^highlight"		"Paquet souvenir d'action décisive sur Nuke d'Austin 2025"
@@ -32362,6 +32413,7 @@
 		"StoreCheckout_GameLicense_PurchasePending_PW"	"Vous avez déjà réalisé une transaction pour une licence de jeu Counter-Strike: Global Offensive. Nous essayons de vérifier l'état de votre précédente transaction avec Perfect World. Si votre solde Perfect World a été utilisé, votre achat se terminera automatiquement. Autrement, attendez une minute et réessayez."
 		"StoreCheckout_NotEnoughRoom"			"Vous n'avez pas assez d'emplacements disponibles dans votre inventaire pour pouvoir acheter autant d'objets.\nVous pouvez toujours acheter des unités de stockage dans le magasin du jeu.\nCela vous permettra de retirer les objets en surplus de votre inventaire et de les récupérer ultérieurement."
 		"StoreCheckout_TooManyItemsInCart"		"Cette transaction ne peut pas être finalisée car elle contient trop d'items. Veuillez sélectionner moins d'items et réessayer."
+		"StoreCheckout_PurchaseExpiredItemsUnavailable" "Soit votre transaction a expiré, soit cet article n'est plus disponible à la vente. Vous n'avez pas été facturé. Veuillez réessayer l'achat."
 		"StoreCheckout_ContactSupport_Dialog_Title"	"Avertissement"
 		"StoreCheckout_ContactSupport_Dialog_Btn"	"LE CONTACTER"
 
@@ -32747,6 +32799,8 @@
 		"SFUI_Map_random"			"Aléatoire"
 		"SFUI_Map_ar_baggage"		"Baggage"
 		"SFUI_Map_ar_monastery"		"Monastery"
+		"SFUI_Map_ar_shoots"		"Shoots (jour)"
+		"SFUI_Map_ar_shoots_night"	"Shoots (nuit)"
 		"SFUI_Map_ar_dizzy"			"Dizzy"
 		"SFUI_Map_ar_lunacy"		"Lunacy"
 		"SFUI_Map_de_embassy"		"Embassy"
@@ -32846,6 +32900,10 @@
 		"SFUI_Map_Tooltip_Desc_lobby_mapveto" "Au lieu de choisir une carte précise avant de lancer une partie, le mode compétitif Premier utilise un processus de sélection et de bannissement pour déterminer la carte du service actif dans laquelle la partie se déroulera ainsi que le camp qui commencera."
 
 		"SFUI_Map_de_ancient"				"Ancient"
+		"VanityMapName_de_ancient"			"Ancient (day)"
+		"SFUI_Map_de_ancient_night"			"Ancient"
+		"VanityMapName_de_ancient_night"	"Ancient (night)"
+
 		"SFUI_Map_de_engage"		"Engage"
 		"SFUI_Map_de_elysion"		"Elysion"
 		"SFUI_Map_de_guard"			"Guard"
@@ -32888,8 +32946,6 @@
 		"SFUI_Map_workshop_preview_inferno"	"Inferno (aperçu)"
 
 		"SFUI_Map_warehouse"	"Entrepôt"
-		"SFUI_Map_mainmenu"		"Menu principal (choix actuel : {s:mainmenu_bkgnd})"
-		
 		// Single player dialog
 		"SFUI_CreateSinglePlayerTitle"		"SOLO"
 		"SFUI_VariesByMap"					"Varie selon la carte"
@@ -37964,6 +38020,8 @@
 		"SFUI_Friends_Requests"				"Demandes"
 		"SFUI_Friends_Lobby_Invite"			"<b>%s1</b> vous a invité à jouer"
 		"SFUI_Friends_Lobbies_Pop_Up_Title"				"Salles d'attente %s1"
+		"SFUI_Friends_Unknown"				"Inconnu"
+
 		"SFUI_Change_Permissions"			"CHANGER LES AUTORISATIONS"
 		"SFUI_Change_GameSettingsTitle"		"Paramètres de la partie"
 		"SFUI_Client_PermissionsTitle"		"Autorisations"
@@ -42149,6 +42207,8 @@
 		"inv_context_usegift"				"Offrir"
 		"inv_context_no_valid_actions"		"Aucune action disponible"
 		"inv_context_look_inside"			"Prévisualiser la caisse"
+		"inv_context_inspect_contents"		"Examiner la collection"
+		"inv_context_secure_connection_line" "Contacter le trafiquant d'armes"
 		"inv_context_xray"					"Utiliser le scanner à rayons X"
 		"inv_context_goto_xray"				"Accéder au scanner à rayons X"
 		"inv_context_unequip"				"Déséquiper"

@@ -989,31 +989,6 @@
 	"Console_Title"		"Konsoll"
 	"Console_Submit"	"Send"
 
-	"FileOpenDialog_Open"		"Åpne"
-	"FileOpenDialog_Save"		"Lagre"
-	"FileOpenDialog_Select"		"Velg"
-	"FileOpenDialog_Cancel"		"Avbryt"
-	"FileOpenDialog_Look_in"	"Søk i:"
-	"FileOpenDialog_File_Name"	"Filnavn:"
-	"FileOpenDialog_Directory_Name"	"Mappenavn:"
-	"FileOpenDialog_File_Type"	"Filtype:"
-	"FileOpenDialog_Icon"		" "
-	"FileOpenDialog_Name"		"Navn"
-	"FileOpenDialog_Type"		"Type"
-	"FileOpenDialog_Col_Name"	"Navn"
-	"FileOpenDialog_Col_Size"	"Størrelse"
-	"FileOpenDialog_Col_Type"	"Type"
-	"FileOpenDialog_Col_DateModified" "Endret dato"
-	"FileOpenDialog_Col_DateCreated" "Opprettet dato"
-	"FileOpenDialog_Col_Attributes"	"Egenskaper"
-	"FileOpenDialog_FileType_Folder" "Filmappe"
-	"FileOpenDialog_ToolTip_Up"	"Opp"
-	"FileOpenDialog_ToolTip_NewFolder" "Ny mappe"
-	"FileOpenDialog_NewFolder_InputTitle"  "Ny mappe"
-	"FileOpenDialog_NewFolderPrompt" "Navn:"
-	"FileOpenDialog_NewFolder_DefaultName" "Ny mappe"
-	"FileOpenDialog_ToolTip_OpenInExplorerButton" "Åpne i Utforsker"
-
 	"vgui_ok"			"OK"
 	"vgui_close"			"Lukk"
 	"vgui_Cancel"			"Avbryt"
@@ -34026,7 +34001,7 @@
 		"SFUI_Map_workshop_preview_inferno"	"Inferno – forhåndsvisning"
 
 		"SFUI_Map_warehouse"	"Warehouse"
-		"SFUI_Map_mainmenu"		"Hovedmeny (for øyeblikket {s:mainmenu_bkgnd})"
+		"SFUI_Map_mainmenu"		"Hovedmeny – {s:mainmenu_bkgnd}"
 		
 		// Single player dialog
 		"SFUI_CreateSinglePlayerTitle"		"ENKELTSPILLER"
@@ -46384,6 +46359,29 @@
 		"quest_11011_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> – vinn en runde.#|#<b>{s:gamemode}: {s:location}</b> – vinn runder."
 		"quest_11011_var_ingame:p{mission-points}"		"Vinn en runde#|#Vinn runder"
 		
+		"quest_11012_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> – vinn en runde.#|#<b>{s:gamemode}: {s:location}</b> – vinn runder."
+		"quest_11012_var_ingame:p{mission-points}"		"Vinn en runde#|#Vinn runder"
+		
+		"quest_11013_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> – vinn en runde.#|#<b>{s:gamemode}: {s:location}</b> – vinn runder."
+		"quest_11013_var_ingame:p{mission-points}"		"Vinn en runde#|#Vinn runder"
+		
+		"quest_11014_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> – vinn en runde.#|#<b>{s:gamemode}: {s:location}</b> – vinn runder."
+		"quest_11014_var_ingame:p{mission-points}"		"Vinn en runde#|#Vinn runder"
+		
+		"quest_11015_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> – vinn en runde.#|#<b>{s:gamemode}: {s:location}</b> – vinn runder."
+		"quest_11015_var_ingame:p{mission-points}"		"Vinn en runde#|#Vinn runder"
+
+// crow_mask_48113_comment
+// crow_mask_48114_comment
+}
+
+
+
+
+}
+
+
+
 		"quest_11012_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> – vinn en runde.#|#<b>{s:gamemode}: {s:location}</b> – vinn runder."
 		"quest_11012_var_ingame:p{mission-points}"		"Vinn en runde#|#Vinn runder"
 		

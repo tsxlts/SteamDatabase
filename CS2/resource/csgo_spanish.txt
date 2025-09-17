@@ -990,31 +990,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 	"Console_Title"		"Consola"
 	"Console_Submit"	"Enviar"
 
-	"FileOpenDialog_Open"		"Abrir"
-	"FileOpenDialog_Save"		"Guardar"
-	"FileOpenDialog_Select"		"Seleccionar"
-	"FileOpenDialog_Cancel"		"Cancelar"
-	"FileOpenDialog_Look_in"	"Buscar en:"
-	"FileOpenDialog_File_Name"	"Nombre de archivo:"
-	"FileOpenDialog_Directory_Name"	"Nombre del directorio:"
-	"FileOpenDialog_File_Type"	"Tipo de archivo:"
-	"FileOpenDialog_Icon"		" "
-	"FileOpenDialog_Name"		"Nombre"
-	"FileOpenDialog_Type"		"Tipo"
-	"FileOpenDialog_Col_Name"	"Nombre"
-	"FileOpenDialog_Col_Size"	"Tamaño"
-	"FileOpenDialog_Col_Type"	"Tipo"
-	"FileOpenDialog_Col_DateModified" "Fecha de modificación"
-	"FileOpenDialog_Col_DateCreated" "Fecha de creación"
-	"FileOpenDialog_Col_Attributes"	"Atributos"
-	"FileOpenDialog_FileType_Folder" "Carpeta de archivos"
-	"FileOpenDialog_ToolTip_Up"	"Arriba"
-	"FileOpenDialog_ToolTip_NewFolder" "Nueva carpeta"
-	"FileOpenDialog_NewFolder_InputTitle"  "Nueva carpeta"
-	"FileOpenDialog_NewFolderPrompt" "Nombre:"
-	"FileOpenDialog_NewFolder_DefaultName" "Nueva carpeta"
-	"FileOpenDialog_ToolTip_OpenInExplorerButton" "Abrir en el explorador"
-
 	"vgui_ok"			"Aceptar"
 	"vgui_close"			"Cerrar"
 	"vgui_Cancel"			"Cancelar"
@@ -1753,7 +1728,7 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"SFUI_WPNHUD_knife_ursus"	"Cuchillo ursus"
 		"SFUI_WPNHUD_knife_gypsy_jackknife" "Navaja"
 		"SFUI_WPNHUD_knife_outdoor" "Cuchillo nómada"
-		"SFUI_WPNHUD_knife_widowmaker" "Cuchillo talón"
+		"SFUI_WPNHUD_knife_widowmaker" "Cuchillo Garra"
 		"SFUI_WPNHUD_knife_stiletto" "Estilete"
 		"SFUI_WPNHUD_knife_skeleton" "Cuchillo esqueletizado"
 		"SFUI_WPNHUD_knife_kukri" "Cuchillo kukri"
@@ -32973,7 +32948,7 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"SFUI_Map_workshop_preview_inferno"	"Vista previa de Inferno"
 
 		"SFUI_Map_warehouse"	"Almacén"
-		"SFUI_Map_mainmenu"		"Menú principal (actualmente {s:mainmenu_bkgnd})"
+		"SFUI_Map_mainmenu"		"Menú principal - {s:mainmenu_bkgnd}"
 		
 		// Single player dialog
 		"SFUI_CreateSinglePlayerTitle"		"UN JUGADOR"
@@ -45265,6 +45240,28 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"quest_11011_var_ingame:p{mission-points}"		"Gana una ronda.#|#Gana varias rondas."
 		
 		"quest_11012_var_desc:p{mission-points}"	 	"Gana una ronda en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>.#|#Gana varias rondas en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>."
+		"quest_11012_var_ingame:p{mission-points}"		"Gana una ronda.#|#Gana varias rondas."
+		
+		"quest_11013_var_desc:p{mission-points}"	 	"Gana una ronda en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>.#|#Gana varias rondas en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>."
+		"quest_11013_var_ingame:p{mission-points}"		"Gana una ronda.#|#Gana varias rondas."
+		
+		"quest_11014_var_desc:p{mission-points}"	 	"Gana una ronda en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>.#|#Gana varias rondas en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>."
+		"quest_11014_var_ingame:p{mission-points}"		"Gana una ronda.#|#Gana varias rondas."
+		
+		"quest_11015_var_desc:p{mission-points}"	 	"Gana una ronda en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>.#|#Gana varias rondas en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>."
+		"quest_11015_var_ingame:p{mission-points}"		"Gana una ronda.#|#Gana varias rondas."
+
+// crow_mask_48113_comment
+// crow_mask_48114_comment
+}
+
+
+
+
+}
+
+
+jugando en el modo <b>{s:gamemode}</b>."
 		"quest_11012_var_ingame:p{mission-points}"		"Gana una ronda.#|#Gana varias rondas."
 		
 		"quest_11013_var_desc:p{mission-points}"	 	"Gana una ronda en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>.#|#Gana varias rondas en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>."

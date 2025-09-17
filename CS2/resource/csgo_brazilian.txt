@@ -511,7 +511,7 @@
 		"loadingscreen_title_de_overpass"		"Overpass"
 		"loadingscreen_title_de_overpass_1"		"Alvo de explosão A"
 		"loadingscreen_title_de_overpass_2"		"Alvo de explosão B"
-		"loadingscreen_title_de_overpass_3"		"Conector"
+		"loadingscreen_title_de_overpass_3"		"Ligação"
 		"loadingscreen_title_de_overpass_4"		"Balão"
 		"loadingscreen_title_de_overpass_5"		"Praça inferior"
 
@@ -988,31 +988,6 @@
 
 	"Console_Title"		"Console"
 	"Console_Submit"	"Enviar"
-
-	"FileOpenDialog_Open"		"Abrir"
-	"FileOpenDialog_Save"		"Salvar"
-	"FileOpenDialog_Select"		"Selecionar"
-	"FileOpenDialog_Cancel"		"Cancelar"
-	"FileOpenDialog_Look_in"	"Procurar em:"
-	"FileOpenDialog_File_Name"	"Nome:"
-	"FileOpenDialog_Directory_Name"	"Nome do diretório:"
-	"FileOpenDialog_File_Type"	"Tipo:"
-	"FileOpenDialog_Icon"		" "
-	"FileOpenDialog_Name"		"Nome"
-	"FileOpenDialog_Type"		"Tipo"
-	"FileOpenDialog_Col_Name"	"Nome"
-	"FileOpenDialog_Col_Size"	"Tamanho"
-	"FileOpenDialog_Col_Type"	"Tipo"
-	"FileOpenDialog_Col_DateModified" "Data de modificação"
-	"FileOpenDialog_Col_DateCreated" "Data de criação"
-	"FileOpenDialog_Col_Attributes"	"Atributos"
-	"FileOpenDialog_FileType_Folder" "Pasta"
-	"FileOpenDialog_ToolTip_Up"	"Pasta acima"
-	"FileOpenDialog_ToolTip_NewFolder" "Nova pasta"
-	"FileOpenDialog_NewFolder_InputTitle"  "Nova pasta"
-	"FileOpenDialog_NewFolderPrompt" "Nome:"
-	"FileOpenDialog_NewFolder_DefaultName" "Nova pasta"
-	"FileOpenDialog_ToolTip_OpenInExplorerButton" "Abrir no Explorer"
 
 	"vgui_ok"			"OK"
 	"vgui_close"			"Fechar"
@@ -1517,7 +1492,7 @@
 		"PalaceTunnel"		"Túnel do palácio"
 		"Shop"				"Loja"
 		"Scaffolding"		"Andaime"
-		"Connector"			"Conector"
+		"Connector"			"Ligação"
 		"TicketBooth"			"Bilheteria"
 		"Jungle"			"Selva"
 		//Overpass
@@ -32975,7 +32950,7 @@
 		"SFUI_Map_workshop_preview_inferno"	"Inferno (Prévia)"
 
 		"SFUI_Map_warehouse"	"Warehouse"
-		"SFUI_Map_mainmenu"		"Menu principal (atual: {s:mainmenu_bkgnd})"
+		"SFUI_Map_mainmenu"		"Menu principal — {s:mainmenu_bkgnd}"
 		
 		// Single player dialog
 		"SFUI_CreateSinglePlayerTitle"		"UM JOGADOR"
@@ -43707,7 +43682,7 @@
 
 
 
-		"scoreboard_cyclestats_button_tooltip"			"Circular pelas estatísticas"
+		"scoreboard_cyclestats_button_tooltip"			"Alternar estatísticas"
 		"scoreboard_mutevoice_button_tooltip"			"Desativar comunicação por voz"
 		"scoreboard_blockugc_button_tooltip"			"Ocultar nomes e avatares de desconhecidos"
 
@@ -45266,6 +45241,28 @@
 		"quest_11011_var_ingame:p{mission-points}"		"Vença uma rodada.#|#Vença rodadas."
 		
 		"quest_11012_var_desc:p{mission-points}"	 	"Vença uma rodada no modo <b>{s:gamemode} ({s:location})</b>.#|#Vença rodadas em partidas do modo <b>{s:gamemode} ({s:location})</b>."
+		"quest_11012_var_ingame:p{mission-points}"		"Vença uma rodada.#|#Vença rodadas."
+		
+		"quest_11013_var_desc:p{mission-points}"	 	"Vença uma rodada no modo <b>{s:gamemode} ({s:location})</b>.#|#Vença rodadas em partidas do modo <b>{s:gamemode} ({s:location})</b>."
+		"quest_11013_var_ingame:p{mission-points}"		"Vença uma rodada.#|#Vença rodadas."
+		
+		"quest_11014_var_desc:p{mission-points}"	 	"Vença uma rodada no modo <b>{s:gamemode} ({s:location})</b>.#|#Vença rodadas em partidas do modo <b>{s:gamemode} ({s:location})</b>."
+		"quest_11014_var_ingame:p{mission-points}"		"Vença uma rodada.#|#Vença rodadas."
+		
+		"quest_11015_var_desc:p{mission-points}"	 	"Vença uma rodada no modo <b>{s:gamemode} ({s:location})</b>.#|#Vença rodadas em partidas do modo <b>{s:gamemode} ({s:location})</b>."
+		"quest_11015_var_ingame:p{mission-points}"		"Vença uma rodada.#|#Vença rodadas."
+
+// crow_mask_48113_comment
+// crow_mask_48114_comment
+}
+
+
+
+
+}
+
+
+odadas em partidas do modo <b>{s:gamemode} ({s:location})</b>."
 		"quest_11012_var_ingame:p{mission-points}"		"Vença uma rodada.#|#Vença rodadas."
 		
 		"quest_11013_var_desc:p{mission-points}"	 	"Vença uma rodada no modo <b>{s:gamemode} ({s:location})</b>.#|#Vença rodadas em partidas do modo <b>{s:gamemode} ({s:location})</b>."

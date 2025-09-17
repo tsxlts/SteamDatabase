@@ -989,31 +989,6 @@
 	"Console_Title"		"Konsole"
 	"Console_Submit"	"Senden"
 
-	"FileOpenDialog_Open"		"Öffnen"
-	"FileOpenDialog_Save"		"Speichern"
-	"FileOpenDialog_Select"		"Auswählen"
-	"FileOpenDialog_Cancel"		"Abbrechen"
-	"FileOpenDialog_Look_in"	"Suchen in:"
-	"FileOpenDialog_File_Name"	"Dateiname:"
-	"FileOpenDialog_Directory_Name"	"Verzeichnisname:"
-	"FileOpenDialog_File_Type"	"Dateityp:"
-	"FileOpenDialog_Icon"		" "
-	"FileOpenDialog_Name"		"Name"
-	"FileOpenDialog_Type"		"Typ"
-	"FileOpenDialog_Col_Name"	"Name"
-	"FileOpenDialog_Col_Size"	"Größe"
-	"FileOpenDialog_Col_Type"	"Typ"
-	"FileOpenDialog_Col_DateModified" "Änderungsdatum"
-	"FileOpenDialog_Col_DateCreated" "Erstellungsdatum"
-	"FileOpenDialog_Col_Attributes"	"Attribute"
-	"FileOpenDialog_FileType_Folder" "Dateiordner"
-	"FileOpenDialog_ToolTip_Up"	"Nach oben"
-	"FileOpenDialog_ToolTip_NewFolder" "Neuer Ordner"
-	"FileOpenDialog_NewFolder_InputTitle"  "Neuer Ordner"
-	"FileOpenDialog_NewFolderPrompt" "Name:"
-	"FileOpenDialog_NewFolder_DefaultName" "Neuer Ordner:"
-	"FileOpenDialog_ToolTip_OpenInExplorerButton" "Im Explorer öffnen"
-
 	"vgui_ok"			"OK"
 	"vgui_close"			"Schließen"
 	"vgui_Cancel"			"Abbrechen"
@@ -32970,7 +32945,7 @@
 		"SFUI_Map_workshop_preview_inferno"	"Vorschau: Inferno"
 
 		"SFUI_Map_warehouse"	"Lagerhaus"
-		"SFUI_Map_mainmenu"		"Hauptmenü (aktuell: {s:mainmenu_bkgnd})"
+		"SFUI_Map_mainmenu"		"Hauptmenü – {s:mainmenu_bkgnd}"
 		
 		// Single player dialog
 		"SFUI_CreateSinglePlayerTitle"		"EINZELSPIELER"
@@ -45265,6 +45240,25 @@
 		"quest_11012_var_ingame:p{mission-points}"		"Gewinnen Sie eine Runde.#|#Gewinnen Sie mehrere Runden."
 		
 		"quest_11013_var_desc:p{mission-points}"	 	"Gewinnen Sie eine Runde im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.#|#Gewinnen Sie mehrere Runden im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>."
+		"quest_11013_var_ingame:p{mission-points}"		"Gewinnen Sie eine Runde.#|#Gewinnen Sie mehrere Runden."
+		
+		"quest_11014_var_desc:p{mission-points}"	 	"Gewinnen Sie eine Runde im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.#|#Gewinnen Sie mehrere Runden im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>."
+		"quest_11014_var_ingame:p{mission-points}"		"Gewinnen Sie eine Runde.#|#Gewinnen Sie mehrere Runden."
+		
+		"quest_11015_var_desc:p{mission-points}"	 	"Gewinnen Sie eine Runde im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.#|#Gewinnen Sie mehrere Runden im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>."
+		"quest_11015_var_ingame:p{mission-points}"		"Gewinnen Sie eine Runde.#|#Gewinnen Sie mehrere Runden."
+
+// crow_mask_48113_comment
+// crow_mask_48114_comment
+}
+
+
+
+
+}
+
+
+	"quest_11013_var_desc:p{mission-points}"	 	"Gewinnen Sie eine Runde im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.#|#Gewinnen Sie mehrere Runden im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>."
 		"quest_11013_var_ingame:p{mission-points}"		"Gewinnen Sie eine Runde.#|#Gewinnen Sie mehrere Runden."
 		
 		"quest_11014_var_desc:p{mission-points}"	 	"Gewinnen Sie eine Runde im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.#|#Gewinnen Sie mehrere Runden im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>."

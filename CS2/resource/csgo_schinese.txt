@@ -989,31 +989,6 @@
 	"Console_Title"		"控制台"
 	"Console_Submit"	"提交"
 
-	"FileOpenDialog_Open"		"打开"
-	"FileOpenDialog_Save"		"保存"
-	"FileOpenDialog_Select"		"选择"
-	"FileOpenDialog_Cancel"		"取消"
-	"FileOpenDialog_Look_in"	"查找："
-	"FileOpenDialog_File_Name"	"文件名："
-	"FileOpenDialog_Directory_Name"	"路径名："
-	"FileOpenDialog_File_Type"	"文件类型："
-	"FileOpenDialog_Icon"		" "
-	"FileOpenDialog_Name"		"名称"
-	"FileOpenDialog_Type"		"类型"
-	"FileOpenDialog_Col_Name"	"名称"
-	"FileOpenDialog_Col_Size"	"大小"
-	"FileOpenDialog_Col_Type"	"类型"
-	"FileOpenDialog_Col_DateModified" "修改日期"
-	"FileOpenDialog_Col_DateCreated" "创建日期"
-	"FileOpenDialog_Col_Attributes"	"属性"
-	"FileOpenDialog_FileType_Folder" "文件夹"
-	"FileOpenDialog_ToolTip_Up"	"向上"
-	"FileOpenDialog_ToolTip_NewFolder" "新建文件夹"
-	"FileOpenDialog_NewFolder_InputTitle"  "新建文件夹"
-	"FileOpenDialog_NewFolderPrompt" "名称："
-	"FileOpenDialog_NewFolder_DefaultName" "新建文件夹"
-	"FileOpenDialog_ToolTip_OpenInExplorerButton" "在资源管理器中打开"
-
 	"vgui_ok"			"确定"
 	"vgui_close"			"关闭"
 	"vgui_Cancel"			"取消"
@@ -32994,7 +32969,7 @@
 		"SFUI_Map_workshop_preview_inferno"	"炼狱小镇预览"
 
 		"SFUI_Map_warehouse"	"仓库"
-		"SFUI_Map_mainmenu"		"主菜单（当前{s:mainmenu_bkgnd}）"
+		"SFUI_Map_mainmenu"		"主菜单 - {s:mainmenu_bkgnd}"
 		
 		// Single player dialog
 		"SFUI_CreateSinglePlayerTitle"		"单人游戏"
@@ -35610,7 +35585,7 @@
 		"SFUI_PlayerDetails_Abusive"				"恶意个人资料或言语骚扰"
 		"SFUI_PlayerDetails_Griefing"				"骚扰"
 		"SFUI_PlayerDetails_SpeedHacking"			"其他作弊"
-		"SFUI_PlayerDetails_WallHacking"			"穿墙作弊"
+		"SFUI_PlayerDetails_WallHacking"			"透视作弊"
 		"SFUI_PlayerDetails_AimHacking"				"自瞄作弊"
 		"SFUI_PlayerDetails_PoorPerf"				"服务器表现差劲"
 		"SFUI_PlayerDetails_AbusiveModels"			"不当内容"
@@ -37144,8 +37119,8 @@
 		"SFUI_Settings_HudTelemetry_Ping" "显示延迟"
 		"SFUI_Settings_HudTelemetry_Ping_Info" "显示与服务器的往返延迟（以毫秒为单位）。"
 
-		"SFUI_Settings_HudTelemetry_NetworkMissedTicks" "显示网络问题（由于丢失或抖动而错过的ticks）"
-		"SFUI_Settings_HudTelemetry_NetworkMissedTicks_Info" "显示由于网络丢失或延迟交付，在需要时无法获取的ticks百分比。\n每个方向的比率（从客户端到服务器和从服务器到客户端）都会显示。\n\n网络错误传输通常可以自动修正，错过的ticks可以通过额外的缓冲来填补。这个数字仅统计由于网络错误传输而未被修正的ticks。"
+		"SFUI_Settings_HudTelemetry_NetworkMissedTicks" "显示网络问题（由于丢包或抖动而错过的ticks）"
+		"SFUI_Settings_HudTelemetry_NetworkMissedTicks_Info" "显示由于网络丢包或延迟交付，在需要时无法获取的ticks百分比。\n每个方向的比率（从客户端到服务器和从服务器到客户端）都会显示。\n\n网络错误传输通常可以自动修正，错过的ticks可以通过额外的缓冲来填补。这个数字仅统计由于网络错误传输而未被修正的ticks。"
 
 		"SFUI_Settings_HudTelemetry_NetworkMissedTicksPoor" "网络tick丢失率警告阈值"
 		"SFUI_Settings_HudTelemetry_NetworkMissedTicksPoor_Info" "当由于网络错误传输而错过的ticks百分比超过此值时，网络条件被视为“差”。"
@@ -45286,6 +45261,28 @@
 		"quest_11011_var_ingame:p{mission-points}"		"赢得 1 个回合 #|# 赢得多个回合"
 		
 		"quest_11012_var_desc:p{mission-points}"	 	"在<b>{s:gamemode}: {s:location}</b>中赢得 1 个回合。#|# 在<b>{s:gamemode}: {s:location}</b>中赢得多个回合。"
+		"quest_11012_var_ingame:p{mission-points}"		"赢得 1 个回合 #|# 赢得多个回合"
+		
+		"quest_11013_var_desc:p{mission-points}"	 	"在<b>{s:gamemode}: {s:location}</b>中赢得 1 个回合。#|# 在<b>{s:gamemode}: {s:location}</b>中赢得多个回合。"
+		"quest_11013_var_ingame:p{mission-points}"		"赢得 1 个回合 #|# 赢得多个回合"
+		
+		"quest_11014_var_desc:p{mission-points}"	 	"在<b>{s:gamemode}: {s:location}</b>中赢得 1 个回合。#|# 在<b>{s:gamemode}: {s:location}</b>中赢得多个回合。"
+		"quest_11014_var_ingame:p{mission-points}"		"赢得 1 个回合 #|# 赢得多个回合"
+		
+		"quest_11015_var_desc:p{mission-points}"	 	"在<b>{s:gamemode}: {s:location}</b>中赢得 1 个回合。#|# 在<b>{s:gamemode}: {s:location}</b>中赢得多个回合。"
+		"quest_11015_var_ingame:p{mission-points}"		"赢得 1 个回合 #|# 赢得多个回合"
+
+// crow_mask_48113_comment
+// crow_mask_48114_comment
+}
+
+
+
+
+}
+
+
+</b>中赢得 1 个回合。#|# 在<b>{s:gamemode}: {s:location}</b>中赢得多个回合。"
 		"quest_11012_var_ingame:p{mission-points}"		"赢得 1 个回合 #|# 赢得多个回合"
 		
 		"quest_11013_var_desc:p{mission-points}"	 	"在<b>{s:gamemode}: {s:location}</b>中赢得 1 个回合。#|# 在<b>{s:gamemode}: {s:location}</b>中赢得多个回合。"

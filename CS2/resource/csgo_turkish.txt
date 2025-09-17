@@ -989,31 +989,6 @@
 	"Console_Title"		"Konsol"
 	"Console_Submit"	"Gönder"
 
-	"FileOpenDialog_Open"		"Aç"
-	"FileOpenDialog_Save"		"Kaydet"
-	"FileOpenDialog_Select"		"Seç"
-	"FileOpenDialog_Cancel"		"İptal"
-	"FileOpenDialog_Look_in"	"İçine bak:"
-	"FileOpenDialog_File_Name"	"Dosya adı:"
-	"FileOpenDialog_Directory_Name"	"Klasör adı:"
-	"FileOpenDialog_File_Type"	"Dosya türü:"
-	"FileOpenDialog_Icon"		" "
-	"FileOpenDialog_Name"		"İsim"
-	"FileOpenDialog_Type"		"Tür"
-	"FileOpenDialog_Col_Name"	"İsim"
-	"FileOpenDialog_Col_Size"	"Boyut"
-	"FileOpenDialog_Col_Type"	"Tür"
-	"FileOpenDialog_Col_DateModified" "Değiştirilme Tarihi"
-	"FileOpenDialog_Col_DateCreated" "Oluşturulma Tarihi"
-	"FileOpenDialog_Col_Attributes"	"Özellikler"
-	"FileOpenDialog_FileType_Folder" "Dosya Klasörü"
-	"FileOpenDialog_ToolTip_Up"	"Yukarı"
-	"FileOpenDialog_ToolTip_NewFolder" "Yeni Klasör"
-	"FileOpenDialog_NewFolder_InputTitle"  "Yeni Klasör"
-	"FileOpenDialog_NewFolderPrompt" "İsim:"
-	"FileOpenDialog_NewFolder_DefaultName" "Yeni Klasör"
-	"FileOpenDialog_ToolTip_OpenInExplorerButton" "Gezginde Aç"
-
 	"vgui_ok"			"TAMAM"
 	"vgui_close"			"Kapat"
 	"vgui_Cancel"			"İptal"
@@ -2539,6 +2514,8 @@ VIP'ye bu bölgelerden birine ulaşana kadar koruma sağla."
 		"strange"								"StatTrak™"
 		"completed"								"Tamamlandı"
 		"highlight"								"Önemli An"
+		"volatile"								"Değişken"
+
 		// Team Usability
 		"noteam"								"Takım Dışı"
 		"terrorists"							"Teröristler"
@@ -5741,7 +5718,7 @@ VIP'ye bu bölgelerden birine ulaşana kadar koruma sağla."
 		"coupon_juelz_02_stattrak"			"StatTrak™ Müzik Kiti | Juelz, Floorspace"
 		
 		"musickit_pvris_01"					"PVRIS, Evergreen"
-		"musickit_pvris_01_desc"			"İyi bir düşmandan daha çok sevdiğimiz tek şey nedir? İyi bir müzik. Yeni PVRIS müzik kitinin siz ive takımınızı heyecanlandırmasına ve zafer serinizi bozulmadan sürdürmesine izin verin."
+		"musickit_pvris_01_desc"			"İyi bir düşmandan daha çok sevdiğimiz tek şey nedir? İyi müzik. PVRIS'in yeni müzik kitiyle takımınızı motive edebilir ve zafer serinizi sürdürebilirsiniz."
 		"coupon_pvris_01"					"Müzik Kiti | PVRIS, Evergreen"
 		"coupon_pvris_01_stattrak"			"StatTrak™ Müzik Kiti | PVRIS, Evergreen"
 		
@@ -5751,12 +5728,12 @@ VIP'ye bu bölgelerden birine ulaşana kadar koruma sağla."
 		"coupon_selectiveresponse_01_stattrak"			"StatTrak™ Müzik Kiti | Selective Response, No Love Only Pleasure"
 		
 		"musickit_jonathanyoung_01"					"Jonathan Young, Starship Velociraptor"
-		"musickit_jonathanyoung_01_desc"			"Space-Pirate Power Metal oyununuzun eksik olduğu şeydir. Starship Velociraptor ile bir gezintiye çıkın ve Jonathan Young'ın anime ve video oyunundan ilham alan albümünün seslerinin maçlarınızı başka bir seviyeye getirmesine izin verin."
+		"musickit_jonathanyoung_01_desc"			"Uzay korsanı power metali, oyununuzda eksik olan şeydi. Starship Velociraptor ile bir gezintiye çıkın ve Jonathan Young'ın anime ve video oyunlarından ilham alan albümünün maçlarınızı başka bir seviyeye taşımasına izin verin."
 		"coupon_jonathanyoung_01"					"Müzik Kiti | Jonathan Young, Starship Velociraptor"
 		"coupon_jonathanyoung_01_stattrak"			"StatTrak™ Müzik Kiti | Jonathan Young, Starship Velociraptor"
 		
 		"musickit_adambeyer_01"					"Adam Beyer, Red Room"
-		"musickit_adambeyer_01_desc"			"İsveçli tekno efsanesi Adam Beyer, düşmanlarınızı kırmızıya boyamanıza yardımcı olmak için size rüya gibi bir müzik kitini sunuyor."
+		"musickit_adambeyer_01_desc"			"İsveçli tekno efsanesi Adam Beyer, düşmanlarınızı kırmızıya boyamanıza yardımcı olmak için size rüya gibi bir müzik kiti sunuyor."
 		"coupon_adambeyer_01"					"Müzik Kiti | Adam Beyer, Red Room"
 		"coupon_adambeyer_01_stattrak"			"StatTrak™ Müzik Kiti | Adam Beyer, Red Room"
 		
@@ -5766,17 +5743,17 @@ VIP'ye bu bölgelerden birine ulaşana kadar koruma sağla."
 		"coupon_ghost_01_stattrak"			"StatTrak™ Müzik Kiti | Ghost, Skeletá"
 	
 		"musickit_killermike_01"				"Killer Mike, MICHAEL"
-		"musickit_killermike_01_desc"			"Counter-Strike dünyasında 3x GRAMMY Ödüllü hip-hop albümünün tadını çıkarın. Killer Mike'ın sesi, rütbelerde yükselirken motive olmanıza ve becerilerinizi geliştirmenize yardımcı olacak."
+		"musickit_killermike_01_desc"			"Counter-Strike'ta üç kez GRAMMY Ödülü kazanan hip-hop albümünün tadını çıkarın. Sıralamanızı yükseltip becerilerinizi geliştirirken Killer Mike'ın sesi sizi motive edecek."
 		"coupon_killermike_01"					"Müzik Kiti | Killer Mike, MICHAEL"
 		"coupon_killermike_01_stattrak"			"StatTrak™ Müzik Kiti | Killer Mike, MICHAEL"
 		
 		"musickit_health_01"				"HEALTH, RAT WARS"
-		"musickit_health_01_desc"			"Counter-Strike\"da HEALTH'i deneyimleyin. Silahlarınızı alın ve RAT WARS'ın acımasız ve cezalandırıcı endüstriyel metal sesinin tadını çıkarın."
+		"musickit_health_01_desc"			"Counter-Strike'da HEALTH'i deneyimleyin. Silahlarınızı alın ve RAT WARS'ın acımasız ve cezalandırıcı endüstriyel metal sesinin tadını çıkarın."
 		"coupon_health_01"					"Müzik Kiti | HEALTH, RAT WARS"
 		"coupon_health_01_stattrak"			"StatTrak™ Müzik Kiti | HEALTH, RAT WARS"
 		
 		"musickit_tigercub_01"				"Tigercub, The Perfume of Decay"
-		"musickit_tigercub_01_desc"			"İngiliz rock ekibi Tigercub, ham alt-rock yoğunluğunu karmakarışık bir modern yön ile birleştirerek ezici bir müzik kiti oluşturuyor ve sert bir melodik vuruş sunuyor."
+		"musickit_tigercub_01_desc"			"İngiliz rock grubu Tigercub, alternatif rock'ın ham yoğunluğunu karanlık ve modern bir dokunuşla birleştirerek güçlü ve melodik bir ses yaratıyor ve ortaya muhteşem bir müzik kiti çıkıyor."
 		"coupon_tigercub_01"				"Müzik Kiti | Tigercub, The Perfume of Decay"
 		"coupon_tigercub_01_stattrak"		"StatTrak™ Müzik Kiti | Tigercub, The Perfume of Decay"
 		
@@ -32986,7 +32963,7 @@ Bu çıkartma, forZe eSports için Berlin 2019'da oynayan profesyonel oyuncu And
 		"SFUI_Map_workshop_preview_inferno"	"Inferno Ön İzlemesi"
 
 		"SFUI_Map_warehouse"	"Warehouse"
-		"SFUI_Map_mainmenu"		"Ana Menü (şu anda {s:mainmenu_bkgnd})"
+		"SFUI_Map_mainmenu"		"Ana Menü - {s:mainmenu_bkgnd}"
 		
 		// Single player dialog
 		"SFUI_CreateSinglePlayerTitle"		"TEK OYUNCULU"
@@ -45287,6 +45264,28 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"quest_11011_var_ingame:p{mission-points}"		"Bir raunt kazan.#|#Birden fazla raunt kazan."
 		
 		"quest_11012_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> oynarken bir raunt kazan.#|#<b>{s:gamemode}: {s:location}</b> oynarken birden fazla raunt kazan."
+		"quest_11012_var_ingame:p{mission-points}"		"Bir raunt kazan.#|#Birden fazla raunt kazan."
+		
+		"quest_11013_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> oynarken bir raunt kazan.#|#<b>{s:gamemode}: {s:location}</b> oynarken birden fazla raunt kazan."
+		"quest_11013_var_ingame:p{mission-points}"		"Bir raunt kazan.#|#Birden fazla raunt kazan."
+		
+		"quest_11014_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> oynarken bir raunt kazan.#|#<b>{s:gamemode}: {s:location}</b> oynarken birden fazla raunt kazan."
+		"quest_11014_var_ingame:p{mission-points}"		"Bir raunt kazan.#|#Birden fazla raunt kazan."
+		
+		"quest_11015_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> oynarken bir raunt kazan.#|#<b>{s:gamemode}: {s:location}</b> oynarken birden fazla raunt kazan."
+		"quest_11015_var_ingame:p{mission-points}"		"Bir raunt kazan.#|#Birden fazla raunt kazan."
+
+// crow_mask_48113_comment
+// crow_mask_48114_comment
+}
+
+
+
+
+}
+
+
+ocation}</b> oynarken birden fazla raunt kazan."
 		"quest_11012_var_ingame:p{mission-points}"		"Bir raunt kazan.#|#Birden fazla raunt kazan."
 		
 		"quest_11013_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> oynarken bir raunt kazan.#|#<b>{s:gamemode}: {s:location}</b> oynarken birden fazla raunt kazan."

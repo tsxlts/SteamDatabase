@@ -989,31 +989,6 @@
 	"Console_Title"		"Consola"
 	"Console_Submit"	"Enviar"
 
-	"FileOpenDialog_Open"		"Abrir"
-	"FileOpenDialog_Save"		"Guardar"
-	"FileOpenDialog_Select"		"Selecionar"
-	"FileOpenDialog_Cancel"		"Cancelar"
-	"FileOpenDialog_Look_in"	"Pasta:"
-	"FileOpenDialog_File_Name"	"Nome:"
-	"FileOpenDialog_Directory_Name"	"Diretório:"
-	"FileOpenDialog_File_Type"	"Tipo:"
-	"FileOpenDialog_Icon"		" "
-	"FileOpenDialog_Name"		"Nome"
-	"FileOpenDialog_Type"		"Tipo"
-	"FileOpenDialog_Col_Name"	"Nome"
-	"FileOpenDialog_Col_Size"	"Tamanho"
-	"FileOpenDialog_Col_Type"	"Tipo"
-	"FileOpenDialog_Col_DateModified" "Data de modificação"
-	"FileOpenDialog_Col_DateCreated" "Data de criação"
-	"FileOpenDialog_Col_Attributes"	"Atributos"
-	"FileOpenDialog_FileType_Folder" "Pasta"
-	"FileOpenDialog_ToolTip_Up"	"Para cima"
-	"FileOpenDialog_ToolTip_NewFolder" "Nova pasta"
-	"FileOpenDialog_NewFolder_InputTitle"  "Nova pasta"
-	"FileOpenDialog_NewFolderPrompt" "Nome:"
-	"FileOpenDialog_NewFolder_DefaultName" "Nova pasta"
-	"FileOpenDialog_ToolTip_OpenInExplorerButton" "Abrir no Explorador"
-
 	"vgui_ok"			"OK"
 	"vgui_close"			"Fechar"
 	"vgui_Cancel"			"Cancelar"
@@ -33086,7 +33061,7 @@
 		"SFUI_Map_workshop_preview_inferno"	"Inferno (pré-visualização)"
 
 		"SFUI_Map_warehouse"	"Warehouse"
-		"SFUI_Map_mainmenu"		"Menu principal (atualmente {s:mainmenu_bkgnd})"
+		"SFUI_Map_mainmenu"		"Menu principal - {s:mainmenu_bkgnd}"
 		
 		// Single player dialog
 		"SFUI_CreateSinglePlayerTitle"		"UM JOGADOR"
@@ -45417,6 +45392,28 @@
 		"quest_11011_var_ingame:p{mission-points}"		"Vence uma ronda#|#Vence rondas"
 		
 		"quest_11012_var_desc:p{mission-points}"	 	"Vence uma ronda no modo <b>{s:gamemode} ({s:location})</b>.#|#Vence rondas no modo <b>{s:gamemode} ({s:location})</b>."
+		"quest_11012_var_ingame:p{mission-points}"		"Vence uma ronda#|#Vence rondas"
+		
+		"quest_11013_var_desc:p{mission-points}"	 	"Vence uma ronda no modo <b>{s:gamemode} ({s:location})</b>.#|#Vence rondas no modo <b>{s:gamemode} ({s:location})</b>."
+		"quest_11013_var_ingame:p{mission-points}"		"Vence uma ronda#|#Vence rondas"
+		
+		"quest_11014_var_desc:p{mission-points}"	 	"Vence uma ronda no modo <b>{s:gamemode} ({s:location})</b>.#|#Vence rondas no modo <b>{s:gamemode} ({s:location})</b>."
+		"quest_11014_var_ingame:p{mission-points}"		"Vence uma ronda#|#Vence rondas"
+		
+		"quest_11015_var_desc:p{mission-points}"	 	"Vence uma ronda no modo <b>{s:gamemode} ({s:location})</b>.#|#Vence rondas no modo <b>{s:gamemode} ({s:location})</b>."
+		"quest_11015_var_ingame:p{mission-points}"		"Vence uma ronda#|#Vence rondas"
+
+// crow_mask_48113_comment
+// crow_mask_48114_comment
+}
+
+
+
+
+}
+
+
+"	 	"Vence uma ronda no modo <b>{s:gamemode} ({s:location})</b>.#|#Vence rondas no modo <b>{s:gamemode} ({s:location})</b>."
 		"quest_11012_var_ingame:p{mission-points}"		"Vence uma ronda#|#Vence rondas"
 		
 		"quest_11013_var_desc:p{mission-points}"	 	"Vence uma ronda no modo <b>{s:gamemode} ({s:location})</b>.#|#Vence rondas no modo <b>{s:gamemode} ({s:location})</b>."
