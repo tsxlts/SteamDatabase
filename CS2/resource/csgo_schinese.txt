@@ -4296,8 +4296,12 @@
 		
 		"CSGO_crate_sticker_pack_warhammer_xenos_capsule"	    		"战锤40K异形印花胶囊"
 		"CSGO_crate_sticker_pack_warhammer_xenos_capsule_desc"			"唤醒异形恐惧！ 战锤40K异形印花胶囊，2025 年 5 月推出。"
-		"coupon_warhammer_xenos_sticker_capsule"						"战锤40K异形印花胶囊"
+		"coupon_warhammer_xenos_sticker_capsule"
 		
+		"CSGO_crate_community_36"				"封装的创世终端机"
+		"CSGO_crate_community_36^volatile"		"封装的创世终端机"
+		"CSGO_crate_community_36_desc"			""
+
 "SprayKit_vcap1_ace_01"		"王牌"
 "SprayKit_vcap1_banana"		"香蕉"
 "SprayKit_vcap1_cerberus"		"地狱看门犬"
