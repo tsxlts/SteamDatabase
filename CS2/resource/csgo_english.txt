@@ -2463,6 +2463,7 @@
 		"ItemHistory_Action_Drop"										"Earned a new rank and got a drop"
 		"ItemHistory_Action_ManualCreate"								"Created by Counter-Strike Support"
 		"ItemHistory_Action_Purchase"									"Purchased from the store"
+		"ItemHistory_Action_PurchaseVolatileContainerItem"				"Purchased from Arms Dealer"
 		"ItemHistory_Action_AutoGrantItem"								"Earned"
 		"ItemHistory_Action_CrossGameAchievement"						"Earned from unlocking an achievement in a different game"
 		"ItemHistory_Action_AwardGift_Receiver"							"Received a gift"
@@ -48134,6 +48135,7 @@
 		"laptop_window_expiration_title"			"EXPIRATION"
 		"laptop_window_seal_title"					"STATUS"
 		"laptop_window_messages_title"				"CHAT - ARMS DEALER"
+		"laptop_window_currentoffer_title"			"CURRENT OFFER"
 		"laptop_app_title"							"<span class=\"laptop-app-title-prefix\">UP-</span>Link"
 		"laptop_app_version"						"v 1.1.0.2000"
 
@@ -48193,8 +48195,9 @@
 		"popup_signal_ok" 				"Strong Signal"
 		"laptop_battery_tooltip" 		"Battery Charge: {d:percent}%"
 		"laptop_original_seal_tooltip" 	"Any item purchased from this Uplink Terminal will come with an Original Owner Certificate, which is valid while you are the owner."
-		"laptop_zoom_tooltip" 			"Scroll mouse wheel to zoom in and out"
-		"laptop_pan_tooltip" 			"Hold 'Shift' key and drag to pan the camera"
+		"laptop_zoom_tooltip" 			"Scroll mouse wheel to zoom in and out."
+		"laptop_pan_tooltip" 			"Hold 'Shift' key and drag to pan the camera."
+		"laptop_pricing_tooltip"		"Prices are global and adjusted automatically based on demand for each item in this collection."
 
 
 		"dealer_message_start_0"  	"This stuff's contractor issue across the board.<!--.25-->All the bells and whistles. None of the paperwork."

@@ -1010,7 +1010,7 @@
 		"Cstrike_Fiddle_With_Silencers"					"Možnost sundat tlumič (M4A1-S a USP-S)"
 		"Cstrike_Fiddle_With_Silencers_Desc"			"Zapne, nebo vypne možnost sundat/nasadit tlumič u zbraní M4A1-S a USP-S."
 		
-		"Cstrike_Already_Own_Weapon"			"Tuto zbraň již vlastníš."
+		"Cstrike_Already_Own_Weapon"			"Tuto zbraň už vlastníš."
 		"Cstrike_Not_Available"					"Tato možnost nákupu není pro tuto mapu dostupná."
 
 		// Titles.txt strings
@@ -1076,7 +1076,7 @@
 		"Cstrike_TitlesTXT_Need_backup"										"Potřebuji podporu."
 		"Cstrike_TitlesTXT_Reporting_in"									"Hlásím se."
 		"Cstrike_TitlesTXT_Negative"										"Negativní."
-		"Cstrike_TitlesTXT_Cstrike_Already_Own_Weapon"						"Tuto zbraň již vlastníš."
+		"Cstrike_TitlesTXT_Cstrike_Already_Own_Weapon"						"Tuto zbraň už vlastníš."
 		"Cstrike_TitlesTXT_Sector_clear"									"Oblast čistá."
 		"Cstrike_TitlesTXT_DEAD"											"MRTVÝ"
 		"Cstrike_TitlesTXT_DEATHS"											"SMRTI"
@@ -2336,11 +2336,8 @@
 		"Econ_Loot_List_AndSomeMoreItems" "... a další (%s1)"
 
 		"Econ_Revolving_Loot_List"				"Obsahuje jeden z následujících předmětů:"
-		"Econ_Revolving_Loot_List_Single"		"Získáš jeden z následujících předmětů"
-		"Econ_Revolving_Loot_List_Rental"		"<img src='file://{images}/icons/ui/hourglass.svg' class='popup-decodable-lootlist-single-icon'/> Na 7 dní si vypůjčíš všechny následující předměty s výjimkou extrémně vzácného "
-		"Econ_Revolving_Loot_SecureConnectionLine"	"Nabízí možnost zakoupit jeden z následujících předmětů:"
-
-		
+		"Econ_Revolving_Loot_List_Single"		"Po otevření získáš jeden z následujících předmětů:"
+		"Econ_Revolving_Loot_List_Rental"		"<img src='file://{images}/icons/ui/hourglass.svg' class='popup-decodable-lootlist-single-icon'/> Na 7 dní si vypůjčíš všechny následující předměty s výjimkou extrémně vzácného:"
 		"Econ_Revolving_Loot_List_Rare_Item"	"nebo speciální, extrémně vzácný předmět!"
 		"Exceedingly_Rare_Item"					"★ Speciální předmět ★"
 
@@ -2642,7 +2639,6 @@
 		"Attrib_MatchWins"							"Výhry v kompetitivním módu na mapách z operace: %s1"
 		"Attrib_HasSilencer"						"Tlumič"
 		"Attrib_HasBurstMode"						"Možnost zapnutí dávek po třech"
-		"Attrib_SecureConnectionLine"				"Bezpečné spojení č. %s1"
 		"Attrib_SupplyCrateSeries"					"Bedna série č. %s1"
 		"Attrib_KillEater"							"Tento předmět disponuje technologií StatTrak™, která jeho vlastníkovi umožňuje sledovat určitou statistiku."
 		"Attrib_ReferencedItem"						"Obsahuje: %s1"
@@ -2678,7 +2674,6 @@
 		"Attrib_OperationBonusXP"					"Bonus získaný za operaci: +%s1 XP"
 		"Attrib_IssueDate"							"Datum přidělení: %s1"
 		"Attrib_ExpirationDate"						"Datum vrácení: %s1"
-
 		"Notify_KeychainRemoveTool_ChargesUseToRemove"	"Dostupné oddělovače přívěsků: {d:item_count}<br>Sundáním přívěsku dojde ke spotřebování jednoho oddělovače."
 		"Attrib_KeychainRemoveTool_Charges"			"Dostupné oddělovače přívěsků: {d:item_count}"
 		"Attrib_SpraysRemaining"					"Zbývající použití: %s1"
@@ -4339,7 +4334,7 @@
 		"CSGO_crate_sticker_pack_warhammer_xenos_capsule_desc"			"Rozsévej zkázu v Galaxii se samolepkami z této kapsle vydané v květnu 2025."
 		"coupon_warhammer_xenos_sticker_capsule"						"Warhammer 40,000 Xenos Sticker Capsule"
 		
-"SprayKit_vcap1_ace_01"		"Ace"
+		"SprayKit_vcap1_ace_01"		"Ace"
 "SprayKit_vcap1_banana"		"Banana"
 "SprayKit_vcap1_cerberus"		"Cerberus"
 "SprayKit_vcap1_clutch_01"		"Clutch King"
@@ -28562,7 +28557,7 @@
 		"StickerKit_warhammer_decals_paper_tau_empire_2"				"T'au Empire 2"
 		"StickerKit_warhammer_decals_paper_tyranids_1"					"Tyranids 1"
 		"StickerKit_warhammer_decals_paper_tyranids_2"					"Tyranids 2"
-		"PatchKit_patch_banana"            "Crazy Banana"
+"PatchKit_patch_banana"            "Crazy Banana"
 		"PatchKit_desc_patch_banana"       "<i>Agent pro porovnání</i>"
 		"PatchKit_patch_boss"              "Boss"
 		"PatchKit_desc_patch_boss"         "<i>Těžká jest hlava agenta s korunou</i>"
@@ -32483,7 +32478,6 @@
 		"PaintKit_p90_boost_blue"							"Na zbraň byl nanesen ostře řezaný modrozelený vzor.\n\n<i>Jak se cítíš, tak i vypadáš</i>"
 		"PaintKit_p90_boost_blue_Tag"						"Wave Breaker"
 		
-		"PaintKit_p2k_fractal"								"Na zbraň byly metalickou šedou barvou naneseny fraktální vzory a následně byla dozdobena oranžovými částmi.\n\n<i>>>EXPERIMENT S TEXTUROU ZBRANĚ, ZÁZNAM PRVNÍ<<</i>"
 		"PaintKit_p2k_fractal_Tag"							"Sure Grip"
 		
 		"PaintKit_mag7_ammo_box"							"Zbraň byla nabarvena tak, aby připomínala bednu s municí.\n\n<i>Ber, dokud je co</i>"
@@ -32506,8 +32500,7 @@
 		
 		"PaintKit_m4a4_green_camo"							"Na zbraň byl nanesen zelený maskovací vzor.\n\n<i>„DO VRTULNÍKU!“</i>"
 		"PaintKit_m4a4_green_camo_Tag"						"Choppa"
-
-// END COMMUNITY_35
+// END COMMUNITY_36
 
 // OVERPASS_2024
 				
@@ -33111,9 +33104,9 @@
 		"StoreCheckout_SteamAccountDisabled"	"Tvůj účet služby Steam je zablokován a nemůže z něj být proveden nákup."
 		"StoreCheckout_SteamAccountNoPurchase"	"Transakce s použitím peněženky služby Steam jsou na tomto účtu zakázány."
 		"StoreCheckout_OldPriceSheet"			"Tvůj seznam předmětů je zastaralý. Právě je získáván aktuální."
-		"StoreCheckout_ItemNotForSale"			"Tento předmět již není možné zakoupit."
+		"StoreCheckout_ItemNotForSale"			"Tento předmět už není možné zakoupit."
 		"StoreCheckout_InvalidItem"				"Tento předmět není možné zakoupit."
-		"StoreCheckout_DiscountFail"			"Tento předmět již není ve slevě."
+		"StoreCheckout_DiscountFail"			"Tento předmět už není ve slevě."
 		"StoreCheckout_TransactionNotFound"		"Síť hry nemohla nalézt ID této transakce. Zkus provést nákup později znovu."
 		"StoreCheckout_TransactionCanceled"		"Transakce byla zrušena. Nebylo ti nic naúčtováno."
 		"StoreCheckout_TransactionCompleted"	"Transakce byla dokončena!\nUžij si to!"
@@ -34387,7 +34380,7 @@
 
 		"popup_container_confirm_title_rent" "Výpůjčka předmětů"
 		"popup_container_confirm_title_expire" "Výpůjčka skončila" 
-		"popup_container_confirm_warning_rent" "Vypůjčené předměty budeš mít k dispozici 7 dní." 
+		"popup_container_confirm_warning_rent" "Vypůjčené předměty budeš mít k dispozici 7 dní" 
 		"popup_container_confirm_body_rent" "Dočasně získáš všechny předměty z bedny {s:name}.<br/><br/>Vypůjčené předměty nepodporují technologii StatTrak™ a není je možné žádným způsobem upravit.<br/><br/>Extrémně vzácné předměty nejsou součástí výpůjčky." 
 		"popup_container_confirm_already_rented" "Už máš vypůjčené předměty z bedny {s:name}.<br/><br/>Tyto předměty zmizí za {s:expiration-time}." 
 
@@ -36427,17 +36420,17 @@
 		"SFUI_vote_failed_swap_in_prog"		"Probíhá prohazování týmů."
 		"SFUI_vote_failed_spectator"			"Na tomto serveru není hlasování povoleno pro diváky."
 		"SFUI_vote_failed_disabled"			"Na tomto serveru není povoleno hlasování."
-		"SFUI_vote_failed_nextlevel_set"		"Následující úroveň byla již nastavena."
-		"SFUI_vote_failed_vote_in_progress"		"Hlasování již probíhá!"
+		"SFUI_vote_failed_nextlevel_set"		"Následující úroveň byla už nastavena."
+		"SFUI_vote_failed_vote_in_progress"		"Hlasování už probíhá!"
 
-		"SFUI_vote_failed_paused"			"Zápas je již pozastaven!"
+		"SFUI_vote_failed_paused"			"Zápas je už pozastaven!"
 		"SFUI_vote_failed_not_paused"		"Zápas není pozastaven!"
 		"SFUI_vote_failed_not_in_warmup"	"Neprobíhá zahřívací kolo!"
 		"SFUI_vote_failed_not_10_players"	"Toto hlasování vyžaduje 10 hráčů."
 		"SFUI_vote_failed_cant_round_end"	"Hlasování je neplatné, pokud během něj skončí kolo. Je třeba hlasovat znovu."
 
 		"SFUI_vote_failed_timeouts_exhausted"	  "Tvůj tým nemůže požádat o oddechový čas."
-		"SFUI_vote_failed_timeout_active"	  	  "Oddechový čas již probíhá."
+		"SFUI_vote_failed_timeout_active"	  	  "Oddechový čas už probíhá."
 		
 
 		"SFUI_otherteam_vote_kick_player"		"Druhý tým hlasuje o vyhození hráče: {s:s1}\n"
@@ -36710,10 +36703,6 @@
 		"PANOHUD_Spectate_Navigation_New_Cameraman_On"		"[{s:bind_radio}] Zapnout kameramana "
 		"PANOHUD_Spectate_Navigation_ToggleSpec"			"[{s:bind_drop}] Zjednodušené statistiky "
 		"PANOHUD_Spectate_Navigation_ToggleOverview"		"[{s:bind_duck}] Přehled "
-		"PANOHUD_Spectate_Navigation_PlayHighlight"			"[{s:bind_lookatweapon}] Přehrát top okamžik"
-		"PANOHUD_Spectate_Navigation_CopyHighlightAndClose"	"[{s:bind_lookatweapon}] Kopírovat do schránky a zavřít"
-		"PANOHUD_Spectate_Navigation_CopyHighlightURL"		"[{s:bind_lookatweapon}] Kopíroval URL top okamžiku"
-	
 		"PANOHUD_GhostBecomeSpectator"						"Stiskem [%s1] se staneš divákem"
 
 		"SFUIHUD_Spectate_You_Are_Dead"				"<font color=\"%s1\">Sleduješ hráče %s2</font>"
@@ -38180,7 +38169,7 @@
 
 		"SFUI_BuyMenu_TimerText"			"Nakupování skončí za:"
 		"SFUI_BuyMenu_ImmunityTimerText"	"Nezranitelnost vyprší za:"
-		"SFUI_BuyMenu_OutOfTime" "%s1 sekund vyhrazených na nákup již vypršelo"
+		"SFUI_BuyMenu_OutOfTime" "%s1 sekund vyhrazených na nákup už vypršelo"
 		"SFUI_BuyMenu_YoureOutOfTime" "Čas vyhrazený na nákup vypršel"
 		"SFUI_BuyMenu_NotInBuyZone" "Opustil jsi nákupní zónu"
 		"SFUI_BuyMenu_CantBuyTilNextWave" "Během vlny nemůžeš nakupovat"
@@ -38463,13 +38452,10 @@
 
 		"SFUI_OfficialDatacenterID_1"		"Seattle, USA"
 		"SFUI_OfficialDatacenterID_2"		"Virginie, USA"
-		"SFUI_OfficialDatacenterID_3"		"Německo, EU"
 		"SFUI_OfficialDatacenterID_4"		"Jižní Korea"
 		"SFUI_OfficialDatacenterID_5"		"Singapur"
 		"SFUI_OfficialDatacenterID_6"		"Spojené arabské emiráty"
 		"SFUI_OfficialDatacenterID_7"		"Austrálie"
-		"SFUI_OfficialDatacenterID_8"		"Švédsko, EU"
-		"SFUI_OfficialDatacenterID_9"		"Rakousko, EU"
 		"SFUI_OfficialDatacenterID_10"		"Brazílie"
 		"SFUI_OfficialDatacenterID_11"		"Jižní Afrika"
 		"SFUI_OfficialDatacenterID_12"		"Šanghaj, Čína"
@@ -38481,20 +38467,15 @@
 		// "SFUI_OfficialDatacenterID_18"	"TBD"
 		"SFUI_OfficialDatacenterID_19"		"Japonsko"
 		"SFUI_OfficialDatacenterID_20"		"Hongkong"
-		"SFUI_OfficialDatacenterID_21"		"Španělsko, EU"
 		"SFUI_OfficialDatacenterID_22"		"Kalifornie, USA"
 		"SFUI_OfficialDatacenterID_23"		"Atlanta, USA"
 		"SFUI_OfficialDatacenterID_24"		"Hongkong"
 		"SFUI_OfficialDatacenterID_25"		"Tchien-ťin, Čína"
 		"SFUI_OfficialDatacenterID_26"		"Čennaí, Indie"
 		"SFUI_OfficialDatacenterID_27"		"Chicago, USA"
-		"SFUI_OfficialDatacenterID_28"		"Polsko, EU"
-		"SFUI_OfficialDatacenterID_29"		"Nizozemsko, EU"
 		// "SFUI_OfficialDatacenterID_30"		"TBD"
 		"SFUI_OfficialDatacenterID_31"		"Dallas, USA"
-		// "SFUI_OfficialDatacenterID_32"		"TBD"
-		"SFUI_OfficialDatacenterID_33"		"Finsko, EU"
-		"SFUI_OfficialDatacenterID_34"		"São Paulo"
+"SFUI_OfficialDatacenterID_34"		"São Paulo"
 		// "SFUI_OfficialDatacenterID_35"		"US West"
 		// "SFUI_OfficialDatacenterID_36"		"Germany"
 		// "SFUI_OfficialDatacenterID_37"		"Hong Kong"
@@ -38504,11 +38485,9 @@
 		// "SFUI_OfficialDatacenterID_41"		"TBD"
 		"SFUI_OfficialDatacenterID_42"		"Čcheng-tu, Čína"
 		"SFUI_OfficialDatacenterID_43"		"New York, USA"
-		"SFUI_OfficialDatacenterID_44"		"Finsko, EU"
 		"SFUI_OfficialDatacenterID_45"		"Velká Británie"
 		"SFUI_OfficialDatacenterID_49"		"Kuang-tung, Čína"
 		"SFUI_OfficialDatacenterID_51"		"Peking, Čína"
-
 		"SFUI_UserAlert_HighPings"			"Tvoje nejlepší odezva na oficiální servery je %s1 ms."
 		"SFUI_UserAlert_Unreachable"		"Nepodařilo se spojit s žádným oficiálním serverem."
 		"SFUI_UserAlert_Unreachable_NoConfig"	"Nepodařilo se načíst nastavení spojení pomocí protokolu HTTPS. Zkontroluj své připojení k internetu a nastavení brány firewall."
@@ -42950,7 +42929,7 @@
 		"inv_context_no_valid_actions"		"Žádné akce"
 		"inv_context_look_inside"			"Nahlédnout do bedny"
 		"inv_context_inspect_contents"		"Prohlédnout kolekci"
-		"inv_context_secure_connection_line" "Spojit se s obchodníkem se zbraněmi"
+		"inv_context_secure_connection_line" "Spojit se s obchodníkem"
 		"inv_context_xray"					"Použít rentgen"
 		"inv_context_goto_xray"				"Přejít k rentgenu"
 		"inv_context_unequip"				"Sundat"
@@ -43060,7 +43039,7 @@
 		"popup_useitem_title_getkeychaincharges"	"Rozbalit {s:itemname}"
 		"popup_useitem_desc"	"Opravdu chceš použít tento předmět?"
 		"popup_useitem_desc_getkeychaincharges"	"Opravdu chceš rozbalit tento předmět?"
-		"popup_useitem_warning"	"{s:itemname} má jedno použití."
+		"popup_useitem_warning"	"{s:itemname} má jedno použití"
 		"popup_useitem_warning_getkeychaincharges"	"Tento předmět lze rozbalit pouze jednou"
 		"popup_useitem_button"	"Použít předmět"
 		"popup_useitem_button_getkeychaincharges:p{item_count}"	"Přidat <b>{d:item_count}</b> oddělovač přívěsků#|#Přidat <b>{d:item_count}</b> oddělovače přívěsků#|#Přidat <b>{d:item_count}</b> oddělovačů přívěsků#|#Přidat <b>{d:item_count}</b> oddělovače přívěsků"
@@ -43079,7 +43058,7 @@
 
 		"popup_delete_title"	"{s:itemname}"
 		"popup_delete_desc"		"Opravdu chceš odstranit tento předmět?"
-		"popup_delete_warning"	"Tento krok nelze vzít zpět."
+		"popup_delete_warning"	"Tento krok nelze vzít zpět"
 		"popup_delete_button"	"Odstranit předmět"
 
 		"popup_usegift_title"	"Darovat {s:itemname}"
@@ -43186,7 +43165,6 @@
 		"popup_totool_decodeable_header_fantoken"	"Aktivovat předmět"
 		"popup_totool_purchase_header"	"Zakoupit"
 		"popup_totool_purchase_header2"	"ZAKOUPIT PRO ZÍSKÁNÍ"
-
 		//Purchase
 		"popup_cartpreview_button"		"Náhled"
 		"popup_cartpreview_title"		"Náhled"
@@ -44154,7 +44132,7 @@
 
 		"BuyMenu_TimerText"				"Nakupování skončí za"
 		"BuyMenu_ImmunityTimerText"		"Nezranitelnost vyprší za"
-		"BuyMenu_OutOfTime"				"%s1 sekund vyhrazených na nákup již vypršelo"
+		"BuyMenu_OutOfTime"				"%s1 sekund vyhrazených na nákup už vypršelo"
 		"BuyMenu_YoureOutOfTime"		"Čas vyhrazený na nákup vypršel"
 		"BuyMenu_NotInBuyZone"			"Opustil jsi nákupní zónu"
 		"BuyMenu_CantBuyTilNextWave"	"Během vlny nemůžeš nakupovat"
@@ -44176,7 +44154,7 @@
 		"BuyMenu_HeavyAssaultSuitRestriction"	"Těžkou vestu nelze použít společně s puškami"
 
 		"BuyMenu_NotAllowedForPurchase"			"Nelze zakoupit v tomto zápase"
-		"BuyMenu_AlreadyOwned"					"Tuto položku již vlastníš"
+		"BuyMenu_AlreadyOwned"					"Tuto položku už vlastníš"
 		"BuyMenu_AlreadyPurchased"				"V tomto kole už si nemůžeš koupit víc"
 
 		"BuyMenu_InCooldown"					"Bude k dispozici za {d:rounds} kol/a"
@@ -45834,8 +45812,9 @@
 		"Chatwheel_section_report"	"Hlášení"
 
 		"Chatwheel_description" "Díky chatovacím kolečkům získáš rychlý přístup k přizpůsobitelným seznamům zpráv posílaných vysílačkou."
-
-		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -46003,6 +45982,25 @@
 		"quest_11012_var_ingame:p{mission-points}"		"Vyhrávej kola#|#Vyhrávej kola#|#Vyhrávej kola#|#Vyhrávej kola"
 		
 		"quest_11013_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.#|#<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.#|#<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.#|#<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol."
+		"quest_11013_var_ingame:p{mission-points}"		"Vyhrávej kola#|#Vyhrávej kola#|#Vyhrávej kola#|#Vyhrávej kola"
+		
+		"quest_11014_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.#|#<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.#|#<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.#|#<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol."
+		"quest_11014_var_ingame:p{mission-points}"		"Vyhrávej kola#|#Vyhrávej kola#|#Vyhrávej kola#|#Vyhrávej kola"
+		
+		"quest_11015_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.#|#<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.#|#<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.#|#<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol."
+		"quest_11015_var_ingame:p{mission-points}"		"Vyhrávej kola#|#Vyhrávej kola#|#Vyhrávej kola#|#Vyhrávej kola"
+
+// crow_mask_48593_comment
+// crow_mask_48594_comment
+}
+
+
+
+
+}
+
+
+b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.#|#<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol."
 		"quest_11013_var_ingame:p{mission-points}"		"Vyhrávej kola#|#Vyhrávej kola#|#Vyhrávej kola#|#Vyhrávej kola"
 		
 		"quest_11014_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.#|#<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.#|#<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.#|#<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol."

@@ -2337,9 +2337,6 @@ VIP'ye bu bölgelerden birine ulaşana kadar koruma sağla."
 		"Econ_Revolving_Loot_List"				"Aşağıdaki eşyalardan birini içerir:"
 		"Econ_Revolving_Loot_List_Single"		"Aç ve aşağıdakilerden birini kazan."
 		"Econ_Revolving_Loot_List_Rental"		"<img src='file://{images}/icons/ui/hourglass.svg' class='popup-decodable-lootlist-single-icon'/> Bu kasadaki her silahı (son derece nadir eşyalar hariç) 7 gün boyunca kirala. "
-		"Econ_Revolving_Loot_SecureConnectionLine"	"Aşağıdakilerden birini satın alma fırsatı sunar:"
-
-		
 		"Econ_Revolving_Loot_List_Rare_Item"	"ya da Son Derece Nadir Özel Bir Eşya!"
 		"Exceedingly_Rare_Item"					"★ Nadir Özel Eşya ★"
 
@@ -2641,7 +2638,6 @@ VIP'ye bu bölgelerden birine ulaşana kadar koruma sağla."
 		"Attrib_MatchWins"							"Operasyon Haritalarında Rekabetçi Galibiyeti: %s1"
 		"Attrib_HasSilencer"						"Susturucu"
 		"Attrib_HasBurstMode"						"3 Mermili Seri Atış Seçeneği"
-		"Attrib_SecureConnectionLine"				"Güvenli Bağlantı Hattı #%s1"
 		"Attrib_SupplyCrateSeries"					"Kasa Serisi #%s1"
 		"Attrib_KillEater"							"Bu eşya, sahibi tarafından taşındığında belirli istatistikleri izleyen StatTrak™ teknolojisini içerir."
 		"Attrib_ReferencedItem"						"İçeriği: %s1"
@@ -2677,7 +2673,6 @@ VIP'ye bu bölgelerden birine ulaşana kadar koruma sağla."
 		"Attrib_OperationBonusXP"					"Operasyon Bonusu Kazanıldı: +%s1 XP"
 		"Attrib_IssueDate"							"Düzenlenme tarihi: %s1"
 		"Attrib_ExpirationDate"						"Son kullanma tarihi: %s1"
-
 		"Notify_KeychainRemoveTool_ChargesUseToRemove"	"Kullanılabilir Süs Çıkarıcı: {d:item_count}<br>Süs çıkarma işlemi bir süs çıkarıcıyı tüketir."
 		"Attrib_KeychainRemoveTool_Charges"			"Kullanılabilir Süs Çıkarıcı: {d:item_count}"
 		"Attrib_SpraysRemaining"					"Kalan Kullanım: %s1"
@@ -4305,7 +4300,7 @@ VIP'ye bu bölgelerden birine ulaşana kadar koruma sağla."
 		"CSGO_crate_sticker_pack_warhammer_xenos_capsule_desc"			"Mayıs 2025'te yayınlanmış bu Warhammer 40,000 Xenos Çıkartma Kapsülü ile Xenos'un dehşetine sahip ol."
 		"coupon_warhammer_xenos_sticker_capsule"						"Warhammer 40,000 Xenos Çıkartma Kapsülü"
 		
-"SprayKit_vcap1_ace_01"		"As"
+		"SprayKit_vcap1_ace_01"		"As"
 "SprayKit_vcap1_banana"		"Muz"
 "SprayKit_vcap1_cerberus"		"Kerberos"
 "SprayKit_vcap1_clutch_01"		"Clutch Kralı"
@@ -27868,7 +27863,7 @@ Bu çıkartma, forZe eSports için Berlin 2019'da oynayan profesyonel oyuncu And
 		"StickerKit_warhammer_decals_paper_tau_empire_2"				"T'au Empire 2"
 		"StickerKit_warhammer_decals_paper_tyranids_1"					"Tyranids 1"
 		"StickerKit_warhammer_decals_paper_tyranids_2"					"Tyranids 2"
-		"PatchKit_patch_banana"            "Çılgın Muz"
+"PatchKit_patch_banana"            "Çılgın Muz"
 		"PatchKit_desc_patch_banana"       "<i>Perspektif sağlamak maksatlı ajan</i>"
 		"PatchKit_patch_boss"              "Patron"
 		"PatchKit_desc_patch_boss"         "<i>Büyük ajanın derdi büyük olur</i>"
@@ -31789,7 +31784,6 @@ Bu çıkartma, forZe eSports için Berlin 2019'da oynayan profesyonel oyuncu And
 		"PaintKit_p90_boost_blue"							"Köşeli mavi ve yeşil tasarım kullanılarak özel olarak boyanmıştır.\n\n<i>Hissettiğin gibi görünüyorsun.</i>"
 		"PaintKit_p90_boost_blue_Tag"						"Dalga Kıran"
 		
-		"PaintKit_p2k_fractal"								"Fraktal desenler kullanılarak metalik gri renkte özel olarak boyanmış ve turuncu vurgularla tamamlanmıştır.\n\n<i>>>SİLAH KAPLAMASI DOKU DENEYLERİ, GİRİŞ BİR<<</i>"
 		"PaintKit_p2k_fractal_Tag"							"Sağlam Tutuş"
 		
 		"PaintKit_mag7_ammo_box"							"Bir mühimmat kutusunu andırmak için özel olarak boyanmıştır.\n\n<i>Faturayı saklayın.</i>"
@@ -31812,8 +31806,7 @@ Bu çıkartma, forZe eSports için Berlin 2019'da oynayan profesyonel oyuncu And
 		
 		"PaintKit_m4a4_green_camo"							"Yeşil kamuflaj deseni kullanılarak özel olarak boyanmıştır.\n\n<i>Dijital ayak izini artır.</i>"
 		"PaintKit_m4a4_green_camo_Tag"						"Askeri Kamuflaj"
-
-// END COMMUNITY_35
+// END COMMUNITY_36
 
 // OVERPASS_2024
 				
@@ -36001,10 +35994,9 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"PANOHUD_Spectate_Navigation_New_Cameraman_On"		"[{s:bind_radio}] Kameraman Kontrolünü Aç"
 		"PANOHUD_Spectate_Navigation_ToggleSpec"			"[{s:bind_drop}] Mini Skor Tablosu "
 		"PANOHUD_Spectate_Navigation_ToggleOverview"		"[{s:bind_duck}] Kuş Bakışı "
-		"PANOHUD_Spectate_Navigation_PlayHighlight"			"[{s:bind_lookatweapon}] Önemli Ânı İzle"
-		"PANOHUD_Spectate_Navigation_CopyHighlightAndClose"	"[{s:bind_lookatweapon}] Panoya Kopyala ve Kapat"
-		"PANOHUD_Spectate_Navigation_CopyHighlightURL"		"[{s:bind_lookatweapon}] Önemli An URL'ini Kopyala"
-	
+		"PANOHUD_Spectate_Navigation_PlayHighlight"			"[{s:bind_drop}] Önemli Ânı İzle"
+		"PANOHUD_Spectate_Navigation_CopyHighlightAndClose"	"[{s:bind_drop}] Panoya Kopyala ve Kapat"
+		"PANOHUD_Spectate_Navigation_CopyHighlightURL"		"[{s:bind_drop}] Önemli An URL'ini Kopyala"
 		"PANOHUD_GhostBecomeSpectator"						"İzleyici olmak için [%s1] tuşuna basın"
 
 		"SFUIHUD_Spectate_You_Are_Dead"				"<font color=\"%s1\">%s2 Takip Ediliyor</font>"
@@ -37754,13 +37746,10 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 
 		"SFUI_OfficialDatacenterID_1"		"ABD, Seattle"
 		"SFUI_OfficialDatacenterID_2"		"ABD, Virginia"
-		"SFUI_OfficialDatacenterID_3"		"AB, Almanya"
 		"SFUI_OfficialDatacenterID_4"		"Güney Kore"
 		"SFUI_OfficialDatacenterID_5"		"Singapur"
 		"SFUI_OfficialDatacenterID_6"		"Birleşik Arap Emirlikleri"
 		"SFUI_OfficialDatacenterID_7"		"Avustralya"
-		"SFUI_OfficialDatacenterID_8"		"AB, İsveç"
-		"SFUI_OfficialDatacenterID_9"		"AB, Avusturya"
 		"SFUI_OfficialDatacenterID_10"		"Brezilya"
 		"SFUI_OfficialDatacenterID_11"		"Güney Afrika"
 		"SFUI_OfficialDatacenterID_12"		"Çin, Şanghay"
@@ -37772,20 +37761,15 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		// "SFUI_OfficialDatacenterID_18"	"TBD"
 		"SFUI_OfficialDatacenterID_19"		"Japonya"
 		"SFUI_OfficialDatacenterID_20"		"Hong Kong"
-		"SFUI_OfficialDatacenterID_21"		"AB, İspanya"
 		"SFUI_OfficialDatacenterID_22"		"ABD, Kaliforniya"
 		"SFUI_OfficialDatacenterID_23"		"ABD, Atlanta"
 		"SFUI_OfficialDatacenterID_24"		"Hong Kong"
 		"SFUI_OfficialDatacenterID_25"		"Çin, Tianjin"
 		"SFUI_OfficialDatacenterID_26"		"Hindistan, Chennai"
 		"SFUI_OfficialDatacenterID_27"		"ABD, Şikago"
-		"SFUI_OfficialDatacenterID_28"		"AB, Polonya"
-		"SFUI_OfficialDatacenterID_29"		"AB, Hollanda"
 		// "SFUI_OfficialDatacenterID_30"		"TBD"
 		"SFUI_OfficialDatacenterID_31"		"Dallas, ABD"
-		// "SFUI_OfficialDatacenterID_32"		"TBD"
-		"SFUI_OfficialDatacenterID_33"		"AB, Finlandiya"
-		"SFUI_OfficialDatacenterID_34"		"São Paulo"
+"SFUI_OfficialDatacenterID_34"		"São Paulo"
 		// "SFUI_OfficialDatacenterID_35"		"US West"
 		// "SFUI_OfficialDatacenterID_36"		"Germany"
 		// "SFUI_OfficialDatacenterID_37"		"Hong Kong"
@@ -37795,11 +37779,9 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		// "SFUI_OfficialDatacenterID_41"		"TBD"
 		"SFUI_OfficialDatacenterID_42"		"Çin, Chengdu"
 		"SFUI_OfficialDatacenterID_43"		"ABD, New York"
-		"SFUI_OfficialDatacenterID_44"		"AB, Finlandiya"
 		"SFUI_OfficialDatacenterID_45"		"Birleşik Krallık"
 		"SFUI_OfficialDatacenterID_49"		"Çin, Guangdong"
 		"SFUI_OfficialDatacenterID_51"		"Çin, Pekin"
-
 		"SFUI_UserAlert_HighPings"			"Resmî sunuculardaki en iyi ping değerin %s1 ms."
 		"SFUI_UserAlert_Unreachable"		"Herhangi bir resmî sunucuya bağlanmak başarısız oldu."
 		"SFUI_UserAlert_Unreachable_NoConfig"	"HTTPS üzerinden ağ yapılandırması alınamıyor. İnternet bağlantınızı ve güvenlik duvarı yapılandırmanızı kontrol edin."
@@ -42470,7 +42452,6 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"popup_totool_decodeable_header_fantoken"	"Öğeyi Etkinleştir"
 		"popup_totool_purchase_header"	"Satın Al"
 		"popup_totool_purchase_header2"	"ELDE ETMEK İÇİN SATIN AL"
-
 		//Purchase
 		"popup_cartpreview_button"		"Ön İzleme"
 		"popup_cartpreview_title"		"Ön İzleme"
@@ -43325,6 +43306,7 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"PlayMenuReplayNewUserTrainingButton"		"Eğitim Gününü Tekrarla"
 
 
+		"CSGO_VanityLoadout_Inspect"				"İncele"
 		//////////////////////
 		// ANNOTATIONS
 		/////////////////////
@@ -45098,8 +45080,9 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"Chatwheel_section_report"	"Rapor"
 
 		"Chatwheel_description" "Sohbet çarkı, yararlı telsiz komutlarının kişiselleştirilebilir bir listesine hızlı erişim sağlar."
-
-		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -45267,6 +45250,25 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"quest_11012_var_ingame:p{mission-points}"		"Bir raunt kazan.#|#Birden fazla raunt kazan."
 		
 		"quest_11013_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> oynarken bir raunt kazan.#|#<b>{s:gamemode}: {s:location}</b> oynarken birden fazla raunt kazan."
+		"quest_11013_var_ingame:p{mission-points}"		"Bir raunt kazan.#|#Birden fazla raunt kazan."
+		
+		"quest_11014_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> oynarken bir raunt kazan.#|#<b>{s:gamemode}: {s:location}</b> oynarken birden fazla raunt kazan."
+		"quest_11014_var_ingame:p{mission-points}"		"Bir raunt kazan.#|#Birden fazla raunt kazan."
+		
+		"quest_11015_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> oynarken bir raunt kazan.#|#<b>{s:gamemode}: {s:location}</b> oynarken birden fazla raunt kazan."
+		"quest_11015_var_ingame:p{mission-points}"		"Bir raunt kazan.#|#Birden fazla raunt kazan."
+
+// crow_mask_48593_comment
+// crow_mask_48594_comment
+}
+
+
+
+
+}
+
+
+ynarken bir raunt kazan.#|#<b>{s:gamemode}: {s:location}</b> oynarken birden fazla raunt kazan."
 		"quest_11013_var_ingame:p{mission-points}"		"Bir raunt kazan.#|#Birden fazla raunt kazan."
 		
 		"quest_11014_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> oynarken bir raunt kazan.#|#<b>{s:gamemode}: {s:location}</b> oynarken birden fazla raunt kazan."

@@ -2334,7 +2334,7 @@
 		"Econ_Revolving_Loot_List"				"Inneholder én av de følgende:"
 		"Econ_Revolving_Loot_List_Single"		"Åpne og motta én av følgende"
 		"Econ_Revolving_Loot_List_Rental"		"<img src='file://{images}/icons/ui/hourglass.svg' class='popup-decodable-lootlist-single-icon'/> Lei alle våpnene (utenom den veldig sjeldne gjenstanden) i denne beholderen i 7 dager "
-		"Econ_Revolving_Loot_SecureConnectionLine"	"Gir muligheten til å kjøpe én av følgende:"
+		"Econ_Revolving_Loot_SecureConnectionLine"	"Én gjenstand kan kjøpes fra denne terminalen. Terminalen presenterer flere tilbud på følgende gjenstander:"
 
 		
 		"Econ_Revolving_Loot_List_Rare_Item"	"eller en ytterst sjelden spesialgjenstand!"
@@ -2373,6 +2373,7 @@
 		"Item_Crafted"							" %s1 har oppfylt en kontrakt og mottatt: %s2"
 		"Item_Traded"							" %s1 har byttet til seg: %s2"
 		"Item_Purchased"						" %s1 har kjøpt: %s2"
+		"Item_PurchasedVolatile"				" %s1 har kjøpt fra våpenhandler: %s2"
 		"Item_FoundInCrate"						" %s1 har åpnet en beholder og funnet: %s2"
 		"Item_Gifted"							" %s1 har akseptert en gave: %s2"
 		"Item_Earned"							" %s1 har oppnådd: %s2"
@@ -2397,6 +2398,7 @@
 		"NewItemMethod_Crafted"			"Du mottok:"
 		"NewItemMethod_Traded"			"Du byttet for:"
 		"NewItemMethod_Purchased"		"Du kjøpte:"
+		"NewItemMethod_PurchasedVolatile" "Du kjøpte fra våpenhandler:"
 		"NewItemMethod_FoundInCrate"	"Du pakket opp:"
 		"NewItemMethod_Rental"			"Du leide:"
 		"NewItemMethod_XpShopRedeem"	"Du mottok fra arsenalet:"
@@ -2456,6 +2458,7 @@
 		"ItemHistory_Action_Drop"										"Tjente en ny rang og fikk et slipp"
 		"ItemHistory_Action_ManualCreate"								"Opprettet av Counter-Strikes kundestøtte"
 		"ItemHistory_Action_Purchase"									"Kjøpt fra butikken"
+		"ItemHistory_Action_PurchaseVolatileContainerItem"				"Kjøpt fra våpenhandler"
 		"ItemHistory_Action_AutoGrantItem"								"Tjent"
 		"ItemHistory_Action_CrossGameAchievement"						"Tjent ved å låse opp en prestasjon i et annet spill"
 		"ItemHistory_Action_AwardGift_Receiver"							"Mottok en gave"
@@ -2638,7 +2641,7 @@
 		"Attrib_MatchWins"							"Konkurransekampseire i Operasjonskart: %s1"
 		"Attrib_HasSilencer"						"Lyddemper"
 		"Attrib_HasBurstMode"						"3-runders skuddsalvemodus"
-		"Attrib_SecureConnectionLine"				"Sikker forbindelse %s1"
+		"Attrib_SecureConnectionLine"				"Beholderserie %s1"
 		"Attrib_SupplyCrateSeries"					"Beholderserie #%s1"
 		"Attrib_KillEater"							"Denne gjenstanden har StatTrak™-teknologi, som fører visse typer statistikk når den brukes av eieren."
 		"Attrib_ReferencedItem"						"Inneholder: %s1"
@@ -2674,6 +2677,8 @@
 		"Attrib_OperationBonusXP"					"Operasjonsbonus tjent: +%s1 XP"
 		"Attrib_IssueDate"							"Utstedelsesdato: %s1"
 		"Attrib_ExpirationDate"						"Utløpsdato: %s1"
+		"Attrib_PurchaserAccountID"					"Denne gjenstanden har et opprinnelig eierbevis."
+		"Attrib_PurchaserAccountID_title"			"Opprinnelig eierbevis"
 
 		"Notify_KeychainRemoveTool_ChargesUseToRemove"	"Anhengsavbitere tilgjengelig: {d:item_count}<br>Én anhengsavbiter brukes opp hvis du løsner et anheng."
 		"Attrib_KeychainRemoveTool_Charges"			"Anhengsavbitere tilgjengelig: {d:item_count}"
@@ -4348,7 +4353,17 @@
 		"CSGO_crate_sticker_pack_warhammer_xenos_capsule_desc"			"Bring frem skrekken fra Xenos med klistremerkekapselen Warhammer 40,000 Xenos, utgitt i mai 2025."
 		"coupon_warhammer_xenos_sticker_capsule"						"Klistremerkekapsel – Warhammer 40,000 Xenos"
 		
-"SprayKit_vcap1_ace_01"		"Ace"
+		"CSGO_crate_sticker_pack_sugarface2_capsule"	   				"Sugarface 2-klistremerkesamling"
+		"CSGO_crate_sticker_pack_sugarface2_capsule_desc"				"Denne samlingen inneholder en rekke klistremerker med Sugarface-tema, og ble gitt ut i september 2025."
+		"CSGO_crate_sticker_pack_sugarface2_short"						"Sugarface 2-klistremerker"
+		
+		"CSGO_crate_sticker_pack_community2025_capsule"	    			"Samfunnets klistremerkesamling 2025"
+		"CSGO_crate_sticker_pack_community2025_capsule_desc"			"Denne samlingen inneholder en rekke klistremerker og ble gitt ut i september 2025."
+		"CSGO_crate_sticker_pack_community_2025_short"					"Samfunnsklistremerker 2025"
+		
+		"CSGO_crate_community_36"				"Forseglet Genesis-terminal"
+		"CSGO_crate_community_36^volatile"		"Aktiv Genesis-terminal"
+		"SprayKit_vcap1_ace_01"		"Ace"
 "SprayKit_desc_vcap1_ace_01"	""
 "SprayKit_vcap1_banana"		"Banana"
 "SprayKit_desc_vcap1_banana"	""
@@ -5439,6 +5454,7 @@
 		"CSGO_set_timed_drops_warm"				"Radiant-samlingen"
 		"CSGO_set_timed_drops_neutral"			"Boreal-samlingen"
 		"CSGO_set_timed_drops_cool"				"Ascent-samlingen"
+		"CSGO_set_community_36"					"Genesis-samlingen"
 		/////////////////
 		// lootlist override strings
 		//////////////////
@@ -28862,6 +28878,48 @@
 		"StickerKit_warhammer_decals_paper_tau_empire_2"				"T'au Empire 2"
 		"StickerKit_warhammer_decals_paper_tyranids_1"					"Tyranids 1"
 		"StickerKit_warhammer_decals_paper_tyranids_2"					"Tyranids 2"
+		//Sugarface 2 Sticker Capsule
+		
+		"StickerKit_sugarface2_paper_clavis"							"Clavis"
+		"StickerKit_sugarface2_paper_lorena"							"Lorena"
+		"StickerKit_sugarface2_paper_lucas"								"Lucas"
+		"StickerKit_sugarface2_holo_clavis"								"Clavis (holo)"
+		"StickerKit_sugarface2_holo_lorena"								"Lorena (holo)"
+		"StickerKit_sugarface2_holo_lucas"								"Lucas (holo)"
+		"StickerKit_sugarface2_foil_clavis"								"Clavis (folie)"
+		"StickerKit_sugarface2_foil_lorena"								"Lorena (folie)"
+		"StickerKit_sugarface2_foil_lucas"								"Lucas (folie)"
+		//2025 Community Sticker Capsule
+		
+		"StickerKit_community_2025_paper_candy_apples"					"Candy Apples"
+		"StickerKit_community_2025_paper_cubix_connexion"				"Cubix Connexion"
+		"StickerKit_community_2025_paper_eyes_of_farlow"				"Eyes of Farlow"
+		"StickerKit_community_2025_paper_fade_mangos"					"Fade Mangos"
+		"StickerKit_community_2025_paper_gloves_on"						"Gloves On"
+		"StickerKit_community_2025_paper_lock_in"						"Lock In"
+		"StickerKit_community_2025_paper_mimicapsule"					"Mimicapsule"
+		"StickerKit_community_2025_paper_pop_pup"						"Pop Pup"
+		"StickerKit_community_2025_paper_pots"							"POTS"
+		"StickerKit_community_2025_paper_sent_with_love"				"Sent With Love"
+		"StickerKit_community_2025_paper_skelly_stab"					"Skelly Stabby"
+		"StickerKit_community_2025_paper_vice_cursor"					"Vice Cursor"
+		"StickerKit_community_2025_glitter_ct_tracks"					"CT Tracks (glitter)"
+		"StickerKit_community_2025_glitter_overloaded"					"Overloaded (glitter)"
+		"StickerKit_community_2025_glitter_t_tracks"					"T Tracks (glitter)"
+		"StickerKit_community_2025_holo_bomb_planted"					"Bomb Planted (holo)"
+		"StickerKit_community_2025_holo_chrome_dome"					"Chrome Dome (holo)"
+		"StickerKit_community_2025_holo_cutie"							"Cutie (holo)"
+		"StickerKit_community_2025_holo_evidence"						"Evidence (holo)"
+		"StickerKit_community_2025_holo_froggles"						"Froggles (holo)"
+		"StickerKit_community_2025_foil_aint_a_rental"					"Ain't A Rental (folie)"
+		"StickerKit_community_2025_foil_eyes_sky"						"Eyes In The Sky (folie)"
+		"StickerKit_community_2025_foil_good_as_new"					"Good As New (folie)"
+		"StickerKit_community_2025_foil_queen_ava"						"Queen Ava (folie)"
+		"StickerKit_community_2025_foil_hands_off"						"Hands Off (folie)"
+		"StickerKit_community_2025_foil_king_crasswater"				"King Crasswater (folie)"
+		"StickerKit_community_2025_lenticular_bullhit"					"BullHit (lentikulær)"
+		"StickerKit_community_2025_lenticular_digistrike"				"Digi-Strike (lentikulær)"
+		"StickerKit_community_2025_lenticular_mvp"						"Neon MVP (lentikulær)"
 		"PatchKit_patch_banana"            "Crazy Banana"
 		"PatchKit_desc_patch_banana"       "<i>Agent som målestokk</i>"
 		"PatchKit_patch_boss"              "The Boss"
@@ -32827,7 +32885,7 @@
 		"PaintKit_p90_boost_blue"							"Den er spesiallakkert med et vinklet blått og grønt design.\n\n<i>Du ser ut som du føler deg.</i>"
 		"PaintKit_p90_boost_blue_Tag"						"Wave Breaker"
 		
-		"PaintKit_p2k_fractal"								"Den er spesiallakkert i kanonmetallgrå med fraktale design, og avsluttet med oransje detaljer.\n\n<i>>>VÅPENLAKKERING – TEKSTUREKSPERIMENTER – OPPFØRING ÉN<<</i>"
+		"PaintKit_p2k_fractal"								"Den er spesiallakkert i kanonmetallgrå med fraktale design, og avsluttet med oransje detaljer.\n\n<i>&gt;&gt;VÅPENLAKKERING – TEKSTUREKSPERIMENTER – OPPFØRING ÉN&lt;&lt;</i>"
 		"PaintKit_p2k_fractal_Tag"							"Sure Grip"
 		
 		"PaintKit_mag7_ammo_box"							"Den er spesiallakkert for å ligne på en ammunisjonskasse.\n\n<i>Behold kvitteringen.</i>"
@@ -32852,6 +32910,38 @@
 		"PaintKit_m4a4_green_camo_Tag"						"Choppa"
 
 // END COMMUNITY_35
+
+// COMMUNITY_36
+
+		"PaintKit_mp7_smoking_kills_v2"					"Den er spesiallakkert med et fargerikt design med en kvinne med briller som røyker en sigarett.\n\n<i>«Dette kan gå raskt eller sakte. Det er opp til deg.»</i>"
+		"PaintKit_mp7_smoking_kills_v2_Tag"				"Smoking Kills" 
+		
+		"PaintKit_m4a4_skrrrt_green_Tag"				"Full Throttle" 
+		
+		"PaintKit_ak47_puffer_custom_Tag"				"The Oligarch" 
+		
+		"PaintKit_ump45_illumina_v2_Tag"				"Continuum" 
+		
+		"PaintKit_nova_ocular_Tag"						"Ocular"
+		
+		"PaintKit_mac10_kamicatze"						"Den er spesiallakkert med en snerrende katt og et mål bak på rammestykket.\n\n<i>En katt med klør …</i>"
+		"PaintKit_mac10_kamicatze_Tag"					"Cat Fight" 
+		
+		"PaintKit_glock_mirror_maze_Tag"				"Mirror Mosaic" 
+		
+		"PaintKit_dual_elite_biblical_angel_Tag"		"Angel Eyes" 
+		
+		"PaintKit_p250_bullfrog_Tag"					"Bullfrog" 
+		
+		"PaintKit_scar_refraction_Tag"					"Caged" 
+		
+		"PaintKit_mp9_vinyl_Tag"						"Broken Record" 
+		
+		"PaintKit_mag7_circle_copper_Tag"				"MAGnitude" 
+		
+		"PaintKit_m4a1s_quick_liquidation"				"Den mørke grunningen og nøye utvalgte røde og blå detaljer gjør at denne lakkerte M4A1-S-en ser ut som om den gløder under omgivelseslys.\n\n<i>Stille refleksjon.</i>"
+		
+		// END COMMUNITY_36
 
 // OVERPASS_2024
 				
@@ -37053,10 +37143,9 @@
 		"PANOHUD_Spectate_Navigation_New_Cameraman_On"		"[{s:bind_radio}] Slå på kameramann"
 		"PANOHUD_Spectate_Navigation_ToggleSpec"			"[{s:bind_drop}] Miniresultattavle"
 		"PANOHUD_Spectate_Navigation_ToggleOverview"		"[{s:bind_duck}] Oversikt "
-		"PANOHUD_Spectate_Navigation_PlayHighlight"			"[{s:bind_lookatweapon}] Spill av høydepunkt"
-		"PANOHUD_Spectate_Navigation_CopyHighlightAndClose"	"[{s:bind_lookatweapon}] Kopier til utklippstavlen og lukk"
-		"PANOHUD_Spectate_Navigation_CopyHighlightURL"		"[{s:bind_lookatweapon}] Kopier URL til høydepunkt"
-	
+		"PANOHUD_Spectate_Navigation_PlayHighlight"			"[{s:bind_drop}] Spill av høydepunkt"
+		"PANOHUD_Spectate_Navigation_CopyHighlightAndClose"	"[{s:bind_drop}] Kopier til utklippstavlen og lukk"
+		"PANOHUD_Spectate_Navigation_CopyHighlightURL"		"[{s:bind_drop}] Kopier URL til høydepunkt"
 		"PANOHUD_GhostBecomeSpectator"						"Trykk [%s1] for å bli en tilskuer"
 
 		"SFUIHUD_Spectate_You_Are_Dead"				"<font color=\"%s1\">Følger %s2</font>"
@@ -37969,6 +38058,7 @@
 		"SFUI_HUDWeaponRarityColor"			"Sjeldenhetsglød på våpen"
 		"SFUI_HUDWeaponRarityColor_desc"	"Slå dette på for å få våpenikoner i grensesnittet til å gløde med sjeldenhetsfargen sin."
 
+		"SFUI_HUDSpecColorOverride"			"Overstyr grensesnittfarge som tilskuer"
 		"SFUI_Settings_High_Dynamic_Range"	"High Dynamic Range"
 		"SFUI_Settings_Very_High"			"Svært høy"
 		"SFUI_Settings_High"				"Høy"
@@ -38806,13 +38896,13 @@
 
 		"SFUI_OfficialDatacenterID_1"		"USA – Seattle"
 		"SFUI_OfficialDatacenterID_2"		"USA – Virginia"
-		"SFUI_OfficialDatacenterID_3"		"EU – Tyskland"
+		"SFUI_OfficialDatacenterID_3"		"EU – Frankfurt"
 		"SFUI_OfficialDatacenterID_4"		"Sør-Korea"
 		"SFUI_OfficialDatacenterID_5"		"Singapore"
 		"SFUI_OfficialDatacenterID_6"		"De forente arabiske emirater"
 		"SFUI_OfficialDatacenterID_7"		"Australia"
-		"SFUI_OfficialDatacenterID_8"		"EU – Sverige"
-		"SFUI_OfficialDatacenterID_9"		"EU – Østerrike"
+		"SFUI_OfficialDatacenterID_8"		"EU – Stockholm"
+		"SFUI_OfficialDatacenterID_9"		"EU – Wien"
 		"SFUI_OfficialDatacenterID_10"		"Brasil"
 		"SFUI_OfficialDatacenterID_11"		"Sør-Afrika"
 		"SFUI_OfficialDatacenterID_12"		"Kina – Shanghai"
@@ -38824,19 +38914,19 @@
 		// "SFUI_OfficialDatacenterID_18"	"TBD"
 		"SFUI_OfficialDatacenterID_19"		"Japan"
 		"SFUI_OfficialDatacenterID_20"		"Hongkong"
-		"SFUI_OfficialDatacenterID_21"		"EU – Spania"
+		"SFUI_OfficialDatacenterID_21"		"EU – Madrid"
 		"SFUI_OfficialDatacenterID_22"		"USA – California"
 		"SFUI_OfficialDatacenterID_23"		"USA – Atlanta"
 		"SFUI_OfficialDatacenterID_24"		"Hongkong"
 		"SFUI_OfficialDatacenterID_25"		"Kina – Tianjin"
 		"SFUI_OfficialDatacenterID_26"		"India – Chennai"
 		"SFUI_OfficialDatacenterID_27"		"USA – Chicago"
-		"SFUI_OfficialDatacenterID_28"		"EU – Polen"
-		"SFUI_OfficialDatacenterID_29"		"EU – Nederland"
+		"SFUI_OfficialDatacenterID_28"		"EU – Warszawa"
+		"SFUI_OfficialDatacenterID_29"		"EU – Amsterdam"
 		// "SFUI_OfficialDatacenterID_30"		"TBD"
 		"SFUI_OfficialDatacenterID_31"		"USA – Dallas"
 		// "SFUI_OfficialDatacenterID_32"		"TBD"
-		"SFUI_OfficialDatacenterID_33"		"EU – Finland"
+		"SFUI_OfficialDatacenterID_33"		"EU – Helsinki"
 		"SFUI_OfficialDatacenterID_34"		"São Paulo"
 		// "SFUI_OfficialDatacenterID_35"		"US West"
 		// "SFUI_OfficialDatacenterID_36"		"Germany"
@@ -38847,10 +38937,11 @@
 		// "SFUI_OfficialDatacenterID_41"		"TBD"
 		"SFUI_OfficialDatacenterID_42"		"Kina – Chengdu"
 		"SFUI_OfficialDatacenterID_43"		"USA – New York"
-		"SFUI_OfficialDatacenterID_44"		"EU – Finland"
+		"SFUI_OfficialDatacenterID_44"		"EU – Helsinki"
 		"SFUI_OfficialDatacenterID_45"		"Storbritannia"
 		"SFUI_OfficialDatacenterID_49"		"Kina – Guangdong"
 		"SFUI_OfficialDatacenterID_51"		"Kina – Beijing"
+		"SFUI_OfficialDatacenterID_52"		"EU – Falkenstein"
 
 		"SFUI_UserAlert_HighPings"			"Den beste pingen din til offisielle tjenere er %s1 ms."
 		"SFUI_UserAlert_Unreachable"		"Kunne ikke nå noen offisielle tjenere."
@@ -43534,7 +43625,6 @@
 		"popup_totool_decodeable_header_fantoken"	"Aktiver gjenstand"
 		"popup_totool_purchase_header"	"Kjøp"
 		"popup_totool_purchase_header2"	"KJØP FOR Å MOTTA"
-
 		//Purchase
 		"popup_cartpreview_button"		"Forhåndsvis"
 		"popup_cartpreview_title"		"Forhåndsvisning"
@@ -44387,6 +44477,7 @@
 		"PlayMenuReplayNewUserTrainingButton"		"Spill treningsdagen om igjen"
 
 
+		"CSGO_VanityLoadout_Inspect"				"Inspiser"
 		//////////////////////
 		// ANNOTATIONS
 		/////////////////////
@@ -46194,7 +46285,93 @@
 		"Chatwheel_section_report"	"Rapport"
 
 		"Chatwheel_description" "Samtalehjulet gir hurtig tilgang til en liste over nyttige radiokommandoer som kan tilpasses."
+//
+//
+"laptop_window_seal_title"					"STATUS"
+		"laptop_window_currentoffer_title"			"GJELDENDE TILBUD"
+		"user_btn_accept_0"		"Avtale. <b>{s:price} fungerer.</b>"
+		"user_btn_accept_2"		"Jeg går med på <b>{s:price}</b>"
+		"user_btn_accept_4"		"Du har meg på <b>{s:price}</b>"
+		"user_btn_accept_5"		"Den er god — <b>{s:price}</b>"
+		"user_btn_next"			"Avslå tilbud"
+		"user_btn_next_0"		"Fristende, men nei"
+		"user_btn_next_1"		"Ikke verdt kulene mine"
+		"user_btn_next_2"		"Kan ikke gjøre det"
+		"user_btn_next_3"		"Pass"
+		"user_btn_next_4"		"Ingen avtale"
+		"user_btn_next_5"		"Takk, men nei"
+		"user_btn_next_6"		"Ikke denne gangen"
+		"user_btn_next_7"		"Ikke i dag"
+		"user_btn_pause"		"Sett avtalen på pause"
+		"user_btn_end"			"Vi sees neste gang"
 
+		"current_offer_tooltip"		"Våpenhandlerens gjeldende tilbud til deg."
+		"declined_offer_tooltip"	"Avslått tilbud"
+		"future_offer_tooltip"		"Tilbudet er ikke avslørt ennå."
+		"laptop_expiration_tooltip"		"Tid igjen før denne terminalen og tilbudet i den utløper."
+		"collection_xp_tooltip"			"Tjen XP ved å se tilbudene i denne samlingen. Åpne for å se fremdrift og motta XP."
+		"popup_lootlist_title"			"XP fra samlingskatalog"
+		"laptop_pricing_tooltip"		"Prisene er globale og justeres automatisk basert på etterspørselen for hver gjenstand i samlingen."
+
+
+		"dealer_message_resume_0"  	"<!--1-->Du er tilbake. Bra. Tilbudet ligger fortsatt på bordet."
+		"dealer_message_resume_3"  	"<!--1-->Vi fortsetter der vi slapp."
+		"dealer_message_resume_6"  	"<!--1-->Du er tilbake. Hvor var vi?"
+
+		"dealer_message_first_offer_0"	"<!--.5-->Hvis du er interessert, kan vi få til noe."
+		"dealer_message_first_offer_3"	"<!--.5-->Denne er din hvis du vil ha den. Hvis ikke er det ditt tap."
+		"dealer_message_first_offer_4"	"<!--.5-->Hvis det er ja, så gjør vi dette. Jeg kan ikke la dette tilbudet ligge for evig."
+		"dealer_message_first_offer_5"	"<!--.5-->Tilbudet ligger på bordet. Ja eller nei."
+		"dealer_message_first_offer_6"	"<!--.5-->Vil du ha dette eller ikke? Du sårer meg ikke hvis nei. Jeg har andre kjøpere."
+		"dealer_message_first_offer_7"	"<!--.5-->Skal vi gjøre dette eller ikke?"
+		"dealer_message_first_offer_8"	"<!--.5-->Jeg har ikke hele dagen."
+		"dealer_message_first_offer_9"	"<!--.5-->Blir det noe handel av dette?"	
+		"dealer_message_next_offer_0"	"<!--1-->Ok. Den der funket ikke for deg. Hva med denne?"
+		"dealer_message_next_offer_4"	"<!--1-->Jeg forstår. Ikke din stil. La oss se om dette er nærmere. Jeg tror du vil like dette."
+		"dealer_message_next_offer_5"	"<!--1-->Jeg hadde en mistanke om at du kom til å stå over den. Heldigvis hadde jeg denne lille skjønnheten på lur."
+		"dealer_message_next_offer_7"	"<!--1-->Du kommer til å angre på at du ikke tok denne senere. Ikke noe problem. Hva med denne?"
+		"dealer_message_last_offer_4"	"<!--0-->Siste tilbud. Jeg kommer ikke til å tigge."
+		"dealer_message_last_offer_5"	"<!--0-->Ok. Dette er det beste jeg kan gjøre."
+		"dealer_message_last_offer_6"	"<!--0-->Greit. Her. Gjør vi dette eller ikke?"		
+		"dealer_message_last_offer_7"	"<!--0-->Siste og beste tilbud."
+		"dealer_message_timerexpired_0"		"<!--.1-->Ok. Glem det."
+		"dealer_message_timerexpired_1"		"<!--.1-->Glem det<!--.5-->Du hadde sjansen."
+		"dealer_message_open_check_out_1"		"<!--.5-->En utmerket beslutning. Jeg skal sørge for at den er pakket og klar."
+		"dealer_message_open_check_out_2"		"<!--.5-->Du kommer ikke til å angre. Men jeg regner med noen andre kommer til å gjøre det snart."
+		"dealer_message_open_check_out_3"		"<!--.5-->Jeg visste at du kom til å kjøpe. Vi gjør det offisielt."
+		"dealer_message_open_check_out_5"		"<!--.5-->Godt valg."	
+		"dealer_message_open_check_out_6"		"<!--.5-->Det smarteste valget du noen gang har gjort. Vi ferdigstiller det."		
+		"dealer_message_open_check_out_7"		"<!--.5-->Bra. Vi gjør det offisielt."	
+		
+		"dealer_message_txn_xld_bailout_0"		"<!--.5-->Ikke noe hastverk. Du vet hvor du finner meg."
+		"dealer_message_txn_xld_bailout_1"		"<!--.5-->Jeg skal ingensteds."
+		"dealer_message_stattrack_0"			"StatTrak™ installert, selvsagt."
+		"dealer_message_stattrack_1"			"Denne kommer også med StatTrak™."
+		"dealer_message_stattrack_2"			"Denne er utstyr med StatTrak™, så du trenger ikke å holde tellingen i hodet."
+		"dealer_message_stattrack_3"			"Denne har StatTrak™. Når du trekker i avtrekkeren, gjør den regnestykket for deg."
+		"dealer_message_stattrack_4"			"StatTrak™. Tenk på det som en ledertavle. I en sport der man dreper folk."
+		"dealer_message_stattrack_6"			"Denne inkluderer StatTrak™, for profesjonelle som liker drap OG statistikk."
+		"dealer_message_stattrack_7"			"Denne kommer selvfølgelig med StatTrak™."
+		"dealer_message_factory_new_1"			"Ny fra fabrikken. Med duften av et nytt våpen."
+		"dealer_message_factory_new_2"			"Denne er ikke blitt brukt før. Du blir den første som trekker i avtrekkeren."
+		"dealer_message_factory_new_3"			"Rett fra samlebåndet. Ingen slitasje. Akkurat slik du liker det."
+		"dealer_message_factory_new_4"			"Denne er ren og i perfekt stand. Ingen riper, ingen historie. Det er der du kommer inn."
+		"dealer_message_factory_new_5"			"Ny fra fabrikken. Aldri avfyrt. Denne er plettfri."
+		"dealer_message_item_desc_0"			"<!--.25-->Denne har en merknad:<!--.25-->{s:flavor-text}<!--.25-->Hva enn det måtte bety."
+		"dealer_message_item_desc_1"			"<!--.25-->Denne kom med en liten merknad:<!--.25-->{s:flavor-text}"
+
+		"dealer_message_addition_stattrak_0"	"<!--.25-->… og med StatTrak™."
+		"dealer_message_addition_stattrak_1"	"<!--.25-->StatTrak™-modulen er installert på forhånd."
+		"dealer_message_addition_stattrak_2"	"<!--.25-->Med StatTrak™ for å spore alt kaoset du kommer til å skape."
+		"dealer_message_addition_stattrak_3"	"<!--.25-->Den har også StatTrak™."
+		"dealer_message_addition_stattrak_4"	"<!--.25-->Kommer også med StatTrak™, så du aldri mister oversikten over hvor mye elendighet du skaper."
+
+		"dealer_message_addition_factory_new_0"	"<!--.25-->Og den er flunkende ny. Ikke brukt."
+		"dealer_message_addition_factory_new_1"	"<!--.25-->Og den er flunkende ny. Plettfri."
+		"dealer_message_addition_factory_new_2"	"<!--.25-->Rett fra hvelvet. Fabrikkny."
+		"dealer_message_addition_factory_new_3"	"<!--.25-->Denne er flunkende ny. Aldri avfyrt."
+
+		"system_dealer_left_chat_0"				"Våpenhandleren har forlatt samtalen."
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -46371,31 +46548,8 @@
 		"quest_11015_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> – vinn en runde.#|#<b>{s:gamemode}: {s:location}</b> – vinn runder."
 		"quest_11015_var_ingame:p{mission-points}"		"Vinn en runde#|#Vinn runder"
 
-// crow_mask_48113_comment
-// crow_mask_48114_comment
-}
-
-
-
-
-}
-
-
-
-		"quest_11012_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> – vinn en runde.#|#<b>{s:gamemode}: {s:location}</b> – vinn runder."
-		"quest_11012_var_ingame:p{mission-points}"		"Vinn en runde#|#Vinn runder"
-		
-		"quest_11013_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> – vinn en runde.#|#<b>{s:gamemode}: {s:location}</b> – vinn runder."
-		"quest_11013_var_ingame:p{mission-points}"		"Vinn en runde#|#Vinn runder"
-		
-		"quest_11014_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> – vinn en runde.#|#<b>{s:gamemode}: {s:location}</b> – vinn runder."
-		"quest_11014_var_ingame:p{mission-points}"		"Vinn en runde#|#Vinn runder"
-		
-		"quest_11015_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> – vinn en runde.#|#<b>{s:gamemode}: {s:location}</b> – vinn runder."
-		"quest_11015_var_ingame:p{mission-points}"		"Vinn en runde#|#Vinn runder"
-
-// crow_mask_48113_comment
-// crow_mask_48114_comment
+// crow_mask_48593_comment
+// crow_mask_48594_comment
 }
 
 

@@ -2334,9 +2334,6 @@
 		"Econ_Revolving_Loot_List"				"Περιέχει ένα από τα παρακάτω αντικείμενα:"
 		"Econ_Revolving_Loot_List_Single"		"Ανοίξτε και λάβετε ένα από τα ακόλουθα"
 		"Econ_Revolving_Loot_List_Rental"		"<img src='file://{images}/icons/ui/hourglass.svg' class='popup-decodable-lootlist-single-icon'/> Νοικιάστε κάθε όπλο (εξαιρείται το υπερβολικά σπάνιο αντικείμενο) σε αυτό το κιβώτιο για 7 ημέρες "
-		"Econ_Revolving_Loot_SecureConnectionLine"	"Προσφέρει ευκαιρία για αγορά ενός από τα ακόλουθα:"
-
-		
 		"Econ_Revolving_Loot_List_Rare_Item"	"ή ένα υπερβολικά σπάνιο αντικείμενο!"
 		"Exceedingly_Rare_Item"					"★ Εξαιρετικά σπάνιο αντικείμενο ★"
 
@@ -2638,7 +2635,6 @@
 		"Attrib_MatchWins"							"Ανταγωνιστικές νίκες σε χάρτες επιχείρησης: %s1"
 		"Attrib_HasSilencer"						"Σιγαστήρας"
 		"Attrib_HasBurstMode"						"Επιλογή 3ων σφαιρών ανά βολή"
-		"Attrib_SecureConnectionLine"				"Ασφαλής γραμμή σύνδεσης #%s1"
 		"Attrib_SupplyCrateSeries"					"Κιβώτιο σειράς #%s1"
 		"Attrib_KillEater"							"Αυτό το αντικείμενο χρησιμοποιεί τεχνολογία StatTrak™, που ανιχνεύει ορισμένα στατιστικά όταν το χειρίζεται ο κάτοχός του."
 		"Attrib_ReferencedItem"						"Περιέχει: %s1"
@@ -2674,7 +2670,6 @@
 		"Attrib_OperationBonusXP"					"Επιπλέον κέρδος επιχείρησης: +%s1 εμπειρία"
 		"Attrib_IssueDate"							"Ημερομηνία έκδοσης: %s1"
 		"Attrib_ExpirationDate"						"Ημερομηνία λήξης: %s1"
-
 		"Notify_KeychainRemoveTool_ChargesUseToRemove"	"Διαθέσιμες Αφαιρέσεις Γουριού: {d:item_count}<br>Η αφαίρεση ενός γουριού καταναλώνει μία Αφαίρεση Γουριού."
 		"Attrib_KeychainRemoveTool_Charges"			"Διαθέσιμες Αφαιρέσεις Γουριού: {d:item_count}"
 		"Attrib_SpraysRemaining"					"Υπόλοιπες φορτίσεις: %s1"
@@ -4352,7 +4347,7 @@
 		"CSGO_crate_sticker_pack_warhammer_xenos_capsule_desc"			"Φέρτε τον τρόμο των Xenos με την κάψουλα αυτοκόλλητων Warhammer 40.000 Xenos, που κυκλοφόρησε τον Μάιο του 2025."
 		"coupon_warhammer_xenos_sticker_capsule"						"Κάψουλα αυτοκόλλητων Warhammer 40.000 Xenos"
 		
-"SprayKit_vcap1_ace_01"		"Ace"
+		"SprayKit_vcap1_ace_01"		"Ace"
 "SprayKit_desc_vcap1_ace_01"	" "
 "SprayKit_vcap1_banana"		"Banana"
 "SprayKit_desc_vcap1_banana"	" "
@@ -28986,7 +28981,7 @@
 		"StickerKit_warhammer_decals_paper_tau_empire_2"				"T'au Empire 2"
 		"StickerKit_warhammer_decals_paper_tyranids_1"					"Tyranids 1"
 		"StickerKit_warhammer_decals_paper_tyranids_2"					"Tyranids 2"
-		"PatchKit_patch_banana"            "Crazy Banana"
+"PatchKit_patch_banana"            "Crazy Banana"
 		"PatchKit_desc_patch_banana"       "<i>Πράκτορας για κλίμακα</i>"
 		"PatchKit_patch_boss"              "The Boss"
 		"PatchKit_desc_patch_boss"         "<i>Βαρύ βαρύ του πράκτορα το στέμμα</i>"
@@ -32984,7 +32979,6 @@
 		"PaintKit_p90_boost_blue"							"Έχει βαφεί ειδικά με ένα μπλε και πράσινο σχέδιο με γωνίες.\n\n<i>Φαίνεσαι όπως νιώθεις</i>"
 		"PaintKit_p90_boost_blue_Tag"						"Wave Breaker"
 		
-		"PaintKit_p2k_fractal"								"Έχει βαφεί ειδικά σε μεταλλικό γκρι χρώμα, χρησιμοποιώντας σχέδια φράκταλ και έχει φινιριστεί με πορτοκαλί εμφάσεις.\n\n<i>>>ΠΕΙΡΑΜΑΤΑ ΥΦΗΣ ΦΙΝΙΡΙΣΜΑΤΟΣ ΟΠΛΩΝ, ΚΑΤΑΧΩΡΗΣΗ ΕΝΑ<<</i>"
 		"PaintKit_p2k_fractal_Tag"							"Sure Grip"
 		
 		"PaintKit_mag7_ammo_box"							"Έχει βαφεί ειδικά για να μοιάζει με ένα κιβώτιο πυρομαχικών.\n\n<i>Κρατήστε την απόδειξη</i>"
@@ -33007,8 +33001,7 @@
 		
 		"PaintKit_m4a4_green_camo"							"Έχει βαφεί ειδικά με ένα πράσινο μοτίβο παραλλαγής.\n\n<i>Αυξήστε το ψηφιακό σας αποτύπωμα</i>"
 		"PaintKit_m4a4_green_camo_Tag"						"Choppa"
-
-// END COMMUNITY_35
+// END COMMUNITY_36
 
 // OVERPASS_2024
 				
@@ -37213,10 +37206,6 @@
 		"PANOHUD_Spectate_Navigation_New_Cameraman_On"		"[{s:bind_radio}] Ενεργοποίηση εικονολήπτη"
 		"PANOHUD_Spectate_Navigation_ToggleSpec"			"[{s:bind_drop}] Μικρός βαθμολογικός πίνακας"
 		"PANOHUD_Spectate_Navigation_ToggleOverview"		"[{s:bind_duck}] Επισκόπηση"
-		"PANOHUD_Spectate_Navigation_PlayHighlight"			"[{s:bind_lookatweapon}] Αναπαραγωγή καλύτερης στιγμής"
-		"PANOHUD_Spectate_Navigation_CopyHighlightAndClose"	"[{s:bind_lookatweapon}] Αντιγραφή στο πρόχειρο και κλείσιμο"
-		"PANOHUD_Spectate_Navigation_CopyHighlightURL"		"[{s:bind_lookatweapon}] Αντιγραφή URL καλύτερης στιγμής"
-	
 		"PANOHUD_GhostBecomeSpectator"						"Πατήστε [%s1] για να γίνετε θεατής"
 
 		"SFUIHUD_Spectate_You_Are_Dead"				"<font color=\"%s1\">Παρακολουθείτε %s2</font>"
@@ -38967,13 +38956,10 @@
 
 		"SFUI_OfficialDatacenterID_1"		"Η.Π.Α., Σιάτλ"
 		"SFUI_OfficialDatacenterID_2"		"Η.Π.Α., Βιρτζίνια"
-		"SFUI_OfficialDatacenterID_3"		"Ε.Ε., Γερμανία"
 		"SFUI_OfficialDatacenterID_4"		"Νότια Κορέα"
 		"SFUI_OfficialDatacenterID_5"		"Σιγκαπούρη"
 		"SFUI_OfficialDatacenterID_6"		"Ηνωμένα Αραβικά Εμιράτα"
 		"SFUI_OfficialDatacenterID_7"		"Αυστραλία"
-		"SFUI_OfficialDatacenterID_8"		"Ε.Ε., Σουηδία"
-		"SFUI_OfficialDatacenterID_9"		"Ε.Ε., Αυστρία"
 		"SFUI_OfficialDatacenterID_10"		"Βραζιλία"
 		"SFUI_OfficialDatacenterID_11"		"Νότια Αφρική"
 		"SFUI_OfficialDatacenterID_12"		"Κίνα, Σαγκάη"
@@ -38985,20 +38971,15 @@
 		// "SFUI_OfficialDatacenterID_18"	"TBD"
 		"SFUI_OfficialDatacenterID_19"		"Ιαπωνία"
 		"SFUI_OfficialDatacenterID_20"		"Χονγκ Κονγκ"
-		"SFUI_OfficialDatacenterID_21"		"Ε.Ε., Ισπανία"
 		"SFUI_OfficialDatacenterID_22"		"Η.Π.Α., Καλιφόρνια"
 		"SFUI_OfficialDatacenterID_23"		"Η.Π.Α., Ατλάντα"
 		"SFUI_OfficialDatacenterID_24"		"Χονγκ Κονγκ"
 		"SFUI_OfficialDatacenterID_25"		"Κίνα, Τιεντζίν"
 		"SFUI_OfficialDatacenterID_26"		"Ινδία, Τσενάι"
 		"SFUI_OfficialDatacenterID_27"		"Η.Π.Α., Σικάγο"
-		"SFUI_OfficialDatacenterID_28"		"Ε.Ε., Πολωνία"
-		"SFUI_OfficialDatacenterID_29"		"Ε.Ε., Ολλανδία"
 		// "SFUI_OfficialDatacenterID_30"		"TBD"
 		"SFUI_OfficialDatacenterID_31"		"ΗΠΑ, Ντάλας"
-		// "SFUI_OfficialDatacenterID_32"		"TBD"
-		"SFUI_OfficialDatacenterID_33"		"Ε.Ε., Φινλανδία"
-		"SFUI_OfficialDatacenterID_34"		"Σάο Πάολο"
+"SFUI_OfficialDatacenterID_34"		"Σάο Πάολο"
 		// "SFUI_OfficialDatacenterID_35"		"US West"
 		// "SFUI_OfficialDatacenterID_36"		"Germany"
 		// "SFUI_OfficialDatacenterID_37"		"Hong Kong"
@@ -39008,11 +38989,9 @@
 		// "SFUI_OfficialDatacenterID_41"		"TBD"
 		"SFUI_OfficialDatacenterID_42"		"Κίνα, Τσενγκντού"
 		"SFUI_OfficialDatacenterID_43"		"Η.Π.Α., Νέα Υόρκη"
-		"SFUI_OfficialDatacenterID_44"		"Ε.Ε., Φινλανδία"
 		"SFUI_OfficialDatacenterID_45"		"Ηνωμένο Βασίλειο"
 		"SFUI_OfficialDatacenterID_49"		"Κίνα, Γκουανγκντόνγκ"
 		"SFUI_OfficialDatacenterID_51"		"Κίνα, Πεκίνο"
-
 		"SFUI_UserAlert_HighPings"			"Το καλύτερο ping σας σε επίσημους διακομιστές είναι %s1 ms."
 		"SFUI_UserAlert_Unreachable"		"Αποτυχία επικοινωνίας με επίσημους διακομιστές."
 		"SFUI_UserAlert_Unreachable_NoConfig"	"Αδυναμία ανάκτησης διαμόρφωσης δικτύου από HTTPS. Ελέγξτε τη σύνδεσή σας στο διαδίκτυο και τη διαμόρφωση του τείχους προστασίας σας."
@@ -43693,7 +43672,6 @@
 		"popup_totool_decodeable_header_fantoken"	"Ενεργοποίηση αντικειμένου"
 		"popup_totool_purchase_header"	"Αγορά"
 		"popup_totool_purchase_header2"	"ΑΓΟΡΑ ΓΙΑ ΑΠΟΚΤΗΣΗ"
-
 		//Purchase
 		"popup_cartpreview_button"		"Προεπισκόπηση"
 		"popup_cartpreview_title"		"Προεπισκόπηση"
@@ -46343,8 +46321,9 @@
 		"Chatwheel_section_report"	"Αναφορά"
 
 		"Chatwheel_description" "Η ροδέλα συνομιλίας παρέχει μια γρήγορη πρόσβαση σε μια προσαρμόσιμη λίστα χρήσιμων εντολών ασυρμάτου."
-
-		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -46506,6 +46485,31 @@
 		"quest_11010_var_ingame:p{mission-points}"	 	"Κατορθώστε σκοτωμό με {s:item1}#|#Κατορθώστε σκοτωμούς με {s:item1}"
 		
 		"quest_11011_var_desc:p{mission-points}"	 	"Κερδίστε έναν γύρο σε <b>{s:gamemode}: {s:location}</b>.#|#Κερδίστε γύρους σε <b>{s:gamemode}: {s:location}</b>."
+		"quest_11011_var_ingame:p{mission-points}"		"Κερδίστε έναν γύρο#|#Κερδίστε γύρους"
+		
+		"quest_11012_var_desc:p{mission-points}"	 	"Κερδίστε έναν γύρο σε <b>{s:gamemode}: {s:location}</b>.#|#Κερδίστε γύρους σε <b>{s:gamemode}: {s:location}</b>."
+		"quest_11012_var_ingame:p{mission-points}"		"Κερδίστε έναν γύρο#|#Κερδίστε γύρους"
+		
+		"quest_11013_var_desc:p{mission-points}"	 	"Κερδίστε έναν γύρο σε <b>{s:gamemode}: {s:location}</b>.#|#Κερδίστε γύρους σε <b>{s:gamemode}: {s:location}</b>."
+		"quest_11013_var_ingame:p{mission-points}"		"Κερδίστε έναν γύρο#|#Κερδίστε γύρους"
+		
+		"quest_11014_var_desc:p{mission-points}"	 	"Κερδίστε έναν γύρο σε <b>{s:gamemode}: {s:location}</b>.#|#Κερδίστε γύρους σε <b>{s:gamemode}: {s:location}</b>."
+		"quest_11014_var_ingame:p{mission-points}"		"Κερδίστε έναν γύρο#|#Κερδίστε γύρους"
+		
+		"quest_11015_var_desc:p{mission-points}"	 	"Κερδίστε έναν γύρο σε <b>{s:gamemode}: {s:location}</b>.#|#Κερδίστε γύρους σε <b>{s:gamemode}: {s:location}</b>."
+		"quest_11015_var_ingame:p{mission-points}"		"Κερδίστε έναν γύρο#|#Κερδίστε γύρους"
+
+// crow_mask_48593_comment
+// crow_mask_48594_comment
+}
+
+
+
+
+}
+
+
+de}: {s:location}</b>.#|#Κερδίστε γύρους σε <b>{s:gamemode}: {s:location}</b>."
 		"quest_11011_var_ingame:p{mission-points}"		"Κερδίστε έναν γύρο#|#Κερδίστε γύρους"
 		
 		"quest_11012_var_desc:p{mission-points}"	 	"Κερδίστε έναν γύρο σε <b>{s:gamemode}: {s:location}</b>.#|#Κερδίστε γύρους σε <b>{s:gamemode}: {s:location}</b>."

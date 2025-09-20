@@ -2330,9 +2330,6 @@
 		"Econ_Revolving_Loot_List"				"Enthält einen der folgende Gegenstände:"
 		"Econ_Revolving_Loot_List_Single"		"Öffnen, um einen der folgenden Gegenstände zu erhalten:"
 		"Econ_Revolving_Loot_List_Rental"		"<img src='file://{images}/icons/ui/hourglass.svg' class='popup-decodable-lootlist-single-icon'/> Mieten Sie jede Waffe (mit Ausnahme der außerordentlich seltenen Gegenstände) in diesem Behälter für 7 Tage "
-		"Econ_Revolving_Loot_SecureConnectionLine"	"Bietet die Möglichkeit, einen der folgenden Gegenstände zu kaufen:"
-
-		
 		"Econ_Revolving_Loot_List_Rare_Item"	"oder einen außerordentlich seltenen Bonus-Gegenstand!"
 		"Exceedingly_Rare_Item"					"★ Seltener Spezialgegenstand ★"
 
@@ -2634,7 +2631,6 @@
 		"Attrib_MatchWins"							"Wettkampfsiege auf Operationskarten: %s1"
 		"Attrib_HasSilencer"						"Schalldämpfer"
 		"Attrib_HasBurstMode"						"Dreifach-Feuerstoß-Option"
-		"Attrib_SecureConnectionLine"				"Sichere Verbindung Nr. %s1"
 		"Attrib_SupplyCrateSeries"					"Behälterreihe #%s1"
 		"Attrib_KillEater"							"Dieser Gegenstand verfügt über StatTrak™-Technologie, der bestimmte Statistiken festhält, wenn er von ihrem Besitzer ausgerüstet wird."
 		"Attrib_ReferencedItem"						"Beinhaltet: %s1"
@@ -2670,7 +2666,6 @@
 		"Attrib_OperationBonusXP"					"Operationsbonus verdient: +%s1 EP"
 		"Attrib_IssueDate"							"Ausgabedatum: %s1"
 		"Attrib_ExpirationDate"						"Gemietet bis: %s1"
-
 		"Notify_KeychainRemoveTool_ChargesUseToRemove"	"Verfügbare Anhängerablösungen: {d:item_count}<br>Das Ablösen eines Anhängers verbraucht eine Ablösung."
 		"Attrib_KeychainRemoveTool_Charges"			"Verfügbare Anhängerablösungen: {d:item_count}"
 		"Attrib_SpraysRemaining"					"Verbleibende Sprays: %s1"
@@ -4298,7 +4293,7 @@
 		"CSGO_crate_sticker_pack_warhammer_xenos_capsule_desc"			"Beschwören Sie mit dieser von Warhammer 40.000 inspirierten Aufkleberkapsel die Xenos-Bedrohung herauf. Veröffentlicht im Mai 2025."
 		"coupon_warhammer_xenos_sticker_capsule"						"Aufkleberkapsel „Warhammer 40.000 – Die Xenos-Bedrohung“"
 		
-"SprayKit_vcap1_ace_01"		"Ace"
+		"SprayKit_vcap1_ace_01"		"Ace"
 "SprayKit_vcap1_banana"		"Banana"
 "SprayKit_vcap1_cerberus"		"Cerberus"
 "SprayKit_vcap1_clutch_01"		"Clutch King"
@@ -27850,7 +27845,7 @@
 		"StickerKit_warhammer_decals_paper_tau_empire_2"				"Sternenreich der T’au 2"
 		"StickerKit_warhammer_decals_paper_tyranids_1"					"Tyraniden 1"
 		"StickerKit_warhammer_decals_paper_tyranids_2"					"Tyraniden 2"
-		"PatchKit_patch_banana"            "Verrückte Banane"
+"PatchKit_patch_banana"            "Verrückte Banane"
 		"PatchKit_desc_patch_banana"       "<i>Agent als Größenvergleich</i>"
 		"PatchKit_patch_boss"              "Der Boss"
 		"PatchKit_desc_patch_boss"         "<i>Schwer ist der Agent, der die Krone trägt</i>"
@@ -31771,7 +31766,6 @@
 		"PaintKit_p90_boost_blue"							"Die Waffe wurde mit einer Sonderlackierung versehen, die ein verwinkeltes blau-grünes Muster zeigt.\n\n<i>Man ist so alt, wie man sich fühlt</i>"
 		"PaintKit_p90_boost_blue_Tag"						"Wellenbrecher"
 		
-		"PaintKit_p2k_fractal"								"Die Waffe wurde mit einer Sonderlackierung versehen, die ein metallisch-graues Fraktalmuster mit orangefarbenen Akzenten zeigt.\n\n<i>TEXTUREXPERIMENTE FÜR WAFFENLACKIERUNGEN, EINTRAG EINS</i>"
 		"PaintKit_p2k_fractal_Tag"							"Griffig"
 		
 		"PaintKit_mag7_ammo_box"							"Die Waffe wurde mit einer Sonderlackierung versehen, die einer Munitionskiste ähnelt.\n\n<i>Behalte die Quittung</i>"
@@ -31794,8 +31788,7 @@
 		
 		"PaintKit_m4a4_green_camo"							"Die Waffe wurde mit einer Sonderlackierung in einem grünen Tarnmuster versehen.\n\n<i>Digitaler Fußabdruck</i>"
 		"PaintKit_m4a4_green_camo_Tag"						"Helikopter"
-
-// END COMMUNITY_35
+// END COMMUNITY_36
 
 // OVERPASS_2024
 				
@@ -35976,10 +35969,6 @@
 		"PANOHUD_Spectate_Navigation_New_Cameraman_On"		"[{s:bind_radio}] Kameramann anschalten"
 		"PANOHUD_Spectate_Navigation_ToggleSpec"			"[{s:bind_drop}] Spieleranzeige"
 		"PANOHUD_Spectate_Navigation_ToggleOverview"		"[{s:bind_duck}] Übersicht "
-		"PANOHUD_Spectate_Navigation_PlayHighlight"			"[{s:bind_lookatweapon}] Highlight abspielen"
-		"PANOHUD_Spectate_Navigation_CopyHighlightAndClose"	"[{s:bind_lookatweapon}] In die Zwischenablage kopieren und schließen"
-		"PANOHUD_Spectate_Navigation_CopyHighlightURL"		"[{s:bind_lookatweapon}] Highlight-URL kopieren"
-	
 		"PANOHUD_GhostBecomeSpectator"						"Drücken Sie [%s1], um Zuschauer zu werden"
 
 		"SFUIHUD_Spectate_You_Are_Dead"				"<font color=\"%s1\">Sie folgen %s2</font>"
@@ -37729,13 +37718,10 @@
 
 		"SFUI_OfficialDatacenterID_1"		"USA, Seattle"
 		"SFUI_OfficialDatacenterID_2"		"USA, Virginia"
-		"SFUI_OfficialDatacenterID_3"		"Europa, Deutschland"
 		"SFUI_OfficialDatacenterID_4"		"Südkorea"
 		"SFUI_OfficialDatacenterID_5"		"Singapur"
 		"SFUI_OfficialDatacenterID_6"		"Vereinigte Arabische Emirate"
 		"SFUI_OfficialDatacenterID_7"		"Australien"
-		"SFUI_OfficialDatacenterID_8"		"Europa, Schweden"
-		"SFUI_OfficialDatacenterID_9"		"Europa, Österreich"
 		"SFUI_OfficialDatacenterID_10"		"Brasilien"
 		"SFUI_OfficialDatacenterID_11"		"Südafrika"
 		"SFUI_OfficialDatacenterID_12"		"China, Shanghai"
@@ -37747,20 +37733,15 @@
 		// "SFUI_OfficialDatacenterID_18"	"TBD"
 		"SFUI_OfficialDatacenterID_19"		"Japan"
 		"SFUI_OfficialDatacenterID_20"		"Hongkong"
-		"SFUI_OfficialDatacenterID_21"		"Europa, Spanien"
 		"SFUI_OfficialDatacenterID_22"		"USA, Kalifornien"
 		"SFUI_OfficialDatacenterID_23"		"USA, Atlanta"
 		"SFUI_OfficialDatacenterID_24"		"Hongkong"
 		"SFUI_OfficialDatacenterID_25"		"China, Tianjin"
 		"SFUI_OfficialDatacenterID_26"		"Indien, Chennai"
 		"SFUI_OfficialDatacenterID_27"		"USA, Chicago"
-		"SFUI_OfficialDatacenterID_28"		"Europa, Polen"
-		"SFUI_OfficialDatacenterID_29"		"Europa, Niederlande"
 		// "SFUI_OfficialDatacenterID_30"		"TBD"
 		"SFUI_OfficialDatacenterID_31"		"USA, Dallas"
-		// "SFUI_OfficialDatacenterID_32"		"TBD"
-		"SFUI_OfficialDatacenterID_33"		"Europa, Finnland"
-		"SFUI_OfficialDatacenterID_34"		"Brasilien, São Paulo"
+"SFUI_OfficialDatacenterID_34"		"Brasilien, São Paulo"
 		// "SFUI_OfficialDatacenterID_35"		"US West"
 		// "SFUI_OfficialDatacenterID_36"		"Germany"
 		// "SFUI_OfficialDatacenterID_37"		"Hong Kong"
@@ -37770,11 +37751,9 @@
 		// "SFUI_OfficialDatacenterID_41"		"TBD"
 		"SFUI_OfficialDatacenterID_42"		"China, Chengdu"
 		"SFUI_OfficialDatacenterID_43"		"USA, New York"
-		"SFUI_OfficialDatacenterID_44"		"Europa, Finnland"
 		"SFUI_OfficialDatacenterID_45"		"Vereinigtes Königreich"
 		"SFUI_OfficialDatacenterID_49"		"China, Guangdong"
 		"SFUI_OfficialDatacenterID_51"		"China, Peking"
-
 		"SFUI_UserAlert_HighPings"			"Ihr bester Ping zu den offiziellen Servern ist %s1 ms."
 		"SFUI_UserAlert_Unreachable"		"Es konnte keiner der offiziellen Server erreicht werden."
 		"SFUI_UserAlert_Unreachable_NoConfig"	"Die Netzwerkkonfiguration kann nicht über HTTPS abgerufen werden. Überprüfen Sie Ihre Internetverbindung und Firewall-Konfiguration."
@@ -42445,7 +42424,6 @@
 		"popup_totool_decodeable_header_fantoken"	"Gegenstand aktivieren"
 		"popup_totool_purchase_header"	"Kaufen"
 		"popup_totool_purchase_header2"	"ZUM ERHALTEN KAUFEN"
-
 		//Purchase
 		"popup_cartpreview_button"		"Vorschau"
 		"popup_cartpreview_title"		"Vorschau"
@@ -45071,8 +45049,9 @@
 		"Chatwheel_section_report"	"Bericht erstatten"
 
 		"Chatwheel_description" "Mit dem Chatrad haben Sie schnellen Zugriff auf eine anpassbare Liste nützlicher Funksprüche."
-
-		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -45237,6 +45216,28 @@
 		"quest_11011_var_ingame:p{mission-points}"		"Gewinnen Sie eine Runde.#|#Gewinnen Sie mehrere Runden."
 		
 		"quest_11012_var_desc:p{mission-points}"	 	"Gewinnen Sie eine Runde im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.#|#Gewinnen Sie mehrere Runden im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>."
+		"quest_11012_var_ingame:p{mission-points}"		"Gewinnen Sie eine Runde.#|#Gewinnen Sie mehrere Runden."
+		
+		"quest_11013_var_desc:p{mission-points}"	 	"Gewinnen Sie eine Runde im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.#|#Gewinnen Sie mehrere Runden im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>."
+		"quest_11013_var_ingame:p{mission-points}"		"Gewinnen Sie eine Runde.#|#Gewinnen Sie mehrere Runden."
+		
+		"quest_11014_var_desc:p{mission-points}"	 	"Gewinnen Sie eine Runde im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.#|#Gewinnen Sie mehrere Runden im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>."
+		"quest_11014_var_ingame:p{mission-points}"		"Gewinnen Sie eine Runde.#|#Gewinnen Sie mehrere Runden."
+		
+		"quest_11015_var_desc:p{mission-points}"	 	"Gewinnen Sie eine Runde im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.#|#Gewinnen Sie mehrere Runden im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>."
+		"quest_11015_var_ingame:p{mission-points}"		"Gewinnen Sie eine Runde.#|#Gewinnen Sie mehrere Runden."
+
+// crow_mask_48593_comment
+// crow_mask_48594_comment
+}
+
+
+
+
+}
+
+
+Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>."
 		"quest_11012_var_ingame:p{mission-points}"		"Gewinnen Sie eine Runde.#|#Gewinnen Sie mehrere Runden."
 		
 		"quest_11013_var_desc:p{mission-points}"	 	"Gewinnen Sie eine Runde im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.#|#Gewinnen Sie mehrere Runden im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>."

@@ -2341,9 +2341,6 @@
 		"Econ_Revolving_Loot_List"				"含有下列其中一項物品："
 		"Econ_Revolving_Loot_List_Single"		"開啟並接收下列其中一項"
 		"Econ_Revolving_Loot_List_Rental"		"<img src='file://{images}/icons/ui/hourglass.svg' class='popup-decodable-lootlist-single-icon'/> 租用箱子裡的所有武器（極度稀有物品除外）7 天 "
-		"Econ_Revolving_Loot_SecureConnectionLine"	"提供購買以下其中一項物品的機會："
-
-		
 		"Econ_Revolving_Loot_List_Rare_Item"	"或極度稀有的特殊物品！"
 		"Exceedingly_Rare_Item"					"★ 特殊稀有物品 ★"
 
@@ -2645,7 +2642,6 @@
 		"Attrib_MatchWins"							"行動地圖中競技模式的勝利場數： %s1"
 		"Attrib_HasSilencer"						"滅音器"
 		"Attrib_HasBurstMode"						"三連發模式"
-		"Attrib_SecureConnectionLine"				"安全聯繫通話 #%s1"
 		"Attrib_SupplyCrateSeries"					"箱子系列 #%s1"
 		"Attrib_KillEater"							"這是屬於 StatTrak™ 科技的物品，在由擁有者裝備時紀錄目前數據。"
 		"Attrib_ReferencedItem"						"內容物：%s1"
@@ -2681,7 +2677,6 @@
 		"Attrib_OperationBonusXP"					"行動獎勵獲得： +%s1 經驗值"
 		"Attrib_IssueDate"							"發行日期：%s1"
 		"Attrib_ExpirationDate"						"到期日：%s1"
-
 		"Notify_KeychainRemoveTool_ChargesUseToRemove"	"剩餘的吊飾卸除器： {d:item_count}<br>移除吊飾需要一個吊飾卸除器。"
 		"Attrib_KeychainRemoveTool_Charges"			"剩餘的吊飾卸除器： {d:item_count}"
 		"Attrib_SpraysRemaining"					"剩餘使用次數：%s1"
@@ -4355,7 +4350,7 @@
 		"CSGO_crate_sticker_pack_warhammer_xenos_capsule_desc"			"釋放異形的恐怖威壓！戰鎚 40K 異形貼紙轉蛋，於 2025 年 5 月推出。"
 		"coupon_warhammer_xenos_sticker_capsule"						"戰鎚 40K 異形貼紙轉蛋"
 		
-"SprayKit_vcap1_ace_01"		"Ace"
+		"SprayKit_vcap1_ace_01"		"Ace"
 "SprayKit_vcap1_banana"		"香蕉"
 "SprayKit_vcap1_cerberus"		"地獄犬"
 "SprayKit_vcap1_clutch_01"		"殘局之王"
@@ -5948,11 +5943,11 @@
 		"quest_target_defaultpistol"									"預設手槍"
 		"quest_target_knife"											"軍刀"
 
-		"quest_action_plural_act_kill_human"							"擊殺"
-		"quest_action_singular_act_kill_human"							"擊殺"
+		"quest_action_plural_act_kill_human"							"次擊殺"
+		"quest_action_singular_act_kill_human"							"次擊殺"
 
-		"quest_action_plural_act_kill_chicken"							"擊殺"
-		"quest_action_singular_act_kill_chicken"						"擊殺"		
+		"quest_action_plural_act_kill_chicken"							"次擊殺"
+		"quest_action_singular_act_kill_chicken"						"次擊殺"		
 
 		"quest_action_plural_act_protect_chicken"						"保護雞秒數"
 		"quest_action_singular_act_protect_chicken"						"保護雞秒數"	
@@ -28673,7 +28668,7 @@
 		"StickerKit_warhammer_decals_paper_tau_empire_2"				"鈦帝國 2"
 		"StickerKit_warhammer_decals_paper_tyranids_1"					"泰倫蟲族 1"
 		"StickerKit_warhammer_decals_paper_tyranids_2"					"泰倫蟲族 2"
-		"PatchKit_patch_banana"            "瘋狂香蕉"
+"PatchKit_patch_banana"            "瘋狂香蕉"
 		"PatchKit_desc_patch_banana"       "<i>幹員比例尺</i>"
 		"PatchKit_patch_boss"              "老大"
 		"PatchKit_desc_patch_boss"         "<i>要戴上皇冠，必須擔得起其重量</i>"
@@ -32594,7 +32589,6 @@
 		"PaintKit_p90_boost_blue"							"以有稜有角的藍色和綠色設計進行客製化塗裝。\n\n<i>表裡如一</i>"
 		"PaintKit_p90_boost_blue_Tag"						"破浪者"
 		
-		"PaintKit_p2k_fractal"								"客製化塗裝以砲銅色碎形設計為主，並加上橘色局部裝飾。\n\n<i>>>武器外觀材質實驗，項目一<<</i>"
 		"PaintKit_p2k_fractal_Tag"							"穩固抓握"
 		
 		"PaintKit_mag7_ammo_box"							"其客製化塗裝為類似彈藥箱的樣式。\n\n<i>收據留著</i>"
@@ -32617,8 +32611,7 @@
 		
 		"PaintKit_m4a4_green_camo"							"採綠色迷彩圖樣的客製化塗裝。\n\n<i>增加你的數位足跡</i>"
 		"PaintKit_m4a4_green_camo_Tag"						"自動步槍"
-
-// END COMMUNITY_35
+// END COMMUNITY_36
 
 // OVERPASS_2024
 				
@@ -36823,10 +36816,6 @@
 		"PANOHUD_Spectate_Navigation_New_Cameraman_On"		"[{s:bind_radio}] 開啟掌鏡者功能"
 		"PANOHUD_Spectate_Navigation_ToggleSpec"			"[{s:bind_drop}] 小型記分板"
 		"PANOHUD_Spectate_Navigation_ToggleOverview"		"[{s:bind_duck}] 上空俯視"
-		"PANOHUD_Spectate_Navigation_PlayHighlight"			"[{s:bind_lookatweapon}]播放精彩片段"
-		"PANOHUD_Spectate_Navigation_CopyHighlightAndClose"	"[{s:bind_lookatweapon}]複製到剪貼簿並關閉"
-		"PANOHUD_Spectate_Navigation_CopyHighlightURL"		"[{s:bind_lookatweapon}]複製精彩片段網址"
-	
 		"PANOHUD_GhostBecomeSpectator"						"按 [%s1] 成為觀戰者"
 
 		"SFUIHUD_Spectate_You_Are_Dead"				"<font color=\"%s1\">觀看 %s2</font>"
@@ -38576,13 +38565,10 @@
 
 		"SFUI_OfficialDatacenterID_1"		"美國西雅圖"
 		"SFUI_OfficialDatacenterID_2"		"美國維吉尼亞州"
-		"SFUI_OfficialDatacenterID_3"		"歐洲德國"
 		"SFUI_OfficialDatacenterID_4"		"韓國"
 		"SFUI_OfficialDatacenterID_5"		"新加坡"
 		"SFUI_OfficialDatacenterID_6"		"阿拉伯聯合大公國"
 		"SFUI_OfficialDatacenterID_7"		"澳洲"
-		"SFUI_OfficialDatacenterID_8"		"歐洲瑞典"
-		"SFUI_OfficialDatacenterID_9"		"歐洲奧地利"
 		"SFUI_OfficialDatacenterID_10"		"巴西"
 		"SFUI_OfficialDatacenterID_11"		"南非"
 		"SFUI_OfficialDatacenterID_12"		"中國上海"
@@ -38594,20 +38580,15 @@
 		// "SFUI_OfficialDatacenterID_18"	"TBD"
 		"SFUI_OfficialDatacenterID_19"		"日本"
 		"SFUI_OfficialDatacenterID_20"		"香港"
-		"SFUI_OfficialDatacenterID_21"		"歐洲西班牙"
 		"SFUI_OfficialDatacenterID_22"		"美國加州"
 		"SFUI_OfficialDatacenterID_23"		"美國亞特蘭大"
 		"SFUI_OfficialDatacenterID_24"		"香港"
 		"SFUI_OfficialDatacenterID_25"		"中國天津"
 		"SFUI_OfficialDatacenterID_26"		"印度清奈"
 		"SFUI_OfficialDatacenterID_27"		"美國芝加哥"
-		"SFUI_OfficialDatacenterID_28"		"歐洲波蘭"
-		"SFUI_OfficialDatacenterID_29"		"歐洲荷蘭"
 		// "SFUI_OfficialDatacenterID_30"		"TBD"
 		"SFUI_OfficialDatacenterID_31"		"美國達拉斯"
-		// "SFUI_OfficialDatacenterID_32"		"TBD"
-		"SFUI_OfficialDatacenterID_33"		"歐洲芬蘭"
-		"SFUI_OfficialDatacenterID_34"		"聖保羅"
+"SFUI_OfficialDatacenterID_34"		"聖保羅"
 		// "SFUI_OfficialDatacenterID_35"		"US West"
 		// "SFUI_OfficialDatacenterID_36"		"Germany"
 		// "SFUI_OfficialDatacenterID_37"		"Hong Kong"
@@ -38617,11 +38598,9 @@
 		// "SFUI_OfficialDatacenterID_41"		"TBD"
 		"SFUI_OfficialDatacenterID_42"		"中國成都"
 		"SFUI_OfficialDatacenterID_43"		"美國紐約"
-		"SFUI_OfficialDatacenterID_44"		"歐洲芬蘭"
 		"SFUI_OfficialDatacenterID_45"		"英國"
 		"SFUI_OfficialDatacenterID_49"		"中國廣東"
 		"SFUI_OfficialDatacenterID_51"		"中國北京"
-
 		"SFUI_UserAlert_HighPings"			"您連至官方伺服器的最低延遲為 %s1 ms。"
 		"SFUI_UserAlert_Unreachable"		"無法連線至任何官方伺服器。"
 		"SFUI_UserAlert_Unreachable_NoConfig"	"無法透過 HTTPS 擷取網路配置。請檢查您的網路連線和防火牆設定。"
@@ -43301,7 +43280,6 @@
 		"popup_totool_decodeable_header_fantoken"	"啟用物品"
 		"popup_totool_purchase_header"	"購買"
 		"popup_totool_purchase_header2"	"購買以獲得"
-
 		//Purchase
 		"popup_cartpreview_button"		"預覽"
 		"popup_cartpreview_title"		"預覽"
@@ -45929,8 +45907,9 @@
 		"Chatwheel_section_report"	"報告"
 
 		"Chatwheel_description" "聊天輪盤有一系列可自訂的實用無線電指令，可供快速使用。"
-
-		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -46043,9 +46022,9 @@
 		"CS2_Quest_Weapon_Mode_desc"					"在<b>{s:gamemode}</b>比賽時使用 <b>{s:weapon}</b> 達成{s:optional_target}{s:actions}。"
 
 		"mission_searching"								"搜尋中…"
-		"mission_xp_remaining"							"{s:mission-xp} 經驗值"
+		"mission_xp_remaining"							"{s:mission-xp} XP"
 
-		"mission_segment_tooltip"						"{d:xp-reward} 經驗值"
+		"mission_segment_tooltip"						"{d:xp-reward} XP"
 
 		"mission_location"								"<b>{s:gamemode}</b>：<b>{s:location}</b>"
 		"mission_directive:p{mission-points}"			"<b>{d:mission-points}</b> {s:action}#|#<b>{d:mission-points}</b> {s:actions}"
@@ -46094,6 +46073,29 @@
 		"quest_11011_var_desc:p{mission-points}"	 	"在<b>{s:gamemode}：{s:location}</b> 中贏得 1 回合。#|#在<b>{s:gamemode}：{s:location}</b> 中贏得回合。"
 		"quest_11011_var_ingame:p{mission-points}"		"贏得 1 回合#|#贏得多回合"
 		
+		"quest_11012_var_desc:p{mission-points}"	 	"在<b>{s:gamemode}：{s:location}</b> 中贏得 1 回合。#|#在<b>{s:gamemode}：{s:location}</b> 中贏得回合。"
+		"quest_11012_var_ingame:p{mission-points}"		"贏得 1 回合#|#贏得多回合"
+		
+		"quest_11013_var_desc:p{mission-points}"	 	"在<b>{s:gamemode}：{s:location}</b> 中贏得 1 回合。#|#在<b>{s:gamemode}：{s:location}</b> 中贏得回合。"
+		"quest_11013_var_ingame:p{mission-points}"		"贏得 1 回合#|#贏得多回合"
+		
+		"quest_11014_var_desc:p{mission-points}"	 	"在<b>{s:gamemode}：{s:location}</b> 中贏得 1 回合。#|#在<b>{s:gamemode}：{s:location}</b> 中贏得回合。"
+		"quest_11014_var_ingame:p{mission-points}"		"贏得 1 回合#|#贏得多回合"
+		
+		"quest_11015_var_desc:p{mission-points}"	 	"在<b>{s:gamemode}：{s:location}</b> 中贏得 1 回合。#|#在<b>{s:gamemode}：{s:location}</b> 中贏得回合。"
+		"quest_11015_var_ingame:p{mission-points}"		"贏得 1 回合#|#贏得多回合"
+
+// crow_mask_48593_comment
+// crow_mask_48594_comment
+}
+
+
+
+
+}
+
+
+
 		"quest_11012_var_desc:p{mission-points}"	 	"在<b>{s:gamemode}：{s:location}</b> 中贏得 1 回合。#|#在<b>{s:gamemode}：{s:location}</b> 中贏得回合。"
 		"quest_11012_var_ingame:p{mission-points}"		"贏得 1 回合#|#贏得多回合"
 		

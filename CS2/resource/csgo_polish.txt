@@ -2334,9 +2334,6 @@
 		"Econ_Revolving_Loot_List"				"Zawiera jedną rzecz z poniższych:"
 		"Econ_Revolving_Loot_List_Single"		"Otwórz i otrzymaj jeden z następujących przedmiotów."
 		"Econ_Revolving_Loot_List_Rental"		"<img src='file://{images}/icons/ui/hourglass.svg' class='popup-decodable-lootlist-single-icon'/> Wypożycz każdą broń (z wyjątkiem niezwykle rzadkiego przedmiotu specjalnego) z tego pojemnika na 7 dni. "
-		"Econ_Revolving_Loot_SecureConnectionLine"	"Oferuje możliwość zakupu jednego z poniższych przedmiotów:"
-
-		
 		"Econ_Revolving_Loot_List_Rare_Item"	"lub niezwykle rzadki przedmiot specjalny!"
 		"Exceedingly_Rare_Item"					"★ Rzadki przedmiot specjalny ★"
 
@@ -2638,7 +2635,7 @@
 		"Attrib_MatchWins"							"Turniejowych zwycięstw na mapach operacji: %s1"
 		"Attrib_HasSilencer"						"Tłumik"
 		"Attrib_HasBurstMode"						"Opcjonalna seria 3 strzałów"
-		"Attrib_SecureConnectionLine"				"Bezpieczna linia połączenia nr %s1"
+		"Attrib_SecureConnectionLine"				"Pojemnik z serii nr %s1"
 		"Attrib_SupplyCrateSeries"					"Pojemnik z serii nr %s1"
 		"Attrib_KillEater"							"Ten przedmiot posiada technologię StatTrak™, która pozwala śledzić pewne statystyki, kiedy jest używany przez jego właściciela."
 		"Attrib_ReferencedItem"						"Zawiera: %s1"
@@ -2674,7 +2671,6 @@
 		"Attrib_OperationBonusXP"					"Premia z Operacji: +%s1 PD"
 		"Attrib_IssueDate"							"Data wydania: %s1"
 		"Attrib_ExpirationDate"						"Czas wygaśnięcia: %s1"
-
 		"Notify_KeychainRemoveTool_ChargesUseToRemove"	"Dostępne odczepiacze przywieszek: {d:item_count}<br>Odczepienie przywieszki zużywa jeden odczepiacz przywieszek."
 		"Attrib_KeychainRemoveTool_Charges"			"Dostępne odczepiacze przywieszek: {d:item_count}"
 		"Attrib_SpraysRemaining"					"Możliwe użycia: %s1"
@@ -4302,7 +4298,7 @@
 		"CSGO_crate_sticker_pack_warhammer_xenos_capsule_desc"			"Ześlij na ten świat terror Xenosów wraz z pojemnikiem z naklejką Xenosów z Warhammer 40,000 wydanym w maju 2025 r."
 		"coupon_warhammer_xenos_sticker_capsule"						"Pojemnik z naklejką Xenosów z Warhammer 40,000"
 		
-"SprayKit_vcap1_ace_01"		"As"
+		"SprayKit_vcap1_ace_01"		"As"
 "SprayKit_vcap1_banana"		"Banan"
 "SprayKit_vcap1_cerberus"		"Cerber"
 "SprayKit_vcap1_clutch_01"		"Król clutchów"
@@ -27852,7 +27848,7 @@
 		"StickerKit_warhammer_decals_paper_tau_empire_2"				"Dominium T'au 2"
 		"StickerKit_warhammer_decals_paper_tyranids_1"					"Tyranidzi 1"
 		"StickerKit_warhammer_decals_paper_tyranids_2"					"Tyranidzi 2"
-		"PatchKit_patch_banana"            "Szalony banan"
+"PatchKit_patch_banana"            "Szalony banan"
 		"PatchKit_desc_patch_banana"       "<i>Agent dla skali</i>"
 		"PatchKit_patch_boss"              "Szef"
 		"PatchKit_desc_patch_boss"         "<i>Ciężkie jest brzemię gracza noszącego koronę</i>"
@@ -31773,7 +31769,6 @@
 		"PaintKit_p90_boost_blue"							"Broń została ozdobiona na zamówienie kanciastym wzorem w niebieskich oraz zielonych barwach.\n\n<i>Jak się czujesz, tak wyglądasz.</i>"
 		"PaintKit_p90_boost_blue_Tag"						"Falochron"
 		
-		"PaintKit_p2k_fractal"								"Broń została pokryta na zamówienie na grafitowo z użyciem wzorów we fraktale, a następnie wykończona pomarańczowymi zdobieniami.\n\n<i>>>EKSPERYMENTY Z TEKSTURĄ WYKOŃCZEŃ BRONI, PODEJŚCIE PIERWSZE.<<</i>"
 		"PaintKit_p2k_fractal_Tag"							"Pewny chwyt"
 		
 		"PaintKit_mag7_ammo_box"							"Broń została ozdobiona na zamówienie wzorem przypominającym skrzynkę z amunicją.\n\n<i>Zachowaj paragon.</i>"
@@ -31796,8 +31791,7 @@
 		
 		"PaintKit_m4a4_green_camo"							"Broń została ozdobiona na zamówienie zielonym wzorem moro.\n\n<i>Zwiększ swój cyfrowy ślad.</i>"
 		"PaintKit_m4a4_green_camo_Tag"						"Rębacz"
-
-// END COMMUNITY_35
+// END COMMUNITY_36
 
 // OVERPASS_2024
 				
@@ -35978,10 +35972,9 @@
 		"PANOHUD_Spectate_Navigation_New_Cameraman_On"		"[{s:bind_radio}] Włącz kamerzystę"
 		"PANOHUD_Spectate_Navigation_ToggleSpec"			"[{s:bind_drop}] Minitabela wyników "
 		"PANOHUD_Spectate_Navigation_ToggleOverview"		"[{s:bind_duck}] Mapa "
-		"PANOHUD_Spectate_Navigation_PlayHighlight"			"[{s:bind_lookatweapon}] Obejrzyj zagranie"
-		"PANOHUD_Spectate_Navigation_CopyHighlightAndClose"	"[{s:bind_lookatweapon}] Skopiuj do schowka i zamknij"
-		"PANOHUD_Spectate_Navigation_CopyHighlightURL"		"[{s:bind_lookatweapon}] Skopiuj adres URL zagrania"
-	
+		"PANOHUD_Spectate_Navigation_PlayHighlight"			"[{s:bind_drop}] Obejrzyj zagranie"
+		"PANOHUD_Spectate_Navigation_CopyHighlightAndClose"	"[{s:bind_drop}] Skopiuj do schowka i zamknij"
+		"PANOHUD_Spectate_Navigation_CopyHighlightURL"		"[{s:bind_drop}] Skopiuj adres URL zagrania"
 		"PANOHUD_GhostBecomeSpectator"						"Wciśnij [%s1], aby stać się widzem"
 
 		"SFUIHUD_Spectate_You_Are_Dead"				"<font color=\"%s1\">Obserwujesz: %s2</font>"
@@ -37731,13 +37724,10 @@
 
 		"SFUI_OfficialDatacenterID_1"		"USA, Seattle"
 		"SFUI_OfficialDatacenterID_2"		"USA, Wirginia"
-		"SFUI_OfficialDatacenterID_3"		"Europa, Niemcy"
 		"SFUI_OfficialDatacenterID_4"		"Korea Południowa"
 		"SFUI_OfficialDatacenterID_5"		"Singapur"
 		"SFUI_OfficialDatacenterID_6"		"Zjednoczone Emiraty Arabskie"
 		"SFUI_OfficialDatacenterID_7"		"Australia"
-		"SFUI_OfficialDatacenterID_8"		"Europa, Szwecja"
-		"SFUI_OfficialDatacenterID_9"		"Europa, Austria"
 		"SFUI_OfficialDatacenterID_10"		"Brazylia"
 		"SFUI_OfficialDatacenterID_11"		"Republika Południowej Afryki"
 		"SFUI_OfficialDatacenterID_12"		"Chiny, Szanghaj"
@@ -37749,20 +37739,15 @@
 		// "SFUI_OfficialDatacenterID_18"	"TBD"
 		"SFUI_OfficialDatacenterID_19"		"Japonia"
 		"SFUI_OfficialDatacenterID_20"		"Hongkong"
-		"SFUI_OfficialDatacenterID_21"		"Europa, Hiszpania"
 		"SFUI_OfficialDatacenterID_22"		"USA, Kalifornia"
 		"SFUI_OfficialDatacenterID_23"		"USA, Atlanta"
 		"SFUI_OfficialDatacenterID_24"		"Hongkong"
 		"SFUI_OfficialDatacenterID_25"		"Chiny, Tiencin"
 		"SFUI_OfficialDatacenterID_26"		"Indie, Ćennaj"
 		"SFUI_OfficialDatacenterID_27"		"USA, Chicago"
-		"SFUI_OfficialDatacenterID_28"		"Europa, Polska"
-		"SFUI_OfficialDatacenterID_29"		"Europa, Holandia"
 		// "SFUI_OfficialDatacenterID_30"		"TBD"
 		"SFUI_OfficialDatacenterID_31"		"USA, Dallas"
-		// "SFUI_OfficialDatacenterID_32"		"TBD"
-		"SFUI_OfficialDatacenterID_33"		"Europa, Finlandia"
-		"SFUI_OfficialDatacenterID_34"		"São Paulo"
+"SFUI_OfficialDatacenterID_34"		"São Paulo"
 		// "SFUI_OfficialDatacenterID_35"		"US West"
 		// "SFUI_OfficialDatacenterID_36"		"Germany"
 		// "SFUI_OfficialDatacenterID_37"		"Hong Kong"
@@ -37772,11 +37757,9 @@
 		// "SFUI_OfficialDatacenterID_41"		"TBD"
 		"SFUI_OfficialDatacenterID_42"		"Chiny, Chengdu"
 		"SFUI_OfficialDatacenterID_43"		"USA, Nowy Jork"
-		"SFUI_OfficialDatacenterID_44"		"Europa, Finlandia"
 		"SFUI_OfficialDatacenterID_45"		"Wielka Brytania"
 		"SFUI_OfficialDatacenterID_49"		"Chiny, Kanton"
 		"SFUI_OfficialDatacenterID_51"		"Chiny, Pekin"
-
 		"SFUI_UserAlert_HighPings"			"Twój obecny najlepszy ping na oficjalnych serwerach to %s1 ms."
 		"SFUI_UserAlert_Unreachable"		"Nie udało się uzyskać odpowiedzi od żadnego oficjalnego serwera."
 		"SFUI_UserAlert_Unreachable_NoConfig"	"Nie udało się pobrać konfiguracji sieciowej przez HTTPS. Sprawdź połączenie internetowe i konfigurację zapory."
@@ -42447,7 +42430,6 @@
 		"popup_totool_decodeable_header_fantoken"	"Aktywuj przedmiot"
 		"popup_totool_purchase_header"	"Zakup"
 		"popup_totool_purchase_header2"	"ZAKUP, BY ODEBRAĆ"
-
 		//Purchase
 		"popup_cartpreview_button"		"Podgląd"
 		"popup_cartpreview_title"		"Podgląd"
@@ -45073,7 +45055,11 @@
 		"Chatwheel_section_report"	"Meldunki"
 
 		"Chatwheel_description" "Koło czatu zapewnia szybki dostęp do konfigurowalnej listy przydatnych komend radiowych."
-
+//
+//
+"laptop_window_seal_title"					"STATUS"
+		"dealer_offer_attachment_title"							"{s:item-name}"
+		"dealer_offer_attachment_wear"						"{s:item-rarity}"
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -45245,6 +45231,22 @@
 		"quest_11013_var_ingame:p{mission-points}"		"Wygraj rundę.#|#Wygraj rundy.#|#Wygraj rundy.#|#Wygraj rundy."
 		
 		"quest_11014_var_desc:p{mission-points}"	 	"Wygraj rundę. <b>Tryb: {s:gamemode}. Mapa: {s:location}.</b>#|#Wygraj rundy. <b>Tryb: {s:gamemode}. Mapa: {s:location}.</b>#|#Wygraj rundy. <b>Tryb: {s:gamemode}. Mapa: {s:location}.</b>#|#Wygraj rundy. <b>Tryb: {s:gamemode}. Mapa: {s:location}.</b>"
+		"quest_11014_var_ingame:p{mission-points}"		"Wygraj rundę.#|#Wygraj rundy.#|#Wygraj rundy.#|#Wygraj rundy."
+		
+		"quest_11015_var_desc:p{mission-points}"	 	"Wygraj rundę. <b>Tryb: {s:gamemode}. Mapa: {s:location}.</b>#|#Wygraj rundy. <b>Tryb: {s:gamemode}. Mapa: {s:location}.</b>#|#Wygraj rundy. <b>Tryb: {s:gamemode}. Mapa: {s:location}.</b>#|#Wygraj rundy. <b>Tryb: {s:gamemode}. Mapa: {s:location}.</b>"
+		"quest_11015_var_ingame:p{mission-points}"		"Wygraj rundę.#|#Wygraj rundy.#|#Wygraj rundy.#|#Wygraj rundy."
+
+// crow_mask_48593_comment
+// crow_mask_48594_comment
+}
+
+
+
+
+}
+
+
+ygraj rundy. <b>Tryb: {s:gamemode}. Mapa: {s:location}.</b>#|#Wygraj rundy. <b>Tryb: {s:gamemode}. Mapa: {s:location}.</b>"
 		"quest_11014_var_ingame:p{mission-points}"		"Wygraj rundę.#|#Wygraj rundy.#|#Wygraj rundy.#|#Wygraj rundy."
 		
 		"quest_11015_var_desc:p{mission-points}"	 	"Wygraj rundę. <b>Tryb: {s:gamemode}. Mapa: {s:location}.</b>#|#Wygraj rundy. <b>Tryb: {s:gamemode}. Mapa: {s:location}.</b>#|#Wygraj rundy. <b>Tryb: {s:gamemode}. Mapa: {s:location}.</b>#|#Wygraj rundy. <b>Tryb: {s:gamemode}. Mapa: {s:location}.</b>"

@@ -2334,9 +2334,6 @@
 		"Econ_Revolving_Loot_List"				"Внутри находится один из следующих предметов:"
 		"Econ_Revolving_Loot_List_Single"		"Откройте и получите один из следующих предметов"
 		"Econ_Revolving_Loot_List_Rental"		"<img src='file://{images}/icons/ui/hourglass.svg' class='popup-decodable-lootlist-single-icon'/> Возьмите напрокат всё оружие (кроме редкого особого предмета) из этого кейса на 7 дней "
-		"Econ_Revolving_Loot_SecureConnectionLine"	"Даёт возможность приобрести один из следующих предметов:"
-
-		
 		"Econ_Revolving_Loot_List_Rare_Item"	"или крайне редкий особый предмет!"
 		"Exceedingly_Rare_Item"					"★ Особый редкий предмет ★"
 
@@ -2628,7 +2625,7 @@
 		"Attrib_UseAfterDate"						"Можно использовать после %s1"
 		"Attrib_NeverTradableButHasAfterDate1"		"Этот предмет нельзя обменять или продать на торговой площадке Steam."
 		"Attrib_NeverTradableButHasAfterDate2"		"Полученные после использования предметы нельзя будет обменять до %s1"
-		"Attrib_TradeProtectedEscrowDate"			"⇆ Этот предмет защищён от обмена: его нельзя расходовать, изменять и передавать до %s1"
+		"Attrib_TradeProtectedEscrowDate"			"⇆ Действует защита обмена: предмет нельзя расходовать, изменять и передавать до %s1"
 		"Attrib_TradableAfterDate"					"Можно будет передать другим после %s1"
 		"Attrib_TradableMarketableAfterDate"		"Можно будет продать или передать после %s1"
 		"Attrib_MarketableWithRestrictions"			"Сразу можно продать на Торговой площадке"
@@ -2638,7 +2635,6 @@
 		"Attrib_MatchWins"							"Побед в соревновательных матчах на картах операции: %s1"
 		"Attrib_HasSilencer"						"Глушитель"
 		"Attrib_HasBurstMode"						"Альт. режим: 3 выстрела"
-		"Attrib_SecureConnectionLine"				"Линия засекреченной связи № %s1"
 		"Attrib_SupplyCrateSeries"					"Контейнер тиража #%s1"
 		"Attrib_KillEater"							"На этом предмете используется технология StatTrak™, которая отслеживает определённые показатели владельца."
 		"Attrib_ReferencedItem"						"Содержит: %s1"
@@ -2674,7 +2670,6 @@
 		"Attrib_OperationBonusXP"					"Бонус за операцию: +%s1 ед. опыта"
 		"Attrib_IssueDate"							"Дата выпуска: %s1"
 		"Attrib_ExpirationDate"						"Взято напрокат до: %s1"
-
 		"Notify_KeychainRemoveTool_ChargesUseToRemove"	"Доступных отделителей брелков: {d:item_count}<br>При снятии брелка расходуется один отделитель."
 		"Attrib_KeychainRemoveTool_Charges"			"Доступных отделителей брелков: {d:item_count}"
 		"Attrib_SpraysRemaining"					"Зарядов: %s1"
@@ -4302,7 +4297,7 @@
 		"CSGO_crate_sticker_pack_warhammer_xenos_capsule_desc"			"Сейте ужас ксеносов при помощи выпущенной в мае 2025 года капсулы с наклейками Warhammer 40,000 — «Ксеносы»."
 		"coupon_warhammer_xenos_sticker_capsule"						"Капсула с наклейками Warhammer 40,000 — Ксеносы"
 		
-"SprayKit_vcap1_ace_01"		"Эйс"
+		"SprayKit_vcap1_ace_01"		"Эйс"
 "SprayKit_vcap1_banana"		"Банан"
 "SprayKit_vcap1_cerberus"		"Цербер"
 "SprayKit_vcap1_clutch_01"		"Последняя надежда"
@@ -27874,7 +27869,7 @@
 		"StickerKit_warhammer_decals_paper_tau_empire_2"				"Империя Тау 2"
 		"StickerKit_warhammer_decals_paper_tyranids_1"					"Тираниды 1"
 		"StickerKit_warhammer_decals_paper_tyranids_2"					"Тираниды 2"
-		"PatchKit_patch_banana"            "Безумный банан"
+"PatchKit_patch_banana"            "Безумный банан"
 		"PatchKit_desc_patch_banana"       "<i>Чтобы было с чем сравнивать</i>"
 		"PatchKit_patch_boss"              "Босс"
 		"PatchKit_desc_patch_boss"         "<i>Блажен агент, вкушая мирный сон. Не осенит главы венчанной он!</i>"
@@ -31795,7 +31790,6 @@
 		"PaintKit_p90_boost_blue"							"На корпус нанесён угловатый сине-зелёный рисунок.\n\n<i>Что внутри, то и снаружи</i>"
 		"PaintKit_p90_boost_blue_Tag"						"Волнорез"
 		
-		"PaintKit_p2k_fractal"								"Оружие окрашено в тёмно-серый цвет с фрактальными элементами и оранжевыми вкраплениями.\n\n<i>>>ЭКСПЕРИМЕНТАЛЬНАЯ ТЕКСТУРА РАСКРАСКИ ОРУЖИЯ, ЗАПИСЬ ПЕРВАЯ<<</i>"
 		"PaintKit_p2k_fractal_Tag"							"Твёрдая хватка"
 		
 		"PaintKit_mag7_ammo_box"							"Окраска напоминает ящик с боеприпасами.\n\n<i>Чек мне не нужен</i>"
@@ -31818,8 +31812,7 @@
 		
 		"PaintKit_m4a4_green_camo"							"На оружие нанесён зелёный камуфляжный узор.\n\n<i>Увеличь свой цифровой след</i>"
 		"PaintKit_m4a4_green_camo_Tag"						"Рубитель"
-
-// END COMMUNITY_35
+// END COMMUNITY_36
 
 // OVERPASS_2024
 				
@@ -32474,7 +32467,7 @@
 		"CSGOEcon_Equip"				"Надеть"
 		"CSGOEcon_Default"				"(по умолчанию) "
 		"BackpackTitle"					"Рюкзак"
-		"TradeProtectedEscrowTitle"		"Предметы с защитой от обмена"
+		"TradeProtectedEscrowTitle"		"Предметы с защитой обмена"
 		"CustomizeTitle"				"Изменить"
 		"L4D360UI_Back_Caps"			"НАЗАД"
 		"OpenGeneralLoadout"			"ОТКРЫТЬ СНАРЯЖЕНИЕ…"
@@ -36002,10 +35995,6 @@
 		"PANOHUD_Spectate_Navigation_New_Cameraman_On"		"[{s:bind_radio}] Включить оператора "
 		"PANOHUD_Spectate_Navigation_ToggleSpec"			"[{s:bind_drop}] Мини-таблица результатов"
 		"PANOHUD_Spectate_Navigation_ToggleOverview"		"[{s:bind_duck}] Карта"
-		"PANOHUD_Spectate_Navigation_PlayHighlight"			"[{s:bind_lookatweapon}] Смотреть яркий момент"
-		"PANOHUD_Spectate_Navigation_CopyHighlightAndClose"	"[{s:bind_lookatweapon}] Скопировать и закрыть"
-		"PANOHUD_Spectate_Navigation_CopyHighlightURL"		"[{s:bind_lookatweapon}] Скопировать ссылку на момент"
-	
 		"PANOHUD_GhostBecomeSpectator"						"Нажмите [%s1], чтобы стать наблюдателем"
 
 		"SFUIHUD_Spectate_You_Are_Dead"				"<font color=\"%s1\">Наблюдение за %s2</font>"
@@ -37755,13 +37744,10 @@
 
 		"SFUI_OfficialDatacenterID_1"		"США, Сиэтл"
 		"SFUI_OfficialDatacenterID_2"		"США, штат Вирджиния"
-		"SFUI_OfficialDatacenterID_3"		"ЕС, Германия"
 		"SFUI_OfficialDatacenterID_4"		"Южная Корея"
 		"SFUI_OfficialDatacenterID_5"		"Сингапур"
 		"SFUI_OfficialDatacenterID_6"		"Объединенные Арабские Эмираты"
 		"SFUI_OfficialDatacenterID_7"		"Австралия"
-		"SFUI_OfficialDatacenterID_8"		"ЕС, Швеция"
-		"SFUI_OfficialDatacenterID_9"		"ЕС, Австрия"
 		"SFUI_OfficialDatacenterID_10"		"Бразилия"
 		"SFUI_OfficialDatacenterID_11"		"Южная Африка"
 		"SFUI_OfficialDatacenterID_12"		"Китай, Шанхай"
@@ -37773,20 +37759,15 @@
 		// "SFUI_OfficialDatacenterID_18"	"TBD"
 		"SFUI_OfficialDatacenterID_19"		"Япония"
 		"SFUI_OfficialDatacenterID_20"		"Гонконг"
-		"SFUI_OfficialDatacenterID_21"		"ЕС, Испания"
 		"SFUI_OfficialDatacenterID_22"		"США, штат Калифорния"
 		"SFUI_OfficialDatacenterID_23"		"США, Атланта"
 		"SFUI_OfficialDatacenterID_24"		"Гонконг"
 		"SFUI_OfficialDatacenterID_25"		"Китай, Тяньцзинь"
 		"SFUI_OfficialDatacenterID_26"		"Индия, Ченнай"
 		"SFUI_OfficialDatacenterID_27"		"США, Чикаго"
-		"SFUI_OfficialDatacenterID_28"		"ЕС, Польша"
-		"SFUI_OfficialDatacenterID_29"		"ЕС, Нидерланды"
 		// "SFUI_OfficialDatacenterID_30"		"TBD"
 		"SFUI_OfficialDatacenterID_31"		"США, Даллас"
-		// "SFUI_OfficialDatacenterID_32"		"TBD"
-		"SFUI_OfficialDatacenterID_33"		"ЕС, Финляндия"
-		"SFUI_OfficialDatacenterID_34"		"Сан-Паулу"
+"SFUI_OfficialDatacenterID_34"		"Сан-Паулу"
 		// "SFUI_OfficialDatacenterID_35"		"US West"
 		// "SFUI_OfficialDatacenterID_36"		"Germany"
 		// "SFUI_OfficialDatacenterID_37"		"Hong Kong"
@@ -37796,11 +37777,9 @@
 		// "SFUI_OfficialDatacenterID_41"		"TBD"
 		"SFUI_OfficialDatacenterID_42"		"Китай, Чэнду"
 		"SFUI_OfficialDatacenterID_43"		"США, Нью-Йорк"
-		"SFUI_OfficialDatacenterID_44"		"ЕС, Финляндия"
 		"SFUI_OfficialDatacenterID_45"		"Великобритания"
 		"SFUI_OfficialDatacenterID_49"		"Китай, Гуандун"
 		"SFUI_OfficialDatacenterID_51"		"Китай, Пекин"
-
 		"SFUI_UserAlert_HighPings"			"Ваша наименьшая задержка до официальных серверов — %s1 мс."
 		"SFUI_UserAlert_Unreachable"		"Не удалось установить соединение с официальными серверами."
 		"SFUI_UserAlert_Unreachable_NoConfig"	"Не удалось получить конфигурацию сети по протоколу HTTPS. Проверьте соединение с интернетом и настройки брандмауэра."
@@ -42471,7 +42450,6 @@
 		"popup_totool_decodeable_header_fantoken"	"Активировать предмет"
 		"popup_totool_purchase_header"	"Купить"
 		"popup_totool_purchase_header2"	"КУПИТЕ, ЧТОБЫ ПОЛУЧИТЬ"
-
 		//Purchase
 		"popup_cartpreview_button"		"Предпросмотр"
 		"popup_cartpreview_title"		"Предпросмотр"
@@ -45097,8 +45075,9 @@
 		"Chatwheel_section_report"	"Доложи"
 
 		"Chatwheel_description" "Колесо чата даёт быстрый доступ к настраиваемому списку полезных радиокоманд."
-
-		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -45269,6 +45248,22 @@
 		"quest_11013_var_ingame:p{mission-points}"		"Выиграйте раунд#|#Выигрывайте раунды#|#Выигрывайте раунды#|#Выигрывайте раунды#|#Выигрывайте раунды"
 		
 		"quest_11014_var_desc:p{mission-points}"	 	"Выиграйте раунд в режиме <b>«{s:gamemode}» ({s:location})</b>.#|#Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.#|#Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.#|#Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.#|#Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>."
+		"quest_11014_var_ingame:p{mission-points}"		"Выиграйте раунд#|#Выигрывайте раунды#|#Выигрывайте раунды#|#Выигрывайте раунды#|#Выигрывайте раунды"
+		
+		"quest_11015_var_desc:p{mission-points}"	 	"Выиграйте раунд в режиме <b>«{s:gamemode}» ({s:location})</b>.#|#Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.#|#Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.#|#Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.#|#Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>."
+		"quest_11015_var_ingame:p{mission-points}"		"Выиграйте раунд#|#Выигрывайте раунды#|#Выигрывайте раунды#|#Выигрывайте раунды#|#Выигрывайте раунды"
+
+// crow_mask_48593_comment
+// crow_mask_48594_comment
+}
+
+
+
+
+}
+
+
+�ежиме <b>«{s:gamemode}» ({s:location})</b>.#|#Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.#|#Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.#|#Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.#|#Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>."
 		"quest_11014_var_ingame:p{mission-points}"		"Выиграйте раунд#|#Выигрывайте раунды#|#Выигрывайте раунды#|#Выигрывайте раунды#|#Выигрывайте раунды"
 		
 		"quest_11015_var_desc:p{mission-points}"	 	"Выиграйте раунд в режиме <b>«{s:gamemode}» ({s:location})</b>.#|#Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.#|#Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.#|#Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.#|#Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>."

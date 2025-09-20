@@ -2334,9 +2334,6 @@
 		"Econ_Revolving_Loot_List"				"Chứa một trong những vật phẩm sau:"
 		"Econ_Revolving_Loot_List_Single"		"Mở và nhận một trong các món sau"
 		"Econ_Revolving_Loot_List_Rental"		"<img src='file://{images}/icons/ui/hourglass.svg' class='popup-decodable-lootlist-single-icon'/> Thuê tất cả vũ khí (không gồm vật phẩm cực kì hiếm) trong gói này 7 ngày "
-		"Econ_Revolving_Loot_SecureConnectionLine"	"Cho cơ hội mua một trong những vật phẩm sau:"
-
-		
 		"Econ_Revolving_Loot_List_Rare_Item"	"hoặc VẬT PHẨM ĐẶC BIỆT CỰC KÌ HIẾM!"
 		"Exceedingly_Rare_Item"					"★ Vật phẩm hiếm đặc biệt ★"
 
@@ -2373,6 +2370,7 @@
 		"Item_Crafted"							" %s1 đã hoàn thành hợp đồng và nhận: %s2"
 		"Item_Traded"							" %s1 đã trao đổi được: %s2"
 		"Item_Purchased"						" %s1 đã mua: %s2"
+		"Item_PurchasedVolatile"				" %s1 đã mua từ tay buôn vũ khí: %s2"
 		"Item_FoundInCrate"						" %s1 đã mở một hộp và tìm thấy: %s2"
 		"Item_Gifted"							" %s1 đã chấp nhận một món quà: %s2"
 		"Item_Earned"							" %s1 đã nhận được: %s2"
@@ -2397,6 +2395,7 @@
 		"NewItemMethod_Crafted"			"Bạn đã nhận được:"
 		"NewItemMethod_Traded"			"Bạn đã đổi lấy:"
 		"NewItemMethod_Purchased"		"Bạn đã mua:"
+		"NewItemMethod_PurchasedVolatile" "Bạn đã mua từ tay buôn vũ khí:"
 		"NewItemMethod_FoundInCrate"	"Bạn mở hòm ra:"
 		"NewItemMethod_Rental"			"Bạn đã thuê:"
 		"NewItemMethod_XpShopRedeem"	"Bạn đã nhận từ kho vũ khí:"
@@ -2456,6 +2455,7 @@
 		"ItemHistory_Action_Drop"										"Thăng hạng và nhận được vật phẩm"
 		"ItemHistory_Action_ManualCreate"								"Tạo bởi hỗ trợ Counter-Strike"
 		"ItemHistory_Action_Purchase"									"Mua từ của hàng"
+		"ItemHistory_Action_PurchaseVolatileContainerItem"				"Mua từ tay buôn vũ khí"
 		"ItemHistory_Action_AutoGrantItem"								"Nhận được"
 		"ItemHistory_Action_CrossGameAchievement"						"Nhận từ việc mở khóa một thành tựu từ trò chơi khác"
 		"ItemHistory_Action_AwardGift_Receiver"							"Nhận một món quà"
@@ -2638,7 +2638,7 @@
 		"Attrib_MatchWins"							"Số trận tranh hạng thắng trên bản đồ chiến dịch: %s1"
 		"Attrib_HasSilencer"						"Ống giảm thanh"
 		"Attrib_HasBurstMode"						"Chế độ chùm 3 viên"
-		"Attrib_SecureConnectionLine"				"Đường kết nối bảo mật số %s1"
+		"Attrib_SecureConnectionLine"				"Loạt hòm số %s1"
 		"Attrib_SupplyCrateSeries"					"Loạt hòm số %s1"
 		"Attrib_KillEater"							"Vật phẩm sử dụng công nghệ StatTrak™, ghi lại số liệu nhất định khi người dùng trang bị."
 		"Attrib_ReferencedItem"						"Chứa: %s1"
@@ -2674,6 +2674,7 @@
 		"Attrib_OperationBonusXP"					"Nhận thưởng chiến dịch: +%s1 XP"
 		"Attrib_IssueDate"							"Ngày phát hành: %s1"
 		"Attrib_ExpirationDate"						"Hạn sử dụng: %s1"
+		"Attrib_PurchaserAccountID_title"			"Chứng nhận chủ sở hữu gốc"
 
 		"Notify_KeychainRemoveTool_ChargesUseToRemove"	"Số lượng móc treo có thể gỡ: {d:item_count}<br>Thao tác này sẽ sử dụng một công cụ gỡ móc treo."
 		"Attrib_KeychainRemoveTool_Charges"			"Số lượng móc treo có thể gỡ: {d:item_count}"
@@ -4426,7 +4427,13 @@
 		"CSGO_crate_sticker_pack_warhammer_xenos_capsule_desc"			"Khơi dậy nỗi kinh hoàng của chủng loài Xenos với gói hình dán Warhammer 40,000 Xenos, ra mắt vào tháng 05/2025."
 		"coupon_warhammer_xenos_sticker_capsule"						"Gói hình dán Warhammer 40,000 Xenos"
 		
-"SprayKit_vcap1_ace_01"		"Ace"
+		"CSGO_crate_sticker_pack_sugarface2_capsule"	   				"Bộ sưu tập hình dán Sugarface 2"
+		"CSGO_crate_sticker_pack_sugarface2_short"						"Hình dán Sugarface 2"
+		
+		"CSGO_crate_sticker_pack_community2025_capsule"	    			"Bộ sưu tập hình dán cộng đồng 2025"
+		"CSGO_crate_sticker_pack_community_2025_short"					"Hình dán cộng đồng 2025"
+		
+		"SprayKit_vcap1_ace_01"		"Ace"
 "SprayKit_desc_vcap1_ace_01"	" "
 "SprayKit_vcap1_banana"		"Chuối"
 "SprayKit_desc_vcap1_banana"	" "
@@ -5608,6 +5615,7 @@
 		"CSGO_set_timed_drops_cool"				"Bộ sưu tập Ascent"
 		"CSGO_set_timed_drops_cool_desc"		""
 		
+		"CSGO_set_community_36"					"Bộ sưu tập Genesis"
 		/////////////////
 		// lootlist override strings
 		//////////////////
@@ -30088,6 +30096,48 @@
 		"StickerKit_warhammer_decals_paper_tau_empire_2"				"T'au Empire 2"
 		"StickerKit_warhammer_decals_paper_tyranids_1"					"Tyranids 1"
 		"StickerKit_warhammer_decals_paper_tyranids_2"					"Tyranids 2"
+		//Sugarface 2 Sticker Capsule
+		
+		"StickerKit_sugarface2_paper_clavis"							"Clavis"
+		"StickerKit_sugarface2_paper_lorena"							"Lorena"
+		"StickerKit_sugarface2_paper_lucas"								"Lucas"
+		"StickerKit_sugarface2_holo_clavis"								"Clavis (Ảnh toàn ký)"
+		"StickerKit_sugarface2_holo_lorena"								"Lorena (Ảnh toàn ký)"
+		"StickerKit_sugarface2_holo_lucas"								"Lucas (Ảnh toàn ký)"
+		"StickerKit_sugarface2_foil_clavis"								"Clavis (Cao cấp)"
+		"StickerKit_sugarface2_foil_lorena"								"Lorena (Cao cấp)"
+		"StickerKit_sugarface2_foil_lucas"								"Lucas (Cao cấp)"
+		//2025 Community Sticker Capsule
+		
+		"StickerKit_community_2025_paper_candy_apples"					"Candy Apples"
+		"StickerKit_community_2025_paper_cubix_connexion"				"Cubix Connexion"
+		"StickerKit_community_2025_paper_eyes_of_farlow"				"Eyes of Farlow"
+		"StickerKit_community_2025_paper_fade_mangos"					"Fade Mangos"
+		"StickerKit_community_2025_paper_gloves_on"						"Gloves On"
+		"StickerKit_community_2025_paper_lock_in"						"Lock In"
+		"StickerKit_community_2025_paper_mimicapsule"					"Mimicapsule"
+		"StickerKit_community_2025_paper_pop_pup"						"Pop Pup"
+		"StickerKit_community_2025_paper_pots"							"POTS"
+		"StickerKit_community_2025_paper_sent_with_love"				"Sent With Love"
+		"StickerKit_community_2025_paper_skelly_stab"					"Skelly Stabby"
+		"StickerKit_community_2025_paper_vice_cursor"					"Vice Cursor"
+		"StickerKit_community_2025_glitter_ct_tracks"					"CT Tracks (Kim tuyến)"
+		"StickerKit_community_2025_glitter_overloaded"					"Overloaded (Kim tuyến)"
+		"StickerKit_community_2025_glitter_t_tracks"					"T Tracks (Kim tuyến)"
+		"StickerKit_community_2025_holo_bomb_planted"					"Bomb Planted (Ảnh toàn ký)"
+		"StickerKit_community_2025_holo_chrome_dome"					"Chrome Dome (Ảnh toàn ký)"
+		"StickerKit_community_2025_holo_cutie"							"Cutie (Ảnh toàn ký)"
+		"StickerKit_community_2025_holo_evidence"						"Evidence (Ảnh toàn ký)"
+		"StickerKit_community_2025_holo_froggles"						"Froggles (Ảnh toàn ký)"
+		"StickerKit_community_2025_foil_aint_a_rental"					"Ain't A Rental (Cao cấp)"
+		"StickerKit_community_2025_foil_eyes_sky"						"Eyes In The Sky (Cao cấp)"
+		"StickerKit_community_2025_foil_good_as_new"					"Good As New (Cao cấp)"
+		"StickerKit_community_2025_foil_queen_ava"						"Queen Ava (Cao cấp)"
+		"StickerKit_community_2025_foil_hands_off"						"Hands Off (Cao cấp)"
+		"StickerKit_community_2025_foil_king_crasswater"				"King Crasswater (Cao cấp)"
+		"StickerKit_community_2025_lenticular_bullhit"					"BullHit (Ảnh nổi 3 chiều)"
+		"StickerKit_community_2025_lenticular_digistrike"				"Digi-Strike (Ảnh nổi 3 chiều)"
+		"StickerKit_community_2025_lenticular_mvp"						"Neon MVP (Ảnh nổi 3 chiều)"
 		"PatchKit_patch_banana"            "Crazy Banana"
 		"PatchKit_desc_patch_banana"       "<i>Hình đặc vụ kèm theo để đo</i>"
 		"PatchKit_patch_boss"              "The Boss"
@@ -34257,7 +34307,6 @@
 		"PaintKit_p90_boost_blue"							"Được sơn tùy chỉnh với thiết kế góc cạnh màu xanh và xanh lục.\n\n<i>Nhìn ra sao thì cảm nhận thế đó</i>"
 		"PaintKit_p90_boost_blue_Tag"						"Wave Breaker"
 		
-		"PaintKit_p2k_fractal"								"Được sơn tùy chỉnh với màu xám kim khí với họa tiết phân dạng và hoàn chỉnh với điểm nhấn màu cam.\n\n<i>>>THÍ NGHIỆM CHẤT LIỆU BỀ MẶT CỦA THIẾT KẾ VŨ KHÍ, ĐỀ XUẤT MỘT<<</i>"
 		"PaintKit_p2k_fractal_Tag"							"Sure Grip"
 		
 		"PaintKit_mag7_ammo_box"							"Được sơn tùy chỉnh để trông như hộp đạn.\n\n<i>Cứ giữ biên lai</i>"
@@ -34280,8 +34329,9 @@
 		
 		"PaintKit_m4a4_green_camo"							"Được sơn tùy chỉnh với một họa tiết ngụy trang xanh lá.\n\n<i>Tăng mạnh dấu chân điện tử của bạn</i>"
 		"PaintKit_m4a4_green_camo_Tag"						"Choppa"
-
-// END COMMUNITY_35
+"PaintKit_mp5sd_chrome_Tag"						"Tập trung" 
+		
+		// END COMMUNITY_36
 
 // OVERPASS_2024
 				
@@ -38524,10 +38574,9 @@
 		"PANOHUD_Spectate_Navigation_New_Cameraman_On"		"[{s:bind_radio}] Bật người quay phim"
 		"PANOHUD_Spectate_Navigation_ToggleSpec"			"[{s:bind_drop}] Bảng điểm nhỏ "
 		"PANOHUD_Spectate_Navigation_ToggleOverview"		"[{s:bind_duck}] Tổng quan "
-		"PANOHUD_Spectate_Navigation_PlayHighlight"			"[{s:bind_lookatweapon}] Phát tiêu điểm"
-		"PANOHUD_Spectate_Navigation_CopyHighlightAndClose"	"[{s:bind_lookatweapon}] Chép vào clipboard & đóng"
-		"PANOHUD_Spectate_Navigation_CopyHighlightURL"		"[{s:bind_lookatweapon}] Chép liên kết tiêu điểm"
-	
+		"PANOHUD_Spectate_Navigation_PlayHighlight"			"[{s:bind_drop}] Phát tiêu điểm"
+		"PANOHUD_Spectate_Navigation_CopyHighlightAndClose"	"[{s:bind_drop}] Chép vào clipboard & đóng"
+		"PANOHUD_Spectate_Navigation_CopyHighlightURL"		"[{s:bind_drop}] Chép liên kết tiêu điểm"
 		"PANOHUD_GhostBecomeSpectator"						"Ấn [%s1] để trở thành khán giả"
 
 		"SFUIHUD_Spectate_You_Are_Dead"				"<font color=\"%s1\">Theo dõi %s2</font>"
@@ -40281,13 +40330,13 @@
 
 		"SFUI_OfficialDatacenterID_1"		"Hoa Kỳ, Seattle"
 		"SFUI_OfficialDatacenterID_2"		"Hoa Kỳ, Virginia"
-		"SFUI_OfficialDatacenterID_3"		"Châu Âu, Đức"
+		"SFUI_OfficialDatacenterID_3"		"Châu Âu, Frankfurt"
 		"SFUI_OfficialDatacenterID_4"		"Hàn Quốc"
 		"SFUI_OfficialDatacenterID_5"		"Singapore"
 		"SFUI_OfficialDatacenterID_6"		"Các Tiểu vương quốc Ả Rập Thống nhất"
 		"SFUI_OfficialDatacenterID_7"		"Úc"
-		"SFUI_OfficialDatacenterID_8"		"Châu Âu, Thụy Điển"
-		"SFUI_OfficialDatacenterID_9"		"Châu Âu, Áo"
+		"SFUI_OfficialDatacenterID_8"		"Châu Âu, Stockholm"
+		"SFUI_OfficialDatacenterID_9"		"Châu Âu, Vienna"
 		"SFUI_OfficialDatacenterID_10"		"Brazil"
 		"SFUI_OfficialDatacenterID_11"		"Nam Phi"
 		"SFUI_OfficialDatacenterID_12"		"Trung Quốc, Thượng Hải"
@@ -40299,19 +40348,19 @@
 		// "SFUI_OfficialDatacenterID_18"	"TBD"
 		"SFUI_OfficialDatacenterID_19"		"Nhật Bản"
 		"SFUI_OfficialDatacenterID_20"		"Hồng Kông"
-		"SFUI_OfficialDatacenterID_21"		"Châu Âu, Tây Ban Nha"
+		"SFUI_OfficialDatacenterID_21"		"Châu Âu, Madrid"
 		"SFUI_OfficialDatacenterID_22"		"Hoa Kỳ, California"
 		"SFUI_OfficialDatacenterID_23"		"Hoa Kỳ, Atlanta"
 		"SFUI_OfficialDatacenterID_24"		"Hồng Kông"
 		"SFUI_OfficialDatacenterID_25"		"Trung Quốc, Thiên Tân"
 		"SFUI_OfficialDatacenterID_26"		"Ấn Độ, Chennai"
 		"SFUI_OfficialDatacenterID_27"		"Hoa Kỳ, Chicago"
-		"SFUI_OfficialDatacenterID_28"		"Châu Âu, Ba Lan"
-		"SFUI_OfficialDatacenterID_29"		"Châu Âu, Hà Lan"
+		"SFUI_OfficialDatacenterID_28"		"Châu Âu, Warsaw"
+		"SFUI_OfficialDatacenterID_29"		"Châu Âu, Amsterdam"
 		// "SFUI_OfficialDatacenterID_30"		"TBD"
 		"SFUI_OfficialDatacenterID_31"		"Hoa Kỳ, Dallas"
 		// "SFUI_OfficialDatacenterID_32"		"TBD"
-		"SFUI_OfficialDatacenterID_33"		"Châu Âu, Phần Lan"
+		"SFUI_OfficialDatacenterID_33"		"Châu Âu, Helsinki"
 		"SFUI_OfficialDatacenterID_34"		"São Paulo"
 		// "SFUI_OfficialDatacenterID_35"		"US West"
 		// "SFUI_OfficialDatacenterID_36"		"Germany"
@@ -40322,11 +40371,9 @@
 		// "SFUI_OfficialDatacenterID_41"		"TBD"
 		"SFUI_OfficialDatacenterID_42"		"Trung Quốc, Thành Đô"
 		"SFUI_OfficialDatacenterID_43"		"Hoa Kỳ, New York"
-		"SFUI_OfficialDatacenterID_44"		"Châu Âu, Phần Lan"
 		"SFUI_OfficialDatacenterID_45"		"Vương quốc Anh"
 		"SFUI_OfficialDatacenterID_49"		"Trung Quốc, Quảng Châu"
 		"SFUI_OfficialDatacenterID_51"		"Trung Quốc, Bắc Kinh"
-
 		"SFUI_UserAlert_HighPings"			"Ping hiện tại tốt nhất của bạn tới máy chủ chính thức là %s1 ms."
 		"SFUI_UserAlert_Unreachable"		"Không thể kết nối tới bất kỳ máy chủ chính thức nào."
 		"SFUI_UserAlert_Unreachable_NoConfig"	"Không thể lấy thiết lập mạng qua HTTPS.  Vui lòng kiểm tra kết nối Internet và tường lửa của bạn."
@@ -45027,7 +45074,6 @@
 		"popup_totool_decodeable_header_fantoken"	"Kích hoạt vật phẩm"
 		"popup_totool_purchase_header"	"Mua"
 		"popup_totool_purchase_header2"	"MUA ĐỂ NHẬN"
-
 		//Purchase
 		"popup_cartpreview_button"		"Xem trước"
 		"popup_cartpreview_title"		"Xem trước"
@@ -45884,6 +45930,7 @@
 		"PlayMenuReplayNewUserTrainingButton"		"Chơi lại huấn luyện"
 
 
+		"CSGO_VanityLoadout_Inspect"				"Kiểm tra"
 		//////////////////////
 		// ANNOTATIONS
 		/////////////////////
@@ -47727,7 +47774,11 @@
 		"Chatwheel_section_report"	"Báo cáo"
 
 		"Chatwheel_description" "Vòng tán gẫu giúp truy cập nhanh các lệnh radio hữu dụng có thể tùy biến được."
-
+//
+//
+"laptop_window_seal_title"					"TRẠNG THÁI"
+		"dealer_offer_attachment_title"							"{s:item-name}"
+		"dealer_offer_attachment_wear"						"{s:item-rarity}"
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -47914,8 +47965,8 @@
 		"quest_11015_var_partial" 				""
 		"quest_11015_var_ingame:p{mission-points}"		"Thắng ván đấu"
 
-// crow_mask_48113_comment
-// crow_mask_48114_comment
+// crow_mask_48593_comment
+// crow_mask_48594_comment
 }
 
 

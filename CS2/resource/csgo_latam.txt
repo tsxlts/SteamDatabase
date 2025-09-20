@@ -2335,9 +2335,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"Econ_Revolving_Loot_List"				"Contiene uno de los siguientes objetos:"
 		"Econ_Revolving_Loot_List_Single"		"Abre la caja para recibir una de las siguientes opciones"
 		"Econ_Revolving_Loot_List_Rental"		"<img src='file://{images}/icons/ui/hourglass.svg' class='popup-decodable-lootlist-single-icon'/> Alquila todas las armas (excepto el artículo extraordinariamente raro) de este contenedor durante 7 días "
-		"Econ_Revolving_Loot_SecureConnectionLine"	"Te da la oportunidad de adquirir uno de los siguientes:"
-
-		
 		"Econ_Revolving_Loot_List_Rare_Item"	"¡o un objeto especial extraordinariamente raro!"
 		"Exceedingly_Rare_Item"					"★ Artículo especial raro ★"
 
@@ -2639,7 +2636,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"Attrib_MatchWins"							"Victorias competitivas en mapas de la operación: %s1"
 		"Attrib_HasSilencer"						"Silenciador"
 		"Attrib_HasBurstMode"						"Modo ráfaga de 3 balas"
-		"Attrib_SecureConnectionLine"				"Línea de conexión segura n.º %s1"
 		"Attrib_SupplyCrateSeries"					"Número de serie del contenedor: %s1"
 		"Attrib_KillEater"							"Este objeto cuenta con el dispositivo StatTrak™, el cual registra ciertas estadísticas cuando lo equipa su propietario."
 		"Attrib_ReferencedItem"						"Contiene: %s1"
@@ -2675,7 +2671,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"Attrib_OperationBonusXP"					"Bonificación de Operación obtenida: +%s1 EXP"
 		"Attrib_IssueDate"							"Fecha de expedición: %s1"
 		"Attrib_ExpirationDate"						"Fecha de vencimiento: %s1"
-
 		"Notify_KeychainRemoveTool_ChargesUseToRemove"	"Desacopladores de colgantes disponibles: {d:item_count}<br>Al quitar un colgante, se consume el desacoplador."
 		"Attrib_KeychainRemoveTool_Charges"			"Desacopladores de colgantes disponibles: {d:item_count}"
 		"Attrib_SpraysRemaining"					"Cargas restantes: %s1"
@@ -4303,7 +4298,7 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"CSGO_crate_sticker_pack_warhammer_xenos_capsule_desc"			"Haz aflorar el terror de los Xenos con la Cápsula de calcomanías de Xenos de Warhammer 40,000, lanzada en mayo de 2025."
 		"coupon_warhammer_xenos_sticker_capsule"						"Cápsula de calcomanías de Xenos de Warhammer 40,000"
 		
-"SprayKit_vcap1_ace_01"		"As"
+		"SprayKit_vcap1_ace_01"		"As"
 "SprayKit_vcap1_banana"		"Banana"
 "SprayKit_vcap1_cerberus"		"Cerbero"
 "SprayKit_vcap1_clutch_01"		"Rey Clutch"
@@ -27855,7 +27850,7 @@ en la zona de inicio del enemigo"
 		"StickerKit_warhammer_decals_paper_tau_empire_2"				"Imperio T'au 2"
 		"StickerKit_warhammer_decals_paper_tyranids_1"					"Tiránidos 1"
 		"StickerKit_warhammer_decals_paper_tyranids_2"					"Tiránidos 2"
-		"PatchKit_patch_banana"            "Banana loca"
+"PatchKit_patch_banana"            "Banana loca"
 		"PatchKit_desc_patch_banana"       "<i>Agente de referencia</i>."
 		"PatchKit_patch_boss"              "El jefe"
 		"PatchKit_desc_patch_boss"         "<i>Inquieto vive el agente que porta la corona</i>."
@@ -31776,7 +31771,6 @@ en la zona de inicio del enemigo"
 		"PaintKit_p90_boost_blue"							"Se personalizó utilizando un diseño angular azul y verde.\n\n<i>Te ves como te sientes.</i>"
 		"PaintKit_p90_boost_blue_Tag"						"Rompeolas"
 		
-		"PaintKit_p2k_fractal"								"Se personalizó en color gris metálico con motivos fractales y detalles naranjas.\n\n<i>>>EXPERIMENTOS DE TEXTURAS PARA ACABADOS DE ARMAS, PRIMERA PRUEBA<<</i>"
 		"PaintKit_p2k_fractal_Tag"							"Agarre seguro"
 		
 		"PaintKit_mag7_ammo_box"							"Se personalizó para simular una caja de municiones.\n\n<i>Guarda el recibo.</i>"
@@ -31799,8 +31793,7 @@ en la zona de inicio del enemigo"
 		
 		"PaintKit_m4a4_green_camo"							"Se personalizó con un patrón de camuflaje verde.\n\n<i>Aumenta tu huella digital.</i>"
 		"PaintKit_m4a4_green_camo_Tag"						"Choppa"
-
-// END COMMUNITY_35
+// END COMMUNITY_36
 
 // OVERPASS_2024
 				
@@ -35981,10 +35974,6 @@ en la zona de inicio del enemigo"
 		"PANOHUD_Spectate_Navigation_New_Cameraman_On"		"[{s:bind_radio}] Activar camarógrafo"
 		"PANOHUD_Spectate_Navigation_ToggleSpec"			"[{s:bind_drop}] Minimarcador "
 		"PANOHUD_Spectate_Navigation_ToggleOverview"		"[{s:bind_duck}] Vista general "
-		"PANOHUD_Spectate_Navigation_PlayHighlight"			"[{s:bind_lookatweapon}] Ver momento destacado"
-		"PANOHUD_Spectate_Navigation_CopyHighlightAndClose"	"[{s:bind_lookatweapon}] Copiar al portapapeles y cerrar"
-		"PANOHUD_Spectate_Navigation_CopyHighlightURL"		"[{s:bind_lookatweapon}] Copiar URL de momento destacado"
-	
 		"PANOHUD_GhostBecomeSpectator"						"Pulsa [%s1] para ser espectador"
 
 		"SFUIHUD_Spectate_You_Are_Dead"				"<font color=\"%s1\">Viendo a %s2</font>"
@@ -37734,13 +37723,10 @@ en la zona de inicio del enemigo"
 
 		"SFUI_OfficialDatacenterID_1"		"EE. UU. (Seattle)"
 		"SFUI_OfficialDatacenterID_2"		"EE. UU. (Virginia)"
-		"SFUI_OfficialDatacenterID_3"		"UE (Alemania)"
 		"SFUI_OfficialDatacenterID_4"		"Corea del Sur"
 		"SFUI_OfficialDatacenterID_5"		"Singapur"
 		"SFUI_OfficialDatacenterID_6"		"Emiratos Árabes Unidos"
 		"SFUI_OfficialDatacenterID_7"		"Australia"
-		"SFUI_OfficialDatacenterID_8"		"UE (Suecia)"
-		"SFUI_OfficialDatacenterID_9"		"UE (Austria)"
 		"SFUI_OfficialDatacenterID_10"		"Brasil"
 		"SFUI_OfficialDatacenterID_11"		"Sudáfrica"
 		"SFUI_OfficialDatacenterID_12"		"China (Shanghái)"
@@ -37752,20 +37738,15 @@ en la zona de inicio del enemigo"
 		// "SFUI_OfficialDatacenterID_18"	"TBD"
 		"SFUI_OfficialDatacenterID_19"		"Japón"
 		"SFUI_OfficialDatacenterID_20"		"Hong Kong"
-		"SFUI_OfficialDatacenterID_21"		"UE (España)"
 		"SFUI_OfficialDatacenterID_22"		"EE. UU. (California)"
 		"SFUI_OfficialDatacenterID_23"		"EE. UU. (Atlanta)"
 		"SFUI_OfficialDatacenterID_24"		"Hong Kong"
 		"SFUI_OfficialDatacenterID_25"		"China (Tianjin)"
 		"SFUI_OfficialDatacenterID_26"		"India (Chennai)"
 		"SFUI_OfficialDatacenterID_27"		"EE. UU. (Chicago)"
-		"SFUI_OfficialDatacenterID_28"		"UE (Polonia)"
-		"SFUI_OfficialDatacenterID_29"		"UE (Países Bajos)"
 		// "SFUI_OfficialDatacenterID_30"		"TBD"
 		"SFUI_OfficialDatacenterID_31"		"EE. UU., Dallas"
-		// "SFUI_OfficialDatacenterID_32"		"TBD"
-		"SFUI_OfficialDatacenterID_33"		"UE (Finlandia)"
-		"SFUI_OfficialDatacenterID_34"		"Sao Paulo"
+"SFUI_OfficialDatacenterID_34"		"Sao Paulo"
 		// "SFUI_OfficialDatacenterID_35"		"US West"
 		// "SFUI_OfficialDatacenterID_36"		"Germany"
 		// "SFUI_OfficialDatacenterID_37"		"Hong Kong"
@@ -37775,11 +37756,9 @@ en la zona de inicio del enemigo"
 		// "SFUI_OfficialDatacenterID_41"		"TBD"
 		"SFUI_OfficialDatacenterID_42"		"China, Chengdú"
 		"SFUI_OfficialDatacenterID_43"		"EE. UU. (Nueva York)"
-		"SFUI_OfficialDatacenterID_44"		"UE (Finlandia)"
 		"SFUI_OfficialDatacenterID_45"		"Reino Unido"
 		"SFUI_OfficialDatacenterID_49"		"China, Guangdong"
 		"SFUI_OfficialDatacenterID_51"		"China (Pekín)"
-
 		"SFUI_UserAlert_HighPings"			"Tu mejor ping obtenido en servidores oficiales es de %s1 ms."
 		"SFUI_UserAlert_Unreachable"		"No se ha podido contactar con ningún servidor oficial."
 		"SFUI_UserAlert_Unreachable_NoConfig"	"No se puede obtener la configuración de red mediante HTTPS. Comprueba la conexión a Internet y la configuración del firewall."
@@ -42452,7 +42431,6 @@ Tu obtención de EXP de recompensa de misión no volverá a su valor normal hast
 		"popup_totool_decodeable_header_fantoken"	"Activar objeto"
 		"popup_totool_purchase_header"	"Adquirir objeto"
 		"popup_totool_purchase_header2"	"COMPRAR PARA RECLAMAR"
-
 		//Purchase
 		"popup_cartpreview_button"		"Previsualizar"
 		"popup_cartpreview_title"		"Vista previa"
@@ -45078,8 +45056,9 @@ Tu obtención de EXP de recompensa de misión no volverá a su valor normal hast
 		"Chatwheel_section_report"	"Reportes"
 
 		"Chatwheel_description" "La rueda de chat te permite acceder rápidamente a una lista que puedes personalizar con mensajes por radio útiles."
-
-		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -45244,6 +45223,28 @@ Tu obtención de EXP de recompensa de misión no volverá a su valor normal hast
 		"quest_11011_var_ingame:p{mission-points}"		"Gana una ronda#|#Gana rondas"
 		
 		"quest_11012_var_desc:p{mission-points}"	 	"Gana una ronda en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>.#|#Gana rondas en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>."
+		"quest_11012_var_ingame:p{mission-points}"		"Gana una ronda#|#Gana rondas"
+		
+		"quest_11013_var_desc:p{mission-points}"	 	"Gana una ronda en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>.#|#Gana rondas en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>."
+		"quest_11013_var_ingame:p{mission-points}"		"Gana una ronda#|#Gana rondas"
+		
+		"quest_11014_var_desc:p{mission-points}"	 	"Gana una ronda en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>.#|#Gana rondas en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>."
+		"quest_11014_var_ingame:p{mission-points}"		"Gana una ronda#|#Gana rondas"
+		
+		"quest_11015_var_desc:p{mission-points}"	 	"Gana una ronda en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>.#|#Gana rondas en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>."
+		"quest_11015_var_ingame:p{mission-points}"		"Gana una ronda#|#Gana rondas"
+
+// crow_mask_48593_comment
+// crow_mask_48594_comment
+}
+
+
+
+
+}
+
+
+a ronda en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>.#|#Gana rondas en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>."
 		"quest_11012_var_ingame:p{mission-points}"		"Gana una ronda#|#Gana rondas"
 		
 		"quest_11013_var_desc:p{mission-points}"	 	"Gana una ronda en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>.#|#Gana rondas en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>."
