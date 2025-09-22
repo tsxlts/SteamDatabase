@@ -4295,7 +4295,7 @@
 		"coupon_warhammer_xenos_sticker_capsule"						"战锤40K异形印花胶囊"
 		
 		"CSGO_crate_community_36"				"封装的创世终端机"
-		"CSGO_crate_community_36^volatile"		"封装的创世终端机"
+		"CSGO_crate_community_36^volatile"		"Active Genesis Terminal"
 		"CSGO_crate_community_36_desc"			""
 
 		"SprayKit_vcap1_ace_01"		"王牌"
