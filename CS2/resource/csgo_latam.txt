@@ -2053,8 +2053,8 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 
 		"funfact_ct_win_no_kills"									"Los antiterroristas ganaron sin matar a un terrorista."
 		"funfact_t_win_no_kills"									"Los terroristas ganaron sin matar a un antiterrorista."
-		"funfact_t_win_no_casualties"								"Los terroristas ganaron sin sufrir alguna baja."
-		"funfact_ct_win_no_casualties"								"Los antiterroristas ganaron sin sufrir alguna baja."
+		"funfact_t_win_no_casualties"								"Los terroristas ganaron sin sufrir ninguna baja."
+		"funfact_ct_win_no_casualties"								"Los antiterroristas ganaron sin sufrir ninguna baja."
 		"funfact_best_terrorist_accuracy:p{funfact-d1}"				"{s:funfact-player} tuvo una precisión de un {d:funfact-d1} %, mientras que la de su equipo fue del {d:funfact-d2} %.#|#{s:funfact-player} tuvo una precisión de un {d:funfact-d1} %, mientras que la de su equipo fue del {d:funfact-d2} %."
 		"funfact_best_counterterrorist_accuracy:p{funfact-d1}"		"{s:funfact-player} tuvo una precisión de un {d:funfact-d1} %, mientras que la de su equipo fue del {d:funfact-d2} %.#|#{s:funfact-player} tuvo una precisión de un {d:funfact-d1} %, mientras que la de su equipo fue del {d:funfact-d2} %."
 		"funfact_fallback1"											"El pastel es mentira."
@@ -2335,6 +2335,9 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"Econ_Revolving_Loot_List"				"Contiene uno de los siguientes objetos:"
 		"Econ_Revolving_Loot_List_Single"		"Abre la caja para recibir una de las siguientes opciones"
 		"Econ_Revolving_Loot_List_Rental"		"<img src='file://{images}/icons/ui/hourglass.svg' class='popup-decodable-lootlist-single-icon'/> Alquila todas las armas (excepto el artículo extraordinariamente raro) de este contenedor durante 7 días "
+		"Econ_Revolving_Loot_SecureConnectionLine"	"Se puede comprar un artículo en esta terminal. Esta terminal presentará ofertas múltiples para los siguientes artículos:"
+
+		
 		"Econ_Revolving_Loot_List_Rare_Item"	"¡o un objeto especial extraordinariamente raro!"
 		"Exceedingly_Rare_Item"					"★ Artículo especial raro ★"
 
@@ -2371,6 +2374,7 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"Item_Crafted"							" %s1 ha rellenado un contrato y ha recibido: %s2"
 		"Item_Traded"							" %s1 ha recibido en un intercambio: %s2"
 		"Item_Purchased"						" %s1 ha comprado: %s2"
+		"Item_PurchasedVolatile"				" %s1 compró %s2 al traficante de armas"
 		"Item_FoundInCrate"						" %s1 ha abierto un contenedor y ha encontrado: %s2"
 		"Item_Gifted"							" %s1 ha aceptado un regalo: %s2"
 		"Item_Earned"							" %s1 ha obtenido: %s2"
@@ -2395,6 +2399,7 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"NewItemMethod_Crafted"			"Has recibido:"
 		"NewItemMethod_Traded"			"Has recibido:"
 		"NewItemMethod_Purchased"		"Has comprado:"
+		"NewItemMethod_PurchasedVolatile" "Compraste del traficante de armas:"
 		"NewItemMethod_FoundInCrate"	"Has abierto:"
 		"NewItemMethod_Rental"			"Alquilaste:"
 		"NewItemMethod_XpShopRedeem"	"Obtuviste de la Armería:"
@@ -2454,6 +2459,7 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"ItemHistory_Action_Drop"										"Obtuviste un nuevo rango y recibiste un objeto"
 		"ItemHistory_Action_ManualCreate"								"Creado por el Soporte de Counter-Strike"
 		"ItemHistory_Action_Purchase"									"Comprado en la tienda"
+		"ItemHistory_Action_PurchaseVolatileContainerItem"				"Comprado del traficante de armas"
 		"ItemHistory_Action_AutoGrantItem"								"Obtenido"
 		"ItemHistory_Action_CrossGameAchievement"						"Obtenido al desbloquear un logro en otro juego"
 		"ItemHistory_Action_AwardGift_Receiver"							"Recibiste un regalo"
@@ -2636,6 +2642,7 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"Attrib_MatchWins"							"Victorias competitivas en mapas de la operación: %s1"
 		"Attrib_HasSilencer"						"Silenciador"
 		"Attrib_HasBurstMode"						"Modo ráfaga de 3 balas"
+		"Attrib_SecureConnectionLine"				"Número de serie del contenedor: %s1"
 		"Attrib_SupplyCrateSeries"					"Número de serie del contenedor: %s1"
 		"Attrib_KillEater"							"Este objeto cuenta con el dispositivo StatTrak™, el cual registra ciertas estadísticas cuando lo equipa su propietario."
 		"Attrib_ReferencedItem"						"Contiene: %s1"
@@ -2671,6 +2678,9 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"Attrib_OperationBonusXP"					"Bonificación de Operación obtenida: +%s1 EXP"
 		"Attrib_IssueDate"							"Fecha de expedición: %s1"
 		"Attrib_ExpirationDate"						"Fecha de vencimiento: %s1"
+		"Attrib_PurchaserAccountID"					"Este artículo tiene un certificado de propietario original."
+		"Attrib_PurchaserAccountID_title"			"Certificado de propietario original"
+
 		"Notify_KeychainRemoveTool_ChargesUseToRemove"	"Desacopladores de colgantes disponibles: {d:item_count}<br>Al quitar un colgante, se consume el desacoplador."
 		"Attrib_KeychainRemoveTool_Charges"			"Desacopladores de colgantes disponibles: {d:item_count}"
 		"Attrib_SpraysRemaining"					"Cargas restantes: %s1"
@@ -4298,6 +4308,16 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"CSGO_crate_sticker_pack_warhammer_xenos_capsule_desc"			"Haz aflorar el terror de los Xenos con la Cápsula de calcomanías de Xenos de Warhammer 40,000, lanzada en mayo de 2025."
 		"coupon_warhammer_xenos_sticker_capsule"						"Cápsula de calcomanías de Xenos de Warhammer 40,000"
 		
+		"CSGO_crate_sticker_pack_sugarface2_capsule"	   				"Colección de calcomanías de calaveras de azúcar 2"
+		"CSGO_crate_sticker_pack_sugarface2_capsule_desc"				"Esta colección de calcomanías tiene una variedad de calcomanías con temática de calaveras de azúcar y se lanzó en septiembre de 2025."
+		"CSGO_crate_sticker_pack_sugarface2_short"						"Calcomanías de calaveras de azúcar 2"
+		
+		"CSGO_crate_sticker_pack_community2025_capsule"	    			"Colección de calcomanías de la comunidad 2025"
+		"CSGO_crate_sticker_pack_community2025_capsule_desc"			"Esta colección de calcomanías tiene una variedad de calcomanías y se lanzó en septiembre de 2025."
+		"CSGO_crate_sticker_pack_community_2025_short"					"Calcomanías de la comunidad 2025"
+		
+		"CSGO_crate_community_36"				"Terminal Génesis precintado"
+		"CSGO_crate_community_36^volatile"		"Terminal Génesis activo"
 		"SprayKit_vcap1_ace_01"		"As"
 "SprayKit_vcap1_banana"		"Banana"
 "SprayKit_vcap1_cerberus"		"Cerbero"
@@ -5248,6 +5268,7 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"CSGO_set_timed_drops_warm"				"Colección Radiant"
 		"CSGO_set_timed_drops_neutral"			"Colección Boreal"
 		"CSGO_set_timed_drops_cool"				"Colección Ascent"
+		"CSGO_set_community_36"					"Colección Génesis"
 		/////////////////
 		// lootlist override strings
 		//////////////////
@@ -27850,7 +27871,49 @@ en la zona de inicio del enemigo"
 		"StickerKit_warhammer_decals_paper_tau_empire_2"				"Imperio T'au 2"
 		"StickerKit_warhammer_decals_paper_tyranids_1"					"Tiránidos 1"
 		"StickerKit_warhammer_decals_paper_tyranids_2"					"Tiránidos 2"
-"PatchKit_patch_banana"            "Banana loca"
+		//Sugarface 2 Sticker Capsule
+		
+		"StickerKit_sugarface2_paper_clavis"							"Clavis"
+		"StickerKit_sugarface2_paper_lorena"							"Lorena"
+		"StickerKit_sugarface2_paper_lucas"								"Lucas"
+		"StickerKit_sugarface2_holo_clavis"								"Clavis (holográfica)"
+		"StickerKit_sugarface2_holo_lorena"								"Lorena (holográfica)"
+		"StickerKit_sugarface2_holo_lucas"								"Lucas (holográfica)"
+		"StickerKit_sugarface2_foil_clavis"								"Clavis (reflectante)"
+		"StickerKit_sugarface2_foil_lorena"								"Lorena (reflectante)"
+		"StickerKit_sugarface2_foil_lucas"								"Lucas (reflectante)"
+		//2025 Community Sticker Capsule
+		
+		"StickerKit_community_2025_paper_candy_apples"					"Manzanas caramelizadas"
+		"StickerKit_community_2025_paper_cubix_connexion"				"Conexión Cubix"
+		"StickerKit_community_2025_paper_eyes_of_farlow"				"Ojos de Farlow"
+		"StickerKit_community_2025_paper_fade_mangos"					"Mangos difuminados"
+		"StickerKit_community_2025_paper_gloves_on"						"Guantes puestos"
+		"StickerKit_community_2025_paper_lock_in"						"Fijar"
+		"StickerKit_community_2025_paper_mimicapsule"					"Mimicápsula"
+		"StickerKit_community_2025_paper_pop_pup"						"Cachorros"
+		"StickerKit_community_2025_paper_pots"							"OTLA"
+		"StickerKit_community_2025_paper_sent_with_love"				"Enviado con cariño"
+		"StickerKit_community_2025_paper_skelly_stab"					"Cuchillo de esqueleto"
+		"StickerKit_community_2025_paper_vice_cursor"					"Cursor Vice"
+		"StickerKit_community_2025_glitter_ct_tracks"					"Caminos AT (brillantina)"
+		"StickerKit_community_2025_glitter_overloaded"					"Sobrecargado (brillantina)"
+		"StickerKit_community_2025_glitter_t_tracks"					"Caminos T (brillantina)"
+		"StickerKit_community_2025_holo_bomb_planted"					"Bomba plantada (holográfica)"
+		"StickerKit_community_2025_holo_chrome_dome"					"Domo cromado (holográfica)"
+		"StickerKit_community_2025_holo_cutie"							"Linda (holográfica)"
+		"StickerKit_community_2025_holo_evidence"						"Evidencia (holográfica)"
+		"StickerKit_community_2025_holo_froggles"						"Gafas de protección (holográfica)"
+		"StickerKit_community_2025_foil_aint_a_rental"					"No se alquila (reflejante)"
+		"StickerKit_community_2025_foil_eyes_sky"						"Ojos al cielo (reflejante)"
+		"StickerKit_community_2025_foil_good_as_new"					"Recién salido del horno (reflejante)"
+		"StickerKit_community_2025_foil_queen_ava"						"Reina Ava (reflejante)"
+		"StickerKit_community_2025_foil_hands_off"						"Quita las manos (reflejante)"
+		"StickerKit_community_2025_foil_king_crasswater"				"Rey Crasswater (reflectante)"
+		"StickerKit_community_2025_lenticular_bullhit"					"Ojo al blanco (lenticular)"
+		"StickerKit_community_2025_lenticular_digistrike"				"Digi-Strike (lenticular)"
+		"StickerKit_community_2025_lenticular_mvp"						"MJ neón (lenticular)"
+		"PatchKit_patch_banana"            "Banana loca"
 		"PatchKit_desc_patch_banana"       "<i>Agente de referencia</i>."
 		"PatchKit_patch_boss"              "El jefe"
 		"PatchKit_desc_patch_boss"         "<i>Inquieto vive el agente que porta la corona</i>."
@@ -31771,6 +31834,7 @@ en la zona de inicio del enemigo"
 		"PaintKit_p90_boost_blue"							"Se personalizó utilizando un diseño angular azul y verde.\n\n<i>Te ves como te sientes.</i>"
 		"PaintKit_p90_boost_blue_Tag"						"Rompeolas"
 		
+		"PaintKit_p2k_fractal"								"Se personalizó en color gris metálico con motivos fractales y detalles naranjas.\n\n<i>&gt;&gt;EXPERIMENTOS DE TEXTURAS PARA ACABADOS DE ARMAS, PRIMERA PRUEBA&lt;&lt;</i>"
 		"PaintKit_p2k_fractal_Tag"							"Agarre seguro"
 		
 		"PaintKit_mag7_ammo_box"							"Se personalizó para simular una caja de municiones.\n\n<i>Guarda el recibo.</i>"
@@ -31793,6 +31857,57 @@ en la zona de inicio del enemigo"
 		
 		"PaintKit_m4a4_green_camo"							"Se personalizó con un patrón de camuflaje verde.\n\n<i>Aumenta tu huella digital.</i>"
 		"PaintKit_m4a4_green_camo_Tag"						"Choppa"
+
+// END COMMUNITY_35
+
+// COMMUNITY_36
+
+		"PaintKit_mp7_smoking_kills_v2"					"Se pintó a medida con un diseño colorido que presenta a una mujer con lentes fumando un cigarro.\n\n<i>\"Podemos hacer esto rápido o lento, tú decides\".</i>"
+		"PaintKit_mp7_smoking_kills_v2_Tag"				"Fumar mata" 
+		
+		"PaintKit_m4a4_skrrrt_green"					"Se personalizó con una base verde neón y acabados con logos ficticios que intentan evocar la cultura de la velocidad y los arreglos estéticos.\n\n<i>Donde \"Globoil 1 Synthetics\" se encuentra con \"ENTRI PERFORMANCE\"</i>"
+		"PaintKit_m4a4_skrrrt_green_Tag"				"A toda marcha" 
+		
+		"PaintKit_ak47_puffer_custom"					"Se personalizó para replicar el aspecto y la sensación de una chamarra acolchada blanca y negra de lujo con acentos dorados.\n\n<i>Buscar poder, ganar poder, mantener el poder</i>"
+		"PaintKit_ak47_puffer_custom_Tag"				"El oligarca" 
+		
+		"PaintKit_ump45_illumina_v2"					"Este trabajo de pintura personalizado presenta bandas alternas en negro y azul.\n\n<i>En el vacío</i>"
+		"PaintKit_ump45_illumina_v2_Tag"				"Continuo" 
+		
+		"PaintKit_nova_ocular"							"Este trabajo de pintura personalizado presenta formas geométricas y detalles simples y realistas inspirados en el surrealismo abstracto y las obras de artistas del siglo XX.\n\n<i>A los ojos de quien lo contempla</i>."
+		"PaintKit_nova_ocular_Tag"						"Ocular"
+		
+		"PaintKit_mac10_kamicatze"						"Se personalizó con un gato que grita y un objetivo en la parte trasera del receptor.\n\n<i>La gatita tiene garras...</i>"
+		"PaintKit_mac10_kamicatze_Tag"					"Pelea de gatos" 
+		
+		"PaintKit_glock_mirror_maze"					"Se personalizó para imitar a un mosaico de espejos.\n\n<i>Atrapado en tus propios pensamientos</i>"
+		"PaintKit_glock_mirror_maze_Tag"				"Mosaico de espejos" 
+		
+		"PaintKit_dual_elite_biblical_angel"			"Se personalizó con ojos en las empuñaduras y murales celestes en las diapositivas.\n\n<i>Poniendo el ojo (o los ojos) en la bala</i>"
+		"PaintKit_dual_elite_biblical_angel_Tag"		"Ojos de ángel" 
+		
+		"PaintKit_p250_bullfrog"						"Se personalizó con decoraciones de carreras en bronce y negro.\n\n<i>¡Mira cómo vas!</i>"
+		"PaintKit_p250_bullfrog_Tag"					"Bullfrog" 
+		
+		"PaintKit_mp5sd_chrome"							"Se personalizó en gris metálico y acabados con acentos rojos.\n\n<i>MANTENERTE ENFOCADO // EL VERDADERO OBJETIVO</i>"
+		"PaintKit_mp5sd_chrome_Tag"						"Enfócate" 
+		
+		"PaintKit_scar_refraction"						"Se aplicó un diseño degradado azul y morado.\n\n<i>“Esa es un arma grande para tan pequeña jaula...”</i>"
+		"PaintKit_scar_refraction_Tag"					"Enjaulado" 
+		
+		"PaintKit_p2000_deep_red"						"Se personalizó con un diseño de color carbón y rojo intenso. \n\n<i>Esperando la caída de tus enemigos</i>"
+		"PaintKit_p2000_deep_red_Tag"					"Ala roja" 
+		
+		"PaintKit_mp9_vinyl"							"Se personalizó para parecerse a un disco de vinilo, con surcos y toda la cosa.\n\n<i>Un clásico instantáneo</i>"
+		"PaintKit_mp9_vinyl_Tag"						"Disco rayado" 
+		
+		"PaintKit_mag7_circle_copper"					"Este trabajo de pintura personalizado da la apariencia de una onda de choque que emana del cerrojo por encima del gatillo.\n\n<i>Dos puntos</i>"
+		"PaintKit_mag7_circle_copper_Tag"				"MAGnitud" 
+		
+		"PaintKit_m4a1s_quick_liquidation"				"Su oscura base, junto a los reflejos rojos y azules cuidadosamente seleccionados, hacen que esta pintura personalizada para el M4A1-S parezca estar brillando bajo luz ambiental.\n\n<i>Reflejos calmados</i>."
+		
+		"PaintKit_aug_trigger_discipline_velco"			"Se personalizó con un patrón isométrico azul y acabado con acentos anaranjados.\n\n<i>La paciencia es su propia recompensa</i>"
+
 // END COMMUNITY_36
 
 // OVERPASS_2024
@@ -33031,7 +33146,7 @@ en la zona de inicio del enemigo"
 		"Workshop_size" "Tamaño"
 		"Workshop_View" "Ver en el Workshop"
 		"Workshop_Allow" "Permitir"
-		"Workshop_Deny" "Denegar"
+		"Workshop_Deny" "Rechazar"
 
 		"SFUI_Workshop_Desc_Pw"				"Aquí están los mapas del Workshop a los que te has suscrito. Puedes utilizar la partida rápida comunitaria para encontrar el mejor servidor comunitario con un mapa determinado."
 		"SFUI_Workshop_Desc_Sp_Pw"			"Aquí están los mapas del Workshop a los que te has suscrito. Puedes probarlos en partida local con bots."
@@ -35974,6 +36089,15 @@ en la zona de inicio del enemigo"
 		"PANOHUD_Spectate_Navigation_New_Cameraman_On"		"[{s:bind_radio}] Activar camarógrafo"
 		"PANOHUD_Spectate_Navigation_ToggleSpec"			"[{s:bind_drop}] Minimarcador "
 		"PANOHUD_Spectate_Navigation_ToggleOverview"		"[{s:bind_duck}] Vista general "
+		"PANOHUD_Spectate_Navigation_PlayHighlight"			"[{s:bind_drop}] Ver momento destacado"
+		"PANOHUD_Spectate_Navigation_CopyHighlightAndClose"	"[{s:bind_drop}] Copiar al portapapeles y cerrar"
+		"PANOHUD_Spectate_Navigation_CopyHighlightURL"		"[{s:bind_drop}] Copiar URL del momento destacado"
+		"PANOHUD_Spectate_Vanity_Loadout_Hide"				"[{s:bind_lookatweapon}] Ocultar equipamiento"
+		"PANOHUD_Spectate_Vanity_Loadout_Show"				"[{s:bind_lookatweapon}] Abrir equipamiento"
+		"PANOHUD_Spectate_Vanity_Loadout_Close_Popup"		"[ESC] Cerrar ventana emergente"
+
+
+	
 		"PANOHUD_GhostBecomeSpectator"						"Pulsa [%s1] para ser espectador"
 
 		"SFUIHUD_Spectate_You_Are_Dead"				"<font color=\"%s1\">Viendo a %s2</font>"
@@ -36886,6 +37010,9 @@ en la zona de inicio del enemigo"
 		"SFUI_HUDWeaponRarityColor"			"Resaltar armas con color de rareza"
 		"SFUI_HUDWeaponRarityColor_desc"	"Al activar esta opción, los íconos de las armas en el HUD brillarán según el color de rareza."
 
+		"SFUI_HUDSpecColorOverride"			"Anular el color del HUD de espectador"
+		"SFUI_HUDSpecColorOverride_desc"	"Al observar a otro jugador, el color del HUD será el mismo que el color de su equipo en los modos casuales y que el color de su compañero de equipo en los modos competitivos." 
+
 		"SFUI_Settings_High_Dynamic_Range"	"Alto rango dinámico (HDR)"
 		"SFUI_Settings_Very_High"			"Muy alta"
 		"SFUI_Settings_High"				"Alta"
@@ -37723,10 +37850,13 @@ en la zona de inicio del enemigo"
 
 		"SFUI_OfficialDatacenterID_1"		"EE. UU. (Seattle)"
 		"SFUI_OfficialDatacenterID_2"		"EE. UU. (Virginia)"
+		"SFUI_OfficialDatacenterID_3"		"UE, Fráncfort"
 		"SFUI_OfficialDatacenterID_4"		"Corea del Sur"
 		"SFUI_OfficialDatacenterID_5"		"Singapur"
 		"SFUI_OfficialDatacenterID_6"		"Emiratos Árabes Unidos"
 		"SFUI_OfficialDatacenterID_7"		"Australia"
+		"SFUI_OfficialDatacenterID_8"		"UE, Estocolmo"
+		"SFUI_OfficialDatacenterID_9"		"UE, Viena"
 		"SFUI_OfficialDatacenterID_10"		"Brasil"
 		"SFUI_OfficialDatacenterID_11"		"Sudáfrica"
 		"SFUI_OfficialDatacenterID_12"		"China (Shanghái)"
@@ -37738,15 +37868,20 @@ en la zona de inicio del enemigo"
 		// "SFUI_OfficialDatacenterID_18"	"TBD"
 		"SFUI_OfficialDatacenterID_19"		"Japón"
 		"SFUI_OfficialDatacenterID_20"		"Hong Kong"
+		"SFUI_OfficialDatacenterID_21"		"UE, Madrid"
 		"SFUI_OfficialDatacenterID_22"		"EE. UU. (California)"
 		"SFUI_OfficialDatacenterID_23"		"EE. UU. (Atlanta)"
 		"SFUI_OfficialDatacenterID_24"		"Hong Kong"
 		"SFUI_OfficialDatacenterID_25"		"China (Tianjin)"
 		"SFUI_OfficialDatacenterID_26"		"India (Chennai)"
 		"SFUI_OfficialDatacenterID_27"		"EE. UU. (Chicago)"
+		"SFUI_OfficialDatacenterID_28"		"UE, Varsovia"
+		"SFUI_OfficialDatacenterID_29"		"UE, Ámsterdam"
 		// "SFUI_OfficialDatacenterID_30"		"TBD"
 		"SFUI_OfficialDatacenterID_31"		"EE. UU., Dallas"
-"SFUI_OfficialDatacenterID_34"		"Sao Paulo"
+		// "SFUI_OfficialDatacenterID_32"		"TBD"
+		"SFUI_OfficialDatacenterID_33"		"UE, Helsinki"
+		"SFUI_OfficialDatacenterID_34"		"Sao Paulo"
 		// "SFUI_OfficialDatacenterID_35"		"US West"
 		// "SFUI_OfficialDatacenterID_36"		"Germany"
 		// "SFUI_OfficialDatacenterID_37"		"Hong Kong"
@@ -37756,9 +37891,12 @@ en la zona de inicio del enemigo"
 		// "SFUI_OfficialDatacenterID_41"		"TBD"
 		"SFUI_OfficialDatacenterID_42"		"China, Chengdú"
 		"SFUI_OfficialDatacenterID_43"		"EE. UU. (Nueva York)"
+		"SFUI_OfficialDatacenterID_44"		"UE, Helsinki"
 		"SFUI_OfficialDatacenterID_45"		"Reino Unido"
 		"SFUI_OfficialDatacenterID_49"		"China, Guangdong"
 		"SFUI_OfficialDatacenterID_51"		"China (Pekín)"
+		"SFUI_OfficialDatacenterID_52"		"UE, Falkenstein"
+
 		"SFUI_UserAlert_HighPings"			"Tu mejor ping obtenido en servidores oficiales es de %s1 ms."
 		"SFUI_UserAlert_Unreachable"		"No se ha podido contactar con ningún servidor oficial."
 		"SFUI_UserAlert_Unreachable_NoConfig"	"No se puede obtener la configuración de red mediante HTTPS. Comprueba la conexión a Internet y la configuración del firewall."
@@ -42185,6 +42323,7 @@ Tu obtención de EXP de recompensa de misión no volverá a su valor normal hast
 		"inv_context_useitem"				"Usar objeto"
 		"inv_context_usespray"				"Abrir y equipar"
 		"inv_context_open_package"			"Abrir paquete"
+		"inv_context_open_terminal"			"Abrir sello de terminal"
 		"inv_context_open_watch_panel_pickem"	"Jugar al Desafío Pick'Em"
 		"inv_context_view_tournament_journal" "Ver desafíos de la moneda"
 		"inv_context_open_season_stats_panel" "Ver estadísticas de la temporada"
@@ -42296,6 +42435,12 @@ Tu obtención de EXP de recompensa de misión no volverá a su valor normal hast
 		"popup_title_quest_reward"			"Recompensa"
 		"popup_title_xpshopredeem"			"Obtenido de la Armería"
 
+		"popup_control_tooltip_rotate_weapon"		"Arrastra el mouse para rotar el arma"
+		"popup_control_tooltip_rotate_sticker"		"Desplaza la rueda del mouse mientras pasas el cursor sobre una calcomanía para girarla"
+		"popup_control_tooltip_move_sticker"		"Haz clic y arrastra la calcomanía para colocarla sobre el arma"
+		"popup_control_tooltip_move_keychain"		"Haz clic y arrastra el llavero para colocarlo sobre el arma."
+
+
 		"acknowledge_gifter"				"Regalo de {s:name}"
 		"acknowledge_quest"					"Recompensa de misión"
 		"acknowledge_all_items"				"Continuar al inventario"
@@ -42406,12 +42551,15 @@ Tu obtención de EXP de recompensa de misión no volverá a su valor normal hast
 		"popup_decodeable_xray_desc"	"<b>{s:itemname}</b>"
 		"popup_decodeable_desc_graffiti"	"Abrir <b>{s:itemname}</b>"
 		"popup_decodeable_desc_fantoken"	"Activar <b>{s:itemname}</b>"
+		"popup_decodeable_desc_terminal"	"Abrir <b>{s:itemname}</b>"
 		"popup_decodeable_warning"		"Este contenedor solo se puede abrir una vez"
 		"popup_decodeable_warning_graffiti"		"Este grafiti solo se puede abrir una vez"
 		"popup_decodeable_warning_fantoken"		"Este objeto solo se puede activar una vez"
+		"popup_decodeable_warning_terminal"		"Una vez desprecintado, tu Terminal Uplink no se puede intercambiar ni vender en el mercado"
 		"popup_decodeable_button"		"Abrir contenedor"
 		"popup_decodeable_button_graffiti"	"Abrir grafiti"
 		"popup_decodeable_button_fantoken"	"Activar objeto"
+		"popup_decodeable_button_terminal"	"Abrir sello de terminal"
 		"popup_decodeable_async_desc"	"Utilizar <b>{s:itemname}</b>"
 		"popup_decodeable_async_xray_desc"		"Usa el escáner de rayos X para revelar el objeto que hay dentro"
 		"popup_decodeable_err_restricted"	"La apertura de <b>{s:itemname}</b> no está permitida en tu país"
@@ -42431,6 +42579,8 @@ Tu obtención de EXP de recompensa de misión no volverá a su valor normal hast
 		"popup_totool_decodeable_header_fantoken"	"Activar objeto"
 		"popup_totool_purchase_header"	"Adquirir objeto"
 		"popup_totool_purchase_header2"	"COMPRAR PARA RECLAMAR"
+		"popup_totool_decodeable_header_terminal"	"Abrir sello de terminal"
+
 		//Purchase
 		"popup_cartpreview_button"		"Previsualizar"
 		"popup_cartpreview_title"		"Vista previa"
@@ -43281,6 +43431,22 @@ Tu obtención de EXP de recompensa de misión no volverá a su valor normal hast
 		"practicesettings_annotations_dropdown_tooltip"	"Especifica cuál guía del mapa se cargará."
 
 		"PlayMenuReplayNewUserTrainingButton"		"Repetir día de entrenamiento"
+
+
+		"CSGO_VanityLoadout_Inspect"				"Inspeccionar"
+		"CSGO_VanityLoadout_FindOnMarket"			"Encontrar en el mercado"
+
+
+		"VanityLoadout_WeaponInfo_name"				"<span class=\"weapon-name\">{s:weapon_name_full}</span><br><span class=\"weapon-name-custom\">{s:weapon_name_custom}</span></font>"
+
+
+		"VanityLoadout_WeaponInfo_stock"		"Arma predeterminada"
+
+		"VanityLoadout_WeaponInfo_collection"	"{s:collection}"
+		"VanityLoadout_WeaponInfo_wear"			"{s:wear}"
+		"VanityLoadout_WeaponInfo_pattern"		"{s:pattern}"
+
+		"VanityLoadout_WeaponInfo_wear_fill"			"<font color=\"\">%s1: %s2</font>"
 
 
 		//////////////////////
@@ -45056,9 +45222,301 @@ Tu obtención de EXP de recompensa de misión no volverá a su valor normal hast
 		"Chatwheel_section_report"	"Reportes"
 
 		"Chatwheel_description" "La rueda de chat te permite acceder rápidamente a una lista que puedes personalizar con mensajes por radio útiles."
-//
-//
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		////
+		//
+		// Volatile Laptop
+		//
+		////
+
+		// ---------------------------------------------------------------------------------------------
+		"laptop_window_collection_title"			"EXP DEL CATÁLOGO DE LA COLECCIÓN"
+		"laptop_window_expiration_title"			"CADUCIDAD"
+		"laptop_window_seal_title"					"ESTADO"
+		"laptop_window_messages_title"				"CHAT - TRAFICANTE DE ARMAS"
+		"laptop_window_currentoffer_title"			"OFERTA ACTUAL"
+		"laptop_app_title"							"<span class=\"laptop-app-title-prefix\">UP-</span>Link"
+		"laptop_app_version"						"v 1.1.0.2000"
+
+		"dealer_offer_attachment_title"							"{s:item-name}"
+		"dealer_offer_attachment_wear"						"{s:item-rarity}"
+		"dealer_offer_attachment_remaining_title"				"OFERTA #{d:offer-total}"
+		"dealer_offer_attachment_remaining"						"Oferta #{d:offer-total}"
+		"dealer_offer_received_count"							"<b>{s:offer-count}</b> Oferta"
+		"dealer_offer_attachment_final_title"					"OFERTA FINAL"
+		"dealer_offer_attachment_final"							"{s:offer-count} y última oferta"
+		"dealer_offer_attachment_status"						"Oferta - {s:offer-status}"
+		"dealer_offer_attachment_status-active"					"<b><span class=\"offer-active\">Activa</span></b>"
+		"dealer_offer_attachment_status-price"					"<b><span class=\"offer-active\">{s:offer-price}</span></b>"
+		"dealer_offer_attachment_status-declined-price"			"{s:offer-price}"
+		"dealer_offer_attachment_status-declined"				"<span class=\"offer-declined\">{s:offer-count} Oferta - Denegada</span>"
+
+		"user_btn_purchase_desc_purchase"		"Mantén presionado para comprar este artículo. Después de la compra, se descarta la terminal."
+		"user_btn_purchase_desc_continue"		"Mantén presionado para declinar permanentemente esta oferta y ver la siguiente."
+		"user_btn_purchase_desc_end"		"Rechazar la última oferta y descartar esta terminal."
+		"user_btn_purchase_title"			"<b>{s:offer-count} Oferta </b> - Respuestas sugeridas"
+		"user_btn_purchase_final_title"		"<b>Última oferta</b> - Respuestas sugeridas"
+		"user_btn_decline_desc"				"Rechazar esta oferta y ver otra"
+		"user_btn_accept"		"Aceptar oferta <b>{s:price}</b>"
+		"user_btn_accept_final"	"Aceptar última oferta por <b>{s:price}</b>"
+		"user_btn_accept_0"		"Hecho. <b>{s:price} me parece bien.</b>"
+		"user_btn_accept_1"		"La acepto por <b>{s:price}</b>"
+		"user_btn_accept_2"		"Me la quedo por <b>{s:price}</b>"
+		"user_btn_accept_3"		"Me lo llevo por <b>{s:price}</b>"
+		"user_btn_accept_4"		"Te la llevas por <b>{s:price}</b>"
+		"user_btn_accept_5"		"<b>{s:price}</b> está bien"
+		"user_btn_next"			"Rechazar oferta"
+		"user_btn_next_0"		"Tentador, pero no"
+		"user_btn_next_1"		"No vale la pena mis balas"
+		"user_btn_next_2"		"No puedo"
+		"user_btn_next_3"		"Paso"
+		"user_btn_next_4"		"No tenemos un trato"
+		"user_btn_next_5"		"Gracias, pero no"
+		"user_btn_next_6"		"Ahorita no"
+		"user_btn_next_7"		"Hoy no"
+		"user_btn_pause"		"Pausar trato"
+		"user_btn_end"			"Rechazar última oferta"
+
+		"dealer_offer_Unknown"							"-"
+		"dealer_offer_1"								"1.º"
+		"dealer_offer_2"								"2.º"
+		"dealer_offer_3"								"3.º"
+		"dealer_offer_4"								"4.º"
+		"dealer_offer_5"								"5.º"
+		"dealer_offer_6"								"6.º"
+		"dealer_offer_7"								"7.º"
+		"dealer_offer_8"								"8.º"
+		"dealer_offer_9"								"9.º"
+		"dealer_offer_10"								"10.º"
+
+		"current_offer_tooltip"		"Oferta actual para ti del traficante de armas."
+		"declined_offer_tooltip"	"Oferta rechazada"
+		"future_offer_tooltip"		"Oferta aún no revelada."
+		"laptop_expiration_tooltip"		"Tiempo restante para que caduque esta Terminal Uplink y sus ofertas."
+		"collection_xp_tooltip"			"Obtén EXP por ver las ofertas en esta colección. Abre para ver el progreso y reclamar EXP."
+		"popup_lootlist_title"			"EXP del catálogo de la colección"
+		"popup_lootlist_desc"			"Obtén EXP por ver las ofertas en esta colección"
+		"popup_lootlist_progress"		"Viste {d:seen}/{d:total} ofertas"
+		"popup_lootlist_claim_xp"		"Obtén EXP adicional"
+		"popup_lootlist_claim_ww"		"Reclamando EXP..."
+		"popup_lootlist_claim_ok"		"✅ EXP reclamada"
+		"popup_vpn_status_connected"	"Estado: Conectado a una red segura"
+		"popup_vpn_status_disconnected"	"Estado: Desconectado"
+		"popup_signal_full" 			"Señal óptima"
+		"popup_signal_ok" 				"Señal fuerte"
+		"laptop_battery_tooltip" 		"Carga de la batería: {d:percent} %"
+		"laptop_original_seal_tooltip" 	"Cualquier artículo comprado de esta Terminal Uplink contará con un Certificado de propietario original, el cual será válido mientras seas el propietario."
+		"laptop_zoom_tooltip" 			"Usa la rueda del mouse para acercar o alejar el objetivo."
+		"laptop_pan_tooltip" 			"Mantén presionada la tecla \"Mayús\" y arrastra para desplazar la cámara."
+		"laptop_pricing_tooltip"		"Los precios son globales y se ajustan automáticamente en función de la demanda de cada artículo de esta colección."
+
+
+		"dealer_message_start_0"  	"Esto es material de contratista a lo grande.<!--.25-->Todo lujo de detalles y cero papeleo."
+		"dealer_message_start_1"  	"Estoy moviendo material del mercado gris, sin papeleo.<!--.25-->No te preocupes, lleva años fuera de circulación, nadie lo está buscando.<!--.25-->Además, sigue disparando, por si te da curiosidad."
+		"dealer_message_start_2"  	"La aduana de Ahradan retuvo mi cargamento esta mañana. Intenté justificarlo con una triste historia sobre equipamiento médico y un pobre moribundo…<!--.25-->Eso no funcionó, pero el maletín con dinero sí.<!--.25-->¿Qué te parece si echamos un vistazo a esas máquinas de diálisis antes de llevárselas a los huérfanos?"
+		"dealer_message_start_3"  	"Acaba de haber un cambio de régimen en uno de los \"-stán\".<!--.25-->El arsenal se quedó abierto por completo y yo mismo busqué entre los montones.<!--.25-->Solo vendo las piezas estériles. Echa un vistazo."
+		"dealer_message_start_4"  	"El material que tengo hoy está todo limpio.<!--.25-->Que yo sepa, tú eres el primero en ponerle las manos encima."
+		"dealer_message_start_5"  	"Piezas estériles, sin números de serie, acción perfecta.<!--.25-->Un tribunal de guerra las llamaría evidencia.<!--.25-->Tú y yo sabemos que son unas malditas obras maestras."
+		"dealer_message_start_6"  	"Todo este cargamento viene con piezas exóticas sacadas de una unidad de desfile.<!--.25-->Han desfilado mucho. Nunca han sido disparadas."
+		"dealer_message_start_7"  	"Vaya, eres tú.<!--.25-->Mis otros clientes siempre quieren saber cómo obtengo lo que vendo. Odio eso.<!--.25-->Todo lo que necesitas saber es que es de la mejor calidad del mercado.<!--.25-->¿Adivina qué? Lo es."
+		"dealer_message_start_8"  	"Acuerdo de paz en Drosvik. Me encanta la paz.<!--.25-->Porque tengo a un general lleno de deudas y un arsenal repleto recolectando polvo.<!--.25-->Quiero decir…<!--.25-->También porque la paz es buena, claro. Vidas inocentes y…<!--.25-->Qué estoy diciendo, como si a ti te importara..."
+		"dealer_message_start_9"  	"Este cargamento trae piezas exóticas de una desviación del mercado gris.<!--.25-->Calibres poco comunes, no aptos para aficionados. Te encantarán."
+		"dealer_message_start_10"  	"Qué vergüenza.<!--.25-->Debo haber etiquetado por error una caja en mi etiqueta de envío.<!--.25-->Bueno, varias docenas de ellas.<!--.25-->¿Qué te parece si me ayudas a hacer desaparecer este inventario antes de que la autoridad portuaria lo investigue?"
+		"dealer_message_start_11"  	"El inspector de Drosvik quería un soborno para este. El idiota empezó a hablar de órdenes de incautación.<!--.25-->Tengo a unos tipos ahí que saben cómo encargarse de los hocicones y ahora no suelta palabra.<!--.25-->Y, por suerte, esta mercancía habla por sí sola."
+		"dealer_message_start_12"  	"Tuve que untar las manos de todo el mundo en Ahradan para que este envío cruzara la frontera.<!--.25-->Además, todos los sobornos se pagaron en ahri.<!--.25-->¿Sabes la cantidad de dinero que hay que mover para pagar sobornos en una moneda devaluada?<!--.25-->Esos tipos tendrían que hacer algo con su economía."
+		"dealer_message_start_13"	"Un intermediario en la sombra necesita que esto se mueva rápido.<!--.25-->Eso fue todo lo que dijo: \"rápido\".<!--.25-->También mencionó las palabras \"muy, muy\".<!--.25-->Así que la cosa es simple: si no te da curiosidad por qué lo está vendiendo, vas a estar muy, muy feliz."
+		"dealer_message_start_14"	"Hoy tengo modelos antiguos.<!--.25-->¿Son llamativos? No, pero son confiables.<!--.25-->Tus nietos todavía seguirán disparando con ellos."
+		"dealer_message_start_15"	"Una milicia rebelde liberó este material del arsenal del Glorioso Líder.<!--.25-->Creo que también le separaron el torso de las extremidades y la cabeza.<!--.25-->(No vendo ese tipo de material, pero si te interesa puedo ponerte en contacto con alguien)."
+		"dealer_message_start_16"	"El jefe de la frontera en Drosvik amenazó con incautar este cargamento.<!--.25-->Parece que no se enteró de que en Drosvik no paga sobornos. No cuando los matones locales salen tan baratos. Drosvik es como la capital mundial del kickboxing.<!--.25-->En fin, su sustituto perdió la orden de incautación. Y sus brazos siguen enteros."
+		"dealer_message_start_17"	"Todo esto viene de la colección privada de un multimillonario.<!--.25-->Bueno, de un exmultimillonario. Está bajo investigación, lo que significa que yo liquido lo que él no puede.<!--.25-->Seamos sinceros, esto va a quedar mejor en tus manos que colgado de la pared de un yate."
+		"dealer_message_start_18"	"El inspector del muelle detectó una discrepancia en este cargamento.<!--.25-->Es curioso que una caja de fusiles pese exactamente lo mismo que una caja de \"piezas de tractor\" cuando se agregan exactamente diez mil dólares a la báscula.<!--.25-->Echemos un vistazo a esas piezas de tractor."
+		"dealer_message_start_19"	"Lo que traigo hoy sobrevivió a un golpe de Estado para llegar hasta ti.<!--.25-->Tiene el acabado desgastado, pero funciona a la perfección. Al final lo que cuenta es el interior, ¿no?"
+		"dealer_message_start_20"	"Una república de mierda acaba de deshacerse de su presidente.<!--.25-->Por suerte, para mí, he heredado su cadena de suministro."
+		"dealer_message_start_21"	"Llámalo un error de procesamiento. Una discrepancia en la documentación. Un simple y honesto fallo de archivo.<!--.25-->Los errores pasan. Solo intento ayudar a un amigo para que no pierda su puesto de sargento de suministros.<!--.25-->Este material tiene que desaparecer."
+		"dealer_message_start_22"	"Algún jefe de aduanas pensó que podía presionarme con este cargamento. Así que hice que los sindicatos portuarios presionaran más.<!--.25-->Es curioso lo rápido que se resuelve el papeleo cuando todo el mundo anda buscando a un desaparecido.<!--.25-->Ojalá encuentren al pobre tipo. No creo que sepa nadar."
+		"dealer_message_start_23"	"El guardia fronterizo de Ahradan dijo que la documentación no cuadraba.<!--.25-->Así que le di un fajo de ahri y de repente sí cuadró.<!--.25-->Ni siquiera sé cuánto son diez mil ahri en dinero real. Como seis dólares, o algo.<!--.25-->Entonces, ¿quieres ver unas armas que no existen?"
+		"dealer_message_start_24"	"Tenía a un general de guerra comprometido a comprar este material, y el idiota va y explota en pedazos en un ataque de dron.<!--.25-->Mantén las ventanas cerradas; ese es mi consejo.<!--.25-->Sea como sea, su explosión te beneficia."
+		"dealer_message_start_25"	"Hubo cambio de régimen en Drosvik.<!--.25-->No sé cómo pasó, pero de algún modo un almacén lleno de cajas de armas se perdió en la confusión.<!--.25-->Y de alguna manera acabé yo con ellas. Qué loco, ¿no?<!--.25-->Y lo mejor de todo: puede que ahora mismo te las esté vendiendo a ti."
+		"dealer_message_start_26"	"Tengo una caja de mercancía mal declarada que quiero enseñarte.<!--.25-->No te dejes engañar por lo de \"maquinaria agrícola\". La única tierra que vas a tocar es si no disparas primero."
+		"dealer_message_start_27"	"Odio trabajar con insurgentes.<!--.25-->Es solo una forma educada de decir civiles, que a su vez es una forma suave de decir malditos aficionados.<!--.25-->De todos modos, han desaparecido, así que les estoy dando a los verdaderos profesionales la oportunidad de usar esta belleza."
+		"dealer_message_start_28"	"El parlamento de uno de esos países más al sur donde siempre hace calor acaba de sufrir su habitual colapso semestral.<!--.25-->Un montón de armerías locales explotaron como piñatas."
+		"dealer_message_start_29"	"El inspector de la autoridad portuaria calificó este cargamento de irregular el viernes pasado.<!--.25-->Para el lunes, su hija ya tenía dinero suficiente para estudiar en Stamwick y el cargamento volvía a ser herramientas agrícolas.<!--.25-->Qué puedo decir, la educación es importante. Vamos a ver unas herramientas agrícolas."
+
+
+		"dealer_message_resume_0"  	"<!--1-->Regresaste. Qué bueno. El trato sigue en pie."
+		"dealer_message_resume_1"  	"<!--1-->¿Necesitas un momento para pensarlo? No hay problema."
+		"dealer_message_resume_2"  	"<!--1-->Me imaginé que regresarías."
+		"dealer_message_resume_3"  	"<!--1-->Retomemos las cosas donde nos quedamos."
+		"dealer_message_resume_4"  	"<!--1-->¿Listo para hacer negocios?"
+		"dealer_message_resume_5"  	"<!--1-->Bien, has regresado. Necesito entregar esto o la gente equivocada comenzará a hacer preguntas."
+		"dealer_message_resume_6"  	"<!--1-->Regresaste. ¿En qué nos quedamos?"
+
+		"dealer_message_first_offer_0"	"<!--.5-->Si estás interesado, hagamos un trato."
+		"dealer_message_first_offer_1"	"<!--.5-->Para que lo sepas, ya tengo otras personas interesadas en este equipamiento."
+		"dealer_message_first_offer_2"	"<!--.5-->Si lo quieres, es tuyo. Si no, avísame. Tengo otros contactos interesados."
+		"dealer_message_first_offer_3"	"<!--.5-->Este es tuyo si lo quieres, si no, te lo pierdes."
+		"dealer_message_first_offer_4"	"<!--.5-->Si es un sí, hagámoslo. No puedo mantener el trato sobre la mesa para siempre."
+		"dealer_message_first_offer_5"	"<!--.5-->Oferta sobre la mesa. Sí o no."
+		"dealer_message_first_offer_6"	"<!--.5-->¿Lo quieres o no? No hieres mis sentimientos si dices que no. Tengo otros compradores."
+		"dealer_message_first_offer_7"	"<!--.5-->¿Vamos a hacer el trato o no?"
+		"dealer_message_first_offer_8"	"<!--.5-->No tengo todo el día."
+		"dealer_message_first_offer_9"	"<!--.5-->¿Vamos a cerrar el trato o no?"	
+		"dealer_message_first_offer_10"	"<!--.5-->No tengo que convencerte, esto se vende solo. ¿Lo quieres o no?"		
+
+		"dealer_message_next_offer_0"	"<!--1-->De acuerdo, esa no te convenció. ¿Qué te parece esta?"
+		"dealer_message_next_offer_1"	"<!--1-->Te lo pierdes. Afortunadamente, estoy de buen humor. Checa esto."
+		"dealer_message_next_offer_2"	"<!--1-->¿Lo dejas pasar? Bueno, el error es tuyo. Ve esto."
+		"dealer_message_next_offer_3"	"<!--1-->Esta mercancía se vende sola. Si no vas a comprarla, ya encontraré a alguien que lo haga.<!--.5-->Mientras estás aquí, esto parece haber sido hecho para ti."
+		"dealer_message_next_offer_4"	"<!--1-->Lo entiendo, no es tu estilo. Veamos esto más de cerca. Creo que te gustará."
+		"dealer_message_next_offer_5"	"<!--1-->Tenía el presentimiento de que lo dejarías pasar, afortunadamente, tenía ya a alguien más en espera."
+		"dealer_message_next_offer_6"	"<!--1-->Sí, me lo imaginé. Mira, checa esto. Este es más adecuado para tu velocidad."
+		"dealer_message_next_offer_7"	"<!--1-->Te vas a arrepentir de dejarla pasar. Sin problema. ¿Qué te parece esta?"
+		"dealer_message_next_offer_8"	"<!--1-->Te conozco demasiado bien. Me imaginé que no te lo quedarías. ¿Qué te parece esta?"
+		"dealer_message_next_offer_9"	"<!--1-->De acuerdo, dejas pasar el aperitivo. Prepárate para el platillo principal."
+		"dealer_message_next_offer_10"	"<!--1-->Entiendo, tampoco te gusta el aspecto de esta. Mira, checa esta."		
+		"dealer_message_next_offer_11"   "<!--1-->Podría ser un gusto adquirido. La siguiente es más apta para todo público."
+		"dealer_message_next_offer_12"   "<!--1-->Mucho más cargamento de donde vino eso. Echa un vistazo a esta belleza."
+		"dealer_message_next_offer_13"   "<!--1-->¿Sabes qué? Pensé que podrías decir eso. Veamos esta."
+		"dealer_message_next_offer_14"   "<!--1-->Eres más difícil de complacer de lo que pensaba. ¿Esta te hace sonreír?"
+		"dealer_message_next_offer_15"   "<!--1-->No estás hiriendo mis sentimientos. Yo no hice esa maldita cosa. Aquí tengo otra opción."
+		"dealer_message_next_offer_16"   "<!--1-->Yo tampoco la habría comprado, pero esta... Vamos."
+		"dealer_message_next_offer_17"   "<!--1-->¿La dejas pasar? Bien. La que sigue."
+		"dealer_message_next_offer_18"   "<!--1-->Veo que tienes estándares altos. Me parece bien. La siguiente es de calidad de oro."
+		"dealer_message_next_offer_19"   "<!--1-->No quiero que pierdas tu dinero y tú no quieres que pierda el tiempo. Échale un vistazo a esta."
+		"dealer_message_next_offer_20"   "<!--1-->Oye, agradezco la honestidad. Sigamos avanzando y dejemos de perder el tiempo."
+		"dealer_message_next_offer_21"   "<!--1-->Bien, no te gustó esa. Menos mal que estoy vendiendo más que una pistola."
+		"dealer_message_next_offer_22"   "<!--1-->Sin problema. Tengo un inventario muy grande para mover aquí. Siguiente."
+		"dealer_message_next_offer_23"   "<!--1-->Podría haber jurado que la tenía en rebaja. Quizás con esto cerremos el trato."
+		"dealer_message_next_offer_24"   "<!--1-->Entendido. No es para ti. No todas lo son, pero esta te está llamando."
+		"dealer_message_next_offer_25"   "<!--1-->Parece que lo que te estoy enseñando no te está gustando. Veamos si esta te gusta."
+		"dealer_message_next_offer_26"   "<!--1-->Suficiente, dejemos de hacer tonterías. Te garantizo que te va a encantar la siguiente... probablemente."
+		"dealer_message_next_offer_27"   "<!--1-->No te gustó esa, ¿verdad? La pondré en mi armería privada. ¿Qué tal esta?"
+		"dealer_message_next_offer_28"   "<!--1-->Tienes buen gusto. Veamos si la siguiente cumple con tus altos estándares."
+		"dealer_message_next_offer_29"   "<!--1-->Bien, esa estaba hasta arriba del montón. Déjame buscar más a fondo."
+		"dealer_message_next_offer_30"   "<!--1-->Olvida la última. Esta es la que quería que vieras."
+		"dealer_message_next_offer_31"   "<!--1-->Esta tiene tu nombre escrito por todas partes, no literalmente, no tiene nada."
+		"dealer_message_next_offer_32"   "<!--1-->Oye, no puedes comprarlo todo, lo sé. A lo mejor estás esperando por algo en particular, como esto."
+		"dealer_message_next_offer_33"   "<!--1-->Eso fue práctica. Esta es la que realmente vale la pena."
+		"dealer_message_next_offer_34"   "<!--1-->Sí, lo supuse, pero cuando vi esta, pensé en ti."
+		"dealer_message_next_offer_35"   "<!--1-->Bastante justo. He estado guardando esta para ti."
+		"dealer_message_next_offer_36"   "<!--1-->No es mi trabajo hacer que te enamores de ella. Solo estoy tratando de despachar mercancía. Siguiente."
+		"dealer_message_next_offer_37"   "<!--1-->No hay problema. Creo que la próxima está más a tu altura."
+		"dealer_message_next_offer_38"   "<!--1-->Inteligente. Sabía que no irías por ella. Déjame mostrarte algo mejor."
+		"dealer_message_next_offer_39"   "<!--1-->No hay problema. Yo tampoco lo hubiera comprado. Ahora esta, por otro lado..."
+		"dealer_message_next_offer_40"   "<!--1-->Me estás haciendo ir hasta la parte de atrás por las cosas de estantería premium, ¿eh? Muy bien, ahí te va."
+
+
+		"dealer_message_last_offer_0"	"<!--0-->Muy bien, última oferta. Te la llevas o la dejas."
+		"dealer_message_last_offer_1"	"<!--0-->Considera esta mi última oferta."
+		"dealer_message_last_offer_2"	"<!--0-->Última oferta. Tómalo o déjalo; deja de hacerme perder el tiempo."
+		"dealer_message_last_offer_3"	"<!--0-->Última oferta.<!--1-->No lo quieres, me retracto. Esta cosa VA a explotar."
+		"dealer_message_last_offer_4"	"<!--0-->Última oferta. No voy a rogar."
+		"dealer_message_last_offer_5"	"<!--0-->Muy bien, esto es lo mejor que puedo hacer."
+		"dealer_message_last_offer_6"	"<!--0-->Bien. Ten. ¿Lo vamos a hacer o no?"		
+		"dealer_message_last_offer_7"	"<!--0-->Esta es mi mejor y última oferta."
+		"dealer_message_last_offer_8"	"<!--0-->Encontremos un punto medio. Esto es lo mejor que puedo hacer."
+		"dealer_message_last_offer_9"	"<!--0-->Esta es la mejor oferta antes de que desaparezca."	
+
+		"dealer_message_end_0"			"<!--0-->Bien, tuviste una oportunidad. Si esperas a que explote la Terminal Uplink ahora mismo, hasta aquí llegué en tres... dos..."
+		"dealer_message_end_1"			"<!--0-->Bueno, tendrás algo en qué pensar la próxima vez que te disparen y que quieras sacar el arma que acabas de dejar pasar."
+		"dealer_message_end_2"			"<!--0-->Bueno, no te voy a suplicar que te lo lleves. Espero no hayas pensado que te llevarías una Terminal Uplink gratis."
+		"dealer_message_end_3"			"<!--0-->Tu decisión. Tu negocio. Tu funeral, probablemente.<!--1--> Aléjate de la Terminal Uplink que está a punto de explotar, si es que puedes."
+
+		"dealer_message_timerexpired_0"		"<!--.1-->De acuerdo, olvídalo."
+		"dealer_message_timerexpired_1"		"<!--.1-->Olvídalo<!--.5-->Tuviste tu oportunidad."
+		"dealer_message_timerexpired_2"		"<!--.1-->Se acabó el trato.<!--.5-->Tengo cosas que hacer aquí."
+		"dealer_message_timerexpired_3"		"<!--.1-->Bueno, déjame encontrar un comprador que quiera comprar<!--.5-->Hasta aquí llegamos."
+		"dealer_message_timerexpired_4"		"<!--.1-->Tú decides.<!--.5-->Hasta luego."
+		"dealer_message_timerexpired_5"		"<!--.1-->Tic, toc.<!--.5-->Se acabó el tiempo."
+		"dealer_message_timerexpired_6"		"<!--.1-->Se acabó el trato.<!--.5-->Podría haber vendido este diez veces mientras esperaba tu respuesta."
+		"dealer_message_timerexpired_7"		"<!--.1-->Y heme aquí pensando en que te estaba ayudando a acabar con la gente.<!--.5-->Resulta que tú estás acabando con mi tiempo."
+		"dealer_message_timerexpired_8"		"<!--.1-->Fuera trato."	
+		"dealer_message_timerexpired_9"		"<!--.1-->Se agotó el tiempo."
+		"dealer_message_timerexpired_10"		"<!--.1-->Bien, oficialmente, ya me aburrí. Se acabó."		
+
+		"dealer_message_open_check_out_0"		"<!--.5-->Esta tenía todo para ti, es por eso que pensé primero en ti. Cerremos el trato."
+		"dealer_message_open_check_out_1"		"<!--.5-->Una decisión excelente. Me aseguraré de que esté empacada y lista."
+		"dealer_message_open_check_out_2"		"<!--.5-->No te arrepentirás, aunque apuesto a que alguien más sí."
+		"dealer_message_open_check_out_3"		"<!--.5-->Sabía que serías mi comprador. Hagámoslo oficial."
+		"dealer_message_open_check_out_4"		"<!--.5-->Perfecto. Cerremos el trato."		
+		"dealer_message_open_check_out_5"		"<!--.5-->Buena elección."	
+		"dealer_message_open_check_out_6"		"<!--.5-->Es la decisión más inteligente que jamás hayas tomado. Hagámoslo final."		
+		"dealer_message_open_check_out_7"		"<!--.5-->Bien. Hagámoslo oficial."	
+		
+		"dealer_message_txn_xld_bailout_0"		"<!--.5-->No te apures. Sabes dónde encontrarme."
+		"dealer_message_txn_xld_bailout_1"		"<!--.5-->No me iré a ninguna parte."
+		"dealer_message_txn_xld_bailout_2"		"<!--.5-->Mantendré la propuesta sobre la mesa por ahora."
+		"dealer_message_txn_xld_bailout_3"		"<!--.5-->Ya regresará. Vete a pensar en ello un rato."
+
+		"dealer_message_purchase_finalizing_0"	"Finalizando detalles de pago..."
+		"dealer_message_purchase_confirm_0"		"<!--.5-->Trato hecho."
+
+		"dealer_message_stattrack_0"			"StatTrak™ instalado, por supuesto."
+		"dealer_message_stattrack_1"			"Esta belleza también viene con StatTrak™."
+		"dealer_message_stattrack_2"			"Equipado con StatTrak™, para que no tengas que hacer números en tu cabeza."
+		"dealer_message_stattrack_3"			"Viene con StatTrak™. Halas el gatillo y hace los cálculos."
+		"dealer_message_stattrack_4"			"StatTrak™. Piensa en ello como un marcador donde el deporte es asesinar."
+		"dealer_message_stattrack_6"			"Incluye StatTrak™, para el profesional que disfruta de los asesinatos Y las estadísticas."
+		"dealer_message_stattrack_7"			"Claro que viene con StatTrak™."
+		"dealer_message_factory_new_0"			"Recién salido del horno. Creéme, lo acabo de oler."
+		"dealer_message_factory_new_1"			"Nuevo de fábrica. Tiene ese olor a arma nueva."
+		"dealer_message_factory_new_2"			"Esta no tiene kilometraje. Serás el primero en apretar el gatillo."
+		"dealer_message_factory_new_3"			"Nuevo producto, sin usar, así como te gustan."
+		"dealer_message_factory_new_4"			"Esta está limpia y prístina. Sin rasguños, sin historia. Ahí es donde entras tú."
+		"dealer_message_factory_new_5"			"Nueva de fábrica, nunca antes disparada. Está impecable."
+		"dealer_message_covert_0"				"¿Adivina qué? Te acabas de ganar el premio gordo. Este no es solo raro. Es uno encubierto."
+		"dealer_message_covert_1"				"Llevo una década en esto y nunca he visto uno de esos en la naturaleza.<!--.5-->Tienes buen gusto. Y mejor suerte."
+		"dealer_message_covert_2"				"Conozco a algunos compradores que habrían vendido a su propia madre a una pandilla para tener en sus manos eso. Bien hecho."
+		"dealer_message_covert_3"				"Guau. Ahora ya me hiciste dudar. Saca esto de aquí antes de que me arrepienta de esta venta."
+		"dealer_message_covert_4"				"Encubierta. Quizás veas algo así en el mercado abierto una vez en la vida, con suerte.<!--.5-->Supongo que tuviste suerte."
+		"dealer_message_covert_5"				"Esta es una joya de la corona, pero eso ya lo sabes. Tenía un comprador alineado para ello hace un año. Su pérdida es tu ganancia."
+		"dealer_message_covert_6"				"Tan escaso como parece. Esta es difícil de encontrar y simplemente te cayó del cielo."
+		"dealer_message_covert_7"				"Cree en las palabras de alguien que trabaja en la industria. Fue muy, muy difícil encontrarla."
+		"dealer_message_covert_8"				"Espero que aprecies el trato que acabas de hacer. Es encubierto. Acabas de comprar un unicornio."
+		"dealer_message_covert_9"				"Será mejor que la saques de mi vista y la guardes en tu arsenal antes de que me arrepienta. Es la más rara de las raras."
+		"dealer_message_classified_0"				"Secreta. Irrastreable y sin registrar. Un auténtico fantasma."
+		"dealer_message_classified_1"				"Secreta. Sin registros, limpia e irrastreable."
+		"dealer_message_classified_2"				"Secreta. Clandestina, sin registrar. Lo que tengo en mis manos, técnicamente, no existe."
+		"dealer_message_classified_3"				"Venta privada. Clasificada. Espero que le des buen uso."
+		"dealer_message_classified_4"				"Clasificada. Sin número serial, sin registrar."
+		"dealer_message_classified_5"				"Secreta. Se vende exclusivamente en negro y es completamente negable. Nunca la he visto."
+		"dealer_message_restricted_0"				"Restringida. Mejores componentes internos, agrupación más compacta. Una clara ventaja sobre la versión estándar."
+		"dealer_message_restricted_1"				"Esta está restringida por una razón. Funciona demasiado bien para los civiles."
+		"dealer_message_restricted_2"				"Restringida, por supuesto. Clase III, Título II y tu nueva número uno."
+		"dealer_message_battle_scarred_0"		"Tiene algunos golpes, pero todavía dispara en línea recta."
+		"dealer_message_battle_scarred_1"		"Tiene un poco de desgaste, pero eso significa que ha tenido algo de acción y ha salido adelante."
+		"dealer_message_battle_scarred_2"		"Directamente del campo de batalla. Usada y probada."
+		"dealer_message_battle_scarred_3"		"¿Sabes qué son los veteranos de guerra? Aquellos que han demostrado su valía en combate."
+		"dealer_message_battle_scarred_4"		"Esta ha visto algo de acción. Tiene desgaste estético, pero sigue siendo fiable."
+		"dealer_message_minimal_wear_0"			"Desgaste mínimo en esta. Tiene uno o dos arañazos, pero cumplirá con su cometido."
+		"dealer_message_minimal_wear_1"			"En estado impecable. Bueno… casi impecable. Desgaste mínimo."
+		"dealer_message_minimal_wear_2"			"Desgaste mínimo, solo un poco usada, nada de qué preocuparse."
+		"dealer_message_minimal_wear_3"			"Desgaste mínimo en esta. Está un poco dañada, pero no te arrepentirás de agregarla a tu arsenal."
+		"dealer_message_minimal_wear_4"			"Ya ha visto algo de combate, no te voy a mentir. Esta es una veterana."
+		"dealer_message_usp-s_0"				"Este perro no ladra. Silenciosa y discreta."
+		"dealer_message_usp-s_1"				"Silenciosa y discreta. A veces tiene ser nuestro pequeño secreto."
+		"dealer_message_usp-s_2"				"La notarán cuando llegue, pero no la oirán venir."
+		"dealer_message_usp-s_3"				"Esta es muy silenciosa."
+		"dealer_message_item_desc_0"			"<!--.25-->Esta tiene una nota: <!--.25-->{s:flavor-text}<!--.25--> Sea lo que sea que signifique."
+		"dealer_message_item_desc_1"			"<!--.25-->Esta vino con una pequeña nota:<!--.25-->{s:flavor-text}"
+
+		"dealer_message_addition_stattrak_0"	"<!--.25-->... y con StatTrak™."
+		"dealer_message_addition_stattrak_1"	"<!--.25-->Viene con un módulo StatTrak™ preinstalado."
+		"dealer_message_addition_stattrak_2"	"<!--.25-->Viene con StatTrak™ para hacer un seguimiento de todo el caos que vas a causar."
+		"dealer_message_addition_stattrak_3"	"<!--.25-->También cuenta con un módulo StatTrak™."
+		"dealer_message_addition_stattrak_4"	"<!--.25-->También cuenta con StatTrak™, así que nunca vas a perder la cuenta del sufrimiento que estás causando."
+
+		"dealer_message_addition_factory_new_0"	"<!--.25-->Y es nueva de fábrica. Nunca ha sido usada."
+		"dealer_message_addition_factory_new_1"	"<!--.25-->Y es nueva de fábrica. Impecable."
+		"dealer_message_addition_factory_new_2"	"<!--.25-->Recién llegada de la bóveda. Nueva de fábrica."
+		"dealer_message_addition_factory_new_3"	"<!--.25-->Esta es nueva de fábrica. Nunca la han disparado."
+
+		"system_dealer_left_chat_0"				"El traficante ha salido de tu chat."
+		"system_dealer_join_chat_0"				"Ofertas del traficante de armas de {s:collection}<!--1.25-->El traficante se ha conectado"
+		"system_user_reject_offer_0"			"{s:user-name} rechazó la oferta."
+		
+
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -45234,30 +45692,8 @@ Tu obtención de EXP de recompensa de misión no volverá a su valor normal hast
 		"quest_11015_var_desc:p{mission-points}"	 	"Gana una ronda en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>.#|#Gana rondas en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Gana una ronda#|#Gana rondas"
 
-// crow_mask_48593_comment
-// crow_mask_48594_comment
-}
-
-
-
-
-}
-
-
-a ronda en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>.#|#Gana rondas en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>."
-		"quest_11012_var_ingame:p{mission-points}"		"Gana una ronda#|#Gana rondas"
-		
-		"quest_11013_var_desc:p{mission-points}"	 	"Gana una ronda en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>.#|#Gana rondas en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>."
-		"quest_11013_var_ingame:p{mission-points}"		"Gana una ronda#|#Gana rondas"
-		
-		"quest_11014_var_desc:p{mission-points}"	 	"Gana una ronda en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>.#|#Gana rondas en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>."
-		"quest_11014_var_ingame:p{mission-points}"		"Gana una ronda#|#Gana rondas"
-		
-		"quest_11015_var_desc:p{mission-points}"	 	"Gana una ronda en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>.#|#Gana rondas en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>."
-		"quest_11015_var_ingame:p{mission-points}"		"Gana una ronda#|#Gana rondas"
-
-// crow_mask_48113_comment
-// crow_mask_48114_comment
+// crow_mask_48605_comment
+// crow_mask_48606_comment
 }
 
 

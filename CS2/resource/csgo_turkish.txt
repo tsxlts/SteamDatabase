@@ -45082,7 +45082,13 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"Chatwheel_description" "Sohbet çarkı, yararlı telsiz komutlarının kişiselleştirilebilir bir listesine hızlı erişim sağlar."
 //
 //
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+"laptop_window_currentoffer_title"			"MEVCUT TEKLİF"
+		"laptop_zoom_tooltip" 			"Yakınlaştırmak ve uzaklaştırmak için fare tekerleğini döndür."
+		"laptop_pan_tooltip" 			"Kamerayı kaydırmak için Shift tuşuna basılı tut ve fareyi sürükle."
+		"laptop_pricing_tooltip"		"Fiyatlar küreseldir ve bu koleksiyondaki her bir eşyaya yönelik talebe göre otomatik olarak belirlenir."
+
+
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -45258,8 +45264,8 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"quest_11015_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> oynarken bir raunt kazan.#|#<b>{s:gamemode}: {s:location}</b> oynarken birden fazla raunt kazan."
 		"quest_11015_var_ingame:p{mission-points}"		"Bir raunt kazan.#|#Birden fazla raunt kazan."
 
-// crow_mask_48593_comment
-// crow_mask_48594_comment
+// crow_mask_48605_comment
+// crow_mask_48606_comment
 }
 
 
@@ -45268,11 +45274,7 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 }
 
 
-ynarken bir raunt kazan.#|#<b>{s:gamemode}: {s:location}</b> oynarken birden fazla raunt kazan."
-		"quest_11013_var_ingame:p{mission-points}"		"Bir raunt kazan.#|#Birden fazla raunt kazan."
-		
-		"quest_11014_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> oynarken bir raunt kazan.#|#<b>{s:gamemode}: {s:location}</b> oynarken birden fazla raunt kazan."
-		"quest_11014_var_ingame:p{mission-points}"		"Bir raunt kazan.#|#Birden fazla raunt kazan."
+ssion-points}"		"Bir raunt kazan.#|#Birden fazla raunt kazan."
 		
 		"quest_11015_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> oynarken bir raunt kazan.#|#<b>{s:gamemode}: {s:location}</b> oynarken birden fazla raunt kazan."
 		"quest_11015_var_ingame:p{mission-points}"		"Bir raunt kazan.#|#Birden fazla raunt kazan."

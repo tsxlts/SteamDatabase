@@ -2335,6 +2335,9 @@
 		"Econ_Revolving_Loot_List"				"บรรจุหนึ่งในไอเท็มต่อไปนี้:"
 		"Econ_Revolving_Loot_List_Single"		"เปิดและรับหนึ่งในรายการต่อไปนี้"
 		"Econ_Revolving_Loot_List_Rental"		"<img src='file://{images}/icons/ui/hourglass.svg' class='popup-decodable-lootlist-single-icon'/> เช่าทุกอาวุธ (ไม่รวมไอเท็มพิเศษหายากมาก) ในกล่องนี้เป็นเวลา 7 วัน "
+		"Econ_Revolving_Loot_SecureConnectionLine"	"คุณสามารถสั่งซื้อจากเทอร์มินัลนี้ได้หนึ่งไอเท็ม เทอร์มินัลนี้จะแสดงข้อเสนอหลายรายการให้กับไอเท็มต่อไปนี้:"
+
+		
 		"Econ_Revolving_Loot_List_Rare_Item"	"หรือไอเท็มพิเศษหายากมาก!"
 		"Exceedingly_Rare_Item"					"★ ไอเท็มพิเศษหายาก ★"
 
@@ -2371,6 +2374,7 @@
 		"Item_Crafted"							" %s1 ได้เสร็จสิ้นใบสัญญา และได้รับ: %s2"
 		"Item_Traded"							" %s1 ได้รับจากการแลกเปลี่ยน: %s2"
 		"Item_Purchased"						" %s1 ได้ซื้อ: %s2"
+		"Item_PurchasedVolatile"				" %s1 ได้สั่งซื้อจากนักค้าอาวุธ: %s2"
 		"Item_FoundInCrate"						" %s1 ได้เปิดลังและพบ: %s2"
 		"Item_Gifted"							" %s1 ได้รับของขวัญ: %s2"
 		"Item_Earned"							" %s1 ได้รับ: %s2"
@@ -2395,6 +2399,7 @@
 		"NewItemMethod_Crafted"			"คุณได้รับ:"
 		"NewItemMethod_Traded"			"คุณได้แลกเปลี่ยนเป็น:"
 		"NewItemMethod_Purchased"		"คุณได้ซื้อ:"
+		"NewItemMethod_PurchasedVolatile" "คุณได้สั่งซื้อจากนักค้าอาวุธ:"
 		"NewItemMethod_FoundInCrate"	"คุณได้เปิดลัง:"
 		"NewItemMethod_Rental"			"คุณเช่า:"
 		"NewItemMethod_XpShopRedeem"	"คุณได้รับจากคลังอาวุธ:"
@@ -2454,6 +2459,7 @@
 		"ItemHistory_Action_Drop"										"ได้รับแรงก์ใหม่และได้ไอเท็มดรอป"
 		"ItemHistory_Action_ManualCreate"								"สร้างโดยผู้สนับสนุน Counter-Strike"
 		"ItemHistory_Action_Purchase"									"สั่งซื้อจากร้านค้า"
+		"ItemHistory_Action_PurchaseVolatileContainerItem"				"สั่งซื้อจากนักค้าอาวุธ"
 		"ItemHistory_Action_AutoGrantItem"								"ได้รับ"
 		"ItemHistory_Action_CrossGameAchievement"						"ได้รับจากการปลดล็อครางวัลความสำเร็จในเกมอื่น"
 		"ItemHistory_Action_AwardGift_Receiver"							"ได้รับเป็นของขวัญ"
@@ -2546,7 +2552,7 @@
 		"Rarity_Uncommon_Weapon"					"เกรดอุตสาหกรรม"
 		"Rarity_Rare_Weapon"						"เกรดมาตรฐานทางทหาร"
 		"Rarity_Mythical_Weapon"					"หวงห้าม"
-		"Rarity_Legendary_Weapon"					"ปกปิด"
+		"Rarity_Legendary_Weapon"					"ลับเฉพาะ"
 		"Rarity_Ancient_Weapon"						"ลึกลับ"
 		"Rarity_Contraband_Weapon"					"Contraband"
 		"Rarity_Arcana_Weapon"						"นิรนาม"
@@ -4361,6 +4367,7 @@
 		"CSGO_crate_sticker_pack_community_2025_short"					"สติกเกอร์ชุมชน 2025"
 		
 		"CSGO_crate_community_36"				"เทอร์มินัล Genesis แบบปิดผนึก"
+		"CSGO_crate_community_36^volatile"		"เปิดใช้งานเทอร์มินัล Genesis"
 		"SprayKit_vcap1_ace_01"		"Ace"
 "SprayKit_desc_vcap1_ace_01"	" "
 "SprayKit_vcap1_banana"		"Banana"
@@ -28875,6 +28882,18 @@
 		"StickerKit_community_2025_paper_gloves_on"						"Gloves On"
 		"StickerKit_community_2025_paper_lock_in"						"Lock In"
 		"StickerKit_community_2025_paper_mimicapsule"					"Mimicapsule"
+		"StickerKit_community_2025_paper_pop_pup"						"Pop Pup"
+		"StickerKit_community_2025_paper_pots"							"POTS"
+		"StickerKit_community_2025_paper_sent_with_love"				"Sent With Love"
+		"StickerKit_community_2025_paper_skelly_stab"					"Skelly Stabby"
+		"StickerKit_community_2025_paper_vice_cursor"					"Vice Cursor"
+		"StickerKit_community_2025_glitter_ct_tracks"					"CT Tracks (ระยิบระยับ)"
+		"StickerKit_community_2025_glitter_overloaded"					"Overloaded (ระยิบระยับ)"
+		"StickerKit_community_2025_glitter_t_tracks"					"T Tracks (ระยิบระยับ)"
+		"StickerKit_community_2025_holo_bomb_planted"					"Bomb Planted (โฮโล)"
+		"StickerKit_community_2025_holo_chrome_dome"					"Chrome Dome (โฮโล)"
+		"StickerKit_community_2025_holo_cutie"							"Cutie (โฮโล)"
+		"StickerKit_community_2025_holo_evidence"						"Evidence (โฮโล)"
 		"StickerKit_community_2025_holo_froggles"						"Froggles (โฮโล)"
 		"StickerKit_community_2025_foil_aint_a_rental"					"Ain't A Rental (ฟอยล์)"
 		"StickerKit_community_2025_foil_eyes_sky"						"Eyes In The Sky (ฟอยล์)"
@@ -32329,7 +32348,7 @@
 	"PaintKit_am_ump45_electrowave"									"มันถูกลงสีด้วยลายสีส้ม สีดำ และสีเทาแบบสุ่ม\n\n<i>ทุกคนมีจุดแตกหัก แล้วของคุณล่ะ?</i>"
 	"PaintKit_am_ump45_electrowave_Tag"								"Oscillator"
 
-	"PaintKit_cu_deag_trigger_discipline"							"มันถูกลงสีแบบกำหนดเองด้วยลายสามมิติสีชมพู่บนกระบอกปืน นกสับปืนและศูนย์เล็งปืนถูกลงสีฟ้าสดใส\n\n<i>ความอดทนถือเป็นรางวัลของตนเอง</i>"
+	"PaintKit_cu_deag_trigger_discipline"							"มันถูกลงสีแบบกำหนดเองด้วยลายสามมิติสีชมพูบนกระบอกปืน นกสับปืนและศูนย์เล็งปืนถูกลงสีฟ้าสดใส\n\n<i>ความอดทนถือเป็นรางวัลของตนเอง</i>"
 	"PaintKit_cu_deag_trigger_discipline_Tag"						"Trigger Discipline"
 
 	"PaintKit_sp_nova_wind_dispersal"								"มันถูกลงสีด้วยสเปรย์พร้อมภาพลายทุ่งดอกแดนดิไลออนแบบสุ่ม\n\n<i>ออกไปจากสนามหญ้าฉันซะ</i>"
@@ -32850,6 +32869,7 @@
 		"PaintKit_p90_boost_blue"							"มันถูกลงสีแบบกำหนดเองด้วยลายทรงเหลี่ยมสีน้ำเงินและสีเขียว\n\n<i>ท่าทางของคุณบ่งบอกอารมณ์นะ</i>"
 		"PaintKit_p90_boost_blue_Tag"						"Wave Breaker"
 		
+		"PaintKit_p2k_fractal"								"มันถูกลงสีแบบกำหนดเองด้วยสีเทากันเมทัลโดยใช้ลายเรขาคณิตแบบแฟรกทัลที่ตกแต่งเน้นลายสีส้ม\n\n<i>&gt;&gt;การทดลองพื้นผิวอาวุธมีลาย รายการที่ 1&lt;&lt;</i>"
 		"PaintKit_p2k_fractal_Tag"							"Sure Grip"
 		
 		"PaintKit_mag7_ammo_box"							"มันถูกลงสีแบบกำหนดเองด้วยลายคล้ายกล่องกระสุน\n\n<i>เก็บใบเสร็จไว้นะ</i>"
@@ -32872,9 +32892,58 @@
 		
 		"PaintKit_m4a4_green_camo"							"มันถูกลงสีแบบกำหนดเองด้วยลายพรางสีเขียว\n\n<i>เพิ่มร่องรอยดิจิทัลของคุณ</i>"
 		"PaintKit_m4a4_green_camo_Tag"						"Choppa"
-"PaintKit_mp5sd_chrome_Tag"						"Focus" 
+
+// END COMMUNITY_35
+
+// COMMUNITY_36
+
+		"PaintKit_mp7_smoking_kills_v2"					"มันถูกลงสีแบบกำหนดเองด้วยลายหลากสีสันที่มีภาพผู้หญิงสวมแว่นตากำลังสูบบุหรี่\n\n<i>\"เราจะทำเร็วหรือช้าก็ได้ แล้วแต่คุณจะเลือกเลย\"</i>"
+		"PaintKit_mp7_smoking_kills_v2_Tag"				"Smoking Kills" 
 		
-		// END COMMUNITY_36
+		"PaintKit_m4a4_skrrrt_green"					"มันถูกลงสีแบบกำหนดเองด้วยสีรองพื้นเขียวนีออน และลายโลโก้สมมติเพื่อสื่อถึงวัฒนธรรมการดริฟต์และการแต่งรถ\n\n<i>เมื่อ \"Globoil 1 Synthetics\" พบกับ \"ENTRI PERFORMANCE\"</i>"
+		"PaintKit_m4a4_skrrrt_green_Tag"				"Full Throttle" 
+		
+		"PaintKit_ak47_puffer_custom"					"มันถูกลงสีแบบกำหนดเองด้วยลายเลียนแบบคล้ายสัมผัสของเสื้อเเจ็กเก็ตบุนวมสีขาว-ดำสุดหรู และเน้นด้วยสีทอง\n\n<i>จงแสวงหาอำนาจ จงได้มาซึ่งอำนาจ และจงกุมอำนาจไว้</i>"
+		"PaintKit_ak47_puffer_custom_Tag"				"The Oligarch" 
+		
+		"PaintKit_ump45_illumina_v2"					"มันถูกลงสีแบบกำหนดเองด้วยลายแถบสลับสีดำและน้ำเงิน\n\n<i>สู่ความว่างเปล่า</i>"
+		"PaintKit_ump45_illumina_v2_Tag"				"Continuum" 
+		
+		"PaintKit_nova_ocular"							"มันถูกลงสีแบบกำหนดเองด้วยลายรูปทรงเรขาคณิตที่เรียบง่ายและมีรายละเอียดที่สมจริง ซึ่งได้รับแรงบันดาลใจจากเซอร์เรียลลิซึมเชิงนามธรรม และผลงานของศิลปินในศตวรรษที่ 20\n\n<i>ดวงตาของผู้เฝ้ามอง</i>"
+		"PaintKit_nova_ocular_Tag"						"Ocular"
+		
+		"PaintKit_mac10_kamicatze"						"มันถูกลงสีแบบกำหนดเองด้วยลายแมวขู่ฟ่อและเป้าเล็งที่ด้านหลังของโครงปืน\n\n<i>แมวเหมียวมาพร้อมกรงเล็บ...</i>"
+		"PaintKit_mac10_kamicatze_Tag"					"Cat Fight" 
+		
+		"PaintKit_glock_mirror_maze"					"มันถูกลงสีแบบกำหนดเองด้วยลายคล้ายกระจกโมเสก\n\n<i>ติดอยู่ในห้วงความคิดของตัวคุณเอง</i>"
+		"PaintKit_glock_mirror_maze_Tag"				"Mirror Mosaic" 
+		
+		"PaintKit_dual_elite_biblical_angel"			"มันถูกลงสีแบบกำหนดเองด้วยลายดวงตาที่ด้ามจับและภาพจิตรกรรมรูปท้องฟ้าบนสไลด์ของปืน\n\n<i>คอยจับตา—หรือตาทั้งห้าดวง—ดูคุณอย่างไม่กะพริบ</i>"
+		"PaintKit_dual_elite_biblical_angel_Tag"		"Angel Eyes" 
+		
+		"PaintKit_p250_bullfrog"						"มันถูกลงสีแบบกำหนดเองด้วยลายของรถแข่งในสีทองแดงและสีดำ\n\n<i>คุณแล่นฉิวไปเลย!</i>"
+		"PaintKit_p250_bullfrog_Tag"					"Bullfrog" 
+		
+		"PaintKit_mp5sd_chrome"							"มันถูกลงสีแบบกำหนดเองด้วยสีเทากันเมทัลและตกแต่งเน้นลายแถบสีแดง\n\n<i>ตั้งสมาธิดี ๆ // เล็งแม่น ๆ</i>"
+		"PaintKit_mp5sd_chrome_Tag"						"Focus" 
+		
+		"PaintKit_scar_refraction"						"มันถูกลงสีด้วยด้วยลายสีฟ้าและสีม่วงไล่เฉด\n\n<i>\"กรงเล็กแต่อาวุธใหญ่จัง..\"</i>"
+		"PaintKit_scar_refraction_Tag"					"Caged" 
+		
+		"PaintKit_p2000_deep_red"						"มันถูกลงสีแบบกำหนดเองด้วยลายสีถ่านและสีแดงเข้ม\n\n<i>ฉวยโอกาสตอนศัตรูเพลี่ยงพล้ำ</i>"
+		"PaintKit_p2000_deep_red_Tag"					"Red Wing" 
+		
+		"PaintKit_mp9_vinyl"							"มันถูกลงสีแบบกำหนดเองด้วยลายที่คล้ายกับแผ่นเสียงไวนิลพร้อมทั้งร่องลายต่าง ๆ\n\n<i>คลาสสิกตลอดกาล</i>"
+		"PaintKit_mp9_vinyl_Tag"						"Broken Record" 
+		
+		"PaintKit_mag7_circle_copper"					"มันถูกลงสีแบบกำหนดเองด้วยลายที่ดูเหมือนคลื่นกระแทกแผ่ออกมาจากน็อตที่อยู่เหนือไกปืน\n\n<i>สองจุดศูนย์</i>"
+		"PaintKit_mag7_circle_copper_Tag"				"MAGnitude" 
+		
+		"PaintKit_m4a1s_quick_liquidation"				"M4A1-S ถูกลงสีแบบกำหนดเองด้วยลายที่ดูเหมือนเรืองแสงภายใต้แสงโดยรอบพร้อมสีรองพื้นสีโทนมืดและเน้นด้วยสีแดงและสีน้ำเงินที่ถูกเลือกมาเป็นอย่างดี\n\n<i>การสะท้อนที่เงียบงัน</i>"
+		
+		"PaintKit_aug_trigger_discipline_velco"			"มันถูกลงสีด้วยลายสามมิติสีฟ้าและตกแต่งด้วยลวดลายสีส้ม\n\n<i>ความอดทนถือเป็นรางวัลของตนเอง</i>"
+
+// END COMMUNITY_36
 
 // OVERPASS_2024
 				
@@ -33608,8 +33677,8 @@
 		"RI_R3"							"อาวุธมาตรฐานทางทหาร"
 		"RI_R4p"						"อาวุธหวงห้าม"
 		"RI_R4"							"อาวุธหวงห้าม"
-		"RI_R5p"						"อาวุธปกปิด"
-		"RI_R5"							"อาวุธปกปิด"
+		"RI_R5p"						"อาวุธลับเฉพาะ"
+		"RI_R5"							"อาวุธลับเฉพาะ"
 		"RI_R6p"						"อาวุธลึกลับ"
 		"RI_R6"							"อาวุธลึกลับ"
 
@@ -37085,6 +37154,12 @@
 		"PANOHUD_Spectate_Navigation_PlayHighlight"			"[{s:bind_drop}] เล่นไฮไลต์"
 		"PANOHUD_Spectate_Navigation_CopyHighlightAndClose"	"[{s:bind_drop}] คัดลอกไปยังคลิปบอร์ดและปิด"
 		"PANOHUD_Spectate_Navigation_CopyHighlightURL"		"[{s:bind_drop}] คัดลอก URL ไฮไลต์"
+		"PANOHUD_Spectate_Vanity_Loadout_Hide"				"[{s:bind_lookatweapon}] ซ่อนชุดอุปกรณ์"
+		"PANOHUD_Spectate_Vanity_Loadout_Show"				"[{s:bind_lookatweapon}] เปิดชุดอุปกรณ์"
+		"PANOHUD_Spectate_Vanity_Loadout_Close_Popup"		"[ESC] ปิดป๊อปอัป"
+
+
+	
 		"PANOHUD_GhostBecomeSpectator"						"กด [%s1] เพื่อกลายเป็นผู้สังเกตการณ์"
 
 		"SFUIHUD_Spectate_You_Are_Dead"				"<font color=\"%s1\">กำลังติดตาม %s2</font>"
@@ -37997,6 +38072,9 @@
 		"SFUI_HUDWeaponRarityColor"			"อาวุธเรืองแสงตามสีระดับความหายาก"
 		"SFUI_HUDWeaponRarityColor_desc"	"เปิดใช้งานเพื่อทำให้ไอคอนอาวุธใน HUD เรืองแสงตามสีระดับความหายาก"
 
+		"SFUI_HUDSpecColorOverride"			"แทนที่สี HUD ตอนกำลังสังเกตุการณ์"
+		"SFUI_HUDSpecColorOverride_desc"	"เมื่อกำลังสังเกตุการณ์ผู้เล่นคนอื่น สี HUD จะตรงกับสีทีมของผู้เล่นในโหมดแคชชวล และสีเพื่อนร่วมทีมในโหมดแข่งขัน" 
+
 		"SFUI_Settings_High_Dynamic_Range"	"High Dynamic Range"
 		"SFUI_Settings_Very_High"			"สูงมาก"
 		"SFUI_Settings_High"				"สูง"
@@ -38834,10 +38912,13 @@
 
 		"SFUI_OfficialDatacenterID_1"		"สหรัฐอเมริกา, ซีแอตเทิล"
 		"SFUI_OfficialDatacenterID_2"		"สหรัฐอเมริกา, เวอร์จิเนีย"
+		"SFUI_OfficialDatacenterID_3"		"สหภาพยุโรป, แฟรงก์เฟิร์ต"
 		"SFUI_OfficialDatacenterID_4"		"เกาหลีใต้"
 		"SFUI_OfficialDatacenterID_5"		"สิงคโปร์"
 		"SFUI_OfficialDatacenterID_6"		"สหรัฐอาหรับเอมิเรตส์"
 		"SFUI_OfficialDatacenterID_7"		"ออสเตรเลีย"
+		"SFUI_OfficialDatacenterID_8"		"สหภาพยุโรป, สตอกโฮล์ม"
+		"SFUI_OfficialDatacenterID_9"		"สหภาพยุโรป, เวียนนา"
 		"SFUI_OfficialDatacenterID_10"		"บราซิล"
 		"SFUI_OfficialDatacenterID_11"		"แอฟริกาใต้"
 		"SFUI_OfficialDatacenterID_12"		"จีน, เซี่ยงไฮ้"
@@ -38849,15 +38930,20 @@
 		// "SFUI_OfficialDatacenterID_18"	"TBD"
 		"SFUI_OfficialDatacenterID_19"		"ญี่ปุ่น"
 		"SFUI_OfficialDatacenterID_20"		"ฮ่องกง"
+		"SFUI_OfficialDatacenterID_21"		"สหภาพยุโรป, มาดริด"
 		"SFUI_OfficialDatacenterID_22"		"สหรัฐอเมริกา, แคลิฟอร์เนีย"
 		"SFUI_OfficialDatacenterID_23"		"สหรัฐอเมริกา, แอตแลนตา"
 		"SFUI_OfficialDatacenterID_24"		"ฮ่องกง"
 		"SFUI_OfficialDatacenterID_25"		"จีน, เทียนจิน"
 		"SFUI_OfficialDatacenterID_26"		"อินเดีย, เชนไน"
 		"SFUI_OfficialDatacenterID_27"		"สหรัฐอเมริกา, ชิคาโก"
+		"SFUI_OfficialDatacenterID_28"		"สหภาพยุโรป, วอร์ซอ"
+		"SFUI_OfficialDatacenterID_29"		"สหภาพยุโรป, อัมสเตอร์ดัม"
 		// "SFUI_OfficialDatacenterID_30"		"TBD"
 		"SFUI_OfficialDatacenterID_31"		"สหรัฐอเมริกา, ดัลลัส"
-"SFUI_OfficialDatacenterID_34"		"เซาเปาลู"
+		// "SFUI_OfficialDatacenterID_32"		"TBD"
+		"SFUI_OfficialDatacenterID_33"		"สหภาพยุโรป, เฮลซิงกิ"
+		"SFUI_OfficialDatacenterID_34"		"เซาเปาลู"
 		// "SFUI_OfficialDatacenterID_35"		"US West"
 		// "SFUI_OfficialDatacenterID_36"		"Germany"
 		// "SFUI_OfficialDatacenterID_37"		"Hong Kong"
@@ -38867,9 +38953,12 @@
 		// "SFUI_OfficialDatacenterID_41"		"TBD"
 		"SFUI_OfficialDatacenterID_42"		"จีน, เมืองเฉิงตู"
 		"SFUI_OfficialDatacenterID_43"		"สหรัฐอเมริกา, นิวยอร์ก"
+		"SFUI_OfficialDatacenterID_44"		"สหภาพยุโรป, เฮลซิงกิ"
 		"SFUI_OfficialDatacenterID_45"		"สหราชอาณาจักร"
 		"SFUI_OfficialDatacenterID_49"		"จีน, กวางตุ้ง"
 		"SFUI_OfficialDatacenterID_51"		"จีน, ปักกิ่ง"
+		"SFUI_OfficialDatacenterID_52"		"สหภาพยุโรป, ฟัลเคนสไตน์"
+
 		"SFUI_UserAlert_HighPings"			"ค่าปิงที่ดีที่สุดของคุณในเซิร์ฟเวอร์ทางการคือ %s1 ms"
 		"SFUI_UserAlert_Unreachable"		"ล้มเหลวในการเข้าถึงเซิร์ฟเวอร์ทางการ"
 		"SFUI_UserAlert_Unreachable_NoConfig"	"ไม่สามารถดึงข้อมูลการกำหนดค่าเครือข่ายโดยใช้ HTTPS ได้ โปรดตรวจสอบการเชื่อมต่ออินเทอร์เน็ตและการกำหนดค่าไฟร์วอลล์ของคุณ"
@@ -43303,6 +43392,7 @@
 		"inv_context_useitem"				"ใช้ไอเท็ม"
 		"inv_context_usespray"				"เปิดและสวมใส่"
 		"inv_context_open_package"			"ปลดล็อคบรรจุภัณฑ์"
+		"inv_context_open_terminal"			"เปิดผนึกเทอร์มินัล"
 		"inv_context_open_watch_panel_pickem"	"เล่นการท้าทาย Pick'Em"
 		"inv_context_view_tournament_journal" "ดูเหรียญการท้าทาย"
 		"inv_context_open_season_stats_panel" "ดูสถิติฤดูกาล"
@@ -43414,6 +43504,12 @@
 		"popup_title_quest_reward"			"รางวัล"
 		"popup_title_xpshopredeem"			"ได้รับจากคลังอาวุธ"
 
+		"popup_control_tooltip_rotate_weapon"		"ลากเมาส์เพื่อหมุนอาวุธ"
+		"popup_control_tooltip_rotate_sticker"		"เลื่อนล้อเมาส์ขณะวางเมาส์เหนือสติกเกอร์เพื่อหมุน"
+		"popup_control_tooltip_move_sticker"		"คลิกและลากสติกเกอร์เพื่อย้ายไปยังอาวุธ"
+		"popup_control_tooltip_move_keychain"		"คลิกและลากพวงกุญแจเพื่อย้ายไปยังอาวุธ"
+
+
 		"acknowledge_gifter"				"ของขวัญจาก: {s:name}"
 		"acknowledge_quest"					"ของรางวัลภารกิจ"
 		"acknowledge_all_items"				"ดำเนินการต่อไปยังช่องเก็บของ"
@@ -43524,13 +43620,15 @@
 		"popup_decodeable_xray_desc"	"<b>{s:itemname}</b>"
 		"popup_decodeable_desc_graffiti"	"เปิด <b>{s:itemname}</b>"
 		"popup_decodeable_desc_fantoken"	"เปิดใช้ <b>{s:itemname}</b>"
+		"popup_decodeable_desc_terminal"	"เปิดผนึก <b>{s:itemname}</b>"
 		"popup_decodeable_warning"		"กล่องนี้สามารถเปิดได้เพียงครั้งเดียว"
 		"popup_decodeable_warning_graffiti"		"กราฟฟิตี้นี้สามารถเปิดผนึกได้แค่ครั้งเดียวเท่านั้น"
 		"popup_decodeable_warning_fantoken"		"ไอเท็มนี้สามารถเปิดใช้งานได้แค่ครั้งเดียวเท่านั้น"
 		"popup_decodeable_warning_terminal"		"เมื่อเปิดผนึกแล้ว อัปลิงก์เทอร์มินัลของคุณจะไม่สามารถแลกเปลี่ยนและไม่สามารถซื้อขายได้"
 		"popup_decodeable_button"		"ปลดล็อคบรรจุภัณฑ์"
-		"popup_decodeable_button_graffiti"	"กราฟฟิตี้แบบเปิดผนึก"
+		"popup_decodeable_button_graffiti"	"เปิดผนึกกราฟฟิตี้"
 		"popup_decodeable_button_fantoken"	"เปิดใช้งานไอเท็ม"
+		"popup_decodeable_button_terminal"	"เปิดผนึกเทอร์มินัล"
 		"popup_decodeable_async_desc"	"ใช้ <b>{s:itemname}</b>"
 		"popup_decodeable_async_xray_desc"		"ใช้สแกนเนอร์ X-Ray เพื่อเปิดเผยไอเท็มที่อยู่ภายใน"
 		"popup_decodeable_err_restricted"	"การเปิด <b>{s:itemname}</b> ไม่ได้รับอนุญาตในประเทศของคุณ"
@@ -43550,6 +43648,8 @@
 		"popup_totool_decodeable_header_fantoken"	"เปิดใช้งานไอเท็ม"
 		"popup_totool_purchase_header"	"ซื้อ"
 		"popup_totool_purchase_header2"	"สั่งซื้อเพื่อรับ"
+		"popup_totool_decodeable_header_terminal"	"เปิดผนึกเทอร์มินัล"
+
 		//Purchase
 		"popup_cartpreview_button"		"ตัวอย่าง"
 		"popup_cartpreview_title"		"ตัวอย่าง"
@@ -44403,6 +44503,21 @@
 
 
 		"CSGO_VanityLoadout_Inspect"				"ตรวจสอบ"
+		"CSGO_VanityLoadout_FindOnMarket"			"ค้นหาในตลาด"
+
+
+		"VanityLoadout_WeaponInfo_name"				"<span class=\"weapon-name\">{s:weapon_name_full}</span><br><span class=\"weapon-name-custom\">{s:weapon_name_custom}</span></font>"
+
+
+		"VanityLoadout_WeaponInfo_stock"		"สต็อกอาวุธ"
+
+		"VanityLoadout_WeaponInfo_collection"	"{s:collection}"
+		"VanityLoadout_WeaponInfo_wear"			"{s:wear}"
+		"VanityLoadout_WeaponInfo_pattern"		"{s:pattern}"
+
+		"VanityLoadout_WeaponInfo_wear_fill"			"<font color=\"\">%s1: %s2</font>"
+
+
 		//////////////////////
 		// ANNOTATIONS
 		/////////////////////
@@ -46198,12 +46313,300 @@
 		"Chatwheel_section_report"	"รายงาน"
 
 		"Chatwheel_description" "กงล้อแช็ตทำให้เข้าถึงรายการคำสั่งวิทยุที่มีประโยชน์ที่สามารถปรับแต่งได้อย่างรวดเร็ว"
-//
-//
-"laptop_window_seal_title"					"สถานะ"
+
+		////
+		//
+		// Volatile Laptop
+		//
+		////
+
+		// ---------------------------------------------------------------------------------------------
+		"laptop_window_collection_title"			"XP แคตตาล็อกชุดสะสม"
+		"laptop_window_expiration_title"			"วันหมดอายุ"
+		"laptop_window_seal_title"					"สถานะ"
+		"laptop_window_messages_title"				"แช็ต - นักค้าอาวุธ"
+		"laptop_window_currentoffer_title"			"ข้อเสนอปัจจุบัน"
+		"laptop_app_title"							"<span class=\"laptop-app-title-prefix\">UP-</span>Link"
+		"laptop_app_version"						"v 1.1.0.2000"
+
 		"dealer_offer_attachment_title"							"{s:item-name}"
 		"dealer_offer_attachment_wear"						"{s:item-rarity}"
+		"dealer_offer_attachment_remaining_title"				"ข้อเสนอ #{d:offer-total}"
+		"dealer_offer_attachment_remaining"						"ข้อเสนอ #{d:offer-total}"
+		"dealer_offer_received_count"							"ข้อเสนอ <b>{s:offer-count}</b>"
+		"dealer_offer_attachment_final_title"					"ข้อเสนอสุดท้าย"
+		"dealer_offer_attachment_final"							"ข้อเสนอ {s:offer-count} และข้อเสนอสุดท้าย"
+		"dealer_offer_attachment_status"						"ข้อเสนอ - {s:offer-status}"
+		"dealer_offer_attachment_status-active"					"<b><span class=\"offer-active\">เปิดใช้งาน</span></b>"
+		"dealer_offer_attachment_status-price"					"<b><span class=\"offer-active\">{s:offer-price}</span></b>"
+		"dealer_offer_attachment_status-declined-price"			"{s:offer-price}"
+		"dealer_offer_attachment_status-declined"				"<span class=\"offer-declined\">ข้อเสนอ {s:offer-count} - ปฏิเสธ</span>"
+
+		"user_btn_purchase_desc_purchase"		"กดค้างไว้เพื่อซื้อไอเท็มนี้ หลังการซื้อแล้ว เทอร์มินัลจะถูกทิ้งไป"
+		"user_btn_purchase_desc_continue"		"กดค้างเพื่อปฏิเสธข้อเสนอนี้ถาวรและดูข้อเสนอถัดไป"
+		"user_btn_purchase_desc_end"		"ปฏิเสธข้อเสนอสุดท้ายและทิ้งเทอร์มินัลนี้"
+		"user_btn_purchase_title"			"<b>ข้อเสนอ {s:offer-count}</b> - คำตอบที่แนะนำ"
+		"user_btn_purchase_final_title"		"<b>ข้อเสนอสุดท้าย</b> - คำตอบที่แนะนำ"
+		"user_btn_decline_desc"				"ปฏิเสธข้อเสนอนี้และดูข้อเสนออื่น"
+		"user_btn_accept"		"ยอมรับข้อเสนอ <b>{s:price}</b>"
+		"user_btn_accept_final"	"ยอมรับข้อเสนอสุดท้าย <b>{s:price}</b>"
+		"user_btn_accept_0"		"ข้อเสนอ <b> {s:price} ใช้ได้</b>"
+		"user_btn_accept_1"		"ฉันยอมรับราคาได้ - <b>{s:price}</b>"
+		"user_btn_accept_2"		"ฉันรับราคา <b>{s:price}</b>"
+		"user_btn_accept_3"		"ฉันจะซื้อที่ราคา <b>{s:price}</b>"
+		"user_btn_accept_4"		"ฉันให้ราคาคุณได้ที่ <b>{s:price}</b>"
+		"user_btn_accept_5"		"นั่นราคาดีเลย — <b>{s:price}</b>"
+		"user_btn_next"			"ปฏิเสธข้อเสนอ"
+		"user_btn_next_0"		"น่าสนใจนะ แต่ไม่ล่ะ"
+		"user_btn_next_1"		"ไม่คุ้มกับทุนฉันเลย"
+		"user_btn_next_2"		"รับไม่ได้หรอก"
 		"user_btn_next_3"		"ผ่าน"
+		"user_btn_next_4"		"ไม่รับข้อเสนอหรอก"
+		"user_btn_next_5"		"ขอบใจนะ แต่ไม่ล่ะ"
+		"user_btn_next_6"		"ไม่ใช่คราวนี้"
+		"user_btn_next_7"		"ไม่ใช่วันนี้"
+		"user_btn_pause"		"หยุดข้อเสนอชั่วคราว"
+		"user_btn_end"			"ปฏิเสธข้อเสนอสุดท้าย"
+
+		"dealer_offer_Unknown"							"-"
+		"dealer_offer_1"								"1"
+		"dealer_offer_2"								"2"
+		"dealer_offer_3"								"3"
+		"dealer_offer_4"								"4"
+		"dealer_offer_5"								"5"
+		"dealer_offer_6"								"6"
+		"dealer_offer_7"								"7"
+		"dealer_offer_8"								"8"
+		"dealer_offer_9"								"9"
+		"dealer_offer_10"								"10"
+
+		"current_offer_tooltip"		"ข้อเสนอปัจจุบันของนักค้าอาวุธถึงคุณ"
+		"declined_offer_tooltip"	"ข้อเสนอถูกปฏิเสธ"
+		"future_offer_tooltip"		"ข้อเสนอยังไม่เปิดเผย"
+		"laptop_expiration_tooltip"		"เวลาที่เหลืออยู่จนกว่าอัปลิงก์เทอร์มินัลและข้อเสนอจะหมดอายุ"
+		"collection_xp_tooltip"			"รับ XP จากการดูข้อเสนอในชุดสะสมนี้ เปิดเพื่อดูความคืบหน้าและแลกรับ XP"
+		"popup_lootlist_title"			"XP แคตตาล็อกชุดสะสม"
+		"popup_lootlist_desc"			"รับ XP จากการดูข้อเสนอในชุดสะสมนี้"
+		"popup_lootlist_progress"		"ดูข้อเสนอ {d:seen}/{d:total} รายการ"
+		"popup_lootlist_claim_xp"		"รับ XP โบนัส"
+		"popup_lootlist_claim_ww"		"กำลังรับ XP..."
+		"popup_lootlist_claim_ok"		"✅ XP ที่ได้รับ"
+		"popup_vpn_status_connected"	"สถานะ: เชื่อมต่อกับเครือข่ายที่ปลอดภัยแล้ว"
+		"popup_vpn_status_disconnected"	"สถานะ: ตัดการเชื่อมต่อ"
+		"popup_signal_full" 			"สัญญาณเต็ม"
+		"popup_signal_ok" 				"สัญญาณแรง"
+		"laptop_battery_tooltip" 		"ชาร์จแบตเตอรี่: {d:percent}%"
+		"laptop_original_seal_tooltip" 	"ไอเท็มใดก็ตามที่ถูกสั่งซื้อจากอัปลิงก์เทอร์มินัลจะมาพร้อมใบรับรองเจ้าของเดิม ซึ่งจะมีผลตลอดระยะเวลาที่คุณเป็นเจ้าของ"
+		"laptop_zoom_tooltip" 			"เลื่อนล้อเมาส์เพื่อซูมเข้าและออก"
+		"laptop_pan_tooltip" 			"กดปุ่ม \"Shift\" ค้างไว้แล้วลากเพื่อแพนกล้อง"
+		"laptop_pricing_tooltip"		"ราคาเป็นราคาเดียวกันทั่วโลกและจะปรับเองโดยอัตโนมัติตามความต้องการไอเท็มแต่ละรายการในชุดสะสมนี้"
+
+
+		"dealer_message_start_0"  	"ของพวกนี้เป็นรุ่นที่ใช้กันในหมู่ผู้รับเหมา<!--.25-->มีครบทุกฟังก์ชัน ลูกเล่นเพียบ แถมไม่มีเอกสาร"
+		"dealer_message_start_1"  	"ฉันกำลังปล่อยของจากสต็อกในช่องทางสีเทา ไม่มีเอกสาร<!--.25-->ไม่ต้องห่วง พวกนี้ของเย็นสนิทแล้ว หลุดออกจากระบบไปหลายปี ไม่มีใครมาตามหาหรอก<!--.25-->แถมยังยิงได้ตรงเป้าที่คุณเล็ง ถ้าคุณอยากลองนะ"
+		"dealer_message_start_2"  	"ศุลกากรที่อาฮ์ราแดนอายัดสินค้าของฉันไว้เมื่อเช้านี้ ฉันพยายามแก้สถานการณ์ด้วยเรื่องเศร้าเกี่ยวกับอุปกรณ์การแพทย์กับใครสักคนที่กำลังจะตาย...ไม่ว่าจะเป็นใครก็ตาม<!--.25-->ไม่ได้ผลหรอก แต่สุดท้ายกระเป๋าเอกสารที่เต็มไปด้วยเงินต่างหากที่ได้ผล<!--.25-->มาลองดูเครื่องฟอกไตไหม ก่อนที่ฉันจะเอาไปให้พวกเด็กกำพร้า"
+		"dealer_message_start_3"  	"เพิ่งเกิดการเปลี่ยนแปลงระบอบการปกครองขึ้นในรัฐหนึ่ง<!--.25-->ประตูโกดังเปิดออกแล้วฉันก็เลือกดูของจากกองนั้นด้วยตนเอง<!--.25-->ฉันขายเฉพาะชิ้นส่วนที่ปลอดเชื้อ เลือกดูได้เลยนะ"
+		"dealer_message_start_4"  	"ของที่ฉันมีในวันนี้สะอาดทั้งหมด<!--.25-->รู้ ๆ กันอยู่ว่าของพวกนี้จะผ่านมือคุณเป็นคนแรก"
+		"dealer_message_start_5"  	"ชิ้นส่วนปลอดเชื้อ ไม่มีหมายเลขซีเรียล ทำงานได้อย่างสมบูรณ์แบบ<!--.25-->ศาลอาชญากรสงครามเรียกสิ่งเหล่านี้ว่าหลักฐาน<!--.25-->แต่คุณกับฉันรู้ดีว่าสิ่งเหล่านี้เป็นผลงานชิ้นเอก"
+		"dealer_message_start_6"  	"ของที่ส่งมาทั้งหมดนี้เป็นของหายากที่เพิ่งได้รับการปลดปล่อยจากหน่วยสวนสนาม<!--.25-->ผ่านการสวนสนามมาเยอะ แต่ไม่เคยยิงเลย"
+		"dealer_message_start_7"  	"เยี่ยมเลย คุณนี่เอง<!--.25-->ลูกค้าคนอื่นมักจะถามว่าฉันไปหาของจากไหนมาขาย ฉันไม่ชอบเลย<!--.25-->แต่คุณสนใจเพียงแค่ว่ามันคือของที่ดีที่สุดในตลาดใช่ไหม<!--.25-->ลองทายดูสิ: ใช่ มันดีที่สุด"
+		"dealer_message_start_8"  	"ข้อตกลงสันติภาพในดรอสวิก ฉันรักสันติภาพ<!--.25-->เพราะฉันรู้จักนายพลคนหนึ่งที่มีหนี้สินมากมายพร้อมอาวุธเต็มคลังแต่ไม่มีใครใช้<!--.25-->คือแบบว่า...<!--.25-->แล้วก็เห็นได้ชัดเลยว่าสันติภาพนั้นเป็นสิ่งที่ดี ชีวิตที่ไร้เดียงสาและ...<!--.25-->คุณไม่สนใจเลยว่าฉันกำลังพูดถึงอะไร"
+		"dealer_message_start_9"  	"ของล็อตนี้มีของแปลก ๆ จากช่องทางสีเทา<!--.25-->ลำกล้องปืนขนาดพิเศษ ไม่ใช่ของสำหรับมือสมัครเล่น คุณต้องชอบแน่ ๆ"
+		"dealer_message_start_10"  	"น่าอายจัง<!--.25-->ฉันคงจะติดป้ายลังบนรายการจัดส่งผิด<!--.25-->เอิ่ม มีลังสัก 2-3 โหลได้มั้ง<!--.25-->คุณช่วยฉันจัดการสินค้าพวกนี้ให้หายไปก่อนที่เจ้าหน้าที่ท่าเรือจะมาตรวจสอบได้ไหม"
+		"dealer_message_start_11"  	"เจ้าพนักงานตรวจสอบในดรอสวิกเรียกร้องสินบนสำหรับของชิ้นนี้ เจ้าโง่นั่นเริ่มพูดถึงคำสั่งยึด <!--.25-->ฉันรู้จักคนในดรอสวิกที่รู้วิธีจัดการกับพวกช่างพูด ตอนนี้เขาอ้าปากไม่ได้แล้วแหละ<!--.25-->โชคดีที่สินค้าชิ้นนี้พูดแทนตนเองได้"
+		"dealer_message_start_12"  	"ต้องยัดเงินให้ทุกคนที่อาฮ์ราแดน ถึงจะเอาของล็อตนี้ข้ามชายแดนมาได้<!--.25-->สินบนทั้งหมดต้องจ่ายเป็นเงินอาฮ์ริอีกนะ รู้ไหม? ว่าต้องขนเงินไปเป็นตั้ง ๆ เพื่อจ่ายสินบนด้วยสกุลเงินที่ไร้ค่า พวกนั้นควรทำอะไรสักอย่างกับเศรษฐกิจของตัวเองได้แล้ว"
+		"dealer_message_start_13"	"ฉันมีนายหน้าลับคนหนึ่งที่ต้องการให้ของนี่ถูกขนย้ายออกไปอย่างเร็ว<!--.25-->ทั้งหมดที่เขาพูดก็แค่ \"เร็ว\"<!--.25-->อีกคำที่พูดก็ \"มาก ๆ\"<!--.25-->เอาเป็นว่า: ถ้าคุณไม่อยากรู้ว่าเขาขายทำไม งั้นคุณกำลังจะได้มีความสุขมาก ๆ เลยล่ะ"
+		"dealer_message_start_14"	"วันนี้มีแต่รุ่นเก่า ๆ หน่อยนะ<!--.25-->ดูหรูหราไหม? ไม่ล่ะ แต่ไว้วางใจได้แน่นอน<!--.25-->หลานของคุณก็อาจเอาไปยิงเล่นได้เลย"
+		"dealer_message_start_15"	"กองกำลังฝ่ายกบฏยึดอาวุธพวกนี้มาจากคลังของท่านผู้นำผู้ยิ่งใหญ่<!--.25-->ฉันว่าน่าจะยึดร่างลำตัวของท่านผู้นำพร้อมแยกส่วนออกจากแขน ขา และหัวด้วยนะ<!--.25-->(ของแบบนั้นฉันไม่ขายหรอก แต่ถ้าคุณสนใจ ฉันพอจะแนะนำคนที่ขายให้ได้อยู่)"
+		"dealer_message_start_16"	"หัวหน้าด่านชายแดนดรอสวิกขู่จะยึดของล็อตนี้ไป<!--.25-->ฉันว่าเขาคงไม่ได้รับบันทึกว่า ฉันไม่จ่ายสินบนในดรอสวิกหรอกนะ โดยเฉพาะเมื่อพวกนักเลงกล้ามโตท้องถิ่นมันถูกซะขนาดนั้น ดรอสวิกมันก็เหมือนเมืองหลวงของมวยโลกนั่นแหละ<!--.25-->เอาเถอะ สุดท้ายคนที่มาแทนเขาก็ดันทำใบคำสั่งยึดของหายไปเอง และแขนเขาก็ยังไม่หักนะ"
+		"dealer_message_start_17"	"ของทั้งหมดนี่มาจากชุดสะสมส่วนตัวของมหาเศรษฐีเลยนะ<!--.25-->จริง ๆ ตอนนี้ก็เป็นแค่อดีตมหาเศรษฐีแล้วล่ะ เขากำลังถูกสอบสวนอยู่ ซึ่งหมายความว่าฉันก็กำลังปล่อยของที่เขาปล่อยเองไม่ได้<!--.25-->พูดตรง ๆ เลยนะ มันจะดูดีขึ้นเยอะ ถ้าอยู่ในมือคุณมากกว่าที่จะแขวนโชว์บนผนังเรือยอชท์ซะอีก"
+		"dealer_message_start_18"	"เจ้าพนักงานตรวจสอบที่ท่าเรือเจอความผิดปกติในสินค้าล็อตนี้<!--.25-->เรื่องตลกก็คือ ลังปืนไรเฟิลหนึ่งลัง มันดันหนักพอดีเป๊ะเท่ากับลัง \"อะไหล่รถแทรกเตอร์\" ถ้าเอาเงินหมื่นดอลลาร์วางลงไปบนตาชั่งด้วยก็เป๊ะเลย<!--.25-->มาลองดูอะไหล่แทรกเตอร์พวกนี้สิ"
+		"dealer_message_start_19"	"ของที่ฉันมีวันนี้รอดมาจากการรัฐประหารกว่าจะมาถึงมือคุณ<!--.25-->ถึงภายนอกจะมีรอยถลอก แต่ฟังก์ชันยังสมบูรณ์ สิ่งสำคัญคือของข้างในใช่ไหมล่ะ?"
+		"dealer_message_start_20"	"สาธารณรัฐกระจอก ๆ เพิ่งเอาประธานาธิบดีของตัวเองไปแขวนคอ<!--.25-->โชคดีของฉันที่ได้สืบทอดเส้นทางลำเลียงสินค้าของเขาต่อ"
+		"dealer_message_start_21"	"เรียกว่าความผิดพลาดในการประมวลผลก็ได้ ความคลาดเคลื่อนในเอกสาร หรือพูดง่าย ๆ ก็คือการจัดเก็บที่ผิดพลาดแบบซื่อ ๆ<!--.25-->เรื่องพลาด ๆ แบบนี้มันเกิดขึ้นได้ ฉันก็แค่พยายามช่วยเพื่อนเอาไว้ เขาจะได้ไม่ถูกปลดออกจากตำแหน่งจ่าสิบเอก<!--.25-->สินค้าล็อตนี้มันต้องหายไปจากระบบ"
+		"dealer_message_start_22"	"หัวหน้าศุลกากรบางคนคิดว่าจะกดดันฉันได้ด้วยของล็อตนี้ แต่ฉันก็ให้สหภาพแรงงานท่าเรือกดดันเขาหนักกว่าอีก<!--.25-->เรื่องตลกคือเอกสารมันเคลียร์เร็วมาก ตอนที่ทุกคนมัวแต่ยุ่งตามหาคนหายอยู่<!--.25-->หวังว่าพวกเขาจะเจอคนน่าสงสารคนนั้นนะ ฉันคิดว่าเขาคงว่ายน้ำไม่เป็นด้วยซ้ำ"
+		"dealer_message_start_23"	"เจ้าหน้าที่ด่านตรวจชายแดนในอาฮ์ราแดนบอกว่าเอกสารไม่ถูกต้อง ฉันเลยให้อาฮ์ริไปฟ่อนหนึ่ง แล้วจู่ ๆ เอกสารก็ถูกต้องซะงั้น<!--.25-->ฉันไม่รู้ด้วยซ้ำว่า 10,000 อาฮ์ริคิดเป็นเงินจริงเท่าไหร่ ประมาณ 6 ดอลลาร์หรืออะไรประมาณนั้นมั้ง<!--.25-->แล้วคุณอยากดูปืนที่ไม่มีอยู่จริงบ้างไหมล่ะ?"
+		"dealer_message_start_24"	"ฉันมีนายพลกระหายสงครามที่รับปากว่าจะเหมาสินค้าพวกนี้หมด แต่เผอิญนายพลงั่งนั่นดันไปโดนโดรนยิงจนเป็นผุยผง<!--.25-->ปิดหน้าต่างไว้ให้มิดชิดนะ ขอบอก แต่โชคร้ายของเขาคือโชคดีของคุณ"
+		"dealer_message_start_25"	"ฉันไม่รู้ว่าการเปลี่ยนแปลงระบอบการปกครองในดรอสวิกนั่นเกิดขึ้นได้ยังไง แต่ไป ๆ มา ๆ โกดังที่เต็มไปด้วยลังอาวุธก็หายวับไปท่ามกลางความชุลมุนวุ่นวาย<!--.25-->แล้วไป ๆ มา ๆ มันก็ตกมาอยู่ในมือฉัน พิลึกใช่ไหมล่ะ<!--.25-->แต่มันพิสดารไปกว่านั้นอีกนะ ไป ๆ มา ๆ อีกเหมือนกันที่ฉันอาจเอามาขาย ให้คุณไง ตอนนี้เลยก็ได้นะ"
+		"dealer_message_start_26"	"ฉันมีลังสินค้าที่สำแดงไว้ผิด แต่อยากจะให้คุณดูนะ<!--.25-->อย่าหลงเชื่อป้ายกำกับที่บอกว่าเป็น \"อุปกรณ์เกษตร\" ล่ะ ดินจะกลบหน้าคุณเอาได้ง่าย ๆ ถ้าคุณไม่ยิงก่อน"
+		"dealer_message_start_27"	"ฉันเกลียดการร่วมมือกับพวกกบฏ ที่จริงมันเป็นแค่คำสุภาพที่ใช้เรียกบรรดาพลเรือน ซึ่งเป็นคำสุภาพที่ใช้เรียกพวกมือสมัครเล่นกิ๊กก๊อก<!--.25-->แต่เอาเถอะ พวกนั้นหายเข้ากลีบเมฆกันไปหมดแล้ว ฉันก็เลยเปิดโอกาสให้มือโปรตัวจริงลองอาวุธนี้มั่ง"
+		"dealer_message_start_28"	"พื้นที่อันตรายทางใต้ที่เต็มไปด้วยปมความขัดแย้งอย่างต่อเนื่องนั้นเพิ่งมีรัฐสภาที่ล่มสลายทุกหกเดือนไปหยก ๆ<!--.25-->คลังอาวุธในท้องถิ่นหลายแห่งโดนบุกตีจนแตกกระจุยเหมือนตุ๊กตาปิญญาตาเลย"
+		"dealer_message_start_29"	"เมื่อวันศุกร์ที่ผ่านมา เจ้าพนักงานตรวจสอบที่ท่าเรือระบุว่าตู้สินค้านี้มีลักษณะผิดปกติ<!--.25-->พอถึงวันจันทร์ ลูกสาวของเขาก็มีเงินค่าเล่าเรียนเพียงพอที่จะเข้าเรียนที่ Stamwick และตู้สินค้านั่นก็กลายเป็นอุปกรณ์เกษตรอีกแล้ว<!--.25-->ฉันจะพูดอะไรได้ การศึกษาเป็นสิ่งสำคัญนะ เรามาดูอุปกรณ์เกษตรกันดีกว่า"
+
+
+		"dealer_message_resume_0"  	"<!--1-->คุณกลับมาแล้ว ดีล่ะ ข้อเสนอยังอยู่นะ"
+		"dealer_message_resume_1"  	"<!--1-->ต้องใช้เวลาคิดสักครู่ใช่ไหม? ไม่มีปัญหา"
+		"dealer_message_resume_2"  	"<!--1-->ฉันคิดไว้แล้ว คุณต้องกลับมา"
+		"dealer_message_resume_3"  	"<!--1-->เรามาเริ่มกันต่อจากที่เราค้างไว้ดีกว่า"
+		"dealer_message_resume_4"  	"<!--1-->พร้อมจะทำธุรกิจกันหรือยัง?"
+		"dealer_message_resume_5"  	"<!--1-->ดีเลย คุณกลับมาแล้ว ฉันต้องจัดการเรื่องนี้ให้จบ ไม่งั้นคนไม่ถูกใจจะเริ่มสงสัย"
+		"dealer_message_resume_6"  	"<!--1-->คุณกลับมาแล้ว เราถึงไหนแล้วนะ?"
+
+		"dealer_message_first_offer_0"	"<!--.5-->ถ้าคุณสนใจ เรามาทำข้อตกลงกันเถอะ"
+		"dealer_message_first_offer_1"	"<!--.5-->ขอบอกให้คุณรู้ไว้ ฉันยังมีคนอื่นที่สนใจของชิ้นนี้อยู่นะ"
+		"dealer_message_first_offer_2"	"<!--.5-->ถ้าคุณจะเอา ก็เอาเลย ไม่อย่างนั้นก็บอกมา ฉันมีช่องทางขายให้ผู้ซื้อที่สนใจเยอะแยะ"
+		"dealer_message_first_offer_3"	"<!--.5-->อันนี้เป็นของคุณเลย ถ้าสนใจ ถ้าไม่เอา คุณก็พลาดเอง"
+		"dealer_message_first_offer_4"	"<!--.5-->ถ้าตกลงก็มาเริ่มกันเลย ฉันคงข้อเสนอนี้ไว้ตลอดไม่ได้หรอกนะ"
+		"dealer_message_first_offer_5"	"<!--.5-->ข้อเสนออยู่ตรงหน้าแล้ว เอาหรือไม่เอา"
+		"dealer_message_first_offer_6"	"<!--.5-->คุณจะเอาไหมเนี่ย? คุณไม่ทำร้ายความรู้สึกฉันหรอก ถ้าบอกไม่เอา ฉันมีคนซื้ออีกหลายคนรออยู่"
+		"dealer_message_first_offer_7"	"<!--.5-->เราจะซื้อขายกันไหม?"
+		"dealer_message_first_offer_8"	"<!--.5-->ฉันไม่มีเวลาทั้งวันหรอกนะ"
+		"dealer_message_first_offer_9"	"<!--.5-->เราจะทำธุรกิจกันหรือเปล่า?"	
+		"dealer_message_first_offer_10"	"<!--.5-->ฉันไม่อยากเสนอขายจนเกินไปนะ ของมันขายตัวเองได้อยู่แล้ว คุณจะเอาหรือไม่เอา?"		
+
+		"dealer_message_next_offer_0"	"<!--1-->เอาล่ะ อันนั้นคงไม่ถูกใจคุณ แล้วอันนี้ล่ะ?"
+		"dealer_message_next_offer_1"	"<!--1-->คุณพลาดแล้ว โชคดีนะคุณมาเจอฉันตอนอารมณ์ดี ลองดูอันนี้สิ"
+		"dealer_message_next_offer_2"	"<!--1-->ขอผ่านเหรอ? เอาเถอะ คุณพลาดแล้ว ลองดูอันนี้ละกัน"
+		"dealer_message_next_offer_3"	"<!--1-->ของชิ้นนี้มันขายตัวของมันเองได้อยู่แล้ว ถ้าคุณไม่ซื้อ ฉันก็แค่หาคนอื่นมาซื้อ<!--.5-->แต่ในเมื่อคุณยังอยู่ที่นี่ ฉันว่าชิ้นนี้มันเหมาะกับคุณที่สุดเลยล่ะ"
+		"dealer_message_next_offer_4"	"<!--1-->ฉันเข้าใจแล้ว มันไม่ใช่แนวของคุณ ลองดูอันนี้ได้ไหม ฉันคิดว่าคุณน่าจะชอบนะ"
+		"dealer_message_next_offer_5"	"<!--1-->ฉันรู้สึกว่า คุณจะขอผ่านของอันนั้น โชคดีที่ฉันมีเจ้าตัวน้อยแสนสวยรอให้ชมอยู่"
+		"dealer_message_next_offer_6"	"<!--1-->ใช่ ฉันว่าแล้วเชียว ลองดูอันนี้ ฉันว่ามันเหมาะกับคุณมาก"
+		"dealer_message_next_offer_7"	"<!--1-->คุณต้องเสียใจที่ขอผ่านของอันนั้นภายหลังแน่ แต่ไม่เป็นไร ลองดูอันนี้หน่อยไหม?"
+		"dealer_message_next_offer_8"	"<!--1-->ฉันรู้จักคุณดีเกินไป ฉันคิดแล้วว่าคุณไม่เอาอันนั้นแน่ ลองดูอันนี้หน่อยไหม?"
+		"dealer_message_next_offer_9"	"<!--1-->เอาล่ะ ข้ามจานเรียกน้ำย่อยไปก่อน เตรียมพร้อมเจอจานหลักได้เลย"
+		"dealer_message_next_offer_10"	"<!--1-->ฉันเข้าใจแล้ว ฉันก็ไม่ชอบอันนั้นเหมือนกัน ลองดูอันนี้หน่อย"		
+		"dealer_message_next_offer_11"   "<!--1-->อันนั้นอาจจะฝืนรสนิยมไปหน่อย งั้นอันต่อไปน่าจะทำให้พอใจได้มากกว่านี้"
+		"dealer_message_next_offer_12"   "<!--1-->สต็อกสินค้าของเรายังมีอีกเพียบเลย มาดูของชิ้นงามอันนี้สิ"
+		"dealer_message_next_offer_13"   "<!--1-->รู้อะไรไหม? ฉันนึกแล้วว่าคุณต้องพูดแบบนี้แน่ งั้นเรามาดูอันถัดไปกันเถอะ"
+		"dealer_message_next_offer_14"   "<!--1-->คุณนี่เอาใจยากกว่าที่คิดแฮะ อันนี้พอจะทำให้คุณยิ้มได้บ้างไหม?"
+		"dealer_message_next_offer_15"   "<!--1-->ฉันไม่เสียความรู้สึกหรอกนะ ฉันไม่ได้เป็นคนสร้างมันขึ้นมาสักหน่อย เอาตัวเลือกอื่นไปดูนะ"
+		"dealer_message_next_offer_16"   "<!--1-->ฉันเองก็คงไม่เอาอันนั้นเหมือนกัน แต่ว่าดูอันนี้สิ น่าสนใจมาก"
+		"dealer_message_next_offer_17"   "<!--1-->ขอผ่านเหรอ? เข้าใจแล้ว งั้นข้อเสนอต่อไปนะ"
+		"dealer_message_next_offer_18"   "<!--1-->คุณเนี่ยมาตราฐานสูงชะมัด เข้าทางฉันเลย อันต่อไปคือมาตราฐานทองเลย"
+		"dealer_message_next_offer_19"   "<!--1-->ฉันไม่อยากให้คุณเสียดายเงิน และคุณก็คงไม่อยากให้ฉันเสียดายเวลาเหมือนกัน มาดูอันนี้กัน"
+		"dealer_message_next_offer_20"   "<!--1-->เฮ้ย ฉันชื่นชมในความจริงใจนะ ไปกันต่อเลยจะได้ไม่เสียเวลา"
+		"dealer_message_next_offer_21"   "<!--1-->โอเค คุณไม่ชอบอันนั้นสินะ ดีนะที่ฉันมีปืนมาขายมากกว่าหนึ่งกระบอก"
+		"dealer_message_next_offer_22"   "<!--1-->ไม่มีปัญหา ยังมีของอีกเพียบเลย มาดูอันต่อไป"
+		"dealer_message_next_offer_23"   "<!--1-->ฉันนึกว่าขายได้แล้วนะเนี่ย… งั้นลองอันนี้ละกัน เผื่อจะปิดการขายได้จริง ๆ"
+		"dealer_message_next_offer_24"   "<!--1-->เข้าใจแล้ว คุณไม่ชอบก็ไม่เป็นไร มันก็ไม่เหมาะกับทุกคนหรอก แต่อันนี้กำลังเรียกหาคุณก็ได้"
+		"dealer_message_next_offer_25"   "<!--1-->ดูเหมือนคุณจะไม่ค่อยเข้าใจสิ่งที่ฉันพยายามเสนออยู่นะ งั้นลองดูอันนี้หน่อย เผื่อจะโดนใจคุณ"
+		"dealer_message_next_offer_26"   "<!--1-->โอเค ไม่มาเล่น ๆ แล้วนะ อันต่อไปฉันรับประกันเลยว่า คุณต้องชอบแน่ ๆ น่าจะมั้ง"
+		"dealer_message_next_offer_27"   "<!--1-->ไม่ชอบอันนั้นเหรอ? งั้นฉันเก็บเข้าคลังอาวุธของฉันก็ได้… แล้วอันนี้ล่ะ เป็นไง?"
+		"dealer_message_next_offer_28"   "<!--1-->คุณนี่รสนิยมดีจริง ๆ งั้นมาลองดูอันต่อไปหน่อยสิ ว่าจะผ่านมาตรฐานสูงของคุณได้ไหม"
+		"dealer_message_next_offer_29"   "<!--1-->เอาล่ะ อันเมื่อกี้มันก็แค่ของกองบนสุดเอง เดี๋ยวฉันขอคุ้ยลงไปลึกกว่านี้หน่อย"
+		"dealer_message_next_offer_30"   "<!--1-->ลืมอันก่อนหน้านี้ไปซะ ฉันอยากให้คุณดูอันนี้หน่อย"
+		"dealer_message_next_offer_31"   "<!--1-->อันนี้เหมาะกับคุณที่สุดแล้ว ไม่ได้จะอวยนะ แต่อันนี้ของสภาพดีเลย"
+		"dealer_message_next_offer_32"   "<!--1-->เฮ้ คุณจะซื้อหมดทุกอันไม่ได้หรอก ฉันเข้าใจนะ บางทีคุณอาจกำลังรออันพิเศษอยู่… อย่างเช่นอันนี้ไง"
+		"dealer_message_next_offer_33"   "<!--1-->อันนั้นแค่ซ้อม ๆ นะ อันนี้สิของจริง"
+		"dealer_message_next_offer_34"   "<!--1-->ใช่ ฉันไม่คิดว่าจะขายได้เหมือนกัน แต่อันถัดไปล่ะ ฉันเห็นอันนี้ก็นึกถึงคุณเลย"
+		"dealer_message_next_offer_35"   "<!--1-->ก็จริงนะ อันนี้ฉันเก็บไว้ให้คุณเลยล่ะ"
+		"dealer_message_next_offer_36"   "<!--1-->ไม่ใช่งานฉันหรอกนะที่จะทำให้คุณมาชอบมัน ฉันก็แค่พยายามขายของก็เท่านั้น งั้นอันต่อไปเลย"
+		"dealer_message_next_offer_37"   "<!--1-->ไม่เป็นไร ฉันว่าอันต่อไปนี่น่าจะเหมาะกับคุณมากกว่า"
+		"dealer_message_next_offer_38"   "<!--1-->ฉลาดนี่นา ฉันก็รู้อยู่แล้วล่ะว่าคุณคงไม่รีบเอาอันนั้นหรอก งั้นเดี๋ยวฉันเอาอันที่ดีกว่านี้มาให้ดู"
+		"dealer_message_next_offer_39"   "<!--1-->ไม่มีปัญหา ฉันเองก็คงไม่ซื้ออันนั้นเหมือนกันแหละ แต่อันนี้สิ อีกเรื่องเลยนะ..."
+		"dealer_message_next_offer_40"   "<!--1-->นี่ฉันต้องลุยไปถึงหลังร้าน หยิบของจากชั้นเอาอันพรีเมียมมาเลยใช่ไหม? ได้เลย จัดให้!"
+
+
+		"dealer_message_last_offer_0"	"<!--0-->เอาล่ะ ข้อเสนอสุดท้ายของสุดท้ายแล้วนะ รับหรือไม่รับ"
+		"dealer_message_last_offer_1"	"<!--0-->ลองพิจารณาข้อเสนอสุดท้ายของฉันดู"
+		"dealer_message_last_offer_2"	"<!--0-->ข้อเสนอสุดท้ายแล้ว รับหรือไม่รับ ช่วยเลิกทำฉันเสียเวลาได้แล้ว"
+		"dealer_message_last_offer_3"	"<!--0-->ข้อเสนอสุดท้ายแล้ว<!--1-->คุณไม่อยากได้ก็ไม่เป็นไรนะ แต่ถ้าเป็นฉันจะถอยห่างหน่อย ของอันนี้มันระเบิดแน่ ๆ เลย"
+		"dealer_message_last_offer_4"	"<!--0-->ข้อเสนอสุดท้ายแล้ว ฉันไม่ขอร้องหรอกนะ"
+		"dealer_message_last_offer_5"	"<!--0-->เอาล่ะ อันนี้ดีสุดเท่าที่ฉันจะเสนอได้แล้ว"
+		"dealer_message_last_offer_6"	"<!--0-->โอเค ข้อเสนอนี้ เราจะรับกันไหม?"		
+		"dealer_message_last_offer_7"	"<!--0-->ข้อเสนอสุดท้ายและท้ายสุดนะ"
+		"dealer_message_last_offer_8"	"<!--0-->เราพบกันครึ่งทางก็แล้วกัน นี่เป็นข้อเสนอที่ดีที่สุดเท่าที่ฉันจะให้ได้แล้วนะ"
+		"dealer_message_last_offer_9"	"<!--0-->นี่แหละคือข้อเสนอดีที่สุดแล้ว ก่อนที่มันจะหายไปนะ"	
+
+		"dealer_message_end_0"			"<!--0-->เอาล่ะ คุณมีโอกาสแล้ว ถ้าตอนนี้คุณกำลังถืออัปลิงก์เทอร์มินัลที่กำลังจะระเบิดอยู่ล่ะก็ ฉันจะหยุดในสาม… สอง…"
+		"dealer_message_end_1"			"<!--0-->เอิ่ม คุณคงจะมีอะไรให้คิดถึงในครั้งถัดไปที่คุณถูกยิง แล้วคว้าหาปืนที่คุณเพิ่งปฏิเสธไป"
+		"dealer_message_end_2"			"<!--0-->โอเค ฉันจะไม่ขอร้องให้คุณรับมันไป หวังว่าคุณคงไม่ได้คิดว่าจะได้อัปลิงก์เทอร์มินัลออกไปฟรี ๆ นะ"
+		"dealer_message_end_3"			"<!--0-->คุณเลือกเอง ธุรกิจของคุณ งานศพของคุณด้วยล่ะมั้ง<!--1-->ถ้าไม่ลำบากเกินไปช่วยถอยห่างจากอัปลิงก์เทอร์มินัลที่กำลังจะระเบิดด้วยนะ"
+
+		"dealer_message_timerexpired_0"		"<!--.1-->เอาล่ะ ไม่เป็นไร"
+		"dealer_message_timerexpired_1"		"<!--.1-->ช่างเถอะ<!--.5-->คุณพลาดโอกาสแล้ว"
+		"dealer_message_timerexpired_2"		"<!--.1-->ข้อเสนอหมดแล้ว<!--.5-->ฉันมีเรื่องต้องทำที่นี่อีกนะ"
+		"dealer_message_timerexpired_3"		"<!--.1-->โอเค เดี๋ยวฉันจะไปหาคนซื้อที่พร้อมจะซื้อ<!--.5-->เราจบกันแค่นี้"
+		"dealer_message_timerexpired_4"		"<!--.1-->แล้วแต่คุณเลย<!--.5-->ไว้เจอกัน"
+		"dealer_message_timerexpired_5"		"<!--.1-->ติ๊กต๊อก<!--.5-->หมดเวลา"
+		"dealer_message_timerexpired_6"		"<!--.1-->ข้อเสนอจบแล้ว<!--.5-->ฉันเอาของนี่ไปขายที่อื่นได้เป็นสิบ ๆ เท่าเลย"
+		"dealer_message_timerexpired_7"		"<!--.1-->ฉันนึกว่ากำลังช่วยคุณกำจัดคนเสียอีก<!--.5-->กลายเป็นว่าคุณกำลังทำให้ฉันเสียเวลาซะงั้น"
+		"dealer_message_timerexpired_8"		"<!--.1-->ข้อเสนอจบแล้ว"	
+		"dealer_message_timerexpired_9"		"<!--.1-->หมดเวลาแล้ว"
+		"dealer_message_timerexpired_10"		"<!--.1-->เอาล่ะ ฉันเบื่อแล้ว เราจบแค่นี้นะ"		
+
+		"dealer_message_open_check_out_0"		"<!--.5-->อันนี้มันเหมาะกับคุณที่สุดเลย นั่นคือเหตุผลที่ฉันนึกถึงคุณเป็นคนแรก มาปิดดีลนี้กันเถอะ"
+		"dealer_message_open_check_out_1"		"<!--.5-->เป็นการตัดสินใจที่ยอดเยี่ยม เดี๋ยวฉันจะจัดการแพ็กของให้เรียบร้อย"
+		"dealer_message_open_check_out_2"		"<!--.5-->คุณจะไม่เสียใจหรอก แต่ฉันว่าคงมีใครบางคนกำลังจะเสียใจ"
+		"dealer_message_open_check_out_3"		"<!--.5-->ฉันนึกแล้วว่าคุณจะต้องเป็นลูกค้าของฉัน เรามาทำให้เป็นทางการกันเถอะ"
+		"dealer_message_open_check_out_4"		"<!--.5-->ยอดเยี่ยม มาลุยกันเลย"		
+		"dealer_message_open_check_out_5"		"<!--.5-->เลือกได้ดี"	
+		"dealer_message_open_check_out_6"		"<!--.5-->คุณเลือกได้ฉลาดมาก มาทำธุรกิจให้จบเถอะ"		
+		"dealer_message_open_check_out_7"		"<!--.5-->ดี งั้นมาทำให้มันเป็นทางการเถอะ"	
+		
+		"dealer_message_txn_xld_bailout_0"		"<!--.5-->ไม่ต้องรีบ คุณรู้ว่าจะเจอฉันได้ที่ไหน"
+		"dealer_message_txn_xld_bailout_1"		"<!--.5-->ฉันไม่ได้จะไปไหนหรอก"
+		"dealer_message_txn_xld_bailout_2"		"<!--.5-->ฉันจะเก็บอันนี้ไว้ให้ก่อนแล้วกัน"
+		"dealer_message_txn_xld_bailout_3"		"<!--.5-->เดี๋ยวคุณก็กลับมา ลองกลับไปคิดดูก่อนนะ"
+
+		"dealer_message_purchase_finalizing_0"	"กำลังสรุปรายละเอียดการชำระเงิน..."
+		"dealer_message_purchase_confirm_0"		"<!--.5-->ข้อตกลงเสร็จสิ้นแล้ว"
+
+		"dealer_message_stattrack_0"			"แน่นอน มี StatTrak™ ติดตั้งไว้"
+		"dealer_message_stattrack_1"			"อันนี้มาพร้อม StatTrak™ ด้วยนะ"
+		"dealer_message_stattrack_2"			"มาพร้อมกับ StatTrak™ คุณจึงไม่ต้องคอยนับในใจด้วยตนเอง"
+		"dealer_message_stattrack_3"			"มันมี StatTrak™ ด้วย แค่คุณเหนี่ยวไก เดี๋ยวมันก็คิดเลขให้เอง"
+		"dealer_message_stattrack_4"			"StatTrak™ คิดซะว่ามันเหมือนกระดานคะแนนสำหรับเก็บแต้มตอนคุณฆ่าคนละกัน"
+		"dealer_message_stattrack_6"			"อันนี้มาพร้อมกับ StatTrak™ สำหรับมืออาชีพที่ชอบทั้งการฆ่าและบันทึกสถิติ"
+		"dealer_message_stattrack_7"			"แน่นอนว่า มาพร้อม StatTrak™ ด้วยนะ"
+		"dealer_message_factory_new_0"			"อันนี้เพิ่งออกจากกล่องสด ๆ เลยนะ เชื่อสิ ฉันเพิ่งลองดมดูเอง"
+		"dealer_message_factory_new_1"			"ของใหม่จากโรงงาน มีกลิ่นอาวุธใหม่ด้วย"
+		"dealer_message_factory_new_2"			"อันนี้ยังไม่เคยถูกใช้งานเลย คุณจะเป็นคนแรกที่ได้เหนี่ยวไก"
+		"dealer_message_factory_new_3"			"อันนี้ออกมาจากสายการผลิตโดยตรง ไม่มีรอยสึกหรอเลย ถูกใจคุณแน่นอน"
+		"dealer_message_factory_new_4"			"อันนี้สะอาดเอี่ยมไร้ที่ติ ไม่มีรอย ไม่มีประวัติ อันนี้แหละที่รอให้คุณมารับไป"
+		"dealer_message_factory_new_5"			"ของใหม่จากโรงงาน ไม่เคยยิง อันนี้ไร้ที่ติเลย"
+		"dealer_message_covert_0"				"ลองเดาดูไหม? คุณเพิ่งถูกแจ็กพอตเข้าแล้ว ของอันนี้ไม่ใช่แค่หายาก แต่มันคืออาวุธระดับลึกลับเลยนะ"
+		"dealer_message_covert_1"				"ฉันทำงานนี้มากว่าสิบปีแล้วยังไม่เคยเห็นของแบบนี้โผล่มาเลย<!--.5-->คุณนี่มีรสนิยมดีจริง ๆ และยังโชคดีอีกด้วย"
+		"dealer_message_covert_2"				"ฉันรู้จักคนซื้อบางคนที่ถึงกับยอมขายแม่ตัวเองให้พวกกูลักเพื่อแลกกับการได้ของอันนี้มาเลยนะ เยี่ยมมากเลย"
+		"dealer_message_covert_3"				"ว้าว ตอนนี้ฉันเริ่มลังเลแล้วนะ รีบเอาไปก่อนที่ฉันจะเสียดายของในการขายครั้งนี้"
+		"dealer_message_covert_4"				"นั่นคืออาวุธระดับลึกลับเลยนะ ของแบบนี้คุณอาจจะได้เห็นในตลาดเสรีสักครั้งในชีวิต ถ้าคุณโชคดีนะ<!--.5-->ดูเหมือนว่า คุณจะเป็นผู้โชคดีคนนั้นนะ"
+		"dealer_message_covert_5"				"อันนี้คือเพชรยอดมงกุฎเลยนะ แต่คุณเองก็คงรู้ดี ปีที่แล้วฉันมีคนเตรียมซื้อไว้แล้ว แต่พวกเขาพลาดไป กลายเป็นคุณได้ประโยชน์แทนซะงั้น"
+		"dealer_message_covert_6"				"หายากนะเนี่ย อันนี้ของหายากจริง ๆ แล้วยังโผล่มาอยู่ตรงหน้าคุณพอดีอีกด้วย"
+		"dealer_message_covert_7"				"ฟังจากคนที่หาของพวกนี้เป็นอาชีพเถอะ ของอันนี้หายากมากจริง ๆ"
+		"dealer_message_covert_8"				"ฉันหวังว่าคุณจะเห็นคุณค่าของข้อเสนอที่คุณเพิ่งทำไปนะ นี่มันของระดับลึกลับจริง ๆ คุณเพิ่งซื้อของหายากระดับยูนิคอร์นเลยล่ะ"
+		"dealer_message_covert_9"				"คุณควรเอาของนี่ออกไปจากสายตาฉันและเก็บเข้าคลังของคุณ ก่อนที่ฉันจะเปลี่ยนใจนะ นี่มันของหายากที่สุดในบรรดาของหายากแล้ว"
+		"dealer_message_classified_0"				"อาวุธระดับลับเฉพาะ ปลอดหลักฐาน ไม่มีเอกสารผูกมัด ของอันนี้อยู่นอกบัญชีทั้งหมด"
+		"dealer_message_classified_1"				"อาวุธระดับลับเฉพาะ ไม่มีเอกสาร ของอันนี้ประวัติใสและไม่สามารถสืบย้อนกลับได้"
+		"dealer_message_classified_2"				"อาวุธระดับลับเฉพาะ ประวัติดำมืด ไม่มีเอกสาร ของที่ฉันกำลังถืออยู่นี้ ตามเทคนิคแล้วมันไม่ได้มีอยู่จริง"
+		"dealer_message_classified_3"				"อันนี้ขายแบบส่วนตัวเท่านั้น อาวุธระดับลับเฉพาะ หวังว่าคุณจะเอาไปใช้ให้เกิดประโยชน์นะ"
+		"dealer_message_classified_4"				"อาวุธระดับลับเฉพาะ ไม่มีซีเรียล ไม่มีเอกสาร"
+		"dealer_message_classified_5"				"อาวุธระดับลับเฉพาะ ขายผ่านช่องทางลับเท่านั้น ถูกลดสภาพ และปฏิเสธความเกี่ยวข้องได้เต็มที่ ฉันไม่เคยเห็นมันมาก่อนเลย"
+		"dealer_message_restricted_0"				"อาวุธระดับหวงห้าม กลไกภายในดีกว่า กระสุนเกาะกลุ่มกว่า เหนือกว่าอาวุธระดับมาตรฐานแน่นอน"
+		"dealer_message_restricted_1"				"อันนี้จัดอยู่ในอาวุธระดับหวงห้ามก็มีเหตุผลนะ มันทำงานได้ดีเกินไปสำหรับพลเรือนทั่วไป"
+		"dealer_message_restricted_2"				"อาวุธระดับหวงห้าม แน่นอน ของระดับคลาส III ชื่อ II และนี่แหละจะเป็นอาวุธอันดับหนึ่งใหม่ของคุณ"
+		"dealer_message_battle_scarred_0"		"มีรอยบุบนิดหน่อย แต่ก็ยังยิงได้ตรงอยู่"
+		"dealer_message_battle_scarred_1"		"มีรอยเล็กน้อย แต่นั่นก็หมายความว่ามันผ่านศึกมาแล้ว และยังรอดมาได้"
+		"dealer_message_battle_scarred_2"		"เก็บมาจากสนามรบ ใช้งานมาพอสมควรแล้ว แต่ก็ยังเป็นม้าศึกที่ไว้ใจได้"
+		"dealer_message_battle_scarred_3"		"ฉันไม่ได้มองว่ามันเป็นของมือสองจากสนามรบหรอกนะ ฉันมองว่ามันคือของที่ผ่านการพิสูจน์แล้วในสนามรบต่างหาก"
+		"dealer_message_battle_scarred_4"		"อันนี้ผ่านการใช้งานมาบ้าง มีรอยสึกภายนอกเล็กน้อย แต่ยังใช้งานได้ดี"
+		"dealer_message_minimal_wear_0"			"มีรอยถลอกเล็กน้อยบนอันนี้ มีรอยขีดข่วนอยู่บ้าง แต่ก็ยังใช้งานได้แน่นอน"
+		"dealer_message_minimal_wear_1"			"สภาพใหม่กริ๊บ จริง ๆ ก็เหมือนของใหม่ มีรอยถลอกเล็กน้อย"
+		"dealer_message_minimal_wear_2"			"มีรอยถลอกเล็กน้อย แค่ถลอกนิดหน่อย ไม่มีอะไรน่ากังวลหรอก"
+		"dealer_message_minimal_wear_3"			"อันนี้มีรอยถลอกเล็กน้อยเอง ถึงจะมีบุบนิดหน่อย แต่คุณไม่ผิดหวังแน่นอนถ้าได้เก็บเข้าคลังอาวุธของคุณ"
+		"dealer_message_minimal_wear_4"			"มันเคยผ่านสนามรบมาบ้างแล้ว ฉันไม่โกหกหรอก ของอันนี้เป็นเหมือนทหารผ่านศึกเลยล่ะ"
+		"dealer_message_usp-s_0"				"หมาตัวนี้ไม่เห่าเลย ไม่ดื้อและเงียบดีด้วย"
+		"dealer_message_usp-s_1"				"เงียบเชียบและระวังตัว บางครั้งอาจต้องถือเป็นความลับเล็ก ๆ ของเรา"
+		"dealer_message_usp-s_2"				"ทุกคนจะรับรู้เมื่อมันมาถึง แต่ไม่มีทางรู้ล่วงหน้า"
+		"dealer_message_usp-s_3"				"อันนี้เงียบเหมือนเสียงกระซิบเลย"
+		"dealer_message_item_desc_0"			"<!--.25-->อันนี้มีข้อความด้วย:<!--.25-->{s:flavor-text}<!--.25-->ไม่รู้ว่ามันหมายถึงอะไรก็เถอะ"
+		"dealer_message_item_desc_1"			"<!--.25-->อันนี้มาพร้อมข้อความเล็กน้อย:<!--.25-->{s:flavor-text}"
+
+		"dealer_message_addition_stattrak_0"	"<!--.25-->...และมาพร้อม StatTrak™ ด้วย"
+		"dealer_message_addition_stattrak_1"	"<!--.25-->โมดูล StatTrak™ ถูกติดตั้งไว้ล่วงหน้าแล้ว"
+		"dealer_message_addition_stattrak_2"	"<!--.25-->มาพร้อม StatTrak™ ที่จะคอยติดตามความหายนะทั้งหมดที่คุณสร้างขึ้น"
+		"dealer_message_addition_stattrak_3"	"<!--.25-->มี StatTrak™ ด้วยนะ"
+		"dealer_message_addition_stattrak_4"	"<!--.25-->มาพร้อม StatTrak™ ด้วย ดังนั้นคุณจะไม่มีวันลืมความทุกข์ระทมที่คุณสร้างขึ้นมา"
+
+		"dealer_message_addition_factory_new_0"	"<!--.25-->และนี่เป็นของใหม่จากโรงงานเลย ยังไม่ใช้ยิง"
+		"dealer_message_addition_factory_new_1"	"<!--.25-->และมันเป็นของใหม่จากโรงงาน สภาพดีเยี่ยม"
+		"dealer_message_addition_factory_new_2"	"<!--.25-->ส่งตรงจากห้องนิรภัย ของใหม่จากโรงงานเลย"
+		"dealer_message_addition_factory_new_3"	"<!--.25-->อันนี้ของใหม่จากโรงงาน ไม่เคยยิงเลย"
+
+		"system_dealer_left_chat_0"				"ตัวแทนจำหน่ายออกจากแช็ตของคุณแล้ว"
+		"system_dealer_join_chat_0"				"ข้อเสนอนักค้าอาวุธสำหรับ {s:collection}<!--1.25-->เชื่อมต่อกับตัวแทนจำหน่ายแล้ว"
+		"system_user_reject_offer_0"			"{s:user-name} ปฏิเสธข้อเสนอ"
+		
+
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -46326,21 +46729,21 @@
  		"mission_directive_progress:p{mission-points}"	"{d:mission-progress}/<b>{d:mission-points}</b> {s:action}"
 
 
-		"quest_11000_var_desc:p{mission-points}"	  	"ทำการสังหารหนึ่งครั้งด้วย {s:item1} ในโหมด <b>{s:gamemode}: {s:location}</b>"
+		"quest_11000_var_desc:p{mission-points}"	  	"ทำการสังหารด้วย {s:item1} ในโหมด <b>{s:gamemode}: {s:location}</b>"
 		"quest_11000_var_partial" 						"...ด้วย {s:item1}"
-		"quest_11000_var_ingame:p{mission-points}"	  	"ทำการสังหารหนึ่งครั้งด้วย {s:item1}"
+		"quest_11000_var_ingame:p{mission-points}"	  	"ทำการสังหารด้วย {s:item1}"
 
-		"quest_11001_var_desc:p{mission-points}"	 	"ทำการสังหารหนึ่งครั้งด้วย {s:item1} ในโหมด <b>{s:gamemode}: {s:location}</b>"
+		"quest_11001_var_desc:p{mission-points}"	 	"ทำการสังหารด้วย {s:item1} ในโหมด <b>{s:gamemode}: {s:location}</b>"
 		"quest_11001_var_partial"	 					"...ด้วย {s:item1}"
-		"quest_11001_var_ingame:p{mission-points}"	 	"ทำการสังหารหนึ่งครั้งด้วย {s:item1}"	
+		"quest_11001_var_ingame:p{mission-points}"	 	"ทำการสังหารด้วย {s:item1}"	
 
-		"quest_11002_var_desc:p{mission-points}"	 	"ทำการสังหารหนึ่งครั้งด้วย {s:item1} ในโหมด <b>{s:gamemode}: {s:location}</b>"
+		"quest_11002_var_desc:p{mission-points}"	 	"ทำการสังหารด้วย {s:item1} ในโหมด <b>{s:gamemode}: {s:location}</b>"
 		"quest_11002_var_partial"	 					"...ด้วย {s:item1}"
-		"quest_11002_var_ingame:p{mission-points}"	 	"ทำการสังหารหนึ่งครั้งด้วย {s:item1}"	
+		"quest_11002_var_ingame:p{mission-points}"	 	"ทำการสังหารด้วย {s:item1}"	
 
-		"quest_11003_var_desc:p{mission-points}"	 	"ทำการสังหารหนึ่งครั้งด้วย {s:item1} ในโหมด <b>{s:gamemode}: {s:location}</b>"
+		"quest_11003_var_desc:p{mission-points}"	 	"ทำการสังหารด้วย {s:item1} ในโหมด <b>{s:gamemode}: {s:location}</b>"
 		"quest_11003_var_partial"	 					"...ด้วย {s:item1}"
-		"quest_11003_var_ingame:p{mission-points}"	 	"ทำการสังหารหนึ่งครั้งด้วย {s:item1}"	
+		"quest_11003_var_ingame:p{mission-points}"	 	"ทำการสังหารด้วย {s:item1}"	
 
 		"quest_11004_var_desc:p{mission-points}"	 	"ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
 		"quest_11004_var_ingame:p{mission-points}"		"ชนะรอบ"
@@ -46351,9 +46754,9 @@
 		"quest_11006_var_desc:p{mission-points}"	 	"ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
 		"quest_11006_var_ingame:p{mission-points}"		"ชนะรอบ"
 
-		"quest_11007_var_desc:p{mission-points}"	 	"ทำการสังหารหนึ่งครั้งด้วย {s:item1} ในโหมด <b>{s:gamemode}: {s:location}</b>"
+		"quest_11007_var_desc:p{mission-points}"	 	"ทำการสังหารด้วย {s:item1} ในโหมด <b>{s:gamemode}: {s:location}</b>"
 		"quest_11007_var_partial"	 					"...ด้วย {s:item1}"
-		"quest_11007_var_ingame:p{mission-points}"	 	"ทำการสังหารหนึ่งครั้งด้วย {s:item1}"	
+		"quest_11007_var_ingame:p{mission-points}"	 	"ทำการสังหารด้วย {s:item1}"	
 
 		"quest_11008_var_desc:p{mission-points}"	 	"ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
 		"quest_11008_var_ingame:p{mission-points}"		"ชนะรอบ"
@@ -46361,9 +46764,9 @@
 		"quest_11009_var_desc:p{mission-points}"	 	"ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
 		"quest_11009_var_ingame:p{mission-points}"		"ชนะรอบ"
 
-		"quest_11010_var_desc:p{mission-points}"	 	"ทำการสังหารหนึ่งครั้งด้วย {s:item1} ในโหมด <b>{s:gamemode}: {s:location}</b>"
+		"quest_11010_var_desc:p{mission-points}"	 	"ทำการสังหารด้วย {s:item1} ในโหมด <b>{s:gamemode}: {s:location}</b>"
 		"quest_11010_var_partial"	 					"...ด้วย {s:item1}"
-		"quest_11010_var_ingame:p{mission-points}"	 	"ทำการสังหารหนึ่งครั้งด้วย {s:item1}"
+		"quest_11010_var_ingame:p{mission-points}"	 	"ทำการสังหารด้วย {s:item1}"
 		
 		"quest_11011_var_desc:p{mission-points}"	 	"ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
 		"quest_11011_var_ingame:p{mission-points}"		"ชนะรอบ"
@@ -46380,8 +46783,8 @@
 		"quest_11015_var_desc:p{mission-points}"	 	"ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
 		"quest_11015_var_ingame:p{mission-points}"		"ชนะรอบ"
 
-// crow_mask_48593_comment
-// crow_mask_48594_comment
+// crow_mask_48605_comment
+// crow_mask_48606_comment
 }
 
 

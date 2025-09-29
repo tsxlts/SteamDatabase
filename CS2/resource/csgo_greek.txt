@@ -2334,6 +2334,9 @@
 		"Econ_Revolving_Loot_List"				"Περιέχει ένα από τα παρακάτω αντικείμενα:"
 		"Econ_Revolving_Loot_List_Single"		"Ανοίξτε και λάβετε ένα από τα ακόλουθα"
 		"Econ_Revolving_Loot_List_Rental"		"<img src='file://{images}/icons/ui/hourglass.svg' class='popup-decodable-lootlist-single-icon'/> Νοικιάστε κάθε όπλο (εξαιρείται το υπερβολικά σπάνιο αντικείμενο) σε αυτό το κιβώτιο για 7 ημέρες "
+		"Econ_Revolving_Loot_SecureConnectionLine"	"Μπορεί να αγοραστεί μόνο ένα αντικείμενο από αυτό το Τερματικό. Αυτό το Τερματικό θα παρουσιάσει πολλές προσφορές για τα ακόλουθα αντικείμενα:"
+
+		
 		"Econ_Revolving_Loot_List_Rare_Item"	"ή ένα υπερβολικά σπάνιο αντικείμενο!"
 		"Exceedingly_Rare_Item"					"★ Εξαιρετικά σπάνιο αντικείμενο ★"
 
@@ -2370,6 +2373,7 @@
 		"Item_Crafted"							" Ο παίκτης %s1 εκπλήρωσε ένα συμβόλαιο και έλαβε: %s2"
 		"Item_Traded"							" Ο παίκτης %s1 πήρε από ανταλλαγή: %s2"
 		"Item_Purchased"						" Ο παίκτης %s1 αγόρασε: %s2"
+		"Item_PurchasedVolatile"				" %s1 αγόρασε από έμπορο όπλων: %s2"
 		"Item_FoundInCrate"						" Ο παίκτης %s1 ξεκλείδωσε ένα κιβώτιο και βρήκε: %s2"
 		"Item_Gifted"							" Ο παίκτης %s1 αποδέχθηκε ένα δώρο: %s2"
 		"Item_Earned"							" Ο παίκτης %s1 κέρδισε: %s2"
@@ -2394,6 +2398,7 @@
 		"NewItemMethod_Crafted"			"Κατασκευάσατε:"
 		"NewItemMethod_Traded"			"Πήρατε από ανταλλαγή:"
 		"NewItemMethod_Purchased"		"Αγοράσατε:"
+		"NewItemMethod_PurchasedVolatile" "Αγοράσατε από έμπορο όπλων:"
 		"NewItemMethod_FoundInCrate"	"Ανοίξατε:"
 		"NewItemMethod_Rental"			"Νοικιάσατε:"
 		"NewItemMethod_XpShopRedeem"	"Αποκτήσατε από το Οπλοστάσιο:"
@@ -2453,6 +2458,7 @@
 		"ItemHistory_Action_Drop"										"Κερδήθηκε νέος βαθμός και αποκτήθηκε αντικείμενο"
 		"ItemHistory_Action_ManualCreate"								"Δημιουργήθηκε από την Υποστήριξη Counter-Strike"
 		"ItemHistory_Action_Purchase"									"Αγοράστηκε από το κατάστημα"
+		"ItemHistory_Action_PurchaseVolatileContainerItem"				"Αγοράστηκε από έμπορο όπλων"
 		"ItemHistory_Action_AutoGrantItem"								"Κερδήθηκε"
 		"ItemHistory_Action_CrossGameAchievement"						"Αποκτήθηκε από ξεκλείδωμα επιτεύγματος σε διαφορετικό παιχνίδι"
 		"ItemHistory_Action_AwardGift_Receiver"							"Λήφθηκε δώρο"
@@ -2635,6 +2641,7 @@
 		"Attrib_MatchWins"							"Ανταγωνιστικές νίκες σε χάρτες επιχείρησης: %s1"
 		"Attrib_HasSilencer"						"Σιγαστήρας"
 		"Attrib_HasBurstMode"						"Επιλογή 3ων σφαιρών ανά βολή"
+		"Attrib_SecureConnectionLine"				"Κιβώτιο σειράς #%s1"
 		"Attrib_SupplyCrateSeries"					"Κιβώτιο σειράς #%s1"
 		"Attrib_KillEater"							"Αυτό το αντικείμενο χρησιμοποιεί τεχνολογία StatTrak™, που ανιχνεύει ορισμένα στατιστικά όταν το χειρίζεται ο κάτοχός του."
 		"Attrib_ReferencedItem"						"Περιέχει: %s1"
@@ -2670,6 +2677,9 @@
 		"Attrib_OperationBonusXP"					"Επιπλέον κέρδος επιχείρησης: +%s1 εμπειρία"
 		"Attrib_IssueDate"							"Ημερομηνία έκδοσης: %s1"
 		"Attrib_ExpirationDate"						"Ημερομηνία λήξης: %s1"
+		"Attrib_PurchaserAccountID"					"Αυτό το αντικείμενο έχει ένα πιστοποιητικό αρχικού κατόχου."
+		"Attrib_PurchaserAccountID_title"			"Πιστοποιητικό αρχικού κατόχου"
+
 		"Notify_KeychainRemoveTool_ChargesUseToRemove"	"Διαθέσιμες Αφαιρέσεις Γουριού: {d:item_count}<br>Η αφαίρεση ενός γουριού καταναλώνει μία Αφαίρεση Γουριού."
 		"Attrib_KeychainRemoveTool_Charges"			"Διαθέσιμες Αφαιρέσεις Γουριού: {d:item_count}"
 		"Attrib_SpraysRemaining"					"Υπόλοιπες φορτίσεις: %s1"
@@ -4347,6 +4357,16 @@
 		"CSGO_crate_sticker_pack_warhammer_xenos_capsule_desc"			"Φέρτε τον τρόμο των Xenos με την κάψουλα αυτοκόλλητων Warhammer 40.000 Xenos, που κυκλοφόρησε τον Μάιο του 2025."
 		"coupon_warhammer_xenos_sticker_capsule"						"Κάψουλα αυτοκόλλητων Warhammer 40.000 Xenos"
 		
+		"CSGO_crate_sticker_pack_sugarface2_capsule"	   				"Συλλογή αυτοκόλλητων Sugarface 2"
+		"CSGO_crate_sticker_pack_sugarface2_capsule_desc"				"Αυτή η συλλογή αυτοκόλλητων περιέχει διάφορα αυτοκόλλητα από με θέμα το Sugarface και κυκλοφόρησε τον Σεπτέμβριο του 2025."
+		"CSGO_crate_sticker_pack_sugarface2_short"						"Αυτοκόλλητα Sugarface 2"
+		
+		"CSGO_crate_sticker_pack_community2025_capsule"	    			"Συλλογή αυτοκόλλητων κοινότητας 2025"
+		"CSGO_crate_sticker_pack_community2025_capsule_desc"			"Αυτή η συλλογή περιέχει διάφορα αυτοκόλλητα και κυκλοφόρησε τον Σεπτέμβριο του 2025."
+		"CSGO_crate_sticker_pack_community_2025_short"					"Αυτοκόλλητα κοινότητας 2025"
+		
+		"CSGO_crate_community_36"				"Σφραγισμένο Τερματικό Genesis"
+		"CSGO_crate_community_36^volatile"		"Ενεργό Τερματικό Genesis"
 		"SprayKit_vcap1_ace_01"		"Ace"
 "SprayKit_desc_vcap1_ace_01"	" "
 "SprayKit_vcap1_banana"		"Banana"
@@ -5445,6 +5465,7 @@
 		"CSGO_set_timed_drops_warm"				"Η συλλογή Radiant"
 		"CSGO_set_timed_drops_neutral"			"Η συλλογή Boreal"
 		"CSGO_set_timed_drops_cool"				"Η συλλογή Ascent"
+		"CSGO_set_community_36"					"Η Συλλογή Genesis"
 		/////////////////
 		// lootlist override strings
 		//////////////////
@@ -28981,7 +29002,49 @@
 		"StickerKit_warhammer_decals_paper_tau_empire_2"				"T'au Empire 2"
 		"StickerKit_warhammer_decals_paper_tyranids_1"					"Tyranids 1"
 		"StickerKit_warhammer_decals_paper_tyranids_2"					"Tyranids 2"
-"PatchKit_patch_banana"            "Crazy Banana"
+		//Sugarface 2 Sticker Capsule
+		
+		"StickerKit_sugarface2_paper_clavis"							"Clavis"
+		"StickerKit_sugarface2_paper_lorena"							"Lorena"
+		"StickerKit_sugarface2_paper_lucas"								"Lucas"
+		"StickerKit_sugarface2_holo_clavis"								"Clavis (Ολογρ.)"
+		"StickerKit_sugarface2_holo_lorena"								"Lorena (Ολογρ.)"
+		"StickerKit_sugarface2_holo_lucas"								"Lucas (Ολογρ.)"
+		"StickerKit_sugarface2_foil_clavis"								"Clavis (Μεταλ.)"
+		"StickerKit_sugarface2_foil_lorena"								"Lorena (Μεταλ.)"
+		"StickerKit_sugarface2_foil_lucas"								"Lucas (Μεταλ.)"
+		//2025 Community Sticker Capsule
+		
+		"StickerKit_community_2025_paper_candy_apples"					"Candy Apples"
+		"StickerKit_community_2025_paper_cubix_connexion"				"Cubix Connexion"
+		"StickerKit_community_2025_paper_eyes_of_farlow"				"Eyes of Farlow"
+		"StickerKit_community_2025_paper_fade_mangos"					"Fade Mangos"
+		"StickerKit_community_2025_paper_gloves_on"						"Gloves On"
+		"StickerKit_community_2025_paper_lock_in"						"Lock In"
+		"StickerKit_community_2025_paper_mimicapsule"					"Mimicapsule"
+		"StickerKit_community_2025_paper_pop_pup"						"Pop Pup"
+		"StickerKit_community_2025_paper_pots"							"POTS"
+		"StickerKit_community_2025_paper_sent_with_love"				"Sent With Love"
+		"StickerKit_community_2025_paper_skelly_stab"					"Skelly Stabby"
+		"StickerKit_community_2025_paper_vice_cursor"					"Vice Cursor"
+		"StickerKit_community_2025_glitter_ct_tracks"					"CT Tracks (Γκλίτερ)"
+		"StickerKit_community_2025_glitter_overloaded"					"Overloaded (Γκλίτερ)"
+		"StickerKit_community_2025_glitter_t_tracks"					"T Tracks (Γκλίτερ)"
+		"StickerKit_community_2025_holo_bomb_planted"					"Bomb Planted (Ολογρ.)"
+		"StickerKit_community_2025_holo_chrome_dome"					"Chrome Dome (Ολογρ.)"
+		"StickerKit_community_2025_holo_cutie"							"Cutie (Ολογρ.)"
+		"StickerKit_community_2025_holo_evidence"						"Evidence (Ολογρ.)"
+		"StickerKit_community_2025_holo_froggles"						"Froggles (Ολογρ.)"
+		"StickerKit_community_2025_foil_aint_a_rental"					"Ain't A Rental (Μεταλ.)"
+		"StickerKit_community_2025_foil_eyes_sky"						"Eyes In The Sky (Μεταλ.)"
+		"StickerKit_community_2025_foil_good_as_new"					"Good As New (Μεταλ.)"
+		"StickerKit_community_2025_foil_queen_ava"						"Queen Ava (Μεταλ.)"
+		"StickerKit_community_2025_foil_hands_off"						"Hands Off (Μεταλ.)"
+		"StickerKit_community_2025_foil_king_crasswater"				"King Crasswater (Μεταλ.)"
+		"StickerKit_community_2025_lenticular_bullhit"					"BullHit (Αμφίκυρτο)"
+		"StickerKit_community_2025_lenticular_digistrike"				"Digi-Strike (Αμφίκυρτο)"
+		"StickerKit_community_2025_lenticular_mvp"						"Neon MVP (Αμφίκυρτο)"
+		"PatchKit_patch_banana"            "Crazy Banana"
 		"PatchKit_desc_patch_banana"       "<i>Πράκτορας για κλίμακα</i>"
 		"PatchKit_patch_boss"              "The Boss"
 		"PatchKit_desc_patch_boss"         "<i>Βαρύ βαρύ του πράκτορα το στέμμα</i>"
@@ -32979,6 +33042,7 @@
 		"PaintKit_p90_boost_blue"							"Έχει βαφεί ειδικά με ένα μπλε και πράσινο σχέδιο με γωνίες.\n\n<i>Φαίνεσαι όπως νιώθεις</i>"
 		"PaintKit_p90_boost_blue_Tag"						"Wave Breaker"
 		
+		"PaintKit_p2k_fractal"								"Έχει βαφεί ειδικά σε μεταλλικό γκρι χρώμα με σχέδια φράκταλ και έχει πορτοκαλί λεπτομέρειες στο φινίρισμα.\n\n<i>&gt;&gt;ΠΕΙΡΑΜΑΤΑ ΥΦΗΣ ΦΙΝΙΡΙΣΜΑΤΟΣ ΟΠΛΩΝ, ΚΑΤΑΧΩΡΗΣΗ ΠΡΩΤΗ&lt;&lt;</i>"
 		"PaintKit_p2k_fractal_Tag"							"Sure Grip"
 		
 		"PaintKit_mag7_ammo_box"							"Έχει βαφεί ειδικά για να μοιάζει με ένα κιβώτιο πυρομαχικών.\n\n<i>Κρατήστε την απόδειξη</i>"
@@ -33001,6 +33065,57 @@
 		
 		"PaintKit_m4a4_green_camo"							"Έχει βαφεί ειδικά με ένα πράσινο μοτίβο παραλλαγής.\n\n<i>Αυξήστε το ψηφιακό σας αποτύπωμα</i>"
 		"PaintKit_m4a4_green_camo_Tag"						"Choppa"
+
+// END COMMUNITY_35
+
+// COMMUNITY_36
+
+		"PaintKit_mp7_smoking_kills_v2"					"Έχει βαφεί ειδικά με ένα πολύχρωμο σχέδιο που απεικονίζει μια γυναίκα με γυαλιά να καπνίζει ένα τσιγάρο.\n\n<i>«Μπορούμε να το πάμε αργά ή γρήγορα. Εσύ αποφασίζεις.»</i>"
+		"PaintKit_mp7_smoking_kills_v2_Tag"				"Smoking Kills" 
+		
+		"PaintKit_m4a4_skrrrt_green"					"Έχει βαφεί ειδικά με μια νέον πράσινη βάση και στο φινίρισμά του υπάρχουν πλασματικά λογότυπα που θυμίζουν την κουλτούρα του drift και του «πειράγματος» αυτοκινήτων.\n\n<i>Εκεί που το «Globoil 1 Synthetics» συναντά το «ENTRI PERFORMANCE».</i>"
+		"PaintKit_m4a4_skrrrt_green_Tag"				"Full Throttle" 
+		
+		"PaintKit_ak47_puffer_custom"					"Έχει βαφεί ειδικά για να έχει την εμφάνιση και αίσθηση ενός φουσκωτού ασπρόμαυρου μπουφάν και έχει φινιριστεί με χρυσές αποχρώσεις.\n\n<i>Κυνήγα τη δύναμη, άρπαξέ τη και κράτα τη.</i>"
+		"PaintKit_ak47_puffer_custom_Tag"				"The Oligarch" 
+		
+		"PaintKit_ump45_illumina_v2"					"Αυτή η ειδική βαφή διαθέτει εναλλασσόμενες μπλε και μαύρες λωρίδες.\n\n<i>Στο κενό</i>"
+		"PaintKit_ump45_illumina_v2_Tag"				"Continuum" 
+		
+		"PaintKit_nova_ocular"							"Αυτή η ειδική βαφή διαθέτει απλά γεωμετρικά σχήματα και ρεαλιστικές λεπτομέρειες, εμπνευσμένες από τον αφηρημένο σουρεαλισμό και τα έργα καλλιτεχνών του 20ού αιώνα.\n\n<i>Ματιαστήκαμε.</i>"
+		"PaintKit_nova_ocular_Tag"						"Ocular"
+		
+		"PaintKit_mac10_kamicatze"						"Έχει βαφεί ειδικά με μια αγριεμένη γάτα και έναν στόχο στο πίσω μέρος του κορμού.\n\n<i>Η γατούλα έβγαλε νύχια…</i>"
+		"PaintKit_mac10_kamicatze_Tag"					"Cat Fight" 
+		
+		"PaintKit_glock_mirror_maze"					"Έχει βαφεί ειδικά για να μοιάζει με ένα μωσαϊκό από καθρέφτες.\n\n<i>Παγιδευμένοι στις σκέψεις σας</i>"
+		"PaintKit_glock_mirror_maze_Tag"				"Mirror Mosaic" 
+		
+		"PaintKit_dual_elite_biblical_angel"			"Έχουν βαφεί ειδικά με μάτια στις λαβές και σχέδια του ουρανού στα κλείστρα.\n\n<i>Φόρα κάνα ματάκι ή… πέντε.</i>"
+		"PaintKit_dual_elite_biblical_angel_Tag"		"Angel Eyes" 
+		
+		"PaintKit_p250_bullfrog"						"Έχει βαφεί ειδικά με λογότυπα αγώνων ταχύτητας σε χάλκινο και μαύρο.\n\n<i>Καλέ πώς τρέχεις έτσι γρήγορα;</i>"
+		"PaintKit_p250_bullfrog_Tag"					"Bullfrog" 
+		
+		"PaintKit_mp5sd_chrome"							"Έχει βαφεί ειδικά σε μεταλλικό γκρι χρώμα με κόκκινες λεπτομέρειες στο φινίρισμα.\n\n<i>ΜΕΙΝΕΤΕ ΣΥΓΚΕΝΤΡΩΜΕΝΟΙ // ΑΛΗΘΙΝΟΣ ΣΤΟΧΟΣ</i>"
+		"PaintKit_mp5sd_chrome_Tag"						"Focus" 
+		
+		"PaintKit_scar_refraction"						"Έχει εφαρμοστεί ένα μπλε και μοβ μοτίβο διαβάθμισης.\n\n<i>«Μεγάλο όπλο για ένα τόσο μικρό κλουβί…»</i>"
+		"PaintKit_scar_refraction_Tag"					"Caged" 
+		
+		"PaintKit_p2000_deep_red"						"Έχει βαφεί ειδικά με ένα σχέδιο σε ανθρακί και βαθύ κόκκινο χρώμα.\n\n<i>Εκμεταλλευτείτε την πτώση των εχθρών σας.</i>"
+		"PaintKit_p2000_deep_red_Tag"					"Red Wing" 
+		
+		"PaintKit_mp9_vinyl"							"Έχει βαφεί ειδικά για να μοιάζει με δίσκο βινυλίου.\n\n<i>Απευθείας κλασικό</i>"
+		"PaintKit_mp9_vinyl_Tag"						"Broken Record" 
+		
+		"PaintKit_mag7_circle_copper"					"Αυτή η ειδική βαφή δίνει την εμφάνιση ενός κρουστικού κύματος που προέρχεται από τη βίδα πάνω από τη σκανδάλη.\n\n<i>Δύο κόμμα μηδέν</i>"
+		"PaintKit_mag7_circle_copper_Tag"				"MAGnitude" 
+		
+		"PaintKit_m4a1s_quick_liquidation"				"Η σκούρα βάση του και οι προσεκτικά επιλεγμένες κόκκινες και μπλε λεπτομέρειες κάνουν αυτό το ειδικά βαμμένο M4A1-S να φαίνεται σαν να λάμπει κάτω από το φως του περιβάλλοντος.\n\n<i>Ήσυχη αντανάκλαση</i>"
+		
+		"PaintKit_aug_trigger_discipline_velco"			"Έχει εφαρμοστεί ένα μπλε ισομετρικό μοτίβο με πορτοκαλί λεπτομέρειες στο φινίρισμα.\n\n<i>Η υπομονή ανταμείβει.</i>"
+
 // END COMMUNITY_36
 
 // OVERPASS_2024
@@ -37206,6 +37321,15 @@
 		"PANOHUD_Spectate_Navigation_New_Cameraman_On"		"[{s:bind_radio}] Ενεργοποίηση εικονολήπτη"
 		"PANOHUD_Spectate_Navigation_ToggleSpec"			"[{s:bind_drop}] Μικρός βαθμολογικός πίνακας"
 		"PANOHUD_Spectate_Navigation_ToggleOverview"		"[{s:bind_duck}] Επισκόπηση"
+		"PANOHUD_Spectate_Navigation_PlayHighlight"			"[{s:bind_drop}] Αναπαραγωγή καλύτερης στιγμής"
+		"PANOHUD_Spectate_Navigation_CopyHighlightAndClose"	"[{s:bind_drop}] Αντιγραφή στο πρόχειρο και κλείσιμο"
+		"PANOHUD_Spectate_Navigation_CopyHighlightURL"		"[{s:bind_drop}] Αντιγραφή URL καλύτερης στιγμής"
+		"PANOHUD_Spectate_Vanity_Loadout_Hide"				"[{s:bind_lookatweapon}] Απόκρυψη εξόπλισης"
+		"PANOHUD_Spectate_Vanity_Loadout_Show"				"[{s:bind_lookatweapon}] Άνοιγμα εξόπλισης"
+		"PANOHUD_Spectate_Vanity_Loadout_Close_Popup"		"[ESC] Κλείσιμο αναδυόμενου παραθύρου"
+
+
+	
 		"PANOHUD_GhostBecomeSpectator"						"Πατήστε [%s1] για να γίνετε θεατής"
 
 		"SFUIHUD_Spectate_You_Are_Dead"				"<font color=\"%s1\">Παρακολουθείτε %s2</font>"
@@ -38118,6 +38242,9 @@
 		"SFUI_HUDWeaponRarityColor"			"Λάμψη όπλων με χρώμα σπανιότητας"
 		"SFUI_HUDWeaponRarityColor_desc"	"Ενεργοποιήστε αυτήν την επιλογή για να κάνετε τα εικονίδια των όπλων στη διεπαφή να λάμπουν με το χρώμα της σπανιότητάς τους."
 
+		"SFUI_HUDSpecColorOverride"			"Παράκαμψη χρώματος HUD παρακολούθησης"
+		"SFUI_HUDSpecColorOverride_desc"	"Όταν παρακολουθείτε άλλον παίκτη, το χρώμα της διεπαφής χρήστη θα ταιριάζει με το χρώμα της ομάδας του σε χαλαρούς τύπους παιχνιδιού και με το χρώμα του συμπαίκτη του σε ανταγωνιστικούς τύπους παιχνιδιού." 
+
 		"SFUI_Settings_High_Dynamic_Range"	"Δυναμική φωτοσκίαση"
 		"SFUI_Settings_Very_High"			"ΠΟΛΥ ΥΨΗΛΗ"
 		"SFUI_Settings_High"				"ΥΨΗΛΗ"
@@ -38956,10 +39083,13 @@
 
 		"SFUI_OfficialDatacenterID_1"		"Η.Π.Α., Σιάτλ"
 		"SFUI_OfficialDatacenterID_2"		"Η.Π.Α., Βιρτζίνια"
+		"SFUI_OfficialDatacenterID_3"		"Ε.Ε., Φρανκφούρτη"
 		"SFUI_OfficialDatacenterID_4"		"Νότια Κορέα"
 		"SFUI_OfficialDatacenterID_5"		"Σιγκαπούρη"
 		"SFUI_OfficialDatacenterID_6"		"Ηνωμένα Αραβικά Εμιράτα"
 		"SFUI_OfficialDatacenterID_7"		"Αυστραλία"
+		"SFUI_OfficialDatacenterID_8"		"Ε.Ε., Στοκχόλμη"
+		"SFUI_OfficialDatacenterID_9"		"Ε.Ε., Βιέννη"
 		"SFUI_OfficialDatacenterID_10"		"Βραζιλία"
 		"SFUI_OfficialDatacenterID_11"		"Νότια Αφρική"
 		"SFUI_OfficialDatacenterID_12"		"Κίνα, Σαγκάη"
@@ -38971,15 +39101,20 @@
 		// "SFUI_OfficialDatacenterID_18"	"TBD"
 		"SFUI_OfficialDatacenterID_19"		"Ιαπωνία"
 		"SFUI_OfficialDatacenterID_20"		"Χονγκ Κονγκ"
+		"SFUI_OfficialDatacenterID_21"		"Ε.Ε., Μαδρίτη"
 		"SFUI_OfficialDatacenterID_22"		"Η.Π.Α., Καλιφόρνια"
 		"SFUI_OfficialDatacenterID_23"		"Η.Π.Α., Ατλάντα"
 		"SFUI_OfficialDatacenterID_24"		"Χονγκ Κονγκ"
 		"SFUI_OfficialDatacenterID_25"		"Κίνα, Τιεντζίν"
 		"SFUI_OfficialDatacenterID_26"		"Ινδία, Τσενάι"
 		"SFUI_OfficialDatacenterID_27"		"Η.Π.Α., Σικάγο"
+		"SFUI_OfficialDatacenterID_28"		"Ε.Ε., Βαρσοβία"
+		"SFUI_OfficialDatacenterID_29"		"Ε.Ε., Άμστερνταμ"
 		// "SFUI_OfficialDatacenterID_30"		"TBD"
 		"SFUI_OfficialDatacenterID_31"		"ΗΠΑ, Ντάλας"
-"SFUI_OfficialDatacenterID_34"		"Σάο Πάολο"
+		// "SFUI_OfficialDatacenterID_32"		"TBD"
+		"SFUI_OfficialDatacenterID_33"		"Ε.Ε., Ελσίνκι"
+		"SFUI_OfficialDatacenterID_34"		"Σάο Πάολο"
 		// "SFUI_OfficialDatacenterID_35"		"US West"
 		// "SFUI_OfficialDatacenterID_36"		"Germany"
 		// "SFUI_OfficialDatacenterID_37"		"Hong Kong"
@@ -38989,9 +39124,12 @@
 		// "SFUI_OfficialDatacenterID_41"		"TBD"
 		"SFUI_OfficialDatacenterID_42"		"Κίνα, Τσενγκντού"
 		"SFUI_OfficialDatacenterID_43"		"Η.Π.Α., Νέα Υόρκη"
+		"SFUI_OfficialDatacenterID_44"		"Ε.Ε., Ελσίνκι"
 		"SFUI_OfficialDatacenterID_45"		"Ηνωμένο Βασίλειο"
 		"SFUI_OfficialDatacenterID_49"		"Κίνα, Γκουανγκντόνγκ"
 		"SFUI_OfficialDatacenterID_51"		"Κίνα, Πεκίνο"
+		"SFUI_OfficialDatacenterID_52"		"Ε.Ε., Φάλκενσταϊν"
+
 		"SFUI_UserAlert_HighPings"			"Το καλύτερο ping σας σε επίσημους διακομιστές είναι %s1 ms."
 		"SFUI_UserAlert_Unreachable"		"Αποτυχία επικοινωνίας με επίσημους διακομιστές."
 		"SFUI_UserAlert_Unreachable_NoConfig"	"Αδυναμία ανάκτησης διαμόρφωσης δικτύου από HTTPS. Ελέγξτε τη σύνδεσή σας στο διαδίκτυο και τη διαμόρφωση του τείχους προστασίας σας."
@@ -43425,6 +43563,7 @@
 		"inv_context_useitem"				"Χρήση αντικειμένου"
 		"inv_context_usespray"				"Άνοιγμα & εξόπλιση"
 		"inv_context_open_package"			"Ξεκλείδωμα κιβωτίου"
+		"inv_context_open_terminal"			"Αποσφράγιση Τερματικού"
 		"inv_context_open_watch_panel_pickem"	"Παίξτε την πρόκληση Pick'Em"
 		"inv_context_view_tournament_journal" "Προβολή προκλήσεων νομίσματος"
 		"inv_context_open_season_stats_panel" "Προβολή στατιστικών σεζόν"
@@ -43535,6 +43674,12 @@
 		"popup_title_stattrack_swap"		"Νέα τιμή StatTrak™"
 		"popup_title_quest_reward"			"Ανταμοιβή"
 		"popup_title_xpshopredeem"			"Αποκτήθηκε από το Οπλοστάσιο"
+
+		"popup_control_tooltip_rotate_weapon"		"Σύρετε το ποντίκι για περιστροφή όπλου"
+		"popup_control_tooltip_rotate_sticker"		"Κουνήστε τη ροδέλα του ποντικιού ενώ ο δείκτης βρίσκεται πάνω από ένα αυτοκόλλητο για να το περιστρέψετε"
+		"popup_control_tooltip_move_sticker"		"Κάντε κλικ και σύρετε ένα αυτοκόλλητο για να το μετακινήσετε πάνω στο όπλο"
+		"popup_control_tooltip_move_keychain"		"Κάντε κλικ και σύρετε ένα γούρι για να το μετακινήσετε πάνω στο όπλο"
+
 
 		"acknowledge_gifter"				"Δώρο από: {s:name}"
 		"acknowledge_quest"					"Ανταμοιβή αποστολής"
@@ -43647,12 +43792,15 @@
 		"popup_decodeable_xray_desc"	"<b>{s:itemname}</b>"
 		"popup_decodeable_desc_graffiti"	"Άνοιγμα <b>{s:itemname}</b>"
 		"popup_decodeable_desc_fantoken"	"Ενεργοποίηση <b>{s:itemname}</b>"
+		"popup_decodeable_desc_terminal"	"Αποσφράγιση <b>{s:itemname}</b>"
 		"popup_decodeable_warning"		"Το κιβώτιο αυτό μπορεί να ανοιχθεί μόνο μία φορά"
 		"popup_decodeable_warning_graffiti"		"Αυτό το γκράφιτι μπορεί να ξεσφραγιστεί μόνο μία φορά"
 		"popup_decodeable_warning_fantoken"		"Αυτό το αντικείμενο μπορεί να ενεργοποιηθεί μόνο μία φορά"
+		"popup_decodeable_warning_terminal"		"Αφού αποσφραγιστεί, το Τερματικό Uplink γίνεται μη ανταλλάξιμο και μη εμπορεύσιμο."
 		"popup_decodeable_button"		"Ξεκλείδωμα κιβωτίου"
 		"popup_decodeable_button_graffiti"	"Ξεσφράγισμα γκράφιτι"
 		"popup_decodeable_button_fantoken"	"Ενεργοποίηση αντικειμένου"
+		"popup_decodeable_button_terminal"	"Αποσφράγιση Τερματικού"
 		"popup_decodeable_async_desc"	"Χρήση <b>{s:itemname}</b>"
 		"popup_decodeable_async_xray_desc"		"Χρήση του σαρωτή ακτίνων Χ για αποκάλυψη του αντικειμένου εντός"
 		"popup_decodeable_err_restricted"	"Το άνοιγμα του <b>{s:itemname}</b> δεν επιτρέπεται στη χώρα σας"
@@ -43672,6 +43820,8 @@
 		"popup_totool_decodeable_header_fantoken"	"Ενεργοποίηση αντικειμένου"
 		"popup_totool_purchase_header"	"Αγορά"
 		"popup_totool_purchase_header2"	"ΑΓΟΡΑ ΓΙΑ ΑΠΟΚΤΗΣΗ"
+		"popup_totool_decodeable_header_terminal"	"Αποσφράγιση Τερματικού"
+
 		//Purchase
 		"popup_cartpreview_button"		"Προεπισκόπηση"
 		"popup_cartpreview_title"		"Προεπισκόπηση"
@@ -44522,6 +44672,22 @@
 		"practicesettings_annotations_dropdown_tooltip"	"Προσδιορίζει τον οδηγό χάρτη που θα φορτωθεί"
 
 		"PlayMenuReplayNewUserTrainingButton"		"Παίξτε ξανά την εκπαίδευση"
+
+
+		"CSGO_VanityLoadout_Inspect"				"Επιθεώρηση"
+		"CSGO_VanityLoadout_FindOnMarket"			"Εύρεση στην Αγορά Κοινότητας"
+
+
+		"VanityLoadout_WeaponInfo_name"				"<span class=\"weapon-name\">{s:weapon_name_full}</span><br><span class=\"weapon-name-custom\">{s:weapon_name_custom}</span></font>"
+
+
+		"VanityLoadout_WeaponInfo_stock"		"Προεπιλεγμένο όπλο"
+
+		"VanityLoadout_WeaponInfo_collection"	"{s:collection}"
+		"VanityLoadout_WeaponInfo_wear"			"{s:wear}"
+		"VanityLoadout_WeaponInfo_pattern"		"{s:pattern}"
+
+		"VanityLoadout_WeaponInfo_wear_fill"			"<font color=\"\">%s1: %s2</font>"
 
 
 		//////////////////////
@@ -46321,9 +46487,124 @@
 		"Chatwheel_section_report"	"Αναφορά"
 
 		"Chatwheel_description" "Η ροδέλα συνομιλίας παρέχει μια γρήγορη πρόσβαση σε μια προσαρμόσιμη λίστα χρήσιμων εντολών ασυρμάτου."
-//
-//
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		////
+		//
+		// Volatile Laptop
+		//
+		////
+
+		// ---------------------------------------------------------------------------------------------
+		"laptop_window_collection_title"			"ΕΜΠΕΙΡΙΑ ΚΑΤΑΛΟΓΟΥ ΣΥΛΛΟΓΗΣ"
+		"laptop_window_expiration_title"			"ΛΗΞΗ"
+		"laptop_window_seal_title"					"ΚΑΤΑΣΤΑΣΗ"
+		"laptop_window_messages_title"				"ΣΥΝΟΜΙΛΙΑ – ΕΜΠΟΡΟΣ ΟΠΛΩΝ"
+		"laptop_window_currentoffer_title"			"ΤΡΕΧΟΥΣΑ ΠΡΟΣΦΟΡΑ"
+		"laptop_app_title"							"<span class=\"laptop-app-title-prefix\">UP-</span>Link"
+		"laptop_app_version"						"v 1.1.0.2000"
+
+		"dealer_offer_attachment_title"							"{s:item-name}"
+		"dealer_offer_attachment_wear"						"{s:item-rarity}"
+		"dealer_offer_attachment_remaining_title"				"ΠΡΟΣΦΟΡΑ #{d:offer-total}"
+		"dealer_offer_attachment_remaining"						"Προσφορά #{d:offer-total}"
+		"dealer_offer_received_count"							"<b>{s:offer-count}</b> προσφορά"
+		"dealer_offer_attachment_final_title"					"ΤΕΛΙΚΗ ΠΡΟΣΦΟΡΑ"
+		"dealer_offer_attachment_final"							"{s:offer-count} και τελική προσφορά"
+		"dealer_offer_attachment_status"						"Προσφορά – {s:offer-status}"
+		"dealer_offer_attachment_status-active"					"<b><span class=\"offer-active\">Ενεργή</span></b>"
+		"dealer_offer_attachment_status-price"					"<b><span class=\"offer-active\">{s:offer-price}</span></b>"
+		"dealer_offer_attachment_status-declined-price"			"{s:offer-price}"
+		"dealer_offer_attachment_status-declined"				"<span class=\"offer-declined\">{s:offer-count} Προσφορά – Απορρίφθηκε</span>"
+
+		"user_btn_purchase_desc_purchase"		"Κρατήστε το πατημένο για να αγοράσετε αυτό το αντικείμενο. Μετά την αγορά, το Τερματικό απορρίπτεται."
+		"user_btn_purchase_desc_continue"		"Κρατήστε το πατημένο για μόνιμη απόρριψη αυτής της προσφοράς και για να δείτε την επόμενη."
+		"user_btn_purchase_desc_end"		"Απορρίψτε την τελική προσφορά και αυτό το Τερματικό."
+		"user_btn_purchase_title"			"<b>{s:offer-count} ΠΡΟΣΦΟΡΑ</b> — ΠΡΟΤΕΙΝΟΜΕΝΕΣ ΑΠΑΝΤΗΣΕΙΣ"
+		"user_btn_purchase_final_title"		"<b>ΤΕΛΙΚΗ ΠΡΟΣΦΟΡΑ</b> — ΠΡΟΤΕΙΝΟΜΕΝΕΣ ΑΠΑΝΤΗΣΕΙΣ"
+		"user_btn_decline_desc"				"Απορρίψτε αυτήν την προσφορά και δείτε μία άλλη"
+		"user_btn_accept"		"Αποδοχή προσφοράς <b>{s:price}</b>"
+		"user_btn_accept_final"	"Αποδοχή τελικής προσφοράς <b>{s:price}</b>"
+		"user_btn_accept_0"		"Σύμφωνοι. <b>Με {s:price} είμαστε εντάξει.</b>"
+		"user_btn_accept_1"		"Θα την αποδεχτώ – <b>{s:price}</b>"
+		"user_btn_accept_2"		"Είμαι μέσα για <b>{s:price}</b>"
+		"user_btn_accept_3"		"Είμαι εντάξει με <b>{s:price}</b>"
+		"user_btn_accept_4"		"Με έπεισες με <b>{s:price}</b>"
+		"user_btn_accept_5"		"Ωραία — <b>{s:price}</b>"
+		"user_btn_next"			"Απόρριψη προσφοράς"
+		"user_btn_next_0"		"Δελεαστική, αλλά όχι"
+		"user_btn_next_1"		"Δεν αξίζει μία"
+		"user_btn_next_2"		"Δεν μπορώ να το κάνω"
+		"user_btn_next_3"		"Πάσο"
+		"user_btn_next_4"		"Δεν έχουμε συμφωνία"
+		"user_btn_next_5"		"Ευχαριστώ, αλλά όχι"
+		"user_btn_next_6"		"Όχι αυτήν τη φορά"
+		"user_btn_next_7"		"Όχι σήμερα"
+		"user_btn_pause"		"Παύση προσφοράς"
+		"user_btn_end"			"Απόρριψη τελικής προσφοράς"
+
+		"dealer_offer_Unknown"							"–"
+		"dealer_offer_1"								"1η"
+		"dealer_offer_2"								"2η"
+		"dealer_offer_3"								"3η"
+		"dealer_offer_4"								"4η"
+		"dealer_offer_5"								"5η"
+		"dealer_offer_6"								"6η"
+		"dealer_offer_7"								"7η"
+		"dealer_offer_8"								"8η"
+		"dealer_offer_9"								"9η"
+		"dealer_offer_10"								"10η"
+
+		"current_offer_tooltip"		"Η τρέχουσα προσφορά του εμπόρου όπλων σε εσάς."
+		"declined_offer_tooltip"	"Απορριφθείσα προσφορά"
+		"future_offer_tooltip"		"Η προσφορά δεν έχει αποκαλυφθεί ακόμη."
+		"laptop_expiration_tooltip"		"Ο χρόνος που απομένει μέχρι να λήξει αυτό το Τερματικό Uplink και οι προσφορές του."
+		"collection_xp_tooltip"			"Κερδίστε εμπειρία κοιτώντας τις προσφορές σε αυτήν τη συλλογή. Ανοίξτε για να δείτε την πρόοδο και να εξαργυρώσετε εμπειρία."
+		"popup_lootlist_title"			"Εμπειρία καταλόγου συλλογής"
+		"popup_lootlist_desc"			"Κερδίστε εμπειρία κοιτώντας τις προσφορές σε αυτήν τη συλλογή."
+		"popup_lootlist_progress"		"Είδατε {d:seen}/{d:total} προσφορές"
+		"popup_lootlist_claim_xp"		"Αποκτήστε επιπλέον εμπειρία"
+		"popup_lootlist_claim_ww"		"Απόκτηση εμπειρίας…"
+		"popup_lootlist_claim_ok"		"✅ αποκτήθηκε εμπειρία"
+		"popup_vpn_status_connected"	"Κατάσταση: Έγινε σύνδεση σε ασφαλές δίκτυο"
+		"popup_vpn_status_disconnected"	"Κατάσταση: Έγινε αποσύνδεση"
+		"popup_signal_full" 			"Πλήρες σήμα"
+		"popup_signal_ok" 				"Ισχυρό σήμα"
+		"laptop_battery_tooltip" 		"Μπαταρία: {d:percent}%"
+		"laptop_original_seal_tooltip" 	"Κάθε αντικείμενο που αγοράζεται από αυτό το Τερματικό Uplink θα συνοδεύεται από ένα πιστοποιητικό αρχικού κατόχου, που θα είναι έγκυρο όσο είστε εσείς ο κάτοχος."
+		"laptop_zoom_tooltip" 			"Κουνήστε τη ροδέλα του ποντικιού για μεγέθυνση και σμίκρυνση."
+		"laptop_pan_tooltip" 			"Κρατήστε πατημένο το πλήκτρο «Shift» και σύρετε για να μετακινήσετε την κάμερα."
+		"laptop_pricing_tooltip"		"Οι τιμές είναι παγκόσμιες και προσαρμόζονται αυτόματα με βάση τη ζήτηση για κάθε αντικείμενο αυτής της συλλογής."
+
+
+		"dealer_message_start_0"  	"Αυτό εδώ το εμπόρευμα είναι κομμένο και ραμμένο για μισθοφόρους.<!--.25-->Με όλα τα εξτρά. Χωρίς καθόλου χαρτούρα."
+		"dealer_message_start_1"  	"Κινώ εμπόρευμα απ' την γκρίζα αγορά, χωρίς χαρτιά.<!--.25-->Μην ανησυχείς, είναι στα αζήτητα. Εκτός κυκλοφορίας εδώ και χρόνια. Κανείς δεν το γυρεύει.<!--.25-->Επίσης, εξακολουθούν να ρίχνουν, αν αναρωτιέσαι."
+		"dealer_message_start_2"  	"Τα τελωνεία στο Αχραντάν «πάγωσαν» σήμερα το πρωί το εμπόρευμά μου. Προσπάθησα να το πάρω πίσω με μια δακρύβρεχτη ιστορία περί ιατρικού εξοπλισμού και κάποιου φτωχού που 'ταν στα τελευταία του.<!--.25-->Τζίφος. Αλλά ο χαρτοφύλακας με τα χρήματα την έκανε τη δουλειά του.<!--.25-->Τι θα έλεγες να ρίξουμε μια ματιά σ' αυτές τις μηχανές αιμοκάθαρσης πριν τις πάω στα ορφανά;"
+		"dealer_message_start_3"  	"Μόλις έγινε αλλαγή καθεστώτος σε ένα από τα «-σταν».<!--.25-->Οι πόρτες των αποθηκών άνοιξαν διάπλατα και τα διάλεξα τα κομμάτια ένα-ένα.<!--.25-->Πουλάω μόνο τα αποστειρωμένα. Ρίξε μια ματιά."
+		"dealer_message_start_4"  	"Όλα όσα έχω εδώ σήμερα είναι καθαρά.<!--.25-->Απ' όσο ξέρει κάνεις, τα δικά σου είναι τα πρώτα χέρια που θα τα πιάσουν."
+		"dealer_message_start_5"  	"Αποστειρωμένα κομμάτια, χωρίς σειριακούς αριθμούς, η τέλεια δουλειά.<!--.25-->Σε δικαστήριο εγκλημάτων πολέμου θα τα αποκαλούσαν αποδεικτικά στοιχεία.<!--.25-->Εσύ και εγώ γνωρίζουμε ότι πρόκειται για αριστουργήματα."
+		"dealer_message_start_6"  	"Όλα αυτά είναι εξωτικά προϊόντα που διασώθηκαν πρόσφατα από μια φάλαγγα παρέλασης.<!--.25-->Πέρασαν μπροστά από πολλά πλήθη. Δεν εκπυρσοκρότησαν ποτέ."
+		"dealer_message_start_7"  	"Ωραία. Εσύ είσαι.<!--.25-->Οι άλλοι μου πελάτες θέλουν πάντα να μαθαίνουν πώς ήρθαν στα χέρια μου αυτά που πουλάω. Το μισώ αυτό.<!--.25-->Αυτό που εσύ θέλεις πάντα να ξέρεις είναι αν είναι τα καλύτερα στην αγορά.<!--.25-->Και μάντεψε τι… Είναι."
+		"dealer_message_start_8"  	"Συμφωνία ειρήνης στο Ντρόσβικ. Λατρεύω την ειρήνη.<!--.25-->Επειδή έχω έναν στρατηγό με πολλά χρέη και ένα γεμάτο οπλοστάσιο που μαζεύει σκόνη.<!--.25-->Αυτό που θέλω να πω…<!--.25-->Επίσης επειδή η ειρήνη είναι καλή, προφανώς. Αθώες ζωές και…<!--.25-->Τι κάθομαι και λέω; Δεν σε νοιάζει."
+		"dealer_message_start_9"  	"Αυτό το εμπόρευμα έχει εξωτικά αντικείμενα από ένα παράλληλο κανάλι διανομής μέσω της γκρίζας αγοράς.<!--.25-->Ιδιαίτερα διαμετρήματα, δεν είναι για ερασιτέχνες. Θα τα λατρέψεις."
+		"dealer_message_start_10"  	"Τι ντροπή.<!--.25-->Μάλλον έβαλα λάθος ετικέτα σε ένα κιβώτιο στο δηλωτικό φορτίου.<!--.25-->Ή μάλλον, σε μερικές δεκάδες κιβώτια.<!--.25-->Τι θα 'λεγες να με βοηθήσεις να εξαφανίσω το απόθεμα πριν έρθει να ελέγξει η λιμενική αρχή."
+		"dealer_message_start_11"  	"Ο επιθεωρητής από το Ντρόσβικ ήθελε λάδωμα για αυτό. Ο ηλίθιος άρχισε να μιλάει για εντολές κατάσχεσης. <!--.25-->Έχω κάτι τύπους στο Ντρόσβικ που ξέρουν πώς να χειρίζονται τους φαφλατάδες. Το σαγόνι του έκλεισε για τα καλά τώρα.<!--.25-->Και ευτυχώς, αυτό το εμπόρευμα μιλάει από μόνο του."
+		"dealer_message_start_12"  	"Έπρεπε να λαδώσω κάθε παλάμη στο Αχραντάν για να περάσω αυτό το φορτίο από τα σύνορα.<!--.25-->Και όλες οι δωροδοκίες ήταν σε αχρί. Ξέρεις πόσα χαρτιά χρειάζονται για ένα λάδωμα σε άχρηστο νόμισμα; Αυτοί οι τύποι πρέπει να κάνουν κάτι για την οικονομία τους."
+		"dealer_message_start_13"	"Έχω έναν μεσάζοντα στη ζούλα που θέλει να κινηθεί γρήγορα αυτό το εμπόρευμα.<!--.25-->Μόνο αυτό είπε. «Γρήγορα»<!--.25-->Και επίσης τις λέξεις «πολύ πολύ».<!--.25-->Θα το θέσω έτσι: Αν δεν έχεις περιέργεια γιατί το πουλάει, θα είσαι πολύ πολύ χαρούμενος."
+		"dealer_message_start_14"	"Μοντέλα παλιού τύπου σήμερα.<!--.25-->Είναι φανταχτερά; Όχι. Αλλά είναι αξιόπιστα.<!--.25-->Τα εγγόνια σου θα πυροβολούν κόσμο με δαύτα."
+		"dealer_message_start_15"	"Μια αντάρτικη πολιτοφυλακή απελευθέρωσε αυτό το σιδερικό από το οπλοστάσιο του Ένδοξου Ηγέτη.<!--.25-->Πιστεύω ότι απελευθέρωσαν επίσης τον κορμό του Ένδοξου Ηγέτη από τα άκρα και το κεφάλι του.<!--.25-->(Εγώ δεν πουλάω τέτοια πράγματα, αλλά μπορώ να σε φέρω σε επαφή με έναν τύπο, αν ενδιαφέρεσαι.)"
+		"dealer_message_start_17"	"Όλα αυτά προέρχονται από την ιδιωτική συλλογή ενός δισεκατομμυριούχου.<!--.25-->Πρώην δισεκατομμυριούχου, εδώ που τα λέμε. Γίνεται έρευνα εις βάρος του, που σημαίνει ότι θα ρευστοποιήσω εγώ ό,τι δεν μπορεί να ρευστοποιήσει εκείνος.<!--.25-->Ας είμαστε ειλικρινείς, αυτό ταιριάζει πιο πολύ στο χέρι σου παρά κρεμασμένο στον τοίχο κάποιου γιοτ."
+		"dealer_message_start_18"	"Ο τελωνειακός επισήμανε μια απόκλιση σε αυτό το φορτίο.<!--.25-->Είναι αξιοπερίεργο πώς ένα κιβώτιο με τουφέκια ζυγίζει το ίδιο με ένα κιβώτιο με «εξαρτήματα τρακτέρ» όταν προσθέσεις ακριβώς δέκα χιλιάδες δολάρια στη ζυγαριά.<!--.25-->Ας ρίξουμε μια ματιά σε αυτά τα εξαρτήματα τρακτέρ."
+		"dealer_message_start_19"	"Το πράμα που έχω σήμερα επέζησε από πραξικόπημα για να έρθει σε σένα.<!--.25-->Γρατσουνισμένο φινίρισμα, αλλά λειτουργεί τέλεια. Το εσωτερικό μετράει, σωστά;"
+		"dealer_message_start_20"	"Μια σκατένια μικρή δημοκρατία μόλις κρέμασε τον πρόεδρό της.<!--.25-->Ευτυχώς, κληρονόμησα την εφοδιαστική του αλυσίδα."
+		"dealer_message_start_21"	"Πες το σφάλμα επεξεργασίας. Μια ασυμφωνία στα αρχεία. Μια απλή λάθος καταχώριση.<!--.25-->Λάθη συμβαίνουν. Προσπαθώ απλά να βοηθήσω έναν φίλο αξιωματικό να μη χάσει το πόστο του ως υπεύθυνος ανεφοδιασμού.<!--.25-->Αυτός ο εξοπλισμός πρέπει να εξαφανιστεί."
+		"dealer_message_start_22"	"Κάποιος τελωνειακός προϊστάμενος πίστεψε ότι μπορούσε να με πιέσει με αυτό το εμπόρευμα. Οπότε έκανα τα συνδικάτα στο λιμάνι να πιέσουν ακόμα περισσότερο.<!--.25-->Ενδιαφέρον πόσο γρήγορα γίνονται τα χαρτιά όταν όλοι έχουν καούρα να βρουν έναν αγνοούμενο.<!--.25-->Ελπίζω να τον βρουν τον φουκαρά. Δεν νομίζω ότι το 'χει με το κολύμπι."
+		"dealer_message_start_23"	"Ο συνοριοφύλακας στο Αχραντάν είπε ότι τα χαρτιά δεν ήταν σωστά. Έτσι του έδωσα ένα σωρό αχρί και ξαφνικά έγιναν σωστά.<!--.25-->Δεν ξέρω καν πόσα είναι δέκα χιλιάδες αχρί σε αληθινά λεφτά. Γύρω στα έξι δολάρια ή κάπου εκεί.<!--.25-->Λοιπόν; Θέλεις να δεις μερικά όπλα που δεν υπάρχουν;"
+		"dealer_message_next_offer_0"	"<!--1-->Εντάξει, εκείνο δεν έκανε για εσένα. Τι λες για αυτό;"
+		"dealer_message_item_desc_0"			"<!--.25-->Αυτό εδώ έχει ένα σημείωμα:<!--.25-->{s:flavor-text}<!--.25-->Ό,τι στο καλό κι αν σημαίνει αυτό."
+		"dealer_message_item_desc_1"			"<!--.25-->Αυτό εδώ είχε και ένα μικρό σημείωμα:<!--.25-->{s:flavor-text}"
+
+		"dealer_message_addition_stattrak_0"	"<!--.25-->...και με StatTrak™."
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -46499,33 +46780,8 @@
 		"quest_11015_var_desc:p{mission-points}"	 	"Κερδίστε έναν γύρο σε <b>{s:gamemode}: {s:location}</b>.#|#Κερδίστε γύρους σε <b>{s:gamemode}: {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Κερδίστε έναν γύρο#|#Κερδίστε γύρους"
 
-// crow_mask_48593_comment
-// crow_mask_48594_comment
-}
-
-
-
-
-}
-
-
-de}: {s:location}</b>.#|#Κερδίστε γύρους σε <b>{s:gamemode}: {s:location}</b>."
-		"quest_11011_var_ingame:p{mission-points}"		"Κερδίστε έναν γύρο#|#Κερδίστε γύρους"
-		
-		"quest_11012_var_desc:p{mission-points}"	 	"Κερδίστε έναν γύρο σε <b>{s:gamemode}: {s:location}</b>.#|#Κερδίστε γύρους σε <b>{s:gamemode}: {s:location}</b>."
-		"quest_11012_var_ingame:p{mission-points}"		"Κερδίστε έναν γύρο#|#Κερδίστε γύρους"
-		
-		"quest_11013_var_desc:p{mission-points}"	 	"Κερδίστε έναν γύρο σε <b>{s:gamemode}: {s:location}</b>.#|#Κερδίστε γύρους σε <b>{s:gamemode}: {s:location}</b>."
-		"quest_11013_var_ingame:p{mission-points}"		"Κερδίστε έναν γύρο#|#Κερδίστε γύρους"
-		
-		"quest_11014_var_desc:p{mission-points}"	 	"Κερδίστε έναν γύρο σε <b>{s:gamemode}: {s:location}</b>.#|#Κερδίστε γύρους σε <b>{s:gamemode}: {s:location}</b>."
-		"quest_11014_var_ingame:p{mission-points}"		"Κερδίστε έναν γύρο#|#Κερδίστε γύρους"
-		
-		"quest_11015_var_desc:p{mission-points}"	 	"Κερδίστε έναν γύρο σε <b>{s:gamemode}: {s:location}</b>.#|#Κερδίστε γύρους σε <b>{s:gamemode}: {s:location}</b>."
-		"quest_11015_var_ingame:p{mission-points}"		"Κερδίστε έναν γύρο#|#Κερδίστε γύρους"
-
-// crow_mask_48113_comment
-// crow_mask_48114_comment
+// crow_mask_48605_comment
+// crow_mask_48606_comment
 }
 
 

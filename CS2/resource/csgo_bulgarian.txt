@@ -2338,6 +2338,9 @@
 		"Econ_Revolving_Loot_List"				"Съдържа един от следните артикули:"
 		"Econ_Revolving_Loot_List_Single"		"Отворете и получавате един от следните артикули"
 		"Econ_Revolving_Loot_List_Rental"		"<img src='file://{images}/icons/ui/hourglass.svg' class='popup-decodable-lootlist-single-icon'/> Заемете всяко оръжие (с изключение на изключително редкия артикул) в този контейнер за 7 дни "
+		"Econ_Revolving_Loot_SecureConnectionLine"	"От този терминал е възможно да бъде закупен един артикул. Този терминал ще представи множество оферти за следните артикули:"
+
+		
 		"Econ_Revolving_Loot_List_Rare_Item"	"или изключително рядък специален артикул!"
 		"Exceedingly_Rare_Item"					"★ Рядък специален артикул ★"
 
@@ -2374,6 +2377,7 @@
 		"Item_Crafted"							" %s1 изпълни договора и получи: %s2"
 		"Item_Traded"							" %s1 получи в търговия: %s2"
 		"Item_Purchased"						" %s1 закупи: %s2"
+		"Item_PurchasedVolatile"				" %s1 закупи от търговеца на оръжия: %s2"
 		"Item_FoundInCrate"						" %s1 отвори контейнер и намери: %s2"
 		"Item_Gifted"							" %s1 прие подарък: %s2"
 		"Item_Earned"							" %s1 спечели: %s2"
@@ -2398,6 +2402,7 @@
 		"NewItemMethod_Crafted"			"Получихте:"
 		"NewItemMethod_Traded"			"Търгувахте за:"
 		"NewItemMethod_Purchased"		"Закупихте:"
+		"NewItemMethod_PurchasedVolatile" "Закупихте от търговеца на оръжия:"
 		"NewItemMethod_FoundInCrate"	"Разопаковахте:"
 		"NewItemMethod_Rental"			"Заехте:"
 		"NewItemMethod_XpShopRedeem"	"Получихте от оръжейната:"
@@ -2457,6 +2462,7 @@
 		"ItemHistory_Action_Drop"										"Придобит нов ранг и падане на артикул"
 		"ItemHistory_Action_ManualCreate"								"Създадено от Counter-Strike поддръжката"
 		"ItemHistory_Action_Purchase"									"Закупено от магазина"
+		"ItemHistory_Action_PurchaseVolatileContainerItem"				"Закупено от търговеца на оръжия"
 		"ItemHistory_Action_AutoGrantItem"								"Придобито"
 		"ItemHistory_Action_CrossGameAchievement"						"Придобито от отключване на постижение в различна игра"
 		"ItemHistory_Action_AwardGift_Receiver"							"Получен подарък"
@@ -2644,7 +2650,8 @@
 		"Attrib_MatchWins"							"Съревнователни победи в карти от операции: %s1"
 		"Attrib_HasSilencer"						"Заглушител"
 		"Attrib_HasBurstMode"						"Опция за откос с 3 изстрела"
-		"Attrib_SupplyCrateSeries"					"Контейнер от серия #%s1"
+		"Attrib_SecureConnectionLine"				"Контейнер от серия №%s1"
+		"Attrib_SupplyCrateSeries"					"Контейнер от серия №%s1"
 		"Attrib_KillEater"							"Този артикул включва технологията StatTrak™, която следи определени статистики, когато е екипиран от своя притежател."
 		"Attrib_ReferencedItem"						"Съдържа: %s1"
 		"Attrib_TimeLocalization_Hours"				"%s1 часа"
@@ -2679,6 +2686,9 @@
 		"Attrib_OperationBonusXP"					"Спечелен бонус от операцията: +%s1 опит"
 		"Attrib_IssueDate"							"Дата на издаване: %s1"
 		"Attrib_ExpirationDate"						"Дата на изтичане: %s1"
+		"Attrib_PurchaserAccountID"					"Този артикул разполага със сертификат от оригиналния притежател."
+		"Attrib_PurchaserAccountID_title"			"Сертификат от оригиналния притежател"
+
 		"Notify_KeychainRemoveTool_ChargesUseToRemove"	"Достъпни откачвания на джунджурии: {d:item_count}<br>Премахването на джунджурия изразходва едно откачване на такава."
 		"Attrib_KeychainRemoveTool_Charges"			"Достъпни откачвания на джунджурии: {d:item_count}"
 		"Attrib_SpraysRemaining"					"Оставащи заряди: %s1"
@@ -4441,7 +4451,19 @@
 		"CSGO_crate_sticker_pack_warhammer_xenos_capsule_desc"			"<b><font color='#F2A93E'>Warhammer 40,000 Xenos Sticker Capsule</font></b>\n \nДонесете ужаса на Ксеносите чрез капсулата със стикери „Warhammer 40,000 Xenos“, издадена през май 2025."
 		"coupon_warhammer_xenos_sticker_capsule"						"Капсула със стикери „Warhammer 40,000 Xenos“"
 		
-		"SprayKit_vcap1_ace_01"		"Ас"
+		"CSGO_crate_sticker_pack_sugarface2_capsule"	   				"Колекция със стикери „Захаросано лице 2“"
+		"CSGO_crate_sticker_pack_sugarface2_capsule_desc"				"<b><font color='#F2A93E'>Sugarface 2 Sticker Collection</font></b>\n \nТази колекция съдържа разнообразни стикери на захарна тематика и беше издадена през септември 2025."
+		"CSGO_crate_sticker_pack_sugarface2_short"						"Стикери „Захаросано лице 2“"
+		
+		"CSGO_crate_sticker_pack_community2025_capsule"	    			"Обществена колекция със стикери 2025"
+		"CSGO_crate_sticker_pack_community2025_capsule_desc"			"<b><font color='#F2A93E'>2025 Community Sticker Collection</font></b>\n \nТази колекция съдържа разнообразни стикери и беше издадена през септември 2025."
+		"CSGO_crate_sticker_pack_community_2025_short"					"Обществени стикери 2025"
+		
+		"CSGO_crate_community_36"				"Запечатан терминал „Генезис“"
+		"CSGO_crate_community_36^volatile"		"Активен терминал „Генезис“"
+		"CSGO_crate_community_36_desc"			"<b><font color='#F2A93E'>Genesis Terminal</font></b>"
+		
+"SprayKit_vcap1_ace_01"		"Ас"
 "SprayKit_desc_vcap1_ace_01"	"<b><font color='#F2A93E'>Ace</font></b>"
 "SprayKit_vcap1_banana"		"Банан"
 "SprayKit_desc_vcap1_banana"	"<b><font color='#F2A93E'>Banana</font></b>"
@@ -5622,6 +5644,9 @@
 		
 		"CSGO_set_timed_drops_cool"				"Колекцията „Възнасяне“"
 		"CSGO_set_timed_drops_cool_desc"		"<b><font color='#F2A93E'>The Ascent Collection</font></b>"
+		
+		"CSGO_set_community_36"					"Колекцията „Генезис“"
+		"CSGO_set_community_36_desc"			"<b><font color='#F2A93E'>The Genesis Collection</font></b>"
 		
 		/////////////////
 		// lootlist override strings
@@ -27078,29 +27103,50 @@
 	"HighlightReel_aus2025_donk2withinsanehsflickvspiritonmirage"	"Нечовешки реакции"
 	"HighlightDesc_aus2025_donk2withinsanehsflickvspiritonmirage"	"Пъргавите реакции на donk му спечелиха бързо двойно убийство по време на атаката в средата на картата Mirage срещу MOUZ."
 	"HighlightReel_aus2025_donk3with1v1win"	"Тройно убийство и обезвреждане"
+	"HighlightDesc_aus2025_donk3with1v1win"	"donk нанася бърз изстрел в глава върху torzsi в схватката един срещу друг, подсигурявайки си тройно убийство и рунда."
 	"HighlightReel_aus2025_jimpphat4kvsspiritonmirage1"	"Jimpphat | Четворно убийство"
+	"HighlightDesc_aus2025_jimpphat4kvsspiritonmirage1"	"Jimpphat прави четири убийства при офанзива на зоната за бомба „B“ на Mirage, за да спечели в схватка с трима срещу пет."
 	"HighlightReel_aus2025_jimpphatrunninghsvsspiritonmirage"	"Стреляне в движение"
+	"HighlightDesc_aus2025_jimpphatrunninghsvsspiritonmirage"	"Jimpphat покосява donk, докато бяга със своя AK-47 по време на офанзивата на зоната за бомба „A“ на Mirage."
 	"HighlightReel_aus2025_jimpphat2ktosecureretakevsspiritonmirage"	"Jimpphat | Двойно убийство"
+	"HighlightDesc_aus2025_jimpphat2ktosecureretakevsspiritonmirage"	"Jimpphat прави две убийства, за да подсигури повторното превземане за MOUZ на Mirage."
 	"HighlightReel_aus2025_jimpphatlosesclutchtotimevsmouzonmirage"	"Винаги купувайте сапьорски клещи"
+	"HighlightDesc_aus2025_jimpphatlosesclutchtotimevsmouzonmirage"	"Jimpphat почти подсигурява надмощието в критична схватка един срещу двама, но не му достига време да обезвреди бомбата."
 	"HighlightReel_aus2025_jimpphat2kandwinscluthvsspiritonmirage"	"Jimpphat | Богът на критичните схватки"
+	"HighlightDesc_aus2025_jimpphat2kandwinscluthvsspiritonmirage"	"Jimpphat прави двойно убийство и окончателно преустановява повторното превземане от КТ за зоната за бомба „A“ на Mirage."
 	"HighlightReel_aus2025_magix1v2tosecureot"	"Критична схватка 1 с/у 2"
+	"HighlightDesc_aus2025_magix1v2tosecureot"	"Извънредното време е подсигурено за Spirit, докато magixx постига критична схватка един срещу двама в зоната за бомба „A“ на Mirage."
 	"HighlightReel_aus2025_magix4kand1v3winvsmouzonmirage"	"Крал на критичните схватки"
+	"HighlightDesc_aus2025_magix4kand1v3winvsmouzonmirage"	"magixx постига критична схватка един срещу трима в зоната за бомба „A“ на Mirage, спечелвайки четири убийства в рунда."
 	"HighlightReel_aus2025_shirofastawpflickvsmouzonmirage1"	"Пъргави реакции"
+	"HighlightDesc_aus2025_shirofastawpflickvsmouzonmirage1"	"sh1ro нанася бързо перване с AWP в зоната за бомба „B“ на Mirage, подсигурявайки встъпителното убийство."
 	"HighlightReel_aus2025_shirodidntseexertionandlostentryvsmouzonmirage"	"Пропусна го"
 	"HighlightDesc_aus2025_shirodidntseexertionandlostentryvsmouzonmirage"	"sh1ro не успява да забележи xertioN над дима в свръзката, което на xertioN перфектен момент за встъпително убийство от кратката платформа."
 	"HighlightReel_aus2025_spinxnadedto3hpvsspiritonmirage1"	"Две гранати в главата"
+	"HighlightDesc_aus2025_spinxnadedto3hpvsspiritonmirage1"	"Spinx поема две гранати в средата на Mirage, падайки до три здраве."
 	"HighlightReel_aus2025_spinxclose1v2clutch"	"Почти"
+	"HighlightDesc_aus2025_spinxclose1v2clutch"	"Spinx прави две убийства и почти постига критична схватка един срещу двама, но губи финалния дуел на зоната за бомба „B“."
 	"HighlightReel_aus2025_spinxfast2konbsitetosecureotvsspiritonmirage"	"Бързо двойно убийство"
+	"HighlightDesc_aus2025_spinxfast2konbsitetosecureotvsspiritonmirage"	"Две бързи убийства в защита на зоната за бомба „B“ на Mirage от Spinx подсигуряват извънредно време за MOUZ."
 	"HighlightReel_aus2025_spinxinsane4kclutchvsspiritonmirage"	"Spinx | Четворно убийство"
+	"HighlightDesc_aus2025_spinxinsane4kclutchvsspiritonmirage"	"Неуспешен удар върху зоната за бомба „A“ от MOUZ е спасен от героичното четворно убийство на Spinx, което им печели схватката двама срещу петима и подсигурява финалния фраг с експлозивна граната на Mirage."
 	"HighlightReel_aus2025_torszipistol3kvspsiritonmirage"	"torzsi | Тройно убийство"
+	"HighlightDesc_aus2025_torszipistol3kvspsiritonmirage"	"Три убийства с пистолет за torzsi, докато той осигурява втория пистолетен рунд на Mirage за MOUZ."
 	"HighlightReel_aus2025_torszi3kwithcheekymolokillonmirage"	"Изгарящо тройно убийство"
+	"HighlightDesc_aus2025_torszi3kwithcheekymolokillonmirage"	"torzsi с тройно убийство в рунда, а последното дойде от добре позициониран молотов, който да спре залагащия бомбата."
 	"HighlightReel_aus2025_zontix3kfrompalacevsmouzonmirage"	"zont1x | Тройно убийство"
+	"HighlightDesc_aus2025_zontix3kfrompalacevsmouzonmirage"	"Дебненето от zont1x в „Дворец“ до зоната за бомба „A“ му носи три чисти убийства на Mirage."
 	"HighlightReel_aus2025_zontix3kandwinsclutchvspiritonmirage"	"Тройно убийство и хладнокръвие"
+	"HighlightDesc_aus2025_zontix3kandwinsclutchvspiritonmirage"	"zont1x прави три убийства и печели след залагането на бомбата, тъй като Jimpphat не му достига време да я обезвреди в зоната за бомба „A“ на Mirage."
 	"HighlightReel_aus2025_brollan2kvsspiritondust2"	"Brollan | Двойно убийство"
+	"HighlightDesc_aus2025_brollan2kvsspiritondust2"	"Криенето иззад дима дава на Brollan благоприятната възможност за два бързи фрага с пистолети при защитата на зоната за бомба „A“."
 	"HighlightReel_aus2025_brollan3kvsspiritondust2"	"Brollan | Тройно убийство"
+	"HighlightDesc_aus2025_brollan3kvsspiritondust2"	"Бързо убийство с Five-Seven дава на Brollan M4A1, което му позволява да си подсигури тройно убийство и критичната схватка на Dust2."
 	"HighlightReel_aus2025_brollanfast2kinpistolvsspiritondust2"	"Brollan | Димен престъпник"
+	"HighlightDesc_aus2025_brollanfast2kinpistolvsspiritondust2"	"Един-единствен куршум през димката дава на Brollan двойно убийство по време на пистолетния рунд в офанзивата на зоната за бомба „A“."
 	"HighlightReel_aus2025_brollandiesfrom100to0fromutilityvsspiritondust2"	"Железният човек"
 	"HighlightReel_aus2025_brollancleanentryvsspiritondust2"	"Прекалено бързи реакции"
+	"HighlightDesc_aus2025_brollancleanentryvsspiritondust2"	"Въпреки, че е с ниско здраве Brollan незабавно нанася изстрел в главата на chopper, за да разтвори зоната за бомба „A“."
 	"HighlightReel_aus2025_chopper3kmp9vsspiritondust2"	"Летящ и стрелящ на посоки"
 	"HighlightReel_aus2025_donk4kandfailed1v1vsmouzondust2"	"Почти асът"
 	"HighlightReel_aus2025_donkaceonbvsmouzondust2"	"donk | Ас"
@@ -27548,13 +27594,44 @@
 	"HighlightReel_aus2025_flamezalmostclutchvsthemongolzoninferno"	"flameZ | Почти критична схватка"
 	"HighlightReel_aus2025_flamezroundherevsthemongolzoninferno"	"Герой на рунда"
 	"HighlightReel_aus2025_meziidominationvsthemongolzoninferno"	"Доминация"
+	"HighlightReel_aus2025_meziistandingstrongvsthemongolzoninferno"	"Силно отстояване"
+	"HighlightReel_aus2025_meziiboostkillvsthemongolzoninferno"	"Подсилващо убийство"
+	"HighlightReel_aus2025_meziiwarningshotvsthemongolzoninferno"	"Предупредителен изстрел"
 	"HighlightReel_aus2025_meziicleansweepvsthemongolzoninferno"	"mezii | Чисто преминаване"
 	"HighlightReel_aus2025_mzinhogamechangervsvitalityoninferno"	"Играта се променя"
 	"HighlightReel_aus2025_mzinhomomentumvsvitalityoninferno"	"Инерция"
+	"HighlightReel_aus2025_mzinhoquickkillsvsvitalityoninferno"	"Бързи убийства"
 	"HighlightReel_aus2025_ropzrampagevsthemongolzoninferno"	"Развилняване"
+	"HighlightReel_aus2025_ropzfiercefightvsthemongolzoninferno"	"Свирепо сражение"
+	"HighlightReel_aus2025_ropzfailedrevengevsthemongolzoninferno"	"Неуспешно отмъщение"
+	"HighlightReel_aus2025_senzuoneshotvsvitalityoninferno"	"Един изстрел"
 	"HighlightReel_aus2025_senzusmokesprayvsvitalityoninferno"	"Опушване на посоки"
+	"HighlightReel_aus2025_senzustrikingshotsvsvitalityoninferno"	"Поразителни изстрели"
+	"HighlightReel_aus2025_techno4ktechnotriumphvsvitalityoninferno"	"Технологичен триумф"
+	"HighlightReel_aus2025_techno4ktimedpushvsvitaltyoninferno"	"Навременен напън"
 	"HighlightReel_aus2025_techno4kclutchwinvsvitalityoninferno"	"Победа в критична схватка"
-	//
+	"CSGO_CollectibleCoin_aus2025_Champion"				"Шампион от BLAST.tv Austin 2025"
+	"CSGO_CollectibleCoin_aus2025_Champion_Desc"			"<b><font color='#F2A93E'>Champion at BLAST.tv Austin 2025</font></b>\n \nТози трофей беше присъден на победителя от значителния BLAST.tv Austin 2025 CS2 шампионат."
+	"CSGO_CollectibleCoin_aus2025_Finalist"				"Финалист от BLAST.tv Austin 2025"
+	"CSGO_CollectibleCoin_aus2025_Finalist_Desc"			"<b><font color='#F2A93E'>Finalist at BLAST.tv Austin 2025</font></b>\n \nТози трофей беше присъден на финалиста от значителния BLAST.tv Austin 2025 CS2 шампионат."
+	"CSGO_CollectibleCoin_aus2025_Semifinalist"				"Полуфиналист от BLAST.tv Austin 2025"
+	"CSGO_CollectibleCoin_aus2025_Semifinalist_Desc"			"<b><font color='#F2A93E'>Semifinalist at BLAST.tv Austin 2025</font></b>\n \nТози трофей беше присъден на полуфиналиста от значителния BLAST.tv Austin 2025 CS2 шампионат."
+	"CSGO_CollectibleCoin_aus2025_Quarterfinalist"				"Четвъртфиналист от BLAST.tv Austin 2025"
+	"CSGO_CollectibleCoin_aus2025_Quarterfinalist_Desc"			"<b><font color='#F2A93E'>Quarterfinalist at BLAST.tv Austin 2025</font></b>\n \nТози трофей беше присъден на четвъртфиналиста от значителния BLAST.tv Austin 2025 CS2 шампионат."
+
+		"CSGO_official_leaderboard_pickem_aus2025_team"	"Предизвикателството „Pick'Em“ BLAST.tv Austin 2025"
+		"CSGO_SupportGameAuthKey_Type_24"		"Управление на 2025 Austin „Pick'Em“"
+		"CSGO_SupportGameAuthKey_Desc_24"		"<b><font color='#F2A93E'>2025 Austin Pick'Em Management</font></b>\n \nУебсайтовете и приложения от трети страни могат да използват този удостоверителен код за достъп до прогнозите от 2025 Austin предизвикателството „Pick'Em“. Също така могат да Ви помогнат с поставянето на прогнозите през значителния CS2 шампионат BLAST.tv Austin 2025."
+		"CSGO_Tournament_Event_Name_24"			"Значителният CS2 шампионат BLAST.tv Austin 2025"
+		"CSGO_Tournament_Event_NameShort_24"	"BLAST.tv Austin 2025"
+		"CSGO_Tournament_Event_Location_24"		"Остин, 2025"
+		"store_nav_tournament_24"	"AUSTIN 2025"
+		"CSGO_Watch_Cat_Tournament_24"      "Austin 2025"
+		"CSGO_Watch_Info_Tournament_24"		"Относно BLAST.tv Austin 2025"
+		"CSGO_Watch_NoMatch_Tournament_24"   "Мачовете от BLAST.tv Austin 2025 ще бъдат извеждани тук.\nВ момента няма налични мачове на живо или такива, достъпни за сваляне."
+		"CSGO_Watch_Loading_Tournament_24"   "Зареждане на мачове от BLAST.tv Austin 2025…"
+
+		//
 		// 2025 BLAST.tv Austin 2025 CS2 Major Championship Strings Block End
 		// ======================================
 
@@ -29514,8 +29591,237 @@
 		
 		"StickerKit_elemental_craft_lenticular_blood_two"					"Рубинена вълна (лещовиден)"
 		"StickerKit_desc_elemental_craft_lenticular_blood_two"				"<b><font color='#F2A93E'>Ruby Wave (Lenticular)</font></b>"
-"StickerKit_warhammer_decals_paper_space_wolves"				"Космически вълци"
-"PatchKit_patch_banana"            "Луд банан"
+		
+		//Warhammer 40,000 Adeptus Astartes Sticker Capsule
+		
+		"StickerKit_warhammer_decals_paper_ultramarines"				"Ултра пехотинци"
+		"StickerKit_desc_warhammer_decals_paper_ultramarines"			"<b><font color='#F2A93E'>Ultramarines</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_dark_angels"					"Мрачни ангели"
+		"StickerKit_desc_warhammer_decals_paper_dark_angels"			"<b><font color='#F2A93E'>Dark Angels</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_blood_angels"				"Кървави ангели"
+		"StickerKit_desc_warhammer_decals_paper_blood_angels"			"<b><font color='#F2A93E'>Blood Angels</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_space_wolves"				"Космически вълци"
+		"StickerKit_desc_warhammer_decals_paper_space_wolves"			"<b><font color='#F2A93E'>Space Wolves</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_imperial_fists"				"Имперски юмруци"
+		"StickerKit_desc_warhammer_decals_paper_imperial_fists"			"<b><font color='#F2A93E'>Imperial Fists</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_salamanders"					"Саламандри"
+		"StickerKit_desc_warhammer_decals_paper_salamanders"			"<b><font color='#F2A93E'>Salamanders</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_white_scars"					"Бели белези"
+		"StickerKit_desc_warhammer_decals_paper_white_scars"			"<b><font color='#F2A93E'>White Scars</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_raven_guard"					"Гарванов пазител"
+		"StickerKit_desc_warhammer_decals_paper_raven_guard"			"<b><font color='#F2A93E'>Raven Guard</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_40k_skull"					"Астартес череп"
+		"StickerKit_desc_warhammer_decals_paper_40k_skull"				"<b><font color='#F2A93E'>Astartes Skull</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_raptors"						"Раптори"
+		"StickerKit_desc_warhammer_decals_paper_raptors"				"<b><font color='#F2A93E'>Raptors</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_iron_hands"					"Железни ръце"
+		"StickerKit_desc_warhammer_decals_paper_iron_hands"				"<b><font color='#F2A93E'>Iron Hands</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_40k_halo"					"Железен ореол"
+		"StickerKit_desc_warhammer_decals_paper_40k_halo"				"<b><font color='#F2A93E'>Iron Halo</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_flesh_tearers"				"Кожодерите"
+		"StickerKit_desc_warhammer_decals_paper_flesh_tearers"			"<b><font color='#F2A93E'>Flesh Tearers</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_scythes_emperor"				"Косите на императора"
+		"StickerKit_desc_warhammer_decals_paper_scythes_emperor"		"<b><font color='#F2A93E'>Scythes of the Emperor</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_blood_ravens"				"Кървави гарвани"
+		"StickerKit_desc_warhammer_decals_paper_blood_ravens"			"<b><font color='#F2A93E'>Blood Ravens</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_adeptus_astartes"			"Адептус Астартес"
+		"StickerKit_desc_warhammer_decals_paper_adeptus_astartes"		"<b><font color='#F2A93E'>Adeptus Astartes</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_crimson_fists"				"Пурпурни юмруци"
+		"StickerKit_desc_warhammer_decals_paper_crimson_fists"			"<b><font color='#F2A93E'>Crimson Fists</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_silver_skulls"				"Сребърни черепи"
+		"StickerKit_desc_warhammer_decals_paper_silver_skulls"			"<b><font color='#F2A93E'>Silver Skulls</font></b>"
+		
+		//Warhammer 40,000 Traitor Astartes Sticker Capsule
+		
+		"StickerKit_warhammer_decals_paper_world_eaters_1"					"Светоядци 1"
+		"StickerKit_desc_warhammer_decals_paper_world_eaters_1"				"<b><font color='#F2A93E'>World Eaters 1</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_world_eaters_2"					"Светоядци 2"
+		"StickerKit_desc_warhammer_decals_paper_world_eaters_2"				"<b><font color='#F2A93E'>World Eaters 2</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_word_bearers_1"					"Носители на словото 1"
+		"StickerKit_desc_warhammer_decals_paper_word_bearers_1"				"<b><font color='#F2A93E'>Word Bearers 1</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_word_bearers_2"					"Носители на словото 2"
+		"StickerKit_desc_warhammer_decals_paper_word_bearers_2"				"<b><font color='#F2A93E'>Word Bearers 2</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_thousand_sons_1"					"Хиляди синове 1"
+		"StickerKit_desc_warhammer_decals_paper_thousand_sons_1"			"<b><font color='#F2A93E'>Thousand Sons 1</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_thousand_sons_2"					"Хиляди синове 2"
+		"StickerKit_desc_warhammer_decals_paper_thousand_sons_2"			"<b><font color='#F2A93E'>Thousand Sons 2</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_night_lords_1"					"Властелини на нощта 1"
+		"StickerKit_desc_warhammer_decals_paper_night_lords_1"				"<b><font color='#F2A93E'>Night Lords 1</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_night_lords_2"					"Властелини на нощта 2"
+		"StickerKit_desc_warhammer_decals_paper_night_lords_2"				"<b><font color='#F2A93E'>Night Lords 2</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_iron_warriors_1"					"Железни воини 1"
+		"StickerKit_desc_warhammer_decals_paper_iron_warriors_1"			"<b><font color='#F2A93E'>Iron Warriors 1</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_iron_warriors_2"					"Железни воини 2"
+		"StickerKit_desc_warhammer_decals_paper_iron_warriors_2"			"<b><font color='#F2A93E'>Iron Warriors 2</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_emperors_children_1"				"Децата на императора 1"
+		"StickerKit_desc_warhammer_decals_paper_emperors_children_1"		"<b><font color='#F2A93E'>Emperor's Children 1</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_emperors_children_2"				"Децата на императора 2"
+		"StickerKit_desc_warhammer_decals_paper_emperors_children_2"		"<b><font color='#F2A93E'>Emperor's Children 2</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_death_guard_1"					"Смъртоносен пазител 1"
+		"StickerKit_desc_warhammer_decals_paper_death_guard_1"				"<b><font color='#F2A93E'>Death Guard 1</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_death_guard_2"					"Смъртоносен пазител 2"
+		"StickerKit_desc_warhammer_decals_paper_death_guard_2"				"<b><font color='#F2A93E'>Death Guard 2</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_black_legion_1"					"Черният легион 1"
+		"StickerKit_desc_warhammer_decals_paper_black_legion_1"				"<b><font color='#F2A93E'>Black Legion 1</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_black_legion_2"					"Черният легион 2"
+		"StickerKit_desc_warhammer_decals_paper_black_legion_2"				"<b><font color='#F2A93E'>Black Legion 2</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_alpha_legion_1"					"Алфа легион 1"
+		"StickerKit_desc_warhammer_decals_paper_alpha_legion_1"				"<b><font color='#F2A93E'>Alpha Legion 1</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_alpha_legion_2"					"Алфа легион 2"
+		"StickerKit_desc_warhammer_decals_paper_alpha_legion_2"				"<b><font color='#F2A93E'>Alpha Legion 2</font></b>"
+		
+		//Warhammer 40,000 Imperium Sticker Capsule
+		
+		"StickerKit_warhammer_decals_paper_adeptus_custodes_1"				"Адептус къстодес 1"
+		"StickerKit_desc_warhammer_decals_paper_adeptus_custodes_1"			"<b><font color='#F2A93E'>Adeptus Custodes 1</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_adeptus_custodes_2"				"Адептус къстодес 2"
+		"StickerKit_desc_warhammer_decals_paper_adeptus_custodes_2"			"<b><font color='#F2A93E'>Adeptus Custodes 2</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_adeptus_mechanicus_1"			"Адептус механикус 1"
+		"StickerKit_desc_warhammer_decals_paper_adeptus_mechanicus_1"		"<b><font color='#F2A93E'>Adeptus Mechanicus 1</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_adeptus_mechanicus_2"			"Адептус механикус 2"
+		"StickerKit_desc_warhammer_decals_paper_adeptus_mechanicus_2"		"<b><font color='#F2A93E'>Adeptus Mechanicus 2</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_adepta_sororitas_1"				"Сестри на битката 1"
+		"StickerKit_desc_warhammer_decals_paper_adepta_sororitas_1"			"<b><font color='#F2A93E'>Sisters of Battle 1</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_adepta_sororitas_2"				"Сестри на битката 2"
+		"StickerKit_desc_warhammer_decals_paper_adepta_sororitas_2"			"<b><font color='#F2A93E'>Sisters of Battle 2</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_adeptus_titanicus_1"				"Адептус титаникус 1"
+		"StickerKit_desc_warhammer_decals_paper_adeptus_titanicus_1"		"<b><font color='#F2A93E'>Adeptus Titanicus 1</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_adeptus_titanicus_2"				"Адептус титаникус 2"
+		"StickerKit_desc_warhammer_decals_paper_adeptus_titanicus_2"		"<b><font color='#F2A93E'>Adeptus Titanicus 2</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_astra_militarum"					"Астра милитарум 1"
+		"StickerKit_desc_warhammer_decals_paper_astra_militarum"			"<b><font color='#F2A93E'>Astra Militarum 1</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_astra_militarum_2"				"Астра милитарум 2"
+		"StickerKit_desc_warhammer_decals_paper_astra_militarum_2"			"<b><font color='#F2A93E'>Astra Militarum 2</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_adeptus_arbites"					"Адептус Арбитес"
+		"StickerKit_desc_warhammer_decals_paper_adeptus_arbites"			"<b><font color='#F2A93E'>Adeptus Arbites</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_cadia"							"Кадия"
+		"StickerKit_desc_warhammer_decals_paper_cadia"						"<b><font color='#F2A93E'>Cadia</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_catachan"						"Катачан"
+		"StickerKit_desc_warhammer_decals_paper_catachan"					"<b><font color='#F2A93E'>Catachan</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_ecclesiarchy"					"Еклесиархия"
+		"StickerKit_desc_warhammer_decals_paper_ecclesiarchy"				"<b><font color='#F2A93E'>Ecclesiarchy</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_imperial_knights"				"Имперски рицари"
+		"StickerKit_desc_warhammer_decals_paper_imperial_knights"			"<b><font color='#F2A93E'>Imperial Knights</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_inquisition"						"Инквизиция"
+		"StickerKit_desc_warhammer_decals_paper_inquisition"				"<b><font color='#F2A93E'>Inquisition</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_officio_assassinorum"			"Официо Ассасинорум"
+		"StickerKit_desc_warhammer_decals_paper_officio_assassinorum"		"<b><font color='#F2A93E'>Officio Assassinorum</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_rogue_trader"					"Нечестив търговец"
+		"StickerKit_desc_warhammer_decals_paper_rogue_trader"				"<b><font color='#F2A93E'>Rogue Trader</font></b>"
+		
+		//Warhammer 40,000 Xenos Sticker Capsule
+		
+		"StickerKit_warhammer_decals_paper_aeldari_1"					"Аелдари 1"
+		"StickerKit_desc_warhammer_decals_paper_aeldari_1"				"<b><font color='#F2A93E'>Aeldari 1</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_aeldari_2"					"Аелдари 2"
+		"StickerKit_desc_warhammer_decals_paper_aeldari_2"				"<b><font color='#F2A93E'>Aeldari 2</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_drukhari_1"					"Друхари 1"
+		"StickerKit_desc_warhammer_decals_paper_drukhari_1"				"<b><font color='#F2A93E'>Drukhari 1</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_drukhari_2"					"Друхари 2"
+		"StickerKit_desc_warhammer_decals_paper_drukhari_2"				"<b><font color='#F2A93E'>Drukhari 2</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_genestealer_cults_1"			"Култовете за крадци на гени 1"
+		"StickerKit_desc_warhammer_decals_paper_genestealer_cults_1"	"<b><font color='#F2A93E'>Genestealer Cults 1</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_genestealer_cults_2"			"Култовете за крадци на гени 2"
+		"StickerKit_desc_warhammer_decals_paper_genestealer_cults_2"	"<b><font color='#F2A93E'>Genestealer Cults 2</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_harlequins_1"				"Арлекини 1"
+		"StickerKit_desc_warhammer_decals_paper_harlequins_1"			"<b><font color='#F2A93E'>Harlequins 1</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_harlequins_2"				"Арлекини 2"
+		"StickerKit_desc_warhammer_decals_paper_harlequins_2"			"<b><font color='#F2A93E'>Harlequins 2</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_leagues_votann_1"			"Лиги на Вотан 1"
+		"StickerKit_desc_warhammer_decals_paper_leagues_votann_1"		"<b><font color='#F2A93E'>Leagues of Votann 1</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_leagues_votann_2"			"Лиги на Вотан 2"
+		"StickerKit_desc_warhammer_decals_paper_leagues_votann_2"		"<b><font color='#F2A93E'>Leagues of Votann 2</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_necrons_1"					"Некрон Анкх"
+		"StickerKit_desc_warhammer_decals_paper_necrons_1"				"<b><font color='#F2A93E'>Necron Ankh</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_necrons_2"					"Некрон глифове"
+		"StickerKit_desc_warhammer_decals_paper_necrons_2"				"<b><font color='#F2A93E'>Necron Glyphs</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_orks_1"						"Орки 1"
+		"StickerKit_desc_warhammer_decals_paper_orks_1"					"<b><font color='#F2A93E'>Orks 1</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_orks_2"						"Орки 2"
+		"StickerKit_desc_warhammer_decals_paper_orks_2"					"<b><font color='#F2A93E'>Orks 2</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_tau_empire_1"				"Империя Т'ау 1"
+		"StickerKit_desc_warhammer_decals_paper_tau_empire_1"			"<b><font color='#F2A93E'>T'au Empire 1</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_tau_empire_2"				"Империя Т'ау 2"
+		"StickerKit_desc_warhammer_decals_paper_tau_empire_2"			"<b><font color='#F2A93E'>T'au Empire 2</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_tyranids_1"					"Тираниди 1"
+		"StickerKit_desc_warhammer_decals_paper_tyranids_1"				"<b><font color='#F2A93E'>Tyranids 1</font></b>"
+		
+		"StickerKit_warhammer_decals_paper_tyranids_2"					"Тираниди 2"
+		"StickerKit_desc_warhammer_decals_paper_tyranids_2"				"<b><font color='#F2A93E'>Tyranids 2</font></b>"
+		
+		//Sugarface 2 Sticker Capsule
+		
+		"StickerKit_sugarface2_paper_clavis"							"Клавис"
+		"StickerKit_desc_sugarface2_paper_clavis"						"<b><font color='#F2A93E'>Clavis</font></b>"
+"StickerKit_community_2025_holo_evidence"						"Доказателство (холограмен)"
+		"PatchKit_patch_banana"            "Луд банан"
 		"PatchKit_desc_patch_banana"       "<b><font color='#F2A93E'>Crazy Banana</font></b>\n \n<i>Агент за мащаб</i>"
 		"PatchKit_patch_boss"              "Шефът"
 		"PatchKit_desc_patch_boss"         "<b><font color='#F2A93E'>The Boss</font></b>\n \n<i>Тежка е царската корона</i>"
@@ -33706,7 +34012,9 @@
 		
 		"PaintKit_m4a4_green_camo"							"<b><font color='#F2A93E'>Choppa</font></b>\n \nБоядисано с персонализирана шарка, използвайки зелен камуфлаж.\n\n<i>Увеличете своята дигитална следа</i>"
 		"PaintKit_m4a4_green_camo_Tag"						"Хеликоптер"
-// END COMMUNITY_36
+"PaintKit_mp5sd_chrome_Tag"						"Фокусиране" 
+		
+		// END COMMUNITY_36
 
 // OVERPASS_2024
 				
@@ -38140,6 +38448,8 @@ Counter-Strike разполага с четири основни игрални 
 		"PANOHUD_Spectate_Navigation_New_Cameraman_On"		"[{s:bind_radio}] Вкл. на оператор за камерата "
 		"PANOHUD_Spectate_Navigation_ToggleSpec"			"[{s:bind_drop}] Малко табло с резултати "
 		"PANOHUD_Spectate_Navigation_ToggleOverview"		"[{s:bind_duck}] Обзор"
+		"PANOHUD_Spectate_Navigation_PlayHighlight"			"[{s:bind_drop}] Възпроизвеждане на най-добър момент"
+		"PANOHUD_Spectate_Navigation_CopyHighlightAndClose"	"[{s:bind_drop}] Копиране към клипборда и затваряне"
 		"PANOHUD_GhostBecomeSpectator"						"Натиснете [%s1], така че да станете наблюдатели"
 
 		"SFUIHUD_Spectate_You_Are_Dead"				"<font color=\"%s1\">Гледате %s2</font>"
@@ -40804,6 +41114,10 @@ Counter-Strike разполага с четири основни игрални 
 		"SFUI_MajorEventVenue_Subtitle_23_2"	"Гледайте как най-добрите отбори в света се съревновават на значителния CS2 шампионат Perfect World Shanghai 2024"
 		"SFUI_MajorEventVenue_StreamTitle_23_2" "Copenhagen 2024 — Perfect World Major — Излъчване на живо"
 
+		"SFUI_MajorEventVenue_Title_24_2"		"На живо от Остин"
+		"SFUI_MajorEventVenue_Subtitle_24_2"	"Гледайте как най-добрите отбори в света се съревновават на значителния CS2 шампионат BLAST.tv Austin 2025"
+		"SFUI_MajorEventVenue_StreamTitle_24_2" "Austin 2025 — BLAST.tv значителен шампионат — Излъчване на живо"
+
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// Countries
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -41883,6 +42197,7 @@ Counter-Strike разполага с четири основни игрални 
 		"SFUI_ProPlayer_kye" "Кайке Бертолучи"
 		"SFUI_ProPlayer_l00m1" "Лукас Хоукланд"
 		"SFUI_ProPlayer_lake" "Мейсън Сандерсън"
+		"SFUI_ProPlayer_luchov" "Лучано Херера"
 		"SFUI_ProPlayer_magnojez" "Кирил Роднов"
 		"SFUI_ProPlayer_mercury" "Джингсянг Хуанг"
 		"SFUI_ProPlayer_mlhzin" "Матеус Марсола"
@@ -41890,6 +42205,7 @@ Counter-Strike разполага с четири основни игрални 
 		"SFUI_ProPlayer_moseyuh" "Чен Циянхао"
 		"SFUI_ProPlayer_nettik" "Кори Браун"
 		"SFUI_ProPlayer_nicx" "Ник Лий"
+		"SFUI_ProPlayer_noktse" "Николас Давила"
 		"SFUI_ProPlayer_piriajr" "Гуйлерме Барбоса"
 		"SFUI_ProPlayer_reck" "Итън Серано"
 		"SFUI_ProPlayer_regali" "Юлиян Харджау"
@@ -41898,7 +42214,9 @@ Counter-Strike разполага с четири основни игрални 
 		"SFUI_ProPlayer_s1n" "Илаяс Стайн"
 		"SFUI_ProPlayer_spooke" "Оле Грундстрьом"
 		"SFUI_ProPlayer_swisher" "Майкъл Шмид"
+		"SFUI_ProPlayer_timo" "Кристиан Перез"
 		"SFUI_ProPlayer_tn1r" "Андрей Татаринович"
+		"SFUI_ProPlayer_tomaszin" "Томас Корна"
 		"SFUI_ProPlayer_xant3r" "Кирил Кононов"
 		"SFUI_ProPlayer_yxngstxr" "Саймън Бойж"
 		"SFUI_ProPlayer_zweih" "Иван Гогин"
@@ -45474,6 +45792,7 @@ Counter-Strike разполага с четири основни игрални 
 		"PlayMenuReplayNewUserTrainingButton"		"Преиграване на „Тренировъчния ден“"
 
 
+		"CSGO_VanityLoadout_Inspect"				"Оглед"
 		//////////////////////
 		// ANNOTATIONS
 		/////////////////////
@@ -47319,7 +47638,22 @@ Counter-Strike разполага с четири основни игрални 
 		"Chatwheel_description" "Чат рулетката предоставя бърз достъп до списък от полезни радио команди, позволяващ персонализиране."
 //
 //
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+"laptop_window_seal_title"					"СТАТУС"
+		"dealer_offer_attachment_title"							"{s:item-name}"
+		"dealer_offer_attachment_wear"						"{s:item-rarity}"
+		"user_btn_next_3"		"Пропускане"
+		"dealer_offer_1"								"I"
+		"dealer_offer_2"								"II"
+		"dealer_offer_3"								"III"
+		"dealer_offer_4"								"IV"
+		"dealer_offer_5"								"V"
+		"dealer_offer_6"								"VI"
+		"dealer_offer_7"								"VII"
+		"dealer_offer_8"								"VIII"
+		"dealer_offer_9"								"IX"
+		"dealer_offer_10"								"10"
+
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -47498,8 +47832,8 @@ Counter-Strike разполага с четири основни игрални 
 		"quest_11015_var_desc:p{mission-points}"	 	"Спечелете рунд в <b>„{s:gamemode}“ — {s:location}</b>.#|#Спечелете рундове в <b>„{s:gamemode}“ — {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Спечелете рунд.#|#Спечелете рундове."
 
-// crow_mask_48593_comment
-// crow_mask_48594_comment
+// crow_mask_48605_comment
+// crow_mask_48606_comment
 }
 
 
