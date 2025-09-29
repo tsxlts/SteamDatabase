@@ -4311,7 +4311,7 @@
 		"CSGO_crate_sticker_pack_community2025_capsule_desc"			"这个收藏品含有多款印花，于2025年9月发布。"
 		"CSGO_crate_sticker_pack_community_2025_short"					"2025社区印花"
 		
-		"CSGO_crate_community_36"				"创世终端机密封版"
+		"CSGO_crate_community_36"				"封装的创世终端机"
 		"CSGO_crate_community_36^volatile"		"创世终端机激活版"
 		"SprayKit_vcap1_ace_01"		"王牌"
 "SprayKit_vcap1_banana"		"香蕉"
