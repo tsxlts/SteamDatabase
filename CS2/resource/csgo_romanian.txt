@@ -408,7 +408,6 @@
 		"LoadingProgress_SignonLocal"		"Se inițializează resursele..."
 		"LoadingProgress_SignonDataLocal"	"Se inițializează datele jocului..."
 		"LoadingProgress_CompilingShaders"	"Se compilează shaderele (%s1/%s2)..."
-
 		"LoadingProgress_BeginConnect"		"Se stabilește conexiunea la server..."
 		"LoadingProgress_Connecting"		"Se conectează la server..."
 		"LoadingProgress_ProcessServerInfo"	"Se obțin informațiile serverului..."
@@ -3275,7 +3274,6 @@
 		"CSGO_Collectible_MapTokenDogtown_Desc"			"Acordată celor care au realizat harta de CS2 „Dogtown”"
 		"CSGO_Collectible_MapTokenBrewery"				"Moneda hărții Brewery"
 		"CSGO_Collectible_MapTokenBrewery_Desc"			"Acordată celor care au realizat harta de CS2 „Brewery”"
-
 		"CSGO_CollectibleCoin_FortiusQuoFidelius"	"Insignă de loialitate"
 		"CSGO_CollectibleCoin_FortiusQuoFidelius_Desc"	"Această insignă comemorează apartenența loială la comunitatea Counter-Strike înainte de actualizarea Danger Zone.\n\n<i>Forță prin loialitate.</i>"
 		"CSGO_CollectibleCoin_FiveYearService"		"Monedă de veteran - 5 ani"
@@ -27555,7 +27553,7 @@ Colecția Spectrum"
 		"keychain_kc_wpn_tknife_crystal"					"Semi-Precious"
 		"keychain_kc_wpn_ctknife_gold"						"Baby Karat CT"
 		"keychain_kc_wpn_tknife_gold"						"Baby Karat T"
-		// Paint Kits
+// Paint Kits
 		"PaintKit_Default"							"Kit de vopsea fără nume"
 		"PaintKit_Default_Tag"						"-"//
 
@@ -32826,7 +32824,6 @@ Colecția Spectrum"
 
 		"SFUI_Store_Market_Link"                    "Vezi pe piață"
 		"SFUI_Store_Limit_Offer"                    "Ofertă limitată"
-		"SFUI_Store_Offer_Days_Remaining:p{daysremaining}"	"{d:daysremaining} zi rămasă#|#{d:daysremaining} zile rămase#|#{d:daysremaining} de zile rămase"
 		"SFUI_Store_Last_Chance"                    "Ultima șansă"
 		"SFUI_Store_Limited_Time_Tagline"           "de a profita de această ofertă"
 		"SFUI_Store_Limited_Bid_Tagline"			"pentru a face o ofertă"
@@ -36903,7 +36900,7 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		//Clan
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		"SFUI_Settings_ClanTag_Title"								"Acronimul de clan al grupului Steam"
-		"SFUI_Settings_ClanTag_None"								"Niciun acronim"
+		"SFUI_Settings_ClanTag_None"								"Niciun acronim de echipă"
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Buy Menu
@@ -41779,7 +41776,6 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"inv_empty_lister"					"Nu s-a putut găsi niciun obiect de tipul {s:type} în inventarul tău."
 		"inv_empty_lister_for_use"			"Nu s-a putut găsi niciun obiect care poate să fie folosit cu {s:type} în inventarul tău."
 		"inv_empty_lister_nocaskets"		"Nu s-a putut găsi nicio unitate de depozitare care să-ți poată depozita obiectele.\nUnitățile de depozitare pot fi achiziționate din magazinul din joc."
-		"inv_empty_lister_for_stattrackswap" "Nu s-a putut găsi niciun obiect cu care să se schimbe valorile StatTrak™ de tipul {s:type} în inventarul tău.\nValorile StatTrak™ pot fi schimbate doar între două obiecte de același tip."
 		"inv_empty_lister_general"			"Nu s-a găsit niciun obiect pentru categoria selectată din inventar."
 		"inv_empty_loadout_slot"			"Nu există niciun element echipat pentru acest slot"
 		"inv_header_rarity"					"Raritate:"
@@ -44663,19 +44659,19 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"dealer_offer_attachment_wear"						"{s:item-rarity}"
 		"dealer_offer_attachment_remaining_title"				"OFERTA #{d:offer-total}"
 		"dealer_offer_attachment_remaining"						"Oferta #{d:offer-total}"
-		"dealer_offer_received_count"							"Oferta <b>{s:offer-count}</b>"
+		"dealer_offer_received_count"							"<b>{s:offer-count}</b> ofertă"
 		"dealer_offer_attachment_final_title"					"OFERTA FINALĂ"
-		"dealer_offer_attachment_final"							"A {s:offer-count}-a și ultima ofertă"
+		"dealer_offer_attachment_final"							"{s:offer-count} și ultima ofertă"
 		"dealer_offer_attachment_status"						"Ofertă – {s:offer-status}"
 		"dealer_offer_attachment_status-active"					"<b><span class=\"offer-active\">activă</span></b>"
 		"dealer_offer_attachment_status-price"					"<b><span class=\"offer-active\">{s:offer-price}</span></b>"
 		"dealer_offer_attachment_status-declined-price"			"{s:offer-price}"
-		"dealer_offer_attachment_status-declined"				"<span class=\"offer-declined\">Oferta {s:offer-count} – refuzată</span>"
+		"dealer_offer_attachment_status-declined"				"<span class=\"offer-declined\">{s:offer-count} ofertă – refuzată</span>"
 
 		"user_btn_purchase_desc_purchase"		"Menține apăsat pentru a achiziționa acest obiect. După achiziție, terminalul va fi înlăturat."
 		"user_btn_purchase_desc_continue"		"Menține apăsat pentru a refuza această ofertă și a solicita una nouă."
-		"user_btn_purchase_desc_end"		"Refuză oferta finală și înlătura terminalul."
-		"user_btn_purchase_title"			"<b>Oferta {s:offer-count}</b> – răspunsuri sugerate"
+		"user_btn_purchase_desc_end"		"Refuză oferta finală și înlătură terminalul."
+		"user_btn_purchase_title"			"<b>{s:offer-count} ofertă</b> – răspunsuri sugerate"
 		"user_btn_purchase_final_title"		"<b>Oferta finală</b> – răspunsuri sugerate"
 		"user_btn_decline_desc"				"Refuză oferta aceasta și solicită una nouă."
 		"user_btn_accept"		"Accept oferta la <b>{s:price}</b>"
@@ -44696,6 +44692,20 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"user_btn_next_6"		"Nu cred"
 		"user_btn_next_7"		"Poate altă dată"
 		"user_btn_pause"		"Întrerupe înțelegerea"
+		"user_btn_end"			"Refuză oferta finală"
+
+		"dealer_offer_Unknown"							"-"
+		"dealer_offer_1"								"Prima"
+		"dealer_offer_2"								"A doua"
+		"dealer_offer_3"								"A treia"
+		"dealer_offer_4"								"A patra"
+		"dealer_offer_5"								"A cincea"
+		"dealer_offer_6"								"A șasea"
+		"dealer_offer_7"								"A șaptea"
+		"dealer_offer_8"								"A opta"
+		"dealer_offer_9"								"A noua"
+		"dealer_offer_10"								"A zecea"
+
 		"current_offer_tooltip"		"Oferta actuală pentru tine a traficantului de arme."
 		"declined_offer_tooltip"	"Ofertă refuzată."
 		"future_offer_tooltip"		"Ofertă nedezvăluită încă."
@@ -44713,8 +44723,6 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"popup_signal_ok" 				"Semnal puternic"
 		"laptop_battery_tooltip" 		"Baterie: {d:percent}%"
 		"laptop_original_seal_tooltip" 	"Orice obiect achiziționat prin intermediul acestui terminal Uplink va veni cu un certificat de proprietar inițial, care este valabil cât timp ești proprietarul acestuia."
-		"laptop_zoom_tooltip" 			"Folosește rotița mouse-ului pentru zoom."
-		"laptop_pan_tooltip" 			"Menține apăsată tasta „Shift” și trage pentru a deplasa camera."
 		"laptop_pricing_tooltip"		"Prețurile sunt globale și ajustate automat în funcție de cererea pentru fiecare obiect din această colecție."
 
 
@@ -45098,6 +45106,18 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		
 		"quest_11015_var_desc:p{mission-points}"	 	"Câștigă o rundă în <b>{s:gamemode}: {s:location}</b>.#|#Câștigă runde în <b>{s:gamemode}: {s:location}</b>.#|#Câștigă runde în <b>{s:gamemode}: {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Câștigă o rundă#|#Câștigă runde#|#Câștigă runde"
+
+// crow_mask_48775_comment
+// crow_mask_48776_comment
+}
+
+
+
+
+}
+
+
+tigă runde#|#Câștigă runde"
 
 // crow_mask_48605_comment
 // crow_mask_48606_comment

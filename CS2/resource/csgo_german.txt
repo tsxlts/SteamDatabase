@@ -408,7 +408,6 @@
 		"LoadingProgress_SignonLocal"		"Ressourcen werden initialisiert …"
 		"LoadingProgress_SignonDataLocal"	"Spieldaten werden initialisiert …"
 		"LoadingProgress_CompilingShaders"	"Shader werden kompiliert (%s1/%s2) …"
-
 		"LoadingProgress_BeginConnect"		"Verbindungsversuch …"
 		"LoadingProgress_Connecting"		"Verbindung wird hergestellt …"
 		"LoadingProgress_ProcessServerInfo"	"Serverinformationen werden abgerufen …"
@@ -3266,7 +3265,6 @@
 		"CSGO_Collectible_MapTokenDogtown_Desc"			"Würdigt die Ersteller der CS2-Karte „Dogtown“."
 		"CSGO_Collectible_MapTokenBrewery"				"Münze der Karte Brewery"
 		"CSGO_Collectible_MapTokenBrewery_Desc"			"Würdigt die Ersteller der CS2-Karte „Brewery“."
-
 		"CSGO_CollectibleCoin_FortiusQuoFidelius"	"Loyalitätsabzeichen"
 		"CSGO_CollectibleCoin_FortiusQuoFidelius_Desc"	"Dieses Abzeichen ist ein Andenken für loyale Mitglieder in der Counter-Strike-Community vor der Veröffentlichung des Gefahrenzonen-Updates.\n\n<i>Stärke durch Loyalität.</i>"
 		"CSGO_CollectibleCoin_FiveYearService"		"5-Jahre-Veteranenmünze"
@@ -4307,13 +4305,15 @@
 		"CSGO_crate_sticker_pack_sugarface2_capsule_desc"				"Diese Aufkleberkollektion enthält einige Aufkleber der Variante „Zuckerschnute“. Veröffentlicht im September 2025."
 		"CSGO_crate_sticker_pack_sugarface2_short"						"Aufkleber „Zuckerschnute 2“"
 		
-		"CSGO_crate_sticker_pack_community2025_capsule"	    			"Community-Aufkleberkollektion 2025"
 		"CSGO_crate_sticker_pack_community2025_capsule_desc"			"Diese Kollektion enthält Aufkleber von Community-Künstlern. Veröffentlicht im September 2025."
-		"CSGO_crate_sticker_pack_community_2025_short"					"Community-Aufkleber 2025"
-		
 		"CSGO_crate_community_36"				"Versiegeltes Genesis-Uplink-Terminal"
 		"CSGO_crate_community_36^volatile"		"Genesis-Uplink-Terminal aktivieren"
-		"SprayKit_vcap1_ace_01"		"Ace"
+		"CSGO_crate_keychain_pack_kc_drboom_capsule"	    	"Anhängerkollektion „Dr. Boom“"
+		"CSGO_crate_keychain_pack_kc_drboom_capsule_short"	    "Anhänger „Dr. Boom“"
+		
+		"CSGO_crate_keychain_pack_kc_ml_community_01_capsule_short"	    "Anhänger „Würstchenbude (Community)“"
+		
+"SprayKit_vcap1_ace_01"		"Ace"
 "SprayKit_vcap1_banana"		"Banana"
 "SprayKit_vcap1_cerberus"		"Cerberus"
 "SprayKit_vcap1_clutch_01"		"Clutch King"
@@ -5220,7 +5220,6 @@
 		"CSGO_set_dust_2_2021_short"	"Dust2 2021"
 		"CSGO_set_mirage_2021"			"Kollektion „Mirage 2021“"
 		"CSGO_set_mirage_2021_short"	"Mirage 2021"
-		"CSGO_set_community_25"			"Kollektion \"Prisma 2\""
 		"CSGO_set_community_26"			"Kollektion „Durchbruch“"
 		"CSGO_set_community_27"			"Kollektion „Zerbrochener Reißzahn“"
 		"CSGO_set_op10_ct"			"Kollektion „Kontrolle“"
@@ -28150,7 +28149,7 @@
 		"keychain_kc_wpn_tknife_crystal"					"Halbedelstein"
 		"keychain_kc_wpn_ctknife_gold"						"Kleines Goldmesser (AT)"
 		"keychain_kc_wpn_tknife_gold"						"Kleines Goldmesser (T)"
-		// Paint Kits
+// Paint Kits
 		"PaintKit_Default"							"Unbenannte Lackierung"
 		"PaintKit_Default_Tag"						"-"//
 
@@ -33421,7 +33420,6 @@
 
 		"SFUI_Store_Market_Link"                    "Im Markt anzeigen"
 		"SFUI_Store_Limit_Offer"                    "Zeitlich begrenztes Angebot"
-		"SFUI_Store_Offer_Days_Remaining:p{daysremaining}"	"noch {d:daysremaining} Tag#|#noch {d:daysremaining} Tage"
 		"SFUI_Store_Last_Chance"                    "Letzte Chance"
 		"SFUI_Store_Limited_Time_Tagline"           "um dieses Angebot einzulösen"
 		"SFUI_Store_Limited_Bid_Tagline"			"um auf dieses Angebot zu bieten"
@@ -42374,7 +42372,6 @@
 		"inv_empty_lister"					"In Ihrem Inventar konnten keine Gegenstände für {s:type} gefunden werden."
 		"inv_empty_lister_for_use"			"In Ihrem Inventar konnten keine Gegenstände zur Verwendung mit {s:type} gefunden werden."
 		"inv_empty_lister_nocaskets"		"Es konnten keine Speichereinheiten gefunden werden, die Ihre Gegenstände lagern.\nSie können Speichereinheiten im Spiel kaufen."
-		"inv_empty_lister_for_stattrackswap" "In Ihrem Inventar konnten keine Gegenstände zum Austausch der StatTrak™-Werte mit {s:type} gefunden werden.\nStatTrak™-Werte können nur zwischen zwei Gegenständen des gleichen Typs ausgetauscht werden."
 		"inv_empty_lister_general"			"In Ihrem Inventar konnten keine Gegenstände für die ausgewählten Kategorien gefunden werden."
 		"inv_empty_loadout_slot"			"Kein Gegenstand für diesen Slot ausgerüstet"
 		"inv_header_rarity"					"Seltenheit:"
@@ -45287,9 +45284,9 @@
 		"future_offer_tooltip"		"Angebot noch nicht erhalten."
 		"laptop_expiration_tooltip"		"Gibt die verbleibende Zeit an, bis dieses Uplink-Terminal samt Angeboten abläuft."
 		"collection_xp_tooltip"			"Verdienen Sie EP, indem Sie erhaltene Angebote dieser Kollektion katalogisieren. Öffnen, um den Fortschritt anzuzeigen und EP einzulösen."
-		"popup_lootlist_title"			"EP für Kollektionskatalogisierung"
+		"popup_lootlist_title"			"EP für Katalogisierung"
 		"popup_lootlist_desc"			"Verdienen Sie EP, indem Sie erhaltene Angebote dieser Kollektion katalogisieren."
-		"popup_lootlist_progress"		"{d:seen}/{d:total} Angebote erhalten"
+		"popup_lootlist_progress"		"{d:seen}/{d:total} Angebote erh."
 		"popup_lootlist_claim_xp"		"Bonus-EP einlösen"
 		"popup_lootlist_claim_ww"		"EP werden eingelöst …"
 		"popup_lootlist_claim_ok"		"✅ EP eingelöst"
@@ -45299,8 +45296,6 @@
 		"popup_signal_ok" 				"Starkes Signal"
 		"laptop_battery_tooltip" 		"Akkuladung: {d:percent} %"
 		"laptop_original_seal_tooltip" 	"Jeder über dieses Uplink-Terminal gekaufte Gegenstand kommt mit einem Erstbesitzerzertifikat, das gültig ist, solange Sie der Besitzer sind."
-		"laptop_zoom_tooltip" 			"Scrollen Sie mit dem Mausrad, um die Ansicht zu vergrößern bzw. zu verkleinern."
-		"laptop_pan_tooltip" 			"Klicken und ziehen Sie bei gedrückter Umschalttaste mit der Maus, um den Gegenstand neu auszurichten."
 		"laptop_pricing_tooltip"		"Die Preise sind weltweit einheitlich und werden automatisch basierend auf der Nachfrage für jeden Gegenstand in dieser Kollektion angepasst."
 
 
@@ -45386,7 +45381,7 @@
 		"dealer_message_next_offer_27"   "<!--1-->Nicht ganz dein Kaliber, was? Dann wandert sie eben in meine private Sammlung. Wie steht es damit?"
 		"dealer_message_next_offer_28"   "<!--1-->Du hast Geschmack. Mal sehen, ob die nächste deinen hohen Ansprüchen gerecht wird."
 		"dealer_message_next_offer_29"   "<!--1-->Okay, das war lediglich die oberste Waffe vom Stapel. Lass mich etwas tiefer graben."
-		"dealer_message_next_offer_30"   "<!--1-->Vergiss die letzte. Diese hier wollte ich dir ursprünglich zeigen."
+		"dealer_message_next_offer_30"   "<!--1-->Vergiss die letzte Waffe. Diese hier wollte ich dir ursprünglich zeigen."
 		"dealer_message_next_offer_31"   "<!--1-->Hier steht dein Name drauf. Nicht im wahrsten Sinne des Wortes, das ist saubere Ware."
 		"dealer_message_next_offer_32"   "<!--1-->Dein Budget ist begrenzt, ich verstehe das. Vielleicht wartest du auf etwas Bestimmtes. So wie das hier."
 		"dealer_message_next_offer_33"   "<!--1-->Das war nur ein Test. Du hast bestanden. Hier ist mein eigentliches Angebot."
@@ -45680,6 +45675,22 @@
 		"quest_11013_var_ingame:p{mission-points}"		"Gewinnen Sie eine Runde.#|#Gewinnen Sie mehrere Runden."
 		
 		"quest_11014_var_desc:p{mission-points}"	 	"Gewinnen Sie eine Runde im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.#|#Gewinnen Sie mehrere Runden im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>."
+		"quest_11014_var_ingame:p{mission-points}"		"Gewinnen Sie eine Runde.#|#Gewinnen Sie mehrere Runden."
+		
+		"quest_11015_var_desc:p{mission-points}"	 	"Gewinnen Sie eine Runde im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.#|#Gewinnen Sie mehrere Runden im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>."
+		"quest_11015_var_ingame:p{mission-points}"		"Gewinnen Sie eine Runde.#|#Gewinnen Sie mehrere Runden."
+
+// crow_mask_48775_comment
+// crow_mask_48776_comment
+}
+
+
+
+
+}
+
+
+pielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>."
 		"quest_11014_var_ingame:p{mission-points}"		"Gewinnen Sie eine Runde.#|#Gewinnen Sie mehrere Runden."
 		
 		"quest_11015_var_desc:p{mission-points}"	 	"Gewinnen Sie eine Runde im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.#|#Gewinnen Sie mehrere Runden im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>."

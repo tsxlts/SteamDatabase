@@ -408,7 +408,6 @@
 		"LoadingProgress_SignonLocal"		"Inicializando recursos..."
 		"LoadingProgress_SignonDataLocal"	"Inicializando dados da partida..."
 		"LoadingProgress_CompilingShaders"	"Compilando sombreadores (%s1 de %s2)..."
-
 		"LoadingProgress_BeginConnect"		"Estabelecendo conexão ao servidor..."
 		"LoadingProgress_Connecting"		"Conectando-se ao servidor..."
 		"LoadingProgress_ProcessServerInfo"	"Coletando informações do servidor..."
@@ -3273,7 +3272,6 @@
 		"CSGO_Collectible_MapTokenDogtown_Desc"			"Comemora a autoria do mapa \"Dogtown\" do CS2."
 		"CSGO_Collectible_MapTokenBrewery"				"Moeda do Mapa Brewery"
 		"CSGO_Collectible_MapTokenBrewery_Desc"			"Comemora a autoria do mapa \"Brewery\" do CS2."
-
 		"CSGO_CollectibleCoin_FortiusQuoFidelius"	"Insígnia de Lealdade"
 		"CSGO_CollectibleCoin_FortiusQuoFidelius_Desc"	"Comemora a sua lealdade à comunidade do Counter-Strike antes do lançamento do modo de jogo Zona de Perigo.\n\n<i>Da lealdade vem a força.</i>"
 		"CSGO_CollectibleCoin_FiveYearService"		"Moeda dos 5 Anos de Serviço"
@@ -27892,6 +27890,7 @@
 		"StickerKit_community_2025_paper_lock_in"						"Trancar"
 		"StickerKit_community_2025_paper_mimicapsule"					"Mimicápsula"
 		"StickerKit_community_2025_paper_pop_pup"						"Popzinho"
+		"StickerKit_community_2025_paper_pots"							"ERAP"
 		"StickerKit_community_2025_paper_sent_with_love"				"Enviada com Carinho"
 		"StickerKit_community_2025_paper_skelly_stab"					"Facada Esquelética"
 		"StickerKit_community_2025_paper_vice_cursor"					"Cursor Viciado"
@@ -28154,7 +28153,7 @@
 		"keychain_kc_wpn_tknife_crystal"					"Semipreciosa"
 		"keychain_kc_wpn_ctknife_gold"						"Faquinha de Bebê (CT)"
 		"keychain_kc_wpn_tknife_gold"						"Faquinha de Bebê (T)"
-		// Paint Kits
+// Paint Kits
 		"PaintKit_Default"							"Kit de Pintura Sem Nome"
 		"PaintKit_Default_Tag"						"-"//
 
@@ -33425,7 +33424,6 @@
 
 		"SFUI_Store_Market_Link"                    "Ver no Mercado"
 		"SFUI_Store_Limit_Offer"                    "Oferta de tempo limitado"
-		"SFUI_Store_Offer_Days_Remaining:p{daysremaining}"	"{d:daysremaining} dia restante#|#{d:daysremaining} dias restantes"
 		"SFUI_Store_Last_Chance"                    "Última chance"
 		"SFUI_Store_Limited_Time_Tagline"           "para obter esta oferta"
 		"SFUI_Store_Limited_Bid_Tagline"			"para dar um lance nesta oferta"
@@ -42378,7 +42376,6 @@
 		"inv_empty_lister"					"Nenhum item do tipo \"{s:type}\" foi encontrado no inventário."
 		"inv_empty_lister_for_use"			"Nenhum item compatível com \"{s:type}\" foi encontrado no inventário."
 		"inv_empty_lister_nocaskets"		"Você não possui unidades para guardar os itens.\nVocê pode comprar unidades pela loja do jogo."
-		"inv_empty_lister_for_stattrackswap" "Nenhum item para troca de contadores StatTrak™ foi encontrado no inventário.\nContadores StatTrak™ só podem ser trocados entre itens do mesmo tipo."
 		"inv_empty_lister_general"			"Nenhum item da categoria selecionada foi encontrado no inventário."
 		"inv_empty_loadout_slot"			"Compartimento sem item equipado"
 		"inv_header_rarity"					"Raridade:"
@@ -45302,8 +45299,6 @@
 		"popup_signal_ok" 				"Sinal bom"
 		"laptop_battery_tooltip" 		"{d:percent}% de bateria restante"
 		"laptop_original_seal_tooltip" 	"Todos os itens comprados por Terminais de Contato acompanham um Certificado de Propriedade Original, válido enquanto o item permanecer com você."
-		"laptop_zoom_tooltip" 			"Use a roda do mouse para aproximar e afastar."
-		"laptop_pan_tooltip" 			"Segure Shift e arraste para mover a câmera."
 		"laptop_pricing_tooltip"		"Os preços são globais e ajustados automaticamente conforme a demanda por cada item da coleção."
 
 
@@ -45684,6 +45679,21 @@
 		
 		"quest_11014_var_desc:p{mission-points}"	 	"Vença uma rodada no modo <b>{s:gamemode} ({s:location})</b>.#|#Vença rodadas em partidas do modo <b>{s:gamemode} ({s:location})</b>."
 		"quest_11014_var_ingame:p{mission-points}"		"Vença uma rodada.#|#Vença rodadas."
+		
+		"quest_11015_var_desc:p{mission-points}"	 	"Vença uma rodada no modo <b>{s:gamemode} ({s:location})</b>.#|#Vença rodadas em partidas do modo <b>{s:gamemode} ({s:location})</b>."
+		"quest_11015_var_ingame:p{mission-points}"		"Vença uma rodada.#|#Vença rodadas."
+
+// crow_mask_48775_comment
+// crow_mask_48776_comment
+}
+
+
+
+
+}
+
+
+ar_ingame:p{mission-points}"		"Vença uma rodada.#|#Vença rodadas."
 		
 		"quest_11015_var_desc:p{mission-points}"	 	"Vença uma rodada no modo <b>{s:gamemode} ({s:location})</b>.#|#Vença rodadas em partidas do modo <b>{s:gamemode} ({s:location})</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Vença uma rodada.#|#Vença rodadas."

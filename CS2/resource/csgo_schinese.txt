@@ -408,7 +408,6 @@
 		"LoadingProgress_SignonLocal"		"正在初始化资源..."
 		"LoadingProgress_SignonDataLocal"	"正在初始化游戏资料..."
 		"LoadingProgress_CompilingShaders"	"编译着色器 (%s1 / %s2)..."
-
 		"LoadingProgress_BeginConnect"		"正在建立到服务器的连接..."
 		"LoadingProgress_Connecting"		"正在连接至服务器..."
 		"LoadingProgress_ProcessServerInfo"	"正在检索服务器信息..."
@@ -3266,7 +3265,6 @@
 		"CSGO_Collectible_MapTokenDogtown_Desc"			"纪念CS地图“多格镇”的创作"
 		"CSGO_Collectible_MapTokenBrewery"				"酿酒厂地图币"
 		"CSGO_Collectible_MapTokenBrewery_Desc"			"纪念CS地图“酿酒厂”的创作"
-
 		"CSGO_CollectibleCoin_FortiusQuoFidelius"	"忠诚徽章"
 		"CSGO_CollectibleCoin_FortiusQuoFidelius_Desc"	"此徽章旨在纪念“头号特训”更新前您已在 反恐精英 社区拥有的忠实会员资格。\n\n<i>忠诚的力量。</i>"
 		"CSGO_CollectibleCoin_FiveYearService"		"5 年老兵硬币"
@@ -4311,8 +4309,8 @@
 		"CSGO_crate_sticker_pack_community2025_capsule_desc"			"这个收藏品含有多款印花，于2025年9月发布。"
 		"CSGO_crate_sticker_pack_community_2025_short"					"2025社区印花"
 		
-		"CSGO_crate_community_36"				"创世终端机密封版"
-		"CSGO_crate_community_36^volatile"		"创世终端机激活版"
+		"CSGO_crate_community_36"				"封装的创世终端机"
+		"CSGO_crate_community_36^volatile"		"激活的创世终端机"
 		"SprayKit_vcap1_ace_01"		"王牌"
 "SprayKit_vcap1_banana"		"香蕉"
 "SprayKit_vcap1_cerberus"		"地狱看门犬"
@@ -28132,7 +28130,7 @@
 		"keychain_kc_wpn_tknife_crystal"					"半宝石"
 		"keychain_kc_wpn_ctknife_gold"						"K金CT"
 		"keychain_kc_wpn_tknife_gold"						"K金T"
-		// Paint Kits
+// Paint Kits
 		"PaintKit_Default"							"未命名的涂装套件"
 		"PaintKit_Default_Tag"						"-"//
 
@@ -33403,7 +33401,6 @@
 
 		"SFUI_Store_Market_Link"                    "在市场中查看"
 		"SFUI_Store_Limit_Offer"                    "限时优惠"
-		"SFUI_Store_Offer_Days_Remaining:p{daysremaining}"	"{d:daysremaining}天剩余#|#{d:daysremaining}天剩余"
 		"SFUI_Store_Last_Chance"                    "最后机会"
 		"SFUI_Store_Limited_Time_Tagline"           "领取优惠"
 		"SFUI_Store_Limited_Bid_Tagline"			"参与此物品竞拍"
@@ -42356,7 +42353,6 @@
 		"inv_empty_lister"					"在您的库存中找不到任何 {s:type} 类物品。"
 		"inv_empty_lister_for_use"			"在您的库存中找不到任何可以使用的 {s:type} 物品。"
 		"inv_empty_lister_nocaskets"		"无法找到任何可供存入的库存存储组件。您可以从游戏内商店购买\n库存存储组件。"
-		"inv_empty_lister_for_stattrackswap" "在您的库存中找不到任何可用于交换数值的StatTrak™ {s:type} 物品。\nStatTrak™ 上的数值只能在两种同类型物品之间进行交换。"
 		"inv_empty_lister_general"			"无法在您的库存中找到该类别的物品。"
 		"inv_empty_loadout_slot"			"此槽位没有装备物品"
 		"inv_header_rarity"					"稀有度："
@@ -45217,19 +45213,19 @@
 		"dealer_offer_attachment_wear"						"{s:item-rarity}"
 		"dealer_offer_attachment_remaining_title"				"报价 #{d:offer-total}"
 		"dealer_offer_attachment_remaining"						"报价 #{d:offer-total}"
-		"dealer_offer_received_count"							"<b>{s:offer-count}</b>次报价"
+		"dealer_offer_received_count"							"第<b>{s:offer-count}</b>次报价"
 		"dealer_offer_attachment_final_title"					"最终报价"
 		"dealer_offer_attachment_final"							"{s:offer-count} 且为最终报价"
 		"dealer_offer_attachment_status"						"报价 - {s:offer-status}"
 		"dealer_offer_attachment_status-active"					"<b><span class=\"offer-active\">激活</span></b>"
 		"dealer_offer_attachment_status-price"					"<b><span class=\"offer-active\">{s:offer-price}</span></b>"
 		"dealer_offer_attachment_status-declined-price"			"{s:offer-price}"
-		"dealer_offer_attachment_status-declined"				"<span class=\"offer-declined\">{s:offer-count}次报价 - 已拒绝</span>"
+		"dealer_offer_attachment_status-declined"				"第<span class=\"offer-declined\">{s:offer-count}次报价 - 已拒绝</span>"
 
 		"user_btn_purchase_desc_purchase"		"长按购买此物品。购买后终端机将被丢弃。"
 		"user_btn_purchase_desc_continue"		"长按永久拒绝此报价并查看下一件。"
 		"user_btn_purchase_desc_end"		"拒绝最终报价并丢弃此终端机。"
-		"user_btn_purchase_title"			"<b>{s:offer-count}次报价</b> - 推荐回复"
+		"user_btn_purchase_title"			"第<b>{s:offer-count}次报价</b> - 推荐回复"
 		"user_btn_purchase_final_title"		"<b>最终报价</b> - 推荐回复"
 		"user_btn_decline_desc"				"拒绝此报价并查看其他报价"
 		"user_btn_accept"		"接受报价 <b>{s:price}</b>"
@@ -45281,8 +45277,6 @@
 		"popup_signal_ok" 				"强信号"
 		"laptop_battery_tooltip" 		"电池电量：{d:percent}%"
 		"laptop_original_seal_tooltip" 	"从此上行链路终端机购买的任意物品均附有「原始所有者证书」，该证书在您持有期间持续有效。"
-		"laptop_zoom_tooltip" 			"滚动鼠标滚轮进行缩放。"
-		"laptop_pan_tooltip" 			"按住 Shift 键并拖动可平移视角。"
 		"laptop_pricing_tooltip"		"价格全球统一，并会根据本收藏品中每件商品的需求自动调整。"
 
 
@@ -45441,7 +45435,7 @@
 		"dealer_message_factory_new_5"			"崭新出厂，从未开火。这把堪称完美。"
 		"dealer_message_covert_0"				"猜怎么着？恭喜中奖。这不仅是稀有款，还是隐秘级。"
 		"dealer_message_covert_1"				"我干这行十年都没在世面上见过这个款式。<!--.5-->品味够好，运气更佳。"
-		"dealer_message_covert_2"				"我甚至还认识几个买家为这玩意儿卖母筹钱呢。可真行。"
+		"dealer_message_covert_2"				"为了得到那东西，有些买家简直啥都舍得卖。可真行。"
 		"dealer_message_covert_3"				"好家伙，现在我都想反悔了。趁我没改主意赶紧拿走。"
 		"dealer_message_covert_4"				"隐秘级。走运的话一辈子能在黑市见那么一次。<!--.5-->你走运了。"
 		"dealer_message_covert_5"				"镇店之宝。你懂的。一年前就有买家预订。但他们的损失是你的机遇。"
@@ -45662,6 +45656,22 @@
 		"quest_11013_var_ingame:p{mission-points}"		"赢得 1 个回合 #|# 赢得多个回合"
 		
 		"quest_11014_var_desc:p{mission-points}"	 	"在<b>{s:gamemode}: {s:location}</b>中赢得 1 个回合。#|# 在<b>{s:gamemode}: {s:location}</b>中赢得多个回合。"
+		"quest_11014_var_ingame:p{mission-points}"		"赢得 1 个回合 #|# 赢得多个回合"
+		
+		"quest_11015_var_desc:p{mission-points}"	 	"在<b>{s:gamemode}: {s:location}</b>中赢得 1 个回合。#|# 在<b>{s:gamemode}: {s:location}</b>中赢得多个回合。"
+		"quest_11015_var_ingame:p{mission-points}"		"赢得 1 个回合 #|# 赢得多个回合"
+
+// crow_mask_48775_comment
+// crow_mask_48776_comment
+}
+
+
+
+
+}
+
+
+得多个回合。"
 		"quest_11014_var_ingame:p{mission-points}"		"赢得 1 个回合 #|# 赢得多个回合"
 		
 		"quest_11015_var_desc:p{mission-points}"	 	"在<b>{s:gamemode}: {s:location}</b>中赢得 1 个回合。#|# 在<b>{s:gamemode}: {s:location}</b>中赢得多个回合。"

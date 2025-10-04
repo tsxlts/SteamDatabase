@@ -408,6 +408,7 @@
 		"LoadingProgress_SignonLocal"		"Initialiserer ressurser …"
 		"LoadingProgress_SignonDataLocal"	"Initialiserer spilldata …"
 		"LoadingProgress_CompilingShaders"	"Kompilerer shadere (%s1/%s2) …"
+		"LoadingProgress_CompilingShadersRemaining"	"Kompilerer <span class='loading-screen-monospace'>%s1</span> shadere …"
 
 		"LoadingProgress_BeginConnect"		"Oppretter tilkobling til tjener …"
 		"LoadingProgress_Connecting"		"Kobler til tjener …"
@@ -1006,6 +1007,7 @@
 		"Cstrike_Auto_Apply_Graffiti"					"Hurtiggraffiti (brukes når knappen slippes)"
 		"Cstrike_Auto_Apply_Graffiti_Info"				"Når det er slått på, lar det deg påføre graffiti raskt ved å trykke og slippe graffitiknappen.\n\nNår det er slått av, påføres graffiti kun etter at «Skyt»-knappen trykkes inn mens du er i graffitimenyen."
 		"Cstrike_Delay_Unzoom_Sniper"					"Behold skarpskyttersiktet et lite øyeblikk etter avfyring"
+		"Cstrike_Show_Inaccuracy_Sniper"				"Vis unøyaktighet i kikkertsikte"
 		"Cstrike_Auto_Rezoom_Sniper"					"Bruk skarpskyttersiktet igjen automatisk etter avfyring"
 		"Cstrike_Fiddle_With_Silencers"					"Ta av lyddemperen fra M4A1-S og USP-S"
 		"Cstrike_Fiddle_With_Silencers_Desc"			"Velg om du skal kunne ta av lyddemperne på M4A1-S og USP-S."
@@ -3300,6 +3302,15 @@
 		"CSGO_Collectible_MapTokenDogtown_Desc"			"Til minne om opphavet til kartet «Dogtown» til CS2."
 		"CSGO_Collectible_MapTokenBrewery"				"Kartmynt for Brewery"
 		"CSGO_Collectible_MapTokenBrewery_Desc"			"Til minne om opphavet til kartet «Brewery» til CS2."
+		"CSGO_Collectible_MapTokenPalacio"				"Kartmynt for Palacio"
+		"CSGO_Collectible_MapTokenPalacio_Desc"			"Til minne om opphavet til kartet «Palacio» til CS2."
+		"CSGO_Collectible_MapTokenGolden"				"Kartmynt for Golden"
+		"CSGO_Collectible_MapTokenGolden_Desc"			"Til minne om opphavet til kartet «Golden» til CS2."
+		"CSGO_Collectible_MapTokenRooftop"				"Kartmynt for Rooftop"
+		"CSGO_Collectible_MapTokenRooftop_Desc"			"Til minne om opphavet til kartet «Rooftop» til CS2."
+		"CSGO_Collectible_MapTokenTransit"				"Kartmynt for Transit"
+		"CSGO_Collectible_MapTokenTransit_Desc"			"Til minne om opphavet til kartet «Transit» til CS2."
+
 
 		"CSGO_CollectibleCoin_FortiusQuoFidelius"	"Lojalitetsmerke"
 		"CSGO_CollectibleCoin_FortiusQuoFidelius_Desc"	"Dette merket er en hyllest til trofaste medlemmer av Counter-Strike-samfunnet fra før faresoneoppdateringen.\n\n<i>Styrke gjennom lojalitet.</i>"
@@ -4363,7 +4374,15 @@
 		
 		"CSGO_crate_community_36"				"Forseglet Genesis-terminal"
 		"CSGO_crate_community_36^volatile"		"Aktiv Genesis-terminal"
-		"SprayKit_vcap1_ace_01"		"Ace"
+		"CSGO_crate_keychain_pack_kc_drboom_capsule"	    	"Anhengssamling – Dr. Boom"
+		"CSGO_crate_keychain_pack_kc_drboom_capsule_desc"		"Denne samlingen inneholder et utvalg anheng med Dr. Boom."
+		"CSGO_crate_keychain_pack_kc_drboom_capsule_short"	    "Dr. Boom-anheng"
+		
+		"CSGO_crate_keychain_pack_kc_ml_community_01_capsule"	    	"Samfunnets anhengssamling – Missing Link"
+		"CSGO_crate_keychain_pack_kc_ml_community_01_capsule_desc"		"Denne samlingen inneholder et utvalg anheng med pølsetema fra workshopen."
+		"CSGO_crate_keychain_pack_kc_ml_community_01_capsule_short"	    "Missing Link-samfunnsanheng"
+		
+"SprayKit_vcap1_ace_01"		"Ace"
 "SprayKit_desc_vcap1_ace_01"	""
 "SprayKit_vcap1_banana"		"Banana"
 "SprayKit_desc_vcap1_banana"	""
@@ -29206,6 +29225,55 @@
 		"keychain_kc_wpn_tknife_crystal"					"Semi-Precious"
 		"keychain_kc_wpn_ctknife_gold"						"Baby Karat CT"
 		"keychain_kc_wpn_tknife_gold"						"Baby Karat T"
+		// DR BOOM KEYCHAINS 
+		
+		"keychain_kc_db_biomech"					"Biomech"
+		"keychain_kc_db_terror"						"Gritty"
+		"keychain_kc_db_hellcat"					"Splatter Cat"
+		"keychain_kc_db_ugly"						"Fluffy"
+		"keychain_kc_db_wood"						"Whittle Guy"
+		"keychain_kc_db_yinyang"					"Lil' Zen"
+		"keychain_kc_db_aztec"						"Lil' Facelift"
+		"keychain_kc_db_200iq"						"Big Brain"
+		"keychain_kc_db_eviscerate"					"Bomb Tag"
+		"keychain_kc_db_clown"						"Lil' Bloody"
+		"keychain_kc_db_dimsum"						"Lil' Dumplin'"
+		"keychain_kc_db_bombacat"					"Lil' Chomper"
+		"keychain_kc_db_drbrian"					"Dr. Brian"
+		"keychain_kc_db_eco"						"Lil' Eco"
+		"keychain_kc_db_dripfade"					"Glitter Bomb"
+		"keychain_kc_db_occult"						"Eye of Ball"
+		"keychain_kc_db_yeti"						"Lil' Yeti"
+		"keychain_kc_db_eyecritter"					"Hungry Eyes"
+		"keychain_kc_db_8ball"						"8 Ball IGL"
+		"keychain_kc_db_flash"						"Flash Bomb"
+		"keychain_kc_db_incendiary"					"Lil' Ferno"
+		"keychain_kc_db_lighter"					"Butane Buddy"
+		// MISSINGLINK COMMUNITY KEYCHAINS 
+		
+		"keychain_kc_missinglink_ancientcurse"			"Lil' Curse"
+		"keychain_kc_missinglink_babyserpent"			"Lil' Serpent"
+		"keychain_kc_missinglink_basketball"			"Lil' Baller"
+		"keychain_kc_missinglink_bodybag"				"Dead Weight"
+		"keychain_kc_missinglink_cactus"				"Lil' Prick"
+		"keychain_kc_missinglink_charmburger"			"Lil' Buns"
+		"keychain_kc_missinglink_cigar"					"Lil' Smokey"
+		"keychain_kc_missinglink_cthulhu"				"Lil' Eldritch"
+		"keychain_kc_missinglink_happy"					"Lil' Happy"
+		"keychain_kc_missinglink_lilhatchling"			"Lil' Chirp"
+		"keychain_kc_missinglink_lilhothead"			"Magmatude"
+		"keychain_kc_missinglink_lillol"				"Lil' Cackle"
+		"keychain_kc_missinglink_melted"				"Quick Silver"
+		"keychain_kc_missinglink_muteghost"				"Lil' Boo"
+		"keychain_kc_missinglink_pencil"				"Lil' No. 2"
+		"keychain_kc_missinglink_pinata"				"Piñatita"
+		"keychain_kc_missinglink_popsicle"				"Pocket Pop"
+		"keychain_kc_missinglink_retrovision"			"Lil' Moments"
+		"keychain_kc_missinglink_sentai"				"Lil' Hero"
+		"keychain_kc_missinglink_sillyelephant"			"Lil' Tusk"
+		"keychain_kc_missinglink_slime"					"Lil' Goop"
+		"keychain_kc_missinglink_surfsup"				"Hang Loose"
+		"keychain_kc_missinglink_winemaker"				"Lil' Vino"
 		// Paint Kits
 		"PaintKit_Default"							"Navnløst malesett"
 		"PaintKit_Default_Tag"						"-"//
@@ -34104,6 +34172,11 @@
 		"SFUI_Map_de_brewery"		"Brewery"
 		"SFUI_Map_de_dogtown"		"Dogtown"
 
+		"SFUI_Map_de_palacio"		"Palacio"
+		"SFUI_Map_de_golden"		"Golden"
+		"SFUI_Map_de_rooftop"		"Rooftop"
+		"SFUI_Map_de_transit"		"Transit"
+
 		"SFUI_Map_workshop_preview_dust2"	"Dust II – forhåndsvisning"
 		"SFUI_Map_workshop_preview_ancient"	"Ancient – forhåndsvisning"
 		"SFUI_Map_workshop_preview_inferno"	"Inferno – forhåndsvisning"
@@ -34477,7 +34550,11 @@
 
 		"SFUI_Store_Market_Link"                    "Vis på markedet"
 		"SFUI_Store_Limit_Offer"                    "Tidsbegrenset tilbud"
-		"SFUI_Store_Offer_Days_Remaining:p{daysremaining}"	"{d:daysremaining} dag igjen#|#{d:daysremaining} dager igjen"
+		"SFUI_Store_Offer_Days_Remaining:p{daysremaining}"			"{d:daysremaining} dag igjen#|#{d:daysremaining} dager igjen"
+		"SFUI_Store_Offer_Days_Remaining_claim:p{daysremaining}"	"{d:daysremaining} dag igjen#|#{d:daysremaining} dager igjen"
+		"SFUI_Store_Offer_Days_Remaining_bid:p{daysremaining}"		"{d:daysremaining} dag igjen til å by på dette tilbudet#|#{d:daysremaining} dager igjen til å by på dette tilbudet"
+		"SFUI_Store_Offer_Days_Remaining_last_claim"				"Siste sjanse til å gjøre nytte av tilbudet"
+		"SFUI_Store_Offer_Days_Remaining_last_bid"					"Siste sjanse til å by på tilbudet"
 		"SFUI_Store_Last_Chance"                    "Siste sjanse"
 		"SFUI_Store_Limited_Time_Tagline"           "til å gjøre nytte av tilbudet"
 		"SFUI_Store_Limited_Bid_Tagline"			"til å by på dette tilbudet"
@@ -37676,6 +37753,7 @@
 		"SFUI_MoveLeft"					"Gå til venstre (sideforflytt)"
 		"SFUI_Previous"					"Sist brukte våpen"
 		"SFUI_Voice"					"Bruk mikrofon"
+		"SFUI_ToggleOpenMic"			"Veksle mellom «åpen mikrofon» og «trykk for å snakke»"
 		"SFUI_Buy"						"Kjøpemeny"
 
 		"SFUI_StandardRadio"			"Standard radiomelding"
@@ -43437,6 +43515,8 @@
 		"inv_search_placeholder"			"Søk etter gjenstander"
 		"inv_search_popular"				"Foreslåtte"
 		"inv_search_no_results"				"Søket ditt etter <span class=\"context-menu-search__no-results__searchtext\">{s:search_text}</span> ga ingen resultater."
+		"inv_select_item_use_capability"				"Velg en gjenstand å bruke med {s:item-name}"
+		"inv_select_item_stattrack_swap_capability"		"Velg en gjenstand å bytte StatTrak™-verdier med {s:item-name}"
 		"inv_select_item_use"				"Velg en gjenstand å bruke med:"
 		"inv_select_item_stattrack_swap"	"Velg en gjenstand å bytte StatTrak™-verdier med:"
 		"inv_select_item_tostoreincasket"	"Velg en gjenstand du vil oppbevare i"
@@ -43460,7 +43540,7 @@
 		"inv_empty_lister"					"Fant ingen gjenstander for {s:type} i lageret."
 		"inv_empty_lister_for_use"			"Fant ingen gjenstander å bruke med {s:type} i lageret."
 		"inv_empty_lister_nocaskets"		"Kunne ikke finne noen lagerenheter som kan oppbevare gjenstandene.\nLagerenheter kan kjøpes fra butikken i spillet."
-		"inv_empty_lister_for_stattrackswap" "Fant ingen gjenstander å bytte StatTrak™-verdier med {s:type} i lageret.\nStatTrak™-verdier kan kun byttes mellom to gjenstander av samme type."
+		"inv_empty_lister_for_stattrackswap" "Fant ingen gjenstander å bytte StatTrak™-verdier med <br><b>{s:type}</b> i lageret.<br><br>StatTrak™-verdier kan kun byttes mellom to gjenstander av samme type."
 		"inv_empty_lister_general"			"Fant ingen gjenstander for den valgte kategorien i lageret."
 		"inv_empty_loadout_slot"			"Ingen utstyrt gjenstand på denne plassen"
 		"inv_header_rarity"					"Sjeldenhet:"
@@ -46422,8 +46502,8 @@
 		"popup_signal_ok" 				"Sterkt signal"
 		"laptop_battery_tooltip" 		"Batteri: {d:percent} %"
 		"laptop_original_seal_tooltip" 	"Alle gjenstander kjøpt fra denne terminalen, kommer med et opprinnelig eierbevis, som er gyldig så lenge du er eieren."
-		"laptop_zoom_tooltip" 			"Rull musehjulet for å zoome inn og ut."
-		"laptop_pan_tooltip" 			"Hold Shift og dra for å panorere kameraet."
+		"laptop_zoom_tooltip" 			"Rull musehjulet for å zoome inn og ut"
+		"laptop_pan_tooltip" 			"Hold Shift og dra for å panorere kameraet"
 		"laptop_pricing_tooltip"		"Prisene er globale og justeres automatisk basert på etterspørselen for hver gjenstand i samlingen."
 
 
@@ -46808,8 +46888,8 @@
 		"quest_11015_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> – vinn en runde.#|#<b>{s:gamemode}: {s:location}</b> – vinn runder."
 		"quest_11015_var_ingame:p{mission-points}"		"Vinn en runde#|#Vinn runder"
 
-// crow_mask_48605_comment
-// crow_mask_48606_comment
+// crow_mask_48775_comment
+// crow_mask_48776_comment
 }
 
 

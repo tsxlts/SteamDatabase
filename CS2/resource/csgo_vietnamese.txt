@@ -408,6 +408,7 @@
 		"LoadingProgress_SignonLocal"		"Đang khởi chạy tài nguyên..."
 		"LoadingProgress_SignonDataLocal"	"Đang khởi chạy dữ liệu trò chơi..."
 		"LoadingProgress_CompilingShaders"	"Đang biên dịch shader (%s1 / %s2)..."
+		"LoadingProgress_CompilingShadersRemaining"	"Đang biên dịch shader: <span class='loading-screen-monospace'>%s1</span>..."
 
 		"LoadingProgress_BeginConnect"		"Thiết lập kết nối tới máy chủ..."
 		"LoadingProgress_Connecting"		"Đang kết nối tới máy chủ..."
@@ -1006,6 +1007,7 @@
 		"Cstrike_Auto_Apply_Graffiti"					"Vẽ graffiti nhanh (Vẽ khi thả phím)"
 		"Cstrike_Auto_Apply_Graffiti_Info"				"Khi bật, cho phép bạn vẽ graffiti nhanh bằng cách ấn và thả phím bảng graffiti.\n\nKhi tắt, graffiti chỉ được vẽ sau khi ấn phím 'Bắn' (Fire) khi đang ở trong bảng graffiti."
 		"Cstrike_Delay_Unzoom_Sniper"					"Hoãn bắn tỉa ngừng ngắm sau khi bắn"
+		"Cstrike_Show_Inaccuracy_Sniper"				"Hiển thị độ sai sót ống ngắm súng bắn tỉa"
 		"Cstrike_Auto_Rezoom_Sniper"					"Tự động ngắm ống tỉa sau khi bắn"
 		"Cstrike_Fiddle_With_Silencers"					"Tháo giảm thanh trên M4A1-S và USP-S"
 		"Cstrike_Fiddle_With_Silencers_Desc"			"Cho phép hoặc cấm gỡ ống giảm thanh của khẩu M4A1-S và USP-S."
@@ -3351,6 +3353,15 @@
 		"CSGO_Collectible_MapTokenDogtown_Desc"			"Kỷ niệm tác giả bản đồ CS2 \"Dogtown\""
 		"CSGO_Collectible_MapTokenBrewery"				"Huy chương bản đồ - Brewery"
 		"CSGO_Collectible_MapTokenBrewery_Desc"			"Kỷ niệm tác giả bản đồ CS2 \"Brewery\""
+		"CSGO_Collectible_MapTokenPalacio"				"Huy chương bản đồ - Palacio"
+		"CSGO_Collectible_MapTokenPalacio_Desc"			"Kỷ niệm tác giả bản đồ CS2 \"Palacio\""
+		"CSGO_Collectible_MapTokenGolden"				"Huy chương bản đồ - Golden"
+		"CSGO_Collectible_MapTokenGolden_Desc"			"Kỷ niệm tác giả bản đồ CS2 \"Golden\""
+		"CSGO_Collectible_MapTokenRooftop"				"Huy chương bản đồ - Rooftop"
+		"CSGO_Collectible_MapTokenRooftop_Desc"			"Kỷ niệm tác giả bản đồ CS2 \"Rooftop\""
+		"CSGO_Collectible_MapTokenTransit"				"Huy chương bản đồ - Transit"
+		"CSGO_Collectible_MapTokenTransit_Desc"			"Kỷ niệm tác giả bản đồ CS2 \"Transit\""
+
 
 		"CSGO_CollectibleCoin_FortiusQuoFidelius"	"Huy hiệu trung kiên"
 		"CSGO_CollectibleCoin_FortiusQuoFidelius_Desc"	"Huy hiệu này vinh danh sự trung thành tận tụy của cộng đồng Counter-Strike trước bản cập nhật Danger Zone.\n\n<i>Lấy trung thành làm sức mạnh.</i>"
@@ -4457,7 +4468,15 @@
 		
 		"CSGO_crate_community_36"				"Thiết bị đầu nối Genesis (Nguyên bọc)"
 		"CSGO_crate_community_36^volatile"		"Thiết bị đầu nối Genesis (Hoạt động)"
-		"SprayKit_vcap1_ace_01"		"Ace"
+		"CSGO_crate_keychain_pack_kc_drboom_capsule"	    	"Bộ sưu tập móc treo Dr. Boom"
+		"CSGO_crate_keychain_pack_kc_drboom_capsule_desc"		"Bộ sưu tập này chứa một loạt móc treo theo chủ đề Dr. Boom."
+		"CSGO_crate_keychain_pack_kc_drboom_capsule_short"	    "Móc treo Dr. Boom"
+		
+		"CSGO_crate_keychain_pack_kc_ml_community_01_capsule"	    	"Bộ sưu tập móc treo cộng đồng Missing Link"
+		"CSGO_crate_keychain_pack_kc_ml_community_01_capsule_desc"		"Bộ sưu tập này chứa một loạt móc treo theo chủ đề xúc xích từ cộng đồng Workshop."
+		"CSGO_crate_keychain_pack_kc_ml_community_01_capsule_short"	    "Móc treo cộng đồng Missing Link"
+		
+"SprayKit_vcap1_ace_01"		"Ace"
 "SprayKit_desc_vcap1_ace_01"	" "
 "SprayKit_vcap1_banana"		"Chuối"
 "SprayKit_desc_vcap1_banana"	" "
@@ -30769,7 +30788,6 @@
 
 		"keychain_kc_wpn_tknife_gold"						"Baby Karat T"
 		"keychain_kc_wpn_tknife_gold_desc"					""
-		
 // Paint Kits
 		"PaintKit_Default"							"Bộ sơn không tên"
 		"PaintKit_Default_Tag"						"-"//
@@ -36098,7 +36116,6 @@
 
 		"SFUI_Store_Market_Link"                    "Xem trên chợ"
 		"SFUI_Store_Limit_Offer"                    "Khuyến mãi có hạn"
-		"SFUI_Store_Offer_Days_Remaining:p{daysremaining}"	"Còn {d:daysremaining} ngày"
 		"SFUI_Store_Last_Chance"                    "Cơ hội cuối"
 		"SFUI_Store_Limited_Time_Tagline"           "Để nhận mặt hàng này"
 		"SFUI_Store_Limited_Bid_Tagline"			"Để đấu giá mặt hàng này"
@@ -45119,7 +45136,6 @@
 		"inv_empty_lister"					"Không thể tìm thấy bất kỳ vật phẩm {s:type} nào trong kho đồ của bạn."
 		"inv_empty_lister_for_use"			"Không thể tìm thấy bất kỳ vật phẩm nào để dùng với {s:type} trong kho đồ của bạn."
 		"inv_empty_lister_nocaskets"		"Không thể tìm thấy bất kỳ thùng chứa riêng nào có thể đựng vật phẩm của bạn.\nCó thể mua hòm chứa riêng tại cửa hàng trong trò chơi."
-		"inv_empty_lister_for_stattrackswap" "Không thể tìm thấy bất kỳ vật phẩm nào để đổi giá trị StatTrak™ với {s:type} trong kho đồ của bạn.\nGiá trị StatTrak™ chỉ có thể đổi giữa hai vật phẩm cùng loại."
 		"inv_empty_lister_general"			"Không thể tìm thấy bất kỳ vật phẩm nào trong hạng mục được chọn trong kho đồ của bạn."
 		"inv_empty_loadout_slot"			"Ô này chưa trang bị vật phẩm nào"
 		"inv_header_rarity"					"Độ hiếm:"
@@ -48122,8 +48138,8 @@
 		"popup_signal_ok" 				"Tín hiệu mạnh"
 		"laptop_battery_tooltip" 		"Pin sạc: {d:percent}%"
 		"laptop_original_seal_tooltip" 	"Bất kì vật phẩm được mua từ thiết bị đầu nối vệ tinh này sẽ kèm theo chứng nhận chủ sở hữu gốc, có hiệu lực khi bạn vẫn còn là chủ sở hữu."
-		"laptop_zoom_tooltip" 			"Cuộn chuột để phóng to và thu nhỏ."
-		"laptop_pan_tooltip" 			"Giữ nút \"Shift\" và kéo để di chuyển camera."
+		"laptop_zoom_tooltip" 			"Cuộn chuột để phóng to và thu nhỏ"
+		"laptop_pan_tooltip" 			"Giữ nút \"Shift\" và kéo để di chuyển camera"
 		"laptop_pricing_tooltip"		"Giá cả được áp dụng toàn cầu và điều chỉnh dựa trên nhu cầu từng mặt hàng trong bộ sưu tập."
 
 
@@ -48518,8 +48534,8 @@
 		"quest_11015_var_partial" 				""
 		"quest_11015_var_ingame:p{mission-points}"		"Thắng ván đấu"
 
-// crow_mask_48605_comment
-// crow_mask_48606_comment
+// crow_mask_48775_comment
+// crow_mask_48776_comment
 }
 
 

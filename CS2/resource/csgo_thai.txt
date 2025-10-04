@@ -408,7 +408,6 @@
 		"LoadingProgress_SignonLocal"		"กำลังเริ่มต้นรีซอร์ส..."
 		"LoadingProgress_SignonDataLocal"	"กำลังเริ่มต้นข้อมูลเกม..."
 		"LoadingProgress_CompilingShaders"	"กำลังคอมไพเลอร์เชดเดอร์ (%s1 / %s2)..."
-
 		"LoadingProgress_BeginConnect"		"กำลังสร้างการเชื่อมต่อกับเซิร์ฟเวอร์..."
 		"LoadingProgress_Connecting"		"กำลังเชื่อมต่อกับเซิร์ฟเวอร์..."
 		"LoadingProgress_ProcessServerInfo"	"กำลังรับข้อมูลเซิร์ฟเวอร์..."
@@ -3301,7 +3300,6 @@
 		"CSGO_Collectible_MapTokenDogtown_Desc"			"ของที่ระลึกสำหรับผู้สร้างแผนที่ Dogtown ของ CS2"
 		"CSGO_Collectible_MapTokenBrewery"				"เหรียญแผนที่ Brewery"
 		"CSGO_Collectible_MapTokenBrewery_Desc"			"ของที่ระลึกสำหรับผู้สร้างแผนที่ Brewery ของ CS2"
-
 		"CSGO_CollectibleCoin_FortiusQuoFidelius"	"เหรียญตราผู้ภักดี"
 		"CSGO_CollectibleCoin_FortiusQuoFidelius_Desc"	"เหรียญตรานี้เป็นอนุสรณ์สำหรับสมาชิกผู้ภักดีในชุมชน Counter-Strike ก่อนช่วงอัปเดตโหมดโซนอันตราย\n\n<i>สร้างความแข็งเเกร่งด้วยความจงรักภักดี</i>"
 		"CSGO_CollectibleCoin_FiveYearService"		"เหรียญทหารผ่านศึก 5 ปี"
@@ -29190,7 +29188,7 @@
 		"keychain_kc_wpn_tknife_crystal"					"Semi-Precious"
 		"keychain_kc_wpn_ctknife_gold"						"Baby Karat CT"
 		"keychain_kc_wpn_tknife_gold"						"Baby Karat T"
-		// Paint Kits
+// Paint Kits
 		"PaintKit_Default"							"ลายสีไม่มีชื่อ"
 		"PaintKit_Default_Tag"						"-"//
 
@@ -34461,7 +34459,6 @@
 
 		"SFUI_Store_Market_Link"                    "ดูในตลาด"
 		"SFUI_Store_Limit_Offer"                    "ข้อเสนอแบบจำกัดเวลา"
-		"SFUI_Store_Offer_Days_Remaining:p{daysremaining}"	"คงเหลือ {d:daysremaining} วัน"
 		"SFUI_Store_Last_Chance"                    "โอกาสสุดท้าย"
 		"SFUI_Store_Limited_Time_Tagline"           "หากต้องการรับข้อเสนอนี้"
 		"SFUI_Store_Limited_Bid_Tagline"			"เสนอราคาให้ข้อเสนอนี้"
@@ -43450,7 +43447,6 @@
 		"inv_empty_lister"					"ไม่พบไอเท็ม {s:type} ใดในช่องเก็บของของคุณ"
 		"inv_empty_lister_for_use"			"ไม่พบไอเท็มใดเพื่อใช้กับ {s:type} ในช่องเก็บของของคุณ"
 		"inv_empty_lister_nocaskets"		"ไม่พบกล่องเก็บของใดที่คุณสามารถเก็บไอเท็มของคุณได้\nกล่องเก็บของสามารถสั่งซื้อได้จากร้านค้าภายในเกม"
-		"inv_empty_lister_for_stattrackswap" "ไม่พบไอเท็มใดเพื่อสลับค่า StatTrak™ กับ {s:type} ในช่องเก็บของของคุณ\nค่า StatTrak™ สามารถสลับได้ระหว่างไอเท็มประเภทเดียวกันสองชิ้นเท่านั้น"
 		"inv_empty_lister_general"			"ไม่พบไอเท็มใดสำหรับประเภทที่เลือกไว้ในช่องเก็บของของคุณ"
 		"inv_empty_loadout_slot"			"ไม่มีไอเท็มสวมใส่ในช่องนี้"
 		"inv_header_rarity"					"ความหายาก:"
@@ -46397,8 +46393,6 @@
 		"popup_signal_ok" 				"สัญญาณแรง"
 		"laptop_battery_tooltip" 		"ชาร์จแบตเตอรี่: {d:percent}%"
 		"laptop_original_seal_tooltip" 	"ไอเท็มใดก็ตามที่ถูกสั่งซื้อจากอัปลิงก์เทอร์มินัลจะมาพร้อมใบรับรองเจ้าของเดิม ซึ่งจะมีผลตลอดระยะเวลาที่คุณเป็นเจ้าของ"
-		"laptop_zoom_tooltip" 			"เลื่อนล้อเมาส์เพื่อซูมเข้าและออก"
-		"laptop_pan_tooltip" 			"กดปุ่ม \"Shift\" ค้างไว้แล้วลากเพื่อแพนกล้อง"
 		"laptop_pricing_tooltip"		"ราคาเป็นราคาเดียวกันทั่วโลกและจะปรับเองโดยอัตโนมัติตามความต้องการไอเท็มแต่ละรายการในชุดสะสมนี้"
 
 
@@ -46772,6 +46766,28 @@
 		"quest_11011_var_ingame:p{mission-points}"		"ชนะรอบ"
 		
 		"quest_11012_var_desc:p{mission-points}"	 	"ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
+		"quest_11012_var_ingame:p{mission-points}"		"ชนะรอบ"
+		
+		"quest_11013_var_desc:p{mission-points}"	 	"ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
+		"quest_11013_var_ingame:p{mission-points}"		"ชนะรอบ"
+		
+		"quest_11014_var_desc:p{mission-points}"	 	"ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
+		"quest_11014_var_ingame:p{mission-points}"		"ชนะรอบ"
+		
+		"quest_11015_var_desc:p{mission-points}"	 	"ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
+		"quest_11015_var_ingame:p{mission-points}"		"ชนะรอบ"
+
+// crow_mask_48775_comment
+// crow_mask_48776_comment
+}
+
+
+
+
+}
+
+
+บในโหมด <b>{s:gamemode}: {s:location}</b>"
 		"quest_11012_var_ingame:p{mission-points}"		"ชนะรอบ"
 		
 		"quest_11013_var_desc:p{mission-points}"	 	"ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
