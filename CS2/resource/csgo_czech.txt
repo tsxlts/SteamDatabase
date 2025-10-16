@@ -44,6 +44,7 @@
 		"GameUI_CrosshairLength"	"Délka"
 		"GameUI_CrosshairDot"		"Středová tečka"
 		"GameUI_IronsightColor"		"Tečka v hledí odpovídající barvou zaměřovači"
+		"GameUI_IronsightScale"		"Měřítko tečky v hledí"
 		"GameUI_CrosshairRecoil"	"Kopírování zpětného rázu"
 		"GameUI_CrosshairRecoil_Desc"	"Zajistí, že zaměřovač opustí střed obrazovky, aby kopíroval zpětný ráz zbraně."
 		"GameUI_CrosshairThickness"	"Tloušťka"
@@ -52,6 +53,7 @@
 		"GameUI_CrosshairAlpha"		"Alfa"
 		"GameUI_CrosshairSize"		"Velikost zaměřovače"
 		"GameUI_CrosshairColor"		"Barva zaměřovače"
+		"GameUI_SniperCrosshairThickness" "Tloušťka linek zaměřovače v hledí odstřelovacích pušek"
 		"GameUI_ColorSliders"		"Barvy"
 		"GameUI_ColorQuality"		"Kvalita barev"
 		"GameUI_ColorGreen"			"Zelená"
@@ -3305,8 +3307,8 @@
 		"CSGO_Collectible_MapTokenGolden_Desc"			"Připomínka autorství mapy Golden."
 		"CSGO_Collectible_MapTokenRooftop"				"Mince mapy Rooftop"
 		"CSGO_Collectible_MapTokenRooftop_Desc"			"Připomínka autorství mapy Rooftop."
-		"CSGO_Collectible_MapTokenTransit"				"Mince mapy Transit"
-		"CSGO_Collectible_MapTokenTransit_Desc"			"Připomínka autorství mapy Transit."
+		"CSGO_Collectible_MapTokenTransit"				"Mince mapy (Cenzurováno)"
+		"CSGO_Collectible_MapTokenTransit_Desc"			"Připomínka autorství mapy (Cenzurováno)."
 
 
 		"CSGO_CollectibleCoin_FortiusQuoFidelius"	"Odznak Za věrnost"
@@ -33831,7 +33833,7 @@
 		"SFUI_Map_de_palacio"		"Palacio"
 		"SFUI_Map_de_golden"		"Golden"
 		"SFUI_Map_de_rooftop"		"Rooftop"
-		"SFUI_Map_de_transit"		"Transit"
+		"SFUI_Map_de_transit"		"(Cenzurováno)"
 
 		"SFUI_Map_workshop_preview_dust2"	"Dust II (ukázka)"
 		"SFUI_Map_workshop_preview_ancient"	"Ancient (ukázka)"
@@ -38734,6 +38736,7 @@
 		"SFUI_QMM_ERROR_PremierSeasonOver"		"Sezóna módu Premier skončila. Počkej prosím na začátek další sezóny."
 		"SFUI_QMM_ERROR_PremierRatingMissing"		"Ratingy CS hráčů ve tvé skupině jsou příliš vysoké a tito hráči se nemohou zúčastnit zápasů s hráčem, který nemá rating CS určený."
 		"SFUI_QMM_ERROR_PremierRatingLargeDelta"	"Ratingy CS hráčů ve tvé skupině jsou od sebe příliš vzdáleny, takže nemůžete společně vyhledávat zápasy."
+		"SFUI_QMM_ERROR_PremierRatingLargeDelta5"	"Ratingy CS hráčů ve tvé skupině jsou od sebe příliš vzdáleny, takže pokud nebudete hrát v plném počtu pěti hráčů, nemůžete společně vyhledávat zápasy."
 		"SFUI_QMM_ERROR_FullTeamRequired" "Nelze zahájit vyhledávání zápasu, protože tvá skupina není celý tým."
 		"SFUI_QMM_ERROR_TournamentTeamAccounts"	"Nelze zahájit vyhledávání zápasu. Všichni členové skupiny musí být členy stejného turnajového týmu."
 		"SFUI_QMM_ERROR_TournamentTeamSize"	"Nelze zahájit vyhledávání zápasu. Tvůj turnajový tým musí mít alespoň 5 členů."
@@ -43673,6 +43676,8 @@
 		"settings_account_conn_section"		"Twitch.tv"
 		"settings_crosshair"				"Zaměřovač"
 		"settings_crosshair_info"			"Přizpůsob si velikost, tvar a barvu zaměřovače. Kód zaměřovače můžeš poté sdílet s přáteli a také importovat jejich zaměřovače."
+		"settings_snipers_xhair"			"Odstřelovací pušky"
+		"settings_grenadecrosshair_short"	"Zaměřovač granátů"
 		"settings_grenadecrosshair"			"Zaměřovač pro házení granátů"
 		"settings_grenadecrosshair_info"	"Pomocný zaměřovač usnadňující míření před odhozením granátu."
 		"settings_radar_section"			"Radar"
@@ -46133,7 +46138,7 @@
 		"popup_lootlist_title"			"Katalogizace kolekce"
 		"popup_lootlist_desc"			"Získávej XP za prohlížení nabídek z této kolekce."
 		"popup_lootlist_progress"		"Prohlédl sis {d:seen}/{d:total} nabídek"
-		"popup_lootlist_claim_xp"		"Získat bonusová XP"
+		"popup_lootlist_claim_xp"		"Získat XP"
 		"popup_lootlist_claim_ww"		"Získávání XP..."
 		"popup_lootlist_claim_ok"		"✅ XP získána"
 		"popup_vpn_status_connected"	"Stav: Připojeno k zabezpečené síti"
@@ -46528,8 +46533,8 @@
 		"quest_11015_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.#|#<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.#|#<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.#|#<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol."
 		"quest_11015_var_ingame:p{mission-points}"		"Vyhrávej kola#|#Vyhrávej kola#|#Vyhrávej kola#|#Vyhrávej kola"
 
-// crow_mask_48775_comment
-// crow_mask_48776_comment
+// crow_mask_48780_comment
+// crow_mask_48781_comment
 }
 
 

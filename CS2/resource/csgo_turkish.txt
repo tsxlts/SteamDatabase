@@ -44,6 +44,7 @@
 		"GameUI_CrosshairLength"	"Uzunluk"
 		"GameUI_CrosshairDot"		"Merkez Nokta"
 		"GameUI_IronsightColor"		"Dürbün noktası için nişangâh rengini kullan"
+		"GameUI_IronsightScale"		"Dürbün noktası boyutu"
 		"GameUI_CrosshairRecoil"	"Geri Tepme Takibi"
 		"GameUI_CrosshairRecoil_Desc"	"Nişangâh, silahın geri tepme desenini takip etmek için ekranın ortasından ayrılacaktır."
 		"GameUI_CrosshairThickness"	"Kalınlık"
@@ -52,6 +53,7 @@
 		"GameUI_CrosshairAlpha"		"Alfa"
 		"GameUI_CrosshairSize"		"Nişangâh Boyutu"
 		"GameUI_CrosshairColor"		"Nişangâh Rengi"
+		"GameUI_SniperCrosshairThickness" "Keskin nişancı tüfeği nişangâh kalınlığı"
 		"GameUI_ColorSliders"		"Renkler"
 		"GameUI_ColorQuality"		"Renk Kalitesi"
 		"GameUI_ColorGreen"			"Yeşil"
@@ -3281,8 +3283,8 @@ VIP'ye bu bölgelerden birine ulaşana kadar koruma sağla."
 		"CSGO_Collectible_MapTokenGolden_Desc"			"CS2 haritası \"Golden\"ı oluşturduğu için verildi."
 		"CSGO_Collectible_MapTokenRooftop"				"Rooftop Harita Jetonu"
 		"CSGO_Collectible_MapTokenRooftop_Desc"			"CS2 haritası \"Rooftop\"ı oluşturduğu için verildi."
-		"CSGO_Collectible_MapTokenTransit"				"Transit Harita Jetonu"
-		"CSGO_Collectible_MapTokenTransit_Desc"			"CS2 haritası \"Transit\"i oluşturduğu için verildi."
+		"CSGO_Collectible_MapTokenTransit"				"(Gizli) Harita Jetonu"
+		"CSGO_Collectible_MapTokenTransit_Desc"			"CS2 haritası \"(Gizli)\"i oluşturduğu için verildi."
 
 
 		"CSGO_CollectibleCoin_FortiusQuoFidelius"	"Sadakat Rozeti"
@@ -33137,7 +33139,7 @@ Bu çıkartma, forZe eSports için Berlin 2019'da oynayan profesyonel oyuncu And
 		"SFUI_Map_de_palacio"		"Palacio"
 		"SFUI_Map_de_golden"		"Golden"
 		"SFUI_Map_de_rooftop"		"Rooftop"
-		"SFUI_Map_de_transit"		"Transit"
+		"SFUI_Map_de_transit"		"(Gizli)"
 
 		"SFUI_Map_workshop_preview_dust2"	"Dust II Ön İzlemesi"
 		"SFUI_Map_workshop_preview_ancient"	"Ancient Ön İzlemesi"
@@ -38025,6 +38027,7 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"SFUI_QMM_ERROR_PremierSeasonOver"		"Seçkin sezonu sona erdi. Bir sonraki Seçkin sezonu başlayana kadar lütfen bekleyin."
 		"SFUI_QMM_ERROR_PremierRatingMissing"		"Partindeki oyuncuların CS derecesi, CS derecesi olmayan bir oyuncu ile birlikte eşleştirmeye katılmak için çok yüksek."
 		"SFUI_QMM_ERROR_PremierRatingLargeDelta"	"Partindeki oyuncuların CS dereceleri, eşleştirmeye birlikte katılmak için birbirinden çok farklı."
+		"SFUI_QMM_ERROR_PremierRatingLargeDelta5"	"Partinde bulunan oyuncuların CS dereceleri birbirinden çok farklı olduğundan, beş kişilik tam bir takımınız yoksa eşleştirmeye birlikte katılamazsınız."
 		"SFUI_QMM_ERROR_FullTeamRequired" "Eşleştirme partindeki takım tam olmadığı için eşleştirme başlatılamıyor."
 		"SFUI_QMM_ERROR_TournamentTeamAccounts"	"Tüm parti üyeleri aynı turnuva takımının üyesi olması gerektiği için eşleştirme başlatılamıyor."
 		"SFUI_QMM_ERROR_TournamentTeamSize"	"Turnuva takımınızda 5 oyuncu olması gerektiği için eşleştirme başlatılamıyor."
@@ -42957,6 +42960,8 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"settings_account_conn_section"		"Twitch.tv"
 		"settings_crosshair"				"Nişangâh"
 		"settings_crosshair_info"			"Retikül boyutunu, biçimini ve rengini özelleştir. Nişangâh kodunu arkadaşlarınla paylaş veya başka birinin ayarlarını dene."
+		"settings_snipers_xhair"			"Keskin Nişancı Görüşü"
+		"settings_grenadecrosshair_short"	"El Bombası Hedef Göstergesi"
 		"settings_grenadecrosshair"			"El Bombası Hedef Göstergesi"
 		"settings_grenadecrosshair_info"	"El bombası atışlarını hizalamaya yardımcı olan bir gösterge."
 		"settings_radar_section"			"Radar"
@@ -45792,8 +45797,8 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"quest_11015_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> oynarken bir raunt kazan.#|#<b>{s:gamemode}: {s:location}</b> oynarken birden fazla raunt kazan."
 		"quest_11015_var_ingame:p{mission-points}"		"Bir raunt kazan.#|#Birden fazla raunt kazan."
 
-// crow_mask_48775_comment
-// crow_mask_48776_comment
+// crow_mask_48780_comment
+// crow_mask_48781_comment
 }
 
 
