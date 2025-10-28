@@ -1494,7 +1494,6 @@
 		"Shop"				"Magazin"
 		"Scaffolding"		"Schele"
 		"Connector"			"Conector"
-		"TicketBooth"			"Bilete"
 		"Jungle"			"Junglă"
 		//Overpass
 		"LowerPark"			"Parc inferior"
@@ -45200,6 +45199,15 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 
 // crow_mask_48780_comment
 // crow_mask_48781_comment
+}
+
+
+
+
+}
+
+
+_comment
 }
 
 

@@ -35264,10 +35264,14 @@
 		//Recipes
 		"CSGO_Recipe_TradeUp"						"Trade Up Contract"
 		"CSGO_Recipe_TradeUp_Desc"					"In exchange for 10 items of identical quality, you will receive a single item of a quality one higher, from a collection of one of the items you provided."
+		"CSGO_Recipe_TradeUpX_Desc"					"In exchange for several items of identical quality, you will receive a single item of a quality one higher, from a collection of one of the items you provided."
 		"CSGO_Recipe_TradeUp_Desc_html"				"Exchange: <b><font color='#FFFFFF'>10 items of identical quality</font></b>\nReceive: <b><font color='#FFFFFF'>1 item of the next highest quality, from a collection of one of the items provided</font></b>"
+		"CSGO_Recipe_TradeUpX_Desc_html"			"Exchange: <b><font color='#FFFFFF'>items of identical quality</font></b>\nReceive: <b><font color='#FFFFFF'>1 item of the next highest quality, from a collection of one of the items provided</font></b>"
 		"CSGO_Recipe_Count_Items_Selected:p{count}"			"<b>{d:count}</b> Item Selected#|#<b>{d:count}</b> Items Selected"
 		"CSGO_Recipe_Count_Items_Remaining:p{count}"			"<b>{d:count}</b> Item Remaining#|#<b>{d:count}</b> Items Remaining"
 		"CSGO_Recipe_TradeUp_Items_Remain:p{count}"			"{d:count} Selected for Exchange#|#{d:count} Selected for Exchange"
+		"CSGO_Recipe_TradeUp_Items_NoSelection"				"Select eligible items from your inventory to exchange for a higher quality item"
+		"CSGO_Recipe_TradeUp_Items_XofY:p{count}"			"{d:count} / {d:recipecount} Selected for Exchange#|#{d:count} / {d:recipecount} Selected for Exchange"
 		"CSGO_Recipe_TradeUp_Items_Inv:p{count}"				"{d:count} Eligible for Exchange#|#{d:count} Eligible for Exchange"
 		"CSGO_Recipe_TradeUp_Items_Confirm"			"Ready to Trade Up"
 		"CSGO_Swap_Stattrak_Title"					"StatTrak™ Swap Tool"
@@ -35539,6 +35543,8 @@
 		"RI_R5"							"Classified Weapon"
 		"RI_R6p"						"Covert Weapons"
 		"RI_R6"							"Covert Weapon"
+		"RI_R7p"						"★ Rare Special Items ★"
+		"RI_R7"							"★ Rare Special Item ★"
 
 
 
@@ -35633,6 +35639,7 @@
 		"SFUI_GameMode_custom"					"Custom"
 		"SFUI_GameMode_Workshop"				"Workshop"
 		"SFUI_GameMode_new_user_training"		"Training Day"
+		"SFUI_GameMode_retakes"					"Retakes"
 
 		"ForceNewUserTraining_title"			"Training Day"
 		"ForceNewUserTraining_text"				"Are you ready to proceed to a brief training session?"
@@ -41514,6 +41521,11 @@
 		"SFUI_Lobby_StatusRichPresence_new_user_training_community"		"Community Training"
 		"SFUI_Lobby_StatusRichPresence_new_user_training_watch"			"Watching Training"
 		"SFUI_Lobby_StatusRichPresence_new_user_training_review"		"Replaying Training"
+		"SFUI_Lobby_StatusRichPresence_retakes_lobby"					"In Retakes Lobby"
+		"SFUI_Lobby_StatusRichPresence_retakes_game"					"Playing Retakes"
+		"SFUI_Lobby_StatusRichPresence_retakes_community"				"Community Retakes"
+		"SFUI_Lobby_StatusRichPresence_retakes_watch"					"Watching Retakes"
+		"SFUI_Lobby_StatusRichPresence_retakes_review"					"Replaying Retakes"
 		"SFUI_Lobby_StatusRichPresenceSeparator_classic_competitive"			" "
 
 		"SFUI_PSNPresence_SinglePlayer"		"Single Player"
@@ -43556,6 +43568,8 @@
 		"SFUI_Rules_Workshop_Loading"			""
 
 		"SFUI_Rules_NewUserTraining_Loading"	"Welcome to Counter-Strike!\n\nYou're about to play 12 rounds with bots.\n\nIn each round, eliminate the enemies or complete the bomb objective."
+
+		"SFUI_Rules_Retakes_Loading"			"Bomb Scenario Mission\n\nRounds begin with the bomb already\nplanted at a random site.\n\nSelect a loadout at the beginning of\neach round.\n\nSettings:\n· Friendly fire is OFF\n· Team collision is OFF"
 
 		// Team Select Screen
 		"SFUI_Rules_TS_GunGame_Progressive"		"Eliminate enemies and be the first player to get a kill with the Golden Knife."
@@ -48786,6 +48800,5 @@
 
 
 }
-
 
 

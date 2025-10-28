@@ -467,7 +467,7 @@
 		"LoadingProgress_CSFunLoading46"	"Koopzones afbakenen..."
 		"LoadingProgress_CSFunLoading47"	"Dempers bevestigen..."
 		"LoadingProgress_CSFunLoading48"	"Nog één kogel over..."
-		"LoadingProgress_CSFunLoading49"	"Major-hoogtepunten bekijken..."
+		"LoadingProgress_CSFunLoading49"	"Major-highlights bekijken..."
 
 		"loadingscreen_title_de_ancient"		"Ancient"
 		"loadingscreen_title_de_ancient_1"		"Bomlocatie A"
@@ -2421,7 +2421,7 @@
 		"ItemHistory_Action_Traded"										"Geruild"
 		"ItemHistory_Action_Delete"										"Je hebt dit verwijderd"
 		"ItemHistory_Action_Banned"										"Verbannen"
-		"ItemHistory_Action_CraftDestroy"								"Gebruikt in opwaardeercontract"
+		"ItemHistory_Action_CraftDestroy"								"Gebruikt in inruilcontract"
 		"ItemHistory_Action_LimitExceeded"								"Vernietigd door rugzaklimiet"
 		"ItemHistory_Action_SupportDelete"								"Verwijderd door Steam Support"
 		"ItemHistory_Action_SupportDeletedByUndo"						"Verwijderd door Steam Support"
@@ -2556,7 +2556,6 @@
 		"Rarity_Rare_Weapon"						"Militair"
 		"Rarity_Mythical_Weapon"					"Verboden"
 		"Rarity_Legendary_Weapon"					"Geheim"
-		"Rarity_Ancient_Weapon"						"Verborgen"
 		"Rarity_Contraband_Weapon"					"Gesmokkeld"
 		"Rarity_Arcana_Weapon"						"ONBENOEMD"
 		"CSGO_FilterRarity"							"Alle zeldzaamheden"
@@ -33478,8 +33477,8 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"RI_R4"							"Verboden wapen"
 		"RI_R5p"						"Vertrouwelijke wapens"
 		"RI_R5"							"Geheim wapen"
-		"RI_R6p"						"Verborgen wapens"
-		"RI_R6"							"Verborgen wapen"
+		"RI_R6p"						"Clandestiene wapens"
+		"RI_R6"							"Clandestien wapen"
 
 
 
@@ -46596,6 +46595,15 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 
 // crow_mask_48780_comment
 // crow_mask_48781_comment
+}
+
+
+
+
+}
+
+
+/ crow_mask_48781_comment
 }
 
 
