@@ -4947,7 +4947,6 @@
 		"CSGO_Tournament_Event_Stage_94"		"รอบ III"
 		"CSGO_Tournament_Event_Stage_95"		"รอบ III"
 		"CSGO_Tournament_Event_Stage_96"		"รอบ III"
-
 		"CSGO_Tournament_Event_Stage_Display_1"			"รอบงานมหกรรม"
 		"CSGO_Tournament_Event_Stage_Display_2"			"รอบแบ่งกลุ่ม | กลุ่มแรก"
 		"CSGO_Tournament_Event_Stage_Display_3"			"รอบนำคอมพิวเตอร์มาเอง"
@@ -5044,7 +5043,6 @@
 		"CSGO_Tournament_Event_Stage_Display_94"		"รอบ III - แมตช์แพ้คัดออก 1 จาก 3"
 		"CSGO_Tournament_Event_Stage_Display_95"		"รอบ III - แมตช์แพ้คัดออก 2 จาก 3"
 		"CSGO_Tournament_Event_Stage_Display_96"		"รอบ III - แมตช์แพ้คัดออก"
-
 		// Match global stats stage names
 		"CSGO_MatchInfo_Stage_Group"	"รอบแบ่งกลุ่ม"
 		"CSGO_MatchInfo_Stage_GroupStage"	"รอบแบ่งกลุ่ม"
@@ -5248,9 +5246,6 @@
 		"CSGO_TeamID_139"       "Falcons"
 		"CSGO_TeamID_140"       "M80"
 		"CSGO_TeamID_141"       "Metizport"
-
-
-
 		"Place_Name_1st"		"ผู้ชนะเลิศ"
 		"Place_Name_2nd"		"ผู้เข้ารอบชิงชนะเลิศ"
 		"Place_Name_3rd-4th"	"ผู้เข้ารอบรองชนะเลิศ"
@@ -23060,7 +23055,7 @@
 	"StickerKit_desc_cph2024_signature_jt" "สติกเกอร์นี้มาพร้อมกับลายเซ็นของ Ioannis Theodosiou ผู้เล่นมืออาชีพทีม Complexity Gaming ที่เข้าร่วมการแข่งขันชิงแชมป์เมเจอร์ CS2 PGL Copenhagen 2024"
 	"StickerKit_cph2024_signature_jt_glitter" "JT (ระยิบระยับ) | Copenhagen 2024"
 	"StickerKit_desc_cph2024_signature_jt_glitter" "สติกเกอร์ระยิบระยับนี้มาพร้อมกับลายเซ็นของ Ioannis Theodosiou ผู้เล่นมืออาชีพทีม Complexity Gaming ที่เข้าร่วมการแข่งขันชิงแชมป์เมเจอร์ CS2 PGL Copenhagen 2024"
-	"StickerKit_cph2024_signature_jt_holo" "JT (Holo) | Copenhagen 2024"
+	"StickerKit_cph2024_signature_jt_holo" "JT (โฮโล) | Copenhagen 2024"
 	"StickerKit_desc_cph2024_signature_jt_holo" "สติกเกอร์โฮโลกราฟิกนี้มาพร้อมกับลายเซ็นของ Ioannis Theodosiou ผู้เล่นมืออาชีพทีม Complexity Gaming ที่เข้าร่วมการแข่งขันชิงแชมป์เมเจอร์ CS2 PGL Copenhagen 2024"
 	"StickerKit_cph2024_signature_jt_gold" "JT (ทอง) | Copenhagen 2024"
 	"StickerKit_desc_cph2024_signature_jt_gold" "สติกเกอร์ทองนี้มาพร้อมกับลายเซ็นของ Ioannis Theodosiou ผู้เล่นมืออาชีพทีม Complexity Gaming ที่เข้าร่วมการแข่งขันชิงแชมป์เมเจอร์ CS2 PGL Copenhagen 2024"
@@ -24472,7 +24467,7 @@
 	"StickerKit_desc_sha2024_signature_n0rb3r7" "สติกเกอร์นี้มาพร้อมกับลายเซ็นของ David Danielyan ผู้เล่นมืออาชีพทีม Virtus.Pro ที่เข้าร่วมการแข่งขันชิงแชมป์เมเจอร์ CS2 Perfect World Shanghai 2024"
 	"StickerKit_sha2024_signature_n0rb3r7_glitter" "n0rb3r7 (Glitter) | Shanghai 2024"
 	"StickerKit_desc_sha2024_signature_n0rb3r7_glitter" "สติกเกอร์ระยิบระยับนี้มาพร้อมกับลายเซ็นของ David Danielyan ผู้เล่นมืออาชีพทีม Virtus.Pro ที่เข้าร่วมการแข่งขันชิงแชมป์เมเจอร์ CS2 Perfect World Shanghai 2024"
-	"StickerKit_sha2024_signature_n0rb3r7_holo" "n0rb3r7 (Holo) | Shanghai 2024"
+	"StickerKit_sha2024_signature_n0rb3r7_holo" "n0rb3r7 (โฮโล) | Shanghai 2024"
 	"StickerKit_desc_sha2024_signature_n0rb3r7_holo" "สติกเกอร์โฮโลกราฟิกนี้มาพร้อมกับลายเซ็นของ David Danielyan ผู้เล่นมืออาชีพทีม Virtus.Pro ที่เข้าร่วมการแข่งขันชิงแชมป์เมเจอร์ CS2 Perfect World Shanghai 2024"
 	"StickerKit_sha2024_signature_n0rb3r7_gold" "n0rb3r7 (ทอง) | Shanghai 2024"
 	"StickerKit_desc_sha2024_signature_n0rb3r7_gold" "สติกเกอร์ทองนี้มาพร้อมกับลายเซ็นของ David Danielyan ผู้เล่นมืออาชีพทีม Virtus.Pro ที่เข้าร่วมการแข่งขันชิงแชมป์เมเจอร์ CS2 Perfect World Shanghai 2024"
@@ -27867,7 +27862,11 @@
 		"CSGO_Watch_Loading_Tournament_24"   "กำลังโหลดแมตช์ BLAST.tv Austin 2025..."
 
 		//
-		// 2025 BLAST.tv Austin 2025 CS2 Major Championship Strings Block End
+//
+//
+//
+	//
+		// 2025 StarLadder Budapest 2025 CS2 Major Championship Strings Block End
 		// ======================================
 
 
@@ -33476,10 +33475,14 @@
 		//Recipes
 		"CSGO_Recipe_TradeUp"						"ใบสัญญาแลกเปลี่ยน"
 		"CSGO_Recipe_TradeUp_Desc"					"ในการแลกเปลี่ยนไอเท็ม 10 ชิ้นที่มีระดับเหมือนกัน คุณจะได้รับไอเท็ม 1 ชิ้นในระดับถัดไปที่สูงกว่า จากหนึ่งในชุดสะสมของไอเท็มที่ให้มา"
+		"CSGO_Recipe_TradeUpX_Desc"					"ในการแลกเปลี่ยนไอเท็มหลายชิ้นที่มีระดับเหมือนกัน คุณจะได้รับไอเท็ม 1 ชิ้นในระดับถัดไปที่สูงกว่า จากหนึ่งในชุดสะสมของไอเท็มที่ให้มา"
 		"CSGO_Recipe_TradeUp_Desc_html"				"แลกเปลี่ยน: <b><font color='#FFFFFF'>ไอเท็ม 10 ชิ้นที่มีระดับเหมือนกัน</font></b>\nรับ: <b><font color='#FFFFFF'>ไอเท็ม 1 ชิ้นในระดับถัดไปที่สูงกว่า จากหนึ่งในชุดสะสมของไอเท็มที่ให้มา</font></b>"
+		"CSGO_Recipe_TradeUpX_Desc_html"			"แลกเปลี่ยน: <b><font color='#FFFFFF'>ไอเท็มหลายชิ้นที่มีระดับเหมือนกัน</font></b>\nรับ: <b><font color='#FFFFFF'>ไอเท็ม 1 ชิ้นในระดับถัดไปที่สูงกว่า จากหนึ่งในชุดสะสมของไอเท็มที่ให้มา</font></b>"
 		"CSGO_Recipe_Count_Items_Selected:p{count}"			"<b>{d:count}</b> ไอเท็มที่เลือกไว้"
 		"CSGO_Recipe_Count_Items_Remaining:p{count}"			"<b>{d:count}</b> ไอเท็มที่เหลืออยู่"
 		"CSGO_Recipe_TradeUp_Items_Remain:p{count}"			"{d:count} รายการถูกเลือกสำหรับการแลกเปลี่ยน"
+		"CSGO_Recipe_TradeUp_Items_NoSelection"				"เลือกไอเท็มที่มีสิทธิ์จากช่องเก็บของของคุณเพื่อแลกเปลี่ยนกับไอเท็มที่มีคุณภาพสูงกว่า"
+		"CSGO_Recipe_TradeUp_Items_XofY:p{count}"			"{d:count}/{d:recipecount} รายการถูกเลือกสำหรับการแลกเปลี่ยน"
 		"CSGO_Recipe_TradeUp_Items_Inv:p{count}"				"{d:count} รายการมีสิทธิ์สำหรับการแลกเปลี่ยน"
 		"CSGO_Recipe_TradeUp_Items_Confirm"			"พร้อมสำหรับแลกเปลี่ยน"
 		"CSGO_Swap_Stattrak_Title"					"เครื่องมือสลับ StatTrak™"
@@ -33751,6 +33754,8 @@
 		"RI_R5"							"อาวุธลับเฉพาะ"
 		"RI_R6p"						"อาวุธลึกลับ"
 		"RI_R6"							"อาวุธลึกลับ"
+		"RI_R7p"						"★ ไอเท็มพิเศษหายาก ★"
+		"RI_R7"							"★ ไอเท็มพิเศษหายาก ★"
 
 
 
@@ -33832,6 +33837,7 @@
 		"SFUI_GameMode_custom"					"แบบกำหนดเอง"
 		"SFUI_GameMode_Workshop"				"เวิร์กชอป"
 		"SFUI_GameMode_new_user_training"		"วันฝึกซ้อม"
+		"SFUI_GameMode_retakes"					"โหมดยึดคืน"
 
 		"ForceNewUserTraining_title"			"วันฝึกซ้อม"
 		"ForceNewUserTraining_text"				"คุณพร้อมที่จะเข้าสู่เซสชันการฝึกอบรมสั้น ๆ แล้วหรือไม่?"
@@ -39675,6 +39681,11 @@
 		"SFUI_Lobby_StatusRichPresence_new_user_training_community"		"โหมดฝึกซ้อม (ชุมชน)"
 		"SFUI_Lobby_StatusRichPresence_new_user_training_watch"			"กำลังชมโหมดฝึกซ้อม"
 		"SFUI_Lobby_StatusRichPresence_new_user_training_review"		"กำลังดูรีเพลย์โหมดฝึกซ้อม"
+		"SFUI_Lobby_StatusRichPresence_retakes_lobby"					"อยู่ในล็อบบี้โหมดยึดคืน"
+		"SFUI_Lobby_StatusRichPresence_retakes_game"					"กำลังเล่นโหมดยึดคืน"
+		"SFUI_Lobby_StatusRichPresence_retakes_community"				"โหมดยึดคืนในเซิร์ฟเวอร์ชุมชน"
+		"SFUI_Lobby_StatusRichPresence_retakes_watch"					"กำลังชมโหมดยึดคืน"
+		"SFUI_Lobby_StatusRichPresence_retakes_review"					"กำลังดูรีเพลย์โหมดยึดคืน"
 		"SFUI_PSNPresence_SinglePlayer"		"ผู้เล่นคนเดียว"
 		"SFUI_PSNPresence_InLobby"			"ในล็อบบี้"
 		"SFUI_PSNPresence_InGame"			"เกมออนไลน์"
@@ -41012,9 +41023,6 @@
 		"SFUI_ProPlayer_zweih" "Ivan Gogin"
 		"SFUI_ProPlayer_br0" "Alexander Bro"
 		"SFUI_ProPlayer_saadzin" "Guilherme Pacheco"
-
-
-
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Leaderboards
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -41713,6 +41721,8 @@
 		"SFUI_Rules_Survival_Loading"			"· เลือกตำแหน่งเริ่มต้นของคุณ\n· ค้นหาหรือสั่งซื้ออุปกรณ์\n· รวบรวมข้อมูลจากแท็บเล็ตของคุณ\n· หลีกเลี่ยงการเข้าไปในโซนอันตราย\n· จงกลายเป็นผู้เล่นคนสุดท้ายที่เหลืออยู่\nเพื่อชนะ!"
 
 		"SFUI_Rules_NewUserTraining_Loading"	"ยินดีต้อนรับสู่ Counter-Strike!\n\nคุณกำลังจะเล่น 12 รอบกับบอท\n\nในแต่ละรอบกำจัดศัตรูหรือวางระเบิดให้สำเร็จ"
+
+		"SFUI_Rules_Retakes_Loading"			"ภารกิจสถานการณ์ระเบิด\n\nรอบจะเริ่มต้นด้วยระเบิด\nที่สุ่มวางไว้ตรงจุดใดจุดหนึ่งแล้ว\n\nเลือกชุดอุปกรณ์ในตอนเริ่มต้นของ\nแต่ละรอบ\n\n\\การตั้งค่า:\n· ปิดการยิงฝ่ายเดียวกัน\n· ปิดการปะทะกันของทีม"
 
 		// Team Select Screen
 		"SFUI_Rules_TS_GunGame_Progressive"		"กำจัดศัตรูและเป็นผู้เล่นคนแรกที่สังหารด้วยมีดทอง"
@@ -43537,6 +43547,7 @@
 		"inv_empty_lister_general"			"ไม่พบไอเท็มใดสำหรับประเภทที่เลือกไว้ในช่องเก็บของของคุณ"
 		"inv_empty_loadout_slot"			"ไม่มีไอเท็มสวมใส่ในช่องนี้"
 		"inv_header_rarity"					"ความหายาก:"
+		"inv_header_quality"				"คุณภาพ:"
 		"inv_header_grade"					"สภาพภายนอก:"
 		"inv_header_team"					"ทีม:"
 
@@ -46706,7 +46717,7 @@
 		"GameUI_Retake_Card_AvailableCards"		"เลือกชุดอุปกรณ์"
 
 		"GameUI_Retake_Card_Bonus"				"โบนัส"
-		"GameUI_Retake_Card_Enemy"				"ชุดอุปกรณ์ของศัตรู"
+		"GameUI_Retake_Card_Enemy"				"Enemy Loadout"
 		"GameUI_Retake_Card_Mvp"				"MVP"
 
 		"GameUI_Retake_Card_4v3"				"4v3"
@@ -46868,8 +46879,8 @@
 		"quest_11015_var_desc:p{mission-points}"	 	"ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
 		"quest_11015_var_ingame:p{mission-points}"		"ชนะรอบ"
 
-// crow_mask_48780_comment
-// crow_mask_48781_comment
+// crow_mask_50556_comment
+// crow_mask_50557_comment
 }
 
 
