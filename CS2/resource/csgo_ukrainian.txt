@@ -3043,6 +3043,9 @@
 
 		"CSGO_EconAction_Preview"	"Оглянути у грі…"
 
+		"StickerDisplayCaseTitle"	"COUNTER-STRIKE 2"
+		"StickerDisplayCaseGrade"	"НАЛІПКА В ІДЕАЛЬНОМУ СТАНІ"
+
 		"CSGO_KillEater_Hud"		"СтатТрек™"
 
 		"KillEaterRank0"			"СтатТрек™"
@@ -8398,6 +8401,14 @@
 
 		"CSGO_Tool_Keychain"						"Брелок"
 		"CSGO_Tool_Keychain_Desc"					"Цей брелок можна причепити до будь-якої зброї, якою ви володієте. Кожен прикріплений брелок можна зняти за допомогою відчіплювача брелоків. Відчеплені брелоки повернуться до вашого інвентарю."
+
+		"keychain_kc_sticker_display_case"			"Слаб"
+		"keychain_kc_sticker_display_case_desc"		"Наліпка безпечно запечатана в слабі. Ви можете в будь-який час повернути її до інвентарю, розбивши слаб."
+		"CSGO_Tool_StickerDisplayCase_Desc"			"У слабі можна запечатати будь-яку наліпку. Слаб — це брелок, який можна прикріпити до будь-якої зброї й зняти за допомогою відчіплювача. Ви також можете в будь-який час повернути наліпку до інвентарю, розбивши слаб."
+		"CSGO_Tool_WrapStickerInDisplayCase_Title"	"Запечатати наліпку в слабі"
+		"CSGO_Tool_WrapStickerInDisplayCase_Desc"	"Запечатайте наліпку в слабі й прикріпіть до своєї зброї.<br/>Ви можете в будь-який час повернути наліпку до інвентарю, розбивши слаб."
+		"CSGO_Tool_UnWrapStickerInDisplayCase_Title" "Розбити слаб і вийняти наліпку"
+		"CSGO_Tool_UnWrapStickerInDisplayCase_Desc"	"Наліпку буде витягнуто зі слаба й повернено до вашого інвентарю.<br/>Цей слаб буде розбито."
 
 		"CSGO_Tool_Sticker"							"Наліпка"
 		"CSGO_Tool_Sticker_Desc"					"Ця наліпка прикріплюється на будь-яку вашу зброю. Її можна пошкрябати, аби вона виглядала більш зношеною. Ви можете шкрябати наліпку кілька разів, щоразу роблячи її обшарпанішою, аж доки вона не відпаде зі зброї."
@@ -38550,6 +38561,9 @@
 		"SFUI_InvContextMenu_nameable_use"	"Застосувати бирку"
 		"SFUI_InvContextMenu_usegift"		"Подарувати"
 		"SFUI_InvContextMenu_recipe"		"Відкрити контракт"
+		"SFUI_InvContextMenu_wrap_sticker"	"Запечатати в слабі"
+		"SFUI_InvContextMenu_can_wrap_sticker"	"Запечатати наліпку"
+		"SFUI_InvContextMenu_can_unwrap_sticker" "Витягнути запечатану наліпку"
 		"SFUI_InvContextMenu_can_sticker"	"Додати наліпку"
 		"SFUI_InvContextMenu_can_keychain"	"Причепити брелок"
 		"SFUI_InvContextMenu_can_patch"		"Застосувати нашивку"
@@ -38617,11 +38631,15 @@
 		"popup_remove_sticker_button_negative"  "Здерти наліпку"
 		"popup_scrape_sticker_level"		"Рівень дряпання наліпки"
 		"SFUI_Sticker_RemoveImmediate_Desc" "Підтвердьте бажання вилучити наліпку з предмета. Після цієї дії вона знищиться."
+		"SFUI_Sticker_RemoveImmediate_Tooltip" "<b>Натисніть</b> і <b>утримуйте</b>, щоби вилучити вибрану наліпку з предмета.<br>Вилучена наліпка буде знищена."
+
 		"SFUI_Sticker_Remove_Desc"          "Подальше дряпання наліпки здере її зі зброї, і наліпку буде знищено." 
 		"SFUI_Patch_Remove"           		"Вилучити нашивку"
 		"SFUI_Patch_Remove_Desc"			"Будь ласка, підтвердьте бажання вилучити цю нашивку. Після цієї дії вона знищиться." 
+		"SFUI_Patch_Remove_Desc_Tooltip"	"<b>Натисніть</b> і <b>утримуйте</b>, щоби вилучити вибрану нашивку з агента.<br>Вилучена нашивка буде знищена." 
 		"SFUI_Keychain_Remove"           	"Відчепити брелок"
 		"SFUI_Keychain_Remove_Desc"			"Ви дійсно бажаєте відчепити цей брелок? Ця дія використає один відчіплювач і поверне брелок у ваш інвентар."
+		"SFUI_Keychain_Remove_Tooltip"		"<b>Натисніть</b> і <b>утримуйте</b>, щоби відкріпити брелок.<br>Ви використаєте один відчіплювач і повернете один брелок до свого інвентарю."
 		"SFUI_Sticker_Wear_Warning"         "Подряпання наліпки надасть їй зношеного вигляду. Ви можете подряпати одну й ту ж наліпку неодноразово, роблячи її щоразу зношенішою. Часте дряпання наліпки здере її зі зброї.\n<font color='#ff0000'>Результат є незворотним!</font>" 
 		"SFUI_Sticker_Wear_Warning_Full"    "Неможливо прикріпити більше наліпок. Здеріть вже прикріплену наліпку, аби звільнити місце для нової." 
 		"SFUI_Sticker_Wear_How_To"   		"Натискання на наліпку трохи збільшуватиме її подряпаність. Багаторазове пошкодження усуне наліпку.\n<font color='#ff0000'>Скасувати це неможливо, результат буде перманентним.</font>"
@@ -47046,6 +47064,9 @@
 		"inv_context_yourcasket"			"Змінити бирку"
 		"inv_context_intocasket"			"Перенести до сховища"
 		"inv_context_preview_can_sticker"	"Огляд наліпки"
+		"inv_context_wrap_sticker"			"Запечатати в слабі"
+		"inv_context_can_wrap_sticker"		"Запечатати наліпку"
+		"inv_context_can_unwrap_sticker"	"Витягнути запечатану наліпку"
 		"inv_context_can_sticker"			"Застосувати наліпку"
 		"inv_context_remove_sticker"		"Дряпання наліпки"
 		"inv_context_preview_can_keychain"	"Огляд брелока"
@@ -47172,6 +47193,8 @@
 		"popup_title_nametag_remove"		"Бирку знято"
 		"popup_title_sticker_apply"			"Наліпку застосовано"
 		"popup_title_sticker_remove"		"Наліпку видалено"
+		"popup_title_sticker_extract"		"Витягнена наліпка"
+		"popup_title_keychain_seal"			"Запечатана наліпка"
 		"popup_title_keychain_apply"		"Брелок причеплено"
 		"popup_title_keychain_remove"		"Брелок відчеплено"
 		"popup_title_patch_apply"			"Нашивку застосовано"
@@ -47291,6 +47314,10 @@
 
 		"popup_can_keychain_button"			"Причепити брелок"
 		"popup_can_patch_button"			"Застосувати нашивку"
+		"popup_can_wrap_sticker_button"		"Запечатати в слабі"
+		"popup_can_wrap_sticker_button_tooltip"		"<b>Натисніть</b> і <b>утримуйте</b>, щоби запечатати наліпку в слабі."
+		"popup_can_wrap_sticker_button_negative" "Витягнути запечатану наліпку"
+		"popup_can_wrap_sticker_button_negative_tooltip" "<b>Натисніть</b> і <b>утримуйте</b>, щоби витягти запечатану наліпку."
 		"popup_can_sticker_button"			"Застосувати наліпку {d:sticker_count}/{d:max_stickers}"
 
 		//Decodable

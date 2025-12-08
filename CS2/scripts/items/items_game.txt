@@ -23072,6 +23072,7 @@
 			"description_format"		"value_is_additive"
 			"hidden"		"1"
 			"effect_type"		"positive"
+			"stored_as_integer"		"bytestring"
 		}
 		"112"
 		{
