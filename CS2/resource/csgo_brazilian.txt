@@ -45012,6 +45012,13 @@
 
 		"CSGO_Workshop_GameModeTags"				"Marcadores de modos de jogo"
 		"CSGO_Workshop_WeaponTags"					"Marcadores de armas"
+		
+		"CSGO_Workshop_EventTags"					"Recrutamento (Call to Arms)"
+		"CSGO_Workshop_Event_none"					"Não alistar"
+		"CSGO_Workshop_Event_arabesque"				"Alistar em \"Arte arabesca e mitologia árabe\""
+		"CSGO_Workshop_Event_spy_tech"				"Alistar em \"Espionagem e/ou tecnologia\""
+		"CSGO_Workshop_Event_fruit_veg"				"Alistar em \"Frutas e verduras\""
+		"CSGO_Workshop_Event_auto_racing"			"Alistar em \"Corrida de automóveis\""
 
 		"CSGO_Workshop"								"Oficina"
 		//MatchDraft
@@ -47112,7 +47119,7 @@
 		"user_btn_decline_desc"				"Recusar esta proposta e receber outra"
 		"user_btn_accept"		"Aceitar proposta <b>{s:price}</b>"
 		"user_btn_accept_final"	"Aceitar última proposta <b>{s:price}</b>"
-		"user_btn_accept_0"		"Negócio fechado. <b>Pode ser por {s:price}.</b>"
+		"user_btn_accept_0"		"Fechado. <b>Pode ser por {s:price}.</b>"
 		"user_btn_accept_1"		"Vou aceitar — <b>{s:price}</b>."
 		"user_btn_accept_2"		"Levarei por <b>{s:price}</b>."
 		"user_btn_accept_3"		"Vou pegar por <b>{s:price}</b>."
@@ -47545,8 +47552,8 @@
 		"quest_11015_var_desc:p{mission-points}"	 	"Vença uma rodada no modo <b>{s:gamemode} ({s:location})</b>.#|#Vença rodadas em partidas do modo <b>{s:gamemode} ({s:location})</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Vença uma rodada.#|#Vença rodadas."
 
-// crow_mask_50556_comment
-// crow_mask_50557_comment
+// crow_mask_50563_comment
+// crow_mask_50564_comment
 }
 
 

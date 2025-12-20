@@ -39395,6 +39395,7 @@
 		"SFUI_BuyMenu_NotAllowedByMode"			"In diesem Spielmodus nicht erlaubt."
 		"SFUI_BuyMenu_NotAllowedByTeam"			"In Ihrem derzeitigen Team nicht erlaubt."
 		"SFUI_BuyMenu_ReachedWeaponsExpertLimit:p{s1}"	"Bereits {s:s1} in diesem Spiel gekauft#|#Bereits {s:s1} in diesem Spiel gekauft"
+		"SFUI_BuyMenu_Cannot_Afford"			"Sie benötigen {s:s1} $ mehr"
 		"SFUI_BuyMenu_OnlyOneArmor"				"Sie haben bereits eine Kevlarweste!"
 		"SFUI_BuyMenu_NotAllowed_Short"			"NICHT ERLAUBT"
 		"SFUI_BuyMenu_Owned_Short"				"IM BESITZ"
@@ -45006,6 +45007,13 @@
 
 		"CSGO_Workshop_GameModeTags"				"Tags für Spielmodi"
 		"CSGO_Workshop_WeaponTags"					"Tags für Waffen"
+		
+		"CSGO_Workshop_EventTags"					"Ruf zu den Waffen"
+		"CSGO_Workshop_Event_none"					"Keine Einreichung"
+		"CSGO_Workshop_Event_arabesque"				"Für Arabeske Kunst und arabische Mythologie einreichen"
+		"CSGO_Workshop_Event_spy_tech"				"Für Spionage- und Technologiemotive einreichen"
+		"CSGO_Workshop_Event_fruit_veg"				"Für Obst und Gemüse einreichen"
+		"CSGO_Workshop_Event_auto_racing"			"Für Autorennen einreichen"
 
 		"CSGO_Workshop"								"Workshop"
 		//MatchDraft
@@ -47540,18 +47548,8 @@
 		"quest_11015_var_desc:p{mission-points}"	 	"Gewinnen Sie eine Runde im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.#|#Gewinnen Sie mehrere Runden im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Gewinnen Sie eine Runde.#|#Gewinnen Sie mehrere Runden."
 
-// crow_mask_50556_comment
-// crow_mask_50557_comment
-}
-
-
-
-
-}
-
-
-_50556_comment
-// crow_mask_50557_comment
+// crow_mask_50563_comment
+// crow_mask_50564_comment
 }
 
 

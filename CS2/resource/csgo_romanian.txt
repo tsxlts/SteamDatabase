@@ -45050,6 +45050,13 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 
 		"CSGO_Workshop_GameModeTags"				"Etichete pentru moduri de joc"
 		"CSGO_Workshop_WeaponTags"					"Etichete pentru arme"
+		
+		"CSGO_Workshop_EventTags"					"Convocarea pentru arsenalul armurăriei"
+		"CSGO_Workshop_Event_none"					"Fără înscriere"
+		"CSGO_Workshop_Event_arabesque"				"Înscriere pentru „Mitologia arabă și stilul arabesc”"
+		"CSGO_Workshop_Event_spy_tech"				"Înscriere pentru „Spionaj/tehnologie”"
+		"CSGO_Workshop_Event_fruit_veg"				"Înscriere pentru „Fructe și legume”"
+		"CSGO_Workshop_Event_auto_racing"			"Înscriere pentru „Curse auto”"
 
 		"CSGO_Workshop"								"Atelier"
 		//MatchDraft
@@ -47607,8 +47614,8 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"quest_11015_var_desc:p{mission-points}"	 	"Câștigă o rundă în <b>{s:gamemode}: {s:location}</b>.#|#Câștigă runde în <b>{s:gamemode}: {s:location}</b>.#|#Câștigă runde în <b>{s:gamemode}: {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Câștigă o rundă#|#Câștigă runde#|#Câștigă runde"
 
-// crow_mask_50556_comment
-// crow_mask_50557_comment
+// crow_mask_50563_comment
+// crow_mask_50564_comment
 }
 
 

@@ -24790,9 +24790,9 @@
 	"CSGO_TournamentChallenge_aus2025_contenders_calender" "Tedd meg mind a tíz Válassz! tippedet az I. szakaszra, mielőtt az elkezdődik."
 	"CSGO_TournamentChallenge_aus2025_contenders_pickem" "Tegyél öt helyes Válassz! tippet az I. szakaszra."
 	"CSGO_TournamentChallenge_aus2025_challengers_calender" "Tedd meg mind a tíz Válassz! tippedet a II. szakaszra, mielőtt az elkezdődik."
-	"CSGO_TournamentChallenge_aus2025_challengers_pickem" "Tegyél öt helyes Válassz! tippet az II. szakaszra."
+	"CSGO_TournamentChallenge_aus2025_challengers_pickem" "Tegyél öt helyes Válassz! tippet a II. szakaszra."
 	"CSGO_TournamentChallenge_aus2025_legends_calender" "Tedd meg mind a tíz Válassz! tippedet a III. szakaszra, mielőtt az elkezdődik."
-	"CSGO_TournamentChallenge_aus2025_legends_pickem" "Tegyél öt helyes Válassz! tippet az III. szakaszra."
+	"CSGO_TournamentChallenge_aus2025_legends_pickem" "Tegyél öt helyes Válassz! tippet a III. szakaszra."
 	"CSGO_TournamentChallenge_aus2025_grandfinal_calender" "Tedd meg mind a hét Válassz! tippedet a rájátszás szakaszra, mielőtt az elkezdődik."
 	"CSGO_TournamentChallenge_aus2025_quarterfinals_pickem" "Tegyél két helyes Válassz! tippet a negyeddöntőkre."
 	"CSGO_TournamentChallenge_aus2025_semifinals_pickem" "Tegyél egy helyes Válassz! tippet az elődöntőkre."
@@ -27509,9 +27509,9 @@
 	"CSGO_TournamentChallenge_bud2025_contenders_calender" "Tedd meg mind a tíz Válassz! tippedet az I. szakaszra, mielőtt az elkezdődik."
 	"CSGO_TournamentChallenge_bud2025_contenders_pickem" "Tegyél öt helyes Válassz! tippet az I. szakaszra."
 	"CSGO_TournamentChallenge_bud2025_challengers_calender" "Tedd meg mind a tíz Válassz! tippedet a II. szakaszra, mielőtt az elkezdődik."
-	"CSGO_TournamentChallenge_bud2025_challengers_pickem" "Tegyél öt helyes Válassz! tippet az II. szakaszra."
+	"CSGO_TournamentChallenge_bud2025_challengers_pickem" "Tegyél öt helyes Válassz! tippet a II. szakaszra."
 	"CSGO_TournamentChallenge_bud2025_legends_calender" "Tedd meg mind a tíz Válassz! tippedet a III. szakaszra, mielőtt az elkezdődik."
-	"CSGO_TournamentChallenge_bud2025_legends_pickem" "Tegyél öt helyes Válassz! tippet az III. szakaszra."
+	"CSGO_TournamentChallenge_bud2025_legends_pickem" "Tegyél öt helyes Válassz! tippet a III. szakaszra."
 	"CSGO_TournamentChallenge_bud2025_grandfinal_calender" "Tedd meg mind a hét Válassz! tippedet a rájátszás szakaszra, mielőtt az elkezdődik."
 	"CSGO_TournamentChallenge_bud2025_quarterfinals_pickem" "Tegyél két helyes Válassz! tippet a negyeddöntőkre."
 	"CSGO_TournamentChallenge_bud2025_semifinals_pickem" "Tegyél egy helyes Válassz! tippet az elődöntőkre."
@@ -45418,6 +45418,13 @@
 
 		"CSGO_Workshop_GameModeTags"				"Játékmódcímkék"
 		"CSGO_Workshop_WeaponTags"					"Fegyvercímkék"
+		
+		"CSGO_Workshop_EventTags"					"Fegyverbe"
+		"CSGO_Workshop_Event_none"					"Nincs jelentkezés"
+		"CSGO_Workshop_Event_arabesque"				"Jelentkezés az arabeszk művészet és arab mitológia témára"
+		"CSGO_Workshop_Event_spy_tech"				"Jelentkezés a kémkedés / műszaki témára"
+		"CSGO_Workshop_Event_fruit_veg"				"Jelentkezés a zöldségek és gyümölcsök témára"
+		"CSGO_Workshop_Event_auto_racing"			"Jelentkezés az autóversenyzés témára"
 
 		"CSGO_Workshop"								"Műhely"
 		//MatchDraft
@@ -47974,8 +47981,8 @@
 		"quest_11015_var_desc:p{mission-points}"	 	"Nyerj egy kört <b>{s:gamemode} játékban: {s:location}</b>.#|#Nyerj köröket <b>{s:gamemode} játékban: {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Nyerj egy kört.#|#Nyerj köröket."
 
-// crow_mask_50556_comment
-// crow_mask_50557_comment
+// crow_mask_50563_comment
+// crow_mask_50564_comment
 }
 
 

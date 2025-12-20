@@ -45032,6 +45032,13 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 
 		"CSGO_Workshop_GameModeTags"				"Oyun Modu Etiketleri"
 		"CSGO_Workshop_WeaponTags"					"Silah Etiketleri"
+		
+		"CSGO_Workshop_EventTags"					"Cephaneliğe Davet"
+		"CSGO_Workshop_Event_none"					"Kaydetme"
+		"CSGO_Workshop_Event_arabesque"				"Arabesk Süsleme Sanatı ve Arap Mitolojisi için kaydet"
+		"CSGO_Workshop_Event_spy_tech"				"Casusluk/Teknoloji için kaydet"
+		"CSGO_Workshop_Event_fruit_veg"				"Meyve ve Sebzeler için kaydet"
+		"CSGO_Workshop_Event_auto_racing"			"Araba Yarışı için kaydet"
 
 		"CSGO_Workshop"								"Atölye"
 		//MatchDraft
@@ -47568,8 +47575,8 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"quest_11015_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> oynarken bir raunt kazan.#|#<b>{s:gamemode}: {s:location}</b> oynarken birden fazla raunt kazan."
 		"quest_11015_var_ingame:p{mission-points}"		"Bir raunt kazan.#|#Birden fazla raunt kazan."
 
-// crow_mask_50556_comment
-// crow_mask_50557_comment
+// crow_mask_50563_comment
+// crow_mask_50564_comment
 }
 
 

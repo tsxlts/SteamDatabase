@@ -45863,6 +45863,13 @@
 
 		"CSGO_Workshop_GameModeTags"				"遊戲模式標籤"
 		"CSGO_Workshop_WeaponTags"					"武器標籤"
+		
+		"CSGO_Workshop_EventTags"					"武裝召集"
+		"CSGO_Workshop_Event_none"					"不加入任何主題"
+		"CSGO_Workshop_Event_arabesque"				"加入阿拉伯式花紋藝術與阿拉伯神話主題"
+		"CSGO_Workshop_Event_spy_tech"				"加入間諜 / 科技主題"
+		"CSGO_Workshop_Event_fruit_veg"				"加入蔬菜與水果主題"
+		"CSGO_Workshop_Event_auto_racing"			"加入賽車運動主題"
 
 		"CSGO_Workshop"								"工作坊"
 		//MatchDraft
@@ -48399,8 +48406,8 @@
 		"quest_11015_var_desc:p{mission-points}"	 	"在<b>{s:gamemode}：{s:location}</b> 中贏得 1 回合。#|#在<b>{s:gamemode}：{s:location}</b> 中贏得回合。"
 		"quest_11015_var_ingame:p{mission-points}"		"贏得 1 回合#|#贏得多回合"
 
-// crow_mask_50556_comment
-// crow_mask_50557_comment
+// crow_mask_50563_comment
+// crow_mask_50564_comment
 }
 
 

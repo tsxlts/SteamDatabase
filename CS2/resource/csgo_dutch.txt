@@ -30709,7 +30709,7 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"keychain_kc_missinglink_surfsup"				"Hang Loose"
 		"keychain_kc_missinglink_winemaker"				"Lil' Vino"
 		// Paint Kits
-		"PaintKit_Default"							"Verfkit zonder naam"
+		"PaintKit_Default"							"Lakset zonder naam"
 		"PaintKit_Default_Tag"						"-"//
 
 		
@@ -40650,8 +40650,8 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"SFUI_LobbyKick_Title"				"Speler kicken"
 		"SFUI_LobbyKick_Text"				"Weet je zeker dat je %s1 uit de lobby wilt kicken?"
 
-		"SFUI_LobbyCallToArms_Title"		"Te wapen roepen"
-		"SFUI_LobbyCallToArms_Text"			"Dit nodigt elk lid van deze groep uit om mee te doen in je lobby. Weet je het zeker?"
+		"SFUI_LobbyCallToArms_Title"		"Wapenroep"
+		"SFUI_LobbyCallToArms_Text"			"Hiermee nodig je alle leden van deze groep uit voor je lobby. Weet je het zeker?"
 
 		"SFUI_LobbyTypeText00"				"Geen teammatchmaking"
 		"SFUI_LobbyTypeText01"				"Teammatchmaking (exact 5 spelers)"
@@ -40756,7 +40756,7 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"SFUI_Lobby_ShowChat"				"Chatten"
 		"SFUI_Lobby_HideChat"				"Verbergen"
 		"SFUI_ClanList"						"Teamlijst"
-		"SFUI_CallToArms"					"Te wapen roepen"
+		"SFUI_CallToArms"					"Wapenroep"
 		"SFUI_ExpandClan"					"Team uitbreiden"
 		"SFUI_Lobby_KickButton"				"KICKEN"
 		"SFUI_Lobby_QuickMatchButton"		"Snel spelen"
@@ -44873,7 +44873,7 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"inv_sort_collection"				"Collectie"
 		"inv_sort_equipped"					"Uitgerust"
 		"inv_sort_wear"						"Dragen"
-		"inv_sort_paint"					"Verfkit"
+		"inv_sort_paint"					"Lakset"
 		"inv_sort_quality"					"Kwaliteit"
 		"inv_sort_type"						"Type"
 		"inv_search_default"				"Zoekterm typen"
@@ -45809,6 +45809,13 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 
 		"CSGO_Workshop_GameModeTags"				"Tags voor speltypen"
 		"CSGO_Workshop_WeaponTags"					"Wapentags"
+		
+		"CSGO_Workshop_EventTags"					"Wapenroep"
+		"CSGO_Workshop_Event_none"					"Niet ingeschreven"
+		"CSGO_Workshop_Event_arabesque"				"Inschrijven voor 'Arabesk-kunst en Arabische mythologie'"
+		"CSGO_Workshop_Event_spy_tech"				"Inschrijven voor 'Spionage/tech'"
+		"CSGO_Workshop_Event_fruit_veg"				"Inschrijven voor 'Groente en fruit'"
+		"CSGO_Workshop_Event_auto_racing"			"inschrijven voor 'Autoraces'"
 
 		"CSGO_Workshop"								"Workshop"
 		//MatchDraft
@@ -46064,7 +46071,7 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"mainmenu_go_to_character_loadout"			"Agent in uitrusting tonen"
 		"mainmenu_switch_vanity_to_t"				"Terrorist met uitrusting tonen"
 		"mainmenu_switch_vanity_to_ct"				"CT-agent met uitrusting tonen"
-		"mainmenu_change_vanity_map"				"Landschap in hoofdmenu wijzigen"
+		"mainmenu_change_vanity_map"				"Andere achtergrond hoofdmenu"
 		"mainmenu_change_vanity_weapon"				"Ander wapen"
 		"mainmenu_debug_lobby_of_five"				"DEBUG Lobby van vijf"
 
@@ -48366,8 +48373,8 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"quest_11015_var_desc:p{mission-points}"	 	"Win een ronde in <b>{s:gamemode}: {s:location}</b>.#|#Win ronden in <b>{s:gamemode}: {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Win een ronde#|#Win ronden"
 
-// crow_mask_50556_comment
-// crow_mask_50557_comment
+// crow_mask_50563_comment
+// crow_mask_50564_comment
 }
 
 

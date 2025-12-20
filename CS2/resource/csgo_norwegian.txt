@@ -46096,6 +46096,13 @@
 
 		"CSGO_Workshop_GameModeTags"				"Spillmodusmerkelapper"
 		"CSGO_Workshop_WeaponTags"					"Våpenmerkelapper"
+		
+		"CSGO_Workshop_EventTags"					"Grip til våpen"
+		"CSGO_Workshop_Event_none"					"Ingen verving"
+		"CSGO_Workshop_Event_arabesque"				"Verv deg til arabeskdesign og arabisk mytologi"
+		"CSGO_Workshop_Event_spy_tech"				"Verv deg til spion/teknologi"
+		"CSGO_Workshop_Event_fruit_veg"				"Verv deg til frukt og grønnsaker"
+		"CSGO_Workshop_Event_auto_racing"			"Verv deg til bilracing"
 
 		"CSGO_Workshop"								"Workshop"
 		//MatchDraft
@@ -48664,8 +48671,8 @@
 		"quest_11015_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> – vinn en runde.#|#<b>{s:gamemode}: {s:location}</b> – vinn runder."
 		"quest_11015_var_ingame:p{mission-points}"		"Vinn en runde#|#Vinn runder"
 
-// crow_mask_50556_comment
-// crow_mask_50557_comment
+// crow_mask_50563_comment
+// crow_mask_50564_comment
 }
 
 

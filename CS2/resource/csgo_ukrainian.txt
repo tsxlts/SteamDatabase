@@ -47936,7 +47936,7 @@
 
 		"CSGO_Workshop_GameModeTags"				"Позначки режимів гри"
 		"CSGO_Workshop_WeaponTags"					"Позначки зброї"
-
+		
 		"CSGO_Workshop"								"Майстерня"
 		"CSGO_Workshop_EmptyString"					""
 
@@ -50554,8 +50554,8 @@
 		"quest_11015_var_partial" 				""
 		"quest_11015_var_ingame:p{mission-points}"		"Виграйте раунд#|#Виграйте раунди#|#Виграйте раунди#|#Виграйте раунди#|#Виграйте раунди"
 
-// crow_mask_50556_comment
-// crow_mask_50557_comment
+// crow_mask_50563_comment
+// crow_mask_50564_comment
 }
 
 

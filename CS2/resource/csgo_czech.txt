@@ -45748,6 +45748,13 @@
 
 		"CSGO_Workshop_GameModeTags"				"Značky módu"
 		"CSGO_Workshop_WeaponTags"					"Značky zbraně"
+		
+		"CSGO_Workshop_EventTags"					"Povolávací rozkaz"
+		"CSGO_Workshop_Event_none"					"Žádné zařazení"
+		"CSGO_Workshop_Event_arabesque"				"Zařazení „Arabeskové vzory a arabská mytologie“"
+		"CSGO_Workshop_Event_spy_tech"				"Zařazení „Špionážní gadgety/technologie“"
+		"CSGO_Workshop_Event_fruit_veg"				"Zařazení „Ovoce a zelenina“"
+		"CSGO_Workshop_Event_auto_racing"			"Zařazení „Automobilové závody“"
 
 		"CSGO_Workshop"								"Workshop"
 		//MatchDraft
@@ -48304,8 +48311,8 @@
 		"quest_11015_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.#|#<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.#|#<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.#|#<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol."
 		"quest_11015_var_ingame:p{mission-points}"		"Vyhrávej kola#|#Vyhrávej kola#|#Vyhrávej kola#|#Vyhrávej kola"
 
-// crow_mask_50556_comment
-// crow_mask_50557_comment
+// crow_mask_50563_comment
+// crow_mask_50564_comment
 }
 
 

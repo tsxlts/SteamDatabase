@@ -46075,6 +46075,13 @@ Huomaa! Et voi käyttää kivääriä panssarihyökkäyspuvun kanssa."
 
 		"CSGO_Workshop_GameModeTags"				"Pelitilan tunnisteet"
 		"CSGO_Workshop_WeaponTags"					"Aseen tunnisteet"
+		
+		"CSGO_Workshop_EventTags"					"Kilpavarustelu"
+		"CSGO_Workshop_Event_none"					"Ei luokkaa"
+		"CSGO_Workshop_Event_arabesque"				"Luokka: arabialainen taide ja mytologia"
+		"CSGO_Workshop_Event_spy_tech"				"Luokka: vakoiluteknologia"
+		"CSGO_Workshop_Event_fruit_veg"				"Luokka: hedelmät ja vihannekset"
+		"CSGO_Workshop_Event_auto_racing"			"Luokka: kilpa-ajo"
 
 		"CSGO_Workshop"								"Workshop"
 		//MatchDraft
@@ -48618,8 +48625,8 @@ Huomaa! Et voi käyttää kivääriä panssarihyökkäyspuvun kanssa."
 		"quest_11015_var_desc:p{mission-points}"	 	"Voita erä pelitilassa <b>{s:gamemode} ja kartalla {s:location}</b>.#|#Voita eriä pelitilassa <b>{s:gamemode} ja kartalla {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Voita erä.#|#Voita eriä."
 
-// crow_mask_50556_comment
-// crow_mask_50557_comment
+// crow_mask_50563_comment
+// crow_mask_50564_comment
 }
 
 

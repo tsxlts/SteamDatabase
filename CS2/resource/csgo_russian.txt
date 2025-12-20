@@ -45033,6 +45033,13 @@
 
 		"CSGO_Workshop_GameModeTags"				"Метки режимов игры"
 		"CSGO_Workshop_WeaponTags"					"Метки оружия"
+		
+		"CSGO_Workshop_EventTags"					"Арсенальный призыв"
+		"CSGO_Workshop_Event_none"					"Не для арсенала"
+		"CSGO_Workshop_Event_arabesque"				"Подать на тему «Арабесковый стиль и арабская мифология»"
+		"CSGO_Workshop_Event_spy_tech"				"Подать на тему «Шпионаж и технологии»"
+		"CSGO_Workshop_Event_fruit_veg"				"Подать на тему «Фрукты и овощи»"
+		"CSGO_Workshop_Event_auto_racing"			"Подать на тему «Автогонки»"
 
 		"CSGO_Workshop"								"Мастерская"
 		//MatchDraft
@@ -47567,20 +47574,8 @@
 		"quest_11015_var_desc:p{mission-points}"	 	"Выиграйте раунд в режиме <b>«{s:gamemode}» ({s:location})</b>.#|#Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.#|#Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.#|#Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.#|#Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Выиграйте раунд#|#Выигрывайте раунды#|#Выигрывайте раунды#|#Выигрывайте раунды#|#Выигрывайте раунды"
 
-// crow_mask_50556_comment
-// crow_mask_50557_comment
-}
-
-
-
-
-}
-
-
-�унды#|#Выигрывайте раунды#|#Выигрывайте раунды#|#Выигрывайте раунды"
-
-// crow_mask_50556_comment
-// crow_mask_50557_comment
+// crow_mask_50563_comment
+// crow_mask_50564_comment
 }
 
 

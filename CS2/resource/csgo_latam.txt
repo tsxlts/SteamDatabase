@@ -7296,7 +7296,7 @@ en la zona de inicio del enemigo"
 	"Op_bloodhound_Valeria_Two_Sides"					"Cada historia tiene dos versiones"
 	"Op_bloodhound_Valeria_spark"						"La chispa de la revolución"
 	"Op_bloodhound_Valeria_Flames"						"Las llamas del fénix"
-	"Op_bloodhound_Valeria_tyrants"						"Llamamiento a las armas"
+	"Op_bloodhound_Valeria_tyrants"						"Apartando de copiloto"
 	"Op_bloodhound_Valeria_booth"						"El curioso caso de Booth"
 	"Op_bloodhound_Valeria_meet_mentor"					"Público cautivo"
 	"Op_bloodhound_Valeria_dead_turner"					"La mejor defensa"
@@ -39860,7 +39860,7 @@ en la zona de inicio del enemigo"
 		"SFUI_LobbyKick_Title"				"Expulsar a jugador"
 		"SFUI_LobbyKick_Text"				"¿Seguro quieres expulsar a %s1 de la sala de espera?"
 
-		"SFUI_LobbyCallToArms_Title"		"Llamamiento a las armas"
+		"SFUI_LobbyCallToArms_Title"		"Llamado a las armas"
 		"SFUI_LobbyCallToArms_Text"			"Esto invitará a todos los miembros de este grupo a unirse a tu sala de espera. ¿Estás seguro?"
 
 		"SFUI_LobbyTypeText00"				"Sin matchmaking por equipos"
@@ -39966,7 +39966,7 @@ en la zona de inicio del enemigo"
 		"SFUI_Lobby_ShowChat"				"Chat"
 		"SFUI_Lobby_HideChat"				"Ocultar"
 		"SFUI_ClanList"						"Lista de equipos"
-		"SFUI_CallToArms"					"Llamamiento a las armas"
+		"SFUI_CallToArms"					"Llamado a las armas"
 		"SFUI_ExpandClan"					"Ampliar equipo"
 		"SFUI_Lobby_KickButton"				"EXPULSAR"
 		"SFUI_Lobby_QuickMatchButton"		"Partida rápida"
@@ -45014,6 +45014,13 @@ Tu obtención de EXP de recompensa de misión no volverá a su valor normal hast
 
 		"CSGO_Workshop_GameModeTags"				"Etiquetas de modos de juego"
 		"CSGO_Workshop_WeaponTags"					"Etiquetas de armas"
+		
+		"CSGO_Workshop_EventTags"					"Llamado a las armas"
+		"CSGO_Workshop_Event_none"					"Sin reclutamiento"
+		"CSGO_Workshop_Event_arabesque"				"Reclutar para Arte arabesco y mitología árabe"
+		"CSGO_Workshop_Event_spy_tech"				"Reclutar para Espionaje/tecnología"
+		"CSGO_Workshop_Event_fruit_veg"				"Reclutar para Frutas y verduras"
+		"CSGO_Workshop_Event_auto_racing"			"Reclutar para Carreras de autos"
 
 		"CSGO_Workshop"								"Workshop"
 		//MatchDraft
@@ -47548,8 +47555,8 @@ Tu obtención de EXP de recompensa de misión no volverá a su valor normal hast
 		"quest_11015_var_desc:p{mission-points}"	 	"Gana una ronda en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>.#|#Gana rondas en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Gana una ronda#|#Gana rondas"
 
-// crow_mask_50556_comment
-// crow_mask_50557_comment
+// crow_mask_50563_comment
+// crow_mask_50564_comment
 }
 
 
