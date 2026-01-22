@@ -2892,7 +2892,6 @@
 		"official_leaderboard_premier_season1_name"			"Saison 1"
 		"official_leaderboard_premier_season2_name"			"Saison 2"
 		"official_leaderboard_premier_season3_name"			"Saison 3"
-
 		//
 
 		"CSGO_official_leaderboard_mission_embedded"	"Classement de la mission"
@@ -3281,8 +3280,6 @@
 		"CSGO_Collectible_MapTokenRooftop_Desc"			"Décerné aux personnes ayant créé la carte CS2 Rooftop."
 		"CSGO_Collectible_MapTokenTransit"				"Insigne de carte (supprimée)"
 		"CSGO_Collectible_MapTokenTransit_Desc"			"Décerné aux personnes ayant créé la carte CS2 (supprimée)."
-
-
 		"CSGO_CollectibleCoin_FortiusQuoFidelius"	"Badge de loyauté"
 		"CSGO_CollectibleCoin_FortiusQuoFidelius_Desc"	"Ce badge commémore l'appartenance loyale à la communauté de Counter-Strike avant la mise à jour Zone de danger.\n\n<i>Force et loyauté.</i>"
 		"CSGO_CollectibleCoin_FiveYearService"		"Insigne des 5 années de service"
@@ -34934,7 +34931,6 @@
 		
 		"PaintKit_cue_stratosphere"							"Cette arme a été personnalisée avec des vaisseaux spatiaux qui volent en orbite autour d'une planète.\n\n<i>« Dans un futur proche, très proche… »</i>"
 		"PaintKit_cue_stratosphere_Tag"						"Stratosphère"
-
 // END TIMED DROPS 2025
 
 // LIMITED TIME ITEM
@@ -34942,7 +34938,7 @@
 		"PaintKit_soch_mountains_xm1014"					"Cette arme a été personnalisée avec un motif montagneux.\n\n<i>La solitude n'est pas un fardeau, mais un privilège</i>"
 		"PaintKit_soch_mountains_xm1014_Tag"				"Solitude"
 
-// END LIMITED TIME ITEM
+		// END LIMITED TIME ITEM
 
 		//Recipes
 		"CSGO_Recipe_TradeUp"						"Contrat d'échange"
@@ -37518,8 +37514,6 @@
 		"CSGO_Demo_Next_Camera"						"[{s:bind_jump}] : changer de vue"
 		"CSGO_Demo_Toggle_XRay"						"[{s:bind_slot12}] : activer le rayon X"
 		"CSGO_Demo_Toggle_Overview"					"[{s:bind_duck}] : activer la vue d'ensemble"
-
-
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// Date formatting
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -45669,7 +45663,6 @@
 		"prime_unranked"				"Match non classé"
 		"prime_not_enrolled_label"		"Comptes non Prime"
 		"prime_disabled_label"			"Prime désactivé"
-		"matchmaking_expected_wait_time"	"Temps d'attente {s:time}"
 		"no_steam_group_link"			"Vous ne faites partie d'aucun groupe Steam."
 
 		"permissions_title"					"Permissions"
@@ -46108,13 +46101,11 @@
 		"annotations_local"							"Stockage local"
 		"annotations_workshop"						"Workshop"
 		"annotations_official"						"Officiel"
-		"annotations_none"							"aucun"
 		"Workshop_annotation_title"					"Outil d'envoi de guide de carte"
 		"Workshop_annotation_error_title"			"Donnez un titre à votre guide de carte."
 		"Workshop_annotation_error_file"			"Sélectionnez un fichier d'annotation .txt valide."
 		"Workshop_annotation_ready"					"Votre item est prêt à l'envoi."		
 		"UI_File_Filter_SupportedAnnotationFormat"	"Fichiers texte (*.txt)"
-
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Game Mode Desc
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -48342,6 +48333,18 @@
 		
 		"quest_11015_var_desc:p{mission-points}"	 	"Gagnez une manche en mode <b>{s:gamemode} sur {s:location}</b>.#|#Gagnez des manches en mode <b>{s:gamemode} sur {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Gagnez une manche.#|#Gagnez des manches."
+
+// crow_mask_51509_comment
+// crow_mask_51510_comment
+}
+
+
+
+
+}
+
+
+ manche.#|#Gagnez des manches."
 
 // crow_mask_51357_comment
 // crow_mask_51358_comment

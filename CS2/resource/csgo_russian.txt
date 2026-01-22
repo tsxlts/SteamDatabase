@@ -2896,7 +2896,6 @@
 		"official_leaderboard_premier_season1_name"			"Первый сезон"
 		"official_leaderboard_premier_season2_name"			"Второй сезон"
 		"official_leaderboard_premier_season3_name"			"Третий сезон"
-
 		//
 
 		"CSGO_official_leaderboard_mission_embedded"	"Доска почета миссии"
@@ -3285,8 +3284,6 @@
 		"CSGO_Collectible_MapTokenRooftop_Desc"			"Награда за работу над картой Rooftop для CS2"
 		"CSGO_Collectible_MapTokenTransit"				"Монета карты (УДАЛЕНО)"
 		"CSGO_Collectible_MapTokenTransit_Desc"			"Награда за работу над картой (УДАЛЕНО) для CS2"
-
-
 		"CSGO_CollectibleCoin_FortiusQuoFidelius"	"Медаль за преданность"
 		"CSGO_CollectibleCoin_FortiusQuoFidelius_Desc"	"Выдаётся преданным членам сообщества Counter-Strike, вступившим в него до выхода обновления «Запретная зона».\n\n<i>Сила в преданности.</i>"
 		"CSGO_CollectibleCoin_FiveYearService"		"Монета за 5 лет службы"
@@ -29037,7 +29034,7 @@
 	"HighlightReel_bud2025_qf-kscerato-triple-kill-on-inferno"	"KSCERATO играет с подсадки"
 	"HighlightDesc_bud2025_qf-kscerato-triple-kill-on-inferno"	"Подсаженный KSCERATO убивает трёх игроков Natus Vincere и не даёт им зайти на точку B."
 	"HighlightReel_bud2025_qf-fallen-double-kill-on-inferno"	"FalleN играет сквозь дым"
-	"HighlightDesc_bud2025_qf-fallen-double-kill-on-inferno"	"FalleN проходит сквозь дым на дуге, обеспечив двойное убийство себе и овертайм команде."
+	"HighlightDesc_bud2025_qf-fallen-double-kill-on-inferno"	"FalleN проходит сквозь дым на дуге, обеспечив себе двойное убийство в первом раунде овертайма."
 	"HighlightReel_bud2025_qf-fallen-triple-kill-on-inferno-1"	"FalleN выигрывает схватку на дуге"
 	"HighlightDesc_bud2025_qf-fallen-triple-kill-on-inferno-1"	"FalleN убивает двоих на дуге, а затем выигрывает в схватке против iM."
 	"HighlightReel_bud2025_qf-fallen-triple-kill-on-inferno-2"	"FalleN — обезвреживание от капитана"
@@ -29401,7 +29398,7 @@
 	"HighlightReel_bud2025_sf-b1t-quadro-on-inferno"	"b1t — четверное от колонны"
 	"HighlightDesc_bud2025_sf-b1t-quadro-on-inferno"	"b1t идеально подбирает моменты, играя на позиции у колонны, и убивает четырёх игроков FaZe."
 	"HighlightReel_bud2025_sf-b1t-defuse-on-inferno"	"b1t — обезвреживание в последнюю секунду"
-	"HighlightDesc_bud2025_sf-b1t-defuse-on-inferno"	"b1t убивает broky и успешно обезвреживает бомбу всего за 0,049 секунды до взрыва."
+	"HighlightDesc_bud2025_sf-b1t-defuse-on-inferno"	"b1t убивает broky и успешно обезвреживает бомбу всего за 0,044 секунды до взрыва."
 	"HighlightReel_bud2025_sf-karrigan-double-on-inferno"	"karrigan — в голову из пистолета"
 	"HighlightDesc_bud2025_sf-karrigan-double-on-inferno"	"karrigan совершает два убийства попаданиями в голову в пистолетном раунде против Natus Vincere на Inferno."
 	"HighlightReel_bud2025_sf-broky-double-on-inferno"	"broky — сюрприз у колонн"
@@ -29449,7 +29446,7 @@
 	"HighlightReel_bud2025_gf-karrigan-triple-on-nuke-2"	"karrigan — MP9 в холле"
 	"HighlightDesc_bud2025_gf-karrigan-triple-on-nuke-2"	"karrigan использует свой MP9 на полную, совершив тройное убийство в холле."
 	"HighlightReel_bud2025_gf-mezii-clutch-1v3-on-nuke"	"mezii — после закладки"
-	"HighlightDesc_bud2025_gf-mezii-clutch-1v3-on-nuke"	"mezii защищает бомбу от троих игроков и доводит счёт до 6:12."
+	"HighlightDesc_bud2025_gf-mezii-clutch-1v3-on-nuke"	"mezii защищает бомбу от троих игроков и доводит счёт до 6:11."
 	"HighlightReel_bud2025_gf-ropz-double-on-nuke"	"ropz — дубль из «верха»"
 	"HighlightDesc_bud2025_gf-ropz-double-on-nuke"	"ropz наносит удар из «верха» и быстро совершает два убийства."
 	"HighlightReel_bud2025_gf-twistzz-quadro-on-nuke"	"Twistzz — четверное из запасного хода"
@@ -32648,10 +32645,7 @@
 	"PaintKit_cu_UMP45_Metritera_Tag"									"Брифинг"
 
 	"PaintKit_hy_XM1014_Fractal_Blue"								"Окрашено в дымчато-серый и ярко-голубой цвета.\n\n<i>«Терпение, Эллиот; они ещё сыграют свою роль...», — Наёмник и змей, часть 2</i>"
-	"PaintKit_hy_XM1014_Fractal_Blue_Tag"									"Поток"
-
-
-// END GAMMA 2
+	// END GAMMA 2
 // COMMUNITY_15
 
 	"PaintKit_am_czv2_mf"										"На затвор нанесен рельефный узор, напоминающий полимерную структуру.\n\n<i>«Если ты больше не справляешься с \"Фениксом\", мы сами за себя постоим», — Дочь и Паладин, часть 2</i>"
@@ -32717,8 +32711,6 @@
 	"PaintKit_cu_awp_psychopath_Tag"									"Горячечные грёзы"
 
 	"PaintKit_hy_bizon_torn_green"										"Аквапечатью нанесён жёлто-зелёный рисунок.\n\n<i>Следуй за лидером</i>"
-	"PaintKit_hy_bizon_torn_green_Tag"									"Вихрь джунглей"
-
 	"PaintKit_cu_blueprint_scar"										"Вручную нанесён синий узор, напоминающий архитектурный чертёж.\n\n<i>Лучший план — масштабный</i>"
 	"PaintKit_cu_blueprint_scar_Tag"									"Калька"
 
@@ -32859,8 +32851,6 @@
 	"PaintKit_cu_tec9_cracked_opal_Tag"									"Треснувший опал"
 
 	"PaintKit_hy_scar20_jungle_slipstream"										"Аквапечатью нанесён жёлто-зелёный рисунок.\n\n<i>Оставь свой собственный след</i>"
-	"PaintKit_hy_scar20_jungle_slipstream_Tag"									"Вихрь джунглей"
-
 	"PaintKit_gs_sg553_phantom"										"Корпус вручную окрашен в синий и серый цвета с оранжевыми вкраплениями.\n\n<i>Снаряжение от ScyTech</i>"
 	"PaintKit_gs_sg553_phantom_Tag"									"Фантом"
 
@@ -34957,15 +34947,18 @@
 		
 		"PaintKit_cue_stratosphere"							"На оружии изображены космические корабли, огибающие планету.\n\n<i>«Однажды в не таком уж и далёком будущем...»</i>"
 		"PaintKit_cue_stratosphere_Tag"						"Стратосфера"
+"PaintKit_soe_red_Tag"								"Пикник"
 
-// END TIMED DROPS 2025
+		"PaintKit_hye_batik_eyes_tec9_Tag"					"Банановые листья"
+
+		// END TIMED DROPS 2025
 
 // LIMITED TIME ITEM
 
 		"PaintKit_soch_mountains_xm1014"					"На оружие нанесён узор горного рельефа.\n\n<i>Быть наедине с собой — это привилегия, а не бремя</i>"
 		"PaintKit_soch_mountains_xm1014_Tag"				"Уединение"
 
-// END LIMITED TIME ITEM
+		// END LIMITED TIME ITEM
 
 		//Recipes
 		"CSGO_Recipe_TradeUp"						"Контракт обмена"
@@ -37543,8 +37536,6 @@
 		"CSGO_Demo_Next_Camera"						"[{s:bind_jump}] Сменить вид"
 		"CSGO_Demo_Toggle_XRay"						"[{s:bind_slot12}] Подсвечивание"
 		"CSGO_Demo_Toggle_Overview"					"[{s:bind_duck}] Карта"
-
-
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// Date formatting
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -45694,7 +45685,6 @@
 		"prime_unranked"				"Нерейтинговый матч"
 		"prime_not_enrolled_label"		"Игроки без прайм-статуса"
 		"prime_disabled_label"			"Прайм-статус выключен"
-		"matchmaking_expected_wait_time"	"Время ожидания: {s:time}"
 		"no_steam_group_link"			"Вы не входите ни в одну группу Steam."
 
 		"permissions_title"					"Настройки разрешений"
@@ -46133,12 +46123,12 @@
 		"annotations_local"							"Локальное хранилище"
 		"annotations_workshop"						"Мастерская"
 		"annotations_official"						"Официальное"
-		"annotations_none"							"Выкл."
 		"Workshop_annotation_title"					"Инструмент для публикации руководств по картам"
 		"Workshop_annotation_error_title"			"Введите название своего руководства."
 		"Workshop_annotation_error_file"			"Выберите действительный TXT-файл с подсказками."
 		"Workshop_annotation_ready"					"Работа готова к загрузке."		
 		"UI_File_Filter_SupportedAnnotationFormat"	"Текстовые файлы (*.txt)"
+		"annotations_visit_workshop"				"Открыть мастерскую ⤤"
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Game Mode Desc
@@ -48367,6 +48357,18 @@
 		
 		"quest_11015_var_desc:p{mission-points}"	 	"Выиграйте раунд в режиме <b>«{s:gamemode}» ({s:location})</b>.#|#Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.#|#Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.#|#Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.#|#Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Выиграйте раунд#|#Выигрывайте раунды#|#Выигрывайте раунды#|#Выигрывайте раунды#|#Выигрывайте раунды"
+
+// crow_mask_51509_comment
+// crow_mask_51510_comment
+}
+
+
+
+
+}
+
+
+те раунды#|#Выигрывайте раунды"
 
 // crow_mask_51357_comment
 // crow_mask_51358_comment

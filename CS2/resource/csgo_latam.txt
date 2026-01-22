@@ -2897,7 +2897,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"official_leaderboard_premier_season1_name"			"Temporada uno"
 		"official_leaderboard_premier_season2_name"			"Segunda temporada"
 		"official_leaderboard_premier_season3_name"			"Tercera temporada"
-
 		//
 
 		"CSGO_official_leaderboard_mission_embedded"	"Clasificación de la misión"
@@ -3286,8 +3285,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"CSGO_Collectible_MapTokenRooftop_Desc"			"Conmemora la autoría del mapa \"Rooftop\" de CS2."
 		"CSGO_Collectible_MapTokenTransit"				"Moneda del mapa (Clasificado)"
 		"CSGO_Collectible_MapTokenTransit_Desc"			"Conmemora la autoría del mapa \"(Clasificado)\" de CS2."
-
-
 		"CSGO_CollectibleCoin_FortiusQuoFidelius"	"Insignia de lealtad"
 		"CSGO_CollectibleCoin_FortiusQuoFidelius_Desc"	"Esta insignia conmemora la membresía leal en la comunidad de Counter-Strike antes de la actualización de Danger Zone. <i>Fuerza a través de lealtad.</i>"
 		"CSGO_CollectibleCoin_FiveYearService"		"Moneda de 5 años de veteranía"
@@ -34938,7 +34935,6 @@ en la zona de inicio del enemigo"
 		
 		"PaintKit_cue_stratosphere"							"Se personalizó con naves espaciales que rodean un planeta en el espacio exterior.\n\n<i>“Un día en un futuro no muy lejano...”</i>"
 		"PaintKit_cue_stratosphere_Tag"						"Estratosfera"
-
 // END TIMED DROPS 2025
 
 // LIMITED TIME ITEM
@@ -34946,7 +34942,7 @@ en la zona de inicio del enemigo"
 		"PaintKit_soch_mountains_xm1014"					"Se aplicó un patrón de terreno montañoso.\n\n<i>Estar solo es un privilegio, no una molestia.</i>"
 		"PaintKit_soch_mountains_xm1014_Tag"				"Soledad"
 
-// END LIMITED TIME ITEM
+		// END LIMITED TIME ITEM
 
 		//Recipes
 		"CSGO_Recipe_TradeUp"						"Contrato de mejora"
@@ -37522,8 +37518,6 @@ en la zona de inicio del enemigo"
 		"CSGO_Demo_Next_Camera"						"[{s:bind_jump}]: Siguiente cámara"
 		"CSGO_Demo_Toggle_XRay"						"[{s:bind_slot12}]: Alternar vista de rayos X"
 		"CSGO_Demo_Toggle_Overview"					"[{s:bind_duck}]: Alternar vista general"
-
-
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// Date formatting
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -45675,7 +45669,6 @@ Tu obtención de EXP de recompensa de misión no volverá a su valor normal hast
 		"prime_unranked"				"Partida no clasificatoria"
 		"prime_not_enrolled_label"		"Jugadores sin Prime"
 		"prime_disabled_label"			"Prime desactivado"
-		"matchmaking_expected_wait_time"	"Tiempo de espera {s:time}"
 		"no_steam_group_link"			"No eres miembro de ningún grupo de Steam."
 
 		"permissions_title"					"Ajustes de permisos"
@@ -46114,13 +46107,11 @@ Tu obtención de EXP de recompensa de misión no volverá a su valor normal hast
 		"annotations_local"							"Almacenamiento local"
 		"annotations_workshop"						"Workshop"
 		"annotations_official"						"Oficial"
-		"annotations_none"							"Ninguna"
 		"Workshop_annotation_title"					"Herramienta de envío de guías de mapas"
 		"Workshop_annotation_error_title"			"Ingresa un título para tu guía de mapas."
 		"Workshop_annotation_error_file"			"Seleccionar un archivo .txt de anotaciones válido."
 		"Workshop_annotation_ready"					"Aportación lista para cargar."		
 		"UI_File_Filter_SupportedAnnotationFormat"	"Archivos de texto (*.txt)"
-
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Game Mode Desc
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -48348,6 +48339,18 @@ Tu obtención de EXP de recompensa de misión no volverá a su valor normal hast
 		
 		"quest_11015_var_desc:p{mission-points}"	 	"Gana una ronda en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>.#|#Gana rondas en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Gana una ronda#|#Gana rondas"
+
+// crow_mask_51509_comment
+// crow_mask_51510_comment
+}
+
+
+
+
+}
+
+
+ts}"		"Gana una ronda#|#Gana rondas"
 
 // crow_mask_51357_comment
 // crow_mask_51358_comment

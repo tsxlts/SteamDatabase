@@ -2146,6 +2146,8 @@ VIP'ye bu bölgelerden birine ulaşana kadar koruma sağla."
 		"CS_DeathNewNemesis"		"Yeni Azılı Düşman"
 		"CS_DeathRevenge"			"İntikam"
 
+		"DeathNotice_Prescient_Attacker"	"(Sunucuda ölü)"
+
 		// Game Instructor Messages
 
 		//	- flashbangs will blind anyone looking at them when they detonate
@@ -2899,6 +2901,7 @@ VIP'ye bu bölgelerden birine ulaşana kadar koruma sağla."
 		"official_leaderboard_premier_season1_name"			"Birinci Sezon"
 		"official_leaderboard_premier_season2_name"			"İkinci Sezon"
 		"official_leaderboard_premier_season3_name"			"Üçüncü Sezon"
+		"official_leaderboard_premier_season4_name"			"Dördüncü Sezon"
 
 		//
 
@@ -3288,6 +3291,16 @@ VIP'ye bu bölgelerden birine ulaşana kadar koruma sağla."
 		"CSGO_Collectible_MapTokenRooftop_Desc"			"CS2 haritası \"Rooftop\"ı oluşturduğu için verildi."
 		"CSGO_Collectible_MapTokenTransit"				"(Gizli) Harita Jetonu"
 		"CSGO_Collectible_MapTokenTransit_Desc"			"CS2 haritası \"(Gizli)\"i oluşturduğu için verildi."
+		"CSGO_Collectible_MapTokenWarden"				"Warden Harita Jetonu"
+		"CSGO_Collectible_MapTokenWarden_Desc"			"CS2 haritası \"Warden\"ı oluşturduğu için verildi."
+		"CSGO_Collectible_MapTokenStronghold"			"Stronghold Harita Jetonu"
+		"CSGO_Collectible_MapTokenStronghold_Desc"		"CS2 haritası \"Stronghold\"u oluşturduğu için verildi."
+		"CSGO_Collectible_MapTokenAlpine"				"Alpine Harita Jetonu"
+		"CSGO_Collectible_MapTokenAlpine_Desc"			"CS2 haritası \"Alpine\"ı oluşturduğu için verildi."
+		"CSGO_Collectible_MapTokenPoseidon"				"Poseidon Harita Jetonu"
+		"CSGO_Collectible_MapTokenPoseidon_Desc"		"CS2 haritası \"Poseidon\"u oluşturduğu için verildi."
+		"CSGO_Collectible_MapTokenSanctum"				"Sanctum Harita Jetonu"
+		"CSGO_Collectible_MapTokenSanctum_Desc"			"CS2 haritası \"Sanctum\"u oluşturduğu için verildi."
 
 
 		"CSGO_CollectibleCoin_FortiusQuoFidelius"	"Sadakat Rozeti"
@@ -5309,6 +5322,8 @@ VIP'ye bu bölgelerden birine ulaşana kadar koruma sağla."
 		"CSGO_set_timed_drops_neutral"			"Boreal Koleksiyonu"
 		"CSGO_set_timed_drops_cool"				"Ascent Koleksiyonu"
 		"CSGO_set_community_36"					"Doğuş Koleksiyonu"
+		"CSGO_set_timed_drops_exuberant"		"Harlequin Koleksiyonu"
+		"CSGO_set_timed_drops_achroma"			"Achroma Koleksiyonu"
 		/////////////////
 		// lootlist override strings
 		//////////////////
@@ -34951,7 +34966,6 @@ Bu çıkartma, forZe eSports için Berlin 2019'da oynayan profesyonel oyuncu And
 		
 		"PaintKit_cue_stratosphere"							"Bir gezegenin etrafında dönen uzay gemileriyle özel olarak boyanmıştır.\n\n<i>\"Çok da uzak olmayan gelecekte bir gün...\"</i>"
 		"PaintKit_cue_stratosphere_Tag"						"Stratosfer"
-
 // END TIMED DROPS 2025
 
 // LIMITED TIME ITEM
@@ -34959,7 +34973,7 @@ Bu çıkartma, forZe eSports için Berlin 2019'da oynayan profesyonel oyuncu And
 		"PaintKit_soch_mountains_xm1014"					"Dağlık arazi deseniyle boyanmıştır.\n\n<i>Yalnız olmak bir yük değil, ayrıcalıktır.</i>"
 		"PaintKit_soch_mountains_xm1014_Tag"				"Issızlık"
 
-// END LIMITED TIME ITEM
+		// END LIMITED TIME ITEM
 
 		//Recipes
 		"CSGO_Recipe_TradeUp"						"Takas Kontratı"
@@ -37542,6 +37556,12 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"CSGO_Demo_Next_Camera"						"[{s:bind_jump}]: Sonraki Kamera"
 		"CSGO_Demo_Toggle_XRay"						"[{s:bind_slot12}]: X Işınını Aç/Kapat"
 		"CSGO_Demo_Toggle_Overview"					"[{s:bind_duck}]: Arayüzü Aç/Kapat"
+		"CSGO_Demo_Settings_XRay"					"X Işını ([{s:bind_slot12}] ile Aç/Kapat)"
+		"CSGO_Demo_Settings_TrueView_Explanation"	"İstemci tarafı tahminini tekrar çalıştırarak orijinaj istemci deneyimini yeniden oluşturur. Bu ayar sunucu tarafından mermi vuruş kaydı için kullanılan durumları oldukça yakın bir şekilde yeniden oluşturur."
+		"CSGO_Demo_Settings_TrueView_Enable"		"TrueView'u etkinleştir"
+		"CSGO_Demo_Settings_TrueViewDOA"				"\"DOA\" eylemlerini ekle"
+		"CSGO_Demo_Settings_TrueViewWrongVersion"		"Demo Sürüm Uyumsuzluğuna İzin Ver"
+		"CSGO_Demo_Settings_TrueViewWrongVersion_Explanation"	"Eğer orijinal istemcinin sürümü, demonun görüntülendiği sürüm ile farklı ise TrueView düzgün çalışmayabilir. Yine de denemek istersen bu ayarı seçebilirsin."
 
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -37971,6 +37991,9 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 
 		"CSGO_Collectible_PremierSeason3Coin"		"Seçkin Modu Üçüncü Sezon Madalyası"
 		"CSGO_Collectible_PremierSeason3Coin_Desc"	"Şeçkin modu üçüncü sezonunda aktif katılım gösterenlere verilen madalyadır."
+
+		"CSGO_Collectible_PremierSeason4Coin"		"Seçkin Modu Dördüncü Sezon Madalyası"
+		"CSGO_Collectible_PremierSeason4Coin_Desc"	"Şeçkin modu dördüncü sezonunda aktif katılım gösterenlere verilen madalyadır."
 
 		//for main menu display
 		"SFUI_XP_Bonus_1"							"Haftalık TP bonusu desteği mevcut!"
@@ -45693,7 +45716,7 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"prime_unranked"				"Derecesiz maç"
 		"prime_not_enrolled_label"		"Seçkin olmayan oyuncular"
 		"prime_disabled_label"			"Seçkin devre dışı"
-		"matchmaking_expected_wait_time"	"Bekleme Süresi {s:time}"
+		"matchmaking_expected_wait_time"	"<img src='file://{images}/icons/ui/recent.svg' class='map-selection-info__wait-icon'/>Bekleme Süresi {s:time}"
 		"no_steam_group_link"			"Herhangi bir Steam Grubunun üyesi değilsiniz."
 
 		"permissions_title"					"İzin Ayarları"
@@ -46134,12 +46157,13 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"annotations_local"							"Yerel Depolama"
 		"annotations_workshop"						"Atölye"
 		"annotations_official"						"Resmî"
-		"annotations_none"							"Yok"
+		"annotations_none"							"Harita Rehberi Yok"
 		"Workshop_annotation_title"					"Harita Rehberi Gönderme Aracı"
 		"Workshop_annotation_error_title"			"Harita rehberin için bir isim gir."
 		"Workshop_annotation_error_file"			"Geçerli bir .txt açıklama dosyası seç."
 		"Workshop_annotation_ready"					"Gönderim yüklenmeye hazır."		
 		"UI_File_Filter_SupportedAnnotationFormat"	"Metin dosyaları (*.txt)"
+		"annotations_visit_workshop"				"Atölyeyi Ziyaret Et ⤤"
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Game Mode Desc
@@ -48369,8 +48393,8 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"quest_11015_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> oynarken bir raunt kazan.#|#<b>{s:gamemode}: {s:location}</b> oynarken birden fazla raunt kazan."
 		"quest_11015_var_ingame:p{mission-points}"		"Bir raunt kazan.#|#Birden fazla raunt kazan."
 
-// crow_mask_51357_comment
-// crow_mask_51358_comment
+// crow_mask_51509_comment
+// crow_mask_51510_comment
 }
 
 

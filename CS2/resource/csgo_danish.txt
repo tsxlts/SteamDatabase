@@ -2893,7 +2893,6 @@
 		"official_leaderboard_premier_season1_name"			"1. sæson"
 		"official_leaderboard_premier_season2_name"			"2. sæson"
 		"official_leaderboard_premier_season3_name"			"3. sæson"
-
 		//
 
 		"CSGO_official_leaderboard_mission_embedded"	"Missionsførertavle"
@@ -3319,8 +3318,6 @@
 		"CSGO_Collectible_MapTokenRooftop_Desc"			"Til minde om skabelsen af CS2-banen \"Rooftop\""
 		"CSGO_Collectible_MapTokenTransit"				"Banemønt: (censureret)"
 		"CSGO_Collectible_MapTokenTransit_Desc"			"Til minde om skabelsen af CS2-banen \"(censureret)\""
-
-
 		"CSGO_CollectibleCoin_FortiusQuoFidelius"	"Loyalitetsemblem"
 		"CSGO_CollectibleCoin_FortiusQuoFidelius_Desc"	"Dette emblem fejrer loyalt medlemskab i Counter-Strike-fællesskabet forud for Danger Zone-opdateringen.\n\n<i>Styrke gennem loyalitet.</i>"
 		"CSGO_CollectibleCoin_FiveYearService"		"5-års veteranmønt"
@@ -36238,7 +36235,6 @@ bare glem alt om Proseccoen."
 		
 		"PaintKit_cue_stratosphere"							"Den er blevet specialmalet med rumskibe, som kredser om en planet i det ydre rum.\n\n<i>\"En dag i en ikke alt for fjern fremtid...\"</i>"
 		"PaintKit_cue_stratosphere_Tag"						"Stratosphere"
-
 // END TIMED DROPS 2025
 
 // LIMITED TIME ITEM
@@ -36246,7 +36242,7 @@ bare glem alt om Proseccoen."
 		"PaintKit_soch_mountains_xm1014"					"Den har fået påført et mønster med bjerge.\n\n<i>Det er et privilegie at være alene, ikke en byrde</i>"
 		"PaintKit_soch_mountains_xm1014_Tag"				"Solitude"
 
-// END LIMITED TIME ITEM
+		// END LIMITED TIME ITEM
 
 		//Recipes
 		"CSGO_Recipe_TradeUp"						"Opbytningskontrakt"
@@ -38823,8 +38819,6 @@ bare glem alt om Proseccoen."
 		"CSGO_Demo_Next_Camera"						"[{s:bind_jump}]: Næste kamera"
 		"CSGO_Demo_Toggle_XRay"						"{s:bind_slot12}: Slå røntgen til/fra"
 		"CSGO_Demo_Toggle_Overview"					"[{s:bind_duck}]: Oversigt til/fra"
-
-
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// Date formatting
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -47011,7 +47005,6 @@ bare glem alt om Proseccoen."
 		"prime_unranked"				"Ikke-rangeret kamp"
 		"prime_not_enrolled_label"		"Spillere uden Prime"
 		"prime_disabled_label"			"Slå Prime fra"
-		"matchmaking_expected_wait_time"	"Ventetid {s:time}"
 		"no_steam_group_link"			"Du er ikke medlem af en Steam-gruppe."
 
 		"permissions_title"					"Tilladelsesindstillinger"
@@ -47450,12 +47443,12 @@ bare glem alt om Proseccoen."
 		"annotations_local"							"Lokal lagerenhed"
 		"annotations_workshop"						"Værksted"
 		"annotations_official"						"Officiel"
-		"annotations_none"							"Ingen"
 		"Workshop_annotation_title"					"Værktøj til indsendelse af baneguide"
 		"Workshop_annotation_error_title"			"Indtast en titel til din baneguide."
 		"Workshop_annotation_error_file"			"Vælg en gyldig .txt-annotationsfil."
 		"Workshop_annotation_ready"					"Indsendelse klar til upload."		
 		"UI_File_Filter_SupportedAnnotationFormat"	"Tekstfiler (*.txt)"
+		"annotations_visit_workshop"				"Besøg værkstedet ⤤"
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Game Mode Desc
@@ -49726,8 +49719,17 @@ bare glem alt om Proseccoen."
 		"quest_11015_var_desc:p{mission-points}"	 	"Vind en runde i <b>{s:gamemode}: {s:location}</b>.#|#Vind runder i <b>{s:gamemode}: {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Vind en runde#|#Vind runder"
 
-// crow_mask_51357_comment
-// crow_mask_51358_comment
+// crow_mask_51509_comment
+// crow_mask_51510_comment
+}
+
+
+
+
+}
+
+
+row_mask_51358_comment
 }
 
 

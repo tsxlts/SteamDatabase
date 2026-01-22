@@ -2897,7 +2897,6 @@
 		"official_leaderboard_premier_season1_name"			"Seizoen een"
 		"official_leaderboard_premier_season2_name"			"Seizoen twee"
 		"official_leaderboard_premier_season3_name"			"Seizoen drie"
-
 		//
 
 		"CSGO_official_leaderboard_mission_embedded"	"Missieklassement"
@@ -3311,8 +3310,6 @@
 		"CSGO_Collectible_MapTokenRooftop_Desc"			"Uitgereikt aan de makers van de CS2-map 'Rooftop'"
 		"CSGO_Collectible_MapTokenTransit"				"(Gecensureerd)-mapmunt"
 		"CSGO_Collectible_MapTokenTransit_Desc"			"Uitgereikt aan de makers van de CS2-map '(Gecensureerd)'"
-
-
 		"CSGO_CollectibleCoin_FortiusQuoFidelius"	"Loyaliteitsbadge"
 		"CSGO_CollectibleCoin_FortiusQuoFidelius_Desc"	"Deze badge is een beloning voor loyaliteit aan de Counter-Strike-community voor de Danger Zone-update.\n\n<i>Kracht door loyaliteit.</i>"
 		"CSGO_CollectibleCoin_FiveYearService"		"Veteranenmunt - 5 jaar"
@@ -35703,7 +35700,6 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		
 		"PaintKit_cue_stratosphere"							"Op het wapen zijn ruimteschepen geschilderd in een baan om een planeet.\n\n<i>\"Op een dag in de nabije toekomst...\"</i>"
 		"PaintKit_cue_stratosphere_Tag"						"Stratosphere"
-
 // END TIMED DROPS 2025
 
 // LIMITED TIME ITEM
@@ -35711,7 +35707,7 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"PaintKit_soch_mountains_xm1014"					"Er is een patroon van bergen op het wapen aangebracht.\n\n<i>Eenzaamheid is een voorrecht, geen last</i>"
 		"PaintKit_soch_mountains_xm1014_Tag"				"Solitude"
 
-// END LIMITED TIME ITEM
+		// END LIMITED TIME ITEM
 
 		//Recipes
 		"CSGO_Recipe_TradeUp"						"Inruilcontract"
@@ -38288,8 +38284,6 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"CSGO_Demo_Next_Camera"						"[{s:bind_jump}]: Volgende camera"
 		"CSGO_Demo_Toggle_XRay"						"[{s:bind_slot12}]: Röntgenzicht aan/uit"
 		"CSGO_Demo_Toggle_Overview"					"[{s:bind_duck}]: Overzicht aan/uit"
-
-
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// Date formatting
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -46470,7 +46464,6 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"prime_unranked"				"Niet-klassementswedstrijd"
 		"prime_not_enrolled_label"		"Spelers zonder Prime"
 		"prime_disabled_label"			"Prime uitgeschakeld"
-		"matchmaking_expected_wait_time"	"Wachttijd: {s:time}"
 		"no_steam_group_link"			"Je bent niet lid van een Steam-groep."
 
 		"permissions_title"					"Rechteninstellingen"
@@ -46909,13 +46902,11 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"annotations_local"							"Lokale opslag"
 		"annotations_workshop"						"Workshop"
 		"annotations_official"						"Officieel"
-		"annotations_none"							"Geen"
 		"Workshop_annotation_title"					"Tool voor het inzenden van mapgidsen"
 		"Workshop_annotation_error_title"			"Voer een titel in voor je mapgids."
 		"Workshop_annotation_error_file"			"Selecteer een geldig annotatietekstbestand (.txt)."
 		"Workshop_annotation_ready"					"Inzending klaar voor uploaden."		
 		"UI_File_Filter_SupportedAnnotationFormat"	"Tekstbestanden (*.txt)"
-
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Game Mode Desc
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -49166,6 +49157,18 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		
 		"quest_11015_var_desc:p{mission-points}"	 	"Win een ronde in <b>{s:gamemode}: {s:location}</b>.#|#Win ronden in <b>{s:gamemode}: {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Win een ronde#|#Win ronden"
+
+// crow_mask_51509_comment
+// crow_mask_51510_comment
+}
+
+
+
+
+}
+
+
+Win een ronde#|#Win ronden"
 
 // crow_mask_51357_comment
 // crow_mask_51358_comment

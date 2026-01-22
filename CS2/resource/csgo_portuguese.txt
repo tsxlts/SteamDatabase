@@ -2147,6 +2147,8 @@
 		"CS_DeathNewNemesis"		"Nova Némesis"
 		"CS_DeathRevenge"			"Vingança"
 
+		"DeathNotice_Prescient_Attacker"	"(Morto no servidor)"
+
 		// Game Instructor Messages
 
 		//	- flashbangs will blind anyone looking at them when they detonate
@@ -2900,6 +2902,7 @@
 		"official_leaderboard_premier_season1_name"			"Temporada 1"
 		"official_leaderboard_premier_season2_name"			"Temporada 2"
 		"official_leaderboard_premier_season3_name"			"Temporada 3"
+		"official_leaderboard_premier_season4_name"			"Temporada 4"
 
 		//
 
@@ -3291,6 +3294,16 @@
 		"CSGO_Collectible_MapTokenRooftop_Desc"			"Esta moeda representa a autoria do mapa do CS2 \"Rooftop\"."
 		"CSGO_Collectible_MapTokenTransit"				"Moeda do Mapa [REMOVIDO]"
 		"CSGO_Collectible_MapTokenTransit_Desc"			"Esta moeda representa a autoria do mapa do CS2 [REMOVIDO]."
+		"CSGO_Collectible_MapTokenWarden"				"Moeda do Mapa \"Warden\""
+		"CSGO_Collectible_MapTokenWarden_Desc"			"Esta moeda representa a autoria do mapa do CS2 \"Warden\"."
+		"CSGO_Collectible_MapTokenStronghold"			"Moeda do Mapa \"Stronghold\""
+		"CSGO_Collectible_MapTokenStronghold_Desc"		"Esta moeda representa a autoria do mapa do CS2 \"Stronghold\"."
+		"CSGO_Collectible_MapTokenAlpine"				"Moeda do Mapa \"Alpine\""
+		"CSGO_Collectible_MapTokenAlpine_Desc"			"Esta moeda representa a autoria do mapa do CS2 \"Alpine\"."
+		"CSGO_Collectible_MapTokenPoseidon"				"Moeda do Mapa \"Poseidon\""
+		"CSGO_Collectible_MapTokenPoseidon_Desc"		"Esta moeda representa a autoria do mapa do CS2 \"Poseidon\"."
+		"CSGO_Collectible_MapTokenSanctum"				"Moeda do Mapa \"Sanctum\""
+		"CSGO_Collectible_MapTokenSanctum_Desc"			"Esta moeda representa a autoria do mapa do CS2 \"Sanctum\"."
 
 
 		"CSGO_CollectibleCoin_FortiusQuoFidelius"	"Medalha de Lealdade"
@@ -5312,6 +5325,8 @@
 		"CSGO_set_timed_drops_neutral"			"A Coleção Boreal"
 		"CSGO_set_timed_drops_cool"				"A Coleção Ascent"
 		"CSGO_set_community_36"					"A Coleção Genesis"
+		"CSGO_set_timed_drops_exuberant"		"A Coleção Harlequin"
+		"CSGO_set_timed_drops_achroma"			"A Coleção Achroma"
 		/////////////////
 		// lootlist override strings
 		//////////////////
@@ -34866,7 +34881,7 @@
 		"PaintKit_soe_roses"								"Esta arma em particular foi decorada com um padrão vintage de rosas sobre um fundo cor de coral.\n\n<i>Um chi-coração da avó</i>"
 		"PaintKit_soe_roses_Tag"							"Coral Bloom"
 
-		"PaintKit_soo_acrylic_flow_pink"					"Esta arma em particular foi decorada com um padrão acrílico azul, dourado e cor de pêssego.\n\n<i>A melhor combinação de sempre...</i>"
+		"PaintKit_soo_acrylic_flow_pink"					"Esta arma em particular foi decorada com um padrão de tinta acrílica vertida azul, dourada e cor de pêssego.\n\n<i>A melhor combinação de sempre...</i>"
 		"PaintKit_soo_acrylic_flow_pink_Tag"				"Blush Pour"
 
 		"PaintKit_hye_pink_coral"							"Esta arma em particular foi decorada com um padrão de coral bege e cor de vinho.\n\n<i>A Natureza riu-se, pois tinha criado algo que nem nos nossos sonhos poderíamos imaginar</i>"
@@ -35020,7 +35035,7 @@
 		"PaintKit_soe_robinsegg"							"Esta arma em particular foi pintada de azul-bebé e decorada com detalhes prateados.\n\n<i>Manter fora do alcance das crianças</i>"
 		"PaintKit_soe_robinsegg_Tag"						"Robin's Egg"
 		
-		"PaintKit_soo_acrylic_flow_turquoise"				"Esta arma em particular foi decorada com um padrão acrílico azul e dourado.\n\n<i>A melhor combinação de sempre...</i>"
+		"PaintKit_soo_acrylic_flow_turquoise"				"Esta arma em particular foi decorada com um padrão de tinta acrílica vertida azul e dourada.\n\n<i>A melhor combinação de sempre...</i>"
 		"PaintKit_soo_acrylic_flow_turquoise_Tag"			"Turquoise Pour"
 		
 		"PaintKit_soo_rose_gold"							"As partes de metal destas Berettas foram pintadas de ouro cor-de-rosa. As empunhaduras são de jade perolado.\n\n<i>Não se faz uma omelete sem partir uns ovos Fabergé</i>"
@@ -35049,6 +35064,119 @@
 		
 		"PaintKit_cue_stratosphere"							"Esta arma em particular foi pintada com uma ilustração de naves espaciais a orbitar um planeta no espaço sideral.\n\n<i>\"Era uma vez, num futuro não muito distante...\"</i>"
 		"PaintKit_cue_stratosphere_Tag"						"Stratosphere"
+		
+		// ACHROMA COLLECTION
+		"PaintKit_soe_ddpat_swirl_bw"						"Esta arma em particular foi decorada com um padrão de camuflagem DDPAT em tons de cinzento.\n\n<i>Sempre à roda, à roda, à roda</i>"
+		"PaintKit_soe_ddpat_swirl_bw_Tag"					"Dizzy"
+
+		"PaintKit_hye_car_wrap_bizon"						"Esta arma em particular foi decorada com um padrão em tons de cinzento.\n\n<i>Rápido, por favor!</i>"
+		"PaintKit_hye_car_wrap_bizon_Tag"					"Bizoom"
+
+		"PaintKit_soe_acrylic_flow3"						"Estas armas em particular foram decoradas com um padrão de tinta acrílica vertida em tons de cinzento.\n\n<i>A melhor combinação de sempre</i>"
+		"PaintKit_soe_acrylic_flow3_Tag"					"Silver Pour"
+
+		"PaintKit_hye_comic_shapes"							"Esta arma em particular foi pintada com tinta prateada de alto brilho, resultando num padrão em tons de cinzento.\n\n<i>\"A luzinha vermelha significa que está a gravar\"</i>"
+		"PaintKit_hye_comic_shapes_Tag"						"Sans Comic"
+
+		"PaintKit_hye_chrome_ripple"						"Esta arma em particular foi decorada com um padrão em tons de cinzento.\n\n<i>Um eco no tempo</i>"
+		"PaintKit_hye_chrome_ripple_Tag"					"Zinc"
+
+		"PaintKit_hye_car_wrap_3"							"Esta arma em particular foi decorada com um padrão angular em tons de cinzento.\n\n<i>Interiores requintados para exteriores rústicos</i>"
+		"PaintKit_hye_car_wrap_3_Tag"						"Sleet"
+
+		"PaintKit_hye_geobirds"								"Esta arma em particular foi decorada com um padrão em tons de cinzento complementado por pássaros prateados.\n\n<i>Como é a vista aí em cima?</i>"
+		"PaintKit_hye_geobirds_Tag"							"Currents"
+
+		"PaintKit_hye_mp5_car_wrap4"						"Esta arma em particular foi decorada com um padrão em tons de cinzento complementado por formas angulares e acentuadas.\n\n<i>Inabalável</i>"
+		"PaintKit_hye_mp5_car_wrap4_Tag"					"Snow Splash"
+
+		"PaintKit_soe_bw_blast"								"Esta arma em particular foi pintada com tinta de alto brilho, resultando num padrão com textura de madeira.\n\n<i>Aqui tens: algo para ajustar as contas... - Booth, traficante de armas</i>"
+		"PaintKit_soe_bw_blast_Tag"							"Vendetta"
+
+		"PaintKit_hye_abstract_knot_m4"						"Esta arma em particular foi decorada com um padrão entrelaçado abstrato em tons de cinzento.\n\n<i>Deixa que o vento te leve</i>"
+		"PaintKit_hye_abstract_knot_m4_Tag"					"Aeolian Dark"
+
+		"PaintKit_soch_smoke_grips"							"A empunhadura desta arma em particular foi pintada com um padrão de tinta acrílica vertida escura.\n\n<i>Riqueza herdada</i>"
+		"PaintKit_soch_smoke_grips_Tag"						"Dark Chamber"
+
+		"PaintKit_soe_aug_creep"							"Esta arma em particular foi decorada com ramos retorcidos e pássaros sobre um fundo prateado.\n\n<i>\"Estão a sobrevoar em círculos...\"</i>"
+		"PaintKit_soe_aug_creep_Tag"						"Creep"
+
+		"PaintKit_hye_abstract_knot"						"Esta arma em particular foi decorada com um padrão entrelaçado abstrato em tons de cinzento.\n\n<i>Deixa que o vento te leve</i>"
+		"PaintKit_hye_abstract_knot_Tag"					"Aeolian Light"
+
+		"PaintKit_hye_car_wrap"								"Esta arma em particular foi decorada com um padrão em tons de cinzento.\n\n<i>Vindo das páginas do teu romance visual favorito</i>"
+		"PaintKit_hye_car_wrap_Tag"							"The Daily Deagle"
+
+		"PaintKit_soe_p2000_grips"							"Esta arma em particular foi decorada com diferentes tonalidades de tinta prateada. Várias partes da empunhadura foram pintadas com uma tinta de mate escura que faz lembrar fita antiderrapante.\n\n<i>Agarra bem!</i>"
+		"PaintKit_soe_p2000_grips_Tag"						"Grip Tape"
+
+		"PaintKit_hye_zeds"									"Esta arma em particular tem um padrão em tons de cinzento com formas vincadas e agressivas sobre um fundo de fibra de carbono.\n\n<i>+5 de velocidade de manuseamento de armas</i>"
+		"PaintKit_hye_zeds_Tag"								"Breakthrough"
+
+		"PaintKit_ht_white_edges"							"Esta arma em particular foi decorada com um padrão de círculos em tons de cinzento sob uma camada holográfica.\n\n<i>Mapas gráficos de sistemas holográficos</i>"
+		"PaintKit_ht_white_edges_Tag"						"Trace Lock"
+
+		"PaintKit_soe_bw_the_end_awp"						"Esta arma foi pintada de roxo e branco, com chamas, rosas e o texto \"the end\" à frente do gatilho.\n\n<i>Uma história com dois lados</i>"
+		"PaintKit_soe_bw_the_end_awp_Tag"					"The End"
+
+		// EXUBERANT COLLECTION
+		"PaintKit_hye_animal_print_lc"						"Esta arma em particular foi pintada de castanho com os padrões das peles de vários animais.\n\n<i>Disseste \"alguns animais\", não \"o reino animal inteiro\".</i>"
+		"PaintKit_hye_animal_print_lc_Tag"					"Safari Print"
+
+		"PaintKit_hye_firework_patches_famas"				"Esta arma em particular foi decorada com um padrão de explosão dourado.\n\n<i>\"Gajos fixes não olham para explosões\"</i>"
+		"PaintKit_hye_firework_patches_famas_Tag"			"Byproduct"
+
+		"PaintKit_hye_geobirds_sunrise"						"Esta arma em particular foi decorada com um padrão cor de vinho complementado por pássaros prateados.\n\n<i>Como é a vista aí em cima?</i>"
+		"PaintKit_hye_geobirds_sunrise_Tag"					"Thermal Currents"
+
+		"PaintKit_hye_batik_eyes"							"Esta arma em particular foi pintada com um padrão carmesim e preto de folhas de bananeira.\n\n<i>Alvos em movimento</i>"
+		"PaintKit_hye_batik_eyes_Tag"						"Crimson Batik"
+
+		"PaintKit_hye_paisley_desat"						"Esta arma em particular foi pintada com um padrão de paisley dourado sobre um fundo cor de vinho.\n\n<i>Só os melhores tecidos para ti, Booth - Yukako, armeira</i>"
+		"PaintKit_hye_paisley_desat_Tag"					"Honey Paisley"
+
+		"PaintKit_soch_copper_accent_revolver"				"A empunhadura desta arma em particular foi pintada com um padrão de tinta acrílica vertida cor de uva.\n\n<i>Como um bom vinho</i>"
+		"PaintKit_soch_copper_accent_revolver_Tag"			"Mauve Aside"
+
+		"PaintKit_soe_yellow_bits"							"As ranhuras desta MP9 prateada foram preenchidas com tinta amarela e vermelha.\n\n<i>Segurem-me que eu vou-me a eles!</i>"
+		"PaintKit_soe_yellow_bits_Tag"						"Bee-Tron"
+
+		"PaintKit_hye_test_animal_print_45"					"Esta arma em particular foi pintada de bege e vermelho com os padrões das peles de vários animais.\n\n<i>Disseste \"alguns animais\", não \"o reino animal inteiro\".</i>"
+		"PaintKit_hye_test_animal_print_45_Tag"				"Warm Blooded"
+
+		"PaintKit_hye_paisley_warm"							"Esta arma em particular foi pintada com um padrão de paisley vermelho e cor-de-laranja.\n\n<i>Só os melhores tecidos para ti, Booth - Yukako, armeira</i>"
+		"PaintKit_hye_paisley_warm_Tag"						"Coral Paisley"
+
+		"PaintKit_soe_red"									"Esta arma em particular foi decorada com um padrão vermelho de cruzes.\n\n<i>É um bocado exagerado, mas a intenção não é essa? - Imogen, traficante de armas em formação</i>"
+		"PaintKit_soe_red_Tag"								"Picnic"
+
+		"PaintKit_hye_batik_eyes_tec9"						"Esta arma em particular foi pintada com um padrão amarelo e preto de folhas de bananeira.\n\n<i>Rica em potássio</i>"
+		"PaintKit_hye_batik_eyes_tec9_Tag"					"Banana Leaf"
+
+		"PaintKit_hye_earth_mandala"						"Esta arma em particular foi decorada com um padrão de mandala multicolorido.\n\n<i>O que importa é a jornada</i>"
+		"PaintKit_hye_earth_mandala_Tag"					"Sky Mandala"
+
+		"PaintKit_hye_earth_mandala_lc"						"Esta arma em particular foi decorada com um padrão de mandala multicolorido.\n\n<i>O que importa é a jornada</i>"
+		"PaintKit_hye_earth_mandala_lc_Tag"					"Earth Mandala"
+
+		"PaintKit_soe_yellow_xm"							"Esta arma em particular foi decorada com um padrão amarelo e acabada com detalhes prateados.\n\n<i>ZZZZZAP!</i>"
+		"PaintKit_soe_yellow_xm_Tag"						"XoooM"
+
+		"PaintKit_soe_pink_cranes"							"Esta arma em particular foi decorada com um padrão cor de rosa e branco de grous e flores.\n\n<i>Vai melhor com um copo de xerez</i>"
+		"PaintKit_soe_pink_cranes_Tag"						"Fraise Crane"
+
+		"PaintKit_ht_red_edges_fineline"					"Esta arma em particular foi decorada com um padrão de caligrafia vermelho.\n\n<i>Estas palavras magoam</i>"
+		"PaintKit_ht_red_edges_fineline_Tag"				"Calligrafaux"
+
+		"PaintKit_hye_firework_patches"						"Esta arma em particular foi decorada com um padrão de explosão vermelho.\n\n<i>\"Gajos fixes não olham para explosões\"</i>"
+		"PaintKit_hye_firework_patches_Tag"					"Exothermic"
+
+		"PaintKit_soe_purple"								"Esta arma em particular foi decorada com um padrão de camuflagem roxo e acabada com um revestimento perolado.\n\n<i>Uma das poções mais fortes</i>"
+		"PaintKit_soe_purple_Tag"							"Sleeping Potion"
+
+		"PaintKit_hye_animal_print_90s"						"Esta arma em particular foi pintada com um padrão de cores de néon brilhantes que ilustra as peles de vários animais.\n\n<i>Disseste \"algumas cores\", não \"o espectro de cores inteiro\".</i>"
+		"PaintKit_hye_animal_print_90s_Tag"					"Party Animal"
 
 // END TIMED DROPS 2025
 
@@ -35056,6 +35184,9 @@
 
 		"PaintKit_soch_mountains_xm1014"					"Esta arma em particular foi decorada com um padrão de terreno montanhoso.\n\n<i>Estar sozinho é um privilégio, não um fardo</i>"
 		"PaintKit_soch_mountains_xm1014_Tag"				"Solitude"
+
+		"PaintKit_gsch_ak_djiin"							"A armação e o cano desta arma em particular foram pintadas com tinta metálica. O guarda-mão e a parte traseira foram pintados de forma a parecerem feitos de madrepérola.\n\n<i>Vindo de um plano existencial diferente</i>"
+		"PaintKit_gsch_ak_djiin_Tag"						"Djiin"
 
 // END LIMITED TIME ITEM
 
@@ -35755,6 +35886,12 @@
 		"SFUI_Map_de_golden"		"Golden"
 		"SFUI_Map_de_rooftop"		"Rooftop"
 		"SFUI_Map_de_transit"		"[REMOVIDO]"
+
+		"SFUI_Map_de_warden"		"Warden"
+		"SFUI_Map_de_stronghold"	"Stronghold"
+		"SFUI_Map_cs_alpine"		"Alpine"
+		"SFUI_Map_de_poseidon"		"Poseidon"
+		"SFUI_Map_de_sanctum"		"Sanctum"
 
 		"SFUI_Map_workshop_preview_dust2"	"Dust II (pré-visualização)"
 		"SFUI_Map_workshop_preview_ancient"	"Ancient (pré-visualização)"
@@ -37633,6 +37770,13 @@
 		"CSGO_Demo_Next_Camera"						"[{s:bind_jump}]: Câmara"
 		"CSGO_Demo_Toggle_XRay"						"[{s:bind_slot12}]: Alternar visão raio‑X"
 		"CSGO_Demo_Toggle_Overview"					"[{s:bind_duck}]: Alternar vista geral"
+		"CSGO_Demo_Settings_XRay"					"Raio-X (alternar com [{s:bind_slot12}])"
+		"CSGO_Demo_Settings_TrueView_Explanation"	"Reconstrói a experiência original ao realizar novamente a previsão do lado dos jogadores observados. Esta opção recria de forma mais fiel as condições usadas pelo servidor para o registo de impactos das balas."
+		"CSGO_Demo_Settings_TrueView_Enable"		"Ativar TrueView"
+		"CSGO_Demo_Settings_TrueViewDOA"				"Incluir ações após a morte"
+		"CSGO_Demo_Settings_TrueViewDOA_Explanation"	"Recria a previsão do lado do jogador de comandos que não foram executados no servidor devido ao jogador já estar morto no momento em que esses comandos chegaram. Desativar esta opção faz com que a repetição seja diferente da experiência original e faz com que corresponda melhor com o que aconteceu no servidor."
+		"CSGO_Demo_Settings_TrueViewWrongVersion"		"Permitir demos de versões diferentes"
+		"CSGO_Demo_Settings_TrueViewWrongVersion_Explanation"	"Se a versão do jogo usada pelo jogador original for diferente da utilizada para ver a demo, a TrueView poderá não funcionar corretamente. Ativa esta opção para tentar mesmo assim."
 
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -38063,6 +38207,9 @@
 
 		"CSGO_Collectible_PremierSeason3Coin"		"Medalha da Temporada 3"
 		"CSGO_Collectible_PremierSeason3Coin_Desc"	"Uma medalha comemorativa concedida pela tua participação ativa na Temporada 3."
+
+		"CSGO_Collectible_PremierSeason4Coin"		"Medalha da Temporada 4"
+		"CSGO_Collectible_PremierSeason4Coin_Desc"	"Uma medalha comemorativa concedida pela tua participação ativa na Temporada 4."
 
 		//for main menu display
 		"SFUI_XP_Bonus_1"							"Bónus semanal de XP adicional disponível!"
@@ -45801,7 +45948,7 @@
 		"prime_unranked"				"Partida não classificatória"
 		"prime_not_enrolled_label"		"Jogadores Não Prime"
 		"prime_disabled_label"			"Prime desativado"
-		"matchmaking_expected_wait_time"	"Tempo de espera {s:time}"
+		"matchmaking_expected_wait_time"	"<img src='file://{images}/icons/ui/recent.svg' class='map-selection-info__wait-icon'/>Tempo de espera {s:time}"
 		"no_steam_group_link"			"Não pertences a nenhum Grupo Steam."
 
 		"permissions_title"					"Definições de permissões"
@@ -46240,12 +46387,13 @@
 		"annotations_local"							"Diretório local"
 		"annotations_workshop"						"Workshop"
 		"annotations_official"						"Oficial"
-		"annotations_none"							"Nenhum"
+		"annotations_none"							"Sem guia de mapa"
 		"Workshop_annotation_title"					"Ferramenta de envio de guias de mapas"
 		"Workshop_annotation_error_title"			"Introduz um título para o teu guia de mapa."
 		"Workshop_annotation_error_file"			"Seleciona um ficheiro .txt de guia válido."
 		"Workshop_annotation_ready"					"Guia pronto para envio."		
 		"UI_File_Filter_SupportedAnnotationFormat"	"Ficheiros de texto (*.txt)"
+		"annotations_visit_workshop"				"Visitar Workshop ⤤"
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Game Mode Desc
@@ -48497,8 +48645,8 @@
 		"quest_11015_var_desc:p{mission-points}"	 	"Vence uma ronda no modo <b>{s:gamemode} ({s:location})</b>.#|#Vence rondas no modo <b>{s:gamemode} ({s:location})</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Vence uma ronda#|#Vence rondas"
 
-// crow_mask_51357_comment
-// crow_mask_51358_comment
+// crow_mask_51509_comment
+// crow_mask_51510_comment
 }
 
 
