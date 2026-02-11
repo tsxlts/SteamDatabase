@@ -102,7 +102,7 @@
 
 		"tooltip_copycrosshair"				"Kopiera hårkors"
 		"GameUI_Xhair_Copy_Code_Confirm"		"Ersätt nuvarande hårkors?"
-
+ 
 		"settings_damage_prediction"			"Skadeförutsägelse"
 		"settings_damage_prediction_info"		"Spela upp ljud och visa visuella effekter när skada görs omedelbart utan att vänta på bekräftelse från servern. Skadeförutsägelse kan göra att det känns betydligt mer lyhört när man skjuter, men riskerar att ibland bli fel, exempelvis på grund av ryck vid träff (aim punch), nedsaktning vid träff (tagging) eller ett dödsfall som klienten ännu inte är medveten om. Skadeförutsägelse är inte aktivt när man har hög ping."
 		"GameUI_PredictBodyShotEffects"			"Förutsägelse av kroppskottseffekter"
@@ -1961,8 +1961,8 @@
 		"Team_Cash_Award_no_income_suicide"					" +$0 straff för självmord"
 		"Team_Cash_Award_Generic"							" +$%s1 laginkomst"
 		"Team_Cash_Award_Custom"							" +$%s1 %s2"
-		"Team_Cash_Award_Dead_Terrorists:p{s2}"				" +$%s1 laginkomst för %s2 eliminerad terrorist#|# +$%s1 laginkomst för %s2 eliminerade terrorister"
-		"Team_Cash_Award_Dead_CTs:p{s2}"					" +$%s1 laginkomst för %s2 eliminerad antiterrorist#|# +$%s1 laginkomst för %s2 eliminerade antiterrorister"
+		"Team_Cash_Award_Dead_Terrorists:p"					" +$%s1 laginkomst för %s2 eliminerad terrorist#|# +$%s1 laginkomst för %s2 eliminerade terrorister"
+		"Team_Cash_Award_Dead_CTs:p"						" +$%s1 laginkomst för %s2 eliminerad antiterrorist#|# +$%s1 laginkomst för %s2 eliminerade antiterrorister"
 
 
 		"Notice_Bonus_Shorthanded_Eligibility"			" Ditt lag kommer att få inkomst för att vara underbemannade om %s1 rundor."
@@ -2142,6 +2142,8 @@
 		"CS_DeathNemesis"			"Nemesis"
 		"CS_DeathNewNemesis"		"Ny nemesis"
 		"CS_DeathRevenge"			"Hämnd"
+
+		"DeathNotice_Prescient_Attacker"	"(Död på servern)"
 
 		// Game Instructor Messages
 
@@ -2896,6 +2898,8 @@
 		"official_leaderboard_premier_season1_name"			"Säsong 1"
 		"official_leaderboard_premier_season2_name"			"Säsong två"
 		"official_leaderboard_premier_season3_name"			"Säsong 3"
+		"official_leaderboard_premier_season4_name"			"Säsong 4"
+
 		//
 
 		"CSGO_official_leaderboard_mission_embedded"	"Uppdragstopplista"
@@ -3286,6 +3290,18 @@
 		"CSGO_Collectible_MapTokenRooftop_Desc"			"Till minne av skapandet av CS2-banan Rooftop"
 		"CSGO_Collectible_MapTokenTransit"				"Banmynt: (Redacted)"
 		"CSGO_Collectible_MapTokenTransit_Desc"			"Till minne av skapandet av CS2-banan (Redacted)"
+		"CSGO_Collectible_MapTokenWarden"				"Banmynt: Warden"
+		"CSGO_Collectible_MapTokenWarden_Desc"			"Till minne av skapandet av CS2-banan Warden."
+		"CSGO_Collectible_MapTokenStronghold"			"Banmynt: Stronghold"
+		"CSGO_Collectible_MapTokenStronghold_Desc"		"Till minne av skapandet av CS2-banan Stronghold."
+		"CSGO_Collectible_MapTokenAlpine"				"Banmynt: Alpine"
+		"CSGO_Collectible_MapTokenAlpine_Desc"			"Till minne av skapandet av CS2-banan Alpine."
+		"CSGO_Collectible_MapTokenPoseidon"				"Banmynt: Poseidon"
+		"CSGO_Collectible_MapTokenPoseidon_Desc"		"Till minne av skapandet av CS2-banan Poseidon."
+		"CSGO_Collectible_MapTokenSanctum"				"Banmynt: Sanctum"
+		"CSGO_Collectible_MapTokenSanctum_Desc"			"Till minne av skapandet av CS2-banan Sanctum."
+
+
 		"CSGO_CollectibleCoin_FortiusQuoFidelius"	"Lojalitetsmedalj"
 		"CSGO_CollectibleCoin_FortiusQuoFidelius_Desc"	"Denna medalj hyllar lojalt medlemskap i Counter-Strike-gemenskapen innan Danger Zone-uppdateringen.\n\n<i>Styrka genom lojalitet.</i>"
 		"CSGO_CollectibleCoin_FiveYearService"		"5-årsveteranmynt"
@@ -5303,6 +5319,8 @@
 		"CSGO_set_timed_drops_neutral"			"Boreal-kollektionen"
 		"CSGO_set_timed_drops_cool"				"Ascent-kollektionen"
 		"CSGO_set_community_36"					"Genesis-kollektionen"
+		"CSGO_set_timed_drops_exuberant"		"Harlequin-kollektionen"
+		"CSGO_set_timed_drops_achroma"			"Achroma-kollektionen"
 		/////////////////
 		// lootlist override strings
 		//////////////////
@@ -28833,6 +28851,22 @@
 
 	"CSGO_crate_bud2025_promo"		"Souvenirpaket: Budapest 2025"
 	"CSGO_crate_bud2025_promo_de_inferno"		"Souvenirpaket: Budapest 2025 – Inferno"
+	"CSGO_crate_bud2025_promo_de_inferno^highlight"		"Budapest 2025: Inferno – höjdpunktspaket"
+	"CSGO_crate_bud2025_promo_de_mirage"		"Souvenirpaket: Budapest 2025 – Mirage"
+	"CSGO_crate_bud2025_promo_de_mirage^highlight"		"Budapest 2025: Mirage – höjdpunktspaket"
+	"CSGO_crate_bud2025_promo_de_overpass"		"Souvenirpaket: Budapest 2025 – Overpass"
+	"CSGO_crate_bud2025_promo_de_overpass^highlight"		"Budapest 2025: Overpass – höjdpunktspaket"
+	"CSGO_crate_bud2025_promo_de_dust2"		"Souvenirpaket: Budapest 2025 – Dust II"
+	"CSGO_crate_bud2025_promo_de_dust2^highlight"		"Budapest 2025: Dust II – höjdpunktspaket"
+	"CSGO_crate_bud2025_promo_de_ancient"		"Souvenirpaket: Budapest 2025 – Ancient"
+	"CSGO_crate_bud2025_promo_de_ancient^highlight"		"Budapest 2025: Ancient – höjdpunktspaket"
+	"CSGO_crate_bud2025_promo_de_nuke"		"Souvenirpaket: Budapest 2025 – Nuke"
+	"CSGO_crate_bud2025_promo_de_nuke^highlight"		"Budapest 2025: Nuke – höjdpunktspaket"
+	"CSGO_crate_bud2025_promo_de_train"		"Souvenirpaket: Budapest 2025 – Train"
+	"CSGO_crate_bud2025_promo_de_train^highlight"		"Budapest 2025: Train – höjdpunktspaket"
+
+	"keychain_kc_bud2025"			"Höjdpunkt från Budapest 2025"
+	"keychain_kc_bud2025_desc"		"Detta souvenirhänge är ett minne från CS2-majormästerskapet StarLadder Budapest 2025 och innehåller en video med höjdpunkter."
 	"HighlightReel_bud2025_qf-navi-entrance"	"Natus Vincere i kvartsfinalen"
 	"HighlightDesc_bud2025_qf-navi-entrance"	"Natus Vincere gör sin entré i kvartsfinalen i StarLadder Budapest Major 2025, redo att möta FURIA."
 	"HighlightReel_bud2025_qf-furia-entrance"	"FURIA i kvartsfinalen"
@@ -29580,7 +29614,31 @@
 	"HighlightReel_bud2025_gf-twistzz-clutch-1v1-on-overpass"	"Twistzz bryter sviten"
 	"HighlightDesc_bud2025_gf-twistzz-clutch-1v1-on-overpass"	"Med 0–11 i underläge slår Twistzz tillbaka mot ZywOo och får äntligen FaZe på tavlan."
 
-	"CSGO_Tournament_Event_Location_25"		"Budapest 2025"
+	"CSGO_CollectibleCoin_bud2025_Champion"				"Segrare vid StarLadder Budapest 2025"
+	"CSGO_CollectibleCoin_bud2025_Champion_Desc"			"Denna mästerskapstrofé tilldelades vinnaren av CS2-majormästerskapet StarLadder Budapest 2025."
+	"CSGO_CollectibleCoin_bud2025_Finalist"				"Finalist vid StarLadder Budapest 2025"
+	"CSGO_CollectibleCoin_bud2025_Finalist_Desc"			"Denna mästerskapstrofé tilldelades finalisterna vid CS2-majormästerskapet StarLadder Budapest 2025."
+	"CSGO_CollectibleCoin_bud2025_Semifinalist"				"Semifinalist vid StarLadder Budapest 2025"
+	"CSGO_CollectibleCoin_bud2025_Semifinalist_Desc"			"Denna mästerskapstrofé tilldelades semifinalisterna vid CS2-majormästerskapet StarLadder Budapest 2025."
+	"CSGO_CollectibleCoin_bud2025_Quarterfinalist"				"Kvartsfinalist vid StarLadder Budapest 2025"
+	"CSGO_CollectibleCoin_bud2025_Quarterfinalist_Desc"			"Denna mästerskapstrofé tilldelades kvartsfinalisterna vid CS2-majormästerskapet StarLadder Budapest 2025."
+
+		"CSGO_official_leaderboard_pickem_bud2025_team"	"Pick'Em-utmaning: Budapest 2025"
+		"CSGO_SupportGameAuthKey_Type_25"		"Budapest 2025 – Pick'Em-hantering"
+		"CSGO_SupportGameAuthKey_Desc_25"		"Sidor och applikationer från tredje part kan använda autentiseringskoden för att få åtkomst till dina förutsägelser till Pick'Em-utmaningen för Budapest 2025 och hjälpa dig att göra förutsägelserna under CS2-majormästerskapet StarLadder Budapest 2025."
+		"CSGO_Tournament_Event_Name_25"			"CS2-majormästerskapet StarLadder Budapest 2025"
+		"CSGO_Tournament_Event_NameShort_25"	"StarLadder Budapest 2025"
+		"CSGO_Tournament_Event_Location_25"		"Budapest 2025"
+		"store_nav_tournament_25"	"BUDAPEST 2025"
+		"CSGO_Watch_Cat_Tournament_25"      "Budapest 2025"
+		"CSGO_Watch_Info_Tournament_25"		"Om StarLadder Budapest 2025"
+		"CSGO_Watch_NoMatch_Tournament_25"   "Matcher från StarLadder Budapest 2025 kommer att visas här.\nDet finns inga pågående eller nedladdningsbara matcher just nu."
+		"CSGO_Watch_Loading_Tournament_25"   "Läser in matcher från StarLadder Budapest 2025 ..."
+
+		"SFUI_MajorEventVenue_Title_25_2"		"Live från Budapest"
+		"SFUI_MajorEventVenue_Subtitle_25_2"	"Se världens bästa lag tävla i CS2-majormästerskapet StarLadder Budapest 2025"
+		"SFUI_MajorEventVenue_StreamTitle_25_2" "Budapest 2025 – StarLadder Major – livestream"
+
 		//
 		// 2025 StarLadder Budapest 2025 CS2 Major Championship Strings Block End
 		// ======================================
@@ -34936,7 +34994,120 @@
 		
 		"PaintKit_cue_stratosphere"							"Vapnet har specialmålats med rymdfarkoster som kretsar kring en planet i yttre rymden.\n\n<i>”En dag i en inte alltför avlägsen framtid ...”</i>"
 		"PaintKit_cue_stratosphere_Tag"						"Stratosphere"
-"PaintKit_soe_ddpat_swirl_bw_Tag"					"Dizzy"
+		
+		// ACHROMA COLLECTION
+		"PaintKit_soe_ddpat_swirl_bw"						"Ett DDPAT-mönster i gråskala har applicerats.\n\n<i>Det går runt och runt.</i>"
+		"PaintKit_soe_ddpat_swirl_bw_Tag"					"Dizzy"
+
+		"PaintKit_hye_car_wrap_bizon"						"Ett gråskalemönster har applicerats.\n\n<i>Snabba på, tack!</i>"
+		"PaintKit_hye_car_wrap_bizon_Tag"					"Bizoom"
+
+		"PaintKit_soe_acrylic_flow3"						"Ett akrylfärgmönster i gråskala har applicerats.\n\n<i>I slutändan tycks allt falla på plats.</i>"
+		"PaintKit_soe_acrylic_flow3_Tag"					"Silver Pour"
+
+		"PaintKit_hye_comic_shapes"							"Ett gråskalemönster i blänkande silver har applicerats.\n\n<i>”Den röda lampan betyder att inspelning pågår.”</i>"
+		"PaintKit_hye_comic_shapes_Tag"						"Sans Comic"
+
+		"PaintKit_hye_chrome_ripple"						"Ett gråskalemönster har applicerats.\n\n<i>Som ringar på vattnet.</i>"
+		"PaintKit_hye_chrome_ripple_Tag"					"Zinc"
+
+		"PaintKit_hye_car_wrap_3"							"Ett kantigt gråskalemönster har applicerats.\n\n<i>Snygg insida lämpad för en mindre snygg utsida.</i>"
+		"PaintKit_hye_car_wrap_3_Tag"						"Sleet"
+
+		"PaintKit_hye_geobirds"								"Ett gråskalemönster med silverfärgade fåglar har applicerats.\n\n<i>Hur är utsikten där uppe?</i>"
+		"PaintKit_hye_geobirds_Tag"							"Currents"
+
+		"PaintKit_hye_mp5_car_wrap4"						"Ett gråskalemönster med skarpa, kantiga mönster har tillämpats.\n\n<i>Orubblig.</i>"
+		"PaintKit_hye_mp5_car_wrap4_Tag"					"Snow Splash"
+
+		"PaintKit_soe_bw_blast"								"Vapnet har målats med ett trämönster med högglansig färg.\n\n<i>Här – ved för elden ... – Booth, vapenhandlare</i>"
+		"PaintKit_soe_bw_blast_Tag"							"Vendetta"
+
+		"PaintKit_hye_abstract_knot_m4"						"Ett abstrakt knutmönster i gråskala har applicerats.\n\n<i>Låt vinden bära dig.</i>"
+		"PaintKit_hye_abstract_knot_m4_Tag"					"Aeolian Dark"
+
+		"PaintKit_soch_smoke_grips"							"Greppet är målat i ett mörkt akrylfärgsmönster.\n\n<i>Ärvd förmögenhet.</i>"
+		"PaintKit_soch_smoke_grips_Tag"						"Dark Chamber"
+
+		"PaintKit_soe_aug_creep"							"Vapnet har målats med knotiga grenar och fåglar på en silverbakgrund.\n\n<i>”De cirklar omkring ...”</i>"
+		"PaintKit_soe_aug_creep_Tag"						"Creep"
+
+		"PaintKit_hye_abstract_knot"						"Ett abstrakt knutmönster i gråskala har applicerats.\n\n<i>Låt vinden bära dig.</i>"
+		"PaintKit_hye_abstract_knot_Tag"					"Aeolian Light"
+
+		"PaintKit_hye_car_wrap"								"Ett gråskalemönster har applicerats.\n\n<i>Direkt från sidorna i din favoritserie.</i>"
+		"PaintKit_hye_car_wrap_Tag"							"The Daily Deagle"
+
+		"PaintKit_soe_p2000_grips"							"Ett mönster med olika nyanser av silver har applicerats. Delar av greppet är målade med en mörk, matt färg för att likna tejp.\n\n<i>Håll dig fast!</i>"
+		"PaintKit_soe_p2000_grips_Tag"						"Grip Tape"
+
+		"PaintKit_hye_zeds"									"Ett gråskalemönster med aggressiva z-mönster har applicerats på en kolfiberbas.\n\n<i>+5 vapenhanteringshastighet.</i>"
+		"PaintKit_hye_zeds_Tag"								"Breakthrough"
+
+		"PaintKit_ht_white_edges"							"Ett mönster med cirklar i gråskala har applicerats under en holografisk design.\n\n<i>Grafiska kartor över holografiska system.</i>"
+		"PaintKit_ht_white_edges_Tag"						"Trace Lock"
+
+		"PaintKit_soe_bw_the_end_awp"						"Vapnet har specialmålats i aubergine och vitt med lågor, rosor och ”the end” framför avtryckaren.\n\n<i>En berättelse om två sidor.</i>"
+		"PaintKit_soe_bw_the_end_awp_Tag"					"The End"
+
+		// EXUBERANT COLLECTION
+		"PaintKit_hye_animal_print_lc"						"Ett brunt djurmönster har applicerats.\n\n<i>Du sa bara några djur, inte hela djurriket.</i>"
+		"PaintKit_hye_animal_print_lc_Tag"					"Safari Print"
+
+		"PaintKit_hye_firework_patches_famas"				"Ett guldfärgat explosionsmönster har applicerats.\n\n<i>”Coola killar tittar inte på explosioner.”</i>"
+		"PaintKit_hye_firework_patches_famas_Tag"			"Byproduct"
+
+		"PaintKit_hye_geobirds_sunrise"						"Silverfärgade fåglar har applicerats ovanpå ett vinrött mönster.\n\n<i>Hur är utsikten där uppe?</i>"
+		"PaintKit_hye_geobirds_sunrise_Tag"					"Thermal Currents"
+
+		"PaintKit_hye_batik_eyes"							"Ett karmosinrött och svart bananbladsmönster har applicerats.\n\n<i>Mobila mål.</i>"
+		"PaintKit_hye_batik_eyes_Tag"						"Crimson Batik"
+
+		"PaintKit_hye_paisley_desat"						"Vapnet har målats med ett guldfärgat paisleymönster ovanpå en vinröd bas.\n\n<i>Bara de finaste textilierna till dig, Booth. – Yukako, vapensmed</i>"
+		"PaintKit_hye_paisley_desat_Tag"					"Honey Paisley"
+
+		"PaintKit_soch_copper_accent_revolver"				"Greppet är målat i ett plommonfärgat akrylfärgsmönster.\n\n<i>Häll försiktigt.</i>"
+		"PaintKit_soch_copper_accent_revolver_Tag"			"Mauve Aside"
+
+		"PaintKit_soe_yellow_bits"							"Spåren på denna MP9 är huvudsakligen silverfärgade och har fyllts med gul och röd färg.\n\n<i>Håll mig tillbaka!</i>"
+		"PaintKit_soe_yellow_bits_Tag"						"Bee-Tron"
+
+		"PaintKit_hye_test_animal_print_45"					"Ett djurmönster i brunt och rött har applicerats.\n\n<i>Du sa bara några djur, inte hela djurriket.</i>"
+		"PaintKit_hye_test_animal_print_45_Tag"				"Warm Blooded"
+
+		"PaintKit_hye_paisley_warm"							"Ett rött och orange paisleymönster har applicerats.\n\n<i>Bara de finaste textilierna för dig, Booth. – Yukako, vapensmed</i>"
+		"PaintKit_hye_paisley_warm_Tag"						"Coral Paisley"
+
+		"PaintKit_soe_red"									"Ett rött mönster med förskjutna x har applicerats.\n\n<i>Det är kanske lite väl, men är det inte poängen? – Imogen, vapenhandlare under utbildning</i>"
+		"PaintKit_soe_red_Tag"								"Picnic"
+
+		"PaintKit_hye_batik_eyes_tec9"						"Ett gult och svart bananbladsmönster har applicerats.\n\n<i>Rikligt med kalium.</i>"
+		"PaintKit_hye_batik_eyes_tec9_Tag"					"Banana Leaf"
+
+		"PaintKit_hye_earth_mandala"						"Ett flerfärgat mandalamönster har applicerats.\n\n<i>Resan är målet.</i>"
+		"PaintKit_hye_earth_mandala_Tag"					"Sky Mandala"
+
+		"PaintKit_hye_earth_mandala_lc"						"Ett flerfärgat mandalamönster har applicerats.\n\n<i>Resan är målet.</i>"
+		"PaintKit_hye_earth_mandala_lc_Tag"					"Earth Mandala"
+
+		"PaintKit_soe_yellow_xm"							"Ett gult mönster har applicerats och avslutats med silverdetaljer.\n\n<i>ZZZZZAP!</i>"
+		"PaintKit_soe_yellow_xm_Tag"						"XoooM"
+
+		"PaintKit_soe_pink_cranes"							"Ett rosa och vitt mönster med tranor och blommor har applicerats.\n\n<i>Passar bäst ihop med ett glas sherry.</i>"
+		"PaintKit_soe_pink_cranes_Tag"						"Fraise Crane"
+
+		"PaintKit_ht_red_edges_fineline"					"En röd kalligrafidesign har applicerats.\n\n<i>Skriv ner det.</i>"
+		"PaintKit_ht_red_edges_fineline_Tag"				"Calligrafaux"
+
+		"PaintKit_hye_firework_patches"						"Ett rödfärgat explosionsmönster har applicerats.\n\n<i>”Coola killar tittar inte på explosioner.”</i>"
+		"PaintKit_hye_firework_patches_Tag"					"Exothermic"
+
+		"PaintKit_soe_purple"								"Ett lila kamouflagemönster med pärlemorskimrande yta har applicerats.\n\n<i>En ny brygd!</i>"
+		"PaintKit_soe_purple_Tag"							"Sleeping Potion"
+
+		"PaintKit_hye_animal_print_90s"						"Ett ljust neonfärgat djurmönster har applicerats.\n\n<i>Du sa bara några färger, inte hela färgspektrumet.</i>"
+		"PaintKit_hye_animal_print_90s_Tag"					"Party Animal"
+
 // END TIMED DROPS 2025
 
 // LIMITED TIME ITEM
@@ -34944,7 +35115,10 @@
 		"PaintKit_soch_mountains_xm1014"					"Ett bergsterrängmönster har applicerats.\n\n<i>Ensamhet är ett privilegium, inte en börda.</i>"
 		"PaintKit_soch_mountains_xm1014_Tag"				"Solitude"
 
-		// END LIMITED TIME ITEM
+		"PaintKit_gsch_ak_djiin"							"Lådan och pipan är målade med metallicfärg. Handskyddet och kolven är pärlemorskimrande.\n\n<i>Som från en annan värld.</i>"
+		"PaintKit_gsch_ak_djiin_Tag"						"Aphrodite"
+
+// END LIMITED TIME ITEM
 
 		//Recipes
 		"CSGO_Recipe_TradeUp"						"Inbyteskontrakt"
@@ -35640,6 +35814,12 @@
 		"SFUI_Map_de_golden"		"Golden"
 		"SFUI_Map_de_rooftop"		"Rooftop"
 		"SFUI_Map_de_transit"		"(Redacted)"
+
+		"SFUI_Map_de_warden"		"Warden"
+		"SFUI_Map_de_stronghold"	"Stronghold"
+		"SFUI_Map_cs_alpine"		"Alpine"
+		"SFUI_Map_de_poseidon"		"Poseidon"
+		"SFUI_Map_de_sanctum"		"Sanctum"
 
 		"SFUI_Map_workshop_preview_dust2"	"Dust II – förhandsvisning"
 		"SFUI_Map_workshop_preview_ancient"	"Ancient – förhandsvisning"
@@ -37512,6 +37692,15 @@
 		"CSGO_Demo_Next_Camera"						"[{s:bind_jump}]: Nästa kamera"
 		"CSGO_Demo_Toggle_XRay"						"[{s:bind_slot12}]: Aktivera/inaktivera röntgen"
 		"CSGO_Demo_Toggle_Overview"					"[{s:bind_duck}]: Aktivera/inaktivera översikt"
+		"CSGO_Demo_Settings_XRay"					"Röntgen (växla med [{s:bind_slot12}])"
+		"CSGO_Demo_Settings_TrueView_Explanation"	"Återskapa den ursprungliga klientupplevelsen genom att köra förutsägelsen på klientsidan igen. Då återskapas de villkor som servern använder för registrering av kulträffar mer exakt."
+		"CSGO_Demo_Settings_TrueView_Enable"		"Aktivera TrueView"
+		"CSGO_Demo_Settings_TrueViewDOA"				"Inkludera DOA-handlingar"
+		"CSGO_Demo_Settings_TrueViewDOA_Explanation"	"Återskapa klientförutsägelser av kommandon som inte kördes på servern eftersom spelaren var död när kommandona kom fram. Om du stänger av funktionen kommer uppspelningen att skilja sig från den ursprungliga upplevelsen, men den stämmer bättre överens med vad som hände på servern."
+		"CSGO_Demo_Settings_TrueViewWrongVersion"		"Tillåt olika demoversioner"
+		"CSGO_Demo_Settings_TrueViewWrongVersion_Explanation"	"Om den ursprungliga klienten hade en annan version än den som användes för att visa demon, kan det hända att TrueView inte fungerar korrekt. Aktivera det här alternativet för att försöka ändå."
+
+
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// Date formatting
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -37930,6 +38119,8 @@
 		"CSGO_Collectible_Desc_GlobalGeneral2025"	"Tilldelad för enastående tjänst och prestation under 2025."
 
 		"CSGO_Collectible_GlobalGeneral2026"		"2026 års tjänstemedalj"
+		"CSGO_Collectible_Desc_GlobalGeneral2026"	"Tilldelad för enastående tjänst och prestation 2026."
+
 		"CSGO_Collectible_PremierSeason1Coin"		"Medalj för säsong ett av Premier"
 		"CSGO_Collectible_PremierSeason1Coin_Desc"	"Premier-minnesmedalj som du tilldelas för ditt aktiva deltagande i säsong ett av Premier."
 
@@ -37938,6 +38129,9 @@
 
 		"CSGO_Collectible_PremierSeason3Coin"		"Medalj för säsong tre av Premier"
 		"CSGO_Collectible_PremierSeason3Coin_Desc"	"Premier-minnesmedalj som du tilldelas för ditt aktiva deltagande i säsong tre av Premier."
+
+		"CSGO_Collectible_PremierSeason4Coin"		"Medalj för säsong fyra av Premier"
+		"CSGO_Collectible_PremierSeason4Coin_Desc"	"Premier-minnesmedalj som du tilldelas för ditt aktiva deltagande i säsong fyra av Premier."
 
 		//for main menu display
 		"SFUI_XP_Bonus_1"							"Veckolig XP-bonus tillgänglig!"
@@ -38092,11 +38286,12 @@
 		"xpshop_upsell_mainmenu_2_v2"				"Få tillgång till den nya Train-kollektionen, Fever-lådan, hängen och mer."
 		"xpshop_upsell_btn"							"Skaffa ett pass"
 		"xpshop_upsell_tooltip"						"Läs mer om {s:pass}"
-		"xpshop_new_items"							"Nya föremål!"
+
+		"xpshop_new_items:p{new-count}"	"Nytt föremål!#|#Nya föremål!"
 		"xpshop_lootlist_info"						"<span class=\"text-color-white\"><b>{s:casename}</b></span> innehåller ett av följande föremål:"
 
 		"xpshop_limited_item_variations"			"Lackeringsvariationer"
-		"xpshop_limited_item_variations_tooltip"	"Exempel på möjliga variationer som du kan få när du löser in detta Limited Edition-föremål."
+		"xpshop_limited_item_variations_tooltip"	"Exempel på möjliga variationer av mönstermallar och slitage som du kan få när du löser in det här föremålet i begränsad upplaga."
 		"xpshop_pass_activate"						"Aktivera pass"
 		"xpshop_pass_activate_open_armory"			"Öppna vapenförrådet för att aktivera"
 		"xpshop_pass_activate_desc"					"Aktivera pass för att börja tjäna vapenförrådspoäng"
@@ -38301,9 +38496,9 @@
 		"SFUI_Scoreboard_Halftime"		"Halvtid"
 		"SFUI_Scoreboard_2nd_Half"	"Andra halvan"
 		"SFUI_Scoreboard_Overtime"	"Förlängning"
-		"SFUI_Scoreboard_OvertimeHalftime"	"Övertidsuppehåll"
-		"SFUI_Scoreboard_Overtime1stHalf"	"Övertid första halvan"
-		"SFUI_Scoreboard_Overtime2ndHalf"	"Övertid andra halvan"
+		"SFUI_Scoreboard_OvertimeHalftime"	"Förlängningsuppehåll"
+		"SFUI_Scoreboard_Overtime1stHalf"	"Förlängning – första halvlek"
+		"SFUI_Scoreboard_Overtime2ndHalf"	"Förlängning – andra halvlek"
 		"SFUI_Scoreboard_Final"		"Slutgiltig"
 		"SFUI_Scoreboard_Final_Won"		"VINNARE!"
 		"SFUI_Scoreboard_Final_Surrendered"		"GAV UPP"
@@ -38313,7 +38508,7 @@
 		"SFUI_Scoreboard_Team_One"	"Lag Ett"
 		"SFUI_Scoreboard_Team_Two"	"Lag Två"
 		"SFUI_Scoreboard_Switch_In"		"Lagbyte om: %s1"
-		"SFUI_Scoreboard_Overtime_In"	"Övertid fortsätter om: %s1"
+		"SFUI_Scoreboard_Overtime_In"	"Förlängning fortsätter om: %s1"
 		"SFUI_Scoreboard_Next_In"		"Nästa match börjar om: %s1"
 		"SFUI_Scoreboard_MapVoteEnd_In"		"Banröstning slutar om: %s1"
 		"SFUI_Scoreboard_Next_Map_In"	"Läser in %s1 om: %s2"
@@ -39975,8 +40170,8 @@
 		"SFUI_Settings_MiniScoreboardPlayerCount_Tooltip"	"Under den aktiva delen av rundan, ersätt spelaravatarer med lagspelarantal på miniresultattavlan."
 
 
-		"Post_Round_Damage_Report_Given:p{s1}"			" • Skada gjord → %s3: %s2 på %s1#|# • Skada gjord → %s3: %s2 på %s1"
-		"Post_Round_Damage_Report_Taken:p{s1}"			" • Skada tagen ← %s3: %s2 med %s1#|# • Skada tagen ← %s3: %s2 med %s1"
+		"Post_Round_Damage_Report_Given:p"			" • Skada gjord → %s3: %s2 på %s1#|# • Skada gjord → %s3: %s2 på %s1"
+		"Post_Round_Damage_Report_Taken:p"			" • Skada tagen ← %s3: %s2 med %s1#|# • Skada tagen ← %s3: %s2 med %s1"
 
 		"SFUI_TeamOverheadID"					"Visa lagutrustning"
 
@@ -40455,8 +40650,8 @@
 
 		"SFUI_UserAlertNoteType_1"			"Servrar i %s1 är under hög belastning."
 		"SFUI_UserAlertNoteType_2"			"Servar i %s1 är nere för underhåll."
-		"SFUI_UserAlertNoteType_LowPlayersR:p{players}"	"Endast %players% passande spelare söker i %region%.#|#Endast %players% passande spelare söker i %region%."
-		"SFUI_UserAlertNoteType_LowPlayersY:p{players}"	"Endast %players% passande spelare söker i din region.#|#Endast %players% passande spelare söker i din region."
+		"SFUI_UserAlertNoteType_LowPlayersR:p"	"Endast %players% passande spelare söker i %region%.#|#Endast %players% passande spelare söker i %region%."
+		"SFUI_UserAlertNoteType_LowPlayersY:p"	"Endast %players% passande spelare söker i din region.#|#Endast %players% passande spelare söker i din region."
 
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"Kunde inte ansluta till match."
 		"SFUI_QMM_ERROR_NotLoggedIn"		"Inte inloggad till Counter-Strikes matchningstjänst."
@@ -45574,6 +45769,7 @@ Om samma match redan laddats ner lokalt och filen blivit förstörd, radera då 
 		"prime_unranked"				"Orankad match"
 		"prime_not_enrolled_label"		"Spelare utan Prime"
 		"prime_disabled_label"			"Prime är inaktiverat."
+		"matchmaking_expected_wait_time"	"<img src='file://{images}/icons/ui/recent.svg' class='map-selection-info__wait-icon'/>Väntetid: {s:time}"
 		"no_steam_group_link"			"Du är inte medlem i någon Steam-grupp."
 
 		"permissions_title"					"Behörighetsinställningar"
@@ -45997,11 +46193,14 @@ Om samma match redan laddats ner lokalt och filen blivit förstörd, radera då 
 		"annotations_local"							"Lokal lagring"
 		"annotations_workshop"						"Workshop"
 		"annotations_official"						"Officiell"
+		"annotations_none"							"Ingen banguide"
 		"Workshop_annotation_title"					"Verktyg för inlämning av banguide"
 		"Workshop_annotation_error_title"			"Ange en titel för din banguide."
 		"Workshop_annotation_error_file"			"Välj en giltig.txt-fil för anteckningar."
 		"Workshop_annotation_ready"					"Inlämningen är redo att laddas upp."		
 		"UI_File_Filter_SupportedAnnotationFormat"	"Textfiler (*.txt)"
+		"annotations_visit_workshop"				"Besök workshop ⤤"
+
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Game Mode Desc
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -46406,7 +46605,7 @@ Om samma match redan laddats ner lokalt och filen blivit förstörd, radera då 
 		"Time_NextMapIn"								"{s:s_gametime_nextmap} om"
 		"Time_NextMatchIn"								"Nästa match"
 		"Time_MapShutdownIn"							"Nedstängning"
-		"Time_OvertimeIn"								"Förlängningen återupptas"
+		"Time_OvertimeIn"								"Förlängningen fortsätter"
 		"Time_TeamSwitchIn"								"Lagbyte"
 		"Time_MatchStartIn"								"Matchen startar"
 		"Time_MapVoteEndIn"								"Banomröstningen slutar"
@@ -46426,8 +46625,8 @@ Om samma match redan laddats ner lokalt och filen blivit förstörd, radera då 
 		"Scoreboard_2nd"								"2:a"
 		"Scoreboard_Overtime"							"Förlängning"
 		"Scoreboard_OvertimeHalftime"					"Förlängningsuppehåll"
-		"Scoreboard_Overtime1stHalf"					"Förlängning 1:a halvan"
-		"Scoreboard_Overtime2ndHalf"					"Förlängning 2:a halvan"
+		"Scoreboard_Overtime1stHalf"					"Förlängning – första halvlek"
+		"Scoreboard_Overtime2ndHalf"					"Förlängning – andra halvlek"
 
 		"Scoreboard_Final_Won"							"{s:winning_team} vann matchen!"
 		"Scoreboard_Final_Surrendered"					"{s:losing_team} gav upp. {s:winning_team} vann matchen!"
@@ -46436,6 +46635,8 @@ Om samma match redan laddats ner lokalt och filen blivit förstörd, radera då 
 
 		"team-intro-1st-half"							"Första halvan"
 		"team-intro-2nd-half"							"Andra halvan"
+		"team-intro-overtime-1st-half:p{overtime_num}"	"Förlängning: första halvlek#|#Förlängning {d:overtime_num}: första halvlek"
+		"team-intro-overtime-2nd-half:p{overtime_num}"	"Förlängning: andra halvlek#|#Förlängning {d:overtime_num}: andra halvlek"
 		"team-intro-starting-as-t"						"Startar som terrorist"
 		"team-intro-starting-as-ct"						"Startar som antiterrorist"
 		"team-intro-playing-as-t"						"Spelar som terrorist"
@@ -48222,18 +48423,191 @@ Om samma match redan laddats ner lokalt och filen blivit förstörd, radera då 
 		"quest_11015_var_desc:p{mission-points}"	 	"Vinn en runda i <b>{s:gamemode}: {s:location}</b>.#|#Vinn rundor i <b>{s:gamemode}: {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Vinn en runda#|#Vinn rundor"
 
-// crow_mask_51509_comment
-// crow_mask_51510_comment
-}
+// crow_mask_51513_comment
+// crow_mask_51514_comment
 
-
-
-
-}
-
-
-57_comment
-// crow_mask_51358_comment
+		"SFUI_PlayerCount_Alive_Left:f"									"{left_side_alive, plural, one{VID LIV} other{VID LIV}}"
+		"SFUI_PlayerCount_Alive_Right:f"								"{right_side_alive, plural, one{VID LIV} other{VID LIV}}"
+		"funfact_damage_no_kills:f"										"{funfact-d1, plural, one{{s:funfact-player} dödade ingen, men gjorde {d:funfact-d1} skada.} other{{s:funfact-player} dödade ingen, men gjorde {d:funfact-d1} skada.}}"
+		"funfact_kills_with_single_grenade:f"							"{funfact-d1, plural, one{{s:funfact-player} träffade {d:funfact-d1} fiende med en granat.} other{{s:funfact-player} träffade {d:funfact-d1} fiender med en granat.}}"
+		"funfact_kill_defuser:f"										"{s:funfact-player} stoppade desarmeringen av bomben."
+		"funfact_kill_rescuer:f"										"{s:funfact-player} dödade gisslansräddaren."
+		"funfact_killed_enemies:f"										"{funfact-d1, plural, one{{s:funfact-player} dödade {d:funfact-d1} motståndare.} other{{s:funfact-player} dödade {d:funfact-d1} motståndare.}}"
+		"funfact_first_kill:f"											"{funfact-d1, plural, one{{s:funfact-player} var den första som dödade någon, {d:funfact-d1} sekund in i rundan.} other{{s:funfact-player} var den första som dödade någon, {d:funfact-d1} sekunder in i rundan.}}"
+		"funfact_first_blood:f"											"{funfact-d1, plural, one{{s:funfact-player} gjorde första skadan {d:funfact-d1} sekund in i rundan.} other{{s:funfact-player} gjorde första skadan {d:funfact-d1} sekunder in i rundan.}}"
+		"funfact_short_round:f"											"{funfact-d1, plural, one{Rundan tog bara {d:funfact-d1} sekund!} other{Rundan tog bara {d:funfact-d1} sekunder!}}"
+		"funfact_best_accuracy:f"										"{funfact-d1, plural, one{{s:funfact-player} hade en träffsäkerhet på {d:funfact-d1} %.} other{{s:funfact-player} hade en träffsäkerhet på {d:funfact-d1} %.}}"
+		"funfact_knife_kills:f"											"{funfact-d1, plural, one{{s:funfact-player} dödade en fiende med kniv.} other{{s:funfact-player} dödade {d:funfact-d1} fiender med kniv under rundan.}}"
+		"funfact_damage_with_grenade:f"									"{funfact-d1, plural, one{{s:funfact-player} gjorde sammanlagt {d:funfact-d1} skada med granater.} other{{s:funfact-player} gjorde sammanlagt {d:funfact-d1} skada med granater.}}"
+		"funfact_kills_grenades:f"										"{funfact-d1, plural, one{{s:funfact-player} dödade {d:funfact-d1} fiende med granater.} other{{s:funfact-player} dödade {d:funfact-d1} fiender med granater.}}"
+		"funfact_blind_kills:f"											"{funfact-d1, plural, one{{s:funfact-player} blev bländad av en chockgranat och dödade en fiende.} other{{s:funfact-player} blev bländad av en chockgranat och dödade {d:funfact-d1} fiender.}}"
+		"funfact_kills_with_last_round:f"								"{funfact-d1, plural, one{{s:funfact-player} dödade en fiende med sin sista kula.} other{{s:funfact-player} dödade en fiende med endast en kula kvar i magasinet {d:funfact-d1} gånger.}}"
+		"funfact_kills_headshots:f"										"{funfact-d1, plural, one{{s:funfact-player} dödade {d:funfact-d1} fiende med huvudskott den rundan.} other{{s:funfact-player} dödade {d:funfact-d1} fiender med huvudskott den rundan.}}"
+		"funfact_kills_with_stattrak_weapon:f"							"{funfact-d1, plural, one{{s:funfact-player} lade till {d:funfact-d1} kill till sina StatTrak™-vapen den rundan.} other{{s:funfact-player} lade till {d:funfact-d1} kills till sina StatTrak™-vapen den rundan.}}"
+		"funfact_donated_weapons:f"										"{funfact-d1, plural, one{{s:funfact-player} donerade {d:funfact-d1} vapen den rundan.} other{{s:funfact-player} donerade {d:funfact-d1} vapen den rundan.}}"
+		"funfact_posthumous_kills_with_grenade:f"						"{funfact-d1, plural, one{{s:funfact-player} dödade en fiende med en granat efter sin död.} other{{s:funfact-player} dödade {d:funfact-d1} fiender med granater efter sin död.}}"
+		"funfact_num_times_jumped:f"									"{funfact-d1, plural, one{{s:funfact-player} hoppade {d:funfact-d1} gång under rundan.} other{{s:funfact-player} hoppade {d:funfact-d1} gånger under rundan.}}"
+		"funfact_fall_damage:f"											"{funfact-d1, plural, one{{s:funfact-player} tog {d:funfact-d1} skada ... från marken.} other{{s:funfact-player} tog {d:funfact-d1} skada ... från marken.}}"
+		"funfact_items_purchased:f"										"{funfact-d1, plural, one{{s:funfact-player} köpte {d:funfact-d1} föremål.} other{{s:funfact-player} köpte {d:funfact-d1} föremål.}}"
+		"funfact_won_as_last_member:f"									"{funfact-d1, plural, one{Som sista överlevande dödade {s:funfact-player} {d:funfact-d1} fiende och vann.} other{Som sista överlevande dödade {s:funfact-player} {d:funfact-d1} fiender och vann.}}"
+		"funfact_number_of_overkills:f"									"{funfact-d1, plural, one{{s:funfact-player} dödade {d:funfact-d1} spelare som redan dominerades.} other{{s:funfact-player} dödade {d:funfact-d1} spelare som redan dominerades.}}"
+		"funfact_shots_fired:f"											"{funfact-d1, plural, one{{d:funfact-d1} skott avlossades den rundan.} other{{d:funfact-d1} skott avlossades den rundan.}}"
+		"funfact_money_spent:f"											"{funfact-d1, plural, one{{s:funfact-player} spenderade {d:funfact-d1} $ den rundan.} other{{s:funfact-player} spenderade {d:funfact-d1} $ den rundan.}}"
+		"funfact_grenades_thrown:f"										"{funfact-d1, plural, one{{s:funfact-player} kastade {d:funfact-d1} granat den rundan.} other{{s:funfact-player} kastade {d:funfact-d1} granater den rundan.}}"
+		"funfact_used_all_ammo:f"										"{s:funfact-player} fick helt slut på ammunition."
+		"funfact_survived_multiple_attackers:f"							"{funfact-d1, plural, one{{s:funfact-player} överlevde attacker från {d:funfact-d1} fiende.} other{{s:funfact-player} överlevde attacker från {d:funfact-d1} olika fiender.}}"
+		"funfact_died_from_multiple_attackers:f"						"{funfact-d1, plural, one{{s:funfact-player} dog efter att ha tagit skada från {d:funfact-d1} fiende.} other{{s:funfact-player} dog efter att ha tagit skada från {d:funfact-d1} fiender.}}"
+		"funfact_defended_bomb:f"										"{funfact-d1, plural, one{{s:funfact-player} försvarade den utplacerade bomben från {d:funfact-d1} fiende.} other{{s:funfact-player} försvarade den utplacerade bomben från {d:funfact-d1} fiender.}}"
+		"funfact_items_dropped_value:f"									"{funfact-d1, plural, one{{s:funfact-player} slängde bort material till ett värde av {d:funfact-d1} $.} other{{s:funfact-player} slängde bort material till ett värde av {d:funfact-d1} $.}}"
+		"funfact_kill_wounded_enemies:f"								"{funfact-d1, plural, one{{s:funfact-player} gjorde slut på {d:funfact-d1} skadad fiende.} other{{s:funfact-player} gjorde slut på {d:funfact-d1} skadade fiender.}}"
+		"funfact_damage_multiple_enemies:f"								"{funfact-d1, plural, one{{s:funfact-player} skadade {d:funfact-d1} fiende.} other{{s:funfact-player} skadade {d:funfact-d1} fiender.}}"
+		"funfact_used_multiple_weapons:f"								"{funfact-d1, plural, one{{s:funfact-player} använde {d:funfact-d1} skjutvapen.} other{{s:funfact-player} använde {d:funfact-d1} olika skjutvapen.}}"
+		"funfact_terrorist_accuracy:f"									"{funfact-d1, plural, one{Terroristerna hade högst träffsäkerhet med {d:funfact-d1} %.} other{Terroristerna hade högst träffsäkerhet med {d:funfact-d1} %.}}"
+		"funfact_ct_accuracy:f"											"{funfact-d1, plural, one{Antiterroristerna hade högst träffsäkerhet med {d:funfact-d1} %.} other{Antiterroristerna hade högst träffsäkerhet med {d:funfact-d1} %.}}"
+		"funfact_ct_win_no_kills:f"										"Antiterroristerna vann utan att döda några terrorister."
+		"funfact_t_win_no_kills:f"										"Terroristerna vann utan att döda några antiterrorister."
+		"funfact_t_win_no_casualties:f"									"Terroristerna vann utan att drabbas av några dödsfall."
+		"funfact_ct_win_no_casualties:f"								"Antiterroristerna vann utan att drabbas av några dödsfall."
+		"funfact_best_terrorist_accuracy:f"								"{funfact-d1, plural, one{{s:funfact-player} hade en träffsäkerhet på {d:funfact-d1} % och lagets träffsäkerhet låg på {d:funfact-d2} %.} other{{s:funfact-player} hade en träffsäkerhet på {d:funfact-d1} % och lagets träffsäkerhet låg på {d:funfact-d2} %.}}"
+		"funfact_best_counterterrorist_accuracy:f"						"{funfact-d1, plural, one{{s:funfact-player} hade en träffsäkerhet på {d:funfact-d1} % och lagets träffsäkerhet låg på {d:funfact-d2} %.} other{{s:funfact-player} hade en träffsäkerhet på {d:funfact-d1} % och lagets träffsäkerhet låg på {d:funfact-d2} %.}}"
+		"funfact_fallback1:f"											"Tårtan är en lögn."
+		"funfact_fallback2:f"											"Gäsp."
+		"funfact_draw:f"												"Matchen startades om baserat på spelarröster."
+		"funfact_broke_windows:f"										"{funfact-d1, plural, one{{s:funfact-player} krossade {d:funfact-d1} fönster.} other{{s:funfact-player} krossade {d:funfact-d1} fönster.}}"
+		"funfact_nightvision_damage:f"									"{funfact-d1, plural, one{{s:funfact-player} gjorde {d:funfact-d1} skada med mörkerseende aktiverat.} other{{s:funfact-player} gjorde {d:funfact-d1} skada med mörkerseende aktiverat.}}"
+		"funfact_defused_with_dropped_kit:f"							"{s:funfact-player} desarmerade bomben med ett upphittat desarmeringsset."
+		"funfact_killed_half_of_enemies:f"								"{funfact-d1, plural, one{{s:funfact-player} dödade {d:funfact-d1} % av fiendelaget.} other{{s:funfact-player} dödade {d:funfact-d1} % av fiendelaget.}}"
+		"funfact_knife_level_reached:f"									"{funfact-d1, plural, one{{d:funfact-d1} spelare nådde guldknivnivå.} other{{d:funfact-d1} spelare nådde guldknivnivå.}}"
+		"funfact_killed_before_dying:f"									"{funfact-d1, plural, one{{s:funfact-player} dog efter att ha dödat {d:funfact-d1} spelare.} other{{s:funfact-player} dog efter att ha dödat {d:funfact-d1} spelare.}}"
+		"funfact_respawned:f"											"{funfact-d1, plural, one{{s:funfact-player} återskapades {d:funfact-d1} gång under matchen.} other{{s:funfact-player} återskapades {d:funfact-d1} gånger under matchen.}}"
+		"funfact_default_weapon:f"										"{s:funfact-player} vann rundan utan att plocka upp några vapen."
+		"funfact_rounds_without_dying:f"								"{funfact-d1, plural, one{{s:funfact-player} klarade sig {d:funfact-d1} runda i sträck utan att dö.} other{{s:funfact-player} klarade sig {d:funfact-d1} rundor i sträck utan att dö.}}"
+		"funfact_taser_kill:f"											"{funfact-d1, plural, one{{s:funfact-player} chockade {d:funfact-d1} spelare med elpistol.} other{{s:funfact-player} chockade {d:funfact-d1} spelare med elpistol.}}"
+		"funfact_ticking_time:f"										"{funfact-d1, plural, one{Terroristerna vann trots att {d:funfact-d1} AT försökte desarmera bomben.} other{Terroristerna vann trots att {d:funfact-d1} AT:er försökte desarmera bomben.}}"
+		"funfact_ct_win_time:f"											"{funfact-d1, plural, one{AT-laget eliminerade T-laget på {d:funfact-d1} sekund.} other{AT-laget eliminerade T-laget på {d:funfact-d1} sekunder.}}"
+		"funfact_ter_win_time:f"										"{funfact-d1, plural, one{Terroristerna eliminerade AT-laget på {d:funfact-d1} sekund.} other{Terroristerna eliminerade AT-laget på {d:funfact-d1} sekunder.}}"
+		"funfact_bots_assumed:f"										"{funfact-d1, plural, one{{s:funfact-player} tog kontroll över {d:funfact-d1} bot den rundan.} other{{s:funfact-player} tog kontroll över {d:funfact-d1} bottar den rundan.}}"
+		"funfact_domination:f"											"{s:funfact-player} dominerade flest spelare."
+		"funfact_revenge:f"												"{funfact-d1, plural, one{{s:funfact-player} hämnades på {d:funfact-d1} spelare.} other{{s:funfact-player} hämnades på {d:funfact-d1} spelare.}}"
+		"funfact_steps_taken:f"											"{funfact-d1, plural, one{{s:funfact-player} tog {d:funfact-d1} steg under matchen.} other{{s:funfact-player} tog {d:funfact-d1} steg under matchen.}}"
+		"funfact_quarter_health:f"										"{funfact-d1, plural, one{{s:funfact-player} dödade {d:funfact-d1} spelare med mindre än 25 i hälsa själv.} other{{s:funfact-player} dödade {d:funfact-d1} spelare med mindre än 25 i hälsa själv.}}"
+		"funfact_empty_guns:f"											"{funfact-d1, plural, one{{s:funfact-player} fick slut på ammunition med {d:funfact-d1} vapen.} other{{s:funfact-player} fick slut på ammunition med {d:funfact-d1} vapen.}}"
+		"funfact_slow_trigger:f"										"{funfact-d1, plural, one{{s:funfact-player} dog utan att skjuta ett enda skott med {d:funfact-d1} vapen.} other{{s:funfact-player} dog utan att skjuta ett enda skott med {d:funfact-d1} vapen.}}"
+		"funfact_pickup_bomb:f"											"{funfact-d1, plural, one{{s:funfact-player} placerade bomben efter att {d:funfact-d1} lagkamrat hade haft den.} other{{s:funfact-player} placerade bomben efter att {d:funfact-d1} lagkamrater hade haft den.}}"
+		"funfact_bomb_carriers:f"										"{funfact-d1, plural, one{{s:funfact-player} dödade {d:funfact-d1} bombbärare i den sista rundan.} other{{s:funfact-player} dödade {d:funfact-d1} olika bombbärare i den sista rundan.}}"
+		"funfact_knife_bomb_planter:f"									"{s:funfact-player} vann på knivnivån genom att döda bombplaceraren."
+		"funfact_bomb_planted_before_kill:f"							"Inga spelare dog innan bomben placerades."
+		"funfact_failed_bomb_plants:f"									"{funfact-d1, plural, one{{d:funfact-d1} terrorist försökte placera bomben den rundan.} other{{d:funfact-d1} terrorister försökte placera bomben den rundan.}}"
+		"funfact_knife_without_ammo:f"									"{funfact-d1, plural, one{{s:funfact-player} knivdödade {d:funfact-d1} efter att ammunitionen hade tagit slut.} other{{s:funfact-player} knivdödade {d:funfact-d1} efter att ammunitionen hade tagit slut.}}"
+		"funfact_molotov_burns:f"										"{funfact-d1, plural, one{{s:funfact-player} satte eld på {d:funfact-d1} spelare.} other{{s:funfact-player} satte eld på {d:funfact-d1} spelare.}}"
+		"funfact_survival_time:f"										"{funfact-d1, plural, one{{s:funfact-player} överlevde längst: {d:funfact-d1} sekund.} other{{s:funfact-player} överlevde längst: {d:funfact-d1} sekunder.}}"
+		"funfact_pulled_trigger:f"										"{funfact-d1, plural, one{{s:funfact-player} tryckte av avtryckaren {d:funfact-d1} gång under matchen.} other{{s:funfact-player} tryckte av avtryckaren {d:funfact-d1} gånger under matchen.}}"
+		"funfact_ace:f"													"Ace! {s:funfact-player} dödade hela fiendelaget."
+		"funfact_defuse_was_close_call_tenths:f"						"{funfact-d1, plural, one{{s:funfact-player} desarmerade bomben med 0,{d:funfact-d1} sekund kvar.} other{{s:funfact-player} desarmerade bomben med 0,{d:funfact-d1} sekunder kvar.}}"
+		"funfact_defuse_was_close_call_hundredths:f"					"{funfact-d1, plural, one{{s:funfact-player} desarmerade bomben med 0,0{d:funfact-d1} sekund kvar.} other{{s:funfact-player} desarmerade bomben med 0,0{d:funfact-d1} sekunder kvar.}}"
+		"funfact_defuse_was_close_call_thousandths:f"					"{funfact-d1, plural, one{{s:funfact-player} desarmerade bomben med 0,00{d:funfact-d1} sekund kvar.} other{{s:funfact-player} desarmerade bomben med 0,00{d:funfact-d1} sekunder kvar.}}"
+		"mapwinrecord_graph_title:f"									"{f:0:wins, plural, one{Senaste segern} other{Senaste segrarna}}"
+		"CSGO_Recipe_Count_Items_Selected:f"							"{count, plural, one{<b>{d:count}</b> föremål valt} other{<b>{d:count}</b> föremål valda}}"
+		"CSGO_Recipe_Count_Items_Remaining:f"							"{count, plural, one{<b>{d:count}</b> föremål kvar} other{<b>{d:count}</b> föremål kvar}}"
+		"CSGO_Recipe_TradeUp_Items_Remain:f"							"{count, plural, one{{d:count} valt för inbyte} other{{d:count} valda för inbyte}}"
+		"CSGO_Recipe_TradeUp_Items_XofY:f"								"{count, plural, one{{d:count}/{d:recipecount} vald för utbyte} other{{d:count}/{d:recipecount} valda för utbyte}}"
+		"CSGO_Recipe_TradeUp_Items_Inv:f"								"{count, plural, one{{d:count} kan bytas in} other{{d:count} kan bytas in}}"
+		"CSGO_RemoveKeychainToolCharges_Reward:f"						"{item_count, plural, one{+{d:item_count} hängesavlägsnare} other{+{d:item_count} hängesavlägsnare}}"
+		"SFUI_Store_Offer_Days_Remaining:f"								"{daysremaining, plural, one{{d:daysremaining} dag kvar.} other{{d:daysremaining} dagar kvar.}}"
+		"SFUI_Store_Offer_Days_Remaining_claim:f"						"{daysremaining, plural, one{{d:daysremaining} dag kvar} other{{d:daysremaining} dagar kvar}}"
+		"SFUI_Store_Offer_Days_Remaining_bid:f"							"{daysremaining, plural, one{{d:daysremaining} dag kvar att bjuda på erbjudandet} other{{d:daysremaining} dagar kvar att bjuda på erbjudandet}}"
+		"SFUI_Store_Offer_Days_Remaining_last_claim:f"					"Sista chansen att göra anspråk på erbjudandet"
+		"SFUI_Store_Offer_Days_Remaining_last_bid:f"					"Sista chansen att bjuda på erbjudandet"
+		"SFUI_Store_Timer_Week:f"										"{f:0:value, plural, one{{f:0:value} vecka} other{{f:0:value} veckor}}"
+		"SFUI_Store_Timer_Day:f"										"{f:0:value, plural, one{{f:0:value} dag} other{{f:0:value} dagar}}"
+		"SFUI_Store_Timer_Hour:f"										"{f:0:value, plural, one{{f:0:value} timme} other{{f:0:value} timmar}}"
+		"SFUI_Store_Timer_Min:f"										"{f:0:value, plural, one{{f:0:value} min.} other{{f:0:value} min.}}"
+		"SFUI_Store_Timer_Sec:f"										"{f:0:value, plural, one{{f:0:value} sek.} other{{f:0:value} sek.}}"
+		"CSGO_Watch_Minute:f"											"{f:0:value, plural, one{{f:0:value} minut} other{{f:0:value} minuter}}"
+		"xpshop_new_items:f"											"{new-count, plural, one{Nytt föremål!} other{Nya föremål!}}"
+		"xpshop_popup_clear_n_tracks:f"									"{completed_tracks_count, plural, one{Ta bort {d:completed_tracks_count} fullbordat pass} other{Ta bort {d:completed_tracks_count} fullbordade pass}}"
+		"xpshop_popup_clear_n_tracks_text:f"							"{completed_tracks_count, plural, one{Du har tjänat alla vapenförrådspoäng från detta pass.<br><br>Om du tar bort vapenförrådspasset kan du aktivera ett nytt. Det påverkar inte ditt nuvarande poängsaldo. } other{You har tjänat alla vapenförrådspoäng från {d:completed_tracks_count} vapenförrådspass.<br><br>Om du rensar dessa {d:completed_tracks_count} vapenförrådspass kan du aktivera nya. Det påverkar inte ditt nuvarande poängsaldo.}}"
+		"xpshop_redeem_bid_batchover:f"									"{hours_until_bid_batch, plural, one{Inga fler bud kan läggas på det här partiet. Vinnande budgivare meddelas efter att auktionen har avslutats. Kom tillbaka imorgon för att bjuda på nästa parti. Budgivningen startar igen om {d:hours_until_bid_batch} timme.} other{Inga fler bud kan läggas på det här partiet. Vinnande budgivare meddelas efter att auktionen har avslutats. Kom tillbaka imorgon för att bjuda på nästa parti. Budgivningen startar igen om {d:hours_until_bid_batch} timmar.}}"
+		"xpshop_redeem_not_enough_stars:f"								"{stars_needed, plural, one{Du behöver {d:stars_needed} vapenförrådspoäng till. Tjäna dem genom att spela med ett aktivt vapenförrådspass.} other{Du behöver {d:stars_needed} vapenförrådspoäng till. Tjäna dem genom att spela med ett aktivt vapenförrådspass.}}"
+		"Panorama_PlayerDetails_Commendations_Left:f"					"{num_token, plural, one{Du kan ge beröm till {d:num_token} mer spelare idag} other{Du kan ge beröm till {d:num_token} fler spelare idag}}"
+		"SFUI_BuyMenu_CanOnlyCarryXGrenades:f"							"{n1, plural, one{Du kan bara bära {s:s1} granat} other{Du kan bara bära {s:s1} granater}}"
+		"SFUI_BuyMenu_MaxItemsOfType:f"									"{n1, plural, one{Du kan bara bära {s:s1} av denna sort} other{Du kan bara bära {s:s1} av denna sort}}"
+		"SFUI_BuyMenu_MaxItemsOfTypePurchased:f"						"{n1, plural, one{Du kan bara köpa {s:s1} av denna sort} other{Du kan bara köpa {s:s1} av denna sort}}"
+		"SFUI_BuyMenu_ReachedWeaponsExpertLimit:f"						"{n1, plural, one{Du har redan köpt {s:s1} den här matchen} other{Du har redan köpt{s:s1} i den här matchen}}"
+		"cs_rating_wins_needed:f"										"{winsneeded, plural, one{Vinn <b>{d:winsneeded}</b> match till} other{Vinn <b>{d:winsneeded}</b> matcher till}}"
+		"cs_rating_wins_needed_verbose:f"								"{winsneeded, plural, one{Vinn <b>{d:winsneeded}</b> ytterligare match för att etablera din CS-rankning.} other{Vinn <b>{d:winsneeded}</b> ytterligare matcher för att etablera din CS-rankning.}}"
+		"cs_rating_wins_needed_verbose_intro:f"							"{winsneeded, plural, one{Vinn <b>{d:winsneeded}</b> match för att etablera din CS-rankning.} other{Vinn <b>{d:winsneeded}</b> matcher för att etablera din CS-rankning.}}"
+		"cs_rating_need_wins:f"											"{wins-needed, plural, one{{d:wins-needed} vinst krävs} other{{d:wins-needed} vinster krävs}}"
+		"wins_count:f"													"{wins, plural, one{{d:wins} vinst} other{{d:wins} vinster}}"
+		"contextmenu_lobby-count:f"										"{lobby_count, plural, one{{d:lobby_count} lobby} other{{d:lobby_count} lobbyer}}"
+		"popup_useitem_button_getkeychaincharges:f"						"{item_count, plural, one{Lägg till <b>{d:item_count}</b> hängesavlägsnare} other{Lägg till <b>{d:item_count}</b> hängesavlägsnare}}"
+		"popup_decodable_rent_weapon_count:f"							"{numlootlist, plural, one{Hyr {d:numlootlist} vapen i sju dagar} other{Hyr {d:numlootlist} vapen i sju dagar}}"
+		"popup_redeem_souvenir_desc:f"									"{redeems, plural, one{<span class=\"get-souvenir-redeem-count\">{d:redeems}</span> souvenirpaket kvar} other{<span class=\"get-souvenir-redeem-count\">{d:redeems}</span> souvenirpaket kvar}}"
+		"matchmaking_stat_avgSearchTimeSeconds:f"						"{s:stat} förväntad söktid"
+		"matchmaking_stat_playersOnline:f"								"{d:stat} spelare online"
+		"matchmaking_stat_playersLockedIn:f"							"{stat, plural, one{{d:stat} spelare av {d:total_stat} bekräftade} other{{d:stat} spelare av {d:total_stat} bekräftade}}"
+		"matchmaking_stat_playersSearching:f"							"{d:stat} spelare söker"
+		"matchmaking_stat_serversOnline:f"								"{d:stat} servrar online"
+		"matchmaking_stat_ongoingMatches:f"								"{d:stat} pågående matcher"
+		"tooltip_skill_group_none:f"									"{winsneeded, plural, one{Vinn <b>{d:winsneeded}</b> match för att få en skicklighetsgrupp i Competitive.} other{Vinn <b>{d:winsneeded}</b> matcher för att få en skicklighetsgrupp i Competitive.}}"
+		"tooltip_cs_rating_none:f"										"{winsneeded, plural, one{Vinn <b>{d:winsneeded}</b> ytterligare match för att etablera din CS-rankning.} other{Vinn <b>{d:winsneeded}</b> ytterligare matcher för att etablera din CS-rankning.}}"
+		"tooltip_skill_group_nonedangerzone:f"							"Skicklighetsgruppen för Danger Zone behöver kalibreras, slutför några Danger Zone-matcher för att fastställa din skicklighetsgrupp."
+		"tooltip_skill_group_wins:f"									"{wins, plural, one{<img src='file://{images}/icons/ui/trophy.svg'  vspace='6' class='player-card-tooltip-icon'/> {d:wins} vinst} other{<img src='file://{images}/icons/ui/trophy.svg'  vspace='6' class='player-card-tooltip-icon'/> {d:wins} vinster}}"
+		"scoreboard_timeline_ot:f"										"{scoreboard_ot, plural, one{Förlängning} other{Förlängning {d:scoreboard_ot}}}"
+		"eom-skillgroup-map-win:f"										"{matcheswon, plural, one{{s:rating_type} {s:map} match vunnen} other{{s:rating_type} {s:map} matcher vunna}}"
+		"WatchMenu_Viewers_dv:f"										"{spectatorCount, plural, one{{d:spectatorCount} tittare} other{{d:spectatorCount} tittare}}"
+		"Panorama_DeathPanel_DamageTaken:f"								"{hits_taken, plural, one{<font color='#A0A0A0'>Skada tagen:  </font><font color='#FFFFFF'><b>{d:damage_taken}</b></font> <font color='#A0A0A0'> med</font> <font color='#FFFFFF'><b>{d:hits_taken} träff </b></font>} other{<font color='#A0A0A0'>Skada tagen:  </font><font color='#FFFFFF'><b>{d:damage_taken}</b></font> <font color='#A0A0A0'> med</font> <font color='#FFFFFF'><b>{d:hits_taken} träffar </b></font>}}"
+		"Panorama_DeathPanel_DamageGiven:f"								"{hits_given, plural, one{<font color='#A0A0A0'>Skada gjord:  </font><font color='#FFFFFF'><b>{d:damage_given}</b></font> <font color='#A0A0A0'> med</font> <font color='#FFFFFF'><b>{d:hits_given} träff </b></font>} other{<font color='#A0A0A0'>Skada gjord:  </font><font color='#FFFFFF'><b>{d:damage_given}</b></font> <font color='#A0A0A0'> med</font> <font color='#FFFFFF'><b>{d:hits_given} träffar </b></font>}}"
+		"mission_directive:f"											"{mission-points, plural, one{<b>{d:mission-points}</b> {s:action}} other{<b>{d:mission-points}</b> {s:actions}}}"
+		"mission_directive_progress:f"									"{mission-points, plural, one{{d:mission-progress}/<b>{d:mission-points}</b> {s:action}} other{{d:mission-progress}/<b>{d:mission-points}</b> {s:actions}}}"
+		"quest_11000_var_desc:f"										"{mission-points, plural, one{Döda en fiende med {s:item1} i <b>{s:gamemode}: {s:location}</b>.} other{Döda fiender med {s:item1} i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11000_var_partial:f"										"... med {s:item1}."
+		"quest_11000_var_ingame:f"										"{mission-points, plural, one{Döda en fiende med {s:item1}.} other{Döda fiender med {s:item1}.}}"
+		"quest_11001_var_desc:f"										"{mission-points, plural, one{Döda en fiende med {s:item1} i <b>{s:gamemode}: {s:location}</b>.} other{Döda fiender med {s:item1} i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11001_var_partial:f"										"... med {s:item1}."
+		"quest_11001_var_ingame:f"										"{mission-points, plural, one{Döda en fiende med {s:item1}} other{Döda fiender med {s:item1}}}"
+		"quest_11002_var_desc:f"										"{mission-points, plural, one{Döda en fiende med {s:item1} i <b>{s:gamemode}: {s:location}</b>.} other{Döda fiender med {s:item1} i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11002_var_partial:f"										"... med {s:item1}."
+		"quest_11002_var_ingame:f"										"{mission-points, plural, one{Döda en fiende med {s:item1}} other{Döda fiender med {s:item1}}}"
+		"quest_11003_var_desc:f"										"{mission-points, plural, one{Döda en fiende med {s:item1} i <b>{s:gamemode}: {s:location}</b>.} other{Döda fiender med {s:item1} i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11003_var_partial:f"										"... med {s:item1}."
+		"quest_11003_var_ingame:f"										"{mission-points, plural, one{Döda en fiende med {s:item1}} other{Döda fiender med {s:item1}}}"
+		"quest_11004_var_desc:f"										"{mission-points, plural, one{Vinn en runda i <b>{s:gamemode}: {s:location}</b>.} other{Vinn rundor i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11004_var_partial:f"										""
+		"quest_11004_var_ingame:f"										"{mission-points, plural, one{Vinn en runda} other{Vinn rundor}}"
+		"quest_11005_var_desc:f"										"{mission-points, plural, one{Vinn en runda i <b>{s:gamemode}: {s:location}</b>.} other{Vinn rundor i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11005_var_partial:f"										""
+		"quest_11005_var_ingame:f"										"{mission-points, plural, one{Vinn en runda} other{Vinn rundor}}"
+		"quest_11006_var_desc:f"										"{mission-points, plural, one{Vinn en runda i <b>{s:gamemode}: {s:location}</b>.} other{Vinn rundor i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11006_var_partial:f"										""
+		"quest_11006_var_ingame:f"										"{mission-points, plural, one{Vinn en runda} other{Vinn rundor}}"
+		"quest_11007_var_desc:f"										"{mission-points, plural, one{Döda en fiende med {s:item1} i <b>{s:gamemode}: {s:location}</b>.} other{Döda fiender med {s:item1} i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11007_var_partial:f"										"... med {s:item1}."
+		"quest_11007_var_ingame:f"										"{mission-points, plural, one{Döda en fiende med {s:item1}} other{Döda fiender med {s:item1}}}"
+		"quest_11008_var_desc:f"										"{mission-points, plural, one{Vinn en runda i <b>{s:gamemode}: {s:location}</b>.} other{Vinn rundor i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11008_var_partial:f"										""
+		"quest_11008_var_ingame:f"										"{mission-points, plural, one{Vinn en runda} other{Vinn rundor}}"
+		"quest_11009_var_desc:f"										"{mission-points, plural, one{Vinn en runda i <b>{s:gamemode}: {s:location}</b>.} other{Vinn rundor i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11009_var_partial:f"										""
+		"quest_11009_var_ingame:f"										"{mission-points, plural, one{Vinn en runda} other{Vinn rundor}}"
+		"quest_11010_var_desc:f"										"{mission-points, plural, one{Döda en fiende med {s:item1} i <b>{s:gamemode}: {s:location}</b>.} other{Döda fiender med {s:item1} i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11010_var_partial:f"										"... med {s:item1}."
+		"quest_11010_var_ingame:f"										"{mission-points, plural, one{Döda en fiende med {s:item1}} other{Döda fiender med {s:item1}}}"
+		"quest_11011_var_desc:f"										"{mission-points, plural, one{Vinn en runda i <b>{s:gamemode}: {s:location}</b>.} other{Vinn rundor i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11011_var_partial:f"										""
+		"quest_11011_var_ingame:f"										"{mission-points, plural, one{Vinn en runda} other{Vinn rundor}}"
+		"quest_11012_var_desc:f"										"{mission-points, plural, one{Vinn en runda i <b>{s:gamemode}: {s:location}</b>.} other{Vinn rundor i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11012_var_partial:f"										""
+		"quest_11012_var_ingame:f"										"{mission-points, plural, one{Vinn en runda} other{Vinn rundor}}"
+		"quest_11013_var_desc:f"										"{mission-points, plural, one{Vinn en runda i <b>{s:gamemode}: {s:location}</b>.} other{Vinn rundor i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11013_var_partial:f"										""
+		"quest_11013_var_ingame:f"										"{mission-points, plural, one{Vinn en runda} other{Vinn rundor}}"
+		"quest_11014_var_desc:f"										"{mission-points, plural, one{Vinn en runda i <b>{s:gamemode}: {s:location}</b>.} other{Vinn rundor i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11014_var_partial:f"										""
+		"quest_11014_var_ingame:f"										"{mission-points, plural, one{Vinn en runda} other{Vinn rundor}}"
+		"quest_11015_var_desc:f"										"{mission-points, plural, one{Vinn en runda i <b>{s:gamemode}: {s:location}</b>.} other{Vinn rundor i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11015_var_partial:f"										""
+		"quest_11015_var_ingame:f"										"{mission-points, plural, one{Vinn en runda} other{Vinn rundor}}"
 }
 
 

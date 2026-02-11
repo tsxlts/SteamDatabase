@@ -102,7 +102,7 @@
 
 		"tooltip_copycrosshair"				"Αντιγραφή στόχαστρου"
 		"GameUI_Xhair_Copy_Code_Confirm"		"Αντικατάσταση τρέχοντος στόχαστρου;"
-
+ 
 		"settings_damage_prediction"			"Πρόβλεψη ζημιάς"
 		"settings_damage_prediction_info"		"Άμεση αναπαραγωγή των ηχητικών και οπτικών εφέ πρόκλησης ζημιάς, χωρίς αναμονή επιβεβαίωσης από τον διακομιστή. Η πρόβλεψη ζημιάς μπορεί να δώσει σημαντικά καλύτερη αίσθηση απόκρισης στους πυροβολισμούς, με το μειονέκτημα ότι μερικές φορές μπορεί να είναι λάθος (π.χ. λόγω της κίνησης της στόχευσης του παίκτη, της επιβράδυνσης κίνησης του παίκτη από πυροβολισμούς ή ενός θανάτου που η εφαρμογή σας δεν γνωρίζει ακόμα). Η πρόβλεψη ζημιάς δεν είναι ενεργή όταν έχετε υψηλό ping."
 		"GameUI_PredictBodyShotEffects"			"Πρόβλεψη εφέ βολών σωμάτων"
@@ -1961,8 +1961,8 @@
 		"Team_Cash_Award_no_income_suicide"					" +$0 ποινή για αυτοκτονία."
 		"Team_Cash_Award_Generic"							" +$%s1 ομαδικό εισόδημα."
 		"Team_Cash_Award_Custom"							" +$%s1 %s2"
-		"Team_Cash_Award_Dead_Terrorists:p{s2}"				" +$%s1 ομαδικό εισόδημα για εξουδετέρωση %s2 τρομοκράτη#|# +$%s1 ομαδικό εισόδημα για εξουδετέρωση %s2 τρομοκρατών"
-		"Team_Cash_Award_Dead_CTs:p{s2}"					" +$%s1 ομαδικό εισόδημα για εξουδετέρωση %s2 μέλους της Αντιτρομοκρατικής#|# +$%s1 ομαδικό εισόδημα για εξουδετέρωση %s2 μελών της Αντιτρομοκρατικής"
+		"Team_Cash_Award_Dead_Terrorists:p"					" +$%s1 ομαδικό εισόδημα για εξουδετέρωση %s2 τρομοκράτη#|# +$%s1 ομαδικό εισόδημα για εξουδετέρωση %s2 τρομοκρατών"
+		"Team_Cash_Award_Dead_CTs:p"						" +$%s1 ομαδικό εισόδημα για εξουδετέρωση %s2 μέλους της Αντιτρομοκρατικής#|# +$%s1 ομαδικό εισόδημα για εξουδετέρωση %s2 μελών της Αντιτρομοκρατικής"
 
 
 		"Notice_Bonus_Shorthanded_Eligibility"			"Η ομάδα σας θα δικαιούται εισόδημα για λιγότερους παίκτες σε %s1 γύρoυς."
@@ -2898,6 +2898,8 @@
 		"official_leaderboard_premier_season1_name"			"Σεζόν Ένα"
 		"official_leaderboard_premier_season2_name"			"Σεζόν Δύο"
 		"official_leaderboard_premier_season3_name"			"Σεζόν Τρία"
+		"official_leaderboard_premier_season4_name"			"Σεζόν Τέσσερα"
+
 		//
 
 		"CSGO_official_leaderboard_mission_embedded"	"Βαθμολογία αποστολής"
@@ -36159,10 +36161,120 @@
 		
 		"PaintKit_cue_stratosphere"							"Έχει βαφεί ειδικά με διαστημόπλοια σε τροχιά γύρω από έναν πλανήτη στο απώτερο διάστημα.\n\n<i>«Μια μέρα στο όχι και τόσο μακρινό μέλλον…»</i>"
 		"PaintKit_cue_stratosphere_Tag"						"Stratosphere"
-"PaintKit_soe_ddpat_swirl_bw_Tag"					"Dizzy"
+		
+		// ACHROMA COLLECTION
+		"PaintKit_soe_ddpat_swirl_bw"						"Έχει εφαρμοστεί ένα μοτίβο καμουφλάζ με πίξελ (DDPAT) σε αποχρώσεις του γκρι.\n\n<i>Γύρω γύρω όλοι</i>"
+		"PaintKit_soe_ddpat_swirl_bw_Tag"					"Dizzy"
 
 		"PaintKit_hye_car_wrap_bizon"						"Έχει εφαρμοστεί ένα μοτίβο σε αποχρώσεις του γκρι.\n\n<i>Γρήγορα, παρακαλώ!</i>"
 		"PaintKit_hye_car_wrap_bizon_Tag"					"Bizoom"
+
+		"PaintKit_soe_acrylic_flow3"						"Έχει εφαρμοστεί ένα μοτίβο με «νερά» ακρυλικού χρώματος σε αποχρώσεις του γκρι.\n\n<i>Τελικά, όλα μπαίνουν στη θέση τους</i>"
+		"PaintKit_soe_acrylic_flow3_Tag"					"Silver Pour"
+
+		"PaintKit_hye_comic_shapes"							"Έχει εφαρμοστεί ένα μοτίβο σε αποχρώσεις του γκρι με γυαλιστερή ασημί βαφή.\n\n<i>«Το κόκκινο φως σημαίνει ότι καταγράφει»</i>"
+		"PaintKit_hye_comic_shapes_Tag"						"Sans Comic"
+
+		"PaintKit_hye_chrome_ripple"						"Έχει εφαρμοστεί ένα μοτίβο σε αποχρώσεις του γκρι.\n\n<i>Μια ρωγμή στον χρόνο</i>"
+		"PaintKit_hye_chrome_ripple_Tag"					"Zinc"
+
+		"PaintKit_hye_car_wrap_3"							"Έχει εφαρμοστεί ένα μοτίβο με γωνίες σε αποχρώσεις του γκρι.\n\n<i>Πλούσιο εσωτερικό, κατάλληλο για σκληρό εξωτερικό</i><i>"
+		"PaintKit_hye_car_wrap_3_Tag"						"Sleet"
+
+		"PaintKit_hye_geobirds"								"Έχει εφαρμοστεί ένα μοτίβο σε αποχρώσεις του γκρι που αναδεικνύεται από ασημένια πουλιά.\n\n<i>Πώς είναι η θέα εκεί πάνω;</i>"
+		"PaintKit_hye_geobirds_Tag"							"Currents"
+
+		"PaintKit_hye_mp5_car_wrap4"						"Έχει εφαρμοστεί ένα μοτίβο με αυστηρά, γωνιώδη σχέδια σε αποχρώσεις του γκρι.\n\n<i>Δεν σε πτοεί τίποτα</i>"
+		"PaintKit_hye_mp5_car_wrap4_Tag"					"Snow Splash"
+
+		"PaintKit_soe_bw_blast"								"Έχει βαφεί με ένα μοτίβο ξύλου χρησιμοποιώντας γυαλιστερή βαφή.\n\n<i>Ορίστε, ένα τσεκούρι για να ακονίσεις… – Booth, έμπορος όπλων</i>"
+		"PaintKit_soe_bw_blast_Tag"							"Vendetta"
+
+		"PaintKit_hye_abstract_knot_m4"						"Έχει εφαρμοστεί ένα αφηρημένο μοτίβο κόμπων σε αποχρώσεις του γκρι.\n\n<i>Άσε τον αέρα να σε παρασύρει</i>"
+		"PaintKit_hye_abstract_knot_m4_Tag"					"Aeolian Dark"
+
+		"PaintKit_soch_smoke_grips"							"Η λαβή έχει βαφεί με ένα σκούρο μοτίβο με «νερά» ακρυλικού χρώματος.\n\n<i>Λεφτά από τζάκι</i>"
+		"PaintKit_soch_smoke_grips_Tag"						"Dark Chamber"
+
+		"PaintKit_soe_aug_creep"							"Έχει βαφτεί με μπλεγμένα κλαδιά και πουλιά πάνω σε ασημί βάση.\n\n<i>«Κουρνιάζουν…»</i>"
+		"PaintKit_soe_aug_creep_Tag"						"Creep"
+
+		"PaintKit_hye_abstract_knot"						"Έχει εφαρμοστεί ένα αφηρημένο μοτίβο κόμπων σε αποχρώσεις του γκρι.\n\n<i>Άσε τον αέρα να σε παρασύρει</i>"
+		"PaintKit_hye_abstract_knot_Tag"					"Aeolian Light"
+
+		"PaintKit_hye_car_wrap"								"Έχει εφαρμοστεί ένα μοτίβο σε αποχρώσεις του γκρι.\n\n<i>Από τις σελίδες του αγαπημένου σας κόμικ μυθιστορήματος</i>"
+		"PaintKit_hye_car_wrap_Tag"							"The Daily Deagle"
+
+		"PaintKit_soe_p2000_grips"							"Έχει εφαρμοστεί ένα μοτίβο χρησιμοποιώντας διαφορετικά επίπεδα ασημί γυαλάδας. Μέρη της λαβής έχουν βαφτεί με σκούρα, ματ βαφή που μοιάζει με αυτοκόλλητη ταινία.\n\n<i>Κράτα γερά!</i>"
+		"PaintKit_soe_p2000_grips_Tag"						"Grip Tape"
+
+		"PaintKit_hye_zeds"									"Έχει εφαρμοστεί ένα μοτίβο σε αποχρώσεις του γκρι με δυναμικά σχέδια σε σχήμα «Ζ» πάνω σε βάση από ανθρακόνημα.\n\n<i>+5 ταχύτητα χειρισμού όπλου</i>"
+		"PaintKit_hye_zeds_Tag"								"Breakthrough"
+
+		"PaintKit_ht_white_edges"							"Έχει εφαρμοστεί ένα μοτίβο κύκλων σε αποχρώσεις του γκρι κάτω από ένα ολογραφικό σχέδιο.\n\n<i>Χάρτες με γραφικά για ολογραφικά συστήματα</i>"
+		"PaintKit_ht_white_edges_Tag"						"Trace Lock"
+
+		"PaintKit_soe_bw_the_end_awp"						"Έχει βαφεί ειδικά σε μελιτζανί και λευκό, με φλόγες, τριαντάφυλλα και το κείμενο «the end» μπροστά από τη σκανδάλη.\n\n<i>Μια ιστορία με δύο πλευρές</i>"
+		"PaintKit_soe_bw_the_end_awp_Tag"					"The End"
+
+		// EXUBERANT COLLECTION
+		"PaintKit_hye_animal_print_lc"						"Έχει εφαρμοστεί ένα καφέ μοτίβο σε στιλ «άνιμαλ πριντ».\n\n<i>Είχες πει «μερικά ζώα», όχι «όλο το ζωικό βασίλειο»</i>"
+		"PaintKit_hye_animal_print_lc_Tag"					"Safari Print"
+
+		"PaintKit_hye_firework_patches_famas"				"Έχει εφαρμοστεί ένα χρυσό μοτίβο έκρηξης.\n\n<i>«Οι κουλ τύποι δεν κοιτούν τις εκρήξεις»</i>"
+		"PaintKit_hye_firework_patches_famas_Tag"			"Byproduct"
+
+		"PaintKit_hye_geobirds_sunrise"						"Έχουν εφαρμοστεί ασημί πουλιά πάνω από ένα μοτίβο στο χρώμα του κρασιού.\n\n<i>Πώς είναι η θέα από 'κει πάνω;</i>"
+		"PaintKit_hye_geobirds_sunrise_Tag"					"Thermal Currents"
+
+		"PaintKit_hye_batik_eyes"							"Έχει εφαρμοστεί ένα μοτίβο με φύλλα μπανανιάς, σε πορφυρό και μαύρο χρώμα.\n\n<i>Κινούμενοι στόχοι</i>"
+		"PaintKit_hye_batik_eyes_Tag"						"Crimson Batik"
+
+		"PaintKit_hye_paisley_desat"						"Έχει βαφεί με ένα χρυσό μοτίβο με λαχούρια, πάνω από μια βάση στο χρώμα του κρασιού.\n\n<i>Μόνο τα καλύτερα υφάσματα για σένα, Μπουθ – Yukako, Οπλοποιός</i>"
+		"PaintKit_hye_paisley_desat_Tag"					"Honey Paisley"
+
+		"PaintKit_soch_copper_accent_revolver"				"Η λαβή έχει βαφεί με ένα δαμασκηνί μοτίβο με «νερά» ακρυλικού χρώματος.\n\n<i>Απαλά νερά</i>"
+		"PaintKit_soch_copper_accent_revolver_Tag"			"Mauve Aside"
+
+		"PaintKit_soe_yellow_bits"							"Οι αυλακώσεις αυτού του MP9, το οποίο στο μεγαλύτερο μέρος του είναι ασημί, έχουν γεμιστεί με κίτρινη και κόκκινη βαφή.\n\n<i>Δεν το σταματάει τίποτα!</i>"
+		"PaintKit_soe_yellow_bits_Tag"						"Bee-Tron"
+
+		"PaintKit_hye_test_animal_print_45"					"Έχει εφαρμοστεί ένα χρυσοκάστανο, καφέ και κόκκινο μοτίβο σε στιλ «άνιμαλ πριντ».\n\n<i>Είχες πει «μερικά ζώα», όχι «όλο το ζωικό βασίλειο»</i>"
+		"PaintKit_hye_test_animal_print_45_Tag"				"Warm Blooded"
+
+		"PaintKit_hye_paisley_warm"							"Έχει εφαρμοστεί ένα μοτίβο με λαχούρια, σε χρώμα κόκκινο και πορτοκαλί.\n\n<i>Μόνο τα καλύτερα υφάσματα για σένα, Μπουθ – Yukako, Οπλοποιός</i>"
+		"PaintKit_hye_paisley_warm_Tag"						"Coral Paisley"
+
+		"PaintKit_soe_red"									"Έχει εφαρμοστεί ένα κόκκινο μοτίβο με το γράμμα «X» σε διάφορες θέσεις.\n\n<i>Είναι λίγο υπερβολικό, αλλά αυτό δεν είναι το νόημα; – Imogen, Εκπαιδευόμενος έμπορος όπλων</i>"
+		"PaintKit_soe_red_Tag"								"Picnic"
+
+		"PaintKit_hye_batik_eyes_tec9"						"Έχει εφαρμοστεί ένα μοτίβο με φύλλα μπανανιάς, σε κίτρινο και μαύρο χρώμα.\n\n<i>Πλούσιο σε κάλιο</i>"
+		"PaintKit_hye_batik_eyes_tec9_Tag"					"Banana Leaf"
+
+		"PaintKit_hye_earth_mandala"						"Έχει εφαρμοστεί ένα πολύχρωμο μοτίβο μάνταλα.\n\n<i>Το ταξίδι είναι που έχει σημασία</i>"
+		"PaintKit_hye_earth_mandala_Tag"					"Sky Mandala"
+
+		"PaintKit_hye_earth_mandala_lc"						"Έχει εφαρμοστεί ένα πολύχρωμο μοτίβο μάνταλα.\n\n<i>Το ταξίδι είναι που έχει σημασία</i>"
+		"PaintKit_hye_earth_mandala_lc_Tag"					"Earth Mandala"
+
+		"PaintKit_soe_yellow_xm"							"Έχει εφαρμοστεί ένα κίτρινο μοτίβο με ασημί λεπτομέρειες στο φινίρισμα.\n\n<i>ΖΖΖΖΖΑΠ!</i>"
+		"PaintKit_soe_yellow_xm_Tag"						"XoooM"
+
+		"PaintKit_soe_pink_cranes"							"Έχει εφαρμοστεί ένα ροζ και λευκό μοτίβο με γερανούς και λουλούδια.\n\n<i>Συνοδεύεται τέλεια με ένα ποτήρι σέρι</i>"
+		"PaintKit_soe_pink_cranes_Tag"						"Fraise Crane"
+
+		"PaintKit_ht_red_edges_fineline"					"Έχει εφαρμοστεί ένα κόκκινο, καλλιγραφικό σχέδιο.\n\n<i>Το θέλω γραπτά</i>"
+		"PaintKit_ht_red_edges_fineline_Tag"				"Calligrafaux"
+
+		"PaintKit_hye_firework_patches"						"Έχει εφαρμοστεί ένα κόκκινο μοτίβο έκρηξης.\n\n<i>«Οι κουλ τύποι δεν κοιτούν τις εκρήξεις»</i>"
+		"PaintKit_hye_firework_patches_Tag"					"Exothermic"
+
+		"PaintKit_soe_purple"								"Έχει εφαρμοστεί ένα μοβ μοτίβο παραλλαγής με μαργαριταρένιο φινίρισμα.\n\n<i>Νέο κοκτέιλ</i>"
+		"PaintKit_soe_purple_Tag"							"Sleeping Potion"
+
+		"PaintKit_hye_animal_print_90s"						"Έχει εφαρμοστεί ένα φωτεινό μοτίβο σε στιλ «άνιμαλ πριντ», σε χρώμα νέον.\n\n<i>Είχες πει «μερικά χρώματα», όχι «όλη τη χρωματική παλέτα»</i>"
+		"PaintKit_hye_animal_print_90s_Tag"					"Party Animal"
+
 // END TIMED DROPS 2025
 
 // LIMITED TIME ITEM
@@ -36170,7 +36282,10 @@
 		"PaintKit_soch_mountains_xm1014"					"Έχει εφαρμοστεί ένα μοτίβο ορεινού εδάφους.\n\n<i>Το να είστε μόνος δεν είναι πρόβλημα, αλλά προνόμιο</i>"
 		"PaintKit_soch_mountains_xm1014_Tag"				"Solitude"
 
-		// END LIMITED TIME ITEM
+		"PaintKit_gsch_ak_djiin"							"Ο κορμός και η κάννη έχουν βαφτεί με μεταλλική βαφή. Ο χειροφυλακτήρας και το πίσω μέρος του κοντακίου έχουν βαφτεί για να μοιάζουν με σεντέφι.\n\n<i>Από άλλη διάσταση</i>"
+		"PaintKit_gsch_ak_djiin_Tag"						"Aphrodite"
+
+// END LIMITED TIME ITEM
 
 		//Recipes
 		"CSGO_Recipe_TradeUp"						"Συμβόλαιο ανταλλαγής"
@@ -36869,7 +36984,12 @@
 		"SFUI_Map_de_rooftop"		"Rooftop"
 		"SFUI_Map_de_transit"		"[Αφαιρέθηκε]"
 
+		"SFUI_Map_de_warden"		"Warden"
+		"SFUI_Map_de_stronghold"	"Stronghold"
+		"SFUI_Map_cs_alpine"		"Alpine"
 		"SFUI_Map_de_poseidon"		"Poseidon"
+		"SFUI_Map_de_sanctum"		"Sanctum"
+
 		"SFUI_Map_workshop_preview_dust2"	"Προεπισκόπηση Dust II"
 		"SFUI_Map_workshop_preview_ancient"	"Προεπισκόπηση Ancient"
 		"SFUI_Map_workshop_preview_inferno"	"Προεπισκόπηση Inferno"
@@ -38747,6 +38867,15 @@
 		"CSGO_Demo_Next_Camera"						"[{s:bind_jump}]: Επόμενη κάμερα"
 		"CSGO_Demo_Toggle_XRay"						"[{s:bind_slot12}]: Ενεργοποίηση ακτίνων Χ"
 		"CSGO_Demo_Toggle_Overview"					"[{s:bind_duck}]: Απενεργοποίηση ακτίνων Χ"
+		"CSGO_Demo_Settings_XRay"					"Ακτίνες X (εναλλαγή με [{s:bind_slot12}])"
+		"CSGO_Demo_Settings_TrueView_Explanation"	"Ανακατασκευάζει την αρχική εμπειρία εφαρμογής εκτελώντας ξανά την πρόβλεψη από την πλευρά της εφαρμογής. Αναδημιουργεί πιο πιστά τις συνθήκες που χρησιμοποιούνται από τον διακομιστή για καταγραφή των χτυπημάτων των σφαιρών."
+		"CSGO_Demo_Settings_TrueView_Enable"		"Ενεργοποίηση TrueView"
+		"CSGO_Demo_Settings_TrueViewDOA"				"Συμπερίληψη ενεργειών «DOA»"
+		"CSGO_Demo_Settings_TrueViewDOA_Explanation"	"Επαναλαμβάνει την πρόβλεψη εντολών από την εφαρμογή που δεν εκτελέστηκαν στον διακομιστή,  επειδή ο παίκτης ήταν νεκρός τη στιγμή που έφτασαν αυτές οι εντολές. Η απενεργοποίησή της κάνει την επανάληψη να διαφέρει από την αρχική εμπειρία, αλλά να ταιριάζει περισσότερο με ό,τι συνέβη στον διακομιστή."
+		"CSGO_Demo_Settings_TrueViewWrongVersion"		"Να επιτρέπεται αναντιστοιχία εκδόσεων demo"
+		"CSGO_Demo_Settings_TrueViewWrongVersion_Explanation"	"Εάν η έκδοση της αρχικής εφαρμογής ήταν διαφορετική από αυτήν που χρησιμοποιήθηκε για την προβολή του demo, το TrueView ενδεχομένως να μην λειτουργεί σωστά. Ενεργοποιήστε αυτήν την επιλογή για να προσπαθήσετε σε κάθε περίπτωση."
+
+
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// Date formatting
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -39178,6 +39307,9 @@
 		"CSGO_Collectible_PremierSeason3Coin"		"Μετάλλιο Premier – Σεζόν Τρία"
 		"CSGO_Collectible_PremierSeason3Coin_Desc"	"Αυτό είναι ένα αναμνηστικό Μετάλλιο Premier που απονέμεται για τη συμμετοχή σας στη Σεζόν Τρία του Premier."
 
+		"CSGO_Collectible_PremierSeason4Coin"		"Μετάλλιο Premier – Σεζόν Τέσσερα"
+		"CSGO_Collectible_PremierSeason4Coin_Desc"	"Αυτό είναι ένα αναμνηστικό Μετάλλιο Premier που απονέμεται για τη συμμετοχή σας στη Σεζόν Τέσσερα του Premier."
+
 		//for main menu display
 		"SFUI_XP_Bonus_1"							"Είναι διαθέσιμος εβδομαδιαίος συντελεστής επιπλέον εμπειρίας!"
 		"SFUI_XP_Bonus_2"							"Αποκτήστε ένα αντικείμενο την επόμενη φορά που θα ανεβείτε επίπεδο!"
@@ -39337,11 +39469,12 @@
 		"xpshop_upsell_mainmenu_2_v2"				"Αποκτήστε πρόσβαση στη νέα Συλλογή Train, τη θήκη Fever, γούρια και πολλά άλλα."
 		"xpshop_upsell_btn"							"Αποκτήστε ένα πάσο"
 		"xpshop_upsell_tooltip"						"Μάθετε περισσότερα για το {s:pass}"
-		"xpshop_new_items"							"Νέα αντικείμενα!"
+
+		"xpshop_new_items:p{new-count}"	"ΝΕΟ ΑΝΤΙΚΕΙΜΕΝΟ!#|#ΝΕΑ ΑΝΤΙΚΕΙΜΕΝΑ!"
 		"xpshop_lootlist_info"						"Η <span class=\"text-color-white\"><b>{s:casename}</b></span> περιέχει ένα από τα ακόλουθα"
 
 		"xpshop_limited_item_variations"			"Παραλλαγές φινιρίσματος"
-		"xpshop_limited_item_variations_tooltip"	"Παραδείγματα πιθανών παραλλαγών που μπορεί να λάβετε όταν εξαργυρώνετε αυτό το αντικείμενο περιορισμένης έκδοσης."
+		"xpshop_limited_item_variations_tooltip"	"Παραδείγματα πιθανών παραλλαγών στον τύπο μοτίβου και τη φθορά που μπορεί να λάβετε όταν εξαργυρώνετε αυτό το αντικείμενο περιορισμένης έκδοσης."
 		"xpshop_pass_activate"						"Ενεργοποίηση πάσου"
 		"xpshop_pass_activate_open_armory"			"Άνοιγμα Οπλοστασίου για ενεργοποίηση"
 		"xpshop_pass_activate_desc"					"Ενεργοποιήστε το πάσο για να αρχίσετε να κερδίζετε Μάρκες Οπλοστασίου"
@@ -41280,8 +41413,8 @@
 		"SFUI_Settings_MiniScoreboardPlayerCount_Tooltip"	"Κατά τη διάρκεια του ενεργού μέρους του γύρου, γίνεται αντικατάσταση των άβαταρ παικτών με το πλήθος των παικτών στο μικρό πίνακα βαθμολογίας."
 
 
-		"Post_Round_Damage_Report_Given:p{s1}"			" • Πρόκληση ζημιάς → %s3: %s2 σε %s1#|# • Πρόκληση ζημιάς → %s3: %s2 σε %s1"
-		"Post_Round_Damage_Report_Taken:p{s1}"			" • Λήψη ζημιάς ← %s3: %s2 σε %s1#|# • Λήψη ζημιάς ← %s3: %s2 σε %s1"
+		"Post_Round_Damage_Report_Given:p"			" • Πρόκληση ζημιάς → %s3: %s2 σε %s1#|# • Πρόκληση ζημιάς → %s3: %s2 σε %s1"
+		"Post_Round_Damage_Report_Taken:p"			" • Λήψη ζημιάς ← %s3: %s2 σε %s1#|# • Λήψη ζημιάς ← %s3: %s2 σε %s1"
 
 		"SFUI_TeamOverheadID"					"Εμφάνιση εξοπλισμού ομάδας"
 
@@ -41761,8 +41894,8 @@
 
 		"SFUI_UserAlertNoteType_1"			"Οι διακομιστές σε %s1 αντιμετωπίζουν υψηλό φόρτο."
 		"SFUI_UserAlertNoteType_2"			"Οι διακομιστές σε %s1 είναι εκτός σύνδεσης για συντήρηση."
-		"SFUI_UserAlertNoteType_LowPlayersR:p{players}"	"Αναζητεί μόνο %players% συμβατός παίκτης στην περιοχή: %region%.#|#Αναζητούν μόνο %players% συμβατοί παίκτες στην περιοχή: %region%."
-		"SFUI_UserAlertNoteType_LowPlayersY:p{players}"	"Αναζητεί μόνο %players% συμβατός παίκτης στην περιοχή σας.#|#Αναζητούν μόνο %players% συμβατοί παίκτες στην περιοχή σας."
+		"SFUI_UserAlertNoteType_LowPlayersR:p"	"Αναζητεί μόνο %players% συμβατός παίκτης στην περιοχή: %region%.#|#Αναζητούν μόνο %players% συμβατοί παίκτες στην περιοχή: %region%."
+		"SFUI_UserAlertNoteType_LowPlayersY:p"	"Αναζητεί μόνο %players% συμβατός παίκτης στην περιοχή σας.#|#Αναζητούν μόνο %players% συμβατοί παίκτες στην περιοχή σας."
 
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"Αποτυχία σύνδεσης στο παιχνίδι."
 		"SFUI_QMM_ERROR_NotLoggedIn"		"Δεν είστε συνδεδεμένοι στην υπηρεσία εύρεσης παιχνιδιού του Counter-Strike."
@@ -46931,6 +47064,7 @@
 		"prime_unranked"				"Αγώνας χωρίς κατάταξη"
 		"prime_not_enrolled_label"		"Παίκτες χωρίς Prime"
 		"prime_disabled_label"			"Ανενεργό Prime"
+		"matchmaking_expected_wait_time"	"<img src='file://{images}/icons/ui/recent.svg' class='map-selection-info__wait-icon'/>Χρόνος αναμονής {s:time}"
 		"no_steam_group_link"			"Δεν είστε μέλος καμίας ομάδας Steam."
 
 		"permissions_title"					"Ρυθμίσεις δικαιωμάτων"
@@ -47369,11 +47503,14 @@
 		"annotations_local"							"Τοπικός χώρος αποθήκευσης"
 		"annotations_workshop"						"Εργαστήρι"
 		"annotations_official"						"Επίσημοι"
+		"annotations_none"							"Χωρίς οδηγό χάρτη"
 		"Workshop_annotation_title"					"Εργαλείο υποβολής οδηγών χάρτη"
 		"Workshop_annotation_error_title"			"Εισαγάγετε έναν τίτλο για τον οδηγό χάρτη σας."
 		"Workshop_annotation_error_file"			"Εισαγάγετε ένα έγκυρο αρχείο οδηγού χάρτη .txt."
 		"Workshop_annotation_ready"					"Η υποβολή είναι έτοιμη για μεταφόρτωση."		
 		"UI_File_Filter_SupportedAnnotationFormat"	"Αρχεία κειμένου (*.txt)"
+		"annotations_visit_workshop"				"Μετάβαση στο Εργαστήρι ⤤"
+
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Game Mode Desc
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -49626,8 +49763,196 @@
 		"quest_11015_var_desc:p{mission-points}"	 	"Κερδίστε έναν γύρο σε <b>{s:gamemode}: {s:location}</b>.#|#Κερδίστε γύρους σε <b>{s:gamemode}: {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Κερδίστε έναν γύρο#|#Κερδίστε γύρους"
 
-// crow_mask_51509_comment
-// crow_mask_51510_comment
+// crow_mask_51513_comment
+// crow_mask_51514_comment
+
+		"SFUI_PlayerCount_Alive_Left:f"									"{left_side_alive, plural, one{ΖΩΝΤΑΝΟΣ} other{ΖΩΝΤΑΝΟΙ}}"
+		"SFUI_PlayerCount_Alive_Right:f"								"{right_side_alive, plural, one{ΖΩΝΤΑΝΟΣ} other{ΖΩΝΤΑΝΟΙ}}"
+		"funfact_damage_no_kills:f"										"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} προκάλεσε {d:funfact-d1} ζημιά, αλλά δεν σκότωσε κανέναν.} other{Ο παίκτης {s:funfact-player} προκάλεσε {d:funfact-d1} ζημιά, αλλά δεν σκότωσε κανέναν.}}"
+		"funfact_kills_with_single_grenade:f"							"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} χτύπησε {d:funfact-d1} εχθρό με μία χειροβομβίδα.} other{Ο παίκτης {s:funfact-player} χτύπησε {d:funfact-d1} εχθρούς με μία χειροβομβίδα.}}"
+		"funfact_kill_defuser:f"										"Ο παίκτης {s:funfact-player} σταμάτησε επιτυχώς τον αφοπλιστή της βόμβας."
+		"funfact_kill_rescuer:f"										"Ο παίκτης {s:funfact-player} σκότωσε τον διασώστη ομήρων."
+		"funfact_killed_enemies:f"										"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} σκότωσε {d:funfact-d1} εχθρό.} other{Ο παίκτης {s:funfact-player} σκότωσε {d:funfact-d1} εχθρούς.}}"
+		"funfact_first_kill:f"											"{funfact-d1, plural, one{Ο πρώτος σκοτωμός έγινε από τον παίκτη {s:funfact-player} σε μόλις {d:funfact-d1} δευτερόλεπτο.} other{Ο πρώτος σκοτωμός έγινε από τον παίκτη {s:funfact-player} σε μόλις {d:funfact-d1} δευτερόλεπτα.}}"
+		"funfact_first_blood:f"											"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} έχυσε το πρώτο αίμα σε μόλις {d:funfact-d1} δευτερόλεπτο.} other{Ο παίκτης {s:funfact-player} έχυσε το πρώτο αίμα σε μόλις {d:funfact-d1} δευτερόλεπτα.}}"
+		"funfact_short_round:f"											"{funfact-d1, plural, one{Αυτός ο γύρος κράτησε μόλις {d:funfact-d1} δευτερόλεπτο!} other{Αυτός ο γύρος κράτησε μόλις {d:funfact-d1} δευτερόλεπτα!}}"
+		"funfact_best_accuracy:f"										"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} είχε {d:funfact-d1}% ευστοχία.} other{Ο παίκτης {s:funfact-player} είχε {d:funfact-d1}% ευστοχία.}}"
+		"funfact_knife_kills:f"											"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} σκότωσε έναν εχθρό με μαχαίρι σε αυτόν τον γύρο.} other{Ο παίκτης {s:funfact-player} σκότωσε {d:funfact-d1} εχθρούς με μαχαίρι σε αυτόν τον γύρο.}}"
+		"funfact_damage_with_grenade:f"									"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} προκάλεσε {d:funfact-d1} συνολική ζημιά με χειροβομβίδες.} other{Ο παίκτης {s:funfact-player} προκάλεσε {d:funfact-d1} συνολική ζημιά με χειροβομβίδες.}}"
+		"funfact_kills_grenades:f"										"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} σκότωσε {d:funfact-d1} εχθρό με χειροβομβίδες.} other{Ο παίκτης {s:funfact-player} σκότωσε {d:funfact-d1} εχθρούς με χειροβομβίδες.}}"
+		"funfact_blind_kills:f"											"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} σκότωσε έναν εχθρό ενώ ήταν τυφλωμένος.} other{Ο παίκτης {s:funfact-player} σκότωσε {d:funfact-d1} εχθρούς ενώ ήταν τυφλωμένος.}}"
+		"funfact_kills_with_last_round:f"								"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} σκότωσε έναν εχθρό με την τελευταία σφαίρα του γεμιστήρα.} other{Ο παίκτης {s:funfact-player} σκότωσε έναν εχθρό με την τελευταία σφαίρα του γεμιστήρα, {d:funfact-d1} φορές.}}"
+		"funfact_kills_headshots:f"										"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} σκότωσε {d:funfact-d1} εχθρό με κεφαλίδι σε αυτόν τον γύρο.} other{Ο παίκτης {s:funfact-player} σκότωσε {d:funfact-d1} εχθρούς με κεφαλίδι σε αυτόν τον γύρο.}}"
+		"funfact_kills_with_stattrak_weapon:f"							"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} πρόσθεσε {d:funfact-d1} σκοτωμό στα όπλα StatTrak™ του σε αυτόν τον γύρο.} other{Ο παίκτης {s:funfact-player} πρόσθεσε {d:funfact-d1} σκοτωμούς στα όπλα StatTrak™ του σε αυτόν τον γύρο.}}"
+		"funfact_donated_weapons:f"										"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} χάρισε {d:funfact-d1} όπλο σε αυτό τον γύρο.} other{Ο παίκτης {s:funfact-player} χάρισε {d:funfact-d1} όπλα σε αυτό τον γύρο.}}"
+		"funfact_posthumous_kills_with_grenade:f"						"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} σκότωσε έναν εχθρό με χειροβομβίδα αφού πέθανε.} other{Ο παίκτης {s:funfact-player} σκότωσε {d:funfact-d1} εχθρούς με χειροβομβίδα αφού πέθανε.}}"
+		"funfact_num_times_jumped:f"									"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} πήδηξε {d:funfact-d1} φορά σε αυτόν τον γύρο.} other{Ο παίκτης {s:funfact-player} πήδηξε {d:funfact-d1} φορές σε αυτόν τον γύρο.}}"
+		"funfact_fall_damage:f"											"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} έλαβε {d:funfact-d1} ζημιά… από τη Γη.} other{Ο παίκτης {s:funfact-player} έλαβε {d:funfact-d1} ζημιά… από τη Γη.}}"
+		"funfact_items_purchased:f"										"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} αγόρασε {d:funfact-d1} αντικείμενο.} other{Ο παίκτης {s:funfact-player} αγόρασε {d:funfact-d1} αντικείμενα.}}"
+		"funfact_won_as_last_member:f"									"{funfact-d1, plural, one{Ως τελευταίος επιζών στην ομάδα, ο παίκτης {s:funfact-player} σκότωσε {d:funfact-d1} εχθρό και κέρδισε.} other{Ως τελευταίος επιζών στην ομάδα, ο παίκτης {s:funfact-player} σκότωσε {d:funfact-d1} εχθρούς και κέρδισε.}}"
+		"funfact_number_of_overkills:f"									"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} σκότωσε {d:funfact-d1} παίκτη που κυριαρχούσε ήδη.} other{Ο παίκτης {s:funfact-player} σκότωσε {d:funfact-d1} παίκτες που κυριαρχούσαν ήδη.}}"
+		"funfact_shots_fired:f"											"{funfact-d1, plural, one{Αυτό το γύρο, ρίχτηκε {d:funfact-d1} βολή.} other{Αυτό το γύρο, ρίχτηκαν {d:funfact-d1} βολές.}}"
+		"funfact_money_spent:f"											"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} ξόδεψε ${d:funfact-d1} αυτόν το γύρο.} other{Ο παίκτης {s:funfact-player} ξόδεψε ${d:funfact-d1} αυτόν το γύρο.}}"
+		"funfact_grenades_thrown:f"										"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} πέταξε {d:funfact-d1} χειροβομβίδα αυτόν το γύρο.} other{Ο παίκτης {s:funfact-player} πέταξε {d:funfact-d1} χειροβομβίδες αυτόν το γύρο.}}"
+		"funfact_used_all_ammo:f"										"Ο παίκτης {s:funfact-player} ξέμεινε τελείως από πυρομαχικά."
+		"funfact_survived_multiple_attackers:f"							"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} επέζησε σε επιθέσεις από {d:funfact-d1} εχθρό.} other{Ο παίκτης {s:funfact-player} επέζησε σε επιθέσεις από {d:funfact-d1} εχθρούς.}}"
+		"funfact_died_from_multiple_attackers:f"						"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} έλαβε ζημιά από {d:funfact-d1} εχθρό πριν πεθάνει.} other{Ο παίκτης {s:funfact-player} έλαβε ζημιά από {d:funfact-d1} εχθρούς πριν πεθάνει.}}"
+		"funfact_defended_bomb:f"										"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} προστάτεψε την ενεργή βόμβα από {d:funfact-d1} εχθρό.} other{Ο παίκτης {s:funfact-player} προστάτεψε την ενεργή βόμβα από {d:funfact-d1} εχθρούς.}}"
+		"funfact_items_dropped_value:f"									"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} πέταξε εξοπλισμό αξίας ${d:funfact-d1}.} other{Ο παίκτης {s:funfact-player} πέταξε εξοπλισμό αξίας ${d:funfact-d1}.}}"
+		"funfact_kill_wounded_enemies:f"								"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} αποτελείωσε {d:funfact-d1} τραυματισμένο εχθρό.} other{Ο παίκτης {s:funfact-player} αποτελείωσε {d:funfact-d1} τραυματισμένους εχθρούς.}}"
+		"funfact_damage_multiple_enemies:f"								"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} προκάλεσε ζημιά σε {d:funfact-d1} εχθρό.} other{Ο παίκτης {s:funfact-player} προκάλεσε ζημιά σε {d:funfact-d1} εχθρούς.}}"
+		"funfact_used_multiple_weapons:f"								"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} χρησιμοποίησε {d:funfact-d1} όπλο.} other{Ο παίκτης {s:funfact-player} χρησιμοποίησε {d:funfact-d1} διαφορετικά όπλα.}}"
+		"funfact_terrorist_accuracy:f"									"{funfact-d1, plural, one{Οι Τρομοκράτες είχαν καλύτερη ομαδική ευστοχία ({d:funfact-d1}%).} other{Οι Τρομοκράτες είχαν καλύτερη ομαδική ευστοχία ({d:funfact-d1}%).}}"
+		"funfact_ct_accuracy:f"											"{funfact-d1, plural, one{Η Αντιτρομοκρατική είχε καλύτερη ομαδική ευστοχία ({d:funfact-d1}%).} other{Η Αντιτρομοκρατική είχε καλύτερη ομαδική ευστοχία ({d:funfact-d1}%).}}"
+		"funfact_ct_win_no_kills:f"										"Η Αντιτρομοκρατική νίκησε χωρίς να σκοτώσει ούτε έναν τρομοκράτη."
+		"funfact_t_win_no_kills:f"										"Οι Τρομοκράτες νίκησαν χωρίς να σκοτώσουν ούτε ένα μέλος της Αντιτρομοκρατικής."
+		"funfact_t_win_no_casualties:f"									"Οι Τρομοκράτες νίκησαν χωρίς απώλειες."
+		"funfact_ct_win_no_casualties:f"								"Η Αντιτρομοκρατική νίκησε χωρίς απώλειες."
+		"funfact_best_terrorist_accuracy:f"								"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} είχε {d:funfact-d1}% ευστοχία, ενώ η ομάδα του είχε {d:funfact-d2}%.} other{Ο παίκτης {s:funfact-player} είχε {d:funfact-d1}% ευστοχία, ενώ η ομάδα του είχε {d:funfact-d2}%.}}"
+		"funfact_best_counterterrorist_accuracy:f"						"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} είχε {d:funfact-d1}% ευστοχία, ενώ η ομάδα του είχε {d:funfact-d2}%.} other{Ο παίκτης {s:funfact-player} είχε {d:funfact-d1}% ευστοχία, ενώ η ομάδα του είχε {d:funfact-d2}%.}}"
+		"funfact_fallback1:f"											"Η τούρτα είναι ψέμα."
+		"funfact_fallback2:f"											"Ησυχία, τάξη και ασφάλεια."
+		"funfact_draw:f"												"Επανεκκίνηση παιχνιδιού λόγω ψήφων παικτών."
+		"funfact_broke_windows:f"										"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} έσπασε {d:funfact-d1} παράθυρο.} other{Ο παίκτης {s:funfact-player} έσπασε {d:funfact-d1} παράθυρα.}}"
+		"funfact_nightvision_damage:f"									"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} προκάλεσε {d:funfact-d1} ζημιά με ενεργή νυχτερινή όραση.} other{Ο παίκτης {s:funfact-player} προκάλεσε {d:funfact-d1} ζημιά με ενεργή νυχτερινή όραση.}}"
+		"funfact_defused_with_dropped_kit:f"							"Ο παίκτης {s:funfact-player} εξουδετέρωσε τη βόμβα με πεσμένα σύνεργα αφοπλισμού."
+		"funfact_killed_half_of_enemies:f"								"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} σκότωσε το {d:funfact-d1}% της εχθρικής ομάδας.} other{Ο παίκτης {s:funfact-player} σκότωσε το {d:funfact-d1}% της εχθρικής ομάδας.}}"
+		"funfact_knife_level_reached:f"									"{funfact-d1, plural, one{{d:funfact-d1} παίκτης έφτασε στο επίπεδο χρυσού μαχαιριού.} other{{d:funfact-d1} παίκτες έφτασαν στο επίπεδο χρυσού μαχαιριού.}}"
+		"funfact_killed_before_dying:f"									"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} σκότωσε {d:funfact-d1} παίκτη πριν πεθάνει.} other{Ο παίκτης {s:funfact-player} σκότωσε {d:funfact-d1} παίκτες πριν πεθάνει.}}"
+		"funfact_respawned:f"											"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} αναβίωσε {d:funfact-d1} φορά κατά τη διάρκεια του αγώνα.} other{Ο παίκτης {s:funfact-player} αναβίωσε {d:funfact-d1} φορές κατά τη διάρκεια του αγώνα.}}"
+		"funfact_default_weapon:f"										"Ο παίκτης {s:funfact-player} κέρδισε το γύρο χωρίς να σηκώσει κανένα όπλο."
+		"funfact_rounds_without_dying:f"								"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} επέζησε {d:funfact-d1} συνεχόμενο γύρο χωρίς να πεθάνει.} other{Ο παίκτης {s:funfact-player} επέζησε {d:funfact-d1} συνεχόμενους γύρους χωρίς να πεθάνει.}}"
+		"funfact_taser_kill:f"											"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} ηλέκτρισε {d:funfact-d1} παίκτη.} other{Ο παίκτης {s:funfact-player} ηλέκτρισε {d:funfact-d1} παίκτες.}}"
+		"funfact_ticking_time:f"										"{funfact-d1, plural, one{Οι Τρομοκράτες κέρδισαν παρά το ότι {d:funfact-d1} εχθρός προσπάθησε να αφοπλίσει τη βόμβα.} other{Οι Τρομοκράτες κέρδισαν παρά το ότι {d:funfact-d1} εχθροί προσπάθησαν να αφοπλίσουν τη βόμβα.}}"
+		"funfact_ct_win_time:f"											"{funfact-d1, plural, one{Η Αντιτρομοκρατική εξουδετέρωσε τους Τρομοκράτες σε {d:funfact-d1} δευτερόλεπτo.} other{Η Αντιτρομοκρατική εξουδετέρωσε τους Τρομοκράτες σε {d:funfact-d1} δευτερόλεπτα.}}"
+		"funfact_ter_win_time:f"										"{funfact-d1, plural, one{Οι Τρομοκράτες εξουδετέρωσαν την Αντιτρομοκρατική σε {d:funfact-d1} δευτερόλεπτo.} other{Οι Τρομοκράτες εξουδετέρωσαν την Αντιτρομοκρατική σε {d:funfact-d1} δευτερόλεπτα.}}"
+		"funfact_bots_assumed:f"										"{funfact-d1, plural, one{Σε αυτόν τον γύρο, ο παίκτης {s:funfact-player} πήρε τον έλεγχο από {d:funfact-d1} bot.} other{Σε αυτόν τον γύρο, ο παίκτης {s:funfact-player} πήρε τον έλεγχο από {d:funfact-d1} bot.}}"
+		"funfact_domination:f"											"Ο παίκτης {s:funfact-player} κυριάρχησε τους περισσότερους παίκτες."
+		"funfact_revenge:f"												"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} πήρε εκδίκηση από {d:funfact-d1} παίκτη.} other{Ο παίκτης {s:funfact-player} πήρε εκδίκηση από {d:funfact-d1} παίκτες.}}"
+		"funfact_steps_taken:f"											"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} έκανε {d:funfact-d1} βήμα κατά τη διάρκεια του αγώνα.} other{Ο παίκτης {s:funfact-player} έκανε {d:funfact-d1} βήματα κατά τη διάρκεια του αγώνα.}}"
+		"funfact_quarter_health:f"										"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} σκότωσε {d:funfact-d1} παίκτη ενώ είχε λιγότερο από 25 ζωή.} other{Ο παίκτης {s:funfact-player} σκότωσε {d:funfact-d1} παίκτες ενώ είχε λιγότερο από 25 ζωή.}}"
+		"funfact_empty_guns:f"											"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} έμεινε χωρίς σφαίρες σε {d:funfact-d1} όπλο.} other{Ο παίκτης {s:funfact-player} έμεινε χωρίς σφαίρες σε {d:funfact-d1} όπλα.}}"
+		"funfact_slow_trigger:f"										"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} πέθανε χωρίς να πυροβολήσει χρησιμοποιώντας {d:funfact-d1} όπλο.} other{Ο παίκτης {s:funfact-player} πέθανε χωρίς να πυροβολήσει χρησιμοποιώντας {d:funfact-d1} όπλα.}}"
+		"funfact_pickup_bomb:f"											"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} τοποθέτησε τη βόμβα, αφού την κουβάλησε {d:funfact-d1} συμπαίκτης.} other{Ο παίκτης {s:funfact-player} τοποθέτησε τη βόμβα, αφού την κουβάλησαν {d:funfact-d1} συμπαίκτες.}}"
+		"funfact_bomb_carriers:f"										"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} σκότωσε {d:funfact-d1} κουβαλητή βόμβας στον τελευταίο γύρο.} other{Ο παίκτης {s:funfact-player} σκότωσε {d:funfact-d1} κουβαλητές βόμβας στον τελευταίο γύρο.}}"
+		"funfact_knife_bomb_planter:f"									"Ο παίκτης {s:funfact-player} νίκησε στο επίπεδο του μαχαιριού σκοτώνοντας τον εχθρό με τη βόμβα."
+		"funfact_bomb_planted_before_kill:f"							"Δεν σκοτώθηκε κανένας παίκτης πριν τοποθετηθεί η βόμβα."
+		"funfact_failed_bomb_plants:f"									"{funfact-d1, plural, one{{d:funfact-d1} Τρομοκράτης προσπάθησε να τοποθετήσει τη βόμβα σε αυτόν τον γύρο.} other{{d:funfact-d1}Τρομοκράτες προσπάθησαν να τοποθετήσουν τη βόμβα σε αυτόν τον γύρο.}}"
+		"funfact_knife_without_ammo:f"									"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} κατόρθωσε {d:funfact-d1} σκοτωμό με μαχαίρι αφού του τελείωσαν οι σφαίρες.} other{Ο παίκτης {s:funfact-player} κατόρθωσε {d:funfact-d1} σκοτωμούς με μαχαίρι αφού του τελείωσαν οι σφαίρες.}}"
+		"funfact_molotov_burns:f"										"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} πυρπόλησε {d:funfact-d1} παίκτη.} other{Ο παίκτης {s:funfact-player} πυρπόλησε {d:funfact-d1} παίκτες.}}"
+		"funfact_survival_time:f"										"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} έμεινε ζωντανός περισσότερο: {d:funfact-d1} δευτερόλεπτο.} other{Ο παίκτης {s:funfact-player} έμεινε ζωντανός περισσότερο: {d:funfact-d1} δευτερόλεπτα.}}"
+		"funfact_pulled_trigger:f"										"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} τράβηξε τη σκανδάλη {d:funfact-d1} φορά σε αυτόν τον αγώνα.} other{Ο παίκτης {s:funfact-player} τράβηξε τη σκανδάλη {d:funfact-d1} φορές σε αυτόν τον αγώνα.}}"
+		"funfact_ace:f"													"Άσος! Ο παίκτης {s:funfact-player} σκότωσε ολόκληρη την αντίπαλη ομάδα."
+		"funfact_defuse_was_close_call_tenths:f"						"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} αφόπλισε τη βόμβα 0,{d:funfact-d1} δευτερόλεπτα πριν την έκρηξη.} other{Ο παίκτης {s:funfact-player} αφόπλισε τη βόμβα 0,{d:funfact-d1} δευτερόλεπτα πριν την έκρηξη.}}"
+		"funfact_defuse_was_close_call_hundredths:f"					"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} αφόπλισε τη βόμβα 0,0{d:funfact-d1} δευτερόλεπτα πριν την έκρηξη.} other{Ο παίκτης {s:funfact-player} αφόπλισε τη βόμβα 0,0{d:funfact-d1} δευτερόλεπτα πριν την έκρηξη.}}"
+		"funfact_defuse_was_close_call_thousandths:f"					"{funfact-d1, plural, one{Ο παίκτης {s:funfact-player} αφόπλισε τη βόμβα 0,00{d:funfact-d1} δευτερόλεπτα πριν την έκρηξη.} other{Ο παίκτης {s:funfact-player} αφόπλισε τη βόμβα 0,00{d:funfact-d1} δευτερόλεπτα πριν την έκρηξη.}}"
+		"mapwinrecord_graph_title:f"									"{f:0:wins, plural, one{ΠΙΟ ΠΡΟΣΦΑΤΗ ΝΙΚΗ} other{ΠΙΟ ΠΡΟΣΦΑΤΕΣ ΝΙΚΕΣ}}"
+		"CSGO_Recipe_Count_Items_Selected:f"							"{count, plural, one{Επιλέχθηκε <b>{d:count}</b> αντικείμενο} other{Επιλέχθηκαν <b>{d:count}</b> αντικείμενα}}"
+		"CSGO_Recipe_Count_Items_Remaining:f"							"{count, plural, one{Απομένει <b>{d:count}</b> αντικείμενο} other{Απομένουν <b>{d:count}</b> αντικείμενα}}"
+		"CSGO_Recipe_TradeUp_Items_Remain:f"							"{count, plural, one{Επιλέχθηκε {d:count} για ανταλλαγή} other{Επιλέχθηκαν {d:count} για ανταλλαγή}}"
+		"CSGO_Recipe_TradeUp_Items_XofY:f"								"{count, plural, one{Επιλέχθηκε {d:count} / {d:recipecount} για ανταλλαγή} other{Επιλέχθηκαν {d:count} / {d:recipecount} για ανταλλαγή}}"
+		"CSGO_Recipe_TradeUp_Items_Inv:f"								"{count, plural, one{{d:count} έγκυρο για ανταλλαγή} other{{d:count} έγκυρα για ανταλλαγή}}"
+		"CSGO_RemoveKeychainToolCharges_Reward:f"						"{item_count, plural, one{+{d:item_count} Αφαίρεση Γουριού} other{+{d:item_count} Αφαιρέσεις Γουριού}}"
+		"SFUI_Store_Offer_Days_Remaining:f"								"{daysremaining, plural, one{Απομένει {d:daysremaining} ημέρα} other{Απομένουν {d:daysremaining} ημέρες.}}"
+		"SFUI_Store_Offer_Days_Remaining_claim:f"						"{daysremaining, plural, one{Απομένει {d:daysremaining} ημέρα} other{Απομένουν {d:daysremaining} ημέρες}}"
+		"SFUI_Store_Offer_Days_Remaining_bid:f"							"{daysremaining, plural, one{Απομένει {d:daysremaining} ημέρα για να κάνετε μια προσφορά} other{Απομένουν {d:daysremaining} ημέρες για να κάνετε μια προσφορά}}"
+		"SFUI_Store_Offer_Days_Remaining_last_claim:f"					"Τελευταία ευκαιρία για απόκτηση αυτής της προσφοράς"
+		"SFUI_Store_Offer_Days_Remaining_last_bid:f"					"Τελευταία ευκαιρία για να κάνετε προσφορά"
+		"SFUI_Store_Timer_Week:f"										"{f:0:value, plural, one{{f:0:value} εβδομάδα} other{{f:0:value} εβδομάδες}}"
+		"SFUI_Store_Timer_Day:f"										"{f:0:value, plural, one{{f:0:value} ημέρα} other{{f:0:value} ημέρες}}"
+		"SFUI_Store_Timer_Hour:f"										"{f:0:value, plural, one{{f:0:value} ώρα} other{{f:0:value} ώρες}}"
+		"SFUI_Store_Timer_Min:f"										"{f:0:value, plural, one{{f:0:value} λεπτό} other{{f:0:value} λεπτά}}"
+		"SFUI_Store_Timer_Sec:f"										"{f:0:value, plural, one{{f:0:value} δευτ.} other{{f:0:value} δευτ.}}"
+		"CSGO_Watch_Minute:f"											"{f:0:value, plural, one{{f:0:value} λεπτό} other{{f:0:value} λεπτά}}"
+		"xpshop_new_items:f"											"{new-count, plural, one{ΝΕΟ ΑΝΤΙΚΕΙΜΕΝΟ!} other{ΝΕΑ ΑΝΤΙΚΕΙΜΕΝΑ!}}"
+		"xpshop_popup_clear_n_tracks:f"									"{completed_tracks_count, plural, one{Διαγραφή {d:completed_tracks_count} ολοκληρωμένου Πάσου} other{Διαγραφή {d:completed_tracks_count} ολοκληρωμένων Πάσων}}"
+		"xpshop_popup_clear_n_tracks_text:f"							"{completed_tracks_count, plural, one{Έχετε κερδίσει όλες τις Μάρκες Οπλοστασίου από αυτό το πάσο.<br><br>Η διαγραφή αυτού του Πάσου Οπλοστασίου θα σας επιτρέψει να ενεργοποιήσετε ένα νέο. Αυτό δεν θα επηρεάσει το τρέχον υπόλοιπο Μαρκών Οπλοστασίου σας.} other{Έχετε κερδίσει όλες τις Μάρκες Οπλοστασίου από αυτά τα {d:completed_tracks_count} πάσο.<br><br>Η διαγραφή αυτών των {d:completed_tracks_count} Πάσων Οπλοστασίου θα σας επιτρέψει να ενεργοποιήσετε νέα. Αυτό δεν θα επηρεάσει το τρέχον υπόλοιπο Μαρκών Οπλοστασίου σας.}}"
+		"xpshop_redeem_bid_batchover:f"									"{hours_until_bid_batch, plural, one{Η διαδικασία υποβολής προσφορών για αυτήν την παρτίδα έχει κλείσει. Οι νικητές της δημοπρασίας θα ειδοποιηθούν μετά την ολοκλήρωση του διακανονισμού. Επιστρέψτε εδώ αύριο για να υποβάλετε την προσφορά σας για την επόμενη παρτίδα. Η διαδικασία υποβολής προσφορών θα ανοίξει ξανά σε {d:hours_until_bid_batch} ώρα.} other{Η διαδικασία υποβολής προσφορών για αυτήν την παρτίδα έχει κλείσει. Οι νικητές της δημοπρασίας θα ειδοποιηθούν μετά την ολοκλήρωση του διακανονισμού. Επιστρέψτε εδώ αύριο για να υποβάλετε την προσφορά σας για την επόμενη παρτίδα. Η διαδικασία υποβολής προσφορών θα ανοίξει ξανά σε {d:hours_until_bid_batch} ώρες.}}"
+		"xpshop_redeem_not_enough_stars:f"								"{stars_needed, plural, one{Χρειάζεστε ακόμα {d:stars_needed} Μάρκα Οπλοστασίου. Κερδίστε την παίζοντας με ένα ενεργό Πάσο Οπλοστασίου.} other{Χρειάζεστε ακόμα {d:stars_needed} Μάρκες Οπλοστασίου. Κερδίστε τες παίζοντας με ένα ενεργό Πάσο Οπλοστασίου.}}"
+		"Panorama_PlayerDetails_Commendations_Left:f"					"{num_token, plural, one{Μπορείτε να υποβάλετε συστάσεις για άλλον {d:num_token} παίκτη σήμερα} other{Μπορείτε να υποβάλετε συστάσεις για άλλους {d:num_token} παίκτες σήμερα}}"
+		"SFUI_BuyMenu_CanOnlyCarryXGrenades:f"							"{n1, plural, one{Μπορείτε να κουβαλήσετε μόνο {s:s1} χειροβομβίδα} other{Μπορείτε να κουβαλήσετε μόνο {s:s1} χειροβομβίδες}}"
+		"SFUI_BuyMenu_MaxItemsOfType:f"									"{n1, plural, one{Μπορείτε να κουβαλήσετε μόνο {s:s1} αυτού του τύπου} other{Μπορείτε να κουβαλήσετε μόνο {s:s1} αυτού του τύπου}}"
+		"SFUI_BuyMenu_MaxItemsOfTypePurchased:f"						"{n1, plural, one{Μπορείτε να αγοράσετε μόνο {s:s1} αυτού του τύπου} other{Μπορείτε να αγοράσετε μόνο {s:s1} αυτού του τύπου}}"
+		"SFUI_BuyMenu_ReachedWeaponsExpertLimit:f"						"{n1, plural, one{Έχετε ήδη αγοράσει {s:s1} σε αυτόν τον αγώνα} other{Έχετε ήδη αγοράσει {s:s1} σε αυτόν τον αγώνα}}"
+		"cs_rating_wins_needed:f"										"{winsneeded, plural, one{Κερδίστε ακόμα <b>{d:winsneeded}</b> αγώνα} other{Κερδίστε ακόμα <b>{d:winsneeded}</b> αγώνες}}"
+		"cs_rating_wins_needed_verbose:f"								"{winsneeded, plural, one{Κερδίστε <b>{d:winsneeded}</b> επιπλέον αγώνα να καθιερώσετε την Κατάταξη CS σας} other{Κερδίστε <b>{d:winsneeded}</b> επιπλέον αγώνες να καθιερώσετε την Κατάταξη CS σας}}"
+		"cs_rating_wins_needed_verbose_intro:f"							"{winsneeded, plural, one{Κερδίστε <b>{d:winsneeded}</b> αγώνα να καθιερώσετε την Κατάταξη CS σας} other{Κερδίστε <b>{d:winsneeded}</b> αγώνες να καθιερώσετε την Κατάταξη CS σας}}"
+		"cs_rating_need_wins:f"											"{wins-needed, plural, one{Απαιτείται {d:wins-needed} νίκη} other{Απαιτούνται {d:wins-needed} νίκες}}"
+		"wins_count:f"													"{wins, plural, one{{d:wins} νίκη} other{{d:wins} νίκες}}"
+		"contextmenu_lobby-count:f"										"{lobby_count, plural, one{{d:lobby_count} Λόμπι } other{{d:lobby_count} Λόμπι}}"
+		"popup_useitem_button_getkeychaincharges:f"						"{item_count, plural, one{Προσθέστε <b>{d:item_count}</b> Αφαίρεση Γουριού} other{Προσθέστε <b>{d:item_count}</b> Αφαιρέσεις Γουριού}}"
+		"popup_decodable_rent_weapon_count:f"							"{numlootlist, plural, one{Ενοικίαση {d:numlootlist} όπλου για 7 ημέρες} other{Ενοικίαση {d:numlootlist} όπλων για 7 ημέρες}}"
+		"popup_redeem_souvenir_desc:f"									"{redeems, plural, one{Απομένει <span class=\"get-souvenir-redeem-count\">{d:redeems}</span> ευκαιρία απόκτησης Σουβενίρ} other{Απομένουν <span class=\"get-souvenir-redeem-count\">{d:redeems}</span> ευκαιρίες απόκτησης Σουβενίρ}}"
+		"matchmaking_stat_avgSearchTimeSeconds:f"						"{s:stat} εκτιμώμενος χρόνος αναζήτησης"
+		"matchmaking_stat_playersOnline:f"								"{d:stat} συνδεδεμένοι παίκτες"
+		"matchmaking_stat_playersLockedIn:f"							"{stat, plural, one{Έχει επιβεβαιώσει {d:stat} παίκτης από συνολικά {d:total_stat}.} other{Έχουν επιβεβαιώσει {d:stat} παίκτες από συνολικά {d:total_stat}.}}"
+		"matchmaking_stat_playersSearching:f"							"{d:stat} παίκτες σε αναζήτηση"
+		"matchmaking_stat_serversOnline:f"								"{d:stat} ενεργοί διακομιστές"
+		"matchmaking_stat_ongoingMatches:f"								"{d:stat} αγώνες σε εξέλιξη"
+		"tooltip_skill_group_none:f"									"{winsneeded, plural, one{Κερδίστε <b>{d:winsneeded}</b> αγώνα να καθιερώσετε το επίπεδο ικανοτήτων σας στο Ανταγωνιστικό.} other{Κερδίστε <b>{d:winsneeded}</b> αγώνες να καθιερώσετε το επίπεδο ικανοτήτων σας στο Ανταγωνιστικό.}}"
+		"tooltip_cs_rating_none:f"										"{winsneeded, plural, one{Κερδίστε <b>{d:winsneeded}</b> επιπλέον αγώνα να καθιερώσετε την Κατάταξη CS σας.} other{Κερδίστε <b>{d:winsneeded}</b> επιπλέον αγώνες να καθιερώσετε την Κατάταξη CS σας.}}"
+		"tooltip_skill_group_nonewingman:f"								"{winsneeded, plural, one{Κερδίστε <b>{d:winsneeded}</b> αγώνα να καθιερώσετε το επίπεδο ικανοτήτων σας στις Δυάδες} other{Κερδίστε <b>{d:winsneeded}</b> αγώνες να καθιερώσετε το επίπεδο ικανοτήτων σας στις Δυάδες.}}"
+		"tooltip_skill_group_nonedangerzone:f"							"Το επίπεδο ικανοτήτων Ζώνης Κινδύνου πρέπει να βαθμονομηθεί, ολοκληρώστε μερικούς αγώνες Ζώνης Κινδύνου για καθιέρωση του επιπέδου ικανοτήτων σας."
+		"tooltip_skill_group_wins:f"									"{wins, plural, one{<img src='file://{images}/icons/ui/trophy.svg'  vspace='6' class='player-card-tooltip-icon'/> {d:wins} νίκη} other{<img src='file://{images}/icons/ui/trophy.svg'  vspace='6' class='player-card-tooltip-icon'/> {d:wins} νίκες}}"
+		"team-intro-overtime-1st-half:f"								"{overtime_num, plural, one{Παράταση: Πρώτο ημίχρονο} other{Παράταση {d:overtime_num}: Πρώτο ημίχρονο}}"
+		"team-intro-overtime-2nd-half:f"								"{overtime_num, plural, one{Παράταση: Δεύτερο ημίχρονο} other{Παράταση {d:overtime_num}: Δεύτερο ημίχρονο}}"
+		"scoreboard_timeline_ot:f"										"{scoreboard_ot, plural, one{Παράταση} other{Παράταση {d:scoreboard_ot}}}"
+		"eom-skillgroup-win:f"											"{matcheswon, plural, one{Κερδισμένος αγώνας σε {s:rating_type}} other{Κερδισμένοι αγώνες σε {s:rating_type}}}"
+		"eom-skillgroup-map-win:f"										"{matcheswon, plural, one{Κερδισμένος αγώνας {s:rating_type} σε {s:map}} other{Κερδισμένοι αγώνες {s:rating_type} σε {s:map}}}"
+		"eom-skillgroup-needed-wins:f"									"{winsneeded, plural, one{Κερδίστε {d:winsneeded} αγώνα να εμφανίσετε το επίπεδο ικανοτήτων σας.} other{Κερδίστε {d:winsneeded} αγώνες να εμφανίσετε το επίπεδο ικανοτήτων σας.}}"
+		"WatchMenu_Viewers_dv:f"										"{spectatorCount, plural, one{{d:spectatorCount} θεατής} other{{d:spectatorCount} θεατές}}"
+		"Panorama_DeathPanel_DamageTaken:f"								"{hits_taken, plural, one{<font color='#A0A0A0'>Λήψη ζημιάς:  </font><font color='#FFFFFF'><b>{d:damage_taken}</b></font> <font color='#A0A0A0'> από</font> <font color='#FFFFFF'><b>{d:hits_taken} χτύπημα</b></font>} other{<font color='#A0A0A0'>Λήψη ζημιάς:  </font><font color='#FFFFFF'><b>{d:damage_taken}</b></font> <font color='#A0A0A0'> από</font> <font color='#FFFFFF'><b>{d:hits_taken} χτυπήματα</b></font>}}"
+		"Panorama_DeathPanel_DamageGiven:f"								"{hits_given, plural, one{<font color='#A0A0A0'>Πρόκληση ζημιάς:  </font><font color='#FFFFFF'><b>{d:damage_given}</b></font> <font color='#A0A0A0'> από</font> <font color='#FFFFFF'><b>{d:hits_given} χτύπημα</b></font>} other{<font color='#A0A0A0'>Πρόκληση ζημιάς:  </font><font color='#FFFFFF'><b>{d:damage_given}</b></font> <font color='#A0A0A0'> από</font> <font color='#FFFFFF'><b>{d:hits_given} χτυπήματα</b></font>}}"
+		"mission_directive:f"											"{mission-points, plural, one{<b>{d:mission-points}</b> {s:action}} other{<b>{d:mission-points}</b> {s:actions}}}"
+		"mission_directive_progress:f"									"{mission-points, plural, one{{d:mission-progress}/<b>{d:mission-points}</b> {s:action}} other{{d:mission-progress}/<b>{d:mission-points}</b> {s:actions}}}"
+		"quest_11000_var_desc:f"										"{mission-points, plural, one{Κατορθώστε σκοτωμό με {s:item1} σε <b>{s:gamemode}: {s:location}</b>.} other{Κατορθώστε σκοτωμούς με {s:item1} σε <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11000_var_partial:f"										"...με {s:item1}."
+		"quest_11000_var_ingame:f"										"{mission-points, plural, one{Κατορθώστε σκοτωμό με {s:item1}.} other{Κατορθώστε σκοτωμούς με {s:item1}.}}"
+		"quest_11001_var_desc:f"										"{mission-points, plural, one{Κατορθώστε σκοτωμό με {s:item1} σε <b>{s:gamemode}: {s:location}</b>.} other{Κατορθώστε σκοτωμούς με {s:item1} σε <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11001_var_partial:f"										"...με {s:item1}."
+		"quest_11001_var_ingame:f"										"{mission-points, plural, one{Κατορθώστε σκοτωμό με {s:item1}} other{Κατορθώστε σκοτωμούς με {s:item1}}}"
+		"quest_11002_var_desc:f"										"{mission-points, plural, one{Κατορθώστε σκοτωμό με {s:item1} σε <b>{s:gamemode}: {s:location}</b>.} other{Κατορθώστε σκοτωμούς με {s:item1} σε <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11002_var_partial:f"										"...με {s:item1}."
+		"quest_11002_var_ingame:f"										"{mission-points, plural, one{Κατορθώστε σκοτωμό με {s:item1}} other{Κατορθώστε σκοτωμούς με {s:item1}}}"
+		"quest_11003_var_desc:f"										"{mission-points, plural, one{Κατορθώστε σκοτωμό με {s:item1} σε <b>{s:gamemode}: {s:location}</b>.} other{Κατορθώστε σκοτωμούς με {s:item1} σε <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11003_var_partial:f"										"...με {s:item1}."
+		"quest_11003_var_ingame:f"										"{mission-points, plural, one{Κατορθώστε σκοτωμό με {s:item1}} other{Κατορθώστε σκοτωμούς με {s:item1}}}"
+		"quest_11004_var_desc:f"										"{mission-points, plural, one{Κερδίστε έναν γύρο σε <b>{s:gamemode}: {s:location}</b>.} other{Κερδίστε γύρους σε <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11004_var_partial:f"										""
+		"quest_11004_var_ingame:f"										"{mission-points, plural, one{Κερδίστε έναν γύρο} other{Κερδίστε γύρους}}"
+		"quest_11005_var_desc:f"										"{mission-points, plural, one{Κερδίστε έναν γύρο σε <b>{s:gamemode}: {s:location}</b>.} other{Κερδίστε γύρους σε <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11005_var_partial:f"										""
+		"quest_11005_var_ingame:f"										"{mission-points, plural, one{Κερδίστε έναν γύρο} other{Κερδίστε γύρους}}"
+		"quest_11006_var_desc:f"										"{mission-points, plural, one{Κερδίστε έναν γύρο σε <b>{s:gamemode}: {s:location}</b>.} other{Κερδίστε γύρους σε <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11006_var_partial:f"										""
+		"quest_11006_var_ingame:f"										"{mission-points, plural, one{Κερδίστε έναν γύρο} other{Κερδίστε γύρους}}"
+		"quest_11007_var_desc:f"										"{mission-points, plural, one{Κατορθώστε σκοτωμό με {s:item1} σε <b>{s:gamemode}: {s:location}</b>.} other{Κατορθώστε σκοτωμούς με {s:item1} σε <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11007_var_partial:f"										"...με {s:item1}."
+		"quest_11007_var_ingame:f"										"{mission-points, plural, one{Κατορθώστε σκοτωμό με {s:item1}} other{Κατορθώστε σκοτωμούς με {s:item1}}}"
+		"quest_11008_var_desc:f"										"{mission-points, plural, one{Κερδίστε έναν γύρο σε <b>{s:gamemode}: {s:location}</b>.} other{Κερδίστε γύρους σε <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11008_var_partial:f"										""
+		"quest_11008_var_ingame:f"										"{mission-points, plural, one{Κερδίστε έναν γύρο} other{Κερδίστε γύρους}}"
+		"quest_11009_var_desc:f"										"{mission-points, plural, one{Κερδίστε έναν γύρο σε <b>{s:gamemode}: {s:location}</b>.} other{Κερδίστε γύρους σε <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11009_var_partial:f"										""
+		"quest_11009_var_ingame:f"										"{mission-points, plural, one{Κερδίστε έναν γύρο} other{Κερδίστε γύρους}}"
+		"quest_11010_var_desc:f"										"{mission-points, plural, one{Κατορθώστε σκοτωμό με {s:item1} σε <b>{s:gamemode}: {s:location}</b>.} other{Κατορθώστε σκοτωμούς με {s:item1} σε <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11010_var_partial:f"										"...με {s:item1}."
+		"quest_11010_var_ingame:f"										"{mission-points, plural, one{Κατορθώστε σκοτωμό με {s:item1}} other{Κατορθώστε σκοτωμούς με {s:item1}}}"
+		"quest_11011_var_desc:f"										"{mission-points, plural, one{Κερδίστε έναν γύρο σε <b>{s:gamemode}: {s:location}</b>.} other{Κερδίστε γύρους σε <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11011_var_partial:f"										""
+		"quest_11011_var_ingame:f"										"{mission-points, plural, one{Κερδίστε έναν γύρο} other{Κερδίστε γύρους}}"
+		"quest_11012_var_desc:f"										"{mission-points, plural, one{Κερδίστε έναν γύρο σε <b>{s:gamemode}: {s:location}</b>.} other{Κερδίστε γύρους σε <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11012_var_partial:f"										""
+		"quest_11012_var_ingame:f"										"{mission-points, plural, one{Κερδίστε έναν γύρο} other{Κερδίστε γύρους}}"
+		"quest_11013_var_desc:f"										"{mission-points, plural, one{Κερδίστε έναν γύρο σε <b>{s:gamemode}: {s:location}</b>.} other{Κερδίστε γύρους σε <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11013_var_partial:f"										""
+		"quest_11013_var_ingame:f"										"{mission-points, plural, one{Κερδίστε έναν γύρο} other{Κερδίστε γύρους}}"
+		"quest_11014_var_desc:f"										"{mission-points, plural, one{Κερδίστε έναν γύρο σε <b>{s:gamemode}: {s:location}</b>.} other{Κερδίστε γύρους σε <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11014_var_partial:f"										""
+		"quest_11014_var_ingame:f"										"{mission-points, plural, one{Κερδίστε έναν γύρο} other{Κερδίστε γύρους}}"
+		"quest_11015_var_desc:f"										"{mission-points, plural, one{Κερδίστε έναν γύρο σε <b>{s:gamemode}: {s:location}</b>.} other{Κερδίστε γύρους σε <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11015_var_partial:f"										""
+		"quest_11015_var_ingame:f"										"{mission-points, plural, one{Κερδίστε έναν γύρο} other{Κερδίστε γύρους}}"
 }
 
 

@@ -102,7 +102,8 @@
 
 		"tooltip_copycrosshair"				"조준선 복사"
 		"GameUI_Xhair_Copy_Code_Confirm"		"현재 사용 중인 조준선을 덮어쓸까요?"
-
+ 
+		"GameUI_Confirm_Write_Setting_Title"	"설정 변경 요청"
 		"settings_damage_prediction"			"피해 예측"
 		"settings_damage_prediction_info"		"서버의 확인을 기다리지 않고 피해 발생 즉시 음향 및 시각 효과를 재생합니다. 피해 예측을 사용하면 사격 반응도가 상당히 크게 향상되지만, 클라이언트가 아직 인식하지 못한 피해 화면 효과, 움직임 둔화 효과, 사망으로 인해 가끔 오류가 발생할 위험이 있습니다. 핑이 높으면 피해 예측이 사용되지 않습니다."
 		"GameUI_PredictBodyShotEffects"			"바디샷 효과 예측"
@@ -1961,8 +1962,8 @@
 		"Team_Cash_Award_no_income_suicide"					" +$0: 자살 페널티"
 		"Team_Cash_Award_Generic"							" +$%s1 팀 보상"
 		"Team_Cash_Award_Custom"							" +$%s1 %s2"
-		"Team_Cash_Award_Dead_Terrorists:p{s2}"				" +$%s1 테러리스트 %s2명 처치 팀 보상"
-		"Team_Cash_Award_Dead_CTs:p{s2}"					" +$%s1 대테러부대 %s2명 처치 팀 보상"
+		"Team_Cash_Award_Dead_Terrorists:p"					" +$%s1 테러리스트 %s2명 처치 팀 보상"
+		"Team_Cash_Award_Dead_CTs:p"						" +$%s1 대테러부대 %s2명 처치 팀 보상"
 
 
 		"Notice_Bonus_Shorthanded_Eligibility"			" %s1라운드 안에 팀원 부족 보상 획득 가능"
@@ -2139,6 +2140,8 @@
 		"CS_DeathNemesis"			"강적"
 		"CS_DeathNewNemesis"		"새로운 강적"
 		"CS_DeathRevenge"			"복수"
+
+		"DeathNotice_Prescient_Attacker"	"(서버에서 사망한 상태)"
 
 		// Game Instructor Messages
 
@@ -31193,7 +31196,7 @@
 		"PaintKit_cu_money"							"미국의 백달러 지폐 무늬를 수전사 방식으로 입혔습니다.\n\n<i>돈은 말하지 않는다... 죽일 뿐이다.</i>"
 		"PaintKit_cu_money_Tag"						"프랭클린"
 		
-		"PaintKit_so_orca"							"각 부품이 흑백 색채 배합의 단색으로 도색했습니다.\n\n<i>정장을 입고 세련된 전투를 해야 할 때라면</i>"
+		"PaintKit_so_orca"							"각 부품을 무채색 계열의 페인트로 도색했습니다.\n\n정장을 입고 펼쳐야 하는 세련된 전투를 위해."
 		"PaintKit_so_orca_Tag"						"턱시도"
 		
 		"PaintKit_am_army_shine"					"이 무기에는 위장 무늬를 찍은 뒤 금속성 도료를 첨가한 호일이 덮여 있습니다.\n\n<i>네가 받은 훈련을 잊지 마라</i>"
@@ -32746,7 +32749,7 @@
 	"PaintKit_gs_ump_abyss"										"청록색을 도색하여 사실적인 3차원 효과를 주었습니다.\n\n<i>차곡차곡</i>"
 	"PaintKit_gs_ump_abyss_Tag"									"사형집행"
 
-	"PaintKit_cu_usps_noir"										"흑백의 배경 위에 파란색과 자홍색으로 그려진 여성의 모습으로 커스텀 페인팅되었습니다.\n\n<i>'네온 불빛에 흠뻑 젖은 그녀는 하늘을 찌르는 듯한 마천루 아래 누워 있다.'</i>"
+	"PaintKit_cu_usps_noir"										"무채색의 배경 위에 파란색과 자홍색으로 그려진 여성의 모습으로 커스텀 페인팅되었습니다.\n\n<i>'네온 불빛에 흠뻑 젖은 그녀는 하늘을 찌르는 듯한 마천루 아래 누워 있다.'</i>"
 	"PaintKit_cu_usps_noir_Tag"									"네오 누와르"
 
 	"PaintKit_aq_xm_leaf_fade"										"다양한 색상의 무작위 나뭇잎 패턴을 도색했습니다.\n\n<i>봄, 여름, 가을, 드물게 겨울</i>"
@@ -32887,7 +32890,7 @@
 	"PaintKit_aa_glock_18_urban_moon_fever"										"무작위로 도색된 도시 전경의 모습이 보름달과 보라색 밤하늘에게 자리를 내어 주었습니다.\n\n<i>북극성을 보아라</i>"
 	"PaintKit_aa_glock_18_urban_moon_fever_Tag"									"월출"
 
-	"PaintKit_cu_m4a4_neo_noir"										"그레이 스케일 바탕에 블루-마젠타 색상으로 여성 디자인을 도색했습니다.\n\n<i>\"그녀는 닥치는 대로 움켜쥐고 썩어가는 지옥으로 사라져 갔습니다.\"</i>"
+	"PaintKit_cu_m4a4_neo_noir"										"무채색 바탕에 블루-마젠타 색상으로 여성 디자인을 도색했습니다.\n\n<i>\"그녀는 닥치는 대로 움켜쥐고 썩어가는 지옥으로 사라져 갔습니다.\"</i>"
 	"PaintKit_cu_m4a4_neo_noir_Tag"									"네오 누와르"
 
 	"PaintKit_gs_mp7_bloodsport"										"붉은색과 검은색 바탕을 수전사 방식으로 입히고 흰색 로고 데칼로 장식했습니다.\n\n입대용 공간"
@@ -32902,7 +32905,7 @@
 	"PaintKit_gs_nova_anchorite"										"포스트 아포칼립스의 모습이 떠오르도록 맞춤 도색했습니다.\n\n<i>내 총이 곧 법이다</i>"
 	"PaintKit_gs_nova_anchorite_Tag"									"와일드 식스"
 
-	"PaintKit_cu_p2000_urban_hazard"										"그레이스케일의 위장 무늬 그립과 빨간색 슬라이드로 도색했습니다.\n\n이곳부터는 안전모 착용 필수"
+	"PaintKit_cu_p2000_urban_hazard"										"무채색 위장 무늬 그립과 빨간색 슬라이드로 도색했습니다.\n\n이곳부터는 안전모 착용 필수"
 	"PaintKit_cu_p2000_urban_hazard_Tag"									"위험한 도시"
 
 	"PaintKit_gs_revolver_tread"										"금속은 꼼꼼하게 압착했으며 손잡이를 무늬가 있는 파란색 고무로 코팅했습니다.\n\n<i>모든 적은 못과 같다.</i>"
@@ -33176,7 +33179,7 @@
 
 // SET_NUKE
 
-	"PaintKit_hy_blueprint_white"									"원자력 발전소 느낌의 회색 패턴을 수전사 방식으로 입혔습니다.\n\n'당신의 진입 포인트는 환기구입니다.'"
+	"PaintKit_hy_blueprint_white"									"원자력 발전소 느낌의 무채색 패턴을 수전사 방식으로 입혔습니다.\n\n'당신의 진입 포인트는 환기구입니다.'"
 	"PaintKit_hy_blueprint_white_Tag"								"시설 도면"
 
 	"PaintKit_hy_blueprint_aqua"									"원자력 발전소 느낌의 파란색과 노란색 패턴을 수전사 방식으로 입혔습니다.\n\n격납 건물의 이면"
@@ -33188,7 +33191,7 @@
 	"PaintKit_hy_blueprint_bluered"									"원자력 발전소 느낌의 파란색 패턴을 수전사 방식으로 입혔습니다.\n\n불을 꺼라."
 	"PaintKit_hy_blueprint_bluered_Tag"								"어두운 도면"
 	
-	"PaintKit_am_circuitboard_silver"								"회로기판 패턴을 흑백으로 도색했습니다.\n\n<i>모든 것의 중심으로.</i>"
+	"PaintKit_am_circuitboard_silver"								"회로기판 패턴을 무채색으로 도색했습니다.\n\n<i>모든 것의 중심으로.</i>"
 	"PaintKit_am_circuitboard_silver_Tag"							"메인프레임"
 	
 	"PaintKit_am_circuitboard_aqua"									"파란색 회로기판 패턴을 도색했습니다.\n\n<i>조용히 보충함</i>"
@@ -33206,7 +33209,7 @@
 	"PaintKit_hy_ducts_green"										"슬라이드에 서로 엮인 청록색의 파이프 패턴을 수전사 방식으로 입힌 것이 특징입니다.\n\n휴대용 열 차단 장치"
 	"PaintKit_hy_ducts_green_Tag"									"냉각수"
 
-	"PaintKit_hy_ducts_grey"										"파이프가 서로 엮여 있는 듯한 회색 패턴을 수전사 방식으로 입혔습니다.\n\n<i>쏠 때마다 라운드 정비</i>"
+	"PaintKit_hy_ducts_grey"										"파이프가 서로 엮여 있는 듯한 무채색 패턴을 수전사 방식으로 입혔습니다.\n\n<i>쏠 때마다 라운드 정비</i>"
 	"PaintKit_hy_ducts_grey_Tag"									"맨드릴"
 	
 	"PaintKit_hy_ducts_blue"										"파이프들이 서로 엮여 있는 듯한 패턴을 수전사 방식으로 입혔습니다.\n\n내 삶을 너에게"
@@ -33249,7 +33252,7 @@
 	"PaintKit_cu_ump_arrows"										"밝은 색상과 전진하는 화살표 디자인을 도색했습니다.\n\n<i>앞만 보고 달려라.</i>"
 	"PaintKit_cu_ump_arrows_Tag"									"모멘텀"
 
-	"PaintKit_cu_awp_neonoir"										"회색 바탕에 2명의 여성을 담은 특수 디자인을 블루 마젠타 색상으로 도색했습니다.\n\n<i>\"그들은 절망 속에서 서로를 위로했습니다.\"</i>"
+	"PaintKit_cu_awp_neonoir"										"무채색 바탕에 2명의 여성을 담은 특수 디자인을 블루 마젠타 색상으로 도색했습니다.\n\n<i>\"그들은 절망 속에서 서로를 위로했습니다.\"</i>"
 	"PaintKit_cu_awp_neonoir_Tag"									"네오 누와르"
 
 	"PaintKit_gs_mp9_colony01"										"주황색과 검은색 디자인으로 도색했습니다.\n\n<i>최후의 생존자가 되어라.</i>"
@@ -33711,7 +33714,7 @@
 	"PaintKit_cu_nova_polymer"									"케이스가 투명해 보이도록 도색하여 무기 내부를 볼 수 있습니다.\n\n<i>네 목표는 명확하다.</i>"
 	"PaintKit_cu_nova_polymer_Tag"								"투명 폴리머"
 
-	"PaintKit_cu_glock_noir"									"그레이 스케일 바탕에 여성 디자인을 블루 및 마젠타 색상의 페인트로 특수 도색했습니다.\n\n<i>\"상황이 변하기 시작하며 그녀도 희망을 갖기 시작했다. 그리고 위를 올려다보았다.\"</i>"
+	"PaintKit_cu_glock_noir"									"무채색 바탕에 여성 디자인을 블루 및 마젠타 색상의 페인트로 특수 도색했습니다.\n\n<i>\"상황이 변하기 시작하며 그녀도 희망을 갖기 시작했다. 그리고 위를 올려다보았다.\"</i>"
 	"PaintKit_cu_glock_noir_Tag"								"네오 누와르"
 
 	"PaintKit_cu_ssg08_chromatic"								"눈길을 사로잡을 수 있도록 오프셋 위치에 화려한 색상의 페인트를 도색했습니다.\n\n<i>일석이조</i>"
@@ -34389,7 +34392,7 @@
 		"PaintKit_p250_impact"							"양극 산화 처리 마감 사용하여 기계로 만든 느낌을 주는 디자인을 특수 도색했습니다.\n\n직접 충격"
 		"PaintKit_p250_impact_Tag"						"진원"
 		
-		"PaintKit_ump45_neo_noir"						"여성 디자인을 그레이 스케일 바탕에 블루와 마젠타 색상을 사용하여 특수 도색했습니다.\n\n\"칼을 손에 들고 이제는 맞서야 할 때라고 결심했습니다.\""
+		"PaintKit_ump45_neo_noir"						"여성 디자인을 무채색 바탕에 블루와 마젠타 색상을 사용하여 특수 도색했습니다.\n\n\"칼을 손에 들고 이제는 맞서야 할 때라고 결심했습니다.\""
 		//reusing existing tag string (PaintKit_cu_glock_noir_Tag)
 		
 		"PaintKit_glock_chomper"						"손잡이는 분홍색으로 칠하고, 슬라이드에는 공격적으로 바라보고 있는 눈 디자인을 특수 도색했습니다.\n\n\"이건 당신을 위한 거야!\""
@@ -34564,7 +34567,7 @@
 		"PaintKit_soch_tiger_stencil"						"어두운 색과 모래색의 호랑이 무늬를 도색했습니다.\n\n'정글의 왕'이라고 하기에는 논란의 여지가 있습니다."
 		"PaintKit_soch_tiger_stencil_Tag"					"호랑이 스텐실"
 		
-		"PaintKit_gsch_zeno_ssg08"							"회색 금속성 입자가 들어간 페인트로 특수 도색했으며 빨간색 다이아몬드가 특징입니다.\n\n크롬을 많이 사용해도 충분하지 않을 때"
+		"PaintKit_gsch_zeno_ssg08"							"무채색 금속성 입자가 들어간 페인트로 특수 도색했으며 빨간색 다이아몬드가 특징입니다.\n\n크롬을 많이 사용해도 충분하지 않을 때"
 		"PaintKit_gsch_zeno_ssg08_Tag"						"제노"
 		
 		"PaintKit_gs_gamebred_famas"						"위장 무늬 재킷을 입은 것처럼 보이도록 특수 도색했습니다.\n\n패션도 탄창도 모두 무장"
@@ -34884,7 +34887,7 @@
 		"PaintKit_so_teal"									"다양한 색조의 파란색을 사용하여 도색했습니다.\n\n빠른 이동, 빠른 사격, 빠른 승리"
 		"PaintKit_so_teal_Tag"								"블루 블라스트"
 		
-		"PaintKit_soch_blorb_bw"							"그레이스케일의 그래픽 패턴을 입혔습니다.\n\n\"컬러 카트리지 가격이 얼마인지 아세요?!\""
+		"PaintKit_soch_blorb_bw"							"무채색 그래픽 패턴을 입혔습니다.\n\n\"컬러 카트리지 가격이 얼마인지 아세요?!\""
 		"PaintKit_soch_blorb_bw_Tag"						"회색 연막"
 		
 		"PaintKit_soch_indigo_grips"						"R8 리볼버의 그립을 파란색 패턴을 도색했습니다.\n\n정신을 바짝 차리세요!"
@@ -34954,38 +34957,129 @@
 		"PaintKit_cue_stratosphere_Tag"						"우주 비행"
 		
 		// ACHROMA COLLECTION
-		"PaintKit_soe_ddpat_swirl_bw"						"회색 디지털 위장 무늬를 도색했습니다.\n\n빙글빙글 돌아요."
+		"PaintKit_soe_ddpat_swirl_bw"						"무채색 디지털 위장 무늬를 도색했습니다.\n\n빙글빙글 돌아요."
 		"PaintKit_soe_ddpat_swirl_bw_Tag"					"현기증"
 
-		"PaintKit_hye_car_wrap_bizon"						"흑백 패턴을 도색했습니다.\n\n빨리 부탁한다!"
+		"PaintKit_hye_car_wrap_bizon"						"무채색 패턴을 도색했습니다.\n\n빨리 부탁한다!"
 		"PaintKit_hye_car_wrap_bizon_Tag"					"비줌"
 
-		"PaintKit_soe_acrylic_flow3"						"회색 아크릴 물감을 부은 듯한 패턴을 도색했습니다.\n\n결국 모든 것은 조화를 이룹니다."
+		"PaintKit_soe_acrylic_flow3"						"무채색 아크릴 물감을 부은 듯한 패턴을 도색했습니다.\n\n결국 모든 것은 조화를 이룹니다."
 		"PaintKit_soe_acrylic_flow3_Tag"					"실버 푸어"
 
-		"PaintKit_hye_comic_shapes"							"회색 패턴을 고광택 은색 페인트로 도색했습니다.\n\n'빨간색 불빛은 녹화 중임을 의미합니다.'"
+		"PaintKit_hye_comic_shapes"							"무채색 패턴을 고광택 은색 페인트로 도색했습니다.\n\n\"빨간색 불빛은 녹화 중임을 의미합니다.\""
 		"PaintKit_hye_comic_shapes_Tag"						"산스 코믹"
 
-		"PaintKit_hye_chrome_ripple"						"흑백 패턴을 도색했습니다.\n\n시간의 파동"
+		"PaintKit_hye_chrome_ripple"						"무채색 패턴을 도색했습니다.\n\n시간의 파동"
 		"PaintKit_hye_chrome_ripple_Tag"					"징크"
 
-		"PaintKit_hye_car_wrap_3"							"대각선 흑백 패턴을 도색했습니다.\n\n거친 외관에 어울리는 근사한 인테리어"
+		"PaintKit_hye_car_wrap_3"							"대각선 무채색 패턴을 도색했습니다.\n\n거친 외관에 어울리는 근사한 인테리어"
 		"PaintKit_hye_car_wrap_3_Tag"						"진눈깨비"
 
-		"PaintKit_hye_geobirds"								"은색 새를 강조한 회색 패턴을 도색했습니다.\n\n위에서 보는 경치는 어떤가요?"
+		"PaintKit_hye_geobirds"								"은색 새를 강조한 무채색 패턴을 도색했습니다.\n\n위에서 보는 경치는 어떤가요?"
 		"PaintKit_hye_geobirds_Tag"							"기류"
-"PaintKit_hye_test_animal_print_45"					"갈색과 빨간색의 동물 무늬 패턴을 도색했습니다.\n\n동물 몇 마리가 아니라 동물의 왕국이네요."
+
+		"PaintKit_hye_mp5_car_wrap4"						"날카롭고, 각진 무채색 패턴을 도색했습니다.\n\n굽히지 않는 신념"
+		"PaintKit_hye_mp5_car_wrap4_Tag"					"눈보라"
+
+		"PaintKit_soe_bw_blast"								"나뭇결 패턴을 고광택 페인트로 도색했습니다.\n\n이건 복수의 칼을 갈아야 할 때 제격이라네.... - 부스, 무기 거래상"
+		"PaintKit_soe_bw_blast_Tag"							"벤데타"
+
+		"PaintKit_hye_abstract_knot_m4"						"무채색의 추상적인 매듭 패턴을 도색했습니다.\n\n바람에 몸을 맡기세요."
+		"PaintKit_hye_abstract_knot_m4_Tag"					"아이올로스 다크"
+
+		"PaintKit_soch_smoke_grips"							"그립 부분에 어두운 아크릴 페인트를 부은 듯한 패턴을 도색했습니다.\n\n올드머니"
+		"PaintKit_soch_smoke_grips_Tag"						"다크 챔버"
+
+		"PaintKit_soe_aug_creep"							"은색 바탕에 기괴한 모양의 나뭇가지와 새들을 도색했습니다.\n\n“그들은 기회를 노리며 맴돌고 있어....”"
+		"PaintKit_soe_aug_creep_Tag"						"크립"
+
+		"PaintKit_hye_abstract_knot"						"무채색의 추상적인 매듭 패턴을 도색했습니다.\n\n바람에 몸을 맡기세요."
+		"PaintKit_hye_abstract_knot_Tag"					"아이올로스 라이트"
+
+		"PaintKit_hye_car_wrap"								"무채색 패턴을 도색했습니다.\n\n가장 좋아하시는 만화책에서 몇 페이지 가져왔습니다."
+		"PaintKit_hye_car_wrap_Tag"							"데일리 데저트 이글"
+
+		"PaintKit_soe_p2000_grips"							"다양한 광택의 은색 페인트를 서로 다른 패턴으로 도색했습니다. 그립의 일부는 미끄럼 방지용 테이프와 비슷한 어두운 무광택 페인트로 도색했습니다.\n\n꽉 잡으세요!"
+		"PaintKit_soe_p2000_grips_Tag"						"그립 테이프"
+
+		"PaintKit_hye_zeds"									"탄소 섬유 무늬 바탕에 과감한 Z자형 디자인이 특징인 무채색 패턴을 도색했습니다.\n\n무기 조작 속도 +5 증가"
+		"PaintKit_hye_zeds_Tag"								"돌파구"
+
+		"PaintKit_ht_white_edges"							"무채색의 원형 패턴 위에 홀로그램 디자인을 도색했습니다.\n\n홀로그램 시스템의 그래픽 맵"
+		"PaintKit_ht_white_edges_Tag"						"조준 완료"
+
+		"PaintKit_soe_bw_the_end_awp"						"가지색과 흰색으로 불꽃과 장미를 표현하고 방아쇠 앞에 'The End(끝)'이라는 문구를 넣어 도색했습니다.\n\n두 진영 이야기"
+		"PaintKit_soe_bw_the_end_awp_Tag"					"끝"
+
+		// EXUBERANT COLLECTION
+		"PaintKit_hye_animal_print_lc"						"갈색 톤의 동물 무늬 패턴을 도색했습니다.\n\n동물 몇 마리가 아니라 동물의 왕국이네요."
+		"PaintKit_hye_animal_print_lc_Tag"					"사파리 무늬"
+
+		"PaintKit_hye_firework_patches_famas"				"폭발을 추상적으로 표현한 금색 패턴을 도색했습니다.\n\n\"쿨한 남자는 폭발에도 뒤를 돌아보지 않지.\""
+		"PaintKit_hye_firework_patches_famas_Tag"			"폭발 부산물"
+
+		"PaintKit_hye_geobirds_sunrise"						"와인색 패턴 위에 회색 새 디자인을 도색했습니다.\n\n위에서 보는 경치는 어떤가요?"
+		"PaintKit_hye_geobirds_sunrise_Tag"					"온난 기류"
+
+		"PaintKit_hye_batik_eyes"							"짙은 빨간색과 검은색으로 바나나잎 무늬를 도색했습니다.\n\n움직이는 표적"
+		"PaintKit_hye_batik_eyes_Tag"						"핏빛 바틱"
+
+		"PaintKit_hye_paisley_desat"						"와인색 바탕에 금색 페이즐리 패턴을 도색했습니다.\n\n부스, 당신을 위한 최고급 직물이야. - 유카코, 총기 제작자"
+		"PaintKit_hye_paisley_desat_Tag"					"허니 페이즐리"
+
+		"PaintKit_soch_copper_accent_revolver"				"그립 부분에 보라색 아크릴 페인트를 부은 듯한 패턴으로 도색했습니다.\n\n부드럽게 붓기"
+		"PaintKit_soch_copper_accent_revolver_Tag"			"모브 어사이드"
+
+		"PaintKit_soe_yellow_bits"							"회색 바탕 위에 MP9의 홈을 노란색과 빨간색 페인트로 도색했습니다.\n\n나 좀 말려봐!"
+		"PaintKit_soe_yellow_bits_Tag"						"비트론"
+
+		"PaintKit_hye_test_animal_print_45"					"갈색과 빨간색의 동물 무늬 패턴을 도색했습니다.\n\n동물 몇 마리가 아니라 동물의 왕국이네요."
+		"PaintKit_hye_test_animal_print_45_Tag"				"온혈"
+
+		"PaintKit_hye_paisley_warm"							"빨간색과 주황색 페이즐리 패턴으로 도색했습니다.\n\n부스, 당신을 위한 최고급 직물이야. - 유카코, 총기 제작자"
+		"PaintKit_hye_paisley_warm_Tag"						"코랄 페이즐리"
+
+		"PaintKit_soe_red"									"빨간색 오프셋 X 무늬 패턴을 도색했습니다.\n\n좀 과하긴 하지만, 이게 다 의도된 거 아니겠나? - 이모젠, 수습 무기 거래상"
+		"PaintKit_soe_red_Tag"								"피크닉"
+
+		"PaintKit_hye_batik_eyes_tec9"						"노란색과 검은색 바나나 잎 패턴을 도색했습니다.\n\n칼륨 함량 풍부"
+		"PaintKit_hye_batik_eyes_tec9_Tag"					"바나나 잎"
+
+		"PaintKit_hye_earth_mandala"						"다양한 색상의 만다라 무늬를 도색했습니다.\n\n결과보단 과정이 중요합니다."
+		"PaintKit_hye_earth_mandala_Tag"					"하늘 만다라"
+
+		"PaintKit_hye_earth_mandala_lc"						"다양한 색상의 만다라 무늬를 도색했습니다.\n\n결과보단 과정이 중요합니다."
+		"PaintKit_hye_earth_mandala_lc_Tag"					"지상 만다라"
+
+		"PaintKit_soe_yellow_xm"							"노란색 패턴을 도색하고 은색으로 마감했습니다.\n\n철컥! 장전 완료!"
+		"PaintKit_soe_yellow_xm_Tag"						"줌"
+
+		"PaintKit_soe_pink_cranes"							"분홍색과 하얀색으로 이루어진 두루미와 꽃무늬를 도색했습니다.\n\n셰리주 한 잔과 가장 잘 어울립니다."
+		"PaintKit_soe_pink_cranes_Tag"						"프레이즈 꽃과 두루미"
+
+		"PaintKit_ht_red_edges_fineline"					"빨간색 캘리그래피 디자인으로 도색했습니다.\n\n서면으로 남겨야 합니다."
+		"PaintKit_ht_red_edges_fineline_Tag"				"캘리그라포"
+
+		"PaintKit_hye_firework_patches"						"폭발을 추상적으로 표현한 붉은색 패턴을 도색했습니다.\n\n\"쿨한 남자는 폭발에도 뒤를 돌아보지 않지.\""
+		"PaintKit_hye_firework_patches_Tag"					"발열 폭발"
+
 		"PaintKit_soe_purple"								"보라색 위장 패턴을 도색하고 진주빛으로 마감 처리했습니다.\n\n새로 나온 치명적인 음료!"
 		"PaintKit_soe_purple_Tag"							"수면 물약"
 
-		// END TIMED DROPS 2025
+		"PaintKit_hye_animal_print_90s"						"밝은 네온 색상의 동물 무늬 패턴을 도색했습니다.\n\n몇 가지 색상이 아니라 색상 팔레트네요."
+		"PaintKit_hye_animal_print_90s_Tag"					"파티광"
+
+// END TIMED DROPS 2025
 
 // LIMITED TIME ITEM
 
 		"PaintKit_soch_mountains_xm1014"					"산악 지형 패턴을 도색했습니다.\n\n고독은 적막한 외로움이 아니라 고요한 자유다."
 		"PaintKit_soch_mountains_xm1014_Tag"				"솔리튜드"
 
-		// END LIMITED TIME ITEM
+		"PaintKit_gsch_ak_djiin"							"총열과 총신은 금속성 페인트로 도색했으며 총열 덮개와 개머리판은 진주 광택이 나는 페인트로 도색했습니다.\n\n태생이 다릅니다."
+		"PaintKit_gsch_ak_djiin_Tag"						"아프로디테"
+
+// END LIMITED TIME ITEM
 
 		//Recipes
 		"CSGO_Recipe_TradeUp"						"무기 거래 계약서"
@@ -35688,6 +35782,8 @@
 		"SFUI_Map_de_stronghold"	"요새"
 		"SFUI_Map_cs_alpine"		"알프스"
 		"SFUI_Map_de_poseidon"		"포세이돈"
+		"SFUI_Map_de_sanctum"		"성소"
+
 		"SFUI_Map_workshop_preview_dust2"	"더스트 2 미리 보기"
 		"SFUI_Map_workshop_preview_ancient"	"고대 미리 보기"
 		"SFUI_Map_workshop_preview_inferno"	"인페르노 미리 보기"
@@ -37565,6 +37661,15 @@
 		"CSGO_Demo_Next_Camera"						"[{s:bind_jump}]: 다음 카메라"
 		"CSGO_Demo_Toggle_XRay"						"[{s:bind_slot12}]: 엑스레이 보기 켜기/끄기"
 		"CSGO_Demo_Toggle_Overview"					"[{s:bind_duck}]: 전체 시점 켜기/끄기"
+		"CSGO_Demo_Settings_XRay"					"엑스레이([{s:bind_slot12}] 버튼으로 전환)"
+		"CSGO_Demo_Settings_TrueView_Explanation"	"클라이언트 측의 예측을 다시 실행하여 기존의 클라이언트 경험을 재구성힙니다. 이 방식은 서버에 기록된 총탄 타격 기록을 사용하여 타격 시 상황을 더 정확하게 재현합니다."
+		"CSGO_Demo_Settings_TrueView_Enable"		"TrueView 활성화"
+		"CSGO_Demo_Settings_TrueViewDOA"				"사망 이후 명령 포함"
+		"CSGO_Demo_Settings_TrueViewDOA_Explanation"	"서버에 명령이 전달되기 전에 게임에서 이미 플레이어가 사망하여 서버에서 실행되지 않은 명령에 대한 클라이언트 측의 예측을 재현합니다. 이 기능을 끄면 기존에 게임에서 경험한 상황과는 다르지만, 서버에 기록된 상황과 더 가까운 리플레이가 재생됩니다."
+		"CSGO_Demo_Settings_TrueViewWrongVersion"		"데모 버전 불일치 허용"
+		"CSGO_Demo_Settings_TrueViewWrongVersion_Explanation"	"기존의 클라이언트 버전이 데모를 시청할 때 사용했던 버전과 다른 경우 TrueView가 제대로 작동하지 않을 수 있습니다. TrueView를 계속해서 사용하려면 이 옵션을 활성화하세요."
+
+
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// Date formatting
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -38154,11 +38259,12 @@
 		"xpshop_upsell_mainmenu_2_v2"				"새로운 열차 수집품, 열정 상자, 참 장식 등을 확인해 보세요."
 		"xpshop_upsell_btn"							"패스 받기"
 		"xpshop_upsell_tooltip"						"패스에 대한 자세한 정보"
-		"xpshop_new_items"							"신규 아이템!"
+
+		"xpshop_new_items:p{new-count}"	"신규 아이템!"
 		"xpshop_lootlist_info"						"<span class=\"text-color-white\"><b>{s:casename}</b></span>에는 다음 중 하나가 포함되어 있습니다."
 
 		"xpshop_limited_item_variations"			"도색 패턴"
-		"xpshop_limited_item_variations_tooltip"	"한정판 아이템 획득 시 얻을 수 있는 도색 패턴입니다."
+		"xpshop_limited_item_variations_tooltip"	"한정판 아이템 획득 시 얻을 수 있는 무늬 템플릿 및 마모 정도입니다."
 		"xpshop_pass_activate"						"패스 활성화"
 		"xpshop_pass_activate_open_armory"			"무기고를 열어 활성화하세요."
 		"xpshop_pass_activate_desc"					"패스를 활성화하여 무기고 크레딧을 획득하세요."
@@ -40089,8 +40195,8 @@
 		"SFUI_Settings_MiniScoreboardPlayerCount_Tooltip"	"라운드가 진행되는 동안 소형 점수판에 플레이어 아바타 대신 각 팀의 플레이어 인원수를 표시합니다."
 
 
-		"Post_Round_Damage_Report_Given:p{s1}"			" • 입힌 피해량 → %s3: %s1번 타격으로 %s2 피해"
-		"Post_Round_Damage_Report_Taken:p{s1}"			" • 받은 피해량 ← %s3: %s1번 타격으로 %s2 피해"
+		"Post_Round_Damage_Report_Given:p"			" • 입힌 피해량 → %s3: %s1번 타격으로 %s2 피해"
+		"Post_Round_Damage_Report_Taken:p"			" • 받은 피해량 ← %s3: %s1번 타격으로 %s2 피해"
 
 		"SFUI_TeamOverheadID"					"팀 장비 표시"
 
@@ -40569,8 +40675,8 @@
 
 		"SFUI_UserAlertNoteType_1"			"%s1 의 서버가 현재 과부하된 상태입니다."
 		"SFUI_UserAlertNoteType_2"			"%s1 서버는 점검 중입니다."
-		"SFUI_UserAlertNoteType_LowPlayersR:p{players}"	"%region%에서 오직 %players%명의 호환 플레이어만 검색 중입니다."
-		"SFUI_UserAlertNoteType_LowPlayersY:p{players}"	"사용자의 지역에서 오직 %players%명의 호환 플레이어만 검색 중입니다."
+		"SFUI_UserAlertNoteType_LowPlayersR:p"	"%region%에서 오직 %players%명의 호환 플레이어만 검색 중입니다."
+		"SFUI_UserAlertNoteType_LowPlayersY:p"	"사용자의 지역에서 오직 %players%명의 호환 플레이어만 검색 중입니다."
 
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"매치 입장에 실패했습니다."
 		"SFUI_QMM_ERROR_NotLoggedIn"		"Counter-Strike 매치메이킹 서비스에 로그인되어 있지 않습니다."
@@ -48405,8 +48511,196 @@
 		"quest_11015_var_desc:p{mission-points}"	 	"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
 		"quest_11015_var_ingame:p{mission-points}"		"라운드 승리"
 
-// crow_mask_51509_comment
-// crow_mask_51510_comment
+// crow_mask_51513_comment
+// crow_mask_51514_comment
+
+		"SFUI_PlayerCount_Alive_Left:f"									"생존"
+		"SFUI_PlayerCount_Alive_Right:f"								"생존"
+		"funfact_damage_no_kills:f"										"{s:funfact-player} 님이 적을 처치하지는 못 했지만, {d:funfact-d1}의 피해를 입혔습니다."
+		"funfact_kills_with_single_grenade:f"							"{s:funfact-player} 님이 수류탄 1개로 적군 {d:funfact-d1}명을 맞췄습니다."
+		"funfact_kill_defuser:f"										"{s:funfact-player} 님이 폭탄 해체자를 성공적으로 저지했습니다."
+		"funfact_kill_rescuer:f"										"{s:funfact-player} 님이 인질 구출자를 처치했습니다."
+		"funfact_killed_enemies:f"										"{s:funfact-player} 님이 적 {d:funfact-d1}명을 처치했습니다."
+		"funfact_first_kill:f"											"{s:funfact-player} 님이 라운드 시작 {d:funfact-d1}초만에 첫 처치를 달성했습니다."
+		"funfact_first_blood:f"											"{s:funfact-player} 님이 라운드 시작 {d:funfact-d1}초만에 처음으로 적에게 피해를 입혔습니다."
+		"funfact_short_round:f"											"라운드가 단 {d:funfact-d1}초만에 끝났습니다!"
+		"funfact_best_accuracy:f"										"{s:funfact-player} 님이 {d:funfact-d1}%의 명중률을 기록했습니다."
+		"funfact_knife_kills:f"											"{s:funfact-player} 님이 칼로 적군을 처치했습니다."
+		"funfact_damage_with_grenade:f"									"{s:funfact-player} 님이 수류탄으로 총 {d:funfact-d1}의 피해를 입혔습니다."
+		"funfact_kills_grenades:f"										"{s:funfact-player} 님이 수류탄으로 적군 {d:funfact-d1}명을 처치했습니다."
+		"funfact_blind_kills:f"											"{s:funfact-player} 님이 섬광탄으로 시야를 방해받은 상태에서 적군을 처치했습니다."
+		"funfact_kills_with_last_round:f"								"{s:funfact-player} 님이 마지막 총알로 적군을 처치했습니다."
+		"funfact_kills_headshots:f"										"{s:funfact-player} 님이 해당 라운드에서 적군 {d:funfact-d1}명을 헤드샷으로 처치했습니다."
+		"funfact_kills_with_stattrak_weapon:f"							"{s:funfact-player} 님이 해당 라운드에서 적 {d:funfact-d1}명을 StatTrak™ 무기로 처치했습니다."
+		"funfact_donated_weapons:f"										"{s:funfact-player} 님이 해당 라운드에서 {d:funfact-d1}개의 무기를 기부했습니다."
+		"funfact_posthumous_kills_with_grenade:f"						"{s:funfact-player} 님이 사망 후 수류탄으로 적군을 처치했습니다."
+		"funfact_num_times_jumped:f"									"{s:funfact-player} 님이 해당 라운드에서 {d:funfact-d1}번 점프했습니다."
+		"funfact_fall_damage:f"											"{s:funfact-player} 님이 {d:funfact-d1}의 추락 피해를 입었습니다."
+		"funfact_items_purchased:f"										"{s:funfact-player} 님이 아이템 {d:funfact-d1}개를 구매했습니다."
+		"funfact_won_as_last_member:f"									"{s:funfact-player} 님이 마지막까지 살아남아 적군 {d:funfact-d1}명을 처치하여 승리했습니다."
+		"funfact_number_of_overkills:f"									"{s:funfact-player} 님이 이미 제압 중이던 플레이어 {d:funfact-d1}명을 처치했습니다."
+		"funfact_shots_fired:f"											"해당 라운드에서 총알 {d:funfact-d1}개가 발사되었습니다."
+		"funfact_money_spent:f"											"{s:funfact-player} 님이 해당 라운드에서 ${d:funfact-d1}의 자금을 사용했습니다."
+		"funfact_grenades_thrown:f"										"{s:funfact-player} 님이 해당 라운드에서 수류탄 {d:funfact-d1}개를 투척했습니다."
+		"funfact_used_all_ammo:f"										"{s:funfact-player} 님이 탄약을 모두 소진했습니다."
+		"funfact_survived_multiple_attackers:f"							"{s:funfact-player} 님이 적군 {d:funfact-d1}명의 공격으로부터 살아남았습니다."
+		"funfact_died_from_multiple_attackers:f"						"{s:funfact-player} 님이 사망 전에 적군 {d:funfact-d1}명에게 피해를 입었습니다."
+		"funfact_defended_bomb:f"										"{s:funfact-player} 님이 설치된 폭탄을 적군 {d:funfact-d1}명으로부터 지켜냈습니다."
+		"funfact_items_dropped_value:f"									"{s:funfact-player} 님이 ${d:funfact-d1} 상당의 보급품을 버렸습니다."
+		"funfact_kill_wounded_enemies:f"								"{s:funfact-player} 님이 부상당한 적군 {d:funfact-d1}명을 처치했습니다."
+		"funfact_damage_multiple_enemies:f"								"{s:funfact-player} 님이 적군 {d:funfact-d1}명에게 피해를 입혔습니다."
+		"funfact_used_multiple_weapons:f"								"{s:funfact-player} 님이 무기 {d:funfact-d1}개를 사용했습니다."
+		"funfact_terrorist_accuracy:f"									"테러리스트가 최고 명중률 {d:funfact-d1}%를 기록했습니다."
+		"funfact_ct_accuracy:f"											"대테러부대가 최고 명중률 {d:funfact-d1}%를 기록했습니다."
+		"funfact_ct_win_no_kills:f"										"대테러부대가 테러리스트를 한 명도 처치하지 않고 승리했습니다."
+		"funfact_t_win_no_kills:f"										"테러리스트가 대테러부대 요원을 한 명도 처치하지 않고 승리했습니다."
+		"funfact_t_win_no_casualties:f"									"테러리스트가 사망자 없이 승리했습니다."
+		"funfact_ct_win_no_casualties:f"								"대테러부대가 사망자 없이 승리했습니다."
+		"funfact_best_terrorist_accuracy:f"								"팀의 명중률이 {d:funfact-d2}%였으나, {s:funfact-player} 님은 {d:funfact-d1}%의 명중률을 기록했습니다."
+		"funfact_best_counterterrorist_accuracy:f"						"팀의 명중률이 {d:funfact-d2}%였으나, {s:funfact-player} 님은 {d:funfact-d1}%의 명중률을 기록했습니다."
+		"funfact_fallback1:f"											"케이크는 거짓말이야."
+		"funfact_fallback2:f"											"심심하네..."
+		"funfact_draw:f"												"플레이어 투표로 매치를 재시작했습니다."
+		"funfact_broke_windows:f"										"{s:funfact-player} 님이 창문 {d:funfact-d1}개를 파괴했습니다."
+		"funfact_nightvision_damage:f"									"{s:funfact-player} 님이 야간 투시경을 착용한 상태로 {d:funfact-d1}의 피해를 입혔습니다."
+		"funfact_defused_with_dropped_kit:f"							"{s:funfact-player} 님이 떨어진 폭탄 해체 키트를 주워 폭탄을 해체했습니다."
+		"funfact_killed_half_of_enemies:f"								"{s:funfact-player} 님이 적군 팀의 {d:funfact-d1}%를 처치했습니다."
+		"funfact_knife_level_reached:f"									"플레이어 {d:funfact-d1}명이 황금 칼 레벨에 도달했습니다."
+		"funfact_killed_before_dying:f"									"{s:funfact-player} 님이 사망 전에 적 {d:funfact-d1}명을 처치했습니다."
+		"funfact_respawned:f"											"{s:funfact-player} 님이 매치 중에 {d:funfact-d1}번 부활했습니다."
+		"funfact_default_weapon:f"										"{s:funfact-player} 님이 기본 무기만으로 승리했습니다."
+		"funfact_rounds_without_dying:f"								"{s:funfact-player} 님이 연속으로 {d:funfact-d1}라운드를 살아남았습니다."
+		"funfact_taser_kill:f"											"{s:funfact-player} 님이 플레이어 {d:funfact-d1}명에게 테이저를 사용했습니다."
+		"funfact_ticking_time:f"										"대테러부대 요원 {d:funfact-d1}명이 폭탄을 해체하려 했지만 테러리스트가 승리했습니다."
+		"funfact_ct_win_time:f"											"대테러부대 팀이 {d:funfact-d1}초만에 테러리스트 팀을 섬멸했습니다."
+		"funfact_ter_win_time:f"										"테러리스트 팀이 {d:funfact-d1}초만에 대테러부대 팀을 제거했습니다."
+		"funfact_bots_assumed:f"										"{s:funfact-player} 님이 해당 라운드에서 봇 {d:funfact-d1}명을 조종했습니다."
+		"funfact_domination:f"											"{s:funfact-player} 님이 대다수의 플레이어를 제압했습니다."
+		"funfact_revenge:f"												"{s:funfact-player} 님이 {d:funfact-d1}명의 플레이어에게 복수했습니다."
+		"funfact_steps_taken:f"											"{s:funfact-player} 님이 매치 중에 {d:funfact-d1}걸음을 뛰었습니다."
+		"funfact_quarter_health:f"										"{s:funfact-player} 님이 체력이 25 이하인 상태에서 플레이어 {d:funfact-d1}명을 처치했습니다."
+		"funfact_empty_guns:f"											"{s:funfact-player} 님이 {d:funfact-d1} 무기의 탄약을 모두 소진했습니다."
+		"funfact_slow_trigger:f"										"{s:funfact-player} 님이 {d:funfact-d1} 무기를 사용하지 못하고 사망했습니다."
+		"funfact_pickup_bomb:f"											"{s:funfact-player} 님이 팀원 {d:funfact-d1}명이 운반했던 폭탄을 설치했습니다."
+		"funfact_bomb_carriers:f"										"{s:funfact-player} 님이 마지막 라운드에서 폭탄 운반자 {d:funfact-d1}명을 처치했습니다."
+		"funfact_knife_bomb_planter:f"									"{s:funfact-player} 님이 폭탄 설치자를 처치하여 칼 레벨에서 승리했습니다."
+		"funfact_bomb_planted_before_kill:f"							"폭탄을 설치하기 전까지 사망한 플레이어가 없었습니다."
+		"funfact_failed_bomb_plants:f"									"테러리스트 {d:funfact-d1}명이 해당 라운드에서 폭탄 설치를 시도했습니다."
+		"funfact_knife_without_ammo:f"									"{s:funfact-player} 님이 탄약을 모두 소진한 후 칼로 {d:funfact-d1}명을 처치했습니다."
+		"funfact_molotov_burns:f"										"{s:funfact-player} 님이 플레이어 {d:funfact-d1}명에게 화염 공격을 가했습니다."
+		"funfact_survival_time:f"										"{s:funfact-player} 님이 가장 오래 {d:funfact-d1}초간 생존했습니다."
+		"funfact_pulled_trigger:f"										"{s:funfact-player} 님이 해당 매치에서 방아쇠를 {d:funfact-d1}번 당겼습니다."
+		"funfact_ace:f"													"에이스! {s:funfact-player} 님이 상대팀 전원을 처치했습니다."
+		"funfact_defuse_was_close_call_tenths:f"						"{s:funfact-player} 님이 0.{d:funfact-d1}초를 남기고 폭탄을 해체했습니다."
+		"funfact_defuse_was_close_call_hundredths:f"					"{s:funfact-player} 님이 0.0{d:funfact-d1}초를 남기고 폭탄을 해체했습니다."
+		"funfact_defuse_was_close_call_thousandths:f"					"{s:funfact-player} 님이 0.00{d:funfact-d1}초를 남기고 폭탄을 해체했습니다."
+		"mapwinrecord_graph_title:f"									"최근 승리"
+		"CSGO_Recipe_Count_Items_Selected:f"							"선택한 아이템: <b>{d:count}</b>개"
+		"CSGO_Recipe_Count_Items_Remaining:f"							"남은 아이템: <b>{d:count}</b>개"
+		"CSGO_Recipe_TradeUp_Items_Remain:f"							"교환을 위해 선택한 아이템: {d:count}개"
+		"CSGO_Recipe_TradeUp_Items_XofY:f"								"교환을 위해 선택한 아이템: {d:recipecount}개 중 {d:count}개"
+		"CSGO_Recipe_TradeUp_Items_Inv:f"								"교환 가능 아이템: {d:count}개"
+		"CSGO_RemoveKeychainToolCharges_Reward:f"						"+ 참 장식 분리 {d:item_count}개"
+		"SFUI_Store_Offer_Days_Remaining:f"								"남은 기간: {d:daysremaining}일"
+		"SFUI_Store_Offer_Days_Remaining_claim:f"						"남은 기간: {d:daysremaining}일"
+		"SFUI_Store_Offer_Days_Remaining_bid:f"							"이 제안에 대한 입찰까지 남은 기간: {d:daysremaining}일"
+		"SFUI_Store_Offer_Days_Remaining_last_claim:f"					"이 제안을 수락할 수 있는 마지막 기회"
+		"SFUI_Store_Offer_Days_Remaining_last_bid:f"					"이 제안에 입찰할 수 있는 마지막 기회"
+		"SFUI_Store_Timer_Week:f"										"{f:0:value}주"
+		"SFUI_Store_Timer_Day:f"										"{f:0:value}일"
+		"SFUI_Store_Timer_Hour:f"										"{f:0:value}시간"
+		"SFUI_Store_Timer_Min:f"										"{f:0:value}분"
+		"SFUI_Store_Timer_Sec:f"										"{f:0:value}초"
+		"CSGO_Watch_Minute:f"											"{f:0:value}분"
+		"xpshop_new_items:f"											"신규 아이템!"
+		"xpshop_popup_clear_n_tracks:f"									"완료한 패스 {d:completed_tracks_count}개 제거"
+		"xpshop_popup_clear_n_tracks_text:f"							"이 패스로 얻을 수 있는 모든 무기고 크레딧을 획득했습니다.<br><br>이 패스를 제거하면 새로운 무기고 패스를 활성화할 수 있으며 획득한 무기고 크레딧은 제거되지 않습니다."
+		"xpshop_redeem_bid_batchover:f"									"이 회차에 대한 입찰이 마감되었습니다. 낙찰자는 결제가 완료된 후에 개별 통보됩니다. 다음 회차의 아이템에 입찰하려면 내일 다시 방문해 주세요. 입찰은 {d:hours_until_bid_batch}시간 후에 재개됩니다."
+		"xpshop_redeem_not_enough_stars:f"								"무기고 크레딧 {d:stars_needed}개가 더 필요합니다. 활성화된 패스로 플레이하여 무기고 크레딧을 획득하세요."
+		"Panorama_PlayerDetails_Commendations_Left:f"					"오늘 {d:num_token}명의 플레이어를 더 칭찬할 수 있습니다."
+		"SFUI_BuyMenu_CanOnlyCarryXGrenades:f"							"휴대 가능 수류탄: {s:s1}개"
+		"SFUI_BuyMenu_MaxItemsOfType:f"									"휴대 가능 동일 유형 아이템: {s:s1}개"
+		"SFUI_BuyMenu_MaxItemsOfTypePurchased:f"						"구매 가능 동일 유형 아이템: {s:s1}개"
+		"SFUI_BuyMenu_ReachedWeaponsExpertLimit:f"						"이 매치에서 이미 구매한 아이템: {s:s1}"
+		"cs_rating_wins_needed:f"										"매치를 <b>{d:winsneeded}</b>번 더 승리하세요."
+		"cs_rating_wins_needed_verbose:f"								"매치를 <b>{d:winsneeded}</b>번 더 승리하여 CS 등급을 획득하세요."
+		"cs_rating_wins_needed_verbose_intro:f"							"매치를 <b>{d:winsneeded}</b>번 승리하여 CS 등급을 획득하세요."
+		"cs_rating_need_wins:f"											"{d:wins-needed}승 필요"
+		"wins_count:f"													"{d:wins}승"
+		"contextmenu_lobby-count:f"										"대기실: {d:lobby_count}개"
+		"popup_useitem_button_getkeychaincharges:f"						"참 장식 분리 도구 <b>{d:item_count}</b>개 추가"
+		"popup_decodable_rent_weapon_count:f"							"7일 동안 무기 {d:numlootlist}개 대여"
+		"popup_redeem_souvenir_desc:f"									"남은 기념품: <span class=\"get-souvenir-redeem-count\">{d:redeems}</span>개"
+		"matchmaking_stat_avgSearchTimeSeconds:f"						"예상 검색 시간: {s:stat}"
+		"matchmaking_stat_playersOnline:f"								"온라인 플레이어: {d:stat}명"
+		"matchmaking_stat_playersLockedIn:f"							"플레이어 {d:total_stat}명 중 {d:stat}명 매치 수락"
+		"matchmaking_stat_playersSearching:f"							"검색 중인 플레이어: {d:stat}명"
+		"matchmaking_stat_serversOnline:f"								"온라인 서버: {d:stat}개"
+		"matchmaking_stat_ongoingMatches:f"								"진행 중인 매치: {d:stat}개"
+		"tooltip_skill_group_none:f"									"매치를 <b>{d:winsneeded}</b>번 승리하여 경쟁 모드 스킬 그룹을 획득하세요."
+		"tooltip_cs_rating_none:f"										"매치를 <b>{d:winsneeded}</b>번 더 승리하여 CS 등급을 획득하세요."
+		"tooltip_skill_group_nonewingman:f"								"매치를 <b>{d:winsneeded}</b>번 승리하여 윙맨 모드 스킬 그룹을 획득하세요."
+		"tooltip_skill_group_nonedangerzone:f"							"위험지대 스킬 그룹을 조정해야 합니다. 위험지대 매치를 완료하여 스킬 그룹을 다시 획득하세요."
+		"tooltip_skill_group_wins:f"									"<img src='file://{images}/icons/ui/trophy.svg'  vspace='6' class='player-card-tooltip-icon'/> {d:wins}번 승리"
+		"team-intro-overtime-1st-half:f"								"연장전: 전반전"
+		"team-intro-overtime-2nd-half:f"								"연장전: 후반전"
+		"scoreboard_timeline_ot:f"										"연장전 {d:scoreboard_ot}"
+		"eom-skillgroup-win:f"											"{s:rating_type} 모드 매치 승리"
+		"eom-skillgroup-map-win:f"										"{s:rating_type} {s:map} 매치 승리"
+		"eom-skillgroup-needed-wins:f"									"매치를 {d:winsneeded}번 승리하여 스킬 그룹을 표시하세요."
+		"WatchMenu_Viewers_dv:f"										"관전자 {d:spectatorCount}명"
+		"Panorama_DeathPanel_DamageTaken:f"								"<font color='#A0A0A0'>받은 피해량: </font><font color='#FFFFFF'><b>{d:damage_taken}</b></font><font color='#A0A0A0'>(</font><font color='#FFFFFF'><b>{d:hits_taken}번 타격</b></font><font color='#A0A0A0'>)</font>"
+		"Panorama_DeathPanel_DamageGiven:f"								"<font color='#A0A0A0'>가한 피해량: </font><font color='#FFFFFF'><b>{d:damage_given}</b></font><font color='#A0A0A0'>(</font><font color='#FFFFFF'><b>{d:hits_given}번 타격</b></font><font color='#A0A0A0'>)</font>"
+		"mission_directive:f"											"{s:action} <b>{d:mission-points}</b>점"
+		"mission_directive_progress:f"									"{s:action} {d:mission-progress}/<b>{d:mission-points}</b> 점"
+		"quest_11000_var_desc:f"										"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 {s:item1} 무기로 적군 1명을 처치하세요."
+		"quest_11000_var_partial:f"										"사용 무기: {s:item1}"
+		"quest_11000_var_ingame:f"										"{s:item1} 무기로 적군 1명 처치"
+		"quest_11001_var_desc:f"										"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 {s:item1} 무기로 적군 1명을 처치하세요."
+		"quest_11001_var_partial:f"										"사용 무기: {s:item1}"
+		"quest_11001_var_ingame:f"										"{s:item1} 무기로 적군 1명 처치"
+		"quest_11002_var_desc:f"										"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 {s:item1} 무기로 적군 1명을 처치하세요."
+		"quest_11002_var_partial:f"										"사용 무기: {s:item1}"
+		"quest_11002_var_ingame:f"										"{s:item1} 무기로 적군 1명 처치"
+		"quest_11003_var_desc:f"										"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 {s:item1} 무기로 적군 1명을 처치하세요."
+		"quest_11003_var_partial:f"										"사용 무기: {s:item1}"
+		"quest_11003_var_ingame:f"										"{s:item1} 무기로 적군 1명 처치"
+		"quest_11004_var_desc:f"										"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
+		"quest_11004_var_partial:f"										""
+		"quest_11004_var_ingame:f"										"라운드 승리"
+		"quest_11005_var_desc:f"										"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
+		"quest_11005_var_partial:f"										""
+		"quest_11005_var_ingame:f"										"라운드 승리"
+		"quest_11006_var_desc:f"										"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
+		"quest_11006_var_partial:f"										""
+		"quest_11006_var_ingame:f"										"라운드 승리"
+		"quest_11007_var_desc:f"										"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 {s:item1} 무기로 적군 1명을 처치하세요."
+		"quest_11007_var_partial:f"										"사용 무기: {s:item1}"
+		"quest_11007_var_ingame:f"										"{s:item1} 무기로 적군 1명 처치"
+		"quest_11008_var_desc:f"										"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
+		"quest_11008_var_partial:f"										""
+		"quest_11008_var_ingame:f"										"라운드 승리"
+		"quest_11009_var_desc:f"										"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
+		"quest_11009_var_partial:f"										""
+		"quest_11009_var_ingame:f"										"라운드 승리"
+		"quest_11010_var_desc:f"										"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 {s:item1} 무기로 적군 1명을 처치하세요."
+		"quest_11010_var_partial:f"										"사용 무기: {s:item1}"
+		"quest_11010_var_ingame:f"										"{s:item1} 무기로 적군 1명 처치"
+		"quest_11011_var_desc:f"										"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
+		"quest_11011_var_partial:f"										""
+		"quest_11011_var_ingame:f"										"라운드 승리"
+		"quest_11012_var_desc:f"										"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
+		"quest_11012_var_partial:f"										""
+		"quest_11012_var_ingame:f"										"라운드 승리"
+		"quest_11013_var_desc:f"										"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
+		"quest_11013_var_partial:f"										""
+		"quest_11013_var_ingame:f"										"라운드 승리"
+		"quest_11014_var_desc:f"										"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
+		"quest_11014_var_partial:f"										""
+		"quest_11014_var_ingame:f"										"라운드 승리"
+		"quest_11015_var_desc:f"										"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
+		"quest_11015_var_partial:f"										""
+		"quest_11015_var_ingame:f"										"라운드 승리"
 }
 
 

@@ -102,7 +102,7 @@
 
 		"tooltip_copycrosshair"				"複製準星"
 		"GameUI_Xhair_Copy_Code_Confirm"		"是否要取代目前的準星？"
-
+ 
 		"settings_damage_prediction"			"傷害預測"
 		"settings_damage_prediction_info"		"傷害預測允許用戶端不用收到伺服器確認便立即播放造成傷害時的音訊 / 視覺效果。傷害預測能讓大幅提升射擊的回應速度，但有偶爾出錯的風險（如：用戶端未察覺的瞄準後仰、減速、或死亡）。擁有高延遲時，傷害預測不會啟用。"
 		"GameUI_PredictBodyShotEffects"			"預測身體中彈效果"
@@ -1968,8 +1968,8 @@
 		"Team_Cash_Award_no_income_suicide"					" +$0：自殺懲罰"
 		"Team_Cash_Award_Generic"							" +$%s1：隊伍收入"
 		"Team_Cash_Award_Custom"							" +$%s1：%s2"
-		"Team_Cash_Award_Dead_Terrorists:p{s2}"				" +$%s1：殲滅 %s2 名恐怖份子的隊伍收入#|#  +$%s1：殲滅 %s2 名恐怖份子的隊伍收入"
-		"Team_Cash_Award_Dead_CTs:p{s2}"					" +$%s1：殲滅 %s2 名反恐小組的隊伍收入#|#  +$%s1：殲滅 %s2 名反恐小組的隊伍收入"
+		"Team_Cash_Award_Dead_Terrorists:p"					" +$%s1：殲滅 %s2 名恐怖份子的隊伍收入#|#  +$%s1：殲滅 %s2 名恐怖份子的隊伍收入"
+		"Team_Cash_Award_Dead_CTs:p"						" +$%s1：殲滅 %s2 名反恐小組的隊伍收入#|#  +$%s1：殲滅 %s2 名反恐小組的隊伍收入"
 
 
 		"Notice_Bonus_Shorthanded_Eligibility"			"您的隊伍再 %s1 回合即可獲得隊員不足的回合收入。"
@@ -2149,6 +2149,8 @@
 		"CS_DeathNemesis"			"復仇者"
 		"CS_DeathNewNemesis"		"新的復仇者"
 		"CS_DeathRevenge"			"復仇"
+
+		"DeathNotice_Prescient_Attacker"	"（在伺服器上死亡）"
 
 		// Game Instructor Messages
 
@@ -2903,6 +2905,8 @@
 		"official_leaderboard_premier_season1_name"			"第 1 賽季"
 		"official_leaderboard_premier_season2_name"			"第 2 賽季"
 		"official_leaderboard_premier_season3_name"			"第 3 賽季"
+		"official_leaderboard_premier_season4_name"			"第 4 賽季"
+
 		//
 
 		"CSGO_official_leaderboard_mission_embedded"	"任務排行榜"
@@ -3321,6 +3325,18 @@
 		"CSGO_Collectible_MapTokenRooftop_Desc"			"紀念 CS2 地圖「Rooftop」的創作"
 		"CSGO_Collectible_MapTokenTransit"				"（已刪除）地圖硬幣"
 		"CSGO_Collectible_MapTokenTransit_Desc"			"紀念 CS2 地圖「（已刪除）」的創作"
+		"CSGO_Collectible_MapTokenWarden"				"Warden 地圖硬幣"
+		"CSGO_Collectible_MapTokenWarden_Desc"			"紀念 CS2 地圖「Warden」的創作"
+		"CSGO_Collectible_MapTokenStronghold"			"Stronghold 地圖硬幣"
+		"CSGO_Collectible_MapTokenStronghold_Desc"		"紀念 CS2 地圖「Stronghold」的創作"
+		"CSGO_Collectible_MapTokenAlpine"				"Alpine 地圖硬幣"
+		"CSGO_Collectible_MapTokenAlpine_Desc"			"紀念 CS2 地圖「Alpine」的創作"
+		"CSGO_Collectible_MapTokenPoseidon"				"Poseidon 地圖硬幣"
+		"CSGO_Collectible_MapTokenPoseidon_Desc"		"紀念 CS2 地圖「Poseiden」的創作"
+		"CSGO_Collectible_MapTokenSanctum"				"Sanctum 地圖硬幣"
+		"CSGO_Collectible_MapTokenSanctum_Desc"			"紀念 CS2 地圖「Sanctum」的創作"
+
+
 		"CSGO_CollectibleCoin_FortiusQuoFidelius"	"忠誠勳章"
 		"CSGO_CollectibleCoin_FortiusQuoFidelius_Desc"	"本勳章紀念受贈者在絕對武力的危險區域更新前便已加入其社群的忠誠。\n\n<i>忠誠生力量。</i>"
 		"CSGO_CollectibleCoin_FiveYearService"		"5 年老兵硬幣"
@@ -5438,6 +5454,8 @@
 		"CSGO_set_timed_drops_neutral"			"北地收藏"
 		"CSGO_set_timed_drops_cool"				"上升收藏"
 		"CSGO_set_community_36"					"創世收藏"
+		"CSGO_set_timed_drops_exuberant"		"丑角收藏"
+		"CSGO_set_timed_drops_achroma"			"無色收藏"
 		/////////////////
 		// lootlist override strings
 		//////////////////
@@ -35753,6 +35771,120 @@
 		
 		"PaintKit_cue_stratosphere"							"其已被客製化塗裝為太空船在外太空環繞行星航行的圖案。\n\n<i>「在不久的將來某天……」</i>"
 		"PaintKit_cue_stratosphere_Tag"						"平流層"
+		
+		// ACHROMA COLLECTION
+		"PaintKit_soe_ddpat_swirl_bw"						"使用灰階數位迷彩。\n\n<b>轉呀轉</b>"
+		"PaintKit_soe_ddpat_swirl_bw_Tag"					"暈眩"
+
+		"PaintKit_hye_car_wrap_bizon"						"使用灰階樣式。\n\n<b>拜託，快一點！</b>"
+		"PaintKit_hye_car_wrap_bizon_Tag"					"狂飆"
+
+		"PaintKit_soe_acrylic_flow3"						"繪有灰階壓克力流體畫花紋。\n\n<b>最後，一切似乎都很融洽</b>"
+		"PaintKit_soe_acrylic_flow3_Tag"					"銀色傾倒"
+
+		"PaintKit_hye_comic_shapes"							"以高光澤銀色塗料畫上灰階圖案。\n\n<b>「紅燈代表正在錄影中」</b>"
+		"PaintKit_hye_comic_shapes_Tag"						"漫畫框"
+
+		"PaintKit_hye_chrome_ripple"						"使用灰階圖案。\n\n<b>時間的漣漪</b>"
+		"PaintKit_hye_chrome_ripple_Tag"					"鋅"
+
+		"PaintKit_hye_car_wrap_3"							"繪有嶙峋的灰階樣式。\n\n<b>適合粗曠戶外的精緻內部</b>"
+		"PaintKit_hye_car_wrap_3_Tag"						"冰霜"
+
+		"PaintKit_hye_geobirds"								"使用灰階圖案，上面以銀色鳥兒點綴。\n\n<b>上面的景色如何？</b>"
+		"PaintKit_hye_geobirds_Tag"							"氣流"
+
+		"PaintKit_hye_mp5_car_wrap4"						"使用帶有尖角設計的灰階圖案。\n\n<b>毫不退縮</b>"
+		"PaintKit_hye_mp5_car_wrap4_Tag"					"雪花四濺"
+
+		"PaintKit_soe_bw_blast"								"以高光澤塗料繪有木紋圖案。\n\n<b>來，這個斧頭你拿去磨一磨……——軍火商布斯</b>"
+		"PaintKit_soe_bw_blast_Tag"							"世代宿仇"
+
+		"PaintKit_hye_abstract_knot_m4"						"繪有灰階、抽象繩結圖案。\n\n<b>隨風飄逸</b>"
+		"PaintKit_hye_abstract_knot_m4_Tag"					"黑暗之風"
+
+		"PaintKit_soch_smoke_grips"							"手把繪有深色壓克力流體畫花紋。\n\n<b>富豪世家</b>"
+		"PaintKit_soch_smoke_grips_Tag"						"黑暗密室"
+
+		"PaintKit_soe_aug_creep"							"銀色的基底上繪有扭曲的樹枝與鳥兒。\n\n<b>「牠們在此盤旋……」</b>"
+		"PaintKit_soe_aug_creep_Tag"						"蔓延"
+
+		"PaintKit_hye_abstract_knot"						"繪有灰階、抽象繩結圖案。\n\n<b>隨風飄逸</b>"
+		"PaintKit_hye_abstract_knot_Tag"					"光明之風"
+
+		"PaintKit_hye_car_wrap"								"使用灰階圖案。\n\n<b>來自您最愛的漫畫</b>"
+		"PaintKit_hye_car_wrap_Tag"							"沙漠之鷹日報"
+
+		"PaintKit_soe_p2000_grips"							"以不同銀色光澤塗裝的圖樣。部份握把使用暗色亞光漆塗裝，圖樣仿似握把膠帶。\n\n<b>抓緊！</b>"
+		"PaintKit_soe_p2000_grips_Tag"						"握把膠帶"
+
+		"PaintKit_hye_zeds"									"在碳纖維基底上塗裝灰階圖案，特色為侵略性的「zed」（Z 型）設計。\n\n<b>武器操作速度 +5</b>"
+		"PaintKit_hye_zeds_Tag"								"突破"
+
+		"PaintKit_ht_white_edges"							"在浮空全息設計之下塗裝灰階圓形圖樣。\n\n<b>全息系統中的影像地圖</b>"
+		"PaintKit_ht_white_edges_Tag"						"追蹤鎖定"
+
+		"PaintKit_soe_bw_the_end_awp"						"以茄紫與白色客製化塗裝火焰、玫瑰及板機前方的「the end」字樣。\n\n<b>一體兩面的故事</b>"
+		"PaintKit_soe_bw_the_end_awp_Tag"					"終點"
+
+		// EXUBERANT COLLECTION
+		"PaintKit_hye_animal_print_lc"						"使用棕色的動物圖案。\n\n<b>你是說要「一些動物」，不是要「整個動物王國」</b>"
+		"PaintKit_hye_animal_print_lc_Tag"					"狩獵印花"
+
+		"PaintKit_hye_firework_patches_famas"				"使用金色的爆炸圖案。\n\n<b>「真男人從不回頭看爆炸」</b>"
+		"PaintKit_hye_firework_patches_famas_Tag"			"副產品"
+
+		"PaintKit_hye_geobirds_sunrise"						"在酒紅色圖樣上繪製了銀鳥圖案。\n\n<b>上面的景觀如何？</b>"
+		"PaintKit_hye_geobirds_sunrise_Tag"					"熱流"
+
+		"PaintKit_hye_batik_eyes"							"使用赤紅與黑色相間的香蕉葉圖案。\n\n<b>活動標靶</b>"
+		"PaintKit_hye_batik_eyes_Tag"						"赤紅蠟染"
+
+		"PaintKit_hye_paisley_desat"						"以金色佩利斯花紋客製化塗裝在醇酒色基底上。\n\n<b>布斯，給你的都是最上等的材質 - 由香子 槍匠</b>"
+		"PaintKit_hye_paisley_desat_Tag"					"蜂蜜佩利斯"
+
+		"PaintKit_soch_copper_accent_revolver"				"手把繪有紫紅色壓克力流體畫花紋。\n\n<b>輕描淡寫</b>"
+		"PaintKit_soch_copper_accent_revolver_Tag"			"藕荷側身"
+
+		"PaintKit_soe_yellow_bits"							"這款 MP9 主體為銀色，槍身溝槽使用黃紅雙色塗裝。\n\n<b>來擋我啊！</b>"
+		"PaintKit_soe_yellow_bits_Tag"						"蜜蜂龍"
+
+		"PaintKit_hye_test_animal_print_45"					"使用黃褐與紅色的動物圖案。\n\n<b>你是說要「一些動物」，不是要「整個動物王國」</b>"
+		"PaintKit_hye_test_animal_print_45_Tag"				"溫血動物"
+
+		"PaintKit_hye_paisley_warm"							"繪有紅色與橘色的佩斯利花紋。\n\n<i>布斯，給你的都是最上等的材質 - 由香子 槍匠</i>"
+		"PaintKit_hye_paisley_warm_Tag"						"珊瑚佩斯利"
+
+		"PaintKit_soe_red"									"使用彎管 X 標記圖案。\n\n<i>是有點超過，不過這正是重點吧？ - 伊莫珍 實習軍火商</i>"
+		"PaintKit_soe_red_Tag"								"野餐區"
+
+		"PaintKit_hye_batik_eyes_tec9"						"使用黃黑相間的香蕉葉圖案。\n\n<b>富含鉀</b>"
+		"PaintKit_hye_batik_eyes_tec9_Tag"					"香蕉葉"
+
+		"PaintKit_hye_earth_mandala"						"使用彩色曼陀羅圖案。\n\n<b>最重要的是這段旅程</b>"
+		"PaintKit_hye_earth_mandala_Tag"					"天空曼陀羅"
+
+		"PaintKit_hye_earth_mandala_lc"						"使用彩色曼陀羅圖案。\n\n<b>最重要的是這段旅程</b>"
+		"PaintKit_hye_earth_mandala_lc_Tag"					"大地曼陀羅"
+
+		"PaintKit_soe_yellow_xm"							"使用黃色圖案並以銀色點綴。\n\n<b>劈哩啪啦~！</b>"
+		"PaintKit_soe_yellow_xm_Tag"						"咻~"
+
+		"PaintKit_soe_pink_cranes"							"使用粉色和白色的鶴與花圖案。\n\n<b>很適合搭上一杯雪利酒</b>"
+		"PaintKit_soe_pink_cranes_Tag"						"鶴型障礙"
+
+		"PaintKit_ht_red_edges_fineline"					"使用紅色書法設計。\n\n<b>想到就寫下來</b>"
+		"PaintKit_ht_red_edges_fineline_Tag"				"假書法"
+
+		"PaintKit_hye_firework_patches"						"使用紅色的爆炸圖案。\n\n<b>「真男人從不回頭看爆炸」</b>"
+		"PaintKit_hye_firework_patches_Tag"					"放熱"
+
+		"PaintKit_soe_purple"								"使用帶有珠光的紫色迷彩圖案。\n\n<b>全新的魔法藥水！</b>"
+		"PaintKit_soe_purple_Tag"							"睡眠魔藥"
+
+		"PaintKit_hye_animal_print_90s"						"使用鮮豔、霓虹色彩的動物圖案。\n\n<b>你說要用「一些顏色」，不是「所有顏色」</b>"
+		"PaintKit_hye_animal_print_90s_Tag"					"派對動物"
+
 // END TIMED DROPS 2025
 
 // LIMITED TIME ITEM
@@ -35760,7 +35892,10 @@
 		"PaintKit_soch_mountains_xm1014"					"繪有山脈地形圖樣。\n\n<i>獨處是特權，而非負擔</i>"
 		"PaintKit_soch_mountains_xm1014_Tag"				"獨行"
 
-		// END LIMITED TIME ITEM
+		"PaintKit_gsch_ak_djiin"							"機匣和彈巢以金屬漆塗裝。護手和槍托底部以珍珠母質感的顏料塗裝。\n\n<i>來自不同次元</i>"
+		"PaintKit_gsch_ak_djiin_Tag"						"阿芙羅黛蒂"
+
+// END LIMITED TIME ITEM
 
 		//Recipes
 		"CSGO_Recipe_TradeUp"						"汰換合約"
@@ -36078,7 +36213,7 @@
 		"SFUI_Legend_Cancel"			"${cancel} 取消"
 		"SFUI_Legend_Ok"				"${confirm} 確定"
 		"SFUI_Legend_OkCancel"			"${cancel} 取消 ${confirm} 確定"
-		"SFUI_Play"						"進行遊戲"
+		"SFUI_Play"						"開始"
 		"SFUI_Back"						"返回"
 		"SFUI_GO"						"GO"
 		"SFUI_Accept"					"接受"
@@ -36458,6 +36593,12 @@
 		"SFUI_Map_de_golden"		"Golden"
 		"SFUI_Map_de_rooftop"		"Rooftop"
 		"SFUI_Map_de_transit"		"（已刪除）"
+
+		"SFUI_Map_de_warden"		"Warden"
+		"SFUI_Map_de_stronghold"	"Stronghold"
+		"SFUI_Map_cs_alpine"		"Alpine"
+		"SFUI_Map_de_poseidon"		"Poseidon"
+		"SFUI_Map_de_sanctum"		"Sanctum"
 
 		"SFUI_Map_workshop_preview_dust2"	"Dust II 預覽"
 		"SFUI_Map_workshop_preview_ancient"	"Ancient 預覽"
@@ -38336,6 +38477,15 @@
 		"CSGO_Demo_Next_Camera"						"[{s:bind_jump}]：下一個鏡頭"
 		"CSGO_Demo_Toggle_XRay"						"[{s:bind_slot12}]：切換開關 X 光檢視"
 		"CSGO_Demo_Toggle_Overview"					"[{s:bind_duck}]：切換上空俯視"
+		"CSGO_Demo_Settings_XRay"					"X 光（使用 [{s:bind_slot12}] 切換）"
+		"CSGO_Demo_Settings_TrueView_Explanation"	"透過重新執行用戶端預測來重建原版用戶端體驗。這將更貼近地重現伺服器的命中登錄環境。"
+		"CSGO_Demo_Settings_TrueView_Enable"		"啟用 TrueView"
+		"CSGO_Demo_Settings_TrueViewDOA"				"包含「已死亡」動作"
+		"CSGO_Demo_Settings_TrueViewDOA_Explanation"	"重新進行因玩家在指令抵達時已死亡因此伺服器未執行的用戶端預測指令。關閉此選項將使重播與原始體驗不同，但會更接近在伺服器上發生的情況。"
+		"CSGO_Demo_Settings_TrueViewWrongVersion"		"允許重播版本不相符"
+		"CSGO_Demo_Settings_TrueViewWrongVersion_Explanation"	"如果原始用戶端版本與用於檢視重播的版本不同，TrueView 可能無法正常運作。啟用此選項可嘗試強制播放。"
+
+
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// Date formatting
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -38767,6 +38917,9 @@
 		"CSGO_Collectible_PremierSeason3Coin"		"優先權第 3 賽季勳章"
 		"CSGO_Collectible_PremierSeason3Coin_Desc"	"此為因您積極參與優先權第 3 賽季而獲得的優先權賽季紀念勳章。"
 
+		"CSGO_Collectible_PremierSeason4Coin"		"優先權第 4 賽季勳章"
+		"CSGO_Collectible_PremierSeason4Coin_Desc"	"此為因您積極參與優先權第 4 賽季而獲得的優先權賽季紀念勳章。"
+
 		//for main menu display
 		"SFUI_XP_Bonus_1"							"每週經驗值獎勵加成！"
 		"SFUI_XP_Bonus_2"							"下次您升級時可獲得一樣物品掉落！"
@@ -38926,11 +39079,12 @@
 		"xpshop_upsell_mainmenu_2_v2"				"獲得全新的 Train 收藏、狂熱武器箱、吊飾還有更多。"
 		"xpshop_upsell_btn"							"購買通行證"
 		"xpshop_upsell_tooltip"						"深入了解{s:pass}"
-		"xpshop_new_items"							"新物品！"
+
+		"xpshop_new_items:p{new-count}"	"新物品！#|#新物品！"
 		"xpshop_lootlist_info"						"<span class=\"text-color-white\"><b>{s:casename}</b></span>包含下列物品之一："
 
 		"xpshop_limited_item_variations"			"外觀變化"
-		"xpshop_limited_item_variations_tooltip"	"兌換此限量版物品時可能獲得的變化範例。"
+		"xpshop_limited_item_variations_tooltip"	"兌換此限量版商品時可能獲得的圖案範本和磨損度的變化範例。"
 		"xpshop_pass_activate"						"啟用通行證"
 		"xpshop_pass_activate_open_armory"			"開啟武裝庫以啟用"
 		"xpshop_pass_activate_desc"					"啟用通行證，開始賺取武裝庫點數"
@@ -40869,8 +41023,8 @@
 		"SFUI_Settings_MiniScoreboardPlayerCount_Tooltip"	"在回合尚未結束期間，在小型記分板上以各隊存活玩家人數取代玩家個人圖示。"
 
 
-		"Post_Round_Damage_Report_Given:p{s1}"			" • 造成傷害 → %s3：%s2，命中 %s1 次#|# • 造成傷害 → %s3：%s2，命中 %s1 次"
-		"Post_Round_Damage_Report_Taken:p{s1}"			" • 承受傷害 → %s3：%s2，命中 %s1 次#|# • 承受傷害 → %s3：%s2，命中 %s1 次"
+		"Post_Round_Damage_Report_Given:p"			" • 造成傷害 → %s3：%s2，命中 %s1 次#|# • 造成傷害 → %s3：%s2，命中 %s1 次"
+		"Post_Round_Damage_Report_Taken:p"			" • 承受傷害 → %s3：%s2，命中 %s1 次#|# • 承受傷害 → %s3：%s2，命中 %s1 次"
 
 		"SFUI_TeamOverheadID"					"顯示隊伍裝備"
 
@@ -41349,8 +41503,8 @@
 
 		"SFUI_UserAlertNoteType_1"			"在 %s1 的伺服器目前處於高負載狀態。"
 		"SFUI_UserAlertNoteType_2"			"在 %s1 的伺服器目前已離線進行維修。"
-		"SFUI_UserAlertNoteType_LowPlayersR:p{players}"	"只有 %players% 位匹配的玩家在%region%地區搜尋比賽。#|#只有 %players% 位匹配的玩家在%region%地區搜尋比賽。"
-		"SFUI_UserAlertNoteType_LowPlayersY:p{players}"	"只有 %players% 位匹配的玩家在您的地區搜尋比賽。#|#只有 %players% 位匹配的玩家在您的地區搜尋比賽。"
+		"SFUI_UserAlertNoteType_LowPlayersR:p"	"只有 %players% 位匹配的玩家在%region%地區搜尋比賽。#|#只有 %players% 位匹配的玩家在%region%地區搜尋比賽。"
+		"SFUI_UserAlertNoteType_LowPlayersY:p"	"只有 %players% 位匹配的玩家在您的地區搜尋比賽。#|#只有 %players% 位匹配的玩家在您的地區搜尋比賽。"
 
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"無法連線至比賽。"
 		"SFUI_QMM_ERROR_NotLoggedIn"		"未登入絕對武力遊戲配對服務。"
@@ -45268,7 +45422,7 @@
 		"ControlsLib_Generic_Test3"			"[{g:csgo_key:sp_key}] 顯示個人檔案" 
 
 		"CSGO_Home"							"首頁"
-		"CSGO_MainMenu_Play"				"進行遊戲"
+		"CSGO_MainMenu_Play"				"開始"
 		"CSGO_MainMenu_Inventory"			"物品庫"
 		"CSGO_MainMenu_Loadout"				"武器裝備"
 		"CSGO_MainMenu_Watch"				"觀看"
@@ -46518,6 +46672,7 @@
 		"prime_unranked"				"非積分比賽"
 		"prime_not_enrolled_label"		"非優先配對玩家"
 		"prime_disabled_label"			"關閉優先配對"
+		"matchmaking_expected_wait_time"	"<img src='file://{images}/icons/ui/recent.svg' class='map-selection-info__wait-icon'/>等候時間 {s:time}"
 		"no_steam_group_link"			"您並非任何 Steam 群組的成員。"
 
 		"permissions_title"					"權限設定"
@@ -46956,11 +47111,14 @@
 		"annotations_local"							"本機儲存空間"
 		"annotations_workshop"						"工作坊"
 		"annotations_official"						"官方"
+		"annotations_none"							"沒有地圖指南"
 		"Workshop_annotation_title"					"地圖指南提交工具"
 		"Workshop_annotation_error_title"			"為您的地圖指南輸入標題。"
 		"Workshop_annotation_error_file"			"選擇有效的 .txt 註解檔案"
 		"Workshop_annotation_ready"					"已準備好上傳投稿。"		
 		"UI_File_Filter_SupportedAnnotationFormat"	"文字檔（*.txt）"
+		"annotations_visit_workshop"				"造訪 Steam 工作坊 ⤤"
+
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Game Mode Desc
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -49191,8 +49349,196 @@
 		"quest_11015_var_desc:p{mission-points}"	 	"在<b>{s:gamemode}：{s:location}</b> 中贏得 1 回合。#|#在<b>{s:gamemode}：{s:location}</b> 中贏得回合。"
 		"quest_11015_var_ingame:p{mission-points}"		"贏得 1 回合#|#贏得多回合"
 
-// crow_mask_51509_comment
-// crow_mask_51510_comment
+// crow_mask_51513_comment
+// crow_mask_51514_comment
+
+		"SFUI_PlayerCount_Alive_Left:f"									"存活"
+		"SFUI_PlayerCount_Alive_Right:f"								"存活"
+		"funfact_damage_no_kills:f"										"{s:funfact-player} 對敵方造成了 {d:funfact-d1} 傷害，但沒殺到半個人。"
+		"funfact_kills_with_single_grenade:f"							"{s:funfact-player} 使用一顆手榴彈炸死了 {d:funfact-d1} 位敵人。"
+		"funfact_kill_defuser:f"										"{s:funfact-player} 成功阻止炸彈遭到拆除。"
+		"funfact_kill_rescuer:f"										"{s:funfact-player} 擊殺人質疏散者。"
+		"funfact_killed_enemies:f"										"{s:funfact-player} 擊殺了 {d:funfact-d1} 名敵人。"
+		"funfact_first_kill:f"											"{s:funfact-player} 在回合開始的 {d:funfact-d1} 秒內就取得首殺。"
+		"funfact_first_blood:f"											"{s:funfact-player} 在回合開始的 {d:funfact-d1} 秒內就首開殺戒。"
+		"funfact_short_round:f"											"該回合只花了 {d:funfact-d1} 秒！"
+		"funfact_best_accuracy:f"										"{s:funfact-player} 的準確度為 {d:funfact-d1}%。"
+		"funfact_knife_kills:f"											"{s:funfact-player} 在這回合取得了 {d:funfact-d1} 次軍刀刺殺。"
+		"funfact_damage_with_grenade:f"									"{s:funfact-player} 使用手榴彈造成共 {d:funfact-d1} 傷害。"
+		"funfact_kills_grenades:f"										"{s:funfact-player} 使用手榴彈擊殺了 {d:funfact-d1} 名敵人。"
+		"funfact_blind_kills:f"											"{s:funfact-player} 被閃光彈照到時擊殺了 {d:funfact-d1} 名敵人。"
+		"funfact_kills_with_last_round:f"								"{s:funfact-player} 有 {d:funfact-d1} 次在彈匣僅剩一發子彈時，成功殺死敵人。"
+		"funfact_kills_headshots:f"										"{s:funfact-player} 在該回合以爆頭的方式擊殺 {d:funfact-d1} 名敵人。"
+		"funfact_kills_with_stattrak_weapon:f"							"{s:funfact-player} 的 StatTrak™ 武器在該回合增加了 {d:funfact-d1} 次擊殺。"
+		"funfact_donated_weapons:f"										"{s:funfact-player} 在該回合捐助 {d:funfact-d1} 項武器。"
+		"funfact_posthumous_kills_with_grenade:f"						"{s:funfact-player} 在死亡後以手榴彈炸死了 {d:funfact-d1} 名敵人。"
+		"funfact_num_times_jumped:f"									"{s:funfact-player} 在該回合中共跳躍 {d:funfact-d1} 次。"
+		"funfact_fall_damage:f"											"{s:funfact-player} 受到了……由地表造成的 {d:funfact-d1} 傷害。"
+		"funfact_items_purchased:f"										"{s:funfact-player} 買了 {d:funfact-d1} 項物品。"
+		"funfact_won_as_last_member:f"									"身為他所屬隊伍的最後一名生還者，{s:funfact-player} 擊殺了 {d:funfact-d1} 名敵人並贏得回合勝利。"
+		"funfact_number_of_overkills:f"									"{s:funfact-player} 擊殺了 {d:funfact-d1} 名他持續壓制的玩家。"
+		"funfact_shots_fired:f"											"該回合總共開了 {d:funfact-d1} 槍。"
+		"funfact_money_spent:f"											"{s:funfact-player} 該回合花了 ${d:funfact-d1}。"
+		"funfact_grenades_thrown:f"										"{s:funfact-player} 該回合丟出了 {d:funfact-d1} 枚手榴彈。"
+		"funfact_used_all_ammo:f"										"{s:funfact-player} 彈盡援絕了。"
+		"funfact_survived_multiple_attackers:f"							"{s:funfact-player} 成功擺脫 {d:funfact-d1} 名不同敵人的攻擊。"
+		"funfact_died_from_multiple_attackers:f"						"{s:funfact-player} 死前遭受 {d:funfact-d1} 名敵人的攻擊。"
+		"funfact_defended_bomb:f"										"{s:funfact-player} 擊殺了 {d:funfact-d1} 名欲拆除炸彈的敵人。"
+		"funfact_items_dropped_value:f"									"{s:funfact-player} 丟棄了價值 ${d:funfact-d1} 的補給品。"
+		"funfact_kill_wounded_enemies:f"								"{s:funfact-player} 解決了 {d:funfact-d1} 名受傷的敵人。"
+		"funfact_damage_multiple_enemies:f"								"{s:funfact-player} 對 {d:funfact-d1} 名敵人造成傷害。"
+		"funfact_used_multiple_weapons:f"								"{s:funfact-player} 用過 {d:funfact-d1} 種不同的槍械。"
+		"funfact_terrorist_accuracy:f"									"恐怖份子擁有全場最佳的準確度 {d:funfact-d1}%。"
+		"funfact_ct_accuracy:f"											"反恐小組擁有全場最佳的準確度 {d:funfact-d1}%。"
+		"funfact_ct_win_no_kills:f"										"反恐小組未殺害任何恐怖份子即獲得勝利。"
+		"funfact_t_win_no_kills:f"										"恐怖份子未殺害任何反恐小組人員即獲得勝利。"
+		"funfact_t_win_no_casualties:f"									"恐怖份子全員未損即獲得勝利。"
+		"funfact_ct_win_no_casualties:f"								"反恐小組全員未損即獲得勝利。"
+		"funfact_best_terrorist_accuracy:f"								"{s:funfact-player} 的準確度為 {d:funfact-d1}%，而其餘恐怖份子的準確度則為  {d:funfact-d2}%。"
+		"funfact_best_counterterrorist_accuracy:f"						"{s:funfact-player} 的準確度為 {d:funfact-d1}%，而其餘反恐小組的準確度則為 {d:funfact-d2}%。"
+		"funfact_fallback1:f"											"The cake is a lie."
+		"funfact_fallback2:f"											"打呵欠。"
+		"funfact_draw:f"												"由於玩家投票結果，比賽重新開始。"
+		"funfact_broke_windows:f"										"{s:funfact-player} 擊碎了 {d:funfact-d1} 扇窗戶。"
+		"funfact_nightvision_damage:f"									"{s:funfact-player} 戴著夜視鏡時對敵人造成了 {d:funfact-d1} 傷害。"
+		"funfact_defused_with_dropped_kit:f"							"{s:funfact-player} 使用掉落的拆彈包拆除了炸彈。"
+		"funfact_killed_half_of_enemies:f"								"{s:funfact-player} 殲滅了 {d:funfact-d1}% 的敵人。"
+		"funfact_knife_level_reached:f"									"{d:funfact-d1} 名玩家達到了黃金軍刀階級。"
+		"funfact_killed_before_dying:f"									"{s:funfact-player} 在死亡前殺了 {d:funfact-d1} 名玩家。"
+		"funfact_respawned:f"											"{s:funfact-player} 在比賽中重生了 {d:funfact-d1} 次。"
+		"funfact_default_weapon:f"										"{s:funfact-player} 沒有撿起任何武器就贏了這回合。"
+		"funfact_rounds_without_dying:f"								"{s:funfact-player} 連續 {d:funfact-d1} 回合沒有死亡。"
+		"funfact_taser_kill:f"											"{s:funfact-player} 電擊了 {d:funfact-d1} 名玩家。"
+		"funfact_ticking_time:f"										"儘管有 {d:funfact-d1} 名反恐小組嘗試拆除炸彈，恐怖份子最終還是取得勝利。"
+		"funfact_ct_win_time:f"											"反恐小組只用了 {d:funfact-d1} 秒殲滅所有恐怖份子。"
+		"funfact_ter_win_time:f"										"恐怖份子只用了 {d:funfact-d1} 秒殲滅所有反恐小組隊員。"
+		"funfact_bots_assumed:f"										"{s:funfact-player} 在該回合控制了 {d:funfact-d1} 名電腦玩家。"
+		"funfact_domination:f"											"{s:funfact-player} 壓制大多數的玩家。"
+		"funfact_revenge:f"												"{s:funfact-player} 報復了 {d:funfact-d1} 名玩家。"
+		"funfact_steps_taken:f"											"{s:funfact-player} 在比賽期間跑了 {d:funfact-d1} 步。"
+		"funfact_quarter_health:f"										"{s:funfact-player} 在生命值低於 25 的情況下殺了 {d:funfact-d1} 名玩家。"
+		"funfact_empty_guns:f"											"{s:funfact-player} 用完了 {d:funfact-d1} 把槍的所有彈藥。"
+		"funfact_slow_trigger:f"										"{s:funfact-player} 在還未用過身上的 {d:funfact-d1} 把槍之前就死亡了。"
+		"funfact_pickup_bomb:f"											"{s:funfact-player} 設置了被 {d:funfact-d1} 位隊友持有過的炸彈。"
+		"funfact_bomb_carriers:f"										"{s:funfact-player} 在上回合擊殺了 {d:funfact-d1} 名不同的炸彈持有者。"
+		"funfact_knife_bomb_planter:f"									"{s:funfact-player} 在軍刀階級擊殺了炸彈設置者並獲得勝利。"
+		"funfact_bomb_planted_before_kill:f"							"在炸彈被設置前沒有任何傷亡。"
+		"funfact_failed_bomb_plants:f"									"在該回合有 {d:funfact-d1} 名恐怖份子嘗試安裝炸彈。"
+		"funfact_knife_without_ammo:f"									"{s:funfact-player} 在彈藥耗盡後取得了 {d:funfact-d1} 次軍刀刺殺。"
+		"funfact_molotov_burns:f"										"{s:funfact-player} 使用火焰點燃了 {d:funfact-d1} 名玩家。"
+		"funfact_survival_time:f"										"{s:funfact-player} 存活時間最久：{d:funfact-d1} 秒。"
+		"funfact_pulled_trigger:f"										"{s:funfact-player} 在該場比賽扣下了 {d:funfact-d1} 次扳機。"
+		"funfact_ace:f"													"Ace! {s:funfact-player} 擊殺了敵方整隊的人員。"
+		"funfact_defuse_was_close_call_tenths:f"						"{s:funfact-player} 在還有 0.{d:funfact-d1} 秒時解除炸彈。"
+		"funfact_defuse_was_close_call_hundredths:f"					"{s:funfact-player} 在還有 0.0{d:funfact-d1} 秒時解除炸彈。"
+		"funfact_defuse_was_close_call_thousandths:f"					"{s:funfact-player} 在還有 0.00{d:funfact-d1} 秒時解除炸彈。"
+		"mapwinrecord_graph_title:f"									"{f:0:wins, plural, other{最近的勝場數}"
+		"CSGO_Recipe_Count_Items_Selected:f"							"已選擇 <b>{d:count}</b> 項物品"
+		"CSGO_Recipe_Count_Items_Remaining:f"							"剩下 <b>{d:count}</b> 項物品"
+		"CSGO_Recipe_TradeUp_Items_Remain:f"							"已選擇 {d:count} 項物品用於汰換"
+		"CSGO_Recipe_TradeUp_Items_XofY:f"								"已選擇 {d:count} / {d:recipecount} 項物品用於汰換"
+		"CSGO_Recipe_TradeUp_Items_Inv:f"								"{d:count} 項物品可供汰換"
+		"CSGO_RemoveKeychainToolCharges_Reward:f"						"+{d:item_count} 個吊飾卸除器"
+		"SFUI_Store_Offer_Days_Remaining:f"								"剩餘 {d:daysremaining} 天。"
+		"SFUI_Store_Offer_Days_Remaining_claim:f"						"剩餘 {d:daysremaining} 天"
+		"SFUI_Store_Offer_Days_Remaining_bid:f"							"剩餘 {d:daysremaining} 天可競標此提案"
+		"SFUI_Store_Offer_Days_Remaining_last_claim:f"					"領取此優惠的最後機會"
+		"SFUI_Store_Offer_Days_Remaining_last_bid:f"					"競標此提案的最後機會"
+		"SFUI_Store_Timer_Week:f"										"{f:0:value} 週"
+		"SFUI_Store_Timer_Day:f"										"{f:0:value} 天"
+		"SFUI_Store_Timer_Hour:f"										"{f:0:value} 小時"
+		"SFUI_Store_Timer_Min:f"										"{f:0:value} 分"
+		"SFUI_Store_Timer_Sec:f"										"{f:0:value} 秒"
+		"CSGO_Watch_Minute:f"											"{f:0:value} 分"
+		"xpshop_new_items:f"											"新物品！"
+		"xpshop_popup_clear_n_tracks:f"									"清除 {d:completed_tracks_count} 張已完成的通行證"
+		"xpshop_popup_clear_n_tracks_text:f"							"您已獲得 {d:completed_tracks_count} 張通行證中所有武裝庫點數。<br><br>清除 {d:completed_tracks_count} 張武裝庫通行證後，即可啟用新的通行證。這並不會影響您目前的武裝庫點數餘額。"
+		"xpshop_redeem_bid_batchover:f"									"此批次的競標已結束。得標者會在結算完成後收到通知。請明天再回來競標下一批次。將於 {d:hours_until_bid_batch} 小時後重新開放出價競標。"
+		"xpshop_redeem_not_enough_stars:f"								"您需要 {d:stars_needed} 點額外武裝庫點數。透過啟用武裝庫通行證並玩遊戲來賺取點數。"
+		"Panorama_PlayerDetails_Commendations_Left:f"					"您今天還可再稱讚 {d:num_token} 位玩家"
+		"SFUI_BuyMenu_CanOnlyCarryXGrenades:f"							"您只能攜帶 {s:s1} 顆手榴彈"
+		"SFUI_BuyMenu_MaxItemsOfType:f"									"您只能攜帶 {s:s1} 個此類型物品"
+		"SFUI_BuyMenu_MaxItemsOfTypePurchased:f"						"您只能購買 {s:s1} 個此類型物品"
+		"SFUI_BuyMenu_ReachedWeaponsExpertLimit:f"						"這場比賽已購買 {s:s1} 個"
+		"cs_rating_wins_needed:f"										"再贏得 <b>{d:winsneeded}</b> 場比賽"
+		"cs_rating_wins_needed_verbose:f"								"再贏得 <b>{d:winsneeded}</b> 場比賽以建立您的 CS 評級"
+		"cs_rating_wins_needed_verbose_intro:f"							"贏得 <b>{d:winsneeded}</b> 場比賽以建立您的 CS 評級"
+		"cs_rating_need_wins:f"											"尚需 {d:wins-needed} 場勝利"
+		"wins_count:f"													"{d:wins} 場勝利"
+		"contextmenu_lobby-count:f"										"{d:lobby_count} 個大廳"
+		"popup_useitem_button_getkeychaincharges:f"						"新增 <b>{d:item_count}</b> 個吊飾卸除器"
+		"popup_decodable_rent_weapon_count:f"							"租用 {d:numlootlist} 款武器 7 天"
+		"popup_redeem_souvenir_desc:f"									"還有 <span class=\"get-souvenir-redeem-count\">{d:redeems}</span> 個可領取的紀念包"
+		"matchmaking_stat_avgSearchTimeSeconds:f"						"{s:stat} 預計搜尋時間"
+		"matchmaking_stat_playersOnline:f"								"{d:stat} 位玩家在線上"
+		"matchmaking_stat_playersLockedIn:f"							"{d:stat} / {d:total_stat} 名玩家已確認"
+		"matchmaking_stat_playersSearching:f"							"{d:stat} 位玩家正在搜尋"
+		"matchmaking_stat_serversOnline:f"								"{d:stat} 台伺服器在線上"
+		"matchmaking_stat_ongoingMatches:f"								"{d:stat} 場比賽正在進行中"
+		"tooltip_skill_group_none:f"									"贏得 <b>{d:winsneeded}</b> 場比賽以建立您的競技技術組。"
+		"tooltip_cs_rating_none:f"										"再贏得 <b>{d:winsneeded}</b> 幾場比賽以建立您的 CS 評級。"
+		"tooltip_skill_group_nonewingman:f"								"贏得 <b>{d:winsneeded}</b> 場比賽以建立您的搭檔模式技術組。"
+		"tooltip_skill_group_nonedangerzone:f"							"危險區域技術組需要校準，請完成幾場危險區域比賽以建立您的技術組。"
+		"tooltip_skill_group_wins:f"									"<img src='file://{images}/icons/ui/trophy.svg'  vspace='6' class='player-card-tooltip-icon'/> {d:wins} 場勝利"
+		"team-intro-overtime-1st-half:f"								"延長賽 {d:overtime_num}：上半場"
+		"team-intro-overtime-2nd-half:f"								"延長賽 {d:overtime_num}：下半場"
+		"scoreboard_timeline_ot:f"										"延長賽 {d:scoreboard_ot}"
+		"eom-skillgroup-win:f"											"{s:rating_type}比賽勝場數"
+		"eom-skillgroup-map-win:f"										"{s:map} {s:rating_type}比賽勝場數"
+		"eom-skillgroup-needed-wins:f"									"贏得 {d:winsneeded} 場比賽以顯示您的技術組"
+		"WatchMenu_Viewers_dv:f"										"{d:spectatorCount} 位觀眾"
+		"Panorama_DeathPanel_DamageTaken:f"								"<font color='#A0A0A0'>受到 </font><font color='#FFFFFF'><b>{d:damage_taken}</b></font> <font color='#A0A0A0'>傷害，</font><font color='#FFFFFF'><b>命中 {d:hits_taken} 次</b></font>"
+		"Panorama_DeathPanel_DamageGiven:f"								"<font color='#A0A0A0'>造成 </font><font color='#FFFFFF'><b>{d:damage_given}</b></font> <font color='#A0A0A0'>傷害，</font><font color='#FFFFFF'><b>命中 {d:hits_given} 次</b></font>"
+		"mission_directive:f"											"<b>{d:mission-points}</b> {s:actions}"
+		"mission_directive_progress:f"									"{d:mission-progress}/<b>{d:mission-points}</b> {s:actions}"
+		"quest_11000_var_desc:f"										"在<b>{s:gamemode}：{s:location}</b> 中使用 {s:item1} 取得擊殺。"
+		"quest_11000_var_partial:f"										"…使用 {s:item1}。"
+		"quest_11000_var_ingame:f"										"使用 {s:item1} 取得擊殺。"
+		"quest_11001_var_desc:f"										"在<b>{s:gamemode}：{s:location}</b> 中使用 {s:item1} 取得擊殺。"
+		"quest_11001_var_partial:f"										"…使用 {s:item1}。"
+		"quest_11001_var_ingame:f"										"使用 {s:item1} 取得擊殺"
+		"quest_11002_var_desc:f"										"在<b>{s:gamemode}：{s:location}</b> 中使用 {s:item1} 取得擊殺。"
+		"quest_11002_var_partial:f"										"…使用 {s:item1}。"
+		"quest_11002_var_ingame:f"										"使用 {s:item1} 取得擊殺"
+		"quest_11003_var_desc:f"										"在<b>{s:gamemode}：{s:location}</b> 中使用 {s:item1} 取得擊殺。"
+		"quest_11003_var_partial:f"										"…使用 {s:item1}。"
+		"quest_11003_var_ingame:f"										"使用 {s:item1} 取得擊殺"
+		"quest_11004_var_desc:f"										"在<b>{s:gamemode}：{s:location}</b> 中贏得回合。"
+		"quest_11004_var_partial:f"										""
+		"quest_11004_var_ingame:f"										"贏得多回合"
+		"quest_11005_var_desc:f"										"在<b>{s:gamemode}：{s:location}</b> 中贏得回合。"
+		"quest_11005_var_partial:f"										""
+		"quest_11005_var_ingame:f"										"贏得多回合"
+		"quest_11006_var_desc:f"										"在<b>{s:gamemode}：{s:location}</b> 中贏得回合。"
+		"quest_11006_var_partial:f"										""
+		"quest_11006_var_ingame:f"										"贏得多回合"
+		"quest_11007_var_desc:f"										"在<b>{s:gamemode}：{s:location}</b> 中使用 {s:item1} 取得擊殺。"
+		"quest_11007_var_partial:f"										"…使用 {s:item1}。"
+		"quest_11007_var_ingame:f"										"使用 {s:item1} 取得擊殺"
+		"quest_11008_var_desc:f"										"在<b>{s:gamemode}：{s:location}</b> 中贏得回合。"
+		"quest_11008_var_partial:f"										""
+		"quest_11008_var_ingame:f"										"贏得多回合"
+		"quest_11009_var_desc:f"										"在<b>{s:gamemode}：{s:location}</b> 中贏得回合。"
+		"quest_11009_var_partial:f"										""
+		"quest_11009_var_ingame:f"										"贏得多回合"
+		"quest_11010_var_desc:f"										"在<b>{s:gamemode}：{s:location}</b> 中使用 {s:item1} 取得擊殺。"
+		"quest_11010_var_partial:f"										"…使用 {s:item1}。"
+		"quest_11010_var_ingame:f"										"使用 {s:item1} 取得擊殺"
+		"quest_11011_var_desc:f"										"在<b>{s:gamemode}：{s:location}</b> 中贏得回合。"
+		"quest_11011_var_partial:f"										""
+		"quest_11011_var_ingame:f"										"贏得多回合"
+		"quest_11012_var_desc:f"										"在<b>{s:gamemode}：{s:location}</b> 中贏得回合。"
+		"quest_11012_var_partial:f"										""
+		"quest_11012_var_ingame:f"										"贏得多回合"
+		"quest_11013_var_desc:f"										"在<b>{s:gamemode}：{s:location}</b> 中贏得回合。"
+		"quest_11013_var_partial:f"										""
+		"quest_11013_var_ingame:f"										"贏得多回合"
+		"quest_11014_var_desc:f"										"在<b>{s:gamemode}：{s:location}</b> 中贏得回合。"
+		"quest_11014_var_partial:f"										""
+		"quest_11014_var_ingame:f"										"贏得多回合"
+		"quest_11015_var_desc:f"										"在<b>{s:gamemode}：{s:location}</b> 中贏得回合。"
+		"quest_11015_var_partial:f"										""
+		"quest_11015_var_ingame:f"										"贏得多回合"
 }
 
 

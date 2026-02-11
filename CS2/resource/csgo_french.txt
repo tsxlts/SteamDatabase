@@ -102,6 +102,9 @@
 
 		"tooltip_copycrosshair"				"Copier le viseur"
 		"GameUI_Xhair_Copy_Code_Confirm"		"Remplacer le viseur actuel ?"
+ 
+		"GameUI_Confirm_Write_Setting_Title"	"Demande de modification des paramètres"
+		"GameUI_Confirm_Write_Setting_Text"		"La carte du Workshop « {s:mapname} » souhaiterait modifier vos paramètres. Votre viseur, la minicarte, le son ou d'autres éléments peuvent être concernés. Autorisez-vous ces modifications ?"
 
 		"settings_damage_prediction"			"Prédiction des dégâts"
 		"settings_damage_prediction_info"		"Déclenche immédiatement les effets audiovisuels des dégâts infligés sans attendre la confirmation du serveur. La prédiction des dégâts peut rendre la sensation de tir plus réactive, mais ajoute un risque d'erreur (par exemple, en cas de vacillement, de réduction de vitesse après dégâts, ou de mort avant que le client ne reçoive l'information). La prédiction des dégâts n'est pas active lorsque votre ping est élevé."
@@ -1961,8 +1964,8 @@
 		"Team_Cash_Award_no_income_suicide"					" +0 $ pour s'être suicidé(e)."
 		"Team_Cash_Award_Generic"							" +%s1 $ à l'équipe."
 		"Team_Cash_Award_Custom"							" +%s1 $ %s2"
-		"Team_Cash_Award_Dead_Terrorists:p{s2}"				" +%s1 $ à l'équipe pour avoir éliminé %s2 terroriste#|# +%s1 $ à l'équipe pour avoir éliminé %s2 terroristes"
-		"Team_Cash_Award_Dead_CTs:p{s2}"					" +%s1 $ à l'équipe pour avoir éliminé %s2 antiterroriste#|# +%s1 $ à l'équipe pour avoir éliminé %s2 antiterroristes"
+		"Team_Cash_Award_Dead_Terrorists:p"					" +%s1 $ à l'équipe pour avoir éliminé %s2 terroriste#|# +%s1 $ à l'équipe pour avoir éliminé %s2 terroristes"
+		"Team_Cash_Award_Dead_CTs:p"						" +%s1 $ à l'équipe pour avoir éliminé %s2 antiterroriste#|# +%s1 $ à l'équipe pour avoir éliminé %s2 antiterroristes"
 
 
 		"Notice_Bonus_Shorthanded_Eligibility"			" Dans %s1 manches, votre équipe sera éligible au bonus monétaire attribué en cas d'effectif réduit."
@@ -2138,6 +2141,8 @@
 		"CS_DeathNemesis"			"Bête noire"
 		"CS_DeathNewNemesis"		"Nouvelle bête noire"
 		"CS_DeathRevenge"			"Vengeance"
+
+		"DeathNotice_Prescient_Attacker"	"(N'est plus en vie sur le serveur)"
 
 		// Game Instructor Messages
 
@@ -2892,6 +2897,8 @@
 		"official_leaderboard_premier_season1_name"			"Saison 1"
 		"official_leaderboard_premier_season2_name"			"Saison 2"
 		"official_leaderboard_premier_season3_name"			"Saison 3"
+		"official_leaderboard_premier_season4_name"			"Saison 4"
+
 		//
 
 		"CSGO_official_leaderboard_mission_embedded"	"Classement de la mission"
@@ -3280,6 +3287,18 @@
 		"CSGO_Collectible_MapTokenRooftop_Desc"			"Décerné aux personnes ayant créé la carte CS2 Rooftop."
 		"CSGO_Collectible_MapTokenTransit"				"Insigne de carte (supprimée)"
 		"CSGO_Collectible_MapTokenTransit_Desc"			"Décerné aux personnes ayant créé la carte CS2 (supprimée)."
+		"CSGO_Collectible_MapTokenWarden"				"Insigne de carte : Warden"
+		"CSGO_Collectible_MapTokenWarden_Desc"			"Décerné aux personnes ayant créé la carte CS2 Warden."
+		"CSGO_Collectible_MapTokenStronghold"			"Insigne de carte : Stronghold"
+		"CSGO_Collectible_MapTokenStronghold_Desc"		"Décerné aux personnes ayant créé la carte CS2 Stronghold."
+		"CSGO_Collectible_MapTokenAlpine"				"Insigne de carte : Alpine"
+		"CSGO_Collectible_MapTokenAlpine_Desc"			"Décerné aux personnes ayant créé la carte CS2 Alpine."
+		"CSGO_Collectible_MapTokenPoseidon"				"Insigne de carte : Poseidon"
+		"CSGO_Collectible_MapTokenPoseidon_Desc"		"Décerné aux personnes ayant créé la carte CS2 Poseidon."
+		"CSGO_Collectible_MapTokenSanctum"				"Insigne de carte : Sanctum"
+		"CSGO_Collectible_MapTokenSanctum_Desc"			"Décerné aux personnes ayant créé la carte CS2 Sanctum."
+
+
 		"CSGO_CollectibleCoin_FortiusQuoFidelius"	"Badge de loyauté"
 		"CSGO_CollectibleCoin_FortiusQuoFidelius_Desc"	"Ce badge commémore l'appartenance loyale à la communauté de Counter-Strike avant la mise à jour Zone de danger.\n\n<i>Force et loyauté.</i>"
 		"CSGO_CollectibleCoin_FiveYearService"		"Insigne des 5 années de service"
@@ -5299,6 +5318,8 @@
 		"CSGO_set_timed_drops_neutral"			"Collection Boreal"
 		"CSGO_set_timed_drops_cool"				"Collection Ascent"
 		"CSGO_set_community_36"					"Collection Genèse"
+		"CSGO_set_timed_drops_exuberant"		"Collection Arlequin"
+		"CSGO_set_timed_drops_achroma"			"Collection Achroma"
 		/////////////////
 		// lootlist override strings
 		//////////////////
@@ -30753,7 +30774,7 @@
 
 		"PaintKit_so_moss"							"Des parties de cette arme ont été peintes selon un jeu de couleurs mousse."
 		"PaintKit_so_moss_Tag"						"Sapin bleu"
-		"PaintKit_so_sand"							"Des parties de cette arme ont été peintes selon un jeu de couleurs dune de sable.\n\n<i>Depuis que Turner est mort, nous avons un nouvel objectif : secourir Alex Kincaide - Felix Riley, Commandant</i>"
+		"PaintKit_so_sand"							"Des parties de cette arme ont été peintes selon un jeu de couleurs dune de sable.\n\n<i>Depuis que Turner est mort, nous avons un nouvel objectif : secourir Alex Kincaide – Felix Riley, commandant</i>"
 		"PaintKit_so_sand_Tag"						"Dune de sable"
 
 		"PaintKit_so_stormfront"					"Des parties de cette arme ont été peintes selon un jeu de couleurs orageux.\n\n<i>Il t'attendra au monorail</i>"
@@ -30774,7 +30795,7 @@
 		"PaintKit_so_pmc"							"Des parties de cette arme ont été peintes avec des couleurs ocre, marine et vert foncé.\n\n<i>Rona Sabri en veut encore à Sebastien de ne pas l'avoir choisie pour partir à la poursuite de Turner</i>"
 		"PaintKit_so_pmc_Tag"						"Fournisseur"
 
-		"PaintKit_so_tangerine"						"Des parties de cette arme ont été peintes à la bombe en noire et orange tangerine.\n\n<i>Rona est aussi douée qu'elle le pense… Elle est simplement trop jeune pour se rendre compte qu'elle ne devrait pas le dire à tout le monde - Felix Riley, Commandant</i>"
+		"PaintKit_so_tangerine"						"Des parties de cette arme ont été peintes à la bombe en noire et orange tangerine.\n\n<i>Rona est aussi douée qu'elle le pense… Elle est simplement trop jeune pour se rendre compte qu'elle ne devrait pas le dire à tout le monde – Felix Riley, commandant</i>"
 		"PaintKit_so_tangerine_Tag"					"Démolition"
 		"PaintKit_so_orange_accents_Tag"			"Nitro"
 
@@ -30800,7 +30821,7 @@
 		"Paintkit_hy_arctic_contrast_Tag"			"Camouflage polaire"
 		"Paintkit_hy_arctic_glacier_Tag"			"Camouflage glacier arctique"
 		
-		"PaintKit_hy_dive"							"Cette arme a été personnalisée en utilisant un film hydrographique d'un camouflage bleu.\n\n<i>Notre monde cache beaucoup de choses… mais parfois le camouflage est destiné à être vu - Booth, Marchand d'armes</i>"
+		"PaintKit_hy_dive"							"Cette arme a été personnalisée en utilisant un film hydrographique d'un camouflage bleu.\n\n<i>Notre monde cache beaucoup de choses… mais parfois le camouflage est destiné à être vu – Booth, trafiquant d'armes</i>"
 		"PaintKit_hy_dive_Tag"						"Camouflage profondeur"
 		"PaintKit_hy_ocean_Tag"						"Eau vive"
 
@@ -30924,7 +30945,7 @@
 		"PaintKit_aa_splash_p250"					"Cette arme a été peinte à l'aérographe avec des peintures transparentes sur la base d'une couche de chrome."
 		"PaintKit_aa_splash_p250_Tag"				"Splash"
 
-		"PaintKit_aa_fade"							"Cette arme a été peinte à l'aérographe avec des peintures transparentes sur la base d'une couche de chrome.\n\n<i>Ce n'est pas qu'une arme, c'est aussi un sujet de conversation - Imogen, trafiquante d'armes en formation</i>"
+		"PaintKit_aa_fade"							"Cette arme a été peinte à l'aérographe avec des peintures transparentes sur la base d'une couche de chrome.\n\n<i>Ce n'est pas qu'une arme, c'est aussi un sujet de conversation – Imogen, trafiquante d'armes en formation</i>"
 		"PaintKit_aa_fade_Tag"						"Dégradé"
 		"PaintKit_aa_fade_metallic_Tag"				"Dégradé ambré"
 		"PaintKit_aa_fade_grassland_Tag"			"Dégradé acide"
@@ -30932,7 +30953,7 @@
 		"PaintKit_aq_copper"						"Cette arme a été recouverte de cuivre."
 		"PaintKit_aq_copper_Tag"					"Cuivré"
 
-		"PaintKit_aq_blued"							"Cette arme a été bleuie à froid.\n\n<i>C'est le Malbec du design d'arme - Booth, Marchand d'armes</i>"
+		"PaintKit_aq_blued"							"Cette arme a été bleuie à froid.\n\n<i>C'est le Malbec du design d'arme – Booth, trafiquant d'armes</i>"
 		"PaintKit_aq_blued_Tag"						"Acier bleui"
 
 		"PaintKit_aq_forced"						"La couleur de cette arme a été obtenue grâce à du citron et de la moutarde égouttés sur sa surface.\n\n<i>Si tu crois déjà que c'est sale, attends de le voir sous lumière ultra-violette</i>"
@@ -31022,7 +31043,7 @@
 		"PaintKit_cu_dragon_p90_bravo"				"Ce souvenir de Chinatown a été peint d'après le motif d'un dragon.\n\n<i>La tradition peut être dangereuse</i>"
 		"PaintKit_cu_dragon_p90_bravo_Tag"			"Dragon émeraude"
 
-		"PaintKit_hy_siege_bravo"					"Ce souvenir de Siege a été personnalisé en utilisant un film hydrographique d'un camouflage.\n\n<i>Regarde-moi dans les yeux et dis-moi que c'est de l'équipement standard - Felix Riley, Commandant</i>"
+		"PaintKit_hy_siege_bravo"					"Ce souvenir de Siege a été personnalisé en utilisant un film hydrographique d'un camouflage.\n\n<i>Regarde-moi dans les yeux et dis-moi que c'est de l'équipement standard – Felix Riley, commandant</i>"
 		"PaintKit_hy_siege_bravo_Tag"				"Overgrowth"
 
 		"PaintKit_am_scales_bravo"					"Ce souvenir de Chinatown a été recouvert d'une feuille métallique avec un motif d'écailles.\n\n<i>Une arme tapageuse dans tous les sens du terme</i>"
@@ -31033,7 +31054,7 @@
 		"PaintKit_aq_etched_mac10_bravo"			"Ce souvenir de Gwalior possède des pièces gravées en laiton.\n\n<i>Il brise deux commandements à la fois</i>"
 		"PaintKit_aq_etched_mac10_bravo_Tag"		"Graven"
 
-		"PaintKit_hy_ocean_bravo"					"Ce souvenir de Seaside a été personnalisé en utilisant un film hydrographique d'un camouflage bleu.\n\n<i>Notre monde cache beaucoup de choses… mais parfois le camouflage est destiné à être vu - Booth, Marchand d'armes</i>"
+		"PaintKit_hy_ocean_bravo"					"Ce souvenir de Seaside a été personnalisé en utilisant un film hydrographique d'un camouflage bleu.\n\n<i>Notre monde cache beaucoup de choses… mais parfois le camouflage est destiné à être vu – Booth, trafiquant d'armes</i>"
 
 		"PaintKit_cu_season_elites_bravo"			"Ce souvenir d'Agency possède une couleur en patine sombre et des crosses en limba noir.\n\n<i>Quand la construction classique rencontre l'esthétique moderne</i>"
 		"PaintKit_cu_season_elites_bravo_Tag"		"Limba noir"
@@ -31054,11 +31075,11 @@
 		"PaintKit_an_emerald_bravo"					"Ce souvenir de Chinatown a été peint avec de la peinture transparente émeraude à effet anodisé sur la base d'une couche de chrome.\n\n<i>C'est donc ce à quoi le grand Sebastien Hennequet a été réduit ? Un instit' hystérique ? Qu'est-ce qui t'es arrivé… - Le Professeur et l'Iconoclaste Partie 2</i>"
 		"PaintKit_an_emerald_bravo_Tag"				"Émeraude"
 
-		"PaintKit_an_navy_bravo"					"Ce souvenir d'Ali a été peint avec de la peinture transparente bleu marine à effet anodisé sur la base d'une couche de chrome.\n\n<i>J'ai déjà perdu un homme à cause des mensonges de Valeria… Je ne compte pas en perdre un autre - Felix Riley, Commandant</i>"
+		"PaintKit_an_navy_bravo"					"Ce souvenir d'Ali a été peint avec de la peinture transparente bleu marine à effet anodisé sur la base d'une couche de chrome.\n\n<i>J'ai déjà perdu un homme à cause des mensonges de Valeria… Je ne compte pas en perdre un autre – Felix Riley, commandant</i>"
 
 		"PaintKit_sp_hazard_bravo"					"Ce souvenir de Siege a été peint à la bombe avec des motifs de bandes de danger.\n\n<i>NE PAS TRAVERSER</i>"
 
-		"PaintKit_sp_tape_dots_bravo"				"Ce souvenir de Gwalior a été peint à la bombe avec des pochoirs tel que du ruban adhésif déchiré et du métal perforé.\n\n<i>T'inquiète pas… Le business va bientôt reprendre - Booth, Marchand d'Armes</i>"
+		"PaintKit_sp_tape_dots_bravo"				"Ce souvenir de Gwalior a été peint à la bombe avec des pochoirs tel que du ruban adhésif déchiré et du métal perforé.\n\n<i>T'inquiète pas… Le business va bientôt reprendre – Booth, trafiquant d'armes</i>"
 
 		"PaintKit_hy_mayan_dreams_bravo"			"Ce souvenir de Ruins a été personnalisé en utilisant un film hydrographique aux motifs de nuages maya.\n\n<i>Parfois, un sacrifice est nécessaire</i>"
 		"PaintKit_hy_mayan_dreams_bravo_Tag"		"Rêves mayas"
@@ -31075,7 +31096,7 @@
 
 		"PaintKit_so_olive_bravo"					"Des parties de ce souvenir de Cache ont été peintes selon un jeu de couleurs vert olive.\n\n<i>Ne jamais prendre la victoire comme acquise</i>"
 
-		"PaintKit_an_gunmetal_bravo"				"Ce souvenir de Siege a été peint avec une peinture à effet anodisé gunmetal sur la base d'une couche de chrome.\n\n<i>Tu ne connais pas Felix Riley comme moi… L'homme est impossible à briser - Le Traître et Le Chercheur de Vérité Partie 1</i>"
+		"PaintKit_an_gunmetal_bravo"				"Ce souvenir de Siege a été peint avec une peinture à effet anodisé gunmetal sur la base d'une couche de chrome.\n\n<i>Tu ne connais pas Felix Riley comme moi… L'homme est impossible à briser – Le Traître et Le Chercheur de Vérité Partie 1</i>"
 		
 		"PaintKit_am_ossify_blue"					"Cette arme a été personnalisée en utilisant un film hydrographique bleu abstrait transparent sur la base d'une couche métallique."
 		"PaintKit_am_ossify_blue_p2000_bravo"		"Ce souvenir de Seaside a été personnalisé en utilisant un film hydrographique bleu transparent abstrait sur la base d'une couche métallique.\n\n<i>Les vagues se brisent, pas notre détermination - Kotaro Izaki, Expert en failles</i>"
@@ -31223,7 +31244,7 @@
 		"PaintKit_aq_obsidian"                      "Cette arme possède des parties cuivrées qui ont été recouvertes d'un motif magma et patinées d'une couleur rouge en utilisant du chlorure de sodium et une forte chaleur. Les zones non-masquées ont ensuite été foncées par oxydation en utilisant du foie de soufre.\n\n<i>Une cadence de tir enflammée</i>"
 		"PaintKit_aq_obsidian_tag"                  "Magma"
 
-		"PaintKit_am_turqoise_halftone"             "Cette arme a été personnalisée en utilisant un film hydrographique d'un imposant motif tramé sur la base d'une couche de peinture métallique turquoise.\n\n<i>Felix, nous savons tous les deux que Valeria est sur le point de mener une guerre. La seule question est : es-tu prêt ? - Booth, Marchand d'armes</i>"
+		"PaintKit_am_turqoise_halftone"             "Cette arme a été personnalisée en utilisant un film hydrographique d'un imposant motif tramé sur la base d'une couche de peinture métallique turquoise.\n\n<i>Felix, nous savons tous les deux que Valeria est sur le point de mener une guerre. La seule question est : es-tu prêt ? – Booth, trafiquant d'armes</i>"
 		"PaintKit_am_turqoise_halftone_tag"         "Cobalt tramé"
 
 
@@ -31394,7 +31415,7 @@
 		"PaintKit_am_royal"							"Cette arme a été peinte avec de la peinture transparente bleu royal et ambre à effet anodisé sur la base d'une couche de chrome.\n\n<i>Tu as sagement choisi</i>"
 		"PaintKit_am_royal_Tag"						"Calice"
 		
-		"PaintKit_am_metals"						"Cette arme a été incrustée de laiton d'après un thème d'armure de la Renaissance.\n\n<i>Comment ça vous ne trouvez pas Cocinero et Izaki ? - Felix Riley, Commandant</i>"
+		"PaintKit_am_metals"						"Cette arme a été incrustée de laiton d'après un thème d'armure de la Renaissance.\n\n<i>Comment ça vous ne trouvez pas Cocinero et Izaki ? – Felix Riley, commandant</i>"
 		"PaintKit_am_metals_Tag"					"Chevalier"
 		
 		"PaintKit_am_chainmail"						"Cette arme a été peinte en utilisant un film hydrographique semi-transparent d'un motif de cotte de mailles sur la base d'une couche argentée.\n\n<i>De tous les membres de Phoenix, aucun n'est plus loyal à Valeria que sa garde du corps Naomi</i>"
@@ -31409,7 +31430,7 @@
 		"PaintKit_hy_vines"							"Cette arme a été personnalisée en utilisant un film hydrographique de vignes courbées et de fleurs.\n\n<i>Un vrai baiser d'amour ne peut vous sauver de ses épines</i>"
 		"PaintKit_hy_vines_Tag"						"Églantier"
 		
-		"PaintKit_so_indigo"						"Cette arme a été peinte selon un jeu de couleurs indigo, rouge cramoisi et gris.\n\n<i>Tu devrais sourire Felix, t'aurais plus de chance avec les femmes si t'avais pas l'air aussi austère à longueur de temps - Imogen, Trafiquante d'Armes en Formation</i>"
+		"PaintKit_so_indigo"						"Cette arme a été peinte selon un jeu de couleurs indigo, rouge cramoisi et gris.\n\n<i>Tu devrais sourire Felix, t'aurais plus de chance avec les femmes si t'avais pas l'air aussi austère à longueur de temps – Imogen, apprentie marchande d'armes</i>"
 		"PaintKit_so_indigo_Tag"					"Bleu royal"
 		
 		"PaintKit_so_indigo_and_grey"				"Cette arme a été peinte selon un jeu de couleurs indigo, bleu et gris.\n\n<i>Alex Kincaide, je suis sûr que vous avez plein de questions… laissez-moi vous donner quelques réponses - Le Phoenix et Le Conteur Partie 1</i>"
@@ -31558,7 +31579,7 @@
 		"PaintKit_cu_glock_deathtoll"							"Cette arme a été personnalisée en utilisant un film hydrographique de crânes sur une base de peinture en métal argenté.\n\n<i>L'intimidation est la forme la plus sincère de la flatterie</i>"
 		"PaintKit_cu_glock_deathtoll_Tag"						"Catacombes"
 		
-		"PaintKit_cu_m4a4_ancestral"							"Cette arme a été personnalisée avec l'image d'un rouge et bleu.\n\n<i>Une arme digne du Roi des singes - Booth, Marchand d'armes</i>"
+		"PaintKit_cu_m4a4_ancestral"							"Cette arme a été personnalisée avec l'image d'un dragon rouge et bleu.\n\n<i>Une arme digne du Roi des singes – Booth, trafiquant d'armes</i>"
 		"PaintKit_cu_m4a4_ancestral_Tag"						"龍王 (Roi dragon)"
 		
 		"PaintKit_cu_m249_sektor"								"Cette arme a été personnalisée d'un design de science-fiction.\n\n<i>La couverture n'a jamais été aussi bonne</i>"
@@ -31598,7 +31619,7 @@
 	"PaintKit_cu_ak47_mastery"									"Cette arme a été personnalisée en utilisant une combinaison de film hydrographique et de pochoirs minutieusement appliqués et détaillée grâce à des décalcomanies à transfert de chaleur.\n\n<i>Avance avec prudence Naomi… Dans ton métier, les gens ne sont pas connus pour leur longévité - Le Bouclier et Le Serpent Partie 2</i>"
 	"PaintKit_cu_ak47_mastery_Tag"								"Version d'élite"
 	
-	"PaintKit_aq_mp7_ultramodern"								"Cette arme a été personnalisée avec de la peinture à base d'huile noir et des pièces en acier inoxydable brossées et incrustées.\n\n<i>Parfait pour l'exploitant qui valorise la sophistication ainsi que la puissance de feu - Booth, Marchand d'armes</i>"
+	"PaintKit_aq_mp7_ultramodern"								"Cette arme a été personnalisée avec de la peinture à base d'huile noire et de pièces en acier inoxydable brossées et incrustées.\n\n<i>Parfait pour l'exploitant qui valorise la sophistication ainsi que la puissance de feu – Booth, trafiquant d'armes</i>"
 	"PaintKit_aq_mp7_ultramodern_Tag"							"Cœur blindé"
 	
 	"PaintKit_aq_awp_twine"										"Cette arme a été personnalisée avec l'image d'un crâne et de racines en utilisant de la peinture émaillée haute durabilité.\n\n<i>Certaines racines ne sont pas bonnes à prendre</i>"
@@ -31636,7 +31657,7 @@
 		"PaintKit_cu_sawedoff_origami"								"Cette arme a été personnalisée avec un design inspiré de l'origami.\n\n<i>Cela prend du temps de construire quelque chose de magnifique, mais seulement un instant pour le détruire</i>"
 		"PaintKit_cu_sawedoff_origami_Tag"							"Origami"
 	
-	"PaintKit_cu_cz75_precision"								"Cette arme a été personnalisée dans un thème de course rouge et gris.\n\n<i>C'est notre seule chance, faisons ça bien - Felix Riley, Commandant</i>"
+	"PaintKit_cu_cz75_precision"								"Cette arme a été personnalisée dans un thème de course rouge et gris.\n\n<i>C'est notre seule chance, faisons ça bien – Felix Riley, commandant</i>"
 	"PaintKit_cu_cz75_precision_Tag"							"Pole position"
 	
 	"PaintKit_am_ump_racer"										"Cette arme a été personnalisée avec un motif de course démodé.\n\n<i>N'oublie pas ton casque</i>"
@@ -31665,7 +31686,7 @@
 	"PaintKit_sp_labyrinth1"									"Cette arme a été peinte à la bombe grâce à un pochoir d'un labyrinthe isométrique.\n\n<i>Les rois ne sont que des hommes… et aucun homme ne devrait être vénéré - Valeria Jenner, Révolutionnaire</i>"
 	"PaintKit_sp_labyrinth1_Tag"								"Astérion"
 	
-	"PaintKit_sp_labyrinth2"									"Cette arme a été peinte à la bombe grâce à un pochoir d'un labyrinthe isométrique.\n\n<i>Personnellement je préfère la 4e édition, mais le client a toujours raison - Booth, Trafiquant d'Armes</i>"
+	"PaintKit_sp_labyrinth2"									"Cette arme a été peinte à la bombe avec un pochoir d'un labyrinthe isométrique.\n\n<i>Personnellement je préfère la 4ᵉ édition, mais le client a toujours raison – Booth, trafiquant d'armes</i>"
 	"PaintKit_sp_labyrinth2_Tag"								"Éclaireur"
 	
 	"PaintKit_sp_labyrinth3"									"Cette arme a été peinte à la bombe grâce à un pochoir d'un labyrinthe isométrique.\n\n<i>Imogen… s'ils découvrent ce que tu as fait, on risque de le payer cher - Une affaire de famille, partie 1</i>"
@@ -31696,13 +31717,13 @@
 	// "PaintKit_an_emerald_bravo_Tag"							"Emerald"
 	"PaintKit_an_emerald"										"Cette arme a été peinte avec de la peinture transparente émeraude à effet anodisé sur la base d'une couche de chrome.\n\n<i>C'est donc ce à quoi le grand Sebastien Hennequet a été réduit ? Un instit' hystérique ? Qu'est-ce qui t'es arrivé… - Le Professeur et l'Iconoclaste Partie 2</i>"
 	
-	"PaintKit_so_khaki_green"									"Des parties de cette arme ont été peintes selon un jeu de couleurs vert kaki et noir.\n\n<i>Qui il était ne change pas qui il est devenu. T'en fait pas Felix… Je vais l'arrêter - Le Paladin et Le Professeur Partie 2</i>"
+	"PaintKit_so_khaki_green"									"Des parties de cette arme ont été peintes selon un jeu de couleurs vert kaki et noir.\n\n<i>Qui il était ne change pas qui il est devenu. T'en fais pas Felix… Je vais l'arrêter – Le Paladin et Le Professeur Partie 2</i>"
 	"PaintKit_so_khaki_green_Tag"								"Para vert"
 	
 	"PaintKit_cu_anime_aug"										"Cette arme a été personnalisée avec des décalcomanies à transfert de chaleur en vinyle d'une couverture d'un magazine d'animé.\n\n<i>Yatta!</i>"
 	"PaintKit_cu_anime_aug_Tag"									"Akihabara Accept"
 	
-	"PaintKit_am_bamboo_jungle"									"Cette arme a été personnalisée avec un motif bambou fait en utilisant de la peinture métallique.\n\n<i>Note comme l'armurier Yukako a utilisé le bois de l'AK-47 pour accentuer son thème verdoyant… ne fais pas d'erreur : l'Hydroponie est aussi belle et mortelle que la nature elle-même - Imogen, Trafiquante d'Armes en Formation</i>"
+	"PaintKit_am_bamboo_jungle"									"Cette arme a été personnalisée avec un motif bambou réalisé à la peinture métallique.\n\n<i>Note comme l'armurière Yukako a utilisé le bois de l'AK-47 pour accentuer son thème verdoyant… ne te méprend pas : l'hydroponie est aussi belle et mortelle que la nature elle-même – Imogen, apprentie marchande d'armes</i>"
 	"PaintKit_am_bamboo_jungle_Tag"								"Hydroponie"
 	
 	"PaintKit_hy_bamboo_jungle_ink"								"Cette arme a été personnalisée en utilisant un film hydrographique de bambou peint au pinceau.\n\n<i>Insérez un blague sur les pousses ici</i>"
@@ -31711,7 +31732,7 @@
 	"PaintKit_hy_bamboo_jungle_black"							"Cette arme a été personnalisée en utilisant un film hydrographique de bambou peint au pinceau.\n\n<i>Kotaro a perdu son fils avec cette arme… et un jour il l'utilisera pour arrêter l'homme responsable</i>"
 	"PaintKit_hy_bamboo_jungle_black_Tag"						"Ombre de bambou"
 	
-	"PaintKit_hy_bamboo_jungle"									"Cette arme a été personnalisée en utilisant un film hydrographique de bambou peint au pinceau.\n\n<i>Je pense toujours qu'elle devrait avoir un panda - Booth, Trafiquant d'armes</i>"
+	"PaintKit_hy_bamboo_jungle"									"Cette arme a été personnalisée en utilisant un film hydrographique de bambou peint au pinceau.\n\n<i>Je pense toujours qu'elle devrait avoir un panda – Booth, trafiquant d'armes</i>"
 	"PaintKit_hy_bamboo_jungle_Tag"								"Forêt de bambou"
 	
 	"PaintKit_am_geometric_steps"								"Cette arme a été personnalisée avec un motif géométrique en peinture métallique.\n\n<i>Moment de sérénité…</i>"
@@ -31735,7 +31756,7 @@
 	"PaintKit_hy_kimono_diamonds_red"							"Cette arme a été personnalisée en utilisant un film hydrographique d'un motif géométrique.\n\n<i>Turner, tous les hommes peuvent être brisés… il suffit de trouver le bon point de pression - Le Traître et Le Chercheur de Vérité Partie 2</i>"
 	"PaintKit_hy_kimono_diamonds_red_Tag"						"Kimono pourpre"
 	
-	"PaintKit_sp_kimono_diamonds"								"Cette arme a été peinte à la bombe avec un motif géométrique.\n\n<i>Viens Booth, je vais te montrer ce sur quoi je travaille - Yukako, Armurier</i>"
+	"PaintKit_sp_kimono_diamonds"								"Cette arme a été peinte à la bombe avec un motif géométrique.\n\n<i>Viens Booth, je vais te montrer ce sur quoi je travaille – Yukako, armurière</i>"
 	"PaintKit_sp_kimono_diamonds_Tag"							"Kimono menthe"
 	
 	"PaintKit_am_seastorm"										"Cette arme a été personnalisée en utilisant un film hydrographique d'une mer agitée sur la base d'une couche métallique bleue.\n\n<i>Je ne te déteste pas Sebastien… Je te plains - Chase Turner, Transfuge de coalition</i>"
@@ -31805,7 +31826,7 @@
 	"PaintKit_cu_ump45_uproar"										"Cette arme a été personnalisée en utilisant une combinaison d'un film hydrographique et de décalcomanies à transfert de chaleur.\n\n<i>Si vous ne vouliez pas de dommages collatéraux, peut-être aurait-il fallu le dire plus tôt… - Javier Alviso, Poing de The Phoenix</i>"
 	"PaintKit_cu_ump45_uproar_Tag"									"Émeute"
 
-	"PaintKit_cu_usp_progressiv"										"Cette arme a été personnalisée avec un design moderne noir, blanc et jaune.\n\n<i>Ils te manipulent, Kotaro. Et si tu n'arrives pas à le voir, tu es beaucoup plus en danger que tu ne le penses… - Felix Riley, Commandant</i>"
+	"PaintKit_cu_usp_progressiv"										"Cette arme a été personnalisée avec un design moderne noir, blanc et jaune.\n\n<i>Ils te manipulent, Kotaro. Et si tu n'arrives pas à le voir, tu es beaucoup plus en danger que tu ne le penses… – Felix Riley, commandant</i>"
 	"PaintKit_cu_usp_progressiv_Tag"									"Torque"
 
 
@@ -31848,7 +31869,7 @@
 	"PaintKit_hy_p250_crackshot"										"Cette arme a été personnalisée en utilisant un film hydrographique dynamique.\n\n<i>Parfois, un subtil coup de coude est tout ce qu'il faut pour obtenir ce que tu veux - Franz Kriegeld, Tacticien Phoenix</i>"
 	"PaintKit_hy_p250_crackshot_Tag"									"Tir emplumé"
 
-	"PaintKit_gs_scar20_peacemaker03"										"Cette arme a reçu un motif camouflage avec une peinture métallique.\n\n<i>Écoutez tous… Izaki et Cocinero peuvent être absents mais notre mission reste la même : nous sauvons Alex Kincaide - Felix Riley, Commandant</i>"
+	"PaintKit_gs_scar20_peacemaker03"										"Cette arme a reçu un motif camouflage avec une peinture métallique.\n\n<i>Écoutez tous… Izaki et Cocinero ont beau être absents, notre mission reste la même : nous allons sauver Alex Kincaide – Felix Riley, commandant</i>"
 	"PaintKit_gs_scar20_peacemaker03_Tag"									"Vert marine"
 
 	"PaintKit_cu_ssg08_technicality"										"Cette arme a été personnalisée avec un filtre hydrographique jaune et orange puis légèrement patiné.\n\n<i>Une victoire, même marquée d'un astérisque, reste une victoire - Rona Sabri, Étoile Montante</i>"
@@ -31888,7 +31909,7 @@
 	"PaintKit_cu_negev_impact"										"Cette arme a été personnalisée en utilisant un film hydrographique évoquant la machinerie lourde.\n\n<i>Craint des Reines. Adoré des Fous.</i>"
 	"PaintKit_cu_negev_impact_Tag"									"Power Loader"
 
-	"PaintKit_am_p2000_imperial_red"										"Cette arme a été gravée au laser et peinte avec des peintures métallisées rouge et jaune.\n\n<i>Ce que je ressens est sans importance Keo, j'ai un empire à protéger - Booth, Trafiquant d'armes</i>"
+	"PaintKit_am_p2000_imperial_red"										"Cette arme a été gravée au laser et peinte avec des peintures métallisées rouge et jaune.\n\n<i>Ce que je ressens est sans importance Keo, j'ai un empire à protéger – Booth, trafiquant d'armes</i>"
 	"PaintKit_am_p2000_imperial_red_Tag"									"Impérial"
 
 	"PaintKit_cu_p90_shapewood"										"La crosse en bois a été sculptée à la main, poncée et vernie.\n\n<i>Pinces non comprises</i>"
@@ -31897,10 +31918,10 @@
 	"PaintKit_gs_sawedoff_necromancer"										"Cette arme a été personnalisée d'un film hydrographique en forme de crâne et d'accents en or peints à la main.\n\n<i>Rosencrantz et Guildenstern n'avaient aucune chance…</i>"
 	"PaintKit_gs_sawedoff_necromancer_Tag"									"Yorick"
 
-	"PaintKit_hy_scar20_jungler"										"Cette arme a été personnalisée d'ombres vertes vives.\n\n<i>Valeria devient de plus en plus téméraire… il est temps de passer à l'attaque - Felix Riley, Commandant</i>"
+	"PaintKit_hy_scar20_jungler"										"Cette arme a été personnalisée d'ombres vertes vives.\n\n<i>Valeria devient de plus en plus téméraire… il est temps de passer à l'attaque – Felix Riley, commandant</i>"
 	"PaintKit_hy_scar20_jungler_Tag"									"Épidémie"
 
-	"PaintKit_gs_sg553_tiger_moth"										"Cette arme a été personnalisée d'un motif d'écaille martre.\n\n<i>Valeria devient de plus en plus téméraire… il est temps de passer à l'attaque - Felix Riley, Commandant</i>"
+	"PaintKit_gs_sg553_tiger_moth"										"Cette arme a été personnalisée d'un motif d'écaille martre.\n\n<i>Valeria devient de plus en plus téméraire… il est temps de passer à l'attaque – Felix Riley, commandant</i>"
 	"PaintKit_gs_sg553_tiger_moth_Tag"									"Écaille martre"
 
 	"PaintKit_cu_tec9_avalanche"										"Cette arme a été personnalisée avec un film hydrographique futuriste et épuré.\n\n<i>Nous devons bien réfléchir à notre façon de l'approcher, un seul faux pas et elle nous tombera dessus - Le serpent et le chercheur de vérité</i>"
@@ -31921,7 +31942,7 @@
 	"PaintKit_cu_bizon_citizen"											"Cette arme a été personnalisée d'un motif camouflage et accentuée d'une peinture fluorescente.\n\n<i>Ce ne sont pas les vagues que vous entendez…</i>"
 	"PaintKit_cu_bizon_citizen_Tag"										"Zone photique"
 
-	"PaintKit_aq_deserteagle_kumichodragon"								"Des dragons ont été gravés au laser sur la glissière et la crosse.\n\n<i>J'admire grandement votre travail, Yukako. Nous devrions discuter… - Huxley, la compétition</i>"
+	"PaintKit_aq_deserteagle_kumichodragon"								"Des dragons ont été gravés au laser sur la glissière et la crosse.\n\n<i>J'admire grandement votre travail, Yukako. Nous devrions discuter… – Huxley, la compétition</i>"
 	"PaintKit_aq_deserteagle_kumichodragon_Tag"							"Dragon Kumicho"
 
 	"PaintKit_aq_dualberettas_cartel"									"Cette arme a été gravée de motifs de crânes squelettiques et de fleurs et possède une crosse personnalisée.\n\n<i>C'est pourquoi Huxley fait le gros du travail. Tout ce que nous devons faire, c'est l'encourager à aller de l'avant… - Le serpent et le chercheur de vérité, partie 2"
@@ -31930,7 +31951,7 @@
 	"PaintKit_aq_famas_contour"											"Cette arme a été personnalisée avec un design moderne rouge et gris, complétant la forme de l'arme.\n\n<i>Nous sommes toujours plus forts ensemble</i>"
 	// re-use "PaintKit_aq_p250_contour_Tag"
 
-	"PaintKit_cu_fiveseven_augmented"									"Cette arme a été personnalisée d'un film hydrographique numérique et la glissière a été personnalisée d'une fine couche de peinture.\n\n<i>Je ne profite pas de la guerre, je profite de la condition humaine… - Booth, trafiquant d'armes</i>"
+	"PaintKit_cu_fiveseven_augmented"									"Cette arme a été personnalisée d'un film hydrographique numérique et la glissière a été personnalisée d'une fine couche de peinture.\n\n<i>Je ne profite pas de la guerre, je profite de la condition humaine… – Booth, trafiquant d'armes</i>"
 	"PaintKit_cu_fiveseven_augmented_Tag"								"Triumvirat"
 	
 	"PaintKit_gs_glock18_award"											"Cette arme a été méticuleusement gravée.\n\n<i>Naomi comprendra qu'un jour, elle mourra pour Valeria</i>"
@@ -31971,7 +31992,7 @@
 	"PaintKit_cu_bizon_Curse"										"Cette arme a été personnalisée d'un thème égyptien.\n\n<i>Sa gâchette est plus légère qu'une plume</i>"
 	"PaintKit_cu_bizon_Curse_Tag"									"Jugement d'Anubis"
 
-	"PaintKit_gs_cz75a_redastor"										"Cette arme a été personnalisée d'accents rouges et blancs peints à la main.\n\n<i>Booth est devenu synonyme de scandale familial ; et qui a du temps pour les scandales lorsque l'on parle de business ? Huxley, La compétition</i>"
+	"PaintKit_gs_cz75a_redastor"										"Cette arme a été personnalisée d'accents rouges et blancs peints à la main.\n\n<i>Booth est devenu synonyme de scandale familial ; et qui a du temps pour les scandales lorsque l'on parle de business ? – Huxley, la compétition</i>"
 	"PaintKit_gs_cz75a_redastor_Tag"									"Astor rouge"
 
 	"PaintKit_gs_dualberettas_ventilators"										"Ces pistolets ont été élégamment peints à l'aide de chrome.\n\n<i>Une arme pour les artistes, créés par les artistes</i>"
@@ -31992,7 +32013,7 @@
 	"PaintKit_am_mp9_bioleak"										"Différents tons de vert créent l'illusion d'un déversement de produits chimiques.\n\n<i>ÉVITEZ UNE EXPOSITION DIRECTE</i>"
 	"PaintKit_am_mp9_bioleak_Tag"									"Fuite biologique"
 
-	"PaintKit_hy_p2000_oceani"										"Cette arme a été personnalisée d'une sous-couche noire et accentuée de touches de bleu.\n\n<i>Personne n'a entendu parler de Kotaro ou de Carmen ? - Felix Riley, Commandant</i>"
+	"PaintKit_hy_p2000_oceani"										"Cette arme a été personnalisée d'une sous-couche noire et accentuée de touches de bleu.\n\n<i>Personne n'a eu de nouvelles de Kotaro ou de Carmen ? – Felix Riley, commandant</i>"
 	"PaintKit_hy_p2000_oceani_Tag"									"Océanique"
 
 	"PaintKit_cu_p250_asiimov"										"Cette arme a été personnalisée d'un design de science-fiction.\n\n<i>Si vous pensez que j'ai besoin d'un fusil pour tuer quelqu'un, vous ne savez vraiment pas à qui vous parlez… - Mikha Biton, Sniper de The Phoenix</i>"
@@ -32408,7 +32429,7 @@
 		"PaintKit_slick_red"						"Du daim noir a été entrelacé avec du cuir écarlate pour donner à ces gants une apparence intemporelle.\n\n<i>Laissez votre marque, mais pas celles de vos empreintes</i>"
 		"PaintKit_slick_red_tag"					"Tissage pourpre"
 		
-		"PaintKit_slick_snakeskin_yellow"			"Ces gants sont un mélange de cuir brun, de cuir noir et de peau de serpent.\n\n<i>Les versions réglementaires, c'est pour les crétins - Imogen, trafiquante d'armes en formation</i>"
+		"PaintKit_slick_snakeskin_yellow"			"Ces gants sont un mélange de cuir brun, de cuir noir et de peau de serpent.\n\n<i>Les versions réglementaires, c'est pour les crétins – Imogen, apprentie marchande d'armes</i>"
 		"PaintKit_slick_snakeskin_yellow_tag"		"Diamantin"
 		
 		"PaintKit_sporty_green"						"Ces gants verts et blancs ont été fabriqués par Icarus Athletics.\n\n<i>Seuls les lâches ont peur de voler près du soleil</i>"
@@ -32441,7 +32462,7 @@
 		"PaintKit_motorcycle_mono_boom"				"Cette paire a été personnalisée d'onomatopées de bande dessinées.\n\n<i>POW ! BOUM ! BIFF !</i>"
 		"PaintKit_motorcycle_mono_boom_tag"			"Boum !"
 		
-		"PaintKit_motorcycle_mint_triangle"			"Le cuir blanc et la couture rouge utilisés lors de la conception de ces gants les rendent aussi élégants que confortables.\n\n<i>Pour ce qu'il nous coûte, Huxley pourrait au moins nous donner des boîtes de pastilles à la menthe… - Felix Riley, commandant</i>"
+		"PaintKit_motorcycle_mint_triangle"			"Le cuir blanc et la couture rouge utilisés lors de la conception de ces gants les rendent aussi élégants que confortables.\n\n<i>Pour ce qu'il nous coûte, Huxley pourrait au moins nous donner des boîtes de pastilles à la menthe… – Felix Riley, commandant</i>"
 		"PaintKit_motorcycle_mint_triangle_tag"		"Menthe verte"
 		
 		"PaintKit_motorcycle_triangle_blue"			"Le cuir bleu utilisé lors de la conception de ces gants a été accentué de formes géométriques aux couleurs de l’arctique.\n\n<i>Les combats n'ont été aussi rafraîchissants</i>"
@@ -32585,16 +32606,16 @@
 	"PaintKit_gs_FAMAS_Rally"										"Cette arme a été personnalisée de motifs sur mesure ressemblant à un rally.\n\n<i>La sécurité avant tout</i>"
 	"PaintKit_gs_FAMAS_Rally_Tag"									"Rally"
 
-	"PaintKit_aq_Five_Seven_Scumbria"								"Cette arme a été personnalisée de rayures discrètes.\n\n<i>Tu ne peux pas le laisser mourir, Felix ; tu dois le sauver - La Fille et le Paladin, partie 1</i>"
+	"PaintKit_aq_Five_Seven_Scumbria"								"Cette arme a été personnalisée de rayures discrètes.\n\n<i>Tu ne peux pas le laisser mourir, Felix, tu dois le sauver – La Fille et le Paladin, partie 1</i>"
 	"PaintKit_aq_Five_Seven_Scumbria_Tag"									"Maquereau"
 
-	"PaintKit_gs_G3SG1_Ventilator"									"Cette arme a été personnalisée de peintures noires et chromes ainsi que du matériel caoutchouteux.\n\n<i>Ne t'inquiète pas Naomi, je ferai payer Felix - Mikha Biton, Sniper de The Phoenix</i>"
+	"PaintKit_gs_G3SG1_Ventilator"									"Cette arme a été personnalisée de peintures noires et chromes ainsi que d'une crosse en caoutchouc.\n\n<i>Ne t'inquiète pas Naomi, je ferai payer Felix – Mikha Biton, Sniper de The Phoenix</i>"
 	"PaintKit_gs_G3SG1_Ventilator_Tag"									"Conduits"
 
 	"PaintKit_cu_Glock18_Weasel"									"Cette arme a été personnalisée d'une belette.\n\n<i>J'entends le loup, le renard et la belette…</i>"
 	"PaintKit_cu_Glock18_Weasel_Tag"									"Belette"
 
-	"PaintKit_cu_MAG7_Tribal"										"Cette arme a été personnalisée pour donner l'illusion d'une gravure de pierre.\n\n<i>Les conflits existent depuis que les premiers hommes préhistoriques ont appris à ramasser une pierre – Booth, Trafiquant d'armes</i>"
+	"PaintKit_cu_MAG7_Tribal"										"Cette arme a été personnalisée pour donner l'illusion d'une gravure de pierre.\n\n<i>Les conflits existent depuis que les premiers hommes préhistoriques ont appris à ramasser une pierre – Booth, trafiquant d'armes</i>"
 	"PaintKit_cu_MAG7_Tribal_Tag"									"Pétroglyphe"
 
 	"PaintKit_cu_MP9_Narcis"										"Cette arme a été peinte en blanc et son chargeur a été peint en rouge.\n\n<i>Une arme d'exception pour les fusillades inattendues</i>"
@@ -32649,7 +32670,7 @@
 	"PaintKit_cu_galil_ar-camo"										"Cette arme a été peinte en noir et camouflage.\n\n<i>Mikah Baton est sur le point de débuter sa campagne contre la Coalition Taskforce</i>"
 	"PaintKit_cu_galil_ar-camo_Tag"									"Sable noir"
 
-	"PaintKit_aa_hide-mp9"										"Cette arme a été peinte en gris et en brun clair.\n\n<i>Nous devons nous préparer pour les représailles - Felix Riley, commandant</i>"
+	"PaintKit_aa_hide-mp9"										"Cette arme a été peinte en gris et en brun clair.\n\n<i>Nous devons nous préparer pour les représailles – Felix Riley, commandant</i>"
 	"PaintKit_aa_hide-mp9_Tag"									"Écaille sablonneuse"
 
 	"PaintKit_cu_m4a1_flashback"										"Cette arme a été peinte à la main dans le but de représenter la condition humaine.\n\n<i>Le rire est le propre de l'homme</i>"
@@ -32670,7 +32691,7 @@
 	"PaintKit_gs_p90_shallow_grave"										"Les poignées de cette arme ont été peintes pour ressembler à des pierres runiques, et un motif hydrographique d'un squelette a été appliqué sur sa crosse.\n\n<i>Avec le nombre de corps que tu accumules, qui a le temps de creuser ?</i>"
 	"PaintKit_gs_p90_shallow_grave_Tag"									"Tombe"
 
-	"PaintKit_cu_usp_cyrex"										"Cette arme a été personnalisée de marques rouges afin de lui donner un look futuriste.\n\n<i>Imogen était la Felix du passé, je suis le futur - Huxley, la compétition</i>"
+	"PaintKit_cu_usp_cyrex"										"Cette arme a été personnalisée de marques rouges afin de lui donner un look futuriste.\n\n<i>Imogen était la Felix du passé, je suis le futur – Huxley, la compétition</i>"
 	"PaintKit_cu_usp_cyrex_Tag"									"Cyrex"
 
 	"PaintKit_cu_wp_sawedoff"										"Quelqu'un a gardé une trace de ses victimes sur le canon.\n\n<i>Un cadeau parfait pour le sociopathe qui a déjà tout…</i>"
@@ -33077,7 +33098,7 @@
 	"PaintKit_gs_ssg08_checker"										"Damier bleu et blanc peint à la main.\n\n<i>Pas de frein à votre prise en main</i>"
 	"PaintKit_gs_ssg08_checker_Tag"									"Frein à main"
 	
-	"PaintKit_aa_fade_mp7"											"Cette arme a été peinte à l'aérographe avec des peintures transparentes sur la base d'une couche de chrome.\n\n<i>Ce n'est pas qu'une arme, c'est aussi un sujet de conversation - Imogen, trafiquante d'armes en formation</i>"
+	"PaintKit_aa_fade_mp7"											"Cette arme a été peinte à l'aérographe avec des peintures transparentes sur la base d'une couche de chrome.\n\n<i>Ce n'est pas qu'une arme, c'est aussi un sujet de conversation – Imogen, apprentie marchande d'armes</i>"
 	"PaintKit_aa_fade_mp7_Tag"										"Dégradé"
 
 	"PaintKit_sp_tape_short_rally"									"Des stries noires ont été bombées sur une base noire.\n\n<i>La terre ne fait pas de mal… jusqu'à ce qu'on tombe</i>"	
@@ -33454,7 +33475,7 @@
 	"PaintKit_hy_ddpat_urban_red"								"Cette arme a été personnalisée en utilisant un film hydrographique d'un camouflage rouge numérique.\n\n<i>Si tu es assez proche pour remarquer les pixels, il déjà trop tard.</i>"
 	"PaintKit_hy_ddpat_urban_red_Tag"							"Rouge numérique"
 
-	"PaintKit_hy_dry_wood"										"Un motif à l'aspect de bois séché a été peint par hydrographie sur cette arme.\n\n<i>Touche du bois, car t'auras besoin de beaucoup de chance.</i> (Felix Riley, commandant)"
+	"PaintKit_hy_dry_wood"										"Un motif à l'aspect de bois séché a été peint par hydrographie sur cette arme.\n\n<i>Touche du bois, car t'auras besoin de beaucoup de chance – Felix Riley, commandant</i>"
 	"PaintKit_hy_dry_wood_Tag"									"Bois échauffé"
 
 	"PaintKit_hy_desert_multicam"								"Cette arme a été personnalisée en utilisant un film hydrographique MultiCam noir et ambré.\n\n<i>Pas de tir, pas de cible.</i>"
@@ -33512,7 +33533,7 @@
 	"PaintKit_gs_aug_sand_storm"								"Un motif représentant une tempête de sable sous un ciel étoilé a été peint sur cette arme.\n\n<i>La beauté est partout, il suffit de savoir où regarder.</i>"
 	"PaintKit_gs_aug_sand_storm_Tag"							"Tempête de sable"
 
-	"PaintKit_sp_dry_wood"										"Un motif à l'aspect de bois séché a été peint sur cette arme en utilisant une bombe couleur marron.\n\n<i>Touche du bois, car t'auras besoin de beaucoup de chance.</i> (Felix Riley, commandant)"
+	"PaintKit_sp_dry_wood"										"Un motif à l'aspect de bois séché a été peint sur cette arme en utilisant une bombe couleur marron.\n\n<i>Touche du bois, car t'auras besoin de beaucoup de chance – Felix Riley, commandant</i>"
 	"PaintKit_sp_dry_wood_Tag"									"Bois de grève"
 
 	"PaintKit_sp_desert_skulls_dawn"							"Un motif de crânes d'animaux a été peint à la bombe sur cette arme.\n\n<i>Il ne reste qu'un tas d'os.</i>"
@@ -33936,7 +33957,7 @@
 	"PaintKit_hy_geometric_steps_pearl"								"Un motif d'illusion d'optique nacré a été appliqué à cette arme.\n\n<i>Où est-ce que ça commence ? Où est-ce que ça s'arrête ? Est-ce que ça s'arrête ?</i>"
 	"PaintKit_hy_geometric_steps_pearl_Tag"							"Terrasse prismatique"
 
-	"PaintKit_gs_m4a1_vertigo"										"Plusieurs panneaux de sécurité multicolores ont été peints sur cette arme.\n\n<i>Ne dis pas que tu savais pas…</i> (Booth, trafiquant d'armes)"
+	"PaintKit_gs_m4a1_vertigo"										"Plusieurs panneaux de sécurité multicolores ont été peints sur cette arme.\n\n<i>Ne dis pas que tu savais pas… – Booth, trafiquant d'armes</i>"
 	"PaintKit_gs_m4a1_vertigo_Tag"									"Danger imminent"
 
 	"PaintKit_hy_vertigogeo"										"Un motif multicolore d'une grille isométrique a été appliqué à cette arme.\n\n<i>Tu te rappelles la douleur, je me rappelle la victoire.</i>"
@@ -34040,7 +34061,7 @@
 
 // COMMUNITY_30
 
-	"PaintKit_cu_ak47_nightwish"									"Cette arme a été personnalisée avec un élan et des attrape-rêves aux couleurs néon. Une finition nacrée y a été appliquée en dernière touche.\n\n<i>J'attendais le bon moment pour la sortir…</i> (Booth, trafiquant d'armes)"
+	"PaintKit_cu_ak47_nightwish"									"Cette arme a été personnalisée avec un élan et des attrape-rêves aux couleurs néon. Une finition nacrée y a été appliquée en dernière touche.\n\n<i>J'attendais le bon moment pour la sortir… – Booth, trafiquant d'armes</i>"
 	"PaintKit_cu_ak47_nightwish_Tag"								"Songe nocturne"
 
 	"PaintKit_cu_bizon_spacecat"									"Cette arme a été personnalisée avec la représentation d'un chat dans l'espace sur une base noire et violette.\n\n<i>Les pattes de la création</i>"
@@ -34155,7 +34176,7 @@
 	"PaintKit_cu_mag7_insomnia"										"Cette arme a été personnalisée avec une illustration aux couleurs orange et noir représentant des poissons qui nagent vers la bouche ouverte d'une personne.\n\n<i>Glou, glou, glou</i>"
 	"PaintKit_cu_mag7_insomnia_Tag"									"Insomnie"
 
-	"PaintKit_cu_ak_head_shot_holo"									"Cette arme a été personnalisée avec le graffiti « HEAD SHOT GUN » recouvert d'une couche de finition nacrée.\n\n<i>Avoir des ambitions, c'est une chose. Les réaliser, c'en est une autre.</i> (Booth, trafiquant d'armes)"
+	"PaintKit_cu_ak_head_shot_holo"									"Cette arme a été personnalisée avec le graffiti « HEAD SHOT GUN » recouvert d'une couche de finition nacrée.\n\n<i>Avoir des ambitions, c'est une chose. Les réaliser, c'en est une autre. – Booth, trafiquant d'armes</i>"
 	"PaintKit_cu_ak_head_shot_holo_Tag"								"Head Shot"
 
 	"PaintKit_gs_awp_limbo_snake"									"Un serpent a été peint des deux côtés de cette arme : l'un est rouge, l'autre est doré.\n\n<i>Il faut toujours voir les deux côtés de la médaille</i>"
@@ -34271,7 +34292,7 @@
 	"PaintKit_ak_porcelain"											"Le motif appliqué à cette arme s'inspire de la porcelaine chinoise traditionnelle et de la faïence de Delft.\n\n<i>Un véritable héritage familial transmis de génération en génération</i>"
 	"PaintKit_ak_porcelain_Tag"										"Héritage" 
 	
-	"PaintKit_awp_tempered"											"Cet AWP a été personnalisé avec une couche de peinture réflective, des finitions multicolores et une lunette en fibre de carbone.\n\n<i>« Ça vient d'où ? − T'as pas besoin de savoir »</i> (Booth, trafiquant d'armes)"
+	"PaintKit_awp_tempered"											"Cet AWP a été personnalisé avec une couche de peinture réflective, des finitions multicolores et une lunette en fibre de carbone.\n\n<i>« Ça vient d'où ? − T'as pas besoin de savoir » – Booth, trafiquant d'armes</i>"
 	"PaintKit_awp_tempered_Tag"										"Canon chromé"
 	
 	"PaintKit_dual_berettas_lethal_grin"							"Cette arme a été personnalisée avec un motif multicolore.\n\n<i>Allons, allons, ne soyez pas timide</i>"
@@ -34398,7 +34419,7 @@
 		"PaintKit_zeus_tosai"								"Cette arme a été personnalisée avec un petit poisson koï, aussi appelé tosaï.\n\n<i>Que la fortune vous sourie</i>"
 		"PaintKit_zeus_tosai_Tag"							"Tosaï"
 		
-		"PaintKit_nova_rising_sun"							"Cette arme a été personnalisée pour faire penser à un motif de vitrail japonais.\n\n<i>Attendez de le voir au soleil – Imogen, trafiquante d'arme en formation</i>"
+		"PaintKit_nova_rising_sun"							"Cette arme a été personnalisée pour faire penser à un motif de vitrail japonais.\n\n<i>Attendez de le voir au soleil – Imogen, apprentie marchande d'armes</i>"
 		"PaintKit_nova_rising_sun_Tag"						"Soleil levant"
 		
 		"PaintKit_p90_boost_blue"							"Cette arme a été personnalisée avec un motif angulaire bleu et vert.\n\n<i>Bleu de colère ou vert de peur, à vous de décider</i>"
@@ -34718,7 +34739,7 @@
 		"PaintKit_soe_pink_pearl"							"Cette arme a été peinte en noir et en rose perlé.\n\n<i>Quel raffinement !</i>"
 		"PaintKit_soe_pink_pearl_Tag"						"Perle rose"
 
-		"PaintKit_hy_mtp"									"Un motif de camouflage multiterrain vert et marron a été appliqué à cette arme.\n\n<i>C'est une antiquité, mais elle tient encore le coup – Imogen, trafiquante d'arme en formation</i>"
+		"PaintKit_hy_mtp"									"Un motif de camouflage multiterrain vert et marron a été appliqué à cette arme.\n\n<i>C'est une antiquité, mais elle tient encore le coup – Imogen, apprentie marchande d'armes</i>"
 		"PaintKit_hy_mtp_Tag"								"Multiterrain"
 
 		"PaintKit_soe_plum"									"Cette arme a été peinte d'un violet satiné profond.\n\n<i>« C'est du fuschia, ça s'écrit f-u-c-h-s-i-a »</i>"
@@ -34792,13 +34813,13 @@
 		"PaintKit_so_ceramic"								"Cette arme a été peinte dans une couleur neutre.\n\n<i>Reprise par la force</i>"
 		"PaintKit_so_ceramic_Tag"							"Céramique écrue"
 
-		"PaintKit_so_greyblue"								"Cette arme a été peinte en bleu et en or rose.\n\n<i>J'essaie quelque chose de différent, dis-moi ce que tu en penses – Yukako, Armurier</i>"
+		"PaintKit_so_greyblue"								"Cette arme a été peinte en bleu et en or rose.\n\n<i>J'essaie quelque chose de différent, dis-moi ce que tu en penses – Yukako, armurière</i>"
 		"PaintKit_so_greyblue_Tag"							"Oxyde de cuivre"
 
 		"PaintKit_soch_hueshift_desat"						"Cette arme a été personnalisée avec un motif vert et brun.\n\n<i>Certains de nos objectifs ne sont pas… alignés</i>"
 		"PaintKit_soch_hueshift_desat_Tag"					"Remous verts"
 
-		"PaintKit_soch_marble_grips"						"Ces Dual Berettas ont été peints en vert vif et argenté. Les finitions des poignées ont reçu une couche de céramique.\n\n<i>Ils imposent le respect, mais je ne peux pas dire la même chose de vous… – Booth, Trafiquant d'armes</i>"
+		"PaintKit_soch_marble_grips"						"Ces Dual Berettas ont été peints en vert vif et argenté. Les finitions des poignées ont reçu une couche de céramique.\n\n<i>Ils imposent le respect, mais je ne peux pas dire la même chose de vous… – Booth, trafiquant d'armes</i>"
 		"PaintKit_soch_marble_grips_Tag"					"Malachite polie"
 
 		"PaintKit_aq_titanium_acid"							"La base verte de ce Révolver a été trempée thermiquement dans un mélange au charbon de bois.\n\n<i>Toutes saisons</i>"
@@ -34911,7 +34932,7 @@
 		"PaintKit_ht_earth_fans"							"Cette arme a été personnalisée avec un motif d'éventail en demi-teinte bleu sarcelle et marron.\n\n<i>Idéal pour brasser de l'air</i>"
 		"PaintKit_ht_earth_fans_Tag"						"Éventail mentholé"
 		
-		"PaintKit_hye_blue_paisley"							"Cette arme a été personnalisée avec un motif cachemire bleu.\n\n<i>Tu ne mérites que les étoffes les plus fines, Booth – Yukako, Armurier</i>"
+		"PaintKit_hye_blue_paisley"							"Cette arme a été personnalisée avec un motif cachemire bleu.\n\n<i>Tu ne mérites que les étoffes les plus fines, Booth – Yukako, armurière</i>"
 		"PaintKit_hye_blue_paisley_Tag"						"Cachemire cobalt"
 		
 		"PaintKit_hye_coral"								"Un motif corallien vert et bleu a été appliqué à cette arme.\n\n<i>La nature doucement rigole, car elle a créé l'inimaginable</i>"
@@ -34931,6 +34952,120 @@
 		
 		"PaintKit_cue_stratosphere"							"Cette arme a été personnalisée avec des vaisseaux spatiaux qui volent en orbite autour d'une planète.\n\n<i>« Dans un futur proche, très proche… »</i>"
 		"PaintKit_cue_stratosphere_Tag"						"Stratosphère"
+		
+		// ACHROMA COLLECTION
+		"PaintKit_soe_ddpat_swirl_bw"						"Un motif numérique en niveaux de gris a été appliqué à cette arme.\n\n<i>On tourne en rond</i>"
+		"PaintKit_soe_ddpat_swirl_bw_Tag"					"Dizzy"
+
+		"PaintKit_hye_car_wrap_bizon"						"Un motif en niveaux de gris a été appliqué à cette arme.\n\n<i>Plus vite que ça !</i>"
+		"PaintKit_hye_car_wrap_bizon_Tag"					"Bizoom"
+
+		"PaintKit_soe_acrylic_flow3"						"Un motif acrylique en niveaux de gris a été appliqué à cette arme.\n\n<i>Tout est bien qui finit bien</i>"
+		"PaintKit_soe_acrylic_flow3_Tag"					"Déversement argenté"
+
+		"PaintKit_hye_comic_shapes"							"Un motif en niveaux de gris avec une peinture argentée brillante a été appliqué à cette arme.\n\n<i>« Le voyant rouge, c'est parce que ça tourne »</i>"
+		"PaintKit_hye_comic_shapes_Tag"						"Sans Comic"
+
+		"PaintKit_hye_chrome_ripple"						"Un motif en niveaux de gris a été appliqué à cette arme.\n\n<i>Une ondulation dans l'espace-temps</i>"
+		"PaintKit_hye_chrome_ripple_Tag"					"Zinc"
+
+		"PaintKit_hye_car_wrap_3"							"Un motif angulaire en niveaux de gris a été appliqué à cette arme.\n\n<i>Intérieurs raffinés adaptés aux extérieurs bruts</i>"
+		"PaintKit_hye_car_wrap_3_Tag"						"Grésil"
+
+		"PaintKit_hye_geobirds"								"Un motif en niveaux de gris orné d'oiseaux argentés a été appliqué à cette arme.\n\n<i>C'est comment vu d'en haut ?</i>"
+		"PaintKit_hye_geobirds_Tag"							"Courants"
+
+		"PaintKit_hye_mp5_car_wrap4"						"Un motif en niveaux de gris aux formes angulaires et nettes a été appliqué à cette arme.\n\n<i>Inébranlable</i>"
+		"PaintKit_hye_mp5_car_wrap4_Tag"					"Blizzard"
+
+		"PaintKit_soe_bw_blast"								"Un motif de bois teinté à la peinture brillante a été appliqué à cette arme.\n\n<i>Tiens, voilà de quoi te venger… – Booth, trafiquant d'armes</i>"
+		"PaintKit_soe_bw_blast_Tag"							"Vendetta"
+
+		"PaintKit_hye_abstract_knot_m4"						"Un motif abstrait de nœuds en niveaux de gris a été appliqué à cette arme.\n\n<i>Que le vent te porte</i>"
+		"PaintKit_hye_abstract_knot_m4_Tag"					"Ténèbres éoliens"
+
+		"PaintKit_soch_smoke_grips"							"La poignée de cette arme a été peinte avec un motif en acrylique foncé.\n\n<i>De bonne famille</i>"
+		"PaintKit_soch_smoke_grips_Tag"						"Chambre sombre"
+
+		"PaintKit_soe_aug_creep"							"Cette arme a été peinte avec des branches noueuses et des oiseaux sur un fond argenté.\n\n<i>« Ils tournent en rond… »</i>"
+		"PaintKit_soe_aug_creep_Tag"						"Rhizome"
+
+		"PaintKit_hye_abstract_knot"						"Un motif abstrait de nœuds en niveaux de gris a été appliqué à cette arme.\n\n<i>Que le vent te porte</i>"
+		"PaintKit_hye_abstract_knot_Tag"					"Lumière éolienne"
+
+		"PaintKit_hye_car_wrap"								"Un motif en niveaux de gris a été appliqué à cette arme.\n\n<i>Tiré des pages de votre roman graphique préféré</i>"
+		"PaintKit_hye_car_wrap_Tag"							"Le Daily Deagle"
+
+		"PaintKit_soe_p2000_grips"							"Un motif réalisé avec différentes nuances de peinture argentée a été appliqué à cette arme. Certaines parties de la poignée ont été peintes avec une peinture mate foncée pour imiter l'adhésif antidérapant.\n\n<i>Accrochez-vous bien !</i>"
+		"PaintKit_soe_p2000_grips_Tag"						"Poignée adhésive"
+
+		"PaintKit_hye_zeds"									"Un motif en niveaux de gris orné de figures géométriques blanches a été appliqué sur une base en fibre de carbone à cette arme.\n\n<i>+5 en vitesse de maniement des armes</i>"
+		"PaintKit_hye_zeds_Tag"								"Percée"
+
+		"PaintKit_ht_white_edges"							"Un motif de cercles en niveaux de gris a été appliqué sous un dessin holographique à cette arme.\n\n<i>Cartes graphiques des systèmes holographiques</i>"
+		"PaintKit_ht_white_edges_Tag"						"Rainures fluo"
+
+		"PaintKit_soe_bw_the_end_awp"						"Cette arme a été personnalisée dans des tons aubergine et blanc, avec des flammes, des roses et l'inscription « the end » devant la gâchette.\n\n<i>Une histoire à deux visages</i>"
+		"PaintKit_soe_bw_the_end_awp_Tag"					"The End"
+
+		// EXUBERANT COLLECTION
+		"PaintKit_hye_animal_print_lc"						"Un motif animalier marron a été appliqué à cette arme.\n\n<i>On avait dit « quelques animaux », pas « tout le règne animal »</i>"
+		"PaintKit_hye_animal_print_lc_Tag"					"Imprimé safari"
+
+		"PaintKit_hye_firework_patches_famas"				"Un motif d'explosion dorée a été appliqué à cette arme.\n\n<i>« Les vrais durs ne regardent pas les explosions »</i>"
+		"PaintKit_hye_firework_patches_famas_Tag"			"Produit dérivé"
+
+		"PaintKit_hye_geobirds_sunrise"						"Des oiseaux argentés sur un motif couleur bordeaux ont été appliqués à cette arme.\n\n<i>C'est comment vu d'en haut ?</i>"
+		"PaintKit_hye_geobirds_sunrise_Tag"					"Courants thermiques"
+
+		"PaintKit_hye_batik_eyes"							"Un motif de feuille de bananier cramoisi et noir a été appliqué à cette arme.\n\n<i>Cibles en mouvement</i>"
+		"PaintKit_hye_batik_eyes_Tag"						"Batik cramoisi"
+
+		"PaintKit_hye_paisley_desat"						"Cette arme a été personnalisée avec un motif cachemire doré sur un fond bordeaux.\n\n<i>Je t'ai gardé les étoffes les plus délicates, Booth – Yukako, armurière</i>"
+		"PaintKit_hye_paisley_desat_Tag"					"Nectar cachemire"
+
+		"PaintKit_soch_copper_accent_revolver"				"La poignée de cette arme a été peinte avec un motif en acrylique couleur prune.\n\n<i>Un grand millésime</i>"
+		"PaintKit_soch_copper_accent_revolver_Tag"			"Mauve-qui-peut"
+
+		"PaintKit_soe_yellow_bits"							"Les rainures de ce MP9 argenté ont été peintes en jaune et rouge.\n\n<i>Retenez-moi !</i>"
+		"PaintKit_soe_yellow_bits_Tag"						"Bizon ruché"
+
+		"PaintKit_hye_test_animal_print_45"					"Un motif animalier marron et rouge a été appliqué à cette arme.\n\n<i>On avait dit « quelques animaux », pas « tout le règne animal »</i>"
+		"PaintKit_hye_test_animal_print_45_Tag"				"Sang bouillant"
+
+		"PaintKit_hye_paisley_warm"							"Cette arme a été personnalisée avec un motif cachemire rouge et orange.\n\n<i>Je t'ai gardé les étoffes les plus délicates, Booth – Yukako, armurière</i>"
+		"PaintKit_hye_paisley_warm_Tag"						"Cachemire corail"
+
+		"PaintKit_soe_red"									"Un motif rouge de croix a été appliqué à cette arme.\n\n<i>C'est un peu excessif, mais n'est-ce pas le but ? – Imogen, apprentie marchande d'armes</i>"
+		"PaintKit_soe_red_Tag"								"Pique-nique"
+
+		"PaintKit_hye_batik_eyes_tec9"						"Un motif de feuille de bananier jaune et noir a été appliqué à cette arme.\n\n<i>Riche en potassium</i>"
+		"PaintKit_hye_batik_eyes_tec9_Tag"					"Feuille de bananier"
+
+		"PaintKit_hye_earth_mandala"						"Un motif de mandala multicolore a été appliqué à cette arme.\n\n<i>Voyage voyage</i>"
+		"PaintKit_hye_earth_mandala_Tag"					"Mandala céleste"
+
+		"PaintKit_hye_earth_mandala_lc"						"Un motif de mandala multicolore a été appliqué à cette arme.\n\n<i>Voyage voyage</i>"
+		"PaintKit_hye_earth_mandala_lc_Tag"					"Mandala terrestre"
+
+		"PaintKit_soe_yellow_xm"							"Un motif jaune et des finitions argentées ont été appliquées à cette arme.\n\n<i>ZZZZZAP !</i>"
+		"PaintKit_soe_yellow_xm_Tag"						"XoooM"
+
+		"PaintKit_soe_pink_cranes"							"Un motif rose et blanc de grues et de fleurs a été appliqué à cette arme.\n\n<i>À déguster de préférence avec un bon verre de Sherry</i>"
+		"PaintKit_soe_pink_cranes_Tag"						"Vanille fraise"
+
+		"PaintKit_ht_red_edges_fineline"					"Un motif calligraphique rouge a été appliqué à cette arme.\n\n<i> Écrivez-le à l'encre rouge</i>"
+		"PaintKit_ht_red_edges_fineline_Tag"				"Calligrafaux"
+
+		"PaintKit_hye_firework_patches"						"Un motif d'explosion rouge a été appliqué à cette arme.\n\n<i>« Les vrais durs ne regardent pas les explosions »</i>"
+		"PaintKit_hye_firework_patches_Tag"					"Exothermique"
+
+		"PaintKit_soe_purple"								"Un motif camouflage violet à la finition nacrée a été appliqué à cette arme.\n\n<i>Une nouvelle concoction !</i>"
+		"PaintKit_soe_purple_Tag"							"Potion soporifique"
+
+		"PaintKit_hye_animal_print_90s"						"Un motif animalier aux couleurs vives et fluo a été appliqué à cette arme.\n\n<i>On avait dit « quelques couleurs », pas « toutes les couleurs »</i>"
+		"PaintKit_hye_animal_print_90s_Tag"					"Bringue bigarrée"
+
 // END TIMED DROPS 2025
 
 // LIMITED TIME ITEM
@@ -34938,7 +35073,10 @@
 		"PaintKit_soch_mountains_xm1014"					"Cette arme a été personnalisée avec un motif montagneux.\n\n<i>La solitude n'est pas un fardeau, mais un privilège</i>"
 		"PaintKit_soch_mountains_xm1014_Tag"				"Solitude"
 
-		// END LIMITED TIME ITEM
+		"PaintKit_gsch_ak_djiin"							"La carcasse et le canon ont été peints avec une peinture métallisée. Le protège-main et la crosse ont été peints pour imiter la nacre.\n\n<i>D'un autre plan</i>"
+		"PaintKit_gsch_ak_djiin_Tag"						"Aphrodite"
+
+// END LIMITED TIME ITEM
 
 		//Recipes
 		"CSGO_Recipe_TradeUp"						"Contrat d'échange"
@@ -35636,6 +35774,12 @@
 		"SFUI_Map_de_golden"		"Golden"
 		"SFUI_Map_de_rooftop"		"Rooftop"
 		"SFUI_Map_de_transit"		"(Supprimée)"
+
+		"SFUI_Map_de_warden"		"Warden"
+		"SFUI_Map_de_stronghold"	"Stronghold"
+		"SFUI_Map_cs_alpine"		"Alpine"
+		"SFUI_Map_de_poseidon"		"Poséidon"
+		"SFUI_Map_de_sanctum"		"Sanctum"
 
 		"SFUI_Map_workshop_preview_dust2"	"Dust II (aperçu)"
 		"SFUI_Map_workshop_preview_ancient"	"Ancient (aperçu)"
@@ -37514,6 +37658,15 @@
 		"CSGO_Demo_Next_Camera"						"[{s:bind_jump}] : changer de vue"
 		"CSGO_Demo_Toggle_XRay"						"[{s:bind_slot12}] : activer le rayon X"
 		"CSGO_Demo_Toggle_Overview"					"[{s:bind_duck}] : activer la vue d'ensemble"
+		"CSGO_Demo_Settings_XRay"					"Rayons X (activer/désactiver avec [{s:bind_slot12}])"
+		"CSGO_Demo_Settings_TrueView_Explanation"	"Reconstitue l'expérience originale du client en exécutant à nouveau la prévision côté client. Cela permet de reproduire plus fidèlement les paramètres que le serveur a utilisés pour enregistrer les impacts de balles."
+		"CSGO_Demo_Settings_TrueView_Enable"		"Activer TrueView"
+		"CSGO_Demo_Settings_TrueViewDOA"				"Inclure les actions post-mortem"
+		"CSGO_Demo_Settings_TrueViewDOA_Explanation"	"Recrée les prédictions du client qui n'ont pas été exécutées sur le serveur parce que l'agent observé était mort lorsque les commandes ont été reçues. La désactivation de cette option rend la rediffusion différente de l'expérience originale, mais elle sera plus fidèle à ce qui s'est passé sur le serveur."
+		"CSGO_Demo_Settings_TrueViewWrongVersion"		"Autoriser les incompatibilités dans les versions de rediffusion"
+		"CSGO_Demo_Settings_TrueViewWrongVersion_Explanation"	"Si la version du client d'origine diffère de celle utilisée pour visionner la rediffusion, TrueView risque de ne pas fonctionner correctement. Si vous voulez quand même l'essayer, activez cette option."
+
+
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// Date formatting
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -37942,6 +38095,9 @@
 		"CSGO_Collectible_PremierSeason3Coin"		"Médaille du mode Premier (saison 3)"
 		"CSGO_Collectible_PremierSeason3Coin_Desc"	"Il s'agit d'une médaille commémorative du mode Premier décernée pour votre participation active à la troisième saison du mode Premier."
 
+		"CSGO_Collectible_PremierSeason4Coin"		"Médaille du mode Premier (saison 4)"
+		"CSGO_Collectible_PremierSeason4Coin_Desc"	"Il s'agit d'une médaille commémorative du mode Premier décernée pour votre participation active à la quatrième saison du mode Premier."
+
 		//for main menu display
 		"SFUI_XP_Bonus_1"							"Bonus d'XP hebdomadaire disponible !"
 		"SFUI_XP_Bonus_2"							"Obtenez un item aléatoire la prochaine fois que vous montez de niveau !"
@@ -38100,11 +38256,12 @@
 		"xpshop_upsell_mainmenu_2_v2"				"Accédez à la nouvelle collection Train, à la caisse Fièvre, aux porte-bonheurs et bien plus encore."
 		"xpshop_upsell_btn"							"Obtenir un passe"
 		"xpshop_upsell_tooltip"						"En savoir plus sur le {s:pass}"
-		"xpshop_new_items"							"Nouveautés !"
+
+		"xpshop_new_items:p{new-count}"	"Nouveauté !#|#Nouveautés !"
 		"xpshop_lootlist_info"						"La <span class=\"text-color-white\"><b>{s:casename}</b></span> contient l'un des items suivants"
 
 		"xpshop_limited_item_variations"			"Variantes de finition"
-		"xpshop_limited_item_variations_tooltip"	"Exemples de variantes possibles que vous pourriez obtenir avec cet item en édition limitée."
+		"xpshop_limited_item_variations_tooltip"	"Exemples de variantes possibles (motif et usure) que vous pourriez obtenir avec cet item en édition limitée."
 		"xpshop_pass_activate"						"Activer un passe"
 		"xpshop_pass_activate_open_armory"			"Ouvrez l'arsenal pour l'activer"
 		"xpshop_pass_activate_desc"					"Activez un passe pour commencer à gagner des crédits de l'arsenal."
@@ -40023,8 +40180,8 @@
 		"SFUI_Settings_MiniScoreboardPlayerCount_Tooltip"	"Pendant la phase active de la manche, remplace les avatars par le nombre de personnes en vie dans chaque équipe dans le mini tableau des scores."
 
 
-		"Post_Round_Damage_Report_Given:p{s1}"			" • Dégâts infligés → %s3 : %s2 en %s1#|# • Dégâts infligés → %s3 : %s2 en %s1"
-		"Post_Round_Damage_Report_Taken:p{s1}"			" • Dégâts subis ← %s3 : %s2 en %s1#|# • Dégâts subis ← %s3 : %s2 en %s1"
+		"Post_Round_Damage_Report_Given:p"			" • Dégâts infligés → %s3 : %s2 en %s1#|# • Dégâts infligés → %s3 : %s2 en %s1"
+		"Post_Round_Damage_Report_Taken:p"			" • Dégâts subis ← %s3 : %s2 en %s1#|# • Dégâts subis ← %s3 : %s2 en %s1"
 
 		"SFUI_TeamOverheadID"					"Afficher l'équipement de l'équipe"
 
@@ -40503,8 +40660,8 @@
 
 		"SFUI_UserAlertNoteType_1"			"Les serveurs (%s1) sont actuellement en cours de surcharge."
 		"SFUI_UserAlertNoteType_2"			"Les serveurs (%s1) sont déconnectés pour cause de maintenance."
-		"SFUI_UserAlertNoteType_LowPlayersR:p{players}"	"Seule %players% personne compatible recherche une partie dans votre région (%region%).#|#Seules %players% personnes compatibles recherchent une partie dans votre région (%region%)."
-		"SFUI_UserAlertNoteType_LowPlayersY:p{players}"	"Seule %players% personne compatible recherche une partie dans votre région.#|#Seules %players% personnes compatibles recherchent une partie dans votre région."
+		"SFUI_UserAlertNoteType_LowPlayersR:p"	"Seule %players% personne compatible recherche une partie dans votre région (%region%).#|#Seules %players% personnes compatibles recherchent une partie dans votre région (%region%)."
+		"SFUI_UserAlertNoteType_LowPlayersY:p"	"Seule %players% personne compatible recherche une partie dans votre région.#|#Seules %players% personnes compatibles recherchent une partie dans votre région."
 
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"Échec de la connexion au match."
 		"SFUI_QMM_ERROR_NotLoggedIn"		"Connexion au service de matchmaking Counter-Strike inexistante."
@@ -45663,6 +45820,7 @@
 		"prime_unranked"				"Match non classé"
 		"prime_not_enrolled_label"		"Comptes non Prime"
 		"prime_disabled_label"			"Prime désactivé"
+		"matchmaking_expected_wait_time"	"<img src='file://{images}/icons/ui/recent.svg' class='map-selection-info__wait-icon'/>Temps d'attente : {s:time}"
 		"no_steam_group_link"			"Vous ne faites partie d'aucun groupe Steam."
 
 		"permissions_title"					"Permissions"
@@ -46101,11 +46259,14 @@
 		"annotations_local"							"Stockage local"
 		"annotations_workshop"						"Workshop"
 		"annotations_official"						"Officiel"
+		"annotations_none"							"Aucun guide de carte"
 		"Workshop_annotation_title"					"Outil d'envoi de guide de carte"
 		"Workshop_annotation_error_title"			"Donnez un titre à votre guide de carte."
 		"Workshop_annotation_error_file"			"Sélectionnez un fichier d'annotation .txt valide."
 		"Workshop_annotation_ready"					"Votre item est prêt à l'envoi."		
 		"UI_File_Filter_SupportedAnnotationFormat"	"Fichiers texte (*.txt)"
+		"annotations_visit_workshop"				"Voir le Workshop ⤤"
+
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Game Mode Desc
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -48334,20 +48495,196 @@
 		"quest_11015_var_desc:p{mission-points}"	 	"Gagnez une manche en mode <b>{s:gamemode} sur {s:location}</b>.#|#Gagnez des manches en mode <b>{s:gamemode} sur {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Gagnez une manche.#|#Gagnez des manches."
 
-// crow_mask_51509_comment
-// crow_mask_51510_comment
-}
+// crow_mask_51513_comment
+// crow_mask_51514_comment
 
-
-
-
-}
-
-
- manche.#|#Gagnez des manches."
-
-// crow_mask_51357_comment
-// crow_mask_51358_comment
+		"SFUI_PlayerCount_Alive_Left:f"									"{left_side_alive, plural, one{EN VIE} other{EN VIE}}"
+		"SFUI_PlayerCount_Alive_Right:f"								"{right_side_alive, plural, one{EN VIE} other{EN VIE}}"
+		"funfact_damage_no_kills:f"										"{funfact-d1, plural, one{{s:funfact-player} a infligé {d:funfact-d1} de dégâts sans faire de victime.} other{{s:funfact-player} a infligé {d:funfact-d1} de dégâts sans faire de victime.}}"
+		"funfact_kills_with_single_grenade:f"							"{funfact-d1, plural, one{{s:funfact-player} a touché {d:funfact-d1} unité ennemie avec une grenade.} other{{s:funfact-player} a touché {d:funfact-d1} unités ennemies avec une grenade.}}"
+		"funfact_kill_defuser:f"										"{s:funfact-player} a empêché le désamorçage."
+		"funfact_kill_rescuer:f"										"{s:funfact-player} a empêché le sauvetage de l'otage."
+		"funfact_killed_enemies:f"										"{funfact-d1, plural, one{{s:funfact-player} a tué {d:funfact-d1} unité ennemie.} other{{s:funfact-player} a tué {d:funfact-d1} unités ennemies.}}"
+		"funfact_first_kill:f"											"{funfact-d1, plural, one{{d:funfact-d1} seconde après le début de la manche, {s:funfact-player} a fait la première victime.} other{{d:funfact-d1} secondes après le début de la manche, {s:funfact-player} a fait la première victime.}}"
+		"funfact_first_blood:f"											"{funfact-d1, plural, one{{s:funfact-player} a fait couler le sang en premier {d:funfact-d1} seconde après le début de la manche.} other{{s:funfact-player} a fait couler le sang en premier {d:funfact-d1} secondes après le début de la manche.}}"
+		"funfact_short_round:f"											"{funfact-d1, plural, one{Cette manche n'a duré que {d:funfact-d1} seconde !} other{Cette manche n'a duré que {d:funfact-d1} secondes !}}"
+		"funfact_best_accuracy:f"										"{funfact-d1, plural, one{{s:funfact-player} a eu un taux de précision de {d:funfact-d1} %.} other{{s:funfact-player} a eu un taux de précision de {d:funfact-d1} %.}}"
+		"funfact_knife_kills:f"											"{funfact-d1, plural, one{{s:funfact-player} a tué une unité ennemie au couteau pendant cette manche.} other{{s:funfact-player} a fait {d:funfact-d1} victimes au couteau pendant cette manche.}}"
+		"funfact_damage_with_grenade:f"									"{funfact-d1, plural, one{{s:funfact-player} a infligé un total de {d:funfact-d1} de dégâts avec des grenades.} other{{s:funfact-player} a infligé un total de {d:funfact-d1} de dégâts avec des grenades.}}"
+		"funfact_kills_grenades:f"										"{funfact-d1, plural, one{{s:funfact-player} a tué {d:funfact-d1} unité ennemie avec des grenades.} other{{s:funfact-player} a tué {d:funfact-d1} unités ennemies avec des grenades.}}"
+		"funfact_blind_kills:f"											"{funfact-d1, plural, one{{s:funfact-player} a tué une unité ennemie malgré les effets aveuglants d'une GSS.} other{{s:funfact-player} a tué {d:funfact-d1} unités ennemies malgré les effets aveuglants d'une GSS.}}"
+		"funfact_kills_with_last_round:f"								"{funfact-d1, plural, one{{s:funfact-player} a tué une unité ennemie avec la dernière balle de son chargeur.} other{{d:funfact-d1} a tué une unité ennemie avec la dernière balle de son chargeur à {d:funfact-d1} reprises.}}"
+		"funfact_kills_headshots:f"										"{funfact-d1, plural, one{{s:funfact-player} a tué {d:funfact-d1} unités ennemies d'un tir en pleine tête pendant cette manche.} other{{s:funfact-player} a tué {d:funfact-d1} unités ennemies d'un tir en pleine tête pendant cette manche.}}"
+		"funfact_kills_with_stattrak_weapon:f"							"{funfact-d1, plural, one{{s:funfact-player} a ajouté {d:funfact-d1} victime à son arme StatTrak™ pendant cette manche.} other{{s:funfact-player} a ajouté {d:funfact-d1} victimes à ses armes StatTrak™ pendant cette manche.}}"
+		"funfact_donated_weapons:f"										"{funfact-d1, plural, one{{s:funfact-player} a fait don de {d:funfact-d1} arme pendant cette manche.} other{{s:funfact-player} a fait don de {d:funfact-d1} armes pendant cette manche.}}"
+		"funfact_posthumous_kills_with_grenade:f"						"{funfact-d1, plural, one{{s:funfact-player} a tué une unité ennemie à la grenade après sa mort.} other{{s:funfact-player} a tué {d:funfact-d1} unités ennemies à la grenade après sa mort.}}"
+		"funfact_num_times_jumped:f"									"{funfact-d1, plural, one{{s:funfact-player} a sauté {d:funfact-d1} fois pendant cette manche.} other{{s:funfact-player} a sauté {d:funfact-d1} fois pendant cette manche.}}"
+		"funfact_fall_damage:f"											"{funfact-d1, plural, one{{s:funfact-player} a encaissé {d:funfact-d1} de dégâts… du sol.} other{{s:funfact-player} a encaissé {d:funfact-d1} de dégâts… du sol.}}"
+		"funfact_items_purchased:f"										"{funfact-d1, plural, one{{s:funfact-player} a acheté {d:funfact-d1} objet.} other{{s:funfact-player} a acheté {d:funfact-d1} objets.}}"
+		"funfact_won_as_last_member:f"									"{funfact-d1, plural, one{Ultime membre encore en vie de l'équipe, {s:funfact-player} a tué {s:funfact-d1} unité ennemie et a remporté la manche.} other{Ultime membre encore en vie de l'équipe, {s:funfact-player} a tué {d:funfact-d1} unités ennemies et a remporté la manche.}}"
+		"funfact_number_of_overkills:f"									"{funfact-d1, plural, one{{s:funfact-player} a continué de dominer {d:funfact-d1} adversaire.} other{{s:funfact-player} a continué de dominer {d:funfact-d1} adversaires.}}"
+		"funfact_shots_fired:f"											"{funfact-d1, plural, one{{d:funfact-d1} coup de feu a été tiré pendant cette manche.} other{{d:funfact-d1} coups de feu ont été tirés pendant cette manche.}}"
+		"funfact_money_spent:f"											"{funfact-d1, plural, one{{s:funfact-player} a dépensé {d:funfact-d1} $ pendant cette manche.} other{{s:funfact-player} a dépensé {d:funfact-d1} $ pendant cette manche.}}"
+		"funfact_grenades_thrown:f"										"{funfact-d1, plural, one{{s:funfact-player} a lancé {d:funfact-d1} grenade pendant cette manche.} other{{s:funfact-player} a lancé {d:funfact-d1} grenades pendant cette manche.}}"
+		"funfact_used_all_ammo:f"										"{s:funfact-player} a épuisé toutes ses munitions."
+		"funfact_survived_multiple_attackers:f"							"{funfact-d1, plural, one{{s:funfact-player} a survécu aux attaques de {d:funfact-d1} unité ennemie.} other{{s:funfact-player} a survécu aux attaques de {d:funfact-d1} unités ennemies.}}"
+		"funfact_died_from_multiple_attackers:f"						"{funfact-d1, plural, one{{s:funfact-player} a subi des dégâts de {d:funfact-d1} unité ennemie avant de mourir.} other{{s:funfact-player} a subi des dégâts de {d:funfact-d1} unités ennemies avant de mourir.}}"
+		"funfact_defended_bomb:f"										"{funfact-d1, plural, one{{s:funfact-player} a défendu la bombe posée contre {d:funfact-d1} adversaire.} other{{s:funfact-player} a défendu la bombe posée contre {d:funfact-d1} adversaires.}}"
+		"funfact_items_dropped_value:f"									"{funfact-d1, plural, one{{s:funfact-player} a gaspillé l'équivalent de {d:funfact-d1} $ de munitions.} other{{s:funfact-player} a gaspillé l'équivalent de {d:funfact-d1} $ de munitions.}}"
+		"funfact_kill_wounded_enemies:f"								"{funfact-d1, plural, one{{s:funfact-player} a achevé {d:funfact-d1} unité ennemie blessée.} other{{s:funfact-player} a achevé {d:funfact-d1} unités ennemies blessées.}}"
+		"funfact_damage_multiple_enemies:f"								"{funfact-d1, plural, one{{s:funfact-player} a infligé des dégâts à {d:funfact-d1} unité ennemie.} other{{s:funfact-player} a infligé des dégâts à {d:funfact-d1} unités ennemies.}}"
+		"funfact_used_multiple_weapons:f"								"{funfact-d1, plural, one{{s:funfact-player} a utilisé {d:funfact-d1} arme à feu.} other{{d:funfact-d1} a utilisé {d:funfact-d1} armes à feu différentes.}}"
+		"funfact_terrorist_accuracy:f"									"{funfact-d1, plural, one{Les terroristes ont obtenu le meilleur taux de précision ({d:funfact-d1} %).} other{Les terroristes ont obtenu le meilleur taux de précision ({d:funfact-d1} %).}}"
+		"funfact_ct_accuracy:f"											"{funfact-d1, plural, one{Les antiterroristes ont obtenu le meilleur taux de précision ({d:funfact-d1} %).} other{Les antiterroristes a obtenu le meilleur taux de précision ({d:funfact-d1} %).}}"
+		"funfact_ct_win_no_kills:f"										"Les antiterroristes ont gagné sans tuer de terroriste."
+		"funfact_t_win_no_kills:f"										"Les terroristes ont gagné sans tuer d'antiterroriste."
+		"funfact_t_win_no_casualties:f"									"Les terroristes ont gagné sans essuyer de pertes."
+		"funfact_ct_win_no_casualties:f"								"Les antiterroristes ont gagné sans essuyer de pertes."
+		"funfact_best_terrorist_accuracy:f"								"{funfact-d1, plural, one{{s:funfact-player} a obtenu un taux de précision de {d:funfact-d1} %, alors que son équipe a obtenu un taux de {d:funfact-d2} %.} other{{s:funfact-player} a obtenu un taux de précision de {d:funfact-d1} %, alors que son équipe a obtenu un taux de {d:funfact-d2} %.}}"
+		"funfact_best_counterterrorist_accuracy:f"						"{funfact-d1, plural, one{{s:funfact-player} a obtenu un taux de précision de {d:funfact-d1} %, alors que son équipe a obtenu un taux de {d:funfact-d2} %.} other{{s:funfact-player} a obtenu un taux de précision de {d:funfact-d1} %, alors que son équipe a obtenu un taux de {d:funfact-d2} %.}}"
+		"funfact_fallback1:f"											"Le gâteau est un mensonge."
+		"funfact_fallback2:f"											"Bâillement."
+		"funfact_draw:f"												"Le match a été redémarré suite au vote des personnes en jeu."
+		"funfact_broke_windows:f"										"{funfact-d1, plural, one{{s:funfact-player} a brisé {d:funfact-d1} fenêtre.} other{{s:funfact-player} a brisé {d:funfact-d1} fenêtres.}}"
+		"funfact_nightvision_damage:f"									"{funfact-d1, plural, one{{s:funfact-player} a infligé {d:funfact-d1} de dégâts en portant les lunettes de vision nocturne.} other{{s:funfact-player} a infligé {d:funfact-d1} de dégâts en portant les lunettes de vision nocturne.}}"
+		"funfact_defused_with_dropped_kit:f"							"{s:funfact-player} a désamorcé la bombe à l'aide d'un kit de désamorçage ramassé."
+		"funfact_killed_half_of_enemies:f"								"{funfact-d1, plural, one{{s:funfact-player} a tué {d:funfact-d1} % de l'équipe ennemie.} other{{s:funfact-player} a tué {d:funfact-d1} % de l'équipe ennemie.}}"
+		"funfact_knife_level_reached:f"									"{funfact-d1, plural, one{{d:funfact-d1} personne a atteint le niveau couteau d'or.} other{{d:funfact-d1} personnes ont atteint le niveau couteau d'or.}}"
+		"funfact_killed_before_dying:f"									"{funfact-d1, plural, one{{s:funfact-player} a tué {d:funfact-d1} unité ennemie avant de mourir.} other{{s:funfact-player} a tué {d:funfact-d1} unités ennemies avant de mourir.}}"
+		"funfact_respawned:f"											"{funfact-d1, plural, one{{s:funfact-player} a réapparu {d:funfact-d1} fois pendant le match.} other{{s:funfact-player} a réapparu {d:funfact-d1} fois pendant le match.}}"
+		"funfact_default_weapon:f"										"{s:funfact-player} a gagné la manche sans ramasser aucune arme."
+		"funfact_rounds_without_dying:f"								"{funfact-d1, plural, one{{s:funfact-player} a survécu {d:funfact-d1} manche sans mourir.} other{{s:funfact-player} a survécu {d:funfact-d1} manches consécutives sans mourir.}}"
+		"funfact_taser_kill:f"											"{funfact-d1, plural, one{{s:funfact-player} a tasé {d:funfact-d1} adversaire.} other{{s:funfact-player} a tasé {d:funfact-d1} adversaires.}}"
+		"funfact_ticking_time:f"										"{funfact-d1, plural, one{Les terroristes ont gagné alors que {d:funfact-d1} AT a essayé de désamorcer la bombe.} other{Les terroristes ont gagné alors que {d:funfact-d1} AT ont essayé de désamorcer la bombe.}}"
+		"funfact_ct_win_time:f"											"{funfact-d1, plural, one{Les antiterroristes ont éliminé les terroristes en {d:funfact-d1} seconde.} other{Les antiterroristes ont éliminé les terroristes en {d:funfact-d1} secondes.}}"
+		"funfact_ter_win_time:f"										"{funfact-d1, plural, one{Les terroristes ont éliminé les antiterroristes en {d:funfact-d1} seconde.} other{Les terroristes ont éliminé les antiterroristes en {d:funfact-d1} secondes.}}"
+		"funfact_bots_assumed:f"										"{funfact-d1, plural, one{{s:funfact-player} a pris le contrôle de {d:funfact-d1} bot pendant cette manche.} other{{s:funfact-player} a pris le contrôle de {d:funfact-d1} bots pendant cette manche.}}"
+		"funfact_domination:f"											"{s:funfact-player} a dominé le plus de monde."
+		"funfact_revenge:f"												"{funfact-d1, plural, one{{s:funfact-player} a pris sa revanche sur {d:funfact-d1} adversaire.} other{{s:funfact-player} a pris sa revanche sur {d:funfact-d1} adversaires.}}"
+		"funfact_steps_taken:f"											"{funfact-d1, plural, one{{s:funfact-player} a fait {d:funfact-d1} pas pendant le match.} other{{s:funfact-player} a fait {d:funfact-d1} pas pendant le match.}}"
+		"funfact_quarter_health:f"										"{funfact-d1, plural, one{{s:funfact-player} a fait {d:funfact-d1} victime en ayant moins de 25 points de santé.} other{{s:funfact-player} a fait {d:funfact-d1} victimes en ayant moins de 25 points de santé.}}"
+		"funfact_empty_guns:f"											"{funfact-d1, plural, one{{s:funfact-player} a épuisé ses munitions en utilisant {d:funfact-d1} arme.} other{{s:funfact-player} a épuisé ses munitions en utilisant {d:funfact-d1} armes.}}"
+		"funfact_slow_trigger:f"										"{funfact-d1, plural, one{{s:funfact-player} n'a pas tiré une seule fois avec {d:funfact-d1} arme à feu avant de mourir.} other{{s:funfact-player} n'a pas tiré une seule fois avec {d:funfact-d1} armes à feu avant de mourir.}}"
+		"funfact_pickup_bomb:f"											"{funfact-d1, plural, one{{s:funfact-player} a placé la bombe après qu'elle a appartenu à {d:funfact-d1} autre terroriste.} other{{s:funfact-player} a placé la bombe après qu'elle a appartenu à {d:funfact-d1} autres terroristes.}}"
+		"funfact_bomb_carriers:f"										"{funfact-d1, plural, one{{s:funfact-player} a tué {d:funfact-d1} terroriste qui portait la bombe pendant la dernière manche.} other{{s:funfact-player} a tué {d:funfact-d1} terroristes qui portaient la bombe pendant la dernière manche.}}"
+		"funfact_knife_bomb_planter:f"									"{s:funfact-player} a gagné au niveau couteau en tuant la personne qui posait la bombe."
+		"funfact_bomb_planted_before_kill:f"							"La bombe a été posée alors que tout le monde était encore en vie."
+		"funfact_failed_bomb_plants:f"									"{funfact-d1, plural, one{{d:funfact-d1} terroriste a péri en essayant d'amorcer la bombe pendant cette manche.} other{{d:funfact-d1} terroristes ont péri en essayant d'amorcer la bombe pendant cette manche.}}"
+		"funfact_knife_without_ammo:f"									"{funfact-d1, plural, one{{s:funfact-player} a fait {d:funfact-d1} victime au couteau après avoir utilisé toutes ses munitions.} other{{s:funfact-player} a fait {d:funfact-d1} victimes au couteau après avoir utilisé toutes ses munitions.}}"
+		"funfact_molotov_burns:f"										"{funfact-d1, plural, one{{s:funfact-player} a mis en feu {d:funfact-d1} adversaire.} other{{s:funfact-player} a mis en feu {d:funfact-d1} adversaires.}}"
+		"funfact_survival_time:f"										"{funfact-d1, plural, one{{s:funfact-player} a survécu le plus longtemps : {d:funfact-d1} seconde.} other{{s:funfact-player} a survécu le plus longtemps : {d:funfact-d1} secondes.}}"
+		"funfact_pulled_trigger:f"										"{funfact-d1, plural, one{{s:funfact-player} a appuyé sur la gâchette {d:funfact-d1} fois pendant ce match.} other{{s:funfact-player} a appuyé sur la gâchette {d:funfact-d1} fois pendant ce match.}}"
+		"funfact_ace:f"													"Monstrueux ! {s:funfact-player} a anéanti l'équipe ennemie."
+		"funfact_defuse_was_close_call_tenths:f"						"{funfact-d1, plural, one{{s:funfact-player} a désamorcé la bombe à 0,{d:funfact-d1} seconde de l'explosion.} other{{s:funfact-player} a désamorcé la bombe à 0,{d:funfact-d1} seconde de l'explosion.}}"
+		"funfact_defuse_was_close_call_hundredths:f"					"{funfact-d1, plural, one{{s:funfact-player} a désamorcé la bombe à 0,0{d:funfact-d1} seconde de l'explosion.} other{{s:funfact-player} a désamorcé la bombe à 0,{d:funfact-d1} seconde de l'explosion.}}"
+		"funfact_defuse_was_close_call_thousandths:f"					"{funfact-d1, plural, one{{s:funfact-player} a désamorcé la bombe à 0,00{d:funfact-d1} seconde de l'explosion.} other{{s:funfact-player} a désamorcé la bombe à 0,00{d:funfact-d1} seconde de l'explosion.}}"
+		"mapwinrecord_graph_title:f"									"{f:0:wins, plural, one{Dernière victoire} other{Dernières victoires}}"
+		"CSGO_Recipe_Count_Items_Selected:f"							"{count, plural, one{<b>{d:count}</b> item sélectionné} other{<b>{d:count}</b> items sélectionnés}}"
+		"CSGO_Recipe_Count_Items_Remaining:f"							"{count, plural, one{<b>{d:count}</b> item restant} other{<b>{d:count}</b> items restants}}"
+		"CSGO_Recipe_TradeUp_Items_Remain:f"							"{count, plural, one{{d:count} sélection pour l'échange} other{{d:count} sélections pour l'échange}}"
+		"CSGO_Recipe_TradeUp_Items_XofY:f"								"{count, plural, one{{d:count}/{d:recipecount} sélectionné pour l'échange} other{{d:count}/{d:recipecount} sélectionnés pour l'échange}}"
+		"CSGO_Recipe_TradeUp_Items_Inv:f"								"{count, plural, one{{d:count} échangeable} other{{d:count} échangeables}}"
+		"CSGO_RemoveKeychainToolCharges_Reward:f"						"{item_count, plural, one{+{d:item_count} séparateur de porte-bonheur} other{+{d:item_count} séparateurs de porte-bonheurs}}"
+		"SFUI_Store_Offer_Days_Remaining:f"								"{daysremaining, plural, one{{d:daysremaining} jour restant} other{{d:daysremaining} jours restants.}}"
+		"SFUI_Store_Offer_Days_Remaining_claim:f"						"{daysremaining, plural, one{{d:daysremaining} jour restant} other{{d:daysremaining} jours restants}}"
+		"SFUI_Store_Offer_Days_Remaining_bid:f"							"{daysremaining, plural, one{{d:daysremaining} jour restant pour faire une offre} other{{d:daysremaining} jours restants pour faire une offre}}"
+		"SFUI_Store_Offer_Days_Remaining_last_claim:f"					"Dernière chance de bénéficier de cette offre"
+		"SFUI_Store_Offer_Days_Remaining_last_bid:f"					"Dernière chance d'enchérir sur cette offre"
+		"SFUI_Store_Timer_Week:f"										"{f:0:value, plural, one{{f:0:value} semaine} other{{f:0:value} semaines}}"
+		"SFUI_Store_Timer_Day:f"										"{f:0:value, plural, one{{f:0:value} jour} other{{f:0:value} jours}}"
+		"SFUI_Store_Timer_Hour:f"										"{f:0:value, plural, one{{f:0:value} heure} other{{f:0:value} heures}}"
+		"SFUI_Store_Timer_Min:f"										"{f:0:value, plural, one{{f:0:value} min} other{{f:0:value} min}}"
+		"SFUI_Store_Timer_Sec:f"										"{f:0:value, plural, one{{f:0:value} s} other{{f:0:value} s}}"
+		"CSGO_Watch_Minute:f"											"{f:0:value, plural, one{{f:0:value} minute} other{{f:0:value} minutes}}"
+		"xpshop_new_items:f"											"{new-count, plural, one{Nouveauté !} other{Nouveautés !}}"
+		"xpshop_popup_clear_n_tracks:f"									"{completed_tracks_count, plural, one{Valider {d:completed_tracks_count} passe terminé} other{Valider {d:completed_tracks_count} passes terminés}}"
+		"xpshop_popup_clear_n_tracks_text:f"							"{completed_tracks_count, plural, one{Vous avez gagné tous les crédits de l'arsenal pour ce passe.<br><br>Valider ce passe vous permettra d'en activer un nouveau. Cela n'affectera pas votre solde actuel de crédits de l'arsenal.} other{Vous avez obtenu tous les crédits de l'arsenal de {d:completed_tracks_count} passes d'armurerie.<br><br>Valider ces {d:completed_tracks_count} passes vous permettra d'en activer de nouveaux. Cela n'affectera pas votre solde actuel de crédits de l'arsenal.}}"
+		"xpshop_redeem_bid_batchover:f"									"{hours_until_bid_batch, plural, one{Les enchères sur ce lot sont terminées. Les parties acquérantes seront avisées après le règlement. Veuillez revenir demain pour faire une offre sur le prochain lot. Les enchères rouvront dans {d:hours_until_bid_batch} heure.} other{Les enchères sur ce lot sont terminées. Les parties acquérantes seront avisées après le règlement. Veuillez revenir demain pour faire une offre sur le prochain lot. Les enchères rouvront dans {d:hours_until_bid_batch} heures.}}"
+		"xpshop_redeem_not_enough_stars:f"								"{stars_needed, plural, one{Il vous faut encore {d:stars_needed} crédit de l'arsenal. Obtenez-le en jouant avec le passe de l'arsenal activé.} other{Il vous faut encore {d:stars_needed} crédits de l'arsenal. Obtenez-les en jouant avec le passe de l'arsenal activé.}}"
+		"Panorama_PlayerDetails_Commendations_Left:f"					"{num_token, plural, one{Vous pouvez recommander encore {d:num_token} autre personne aujourd'hui.} other{Vous pouvez recommander encore {d:num_token} autres personnes aujourd'hui.}}"
+		"SFUI_BuyMenu_CanOnlyCarryXGrenades:f"							"{n1, plural, one{Vous ne pouvez transporter que {s:s1} grenade} other{Vous ne pouvez transporter que {s:s1} grenades}}"
+		"SFUI_BuyMenu_MaxItemsOfType:f"									"{n1, plural, one{Vous ne pouvez transporter que {s:s1} objet de ce type} other{Vous ne pouvez transporter que {s:s1} objets de ce type}}"
+		"SFUI_BuyMenu_MaxItemsOfTypePurchased:f"						"{n1, plural, one{Vous ne pouvez acheter que {s:s1} objet de ce type} other{Vous ne pouvez acheter que {s:s1} objets de ce type}}"
+		"SFUI_BuyMenu_ReachedWeaponsExpertLimit:f"						"{n1, plural, one{Vous en avez déjà acheté {s:s1} pendant cette partie} other{Vous en avez déjà acheté {s:s1} pendant cette partie}}"
+		"cs_rating_wins_needed:f"										"{winsneeded, plural, one{Remportez <b>{d:winsneeded}</b> match de plus.} other{Remportez <b>{d:winsneeded}</b> matchs de plus.}}"
+		"cs_rating_wins_needed_verbose:f"								"{winsneeded, plural, one{Remportez <b>{d:winsneeded}</b> match de plus pour déterminer votre note CS.} other{Remportez <b>{d:winsneeded}</b> matchs de plus pour déterminer votre note CS.}}"
+		"cs_rating_wins_needed_verbose_intro:f"							"{winsneeded, plural, one{Remportez <b>{d:winsneeded}</b> match pour déterminer votre note CS.} other{Remportez <b>{d:winsneeded}</b> matchs pour déterminer votre note CS.}}"
+		"cs_rating_need_wins:f"											"{wins-needed, plural, one{Encore {d:wins-needed} vict.} other{Encore {d:wins-needed} vict.}}"
+		"wins_count:f"													"{wins, plural, one{{d:wins} victoire} other{{d:wins} victoires}}"
+		"contextmenu_lobby-count:f"										"{lobby_count, plural, one{{d:lobby_count} salle d'attente} other{{d:lobby_count} salles d'attente}}"
+		"popup_useitem_button_getkeychaincharges:f"						"{item_count, plural, one{Ajouter <b>{d:item_count}</b> séparateur de porte-bonheur} other{Ajouter <b>{d:item_count}</b> séparateurs de porte-bonheurs}}"
+		"popup_decodable_rent_weapon_count:f"							"{numlootlist, plural, one{Louez {d:numlootlist} arme pendant 7 jours} other{Louez {d:numlootlist} armes pendant 7 jours}}"
+		"popup_redeem_souvenir_desc:f"									"{redeems, plural, one{<span class=\"get-souvenir-redeem-count\">{d:redeems}</span> paquet souvenir restant} other{<span class=\"get-souvenir-redeem-count\">{d:redeems}</span> paquets souvenirs restants}}"
+		"matchmaking_stat_avgSearchTimeSeconds:f"						"Temps de recherche estimé : {s:stat}"
+		"matchmaking_stat_playersOnline:f"								"{d:stat} joueurs en ligne"
+		"matchmaking_stat_playersLockedIn:f"							"{stat, plural, one{Confirmation reçue de {d:stat} personne sur {d:total_stat}} other{Confirmations reçues de {d:stat} personnes sur {d:total_stat}}}"
+		"matchmaking_stat_playersSearching:f"							"{d:stat} personnes en recherche"
+		"matchmaking_stat_serversOnline:f"								"{d:stat} serveurs en ligne"
+		"matchmaking_stat_ongoingMatches:f"								"{d:stat} matchs en cours"
+		"tooltip_skill_group_none:f"									"{winsneeded, plural, one{Remportez <b>{d:winsneeded}</b> match pour déterminer votre grade en mode compétitif.} other{Remportez <b>{d:winsneeded}</b> matchs pour déterminer votre grade en mode compétitif.}}"
+		"tooltip_cs_rating_none:f"										"{winsneeded, plural, one{Remportez <b>{d:winsneeded}</b> match de plus pour déterminer votre note CS.} other{Remportez <b>{d:winsneeded}</b> matchs de plus pour déterminer votre note CS.}}"
+		"tooltip_skill_group_nonewingman:f"								"{winsneeded, plural, one{Remportez <b>{d:winsneeded}</b> match pour déterminer votre grade en mode Wingman.} other{Remportez <b>{d:winsneeded}</b> matchs pour déterminer votre grade en mode Wingman.}}"
+		"tooltip_skill_group_nonedangerzone:f"							"Pour obtenir un grade zone de danger, vous devez d'abord participer à quelques matchs dans ce mode."
+		"tooltip_skill_group_wins:f"									"{wins, plural, one{<img src='file://{images}/icons/ui/trophy.svg'  vspace='6' class='player-card-tooltip-icon'/>{d:wins} victoire} other{<img src='file://{images}/icons/ui/trophy.svg'  vspace='6' class='player-card-tooltip-icon'/> {d:wins} victoires}}"
+		"team-intro-overtime-1st-half:f"								"{overtime_num, plural, one{Prolongation : première moitié} other{Prolongation {d:overtime_num} : première moitié}}"
+		"team-intro-overtime-2nd-half:f"								"{overtime_num, plural, one{Prolongation : seconde moitié} other{Prolongation {d:overtime_num} : seconde moitié}}"
+		"scoreboard_timeline_ot:f"										"{scoreboard_ot, plural, one{Prolongation} other{Prolongation {d:scoreboard_ot}}}"
+		"eom-skillgroup-win:f"											"{matcheswon, plural, one{victoire en mode {s:rating_type}} other{victoires en mode {s:rating_type}}}"
+		"eom-skillgroup-map-win:f"										"{matcheswon, plural, one{victoire sur {s:map} en mode {s:rating_type}} other{victoires sur {s:map} en mode {s:rating_type}}}"
+		"eom-skillgroup-needed-wins:f"									"{winsneeded, plural, one{Remportez {d:winsneeded} match pour afficher votre grade.} other{Remportez {d:winsneeded} matchs pour afficher votre grade.}}"
+		"WatchMenu_Viewers_dv:f"										"{spectatorCount, plural, one{{d:spectatorCount} personne regarde} other{{d:spectatorCount} personnes regardent}}"
+		"Panorama_DeathPanel_DamageTaken:f"								"{hits_taken, plural, one{<font color='#A0A0A0'>Dégâts subis : </font><font color='#FFFFFF'><b>{d:damage_taken}</b></font> <font color='#A0A0A0'> en</font> <font color='#FFFFFF'><b>{d:hits_taken} coup</b></font>} other{<font color='#A0A0A0'>Dégâts subis : </font><font color='#FFFFFF'><b>{d:damage_taken}</b></font> <font color='#A0A0A0'> en</font> <font color='#FFFFFF'><b>{d:hits_taken} coups</b></font>}}"
+		"Panorama_DeathPanel_DamageGiven:f"								"{hits_given, plural, one{<font color='#A0A0A0'>Dégâts infligés : </font><font color='#FFFFFF'><b>{d:damage_given}</b></font> <font color='#A0A0A0'> en</font> <font color='#FFFFFF'><b>{d:hits_given} coup</b></font>} other{<font color='#A0A0A0'>Dégâts infligés : </font><font color='#FFFFFF'><b>{d:damage_given}</b></font> <font color='#A0A0A0'> en</font> <font color='#FFFFFF'><b>{d:hits_given} coups</b></font>}}"
+		"mission_directive:f"											"{mission-points, plural, one{<b>{d:mission-points}</b> {s:action}} other{<b>{d:mission-points}</b> {s:actions}}}"
+		"mission_directive_progress:f"									"{mission-points, plural, one{{d:mission-progress}/<b>{d:mission-points}</b> {s:action}} other{{d:mission-progress}/<b>{d:mission-points}</b> {s:actions}}}"
+		"quest_11000_var_desc:f"										"{mission-points, plural, one{Faites une victime en mode <b>{s:gamemode} sur {s:location}</b> avec l'arme suivante : {s:item1}.} other{Faites des victimes en mode <b>{s:gamemode} sur {s:location}</b> avec l'arme suivante : {s:item1}.}}"
+		"quest_11000_var_partial:f"										"…avec : {s:item1}."
+		"quest_11000_var_ingame:f"										"{mission-points, plural, one{Faites une victime avec l'arme suivante : {s:item1}.} other{Faites des victimes avec l'arme suivante : {s:item1}.}}"
+		"quest_11001_var_desc:f"										"{mission-points, plural, one{Faites une victime en mode <b>{s:gamemode} sur {s:location}</b> avec l'arme suivante : {s:item1}.} other{Faites des victimes en mode <b>{s:gamemode} sur {s:location}</b> avec l'arme suivante : {s:item1}.}}"
+		"quest_11001_var_partial:f"										"…avec : {s:item1}."
+		"quest_11001_var_ingame:f"										"{mission-points, plural, one{Faites une victime avec l'arme suivante : {s:item1}.} other{Faites des victimes avec l'arme suivante : {s:item1}.}}"
+		"quest_11002_var_desc:f"										"{mission-points, plural, one{Faites une victime en mode <b>{s:gamemode} sur {s:location}</b> avec l'arme suivante : {s:item1}.} other{Faites des victimes en mode <b>{s:gamemode} sur {s:location}</b> avec l'arme suivante : {s:item1}.}}"
+		"quest_11002_var_partial:f"										"…avec : {s:item1}."
+		"quest_11002_var_ingame:f"										"{mission-points, plural, one{Faites une victime avec l'arme suivante : {s:item1}.} other{Faites des victimes avec l'arme suivante : {s:item1}.}}"
+		"quest_11003_var_desc:f"										"{mission-points, plural, one{Faites une victime en mode <b>{s:gamemode} sur {s:location}</b> avec l'arme suivante : {s:item1}.} other{Faites des victimes en mode <b>{s:gamemode} sur {s:location}</b> avec l'arme suivante : {s:item1}.}}"
+		"quest_11003_var_partial:f"										"…avec : {s:item1}."
+		"quest_11003_var_ingame:f"										"{mission-points, plural, one{Faites une victime avec l'arme suivante : {s:item1}.} other{Faites des victimes avec l'arme suivante : {s:item1}.}}"
+		"quest_11004_var_desc:f"										"{mission-points, plural, one{Gagnez une manche en mode <b>{s:gamemode} sur {s:location}</b>.} other{Gagnez des manches en mode <b>{s:gamemode} sur {s:location}</b>.}}"
+		"quest_11004_var_partial:f"										""
+		"quest_11004_var_ingame:f"										"{mission-points, plural, one{Gagnez une manche.} other{Gagnez des manches.}}"
+		"quest_11005_var_desc:f"										"{mission-points, plural, one{Gagnez une manche en mode <b>{s:gamemode} sur {s:location}</b>.} other{Gagnez des manches en mode <b>{s:gamemode} sur {s:location}</b>.}}"
+		"quest_11005_var_partial:f"										""
+		"quest_11005_var_ingame:f"										"{mission-points, plural, one{Gagnez une manche.} other{Gagnez des manches.}}"
+		"quest_11006_var_desc:f"										"{mission-points, plural, one{Gagnez une manche en mode <b>{s:gamemode} sur {s:location}</b>.} other{Gagnez des manches en mode <b>{s:gamemode} sur {s:location}</b>.}}"
+		"quest_11006_var_partial:f"										""
+		"quest_11006_var_ingame:f"										"{mission-points, plural, one{Gagnez une manche.} other{Gagnez des manches.}}"
+		"quest_11007_var_desc:f"										"{mission-points, plural, one{Faites une victime en mode <b>{s:gamemode} sur {s:location}</b> avec l'arme suivante : {s:item1}.} other{Faites des victimes en mode <b>{s:gamemode} sur {s:location}</b> avec l'arme suivante : {s:item1}.}}"
+		"quest_11007_var_partial:f"										"…avec : {s:item1}."
+		"quest_11007_var_ingame:f"										"{mission-points, plural, one{Faites une victime avec l'arme suivante : {s:item1}.} other{Faites des victimes avec l'arme suivante : {s:item1}.}}"
+		"quest_11008_var_desc:f"										"{mission-points, plural, one{Gagnez une manche en mode <b>{s:gamemode} sur {s:location}</b>.} other{Gagnez des manches en mode <b>{s:gamemode} sur {s:location}</b>.}}"
+		"quest_11008_var_partial:f"										""
+		"quest_11008_var_ingame:f"										"{mission-points, plural, one{Gagnez une manche.} other{Gagnez des manches.}}"
+		"quest_11009_var_desc:f"										"{mission-points, plural, one{Gagnez une manche en mode <b>{s:gamemode} sur {s:location}</b>.} other{Gagnez des manches en mode <b>{s:gamemode} sur {s:location}</b>.}}"
+		"quest_11009_var_partial:f"										""
+		"quest_11009_var_ingame:f"										"{mission-points, plural, one{Gagnez une manche.} other{Gagnez des manches.}}"
+		"quest_11010_var_desc:f"										"{mission-points, plural, one{Faites une victime en mode <b>{s:gamemode} sur {s:location}</b> avec l'arme suivante : {s:item1}.} other{Faites des victimes en mode <b>{s:gamemode} sur {s:location}</b> avec l'arme suivante : {s:item1}.}}"
+		"quest_11010_var_partial:f"										"…avec : {s:item1}."
+		"quest_11010_var_ingame:f"										"{mission-points, plural, one{Faites une victime avec l'arme suivante : {s:item1}.} other{Faites des victimes avec l'arme suivante : {s:item1}.}}"
+		"quest_11011_var_desc:f"										"{mission-points, plural, one{Gagnez une manche en mode <b>{s:gamemode} sur {s:location}</b>.} other{Gagnez des manches en mode <b>{s:gamemode} sur {s:location}</b>.}}"
+		"quest_11011_var_partial:f"										""
+		"quest_11011_var_ingame:f"										"{mission-points, plural, one{Gagnez une manche.} other{Gagnez des manches.}}"
+		"quest_11012_var_desc:f"										"{mission-points, plural, one{Gagnez une manche en mode <b>{s:gamemode} sur {s:location}</b>.} other{Gagnez des manches en mode <b>{s:gamemode} sur {s:location}</b>.}}"
+		"quest_11012_var_partial:f"										""
+		"quest_11012_var_ingame:f"										"{mission-points, plural, one{Gagnez une manche.} other{Gagnez des manches.}}"
+		"quest_11013_var_desc:f"										"{mission-points, plural, one{Gagnez une manche en mode <b>{s:gamemode} sur {s:location}</b>.} other{Gagnez des manches en mode <b>{s:gamemode} sur {s:location}</b>.}}"
+		"quest_11013_var_partial:f"										""
+		"quest_11013_var_ingame:f"										"{mission-points, plural, one{Gagnez une manche.} other{Gagnez des manches.}}"
+		"quest_11014_var_desc:f"										"{mission-points, plural, one{Gagnez une manche en mode <b>{s:gamemode} sur {s:location}</b>.} other{Gagnez des manches en mode <b>{s:gamemode} sur {s:location}</b>.}}"
+		"quest_11014_var_partial:f"										""
+		"quest_11014_var_ingame:f"										"{mission-points, plural, one{Gagnez une manche.} other{Gagnez des manches.}}"
+		"quest_11015_var_desc:f"										"{mission-points, plural, one{Gagnez une manche en mode <b>{s:gamemode} sur {s:location}</b>.} other{Gagnez des manches en mode <b>{s:gamemode} sur {s:location}</b>.}}"
+		"quest_11015_var_partial:f"										""
+		"quest_11015_var_ingame:f"										"{mission-points, plural, one{Gagnez une manche.} other{Gagnez des manches.}}"
 }
 
 

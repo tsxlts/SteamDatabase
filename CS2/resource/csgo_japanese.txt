@@ -102,6 +102,9 @@
 
 		"tooltip_copycrosshair"				"照準をコピー"
 		"GameUI_Xhair_Copy_Code_Confirm"		"現在の照準設定と入れ替えますか?"
+ 
+		"GameUI_Confirm_Write_Setting_Title"	"設定変更の確認"
+		"GameUI_Confirm_Write_Setting_Text"		"このワークショップマップ {s:mapname} では、設定が変更される可能性があります。変更される設定には、照準、レーダー、サウンドなどが含まれます。変更を許可しますか？"
 
 		"settings_damage_prediction"			"ダメージ予測"
 		"settings_damage_prediction_info"		"サーバーからの確認を待たずにダメージを与えた際の音声/視覚効果が即座に再生されるようになります。射撃の反応は大幅に向上しますが、クライアントが認識していない死亡、エイムパンチ、タギングなどにより効果が誤って認識される恐れもあります。ping が高い場合、ダメージ予測は有効になりません。"
@@ -1961,8 +1964,8 @@
 		"Team_Cash_Award_no_income_suicide"					" +$0: セルフキルへのペナルティ"
 		"Team_Cash_Award_Generic"							" +$%s1: チーム報酬"
 		"Team_Cash_Award_Custom"							" +$%s1 %s2"
-		"Team_Cash_Award_Dead_Terrorists:p{s2}"				"テロリストを %s2 人倒したチーム報酬：+$%s1"
-		"Team_Cash_Award_Dead_CTs:p{s2}"					"CT を %s2 人倒したチーム報酬：+$%s1"
+		"Team_Cash_Award_Dead_Terrorists:p"					"テロリストを %s2 人倒したチーム報酬：+$%s1"
+		"Team_Cash_Award_Dead_CTs:p"						"CT を %s2 人倒したチーム報酬：+$%s1"
 
 
 		"Notice_Bonus_Shorthanded_Eligibility"			" あと %s1 ラウンドで自チームが欠員報酬の資格を獲得。"
@@ -2142,6 +2145,8 @@
 		"CS_DeathNemesis"			"宿敵"
 		"CS_DeathNewNemesis"		"新たな宿敵"
 		"CS_DeathRevenge"			"リベンジ"
+
+		"DeathNotice_Prescient_Attacker"	"（サーバー上で死亡）"
 
 		// Game Instructor Messages
 
@@ -2895,6 +2900,8 @@
 		"official_leaderboard_premier_season1_name"			"シーズン1"
 		"official_leaderboard_premier_season2_name"			"シーズン 2"
 		"official_leaderboard_premier_season3_name"			"シーズン 3"
+		"official_leaderboard_premier_season4_name"			"シーズン 4"
+
 		//
 
 		"CSGO_official_leaderboard_mission_embedded"	"ミッションランキング"
@@ -3296,6 +3303,18 @@
 		"CSGO_Collectible_MapTokenRooftop_Desc"			"CS2 マップ Rooftop の作成を記念したもの"
 		"CSGO_Collectible_MapTokenTransit"				"(削除済み) Map Coin"
 		"CSGO_Collectible_MapTokenTransit_Desc"			"CS2 マップ (削除済み) の作成を記念したもの"
+		"CSGO_Collectible_MapTokenWarden"				"Warden マップコイン"
+		"CSGO_Collectible_MapTokenWarden_Desc"			"CS2 マップ Warden の作成を記念したもの"
+		"CSGO_Collectible_MapTokenStronghold"			"Stronghold マップコイン"
+		"CSGO_Collectible_MapTokenStronghold_Desc"		"CS2 マップ Stronghold の作成を記念したもの"
+		"CSGO_Collectible_MapTokenAlpine"				"Alpine マップコイン"
+		"CSGO_Collectible_MapTokenAlpine_Desc"			"CS2 マップ Alpine の作成を記念したもの"
+		"CSGO_Collectible_MapTokenPoseidon"				"Poseidon マップコイン"
+		"CSGO_Collectible_MapTokenPoseidon_Desc"		"CS2 マップ Poseidon の作成を記念したもの"
+		"CSGO_Collectible_MapTokenSanctum"				"Sanctum マップコイン"
+		"CSGO_Collectible_MapTokenSanctum_Desc"			"CS2 マップ Sanctum の作成を記念したもの"
+
+
 		"CSGO_CollectibleCoin_FortiusQuoFidelius"	"ロイヤルティバッジ"
 		"CSGO_CollectibleCoin_FortiusQuoFidelius_Desc"	"これは Danger Zone アップデート以前から Counter-Strike コミュニティのメンバーだったプレイヤーの忠誠を記念するバッジです。\n\n<i>強靭さは忠誠から。</i>"
 		"CSGO_CollectibleCoin_FiveYearService"		"5年ベテランコイン"
@@ -5338,6 +5357,8 @@
 		"CSGO_set_timed_drops_neutral"			"Boreal コレクション"
 		"CSGO_set_timed_drops_cool"				"Ascent コレクション"
 		"CSGO_set_community_36"					"Genesis コレクション"
+		"CSGO_set_timed_drops_exuberant"		"Harlequin コレクション"
+		"CSGO_set_timed_drops_achroma"			"Achroma コレクション"
 		/////////////////
 		// lootlist override strings
 		//////////////////
@@ -34411,6 +34432,120 @@
 		
 		"PaintKit_cue_stratosphere"							"宇宙空間で惑星の周りを周回する宇宙飛行船をカスタムペイント。\n\n<i>「そう遠くない未来のある日…」</i>"
 		"PaintKit_cue_stratosphere_Tag"						"Stratosphere"
+		
+		// ACHROMA COLLECTION
+		"PaintKit_soe_ddpat_swirl_bw"						"グレースケールの DDPAT が施されている。\n\n<i>ぐるぐると回り続ける</i>"
+		"PaintKit_soe_ddpat_swirl_bw_Tag"					"Dizzy"
+
+		"PaintKit_hye_car_wrap_bizon"						"グレースケールの柄が施されている。\n\n<i>早く、急げ！</i>"
+		"PaintKit_hye_car_wrap_bizon_Tag"					"Bizoom"
+
+		"PaintKit_soe_acrylic_flow3"						"グレースケールのアクリルポアパターンが施されている。\n\n<i>いずれすべてがつながる</i>"
+		"PaintKit_soe_acrylic_flow3_Tag"					"Silver Pour"
+
+		"PaintKit_hye_comic_shapes"							"高光沢のシルバーペイントでグレースケールの柄が施されている。\n\n<i>「赤いランプは録画中ってことだ」</i>"
+		"PaintKit_hye_comic_shapes_Tag"						"Sans Comic"
+
+		"PaintKit_hye_chrome_ripple"						"グレースケールの柄が施されている。\n\n<i>時間の波紋</i>"
+		"PaintKit_hye_chrome_ripple_Tag"					"Zinc"
+
+		"PaintKit_hye_car_wrap_3"							"グレースケールの角ばった柄が施されている。\n\n<i>無骨な外観に上質な中身</i>"
+		"PaintKit_hye_car_wrap_3_Tag"						"Sleet"
+
+		"PaintKit_hye_geobirds"								"シルバーの鳥をあしらったグレースケールの柄が施されている。\n\n<i>上からの眺めはどうだい？</i>"
+		"PaintKit_hye_geobirds_Tag"							"Currents"
+
+		"PaintKit_hye_mp5_car_wrap4"						"鋭く角張ったデザインが特徴的なグレースケールの柄が施されている。\n\n<i>びくともしない</i>"
+		"PaintKit_hye_mp5_car_wrap4_Tag"					"Snow Splash"
+
+		"PaintKit_soe_bw_blast"								"高光沢なペイントで木目調が施されている。\n\n<i>ほら、腹に一物あるだろう？―武器商人 ブース</i>"
+		"PaintKit_soe_bw_blast_Tag"							"Vendetta"
+
+		"PaintKit_hye_abstract_knot_m4"						"グレースケールの抽象的なノット柄が施されている。\n\n<i>風に身を任せろ</i>"
+		"PaintKit_hye_abstract_knot_m4_Tag"					"Aeolian Dark"
+
+		"PaintKit_soch_smoke_grips"							"グリップにダークカラーのアクリルポアパターンが施されている。\n\n<i>オールドマネー</i>"
+		"PaintKit_soch_smoke_grips_Tag"						"Dark Chamber"
+
+		"PaintKit_soe_aug_creep"							"シルバーの下地に、節くれだった枝と鳥が施されている。\n\n<i>「奴らに包囲されてるな…」</i>"
+		"PaintKit_soe_aug_creep_Tag"						"Creep"
+
+		"PaintKit_hye_abstract_knot"						"グレースケールの抽象的なノット柄が施されている。\n\n<i>風に身を任せろ</i>"
+		"PaintKit_hye_abstract_knot_Tag"					"Aeolian Light"
+
+		"PaintKit_hye_car_wrap"								"グレースケールの柄が施されている。\n\n<i>大好きなコミックの1ページから</i>"
+		"PaintKit_hye_car_wrap_Tag"							"The Daily Deagle"
+
+		"PaintKit_soe_p2000_grips"							"光沢の異なるシルバーでペイント。グリップにはグリップテープ風のダークなマットペイントが施されている部分も。\n\n<i>しっかり握っておけ！</i>"
+		"PaintKit_soe_p2000_grips_Tag"						"Grip Tape"
+
+		"PaintKit_hye_zeds"									"カーボンファイバーの下地に攻撃的なz模様をあしらったグレースケールの柄をペイント。\n\n<i>武器操作速度 +5</i>"
+		"PaintKit_hye_zeds_Tag"								"Breakthrough"
+
+		"PaintKit_ht_white_edges"							"ホログラムデザインの下にグレースケールの円形パターンをペイント。\n\n<i>ホログラフィックシステムのグラフィカルマップ</i>"
+		"PaintKit_ht_white_edges_Tag"						"Trace Lock"
+
+		"PaintKit_soe_bw_the_end_awp"						"濃い紫色と白の配色で炎とバラを、トリガー前方には「the end」をカスタムペイント。\n\n<i>2つの側面を持つ物語</i>"
+		"PaintKit_soe_bw_the_end_awp_Tag"					"The End"
+
+		// EXUBERANT COLLECTION
+		"PaintKit_hye_animal_print_lc"						"ブラウンのアニマル柄が施されている。\n\n<i>「数匹」って言ったよな。ほぼ「動物園」じゃねえか</i>"
+		"PaintKit_hye_animal_print_lc_Tag"					"Safari Print"
+
+		"PaintKit_hye_firework_patches_famas"				"金色の爆発エフェクトの模様が施されている。\n\n<i>「イケてるヤツは爆発が起きても振り返ったりしないものさ」</i>"
+		"PaintKit_hye_firework_patches_famas_Tag"			"Byproduct"
+
+		"PaintKit_hye_geobirds_sunrise"						"ワインカラー模様の上にシルバーの鳥をペイント。\n\n<i>上からの眺めはどうだ？</i>"
+		"PaintKit_hye_geobirds_sunrise_Tag"					"Thermal Currents"
+
+		"PaintKit_hye_batik_eyes"							"深紅と黒のバナナリーフ柄をペイント。\n\n<i>動く標的</i>"
+		"PaintKit_hye_batik_eyes_Tag"						"Crimson Batik"
+
+		"PaintKit_hye_paisley_desat"						"ワインカラーの下地にゴールドのペイズリー柄をペイント。\n\n<i>最上級の布地をどうぞ、ブース。―ガンスミス ユカコ</i>"
+		"PaintKit_hye_paisley_desat_Tag"					"Honey Paisley"
+
+		"PaintKit_soch_copper_accent_revolver"				"グリップにプラムカラーのアクリルポアパターンをペイント。\n\n<i>優しく注ぐ</i>"
+		"PaintKit_soch_copper_accent_revolver_Tag"			"Mauve Aside"
+
+		"PaintKit_soe_yellow_bits"							"シルバーを基調とし、溝部分に黄色と赤色のペイントが施されている。\n\n<i>俺を止めてくれ！</i>"
+		"PaintKit_soe_yellow_bits_Tag"						"Bee-Tron"
+
+		"PaintKit_hye_test_animal_print_45"					"タンカラーとレッドのアニマル柄が施されている。\n\n<i>「ほんの数匹」って話だったよな。むしろ「動物園」じゃねえか</i>"
+		"PaintKit_hye_test_animal_print_45_Tag"				"Warm Blooded"
+
+		"PaintKit_hye_paisley_warm"							"赤色とオレンジ色のペイズリー柄が描かれている。\n\n<i>最上級の布地をどうぞ、ブース。―ガンスミス ユカコ</i>"
+		"PaintKit_hye_paisley_warm_Tag"						"Coral Paisley"
+
+		"PaintKit_soe_red"									"オフセットの赤いX模様が施されている。\n\n<i>やり過ぎ？でもそれがいいんだよ。―武器商人見習い イモジェン</i>"
+		"PaintKit_soe_red_Tag"								"Picnic"
+
+		"PaintKit_hye_batik_eyes_tec9"						"黄色と黒色のバナナリーフ柄をペイント。\n\n<i>カリウムたっぷり</i>"
+		"PaintKit_hye_batik_eyes_tec9_Tag"					"Banana Leaf"
+
+		"PaintKit_hye_earth_mandala"						"マルチカラーのマンダラ模様が施されている。\n\n<i>結果じゃない、過程だ</i>"
+		"PaintKit_hye_earth_mandala_Tag"					"Sky Mandala"
+
+		"PaintKit_hye_earth_mandala_lc"						"マルチカラーのマンダラ模様が施されている。\n\n<i>結果じゃない、過程だ</i>"
+		"PaintKit_hye_earth_mandala_lc_Tag"					"Earth Mandala"
+
+		"PaintKit_soe_yellow_xm"							"黄色の柄にシルバーのアクセントで仕上げられている。\n\n<i>ザァァップ！</i>"
+		"PaintKit_soe_yellow_xm_Tag"						"XoooM"
+
+		"PaintKit_soe_pink_cranes"							"ピンクと白の鶴と花の模様が施されている。\n\n<i>シェリーを1杯添えて</i>"
+		"PaintKit_soe_pink_cranes_Tag"						"Fraise Crane"
+
+		"PaintKit_ht_red_edges_fineline"					"赤の手書き風デザインが施されている。\n\n<i>書き残しておけ</i>"
+		"PaintKit_ht_red_edges_fineline_Tag"				"Calligrafaux"
+
+		"PaintKit_hye_firework_patches"						"赤色の爆発エフェクトの模様が施されている。\n\n<i>「イケてるヤツは爆発が起きても振り返ったりしないものさ」</i>"
+		"PaintKit_hye_firework_patches_Tag"					"Exothermic"
+
+		"PaintKit_soe_purple"								"紫色の迷彩柄にパール調の仕上げが施されている。\n\n<i>新しい一杯だ！</i>"
+		"PaintKit_soe_purple_Tag"							"Sleeping Potion"
+
+		"PaintKit_hye_animal_print_90s"						"鮮やかなネオンカラーのアニマル柄が施されている。\n\n<i>「ほんの数色」って話だったよな、ほぼ「虹色」じゃねえか</i>"
+		"PaintKit_hye_animal_print_90s_Tag"					"Party Animal"
+
 // END TIMED DROPS 2025
 
 // LIMITED TIME ITEM
@@ -34418,7 +34553,10 @@
 		"PaintKit_soch_mountains_xm1014"					"山岳地帯のデザインが施されている。\n\n<i>孤独は重荷ではない、特権だ</i>"
 		"PaintKit_soch_mountains_xm1014_Tag"				"Solitude"
 
-		// END LIMITED TIME ITEM
+		"PaintKit_gsch_ak_djiin"							"レシーバーとバレルにはメタリックのペイント。ハンドガードとストックは真珠層のような質感が再現されている。\n\n<i>別の次元から</i>"
+		"PaintKit_gsch_ak_djiin_Tag"						"Aphrodite"
+
+// END LIMITED TIME ITEM
 
 		//Recipes
 		"CSGO_Recipe_TradeUp"						"トレードアップ契約"
@@ -35116,6 +35254,12 @@
 		"SFUI_Map_de_golden"		"Golden"
 		"SFUI_Map_de_rooftop"		"Rooftop"
 		"SFUI_Map_de_transit"		"(削除済み)"
+
+		"SFUI_Map_de_warden"		"Warden"
+		"SFUI_Map_de_stronghold"	"Stronghold"
+		"SFUI_Map_cs_alpine"		"Alpine"
+		"SFUI_Map_de_poseidon"		"Poseidon"
+		"SFUI_Map_de_sanctum"		"Sanctum"
 
 		"SFUI_Map_workshop_preview_dust2"	"Dust II プレビュー"
 		"SFUI_Map_workshop_preview_ancient"	"Ancient プレビュー"
@@ -36996,6 +37140,15 @@
 		"CSGO_Demo_Next_Camera"						"[{s:bind_jump}]: 次のカメラ"
 		"CSGO_Demo_Toggle_XRay"						"[{s:bind_slot12}]: X-Ray ビュー切替"
 		"CSGO_Demo_Toggle_Overview"					"[{s:bind_duck}]: 全体マップ切替"
+		"CSGO_Demo_Settings_XRay"					"X-Ray ([{s:bind_slot12}]で切り替え)"
+		"CSGO_Demo_Settings_TrueView_Explanation"	"クライアント側の予測を再実行して当初のクライアント体験を再構築します。これにより、弾の被弾判定に使用されたサーバー側の条件をさらに正確に再現します。"
+		"CSGO_Demo_Settings_TrueView_Enable"		"TrueView を有効化"
+		"CSGO_Demo_Settings_TrueViewDOA"				"「DOA」状態のアクションも含む"
+		"CSGO_Demo_Settings_TrueViewDOA_Explanation"	"プレイヤーがコマンド到達時にはすでに死亡していたためにサーバー上で実行されなかったコマンドのクライアント予測を再現します。これをオフにすると、リプレイは当初の体験とは異なりますが、サーバー上で実際に起きた結果に近くなります。"
+		"CSGO_Demo_Settings_TrueViewWrongVersion"		"デモのバージョン不一致を許可"
+		"CSGO_Demo_Settings_TrueViewWrongVersion_Explanation"	"デモ再生に使用するクライアントバージョンがプレイ時のクライアントと異なる場合、TrueView が正しく動作しない可能性があります。それでも試したい場合は、このオプションを有効にしてください。"
+
+
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// Date formatting
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -37426,6 +37579,9 @@
 		"CSGO_Collectible_PremierSeason3Coin"		"プレミアシーズン 3 メダル"
 		"CSGO_Collectible_PremierSeason3Coin_Desc"	"プレミアシーズン 3 中にたくさんプレイした方に贈られる記念のプレミアメダルです。"
 
+		"CSGO_Collectible_PremierSeason4Coin"		"プレミアシーズン 4 メダル"
+		"CSGO_Collectible_PremierSeason4Coin_Desc"	"プレミアシーズン 4 中にたくさんプレイした方に贈られる記念のプレミアメダルです。"
+
 		//for main menu display
 		"SFUI_XP_Bonus_1"							"ウィークリー XP ボーナスブーストが利用可能！"
 		"SFUI_XP_Bonus_2"							"次にランクアップしたときにアイテムがドロップ！"
@@ -37585,11 +37741,12 @@
 		"xpshop_upsell_mainmenu_2_v2"				"新しい Train コレクション、Fever ケース、チャーム etc.を手に入れよう。"
 		"xpshop_upsell_btn"							"パスをゲット"
 		"xpshop_upsell_tooltip"						"{s:pass}についての詳細"
-		"xpshop_new_items"							"新しいアイテム！"
+
+		"xpshop_new_items:p{new-count}"	"新アイテム！"
 		"xpshop_lootlist_info"						"<span class=\"text-color-white\"><b>{s:casename}</b></span>には、以下のいずれかが含まれています"
 
 		"xpshop_limited_item_variations"			"スキンのバリエーション"
-		"xpshop_limited_item_variations_tooltip"	"リミットエディションアイテムを引き換える際に獲得できる可能性のあるバリエーションの一例です。"
+		"xpshop_limited_item_variations_tooltip"	"リミットエディションアイテムを引き換える際に獲得できる可能性のあるパターンテンプレートと摩耗度のバリエーションの例です。"
 		"xpshop_pass_activate"						"パスを有効化"
 		"xpshop_pass_activate_open_armory"			"アーモリーを開けて有効化"
 		"xpshop_pass_activate_desc"					"パスを有効化してアーモリークレジットを獲得しよう"
@@ -39515,8 +39672,8 @@
 		"SFUI_Settings_MiniScoreboardPlayerCount_Tooltip"	"ラウンドの進行中、ミニスコアボードにプレイヤーのアバターを表示せず、チームのプレイヤー数だけを表示します。"
 
 
-		"Post_Round_Damage_Report_Given:p{s1}"			" • 与ダメージ → %s3: %s2 (%s1発)"
-		"Post_Round_Damage_Report_Taken:p{s1}"			" • 被ダメージ ← %s3: %s2 (%s1発)"
+		"Post_Round_Damage_Report_Given:p"			" • 与ダメージ → %s3: %s2 (%s1発)"
+		"Post_Round_Damage_Report_Taken:p"			" • 被ダメージ ← %s3: %s2 (%s1発)"
 
 		"SFUI_TeamOverheadID"					"チーム装備を表示"
 
@@ -39995,8 +40152,8 @@
 
 		"SFUI_UserAlertNoteType_1"			"%s1 のサーバーには高い負荷がかかっています。"
 		"SFUI_UserAlertNoteType_2"			"%s1 のサーバーはメンテナンスのためオフラインになっています。"
-		"SFUI_UserAlertNoteType_LowPlayersR:p{players}"	"%players% 人のプレイ可能なプレイヤーが%region%で検索しています。"
-		"SFUI_UserAlertNoteType_LowPlayersY:p{players}"	"%players% 人のプレイ可能なプレイヤーがお住まいのリージョンで検索しています。"
+		"SFUI_UserAlertNoteType_LowPlayersR:p"	"%players% 人のプレイ可能なプレイヤーが%region%で検索しています。"
+		"SFUI_UserAlertNoteType_LowPlayersY:p"	"%players% 人のプレイ可能なプレイヤーがお住まいのリージョンで検索しています。"
 
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"マッチへの接続に失敗しました。"
 		"SFUI_QMM_ERROR_NotLoggedIn"		"Counter-Strike マッチメイキングサービスにログインしていません。"
@@ -45158,6 +45315,7 @@
 		"prime_unranked"				"アンランクマッチ"
 		"prime_not_enrolled_label"		"非プライムプレイヤー"
 		"prime_disabled_label"			"プライム無効"
+		"matchmaking_expected_wait_time"	"<img src='file://{images}/icons/ui/recent.svg' class='map-selection-info__wait-icon'/>待機時間 {s:time}"
 		"no_steam_group_link"			"あなたはどの Steam グループにも属していません。"
 
 		"permissions_title"					"許可設定"
@@ -45596,11 +45754,14 @@
 		"annotations_local"							"ローカルストレージ"
 		"annotations_workshop"						"ワークショップ"
 		"annotations_official"						"オフィシャル"
+		"annotations_none"							"マップガイドなし"
 		"Workshop_annotation_title"					"マップガイド提出ツール"
 		"Workshop_annotation_error_title"			"マップガイドのタイトルを入力します。"
 		"Workshop_annotation_error_file"			"有効なアノテーションファイル (.txt) を選択してください。"
 		"Workshop_annotation_ready"					"提出物をアップロードする準備ができました."		
 		"UI_File_Filter_SupportedAnnotationFormat"	"テキストファイル (*.txt)"
+		"annotations_visit_workshop"				"ワークショップを開く ⤤"
+
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Game Mode Desc
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -47834,20 +47995,196 @@
 		"quest_11015_var_desc:p{mission-points}"	 	" <b>{s:gamemode}：{s:location}</b>でラウンド勝利する。"
 		"quest_11015_var_ingame:p{mission-points}"		"ラウンド勝利する"
 
-// crow_mask_51509_comment
-// crow_mask_51510_comment
-}
+// crow_mask_51513_comment
+// crow_mask_51514_comment
 
-
-
-
-}
-
-
-s}"		"ラウンド勝利する"
-
-// crow_mask_51357_comment
-// crow_mask_51358_comment
+		"SFUI_PlayerCount_Alive_Left:f"									"生存"
+		"SFUI_PlayerCount_Alive_Right:f"								"生存"
+		"funfact_damage_no_kills:f"										"{s:funfact-player} はキルを取ることなく {d:funfact-d1} ダメージを与えた。"
+		"funfact_kills_with_single_grenade:f"							"{s:funfact-player} は1発のグレネードを {d:funfact-d1} 人の敵に当てた。"
+		"funfact_kill_defuser:f"										"{s:funfact-player} は爆弾処理者を阻止した。"
+		"funfact_kill_rescuer:f"										"{s:funfact-player} は人質救助者を倒した。"
+		"funfact_killed_enemies:f"										"{s:funfact-player} は {d:funfact-d1} 人の敵をキルした。"
+		"funfact_first_kill:f"											"ラウンド開始から {d:funfact-d1} 秒で {s:funfact-player} が初キルを達成。"
+		"funfact_first_blood:f"											"{s:funfact-player} はラウンド開始から {d:funfact-d1} 秒で初ヒットを達成。"
+		"funfact_short_round:f"											"わずか {d:funfact-d1} 秒でラウンド終了！"
+		"funfact_best_accuracy:f"										"{s:funfact-player} の命中率は {d:funfact-d1}% だった。"
+		"funfact_knife_kills:f"											"{s:funfact-player} はナイフで敵を {d:funfact-d1} 人倒した。"
+		"funfact_damage_with_grenade:f"									"{s:funfact-player} はグレネードで合計 {d:funfact-d1} ダメージを与えた。"
+		"funfact_kills_grenades:f"										"{s:funfact-player} はグレネードで敵を {d:funfact-d1} 人倒した。"
+		"funfact_blind_kills:f"											"{s:funfact-player} はフラッシュグレネードで視界を奪われた敵を {d:funfact-d1} 人倒した。"
+		"funfact_kills_with_last_round:f"								"{s:funfact-player} は {d:funfact-d1} 回、弾倉の最後の 1 発で敵を倒した。"
+		"funfact_kills_headshots:f"										"{s:funfact-player} はラウンド中に {d:funfact-d1} 人の敵をヘッドショットで倒した。"
+		"funfact_kills_with_stattrak_weapon:f"							"{s:funfact-player} はラウンド中に StatTrak™ 武器のキル数を {d:funfact-d1} 追加した。"
+		"funfact_donated_weapons:f"										"{s:funfact-player} はラウンド中に {d:funfact-d1} 個の武器を譲渡した。"
+		"funfact_posthumous_kills_with_grenade:f"						"{s:funfact-player} は死亡後に {d:funfact-d1} グレネードキルを達成した。"
+		"funfact_num_times_jumped:f"									"{s:funfact-player} はラウンド中に {d:funfact-d1} 回ジャンプした。"
+		"funfact_fall_damage:f"											"{s:funfact-player} は {d:funfact-d1} ダメージを受けた... 落下で。"
+		"funfact_items_purchased:f"										"{s:funfact-player} はアイテムを {d:funfact-d1} 個購入した。"
+		"funfact_won_as_last_member:f"									"{s:funfact-player} はチームで唯一生き残り、{d:funfact-d1} 人の敵を倒してラウンドに勝利した。"
+		"funfact_number_of_overkills:f"									"{s:funfact-player} は既に制圧中の敵を {d:funfact-d1} 人倒した。"
+		"funfact_shots_fired:f"											"このラウンド中には {d:funfact-d1} 発の銃弾が発射された。"
+		"funfact_money_spent:f"											"{s:funfact-player} はこのラウンドで ${d:funfact-d1} を消費した。"
+		"funfact_grenades_thrown:f"										"{s:funfact-player} はラウンド中に {d:funfact-d1} 個のグレネードを投げた。"
+		"funfact_used_all_ammo:f"										"{s:funfact-player} は弾薬を完全に撃ち尽くした。"
+		"funfact_survived_multiple_attackers:f"							"{s:funfact-player} は {d:funfact-d1} 人の敵から襲撃されて生き抜いた。"
+		"funfact_died_from_multiple_attackers:f"						"{s:funfact-player} は {d:funfact-d1} 人の敵からダメージを受けた後に死亡した。"
+		"funfact_defended_bomb:f"										"{s:funfact-player} は設置した爆弾を {d:funfact-d1} 人の敵から守った。"
+		"funfact_items_dropped_value:f"									"{s:funfact-player} は ${d:funfact-d1} 分の物資を捨てた。"
+		"funfact_kill_wounded_enemies:f"								"{s:funfact-player} は負傷した敵 {d:funfact-d1} 人にとどめを刺した。"
+		"funfact_damage_multiple_enemies:f"								"{s:funfact-player} は {d:funfact-d1} 人の敵にダメージを与えた。"
+		"funfact_used_multiple_weapons:f"								"{s:funfact-player} は {d:funfact-d1} 種類の銃火器を使用した。"
+		"funfact_terrorist_accuracy:f"									"テロリストが最高命中率を獲得: {d:funfact-d1}%。"
+		"funfact_ct_accuracy:f"											"カウンターテロリストが最高命中率を獲得: {d:funfact-d1}%。"
+		"funfact_ct_win_no_kills:f"										"カウンターテロリストはテロリストを1人も倒すことなく勝利した。"
+		"funfact_t_win_no_kills:f"										"テロリストはカウンターテロリストを1人も倒すことなく勝利した。"
+		"funfact_t_win_no_casualties:f"									"テロリストは1人も犠牲者を出さずに勝利した。"
+		"funfact_ct_win_no_casualties:f"								"カウンターテロリストは1人も犠牲者を出さずに勝利した。"
+		"funfact_best_terrorist_accuracy:f"								"{s:funfact-player} の命中率は {d:funfact-d1}%、チームの命中率は {d:funfact-d2}% だった。"
+		"funfact_best_counterterrorist_accuracy:f"						"{s:funfact-player} の命中率は {d:funfact-d1}%、チームの命中率は {d:funfact-d2}% だった。"
+		"funfact_fallback1:f"											"ケーキはウソ。"
+		"funfact_fallback2:f"											"あくび。"
+		"funfact_draw:f"												"プレイヤーの投票に基づきマッチが再スタートされました。"
+		"funfact_broke_windows:f"										"{s:funfact-player} は {d:funfact-d1} 枚の窓を割った。"
+		"funfact_nightvision_damage:f"									"{s:funfact-player} はナイトビジョンの着用中に {d:funfact-d1} ダメージを与えた。"
+		"funfact_defused_with_dropped_kit:f"							"{s:funfact-player} は落ちていたキットで爆弾を解除した。"
+		"funfact_killed_half_of_enemies:f"								"{s:funfact-player} は敵チームの {d:funfact-d1}% を倒した。"
+		"funfact_knife_level_reached:f"									"{d:funfact-d1} 人のプレイヤーがゴールドナイフレベルに到達した。"
+		"funfact_killed_before_dying:f"									"{s:funfact-player} は死ぬまでに {d:funfact-d1} 人のプレイヤーを倒した。"
+		"funfact_respawned:f"											"{s:funfact-player} はマッチ中に {d:funfact-d1} 回リスポーンした。"
+		"funfact_default_weapon:f"										"{s:funfact-player} は一度も武器を拾わずにラウンドを勝利した。"
+		"funfact_rounds_without_dying:f"								"{s:funfact-player} は連続 {d:funfact-d1} ラウンド死亡しなかった。"
+		"funfact_taser_kill:f"											"{s:funfact-player} は {d:funfact-d1} 人のプレイヤーを気絶させた。"
+		"funfact_ticking_time:f"										"{d:funfact-d1} 人のCTが爆弾解除を試みたもののテロリストが勝利した。"
+		"funfact_ct_win_time:f"											"CT勢は {d:funfact-d1} 秒でテロリストを全滅させた。"
+		"funfact_ter_win_time:f"										"テロリストチームは {d:funfact-d1} 秒でCT勢を全滅させた。"
+		"funfact_bots_assumed:f"										"{s:funfact-player} はこのラウンドで {d:funfact-d1} 体の BOT を操作した。"
+		"funfact_domination:f"											"{s:funfact-player} がほとんどのプレイヤーを制圧した。"
+		"funfact_revenge:f"												"{s:funfact-player} は {d:funfact-d1} 人のプレイヤーにリベンジした。"
+		"funfact_steps_taken:f"											"{s:funfact-player} はマッチ中に {d:funfact-d1} 歩走った。"
+		"funfact_quarter_health:f"										"{s:funfact-player} はヘルスが25未満の状態で {d:funfact-d1} 人のプレイヤーを倒した。"
+		"funfact_empty_guns:f"											"{s:funfact-player} は銃 {d:funfact-d1} 種の弾を撃ち尽くした。"
+		"funfact_slow_trigger:f"										"{s:funfact-player} は銃 {d:funfact-d1} 種を発砲することなく死亡した。"
+		"funfact_pickup_bomb:f"											"{s:funfact-player} は {d:funfact-d1} 人のチームメイトが所持していた爆弾を設置した。"
+		"funfact_bomb_carriers:f"										"{s:funfact-player} は前のラウンドで {d:funfact-d1} 人の爆弾所有者を倒した。"
+		"funfact_knife_bomb_planter:f"									"{s:funfact-player} はナイフレベルで爆弾設置者を倒し勝利した。"
+		"funfact_bomb_planted_before_kill:f"							"爆弾設置前に誰も死亡しなかった。"
+		"funfact_failed_bomb_plants:f"									"このラウンドでは {d:funfact-d1} 人のテロリストが爆弾設置を試みた。"
+		"funfact_knife_without_ammo:f"									"{s:funfact-player} は弾切れにもめげずナイフで {d:funfact-d1} 人倒した。"
+		"funfact_molotov_burns:f"										"{s:funfact-player} は {d:funfact-d1} 人のプレイヤーを発火物で燃やした。"
+		"funfact_survival_time:f"										"最長生存者は {s:funfact-player}: {d:funfact-d1} 秒。"
+		"funfact_pulled_trigger:f"										"{s:funfact-player} はこのマッチでトリガーを {d:funfact-d1} 回引いた。"
+		"funfact_ace:f"													"エース！ {s:funfact-player} は敵チームを全員倒した！"
+		"funfact_defuse_was_close_call_tenths:f"						"{s:funfact-player} は残り 0.{d:funfact-d1} 秒で爆弾を解除した。"
+		"funfact_defuse_was_close_call_hundredths:f"					"{s:funfact-player} は残り 0.0{d:funfact-d1} 秒で爆弾を解除した。"
+		"funfact_defuse_was_close_call_thousandths:f"					"{s:funfact-player} は残り 0.00{d:funfact-d1} 秒で爆弾を解除した。"
+		"mapwinrecord_graph_title:f"									"最近の勝利"
+		"CSGO_Recipe_Count_Items_Selected:f"							"<b>{d:count}</b> アイテムを選択"
+		"CSGO_Recipe_Count_Items_Remaining:f"							"残り <b>{d:count}</b> アイテム"
+		"CSGO_Recipe_TradeUp_Items_Remain:f"							"交換対象を {d:count} 個選択"
+		"CSGO_Recipe_TradeUp_Items_XofY:f"								"交換対象を選択：{d:count} / {d:recipecount}"
+		"CSGO_Recipe_TradeUp_Items_Inv:f"								"{d:count} 個が交換可能"
+		"CSGO_RemoveKeychainToolCharges_Reward:f"						"+{d:item_count}チャームデタッチ"
+		"SFUI_Store_Offer_Days_Remaining:f"								"残り{d:daysremaining}日"
+		"SFUI_Store_Offer_Days_Remaining_claim:f"						"残り{d:daysremaining}日"
+		"SFUI_Store_Offer_Days_Remaining_bid:f"							"このオファーに入札できる期間は残り{d:daysremaining}日間です"
+		"SFUI_Store_Offer_Days_Remaining_last_claim:f"					"このオファーを受け取れるラストチャンスです"
+		"SFUI_Store_Offer_Days_Remaining_last_bid:f"					"このオファーに入札できるラストチャンスです"
+		"SFUI_Store_Timer_Week:f"										"{f:0:value} 週"
+		"SFUI_Store_Timer_Day:f"										"{f:0:value} 日"
+		"SFUI_Store_Timer_Hour:f"										"{f:0:value} 時間"
+		"SFUI_Store_Timer_Min:f"										"{f:0:value} 分"
+		"SFUI_Store_Timer_Sec:f"										"{f:0:value} 秒"
+		"CSGO_Watch_Minute:f"											"{f:0:value} 分"
+		"xpshop_new_items:f"											"新アイテム！"
+		"xpshop_popup_clear_n_tracks:f"									"完了したパスを{d:completed_tracks_count}個クリア"
+		"xpshop_popup_clear_n_tracks_text:f"							"{d:completed_tracks_count}個のアーモリーパスから全てのアーモリークレジットを獲得しました。<br><br>この{d:completed_tracks_count}個のアーモリーパスをクリアすると、新しいパスを有効化できるようになります。クリアしてもアーモリークレジット残高には影響しません。"
+		"xpshop_redeem_bid_batchover:f"									"この入札枠の受付は終了しました。落札者には、決済完了後に通知されます。次の入札には、明日ご参加ください。入札はあと{d:hours_until_bid_batch}時間で再開されます。"
+		"xpshop_redeem_not_enough_stars:f"								"追加で{d:stars_needed}アーモリークレジットが必要です。有効なアーモリーパスでプレイすると獲得できます。"
+		"Panorama_PlayerDetails_Commendations_Left:f"					"今日はあと {d:num_token} 人のプレイヤーを称賛できます"
+		"SFUI_BuyMenu_CanOnlyCarryXGrenades:f"							"グレネードは{s:s1}個しか持てない"
+		"SFUI_BuyMenu_MaxItemsOfType:f"									"このタイプは{s:s1}個しか持てない"
+		"SFUI_BuyMenu_MaxItemsOfTypePurchased:f"						"このタイプは{s:s1}個しか購入できない"
+		"SFUI_BuyMenu_ReachedWeaponsExpertLimit:f"						"このマッチですでに{s:s1}個購入済み"
+		"cs_rating_wins_needed:f"										"あと <b>{d:winsneeded}</b> マッチに勝利"
+		"cs_rating_wins_needed_verbose:f"								"あと <b>{d:winsneeded}</b> マッチに勝利するとCSレーティングが確定"
+		"cs_rating_wins_needed_verbose_intro:f"							"<b>{d:winsneeded}</b> マッチに勝利するとCSレーティングが確定"
+		"cs_rating_need_wins:f"											"{d:wins-needed} 勝が必要"
+		"wins_count:f"													"{d:wins} 勝"
+		"contextmenu_lobby-count:f"										"{d:lobby_count} ロビー "
+		"popup_useitem_button_getkeychaincharges:f"						"<b>{d:item_count}</b>個のチャームデタッチを追加"
+		"popup_decodable_rent_weapon_count:f"							"{d:numlootlist}の武器を7日間レンタル"
+		"popup_redeem_souvenir_desc:f"									"受け取り可能な記念品：<span class=\"get-souvenir-redeem-count\">{d:redeems}</span> 個"
+		"matchmaking_stat_avgSearchTimeSeconds:f"						"推定検索時間: {s:stat}"
+		"matchmaking_stat_playersOnline:f"								"オンライン中のプレイヤー: {d:stat}"
+		"matchmaking_stat_playersLockedIn:f"							"{d:total_stat} 人中 {d:stat} 人が確定済み"
+		"matchmaking_stat_playersSearching:f"							"検索中のプレイヤー: {d:stat}"
+		"matchmaking_stat_serversOnline:f"								"オンライン中のサーバー: {d:stat}"
+		"matchmaking_stat_ongoingMatches:f"								"進行中のマッチ: {d:stat}"
+		"tooltip_skill_group_none:f"									"<b>{d:winsneeded}</b> マッチに勝利するとコンペティティブ・スキルグループが確定"
+		"tooltip_cs_rating_none:f"										"あと <b>{d:winsneeded}</b> マッチに勝利するとCSレーティングが確定"
+		"tooltip_skill_group_nonewingman:f"								"<b>{d:winsneeded}</b> マッチに勝利するとウィングマン・スキルグループが確定"
+		"tooltip_skill_group_nonedangerzone:f"							"デンジャーゾン・スキルグループはキャリブレーションが必要です。デンジャーゾーンのマッチをいくつか完了して、スキルグループを確定してください。"
+		"tooltip_skill_group_wins:f"									"<img src='file://{images}/icons/ui/trophy.svg'  vspace='6' class='player-card-tooltip-icon'/> {d:wins} 勝"
+		"team-intro-overtime-1st-half:f"								"延長時間 {d:overtime_num}: 前半"
+		"team-intro-overtime-2nd-half:f"								"延長時間 {d:overtime_num}: 後半"
+		"scoreboard_timeline_ot:f"										"延長時間 {d:scoreboard_ot}"
+		"eom-skillgroup-win:f"											"勝利した {s:rating_type} マッチ"
+		"eom-skillgroup-map-win:f"										"勝利した{s:rating_type} {s:map} マッチ"
+		"eom-skillgroup-needed-wins:f"									"マッチに {d:winsneeded} 勝するとスキルグループを表示可能"
+		"WatchMenu_Viewers_dv:f"										"{d:spectatorCount} 人視聴"
+		"Panorama_DeathPanel_DamageTaken:f"								"<font color='#A0A0A0'>被ダメージ: </font><font color='#FFFFFF'><b>{d:damage_taken}</b></font> <font color='#A0A0A0'> </font> <font color='#FFFFFF'><b>命中回数: {d:hits_taken}</b></font>"
+		"Panorama_DeathPanel_DamageGiven:f"								"<font color='#A0A0A0'>与ダメージ:  </font><font color='#FFFFFF'><b>{d:damage_given}</b></font> <font color='#A0A0A0'> </font> <font color='#FFFFFF'><b>命中回数: {d:hits_given}</b></font>"
+		"mission_directive:f"											"{s:action}：<b>{d:mission-points}</b>ポイント"
+		"mission_directive_progress:f"									"{d:mission-progress}/<b>{d:mission-points}</b> {s:action}"
+		"quest_11000_var_desc:f"										" <b>{s:gamemode}：{s:location}</b>にて{s:item1}でキルする。"
+		"quest_11000_var_partial:f"										"… {s:item1}を使うこと。"
+		"quest_11000_var_ingame:f"										"{s:item1}でキルする。"
+		"quest_11001_var_desc:f"										" <b>{s:gamemode}：{s:location}</b>にて{s:item1}でキルする。"
+		"quest_11001_var_partial:f"										"… {s:item1}を使うこと。"
+		"quest_11001_var_ingame:f"										"{s:item1}でキルする"
+		"quest_11002_var_desc:f"										" <b>{s:gamemode}：{s:location}</b>にて{s:item1}でキルする。"
+		"quest_11002_var_partial:f"										"… {s:item1}を使うこと。"
+		"quest_11002_var_ingame:f"										"{s:item1}でキルする"
+		"quest_11003_var_desc:f"										" <b>{s:gamemode}：{s:location}</b>にて{s:item1}でキルする。"
+		"quest_11003_var_partial:f"										"… {s:item1}を使うこと。"
+		"quest_11003_var_ingame:f"										"{s:item1}でキルする"
+		"quest_11004_var_desc:f"										" <b>{s:gamemode}：{s:location}</b>でラウンド勝利する。"
+		"quest_11004_var_partial:f"										""
+		"quest_11004_var_ingame:f"										"ラウンド勝利する"
+		"quest_11005_var_desc:f"										" <b>{s:gamemode}：{s:location}</b>でラウンド勝利する。"
+		"quest_11005_var_partial:f"										""
+		"quest_11005_var_ingame:f"										"ラウンド勝利する"
+		"quest_11006_var_desc:f"										" <b>{s:gamemode}：{s:location}</b>でラウンド勝利する。"
+		"quest_11006_var_partial:f"										""
+		"quest_11006_var_ingame:f"										"ラウンド勝利する"
+		"quest_11007_var_desc:f"										" <b>{s:gamemode}：{s:location}</b>にて{s:item1}でキルする。"
+		"quest_11007_var_partial:f"										"… {s:item1}を使うこと。"
+		"quest_11007_var_ingame:f"										"{s:item1}でキルする"
+		"quest_11008_var_desc:f"										" <b>{s:gamemode}：{s:location}</b>でラウンド勝利する。"
+		"quest_11008_var_partial:f"										""
+		"quest_11008_var_ingame:f"										"ラウンド勝利する"
+		"quest_11009_var_desc:f"										" <b>{s:gamemode}：{s:location}</b>でラウンド勝利する。"
+		"quest_11009_var_partial:f"										""
+		"quest_11009_var_ingame:f"										"ラウンド勝利する"
+		"quest_11010_var_desc:f"										" <b>{s:gamemode}：{s:location}</b>にて{s:item1}でキルする。"
+		"quest_11010_var_partial:f"										"… {s:item1}を使うこと。"
+		"quest_11010_var_ingame:f"										"{s:item1}でキルする"
+		"quest_11011_var_desc:f"										" <b>{s:gamemode}：{s:location}</b>でラウンド勝利する。"
+		"quest_11011_var_partial:f"										""
+		"quest_11011_var_ingame:f"										"ラウンド勝利する"
+		"quest_11012_var_desc:f"										" <b>{s:gamemode}：{s:location}</b>でラウンド勝利する。"
+		"quest_11012_var_partial:f"										""
+		"quest_11012_var_ingame:f"										"ラウンド勝利する"
+		"quest_11013_var_desc:f"										" <b>{s:gamemode}：{s:location}</b>でラウンド勝利する。"
+		"quest_11013_var_partial:f"										""
+		"quest_11013_var_ingame:f"										"ラウンド勝利する"
+		"quest_11014_var_desc:f"										" <b>{s:gamemode}：{s:location}</b>でラウンド勝利する。"
+		"quest_11014_var_partial:f"										""
+		"quest_11014_var_ingame:f"										"ラウンド勝利する"
+		"quest_11015_var_desc:f"										" <b>{s:gamemode}：{s:location}</b>でラウンド勝利する。"
+		"quest_11015_var_partial:f"										""
+		"quest_11015_var_ingame:f"										"ラウンド勝利する"
 }
 
 

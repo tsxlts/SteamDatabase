@@ -50,7 +50,7 @@
 		"GameUI_CrosshairThickness"	"Stärke"
 		"GameUI_CrosshairGap"		"Abstand"
 		"GameUI_CrosshairOutline"	"Kontur"
-		"GameUI_CrosshairAlpha"		"Alpha"
+		"GameUI_CrosshairAlpha"		"Transparenz"
 		"GameUI_CrosshairSize"		"Fadenkreuzgröße"
 		"GameUI_CrosshairColor"		"Fadenkreuzfarbe"
 		"GameUI_SniperCrosshairThickness" "Fadenkreuzdicke für Scharfschützengewehre"
@@ -102,6 +102,9 @@
 
 		"tooltip_copycrosshair"				"Fadenkreuz kopieren"
 		"GameUI_Xhair_Copy_Code_Confirm"		"Aktuelles Fadenkreuz ersetzen?"
+ 
+		"GameUI_Confirm_Write_Setting_Title"	"Anfrage zur Änderung der Einstellungen"
+		"GameUI_Confirm_Write_Setting_Text"		"Die Workshop-Karte „{s:mapname}“ möchte Ihre Einstellungen ändern. Dies kann Änderungen am Fadenkreuz, Radar, Audio und anderen Einstellungen umfassen. Möchten Sie diese Änderungen zulassen?"
 
 		"settings_damage_prediction"			"Schadensvorhersage"
 		"settings_damage_prediction_info"		"Spielt sofort die audiovisuellen Effekte ab, wenn Schaden zugefügt wird, ohne auf eine Bestätigung vom Server zu warten. Durch die Schadensvorhersage kann sich das Schießen deutlich responsiver anfühlen. Jedoch besteht das Risiko, dass gelegentlich falsche Informationen vermittelt werden (z. B. fehlerhafte Treffer- bzw. Aimpunch-Animationen oder der Tod eines Spielers, der noch nicht an den Client übermittelt wurde). Bei einem hohen Ping wird die Schadensvorhersage deaktiviert."
@@ -533,6 +536,7 @@
 		"loadingscreen_title_cs_italy"			"Italy"
 		"loadingscreen_title_cs_italy_0"		"Linke Gasse"
 		"loadingscreen_title_cs_italy_1"		"Langer Flur"
+		"loadingscreen_title_cs_italy_2"		"Obergeschoss"
 		"loadingscreen_title_cs_italy_3"		"Markt"		
 
 		"loadingscreen_title_ar_baggage"		"Baggage"
@@ -1267,18 +1271,23 @@
 		"BombsiteB"			"Bombenort B"
 		"BombsiteC"			"Bombenort C"
 		"Hostages"			"Geiseln"
+		"HostageRescueZone"	"Geiselrettungszone"
 		"VipRescueZone"		"VIP-Rettungszone"
 		"CTSpawn"			"AT-Startzone"
 		"TSpawn"			"T-Startzone"
 		"Bridge"			"Brücke"
 		"Middle"			"Mitte"
 		"House"				"Haus"
+		"Apartment"			"Apartment"
+		"Apartments"		"Apartments"
 		"Market"			"Markt"
 		"Sewers"			"Kanalisation"
 		"Tunnel"			"Tunnel"
 		"Ducts"				"Schächte"
 		"Village"			"Dorf"
 		"Roof"				"Dach"
+		"Upstairs"			"Obergeschoss"
+		"Downstairs"		"Untergeschoss"
 		"Basement"			"Keller"
 		"Crawlspace"		"Kriechgang"
 		"Kitchen"			"Küche"
@@ -1298,6 +1307,7 @@
 		"SideYard"			"Seitlicher Hof"
 		"Lobby"				"Lobby"
 		"Vault"				"Tresor"
+		"Elevator"			"Aufzug"
 		"DoubleDoors"		"Doppeltüren"
 		"SecurityDoors"		"Sicherheitstüren"
 		"LongHall"			"Langer Flur"
@@ -1364,6 +1374,8 @@
 		"BoatBar"			"Bootsbar"
 		"BoatStorage"		"Bootsdepot"
 		"CTBar"				"AT-Bar"
+		"UpperCatwalks"		"Oberer Catwalk"
+		"LowerCatwalks"		"Unterer Catwalk"
 		"UpperCatwalk"		"Oberer Laufsteg"
 		"UpperConveyor"		"Oberes Förderband"
 		"GroundLevel"		"Bodenhöhe"
@@ -1398,22 +1410,29 @@
 		//DUST2
 		"MidArch"		"Mittlerer Bogen"
 		"OutsideLong"	"Außerhalb Lang"
+		"LongDoors"		"Lang-Türen"
 		"AbovePit"		"Über der Grube"
 		"Pit"			"Grube"
 		"APlatform"		"A-Plattform"
+		"LongA"			"A-Lang"
 		"ARamp"			"A-Rampe"
 		"BackofA"		"Hinterseite von A"
 		"Bricks"		"Ziegel"
+		"ShortStairs"	"Kurz-Treppe"
 		"Short"			"Kurz"
 		"Catwalk"		"Catwalk"
 		"Mid"			"Mitte"
+		"TopofMid"		"Obere Mitte"
+		"MidDoors"		"Mitte-Türen"
 		"ExtendedA"		"A Verlängert"
 		"BDoors"		"B-Türen"
 		"Hole"			"Loch"
 		"BPlatform"		"B-Plattform"
 		"BackofB"		"Hinterseite von B"
 		"UpperTunnel"	"Oberer Tunnel"
+		"TunnelStairs"	"Tunnel-Treppe"
 		"LowerTunnel"	"Unterer Tunnel"
+		"OutsideTunnel"	"Außerhalb Tunnel"
 		"UnderA"		"Unter A"
 		"TRamp"			"T-Rampe"
 		//NUKE
@@ -1430,6 +1449,7 @@
 		"Heaven"		"Himmel"
 		"Hell"			"Hölle"
 		"Vending"		"Automaten"
+		"Trophy"		"Trophäenraum"
 		"Silo"			"Silo"
 		"SniperBox"		"Scharfschützenversteck"
 		"Radio"			"Funkgerät"
@@ -1449,6 +1469,7 @@
 		"Ruins"			"Ruine"
 		"Banana"		"Banane"
 		"Logs"			"Holz"
+		"TStairs"		"T-Treppe"
 		"SecondMid"		"Falsche Mitte"
 		"Hay"			"Heu"
 		"Quad"			"Laube"
@@ -1878,6 +1899,8 @@
 		"SFUI_PlayerCount_Alive_Left:p{left_side_alive}"	"am Leben#|#am Leben"
 		"SFUI_PlayerCount_Alive_Right:p{right_side_alive}"	"am Leben#|#am Leben"
 
+		"hostagerescuetime"			"Die AT-Einheit hat durch das Erreichen einer Geisel zusätzliche Zeit erhalten."
+
 		// Cash award reasons
 		//  = 0x06	   - Use color reserved for awards from this point forward. Most likely a green.
 		//  = 0x07       - Use color reserved for penalties from this point forward. Most likely a red.
@@ -1941,8 +1964,8 @@
 		"Team_Cash_Award_no_income_suicide"					" +0 $ Strafe für Freitod."
 		"Team_Cash_Award_Generic"							" +%s1 $ Einkommen."
 		"Team_Cash_Award_Custom"							" +%s1 $ %s2"
-		"Team_Cash_Award_Dead_Terrorists:p{s2}"				" +%s1 $ Einkommen für die Eliminierung von %s2 Terroristen.#|# +%s1 $ Einkommen für die Eliminierung von %s2 Terroristen."
-		"Team_Cash_Award_Dead_CTs:p{s2}"					" +%s1 $ Einkommen für die Eliminierung von %s2 AT-Einheit.#|# +%s1 $ Einkommen für die Eliminierung von %s2 AT-Einheiten."
+		"Team_Cash_Award_Dead_Terrorists:p"					" +%s1 $ Einkommen für die Eliminierung von %s2 Terroristen.#|# +%s1 $ Einkommen für die Eliminierung von %s2 Terroristen."
+		"Team_Cash_Award_Dead_CTs:p"						" +%s1 $ Einkommen für die Eliminierung von %s2 AT-Einheit.#|# +%s1 $ Einkommen für die Eliminierung von %s2 AT-Einheiten."
 
 
 		"Notice_Bonus_Shorthanded_Eligibility"			" Ihr Team kann in %s1 Runden Einkommen für Unterzahl erhalten."
@@ -2118,6 +2141,8 @@
 		"CS_DeathNemesis"			"Gegenspieler"
 		"CS_DeathNewNemesis"		"Neuer Gegenspieler"
 		"CS_DeathRevenge"			"Rache"
+
+		"DeathNotice_Prescient_Attacker"	"(Tot auf dem Server)"
 
 		// Game Instructor Messages
 
@@ -2872,6 +2897,8 @@
 		"official_leaderboard_premier_season1_name"			"1. Saison"
 		"official_leaderboard_premier_season2_name"			"2. Saison"
 		"official_leaderboard_premier_season3_name"			"3. Saison"
+		"official_leaderboard_premier_season4_name"			"4. Saison"
+
 		//
 
 		"CSGO_official_leaderboard_mission_embedded"	"Missionsbestenliste"
@@ -2942,7 +2969,7 @@
 		"season_progress_bar_title"				"Gewonnene Spiele"
 		"season_wins"							"<b>{d:wins}</b> / {d:threshold}"
 		"season_progress_tooltip-title"			"Saisonfortschritt"
-		"season_progress_tooltip-body"			"Nach dem Saisonende erhalten alle Spieler, die die Anforderungen erfüllen, das Abzeichen der jeweiligen Premium-Saison.<br><br>Die Farbe des Abzeichens entspricht der höchsten CS-Wertung, die Sie während der vergangenen Saison erreicht haben. Die Balken spiegeln die Anzahl Ihrer Siege wider (ein Balken für jeweils 25 Siege, max. fünf Balken).<br><br>Sie erhalten das Abzeichen der aktuellen Premium-Saison, wenn Ihr Steam-Account nicht negativ aufgefallen ist, Sie 25 Spiele im Premium-Modus gewonnen haben und am Saisonende über eine aktuelle CS-Wertung verfügen."
+		"season_progress_tooltip-body"			"Nach dem Saisonende erhalten alle Spieler, die die Anforderungen erfüllen, das Abzeichen der jeweiligen Premium-Saison.<br><br>Die Farbe des Abzeichens entspricht der höchsten CS-Wertung, die Sie während der vergangenen Saison erreicht haben. Die Balken spiegeln die Anzahl Ihrer Siege wider (ein Balken für jeweils 25 Siege, max. fünf Balken).<br><br>Sie erhalten das Abzeichen der aktuellen Premium-Saison, wenn Ihr Steam-Account nicht negativ aufgefallen ist, Sie 25 Spiele im Premium-Modus gewonnen haben und am Saisonende über eine aktive CS-Wertung verfügen."
 		"season_progress_tooltip-expiration_time"	"<br><br>Ihre CS-Wertung bleibt für {s:time} aktiv."
 		"season_progress_rating_expired"		"Ihre CS-Wertung ist aufgrund von Inaktivität abgelaufen. Gewinnen Sie 1 Partie, um diese wieder anzeigen zu lassen.<br><br>Um das Abzeichen der aktuellen Premium-Saison zu erhalten, darf Ihr Account bis zum Ende der Saison nicht negativ aufgefallen sein."
 		
@@ -3260,6 +3287,18 @@
 		"CSGO_Collectible_MapTokenRooftop_Desc"			"Würdigt die Ersteller der CS2-Karte Rooftop."
 		"CSGO_Collectible_MapTokenTransit"				"Münze der Karte [Zensiert]"
 		"CSGO_Collectible_MapTokenTransit_Desc"			"Würdigt die Ersteller der CS2-Karte [Zensiert]."
+		"CSGO_Collectible_MapTokenWarden"				"Münze der Karte Warden"
+		"CSGO_Collectible_MapTokenWarden_Desc"			"Würdigt die Ersteller der CS2-Karte Warden."
+		"CSGO_Collectible_MapTokenStronghold"			"Münze der Karte Stronghold"
+		"CSGO_Collectible_MapTokenStronghold_Desc"		"Würdigt die Ersteller der CS2-Karte Stronghold."
+		"CSGO_Collectible_MapTokenAlpine"				"Münze der Karte Alpine"
+		"CSGO_Collectible_MapTokenAlpine_Desc"			"Würdigt die Ersteller der CS2-Karte Alpine."
+		"CSGO_Collectible_MapTokenPoseidon"				"Münze der Karte Poseidon"
+		"CSGO_Collectible_MapTokenPoseidon_Desc"		"Würdigt die Ersteller der CS2-Karte Poseidon."
+		"CSGO_Collectible_MapTokenSanctum"				"Münze der Karte Sanctum"
+		"CSGO_Collectible_MapTokenSanctum_Desc"			"Würdigt die Ersteller der CS2-Karte Sanctum."
+
+
 		"CSGO_CollectibleCoin_FortiusQuoFidelius"	"Loyalitätsabzeichen"
 		"CSGO_CollectibleCoin_FortiusQuoFidelius_Desc"	"Dieses Abzeichen ist ein Andenken für loyale Mitglieder in der Counter-Strike-Community vor der Veröffentlichung des Gefahrenzonen-Updates.\n\n<i>Stärke durch Loyalität.</i>"
 		"CSGO_CollectibleCoin_FiveYearService"		"5-Jahre-Veteranenmünze"
@@ -5279,6 +5318,8 @@
 		"CSGO_set_timed_drops_neutral"			"Kollektion „Nordwald“"
 		"CSGO_set_timed_drops_cool"				"Kollektion „Aufstieg“"
 		"CSGO_set_community_36"					"Kollektion „Genesis“"
+		"CSGO_set_timed_drops_exuberant"		"Kollektion „Harlekin“"
+		"CSGO_set_timed_drops_achroma"			"Kollektion „Achroma“"
 		/////////////////
 		// lootlist override strings
 		//////////////////
@@ -6130,6 +6171,7 @@
 		"quest_1024_var_desc" 	"Zerbrechen Sie {d:points} Glasscheiben im Modus <b>{s:gamemode}</b> in <b>{s:location}</b>."
 		"quest_1025_var_desc" 	"Gewinnen Sie {d:points} Runden im Modus <b>{s:gamemode}</b> in <b>{s:location}</b>."
 		"quest_1027_var_desc"	 "Sprühen Sie {d:points} Graffiti im gegnerischen Startbereich im Modus <b>{s:gamemode}</b> in <b>{s:location}</b>."
+		"quest_1028_var_desc"	 "Erzielen Sie {d:points} Kills in der <i>Banane</i> oder in den <i>Apartments</i> im Modus <b>{s:gamemode}</b> auf <b>{s:location}</b>."
 		"quest_1029_var_desc"	 "Werfen Sie {d:points} strategische Rauchgranaten im Modus <b>{s:gamemode}</b> in <b>{s:location}</b>."
 		"quest_1030_var_desc"	 "Beschaffen Sie eine Probe des Gefahrenzone-Virus aus dem Phönix-Labor."
 		"quest_1031_var_desc"	 "Zerstören Sie die Phönix-Produktionsstätte und eliminieren Sie Franz Kriegeld."
@@ -6291,6 +6333,7 @@
 		"quest_1212_var_desc"                              "Erzielen Sie einen Abschuss von AT-Start"
 		"quest_1213_var_desc"                              "Erzielen Sie einen Abschuss von Laden"
 		"quest_1214_var_desc"                              "Erzielen Sie einen Abschuss von Bombenort B"
+		"quest_1215_var_desc"                              "Erzielen Sie einen Kill vom Catwalk"
 		"quest_1216_var_desc"                              "Erzielen Sie einen Abschuss von Mitte"
 		"quest_1217_var_desc"                              "Erzielen Sie einen Abschuss von Treppe"
 		"quest_1218_var_desc"                              "Erzielen Sie einen Abschuss von Bombenort A"
@@ -6314,8 +6357,11 @@
 		"quest_1232_var_desc"                              "Sprühen Sie Graffiti bei Bombenort A"
 		"quest_1233_var_desc"                              "Sprühen Sie Graffiti bei der Grube"
 		"quest_1234_var_desc"                              "Sprühen Sie Graffiti bei Bombenort B"
+		"quest_1235_var_desc"                              "Sprühen Sie Graffiti bei den Mitte-Türen"
 		"quest_1236_var_desc"                              "Sprühen Sie Graffiti bei T-Start"
+		"quest_1237_var_desc"                              "Sprühen Sie Graffiti auf dem Catwalk"
 		"quest_1238_var_desc"                              "Sprühen Sie Graffiti beim oberen Tunnel"
+		"quest_1239_var_desc"                              "Sprühen Sie Graffiti bei den Lang-Türen"
 		"quest_1240_var_desc"                              "Sprühen Sie Graffiti bei der Mitte"
 
 // OP11 Week 4 Sub-Missions		
@@ -6357,8 +6403,12 @@
 // OP11 Week 7 Sub-Missions			
 		"quest_1271_var_desc"                              "Gewinnen Sie {d:points} Spiel"
 		"quest_1272_var_desc"                              "Gewinnen Sie {d:points} Runden"
+		"quest_1273_var_desc"                              "Erzielen Sie einen Kill von den Mitte-Türen"
+		"quest_1274_var_desc"                              "Erzielen Sie einen Kill vom Catwalk"
+		"quest_1275_var_desc"                              "Erzielen Sie einen Kill bei Obere Mitte"
 		"quest_1276_var_desc"                              "Erzielen Sie einen Abschuss von der Grube"
 		"quest_1277_var_desc"                              "Erzielen Sie einen Abschuss von Bombenort A"
+		"quest_1278_var_desc"                              "Erzielen Sie (noch einmal) einen Kill von den Mitte-Türen"
 		"quest_1279_var_desc"                              "Erzielen Sie einen Abschuss von Bombenort B"
 		"quest_1280_var_desc"                              "Erzielen Sie einen Abschuss vom Tunnel"
 		"quest_1281_var_desc"                              "Erzielen Sie einen Abschuss von der T-Rampe"
@@ -6371,6 +6421,7 @@
 		"quest_1286_var_desc"                              "Gewinnen Sie {d:points} Runden"
 		"quest_1287_var_desc"                              "Erreichen Sie die Messerstufe"
 		"quest_1288_var_desc"                              "Werten Sie Ihre Waffe {d:points} Mal auf"
+		"quest_1289_var_desc"                              "Werfen Sie eine Rauchgranate auf Obere Mitte"
 		"quest_1290_var_desc"                              "Werfen Sie eine Rauchgranate auf Banane"
 		"quest_1291_var_desc"                              "Werfen Sie einen Molotowcocktail auf Banane"
 		"quest_1292_var_desc"                              "Blenden Sie 3 Gegner in einem einzigen Spiel"
@@ -6587,7 +6638,9 @@
 		"quest_1024_hud_var_desc" 	"Zerbrechen Sie Glasscheiben"
 		"quest_1025_hud_var_desc" 	"Gewinnen Sie Runden"
 		"quest_1027_hud_var_desc"	"Sprühen Sie Graffiti<br>im gegnerischen Startbereich"
+		"quest_1028_hud_var_desc"	"Erzielen Sie Abschüsse<br>in der Banane oder in den Apartments"
 		"quest_1029_hud_var_desc"	"Werfen Sie Rauchgranaten"
+		"quest_1029_hud_var_desc_CT"	"Werfen Sie Rauchgranaten:<br>Apartments oder T-Rampe"
 		"quest_1029_hud_var_desc_T"	"Werfen Sie Rauchgranaten:<br>Scharfschützennest oder Treppe"
 		"quest_1098_hud_var_desc"               "Gewinnen Sie Runden"
 		"quest_1032_hud_var_desc"               "Gewinnen Sie Runden"
@@ -6634,6 +6687,8 @@
 		"quest_1067_hud_var_desc"               "Kopfschüsse mit AUG"
 		"quest_1068_hud_var_desc"               "Blenden Sie einen Gegner mit einer Blendgranate"
 		"quest_1069_hud_var_desc"               "Sprühen Sie Graffiti"
+		"quest_1069_hud_var_desc_T"             "Sprühen Sie Graffiti auf dem Catwalk oder im Oberen Tunnel"
+		"quest_1069_hud_var_desc_CT"            "Sprühen Sie Graffiti im Unteren Tunnel oder bei der Kurz-Treppe"
 		"quest_1101_hud_var_desc"               "Gewinnen Sie Runden"
 		"quest_1070_hud_var_desc"               "Gewinnen Sie Runden"
 		"quest_1071_hud_var_desc"               "Weniger als 10 Meter Entfernung"
@@ -29337,6 +29392,7 @@
 	"HighlightDesc_bud2025_sf-w0nderful-triple-on-inferno"	"w0nderful erledigt Twistzz unter dem Balkon, bevor er zwei Spieler nach dem Legen der Bombe am Bombenort A stoppt."
 	"HighlightReel_bud2025_sf-aleksib-double-on-inferno"	"Aleksib – Verteidiger aus der Ferne"
 	"HighlightDesc_bud2025_sf-aleksib-double-on-inferno"	"Aleksib verteidigt Bombenort B wacker von der entfernten AT-Startzone und erzielt zwei Kills."
+	"HighlightReel_bud2025_sf-b1t-quadro-on-inferno"	"b1t – Vierfach-Kill von Quad"
 	"HighlightDesc_bud2025_sf-b1t-quadro-on-inferno"	"b1t findet den perfekten Zeitpunkt, um hinter Quad hervorzukommen, und erzielt einen Vierfach-Kill gegen FaZe."
 	"HighlightReel_bud2025_sf-b1t-defuse-on-inferno"	"b1t entschärft die Bombe in letzter Sekunde"
 	"HighlightDesc_bud2025_sf-b1t-defuse-on-inferno"	"b1t schaltet broky aus und entschärft die Bombe erfolgreich 0,044 Sekunden vor der Explosion."
@@ -31163,6 +31219,7 @@
 		"PaintKit_cu_m4a1-s_elegant"                "Die Waffe wurde kobaltblau lackiert und am Magazin mit einem AT-Logo schabloniert.\n\n<i>„Ich muss Sie nicht mögen, ich muss Sie nur beschützen“ – Carmen Cocinero, Liquidierungsexpertin</i>"
 		"PaintKit_cu_m4a1-s_elegant_Tag"            "Wächter"
 
+		"PaintKit_cu_p250_refined"                  "Die Waffe wurde durch Wassertransferdruck mit einem Paisley-Muster versehen.\n\n<i>Namaste</i>"
 		"PaintKit_cu_p250_refined_Tag"              "Mehndi"
 
 		"PaintKit_cu_awp_cobra"                     "Die Waffe wurde durch Wassertransferdruck mit einem Carbonfasermuster und einem roten Nadelstreifen versehen.\n\n<i>Haben Sie keine Angst, ans Limit zu gehen</i>"
@@ -34565,6 +34622,8 @@
 		"PaintKit_cu_poly_green_galil_Tag"					"NV"
 
 		"PaintKit_ht_facet_p2000"							"Die Waffe wurde mit einer Sonderlackierung versehen, die ein mehrfarbiges Halbtonmuster zeigt.\n\n<i>Achte auf deinen Ton</i>"
+		"PaintKit_ht_facet_p2000_Tag"						"Korallenrotes Halbtonmuster"
+		
 		"PaintKit_cu_chevron_scar20"						"Die Waffe wurde mit einer Sonderlackierung versehen, die ein mehrfarbiges Halbtonmuster zeigt.\n\n<i>„Ich kann nicht zielen“</i>"
 		"PaintKit_cu_chevron_scar20_Tag"					"Waldbeere"
 		
@@ -34872,6 +34931,7 @@
 		"PaintKit_ht_earth_fans"							"Die Waffe wurde mit einem blaugrünen und braunen Halbtonmuster versehen, das mehrere Fächer zeigt.\n\n<i>Die Luft ist rein</i>"
 		"PaintKit_ht_earth_fans_Tag"						"Minzgrüner Fächer"
 		
+		"PaintKit_hye_blue_paisley"							"Die Waffe wurde mit einem blauen Paisley-Muster versehen.\n\n<i>„Nur die besten Textilien für dich, Booth“ – Yukako, Waffenschmied</i>"
 		"PaintKit_hye_blue_paisley_Tag"						"Kobaltblaues Paisley"
 		
 		"PaintKit_hye_coral"								"Die Waffe wurde mit einem grünen- und blauen Korallenmuster versehen.\n\n<i>Die Natur lachte, als sie etwas schuf, das wir uns nicht erträumen konnten</i>"
@@ -34891,6 +34951,120 @@
 		
 		"PaintKit_cue_stratosphere"							"Die Waffe wurde mit einer Sonderlackierung versehen, die einen Planeten umkreisende Raumschiffe im Weltraum zeigt.\n\n<i>„Eines Tages in einer nicht allzu fernen Zukunft …“</i>"
 		"PaintKit_cue_stratosphere_Tag"						"Stratosphäre"
+		
+		// ACHROMA COLLECTION
+		"PaintKit_soe_ddpat_swirl_bw"						"Die Waffe wurde mit einem pixelartigen Tarnmuster (DDPAT) in verschiedenen Grautönen versehen.\n\n<i>Ringel, Ringel, Reihe</i>"
+		"PaintKit_soe_ddpat_swirl_bw_Tag"					"Drehwurm"
+
+		"PaintKit_hye_car_wrap_bizon"						"Die Waffe wurde mit einem Muster in verschiedenen Grautönen versehen.\n\n<i>Jetzt aber hurtig!</i>"
+		"PaintKit_hye_car_wrap_bizon_Tag"					"Bizoom"
+
+		"PaintKit_soe_acrylic_flow3"						"Die Waffe wurde durch Acrylgießen mit einem Muster in verschiedenen Grautönen versehen.\n\n<i>Letztendlich scheint sich alles zu fügen</i>"
+		"PaintKit_soe_acrylic_flow3_Tag"					"Silberguss"
+
+		"PaintKit_hye_comic_shapes"							"Die Waffe wurde mit einem Muster in verschiedenen Grautönen und silbernem Hochglanzlack versehen.\n\n<i>„Das rote Licht bedeutet, dass die Aufnahme läuft“</i>"
+		"PaintKit_hye_comic_shapes_Tag"						"Sans Comic"
+
+		"PaintKit_hye_chrome_ripple"						"Die Waffe wurde mit einem Muster in verschiedenen Grautönen versehen.\n\n<i>Eine Welle in der Zeit</i>"
+		"PaintKit_hye_chrome_ripple_Tag"					"Zink"
+
+		"PaintKit_hye_car_wrap_3"							"Die Waffe wurde mit einem kantigen Muster in verschiedenen Grautönen versehen.\n\n<i>Innen hui, außen pfui</i>"
+		"PaintKit_hye_car_wrap_3_Tag"						"Graupel"
+
+		"PaintKit_hye_geobirds"								"Die Waffe wurde mit einem Muster in verschiedenen Grautönen versehen und mit silbernen Vögeln veredelt.\n\n<i>Wie ist die Aussicht dort oben?</i>"
+		"PaintKit_hye_geobirds_Tag"							"Luftströmung"
+
+		"PaintKit_hye_mp5_car_wrap4"						"Die Waffe wurde mit einem Muster in verschiedenen Grautönen und spitzen, kantigen Designs versehen.\n\n<i>Unerschrocken</i>"
+		"PaintKit_hye_mp5_car_wrap4_Tag"					"Schneepfütze"
+
+		"PaintKit_soe_bw_blast"								"Die Waffe wurde mit einem Holzmaserungsmuster in Hochglanzfarbe versehen.\n\n<i>„Hier, falls du ein Hühnchen zu rupfen hast …“ – Booth, Waffenhändler</i>"
+		"PaintKit_soe_bw_blast_Tag"							"Vendetta"
+
+		"PaintKit_hye_abstract_knot_m4"						"Die Waffe wurde mit einem abstrakten Knotenmuster in verschiedenen Grautönen versehen.\n\n<i>Lass dich von den günstigen Winden tragen</i>"
+		"PaintKit_hye_abstract_knot_m4_Tag"					"Äolische Dunkelheit"
+
+		"PaintKit_soch_smoke_grips"							"Der Handgriff der Waffe wurde durch Acrylgießen mit einem dunklen Muster versehen.\n\n<i>Alter Geldadel</i>"
+		"PaintKit_soch_smoke_grips_Tag"						"Dunkelkammer"
+
+		"PaintKit_soe_aug_creep"							"Die Waffe wurde mit knorrigen Ästen und Vögeln über einer silbernen Grundierung versehen.\n\n<i>„Sie ziehen schon ihre Kreise …“</i>"
+		"PaintKit_soe_aug_creep_Tag"						"Ranken"
+
+		"PaintKit_hye_abstract_knot"						"Die Waffe wurde mit einem abstrakten Knotenmuster in verschiedenen Grautönen versehen.\n\n<i>Lass dich von den günstigen Winden tragen</i>"
+		"PaintKit_hye_abstract_knot_Tag"					"Äolisches Licht"
+
+		"PaintKit_hye_car_wrap"								"Die Waffe wurde mit einem Muster in verschiedenen Grautönen versehen.\n\n<i>Aus den Seiten deines Lieblingscomics</i>"
+		"PaintKit_hye_car_wrap_Tag"							"Tägliche Deagle-Dosis"
+
+		"PaintKit_soe_p2000_grips"							"Die Waffe wurde mit einem silbernen Muster in verschiedenen Glanzgraden versehen. Teile des Handgriffs wurden in einer dunklen, matten Farbe lackiert, um Griffband zu ähneln.\n\n<i>Gut festhalten!</i>"
+		"PaintKit_soe_p2000_grips_Tag"						"Griffband"
+
+		"PaintKit_hye_zeds"									"Die Waffe wurde mit einem Muster in verschiedenen Grautönen und hervorstechenden Z-Designs über einer Grundierung aus Kohlefaser versehen.\n\n<i>+5 Waffenhandhabung</i>"
+		"PaintKit_hye_zeds_Tag"								"Durchbruch"
+
+		"PaintKit_ht_white_edges"							"Die Waffe wurde mit einem holografischen Design unter einem Muster in verschiedenen Grautönen versehen.\n\n<i>Graphische Karten holographischer Systeme</i>"
+		"PaintKit_ht_white_edges_Tag"						"Anti-Ortung"
+
+		"PaintKit_soe_bw_the_end_awp"						"Die Waffe wurde mit einer Sonderlackierung versehen, die auberginefarbene und weiße Farben mit Flammen, Rosen und den Schriftzug „the end“ vor dem Abzug zeigt.\n\n<i>Jede Geschichte hat zwei Seiten</i>"
+		"PaintKit_soe_bw_the_end_awp_Tag"					"Das Ende"
+
+		// EXUBERANT COLLECTION
+		"PaintKit_hye_animal_print_lc"						"Die Waffe wurde mit einem braunen, von Tieren inspirierten Muster versehen.\n\n<i>Du sagtest „ein paar Tiere“, nicht „das gesamte Tierreich“</i>"
+		"PaintKit_hye_animal_print_lc_Tag"					"Safari-Muster"
+
+		"PaintKit_hye_firework_patches_famas"				"Die Waffe wurde mit einem goldenen, explosionsartigen Muster versehen.\n\n<i>„Coole Typen schauen sich keine Explosionen an“</i>"
+		"PaintKit_hye_firework_patches_famas_Tag"			"Nebenprodukt"
+
+		"PaintKit_hye_geobirds_sunrise"						"Die Waffe wurde mit silbernen Vögeln über einem weinroten Muster versehen.\n\n<i>Wie ist die Aussicht dort oben?</i>"
+		"PaintKit_hye_geobirds_sunrise_Tag"					"Thermische Strömungen"
+
+		"PaintKit_hye_batik_eyes"							"Die Waffe wurde mit einem karmesinroten und schwarzen Bananenblattmuster versehen.\n\n<i>Mobile Ziele</i>"
+		"PaintKit_hye_batik_eyes_Tag"						"Karmesinroter Batik"
+
+		"PaintKit_hye_paisley_desat"						"Die Waffe wurde mit einem goldenen Paisley-Muster über einer weinroten Grundierung versehen.\n\n<i>„Nur die besten Textilien für dich, Booth“ – Yukako, Waffenschmied</i>"
+		"PaintKit_hye_paisley_desat_Tag"					"Honigfarbenes Paisley"
+
+		"PaintKit_soch_copper_accent_revolver"				"Der Handgriff der Waffe wurde durch Acrylgießen mit einem pflaumenfarbenen Muster versehen.\n\n<i>Ein vorsichtiges Einschenken</i>"
+		"PaintKit_soch_copper_accent_revolver_Tag"			"Platz Malven!"
+
+		"PaintKit_soe_yellow_bits"							"Die Waffe wurde mit einem gelben und roten Rillenmuster über einer silbernen Grundierung versehen.\n\n<i>Eine Biene macht noch keinen Schwarm</i>"
+		"PaintKit_soe_yellow_bits_Tag"						"Bientron"
+
+		"PaintKit_hye_test_animal_print_45"					"Die Waffe wurde mit hellbraunen und roten, von Tieren inspirierten Mustern versehen.\n\n<i>Du sagtest „ein paar Tiere“, nicht „das gesamte Tierreich“</i>"
+		"PaintKit_hye_test_animal_print_45_Tag"				"Warmblüter"
+
+		"PaintKit_hye_paisley_warm"							"Die Waffe wurde mit einem roten und orangefarbenen Paisley-Muster versehen.\n\n<i>„Nur die besten Textilien für dich, Booth“ – Yukako, Waffenschmied</i>"
+		"PaintKit_hye_paisley_warm_Tag"						"Korallenrotes Paisley"
+
+		"PaintKit_soe_red"									"Die Waffe wurde mit einem roten Muster aus versetzten X-Designs versehen.\n\n<i>„Es ist etwas übertrieben, aber ist das nicht der Sinn der Sache?“ – Imogen, Waffenhändlerin in Ausbildung</i>"
+		"PaintKit_soe_red_Tag"								"Picknick"
+
+		"PaintKit_hye_batik_eyes_tec9"						"Die Waffe wurde mit einem gelben und schwarzen Bananenblattmuster versehen.\n\n<i>Reich an Kalium</i>"
+		"PaintKit_hye_batik_eyes_tec9_Tag"					"Bananenblatt"
+
+		"PaintKit_hye_earth_mandala"						"Die Waffe wurde mit einem mehrfarbigen Mandala-Muster versehen.\n\n<i>Der Weg ist das Ziel</i>"
+		"PaintKit_hye_earth_mandala_Tag"					"Himmelsmandala"
+
+		"PaintKit_hye_earth_mandala_lc"						"Die Waffe wurde mit einem mehrfarbigen Mandala-Muster versehen.\n\n<i>Der Weg ist das Ziel</i>"
+		"PaintKit_hye_earth_mandala_lc_Tag"					"Erdmandala"
+
+		"PaintKit_soe_yellow_xm"							"Die Waffe wurde mit einem gelben Muster versehen und mit silbernen Akzenten veredelt.\n\n<i>ZZZZZAP!</i>"
+		"PaintKit_soe_yellow_xm_Tag"						"XoooM"
+
+		"PaintKit_soe_pink_cranes"							"Die Waffe wurde mit einem rosa und weißen Muster aus Kranichen und Blumen versehen.\n\n<i>Passt am besten zu einem Glas Sherry</i>"
+		"PaintKit_soe_pink_cranes_Tag"						"Erdbeerfarbener Kranich"
+
+		"PaintKit_ht_red_edges_fineline"					"Die Waffe wurde mit einem roten Kalligrafie-Muster versehen.\n\n<i>Schreib es nieder</i>"
+		"PaintKit_ht_red_edges_fineline_Tag"				"Kalligrafehler"
+
+		"PaintKit_hye_firework_patches"						"Die Waffe wurde mit einem roten, explosionsartigen Muster versehen.\n\n<i>„Coole Typen schauen sich keine Explosionen an“</i>"
+		"PaintKit_hye_firework_patches_Tag"					"Exothermische Reaktion"
+
+		"PaintKit_soe_purple"								"Die Waffe wurde mit einem lila Tarnmuster versehen und mit einem perlmuttartigen Lack veredelt.\n\n<i>Ein neues Gebräu!</i>"
+		"PaintKit_soe_purple_Tag"							"Schlaftrank"
+
+		"PaintKit_hye_animal_print_90s"						"Die Waffe wurde mit hellen und neonfarbenen, von Tieren inspirierten Mustern versehen.\n\n<i>Du sagtest „ein paar Farben“, nicht „das gesamte Farbspektrum“</i>"
+		"PaintKit_hye_animal_print_90s_Tag"					"Partylöwe"
+
 // END TIMED DROPS 2025
 
 // LIMITED TIME ITEM
@@ -34898,7 +35072,10 @@
 		"PaintKit_soch_mountains_xm1014"					"Die Waffe wurde mit einem von Bergen inspirierten Muster versehen.\n\n<i>Einsamkeit ist ein Privileg, keine Bürde</i>"
 		"PaintKit_soch_mountains_xm1014_Tag"				"Einsamkeit"
 
-		// END LIMITED TIME ITEM
+		"PaintKit_gsch_ak_djiin"							"Das Verschlussgehäuse und der Lauf wurden mit Metalleffektlack lackiert. Der Handschutz und der Schaft wurden mit einem perlmuttfarbigen Lack überzogen, um dem Inneren einer Muschel zu ähneln.\n\n<i>Wie aus einer anderen Welt</i>"
+		"PaintKit_gsch_ak_djiin_Tag"						"Aphrodite"
+
+// END LIMITED TIME ITEM
 
 		//Recipes
 		"CSGO_Recipe_TradeUp"						"Aufwertungsvertrag"
@@ -35412,8 +35589,8 @@
 		"mg_quick_none"					"Keine"
 		"mg_quick_all"					"Alle"
 		"mg_quick_premier"				"Premium"
-		"mg_quick_activeduty"			"Aktiver Dienst"
-		"mg_quick_hostage"				"Geisel"
+		"mg_quick_activeduty"			"Aktive Dienstgruppe"
+		"mg_quick_hostage"				"Geiselgruppe"
 		"mg_quick_new"					"Neu"
 
 		"mg_quick_save_favorites"		"Favoriten speichern"
@@ -35596,6 +35773,12 @@
 		"SFUI_Map_de_golden"		"Golden"
 		"SFUI_Map_de_rooftop"		"Rooftop"
 		"SFUI_Map_de_transit"		"[Zensiert]"
+
+		"SFUI_Map_de_warden"		"Warden"
+		"SFUI_Map_de_stronghold"	"Stronghold"
+		"SFUI_Map_cs_alpine"		"Alpine"
+		"SFUI_Map_de_poseidon"		"Poseidon"
+		"SFUI_Map_de_sanctum"		"Sanctum"
 
 		"SFUI_Map_workshop_preview_dust2"	"Vorschau: Dust II"
 		"SFUI_Map_workshop_preview_ancient"	"Vorschau: Ancient"
@@ -37474,6 +37657,15 @@
 		"CSGO_Demo_Next_Camera"						"[{s:bind_jump}]: Nächster Kameramodus"
 		"CSGO_Demo_Toggle_XRay"						"[{s:bind_slot12}]: Röntgenblick umschalten"
 		"CSGO_Demo_Toggle_Overview"					"[{s:bind_duck}]: Übersicht umschalten"
+		"CSGO_Demo_Settings_XRay"					"Röntgenblick (umschalten mit [{s:bind_slot12}])"
+		"CSGO_Demo_Settings_TrueView_Explanation"	"Das ursprüngliche Spielerlebnis im Client wird durch erneutes Ausführen der clientseitigen Vorhersage rekonstruiert. Dadurch werden die vom Server für die Trefferregistrierung verwendeten Bedingungen genauer nachgebildet."
+		"CSGO_Demo_Settings_TrueView_Enable"		"TrueView aktivieren"
+		"CSGO_Demo_Settings_TrueViewDOA"				"Aktionen nach dem Tod einbeziehen"
+		"CSGO_Demo_Settings_TrueViewDOA_Explanation"	"Die clientseitige Vorhersage von Befehlen, die serverseitig nicht ausgeführt wurden, da der Spieler zum Zeitpunkt der Befehlsübermittlung bereits tot war, wird erneut ausgeführt. Wenn Sie diese Option deaktivieren, unterscheidet sich die Wiedergabe zwar vom Spielerlebnis des ursprünglichen Spielers, entspricht aber genauer der Perspektive des Servers."
+		"CSGO_Demo_Settings_TrueViewWrongVersion"		"Versionskonflikt bei Demo-Wiedergabe erlauben"
+		"CSGO_Demo_Settings_TrueViewWrongVersion_Explanation"	"Falls sich der Client der Demo-Aufnahme vom Client der Demo-Wiedergabe unterscheidet, funktioniert TrueView möglicherweise nicht ordnungsgemäß. Aktivieren Sie diese Option, um es trotzdem zu versuchen."
+
+
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// Date formatting
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -37902,6 +38094,9 @@
 		"CSGO_Collectible_PremierSeason3Coin"		"Abzeichen der 3. Premium-Saison"
 		"CSGO_Collectible_PremierSeason3Coin_Desc"	"Dieses besondere Abzeichen wurde Ihnen für die aktive Teilnahme an der 3. Saison des Premium-Modus verliehen."
 
+		"CSGO_Collectible_PremierSeason4Coin"		"Abzeichen der 4. Premium-Saison"
+		"CSGO_Collectible_PremierSeason4Coin_Desc"	"Dieses besondere Abzeichen wurde Ihnen für die aktive Teilnahme an der 4. Saison des Premium-Modus verliehen."
+
 		//for main menu display
 		"SFUI_XP_Bonus_1"							"Wöchentlicher EP-Bonus verfügbar!"
 		"SFUI_XP_Bonus_2"							"Bei Ihrem nächsten Levelaufstieg erhalten Sie einen zufälligen Gegenstand!"
@@ -38060,11 +38255,12 @@
 		"xpshop_upsell_mainmenu_2_v2"				"Erhalten Sie Zugriff auf die neue Train-Kollektion, die Waffenkiste „Fieber“, Anhänger und mehr."
 		"xpshop_upsell_btn"							"Pass kaufen"
 		"xpshop_upsell_tooltip"						"Weitere Informationen zum {s:pass}"
-		"xpshop_new_items"							"Neue Gegenstände!"
+
+		"xpshop_new_items:p{new-count}"	"Neuer Gegenstand!#|#Neue Gegenstände!"
 		"xpshop_lootlist_info"						"Die <span class=\"text-color-white\"><b>{s:casename}</b></span> enthält einen der folgenden Gegenstände:"
 
 		"xpshop_limited_item_variations"			"Variationen der Waffenlackierung"
-		"xpshop_limited_item_variations_tooltip"	"Beispiele möglicher Varianten, die beim Einlösen dieses Gegenstands in limitierter Edition erhalten werden können."
+		"xpshop_limited_item_variations_tooltip"	"Beispiele möglicher Varianten hinsichtlich der Mustervorlage und des Abnutzungsgrades, die beim Einlösen dieses Gegenstands in limitierter Edition erhalten werden können."
 		"xpshop_pass_activate"						"Pass aktivieren"
 		"xpshop_pass_activate_open_armory"			"Zur Aktivierung Arsenal öffnen"
 		"xpshop_pass_activate_desc"					"Aktivieren Sie den Pass, um Arsenalpunkte verdienen zu können."
@@ -39983,8 +40179,8 @@
 		"SFUI_Settings_MiniScoreboardPlayerCount_Tooltip"	"Solange ein Spieler während der Runde lebt, werden die Avatare im HUD durch die Anzahl aller lebenden Spieler ersetzt."
 
 
-		"Post_Round_Damage_Report_Given:p{s1}"			" • Zugefügter Schaden → %s3: %s2 in %s1#|# • Zugefügter Schaden → %s3: %s2 in %s1"
-		"Post_Round_Damage_Report_Taken:p{s1}"			" • Erlittener Schaden ← %s3: %s2 in %s1#|# • Erlittener Schaden ← %s3: %s2 in %s1"
+		"Post_Round_Damage_Report_Given:p"			" • Zugefügter Schaden → %s3: %s2 in %s1#|# • Zugefügter Schaden → %s3: %s2 in %s1"
+		"Post_Round_Damage_Report_Taken:p"			" • Erlittener Schaden ← %s3: %s2 in %s1#|# • Erlittener Schaden ← %s3: %s2 in %s1"
 
 		"SFUI_TeamOverheadID"					"Teamausrüstung anzeigen"
 
@@ -40463,8 +40659,8 @@
 
 		"SFUI_UserAlertNoteType_1"			"Server im Bereich „%s1“ stehen unter hoher Belastung."
 		"SFUI_UserAlertNoteType_2"			"Server im Bereich „%s1“ sind aufgrund von Wartungsarbeiten offline."
-		"SFUI_UserAlertNoteType_LowPlayersR:p{players}"	"Nur %players% passender Spieler befindet sich in der Spielsuche der Region %region%.#|#Nur %players% passende Spieler befinden sich in der Spielsuche der Region %region%."
-		"SFUI_UserAlertNoteType_LowPlayersY:p{players}"	"Nur %players% passender Spieler befindet sich in der Spielsuche Ihrer Region.#|#Nur %players% passende Spieler befinden sich in der Spielsuche Ihrer Region."
+		"SFUI_UserAlertNoteType_LowPlayersR:p"	"Nur %players% passender Spieler befindet sich in der Spielsuche der Region %region%.#|#Nur %players% passende Spieler befinden sich in der Spielsuche der Region %region%."
+		"SFUI_UserAlertNoteType_LowPlayersY:p"	"Nur %players% passender Spieler befindet sich in der Spielsuche Ihrer Region.#|#Nur %players% passende Spieler befinden sich in der Spielsuche Ihrer Region."
 
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"Verbindung zum Spiel konnte nicht hergestellt werden."
 		"SFUI_QMM_ERROR_NotLoggedIn"		"Nicht beim Counter-Strike-Spielsuchedienst angemeldet."
@@ -44455,7 +44651,7 @@
 
 		"cs_rating_expired"								"CS-Wertung abgelaufen"
 		"cs_rating_none"								"Keine CS-Wertung"
-		"cs_rating_wins_needed:p{winsneeded}"			"Gewinnen Sie noch <b>{d:winsneeded}</b> Spiel.#|#Gewinnen Sie noch <b>{d:winsneeded}</b> Spiele."
+		"cs_rating_wins_needed:p{winsneeded}"			"Noch <b>{d:winsneeded}</b> Spiel gewinnen#|#Noch <b>{d:winsneeded}</b> Spiele gewinnen"
 		"cs_rating_wins_needed_verbose:p{winsneeded}"	"Gewinnen Sie noch <b>{d:winsneeded}</b> Spiel, um Ihre CS-Wertung zu erhalten.#|#Gewinnen Sie noch <b>{d:winsneeded}</b> Spiele, um Ihre CS-Wertung zu erhalten."
 		"cs_rating_wins_needed_verbose_intro:p{winsneeded}"	"Gewinnen Sie <b>{d:winsneeded}</b> Spiel, um Ihre CS-Wertung zu erhalten.#|#Gewinnen Sie <b>{d:winsneeded}</b> Spiele, um Ihre CS-Wertung zu erhalten."
 		"cs_rating_need_wins:p{wins-needed}"							"noch {d:wins-needed} Sieg#|#noch {d:wins-needed} Siege"
@@ -45623,6 +45819,7 @@
 		"prime_unranked"				"Ungewertetes Spiel"
 		"prime_not_enrolled_label"		"Spieler ohne Prime"
 		"prime_disabled_label"			"Prime deaktivieren"
+		"matchmaking_expected_wait_time"	"<img src='file://{images}/icons/ui/recent.svg' class='map-selection-info__wait-icon'/>Wartezeit: {s:time}"
 		"no_steam_group_link"			"Sie sind kein Mitglied einer Steam-Gruppe."
 
 		"permissions_title"					"Berechtigungseinstellungen"
@@ -46061,11 +46258,14 @@
 		"annotations_local"							"Lokaler Speicher"
 		"annotations_workshop"						"Workshop"
 		"annotations_official"						"Offizieller Guide"
+		"annotations_none"							"Kein Karten-Guide"
 		"Workshop_annotation_title"					"Werkzeug zur Einsendung von Karten-Guides"
 		"Workshop_annotation_error_title"			"Geben Sie einen Titel für ihren Karten-Guide ein."
 		"Workshop_annotation_error_file"			"Wählen Sie eine gültige Kommentar-Datei im TXT-Format aus."
 		"Workshop_annotation_ready"					"Gegenstand bereit zum Hochladen."		
 		"UI_File_Filter_SupportedAnnotationFormat"	"Textdateien (*.txt)"
+		"annotations_visit_workshop"				"Workshop besuchen ⤤"
+
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Game Mode Desc
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -47084,6 +47284,7 @@
 		"playercardstats_kda_title"						"K/T/A"
 		"playercardstats_kda_value"						"{d:playercardstats-kills}/{d:playercardstats-deaths}/{d:playercardstats-assists}"
 
+		"playercardstats_k_title"						"Kills"
 		"playercardstats_k_value"						"{d:playercardstats-kills}"
 
 		"playercardstats_d_title"						"Tode"
@@ -47101,11 +47302,13 @@
 		"playercardstats_ef_title"						"GEBLENDETE GEGNER"
 		"playercardstats_ef_value"						"{d:playercardstats-ef} "
 
+		"playercardstats_ud_title"						"GRANATENSCHADEN"
 		"playercardstats_ud_value"						"{d:playercardstats-ud} "
 
 		"playercardstats_gglevel_title"					"Level"
 		"playercardstats_gglevel_value"					"{d:playercardstats-gglevel} "
 
+		"playercardstats_kk_title"						"Messer-Kills"
 		"playercardstats_kk_value"						"{d:playercardstats-knifekills} "
 
 
@@ -48291,8 +48494,195 @@
 		"quest_11015_var_desc:p{mission-points}"	 	"Gewinnen Sie eine Runde im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.#|#Gewinnen Sie mehrere Runden im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Gewinnen Sie eine Runde.#|#Gewinnen Sie mehrere Runden."
 
-// crow_mask_51509_comment
-// crow_mask_51510_comment
+// crow_mask_51513_comment
+// crow_mask_51514_comment
+
+		"SFUI_PlayerCount_Alive_Left:f"									"{left_side_alive, plural, one{am Leben} other{am Leben}}"
+		"SFUI_PlayerCount_Alive_Right:f"								"{right_side_alive, plural, one{am Leben} other{am Leben}}"
+		"funfact_damage_no_kills:f"										"{funfact-d1, plural, one{{s:funfact-player} hat niemanden getötet, aber {d:funfact-d1} Schaden verursacht.} other{{s:funfact-player} hat niemanden getötet, aber {d:funfact-d1} Schaden verursacht.}}"
+		"funfact_kills_with_single_grenade:f"							"{funfact-d1, plural, one{{s:funfact-player} hat mit einer Granate {d:funfact-d1} Gegner getroffen.} other{{s:funfact-player} hat mit einer Granate {d:funfact-d1} Gegner getroffen.}}"
+		"funfact_kill_defuser:f"										"{s:funfact-player} hat den Bombenentschärfer erfolgreich aufgehalten."
+		"funfact_kill_rescuer:f"										"{s:funfact-player} hat den Geiselretter getötet."
+		"funfact_killed_enemies:f"										"{funfact-d1, plural, one{{s:funfact-player} hat {d:funfact-d1} Gegner getötet.} other{{s:funfact-player} hat {d:funfact-d1} Gegner getötet.}}"
+		"funfact_first_kill:f"											"{funfact-d1, plural, one{{s:funfact-player} hat {d:funfact-d1} Sekunde nach Rundenbeginn den ersten Gegner getötet.} other{{s:funfact-player} hat {d:funfact-d1} Sekunden nach Rundenbeginn den ersten Gegner getötet.}}"
+		"funfact_first_blood:f"											"{funfact-d1, plural, one{{s:funfact-player} hat nach {d:funfact-d1} Sekunde das erste Blut der Runde vergossen.} other{{s:funfact-player} hat nach {d:funfact-d1} Sekunden das erste Blut der Runde vergossen.}}"
+		"funfact_short_round:f"											"{funfact-d1, plural, one{Diese Runde hat gerade einmal {d:funfact-d1} Sekunde gedauert!} other{Diese Runde hat gerade einmal {d:funfact-d1} Sekunden gedauert!}}"
+		"funfact_best_accuracy:f"										"{funfact-d1, plural, one{{s:funfact-player} hatte eine Präzision von {d:funfact-d1} %.} other{{s:funfact-player} hatte eine Präzision von {d:funfact-d1} %.}}"
+		"funfact_knife_kills:f"											"{funfact-d1, plural, one{{s:funfact-player} hat diese Runde einen Gegner mit dem Messer getötet.} other{{s:funfact-player} hat diese Runde {d:funfact-d1} Gegner mit dem Messer getötet.}}"
+		"funfact_damage_with_grenade:f"									"{funfact-d1, plural, one{{s:funfact-player} hat mit Granaten insgesamt {d:funfact-d1} Schaden verursacht.} other{{s:funfact-player} hat mit Granaten insgesamt {d:funfact-d1} Schaden verursacht.}}"
+		"funfact_kills_grenades:f"										"{funfact-d1, plural, one{{s:funfact-player} hat {d:funfact-d1} Gegner mit Granaten getötet.} other{{s:funfact-player} hat {d:funfact-d1} Gegner mit Granaten getötet.}}"
+		"funfact_blind_kills:f"											"{funfact-d1, plural, one{{s:funfact-player} hat blind einen Gegner getötet.} other{{s:funfact-player} hat blind {d:funfact-d1} Gegner getötet.}}"
+		"funfact_kills_with_last_round:f"								"{funfact-d1, plural, one{{s:funfact-player} hat einen Gegner mit dem letzten Schuss im Magazin getötet.} other{{s:funfact-player} hat {d:funfact-d1} Gegner mit dem letzten Schuss im Magazin getötet.}}"
+		"funfact_kills_headshots:f"										"{funfact-d1, plural, one{{s:funfact-player} hat diese Runde {d:funfact-d1} Gegner mit einem Kopfschuss getötet.} other{{s:funfact-player} hat diese Runde {d:funfact-d1} Gegner mit einem Kopfschuss getötet.}}"
+		"funfact_kills_with_stattrak_weapon:f"							"{funfact-d1, plural, one{{s:funfact-player} hat seiner StatTrak™-Waffe diese Runde {d:funfact-d1} Abschuss hinzugefügt.} other{{s:funfact-player} hat seiner StatTrak™-Waffe diese Runde {d:funfact-d1} Abschüsse hinzugefügt.}}"
+		"funfact_donated_weapons:f"										"{funfact-d1, plural, one{{s:funfact-player} hat diese Runde {d:funfact-d1} Waffe verschenkt.} other{{s:funfact-player} hat diese Runde {d:funfact-d1} Waffen verschenkt.}}"
+		"funfact_posthumous_kills_with_grenade:f"						"{funfact-d1, plural, one{{s:funfact-player} hat nach dem Tod einen Gegner mit einer Granate getötet.} other{{s:funfact-player} hat nach dem Tod {d:funfact-d1} Gegner mit einer Granate getötet.}}"
+		"funfact_num_times_jumped:f"									"{funfact-d1, plural, one{{s:funfact-player} ist während der Runde {d:funfact-d1}-mal gesprungen.} other{{s:funfact-player} ist während der Runde {d:funfact-d1}-mal gesprungen.}}"
+		"funfact_fall_damage:f"											"{funfact-d1, plural, one{{s:funfact-player} hat {d:funfact-d1} Schaden erlitten … durch den Erdboden.} other{{s:funfact-player} hat {d:funfact-d1} Schaden erlitten … durch den Erdboden.}}"
+		"funfact_items_purchased:f"										"{funfact-d1, plural, one{{s:funfact-player} hat {d:funfact-d1} Gegenstand gekauft.} other{{s:funfact-player} hat {d:funfact-d1} Gegenstände gekauft.}}"
+		"funfact_won_as_last_member:f"									"{funfact-d1, plural, one{{s:funfact-player} hat als letzter Überlebender seines Teams {d:funfact-d1} Gegner getötet und die Runde gewonnen.} other{{s:funfact-player} hat als letzter Überlebender seines Teams {d:funfact-d1} Gegner getötet und die Runde gewonnen.}}"
+		"funfact_number_of_overkills:f"									"{funfact-d1, plural, one{{s:funfact-player} hat {d:funfact-d1} bereits dominierten Spieler getötet.} other{{s:funfact-player} hat {d:funfact-d1} bereits dominierte Spieler getötet.}}"
+		"funfact_shots_fired:f"											"{funfact-d1, plural, one{Diese Runde wurde {d:funfact-d1} Schuss abgefeuert.} other{Diese Runde wurden {d:funfact-d1} Schüsse abgefeuert.}}"
+		"funfact_money_spent:f"											"{funfact-d1, plural, one{{s:funfact-player} hat diese Runde {d:funfact-d1} $ ausgegeben.} other{{s:funfact-player} hat diese Runde {d:funfact-d1} $ ausgegeben.}}"
+		"funfact_grenades_thrown:f"										"{funfact-d1, plural, one{{s:funfact-player} hat diese Runde {d:funfact-d1} Granate geworfen.} other{{s:funfact-player} hat diese Runde {d:funfact-d1} Granaten geworfen.}}"
+		"funfact_used_all_ammo:f"										"{s:funfact-player} ist die Munition komplett ausgegangen."
+		"funfact_survived_multiple_attackers:f"							"{funfact-d1, plural, one{{s:funfact-player} hat Angriffe von {d:funfact-d1} Gegner überlebt.} other{{s:funfact-player} hat Angriffe von {d:funfact-d1} verschiedenen Gegnern überlebt.}}"
+		"funfact_died_from_multiple_attackers:f"						"{funfact-d1, plural, one{{s:funfact-player} hat vor seinem Tod Schaden von {d:funfact-d1} Gegner erlitten.} other{{s:funfact-player} hat vor seinem Tod Schaden von {d:funfact-d1} Gegnern erlitten.}}"
+		"funfact_defended_bomb:f"										"{funfact-d1, plural, one{{s:funfact-player} hat die gelegte Bombe gegen {d:funfact-d1} Gegner verteidigt.} other{{s:funfact-player} hat die gelegte Bombe gegen {d:funfact-d1} Gegner verteidigt.}}"
+		"funfact_items_dropped_value:f"									"{funfact-d1, plural, one{{s:funfact-player} hat Gegenstände im Wert von {d:funfact-d1} $ weggeworfen.} other{{s:funfact-player} hat Gegenstände im Wert von {d:funfact-d1} $ weggeworfen.}}"
+		"funfact_kill_wounded_enemies:f"								"{funfact-d1, plural, one{{s:funfact-player} hat {d:funfact-d1} verwundeten Gegner erledigt.} other{{s:funfact-player} hat {d:funfact-d1} verwundete Gegner erledigt.}}"
+		"funfact_damage_multiple_enemies:f"								"{funfact-d1, plural, one{{s:funfact-player} hat {d:funfact-d1} Gegner Schaden zugefügt.} other{{s:funfact-player} hat {d:funfact-d1} Gegnern Schaden zugefügt.}}"
+		"funfact_used_multiple_weapons:f"								"{funfact-d1, plural, one{{s:funfact-player} hat {d:funfact-d1} Waffe verwendet.} other{{s:funfact-player} hat {d:funfact-d1} verschiedene Waffen verwendet.}}"
+		"funfact_terrorist_accuracy:f"									"{funfact-d1, plural, one{Die Terroristen hatten mit {d:funfact-d1} % die höchste Präzision.} other{Die Terroristen hatten mit {d:funfact-d1} % die höchste Präzision.}}"
+		"funfact_ct_accuracy:f"											"{funfact-d1, plural, one{Die Antiterroreinheit hatte mit {d:funfact-d1} % die höchste Präzision.} other{Die Antiterroreinheit hatte mit {d:funfact-d1} % die höchste Präzision.}}"
+		"funfact_ct_win_no_kills:f"										"Die Antiterroreinheit hat gewonnen, ohne einen Terroristen zu töten."
+		"funfact_t_win_no_kills:f"										"Die Terroristen haben gewonnen, ohne ein Mitglied der Antiterroreinheit zu töten."
+		"funfact_t_win_no_casualties:f"									"Die Terroristen haben ohne Verluste gewonnen."
+		"funfact_ct_win_no_casualties:f"								"Die Antiterroreinheit hat ohne Verluste gewonnen."
+		"funfact_best_terrorist_accuracy:f"								"{funfact-d1, plural, one{{s:funfact-player} hatte eine Präzision von {d:funfact-d1} %, während die des Teams {d:funfact-d2} % betrug.} other{{s:funfact-player} hatte eine Präzision von {d:funfact-d1} %, während die des Teams {d:funfact-d2} % betrug.}}"
+		"funfact_best_counterterrorist_accuracy:f"						"{funfact-d1, plural, one{{s:funfact-player} hatte eine Präzision von {d:funfact-d1} %, während die des Teams {d:funfact-d2} % betrug.} other{{s:funfact-player} hatte eine Präzision von {d:funfact-d1} %, während die des Teams {d:funfact-d2} % betrug.}}"
+		"funfact_fallback1:f"											"Das mit dem Kuchen ist eine Lüge."
+		"funfact_fallback2:f"											"Gähn."
+		"funfact_draw:f"												"Die Partie wurde nach Abstimmung der Spieler neu gestartet."
+		"funfact_broke_windows:f"										"{funfact-d1, plural, one{{s:funfact-player} hat {d:funfact-d1} Fenster zerstört.} other{{s:funfact-player} hat {d:funfact-d1} Fenster zerstört.}}"
+		"funfact_nightvision_damage:f"									"{funfact-d1, plural, one{{s:funfact-player} hat während des Tragens eines Nachtsichtgeräts {d:funfact-d1} Schaden verursacht.} other{{s:funfact-player} hat während des Tragens eines Nachtsichtgeräts {d:funfact-d1} Schaden verursacht.}}"
+		"funfact_defused_with_dropped_kit:f"							"{s:funfact-player} hat die Bombe mit einem fallen gelassenen Entschärfungskit entschärft."
+		"funfact_killed_half_of_enemies:f"								"{funfact-d1, plural, one{{s:funfact-player} hat {d:funfact-d1} % der Spieler des gegnerischen Teams getötet.} other{{s:funfact-player} hat {d:funfact-d1} % der Spieler des gegnerischen Teams getötet.}}"
+		"funfact_knife_level_reached:f"									"{funfact-d1, plural, one{{d:funfact-d1} Spieler hat die Goldmesser-Stufe erreicht.} other{{d:funfact-d1} Spieler haben die Goldmesser-Stufe erreicht.}}"
+		"funfact_killed_before_dying:f"									"{funfact-d1, plural, one{{s:funfact-player} hat vor dem Tod {d:funfact-d1} Spieler getötet.} other{{s:funfact-player} hat vor dem Tod {d:funfact-d1} Spieler getötet.}}"
+		"funfact_respawned:f"											"{funfact-d1, plural, one{{s:funfact-player} ist während der Partie {d:funfact-d1}-mal wiedereingestiegen.} other{{s:funfact-player} ist während der Partie {d:funfact-d1}-mal wiedereingestiegen.}}"
+		"funfact_default_weapon:f"										"{s:funfact-player} hat die Runde gewonnen, ohne Waffen aufzuheben."
+		"funfact_rounds_without_dying:f"								"{funfact-d1, plural, one{{s:funfact-player} hat {d:funfact-d1} Runde überstanden, ohne zu sterben.} other{{s:funfact-player} hat {d:funfact-d1} aufeinanderfolgende Runden überstanden, ohne zu sterben.}}"
+		"funfact_taser_kill:f"											"{funfact-d1, plural, one{{s:funfact-player} hat {d:funfact-d1} Spieler getasert.} other{{s:funfact-player} hat {d:funfact-d1} Spieler getasert.}}"
+		"funfact_ticking_time:f"										"{funfact-d1, plural, one{Die Terroristen haben gewonnen, obwohl {d:funfact-d1} Spieler der Antiterroreinheit versucht hat, die Bombe zu entschärfen.} other{Die Terroristen haben gewonnen, obwohl {d:funfact-d1} Spieler der Antiterroreinheit versucht haben, die Bombe zu entschärfen.}}"
+		"funfact_ct_win_time:f"											"{funfact-d1, plural, one{Die Antiterroreinheit hat die Terroristen innerhalb von {d:funfact-d1} Sekunde eliminiert.} other{Die Antiterroreinheit hat die Terroristen innerhalb von {d:funfact-d1} Sekunden eliminiert.}}"
+		"funfact_ter_win_time:f"										"{funfact-d1, plural, one{Die Terroristen haben die Antiterroreinheit innerhalb von {d:funfact-d1} Sekunde eliminiert.} other{Die Terroristen haben die Antiterroreinheit innerhalb von {d:funfact-d1} Sekunden eliminiert.}}"
+		"funfact_bots_assumed:f"										"{funfact-d1, plural, one{{s:funfact-player} hat diese Runde die Kontrolle über {d:funfact-d1} Bot übernommen.} other{{s:funfact-player} hat diese Runde die Kontrolle über {d:funfact-d1} Bots übernommen.}}"
+		"funfact_domination:f"											"{s:funfact-player} hat die meisten Spieler dominiert."
+		"funfact_revenge:f"												"{funfact-d1, plural, one{{s:funfact-player} hat sich an {d:funfact-d1} Spieler gerächt.} other{{s:funfact-player} hat sich an {d:funfact-d1} Spielern gerächt.}}"
+		"funfact_steps_taken:f"											"{funfact-d1, plural, one{{s:funfact-player} ist während der Partie {d:funfact-d1} Schritt gelaufen.} other{{s:funfact-player} ist während der Partie {d:funfact-d1} Schritte gelaufen.}}"
+		"funfact_quarter_health:f"										"{funfact-d1, plural, one{{s:funfact-player} hat mit weniger als 25 Gesundheit {d:funfact-d1} Spieler getötet.} other{{s:funfact-player} hat mit weniger als 25 Gesundheit {d:funfact-d1} Spieler getötet.}}"
+		"funfact_empty_guns:f"											"{funfact-d1, plural, one{{s:funfact-player} ging mit {d:funfact-d1} Waffe die Munition aus.} other{{s:funfact-player} ging mit {d:funfact-d1} Waffen die Munition aus.}}"
+		"funfact_slow_trigger:f"										"{funfact-d1, plural, one{{s:funfact-player} ist gestorben, ohne einen Schuss aus {d:funfact-d1} Waffe abzufeuern.} other{{s:funfact-player} ist gestorben, ohne einen Schuss aus {d:funfact-d1} Waffen abzufeuern.}}"
+		"funfact_pickup_bomb:f"											"{funfact-d1, plural, one{{s:funfact-player} hat die Bombe gelegt, nachdem sie von {d:funfact-d1} Teammitglied getragen wurde.} other{{s:funfact-player} hat die Bombe gelegt, nachdem sie von {d:funfact-d1} Teammitgliedern getragen wurde.}}"
+		"funfact_bomb_carriers:f"										"{funfact-d1, plural, one{{s:funfact-player} hat diese Runde {d:funfact-d1} Bombenträger getötet.} other{{s:funfact-player} hat diese Runde {d:funfact-d1} verschiedene Bombenträger getötet.}}"
+		"funfact_knife_bomb_planter:f"									"{s:funfact-player} hat den Bombenleger mit einem Messer getötet."
+		"funfact_bomb_planted_before_kill:f"							"Kein Spieler wurden vor dem Legen der Bombe getötet."
+		"funfact_failed_bomb_plants:f"									"{funfact-d1, plural, one{{d:funfact-d1} Terrorist hat diese Runde versucht, die Bombe zu legen.} other{{d:funfact-d1} Terroristen haben diese Runde versucht, die Bombe zu legen.}}"
+		"funfact_knife_without_ammo:f"									"{funfact-d1, plural, one{{s:funfact-player} hat {d:funfact-d1} Gegner mit dem Messer getötet, nachdem die Munition ausgegangen war.} other{{s:funfact-player} hat {d:funfact-d1} Gegner mit dem Messer getötet, nachdem die Munition ausgegangen war.}}"
+		"funfact_molotov_burns:f"										"{funfact-d1, plural, one{{s:funfact-player} hat {d:funfact-d1} Spieler in Brand gesetzt.} other{{s:funfact-player} hat {d:funfact-d1} Spieler in Brand gesetzt.}}"
+		"funfact_survival_time:f"										"{funfact-d1, plural, one{{s:funfact-player} hat am längsten überlebt: {d:funfact-d1} Sekunde.} other{{s:funfact-player} hat am längsten überlebt: {d:funfact-d1} Sekunden.}}"
+		"funfact_pulled_trigger:f"										"{funfact-d1, plural, one{{s:funfact-player} hat in dieser Partie {d:funfact-d1}-mal den Abzug betätigt.} other{{s:funfact-player} hat in dieser Partie {d:funfact-d1}-mal den Abzug betätigt.}}"
+		"funfact_ace:f"													"Ace! {s:funfact-player} hat das gesamte gegnerische Team getötet."
+		"funfact_defuse_was_close_call_tenths:f"						"{funfact-d1, plural, one{{s:funfact-player} hat die Bombe 0,{d:funfact-d1} Sekunden vor der Detonation entschärft.} other{{s:funfact-player} hat die Bombe 0,{d:funfact-d1} Sekunden vor der Detonation entschärft.}}"
+		"funfact_defuse_was_close_call_hundredths:f"					"{funfact-d1, plural, one{{s:funfact-player} hat die Bombe 0,0{d:funfact-d1} Sekunden vor der Detonation entschärft.} other{{s:funfact-player} hat die Bombe 0,0{d:funfact-d1} Sekunden vor der Detonation entschärft.}}"
+		"funfact_defuse_was_close_call_thousandths:f"					"{funfact-d1, plural, one{{s:funfact-player} hat die Bombe 0,00{d:funfact-d1} Sekunden vor der Detonation entschärft.} other{{s:funfact-player} hat die Bombe 0,00{d:funfact-d1} Sekunden vor der Detonation entschärft.}}"
+		"mapwinrecord_graph_title:f"									"{f:0:wins, plural, one{Letzter Sieg} other{Letzte Siege}}"
+		"CSGO_Recipe_Count_Items_Selected:f"							"{count, plural, one{<b>{d:count}</b> Gegenstand ausgewählt} other{<b>{d:count}</b> Gegenstände ausgewählt}}"
+		"CSGO_Recipe_Count_Items_Remaining:f"							"{count, plural, one{<b>{d:count}</b> Gegenstand verbleibend} other{<b>{d:count}</b> Gegenstände verbleibend}}"
+		"CSGO_Recipe_TradeUp_Items_Remain:f"							"{count, plural, one{{d:count} zur Aufwertung ausgewählt} other{{d:count} zur Aufwertung ausgewählt}}"
+		"CSGO_Recipe_TradeUp_Items_XofY:f"								"{count, plural, one{{d:count} / {d:recipecount} zur Aufwertung ausgewählt} other{{d:count} / {d:recipecount} zur Aufwertung ausgewählt}}"
+		"CSGO_Recipe_TradeUp_Items_Inv:f"								"{count, plural, one{{d:count} zur Aufwertung geeignet} other{{d:count} zur Aufwertung geeignet}}"
+		"CSGO_RemoveKeychainToolCharges_Reward:f"						"{item_count, plural, one{+{d:item_count} Anhängerablösung} other{+{d:item_count} Anhängerablösungen}}"
+		"SFUI_Store_Offer_Days_Remaining:f"								"{daysremaining, plural, one{noch {d:daysremaining} Tag} other{noch {d:daysremaining} Tage}}"
+		"SFUI_Store_Offer_Days_Remaining_claim:f"						"{daysremaining, plural, one{noch {d:daysremaining} Tag} other{noch {d:daysremaining} Tage}}"
+		"SFUI_Store_Offer_Days_Remaining_bid:f"							"{daysremaining, plural, one{noch {d:daysremaining} Tag, um auf dieses Angebot zu bieten} other{noch {d:daysremaining} Tage, um auf dieses Angebot zu bieten}}"
+		"SFUI_Store_Offer_Days_Remaining_last_claim:f"					"Letzte Chance, um dieses Angebot einzulösen"
+		"SFUI_Store_Offer_Days_Remaining_last_bid:f"					"Letzte Chance, um auf dieses Angebot zu bieten"
+		"SFUI_Store_Timer_Week:f"										"{f:0:value, plural, one{{f:0:value} Woche} other{{f:0:value} Wochen}}"
+		"SFUI_Store_Timer_Day:f"										"{f:0:value, plural, one{{f:0:value} Tag} other{{f:0:value} Tage}}"
+		"SFUI_Store_Timer_Hour:f"										"{f:0:value, plural, one{{f:0:value} Stunde} other{{f:0:value} Stunden}}"
+		"SFUI_Store_Timer_Min:f"										"{f:0:value, plural, one{{f:0:value} Min.} other{{f:0:value} Min.}}"
+		"SFUI_Store_Timer_Sec:f"										"{f:0:value, plural, one{{f:0:value} Sek.} other{{f:0:value} Sek.}}"
+		"CSGO_Watch_Minute:f"											"{f:0:value, plural, one{{f:0:value} Minute} other{{f:0:value} Minuten}}"
+		"xpshop_new_items:f"											"{new-count, plural, one{Neuer Gegenstand!} other{Neue Gegenstände!}}"
+		"xpshop_popup_clear_n_tracks:f"									"{completed_tracks_count, plural, one{{d:completed_tracks_count} erledigten Pass abschließen} other{{d:completed_tracks_count} erledigte Pässe abschließen}}"
+		"xpshop_popup_clear_n_tracks_text:f"							"{completed_tracks_count, plural, one{Sie haben alle Arsenalpunkte dieses Passes verdient.<br><br>Wenn Sie diesen Arsenalpass abschließen, können Sie einen neuen aktivieren. Dadurch gehen keine verdienten Arsenalpunkte verloren.} other{Sie haben alle Arsenalpunkte aus {d:completed_tracks_count} Arsenalpässen verdient.<br><br>Wenn Sie diese {d:completed_tracks_count} Arsenalpässe abschließen, können Sie neue aktivieren. Dadurch gehen keine verdienten Arsenalpunkte verloren.}}"
+		"xpshop_redeem_bid_batchover:f"									"{hours_until_bid_batch, plural, one{Für dieses Angebot können keine Gebote mehr abgegeben werden. Die Höchstbietenden werden nach der Auktionsabwicklung benachrichtigt. Bitte kommen Sie morgen wieder, um weitere Gebote abzugeben. Die nächste Auktion beginnt in {d:hours_until_bid_batch} Stunde.} other{Für dieses Angebot können keine Gebote mehr abgegeben werden. Die Höchstbietenden werden nach der Auktionsabwicklung benachrichtigt. Bitte kommen Sie morgen wieder, um weitere Gebote abzugeben. Die nächste Auktion beginnt in {d:hours_until_bid_batch} Stunden.}}"
+		"xpshop_redeem_not_enough_stars:f"								"{stars_needed, plural, one{Sie benötigen {d:stars_needed} zusätzlichen Arsenalpunkt. Sie können Punkte durch das Spielen mit aktiviertem Arsenalpass verdienen.} other{Sie benötigen {d:stars_needed} zusätzliche Arsenalpunkte. Sie können Punkte durch das Spielen mit aktiviertem Arsenalpass verdienen.}}"
+		"Panorama_PlayerDetails_Commendations_Left:f"					"{num_token, plural, one{Sie können heute noch {d:num_token} weiteren Spieler anerkennen} other{Sie können heute noch {d:num_token} weitere Spieler anerkennen}}"
+		"SFUI_BuyMenu_CanOnlyCarryXGrenades:f"							"{n1, plural, one{Sie können nur {s:s1} Granate tragen} other{Sie können nur {s:s1} Granaten tragen}}"
+		"SFUI_BuyMenu_MaxItemsOfType:f"									"{n1, plural, one{Sie können nur {s:s1} dieses Typs tragen} other{Sie können nur {s:s1} dieses Typs tragen}}"
+		"SFUI_BuyMenu_MaxItemsOfTypePurchased:f"						"{n1, plural, one{Sie können nur {s:s1} dieses Typs kaufen} other{Sie können nur {s:s1} dieses Typs kaufen}}"
+		"SFUI_BuyMenu_ReachedWeaponsExpertLimit:f"						"{n1, plural, one{Bereits {s:s1} in diesem Spiel gekauft} other{Bereits {s:s1} in diesem Spiel gekauft}}"
+		"cs_rating_wins_needed_verbose:f"								"{winsneeded, plural, one{Gewinnen Sie noch <b>{d:winsneeded}</b> Spiel, um Ihre CS-Wertung zu erhalten.} other{Gewinnen Sie noch <b>{d:winsneeded}</b> Spiele, um Ihre CS-Wertung zu erhalten.}}"
+		"cs_rating_wins_needed_verbose_intro:f"							"{winsneeded, plural, one{Gewinnen Sie <b>{d:winsneeded}</b> Spiel, um Ihre CS-Wertung zu erhalten.} other{Gewinnen Sie <b>{d:winsneeded}</b> Spiele, um Ihre CS-Wertung zu erhalten.}}"
+		"cs_rating_need_wins:f"											"{wins-needed, plural, one{noch {d:wins-needed} Sieg} other{noch {d:wins-needed} Siege}}"
+		"wins_count:f"													"{wins, plural, one{{d:wins} Sieg} other{{d:wins} Siege}}"
+		"contextmenu_lobby-count:f"										"{lobby_count, plural, one{{d:lobby_count} Lobby } other{{d:lobby_count} Lobbys}}"
+		"popup_useitem_button_getkeychaincharges:f"						"{item_count, plural, one{<b>{d:item_count}</b> Anhängerablösung hinzufügen} other{<b>{d:item_count}</b> Anhängerablösungen hinzufügen}}"
+		"popup_decodable_rent_weapon_count:f"							"{numlootlist, plural, one{{d:numlootlist} Waffe für 7 Tage mieten} other{{d:numlootlist} Waffen für 7 Tage mieten}}"
+		"popup_redeem_souvenir_desc:f"									"{redeems, plural, one{<span class=\"get-souvenir-redeem-count\">{d:redeems}</span> einlösbares Souvenirpaket} other{<span class=\"get-souvenir-redeem-count\">{d:redeems}</span> einlösbare Souvenirpakete}}"
+		"matchmaking_stat_avgSearchTimeSeconds:f"						"{s:stat} Geschätzte Suchzeit"
+		"matchmaking_stat_playersOnline:f"								"{d:stat} Spieler online"
+		"matchmaking_stat_playersLockedIn:f"							"{stat, plural, one{{d:stat} von {d:total_stat} Spielern hat angenommen.} other{{d:stat} von {d:total_stat} Spielern haben angenommen.}}"
+		"matchmaking_stat_playersSearching:f"							"{d:stat} Spieler suchen"
+		"matchmaking_stat_serversOnline:f"								"{d:stat} Server online"
+		"matchmaking_stat_ongoingMatches:f"								"{d:stat} Aktive Spiele"
+		"tooltip_skill_group_none:f"									"{winsneeded, plural, one{Gewinnen Sie <b>{d:winsneeded}</b> Spiel, um Ihre Wettkampf-Skill-Gruppe zu erhalten.} other{Gewinnen Sie <b>{d:winsneeded}</b> Spiele, um Ihre Wettkampf-Skill-Gruppe zu erhalten.}}"
+		"tooltip_cs_rating_none:f"										"{winsneeded, plural, one{Gewinnen Sie noch <b>{d:winsneeded}</b> Spiel, um Ihre CS-Wertung zu erhalten.} other{Gewinnen Sie noch <b>{d:winsneeded}</b> Spiele, um Ihre CS-Wertung zu erhalten.}}"
+		"tooltip_skill_group_nonewingman:f"								"{winsneeded, plural, one{Gewinnen Sie <b>{d:winsneeded}</b> Spiel, um Ihre Wingman-Skill-Gruppe zu erhalten.} other{Gewinnen Sie <b>{d:winsneeded}</b> Spiele, um Ihre Wingman-Skill-Gruppe zu erhalten.}}"
+		"tooltip_skill_group_nonedangerzone:f"							"Gefahrenzone-Skill-Gruppe muss kalibriert werden. Schließen Sie einige Spiele in der Gefahrenzone ab, um Ihre Skill-Gruppe zu etablieren."
+		"tooltip_skill_group_wins:f"									"{wins, plural, one{<img src='file://{images}/icons/ui/trophy.svg'  vspace='6' class='player-card-tooltip-icon'/> {d:wins} Sieg} other{<img src='file://{images}/icons/ui/trophy.svg'  vspace='6' class='player-card-tooltip-icon'/> {d:wins} Siege}}"
+		"team-intro-overtime-1st-half:f"								"{overtime_num, plural, one{Verlängerung: Erste Hälfte} other{{d:overtime_num}. Verlängerung: Erste Hälfte}}"
+		"team-intro-overtime-2nd-half:f"								"{overtime_num, plural, one{Verlängerung: Zweite Hälfte} other{{d:overtime_num}. Verlängerung: Zweite Hälfte}}"
+		"scoreboard_timeline_ot:f"										"{scoreboard_ot, plural, one{Verlängerung} other{{d:scoreboard_ot}. Verlängerung}}"
+		"eom-skillgroup-win:f"											"{matcheswon, plural, one{Gewonnene {s:rating_type}-Partie} other{Gewonnene {s:rating_type}-Partien}}"
+		"eom-skillgroup-map-win:f"										"{matcheswon, plural, one{gewonnenes {s:rating_type}-Spiel auf {s:map}} other{gewonnene {s:rating_type}-Spiele auf {s:map}}}"
+		"eom-skillgroup-needed-wins:f"									"{winsneeded, plural, one{Gewinnen Sie {d:winsneeded} Spiel, damit Ihre Skill-Gruppe angezeigt wird.} other{Gewinnen Sie {d:winsneeded} Spiele, damit Ihre Skill-Gruppe angezeigt wird.}}"
+		"WatchMenu_Viewers_dv:f"										"{spectatorCount, plural, one{{d:spectatorCount} Zuschauer} other{{d:spectatorCount} Zuschauer}}"
+		"Panorama_DeathPanel_DamageTaken:f"								"{hits_taken, plural, one{<font color='#A0A0A0'>Erlittener Schaden:  </font><font color='#FFFFFF'><b>{d:damage_taken}</b></font> <font color='#A0A0A0'> in</font> <font color='#FFFFFF'><b>{d:hits_taken} Treffer</b></font>} other{<font color='#A0A0A0'>Erlittener Schaden:  </font><font color='#FFFFFF'><b>{d:damage_taken}</b></font> <font color='#A0A0A0'> in</font> <font color='#FFFFFF'><b>{d:hits_taken} Treffern</b></font>}}"
+		"Panorama_DeathPanel_DamageGiven:f"								"{hits_given, plural, one{<font color='#A0A0A0'>Verursachter Schaden:  </font><font color='#FFFFFF'><b>{d:damage_given}</b></font> <font color='#A0A0A0'> in</font> <font color='#FFFFFF'><b>{d:hits_given} Treffer</b></font>} other{<font color='#A0A0A0'>Verursachter Schaden:  </font><font color='#FFFFFF'><b>{d:damage_given}</b></font> <font color='#A0A0A0'> in</font> <font color='#FFFFFF'><b>{d:hits_given} Treffern</b></font>}}"
+		"mission_directive:f"											"{mission-points, plural, one{<b>{d:mission-points}</b> {s:action}} other{<b>{d:mission-points}</b> {s:actions}}}"
+		"mission_directive_progress:f"									"{mission-points, plural, one{{d:mission-progress}/<b>{d:mission-points}</b> {s:action}} other{{d:mission-progress}/<b>{d:mission-points}</b> {s:actions}}}"
+		"quest_11000_var_desc:f"										"{mission-points, plural, one{Erzielen Sie einen Kill mit der Waffe {s:item1} im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.} other{Erzielen Sie Kills mit der Waffe {s:item1} im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.}}"
+		"quest_11000_var_partial:f"										"… mit der Waffe {s:item1}."
+		"quest_11000_var_ingame:f"										"{mission-points, plural, one{Erzielen Sie einen Kill mit der Waffe {s:item1}.} other{Erzielen Sie Kills mit der Waffe {s:item1}.}}"
+		"quest_11001_var_desc:f"										"{mission-points, plural, one{Erzielen Sie einen Kill mit der Waffe {s:item1} im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.} other{Erzielen Sie Kills mit der Waffe {s:item1} im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.}}"
+		"quest_11001_var_partial:f"										"… mit der Waffe {s:item1}."
+		"quest_11001_var_ingame:f"										"{mission-points, plural, one{Erzielen Sie einen Kill mit der Waffe {s:item1}.} other{Erzielen Sie Kills mit der Waffe {s:item1}.}}"
+		"quest_11002_var_desc:f"										"{mission-points, plural, one{Erzielen Sie einen Kill mit der Waffe {s:item1} im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.} other{Erzielen Sie Kills mit der Waffe {s:item1} im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.}}"
+		"quest_11002_var_partial:f"										"… mit der Waffe {s:item1}."
+		"quest_11002_var_ingame:f"										"{mission-points, plural, one{Erzielen Sie einen Kill mit der Waffe {s:item1}.} other{Erzielen Sie Kills mit der Waffe {s:item1}.}}"
+		"quest_11003_var_desc:f"										"{mission-points, plural, one{Erzielen Sie einen Kill mit der Waffe {s:item1} im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.} other{Erzielen Sie Kills mit der Waffe {s:item1} im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.}}"
+		"quest_11003_var_partial:f"										"… mit der Waffe {s:item1}."
+		"quest_11003_var_ingame:f"										"{mission-points, plural, one{Erzielen Sie einen Kill mit der Waffe {s:item1}.} other{Erzielen Sie Kills mit der Waffe {s:item1}.}}"
+		"quest_11004_var_desc:f"										"{mission-points, plural, one{Gewinnen Sie eine Runde im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.} other{Gewinnen Sie Runden im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.}}"
+		"quest_11004_var_partial:f"										""
+		"quest_11004_var_ingame:f"										"{mission-points, plural, one{Gewinnen Sie eine Runde.} other{Gewinnen Sie Runden.}}"
+		"quest_11005_var_desc:f"										"{mission-points, plural, one{Gewinnen Sie eine Runde im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.} other{Gewinnen Sie Runden im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.}}"
+		"quest_11005_var_partial:f"										""
+		"quest_11005_var_ingame:f"										"{mission-points, plural, one{Gewinnen Sie eine Runde.} other{Gewinnen Sie Runden.}}"
+		"quest_11006_var_desc:f"										"{mission-points, plural, one{Gewinnen Sie eine Runde im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.} other{Gewinnen Sie mehrere Runden im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.}}"
+		"quest_11006_var_partial:f"										""
+		"quest_11006_var_ingame:f"										"{mission-points, plural, one{Gewinnen Sie eine Runde.} other{Gewinnen Sie mehrere Runden.}}"
+		"quest_11007_var_desc:f"										"{mission-points, plural, one{Erzielen Sie einen Kill mit der Waffe {s:item1} im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.} other{Erzielen Sie Kills mit der Waffe {s:item1} im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.}}"
+		"quest_11007_var_partial:f"										"… mit der Waffe {s:item1}."
+		"quest_11007_var_ingame:f"										"{mission-points, plural, one{Erzielen Sie einen Kill mit der Waffe {s:item1}.} other{Erzielen Sie mehrere Kills mit der Waffe {s:item1}.}}"
+		"quest_11008_var_desc:f"										"{mission-points, plural, one{Gewinnen Sie eine Runde im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.} other{Gewinnen Sie Runden im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.}}"
+		"quest_11008_var_partial:f"										""
+		"quest_11008_var_ingame:f"										"{mission-points, plural, one{Gewinnen Sie eine Runde.} other{Gewinnen Sie mehrere Runden.}}"
+		"quest_11009_var_desc:f"										"{mission-points, plural, one{Gewinnen Sie eine Runde im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.} other{Gewinnen Sie mehrere Runden im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.}}"
+		"quest_11009_var_partial:f"										""
+		"quest_11009_var_ingame:f"										"{mission-points, plural, one{Gewinnen Sie eine Runde.} other{Gewinnen Sie mehrere Runden.}}"
+		"quest_11010_var_desc:f"										"{mission-points, plural, one{Erzielen Sie einen Kill mit der Waffe {s:item1} im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.} other{Erzielen Sie mehrere Kills mit der Waffe {s:item1} im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.}}"
+		"quest_11010_var_partial:f"										"… mit der Waffe {s:item1}."
+		"quest_11010_var_ingame:f"										"{mission-points, plural, one{Erzielen Sie einen Kill mit der Waffe {s:item1}.} other{Erzielen Sie mehrere Kills mit der Waffe {s:item1}.}}"
+		"quest_11011_var_desc:f"										"{mission-points, plural, one{Gewinnen Sie eine Runde im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.} other{Gewinnen Sie mehrere Runden im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.}}"
+		"quest_11011_var_partial:f"										""
+		"quest_11011_var_ingame:f"										"{mission-points, plural, one{Gewinnen Sie eine Runde.} other{Gewinnen Sie mehrere Runden.}}"
+		"quest_11012_var_desc:f"										"{mission-points, plural, one{Gewinnen Sie eine Runde im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.} other{Gewinnen Sie mehrere Runden im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.}}"
+		"quest_11012_var_partial:f"										""
+		"quest_11012_var_ingame:f"										"{mission-points, plural, one{Gewinnen Sie eine Runde.} other{Gewinnen Sie mehrere Runden.}}"
+		"quest_11013_var_desc:f"										"{mission-points, plural, one{Gewinnen Sie eine Runde im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.} other{Gewinnen Sie mehrere Runden im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.}}"
+		"quest_11013_var_partial:f"										""
+		"quest_11013_var_ingame:f"										"{mission-points, plural, one{Gewinnen Sie eine Runde.} other{Gewinnen Sie mehrere Runden.}}"
+		"quest_11014_var_desc:f"										"{mission-points, plural, one{Gewinnen Sie eine Runde im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.} other{Gewinnen Sie mehrere Runden im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.}}"
+		"quest_11014_var_partial:f"										""
+		"quest_11014_var_ingame:f"										"{mission-points, plural, one{Gewinnen Sie eine Runde.} other{Gewinnen Sie mehrere Runden.}}"
+		"quest_11015_var_desc:f"										"{mission-points, plural, one{Gewinnen Sie eine Runde im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.} other{Gewinnen Sie mehrere Runden im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.}}"
+		"quest_11015_var_partial:f"										""
+		"quest_11015_var_ingame:f"										"{mission-points, plural, one{Gewinnen Sie eine Runde.} other{Gewinnen Sie mehrere Runden.}}"
 }
 
 

@@ -102,7 +102,7 @@
 
 		"tooltip_copycrosshair"				"Kopier sigtekorn"
 		"GameUI_Xhair_Copy_Code_Confirm"		"Erstat nuværende sigtekorn?"
-
+ 
 		"settings_damage_prediction"			"Skadeforudsigelse"
 		"settings_damage_prediction_info"		"Afspiller lydlige/visuelle effekter fra skade med det samme uden at vente på bekræftelse fra serveren. Skadeforudsigelse kan forbedre skyderesponsen markant, men indebærer risiko for, at den kan tage fejl af og til (f.eks. fordi det giver et ryk i en, når man rammer noget, fjenders bevægelseshastighed reduceres, når de rammes, eller på grund af et dødsfald, som klienten ikke er opmærksom på endnu). Skadeforudsigelse er ikke aktiv, når man har høj ping."
 		"GameUI_PredictBodyShotEffects"			"Forudsig kropskudseffekter"
@@ -1961,8 +1961,8 @@
 		"Team_Cash_Award_no_income_suicide"					" +0 $ straf over selvmord"
 		"Team_Cash_Award_Generic"							" +%s1 $ holdindkomst"
 		"Team_Cash_Award_Custom"							" +%s1 $ %s2"
-		"Team_Cash_Award_Dead_Terrorists:p{s2}"				" +%s1 $ holdindkomst for %s2 elimineret terrorist#|# +%s1 $ holdindkomst for %s2 eliminerede terrorister"
-		"Team_Cash_Award_Dead_CTs:p{s2}"					" +%s1 $ holdindkomst for %s2 elimineret CT#|# +%s1 $ holdindkomst for %s2 eliminerede CT'er"
+		"Team_Cash_Award_Dead_Terrorists:p"					" +%s1 $ holdindkomst for %s2 elimineret terrorist#|# +%s1 $ holdindkomst for %s2 eliminerede terrorister"
+		"Team_Cash_Award_Dead_CTs:p"						" +%s1 $ holdindkomst for %s2 elimineret CT#|# +%s1 $ holdindkomst for %s2 eliminerede CT'er"
 
 
 		"Notice_Bonus_Shorthanded_Eligibility"			" Dit hold vil kunne modtage erstatningsindkomst for at være underbemandet om %s1 runder."
@@ -2139,6 +2139,8 @@
 		"CS_DeathNemesis"			"Nemesis"
 		"CS_DeathNewNemesis"		"Ny nemesis"
 		"CS_DeathRevenge"			"Hævn"
+
+		"DeathNotice_Prescient_Attacker"	"(Død på server)"
 
 		// Game Instructor Messages
 
@@ -2893,6 +2895,8 @@
 		"official_leaderboard_premier_season1_name"			"1. sæson"
 		"official_leaderboard_premier_season2_name"			"2. sæson"
 		"official_leaderboard_premier_season3_name"			"3. sæson"
+		"official_leaderboard_premier_season4_name"			"4. sæson"
+
 		//
 
 		"CSGO_official_leaderboard_mission_embedded"	"Missionsførertavle"
@@ -3318,6 +3322,18 @@
 		"CSGO_Collectible_MapTokenRooftop_Desc"			"Til minde om skabelsen af CS2-banen \"Rooftop\""
 		"CSGO_Collectible_MapTokenTransit"				"Banemønt: (censureret)"
 		"CSGO_Collectible_MapTokenTransit_Desc"			"Til minde om skabelsen af CS2-banen \"(censureret)\""
+		"CSGO_Collectible_MapTokenWarden"				"Banemønt: Warden"
+		"CSGO_Collectible_MapTokenWarden_Desc"			"Til minde om skabelsen af CS2-banen \"Warden\""
+		"CSGO_Collectible_MapTokenStronghold"			"Banemønt: Stronghold"
+		"CSGO_Collectible_MapTokenStronghold_Desc"		"Til minde om skabelsen af CS2-banen \"Stronghold\""
+		"CSGO_Collectible_MapTokenAlpine"				"Banemønt: Alpine"
+		"CSGO_Collectible_MapTokenAlpine_Desc"			"Til minde om skabelsen af CS2-banen \"Alpine\""
+		"CSGO_Collectible_MapTokenPoseidon"				"Banemønt: Poseidon"
+		"CSGO_Collectible_MapTokenPoseidon_Desc"		"Til minde om skabelsen af CS2-banen \"Poseidon\""
+		"CSGO_Collectible_MapTokenSanctum"				"Banemønt: Sanctum"
+		"CSGO_Collectible_MapTokenSanctum_Desc"			"Til minde om skabelsen af CS2-banen \"Sanctum\""
+
+
 		"CSGO_CollectibleCoin_FortiusQuoFidelius"	"Loyalitetsemblem"
 		"CSGO_CollectibleCoin_FortiusQuoFidelius_Desc"	"Dette emblem fejrer loyalt medlemskab i Counter-Strike-fællesskabet forud for Danger Zone-opdateringen.\n\n<i>Styrke gennem loyalitet.</i>"
 		"CSGO_CollectibleCoin_FiveYearService"		"5-års veteranmønt"
@@ -5529,6 +5545,8 @@
 		"CSGO_set_timed_drops_neutral"			"Boreal-samlingen"
 		"CSGO_set_timed_drops_cool"				"Ascent-samlingen"
 		"CSGO_set_community_36"					"Genesis-samlingen"
+		"CSGO_set_timed_drops_exuberant"		"Harlequin-samlingen"
+		"CSGO_set_timed_drops_achroma"			"Achroma-samlingen"
 		/////////////////
 		// lootlist override strings
 		//////////////////
@@ -35422,7 +35440,7 @@ bare glem alt om Proseccoen."
 	"PaintKit_cu_m249_downvote"										"Den er blevet tagget med blå og lyserøde pile, som peger i alle retninger.\n\n<i>Et anderledes spraymønster</i>"
 	"PaintKit_cu_m249_downvote_Tag"									"Downtown"
 
-	"PaintKit_cu_m4a4_elite_tactical"								"Den er specialmalet i et design med et gennemsigtigt polymermagasin og en koble, et forskæfte og skæfte i brun.\n\n<i>Helt standard</i>"
+	"PaintKit_cu_m4a4_elite_tactical"								"Den er specialmalet i et design med et gennemsigtigt polymermagasin og en kolbe, et forskæfte og skæfte i brun.\n\n<i>Helt standard</i>"
 	"PaintKit_cu_m4a4_elite_tactical_Tag"							"Poly Mag"
 
 	"PaintKit_cu_mac10_monkeyflage"									"Røde, brune og grønne aber pryder denne specialmalede MAC-10.\n\n<i>Abegilde!</i>"
@@ -36235,6 +36253,120 @@ bare glem alt om Proseccoen."
 		
 		"PaintKit_cue_stratosphere"							"Den er blevet specialmalet med rumskibe, som kredser om en planet i det ydre rum.\n\n<i>\"En dag i en ikke alt for fjern fremtid...\"</i>"
 		"PaintKit_cue_stratosphere_Tag"						"Stratosphere"
+		
+		// ACHROMA COLLECTION
+		"PaintKit_soe_ddpat_swirl_bw"						"Der er påført et DDPAT-mønster i gråtoner.\n\n<i>Det går rundt og rundt</i>"
+		"PaintKit_soe_ddpat_swirl_bw_Tag"					"Dizzy"
+
+		"PaintKit_hye_car_wrap_bizon"						"Der er påført et mønster i gråtoner.\n\n<i>Hurtigt, tak!</i>"
+		"PaintKit_hye_car_wrap_bizon_Tag"					"Bizoom"
+
+		"PaintKit_soe_acrylic_flow3"						"Der er påført et akrylmønster i gråtoner.\n\n<i>I sidste ende ser det ud til, at alt falder på plads</i>"
+		"PaintKit_soe_acrylic_flow3_Tag"					"Silver Pour"
+
+		"PaintKit_hye_comic_shapes"							"Der er påført et mønster i gråtoner med sølvfarvet højglans.\n\n<i>\"Det røde lys betyder, at den optager\"</i>"
+		"PaintKit_hye_comic_shapes_Tag"						"Sans Comic"
+
+		"PaintKit_hye_chrome_ripple"						"Der er påført et mønster i gråtoner.\n\n<i>Som ringe i vandet</i>"
+		"PaintKit_hye_chrome_ripple_Tag"					"Zinc"
+
+		"PaintKit_hye_car_wrap_3"							"Der er påført et kantet mønster i gråtoner.\n\n<i>Et flot indre tilpasset et groft ydre</i>"
+		"PaintKit_hye_car_wrap_3_Tag"						"Sleet"
+
+		"PaintKit_hye_geobirds"								"Der er påført et mønster i gråtoner, som fremhæves med sølvfarvede fugle.\n\n<i>Hvordan er udsigten deroppe?</i>"
+		"PaintKit_hye_geobirds_Tag"							"Currents"
+
+		"PaintKit_hye_mp5_car_wrap4"						"Der er påført et mønster i gråtoner med skarpe, kantede designs.\n\n<i>Ufravigelig</i>"
+		"PaintKit_hye_mp5_car_wrap4_Tag"					"Snow Splash"
+
+		"PaintKit_soe_bw_blast"								"Den er blevet malet med et træmønster med højglansmaling.\n\n<i>Her – noget til at gøre regnskabet op med... – Booth, våbenhandler</i>"
+		"PaintKit_soe_bw_blast_Tag"							"Vendetta"
+
+		"PaintKit_hye_abstract_knot_m4"						"Der er påført et abstrakt knudemønster.\n\n<i>Lad vinden bære dig</i>"
+		"PaintKit_hye_abstract_knot_m4_Tag"					"Aeolian Dark"
+
+		"PaintKit_soch_smoke_grips"							"Grebet er blevet malet med et mørkt akrylmønster.\n\n<i>Gamle penge</i>"
+		"PaintKit_soch_smoke_grips_Tag"						"Dark Chamber"
+
+		"PaintKit_soe_aug_creep"							"Den er blevet malet med knudrede grene og fugle på en sølvfarvet base.\n\n<i>\"De cirkler...\"</i>"
+		"PaintKit_soe_aug_creep_Tag"						"Creep"
+
+		"PaintKit_hye_abstract_knot"						"Der er påført et abstrakt knudemønster.\n\n<i>Lad vinden bære dig</i>"
+		"PaintKit_hye_abstract_knot_Tag"					"Aeolian Light"
+
+		"PaintKit_hye_car_wrap"								"Der er påført et mønster i gråtoner.\n\n<i>Direkte fra siderne i en graphic novel</i>"
+		"PaintKit_hye_car_wrap_Tag"							"The Daily Deagle"
+
+		"PaintKit_soe_p2000_grips"							"Der er påført et mønster i sølvmaling med forskellige glansgrader. Dele af grebet er malet med en mørk, mat lak, så det ligner griptape.\n\n<i>Hold fast!</i>"
+		"PaintKit_soe_p2000_grips_Tag"						"Grip Tape"
+
+		"PaintKit_hye_zeds"									"Der er påført et mønster i gråtoner med aggressive \"z\"-designs på en kulfiberbase.\n\n<i>+5 hurtigere våbenhåndtering</i>"
+		"PaintKit_hye_zeds_Tag"								"Breakthrough"
+
+		"PaintKit_ht_white_edges"							"Der er påført et mønster med cirkler under et holografidesign.\n\n<i>Grafiske kort over holografiske systemer</i>"
+		"PaintKit_ht_white_edges_Tag"						"Trace Lock"
+
+		"PaintKit_soe_bw_the_end_awp"						"Den er specialmalet i aubergine og hvid med flammer, roser og \"the end\" foran aftrækkeren.\n\n<i>Hver historie har to sider</i>"
+		"PaintKit_soe_bw_the_end_awp_Tag"					"The End"
+
+		// EXUBERANT COLLECTION
+		"PaintKit_hye_animal_print_lc"						"Der er påført et brunt dyremønster.\n\n<i>Du sagde \"et par dyr\", ikke \"hele dyreriget\"</i>"
+		"PaintKit_hye_animal_print_lc_Tag"					"Safari Print"
+
+		"PaintKit_hye_firework_patches_famas"				"Der er påført et gyldent, eksplosionsagtigt mønster.\n\n<i>\"Seje fyre ser ikke på eksplosioner\"</i>"
+		"PaintKit_hye_firework_patches_famas_Tag"			"Byproduct"
+
+		"PaintKit_hye_geobirds_sunrise"						"Der er påført sølvfarvede fugle over et vinrødt mønster.\n\n<i>Hvordan er udsigten deroppe?</i>"
+		"PaintKit_hye_geobirds_sunrise_Tag"					"Thermal Currents"
+
+		"PaintKit_hye_batik_eyes"							"Der er påført et højrødt og sort bananbladsmønster.\n\n<i>Mobile mål</i>"
+		"PaintKit_hye_batik_eyes_Tag"						"Crimson Batik"
+
+		"PaintKit_hye_paisley_desat"						"Der er malet med et gyldent paisleymønster over en vinrød base.\n\n<i>Kun de fineste tekstiler til dig, Booth – Yukako, våbensmed</i>"
+		"PaintKit_hye_paisley_desat_Tag"					"Honey Paisley"
+
+		"PaintKit_soch_copper_accent_revolver"				"Grebet er blevet malet med et blommefarvet akrylmønster.\n\n<i>Hæld forsigtigt</i>"
+		"PaintKit_soch_copper_accent_revolver_Tag"			"Mauve Aside"
+
+		"PaintKit_soe_yellow_bits"							"Denne MP9 er hovedsageligt sølvfarvet, og furerne er fyldt med gul og rød maling.\n\n<i>Hold mig tilbage!</i>"
+		"PaintKit_soe_yellow_bits_Tag"						"Bee-Tron"
+
+		"PaintKit_hye_test_animal_print_45"					"Der er påført et gyldenbrunt og rødt dyremønster.\n\n<i>Du sagde \"et par dyr\", ikke \"hele dyreriget\"</i>"
+		"PaintKit_hye_test_animal_print_45_Tag"				"Warm Blooded"
+
+		"PaintKit_hye_paisley_warm"							"Der er blevet påført et rødt og orange paisleymønster.\n\n<i>Kun de fineste tekstiler til dig, Booth – Yukako, våbensmed</i>"
+		"PaintKit_hye_paisley_warm_Tag"						"Coral Paisley"
+
+		"PaintKit_soe_red"									"Der er påført et rødt mønster med forskudte X'er.\n\n<i>Det er lidt voldsomt, men er det ikke hele pointen? – Imogen, våbenhandler under oplæring</i>"
+		"PaintKit_soe_red_Tag"								"Picnic"
+
+		"PaintKit_hye_batik_eyes_tec9"						"Der er påført et gult og sort bananbladsmønster.\n\n<i>Højt kaliumindhold</i>"
+		"PaintKit_hye_batik_eyes_tec9_Tag"					"Banana Leaf"
+
+		"PaintKit_hye_earth_mandala"						"Der er påført et mandalamønster i flere farver.\n\n<i>Det handler om rejsen</i>"
+		"PaintKit_hye_earth_mandala_Tag"					"Sky Mandala"
+
+		"PaintKit_hye_earth_mandala_lc"						"Der er påført et mandalamønster i flere farver.\n\n<i>Det handler om rejsen</i>"
+		"PaintKit_hye_earth_mandala_lc_Tag"					"Earth Mandala"
+
+		"PaintKit_soe_yellow_xm"							"Der er påført et gult mønster med sølvfarvede detaljer.\n\n<i>ZZZZZAP!</i>"
+		"PaintKit_soe_yellow_xm_Tag"						"XoooM"
+
+		"PaintKit_soe_pink_cranes"							"Der er påført et lyserødt og hvidt mønster med traner og blomster.\n\n<i>Bedst med et glas sherry</i>"
+		"PaintKit_soe_pink_cranes_Tag"						"Fraise Crane"
+
+		"PaintKit_ht_red_edges_fineline"					"Der er påført et rødt kalligrafimønster.\n\n<i>Få det på skrift</i>"
+		"PaintKit_ht_red_edges_fineline_Tag"				"Calligrafaux"
+
+		"PaintKit_hye_firework_patches"						"Der er påført et rødt, eksplosionsagtigt mønster.\n\n<i>\"Seje fyre ser ikke på eksplosioner\"</i>"
+		"PaintKit_hye_firework_patches_Tag"					"Exothermic"
+
+		"PaintKit_soe_purple"								"Der er påført et lilla camouflagemønster med skinnende lak.\n\n<i>En ny bryg!</i>"
+		"PaintKit_soe_purple_Tag"							"Sleeping Potion"
+
+		"PaintKit_hye_animal_print_90s"						"Der er påført et neonfarvet dyremønster. \n\n<i>Du sagde \"et par farver\", ikke \"hele farvespektret\"</i>"
+		"PaintKit_hye_animal_print_90s_Tag"					"Party Animal"
+
 // END TIMED DROPS 2025
 
 // LIMITED TIME ITEM
@@ -36242,7 +36374,10 @@ bare glem alt om Proseccoen."
 		"PaintKit_soch_mountains_xm1014"					"Den har fået påført et mønster med bjerge.\n\n<i>Det er et privilegie at være alene, ikke en byrde</i>"
 		"PaintKit_soch_mountains_xm1014_Tag"				"Solitude"
 
-		// END LIMITED TIME ITEM
+		"PaintKit_gsch_ak_djiin"							"Styrerammen og løbet er malet med metallisk maling. Forskæftet og kolben er malet, så de ligner perlemor.\n\n<i>Fra et andet plan</i>"
+		"PaintKit_gsch_ak_djiin_Tag"						"Aphrodite"
+
+// END LIMITED TIME ITEM
 
 		//Recipes
 		"CSGO_Recipe_TradeUp"						"Opbytningskontrakt"
@@ -36940,6 +37075,12 @@ bare glem alt om Proseccoen."
 		"SFUI_Map_de_golden"		"Golden"
 		"SFUI_Map_de_rooftop"		"Rooftop"
 		"SFUI_Map_de_transit"		"(censureret)"
+
+		"SFUI_Map_de_warden"		"Warden"
+		"SFUI_Map_de_stronghold"	"Stronghold"
+		"SFUI_Map_cs_alpine"		"Alpine"
+		"SFUI_Map_de_poseidon"		"Poseidon"
+		"SFUI_Map_de_sanctum"		"Sanctum"
 
 		"SFUI_Map_workshop_preview_dust2"	"Dust II – forhåndsvisning"
 		"SFUI_Map_workshop_preview_ancient"	"Ancient – forhåndsvisning"
@@ -38819,6 +38960,15 @@ bare glem alt om Proseccoen."
 		"CSGO_Demo_Next_Camera"						"[{s:bind_jump}]: Næste kamera"
 		"CSGO_Demo_Toggle_XRay"						"{s:bind_slot12}: Slå røntgen til/fra"
 		"CSGO_Demo_Toggle_Overview"					"[{s:bind_duck}]: Oversigt til/fra"
+		"CSGO_Demo_Settings_XRay"					"Røntgen (slå til/fra med [{s:bind_slot12}])"
+		"CSGO_Demo_Settings_TrueView_Explanation"	"Rekonstruer den originale klientoplevelse ved at køre forudsigelse på klientsiden igen. Dette genskaber mere nøjagtigt de betingelser, som serveren bruger til registrering af, når kugler rammer noget."
+		"CSGO_Demo_Settings_TrueView_Enable"		"Slå TrueView til"
+		"CSGO_Demo_Settings_TrueViewDOA"				"Inkluder \"DOA\"-handlinger"
+		"CSGO_Demo_Settings_TrueViewDOA_Explanation"	"Rekonstruer klientens forudsigelse af kommandoer, som ikke blev udført på serveren, fordi spilleren var død, inden kommandoerne nåede frem. Hvis dette slås fra, vil gengivelsen være forskellig fra den oprindelige oplevelse, men svare bedre til det, der skete på serveren."
+		"CSGO_Demo_Settings_TrueViewWrongVersion"		"Tillad uoverensstemmelse i demoversioner"
+		"CSGO_Demo_Settings_TrueViewWrongVersion_Explanation"	"Hvis den oprindelige klient var en anden version end den, som blev brugt til at vise demoen, fungerer TrueView muligvis ikke korrekt. Slå denne indstilling til for at prøve alligevel."
+
+
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// Date formatting
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -39250,6 +39400,9 @@ bare glem alt om Proseccoen."
 		"CSGO_Collectible_PremierSeason3Coin"		"Medalje for tredje sæson af Premier"
 		"CSGO_Collectible_PremierSeason3Coin_Desc"	"Dette er en Premier-mindemedalje, som du har fået tildelt for din aktive deltagelse i tredje sæson af Premier."
 
+		"CSGO_Collectible_PremierSeason4Coin"		"Medalje for fjerde sæson af Premier"
+		"CSGO_Collectible_PremierSeason4Coin_Desc"	"Dette er en Premier-mindemedalje, som du har fået tildelt for din aktive deltagelse i fjerde sæson af Premier."
+
 		//for main menu display
 		"SFUI_XP_Bonus_1"							"Ugentligt XP-bonusboost tilgængelig!"
 		"SFUI_XP_Bonus_2"							"Modtag en genstand, næste gang du stiger i level!"
@@ -39409,11 +39562,12 @@ bare glem alt om Proseccoen."
 		"xpshop_upsell_mainmenu_2_v2"				"Få adgang til den nye Train-samling, Fever-kassen, vedhæng og meget mere."
 		"xpshop_upsell_btn"							"Køb et pas"
 		"xpshop_upsell_tooltip"						"Læs mere om {s:pass}"
-		"xpshop_new_items"							"Nye genstande!"
+
+		"xpshop_new_items:p{new-count}"	"Ny genstand!#|#Nye genstande!"
 		"xpshop_lootlist_info"						"<span class=\"text-color-white\"><b>{s:casename}</b></span> indeholder en af følgende"
 
 		"xpshop_limited_item_variations"			"Forskellige lakeringer"
-		"xpshop_limited_item_variations_tooltip"	"Eksempler på mulige variationer, som du kan få, når du indløser denne genstand i begrænset oplag."
+		"xpshop_limited_item_variations_tooltip"	"Eksempler på mulige variationer i mønsterskabelon og slitage, som du kan få, når du indløser denne genstand i begrænset oplag."
 		"xpshop_pass_activate"						"Aktiver pas"
 		"xpshop_pass_activate_open_armory"			"Åbn våbenlageret for at aktivere"
 		"xpshop_pass_activate_desc"					"Aktiver pas for at begynde at optjene våbenlagerpoint"
@@ -41352,8 +41506,8 @@ bare glem alt om Proseccoen."
 		"SFUI_Settings_MiniScoreboardPlayerCount_Tooltip"	"Under den aktive del af runden erstattes spillernes avatarer med holdets antal spillere på minipointtavlen."
 
 
-		"Post_Round_Damage_Report_Given:p{s1}"			" • Skade gjort → %s3: %s2 i %s1#|# • Skade gjort → %s3: %s2 i %s1"
-		"Post_Round_Damage_Report_Taken:p{s1}"			" • Skade taget ← %s3: %s2 i %s1#|# • Skade taget ← %s3: %s2 i %s1"
+		"Post_Round_Damage_Report_Given:p"			" • Skade gjort → %s3: %s2 i %s1#|# • Skade gjort → %s3: %s2 i %s1"
+		"Post_Round_Damage_Report_Taken:p"			" • Skade taget ← %s3: %s2 i %s1#|# • Skade taget ← %s3: %s2 i %s1"
 
 		"SFUI_TeamOverheadID"					"Vis holdudstyr"
 
@@ -41832,8 +41986,8 @@ bare glem alt om Proseccoen."
 
 		"SFUI_UserAlertNoteType_1"			"Servere i %s1 oplever høj belastning."
 		"SFUI_UserAlertNoteType_2"			"Servere i %s1 er offline pga. vedligeholdelse."
-		"SFUI_UserAlertNoteType_LowPlayersR:p{players}"	"Kun %players% kompatibel spiller søger i %region%.#|#Kun%players% kompatible spillere søger i %region%."
-		"SFUI_UserAlertNoteType_LowPlayersY:p{players}"	"Kun %players% kompatibel spiller søger i din region.#|#Kun %players% kompatible spillere søger i din region."
+		"SFUI_UserAlertNoteType_LowPlayersR:p"	"Kun %players% kompatibel spiller søger i %region%.#|#Kun%players% kompatible spillere søger i %region%."
+		"SFUI_UserAlertNoteType_LowPlayersY:p"	"Kun %players% kompatibel spiller søger i din region.#|#Kun %players% kompatible spillere søger i din region."
 
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"Kunne ikke forbinde til kampen."
 		"SFUI_QMM_ERROR_NotLoggedIn"		"Ikke logget på Counter-Strike-matchmakingtjenesten."
@@ -47005,6 +47159,7 @@ bare glem alt om Proseccoen."
 		"prime_unranked"				"Ikke-rangeret kamp"
 		"prime_not_enrolled_label"		"Spillere uden Prime"
 		"prime_disabled_label"			"Slå Prime fra"
+		"matchmaking_expected_wait_time"	"<img src='file://{images}/icons/ui/recent.svg' class='map-selection-info__wait-icon'/>Ventetid {s:time}"
 		"no_steam_group_link"			"Du er ikke medlem af en Steam-gruppe."
 
 		"permissions_title"					"Tilladelsesindstillinger"
@@ -47443,6 +47598,7 @@ bare glem alt om Proseccoen."
 		"annotations_local"							"Lokal lagerenhed"
 		"annotations_workshop"						"Værksted"
 		"annotations_official"						"Officiel"
+		"annotations_none"							"Ingen baneguide"
 		"Workshop_annotation_title"					"Værktøj til indsendelse af baneguide"
 		"Workshop_annotation_error_title"			"Indtast en titel til din baneguide."
 		"Workshop_annotation_error_file"			"Vælg en gyldig .txt-annotationsfil."
@@ -49719,17 +49875,196 @@ bare glem alt om Proseccoen."
 		"quest_11015_var_desc:p{mission-points}"	 	"Vind en runde i <b>{s:gamemode}: {s:location}</b>.#|#Vind runder i <b>{s:gamemode}: {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Vind en runde#|#Vind runder"
 
-// crow_mask_51509_comment
-// crow_mask_51510_comment
-}
+// crow_mask_51513_comment
+// crow_mask_51514_comment
 
-
-
-
-}
-
-
-row_mask_51358_comment
+		"SFUI_PlayerCount_Alive_Left:f"									"{left_side_alive, plural, one{I LIVE} other{I LIVE}}"
+		"SFUI_PlayerCount_Alive_Right:f"								"{right_side_alive, plural, one{I LIVE} other{I LIVE}}"
+		"funfact_damage_no_kills:f"										"{funfact-d1, plural, one{{s:funfact-player} havde ingen drab, men gjorde {d:funfact-d1} skade.} other{{s:funfact-player} havde ingen drab, men gjorde {d:funfact-d1} skade.}}"
+		"funfact_kills_with_single_grenade:f"							"{funfact-d1, plural, one{{s:funfact-player} ramte {d:funfact-d1} fjende med en enkelt granat.} other{{s:funfact-player} ramte {d:funfact-d1} fjender med en enkelt granat.}}"
+		"funfact_kill_defuser:f"										"Det lykkedes {s:funfact-player} at standse bomberydderen."
+		"funfact_kill_rescuer:f"										"{s:funfact-player} dræbte gidselundsætteren."
+		"funfact_killed_enemies:f"										"{funfact-d1, plural, one{{s:funfact-player} dræbte {d:funfact-d1} modstander.} other{{s:funfact-player} dræbte {d:funfact-d1} modstandere.}}"
+		"funfact_first_kill:f"											"{funfact-d1, plural, one{{s:funfact-player} var den første, der dræbte nogen, {d:funfact-d1} sekund inde i runden.} other{{s:funfact-player} var den første, der dræbte nogen, {d:funfact-d1} sekunder inde i runden.}}"
+		"funfact_first_blood:f"											"{funfact-d1, plural, one{{s:funfact-player} var den første, der trak blod, {d:funfact-d1} sekund inde i runden.} other{{s:funfact-player} var den første, der trak blod, {d:funfact-d1} sekunder inde i runden.}}"
+		"funfact_short_round:f"											"{funfact-d1, plural, one{Denne runde tog kun {d:funfact-d1} sekund!} other{Denne runde tog kun {d:funfact-d1} sekunder!}}"
+		"funfact_best_accuracy:f"										"{funfact-d1, plural, one{{s:funfact-player} havde en præcision på {d:funfact-d1}%.} other{{s:funfact-player} havde en præcision på {d:funfact-d1}%.}}"
+		"funfact_knife_kills:f"											"{funfact-d1, plural, one{{s:funfact-player} dræbte en fjende med sin kniv.} other{{s:funfact-player} dræbte {d:funfact-d1} fjender med sin kniv.}}"
+		"funfact_damage_with_grenade:f"									"{funfact-d1, plural, one{{s:funfact-player} gjorde {d:funfact-d1} skade med granater.} other{{s:funfact-player} gjorde {d:funfact-d1} skade med granater.}}"
+		"funfact_kills_grenades:f"										"{funfact-d1, plural, one{{s:funfact-player} dræbte {d:funfact-d1} fjende med granater.} other{{s:funfact-player} dræbte {d:funfact-d1} fjender med granater.}}"
+		"funfact_blind_kills:f"											"{funfact-d1, plural, one{{s:funfact-player} dræbte en fjende mens blændet.} other{{s:funfact-player} dræbte {d:funfact-d1} fjender mens blændet.}}"
+		"funfact_kills_with_last_round:f"								"{funfact-d1, plural, one{{s:funfact-player} dræbte en fjende med kun ét skud tilbage i magasinet.} other{{d:funfact-d1} gange dræbte {s:funfact-player} en fjende med kun ét skud tilbage i magasinet.}}"
+		"funfact_kills_headshots:f"										"{funfact-d1, plural, one{{s:funfact-player} dræbte {d:funfact-d1} fjende med hovedskud i denne runde.} other{{s:funfact-player} dræbte {d:funfact-d1} fjender med hovedskud i denne runde.}}"
+		"funfact_kills_with_stattrak_weapon:f"							"{funfact-d1, plural, one{{s:funfact-player} føjede {d:funfact-d1} drab til sine StatTrak™-våben i denne runde.} other{{s:funfact-player} føjede {d:funfact-d1} drab til sine StatTrak™-våben i denne runde.}}"
+		"funfact_donated_weapons:f"										"{funfact-d1, plural, one{{s:funfact-player} donerede {d:funfact-d1} våben i løbet af runden.} other{{s:funfact-player} donerede {d:funfact-d1} våben i løbet af runden.}}"
+		"funfact_posthumous_kills_with_grenade:f"						"{funfact-d1, plural, one{{s:funfact-player} dræbte en fjende med en granat efter sin død.} other{{s:funfact-player} dræbte {d:funfact-d1} fjender med en granat efter sin død.}}"
+		"funfact_num_times_jumped:f"									"{funfact-d1, plural, one{{s:funfact-player} hoppede {d:funfact-d1} gang i løbet af denne runde.} other{{s:funfact-player} hoppede {d:funfact-d1} gange i løbet af denne runde.}}"
+		"funfact_fall_damage:f"											"{funfact-d1, plural, one{{s:funfact-player} tog {d:funfact-d1} skade... fra jorden.} other{{s:funfact-player} tog {d:funfact-d1} skade... fra jorden.}}"
+		"funfact_items_purchased:f"										"{funfact-d1, plural, one{{s:funfact-player} købte {d:funfact-d1} genstand.} other{{s:funfact-player} købte {d:funfact-d1} genstande.}}"
+		"funfact_won_as_last_member:f"									"{funfact-d1, plural, one{Som det sidste overlevende medlem af holdet dræbte {s:funfact-player} {d:funfact-d1} fjende og vandt runden.} other{Som det sidste overlevende medlem af holdet dræbte {s:funfact-player} {d:funfact-d1} fjender og vandt runden.}}"
+		"funfact_number_of_overkills:f"									"{funfact-d1, plural, one{{s:funfact-player} dræbte {d:funfact-d1} af sine allierede dominerede spillere.} other{{s:funfact-player} dræbte {d:funfact-d1} af sine allierede dominerede spillere.}}"
+		"funfact_shots_fired:f"											"{funfact-d1, plural, one{Der blev affyret {d:funfact-d1} skud i denne runde.} other{Der blev affyret {d:funfact-d1} skud i denne runde.}}"
+		"funfact_money_spent:f"											"{funfact-d1, plural, one{{s:funfact-player} brugte {d:funfact-d1}$ i løbet af runden.} other{{s:funfact-player} brugte {d:funfact-d1}$ i løbet af runden.}}"
+		"funfact_grenades_thrown:f"										"{funfact-d1, plural, one{{s:funfact-player} kastede {d:funfact-d1} granat i løbet af runden.} other{{s:funfact-player} kastede {d:funfact-d1} granater i løbet af runden.}}"
+		"funfact_used_all_ammo:f"										"{s:funfact-player} løb helt tør for ammunition."
+		"funfact_survived_multiple_attackers:f"							"{funfact-d1, plural, one{{s:funfact-player} overlevede angreb fra {d:funfact-d1} fjende.} other{{s:funfact-player} overlevede angreb fra {d:funfact-d1} forskellige fjender.}}"
+		"funfact_died_from_multiple_attackers:f"						"{funfact-d1, plural, one{{s:funfact-player} døde efter at have taget skadet fra {d:funfact-d1} fjende.} other{{s:funfact-player} døde efter at have taget skade fra {d:funfact-d1} fjender.}}"
+		"funfact_defended_bomb:f"										"{funfact-d1, plural, one{{s:funfact-player} forsvarede bomben mod {d:funfact-d1} fjende.} other{{s:funfact-player} forsvarede bomben mod {d:funfact-d1} fjender.}}"
+		"funfact_items_dropped_value:f"									"{funfact-d1, plural, one{{s:funfact-player} smed forsyninger til en værdi af {d:funfact-d1}$ væk.} other{{s:funfact-player} smed forsyninger til en værdi af {d:funfact-d1}$ væk.}}"
+		"funfact_kill_wounded_enemies:f"								"{funfact-d1, plural, one{{s:funfact-player} gjorde det af med {d:funfact-d1} såret fjende.} other{{s:funfact-player} gjorde det af med {d:funfact-d1} sårede fjender.}}"
+		"funfact_damage_multiple_enemies:f"								"{funfact-d1, plural, one{{s:funfact-player} sårede {d:funfact-d1} fjende.} other{{s:funfact-player} sårede {d:funfact-d1} fjender.}}"
+		"funfact_used_multiple_weapons:f"								"{funfact-d1, plural, one{{s:funfact-player} brugte {d:funfact-d1} våben.} other{{s:funfact-player} brugte {d:funfact-d1} forskellige våben.}}"
+		"funfact_terrorist_accuracy:f"									"{funfact-d1, plural, one{Terroristerne havde den højeste præcision på {d:funfact-d1}%.} other{Terroristerne havde den højeste præcision på {d:funfact-d1}%.}}"
+		"funfact_ct_accuracy:f"											"{funfact-d1, plural, one{Counter-terroristerne havde den højeste præcision på {d:funfact-d1}%.} other{Counter-terroristerne havde den højeste præcision på {d:funfact-d1}%.}}"
+		"funfact_ct_win_no_kills:f"										"Counter-terroristerne vandt uden at dræbe nogen af terroristerne."
+		"funfact_t_win_no_kills:f"										"Terroristerne vandt uden at dræbe nogen counter-terrorister."
+		"funfact_t_win_no_casualties:f"									"Terroristerne vandt uden tab."
+		"funfact_ct_win_no_casualties:f"								"Counter-terroristerne vandt uden tab."
+		"funfact_best_terrorist_accuracy:f"								"{funfact-d1, plural, one{{s:funfact-player} havde en præcision på {d:funfact-d1}%, mens holdets var {d:funfact-d2}%.} other{{s:funfact-player} havde en præcision på {d:funfact-d1}%, mens holdets var {d:funfact-d2}%.}}"
+		"funfact_best_counterterrorist_accuracy:f"						"{funfact-d1, plural, one{{s:funfact-player} havde en præcision på {d:funfact-d1}%, mens holdets var {d:funfact-d2}%.} other{{s:funfact-player} havde en præcision på {d:funfact-d1}%, mens holdets var {d:funfact-d2}%.}}"
+		"funfact_fallback1:f"											"Kagen er en løgn."
+		"funfact_fallback2:f"											"Gab."
+		"funfact_draw:f"												"Kampen blev genstartet som følge af en spillerafstemning."
+		"funfact_broke_windows:f"										"{funfact-d1, plural, one{{s:funfact-player} smadrede {d:funfact-d1} vindue.} other{{s:funfact-player} smadrede {d:funfact-d1} vinduer.}}"
+		"funfact_nightvision_damage:f"									"{funfact-d1, plural, one{{s:funfact-player} gjorde {d:funfact-d1} skade med nattesyn aktiveret} other{{s:funfact-player} gjorde {d:funfact-d1} skade med nattesyn aktiveret.}}"
+		"funfact_defused_with_dropped_kit:f"							"{s:funfact-player} demonterede bomben med et efterladt demonteringssæt."
+		"funfact_killed_half_of_enemies:f"								"{funfact-d1, plural, one{{s:funfact-player} dræbte {d:funfact-d1}% af det fjendtlige hold.} other{{s:funfact-player} dræbte {d:funfact-d1}% af det fjendtlige hold.}}"
+		"funfact_knife_level_reached:f"									"{funfact-d1, plural, one{{d:funfact-d1} spiller nåede guldknivsniveau.} other{{d:funfact-d1} spillere nåede guldknivsniveau.}}"
+		"funfact_killed_before_dying:f"									"{funfact-d1, plural, one{{s:funfact-player} døde efter at have dræbt {d:funfact-d1} spiller.} other{{s:funfact-player} døde efter at have dræbt {d:funfact-d1} spillere.}}"
+		"funfact_respawned:f"											"{funfact-d1, plural, one{{s:funfact-player} genoplivede {d:funfact-d1} gang i løbet af kampen.} other{{s:funfact-player} genoplivede {d:funfact-d1} gange i løbet af kampen.}}"
+		"funfact_default_weapon:f"										"{s:funfact-player} vandt runden uden at samle nogen våben op."
+		"funfact_rounds_without_dying:f"								"{funfact-d1, plural, one{{s:funfact-player} overlevede {d:funfact-d1} runde i træk uden at dø.} other{{s:funfact-player} overlevede {d:funfact-d1} runder i træk uden at dø.}}"
+		"funfact_taser_kill:f"											"{funfact-d1, plural, one{{s:funfact-player} dræbte {d:funfact-d1} spiller med strømpistol.} other{{s:funfact-player} dræbte {d:funfact-d1} spillere med strømpistol.}}"
+		"funfact_ticking_time:f"										"{funfact-d1, plural, one{Terroristerne vandt, selvom {d:funfact-d1} CT forsøgte at demontere bomben.} other{Terroristerne vandt, selvom {d:funfact-d1} CT'er forsøgte at demontere bomben.}}"
+		"funfact_ct_win_time:f"											"{funfact-d1, plural, one{CT-holdet eliminerede T-holdet på {d:funfact-d1} sekund.} other{CT-holdet eliminerede T-holdet på {d:funfact-d1} sekunder.}}"
+		"funfact_ter_win_time:f"										"{funfact-d1, plural, one{T-holdet eliminerede CT-holdet på {d:funfact-d1} sekund.} other{T-holdet eliminerede CT-holdet på {d:funfact-d1} sekunder.}}"
+		"funfact_bots_assumed:f"										"{funfact-d1, plural, one{{s:funfact-player} overtog styringen af {d:funfact-d1} bot i løbet af runden.} other{{s:funfact-player} overtog styringen af {d:funfact-d1} bots i løbet af runden.}}"
+		"funfact_domination:f"											"{s:funfact-player} dominerede flest spillere."
+		"funfact_revenge:f"												"{funfact-d1, plural, one{{s:funfact-player} fik hævn på {d:funfact-d1} spiller.} other{{s:funfact-player} fik hævn på {d:funfact-d1} spillere.}}"
+		"funfact_steps_taken:f"											"{funfact-d1, plural, one{{s:funfact-player} tog {d:funfact-d1} skridt i løbet af kampen.} other{{s:funfact-player} tog {d:funfact-d1} skridt i løbet af kampen.}}"
+		"funfact_quarter_health:f"										"{funfact-d1, plural, one{{s:funfact-player} dræbte {d:funfact-d1} spiller med under 25 helbred selv.} other{{s:funfact-player} dræbte {d:funfact-d1} spillere med under 25 helbred selv.}}"
+		"funfact_empty_guns:f"											"{funfact-d1, plural, one{{s:funfact-player} løb tør for ammunition med {d:funfact-d1} våben.} other{{s:funfact-player} løb tør for ammunition med {d:funfact-d1} våben.}}"
+		"funfact_slow_trigger:f"										"{funfact-d1, plural, one{{s:funfact-player} døde uden at affyre et eneste skud med {d:funfact-d1} våben.} other{{s:funfact-player} døde uden at affyre et eneste skud med {d:funfact-d1} våben.}}"
+		"funfact_pickup_bomb:f"											"{funfact-d1, plural, one{{s:funfact-player} anbragte bomben, efter at {d:funfact-d1} holdkammerat havde haft den.} other{{s:funfact-player} anbragte bomben, efter at {d:funfact-d1} holdkammerater havde haft den.}}"
+		"funfact_bomb_carriers:f"										"{funfact-d1, plural, one{{s:funfact-player} dræbte {d:funfact-d1} bombebærer i sidste runde} other{{s:funfact-player} dræbte {d:funfact-d1} separate bombebærere i sidste runde.}}"
+		"funfact_knife_bomb_planter:f"									"{s:funfact-player} vandt på knivniveauet ved at dræbe bombeanbringeren."
+		"funfact_bomb_planted_before_kill:f"							"Ingen spillere blev dræbt, før bomben blev anbragt."
+		"funfact_failed_bomb_plants:f"									"{funfact-d1, plural, one{{d:funfact-d1} terrorist forsøgte at anbringe bomben i denne runde.} other{{d:funfact-d1} terrorister forsøgte at anbringe bomben i denne runde.}}"
+		"funfact_knife_without_ammo:f"									"{funfact-d1, plural, one{{s:funfact-player} fik {d:funfact-d1} knivdrab efter at være løbet tør for ammunition.} other{{s:funfact-player} fik {d:funfact-d1} knivdrab efter at være løbet tør for ammunition.}}"
+		"funfact_molotov_burns:f"										"{funfact-d1, plural, one{{s:funfact-player} antændte {d:funfact-d1} spiller med ild.} other{{s:funfact-player} antændte {d:funfact-d1} spillere med ild.}}"
+		"funfact_survival_time:f"										"{funfact-d1, plural, one{{s:funfact-player} overlevede længst: {d:funfact-d1} sekund.} other{{s:funfact-player} overlevede længst: {d:funfact-d1} sekunder.}}"
+		"funfact_pulled_trigger:f"										"{funfact-d1, plural, one{{s:funfact-player} trykkede på aftrækkeren {d:funfact-d1} gang i kampen.} other{{s:funfact-player} trykkede på aftrækkeren {d:funfact-d1} gange i kampen.}}"
+		"funfact_ace:f"													"Ace! {s:funfact-player} dræbte hele det fjendtlige hold."
+		"funfact_defuse_was_close_call_tenths:f"						"{funfact-d1, plural, one{{s:funfact-player} demonterede bomben med 0,{d:funfact-d1} sekund tilbage.} other{{s:funfact-player} demonterede bomben med 0,{d:funfact-d1} sekunder tilbage.}}"
+		"funfact_defuse_was_close_call_hundredths:f"					"{funfact-d1, plural, one{{s:funfact-player} demonterede bomben med 0,0{d:funfact-d1} sekund tilbage.} other{{s:funfact-player} demonterede bomben med 0,0{d:funfact-d1} sekunder tilbage.}}"
+		"funfact_defuse_was_close_call_thousandths:f"					"{funfact-d1, plural, one{{s:funfact-player} demonterede bomben med 0,00{d:funfact-d1} sekund tilbage.} other{{s:funfact-player} demonterede bomben med 0,00{d:funfact-d1} sekunder tilbage.}}"
+		"mapwinrecord_graph_title:f"									"{f:0:wins, plural, one{Seneste sejr} other{Seneste sejre}}"
+		"CSGO_Recipe_Count_Items_Selected:f"							"{count, plural, one{<b>{d:count}</b> genstand valgt} other{<b>{d:count}</b> genstande valgt}}"
+		"CSGO_Recipe_Count_Items_Remaining:f"							"{count, plural, one{<b>{d:count}</b> genstand tilbage} other{<b>{d:count}</b> genstande tilbage}}"
+		"CSGO_Recipe_TradeUp_Items_Remain:f"							"{count, plural, one{{d:count} valgt til bytning} other{{d:count} valgt til bytning}}"
+		"CSGO_Recipe_TradeUp_Items_XofY:f"								"{count, plural, one{{d:count} / {d:recipecount} valgt til bytning} other{{d:count} / {d:recipecount} valgt til bytning}}"
+		"CSGO_Recipe_TradeUp_Items_Inv:f"								"{count, plural, one{{d:count} gyldig til bytning} other{{d:count} gyldige til bytning}}"
+		"CSGO_RemoveKeychainToolCharges_Reward:f"						"{item_count, plural, one{+{d:item_count} vedhængsfjerner} other{+{d:item_count} vedhængsfjernere}}"
+		"SFUI_Store_Offer_Days_Remaining:f"								"{daysremaining, plural, one{{d:daysremaining} dag tilbage.} other{{d:daysremaining} dage tilbage.}}"
+		"SFUI_Store_Offer_Days_Remaining_claim:f"						"{daysremaining, plural, one{{d:daysremaining} dag tilbage} other{{d:daysremaining} dage tilbage}}"
+		"SFUI_Store_Offer_Days_Remaining_bid:f"							"{daysremaining, plural, one{{d:daysremaining} dag tilbage til at byde på dette tilbud} other{{d:daysremaining} dage tilbage til at byde på dette tilbud}}"
+		"SFUI_Store_Offer_Days_Remaining_last_claim:f"					"Sidste chance for at indløse dette tilbud"
+		"SFUI_Store_Offer_Days_Remaining_last_bid:f"					"Sidste chance for at byde på dette tilbud"
+		"SFUI_Store_Timer_Week:f"										"{f:0:value, plural, one{{f:0:value} uge} other{{f:0:value} uger}}"
+		"SFUI_Store_Timer_Day:f"										"{f:0:value, plural, one{{f:0:value} dag} other{{f:0:value} dage}}"
+		"SFUI_Store_Timer_Hour:f"										"{f:0:value, plural, one{{f:0:value} time} other{{f:0:value} timer}}"
+		"SFUI_Store_Timer_Min:f"										"{f:0:value, plural, one{{f:0:value} min.} other{{f:0:value} min.}}"
+		"SFUI_Store_Timer_Sec:f"										"{f:0:value, plural, one{{f:0:value} sekund} other{{f:0:value} sekunder}}"
+		"CSGO_Watch_Minute:f"											"{f:0:value, plural, one{{f:0:value} minut} other{{f:0:value} minutter}}"
+		"xpshop_new_items:f"											"{new-count, plural, one{Ny genstand!} other{Nye genstande!}}"
+		"xpshop_popup_clear_n_tracks:f"									"{completed_tracks_count, plural, one{Ryd {d:completed_tracks_count} gennemført pas} other{Ryd {d:completed_tracks_count} gennemførte pas}}"
+		"xpshop_popup_clear_n_tracks_text:f"							"{completed_tracks_count, plural, one{Du har optjent alle våbenlagerpoint fra dette pas.<br><br>Hvis du rydder dette våbenlagerpas, kan du aktivere et nyt. Dette påvirker ikke din nuværende pointsaldo.} other{Du har optjent alle våbenlagerpoint fra {d:completed_tracks_count} våbenlagerpas.<br><br>Hvis du rydder disse {d:completed_tracks_count} pas, kan du aktivere nye. Dette påvirker ikke din nuværende pointsaldo.}}"
+		"xpshop_redeem_bid_batchover:f"									"{hours_until_bid_batch, plural, one{Der er lukket for bud for dette parti. De vindende bud får besked, når afviklingen er afsluttet. Kom tilbage i morgen for at byde på det næste parti. Der åbnes for bud igen om {d:hours_until_bid_batch} time. } other{Der er lukket for bud for dette parti. De vindende bud får besked, når afviklingen er afsluttet. Kom tilbage i morgen for at byde på det næste parti. Der åbnes for bud igen om {d:hours_until_bid_batch} timer.}}"
+		"xpshop_redeem_not_enough_stars:f"								"{stars_needed, plural, one{Du skal bruge {d:stars_needed} våbenlagerpoint til. Optjen dem ved at spille med et aktivt våbenlagerpas.} other{Du skal bruge {d:stars_needed} våbenlagerpoint til. Optjen dem ved at spille med et aktivt våbenlagerpas.}}"
+		"Panorama_PlayerDetails_Commendations_Left:f"					"{num_token, plural, one{Du kan anbefale {d:num_token} spiller mere i dag} other{Du kan anbefale {d:num_token} spillere mere i dag}}"
+		"SFUI_BuyMenu_CanOnlyCarryXGrenades:f"							"{n1, plural, one{Du kan kun bære {s:s1} granat} other{Du kan kun bære {s:s1} granater}}"
+		"SFUI_BuyMenu_MaxItemsOfType:f"									"{n1, plural, one{Du kan kun bære {s:s1} af denne type} other{Du kan kun bære {s:s1} af denne type}}"
+		"SFUI_BuyMenu_MaxItemsOfTypePurchased:f"						"{n1, plural, one{Du kan kun købe {s:s1} af denne type} other{Du kan kun købe {s:s1} af denne type}}"
+		"SFUI_BuyMenu_ReachedWeaponsExpertLimit:f"						"{n1, plural, one{Du har allerede købt {s:s1} i denne kamp} other{Du har allerede købt {s:s1} i denne kamp}}"
+		"cs_rating_wins_needed:f"										"{winsneeded, plural, one{Vind <b>{d:winsneeded}</b> kamp mere} other{Vind <b>{d:winsneeded}</b> kampe mere}}"
+		"cs_rating_wins_needed_verbose:f"								"{winsneeded, plural, one{Vind <b>{d:winsneeded}</b> kamp mere for at fastslå dit CS-niveau} other{Vind <b>{d:winsneeded}</b> kampe mere for at fastslå dit CS-niveau}}"
+		"cs_rating_wins_needed_verbose_intro:f"							"{winsneeded, plural, one{Vind <b>{d:winsneeded}</b> kamp for at fastslå dit CS-niveau} other{Vind <b>{d:winsneeded}</b> kampe for at fastslå dit CS-niveau}}"
+		"cs_rating_need_wins:f"											"{wins-needed, plural, one{{d:wins-needed} sejr nødvendig} other{{d:wins-needed} sejre nødvendige}}"
+		"wins_count:f"													"{wins, plural, one{{d:wins} sejr} other{{d:wins} sejre}}"
+		"contextmenu_lobby-count:f"										"{lobby_count, plural, one{{d:lobby_count} lobby} other{{d:lobby_count} lobbyer}}"
+		"popup_useitem_button_getkeychaincharges:f"						"{item_count, plural, one{Tilføj <b>{d:item_count}</b> vedhængsfjerner} other{Tilføj <b>{d:item_count}</b> vedhængsfjernere}}"
+		"popup_decodable_rent_weapon_count:f"							"{numlootlist, plural, one{Lej {d:numlootlist} våben i 7 dage} other{Lej {d:numlootlist} våben i 7 dage}}"
+		"popup_redeem_souvenir_desc:f"									"{redeems, plural, one{<span class=\"get-souvenir-redeem-count\">{d:redeems}</span> souvenirindløsning tilbage} other{<span class=\"get-souvenir-redeem-count\">{d:redeems}</span> souvenirindløsninger tilbage}}"
+		"matchmaking_stat_avgSearchTimeSeconds:f"						"{s:stat} estimeret søgetid"
+		"matchmaking_stat_playersOnline:f"								"{d:stat} spillere online"
+		"matchmaking_stat_playersLockedIn:f"							"{stat, plural, one{{d:stat} spiller ud af {d:total_stat} har bekræftet} other{{d:stat} spilere ud af {d:total_stat} har bekræftet}}"
+		"matchmaking_stat_playersSearching:f"							"{d:stat} spillere søger"
+		"matchmaking_stat_serversOnline:f"								"{d:stat} servere online"
+		"matchmaking_stat_ongoingMatches:f"								"{d:stat} kampe i gang"
+		"tooltip_skill_group_none:f"									"{winsneeded, plural, one{Vind <b>{d:winsneeded}</b> kamp for at fastslå din færdighedsgruppe i Competitive} other{Vind <b>{d:winsneeded}</b> kampe for at fastslå din færdighedsgruppe i Competitive.}}"
+		"tooltip_cs_rating_none:f"										"{winsneeded, plural, one{Vind <b>{d:winsneeded}</b> kamp mere for at fastslå dit CS-niveau.} other{Vind <b>{d:winsneeded}</b> kampe mere for at fastslå dit CS-niveau.}}"
+		"tooltip_skill_group_nonewingman:f"								"{winsneeded, plural, one{Vind <b>{d:winsneeded}</b> kamp for at fastslå din færdighedsgruppe i Wingman} other{Vind <b>{d:winsneeded}</b> kampe for at fastslå din færdighedsgruppe i Wingman.}}"
+		"tooltip_skill_group_nonedangerzone:f"							"Din færdighedsgruppe for Danger Zone skal kalibreres. Spil nogle Danger Zone-kampe for at få fastslået din færdighedsgruppe."
+		"tooltip_skill_group_wins:f"									"{wins, plural, one{<img src='file://{images}/icons/ui/trophy.svg'  vspace='6' class='player-card-tooltip-icon'/> {d:wins} sejr} other{<img src='file://{images}/icons/ui/trophy.svg'  vspace='6' class='player-card-tooltip-icon'/> {d:wins} sejre}}"
+		"team-intro-overtime-1st-half:f"								"{overtime_num, plural, one{Overtid: Første halvleg} other{Overtid {d:overtime_num}: Første halvleg}}"
+		"team-intro-overtime-2nd-half:f"								"{overtime_num, plural, one{Overtid: Anden halvleg} other{Overtid {d:overtime_num}: Anden halvleg}}"
+		"scoreboard_timeline_ot:f"										"{scoreboard_ot, plural, one{Overtid} other{Overtid {d:scoreboard_ot}}}"
+		"eom-skillgroup-win:f"											"{matcheswon, plural, one{{s:rating_type}-kamp vundet} other{{s:rating_type}-kampe vundet}}"
+		"eom-skillgroup-map-win:f"										"{matcheswon, plural, one{{s:rating_type} {s:map}-kamp vundet} other{{s:rating_type} {s:map}-kampe vundet}}"
+		"eom-skillgroup-needed-wins:f"									"{winsneeded, plural, one{Vind {d:winsneeded} kamp for at vise din færdighedsgruppe} other{Vind {d:winsneeded} kampe for at vise din færdighedsgruppe}}"
+		"WatchMenu_Viewers_dv:f"										"{spectatorCount, plural, one{{d:spectatorCount} seer} other{{d:spectatorCount} seere}}"
+		"Panorama_DeathPanel_DamageTaken:f"								"{hits_taken, plural, one{<font color='#A0A0A0'>Skade taget:  </font><font color='#FFFFFF'><b>{d:damage_taken}</b></font> <font color='#A0A0A0'> af</font> <font color='#FFFFFF'><b>{d:hits_taken} træffer</b></font>} other{<font color='#A0A0A0'>Skade taget:  </font><font color='#FFFFFF'><b>{d:damage_taken}</b></font> <font color='#A0A0A0'> af</font> <font color='#FFFFFF'><b>{d:hits_taken} træffere</b></font>}}"
+		"Panorama_DeathPanel_DamageGiven:f"								"{hits_given, plural, one{<font color='#A0A0A0'>Skade gjort:  </font><font color='#FFFFFF'><b>{d:damage_given}</b></font> <font color='#A0A0A0'> med</font> <font color='#FFFFFF'><b>{d:hits_given} træffer</b></font>} other{<font color='#A0A0A0'>Skade gjort:  </font><font color='#FFFFFF'><b>{d:damage_given}</b></font> <font color='#A0A0A0'> med</font> <font color='#FFFFFF'><b>{d:hits_given} træffere</b></font>}}"
+		"mission_directive:f"											"{mission-points, plural, one{<b>{d:mission-points}</b> {s:action}} other{<b>{d:mission-points}</b> {s:actions}}}"
+		"mission_directive_progress:f"									"{mission-points, plural, one{{d:mission-progress}/<b>{d:mission-points}</b> {s:action}} other{{d:mission-progress}/<b>{d:mission-points}</b> {s:actions}}}"
+		"quest_11000_var_desc:f"										"{mission-points, plural, one{Dræb en fjende med {s:item1} i <b>{s:gamemode}: {s:location}</b>.} other{Dræb fjender med {s:item1} i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11000_var_partial:f"										"...med {s:item1}."
+		"quest_11000_var_ingame:f"										"{mission-points, plural, one{Dræb en fjende med {s:item1}.} other{Dræb fjender med {s:item1}.}}"
+		"quest_11001_var_desc:f"										"{mission-points, plural, one{Dræb en fjende med {s:item1} i <b>{s:gamemode}: {s:location}</b>.} other{Dræb fjender med {s:item1} i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11001_var_partial:f"										"...med {s:item1}."
+		"quest_11001_var_ingame:f"										"{mission-points, plural, one{Dræb en fjende med {s:item1}} other{Dræb fjender med {s:item1}}}"
+		"quest_11002_var_desc:f"										"{mission-points, plural, one{Dræb en fjende med {s:item1} i <b>{s:gamemode}: {s:location}</b>.} other{Dræb fjender med {s:item1} i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11002_var_partial:f"										"...med {s:item1}."
+		"quest_11002_var_ingame:f"										"{mission-points, plural, one{Dræb en fjende med {s:item1}} other{Dræb fjender med {s:item1}}}"
+		"quest_11003_var_desc:f"										"{mission-points, plural, one{Dræb en fjende med {s:item1} i <b>{s:gamemode}: {s:location}</b>.} other{Dræb fjender med {s:item1} i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11003_var_partial:f"										"...med {s:item1}."
+		"quest_11003_var_ingame:f"										"{mission-points, plural, one{Dræb en fjende med {s:item1}} other{Dræb fjender med {s:item1}}}"
+		"quest_11004_var_desc:f"										"{mission-points, plural, one{Vind en runde i <b>{s:gamemode}: {s:location}</b>.} other{Vind runder i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11004_var_partial:f"										""
+		"quest_11004_var_ingame:f"										"{mission-points, plural, one{Vind en runde} other{Vind runder}}"
+		"quest_11005_var_desc:f"										"{mission-points, plural, one{Vind en runde i <b>{s:gamemode}: {s:location}</b>.} other{Vind runder i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11005_var_partial:f"										""
+		"quest_11005_var_ingame:f"										"{mission-points, plural, one{Vind en runde} other{Vind runder}}"
+		"quest_11006_var_desc:f"										"{mission-points, plural, one{Vind en runde i <b>{s:gamemode}: {s:location}</b>.} other{Vind runder i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11006_var_partial:f"										""
+		"quest_11006_var_ingame:f"										"{mission-points, plural, one{Vind en runde} other{Vind runder}}"
+		"quest_11007_var_desc:f"										"{mission-points, plural, one{Dræb en fjende med {s:item1} i <b>{s:gamemode}: {s:location}</b>.} other{Dræb fjender med {s:item1} i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11007_var_partial:f"										"...med {s:item1}."
+		"quest_11007_var_ingame:f"										"{mission-points, plural, one{Dræb en fjende med {s:item1}} other{Dræb fjender med {s:item1}}}"
+		"quest_11008_var_desc:f"										"{mission-points, plural, one{Vind en runde i <b>{s:gamemode}: {s:location}</b>.} other{Vind runder i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11008_var_partial:f"										""
+		"quest_11008_var_ingame:f"										"{mission-points, plural, one{Vind en runde} other{Vind runder}}"
+		"quest_11009_var_desc:f"										"{mission-points, plural, one{Vind en runde i <b>{s:gamemode}: {s:location}</b>.} other{Vind runder i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11009_var_partial:f"										""
+		"quest_11009_var_ingame:f"										"{mission-points, plural, one{Vind en runde} other{Vind runder}}"
+		"quest_11010_var_desc:f"										"{mission-points, plural, one{Dræb en fjende med {s:item1} i <b>{s:gamemode}: {s:location}</b>.} other{Dræb fjender med {s:item1} i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11010_var_partial:f"										"...med {s:item1}."
+		"quest_11010_var_ingame:f"										"{mission-points, plural, one{Dræb en fjende med {s:item1}} other{Dræb fjender med {s:item1}}}"
+		"quest_11011_var_desc:f"										"{mission-points, plural, one{Vind en runde i <b>{s:gamemode}: {s:location}</b>.} other{Vind runder i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11011_var_partial:f"										""
+		"quest_11011_var_ingame:f"										"{mission-points, plural, one{Vind en runde} other{Vind runder}}"
+		"quest_11012_var_desc:f"										"{mission-points, plural, one{Vind en runde i <b>{s:gamemode}: {s:location}</b>.} other{Vind runder i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11012_var_partial:f"										""
+		"quest_11012_var_ingame:f"										"{mission-points, plural, one{Vind en runde} other{Vind runder}}"
+		"quest_11013_var_desc:f"										"{mission-points, plural, one{Vind en runde i <b>{s:gamemode}: {s:location}</b>.} other{Vind runder i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11013_var_partial:f"										""
+		"quest_11013_var_ingame:f"										"{mission-points, plural, one{Vind en runde} other{Vind runder}}"
+		"quest_11014_var_desc:f"										"{mission-points, plural, one{Vind en runde i <b>{s:gamemode}: {s:location}</b>.} other{Vind runder i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11014_var_partial:f"										""
+		"quest_11014_var_ingame:f"										"{mission-points, plural, one{Vind en runde} other{Vind runder}}"
+		"quest_11015_var_desc:f"										"{mission-points, plural, one{Vind en runde i <b>{s:gamemode}: {s:location}</b>.} other{Vind runder i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11015_var_partial:f"										""
+		"quest_11015_var_ingame:f"										"{mission-points, plural, one{Vind en runde} other{Vind runder}}"
 }
 
 

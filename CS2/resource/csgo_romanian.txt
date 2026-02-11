@@ -102,6 +102,9 @@
 
 		"tooltip_copycrosshair"				"Copiază ținta"
 		"GameUI_Xhair_Copy_Code_Confirm"		"Înlocuiește ținta curentă?"
+ 
+		"GameUI_Confirm_Write_Setting_Title"	"Solicitare de modificare a setărilor"
+		"GameUI_Confirm_Write_Setting_Text"		"Această hartă ({s:mapname}) din atelier dorește să-ți modifice setările. Aceste modificări pot viza setările pentru țintă, radar, sunet și nu numai. Dorești să permiți aceste modificări?"
 
 		"settings_damage_prediction"			"Anticiparea rănirilor"
 		"settings_damage_prediction_info"		"Redă imediat efectele sonore/vizuale asociate rănirii, fără a aștepta confirmarea din partea serverului. Anticiparea rănirilor poate face ca feedbackul focurilor de armă să pară mult mai precis, dar cu riscul ca feedbackul să fie uneori eronat (de exemplu, din cauza animațiilor de rănire, a încetinirii cauzate de rănire sau a unui deces de care clientul tău nu știe încă). Anticiparea rănirilor nu este activată atunci când ai un ping ridicat."
@@ -1965,8 +1968,8 @@
 		"Team_Cash_Award_no_income_suicide"					" +0$ penalizare pentru sinucidere."
 		"Team_Cash_Award_Generic"							" +%s1$ recompensă de echipă."
 		"Team_Cash_Award_Custom"							" +%s1$ %s2"
-		"Team_Cash_Award_Dead_Terrorists:p{s2}"				" +%s1$ recompensă de echipă pentru eliminarea unui terorist.#|# +%s1$ recompensă de echipă pentru eliminarea a %s2 teroriști.#|# +%s1$ recompensă de echipă pentru eliminarea a %s2 de teroriști."
-		"Team_Cash_Award_Dead_CTs:p{s2}"					" +%s1$ recompensă de echipă pentru eliminarea unui contraterorist.#|# +%s1$ recompensă de echipă pentru eliminarea a %s2 contrateroriști.#|# +%s1$ recompensă de echipă pentru eliminarea a %s2 de contrateroriști."
+		"Team_Cash_Award_Dead_Terrorists:p"					" +%s1$ recompensă de echipă pentru eliminarea unui terorist.#|# +%s1$ recompensă de echipă pentru eliminarea a %s2 teroriști.#|# +%s1$ recompensă de echipă pentru eliminarea a %s2 de teroriști."
+		"Team_Cash_Award_Dead_CTs:p"						" +%s1$ recompensă de echipă pentru eliminarea unui contraterorist.#|# +%s1$ recompensă de echipă pentru eliminarea a %s2 contrateroriști.#|# +%s1$ recompensă de echipă pentru eliminarea a %s2 de contrateroriști."
 
 
 		"Notice_Bonus_Shorthanded_Eligibility"			" Echipa ta va fi eligibilă pentru un venit privind inferioritatea numerică în %s1 runde."
@@ -34968,7 +34971,7 @@ Colecția Spectrum"
 		"PaintKit_ht_earth_fans"							"A fost aplicat un model de evantai cu semitonuri turcoaz și maronii.\n\n<i>Ideal pentru a împrospăta aerul</i>"
 		"PaintKit_ht_earth_fans_Tag"						"Mint Fan"
 		
-		"PaintKit_hye_blue_paisley"							"A fost aplicat un model boteh de culoare albastră.\n\n<i>Meriți doar cele mai bune materiale, Booth – Yukako, armurier</i>"
+		"PaintKit_hye_blue_paisley"							"A fost aplicat un model boteh de culoare albastră.\n\n<i>Meriți doar cele mai fine țesături, Booth – Yukako, armurier</i>"
 		"PaintKit_hye_blue_paisley_Tag"						"Cobalt Paisley"
 		
 		"PaintKit_hye_coral"								"A fost aplicat un model cu corali de culoare verde și albastră.\n\n<i>Natura a râs, pentru că a creat ceva la care nici nu visam</i>"
@@ -34988,23 +34991,120 @@ Colecția Spectrum"
 		
 		"PaintKit_cue_stratosphere"							"Această armă a fost vopsită personalizat cu nave spațiale care survolează o planetă din spațiu.\n\n<i>„O zi dintr-un viitor nu foarte îndepărtat...”</i>"
 		"PaintKit_cue_stratosphere_Tag"						"Stratosphere"
-"PaintKit_soe_ddpat_swirl_bw_Tag"					"Dizzy"
+		
+		// ACHROMA COLLECTION
+		"PaintKit_soe_ddpat_swirl_bw"						"A fost aplicat un model DDPAT în nuanțe de gri.\n\n<i>Ne-învârtim în cerc</i>"
+		"PaintKit_soe_ddpat_swirl_bw_Tag"					"Dizzy"
 
+		"PaintKit_hye_car_wrap_bizon"						"A fost aplicat un model grafic în nuanțe de gri.\n\n<i>Repede, te rog!</i>"
 		"PaintKit_hye_car_wrap_bizon_Tag"					"Bizoom"
 
+		"PaintKit_soe_acrylic_flow3"						"A fost aplicat un model grafic turnat, în nuanțe de gri.\n\n<i>Pare să prindă contur în final</i>"
 		"PaintKit_soe_acrylic_flow3_Tag"					"Silver Pour"
 
+		"PaintKit_hye_comic_shapes"							"A fost aplicat un model grafic argintiu extrem de lucios, în nuanțe de gri.\n\n<i>„Dacă vezi lumina roșie, înseamnă că filmează”</i>"
 		"PaintKit_hye_comic_shapes_Tag"						"Sans Comic"
 
+		"PaintKit_hye_chrome_ripple"						"A fost aplicat un model grafic în nuanțe de gri.\n\n<i>„Un ecou temporal”</i>"
 		"PaintKit_hye_chrome_ripple_Tag"					"Zinc"
 
+		"PaintKit_hye_car_wrap_3"							"A fost aplicat un model grafic unghiular în nuanțe de gri.\n\n<i>Ideal pentru condiții nefavorabile</i>"
 		"PaintKit_hye_car_wrap_3_Tag"						"Sleet"
 
+		"PaintKit_hye_geobirds"								"A fost aplicat un model grafic în nuanțe de gri, completat cu păsări argintii.\n\n<i>Cum se vede de sus?</i>"
 		"PaintKit_hye_geobirds_Tag"							"Currents"
 
+		"PaintKit_hye_mp5_car_wrap4"						"A fost aplicat un model grafic în nuanțe de gri, cu modele unghiulare ascuțite.\n\n<i>De neclintit</i>"
 		"PaintKit_hye_mp5_car_wrap4_Tag"					"Snow Splash"
 
+		"PaintKit_soe_bw_blast"								"Această armă a fost vopsită cu un model cu fibre lemnoase, folosind o vopsea foarte lucioasă.\n\n<i>Poftim un topor ca să-ți faci treaba... – Booth, traficant de arme</i>"
 		"PaintKit_soe_bw_blast_Tag"							"Vendetta"
+
+		"PaintKit_hye_abstract_knot_m4"						"A fost aplicat un model abstract cu noduri în nuanțe de gri.\n\n<i>Lasă-te purtat de vânt</i>"
+		"PaintKit_hye_abstract_knot_m4_Tag"					"Aeolian Dark"
+
+		"PaintKit_soch_smoke_grips"							"Un model acrilic turnat, de culoare închisă, a fost aplicat pe mâner.\n\n<i>Eleganță discretă</i>"
+		"PaintKit_soch_smoke_grips_Tag"						"Dark Chamber"
+
+		"PaintKit_soe_aug_creep"							"Această armă a fost vopsită cu un model cu păsări și ramuri noduroase peste un strat de bază argintiu.\n\n<i>„Zboară în cerc...”</i>"
+		"PaintKit_soe_aug_creep_Tag"						"Creep"
+
+		"PaintKit_hye_abstract_knot"						"A fost aplicat un model abstract cu noduri în nuanțe de gri.\n\n<i>Lasă-te purtat de vânt</i>"
+		"PaintKit_hye_abstract_knot_Tag"					"Aeolian Light"
+
+		"PaintKit_hye_car_wrap"								"A fost aplicat un model grafic în nuanțe de gri.\n\n<i>Din paginile romanului tău grafic preferat</i>"
+		"PaintKit_hye_car_wrap_Tag"							"The Daily Deagle"
+
+		"PaintKit_soe_p2000_grips"							"A fost aplicat un model grafic folosind diferite nuanțe de vopsea argintie. Părți ale mânerului au fost vopsite cu o vopsea întunecată, mată, pentru a semăna cu banda adezivă.\n\n<i>Ține-te bine!</i>"
+		"PaintKit_soe_p2000_grips_Tag"						"Grip Tape"
+
+		"PaintKit_hye_zeds"									"Un model cu elemente agresive „zed”, în nuanțe de gri, a fost aplicat pe un strat de bază din fibră de carbon.\n\n<i>+5 viteză de manipulare a armelor</i>"
+		"PaintKit_hye_zeds_Tag"								"Breakthrough"
+
+		"PaintKit_ht_white_edges"							"Un model cu cercuri în nuanțe de gri a fost aplicat sub un design holografic.\n\n<i>Hărți grafice ale sistemelor holografice</i>"
+		"PaintKit_ht_white_edges_Tag"						"Trace Lock"
+
+		"PaintKit_soe_bw_the_end_awp"						"Această armă a fost vopsită personalizat în violet închis și alb cu flăcări, trandafiri și mesajul „the end” în fața trăgaciului.\n\n<i>O poveste cu două perspective</i>"
+		"PaintKit_soe_bw_the_end_awp_Tag"					"The End"
+
+		// EXUBERANT COLLECTION
+		"PaintKit_hye_animal_print_lc"						"A fost aplicat un model maro imprimat cu animale.\n\n<i>Ai spus „câteva animale”, nu „întregul regn animal”</i>"
+		"PaintKit_hye_animal_print_lc_Tag"					"Safari Print"
+
+		"PaintKit_hye_firework_patches_famas"				"A fost aplicat un model cu explozie de culoare aurie.\n\n<i>„Tipii cool nu se uită la explozii”</i>"
+		"PaintKit_hye_firework_patches_famas_Tag"			"Byproduct"
+
+		"PaintKit_hye_geobirds_sunrise"						"Un model cu păsări argintii a fost aplicat peste un strat de culoare grena.\n\n<i>Cum se vede de sus?</i>"
+		"PaintKit_hye_geobirds_sunrise_Tag"					"Thermal Currents"
+
+		"PaintKit_hye_batik_eyes"							"A fost aplicat un model cu frunze de banană de culoare stacojie și neagră.\n\n<i>Ținte în mișcare</i>"
+		"PaintKit_hye_batik_eyes_Tag"						"Crimson Batik"
+
+		"PaintKit_hye_paisley_desat"						"Această armă a fost vopsită cu un model boteh auriu peste un strat de bază de culoare grena.\n\n<i>Meriți doar cele mai fine țesături, Booth – Yukako, armurier</i>"
+		"PaintKit_hye_paisley_desat_Tag"					"Honey Paisley"
+
+		"PaintKit_soch_copper_accent_revolver"				"Un model acrilic turnat, de culoarea prunei, a fost aplicat pe mâner.\n\n<i>Ca turnat</i>"
+		"PaintKit_soch_copper_accent_revolver_Tag"			"Mauve Aside"
+
+		"PaintKit_soe_yellow_bits"							"Canelurile acestui MP9 de culoare argintie au fost vopsite în galben și roșu.\n\n<i>Oprește-mă!</i>"
+		"PaintKit_soe_yellow_bits_Tag"						"Bee-Tron"
+
+		"PaintKit_hye_test_animal_print_45"					"A fost aplicat un model bronz și roșu, imprimat cu animale.\n\n<i>Ai spus „câteva animale”, nu „întregul regn animal”</i>"
+		"PaintKit_hye_test_animal_print_45_Tag"				"Warm Blooded"
+
+		"PaintKit_hye_paisley_warm"							"A fost aplicat un model boteh de culoare roșie și portocalie.\n\n<i>Meriți doar cele mai fine țesături, Booth – Yukako, armurier</i>"
+		"PaintKit_hye_paisley_warm_Tag"						"Coral Paisley"
+
+		"PaintKit_soe_red"									"A fost aplicat un model roșu decorat cu cruci.\n\n<i>Puțin cam extravagant, dar nu ăsta e scopul? – Imogen, traficant de arme în devenire</i>"
+		"PaintKit_soe_red_Tag"								"Picnic"
+
+		"PaintKit_hye_batik_eyes_tec9"						"A fost aplicat un model cu frunze de banană de culoare neagră.\n\n<i>Bogat în potasiu</i>"
+		"PaintKit_hye_batik_eyes_tec9_Tag"					"Banana Leaf"
+
+		"PaintKit_hye_earth_mandala"						"A fost aplicat un model mandala multicolor.\n\n<i>Ceea ce contează este călătoria</i>"
+		"PaintKit_hye_earth_mandala_Tag"					"Sky Mandala"
+
+		"PaintKit_hye_earth_mandala_lc"						"A fost aplicat un model mandala multicolor.\n\n<i>Ceea ce contează este călătoria</i>"
+		"PaintKit_hye_earth_mandala_lc_Tag"					"Earth Mandala"
+
+		"PaintKit_soe_yellow_xm"							"A fost aplicat un model galben cu accente argintii.\n\n<i>ZZZZZAP!</i>"
+		"PaintKit_soe_yellow_xm_Tag"						"XoooM"
+
+		"PaintKit_soe_pink_cranes"							"A fost aplicat un model roz și alb cu flori și cocori.\n\n<i>Merge de minune cu un pahar de vin de Xeres</i>"
+		"PaintKit_soe_pink_cranes_Tag"						"Fraise Crane"
+
+		"PaintKit_ht_red_edges_fineline"					"A fost aplicat un model caligrafic de culoare roșie.\n\n<i>Notează</i>"
+		"PaintKit_ht_red_edges_fineline_Tag"				"Calligrafaux"
+
+		"PaintKit_hye_firework_patches"						"A fost aplicat un model cu explozie de culoare roșie.\n\n<i>„Tipii cool nu se uită la explozii”</i>"
+		"PaintKit_hye_firework_patches_Tag"					"Exothermic"
+
+		"PaintKit_soe_purple"								"A fost aplicat un model de camuflaj violet cu un finisaj perlat.\n\n<i>O nouă poțiune!</i>"
+		"PaintKit_soe_purple_Tag"							"Sleeping Potion"
+
+		"PaintKit_hye_animal_print_90s"						"A fost aplicat un model în culori vii neon, imprimat cu animale.\n\n<i>Ai spus „câteva culori”, nu „întregul spectru de culori”</i>"
+		"PaintKit_hye_animal_print_90s_Tag"					"Party Animal"
+
 // END TIMED DROPS 2025
 
 // LIMITED TIME ITEM
@@ -35012,7 +35112,10 @@ Colecția Spectrum"
 		"PaintKit_soch_mountains_xm1014"					"A fost aplicat un model de teren montan.\n\n<i>Singurătatea e un privilegiu, nu o povară</i>"
 		"PaintKit_soch_mountains_xm1014_Tag"				"Solitude"
 
-		// END LIMITED TIME ITEM
+		"PaintKit_gsch_ak_djiin"							"Cutia mecanismelor și țeava au fost vopsite cu vopsea metalică. Ulucul și patul armei au fost vopsite pentru a semăna cu sideful.\n\n<i>Dintr-un alt plan</i>"
+		"PaintKit_gsch_ak_djiin_Tag"						"Aphrodite"
+
+// END LIMITED TIME ITEM
 
 		//Recipes
 		"CSGO_Recipe_TradeUp"						"Contract de îmbunătățire"
@@ -35712,6 +35815,7 @@ Colecția Spectrum"
 		"SFUI_Map_de_transit"		"(Eliminată)"
 
 		"SFUI_Map_de_warden"		"Warden"
+		"SFUI_Map_de_stronghold"	"Stronghold"
 		"SFUI_Map_cs_alpine"		"Alpine"
 		"SFUI_Map_de_poseidon"		"Poseidon"
 		"SFUI_Map_de_sanctum"		"Sanctum"
@@ -37599,7 +37703,14 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"CSGO_Demo_Toggle_XRay"						"[{s:bind_slot12}]: comută vederea cu raze X"
 		"CSGO_Demo_Toggle_Overview"					"[{s:bind_duck}]: comută prezentarea de ansamblu"
 		"CSGO_Demo_Settings_XRay"					"Raze X (comută cu [{s:bind_slot12}])"
+		"CSGO_Demo_Settings_TrueView_Explanation"	"Reconstruiește experiența inițială din cadrul clientului, rerulând anticipările de la nivel de client. Acest lucru recreează mai îndeaproape condițiile utilizate de server pentru înregistrarea loviturilor de gloanțe."
 		"CSGO_Demo_Settings_TrueView_Enable"		"Activează TrueView"
+		"CSGO_Demo_Settings_TrueViewDOA"				"Include acțiunile post-mortem"
+		"CSGO_Demo_Settings_TrueViewDOA_Explanation"	"Reconstituie anticipările aferente comenzilor de la nivel de client care nu au fost executate pe server, deoarece jucătorul a murit înainte ca serverul să primească respectivele comenzi. Dacă dezactivezi această opțiune, reluarea va diferi față de experiența inițială, dar va corespunde mai îndeaproape cu evenimentele de pe server."
+		"CSGO_Demo_Settings_TrueViewWrongVersion"		"Acceptă demouri cu versiuni diferite"
+		"CSGO_Demo_Settings_TrueViewWrongVersion_Explanation"	"În cazul în care versiunea clientului original diferă de cea utilizată pentru vizualizarea demoului, este posibil ca TrueView să nu funcționeze corect. Activează această opțiune pentru a încerca vizualizarea oricum."
+
+
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// Date formatting
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -38028,6 +38139,7 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"CSGO_Collectible_PremierSeason3Coin"		"Medalie Premier - Sezonul 3"
 		"CSGO_Collectible_PremierSeason3Coin_Desc"	"Aceasta este o medalie comemorativă Premier acordată pentru participarea activă în sezonul trei din Premier."
 
+		"CSGO_Collectible_PremierSeason4Coin"		"Medalie Premier - Sezonul 4"
 		"CSGO_Collectible_PremierSeason4Coin_Desc"	"Aceasta este o medalie comemorativă Premier acordată pentru participarea activă în sezonul patru din Premier."
 
 		//for main menu display
@@ -38188,11 +38300,12 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"xpshop_upsell_mainmenu_2_v2"				"Obține acces la colecția Train, cutia Fever, brelocuri și multe altele."
 		"xpshop_upsell_btn"							"Cumpără un bilet"
 		"xpshop_upsell_tooltip"						"Află mai multe despre: {s:pass}"
-		"xpshop_new_items"							"Obiecte noi!"
+
+		"xpshop_new_items:p{new-count}"	"Obiect nou!#|#Obiecte noi!#|#Obiecte noi!"
 		"xpshop_lootlist_info"						"Această <span class=\"text-color-white\"><b>{s:casename}</b></span> conține unul din următoarele obiecte:"
 
 		"xpshop_limited_item_variations"			"Variații de finisaj"
-		"xpshop_limited_item_variations_tooltip"	"Exemple de variații posibile pe care le poți obține atunci când obții acest obiect disponibil în ediție limitată."
+		"xpshop_limited_item_variations_tooltip"	"Exemple de variații posibile privind șablonul modelului și uzura sa pe care le poți obține atunci când revendici acest obiect disponibil în ediție limitată."
 		"xpshop_pass_activate"						"Activează biletul"
 		"xpshop_pass_activate_open_armory"			"Deschide armurăria pentru a-l activa"
 		"xpshop_pass_activate_desc"					"Activează biletul pentru a începe să câștigi credite de armurărie."
@@ -40109,8 +40222,8 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"SFUI_Settings_MiniScoreboardPlayerCount_Tooltip"	"În timpul perioadei active a rundei, înlocuiește în minitabela de scor avatarurile jucătorilor echipelor cu un contor care indică numărul de jucători rămași în viață."
 
 
-		"Post_Round_Damage_Report_Given:p{s1}"			" • Răni provocate → %s3: %s2 în %s1#|# • Răni provocate → %s3: %s2 în %s1#|# • Răni provocate → %s3: %s2 în %s1"
-		"Post_Round_Damage_Report_Taken:p{s1}"			" • Răni suferite ← %s3: %s2 în %s1#|# • Răni suferite ← %s3: %s2 în %s1#|# • Răni suferite ← %s3: %s2 în %s1"
+		"Post_Round_Damage_Report_Given:p"			" • Răni provocate → %s3: %s2 în %s1#|# • Răni provocate → %s3: %s2 în %s1#|# • Răni provocate → %s3: %s2 în %s1"
+		"Post_Round_Damage_Report_Taken:p"			" • Răni suferite ← %s3: %s2 în %s1#|# • Răni suferite ← %s3: %s2 în %s1#|# • Răni suferite ← %s3: %s2 în %s1"
 
 		"SFUI_TeamOverheadID"					"Arată echipamentul echipei"
 
@@ -40589,8 +40702,8 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 
 		"SFUI_UserAlertNoteType_1"			"Serverele din %s1 sunt supraîncărcate."
 		"SFUI_UserAlertNoteType_2"			"Serverele din %s1 sunt oprite pentru mentenanță."
-		"SFUI_UserAlertNoteType_LowPlayersR:p{players}"	"Doar un jucător compatibili caută un meci în %region%.#|#Doar %players% jucători compatibili caută meciuri în %region%.#|#Doar %players% de jucători compatibili caută meciuri în %region%."
-		"SFUI_UserAlertNoteType_LowPlayersY:p{players}"	"Doar un jucător compatibili caută un meci în regiunea ta.#|#Doar %players% jucători compatibili caută meciuri în regiunea ta.#|#Doar %players% de jucători compatibili caută meciuri în regiunea ta."
+		"SFUI_UserAlertNoteType_LowPlayersR:p"	"Doar un jucător compatibili caută un meci în %region%.#|#Doar %players% jucători compatibili caută meciuri în %region%.#|#Doar %players% de jucători compatibili caută meciuri în %region%."
+		"SFUI_UserAlertNoteType_LowPlayersY:p"	"Doar un jucător compatibili caută un meci în regiunea ta.#|#Doar %players% jucători compatibili caută meciuri în regiunea ta.#|#Doar %players% de jucători compatibili caută meciuri în regiunea ta."
 
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"Conectarea la meci a eșuat."
 		"SFUI_QMM_ERROR_NotLoggedIn"		"Nu ești conectat la serviciul de matchmaking Counter-Strike."
@@ -46188,6 +46301,7 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"annotations_local"							"Stocare locală"
 		"annotations_workshop"						"Atelier"
 		"annotations_official"						"Oficial"
+		"annotations_none"							"Niciun ghid pentru hartă"
 		"Workshop_annotation_title"					"Instrument pentru încărcarea de ghiduri pentru hărți"
 		"Workshop_annotation_error_title"			"Introdu un titlu pentru ghidul tău pentru hartă."
 		"Workshop_annotation_error_file"			"Selectează un fișier .txt cu adnotări valid."
@@ -48446,8 +48560,196 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"quest_11015_var_desc:p{mission-points}"	 	"Câștigă o rundă în <b>{s:gamemode}: {s:location}</b>.#|#Câștigă runde în <b>{s:gamemode}: {s:location}</b>.#|#Câștigă runde în <b>{s:gamemode}: {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Câștigă o rundă#|#Câștigă runde#|#Câștigă runde"
 
-// crow_mask_51509_comment
-// crow_mask_51510_comment
+// crow_mask_51513_comment
+// crow_mask_51514_comment
+
+		"SFUI_PlayerCount_Alive_Left:f"									"{left_side_alive, plural, one{ÎN VIAȚĂ} few{ÎN VIAȚĂ} other{ÎN VIAȚĂ}}"
+		"SFUI_PlayerCount_Alive_Right:f"								"{right_side_alive, plural, one{ÎN VIAȚĂ} few{ÎN VIAȚĂ} other{ÎN VIAȚĂ}}"
+		"funfact_damage_no_kills:f"										"{funfact-d1, plural, one{{s:funfact-player} nu are nicio ucidere, dar a cauzat o rană în valoare de un punct.} few{{s:funfact-player} nu are nicio ucidere, dar a cauzat răni în valoare de {d:funfact-d1} puncte.} other{{s:funfact-player} nu are nicio ucidere, dar a cauzat răni în valoare de {d:funfact-d1} de puncte.}}"
+		"funfact_kills_with_single_grenade:f"							"{funfact-d1, plural, one{{s:funfact-player} a rănit un inamic cu o grenadă.} few{{s:funfact-player} a rănit {d:funfact-d1} inamici cu o grenadă.} other{{s:funfact-player} a rănit {d:funfact-d1} de inamici cu o grenadă.}}"
+		"funfact_kill_defuser:f"										"{s:funfact-player} a împiedicat cu succes jucătorul care dezamorsa bomba."
+		"funfact_kill_rescuer:f"										"{s:funfact-player} a ucis jucătorul care salva un ostatic."
+		"funfact_killed_enemies:f"										"{funfact-d1, plural, one{{s:funfact-player} a ucis un oponent.} few{{s:funfact-player} a ucis {d:funfact-d1} oponenți.} other{{s:funfact-player} a ucis {d:funfact-d1} de oponenți.}}"
+		"funfact_first_kill:f"											"{funfact-d1, plural, one{După o secundă de la începerea rundei, {s:funfact-player} a realizat prima ucidere.} few{După {d:funfact-d1} secunde de la începerea rundei, {s:funfact-player} a realizat prima ucidere.} other{După {d:funfact-d1} de secunde de la începerea rundei, {s:funfact-player} a realizat prima ucidere.}}"
+		"funfact_first_blood:f"											"{funfact-d1, plural, one{{s:funfact-player} a rănit un inamic după o secundă de la începerea rundei.} few{{s:funfact-player} a rănit un inamic după {d:funfact-d1} secunde de la începerea rundei.} other{{s:funfact-player} a rănit un inamic după {d:funfact-d1} de secunde de la începerea rundei.}}"
+		"funfact_short_round:f"											"{funfact-d1, plural, one{Runda aceasta a durat doar o secundă!} few{Runda aceasta a durat doar {d:funfact-d1} secunde!} other{Runda aceasta a durat doar {d:funfact-d1} de secunde!}}"
+		"funfact_best_accuracy:f"										"{funfact-d1, plural, one{{s:funfact-player} a avut o precizie de {d:funfact-d1}%.} few{{s:funfact-player} a avut o precizie de {d:funfact-d1}%.} other{{s:funfact-player} a avut o precizie de {d:funfact-d1}%.}}"
+		"funfact_knife_kills:f"											"{funfact-d1, plural, one{{s:funfact-player} a ucis un inamic folosind cuțitul în această rundă.} few{{s:funfact-player} a ucis {d:funfact-d1} inamici folosind cuțitul în această rundă.} other{{s:funfact-player} a ucis {d:funfact-d1} de inamici folosind cuțitul în această rundă.}}"
+		"funfact_damage_with_grenade:f"									"{funfact-d1, plural, one{{s:funfact-player} a cauzat răni cu grenadele în valoare totală de un punct.} few{{s:funfact-player} a cauzat răni cu grenadele în valoare totală de {d:funfact-d1} puncte.} other{{s:funfact-player} a cauzat răni cu grenadele în valoare totală de {d:funfact-d1} de puncte.}}"
+		"funfact_kills_grenades:f"										"{funfact-d1, plural, one{{s:funfact-player} a ucis un inamic cu grenadele.} few{{s:funfact-player} a ucis {d:funfact-d1} inamici cu grenadele.} other{{s:funfact-player} a ucis {d:funfact-d1} de inamici cu grenadele.}}"
+		"funfact_blind_kills:f"											"{funfact-d1, plural, one{{s:funfact-player} a ucis un inamic în timp ce era orbit.} few{{s:funfact-player} a ucis {d:funfact-d1} inamici în timp ce era orbit.} other{{s:funfact-player} a ucis {d:funfact-d1} de inamici în timp ce era orbit.}}"
+		"funfact_kills_with_last_round:f"								"{funfact-d1, plural, one{{s:funfact-player} a ucis un inamic cu ultimul glonț al încărcătorului.} few{{s:funfact-player} a reușit de {d:funfact-d1} ori să ucidă un inamic cu ultimul glonț al încărcătorului.} other{{s:funfact-player} a reușit de {d:funfact-d1} de ori să ucidă un inamic cu ultimul glonț al încărcătorului.}}"
+		"funfact_kills_headshots:f"										"{funfact-d1, plural, one{{s:funfact-player} a ucis un inamic cu o lovitură în cap în runda aceasta.} few{{s:funfact-player} a ucis {d:funfact-d1} inamici cu lovituri în cap în runda aceasta.} other{{s:funfact-player} a ucis {d:funfact-d1} de inamici cu lovituri în cap în runda aceasta.}}"
+		"funfact_kills_with_stattrak_weapon:f"							"{funfact-d1, plural, one{{s:funfact-player} a adăugat o ucidere la contorul StatTrak™ al propriilor arme în runda aceasta.} few{{s:funfact-player} a adăugat {d:funfact-d1} ucideri la contorul StatTrak™ al propriilor arme în runda aceasta.} other{{s:funfact-player} a adăugat {d:funfact-d1} de ucideri la contorul StatTrak™ al propriilor arme în runda aceasta.}}"
+		"funfact_donated_weapons:f"										"{funfact-d1, plural, one{{s:funfact-player} a donat o armă în runda aceasta.} few{{s:funfact-player} a donat {d:funfact-d1} arme în runda aceasta.} other{{s:funfact-player} a donat {d:funfact-d1} de arme în runda aceasta.}}"
+		"funfact_posthumous_kills_with_grenade:f"						"{funfact-d1, plural, one{{s:funfact-player} a ucis un inamic cu o grenadă după ce a murit.} few{{s:funfact-player} a ucis {d:funfact-d1} inamici cu o grenadă după ce a murit.} other{{s:funfact-player} a ucis {d:funfact-d1} de inamici cu o grenadă după ce a murit.}}"
+		"funfact_num_times_jumped:f"									"{funfact-d1, plural, one{{s:funfact-player} a sărit o dată în timpul rundei.} few{{s:funfact-player} a sărit de {d:funfact-d1} ori în timpul rundei.} other{{s:funfact-player} a sărit de {d:funfact-d1} de ori în timpul rundei.}}"
+		"funfact_fall_damage:f"											"{funfact-d1, plural, one{{s:funfact-player} a suferi răni în valoare de un punct... cauzate de gravitație.} few{{s:funfact-player} a suferit răni în valoare de {d:funfact-d1} puncte... cauzate de gravitație.} other{{s:funfact-player} a suferit răni în valoare de {d:funfact-d1} de puncte... cauzate de gravitație.}}"
+		"funfact_items_purchased:f"										"{funfact-d1, plural, one{{s:funfact-player} a cumpărat un articol.} few{{s:funfact-player} a cumpărat {d:funfact-d1} articole.} other{{s:funfact-player} a cumpărat {d:funfact-d1} de articole.}}"
+		"funfact_won_as_last_member:f"									"{funfact-d1, plural, one{Ca ultim membru al echipei rămas în viață, {s:funfact-player} a ucis un inamic și a câștigat runda.} few{Ca ultim membru al echipei rămas în viață, {s:funfact-player} a ucis {d:funfact-d1} inamici și a câștigat runda.} other{Ca ultim membru al echipei rămas în viață, {s:funfact-player} a ucis {d:funfact-d1} de inamici și a câștigat runda.}}"
+		"funfact_number_of_overkills:f"									"{funfact-d1, plural, one{{s:funfact-player} a ucis un jucător pe care îl domina deja.} few{{s:funfact-player} a ucis {d:funfact-d1} jucători pe care îi domina deja.} other{{s:funfact-player} a ucis {d:funfact-d1} de jucători pe care îi domina deja.}}"
+		"funfact_shots_fired:f"											"{funfact-d1, plural, one{{d:funfact-d1} foc a fost tras în runda aceasta.} few{{d:funfact-d1} focuri au fost trase în runda aceasta.} other{{d:funfact-d1} de focuri au fost trase în runda aceasta.}}"
+		"funfact_money_spent:f"											"{funfact-d1, plural, one{{s:funfact-player} a cheltuit {d:funfact-d1}$ în runda aceasta.} few{{s:funfact-player} a cheltui {d:funfact-d1}$ în runda aceasta.} other{{s:funfact-player} a cheltui {d:funfact-d1}$ în runda aceasta.}}"
+		"funfact_grenades_thrown:f"										"{funfact-d1, plural, one{{s:funfact-player} a aruncat o grenadă în runda aceasta.} few{{s:funfact-player} a aruncat {d:funfact-d1} grenade în runda aceasta.} other{{s:funfact-player} a aruncat {d:funfact-d1} de grenade în runda aceasta.}}"
+		"funfact_used_all_ammo:f"										"{s:funfact-player} a rămas fără muniție."
+		"funfact_survived_multiple_attackers:f"							"{funfact-d1, plural, one{{s:funfact-player} a supraviețuit atacurilor unui inamic.} few{{s:funfact-player} a supraviețuit atacurilor a {d:funfact-d1} inamici diferiți.} other{{s:funfact-player} a supraviețuit atacurilor a {d:funfact-d1} de inamici diferiți.}}"
+		"funfact_died_from_multiple_attackers:f"						"{funfact-d1, plural, one{{s:funfact-player} a fost rănit de un inamic înainte să moară.} few{{s:funfact-player} a fost rănit de {d:funfact-d1} inamici înainte să moară.} other{{s:funfact-player} a fost rănit de {d:funfact-d1} de inamici înainte să moară.}}"
+		"funfact_defended_bomb:f"										"{funfact-d1, plural, one{{s:funfact-player} a apărat bomba armată împotriva unui inamic.} few{{s:funfact-player} a apărat bomba armată împotriva a {d:funfact-d1} inamici.} other{{s:funfact-player} a apărat bomba armată împotriva a {d:funfact-d1} de inamici.}}"
+		"funfact_items_dropped_value:f"									"{funfact-d1, plural, one{{s:funfact-player} a aruncat echipament în valoarea de {d:funfact-d1}$.} few{{s:funfact-player} a aruncat echipament în valoarea de {d:funfact-d1}$.} other{{s:funfact-player} a aruncat echipament în valoarea de {d:funfact-d1}$.}}"
+		"funfact_kill_wounded_enemies:f"								"{funfact-d1, plural, one{{s:funfact-player} a ucis un inamic rănit.} few{{s:funfact-player} a ucis {d:funfact-d1} inamici răniți.} other{{s:funfact-player} a ucis {d:funfact-d1} de inamici răniți.}}"
+		"funfact_damage_multiple_enemies:f"								"{funfact-d1, plural, one{{s:funfact-player} a rănit un inamic.} few{{s:funfact-player} a rănit {d:funfact-d1} inamici.} other{{s:funfact-player} a rănit {d:funfact-d1} de inamici.}}"
+		"funfact_used_multiple_weapons:f"								"{funfact-d1, plural, one{{s:funfact-player} a folosit o armă.} few{{s:funfact-player} a folosit {d:funfact-d1} arme diferite.} other{{s:funfact-player} a folosit {d:funfact-d1} de arme diferite.}}"
+		"funfact_terrorist_accuracy:f"									"{funfact-d1, plural, one{Teroriștii au avut cea mai bună precizie: {d:funfact-d1}%.} few{Teroriștii au avut cea mai bună precizie: {d:funfact-d1}%.} other{Teroriștii au avut cea mai bună precizie: {d:funfact-d1}%.}}"
+		"funfact_ct_accuracy:f"											"{funfact-d1, plural, one{Contrateroriștii au avut cea mai bună precizie: {d:funfact-d1}%.} few{Contrateroriștii au avut cea mai bună precizie: {d:funfact-d1}%.} other{Contrateroriștii au avut cea mai bună precizie: {d:funfact-d1}%.}}"
+		"funfact_ct_win_no_kills:f"										"Contrateroriștii au câștigat fără să ucidă vreun terorist."
+		"funfact_t_win_no_kills:f"										"Teroriștii au câștigat fără să ucidă vreun contraterorist."
+		"funfact_t_win_no_casualties:f"									"Teroriștii au câștigat fără să piardă vreun membru al echipei."
+		"funfact_ct_win_no_casualties:f"								"Contrateroriștii au câștigat fără să piardă vreun membru al echipei."
+		"funfact_best_terrorist_accuracy:f"								"{funfact-d1, plural, one{{s:funfact-player} a avut o precizie de {d:funfact-d1}%, în timp ce media echipei a fost de {d:funfact-d2}%.} few{{s:funfact-player} a avut o precizie de {d:funfact-d1}%, în timp ce media echipei a fost de {d:funfact-d2}%.} other{{s:funfact-player} a avut o precizie de {d:funfact-d1}%, în timp ce media echipei a fost de {d:funfact-d2}%.}}"
+		"funfact_best_counterterrorist_accuracy:f"						"{funfact-d1, plural, one{{s:funfact-player} a avut o precizie de {d:funfact-d1}%, în timp ce media echipei a fost de {d:funfact-d2}%.} few{{s:funfact-player} a avut o precizie de {d:funfact-d1}%, în timp ce media echipei a fost de {d:funfact-d2}%.} other{{s:funfact-player} a avut o precizie de {d:funfact-d1}%, în timp ce media echipei a fost de {d:funfact-d2}%.}}"
+		"funfact_fallback1:f"											"Tortul este o minciună."
+		"funfact_fallback2:f"											"Neinteresant."
+		"funfact_draw:f"												"Meciul a fost repornit pe baza voturilor jucătorilor."
+		"funfact_broke_windows:f"										"{funfact-d1, plural, one{{s:funfact-player} a spart o fereastră.} few{{s:funfact-player} a spart {d:funfact-d1} ferestre.} other{{s:funfact-player} a spart {d:funfact-d1} de ferestre.}}"
+		"funfact_nightvision_damage:f"									"{funfact-d1, plural, one{{s:funfact-player} a cauzat răni în valoare de un punct având activată vederea nocturnă.} few{{s:funfact-player} a cauzat răni în valoare de {d:funfact-d1} puncte având activată vederea nocturnă.} other{{s:funfact-player} a cauzat răni în valoare de {d:funfact-d1} de puncte având activată vederea nocturnă.}}"
+		"funfact_defused_with_dropped_kit:f"							"{s:funfact-player} a dezamorsat bomba folosind o trusă de dezamorsare găsită pe jos."
+		"funfact_killed_half_of_enemies:f"								"{funfact-d1, plural, one{{s:funfact-player} a ucis {d:funfact-d1}% din echipa adversă.} few{{s:funfact-player} a ucis {d:funfact-d1}% din echipa adversă.} other{{s:funfact-player} a ucis {d:funfact-d1}% din echipa adversă.}}"
+		"funfact_knife_level_reached:f"									"{funfact-d1, plural, one{Un jucător a ajuns la nivelul cuțitului de aur.} few{{d:funfact-d1} jucători au ajuns la nivelul cuțitului de aur.} other{{d:funfact-d1} de jucători au ajuns la nivelul cuțitului de aur.}}"
+		"funfact_killed_before_dying:f"									"{funfact-d1, plural, one{{s:funfact-player} a ucis un jucător înainte de a fi omorât.} few{{s:funfact-player} a ucis {d:funfact-d1} jucători înainte de a fi omorât.} other{{s:funfact-player} a ucis {d:funfact-d1} de jucători înainte de a fi omorât.}}"
+		"funfact_respawned:f"											"{funfact-d1, plural, one{{s:funfact-player} a revenit o dată în timpul meciului.} few{{s:funfact-player} a revenit de {d:funfact-d1} ori în timpul meciului.} other{{s:funfact-player} a revenit de {d:funfact-d1} de ori în timpul meciului.}}"
+		"funfact_default_weapon:f"										"{s:funfact-player} a câștigat runda fără să ia vreo armă."
+		"funfact_rounds_without_dying:f"								"{funfact-d1, plural, one{{s:funfact-player} a rezistat o rundă fără să moară.} few{{s:funfact-player} a rezistat {d:funfact-d1} runde consecutive fără să moară.} other{{s:funfact-player} a rezistat {d:funfact-d1} de runde consecutive fără să moară.}}"
+		"funfact_taser_kill:f"											"{funfact-d1, plural, one{{s:funfact-player} a electrocutat un jucător.} few{{s:funfact-player} a electrocutat {d:funfact-d1} jucători.} other{{s:funfact-player} a electrocutat {d:funfact-d1} de jucători.}}"
+		"funfact_ticking_time:f"										"{funfact-d1, plural, one{Teroriștii au câștigat în ciuda faptului că un contraterorist a încercat să dezamorseze bomba.} few{Teroriștii au câștigat în ciuda faptului că {d:funfact-d1} contrateroriști au încercat să dezamorseze bomba.} other{Teroriștii au câștigat în ciuda faptului că {d:funfact-d1} de contrateroriști au încercat să dezamorseze bomba.}}"
+		"funfact_ct_win_time:f"											"{funfact-d1, plural, one{Contrateroriștii au eliminat echipa teroristă într-o secundă.} few{Contrateroriștii au eliminat echipa teroristă în {d:funfact-d1} secunde.} other{Contrateroriștii au eliminat echipa teroristă în {d:funfact-d1} de secunde.}}"
+		"funfact_ter_win_time:f"										"{funfact-d1, plural, one{Teroriștii au eliminat echipa contrateroristă într-o secundă.} few{Teroriștii au eliminat echipa contrateroristă în {d:funfact-d1} secunde.} other{Teroriștii au eliminat echipa contrateroristă în {d:funfact-d1} de secunde.}}"
+		"funfact_bots_assumed:f"										"{funfact-d1, plural, one{{s:funfact-player} a controlat un bot în runda aceasta.} few{{s:funfact-player} a controlat {d:funfact-d1} boți în runda aceasta.} other{{s:funfact-player} a controlat {d:funfact-d1} de boți în runda aceasta.}}"
+		"funfact_domination:f"											"{s:funfact-player} a dominat cei mai mulți jucători."
+		"funfact_revenge:f"												"{funfact-d1, plural, one{{s:funfact-player} s-a răzbunat pe un jucător.} few{{s:funfact-player} s-a răzbunat pe {d:funfact-d1} jucători.} other{{s:funfact-player} s-a răzbunat pe {d:funfact-d1} de jucători.}}"
+		"funfact_steps_taken:f"											"{funfact-d1, plural, one{{s:funfact-player} a alergat un pas în timpul meciului.} few{{s:funfact-player} a alergat {d:funfact-d1} pași în timpul meciului.} other{{s:funfact-player} a alergat {d:funfact-d1} de pași în timpul meciului.}}"
+		"funfact_quarter_health:f"										"{funfact-d1, plural, one{{s:funfact-player} a ucis un jucător, având mai puțin de 25 viață.} few{{s:funfact-player} a ucis {d:funfact-d1} jucători, având mai puțin de 25 viață.} other{{s:funfact-player} a ucis {d:funfact-d1} de jucători, având mai puțin de 25 viață.}}"
+		"funfact_empty_guns:f"											"{funfact-d1, plural, one{{s:funfact-player} a rămas fără muniție pentru o armă.} few{{s:funfact-player} a rămas fără muniție pentru {d:funfact-d1} arme.} other{{s:funfact-player} a rămas fără muniție pentru {d:funfact-d1} de arme.}}"
+		"funfact_slow_trigger:f"										"{funfact-d1, plural, one{{s:funfact-player} a murit fără să tragă vreun foc cu arma pe care a utilizat-o.} few{{s:funfact-player} a murit fără să tragă vreun foc cu cele {d:funfact-d1} arme pe care le-a utilizat.} other{{s:funfact-player} a murit fără să tragă vreun foc cu cele {d:funfact-d1} de arme pe care le-a utilizat.}}"
+		"funfact_pickup_bomb:f"											"{funfact-d1, plural, one{{s:funfact-player} a armat bomba după ce aceasta s-a aflat în posesia unui coechipier.} few{{s:funfact-player} a armat bomba după ce aceasta s-a aflat în posesia a {d:funfact-d1} coechipieri.} other{{s:funfact-player} a armat bomba după ce aceasta s-a aflat în posesia a {d:funfact-d1} de coechipieri.}}"
+		"funfact_bomb_carriers:f"										"{funfact-d1, plural, one{{s:funfact-player} a ucis un inamic care a avut în posesie bomba în runda aceasta.} few{{s:funfact-player} a ucis {d:funfact-d1} jucători diferiți care au avut în posesie bomba în runda aceasta.} other{{s:funfact-player} a ucis {d:funfact-d1} de jucători diferiți care au avut în posesie bomba în runda aceasta.}}"
+		"funfact_knife_bomb_planter:f"									"{s:funfact-player} a câștigat la nivelul cuțitului de aur ucigând jucătorul care armase bomba."
+		"funfact_bomb_planted_before_kill:f"							"Niciun jucător nu a fost ucis înainte de armarea bombei."
+		"funfact_failed_bomb_plants:f"									"{funfact-d1, plural, one{Un terorist a încercat să armeze bomba în runda aceasta.} few{{d:funfact-d1} teroriști au încercat să armeze bomba în runda aceasta.} other{{d:funfact-d1} de teroriști au încercat să armeze bomba în runda aceasta.}}"
+		"funfact_knife_without_ammo:f"									"{funfact-d1, plural, one{{s:funfact-player} a ucis un inamic folosind cuțitul, după ce a rămas fără muniție.} few{{s:funfact-player} a ucis {d:funfact-d1} inamici folosind cuțitul, după ce a rămas fără muniție.} other{{s:funfact-player} a ucis {d:funfact-d1} de inamici folosind cuțitul, după ce a rămas fără muniție.}}"
+		"funfact_molotov_burns:f"										"{funfact-d1, plural, one{{s:funfact-player} a incendiat un jucător.} few{{s:funfact-player} a incendiat {d:funfact-d1} jucători.} other{{s:funfact-player} a incendiat {d:funfact-d1} de jucători.}}"
+		"funfact_survival_time:f"										"{funfact-d1, plural, one{{s:funfact-player} a supraviețuit cel mai mult: o secundă.} few{{s:funfact-player} a supraviețuit cel mai mult: {d:funfact-d1} secunde.} other{{s:funfact-player} a supraviețuit cel mai mult: {d:funfact-d1} de secunde.}}"
+		"funfact_pulled_trigger:f"										"{funfact-d1, plural, one{{s:funfact-player} a apăsat trăgaciul o dată în meciul anterior.} few{{s:funfact-player} a apăsat trăgaciul de {d:funfact-d1} ori în meciul anterior.} other{{s:funfact-player} a apăsat trăgaciul de {d:funfact-d1} de ori în meciul anterior.}}"
+		"funfact_ace:f"													"As! {s:funfact-player} a ucis întreaga echipă inamică."
+		"funfact_defuse_was_close_call_tenths:f"						"{funfact-d1, plural, one{{s:funfact-player} a dezamorsat bomba cu 0,{d:funfact-d1} secundă înainte ca aceasta să explodeze.} few{{s:funfact-player} a dezamorsat bomba cu 0,{d:funfact-d1} secunde înainte ca aceasta să explodeze.} other{{s:funfact-player} a dezamorsat bomba cu 0,{d:funfact-d1} de secunde înainte ca aceasta să explodeze.}}"
+		"funfact_defuse_was_close_call_hundredths:f"					"{funfact-d1, plural, one{{s:funfact-player} a dezamorsat bomba cu 0,0{d:funfact-d1} secundă înainte ca aceasta să explodeze.} few{{s:funfact-player} a dezamorsat bomba cu 0,0{d:funfact-d1} secunde înainte ca aceasta să explodeze.} other{{s:funfact-player} a dezamorsat bomba cu 0,0{d:funfact-d1} de secunde înainte ca aceasta să explodeze.}}"
+		"funfact_defuse_was_close_call_thousandths:f"					"{funfact-d1, plural, one{{s:funfact-player} a dezamorsat bomba cu 0,00{d:funfact-d1} secundă înainte ca aceasta să explodeze.} few{{s:funfact-player} a dezamorsat bomba cu 0,00{d:funfact-d1} secunde înainte ca aceasta să explodeze.} other{{s:funfact-player} a dezamorsat bomba cu 0,00{d:funfact-d1} de secunde înainte ca aceasta să explodeze.}}"
+		"mapwinrecord_graph_title:f"									"{f:0:wins, plural, one{Cea mai recentă victorie} few{Cele mai recente victorii} other{Cele mai recente victorii}}"
+		"CSGO_Recipe_Count_Items_Selected:f"							"{count, plural, one{<b>{d:count}</b> obiect selectat} few{<b>{d:count}</b> obiecte selectate} other{<b>{d:count}</b> de obiecte selectate}}"
+		"CSGO_Recipe_Count_Items_Remaining:f"							"{count, plural, one{<b>{d:count}</b> obiect rămas} few{<b>{d:count}</b> obiecte rămase} other{<b>{d:count}</b> de obiecte rămase}}"
+		"CSGO_Recipe_TradeUp_Items_Remain:f"							"{count, plural, one{{d:count} obiect selectat pentru schimb} few{{d:count} obiecte selectate pentru schimb} other{{d:count} de obiecte selectate pentru schimb}}"
+		"CSGO_Recipe_TradeUp_Items_XofY:f"								"{count, plural, one{{d:count}/{d:recipecount} obiecte selectate pentru schimb} few{{d:count}/{d:recipecount} obiecte selectate pentru schimb} other{{d:count}/{d:recipecount} obiecte selectate pentru schimb}}"
+		"CSGO_Recipe_TradeUp_Items_Inv:f"								"{count, plural, one{{d:count} obiect eligibil pentru schimb} few{{d:count} obiecte eligibile pentru schimb} other{{d:count} de obiecte eligibile pentru schimb}}"
+		"CSGO_RemoveKeychainToolCharges_Reward:f"						"{item_count, plural, one{+{d:item_count} instrument de detașat brelocuri} few{+{d:item_count} instrumente de detașat brelocuri} other{+{d:item_count} de instrumente de detașat brelocuri}}"
+		"SFUI_Store_Offer_Days_Remaining:f"								"{daysremaining, plural, one{O zi rămasă} few{{d:daysremaining} zile rămase} other{{d:daysremaining} de zile rămase}}"
+		"SFUI_Store_Offer_Days_Remaining_claim:f"						"{daysremaining, plural, one{O zi rămasă} few{{d:daysremaining} zile rămase} other{{d:daysremaining} de zile rămase}}"
+		"SFUI_Store_Offer_Days_Remaining_bid:f"							"{daysremaining, plural, one{O zi rămasă de a licita pentru această ofertă} few{{d:daysremaining} zile rămase de a licita pentru această ofertă} other{{d:daysremaining} de zile rămase de a licita pentru această ofertă}}"
+		"SFUI_Store_Offer_Days_Remaining_last_claim:f"					"Ultima șansă de a profita de această ofertă"
+		"SFUI_Store_Offer_Days_Remaining_last_bid:f"					"Ultima șansă de a licita pentru această ofertă"
+		"SFUI_Store_Timer_Week:f"										"{f:0:value, plural, one{{f:0:value} săptămână} few{{f:0:value} săptămâni} other{{f:0:value} de săptămâni}}"
+		"SFUI_Store_Timer_Day:f"										"{f:0:value, plural, one{{f:0:value} zi} few{{f:0:value} zile} other{{f:0:value} de zile}}"
+		"SFUI_Store_Timer_Hour:f"										"{f:0:value, plural, one{{f:0:value} oră} few{{f:0:value} ore} other{{f:0:value} de ore}}"
+		"SFUI_Store_Timer_Min:f"										"{f:0:value, plural, one{{f:0:value} minut} few{{f:0:value} minute} other{{f:0:value} de minute}}"
+		"SFUI_Store_Timer_Sec:f"										"{f:0:value, plural, one{{f:0:value} secundă} few{{f:0:value} secunde} other{{f:0:value} de secunde}}"
+		"CSGO_Watch_Minute:f"											"{f:0:value, plural, one{{f:0:value} minut} few{{f:0:value} minute} other{{f:0:value} de minute}}"
+		"xpshop_new_items:f"											"{new-count, plural, one{Obiect nou!} few{Obiecte noi!} other{Obiecte noi!}}"
+		"xpshop_popup_clear_n_tracks:f"									"{completed_tracks_count, plural, one{Șterge {d:completed_tracks_count} bilet finalizat} few{Șterge {d:completed_tracks_count} bilete finalizate} other{Șterge {d:completed_tracks_count} de bilete finalizate}}"
+		"xpshop_popup_clear_n_tracks_text:f"							"{completed_tracks_count, plural, one{Ai obținut toate creditele de armurărie pentru acest bilet.<br><br>Dacă ștergi acest bilet de armurărie, vei putea activa unul nou. Această acțiune nu-ți va afecta soldul actual de credite de armurărie.} few{Ai obținut toate creditele de armurărie pentru {d:completed_tracks_count} bilete de armurărie.<br><br>Dacă ștergi aceste {d:completed_tracks_count} bilete de armurărie, vei putea activa unele noi. Această acțiune nu-ți va afecta soldul actual de credite de armurărie.} other{Ai obținut toate creditele de armurărie pentru {d:completed_tracks_count} de bilete de armurărie.<br><br>Dacă ștergi aceste {d:completed_tracks_count} de bilete de armurărie, vei putea activa unele noi. Această acțiune nu-ți va afecta soldul actual de credite de armurărie.}}"
+		"xpshop_redeem_bid_batchover:f"									"{hours_until_bid_batch, plural, one{Licitația pentru acest lot s-a încheiat. Ofertanții câștigători vor fi anunțați după finalizarea tranzacției. Te rugăm să revii mâine pentru a licita pentru următorul lot. Licitația se va redeschide într-o oră.} few{Licitația pentru acest lot s-a încheiat. Ofertanții câștigători vor fi anunțați după finalizarea tranzacției. Te rugăm să revii mâine pentru a licita pentru următorul lot. Licitația se va redeschide în {d:hours_until_bid_batch} ore.} other{Licitația pentru acest lot s-a încheiat. Ofertanții câștigători vor fi anunțați după finalizarea tranzacției. Te rugăm să revii mâine pentru a licita pentru următorul lot. Licitația se va redeschide în {d:hours_until_bid_batch} de ore.}}"
+		"xpshop_redeem_not_enough_stars:f"								"{stars_needed, plural, one{Ai nevoie de încă un credit de armurărie. Joacă meciuri cu un bilet de armurărie activ pentru a obține credite.} few{Ai nevoie de încă {d:stars_needed} credite de armurărie. Joacă meciuri cu un bilet de armurărie activ pentru a obține credite.} other{Ai nevoie de încă {d:stars_needed} de credite de armurărie. Joacă meciuri cu un bilet de armurărie activ pentru a obține credite.}}"
+		"Panorama_PlayerDetails_Commendations_Left:f"					"{num_token, plural, one{Azi mai poți lăuda încă un jucător.} few{Azi mai poți lăuda încă {d:num_token} jucători.} other{Azi mai poți lăuda încă {d:num_token} de jucători.}}"
+		"SFUI_BuyMenu_CanOnlyCarryXGrenades:f"							"{n1, plural, one{Poți avea doar o grenadă} few{Poți avea doar {s:s1} grenade} other{Poți avea doar {s:s1} de grenade}}"
+		"SFUI_BuyMenu_MaxItemsOfType:f"									"{n1, plural, one{Poți avea doar o grenadă de acest tip} few{Poți avea doar {s:s1} grenade de acest tip} other{Poți avea doar {s:s1} de grenade de acest tip}}"
+		"SFUI_BuyMenu_MaxItemsOfTypePurchased:f"						"{n1, plural, one{Poți achiziționa doar o grenadă de acest tip} few{Poți achiziționa doar {s:s1} grenade de acest tip} other{Poți achiziționa doar {s:s1} de grenade de acest tip}}"
+		"SFUI_BuyMenu_ReachedWeaponsExpertLimit:f"						"{n1, plural, one{Ai achiziționat deja {s:s1} în acest meci} few{Ai achiziționat deja {s:s1} în acest meci} other{Ai achiziționat deja {s:s1} în acest meci}}"
+		"cs_rating_wins_needed:f"										"{winsneeded, plural, one{Câștigă încă <b>un</b> meci.} few{Câștigă încă <b>{d:winsneeded}</b> meciuri.} other{Câștigă încă <b>{d:winsneeded}</b> de meciuri.}}"
+		"cs_rating_wins_needed_verbose:f"								"{winsneeded, plural, one{Câștigă încă <b>un</b> meci pentru a determina clasificarea ta CS.} few{Câștigă încă <b>{d:winsneeded}</b> meciuri pentru a determina clasificarea ta CS.} other{Câștigă încă <b>{d:winsneeded}</b> de meciuri pentru a determina clasificarea ta CS.}}"
+		"cs_rating_wins_needed_verbose_intro:f"							"{winsneeded, plural, one{Câștigă <b>un</b> meci pentru a determina clasificarea ta CS.} few{Câștigă <b>{d:winsneeded}</b> meciuri pentru a determina clasificarea ta CS.} other{Câștigă <b>{d:winsneeded}</b> de meciuri pentru a determina clasificarea ta CS.}}"
+		"cs_rating_need_wins:f"											"{wins-needed, plural, one{{d:wins-needed} victorie necesară} few{{d:wins-needed} victorii necesare} other{{d:wins-needed} de victorii necesare}}"
+		"wins_count:f"													"{wins, plural, one{{d:wins} victorie} few{{d:wins} victorii} other{{d:wins} de victorii}}"
+		"contextmenu_lobby-count:f"										"{lobby_count, plural, one{{d:lobby_count} lobby } few{{d:lobby_count} lobbyuri} other{{d:lobby_count} de lobbyuri}}"
+		"popup_useitem_button_getkeychaincharges:f"						"{item_count, plural, one{Adaugă <b>un</b> instrument de detașat brelocuri} few{Adaugă <b>{d:item_count}</b> instrumente de detașat brelocuri} other{Adaugă <b>{d:item_count}</b> de instrumente de detașat brelocuri}}"
+		"popup_decodable_rent_weapon_count:f"							"{numlootlist, plural, one{Închiriază o armă timp de 7 zile} few{Închiriază {d:numlootlist} arme timp de 7 zile} other{Închiriază {d:numlootlist} de arme timp de 7 zile}}"
+		"popup_redeem_souvenir_desc:f"									"{redeems, plural, one{<span class=\"get-souvenir-redeem-count\">{d:redeems}</span> suvenir rămas pentru a fi revendicat} few{<span class=\"get-souvenir-redeem-count\">{d:redeems}</span> suvenire rămase pentru a fi revendicate} other{<span class=\"get-souvenir-redeem-count\">{d:redeems}</span> de suvenire rămase pentru a fi revendicate}}"
+		"matchmaking_stat_avgSearchTimeSeconds:f"						"Timpul de căutare estimat: {s:stat}"
+		"matchmaking_stat_playersOnline:f"								"Jucători online: {d:stat}"
+		"matchmaking_stat_playersLockedIn:f"							"{stat, plural, one{{d:stat} jucător din {d:total_stat} a confirmat} few{{d:stat} jucători din {d:total_stat} au confirmat} other{{d:stat} de jucători din {d:total_stat} au confirmat}}"
+		"matchmaking_stat_playersSearching:f"							"Jucători care caută meciuri: {d:stat}"
+		"matchmaking_stat_serversOnline:f"								"Servere online: {d:stat}"
+		"matchmaking_stat_ongoingMatches:f"								"Meciuri în desfășurare: {d:stat}"
+		"tooltip_skill_group_none:f"									"{winsneeded, plural, one{Câștigă <b>un</b> meci pentru a determina grupa ta valorică pentru modul competitiv.} few{Câștigă <b>{d:winsneeded}</b> meciuri pentru a determina grupa ta valorică pentru modul competitiv.} other{Câștigă <b>{d:winsneeded}</b> de meciuri pentru a determina grupa ta valorică pentru modul competitiv.}}"
+		"tooltip_cs_rating_none:f"										"{winsneeded, plural, one{Câștigă încă <b>un</b> meci pentru a determina clasificarea ta CS.} few{Câștigă încă <b>{d:winsneeded}</b> meciuri pentru a determina clasificarea ta CS.} other{Câștigă încă <b>{d:winsneeded}</b> de meciuri pentru a determina clasificarea ta CS.}}"
+		"tooltip_skill_group_nonewingman:f"								"{winsneeded, plural, one{Câștigă <b>un</b> meci pentru a determina grupa ta valorică pentru modul Wingman.} few{Câștigă <b>{d:winsneeded}</b> meciuri pentru a determina grupa ta valorică pentru modul Wingman.} other{Câștigă <b>{d:winsneeded}</b> de meciuri pentru a determina grupa ta valorică pentru modul Wingman.}}"
+		"tooltip_skill_group_nonedangerzone:f"							"Grupa ta valorică pentru Danger Zone trebuie calibrată. Finalizează câteva meciuri Danger Zone pentru ca grupa ta valorică să fie determinată."
+		"tooltip_skill_group_wins:f"									"{wins, plural, one{<img src='file://{images}/icons/ui/trophy.svg'  vspace='6' class='player-card-tooltip-icon'/> {d:wins} victorie} few{<img src='file://{images}/icons/ui/trophy.svg'  vspace='6' class='player-card-tooltip-icon'/> {d:wins} victorii} other{<img src='file://{images}/icons/ui/trophy.svg'  vspace='6' class='player-card-tooltip-icon'/> {d:wins} de victorii}}"
+		"team-intro-overtime-1st-half:f"								"{overtime_num, plural, one{Prelungire: prima repriză} few{A {d:overtime_num}-a prelungire: prima repriză} other{A {d:overtime_num}-a prelungire: prima repriză}}"
+		"team-intro-overtime-2nd-half:f"								"{overtime_num, plural, one{Prelungire: a doua repriză} few{A {d:overtime_num}-a prelungire: a doua repriză} other{A {d:overtime_num}-a prelungire: a doua repriză}}"
+		"scoreboard_timeline_ot:f"										"{scoreboard_ot, plural, one{Prelungire} few{A {d:scoreboard_ot}-a prelungire} other{A {d:scoreboard_ot}-a prelungire}}"
+		"eom-skillgroup-win:f"											"{matcheswon, plural, one{victorie ({s:rating_type})} few{victorii ({s:rating_type})} other{de victorii ({s:rating_type})}}"
+		"eom-skillgroup-map-win:f"										"{matcheswon, plural, one{meci câștigat în {s:rating_type} pe {s:map}} few{meciuri câștigate în {s:rating_type} pe {s:map}} other{de meciuri câștigate în {s:rating_type} pe {s:map}}}"
+		"eom-skillgroup-needed-wins:f"									"{winsneeded, plural, one{Câștigă un meci pentru a-ți afișa grupa valorică.} few{Câștigă {d:winsneeded} meciuri pentru a-ți afișa grupa valorică.} other{Câștigă {d:winsneeded} de meciuri pentru a-ți afișa grupa valorică.}}"
+		"WatchMenu_Viewers_dv:f"										"{spectatorCount, plural, one{{d:spectatorCount} spectator} few{{d:spectatorCount} spectatori} other{{d:spectatorCount} de spectatori}}"
+		"Panorama_DeathPanel_DamageTaken:f"								"{hits_taken, plural, one{<font color='#A0A0A0'>Răni suferite:  </font><font color='#FFFFFF'><b>{d:damage_taken}</b></font> <font color='#A0A0A0'></font> <font color='#FFFFFF'><b>într-o lovitură </b></font>} few{<font color='#A0A0A0'>Răni suferite:  </font><font color='#FFFFFF'><b>{d:damage_taken}</b></font> <font color='#A0A0A0'> în</font> <font color='#FFFFFF'><b>{d:hits_taken} lovituri </b></font>} other{<font color='#A0A0A0'>Răni suferite:  </font><font color='#FFFFFF'><b>{d:damage_taken}</b></font> <font color='#A0A0A0'> în</font> <font color='#FFFFFF'><b>{d:hits_taken} de lovituri </b></font>}}"
+		"Panorama_DeathPanel_DamageGiven:f"								"{hits_given, plural, one{<font color='#A0A0A0'>Răni provocate:  </font><font color='#FFFFFF'><b>{d:damage_given}</b></font> <font color='#A0A0A0'></font> <font color='#FFFFFF'><b>într-o lovitură </b></font>} few{<font color='#A0A0A0'>Răni provocate:  </font><font color='#FFFFFF'><b>{d:damage_given}</b></font> <font color='#A0A0A0'> în</font> <font color='#FFFFFF'><b>{d:hits_given} lovituri </b></font>} other{<font color='#A0A0A0'>Răni provocate:  </font><font color='#FFFFFF'><b>{d:damage_given}</b></font> <font color='#A0A0A0'> în</font> <font color='#FFFFFF'><b>{d:hits_given} de lovituri </b></font>}}"
+		"mission_directive:f"											"{mission-points, plural, one{<b>{d:mission-points}</b> {s:action}} few{<b>{d:mission-points}</b> {s:actions}} other{<b>{d:mission-points}</b> {s:actions}}}"
+		"mission_directive_progress:f"									"{mission-points, plural, one{{d:mission-progress}/<b>{d:mission-points}</b> {s:action}} few{{d:mission-progress}/<b>{d:mission-points}</b> {s:actions}} other{{d:mission-progress}/<b>{d:mission-points}</b> {s:actions}}}"
+		"quest_11000_var_desc:f"										"{mission-points, plural, one{Realizează o ucidere cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.} few{Realizează ucideri cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.} other{Realizează ucideri cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11000_var_partial:f"										"...cu {s:item1}."
+		"quest_11000_var_ingame:f"										"{mission-points, plural, one{Realizează o ucidere cu {s:item1}} few{Realizează ucideri cu {s:item1}} other{Realizează ucideri cu {s:item1}}}"
+		"quest_11001_var_desc:f"										"{mission-points, plural, one{Realizează o ucidere cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.} few{Realizează ucideri cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.} other{Realizează ucideri cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11001_var_partial:f"										"...cu {s:item1}."
+		"quest_11001_var_ingame:f"										"{mission-points, plural, one{Realizează o ucidere cu {s:item1}} few{Realizează ucideri cu {s:item1}} other{Realizează ucideri cu {s:item1}}}"
+		"quest_11002_var_desc:f"										"{mission-points, plural, one{Realizează o ucidere cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.} few{Realizează ucideri cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.} other{Realizează ucideri cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11002_var_partial:f"										"...cu {s:item1}."
+		"quest_11002_var_ingame:f"										"{mission-points, plural, one{Realizează o ucidere cu {s:item1}} few{Realizează ucideri cu {s:item1}} other{Realizează ucideri cu {s:item1}}}"
+		"quest_11003_var_desc:f"										"{mission-points, plural, one{Realizează o ucidere cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.} few{Realizează ucideri cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.} other{Realizează ucideri cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11003_var_partial:f"										"...cu {s:item1}."
+		"quest_11003_var_ingame:f"										"{mission-points, plural, one{Realizează o ucidere cu {s:item1}} few{Realizează ucideri cu {s:item1}} other{Realizează ucideri cu {s:item1}}}"
+		"quest_11004_var_desc:f"										"{mission-points, plural, one{Câștigă o rundă în <b>{s:gamemode}: {s:location}</b>.} few{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.} other{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11004_var_partial:f"										""
+		"quest_11004_var_ingame:f"										"{mission-points, plural, one{Câștigă o rundă} few{Câștigă runde} other{Câștigă runde}}"
+		"quest_11005_var_desc:f"										"{mission-points, plural, one{Câștigă o rundă în <b>{s:gamemode}: {s:location}</b>.} few{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.} other{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11005_var_partial:f"										""
+		"quest_11005_var_ingame:f"										"{mission-points, plural, one{Câștigă o rundă} few{Câștigă runde} other{Câștigă runde}}"
+		"quest_11006_var_desc:f"										"{mission-points, plural, one{Câștigă o rundă în <b>{s:gamemode}: {s:location}</b>.} few{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.} other{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11006_var_partial:f"										""
+		"quest_11006_var_ingame:f"										"{mission-points, plural, one{Câștigă o rundă} few{Câștigă runde} other{Câștigă runde}}"
+		"quest_11007_var_desc:f"										"{mission-points, plural, one{Realizează o ucidere cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.} few{Realizează ucideri cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.} other{Realizează ucideri cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11007_var_partial:f"										"...cu {s:item1}."
+		"quest_11007_var_ingame:f"										"{mission-points, plural, one{Realizează o ucidere cu {s:item1}} few{Realizează ucideri cu {s:item1}} other{Realizează ucideri cu {s:item1}}}"
+		"quest_11008_var_desc:f"										"{mission-points, plural, one{Câștigă o rundă în <b>{s:gamemode}: {s:location}</b>.} few{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.} other{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11008_var_partial:f"										""
+		"quest_11008_var_ingame:f"										"{mission-points, plural, one{Câștigă o rundă} few{Câștigă runde} other{Câștigă runde}}"
+		"quest_11009_var_desc:f"										"{mission-points, plural, one{Câștigă o rundă în <b>{s:gamemode}: {s:location}</b>.} few{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.} other{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11009_var_partial:f"										""
+		"quest_11009_var_ingame:f"										"{mission-points, plural, one{Câștigă o rundă} few{Câștigă runde} other{Câștigă runde}}"
+		"quest_11010_var_desc:f"										"{mission-points, plural, one{Realizează o ucidere cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.} few{Realizează ucideri cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.} other{Realizează ucideri cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11010_var_partial:f"										"...cu {s:item1}."
+		"quest_11010_var_ingame:f"										"{mission-points, plural, one{Realizează o ucidere cu {s:item1}} few{Realizează ucideri cu {s:item1}} other{Realizează ucideri cu {s:item1}}}"
+		"quest_11011_var_desc:f"										"{mission-points, plural, one{Câștigă o rundă în <b>{s:gamemode}: {s:location}</b>.} few{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.} other{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11011_var_partial:f"										""
+		"quest_11011_var_ingame:f"										"{mission-points, plural, one{Câștigă o rundă} few{Câștigă runde} other{Câștigă runde}}"
+		"quest_11012_var_desc:f"										"{mission-points, plural, one{Câștigă o rundă în <b>{s:gamemode}: {s:location}</b>.} few{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.} other{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11012_var_partial:f"										""
+		"quest_11012_var_ingame:f"										"{mission-points, plural, one{Câștigă o rundă} few{Câștigă runde} other{Câștigă runde}}"
+		"quest_11013_var_desc:f"										"{mission-points, plural, one{Câștigă o rundă în <b>{s:gamemode}: {s:location}</b>.} few{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.} other{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11013_var_partial:f"										""
+		"quest_11013_var_ingame:f"										"{mission-points, plural, one{Câștigă o rundă} few{Câștigă runde} other{Câștigă runde}}"
+		"quest_11014_var_desc:f"										"{mission-points, plural, one{Câștigă o rundă în <b>{s:gamemode}: {s:location}</b>.} few{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.} other{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11014_var_partial:f"										""
+		"quest_11014_var_ingame:f"										"{mission-points, plural, one{Câștigă o rundă} few{Câștigă runde} other{Câștigă runde}}"
+		"quest_11015_var_desc:f"										"{mission-points, plural, one{Câștigă o rundă în <b>{s:gamemode}: {s:location}</b>.} few{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.} other{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11015_var_partial:f"										""
+		"quest_11015_var_ingame:f"										"{mission-points, plural, one{Câștigă o rundă} few{Câștigă runde} other{Câștigă runde}}"
 }
 
 
