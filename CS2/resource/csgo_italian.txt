@@ -2484,7 +2484,6 @@
 		"ItemHistory_Action_TournamentDrop"								"Souvenir ottenuto"
 		"ItemHistory_Action_TemplateItemGrant"							"Acquisito"
 		"ItemHistory_Action_Market_Add"									"Ricevuto dal Mercato della Comunità"
-
 		"ItemHistory_Transaction_Delete"								"Eliminato"
 		"ItemHistory_Transaction_Craft"									"Creato"
 		"ItemHistory_Transaction_UnlockCrate"							"Cassa aperta"
@@ -45277,6 +45276,7 @@ Vuoi attivare il tuo pass ora?"
 		"popup_delete_title"	"{s:itemname}"
 		"popup_delete_desc"		"Vuoi davvero eliminare questo oggetto?"
 		"popup_delete_warning"	"L'eliminazione di un oggetto è irreversibile."
+		"popup_delete_tooltip"	"Tieni premuto per eliminare questo oggetto. L'eliminazione di un oggetto non può essere annullata."
 		"popup_delete_button"	"Elimina oggetto"
 
 		"popup_usegift_title"	"Dona {s:itemname}"
@@ -48060,7 +48060,7 @@ Vuoi attivare il tuo pass ora?"
 		"laptop_app_version"						"v 1.1.0.2000"
 
 		"dealer_offer_attachment_title"							"{s:item-name}"
-		"dealer_offer_attachment_wear"						"{s:item-rarity}"
+		"dealer_offer_attachment_wear"							"{s:item-rarity}"
 		"dealer_offer_attachment_remaining_title"				"OFFERTA #{d:offer-total}"
 		"dealer_offer_attachment_remaining"						"Offerta #{d:offer-total}"
 		"dealer_offer_received_count"							"<b>{s:offer-count}</b> articolo proposto"
@@ -48075,8 +48075,6 @@ Vuoi attivare il tuo pass ora?"
 		"user_btn_purchase_desc_purchase"		"Tieni premuto per acquistare questo articolo. Dopo l'acquisto, il terminale viene eliminato."
 		"user_btn_purchase_desc_continue"		"Tieni premuto per rifiutare definitivamente questa offerta e vedere quella successiva."
 		"user_btn_purchase_desc_end"		"Rifiuta l'offerta finale e scarta questo terminale."
-		"user_btn_purchase_title"			"<b>{s:offer-count} offerta</b> - Risposte suggerite"
-		"user_btn_purchase_final_title"		"<b>Offerta finale</b> - Risposte suggerite"
 		"user_btn_decline_desc"				"Rifiuta questa offerta e visualizzane un'altra"
 		"user_btn_accept"		"Accetta l'offerta <b>{s:price}</b>"
 		"user_btn_accept_final"	"Accetta l'offerta finale <b>{s:price}</b>"
@@ -48131,7 +48129,6 @@ Vuoi attivare il tuo pass ora?"
 		"laptop_pan_tooltip" 			"Tieni premuto \"Maiusc\" e trascina per muovere la telecamera"
 		"laptop_pricing_tooltip"		"I prezzi sono validi a livello globale e si adattano automaticamente in base alla domanda di ciascun oggetto di questa collezione."
 
-
 		"dealer_message_start_0"  	"Questa è roba da veri mercenari.<!--.25-->È nuova di zecca con tutti gli optional. E senza scartoffie."
 		"dealer_message_start_1"  	"Sto smerciando materiale dal mercato grigio, senza scartoffie.<!--.25-->Non preoccuparti: è roba fuori dai radar di chiunque.<!--.25-->Sono armi fuori dalla circolazione da anni, nessuno le sta cercando. E, per la cronaca, sparano ancora proiettili."
 		"dealer_message_start_2"  	"La dogana di Ahradan ha sequestrato la mia merce stamattina. Ho cercato di smussare la situazione raccontando una storia strappalacrime sulla mancanza di attrezzature mediche e sui poveri malati che stanno morendo...<!--.25-->Non ha funzionato. Ma la valigetta piena di soldi sì.<!--.25-->Che ne dite di dare un'occhiata a queste \"macchine per la dialisi\" prima di mandarle agli orfanelli?"
@@ -48139,7 +48136,6 @@ Vuoi attivare il tuo pass ora?"
 		"dealer_message_start_4"  	"È roba pulita quella di oggi.<!--.25-->Per quanto ne sappiamo, le tue mani sono le prime a toccarla."
 		"dealer_message_start_5"  	"Armi sterili, senza numero di serie, perfettamente funzionanti.<!--.25-->In un tribunale militare potrebbero essere considerate prove.<!--.25-->Tu ed io sappiamo che sono dei capolavori."
 		"dealer_message_start_6"  	"Questa viene da un lotto di armi esotiche provenienti da un'unità da parata.<!--.25-->Ha percorso un sacco di chilometri, ma non ha mai sparato un colpo."
-		"dealer_message_start_7"  	"Ottimo, sei tu.<!--.25-->Gli altri clienti vogliono sempre sapere come ho acquistato la merce. Non mi piace.<!--.25-->Tu vuoi solo sapere se sono le migliori armi sul mercato.<!--.25-->Pensa un po': lo sono davvero."
 		"dealer_message_start_8"  	"Accordo di pace a Drosvik. Amo la pace.<!--.25-->Perché ho un generale con molti debiti e un'armeria ben rifornita che sta raccogliendo la polvere.<!--.25--> Voglio dire...<!--.25-->Anche perché la pace è un bene, ovviamente. Vite innocenti e...<!--.25-->Ma che sto dicendo, non ti interessa."
 		"dealer_message_start_9"  	"Questo carico contiene oggetti esotici provenienti da una deviazione del canale grigio.<!--.25-->Calibri inusuali, non per dilettanti. Li adorerai."
 		"dealer_message_start_10"  	"È imbarazzante.<!--.25-->Devo aver accidentalmente etichettato erroneamente una cassa nella mia spedizione.<!--.25-->Qualche decina di casse.<!--.25-->Che ne dici di aiutarmi a far sparire questo inventario prima che l'autorità portuale lo esamini?"
@@ -48162,7 +48158,6 @@ Vuoi attivare il tuo pass ora?"
 		"dealer_message_start_27"	"Detesto lavorare con i ribelli. È solo un modo educato per dire \"civili\", che è un modo gentile per dire \"maledetti dilettanti\".<!--.25-->Comunque, sono spariti, quindi sto dando la possibilità a qualche vero professionista di provare quest'arma."
 		"dealer_message_start_28"	"Il parlamento di uno di questi Paesi più a sud, dove fa sempre caldo, ha appena avuto il suo consueto crollo semestrale.<!--.25-->Un sacco di arsenali locali sono stati aperti come pignatte."
 		"dealer_message_start_29"	"Venerdì scorso un ispettore dell'autorità portuale ha classificato questo lotto come \"irregolare\".<!--.25-->Lunedì sua figlia ha ricevuto abbastanza soldi per andare all'università e il lotto è stato nuovamente classificato come \"attrezzatura agricola\".<!--.25-->Che dire, l'istruzione è importante. Cambiando argomento, come ti sembrano queste attrezzature agricole?!"
-
 
 		"dealer_message_resume_0"  	"<!--1-->Sei di ritorno. Bene. L'offerta è ancora sul tavolo."
 		"dealer_message_resume_1"  	"<!--1-->Hai bisogno di un minuto per pensarci? Fai pure."
@@ -48226,7 +48221,6 @@ Vuoi attivare il tuo pass ora?"
 		"dealer_message_next_offer_39"   "<!--1-->Nessun problema. Nemmeno io avrei effettuato l'acquisto. Questa, invece..."
 		"dealer_message_next_offer_40"   "<!--1-->Mi fai andare fino in fondo per la roba premium, eh? Va bene, ecco qua."
 
-
 		"dealer_message_last_offer_0"	"<!--0-->Bene, ultimissima offerta. Prendere o lasciare."
 		"dealer_message_last_offer_1"	"<!--0-->Considera questa come la mia ultima offerta."
 		"dealer_message_last_offer_2"	"<!--0-->Ultima offerta. Prendere o lasciare, così la smettiamo di farmi perdere tempo."
@@ -48253,7 +48247,7 @@ Vuoi attivare il tuo pass ora?"
 		"dealer_message_timerexpired_7"		"<!--.1-->E io che pensavo di aiutarti ad ammazzare qualcuno.<!--.5-->Invece alla fine qui stai solo ammazzando il mio tempo."
 		"dealer_message_timerexpired_8"		"<!--.1-->L'affare è saltato."	
 		"dealer_message_timerexpired_9"		"<!--.1-->Tempo scaduto."
-		"dealer_message_timerexpired_10"		"<!--.1-->Basta, mi hai davvero stufato. Abbiamo chiuso."		
+		"dealer_message_timerexpired_10"	"<!--.1-->Basta, mi hai davvero stufato. Abbiamo chiuso."		
 
 		"dealer_message_open_check_out_0"		"<!--.5-->Questa faceva al caso tuo, quindi ho pensato subito a te. Concludiamo l'affare."
 		"dealer_message_open_check_out_1"		"<!--.5-->Scelta eccellente. Mi assicurerò che sia pronta e imballata."
@@ -48262,8 +48256,8 @@ Vuoi attivare il tuo pass ora?"
 		"dealer_message_open_check_out_4"		"<!--.5-->Perfetto. Procediamo."		
 		"dealer_message_open_check_out_5"		"<!--.5-->Ottima scelta."	
 		"dealer_message_open_check_out_6"		"<!--.5-->La decisione migliore che potessi prendere. Chiudiamo l'affare."		
-		"dealer_message_open_check_out_7"		"<!--.5-->Bene. Rendiamolo ufficiale."	
-		
+		"dealer_message_open_check_out_7"		"<!--.5-->Bene. Rendiamolo ufficiale."
+
 		"dealer_message_txn_xld_bailout_0"		"<!--.5-->Nessuna fretta. Sai dove trovarmi."
 		"dealer_message_txn_xld_bailout_1"		"<!--.5-->Non vado da nessuna parte."
 		"dealer_message_txn_xld_bailout_2"		"<!--.5-->Questa proposta rimane aperta per ora."
@@ -48331,11 +48325,10 @@ Vuoi attivare il tuo pass ora?"
 		"dealer_message_addition_factory_new_1"	"<!--.25-->È nuova di fabbrica. Immacolata."
 		"dealer_message_addition_factory_new_2"	"<!--.25-->Direttamente dal deposito. Neanche un graffio."
 		"dealer_message_addition_factory_new_3"	"<!--.25-->Nuova di fabbrica. Non ha mai sparato."
-
+		
 		"system_dealer_left_chat_0"				"Il trafficante ha lasciato la chat."
 		"system_dealer_join_chat_0"				"Offerte del trafficante d'armi per: {s:collection}<!--1.25-->Trafficante online"
 		"system_user_reject_offer_0"			"{s:user-name} ha rifiutato l'offerta."
-		
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
@@ -48569,6 +48562,19 @@ Vuoi attivare il tuo pass ora?"
 		"quest_11014_var_ingame:p{mission-points}"		"Vinci un round#|#Vinci dei round"
 		
 		"quest_11015_var_desc:p{mission-points}"	 	"Vinci un round in <b>{s:gamemode}: {s:location}</b>.#|#Vinci dei round in <b>{s:gamemode}: {s:location}</b>."
+		"quest_11015_var_ingame:p{mission-points}"		"Vinci un round#|#Vinci dei round"
+
+// crow_mask_51633_comment
+// crow_mask_51634_comment
+}
+
+
+
+
+}
+
+
+ar_desc:p{mission-points}"	 	"Vinci un round in <b>{s:gamemode}: {s:location}</b>.#|#Vinci dei round in <b>{s:gamemode}: {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Vinci un round#|#Vinci dei round"
 
 // crow_mask_51588_comment

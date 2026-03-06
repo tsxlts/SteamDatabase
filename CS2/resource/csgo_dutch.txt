@@ -2484,7 +2484,6 @@
 		"ItemHistory_Action_TournamentDrop"								"Souvenir ontvangen"
 		"ItemHistory_Action_TemplateItemGrant"							"Verdiend"
 		"ItemHistory_Action_Market_Add"									"Van de Community-markt ontvangen"
-
 		"ItemHistory_Transaction_Delete"								"Verwijderd"
 		"ItemHistory_Transaction_Craft"									"Ontworpen"
 		"ItemHistory_Transaction_UnlockCrate"							"Container ontgrendeld"
@@ -46067,6 +46066,7 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"popup_delete_title"	"{s:itemname}"
 		"popup_delete_desc"		"Weet je zeker dat je dit voorwerp wilt verwijderen?"
 		"popup_delete_warning"	"Het verwijderen van een voorwerp kan niet worden teruggedraaid."
+		"popup_delete_tooltip"	"Blijf indrukken om dit voorwerp te verwijderen. Verwijderde voorwerpen kun je niet meer terugkrijgen."
 		"popup_delete_button"	"Voorwerp verwijderen"
 
 		"popup_usegift_title"	"{s:itemname} geven"
@@ -48873,7 +48873,7 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"laptop_app_version"						"v 1.1.0.2000"
 
 		"dealer_offer_attachment_title"							"{s:item-name}"
-		"dealer_offer_attachment_wear"						"{s:item-rarity}"
+		"dealer_offer_attachment_wear"							"{s:item-rarity}"
 		"dealer_offer_attachment_remaining_title"				"AANBOD {d:offer-total}"
 		"dealer_offer_attachment_remaining"						"Aanbod {d:offer-total}"
 		"dealer_offer_received_count"							"<b>{s:offer-count}</b> aanbod"
@@ -48888,8 +48888,6 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"user_btn_purchase_desc_purchase"		"Hou ingedrukt om dit voorwerp te kopen. Daarna verdwijnt de terminal."
 		"user_btn_purchase_desc_continue"		"Hou ingedrukt om dit aanbod definitief af te wijzen en het volgende product te bekijken."
 		"user_btn_purchase_desc_end"		"Wijs het laatste aanbod af en verwijder deze terminal."
-		"user_btn_purchase_title"			"<b>{s:offer-count} aanbod</b> - Mogelijke antwoorden"
-		"user_btn_purchase_final_title"		"<b>Laatste aanbod</b> - Mogelijke antwoorden"
 		"user_btn_decline_desc"				"Wijs dit aanbod af en bekijk het volgende product"
 		"user_btn_accept"		"Aanbod voor <b>{s:price}</b> accepteren"
 		"user_btn_accept_final"	"Laatste aanbod voor <b>{s:price}</b> accepteren"
@@ -48944,7 +48942,6 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"laptop_pan_tooltip" 			"Hou Shift ingedrukt en maak een slepende beweging om de camera te pannen"
 		"laptop_pricing_tooltip"		"De prijzen gelden globaal en zijn automatisch aangepast aan de vraag naar elk voorwerp in deze collectie."
 
-
 		"dealer_message_start_0"  	"Dit spul komt rechtstreeks van de leverancier.<!--.25-->Alle toeters en bellen, zonder de documentatie."
 		"dealer_message_start_1"  	"Ik heb grijze goederen in de aanbieding, zonder documenten.<!--.25-->Maak je geen zorgen, alles is al jaren uit de roulatie, dus niemand zoekt ernaar.<!--.25-->En mocht je twijfelen: ze schieten perfect waar je richt."
 		"dealer_message_start_2"  	"De douane in Ahradan heeft mijn vracht vanochtend in beslag genomen. Ik heb er nog een tranendal over medische apparatuur en stervende kindertjes op losgelaten.<!--.25-->Maar dat had geen zin. Wat wel zin had, was een koffer vol geld.<!--.25-->Zin om deze dialysemachines even te bekijken voor ze naar de arme weesjes gaan?"
@@ -48952,7 +48949,6 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"dealer_message_start_4"  	"Alles wat ik vandaag in de aanbieding heb, is zuivere koffie.<!--.25-->Jij bent bij wijze van spreken de eerste persoon die ze in handen krijgt."
 		"dealer_message_start_5"  	"Steriele wapens, geen serienummers, perfecte werken.<!--.25-->Een oorlogstribunaal zou ze classificeren als bewijsstukken.<!--.25-->Jij en ik snappen dat het onvervalste meesterwerken zijn."
 		"dealer_message_start_6"  	"Deze complete vracht bestaat uit exotische waar die onlangs is bevrijd uit handen van een parade-eenheid.<!--.25-->Veel mee gemarcheerd. Nooit mee geschoten."
-		"dealer_message_start_7"  	"Ah, jij bent het. Mooi.<!--.25-->M'n andere cliënten willen altijd weten hoe ik aan de wapens kom die ik verkoop. Zo irritant.<!--.25-->Het enige dat jij wilt weten, is of ze de beste wapens op de markt zijn.<!--.25-->Nou, je raadt het al: ja dus."
 		"dealer_message_start_8"  	"Een vredesverdrag in Drosvik. Ik hou van vrede.<!--.25-->Want ik heb een generaal met schuld en een compleet arsenaal dat stof aan het verzamelen is.<!--.25-->Ik bedoel...<!--.25-->Ook omdat vrede goed is, natuurlijk. Onschuldige levens en...<!--.25-->Ach, hoor mij nou. Alsof jou dat wat kan bommen."
 		"dealer_message_start_9"  	"Deze vracht bestaat uit exotische wapens uit de grijze markt.<!--.25-->Ongebruikelijke kalibers. Niet voor amateurs. Echt wat voor jou."
 		"dealer_message_start_10"  	"Wat gênant.<!--.25-->Ik geloof dat ik per ongeluk een kist verkeerd heb genoteerd op het scheepsmanifest.<!--.25-->Nou ja, een stuk of twintig kisten.<!--.25-->Help jij me deze voorraad te laten verdwijnen voor het havenbedrijf er lucht van krijgt?"
@@ -48975,7 +48971,6 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"dealer_message_start_27"	"Niks vervelenders dan samenwerken met opstandelingen. Da's gewoon een eufemisme voor 'burgers', en burgers zijn niks anders dan amateurs.<!--.25--><Maar goed, ik hoor niks meer van ze, dus kan ik deze wapens gerust aan een echte professional laten zien."
 		"dealer_message_start_28"	"In de eeuwige brandhaard in het zuiden is het kabinet weer gevallen, zoals het dat elke twee jaar doet.<!--.25-->En dat betekent dat de plaatselijke wapenopslagen de deuren wagenwijd openzetten."
 		"dealer_message_start_29"	"Vrijdag zei de inspecteur van het havenbedrijf dat deze vracht verdacht was.<!--.25-->Maandag had zijn dochter genoeg collegegeld voor Stamwick en blijkt dat de vracht weer uit landbouwgereedschap bestaat.<!--.25-->Tja, onderwijs is nu eenmaal belangrijk. Ga maar gauw kijken bij de hooivorken en zo."
-
 
 		"dealer_message_resume_0"  	"<!--1-->Daar ben je weer, mooi. De deal ligt nog op tafel."
 		"dealer_message_resume_1"  	"<!--1-->Had je even wat bedenktijd nodig? Geen probleem."
@@ -49039,7 +49034,6 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"dealer_message_next_offer_39"   "<!--1-->Voel je niet schuldig. Ik had 'm ook niet gekocht. Maar dat geldt niet voor dit ding..."
 		"dealer_message_next_offer_40"   "<!--1-->Moet ik achter in het magazijn de topproducten gaan halen, ja? Komt voor de bakker."
 
-
 		"dealer_message_last_offer_0"	"<!--0-->Dit is mijn allerlaatste aanbod. Graag of niet."
 		"dealer_message_last_offer_1"	"<!--0-->Dit is mijn laatste aanbod."
 		"dealer_message_last_offer_2"	"<!--0-->Laatste aanbod. Graag of niet. Ik heb genoeg tijd verloren."
@@ -49066,7 +49060,7 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"dealer_message_timerexpired_7"		"<!--.1-->En ik wilde je nog wel helpen mensen om te leggen.<!--.5-->Dit was pure tijdsverspilling."
 		"dealer_message_timerexpired_8"		"<!--.1-->De deal gaat niet door."	
 		"dealer_message_timerexpired_9"		"<!--.1-->De tijd is om."
-		"dealer_message_timerexpired_10"		"<!--.1-->Oké, ik verveel me officieel dood. Tot in de pruimentijd."		
+		"dealer_message_timerexpired_10"	"<!--.1-->Oké, ik verveel me officieel dood. Tot in de pruimentijd."		
 
 		"dealer_message_open_check_out_0"		"<!--.5-->Dit is echt iets voor jou. Daarom wilde ik hem eerst aan jou laten zien. Kom, we geven er een klap op."
 		"dealer_message_open_check_out_1"		"<!--.5-->Een zeer wijze keuze. Ik laat hem voor je inpakken."
@@ -49075,8 +49069,8 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"dealer_message_open_check_out_4"		"<!--.5-->Perfect. Laten we het bezegelen."		
 		"dealer_message_open_check_out_5"		"<!--.5-->Goede keuze."	
 		"dealer_message_open_check_out_6"		"<!--.5-->De slimste zet van je leven. Laten we het afronden."		
-		"dealer_message_open_check_out_7"		"<!--.5-->Mooi. Laten we de koop afronden."	
-		
+		"dealer_message_open_check_out_7"		"<!--.5-->Mooi. Laten we de koop afronden."
+
 		"dealer_message_txn_xld_bailout_0"		"<!--.5-->Alles op z'n tijd. Je weet me te vinden."
 		"dealer_message_txn_xld_bailout_1"		"<!--.5-->Ik blijf hier op je wachten."
 		"dealer_message_txn_xld_bailout_2"		"<!--.5-->Ik hou deze voorlopig apart voor je."
@@ -49144,11 +49138,10 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"dealer_message_addition_factory_new_1"	"<!--.25-->En het komt regelrecht uit de fabriek. In perfecte staat."
 		"dealer_message_addition_factory_new_2"	"<!--.25-->Komt zo uit de kluis. Hagelnieuw."
 		"dealer_message_addition_factory_new_3"	"<!--.25-->Deze komt net uit de fabriek. Geen schot mee gelost."
-
+		
 		"system_dealer_left_chat_0"				"De handelaar heeft de chat verlaten."
 		"system_dealer_join_chat_0"				"Aanbod van de wapenhandelaar uit de {s:collection}.<!--1.25-->Verbinding met handelaar"
 		"system_user_reject_offer_0"			"{s:user-name} Aanbod afgewezen."
-		
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
@@ -49380,6 +49373,21 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		
 		"quest_11014_var_desc:p{mission-points}"	 	"Win een ronde in <b>{s:gamemode}: {s:location}</b>.#|#Win ronden in <b>{s:gamemode}: {s:location}</b>."
 		"quest_11014_var_ingame:p{mission-points}"		"Win een ronde#|#Win ronden"
+		
+		"quest_11015_var_desc:p{mission-points}"	 	"Win een ronde in <b>{s:gamemode}: {s:location}</b>.#|#Win ronden in <b>{s:gamemode}: {s:location}</b>."
+		"quest_11015_var_ingame:p{mission-points}"		"Win een ronde#|#Win ronden"
+
+// crow_mask_51633_comment
+// crow_mask_51634_comment
+}
+
+
+
+
+}
+
+
+ een ronde#|#Win ronden"
 		
 		"quest_11015_var_desc:p{mission-points}"	 	"Win een ronde in <b>{s:gamemode}: {s:location}</b>.#|#Win ronden in <b>{s:gamemode}: {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Win een ronde#|#Win ronden"

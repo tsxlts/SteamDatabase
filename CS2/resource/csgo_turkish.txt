@@ -2487,7 +2487,6 @@ VIP'ye bu bölgelerden birine ulaşana kadar koruma sağla."
 		"ItemHistory_Action_TournamentDrop"								"Bir hatıra düşmesi kazanıldı"
 		"ItemHistory_Action_TemplateItemGrant"							"Kazanıldı"
 		"ItemHistory_Action_Market_Add"									"Steam Topluluk Pazarından alındı"
-
 		"ItemHistory_Transaction_Delete"								"Sildiğiniz öğe"
 		"ItemHistory_Transaction_Craft"									"Oluşturuldu"
 		"ItemHistory_Transaction_UnlockCrate"							"Bir kasa açıldı"
@@ -48075,7 +48074,7 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"laptop_app_version"						"v 1.1.0.2000"
 
 		"dealer_offer_attachment_title"							"{s:item-name}"
-		"dealer_offer_attachment_wear"						"{s:item-rarity}"
+		"dealer_offer_attachment_wear"							"{s:item-rarity}"
 		"dealer_offer_attachment_remaining_title"				"TEKLİF NO.: {d:offer-total}"
 		"dealer_offer_attachment_remaining"						"Teklif no.: {d:offer-total}"
 		"dealer_offer_received_count"							"<b>{s:offer-count}</b> Teklif"
@@ -48090,8 +48089,6 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"user_btn_purchase_desc_purchase"		"Bu eşyayı satın almak için basılı tut. Satın alma işleminden sonra terminal silinir."
 		"user_btn_purchase_desc_continue"		"Bu teklifi kalıcı olarak reddetmek ve bir sonraki teklifi görmek için basılı tut."
 		"user_btn_purchase_desc_end"		"Son teklifi reddet ve bu terminali sil."
-		"user_btn_purchase_title"			"<b>{s:offer-count} Teklif</b> - Önerilen Cevaplar"
-		"user_btn_purchase_final_title"		"<b>Son Teklif</b> - Önerilen Cevaplar"
 		"user_btn_decline_desc"				"Bu teklifi reddet ve başka bir teklife bak."
 		"user_btn_accept"		"<b>{s:price}</b> Teklifini Kabul Et"
 		"user_btn_accept_final"	"<b>{s:price}</b> Son Teklifini Kabul Et"
@@ -48146,7 +48143,6 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"laptop_pan_tooltip" 			"Kamerayı kaydırmak için Shift tuşunu basılı tut ve fareyi sürükle."
 		"laptop_pricing_tooltip"		"Fiyatlar küreseldir ve bu koleksiyondaki her bir eşyaya yönelik talebe göre otomatik olarak belirlenir."
 
-
 		"dealer_message_start_0"  	"Bunlar tamamen profesyonel ekipmanlar.<!--.25-->Tam teşkilat. Üstelik evrak işi yok."
 		"dealer_message_start_1"  	"Karaborsa ürünlerini satıyorum. Evraksız.<!--.25-->Merak etme. İzlerini süremezler. Bu silahlar yıllardır satılmıyor.<!--.25-->Ama nişan aldığında ateş ediyorlar. Denemek istersen."
 		"dealer_message_start_2"  	"Ürünlerim Ahradan'daki gümrükte takıldı. Ölmek üzere olan zavallı insanlar için tıbbi ekipmanlar falan diye duygu sömürüsü yapmaya çalıştım.<!--.25-->İşe yaramadı. Ama nakit dolu bir çanta yaradı.<!--.25-->Yetimhanelere teslim etmeden önce şu diyalizörlere bir bakalım mı?"
@@ -48154,7 +48150,6 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"dealer_message_start_4"  	"Bugünkü mallarım tertemiz.<!--.25-->Senden önce bunlara kimse dokunmamıştır bile."
 		"dealer_message_start_5"  	"Temiz mallar, seri numaraları yok. Sağlamlar.<!--.25-->Muhtemelen bir askerî mahkemede delil olarak kullanılırlardı.<!--.25-->İkimiz de bunların şaheser olduğunu görebiliyoruz."
 		"dealer_message_start_6"  	"Tüm sevkiyat, yakın zamandaki bir askeri geçit töreninden kalan egzotik silahlarla dolu.<!--.25-->Sadece yürüyüşte taşınmışlar, ateş bile edilmemişler."
-		"dealer_message_start_7"  	"Sen miydin? İyi bari<!--.25-->Diğer müşterilerim sürekli ürünlerimi nereden aldığımı sorup duruyor. Hiç sevmiyorum.<!--.25-->Senin tek derdin piyasadaki en iyi malları almak.<!--.25-->Benimkiler harbiden de öyle."
 		"dealer_message_start_8"  	"Drosvik'te barış anlaşması yapıldı. Barışı seviyorum.<!--.25-->Tıka basa silahla dolu toz toplayan bir depoya sahip borca batmış bir general tanıyorum da.<!--.25-->Yani...<!--.25-->Tabii ki barış çok güzel bir şey. Masum hayatlar ve...<!--.25-->Ne diyorum ben ya? Umurunda değil ki."
 		"dealer_message_start_9"  	"Bu postada karaborsadan aldığım egzotik mallar var.<!--.25-->Alışılmadık kalibreler, amatör işi değil. Bayılacaksın."
 		"dealer_message_start_10"  	"Hay aksi.<!--.25-->Gümrük beyannamemde bir sandığı yanlış etiketlemişim.<!--.25-->Yani birkaç düzine sandığı.<!--.25-->Liman yetkilileri haberdar olmadan önce bu mallardan kurtulmama yardım eder misin?"
@@ -48177,7 +48172,6 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"dealer_message_start_27"	"İhtilalcilerle çalışmaktan nefret ediyorum. Kibarca siviller yani. Tabiri caizse amatörler.<!--.25-->Neyse. İletişimi kestiler. Bu malları gerçek profesyonellere bırakayım diyorum."
 		"dealer_message_start_28"	"Güneyde senelerdir yaşanan gergin durum yine hükümetin düşmesiyle sonuçlandı.<!--.25-->Birçok yerel silah deposu balon gibi patlatıldı."
 		"dealer_message_start_29"	"Liman denetmeni geçen cuma bu sevkiyatın usulsüz olduğunu söyledi.<!--.25-->Pazartesi günü, kızını Stamwick'te okutacak kadar para aldı. Sevkiyat da yine \"tarım araçları\" olarak etiketlendi.<!--.25-->Ee, eğitim önemli. Gel şu tarım araçlarına bakalım."
-
 
 		"dealer_message_resume_0"  	"<!--1-->Geri geldin demek. Güzel. Teklif hâlâ geçerli."
 		"dealer_message_resume_1"  	"<!--1-->Düşünmek için zamana mı ihtiyacın vardı? Sorun değil."
@@ -48241,7 +48235,6 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"dealer_message_next_offer_39"   "<!--1-->Sorun değil. Onu ben de almazdım. Ancak bu..."
 		"dealer_message_next_offer_40"   "<!--1-->Beni en arkaya, kaliteli ürünlerin olduğu rafa gitmeye zorluyorsun, öyle mi? Tamam o zaman."
 
-
 		"dealer_message_last_offer_0"	"<!--0-->Pekala, son teklif. İster al ister alma."
 		"dealer_message_last_offer_1"	"<!--0-->Bunu son teklifim olarak düşün."
 		"dealer_message_last_offer_2"	"<!--0-->Son teklif. İster al ister alma. Vaktimi boşa harcamayalım."
@@ -48268,7 +48261,7 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"dealer_message_timerexpired_7"		"<!--.1-->Sana düşmanlarını harcaman için yardım ettiğimi sanıyordum.<!--.5-->Meğer sen vaktimi boşa harcıyormuşsun."
 		"dealer_message_timerexpired_8"		"<!--.1-->Anlaşamadık."	
 		"dealer_message_timerexpired_9"		"<!--.1-->Süre doldu."
-		"dealer_message_timerexpired_10"		"<!--.1-->Artık gerçekten sıkıldım. Buraya kadar."		
+		"dealer_message_timerexpired_10"	"<!--.1-->Artık gerçekten sıkıldım. Buraya kadar."		
 
 		"dealer_message_open_check_out_0"		"<!--.5-->Bu tam sana göreydi. Bu yüzden ilk aklıma sen geldin. Hadi satışı tamamlayalım."
 		"dealer_message_open_check_out_1"		"<!--.5-->Harika bir karar. Paketleyip hazırlıyorum."
@@ -48277,8 +48270,8 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"dealer_message_open_check_out_4"		"<!--.5-->Harika. Hadi bitirelim bu işi."		
 		"dealer_message_open_check_out_5"		"<!--.5-->Güzel seçim."	
 		"dealer_message_open_check_out_6"		"<!--.5-->Hayatında verdiğin en akıllıca karar. Hadi işlemi tamamlayalım."		
-		"dealer_message_open_check_out_7"		"<!--.5-->Güzel. Hadi bu işi bitirelim."	
-		
+		"dealer_message_open_check_out_7"		"<!--.5-->Güzel. Hadi bu işi bitirelim."
+
 		"dealer_message_txn_xld_bailout_0"		"<!--.5-->Acele etme. Bana nasıl ulaşacağını biliyorsun."
 		"dealer_message_txn_xld_bailout_1"		"<!--.5-->Buralarda olacağım."
 		"dealer_message_txn_xld_bailout_2"		"<!--.5-->Teklifi şimdilik masada bırakıyorum."
@@ -48346,11 +48339,10 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"dealer_message_addition_factory_new_1"	"<!--.25-->Fabrikadan yeni çıktı. Yepyeni."
 		"dealer_message_addition_factory_new_2"	"<!--.25-->Depodan yeni çıktı. Hiç kullanılmadı."
 		"dealer_message_addition_factory_new_3"	"<!--.25-->Yepyeni. Hiç ateş edilmedi."
-
+		
 		"system_dealer_left_chat_0"				"Satıcı sohbetten çıktı."
 		"system_dealer_join_chat_0"				"{s:collection} Silah Taciri Teklifleri.<!--1.25-->Satıcı Bağlandı"
 		"system_user_reject_offer_0"			"{s:user-name} teklifi reddetti."
-		
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
@@ -48582,6 +48574,21 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		
 		"quest_11014_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> oynarken bir raunt kazan.#|#<b>{s:gamemode}: {s:location}</b> oynarken birden fazla raunt kazan."
 		"quest_11014_var_ingame:p{mission-points}"		"Bir raunt kazan.#|#Birden fazla raunt kazan."
+		
+		"quest_11015_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> oynarken bir raunt kazan.#|#<b>{s:gamemode}: {s:location}</b> oynarken birden fazla raunt kazan."
+		"quest_11015_var_ingame:p{mission-points}"		"Bir raunt kazan.#|#Birden fazla raunt kazan."
+
+// crow_mask_51633_comment
+// crow_mask_51634_comment
+}
+
+
+
+
+}
+
+
+_var_ingame:p{mission-points}"		"Bir raunt kazan.#|#Birden fazla raunt kazan."
 		
 		"quest_11015_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> oynarken bir raunt kazan.#|#<b>{s:gamemode}: {s:location}</b> oynarken birden fazla raunt kazan."
 		"quest_11015_var_ingame:p{mission-points}"		"Bir raunt kazan.#|#Birden fazla raunt kazan."

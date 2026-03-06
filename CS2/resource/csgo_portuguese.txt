@@ -2425,6 +2425,7 @@
 		"NewItemMethod_CommunityMarketPurchase"	"Recebeste do Mercado da Comunidade:"
 
 		"ItemHistory_ActionWithTime"									"%s1 a %s2"
+		"ItemHistory_Action_GSCreate"									"Criado"
 		"ItemHistory_Action_GenericAdd"									"Adicionado"
 		"ItemHistory_Action_GenericRemove"								"Removido ou modificado"
 		"ItemHistory_Action_Traded"										"Trocado"
@@ -2488,6 +2489,8 @@
 		"ItemHistory_Action_TournamentDrop"								"Brinde encontrado"
 		"ItemHistory_Action_TemplateItemGrant"							"Adquirido"
 		"ItemHistory_Action_Market_Add"									"Recebido do Mercado da Comunidade Steam"
+		"ItemHistory_Action_Market_Unsealed"							"Anúncio removido do Mercado da Comunidade"
+		"ItemHistory_Action_Market_SoldSealed"							"Vendido no Mercado da Comunidade Steam"
 
 		"ItemHistory_Transaction_Delete"								"Eliminaste"
 		"ItemHistory_Transaction_Craft"									"Fabricado"
@@ -45398,6 +45401,7 @@
 		"popup_delete_title"	"{s:itemname}"
 		"popup_delete_desc"		"Tens a certeza de que queres eliminar este item?"
 		"popup_delete_warning"	"A eliminação de um item é permanente."
+		"popup_delete_tooltip"	"Mantém premido para eliminar este item. A eliminação de um item é permanente."
 		"popup_delete_button"	"Eliminar item"
 
 		"popup_usegift_title"	"Oferecer {s:itemname}"
@@ -48203,7 +48207,7 @@
 		"laptop_app_version"						"v 1.1.0.2000"
 
 		"dealer_offer_attachment_title"							"{s:item-name}"
-		"dealer_offer_attachment_wear"						"{s:item-rarity}"
+		"dealer_offer_attachment_wear"							"{s:item-rarity}"
 		"dealer_offer_attachment_remaining_title"				"PROPOSTA N.º {d:offer-total}"
 		"dealer_offer_attachment_remaining"						"Proposta n.º {d:offer-total}"
 		"dealer_offer_received_count"							"<b>{s:offer-count}</b> proposta"
@@ -48218,8 +48222,7 @@
 		"user_btn_purchase_desc_purchase"		"Mantém premido para comprares este item. Após a compra, o Terminal é eliminado."
 		"user_btn_purchase_desc_continue"		"Mantém premido para recusares permanentemente esta proposta e veres a seguinte."
 		"user_btn_purchase_desc_end"		"Recusa a proposta final e elimina este Terminal."
-		"user_btn_purchase_title"			"<b>{s:offer-count} proposta</b> - Respostas sugeridas"
-		"user_btn_purchase_final_title"		"<b>Proposta final</b> - Respostas sugeridas"
+		"user_btn_purchase_title"			"{s:offer-count} - Proposta"
 		"user_btn_decline_desc"				"Recusa esta proposta e vê a seguinte"
 		"user_btn_accept"		"Aceitar proposta - <b>{s:price}</b>"
 		"user_btn_accept_final"	"Aceitar proposta final - <b>{s:price}</b>"
@@ -48274,7 +48277,6 @@
 		"laptop_pan_tooltip" 			"Mantém a tecla Shift premida e arrasta para moveres a câmara"
 		"laptop_pricing_tooltip"		"Os preços são globais e ajustados automaticamente com base na procura de cada item desta coleção."
 
-
 		"dealer_message_start_0"  	"Isto é equipamento de mercenário.<!--.25-->Topo de gama e sem burocracias."
 		"dealer_message_start_1"  	"Estou a despachar material de mercado cinzento, sem papelada.<!--.25-->Não te preocupes: isto é equipamento esquecido pelo sistema. Há anos que anda fora de circulação, ninguém anda à procura disto.<!--.25-->E para que conste, ainda dispara balas."
 		"dealer_message_start_2"  	"A alfândega em Ahradan apreendeu a minha mercadoria esta manhã. Tentei amenizar a coisa com uma choradeira sobre equipamento médico e uns coitadinhos a morrer.<!--.25-->Não funcionou. Mas a mala cheia de dinheiro sim.<!--.25-->Que tal passarmos a estas \"máquinas de diálise\" antes de as mandar para os \"órfãos\"?"
@@ -48282,7 +48284,6 @@
 		"dealer_message_start_4"  	"Não há nada mais limpo do que as armas que tenho aqui hoje.<!--.25-->Tanto quanto se sabe, as tuas mãos são as primeiras a tocar nisto."
 		"dealer_message_start_5"  	"Armas estéreis, sem número de série, ação perfeita.<!--.25-->Num tribunal de guerra, poderiam ser consideradas provas.<!--.25-->Tu e eu sabemos que são mas é umas obras-primas."
 		"dealer_message_start_6"  	"Esta aqui veio de um lote de armas exóticas vindo de uma unidade de desfile.<!--.25-->Marchou muito. Nunca disparou uma bala."
-		"dealer_message_start_7"  	"Ainda bem que és tu.<!--.25-->Os meus outros clientes querem sempre saber como adquiri a minha mercadoria. Não gosto disso.<!--.25-->Tu só queres saber se são as melhores armas no mercado.<!--.25-->Isso é certinho: são mesmo."
 		"dealer_message_start_8"  	"Houve um tratado de paz em Drosvik. Adoro paz.<!--.25-->Porque conheço um general com muitas dívidas e um armazém cheio de armas a apanhar pó.<!--.25-->Quero dizer...<!--.25-->E porque paz é bom, obviamente. Vidas inocentes e isso...<!--.25-->Ah, o que é que estou para aqui a dizer, tu queres lá saber disso."
 		"dealer_message_start_9"  	"Neste lote tenho armas exóticas que desviei do mercado cinzento.<!--.25-->De calibre invulgar, não é para amadores. Vais adorar isto."
 		"dealer_message_start_10"  	"Oh diacho.<!--.25-->Devo ter preenchido a papelada com a descrição errada num caixote.<!--.25-->Ou numa dúzia deles.<!--.25-->Devias ajudar-me a fazer este inventário desaparecer antes que as autoridades portuárias comecem a investigar."
@@ -48305,7 +48306,6 @@
 		"dealer_message_start_27"	"Odeio trabalhar com rebeldes. É só uma maneira bem-educada de dizer \"civis\", que por sua vez é uma maneira simpática de dizer \"malditos amadores\".<!--.25-->Enfim, nunca mais ouvi falar deles, então vou dar a alguns profissionais a sério a oportunidade de experimentar esta arma."
 		"dealer_message_start_28"	"O parlamento de um desses países mais a sul onde está sempre calor acabou de ter o seu habitual colapso semestral.<!--.25-->Um monte de arsenais locais foram abertos como pinhatas."
 		"dealer_message_start_29"	"Um inspetor portuário classificou este lote como \"irregular\" na sexta-feira passada.<!--.25-->Na segunda-feira, a filha dele recebeu dinheiro suficiente para ir para a universidade e o lote voltou a ser classificado como \"equipamento agrícola\".<!--.25-->Lá está, a educação é importante. Mudando de assunto, o que achas deste equipamento agrícola?"
-
 
 		"dealer_message_resume_0"  	"<!--1-->Voltaste! Boa. A proposta ainda está de pé."
 		"dealer_message_resume_1"  	"<!--1-->Precisaste de uma pausa para pensar? Não há problema."
@@ -48369,7 +48369,6 @@
 		"dealer_message_next_offer_39"   "<!--1-->Sem problemas. Eu também não compraria aquela. Mas esta aqui... é outra história."
 		"dealer_message_next_offer_40"   "<!--1-->Estás-me a obrigar a ir buscar as coisas da prateleira boa lá atrás, hein? Tudo bem, aqui tens."
 
-
 		"dealer_message_last_offer_0"	"<!--0-->E pronto, última proposta. É pegar ou largar."
 		"dealer_message_last_offer_1"	"<!--0-->Esta é a minha última proposta."
 		"dealer_message_last_offer_2"	"<!--0-->Última proposta. Pegar ou largar, vamos lá parar de desperdiçar o meu tempo."
@@ -48396,7 +48395,7 @@
 		"dealer_message_timerexpired_7"		"<!--.1-->E eu a pensar que te ia ajudar a dar cabo de uns quantos.<!--.5-->Afinal só deste cabo do meu tempo."
 		"dealer_message_timerexpired_8"		"<!--.1-->Então não temos acordo."	
 		"dealer_message_timerexpired_9"		"<!--.1-->Acabou o tempo."
-		"dealer_message_timerexpired_10"		"<!--.1-->E pronto, aborreceste-me de vez. Estamos falados."		
+		"dealer_message_timerexpired_10"	"<!--.1-->E pronto, aborreceste-me de vez. Estamos falados."		
 
 		"dealer_message_open_check_out_0"		"<!--.5-->Esta aqui tinha mesmo a tua cara, por isso que pensei logo em ti. Vamos fechar negócio."
 		"dealer_message_open_check_out_1"		"<!--.5-->Excelente decisão. Vou-me certificar de que está arrumadinha e pronta."
@@ -48405,8 +48404,8 @@
 		"dealer_message_open_check_out_4"		"<!--.5-->Ótimo. Vamos a isto."		
 		"dealer_message_open_check_out_5"		"<!--.5-->Boa escolha."	
 		"dealer_message_open_check_out_6"		"<!--.5-->A melhor decisão da tua vida. Vamos lá fechar negócio."		
-		"dealer_message_open_check_out_7"		"<!--.5-->Ótimo. Vamos fechar negócio."	
-		
+		"dealer_message_open_check_out_7"		"<!--.5-->Ótimo. Vamos fechar negócio."
+
 		"dealer_message_txn_xld_bailout_0"		"<!--.5-->Sem pressas. Sabes como me contactar."
 		"dealer_message_txn_xld_bailout_1"		"<!--.5-->Não vou a lado nenhum."
 		"dealer_message_txn_xld_bailout_2"		"<!--.5-->Esta proposta fica em aberto por agora."
@@ -48474,11 +48473,10 @@
 		"dealer_message_addition_factory_new_1"	"<!--.25-->E é original de fábrica. Impecável."
 		"dealer_message_addition_factory_new_2"	"<!--.25-->Vinda diretamente da fábrica."
 		"dealer_message_addition_factory_new_3"	"<!--.25-->Esta aqui é original de fábrica. Nunca disparou uma única bala."
-
+		
 		"system_dealer_left_chat_0"				"O traficante saiu do chat."
 		"system_dealer_join_chat_0"				"Propostas do traficante de armas para: {s:collection}<!--1.25-->Traficante online"
 		"system_user_reject_offer_0"			"{s:user-name} recusou a proposta."
-		
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
@@ -48714,8 +48712,17 @@
 		"quest_11015_var_desc:p{mission-points}"	 	"Vence uma ronda no modo <b>{s:gamemode} ({s:location})</b>.#|#Vence rondas no modo <b>{s:gamemode} ({s:location})</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Vence uma ronda#|#Vence rondas"
 
-// crow_mask_51588_comment
-// crow_mask_51589_comment
+// crow_mask_51633_comment
+// crow_mask_51634_comment
+}
+
+
+
+
+}
+
+
+ crow_mask_51589_comment
 }
 
 

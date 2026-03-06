@@ -2478,7 +2478,6 @@
 		"ItemHistory_Action_TournamentDrop"								"Optjente en souvenirgenstand"
 		"ItemHistory_Action_TemplateItemGrant"							"Optjent"
 		"ItemHistory_Action_Market_Add"									"Modtaget fra fællesskabsmarkedet"
-
 		"ItemHistory_Transaction_Delete"								"Du slettede"
 		"ItemHistory_Transaction_Craft"									"Smedet"
 		"ItemHistory_Transaction_UnlockCrate"							"Åbnede en beholder"
@@ -49427,7 +49426,7 @@ bare glem alt om Proseccoen."
 		"laptop_app_version"						"v 1.1.0.2000"
 
 		"dealer_offer_attachment_title"							"{s:item-name}"
-		"dealer_offer_attachment_wear"						"{s:item-rarity}"
+		"dealer_offer_attachment_wear"							"{s:item-rarity}"
 		"dealer_offer_attachment_remaining_title"				"TILBUD #{d:offer-total}"
 		"dealer_offer_attachment_remaining"						"Tilbud #{d:offer-total}"
 		"dealer_offer_received_count"							"<b>{s:offer-count}</b> tilbud"
@@ -49442,8 +49441,6 @@ bare glem alt om Proseccoen."
 		"user_btn_purchase_desc_purchase"		"Hold for at købe denne genstand. Efter køb bliver terminalen kasseret."
 		"user_btn_purchase_desc_continue"		"Hold for at afvise dette tilbud permanent og se det næste."
 		"user_btn_purchase_desc_end"		"Afvis det sidste tilbud, og kassér denne terminal."
-		"user_btn_purchase_title"			"<b>{s:offer-count} Tilbud</b> – foreslåede svar"
-		"user_btn_purchase_final_title"		"<b>Sidste tilbud</b> – foreslåede svar"
 		"user_btn_decline_desc"				"Afvis dette tilbud og se et nyt"
 		"user_btn_accept"		"Accepter tilbud <b>{s:price}</b>"
 		"user_btn_accept_final"	"Accepter sidste tilbud <b>{s:price}</b>"
@@ -49498,7 +49495,6 @@ bare glem alt om Proseccoen."
 		"laptop_pan_tooltip" 			"Hold Shift-tasten nede og træk for at panorere med kameraet"
 		"laptop_pricing_tooltip"		"Priserne er globale og justeres automatisk baseret på efterspørgslen på hver genstand i samlingen."
 
-
 		"dealer_message_start_0"  	"Det kommer direkte fra leverandøren.<!--.25-->Alt, man kunne ønske sig. Uden al papirarbejdet."
 		"dealer_message_start_1"  	"Jeg arbejder i det grå område, ingen dokumentation.<!--.25-->Bare rolig, de er kolde. De har ikke været i omløb i årevis, ingen leder efter dem.<!--.25-->Og de skyder stadig, når man peger med dem, hvis du er nysgerrig."
 		"dealer_message_start_2"  	"Tolderne i Ahradan tilbageholdt mine varer i morges. Jeg prøvede at få dem udleveret med en meget rørende historie om medicinsk udstyr og en stakkels døende... en eller anden.<!--.25-->Det virkede ikke. Men attachémappen fuld af penge gjorde.<!--.25-->Hvad med om vi ser på de her dialysemaskiner, før jeg giver dem til nogle forældreløse børn?"
@@ -49506,7 +49502,6 @@ bare glem alt om Proseccoen."
 		"dealer_message_start_4"  	"De ting, jeg har i dag, er alle sammen rene.<!--.25-->Så vidt vides, er du den første, som har dem i hænderne."
 		"dealer_message_start_5"  	"Sterile stykker, ingen serienumre, god stand.<!--.25-->En krigsdomstol ville kalde dem beviser.<!--.25-->Du og jeg ved, at de er mesterstykker."
 		"dealer_message_start_6"  	"Hele denne sending af eksotiske varer blev for nylig frigjort fra en paradeenhed.<!--.25-->Blev marcheret meget rundt. Aldrig affyret."
-		"dealer_message_start_7"  	"Godt. Det er dig.<!--.25-->Mine andre kunder spørger altid, hvordan jeg har fået fat i det, jeg sælger. Det hader jeg.<!--.25-->Det eneste, du spørger om, er, om det er det bedste på markedet.<!--.25-->Gæt en gang: Det er det."
 		"dealer_message_start_8"  	"Fredsaftale i Drosvik. Jeg elsker fred.<!--.25-->For jeg har en general med en stor gæld og et fyldt våbenlager, som står og samler støv.<!--.25-->Jeg mener...<!--.25-->Også fordi fred er godt, selvfølgelig. Uskyldige liv og...<!--.25-->Det, jeg siger, er, du er ligeglad."
 		"dealer_message_start_9"  	"Denne sending har eksotiske varer, som jeg har omdirigeret fra det grå marked.<!--.25-->Usædvanlige kalibre, ikke for amatører. Du vil elske dem."
 		"dealer_message_start_10"  	"Det her er pinligt.<!--.25-->Jeg må være kommet til at angive en kasse forkert på tolddeklarationen.<!--.25-->Nå. Adskillige kasser.<!--.25-->Hvad med at du hjælper mig af med de her varer, før havnemyndighederne undersøger sagen?"
@@ -49529,7 +49524,6 @@ bare glem alt om Proseccoen."
 		"dealer_message_start_27"	"Jeg hader at arbejde med oprørere. Det er bare et pænt ord for civile, som er et pænt ord for forbandede amatører.<!--.25-->Nå, men jeg har ikke hørt fra dem, så jeg giver nogle ægte professionelle en chance med dette udstyr."
 		"dealer_message_start_28"	"Den flerårige varme zone mod syd har lige oplevet det halvårlige kollaps i parlamentet.<!--.25-->En masse lokale våbenlagre sprunget åbne som piñataer."
 		"dealer_message_start_29"	"Havneinspektøren kaldte denne forsendelse for ureglementeret sidste fredag.<!--.25-->Mandag havde hans datter penge nok til at studere på Stamwick, og forsendelsen er igen landbrugsudstyr.<!--.25-->Hvad kan jeg sige, uddannelse er vigtigt. Lad os se på noget landbrugsudstyr."
-
 
 		"dealer_message_resume_0"  	"<!--1-->Du er tilbage. Godt. Tilbuddet er stadig på bordet."
 		"dealer_message_resume_1"  	"<!--1-->Skulle du tænke lidt over det? Ikke noget problem."
@@ -49593,7 +49587,6 @@ bare glem alt om Proseccoen."
 		"dealer_message_next_offer_39"   "<!--1-->Ikke noget problem. Jeg ville heller ikke have købt den. Men den her til gengæld..."
 		"dealer_message_next_offer_40"   "<!--1-->Tvinger mig til at gå ned bagerst på lageret for at hente de allerbedste ting, hm? Okay, det gør jeg."
 
-
 		"dealer_message_last_offer_0"	"<!--0-->Okay, sidste og endelige tilbud. Tag det eller lad vær'."
 		"dealer_message_last_offer_1"	"<!--0-->Betragt det her som mit sidste tilbud."
 		"dealer_message_last_offer_2"	"<!--0-->Sidste tilbud. Tag det eller lad være, lad os ikke spilde mere tid."
@@ -49620,7 +49613,7 @@ bare glem alt om Proseccoen."
 		"dealer_message_timerexpired_7"		"<!--.1-->Og her troede jeg, at jeg hjalp dig med at slå folk ihjel.<!--.5-->Det viser sig, at du bare slår tiden ihjel."
 		"dealer_message_timerexpired_8"		"<!--.1-->Ingen aftale."	
 		"dealer_message_timerexpired_9"		"<!--.1-->Tiden er gået."
-		"dealer_message_timerexpired_10"		"<!--.1-->Okay, jeg keder mig officielt nu. Vi er færdige her."		
+		"dealer_message_timerexpired_10"	"<!--.1-->Okay, jeg keder mig officielt nu. Vi er færdige her."		
 
 		"dealer_message_open_check_out_0"		"<!--.5-->Den her er helt perfekt for dig. Derfor tænkte jeg på dig først. Lad os lave en aftale."
 		"dealer_message_open_check_out_1"		"<!--.5-->En udmærket beslutning. Jeg sørger for, den er pakket og klar."
@@ -49629,8 +49622,8 @@ bare glem alt om Proseccoen."
 		"dealer_message_open_check_out_4"		"<!--.5-->Perfekt. Lad os gøre det."		
 		"dealer_message_open_check_out_5"		"<!--.5-->Godt valg."	
 		"dealer_message_open_check_out_6"		"<!--.5-->Dit klogeste valg nogensinde. Lad os gøre handlen færdig."		
-		"dealer_message_open_check_out_7"		"<!--.5-->Godt. Lad os gøre det officielt."	
-		
+		"dealer_message_open_check_out_7"		"<!--.5-->Godt. Lad os gøre det officielt."
+
 		"dealer_message_txn_xld_bailout_0"		"<!--.5-->Det haster ikke. Du ved, hvor du kan finde mig."
 		"dealer_message_txn_xld_bailout_1"		"<!--.5-->Jeg går ingen steder."
 		"dealer_message_txn_xld_bailout_2"		"<!--.5-->Jeg lader denne ligge på bordet indtil videre."
@@ -49698,11 +49691,10 @@ bare glem alt om Proseccoen."
 		"dealer_message_addition_factory_new_1"	"<!--.25-->Og den er helt ny. Fejlfri."
 		"dealer_message_addition_factory_new_2"	"<!--.25-->Direkte fra fabrikken. Helt ny."
 		"dealer_message_addition_factory_new_3"	"<!--.25-->Den her er fabriksny. Aldrig affyret."
-
+		
 		"system_dealer_left_chat_0"				"Våbenhandleren har forladt chatten."
 		"system_dealer_join_chat_0"				"Våbentilbud fra {s:collection}.<!--1.25-->Våbenhandler online"
 		"system_user_reject_offer_0"			"{s:user-name} afviste tilbuddet."
-		
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
@@ -49933,6 +49925,22 @@ bare glem alt om Proseccoen."
 		"quest_11013_var_ingame:p{mission-points}"		"Vind en runde#|#Vind runder"
 		
 		"quest_11014_var_desc:p{mission-points}"	 	"Vind en runde i <b>{s:gamemode}: {s:location}</b>.#|#Vind runder i <b>{s:gamemode}: {s:location}</b>."
+		"quest_11014_var_ingame:p{mission-points}"		"Vind en runde#|#Vind runder"
+		
+		"quest_11015_var_desc:p{mission-points}"	 	"Vind en runde i <b>{s:gamemode}: {s:location}</b>.#|#Vind runder i <b>{s:gamemode}: {s:location}</b>."
+		"quest_11015_var_ingame:p{mission-points}"		"Vind en runde#|#Vind runder"
+
+// crow_mask_51633_comment
+// crow_mask_51634_comment
+}
+
+
+
+
+}
+
+
+/b>.#|#Vind runder i <b>{s:gamemode}: {s:location}</b>."
 		"quest_11014_var_ingame:p{mission-points}"		"Vind en runde#|#Vind runder"
 		
 		"quest_11015_var_desc:p{mission-points}"	 	"Vind en runde i <b>{s:gamemode}: {s:location}</b>.#|#Vind runder i <b>{s:gamemode}: {s:location}</b>."

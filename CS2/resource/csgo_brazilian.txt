@@ -2424,6 +2424,7 @@
 		"NewItemMethod_CommunityMarketPurchase"	"Você recebeu do Mercado da Comunidade:"
 
 		"ItemHistory_ActionWithTime"									"%s1 em %s2"
+		"ItemHistory_Action_GSCreate"									"Criado"
 		"ItemHistory_Action_GenericAdd"									"Adicionado"
 		"ItemHistory_Action_GenericRemove"								"Removido ou modificado"
 		"ItemHistory_Action_Traded"										"Trocado"
@@ -2487,6 +2488,9 @@
 		"ItemHistory_Action_TournamentDrop"								"Pacote de lembrança obtido"
 		"ItemHistory_Action_TemplateItemGrant"							"Obtido"
 		"ItemHistory_Action_Market_Add"									"Recebido do Mercado da Comunidade"
+		"ItemHistory_Action_Market_Sealed"								"Anúncio criado no Mercado da Comunidade Steam"
+		"ItemHistory_Action_Market_Unsealed"							"Anúncio removido do Mercado da Comunidade"
+		"ItemHistory_Action_Market_SoldSealed"							"Vendido no Mercado da Comunidade Steam"
 
 		"ItemHistory_Transaction_Delete"								"Excluído por você"
 		"ItemHistory_Transaction_Craft"									"Fabricado"
@@ -36636,6 +36640,7 @@
 		"SFUI_InvContextMenu_preview_musickit"       "Inspecionar — Prévia das músicas"
 		"SFUI_InvContextMenu_decodable"     "Destrancar recipiente"
 		"SFUI_InvContextMenu_sell"			"Vender no Mercado"
+		"SFUI_InvContextMenu_marketlisting"	"Ver anúncio no mercado"
 		"SFUI_InvContextMenu_openloadout"   "Ver compartimento"
 		"SFUI_InvContextMenu_inspectcase"	"Abrir..."
 		"SFUI_InvContextMenu_useitem"	    "Usar item"
@@ -40016,6 +40021,8 @@
 		"SFUI_Settings_Network_Bandwidth_30mbps"   "3 Mb/s"
 		"SFUI_Settings_Network_Bandwidth_40mbps"   "4 Mb/s"
 		"SFUI_Settings_Network_Bandwidth_Max"	   "Irrestrita"
+
+		"SFUI_Settings_Volatile_Limit_Unlimited"	"Ilimitado"
 
 		"SFUI_FeatureUnavailableDuringBeta"		"Indisponível durante o beta"
 
@@ -45270,6 +45277,7 @@
 		"popup_delete_title"	"{s:itemname}"
 		"popup_delete_desc"		"Tem certeza de que deseja excluir este item?"
 		"popup_delete_warning"	"A exclusão de um item é permanente."
+		"popup_delete_tooltip"	"Segure para excluir este item. A exclusão é permanente."
 		"popup_delete_button"	"Excluir item"
 
 		"popup_usegift_title"	"Dar {s:itemname}"
@@ -48052,7 +48060,7 @@
 		"laptop_app_version"						"v 1.1.0.2000"
 
 		"dealer_offer_attachment_title"							"{s:item-name}"
-		"dealer_offer_attachment_wear"						"{s:item-rarity}"
+		"dealer_offer_attachment_wear"							"{s:item-rarity}"
 		"dealer_offer_attachment_remaining_title"				"{d:offer-total}ª PROPOSTA"
 		"dealer_offer_attachment_remaining"						"{d:offer-total}ª proposta"
 		"dealer_offer_received_count"							"<b>{s:offer-count}</b> proposta"
@@ -48067,8 +48075,8 @@
 		"user_btn_purchase_desc_purchase"		"Segure para comprar este item. Após a compra, o terminal será descartado."
 		"user_btn_purchase_desc_continue"		"Segure para recusar esta proposta permanentemente e ver a próxima."
 		"user_btn_purchase_desc_end"		"Recusar a última proposta e descartar este terminal."
-		"user_btn_purchase_title"			"<b>{s:offer-count} proposta</b> — respostas sugeridas"
-		"user_btn_purchase_final_title"		"<b>Última proposta</b> — respostas sugeridas"
+		"user_btn_purchase_title"			"{s:offer-count} — proposta"
+		"user_btn_purchase_final_title"		"<b>Proposta final</b>"
 		"user_btn_decline_desc"				"Recusar esta proposta e receber outra"
 		"user_btn_accept"		"Aceitar proposta <b>{s:price}</b>"
 		"user_btn_accept_final"	"Aceitar última proposta <b>{s:price}</b>"
@@ -48089,6 +48097,18 @@
 		"user_btn_next_7"		"Hoje não"
 		"user_btn_pause"		"Pausar negociação"
 		"user_btn_end"			"Recusar última proposta"
+
+		"user_message_limit_0"		"Consigo ir até <b>{s:limit-setting}</b>."
+		"user_message_limit_1"		"Que tal um teto de <b>{s:limit-setting}</b>?"
+		"user_message_limit_2"		"Até <b>{s:limit-setting}</b> dá certo."
+		"user_message_limit_3"		"No máximo <b>{s:limit-setting}</b> está bom."
+		"user_message_limit_unlimited_0"	"<b>Sem máximo</b>, quero ver tudo."
+		"user_message_limit_unlimited_1"	"<b>Cheque em branco</b>. Não se preocupe com a carteira."
+		"user_message_limit_unlimited_2"	"Vim fazer negócios. <b>Mostre-me tudo</b>."
+		"user_message_limit_unlimited_3"	"Se atira, eu tenho interesse.<b>Sem limites</b>."
+		"user_message_limit_unlimited_4"	"O céu é o limite."
+		"offer_limit_setting"		"Proposta máxima: {s:limit}"
+		"offer_limit_setting_interface"		"Proposta máxima: {s:limit} <img src='file://{images}/icons/ui/expand.svg' class='expand-icon'/>"
 
 		"dealer_offer_Unknown"							"?ª"
 		"dealer_offer_1"								"1ª"
@@ -48123,7 +48143,6 @@
 		"laptop_pan_tooltip" 			"Segure Shift e arraste para mover a câmera"
 		"laptop_pricing_tooltip"		"Os preços são globais e ajustados automaticamente conforme a demanda por cada item da coleção."
 
-
 		"dealer_message_start_0"  	"Eu só lido direto com o cliente.<!--.25-->Todas as regalias. Nenhuma papelada."
 		"dealer_message_start_1"  	"Estou trabalhando com o mercado cinza, sem registros.<!--.25-->Não se preocupe: elas já estão frias. Fora de circulação há anos, sem ninguém procurando por elas.<!--.25-->E não se preocupa: se apertar aqui, a bala sai ali."
 		"dealer_message_start_2"  	"Os fiscais de Aradão apreenderam a minha remessa que chegou hoje de manhã. Eu tentei desconversar com uma história triste sobre equipamentos médicos e um pobre moribundo qualquer.<!--.25-->Não funcionou. Mas uma maleta de dinheiro, por outro lado...<!--.25-->Quer dar uma olhada nessas máquinas de diálise antes que eu as leve para os órfãos?"
@@ -48131,7 +48150,6 @@
 		"dealer_message_start_4"  	"Hoje só tem peça limpa.<!--.25-->As suas mãos serão as primeiras a tocarem... Oficialmente."
 		"dealer_message_start_5"  	"Peças irrastreáveis, sem números de série e ação perfeita.<!--.25-->Um tribunal de guerra as chamariam de prova.<!--.25-->Mas eu e você sabemos que são obras de arte incríveis."
 		"dealer_message_start_6"  	"Essa remessa inteira acabou de ser liberada de uma unidade militar que só servia pra desfilar.<!--.25-->O que têm de quilômetros andados, não têm de disparos."
-		"dealer_message_start_7"  	"Ótimo. É você.<!--.25-->Os meus outros clientes sempre querem saber como eu arranjei a minha mercadoria. Eu odeio isso.<!--.25-->Tudo o que você quer saber é se são as melhores opções no mercado.<!--.25-->E adivinha só: são sim."
 		"dealer_message_start_8"  	"Acordo de paz em Drosvique. Eu amo a paz.<!--.25-->Porque eu conheço um general cheio de dívidas e um arsenal grandão juntando poeira.<!--.25-->Assim...<!--.25-->E também porque sou a favor da paz, obviamente. Vidas e inocentes e...<!--.25-->Enfim, você não liga."
 		"dealer_message_start_9"  	"Essa carga veio de um descaminho no mercado cinza.<!--.25-->Calibres incomuns, não é coisa de amador. Você vai amar."
 		"dealer_message_start_10"  	"Que constrangedor.<!--.25-->Eu devo ter etiquetado incorretamente uma caixa na minha declaração de envio.<!--.25-->Digo, algumas caixas.<!--.25-->Que tal você me ajudar a fazer esse estoque desaparecer antes que as autoridades portuárias metam o bedelho?"
@@ -48154,7 +48172,6 @@
 		"dealer_message_start_27"	"Eu odeio trabalhar com insurgentes. É só uma forma educada de falar \"civis\", que é uma forma educada de falar \"amadores malditos\".<!--.25-->Enfim, eles sumiram, então estou dando uma chance para profissionais de verdade usarem essas belezinhas."
 		"dealer_message_start_28"	"A zona perenemente quente logo ao sul acabou de passar pelo colapso bienal do parlamento.<!--.25-->Diversos arsenais locais foram abertos como pinhatas."
 		"dealer_message_start_29"	"O inspetor da autoridade portuária declarou esta remessa como irregular na última sexta.<!--.25-->Na segunda-feira, a filha dele tinha dinheiro suficiente para estudar em Stamwick, e a remessa voltou a ser de equipamentos agrários.<!--.25-->É o que eu sempre digo: educação em primeiro lugar. Vamos dar uma olhada nesses equipamentos agrários."
-
 
 		"dealer_message_resume_0"  	"<!--1-->Você voltou. Ótimo. A proposta ainda está de pé."
 		"dealer_message_resume_1"  	"<!--1-->Precisou de um minuto para pensar? Sem problema."
@@ -48218,7 +48235,6 @@
 		"dealer_message_next_offer_39"   "<!--1-->De boa. Eu também não teria comprado aquela. Agora essa outra..."
 		"dealer_message_next_offer_40"   "<!--1-->Quer que eu vá buscar uma na prateleira especial, né? Beleza."
 
-
 		"dealer_message_last_offer_0"	"<!--0-->Beleza, última proposta. É pegar ou largar."
 		"dealer_message_last_offer_1"	"<!--0-->Considere-a minha última proposta."
 		"dealer_message_last_offer_2"	"<!--0-->É a última proposta. É pegar ou largar, não vou perder mais tempo."
@@ -48245,7 +48261,7 @@
 		"dealer_message_timerexpired_7"		"<!--.1-->E eu pensando que estava ajudando você a matar pessoas...<!--.5-->Era você quem estava matando o meu tempo."
 		"dealer_message_timerexpired_8"		"<!--.1-->A proposta já era."	
 		"dealer_message_timerexpired_9"		"<!--.1-->O tempo acabou."
-		"dealer_message_timerexpired_10"		"<!--.1-->Beleza, eu estou oficialmente entediado. Fim de papo."		
+		"dealer_message_timerexpired_10"	"<!--.1-->Beleza, eu estou oficialmente entediado. Fim de papo."		
 
 		"dealer_message_open_check_out_0"		"<!--.5-->Essa aqui estava chamando por você. Eu praticamente a ouvi pedindo. Vamos fechar o acordo."
 		"dealer_message_open_check_out_1"		"<!--.5-->Excelente decisão. Vou embrulhá-la direitinho."
@@ -48254,8 +48270,8 @@
 		"dealer_message_open_check_out_4"		"<!--.5-->Perfeito. Vamos lá."		
 		"dealer_message_open_check_out_5"		"<!--.5-->Bela escolha."	
 		"dealer_message_open_check_out_6"		"<!--.5-->A decisão mais sábia que você já tomou. Vamos finalizar o acordo."		
-		"dealer_message_open_check_out_7"		"<!--.5-->Muito bom. Vamos oficializar."	
-		
+		"dealer_message_open_check_out_7"		"<!--.5-->Muito bom. Vamos oficializar."
+
 		"dealer_message_txn_xld_bailout_0"		"<!--.5-->Sem pressa. Você sabe onde me encontrar."
 		"dealer_message_txn_xld_bailout_1"		"<!--.5-->Não vou a lugar algum."
 		"dealer_message_txn_xld_bailout_2"		"<!--.5-->Deixarei reservada por enquanto."
@@ -48323,11 +48339,10 @@
 		"dealer_message_addition_factory_new_1"	"<!--.25-->E é nova de fábrica. Imaculada."
 		"dealer_message_addition_factory_new_2"	"<!--.25-->Direto da caixa. Nova de fábrica."
 		"dealer_message_addition_factory_new_3"	"<!--.25-->Essa é nova da fábrica. Nunca atirou."
-
+		
 		"system_dealer_left_chat_0"				"O traficante saiu da conversa."
 		"system_dealer_join_chat_0"				"Propostas de armas da {s:collection}.<!--1.25-->Traficante conectado"
 		"system_user_reject_offer_0"			"{s:user-name} recusou a proposta."
-		
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
@@ -48563,8 +48578,8 @@
 		"quest_11015_var_desc:p{mission-points}"	 	"Vença uma rodada no modo <b>{s:gamemode} ({s:location})</b>.#|#Vença rodadas em partidas do modo <b>{s:gamemode} ({s:location})</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Vença uma rodada.#|#Vença rodadas."
 
-// crow_mask_51588_comment
-// crow_mask_51589_comment
+// crow_mask_51633_comment
+// crow_mask_51634_comment
 }
 
 
@@ -48573,12 +48588,7 @@
 }
 
 
-"funfact_knife_level_reached:f"									"{funfact-d1, plural, one{Um jogador alcançou o nível da faca dourada.} other{{d:funfact-d1} jogadores alcançaram o nível da faca dourada.}}"
-		"funfact_killed_before_dying:f"									"{funfact-d1, plural, one{{s:funfact-player} matou {d:funfact-d1} jogador antes de morrer.} other{{s:funfact-player} matou {d:funfact-d1} jogadores antes de morrer.}}"
-		"funfact_respawned:f"											"{funfact-d1, plural, one{{s:funfact-player} renasceu uma vez durante a partida.} other{{s:funfact-player} renasceu {d:funfact-d1} vezes durante a partida.}}"
-		"funfact_default_weapon:f"										"{s:funfact-player} venceu a rodada sem pegar qualquer arma."
-		"funfact_rounds_without_dying:f"								"{funfact-d1, plural, one{{s:funfact-player} morreu após sobreviver por uma rodada.} other{{s:funfact-player} morreu após sobreviver por {d:funfact-d1} rodadas consecutivas.}}"
-		"funfact_taser_kill:f"											"{funfact-d1, plural, one{{s:funfact-player} eletrocutou {d:funfact-d1} jogador.} other{{s:funfact-player} eletrocutou {d:funfact-d1} jogadores.}}"
+-d1} jogadores.}}"
 		"funfact_ticking_time:f"										"{funfact-d1, plural, one{Os Terroristas venceram apesar de {d:funfact-d1} Contraterrorista tentar desarmar a bomba.} other{Os Terroristas venceram apesar de {d:funfact-d1} Contraterroristas tentarem desarmar a bomba.}}"
 		"funfact_ct_win_time:f"											"{funfact-d1, plural, one{A equipe Contraterrorista eliminou a equipe Terrorista em {d:funfact-d1} segundo.} other{A equipe Contraterrorista eliminou a equipe Terrorista em {d:funfact-d1} segundos.}}"
 		"funfact_ter_win_time:f"										"{funfact-d1, plural, one{A equipe Terrorista eliminou a equipe Contraterrorista em {d:funfact-d1} segundo.} other{A equipe Terrorista eliminou a equipe Contraterrorista em {d:funfact-d1} segundos.}}"

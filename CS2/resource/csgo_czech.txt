@@ -2488,7 +2488,6 @@
 		"ItemHistory_Action_TournamentDrop"								"Získali jste suvenýr"
 		"ItemHistory_Action_TemplateItemGrant"							"Získali jste"
 		"ItemHistory_Action_Market_Add"									"Získali jste z komunitního trhu"
-
 		"ItemHistory_Transaction_Delete"								"Odstranili jste"
 		"ItemHistory_Transaction_Craft"									"Získali jste vycraftováním"
 		"ItemHistory_Transaction_UnlockCrate"							"Otevřeli jste bednu"
@@ -46006,6 +46005,7 @@
 		"popup_delete_title"	"{s:itemname}"
 		"popup_delete_desc"		"Opravdu chceš odstranit tento předmět?"
 		"popup_delete_warning"	"Tento krok nelze vzít zpět"
+		"popup_delete_tooltip"	"Podržením tohoto tlačítka odstraníš tento předmět. Tento krok nelze vzít zpět."
 		"popup_delete_button"	"Odstranit předmět"
 
 		"popup_usegift_title"	"Darovat {s:itemname}"
@@ -48811,7 +48811,7 @@
 		"laptop_app_version"						"v 1.1.0.2000"
 
 		"dealer_offer_attachment_title"							"{s:item-name}"
-		"dealer_offer_attachment_wear"						"{s:item-rarity}"
+		"dealer_offer_attachment_wear"							"{s:item-rarity}"
 		"dealer_offer_attachment_remaining_title"				"NABÍDKA Č. {d:offer-total}"
 		"dealer_offer_attachment_remaining"						"Nabídka č. {d:offer-total}"
 		"dealer_offer_received_count"							"<b>{s:offer-count}</b> nabídka"
@@ -48826,8 +48826,6 @@
 		"user_btn_purchase_desc_purchase"		"Podržením tohoto tlačítka si zakoupíš nabízený předmět a zahodíš terminál."
 		"user_btn_purchase_desc_continue"		"Podržením tohoto tlačítka permanentně odmítneš tuto nabídku a požádáš o další."
 		"user_btn_purchase_desc_end"		"Podržením tohoto tlačítka permanentně odmítneš poslední nabídku a zahodíš terminál."
-		"user_btn_purchase_title"			"<b>{s:offer-count} nabídka</b> – Navrhované odpovědi"
-		"user_btn_purchase_final_title"		"<b>Poslední nabídka</b> – Navrhované odpovědi"
 		"user_btn_decline_desc"				"Podržením tohoto tlačítka odmítneš tuto nabídku a požádáš o další."
 		"user_btn_accept"		"Přijmout nabídku – <b>{s:price}</b>"
 		"user_btn_accept_final"	"Přijmout poslední nabídku – <b>{s:price}</b>"
@@ -48882,7 +48880,6 @@
 		"laptop_pan_tooltip" 			"Pro posunutí pohledu podrž klávesu Shift a levé tlačítko myši a táhni myší."
 		"laptop_pricing_tooltip"		"Ceny jsou platné globálně a automaticky se přizpůsobují poptávce po jednotlivých předmětech z této kolekce."
 
-
 		"dealer_message_start_0"  	"Profesionální kousky, jeden jako druhej.<!--.25-->Sto procent kvalita, nula procent papírování."
 		"dealer_message_start_1"  	"Mám tu nějaký šedý zboží bez papírů.<!--.25-->Ale neboj, nejsou to horký kusy. V oběhu už nejsou roky a nikdo je nehledá.<!--.25-->A střílej pořád jako nový, aby sis nemyslel."
 		"dealer_message_start_2"  	"Celníci v Ahradánu mi dneska ráno zmrazili náklad. Zkusil jsem je obměkčit historkou o zdravotnickym vybavení a chudácích dětech, ale nedali se.<!--.25-->Pomoh až kufřík plnej peněz.<!--.25-->Tak co kdyby sis prohlíd ty moje teploměry, než je předám sirotkům?"
@@ -48890,7 +48887,6 @@
 		"dealer_message_start_4"  	"Všechno, co tu dneska mám, je čistý.<!--.25-->Papírově vzato budeš první majitel."
 		"dealer_message_start_5"  	"Sterilní kousky, žádný sériový čísla, plná funkčnost.<!--.25-->Válečnej tribunál by tomu říkal důkazy.<!--.25-->Ty a já ale víme, že jsou to umělecký díla."
 		"dealer_message_start_6"  	"Tahle zásilka je plná exotickejch kousků od palácový gardy.<!--.25-->Často se s nima pochodovalo, ale nikdy nestřílelo."
-		"dealer_message_start_7"  	"Ani nevíš, jak tě mám rád.<!--.25-->Ostatní klienti se pořád vyptávaj, kde jsem vzal svoje zboží. Fakt otravný.<!--.25-->Zato tebe zajímá jenom to, jestli je to nejlepší zboží na trhu.<!--.25-->A věř mi, že je."
 		"dealer_message_start_8"  	"Mírová dohoda v Drosviku. A mír je bezva věc.<!--.25-->Především protože mám generála po uši v dluzích a s našlapanou zbrojnicí, která chytá prach.<!--.25-->Mno...<!--.25-->A taky protože mír je dobrej sám o sobě. Životy nevinejch a tak...<!--.25-->Ale to je ti asi fuk."
 		"dealer_message_start_9"  	"Tenhle náklad je plnej exotiky z šedýho trhu.<!--.25-->Hogofogo kalibry, nic pro amatéry. Bude se ti to líbit."
 		"dealer_message_start_10"  	"To se podívejme.<!--.25-->Asi jsem chybně označil bednu na lodním seznamu.<!--.25-->Nebo pár desítek beden.<!--.25-->Co kdybys mi pomohl nechat tohle zboží zmizet, než se začne zajímat přístavní správa."
@@ -48913,7 +48909,6 @@
 		"dealer_message_start_27"	"Nesnáším jednání s povstalci. Je to jen slušný označení civilistů, což je zase slušnej způsob, jak říct, že je někdo amatér.<!--.25-->Tak jako tak, tyhle kupci přestali komunikovat, takže dávám šanci skutečným profíkům."
 		"dealer_message_start_28"	"V nějaký díře na jihu jako každoročně padla vláda.<!--.25-->A to bych byl blbej, kdybych jim tam tohle nechal ve skladech."
 		"dealer_message_start_29"	"Přístavní úřad v pátek označil tuhle zásilku na neoprávněnou.<!--.25-->Do pondělka měla dcera šéfa dost peněz, aby zaplatila školný na Stamwicku a ze zásilky se zase stalo farmářský náčiní.<!--.25-->Já to říkám pořád, že vzdělání je důležitý."
-
 
 		"dealer_message_resume_0"  	"<!--1-->Jsi zpátky. Bezva. Nabídka pořád platí."
 		"dealer_message_resume_1"  	"<!--1-->Potřeboval sis to promyslet? Není problém."
@@ -48977,7 +48972,6 @@
 		"dealer_message_next_offer_39"   "<!--1-->Není problém, taky bych ji nekoupil. Zato tuhle..."
 		"dealer_message_next_offer_40"   "<!--1-->Chceš, abych došel dozadu pro prémiový zboží, jo? OK, máš to mít."
 
-
 		"dealer_message_last_offer_0"	"<!--0-->OK, poslední nabídka. Ber, nebo nech být."
 		"dealer_message_last_offer_1"	"<!--0-->Považuj tohle za moji poslední nabídku."
 		"dealer_message_last_offer_2"	"<!--0-->Poslední nabídka. Ber, nebo neber, ale hlavně už mě nezdržuj."
@@ -49004,7 +48998,7 @@
 		"dealer_message_timerexpired_7"		"<!--.1-->Já vůl si myslel, že máš opravdu zájem.<!--.5-->Taková ztráta času..."
 		"dealer_message_timerexpired_8"		"<!--.1-->Nabídka vypršela."	
 		"dealer_message_timerexpired_9"		"<!--.1-->Čas vypršel."
-		"dealer_message_timerexpired_10"		"<!--.1-->Oficiálně už se začínám nudit. Tady jsme skončili."		
+		"dealer_message_timerexpired_10"	"<!--.1-->Oficiálně už se začínám nudit. Tady jsme skončili."		
 
 		"dealer_message_open_check_out_0"		"<!--.5-->Tahle ti byla zkrátka souzená. Tak to dotáhneme."
 		"dealer_message_open_check_out_1"		"<!--.5-->Skvělá volba. Zabalím ti ji s sebou."
@@ -49013,8 +49007,8 @@
 		"dealer_message_open_check_out_4"		"<!--.5-->Paráda, tak to dotáhneme."		
 		"dealer_message_open_check_out_5"		"<!--.5-->Skvělá volba."	
 		"dealer_message_open_check_out_6"		"<!--.5-->Nejlepší rozhodnutí, jaký jsi dneska udělal. Tak to finalizujem."		
-		"dealer_message_open_check_out_7"		"<!--.5-->Bezva. Tak to stvrdíme podpisem."	
-		
+		"dealer_message_open_check_out_7"		"<!--.5-->Bezva. Tak to stvrdíme podpisem."
+
 		"dealer_message_txn_xld_bailout_0"		"<!--.5-->Žádnej spěch. Víš, kde mě najít."
 		"dealer_message_txn_xld_bailout_1"		"<!--.5-->Já ti nikam neuteču."
 		"dealer_message_txn_xld_bailout_2"		"<!--.5-->Že seš to ty, zatím nechám tuhle nabídku na stole."
@@ -49082,11 +49076,10 @@
 		"dealer_message_addition_factory_new_1"	"<!--.25-->A je zbrusu nová. Neposkvrněná!"
 		"dealer_message_addition_factory_new_2"	"<!--.25-->Zbrusu nová. Doteď ležela v trezoru."
 		"dealer_message_addition_factory_new_3"	"<!--.25-->Zbrusu nová. To znamená, že ještě nestřílela."
-
+		
 		"system_dealer_left_chat_0"				"Obchodník se odpojil z chatu."
 		"system_dealer_join_chat_0"				"{s:collection} – nabídka zbraní.<!--1.25-->Obchodník se připojil do chatu."
 		"system_user_reject_offer_0"			"{s:user-name} odmítnul nabídku."
-		
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
@@ -49320,6 +49313,19 @@
 		"quest_11014_var_ingame:p{mission-points}"		"Vyhrávej kola#|#Vyhrávej kola#|#Vyhrávej kola#|#Vyhrávej kola"
 		
 		"quest_11015_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.#|#<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.#|#<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.#|#<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol."
+		"quest_11015_var_ingame:p{mission-points}"		"Vyhrávej kola#|#Vyhrávej kola#|#Vyhrávej kola#|#Vyhrávej kola"
+
+// crow_mask_51633_comment
+// crow_mask_51634_comment
+}
+
+
+
+
+}
+
+
+tý počet kol.#|#<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.#|#<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol."
 		"quest_11015_var_ingame:p{mission-points}"		"Vyhrávej kola#|#Vyhrávej kola#|#Vyhrávej kola#|#Vyhrávej kola"
 
 // crow_mask_51588_comment

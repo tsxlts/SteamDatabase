@@ -2484,7 +2484,6 @@
 		"ItemHistory_Action_TournamentDrop"								"Emléktárgydobásként kaptad:"
 		"ItemHistory_Action_TemplateItemGrant"							"Szerezted:"
 		"ItemHistory_Action_Market_Add"									"A Közösségi Piacon vetted:"
-
 		"ItemHistory_Transaction_Delete"								"Te törölted:"
 		"ItemHistory_Transaction_Craft"									"Barkácsolás:"
 		"ItemHistory_Transaction_UnlockCrate"							"Tárolónyitás:"
@@ -45676,6 +45675,7 @@
 		"popup_delete_title"	"{s:itemname}"
 		"popup_delete_desc"		"Biztosan törölni szeretnéd ezt az elemet?"
 		"popup_delete_warning"	"A tárgytörlés nem vonható vissza."
+		"popup_delete_tooltip"	"Tartsd nyomva e tárgy törléséhez. A tárgytörlés nem vonható vissza."
 		"popup_delete_button"	"Tárgy törlése"
 
 		"popup_usegift_title"	"{s:itemname} ajándékozása"
@@ -48481,7 +48481,7 @@
 		"laptop_app_version"						"v 1.1.0.2000"
 
 		"dealer_offer_attachment_title"							"{s:item-name}"
-		"dealer_offer_attachment_wear"						"{s:item-rarity}"
+		"dealer_offer_attachment_wear"							"{s:item-rarity}"
 		"dealer_offer_attachment_remaining_title"				"{d:offer-total}. AJÁNLAT"
 		"dealer_offer_attachment_remaining"						"{d:offer-total}. ajánlat"
 		"dealer_offer_received_count"							"<b>{s:offer-count}</b> ajánlat"
@@ -48496,8 +48496,6 @@
 		"user_btn_purchase_desc_purchase"		"Tartsd nyomva e tárgy megvásárlásához. A vásárlás után a terminál el lesz dobva."
 		"user_btn_purchase_desc_continue"		"Tartsd nyomva ezen ajánlat végleges elutasításához és a következő megnézéséhez."
 		"user_btn_purchase_desc_end"		"A végső ajánlat elutasítása és e terminál eldobása."
-		"user_btn_purchase_title"			"<b>{s:offer-count} ajánlat</b> – Javasolt válaszok"
-		"user_btn_purchase_final_title"		"<b>Végső ajánlat</b> – Javasolt válaszok"
 		"user_btn_decline_desc"				"Ezen ajánlat elutasítása és másik megnézése."
 		"user_btn_accept"		"<b>{s:price}</b> árú ajánlat elfogadása"
 		"user_btn_accept_final"	"<b>{s:price}</b> árú végső ajánlat elfogadása"
@@ -48552,7 +48550,6 @@
 		"laptop_pan_tooltip" 			"Tartsd nyomva a „Shift” billentyűt, és húzd az egeret a kamera mozgatásához."
 		"laptop_pricing_tooltip"		"Az árak globálisak, és automatikusan igazodnak az e gyűjtemény egyes tárgyai iránti kereslet alapján."
 
-
 		"dealer_message_start_0"  	"Ez a cucc minden téren szerződéseseknek való minőség.<!--.25-->Mindenféle extrák. Semmi papírmunka."
 		"dealer_message_start_1"  	"Szürke csatornás árut mozgatok, nincsenek iratok.<!--.25-->Ne aggódj: hidegek. Évek óta nem voltak forgalomban, senki sem keresi őket.<!--.25-->Sőt, ha tudni akarod, lőnek is, amikor célzol velük."
 		"dealer_message_start_2"  	"Az ahradáni vámhivatal ma reggel befagyasztotta a rakományomat. Megpróbáltam felolvasztani egy szívszorító sztorival orvosi felszerelésekről, meg valami szegény haldokló... akárkikről.<!--.25-->Nem jött be. A pénzzel teli aktatáska viszont igen.<!--.25-->Na, nézzük ezeket a dialízisgépeket, mielőtt elviszem őket az árvákhoz."
@@ -48560,7 +48557,6 @@
 		"dealer_message_start_4"  	"A mai cuccaim mind tiszták.<!--.25-->Amennyire bárki tudhatja, a tiéd az első kéz, amelyen keresztülmentek."
 		"dealer_message_start_5"  	"Steril darabok, sorozatszám nélkül, tökéletes működés.<!--.25-->Egy háborús bíróság ezeket bizonyítéknak nevezné.<!--.25-->Te és én tudjuk, hogy ezek istenverte remekművek."
 		"dealer_message_start_6"  	"Ez az egész szállítmány egzotikus darabokból áll, nemrég lenyúlva egy díszszázadtól.<!--.25-->Sokat meneteltek. Sose lőttek."
-		"dealer_message_start_7"  	"Remek. Te vagy az.<!--.25-->A többi ügyfelem mindig tudni akarja, hogy szereztem, amit árulok. Utálom.<!--.25-->Te mindig csak azt akarod tudni, hogy ez-e a legjobb cucc a piacon.<!--.25-->Képzeld csak: az."
 		"dealer_message_start_8"  	"Békemegállapodás Drosvikban. Szeretem a békét.<!--.25-->Mert ismerek egy tábornokot, akinek rengeteg adóssága van, meg egy teli fegyverraktára porosodó holmival.<!--.25-->Vagyis...<!--.25-->Azért is, mert a béke jó, nyilvánvalóan. Az ártatlan életek meg...<!--.25-->Mit magyarázom, téged nem érdekel."
 		"dealer_message_start_9"  	"Ebben az adagban egzotikus darabok vannak egy eltérített szürke üzletből.<!--.25-->Szokatlan űrméretek, nem amatőröknek. Imádni fogod őket."
 		"dealer_message_start_10"  	"Ez kínos.<!--.25-->Biztos véletlenül rosszul címkéztem fel egy ládát a szállítólevélben.<!--.25-->Hát... Néhány tucat ládát.<!--.25-->Mi lenne, ha segítenél eltüntetni ezt a rakományt, mielőtt a kikötői hatóság utánajárna?"
@@ -48583,7 +48579,6 @@
 		"dealer_message_start_27"	"Utálok felkelőkkel dolgozni. Az csak a „civilek” udvarias megnevezése, ami pedig az „istenverte amatőrök” kedveskedő neve.<!--.25-->Mindenesetre eltűntek, szóval lehetőséget adok néhány igazi profinak erre a fémárura."
 		"dealer_message_start_28"	"Lent délen, az örökösen forró zónában épp most volt a félévente esedékes parlament-összeomlás.<!--.25-->Egy csomó helyi fegyverraktár úgy nyílt ki, mint egy piñata."
 		"dealer_message_start_29"	"A kikötőhatóság ellenőre múlt pénteken szabálytalannak nevezte ezt a szállítmányt.<!--.25-->Hétfőre elég pénze lett, hogy a Stamwickre járathassa a lányát, a szállítmány pedig ismét „mezőgazdasági szerszám”.<!--.25-->Mit mondhatnék, a tanulás fontos. Nézzünk meg néhány mezőgazdasági szerszámot."
-
 
 		"dealer_message_resume_0"  	"<!--1-->Visszajöttél. Jó. Az ajánlat még áll."
 		"dealer_message_resume_1"  	"<!--1-->Kellett egy perc átgondolni? Nem probléma."
@@ -48647,7 +48642,6 @@
 		"dealer_message_next_offer_39"   "<!--1-->Nem probléma. Azt én sem vettem volna meg. Na, de ezt viszont..."
 		"dealer_message_next_offer_40"   "<!--1-->Hátraküldesz a felső polcos prémium cuccokért, mi? Jól van, megkapod."
 
-
 		"dealer_message_last_offer_0"	"<!--0-->Rendben, ez a legutolsó ajánlatom. Kell vagy nem?"
 		"dealer_message_last_offer_1"	"<!--0-->Tekintsd ezt az utolsó ajánlatomnak."
 		"dealer_message_last_offer_2"	"<!--0-->Utolsó ajánlat. Elfogadod vagy sem? Ne vesztegessük az időmet."
@@ -48674,7 +48668,7 @@
 		"dealer_message_timerexpired_7"		"<!--.1-->És én még azt hittem én segítek neked embereket kinyírni.<!--.5-->Közben meg te nyírod ki az én időmet."
 		"dealer_message_timerexpired_8"		"<!--.1-->Az üzletnek lőttek."	
 		"dealer_message_timerexpired_9"		"<!--.1-->Lejárt az idő."
-		"dealer_message_timerexpired_10"		"<!--.1-->Na jó, hivatalosan is unatkozom. Végeztünk."		
+		"dealer_message_timerexpired_10"	"<!--.1-->Na jó, hivatalosan is unatkozom. Végeztünk."		
 
 		"dealer_message_open_check_out_0"		"<!--.5-->Ez teljesen neked való. Ezért gondoltam rád először. Üssük nyélbe ezt az üzletet."
 		"dealer_message_open_check_out_1"		"<!--.5-->Kitűnő döntés. Gondoskodom róla, hogy be legyen csomagolva és készen álljon."
@@ -48683,8 +48677,8 @@
 		"dealer_message_open_check_out_4"		"<!--.5-->Tökéletes. Csináljuk."		
 		"dealer_message_open_check_out_5"		"<!--.5-->Jó választás."	
 		"dealer_message_open_check_out_6"		"<!--.5-->A legokosabb döntés, amit valaha hoztál. Tegyük véglegessé."		
-		"dealer_message_open_check_out_7"		"<!--.5-->Remek. Tegyük hivatalossá."	
-		
+		"dealer_message_open_check_out_7"		"<!--.5-->Remek. Tegyük hivatalossá."
+
 		"dealer_message_txn_xld_bailout_0"		"<!--.5-->Nem kell kapkodni. Tudod, hol találsz meg."
 		"dealer_message_txn_xld_bailout_1"		"<!--.5-->Nem megyek sehova."
 		"dealer_message_txn_xld_bailout_2"		"<!--.5-->Ezt egyelőre az asztalon hagyom."
@@ -48752,11 +48746,10 @@
 		"dealer_message_addition_factory_new_1"	"<!--.25-->És gyári új. Makulátlan."
 		"dealer_message_addition_factory_new_2"	"<!--.25-->Egyenesen a trezorból. Gyári új."
 		"dealer_message_addition_factory_new_3"	"<!--.25-->Ez gyári új. Sosem volt elsütve."
-
+		
 		"system_dealer_left_chat_0"				"A fegyverkereskedő elhagyta a csevegésedet."
 		"system_dealer_join_chat_0"				"{s:collection} fegyverkereskedői ajánlatok.<!--1.25-->Fegyverkereskedő csatlakoztatva."
 		"system_user_reject_offer_0"			"{s:user-name} elutasította az ajánlatot."
-		
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
@@ -48990,6 +48983,19 @@
 		"quest_11014_var_ingame:p{mission-points}"		"Nyerj egy kört.#|#Nyerj köröket."
 		
 		"quest_11015_var_desc:p{mission-points}"	 	"Nyerj egy kört <b>{s:gamemode} játékban: {s:location}</b>.#|#Nyerj köröket <b>{s:gamemode} játékban: {s:location}</b>."
+		"quest_11015_var_ingame:p{mission-points}"		"Nyerj egy kört.#|#Nyerj köröket."
+
+// crow_mask_51633_comment
+// crow_mask_51634_comment
+}
+
+
+
+
+}
+
+
+11015_var_desc:p{mission-points}"	 	"Nyerj egy kört <b>{s:gamemode} játékban: {s:location}</b>.#|#Nyerj köröket <b>{s:gamemode} játékban: {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Nyerj egy kört.#|#Nyerj köröket."
 
 // crow_mask_51588_comment

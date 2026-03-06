@@ -2421,6 +2421,7 @@
 		"NewItemMethod_CommunityMarketPurchase"	"コミュニティマーケットから受け取りました："
 
 		"ItemHistory_ActionWithTime"									"%s1  %s2"
+		"ItemHistory_Action_GSCreate"									"作成"
 		"ItemHistory_Action_GenericAdd"									"追加:"
 		"ItemHistory_Action_GenericRemove"								"削除または変更されました"
 		"ItemHistory_Action_Traded"										"トレード:"
@@ -2484,6 +2485,9 @@
 		"ItemHistory_Action_TournamentDrop"								"記念ドロップを獲得"
 		"ItemHistory_Action_TemplateItemGrant"							"獲得"
 		"ItemHistory_Action_Market_Add"									"コミュニティマーケットから入手"
+		"ItemHistory_Action_Market_Sealed"								"Steam コミュニティマーケットに出品しました"
+		"ItemHistory_Action_Market_Unsealed"							"Steam コミュニティマーケットへの出品を取り下げました"
+		"ItemHistory_Action_Market_SoldSealed"							"Steamコミュニティマーケットで売却されました"
 
 		"ItemHistory_Transaction_Delete"								"削除："
 		"ItemHistory_Transaction_Craft"									"クラフト："
@@ -2633,7 +2637,7 @@
 	"SealedState"                "開封状態"
 
 		// Atributes
-		"Attrib_Marketable"							"Steam コミュニティマーケットにリストできます。"
+		"Attrib_Marketable"							"Steam コミュニティマーケットに出品できます。"
 		"Attrib_Renamed"							"このアイテムはリネームされました。\n本来のアイテム名： \"%s1\""
 		"Attrib_CustomDesc"							"このアイテムはユーザーによる説明付きです。"
 		"Attrib_NameWithCustomNameTag"				"ネームタグ: ''%s1''"
@@ -2641,6 +2645,7 @@
 		"Attrib_NeverTradableButHasAfterDate1"		"このアイテムはトレードも売買もできません。"
 		"Attrib_NeverTradableButHasAfterDate2"		"使用したアイテムは %s1 までトレード制限の対象となります。"
 		"Attrib_TradeProtectedEscrowDate"			"⇆ このアイテムはトレード保護されています。%s1まで消費、変更、譲渡はできません。"
+		"Attrib_TradeProtectedEscrowMarket"			"⇆このアイテムはSteam コミュニティマーケットに出品されています。出品中は消費や変更ができません。"
 		"Attrib_TradableAfterDate"					"%s1 後トレード可能"
 		"Attrib_TradableMarketableAfterDate"		"%s1 以降トレード/売買可能"
 		"Attrib_MarketableWithRestrictions"			"Steam コミュニティマーケットにて今すぐ売却可能"
@@ -36112,6 +36117,7 @@
 		"SFUI_InvContextMenu_preview_musickit"       "調べる - ミュージックをプレビュー"
 		"SFUI_InvContextMenu_decodable"     "コンテナを開ける"
 		"SFUI_InvContextMenu_sell"			"コミュニティマーケットで売却"
+		"SFUI_InvContextMenu_marketlisting"	"マーケットの出品リストを見る"
 		"SFUI_InvContextMenu_openloadout"   "装備スロットを表示"
 		"SFUI_InvContextMenu_inspectcase"	"開ける..."
 		"SFUI_InvContextMenu_useitem"	    "アイテムを使用"
@@ -39504,6 +39510,8 @@
 		"SFUI_Settings_Network_Bandwidth_30mbps"   "3 Mbps"
 		"SFUI_Settings_Network_Bandwidth_40mbps"   "4 Mbps"
 		"SFUI_Settings_Network_Bandwidth_Max"	   "制限なし"
+
+		"SFUI_Settings_Volatile_Limit_Unlimited"	"上限なし"
 
 		"SFUI_FeatureUnavailableDuringBeta"		"ベータ期間中は利用できません"
 
@@ -44600,6 +44608,7 @@
 		"inv_context_remove_patch"			"パッチを剥がす"		
 		"inv_context_openloadout"			"装備画面で表示"
 		"inv_context_sell"					"コミュニティマーケットで売却"
+		"inv_context_marketlisting"			"マーケットの出品リストを表示"
 		"inv_context_tradeup_add"			"トレードアップ契約で使用"
 		"inv_context_tradeup_remove"		"トレードアップ契約から削除"
 		"inv_context_open_contract"			"契約を開く"
@@ -44657,6 +44666,7 @@
 		"inv_session_prop_updated"			"更新済み！"
 		"inv_session_prop_quest_reward"		"報酬！"
 		"inv_session_prop_xpshopredeem"		"New!"
+		"inv_session_prop_marketlisting"	"<img src='file://{images}/icons/ui/coupon.svg' class='item-tile__onmarket'/>マーケット出品中"
 		"inv_equipped_item"					"<b>{s:team}</b> 用に <b>{s:name}</b> を装備"
 		"inv_equipped_item_noteam"			"<b>{s:name}</b>を装備"
 		"inv_unequipped_item"				"非装備の<b>{s:name}</b>"
@@ -44761,6 +44771,7 @@
 		"popup_delete_title"	"{s:itemname}"
 		"popup_delete_desc"		"本当にこのアイテムを削除しますか？"
 		"popup_delete_warning"	"アイテムを削除すると元に戻せません。"
+		"popup_delete_tooltip"	"長押しするとアイテムを削除できます。アイテムを削除すると元には戻せません。"
 		"popup_delete_button"	"アイテムを削除"
 
 		"popup_usegift_title"	"ギフト相手： {s:itemname}"
@@ -47549,7 +47560,7 @@
 		"laptop_app_version"						"v 1.1.0.2000"
 
 		"dealer_offer_attachment_title"							"{s:item-name}"
-		"dealer_offer_attachment_wear"						"{s:item-rarity}"
+		"dealer_offer_attachment_wear"							"{s:item-rarity}"
 		"dealer_offer_attachment_remaining_title"				"オファー #{d:offer-total}"
 		"dealer_offer_attachment_remaining"						"オファー #{d:offer-total}"
 		"dealer_offer_received_count"							"<b>{s:offer-count}</b>件目のオファー"
@@ -47564,8 +47575,8 @@
 		"user_btn_purchase_desc_purchase"		"長押しすると、このアイテムを購入できます。このターミナルは購入後に破棄されます。"
 		"user_btn_purchase_desc_continue"		"長押しでこのオファーを拒否し（取り消し不可）、次を表示します。"
 		"user_btn_purchase_desc_end"		"最終オファーを拒否し、このターミナルを破棄します。"
-		"user_btn_purchase_title"			"<b>{s:offer-count}件目のオファー</b> - おすすめの返答"
-		"user_btn_purchase_final_title"		"<b>最終オファー</b> - おすすめの返答"
+		"user_btn_purchase_title"			"{s:offer-count}件のオファー"
+		"user_btn_purchase_final_title"		"<b>最終オファー</b>"
 		"user_btn_decline_desc"				"このオファーを拒否し、次を表示します。"
 		"user_btn_accept"		"オファーを <b>{s:price}</b>で承諾"
 		"user_btn_accept_final"	"最終オファーを <b>{s:price}</b>で承諾"
@@ -47587,6 +47598,18 @@
 		"user_btn_pause"		"取引を一時停止"
 		"user_btn_end"			"最終オファーを拒否"
 
+		"user_message_limit_0"		"<b>{s:limit-setting}</b>まで提示できる。"
+		"user_message_limit_1"		"上限は<b>{s:limit-setting}</b>でどうだ？"
+		"user_message_limit_2"		"<b>{s:limit-setting}</b>までなら問題ない。"
+		"user_message_limit_3"		"上限は<b>{s:limit-setting}</b>でいい。"
+		"user_message_limit_unlimited_0"	"<b>上限はなし</b>だ。全部見せてくれ。"
+		"user_message_limit_unlimited_1"	"<b>いくらでも払う</b>。金の心配は無用だ。"
+		"user_message_limit_unlimited_2"	"冷やかしじゃない。<b>全部見せろ</b>。"
+		"user_message_limit_unlimited_3"	"撃てる武器なら買う。<b>上限はなし</b>だ。"
+		"user_message_limit_unlimited_4"	"上限なんかない。"
+		"offer_limit_setting"		"オファーの上限額：{s:limit}"
+		"offer_limit_setting_interface"		"オファーの上限額：{s:limit}<img src='file://{images}/icons/ui/expand.svg' class='expand-icon'/>"
+
 		"dealer_offer_Unknown"							"-"
 		"dealer_offer_1"								"1"
 		"dealer_offer_2"								"2"
@@ -47603,7 +47626,9 @@
 		"declined_offer_tooltip"	"拒否済みオファー"
 		"future_offer_tooltip"		"オファーは未公開です"
 		"laptop_expiration_tooltip"		"アップリンクターミナルとそのオファーが終了するまでの残り時間"
+		"laptop_max_offer_tooltip"		"オファーの上限額を設定します。その額以下のオファーのみ受け取ります。なお、この設定はいつでも変更できます。"
 		"collection_xp_tooltip"			"このコレクションのオファーを確認すると XP を獲得できます。開いて進捗を確認して、XP を受け取りましょう。"
+		"terminal_offer_limit_tooltip"		"アイテムのオファー上限額を更新します。武器商人はその額以下のオファーのみ表示します。"
 		"popup_lootlist_title"			"コレクションカタログ XP"
 		"popup_lootlist_desc"			"このコレクションのオファーを確認すると XP を獲得できます"
 		"popup_lootlist_progress"		"確認済みオファー: {d:seen}/{d:total}"
@@ -47614,13 +47639,17 @@
 		"popup_vpn_status_disconnected"	"ステータス: 未接続"
 		"popup_signal_full" 			"通信強度: 最大"
 		"popup_signal_ok" 				"通信強度: 強"
+		"popup_offer_limit_desc"		"今後の全オファーに適用するオファー上限額を更新します"
 		"laptop_battery_tooltip" 		"バッテリー残量: {d:percent}%"
 		"laptop_original_seal_tooltip" 	"このアップリンクターミナルで購入したアイテムには、オリジナルオーナー証明書が付属し、あなたが所有している間は有効となります。"
 		"laptop_zoom_tooltip" 			"マウスホイールをスクロールしてズームイン・アウトする"
 		"laptop_pan_tooltip" 			"「Shift」キー長押ししながらドラッグしてカメラをパン"
 		"laptop_pricing_tooltip"		"価格は世界共通で、このコレクション内の各アイテムの需要に応じて自動的に調整されます。"
 
-
+		"dealer_message_set_offer_limit_0"		"最初に確認させてくれ。いくらまで出せる？"
+		"dealer_message_set_offer_limit_1"		"まずはっきりさせておこう。<!--.25--> いくらまで出せる？"
+		"dealer_message_set_offer_limit_2"		"取引の前に確認だ。<!--.25-->上限はいくらだ？出せる額は？"
+		
 		"dealer_message_start_0"  	"どれもこれも調達品だ。<!--.25-->必要な装備は全部そろっている。厄介な書類もない。"
 		"dealer_message_start_1"  	"裏ルートの在庫を動かしているから、足もつかねえ。<!--.25-->ヤバイ物はないから安心しろ。何年も市場に流れてないし、誰も探していない。<!--.25-->ほら、興味があるなら、撃ってみろ。"
 		"dealer_message_start_2"  	"今朝、アラダンの税関に荷物を止められてよ。医療機器だとか、貧しい死にかけの…どっかの誰かの話で泣き落とそうとしたんだが、無駄だった。<!--.25-->札束を詰めたブリーフケースを用意しておいてよかったよ。<!--.25-->さて、孤児たちに「透析装置」を届ける前に、ちょいと見ていかねえか？"
@@ -47628,7 +47657,7 @@
 		"dealer_message_start_4"  	"今日持ってきたブツはどれもクリーンだ。<!--.25-->表向きじゃ誰の手にも渡ってないことになっている。あんたが最初の持ち主ってことだ。"
 		"dealer_message_start_5"  	"シリアル番号がないクリーンなブツだ。動作も問題ない。<!--.25-->軍事裁判なら証拠品扱いになるだろう。<!--.25-->俺とあんたにとっては、とびきりの逸品だがな。"
 		"dealer_message_start_6"  	"この出荷品はどれも、パレード部隊から「解放」されたばかりの珍品だ。<!--.25-->パレードで使われただけで、発砲は一度もされていない。"
-		"dealer_message_start_7"  	"おう、あんたか。<!--.25-->あんた以外の客はみんな、どうやって手に入れたかばかり気にしやがる。俺はあれが死ぬほどキライでね。<!--.25-->だが、あんたが気にするのは市場で一番いいブツかどうかだけ。<!--.25-->で、その答えはもちろん、イエスさ。"
+		"dealer_message_start_7"  	"あんた以外の客はみんな、どうやって手に入れたかばかり気にしやがる。俺はあれが死ぬほどキライでね。<!--.25-->だが、あんたが気にするのは市場で一番いいブツかどうかだけ。<!--.25-->で、その答えはもちろん、イエスさ。"
 		"dealer_message_start_8"  	"ドロスヴィクで和平合意だとよ。いいねえ、これが平和ってやつかい？<!--.25-->借金まみれのお偉いさんとホコリかぶった武器でパンパンの武器庫。.<!--.25-->いや、その…<!--.25-->もちろん、平和なのはいいことだ。罪のない人間の命がな…<!--.25-->いやいや、なに言ってんだ。あんたには関係ねえか。"
 		"dealer_message_start_9"  	"この荷物は、グレーな抜け道をくぐり抜けてきた珍品だ。<!--.25-->口径がちょっと変わってて素人には扱えねえ。あんたなら気に入るだろう。"
 		"dealer_message_start_10"  	"こりゃヤバい。<!--.25-->発送明細のラベルを間違えて付けちまった。<!--.25-->ざっと、数十箱か。<!--.25-->港湾当局が調べる前になかったことにしたい。手伝ってくれ。"
@@ -47651,7 +47680,6 @@
 		"dealer_message_start_27"	"反政府勢力と仕事をするのは嫌いだ。お行儀よく言えば、「市民」。要するに、クソ素人様よ。<!--.25-->まあいい。とにかく、そいつらとの連絡が途絶えたんで、本物のプロにこの装備を回すことにしたんだ。"
 		"dealer_message_start_28"	"火種が絶えない南の地で議会がぶっ潰れた。半年に一度の恒例行事よ。<!--.25-->地元の武器庫の中身が、派手に荒らされてよ。ピニャータかよ、ってな。"
 		"dealer_message_start_29"	"先週の金曜に、この積荷は怪しいって港湾当局の検査官が言いやがった。<!--.25-->で、月曜には娘の学費がそろって、スタンウィックにも通えるようになってたんだ。積荷もまた「農具」に早変わり。<!--.25-->いいか、教育は大事ってことよ。さて、「農具」を見てみようじゃないか。"
-
 
 		"dealer_message_resume_0"  	"<!--1-->よし、戻ったか。今ならまだ取引できるぜ。"
 		"dealer_message_resume_1"  	"<!--1-->考える時間がほしかったか？ かまわねえよ。"
@@ -47715,7 +47743,6 @@
 		"dealer_message_next_offer_39"   "<!--1-->問題ない。俺でも買わないしな。だが、こいつは違うぜ。"
 		"dealer_message_next_offer_40"   "<!--1-->ったく、倉庫の奥に隠してるアレまで引っ張りだせってか。いいだろう、任せろ。"
 
-
 		"dealer_message_last_offer_0"	"<!--0-->これで最後だ。乗るか降りるか、決めてくれ。"
 		"dealer_message_last_offer_1"	"<!--0-->これが最後のオファーだ。"
 		"dealer_message_last_offer_2"	"<!--0-->最後のオファーだ。やるかやらないか。俺の時間を無駄にするなよ。"
@@ -47742,7 +47769,7 @@
 		"dealer_message_timerexpired_7"		"<!--.1-->てっきり誰かをぶっ殺すのを手伝うつもりだったがな。<!--.5-->蓋を開けりゃ、俺の時間が無駄になっただけとはな。"
 		"dealer_message_timerexpired_8"		"<!--.1-->取引は終わりだ。"	
 		"dealer_message_timerexpired_9"		"<!--.1-->時間切れだ。"
-		"dealer_message_timerexpired_10"		"<!--.1-->よし、もううんざりだ。ここまでにしよう。"		
+		"dealer_message_timerexpired_10"	"<!--.1-->よし、もううんざりだ。ここまでにしよう。"		
 
 		"dealer_message_open_check_out_0"		"<!--.5-->こいつはあんたにぴったりだ。これを見てたらあんたのことを思い出した。さあ、決めようじゃないか。"
 		"dealer_message_open_check_out_1"		"<!--.5-->賢い判断だ。すぐに梱包して準備してくるよ。"
@@ -47751,8 +47778,8 @@
 		"dealer_message_open_check_out_4"		"<!--.5-->完璧だ。じゃあ成立ってことで。"		
 		"dealer_message_open_check_out_5"		"<!--.5-->いい選択だ。"	
 		"dealer_message_open_check_out_6"		"<!--.5-->最高に賢い選択だ。仕上げといくか。"		
-		"dealer_message_open_check_out_7"		"<!--.5-->よし、ちゃんとまとめよう。"	
-		
+		"dealer_message_open_check_out_7"		"<!--.5-->よし、ちゃんとまとめよう。"
+
 		"dealer_message_txn_xld_bailout_0"		"<!--.5-->急ぐことはない。俺の居場所はわかっているだろう。"
 		"dealer_message_txn_xld_bailout_1"		"<!--.5-->俺はどこにも行かない。"
 		"dealer_message_txn_xld_bailout_2"		"<!--.5-->まあ、今のところはキープしといてやろう。"
@@ -47820,12 +47847,30 @@
 		"dealer_message_addition_factory_new_1"	"<!--.25-->完全な新品だ。ピッカピカよ。"
 		"dealer_message_addition_factory_new_2"	"<!--.25-->保管庫から直で持ってきた。ファクトリーニューってやつよ。"
 		"dealer_message_addition_factory_new_3"	"<!--.25-->工場出荷品だ。一発も撃っちゃいない。"
+		
+		"dealer_message_limit_first_time_0"		"いいだろう。{s:limit}以下のオファーだけ見せよう。<!--.25-->さて、なにが欲しい？"
+		"dealer_message_limit_first_time_2"		"{s:limit}以下のオファーだけだな。任せろ。<!--.25--> 時間がない。始めよう。"
+		"dealer_message_limit_first_time_3"		"よし、わかった。<!--.25-->始めるか。"
+		"dealer_message_limit_first_time_unlimited_0"		"上限なしか、よし。全部見せてやろう。<!--.25--> 時間もないし、始めるぞ。"
+		"dealer_message_limit_first_time_unlimited_1"		"よし、上限なしか。本気の取引といくか。<!--.25-->で、何が欲しいんだ？"
+
+		"dealer_message_limit_0"				"いいだろう。{s:limit}以下のオファーだけ見せよう。"
+		"dealer_message_limit_1"				"{s:limit}以下のオファーだけだな。任せろ。"
+		"dealer_message_limit_2"				"条件を調整する。{s:limit}までのオファーだけだ。"
+		"dealer_message_limit_3"				"{s:limit}までのオファーだな。よし、更新した。"
+		"dealer_message_limit_4"				"{s:limit}以下のブツだけ出してやろう。"
+		"dealer_message_limit_5"				"{s:limit}が新しい上限額だな。"
+		"dealer_message_limit_6"				"分かった。{s:limit}までのオファーに絞る。"
+		"dealer_message_limit_unlimited_0"		"上限なしか、よし。全部見せてやろう。"
+		"dealer_message_limit_unlimited_1"		"上限なしか、いいぞ。珍しいブツが回ってきたら出し惜しみしない。"
+		"dealer_message_limit_unlimited_2"		"そいつはいい。条件に合うブツが入ったらすぐに見せてやる。"
+		"dealer_message_limit_unlimited_3"		"よし、上限なしか。本気の取引といくか。"
 
 		"system_dealer_left_chat_0"				"商人がチャットから退出しました。"
 		"system_dealer_join_chat_0"				"{s:collection} 武器取引オファー。.<!--1.25-->商人接続中"
 		"system_user_reject_offer_0"			"{s:user-name}がオファーを拒否しました。"
-		
 
+		"system_user_updated_offer_limit_0"			"オファー上限額を{s:limit}に更新しました。この設定はいつでも変更できます。"
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -48060,8 +48105,8 @@
 		"quest_11015_var_desc:p{mission-points}"	 	" <b>{s:gamemode}：{s:location}</b>でラウンド勝利する。"
 		"quest_11015_var_ingame:p{mission-points}"		"ラウンド勝利する"
 
-// crow_mask_51588_comment
-// crow_mask_51589_comment
+// crow_mask_51633_comment
+// crow_mask_51634_comment
 }
 
 
@@ -48070,46 +48115,7 @@
 }
 
 
-弾が発射された。"
-		"funfact_money_spent:f"											"{s:funfact-player} はこのラウンドで ${d:funfact-d1} を消費した。"
-		"funfact_grenades_thrown:f"										"{s:funfact-player} はラウンド中に {d:funfact-d1} 個のグレネードを投げた。"
-		"funfact_used_all_ammo:f"										"{s:funfact-player} は弾薬を完全に撃ち尽くした。"
-		"funfact_survived_multiple_attackers:f"							"{s:funfact-player} は {d:funfact-d1} 人の敵から襲撃されて生き抜いた。"
-		"funfact_died_from_multiple_attackers:f"						"{s:funfact-player} は {d:funfact-d1} 人の敵からダメージを受けた後に死亡した。"
-		"funfact_defended_bomb:f"										"{s:funfact-player} は設置した爆弾を {d:funfact-d1} 人の敵から守った。"
-		"funfact_items_dropped_value:f"									"{s:funfact-player} は ${d:funfact-d1} 分の物資を捨てた。"
-		"funfact_kill_wounded_enemies:f"								"{s:funfact-player} は負傷した敵 {d:funfact-d1} 人にとどめを刺した。"
-		"funfact_damage_multiple_enemies:f"								"{s:funfact-player} は {d:funfact-d1} 人の敵にダメージを与えた。"
-		"funfact_used_multiple_weapons:f"								"{s:funfact-player} は {d:funfact-d1} 種類の銃火器を使用した。"
-		"funfact_terrorist_accuracy:f"									"テロリストが最高命中率を獲得: {d:funfact-d1}%。"
-		"funfact_ct_accuracy:f"											"カウンターテロリストが最高命中率を獲得: {d:funfact-d1}%。"
-		"funfact_ct_win_no_kills:f"										"カウンターテロリストはテロリストを1人も倒すことなく勝利した。"
-		"funfact_t_win_no_kills:f"										"テロリストはカウンターテロリストを1人も倒すことなく勝利した。"
-		"funfact_t_win_no_casualties:f"									"テロリストは1人も犠牲者を出さずに勝利した。"
-		"funfact_ct_win_no_casualties:f"								"カウンターテロリストは1人も犠牲者を出さずに勝利した。"
-		"funfact_best_terrorist_accuracy:f"								"{s:funfact-player} の命中率は {d:funfact-d1}%、チームの命中率は {d:funfact-d2}% だった。"
-		"funfact_best_counterterrorist_accuracy:f"						"{s:funfact-player} の命中率は {d:funfact-d1}%、チームの命中率は {d:funfact-d2}% だった。"
-		"funfact_fallback1:f"											"ケーキはウソ。"
-		"funfact_fallback2:f"											"あくび。"
-		"funfact_draw:f"												"プレイヤーの投票に基づきマッチが再スタートされました。"
-		"funfact_broke_windows:f"										"{s:funfact-player} は {d:funfact-d1} 枚の窓を割った。"
-		"funfact_nightvision_damage:f"									"{s:funfact-player} はナイトビジョンの着用中に {d:funfact-d1} ダメージを与えた。"
-		"funfact_defused_with_dropped_kit:f"							"{s:funfact-player} は落ちていたキットで爆弾を解除した。"
-		"funfact_killed_half_of_enemies:f"								"{s:funfact-player} は敵チームの {d:funfact-d1}% を倒した。"
-		"funfact_knife_level_reached:f"									"{d:funfact-d1} 人のプレイヤーがゴールドナイフレベルに到達した。"
-		"funfact_killed_before_dying:f"									"{s:funfact-player} は死ぬまでに {d:funfact-d1} 人のプレイヤーを倒した。"
-		"funfact_respawned:f"											"{s:funfact-player} はマッチ中に {d:funfact-d1} 回リスポーンした。"
-		"funfact_default_weapon:f"										"{s:funfact-player} は一度も武器を拾わずにラウンドを勝利した。"
-		"funfact_rounds_without_dying:f"								"{s:funfact-player} は連続 {d:funfact-d1} ラウンド死亡しなかった。"
-		"funfact_taser_kill:f"											"{s:funfact-player} は {d:funfact-d1} 人のプレイヤーを気絶させた。"
-		"funfact_ticking_time:f"										"{d:funfact-d1} 人のCTが爆弾解除を試みたもののテロリストが勝利した。"
-		"funfact_ct_win_time:f"											"CT勢は {d:funfact-d1} 秒でテロリストを全滅させた。"
-		"funfact_ter_win_time:f"										"テロリストチームは {d:funfact-d1} 秒でCT勢を全滅させた。"
-		"funfact_bots_assumed:f"										"{s:funfact-player} はこのラウンドで {d:funfact-d1} 体の BOT を操作した。"
-		"funfact_domination:f"											"{s:funfact-player} がほとんどのプレイヤーを制圧した。"
-		"funfact_revenge:f"												"{s:funfact-player} は {d:funfact-d1} 人のプレイヤーにリベンジした。"
-		"funfact_steps_taken:f"											"{s:funfact-player} はマッチ中に {d:funfact-d1} 歩走った。"
-		"funfact_quarter_health:f"										"{s:funfact-player} はヘルスが25未満の状態で {d:funfact-d1} 人のプレイヤーを倒した。"
+�の状態で {d:funfact-d1} 人のプレイヤーを倒した。"
 		"funfact_empty_guns:f"											"{s:funfact-player} は銃 {d:funfact-d1} 種の弾を撃ち尽くした。"
 		"funfact_slow_trigger:f"										"{s:funfact-player} は銃 {d:funfact-d1} 種を発砲することなく死亡した。"
 		"funfact_pickup_bomb:f"											"{s:funfact-player} は {d:funfact-d1} 人のチームメイトが所持していた爆弾を設置した。"

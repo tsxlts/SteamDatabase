@@ -2484,7 +2484,6 @@
 		"ItemHistory_Action_TournamentDrop"								"Nhận một gói lưu niệm"
 		"ItemHistory_Action_TemplateItemGrant"							"Đã nhận"
 		"ItemHistory_Action_Market_Add"									"Nhận từ chợ cộng đồng Steam"
-
 		"ItemHistory_Transaction_Delete"								"Do bạn xoá"
 		"ItemHistory_Transaction_Craft"									"Chế tạo ra"
 		"ItemHistory_Transaction_UnlockCrate"							"Mở một hòm"
@@ -48011,6 +48010,7 @@
 		"popup_delete_title"	"{s:itemname}"
 		"popup_delete_desc"		"Bạn có chắc muốn xóa vật phẩm này không?"
 		"popup_delete_warning"	"Không thể hoàn tác việc xóa vật phẩm."
+		"popup_delete_tooltip"	"Nhấn giữ để xóa vật phẩm này. Không thể hoàn tác sau khi xóa vật phẩm."
 		"popup_delete_button"	"Xóa vật phẩm"
 
 		"popup_usegift_title"	"Phát {s:itemname}"
@@ -50869,7 +50869,7 @@
 		"laptop_app_version"						"Phiên bản 1.1.0.2000"
 
 		"dealer_offer_attachment_title"							"{s:item-name}"
-		"dealer_offer_attachment_wear"						"{s:item-rarity}"
+		"dealer_offer_attachment_wear"							"{s:item-rarity}"
 		"dealer_offer_attachment_remaining_title"				"ĐỀ NGHỊ #{d:offer-total}"
 		"dealer_offer_attachment_remaining"						"Đề nghị #{d:offer-total}"
 		"dealer_offer_received_count"							"Đề nghị thứ <b>{s:offer-count}</b>"
@@ -50884,8 +50884,6 @@
 		"user_btn_purchase_desc_purchase"		"Giữ để mua vật phẩm này. Sau khi mua, thiết bị đầu nối sẽ tự hủy."
 		"user_btn_purchase_desc_continue"		"Giữ để từ chối vĩnh viễn đề nghị này và xem đề nghị tiếp theo."
 		"user_btn_purchase_desc_end"		"Từ chối đề nghị cuối cùng và hủy thiết bị đầu nối này."
-		"user_btn_purchase_title"			"<b>Đề nghị #{s:offer-count}</b> - Đề xuất phản hồi"
-		"user_btn_purchase_final_title"		"<b>Đề nghị cuối cùng</b> - Đề xuất phản hồi"
 		"user_btn_decline_desc"				"Từ chối đề nghị này và xem đề nghị khác"
 		"user_btn_accept"		"Chấp nhận đề nghị <b>{s:price}</b>"
 		"user_btn_accept_final"	"Chấp nhận đề nghị cuối cùng <b>{s:price}</b>"
@@ -50940,7 +50938,6 @@
 		"laptop_pan_tooltip" 			"Giữ nút \"Shift\" và kéo để di chuyển camera"
 		"laptop_pricing_tooltip"		"Giá cả được áp dụng toàn cầu và điều chỉnh dựa trên nhu cầu từng mặt hàng trong bộ sưu tập."
 
-
 		"dealer_message_start_0"  	"Mấy thứ này đều theo chuẩn cho dân chuyên hết.<!--.25-->Chất lượng khỏi bàn. Giấy tờ cũng khỏi luôn."
 		"dealer_message_start_1"  	"Đang muốn tiễn lô hàng chợ đen, không giấy tờ gì hết.<!--.25-->Đừng lo, an toàn để mua. Không còn lưu hành mấy năm rồi, chả ai ngó tới.<!--.25-->Vẫn bắn ngon khi ngắm trúng mục tiêu, khỏi thắc mắc."
 		"dealer_message_start_2"  	"Hải quan Ahradan giam hàng của tôi vào sáng nay. Tôi cố cứu vớt bằng một câu chuyện thương tâm có người đang hấp hối cần mớ thiết bị y tế... ai biết là ai đâu.<!--.25-->Không ăn thua. Nhưng chiếc cặp đầy tiền thì có.<!--.25-->Xem qua mớ máy lọc máu trước khi tôi chuyển cho bọn trẻ mồ côi nhé."
@@ -50948,7 +50945,6 @@
 		"dealer_message_start_4"  	"Đồ tôi có hôm nay sạch lắm.<!--.25-->Về lý thuyết thì bạn là người đầu tiên chạm tay vào."
 		"dealer_message_start_5"  	"Hàng không nguồn gốc, không số sê-ri, hoạt động hoàn hảo.<!--.25-->Tòa án chiến tranh sẽ coi đây là bằng chứng.<!--.25-->Hai ta đều biết đây là kiệt tác tuyệt cmn vời."
 		"dealer_message_start_6"  	"Cả nguyên lô hàng ngoại nhập vừa được giải phóng từ đơn vị diễu hành.<!--.25-->Chủ yếu cầm khoe chứ chưa bắn bao giờ."
-		"dealer_message_start_7"  	"À. Đằng đó hở.<!--.25-->Mấy gã khách kia toàn muốn biết làm sao tôi có nguồn hàng mà bán ra. Vô duyên ghê.<!--.25-->Mấy người chỉ cần biết đây có phải là món hàng nóng nhất thị trường không.<!--.25-->Xin thưa: Chuẩn không cần chỉnh."
 		"dealer_message_start_8"  	"Hiệp định hòa bình tại Drosvik. Tôi yêu hòa bình.<!--.25-->Bởi vì tôi quen biết một viên tướng với đống nợ khổng lồ và kho vũ khí đóng bụi.<!--.25-->Ừ thì...<!--.25-->Đương nhiên hòa bình cũng tốt mà. Mạng sống vô tội và...<!--.25-->Tôi đang nói vớ vẩn gì thế, đằng ấy đâu có quan tâm."
 		"dealer_message_start_9"  	"Lô này toàn hàng ngoại nhập chợ đen.<!--.25-->Toàn đồ hiếm, tay mơ không có cửa rờ tới. Xài thì chỉ có mà mê."
 		"dealer_message_start_10"  	"Xấu hổ quá.<!--.25-->Tôi hẳn đã vô tình dán nhầm nhãn một thùng hàng trong lô vận chuyển.<!--.25-->Đúng hơn thì vài chục thùng.<!--.25-->Sao không tôi giúp úm ba la tìm không ra đống hàng tồn trước khi cơ quan quản lý cảng có cớ vào cuộc?"
@@ -50971,7 +50967,6 @@
 		"dealer_message_start_27"	"Tôi ghét thương thảo với phe phiến loạn. Nói thẳng ra là tụi dân thường, còn nói thẳng nữa thì là lũ nghiệp dư chết dẫm.<!--.25-->Chẹp thôi tình hình cũng chả khả quan, trao món thiết bị này cho mấy tay chuyên nghiệp thì hơn."
 		"dealer_message_start_28"	"Khu vực nóng quanh năm ở phía nam vừa chứng kiến sự sụp đổ của quốc hội hai năm một lần.<!--.25--> Cả đống kho vũ khí địa phương giờ bung bét ra cho thiên hạ dòm ngó."
 		"dealer_message_start_29"	"Thanh tra quản lý cảng nói đây là lô hàng bất thường vào thứ Sáu tuần trước.<!--.25-->Tới thứ Hai, khi con gái hắn có đủ tiền học phí đóng cho trường Stamwick thì lô hàng lại được xem là dụng cụ nông nghiệp.<!--.25-->Nói gì giờ, giáo dục quan trọng lắm chứ đùa. Giờ chúng ta ngắm nghía mấy món đồ nông nghiệp ha."
-
 
 		"dealer_message_resume_0"  	"<!--1-->Quay lại hả. Tốt. Đề nghị vẫn còn hiệu lực."
 		"dealer_message_resume_1"  	"<!--1-->Cần chút thời gian để suy nghĩ? Cứ vô tư."
@@ -51035,7 +51030,6 @@
 		"dealer_message_next_offer_39"   "<!--1-->Không sao. Nếu là tôi cũng chẳng mua. Nhưng món này thì khác..."
 		"dealer_message_next_offer_40"   "<!--1-->Bắt tôi phải vòng ra sau để lấy mấy món hàng cao cấp hả? Ô kê, thích thì chiều."
 
-
 		"dealer_message_last_offer_0"	"<!--0-->Rồi, đề nghị cúng cùi cuối cùng đây. Có chấp nhận không?"
 		"dealer_message_last_offer_1"	"<!--0-->Hãy coi đây là đề nghị cuối cùng của tôi."
 		"dealer_message_last_offer_2"	"<!--0-->Đề nghị cuối cùng. Đằng ấy mua không mua nói một lời, đừng lần lữa nữa."
@@ -51062,7 +51056,7 @@
 		"dealer_message_timerexpired_7"		"<!--.1-->Cứ nghĩ tôi đang giúp bạn giết thêm mạng.<!--.5-->Hóa ra tôi chỉ phí thời gian."
 		"dealer_message_timerexpired_8"		"<!--.1-->Thỏa thuận thất bại."	
 		"dealer_message_timerexpired_9"		"<!--.1-->Hết giờ."
-		"dealer_message_timerexpired_10"		"<!--.1-->Tôi chán ngán lắm rồi. Thôi khỏi giao dịch gì nữa."		
+		"dealer_message_timerexpired_10"	"<!--.1-->Tôi chán ngán lắm rồi. Thôi khỏi giao dịch gì nữa."		
 
 		"dealer_message_open_check_out_0"		"<!--.5-->Món này là dành cho bạn. Thế nên tôi mới nghĩ tới bạn trước. Chốt kèo thôi."
 		"dealer_message_open_check_out_1"		"<!--.5-->Quyết định sáng suốt đấy. Để tôi đóng gói cẩn thận cho nhé."
@@ -51071,8 +51065,8 @@
 		"dealer_message_open_check_out_4"		"<!--.5-->Hoàn hảo rồi. Triển thôi."		
 		"dealer_message_open_check_out_5"		"<!--.5-->Chọn chuẩn đó."	
 		"dealer_message_open_check_out_6"		"<!--.5-->Lựa chọn khôn ngoan nhất của bạn rồi. Chốt nhé."		
-		"dealer_message_open_check_out_7"		"<!--.5-->Tuyệt. Ký tên đóng dấu chốt deal nhé."	
-		
+		"dealer_message_open_check_out_7"		"<!--.5-->Tuyệt. Ký tên đóng dấu chốt deal nhé."
+
 		"dealer_message_txn_xld_bailout_0"		"<!--.5-->Không vội. Bạn biết tìm tôi ở đâu mà."
 		"dealer_message_txn_xld_bailout_1"		"<!--.5-->Tôi sẽ ở đây chờ."
 		"dealer_message_txn_xld_bailout_2"		"<!--.5-->Tôi sẽ giữ lại đề nghị này và chờ bạn."
@@ -51140,11 +51134,10 @@
 		"dealer_message_addition_factory_new_1"	"<!--.25-->Và còn mới nguyên. Chưa bóc tem."
 		"dealer_message_addition_factory_new_2"	"<!--.25-->Lấy trực tiếp từ kho. Mới nguyên."
 		"dealer_message_addition_factory_new_3"	"<!--.25-->Cái này còn mới nguyên. Chưa bắn bao giờ."
-
+		
 		"system_dealer_left_chat_0"				"Tay buôn đã rời phòng trò chuyện."
 		"system_dealer_join_chat_0"				"Đề nghị từ tay buôn vũ khí cho {s:collection}.<!--1.25-->Đã kết nối với tay buôn"
 		"system_user_reject_offer_0"			"{s:user-name} từ chối đề nghị."
-		
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
@@ -51383,6 +51376,24 @@
 		"quest_11013_var_ingame:p{mission-points}"		"Thắng ván đấu"
 		
 		"quest_11014_var_desc:p{mission-points}"	 	"Thắng ván đấu trong <b>{s:gamemode}: {s:location}</b>."
+		"quest_11014_var_partial" 				""
+		"quest_11014_var_ingame:p{mission-points}"		"Thắng ván đấu"
+		
+		"quest_11015_var_desc:p{mission-points}"	 	"Thắng ván đấu trong <b>{s:gamemode}: {s:location}</b>."
+		"quest_11015_var_partial" 				""
+		"quest_11015_var_ingame:p{mission-points}"		"Thắng ván đấu"
+
+// crow_mask_51633_comment
+// crow_mask_51634_comment
+}
+
+
+
+
+}
+
+
+:location}</b>."
 		"quest_11014_var_partial" 				""
 		"quest_11014_var_ingame:p{mission-points}"		"Thắng ván đấu"
 		

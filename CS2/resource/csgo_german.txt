@@ -2480,7 +2480,6 @@
 		"ItemHistory_Action_TournamentDrop"								"Souvenirfund erhalten"
 		"ItemHistory_Action_TemplateItemGrant"							"Verdient"
 		"ItemHistory_Action_Market_Add"									"Im Steam-Communitymarkt erworben"
-
 		"ItemHistory_Transaction_Delete"								"Von Ihnen gelöscht"
 		"ItemHistory_Transaction_Craft"									"Hergestellt"
 		"ItemHistory_Transaction_UnlockCrate"							"Behälter geöffnet"
@@ -24592,15 +24591,15 @@
 	"CSGO_crate_store_pack_aus2025_contenders_groupname" "Aufkleber: Anwärter"
 
 	"CSGO_crate_sticker_pack_aus2025_legends_tag" "Austin 2025 – Legenden"
-	"CSGO_crate_sticker_pack_aus2025_legends"     "Aufkleberkapsel | Legenden | Austin 2025"
+	"CSGO_crate_sticker_pack_aus2025_legends"     "Aufkleberkapsel | Legenden | Austin 2025"
 	"CSGO_crate_sticker_pack_aus2025_legends_tinyname" "Aufkleber: Legenden"
 	"CSGO_crate_sticker_pack_aus2025_legends_desc" "Diese Kapsel enthält einen einzelnen Legenden-Aufkleber zur BLAST.tv Austin 2025 (Standard, Glanz, Holo oder Gold).\n\n50 % der Erlöse durch den Verkauf dieser Kapsel unterstützen die teilnehmenden Organisationen.\n\nDer Aufkleber kann an jede Ihrer Waffen angebracht und abgekratzt werden, um abgenutzter auszusehen. Sie können einen Aufkleber mehrmals abkratzen, wodurch er jedes Mal etwas abgenutzter wird, bevor er gänzlich von der Waffe entfernt wird."
 	"CSGO_crate_sticker_pack_aus2025_challengers_tag" "Austin 2025 – Herausforderer"
-	"CSGO_crate_sticker_pack_aus2025_challengers"     "Aufkleberkapsel | Herausforderer | Austin 2025"
+	"CSGO_crate_sticker_pack_aus2025_challengers"     "Aufkleberkapsel | Herausforderer | Austin 2025"
 	"CSGO_crate_sticker_pack_aus2025_challengers_tinyname" "Aufkleber: Herausforderer"
 	"CSGO_crate_sticker_pack_aus2025_challengers_desc" "Diese Kapsel enthält einen einzelnen Herausforderer-Aufkleber zur BLAST.tv Austin 2025 (Standard, Glanz, Holo oder Gold).\n\n50 % der Erlöse durch den Verkauf dieser Kapsel unterstützen die teilnehmenden Organisationen.\n\nDer Aufkleber kann an jede Ihrer Waffen angebracht und abgekratzt werden, um abgenutzter auszusehen. Sie können einen Aufkleber mehrmals abkratzen, wodurch er jedes Mal etwas abgenutzter wird, bevor er gänzlich von der Waffe entfernt wird."
 	"CSGO_crate_sticker_pack_aus2025_contenders_tag" "Austin 2025 – Anwärter"
-	"CSGO_crate_sticker_pack_aus2025_contenders"     "Aufkleberkapsel | Anwärter | Austin 2025"
+	"CSGO_crate_sticker_pack_aus2025_contenders"     "Aufkleberkapsel | Anwärter | Austin 2025"
 	"CSGO_crate_sticker_pack_aus2025_contenders_tinyname" "Aufkleber: Anwärter"
 	"CSGO_crate_sticker_pack_aus2025_contenders_desc" "Diese Kapsel enthält einen einzelnen Anwärter-Aufkleber zur BLAST.tv Austin 2025 (Standard, Glanz, Holo oder Gold).\n\n50 % der Erlöse durch den Verkauf dieser Kapsel unterstützen die teilnehmenden Organisationen.\n\nDer Aufkleber kann an jede Ihrer Waffen angebracht und abgekratzt werden, um abgenutzter auszusehen. Sie können einen Aufkleber mehrmals abkratzen, wodurch er jedes Mal etwas abgenutzter wird, bevor er gänzlich von der Waffe entfernt wird."
 
@@ -32215,7 +32214,7 @@
 		"CSGO_CustomPlayer_ctm_st6_variantl"					"„ZweiMal“ McCoy | TACP-Kavallerie"
 		"CSGO_CustomPlayer_ctm_st6_variantl_Desc"				"McCoy verdiente sich seinen Spitznamen, indem er das Feldtraining der TACP zweimal abschloss. Offizielle Aufzeichnungen führen dies auf eine Terminverwechslung zurück, aber seine Teamkameraden berichten, dass sie ihn davon abhalten wollten.\n\nMit scheinbar unerschöpflicher körperlicher und geistiger Ausdauer bleibt McCoy oft als letzter Überlebender am Ende eines Konflikts übrig – verbal und körperlich. Sein gelbes Halstuch ist ein Tribut an seine Zeit mit der Ersten Kavalleriedivision.\n\n<i>Jap. Immer noch hier.</i>"
 		
-		"CSGO_CustomPlayer_ctm_st6_variantn"					"Primeiro Tenente | 1. Brasilianisches Bataillon"
+		"CSGO_CustomPlayer_ctm_st6_variantn"					"Primeiro Tenente | 1. Brasilianisches Bataillon"
 		"CSGO_CustomPlayer_ctm_st6_variantn_Desc"				"Als Spezialist für Überlebenskämpfe im tiefen Dschungel schärft das 1. Brasilianische Bataillon seine Zähne an den Ufern des mächtigen Amazonas.\n\n<i>Überraschungen willkommen.</i>"
 		
 		// SWAT 
@@ -32238,7 +32237,7 @@
         "CSGO_CustomPlayer_ctm_swat_variantj"                   "Spezialist für chemische Gefahren | SWAT"
         "CSGO_CustomPlayer_ctm_swat_variantj_Desc"              "Die SWAT-Spezialisten für chemische Gefahren können selbst bei Einsätzen in hochgiftigen Umgebungen mehrere Stunden überleben. Sie stürzen sich in Situationen, vor denen andere weglaufen.\n\n<i>Fühlt sich an wie zu Hause.</i>"		
 
-		"CSGO_CustomPlayer_ctm_swat_variantk"                   "Leutnant „Baumkuschler“ Farlow | SWAT"
+		"CSGO_CustomPlayer_ctm_swat_variantk"                   "Leutnant „Baumkuschler“ Farlow | SWAT"
         "CSGO_CustomPlayer_ctm_swat_variantk_Desc"              "Niemand sonst versteht es so gut wie Farlow, Kampfeinsätze zu genießen, die Sonnencreme, Mückenschutzmittel und M4A4-Sturmgewehre erfordern.\n\n<i>Irgendwie schön, mal aus der Kälte rauszukommen, oder?</i>"
 		
 		// BALKAN
@@ -32269,7 +32268,7 @@
 		"CSGO_CustomPlayer_ctm_sas_variantf"					"B Squadron Officer | SAS"
 		"CSGO_CustomPlayer_ctm_sas_variantf_Desc"				"Streng geheim und unglaublich tödlich. Die Offiziere in der SAS verbringen Jahre damit, ihre Fähigkeiten durch Infiltration, Geiselrettung und –ZENSIERT– Missionen zu verbessern, über die die Öffentlichkeit besser nichts weiß.\n\n<i>Wer wagt, gewinnt.</i>"
 		
-		"CSGO_CustomPlayer_ctm_sas_variantg"					"Offizier der Staffel D | NZSAS"
+		"CSGO_CustomPlayer_ctm_sas_variantg"					"Offizier der Staffel D | NZSAS"
 		"CSGO_CustomPlayer_ctm_sas_variantg_Desc"				"Streng geheim und unglaublich tödlich. Die Offiziere in der SAS verbringen Jahre damit, ihre Fähigkeiten durch Infiltration, Geiselrettung und –ZENSIERT– Missionen zu verbessern, über die die Öffentlichkeit besser nichts weiß.\n\n<i>Wer wagt, gewinnt.</i>"
 
 		// PHOENIX
@@ -32303,7 +32302,7 @@
         "CSGO_Customplayer_tm_professional_varf4"               "Grausamer Schreihals-Darryl | Die Profis"
         "CSGO_Customplayer_tm_professional_varf4_Desc"          "Der Anführer der Räuberbande „Die Profis“ ist großspurig, hat immer einen passenden Spruch parat und kann erschreckend gleichgültig gegenüber den Leiden anderer sein. Er selbst würde sich als ganz normalen Kerl bezeichnen, der sich am Wochenende ein bisschen Spaß mit den bewaffneten Steuereintreibern vor Ort gönnt. Er verharmlost die Gefahren, denen er sich aussetzt, auch wenn er von Kugeln durchlöchert als letzter Überlebender vor dem Tresor hockt, um ihn in letzter Sekunde zu sprengen.\n\nDiese Maske wurde mit Clown-Make-up bemalt. Perfekt, um reichen, verwöhnten Babys Süßigkeiten zu stehlen.\n\n<i>Ich weine nur innerlich.</i>"
 		
-		"CSGO_Customplayer_tm_professional_varf5"               "Mittelloser grausamer Darryl | Die Profis"
+		"CSGO_Customplayer_tm_professional_varf5"               "Mittelloser grausamer Darryl | Die Profis"
         "CSGO_Customplayer_tm_professional_varf5_Desc"          "Bevor er Anführer der Räuberbande „Die Profis“ war, wurde der Grausame Darryl einfach „Grausamer Darryl“ genannt. Immer noch der freundliche Psychopath aus der Nachbarschaft, im wahrsten Sinne des Wortes. Laut Australiern ist er eigentlich kein Australier.\n\n<i>Ich geb’ denen einfach ein bisschen von meinem Razzle Dazzle.</i>"
                 
         "CSGO_Customplayer_tm_professional_varg"                "Panzerknackerin Voltzmann | Die Profis"
@@ -32320,13 +32319,13 @@
 
 		// GENDARMERIE
 
-        "CSGO_Customplayer_ctm_gendarmerie_varianta"                "Sous-Lieutenant des militärischen Sanitätsdienstes | Gendarmerie Nationale"
+        "CSGO_Customplayer_ctm_gendarmerie_varianta"                "Sous-Lieutenant des militärischen Sanitätsdienstes | Gendarmerie Nationale"
         "CSGO_Customplayer_ctm_gendarmerie_varianta_Desc"           "Sanitäter der Gendarmerie Nationale verfügen über den wohlverdienten Ruf, lebensrettende Maßnahmen mit allen ihnen zur Verfügung stehenden Mittel zu unternehmen. Von improvisierten Defibrillatoren über Dschungelmedizin bis hin zu präzisem Feuerschutz – die Sanitäter der Gendarmerie halten Ihnen immer den Rücken frei.\n\n<i>Vorbeugung ist stets besser als Heilung.</i>"
 
         "CSGO_Customplayer_ctm_gendarmerie_variantb"                "Capitaine für chemische Gefahren | Gendarmerie Nationale"
         "CSGO_Customplayer_ctm_gendarmerie_variantb_Desc"           "Als Leiter für chemische und biologische Gefahreneinsätze in bevölkerten Gebieten spielt der Gendarmerie-Capitaine für chemische Gefahren eine ausschlaggebende Rolle innerhalb der Organisation. Für die Leitung der erfolgreichen Rettungsmission der gesamten zivilen Gäste eines einheimischen Flughafens während des berüchtigten Saringasangriffs von 1997 gefeiert, ist der Capitaine für chemische Gefahren der Inbegriff der Bereitschaft und der Selbstbeherrschung.\n\n<i>Atmen nicht vergessen.</i>"
 
-        "CSGO_Customplayer_ctm_gendarmerie_variantc"                "Chef d'Escadron Rouchard | Gendarmerie Nationale"
+        "CSGO_Customplayer_ctm_gendarmerie_variantc"                "Chef d’Escadron Rouchard | Gendarmerie Nationale"
         "CSGO_Customplayer_ctm_gendarmerie_variantc_Desc"           "Rouchard wurde in eine alte Adelsfamilie hineingeboren und trat bei der ersten Gelegenheit in die Gendarmerie Nationale ein, um der Zwangseinschreibung in einem berüchtigten Schweizer Internat für junge Damen zu entgehen. Als Anwärterin in der Gendarmerie beeindruckte Rouchard schnell ihre Vorgesetzten, indem sie sich in offensiver Strategie, Geiselverhandlungen und vor allem im Kampf mit der Klinge auszeichnete. Mehrere Beförderungen später ist sie unter ihrem Spitznamen „Le Couteau“ (Das Messer) am bekanntesten, obwohl manche sagen würden, dass dies daran liegt, dass sie manchmal etwas ungehobelt sein kann. Heute wird Rouchard gerufen, wenn niemand sonst weiß, was zu tun ist. \n\n<i>Das ist nur ein Kratzer.</i>"
 
         "CSGO_Customplayer_ctm_gendarmerie_variantd"                "Anwärter | Gendarmerie Nationale"
@@ -32340,36 +32339,36 @@
         "CSGO_Customplayer_ctm_diver_varianta"                "Kommandantin Davida „Taucherbrille“ Fernandez | SEAL-Kampfschwimmerin"
         "CSGO_Customplayer_ctm_diver_varianta_Desc"           "Mit einem ausgezeichneten Tauchreflex kann Kommandantin Fernandez ihren Herzrhythmus auf ein unentdeckbares Niveau verlangsamen und durch Dunkelheit, Eis und Verteidigungssysteme der Tiefsee navigieren. Sie ist in ihrem menschlichen aquatischen Potenzial und ihrer Fähigkeit als Eliteschützin und -soldatin herausragend. „Taucherbrille“ hat sich ihren Spitznamen verdient, als eine Kugel ihr linkes Auge traf – oder getroffen hätte –, wenn „Nasse Socke“ sie nicht daran erinnert hätte, „zum letzten Mal“ ihre volle Montur zu greifen. Trotz ihrer gelegentlichen Vergesslichkeit ist Kommandantin Fernandez eine von zwei SEAL-Elitekampftauchern, die mit dem Navy Cross für geheime Unterwasseroperationen ausgezeichnet wurde.\n\n<i>Sei still, mein klopfendes Herz.</i>"
 		
-		"CSGO_Customplayer_ctm_diver_variantb"                "Kommandant Frank „Nasse Socke“ Baroud | SEAL-Kampfschwimmer"
+		"CSGO_Customplayer_ctm_diver_variantb"                "Kommandant Frank „Nasse Socke“ Baroud | SEAL-Kampfschwimmer"
         "CSGO_Customplayer_ctm_diver_variantb_Desc"           "Kommandant Frank Baroud ist der Erste an Deck und der Letzte vom Deck und SEAL der dritten Generation sowie der zweite Kampftaucher nach „Taucherbrille“, der das Navy Cross erhalten hat. Wenn es darum geht, die kompliziertesten Konfliktsituationen unter Wasser und auf dem Boden zu lösen, kann man auf Baroud zählen, wie damals, als er mehrere in einem Netzwerk überfluteter Höhlen unter einer US-Botschaft gelegte USBV entschärft hat. Baroud schreibt dies seiner unfehlbaren Liebe zum Detail zu. Schließlich kann ein einfacher Fehler zum letzten werden, wenn das Leben von der Ausrüstung, die man trägt, abhängt. Durch seine kompromisslose Liebe zum Detail hat er sich seinen Spitznamen „Nasse Socke“ verdient.\n\n<i>Ein zweites Mal überprüfen. Dann ein drittes Mal. Und dann noch einmal.</i>"
 		
-		"CSGO_Customplayer_ctm_diver_variantc"                "Leutnant Rex Krikey | SEAL-Kampfschwimmer"
+		"CSGO_Customplayer_ctm_diver_variantc"                "Leutnant Rex Krikey | SEAL-Kampfschwimmer"
         "CSGO_Customplayer_ctm_diver_variantc_Desc"           "Leutnant Krikey ist die erste Wahl für alle Kampfeinsätze im Dschungel und in Feuchtbiotopen. Seine Erfahrung im Umgang mit wilden Reptilien von winziger bis beträchtlicher Größe hat ihn und seine Kameraden schon mehr als einmal gerettet.\n\n<i>Ich bin nur ein Spitzenprädator, der sich gerne mit anderen Spitzenprädatoren trifft.</i>"
 		
 		// Jungle Raider / Guerrilla Warfare
 		
-		"CSGO_Customplayer_tm_jungle_raider_varianta"         "Elitetrapper Solman | Guerilla"
+		"CSGO_Customplayer_tm_jungle_raider_varianta"         "Elitetrapper Solman | Guerilla"
         "CSGO_Customplayer_tm_jungle_raider_varianta_Desc"    "An einem heißen Sommertag an den außengelegenen Inseln der Karibik, als der sich auf einer kleinen, aber teuren Urlaubstour entspannende Solman durch die berüchtigte Guerilla zur Geisel genommen wurde. Als er seine Entführer bei der Aufteilung der Lösegelder überhörte, verhandelte Solman über seine eigene Freilassung, sollte er innerhalb von 24 Stunden drei zusätzliche Geisel beschaffen können. Und wie er sie beschaffte, nur mit Geld, Charme und einer goldenen Zunge bewaffnet, die nur für die grauenerregendsten Kultführer der Welt bestimmt ist. Erstaunt über seinen Mangel an Empathie für die anderen Touristen und seine Fähigkeit, einen stetigen Vorrat an „Lösegeldeinheiten“ (Leute) zu liefern, verhandelte die Guerilla mit Solman über eine Position unter den ihren. Solman behält sich den höchsten Lösungsgeldanteil aller Guerillamitglieder vor und gewann das Spiel, bevor es begann.\n\n<i>Man braucht nur drei Dinge, um eine missliche Situation zu lösen: Geld, Charme und eine geladene Waffe.</i>"
 		
-		"CSGO_Customplayer_tm_jungle_raider_variantb"         "Krasswasser der Vergessene | Guerilla"
+		"CSGO_Customplayer_tm_jungle_raider_variantb"         "Krasswasser der Vergessene | Guerilla"
         "CSGO_Customplayer_tm_jungle_raider_variantb_Desc"    "Der ehemalige Navy SEAL Kapitän Krasswasser wurde während seines Dienstes in den 1990ern von der Guerilla gefangen genommen. Nach einem verpfuschten Rettungsversucht durch die ST6 und der darauffolgenden Militärvertuschung erklärte die US Navy Krasswasser als verstorben. Über die Jahre seiner Gefangenschaft wurde sein Patriotismus und das Mantra „Keiner wird zurückgelassen.“ von bitterem Hass gegen alles, was mit den USA zu tun hat, zerfressen. Neu bewaffnet mit einem schweren Fall von Stockholmsyndrom trat Krasswasser der Trapper-Einheit der Guerilla bei. Nach einer Serie von „vertrauensaufbauenden“ Angriffen auf westliche Botschaften wurde Krasswasser zu einem der wertvollsten Agenten der Guerilla und brachte militärische Disziplin und Organisation zu einer ansonsten chaotischen Gang von Rebellen. In jüngsten Jahren baute Krasswasser an geheimen Orten in ganz Zentralamerika neue Guerillazellen auf.\n\n<i>Nur noch ein Vergissmichnicht.</i>"
 		
-		"CSGO_Customplayer_tm_jungle_raider_variantb2"        "„Halb durchgebraten“ Krasswasser | Guerilla"
+		"CSGO_Customplayer_tm_jungle_raider_variantb2"        "„Halb durchgebraten“ Krasswasser | Guerilla"
         "CSGO_Customplayer_tm_jungle_raider_variantb2_Desc"   "Der ehemalige Navy SEAL Kapitän Krasswasser wurde während seines Dienstes in den 1990ern von der Guerilla gefangen genommen. Nach einem verpfuschten Rettungsversucht durch die ST6 und der darauffolgenden Militärvertuschung erklärte die US Navy Krasswasser als verstorben. Über die Jahre seiner Gefangenschaft wurde sein Patriotismus und das Mantra „Keiner wird zurückgelassen.“ von bitterem Hass gegen alles, was mit den USA zu tun hat, zerfressen. Neu bewaffnet mit einem schweren Fall von Stockholmsyndrom trat Krasswasser der Trapper-Einheit der Guerilla bei. Nach einer Serie von „vertrauensaufbauenden“ Angriffen auf westliche Botschaften wurde Krasswasser zu einem der wertvollsten Agenten der Guerilla und brachte militärische Disziplin und Organisation zu einer ansonsten chaotischen Gang von Rebellen. In jüngsten Jahren baute Krasswasser an geheimen Orten in ganz Zentralamerika neue Guerillazellen auf.\n\n<i>Nur noch ein Vergissmichnicht.</i>"
 		
-		"CSGO_Customplayer_tm_jungle_raider_variantc"         "Arno der Überwachsene | Guerilla"
+		"CSGO_Customplayer_tm_jungle_raider_variantc"         "Arno der Überwachsene | Guerilla"
         "CSGO_Customplayer_tm_jungle_raider_variantc_Desc"    "Der in Ungnade gefallene Schwergewichts-Boxchampion Arno der Überwachsene wurde von Trappern der Guerilla in einer Höhle entdeckt, in der er lebte. Im Laufe der Jahre hatte sich Arno zu einem Überlebenskünstler und Großwildjäger entwickelt, der in der Lage war, auf unbestimmte Zeit nur mit seinem Feuerstein und seinem geschärften Jagdmesser von der Natur zu leben. Gerüchte von Arno verbreiteten sich schließlich bis zu nahegelegenen Dörfern, wo sie die Aufmerksamkeit der Guerilla erweckten. In dem Bestreben, Arnos makellosen Jagd- und Kampffähigkeiten zu rekrutieren, versuchte die Guerilla vergeblich, Arno aus seinem Lebensraum zu locken. Das heißt, bis sie ihm drohten, ihn nicht mehr jeden Monat mit frischen, heißen Milchtörtchen zu besuchen.\n\n<i>Es ist nicht die Einsamkeit, die einen umbringt. Es ist der Mangel an Melkterts.</i>"
 		
-		"CSGO_Customplayer_tm_jungle_raider_variantd"         "Oberst Mangos Dabisi | Guerilla"
+		"CSGO_Customplayer_tm_jungle_raider_variantd"         "Oberst Mangos Dabisi | Guerilla"
         "CSGO_Customplayer_tm_jungle_raider_variantd_Desc"    "Schon früh in seinem Leben wurde Oberst Mangos Dabisi im ugandischen Militär ausgebildet und befördert. Er beendete seine Militärkarriere mit einer seltenen unehrenhaften Entlassung, weil er seine Untergebenen eingeschüchtert hatte, damit sie ihm „Geld für einen guten Schlaf“ zahlten – mit dem Versprechen, dass diejenigen, die ihn bezahlten, einen guten Schlaf bekämen. Wie sich herausstellte, war der gute Schlaf lediglich ein Mangel an absichtlichen Verletzungen, die Dabisi eigenhändig zufügte. Dabisis imposante Statur und sein militärisches Geschick machten ihn zu einer attraktiven Akquisition für die Guerilla. Dabisi, der ständig zu viel Gewalt anwendet und gezügelt werden muss, hat sich seinen Ruf als Guerilla-Kraftprotz redlich verdient.\n\n<i>Entweder schneide ich dir deinen Geldbeutel ab oder deinen Hals. Deine Wahl.</i>"
 		
-		"CSGO_Customplayer_tm_jungle_raider_variante"         "Vypa Sista der Revolution | Guerilla"
+		"CSGO_Customplayer_tm_jungle_raider_variante"         "Vypa Sista der Revolution | Guerilla"
         "CSGO_Customplayer_tm_jungle_raider_variante_Desc"    "Die notorische Rebellin und brillante Improvisatorin Vypa ist eine von zwölf Schwestern, die in Armut geboren und im Alter von sieben Jahren sich selbst überlassen wurden. Vypas Alleingänge gegen die Militärdiktatur ihres Landes waren so erfolgreich, dass das Militär annahm, ihre Arbeit sei das Ergebnis eines kleinen Teams von Leuten. Einmal verwechselte Vypa ein abgelegenes Trainingsgelände der Guerilla mit einem Außenposten der Regierung. Kurz nachdem sie eines ihrer berüchtigten „Stich- und Würgemanöver“ auf das Lager angewandt hatte, erkannte sie ihren Fehler, aber nicht bevor sie Kapitän Krasswasser an einen Baum gefesselt und mit einem Messer bedroht hatte. Beeindruckt und ein wenig verängstigt rekrutierte Krasswasser Vypa und ihre Schwestern für die Guerilla. Gemeinsam leiten sie nun alle Guerilla-Missionen im Dschungel und Kampagnen zur Aufklärung der Regierung.\n\n<i>Keine Sorge. Ich bin’s nur.</i>"
 		
-		"CSGO_Customplayer_tm_jungle_raider_variantf"         "Trapper-Aggressor | Guerilla"
+		"CSGO_Customplayer_tm_jungle_raider_variantf"         "Trapper-Aggressor | Guerilla"
         "CSGO_Customplayer_tm_jungle_raider_variantf_Desc"    "Die erfahrenen und gerissenen Trapper-Aggressoren gehen mit rücksichtsloser Effizienz vor, wenn es darum geht, Touristen als Geiseln zu nehmen und zu sichern. Als Experten für Guerilla-Taktiken in Feuchtbiotopen und im Dschungel sind alle Rettungsaktionen, die die Trapper-Aggressoren involvieren, zum Scheitern verurteilt.\n\n<i>Das Versprechen von Klimaanlage und Eistee. Es funktioniert jedes Mal.</i>"
 		
-		"CSGO_Customplayer_tm_jungle_raider_variantf2"        "Trapper | Guerilla"
+		"CSGO_Customplayer_tm_jungle_raider_variantf2"        "Trapper | Guerilla"
         "CSGO_Customplayer_tm_jungle_raider_variantf2_Desc"   "Die Trapper sind scharf, heimlich und der Fluch aller organisierten Militäreinheiten. Man sieht sie selten, bevor man sie spürt.\n\n<i>Wir jagen euch.</i>"
 		
 		
@@ -45265,6 +45264,7 @@
 		"popup_delete_title"	"{s:itemname}"
 		"popup_delete_desc"		"Möchten Sie diesen Gegenstand wirklich löschen?"
 		"popup_delete_warning"	"Das Löschen eines Gegenstands kann nicht rückgängig gemacht werden."
+		"popup_delete_tooltip"	"Gedrückt halten, um diesen Gegenstand zu löschen. Das Löschen eines Gegenstands kann nicht rückgängig gemacht werden."
 		"popup_delete_button"	"Gegenstand löschen"
 
 		"popup_usegift_title"	"{s:itemname} verschenken"
@@ -48048,7 +48048,7 @@
 		"laptop_app_version"						"Ver. 1.1.0.2000"
 
 		"dealer_offer_attachment_title"							"{s:item-name}"
-		"dealer_offer_attachment_wear"						"{s:item-rarity}"
+		"dealer_offer_attachment_wear"							"{s:item-rarity}"
 		"dealer_offer_attachment_remaining_title"				"{d:offer-total}. ANGEBOT"
 		"dealer_offer_attachment_remaining"						"{d:offer-total}. Angebot"
 		"dealer_offer_received_count"							"<b>{s:offer-count}</b> Angebot"
@@ -48063,8 +48063,6 @@
 		"user_btn_purchase_desc_purchase"		"Gedrückt halten, um diesen Gegenstand zu kaufen. Nach dem Kauf wird das Uplink-Terminal entsorgt."
 		"user_btn_purchase_desc_continue"		"Gedrückt halten, um dieses Angebot endgültig abzulehnen und das nächste einzuholen."
 		"user_btn_purchase_desc_end"		"Gedrückt halten, um das letzte Angebot abzulehnen und das Uplink-Terminal zu entsorgen."
-		"user_btn_purchase_title"			"<b>{s:offer-count} Angebot</b> – Empfohlene Antworten"
-		"user_btn_purchase_final_title"		"<b>Letztes Angebot</b> – Empfohlene Antworten"
 		"user_btn_decline_desc"				"Dieses Angebot ablehnen und ein anderes einholen"
 		"user_btn_accept"		"Angebot für <b>{s:price}</b> akzeptieren"
 		"user_btn_accept_final"	"Letztes Angebot für <b>{s:price}</b> akzeptieren"
@@ -48119,7 +48117,6 @@
 		"laptop_pan_tooltip" 			"Klicken und ziehen Sie bei gedrückter Umschalttaste mit der Maus, um den Gegenstand neu auszurichten"
 		"laptop_pricing_tooltip"		"Die Preise sind weltweit einheitlich und werden automatisch basierend auf der Nachfrage für jeden Gegenstand in dieser Kollektion angepasst."
 
-
 		"dealer_message_start_0"  	"Ich biete nur professionelle Ausrüstung an.<!--.25-->Mit allem Drum und Dran, aber ohne lästigen Papierkram."
 		"dealer_message_start_1"  	"Ich verkaufe Graumarktware ohne Papiere.<!--.25-->Diese Waffen waren seit Jahren nicht mehr im Umlauf, niemand sucht danach.<!--.25-->Aber keine Sorge, sie sind immer noch bestens in Schuss."
 		"dealer_message_start_2"  	"Der Zoll in Ahradan hat heute Morgen meine Fracht beschlagnahmt. Ich habe es mit einer rührseligen Geschichte über medizinische Geräte für Todkranke versucht … oder so ähnlich.<!--.25-->Hatte alles keinen Erfolg. Ein Koffer voller Geld hingegen schon.<!--.25-->Wie wäre es, wenn wir uns diese Dialysegeräte ansehen, bevor ich sie an die Waisenkinder verteile?"
@@ -48127,7 +48124,6 @@
 		"dealer_message_start_4"  	"Meine heutige Ware ist absolut sauber.<!--.25-->Du bist demzufolge die erste Person, die sie in den Händen halten wird."
 		"dealer_message_start_5"  	"Desinfiziert, keine Seriennummern, mechanisch einwandfrei.<!--.25-->Vor einem Kriegsgericht wären sie womöglich Beweismaterial.<!--.25-->Ich schweife ab … Nun sieh sich einer diese Meisterwerke an!"
 		"dealer_message_start_6"  	"Diese ganze Ladung exotischer Exemplare wurde kürzlich einer Paradeeinheit abgenommen.<!--.25-->Häufig umhergetragen. Nie abgefeuert."
-		"dealer_message_start_7"  	"Oh! Du bist es.<!--.25-->Meine anderen Kunden wollen stets wissen, wie ich an meine Waren gelangt bin. Ich hasse das.<!--.25-->Du hingegen willst immer nur wissen, ob meine Waren auch die besten auf dem Markt sind.<!--.25-->Ich versichere dir: Sie sind es."
 		"dealer_message_start_8"  	"Friedensabkommen in Drosvik. Ich liebe Frieden.<!--.25-->Ich kenne nämlich einen General mit einem Haufen Schulden und einem vollgestopften Waffenlager, das gerade verstaubt.<!--.25-->Das soll nicht heißen …<!--.25-->Selbstverständlich ist Frieden ein hohes Gut. All die unschuldigen Leben und so … <!--.25-->Ich sehe schon, das interessiert dich nicht wirklich."
 		"dealer_message_start_9"  	"Diese Ladung enthält einige exotische Exemplare aus Graumarkt-Quellen.<!--.25-->Ungewöhnliche Kaliber, nichts für Amateure. Du wirst sie lieben."
 		"dealer_message_start_10"  	"Zugegeben, das ist mir etwas peinlich.<!--.25-->Ich muss versehentlich eine Kiste auf meiner Ladeliste falsch etikettiert haben.<!--.25-->Nun ja. Ein paar Dutzend Kisten.<!--.25-->Wie wäre es, wenn du mir dabei hilfst, diese Ware verschwinden zu lassen, bevor die Hafenbehörde Wind davon bekommt?"
@@ -48150,7 +48146,6 @@
 		"dealer_message_start_27"	"Ich hasse es, mit Aufständischen zu arbeiten. Aufständische ist nur ein anderes Wort für Zivilisten und Zivilisten sind gottverdammte Amateure.<!--.25-->Wie dem auch sei, sie sind untergetaucht, also überlasse ich lieber echten Profis diese Ware."
 		"dealer_message_start_28"	"Die seit Jahren angespannte Lage im Süden hat gerade zum zweiten Mal in diesem Jahr zum Zusammenbruch des Parlaments geführt.<!--.25-->Zahlreiche lokale Waffenlager wurden wie Piñatas aufgebrochen."
 		"dealer_message_start_29"	"Der Inspektor der Hafenbehörde hat diese Ladung letzten Freitag als unregelmäßig gekennzeichnet.<!--.25-->Am Montag erhielt seine Tochter genug Schulgeld, um in Stamwick zu studieren. Also handelt es sich bei der Lieferung wieder um „Landwirtschaftliche Geräte“.<!--.25-->Was soll ich sagen, Bildung ist wichtig. Lass uns einen Blick auf ein paar landwirtschaftliche Geräte werfen."
-
 
 		"dealer_message_resume_0"  	"<!--1-->Du bist wieder da. Das Angebot liegt noch auf dem Tisch."
 		"dealer_message_resume_1"  	"<!--1-->Brauchst du einen Moment, um darüber nachzudenken? Kein Problem."
@@ -48214,7 +48209,6 @@
 		"dealer_message_next_offer_39"   "<!--1-->Überhaupt kein Problem. Ich hätte auch nicht zugeschlagen. Bei diesem Schmuckstück hingegen …"
 		"dealer_message_next_offer_40"   "<!--1-->Dann muss ich wohl den ganzen Weg nach hinten laufen, um die Premiumware zu holen, was? Der Kunde ist König."
 
-
 		"dealer_message_last_offer_0"	"<!--0-->Hier ist mein endgültiges Angebot. Nimm es an oder lass es bleiben."
 		"dealer_message_last_offer_1"	"<!--0-->Betrachte dies als mein letztes Angebot."
 		"dealer_message_last_offer_2"	"<!--0-->Dies ist mein letztes Angebot. Verschwende nicht länger meine Zeit und entscheide dich."
@@ -48241,7 +48235,7 @@
 		"dealer_message_timerexpired_7"		"<!--.1-->Und ich dachte, das ich dir damit einen Gefallen tue.<!--.5-->Letztendlich hast du nur meine Zeit verschwendet."
 		"dealer_message_timerexpired_8"		"<!--.1-->Der Deal ist geplatzt."	
 		"dealer_message_timerexpired_9"		"<!--.1-->Die Zeit ist um."
-		"dealer_message_timerexpired_10"		"<!--.1-->Okay, jetzt langweilst du mich endgültig. Wir sind hier fertig."		
+		"dealer_message_timerexpired_10"	"<!--.1-->Okay, jetzt langweilst du mich endgültig. Wir sind hier fertig."		
 
 		"dealer_message_open_check_out_0"		"<!--.5-->Diese Waffe ist wie für dich gemacht. Deshalb bin ich gleich zu dir gekommen. Bringen wir den Deal unter Dach und Fach."
 		"dealer_message_open_check_out_1"		"<!--.5-->Eine hervorragende Wahl. Ich kümmere mich persönlich um die Verpackung und den Transport."
@@ -48250,8 +48244,8 @@
 		"dealer_message_open_check_out_4"		"<!--.5-->Perfekt. Ziehen wir’s durch."		
 		"dealer_message_open_check_out_5"		"<!--.5-->Gute Wahl."	
 		"dealer_message_open_check_out_6"		"<!--.5-->Die klügste Entscheidung, die du je getroffen hast. Machen wir’s fix."		
-		"dealer_message_open_check_out_7"		"<!--.5-->Wunderbar. Machen wir Nägel mit Köpfen."	
-		
+		"dealer_message_open_check_out_7"		"<!--.5-->Wunderbar. Machen wir Nägel mit Köpfen."
+
 		"dealer_message_txn_xld_bailout_0"		"<!--.5-->Keine Eile. Du weißt, wo du mich findest."
 		"dealer_message_txn_xld_bailout_1"		"<!--.5-->Ich bin hier, falls du mich brauchst."
 		"dealer_message_txn_xld_bailout_2"		"<!--.5-->Ich lasse das Angebot vorerst auf dem Tisch liegen."
@@ -48319,11 +48313,10 @@
 		"dealer_message_addition_factory_new_1"	"<!--.25-->Und das gute Stück ist fabrikneu. Makellos."
 		"dealer_message_addition_factory_new_2"	"<!--.25-->Direkt aus dem Waffenlager. Fabrikneu."
 		"dealer_message_addition_factory_new_3"	"<!--.25-->Diese Waffe ist fabrikneu. Sie wurde noch nie abgefeuert."
-
+		
 		"system_dealer_left_chat_0"				"Der Waffenhändler hat den Chat verlassen."
 		"system_dealer_join_chat_0"				"Angebote des Waffenhändlers für {s:collection}<!--1.25-->Mit Waffenhändler verbunden"
 		"system_user_reject_offer_0"			"{s:user-name} hat das Angebot abgelehnt."
-		
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
@@ -48557,6 +48550,19 @@
 		"quest_11014_var_ingame:p{mission-points}"		"Gewinnen Sie eine Runde.#|#Gewinnen Sie mehrere Runden."
 		
 		"quest_11015_var_desc:p{mission-points}"	 	"Gewinnen Sie eine Runde im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.#|#Gewinnen Sie mehrere Runden im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>."
+		"quest_11015_var_ingame:p{mission-points}"		"Gewinnen Sie eine Runde.#|#Gewinnen Sie mehrere Runden."
+
+// crow_mask_51633_comment
+// crow_mask_51634_comment
+}
+
+
+
+
+}
+
+
+ eine Runde im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.#|#Gewinnen Sie mehrere Runden im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Gewinnen Sie eine Runde.#|#Gewinnen Sie mehrere Runden."
 
 // crow_mask_51588_comment

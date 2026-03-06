@@ -2480,7 +2480,6 @@
 		"ItemHistory_Action_TournamentDrop"								"Obtenu par drop souvenir"
 		"ItemHistory_Action_TemplateItemGrant"							"Obtenu"
 		"ItemHistory_Action_Market_Add"									"Acheté dans le marché de la communauté Steam"
-
 		"ItemHistory_Transaction_Delete"								"Vous l'avez supprimé"
 		"ItemHistory_Transaction_Craft"									"Fabriqué"
 		"ItemHistory_Transaction_UnlockCrate"							"Conteneur ouvert"
@@ -45266,6 +45265,7 @@
 		"popup_delete_title"	"{s:itemname}"
 		"popup_delete_desc"		"Voulez-vous vraiment supprimer cet item ?"
 		"popup_delete_warning"	"Cette action est irréversible."
+		"popup_delete_tooltip"	"Appuyez longuement pour supprimer cet item. Toute suppression d'item est définitive."
 		"popup_delete_button"	"Supprimer cet item"
 
 		"popup_usegift_title"	"Offrir {s:itemname}"
@@ -48049,7 +48049,7 @@
 		"laptop_app_version"						"v. 1.1.0.2000"
 
 		"dealer_offer_attachment_title"							"{s:item-name}"
-		"dealer_offer_attachment_wear"						"{s:item-rarity}"
+		"dealer_offer_attachment_wear"							"{s:item-rarity}"
 		"dealer_offer_attachment_remaining_title"				"OFFRE Nº {d:offer-total}"
 		"dealer_offer_attachment_remaining"						"Offer nº {d:offer-total}"
 		"dealer_offer_received_count"							"<b>{s:offer-count}</b> offre"
@@ -48064,8 +48064,6 @@
 		"user_btn_purchase_desc_purchase"		"Appuyez longuement pour acheter cet item. Ensuite, le terminal sera fermé."
 		"user_btn_purchase_desc_continue"		"Appuyez longuement pour refuser cette offre définitivement et voir la prochaine."
 		"user_btn_purchase_desc_end"		"Refuser cette offre et rejeter ce terminal."
-		"user_btn_purchase_title"			"<b>{s:offer-count} offre</b>, suggestions de réponse"
-		"user_btn_purchase_final_title"		"<b>Offre finale</b>, suggestions de réponse"
 		"user_btn_decline_desc"				"Refuser cette offre et en voir une autre."
 		"user_btn_accept"		"Accepter l'offre <b>{s:price}</b>"
 		"user_btn_accept_final"	"Accepter l'offre finale <b>{s:price}</b>"
@@ -48120,7 +48118,6 @@
 		"laptop_pan_tooltip" 			"Maintenez la touche MAJ enfoncée et déplacez la caméra avec la souris"
 		"laptop_pricing_tooltip"		"Les prix de chaque item dans cette collection sont mondiaux et sont ajustés en fonction de la demande pour chacun."
 
-
 		"dealer_message_start_0"  	"Ça, c'est de la qualité officielle.<!--.25-->C'est du flambant neuf avec toutes les options. Et sans paperasse."
 		"dealer_message_start_1"  	"Je revends des stocks sur le marché parallèle, il n'y a pas de registre.<!--.25-->Pas la peine de s'inquiéter : ça fait des années qu'ils ne sont plus commercialisés, personne ne les surveille.<!--.25-->En plus ils tirent encore quand on pointe, si vous voulez savoir."
 		"dealer_message_start_2"  	"Les douanes d'Ahradan ont stoppé ma cargaison ce matin. J'ai essayé de la débloquer en versant quelques larmes pour les pauvres bougres qui allaient mourir sans leur matériel médical.<!--.25-->Ça n'a pas marché. Mais une malette remplie de billets a fait l'affaire.<!--.25-->Et si on jetait un œil sur ces dialyseurs avant que je les livre à des orphelinats ?"
@@ -48128,7 +48125,6 @@
 		"dealer_message_start_4"  	"La camelote que je propose aujourd'hui est vraiment propre.<!--.25-->Pour autant que l'on sache, personne n'y a touché avant vous."
 		"dealer_message_start_5"  	"Des pièces stériles, pas de numéros de série, un fonctionnement sans accroc.<!--.25-->Un tribunal de guerre les enregistrerait comme pièces à conviction.<!--.25-->Vous et moi, nous savons que ce sont de foutues œuvres d'art."
 		"dealer_message_start_6"  	"Tout l'arrivage est composé d'armement exotique libéré récemment d'un régiment de parade.<!--.25-->Ah ça, il a paradé, mais tiré ? Jamais."
-		"dealer_message_start_7"  	"C'est vous, tant mieux.<!--.25-->Les autres veulent toujours savoir d'où je récupère ma marchandise. Je déteste ça.<!--.25-->Tout ce qui vous intéresse, c'est d'avoir la meilleure qualité sur le marché.<!--.25-->Et devinez quoi, c'est bien le cas."
 		"dealer_message_start_8"  	"Un accord de paix à Drosvik. J'adore la paix.<!--.25-->Parce que je connais un général avec beaucoup de dettes et un arsenal plein à craquer qui prend la poussière.<!--.25-->Enfin…<!--.25-->La paix, c'est bien aussi, évidemment. Des vies innocentes et…<!--.25-->Mais qu'est-ce que je raconte, vous en avez rien à faire."
 		"dealer_message_start_9"  	"Ce chargement contient des armes exotiques provenant d'un détournement pour le marché parallèle.<!--.25-->Des calibres inhabituels, pas pour des amateurs. Vous allez les adorer."
 		"dealer_message_start_10"  	"C'est gênant.<!--.25-->J'ai dû mal étiqueter une caisse sans faire exprès dans mon manifeste de transport.<!--.25-->Ou plutôt quelques douzaines de caisses.<!--.25-->Et si vous m'aidiez à faire disparaitre cet inventaire avant que les autorités portuaires s'en mêlent ?"
@@ -48151,7 +48147,6 @@
 		"dealer_message_start_27"	"Je déteste travailler avec des insurgés. Ce n'est qu'une façon polie de parler de civils, ce qui est une façon polie d'indiquer de foutus amateurs.<!--.25-->Bref, ils ne donnent plus signe de vie, alors je laisse une chance aux vrais professionnels d'acquérir ce matériel."
 		"dealer_message_start_28"	"La poudrière éternellement instable au sud a connu l'une de ses deux chutes annuelles du parlement.<!--.25-->Un paquet d'arsenaux nationaux se sont ouverts comme des piñatas."
 		"dealer_message_start_29"	"Un inspecteur de l'administration portuaire a jugé que ce chargement était non conforme vendredi dernier.<!--.25-->Le lundi, sa fille avait assez d'argent pour s'inscrire à Stamwick et le chargement était à nouveau catégorisé comme outillage agricole.<!--.25-->Qu'est-ce que je peux dire ? l'éducation, c'est important. Regardons cet outillage."
-
 
 		"dealer_message_resume_0"  	"<!--1--> Vous êtes de retour. Tant mieux. Ma proposition est toujours sur la table."
 		"dealer_message_resume_1"  	"<!--1-->Il vous fallait une minute pour y réfléchir ? Pas de problème."
@@ -48215,7 +48210,6 @@
 		"dealer_message_next_offer_39"   "<!--1-->Pas de souci. Moi-même, je ne l'aurais pas acheté. Par contre, celle-ci…"
 		"dealer_message_next_offer_40"   "<!--1-->Vous me faites aller tout au fond de mon meilleur stock, hein ? Bon, c'est bien parce que c'est vous."
 
-
 		"dealer_message_last_offer_0"	"<!--0-->Bon, c'est ma toute dernière offre, à prendre ou à laisser."
 		"dealer_message_last_offer_1"	"<!--0-->C'est ma dernière offre."
 		"dealer_message_last_offer_2"	"<!--0-->C'est mon offre finale, à prendre ou à laisser. Cessons de perdre mon temps."
@@ -48242,7 +48236,7 @@
 		"dealer_message_timerexpired_7"		"<!--.1-->Et moi qui pensais vous aider à liquider des gens.<!--.5-->En fait, c'est vous qui m'aidez… à perdre mon temps."
 		"dealer_message_timerexpired_8"		"<!--.1-->On ne fera pas affaire."	
 		"dealer_message_timerexpired_9"		"<!--.1-->C'est trop tard."
-		"dealer_message_timerexpired_10"		"<!--.1-->OK, assez, c'est rasoir. On n'en parle plus."		
+		"dealer_message_timerexpired_10"	"<!--.1-->OK, assez, c'est rasoir. On n'en parle plus."		
 
 		"dealer_message_open_check_out_0"		"<!--.5-->Celle-là était faite pour vous. C'est pourquoi j'ai d'abord pensé à vous. Affaire conclue."
 		"dealer_message_open_check_out_1"		"<!--.5-->C'est une excellente décision. Je l'emballe comme il faut."
@@ -48251,8 +48245,8 @@
 		"dealer_message_open_check_out_4"		"<!--.1-->Parfait. Finissons-en."		
 		"dealer_message_open_check_out_5"		"<!--.5-->Vous avez fait le bon choix."	
 		"dealer_message_open_check_out_6"		"<!--.5-->C'est la meilleure décision de votre vie. Finalisons ça."		
-		"dealer_message_open_check_out_7"		"<!--.5-->Très bien. Il n'y a plus qu'à signer."	
-		
+		"dealer_message_open_check_out_7"		"<!--.5-->Très bien. Il n'y a plus qu'à signer."
+
 		"dealer_message_txn_xld_bailout_0"		"<!--.5-->Il y a pas urgence. Vous savez où me trouver."
 		"dealer_message_txn_xld_bailout_1"		"<!--.5-->Je reste là."
 		"dealer_message_txn_xld_bailout_2"		"<!--.5-->Je laisse ça sur la table pour le moment."
@@ -48320,11 +48314,10 @@
 		"dealer_message_addition_factory_new_1"	"<!--.25-->Tout droit sorti de l'usine, il est flambant neuf."
 		"dealer_message_addition_factory_new_2"	"<!--.25-->Tout droit sorti du coffre-fort. Il n'a jamais servi."
 		"dealer_message_addition_factory_new_3"	"<!--.25-->Celui-là est tout droit sorti de l'usine. Il n'a jamais servi."
-
+		
 		"system_dealer_left_chat_0"				"Le trafiquant a quitté la discussion."
 		"system_dealer_join_chat_0"				"{s:collection} offres d'armes.<!--1.25-->Trafiquant connecté"
 		"system_user_reject_offer_0"			"{s:user-name} a refusé l'offre."
-		
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
@@ -48556,6 +48549,21 @@
 		
 		"quest_11014_var_desc:p{mission-points}"	 	"Gagnez une manche en mode <b>{s:gamemode} sur {s:location}</b>.#|#Gagnez des manches en mode <b>{s:gamemode} sur {s:location}</b>."
 		"quest_11014_var_ingame:p{mission-points}"		"Gagnez une manche.#|#Gagnez des manches."
+		
+		"quest_11015_var_desc:p{mission-points}"	 	"Gagnez une manche en mode <b>{s:gamemode} sur {s:location}</b>.#|#Gagnez des manches en mode <b>{s:gamemode} sur {s:location}</b>."
+		"quest_11015_var_ingame:p{mission-points}"		"Gagnez une manche.#|#Gagnez des manches."
+
+// crow_mask_51633_comment
+// crow_mask_51634_comment
+}
+
+
+
+
+}
+
+
+hes."
 		
 		"quest_11015_var_desc:p{mission-points}"	 	"Gagnez une manche en mode <b>{s:gamemode} sur {s:location}</b>.#|#Gagnez des manches en mode <b>{s:gamemode} sur {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Gagnez une manche.#|#Gagnez des manches."

@@ -2488,7 +2488,6 @@
 		"ItemHistory_Action_TournamentDrop"								"Придобито падане на сувенир"
 		"ItemHistory_Action_TemplateItemGrant"							"Придобито"
 		"ItemHistory_Action_Market_Add"									"Получено от обществения пазар"
-
 		"ItemHistory_Transaction_Delete"								"Изтрихте"
 		"ItemHistory_Transaction_Craft"									"Изработено"
 		"ItemHistory_Transaction_UnlockCrate"							"Отключен е контейнер"
@@ -51246,7 +51245,7 @@ Counter-Strike разполага с четири основни игрални 
 		"laptop_app_version"						"версия 1.1.0.2000"
 
 		"dealer_offer_attachment_title"							"{s:item-name}"
-		"dealer_offer_attachment_wear"						"{s:item-rarity}"
+		"dealer_offer_attachment_wear"							"{s:item-rarity}"
 		"dealer_offer_attachment_remaining_title"				"ОФЕРТА №{d:offer-total}"
 		"dealer_offer_attachment_remaining"						"Оферта №{d:offer-total}"
 		"dealer_offer_received_count"							"<b>{s:offer-count}</b> оферта"
@@ -51261,8 +51260,6 @@ Counter-Strike разполага с четири основни игрални 
 		"user_btn_purchase_desc_purchase"		"Задръжте, за да закупите този артикул. След покупката терминалът се отхвърля."
 		"user_btn_purchase_desc_continue"		"Задръжте, така че перманентно да отхвърлите тази оферта и да видите следващата."
 		"user_btn_purchase_desc_end"		"Отказване на окончателната оферта и отхвърляне на този терминал."
-		"user_btn_purchase_title"			"<b>{s:offer-count} оферта</b> — Предложени отклици"
-		"user_btn_purchase_final_title"		"<b>Окончателна оферта</b> — Предложени отклици"
 		"user_btn_decline_desc"				"Отказване на тази оферта и виждане на нова"
 		"user_btn_accept"		"Приемане на оферта <b>{s:price}</b>"
 		"user_btn_accept_final"	"Приемане на окончателна оферта <b>{s:price}</b>"
@@ -51316,7 +51313,6 @@ Counter-Strike разполага с четири основни игрални 
 		"laptop_zoom_tooltip" 			"Превъртете скрола на мишка, за да приближавате или отдалечавате."
 		"laptop_pan_tooltip" 			"Задръжте Shift клавиша и провлечете за панорамно позициониране на камерата"
 		"laptop_pricing_tooltip"		"Цените са глобални и се коригират автоматично спрямо търсенето на всеки артикул от тази колекция."
-
 
 		"dealer_message_start_0"  	"Всичко това са повсеместно снабдени издания за предприемачи.<!--.25-->Оборудвани с всички джаджи и екстри. Без никаква бумащина."
 		"dealer_message_minimal_wear_1"			"В състояние като нов. Е, почти като нов. Минимално износване."
@@ -51571,6 +51567,20 @@ Counter-Strike разполага с четири основни игрални 
 		"quest_11014_var_ingame:p{mission-points}"		"Спечелете рунд.#|#Спечелете рундове."
 		
 		"quest_11015_var_desc:p{mission-points}"	 	"Спечелете рунд в <b>„{s:gamemode}“ — {s:location}</b>.#|#Спечелете рундове в <b>„{s:gamemode}“ — {s:location}</b>."
+		"quest_11015_var_partial" 				""
+		"quest_11015_var_ingame:p{mission-points}"		"Спечелете рунд.#|#Спечелете рундове."
+
+// crow_mask_51633_comment
+// crow_mask_51634_comment
+}
+
+
+
+
+}
+
+
+b>."
 		"quest_11015_var_partial" 				""
 		"quest_11015_var_ingame:p{mission-points}"		"Спечелете рунд.#|#Спечелете рундове."
 

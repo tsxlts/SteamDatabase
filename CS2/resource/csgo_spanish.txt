@@ -2485,7 +2485,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"ItemHistory_Action_TournamentDrop"								"Recibiste un paquete regalo"
 		"ItemHistory_Action_TemplateItemGrant"							"Obtenido"
 		"ItemHistory_Action_Market_Add"									"Recibido del mercado de la comunidad"
-
 		"ItemHistory_Transaction_Delete"								"Eliminaste"
 		"ItemHistory_Transaction_Craft"									"Fabricado"
 		"ItemHistory_Transaction_UnlockCrate"							"Contenedor abierto"
@@ -48049,7 +48048,7 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"laptop_app_version"						"versión 1.1.0.2000"
 
 		"dealer_offer_attachment_title"							"{s:item-name}"
-		"dealer_offer_attachment_wear"						"{s:item-rarity}"
+		"dealer_offer_attachment_wear"							"{s:item-rarity}"
 		"dealer_offer_attachment_remaining_title"				"{d:offer-total}.ª OFERTA"
 		"dealer_offer_attachment_remaining"						"{d:offer-total}.ª oferta"
 		"dealer_offer_received_count"							"<b>{s:offer-count}</b> oferta"
@@ -48064,8 +48063,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"user_btn_purchase_desc_purchase"		"Mantén pulsado para comprar este artículo. Tras la compra, el terminal se descarta."
 		"user_btn_purchase_desc_continue"		"Mantén pulsado para rechazar permanentemente esta oferta y ver la siguiente."
 		"user_btn_purchase_desc_end"		"Rechazar la última oferta y descartar este terminal."
-		"user_btn_purchase_title"			"<b>{s:offer-count} oferta</b>: respuestas sugeridas"
-		"user_btn_purchase_final_title"		"<b>Última oferta</b>: respuestas sugeridas"
 		"user_btn_decline_desc"				"Rechaza esta oferta y ver otra"
 		"user_btn_accept"		"Aceptar oferta: <b>{s:price}</b>"
 		"user_btn_accept_final"	"Aceptar última oferta: <b>{s:price}</b>"
@@ -48120,7 +48117,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"laptop_pan_tooltip" 			"Mantén pulsada la tecla «Mayús» y arrastra para desplazar la cámara"
 		"laptop_pricing_tooltip"		"Los precios son globales y se ajustan automáticamente según la demanda de cada artículo de esta colección."
 
-
 		"dealer_message_start_0"  	"Esto es material de contratista a lo grande.<!--.25-->Todo lujo de detalles y cero papeleo."
 		"dealer_message_start_1"  	"Estoy moviendo material del mercado gris, sin papeleo.<!--.25-->No te preocupes, lleva años fuera de circulación, nadie lo está buscando.<!--.25-->Además, sigue disparando, por si te pica la curiosidad."
 		"dealer_message_start_2"  	"La aduana de Ahradan retuvo mi cargamento esta mañana. Intenté justificarlo con una triste historia sobre equipamiento médico y un pobre moribundo…<!--.25-->Eso no funcionó, pero el maletín con dinero sí.<!--.25-->¿Qué te parece si echamos un vistazo a esas máquinas de diálisis antes de llevárselas a los huérfanos?"
@@ -48128,7 +48124,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"dealer_message_start_4"  	"Lo que traigo hoy está limpio.<!--.25-->Que yo sepa, nunca ha pasado por otras manos antes que las tuyas."
 		"dealer_message_start_5"  	"Piezas estériles, sin números de serie, acción perfecta...<!--.25-->Un tribunal de guerra las llamaría pruebas.<!--.25-->Tú y yo sabemos que son auténticas obras maestras."
 		"dealer_message_start_6"  	"En este cargamento solo hay piezas exóticas sacadas de una unidad de desfile.<!--.25-->Han desfilado mucho. Nunca las han disparado."
-		"dealer_message_start_7"  	"Genial, eres tú.<!--.25-->Mis otros clientes siempre quieren saber cómo conseguí lo que vendo. Detesto eso.<!--.25-->Tú solo quieres saber si es lo mejor del mercado.<!--.25-->Adivina qué: lo es."
 		"dealer_message_start_8"  	"Acuerdo de paz en Drosvik. Me encanta la paz.<!--.25-->Porque tengo a un general lleno de deudas y un arsenal repleto cogiendo polvo.<!--.25-->Quiero decir…<!--.25-->También porque la paz es buena, claro. Vidas inocentes y…<!--.25-->Qué estoy diciendo, como si a ti te importara..."
 		"dealer_message_start_9"  	"Este cargamento trae piezas exóticas de una desviación del mercado gris.<!--.25-->Calibres poco comunes, no aptos para aficionados. Te van a encantar."
 		"dealer_message_start_10"  	"Menuda cagada.<!--.25-->Debo haber etiquetado por error una caja en mi manifiesto de envío.<!--.25-->Bueno, varias docenas de ellas.<!--.25-->¿Qué te parece si me ayudas a hacer desaparecer este inventario antes de que la autoridad portuaria lo investigue?"
@@ -48151,7 +48146,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"dealer_message_start_27"	"Odio trabajar con insurgentes. Es solo una forma educada de decir civiles, que a su vez es una forma suave de decir malditos aficionados.<!--.25-->De todos modos, han desaparecido, así que voy a dejar que unos profesionales de verdad se queden con este material."
 		"dealer_message_start_28"	"El parlamento de uno de esos países conflictivos del sur acaba de sufrir su habitual colapso semestral.<!--.25-->Un montón de armerías locales reventaron como piñatas."
 		"dealer_message_start_29"	"El inspector de la autoridad portuaria calificó este cargamento de irregular el viernes pasado.<!--.25-->Para el lunes, su hija ya tenía dinero suficiente para estudiar en Stamwick y el cargamento volvía a ser de herramientas agrícolas.<!--.25-->Qué puedo decir, la educación es importante. Vamos a ver unas herramientas agrícolas."
-
 
 		"dealer_message_resume_0"  	"<!--1-->Has vuelto. Genial. El trato sigue en pie."
 		"dealer_message_resume_1"  	"<!--1-->¿Necesitabas un minuto para pensarlo? No hay problema."
@@ -48215,7 +48209,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"dealer_message_next_offer_39"   "<!--1-->No hay problema. Yo tampoco habría comprado esa. Esta, por otro lado…"
 		"dealer_message_next_offer_40"   "<!--1-->Me haces ir hasta el fondo a por lo bueno, ¿eh? Está bien, aquí lo tienes."
 
-
 		"dealer_message_last_offer_0"	"<!--0-->Muy bien, última oferta. Lo tomas o lo dejas."
 		"dealer_message_last_offer_1"	"<!--0-->Considéralo mi última oferta."
 		"dealer_message_last_offer_2"	"<!--0-->Última oferta. Tómalo o déjalo; basta de hacerme perder el tiempo."
@@ -48242,7 +48235,7 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"dealer_message_timerexpired_7"		"<!--.1-->Y yo que creía que te estaba ayudando a cargarte gente.<!--.5-->Resulta que lo único que haces es hacerme perder el tiempo."
 		"dealer_message_timerexpired_8"		"<!--.1-->Se acabó el trato."	
 		"dealer_message_timerexpired_9"		"<!--.1-->Se acabó el tiempo."
-		"dealer_message_timerexpired_10"		"<!--.1-->Muy bien, me aburrí oficialmente. Hemos terminado."		
+		"dealer_message_timerexpired_10"	"<!--.1-->Muy bien, me aburrí oficialmente. Hemos terminado."		
 
 		"dealer_message_open_check_out_0"		"<!--.5-->Esta tenía tu nombre por todas partes. Por eso pensé en ti primero. Cerremos este trato."
 		"dealer_message_open_check_out_1"		"<!--.5-->Una decisión excelente. Me aseguraré de que esté empaquetada y lista."
@@ -48251,8 +48244,8 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"dealer_message_open_check_out_4"		"<!--.5-->Perfecto. Hagamos esto."		
 		"dealer_message_open_check_out_5"		"<!--.5-->Buena elección."	
 		"dealer_message_open_check_out_6"		"<!--.5-->La decisión más inteligente que has tomado. Cerremos esto."		
-		"dealer_message_open_check_out_7"		"<!--.5-->Bien. Hagámoslo oficial."	
-		
+		"dealer_message_open_check_out_7"		"<!--.5-->Bien. Hagámoslo oficial."
+
 		"dealer_message_txn_xld_bailout_0"		"<!--.5-->No hay prisa. Ya sabes dónde encontrarme."
 		"dealer_message_txn_xld_bailout_1"		"<!--.5-->No voy a ir a ninguna parte."
 		"dealer_message_txn_xld_bailout_2"		"<!--.5-->De momento mantendré esta sobre la mesa."
@@ -48320,11 +48313,10 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"dealer_message_addition_factory_new_1"	"<!--.25-->Y es nueva de fábrica. Impecable."
 		"dealer_message_addition_factory_new_2"	"<!--.25-->Viene directamente de la bóveda. Nueva de fábrica."
 		"dealer_message_addition_factory_new_3"	"<!--.25-->Esta es nueva de fábrica. Nunca la han disparado."
-
+		
 		"system_dealer_left_chat_0"				"El traficante ha salido del chat."
 		"system_dealer_join_chat_0"				"Ofertas del traficante de armas de la {s:collection}<!--1.25-->El traficante se ha conectado"
 		"system_user_reject_offer_0"			"{s:user-name} ha rechazado la oferta."
-		
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
@@ -48556,6 +48548,21 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		
 		"quest_11014_var_desc:p{mission-points}"	 	"Gana una ronda en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>.#|#Gana varias rondas en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>."
 		"quest_11014_var_ingame:p{mission-points}"		"Gana una ronda.#|#Gana varias rondas."
+		
+		"quest_11015_var_desc:p{mission-points}"	 	"Gana una ronda en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>.#|#Gana varias rondas en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>."
+		"quest_11015_var_ingame:p{mission-points}"		"Gana una ronda.#|#Gana varias rondas."
+
+// crow_mask_51633_comment
+// crow_mask_51634_comment
+}
+
+
+
+
+}
+
+
+a una ronda.#|#Gana varias rondas."
 		
 		"quest_11015_var_desc:p{mission-points}"	 	"Gana una ronda en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>.#|#Gana varias rondas en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Gana una ronda.#|#Gana varias rondas."

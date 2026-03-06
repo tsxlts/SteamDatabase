@@ -2488,7 +2488,6 @@
 		"ItemHistory_Action_TournamentDrop"								"Ai primit un suvenir"
 		"ItemHistory_Action_TemplateItemGrant"							"Obținut"
 		"ItemHistory_Action_Market_Add"									"Primit din Piața comunitară"
-
 		"ItemHistory_Transaction_Delete"								"Ai șters"
 		"ItemHistory_Transaction_Craft"									"Fabricat"
 		"ItemHistory_Transaction_UnlockCrate"							"A descuiat un container"
@@ -48114,7 +48113,7 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"laptop_app_version"						"v 1.1.0.2000"
 
 		"dealer_offer_attachment_title"							"{s:item-name}"
-		"dealer_offer_attachment_wear"						"{s:item-rarity}"
+		"dealer_offer_attachment_wear"							"{s:item-rarity}"
 		"dealer_offer_attachment_remaining_title"				"OFERTA #{d:offer-total}"
 		"dealer_offer_attachment_remaining"						"Oferta #{d:offer-total}"
 		"dealer_offer_received_count"							"<b>{s:offer-count}</b> ofertă"
@@ -48129,8 +48128,6 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"user_btn_purchase_desc_purchase"		"Menține apăsat pentru a achiziționa acest obiect. După achiziție, terminalul va fi înlăturat."
 		"user_btn_purchase_desc_continue"		"Menține apăsat pentru a refuza această ofertă și a solicita una nouă."
 		"user_btn_purchase_desc_end"		"Refuză oferta finală și înlătură terminalul."
-		"user_btn_purchase_title"			"<b>{s:offer-count} ofertă</b> – răspunsuri sugerate"
-		"user_btn_purchase_final_title"		"<b>Oferta finală</b> – răspunsuri sugerate"
 		"user_btn_decline_desc"				"Refuză oferta aceasta și solicită una nouă."
 		"user_btn_accept"		"Accept oferta la <b>{s:price}</b>"
 		"user_btn_accept_final"	"Accept oferta finală la <b>{s:price}</b>"
@@ -48185,7 +48182,6 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"laptop_pan_tooltip" 			"Menține apăsată tasta „Shift” și trage pentru a deplasa camera."
 		"laptop_pricing_tooltip"		"Prețurile sunt globale și ajustate automat în funcție de cererea pentru fiecare obiect din această colecție."
 
-
 		"dealer_message_start_0"  	"Totul se negociază cu clientul.<!--.25-->Am tot ce-ți trebuie. Fără hârțogăraie."
 		"dealer_message_start_1"  	"Am un transport de marfă de pe piața gri, fără acte.<!--.25-->Nu-ți face griji, au uitat toți de armele astea. Sunt scoase din circulație de ani întregi și nu le mai caută nimeni.<!--.25-->În plus, dacă te interesează, încă mai trag în direcția în care le îndrepți."
 		"dealer_message_start_2"  	"Vameșii din Ahradan au pus azi-dimineață mâna pe transportul meu. Am încercat să o dreg cu o poveste jalnică despre faptul că transport echipament medical vital pentru niște muribunzi... <!--.25-->N-au fost impresionați de poveste, însă servieta plină cu bani a fost totuși pe placul lor.<!--.25-->Ce ai zice să aruncăm o privire la aparatele astea de dializă înainte de a le livra orfanilor."
@@ -48193,7 +48189,6 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"dealer_message_start_4"  	"Toată marfa de astăzi este curată.<!--.25-->Nimeni nu va știi că nu ești primul care pune mâna pe ele."
 		"dealer_message_start_5"  	"Marfă fantomă, neștanțată, gata de utilizare.<!--.25-->Probabil că un tribunal militar ar folosi-o ca probă.<!--.25-->Amândoi știm totuși că sunt niște adevărate capodopere."
 		"dealer_message_start_6"  	"Toată marfa asta este dintr-un lot de piese exotice eliberat de la o unitate ceremonială.<!--.25-->Au fost folosite mult la mărșăluit, dar n-au tras niciun foc."
-		"dealer_message_start_7"  	"Bun. Tu ești.<!--.25-->Ceilalți clienți vor întotdeauna să afle de unde provine marfa. Urăsc când fac asta.<!--.25-->Tot ce trebuie să te intereseze este dacă e cea mai bună marfă de pe piață.<!--.25-->Ghici ce: chiar este."
 		"dealer_message_start_8"  	"Acordul de pace din Drosvik. Ador pacea.<!--.25-->Asta pentru că știu un general plin de datorii și un depozit de arme care adună praf.<!--.25-->Vreau să spun că...<!--.25-->Ador pacea și pentru că e bună, evident. Toate acele vieți nevinovate și...<!--.25-->Ce tot bolborosesc aici, doar nu te interesează."
 		"dealer_message_start_9"  	"Lotul ăsta e plin de piese exotice sustrase din piața gri.<!--.25-->Calibre nu tocmai normale, deci nu sunt pentru amatori. O să le iubești."
 		"dealer_message_start_10"  	"Ce rușine.<!--.25-->Cred că am etichetat greșit o ladă în avizul meu de expediție.<!--.25-->Bine, poate câteva zeci de lăzi.<!--.25-->Ce-ar fi să mă ajuți să scap de ele înainte ca autoritățile portuare să le inspecteze."
@@ -48216,7 +48211,6 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"dealer_message_start_27"	"Urăsc să am de-a face cu insurgenții. E doar un mod politicos de a-i numi pe civili, care e un mod politicos de a spune amatori nenorociți.<!--.25-->În orice caz, acești cumpărători au încetat să mai comunice, așa că le voi oferi unor profesioniști șansa de a pune mâna pe acest echipament."
 		"dealer_message_start_28"	"În sud, în zona perpetuu fierbinte, tocmai a avut loc prăbușirea bianuală a parlamentului.<!--.25--Mai multe armurării locale s-au deschis precum niște piñata."
 		"dealer_message_start_29"	"Inspectorul autorității portuare a semnalat acest transport ca fiind unul neautorizat vinerea trecută.<!--.25-->Până luni, fiica sa avea să primească suficienți bani pentru a-și începe studiile la Stamwick. Din nou, acesta a fost doar un alt transport de echipamente agricole.<!--.25-->Ce pot spune, educația e importantă. Hai să aruncăm o privire la câteva echipamente agricole."
-
 
 		"dealer_message_resume_0"  	"<!--1-->Te-ai întors. Bun. Oferta e încă valabilă."
 		"dealer_message_resume_1"  	"<!--1-->Ai nevoie de puțin timp să te gândești? E în regulă."
@@ -48280,7 +48274,6 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"dealer_message_next_offer_39"   "<!--1-->Nu-i o problemă. Nici eu n-aș fi cumpărat-o. Asta, pe de altă parte..."
 		"dealer_message_next_offer_40"   "<!--1-->Vrei să mă duc să-ți aduc marfă de pe raftul cu lucruri premium, nu-i așa? Bine, s-a făcut."
 
-
 		"dealer_message_last_offer_0"	"<!--0-->Bun, asta-i oferta finală. Dacă-ți convine bine, dacă nu, iar bine."
 		"dealer_message_last_offer_1"	"<!--0-->Asta să știi că e oferta mea finală."
 		"dealer_message_last_offer_2"	"<!--0-->Oferta finală. Tu decizi, dar hai, nu-mi mai irosi timpul."
@@ -48307,7 +48300,7 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"dealer_message_timerexpired_7"		"<!--.1-->Și eu care credeam că o sa te ajut să scapi de câțiva oameni.<!--.5-->Se pare că doar mi-ai irosit timpul."
 		"dealer_message_timerexpired_8"		"<!--.1-->Înțelegerea pică."	
 		"dealer_message_timerexpired_9"		"<!--.1-->S-a scurs timpul."
-		"dealer_message_timerexpired_10"		"<!--.1-->Bun, m-am plictisit deja. Am încheiat orice discuție."		
+		"dealer_message_timerexpired_10"	"<!--.1-->Bun, m-am plictisit deja. Am încheiat orice discuție."		
 
 		"dealer_message_open_check_out_0"		"<!--.5-->Asta era făcută pentru tine. De asta m-am și gândit la tine prima dată. Hai să batem palma."
 		"dealer_message_open_check_out_1"		"<!--.5-->O decizie excelentă. Mă voi ocupa de împachetare și transport."
@@ -48316,8 +48309,8 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"dealer_message_open_check_out_4"		"<!--.5-->Perfect. Să o facem."		
 		"dealer_message_open_check_out_5"		"<!--.5-->Bună alegere."	
 		"dealer_message_open_check_out_6"		"<!--.5-->Cea mai bună alegere pe care ai făcut-o vreodată. Hai să încheiem înțelegerea."		
-		"dealer_message_open_check_out_7"		"<!--.5-->Bun. Hai să încheiem."	
-		
+		"dealer_message_open_check_out_7"		"<!--.5-->Bun. Hai să încheiem."
+
 		"dealer_message_txn_xld_bailout_0"		"<!--.5-->Nu e grabă. Știi unde mă poți găsi."
 		"dealer_message_txn_xld_bailout_1"		"<!--.5-->Nu plec nicăieri."
 		"dealer_message_txn_xld_bailout_2"		"<!--.5-->O să păstrez oferta asta valabilă."
@@ -48385,11 +48378,10 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"dealer_message_addition_factory_new_1"	"<!--.25-->Și e nouă. Impecabilă."
 		"dealer_message_addition_factory_new_2"	"<!--.25-->Direct din depozit. Este nouă."
 		"dealer_message_addition_factory_new_3"	"<!--.25-->Arma asta e nouă. N-a tras niciun foc."
-
+		
 		"system_dealer_left_chat_0"				"Traficantul a părăsit chatul."
 		"system_dealer_join_chat_0"				"{s:collection} – ofertele traficantului de arme.<!--1.25-->Traficantul s-a conectat."
 		"system_user_reject_offer_0"			"{s:user-name} a refuzat oferta."
-		
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
@@ -48621,6 +48613,21 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		
 		"quest_11014_var_desc:p{mission-points}"	 	"Câștigă o rundă în <b>{s:gamemode}: {s:location}</b>.#|#Câștigă runde în <b>{s:gamemode}: {s:location}</b>.#|#Câștigă runde în <b>{s:gamemode}: {s:location}</b>."
 		"quest_11014_var_ingame:p{mission-points}"		"Câștigă o rundă#|#Câștigă runde#|#Câștigă runde"
+		
+		"quest_11015_var_desc:p{mission-points}"	 	"Câștigă o rundă în <b>{s:gamemode}: {s:location}</b>.#|#Câștigă runde în <b>{s:gamemode}: {s:location}</b>.#|#Câștigă runde în <b>{s:gamemode}: {s:location}</b>."
+		"quest_11015_var_ingame:p{mission-points}"		"Câștigă o rundă#|#Câștigă runde#|#Câștigă runde"
+
+// crow_mask_51633_comment
+// crow_mask_51634_comment
+}
+
+
+
+
+}
+
+
+undă#|#Câștigă runde#|#Câștigă runde"
 		
 		"quest_11015_var_desc:p{mission-points}"	 	"Câștigă o rundă în <b>{s:gamemode}: {s:location}</b>.#|#Câștigă runde în <b>{s:gamemode}: {s:location}</b>.#|#Câștigă runde în <b>{s:gamemode}: {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Câștigă o rundă#|#Câștigă runde#|#Câștigă runde"

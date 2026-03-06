@@ -2485,7 +2485,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"ItemHistory_Action_TournamentDrop"								"Recibiste un paquete de recuerdo"
 		"ItemHistory_Action_TemplateItemGrant"							"Obtenido"
 		"ItemHistory_Action_Market_Add"									"Recibido del Mercado de la Comunidad"
-
 		"ItemHistory_Transaction_Delete"								"Eliminaste"
 		"ItemHistory_Transaction_Craft"									"Fabricado"
 		"ItemHistory_Transaction_UnlockCrate"							"Contenedor abierto"
@@ -48055,7 +48054,7 @@ Tu obtención de EXP de recompensa de misión no volverá a su valor normal hast
 		"laptop_app_version"						"v 1.1.0.2000"
 
 		"dealer_offer_attachment_title"							"{s:item-name}"
-		"dealer_offer_attachment_wear"						"{s:item-rarity}"
+		"dealer_offer_attachment_wear"							"{s:item-rarity}"
 		"dealer_offer_attachment_remaining_title"				"OFERTA #{d:offer-total}"
 		"dealer_offer_attachment_remaining"						"Oferta #{d:offer-total}"
 		"dealer_offer_received_count"							"<b>{s:offer-count}</b> Oferta"
@@ -48070,8 +48069,6 @@ Tu obtención de EXP de recompensa de misión no volverá a su valor normal hast
 		"user_btn_purchase_desc_purchase"		"Mantén presionado para comprar este artículo. Después de la compra, se descarta la terminal."
 		"user_btn_purchase_desc_continue"		"Mantén presionado para declinar permanentemente esta oferta y ver la siguiente."
 		"user_btn_purchase_desc_end"		"Rechazar la última oferta y descartar esta terminal."
-		"user_btn_purchase_title"			"<b>{s:offer-count} Oferta </b> - Respuestas sugeridas"
-		"user_btn_purchase_final_title"		"<b>Última oferta</b> - Respuestas sugeridas"
 		"user_btn_decline_desc"				"Rechazar esta oferta y ver otra"
 		"user_btn_accept"		"Aceptar oferta <b>{s:price}</b>"
 		"user_btn_accept_final"	"Aceptar última oferta por <b>{s:price}</b>"
@@ -48126,7 +48123,6 @@ Tu obtención de EXP de recompensa de misión no volverá a su valor normal hast
 		"laptop_pan_tooltip" 			"Mantén presionada la tecla \"Mayús\" y arrastra para desplazar la cámara"
 		"laptop_pricing_tooltip"		"Los precios son globales y se ajustan automáticamente en función de la demanda de cada artículo de esta colección."
 
-
 		"dealer_message_start_0"  	"Esto es material de contratista a lo grande.<!--.25-->Todo lujo de detalles y cero papeleo."
 		"dealer_message_start_1"  	"Estoy moviendo material del mercado gris, sin papeleo.<!--.25-->No te preocupes, lleva años fuera de circulación, nadie lo está buscando.<!--.25-->Además, sigue disparando, por si te da curiosidad."
 		"dealer_message_start_2"  	"La aduana de Ahradan retuvo mi cargamento esta mañana. Intenté justificarlo con una triste historia sobre equipamiento médico y un pobre moribundo…<!--.25-->Eso no funcionó, pero el maletín con dinero sí.<!--.25-->¿Qué te parece si echamos un vistazo a esas máquinas de diálisis antes de llevárselas a los huérfanos?"
@@ -48134,7 +48130,6 @@ Tu obtención de EXP de recompensa de misión no volverá a su valor normal hast
 		"dealer_message_start_4"  	"El material que tengo hoy está todo limpio.<!--.25-->Que yo sepa, tú eres el primero en ponerle las manos encima."
 		"dealer_message_start_5"  	"Piezas estériles, sin números de serie, acción perfecta.<!--.25-->Un tribunal de guerra las llamaría evidencia.<!--.25-->Tú y yo sabemos que son unas malditas obras maestras."
 		"dealer_message_start_6"  	"Todo este cargamento viene con piezas exóticas sacadas de una unidad de desfile.<!--.25-->Han desfilado mucho. Nunca han sido disparadas."
-		"dealer_message_start_7"  	"Vaya, eres tú.<!--.25-->Mis otros clientes siempre quieren saber cómo obtengo lo que vendo. Odio eso.<!--.25-->Todo lo que necesitas saber es que es de la mejor calidad del mercado.<!--.25-->¿Adivina qué? Lo es."
 		"dealer_message_start_8"  	"Acuerdo de paz en Drosvik. Me encanta la paz.<!--.25-->Porque tengo a un general lleno de deudas y un arsenal repleto recolectando polvo.<!--.25-->Quiero decir…<!--.25-->También porque la paz es buena, claro. Vidas inocentes y…<!--.25-->Qué estoy diciendo, como si a ti te importara..."
 		"dealer_message_start_9"  	"Este cargamento trae piezas exóticas de una desviación del mercado gris.<!--.25-->Calibres poco comunes, no aptos para aficionados. Te encantarán."
 		"dealer_message_start_10"  	"Qué vergüenza.<!--.25-->Debo haber etiquetado por error una caja en mi etiqueta de envío.<!--.25-->Bueno, varias docenas de ellas.<!--.25-->¿Qué te parece si me ayudas a hacer desaparecer este inventario antes de que la autoridad portuaria lo investigue?"
@@ -48157,7 +48152,6 @@ Tu obtención de EXP de recompensa de misión no volverá a su valor normal hast
 		"dealer_message_start_27"	"Odio trabajar con insurgentes.<!--.25-->Es solo una forma educada de decir civiles, que a su vez es una forma suave de decir malditos aficionados.<!--.25-->De todos modos, han desaparecido, así que les estoy dando a los verdaderos profesionales la oportunidad de usar esta belleza."
 		"dealer_message_start_28"	"El parlamento de uno de esos países más al sur donde siempre hace calor acaba de sufrir su habitual colapso semestral.<!--.25-->Un montón de armerías locales explotaron como piñatas."
 		"dealer_message_start_29"	"El inspector de la autoridad portuaria calificó este cargamento de irregular el viernes pasado.<!--.25-->Para el lunes, su hija ya tenía dinero suficiente para estudiar en Stamwick y el cargamento volvía a ser herramientas agrícolas.<!--.25-->Qué puedo decir, la educación es importante. Vamos a ver unas herramientas agrícolas."
-
 
 		"dealer_message_resume_0"  	"<!--1-->Regresaste. Qué bueno. El trato sigue en pie."
 		"dealer_message_resume_1"  	"<!--1-->¿Necesitas un momento para pensarlo? No hay problema."
@@ -48221,7 +48215,6 @@ Tu obtención de EXP de recompensa de misión no volverá a su valor normal hast
 		"dealer_message_next_offer_39"   "<!--1-->No hay problema. Yo tampoco lo hubiera comprado. Ahora esta, por otro lado..."
 		"dealer_message_next_offer_40"   "<!--1-->Me estás haciendo ir hasta la parte de atrás por las cosas de estantería premium, ¿eh? Muy bien, ahí te va."
 
-
 		"dealer_message_last_offer_0"	"<!--0-->Muy bien, última oferta. Te la llevas o la dejas."
 		"dealer_message_last_offer_1"	"<!--0-->Considera esta mi última oferta."
 		"dealer_message_last_offer_2"	"<!--0-->Última oferta. Tómalo o déjalo; deja de hacerme perder el tiempo."
@@ -48248,7 +48241,7 @@ Tu obtención de EXP de recompensa de misión no volverá a su valor normal hast
 		"dealer_message_timerexpired_7"		"<!--.1-->Y heme aquí pensando en que te estaba ayudando a acabar con la gente.<!--.5-->Resulta que tú estás acabando con mi tiempo."
 		"dealer_message_timerexpired_8"		"<!--.1-->Fuera trato."	
 		"dealer_message_timerexpired_9"		"<!--.1-->Se agotó el tiempo."
-		"dealer_message_timerexpired_10"		"<!--.1-->Bien, oficialmente, ya me aburrí. Se acabó."		
+		"dealer_message_timerexpired_10"	"<!--.1-->Bien, oficialmente, ya me aburrí. Se acabó."		
 
 		"dealer_message_open_check_out_0"		"<!--.5-->Esta tenía todo para ti, es por eso que pensé primero en ti. Cerremos el trato."
 		"dealer_message_open_check_out_1"		"<!--.5-->Una decisión excelente. Me aseguraré de que esté empacada y lista."
@@ -48257,8 +48250,8 @@ Tu obtención de EXP de recompensa de misión no volverá a su valor normal hast
 		"dealer_message_open_check_out_4"		"<!--.5-->Perfecto. Cerremos el trato."		
 		"dealer_message_open_check_out_5"		"<!--.5-->Buena elección."	
 		"dealer_message_open_check_out_6"		"<!--.5-->Es la decisión más inteligente que jamás hayas tomado. Hagámoslo final."		
-		"dealer_message_open_check_out_7"		"<!--.5-->Bien. Hagámoslo oficial."	
-		
+		"dealer_message_open_check_out_7"		"<!--.5-->Bien. Hagámoslo oficial."
+
 		"dealer_message_txn_xld_bailout_0"		"<!--.5-->No te apures. Sabes dónde encontrarme."
 		"dealer_message_txn_xld_bailout_1"		"<!--.5-->No me iré a ninguna parte."
 		"dealer_message_txn_xld_bailout_2"		"<!--.5-->Mantendré la propuesta sobre la mesa por ahora."
@@ -48326,11 +48319,10 @@ Tu obtención de EXP de recompensa de misión no volverá a su valor normal hast
 		"dealer_message_addition_factory_new_1"	"<!--.25-->Y es nueva de fábrica. Impecable."
 		"dealer_message_addition_factory_new_2"	"<!--.25-->Recién llegada de la bóveda. Nueva de fábrica."
 		"dealer_message_addition_factory_new_3"	"<!--.25-->Esta es nueva de fábrica. Nunca la han disparado."
-
+		
 		"system_dealer_left_chat_0"				"El traficante ha salido de tu chat."
 		"system_dealer_join_chat_0"				"Ofertas del traficante de armas de {s:collection}<!--1.25-->El traficante se ha conectado"
 		"system_user_reject_offer_0"			"{s:user-name} rechazó la oferta."
-		
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
@@ -48562,6 +48554,21 @@ Tu obtención de EXP de recompensa de misión no volverá a su valor normal hast
 		
 		"quest_11014_var_desc:p{mission-points}"	 	"Gana una ronda en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>.#|#Gana rondas en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>."
 		"quest_11014_var_ingame:p{mission-points}"		"Gana una ronda#|#Gana rondas"
+		
+		"quest_11015_var_desc:p{mission-points}"	 	"Gana una ronda en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>.#|#Gana rondas en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>."
+		"quest_11015_var_ingame:p{mission-points}"		"Gana una ronda#|#Gana rondas"
+
+// crow_mask_51633_comment
+// crow_mask_51634_comment
+}
+
+
+
+
+}
+
+
+_11014_var_ingame:p{mission-points}"		"Gana una ronda#|#Gana rondas"
 		
 		"quest_11015_var_desc:p{mission-points}"	 	"Gana una ronda en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>.#|#Gana rondas en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Gana una ronda#|#Gana rondas"

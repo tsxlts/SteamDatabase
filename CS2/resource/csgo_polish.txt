@@ -2481,7 +2481,6 @@
 		"ItemHistory_Action_TournamentDrop"								"Zdobyto jako pamiątka"
 		"ItemHistory_Action_TemplateItemGrant"							"Zdobyto"
 		"ItemHistory_Action_Market_Add"									"Uzyskano z Rynku Społeczności Steam"
-
 		"ItemHistory_Transaction_Delete"								"Usunięto przez ciebie"
 		"ItemHistory_Transaction_Craft"									"Wytworzono"
 		"ItemHistory_Transaction_UnlockCrate"							"Uzyskano przez otwarcie pojemnika"
@@ -48045,7 +48044,7 @@
 		"laptop_app_version"						"v 1.1.0.2000"
 
 		"dealer_offer_attachment_title"							"{s:item-name}"
-		"dealer_offer_attachment_wear"						"{s:item-rarity}"
+		"dealer_offer_attachment_wear"							"{s:item-rarity}"
 		"dealer_offer_attachment_remaining_title"				"OFERTA nr {d:offer-total}"
 		"dealer_offer_attachment_remaining"						"Oferta nr {d:offer-total}"
 		"dealer_offer_received_count"							"<b>{s:offer-count}</b> oferta"
@@ -48060,8 +48059,6 @@
 		"user_btn_purchase_desc_purchase"		"Przytrzymaj, by kupić ten przedmiot. Po zakupie terminal zostanie wyrzucony."
 		"user_btn_purchase_desc_continue"		"Przytrzymaj, by trwale odrzucić tę ofertę i zobaczyć kolejną."
 		"user_btn_purchase_desc_end"		"Odrzuć ostatnią ofertę i wyrzuć terminal."
-		"user_btn_purchase_title"			"<b>{s:offer-count} oferta</b> – sugerowane odpowiedzi"
-		"user_btn_purchase_final_title"		"<b>Ostatnia oferta</b> – sugerowane odpowiedzi"
 		"user_btn_decline_desc"				"Odrzuć tę ofertę i zobacz kolejną."
 		"user_btn_accept"		"Przyjmij ofertę <b>{s:price}</b>"
 		"user_btn_accept_final"	"Przyjmij ostatnią ofertę <b>{s:price}</b>"
@@ -48116,7 +48113,6 @@
 		"laptop_pan_tooltip" 			"Przytrzymaj Shift i przeciągaj, by przesuwać kamerę."
 		"laptop_pricing_tooltip"		"Ceny mają charakter globalny i są automatycznie dostosowywane na podstawie popytu na poszczególny przedmiot z tej kolekcji."
 
-
 		"dealer_message_start_0"  	"To cacko to model absolutnie dla profesjonalisty.<!--.25-->Wszystkie bajery. Żadnej papierologii."
 		"dealer_message_start_1"  	"Opycham towar z szarej strefy, bez papierów.<!--.25-->Nie martw się, nikogo nie interesuje. Od lat poza obrotem, nikt go nie szuka.<!--.25-->A jeśli cię to ciekawi, to jak z niego celujesz, nadal strzela."
 		"dealer_message_start_2"  	"Celnicy w Ahradan zamrozili dziś rano mój ładunek. Próbowałem go rozmrozić, opowiadając łzawą historię o sprzęcie medycznym i jakimś biednym umierającym… kimkolwiek.<!--.25-->Nie zadziałało. Ale teczka pełna pieniędzy zadziałała.<!--.25-->Spójrzmy może na te maszyny do dializ, zanim trafią do sierot."
@@ -48124,7 +48120,6 @@
 		"dealer_message_start_4"  	"Towar, który dzisiaj dostałem, jest zupełnie czysty.<!--.25-->O ile mi wiadomo, to jesteś pierwszą osobą, w której ręce trafił."
 		"dealer_message_start_5"  	"Czyściutkie egzemplarze, żadnych numerów seryjnych, doskonałe działanie.<!--.25-->Trybunał wojenny uznałby ten sprzęt za dowody.<!--.25-->Ty i ja wiemy, że to cholerne dzieła sztuki."
 		"dealer_message_start_6"  	"Cały ten ładunek to egzotyczne egzemplarze wyzwolone niedawno od jednostki uczestniczącej w defiladach.<!--.25-->Widziała wiele parad, za to żadnego strzału."
-		"dealer_message_start_7"  	"Dobrze. To ty.<!--.25-->Moi inni klienci zawsze chcą wiedzieć, skąd wziąłem swój towar. Nienawidzę tego.<!--.25-->A ty tylko chcesz wiedzieć to, czy jest to najlepszy produkt na rynku.<!--.25-->Zgadnij co: jest."
 		"dealer_message_start_8"  	"Porozumienie pokojowe w Drosviku. Kocham pokój, bo mam generała z mnóstwem długów i w pełni zaopatrzoną zbrojownią, co tylko zbiera kurz.<!--.25--> Znaczy… <!--.25--> Też dlatego, że pokój jest dobry, rzecz jasna. Niewinne istnienia i…<!--.25-->Co ja gadam, przecież nie obchodzi cię to."
 		"dealer_message_start_9"  	"Ten ładunek ma egzotyczne egzemplarze przekierowane z szarej strefy.<!--.25-->Nietypowe kalibry, nie dla amatorów. Spodobają ci się."
 		"dealer_message_start_10"  	"To kompromitujące.<!--.25-->Musiałem przypadkowo źle opisać skrzynię w papierach wysyłkowych.<!--.25-->Czy raczej kilkadziesiąt skrzyń.<!--.25-->Pomożesz mi sprawić, że ten towar zniknie, zanim władze portu się nim zainteresują?"
@@ -48147,7 +48142,6 @@
 		"dealer_message_start_27"	"Nienawidzę pracować z powstańcami. To po prostu grzeczny sposób na nazwanie ich cywilami, co jest miłym sposobem na nazwanie ich cholernymi amatorami.<!--.25-->Tak czy inaczej, zniknęli, więc daję szansę prawdziwym profesjonalistom na ten sprzęt."
 		"dealer_message_start_28"	"W wiecznie gorącej strefie na południu właśnie doszło do drugiego corocznego upadku parlamentu.<!--.25-->Wiele lokalnych zbrojowni rozbito niczym piniaty."
 		"dealer_message_start_29"	"W zeszły piątek inspektor uznał tę przesyłkę za nieregularną.<!--.25-->Do poniedziałku jego córka zebrała wystarczająco dużo pieniędzy na czesne, żeby uczęszczać do Stamwick, a przesyłka znów zawierała przyrządy rolnicze.<!--.25-->Cóż mogę powiedzieć, edukacja jest ważna. Przyjrzyjmy się przyrządom rolniczym."
-
 
 		"dealer_message_resume_0"  	"<!--1-->Wróciłeś. To dobrze. Oferta nadal aktualna."
 		"dealer_message_resume_1"  	"<!--1-->Potrzebowałeś chwili, żeby pomyśleć? Nie ma problemu."
@@ -48211,7 +48205,6 @@
 		"dealer_message_next_offer_39"   "<!--1-->Nie ma problemu. Też bym tego nie kupił. A to, z drugiej strony…"
 		"dealer_message_next_offer_40"   "<!--1-->Wysyłasz mnie na sam tył na półkę z towarem prima sort, co? Dobra, niech ci będzie."
 
-
 		"dealer_message_last_offer_0"	"<!--0-->No dobra, ostatnia oferta i kolejnej nie będzie. Bierzesz albo nie."
 		"dealer_message_last_offer_1"	"<!--0-->Uznaj to za moją ostateczną ofertę."
 		"dealer_message_last_offer_2"	"<!--0-->Ostateczna oferta. Bierzesz albo nie, nie marnujmy już mojego czasu."
@@ -48238,7 +48231,7 @@
 		"dealer_message_timerexpired_7"		"<!--.1-->Już myślałem, że pomagam ci wykańczać ludzi.<!--.5-->A tu się okazuje, że to ty wykańczasz mój czas."
 		"dealer_message_timerexpired_8"		"<!--.1-->Nici z umowy."	
 		"dealer_message_timerexpired_9"		"<!--.1-->Czas minął."
-		"dealer_message_timerexpired_10"		"<!--.1-->W porządku, nudy mnie już łapią. Na tym kończymy."		
+		"dealer_message_timerexpired_10"	"<!--.1-->W porządku, nudy mnie już łapią. Na tym kończymy."		
 
 		"dealer_message_open_check_out_0"		"<!--.5-->Ta sztuka aż się o ciebie prosiła. Właśnie dlatego przyszedłeś mi na myśl pierwszy. Zaklepmy ten układ."
 		"dealer_message_open_check_out_1"		"<!--.5-->Doskonała decyzja. Upewnię się, że będzie zapakowane i gotowe."
@@ -48247,8 +48240,8 @@
 		"dealer_message_open_check_out_4"		"<!--.5-->Świetnie. Niech będzie."		
 		"dealer_message_open_check_out_5"		"<!--.5-->Dobry wybór."	
 		"dealer_message_open_check_out_6"		"<!--.5-->Najmądrzejszy wybór, jaki kiedykolwiek podjąłeś. Sfinalizujmy to."		
-		"dealer_message_open_check_out_7"		"<!--.5-->Dobrze. Przypieczętujmy to."	
-		
+		"dealer_message_open_check_out_7"		"<!--.5-->Dobrze. Przypieczętujmy to."
+
 		"dealer_message_txn_xld_bailout_0"		"<!--.5-->Bez pośpiechu. Wiesz, gdzie mnie znaleźć."
 		"dealer_message_txn_xld_bailout_1"		"<!--.5-->Nigdzie się nie wybieram."
 		"dealer_message_txn_xld_bailout_2"		"<!--.5-->Przetrzymam dla ciebie tę ofertę."
@@ -48316,11 +48309,10 @@
 		"dealer_message_addition_factory_new_1"	"<!--.25-->I jest prosto z fabryki. Nieskazitelny okaz."
 		"dealer_message_addition_factory_new_2"	"<!--.25-->Prosto z sejfu. Prosto z fabryki."
 		"dealer_message_addition_factory_new_3"	"<!--.25-->Fabrycznie nowy sprzęt. Nieużywany."
-
+		
 		"system_dealer_left_chat_0"				"Handlarz opuścił twój czat."
 		"system_dealer_join_chat_0"				"{s:collection}: oferty sprzedaży broni.<!--1.25-->Handlarz połączony."
 		"system_user_reject_offer_0"			"Użytkownik {s:user-name} odrzucił ofertę."
-		
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
@@ -48554,6 +48546,19 @@
 		"quest_11014_var_ingame:p{mission-points}"		"Wygraj rundę.#|#Wygraj rundy.#|#Wygraj rundy.#|#Wygraj rundy."
 		
 		"quest_11015_var_desc:p{mission-points}"	 	"Wygraj rundę. <b>Tryb: {s:gamemode}. Mapa: {s:location}.</b>#|#Wygraj rundy. <b>Tryb: {s:gamemode}. Mapa: {s:location}.</b>#|#Wygraj rundy. <b>Tryb: {s:gamemode}. Mapa: {s:location}.</b>#|#Wygraj rundy. <b>Tryb: {s:gamemode}. Mapa: {s:location}.</b>"
+		"quest_11015_var_ingame:p{mission-points}"		"Wygraj rundę.#|#Wygraj rundy.#|#Wygraj rundy.#|#Wygraj rundy."
+
+// crow_mask_51633_comment
+// crow_mask_51634_comment
+}
+
+
+
+
+}
+
+
+Wygraj rundę. <b>Tryb: {s:gamemode}. Mapa: {s:location}.</b>#|#Wygraj rundy. <b>Tryb: {s:gamemode}. Mapa: {s:location}.</b>#|#Wygraj rundy. <b>Tryb: {s:gamemode}. Mapa: {s:location}.</b>#|#Wygraj rundy. <b>Tryb: {s:gamemode}. Mapa: {s:location}.</b>"
 		"quest_11015_var_ingame:p{mission-points}"		"Wygraj rundę.#|#Wygraj rundy.#|#Wygraj rundy.#|#Wygraj rundy."
 
 // crow_mask_51588_comment

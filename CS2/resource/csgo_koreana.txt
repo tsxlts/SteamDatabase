@@ -2478,7 +2478,6 @@
 		"ItemHistory_Action_TournamentDrop"								"기념품 드롭 획득"
 		"ItemHistory_Action_TemplateItemGrant"							"획득"
 		"ItemHistory_Action_Market_Add"									"Steam 커뮤니티 장터에서 받음"
-
 		"ItemHistory_Transaction_Delete"								"직접 삭제함"
 		"ItemHistory_Transaction_Craft"									"제작"
 		"ItemHistory_Transaction_UnlockCrate"							"상자 개봉"
@@ -48062,7 +48061,7 @@
 		"laptop_app_version"						"v 1.1.0.2000"
 
 		"dealer_offer_attachment_title"							"{s:item-name}"
-		"dealer_offer_attachment_wear"						"{s:item-rarity}"
+		"dealer_offer_attachment_wear"							"{s:item-rarity}"
 		"dealer_offer_attachment_remaining_title"				"남은 제안: {d:offer-total}개"
 		"dealer_offer_attachment_remaining"						"남은 제안: {d:offer-total}개"
 		"dealer_offer_received_count"							"<b>{s:offer-count}</b> 제안"
@@ -48077,8 +48076,6 @@
 		"user_btn_purchase_desc_purchase"		"이 아이템을 구매하려면 길게 누르세요. 구매 후 터미널은 자동으로 파기됩니다."
 		"user_btn_purchase_desc_continue"		"이 제안을 거절하고 다음 제안을 확인하려면 길게 누르세요."
 		"user_btn_purchase_desc_end"		"최종 제안을 거절하고 이 터미널을 파기합니다."
-		"user_btn_purchase_title"			"<b>{s:offer-count} 제안</b> - 추천 응답"
-		"user_btn_purchase_final_title"		"<b>마지막 제안</b> - 추천 응답"
 		"user_btn_decline_desc"				"이 제안을 거절하고 다른 제안을 확인합니다."
 		"user_btn_accept"		"<b>{s:price}</b>에 수락하지."
 		"user_btn_accept_final"	"<b>{s:price}</b>에 거래를 끝내지."
@@ -48133,7 +48130,6 @@
 		"laptop_pan_tooltip" 			"화면을 이동하려면 'Shift' 키를 누른 상태로 마우스를 끌어 움직이세요."
 		"laptop_pricing_tooltip"		"가격은 전 세계 모든 지역에 대해 동일하게 책정되며 이 수집품에 포함된 각 아이템의 수요에 따라 자동으로 조정됩니다."
 
-
 		"dealer_message_start_0"  	"이 무기는 최상급 전문 요원용이라네.<!--.25-->상태도 좋고 작동도 아주 잘 되지. 복잡한 서류 작업도 전혀 필요 없다고."
 		"dealer_message_start_1"  	"회색시장에서 가져온 무기가 좀 있어. 당연히 기록은 없지.<!--.25-->추적이 불가능하니 걱정은 말게. 몇 년간 시장에서 유통되지 않은 물건이라 아무도 눈치 못 챌 거야.<!--.25-->게다가 여전히 잘 나간다고. 궁금하면 한번 쏴 보든지."
 		"dealer_message_start_2"  	"오늘 아침 아흐라단 세관에서 내 화물을 압류했다네. 불쌍하게 죽어가는 사람들을 살리려면 의료 장비가 필요하다는 뭐 그런 슬픈 이야기로 설득해 보려고 했거든.<!--.25-->그닥 효과가 없었지. 그런데 돈이 가득 든 서류 가방은 효과가 직방이더군.<!--.25-->이 투석기를 보육원에 보내기 전에 살펴보는 건 어떨까나?"
@@ -48141,7 +48137,6 @@
 		"dealer_message_start_4"  	"오늘 가지고 온 무기는 모두 깨끗하다네.<!--.25-->내가 아는 바로는, 지금까지 누구도 손대지 않은 무기일세."
 		"dealer_message_start_5"  	"깨끗하고, 일련번호도 없고, 상태까지 완벽한 무기가 있다네.<!--.25-->전범 재판소에서는 단순히 전쟁 범죄 증거물로 치부하겠지.<!--.25-->그렇지만 자네와 나는 이런 물건이 진짜 걸작이라는 걸 알고 있지 않나."
 		"dealer_message_start_6"  	"이번 무기는 모두 최근 의장대에서 풀린 희귀한 물건이라네.<!--.25-->행사 때문에 이곳저곳으로 많이 운반되기는 했지만, 한 번도 실제로 사용된 적은 없다네."
-		"dealer_message_start_7"  	"자네군, 다행이야!<!--.25-->다른 거래자들은 항상 내가 파는 물건을 어떻게 구했는지 궁금해하지. 정말인지 너무 싫다네.<!--.25-->자네가 유일하게 물어보는 건 시장에서 가장 좋은 무기냐 아니냐지.<!--.25-->이번 무기도 당연히 최고 중의 최고라네."
 		"dealer_message_start_8"  	"드로스비크 평화 협정이 생각나서 말인데, 난 평화를 사랑한다네.<!--.25-->전쟁이 나면 나한테 큰 빚을 진 장군이랑 문제만 더 복잡해질 거야. 무기고에 물건도 가득해서 걱정할 일도 없고 말이야.<!--.25-->그러니까 내 말은...<!--.25-->평화는 좋은 거니, 당연하지. 무고한 생명이...<!--.25-->아니, 내가 왜 변명을 하고 있지? 자네는 신경도 안 쓸텐데."
 		"dealer_message_start_9"  	"이번 화물에는 회색시장에서 가져온 희귀한 물건이 아주 많네.<!--.25-->구경이 특이해서 아마추어는 손도 못 대는 무기도 있지. 분명 마음에 들 거네."
 		"dealer_message_start_10"  	"아이고 내 정신 좀 봐.<!--.25-->선적 서류에 깜빡하고 품목을 잘못 기재한 상자가 하나 있지 뭐야.<!--.25-->아, 사실은 하나가 아니라 수십 개를 깜빡했어.<!--.25-->제대로 된 물건을 좀 채워 넣어야 할 거 같은데... 항만 당국에서 조사를 나오기 전에 자네가 상자에 든 물건을 없애는 걸 도와주는 건 어떤가?"
@@ -48164,7 +48159,6 @@
 		"dealer_message_start_27"	"난 반란군이랑 일하는 게 정말 싫어. 반란군은 그냥 총을 든 민간인을 정중하게 표현한 거고, 결국 아마추어를 멋들어지게 포장해서 부르는 거니까.<!--.25-->어쨌든 그들이 자취를 감췄으니, 이제 진짜 전문가가 이 무기를 다루는 게 마땅하지."
 		"dealer_message_start_28"	"항상 정세가 혼란스러운 남부 지역에서 국회가 붕괴되었다지. 거기는 반년마다 정권이 뒤집히는 거 같아.<!--.25-->아무튼 덕분에 현지 무기고가 박 터지듯 활짝 열린 모양이야."
 		"dealer_message_start_29"	"지난 금요일에 항만 당국 검사관이 이 화물이 의심스럽다고 말했지.<!--.25-->그런데 월요일에 그의 딸이 스탬윅 등록금을 치르고도 남을 만큼 돈이 충분해지니, 의심이 싹 사라지고 화물이 농기구로 처리되었더군.<!--.25-->내가 하고 싶은 말이야, 교육은 중요하다는 걸세. 자, 농기구나 한번 살펴보게나."
-
 
 		"dealer_message_resume_0"  	"<!--1-->다시 왔군. 잘 왔네. 거래는 아직 유효해."
 		"dealer_message_resume_1"  	"<!--1-->생각할 시간이 더 필요한가? 문제없다네."
@@ -48228,7 +48222,6 @@
 		"dealer_message_next_offer_39"   "<!--1-->괜찮다네. 나라도 거절했을 거야. 그렇지만 이거라면 얘기가 다르지..."
 		"dealer_message_next_offer_40"   "<!--1-->결국 맨 뒤에 있는 고급 선반 물건까지 뒤져 보게 만드는군? 좋아, 알았다네."
 
-
 		"dealer_message_last_offer_0"	"<!--0-->자, 이게 최종 제안이네. 수락하거나 거절하거나, 자네 선택이라네."
 		"dealer_message_last_offer_1"	"<!--0-->이게 최종 제안이네."
 		"dealer_message_last_offer_2"	"<!--0-->최종 제안이네. 어서 마음 가는 대로 하라고. 내가 좀 바쁘신 몸이라."
@@ -48255,7 +48248,7 @@
 		"dealer_message_timerexpired_7"		"<!--.1-->난 자네의 적군을 날려버리는 걸 도와주고 있는 줄 알았네.<!--.5-->근데 지금 보니 자네 덕에 내 시간만 날려버리고 있었군."
 		"dealer_message_timerexpired_8"		"<!--.1-->거래는 끝났네."	
 		"dealer_message_timerexpired_9"		"<!--.1-->시간이 다 됐군."
-		"dealer_message_timerexpired_10"		"<!--.1-->여기까지만 하지. 좀 지루하군. 거래는 끝이네."		
+		"dealer_message_timerexpired_10"	"<!--.1-->여기까지만 하지. 좀 지루하군. 거래는 끝이네."		
 
 		"dealer_message_open_check_out_0"		"<!--.5-->이건 딱 자네 것 같았어. 그러니까 자네한테 제일 먼저 보여준 거 아니겠나. 자, 거래를 마무리하자고."
 		"dealer_message_open_check_out_1"		"<!--.5-->훌륭한 결정이군. 잘 포장해서 준비해 두겠네."
@@ -48264,8 +48257,8 @@
 		"dealer_message_open_check_out_4"		"<!--.5-->완벽해. 마무리해 보자고."		
 		"dealer_message_open_check_out_5"		"<!--.5-->훌륭한 선택이야."	
 		"dealer_message_open_check_out_6"		"<!--.5-->아주 좋은 선택이었다고 내가 장담하지. 그럼 거래를 마무리 짓자고."		
-		"dealer_message_open_check_out_7"		"<!--.5-->좋아. 그럼 거래를 마무리 짓도록 하지."	
-		
+		"dealer_message_open_check_out_7"		"<!--.5-->좋아. 그럼 거래를 마무리 짓도록 하지."
+
 		"dealer_message_txn_xld_bailout_0"		"<!--.5-->서두를 것 없네. 내가 어디 있는지 알고 있지 않나."
 		"dealer_message_txn_xld_bailout_1"		"<!--.5-->난 여기 계속 있을 걸세."
 		"dealer_message_txn_xld_bailout_2"		"<!--.5-->이 제안은 일단 보류해 두지."
@@ -48333,11 +48326,10 @@
 		"dealer_message_addition_factory_new_1"	"<!--.25-->완전 새 물건이야. 흠잡을 데가 없어."
 		"dealer_message_addition_factory_new_2"	"<!--.25-->방금 출고된 것이야. 따끈따끈하다네."
 		"dealer_message_addition_factory_new_3"	"<!--.25-->새 물건이라서 실제로 사용된 적이 없지."
-
+		
 		"system_dealer_left_chat_0"				"무기 거래상이 채팅에서 나갔습니다."
 		"system_dealer_join_chat_0"				"{s:collection} 무기 거래 제안<!--1.25-->무기 거래상이 연결되었습니다."
 		"system_user_reject_offer_0"			"{s:user-name} 님이 제안을 거절했습니다."
-		
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
@@ -48566,6 +48558,24 @@
 		
 		"quest_11013_var_desc:p{mission-points}"	 	"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
 		"quest_11013_var_ingame:p{mission-points}"		"라운드 승리"
+		
+		"quest_11014_var_desc:p{mission-points}"	 	"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
+		"quest_11014_var_ingame:p{mission-points}"		"라운드 승리"
+		
+		"quest_11015_var_desc:p{mission-points}"	 	"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
+		"quest_11015_var_ingame:p{mission-points}"		"라운드 승리"
+
+// crow_mask_51633_comment
+// crow_mask_51634_comment
+}
+
+
+
+
+}
+
+
+game:p{mission-points}"		"라운드 승리"
 		
 		"quest_11014_var_desc:p{mission-points}"	 	"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
 		"quest_11014_var_ingame:p{mission-points}"		"라운드 승리"

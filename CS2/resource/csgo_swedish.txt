@@ -2484,7 +2484,6 @@
 		"ItemHistory_Action_TournamentDrop"								"Intjänade ett souvenirföremål"
 		"ItemHistory_Action_TemplateItemGrant"							"Intjänad"
 		"ItemHistory_Action_Market_Add"									"Mottogs från gemenskapsmarknaden"
-
 		"ItemHistory_Transaction_Delete"								"Du raderade"
 		"ItemHistory_Transaction_Craft"									"Tillverkad"
 		"ItemHistory_Transaction_UnlockCrate"							"Öppnade en låda"
@@ -45340,6 +45339,7 @@ Om samma match redan laddats ner lokalt och filen blivit förstörd, radera då 
 		"popup_delete_title"	"{s:itemname}"
 		"popup_delete_desc"		"Är du säker på att du vill ta bort detta föremål?"
 		"popup_delete_warning"	"Föremål som tas bort kan inte ångras."
+		"popup_delete_tooltip"	"Håll för att ta bort föremålet. Radering av föremål kan inte ångras."
 		"popup_delete_button"	"Ta bort föremål"
 
 		"popup_usegift_title"	"Skicka {s:itemname}"
@@ -48147,7 +48147,7 @@ Om samma match redan laddats ner lokalt och filen blivit förstörd, radera då 
 		"laptop_app_version"						"v 1.1.0.2000"
 
 		"dealer_offer_attachment_title"							"{s:item-name}"
-		"dealer_offer_attachment_wear"						"{s:item-rarity}"
+		"dealer_offer_attachment_wear"							"{s:item-rarity}"
 		"dealer_offer_attachment_remaining_title"				"ERBJUDANDE {d:offer-total}"
 		"dealer_offer_attachment_remaining"						"Erbjudande {d:offer-total}"
 		"dealer_offer_received_count"							"<b>{s:offer-count}</b> erbjudande"
@@ -48162,8 +48162,6 @@ Om samma match redan laddats ner lokalt och filen blivit förstörd, radera då 
 		"user_btn_purchase_desc_purchase"		"Håll knappen nedtryckt för att köpa det här föremålet. Terminalen kasseras efter köpet."
 		"user_btn_purchase_desc_continue"		"Håll ner för att avböja erbjudandet permanent och se nästa."
 		"user_btn_purchase_desc_end"		"Avböj det slutgiltiga erbjudandet och kassera denna terminal."
-		"user_btn_purchase_title"			"<b>{s:offer-count} Erbjudande</b> – föreslagna svar"
-		"user_btn_purchase_final_title"		"<b> Slutgiltigt erbjudande</b> – föreslagna svar"
 		"user_btn_decline_desc"				"Avböj detta erbjudande och se ett nytt"
 		"user_btn_accept"		"Acceptera erbjudande <b>{s:price}</b>"
 		"user_btn_accept_final"	"Acceptera slutgiltigt erbjudande <b>{s:price}</b>"
@@ -48218,7 +48216,6 @@ Om samma match redan laddats ner lokalt och filen blivit förstörd, radera då 
 		"laptop_pan_tooltip" 			"Håll ner shift-tangenten och dra för att panorera kameran"
 		"laptop_pricing_tooltip"		"Priserna är globala och justeras automatiskt baserat på efterfrågan för varje artikel i kollektionen."
 
-
 		"dealer_message_start_0"  	"Det här är bara professionella grejer!<!--.25-->Alla finesser. Ingen dokumentation."
 		"dealer_message_start_1"  	"Jag säljer gråmarknadsvaror utan dokumentation<!--.25-->Slappna av, de är kalla. De har inte varit i omlopp på flera år, ingen letar efter dem.<!--.25-->Och om du undrar så skjuter de fortfarande dit du riktar dem."
 		"dealer_message_start_2"  	"Tullen i Ahradan beslagtog min last i morse. Jag försökte ta tillbaka den med en snyfthistoria om medicinsk utrustning och nån stackare som är döende ...<!--.25-->Det funkade inte. Men det gjorde en väska full med pengar.<!--.25-->Vad sägs om att ta en titt på de här dialysmaskinerna innan jag ger dem till de föräldralösa barnen."
@@ -48226,7 +48223,6 @@ Om samma match redan laddats ner lokalt och filen blivit förstörd, radera då 
 		"dealer_message_start_4"  	"Allt jag har idag är rent.<!--.25-->Så vitt nån vet är dina händer de första som har rört vid dem."
 		"dealer_message_start_5"  	"Sterila delar, inga serienummer, i felfritt skick.<!--.25-->En krigsdomstol skulle kalla dem bevis.<!--.25-->Du och jag vet att de är mästerverk."
 		"dealer_message_start_6"  	"Hela den här leveransen består av exotiska varor som nyligen har befriats från en paradenhet.<!--.25-->Mycket marscherade. Avfyrades aldrig."
-		"dealer_message_start_7"  	"Bra. Det är du.<!--.25-->Mina andra kunder vill alltid veta hur jag fick tag på det jag säljer. Jag hatar det.<!--.25-->Allt du behöver veta är om det är det bästa på marknaden.<!--.25-->Vet du vad? Det är det."
 		"dealer_message_start_8"  	"Fredsavtal i Drosvik. Jag älskar fred.<!--.25-->För att jag har en general med många skulder och ett välutrustat vapenförråd som samlar damm.<!--.25-->Jag menar ...<!--.25-->Fred är såklart bra också. Oskyldiga liv och ...<!--.25-->Vad jag snackar, du bryr dig inte."
 		"dealer_message_start_9"  	"Den här lasten innehåller några exotiska exemplar som jag fått tag på via gråa kanaler.<!--.25-->Ovanliga kaliber, inget för amatörer. Du kommer att älska dem."
 		"dealer_message_start_10"  	"Det här är pinsamt.<!--.25-->Jag måste ha råkat märka en låda fel på tulldeklarationen.<!--.25-->Ja ja. Några dussin lådor.<!--.25-->Vad sägs om att du hjälper mig att få det här inventariet att försvinna innan hamnmyndigheten börjar undersöka det hela."
@@ -48249,7 +48245,6 @@ Om samma match redan laddats ner lokalt och filen blivit förstörd, radera då 
 		"dealer_message_start_27"	"Jag hatar att arbeta med upprorsmän. Det är bara ett fint ord för civila, vilket är ett snällt sätt att säga förbannade amatörer<!--.25-->Hur som helst, jag har inte hört nåt från dem, så jag ger några riktiga proffs en chans med de här varorna."
 		"dealer_message_start_28"	"Den ständigt heta zonen i södern har precis upplevt sin halvårliga parlamentskollaps.<!--.25-->Ett gäng lokala vapenförråd spräcktes som piñatas."
 		"dealer_message_start_29"	"Hamnmyndighetens inspektör kallade den här leveransen oregelmässig i fredags.<!--.25-->På måndagen hade hans dotter tillräckligt med studiemedel för att gå på Stamwick och leveransen är jordbruksredskap igen.<!--.25-->Vad kan jag säga, utbildning är viktigt. Vi tar en titt på några jordbruksredskap."
-
 
 		"dealer_message_resume_0"  	"<!--1--> Du är tillbaka. Bra. Dealen är fortfarande aktuell."
 		"dealer_message_resume_1"  	"<!--1-->Behövde du tänka på saken? Inga problem."
@@ -48313,7 +48308,6 @@ Om samma match redan laddats ner lokalt och filen blivit förstörd, radera då 
 		"dealer_message_next_offer_39"   "<!--1-->Inga problem. Jag skulle inte heller ha köpt det. Det här, å andra sidan ..."
 		"dealer_message_next_offer_40"   "<!--1--> Jaså, du får mig att hämta grejerna från den översta hyllan? Säger du det så."
 
-
 		"dealer_message_last_offer_0"	"<!--0-->Okej, det sista och slutgiltiga erbjudandet. Ja eller nej?"
 		"dealer_message_last_offer_1"	"<!--0-->Betrakta detta som mitt slutgiltiga erbjudande."
 		"dealer_message_last_offer_2"	"<!--0-->Slutgiltigt erbjudande. Ja eller nej? Det är dags att sluta slösa bort min tid."
@@ -48340,7 +48334,7 @@ Om samma match redan laddats ner lokalt och filen blivit förstörd, radera då 
 		"dealer_message_timerexpired_7"		"<!--.1-->Och här trodde jag att jag försökte hjälpa dig att döda folk.<!--.5-->Det enda du var ute efter var att döda tid."
 		"dealer_message_timerexpired_8"		"<!--.1-->Ingen deal."	
 		"dealer_message_timerexpired_9"		"<!--.1-->Tiden är ute."
-		"dealer_message_timerexpired_10"		"<!--.1-->Okej, jag är officiellt uttråkad. Vi är klara här."		
+		"dealer_message_timerexpired_10"	"<!--.1-->Okej, jag är officiellt uttråkad. Vi är klara här."		
 
 		"dealer_message_open_check_out_0"		"<!--.5-->Det här var menat för dig. Därför tänkte jag på dig först. Vi tar och spikar det."
 		"dealer_message_open_check_out_1"		"<!--.5-->Ett utmärkt beslut. Jag ska se till att det är packat och klart."
@@ -48349,8 +48343,8 @@ Om samma match redan laddats ner lokalt och filen blivit förstörd, radera då 
 		"dealer_message_open_check_out_4"		"<!--.5-->Perfekt. Vi kör."		
 		"dealer_message_open_check_out_5"		"<!--.5--> Bra val."	
 		"dealer_message_open_check_out_6"		"<!--.5-->Smartaste valet du nånsin gjort. Vi tar och avslutar affären."		
-		"dealer_message_open_check_out_7"		"<!--.5-->Bra. Nu avslutar vi affären."	
-		
+		"dealer_message_open_check_out_7"		"<!--.5-->Bra. Nu avslutar vi affären."
+
 		"dealer_message_txn_xld_bailout_0"		"<!--.5-->Ingen brådska. Du vet var jag finns."
 		"dealer_message_txn_xld_bailout_1"		"<!--.5-->Jag ska ingenstans."
 		"dealer_message_txn_xld_bailout_2"		"<!--.5-->Vi håller det öppet tills vidare."
@@ -48418,11 +48412,10 @@ Om samma match redan laddats ner lokalt och filen blivit förstörd, radera då 
 		"dealer_message_addition_factory_new_1"	"<!--.25-->Fabriksnytt. Felfritt."
 		"dealer_message_addition_factory_new_2"	"<!--.25-->Direkt från valvet. Fabriksnytt."
 		"dealer_message_addition_factory_new_3"	"<!--.25-->Direkt från fabriken. Har aldrig avfyrats."
-
+		
 		"system_dealer_left_chat_0"				"Vapenhandlaren har lämnat chatten."
 		"system_dealer_join_chat_0"				"Erbjudanden från {s:collection}.<!--1.25-->Vapenhandlaren online"
 		"system_user_reject_offer_0"			"{s:user-name} avböjde erbjudandet"
-		
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
@@ -48654,6 +48647,21 @@ Om samma match redan laddats ner lokalt och filen blivit förstörd, radera då 
 		
 		"quest_11014_var_desc:p{mission-points}"	 	"Vinn en runda i <b>{s:gamemode}: {s:location}</b>.#|#Vinn rundor i <b>{s:gamemode}: {s:location}</b>."
 		"quest_11014_var_ingame:p{mission-points}"		"Vinn en runda#|#Vinn rundor"
+		
+		"quest_11015_var_desc:p{mission-points}"	 	"Vinn en runda i <b>{s:gamemode}: {s:location}</b>.#|#Vinn rundor i <b>{s:gamemode}: {s:location}</b>."
+		"quest_11015_var_ingame:p{mission-points}"		"Vinn en runda#|#Vinn rundor"
+
+// crow_mask_51633_comment
+// crow_mask_51634_comment
+}
+
+
+
+
+}
+
+
+	"Vinn en runda#|#Vinn rundor"
 		
 		"quest_11015_var_desc:p{mission-points}"	 	"Vinn en runda i <b>{s:gamemode}: {s:location}</b>.#|#Vinn rundor i <b>{s:gamemode}: {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Vinn en runda#|#Vinn rundor"
