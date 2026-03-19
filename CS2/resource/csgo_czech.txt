@@ -2425,6 +2425,7 @@
 		"NewItemMethod_CommunityMarketPurchase"	"Získal jsi z komunitního trhu:"
 
 		"ItemHistory_ActionWithTime"									"%s1 dne %s2"
+		"ItemHistory_Action_GSCreate"									"Bylo vytvořeno"
 		"ItemHistory_Action_GenericAdd"									"Bylo přidáno"
 		"ItemHistory_Action_GenericRemove"								"Odstranili jste nebo jste změnili"
 		"ItemHistory_Action_Traded"										"Získali jste výměnou"
@@ -2488,6 +2489,10 @@
 		"ItemHistory_Action_TournamentDrop"								"Získali jste suvenýr"
 		"ItemHistory_Action_TemplateItemGrant"							"Získali jste"
 		"ItemHistory_Action_Market_Add"									"Získali jste z komunitního trhu"
+		"ItemHistory_Action_Market_Sealed"								"Vytvořili jste nabídku na komunitním trhu služby Steam"
+		"ItemHistory_Action_Market_Unsealed"							"Odebrali jste nabídku z komunitního trhu služby Steam"
+		"ItemHistory_Action_Market_SoldSealed"							"Prodali jste na komunitním trhu služby Steam"
+
 		"ItemHistory_Transaction_Delete"								"Odstranili jste"
 		"ItemHistory_Transaction_Craft"									"Získali jste vycraftováním"
 		"ItemHistory_Transaction_UnlockCrate"							"Otevřeli jste bednu"
@@ -2644,6 +2649,7 @@
 		"Attrib_NeverTradableButHasAfterDate1"		"Tento předmět nelze vyměnit nebo prodat."
 		"Attrib_NeverTradableButHasAfterDate2"		"Na získané předměty bude uvaleno omezení obchodování, které skončí %s1"
 		"Attrib_TradeProtectedEscrowDate"			"⇆ Na tento předmět se vztahuje ochrana po výměně, takže ho do %s1 nelze použít, upravit nebo převést."
+		"Attrib_TradeProtectedEscrowMarket"			"⇆ Tento předmět je vystaven na komunitním trhu služby Steam, a zatímco je tato nabídka aktivní, nelze ho použít ani upravit."
 		"Attrib_TradableAfterDate"					"Vyměnitelné po %s1"
 		"Attrib_TradableMarketableAfterDate"		"Vyměnitelné/prodejné po: %s1"
 		"Attrib_MarketableWithRestrictions"			"Okamžitě prodejné na komunitním trhu"
@@ -4385,6 +4391,8 @@
 		
 		"CSGO_crate_community_36"				"Zašifrovaný terminál | Genesis"
 		"CSGO_crate_community_36^volatile"		"Dešifrovaný terminál | Genesis"
+		"CSGO_crate_community_37"				"Zašifrovaný terminál | Dead Hand"
+		"CSGO_crate_community_37^volatile"		"Dešifrovaný terminál | Dead Hand"
 		"CSGO_crate_keychain_pack_kc_drboom_capsule"	    	"Kolekce přívěsků Dr. Boom"
 		"CSGO_crate_keychain_pack_kc_drboom_capsule_desc"		"Tato kolekce obsahuje přívěsky s tematikou granátů."
 		"CSGO_crate_keychain_pack_kc_drboom_capsule_short"	    "Přívěsky Dr. Boom"
@@ -5420,6 +5428,7 @@
 		"CSGO_set_community_36"					"Kolekce Genesis"
 		"CSGO_set_timed_drops_exuberant"		"Kolekce Harlequin"
 		"CSGO_set_timed_drops_achroma"			"Kolekce Achroma"
+		"CSGO_set_community_37"					"Kolekce Dead Hand"
 		/////////////////
 		// lootlist override strings
 		//////////////////
@@ -35211,8 +35220,104 @@
 		"PaintKit_m4a1s_quick_liquidation"				"Díky tmavému základu a pečlivě zvoleným červeným a modrým částem by si člověk myslel, že tato zbraň září i za běžného světla.\n\n<i>Tichý, přesto smrticí odraz</i>"
 		
 		"PaintKit_aug_trigger_discipline_velco"			"Na zbraň byl nanesen modrý izometrický vzor, který byl následně dozdoben oranžovými částmi.\n\n<i>Protože trpělivost je odměnou sama o sobě</i>"
+"PaintKit_glove_driver_knit_argyle_green_Tag"					"Hand Sweaters"
+		
+		"PaintKit_glove_driver_ostrich_purple_Tag"						"Plum Quill"
+		
+		"PaintKit_glove_driver_silk_dragon_white_Tag"					"Wave Chaser"
+		
+		"PaintKit_glove_brocade_crane_Tag"								"Brocade Crane"
+		
+		"PaintKit_glove_driver_brocade_flower_red_Tag"					"Brocade Flowers"
+		
+		"PaintKit_glove_driver_dragon_scale_red_Tag"					"Dragon Fists"
+		
+		"PaintKit_glove_driver_embroidered_flowers_teal_Tag"			"Garden"
+		
+		"PaintKit_glove_driver_scallop_metallic_blue_Tag"				"Seigaiha"
+		
+		"PaintKit_glove_sport_velvet_red_Tag"							"Occult"
+		
+		"PaintKit_glove_sport_beadwork_diamonds_purple_Tag"				"Violet Beadwork"
+		
+		"PaintKit_glove_sport_camo_winter_Tag"							"Frosty"
+		
+		"PaintKit_glove_sport_pinstripe_black_Tag"						"Creme Pinstripe"
+		
+		"PaintKit_glove_sport_racer_red_Tag"							"Red Racer"
+		
+		"PaintKit_glove_sport_tech_gradient_bright_Tag"					"Ultra Violent"
+		
+		"PaintKit_glove_specialist_abstract_green_Tag"					"Lime Polycam"
+		
+		"PaintKit_glove_specialist_graffiti_black_Tag"					"Blackbook"
+		
+		"PaintKit_glove_specialist_quilted_black_Tag"					"Chocolate Chesterfield"
+		
+		"PaintKit_glove_specialist_quilted_white_Tag"					"Pillow Punchers"
+		
+		"PaintKit_glove_specialist_sunburst_red_Tag"					"Sunburst"
+		
+		"PaintKit_glove_specialist_dragon_blue_Tag"						"Cloud Chaser"
+		
+		"PaintKit_glove_specialist_wave_blue_Tag"						"Big Swell"
+		
+// END COMMUNITY_37 GLOVES
 
-// END COMMUNITY_36
+// COMMUNITY_37 WEAPONS
+		
+		"PaintKit_glock_jdpeek"											"Na zbraň byl neonovými a metalickými třpytivými barvami nanesen výrazný obrázek.\n\n<i>Pro jednoho kýč, pro druhého umění</i>"
+		"PaintKit_glock_jdpeek_Tag"										"Fully Tuned"
+					
+		"PaintKit_awp_queens_gambit"									"Na zbraň byly naneseny vzory vyvedené v tmavě modré a zlaté barvě. Na přední část pažby byla také nakreslena královna.\n\n<i>Každý výstřel je královským dekretem moci a přesnosti</i>"
+		"PaintKit_awp_queens_gambit_Tag"								"Queen's Gambit"
+					
+		"PaintKit_p90_deathgaze"										"Na základ zbraně tvořený kararským mramorem bylo naneseno graffiti vyobrazující Medúsu.\n\n<i>Modly vybudované na klamu si nezaslouží uctívat</i>"
+		"PaintKit_p90_deathgaze_Tag"									"Deathgaze"
+					
+		"PaintKit_p250_kintsugi"										"Na slonovinově zbarvený základ zbraně byl nakreslen výrazně oranžový pták a zbraň byla dozdobena zlatými částmi.\n\n<i>Jenom pro sváteční použití</i>"
+		"PaintKit_p250_kintsugi_Tag"									"Kintsugi"
+					
+		"PaintKit_mp9_urban_sovereign"									"Na zbraň byly naneseny urbanistické vzory a následně byla dozdobena zlatými graffiti.\n\n<i>Králové se neschovávají za zdmi – zdi jsou jejich chloubou</i>"
+		"PaintKit_mp9_urban_sovereign_Tag"								"Urban Sovereign"
+					
+		"PaintKit_mp7_amberline"										"Na zbraň byl nasprejován vzor složený z diagonálních oranžových a bílých pruhů.\n\n<i>Značka kvality</i>"
+		"PaintKit_mp7_amberline_Tag"									"Amberline"
+					
+		"PaintKit_bizon_rmx"											"Na zbraň byl nanesen gradientní fialový vzor, který přechází do červeno-bílého vzoru.\n\n<i>Lehká, rychlá a nebezpečná... teoreticky</i>"
+		"PaintKit_bizon_rmx_Tag"										"RMX"
+					
+		"PaintKit_ak47_crane_flight"									"Na černobílý základ zbraně byl nanesen obrázek jeřába a zbraň byla dozdobena zlatými částmi.\n\n<i>Předvoj krvavého Měsíce</i>"
+		"PaintKit_ak47_crane_flight_Tag"								"Crane Flight"
+					
+		"PaintKit_deagle_firebreathing"									"Na zbraň byly perleťovými barvami naneseny fialové a modré plameny.\n\n<i>Horká na pohled, chladná na dotek</i>"
+		"PaintKit_deagle_firebreathing_Tag"								"Firebreathing"
+					
+		"PaintKit_ump_fragment"											"Na zbraň byl nanesen vzor složený ze stříbrné, černé a červené barvy.\n\n<i>Krvavá daň musí být zaplacena</i>"
+		"PaintKit_ump_fragment_Tag"										"Fragment"
+					
+		"PaintKit_sawedoff_fusion"										"Na zbraň byl nanesen černo-zlatý vzor, jehož detaily jsou odhaleny podle nasvícení.\n\n<i>Tyhle oči už viděly věcí...</i>"
+		"PaintKit_sawedoff_fusion_Tag"									"Fusion"
+					
+		"PaintKit_galil_galigator"										"Na zeleno-žlutý základ zbraně byl nanesen obrázek aligátora a symboly radioaktivity.\n\n<i>CHRAMST! CHRAMST! CHRAMST!</i>"
+		"PaintKit_galil_galigator_Tag"									"Galigator"
+					
+		"PaintKit_fiveseven_polymer_dark"								"Na zbraň byl nanesen obrázek, díky kterému vypadá jako vyrobená z průhledného fialového polymeru.\n\n<i>Zabalená jako lákavý bonbonek</i>"
+		"PaintKit_fiveseven_polymer_dark_Tag"							"Dark Polymer"
+					
+		"PaintKit_usps_silent_boy"										"Na zbraň byly nakresleny černé a modré japonské znaky a šurikeny.\n\n<i>I agrese vyžaduje diskrétnost</i>"
+		"PaintKit_usps_silent_boy_Tag"									"Silent Shot"
+					
+		"PaintKit_m4a4_zubastick_bw"									"Na zbraň byly nakresleny zuby a oranžové oči.\n\n<i>Přibližně z roku 1991</i>"
+		"PaintKit_m4a4_zubastick_bw_Tag"								"Zubastick"
+					
+		"PaintKit_m4a1s_electrum"										"Zbraň byla nabarvena mramorově zelenou základní barvou a dozdobena zlatými a červenými částmi.\n\n<i>Těžké břímě...</i>"
+		"PaintKit_m4a1s_electrum_Tag"									"Electrum"
+					
+		"PaintKit_m249_blocks_purple"									"Na zbraň byl nanesen vzor složený z fialových geometrických tvarů.\n\n<i>Úhledně seskládáno</i>"
+		"PaintKit_m249_blocks_purple_Tag"								"Bock Blocks"
+		
+// END COMMUNITY_37 WEAPONS
 
 // OVERPASS_2024
 				
@@ -37342,6 +37447,7 @@
 		"SFUI_InvContextMenu_preview_musickit"       "Přehrát hudbu"
 		"SFUI_InvContextMenu_decodable"     "Odemknout bednu"
 		"SFUI_InvContextMenu_sell"			"Prodat na komunitním trhu"
+		"SFUI_InvContextMenu_marketlisting"	"Zobrazit na komunitním trhu"
 		"SFUI_InvContextMenu_openloadout"   "Zobrazit vybavení pro tento slot"
 		"SFUI_InvContextMenu_inspectcase"	"Otevřít..."
 		"SFUI_InvContextMenu_useitem"	    "Použít předmět"
@@ -40744,6 +40850,8 @@
 		"SFUI_Settings_Network_Bandwidth_30mbps"   "3 Mb/s"
 		"SFUI_Settings_Network_Bandwidth_40mbps"   "4 Mb/s"
 		"SFUI_Settings_Network_Bandwidth_Max"	   "Neomezená"
+
+		"SFUI_Settings_Volatile_Limit_Unlimited"	"Neomezený"
 
 		"SFUI_FeatureUnavailableDuringBeta"		"Nedostupné během beta verze"
 
@@ -45844,6 +45952,7 @@
 		"inv_context_remove_patch"			"Odebrat nášivku"		
 		"inv_context_openloadout"			"Zobrazit ve vybavení"
 		"inv_context_sell"					"Prodat na komunitním trhu"
+		"inv_context_marketlisting"			"Zobrazit na komunitním trhu"
 		"inv_context_tradeup_add"			"Přidat do vylepšujícího kontraktu"
 		"inv_context_tradeup_remove"		"Odebrat z vylepšujícího kontraktu"
 		"inv_context_open_contract"			"Otevřít kontrakt"
@@ -45901,6 +46010,7 @@
 		"inv_session_prop_updated"			"Aktualizovaný!"
 		"inv_session_prop_quest_reward"		"Odměna!"
 		"inv_session_prop_xpshopredeem"		"Nové!"
+		"inv_session_prop_marketlisting"	"<img src='file://{images}/icons/ui/coupon.svg' class='item-tile__onmarket'/> Na trhu"
 		"inv_equipped_item"					"Předmět <b>{s:name}</b> byl vybaven u týmu <b>{s:team}</b>"
 		"inv_equipped_item_noteam"			"Předmět <b>{s:name}</b> byl vybaven"
 		"inv_unequipped_item"				"Předmět <b>{s:name}</b> byl sundán"
@@ -48826,6 +48936,8 @@
 		"user_btn_purchase_desc_purchase"		"Podržením tohoto tlačítka si zakoupíš nabízený předmět a zahodíš terminál."
 		"user_btn_purchase_desc_continue"		"Podržením tohoto tlačítka permanentně odmítneš tuto nabídku a požádáš o další."
 		"user_btn_purchase_desc_end"		"Podržením tohoto tlačítka permanentně odmítneš poslední nabídku a zahodíš terminál."
+		"user_btn_purchase_title"			"{s:offer-count} nabídka"
+		"user_btn_purchase_final_title"		"<b>Poslední nabídka</b>"
 		"user_btn_decline_desc"				"Podržením tohoto tlačítka odmítneš tuto nabídku a požádáš o další."
 		"user_btn_accept"		"Přijmout nabídku – <b>{s:price}</b>"
 		"user_btn_accept_final"	"Přijmout poslední nabídku – <b>{s:price}</b>"
@@ -48847,6 +48959,18 @@
 		"user_btn_pause"		"Pozastavit nabídku"
 		"user_btn_end"			"Odmítnout poslední nabídku"
 
+		"user_message_limit_0"		"Můžu jít až na <b>{s:limit-setting}</b>."
+		"user_message_limit_1"		"Co takhle <b>{s:limit-setting}</b> jako strop?"
+		"user_message_limit_2"		"Maximálně dám <b>{s:limit-setting}</b>."
+		"user_message_limit_3"		"<b>{s:limit-setting}</b> mi zní jako dobrý limit."
+		"user_message_limit_unlimited_0"	"<b>Žádné maximum</b>. Chci vidět všechno."
+		"user_message_limit_unlimited_1"	"<b>Bianko šek</b>. O moji peněženku se nestarej."
+		"user_message_limit_unlimited_2"	"Jsem tu, abych nakoupil. <b>Ukaž mi všechno</b>."
+		"user_message_limit_unlimited_3"	"Pokud to střílí, mám zájem. <b>Žádný limit</b>."
+		"user_message_limit_unlimited_4"	"Cenu neřeším."
+		"offer_limit_setting"		"Cenový limit: {s:limit}"
+		"offer_limit_setting_interface"		"Cenový limit: {s:limit} <img src='file://{images}/icons/ui/expand.svg' class='expand-icon'/>"
+
 		"dealer_offer_Unknown"							"–"
 		"dealer_offer_1"								"1."
 		"dealer_offer_2"								"2."
@@ -48863,23 +48987,31 @@
 		"declined_offer_tooltip"	"Odmítnutá nabídka."
 		"future_offer_tooltip"		"Tato nabídka ještě nebyla odhalena."
 		"laptop_expiration_tooltip"		"Čas zbývající do vypršení platnosti tohoto terminálu a jeho nabídek."
+		"laptop_max_offer_tooltip"		"Maximální cenový limit. Budeš dostávat pouze nabídky, které jsou pod tímto limitem. Limit lze kdykoli změnit."
 		"collection_xp_tooltip"			"Za prohlížení nabídek z této kolekce můžeš získat XP. Po otevření zjistíš svůj postup."
+		"terminal_offer_limit_tooltip"		"Cenový limit nabídek, kterého se bude obchodník se zbraněmi držet."
 		"popup_lootlist_title"			"Katalogizace kolekce"
 		"popup_lootlist_desc"			"Získávej XP za prohlížení nabídek z této kolekce."
-		"popup_lootlist_progress"		"Prohlédl sis {d:seen}/{d:total} nabídek"
+
+		"popup_lootlist_progress:f"      "Prohlédl sis {d:seen}/{d:total} nabídek"
 		"popup_lootlist_claim_xp"		"Získat XP"
 		"popup_lootlist_claim_ww"		"Získávání XP..."
-		"popup_lootlist_claim_ok"		"✅ XP získána"
+		"popup_lootlist_claim_ok"		"✔ XP získána"
 		"popup_vpn_status_connected"	"Stav: Připojeno k zabezpečené síti"
 		"popup_vpn_status_disconnected"	"Stav: Odpojeno"
 		"popup_signal_full" 			"Plný signál"
 		"popup_signal_ok" 				"Silný signál"
+		"popup_offer_limit_desc"		"Cenový limit všech budoucích nabídek."
 		"laptop_battery_tooltip" 		"Nabití baterie: {d:percent} %"
 		"laptop_original_seal_tooltip" 	"Libovolný předmět zakoupený z tohoto terminálu bude opatřen certifikátem původního majitele, který zůstane platný, dokud se bude předmět nacházet ve tvém inventáři."
 		"laptop_zoom_tooltip" 			"Pro přiblížení a oddálení pohledu otáčej kolečkem myši."
 		"laptop_pan_tooltip" 			"Pro posunutí pohledu podrž klávesu Shift a levé tlačítko myši a táhni myší."
 		"laptop_pricing_tooltip"		"Ceny jsou platné globálně a automaticky se přizpůsobují poptávce po jednotlivých předmětech z této kolekce."
 
+		"dealer_message_set_offer_limit_0"		"Nejdřív si musíme něco vyjasnit. Kolik můžeš utratit?"
+		"dealer_message_set_offer_limit_1"		"Jedna otázka na začátek.<!--.25--> Jakej máš cenovej strop?"
+		"dealer_message_set_offer_limit_2"		"Než se do toho pustíme...<!--.25-->Jakej máš limit? Kolik můžeš utratit?"
+		
 		"dealer_message_start_0"  	"Profesionální kousky, jeden jako druhej.<!--.25-->Sto procent kvalita, nula procent papírování."
 		"dealer_message_start_1"  	"Mám tu nějaký šedý zboží bez papírů.<!--.25-->Ale neboj, nejsou to horký kusy. V oběhu už nejsou roky a nikdo je nehledá.<!--.25-->A střílej pořád jako nový, aby sis nemyslel."
 		"dealer_message_start_2"  	"Celníci v Ahradánu mi dneska ráno zmrazili náklad. Zkusil jsem je obměkčit historkou o zdravotnickym vybavení a chudácích dětech, ale nedali se.<!--.25-->Pomoh až kufřík plnej peněz.<!--.25-->Tak co kdyby sis prohlíd ty moje teploměry, než je předám sirotkům?"
@@ -48887,6 +49019,7 @@
 		"dealer_message_start_4"  	"Všechno, co tu dneska mám, je čistý.<!--.25-->Papírově vzato budeš první majitel."
 		"dealer_message_start_5"  	"Sterilní kousky, žádný sériový čísla, plná funkčnost.<!--.25-->Válečnej tribunál by tomu říkal důkazy.<!--.25-->Ty a já ale víme, že jsou to umělecký díla."
 		"dealer_message_start_6"  	"Tahle zásilka je plná exotickejch kousků od palácový gardy.<!--.25-->Často se s nima pochodovalo, ale nikdy nestřílelo."
+		"dealer_message_start_7"  	"Ostatní klienti se pořád vyptávaj, kde jsem vzal svoje zboží. Fakt otravný.<!--.25-->Zato tebe zajímá jenom to, jestli je to nejlepší zboží na trhu.<!--.25-->A věř mi, že je."
 		"dealer_message_start_8"  	"Mírová dohoda v Drosviku. A mír je bezva věc.<!--.25-->Především protože mám generála po uši v dluzích a s našlapanou zbrojnicí, která chytá prach.<!--.25-->Mno...<!--.25-->A taky protože mír je dobrej sám o sobě. Životy nevinejch a tak...<!--.25-->Ale to je ti asi fuk."
 		"dealer_message_start_9"  	"Tenhle náklad je plnej exotiky z šedýho trhu.<!--.25-->Hogofogo kalibry, nic pro amatéry. Bude se ti to líbit."
 		"dealer_message_start_10"  	"To se podívejme.<!--.25-->Asi jsem chybně označil bednu na lodním seznamu.<!--.25-->Nebo pár desítek beden.<!--.25-->Co kdybys mi pomohl nechat tohle zboží zmizet, než se začne zajímat přístavní správa."
@@ -49077,10 +49210,29 @@
 		"dealer_message_addition_factory_new_2"	"<!--.25-->Zbrusu nová. Doteď ležela v trezoru."
 		"dealer_message_addition_factory_new_3"	"<!--.25-->Zbrusu nová. To znamená, že ještě nestřílela."
 		
+		"dealer_message_limit_first_time_0"		"Dobrý vědět. Budu ti teda ukazovat věci jen do {s:limit}.<!--.25-->Tak se na to podíváme..."
+		"dealer_message_limit_first_time_2"		"Nabídky jen do {s:limit}. OK, budu na to myslet.<!--.25-->Ale běží nám čas, takže s chutí do toho."
+		"dealer_message_limit_first_time_3"		"Poznamenáno a aktualizováno.<!--.25-->Dáme se do toho."
+		"dealer_message_limit_first_time_unlimited_0"		"Žádný maximum, paráda. Otevřu ti celej katalog.<!--.25-->Už ale běží čas, takže s chutí do toho."
+		"dealer_message_limit_first_time_unlimited_1"		"Žádnej strop. Tak se mi to líbí.<!--.25-->Pustíme se do toho."
+
+		"dealer_message_limit_0"				"Dobrý vědět. Budu ti teda ukazovat věci jen do {s:limit}."
+		"dealer_message_limit_1"				"Nabídky jen do {s:limit}. OK, budu na to myslet."
+		"dealer_message_limit_2"				"Upravuju parametry. Nabídky jen do {s:limit}."
+		"dealer_message_limit_3"				"Nabídky jen do {s:limit}. Aktualizováno."
+		"dealer_message_limit_4"				"Budu vytahovat jen to, co má cenovku pod {s:limit}."
+		"dealer_message_limit_5"				"{s:limit} je novej strop."
+		"dealer_message_limit_6"				"Chápu a resetuju filtr na limit {s:limit}."
+		"dealer_message_limit_unlimited_0"		"Žádný maximum, paráda. Otevřu ti celej katalog."
+		"dealer_message_limit_unlimited_1"		"Bez omezení, oukej. Pokud se objeví něco eňo ňuno, nebudu to před tebou schovávat."
+		"dealer_message_limit_unlimited_2"		"To je hudba pro moje uši. Ukážu ti všechno, co tu mám."
+		"dealer_message_limit_unlimited_3"		"Žádnej strop. Tak se mi to líbí."
+
 		"system_dealer_left_chat_0"				"Obchodník se odpojil z chatu."
 		"system_dealer_join_chat_0"				"{s:collection} – nabídka zbraní.<!--1.25-->Obchodník se připojil do chatu."
 		"system_user_reject_offer_0"			"{s:user-name} odmítnul nabídku."
 
+		"system_user_updated_offer_limit_0"			"Cenový limit byl aktualizován na {s:limit}. Limit lze kdykoli změnit."
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -49315,8 +49467,8 @@
 		"quest_11015_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.#|#<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.#|#<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.#|#<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol."
 		"quest_11015_var_ingame:p{mission-points}"		"Vyhrávej kola#|#Vyhrávej kola#|#Vyhrávej kola#|#Vyhrávej kola"
 
-// crow_mask_51633_comment
-// crow_mask_51634_comment
+// crow_mask_51765_comment
+// crow_mask_51766_comment
 }
 
 
@@ -49325,52 +49477,7 @@
 }
 
 
-tý počet kol.#|#<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.#|#<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol."
-		"quest_11015_var_ingame:p{mission-points}"		"Vyhrávej kola#|#Vyhrávej kola#|#Vyhrávej kola#|#Vyhrávej kola"
-
-// crow_mask_51588_comment
-// crow_mask_51589_comment
-}
-
-
-
-
-}
-
-
-:f"											"Nuda."
-		"funfact_draw:f"												"Zápas byl restartován na základě hlasování hráčů."
-		"funfact_broke_windows:f"										"{funfact-d1, plural, one{{s:funfact-player} rozbil {d:funfact-d1} okno.} few{{s:funfact-player} rozbil {d:funfact-d1} okna.} many{{s:funfact-player} rozbil {d:funfact-d1} okna.} other{{s:funfact-player} rozbil {d:funfact-d1} oken.}}"
-		"funfact_nightvision_damage:f"									"{funfact-d1, plural, one{{s:funfact-player} udělil {d:funfact-d1} bod poškození, zatímco měl zapnuté noční vidění.} few{{s:funfact-player} udělil {d:funfact-d1} body poškození, zatímco měl zapnuté noční vidění.} many{{s:funfact-player} udělil {d:funfact-d1} bodu poškození, zatímco měl zapnuté noční vidění.} other{{s:funfact-player} udělil {d:funfact-d1} bodů poškození, zatímco měl zapnuté noční vidění.}}"
-		"funfact_defused_with_dropped_kit:f"							"{s:funfact-player} zneškodnil bombu pomocí zvednuté soupravy pro zneškodňování."
-		"funfact_killed_half_of_enemies:f"								"{funfact-d1, plural, one{{s:funfact-player} zabil {d:funfact-d1} % nepřátelského týmu.} few{{s:funfact-player} zabil {d:funfact-d1} % nepřátelského týmu.} many{{s:funfact-player} zabil {d:funfact-d1} % nepřátelského týmu.} other{{s:funfact-player} zabil {d:funfact-d1} % nepřátelského týmu.}}"
-		"funfact_knife_level_reached:f"									"{funfact-d1, plural, one{{d:funfact-d1} hráč dosáhl úrovně se zlatým nožem.} few{{d:funfact-d1} hráči dosáhli úrovně se zlatým nožem.} many{{d:funfact-d1} hráče dosáhlo úrovně se zlatým nožem.} other{{d:funfact-d1} hráčů dosáhlo úrovně se zlatým nožem.}}"
-		"funfact_killed_before_dying:f"									"{funfact-d1, plural, one{{s:funfact-player} před svou smrtí zabil {d:funfact-d1} hráče.} few{{s:funfact-player} před svou smrtí zabil {d:funfact-d1} hráče.} many{{s:funfact-player} před svou smrtí zabil {d:funfact-d1} hráče.} other{{s:funfact-player} před svou smrtí zabil {d:funfact-d1} hráčů.}}"
-		"funfact_respawned:f"											"{funfact-d1, plural, one{{s:funfact-player} se během zápasu {d:funfact-d1}× respawnul.} few{{s:funfact-player} se během zápasu {d:funfact-d1}× respawnul.} many{{s:funfact-player} se během zápasu {d:funfact-d1}× respawnul.} other{{s:funfact-player} se během zápasu {d:funfact-d1}× respawnul.}}"
-		"funfact_default_weapon:f"										"{s:funfact-player} vyhrál kolo, aniž by sebral jedinou zbraň."
-		"funfact_rounds_without_dying:f"								"{funfact-d1, plural, one{{s:funfact-player} odehrál {d:funfact-d1} kolo, aniž by zemřel.} few{{s:funfact-player} odehrál {d:funfact-d1} po sobě jdoucí kola, aniž by zemřel.} many{{s:funfact-player} odehrál {d:funfact-d1} po sobě jdoucích kol, aniž by zemřel.} other{{s:funfact-player} odehrál {d:funfact-d1} po sobě jdoucích kol, aniž by zemřel.}}"
-		"funfact_taser_kill:f"											"{funfact-d1, plural, one{{s:funfact-player} zabil {d:funfact-d1} hráče taserem.} few{{s:funfact-player} zabil {d:funfact-d1} hráče taserem.} many{{s:funfact-player} zabil {d:funfact-d1} hráče taserem.} other{{s:funfact-player} zabil {d:funfact-d1} hráčů taserem.}}"
-		"funfact_ticking_time:f"										"{funfact-d1, plural, one{Teroristé zvítězili i přesto, že se {d:funfact-d1} CT pokusil zneškodnit bombu.} few{Teroristé zvítězili i přesto, že se {d:funfact-d1} CT pokusili zneškodnit bombu.} many{Teroristé zvítězili i přesto, že se {d:funfact-d1} CT pokusilo zneškodnit bombu.} other{Teroristé zvítězili i přesto, že se {d:funfact-d1} CT pokusilo zneškodnit bombu.}}"
-		"funfact_ct_win_time:f"											"{funfact-d1, plural, one{Counter-Teroristé zneškodnili tým T během {d:funfact-d1} sekundy.} few{Counter-Teroristé zneškodnili tým T během {d:funfact-d1} sekund.} many{Counter-Teroristé zneškodnili tým T během {d:funfact-d1} sekundy.} other{Counter-Teroristé zneškodnili tým T během {d:funfact-d1} sekund.}}"
-		"funfact_ter_win_time:f"										"{funfact-d1, plural, one{Teroristé zneškodnili tým CT během {d:funfact-d1} sekundy.} few{Teroristé zneškodnili tým CT během {d:funfact-d1} sekund.} many{Teroristé zneškodnili tým CT během {d:funfact-d1} sekundy.} other{Teroristé zneškodnili tým CT během {d:funfact-d1} sekund.}}"
-		"funfact_bots_assumed:f"										"{funfact-d1, plural, one{{s:funfact-player} převzal v tomto kole kontrolu nad {d:funfact-d1} botem.} few{{s:funfact-player} převzal v tomto kole kontrolu nad {d:funfact-d1} boty.} many{{s:funfact-player} převzal v tomto kole kontrolu nad {d:funfact-d1} boty.} other{{s:funfact-player} převzal v tomto kole kontrolu nad {d:funfact-d1} boty.}}"
-		"funfact_domination:f"											"{s:funfact-player} dominoval nejvíce hráčům."
-		"funfact_revenge:f"												"{funfact-d1, plural, one{{s:funfact-player} se pomstil {d:funfact-d1} hráči.} few{{s:funfact-player} se pomstil {d:funfact-d1} hráčům.} many{{s:funfact-player} se pomstil {d:funfact-d1} hráče.} other{{s:funfact-player} se pomstil {d:funfact-d1} hráčům.}}"
-		"funfact_steps_taken:f"											"{funfact-d1, plural, one{{s:funfact-player} v tomto zápase uběhl {d:funfact-d1} krok.} few{{s:funfact-player} v tomto zápase uběhl {d:funfact-d1} kroky.} many{{s:funfact-player} v tomto zápase uběhl {d:funfact-d1} kroku.} other{{s:funfact-player} v tomto zápase uběhl {d:funfact-d1} kroků.}}"
-		"funfact_quarter_health:f"										"{funfact-d1, plural, one{{s:funfact-player} zabil {d:funfact-d1} hráče, zatímco měl méně než 25 bodů zdraví.} few{{s:funfact-player} zabil {d:funfact-d1} hráče, zatímco měl méně než 25 bodů zdraví.} many{{s:funfact-player} zabil {d:funfact-d1} hráče, zatímco měl méně než 25 bodů zdraví.} other{{s:funfact-player} zabil {d:funfact-d1} hráčů, zatímco měl méně než 25 bodů zdraví.}}"
-		"funfact_empty_guns:f"											"{funfact-d1, plural, one{{s:funfact-player} vystřílel všechny náboje u {d:funfact-d1} zbraně.} few{{s:funfact-player} vystřílel všechny náboje u {d:funfact-d1} zbraní.} many{{s:funfact-player} vystřílel všechny náboje u {d:funfact-d1} zbraně.} other{{s:funfact-player} vystřílel všechny náboje u {d:funfact-d1} zbraní.}}"
-		"funfact_slow_trigger:f"										"{funfact-d1, plural, one{{s:funfact-player} zemřel, aniž by vystřelil ze své zbraně.} few{{s:funfact-player} zemřel, aniž by vystřelil z jedné ze svých {d:funfact-d1} zbraní.} many{{s:funfact-player} zemřel, aniž by vystřelil z jedné ze svých {d:funfact-d1} zbraní.} other{{s:funfact-player} zemřel, aniž by vystřelil z jedné ze svých {d:funfact-d1} zbraní.}}"
-		"funfact_pickup_bomb:f"											"{funfact-d1, plural, one{{s:funfact-player} položil bombu, kterou předtím nesl {d:funfact-d1} jeho spoluhráč.} few{{s:funfact-player} položil bombu, kterou předtím nesli {d:funfact-d1} jeho spoluhráči.} many{{s:funfact-player} položil bombu, kterou předtím neslo {d:funfact-d1} jeho spoluhráčů.} other{{s:funfact-player} položil bombu, kterou předtím neslo {d:funfact-d1} jeho spoluhráčů.}}"
-		"funfact_bomb_carriers:f"										"{funfact-d1, plural, one{{s:funfact-player} v minulém kole zabil {d:funfact-d1} hráče nesoucího bombu.} few{{s:funfact-player} v minulém kole zabil {d:funfact-d1} různé hráče nesoucí bombu.} many{{s:funfact-player} v minulém kole zabil {d:funfact-d1} různých hráčů nesoucích bombu.} other{{s:funfact-player} v minulém kole zabil {d:funfact-d1} různých hráčů nesoucích bombu.}}"
-		"funfact_knife_bomb_planter:f"									"{s:funfact-player} zvítězil na úrovni s nožem zabitím hráče pokládajícího bombu."
-		"funfact_bomb_planted_before_kill:f"							"Před položením bomby nebyli zabiti žádní hráči."
-		"funfact_failed_bomb_plants:f"									"{funfact-d1, plural, one{{d:funfact-d1} Terorista se v tomto kole pokusil položit bombu.} few{{d:funfact-d1} Teroristé se v tomto kole pokusili položit bombu.} many{{d:funfact-d1} Teroristy se v tomto kole pokusilo položit bombu.} other{{d:funfact-d1} Teroristů se v tomto kole pokusilo položit bombu.}}"
-		"funfact_knife_without_ammo:f"									"{funfact-d1, plural, one{{s:funfact-player} zabil {d:funfact-d1} nepřítele nožem poté, co mu došly náboje.} few{{s:funfact-player} zabil {d:funfact-d1} nepřátele nožem poté, co mu došly náboje.} many{{s:funfact-player} zabil {d:funfact-d1} nepřítele nožem poté, co mu došly náboje.} other{{s:funfact-player} zabil {d:funfact-d1} nepřátel nožem poté, co mu došly náboje.}}"
-		"funfact_molotov_burns:f"										"{funfact-d1, plural, one{{s:funfact-player} zapálil {d:funfact-d1} hráče.} few{{s:funfact-player} zapálil {d:funfact-d1} hráče.} many{{s:funfact-player} zapálil {d:funfact-d1} hráče.} other{{s:funfact-player} zapálil {d:funfact-d1} hráčů.}}"
-		"funfact_survival_time:f"										"{funfact-d1, plural, one{{s:funfact-player} přežil nejdéle, konkrétně {d:funfact-d1} sekundu.} few{{s:funfact-player} přežil nejdéle, konkrétně {d:funfact-d1} sekundy.} many{{s:funfact-player} přežil nejdéle, konkrétně {d:funfact-d1} sekundy.} other{{s:funfact-player} přežil nejdéle, konkrétně {d:funfact-d1} sekund.}}"
-		"funfact_pulled_trigger:f"										"{funfact-d1, plural, one{{s:funfact-player} v tomto zápase celkem {d:funfact-d1}× stiskl spoušť.} few{{s:funfact-player} v tomto zápase celkem {d:funfact-d1}× stiskl spoušť.} many{{s:funfact-player} v tomto zápase celkem {d:funfact-d1}× stiskl spoušť.} other{{s:funfact-player} v tomto zápase celkem {d:funfact-d1}× stiskl spoušť.}}"
-		"funfact_ace:f"													"Eso! {s:funfact-player} zabil celý nepřátelský tým."
-		"funfact_defuse_was_close_call_tenths:f"						"{funfact-d1, plural, one{{s:funfact-player} zneškodnil bombu v okamžiku, kdy do výbuchu zbývala 0,{d:funfact-d1} sekundy.} few{{s:funfact-player} zneškodnil bombu v okamžiku, kdy do výbuchu zbývaly 0,{d:funfact-d1} sekundy.} many{{s:funfact-player} zneškodnil bombu v okamžiku, kdy do výbuchu zbývaly 0,{d:funfact-d1} sekundy.} other{{s:funfact-player} zneškodnil bombu v okamžiku, kdy do výbuchu zbývalo 0,{d:funfact-d1} sekundy.}}"
+bu v okamžiku, kdy do výbuchu zbývaly 0,{d:funfact-d1} sekundy.} many{{s:funfact-player} zneškodnil bombu v okamžiku, kdy do výbuchu zbývaly 0,{d:funfact-d1} sekundy.} other{{s:funfact-player} zneškodnil bombu v okamžiku, kdy do výbuchu zbývalo 0,{d:funfact-d1} sekundy.}}"
 		"funfact_defuse_was_close_call_hundredths:f"					"{funfact-d1, plural, one{{s:funfact-player} zneškodnil bombu v okamžiku, kdy do výbuchu zbývala 0,0{d:funfact-d1} sekundy.} few{{s:funfact-player} zneškodnil bombu v okamžiku, kdy do výbuchu zbývaly 0,0{d:funfact-d1} sekundy.} many{{s:funfact-player} zneškodnil bombu v okamžiku, kdy do výbuchu zbývaly 0,0{d:funfact-d1} sekundy.} other{{s:funfact-player} zneškodnil bombu v okamžiku, kdy do výbuchu zbývalo 0,0{d:funfact-d1} sekundy.}}"
 		"funfact_defuse_was_close_call_thousandths:f"					"{funfact-d1, plural, one{{s:funfact-player} zneškodnil bombu v okamžiku, kdy do výbuchu zbývala 0,00{d:funfact-d1} sekundy.} few{{s:funfact-player} zneškodnil bombu v okamžiku, kdy do výbuchu zbývaly 0,00{d:funfact-d1} sekundy.} many{{s:funfact-player} zneškodnil bombu v okamžiku, kdy do výbuchu zbývaly 0,00{d:funfact-d1} sekundy.} other{{s:funfact-player} zneškodnil bombu v okamžiku, kdy do výbuchu zbývalo 0,00{d:funfact-d1} sekundy.}}"
 		"mapwinrecord_graph_title:f"									"{f:0:wins, plural, one{poslední výhra} few{poslední výhry} many{poslední výhry} other{posledních výher}}"

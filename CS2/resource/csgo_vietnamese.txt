@@ -2421,6 +2421,7 @@
 		"NewItemMethod_CommunityMarketPurchase"	"Bạn nhận được từ chợ cộng đồng:"
 
 		"ItemHistory_ActionWithTime"									"%s1 vào %s2"
+		"ItemHistory_Action_GSCreate"									"Đã tạo"
 		"ItemHistory_Action_GenericAdd"									"Đã thêm"
 		"ItemHistory_Action_GenericRemove"								"Đã được gỡ bỏ hoặc chỉnh sửa"
 		"ItemHistory_Action_Traded"										"Đã trao đổi"
@@ -2484,6 +2485,10 @@
 		"ItemHistory_Action_TournamentDrop"								"Nhận một gói lưu niệm"
 		"ItemHistory_Action_TemplateItemGrant"							"Đã nhận"
 		"ItemHistory_Action_Market_Add"									"Nhận từ chợ cộng đồng Steam"
+		"ItemHistory_Action_Market_Sealed"								"Đã đăng bán trên chợ cộng đồng Steam"
+		"ItemHistory_Action_Market_Unsealed"							"Đã gỡ bỏ đăng bán trên chợ cộng đồng"
+		"ItemHistory_Action_Market_SoldSealed"							"Đã bán trên chợ cộng đồng Steam"
+
 		"ItemHistory_Transaction_Delete"								"Do bạn xoá"
 		"ItemHistory_Transaction_Craft"									"Chế tạo ra"
 		"ItemHistory_Transaction_UnlockCrate"							"Mở một hòm"
@@ -2645,6 +2650,7 @@
 		"Attrib_NeverTradableButHasAfterDate1"		"Vật phẩm này không thể được trao đổi hoặc mua bán."
 		"Attrib_NeverTradableButHasAfterDate2"		"Sau khi sử dụng, vật phẩm nhận được sẽ bị hạn chế trao đổi đến khi %s1"
 		"Attrib_TradeProtectedEscrowDate"			"⇆ Vật phẩm này được bảo hộ trao đổi và không thể tiêu thụ, chỉnh sửa, hoặc chuyển giao cho tới %s1"
+		"Attrib_TradeProtectedEscrowMarket"			"⇆ Vật phẩm này đã đăng bán trên chợ cộng đồng Steam và không thể tiêu thụ hoặc chỉnh sửa trong khi đăng bán."
 		"Attrib_TradableAfterDate"					"Có thể trao đổi sau %s1"
 		"Attrib_TradableMarketableAfterDate"		"Có thể trao đổi/mua bán sau %s1"
 		"Attrib_MarketableWithRestrictions"			"Có thể bán ngay lập tức trên chợ cộng đồng Steam"
@@ -4488,6 +4494,8 @@
 		
 		"CSGO_crate_community_36"				"Thiết bị đầu nối Genesis (Nguyên bọc)"
 		"CSGO_crate_community_36^volatile"		"Thiết bị đầu nối Genesis (Hoạt động)"
+		"CSGO_crate_community_37"				"Thiết bị đầu nối Dead Hand (Nguyên bọc)"
+		"CSGO_crate_community_37^volatile"		"Thiết bị đầu nối Dead Hand (Hoạt động)"
 		"CSGO_crate_keychain_pack_kc_drboom_capsule"	    	"Bộ sưu tập móc treo Dr. Boom"
 		"CSGO_crate_keychain_pack_kc_drboom_capsule_desc"		"Bộ sưu tập này chứa một loạt móc treo theo chủ đề Dr. Boom."
 		"CSGO_crate_keychain_pack_kc_drboom_capsule_short"	    "Móc treo Dr. Boom"
@@ -5695,6 +5703,7 @@
 		"CSGO_set_community_36"					"Bộ sưu tập Genesis"
 		"CSGO_set_timed_drops_exuberant"		"Bộ sưu tập Harlequin"
 		"CSGO_set_timed_drops_achroma"			"Bộ sưu tập Achroma"
+		"CSGO_set_community_37"					"Bộ sưu tập Dead Hand"
 		/////////////////
 		// lootlist override strings
 		//////////////////
@@ -37152,8 +37161,82 @@
 		"PaintKit_m4a1s_quick_liquidation"				"Nền tối và các đường nét tô điểm xanh dương đỏ được chọn lọc kỹ lưỡng khiến khẩu M4A1-S trông như đang phát sáng trong khung cảnh.\n\n<i>Sự phản chiếu tĩnh lặng</i>"
 		
 		"PaintKit_aug_trigger_discipline_velco"			"Được sơn và thiết kế với họa tiết 3D xanh lam và điểm nhấn màu cam.\n\n<i>Kiên nhẫn đã chính là phần thưởng</i>"
-
-// END COMMUNITY_36
+"PaintKit_glove_driver_knit_argyle_green_Tag"					"Hand Sweaters"
+		
+		"PaintKit_glove_driver_ostrich_purple_Tag"						"Plum Quill"
+		
+		"PaintKit_glove_driver_silk_dragon_white_Tag"					"Wave Chaser"
+		
+		"PaintKit_glove_brocade_crane_Tag"								"Brocade Crane"
+		
+		"PaintKit_glove_driver_brocade_flower_red_Tag"					"Brocade Flowers"
+		
+		"PaintKit_glove_driver_dragon_scale_red_Tag"					"Dragon Fists"
+		
+		"PaintKit_glove_driver_embroidered_flowers_teal_Tag"			"Garden"
+		
+		"PaintKit_glove_driver_scallop_metallic_blue_Tag"				"Seigaiha"
+		
+		"PaintKit_glove_sport_velvet_red_Tag"							"Occult"
+		
+		"PaintKit_glove_sport_beadwork_diamonds_purple_Tag"				"Violet Beadwork"
+		
+		"PaintKit_glove_sport_camo_winter_Tag"							"Frosty"
+		
+		"PaintKit_glove_sport_pinstripe_black_Tag"						"Creme Pinstripe"
+		
+		"PaintKit_glove_sport_racer_red_Tag"							"Red Racer"
+		
+		"PaintKit_glove_sport_tech_gradient_bright_Tag"					"Ultra Violent"
+		
+		"PaintKit_glove_specialist_abstract_green_Tag"					"Lime Polycam"
+		
+		"PaintKit_glove_specialist_graffiti_black_Tag"					"Blackbook"
+		
+		"PaintKit_glove_specialist_quilted_black_Tag"					"Chocolate Chesterfield"
+		
+		"PaintKit_glove_specialist_quilted_white_Tag"					"Pillow Punchers"
+		
+		"PaintKit_glove_specialist_sunburst_red_Tag"					"Sunburst"
+		
+		"PaintKit_glove_specialist_dragon_blue_Tag"						"Cloud Chaser"
+		
+		"PaintKit_glove_specialist_wave_blue_Tag"						"Big Swell"
+"PaintKit_glock_jdpeek_Tag"										"Fully Tuned"
+					
+		"PaintKit_awp_queens_gambit_Tag"								"Queen's Gambit"
+					
+		"PaintKit_p90_deathgaze_Tag"									"Deathgaze"
+					
+		"PaintKit_p250_kintsugi_Tag"									"Kintsugi"
+					
+		"PaintKit_mp9_urban_sovereign_Tag"								"Urban Sovereign"
+					
+		"PaintKit_mp7_amberline_Tag"									"Amberline"
+					
+		"PaintKit_bizon_rmx_Tag"										"RMX"
+					
+		"PaintKit_ak47_crane_flight_Tag"								"Crane Flight"
+					
+		"PaintKit_deagle_firebreathing_Tag"								"Firebreathing"
+					
+		"PaintKit_ump_fragment_Tag"										"Fragment"
+					
+		"PaintKit_sawedoff_fusion_Tag"									"Fusion"
+					
+		"PaintKit_galil_galigator_Tag"									"Galigator"
+					
+		"PaintKit_fiveseven_polymer_dark_Tag"							"Dark Polymer"
+					
+		"PaintKit_usps_silent_boy_Tag"									"Silent Shot"
+					
+		"PaintKit_m4a4_zubastick_bw_Tag"								"Zubastick"
+					
+		"PaintKit_m4a1s_electrum_Tag"									"Electrum"
+					
+		"PaintKit_m249_blocks_purple_Tag"								"Bock Blocks"
+		
+// END COMMUNITY_37 WEAPONS
 
 // OVERPASS_2024
 				
@@ -37889,6 +37972,7 @@
 		"StoreCheckout_GameLicense_AlreadyOwned"		"Bạn đã có bản quyền trò chơi Counter-Strike: Global Offensive."
 		"StoreCheckout_GameLicense_PurchasePending_PW"	"Bạn đã đề xuất mua đăng ký trò chơi Counter-Strike: Global Offensive rồi. Chúng tôi đang xác nhận tình trạng giao dịch Perfect World trước của bạn. Nếu đã dùng số dư Perfect World, thanh toán trước sẽ sớm được tự động hoàn thành. Nếu không hãy chờ ít nhất một phút rồi thử lại."
 		"StoreCheckout_NotEnoughRoom"			"Kho đồ của bạn không đủ chỗ chứa để mua nhiều đồ tới vậy. \nVẫn có thể mua các thùng chứa riêng (Storage Unit) tại cửa hàng trong trò chơi.\nNó cho phép bạn di chuyển đồ dư từ kho của mình để lấy lại sau."
+		"StoreCheckout_NotEnoughRoom_TooManyStorageUnits"	"Bạn đã sở hữu quá nhiều thùng chứa.\n\nKhông thể mua thêm thùng chứa từ cửa hàng trong trò chơi cho tới khi chủ sở hữu tài khoản liên hệ đội hỗ trợ Steam."
 		"StoreCheckout_TooManyItemsInCart"		"Giao dịch này không thể thanh toán vì chứa quá nhiều vật phẩm. Vui lòng bỏ bớt sản phẩm ra khỏi giỏ hàng và thử lại."
 		"StoreCheckout_PurchaseExpiredItemsUnavailable" "Thanh toán đơn hàng của bạn đã hết hạn, hoặc sản phẩm không còn mở bán. Bạn chưa bị tính phí. Vui lòng thử đặt mua hàng lại."
 		"StoreCheckout_ContactSupport_Dialog_Title"	"Cảnh báo"
@@ -39308,6 +39392,7 @@
 		"SFUI_InvContextMenu_preview_musickit"       "Nghe trước gói âm thanh"
 		"SFUI_InvContextMenu_decodable"     "Mở khóa"
 		"SFUI_InvContextMenu_sell"			"Bán trên chợ cộng đồng"
+		"SFUI_InvContextMenu_marketlisting"	"Xem mục đăng trên chợ"
 		"SFUI_InvContextMenu_openloadout"   "Xem ô hành trang"
 		"SFUI_InvContextMenu_inspectcase"	"Mở..."
 		"SFUI_InvContextMenu_useitem"	    "Sử dụng vật phẩm"
@@ -40330,6 +40415,7 @@
 		"CSGO_Demo_Toggle"							"[Shift+F2]"
 		"CSGO_Demo_Time"							"{s:current_time} / {s:total_time}"
 		"CSGO_Demo_Round"							"Ván:"
+		"CSGO_Demo_Highlight"						"Tiêu điểm"
 		"CSGO_Demo_End_Playback"					"Ngừng phát"
 		"CSGO_Demo_End_Playback_Overwatch"			"Tới thẳng phần quyết định"
 		"CSGO_Demo_End_Playback_Overwatch_Finished"	"Tới phần quyết định"
@@ -42725,6 +42811,8 @@
 		"SFUI_Settings_Network_Bandwidth_30mbps"   "3 Mbps"
 		"SFUI_Settings_Network_Bandwidth_40mbps"   "4 Mbps"
 		"SFUI_Settings_Network_Bandwidth_Max"	   "Không hạn chế"
+
+		"SFUI_Settings_Volatile_Limit_Unlimited"	"Không giới hạn"
 
 		"SFUI_FeatureUnavailableDuringBeta"		"Không có trong beta"
 
@@ -47846,6 +47934,7 @@
 		"inv_context_remove_patch"			"Gỡ phù hiệu"		
 		"inv_context_openloadout"			"Xem trong hành trang"
 		"inv_context_sell"					"Bán trên chợ cộng đồng"
+		"inv_context_marketlisting"			"Xem mục đăng trên chợ"
 		"inv_context_tradeup_add"			"Dùng cho hợp đồng đổi hàng"
 		"inv_context_tradeup_remove"		"Gỡ bỏ khỏi hợp đồng đổi đi"
 		"inv_context_open_contract"			"Mở hợp đồng"
@@ -47903,6 +47992,7 @@
 		"inv_session_prop_updated"			"Cập nhật!"
 		"inv_session_prop_quest_reward"		"Phần thưởng!"
 		"inv_session_prop_xpshopredeem"		"Mới!"
+		"inv_session_prop_marketlisting"	"<img src='file://{images}/icons/ui/coupon.svg' class='item-tile__onmarket'/> Trên chợ"
 		"inv_equipped_item"					"Trang bị <b>{s:name}</b> cho <b>{s:team}</b>"
 		"inv_equipped_item_noteam"			"Trang bị <b>{s:name}</b>"
 		"inv_unequipped_item"				"Gỡ trang bị <b>{s:name}</b>"
@@ -50884,6 +50974,8 @@
 		"user_btn_purchase_desc_purchase"		"Giữ để mua vật phẩm này. Sau khi mua, thiết bị đầu nối sẽ tự hủy."
 		"user_btn_purchase_desc_continue"		"Giữ để từ chối vĩnh viễn đề nghị này và xem đề nghị tiếp theo."
 		"user_btn_purchase_desc_end"		"Từ chối đề nghị cuối cùng và hủy thiết bị đầu nối này."
+		"user_btn_purchase_title"			"Đề nghị #{s:offer-count}"
+		"user_btn_purchase_final_title"		"<b>Đề nghị cuối</b>"
 		"user_btn_decline_desc"				"Từ chối đề nghị này và xem đề nghị khác"
 		"user_btn_accept"		"Chấp nhận đề nghị <b>{s:price}</b>"
 		"user_btn_accept_final"	"Chấp nhận đề nghị cuối cùng <b>{s:price}</b>"
@@ -50905,6 +50997,18 @@
 		"user_btn_pause"		"Tạm dừng đề nghị"
 		"user_btn_end"			"Từ chối đề nghị cuối cùng"
 
+		"user_message_limit_0"		"Tôi có thể nâng tới <b>{s:limit-setting}</b>."
+		"user_message_limit_1"		"Giờ tới <b>{s:limit-setting}</b> là giá trần rồi đó."
+		"user_message_limit_2"		"Lên tối đa <b>{s:limit-setting}</b> cũng ổn đó."
+		"user_message_limit_3"		"Mức <b>{s:limit-setting}</b> cũng được."
+		"user_message_limit_unlimited_0"	"<b>Không giới hạn</b>, tôi muốn xem hết."
+		"user_message_limit_unlimited_1"	"<b>Chơi tuốt</b>. Không lo về giá."
+		"user_message_limit_unlimited_2"	"Dân chơi tới đây để mua. <b>Đem hết mọi thứ ra</b>."
+		"user_message_limit_unlimited_3"	"Cứ bắn được là tôi hứng thú. <b>Khỏi giới hạn giới giếc gì</b>."
+		"user_message_limit_unlimited_4"	"Giá cao tới đâu cũng được"
+		"offer_limit_setting"		"Giới hạn đề nghị: {s:limit}"
+		"offer_limit_setting_interface"		"Giới hạn đề nghị: {s:limit} <img src='file://{images}/icons/ui/expand.svg' class='expand-icon'/>"
+
 		"dealer_offer_Unknown"							"-"
 		"dealer_offer_1"								"1"
 		"dealer_offer_2"								"2"
@@ -50921,23 +51025,31 @@
 		"declined_offer_tooltip"	"Đã từ chối đề nghị"
 		"future_offer_tooltip"		"Đề nghị chưa được tiết lộ."
 		"laptop_expiration_tooltip"		"Thời hạn trước khi thiết bị đầu nối và tất cả đề nghị hết hạn."
+		"laptop_max_offer_tooltip"		"Đặt mức giới hạn đề nghị tối đa. Bạn chỉ có thể nhận đề nghị dưới mức giới hạn này. Bạn có thể thay đổi bất cứ lúc nào."
 		"collection_xp_tooltip"			"Nhận XP khi xem đề nghị trong bộ sưu tập này. Mở để xem tiến độ và nhận XP."
+		"terminal_offer_limit_tooltip"		"Cập nhật giới hạn đề nghị tối đa. Tay buôn vũ khí sẽ ra đề nghị không quá giới hạn đó."
 		"popup_lootlist_title"			"XP cho catalog bộ sưu tập"
 		"popup_lootlist_desc"			"Nhận XP khi xem đề nghị trong bộ sưu tập này."
-		"popup_lootlist_progress"		"Đã xem {d:seen}/{d:total} đề nghị"
+
+		"popup_lootlist_progress:f"      "Đề nghị đã thấy: {d:seen}/{d:total}"
 		"popup_lootlist_claim_xp"		"Nhận XP thưởng"
 		"popup_lootlist_claim_ww"		"Đang nhận XP..."
-		"popup_lootlist_claim_ok"		"✅ Đã nhận XP"
+		"popup_lootlist_claim_ok"		"✔ Đã nhận XP"
 		"popup_vpn_status_connected"	"Trạng thái: Kết nối tới hệ thống mạng bảo mật"
 		"popup_vpn_status_disconnected"	"Trạng thái: Ngắt kết nối"
 		"popup_signal_full" 			"Tín hiệu tối ưu"
 		"popup_signal_ok" 				"Tín hiệu mạnh"
+		"popup_offer_limit_desc"		"Cập nhật giới hạn tối đa cho đề nghị trong tương lai"
 		"laptop_battery_tooltip" 		"Pin sạc: {d:percent}%"
 		"laptop_original_seal_tooltip" 	"Bất kì vật phẩm được mua từ thiết bị đầu nối vệ tinh này sẽ kèm theo chứng nhận chủ sở hữu gốc, có hiệu lực khi bạn vẫn còn là chủ sở hữu."
 		"laptop_zoom_tooltip" 			"Cuộn chuột để phóng to và thu nhỏ"
 		"laptop_pan_tooltip" 			"Giữ nút \"Shift\" và kéo để di chuyển camera"
 		"laptop_pricing_tooltip"		"Giá cả được áp dụng toàn cầu và điều chỉnh dựa trên nhu cầu từng mặt hàng trong bộ sưu tập."
 
+		"dealer_message_set_offer_limit_0"		"Trước khi làm ăn, giờ bạn được phép phê duyệt tới mức nào?"
+		"dealer_message_set_offer_limit_1"		"Xắn tay lên làm cho xong vụ này.<!--.25--> Tối đa bao nhiêu đây?"
+		"dealer_message_set_offer_limit_2"		"Trước khi vào chuyện...<!--.25--> Nóc tới đâu? Được phê chuẩn tới mức nào?"
+		
 		"dealer_message_start_0"  	"Mấy thứ này đều theo chuẩn cho dân chuyên hết.<!--.25-->Chất lượng khỏi bàn. Giấy tờ cũng khỏi luôn."
 		"dealer_message_start_1"  	"Đang muốn tiễn lô hàng chợ đen, không giấy tờ gì hết.<!--.25-->Đừng lo, an toàn để mua. Không còn lưu hành mấy năm rồi, chả ai ngó tới.<!--.25-->Vẫn bắn ngon khi ngắm trúng mục tiêu, khỏi thắc mắc."
 		"dealer_message_start_2"  	"Hải quan Ahradan giam hàng của tôi vào sáng nay. Tôi cố cứu vớt bằng một câu chuyện thương tâm có người đang hấp hối cần mớ thiết bị y tế... ai biết là ai đâu.<!--.25-->Không ăn thua. Nhưng chiếc cặp đầy tiền thì có.<!--.25-->Xem qua mớ máy lọc máu trước khi tôi chuyển cho bọn trẻ mồ côi nhé."
@@ -50945,6 +51057,7 @@
 		"dealer_message_start_4"  	"Đồ tôi có hôm nay sạch lắm.<!--.25-->Về lý thuyết thì bạn là người đầu tiên chạm tay vào."
 		"dealer_message_start_5"  	"Hàng không nguồn gốc, không số sê-ri, hoạt động hoàn hảo.<!--.25-->Tòa án chiến tranh sẽ coi đây là bằng chứng.<!--.25-->Hai ta đều biết đây là kiệt tác tuyệt cmn vời."
 		"dealer_message_start_6"  	"Cả nguyên lô hàng ngoại nhập vừa được giải phóng từ đơn vị diễu hành.<!--.25-->Chủ yếu cầm khoe chứ chưa bắn bao giờ."
+		"dealer_message_start_7"  	"Mấy gã khách kia toàn muốn biết nguồn hàng tôi bán ở đâu. Có duyên hết sức.<!--.25-->Mấy người chỉ cần biết đây có phải là món hàng nóng nhất thị trường không thôi.<!--.25-->Xin thưa: Chuẩn không cần chỉnh."
 		"dealer_message_start_8"  	"Hiệp định hòa bình tại Drosvik. Tôi yêu hòa bình.<!--.25-->Bởi vì tôi quen biết một viên tướng với đống nợ khổng lồ và kho vũ khí đóng bụi.<!--.25-->Ừ thì...<!--.25-->Đương nhiên hòa bình cũng tốt mà. Mạng sống vô tội và...<!--.25-->Tôi đang nói vớ vẩn gì thế, đằng ấy đâu có quan tâm."
 		"dealer_message_start_9"  	"Lô này toàn hàng ngoại nhập chợ đen.<!--.25-->Toàn đồ hiếm, tay mơ không có cửa rờ tới. Xài thì chỉ có mà mê."
 		"dealer_message_start_10"  	"Xấu hổ quá.<!--.25-->Tôi hẳn đã vô tình dán nhầm nhãn một thùng hàng trong lô vận chuyển.<!--.25-->Đúng hơn thì vài chục thùng.<!--.25-->Sao không tôi giúp úm ba la tìm không ra đống hàng tồn trước khi cơ quan quản lý cảng có cớ vào cuộc?"
@@ -51135,10 +51248,29 @@
 		"dealer_message_addition_factory_new_2"	"<!--.25-->Lấy trực tiếp từ kho. Mới nguyên."
 		"dealer_message_addition_factory_new_3"	"<!--.25-->Cái này còn mới nguyên. Chưa bắn bao giờ."
 		
+		"dealer_message_limit_first_time_0"		"Tốt thôi, đằng này sẽ ra đề nghị không quá {s:limit}.<!--.25--> Để xem bạn cần gì nào."
+		"dealer_message_limit_first_time_2"		"Chỉ nhận đề nghị dưới {s:limit}, nhớ rồi nhớ rồi.<!--.25--> Không có nhiều thời gian đâu. Làm việc thôi."
+		"dealer_message_limit_first_time_3"		"Ghi nhận. Đã cập nhật lại.<!--.25--> Bắt đầu thôi."
+		"dealer_message_limit_first_time_unlimited_0"		"Tuyệt cú mèo, không giới hạn tối đa. Tôi sẽ mở rộng catalog hiện tại từ giờ trở đi.<!--.25--> Không có nhiều thời gian, làm cho nhanh nào."
+		"dealer_message_limit_first_time_unlimited_1"		"Đã rõ. Không phanh. Giờ chơi nghiêm túc luôn.<!--.25--> Để xem đây có hàng nào bạn cần không."
+
+		"dealer_message_limit_0"				"Tốt thôi, đằng này sẽ ra đề nghị không quá {s:limit}."
+		"dealer_message_limit_1"				"Chỉ nhận đề nghị dưới {s:limit}, nhớ rồi nhớ rồi."
+		"dealer_message_limit_2"				"Đang chỉnh lại tham số. Chỉ đề nghị hàng không quá {s:limit}."
+		"dealer_message_limit_3"				"Đề nghị không quá {s:limit}. Đã ghi nhận và cập nhật lại."
+		"dealer_message_limit_4"				"Tôi chỉ đưa ra những gì có giá không quá {s:limit}"
+		"dealer_message_limit_5"				"Có giới hạn mới rồi, {s:limit}"
+		"dealer_message_limit_6"				"Đã hiểu. Đang đặt lại bộ lọc để đề nghị không quá {s:limit}."
+		"dealer_message_limit_unlimited_0"		"Tuyệt cú mèo, không giới hạn tối đa. Tôi sẽ mở rộng catalog hiện tại từ giờ trở đi."
+		"dealer_message_limit_unlimited_1"		"Đã rõ, không giới hạn. Nếu có gì hiếm hoi thì cũng không ngần ngại."
+		"dealer_message_limit_unlimited_2"		"Nghe như mật rót vào tai. Nếu có gì hợp túi tiền nổi lên thì đây sẽ không ngần ngại giới thiệu"
+		"dealer_message_limit_unlimited_3"		"Đã rõ. Không phanh. Giờ chơi nghiêm túc luôn."
+
 		"system_dealer_left_chat_0"				"Tay buôn đã rời phòng trò chuyện."
 		"system_dealer_join_chat_0"				"Đề nghị từ tay buôn vũ khí cho {s:collection}.<!--1.25-->Đã kết nối với tay buôn"
 		"system_user_reject_offer_0"			"{s:user-name} từ chối đề nghị."
 
+		"system_user_updated_offer_limit_0"			"Cập nhật giới hạn đề nghị tối đa tới {s:limit}. Bạn có thể thay đổi thiết lập bất cứ lúc nào."
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -51383,8 +51515,8 @@
 		"quest_11015_var_partial" 				""
 		"quest_11015_var_ingame:p{mission-points}"		"Thắng ván đấu"
 
-// crow_mask_51633_comment
-// crow_mask_51634_comment
+// crow_mask_51765_comment
+// crow_mask_51766_comment
 }
 
 
@@ -51393,100 +51525,7 @@
 }
 
 
-:location}</b>."
-		"quest_11014_var_partial" 				""
-		"quest_11014_var_ingame:p{mission-points}"		"Thắng ván đấu"
-		
-		"quest_11015_var_desc:p{mission-points}"	 	"Thắng ván đấu trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_11015_var_partial" 				""
-		"quest_11015_var_ingame:p{mission-points}"		"Thắng ván đấu"
-
-// crow_mask_51588_comment
-// crow_mask_51589_comment
-}
-
-
-
-
-}
-
-
-ms_purchased:f"										"{s:funfact-player} mua {d:funfact-d1} vật phẩm."
-		"funfact_won_as_last_member:f"									"Là thành viên cuối cùng còn sống, {s:funfact-player} giết {d:funfact-d1} kẻ thù và chiến thắng."
-		"funfact_number_of_overkills:f"									"{s:funfact-player} giết {d:funfact-d1} người chơi trong khi đã áp đảo."
-		"funfact_shots_fired:f"											"{d:funfact-d1} phát đạn đã được bắn trong ván đó."
-		"funfact_money_spent:f"											"{s:funfact-player} đã tiêu ${d:funfact-d1} trong ván đó."
-		"funfact_grenades_thrown:f"										"{s:funfact-player} ném {d:funfact-d1} lựu đạn trong ván đó."
-		"funfact_used_all_ammo:f"										"{s:funfact-player} hết sạch sành sanh đạn dược."
-		"funfact_survived_multiple_attackers:f"							"{s:funfact-player} sống sót sau khi bị {d:funfact-d1} kẻ địch tấn công."
-		"funfact_died_from_multiple_attackers:f"						"{s:funfact-player} nhận sát thương từ {d:funfact-d1} kẻ địch trước khi chết."
-		"funfact_defended_bomb:f"										"{s:funfact-player} bảo vệ bom đã đặt khỏi {d:funfact-d1} kẻ địch."
-		"funfact_items_dropped_value:f"									"{s:funfact-player} ném đi nhiều món tổng trị giá ${d:funfact-d1}."
-		"funfact_kill_wounded_enemies:f"								"{s:funfact-player} kết liễu {d:funfact-d1} kẻ địch bị thương."
-		"funfact_damage_multiple_enemies:f"								"{s:funfact-player} gây sát thương lên {d:funfact-d1} kẻ địch."
-		"funfact_used_multiple_weapons:f"								"{s:funfact-player} dùng {d:funfact-d1} loại súng ống."
-		"funfact_terrorist_accuracy:f"									"Phe khủng bố có độ chính xác tốt nhất với {d:funfact-d1}%."
-		"funfact_ct_accuracy:f"											"Phe chống khủng bố có độ chính xác tốt nhất với {d:funfact-d1}%."
-		"funfact_ct_win_no_kills:f"										"Chống khủng bố thắng mà không cần giết khủng bố nào."
-		"funfact_t_win_no_kills:f"										"Khủng bố thắng mà không cần giết chống khủng bố nào."
-		"funfact_t_win_no_casualties:f"									"Khủng bố thắng mà không có thiệt hại."
-		"funfact_ct_win_no_casualties:f"								"Chống khủng bố thắng mà không có thiệt hại."
-		"funfact_best_terrorist_accuracy:f"								"{s:funfact-player} có độ chính xác là {d:funfact-d1}% so với đồng đội ở mức {d:funfact-d2}%."
-		"funfact_best_counterterrorist_accuracy:f"						"{s:funfact-player} có độ chính xác là {d:funfact-d1}% so với đồng đội ở mức {d:funfact-d2}%."
-		"funfact_fallback1:f"											"\"The cake is a lie\"."
-		"funfact_fallback2:f"											"Ngáp."
-		"funfact_draw:f"												"Trận đấu được khởi động lại dựa trên biểu quyết của người chơi."
-		"funfact_broke_windows:f"										"{s:funfact-player} làm vỡ {d:funfact-d1} cửa sổ."
-		"funfact_nightvision_damage:f"									"{s:funfact-player} gây {d:funfact-d1} sát thương khi dùng kính nhìn đêm."
-		"funfact_defused_with_dropped_kit:f"							"{s:funfact-player} gỡ bom bằng bộ tháo bom nhặt được."
-		"funfact_killed_half_of_enemies:f"								"{s:funfact-player} giết {d:funfact-d1}% đội đối phương."
-		"funfact_knife_level_reached:f"									"{d:funfact-d1} người chơi đạt mức dao vàng."
-		"funfact_killed_before_dying:f"									"{s:funfact-player} giết {d:funfact-d1} người chơi trước khi chết."
-		"funfact_respawned:f"											"{s:funfact-player} hồi sinh {d:funfact-d1} lần trong trận đó."
-		"funfact_default_weapon:f"										"{s:funfact-player} đã thắng ván mà không nhặt bất kỳ vũ khí nào."
-		"funfact_rounds_without_dying:f"								"{s:funfact-player} cầm cự {d:funfact-d1} ván liên tiếp mà không chết."
-		"funfact_taser_kill:f"											"{s:funfact-player} chích điện {d:funfact-d1} người chơi."
-		"funfact_ticking_time:f"										"Phe khủng bố thắng mặc dù {d:funfact-d1} CT tìm cách gỡ bom."
-		"funfact_ct_win_time:f"											"Đội CT loại đội T trong {d:funfact-d1} giây."
-		"funfact_ter_win_time:f"										"Đội T loại đội CT trong {d:funfact-d1} giây."
-		"funfact_bots_assumed:f"										"{s:funfact-player} điều khiển {d:funfact-d1} máy trong ván đó."
-		"funfact_domination:f"											"{s:funfact-player} áp đảo nhiều người chơi nhất."
-		"funfact_revenge:f"												"{s:funfact-player} trả thù {d:funfact-d1} người chơi."
-		"funfact_steps_taken:f"											"{s:funfact-player} chạy {d:funfact-d1} bước trong trận đó."
-		"funfact_quarter_health:f"										"{s:funfact-player} giết {d:funfact-d1} người chơi khi dưới 25 máu."
-		"funfact_empty_guns:f"											"{s:funfact-player} cạn sạch đạn khi dùng {d:funfact-d1} súng."
-		"funfact_slow_trigger:f"										"{s:funfact-player} chết mà không bắn phát nào với {d:funfact-d1} súng."
-		"funfact_pickup_bomb:f"											"{s:funfact-player} đặt bom sau khi nó đã qua tay {d:funfact-d1} đồng đội."
-		"funfact_bomb_carriers:f"										"{s:funfact-player} giết {d:funfact-d1} người cầm bom trong ván vừa qua."
-		"funfact_knife_bomb_planter:f"									"{s:funfact-player} thắng ở vòng đấu dao bằng cách giết kẻ đặt bom."
-		"funfact_bomb_planted_before_kill:f"							"Không có người chơi nào bị giết trước khi bom được đặt."
-		"funfact_failed_bomb_plants:f"									"{d:funfact-d1} khủng bố tìm cách đặt bom trong ván đó."
-		"funfact_knife_without_ammo:f"									"{s:funfact-player} giết {d:funfact-d1} mạng bằng dao sau khi hết đạn."
-		"funfact_molotov_burns:f"										"{s:funfact-player} thiêu {d:funfact-d1} người chơi bằng lửa."
-		"funfact_survival_time:f"										"{s:funfact-player} cầm cự được lâu nhất: {d:funfact-d1} giây."
-		"funfact_pulled_trigger:f"										"{s:funfact-player} kéo cò {d:funfact-d1} lần trong trận đó."
-		"funfact_ace:f"													"Thần sầu! {s:funfact-player} tự mình diệt toàn bộ đội đối phương."
-		"funfact_defuse_was_close_call_tenths:f"						"{s:funfact-player} gỡ bom trong khi chỉ còn 0.{d:funfact-d1} giây."
-		"funfact_defuse_was_close_call_hundredths:f"					"{s:funfact-player} gỡ bom trong khi chỉ còn 0.0{d:funfact-d1} giây."
-		"funfact_defuse_was_close_call_thousandths:f"					"{s:funfact-player} gỡ bom trong khi chỉ còn 0.00{d:funfact-d1} giây."
-		"mapwinrecord_graph_title:f"									"Trận thắng gần đây nhất"
-		"CSGO_Recipe_Count_Items_Selected:f"							"Đã chọn <b>{d:count}</b> vật phẩm"
-		"CSGO_Recipe_Count_Items_Remaining:f"							"Còn lại <b>{d:count}</b> vật phẩm"
-		"CSGO_Recipe_TradeUp_Items_Remain:f"							"Đã chọn {d:count} vật phẩm để trao đổi"
-		"CSGO_Recipe_TradeUp_Items_XofY:f"								"Đã chọn {d:count} / {d:recipecount} vật phẩm để trao đổi"
-		"CSGO_Recipe_TradeUp_Items_Inv:f"								"Có {d:count} vật phẩm hợp lệ để trao đổi"
-		"CSGO_RemoveKeychainToolCharges_Reward:f"						"+{d:item_count} công cụ gỡ móc treo"
-		"SFUI_Store_Offer_Days_Remaining:f"								"Còn {d:daysremaining} ngày."
-		"SFUI_Store_Offer_Days_Remaining_claim:f"						"còn {d:daysremaining} ngày"
-		"SFUI_Store_Offer_Days_Remaining_bid:f"							"còn {d:daysremaining} ngày để đấu giá mặt hàng này"
-		"SFUI_Store_Offer_Days_Remaining_last_claim:f"					"Cơ hội cuối để nhận mặt hàng này"
-		"SFUI_Store_Offer_Days_Remaining_last_bid:f"					"Cơ hội cuối để đấu giá mặt hàng này"
-		"SFUI_Store_Timer_Week:f"										"{f:0:value} tuần"
-		"SFUI_Store_Timer_Day:f"										"{f:0:value} ngày"
-		"SFUI_Store_Timer_Hour:f"										"{f:0:value} giờ"
-		"SFUI_Store_Timer_Min:f"										"{f:0:value} phút"
-		"SFUI_Store_Timer_Sec:f"										"{f:0:value} giây"
-		"CSGO_Watch_Minute:f"											"{f:0:value} phút"
+:0:value} phút"
 		"xpshop_new_items:f"											"Vật phẩm mới!"
 		"xpshop_popup_clear_n_tracks:f"									"Xóa {d:completed_tracks_count} vé đã hoàn thành"
 		"xpshop_popup_clear_n_tracks_text:f"							"Bạn đã nhận được toàn bộ điểm kho vũ khí từ vé này.<br><br>Xóa vé kho vũ khí sẽ cho phép bạn kích hoạt một vé mới. Điều này sẽ không ảnh hưởng đến điểm kho vũ khí hiện tại của bạn."

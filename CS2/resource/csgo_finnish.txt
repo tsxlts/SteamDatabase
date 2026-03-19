@@ -103,6 +103,9 @@
 		"tooltip_copycrosshair"				"Kopioi tähtäin"
 		"GameUI_Xhair_Copy_Code_Confirm"		"Korvaa nykyinen tähtäin?"
  
+		"GameUI_Confirm_Write_Setting_Title"	"Asetusten muutospyyntö"
+		"GameUI_Confirm_Write_Setting_Text"		"Workshop-kartta {s:mapname} haluaa muuttaa asetuksiasi. Tähän voi sisältyä muutoksia tähtäinristikkoon, tutkaan, ääneen ja muihin toimintoihin. Haluatko sallia muutokset?"
+
 		"settings_damage_prediction"			"Vahinkojen ennustaminen"
 		"settings_damage_prediction_info"		"Toistaa vahingon aiheuttamisen äänitehosteet ja visuaaliset tehosteet välittömästi odottamatta palvelimen vahvistusta. Vahinkojen ennustaminen voi saada ampumisen tuntumaan huomattavasti helpommalta, mutta siihen liittyy riski, että ennuste on joskus väärä (esim. tähtäyksen, osumasta johtuvan pysähdyksen tai kuoleman vuoksi, josta asiakasohjelma ei vielä ole tietoinen)."
 		"GameUI_PredictBodyShotEffects"			"Ennusta vartalo-osumien tehosteet"
@@ -2418,6 +2421,7 @@
 		"NewItemMethod_CommunityMarketPurchase"	"Otit vastaan yhteisön kauppapaikalta:"
 
 		"ItemHistory_ActionWithTime"									"%s1 %s2"
+		"ItemHistory_Action_GSCreate"									"Luotu"
 		"ItemHistory_Action_GenericAdd"									"Lisätty"
 		"ItemHistory_Action_GenericRemove"								"Poistettu tai muokattu"
 		"ItemHistory_Action_Traded"										"Vaihdettu"
@@ -2481,6 +2485,10 @@
 		"ItemHistory_Action_TournamentDrop"								"Ansaitsi tuliaislöydön"
 		"ItemHistory_Action_TemplateItemGrant"							"Ansaittu"
 		"ItemHistory_Action_Market_Add"									"Hankittu yhteisön kauppapaikalta"
+		"ItemHistory_Action_Market_Sealed"								"Loi listauksen yhteisön kauppapaikalla"
+		"ItemHistory_Action_Market_Unsealed"							"Poisti listauksen yhteisön kauppapaikalta"
+		"ItemHistory_Action_Market_SoldSealed"							"Myytiin yhteisön kauppapaikalla"
+
 		"ItemHistory_Transaction_Delete"								"Sinä poistit"
 		"ItemHistory_Transaction_Craft"									"Luotu"
 		"ItemHistory_Transaction_UnlockCrate"							"Avasi säiliön"
@@ -2637,6 +2645,7 @@
 		"Attrib_NeverTradableButHasAfterDate1"		"Tätä esinettä ei voi myydä eikä vaihtaa."
 		"Attrib_NeverTradableButHasAfterDate2"		"Käytön jälkeen, saaduilla esineillä on vaihtorajoitus %s1 asti"
 		"Attrib_TradeProtectedEscrowDate"			"⇆ Esinettä ei voi vaihtaa, käyttää, muokata tai siirtää ennen %s1"
+		"Attrib_TradeProtectedEscrowMarket"			"⇆ Esine on listattu Steam-yhteisön kauppapaikalla, eikä sitä voi kuluttaa tai muokata listauksen ollessa aktiivisena."
 		"Attrib_TradableAfterDate"					"Vaihdettavissa: %s1"
 		"Attrib_TradableMarketableAfterDate"		"Vaihdettavissa/myytävissä %s1 jälkeen"
 		"Attrib_MarketableWithRestrictions"			"Voidaan myydä välittömästi Steamin yhteisön kauppapaikalla"
@@ -4393,6 +4402,8 @@
 		
 		"CSGO_crate_community_36"				"Lukittu Genesis-terminaali"
 		"CSGO_crate_community_36^volatile"		"Aktiivinen Genesis-terminaali"
+		"CSGO_crate_community_37"				"Sinetöity Kalmankäsi-terminaali"
+		"CSGO_crate_community_37^volatile"		"Aktivoitu Kalmankäsi-terminaali"
 		"CSGO_crate_keychain_pack_kc_drboom_capsule"	    	"Dr. Boom -riipuskokoelma"
 		"CSGO_crate_keychain_pack_kc_drboom_capsule_desc"		"Kokoelma sisältää erilaisia Dr. Boom -riipuksia."
 		"CSGO_crate_keychain_pack_kc_drboom_capsule_short"	    "Dr. Boom -riipukset"
@@ -5510,6 +5521,7 @@
 		"CSGO_set_community_36"					"Genesis-kokoelma"
 		"CSGO_set_timed_drops_exuberant"		"Harlequin-kokoelma"
 		"CSGO_set_timed_drops_achroma"			"Achroma-kokoelma"
+		"CSGO_set_community_37"					"Kalmankäsi-kokoelma"
 		/////////////////
 		// lootlist override strings
 		//////////////////
@@ -35530,8 +35542,104 @@
 		"PaintKit_m4a1s_quick_liquidation"				"Tumma pohjaväri ja punaiset ja siniset kontrastivärit antavat vaikutelman, että M4A1-S kiiltelee tunnelmavalaistuksessa.\n\n<i>Hiljainen pohdiskelija.</i>"
 		
 		"PaintKit_aug_trigger_discipline_velco"			"Ase on koristeltu sinisellä isometrisellä kuviolla ja oransseilla kontrastiväreillä.\n\n<i>Kärsivällisyys on palkkio itsessään.</i>"
+"PaintKit_glove_driver_knit_argyle_green_Tag"					"Käsijumpperit"
+		
+		"PaintKit_glove_driver_ostrich_purple_Tag"						"Luumuinen"
+		
+		"PaintKit_glove_driver_silk_dragon_white_Tag"					"Aallokko"
+		
+		"PaintKit_glove_brocade_crane_Tag"								"Koruommelkurki"
+		
+		"PaintKit_glove_driver_brocade_flower_red_Tag"					"Kukkaiskirjottu"
+		
+		"PaintKit_glove_driver_dragon_scale_red_Tag"					"Lohikäärmenyrkit"
+		
+		"PaintKit_glove_driver_embroidered_flowers_teal_Tag"			"Puutarha"
+		
+		"PaintKit_glove_driver_scallop_metallic_blue_Tag"				"Seigaiha"
+		
+		"PaintKit_glove_sport_velvet_red_Tag"							"Salaperäinen"
+		
+		"PaintKit_glove_sport_beadwork_diamonds_purple_Tag"				"Helmikirjottu"
+		
+		"PaintKit_glove_sport_camo_winter_Tag"							"Huurteinen"
+		
+		"PaintKit_glove_sport_pinstripe_black_Tag"						"Tyylikäs"
+		
+		"PaintKit_glove_sport_racer_red_Tag"							"Vauhdin hurmaa"
+		
+		"PaintKit_glove_sport_tech_gradient_bright_Tag"					"Väkivaltaisen violetti"
+		
+		"PaintKit_glove_specialist_abstract_green_Tag"					"Limetinvihreä maastokuvio"
+		
+		"PaintKit_glove_specialist_graffiti_black_Tag"					"Luonnoslehtiö"
+		
+		"PaintKit_glove_specialist_quilted_black_Tag"					"Suklaanruskea"
+		
+		"PaintKit_glove_specialist_quilted_white_Tag"					"Pehmustettu"
+		
+		"PaintKit_glove_specialist_sunburst_red_Tag"					"Auringonkajo"
+		
+		"PaintKit_glove_specialist_dragon_blue_Tag"						"Pilven piirtäjä"
+		
+		"PaintKit_glove_specialist_wave_blue_Tag"						"Hyökyaalto"
+		
+// END COMMUNITY_37 GLOVES
 
-// END COMMUNITY_36
+// COMMUNITY_37 WEAPONS
+		
+		"PaintKit_glock_jdpeek"											"Ase on maalattu neonväreillä ja metallisella hilemaalilla.\n\n<i>\"Vähän liikaa minulle, mutten kuulukaan kohdeyleisöön...\" – Booth, asekauppias</i>"
+		"PaintKit_glock_jdpeek_Tag"										"Täysin tuunattu"
+					
+		"PaintKit_awp_queens_gambit"									"Aseen väritys on syvänsininen ja kullanhohteinen. Tukkiin on maalattu kuningatar.\n\n<i>Jokainen laukaus on kuin kuninkaallinen asetus, joka ilmentää voimaa ja tarkkuutta</i>"
+		"PaintKit_awp_queens_gambit_Tag"								"Musta kuningatar"
+					
+		"PaintKit_p90_deathgaze"										"Asetta koristaa Carraran marmorikuvioinnin päälle graffityyliin maalattu Medusa.\n\n<i>Älä palvo petturuudelle kumartavia epäjumalia</i>"
+		"PaintKit_p90_deathgaze_Tag"									"Kalmankatse"
+					
+		"PaintKit_p250_kintsugi"										"Asetta koristavat hätkähdyttävän kaunis oranssi lintu ja kultaiset yksityiskohdat norsunluunvärisellä pohjalla.\n\n<i>Hienojen illallisastioiden tavoin asetta käytetään vain erikoistilaisuuksissa</i>"
+		"PaintKit_p250_kintsugi_Tag"									"Kintsugi"
+					
+		"PaintKit_mp9_urban_sovereign"									"Aseessa yhdistyvät kaupunkimainen suunnittelu ja kultainen graffiti. \n\n<i>Kuninkaat eivät piileskele muurien takana, vaan maalaavat ne</i>"
+		"PaintKit_mp9_urban_sovereign_Tag"								"Urbaani kingi"
+					
+		"PaintKit_mp7_amberline"										"Ase on spraymaalattu viistoilla oransseilla ja valkoisilla raidoilla.\n\n<i>Brändituote</i>"
+		"PaintKit_mp7_amberline_Tag"									"Kullan kajo"
+					
+		"PaintKit_bizon_rmx"											"Aseeessa on violetti liukuväri ja punavalkoisia kuvioita.\n\n<i>Kevyt, nopea ja vaarallinen... ainakin teoriassa</i>"
+		"PaintKit_bizon_rmx_Tag"										"RMX"
+					
+		"PaintKit_ak47_crane_flight"									"Aseen mustavalkoisella pohjalla on kurki ja kultaisia korostuksia.\n\n<i>Kuunpimennystä odotellessa</i>"
+		"PaintKit_ak47_crane_flight_Tag"								"Kurjenlento"
+					
+		"PaintKit_deagle_firebreathing"									"Asetta koristavat helmiäismäisellä violetilla ja sinisellä maalatut liekkikuviot.\n\n<i>Ässiä hihassa</i>"
+		"PaintKit_deagle_firebreathing_Tag"								"Tulenhönkäys"
+					
+		"PaintKit_ump_fragment"											"Ase on maalattu hopealla, mustalla ja punaisella kuvioinnilla.\n\n<i>Työ kutsuu</i>"
+		"PaintKit_ump_fragment_Tag"										"Fragmentti"
+					
+		"PaintKit_sawedoff_fusion"										"Ase on koristeltu mustalla ja kultaisella kuvioinnilla. Muut yksityiskohdat paljastuvat eri valossa. \n\n<i>Olen nähnyt asioita...</i>"
+		"PaintKit_sawedoff_fusion_Tag"									"Fuusio"
+					
+		"PaintKit_galil_galigator"										"Aseeseen on maalattu alligaattori ja varoitusmerkkejä vihreän ja keltaisen pohjavärin päälle.\n\n<i>Rouskis rouskis</i>"
+		"PaintKit_galil_galigator_Tag"									"Galigaattori"
+					
+		"PaintKit_fiveseven_polymer_dark"								"Ase on maalattu näyttämään siltä, kuin se olisi valmistettu läpinäkyvästä purppurasta polymeeristä.\n\n<i>Kääritty violettiin karkkipaperiin</i>"
+		"PaintKit_fiveseven_polymer_dark_Tag"							"Tumma polymeeri"
+					
+		"PaintKit_usps_silent_boy"										"Ase on maalattu mustilla ja sinisillä japanilaisilla kirjaimilla ja heittotähdillä.\n\n<i>Pidä pää kylmänä, kun listit vihollisia</i>"
+		"PaintKit_usps_silent_boy_Tag"									"Hiljainen laukaus"
+					
+		"PaintKit_m4a4_zubastick_bw"									"M4A4 on koristeltu käsinmaalatuilla hampailla ja oransseilla silmillä.\n\n<i>Vuosikertaa 1991</i>"
+		"PaintKit_m4a4_zubastick_bw_Tag"								"Zubastick"
+					
+		"PaintKit_m4a1s_electrum"										"Ase on maalattu marmorimaisella pohjavärillä ja viimeistelty kultaisilla ja punaisilla väreillä.\n\n<i>Sinulle ei makseta tarpeeksi tuon kantamisesta, mutta minä maksan. – Valeria Jenner, kapinallinen</i>"
+		"PaintKit_m4a1s_electrum_Tag"									"Electrum"
+					
+		"PaintKit_m249_blocks_purple"									"Ase on maalattu violeteilla geometrisillä kuvioilla.\n\n<i>Poikki ja pinoon</i>"
+		"PaintKit_m249_blocks_purple_Tag"								"Bock Blocks"
+		
+// END COMMUNITY_37 WEAPONS
 
 // OVERPASS_2024
 				
@@ -36267,6 +36375,7 @@
 		"StoreCheckout_GameLicense_AlreadyOwned"		"Sinulla on jo Counter-Strike: Global Offensive -pelilisenssi."
 		"StoreCheckout_GameLicense_PurchasePending_PW"	"Olet jo käynnistänyt Counter-Strike: Global Offensive -pelilisenssin ostotapahtuman. Yritämme vahvistaa aiemman Perfect World -maksusi käsittelyn tilan. Jos Perfect World -saldoasi käytettiin, ostoksesi on pian valmis. Muussa tapauksessa odota hetki ja yritä uudestaan."
 		"StoreCheckout_NotEnoughRoom"			"Repussasi ei ole tilaa näin monelle esineelle.\nVoit edelleen ostaa varastolaatikoita kaupasta.\nVoit siirtää varusteluettelosi ylimääräiset esineet laatikkoon ja ottaa ne myöhemmin käyttöön."
+		"StoreCheckout_NotEnoughRoom_TooManyStorageUnits"	"Omistat liikaa varastolaatikoita.\n\nEt voi ostaa uusia varastolaatikoita pelinsisäisestä kaupasta ennen kuin otat yhteyttä Steamin tukeen."
 		"StoreCheckout_TooManyItemsInCart"		"Ostotapahtumaa ei voitu suorittaa loppuun, koska ostoskorissa on liian monta esinettä. Valitse vähemmän esineitä ja yritä uudelleen."
 		"StoreCheckout_PurchaseExpiredItemsUnavailable" "Ostoksesi maksutapahtuma on vanhentunut tai kyseinen tuote ei ole enää myynnissä. Sinua ei ole veloitettu. Yritä ostoksen tekemistä myöhemmin."
 		"StoreCheckout_ContactSupport_Dialog_Title"	"Varoitus"
@@ -37660,6 +37769,7 @@
 		"SFUI_InvContextMenu_preview_musickit"       "Tarkastele - Musiikin esikatselu"
 		"SFUI_InvContextMenu_decodable"     "Avaa säiliö"
 		"SFUI_InvContextMenu_sell"			"Myy kauppapaikalla"
+		"SFUI_InvContextMenu_marketlisting"	"Näytä kauppapaikan listaus"
 		"SFUI_InvContextMenu_openloadout"   "Näytä varustepaikka"
 		"SFUI_InvContextMenu_inspectcase"	"Avaa"
 		"SFUI_InvContextMenu_useitem"	    "Käytä esinettä"
@@ -38685,6 +38795,7 @@
 		"CSGO_Demo_Toggle"							"[Shift+F2]"
 		"CSGO_Demo_Time"							"{s:current_time} / {s:total_time}"
 		"CSGO_Demo_Round"							"Erä:"
+		"CSGO_Demo_Highlight"						"Kohokohdat"
 		"CSGO_Demo_End_Playback"					"Lopeta toistaminen"
 		"CSGO_Demo_End_Playback_Overwatch"			"Siirry tuomioon"
 		"CSGO_Demo_End_Playback_Overwatch_Finished"	"Siirry tuomioon"
@@ -41060,6 +41171,8 @@
 		"SFUI_Settings_Network_Bandwidth_30mbps"   "3,0 Mbit/s"
 		"SFUI_Settings_Network_Bandwidth_40mbps"   "4,0 Mbit/s"
 		"SFUI_Settings_Network_Bandwidth_Max"	   "Rajaton"
+
+		"SFUI_Settings_Volatile_Limit_Unlimited"	"Ei ylärajaa"
 
 		"SFUI_FeatureUnavailableDuringBeta"		"Ei käytössä Betan aikana"
 
@@ -46166,6 +46279,7 @@ Huomaa! Et voi käyttää kivääriä panssarihyökkäyspuvun kanssa."
 		"inv_context_remove_patch"			"Poista kangasmerkki"		
 		"inv_context_openloadout"			"Näytä varustelastissa"
 		"inv_context_sell"					"Myy kauppapaikalla"
+		"inv_context_marketlisting"			"Näytä kauppapaikan listaus"
 		"inv_context_tradeup_add"			"Käytä vaihtosopimuksessa"
 		"inv_context_tradeup_remove"		"Poista vaihtosopimuksesta"
 		"inv_context_open_contract"			"Avaa sopimus"
@@ -46223,6 +46337,7 @@ Huomaa! Et voi käyttää kivääriä panssarihyökkäyspuvun kanssa."
 		"inv_session_prop_updated"			"Päivitetty!"
 		"inv_session_prop_quest_reward"		"Palkinto!"
 		"inv_session_prop_xpshopredeem"		"Uutta!"
+		"inv_session_prop_marketlisting"	"<img src='file://{images}/icons/ui/coupon.svg' class='item-tile__onmarket'/> Kauppapaikalla"
 		"inv_equipped_item"					"Varustettu aseella <b>{s:name}</b> joukkueelle <b>{s:team}</b>"
 		"inv_equipped_item_noteam"			"Varustuksena: <b>{s:name}</b>"
 		"inv_unequipped_item"				"<b>{s:name}</b> ei käytössä"
@@ -46327,6 +46442,7 @@ Huomaa! Et voi käyttää kivääriä panssarihyökkäyspuvun kanssa."
 		"popup_delete_title"	"{s:itemname}"
 		"popup_delete_desc"		"Haluatko varmasti poistaa tämän esineen?"
 		"popup_delete_warning"	"Esineen poistaminen on lopullista."
+		"popup_delete_tooltip"	"Pidä painiketta painettuna poistaaksesi kohteen. Poistamista ei voi perua."
 		"popup_delete_button"	"Poista esine"
 
 		"popup_usegift_title"	"Lahjoita {s:itemname}"
@@ -49134,6 +49250,8 @@ Huomaa! Et voi käyttää kivääriä panssarihyökkäyspuvun kanssa."
 		"user_btn_purchase_desc_purchase"		"Pidä painettuna ostaaksesi tämän tuotteen. Ostoksen jälkeen terminaali poistetaan."
 		"user_btn_purchase_desc_continue"		"Pidä painettuna hylätäksesi tarjouksen ja siirtyäksesi seuraavaan."
 		"user_btn_purchase_desc_end"		"Hylkää lopullinen tarjous ja poista terminaali."
+		"user_btn_purchase_title"			"{s:offer-count} – Tarjous"
+		"user_btn_purchase_final_title"		"<b>Lopullinen tarjous</b>"
 		"user_btn_decline_desc"				"Hylkää tarjous ja näytä seuraava"
 		"user_btn_accept"		"Hyväksy tarjous <b>{s:price}</b>"
 		"user_btn_accept_final"	"Hyväksy lopullinen tarjous <b>{s:price}</b>"
@@ -49155,6 +49273,18 @@ Huomaa! Et voi käyttää kivääriä panssarihyökkäyspuvun kanssa."
 		"user_btn_pause"		"Keskeytä vaihtokauppa"
 		"user_btn_end"			"Hylkää lopullinen tarjous"
 
+		"user_message_limit_0"		"Pystyn tarjoamaan enintään <b>{s:limit-setting}</b>."
+		"user_message_limit_1"		"<b>{s:limit-setting}</b> voisi olla sopiva yläraja."
+		"user_message_limit_2"		"Enintään <b>{s:limit-setting}</b> onnistuu."
+		"user_message_limit_3"		"<b>{s:limit-setting}</b> ylärajana sopii."
+		"user_message_limit_unlimited_0"	"<b>Ei ylärajaa</b>, näytä koko tarjonta."
+		"user_message_limit_unlimited_1"	"<b>Rahaa riittää</b>, turha kantaa huolta tilin saldosta."
+		"user_message_limit_unlimited_2"	"Tulin ostamaan tavaraa. <b>Näytä kaikki, mitä sinulla on tarjota</b>."
+		"user_message_limit_unlimited_3"	"Se kelpaa, jos sillä pystyy ampumaan. <b>Hinnalla ei väliä.</b>"
+		"user_message_limit_unlimited_4"	"Vain taivas on rajana."
+		"offer_limit_setting"		"Tarjousten yläraja: {s:limit}"
+		"offer_limit_setting_interface"		"Tarjousten yläraja: {s:limit} <img src='file://{images}/icons/ui/expand.svg' class='expand-icon'/>"
+
 		"dealer_offer_Unknown"							"–"
 		"dealer_offer_1"								"1."
 		"dealer_offer_2"								"2."
@@ -49171,23 +49301,31 @@ Huomaa! Et voi käyttää kivääriä panssarihyökkäyspuvun kanssa."
 		"declined_offer_tooltip"	"Tarjous hylätty"
 		"future_offer_tooltip"		"Tarjousta ei ole vielä paljastettu."
 		"laptop_expiration_tooltip"		"Aikaa jäljellä ennen kuin terminaali ja sen tarjoukset umpeutuvat."
+		"laptop_max_offer_tooltip"		"Määritä tarjousten yläraja. Saamasi tarjoukset eivät ylitä kyseistä rajaa, ja sitä voi muuttaa milloin tahansa."
 		"collection_xp_tooltip"			"Ansaitse kokemuspisteitä kokoelman tarjousten katselemisesta. Avaa nähdäksesi edistymisesi ja lunastaaksesi kokemuspisteitä."
+		"terminal_offer_limit_tooltip"		"Päivitä tarjousten yläraja. Asekauppias näyttää tarjoukset vain tähän rajaan saakka."
 		"popup_lootlist_title"			"Kokoelmakatalogin kokemuspisteet"
 		"popup_lootlist_desc"			"Ansaitse kokemuspisteitä kokoelman tarjousten katselemisesta."
-		"popup_lootlist_progress"		"{d:seen}/{d:total} tarjousta nähty"
+
+		"popup_lootlist_progress:f"      "Katsottu {total, plural, one{{d:seen}/{d:total} tarjous} other{{d:seen}/{d:total} tarjousta}}"
 		"popup_lootlist_claim_xp"		"Ansaitse bonuskokemuspisteitä"
 		"popup_lootlist_claim_ww"		"Lunastetaan kokemuspisteitä"
-		"popup_lootlist_claim_ok"		"✅ Kokemuspisteet lunastettu"
+		"popup_lootlist_claim_ok"		"✔ Kokemuspisteet lunastettu"
 		"popup_vpn_status_connected"	"Tila: yhdistetty suojattuun verkkoon"
 		"popup_vpn_status_disconnected"	"Tila: yhteys katkaistu"
 		"popup_signal_full" 			"Täysi signaali"
 		"popup_signal_ok" 				"Vahva signaali"
+		"popup_offer_limit_desc"		"Päivitä tarjousten yläraja tulevia tarjouksia varten."
 		"laptop_battery_tooltip" 		"Akun varaus: {d:percent} %"
 		"laptop_original_seal_tooltip" 	"Terminaalista ostetut tuotteet sisältävät alkuperäisen omistajan todistuksen, joka pysyy voimassa niin kauan kuin omistat esineen."
 		"laptop_zoom_tooltip" 			"Vieritä hiirirullaa siirtääksesi näkymää lähemmäs tai kauemmas."
 		"laptop_pan_tooltip" 			"Pidä Shift-näppäintä pohjassa ja vedä hiirellä siirtääksesi kameraa sivusuunnassa."
 		"laptop_pricing_tooltip"		"Hinnat ovat globaaleja ja kunkin kokoelman esineen hintaa säädetään automaattisesti kysynnän perusteella."
 
+		"dealer_message_set_offer_limit_0"		"Tärkein ensin. Kuinka paljon varoja sinulla on käytettävissä?"
+		"dealer_message_set_offer_limit_1"		"Hoidetaan asia kuntoon.<!--.25--> Mikä on ylärajasi?"
+		"dealer_message_set_offer_limit_2"		"Ennen kuin alamme keskustelemaan tuotteista...<!--.25--> Mikä on raja? Kuinka paljon varoja sinulla on käytettävissä?"
+		
 		"dealer_message_start_0"  	"Näitä käytetään viralliseen tarkoitukseen.<!--.25-->Kaikki toivomasi ominaisuudet ilman byrokraattisia esteitä."
 		"dealer_message_start_1"  	"Myyn mustan pörssin kalustoa, en paperia.<!--.25-->Älä huoli. Kukaan ei ole koskenut näihin vuosiin eikä niitä etsi kukaan.<!--.25-->Niillä pystyy yhä ampumaan, jos sitä mietit."
 		"dealer_message_start_2"  	"Ahradanin tulli takavarikoi rahtini aamulla. Koetin saada sitä takaisin sepittämällä nyyhkytarinan lääketieteellisestä kalustosta ja kuolemaa tekevästä... tyypistä.<!--.25-->Se ei tepsinyt. Mutta salkku täynnä rahaa tepsi.<!--.25-->Mitä jos tutkisimme näitä dialyysilaitteita hieman ennen kuin vien ne orpolapsille?"
@@ -49195,6 +49333,7 @@ Huomaa! Et voi käyttää kivääriä panssarihyökkäyspuvun kanssa."
 		"dealer_message_start_4"  	"Kaikki näkemistäsi tuotteista ovat puhtaita.<!--.25-->Kukaan muu sinun lisäksesi ei voi väittää koskeneensa näihin."
 		"dealer_message_start_5"  	"Käyttämättömiä ja hyvin toimivia aseita ilman sarjanumeroita.<!--.25-->Sotaoikeudenkäynnissä näitä käytettäisiin todistusaineistona.<!--.25-->Tiedämme molemmat niiden olevan mestariteoksia."
 		"dealer_message_start_6"  	"Tämä koko eksoottinen kalusto kuului ennen paraatiyksikölle.<!--.25-->Niiden kanssa on marssittu paljon, mutta niillä ei ole koskaan ammuttu."
+		"dealer_message_start_7"  	"Muut asiakkaat kyselevät aina, mistä sain myymäni tuotteet. Se on rasittavaa.<!--.25-->Sinua kiinnostaa vain se, ovatko tuotteeni parasta, mitä rahalla saa.<!--.25-->Vastaus on kyllä."
 		"dealer_message_start_8"  	"Drosvikissa tehtiin rauhansopimus. Rakastan rauhaa.<!--.25-->Koska yhteistyökumppanini on kenraali, joka on minulle velkaa, ja hänellä on täysi asevarasto, joka vain kerää pölyä.<!--.25-->Tai siis...<!--.25-->Rauha on muutenkin hyvä asia. Viattomia henkiä ja sitä rataa.<!--.25-->Mitä oikein selittelen? Eihän sinua kiinnosta."
 		"dealer_message_start_9"  	"Tässä lastissa on eksoottisia vaihtoehtoja, joita ei muualta löydy.<!--.25-->Pidät varmasti tavallisesta poikkeavan kaliiperin aseista."
 		"dealer_message_start_10"  	"Onpa nolo tilanne.<!--.25-->Rahtikirjaan taisi eksyä virhe, kun merkitsin yhtä laatikkoa.<!--.25-->Tai no, tusinaa laatikkoa.<!--.25-->Voit kai auttaa minua hankkiutumaan näistä eroon ennen kuin viranomaiset tulevat nuuskimaan?"
@@ -49385,10 +49524,29 @@ Huomaa! Et voi käyttää kivääriä panssarihyökkäyspuvun kanssa."
 		"dealer_message_addition_factory_new_2"	"<!--.25-->Täysin käyttämätön suoraan varastosta."
 		"dealer_message_addition_factory_new_3"	"<!--.25-->Tämä tuli suoraan tehtaalta. Sillä ei ole koskaan ammuttu."
 		
+		"dealer_message_limit_first_time_0"		"Hyvä tietää. Näytän tarjouksia {s:limit} rajaan asti.<!--.25--> Katsotaanpa, mitä tarvitset."
+		"dealer_message_limit_first_time_2"		"Vain alle {s:limit}:n tarjoukset. Selvä, pidän asian mielessä.<!--.25--> Aika on rahaa, joten aloitetaan."
+		"dealer_message_limit_first_time_3"		"Selvä homma. Päivitetty.<!--.25--> Aloitetaan."
+		"dealer_message_limit_first_time_unlimited_0"		"Ai, ei ylärajaa? Erinomainen ratkaisu. Näytän nykyisen valikoiman tästä eteenpäin.<!--.25--> Aika on rahaa, joten aloitetaan."
+		"dealer_message_limit_first_time_unlimited_1"		"Selvä homma, ei ylärajaa. Nyt päästään asiaan.<!--.25--> Katsotaanpa, mitä tarvitset."
+
+		"dealer_message_limit_0"				"Hyvä tietää. Näytän tarjouksia {s:limit} rajaan asti."
+		"dealer_message_limit_1"				"Vain alle {s:limit}:n tarjoukset. Selvä, pidän asian mielessä."
+		"dealer_message_limit_2"				"Muutan parametrejä. Näytän tarjoukset vain {s:limit}:n rajaan asti."
+		"dealer_message_limit_3"				"Näytän tarjoukset {s:limit}:n rajaan asti. Päivitin tiedot."
+		"dealer_message_limit_4"				"Teen työtä käskettyä ja näytän tarjoukset {s:limit}:n rajaan asti."
+		"dealer_message_limit_5"				"{s:limit} on siis uusi raja. Selvä."
+		"dealer_message_limit_6"				"Homma hanskassa. Muutan suodattimen näyttämään tarjoukset enintään {s:limit}:n rajaan asti."
+		"dealer_message_limit_unlimited_0"		"Ai, ei ylärajaa? Erinomainen ratkaisu. Näytän nykyisen valikoiman tästä eteenpäin."
+		"dealer_message_limit_unlimited_1"		"Selvä, ei rajaa. Jos minulle tulee eteen harvinaisuuksia, en jätä niitä näyttämättä."
+		"dealer_message_limit_unlimited_2"		"Tuo on musiikkia korville. Jos löydän sopivaa tavaraa, tarjoan sitä sinulle."
+		"dealer_message_limit_unlimited_3"		"Selvä homma, ei ylärajaa. Nyt päästään asiaan."
+
 		"system_dealer_left_chat_0"				"Kauppias poistui chatista."
 		"system_dealer_join_chat_0"				"{s:collection} – Asekauppiaan tarjoukset.<!--1.25-->Kauppias on linjoilla."
 		"system_user_reject_offer_0"			"{s:user-name} hylkäsi tarjouksen."
 
+		"system_user_updated_offer_limit_0"			"Ylärajaksi on päivitetty {s:limit}. Voit muuttaa asetusta milloin tahansa."
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -49623,8 +49781,8 @@ Huomaa! Et voi käyttää kivääriä panssarihyökkäyspuvun kanssa."
 		"quest_11015_var_desc:p{mission-points}"	 	"Voita erä pelitilassa <b>{s:gamemode} ja kartalla {s:location}</b>.#|#Voita eriä pelitilassa <b>{s:gamemode} ja kartalla {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Voita erä.#|#Voita eriä."
 
-// crow_mask_51633_comment
-// crow_mask_51634_comment
+// crow_mask_51765_comment
+// crow_mask_51766_comment
 }
 
 
@@ -49633,82 +49791,7 @@ Huomaa! Et voi käyttää kivääriä panssarihyökkäyspuvun kanssa."
 }
 
 
-"
-		"quest_11014_var_ingame:p{mission-points}"		"Voita erä.#|#Voita eriä."
-		
-		"quest_11015_var_desc:p{mission-points}"	 	"Voita erä pelitilassa <b>{s:gamemode} ja kartalla {s:location}</b>.#|#Voita eriä pelitilassa <b>{s:gamemode} ja kartalla {s:location}</b>."
-		"quest_11015_var_ingame:p{mission-points}"		"Voita erä.#|#Voita eriä."
-
-// crow_mask_51588_comment
-// crow_mask_51589_comment
-}
-
-
-
-
-}
-
-
-a."
-		"funfact_killed_half_of_enemies:f"								"{funfact-d1, plural, one{{s:funfact-player} tappoi {d:funfact-d1} prosentin vihollisjoukkueen pelaajista.} other{{s:funfact-player} tappoi {d:funfact-d1} % vihollisjoukkueen pelaajista.}}"
-		"funfact_knife_level_reached:f"									"{funfact-d1, plural, one{{d:funfact-d1} pelaaja pääsi kultaveitsitasolle.} other{{d:funfact-d1} pelaajaa pääsi kultaveitsitasolle.}}"
-		"funfact_killed_before_dying:f"									"{funfact-d1, plural, one{{s:funfact-player} tappoi {d:funfact-d1} pelaajan ennen kuolemaansa.} other{{s:funfact-player} tappoi {d:funfact-d1} pelaajaa ennen kuolemaansa.}}"
-		"funfact_respawned:f"											"{funfact-d1, plural, one{{s:funfact-player} syntyi uudelleen {d:funfact-d1} kerran ottelun aikana.} other{{s:funfact-player} syntyi uudelleen {d:funfact-d1} kertaa ottelun aikana.}}"
-		"funfact_default_weapon:f"										"{s:funfact-player} voitti erän noukkimatta aseita."
-		"funfact_rounds_without_dying:f"								"{funfact-d1, plural, one{{s:funfact-player} selviytyi {d:funfact-d1} erän kuolematta.} other{{s:funfact-player} selviytyi {d:funfact-d1} peräkkäistä erää kuolematta.}}"
-		"funfact_taser_kill:f"											"{funfact-d1, plural, one{{s:funfact-player} tainnutti {d:funfact-d1} pelaajan.} other{{s:funfact-player} tainnutti {d:funfact-d1} pelaajaa.}}"
-		"funfact_ticking_time:f"										"{funfact-d1, plural, one{Terroristit voittivat, vaikka {d:funfact-d1} erikoisjoukkojen jäsen yritti purkaa pommin.} other{Terroristit voittivat, vaikka {d:funfact-d1} erikoisjoukkojen jäsentä yritti purkaa pommin.}}"
-		"funfact_ct_win_time:f"											"{funfact-d1, plural, one{Erikoisjoukot eliminoivat terroristit {d:funfact-d1} sekunnissa.} other{Erikoisjoukot eliminoivat terroristit {d:funfact-d1} sekunnissa.}}"
-		"funfact_ter_win_time:f"										"{funfact-d1, plural, one{Terroristit eliminoivat erikoisjoukot {d:funfact-d1} sekunnissa.} other{Terroristit eliminoivat erikoisjoukot {d:funfact-d1} sekunnissa.}}"
-		"funfact_bots_assumed:f"										"{funfact-d1, plural, one{{s:funfact-player} ohjasi {d:funfact-d1} bottia erän aikana.} other{{s:funfact-player} ohjasi {d:funfact-d1} bottia erän aikana.}}"
-		"funfact_domination:f"											"{s:funfact-player} hallitsi eniten pelaajia."
-		"funfact_revenge:f"												"{funfact-d1, plural, one{{s:funfact-player} sai kostettua {d:funfact-d1} pelaajalle.} other{{s:funfact-player} sai kostettua {d:funfact-d1} pelaajalle.}}"
-		"funfact_steps_taken:f"											"{funfact-d1, plural, one{{s:funfact-player} juoksi {d:funfact-d1} askeleen ottelun aikana.} other{{s:funfact-player} juoksi {d:funfact-d1} askelta ottelun aikana.}}"
-		"funfact_quarter_health:f"										"{funfact-d1, plural, one{{s:funfact-player} tappoi {d:funfact-d1} pelaajan terveyden ollessa alle 25.} other{{s:funfact-player} tappoi {d:funfact-d1} pelaajaa terveyden ollessa alle 25.}}"
-		"funfact_empty_guns:f"											"{funfact-d1, plural, one{Pelaajalta {s:funfact-player} loppui ammukset käyttäessään {d:funfact-d1} asetta.} other{Pelaajalta {s:funfact-player} loppui ammukset käyttäessään {d:funfact-d1} asetta.}}"
-		"funfact_slow_trigger:f"										"{funfact-d1, plural, one{{s:funfact-player} kuoli ampumatta kertaakaan {d:funfact-d1} aseella.} other{{s:funfact-player} kuoli ampumatta kertaakaan {d:funfact-d1} aseella.}}"
-		"funfact_pickup_bomb:f"											"{funfact-d1, plural, one{{s:funfact-player} asetti pommin, joka oli ollut {d:funfact-d1} joukkuetoverin hallussa.} other{{s:funfact-player} asetti pommin, joka oli ollut {d:funfact-d1} joukkuetoverin hallussa.}}"
-		"funfact_bomb_carriers:f"										"{funfact-d1, plural, one{{s:funfact-player} tappoi {d:funfact-d1} pomminkantajan viimeisen erän aikana.} other{{s:funfact-player} tappoi {d:funfact-d1} pomminkantajaa viimeisen erän aikana.}}"
-		"funfact_knife_bomb_planter:f"									"{s:funfact-player} voitti tappamalla pommin asentajan veitsitasolla."
-		"funfact_bomb_planted_before_kill:f"							"Yksikään pelaaja ei kuollut ennen pommin asettamista."
-		"funfact_failed_bomb_plants:f"									"{funfact-d1, plural, one{{d:funfact-d1} terroristi yritti asettaa pommin erän aikana.} other{{d:funfact-d1} terroristia yritti asettaa pommin erän aikana.}}"
-		"funfact_knife_without_ammo:f"									"{funfact-d1, plural, one{{s:funfact-player} teki {d:funfact-d1} veitsitapon ammusten loputtua.} other{{s:funfact-player} teki {d:funfact-d1} veitsitappoa ammusten loputtua.}}"
-		"funfact_molotov_burns:f"										"{funfact-d1, plural, one{{s:funfact-player} sytytti {d:funfact-d1} pelaajan tuleen.} other{{s:funfact-player} sytytti {d:funfact-d1} pelaajaa tuleen.}}"
-		"funfact_survival_time:f"										"{funfact-d1, plural, one{{s:funfact-player} selviytyi pisimpään: {d:funfact-d1} sekunti.} other{{s:funfact-player} selviytyi pisimpään: {d:funfact-d1} sekuntia.}}"
-		"funfact_pulled_trigger:f"										"{funfact-d1, plural, one{{s:funfact-player} painoi liipaisinta {d:funfact-d1} kerran ottelun aikana.} other{{s:funfact-player} painoi liipaisinta {d:funfact-d1} kertaa ottelun aikana.}}"
-		"funfact_ace:f"													"Täyskaato! {s:funfact-player} tappoi koko vihollisjoukkueen."
-		"funfact_defuse_was_close_call_tenths:f"						"{funfact-d1, plural, one{{s:funfact-player} purki pommin, kun aikaa oli jäljellä 0,{d:funfact-d1} sekuntia.} other{{s:funfact-player} purki pommin, kun aikaa oli jäljellä 0,{d:funfact-d1} sekuntia.}}"
-		"funfact_defuse_was_close_call_hundredths:f"					"{funfact-d1, plural, one{{s:funfact-player} purki pommin, kun aikaa oli jäljellä 0,0{d:funfact-d1} sekuntia.} other{{s:funfact-player} purki pommin, kun aikaa oli jäljellä 0,0{d:funfact-d1} sekuntia.}}"
-		"funfact_defuse_was_close_call_thousandths:f"					"{funfact-d1, plural, one{{s:funfact-player} purki pommin, kun aikaa oli jäljellä 0,00{d:funfact-d1} sekuntia.} other{{s:funfact-player} purki pommin, kun aikaa oli jäljellä 0,00{d:funfact-d1} sekuntia.}}"
-		"mapwinrecord_graph_title:f"									"{f:0:wins, plural, one{viimeisin voitto} other{ viimeisintä voittoa}}"
-		"CSGO_Recipe_Count_Items_Selected:f"							"{count, plural, one{<b>{d:count}</b> esine valittu} other{<b>{d:count}</b> esinettä valittu}}"
-		"CSGO_Recipe_Count_Items_Remaining:f"							"{count, plural, one{<b>{d:count}</b> esine jäljellä} other{<b>{d:count}</b> esinettä jäljellä}}"
-		"CSGO_Recipe_TradeUp_Items_Remain:f"							"{count, plural, one{{d:count} valittu vaihdettavaksi} other{{d:count} valittu vaihdettavaksi}}"
-		"CSGO_Recipe_TradeUp_Items_XofY:f"								"{count, plural, one{{d:count}/{d:recipecount} valittu vaihdettavaksi} other{{d:count}/{d:recipecount} valittu vaihdettaviksi}}"
-		"CSGO_Recipe_TradeUp_Items_Inv:f"								"{count, plural, one{{d:count} vaihdettavissa} other{{d:count} vaihdettavissa}}"
-		"CSGO_RemoveKeychainToolCharges_Reward:f"						"{item_count, plural, one{+{d:item_count} riipuksen poistaja} other{+{d:item_count} riipuksen poistajaa}}"
-		"SFUI_Store_Offer_Days_Remaining:f"								"{daysremaining, plural, one{{d:daysremaining} päivä jäljellä} other{{d:daysremaining} päivää jäljellä.}}"
-		"SFUI_Store_Offer_Days_Remaining_claim:f"						"{daysremaining, plural, one{{d:daysremaining} päivä aikaa} other{{d:daysremaining} päivää aikaa}}"
-		"SFUI_Store_Offer_Days_Remaining_bid:f"							"{daysremaining, plural, one{{d:daysremaining} päivä aikaa tehdä tarjous} other{{d:daysremaining} päivää aikaa tehdä tarjous}}"
-		"SFUI_Store_Offer_Days_Remaining_last_claim:f"					"Viimeinen mahdollisuus lunastaa tarjous"
-		"SFUI_Store_Offer_Days_Remaining_last_bid:f"					"Viimeinen mahdollisuus tehdä tarjous"
-		"SFUI_Store_Timer_Week:f"										"{f:0:value, plural, one{{f:0:value} viikko} other{{f:0:value} viikkoa}}"
-		"SFUI_Store_Timer_Day:f"										"{f:0:value, plural, one{{f:0:value} päivä} other{{f:0:value} päivää}}"
-		"SFUI_Store_Timer_Hour:f"										"{f:0:value, plural, one{{f:0:value} tunti} other{{f:0:value} tuntia}}"
-		"SFUI_Store_Timer_Min:f"										"{f:0:value, plural, one{{f:0:value} minuutti} other{{f:0:value} minuuttia}}"
-		"SFUI_Store_Timer_Sec:f"										"{f:0:value, plural, one{{f:0:value} sekunti} other{{f:0:value} sekuntia}}"
-		"CSGO_Watch_Minute:f"											"{f:0:value, plural, one{{f:0:value} minuutti} other{{f:0:value} minuuttia}}"
-		"xpshop_new_items:f"											"{new-count, plural, one{Uusi esine!} other{Uusia esineitä!}}"
-		"xpshop_popup_clear_n_tracks:f"									"{completed_tracks_count, plural, one{Nollaa {d:completed_tracks_count} suoritettu passi} other{Nollaa {d:completed_tracks_count} suoritettua passia}}"
-		"xpshop_popup_clear_n_tracks_text:f"							"{completed_tracks_count, plural, one{Olet ansainnut kaikki passin asevarastokrediitit.<br><br>Nollaamalla sen voit aktivoida uuden asevarastopassin. Nollaaminen ei vaikuta asevarastokrediittisaldoon.} other{Olet ansainnut kaikki asevarastokrediitit {d:completed_tracks_count} asevarastopassista.<br><br>Nollaamalla {d:completed_tracks_count} asevarastopassia voit aktivoida uuden passin. Nollaaminen ei vaikuta asevarastokrediittisaldoon.}}"
-		"xpshop_redeem_bid_batchover:f"									"{hours_until_bid_batch, plural, one{Tämän erän tarjouskilpailu on päättynyt. Parhaan tarjouksen tehneille käyttäjille ilmoitetaan ratkaisun valmistuttua. Palaa huomenna tekemään tarjouksia seuraavasta erästä. Huutokauppa avataan uudelleen {d:hours_until_bid_batch} tunnin kuluttua. } other{Tämän erän tarjouskilpailu on päättynyt. Parhaan tarjouksen tehneille käyttäjille ilmoitetaan ratkaisun valmistuttua. Palaa huomenna tekemään tarjouksia seuraavasta erästä. Huutokauppa avataan uudelleen {d:hours_until_bid_batch} tunnin kuluttua.}}"
-		"xpshop_redeem_not_enough_stars:f"								"{stars_needed, plural, one{Tarvitset vielä {d:stars_needed} asevarastokrediitin. Ansaitse ne pelaamalla aktiivisella asevarastopassilla. } other{Tarvitset vielä {d:stars_needed} asevarastokrediittiä. Ansaitse ne pelaamalla aktiivisella asevarastopassilla.}}"
-		"Panorama_PlayerDetails_Commendations_Left:f"					"{num_token, plural, one{Voit kehua vielä {d:num_token} pelaajaa tänään} other{Voit kehua vielä {d:num_token} pelaajaa tänään}}"
-		"SFUI_BuyMenu_CanOnlyCarryXGrenades:f"							"{n1, plural, one{Voit kantaa vain {s:s1} kranaatin} other{Voit kantaa vain {s:s1} kranaattia}}"
-		"SFUI_BuyMenu_MaxItemsOfType:f"									"{n1, plural, one{Voit kantaa vain {s:s1} tämäntyyppisen esineen} other{Voit kantaa vain {s:s1} tämäntyyppistä esinettä}}"
-		"SFUI_BuyMenu_MaxItemsOfTypePurchased:f"						"{n1, plural, one{Voit ostaa enintään {s:s1} tämäntyyppisen esineen} other{Voit ostaa enintään {s:s1} tämäntyyppistä esinettä}}"
-		"SFUI_BuyMenu_ReachedWeaponsExpertLimit:f"						"{n1, plural, one{{s:s1} jo ostettu tämän ottelun aikana} other{{s:s1} jo ostettu tämän ottelun aikana}}"
-		"cs_rating_wins_needed:f"										"{winsneeded, plural, one{Voita vielä <b>{d:winsneeded}</b> ottelu} other{Voita vielä <b>{d:winsneeded}</b> ottelua}}"
+>{d:winsneeded}</b> ottelu} other{Voita vielä <b>{d:winsneeded}</b> ottelua}}"
 		"cs_rating_wins_needed_verbose:f"								"{winsneeded, plural, one{Voita vielä <b>{d:winsneeded}</b> ottelu CS-sijoituksen vakiinnuttamiseksi} other{Voita vielä <b>{d:winsneeded}</b> ottelua CS-sijoituksen vakiinnuttamiseksi}}"
 		"cs_rating_wins_needed_verbose_intro:f"							"{winsneeded, plural, one{Voita <b>{d:winsneeded}</b> ottelu CS-sijoituksen vakiinnuttamiseksi} other{Voita <b>{d:winsneeded}</b> ottelua CS-sijoituksen vakiinnuttamiseksi}}"
 		"cs_rating_need_wins:f"											"{wins-needed, plural, one{Tarvitaan {d:wins-needed} voitto} other{Tarvitaan {d:wins-needed} voittoa}}"

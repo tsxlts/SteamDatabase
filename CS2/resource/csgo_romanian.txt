@@ -2425,6 +2425,7 @@
 		"NewItemMethod_CommunityMarketPurchase"	"Ai primit de pe piața comunitară:"
 
 		"ItemHistory_ActionWithTime"									"%s1 în %s2"
+		"ItemHistory_Action_GSCreate"									"Creat"
 		"ItemHistory_Action_GenericAdd"									"Adăugat"
 		"ItemHistory_Action_GenericRemove"								"Înlăturat sau modificat"
 		"ItemHistory_Action_Traded"										"Dat la schimb"
@@ -2488,6 +2489,10 @@
 		"ItemHistory_Action_TournamentDrop"								"Ai primit un suvenir"
 		"ItemHistory_Action_TemplateItemGrant"							"Obținut"
 		"ItemHistory_Action_Market_Add"									"Primit din Piața comunitară"
+		"ItemHistory_Action_Market_Sealed"								"Listare creată pe piața comunitară Steam"
+		"ItemHistory_Action_Market_Unsealed"							"Listare eliminată de pe piața comunitară"
+		"ItemHistory_Action_Market_SoldSealed"							"Vândut pe piața comunitară Steam"
+
 		"ItemHistory_Transaction_Delete"								"Ai șters"
 		"ItemHistory_Transaction_Craft"									"Fabricat"
 		"ItemHistory_Transaction_UnlockCrate"							"A descuiat un container"
@@ -2644,6 +2649,7 @@
 		"Attrib_NeverTradableButHasAfterDate1"		"Acest obiect nu poate fi dat la schimb sau listat pe piață."
 		"Attrib_NeverTradableButHasAfterDate2"		"După utilizare, obiectele primite nu vor putea fi date la schimb până la %s1"
 		"Attrib_TradeProtectedEscrowDate"			"⇆ Acest obiect este sigilat și nu poate fi consumat, modificat sau transferat până la %s1."
+		"Attrib_TradeProtectedEscrowMarket"			"⇆ Acest obiect este listat pe piața comunitară Steam și nu poate fi consumat sau modificat cât timp listarea este activă."
 		"Attrib_TradableAfterDate"					"Poate fi dat la schimb după %s1"
 		"Attrib_TradableMarketableAfterDate"		"Poate fi dat la schimb/listat pe piață după %s1"
 		"Attrib_MarketableWithRestrictions"			"Poate fi listat imediat pe piața comunitară Steam"
@@ -4359,6 +4365,8 @@ Acest trofeu a fost acordat sfertfinaliștilor campionatului de CS:GO ELEAGUE Bo
 		
 		"CSGO_crate_community_36"				"Terminal Genesis sigilat"
 		"CSGO_crate_community_36^volatile"		"Terminal Genesis activ"
+		"CSGO_crate_community_37"				"Terminal Dead Hand sigilat"
+		"CSGO_crate_community_37^volatile"		"Terminal Dead Hand activ"
 		"CSGO_crate_keychain_pack_kc_drboom_capsule"	    	"Colecție de brelocuri Dr Boom"
 		"CSGO_crate_keychain_pack_kc_drboom_capsule_desc"		"Această colecție conține o varietate de brelocuri tematice Dr Boom."
 		"CSGO_crate_keychain_pack_kc_drboom_capsule_short"	    "Brelocuri Dr Boom"
@@ -5341,6 +5349,7 @@ Colecția Spectrum"
 		"CSGO_set_community_36"					"Colecția Genesis"
 		"CSGO_set_timed_drops_exuberant"		"Colecția Harlequin"
 		"CSGO_set_timed_drops_achroma"			"Colecția Achroma"
+		"CSGO_set_community_37"					"Colecția Dead Hand"
 		/////////////////
 		// lootlist override strings
 		//////////////////
@@ -27191,6 +27200,11 @@ Colecția Spectrum"
 	"CSGO_TournamentChallenge_bud2025_semifinals_pickem" "Realizează un pronostic corect pentru semifinale"
 	"CSGO_TournamentChallenge_bud2025_grandfinal_pickem" "Realizează un pronostic corect pentru marea finală"
 
+	"EventItemDesc_bud2025_sticker_team" ""
+	"EventItemDesc_bud2025_sticker_org" ""
+	"EventItemDesc_bud2025_graffiti_team" ""
+	"EventItemDesc_bud2025_graffiti_org" ""
+
 	"StickerKit_bud2025_team_furi" "FURIA | Budapest 2025"
 	"StickerKit_bud2025_team_furi_embroidered" "FURIA (Brodat) | Budapest 2025"
 	"StickerKit_bud2025_team_furi_holo" "FURIA (Holo) | Budapest 2025"
@@ -34539,8 +34553,82 @@ Colecția Spectrum"
 		"PaintKit_m4a1s_quick_liquidation"				"Acest M4A1-S a fost vopsit personalizat cu un strat de bază întunecat și accente de culoare roșie și albastră selectate cu multă grijă și pare că strălucește sub lumina ambientală.\n\n<i>Reflecție calmă</i>"
 		
 		"PaintKit_aug_trigger_discipline_velco"			"Un model izometric albastru a fost aplicat. Arma a fost finisată cu accente portocalii.\n\n<i>Răbdarea este propria sa recompensă</i>"
-
-// END COMMUNITY_36
+"PaintKit_glove_driver_knit_argyle_green_Tag"					"Hand Sweaters"
+		
+		"PaintKit_glove_driver_ostrich_purple_Tag"						"Plum Quill"
+		
+		"PaintKit_glove_driver_silk_dragon_white_Tag"					"Wave Chaser"
+		
+		"PaintKit_glove_brocade_crane_Tag"								"Brocade Crane"
+		
+		"PaintKit_glove_driver_brocade_flower_red_Tag"					"Brocade Flowers"
+		
+		"PaintKit_glove_driver_dragon_scale_red_Tag"					"Dragon Fists"
+		
+		"PaintKit_glove_driver_embroidered_flowers_teal_Tag"			"Garden"
+		
+		"PaintKit_glove_driver_scallop_metallic_blue_Tag"				"Seigaiha"
+		
+		"PaintKit_glove_sport_velvet_red_Tag"							"Occult"
+		
+		"PaintKit_glove_sport_beadwork_diamonds_purple_Tag"				"Violet Beadwork"
+		
+		"PaintKit_glove_sport_camo_winter_Tag"							"Frosty"
+		
+		"PaintKit_glove_sport_pinstripe_black_Tag"						"Creme Pinstripe"
+		
+		"PaintKit_glove_sport_racer_red_Tag"							"Red Racer"
+		
+		"PaintKit_glove_sport_tech_gradient_bright_Tag"					"Ultra Violent"
+		
+		"PaintKit_glove_specialist_abstract_green_Tag"					"Lime Polycam"
+		
+		"PaintKit_glove_specialist_graffiti_black_Tag"					"Blackbook"
+		
+		"PaintKit_glove_specialist_quilted_black_Tag"					"Chocolate Chesterfield"
+		
+		"PaintKit_glove_specialist_quilted_white_Tag"					"Pillow Punchers"
+		
+		"PaintKit_glove_specialist_sunburst_red_Tag"					"Sunburst"
+		
+		"PaintKit_glove_specialist_dragon_blue_Tag"						"Cloud Chaser"
+		
+		"PaintKit_glove_specialist_wave_blue_Tag"						"Big Swell"
+"PaintKit_glock_jdpeek_Tag"										"Fully Tuned"
+					
+		"PaintKit_awp_queens_gambit_Tag"								"Queen's Gambit"
+					
+		"PaintKit_p90_deathgaze_Tag"									"Deathgaze"
+					
+		"PaintKit_p250_kintsugi_Tag"									"Kintsugi"
+					
+		"PaintKit_mp9_urban_sovereign_Tag"								"Urban Sovereign"
+					
+		"PaintKit_mp7_amberline_Tag"									"Amberline"
+					
+		"PaintKit_bizon_rmx_Tag"										"RMX"
+					
+		"PaintKit_ak47_crane_flight_Tag"								"Crane Flight"
+					
+		"PaintKit_deagle_firebreathing_Tag"								"Firebreathing"
+					
+		"PaintKit_ump_fragment_Tag"										"Fragment"
+					
+		"PaintKit_sawedoff_fusion_Tag"									"Fusion"
+					
+		"PaintKit_galil_galigator_Tag"									"Galigator"
+					
+		"PaintKit_fiveseven_polymer_dark_Tag"							"Dark Polymer"
+					
+		"PaintKit_usps_silent_boy_Tag"									"Silent Shot"
+					
+		"PaintKit_m4a4_zubastick_bw_Tag"								"Zubastick"
+					
+		"PaintKit_m4a1s_electrum_Tag"									"Electrum"
+					
+		"PaintKit_m249_blocks_purple_Tag"								"Bock Blocks"
+		
+// END COMMUNITY_37 WEAPONS
 
 // OVERPASS_2024
 				
@@ -36671,6 +36759,7 @@ Această cutie conține 17 finisaje de arme create de comunitate din colecția S
 		"SFUI_InvContextMenu_preview_musickit"       "Inspectează - Preaudiează muzica"
 		"SFUI_InvContextMenu_decodable"     "Deschide containerul"
 		"SFUI_InvContextMenu_sell"			"Vinde pe piața comunitară"
+		"SFUI_InvContextMenu_marketlisting"	"Vezi listarea de pe piața comunitară"
 		"SFUI_InvContextMenu_openloadout"   "Vezi slotul pentru echipamentul activ"
 		"SFUI_InvContextMenu_inspectcase"	"Deschide..."
 		"SFUI_InvContextMenu_useitem"	    "Folosește obiectul"
@@ -40053,6 +40142,8 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"SFUI_Settings_Network_Bandwidth_30mbps"   "3 Mbps"
 		"SFUI_Settings_Network_Bandwidth_40mbps"   "4 Mbps"
 		"SFUI_Settings_Network_Bandwidth_Max"	   "Nerestricționată"
+
+		"SFUI_Settings_Volatile_Limit_Unlimited"	"nelimitat"
 
 		"SFUI_FeatureUnavailableDuringBeta"		"Indisponibil pe perioada testării beta"
 
@@ -45146,6 +45237,7 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"inv_context_remove_patch"			"Înlăturare ecuson brodat"		
 		"inv_context_openloadout"			"Vezi în echipamentul activ"
 		"inv_context_sell"					"Vinde pe piața comunitară"
+		"inv_context_marketlisting"			"Vezi listarea de pe piața comunitară"
 		"inv_context_tradeup_add"			"Folosește într-un contract de îmbunătățire"
 		"inv_context_tradeup_remove"		"Elimină din contractul de îmbunătățire"
 		"inv_context_open_contract"			"Deschide contractul"
@@ -45203,6 +45295,7 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"inv_session_prop_updated"			"Actualizat!"
 		"inv_session_prop_quest_reward"		"Recompensă!"
 		"inv_session_prop_xpshopredeem"		"Nou!"
+		"inv_session_prop_marketlisting"	"<img src='file://{images}/icons/ui/coupon.svg' class='item-tile__onmarket'/> Pe piață"
 		"inv_equipped_item"					"Echipat <b>{s:name}</b> pentru <b>{s:team}</b>"
 		"inv_equipped_item_noteam"			"<b>{s:name}</b> - echipat"
 		"inv_unequipped_item"				"<b>{s:name}</b> - dezechipat"
@@ -45307,6 +45400,7 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"popup_delete_title"	"{s:itemname}"
 		"popup_delete_desc"		"Sigur vrei să ștergi acest obiect?"
 		"popup_delete_warning"	"Ștergerea unui obiect este definitivă."
+		"popup_delete_tooltip"	"Menține apăsat pentru a șterge acest obiect. Ștergerea unui obiect este definitivă."
 		"popup_delete_button"	"Șterge obiectul"
 
 		"popup_usegift_title"	"Oferă {s:itemname}"
@@ -48128,6 +48222,8 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"user_btn_purchase_desc_purchase"		"Menține apăsat pentru a achiziționa acest obiect. După achiziție, terminalul va fi înlăturat."
 		"user_btn_purchase_desc_continue"		"Menține apăsat pentru a refuza această ofertă și a solicita una nouă."
 		"user_btn_purchase_desc_end"		"Refuză oferta finală și înlătură terminalul."
+		"user_btn_purchase_title"			"{s:offer-count} ofertă"
+		"user_btn_purchase_final_title"		"<b>Oferta finală</b>"
 		"user_btn_decline_desc"				"Refuză oferta aceasta și solicită una nouă."
 		"user_btn_accept"		"Accept oferta la <b>{s:price}</b>"
 		"user_btn_accept_final"	"Accept oferta finală la <b>{s:price}</b>"
@@ -48149,6 +48245,18 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"user_btn_pause"		"Întrerupe înțelegerea"
 		"user_btn_end"			"Refuză oferta finală"
 
+		"user_message_limit_0"		"Pot merge până la <b>{s:limit-setting}</b>."
+		"user_message_limit_1"		"Ce zici de un buget de <b>{s:limit-setting}</b>?"
+		"user_message_limit_2"		"Un buget de <b>{s:limit-setting}</b> îmi convine."
+		"user_message_limit_3"		"Un buget de <b>{s:limit-setting}</b> este în regulă."
+		"user_message_limit_unlimited_0"	"<b>Fără limită</b>, vreau să vad totul."
+		"user_message_limit_unlimited_1"	"<b>Cec în alb</b>. Nu-ți face griji despre bugetul meu."
+		"user_message_limit_unlimited_2"	"Sunt aici pentru a cumpăra. <b>Arată-mi totul</b>."
+		"user_message_limit_unlimited_3"	"Dacă trage, mă interesează.<b>Nicio limită</b>."
+		"user_message_limit_unlimited_4"	"Cerul este limita."
+		"offer_limit_setting"		"Bugetul pentru oferte: {s:limit}"
+		"offer_limit_setting_interface"		"Bugetul pentru oferte: {s:limit} <img src='file://{images}/icons/ui/expand.svg' class='expand-icon'/>"
+
 		"dealer_offer_Unknown"							"-"
 		"dealer_offer_1"								"Prima"
 		"dealer_offer_2"								"A doua"
@@ -48165,23 +48273,31 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"declined_offer_tooltip"	"Ofertă refuzată."
 		"future_offer_tooltip"		"Ofertă nedezvăluită încă."
 		"laptop_expiration_tooltip"		"Timpul rămas până la expirarea acestui terminal Uplink și a ofertelor sale."
+		"laptop_max_offer_tooltip"		"Setează-ți bugetul pentru oferte. Vei primi numai oferte care se încadrează în buget. Poți modifica oricând valoarea bugetului."
 		"collection_xp_tooltip"			"Câștigă puncte de experiență pentru vizualizarea ofertelor din această colecție. Deschide pentru a vedea progresul și revendica punctele de experiență."
+		"terminal_offer_limit_tooltip"		"Actualizează-ți bugetul pentru oferte. Traficantul de arme va veni doar cu oferte care se încadrează în buget."
 		"popup_lootlist_title"			"PE pentru catalogul colecției"
 		"popup_lootlist_desc"			"Câștigă puncte de experiență pentru vizualizarea ofertelor din această colecție."
-		"popup_lootlist_progress"		"{d:seen}/{d:total} oferte văzute"
+
+		"popup_lootlist_progress:f"      "Ai văzut {total, plural, one{singura ofertă} few{{d:seen}/{d:total} oferte} other{{d:seen}/{d:total} de oferte}}"
 		"popup_lootlist_claim_xp"		"Obține bonusul de PE"
 		"popup_lootlist_claim_ww"		"Se revendică PE..."
-		"popup_lootlist_claim_ok"		"✅ PE revendicate"
+		"popup_lootlist_claim_ok"		"✔ PE revendicate"
 		"popup_vpn_status_connected"	"Stare: conectat la o rețea securizată"
 		"popup_vpn_status_disconnected"	"Stare: deconectat"
 		"popup_signal_full" 			"Semnal plin"
 		"popup_signal_ok" 				"Semnal puternic"
+		"popup_offer_limit_desc"		"Actualizează-ți bugetul pentru fiecare dintre ofertele viitoare."
 		"laptop_battery_tooltip" 		"Baterie: {d:percent}%"
 		"laptop_original_seal_tooltip" 	"Orice obiect achiziționat prin intermediul acestui terminal Uplink va veni cu un certificat de proprietar inițial, care este valabil cât timp ești proprietarul acestuia."
 		"laptop_zoom_tooltip" 			"Folosește rotița mouse-ului pentru zoom."
 		"laptop_pan_tooltip" 			"Menține apăsată tasta „Shift” și trage pentru a deplasa camera."
 		"laptop_pricing_tooltip"		"Prețurile sunt globale și ajustate automat în funcție de cererea pentru fiecare obiect din această colecție."
 
+		"dealer_message_set_offer_limit_0"		"Înainte de toate, care este bugetul tău maxim?"
+		"dealer_message_set_offer_limit_1"		"Să ne punem de acord.<!--.25--> Ce buget ai?"
+		"dealer_message_set_offer_limit_2"		"Înainte de a începe...<!--.25--> Despre ce buget vorbim? Cât vrei să cheltuiești?"
+		
 		"dealer_message_start_0"  	"Totul se negociază cu clientul.<!--.25-->Am tot ce-ți trebuie. Fără hârțogăraie."
 		"dealer_message_start_1"  	"Am un transport de marfă de pe piața gri, fără acte.<!--.25-->Nu-ți face griji, au uitat toți de armele astea. Sunt scoase din circulație de ani întregi și nu le mai caută nimeni.<!--.25-->În plus, dacă te interesează, încă mai trag în direcția în care le îndrepți."
 		"dealer_message_start_2"  	"Vameșii din Ahradan au pus azi-dimineață mâna pe transportul meu. Am încercat să o dreg cu o poveste jalnică despre faptul că transport echipament medical vital pentru niște muribunzi... <!--.25-->N-au fost impresionați de poveste, însă servieta plină cu bani a fost totuși pe placul lor.<!--.25-->Ce ai zice să aruncăm o privire la aparatele astea de dializă înainte de a le livra orfanilor."
@@ -48189,6 +48305,7 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"dealer_message_start_4"  	"Toată marfa de astăzi este curată.<!--.25-->Nimeni nu va știi că nu ești primul care pune mâna pe ele."
 		"dealer_message_start_5"  	"Marfă fantomă, neștanțată, gata de utilizare.<!--.25-->Probabil că un tribunal militar ar folosi-o ca probă.<!--.25-->Amândoi știm totuși că sunt niște adevărate capodopere."
 		"dealer_message_start_6"  	"Toată marfa asta este dintr-un lot de piese exotice eliberat de la o unitate ceremonială.<!--.25-->Au fost folosite mult la mărșăluit, dar n-au tras niciun foc."
+		"dealer_message_start_7"  	"Ceilalți clienți vor întotdeauna să afle de unde provine marfa. Urăsc când fac asta.<!--.25-->Tot ce trebuie să te intereseze este dacă e cea mai bună marfă de pe piață.<!--.25-->Ghici ce: chiar este."
 		"dealer_message_start_8"  	"Acordul de pace din Drosvik. Ador pacea.<!--.25-->Asta pentru că știu un general plin de datorii și un depozit de arme care adună praf.<!--.25-->Vreau să spun că...<!--.25-->Ador pacea și pentru că e bună, evident. Toate acele vieți nevinovate și...<!--.25-->Ce tot bolborosesc aici, doar nu te interesează."
 		"dealer_message_start_9"  	"Lotul ăsta e plin de piese exotice sustrase din piața gri.<!--.25-->Calibre nu tocmai normale, deci nu sunt pentru amatori. O să le iubești."
 		"dealer_message_start_10"  	"Ce rușine.<!--.25-->Cred că am etichetat greșit o ladă în avizul meu de expediție.<!--.25-->Bine, poate câteva zeci de lăzi.<!--.25-->Ce-ar fi să mă ajuți să scap de ele înainte ca autoritățile portuare să le inspecteze."
@@ -48379,10 +48496,29 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"dealer_message_addition_factory_new_2"	"<!--.25-->Direct din depozit. Este nouă."
 		"dealer_message_addition_factory_new_3"	"<!--.25-->Arma asta e nouă. N-a tras niciun foc."
 		
+		"dealer_message_limit_first_time_0"		"Bine de știut, îți voi arăta doar oferte de până la {s:limit}.<!--.25--> Hai să vedem de ce ai nevoie."
+		"dealer_message_limit_first_time_2"		"Doar oferte sub {s:limit}. Voi ține cont de asta.<!--.25--> Timpul trece, așa că să-i dăm bătaie."
+		"dealer_message_limit_first_time_3"		"Notat. Actualizat.<!--.25--> Să-i dăm drumul."
+		"dealer_message_limit_first_time_unlimited_0"		"Buget nelimitat. Excelent. De acum înainte, îți voi arăta întregul catalog actual.<!--.25--> Timpul trece, așa că să-i dăm bătaie."
+		"dealer_message_limit_first_time_unlimited_1"		"Înțeles. Buget nelimitat. Trecem la chestii serioase.<!--.25--> Hai să vedem de ce ai nevoie."
+
+		"dealer_message_limit_0"				"Bine de știut. Îți voi arăta doar oferte de până la {s:limit}."
+		"dealer_message_limit_1"				"Doar oferte sub {s:limit}. Voi ține cont de asta."
+		"dealer_message_limit_2"				"Ajustez parametrii. Doar oferte până la {s:limit}."
+		"dealer_message_limit_3"				"Oferte până la {s:limit}. Notat. Actualizat."
+		"dealer_message_limit_4"				"Voi alege doar ce se încadrează în bugetul tău de: {s:limit}."
+		"dealer_message_limit_5"				"În regulă, am setat noul buget de: {s:limit}"
+		"dealer_message_limit_6"				"Am înțeles. Resetez filtrul pentru oferte. Noul buget: {s:limit}."
+		"dealer_message_limit_unlimited_0"		"Buget nelimitat. Excelent. De acum înainte, îți voi arăta întregul catalog actual."
+		"dealer_message_limit_unlimited_1"		"Am înțeles. Buget nelimitat. Dacă găsesc ceva exotic, am să ți-l arăt negreșit."
+		"dealer_message_limit_unlimited_2"		"Sună perfect. Dacă apare ceva care corespunde criteriilor tale, nu voi ezita să ți-l arăt."
+		"dealer_message_limit_unlimited_3"		"Înțeles. Buget nelimitat. Trecem la chestii serioase."
+
 		"system_dealer_left_chat_0"				"Traficantul a părăsit chatul."
 		"system_dealer_join_chat_0"				"{s:collection} – ofertele traficantului de arme.<!--1.25-->Traficantul s-a conectat."
 		"system_user_reject_offer_0"			"{s:user-name} a refuzat oferta."
 
+		"system_user_updated_offer_limit_0"			"Bugetul a fost actualizat la: {s:limit}. Poți actualiza bugetul în orice moment."
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -48617,8 +48753,8 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"quest_11015_var_desc:p{mission-points}"	 	"Câștigă o rundă în <b>{s:gamemode}: {s:location}</b>.#|#Câștigă runde în <b>{s:gamemode}: {s:location}</b>.#|#Câștigă runde în <b>{s:gamemode}: {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Câștigă o rundă#|#Câștigă runde#|#Câștigă runde"
 
-// crow_mask_51633_comment
-// crow_mask_51634_comment
+// crow_mask_51765_comment
+// crow_mask_51766_comment
 }
 
 
@@ -48627,51 +48763,7 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 }
 
 
-undă#|#Câștigă runde#|#Câștigă runde"
-		
-		"quest_11015_var_desc:p{mission-points}"	 	"Câștigă o rundă în <b>{s:gamemode}: {s:location}</b>.#|#Câștigă runde în <b>{s:gamemode}: {s:location}</b>.#|#Câștigă runde în <b>{s:gamemode}: {s:location}</b>."
-		"quest_11015_var_ingame:p{mission-points}"		"Câștigă o rundă#|#Câștigă runde#|#Câștigă runde"
-
-// crow_mask_51588_comment
-// crow_mask_51589_comment
-}
-
-
-
-
-}
-
-
-orist_accuracy:f"						"{funfact-d1, plural, one{{s:funfact-player} a avut o precizie de {d:funfact-d1}%, în timp ce media echipei a fost de {d:funfact-d2}%.} few{{s:funfact-player} a avut o precizie de {d:funfact-d1}%, în timp ce media echipei a fost de {d:funfact-d2}%.} other{{s:funfact-player} a avut o precizie de {d:funfact-d1}%, în timp ce media echipei a fost de {d:funfact-d2}%.}}"
-		"funfact_fallback1:f"											"Tortul este o minciună."
-		"funfact_fallback2:f"											"Neinteresant."
-		"funfact_draw:f"												"Meciul a fost repornit pe baza voturilor jucătorilor."
-		"funfact_broke_windows:f"										"{funfact-d1, plural, one{{s:funfact-player} a spart o fereastră.} few{{s:funfact-player} a spart {d:funfact-d1} ferestre.} other{{s:funfact-player} a spart {d:funfact-d1} de ferestre.}}"
-		"funfact_nightvision_damage:f"									"{funfact-d1, plural, one{{s:funfact-player} a cauzat răni în valoare de un punct având activată vederea nocturnă.} few{{s:funfact-player} a cauzat răni în valoare de {d:funfact-d1} puncte având activată vederea nocturnă.} other{{s:funfact-player} a cauzat răni în valoare de {d:funfact-d1} de puncte având activată vederea nocturnă.}}"
-		"funfact_defused_with_dropped_kit:f"							"{s:funfact-player} a dezamorsat bomba folosind o trusă de dezamorsare găsită pe jos."
-		"funfact_killed_half_of_enemies:f"								"{funfact-d1, plural, one{{s:funfact-player} a ucis {d:funfact-d1}% din echipa adversă.} few{{s:funfact-player} a ucis {d:funfact-d1}% din echipa adversă.} other{{s:funfact-player} a ucis {d:funfact-d1}% din echipa adversă.}}"
-		"funfact_knife_level_reached:f"									"{funfact-d1, plural, one{Un jucător a ajuns la nivelul cuțitului de aur.} few{{d:funfact-d1} jucători au ajuns la nivelul cuțitului de aur.} other{{d:funfact-d1} de jucători au ajuns la nivelul cuțitului de aur.}}"
-		"funfact_killed_before_dying:f"									"{funfact-d1, plural, one{{s:funfact-player} a ucis un jucător înainte de a fi omorât.} few{{s:funfact-player} a ucis {d:funfact-d1} jucători înainte de a fi omorât.} other{{s:funfact-player} a ucis {d:funfact-d1} de jucători înainte de a fi omorât.}}"
-		"funfact_respawned:f"											"{funfact-d1, plural, one{{s:funfact-player} a revenit o dată în timpul meciului.} few{{s:funfact-player} a revenit de {d:funfact-d1} ori în timpul meciului.} other{{s:funfact-player} a revenit de {d:funfact-d1} de ori în timpul meciului.}}"
-		"funfact_default_weapon:f"										"{s:funfact-player} a câștigat runda fără să ia vreo armă."
-		"funfact_rounds_without_dying:f"								"{funfact-d1, plural, one{{s:funfact-player} a rezistat o rundă fără să moară.} few{{s:funfact-player} a rezistat {d:funfact-d1} runde consecutive fără să moară.} other{{s:funfact-player} a rezistat {d:funfact-d1} de runde consecutive fără să moară.}}"
-		"funfact_taser_kill:f"											"{funfact-d1, plural, one{{s:funfact-player} a electrocutat un jucător.} few{{s:funfact-player} a electrocutat {d:funfact-d1} jucători.} other{{s:funfact-player} a electrocutat {d:funfact-d1} de jucători.}}"
-		"funfact_ticking_time:f"										"{funfact-d1, plural, one{Teroriștii au câștigat în ciuda faptului că un contraterorist a încercat să dezamorseze bomba.} few{Teroriștii au câștigat în ciuda faptului că {d:funfact-d1} contrateroriști au încercat să dezamorseze bomba.} other{Teroriștii au câștigat în ciuda faptului că {d:funfact-d1} de contrateroriști au încercat să dezamorseze bomba.}}"
-		"funfact_ct_win_time:f"											"{funfact-d1, plural, one{Contrateroriștii au eliminat echipa teroristă într-o secundă.} few{Contrateroriștii au eliminat echipa teroristă în {d:funfact-d1} secunde.} other{Contrateroriștii au eliminat echipa teroristă în {d:funfact-d1} de secunde.}}"
-		"funfact_ter_win_time:f"										"{funfact-d1, plural, one{Teroriștii au eliminat echipa contrateroristă într-o secundă.} few{Teroriștii au eliminat echipa contrateroristă în {d:funfact-d1} secunde.} other{Teroriștii au eliminat echipa contrateroristă în {d:funfact-d1} de secunde.}}"
-		"funfact_bots_assumed:f"										"{funfact-d1, plural, one{{s:funfact-player} a controlat un bot în runda aceasta.} few{{s:funfact-player} a controlat {d:funfact-d1} boți în runda aceasta.} other{{s:funfact-player} a controlat {d:funfact-d1} de boți în runda aceasta.}}"
-		"funfact_domination:f"											"{s:funfact-player} a dominat cei mai mulți jucători."
-		"funfact_revenge:f"												"{funfact-d1, plural, one{{s:funfact-player} s-a răzbunat pe un jucător.} few{{s:funfact-player} s-a răzbunat pe {d:funfact-d1} jucători.} other{{s:funfact-player} s-a răzbunat pe {d:funfact-d1} de jucători.}}"
-		"funfact_steps_taken:f"											"{funfact-d1, plural, one{{s:funfact-player} a alergat un pas în timpul meciului.} few{{s:funfact-player} a alergat {d:funfact-d1} pași în timpul meciului.} other{{s:funfact-player} a alergat {d:funfact-d1} de pași în timpul meciului.}}"
-		"funfact_quarter_health:f"										"{funfact-d1, plural, one{{s:funfact-player} a ucis un jucător, având mai puțin de 25 viață.} few{{s:funfact-player} a ucis {d:funfact-d1} jucători, având mai puțin de 25 viață.} other{{s:funfact-player} a ucis {d:funfact-d1} de jucători, având mai puțin de 25 viață.}}"
-		"funfact_empty_guns:f"											"{funfact-d1, plural, one{{s:funfact-player} a rămas fără muniție pentru o armă.} few{{s:funfact-player} a rămas fără muniție pentru {d:funfact-d1} arme.} other{{s:funfact-player} a rămas fără muniție pentru {d:funfact-d1} de arme.}}"
-		"funfact_slow_trigger:f"										"{funfact-d1, plural, one{{s:funfact-player} a murit fără să tragă vreun foc cu arma pe care a utilizat-o.} few{{s:funfact-player} a murit fără să tragă vreun foc cu cele {d:funfact-d1} arme pe care le-a utilizat.} other{{s:funfact-player} a murit fără să tragă vreun foc cu cele {d:funfact-d1} de arme pe care le-a utilizat.}}"
-		"funfact_pickup_bomb:f"											"{funfact-d1, plural, one{{s:funfact-player} a armat bomba după ce aceasta s-a aflat în posesia unui coechipier.} few{{s:funfact-player} a armat bomba după ce aceasta s-a aflat în posesia a {d:funfact-d1} coechipieri.} other{{s:funfact-player} a armat bomba după ce aceasta s-a aflat în posesia a {d:funfact-d1} de coechipieri.}}"
-		"funfact_bomb_carriers:f"										"{funfact-d1, plural, one{{s:funfact-player} a ucis un inamic care a avut în posesie bomba în runda aceasta.} few{{s:funfact-player} a ucis {d:funfact-d1} jucători diferiți care au avut în posesie bomba în runda aceasta.} other{{s:funfact-player} a ucis {d:funfact-d1} de jucători diferiți care au avut în posesie bomba în runda aceasta.}}"
-		"funfact_knife_bomb_planter:f"									"{s:funfact-player} a câștigat la nivelul cuțitului de aur ucigând jucătorul care armase bomba."
-		"funfact_bomb_planted_before_kill:f"							"Niciun jucător nu a fost ucis înainte de armarea bombei."
-		"funfact_failed_bomb_plants:f"									"{funfact-d1, plural, one{Un terorist a încercat să armeze bomba în runda aceasta.} few{{d:funfact-d1} teroriști au încercat să armeze bomba în runda aceasta.} other{{d:funfact-d1} de teroriști au încercat să armeze bomba în runda aceasta.}}"
-		"funfact_knife_without_ammo:f"									"{funfact-d1, plural, one{{s:funfact-player} a ucis un inamic folosind cuțitul, după ce a rămas fără muniție.} few{{s:funfact-player} a ucis {d:funfact-d1} inamici folosind cuțitul, după ce a rămas fără muniție.} other{{s:funfact-player} a ucis {d:funfact-d1} de inamici folosind cuțitul, după ce a rămas fără muniție.}}"
+uțitul, după ce a rămas fără muniție.} few{{s:funfact-player} a ucis {d:funfact-d1} inamici folosind cuțitul, după ce a rămas fără muniție.} other{{s:funfact-player} a ucis {d:funfact-d1} de inamici folosind cuțitul, după ce a rămas fără muniție.}}"
 		"funfact_molotov_burns:f"										"{funfact-d1, plural, one{{s:funfact-player} a incendiat un jucător.} few{{s:funfact-player} a incendiat {d:funfact-d1} jucători.} other{{s:funfact-player} a incendiat {d:funfact-d1} de jucători.}}"
 		"funfact_survival_time:f"										"{funfact-d1, plural, one{{s:funfact-player} a supraviețuit cel mai mult: o secundă.} few{{s:funfact-player} a supraviețuit cel mai mult: {d:funfact-d1} secunde.} other{{s:funfact-player} a supraviețuit cel mai mult: {d:funfact-d1} de secunde.}}"
 		"funfact_pulled_trigger:f"										"{funfact-d1, plural, one{{s:funfact-player} a apăsat trăgaciul o dată în meciul anterior.} few{{s:funfact-player} a apăsat trăgaciul de {d:funfact-d1} ori în meciul anterior.} other{{s:funfact-player} a apăsat trăgaciul de {d:funfact-d1} de ori în meciul anterior.}}"

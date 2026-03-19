@@ -1896,8 +1896,8 @@
 		"Player_Killing_Spree_more"		"大杀特杀！！！x%s1"
 		"Player_Killed_Enemy_Leader"	"您击杀了敌方的领队！"
 		"SFUI_Player_Is_Leader"			"你是领队"
-		"SFUI_PlayerCount_Alive_Left:p{left_side_alive}"	"存活#|#存活"
-		"SFUI_PlayerCount_Alive_Right:p{right_side_alive}"	"存活#|#存活"
+		"SFUI_PlayerCount_Alive_Left:f"		"{left_side_alive, plural, one{存活} other{存活}}"
+		"SFUI_PlayerCount_Alive_Right:f"	"{right_side_alive, plural, one{存活} other{存活}}"
 
 		"hostagerescuetime"			"CT通过找到一名人质获得了更多的时间。"
 
@@ -2014,88 +2014,88 @@
 		"winpanel_end_terrorists_planted_bomb"				"T已安放炸弹"
 
 		//Round fun facts
-		"funfact_damage_no_kills:p{funfact-d1}"						"{s:funfact-player} 没有获得击杀，但造成了 {d:funfact-d1} 伤害。#|#{s:funfact-player} 没有获得击杀，但造成了 {d:funfact-d1} 伤害。"
-		"funfact_kills_with_single_grenade:p{funfact-d1}"			"{s:funfact-player} 用一枚投掷物击中 {d:funfact-d1} 名敌人。#|#{s:funfact-player} 用一枚投掷物击中 {d:funfact-d1} 名敌人。"
-		"funfact_kill_defuser"										"{s:funfact-player} 成功阻止了炸弹拆除者。"
-		"funfact_kill_rescuer"										"{s:funfact-player} 击杀了营救人质的CT。"
-		"funfact_killed_enemies:p{funfact-d1}"						"{s:funfact-player} 击杀了 {d:funfact-d1} 个对手。#|#{s:funfact-player} 击杀了 {d:funfact-d1} 个对手。"
-		"funfact_first_kill:p{funfact-d1}"							"在本回合开始后的第 {d:funfact-d1} 秒， {s:funfact-player} 获得第一次击杀。#|#在本回合开始后的第 {d:funfact-d1} 秒， {s:funfact-player} 获得第一次击杀。"
-		"funfact_first_blood:p{funfact-d1}"							"在本回合开始后的第 {d:funfact-d1} 秒， {s:funfact-player} 获得首杀。#|#在本回合开始后的第 {d:funfact-d1} 秒， {s:funfact-player} 获得首杀。"
-		"funfact_short_round:p{funfact-d1}"							"该回合只用了 {d:funfact-d1} 秒！#|#该回合只用了 {d:funfact-d1} 秒！"
-		"funfact_best_accuracy:p{funfact-d1}"						"{s:funfact-player} 的精准度高达 {d:funfact-d1}%。#|#{s:funfact-player} 的精准度高达 {d:funfact-d1}%。"
-		"funfact_knife_kills:p{funfact-d1}"							"{s:funfact-player} 用匕首击杀了一名敌人。#|#{s:funfact-player} 在本回合中获得了 {d:funfact-d1} 匕首击杀。"
-		"funfact_damage_with_grenade:p{funfact-d1}"					"{s:funfact-player} 使用投掷物造成了 {d:funfact-d1} 点总伤害。#|#{s:funfact-player} 使用投掷物造成了 {d:funfact-d1} 点总伤害。"
-		"funfact_kills_grenades:p{funfact-d1}"						"{s:funfact-player} 用投掷物击杀了 {d:funfact-d1} 名敌人。 #|#{s:funfact-player} 用投掷物击杀了 {d:funfact-d1} 名敌人。"
-		"funfact_blind_kills:p{funfact-d1}"							"{s:funfact-player} 在被闪光震撼弹致盲时击杀了一名敌人。#|#{s:funfact-player} 在被闪光震撼弹致盲时击杀了 {d:funfact-d1} 名敌人。"
-		"funfact_kills_with_last_round:p{funfact-d1}"				"{s:funfact-player} 使用最后一颗子弹击杀了一名敌人。#|# 在 {d:funfact-d1} 只剩一颗子弹的情况下，{s:funfact-player} 击杀了一名敌人。"
-		"funfact_kills_headshots:p{funfact-d1}"						"{s:funfact-player} 在该回合内以精准打击方式击杀了 {d:funfact-d1} 名敌人。#|#{s:funfact-player} 在该回合内以精准打击方式击杀了 {d:funfact-d1} 名敌人。"
-		"funfact_kills_with_stattrak_weapon:p{funfact-d1}"			"{s:funfact-player} 的 StatTrak™ 武器在该回合中又多造成了 {d:funfact-d1} 次击杀。#|#{s:funfact-player} 的 StatTrak™ 武器在该回合中又多造成了 {d:funfact-d1} 次击杀。"
-		"funfact_donated_weapons:p{funfact-d1}"						"{s:funfact-player} 在该回合中为队友捐赠了 {d:funfact-d1} 件武器。#|#{s:funfact-player} 在该回合中为队友捐赠了 {d:funfact-d1} 件武器。"
-		"funfact_posthumous_kills_with_grenade:p{funfact-d1}"		"{s:funfact-player} 死后，用投掷物击杀了一名敌人。#|#{s:funfact-player} 死后，用投掷物击杀了 {d:funfact-d1} 名敌人。"
+		"funfact_damage_no_kills:f"									"{s:funfact-player} 没有获得击杀，但造成了 {d:funfact-d1} 伤害。"
+		"funfact_kills_with_single_grenade:f"						"{s:funfact-player} 用一枚投掷物击中 {d:funfact-d1} 名敌人。"
+		"funfact_kill_defuser:f"									"{s:funfact-player} 成功阻止了炸弹拆除者。"
+		"funfact_kill_rescuer:f"									"{s:funfact-player} 击杀了营救人质的CT。"
+		"funfact_killed_enemies:f"									"{s:funfact-player} 击杀了 {d:funfact-d1} 个对手。"
+		"funfact_first_kill:f"										"在本回合开始后的第 {d:funfact-d1} 秒， {s:funfact-player} 获得第一次击杀。"
+		"funfact_first_blood:f"										"在本回合开始后的第 {d:funfact-d1} 秒， {s:funfact-player} 获得首杀。"
+		"funfact_short_round:f"										"该回合只用了 {d:funfact-d1} 秒！"
+		"funfact_best_accuracy:f"									"{s:funfact-player} 的精准度高达 {d:funfact-d1}%。"
+		"funfact_knife_kills:f"										"{s:funfact-player} 在本回合中获得了 {d:funfact-d1} 匕首击杀。"
+		"funfact_damage_with_grenade:f"								"{s:funfact-player} 使用投掷物造成了 {d:funfact-d1} 点总伤害。"
+		"funfact_kills_grenades:f"									"{s:funfact-player} 用投掷物击杀了 {d:funfact-d1} 名敌人。"
+		"funfact_blind_kills:f"										"{s:funfact-player} 在被闪光震撼弹致盲时击杀了 {d:funfact-d1} 名敌人。"
+		"funfact_kills_with_last_round:f"							" 在 {d:funfact-d1} 只剩一颗子弹的情况下，{s:funfact-player} 击杀了一名敌人。"
+		"funfact_kills_headshots:f"									"{s:funfact-player} 在该回合内以精准打击方式击杀了 {d:funfact-d1} 名敌人。"
+		"funfact_kills_with_stattrak_weapon:f"						"{s:funfact-player} 的 StatTrak™ 武器在该回合中又多造成了 {d:funfact-d1} 次击杀。"
+		"funfact_donated_weapons:f"									"{s:funfact-player} 在该回合中为队友捐赠了 {d:funfact-d1} 件武器。"
+		"funfact_posthumous_kills_with_grenade:f"					"{s:funfact-player} 死后，用投掷物击杀了 {d:funfact-d1} 名敌人。"
 		"funfact_knife_in_gunfight"									"{s:funfact-player} 在枪战时亮出了匕首。"
-		"funfact_num_times_jumped:p{funfact-d1}"					"{s:funfact-player} 在本回合中跳跃了 {d:funfact-d1} 次。#|#{s:funfact-player} 在本回合中跳跃了 {d:funfact-d1} 次。"
-		"funfact_fall_damage:p{funfact-d1}"							"{s:funfact-player} 验证了万有引力定律……受到了 {d:funfact-d1} 点坠落伤害。#|#{s:funfact-player} 验证了万有引力定律……受到了 {d:funfact-d1} 点坠落伤害。"
-		"funfact_items_purchased:p{funfact-d1}"						"{s:funfact-player} 购买了 {d:funfact-d1} 件物品。#|#{s:funfact-player} 购买了 {d:funfact-d1} 件物品。"
-		"funfact_won_as_last_member:p{funfact-d1}"					"当队友都阵亡后，{s:funfact-player} 孤军奋战，击杀了 {d:funfact-d1} 名敌人并获得了胜利。#|#当队友都阵亡后，{s:funfact-player} 孤军奋战，击杀了 {d:funfact-d1} 名敌人并获得了胜利。"
+		"funfact_num_times_jumped:f"								"{s:funfact-player} 在本回合中跳跃了 {d:funfact-d1} 次。"
+		"funfact_fall_damage:f"										"{s:funfact-player} 验证了万有引力定律……受到了 {d:funfact-d1} 点坠落伤害。"
+		"funfact_items_purchased:f"									"{s:funfact-player} 购买了 {d:funfact-d1} 件物品。"
+		"funfact_won_as_last_member:f"								"当队友都阵亡后，{s:funfact-player} 孤军奋战，击杀了 {d:funfact-d1} 名敌人并获得了胜利。"
 																	//"%s1 had an accuracy of %s2, while the rest of the Counter-Terrorists had an accuracy of %s2." // <<<< LONGEST STRING!
-		"funfact_number_of_overkills:p{funfact-d1}"					"{s:funfact-player} 击杀了 {d:funfact-d1} 名已被自己控制的玩家。#|#{s:funfact-player} 击杀了 {d:funfact-d1} 名已被自己控制的玩家。"
-		"funfact_shots_fired:p{funfact-d1}"							"本回合总共开了 {d:funfact-d1} 枪。#|#本回合总共开了 {d:funfact-d1} 枪。"
-		"funfact_money_spent:p{funfact-d1}"							"{s:funfact-player} 在本回合花掉了 ${d:funfact-d1}。#|#{s:funfact-player} 在本回合花掉了 ${d:funfact-d1}。"
-		"funfact_grenades_thrown:p{funfact-d1}"						"{s:funfact-player} 在当前回合中扔出了 {d:funfact-d1} 个投掷物。#|#{s:funfact-player} 在当前回合中扔出了 {d:funfact-d1} 个投掷物。"
-		"funfact_used_all_ammo"										"{s:funfact-player} 耗尽了弹药。"
-		"funfact_survived_multiple_attackers:p{funfact-d1}"			"{s:funfact-player} 在受到 {d:funfact-d1} 名不同敌人的攻击后生还。#|#{s:funfact-player} 在受到 {d:funfact-d1} 名不同敌人的攻击后生还。"
-		"funfact_died_from_multiple_attackers:p{funfact-d1}"		"{s:funfact-player} 在阵亡之前受到了 {d:funfact-d1} 名敌人的攻击。#|#{s:funfact-player} 在阵亡之前受到了 {d:funfact-d1} 名敌人的攻击。"
-		"funfact_defended_bomb:p{funfact-d1}"						"{s:funfact-player} 在看守炸弹时击杀了 {d:funfact-d1} 名敌人。#|#{s:funfact-player} 在看守炸弹时击杀了 {d:funfact-d1} 名敌人。"
-		"funfact_items_dropped_value:p{funfact-d1}"					"{s:funfact-player} 丢掉了总价值达 ${d:funfact-d1} 的装备。#|#{s:funfact-player} 丢掉了总价值达 ${d:funfact-d1} 的装备。"
-		"funfact_kill_wounded_enemies:p{funfact-d1}"				"{s:funfact-player} 解决了 {d:funfact-d1} 个受伤的敌人。#|#{s:funfact-player} 解决了 {d:funfact-d1} 个受伤的敌人。"
-		"funfact_damage_multiple_enemies:p{funfact-d1}"				"{s:funfact-player} 对 {d:funfact-d1} 名敌人造成了伤害。#|#{s:funfact-player} 对 {d:funfact-d1} 名敌人造成了伤害。"
-		"funfact_used_multiple_weapons:p{funfact-d1}"				"{s:funfact-player} 使用了 {d:funfact-d1} 种武器。#|#{s:funfact-player} 使用了 {d:funfact-d1} 种不同的武器。"
-		"funfact_terrorist_accuracy:p{funfact-d1}"					"T的精准度最高，为 {d:funfact-d1}%。#|#T的精准度最高，为 {d:funfact-d1}%。"
-		"funfact_ct_accuracy:p{funfact-d1}"							"CT的精准度最高，为 {d:funfact-d1}%。#|#CT的精准度最高，为 {d:funfact-d1}%。"
+		"funfact_number_of_overkills:f"								"{s:funfact-player} 击杀了 {d:funfact-d1} 名已被自己控制的玩家。"
+		"funfact_shots_fired:f"										"本回合总共开了 {d:funfact-d1} 枪。"
+		"funfact_money_spent:f"										"{s:funfact-player} 在本回合花掉了 ${d:funfact-d1}。"
+		"funfact_grenades_thrown:f"									"{s:funfact-player} 在当前回合中扔出了 {d:funfact-d1} 个投掷物。"
+		"funfact_used_all_ammo:f"									"{s:funfact-player} 耗尽了弹药。"
+		"funfact_survived_multiple_attackers:f"						"{s:funfact-player} 在受到 {d:funfact-d1} 名不同敌人的攻击后生还。"
+		"funfact_died_from_multiple_attackers:f"					"{s:funfact-player} 在阵亡之前受到了 {d:funfact-d1} 名敌人的攻击。"
+		"funfact_defended_bomb:f"									"{s:funfact-player} 在看守炸弹时击杀了 {d:funfact-d1} 名敌人。"
+		"funfact_items_dropped_value:f"								"{s:funfact-player} 丢掉了总价值达 ${d:funfact-d1} 的装备。"
+		"funfact_kill_wounded_enemies:f"							"{s:funfact-player} 解决了 {d:funfact-d1} 个受伤的敌人。"
+		"funfact_damage_multiple_enemies:f"							"{s:funfact-player} 对 {d:funfact-d1} 名敌人造成了伤害。"
+		"funfact_used_multiple_weapons:f"							"{s:funfact-player} 使用了 {d:funfact-d1} 种不同的武器。"
+		"funfact_terrorist_accuracy:f"								"T的精准度最高，为 {d:funfact-d1}%。"
+		"funfact_ct_accuracy:f"										"CT的精准度最高，为 {d:funfact-d1}%。"
 
-		"funfact_ct_win_no_kills"									"CT获得了胜利并且没有击杀任何T。"
-		"funfact_t_win_no_kills"									"T获得了胜利并且没有击杀任何CT。"
-		"funfact_t_win_no_casualties"								"T获得胜利并且无一阵亡。"
-		"funfact_ct_win_no_casualties"								"CT获得胜利并且无一阵亡。"
-		"funfact_best_terrorist_accuracy:p{funfact-d1}"				"{s:funfact-player} 的精准度为 {d:funfact-d1}%，而他所在队伍的精准度为 {d:funfact-d2}%。#|#{s:funfact-player} 的精准度为 {d:funfact-d1}%，而他所在队伍的精准度为 {d:funfact-d2}%。"
-		"funfact_best_counterterrorist_accuracy:p{funfact-d1}"		"{s:funfact-player} 的精准度为 {d:funfact-d1}%，而他所在队伍的精准度为 {d:funfact-d2}%。#|#{s:funfact-player} 的精准度为 {d:funfact-d1}%，而他所在队伍的精准度为 {d:funfact-d2}%。"
-		"funfact_fallback1"											"那块蛋糕只是个谎言。"
-		"funfact_fallback2"											"打哈欠。"
-		"funfact_draw"												"根据玩家投票结果比赛重新开始。"
-		"funfact_broke_windows:p{funfact-d1}"						"{s:funfact-player} 打碎了 {d:funfact-d1} 扇窗户。#|#{s:funfact-player} 打碎了 {d:funfact-d1} 扇窗户。"
-		"funfact_nightvision_damage:p{funfact-d1}"					"{s:funfact-player} 开启夜视仪时对敌人造成了 {d:funfact-d1} 点伤害。#|#{s:funfact-player} 开启夜视仪时对敌人造成了 {d:funfact-d1} 点伤害。"
-		"funfact_defused_with_dropped_kit"                  		"{s:funfact-player} 捡起了掉落的拆弹器并拆除了炸弹。"
-		"funfact_killed_half_of_enemies:p{funfact-d1}"				"{s:funfact-player} 击杀了敌方队伍中的 {d:funfact-d1}%。#|#{s:funfact-player} 击杀了敌方队伍中的 {d:funfact-d1}%。"
-		"funfact_knife_level_reached:p{funfact-d1}"					"{d:funfact-d1} 名玩家达到了黄金匕首等级。#|#{d:funfact-d1} 名玩家达到了黄金匕首等级。"
-		"funfact_killed_before_dying:p{funfact-d1}"					"{s:funfact-player} 在阵亡之前击杀了 {d:funfact-d1} 名玩家。#|#{s:funfact-player} 在阵亡之前击杀了 {d:funfact-d1} 名玩家。"
-		"funfact_respawned:p{funfact-d1}"							"{s:funfact-player} 在比赛中重生了 {d:funfact-d1} 次。#|#{s:funfact-player} 在比赛中重生了 {d:funfact-d1} 次。"
-		"funfact_default_weapon"									"{s:funfact-player} 未捡起任何武器但赢得了本回合。"
-		"funfact_rounds_without_dying:p{funfact-d1}"				"{s:funfact-player} 坚持了 {d:funfact-d1} 个回合都没有死亡。#|#{s:funfact-player} 坚持了 {d:funfact-d1} 个回合都没有死亡。"
-		"funfact_taser_kill:p{funfact-d1}"							"{s:funfact-player} 电死了 {d:funfact-d1} 名玩家。#|#{s:funfact-player} 电死了 {d:funfact-d1} 名玩家。"
-		"funfact_ticking_time:p{funfact-d1}"						"尽管有 {d:funfact-d1} 名CT尝试拆除炸弹，T还是取得了胜利。#|#尽管有 {d:funfact-d1} 名CT尝试拆除炸弹，T还是取得了胜利。"
-		"funfact_ct_win_time:p{funfact-d1}"							"CT在 {d:funfact-d1} 秒内消灭了T。#|#CT在 {d:funfact-d1} 秒内消灭了T。"
-		"funfact_ter_win_time:p{funfact-d1}"						"T在 {d:funfact-d1} 秒内消灭了CT。#|#T在 {d:funfact-d1} 秒内消灭了CT。"
-		"funfact_bots_assumed:p{funfact-d1}"						"{s:funfact-player} 在该回合控制了 {d:funfact-d1} 名电脑玩家。#|#{s:funfact-player} 在该回合控制了 {d:funfact-d1} 名电脑玩家。"
-		"funfact_domination"										"{s:funfact-player} 控制的玩家最多。"
-		"funfact_revenge:p{funfact-d1}"								"{s:funfact-player} 对 {d:funfact-d1} 名玩家进行了复仇。#|#{s:funfact-player} 对 {d:funfact-d1} 名玩家进行了复仇。"
-		"funfact_steps_taken:p{funfact-d1}"							"{s:funfact-player} 在比赛中跑了 {d:funfact-d1} 步。#|#{s:funfact-player} 在比赛中跑了 {d:funfact-d1} 步。"
-		"funfact_quarter_health:p{funfact-d1}"						"{s:funfact-player} 在不足 25 生命值时击杀了 {d:funfact-d1} 名玩家。#|#{s:funfact-player} 在不足 25 生命值时击杀了 {d:funfact-d1} 名玩家。"
-		"funfact_empty_guns:p{funfact-d1}"							"{s:funfact-player} 打光了 {d:funfact-d1} 把枪的子弹。#|#{s:funfact-player} 打光了 {d:funfact-d1} 把枪的子弹。"
-		"funfact_slow_trigger:p{funfact-d1}"						"{s:funfact-player} 连 {d:funfact-d1} 把枪的一发子弹都没射出就死亡了。#|#{s:funfact-player} 连 {d:funfact-d1} 把枪的一发子弹都没射出就死亡了。"
-		"funfact_pickup_bomb:p{funfact-d1}"							"{s:funfact-player} 安放了曾被 {d:funfact-d1} 名队友所持有的炸弹。#|#{s:funfact-player} 安放了曾被 {d:funfact-d1} 名队友所持有的炸弹。"
-		"funfact_bomb_carriers:p{funfact-d1}"						"{s:funfact-player} 在上一回合击杀了 {d:funfact-d1} 名炸弹持有者。#|#{s:funfact-player} 在上一回合击杀了 {d:funfact-d1} 名不同的炸弹持有者。"
-		"funfact_knife_bomb_planter"								"{s:funfact-player} 击杀炸弹安放者赢得匕首等级。"
-		"funfact_bomb_planted_before_kill"							"在炸弹被安放之前，没有玩家被击杀。"
-		"funfact_failed_bomb_plants:p{funfact-d1}"					"在该回合有 {d:funfact-d1} 名T尝试安放炸弹。#|#在该回合有 {d:funfact-d1} 名T尝试安放炸弹。"
-		"funfact_knife_without_ammo:p{funfact-d1}"					"{s:funfact-player} 耗尽弹药后获得了 {d:funfact-d1} 次匕首击杀。#|#{s:funfact-player} 耗尽弹药后获得了 {d:funfact-d1} 次匕首击杀。"
-		"funfact_molotov_burns:p{funfact-d1}"						"{s:funfact-player} 用火点燃了 {d:funfact-d1} 名玩家。#|#{s:funfact-player} 用火点燃了 {d:funfact-d1} 名玩家。"
-		"funfact_survival_time:p{funfact-d1}"						"{s:funfact-player} 存活时间最长：{d:funfact-d1} 秒。#|#{s:funfact-player} 存活时间最长：{d:funfact-d1} 秒。"
-		"funfact_pulled_trigger:p{funfact-d1}"						"{s:funfact-player} 在该轮比赛中扣动了 {d:funfact-d1} 次扳机。#|#{s:funfact-player} 在该轮比赛中扣动了 {d:funfact-d1} 次扳机。"
-		"funfact_ace"												"王牌！{s:funfact-player} 消灭了整支敌方队伍。"
-		"funfact_defuse_was_close_call_tenths:p{funfact-d1}"		"{s:funfact-player} 在炸弹还剩 0.{d:funfact-d1} 秒引爆时拆除了炸弹。#|#{s:funfact-player} 在炸弹还剩 0.{d:funfact-d1} 秒引爆时拆除了炸弹。"
-		"funfact_defuse_was_close_call_hundredths:p{funfact-d1}"	"{s:funfact-player} 在炸弹还剩 0.0{d:funfact-d1} 秒引爆时拆除了炸弹。#|#{s:funfact-player} 在炸弹还剩 0.0{d:funfact-d1} 秒引爆时拆除了炸弹。"
-		"funfact_defuse_was_close_call_thousandths:p{funfact-d1}"	"{s:funfact-player} 在炸弹还剩 0.00{d:funfact-d1} 秒引爆时拆除了炸弹。#|#{s:funfact-player} 在炸弹还剩 0.00{d:funfact-d1} 秒引爆时拆除了炸弹。"
-		
+		"funfact_ct_win_no_kills:f"									"CT获得了胜利并且没有击杀任何T。"
+		"funfact_t_win_no_kills:f"									"T获得了胜利并且没有击杀任何CT。"
+		"funfact_t_win_no_casualties:f"								"T获得胜利并且无一阵亡。"
+		"funfact_ct_win_no_casualties:f"							"CT获得胜利并且无一阵亡。"
+		"funfact_best_terrorist_accuracy:f"							"{s:funfact-player} 的精准度为 {d:funfact-d1}%，而他所在队伍的精准度为 {d:funfact-d2}%。"
+		"funfact_best_counterterrorist_accuracy:f"					"{s:funfact-player} 的精准度为 {d:funfact-d1}%，而他所在队伍的精准度为 {d:funfact-d2}%。"
+		"funfact_fallback1:f"										"那块蛋糕只是个谎言。"
+		"funfact_fallback2:f"										"打哈欠。"
+		"funfact_draw:f"											"根据玩家投票结果比赛重新开始。"
+		"funfact_broke_windows:f"									"{s:funfact-player} 打碎了 {d:funfact-d1} 扇窗户。"
+		"funfact_nightvision_damage:f"								"{s:funfact-player} 开启夜视仪时对敌人造成了 {d:funfact-d1} 点伤害。"
+		"funfact_defused_with_dropped_kit:f"                  		"{s:funfact-player} 捡起了掉落的拆弹器并拆除了炸弹。"
+		"funfact_killed_half_of_enemies:f"							"{s:funfact-player} 击杀了敌方队伍中的 {d:funfact-d1}%。"
+		"funfact_knife_level_reached:f"								"{d:funfact-d1} 名玩家达到了黄金匕首等级。"
+		"funfact_killed_before_dying:f"								"{s:funfact-player} 在阵亡之前击杀了 {d:funfact-d1} 名玩家。"
+		"funfact_respawned:f"										"{s:funfact-player} 在比赛中重生了 {d:funfact-d1} 次。"
+		"funfact_default_weapon:f"									"{s:funfact-player} 未捡起任何武器但赢得了本回合。"
+		"funfact_rounds_without_dying:f"							"{s:funfact-player} 坚持了 {d:funfact-d1} 个回合都没有死亡。"
+		"funfact_taser_kill:f"										"{s:funfact-player} 电死了 {d:funfact-d1} 名玩家。"
+		"funfact_ticking_time:f"									"尽管有 {d:funfact-d1} 名CT尝试拆除炸弹，T还是取得了胜利。"
+		"funfact_ct_win_time:f"										"CT在 {d:funfact-d1} 秒内消灭了T。"
+		"funfact_ter_win_time:f"									"T在 {d:funfact-d1} 秒内消灭了CT。"
+		"funfact_bots_assumed:f"									"{s:funfact-player} 在该回合控制了 {d:funfact-d1} 名电脑玩家。"
+		"funfact_domination:f"										"{s:funfact-player} 控制的玩家最多。"
+		"funfact_revenge:f"											"{s:funfact-player} 对 {d:funfact-d1} 名玩家进行了复仇。"
+		"funfact_steps_taken:f"										"{s:funfact-player} 在比赛中跑了 {d:funfact-d1} 步。"
+		"funfact_quarter_health:f"									"{s:funfact-player} 在不足 25 生命值时击杀了 {d:funfact-d1} 名玩家。"
+		"funfact_empty_guns:f"										"{s:funfact-player} 打光了 {d:funfact-d1} 把枪的子弹。"
+		"funfact_slow_trigger:f"									"{s:funfact-player} 连 {d:funfact-d1} 把枪的一发子弹都没射出就死亡了。"
+		"funfact_pickup_bomb:f"										"{s:funfact-player} 安放了曾被 {d:funfact-d1} 名队友所持有的炸弹。"
+		"funfact_bomb_carriers:f"									"{s:funfact-player} 在上一回合击杀了 {d:funfact-d1} 名不同的炸弹持有者。"
+		"funfact_knife_bomb_planter:f"								"{s:funfact-player} 击杀炸弹安放者赢得匕首等级。"
+		"funfact_bomb_planted_before_kill:f"						"在炸弹被安放之前，没有玩家被击杀。"
+		"funfact_failed_bomb_plants:f"								"在该回合有 {d:funfact-d1} 名T尝试安放炸弹。"
+		"funfact_knife_without_ammo:f"								"{s:funfact-player} 耗尽弹药后获得了 {d:funfact-d1} 次匕首击杀。"
+		"funfact_molotov_burns:f"									"{s:funfact-player} 用火点燃了 {d:funfact-d1} 名玩家。"
+		"funfact_survival_time:f"									"{s:funfact-player} 存活时间最长：{d:funfact-d1} 秒。"
+		"funfact_pulled_trigger:f"									"{s:funfact-player} 在该轮比赛中扣动了 {d:funfact-d1} 次扳机。"
+		"funfact_ace:f"												"王牌！{s:funfact-player} 消灭了整支敌方队伍。"
+		"funfact_defuse_was_close_call_tenths:f"					"{s:funfact-player} 在炸弹还剩 0.{d:funfact-d1} 秒引爆时拆除了炸弹。"
+		"funfact_defuse_was_close_call_hundredths:f"				"{s:funfact-player} 在炸弹还剩 0.0{d:funfact-d1} 秒引爆时拆除了炸弹。"
+		"funfact_defuse_was_close_call_thousandths:f"				"{s:funfact-player} 在炸弹还剩 0.00{d:funfact-d1} 秒引爆时拆除了炸弹。"
+
 		// Medal ranking progress messages
 		"medalrank_earned_medal"						"您获得了“%s1”勋章！您离升至下一等级 %s3 还有 %s2 个勋章。"
 		"medalrank_medal_progress"						"您离升至“%s1”等级又近了一步！您还需要 %s2 个。"
@@ -2417,6 +2417,7 @@
 		"NewItemMethod_CommunityMarketPurchase"	"您收到了来自社区市场的："
 
 		"ItemHistory_ActionWithTime"									"于%s2%s1"
+		"ItemHistory_Action_GSCreate"									"已上架"
 		"ItemHistory_Action_GenericAdd"									"获得"
 		"ItemHistory_Action_GenericRemove"								"移除或修改"
 		"ItemHistory_Action_Traded"										"被交易"
@@ -2480,6 +2481,9 @@
 		"ItemHistory_Action_TournamentDrop"								"获得纪念品掉落"
 		"ItemHistory_Action_TemplateItemGrant"							"获得"
 		"ItemHistory_Action_Market_Add"									"接收自社区市场"
+		"ItemHistory_Action_Market_Sealed"								"已在 Steam 社区市场上架物品"
+		"ItemHistory_Action_Market_Unsealed"							"已从社区市场下架"
+		"ItemHistory_Action_Market_SoldSealed"							"已在 Steam 社区市场售出"
 
 		"ItemHistory_Transaction_Delete"								"被本人删除"
 		"ItemHistory_Transaction_Craft"									"被合成"
@@ -2637,6 +2641,7 @@
 		"Attrib_NeverTradableButHasAfterDate1"		"该物品不可交易，不可出售。"
 		"Attrib_NeverTradableButHasAfterDate2"		"使用后，物品会获得交易冷却期 %s1"
 		"Attrib_TradeProtectedEscrowDate"			"⇆ 此物品正受交易保护，在%s1之前不能被消耗、改造或转让"
+		"Attrib_TradeProtectedEscrowMarket"			"⇆ 该物品已在 Steam 社区市场挂售，挂售期间不可消耗或修改。"
 		"Attrib_TradableAfterDate"					"%s1 后可交易"
 		"Attrib_TradableMarketableAfterDate"		"在 %s1 后可交易/可在市场上出售"
 		"Attrib_MarketableWithRestrictions"			"在 Steam 社区市场上可立即出售"
@@ -2963,7 +2968,7 @@
 		"leaderboard_region_abbr_China"			"<font color=\"#ff5959\">中国</font>"
 
 
-		"mapwinrecord_graph_title:p"			"最近胜利场次#|#最近胜利场次"
+		"mapwinrecord_graph_title:f"			"最近胜利场次"
 		"season_progress_title"					"赛季进度"
 		"season_progress_high_rank"				"本赛季达到的最高CS综合得分"
 		"season_progress_bar_title"				"比赛胜利次数"
@@ -4345,6 +4350,8 @@
 		
 		"CSGO_crate_community_36"				"封装的创世终端机"
 		"CSGO_crate_community_36^volatile"		"激活的创世终端机"
+		"CSGO_crate_community_37"				"封装的毁灭之手终端机"
+		"CSGO_crate_community_37^volatile"		"激活的毁灭之手终端机"
 		"CSGO_crate_keychain_pack_kc_drboom_capsule"	    	"爆炸博士挂件收藏品"
 		"CSGO_crate_keychain_pack_kc_drboom_capsule_desc"		"此收藏品包含各种爆炸博士的挂件。"
 		"CSGO_crate_keychain_pack_kc_drboom_capsule_short"	    "爆炸博士挂件"
@@ -5320,6 +5327,7 @@
 		"CSGO_set_community_36"					"创世纪收藏品"
 		"CSGO_set_timed_drops_exuberant"		"哈乐昆收藏品"
 		"CSGO_set_timed_drops_achroma"			"墨彩收藏品"
+		"CSGO_set_community_37"					"毁灭之手终端机"
 		/////////////////
 		// lootlist override strings
 		//////////////////
@@ -34524,8 +34532,104 @@
 		"PaintKit_m4a1s_quick_liquidation"				"深色基底与精挑细选的红蓝撞色点缀，使这把M4A1消音版的定制涂装在环境光下宛若发光。\n\n<i>寂静沉思</i>"
 		
 		"PaintKit_aug_trigger_discipline_velco"			"蓝色等距几何图案被涂装在枪身上，并以橙色勾边点缀。\n\n<i>耐心自有回报</i>"
+"PaintKit_glove_driver_knit_argyle_green_Tag"					"针织手套"
+		
+		"PaintKit_glove_driver_ostrich_purple_Tag"						"紫翎"
+		
+		"PaintKit_glove_driver_silk_dragon_white_Tag"					"逐沧浪"
+		
+		"PaintKit_glove_brocade_crane_Tag"								"深红鹤服"
+		
+		"PaintKit_glove_driver_brocade_flower_red_Tag"					"繁花似锦"
+		
+		"PaintKit_glove_driver_dragon_scale_red_Tag"					"龙拳"
+		
+		"PaintKit_glove_driver_embroidered_flowers_teal_Tag"			"花园"
+		
+		"PaintKit_glove_driver_scallop_metallic_blue_Tag"				"青海波"
+		
+		"PaintKit_glove_sport_velvet_red_Tag"							"隐知"
+		
+		"PaintKit_glove_sport_beadwork_diamonds_purple_Tag"				"紫罗兰珠绣"
+		
+		"PaintKit_glove_sport_camo_winter_Tag"							"寒霜"
+		
+		"PaintKit_glove_sport_pinstripe_black_Tag"						"奶油细条纹"
+		
+		"PaintKit_glove_sport_racer_red_Tag"							"赤色追风"
+		
+		"PaintKit_glove_sport_tech_gradient_bright_Tag"					"紫外狂潮"
+		
+		"PaintKit_glove_specialist_abstract_green_Tag"					"青柠迷彩"
+		
+		"PaintKit_glove_specialist_graffiti_black_Tag"					"黑皮书"
+		
+		"PaintKit_glove_specialist_quilted_black_Tag"					"可可伯爵"
+		
+		"PaintKit_glove_specialist_quilted_white_Tag"					"枕斗士"
+		
+		"PaintKit_glove_specialist_sunburst_red_Tag"					"日芒"
+		
+		"PaintKit_glove_specialist_dragon_blue_Tag"						"青云狩"
+		
+		"PaintKit_glove_specialist_wave_blue_Tag"						"狂澜"
+		
+// END COMMUNITY_37 GLOVES
 
-// END COMMUNITY_36
+// COMMUNITY_37 WEAPONS
+		
+		"PaintKit_glock_jdpeek"											"采用霓虹色与金属闪光漆手工涂装。\n\n<i>对我来说有点太花哨了，但我又不是目标客户……- 军火商布兹</i>"
+		"PaintKit_glock_jdpeek_Tag"										"巅峰状态"
+					
+		"PaintKit_awp_queens_gambit"									"采用宝蓝与金色定制涂装，枪托前方手绘女王图案。\n\n<i>每一发，都是权力与精准的皇家敕令</i>"
+		"PaintKit_awp_queens_gambit_Tag"								"后翼弃兵"
+					
+		"PaintKit_p90_deathgaze"										"以卡拉拉大理石为底色，涂装上涂鸦风格的美杜莎。\n\n<i>不要崇拜建立在欺骗基石之上的偶像</i>"
+		"PaintKit_p90_deathgaze_Tag"									"美杜莎之视"
+					
+		"PaintKit_p250_kintsugi"										"象牙白底色上，绘有醒目的橙鸟与金色点缀。\n\n<i>就像那些精致餐盘，这把武器只在特殊场合使用</i>"
+		"PaintKit_p250_kintsugi_Tag"									"金缮"
+					
+		"PaintKit_mp9_urban_sovereign"									"采用都市质感设计涂装，并以金色涂鸦收尾。\n\n<i>王者亲绘高墙而不藏于墙后</i>"
+		"PaintKit_mp9_urban_sovereign_Tag"								"都市霸王"
+					
+		"PaintKit_mp7_amberline"										"它涂装了橙白斜向条纹。\n\n<i>紧握锋芒</i>"
+		"PaintKit_mp7_amberline_Tag"									"琥珀流光"
+					
+		"PaintKit_bizon_rmx"											"它涂装了紫色渐变以及红白相间的图案。\n\n<i>轻盈、迅猛、致命…… 理论上是这样</i>"
+		"PaintKit_bizon_rmx_Tag"										"混音"
+					
+		"PaintKit_ak47_crane_flight"									"黑白底色上手绘仙鹤与金色装饰。\n\n<i>血月将至之兆</i>"
+		"PaintKit_ak47_crane_flight_Tag"								"翔鹤"
+					
+		"PaintKit_deagle_firebreathing"									"使用珠光漆定制涂装了紫色和蓝色的火焰。\n\n<i>蕴含超凡品质与威能</i>"
+		"PaintKit_deagle_firebreathing_Tag"								"霜寒之焰"
+					
+		"PaintKit_ump_fragment"											"涂装了银色、黑色和红色的图案。\n\n<i>跟你爆了</i>"
+		"PaintKit_ump_fragment_Tag"										"击杀时刻"
+					
+		"PaintKit_sawedoff_fusion"										"它采用了黑金配色涂装，不同光线下会显现更多细节。\n\n<i>吾眼曾见万象……</i>"
+		"PaintKit_sawedoff_fusion_Tag"									"融合"
+					
+		"PaintKit_galil_galigator"										"黄绿底色上绘有鳄鱼与剧毒符号。\n\n<i>咔嚓！咔嚓！咔嚓！</i>"
+		"PaintKit_galil_galigator_Tag"									"加利鳄"
+					
+		"PaintKit_fiveseven_polymer_dark"								"这把武器的定制涂装使其看起来像是由透明紫色聚合物制成。\n\n<i>裹在紫色糖果外壳之中</i>"
+		"PaintKit_fiveseven_polymer_dark_Tag"							"暗夜聚合"
+					
+		"PaintKit_usps_silent_boy"										"它定制涂装了黑色和蓝色的几何符号与手里剑。\n\n<i>锋芒内敛，一击制敌</i>"
+		"PaintKit_usps_silent_boy_Tag"									"无声一击"
+					
+		"PaintKit_m4a4_zubastick_bw"									"这把 M4A4 上手绘了牙齿和橙色眼睛。\n\n<i>1991年限定</i>"
+		"PaintKit_m4a4_zubastick_bw_Tag"								"犬牙交错"
+					
+		"PaintKit_m4a1s_electrum"										"它定制涂装了绿色大理石底色，并以金色和红色点缀收尾。\n\n<i>他们给的薪水配不上这把枪，但我会给你足够的报酬 – 革命者瓦莱里娅.琴纳</i>"
+		"PaintKit_m4a1s_electrum_Tag"									"翠珀金"
+					
+		"PaintKit_m249_blocks_purple"									"它定制涂装了紫色图形化几何图案。\n\n<i>叠吧叠吧</i>"
+		"PaintKit_m249_blocks_purple_Tag"								"博客积木"
+		
+// END COMMUNITY_37 WEAPONS
 
 // OVERPASS_2024
 				
@@ -35107,12 +35211,12 @@
 		"CSGO_Recipe_TradeUpX_Desc"					"用多个相同品质的物品，可汰换1件更高品质的物品，该物品来自你所提供物品之一的收藏品系列。"
 		"CSGO_Recipe_TradeUp_Desc_html"				"交换：<b><font color='#FFFFFF'>10 件相同品质的物品</font></b>\n<b><font color='#FFFFFF'>收到：1 件与所提供物品之一属于相同收藏品、品质高出一级、但不超过最高级的物品</font></b>"
 		"CSGO_Recipe_TradeUpX_Desc_html"			"汰换条件：<b><font color='#FFFFFF'>相同品质的物品</font></b>\n可获得：<b><font color='#FFFFFF'>1件更高品质的物品，该物品来自你所提供物品之一的收藏品系列</font></b>"
-		"CSGO_Recipe_Count_Items_Selected:p{count}"			"<b>{d:count}</b> 项物品已选#|#<b>{d:count}</b> 项物品已选"
-		"CSGO_Recipe_Count_Items_Remaining:p{count}"			"<b>{d:count}</b> 项物品剩余#|#<b>{d:count}</b> 项物品剩余"
-		"CSGO_Recipe_TradeUp_Items_Remain:p{count}"			"已选中 {d:count} 件物品用于汰换#|#已选中 {d:count} 件物品用于汰换"
-		"CSGO_Recipe_TradeUp_Items_NoSelection"				"从库存中选择符合要求的物品以汰换更高品质物品"
-		"CSGO_Recipe_TradeUp_Items_XofY:p{count}"			"{d:count} / {d:recipecount} 已选择汰换#|#{d:count} / {d:recipecount} 已选择汰换"
-		"CSGO_Recipe_TradeUp_Items_Inv:p{count}"				"{d:count} 件物品符合汰换资格#|#{d:count} 件物品符合汰换资格"
+		"CSGO_Recipe_Count_Items_Selected:f"		"<b>{d:count}</b> 项物品已选"
+		"CSGO_Recipe_Count_Items_Remaining:f"		"<b>{d:count}</b> 项物品剩余"
+		"CSGO_Recipe_TradeUp_Items_Remain:f"		"已选中 {d:count} 件物品用于汰换"
+		"CSGO_Recipe_TradeUp_Items_NoSelection"		"从库存中选择符合要求的物品以汰换更高品质物品"
+		"CSGO_Recipe_TradeUp_Items_XofY:f"			"{d:count} / {d:recipecount} 已选择汰换"
+		"CSGO_Recipe_TradeUp_Items_Inv:f"			"{d:count} 件物品符合汰换资格"
 		"CSGO_Recipe_TradeUp_Items_Confirm"			"可以进行汰换交易"
 		"CSGO_Swap_Stattrak_Title"					"StatTrak™ 数据互换器"
 		"CSGO_Swap_Stattrak_Desc_html"				"<b><font color='#FFFFFF'>选择两种相同的物品类型\n将它们的 StatTrak™ 数据互换</font></b>"
@@ -35122,7 +35226,7 @@
 		"CSGO_RemoveKeychainTool_Desc"				"选择一把已装配挂件的武器。使用挂件拆卸器拆掉挂件并将其返还到你的库存。"
 		"CSGO_RemoveKeychainToolCharges_Title"		"挂件拆卸器包"
 		"CSGO_RemoveKeychainToolCharges_Desc3"		"挂件拆卸器包将为你提供<b>3</b>个挂件拆卸器。每个挂件拆卸器允许你分离一个已装配的挂件。拆掉的挂件将出现在你的库存中。"
-		"CSGO_RemoveKeychainToolCharges_Reward:p{item_count}"	"+{d:item_count}个挂件拆卸器#|#+{d:item_count}个挂件拆卸器"
+		"CSGO_RemoveKeychainToolCharges_Reward:f"	"+{d:item_count}个挂件拆卸器"
 
 		"crate_community_3_unusual_lootlist"		"或一把极其罕见的猎杀者匕首！"
 		"crate_community_3_unusual_itemname"		"★ 猎杀者匕首 ★"
@@ -35261,6 +35365,7 @@
 		"StoreCheckout_GameLicense_AlreadyOwned"		"您已拥有《反恐精英：全球攻势》的游戏许可证。"
 		"StoreCheckout_GameLicense_PurchasePending_PW"	"您已经开始购买《反恐精英：全球攻势》游戏许可证。我们正试图向完美世界确认您前一次的交易状态。若您的完美世界帐号资金已被使用，那么您的购买将在近期内自动完成。否则请您稍后再重新尝试购买。"
 		"StoreCheckout_NotEnoughRoom"			"您没有足够的库存空间来容纳购买的物品。\n库存空间可自游戏内商店购买。\n这将使您能够从库存中移走多余的物品，以便之后再取回。"
+		"StoreCheckout_NotEnoughRoom_TooManyStorageUnits"	"您已拥有过多库存存储组件。\n\n在账号持有者联系 Steam 客服之前，无法从游戏内商店购买额外的库存存储组件。"
 		"StoreCheckout_TooManyItemsInCart"		"由于物品过多，此次交易无法进入付款页面。请减少物品数量，重新购买。"
 		"StoreCheckout_PurchaseExpiredItemsUnavailable" "您的购买交易已过期，或该物品已停止售卖。未产生扣费，请重新尝试购买。"
 		"StoreCheckout_ContactSupport_Dialog_Title"	"警告"
@@ -36177,11 +36282,11 @@
 
 		"SFUI_Store_Market_Link"                    "在市场中查看"
 		"SFUI_Store_Limit_Offer"                    "限时优惠"
-		"SFUI_Store_Offer_Days_Remaining:p{daysremaining}"			"{d:daysremaining}天剩余#|#{d:daysremaining}天剩余。"
-		"SFUI_Store_Offer_Days_Remaining_claim:p{daysremaining}"	"剩余 {d:daysremaining} 天#|#剩余 {d:daysremaining} 天"
-		"SFUI_Store_Offer_Days_Remaining_bid:p{daysremaining}"		"此报价剩余出价时间 {d:daysremaining} 天#|#此报价剩余出价时间 {d:daysremaining} 天"
-		"SFUI_Store_Offer_Days_Remaining_last_claim"				"获取此报价最终机会"
-		"SFUI_Store_Offer_Days_Remaining_last_bid"					"此报价最终出价机会"
+		"SFUI_Store_Offer_Days_Remaining:f"			"{d:daysremaining}天剩余。"
+		"SFUI_Store_Offer_Days_Remaining_claim:f"	"剩余 {d:daysremaining} 天"
+		"SFUI_Store_Offer_Days_Remaining_bid:f"		"此报价剩余出价时间 {d:daysremaining} 天"
+		"SFUI_Store_Offer_Days_Remaining_last_claim:f"	"获取此报价最终机会"
+		"SFUI_Store_Offer_Days_Remaining_last_bid:f"	"此报价最终出价机会"
 		"SFUI_Store_Last_Chance"                    "最后机会"
 		"SFUI_Store_Limited_Time_Tagline"           "领取优惠"
 		"SFUI_Store_Limited_Bid_Tagline"			"参与此物品竞拍"
@@ -36193,6 +36298,12 @@
 		"SFUI_Store_Timer_Hour:p"                   "%s1 小时#|#%s1 小时"
 		"SFUI_Store_Timer_Min:p"                    "%s1 分#|#%s1 分"
 		"SFUI_Store_Timer_Sec:p"                    "%s1 秒#|#%s1 秒"
+
+		"SFUI_Store_Timer_Week:f"                 	"{f:0:value} 周"
+		"SFUI_Store_Timer_Day:f"                    "{f:0:value} 天"
+		"SFUI_Store_Timer_Hour:f"                   "{f:0:value} 小时"
+		"SFUI_Store_Timer_Min:f"                    "{f:0:value} 分"
+		"SFUI_Store_Timer_Sec:f"                    "{f:0:value} 秒"
 
 		"SFUI_Store_Your_Offers"                    "您的优惠"
 		"SFUI_Store_View_Offers"					"查看您的优惠"
@@ -36648,6 +36759,7 @@
 		"SFUI_InvContextMenu_preview_musickit"       "检视 - 试听音乐"
 		"SFUI_InvContextMenu_decodable"     "开箱"
 		"SFUI_InvContextMenu_sell"			"在社区市场上出售"
+		"SFUI_InvContextMenu_marketlisting"	"查看市场挂售列表"
 		"SFUI_InvContextMenu_openloadout"   "查看配置槽位"
 		"SFUI_InvContextMenu_inspectcase"	"打开..."
 		"SFUI_InvContextMenu_useitem"	    "使用物品"
@@ -36832,7 +36944,7 @@
 		"CSGO_Watch_Highlights"             "查看高光时刻"
 		"CSGO_Watch_Scoreboard"             "打开记分板"
 		"CSGO_Watch_ServerWebsite"          "服务器网站"
-		"CSGO_Watch_Minute:p"               "%s1 分#|#%s1 分"
+		"CSGO_Watch_Minute:f"               "{f:0:value} 分"
 		"CSGO_Watch_Rank"                   "最高段位"
 		"CSGO_Watch_Downloading"            "正在下载..."
 		"CSGO_Watch_JustStarted"            "开赛不久"
@@ -37669,7 +37781,7 @@
 		"CSGO_Demo_Toggle"							"[Shift+F2]"
 		"CSGO_Demo_Time"							"{s:current_time} / {s:total_time}"
 		"CSGO_Demo_Round"							"回合："
-		"CSGO_Demo_Highlight"						"高光时刻："
+		"CSGO_Demo_Highlight"						"高光时刻"
 		"CSGO_Demo_End_Playback"					"结束回放"
 		"CSGO_Demo_End_Playback_Overwatch"			"跳至判决"
 		"CSGO_Demo_End_Playback_Overwatch_Finished"	"前往判决"
@@ -38280,7 +38392,7 @@
 		"xpshop_upsell_btn"							"获取通行证"
 		"xpshop_upsell_tooltip"						"了解更多关于{s:pass}"
 
-		"xpshop_new_items:p{new-count}"	"新物品！#|#新物品！"
+		"xpshop_new_items:f"						"新物品！"
 		"xpshop_lootlist_info"						"The <span class=\"text-color-white\"><b>{s:casename}</b></span> 包含下列物品之一："
 
 		"xpshop_limited_item_variations"			"涂装变体"
@@ -38298,8 +38410,8 @@
 		"xpshop_balance_caps"						"剩余点数"
 		"xpshop_clear_track"						"结算"
 		"xpshop_popup_clear_track_title"			"结算已完成通行证"
-		"xpshop_popup_clear_n_tracks:p{completed_tracks_count}"		"结算{d:completed_tracks_count}张已完成通行证#|#结算{d:completed_tracks_count}张已完成通行证"
-		"xpshop_popup_clear_n_tracks_text:p{completed_tracks_count}"	"你已经从此通行证中获得了所有武库点数。<br><br>结算此武库通行证之后你可以激活一张新的武库通行证。结算不会影响你当前的剩余武库点数。#|#你已经从{d:completed_tracks_count}张武库通行证中获得了所有武库点数。<br><br>结算这{d:completed_tracks_count}张武库通行证之后你可以激活更多新的通行证。结算不会影响你当前的剩余武库点数。"
+		"xpshop_popup_clear_n_tracks:f"				"结算{d:completed_tracks_count}张已完成通行证"
+		"xpshop_popup_clear_n_tracks_text:f"		"你已经从{d:completed_tracks_count}张武库通行证中获得了所有武库点数。<br><br>结算这{d:completed_tracks_count}张武库通行证之后你可以激活更多新的通行证。结算不会影响你当前的剩余武库点数。"
 		"xpshop_redeem_item_desc" 					"从<b>{s:name}</b>获得一个随机物品"
 		"xpshop_redeem_item_desc_limitedtime" 		"获得<b>{s:name}</b>"
 		"xpshop_redeem_item_desc_crate"				"获得<b>{s:name}</b>"
@@ -38307,7 +38419,7 @@
 		"xpshop_redeem_use_stars"					"使用<b>{s:cost_stars}</b>"
 		"xpshop_redeem_bid_stars"					"竞拍<b>{s:cost_stars}</b>"
 		"xpshop_redeem_bid_allover"					"此商品已无法竞拍。结算完成后将通知中标者。"
-		"xpshop_redeem_bid_batchover:p{hours_until_bid_batch}"		"本轮竞拍已结束。结算完成后将通知中标者。请明天再来竞拍下一轮。竞拍将在{d:hours_until_bid_batch}小时后重新开放。#|#本轮竞拍已结束。结算完成后将通知中标者。请明天再来竞拍下一轮。竞拍将在{d:hours_until_bid_batch}小时后重新开放。"
+		"xpshop_redeem_bid_batchover:f"				"本轮竞拍已结束。结算完成后将通知中标者。请明天再来竞拍下一轮。竞拍将在{d:hours_until_bid_batch}小时后重新开放。"
 		"xpshop_redeem_use_confirm_item"			"使用<b>{s:cost_stars}</b> <img src='file://{images}/icons/ui/xpshop_star.svg' class='xpshop-label-star' />从<b>{s:name}</b>获得一个随机物品"
 		"xpshop_redeem_use_confirm_item_limitedtime" "使用<b>{s:cost_stars}</b> <img src='file://{images}/icons/ui/xpshop_star.svg' class='xpshop-label-star' />来获得<b>{s:name}</b>"
 		"xpshop_redeem_use_confirm_item_crate"		"使用<b>{s:cost_stars}</b> <img src='file://{images}/icons/ui/xpshop_star.svg' class='xpshop-label-star' />去获取<b>{s:name}</b>"
@@ -38317,7 +38429,7 @@
 		"xpshop_redeem_use_cancel_item_bid_btn"		"撤回 <b>{s:cost_stars}</b><img src='file://{images}/icons/ui/xpshop_star.svg' class='xpshop-label-star' />出价"
 		"xpshop_redeem_flags_notice_2"				"* 此物品需要等待一周才可交易/在市场上出售"
 		"xpshop_redeem_confirm_action"				"获取物品"
-		"xpshop_redeem_not_enough_stars:p{stars_needed}"	"你还需要{d:stars_needed} 个额外的武库点数。通过激活武库通行证并玩游戏来获得它们。#|#你还需要{d:stars_needed} 个额外的武库点数。通过激活武库通行证并玩游戏来获得它们。"
+		"xpshop_redeem_not_enough_stars:f"			"你还需要{d:stars_needed} 个额外的武库点数。通过激活武库通行证并玩游戏来获得它们。"
 		"xpshop_redeem_need_pass_tooltip"			"获取并激活你的 {s:pass}。赚取{d:max-stars}个武库点数，并用它们兑换武库物品。"
 		"xpshop_track_tooltip"						"通过游戏获得经验值，去赚取下一个武库积分。"
 		"xpshop_track_complete_tooltip"				"此武库通行证已完成。"
@@ -38467,7 +38579,7 @@
 		"SFUI_PlayerDetails_New_Commendation"   "您正在提交一份新称赞"
 		"SFUI_PlayerDetails_Server_Report_Title"   "举报此服务器"
 		"SFUI_PlayerDetails_Server_Name_NotFound"   "服务器名称不可用"
-		"Panorama_PlayerDetails_Commendations_Left:p{num_token}" "您今天还可以称赞 {d:num_token} 名玩家#|#您今天还可以称赞 {d:num_token} 名玩家"
+		"Panorama_PlayerDetails_Commendations_Left:f" "您今天还可以称赞 {d:num_token} 名玩家"
 
 		"SFUI_MOTD_RegionalServerSponsor"			"此游戏服务器由广告商赞助，您可以在 %s1 秒后继续..."
 
@@ -40029,6 +40141,8 @@
 		"SFUI_Settings_Network_Bandwidth_40mbps"   "4 mbit/s"
 		"SFUI_Settings_Network_Bandwidth_Max"	   "不受限"
 
+		"SFUI_Settings_Volatile_Limit_Unlimited"	"无限制"
+
 		"SFUI_FeatureUnavailableDuringBeta"		"测试期间暂不开放"
 
 		"SFUI_Settings_Always_Show_Inventory"	"总是显示库存"
@@ -40203,8 +40317,8 @@
 		"SFUI_Settings_MiniScoreboardPlayerCount_Tooltip"	"在回合未结束时，将迷你计分板上的玩家头像替换为团队存活人数。"
 
 
-		"Post_Round_Damage_Report_Given:p"			" •造成伤害→ %s3: %s2 in %s1#|# •造成伤害→ %s3: %s2 in %s1"
-		"Post_Round_Damage_Report_Taken:p"			" • 承受伤害 ← %s3: %s2 in %s1#|# • 承受伤害 ← %s3: %s2 in %s1"
+		"Post_Round_Damage_Report_Given:p"		" •造成伤害→ %s3：%s2 在 %s1#|# •造成伤害→ %s3：%s2 在 %s1"
+		"Post_Round_Damage_Report_Taken:p"		" • 承受伤害 ← %s3：%s2 在 %s1#|# • 承受伤害 ← %s3：%s2 在 %s1"
 
 		"SFUI_TeamOverheadID"					"显示队伍装备"
 
@@ -40355,28 +40469,28 @@
 		"SFUI_BuyMenu_Header" "购买菜单"
 		"SFUI_BuyMenu_WeaponClass" "选择武器菜单"
 
-		"SFUI_BuyMenu_CanOnlyCarryXGrenades:p{s1}"		"你只能携带{s:s1}颗投掷物#|#你只能携带{s:s1}颗投掷物"
-		"SFUI_BuyMenu_MaxItemsOfType:p{s1}"				"你只能携带此类型的{s:s1}个#|#你只能携带此类型的{s:s1}个"
-		"SFUI_BuyMenu_MaxItemsOfTypePurchased:p{s1}"	"你只能购买此类型的{s:s1}个#|#你只能购买此类型的{s:s1}个"
-		"SFUI_BuyMenu_AlreadyCarrying"			"于当前库存中。"
-		"SFUI_BuyMenu_AlreadyPurchased"			"你在本回合已经购买了此物品。"
-		"SFUI_BuyMenu_NotAllowedByMap"			"于此地图类型上不允许。"
-		"SFUI_BuyMenu_NotAllowedByMode"			"于此游戏模式中不允许。"
-		"SFUI_BuyMenu_NotAllowedByTeam"			"于您当前队伍中不允许。"
-		"SFUI_BuyMenu_ReachedWeaponsExpertLimit:p{s1}"	"本场比赛已购买{s:s1}个#|#本场比赛已购买{s:s1}个"
-		"SFUI_BuyMenu_Cannot_Afford"			"还需$ {s:s1}"
-		"SFUI_BuyMenu_OnlyOneArmor"				"你已经有护甲了"
-		"SFUI_BuyMenu_NotAllowed_Short"			"不允许"
-		"SFUI_BuyMenu_Owned_Short"				"已拥有"
-		"SFUI_BuyMenu_AtLimit_Short"			"受限"
+		"SFUI_BuyMenu_CanOnlyCarryXGrenades:f"		"你只能携带{s:s1}颗投掷物"
+		"SFUI_BuyMenu_MaxItemsOfType:f"				"你只能携带此类型的{s:s1}个"
+		"SFUI_BuyMenu_MaxItemsOfTypePurchased:f"	"你只能购买此类型的{s:s1}个"
+		"SFUI_BuyMenu_AlreadyCarrying"				"于当前库存中。"
+		"SFUI_BuyMenu_AlreadyPurchased"				"你在本回合已经购买了此物品。"
+		"SFUI_BuyMenu_NotAllowedByMap"				"于此地图类型上不允许。"
+		"SFUI_BuyMenu_NotAllowedByMode"				"于此游戏模式中不允许。"
+		"SFUI_BuyMenu_NotAllowedByTeam"				"于您当前队伍中不允许。"
+		"SFUI_BuyMenu_ReachedWeaponsExpertLimit:f"	"本场比赛已购买{s:s1}个"
+		"SFUI_BuyMenu_Cannot_Afford"				"还需$ {s:s1}"
+		"SFUI_BuyMenu_OnlyOneArmor"					"你已经有护甲了"
+		"SFUI_BuyMenu_NotAllowed_Short"				"不允许"
+		"SFUI_BuyMenu_Owned_Short"					"已拥有"
+		"SFUI_BuyMenu_AtLimit_Short"				"受限"
 
 		"SFUI_BuyMenu_HeavyAssaultSuitRestriction"	"重型突击套装无法与步枪搭配使用。"
 
-		"buymenu_prohibited_weapon_hint"		"<b>{s:s1}</b> 在此模式下不可用"
-		"buymenu_weaponsexpert_reminder"		"每场比赛购买这把武器一次"
-		"buymenu_weaponsexpert_supply"			"队伍补给数：<b>%s1</b>"
+		"buymenu_prohibited_weapon_hint"			"<b>{s:s1}</b> 在此模式下不可用"
+		"buymenu_weaponsexpert_reminder"			"每场比赛购买这把武器一次"
+		"buymenu_weaponsexpert_supply"				"队伍补给数：<b>%s1</b>"
 
-		"buymenu_groundweapons"					"掉落的武器"
+		"buymenu_groundweapons"						"掉落的武器"
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Buy menu text information
@@ -44675,14 +44789,14 @@
 
 		"cs_rating_expired"								"CS 综合得分已过期"
 		"cs_rating_none"								"无 CS 综合得分"
-		"cs_rating_wins_needed:p{winsneeded}"			"再赢 <b>{d:winsneeded}</b> 场优先模式比赛#|#再赢 <b>{d:winsneeded}</b> 场优先模式比赛"
-		"cs_rating_wins_needed_verbose:p{winsneeded}"	"赢得 <b>{d:winsneeded}</b> 场优先模式比赛来确立您的 CS 综合得分#|#赢得 <b>{d:winsneeded}</b> 场优先模式比赛来确立您的 CS 综合得分"
-		"cs_rating_wins_needed_verbose_intro:p{winsneeded}"	"赢得 <b>{d:winsneeded}</b> 场比赛来确立您的 CS 综合得分#|#赢得 <b>{d:winsneeded}</b> 场比赛来确立您的 CS 综合得分"
-		"cs_rating_need_wins:p{wins-needed}"							"需获胜{d:wins-needed}场#|#需获胜{d:wins-needed}场"
+		"cs_rating_wins_needed:f"						"再赢 <b>{d:winsneeded}</b> 场优先模式比赛"
+		"cs_rating_wins_needed_verbose:f"				"赢得 <b>{d:winsneeded}</b> 场优先模式比赛来确立您的 CS 综合得分"
+		"cs_rating_wins_needed_verbose_intro:f"			"赢得 <b>{d:winsneeded}</b> 场比赛来确立您的 CS 综合得分"
+		"cs_rating_need_wins:f"							"需获胜{d:wins-needed}场"
 
 		"cs_rating_rating_established"					"您已确立的 CS 综合得分"
 
-		"wins_count:p{wins}"						"{d:wins} 已胜利场次#|#{d:wins} 已胜利场次"
+		"wins_count:f"									"{d:wins} 已胜利场次"
 
 
 		"skillgroup_loading"				"加载中……"
@@ -44771,7 +44885,7 @@
 		"FriendsLobby_tooltip"					"进一步了解组队房间"
 		"friends_lobby_count"					"+ {s:lobby_count}"
 
-		"contextmenu_lobby-count:p{lobby_count}"	"{d:lobby_count} 大厅 #|#{d:lobby_count} 大厅"
+		"contextmenu_lobby-count:f"				"{d:lobby_count} 大厅"
 
 
 		"PopupGoTeamMatchmaking_Title"			"官方匹配"
@@ -45121,6 +45235,7 @@
 		"inv_context_remove_patch"			"移除布章"		
 		"inv_context_openloadout"			"在武器装备中查看"
 		"inv_context_sell"					"在社区市场上出售"
+		"inv_context_marketlisting"			"查看市场挂售列表"
 		"inv_context_tradeup_add"			"使用汰换合同"
 		"inv_context_tradeup_remove"		"从汰换合同中移除"
 		"inv_context_open_contract"			"打开合同"
@@ -45178,6 +45293,7 @@
 		"inv_session_prop_updated"			"已更新！"
 		"inv_session_prop_quest_reward"		"奖励！"
 		"inv_session_prop_xpshopredeem"		"最新！"
+		"inv_session_prop_marketlisting"	"<img src='file://{images}/icons/ui/coupon.svg' class='item-tile__onmarket'/> 在售"
 		"inv_equipped_item"					"为 <b>{s:team}</b> 装备 <b>{s:name}</b>"
 		"inv_equipped_item_noteam"			"已装备 <b>{s:name}</b>"
 		"inv_unequipped_item"				"未装备 <b>{s:name}</b>"
@@ -45265,7 +45381,7 @@
 		"popup_useitem_warning"	"{s:itemname} 只可使用一次。"
 		"popup_useitem_warning_getkeychaincharges"	"此物品只能打开一次"
 		"popup_useitem_button"	"使用物品"
-		"popup_useitem_button_getkeychaincharges:p{item_count}"	"添加<b>{d:item_count}</b>个挂件拆卸器t#|#添加<b>{d:item_count}</b>个挂件拆卸器"
+		"popup_useitem_button_getkeychaincharges:f"	"添加<b>{d:item_count}</b>个挂件拆卸器"
 
 		"popup_prestigecheck_title"	"服役勋章"
 		"popup_prestigecheck_desc"	"正在确认您的服役勋章资格，请稍候..."
@@ -45282,6 +45398,7 @@
 		"popup_delete_title"	"{s:itemname}"
 		"popup_delete_desc"		"您确定要删除这件物品？"
 		"popup_delete_warning"	"删除物品的操作无法撤销。"
+		"popup_delete_tooltip"	"长按删除该物品，删除操作不可撤销。"
 		"popup_delete_button"	"删除物品"
 
 		"popup_usegift_title"	"赠送 {s:itemname}"
@@ -45361,29 +45478,29 @@
 		"popup_can_sticker_button"			"应用印花 {d:sticker_count}/{d:max_stickers}"
 
 		//Decodable
-		"popup_decodeable_xray_title" 		"武器箱预览"
-		"popup_decodeable_title" 		"开箱"
-		"popup_decodeable_desc"			"解锁 <b>{s:itemname}</b>"
-		"popup_decodeable_xray_desc"	"<b>{s:itemname}</b>"
-		"popup_decodeable_desc_graffiti"	"开启 <b>{s:itemname}</b>"
-		"popup_decodeable_desc_fantoken"	"激活 <b>{s:itemname}</b>"
-		"popup_decodeable_desc_terminal"	"开启 <b>{s:itemname}</b>"
-		"popup_decodeable_warning"		"这个武器箱只能打开一次"
+		"popup_decodeable_xray_title"			"武器箱预览"
+		"popup_decodeable_title" 				"开箱"
+		"popup_decodeable_desc"					"解锁 <b>{s:itemname}</b>"
+		"popup_decodeable_xray_desc"			"<b>{s:itemname}</b>"
+		"popup_decodeable_desc_graffiti"		"开启 <b>{s:itemname}</b>"
+		"popup_decodeable_desc_fantoken"		"激活 <b>{s:itemname}</b>"
+		"popup_decodeable_desc_terminal"		"开启 <b>{s:itemname}</b>"
+		"popup_decodeable_warning"				"这个武器箱只能打开一次"
 		"popup_decodeable_warning_graffiti"		"该涂鸦仅可被启封一次"
 		"popup_decodeable_warning_fantoken"		"该物品仅可被激活一次"
 		"popup_decodeable_warning_terminal"		"开启后，您的上行链路终端机将无法交易且无法在市场出售"
-		"popup_decodeable_button"		"开箱"
-		"popup_decodeable_button_graffiti"	"启封涂鸦"
-		"popup_decodeable_button_fantoken"	"激活物品"
-		"popup_decodeable_button_terminal"	"开启终端机"
-		"popup_decodeable_async_desc"	"使用 <b>{s:itemname}</b>"
+		"popup_decodeable_button"				"开箱"
+		"popup_decodeable_button_graffiti"		"启封涂鸦"
+		"popup_decodeable_button_fantoken"		"激活物品"
+		"popup_decodeable_button_terminal"		"开启终端机"
+		"popup_decodeable_async_desc"			"使用 <b>{s:itemname}</b>"
 		"popup_decodeable_async_xray_desc"		"使用 X 射线扫描仪以揭示内部的物品"
-		"popup_decodeable_err_restricted"	"无法在当前地区开启 <b>{s:itemname}</b>"
-		"popup_decodable_open_case"		"开启并保留"
-		"popup_decodable_keep_weapon"	"保留一把武器"
-		"popup_decodable_rent_weapons"		"开启并租赁"
-		"popup_decodable_rent_get_key"		"需要{s:itemname} <b>{s:price}</b>"
-		"popup_decodable_rent_weapon_count:p{numlootlist}"	"租赁{d:numlootlist}件武器7天#|#租赁{d:numlootlist}件武器7天"
+		"popup_decodeable_err_restricted"		"无法在当前地区开启 <b>{s:itemname}</b>"
+		"popup_decodable_open_case"				"开启并保留"
+		"popup_decodable_keep_weapon"			"保留一把武器"
+		"popup_decodable_rent_weapons"			"开启并租赁"
+		"popup_decodable_rent_get_key"			"需要{s:itemname} <b>{s:price}</b>"
+		"popup_decodable_rent_weapon_count:f"	"租赁{d:numlootlist}件武器7天"
 
 		//Capability
 		"popup_capability_upsell"	"这个操作需要一个 <b>{s:itemname}</b>"
@@ -45476,11 +45593,11 @@
 		"tournament_items_notice"		"仅可启封一张通行证。\n已购买的通行证需要等待一周才可交易/在市场上出售。"
 
 		//redeem souvenir
-		"popup_redeem_souvenir_title" "兑换本场比赛纪念品"
-		"popup_redeem_souvenir_action" "获得纪念包"
-		"popup_redeem_souvenir_action_redeem" "兑换纪念包"
-		"popup_redeem_souvenir_action_price" "{s:price} 获得纪念包"
-		"popup_redeem_souvenir_desc:p{redeems}" "<span class=\"get-souvenir-redeem-count\">{d:redeems}</span> 纪念包兑换剩余#|#<span class=\"get-souvenir-redeem-count\">{d:redeems}</span> 纪念包兑换剩余"
+		"popup_redeem_souvenir_title"			"兑换本场比赛纪念品"
+		"popup_redeem_souvenir_action"			"获得纪念包"
+		"popup_redeem_souvenir_action_redeem"	"兑换纪念包"
+		"popup_redeem_souvenir_action_price" 	"{s:price} 获得纪念包"
+		"popup_redeem_souvenir_desc:f" 		 	"<span class=\"get-souvenir-redeem-count\">{d:redeems}</span> 纪念包兑换剩余"
 
 		//operation popup
 		"op9_name"							"“裂网大行动”"
@@ -45868,13 +45985,13 @@
 		"party_message_advertising_n"		"向附近玩家宣传此房间"
 		"party_message_advertising_g"		"向 Steam 组宣传此房间"
 		"party_message_advertising_ng"		"向 Steam 组和附近玩家宣传此房间"
-		"matchmaking_stat_avgSearchTimeSeconds"	"{s:stat} 预计寻找匹配时间"
-		"matchmaking_stat_playersOnline"		"{d:stat} 名玩家在线"
-		"matchmaking_stat_playersLockedIn:p{stat}"	"{d:total_stat}位玩家中的{d:stat}位已确认#|#{d:total_stat}位玩家中的{d:stat}位已确认"
-		"matchmaking_stat_playersSearching"		"{d:stat} 名玩家正在寻找匹配"
-		"matchmaking_stat_serversOnline"		"{d:stat} 组服务器在线"
-		"matchmaking_stat_ongoingMatches"		"{d:stat} 场比赛进行中"
-		"matchmaking_tooltip_title"				"比赛设置"
+		"matchmaking_stat_avgSearchTimeSeconds:f"	"{s:stat} 预计寻找匹配时间"
+		"matchmaking_stat_playersOnline:f"			"{d:stat} 名玩家在线"
+		"matchmaking_stat_playersLockedIn:f"		"{d:total_stat}位玩家中的{d:stat}位已确认"
+		"matchmaking_stat_playersSearching:f"		"{d:stat} 名玩家正在寻找匹配"
+		"matchmaking_stat_serversOnline:f"			"{d:stat} 组服务器在线"
+		"matchmaking_stat_ongoingMatches:f"			"{d:stat} 场比赛进行中"
+		"matchmaking_tooltip_title"			"比赛设置"
 		"rotating_map_timer"				"在<b>{s:map-rotate-timer}</b>后进入下一张地图<b>{s:next-mapname}</b>"
 		"play_maps_section_unranked"		"混战模式地图组"
 		"play_maps_section_ranked"			"竞技模式地图组"
@@ -46106,26 +46223,26 @@
 		"tooltip_comp_wins"				"<b>竞技比赛</b>胜利次数"
 
 		"tooltip_skill_group_generic"	"段位用于查找匹配您能力的比赛。"
-		"tooltip_skill_group_none:p{winsneeded}"		"赢得 <b>{d:winsneeded}</b> 场比赛来确立您的竞技模式段位。#|#赢得 <b>{d:winsneeded}</b> 场比赛来确立您的竞技模式段位。"
+		"tooltip_skill_group_none:f"	"赢得 <b>{d:winsneeded}</b> 场比赛来确立您的竞技模式段位。"
 		"tooltip_skill_group_expired"	"由于不活跃，段位已过期失效，赢得 1 场比赛以再次显示段位。"
 		"tooltip_skill_group_recalibrating"	"您的段位在校准中，赢得 1 场比赛以再次显示段位。"
 		"tooltip_skill_group_locked"	"通过在段位匹配中游戏，升级段位。购买升级成优先状态，可解冻你的段位。"
 
 		"tooltip_cs_rating_generic"		"玩家的 CS 综合得分是量化其整体 反恐精英 水平的标准，在优先模式中进行衡量。"
-		"tooltip_cs_rating_none:p{winsneeded}"		"赢得 <b>{d:winsneeded}</b> 场优先模式比赛来确立您的 CS 综合得分。#|#赢得 <b>{d:winsneeded}</b> 场优先模式比赛来确立您的 CS 综合得分。"
+		"tooltip_cs_rating_none:f"		"赢得 <b>{d:winsneeded}</b> 场优先模式比赛来确立您的 CS 综合得分。"
 		"tooltip_cs_rating_expired"		"由于不活跃，您的 CS 综合得分已过期失效，赢得 1 场比赛以再次显示段位。"
 
 		"tooltip_skill_group_genericwingman"	"在搭档模式中，段位被用来在匹配时寻找与您水平相称的玩家。"
-		"tooltip_skill_group_nonewingman:p{winsneeded}"		"赢得 <b>{d:winsneeded}</b> 场比赛来确立您的搭档模式段位。#|#赢得 <b>{d:winsneeded}</b> 场比赛来确立您的搭档模式段位。"
+		"tooltip_skill_group_nonewingman:f"		"赢得 <b>{d:winsneeded}</b> 场比赛来确立您的搭档模式段位。"
 		"tooltip_skill_group_expiredwingman"	"由于不活跃，搭档模式段位已过期失效, 赢得 1 场比赛以再次显示段位。"
 		"tooltip_skill_group_recalibratingwingman"	"搭档模式段位校准中，赢得 1 场比赛以再次显示段位。"
 
 
 		"tooltip_skill_group_genericdangerzone"	"头号特训段位代表着玩家在官方头号特训模式匹配中的战绩。"
-		"tooltip_skill_group_nonedangerzone"	"头号特训模式段位需要被校准，完成一些头号特训比赛以确立您的段位。"
+		"tooltip_skill_group_nonedangerzone:f"	"头号特训模式段位需要被校准，完成一些头号特训比赛以确立您的段位。"
 		"tooltip_skill_group_expireddangerzone"	"头号特训模式段位需要被校准，完成一些头号特训比赛以确立您的段位。"
 		"tooltip_skill_group_recalibratingdangerzone"	"头号特训模式段位需要被校准，完成一些头号特训比赛以确立您的段位。"
-		"tooltip_skill_group_wins:p{wins}"				"<img src='file://{images}/icons/ui/trophy.svg' vspace='6' class='player-card-tooltip-icon'/> {d:wins} 场胜利 #|#<img src='file://{images}/icons/ui/trophy.svg' vspace='6' class='player-card-tooltip-icon'/> {d:wins} 场胜利"
+		"tooltip_skill_group_wins:f"			"<img src='file://{images}/icons/ui/trophy.svg' vspace='6' class='player-card-tooltip-icon'/> {d:wins} 场胜利"
 
 		"tooltip_xp_current"			"您的当前经验值是 {s:xpcurrent}"
 		"tooltip_xp_have_max_current"	"已获得全球上将军衔！"
@@ -46702,8 +46819,8 @@
 
 		"team-intro-1st-half"							"上半场"
 		"team-intro-2nd-half"							"下半场"
-		"team-intro-overtime-1st-half:p{overtime_num}"	"加时赛：上半场#|#加时赛 {d:overtime_num}：上半场"
-		"team-intro-overtime-2nd-half:p{overtime_num}"	"加时赛：下半场#|#加时赛 {d:overtime_num}：下半场"
+		"team-intro-overtime-1st-half:f"				"加时赛 {d:overtime_num}：上半场"
+		"team-intro-overtime-2nd-half:f"				"加时赛 {d:overtime_num}：下半场"
 		"team-intro-starting-as-t"						"作为 T 方开始比赛"
 		"team-intro-starting-as-ct"						"作为 CT 方开始比赛"
 		"team-intro-playing-as-t"						"作为 T 方游戏"
@@ -46765,7 +46882,7 @@
 		"scoreboard_arsenal_1"							"亚军"
 		"scoreboard_arsenal_2"							"季军"
 
-		"scoreboard_timeline_ot:p{scoreboard_ot}"		"加时赛#|#加时赛 {d:scoreboard_ot}"
+		"scoreboard_timeline_ot:f"						"加时赛 {d:scoreboard_ot}"
  
 
 		// RANK UP REDEMPTION STORE 
@@ -46794,10 +46911,10 @@
 		//
 		///////////////////////////////////////////////////////////
 		
-		"eom-skillgroup-win:p{matcheswon}"				"{s:rating_type} 比赛胜利次数#|#{s:rating_type} 比赛胜利次数"
-		"eom-skillgroup-map-win:p{matcheswon}"			"{s:rating_type} {s:map} 比赛获胜#|#{s:rating_type} {s:map} 比赛获胜"
+		"eom-skillgroup-win:f"							"{s:rating_type} 比赛胜利次数"
+		"eom-skillgroup-map-win:f"						"{s:rating_type} {s:map} 比赛获胜"
 
-		"eom-skillgroup-needed-wins:p{winsneeded}"		"赢得 {d:winsneeded} 场比赛来显示您的段位#|#赢得 {d:winsneeded} 场比赛来显示您的段位"
+		"eom-skillgroup-needed-wins:f"					"赢得 {d:winsneeded} 场比赛来显示您的段位"
 		"eom-skillgroup-expired"						"赢得 <b>1</b> {s:rating_type} 场比赛来刷新您过期的段位"
 		"eom-skillgroup-expired-premier"				"赢得 <b>1</b> {s:rating_type} 场比赛来刷新您过期的 CS 综合得分"
 		"eom-skillgroup-recalibrating"					"段位重新校准中，赢得 <b>1</b> {s:rating_type} 场比赛即可显示"
@@ -47648,7 +47765,7 @@
 											</ul>"
 		"WatchMenu_Viewer"				"观众"
 		"WatchMenu_Viewers"				"观众"
-		"WatchMenu_Viewers_dv:p{spectatorCount}"			"{d:spectatorCount} 观众#|#{d:spectatorCount} 观众"
+		"WatchMenu_Viewers_dv:f"		"{d:spectatorCount} 观众"
 		"WatchMenu_FirstHalf"			"上半场"
 		"WatchMenu_SecondHalf"			"下半场"
 		"WatchMenu_Overtime"			"加时赛"
@@ -47919,8 +48036,8 @@
 		"Panorama_DeathPanel_Killer1_Weapon_Plural" 		"使用 {s:weapon_name} 击杀了你"
 		"Panorama_DeathPanel_Killer1_Weapon_CustomString" 	"{s:weapon_name}"
 
-		"Panorama_DeathPanel_DamageTaken:p{hits_taken}"		"<font color='#A0A0A0'>受到 </font><font color='#FFFFFF'><b>{d:damage_taken} 点伤害，</b></font> <font color='#A0A0A0'></font> <font color='#FFFFFF'><b>命中 {d:hits_taken} 次</b></font>#|#<font color='#A0A0A0'>受到 </font><font color='#FFFFFF'><b>{d:damage_taken} 点伤害，</b></font> <font color='#A0A0A0'></font> <font color='#FFFFFF'><b>命中 {d:hits_taken} 次</b></font>"
-		"Panorama_DeathPanel_DamageGiven:p{hits_given}"		"<font color='#A0A0A0'>造成 </font><font color='#FFFFFF'><b>{d:damage_given} 点伤害，</b></font> <font color='#A0A0A0'></font> <font color='#FFFFFF'><b>命中 {d:hits_given} 次</b></font>#|#<font color='#A0A0A0'>造成 </font><font color='#FFFFFF'><b>{d:damage_given} 点伤害，</b></font> <font color='#A0A0A0'></font> <font color='#FFFFFF'><b>命中 {d:hits_given} 次</b></font>"
+		"Panorama_DeathPanel_DamageTaken:f"					"<font color='#A0A0A0'>受到 </font><font color='#FFFFFF'><b>{d:damage_taken} 点伤害，</b></font> <font color='#A0A0A0'></font> <font color='#FFFFFF'><b>命中 {d:hits_taken} 次</b></font>"
+		"Panorama_DeathPanel_DamageGiven:f"					"<font color='#A0A0A0'>造成 </font><font color='#FFFFFF'><b>{d:damage_given} 点伤害，</b></font> <font color='#A0A0A0'></font> <font color='#FFFFFF'><b>命中 {d:hits_given} 次</b></font>"
 
 		/////////////////////////////////////////////////////////////////
 		//
@@ -48065,7 +48182,7 @@
 		"laptop_app_version"						"v 1.1.0.2000"
 
 		"dealer_offer_attachment_title"							"{s:item-name}"
-		"dealer_offer_attachment_wear"						"{s:item-rarity}"
+		"dealer_offer_attachment_wear"							"{s:item-rarity}"
 		"dealer_offer_attachment_remaining_title"				"报价 #{d:offer-total}"
 		"dealer_offer_attachment_remaining"						"报价 #{d:offer-total}"
 		"dealer_offer_received_count"							"第<b>{s:offer-count}</b>次报价"
@@ -48080,8 +48197,8 @@
 		"user_btn_purchase_desc_purchase"		"长按购买此物品。购买后终端机将被丢弃。"
 		"user_btn_purchase_desc_continue"		"长按永久拒绝此报价并查看下一件。"
 		"user_btn_purchase_desc_end"		"拒绝最终报价并丢弃此终端机。"
-		"user_btn_purchase_title"			"第<b>{s:offer-count}次报价</b> - 推荐回复"
-		"user_btn_purchase_final_title"		"<b>最终报价</b> - 推荐回复"
+		"user_btn_purchase_title"			"第{s:offer-count}次 - 报价"
+		"user_btn_purchase_final_title"		"<b>最终报价</b>"
 		"user_btn_decline_desc"				"拒绝此报价并查看其他报价"
 		"user_btn_accept"		"接受报价 <b>{s:price}</b>"
 		"user_btn_accept_final"	"接受最终报价 <b>{s:price}</b>"
@@ -48103,6 +48220,18 @@
 		"user_btn_pause"		"暂停交易"
 		"user_btn_end"			"拒绝最终报价"
 
+		"user_message_limit_0"		"我最多可以出到 <b>{s:limit-setting}</b>。"
+		"user_message_limit_1"		"把<b>{s:limit-setting}</b>作为上限怎么样。"
+		"user_message_limit_2"		"最多<b>{s:limit-setting}</b>对我来说还行。"
+		"user_message_limit_3"		"<b>{s:limit-setting}</b>这个上限可以。"
+		"user_message_limit_unlimited_0"	"<b>无上限</b>，我全都想看。"
+		"user_message_limit_unlimited_1"	"<b>空白支票</b>。别担心钱包。"
+		"user_message_limit_unlimited_2"	"我是来买的。<b>全都拿出来给我看看</b>。"
+		"user_message_limit_unlimited_3"	"只要能开火，我都感兴趣。<b>没有限制</b>。"
+		"user_message_limit_unlimited_4"	"没有上限"
+		"offer_limit_setting"		"报价上限：{s:limit}"
+		"offer_limit_setting_interface"		"报价上限：{s:limit} <img src='file://{images}/icons/ui/expand.svg' class='expand-icon'/>"
+
 		"dealer_offer_Unknown"							"-"
 		"dealer_offer_1"								"1"
 		"dealer_offer_2"								"2"
@@ -48119,24 +48248,31 @@
 		"declined_offer_tooltip"	"已拒绝的报价"
 		"future_offer_tooltip"		"报价尚未显示。"
 		"laptop_expiration_tooltip"		"此上行链路终端机及其报价到期前的剩余时间。"
+		"laptop_max_offer_tooltip"		"设置你的报价上限。你只会收到低于该上限的报价。你可以随时修改。"
 		"collection_xp_tooltip"			"浏览本收藏品的报价可获得经验值。打开查看进度并领取经验值。"
+		"terminal_offer_limit_tooltip"		"更新你的报价上限。军火商只会向你显示不超过该上限的报价。"
 		"popup_lootlist_title"			"收藏品目录经验值"
 		"popup_lootlist_desc"			"浏览本收藏品的报价可获得经验值"
-		"popup_lootlist_progress"		"已查看 {d:seen}/{d:total} 条报价"
+
+		"popup_lootlist_progress:f"      "已浏览 {total, plural, one{{d:seen}/{d:total} 个报价} other{{d:seen}/{d:total} 个报价}}"
 		"popup_lootlist_claim_xp"		"获取额外经验值"
 		"popup_lootlist_claim_ww"		"正在领取经验值……"
-		"popup_lootlist_claim_ok"		"✅ 经验值领取成功"
+		"popup_lootlist_claim_ok"		"✔ 经验值领取成功"
 		"popup_vpn_status_connected"	"状态：已连接到安全网络"
 		"popup_vpn_status_disconnected"	"状态：连接已断开"
 		"popup_signal_full" 			"满格信号"
 		"popup_signal_ok" 				"强信号"
+		"popup_offer_limit_desc"		"为今后所有报价更新你的报价上限"
 		"laptop_battery_tooltip" 		"电池电量：{d:percent}%"
 		"laptop_original_seal_tooltip" 	"从此上行链路终端机购买的任意物品均附有「原始所有者证书」，该证书在您持有期间持续有效。"
 		"laptop_zoom_tooltip" 			"滚动鼠标滚轮缩放画面"
 		"laptop_pan_tooltip" 			"按住 Shift 键并拖动以移动视角"
 		"laptop_pricing_tooltip"		"价格全球统一，并会根据本收藏品中每件商品的需求自动调整。"
 
-
+		"dealer_message_set_offer_limit_0"		"首先，你能出多少？"
+		"dealer_message_set_offer_limit_1"		"先把这个说清楚。<!--.25-->你的上限是多少？"
+		"dealer_message_set_offer_limit_2"		"在我们开始之前……<!--.25-->上限是多少？你能出多少？"
+		
 		"dealer_message_start_0"  	"这些都是承包商统一配发的标准装备。<!--.25-->要啥功能有啥功能，就是没手续文件。"
 		"dealer_message_start_1"  	"我卖的是灰色渠道库存，没有纸质凭证。<!--.25-->放心：早凉透了。在库里封存多年，没人追查它们。<!--.25-->而且要是你感兴趣的话，指哪儿打哪儿照样响。"
 		"dealer_message_start_2"  	"今天早上阿赫拉丹海关扣了我的货。我编了一个关于医疗设备和某个可怜的垂死……随便什么人的感人故事，希望他们能通融下。<!--.25-->结果白给了。倒是塞满钞票的公文包解决了问题。<!--.25-->在我把这批\"透析仪\"送给孤儿院之前，先来看看货吧。"
@@ -48144,7 +48280,7 @@
 		"dealer_message_start_4"  	"我手头这批货绝对干净。<!--.25-->至少就其他人所知，您是它们的首任经手人。"
 		"dealer_message_start_5"  	"无菌处理，序列全磨，性能完美。<!--.25-->军事法庭管这叫证据。<!--.25-->但你我都知道这简直就是艺术品。"
 		"dealer_message_start_6"  	"整批货都是刚从仪仗队解放出来的稀罕物。<!--.25-->经常扛着游行检阅，从没开过火。"
-		"dealer_message_start_7"  	"很好，是你来了。<!--.25-->别的客户总打听货源，烦死了。<!--.25-->而你只关心是不是市面上最好的东西。<!--.25-->您猜怎么着？确实是。"
+		"dealer_message_start_7"  	"我的其他客户总想知道我卖的东西是怎么来的。我很烦这个。<!--.25-->而你只想知道这是不是市场上最好的货。<!--.25-->你猜怎么着：确实是。"
 		"dealer_message_start_8"  	"德罗斯维克达成和平协议。我爱死和平了。<!--.25-->毕竟有个负债累累的将军，和他堆满积灰军火的武器库。<!--.25-->我是说……<!--.25-->当然也因为和平是好事，无辜的生命什么的……<!--.25-->我在说什么啊，你根本不在乎。"
 		"dealer_message_start_9"  	"这批货走的灰色渠道分流线，都是稀罕货色。<!--.25-->特殊口径款，非萌新所能驾驭。包您满意。"
 		"dealer_message_start_10"  	"太尴尬了。<!--.25-->发货单上怕是不小心标错一箱了。<!--.25-->好吧，是几十箱。<!--.25-->不如在港务局查过来之前，帮我把这批库存\"消化\"掉？"
@@ -48167,7 +48303,6 @@
 		"dealer_message_start_27"	"我讨厌和叛乱分子打交道。叫他们“平民”不过是客气说法，本质就是群该死的门外汉。<!--.25-->算了，既然他们失联了，正好让真正的专业人士来接手这批硬货。"
 		"dealer_message_start_28"	"南边那个常年战乱区刚搞完两年一度的议会垮台仪式。<!--.25-->当地军火库像皮纳塔玩具似的被砸得稀烂，真是喜庆。"
 		"dealer_message_start_29"	"港务局稽查员上周五还说这批货\"手续异常\"。<!--.25-->结果这周一他女儿就收到了去斯坦威克大学的全额学费，货单也变回了\"农具\"。<!--.25-->没办法，教育可是大事。来瞧瞧这些\"农具\"吧。"
-
 
 		"dealer_message_resume_0"  	"<!--1-->你回来了。很好。交易还在桌上摆着。"
 		"dealer_message_resume_1"  	"<!--1-->需要考虑会儿？没问题。"
@@ -48231,7 +48366,6 @@
 		"dealer_message_next_offer_39"   "<!--1-->理解，那玩意儿我自己也不要。但眼下这款嘛……"
 		"dealer_message_next_offer_40"   "<!--1-->非得让我从仓库最里头拿压箱宝是吧？成，满足你。"
 
-
 		"dealer_message_last_offer_0"	"<!--0-->行，最后一口价。要就要，不要拉倒。"
 		"dealer_message_last_offer_1"	"<!--0-->这是我的最终报价了啊。"
 		"dealer_message_last_offer_2"	"<!--0-->最终报价。要就要，不要就赶紧走，别浪费我时间。"
@@ -48258,7 +48392,7 @@
 		"dealer_message_timerexpired_7"		"<!--.1-->还以为在帮你解决麻烦呢。<!--.5-->结果你在浪费我时间。"
 		"dealer_message_timerexpired_8"		"<!--.1-->交易取消。"	
 		"dealer_message_timerexpired_9"		"<!--.1-->时间到了。"
-		"dealer_message_timerexpired_10"		"<!--.1-->行了，毁灭吧，到此为止吧。"		
+		"dealer_message_timerexpired_10"	"<!--.1-->行了，毁灭吧，到此为止吧。"		
 
 		"dealer_message_open_check_out_0"		"<!--.5-->这单货跟你简直绝配，所以我第一个就想到你了。咱就把这事定了吧！"
 		"dealer_message_open_check_out_1"		"<!--.5-->明智之选。这就打包备货。"
@@ -48267,8 +48401,8 @@
 		"dealer_message_open_check_out_4"		"<!--.5-->完美。成交。"		
 		"dealer_message_open_check_out_5"		"<!--.5-->选得好。"	
 		"dealer_message_open_check_out_6"		"<!--.5-->这辈子最聪明的决定。拿下吧。"		
-		"dealer_message_open_check_out_7"		"<!--.5-->很好。走流程。"	
-		
+		"dealer_message_open_check_out_7"		"<!--.5-->很好。走流程。"
+
 		"dealer_message_txn_xld_bailout_0"		"<!--.5-->不急。你知道在哪儿找我。"
 		"dealer_message_txn_xld_bailout_1"		"<!--.5-->我随时都在。"
 		"dealer_message_txn_xld_bailout_2"		"<!--.5-->暂时给你留着报价。"
@@ -48336,12 +48470,30 @@
 		"dealer_message_addition_factory_new_1"	"<!--.25-->而且是崭新出厂。完美无瑕。"
 		"dealer_message_addition_factory_new_2"	"<!--.25-->直接从库里提的。崭新出厂。"
 		"dealer_message_addition_factory_new_3"	"<!--.25-->这个崭新出厂。从未开火。"
+		
+		"dealer_message_limit_first_time_0"		"很好，我只会给你看不超过 {s:limit} 的报价。 <!--.25-->看看你需要什么。"
+		"dealer_message_limit_first_time_2"		"只看低于 {s:limit} 的报价，我记住了。<!--.25-->时间紧迫。开始吧。"
+		"dealer_message_limit_first_time_3"		"已记录。已更新。<!--.25-->开始。"
+		"dealer_message_limit_first_time_unlimited_0"		"无上限，很好。我这就打开当前目录。<!--.25-->时间紧迫。开始。"
+		"dealer_message_limit_first_time_unlimited_1"		"收到。无上限。现在我们来真的了。<!--.25-->看看你需要什么。"
+
+		"dealer_message_limit_0"				"很好，我只会给你看不超过 {s:limit} 的报价。"
+		"dealer_message_limit_1"				"只看低于 {s:limit} 的报价，我记住了。"
+		"dealer_message_limit_2"				"正在调整参数。只显示不超过 {s:limit} 的报价。"
+		"dealer_message_limit_3"				"报价不超过 {s:limit}。已记录。已更新。"
+		"dealer_message_limit_4"				"我只会筛选符合条件且不超过 {s:limit} 的内容"
+		"dealer_message_limit_5"				"{s:limit}，新上限已记录"
+		"dealer_message_limit_6"				"明白。正在重置过滤器，只显示不超过 {s:limit} 的报价。"
+		"dealer_message_limit_unlimited_0"		"无上限，很好。我这就打开当前目录。"
+		"dealer_message_limit_unlimited_1"		"收到，无上限。如果有任何稀有货出现，我不会保留。"
+		"dealer_message_limit_unlimited_2"		"正合我意！要是有合适的，我立马告诉你。"
+		"dealer_message_limit_unlimited_3"		"收到。无上限。现在我们来真的了。"
 
 		"system_dealer_left_chat_0"				"军火商已退出聊天界面。"
 		"system_dealer_join_chat_0"				"{s:collection} 军火交易报价。<!--1.25-->军火商已上线"
 		"system_user_reject_offer_0"			"{s:user-name}已拒绝报价。"
-		
 
+		"system_user_updated_offer_limit_0"			"最高报价上限已更新为 {s:limit}。你可以随时更新该设置。"
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -48460,6 +48612,64 @@
 		"mission_segment_tooltip"						"{d:xp-reward}经验值"
 
 		"mission_location"								"在<b>{s:location}</b>的<b>{s:gamemode}</b>中"
+		"mission_directive:f"							"<b>{d:mission-points}</b> {s:actions}"
+ 		"mission_directive_progress:f"					"{d:mission-progress}/<b>{d:mission-points}</b> {s:actions}"
+
+
+		"quest_11000_var_desc:f"	  					" 在<b>{s:gamemode}: {s:location}</b>中用 {s:item1} 完成多次击杀。"
+		"quest_11000_var_partial:f" 					"...使用 {s:item1}。"
+		"quest_11000_var_ingame:f"	  					" 用 {s:item1} 完成多次击杀。"
+
+		"quest_11001_var_desc:f"	 					" 在<b>{s:gamemode}: {s:location}</b>中用 {s:item1} 完成多次击杀。"
+		"quest_11001_var_partial:f"	 					"...使用 {s:item1}。"
+		"quest_11001_var_ingame:f"	 					" 用 {s:item1} 完成多次击杀"
+
+		"quest_11002_var_desc:f"	 					" 在<b>{s:gamemode}: {s:location}</b>中用 {s:item1} 完成多次击杀。"
+		"quest_11002_var_partial:f"	 					"...使用 {s:item1}。"
+		"quest_11002_var_ingame:f"	 					" 用 {s:item1} 完成多次击杀"
+
+		"quest_11003_var_desc:f"						" 在<b>{s:gamemode}: {s:location}</b>中用 {s:item1} 完成多次击杀。"
+		"quest_11003_var_partial:f"	 					"...使用 {s:item1}。"
+		"quest_11003_var_ingame:f"	 					" 用 {s:item1} 完成多次击杀"
+
+		"quest_11004_var_desc:f"	 					" 在<b>{s:gamemode}: {s:location}</b>中赢得多个回合。"
+		"quest_11004_var_ingame:f"						" 赢得多个回合"
+
+		"quest_11005_var_desc:f"	 					" 在<b>{s:gamemode}: {s:location}</b>中赢得多个回合。"
+		"quest_11005_var_ingame:f"						" 赢得多个回合"
+
+		"quest_11006_var_desc:f"	 					" 在<b>{s:gamemode}: {s:location}</b>中赢得多个回合。"
+		"quest_11006_var_ingame:f"						" 赢得多个回合"
+
+		"quest_11007_var_desc:f"	 					" 在<b>{s:gamemode}: {s:location}</b>中用 {s:item1} 完成多次击杀。"
+		"quest_11007_var_partial:f"	 					"...使用 {s:item1}。"
+		"quest_11007_var_ingame:f"	 					" 用 {s:item1} 完成多次击杀"
+
+		"quest_11008_var_desc:f"	 					" 在<b>{s:gamemode}: {s:location}</b>中赢得多个回合。"
+		"quest_11008_var_ingame:f"						" 赢得多个回合"
+
+		"quest_11009_var_desc:f"	 					" 在<b>{s:gamemode}: {s:location}</b>中赢得多个回合。"
+		"quest_11009_var_ingame:f"						" 赢得多个回合"
+
+		"quest_11010_var_desc:f"	 					" 在<b>{s:gamemode}: {s:location}</b>中用 {s:item1} 完成多次击杀。"
+		"quest_11010_var_partial:f"	 					"...使用 {s:item1}。"
+		"quest_11010_var_ingame:f"	 					" 用 {s:item1} 完成多次击杀"
+
+		"quest_11011_var_desc:f"	 					" 在<b>{s:gamemode}: {s:location}</b>中赢得多个回合。"
+		"quest_11011_var_ingame:f"						" 赢得多个回合"
+
+		"quest_11012_var_desc:f"	 					" 在<b>{s:gamemode}: {s:location}</b>中赢得多个回合。"
+		"quest_11012_var_ingame:f"						" 赢得多个回合"
+
+		"quest_11013_var_desc:f"	 					" 在<b>{s:gamemode}: {s:location}</b>中赢得多个回合。"
+		"quest_11013_var_ingame:f"						" 赢得多个回合"
+
+		"quest_11014_var_desc:f"	 					" 在<b>{s:gamemode}: {s:location}</b>中赢得多个回合。"
+		"quest_11014_var_ingame:f"						" 赢得多个回合"
+
+		"quest_11015_var_desc:f"	 					" 在<b>{s:gamemode}: {s:location}</b>中赢得多个回合。"
+		"quest_11015_var_ingame:f"						" 赢得多个回合"
+
 		"mission_directive:p{mission-points}"			"<b>{d:mission-points}</b> {s:action}#|#<b>{d:mission-points}</b> {s:actions}"
  		"mission_directive_progress:p{mission-points}"	"{d:mission-progress}/<b>{d:mission-points}</b> {s:action}#|#{d:mission-progress}/<b>{d:mission-points}</b> {s:actions}"
 
@@ -48518,59 +48728,17 @@
 		"quest_11015_var_desc:p{mission-points}"	 	"在<b>{s:gamemode}: {s:location}</b>中赢得 1 个回合。#|# 在<b>{s:gamemode}: {s:location}</b>中赢得多个回合。"
 		"quest_11015_var_ingame:p{mission-points}"		"赢得 1 个回合 #|# 赢得多个回合"
 
-// crow_mask_51513_comment
-// crow_mask_51514_comment
+// crow_mask_51765_comment
+// crow_mask_51766_comment
+}
 
-		"SFUI_PlayerCount_Alive_Left:f"									"存活"
-		"SFUI_PlayerCount_Alive_Right:f"								"存活"
-		"funfact_damage_no_kills:f"										"{s:funfact-player} 没有获得击杀，但造成了 {d:funfact-d1} 伤害。"
-		"funfact_kills_with_single_grenade:f"							"{s:funfact-player} 用一枚投掷物击中 {d:funfact-d1} 名敌人。"
-		"funfact_kill_defuser:f"										"{s:funfact-player} 成功阻止了炸弹拆除者。"
-		"funfact_kill_rescuer:f"										"{s:funfact-player} 击杀了营救人质的CT。"
-		"funfact_killed_enemies:f"										"{s:funfact-player} 击杀了 {d:funfact-d1} 个对手。"
-		"funfact_first_kill:f"											"在本回合开始后的第 {d:funfact-d1} 秒， {s:funfact-player} 获得第一次击杀。"
-		"funfact_first_blood:f"											"在本回合开始后的第 {d:funfact-d1} 秒， {s:funfact-player} 获得首杀。"
-		"funfact_short_round:f"											"该回合只用了 {d:funfact-d1} 秒！"
-		"funfact_best_accuracy:f"										"{s:funfact-player} 的精准度高达 {d:funfact-d1}%。"
-		"funfact_knife_kills:f"											"{s:funfact-player} 在本回合中获得了 {d:funfact-d1} 匕首击杀。"
-		"funfact_damage_with_grenade:f"									"{s:funfact-player} 使用投掷物造成了 {d:funfact-d1} 点总伤害。"
-		"funfact_kills_grenades:f"										"{s:funfact-player} 用投掷物击杀了 {d:funfact-d1} 名敌人。"
-		"funfact_blind_kills:f"											"{s:funfact-player} 在被闪光震撼弹致盲时击杀了 {d:funfact-d1} 名敌人。"
-		"funfact_kills_with_last_round:f"								" 在 {d:funfact-d1} 只剩一颗子弹的情况下，{s:funfact-player} 击杀了一名敌人。"
-		"funfact_kills_headshots:f"										"{s:funfact-player} 在该回合内以精准打击方式击杀了 {d:funfact-d1} 名敌人。"
-		"funfact_kills_with_stattrak_weapon:f"							"{s:funfact-player} 的 StatTrak™ 武器在该回合中又多造成了 {d:funfact-d1} 次击杀。"
-		"funfact_donated_weapons:f"										"{s:funfact-player} 在该回合中为队友捐赠了 {d:funfact-d1} 件武器。"
-		"funfact_posthumous_kills_with_grenade:f"						"{s:funfact-player} 死后，用投掷物击杀了 {d:funfact-d1} 名敌人。"
-		"funfact_num_times_jumped:f"									"{s:funfact-player} 在本回合中跳跃了 {d:funfact-d1} 次。"
-		"funfact_fall_damage:f"											"{s:funfact-player} 验证了万有引力定律……受到了 {d:funfact-d1} 点坠落伤害。"
-		"funfact_items_purchased:f"										"{s:funfact-player} 购买了 {d:funfact-d1} 件物品。"
-		"funfact_won_as_last_member:f"									"当队友都阵亡后，{s:funfact-player} 孤军奋战，击杀了 {d:funfact-d1} 名敌人并获得了胜利。"
-		"funfact_number_of_overkills:f"									"{s:funfact-player} 击杀了 {d:funfact-d1} 名已被自己控制的玩家。"
-		"funfact_shots_fired:f"											"本回合总共开了 {d:funfact-d1} 枪。"
-		"funfact_money_spent:f"											"{s:funfact-player} 在本回合花掉了 ${d:funfact-d1}。"
-		"funfact_grenades_thrown:f"										"{s:funfact-player} 在当前回合中扔出了 {d:funfact-d1} 个投掷物。"
-		"funfact_used_all_ammo:f"										"{s:funfact-player} 耗尽了弹药。"
-		"funfact_survived_multiple_attackers:f"							"{s:funfact-player} 在受到 {d:funfact-d1} 名不同敌人的攻击后生还。"
-		"funfact_died_from_multiple_attackers:f"						"{s:funfact-player} 在阵亡之前受到了 {d:funfact-d1} 名敌人的攻击。"
-		"funfact_defended_bomb:f"										"{s:funfact-player} 在看守炸弹时击杀了 {d:funfact-d1} 名敌人。"
-		"funfact_items_dropped_value:f"									"{s:funfact-player} 丢掉了总价值达 ${d:funfact-d1} 的装备。"
-		"funfact_kill_wounded_enemies:f"								"{s:funfact-player} 解决了 {d:funfact-d1} 个受伤的敌人。"
-		"funfact_damage_multiple_enemies:f"								"{s:funfact-player} 对 {d:funfact-d1} 名敌人造成了伤害。"
-		"funfact_used_multiple_weapons:f"								"{s:funfact-player} 使用了 {d:funfact-d1} 种不同的武器。"
-		"funfact_terrorist_accuracy:f"									"T的精准度最高，为 {d:funfact-d1}%。"
-		"funfact_ct_accuracy:f"											"CT的精准度最高，为 {d:funfact-d1}%。"
-		"funfact_ct_win_no_kills:f"										"CT获得了胜利并且没有击杀任何T。"
-		"funfact_t_win_no_kills:f"										"T获得了胜利并且没有击杀任何CT。"
-		"funfact_t_win_no_casualties:f"									"T获得胜利并且无一阵亡。"
-		"funfact_ct_win_no_casualties:f"								"CT获得胜利并且无一阵亡。"
-		"funfact_best_terrorist_accuracy:f"								"{s:funfact-player} 的精准度为 {d:funfact-d1}%，而他所在队伍的精准度为 {d:funfact-d2}%。"
-		"funfact_best_counterterrorist_accuracy:f"						"{s:funfact-player} 的精准度为 {d:funfact-d1}%，而他所在队伍的精准度为 {d:funfact-d2}%。"
-		"funfact_fallback1:f"											"那块蛋糕只是个谎言。"
-		"funfact_fallback2:f"											"打哈欠。"
-		"funfact_draw:f"												"根据玩家投票结果比赛重新开始。"
-		"funfact_broke_windows:f"										"{s:funfact-player} 打碎了 {d:funfact-d1} 扇窗户。"
-		"funfact_nightvision_damage:f"									"{s:funfact-player} 开启夜视仪时对敌人造成了 {d:funfact-d1} 点伤害。"
-		"funfact_defused_with_dropped_kit:f"							"{s:funfact-player} 捡起了掉落的拆弹器并拆除了炸弹。"
+
+
+
+}
+
+
+er} 捡起了掉落的拆弹器并拆除了炸弹。"
 		"funfact_killed_half_of_enemies:f"								"{s:funfact-player} 击杀了敌方队伍中的 {d:funfact-d1}%。"
 		"funfact_knife_level_reached:f"									"{d:funfact-d1} 名玩家达到了黄金匕首等级。"
 		"funfact_killed_before_dying:f"									"{s:funfact-player} 在阵亡之前击杀了 {d:funfact-d1} 名玩家。"

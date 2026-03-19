@@ -104,6 +104,8 @@
 		"GameUI_Xhair_Copy_Code_Confirm"		"Ganti crosshair saat ini?"
  
 		"GameUI_Confirm_Write_Setting_Title"	"Permintaan Perubahan Pengaturan"
+		"GameUI_Confirm_Write_Setting_Text"		"Map workshop ini \"{s:mapname}\" ingin mengubah pengaturanmu. Hal ini mungkin termasuk perubahan pada crosshair, radar, suara, dan lainnya. Apakah kamu mengizinkan perubahan ini?"
+
 		"settings_damage_prediction"			"Prediksi Damage"
 		"settings_damage_prediction_info"		"Langsung memainkan efek audio/visual saat memberikan damage tanpa menunggu konfirmasi dari server. Prediksi damage dapat membuat tembakan terasa jauh lebih responsif, meskipun terkadang bisa salah (cth. karena aim punch, efek melambat, atau kematian yang belum disadari oleh client). Prediksi damage tidak aktif jika kamu memiliki ping yang tinggi."
 		"GameUI_PredictBodyShotEffects"			"Prediksi Efek Tembakan pada Badan"
@@ -317,7 +319,11 @@
 		"Button_Model"					"Model"
 		"Button_Musickit"				"Kit Musik"
 		"Button_All"					"Semua"
-"Button_Edit"					"Edit..."
+
+
+		// Publish File Dialog
+		"Frame_Untitled"				" "
+		"Button_Edit"					"Edit..."
 		"Button_Remove"					"Hapus"
 		"Label_Name"					"Nama"
 		"Label_Directory"				"Direktori"
@@ -1894,6 +1900,9 @@
 		"Player_Killing_Spree_more"		"Killing spree!!! x%s1"
 		"Player_Killed_Enemy_Leader"	"Kamu membunuh pemimpin musuh!"
 		"SFUI_Player_Is_Leader"			"KAMU ADALAH PEMIMPIN TIM"
+		"SFUI_PlayerCount_Alive_Left:f"		"{left_side_alive, plural, other{HIDUP}}"
+		"SFUI_PlayerCount_Alive_Right:f"	"{right_side_alive, plural, other{HIDUP}}"
+
 		"hostagerescuetime"			"AT mendapatkan lebih banyak waktu karena berhasil mencapai lokasi sandera"
 
 		// Cash award reasons
@@ -2412,6 +2421,7 @@
 		"NewItemMethod_CommunityMarketPurchase"	"Kamu Menerima dari Pasar Komunitas:"
 
 		"ItemHistory_ActionWithTime"									"%s1 pada %s2"
+		"ItemHistory_Action_GSCreate"									"Dibuat"
 		"ItemHistory_Action_GenericAdd"									"Ditambahkan"
 		"ItemHistory_Action_GenericRemove"								"Dihapus atau diubah"
 		"ItemHistory_Action_Traded"										"Ditukar"
@@ -2475,6 +2485,10 @@
 		"ItemHistory_Action_TournamentDrop"								"Mendapatkan drop suvenir"
 		"ItemHistory_Action_TemplateItemGrant"							"Diperoleh"
 		"ItemHistory_Action_Market_Add"									"Diterima dari Pasar Komunitas"
+		"ItemHistory_Action_Market_Sealed"								"Membuat penawaran di Pasar Komunitas Steam"
+		"ItemHistory_Action_Market_Unsealed"							"Menghapus iklan penjualan dari Pasar Komunitas Steam"
+		"ItemHistory_Action_Market_SoldSealed"							"Terjual di Pasar Komunitas Steam"
+
 		"ItemHistory_Transaction_Delete"								"Kamu menghapus"
 		"ItemHistory_Transaction_Craft"									"Dibuat"
 		"ItemHistory_Transaction_UnlockCrate"							"Membuka kontainer"
@@ -2631,6 +2645,7 @@
 		"Attrib_NeverTradableButHasAfterDate1"		"Item ini tidak bisa ditukar atau dipasarkan."
 		"Attrib_NeverTradableButHasAfterDate2"		"Setelah digunakan, item yang diterima tidak bisa ditukar sampai %s1"
 		"Attrib_TradeProtectedEscrowDate"			"⇆ Item ini memiliki perlindungan pertukaran dan tidak dapat digunakan, dimodifikasi, atau ditransfer sampai %s1."
+		"Attrib_TradeProtectedEscrowMarket"			"⇆ Item ini diiklankan di Pasar Komunitas Steam dan tidak dapat digunakan atau dimofidikasi selama iklan penjualan aktif."
 		"Attrib_TradableAfterDate"					"Bisa Ditukar Setelah %s1"
 		"Attrib_TradableMarketableAfterDate"		"Bisa Ditukar/Dipasarkan Setelah %s1"
 		"Attrib_MarketableWithRestrictions"			"Bisa Langsung Dijual di Pasar Komunitas Steam"
@@ -4332,6 +4347,8 @@
 		
 		"CSGO_crate_community_36"				"Terminal Genesis Tersegel"
 		"CSGO_crate_community_36^volatile"		"Terminal Genesis Aktif"
+		"CSGO_crate_community_37"				"Terminal Dead Hand Tersegel"
+		"CSGO_crate_community_37^volatile"		"Terminal Dead Hand Aktif"
 		"CSGO_crate_keychain_pack_kc_drboom_capsule"	    	"Koleksi Gantungan Dr. Boom"
 		"CSGO_crate_keychain_pack_kc_drboom_capsule_desc"		"Koleksi ini berisi berbagai gantungan Dr. Boom."
 		"CSGO_crate_keychain_pack_kc_drboom_capsule_short"	    "Gantungan Dr. Boom"
@@ -5307,6 +5324,7 @@
 		"CSGO_set_community_36"					"Koleksi Genesis"
 		"CSGO_set_timed_drops_exuberant"		"Koleksi Harlequin"
 		"CSGO_set_timed_drops_achroma"			"Koleksi Achroma"
+		"CSGO_set_community_37"					"Koleksi Dead Hand"
 		/////////////////
 		// lootlist override strings
 		//////////////////
@@ -33823,8 +33841,89 @@ melawan FaZe."
 		"PaintKit_m4a1s_quick_liquidation"				"Warna dasar gelap dan highlight merah dan biru yang dipilih dengan cermat membuat M4A1-S yang dicat khusus ini tampak seolah-olah bersinar di bawah cahaya penerang.\n\n<i>Refleksi yang tenang</i>"
 		
 		"PaintKit_aug_trigger_discipline_velco"			"Pola isometrik warna biru beserta aksen warna oranye telah diterapkan.\n\n<i>Kesabaran selalu berbuah manis</i>"
+"PaintKit_glove_driver_knit_argyle_green_Tag"					"Hand Sweaters"
+		
+		"PaintKit_glove_driver_ostrich_purple_Tag"						"Plum Quill"
+		
+		"PaintKit_glove_driver_silk_dragon_white_Tag"					"Wave Chaser"
+		
+		"PaintKit_glove_brocade_crane_Tag"								"Brocade Crane"
+		
+		"PaintKit_glove_driver_brocade_flower_red_Tag"					"Brocade Flowers"
+		
+		"PaintKit_glove_driver_dragon_scale_red_Tag"					"Dragon Fists"
+		
+		"PaintKit_glove_driver_embroidered_flowers_teal_Tag"			"Garden"
+		
+		"PaintKit_glove_driver_scallop_metallic_blue_Tag"				"Seigaiha"
+		
+		"PaintKit_glove_sport_velvet_red_Tag"							"Occult"
+		
+		"PaintKit_glove_sport_beadwork_diamonds_purple_Tag"				"Violet Beadwork"
+		
+		"PaintKit_glove_sport_camo_winter_Tag"							"Frosty"
+		
+		"PaintKit_glove_sport_pinstripe_black_Tag"						"Creme Pinstripe"
+		
+		"PaintKit_glove_sport_racer_red_Tag"							"Red Racer"
+		
+		"PaintKit_glove_sport_tech_gradient_bright_Tag"					"Ultra Violent"
+		
+		"PaintKit_glove_specialist_abstract_green_Tag"					"Lime Polycam"
+		
+		"PaintKit_glove_specialist_graffiti_black_Tag"					"Blackbook"
+		
+		"PaintKit_glove_specialist_quilted_black_Tag"					"Chocolate Chesterfield"
+		
+		"PaintKit_glove_specialist_quilted_white_Tag"					"Pillow Punchers"
+		
+		"PaintKit_glove_specialist_sunburst_red_Tag"					"Sunburst"
+		
+		"PaintKit_glove_specialist_dragon_blue_Tag"						"Cloud Chaser"
+		
+		"PaintKit_glove_specialist_wave_blue_Tag"						"Big Swell"
+		
+// END COMMUNITY_37 GLOVES
 
-// END COMMUNITY_36
+// COMMUNITY_37 WEAPONS
+		
+		"PaintKit_glock_jdpeek"											"Telah dicat khusus dengan warna neon dan cat gliter metalik.\n\n<i>Sedikit berlebihan untukku, tapi aku bukan target pasarnya... — Booth, Pedagang Senjata</i>"
+		"PaintKit_glock_jdpeek_Tag"										"Fully Tuned"
+					
+		"PaintKit_awp_queens_gambit"									"Telah dicat khusus dengan warna biru benhur dan emas. Gambar seorang ratu telah dilukis di bagian depan popor.\n\n<i>Setiap tembakan merupakan perintah kerajaan yang melambangkan kekuatan dan ketepatan</i>"
+		"PaintKit_awp_queens_gambit_Tag"								"Queen's Gambit"
+					
+		"PaintKit_p90_deathgaze"										"Telah dicat khusus dengan grafiti Medusa di atas lapisan dasar motif marmer Carrara.\n\n<i>Jangan menyembah berhala yang dibangun di atas dasar tipu daya</i>"
+		"PaintKit_p90_deathgaze_Tag"									"Deathgaze"
+					
+		"PaintKit_p250_kintsugi"										"Seekor burung warna oranye terang dan aksen emas telah dicat khusus di atas lapisan dasar berwarna gading.\n\n<i>Seperti piring makan malam yang mewah itu, senjata ini juga hanya digunakan untuk acara spesial</i>"
+		"PaintKit_p250_kintsugi_Tag"									"Kintsugi"
+					
+		"PaintKit_mp9_urban_sovereign"									"Telah dicat khusus dengan desain urban dan dilengkapi grafiti warna emas.\n\n<i>Raja tidak bersembunyi di balik dinding; mereka melukisnya</i>"
+		"PaintKit_mp9_urban_sovereign_Tag"								"Urban Sovereign"
+					
+		"PaintKit_mp7_amberline"										"Telah dicat semprot dengan garis diagonal berwarna oranye dan putih.\n\n<i>Bukti kepemilikan</i>"
+		"PaintKit_mp7_amberline_Tag"									"Amberline"
+					
+		"PaintKit_bizon_rmx"											"Telah dicat khusus dengan gradasi warna ungu serta desain warna merah dan putih.\n\n<i>Ringan, cepat, dan berbahaya ... teorinya begitu.</i>"
+		"PaintKit_bizon_rmx_Tag"										"RMX"
+					
+		"PaintKit_ak47_crane_flight"									"Sebuah bangau dan aksen warna emas telah dilukis dengan tangan di atas lapisan dasar berwarna hitam dan putih.\n\n<i>Pertanda datangnya gerhana bulan total</i>"
+		"PaintKit_ak47_crane_flight_Tag"								"Crane Flight"
+					
+		"PaintKit_deagle_firebreathing"									"Telah dicat khusus dengan motif api berwarna ungu dan biru menggunakan cat mutiara.\n\n<i>Berisi kualitas dan kemampuan yang luar biasa</i>"
+		"PaintKit_deagle_firebreathing_Tag"								"Firebreathing"
+					
+		"PaintKit_ump_fragment"											"Telah dicat khusus dengan sebuah desain berwarna perak, hitam, dan merah.\n\n<i>Sedang pergi menghabisi musuh</i>"
+		"PaintKit_ump_fragment_Tag"										"Fragment"
+					
+		"PaintKit_sawedoff_fusion"										"Telah dicat khusus dengan desain berwarna hitam dan emas. Detail lainnya akan terungkap di bawah pencahayaan yang berbeda.\n\n<i>Mataku telah melihat banyak hal....</i>"
+		"PaintKit_sawedoff_fusion_Tag"									"Fusion"
+					
+		"PaintKit_galil_galigator"										"Sebuah aligator dan simbol radiasi telah dicat khusus di atas lapisan dasar berwarna hijau dan kuning.\n\n<i>NYAM! NYAM! NYAM!</i>"
+		"PaintKit_galil_galigator_Tag"									"Galigator"
+					
+		// END COMMUNITY_37 WEAPONS
 
 // OVERPASS_2024
 				
@@ -34560,6 +34659,7 @@ melawan FaZe."
 		"StoreCheckout_GameLicense_AlreadyOwned"		"Kamu sudah memiliki Lisensi Game Counter-Strike: Global Offensive."
 		"StoreCheckout_GameLicense_PurchasePending_PW"	"Kamu sudah membeli Lisensi Game Counter-Strike: Global Offensive. Kami sedang mencoba mengonfirmasi status transaksimu sebelumnya ke Perfect World. Jika saldo Perfect World-mu telah terpakai, maka pembelianmu sebelumnya akan segera selesai secara otomatis. Jika tidak, harap tunggu sebentar dan coba lagi."
 		"StoreCheckout_NotEnoughRoom"			"Ruang di dalam inventarismu tidak cukup untuk membeli item sebanyak itu.\nUnit Penyimpanan bisa dibeli dari toko dalam game.\nKamu bisa menggunakannya untuk memindahkan kelebihan item di Inventaris dan mengambilnya lagi nanti."
+		"StoreCheckout_NotEnoughRoom_TooManyStorageUnits"	"Kamu sudah memiliki terlalu banyak Unit Penyimpanan.\n\nUnit Penyimpanan tambahan tidak dapat dibeli dari toko dalam game sampai pemilik akun menghubungi Bantuan Steam."
 		"StoreCheckout_TooManyItemsInCart"		"Transaksi tidak dapat dilanjutkan ke proses checkout karena berisi terlalu banyak item. Silakan pilih item lebih sedikit dan coba beli lagi."
 		"StoreCheckout_PurchaseExpiredItemsUnavailable" "Transaksi pembelianmu telah kedaluwarsa atau item ini tidak lagi tersedia untuk dijual. Kamu belum dikenakan biaya. Silakan coba melakukan pembelian lagi."
 		"StoreCheckout_ContactSupport_Dialog_Title"	"Peringatan"
@@ -35953,6 +36053,7 @@ melawan FaZe."
 		"SFUI_InvContextMenu_preview_musickit"       "Periksa - Pratinjau Musik"
 		"SFUI_InvContextMenu_decodable"     "Buka Kontainer"
 		"SFUI_InvContextMenu_sell"			"Jual Di Pasar Komunitas"
+		"SFUI_InvContextMenu_marketlisting"	"Lihat Iklan Penjualan di Pasar"
 		"SFUI_InvContextMenu_openloadout"   "Lihat Slot Perlengkapan"
 		"SFUI_InvContextMenu_inspectcase"	"Buka..."
 		"SFUI_InvContextMenu_useitem"	    "Gunakan Item"
@@ -36974,6 +37075,7 @@ melawan FaZe."
 		"CSGO_Demo_Toggle"							"[Shift+F2]"
 		"CSGO_Demo_Time"							"{s:current_time} / {s:total_time}"
 		"CSGO_Demo_Round"							"Ronde:"
+		"CSGO_Demo_Highlight"						"Sorotan"
 		"CSGO_Demo_End_Playback"					"Tutup Rekaman"
 		"CSGO_Demo_End_Playback_Overwatch"			"Lanjut ke Putusan"
 		"CSGO_Demo_End_Playback_Overwatch_Finished"	"Berikan Putusan"
@@ -39328,6 +39430,8 @@ melawan FaZe."
 		"SFUI_Settings_Network_Bandwidth_30mbps"   "3 Mbps"
 		"SFUI_Settings_Network_Bandwidth_40mbps"   "4 Mbps"
 		"SFUI_Settings_Network_Bandwidth_Max"	   "Tidak dibatasi"
+
+		"SFUI_Settings_Volatile_Limit_Unlimited"	"Tidak Terbatas"
 
 		"SFUI_FeatureUnavailableDuringBeta"		"Tidak Tersedia Selama Beta"
 
@@ -44421,6 +44525,7 @@ melawan FaZe."
 		"inv_context_remove_patch"			"Lepas Patch"		
 		"inv_context_openloadout"			"Lihat di Perlengkapan"
 		"inv_context_sell"					"Jual di Pasar Komunitas"
+		"inv_context_marketlisting"			"Lihat Iklan Penjualan di Pasar"
 		"inv_context_tradeup_add"			"Gunakan Kontrak Tukar Tambah"
 		"inv_context_tradeup_remove"		"Hapus dari Kontrak Tukar Tambah"
 		"inv_context_open_contract"			"Buka Kontrak"
@@ -44478,6 +44583,7 @@ melawan FaZe."
 		"inv_session_prop_updated"			"Diperbarui!"
 		"inv_session_prop_quest_reward"		"Hadiah!"
 		"inv_session_prop_xpshopredeem"		"Baru!"
+		"inv_session_prop_marketlisting"	"<img src='file://{images}/icons/ui/coupon.svg' class='item-tile__onmarket'/> Dalam Pasar"
 		"inv_equipped_item"					"Menggunakan <b>{s:name}</b> untuk <b>{s:team}</b>"
 		"inv_equipped_item_noteam"			"Menggunakan <b>{s:name}</b>"
 		"inv_unequipped_item"				"Melepas <b>{s:name}</b>"
@@ -44582,6 +44688,7 @@ melawan FaZe."
 		"popup_delete_title"	"{s:itemname}"
 		"popup_delete_desc"		"Apa kamu yakin ingin menghapus item ini?"
 		"popup_delete_warning"	"Item yang sudah dihapus tidak bisa dikembalikan lagi."
+		"popup_delete_tooltip"	"Tahan untuk menghapus item ini. Penghapusan item tidak dapat dibatalkan."
 		"popup_delete_button"	"Hapus Item"
 
 		"popup_usegift_title"	"Berikan {s:itemname}"
@@ -47380,6 +47487,8 @@ melawan FaZe."
 		"user_btn_purchase_desc_purchase"		"Tahan untuk membeli item ini. Setelah dibeli, Terminal akan dibuang."
 		"user_btn_purchase_desc_continue"		"Tahan untuk menolak penawaran ini secara permanen dan melihat yang berikutnya."
 		"user_btn_purchase_desc_end"		"Tolak penawaran terakhir dan buang Terminal ini."
+		"user_btn_purchase_title"			"{s:offer-count} - Penawaran"
+		"user_btn_purchase_final_title"		"<b>Penawaran Akhir</b>"
 		"user_btn_decline_desc"				"Tolak penawaran ini dan lihat yang lain"
 		"user_btn_accept"		"Terima Penawaran <b>{s:price}</b>"
 		"user_btn_accept_final"	"Terima Penawaran Terakhir <b>{s:price}</b>"
@@ -47401,6 +47510,18 @@ melawan FaZe."
 		"user_btn_pause"		"Jeda Penawaran"
 		"user_btn_end"			"Tolak Penawaran Terakhir"
 
+		"user_message_limit_0"		"Aku sanggup maksimum <b>{s:limit-setting}</b>."
+		"user_message_limit_1"		"Bagaimana kalau <b>{s:limit-setting}</b> jadi batas tertingginya?"
+		"user_message_limit_2"		"Sampai <b>{s:limit-setting}</b> tidak masalah bagiku."
+		"user_message_limit_3"		"Maksimum <b>{s:limit-setting}</b> masih oke."
+		"user_message_limit_unlimited_0"	"<b>Tidak ada batas maksimum</b>. Aku mau lihat semuanya."
+		"user_message_limit_unlimited_1"	"<b>Cek blanko</b>. Jangan khawatir soal uang."
+		"user_message_limit_unlimited_2"	"Aku di sini untuk membeli. <b>Perlihatkan semuanya</b>."
+		"user_message_limit_unlimited_3"	"Asalkan bisa menembak dengan baik, aku tertarik.<b>Tidak ada batasan</b>."
+		"user_message_limit_unlimited_4"	"Uang bukan masalah"
+		"offer_limit_setting"		"Batas Harga: {s:limit}"
+		"offer_limit_setting_interface"		"Batas Harga: {s:limit} <img src='file://{images}/icons/ui/expand.svg' class='expand-icon'/>"
+
 		"dealer_offer_Unknown"							"-"
 		"dealer_offer_1"								"Ke-1"
 		"dealer_offer_2"								"Ke-2"
@@ -47417,23 +47538,31 @@ melawan FaZe."
 		"declined_offer_tooltip"	"Penawaran ditolak"
 		"future_offer_tooltip"		"Penawaran belum diperlihatkan."
 		"laptop_expiration_tooltip"		"Sisa waktu sampai Terminal Uplink ini dan penawarannya kedaluwarsa."
+		"laptop_max_offer_tooltip"		"Atur Batas Harga Maksimum. Kamu hanya akan menerima penawaran di bawah batas tersebut. Kamu bisa mengubahnya kapan saja."
 		"collection_xp_tooltip"			"Dapatkan XP dengan melihat penawaran dalam koleksi ini. Buka untuk melihat progres dan menebus XP."
+		"terminal_offer_limit_tooltip"		"Perbarui batas harga maksimum. Penjual Senjata hanya akan memberikan penawaran sampai batas tersebut."
 		"popup_lootlist_title"			"XP Katalog Koleksi"
 		"popup_lootlist_desc"			"Dapatkan XP dengan melihat penawaran dalam koleksi ini"
-		"popup_lootlist_progress"		"Melihat {d:seen}/{d:total} penawaran"
+
+		"popup_lootlist_progress:f"      "Telah melihat {d:seen}/{d:total} penawaran"
 		"popup_lootlist_claim_xp"		"Dapatkan Bonus XP"
 		"popup_lootlist_claim_ww"		"Mengeklaim XP..."
-		"popup_lootlist_claim_ok"		"✅ XP Diklaim"
+		"popup_lootlist_claim_ok"		"✔ XP Diklaim"
 		"popup_vpn_status_connected"	"Status: Terhubung ke jaringan aman"
 		"popup_vpn_status_disconnected"	"Status: Terputus"
 		"popup_signal_full" 			"Sinyal Penuh"
 		"popup_signal_ok" 				"Sinyal Kuat"
+		"popup_offer_limit_desc"		"Perbarui batas harga maksimum untuk semua tawaran selanjutnya"
 		"laptop_battery_tooltip" 		"Daya Baterai: {d:percent}%"
 		"laptop_original_seal_tooltip" 	"Item apa pun yang dibeli dari Terminal Uplink ini akan dilengkapi dengan Sertifikat Pemilik Asli, yang berlaku selama kamu menjadi pemiliknya."
 		"laptop_zoom_tooltip" 			"Gulir roda mouse untuk memperbesar dan memperkecil"
 		"laptop_pan_tooltip" 			"Tahan tombol \"SHIFT\" dan seret untuk menggeser kamera"
 		"laptop_pricing_tooltip"		"Harga bersifat global dan disesuaikan secara otomatis berdasarkan permintaan terhadap setiap item dalam koleksi ini."
 
+		"dealer_message_set_offer_limit_0"		"Pertama-tama, berapa banyak uangmu yang bisa dibelanjakan?"
+		"dealer_message_set_offer_limit_1"		"Ayo kita singkirkan ini. <!--.25--> Berapa batasnya?"
+		"dealer_message_set_offer_limit_2"		"Sebelum kita mulai...<!--.25--> Berapa batasnya? Berapa banyak uangmu yang bisa dibelanjakan?"
+		
 		"dealer_message_start_0"  	"Semuanya sudah dinegosiasikan dengan klien.<!--.25-->Aku punya semua yang kau butuhkan. Tidak perlu dokumen."
 		"dealer_message_start_1"  	"Aku menerima kiriman dari pasar gelap, tanpa dokumen.<!--.25-->Jangan khawatir, tidak ada yang tahu tentang senjata-senjata ini. Sudah tidak beredar selama bertahun-tahun dan tidak ada yang mencarinya.<!--.25-->Senjata ini juga masih bisa menembak dengan baik, kalau itu yang jadi pertanyaanmu."
 		"dealer_message_start_2"  	"Petugas bea cukai di Ahradan menyita kirimanku pagi ini. Aku mencoba mendapatkan simpati mereka dengan mengarang cerita yang tidak masuk akal tentang membawa peralatan medis untuk orang-orang yang sekarat... <!--.25-->Mereka tidak terkesan dengan cerita itu, tapi lain halnya dengan sebuah koper yang penuh uang.<!--.25-->Bagaimana kalau kita lihat mesin dialisis ini sebelum aku memberikannya kepada anak-anak yatim."
@@ -47441,6 +47570,7 @@ melawan FaZe."
 		"dealer_message_start_4"  	"Barang-barang yang aku punya hari ini semuanya bersih<!--.25-->Sejauh yang diketahui siapa pun, tanganmu adalah yang pertama menyentuhnya."
 		"dealer_message_start_5"  	"Senjata-senjata ini tidak memiliki nomor seri dan tidak bisa dilacak, sempurna!<!--.25-->Pengadilan militer mungkin akan menggunakannya sebagai barang bukti.<!--.25-->Meski begitu, kita berdua tahu bahwa ini adalah mahakarya sejati."
 		"dealer_message_start_6"  	"Seluruh kiriman ini adalah senjata eksotis dari unit parade.<!--.25-->Sering dipakai untuk parade. Tidak pernah dipakai untuk menembak."
+		"dealer_message_start_7"  	"Klienku yang lain selalu ingin tahu asal muasal senjata yang kujual. Aku benci itu.<!--.25-->Kalau kau, hanya ingin tahu apakah itu barang yang terbaik di pasaran.<!--.25-->Mau tahu jawabannya? Tentu saja iya."
 		"dealer_message_start_8"  	"Ada perjanjian damai di Drosvik. Aku cinta damai.<!--.25-->Karena aku kenal seorang jenderal yang punya banyak utang dan gudang senjata yang berdebu.<!--.25-->Maksudku...<!--.25-->tentu saja karena damai itu hal yang baik. Nyawa orang tak berdosa dan sebagainya...<!--.25-->Ah, bicara apa aku, kau tidak peduli tentang itu."
 		"dealer_message_start_9"  	"Muatan ini berisi berbagai senjata eksotis yang berasal dari pasar gelap.<!--.25-->Kalibernya unik, bukan untuk amatir. Kau pasti suka."
 		"dealer_message_start_10"  	"Ini memalukan.<!--.25-->Sepertinya aku salah memberi label untuk peti yang ada di dalam daftar muatanku.<!--.25-->Yah, ada beberapa lusin peti.<!--.25-->Bantu aku menghilangkan inventaris ini sebelum otoritas pelabuhan mulai menyelidikinya."
@@ -47631,10 +47761,29 @@ melawan FaZe."
 		"dealer_message_addition_factory_new_2"	"<!--.25-->Baru, diambil langsung dari gudang."
 		"dealer_message_addition_factory_new_3"	"<!--.25-->Yang ini masih baru. Belum pernah ditembakkan."
 		
+		"dealer_message_limit_first_time_0"		"Baiklah, aku hanya akan memberikan penawaran sampai {s:limit}.<!--.25--> Ayo kita lihat apa yang kau butuhkan."
+		"dealer_message_limit_first_time_2"		"Hanya barang di bawah {s:limit}, ya.<!--.25--> Baiklah, ayo kita mulai."
+		"dealer_message_limit_first_time_3"		"Baiklah, sudah kucatat.<!--.25--> Ayo kita mulai."
+		"dealer_message_limit_first_time_unlimited_0"		"Tidak ada batas? Bagus sekali. Aku akan memperlihatkan katalog terbaru mulai sekarang.<!--.25--> Waktu terus berjalan, mari kita mulai."
+		"dealer_message_limit_first_time_unlimited_1"		"Tidak terbatas. Oke, sekarang kita bisa mulai serius.<!--.25--> Ayo lihat apa yang kau butuhkan."
+
+		"dealer_message_limit_0"				"Baiklah. Aku hanya akan memberikan penawaran sampai {s:limit}."
+		"dealer_message_limit_1"				"Hanya penawaran di bawah {s:limit}. Baiklah, aku akan mengingatnya."
+		"dealer_message_limit_2"				"Aku akan menyesuaikan parameternya dan hanya memberikan penawaran sampai {s:limit}."
+		"dealer_message_limit_3"				"Hanya penawaran dengan harga maksimum {s:limit}. Baiklah."
+		"dealer_message_limit_4"				"Aku hanya akan memperlihatkan barang dengan harga yang sesuai, maksimum {s:limit}."
+		"dealer_message_limit_5"				"Maksimum {s:limit}. Oke."
+		"dealer_message_limit_6"				"Baik. Mengatur ulang filter untuk memberikan penawaran dengan nilai maksimum {s:limit}."
+		"dealer_message_limit_unlimited_0"		"Tidak ada batas maksimum. Luar biasa. Aku akan memperlihatkan katalog terbaru mulai saat ini."
+		"dealer_message_limit_unlimited_1"		"Tidak terbatas? Oke. Jika ada item eksotis yang muncul, aku tidak akan ragu memperlihatkannya kepadamu."
+		"dealer_message_limit_unlimited_2"		"Senang mendengarnya. Jika aku mendapatkan barang yang menarik, aku tidak akan ragu memperlihatkannya kepadamu."
+		"dealer_message_limit_unlimited_3"		"Tidak terbatas. Baiklah. Sekarang kita bisa mulai serius."
+
 		"system_dealer_left_chat_0"				"Pedagang Senjata telah meninggalkan obrolan."
 		"system_dealer_join_chat_0"				"{s:collection} Penawaran Senjata.<!--1.25-->Pedagang Senjata Terhubung"
 		"system_user_reject_offer_0"			"{s:user-name} Menolak Penawaran."
 
+		"system_user_updated_offer_limit_0"			"Batas Harga Maksimum diperbarui menjadi {s:limit}. Kamu bisa mengubah pengaturan ini kapan saja."
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -47869,8 +48018,8 @@ melawan FaZe."
 		"quest_11015_var_desc:p{mission-points}"	 	"Menangkan satu atau beberapa ronde di mode <b>{s:gamemode}: {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Menangkan satu atau beberapa ronde"
 
-// crow_mask_51633_comment
-// crow_mask_51634_comment
+// crow_mask_51765_comment
+// crow_mask_51766_comment
 }
 
 
@@ -47879,119 +48028,7 @@ melawan FaZe."
 }
 
 
-nangkan satu atau beberapa ronde di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_11014_var_ingame:p{mission-points}"		"Menangkan satu atau beberapa ronde"
-		
-		"quest_11015_var_desc:p{mission-points}"	 	"Menangkan satu atau beberapa ronde di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_11015_var_ingame:p{mission-points}"		"Menangkan satu atau beberapa ronde"
-
-// crow_mask_51588_comment
-// crow_mask_51589_comment
-}
-
-
-
-
-}
-
-
-unfact-player} berhasil selamat dari serangan {d:funfact-d1} musuh."
-		"funfact_died_from_multiple_attackers:f"						"{s:funfact-player} menerima damage dari {d:funfact-d1} musuh sebelum tewas."
-		"funfact_defended_bomb:f"										"{s:funfact-player} melindungi bom yang dipasang dari {d:funfact-d1} musuh."
-		"funfact_items_dropped_value:f"									"{s:funfact-player} membuang persediaan senilai ${d:funfact-d1}."
-		"funfact_kill_wounded_enemies:f"								"{s:funfact-player} menghabisi {d:funfact-d1} musuh yang terluka."
-		"funfact_damage_multiple_enemies:f"								"{s:funfact-player} memberikan damage ke {d:funfact-d1} musuh."
-		"funfact_used_multiple_weapons:f"								"{s:funfact-player} menggunakan {d:funfact-d1} senjata."
-		"funfact_terrorist_accuracy:f"									"Teroris memiliki akurasi terbaik sebesar {d:funfact-d1}%."
-		"funfact_ct_accuracy:f"											"Anti-Teroris memiliki akurasi terbaik sebesar {d:funfact-d1}%."
-		"funfact_ct_win_no_kills:f"										"Anti-Teroris berhasil menang tanpa membunuh anggota Teroris."
-		"funfact_t_win_no_kills:f"										"Teroris berhasil menang tanpa membunuh anggota Anti-Teroris."
-		"funfact_t_win_no_casualties:f"									"Teroris berhasil menang tanpa ada korban."
-		"funfact_ct_win_no_casualties:f"								"Anti-Teroris berhasil menang tanpa ada korban."
-		"funfact_best_terrorist_accuracy:f"								"{s:funfact-player} memiliki akurasi sebesar {d:funfact-d1}%, sementara akurasi tim-nya sebesar {d:funfact-d2}%."
-		"funfact_best_counterterrorist_accuracy:f"						"{s:funfact-player} memiliki akurasi sebesar {d:funfact-d1}%, sementara akurasi tim-nya sebesar {d:funfact-d2}%."
-		"funfact_fallback1:f"											"\"The cake is a lie.\""
-		"funfact_fallback2:f"											"Hoam."
-		"funfact_draw:f"												"Pertandingan di-restart berdasarkan hasil voting."
-		"funfact_broke_windows:f"										"{s:funfact-player} menghancurkan {d:funfact-d1} jendela."
-		"funfact_nightvision_damage:f"									"{s:funfact-player} memberikan {d:funfact-d1} damage selagi menggunakan nightvision."
-		"funfact_defused_with_dropped_kit:f"							"{s:funfact-player} berhasil menjinakkan bom dengan alat penjinak yang dijatuhkan."
-		"funfact_killed_half_of_enemies:f"								"{s:funfact-player} membunuh {d:funfact-d1}% tim musuh."
-		"funfact_knife_level_reached:f"									"{d:funfact-d1} pemain mencapai level pisau emas."
-		"funfact_killed_before_dying:f"									"{s:funfact-player} membunuh {d:funfact-d1} pemain sebelum tewas."
-		"funfact_respawned:f"											"{s:funfact-player} hidup kembali {d:funfact-d1} kali di dalam pertandingan."
-		"funfact_default_weapon:f"										"{s:funfact-player} memenangkan ronde tanpa mengambil senjata apa pun."
-		"funfact_rounds_without_dying:f"								"{s:funfact-player} bertahan hidup selama {d:funfact-d1} ronde berturut-turut."
-		"funfact_taser_kill:f"											"{s:funfact-player} melumpuhkan {d:funfact-d1} pemain."
-		"funfact_ticking_time:f"										"Teroris berhasil menang meskipun {d:funfact-d1} AT mencoba untuk menjinakkan bom."
-		"funfact_ct_win_time:f"											"Tim AT berhasil menghabisi tim Teroris dalam {d:funfact-d1} detik."
-		"funfact_ter_win_time:f"										"Tim Teroris berhasil menghabisi tim AT dalam {d:funfact-d1} detik."
-		"funfact_bots_assumed:f"										"{s:funfact-player} mengambil kendali atas {d:funfact-d1} bot di ronde tersebut."
-		"funfact_domination:f"											"{s:funfact-player} mendominasi paling banyak pemain."
-		"funfact_revenge:f"												"{s:funfact-player} mendapatkan pembalasan dari {d:funfact-d1} pemain."
-		"funfact_steps_taken:f"											"{s:funfact-player} berlari sebanyak {d:funfact-d1} langkah di dalam pertandingan."
-		"funfact_quarter_health:f"										"{s:funfact-player} membunuh {d:funfact-d1} pemain meskipun hanya memiliki kurang dari 25 health."
-		"funfact_empty_guns:f"											"{s:funfact-player} kehabisan amunisi ketika menggunakan senjata {d:funfact-d1}."
-		"funfact_slow_trigger:f"										"{s:funfact-player} tewas tanpa melepaskan tembakan ketika menggunakan senjata {d:funfact-d1}."
-		"funfact_pickup_bomb:f"											"{s:funfact-player} memasang bom setelah dimiliki oleh {d:funfact-d1} rekan tim."
-		"funfact_bomb_carriers:f"										"{s:funfact-player} membunuh {d:funfact-d1} pembawa bom di ronde terakhir."
-		"funfact_knife_bomb_planter:f"									"{s:funfact-player} menang di Level pisau dengan membunuh pemasang bom."
-		"funfact_bomb_planted_before_kill:f"							"Tidak ada pemain yang terbunuh sebelum bom dipasang."
-		"funfact_failed_bomb_plants:f"									"{d:funfact-d1} Teroris mencoba memasang bom di ronde tersebut."
-		"funfact_knife_without_ammo:f"									"{s:funfact-player} mendapat {d:funfact-d1} kill menggunakan pisau setelah kehabisan amunisi."
-		"funfact_molotov_burns:f"										"{s:funfact-player} membakar {d:funfact-d1} pemain dengan api."
-		"funfact_survival_time:f"										"{s:funfact-player} bertahan hidup paling lama: {d:funfact-d1} detik."
-		"funfact_pulled_trigger:f"										"{s:funfact-player} menarik pelatuk {d:funfact-d1} kali di pertandingan tersebut."
-		"funfact_ace:f"													"Ace!  {s:funfact-player} membunuh seluruh tim musuh."
-		"funfact_defuse_was_close_call_tenths:f"						"{s:funfact-player} menjinakkan bom dengan sisa waktu 0.{d:funfact-d1} detik."
-		"funfact_defuse_was_close_call_hundredths:f"					"{s:funfact-player} menjinakkan bom dengan sisa waktu 0.0{d:funfact-d1} detik."
-		"funfact_defuse_was_close_call_thousandths:f"					"{s:funfact-player} menjinakkan bom dengan sisa waktu 0.00{d:funfact-d1} detik."
-		"mapwinrecord_graph_title:f"									"Kemenangan Terakhir"
-		"CSGO_Recipe_Count_Items_Selected:f"							"<b>{d:count}</b> Item Dipilih"
-		"CSGO_Recipe_Count_Items_Remaining:f"							"<b>{d:count}</b> Item Tersisa"
-		"CSGO_Recipe_TradeUp_Items_Remain:f"							"{d:count} Item Dipilih untuk Ditukar"
-		"CSGO_Recipe_TradeUp_Items_XofY:f"								"{d:count}/{d:recipecount} Dipilih untuk Ditukar"
-		"CSGO_Recipe_TradeUp_Items_Inv:f"								"{d:count} Item Dapat Ditukar"
-		"CSGO_RemoveKeychainToolCharges_Reward:f"						"+{d:item_count} Pencabut Gantungan"
-		"SFUI_Store_Offer_Days_Remaining:f"								"{d:daysremaining} Hari Tersisa."
-		"SFUI_Store_Offer_Days_Remaining_claim:f"						"{d:daysremaining} hari tersisa"
-		"SFUI_Store_Offer_Days_Remaining_bid:f"							"{d:daysremaining} hari tersisa untuk menawar penawaran ini"
-		"SFUI_Store_Offer_Days_Remaining_last_claim:f"					"Kesempatan terakhir untuk mengeklaim penawaran ini"
-		"SFUI_Store_Offer_Days_Remaining_last_bid:f"					"Kesempatan terakhir untuk menawar penawaran ini"
-		"SFUI_Store_Timer_Week:f"										"{f:0:value} Minggu"
-		"SFUI_Store_Timer_Day:f"										"{f:0:value} Hari"
-		"SFUI_Store_Timer_Hour:f"										"{f:0:value} Jam"
-		"SFUI_Store_Timer_Min:f"										"{f:0:value} Menit"
-		"SFUI_Store_Timer_Sec:f"										"{f:0:value} Detik"
-		"CSGO_Watch_Minute:f"											"{f:0:value} Menit"
-		"xpshop_new_items:f"											"Item Baru!"
-		"xpshop_popup_clear_n_tracks:f"									"Hapus {d:completed_tracks_count} Pas Yang Selesai"
-		"xpshop_popup_clear_n_tracks_text:f"							"Kamu telah mendapatkan semua Kredit Arsenal dari {d:completed_tracks_count} Pas Arsenal.<br><br>Menyelesaikan {d:completed_tracks_count} Pas Arsenal ini akan memungkinkanmu untuk mengaktifkan yang baru. Ini tidak akan memengaruhi Saldo Kredit Arsenalmu."
-		"xpshop_redeem_bid_batchover:f"									"Penawaran untuk sesi ini telah ditutup. Pemenang penawaran akan diinformasikan setelah transaksi berhasil diselesaikan. Silakan kembali lagi besok untuk menawar di sesi berikutnya. Tawaran akan dibuka kembali dalam {d:hours_until_bid_batch} jam."
-		"xpshop_redeem_not_enough_stars:f"								"Kamu membutuhkan {d:stars_needed} Kredit Arsenal lagi. Dapatkan dengan bermain menggunakan Pas Arsenal aktif."
-		"Panorama_PlayerDetails_Commendations_Left:f"					"Kamu bisa memberikan rekomendasi untuk {d:num_token} pemain lagi hari ini"
-		"SFUI_BuyMenu_CanOnlyCarryXGrenades:f"							"Kamu hanya bisa membawa {s:s1} granat"
-		"SFUI_BuyMenu_MaxItemsOfType:f"									"Kamu hanya bisa membawa {s:s1} item jenis ini"
-		"SFUI_BuyMenu_MaxItemsOfTypePurchased:f"						"Kamu hanya bisa membeli {s:s1} item jenis ini"
-		"SFUI_BuyMenu_ReachedWeaponsExpertLimit:f"						"Sudah membeli {s:s1} di dalam pertandingan ini"
-		"cs_rating_wins_needed:f"										"Menangkan <b>{d:winsneeded}</b> pertandingan lagi"
-		"cs_rating_wins_needed_verbose:f"								"Menangkan <b>{d:winsneeded}</b> pertandingan lagi untuk membuka Rating CS kamu"
-		"cs_rating_wins_needed_verbose_intro:f"							"Menangkan <b>{d:winsneeded}</b> pertandingan untuk membuka Rating CS kamu"
-		"cs_rating_need_wins:f"											"{d:wins-needed}x menang lagi"
-		"wins_count:f"													"{d:wins}x menang"
-		"contextmenu_lobby-count:f"										"{d:lobby_count} Lobi "
-		"popup_useitem_button_getkeychaincharges:f"						"Tambahkan <b>{d:item_count}</b> Pencabut Gantungan"
-		"popup_decodable_rent_weapon_count:f"							"Sewa {d:numlootlist} Senjata selama 7 hari"
-		"popup_redeem_souvenir_desc:f"									"Sisa klaim Suvenir: <span class=\"get-souvenir-redeem-count\">{d:redeems}</span>"
-		"matchmaking_stat_avgSearchTimeSeconds:f"						"{s:stat} Perkiraan waktu pencarian"
-		"matchmaking_stat_playersOnline:f"								"{d:stat} Pemain online"
-		"matchmaking_stat_playersLockedIn:f"							"{d:stat} pemain dari {d:total_stat} mengonfirmasi"
-		"matchmaking_stat_playersSearching:f"							"{d:stat} Pemain mencari"
-		"matchmaking_stat_serversOnline:f"								"{d:stat} Server online"
-		"matchmaking_stat_ongoingMatches:f"								"{d:stat} Pertandingan sedang berlangsung"
-		"tooltip_skill_group_none:f"									"Menangkan <b>{d:winsneeded}</b> pertandingan untuk mendapatkan Kelas Mode Kompetitif."
-		"tooltip_cs_rating_none:f"										"Menangkan <b>{d:winsneeded}</b> pertandingan lagi untuk membuka Rating CS kamu."
-		"tooltip_skill_group_nonewingman:f"								"Menangkan <b>{d:winsneeded}</b> pertandingan untuk membuka Kelas Wingman-mu."
+s Wingman-mu."
 		"tooltip_skill_group_nonedangerzone:f"							"Kelas Zona Bahaya harus dikalibrasi, selesaikan beberapa pertandingan Zona Bahaya untuk membuka Kelasmu."
 		"tooltip_skill_group_wins:f"									"<img src='file://{images}/icons/ui/trophy.svg'  vspace='6' class='player-card-tooltip-icon'/> {d:wins} Menang"
 		"team-intro-overtime-1st-half:f"								"Overtime: Babak Pertama"

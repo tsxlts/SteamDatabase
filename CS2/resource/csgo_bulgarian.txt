@@ -5477,8 +5477,6 @@
 		"CSGO_set_esports_iii_desc"				"<b><font color='#F2A93E'>The eSports 2014 Summer Collection</font></b>"
 
 		"CSGO_set_community_1"					"Колекцията „Зимна офанзива“"
-		"CSGO_set_community_1_desc"				""
-		
 		"CSGO_set_weapons_iii"					"Колекцията „Оръжейна сделка“ 3"
 		"CSGO_set_weapons_iii_desc"				"<b><font color='#F2A93E'>The Arms Deal 3 Collection</font></b>"
 
@@ -37336,8 +37334,7 @@
 		"PaintKit_m4a1s_quick_liquidation"				"<b><font color='#F2A93E'>Liquidation</font></b>\n \nТъмната основа и внимателно подбраните червени и сини акценти правят този персонализирано боядисан M4A1-S да изглежда така, сякаш блести от околна светлина.\n\n<i>Слабо отражение</i>"
 		
 		"PaintKit_aug_trigger_discipline_velco"			"<b><font color='#F2A93E'>Trigger Discipline</font></b>\n \nПриложена е изометрична шарка и завършек с оранжеви акценти.\n\n<i>Търпението е награда само по себе си</i>"
-
-// END COMMUNITY_36
+// END COMMUNITY_37 WEAPONS
 
 // OVERPASS_2024
 				
@@ -51300,10 +51297,9 @@ Counter-Strike разполага с четири основни игрални 
 		"collection_xp_tooltip"			"Печелете опит за преглеждане на офертите в тази колекция. Отворете, за да видите напредъка и да употребите опит."
 		"popup_lootlist_title"			"Каталог за опит от колекцията"
 		"popup_lootlist_desc"			"Печелете опит за преглеждане на офертите в тази колекция."
-		"popup_lootlist_progress"		"Видени {d:seen}/{d:total} оферти"
+
 		"popup_lootlist_claim_xp"		"Сдобиване с опит"
 		"popup_lootlist_claim_ww"		"Заявяване на опит…"
-		"popup_lootlist_claim_ok"		"✅ Опитът е заявен"
 		"popup_vpn_status_connected"	"Статус: Свързани към защитена мрежа"
 		"popup_vpn_status_disconnected"	"Статус: Разкачени"
 		"popup_signal_full" 			"Пълен сигнал"
@@ -51569,6 +51565,18 @@ Counter-Strike разполага с четири основни игрални 
 		"quest_11015_var_desc:p{mission-points}"	 	"Спечелете рунд в <b>„{s:gamemode}“ — {s:location}</b>.#|#Спечелете рундове в <b>„{s:gamemode}“ — {s:location}</b>."
 		"quest_11015_var_partial" 				""
 		"quest_11015_var_ingame:p{mission-points}"		"Спечелете рунд.#|#Спечелете рундове."
+
+// crow_mask_51765_comment
+// crow_mask_51766_comment
+}
+
+
+
+
+}
+
+
+ar_ingame:p{mission-points}"		"Спечелете рунд.#|#Спечелете рундове."
 
 // crow_mask_51633_comment
 // crow_mask_51634_comment

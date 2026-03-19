@@ -2425,6 +2425,7 @@
 		"NewItemMethod_CommunityMarketPurchase"	"Ви отримали з ринку спільноти:"
 
 		"ItemHistory_ActionWithTime"									"%s1 %s2"
+		"ItemHistory_Action_GSCreate"									"Створено"
 		"ItemHistory_Action_GenericAdd"									"Додано"
 		"ItemHistory_Action_GenericRemove"								"Видалено або змінено"
 		"ItemHistory_Action_Traded"										"Обміняно"
@@ -2488,6 +2489,10 @@
 		"ItemHistory_Action_TournamentDrop"								"Здобуто сувенірний предмет"
 		"ItemHistory_Action_TemplateItemGrant"							"Здобуто"
 		"ItemHistory_Action_Market_Add"									"Отримано із ринку спільноти"
+		"ItemHistory_Action_Market_Sealed"								"Створено пропозицію на ринку спільноти Steam"
+		"ItemHistory_Action_Market_Unsealed"							"Вилучено пропозицію із ринку спільноти Steam"
+		"ItemHistory_Action_Market_SoldSealed"							"Продано на ринку спільноти Steam"
+
 		"ItemHistory_Transaction_Delete"								"Видалено вами"
 		"ItemHistory_Transaction_Craft"									"Виготовлено"
 		"ItemHistory_Transaction_UnlockCrate"							"Відкрито контейнер"
@@ -2649,6 +2654,7 @@
 		"Attrib_NeverTradableButHasAfterDate1"		"Цей предмет неможливо виміняти чи продати на ринку."
 		"Attrib_NeverTradableButHasAfterDate2"		"Після використання отримані предмети матимуть обмеження до %s1"
 		"Attrib_TradeProtectedEscrowDate"			"⇆ Цей предмет має захист від обміну, тож його не можна витратити, змінити чи передати до %s1."
+		"Attrib_TradeProtectedEscrowMarket"			"⇆ Цей предмет виставлений на продаж на ринку спільноти Steam, і його не можна змінювати чи використовувати, поки пропозиція активна."
 		"Attrib_TradableAfterDate"					"Можна вимінювати з %s1"
 		"Attrib_TradableMarketableAfterDate"		"Можна вимінювати чи продавати з %s1"
 		"Attrib_MarketableWithRestrictions"			"Можна одразу продавати на ринку спільноти Steam"
@@ -37331,8 +37337,7 @@
 		"PaintKit_m4a1s_quick_liquidation"				"Завдяки темній основі та ретельно підібраним червоним і синім акцентам цей розмальований М4А1-С виглядає так, ніби переливається на світлі.\n\n<i>Тихі роздуми</i>"
 		
 		"PaintKit_aug_trigger_discipline_velco"			"Синій ізометричний візерунок довершено помаранчевими акцентами.\n\n<i>Терпіння саме собою є нагородою</i>"
-
-// END COMMUNITY_36
+// END COMMUNITY_37 WEAPONS
 
 // OVERPASS_2024
 				
@@ -39488,6 +39493,7 @@
 		"SFUI_InvContextMenu_preview_musickit"       "Оглянути - прослухати музику"
 		"SFUI_InvContextMenu_decodable"     "Розкрити"
 		"SFUI_InvContextMenu_sell"			"Продати на ринку спільноти"
+		"SFUI_InvContextMenu_marketlisting"	"Переглянути на ринку"
 		"SFUI_InvContextMenu_openloadout"   "Переглянути ланку спорядження"
 		"SFUI_InvContextMenu_inspectcase"	"Відкрити…"
 		"SFUI_InvContextMenu_useitem"	    "Використати предмет"
@@ -42907,6 +42913,8 @@
 		"SFUI_Settings_Network_Bandwidth_30mbps"   "3 Мбіт/с"
 		"SFUI_Settings_Network_Bandwidth_40mbps"   "4 Мбіт/с"
 		"SFUI_Settings_Network_Bandwidth_Max"	   "Необмежена"
+
+		"SFUI_Settings_Volatile_Limit_Unlimited"	"без обмежень"
 
 		"SFUI_FeatureUnavailableDuringBeta"		"Недоступно у бета-версії"
 
@@ -48028,6 +48036,7 @@
 		"inv_context_remove_patch"			"Вилучити нашивку"		
 		"inv_context_openloadout"			"Дивитися в спорядженні"
 		"inv_context_sell"					"Продати на ринку спільноти"
+		"inv_context_marketlisting"			"Переглянути на ринку"
 		"inv_context_tradeup_add"			"Використати з торгівельним контрактом"
 		"inv_context_tradeup_remove"		"Вилучити з торгівельного контракту"
 		"inv_context_open_contract"			"Відкрити контракт"
@@ -48085,6 +48094,7 @@
 		"inv_session_prop_updated"			"Оновлено!"
 		"inv_session_prop_quest_reward"		"Нагорода!"
 		"inv_session_prop_xpshopredeem"		"Нове!"
+		"inv_session_prop_marketlisting"	"<img src='file://{images}/icons/ui/coupon.svg' class='item-tile__onmarket'/> На ринку"
 		"inv_equipped_item"					"Споряджено <b>{s:name}</b> <b>({s:team})</b>"
 		"inv_equipped_item_noteam"			"Споряджено <b>{s:name}</b>"
 		"inv_unequipped_item"				"Прибрано <b>{s:name}</b>"
@@ -48192,6 +48202,7 @@
 		"popup_delete_title"	"{s:itemname}"
 		"popup_delete_desc"		"Ви дійсно бажаєте видалити цей предмет?"
 		"popup_delete_warning"	"Видалення предмета незворотне."
+		"popup_delete_tooltip"	"Утримуйте, щоби видалити цей предмет. Цю дію не можна скасувати."
 		"popup_delete_button"	"Знищити предмет"
 
 		"popup_usegift_title"	"Дати {s:itemname}"
@@ -51065,6 +51076,8 @@
 		"user_btn_purchase_desc_purchase"		"Утримуйте, щоби купити цей предмет. Після купівлі термінал буде утилізовано."
 		"user_btn_purchase_desc_continue"		"Утримуйте, щоб остаточно відхилити цю пропозицію та переглянути іншу."
 		"user_btn_purchase_desc_end"		"Відхилити остаточну пропозицію та видалити термінал"
+		"user_btn_purchase_title"			"{s:offer-count} пропозиція"
+		"user_btn_purchase_final_title"		"<b>Фінальна пропозиція</b>"
 		"user_btn_decline_desc"				"Відхилити цю пропозицію та переглянути іншу"
 		"user_btn_accept"		"Прийняти пропозицію за <b>{s:price}</b>"
 		"user_btn_accept_final"	"Прийняти фінальну пропозицію за <b>{s:price}</b>"
@@ -51086,6 +51099,18 @@
 		"user_btn_pause"		"Призупинити угоду"
 		"user_btn_end"			"Відхилити"
 
+		"user_message_limit_0"		"Я можу витратити до <b>{s:limit-setting}</b>."
+		"user_message_limit_1"		"А як щодо межі в <b>{s:limit-setting}</b>?"
+		"user_message_limit_2"		"Мені підходить до <b>{s:limit-setting}</b>."
+		"user_message_limit_3"		"Максимум <b>{s:limit-setting}</b> мене влаштовує."
+		"user_message_limit_unlimited_0"	"<b>Ніяких обмежень</b>, хочу побачити все."
+		"user_message_limit_unlimited_1"	"<b>Необмежений бюджет</b>. Про оплату не турбуйся."
+		"user_message_limit_unlimited_2"	"Я тут, щоб витратити гроші. <b>Хочу побачити все</b>."
+		"user_message_limit_unlimited_3"	"Якщо стріляє, мені цікаво. <b>Ціна не проблема</b>."
+		"user_message_limit_unlimited_4"	"Без ліміту."
+		"offer_limit_setting"		"Максимальна ціна: {s:limit}"
+		"offer_limit_setting_interface"		"Максимальна ціна: {s:limit} <img src='file://{images}/icons/ui/expand.svg' class='expand-icon'/>"
+
 		"dealer_offer_Unknown"							"–"
 		"dealer_offer_1"								"1-ша"
 		"dealer_offer_2"								"2-га"
@@ -51102,23 +51127,29 @@
 		"declined_offer_tooltip"	"Відхилена пропозиція"
 		"future_offer_tooltip"		"Пропозицію ще не представлено."
 		"laptop_expiration_tooltip"		"Час, який залишився до закінчення терміну дії термінала та пропозицій у ньому."
+		"laptop_max_offer_tooltip"		"Вкажіть максимальну ціну, яку готові заплатити. Ви побачите лише ті пропозиції, які її не перевищують. Змінити цю ціну можна в будь-який час."
 		"collection_xp_tooltip"			"Заробляйте очки досвіду за перегляд пропозицій із цієї колекції. Відкрийте, щоби переглянути поступ та отримати очки досвіду."
+		"terminal_offer_limit_tooltip"		"Оновіть максимальну ціну. Торговець зброєю буде показувати лише ті пропозиції, ціна яких не перевищує її."
 		"popup_lootlist_title"			"Очки досвіду за перегляд колекції"
 		"popup_lootlist_desc"			"Заробляйте очки досвіду за перегляд пропозицій із цієї колекції."
-		"popup_lootlist_progress"		"Переглянуті пропозиції: {d:seen}/{d:total}"
+
 		"popup_lootlist_claim_xp"		"Отримати додаткові очки"
 		"popup_lootlist_claim_ww"		"Отримання очок досвіду…"
-		"popup_lootlist_claim_ok"		"✅ Очки досвіду отримано"
 		"popup_vpn_status_connected"	"Стан: підключено до захищеної мережі"
 		"popup_vpn_status_disconnected"	"Стан: відключено"
 		"popup_signal_full" 			"Повний сигнал"
 		"popup_signal_ok" 				"Сильний сигнал"
+		"popup_offer_limit_desc"		"Оновіть максимальну ціну для всіх майбутніх пропозицій."
 		"laptop_battery_tooltip" 		"Заряд акумулятора: {d:percent}%"
 		"laptop_original_seal_tooltip" 	"Будь-який предмет, куплений через термінал зв’язку, буде поставлятися з сертифікатом початкового власника. Він дійсний, поки ви є власником цього предмета."
 		"laptop_zoom_tooltip" 			"Прокручуйте коліщатко миші для наближення та віддалення"
 		"laptop_pan_tooltip" 			"Утримуйте клавішу Shift і перетягуйте, щоби змінити положення камери"
 		"laptop_pricing_tooltip"		"Ціни є глобальними й змінюються автоматично відповідно до попиту на кожен предмет у цій колекції."
 
+		"dealer_message_set_offer_limit_0"		"Спершу про головне. Який бюджет?"
+		"dealer_message_set_offer_limit_1"		"Спочатку з цим розберемось.<!--.25--> Який бюджет?"
+		"dealer_message_set_offer_limit_2"		"Перш ніж ми почнемо…<!--.25--> Яка максимальна ціна? Який бюджет?"
+		
 		"dealer_message_start_0"  	"Так можна сказати про всіх постачальників.<!--.25-->Усі прибамбаси. Жодної паперової тяганини."
 		"dealer_message_start_1"  	"Продаю товар з чорного ринку, ніяких документів.<!--.25-->Не переймайтеся: зброя холодна. Ніхто нею роками не стріляв і не шукає.<!--.25-->Однак досі стріляє, якщо навести приціл."
 		"dealer_message_start_2"  	"Сьогодні зранку митниця в Ахрадані затримала мій вантаж. Я намагався розчулити її працівників сумною історією про медичне обладнання та нещасних… когось-там… на межі смерті.<!--.25-->Не спрацювало. А набитий грошима дипломат — спрацював.<!--.25-->Може глянемо на ці апарати для діалізу, поки я не передав їх сиротам?"
@@ -51126,6 +51157,7 @@
 		"dealer_message_start_4"  	"Увесь сьогоднішній товар — чистий.<!--.25-->Вважайте, що будете першим власником."
 		"dealer_message_start_5"  	"Перевірена зброя, ніяких серійних вбивств, ідеальний стан.<!--.25-->На військовому трибуналі були б доказом.<!--.25-->А ми з вами знаємо, що це чортові шедеври."
 		"dealer_message_start_6"  	"Ця вся партія — екзотика, нещодавно отримана від парадного підрозділу.<!--.25-->Багато марширували. Ніколи не стріляли."
+		"dealer_message_start_7"  	"Мої інші клієнти завжди хочуть знати, звідки я отримав те, що продаю. Терпіти цього не можу.<!--.25-->Все, що вам потрібно знати, — це найкраще, що є на ринку.<!--.25-->І знаєте що? Це справді так."
 		"dealer_message_start_8"  	"Мирний договір у Дросвіку. Люблю мир.<!--.25-->Тому що знаю генерала з купою боргів та великим складом зброї, що припадає пилом.<!--.25-->Ну…<!--.25-->І тому що мир — це добре, звісно ж. Невинні життя та…<!--.25-->Що я мелю. Вам все одно."
 		"dealer_message_start_9"  	"У цій партії є екзотика з чорного ринку.<!--.25-->Незвичні калібри. Не для аматорів. Вам сподобається."
 		"dealer_message_start_10"  	"Як соромно!<!--.25-->Думаю, я випадково неправильно вказав вміст ящика у вантажному маніфесті.<!--.25-->Куди правду діти. Кількох десятків ящиків.<!--.25-->Може допоможете мені здихатись цього інвентарю до того, як портова адміністрація почне розбиратися?"
@@ -51316,10 +51348,29 @@
 		"dealer_message_addition_factory_new_2"	"<!--.25-->Лиш з конвеєра. Новесенька."
 		"dealer_message_addition_factory_new_3"	"<!--.25-->Ця новесенька. Ніколи не стріляна."
 		
+		"dealer_message_limit_first_time_0"		"Зрозуміло. Покажу тільки ті пропозиції, ціна яких не перевищує {s:limit}.<!--.25--> Подивимося, що вам потрібно."
+		"dealer_message_limit_first_time_2"		"Тільки пропозиції, ціна яких не перевищує {s:limit}. Матиму на увазі.<!--.25--> Час іде. Почнімо."
+		"dealer_message_limit_first_time_3"		"Зрозуміло. Все оновив.<!--.25--> Почнімо."
+		"dealer_message_limit_first_time_unlimited_0"		"Без жодних обмежень. Чудово. Зараз відкрию актуальний каталог.<!--.25--> Час іде. Розпочнімо."
+		"dealer_message_limit_first_time_unlimited_1"		"Гаразд. Ніяких обмежень. Оце вже серйозно.<!--.25--> Гляньмо, що вам потрібно."
+
+		"dealer_message_limit_0"				"Зрозуміло. Покажу тільки ті пропозиції, ціна яких не перевищує {s:limit}."
+		"dealer_message_limit_1"				"Тільки пропозиції до {s:limit}. Матиму на увазі."
+		"dealer_message_limit_2"				"Підганяю параметри. Лише пропозиції, ціна яких не перевищує {s:limit}."
+		"dealer_message_limit_3"				"Пропозиції до {s:limit}. Зрозуміло. Зараз усе змінимо."
+		"dealer_message_limit_4"				"Покажу лише те, що підходить за ціною: до {s:limit}."
+		"dealer_message_limit_5"				"{s:limit} максимум. Все врахую."
+		"dealer_message_limit_6"				"Зрозуміло. Скидаю фільтр, щоб максимальна ціна пропозицій була {s:limit}."
+		"dealer_message_limit_unlimited_0"		"Без жодних обмежень. Чудово. Зараз відкрию актуальний каталог."
+		"dealer_message_limit_unlimited_1"		"Зрозуміло, без обмежень. Якщо натраплю на щось унікальне, покажу."
+		"dealer_message_limit_unlimited_2"		"Як мед для моїх вух. Якщо підвернеться щось підхоже, обов’язково покажу."
+		"dealer_message_limit_unlimited_3"		"Гаразд. Ніяких обмежень. Оце вже серйозно."
+
 		"system_dealer_left_chat_0"				"Торговець зброєю вийшов з чату."
 		"system_dealer_join_chat_0"				"Пропозиції для {s:collection}.<!--1.25-->Приєднується торговець зброєю."
 		"system_user_reject_offer_0"			"{s:user-name} відхиляє пропозицію."
 
+		"system_user_updated_offer_limit_0"			"Максимальну ціну пропозиції змінено на {s:limit}. Ви можете оновити її в будь-який час."
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -51564,8 +51615,8 @@
 		"quest_11015_var_partial" 				""
 		"quest_11015_var_ingame:p{mission-points}"		"Виграйте раунд#|#Виграйте раунди#|#Виграйте раунди#|#Виграйте раунди#|#Виграйте раунди"
 
-// crow_mask_51633_comment
-// crow_mask_51634_comment
+// crow_mask_51765_comment
+// crow_mask_51766_comment
 }
 
 
@@ -51574,34 +51625,7 @@
 }
 
 
-мі <b>«{s:gamemode}» на мапі {s:location}</b>.#|#Виграйте раунди в режимі <b>«{s:gamemode}» на мапі {s:location}</b>.#|#Виграйте раунди в режимі <b>«{s:gamemode}» на мапі {s:location}</b>.#|#Виграйте раунди в режимі <b>«{s:gamemode}» на мапі {s:location}</b>."
-		"quest_11015_var_partial" 				""
-		"quest_11015_var_ingame:p{mission-points}"		"Виграйте раунд#|#Виграйте раунди#|#Виграйте раунди#|#Виграйте раунди#|#Виграйте раунди"
-
-// crow_mask_51588_comment
-// crow_mask_51589_comment
-}
-
-
-
-
-}
-
-
-{funfact-d1, plural, one{{s:funfact-player} здійснює {d:funfact-d1} вбивство гранатою після власної смерті.} few{{s:funfact-player} здійснює {d:funfact-d1} вбивства гранатою після власної смерті.} many{{s:funfact-player} здійснює {d:funfact-d1} вбивств гранатою після власної смерті.} other{{s:funfact-player} здійснює {d:funfact-d1} вбивства гранатою після власної смерті.}}"
-		"funfact_num_times_jumped:f"									"{funfact-d1, plural, one{{s:funfact-player} стрибає цього раунду {d:funfact-d1} раз.} few{{s:funfact-player} стрибає цього раунду {d:funfact-d1} рази.} many{{s:funfact-player} стрибає цього раунду {d:funfact-d1} разів.} other{{s:funfact-player} стрибає цього раунду {d:funfact-d1} разу.}}"
-		"funfact_fall_damage:f"											"{funfact-d1, plural, one{{s:funfact-player} зазнає {d:funfact-d1} шкоди від… Землі.} few{{s:funfact-player} зазнає {d:funfact-d1} шкоди від… Землі.} many{{s:funfact-player} зазнає {d:funfact-d1} шкоди від… Землі.} other{{s:funfact-player} зазнає {d:funfact-d1} шкоди від… Землі.}}"
-		"funfact_items_purchased:f"										"{funfact-d1, plural, one{{s:funfact-player} купує {d:funfact-d1} предмет.} few{{s:funfact-player} купує {d:funfact-d1} предмети.} many{{s:funfact-player} купує {d:funfact-d1} предметів.} other{{s:funfact-player} купує {d:funfact-d1} предмета.}}"
-		"funfact_won_as_last_member:f"									"{funfact-d1, plural, one{Останній живий у своїй команді гравець {s:funfact-player} вбиває {d:funfact-d1} ворога й перемагає.} few{Останній живий у своїй команді гравець {s:funfact-player} вбиває {d:funfact-d1} ворогів і перемагає.} many{Останній живий у своїй команді гравець {s:funfact-player} вбиває {d:funfact-d1} ворогів і перемагає.} other{Останній живий у своїй команді гравець {s:funfact-player} вбиває {d:funfact-d1} ворога й перемагає.}}"
-		"funfact_number_of_overkills:f"									"{funfact-d1, plural, one{{s:funfact-player} вбиває {d:funfact-d1} гравця, над яким уже домінував.} few{{s:funfact-player} вбиває {d:funfact-d1} гравців, над якими вже домінував.} many{{s:funfact-player} вбиває {d:funfact-d1} гравців, над якими вже домінував.} other{{s:funfact-player} вбиває {d:funfact-d1} гравця, над яким уже домінував.}}"
-		"funfact_shots_fired:f"											"{funfact-d1, plural, one{Цього раунду здійснено {d:funfact-d1} постріл.} few{Цього раунду здійснено {d:funfact-d1} постріли.} many{Цього раунду здійснено {d:funfact-d1} пострілів.} other{Цього раунду здійснено {d:funfact-d1} пострілу.}}"
-		"funfact_money_spent:f"											"{funfact-d1, plural, one{{s:funfact-player} витрачає цього раунду {d:funfact-d1} $.} few{{s:funfact-player} витрачає цього раунду {d:funfact-d1} $.} many{{s:funfact-player} витрачає цього раунду {d:funfact-d1} $.} other{{s:funfact-player} витрачає цього раунду {d:funfact-d1} $.}}"
-		"funfact_grenades_thrown:f"										"{funfact-d1, plural, one{{s:funfact-player} кидає цього раунду {d:funfact-d1} гранату.} few{{s:funfact-player} кидає цього раунду {d:funfact-d1} гранати.} many{{s:funfact-player} кидає цього раунду {d:funfact-d1} гранат.} other{{s:funfact-player} кидає цього раунду {d:funfact-d1} гранати.}}"
-		"funfact_used_all_ammo:f"										"{s:funfact-player} витрачає всі набої."
-		"funfact_survived_multiple_attackers:f"							"{funfact-d1, plural, one{{s:funfact-player} переживає напад {d:funfact-d1} ворога.} few{{s:funfact-player} переживає напад {d:funfact-d1} ворогів.} many{{s:funfact-player} переживає напад {d:funfact-d1} ворогів.} other{{s:funfact-player} переживає напад {d:funfact-d1} ворога.}}"
-		"funfact_died_from_multiple_attackers:f"						"{funfact-d1, plural, one{Перед смертю {s:funfact-player} зазнає шкоди від {d:funfact-d1} ворога.} few{Перед смертю {s:funfact-player} зазнає шкоди від {d:funfact-d1} ворогів.} many{Перед смертю {s:funfact-player} зазнає шкоди від {d:funfact-d1} ворогів.} other{Перед смертю {s:funfact-player} зазнає шкоди від {d:funfact-d1} ворога.}}"
-		"funfact_defended_bomb:f"										"{funfact-d1, plural, one{{s:funfact-player} захищає встановлену бомбу від {d:funfact-d1} ворога.} few{{s:funfact-player} захищає встановлену бомбу від {d:funfact-d1} ворогів.} many{{s:funfact-player} захищає встановлену бомбу від {d:funfact-d1} ворогів.} other{{s:funfact-player} захищає встановлену бомбу від {d:funfact-d1} ворога.}}"
-		"funfact_items_dropped_value:f"									"{funfact-d1, plural, one{{s:funfact-player} викидає спорядження на суму {d:funfact-d1} $.} few{{s:funfact-player} викидає спорядження на суму {d:funfact-d1} $.} many{{s:funfact-player} викидає спорядження на суму {d:funfact-d1} $.} other{{s:funfact-player} викидає спорядження на суму {d:funfact-d1} $.}}"
+				"{funfact-d1, plural, one{{s:funfact-player} викидає спорядження на суму {d:funfact-d1} $.} few{{s:funfact-player} викидає спорядження на суму {d:funfact-d1} $.} many{{s:funfact-player} викидає спорядження на суму {d:funfact-d1} $.} other{{s:funfact-player} викидає спорядження на суму {d:funfact-d1} $.}}"
 		"funfact_kill_wounded_enemies:f"								"{funfact-d1, plural, one{{s:funfact-player} добиває {d:funfact-d1} пораненого ворога.} few{{s:funfact-player} добиває {d:funfact-d1} поранених ворогів.} many{{s:funfact-player} добиває {d:funfact-d1} поранених ворогів.} other{{s:funfact-player} добиває {d:funfact-d1} пораненого ворога.}}"
 		"funfact_damage_multiple_enemies:f"								"{funfact-d1, plural, one{{s:funfact-player} завдає шкоди {d:funfact-d1} ворогу.} few{{s:funfact-player} завдає шкоди {d:funfact-d1} ворогам.} many{{s:funfact-player} завдає шкоди {d:funfact-d1} ворогам.} other{{s:funfact-player} завдає шкоди {d:funfact-d1} ворога.}}"
 		"funfact_used_multiple_weapons:f"								"{funfact-d1, plural, one{{s:funfact-player} використовує {d:funfact-d1} вид зброї.} few{{s:funfact-player} використовує {d:funfact-d1} види зброї.} many{{s:funfact-player} використовує {d:funfact-d1} видів зброї.} other{{s:funfact-player} використовує {d:funfact-d1} вида зброї.}}"

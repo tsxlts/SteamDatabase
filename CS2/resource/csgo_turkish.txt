@@ -2424,6 +2424,7 @@ VIP'ye bu bölgelerden birine ulaşana kadar koruma sağla."
 		"NewItemMethod_CommunityMarketPurchase"	"Topluluk Pazarı'ndan Aldın:"
 
 		"ItemHistory_ActionWithTime"									"%s2 tarihinde %s1"
+		"ItemHistory_Action_GSCreate"									"Oluşturuldu"
 		"ItemHistory_Action_GenericAdd"									"Eklendi"
 		"ItemHistory_Action_GenericRemove"								"Kaldırıldı veya düzenlendi"
 		"ItemHistory_Action_Traded"										"Takas edildi"
@@ -2487,6 +2488,10 @@ VIP'ye bu bölgelerden birine ulaşana kadar koruma sağla."
 		"ItemHistory_Action_TournamentDrop"								"Bir hatıra düşmesi kazanıldı"
 		"ItemHistory_Action_TemplateItemGrant"							"Kazanıldı"
 		"ItemHistory_Action_Market_Add"									"Steam Topluluk Pazarından alındı"
+		"ItemHistory_Action_Market_Sealed"								"Steam Topluluk Pazarı'nda ilan oluşturuldu"
+		"ItemHistory_Action_Market_Unsealed"							"İlan Topluluk Pazarı'ndan kaldırıldı"
+		"ItemHistory_Action_Market_SoldSealed"							"Steam Topluluk Pazarı'nda satıldı"
+
 		"ItemHistory_Transaction_Delete"								"Sildiğiniz öğe"
 		"ItemHistory_Transaction_Craft"									"Oluşturuldu"
 		"ItemHistory_Transaction_UnlockCrate"							"Bir kasa açıldı"
@@ -2643,6 +2648,7 @@ VIP'ye bu bölgelerden birine ulaşana kadar koruma sağla."
 		"Attrib_NeverTradableButHasAfterDate1"		"Bu eşya takas edilemez ya da pazarlanamaz."
 		"Attrib_NeverTradableButHasAfterDate2"		"Kullanıldıktan sonra alınacak eşyalara %s1 tarihine kadar takas kısıtlaması uygulanacak"
 		"Attrib_TradeProtectedEscrowDate"			"⇆ Bu eşya takas korumalıdır ve %s1 tarihine kadar tüketilemez, değiştirilemez veya transfer edilemez."
+		"Attrib_TradeProtectedEscrowMarket"			"⇆ Bu eşya Steam Topluluk Pazarı'nda listelenmiştir ve satışta olduğu sürece tüketilemez veya değiştirilemez."
 		"Attrib_TradableAfterDate"					"\n%s1 Tarihinden Sonra Takas Edilebilir"
 		"Attrib_TradableMarketableAfterDate"		"%s1 Tarihinden Sonra Takas Edilebilir/Pazar'a Konabilir"
 		"Attrib_MarketableWithRestrictions"			"Steam Topluluk Pazarı'nda Anında Satılabilir"
@@ -34517,8 +34523,7 @@ Bu çıkartma, forZe eSports için Berlin 2019'da oynayan profesyonel oyuncu And
 		"PaintKit_m4a1s_quick_liquidation"				"Koyu tabanı ve özenle seçilmiş kırmızı ve mavi vurguları, bu özel boyalı M4A1-S'nin ortam ışığı altında parlıyormuş gibi görünmesini sağlar.\n\n<i>Sessiz yansıma</i>"
 		
 		"PaintKit_aug_trigger_discipline_velco"			"Mavi izometrik bir desen uygulanmış ve turuncu vurgularla tamamlanmıştır.\n\n<i>Sabretmenin karşılığını alırsın.</i>"
-
-// END COMMUNITY_36
+// END COMMUNITY_37 WEAPONS
 
 // OVERPASS_2024
 				
@@ -36649,6 +36654,7 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"SFUI_InvContextMenu_preview_musickit"       "İncele - Müzik Ön İzlemesi"
 		"SFUI_InvContextMenu_decodable"     "Kasayı Aç"
 		"SFUI_InvContextMenu_sell"			"Topluluk Pazarı'nda Sat"
+		"SFUI_InvContextMenu_marketlisting"	"Pazar İlanını Görüntüle"
 		"SFUI_InvContextMenu_openloadout"   "Ekipman Bölümünde Göster"
 		"SFUI_InvContextMenu_inspectcase"	"Aç..."
 		"SFUI_InvContextMenu_useitem"	    "Eşyayı Kullan"
@@ -40035,6 +40041,8 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"SFUI_Settings_Network_Bandwidth_30mbps"   "3 Mbps"
 		"SFUI_Settings_Network_Bandwidth_40mbps"   "4 Mbps"
 		"SFUI_Settings_Network_Bandwidth_Max"	   "Sınırlandırılmamış"
+
+		"SFUI_Settings_Volatile_Limit_Unlimited"	"Sınırsız"
 
 		"SFUI_FeatureUnavailableDuringBeta"		"Beta Süresince Erişilemez"
 
@@ -45128,6 +45136,7 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"inv_context_remove_patch"			"Yamayı Sök"		
 		"inv_context_openloadout"			"Teçhizatta Görüntüle"
 		"inv_context_sell"					"Topluluk Pazarı'nda Sat"
+		"inv_context_marketlisting"			"Pazar İlanını Görüntüle"
 		"inv_context_tradeup_add"			"Takas Kontratında Kullan"
 		"inv_context_tradeup_remove"		"Takas Kontratından Çıkart"
 		"inv_context_open_contract"			"Kontratı Aç"
@@ -45185,6 +45194,7 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"inv_session_prop_updated"			"Güncellendi!"
 		"inv_session_prop_quest_reward"		"Ödül!"
 		"inv_session_prop_xpshopredeem"		"Yeni!"
+		"inv_session_prop_marketlisting"	"<img src='file://{images}/icons/ui/coupon.svg' class='item-tile__onmarket'/> Pazar'da"
 		"inv_equipped_item"					"<b>{s:name}</b> <b>{s:team}</b> için kuşanıldı"
 		"inv_equipped_item_noteam"			"<b>{s:name}</b> kuşanıldı"
 		"inv_unequipped_item"				"<b>{s:name}</b> çıkartıldı"
@@ -45289,6 +45299,7 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"popup_delete_title"	"{s:itemname}"
 		"popup_delete_desc"		"Bu eşyayı silmek istediğinize emin misiniz?"
 		"popup_delete_warning"	"Silinen bir eşya geri getirilemez."
+		"popup_delete_tooltip"	"Bu eşyayı silmek için basılı tut. Silinen bir eşya geri getirilemez."
 		"popup_delete_button"	"Eşyayı Sil"
 
 		"popup_usegift_title"	"{s:itemname} Yolla"
@@ -48089,6 +48100,8 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"user_btn_purchase_desc_purchase"		"Bu eşyayı satın almak için basılı tut. Satın alma işleminden sonra terminal silinir."
 		"user_btn_purchase_desc_continue"		"Bu teklifi kalıcı olarak reddetmek ve bir sonraki teklifi görmek için basılı tut."
 		"user_btn_purchase_desc_end"		"Son teklifi reddet ve bu terminali sil."
+		"user_btn_purchase_title"			"{s:offer-count} Teklif"
+		"user_btn_purchase_final_title"		"<b>Son Teklif</b>"
 		"user_btn_decline_desc"				"Bu teklifi reddet ve başka bir teklife bak."
 		"user_btn_accept"		"<b>{s:price}</b> Teklifini Kabul Et"
 		"user_btn_accept_final"	"<b>{s:price}</b> Son Teklifini Kabul Et"
@@ -48110,6 +48123,18 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"user_btn_pause"		"Teklifi Duraklat"
 		"user_btn_end"			"Son Teklifi Reddet"
 
+		"user_message_limit_0"		"En fazla <b>{s:limit-setting}</b> ödeyebilirim."
+		"user_message_limit_1"		"En yüksek miktar <b>{s:limit-setting}</b> olsun."
+		"user_message_limit_2"		"En fazla <b>{s:limit-setting}</b> bana uyar."
+		"user_message_limit_3"		"<b>{s:limit-setting}</b> sınırı uygun."
+		"user_message_limit_unlimited_0"	"<b>Sınır yok</b>, hepsini görmek istiyorum."
+		"user_message_limit_unlimited_1"	"<b>Limitsiz</b>. Para sorun değil."
+		"user_message_limit_unlimited_2"	"Alıcıyım. <b>Bana her şeyi göster</b>."
+		"user_message_limit_unlimited_3"	"Ateş ediyorsa ilgimi çekiyor.<b> Sınır yok</b>."
+		"user_message_limit_unlimited_4"	"Sınır yok."
+		"offer_limit_setting"		"Teklif limiti: {s:limit}"
+		"offer_limit_setting_interface"		"Teklif limiti: {s:limit} <img src='file://{images}/icons/ui/expand.svg' class='expand-icon'/>"
+
 		"dealer_offer_Unknown"							"-"
 		"dealer_offer_1"								"1."
 		"dealer_offer_2"								"2."
@@ -48126,23 +48151,30 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"declined_offer_tooltip"	"Reddedilen teklif."
 		"future_offer_tooltip"		"Teklif henüz açılmadı."
 		"laptop_expiration_tooltip"		"Bu bağlantı terminali ve tekliflerinin sona ermesine kalan süre."
+		"laptop_max_offer_tooltip"		"Maksimum teklif limitini belirle. Yalnızca bu limitin altındaki teklifleri alırsın. İstediğin zaman değiştirebilirsin."
 		"collection_xp_tooltip"			"Bu koleksiyondaki teklifleri görüntüleyerek TP kazan. İlerlemeyi görmek ve TP almak için aç."
+		"terminal_offer_limit_tooltip"		"Maksimum teklif limitini güncelle. Silah taciri yalnızca bu limite kadar olan teklifleri gösterir."
 		"popup_lootlist_title"			"Koleksiyon Kataloğu TP"
 		"popup_lootlist_desc"			"Bu koleksiyondaki teklifleri görüntüleyerek TP kazan."
-		"popup_lootlist_progress"		"{d:seen}/{d:total} teklif görüntülendi"
+
 		"popup_lootlist_claim_xp"		"Bonus TP Kazan"
 		"popup_lootlist_claim_ww"		"TP alınıyor..."
-		"popup_lootlist_claim_ok"		"✅ TP alındı"
+		"popup_lootlist_claim_ok"		"✔ TP alındı"
 		"popup_vpn_status_connected"	"Durum: Güvenli ağa bağlanıldı"
 		"popup_vpn_status_disconnected"	"Durum: Bağlantı kesildi"
 		"popup_signal_full" 			"Tam Sinyal"
 		"popup_signal_ok" 				"Güçlü Sinyal"
+		"popup_offer_limit_desc"		"Maksimum teklif limitini gelecekteki tüm teklifler için güncelle."
 		"laptop_battery_tooltip" 		"Pil Seviyesi: %{d:percent}"
 		"laptop_original_seal_tooltip" 	"Bu bağlantı terminalinden satın alınan her eşya, sana ait olduğu sürece geçerli olan birinci el belgesi ile birlikte gelir."
 		"laptop_zoom_tooltip" 			"Yakınlaştırmak ve uzaklaştırmak için fare tekerleğini döndür."
 		"laptop_pan_tooltip" 			"Kamerayı kaydırmak için Shift tuşunu basılı tut ve fareyi sürükle."
 		"laptop_pricing_tooltip"		"Fiyatlar küreseldir ve bu koleksiyondaki her bir eşyaya yönelik talebe göre otomatik olarak belirlenir."
 
+		"dealer_message_set_offer_limit_0"		"Öncelikle bütçen ne kadar?"
+		"dealer_message_set_offer_limit_1"		"Öncelikle bu konuyu aradan çıkaralım.<!--.25--> Limitin nedir?"
+		"dealer_message_set_offer_limit_2"		"Başlamadan önce...<!--.25--> Üst sınır ne kadar? Ne kadar ödemeye hazırsın?"
+		
 		"dealer_message_start_0"  	"Bunlar tamamen profesyonel ekipmanlar.<!--.25-->Tam teşkilat. Üstelik evrak işi yok."
 		"dealer_message_start_1"  	"Karaborsa ürünlerini satıyorum. Evraksız.<!--.25-->Merak etme. İzlerini süremezler. Bu silahlar yıllardır satılmıyor.<!--.25-->Ama nişan aldığında ateş ediyorlar. Denemek istersen."
 		"dealer_message_start_2"  	"Ürünlerim Ahradan'daki gümrükte takıldı. Ölmek üzere olan zavallı insanlar için tıbbi ekipmanlar falan diye duygu sömürüsü yapmaya çalıştım.<!--.25-->İşe yaramadı. Ama nakit dolu bir çanta yaradı.<!--.25-->Yetimhanelere teslim etmeden önce şu diyalizörlere bir bakalım mı?"
@@ -48150,6 +48182,7 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"dealer_message_start_4"  	"Bugünkü mallarım tertemiz.<!--.25-->Senden önce bunlara kimse dokunmamıştır bile."
 		"dealer_message_start_5"  	"Temiz mallar, seri numaraları yok. Sağlamlar.<!--.25-->Muhtemelen bir askerî mahkemede delil olarak kullanılırlardı.<!--.25-->İkimiz de bunların şaheser olduğunu görebiliyoruz."
 		"dealer_message_start_6"  	"Tüm sevkiyat, yakın zamandaki bir askeri geçit töreninden kalan egzotik silahlarla dolu.<!--.25-->Sadece yürüyüşte taşınmışlar, ateş bile edilmemişler."
+		"dealer_message_start_7"  	"Diğer müşterilerim sürekli ürünlerimi nereden aldığımı sorup duruyor. Hiç sevmiyorum.<!--.25-->Senin tek derdin piyasadaki en iyi malları almak.<!--.25-->Benimkiler harbiden de öyle."
 		"dealer_message_start_8"  	"Drosvik'te barış anlaşması yapıldı. Barışı seviyorum.<!--.25-->Tıka basa silahla dolu toz toplayan bir depoya sahip borca batmış bir general tanıyorum da.<!--.25-->Yani...<!--.25-->Tabii ki barış çok güzel bir şey. Masum hayatlar ve...<!--.25-->Ne diyorum ben ya? Umurunda değil ki."
 		"dealer_message_start_9"  	"Bu postada karaborsadan aldığım egzotik mallar var.<!--.25-->Alışılmadık kalibreler, amatör işi değil. Bayılacaksın."
 		"dealer_message_start_10"  	"Hay aksi.<!--.25-->Gümrük beyannamemde bir sandığı yanlış etiketlemişim.<!--.25-->Yani birkaç düzine sandığı.<!--.25-->Liman yetkilileri haberdar olmadan önce bu mallardan kurtulmama yardım eder misin?"
@@ -48340,10 +48373,29 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"dealer_message_addition_factory_new_2"	"<!--.25-->Depodan yeni çıktı. Hiç kullanılmadı."
 		"dealer_message_addition_factory_new_3"	"<!--.25-->Yepyeni. Hiç ateş edilmedi."
 		
+		"dealer_message_limit_first_time_0"		"Tamam, sadece {s:limit} limitine kadar olan teklifleri göstereceğim.<!--.25--> Bakalım sana uygun ne varmış."
+		"dealer_message_limit_first_time_2"		"Yalnızca {s:limit} altındaki teklifler, tamamdır.<!--.25--> Süre daralıyor, hadi başlayalım."
+		"dealer_message_limit_first_time_3"		"Anladım ve güncelledim.<!--.25--> İşte."
+		"dealer_message_limit_first_time_unlimited_0"		"Sınır yok demek, harika. Güncel kataloğu açacağım.<!--.25--> Süre daralıyor. Hadi başlayalım."
+		"dealer_message_limit_first_time_unlimited_1"		"Anlaşıldı. Sınırsız. Şimdi oldu.<!--.25--> Bakalım sana göre ne var."
+
+		"dealer_message_limit_0"				"Tamam, sadece {s:limit} limitine kadar olan teklifleri göstereceğim."
+		"dealer_message_limit_1"				"Yalnızca {s:limit} altındaki teklifler, tamamdır."
+		"dealer_message_limit_2"				"Limiti uyguluyorum. Sadece {s:limit} ve altındaki teklifler."
+		"dealer_message_limit_3"				"En fazla {s:limit}. Anlaşıldı ve güncellendi."
+		"dealer_message_limit_4"				"Sadece etikete uyanları göstereceğim, en fazla {s:limit} olacak."
+		"dealer_message_limit_5"				"{s:limit}. Yeni limit tamamdır."
+		"dealer_message_limit_6"				"Anlaşıldı. Teklifler en fazla {s:limit} olacak şekilde sıfırlanıyor."
+		"dealer_message_limit_unlimited_0"		"Sınır yok demek, harika. Güncel kataloğu açacağım."
+		"dealer_message_limit_unlimited_1"		"Anladım, sınırsız. Sıra dışı bir şeyler çıkarsa göstereceğim."
+		"dealer_message_limit_unlimited_2"		"Tam duymak istediğim şey. Çok değerli bir şey gelirse sana göstermekten çekinmeyeceğim."
+		"dealer_message_limit_unlimited_3"		"Anlaşıldı. Sınırsız. Şimdi oldu."
+
 		"system_dealer_left_chat_0"				"Satıcı sohbetten çıktı."
 		"system_dealer_join_chat_0"				"{s:collection} Silah Taciri Teklifleri.<!--1.25-->Satıcı Bağlandı"
 		"system_user_reject_offer_0"			"{s:user-name} teklifi reddetti."
 
+		"system_user_updated_offer_limit_0"			"Maksimum teklif limiti {s:limit} olarak güncellendi. İstediğin zaman güncelleyebilirsin."
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -48578,8 +48630,8 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"quest_11015_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> oynarken bir raunt kazan.#|#<b>{s:gamemode}: {s:location}</b> oynarken birden fazla raunt kazan."
 		"quest_11015_var_ingame:p{mission-points}"		"Bir raunt kazan.#|#Birden fazla raunt kazan."
 
-// crow_mask_51633_comment
-// crow_mask_51634_comment
+// crow_mask_51765_comment
+// crow_mask_51766_comment
 }
 
 
@@ -48588,43 +48640,7 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 }
 
 
-_var_ingame:p{mission-points}"		"Bir raunt kazan.#|#Birden fazla raunt kazan."
-		
-		"quest_11015_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> oynarken bir raunt kazan.#|#<b>{s:gamemode}: {s:location}</b> oynarken birden fazla raunt kazan."
-		"quest_11015_var_ingame:p{mission-points}"		"Bir raunt kazan.#|#Birden fazla raunt kazan."
-
-// crow_mask_51588_comment
-// crow_mask_51589_comment
-}
-
-
-
-
-}
-
-
- imha etti."
-		"funfact_killed_half_of_enemies:f"								"{funfact-d1, plural, one{{s:funfact-player} düşman takımın %{d:funfact-d1} kadarını öldürdü.} other{{s:funfact-player} düşman takımın %{d:funfact-d1} kadarını öldürdü.}}"
-		"funfact_knife_level_reached:f"									"{funfact-d1, plural, one{{d:funfact-d1} oyuncu altın bıçak seviyesine ulaştı.} other{{d:funfact-d1} oyuncu altın bıçak seviyesine ulaştı.}}"
-		"funfact_killed_before_dying:f"									"{funfact-d1, plural, one{{s:funfact-player} ölmeden önce {d:funfact-d1} oyuncu öldürdü.} other{{s:funfact-player} ölmeden önce {d:funfact-d1} oyuncu öldürdü.}}"
-		"funfact_respawned:f"											"{funfact-d1, plural, one{{s:funfact-player} maç sırasında {d:funfact-d1} defa yeniden canlandı.} other{{s:funfact-player} maç sırasında {d:funfact-d1} defa yeniden canlandı.}}"
-		"funfact_default_weapon:f"										"{s:funfact-player} raundu herhangi bir silah almadan kazandı."
-		"funfact_rounds_without_dying:f"								"{funfact-d1, plural, one{{s:funfact-player} art arda {d:funfact-d1} raunt hayatta kaldı.} other{{s:funfact-player} art arda {d:funfact-d1} raunt hayatta kaldı.}}"
-		"funfact_taser_kill:f"											"{funfact-d1, plural, one{{s:funfact-player} {d:funfact-d1} oyuncuyu şokladı.} other{{s:funfact-player} {d:funfact-d1} oyuncuyu şokladı.}}"
-		"funfact_ticking_time:f"										"{funfact-d1, plural, one{{d:funfact-d1} AT'nin bombayı imha etmeye çalışmasına rağmen Teröristler kazandı.} other{{d:funfact-d1} AT'nin bombayı imha etmeye çalışmasına rağmen Teröristler kazandı.}}"
-		"funfact_ct_win_time:f"											"{funfact-d1, plural, one{AT takımı Terörist takımını {d:funfact-d1} saniyede ortadan kaldırdı.} other{AT takımı Terörist takımını {d:funfact-d1} saniyede ortadan kaldırdı.}}"
-		"funfact_ter_win_time:f"										"{funfact-d1, plural, one{Terörist takımı AT takımını {d:funfact-d1} saniyede ortadan kaldırdı.} other{Terörist takımı AT takımını {d:funfact-d1} saniyede ortadan kaldırdı.}}"
-		"funfact_bots_assumed:f"										"{funfact-d1, plural, one{{s:funfact-player} bu raunt {d:funfact-d1} botu kontrol etti.} other{{s:funfact-player} bu raunt {d:funfact-d1} botu kontrol etti.}}"
-		"funfact_domination:f"											"{s:funfact-player} en fazla oyuncuya hükmetti."
-		"funfact_revenge:f"												"{funfact-d1, plural, one{{s:funfact-player} {d:funfact-d1} oyuncudan intikam aldı.} other{{s:funfact-player} {d:funfact-d1} oyuncudan intikam aldı.}}"
-		"funfact_steps_taken:f"											"{funfact-d1, plural, one{{s:funfact-player} maç boyunca {d:funfact-d1} adım koştu.} other{{s:funfact-player} maç boyunca {d:funfact-d1} adım koştu.}}"
-		"funfact_quarter_health:f"										"{funfact-d1, plural, one{{s:funfact-player} sağlığı 25'in altındayken {d:funfact-d1} oyuncu öldürdü.} other{{s:funfact-player} sağlığı 25'in altındayken {d:funfact-d1} oyuncu öldürdü.}}"
-		"funfact_empty_guns:f"											"{funfact-d1, plural, one{{s:funfact-player} {d:funfact-d1} silah aldı ve hepsinin cephanesini bitirdi.} other{{s:funfact-player} {d:funfact-d1} silah aldı ve hepsinin cephanesini bitirdi.}}"
-		"funfact_slow_trigger:f"										"{funfact-d1, plural, one{{s:funfact-player} {d:funfact-d1} silah aldı ama hiç ateş edemeden öldü.} other{{s:funfact-player} {d:funfact-d1} silah aldı ama hiç ateş edemeden öldü.}}"
-		"funfact_pickup_bomb:f"											"{funfact-d1, plural, one{Bomba {d:funfact-d1} takım arkadaşının elinden geçtikten sonra {s:funfact-player} bombayı yerleştirdi.} other{Bomba {d:funfact-d1} takım arkadaşının elinden geçtikten sonra {s:funfact-player} bombayı yerleştirdi.}}"
-		"funfact_bomb_carriers:f"										"{funfact-d1, plural, one{{s:funfact-player} son rauntta {d:funfact-d1} bomba taşıyıcısını öldürdü.} other{{s:funfact-player} son rauntta {d:funfact-d1} farklı bomba taşıyıcısını öldürdü.}}"
-		"funfact_knife_bomb_planter:f"									"{s:funfact-player} bomba yerleştiricisini öldürerek takımına bıçak raundunu kazandırdı."
-		"funfact_bomb_planted_before_kill:f"							"Bomba yerleştirilmeden önce hiçbir oyuncu ölmedi."
+ncu ölmedi."
 		"funfact_failed_bomb_plants:f"									"{funfact-d1, plural, one{Bu rauntta {d:funfact-d1} Terörist bombayı yerleştirmeye çalıştı.} other{Bu rauntta {d:funfact-d1} Terörist bombayı yerleştirmeye çalıştı.}}"
 		"funfact_knife_without_ammo:f"									"{funfact-d1, plural, one{{s:funfact-player} cephanesi tükendikten sonra {d:funfact-d1} kişiyi bıçakla öldürdü.} other{{s:funfact-player} cephanesi tükendikten sonra {d:funfact-d1} kişiyi bıçakla öldürdü.}}"
 		"funfact_molotov_burns:f"										"{funfact-d1, plural, one{{s:funfact-player} {d:funfact-d1} oyuncuyu ateş ile yaktı.} other{{s:funfact-player} {d:funfact-d1} oyuncuyu ateş ile yaktı.}}"

@@ -2485,6 +2485,7 @@
 		"ItemHistory_Action_TournamentDrop"								"Mottok et suvenirslipp"
 		"ItemHistory_Action_TemplateItemGrant"							"Tjent"
 		"ItemHistory_Action_Market_Add"									"Mottatt fra samfunnsmarkedet"
+		"ItemHistory_Action_Market_Sealed"								"Opprettet annonse på Steams samfunnsmarked"
 		"ItemHistory_Action_Market_Unsealed"							"Fjernet annonse på samfunnsmarkedet"
 		"ItemHistory_Action_Market_SoldSealed"							"Solgt på Steams samfunnsmarked"
 
@@ -2644,6 +2645,7 @@
 		"Attrib_NeverTradableButHasAfterDate1"		"Denne gjenstanden kan ikke byttes eller selges."
 		"Attrib_NeverTradableButHasAfterDate2"		"Etter bruk kan ikke mottatte gjenstander byttes før %s1"
 		"Attrib_TradeProtectedEscrowDate"			"⇆ Denne gjenstanden er byttebeskyttet og kan ikke brukes opp, endres eller overføres inntil %s1"
+		"Attrib_TradeProtectedEscrowMarket"			"⇆ Denne gjenstanden er lagt ut på Steams samfunnsmarked og kan ikke brukes opp eller endres så lenge den ligger ute."
 		"Attrib_TradableAfterDate"					"Kan byttes etter %s1"
 		"Attrib_TradableMarketableAfterDate"		"Kan byttes/selges etter %s1"
 		"Attrib_MarketableWithRestrictions"			"Kan selges øyeblikkelig på Steam-samfunnsmarkedet"
@@ -4398,6 +4400,8 @@
 		
 		"CSGO_crate_community_36"				"Forseglet Genesis-terminal"
 		"CSGO_crate_community_36^volatile"		"Aktiv Genesis-terminal"
+		"CSGO_crate_community_37"				"Forseglet Dead Hand-terminal"
+		"CSGO_crate_community_37^volatile"		"Aktiv Dead Hand-terminal"
 		"CSGO_crate_keychain_pack_kc_drboom_capsule"	    	"Anhengssamling – Dr. Boom"
 		"CSGO_crate_keychain_pack_kc_drboom_capsule_desc"		"Denne samlingen inneholder et utvalg anheng med Dr. Boom."
 		"CSGO_crate_keychain_pack_kc_drboom_capsule_short"	    "Dr. Boom-anheng"
@@ -5514,6 +5518,7 @@
 		"CSGO_set_community_36"					"Genesis-samlingen"
 		"CSGO_set_timed_drops_exuberant"		"Harlequin-samlingen"
 		"CSGO_set_timed_drops_achroma"			"Achroma-samlingen"
+		"CSGO_set_community_37"					"Dead Hand-samlingen"
 		/////////////////
 		// lootlist override strings
 		//////////////////
@@ -35559,8 +35564,104 @@
 		"PaintKit_m4a1s_quick_liquidation"				"Den mørke grunningen og nøye utvalgte røde og blå detaljer gjør at denne lakkerte M4A1-S-en ser ut som om den gløder under omgivelseslys.\n\n<i>Stille refleksjon.</i>"
 		
 		"PaintKit_aug_trigger_discipline_velco"			"Den er påført et blått isometrisk mønster og avsluttet med oransje detaljer.\n\n<i>Tålmodighet er sin egen belønning.</i>"
+"PaintKit_glove_driver_knit_argyle_green_Tag"					"Hand Sweaters"
+		
+		"PaintKit_glove_driver_ostrich_purple_Tag"						"Plum Quill"
+		
+		"PaintKit_glove_driver_silk_dragon_white_Tag"					"Wave Chaser"
+		
+		"PaintKit_glove_brocade_crane_Tag"								"Brocade Crane"
+		
+		"PaintKit_glove_driver_brocade_flower_red_Tag"					"Brocade Flowers"
+		
+		"PaintKit_glove_driver_dragon_scale_red_Tag"					"Dragon Fists"
+		
+		"PaintKit_glove_driver_embroidered_flowers_teal_Tag"			"Garden"
+		
+		"PaintKit_glove_driver_scallop_metallic_blue_Tag"				"Seigaiha"
+		
+		"PaintKit_glove_sport_velvet_red_Tag"							"Occult"
+		
+		"PaintKit_glove_sport_beadwork_diamonds_purple_Tag"				"Violet Beadwork"
+		
+		"PaintKit_glove_sport_camo_winter_Tag"							"Frosty"
+		
+		"PaintKit_glove_sport_pinstripe_black_Tag"						"Creme Pinstripe"
+		
+		"PaintKit_glove_sport_racer_red_Tag"							"Red Racer"
+		
+		"PaintKit_glove_sport_tech_gradient_bright_Tag"					"Ultra Violent"
+		
+		"PaintKit_glove_specialist_abstract_green_Tag"					"Lime Polycam"
+		
+		"PaintKit_glove_specialist_graffiti_black_Tag"					"Blackbook"
+		
+		"PaintKit_glove_specialist_quilted_black_Tag"					"Chocolate Chesterfield"
+		
+		"PaintKit_glove_specialist_quilted_white_Tag"					"Pillow Punchers"
+		
+		"PaintKit_glove_specialist_sunburst_red_Tag"					"Sunburst"
+		
+		"PaintKit_glove_specialist_dragon_blue_Tag"						"Cloud Chaser"
+		
+		"PaintKit_glove_specialist_wave_blue_Tag"						"Big Swell"
+		
+// END COMMUNITY_37 GLOVES
 
-// END COMMUNITY_36
+// COMMUNITY_37 WEAPONS
+		
+		"PaintKit_glock_jdpeek"											"Den er spesiallakkert i neonfarger og metallisk glitterlakk.\n\n<i>Den er litt mye for meg, men jeg er ikke i målgruppen … – Booth, våpenhandler</i>"
+		"PaintKit_glock_jdpeek_Tag"										"Fully Tuned"
+					
+		"PaintKit_awp_queens_gambit"									"Den er spesiallakkert i kongeblått og gull. Det er lakkert en dronning på kolben for hånd.\n\n<i>Hvert skudd er en kongelig resolusjon om makt og presisjon.</i>"
+		"PaintKit_awp_queens_gambit_Tag"								"Queen's Gambit"
+					
+		"PaintKit_p90_deathgaze"										"Den er spesiallakkert med en graffiti av Medusa over en grunning av Carrara-marmor.\n\n<i>Tilbe ikke idol som er bygget på bedrag.</i>"
+		"PaintKit_p90_deathgaze_Tag"									"Deathgaze"
+					
+		"PaintKit_p250_kintsugi"										"En slående oransje fugl og gulldetaljer er spesiallakkert over en elfenbeinsfarget grunning.\n\n<i>Som de fine middagstallerkenene brukes dette våpenet kun ved spesielle anledninger.</i>"
+		"PaintKit_p250_kintsugi_Tag"									"Kintsugi"
+					
+		"PaintKit_mp9_urban_sovereign"									"Den er spesiallakkert med et urbant materialdesign og avsluttet med gullgraffiti.\n\n<i>Konger gjemmer seg ikke bak vegger – de maler dem.</i>"
+		"PaintKit_mp9_urban_sovereign_Tag"								"Urban Sovereign"
+					
+		"PaintKit_mp7_amberline"										"Den er sprøytelakkert med diagonale oransje og hvite striper.\n\n<i>Et merke i hånden.</i>"
+		"PaintKit_mp7_amberline_Tag"									"Amberline"
+					
+		"PaintKit_bizon_rmx"											"Den er spesiallakkert med en lilla forløpning og et rødt og hvitt design.\n\n<i>Lett, kjapp og farlig … i teorien.</i>"
+		"PaintKit_bizon_rmx_Tag"										"RMX"
+					
+		"PaintKit_ak47_crane_flight"									"En trane og gulldetaljer er lakkert for hånd over en svart og hvit grunning.\n\n<i>Forut for blodmånen.</i>"
+		"PaintKit_ak47_crane_flight_Tag"								"Crane Flight"
+					
+		"PaintKit_deagle_firebreathing"									"Den er spesiallakkert i lilla og blå flammer med perlemoraktig lakk.\n\n<i>Inneholder usedvanlige kvaliteter og evner.</i>"
+		"PaintKit_deagle_firebreathing_Tag"								"Firebreathing"
+					
+		"PaintKit_ump_fragment"											"Den er spesiallakkert med et sølvfarget, svart og rødt design.\n\n<i>I stumper og stykker.</i>"
+		"PaintKit_ump_fragment_Tag"										"Fragment"
+					
+		"PaintKit_sawedoff_fusion"										"Den er spesiallakkert med et svart og gullfarget design. Flere detaljer viser seg i ulike lysforhold.\n\n<i>Øye for detaljer.</i>"
+		"PaintKit_sawedoff_fusion_Tag"									"Fusion"
+					
+		"PaintKit_galil_galigator"										"En alligator og strålingssymboler er spesiallakkert over en grønn og gul grunning.\n\n<i>JAFS! JAFS! JAFS!</i>"
+		"PaintKit_galil_galigator_Tag"									"Galigator"
+					
+		"PaintKit_fiveseven_polymer_dark"								"Denne spesiallakkeringen får våpenet til å se ut som det er laget av gjennomsiktig lilla polymer.\n\n<i>Pakket i et lilla sukkerskall.</i>"
+		"PaintKit_fiveseven_polymer_dark_Tag"							"Dark Polymer"
+					
+		"PaintKit_usps_silent_boy"										"Den er spesiallakkert med svarte og blå geometriske symboler og kastestjerner.\n\n<i>Utvis diskresjon mens du utfører aggresjon.</i>"
+		"PaintKit_usps_silent_boy_Tag"									"Silent Shot"
+					
+		"PaintKit_m4a4_zubastick_bw"									"Den er håndlakkert med tenner og oransje øyne.\n\n<i>Circa 1991.</i>"
+		"PaintKit_m4a4_zubastick_bw_Tag"								"Zubastick"
+					
+		"PaintKit_m4a1s_electrum"										"Den er spesiallakkert med en marmorert grønn grunning og avsluttet med gullfargede og røde detaljer.\n\n<i>De betaler deg ikke nok til å bære den, men det kan jeg. – Valeria Jenner, revolusjonær</i>"
+		"PaintKit_m4a1s_electrum_Tag"									"Electrum"
+					
+		"PaintKit_m249_blocks_purple"									"Den er spesiallakkert med en lilla geometrisk grafikk.\n\n<i>Stable dem.</i>"
+		"PaintKit_m249_blocks_purple_Tag"								"Bock Blocks"
+		
+// END COMMUNITY_37 WEAPONS
 
 // OVERPASS_2024
 				
@@ -49225,6 +49326,8 @@
 		"user_message_limit_unlimited_0"	"<b>Ingen maksgrense</b>, jeg vil se alt."
 		"user_message_limit_unlimited_1"	"<b>Blankosjekk</b>. Ikke bekymre deg for lommeboken."
 		"user_message_limit_unlimited_2"	"Jeg er her for å kjøpe. <b>Vis meg alt</b>."
+		"user_message_limit_unlimited_3"	"Hvis den skyter, er jeg interessert. <b>Ingen grenser</b>."
+		"user_message_limit_unlimited_4"	"Det finnes ingen grenser."
 		"offer_limit_setting"		"Tilbudsgrense: {s:limit}"
 		"offer_limit_setting_interface"		"Tilbudsgrense: {s:limit} <img src='file://{images}/icons/ui/expand.svg' class='expand-icon'/>"
 
@@ -49249,10 +49352,11 @@
 		"terminal_offer_limit_tooltip"		"Oppdater maks tilbudsgrense. Våpenhandleren viser kun tilbud opptil denne grensen."
 		"popup_lootlist_title"			"XP fra samlingskatalog"
 		"popup_lootlist_desc"			"Tjen XP for å ha sett tilbudene i denne samlingen."
-		"popup_lootlist_progress"		"Sett {d:seen}/{d:total} tilbud"
+
+		"popup_lootlist_progress:f"      "Sett {d:seen}/{d:total} tilbud"
 		"popup_lootlist_claim_xp"		"Få bonus-XP"
 		"popup_lootlist_claim_ww"		"Gjør krav på XP …"
-		"popup_lootlist_claim_ok"		"✅ XP mottatt"
+		"popup_lootlist_claim_ok"		"✔ XP mottatt"
 		"popup_vpn_status_connected"	"Status: koblet til sikkert nettverk"
 		"popup_vpn_status_disconnected"	"Status: frakoblet"
 		"popup_signal_full" 			"Fullt signal"
@@ -49264,6 +49368,10 @@
 		"laptop_pan_tooltip" 			"Hold Shift og dra for å panorere kameraet"
 		"laptop_pricing_tooltip"		"Prisene er globale og justeres automatisk basert på etterspørselen for hver gjenstand i samlingen."
 
+		"dealer_message_set_offer_limit_0"		"Først og fremst. Hvor mye har du tillatelse til å bruke?"
+		"dealer_message_set_offer_limit_1"		"La oss få dette ut av veien.<!--.25--> Hva er grensen?"
+		"dealer_message_set_offer_limit_2"		"Før vi setter i gang …<!--.25--> Hva er maks? Hvor mye kan du bruke?"
+		
 		"dealer_message_start_0"  	"Dette er profesjonelle saker over hele fjøla.<!--.25-->Alt man trenger. Ikke noe av papirarbeidet."
 		"dealer_message_start_1"  	"Jeg jobber i det grå markedet, ingen dokumentasjon.<!--.25-->Slapp av, de er kalde. Ute av omløp i årevis. Ingen som leter etter dem.<!--.25-->Og de skyter fortsatt dit du peker, om du lurte."
 		"dealer_message_start_2"  	"Tollvesenet i Ahradan frøs lasten min i morges. Jeg prøvde å tine den opp med en trist historie om medisinsk utstyr og en eller annen stakkar …<!--.25-->Det fungerte ikke. Men kofferten full av penger fungerte fint.<!--.25-->Hva om vi tar en titt på disse dialysemaskinene før jeg sender dem til noen hjelpeløse."
@@ -49271,6 +49379,7 @@
 		"dealer_message_start_4"  	"De tingene jeg har i dag, er alle rene.<!--.25-->Så vidt noen vet, er du de første som har hatt dem."
 		"dealer_message_start_5"  	"Sterile stykker, ingen serienummer, god stand.<!--.25-->En krigsdomstol hadde kalt dette bevis.<!--.25-->Du og jeg vet at de er mesterstykker."
 		"dealer_message_start_6"  	"Hele denne forsendelsen er eksotiske stykker som nylig ble frigjort fra en paradetropp.<!--.25-->Mye marsjert med. Aldri avfyrt."
+		"dealer_message_start_7"  	"De andre kundene mine vil alltid vite hvor jeg fikk tak i greiene. Jeg hater det.<!--.25-->Alt du vil vite, er om det er de beste sakene på markedet.<!--.25-->Vet du hva – de er det."
 		"dealer_message_start_8"  	"Fredsavtale i Drosvik. Jeg elsker fred.<!--.25-->Fordi jeg har en general med mye gjeld og et fullstappet våpenlager som samler støv.<!--.25-->Jeg mener …<!--.25-->Også fordi fred er bra, så klart. Uskyldige liv og …<!--.25-->Hva er det jeg sier, du bryr deg ikke."
 		"dealer_message_start_9"  	"Denne lasten har eksotiske stykker ledet gjennom grå kanaler.<!--.25-->Uvanlige kaliber, ikke for amatører. Du kommer til å elske dem."
 		"dealer_message_start_10"  	"Dette er pinlig.<!--.25-->Jeg må ha feilmerket en kasse på fraktmanifestet.<!--.25-->Vel. Noen dusin kasser.<!--.25-->Hva med at du hjelper meg med å få disse varene til å forsvinne før havnevesenet ser på saken."
@@ -49461,10 +49570,29 @@
 		"dealer_message_addition_factory_new_2"	"<!--.25-->Rett fra hvelvet. Fabrikkny."
 		"dealer_message_addition_factory_new_3"	"<!--.25-->Denne er flunkende ny. Aldri avfyrt."
 		
+		"dealer_message_limit_first_time_0"		"Godt å vite, jeg skal bare vise deg tilbud opptil {s:limit}.<!--.25--> La oss se hva du trenger."
+		"dealer_message_limit_first_time_2"		"Kun tilbud under {s:limit}. Det skal jeg huske.<!--.25--> Klokken tikker. La oss begynne."
+		"dealer_message_limit_first_time_3"		"Greit. Oppdatert.<!--.25--> La oss komme i gang."
+		"dealer_message_limit_first_time_unlimited_0"		"Ingen grense, supert. Jeg tar av hele katalogen fremover.<!--.25--> Klokken tikker. La oss begynne."
+		"dealer_message_limit_first_time_unlimited_1"		"Mottatt. Ingen grense. Nå mener vi alvor.<!--.25--> La oss se hva du trenger."
+
+		"dealer_message_limit_0"				"Godt å vite, jeg skal bare vise deg tilbud opptil {s:limit}."
+		"dealer_message_limit_1"				"Kun tilbud under {s:limit}. Det skal jeg huske."
+		"dealer_message_limit_2"				"Justerer parametrene. Kun tilbud opptil {s:limit}."
+		"dealer_message_limit_3"				"Tilbud opptil {s:limit}. Notert. Oppdatert."
+		"dealer_message_limit_4"				"Jeg plukker bare ut det som passer prislappen, opptil {s:limit}."
+		"dealer_message_limit_5"				"{s:limit} er nytt pristak."
+		"dealer_message_limit_6"				"Skjønner. Tilbakestiller filtrene for tilbud opptil {s:limit}."
+		"dealer_message_limit_unlimited_0"		"Ingen grense, supert. Jeg tar av hele katalogen fremover."
+		"dealer_message_limit_unlimited_1"		"Mottatt, ingen grense. Hvis noe eksotisk dukker opp, skal jeg ikke holde igjen."
+		"dealer_message_limit_unlimited_2"		"Som musikk i mine ører. Hvis noe passer til beskrivelsen, skal jeg ikke nøle med å vise deg."
+		"dealer_message_limit_unlimited_3"		"Mottatt. Ingen grense. Nå mener vi alvor."
+
 		"system_dealer_left_chat_0"				"Våpenhandleren har forlatt samtalen."
 		"system_dealer_join_chat_0"				"Våpentilbud fra {s:collection}.<!--1.25-->Våpenhandler koblet til"
 		"system_user_reject_offer_0"			"{s:user-name} avslo tilbudet."
 
+		"system_user_updated_offer_limit_0"			"Maks tilbudsgrense oppdatert til {s:limit}. Du kan oppdatere innstillingen når som helst."
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -49699,8 +49827,8 @@
 		"quest_11015_var_desc:p{mission-points}"	 	"<b>{s:gamemode}: {s:location}</b> – vinn en runde.#|#<b>{s:gamemode}: {s:location}</b> – vinn runder."
 		"quest_11015_var_ingame:p{mission-points}"		"Vinn en runde#|#Vinn runder"
 
-// crow_mask_51633_comment
-// crow_mask_51634_comment
+// crow_mask_51765_comment
+// crow_mask_51766_comment
 }
 
 
@@ -49709,53 +49837,7 @@
 }
 
 
-act_taser_kill:f"											"{funfact-d1, plural, one{{s:funfact-player} gav {d:funfact-d1} spiller støt.} other{{s:funfact-player} gav {d:funfact-d1} spillere støt.}}"
-		"funfact_ticking_time:f"										"{funfact-d1, plural, one{Terroristene vant til tross for at {d:funfact-d1} AT prøvde å desarmere bomben.} other{Terroristene vant til tross for at {d:funfact-d1} AT-er prøvde å desarmere bomben.}}"
-		"funfact_ct_win_time:f"											"{funfact-d1, plural, one{AT-laget eliminerte terroristlaget på {d:funfact-d1} sekund.} other{AT-laget eliminerte terroristlaget på {d:funfact-d1} sekunder.}}"
-		"funfact_ter_win_time:f"										"{funfact-d1, plural, one{Terroristlaget eliminerte AT-laget på {d:funfact-d1} sekund.} other{Terroristlaget eliminerte AT-laget på {d:funfact-d1} sekunder.}}"
-		"funfact_bots_assumed:f"										"{funfact-d1, plural, one{{s:funfact-player} tok kontroll over {d:funfact-d1} bot denne runden.} other{{s:funfact-player} tok kontroll over {d:funfact-d1} boter denne runden.}}"
-		"funfact_domination:f"											"{s:funfact-player} dominerte flest spillere."
-		"funfact_revenge:f"												"{funfact-d1, plural, one{{s:funfact-player} tok hevn på {d:funfact-d1} spiller.} other{{s:funfact-player} tok hevn på {d:funfact-d1} spillere.}}"
-		"funfact_steps_taken:f"											"{funfact-d1, plural, one{{s:funfact-player} tok {d:funfact-d1} steg i løpet av kampen.} other{{s:funfact-player} tok {d:funfact-d1} steg i løpet av kampen.}}"
-		"funfact_quarter_health:f"										"{funfact-d1, plural, one{{s:funfact-player} drepte {d:funfact-d1} spiller når egen helse var under 25.} other{{s:funfact-player} drepte {d:funfact-d1} spillere når egen helse var under 25.}}"
-		"funfact_empty_guns:f"											"{funfact-d1, plural, one{{s:funfact-player} gikk tom for ammunisjon med {d:funfact-d1} våpen.} other{{s:funfact-player} gikk tom for ammunisjon med {d:funfact-d1} våpen.}}"
-		"funfact_slow_trigger:f"										"{funfact-d1, plural, one{{s:funfact-player} døde uten å avfyre et skudd med {d:funfact-d1} våpen.} other{{s:funfact-player} døde uten å avfyre et skudd med {d:funfact-d1} våpen.}}"
-		"funfact_pickup_bomb:f"											"{funfact-d1, plural, one{{s:funfact-player} plasserte bomben etter at {d:funfact-d1} lagkamerat hadde hatt den.} other{{s:funfact-player} plasserte bomben etter at {d:funfact-d1} lagkamerater hadde hatt den.}}"
-		"funfact_bomb_carriers:f"										"{funfact-d1, plural, one{{s:funfact-player} drepte {d:funfact-d1} bombebærer denne runden.} other{{s:funfact-player} drepte {d:funfact-d1} ulike bombebærere denne runden.}}"
-		"funfact_knife_bomb_planter:f"									"{s:funfact-player} vant på knivnivået ved å drepe bombeplassereren."
-		"funfact_bomb_planted_before_kill:f"							"Ingen spillere ble drept før bomben ble plassert."
-		"funfact_failed_bomb_plants:f"									"{funfact-d1, plural, one{{d:funfact-d1} terrorist prøvde å plassere bomben denne runden.} other{{d:funfact-d1} terrorister prøvde å plassere bomben denne runden.}}"
-		"funfact_knife_without_ammo:f"									"{funfact-d1, plural, one{{s:funfact-player} fikk {d:funfact-d1} knivdrap etter å ha gått tom for ammunisjon.} other{{s:funfact-player} fikk {d:funfact-d1} knivdrap etter å ha gått tom for ammunisjon.}}"
-		"funfact_molotov_burns:f"										"{funfact-d1, plural, one{{s:funfact-player} satte fyr på {d:funfact-d1} spiller.} other{{s:funfact-player} satte fyr på {d:funfact-d1} spillere.}}"
-		"funfact_survival_time:f"										"{funfact-d1, plural, one{{s:funfact-player} overlevde lengst: {d:funfact-d1} sekund.} other{{s:funfact-player} overlevde lengst: {d:funfact-d1} sekunder.}}"
-		"funfact_pulled_trigger:f"										"{funfact-d1, plural, one{{s:funfact-player} trykte på avtrekkeren {d:funfact-d1} gang i løpet av kampen.} other{{s:funfact-player} trykte på avtrekkeren {d:funfact-d1} ganger i løpet av kampen.}}"
-		"funfact_ace:f"													"Ess! {s:funfact-player} drepte hele motstanderlaget."
-		"funfact_defuse_was_close_call_tenths:f"						"{funfact-d1, plural, one{{s:funfact-player} desarmerte bomben med 0,{d:funfact-d1} sekund igjen.} other{{s:funfact-player} desarmerte bomben med 0,{d:funfact-d1} sekunder igjen.}}"
-		"funfact_defuse_was_close_call_hundredths:f"					"{funfact-d1, plural, one{{s:funfact-player} desarmerte bomben med 0,0{d:funfact-d1} sekund igjen.} other{{s:funfact-player} desarmerte bomben med 0,0{d:funfact-d1} sekunder igjen.}}"
-		"funfact_defuse_was_close_call_thousandths:f"					"{funfact-d1, plural, one{{s:funfact-player} desarmerte bomben med 0,00{d:funfact-d1} sekund igjen.} other{{s:funfact-player} desarmerte bomben med 0,00{d:funfact-d1} sekunder igjen.}}"
-		"mapwinrecord_graph_title:f"									"{f:0:wins, plural, one{siste seier} other{siste seire}}"
-		"CSGO_Recipe_Count_Items_Selected:f"							"{count, plural, one{<b>{d:count}</b> gjenstand valgt} other{<b>{d:count}</b> gjenstander valgt}}"
-		"CSGO_Recipe_Count_Items_Remaining:f"							"{count, plural, one{<b>{d:count}</b> gjenstand igjen} other{<b>{d:count}</b> gjenstander igjen}}"
-		"CSGO_Recipe_TradeUp_Items_Remain:f"							"{count, plural, one{{d:count} valgt for innbytte} other{{d:count} valgte for innbytte}}"
-		"CSGO_Recipe_TradeUp_Items_XofY:f"								"{count, plural, one{{d:count} / {d:recipecount} valgt for bytte} other{{d:count} / {d:recipecount} valgt for bytte}}"
-		"CSGO_Recipe_TradeUp_Items_Inv:f"								"{count, plural, one{{d:count} gyldig for innbytte} other{{d:count} gyldige for innbytte}}"
-		"CSGO_RemoveKeychainToolCharges_Reward:f"						"{item_count, plural, one{+{d:item_count} anhengsavbiter} other{+{d:item_count} anhengsavbitere}}"
-		"SFUI_Store_Offer_Days_Remaining:f"								"{daysremaining, plural, one{{d:daysremaining} dag igjen} other{{d:daysremaining} dager igjen}}"
-		"SFUI_Store_Offer_Days_Remaining_claim:f"						"{daysremaining, plural, one{{d:daysremaining} dag igjen} other{{d:daysremaining} dager igjen}}"
-		"SFUI_Store_Offer_Days_Remaining_bid:f"							"{daysremaining, plural, one{{d:daysremaining} dag igjen til å by på dette tilbudet} other{{d:daysremaining} dager igjen til å by på dette tilbudet}}"
-		"SFUI_Store_Offer_Days_Remaining_last_claim:f"					"Siste sjanse til å gjøre nytte av tilbudet"
-		"SFUI_Store_Offer_Days_Remaining_last_bid:f"					"Siste sjanse til å by på tilbudet"
-		"SFUI_Store_Timer_Week:f"										"{f:0:value, plural, one{{f:0:value} uke} other{{f:0:value} uker}}"
-		"SFUI_Store_Timer_Day:f"										"{f:0:value, plural, one{{f:0:value} dag} other{{f:0:value} dager}}"
-		"SFUI_Store_Timer_Hour:f"										"{f:0:value, plural, one{{f:0:value} time} other{{f:0:value} timer}}"
-		"SFUI_Store_Timer_Min:f"										"{f:0:value, plural, one{{f:0:value} min} other{{f:0:value} min}}"
-		"SFUI_Store_Timer_Sec:f"										"{f:0:value, plural, one{{f:0:value} sek} other{{f:0:value} sek}}"
-		"CSGO_Watch_Minute:f"											"{f:0:value, plural, one{{f:0:value} minutt} other{{f:0:value} minutter}}"
-		"xpshop_new_items:f"											"{new-count, plural, one{Ny gjenstand!} other{Nye gjenstander!}}"
-		"xpshop_popup_clear_n_tracks:f"									"{completed_tracks_count, plural, one{Fjern {d:completed_tracks_count} fullført pass} other{Fjern {d:completed_tracks_count} fullførte pass}}"
-		"xpshop_popup_clear_n_tracks_text:f"							"{completed_tracks_count, plural, one{Du har tjent alle arsenalpoengene i dette passet.<br><br>Du kan aktivere et nytt pass hvis du fjerner passet. Dette påvirker ikke hvor mange arsenalpoeng du har.} other{Du har tjent alle arsenalpoengene i {d:completed_tracks_count} pass.<br><br>Du kan aktivere nye pass hvis du fjerner disse {d:completed_tracks_count} passene. Dette påvirker ikke hvor mange arsenalpoeng du har.}}"
-		"xpshop_redeem_bid_batchover:f"									"{hours_until_bid_batch, plural, one{Bud på dette partiet er avsluttet. Vinnerbud får beskjed etter at oppgjøret er fullført. Kom tilbake i morgen for å by på det neste partiet. Budrunden åpner om {d:hours_until_bid_batch} time.} other{Bud på dette partiet er avsluttet. Vinnerbud får beskjed etter at oppgjøret er fullført. Kom tilbake i morgen for å by på det neste partiet. Budrunden åpner om {d:hours_until_bid_batch} timer.}}"
-		"xpshop_redeem_not_enough_stars:f"								"{stars_needed, plural, one{Du trenger {d:stars_needed} arsenalpoeng til. Du tjener dem ved å spille med et aktivt arsenalpass.} other{Du trenger {d:stars_needed} arsenalpoeng til. Du tjener dem ved å spille med et aktivt arsenalpass.}}"
+ars_needed} arsenalpoeng til. Du tjener dem ved å spille med et aktivt arsenalpass.}}"
 		"Panorama_PlayerDetails_Commendations_Left:f"					"{num_token, plural, one{Du kan anbefale {d:num_token} spiller til i dag} other{Du kan anbefale {d:num_token} spillere til i dag}}"
 		"SFUI_BuyMenu_CanOnlyCarryXGrenades:f"							"{n1, plural, one{Du kan kun bære {s:s1} granat.} other{Du kan kun bære {s:s1} granater.}}"
 		"SFUI_BuyMenu_MaxItemsOfType:f"									"{n1, plural, one{Du kan kun bære {s:s1} av denne typen.} other{Du kan kun bære {s:s1} av denne typen.}}"

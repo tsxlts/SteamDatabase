@@ -2421,6 +2421,7 @@
 		"NewItemMethod_CommunityMarketPurchase"	"Je hebt van de Community-markt gekregen:"
 
 		"ItemHistory_ActionWithTime"									"%s1 op %s2"
+		"ItemHistory_Action_GSCreate"									"Gemaakt"
 		"ItemHistory_Action_GenericAdd"									"Toegevoegd"
 		"ItemHistory_Action_GenericRemove"								"Verwijderd of gewijzigd"
 		"ItemHistory_Action_Traded"										"Geruild"
@@ -2484,6 +2485,10 @@
 		"ItemHistory_Action_TournamentDrop"								"Souvenir ontvangen"
 		"ItemHistory_Action_TemplateItemGrant"							"Verdiend"
 		"ItemHistory_Action_Market_Add"									"Van de Community-markt ontvangen"
+		"ItemHistory_Action_Market_Sealed"								"Op de Steam Community-markt geplaatst"
+		"ItemHistory_Action_Market_Unsealed"							"Van de Community-markt verwijderd"
+		"ItemHistory_Action_Market_SoldSealed"							"Verkocht op de Steam Community-markt"
+
 		"ItemHistory_Transaction_Delete"								"Verwijderd"
 		"ItemHistory_Transaction_Craft"									"Ontworpen"
 		"ItemHistory_Transaction_UnlockCrate"							"Container ontgrendeld"
@@ -2641,6 +2646,7 @@
 		"Attrib_NeverTradableButHasAfterDate1"		"Dit voorwep is niet ruilbaar en verhandelbaar."
 		"Attrib_NeverTradableButHasAfterDate2"		"Na gebruik zullen ontvangen voorwerpen tot %s1 een ruilbeperking hebben"
 		"Attrib_TradeProtectedEscrowDate"			"⇆ Dit voorwerp geniet handelsbescherming en kan niet worden verbruikt, aangepast of overgedragen tot %s1"
+		"Attrib_TradeProtectedEscrowMarket"			"⇆ Dit voorwerp is op de Steam Community-markt geplaatst en kan dan niet worden verbruikt of aangepast."
 		"Attrib_TradableAfterDate"					"Ruilbaar na %s1"
 		"Attrib_TradableMarketableAfterDate"		"Ruilbaar/verhandelbaar na %s1"
 		"Attrib_MarketableWithRestrictions"			"Onmiddellijk te verkopen op de Steam Community-markt"
@@ -4387,6 +4393,8 @@
 		
 		"CSGO_crate_community_36"				"Verzegelde Genesis-terminal"
 		"CSGO_crate_community_36^volatile"		"Actieve Genesis-terminal"
+		"CSGO_crate_community_37"				"Verzegelde Dead Hand-terminal"
+		"CSGO_crate_community_37^volatile"		"Actieve Dead Hand-terminal"
 		"CSGO_crate_keychain_pack_kc_drboom_capsule"	    	"Dr Boom-hangertjescollectie"
 		"CSGO_crate_keychain_pack_kc_drboom_capsule_desc"		"Deze collectie bevat allerlei Dr Boom-hangertjes."
 		"CSGO_crate_keychain_pack_kc_drboom_capsule_short"	    "Dr Boom-hangertjes"
@@ -5436,6 +5444,7 @@
 		"CSGO_set_community_36"					"Genesis-collectie"
 		"CSGO_set_timed_drops_exuberant"		"De Harlequin-collectie"
 		"CSGO_set_timed_drops_achroma"			"De Achroma-collectie"
+		"CSGO_set_community_37"					"De Dead Hand-collectie"
 		/////////////////
 		// lootlist override strings
 		//////////////////
@@ -35268,8 +35277,104 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"PaintKit_m4a1s_quick_liquidation"				"Vanwege de donkere ondergrond en de rode en blauwe highlights lijkt het net alsof deze M4A1-S wordt verlicht door het omgevingslicht.\n\n<i>Lichte reflectie</i>"
 		
 		"PaintKit_aug_trigger_discipline_velco"			"Op het wapen is een blauw, isometrisch patroon aangebracht, met oranje accenten.\n\n<i>Geduld betaalt zich uit</i>"
+"PaintKit_glove_driver_knit_argyle_green_Tag"					"Hand Sweaters"
+		
+		"PaintKit_glove_driver_ostrich_purple_Tag"						"Plum Quill"
+		
+		"PaintKit_glove_driver_silk_dragon_white_Tag"					"Wave Chaser"
+		
+		"PaintKit_glove_brocade_crane_Tag"								"Brocade Crane"
+		
+		"PaintKit_glove_driver_brocade_flower_red_Tag"					"Brocade Flowers"
+		
+		"PaintKit_glove_driver_dragon_scale_red_Tag"					"Dragon Fists"
+		
+		"PaintKit_glove_driver_embroidered_flowers_teal_Tag"			"Garden"
+		
+		"PaintKit_glove_driver_scallop_metallic_blue_Tag"				"Seigaiha"
+		
+		"PaintKit_glove_sport_velvet_red_Tag"							"Occult"
+		
+		"PaintKit_glove_sport_beadwork_diamonds_purple_Tag"				"Violet Beadwork"
+		
+		"PaintKit_glove_sport_camo_winter_Tag"							"Frosty"
+		
+		"PaintKit_glove_sport_pinstripe_black_Tag"						"Creme Pinstripe"
+		
+		"PaintKit_glove_sport_racer_red_Tag"							"Red Racer"
+		
+		"PaintKit_glove_sport_tech_gradient_bright_Tag"					"Ultra Violent"
+		
+		"PaintKit_glove_specialist_abstract_green_Tag"					"Lime Polycam"
+		
+		"PaintKit_glove_specialist_graffiti_black_Tag"					"Blackbook"
+		
+		"PaintKit_glove_specialist_quilted_black_Tag"					"Chocolate Chesterfield"
+		
+		"PaintKit_glove_specialist_quilted_white_Tag"					"Pillow Punchers"
+		
+		"PaintKit_glove_specialist_sunburst_red_Tag"					"Sunburst"
+		
+		"PaintKit_glove_specialist_dragon_blue_Tag"						"Cloud Chaser"
+		
+		"PaintKit_glove_specialist_wave_blue_Tag"						"Big Swell"
+		
+// END COMMUNITY_37 GLOVES
 
-// END COMMUNITY_36
+// COMMUNITY_37 WEAPONS
+		
+		"PaintKit_glock_jdpeek"											"Het pistool is speciaal beschilderd met neonkleuren en metallic glitterverf.\n\n<i>Ik vind het een beetje too much, maar ik behoor ook niet tot de doelgroep... - Booth, wapenhandelaar</i>"
+		"PaintKit_glock_jdpeek_Tag"										"Fully Tuned"
+					
+		"PaintKit_awp_queens_gambit"									"Het geweer is speciaal beschilderd met koninklijk blauw en goudkleurige verf. Op de kolf is met de hand een koningin geschilderd.\n\n<i>Elk schot is een koninklijk besluit over kracht en precisie</i>"
+		"PaintKit_awp_queens_gambit_Tag"								"Queen's Gambit"
+					
+		"PaintKit_p90_deathgaze"										"Het wapen is speciaal beschilderd met een graffiti-Medusa op een grondlaag van Carrara-marmer.\n\n<i>Aanbid geen afgoden die zijn gestoeld op een fundering van misleiding</i>"
+		"PaintKit_p90_deathgaze_Tag"									"Deathgaze"
+					
+		"PaintKit_p250_kintsugi"										"Op de ivoorkleurige grondlaag zijn een schitterende oranje vogel en gouden accenten geschilderd.\n\n<i>Dit wapen is als duur servies; je haalt het alleen uit de kast voor bijzondere gelegenheden</i>"
+		"PaintKit_p250_kintsugi_Tag"									"Kintsugi"
+					
+		"PaintKit_mp9_urban_sovereign"									"Op het wapen is een urban patroon geschilderd met goudkleurige graffiti.\n\n<i>Koningen verschuilen zich niet achter muren, maar beschilderen ze</i>"
+		"PaintKit_mp9_urban_sovereign_Tag"								"Urban Sovereign"
+					
+		"PaintKit_mp7_amberline"										"Op het wapen zijn diagonale oranje en witte strepen geschilderd.\n\n<i>Oranje boven</i>"
+		"PaintKit_mp7_amberline_Tag"									"Amberline"
+					
+		"PaintKit_bizon_rmx"											"Het wapen is speciaal beschilderd met paars kleurverloop en een rood en wit design.\n\n<i>Licht, snel en gevaarlijk... in theorie</i>"
+		"PaintKit_bizon_rmx_Tag"										"RMX"
+					
+		"PaintKit_ak47_crane_flight"									"Op een zwart-witte grondlaag zijn een kraanvogel en gouden accenten getekend, met de hand.\n\n<i>In de aanloop naar de bloedmaan</i>"
+		"PaintKit_ak47_crane_flight_Tag"								"Crane Flight"
+					
+		"PaintKit_deagle_firebreathing"									"Met parelmoerverf zijn er paarse en blauwe vlammen op het wapen geschilderd.\n\n<i>Bevat exceptionele kwaliteiten en vaardigheden</i>"
+		"PaintKit_deagle_firebreathing_Tag"								"Firebreathing"
+					
+		"PaintKit_ump_fragment"											"Het wapen is speciaal beschilderd met een zilverkleurig, zwart en rood design.\n\n<i>Fragmentopname</i>"
+		"PaintKit_ump_fragment_Tag"										"Fragment"
+					
+		"PaintKit_sawedoff_fusion"										"Op het wapen is een zwart-goudkleurig design geschilderd. Als het licht erop valt, zie je verborgen details.\n\n<i>Oog om oog...</i>"
+		"PaintKit_sawedoff_fusion_Tag"									"Fusion"
+					
+		"PaintKit_galil_galigator"										"Op de groen met gele grondlaag zijn een alligator en het stralingssymbool geschilderd.\n\n<i>HAP! HAP! HAP!</i>"
+		"PaintKit_galil_galigator_Tag"									"Galigator"
+					
+		"PaintKit_fiveseven_polymer_dark"								"Door de manier waarop dit wapen is beschilderd lijkt het gemaakt te zijn van een transparante paarse polymeer.\n\n<i>Gewikkeld in een paars snoeppapiertje</i>"
+		"PaintKit_fiveseven_polymer_dark_Tag"							"Dark Polymer"
+					
+		"PaintKit_usps_silent_boy"										"Het wapen is speciaal beschilderd met zwarte en blauwe geometrische symbolen en werpsterren.\n\n<i>Wees discreet met het praktiseren van agressie</i>"
+		"PaintKit_usps_silent_boy_Tag"									"Silent Shot"
+					
+		"PaintKit_m4a4_zubastick_bw"									"Op deze M4A4 zijn tanden en oranje ogen geschilderd.\n\n<i>Circa 1991</i>"
+		"PaintKit_m4a4_zubastick_bw_Tag"								"Zubastick"
+					
+		"PaintKit_m4a1s_electrum"										"Op het wapen is een groene, marmerachtige grondlaag aangebracht met goudkleurige en rode accenten.\n\n<i>Ze betalen je te weinig om hiermee rond te lopen, maar daar breng ik verandering in - Valeria Jenner, revolutionair</i>"
+		"PaintKit_m4a1s_electrum_Tag"									"Electrum"
+					
+		"PaintKit_m249_blocks_purple"									"Op het wapen is een paars geometrisch design geschilderd.\n\n<i>Met blokken spelen</i>"
+		"PaintKit_m249_blocks_purple_Tag"								"Bock Blocks"
+		
+// END COMMUNITY_37 WEAPONS
 
 // OVERPASS_2024
 				
@@ -37400,6 +37505,7 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"SFUI_InvContextMenu_preview_musickit"       "Inspecteren - Voorbeeld muziek"
 		"SFUI_InvContextMenu_decodable"     "Kist openen"
 		"SFUI_InvContextMenu_sell"			"Op de Community-markt verkopen"
+		"SFUI_InvContextMenu_marketlisting"	"Op markt bekijken"
 		"SFUI_InvContextMenu_openloadout"   "Uitrustingsvak tonen"
 		"SFUI_InvContextMenu_inspectcase"	"Openen..."
 		"SFUI_InvContextMenu_useitem"	    "Voorwerp gebruiken"
@@ -40805,6 +40911,8 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"SFUI_Settings_Network_Bandwidth_30mbps"   "3 Mbps"
 		"SFUI_Settings_Network_Bandwidth_40mbps"   "4 Mbps"
 		"SFUI_Settings_Network_Bandwidth_Max"	   "Onbeperkt"
+
+		"SFUI_Settings_Volatile_Limit_Unlimited"	"Geen limiet"
 
 		"SFUI_FeatureUnavailableDuringBeta"		"Niet beschikbaar tijdens bèta"
 
@@ -45905,6 +46013,7 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"inv_context_remove_patch"			"Embleem verwijderen"		
 		"inv_context_openloadout"			"Bekijken in uitrusting"
 		"inv_context_sell"					"Op de Community-markt verkopen"
+		"inv_context_marketlisting"			"Op markt bekijken"
 		"inv_context_tradeup_add"			"Met inruilcontract gebruiken"
 		"inv_context_tradeup_remove"		"Uit inruilcontract verwijderen"
 		"inv_context_open_contract"			"Contract openen"
@@ -45962,6 +46071,7 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"inv_session_prop_updated"			"Bijgewerkt!"
 		"inv_session_prop_quest_reward"		"Beloning!"
 		"inv_session_prop_xpshopredeem"		"Nieuw!"
+		"inv_session_prop_marketlisting"	"<img src='file://{images}/icons/ui/coupon.svg' class='item-tile__onmarket'/> Op de markt"
 		"inv_equipped_item"					"<b>{s:name}</b> uitgerust voor <b>{s:team}</b>"
 		"inv_equipped_item_noteam"			"<b>{s:name}</b> uitgerust"
 		"inv_unequipped_item"				"<b>{s:name}</b> niet meer uitgerust"
@@ -48888,6 +48998,8 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"user_btn_purchase_desc_purchase"		"Hou ingedrukt om dit voorwerp te kopen. Daarna verdwijnt de terminal."
 		"user_btn_purchase_desc_continue"		"Hou ingedrukt om dit aanbod definitief af te wijzen en het volgende product te bekijken."
 		"user_btn_purchase_desc_end"		"Wijs het laatste aanbod af en verwijder deze terminal."
+		"user_btn_purchase_title"			"{s:offer-count} bieding"
+		"user_btn_purchase_final_title"		"<b>Laatste bieding</b>"
 		"user_btn_decline_desc"				"Wijs dit aanbod af en bekijk het volgende product"
 		"user_btn_accept"		"Aanbod voor <b>{s:price}</b> accepteren"
 		"user_btn_accept_final"	"Laatste aanbod voor <b>{s:price}</b> accepteren"
@@ -48909,6 +49021,18 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"user_btn_pause"		"Deal bevriezen"
 		"user_btn_end"			"Definitieve aanbod afwijzen"
 
+		"user_message_limit_0"		"Ik kan tot <b>{s:limit-setting}</b> gaan."
+		"user_message_limit_1"		"Ik ga maximaal tot <b>{s:limit-setting}</b>."
+		"user_message_limit_2"		"Ik ga niet hoger dan <b>{s:limit-setting}</b>."
+		"user_message_limit_3"		"Maximaal <b>{s:limit-setting}</b> vind ik prima."
+		"user_message_limit_unlimited_0"	"<b>Geen limiet</b>. Ik wil alles zien."
+		"user_message_limit_unlimited_1"	"<b>Blanco cheque</b>. Je kunt het zo gek maken als je wilt."
+		"user_message_limit_unlimited_2"	"Ik ben hier om in te kopen. <b>Laat maar zien wat je hebt</b>."
+		"user_message_limit_unlimited_3"	"Alles wat schiet, interesseert me.<b> Geen limiet</b>."
+		"user_message_limit_unlimited_4"	"Geld speelt geen rol."
+		"offer_limit_setting"		"Biedinglimiet: {s:limit}"
+		"offer_limit_setting_interface"		"Biedinglimiet: {s:limit} <img src='file://{images}/icons/ui/expand.svg' class='expand-icon'/>"
+
 		"dealer_offer_Unknown"							"-"
 		"dealer_offer_1"								"1e"
 		"dealer_offer_2"								"2e"
@@ -48925,23 +49049,31 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"declined_offer_tooltip"	"Afgewezen aanbod"
 		"future_offer_tooltip"		"Aanbod nog niet onthuld."
 		"laptop_expiration_tooltip"		"Resterende tijd tot deze uplinkterminal en het aanbod verlopen."
+		"laptop_max_offer_tooltip"		"Stel de limiet voor biedingen in. Je ontvangt alleen biedingen onder deze limiet. Je kunt de limiet wijzigen wanneer je wilt."
 		"collection_xp_tooltip"			"Bekijk het aanbod in deze collectie om XP te verdienen. Open het, check je voortgang en verzilver je XP."
+		"terminal_offer_limit_tooltip"		"Bewerk de limiet voor biedingen. De wapenhandelaar toont alleen biedingen onder de limiet."
 		"popup_lootlist_title"			"Collectiecatalogus-XP"
 		"popup_lootlist_desc"			"Verdien XP door het aanbod in deze collectie te bekijken"
-		"popup_lootlist_progress"		"{d:seen}/{d:total} van het aanbod bekeken"
+
+		"popup_lootlist_progress:f"      "{total, plural, one{{d:seen}/{d:total} offer} other{{d:seen}/{d:total} offers}} gezien"
 		"popup_lootlist_claim_xp"		"Bonus-XP ophalen"
 		"popup_lootlist_claim_ww"		"XP ophalen..."
-		"popup_lootlist_claim_ok"		"✅ XP opgehaald"
+		"popup_lootlist_claim_ok"		"✔ XP opgehaald"
 		"popup_vpn_status_connected"	"Status: verbonden met beveiligd netwerk"
 		"popup_vpn_status_disconnected"	"Status: verbinding verbroken"
 		"popup_signal_full" 			"Volledig signaal"
 		"popup_signal_ok" 				"Krachtig signaal"
+		"popup_offer_limit_desc"		"Bewerk de limiet voor alle toekomstige biedingen."
 		"laptop_battery_tooltip" 		"Batterij: {d:percent}%"
 		"laptop_original_seal_tooltip" 	"Als je iets koopt via deze uplinkterminal, ontvang je er een eigendomscertificaat bij dat geldig is zolang jij de eigenaar bent."
 		"laptop_zoom_tooltip" 			"Scrol met het muiswiel om in en uit te zoomen"
 		"laptop_pan_tooltip" 			"Hou Shift ingedrukt en maak een slepende beweging om de camera te pannen"
 		"laptop_pricing_tooltip"		"De prijzen gelden globaal en zijn automatisch aangepast aan de vraag naar elk voorwerp in deze collectie."
 
+		"dealer_message_set_offer_limit_0"		"Voor we beginnen: hoeveel wil je maximaal uitgeven?"
+		"dealer_message_set_offer_limit_1"		"Eerst even dit.<!--.25--> Wat is je limiet?"
+		"dealer_message_set_offer_limit_2"		"Voor we aan de slag gaan...<!--.25--> Wat is je plafond? Hoeveel kun je uitgeven?"
+		
 		"dealer_message_start_0"  	"Dit spul komt rechtstreeks van de leverancier.<!--.25-->Alle toeters en bellen, zonder de documentatie."
 		"dealer_message_start_1"  	"Ik heb grijze goederen in de aanbieding, zonder documenten.<!--.25-->Maak je geen zorgen, alles is al jaren uit de roulatie, dus niemand zoekt ernaar.<!--.25-->En mocht je twijfelen: ze schieten perfect waar je richt."
 		"dealer_message_start_2"  	"De douane in Ahradan heeft mijn vracht vanochtend in beslag genomen. Ik heb er nog een tranendal over medische apparatuur en stervende kindertjes op losgelaten.<!--.25-->Maar dat had geen zin. Wat wel zin had, was een koffer vol geld.<!--.25-->Zin om deze dialysemachines even te bekijken voor ze naar de arme weesjes gaan?"
@@ -48949,6 +49081,7 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"dealer_message_start_4"  	"Alles wat ik vandaag in de aanbieding heb, is zuivere koffie.<!--.25-->Jij bent bij wijze van spreken de eerste persoon die ze in handen krijgt."
 		"dealer_message_start_5"  	"Steriele wapens, geen serienummers, perfecte werken.<!--.25-->Een oorlogstribunaal zou ze classificeren als bewijsstukken.<!--.25-->Jij en ik snappen dat het onvervalste meesterwerken zijn."
 		"dealer_message_start_6"  	"Deze complete vracht bestaat uit exotische waar die onlangs is bevrijd uit handen van een parade-eenheid.<!--.25-->Veel mee gemarcheerd. Nooit mee geschoten."
+		"dealer_message_start_7"  	"Mijn andere klanten willen altijd weten hoe ik aan mijn waren kom. Zo irritant.<!--.25-->Het enige dat je hoeft te weten, is dat er niets beters te koop is.<!--.25-->Factcheck: dat klopt als een bus."
 		"dealer_message_start_8"  	"Een vredesverdrag in Drosvik. Ik hou van vrede.<!--.25-->Want ik heb een generaal met schuld en een compleet arsenaal dat stof aan het verzamelen is.<!--.25-->Ik bedoel...<!--.25-->Ook omdat vrede goed is, natuurlijk. Onschuldige levens en...<!--.25-->Ach, hoor mij nou. Alsof jou dat wat kan bommen."
 		"dealer_message_start_9"  	"Deze vracht bestaat uit exotische wapens uit de grijze markt.<!--.25-->Ongebruikelijke kalibers. Niet voor amateurs. Echt wat voor jou."
 		"dealer_message_start_10"  	"Wat gênant.<!--.25-->Ik geloof dat ik per ongeluk een kist verkeerd heb genoteerd op het scheepsmanifest.<!--.25-->Nou ja, een stuk of twintig kisten.<!--.25-->Help jij me deze voorraad te laten verdwijnen voor het havenbedrijf er lucht van krijgt?"
@@ -49139,10 +49272,29 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"dealer_message_addition_factory_new_2"	"<!--.25-->Komt zo uit de kluis. Hagelnieuw."
 		"dealer_message_addition_factory_new_3"	"<!--.25-->Deze komt net uit de fabriek. Geen schot mee gelost."
 		
+		"dealer_message_limit_first_time_0"		"Goed om te weten. Ik laat alleen biedingen tot {s:limit} zien.<!--.25--> Ik hoor wel wat je zoekt."
+		"dealer_message_limit_first_time_2"		"Alleen biedingen onder de {s:limit}? Hou ik dat in m'n achterhoofd.<!--.25--> De klok tikt. Aan de slag dus."
+		"dealer_message_limit_first_time_3"		"Staat genoteerd.<!--.25--> Daar gaan we."
+		"dealer_message_limit_first_time_unlimited_0"		"Geen limiet, heerlijk. Ik zal de huidige catalogus erop naslaan.<!--.25--> De klok tikt. Aan de slag."
+		"dealer_message_limit_first_time_unlimited_1"		"Ik hoor je. Geen limiet. Nu gaan we het krijgen.<!--.25--> Ik hoor wel wat je zoekt."
+
+		"dealer_message_limit_0"				"Goed om te weten, dan laat ik alleen biedingen tot {s:limit} zien."
+		"dealer_message_limit_1"				"Alleen biedingen tot {s:limit}? Komt voor de bakker."
+		"dealer_message_limit_2"				"Ik werk de instellingen even bij. Alleen biedingen tot {s:limit}."
+		"dealer_message_limit_3"				"Biedingen tot {s:limit}. Ik heb het genoteerd."
+		"dealer_message_limit_4"				"Ik ga op zoek voor je, tot aan {s:limit}."
+		"dealer_message_limit_5"				"De nieuwe limiet van {s:limit} staat genoteerd."
+		"dealer_message_limit_6"				"Komt goed. Ik filter alle biedingen boven {s:limit} eruit."
+		"dealer_message_limit_unlimited_0"		"Geen limiet, schitterend. Ik hou vanaf nu de hele catalogus erbij."
+		"dealer_message_limit_unlimited_1"		"Oké, geen limiet. Als er iets bijzonders voorbijkomt, laat ik het je weten."
+		"dealer_message_limit_unlimited_2"		"Zo hoor ik het graag. Als ik iets voorbij zie komen, trek ik aan de bel."
+		"dealer_message_limit_unlimited_3"		"Oké, geen limiet. Nu wordt het interessant."
+
 		"system_dealer_left_chat_0"				"De handelaar heeft de chat verlaten."
 		"system_dealer_join_chat_0"				"Aanbod van de wapenhandelaar uit de {s:collection}.<!--1.25-->Verbinding met handelaar"
 		"system_user_reject_offer_0"			"{s:user-name} Aanbod afgewezen."
 
+		"system_user_updated_offer_limit_0"			"Limiet voor biedingen bijgewerkt naar {s:limit}. Je kunt de instelling wanneer je wilt wijzigen."
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -49377,8 +49529,8 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"quest_11015_var_desc:p{mission-points}"	 	"Win een ronde in <b>{s:gamemode}: {s:location}</b>.#|#Win ronden in <b>{s:gamemode}: {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Win een ronde#|#Win ronden"
 
-// crow_mask_51633_comment
-// crow_mask_51634_comment
+// crow_mask_51765_comment
+// crow_mask_51766_comment
 }
 
 
@@ -49387,79 +49539,7 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 }
 
 
- een ronde#|#Win ronden"
-		
-		"quest_11015_var_desc:p{mission-points}"	 	"Win een ronde in <b>{s:gamemode}: {s:location}</b>.#|#Win ronden in <b>{s:gamemode}: {s:location}</b>."
-		"quest_11015_var_ingame:p{mission-points}"		"Win een ronde#|#Win ronden"
-
-// crow_mask_51588_comment
-// crow_mask_51589_comment
-}
-
-
-
-
-}
-
-
- van het team.}}"
-		"funfact_fallback1:f"											"The cake is a lie."
-		"funfact_fallback2:f"											"Gaap."
-		"funfact_draw:f"												"De wedstrijd is naar aanleiding van een stemming herstart."
-		"funfact_broke_windows:f"										"{funfact-d1, plural, one{{s:funfact-player} heeft {d:funfact-d1} raam gesloopt.} other{{s:funfact-player} heeft {d:funfact-d1} ramen gesloopt.}}"
-		"funfact_nightvision_damage:f"									"{funfact-d1, plural, one{{s:funfact-player} heeft {d:funfact-d1} schade aangericht met een nachtkijker op.} other{{s:funfact-player} heeft {d:funfact-d1} schade aangericht met een nachtkijker op.}}"
-		"funfact_defused_with_dropped_kit:f"							"{s:funfact-player} heeft de bom gedemonteerd met een gevallen ontmantelkit."
-		"funfact_killed_half_of_enemies:f"								"{funfact-d1, plural, one{{s:funfact-player} heeft {d:funfact-d1}% van het vijandelijke team gedood.} other{{s:funfact-player} heeft {d:funfact-d1}% van het vijandelijke team gedood.}}"
-		"funfact_knife_level_reached:f"									"{funfact-d1, plural, one{{d:funfact-d1} speler heeft het goudenmesniveau bereikt.} other{{d:funfact-d1} spelers hebben het goudenmesniveau bereikt.}}"
-		"funfact_killed_before_dying:f"									"{funfact-d1, plural, one{{s:funfact-player} heeft {d:funfact-d1} speler gedood voor hij/zij zelf doodging.} other{{s:funfact-player} heeft {d:funfact-d1} spelers gedood voor hij/zij zelf doodging.}}"
-		"funfact_respawned:f"											"{funfact-d1, plural, one{{s:funfact-player} is {d:funfact-d1} keer opnieuw gespawnd tijdens de wedstrijd.} other{{s:funfact-player} is {d:funfact-d1} keer opnieuw gespawnd tijdens de wedstrijd.}}"
-		"funfact_default_weapon:f"										"{s:funfact-player} heeft de ronde gewonnen zonder wapens op te pakken."
-		"funfact_rounds_without_dying:f"								"{funfact-d1, plural, one{{s:funfact-player} heeft het {d:funfact-d1} ronde op rij uitgehouden zonder dood te gaan.} other{{s:funfact-player} heeft het {d:funfact-d1} ronden op rij uitgehouden zonder dood te gaan.}}"
-		"funfact_taser_kill:f"											"{funfact-d1, plural, one{{s:funfact-player} heeft {d:funfact-d1} speler getaserd.} other{{s:funfact-player} heeft {d:funfact-d1} spelers getaserd.}}"
-		"funfact_ticking_time:f"										"{funfact-d1, plural, one{De terroristen hebben gewonnen, ondanks de pogingen van {d:funfact-d1} een CT-agent om de bom onschadelijk te maken.} other{De terroristen hebben gewonnen, ondanks de pogingen van {d:funfact-d1} CT-agenten om de bom onschadelijk te maken.}}"
-		"funfact_ct_win_time:f"											"{funfact-d1, plural, one{De contraterreureenheid heeft de terroristen uitgeschakeld binnen {d:funfact-d1} seconde.} other{De contraterreureenheid heeft de terroristen uitgeschakeld binnen {d:funfact-d1} seconden.}}"
-		"funfact_ter_win_time:f"										"{funfact-d1, plural, one{De terroristen hebben de contraterreureenheid binnen {d:funfact-d1} seconde uitgeschakeld.} other{De terroristen hebben de contraterreureenheid binnen {d:funfact-d1} seconden uitgeschakeld.}}"
-		"funfact_bots_assumed:f"										"{funfact-d1, plural, one{{s:funfact-player} heeft deze ronde {d:funfact-d1} bot overgenomen.} other{{s:funfact-player} heeft deze ronde {d:funfact-d1} bots overgenomen.}}"
-		"funfact_domination:f"											"{s:funfact-player} heeft de meeste spelers gedomineerd."
-		"funfact_revenge:f"												"{funfact-d1, plural, one{{s:funfact-player} heeft wraak genomen op {d:funfact-d1} speler.} other{{s:funfact-player} heeft wraak genomen op {d:funfact-d1} spelers.}}"
-		"funfact_steps_taken:f"											"{funfact-d1, plural, one{{s:funfact-player} heeft tijdens de wedstrijd {d:funfact-d1} stap gezet.} other{{s:funfact-player} heeft tijdens de wedstrijd {d:funfact-d1} stappen gezet.}}"
-		"funfact_quarter_health:f"										"{funfact-d1, plural, one{{s:funfact-player} heeft {d:funfact-d1} speler gedood met minder dan 25 gezondheid.} other{{s:funfact-player} heeft {d:funfact-d1} gedood met minder dan 25 gezondheid.}}"
-		"funfact_empty_guns:f"											"{funfact-d1, plural, one{{s:funfact-player} kwam droog te staan tijdens het schieten met {d:funfact-d1} vuurwapen.} other{{s:funfact-player} kwam droog te staan tijdens het schieten met {d:funfact-d1} vuurwapens.}}"
-		"funfact_slow_trigger:f"										"{funfact-d1, plural, one{{s:funfact-player} is doodgegaan zonder een schot te hebben gelost met {d:funfact-d1} vuurwapen.} other{{s:funfact-player} is doodgegaan zonder een schot te hebben gelost met {d:funfact-d1} vuurwapens.}}"
-		"funfact_pickup_bomb:f"											"{funfact-d1, plural, one{{s:funfact-player} heeft een bom geplaatst die eerder in het bezit was van {d:funfact-d1} teamgenoot.} other{{s:funfact-player} heeft een bom geplaatst die eerder in het bezit was van {d:funfact-d1} teamgenoten.}}"
-		"funfact_bomb_carriers:f"										"{funfact-d1, plural, one{{s:funfact-player} heeft afgelopen ronde {d:funfact-d1} bomdrager gedood.} other{{s:funfact-player} heeft afgelopen ronde {d:funfact-d1} individuele bomdragers gedood.}}"
-		"funfact_knife_bomb_planter:f"									"{s:funfact-player} heeft de bomlegger met een mes gedood."
-		"funfact_bomb_planted_before_kill:f"							"Er zijn geen spelers gedood voordat de bom werd geplaatst."
-		"funfact_failed_bomb_plants:f"									"{funfact-d1, plural, one{Afgelopen ronde heeft {d:funfact-d1} terrorist geprobeerd de bom te plaatsen.} other{Afgelopen ronde hebben {d:funfact-d1} terroristen geprobeerd de bom te plaatsen.}}"
-		"funfact_knife_without_ammo:f"									"{funfact-d1, plural, one{{s:funfact-player} heeft {d:funfact-d1} vijand gedood met een mes toen zijn/haar munitie op was.} other{{s:funfact-player} heeft {d:funfact-d1} vijanden gedood met een mes toen zijn/haar munitie op was.}}"
-		"funfact_molotov_burns:f"										"{funfact-d1, plural, one{{s:funfact-player} heeft {d:funfact-d1} speler in lichterlaaie gezet.} other{{s:funfact-player} heeft {d:funfact-d1} spelers in lichterlaaie gezet.}}"
-		"funfact_survival_time:f"										"{funfact-d1, plural, one{{s:funfact-player} was degene die het als langste heeft overleefd: {d:funfact-d1} seconde.} other{{s:funfact-player} was degene die het als langste heeft overleefd: {d:funfact-d1} seconden.}}"
-		"funfact_pulled_trigger:f"										"{funfact-d1, plural, one{{s:funfact-player} heeft deze wedstrijd {d:funfact-d1} keer de trekker overgehaald.} other{{s:funfact-player} heeft deze wedstrijd {d:funfact-d1} keer de trekker overgehaald.}}"
-		"funfact_ace:f"													"Ongelofelijk! {s:funfact-player} heeft het gehele vijandelijk team gedood."
-		"funfact_defuse_was_close_call_tenths:f"						"{funfact-d1, plural, one{{s:funfact-player} heeft de bom onschadelijk gemaakt met 0,{d:funfact-d1} seconde op de klok.} other{{s:funfact-player} heeft de bom onschadelijk gemaakt met 0,{d:funfact-d1} seconde op de klok.}}"
-		"funfact_defuse_was_close_call_hundredths:f"					"{funfact-d1, plural, one{{s:funfact-player} heeft de bom onschadelijk gemaakt met 0,0{d:funfact-d1} seconden op de klok.} other{{s:funfact-player} heeft de bom onschadelijk gemaakt met 0,0{d:funfact-d1} seconden op de klok.}}"
-		"funfact_defuse_was_close_call_thousandths:f"					"{funfact-d1, plural, one{{s:funfact-player} heeft de bom onschadelijk gemaakt met 0,00{d:funfact-d1} seconden op de klok.} other{{s:funfact-player} heeft de bom onschadelijk gemaakt met 0,00{d:funfact-d1} seconden op de klok.}}"
-		"mapwinrecord_graph_title:f"									"{f:0:wins, plural, one{Recentste overwinning} other{Recentste overwinningen}}"
-		"CSGO_Recipe_Count_Items_Selected:f"							"{count, plural, one{<b>{d:count}</b> voorwerp geselecteerd} other{<b>{d:count}</b> voorwerpen geselecteerd}}"
-		"CSGO_Recipe_Count_Items_Remaining:f"							"{count, plural, one{<b>{d:count}</b> voorwerp resterend} other{<b>{d:count}</b> voorwerpen resterend}}"
-		"CSGO_Recipe_TradeUp_Items_Remain:f"							"{count, plural, one{{d:count} geselecteerd voor inruil} other{{d:count} geselecteerd voor inruil}}"
-		"CSGO_Recipe_TradeUp_Items_XofY:f"								"{count, plural, one{{d:count} / {d:recipecount} gekozen om te ruilen} other{{d:count} / {d:recipecount} gekozen om te ruilen}}"
-		"CSGO_Recipe_TradeUp_Items_Inv:f"								"{count, plural, one{{d:count} komt in aanmerking voor inruil} other{{d:count} komen in aanmerking voor inruil}}"
-		"CSGO_RemoveKeychainToolCharges_Reward:f"						"{item_count, plural, one{+{d:item_count} hangertjesverwijderaar} other{+{d:item_count} hangertjesverwijderaars}}"
-		"SFUI_Store_Offer_Days_Remaining:f"								"{daysremaining, plural, one{Nog {d:daysremaining} dag} other{{d:daysremaining} dagen.}}"
-		"SFUI_Store_Offer_Days_Remaining_claim:f"						"{daysremaining, plural, one{Nog {d:daysremaining} dag} other{Nog {d:daysremaining} dagen}}"
-		"SFUI_Store_Offer_Days_Remaining_bid:f"							"{daysremaining, plural, one{Nog {d:daysremaining} dag om te bieden op dit aanbod} other{Nog {d:daysremaining} dagen om te bieden op dit aanbod}}"
-		"SFUI_Store_Offer_Days_Remaining_last_claim:f"					"Laatste kans om dit aanbod te claimen"
-		"SFUI_Store_Offer_Days_Remaining_last_bid:f"					"Laatste kans om te bieden op dit aanbod"
-		"SFUI_Store_Timer_Week:f"										"{f:0:value, plural, one{{f:0:value} week} other{{f:0:value} weken}}"
-		"SFUI_Store_Timer_Day:f"										"{f:0:value, plural, one{{f:0:value} dag} other{{f:0:value} dagen}}"
-		"SFUI_Store_Timer_Hour:f"										"{f:0:value, plural, one{{f:0:value} uur} other{{f:0:value} uur}}"
-		"SFUI_Store_Timer_Min:f"										"{f:0:value, plural, one{{f:0:value} min.} other{{f:0:value} min.}}"
-		"SFUI_Store_Timer_Sec:f"										"{f:0:value, plural, one{{f:0:value} sec.} other{{f:0:value} sec.}}"
-		"CSGO_Watch_Minute:f"											"{f:0:value, plural, one{{f:0:value} minuut } other{{f:0:value} minuten}}"
-		"xpshop_new_items:f"											"{new-count, plural, one{Nieuw voorwerp!} other{Nieuwe voorwerpen!}}"
-		"xpshop_popup_clear_n_tracks:f"									"{completed_tracks_count, plural, one{Wis {d:completed_tracks_count} voltooide pas} other{Wis {d:completed_tracks_count} voltooide passen}}"
-		"xpshop_popup_clear_n_tracks_text:f"							"{completed_tracks_count, plural, one{Je hebt alle arsenaalpunten van deze pas verdiend. <br><br>Door deze arsenaalpas te wissen, kun je een nieuwe activeren. Dit heeft geen invloed op je huidige puntensaldo.} other{Je hebt alle arsenaalpunten van deze {d:completed_tracks_count} arsenaalpassen verdiend.<br><br>Door deze {d:completed_tracks_count} arsenaalpassen te wissen, kun je nieuwe activeren. Dit heeft geen invloed op je huidige puntensaldo.}}"
+nten van deze pas verdiend. <br><br>Door deze arsenaalpas te wissen, kun je een nieuwe activeren. Dit heeft geen invloed op je huidige puntensaldo.} other{Je hebt alle arsenaalpunten van deze {d:completed_tracks_count} arsenaalpassen verdiend.<br><br>Door deze {d:completed_tracks_count} arsenaalpassen te wissen, kun je nieuwe activeren. Dit heeft geen invloed op je huidige puntensaldo.}}"
 		"xpshop_redeem_bid_batchover:f"									"{hours_until_bid_batch, plural, one{De bieding op deze batch is gesloten. De winnende bieders ontvangen na afhandeling bericht. Kom morgen terug om op de volgende batch te bieden. Bieden is weer mogelijk over {d:hours_until_bid_batch} uur.} other{De bieding op deze batch is gesloten. De winnende bieders ontvangen na afhandeling bericht. Kom morgen terug om op de volgende batch te bieden. Bieden is weer mogelijk over {d:hours_until_bid_batch} uur.}}"
 		"xpshop_redeem_not_enough_stars:f"								"{stars_needed, plural, one{Je hebt nog {d:stars_needed} arsenaalpunt nodig. Verdien het door te spelen met een geactiveerde arsenaalpas.} other{Je hebt nog {d:stars_needed} arsenaalpunten nodig. Verdien ze door te spelen met een geactiveerde arsenaalpas.}}"
 		"Panorama_PlayerDetails_Commendations_Left:f"					"{num_token, plural, one{Je kunt vandaag nog {d:num_token} speler beoordelen.} other{Je kunt vandaag nog {d:num_token} spelers beoordelen.}}"

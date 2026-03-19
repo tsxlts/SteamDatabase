@@ -2421,6 +2421,7 @@
 		"NewItemMethod_CommunityMarketPurchase"	"Hai ricevuto dal Mercato della Comunità:"
 
 		"ItemHistory_ActionWithTime"									"%s1 in data %s2"
+		"ItemHistory_Action_GSCreate"									"Creata"
 		"ItemHistory_Action_GenericAdd"									"Aggiunto"
 		"ItemHistory_Action_GenericRemove"								"Rimosso o modificato"
 		"ItemHistory_Action_Traded"										"Scambiato"
@@ -2484,6 +2485,10 @@
 		"ItemHistory_Action_TournamentDrop"								"Souvenir ottenuto"
 		"ItemHistory_Action_TemplateItemGrant"							"Acquisito"
 		"ItemHistory_Action_Market_Add"									"Ricevuto dal Mercato della Comunità"
+		"ItemHistory_Action_Market_Sealed"								"Inserzione creata nel Mercato della Comunità di Steam"
+		"ItemHistory_Action_Market_Unsealed"							"Inserzione rimossa da Mercato della Comunità di Steam"
+		"ItemHistory_Action_Market_SoldSealed"							"Venduto nel Mercato della Comunità di Steam"
+
 		"ItemHistory_Transaction_Delete"								"Eliminato"
 		"ItemHistory_Transaction_Craft"									"Creato"
 		"ItemHistory_Transaction_UnlockCrate"							"Cassa aperta"
@@ -2640,6 +2645,7 @@
 		"Attrib_NeverTradableButHasAfterDate1"		"Non è possibile scambiare o vendere questo oggetto."
 		"Attrib_NeverTradableButHasAfterDate2"		"Dopo l'uso, gli oggetti ricevuti avranno una restrizione sugli scambi fino alla data: %s1"
 		"Attrib_TradeProtectedEscrowDate"			"⇆ Questo articolo è protetto dgli scambi e non può essere consumato, modificato o trasferito fino a: %s1"
+		"Attrib_TradeProtectedEscrowMarket"			"⇆ Questo articolo è in vendita nel Mercato della Comunità di Steam e non può essere consumato o modificato finché è in vendita."
 		"Attrib_TradableAfterDate"					"Scambiabile dopo il giorno: %s1"
 		"Attrib_TradableMarketableAfterDate"		"Scambiabile/vendibile dopo il giorno %s1"
 		"Attrib_MarketableWithRestrictions"			"Vendibile immediatamente nel Mercato della Comunità"
@@ -4350,6 +4356,8 @@
 		
 		"CSGO_crate_community_36"				"Terminale Genesis sigillato"
 		"CSGO_crate_community_36^volatile"		"Terminale Genesis attivo"
+		"CSGO_crate_community_37"				"Terminale Dead hand sigillato"
+		"CSGO_crate_community_37^volatile"		"Terminale Dead hand attivo"
 		"CSGO_crate_keychain_pack_kc_drboom_capsule"	    	"Collezione di ciondoli \"Dottor Boom\""
 		"CSGO_crate_keychain_pack_kc_drboom_capsule_desc"		"Questa collezione include una serie di ciondoli \"Dottor Boom\"."
 		"CSGO_crate_keychain_pack_kc_drboom_capsule_short"	    "Ciondoli \"Dottor Boom\""
@@ -5325,6 +5333,7 @@
 		"CSGO_set_community_36"					"La collezione Genesis"
 		"CSGO_set_timed_drops_exuberant"		"La collezione Harlequin"
 		"CSGO_set_timed_drops_achroma"			"La collezione Achroma"
+		"CSGO_set_community_37"					"La collezione Dead hand"
 		/////////////////
 		// lootlist override strings
 		//////////////////
@@ -34505,8 +34514,104 @@ Esca per una doppia uccisione"
 		"PaintKit_m4a1s_quick_liquidation"				"La sua base scura e i dettagli accuratamente selezionati blu e rossi fanno in modo che questo M4A1-S sembri brillare sotto la luce ambientale.\n\n<i>Riflessi silenziosi.</i>"
 		
 		"PaintKit_aug_trigger_discipline_velco"			"È stato verniciato con motivo isometrico blu con tocchi di arancione.\n\n<i>La pazienza è fonte di ricompensa.</i>"
+"PaintKit_glove_driver_knit_argyle_green_Tag"					"Hand Sweaters"
+		
+		"PaintKit_glove_driver_ostrich_purple_Tag"						"Plum Quill"
+		
+		"PaintKit_glove_driver_silk_dragon_white_Tag"					"Wave Chaser"
+		
+		"PaintKit_glove_brocade_crane_Tag"								"Brocade Crane"
+		
+		"PaintKit_glove_driver_brocade_flower_red_Tag"					"Brocade Flowers"
+		
+		"PaintKit_glove_driver_dragon_scale_red_Tag"					"Dragon Fists"
+		
+		"PaintKit_glove_driver_embroidered_flowers_teal_Tag"			"Giardino"
+		
+		"PaintKit_glove_driver_scallop_metallic_blue_Tag"				"Seigaiha"
+		
+		"PaintKit_glove_sport_velvet_red_Tag"							"Occult"
+		
+		"PaintKit_glove_sport_beadwork_diamonds_purple_Tag"				"Violet Beadwork"
+		
+		"PaintKit_glove_sport_camo_winter_Tag"							"Frosty"
+		
+		"PaintKit_glove_sport_pinstripe_black_Tag"						"Creme Pinstripe"
+		
+		"PaintKit_glove_sport_racer_red_Tag"							"Red Racer"
+		
+		"PaintKit_glove_sport_tech_gradient_bright_Tag"					"Ultra Violent"
+		
+		"PaintKit_glove_specialist_abstract_green_Tag"					"Lime Polycam"
+		
+		"PaintKit_glove_specialist_graffiti_black_Tag"					"Blackbook"
+		
+		"PaintKit_glove_specialist_quilted_black_Tag"					"Chocolate Chesterfield"
+		
+		"PaintKit_glove_specialist_quilted_white_Tag"					"Pillow Punchers"
+		
+		"PaintKit_glove_specialist_sunburst_red_Tag"					"Sunburst"
+		
+		"PaintKit_glove_specialist_dragon_blue_Tag"						"Cloud Chaser"
+		
+		"PaintKit_glove_specialist_wave_blue_Tag"						"Big Swell"
+		
+// END COMMUNITY_37 GLOVES
 
-// END COMMUNITY_36
+// COMMUNITY_37 WEAPONS
+		
+		"PaintKit_glock_jdpeek"											"È stata verniciata usando colori al neon e vernice glitterata metallizzata.\n\n<i>È un po' troppo per me, ma non sono il pubblico di riferimento... - Booth, trafficante d'armi</i>"
+		"PaintKit_glock_jdpeek_Tag"										"Fully Tuned"
+					
+		"PaintKit_awp_queens_gambit"									"È stato verniciato nei colori blu reale e oro. Una regina è stata dipinta a mano sulla parte anteriore del calcio.\n\n<i>Ogni colpo è un decreto reale di potenza e precisione.</i>"
+		"PaintKit_awp_queens_gambit_Tag"								"Queen's Gambit"
+					
+		"PaintKit_p90_deathgaze"										"È stato verniciato con uno stile graffiti di Medusa sopra una base di marmo di Carrara.\n\n<i>Non venerare gli idoli costruiti su fondamenta di inganno.</i>"
+		"PaintKit_p90_deathgaze_Tag"									"Deathgaze"
+					
+		"PaintKit_p250_kintsugi"										"Un uccello arancione e accenti dorati sono stati verniciati su una base color avorio.\n\n<i>Come quei servizi di piatti eleganti , quest'arma è utilizzata solo per occasioni speciali.</i>"
+		"PaintKit_p250_kintsugi_Tag"									"Kintsugi"
+					
+		"PaintKit_mp9_urban_sovereign"									"È stato verniciato su misura con un design di materiali urbani e rifinito con graffiti oro.\n\n<i>I re non si nascondono dietro i muri, li dipingono.</i>"
+		"PaintKit_mp9_urban_sovereign_Tag"								"Urban Sovereign"
+					
+		"PaintKit_mp7_amberline"										"È stato verniciato a spruzzo con bande diagonali arancioni e bianche.\n\n<i>Un marchio tra le mani.</i>"
+		"PaintKit_mp7_amberline_Tag"									"Amberline"
+					
+		"PaintKit_bizon_rmx"											"È stato verniciato con un gradiente viola e un design rosso e bianco.\n\n<i>Leggero, veloce e pericoloso... in teoria.</i>"
+		"PaintKit_bizon_rmx_Tag"										"RMX"
+					
+		"PaintKit_ak47_crane_flight"									"Una gru e dettagli in oro sono stati dipinti a mano su una base bianca e nera.\n\n<i>Precedente alla luna di sangue.</i>"
+		"PaintKit_ak47_crane_flight_Tag"								"Crane Flight"
+					
+		"PaintKit_deagle_firebreathing"									"È stata verniciata con fiamme viola e blu utilizzando vernice perlescente.\n\n<i>Contiene qualità ed abilità eccezionali.</i>"
+		"PaintKit_deagle_firebreathing_Tag"								"Firebreathing"
+					
+		"PaintKit_ump_fragment"											"È stato verniciato con un design in argento, nero e rosso.\n\n<i>Sono a uccidere, torno subito!</i>"
+		"PaintKit_ump_fragment_Tag"										"Fragment"
+					
+		"PaintKit_sawedoff_fusion"										"È stato verniciato con un design nero e Oro. Ulteriori dettagli si rivelano in condizioni di illuminazione diverse.\n\n<i>Ho visto cose...</i>"
+		"PaintKit_sawedoff_fusion_Tag"									"Fusion"
+					
+		"PaintKit_galil_galigator"										"Un alligatore e simboli tossici sono stati dipinti su una base verde e gialla.\n\n<i>MORDI! MORDI! MORDI!</i>"
+		"PaintKit_galil_galigator_Tag"									"Galigator"
+					
+		"PaintKit_fiveseven_polymer_dark"								"Questa verniciatura personalizzata fa sembrare l'arma realizzata in un polimero trasparente viola.\n\n<i>Avvolta in un guscio di caramella viola.</i>"
+		"PaintKit_fiveseven_polymer_dark_Tag"							"Dark Polymer"
+					
+		"PaintKit_usps_silent_boy"										"È stata verniciata con simboli geometrici neri e blu e shuriken.\n\n<i>Esercita discrezione durante l'esecuzione di aggressioni.</i>"
+		"PaintKit_usps_silent_boy_Tag"									"Silent Shot"
+					
+		"PaintKit_m4a4_zubastick_bw"									"Denti e occhi arancioni sono stati dipinti a mano su questo M4A4.\n\n<i>Circa 1991.</i>"
+		"PaintKit_m4a4_zubastick_bw_Tag"								"Zubastick"
+					
+		"PaintKit_m4a1s_electrum"										"È stato verniciato con una base verde marmorizzata e rifinito con accenti dorati e rossi.\n\n<i>A te non pagano abbastanza per portarlo, ma io lo farò. - Valeria Jenner, rivoluzionaria</i>"
+		"PaintKit_m4a1s_electrum_Tag"									"Electrum"
+					
+		"PaintKit_m249_blocks_purple"									"È stato verniciato con un design geometrico grafico viola.\n\n<i>Fai il pieno.</i>"
+		"PaintKit_m249_blocks_purple_Tag"								"Bock Blocks"
+		
+// END COMMUNITY_37 WEAPONS
 
 // OVERPASS_2024
 				
@@ -36636,6 +36741,7 @@ Esca per una doppia uccisione"
 		"SFUI_InvContextMenu_preview_musickit"       "Esamina - Anteprima della musica"
 		"SFUI_InvContextMenu_decodable"     "Sblocca la cassa"
 		"SFUI_InvContextMenu_sell"			"Vendi nel Mercato della Comunità"
+		"SFUI_InvContextMenu_marketlisting"	"Vedi inserzione nel Mercato"
 		"SFUI_InvContextMenu_openloadout"   "Mostra slot dell'assetto"
 		"SFUI_InvContextMenu_inspectcase"	"Apri..."
 		"SFUI_InvContextMenu_useitem"	    "Usa oggetto"
@@ -40019,6 +40125,8 @@ Esca per una doppia uccisione"
 		"SFUI_Settings_Network_Bandwidth_30mbps"   "3 Mbit/s"
 		"SFUI_Settings_Network_Bandwidth_40mbps"   "4 Mbit/s"
 		"SFUI_Settings_Network_Bandwidth_Max"	   "Illimitata"
+
+		"SFUI_Settings_Volatile_Limit_Unlimited"	"nessuno"
 
 		"SFUI_FeatureUnavailableDuringBeta"		"Non disponibile durante la beta"
 
@@ -45115,6 +45223,7 @@ Vuoi attivare il tuo pass ora?"
 		"inv_context_remove_patch"			"Rimuovi toppa"		
 		"inv_context_openloadout"			"Vedi nell'assetto"
 		"inv_context_sell"					"Vendi nel Mercato"
+		"inv_context_marketlisting"			"Vedi inserzione nel Mercato"
 		"inv_context_tradeup_add"			"Usa nel Contratto di scambio"
 		"inv_context_tradeup_remove"		"Rimuovi dal contratto di scambio"
 		"inv_context_open_contract"			"Apri il contratto"
@@ -45172,6 +45281,7 @@ Vuoi attivare il tuo pass ora?"
 		"inv_session_prop_updated"			"Novità!"
 		"inv_session_prop_quest_reward"		"Ricompensa!"
 		"inv_session_prop_xpshopredeem"		"Novità!"
+		"inv_session_prop_marketlisting"	"<img src='file://{images}/icons/ui/coupon.svg' class='item-tile__onmarket'/> Nel Mercato"
 		"inv_equipped_item"					"Hai equipaggiato <b>{s:name}</b> per: <b>{s:team}</b>"
 		"inv_equipped_item_noteam"			"Hai equipaggiato <b>{s:name}</b>"
 		"inv_unequipped_item"				"<b>{s:name}</b> non equipaggiato"
@@ -48063,9 +48173,9 @@ Vuoi attivare il tuo pass ora?"
 		"dealer_offer_attachment_wear"							"{s:item-rarity}"
 		"dealer_offer_attachment_remaining_title"				"OFFERTA #{d:offer-total}"
 		"dealer_offer_attachment_remaining"						"Offerta #{d:offer-total}"
-		"dealer_offer_received_count"							"<b>{s:offer-count}</b> articolo proposto"
+		"dealer_offer_received_count"							"<b>{s:offer-count}</b> offerta"
 		"dealer_offer_attachment_final_title"					"OFFERTA FINALE"
-		"dealer_offer_attachment_final"							"{s:offer-count} e offerta finale"
+		"dealer_offer_attachment_final"							"{s:offer-count} e ultima offerta"
 		"dealer_offer_attachment_status"						"Offerta - {s:offer-status}"
 		"dealer_offer_attachment_status-active"					"<b><span class=\"offer-active\">attiva</span></b>"
 		"dealer_offer_attachment_status-price"					"<b><span class=\"offer-active\">{s:offer-price}</span></b>"
@@ -48075,6 +48185,8 @@ Vuoi attivare il tuo pass ora?"
 		"user_btn_purchase_desc_purchase"		"Tieni premuto per acquistare questo articolo. Dopo l'acquisto, il terminale viene eliminato."
 		"user_btn_purchase_desc_continue"		"Tieni premuto per rifiutare definitivamente questa offerta e vedere quella successiva."
 		"user_btn_purchase_desc_end"		"Rifiuta l'offerta finale e scarta questo terminale."
+		"user_btn_purchase_title"			"{s:offer-count} offerta"
+		"user_btn_purchase_final_title"		"<b>Offerta finale</b>"
 		"user_btn_decline_desc"				"Rifiuta questa offerta e visualizzane un'altra"
 		"user_btn_accept"		"Accetta l'offerta <b>{s:price}</b>"
 		"user_btn_accept_final"	"Accetta l'offerta finale <b>{s:price}</b>"
@@ -48096,39 +48208,59 @@ Vuoi attivare il tuo pass ora?"
 		"user_btn_pause"		"Pausa negoziazione"
 		"user_btn_end"			"Rifiuta l'offerta finale"
 
+		"user_message_limit_0"		"Posso arrivare a <b>{s:limit-setting}</b>."
+		"user_message_limit_1"		"Che ne dici di <b>{s:limit-setting}</b> come limite massimo?"
+		"user_message_limit_2"		"Fino a <b>{s:limit-setting}</b> va bene per me."
+		"user_message_limit_3"		"Il limite di <b>{s:limit-setting}</b> va bene."
+		"user_message_limit_unlimited_0"	"<b>Nessun valore massimo</b>, voglio vedere tutto."
+		"user_message_limit_unlimited_1"	"<b>Assegno in bianco</b>. Non preoccuparti del portafoglio."
+		"user_message_limit_unlimited_2"	"Sono qui per comprare. <b>Mostrami tutto</b>."
+		"user_message_limit_unlimited_3"	"Se spara, mi interessa.<b> Nessun limite</b>."
+		"user_message_limit_unlimited_4"	"Non ci sono limiti"
+		"offer_limit_setting"		"Limite offerta: {s:limit}"
+		"offer_limit_setting_interface"		"Limite offerta: {s:limit} <img src='file://{images}/icons/ui/expand.svg' class='expand-icon'/>"
+
 		"dealer_offer_Unknown"							"-"
-		"dealer_offer_1"								"1°"
-		"dealer_offer_2"								"2°"
-		"dealer_offer_3"								"3°"
-		"dealer_offer_4"								"4°"
-		"dealer_offer_5"								"5°"
-		"dealer_offer_6"								"6°"
-		"dealer_offer_7"								"7°"
-		"dealer_offer_8"								"8°"
-		"dealer_offer_9"								"9°"
-		"dealer_offer_10"								"10"
+		"dealer_offer_1"								"1ª"
+		"dealer_offer_2"								"2ª"
+		"dealer_offer_3"								"3ª"
+		"dealer_offer_4"								"4ª"
+		"dealer_offer_5"								"5ª"
+		"dealer_offer_6"								"6ª"
+		"dealer_offer_7"								"7ª"
+		"dealer_offer_8"								"8ª"
+		"dealer_offer_9"								"9ª"
+		"dealer_offer_10"								"10ª"
 
 		"current_offer_tooltip"		"L'offerta attuale del trafficante d'armi per te."
 		"declined_offer_tooltip"	"Offerta rifiutata"
 		"future_offer_tooltip"		"Offerta non ancora rivelata."
 		"laptop_expiration_tooltip"		"Tempo rimanente fino alla scadenza di questo terminale Uplink e delle sue offerte."
+		"laptop_max_offer_tooltip"		"Imposta il tuo limite massimo dell'offerta. Riceverai solo offerte al di sotto di tale limite. Puoi modificarlo in qualsiasi momento."
 		"collection_xp_tooltip"			"Guadagna ESP visualizzando le offerte di questa raccolta. Apri per vedere i progressi e riscattare ESP."
+		"terminal_offer_limit_tooltip"		"Aggiorna il tuo limite massimo dell'offerta. Il trafficante d'armi ti mostrerà solo le offerte fino a quel limite."
 		"popup_lootlist_title"			"ESP catalogo raccolta"
 		"popup_lootlist_desc"			"Guadagna ESP visualizzando le offerte di questa raccolta"
-		"popup_lootlist_progress"		"Offerte viste: {d:seen}/{d:total}"
+
+		"popup_lootlist_progress:f"      "Offerte viste: {total, plural, one{{d:seen}/{d:total}} other{{d:seen}/{d:total}}}"
 		"popup_lootlist_claim_xp"		"Ottieni ESP bonus"
 		"popup_lootlist_claim_ww"		"Richiesta ESP in corso..."
-		"popup_lootlist_claim_ok"		"✅ ESP ottenuta"
+		"popup_lootlist_claim_ok"		"✔ ESP ottenuta"
 		"popup_vpn_status_connected"	"Stato: connesso a una rete sicura"
 		"popup_vpn_status_disconnected"	"Stato: disconnesso"
 		"popup_signal_full" 			"Segnale ottimale"
 		"popup_signal_ok" 				"Segnale forte"
+		"popup_offer_limit_desc"		"Aggiorna il tuo limite massimo di offerta per tutte le offerte future"
 		"laptop_battery_tooltip" 		"Batteria: {d:percent}%"
 		"laptop_original_seal_tooltip" 	"Qualsiasi oggetto acquistato da questo terminale Uplink verrà fornito con un certificato di proprietà originale, valido finché resterà in tuo possesso."
 		"laptop_zoom_tooltip" 			"Scorri la rotellina del mouse per ingrandire o ridurre"
 		"laptop_pan_tooltip" 			"Tieni premuto \"Maiusc\" e trascina per muovere la telecamera"
 		"laptop_pricing_tooltip"		"I prezzi sono validi a livello globale e si adattano automaticamente in base alla domanda di ciascun oggetto di questa collezione."
 
+		"dealer_message_set_offer_limit_0"		"Partiamo dall'inizio. Quanto puoi spendere?"
+		"dealer_message_set_offer_limit_1"		"Andiamo al punto.<!--.25--> Qual è il tuo limite massimo?"
+		"dealer_message_set_offer_limit_2"		"Prima di iniziare...<!--.25--> Qual è il limite? Quanto puoi spendere?"
+		
 		"dealer_message_start_0"  	"Questa è roba da veri mercenari.<!--.25-->È nuova di zecca con tutti gli optional. E senza scartoffie."
 		"dealer_message_start_1"  	"Sto smerciando materiale dal mercato grigio, senza scartoffie.<!--.25-->Non preoccuparti: è roba fuori dai radar di chiunque.<!--.25-->Sono armi fuori dalla circolazione da anni, nessuno le sta cercando. E, per la cronaca, sparano ancora proiettili."
 		"dealer_message_start_2"  	"La dogana di Ahradan ha sequestrato la mia merce stamattina. Ho cercato di smussare la situazione raccontando una storia strappalacrime sulla mancanza di attrezzature mediche e sui poveri malati che stanno morendo...<!--.25-->Non ha funzionato. Ma la valigetta piena di soldi sì.<!--.25-->Che ne dite di dare un'occhiata a queste \"macchine per la dialisi\" prima di mandarle agli orfanelli?"
@@ -48136,6 +48268,7 @@ Vuoi attivare il tuo pass ora?"
 		"dealer_message_start_4"  	"È roba pulita quella di oggi.<!--.25-->Per quanto ne sappiamo, le tue mani sono le prime a toccarla."
 		"dealer_message_start_5"  	"Armi sterili, senza numero di serie, perfettamente funzionanti.<!--.25-->In un tribunale militare potrebbero essere considerate prove.<!--.25-->Tu ed io sappiamo che sono dei capolavori."
 		"dealer_message_start_6"  	"Questa viene da un lotto di armi esotiche provenienti da un'unità da parata.<!--.25-->Ha percorso un sacco di chilometri, ma non ha mai sparato un colpo."
+		"dealer_message_start_7"  	"Gli altri clienti vogliono sempre sapere come ho acquistato la merce. Non mi piace.<!--.25-->Tu vuoi solo sapere se sono le migliori armi sul mercato.<!--.25-->Pensa un po': lo sono davvero."
 		"dealer_message_start_8"  	"Accordo di pace a Drosvik. Amo la pace.<!--.25-->Perché ho un generale con molti debiti e un'armeria ben rifornita che sta raccogliendo la polvere.<!--.25--> Voglio dire...<!--.25-->Anche perché la pace è un bene, ovviamente. Vite innocenti e...<!--.25-->Ma che sto dicendo, non ti interessa."
 		"dealer_message_start_9"  	"Questo carico contiene oggetti esotici provenienti da una deviazione del canale grigio.<!--.25-->Calibri inusuali, non per dilettanti. Li adorerai."
 		"dealer_message_start_10"  	"È imbarazzante.<!--.25-->Devo aver accidentalmente etichettato erroneamente una cassa nella mia spedizione.<!--.25-->Qualche decina di casse.<!--.25-->Che ne dici di aiutarmi a far sparire questo inventario prima che l'autorità portuale lo esamini?"
@@ -48326,10 +48459,29 @@ Vuoi attivare il tuo pass ora?"
 		"dealer_message_addition_factory_new_2"	"<!--.25-->Direttamente dal deposito. Neanche un graffio."
 		"dealer_message_addition_factory_new_3"	"<!--.25-->Nuova di fabbrica. Non ha mai sparato."
 		
+		"dealer_message_limit_first_time_0"		"Buono a sapersi, ti mostrerò solo le offerte fino a {s:limit}.<!--.25--> Vediamo di cosa hai bisogno."
+		"dealer_message_limit_first_time_2"		"Offerta valida solo sotto {s:limit}, lo terrò a mente.<!--.25--> Il tempo stringe. Cominciamo."
+		"dealer_message_limit_first_time_3"		"Bene, ho capito.<!--.25--> Diamoci dentro."
+		"dealer_message_limit_first_time_unlimited_0"		"Nessun limite massimo, eccellente. Aprirò il catalogo attuale d'ora in avanti.<!--.25--> Il tempo stringe, cominciamo."
+		"dealer_message_limit_first_time_unlimited_1"		"Ricevuto. Senza limiti. Ora si fa sul serio.<!--.25--> Vediamo di cosa hai bisogno."
+
+		"dealer_message_limit_0"				"Buono a sapersi, ti mostrerò solo le offerte fino a {s:limit}."
+		"dealer_message_limit_1"				"Solo offerte sotto {s:limit}, lo terrò a mente."
+		"dealer_message_limit_2"				"Regolazione dei parametri. Offerte solo fino a {s:limit}."
+		"dealer_message_limit_3"				"Offerte fino a {s:limit}. Me lo segno. Aggiornato."
+		"dealer_message_limit_4"				"Tirerò fuori solo articoli alla tua portata, fino a {s:limit}."
+		"dealer_message_limit_5"				"{s:limit}, ho ricevuto il nuovo limite."
+		"dealer_message_limit_6"				"Ricevuto. Reimposto il filtro per le offerte fino a {s:limit}."
+		"dealer_message_limit_unlimited_0"		"Nessun limite massimo, eccellente. Aprirò il catalogo attuale d'ora in avanti."
+		"dealer_message_limit_unlimited_1"		"Capito, senza alcun limite. Se viene fuori qualcosa di esotico, lo saprai."
+		"dealer_message_limit_unlimited_2"		"Musica per le mie orecchie. Se dovessi trovare qualcosa che soddisfa le tue esigenze, non esiterò a mostrartelo."
+		"dealer_message_limit_unlimited_3"		"Ricevuto. Senza limiti. Ora si fa sul serio."
+
 		"system_dealer_left_chat_0"				"Il trafficante ha lasciato la chat."
 		"system_dealer_join_chat_0"				"Offerte del trafficante d'armi per: {s:collection}<!--1.25-->Trafficante online"
 		"system_user_reject_offer_0"			"{s:user-name} ha rifiutato l'offerta."
 
+		"system_user_updated_offer_limit_0"			"Limite massimo delle offerte aggiornato a {s:limit}. Puoi aggiornare l'impostazione in qualsiasi momento."
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Retakes
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -48564,8 +48716,8 @@ Vuoi attivare il tuo pass ora?"
 		"quest_11015_var_desc:p{mission-points}"	 	"Vinci un round in <b>{s:gamemode}: {s:location}</b>.#|#Vinci dei round in <b>{s:gamemode}: {s:location}</b>."
 		"quest_11015_var_ingame:p{mission-points}"		"Vinci un round#|#Vinci dei round"
 
-// crow_mask_51633_comment
-// crow_mask_51634_comment
+// crow_mask_51765_comment
+// crow_mask_51766_comment
 }
 
 
@@ -48574,75 +48726,7 @@ Vuoi attivare il tuo pass ora?"
 }
 
 
-ar_desc:p{mission-points}"	 	"Vinci un round in <b>{s:gamemode}: {s:location}</b>.#|#Vinci dei round in <b>{s:gamemode}: {s:location}</b>."
-		"quest_11015_var_ingame:p{mission-points}"		"Vinci un round#|#Vinci dei round"
-
-// crow_mask_51588_comment
-// crow_mask_51589_comment
-}
-
-
-
-
-}
-
-
-a nessuna perdita."
-		"funfact_best_terrorist_accuracy:f"								"{funfact-d1, plural, one{{s:funfact-player} ha avuto una precisione del {d:funfact-d1}%, mentre la precisione della sua squadra è stata del {d:funfact-d2}%.} other{{s:funfact-player} ha avuto una precisione del {d:funfact-d1}%, mentre la precisione della sua squadra è stata del {d:funfact-d2}%.}}"
-		"funfact_best_counterterrorist_accuracy:f"						"{funfact-d1, plural, one{{s:funfact-player} ha avuto una precisione del {d:funfact-d1}%, mentre la precisione della sua squadra è stata del {d:funfact-d2}%.} other{{s:funfact-player} ha avuto una precisione del {d:funfact-d1}%, mentre la precisione della sua squadra è stata del {d:funfact-d2}%.}}"
-		"funfact_fallback1:f"											"La torta è una bugia."
-		"funfact_fallback2:f"											"Yawn."
-		"funfact_draw:f"												"La partita è stata riavviata in base ai voti dei giocatori."
-		"funfact_broke_windows:f"										"{funfact-d1, plural, one{{s:funfact-player} ha rotto {d:funfact-d1} finestra.} other{{s:funfact-player} ha rotto {d:funfact-d1} finestre.}}"
-		"funfact_nightvision_damage:f"									"{funfact-d1, plural, one{{s:funfact-player} ha inflitto {d:funfact-d1} danni mentre indossava gli occhiali per la visione notturna.} other{{s:funfact-player} ha inflitto {d:funfact-d1} danni mentre indossava gli occhiali per la visione notturna.}}"
-		"funfact_defused_with_dropped_kit:f"							"{s:funfact-player} ha disinnescato la bomba con un kit di disinnesco abbandonato."
-		"funfact_killed_half_of_enemies:f"								"{funfact-d1, plural, one{{s:funfact-player} ha annientato il {d:funfact-d1}% della squadra nemica.} other{{s:funfact-player} ha annientato il {d:funfact-d1}% della squadra nemica.}}"
-		"funfact_knife_level_reached:f"									"{funfact-d1, plural, one{{d:funfact-d1} giocatore ha raggiunto il livello del coltello dorato.} other{{d:funfact-d1} giocatori hanno raggiunto il livello del coltello dorato.}}"
-		"funfact_killed_before_dying:f"									"{funfact-d1, plural, one{{s:funfact-player} ha ucciso {d:funfact-d1} giocatore prima di morire.} other{{s:funfact-player} ha ucciso {d:funfact-d1} giocatori prima di morire.}}"
-		"funfact_respawned:f"											"{funfact-d1, plural, one{{s:funfact-player} è riapparso {d:funfact-d1} volta durante la partita.} other{{s:funfact-player} è riapparso {d:funfact-d1} volte durante la partita.}}"
-		"funfact_default_weapon:f"										"{s:funfact-player} ha vinto il round senza raccogliere armi."
-		"funfact_rounds_without_dying:f"								"{funfact-d1, plural, one{{s:funfact-player} è sopravvissuto per {d:funfact-d1} round consecutivo prima di morire.} other{{s:funfact-player} è sopravvissuto per {d:funfact-d1} round consecutivi prima di morire.}}"
-		"funfact_taser_kill:f"											"{funfact-d1, plural, one{{s:funfact-player} ha colpito {d:funfact-d1} giocatore con il taser.} other{{s:funfact-player} ha colpito {d:funfact-d1} giocatori con il taser.}}"
-		"funfact_ticking_time:f"										"{funfact-d1, plural, one{I Terroristi hanno vinto nonostante {d:funfact-d1} AT abbia provato a disinnescare la bomba.} other{I Terroristi hanno vinto nonostante {d:funfact-d1} AT abbiano provato a disinnescare la bomba.}}"
-		"funfact_ct_win_time:f"											"{funfact-d1, plural, one{Gli Anti-Terroristi hanno eliminato i Terroristi in {d:funfact-d1} secondo.} other{Gli Anti-Terroristi hanno eliminato i Terroristi in {d:funfact-d1} secondi.}}"
-		"funfact_ter_win_time:f"										"{funfact-d1, plural, one{I Terroristi hanno eliminato gli Anti-Terroristi in {d:funfact-d1} secondo.} other{I Terroristi hanno eliminato gli Anti-Terroristi in {d:funfact-d1} secondi.}}"
-		"funfact_bots_assumed:f"										"{funfact-d1, plural, one{{s:funfact-player} ha preso il controllo di {d:funfact-d1} bot durante il round.} other{{s:funfact-player} ha preso il controllo di {d:funfact-d1} bot durante il round.}}"
-		"funfact_domination:f"											"{s:funfact-player} ha dominato il maggior numero di giocatori."
-		"funfact_revenge:f"												"{funfact-d1, plural, one{{s:funfact-player} ha avuto la sua vendetta su {d:funfact-d1} giocatore.} other{{s:funfact-player} ha avuto la sua vendetta su {d:funfact-d1} giocatori.}}"
-		"funfact_steps_taken:f"											"{funfact-d1, plural, one{{s:funfact-player} è riapparso {d:funfact-d1} volta durante la partita.} other{{s:funfact-player} è riapparso {d:funfact-d1} volte durante la partita.}}"
-		"funfact_quarter_health:f"										"{funfact-d1, plural, one{{s:funfact-player} ha ucciso {d:funfact-d1} giocatore mentre aveva una salute inferiore a 25.} other{{s:funfact-player} ha ucciso {d:funfact-d1} giocatori mentre aveva una salute inferiore a 25.}}"
-		"funfact_empty_guns:f"											"{funfact-d1, plural, one{{s:funfact-player} ha esaurito le munizioni usando {d:funfact-d1} arma.} other{{s:funfact-player} ha esaurito le munizioni usando {d:funfact-d1} armi.}}"
-		"funfact_slow_trigger:f"										"{funfact-d1, plural, one{{s:funfact-player} è morto senza sparare colpi con {d:funfact-d1} arma.} other{{s:funfact-player} è morto senza sparare colpi con {d:funfact-d1} armi.}}"
-		"funfact_pickup_bomb:f"											"{funfact-d1, plural, one{{s:funfact-player} ha piazzato la bomba dopo che questa è passata per le mani di {d:funfact-d1} compagno di squadra.} other{{s:funfact-player} ha piazzato la bomba dopo che questa è passata per le mani di {d:funfact-d1} compagni di squadra.}}"
-		"funfact_bomb_carriers:f"										"{funfact-d1, plural, one{{s:funfact-player} ha ucciso {d:funfact-d1} portatore della bomba nell'ultimo round.} other{{s:funfact-player} ha ucciso {d:funfact-d1} portatori della bomba nell'ultimo round.}}"
-		"funfact_knife_bomb_planter:f"									"{s:funfact-player} ha completato il livello del coltello uccidendo il giocatore con la bomba."
-		"funfact_bomb_planted_before_kill:f"							"Nessun giocatore è stato ucciso prima del piazzamento della bomba."
-		"funfact_failed_bomb_plants:f"									"{funfact-d1, plural, one{{d:funfact-d1} Terrorista ha cercato di piazzare la bomba durante il round.} other{{d:funfact-d1} Terroristi hanno cercato di piazzare la bomba durante il round.}}"
-		"funfact_knife_without_ammo:f"									"{funfact-d1, plural, one{{s:funfact-player} ha ucciso {d:funfact-d1} nemico con il coltello dopo avere esaurito le munizioni.} other{{s:funfact-player} ha ucciso {d:funfact-d1} nemici con il coltello dopo avere esaurito le munizioni.}}"
-		"funfact_molotov_burns:f"										"{funfact-d1, plural, one{{s:funfact-player} ha dato fuoco a {d:funfact-d1} giocatore.} other{{s:funfact-player} ha dato fuoco a {d:funfact-d1} giocatori.}}"
-		"funfact_survival_time:f"										"{funfact-d1, plural, one{{s:funfact-player} è sopravvissuto per più tempo: {d:funfact-d1} secondo.} other{{s:funfact-player} è sopravvissuto per più tempo: {d:funfact-d1} secondi.}}"
-		"funfact_pulled_trigger:f"										"{funfact-d1, plural, one{{s:funfact-player} ha premuto il grilletto {d:funfact-d1} volta durante la partita.} other{{s:funfact-player} ha premuto il grilletto {d:funfact-d1} volte durante la partita.}}"
-		"funfact_ace:f"													"Che fenomeno! {s:funfact-player} ha eliminato l'intera squadra avversaria."
-		"funfact_defuse_was_close_call_tenths:f"						"{funfact-d1, plural, one{{s:funfact-player} ha disinnescato la bomba a 0,{d:funfact-d1} secondi dalla detonazione.} other{{s:funfact-player} ha disinnescato la bomba a 0,{d:funfact-d1} secondi dalla detonazione.}}"
-		"funfact_defuse_was_close_call_hundredths:f"					"{funfact-d1, plural, one{{s:funfact-player} ha disinnescato la bomba a 0,0{d:funfact-d1} secondi dalla detonazione.} other{{s:funfact-player} ha disinnescato la bomba a 0,0{d:funfact-d1} secondi dalla detonazione.}}"
-		"funfact_defuse_was_close_call_thousandths:f"					"{funfact-d1, plural, one{{s:funfact-player} ha disinnescato la bomba a 0,00{d:funfact-d1} secondi dalla detonazione.} other{{s:funfact-player} ha disinnescato la bomba a 0,00{d:funfact-d1} secondi dalla detonazione.}}"
-		"mapwinrecord_graph_title:f"									"{f:0:wins, plural, one{Ultima vittoria} other{Ultime vittorie}}"
-		"CSGO_Recipe_Count_Items_Selected:f"							"{count, plural, one{<b>{d:count}</b> oggetto selezionato} other{<b>{d:count}</b> oggetti selezionati}}"
-		"CSGO_Recipe_Count_Items_Remaining:f"							"{count, plural, one{<b>{d:count}</b> oggetto rimanente} other{<b>{d:count}</b> oggetti rimanenti}}"
-		"CSGO_Recipe_TradeUp_Items_Remain:f"							"{count, plural, one{{d:count} selezionato per lo scambio} other{{d:count} selezionati per lo scambio}}"
-		"CSGO_Recipe_TradeUp_Items_XofY:f"								"{count, plural, one{{d:count}/{d:recipecount} selezionato per lo scambio} other{{d:count}/{d:recipecount} selezionati per lo scambio}}"
-		"CSGO_Recipe_TradeUp_Items_Inv:f"								"{count, plural, one{{d:count} idoneo per lo scambio} other{{d:count} idonei per lo scambio}}"
-		"CSGO_RemoveKeychainToolCharges_Reward:f"						"{item_count, plural, one{+{d:item_count} strumento di rimozione di ciondoli} other{+{d:item_count} strumenti di rimozione di ciondoli}}"
-		"SFUI_Store_Offer_Days_Remaining:f"								"{daysremaining, plural, one{{d:daysremaining} giorno rimasto} other{{d:daysremaining} giorni rimasti}}"
-		"SFUI_Store_Offer_Days_Remaining_claim:f"						"{daysremaining, plural, one{{d:daysremaining} giorno rimasto} other{{d:daysremaining} giorni rimasti}}"
-		"SFUI_Store_Offer_Days_Remaining_bid:f"							"{daysremaining, plural, one{{d:daysremaining} giorno rimasto per fare un'offerta} other{{d:daysremaining} giorni rimasti per fare un'offerta}}"
-		"SFUI_Store_Offer_Days_Remaining_last_claim:f"					"Ultima possibilità di usufruire di questa offerta"
-		"SFUI_Store_Offer_Days_Remaining_last_bid:f"					"Ultima possibilità di usufruire di questa offerta"
-		"SFUI_Store_Timer_Week:f"										"{f:0:value, plural, one{{f:0:value} settimana} other{{f:0:value} settimane}}"
-		"SFUI_Store_Timer_Day:f"										"{f:0:value, plural, one{{f:0:value} giorno} other{{f:0:value} giorni}}"
-		"SFUI_Store_Timer_Hour:f"										"{f:0:value, plural, one{{f:0:value} ora} other{{f:0:value} ore}}"
-		"SFUI_Store_Timer_Min:f"										"{f:0:value, plural, one{{f:0:value} minuto} other{{f:0:value} minuti}}"
-		"SFUI_Store_Timer_Sec:f"										"{f:0:value, plural, one{{f:0:value} sec} other{{f:0:value} sec}}"
+lural, one{{f:0:value} sec} other{{f:0:value} sec}}"
 		"CSGO_Watch_Minute:f"											"{f:0:value, plural, one{{f:0:value} minuto} other{{f:0:value} minuti}}"
 		"xpshop_new_items:f"											"{new-count, plural, one{Nuovo oggetto!} other{Nuovi oggetti!}}"
 		"xpshop_popup_clear_n_tracks:f"									"{completed_tracks_count, plural, one{Cancella {d:completed_tracks_count} Pass completato} other{Cancella {d:completed_tracks_count} Pass completati}}"
