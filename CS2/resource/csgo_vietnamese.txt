@@ -37202,38 +37202,60 @@
 		"PaintKit_glove_specialist_dragon_blue_Tag"						"Cloud Chaser"
 		
 		"PaintKit_glove_specialist_wave_blue_Tag"						"Big Swell"
-"PaintKit_glock_jdpeek_Tag"										"Fully Tuned"
+		
+// END COMMUNITY_37 GLOVES
+
+// COMMUNITY_37 WEAPONS
+		
+		"PaintKit_glock_jdpeek"											"Được sơn tùy chỉnh với tông màu neon và kim tuyến kim loại.\n\n<i>Thế này thì hơi quá với tôi, nhưng tôi đâu phải đối tượng hướng tới cho thứ này... - Tay buôn vũ khí Booth</i>"
+		"PaintKit_glock_jdpeek_Tag"										"Fully Tuned"
 					
+		"PaintKit_awp_queens_gambit"									"Được sơn tùy chỉnh với họa tiết màu xanh hoàng gia và vàng. Hình ảnh nữ hoàng đã được sơn thủ công lên phía trước báng súng.\n\n<i>Mỗi phát bắn là sát lệnh uy quyền và chuẩn xác</i>"
 		"PaintKit_awp_queens_gambit_Tag"								"Queen's Gambit"
 					
+		"PaintKit_p90_deathgaze"										"Được sơn tùy chỉnh với hình ảnh Medusa phong cách graffiti trên nền cẩm thạch Carrara.\n\n<i>Đừng tôn thờ thần tượng được dựng nên từ nền tảng dối trá</i>"
 		"PaintKit_p90_deathgaze_Tag"									"Deathgaze"
 					
+		"PaintKit_p250_kintsugi"										"Một chú chim màu cam nổi bật cùng những điểm nhấn vàng được sơn tùy chỉnh trên nền trắng ngà.\n\n<i>Giống như những chiếc đĩa ăn sang trọng, vũ khí này chỉ được sử dụng trong những dịp đặc biệt</i>"
 		"PaintKit_p250_kintsugi_Tag"									"Kintsugi"
 					
+		"PaintKit_mp9_urban_sovereign"									"Được sơn tùy chỉnh với thiết kế mang chất liệu đô thị và hoàn thiện bằng graffiti vàng.\n\n<i>Vua chúa không trốn sau các bức tường, họ tô vẽ chúng</i>"
 		"PaintKit_mp9_urban_sovereign_Tag"								"Urban Sovereign"
 					
+		"PaintKit_mp7_amberline"										"Được phun sơn với sọc nghiêng kẻ cam và trắng.\n\n<i>Thương hiệu ngay trong tay</i>"
 		"PaintKit_mp7_amberline_Tag"									"Amberline"
 					
+		"PaintKit_bizon_rmx"											"Được sơn tùy chỉnh với dải màu tím và thiết kế đỏ trắng.\n\n<i>Nhẹ, nhanh và nguy hiểm... trên lý thuyết</i>"
 		"PaintKit_bizon_rmx_Tag"										"RMX"
 					
+		"PaintKit_ak47_crane_flight"									"Hạc trắng và chi tiết mạ vàng được vẽ tay trên nền đen trắng.\n\n<i>Trước khi trăng máu xuất hiện</i>"
 		"PaintKit_ak47_crane_flight_Tag"								"Crane Flight"
 					
+		"PaintKit_deagle_firebreathing"									"Được sơn tùy chỉnh với những ngọn lửa tím và xanh bằng sơn màu ngọc trai.\n\n<i>Sở hữu phẩm chất và khả năng tuyệt vời</i>"
 		"PaintKit_deagle_firebreathing_Tag"								"Firebreathing"
 					
+		"PaintKit_ump_fragment"											"Được sơn tùy chỉnh với thiết kế bạc, đen, và đỏ.\n\n<i>Xông pha ăn mạng</i>"
 		"PaintKit_ump_fragment_Tag"										"Fragment"
 					
+		"PaintKit_sawedoff_fusion"										"Được sơn tùy chỉnh với thiết kế đen và vàng. Có thêm chi tiết chỉ hiện lên dưới các điều kiện ánh sáng khác nhau.\n\n<i>Con mắt đã thấy nhiều điều...</i>"
 		"PaintKit_sawedoff_fusion_Tag"									"Fusion"
 					
+		"PaintKit_galil_galigator"										"Được sơn tùy chỉnh với hình ảnh cá sấu và biểu tượng phóng xạ trên nền xanh lục và vàng.\n\n<i>RÔM RỐP! RÔM RỐP!</i>"
 		"PaintKit_galil_galigator_Tag"									"Galigator"
 					
+		"PaintKit_fiveseven_polymer_dark"								"Được sơn tùy chỉnh để khiến khẩu súng trông như làm từ chất liệu polymer màu tím trong suốt.\n\n<i>Bao bọc trong lớp vỏ kẹo màu tím</i>"
 		"PaintKit_fiveseven_polymer_dark_Tag"							"Dark Polymer"
 					
+		"PaintKit_usps_silent_boy"										"Được sơn tùy chỉnh với các ký tự tiếng Nhật màu đen và xanh và shuriken.\n\n<i>Hãy âm thầm khi tấn công</i>"
 		"PaintKit_usps_silent_boy_Tag"									"Silent Shot"
 					
+		"PaintKit_m4a4_zubastick_bw"									"Họa tiết răng và mắt màu cam được vẽ tay trên khẩu M4A4.\n\n<i>Khoảng năm 1991</i>"
 		"PaintKit_m4a4_zubastick_bw_Tag"								"Zubastick"
 					
+		"PaintKit_m4a1s_electrum"										"Được sơn tùy chỉnh với lớp nền màu xanh cẩm thạch, hoàn thiện với các điểm nhấn màu vàng và đỏ.\n\n<i>Họ không trả đủ tiền để bạn cầm khẩu súng đó, nhưng tôi thì có - Nhà cách mạng Valeria Jenner</i>"
 		"PaintKit_m4a1s_electrum_Tag"									"Electrum"
 					
+		"PaintKit_m249_blocks_purple"									"Được sơn tùy chỉnh với thiết kế khối hình học màu tím.\n\n<i>Xếp chồng lên</i>"
 		"PaintKit_m249_blocks_purple_Tag"								"Bock Blocks"
 		
 // END COMMUNITY_37 WEAPONS
@@ -51525,37 +51547,7 @@
 }
 
 
-:0:value} phút"
-		"xpshop_new_items:f"											"Vật phẩm mới!"
-		"xpshop_popup_clear_n_tracks:f"									"Xóa {d:completed_tracks_count} vé đã hoàn thành"
-		"xpshop_popup_clear_n_tracks_text:f"							"Bạn đã nhận được toàn bộ điểm kho vũ khí từ vé này.<br><br>Xóa vé kho vũ khí sẽ cho phép bạn kích hoạt một vé mới. Điều này sẽ không ảnh hưởng đến điểm kho vũ khí hiện tại của bạn."
-		"xpshop_redeem_bid_batchover:f"									"Khung thời gian đấu giá cho đợt này đã kết thúc. Bên thắng đấu giá sẽ được thông báo sau khi quá trình xử lý hoàn tất. Vui lòng quay lại vào ngày mai để đấu giá cho đợt tiếp theo. Đấu giá sẽ mở lại sau {d:hours_until_bid_batch} giờ."
-		"xpshop_redeem_not_enough_stars:f"								"Bạn cần thêm {d:stars_needed} điểm kho vũ khí. Nhận điểm bằng cách tham gia trận đấu với vé kho vũ khí đang hoạt động."
-		"Panorama_PlayerDetails_Commendations_Left:f"					"Bạn có thể khen ngợi thêm {d:num_token} người chơi trong hôm nay"
-		"SFUI_BuyMenu_CanOnlyCarryXGrenades:f"							"Bạn chỉ có thể mang {s:s1} lựu đạn"
-		"SFUI_BuyMenu_MaxItemsOfType:f"									"Bạn chỉ có thể mang {s:s1} món loại này"
-		"SFUI_BuyMenu_MaxItemsOfTypePurchased:f"						"Bạn chỉ có thể mua {s:s1} món loại này"
-		"SFUI_BuyMenu_ReachedWeaponsExpertLimit:f"						"Đã mua {s:s1} trong trận này"
-		"cs_rating_wins_needed:f"										"Thắng thêm <b>{d:winsneeded}</b> trận đấu"
-		"cs_rating_wins_needed_verbose:f"								"Thắng thêm <b>{d:winsneeded}</b> trận để thiết lập hệ số CS của bạn"
-		"cs_rating_wins_needed_verbose_intro:f"							"Thắng <b>{d:winsneeded}</b> trận để thiết lập hệ số CS của bạn"
-		"cs_rating_need_wins:f"											"Yêu cầu thắng {d:wins-needed} trận đấu"
-		"wins_count:f"													"{d:wins} trận thắng"
-		"contextmenu_lobby-count:f"										"{d:lobby_count} phòng chơi"
-		"popup_useitem_button_getkeychaincharges:f"						"Thêm <b>{d:item_count}</b> công cụ gỡ móc treo"
-		"popup_decodable_rent_weapon_count:f"							"Thuê {d:numlootlist} vũ khí trong 7 ngày"
-		"popup_redeem_souvenir_desc:f"									"Còn <span class=\"get-souvenir-redeem-count\">{d:redeems}</span> lần đổi gói lưu niệm"
-		"matchmaking_stat_avgSearchTimeSeconds:f"						"Thời gian chờ dự tính: {s:stat}"
-		"matchmaking_stat_playersOnline:f"								"Người chơi trực tuyến: {d:stat}"
-		"matchmaking_stat_playersLockedIn:f"							"{d:stat}/{d:total_stat} người chơi xác nhận"
-		"matchmaking_stat_playersSearching:f"							"Người chơi đang tìm: {d:stat}"
-		"matchmaking_stat_serversOnline:f"								"Máy chủ hoạt động: {d:stat}"
-		"matchmaking_stat_ongoingMatches:f"								"Trận đang diễn ra: {d:stat}"
-		"tooltip_skill_group_none:f"									"Thắng <b>{d:winsneeded}</b> trận để thiết lập nhóm kỹ năng tranh đấu của bạn."
-		"tooltip_cs_rating_none:f"										"Thắng thêm <b>{d:winsneeded}</b> trận để thiết lập hệ số CS của bạn."
-		"tooltip_skill_group_nonewingman:f"								"Thắng <b>{d:winsneeded}</b> trận để thiết lập nhóm kỹ năng Wingman của bạn."
-		"tooltip_skill_group_nonedangerzone:f"							"Nhóm kỹ năng Vùng Nguy Hiểm cần phải được hiệu chỉnh, hoàn thành một số trận Vùng Nguy Hiểm để xác định nhóm kỹ năng."
-		"tooltip_skill_group_wins:f"									"<img src='file://{images}/icons/ui/trophy.svg'  vspace='6' class='player-card-tooltip-icon'/> {d:wins} trận thắng"
+'  vspace='6' class='player-card-tooltip-icon'/> {d:wins} trận thắng"
 		"team-intro-overtime-1st-half:f"								"Hiệp phụ {d:overtime_num}: Nửa đầu"
 		"team-intro-overtime-2nd-half:f"								"Hiệp phụ {d:overtime_num}: Nửa sau"
 		"scoreboard_timeline_ot:f"										"Hiệp phụ {d:scoreboard_ot}"

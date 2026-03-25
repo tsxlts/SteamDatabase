@@ -35370,7 +35370,46 @@
 		"PaintKit_glove_specialist_wave_blue_Tag"						"大浪潮"
 "PaintKit_glock_jdpeek_Tag"										"完全調諧"
 					
-		// END COMMUNITY_37 WEAPONS
+		"PaintKit_awp_queens_gambit_Tag"								"后翼棄兵"
+					
+		"PaintKit_p90_deathgaze"										"其以在卡拉拉大理石紋基底上印有塗鴉風格的梅杜莎客製化塗裝。\n\n<i>別祭拜建基於欺騙的偶像</i>"
+		"PaintKit_p90_deathgaze_Tag"									"死亡凝視"
+					
+		"PaintKit_p250_kintsugi"										"其以在象牙色基底上繪有一隻鮮豔的橙色飛鳥和金色點綴客製化塗裝。\n\n<i>如同那些精美的晚餐盤，這把武器僅用於特殊場合</i>"
+		"PaintKit_p250_kintsugi_Tag"									"金繼"
+					
+		"PaintKit_mp7_amberline"										"其以斜噴的方式噴上橙白間條。\n\n<i>掌控的品牌</i>"
+		"PaintKit_mp7_amberline_Tag"									"琥珀線"
+					
+		"PaintKit_bizon_rmx"											"其以紫色的漸層和紅白設計客製化塗裝。\n\n<i>輕身、迅捷、危險……理論上</i>"
+		"PaintKit_bizon_rmx_Tag"										"RMX"
+					
+		"PaintKit_ak47_crane_flight"									"其在黑白色基底上手繪了一隻鶴和金色點綴。\n\n<i>紅月在後</i>"
+		"PaintKit_ak47_crane_flight_Tag"								"鶴翔"
+					
+		"PaintKit_deagle_firebreathing_Tag"								"火之呼吸"
+					
+		"PaintKit_ump_fragment"											"其以銀色、黑色和紅色設計客製化塗裝。\n\n<i>去殺敵了</i>"
+		"PaintKit_ump_fragment_Tag"										"弒片"
+					
+		"PaintKit_sawedoff_fusion_Tag"									"融合"
+					
+		"PaintKit_galil_galigator_Tag"									"加利鱷"
+					
+		"PaintKit_fiveseven_polymer_dark"								"此客製化塗裝使武器看起來像是以透明的紫色聚合物製成。\n\n<i>包裹在紫色糖衣中</i>"
+		"PaintKit_fiveseven_polymer_dark_Tag"							"暗黑聚合"
+					
+		"PaintKit_usps_silent_boy"										"其以藍黑色幾何圖樣和手裏劍客製化塗裝。\n\n<i>在突擊進攻時練習謹慎行事</i>"
+		"PaintKit_usps_silent_boy_Tag"									"寂靜一擊"
+					
+		"PaintKit_m4a4_zubastick_bw_Tag"								"尖牙利齒"
+					
+		"PaintKit_m4a1s_electrum_Tag"									"翠珀金"
+					
+		"PaintKit_m249_blocks_purple"									"其以紫色幾何圖形的圖案設計客製化塗裝。\n\n<i>都堆疊起來吧</i>"
+		"PaintKit_m249_blocks_purple_Tag"								"組塊積木"
+		
+// END COMMUNITY_37 WEAPONS
 
 // OVERPASS_2024
 				
@@ -49030,6 +49069,7 @@
 		"popup_lootlist_title"			"收藏目錄經驗值"
 		"popup_lootlist_desc"			"檢視此收藏中的報價即可賺取經驗值"
 
+		"popup_lootlist_progress:f"      "已查看 {total, plural, other{{d:seen}/{d:total} 個報價}}"
 		"popup_lootlist_claim_xp"		"獲得獎勵經驗值"
 		"popup_lootlist_claim_ww"		"領取經驗值…"
 		"popup_lootlist_claim_ok"		"✔ 已領取經驗值"
@@ -49513,27 +49553,7 @@
 }
 
 
-} 使用手榴彈擊殺了 {d:funfact-d1} 名敵人。"
-		"funfact_blind_kills:f"											"{s:funfact-player} 被閃光彈照到時擊殺了 {d:funfact-d1} 名敵人。"
-		"funfact_kills_with_last_round:f"								"{s:funfact-player} 有 {d:funfact-d1} 次在彈匣僅剩一發子彈時，成功殺死敵人。"
-		"funfact_kills_headshots:f"										"{s:funfact-player} 在該回合以爆頭的方式擊殺 {d:funfact-d1} 名敵人。"
-		"funfact_kills_with_stattrak_weapon:f"							"{s:funfact-player} 的 StatTrak™ 武器在該回合增加了 {d:funfact-d1} 次擊殺。"
-		"funfact_donated_weapons:f"										"{s:funfact-player} 在該回合捐助 {d:funfact-d1} 項武器。"
-		"funfact_posthumous_kills_with_grenade:f"						"{s:funfact-player} 在死亡後以手榴彈炸死了 {d:funfact-d1} 名敵人。"
-		"funfact_num_times_jumped:f"									"{s:funfact-player} 在該回合中共跳躍 {d:funfact-d1} 次。"
-		"funfact_fall_damage:f"											"{s:funfact-player} 受到了……由地表造成的 {d:funfact-d1} 傷害。"
-		"funfact_items_purchased:f"										"{s:funfact-player} 買了 {d:funfact-d1} 項物品。"
-		"funfact_won_as_last_member:f"									"身為他所屬隊伍的最後一名生還者，{s:funfact-player} 擊殺了 {d:funfact-d1} 名敵人並贏得回合勝利。"
-		"funfact_number_of_overkills:f"									"{s:funfact-player} 擊殺了 {d:funfact-d1} 名他持續壓制的玩家。"
-		"funfact_shots_fired:f"											"該回合總共開了 {d:funfact-d1} 槍。"
-		"funfact_money_spent:f"											"{s:funfact-player} 該回合花了 ${d:funfact-d1}。"
-		"funfact_grenades_thrown:f"										"{s:funfact-player} 該回合丟出了 {d:funfact-d1} 枚手榴彈。"
-		"funfact_used_all_ammo:f"										"{s:funfact-player} 彈盡援絕了。"
-		"funfact_survived_multiple_attackers:f"							"{s:funfact-player} 成功擺脫 {d:funfact-d1} 名不同敵人的攻擊。"
-		"funfact_died_from_multiple_attackers:f"						"{s:funfact-player} 死前遭受 {d:funfact-d1} 名敵人的攻擊。"
-		"funfact_defended_bomb:f"										"{s:funfact-player} 擊殺了 {d:funfact-d1} 名欲拆除炸彈的敵人。"
-		"funfact_items_dropped_value:f"									"{s:funfact-player} 丟棄了價值 ${d:funfact-d1} 的補給品。"
-		"funfact_kill_wounded_enemies:f"								"{s:funfact-player} 解決了 {d:funfact-d1} 名受傷的敵人。"
+act-player} 解決了 {d:funfact-d1} 名受傷的敵人。"
 		"funfact_damage_multiple_enemies:f"								"{s:funfact-player} 對 {d:funfact-d1} 名敵人造成傷害。"
 		"funfact_used_multiple_weapons:f"								"{s:funfact-player} 用過 {d:funfact-d1} 種不同的槍械。"
 		"funfact_terrorist_accuracy:f"									"恐怖份子擁有全場最佳的準確度 {d:funfact-d1}%。"

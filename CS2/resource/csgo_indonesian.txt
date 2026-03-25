@@ -33923,7 +33923,22 @@ melawan FaZe."
 		"PaintKit_galil_galigator"										"Sebuah aligator dan simbol radiasi telah dicat khusus di atas lapisan dasar berwarna hijau dan kuning.\n\n<i>NYAM! NYAM! NYAM!</i>"
 		"PaintKit_galil_galigator_Tag"									"Galigator"
 					
-		// END COMMUNITY_37 WEAPONS
+		"PaintKit_fiveseven_polymer_dark"								"Cat khusus membuat senjata ini tampak seolah terbuat dari polimer transparan berwarna ungu.\n\n<i>Dibalut lapisan permen warna ungu</i>"
+		"PaintKit_fiveseven_polymer_dark_Tag"							"Dark Polymer"
+					
+		"PaintKit_usps_silent_boy"										"Telah dicat khusus dengan gambar shuriken dan motif berwarna hitam dan biru.\n\n<i>Pertimbangkan semua serangan dengan matang</i>"
+		"PaintKit_usps_silent_boy_Tag"									"Silent Shot"
+					
+		"PaintKit_m4a4_zubastick_bw"									"Gambar gigi dan mata berwarna oranye telah dilukis tangan pada M4A4 ini.\n\n<i>Circa 1991</i>"
+		"PaintKit_m4a4_zubastick_bw_Tag"								"Zubastick"
+					
+		"PaintKit_m4a1s_electrum"										"Telah dicat khusus dengan lapisan dasar marmer warna hijau, serta dilengkapi aksen warna emas dan merah.\n\n<i>Mereka tidak membayarmu dengan jumlah yang cukup untuk melakukan itu, tapi aku bersedia. — Valeria Jenner, Tokoh Revolusioner</i>"
+		"PaintKit_m4a1s_electrum_Tag"									"Electrum"
+					
+		"PaintKit_m249_blocks_purple"									"Telah dicat khusus dengan desain geometri berwarna ungu.\n\n<i>Tumpuk saja</i>"
+		"PaintKit_m249_blocks_purple_Tag"								"Bock Blocks"
+		
+// END COMMUNITY_37 WEAPONS
 
 // OVERPASS_2024
 				
@@ -48028,18 +48043,7 @@ melawan FaZe."
 }
 
 
-s Wingman-mu."
-		"tooltip_skill_group_nonedangerzone:f"							"Kelas Zona Bahaya harus dikalibrasi, selesaikan beberapa pertandingan Zona Bahaya untuk membuka Kelasmu."
-		"tooltip_skill_group_wins:f"									"<img src='file://{images}/icons/ui/trophy.svg'  vspace='6' class='player-card-tooltip-icon'/> {d:wins} Menang"
-		"team-intro-overtime-1st-half:f"								"Overtime: Babak Pertama"
-		"team-intro-overtime-2nd-half:f"								"Overtime: Babak Kedua"
-		"scoreboard_timeline_ot:f"										"Overtime"
-		"eom-skillgroup-win:f"											"{s:rating_type} Pertandingan Dimenangkan"
-		"eom-skillgroup-map-win:f"										"{s:rating_type} {s:map} Pertandingan Dimenangkan"
-		"eom-skillgroup-needed-wins:f"									"Menangkan {d:winsneeded} pertandingan untuk menampilkan Kelasmu"
-		"WatchMenu_Viewers_dv:f"										"{d:spectatorCount} Penonton"
-		"Panorama_DeathPanel_DamageTaken:f"								"<font color='#A0A0A0'>Damage diterima:  </font><font color='#FFFFFF'><b>{d:damage_taken}</b></font> <font color='#A0A0A0'> dalam</font> <font color='#FFFFFF'><b>{d:hits_taken} hit </b></font>"
-		"Panorama_DeathPanel_DamageGiven:f"								"<font color='#A0A0A0'>Damage diberikan:  </font><font color='#FFFFFF'><b>{d:damage_given}</b></font> <font color='#A0A0A0'> dalam</font> <font color='#FFFFFF'><b>{d:hits_given} hit </b></font>"
+'><b>{d:damage_given}</b></font> <font color='#A0A0A0'> dalam</font> <font color='#FFFFFF'><b>{d:hits_given} hit </b></font>"
 		"mission_directive:f"											"<b>{d:mission-points}</b> {s:action}"
 		"mission_directive_progress:f"									"{d:mission-progress}/<b>{d:mission-points}</b> {s:action}"
 		"quest_11000_var_desc:f"										"Dapatkan satu atau beberapa kill dengan {s:item1} di mode <b>{s:gamemode}: {s:location}</b>."

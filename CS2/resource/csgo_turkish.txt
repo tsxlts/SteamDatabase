@@ -4357,6 +4357,8 @@ VIP'ye bu bölgelerden birine ulaşana kadar koruma sağla."
 		
 		"CSGO_crate_community_36"				"Mühürlü Doğuş Terminali"
 		"CSGO_crate_community_36^volatile"		"Etkin Doğuş Terminali"
+		"CSGO_crate_community_37"				"Mühürlü Ölü El Terminali"
+		"CSGO_crate_community_37^volatile"		"Etkin Ölü El Terminali"
 		"CSGO_crate_keychain_pack_kc_drboom_capsule"	    	"Dr. Bomba Süs Koleksiyonu"
 		"CSGO_crate_keychain_pack_kc_drboom_capsule_desc"		"Bu koleksiyon çeşitli Dr. Bomba süsleri içerir."
 		"CSGO_crate_keychain_pack_kc_drboom_capsule_short"	    "Dr. Bomba Süsleri"
@@ -5332,6 +5334,7 @@ VIP'ye bu bölgelerden birine ulaşana kadar koruma sağla."
 		"CSGO_set_community_36"					"Doğuş Koleksiyonu"
 		"CSGO_set_timed_drops_exuberant"		"Harlequin Koleksiyonu"
 		"CSGO_set_timed_drops_achroma"			"Achroma Koleksiyonu"
+		"CSGO_set_community_37"					"Ölü El Koleksiyonu"
 		/////////////////
 		// lootlist override strings
 		//////////////////
@@ -34523,6 +34526,103 @@ Bu çıkartma, forZe eSports için Berlin 2019'da oynayan profesyonel oyuncu And
 		"PaintKit_m4a1s_quick_liquidation"				"Koyu tabanı ve özenle seçilmiş kırmızı ve mavi vurguları, bu özel boyalı M4A1-S'nin ortam ışığı altında parlıyormuş gibi görünmesini sağlar.\n\n<i>Sessiz yansıma</i>"
 		
 		"PaintKit_aug_trigger_discipline_velco"			"Mavi izometrik bir desen uygulanmış ve turuncu vurgularla tamamlanmıştır.\n\n<i>Sabretmenin karşılığını alırsın.</i>"
+"PaintKit_glove_driver_knit_argyle_green_Tag"					"El Kazağı"
+		
+		"PaintKit_glove_driver_ostrich_purple_Tag"						"Mor Kabartma"
+		
+		"PaintKit_glove_driver_silk_dragon_white_Tag"					"Dalga Avcısı"
+		
+		"PaintKit_glove_brocade_crane_Tag"								"İşlemeli Turna"
+		
+		"PaintKit_glove_driver_brocade_flower_red_Tag"					"İşlemeli Çiçekler"
+		
+		"PaintKit_glove_driver_dragon_scale_red_Tag"					"Ejderha Yumruklar"
+		
+		"PaintKit_glove_driver_embroidered_flowers_teal_Tag"			"Bahçe İşlemesi"
+		
+		"PaintKit_glove_driver_scallop_metallic_blue_Tag"				"Seigaiha"
+		
+		"PaintKit_glove_sport_velvet_red_Tag"							"Ezoterik Motif"
+		
+		"PaintKit_glove_sport_beadwork_diamonds_purple_Tag"				"Mor Boncuk İşlemesi"
+		
+		"PaintKit_glove_sport_camo_winter_Tag"							"Kırağı"
+		
+		"PaintKit_glove_sport_pinstripe_black_Tag"						"Krem Çizgili"
+		
+		"PaintKit_glove_sport_racer_red_Tag"							"Kırmızı Yarışçı"
+		
+		"PaintKit_glove_sport_tech_gradient_bright_Tag"					"Parlak Menekşe"
+		
+		"PaintKit_glove_specialist_abstract_green_Tag"					"Açık Yeşil Kamuflaj"
+		
+		"PaintKit_glove_specialist_graffiti_black_Tag"					"Kara Kitap"
+		
+		"PaintKit_glove_specialist_quilted_black_Tag"					"Kapitone Çikolata"
+		
+		"PaintKit_glove_specialist_quilted_white_Tag"					"Yastık Yumruklar"
+		
+		"PaintKit_glove_specialist_sunburst_red_Tag"					"Güneş Patlaması"
+		
+		"PaintKit_glove_specialist_dragon_blue_Tag"						"Bulut Avcısı"
+		
+		"PaintKit_glove_specialist_wave_blue_Tag"						"Dev Dalga"
+		
+// END COMMUNITY_37 GLOVES
+
+// COMMUNITY_37 WEAPONS
+		
+		"PaintKit_glock_jdpeek"											"Neon renkler ve simli metalik boyayla özel olarak boyanmıştır.\n\n<i>Benim için biraz fazla şaşaalı ama zaten hedef kitlede değilim... - Booth, Silah Taciri</i>"
+		"PaintKit_glock_jdpeek_Tag"										"Tam Ayarlı"
+					
+		"PaintKit_awp_queens_gambit"									"Kraliyet mavisi ve altın renkleri kullanılarak özel olarak boyanmıştır. Dipçiğin yanına elle bir kraliçe resmedilmiştir.\n\n<i>Her atış birer güç ve hassasiyet fermanıdır.</i>"
+		"PaintKit_awp_queens_gambit_Tag"								"Kraliçenin Fermanı"
+					
+		"PaintKit_p90_deathgaze"										"Carrara mermeri tabanın üzerine grafiti tarzında Medusa resmiyle özel olarak boyanmıştır.\n\n<i>Aldatmacaya dayanan putlara tapma.</i>"
+		"PaintKit_p90_deathgaze_Tag"									"Ölüm Bakışı"
+					
+		"PaintKit_p250_kintsugi"										"Fildişi rengi bir taban üzerinde göz alıcı turuncu bir kuş ve altın detaylar resmedilmiştir.\n\n<i>O şık tabaklar gibi, bu silah da sadece özel günlerde kullanılır.</i>"
+		"PaintKit_p250_kintsugi_Tag"									"Kintsugi"
+					
+		"PaintKit_mp9_urban_sovereign"									"Kentsel öğelerle özel olarak boyanmış ve altın grafiti ile kaplanmıştır.\n\n<i>Krallar duvarların arkasına saklanmaz, onları boyarlar.</i>"
+		"PaintKit_mp9_urban_sovereign_Tag"								"Kentin Hakimi"
+					
+		"PaintKit_mp7_amberline"										"Diyagonal olarak çizilmiş turuncu ve beyaz şeritlerle boyanmıştır.\n\n<i>Tam bir marka.</i>"
+		"PaintKit_mp7_amberline_Tag"									"Çizik Amber"
+					
+		"PaintKit_bizon_rmx"											"Gradyan mor bir desenin yanında kırmızı beyaz bir tasarımla özel olarak boyanmıştır.\n\n<i>Hafif, hızlı ve tehlikeli... Teoride.</i>"
+		"PaintKit_bizon_rmx_Tag"										"RMX"
+					
+		"PaintKit_ak47_crane_flight"									"Siyah beyaz bir taban üzerinde bir turna resmedilmiş ve altın detaylarla süslenmiştir.\n\n<i>Kanlı Ay öncesi.</i>"
+		"PaintKit_ak47_crane_flight_Tag"								"Uçan Turna"
+					
+		"PaintKit_deagle_firebreathing"									"Sedefli boya kullanılarak özel mor ve mavi alevlerle boyanmıştır.\n\n<i>Üstün kalite ve yetenek içerir.</i>"
+		"PaintKit_deagle_firebreathing_Tag"								"Alev Soluk"
+					
+		"PaintKit_ump_fragment"											"Özel olarak gümüş, siyah ve kırmızı bir tasarımla boyanmıştır.\n\n<i>Leş almaya gitti.</i>"
+		"PaintKit_ump_fragment_Tag"										"Leş Alıcı"
+					
+		"PaintKit_sawedoff_fusion"										"Özel bir siyah ve altın tasarımla boyanmıştır. Farklı aydınlatma koşullarında ek detaylara sahip.\n\n<i>Bu gözler neler neler gördü...</i>"
+		"PaintKit_sawedoff_fusion_Tag"									"Füzyon"
+					
+		"PaintKit_galil_galigator"										"Sarı ve yeşil bir taban üzerine özel olarak bir timsah ve zehirli madde sembolleri resmedilmiştir.\n\n<i>HART! HART! HART!</i>"
+		"PaintKit_galil_galigator_Tag"									"Galigator"
+					
+		"PaintKit_fiveseven_polymer_dark"								"Bu özel boya tasarımıyla silah şeffaf mor polimerden yapılmış gibi görünüyor.\n\n<i>Mor şekerle kaplı.</i>"
+		"PaintKit_fiveseven_polymer_dark_Tag"							"Koyu Polimer"
+					
+		"PaintKit_usps_silent_boy"										"Siyah ve mavi geometrik semboller ve şurikenlerle özel olarak boyanmıştır.\n\n<i>Saldırı sırasında ihtiyatlı davran.</i>"
+		"PaintKit_usps_silent_boy_Tag"									"Sessiz Atış"
+					
+		"PaintKit_m4a4_zubastick_bw"									"Bu M4A4, elle boyanmış diş desenleri ve turuncu gözlerle kaplanmış.\n\n<i>Sene 1991.</i>"
+		"PaintKit_m4a4_zubastick_bw_Tag"								"Isırmatik"
+					
+		"PaintKit_m4a1s_electrum"										"Ebru desenli yeşil bir taban üzerine özel olarak altın ve kırmızı detaylarla boyanmıştır.\n\n<i>Bunu taşımanın karşılığını tam olarak almıyorsun ama ben alacağım. - Valeria Jenner, Devrimci</i>"
+		"PaintKit_m4a1s_electrum_Tag"									"Elektrum"
+					
+		"PaintKit_m249_blocks_purple"									"Mor renkli geometrik bir grafik tasarımla özel olarak boyanmıştır.\n\n<i>Katliam zamanı.</i>"
+		"PaintKit_m249_blocks_purple_Tag"								"Gıdak Bloklar"
+		
 // END COMMUNITY_37 WEAPONS
 
 // OVERPASS_2024
@@ -48157,6 +48257,7 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"popup_lootlist_title"			"Koleksiyon Kataloğu TP"
 		"popup_lootlist_desc"			"Bu koleksiyondaki teklifleri görüntüleyerek TP kazan."
 
+		"popup_lootlist_progress:f"      "{d:seen}/{d:total} teklif görüntülendi"
 		"popup_lootlist_claim_xp"		"Bonus TP Kazan"
 		"popup_lootlist_claim_ww"		"TP alınıyor..."
 		"popup_lootlist_claim_ok"		"✔ TP alındı"
@@ -48640,39 +48741,7 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 }
 
 
-ncu ölmedi."
-		"funfact_failed_bomb_plants:f"									"{funfact-d1, plural, one{Bu rauntta {d:funfact-d1} Terörist bombayı yerleştirmeye çalıştı.} other{Bu rauntta {d:funfact-d1} Terörist bombayı yerleştirmeye çalıştı.}}"
-		"funfact_knife_without_ammo:f"									"{funfact-d1, plural, one{{s:funfact-player} cephanesi tükendikten sonra {d:funfact-d1} kişiyi bıçakla öldürdü.} other{{s:funfact-player} cephanesi tükendikten sonra {d:funfact-d1} kişiyi bıçakla öldürdü.}}"
-		"funfact_molotov_burns:f"										"{funfact-d1, plural, one{{s:funfact-player} {d:funfact-d1} oyuncuyu ateş ile yaktı.} other{{s:funfact-player} {d:funfact-d1} oyuncuyu ateş ile yaktı.}}"
-		"funfact_survival_time:f"										"{funfact-d1, plural, one{{s:funfact-player} en uzun süre hayatta kaldı: {d:funfact-d1} saniye.} other{{s:funfact-player} en uzun süre hayatta kaldı: {d:funfact-d1} saniye.}}"
-		"funfact_pulled_trigger:f"										"{funfact-d1, plural, one{{s:funfact-player} bu maçta {d:funfact-d1} kere tetik çekti.} other{{s:funfact-player} bu maçta {d:funfact-d1} kere tetik çekti.}}"
-		"funfact_ace:f"													"Kusursuz! {s:funfact-player} düşman takımının tamamını öldürdü."
-		"funfact_defuse_was_close_call_tenths:f"						"{funfact-d1, plural, one{{s:funfact-player} bombayı, patlamasına 0,{d:funfact-d1} saniye kala imha etti.} other{{s:funfact-player} bombayı, patlamasına 0,{d:funfact-d1} saniye kala imha etti.}}"
-		"funfact_defuse_was_close_call_hundredths:f"					"{funfact-d1, plural, one{{s:funfact-player} bombayı, patlamasına 0,0{d:funfact-d1} saniye kala imha etti.} other{{s:funfact-player} bombayı, patlamasına 0,0{d:funfact-d1} saniye kala imha etti.}}"
-		"funfact_defuse_was_close_call_thousandths:f"					"{funfact-d1, plural, one{{s:funfact-player} bombayı, patlamasına 0,00{d:funfact-d1} saniye kala imha etti.} other{{s:funfact-player} bombayı, patlamasına 0,00{d:funfact-d1} saniye kala imha etti.}}"
-		"mapwinrecord_graph_title:f"									"{f:0:wins, plural, one{Son Galibiyet} other{Son Galibiyetler}}"
-		"CSGO_Recipe_Count_Items_Selected:f"							"{count, plural, one{<b>{d:count}</b> Eşya Seçildi} other{<b>{d:count}</b> Eşya Seçildi}}"
-		"CSGO_Recipe_Count_Items_Remaining:f"							"{count, plural, one{<b>{d:count}</b> Eşya Kaldı} other{<b>{d:count}</b> Eşya Kaldı}}"
-		"CSGO_Recipe_TradeUp_Items_Remain:f"							"{count, plural, one{Takas için {d:count} Eşya Seçildi} other{Takas için {d:count} Eşya Seçildi}}"
-		"CSGO_Recipe_TradeUp_Items_XofY:f"								"{count, plural, one{{d:count}/{d:recipecount} Takas için Seçildi} other{{d:count}/{d:recipecount} Takas için Seçildi}}"
-		"CSGO_Recipe_TradeUp_Items_Inv:f"								"{count, plural, one{{d:count} Eşya Takas için Uygun} other{{d:count} Eşya Takas için Uygun}}"
-		"CSGO_RemoveKeychainToolCharges_Reward:f"						"{item_count, plural, one{+{d:item_count} Süs Çıkarıcı} other{+{d:item_count} Süs Çıkarıcı}}"
-		"SFUI_Store_Offer_Days_Remaining:f"								"{daysremaining, plural, one{{d:daysremaining} Gün Kaldı} other{{d:daysremaining} Gün Kaldı.}}"
-		"SFUI_Store_Offer_Days_Remaining_claim:f"						"{daysremaining, plural, one{{d:daysremaining} gün kaldı} other{{d:daysremaining} gün kaldı}}"
-		"SFUI_Store_Offer_Days_Remaining_bid:f"							"{daysremaining, plural, one{Teklif vermek için {d:daysremaining} gün kaldı} other{Teklif vermek için {d:daysremaining} gün kaldı}}"
-		"SFUI_Store_Offer_Days_Remaining_last_claim:f"					"Bu tekliften faydalanmak için son şans"
-		"SFUI_Store_Offer_Days_Remaining_last_bid:f"					"Buna teklif vermek için son şans"
-		"SFUI_Store_Timer_Week:f"										"{f:0:value, plural, one{{f:0:value} Hafta} other{{f:0:value} Hafta}}"
-		"SFUI_Store_Timer_Day:f"										"{f:0:value, plural, one{{f:0:value} Gün} other{{f:0:value} Gün}}"
-		"SFUI_Store_Timer_Hour:f"										"{f:0:value, plural, one{{f:0:value} Saat} other{{f:0:value} Saat}}"
-		"SFUI_Store_Timer_Min:f"										"{f:0:value, plural, one{{f:0:value} Dakika} other{{f:0:value} Dakika}}"
-		"SFUI_Store_Timer_Sec:f"										"{f:0:value, plural, one{{f:0:value} Saniye} other{{f:0:value} Saniye}}"
-		"CSGO_Watch_Minute:f"											"{f:0:value, plural, one{{f:0:value} Dakika} other{{f:0:value} Dakika}}"
-		"xpshop_new_items:f"											"{new-count, plural, one{Yeni Eşya!} other{Yeni Eşya!}}"
-		"xpshop_popup_clear_n_tracks:f"									"{completed_tracks_count, plural, one{Tamamlanan {d:completed_tracks_count} Bileti Temizle} other{Tamamlanan {d:completed_tracks_count} Bileti Temizle}}"
-		"xpshop_popup_clear_n_tracks_text:f"							"{completed_tracks_count, plural, one{Bu biletteki tüm cephanelik kredilerini kazandın.<br><br>Bu cephanelik biletini temizlediğinde yeni bir bilet etkinleştirebilirsin. Bu, mevcut cephanelik kredisi bakiyeni etkilemeyecektir.} other{{d:completed_tracks_count} cephanelik biletindeki tüm cephanelik kredilerini kazandın.<br><br>Bu {d:completed_tracks_count} cephanelik biletini temizlediğinde yeni bilet etkinleştirebilirsin. Bu, mevcut cephanelik kredisi bakiyeni etkilemeyecektir.}}"
-		"xpshop_redeem_bid_batchover:f"									"{hours_until_bid_batch, plural, one{Bu parti için teklifler kapandı. Kazanan teklif sahiplerine süreç tamamlandıktan sonra bildirimde bulunulacak. Bir sonraki partiye teklif vermek için lütfen yarın tekrar gel. Teklifler {d:hours_until_bid_batch} saat sonra tekrar açılacak.} other{Bu parti için teklifler kapandı. Kazanan teklif sahiplerine süreç tamamlandıktan sonra bildirimde bulunulacak. Bir sonraki partiye teklif vermek için lütfen yarın tekrar gel. Teklifler {d:hours_until_bid_batch} saat sonra tekrar açılacak.}}"
-		"xpshop_redeem_not_enough_stars:f"								"{stars_needed, plural, one{İlave {d:stars_needed} cephanelik kredisine ihtiyacın var. Etkinleştirilmiş bir cephanelik biletiyle oynayarak bunları kazanabilirsin.} other{İlave {d:stars_needed} cephanelik kredisine ihtiyacın var. Etkinleştirilmiş bir cephanelik biletiyle oynayarak bunları kazanabilirsin.}}"
+rilmiş bir cephanelik biletiyle oynayarak bunları kazanabilirsin.}}"
 		"Panorama_PlayerDetails_Commendations_Left:f"					"{num_token, plural, one{Bugün {d:num_token} oyuncuya daha övgüde bulunabilirsin} other{Bugün {d:num_token} oyuncuya daha övgüde bulunabilirsin}}"
 		"SFUI_BuyMenu_CanOnlyCarryXGrenades:f"							"{n1, plural, one{Sadece {s:s1} bomba taşıyabilirsin.} other{Sadece {s:s1} bomba taşıyabilirsin.}}"
 		"SFUI_BuyMenu_MaxItemsOfType:f"									"{n1, plural, one{Bu tür teçhizattan sadece {s:s1} tane taşıyabilirsin.} other{Bu tür teçhizattan sadece {s:s1} tane taşıyabilirsin.}}"
