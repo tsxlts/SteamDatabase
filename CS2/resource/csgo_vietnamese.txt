@@ -1964,8 +1964,8 @@
 		"Team_Cash_Award_no_income_suicide"					" +$0 phạt vì tự sát"
 		"Team_Cash_Award_Generic"							" +$%s1 thu nhập của đội"
 		"Team_Cash_Award_Custom"							" +$%s1 %s2"
-		"Team_Cash_Award_Dead_Terrorists:p"					" +$%s1 thu nhập của đội vì %s2 người chơi phe khủng bố đã bị tiêu diệt"
-		"Team_Cash_Award_Dead_CTs:p"						" +$%s1 thu nhập của đội vì %s2 người chơi phe chống khủng bố đã bị tiêu diệt"
+		"Team_Cash_Award_Dead_Terrorists:f"					" +$%s1 thu nhập đội vì {num_enemies} người chơi phe {num_enemies, plural, other{khủng bố}} đã bị tiêu diệt"
+		"Team_Cash_Award_Dead_CTs:f"						" +$%s1 thu nhập đội vì {num_enemies} người chơi phe {num_enemies, plural, other{chống khủng bố}} đã bị tiêu diệt"
 
 
 		"Notice_Bonus_Shorthanded_Eligibility"			" Đội của bạn sẽ đủ điều kiện nhận thu nhập vì ít người chơi hơn cho %s1 ván đấu."
@@ -2329,10 +2329,14 @@
 		// Econ date formatting supports the following tokens:
 		//    %year%, %monthshort%, %monthlong%, %mmday% (01-31), %mday% (1-31), %day% (legacy unlocalized "Jul 30" shouldn't be used), %hour%, %min%, %sec%
 		//
-		"Econ_DateFormat"						"%mmday% %monthshort%, %year% (%hour%:%min%:%sec%)"
-		"Econ_DateFormat_GMT"					"%mmday% %monthshort%, %year% (%hour%:%min%:%sec%) giờ GMT"
-		"Econ_DateFormat_DateOnly"				"%mmday% %monthshort%, %year%"
-		"Econ_DateFormat_GMT_DateOnly"			"%mmday% %monthshort%, %year% giờ GMT"
+		"Econ_DateFormat:f"							"{mmday} {monthshort}, {year} ({hour}:{min}:{sec})"
+		"Econ_DateFormat_GMT:f"						"{mmday} {monthshort}, {year} ({hour}:{min}:{sec}) (giờ GMT)"
+		"Econ_DateFormat_DateOnly:f"				"{mmday} {monthshort}, {year}"
+		"Econ_DateFormat_GMT_DateOnly:f"			"{mmday} {monthshort}, {year} (giờ GMT)"
+		"Econ_DateFormat"							"%mmday% %monthshort%, %year% (%hour%:%min%:%sec%)"
+		"Econ_DateFormat_GMT"						"%mmday% %monthshort%, %year% (%hour%:%min%:%sec%) giờ GMT"
+		"Econ_DateFormat_DateOnly"					"%mmday% %monthshort%, %year%"
+		"Econ_DateFormat_GMT_DateOnly"				"%mmday% %monthshort%, %year% giờ GMT"
 		"Econ_Loot_List_Sticker_ProPlayerSignatures" "Hình dán có thể kèm chữ ký của một trong các tuyển thủ sau:"
 		"Econ_Loot_List_Sticker_ProPlayerSignatures_AndSomeMore" "... và %s1 tuyển thủ chuyên nghiệp khác"
 		"Econ_Loot_List_Sticker_ProOrgsStickers"	"Hình dán có thể đại diện cho một trong các tổ chức sau:"
@@ -6224,1269 +6228,17 @@
 
 		"quest_desc"								" "
 
-		"quest_totalgoal_points_desc"				"Tổng số %actions% yêu cầu： <b>%points%</b>" // special non-breaking space characters in this string, edit carefully!
-		"quest_attrremaining_points_desc"			"%actions% còn lại： <b>%points%</b>" // special non-breaking space characters in this string, edit carefully!
-		"quest_uncommitted_points_desc"				"Số %actions% còn lại： <b>%points%</b> (nhận <b>%points uncommitted%</b> từ trận này)" // special non-breaking space characters in this string, edit carefully!
-		"quest_uncommitted_points_warn"				" * <i>%actions% sẽ được ghi nhận vào lúc hết trận</i>"
-	
-		"quest_uncommitted_points_chat_one"	" Nhiệm vụ hoàn thành: %action% đã được ghi nhận."
-		"quest_uncommitted_points_chat_singular"	" Tiến độ nhiệm vụ: +%points% %action% được ghi nhận."
-		"quest_uncommitted_points_chat_plural"		" Tiến độ nhiệm vụ: +%points% %actions% được ghi nhận."
-		"quest_uncommitted_points_chat_event"		"Nhiệm vụ Blitz: Đã ghi được %action%."		
+		"quest_commandverb_default"					"Đạt"
 
-		"quest_reward_desc"								"Nhiệm vụ này sẽ thưởng từ\n<b>%s1</b>:"
+		"quest_action_plural_act_kill_human"		"lần giết"
+		"quest_action_singular_act_kill_human"		"lần giết"
 
-		"quest_reward_xp"									"Phần thưởng nhiệm vụ: <b>%s1</b> XP"
+		"quest_action_plural_act_win_round"			"ván thắng"
+		"quest_action_singular_act_win_round"		"ván thắng"	
 
-		"quest_event_totalgoal_points_desc"					"Nhận XP tăng thêm cho mỗi <b>%action%</b> trong sự kiện này."
-		
-		"quest_bonus_desc"								"Thưởng thêm: +<b>%xpperbonusaction%</b> XP mỗi %action%—<i>%xpbonuscondition%.</i>"
-		"quest_bonus_fractional_desc"			"Thưởng thêm: +<b>%xpperbonusactions%</b> XP mỗi <b>%n_actions%</b> %actions%—<i>%xpbonuscondition%.</i>"
-		"quest_bonus_single_desc"					"Thưởng thêm: +<b>%xpperbonusaction%</b> XP—<i>%xpbonuscondition%.</i>"
-
-
-		"quest_target_chicken"											"gà"
-		"quest_target_human_or_chicken"									"người hoặc gà"
-		"quest_target_hostagerescuer"									"người giải cứu con tin"
-		"quest_target_armsraceleader"									"người đầu bảng đua vũ trang"
-
-		"quest_target_headshot"											"xuyên táo"
-		"quest_target_airborne"											"trên không"
-		"quest_target_pistolround"										"súng lục"
-
-		"quest_target_lockeddoor"										"cửa bị khóa"
-		"quest_target_explodingbarrel"									"thùng thuốc nổ"
-		"quest_target_glasspane"										"cửa kính"
-		"quest_target_enemydrone"										"drone đối phương"
-
-		"quest_target_shotgun"											"súng hoa cải"
-		"quest_target_sniperrifle"										"súng bắn tỉa"
-		"quest_target_utility"											"phụ kiện"
-		"quest_target_defaultctpistol"									"súng lục mặc định của CT"
-		"quest_target_defaultpistol"									"súng lục mặc định"
-		"quest_target_knife"											"dao"
-
-		"quest_action_plural_act_kill_human"							"lần giết"
-		"quest_action_singular_act_kill_human"							"lần giết"
-
-		"quest_action_plural_act_kill_chicken"							"lần hạ sát"
-		"quest_action_singular_act_kill_chicken"						"lần hạ sát"		
-
-		"quest_action_plural_act_kill_other"							""
-		"quest_action_singular_act_kill_other"							""
-
-		"quest_action_plural_act_protect_chicken"						"giây bảo vệ gà"
-		"quest_action_singular_act_protect_chicken"						"giây bảo vệ gà"	
-
-		"quest_action_plural_act_kill_target"							"lượt ám sát"
-		"quest_action_singular_act_kill_target"							"lượt ám sát"		
-
-		"quest_action_plural_act_damage"								"sát thương"
-		"quest_action_singular_act_damage"								"điểm sát thương gây lên"		
-
-		"quest_action_plural_act_win_match"								"lần thắng"
-		"quest_action_singular_act_win_match"							"lần thắng"		
-
-		"quest_action_plural_act_dz_game_end_placement"					"thứ hạng"
-		"quest_action_singular_act_dz_game_end_placement"				"thứ hạng"	
-
-		"quest_action_plural_act_dz_purchase_item"					"mua"
-		"quest_action_singular_act_dz_purchase_item"				"mua"	
-
-		"quest_action_plural_act_win_round"								"ván thắng"
-		"quest_action_singular_act_win_round"							"ván thắng"	
-
-		"quest_action_plural_act_round_end"								""
-		"quest_action_singular_act_round_end"							""			
-
-		"quest_action_plural_act_round_mvp"								"MVP"
-		"quest_action_singular_act_round_mvp"							"MVP"
-
-		"quest_action_plural_act_dm_bonus_points"						"điểm"
-		"quest_action_singular_act_dm_bonus_points"						"điểm"		
-
-		"quest_action_plural_act_armsrace_level"						"cấp độ"
-		"quest_action_singular_act_armsrace_level"						"cấp độ"	
-
-		"quest_action_plural_act_gg_weapon_upgrade"						"nâng cấp"
-		"quest_action_singular_act_gg_weapon_upgrade"					"nâng cấp"	
-
-		"quest_action_plural_act_gg_upgrade_to_knifegg"						"nâng cấp"
-		"quest_action_singular_act_gg_upgrade_to_knifegg"					"nâng cấp"	
-				
-		"quest_action_plural_act_flashbang_enemy"						"lần làm choáng kẻ địch"
-		"quest_action_singular_act_flashbang_enemy"						"lần làm choáng kẻ địch"		
-		
-		"quest_action_plural_act_pick_up_hostage"						"lần vác con tin"
-		"quest_action_singular_act_pick_up_hostage"						"lần đặt con tin"		
-		
-		"quest_action_plural_act_rescue_hostage"						"lần giải cứu con tin"
-		"quest_action_singular_act_rescue_hostage"						"lần giải cứu con tin"		
-		
-		"quest_action_plural_act_defuse_bomb"							"lần gỡ bom"
-		"quest_action_singular_act_defuse_bomb"							"lần gỡ bom"		
-		
-		"quest_action_plural_act_plant_bomb"							"lần đặt bom"
-		"quest_action_singular_act_plant_bomb"							"lần đặt bom"
-
-		"quest_action_singular_act_income"								"lượng tiền"
-		"quest_action_plural_act_income"								"lượng tiền"
-		
-		"quest_action_singular_act_survivalincome"						"lượng tiền"
-		"quest_action_plural_act_survivalincome"						"tiền"
-
-		"quest_action_singular_act_spend"								"lượng tiền"
-		"quest_action_plural_act_spend"									"lượng tiền"
-
-		"quest_action_singular_act_parachute_landed"					"giây lượn bằng một cái dù"
-		"quest_action_plural_act_parachute_landed"						"giây lượn bằng một cái dù"
-
-		"quest_action_singular_act_bumpmine_launch"						"nhảy lên bằng mìn"
-		"quest_action_plural_act_bumpmine_launch"						"nhảy lên bằng mìn"
-
-		"quest_action_singular_headshot_kill"							"lần giết bắn xuyên táo"
-		"quest_action_plural_headshot_kill"								"lần giết bắn xuyên táo"
-
-		"quest_action_singular_multikill"								"lần giết đa mạng trong ván"
-		"quest_action_plural_multikill"									"lần giết đa mạng trong ván"
-
-		"quest_action_singular_act_apply_graffiti"						"graffiti"
-		"quest_action_plural_act_apply_graffiti"						"graffiti"
-
-		"quest_action_singular_act_detonate_smokegrenade"				"lựu đạn khói"
-		"quest_action_plural_act_detonate_smokegrenade"					"lựu đạn khói"
-
-		"quest_action_singular_act_detonate_molotov"					"bơm xăng"
-		"quest_action_plural_act_detonate_molotov"						"bơm xăng"
-
-		"quest_action_singular_act_use_healthshot"						"ống máu"
-		"quest_action_plural_act_use_healthshot"						"ống máu"
-		
-		"quest_action_singular_act_retakes_picked_enemy_card"			"lần chọn thẻ đội địch"
-		"quest_action_plural_act_retakes_picked_enemy_card"				"lần chọn thẻ đội địch"
-
-		"quest_action_singular_act_retakes_picked_mvp_card"				"chọn thẻ MVP"
-		"quest_action_plural_act_retakes_picked_mvp_card"				"lần chọn thẻ MVP"
-//
-
-		"quest_action_plural_bomb_plants_or_defuses"					"lần đặt/gỡ bom"
-		"quest_action_singular_bomb_plants_or_defuses"					"lần đặt/gỡ bom"
-		
-		"quest_action_plural_rescue_or_kill_hostages"					"lượt giải cứu hoặc giết người giải cứu con tin"
-		"quest_action_singular_rescue_or_kill_hostages"					"lượt giải cứu hoặc giết người giải cứu con tin"		
-		
-		"quest_action_plural_damage_burn"								"sát thương lửa"
-		"quest_action_singular_damage_burn"								"điểm sát thương lửa"
-
-		"quest_commandverb_default"										"Đạt"
-		"quest_commandverb_defaultCT"									"Khi ở phe CT, đạt"
-		"quest_commandverb_defaultT"									"Khi ở phe T, đạt"
-		"quest_commandverb_deal"										"Gây ra"
-		"quest_commandverb_earn"										"Nhận"
-		"quest_commandverb_earnT"										"Khi ở phe T, kiếm"
-		"quest_commandverb_spend"										"Dùng"
-		"quest_commandverb_execute"										"Xử"
-		"quest_commandverb_destroy"										"Phá hủy"
-		"quest_commandverb_apply"										"Dùng"
-		"quest_commandverb_throw"										"Ném"
-
-		"emptystring"													""
+		"emptystring"								""
 
 ////
-
-		"quest_condition_item_own"										"của mình"
-		"quest_condition_item_borrowed"									"của người khác"									
-		"quest_condition_item_borrowed_teammate"						"của đồng đội"									
-		"quest_condition_item_borrowed_enemy"							"của địch"									
-		"quest_condition_item_borrowed_victim"							"của nạn nhân"									
-		"quest_condition_item_nondefault"								"pretty"
-
-		"quest_LoadoutSlot_Melee"										"dao"
-		"quest_LoadoutSlot_Secondary"									"súng lục"
-		"quest_LoadoutSlot_SMG"											"súng tiểu liên"
-		"quest_LoadoutSlot_Rifle"										"súng trường"
-		"quest_LoadoutSlot_Heavy"										"vũ khí hạng nặng"
-		"quest_LoadoutSlot_Grenade"										"lựu đạn"
-
-		"quest_item_default"											"vũ khí"
-
-////
-		"quest_event_ending"											"Kết thúc trong %s1 phút"
-		"quest_event_soon_hours"										"Bắt đầu trong %s1 giờ"
-		"quest_event_soon_hms"											"Bắt đầu trong %s1:%s2:%s3"
-		"quest_event_today"												"Hôm nay %s1:%s2"
-		"quest_event_future"											"Bắt đầu: %s1 %s2 %s3:%s4"
-		"quest_event_timer"												"Bắt đầu trong %s1"
-
-////
-
-
-
-
-////////////////////////// generalized quest strings //////////////////////////////
-///
-///	Use these if applicable. If not, use this pattern to create new ones.
-///
-///
-///
-
-		"quest_default_0_items_desc" "%commandverb% %actions% %target% trong các trận <b>%gamemode%: %location%</b>."		
-		"quest_default_1_items_desc" "%commandverb% %actions% %target% với bất kỳ <b>%item1%</b> (<i>%item_quality%</i>) trong các trận <b>%gamemode%: %location%</b>."
-		"quest_default_2_items_desc" "%commandverb% %actions% %target% với bất kỳ <b>%item1%</b> hoặc <b>%item2%</b> (<i>%item_quality%</i>) trong các trận<b>%gamemode%: %location%</b>."
-		"quest_default_3_items_desc" "%commandverb% %actions% %target% với bất kỳ <b>%item1%</b>, <b>%item2%</b> (<i>%item_quality%</i>), hay <b>%item3%</b> (%item_quality%) trong các trận <b>%gamemode%: %location%</b>."
-		"quest_default_4_items_desc" "%commandverb% %actions% %target% với kỳ <b>%item1%</b>, <b>%item2%</b>, <b>%item3%</b>, hoặc <b>%item4%</b> (<i>%item_quality%</i>) trong các trận <b>%gamemode%: %location%</b>."
-
-		"quest_default_hud_0_items_desc" "%commandverb% %actions% %target%"
-		"quest_default_hud_1_items_desc" "%commandverb% %actions%  %target%: <b>%item1%</b> (<i>%item_quality%</i>)"
-		"quest_default_hud_2_items_desc" "%commandverb% %actions% %target%: <b>%item1%</b>/<b>%item2%</b> (<i>%item_quality%</i>)"
-		"quest_default_hud_3_items_desc" "%commandverb% %actions% %target%: <b>%item1%</b>/<b>%item2%</b>/<b>%item3%</b> (<i>%item_quality%</i>)"
-		"quest_default_hud_4_items_desc" "%commandverb% %actions% %target%: <b>%item1%</b>/<b>%item2%</b>/<b>%item3%</b>/<b>%item4</b> (<i>%item_quality%</i>)"
-
-/////////////////////////////////////////////////////////
-
-/////////////////////////////// Quest Strings via Dialog Vars //////
-///
-/// Used starting with Op09 - the default descriptions should handle most "Perform X Action in GameMode: Location" quests.
-///
-///
-		"quest_default_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} trong <b>{s:gamemode}: {s:location}</b>."		
-		"quest_single_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} chỉ trong <i>một</i> trận <b>{s:gamemode}: {s:location}</b>."		
-		"quest_default_no_map_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} trong <b>{s:gamemode}</b>."
-		"quest_single_no_map_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} chỉ trong <i>một</i> trận <b>{s:gamemode}</b>."		
-
-		"quest_weapon_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} bằng {s:weapon} trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_weapon_single_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} bằng {s:weapon} chỉ trong <i>một</i> trận <b>{s:gamemode}: {s:location}</b>."
-		"quest_weapon_no_map_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} bằng {s:weapon} trong <b>{s:gamemode}</b>."
-		"quest_weapon_category_no_map_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} bằng bất kỳ vũ khí {s:weapon} nào trong <b>{s:gamemode}</b>."
-
-		"quest_flyingscoutsman_var_desc"	"{s:commandverb} {d:points} {s:target} {s:actions} trong <b>Flying Scoutsman: {s:location}</b>."
-		"quest_flyingscoutsman_no_map_var_desc"	"{s:commandverb} {d:points} {s:target} {s:actions} trong <b>Flying Scoutsman</b>."
-
-		"quest_retakes_var_desc"	"{s:commandverb} {d:points} {s:target} {s:actions} trong <b>Retake: {s:location}</b>."
-		"quest_retakes_no_map_var_desc"	"{s:commandverb} {d:points} {s:target} {s:actions} trong <b>Retake</b>."
-
-		"quest_armsrace_var_desc"	 		"{s:commandverb} {d:points} {s:target} {s:actions} trong <b>Arms Race</b>."
-		"quest_armsrace_weapon_var_desc"	"{s:commandverb} {d:points} {s:target} {s:actions} bằng bất kì {s:weapon} nào trong <b>Đua vũ trang</b>."
-
-		// quest exceptions:
-		"quest_931_var_desc"	 "Giết {d:points} mạng bằng {s:weapon} trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_932_var_desc"	 "Giết {d:points} mạng khi bạn đang ở trên không trong <b>Flying Scoutsman</b>."
-		"quest_933_var_desc"	 "Thắng {d:points} ván trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_934_var_desc"	 "Giết {s:kills} mạng bằng {s:weapon} trong <b>Hộ vệ: {s:location}</b>."
-		"quest_935_var_desc"	 "Giết {d:points} mạng bằng {s:weapon} trong <i>chỉ một</i> trận <b>{s:gamemode}: {s:location}</b>."
-		"quest_936_var_desc"	 "Giết {d:points} mạng bằng {s:weapon} trong <b>{s:gamemode}</b>."
-		"quest_937_var_desc"	 "Dùng {d:points} graffiti tại địa phận phe địch trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_938_var_desc"	 "Giết {d:points} người đầu bảng đua vũ trang trong <b>{s:gamemode}</b>."
-		"quest_939_var_desc"	 "Giết {s:kills} mạng bằng {s:weapon} trong <b>Hộ vệ: {s:location}</b>."
-		"quest_940_var_desc"	 "Thắng {d:points} ván trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_941_var_desc"	 "Thắng {d:points} ván súng lục trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_942_var_desc"	 "Giết {d:points} mạng bằng {s:weapon} chỉ trong <i>một</i> trận <b>{s:gamemode}: {s:location}</b>."
-		"quest_943_var_desc"	 "Giết {d:points} mạng trong <b>Flying Scoutsman</b>."
-		"quest_944_var_desc"	 "Tiêu {d:points} tiền mặt chỉ trong <i>một</i> trận <b>{s:gamemode}</b>."
-		"quest_945_var_desc"	 "Giết {s:kills} mạng trong <b>Hộ Vệ: {s:location}</b>."
-		"quest_946_var_desc"	 "Thắng {d:points} ván trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_947_var_desc"	 "Thắng {d:points} ván trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_948_var_desc"	 "Đạt {d:points} lần giải cứu con tin, hoặc giết {d:points} người giải cứu con tin trong <b>{s:gamemode}: {s:location}</b>."
-        "quest_949_var_desc"	 "Giết {d:points} mạng bằng {s:weapon} trong <b>{s:gamemode}: {s:location}</b>."
-        "quest_950_var_desc"	 "Giết {d:points} mạng bằng bất kỳ vũ khí hạng nặng nào trong <b>{s:gamemode}</b>."
-        "quest_951_var_desc"	 "Giết {s:kills} mạng bằng {s:weapon} trong <b>Hộ vệ: {s:location}</b>. Người chơi bắt đầu với <b>{s:extraequip0}</b>."
-        "quest_952_var_desc"	 "Thắng {d:points} ván trong <b>{s:gamemode}: {s:location}</b>."
-        "quest_953_var_desc"	 "Thắng {d:points} ván trong <b>{s:gamemode}: {s:location}</b>."
-        "quest_954_var_desc"	 "Giết {d:points} mạng {s:target} trong chỉ <i>một</i> trận <b>{s:gamemode}: {s:location}</b>."
-		"quest_955_var_desc"	 "Bảo vệ gà trong vòng {d:points} giây tại <b>{s:gamemode}: {s:location}</b>."
-		"quest_956_var_desc" 	 "Dùng một cái dù {d:points} giây trong <b>{s:gamemode}</b>."
-		"quest_957_var_desc" 	 "Giết {d:points} mạng bằng {s:weapon} trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_958_var_desc" 	 "Thắng {d:points} ván trong <b>{s:gamemode}: {s:location}</b> (Đụng độ)."
-		"quest_959_var_desc" 	 "Giết {d:points} mạng trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_960_var_desc"	 "Giết {s:kills} mạng bằng {s:weapon} trong <b>Hộ vệ: {s:location}</b>."
-		"quest_961_var_desc" 	 "Giết {d:points} mạng bằng súng lục trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_962_var_desc" 	 "Giết {d:points} mạng mà không tiêu bất kỳ đồng nào trong <i>một</i> trận đấu <b>{s:gamemode}</b>."
-		"quest_963_var_desc"	 "Giết {s:kills} mạng bằng {s:weapon} trong <b>Hộ vệ: {s:location}</b>."
-		"quest_964_var_desc" 	 "Thắng {d:points} ván súng lục trong <b>{s:gamemode}</b>."
-		"quest_965_var_desc" 	 "Giết {s:kills} mạng bằng {s:weapon} trong <b>Hộ vệ: {s:location}</b>."
-		"quest_966_var_desc" 	 "Kiếm ${d:points} trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_967_var_desc" 	 "Giết {d:points} mạng bằng {s:weapon} trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_968_var_desc"	 "Giết {d:points} mạng bằng súng bắn tỉa trong <b>{s:gamemode}</b>."
-		"quest_969_var_desc" 	 "Giết {s:kills} mạng bằng {s:weapon} khi không dùng ống ngắm trong <b>Hộ vệ: {s:location}</b>."
-		"quest_970_var_desc" 	 "Thắng {d:points} ván trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_971_var_desc"	 "Giết {s:kills} mạng bằng {s:weapon} trong <b>Hộ vệ: {s:location}</b>."
-		"quest_972_var_desc" 	 "Giết {d:points} mạng bắn xuyên táo trong <i>một</i> trận <b>{s:gamemode}: {s:location}</b>."
-		"quest_973_var_desc" 	 "Giết {d:points} mạng trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_974_var_desc" 	 "Giết {d:points} lần bằng bắn xuyên táo trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_975_var_desc"     "Giết {s:kills} lần bằng vũ khí phe CT trong <b>Hộ vệ: {s:location}</b>."
-		"quest_976_var_desc" 	 "Thắng {d:points} ván trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_977_var_desc"	 "Thắng {d:points} ván trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_978_var_desc" 	 "Giết {d:points} mạng bằng {s:weapon} trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_979_var_desc"	 "Đạt chuỗi giết từ bốn trở lên trong <b>{s:gamemode}: {s:location}</b>."		
-		"quest_980_var_desc" 	 "Đạt hạng từ bốn trở lên trong <b>{s:gamemode}</b>."
-		"quest_981_var_desc"     "Giết {s:kills} mạng bắn xuyên táo bằng {s:weapon} trong <b>Hộ vệ: {s:location}</b> <i>trong khi không trang bị giáp</i>."
-		"quest_982_var_desc" 	 "Giết {s:kills} mạng bắn xuyên táo bằng {s:weapon} trong <i>một</i> trận <b>{s:gamemode}: {s:location}</b>."
-		"quest_983_var_desc" 	 "Giết {s:kills} mạng bắn xuyên táo trong chế độ <b>{s:gamemode}</b>."
-		"quest_984_var_desc" 	 "Đạt được {d:points} MVP trong các trận đấu <b>{s:gamemode}</b>."
-		"quest_985_var_desc" 	 "Giết {d:points} mạng bằng súng lục mặc định trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_986_var_desc"     "Giết {s:kills} mạng bằng {s:weapon} trong <b>Hộ vệ: {s:location}</b>."
-		"quest_987_var_desc"	 "Giết {d:points} mạng bằng một súng trường chính của đối thủ trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_988_var_desc"     "Giết {d:points} mạng bằng dao trong chế độ <b>Đua vũ trang</b>."
-		"quest_989_var_desc" 	 "Gây ra {d:points} sát thương bằng phụ kiện trong chế độ <b>{s:gamemode}</b>."
-		"quest_990_var_desc" 	 "Đạt {d:points} lần giết năm trong <b>{s:gamemode}</b>."
-		"quest_991_var_desc" 	 "Giết {d:points} mạng bằng khẩu <b>Tec-9 hoặc Five-Seven</b> trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_992_var_desc"     "Giết {s:kills} mạng bằng {s:weapon} trong <b>Hộ vệ: {s:location}</b>."
-		"quest_993_var_desc"	 "Gây ra {d:points} sát thương bằng phụ kiện trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_994_var_desc" 	 "Giết {d:points} mạng trong <b>{s:gamemode}</b>."
-		"quest_995_var_desc" 	 "Thắng {d:points} hiệp trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_996_var_desc"     "Giết {d:points} mạng trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_997_var_desc" 	 "Giết {d:points} mạng với Galil AR hoặc FAMAS trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_998_var_desc"     "Giết {s:kills} mạng bằng {s:weapon} trong <b>Hộ vệ: {s:location}</b>."
-		"quest_999_var_desc" 	 "Giết {s:kills} mạng bằng {s:weapon} trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1000_var_desc" 	 "Phá {d:points} drone kẻ địch {s:actions} trong <b>{s:gamemode}</b>."
-		"quest_1001_var_desc" 	 "Đạt {d:points} MVP chỉ trong <i>một</i> trận <b>{s:gamemode}: {s:location}</b>."
-		"quest_1002_var_desc"	 "Đạt chuỗi giết từ 2 trở lên trong {d:points} ván tại <b>{s:gamemode}: {s:location}</b>."
-		"quest_1003_var_desc" 	 "Giết {d:points} mạng bằng {s:weapon} trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1004_var_desc"    "Giết {s:kills} mạng bằng {s:weapon} trong <b>Hộ vệ: {s:location}</b>."
-		"quest_1005_var_desc" 	 "Thắng {d:points} ván trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1006_var_desc"    "Giết {d:points} mạng trong <b>Đua vũ trang</b>."
-		"quest_1007_var_desc" 	 "Phá {d:points} cửa bị khóa {s:actions} bằng {s:weapon} trong <b>{s:gamemode}</b>."
-		"quest_1008_var_desc" 	 "Giết {d:points} mạng bằng AK-47 hoặc M4A4 bằng <b>{s:gamemode}: {s:location}</b>."
-		"quest_1009_var_desc" 	 "Thắng {d:points} ván trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1010_var_desc"	 "Giết {d:points} mạng bằng {s:weapon} trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1011_var_desc"    "Thắng từ 5 ván đấu trở lên trong một hiệp của một trận <b>{s:gamemode}: {s:location}</b>."
-		"quest_1012_var_desc" 	 "Đạp lên {d:points} mìn nhảy trong <b>{s:gamemode}</b>."
-		"quest_1013_var_desc" 	 "Giết {d:points} mạng bằng {s:weapon} trong <b>{s:gamemode}</b>."
-		"quest_1014_var_desc"    "Giết {s:kills} mạng bằng {s:weapon} trong <b>Hộ vệ: {s:location}</b>."
-		"quest_1015_var_desc" 	 "Giết {d:points} mạng và tiêu ít hơn 2000$ trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1016_var_desc"	 "Giữ từ 3000$ trở lên trong <b>{s:gamemode}</b>."
-		"quest_1017_var_desc" 	 "Thắng {d:points} ván trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1018_var_desc"    "Giết {s:kills} mạng bằng {s:weapon} trong <b>Hộ vệ: {s:location}</b>."
-		"quest_1019_var_desc" 	 "Giết {d:points} bằng bất kỳ khẩu {s:weapon} nào trong <b>Đua vũ trang</b>."
-		"quest_1020_var_desc" 	 "Giết {d:points} mạng bằng {s:weapon} trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1021_var_desc" 	"Làm gỏi {d:points} con gà trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1022_var_desc" 	"Thổi bay {d:points} thùng thuốc nổ trong <b>{s:gamemode}</b>."
-		"quest_1023_var_desc" 	"Đạt {d:points} ván thắng trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1024_var_desc" 	"Phá {d:points} ô kính trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1025_var_desc" 	"Đạt {d:points} ván thắng trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1027_var_desc"	 "Dùng {d:points} graffiti tại điểm xuất phát phe địch trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1028_var_desc"	 "Giết {d:points} mạng tại khu <i>đường chuối</i> (Banana) hoặc <i>căn hộ</i> (Apartments) trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1029_var_desc"	 "Ném {d:points} lựu đạn khói chiến thuật trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1030_var_desc"	 "Thu hồi một mẫu virút Vùng Nguy Hiểm từ phòng thí nghiệm Phoenix."
-		"quest_1031_var_desc"	 "Phá hủy cơ sở sản xuất của Phoenix và tiêu diệt Franz Kriegeld."
-		
-		"quest_1098_var_desc"                                  "Thắng ván đấu tại <b>{s:location}</b>."
-		"quest_1032_var_desc"                                  "Thắng ván đấu trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1033_var_desc"                                  "Giết {s:kills} mạng trong <b>Hộ vệ: {s:location}</b>."
-		"quest_1034_var_desc"                                  "Đã tìm ra hội Phoenix! Đến lúc xem bọn chúng đang giở trò gì rồi."
-		"quest_1035_var_desc"                                  "Giết địch bằng AK47, M4A4, hoặc M4A1-S trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1036_var_desc"                                  "Thắng ván đấu tại <b>{s:location}</b>."
-		"quest_1037_var_desc"                                  "Giết mạng trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1099_var_desc"                                  "Đạt MVP ở <b>{s:location}</b>."
-		"quest_1038_var_desc"                                  "Thắng ván đấu trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1039_var_desc"                                  "Giết mạng bằng tất cả súng lục {s:kills} trong <b>Hộ vệ: {s:location}</b>."
-		"quest_1040_var_desc"                                  "Giết {s:weapon} mạng trong <b>{s:location}</b>."
-		"quest_1041_var_desc"                                  "Giết địch bằng {s:weapon} trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1042_var_desc"                                  "Thắng ván đấu trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1043_var_desc"                                  "Giết {s:kills} mạng bằng {s:weapon} trong <b>Hộ vệ: {s:location}</b>."
-		"quest_1044_var_desc"                                  "Giết mạng ở cự ly ít nhất 15m trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1045_var_desc"                                  "Có mạng với bất kỳ súng ngắm nào ở <b>{s:location}</b>."
-		"quest_1046_var_desc"                                  "Giết mạng xuyên táo trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1047_var_desc"                                  "Giết {s:kills} mạng bằng {s:weapon} trong <b>Hộ vệ: {s:location}</b>."
-		"quest_1048_var_desc"                                  "Gây sát thương bằng lựu đạn trong <b>{s:location}</b>."
-		"quest_1049_var_desc"                                  "Kiếm tiền trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1050_var_desc"                                  "Thắng ván đấu trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1051_var_desc"                                  "Giết {s:kills} mạng trong <b>Hộ vệ: {s:location}</b>."
-		"quest_1052_var_desc"                                  "Chọn một lá bài của địch ở <b>{s:location}</b>."
-		"quest_1053_var_desc"                                  "Sử dụng lựu đạn khói ở vị trí nhất định trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1054_var_desc"                                  "Thắng ván đấu trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1055_var_desc"                                  "Giết {s:kills} mạng bằng vũ khí phe khủng bố trong <b>Hộ vệ: {s:location}</b>."
-		"quest_1056_var_desc"                                  "Giết mạng trong hầm hoặc cung điện ở <b>{s:gamemode}: {s:location}</b>."
-		"quest_1057_var_desc"                                  "Giết mạng trong <b>{s:location}</b>."
-		"quest_1058_var_desc"                                  "Thắng ván đấu trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1059_var_desc"                                  "Giết {s:kills} mạng bằng súng tiểu liên trong <b>Hộ vệ: {s:location}</b>."
-		"quest_1060_var_desc"                                  "Giết bằng súng tiểu liên trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1061_var_desc"                                  "Giết bằng súng tiểu liên trong <b>{s:location}</b>."
-		"quest_1062_var_desc"                                  "Thắng ván đấu trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1063_var_desc"                                  "Giết {s:kills} mạng bằng shotgun trong <b>Hộ vệ: {s:location}</b>."
-		"quest_1064_var_desc"                                  "Chọn một thẻ thưởng MVP trong <b>{s:location}</b>."
-		"quest_1065_var_desc"                                  "Dùng graffiti ở vị trí nhất định trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1100_var_desc"                                  "Thắng ván đấu tại <b>{s:location}</b>."
-		"quest_1066_var_desc"                                  "Thắng ván đấu trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1067_var_desc"                                  "Giết {s:kills} mạng xuyên táo bằng AUG trong <b>Hộ vệ: {s:location}</b>."
-		"quest_1068_var_desc"                                  "Mù mắt kẻ địch bằng lựu đạn choáng trong <b>{s:location}</b>."
-		"quest_1069_var_desc"                                  "Dùng graffiti ở vị trí nhất định trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1101_var_desc"                                  "Thắng ván đấu tại <b>{s:location}</b>."
-		"quest_1070_var_desc"                                  "Thắng ván đấu trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1071_var_desc"                                  "Giết {s:kills} mạng ở cự ly không quá 10 mét trong <b>Hộ vệ: {s:location}</b>."
-		"quest_1072_var_desc"                                  "Giết mạng ở cự ly không quá 10 mét trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1073_var_desc"                                  "Giết mạng trong <b>{s:location}</b>."		
-		"quest_1074_var_desc"                                  "Thắng ván đấu trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1075_var_desc"                                  "Giết {s:kills} mạng trong <b>Hộ vệ: {s:location}</b>."
-		"quest_1076_var_desc"                                  "Giết mạng xuyên táo trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1077_var_desc"                                  "Giết địch bằng súng hạng nặng trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1102_var_desc"                                  "Thắng ván đấu tại <b>{s:location}</b>."
-		"quest_1078_var_desc"                                  "Thắng ván đấu trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1079_var_desc"                                  "Giết {s:kills} mạng bằng SSG08 trong <b>Hộ vệ: {s:location}</b>."
-		"quest_1080_var_desc"                                  "Giết gà trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1081_var_desc"                                  "Giết mạng trong <b>{s:location}</b>."
-		"quest_1082_var_desc"                                  "Thắng ván đấu trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1083_var_desc"                                  "Giết {s:kills} mạng bằng MAG-7 trong <b>Hộ vệ: {s:location}</b>."
-		"quest_1084_var_desc"                                  "Giết mạng trong <b>{s:location}</b>."
-		"quest_1085_var_desc"                                  "Gây sát thương bằng lựu đạn trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1085_v2_var_desc"                   			   "Gây sát thương bằng lựu đạn trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1086_var_desc"                                  "Thắng ván đấu trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1087_var_desc"                                  "Giết {s:kills} mạng bằng vũ khí kẻ thù trong <b>Hộ vệ: {s:location}</b>."
-		"quest_1088_var_desc"                                  "Giết mạng từ vị trí nhất định trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1089_var_desc"                                  "Giết mạng dùng ống ngắm trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1089_v2_var_desc"                               "Giết mạng dùng ống ngắm trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1090_var_desc"                                  "Thắng ván đấu trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1091_var_desc"                                  "Giết {s:kills} mạng trong <b>Hộ vệ: {s:location}</b>."
-		"quest_1092_var_desc"                                  "Ghi điểm với vũ khí tăng điểm trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1092_v2_var_desc"                                  "Ghi điểm bằng vũ khí tăng điểm trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1093_var_desc"                                  "Chi tiền trong <b>{s:gamemode}</b>."
-		"quest_1094_var_desc"                                  "Thắng ván đấu trong <b>{s:gamemode}: {s:location}</b>."
-		"quest_1095_var_desc"                                  "Giết {s:kills} mạng trong <b>Hộ vệ: {s:location}</b>."
-		"quest_1095_v2_var_desc"                                  "Giết {s:kills} mạng bằng UMP-45 trong <b>Hộ vệ: {s:location}</b>."
-		"quest_1096_var_desc"                                  "Thắng ván đấu tại <b>{s:location}</b>."
-		"quest_1097_var_desc"                                  "Hoàn thành nhiệm vụ."
-		"quest_1097_v2_var_desc"                                  "<i>...võng mạc nhanh chóng thích ứng với các kích thích gây sáng, dẫn tới trạng thái mù tạm thời .</i>"
-		"quest_1103_var_desc"                                  "Làm mù mắt kẻ thù với lựu đạn choáng trong <b>{s:gamemode}: {s:location}</b>."
-
-// OP11 Week 1 Missions
-		"quest_1106_var_desc"                              "Sống sót một cuộc không kích trong <b>Hộ vệ: {s:location}</b>."
-		"quest_1107_var_desc"                              "Hoàn tất nhiều nhiệm vụ đa dạng trong <b>Vùng nguy hiểm: {s:location}</b>"
-		"quest_1108_var_desc"                              "Giết mạng theo thứ tự ở các vị trí khác nhau qua radar"
-
-// OP11 Week 2 Missions
-		"quest_1111_var_desc"                              "Giết mạng trong <b>Hộ vệ: {s:location}</b>."
-
-// OP11 Week 3 Missions
-		"quest_1115_var_desc"                              "Giết mạng bằng súng bắn tỉa trong <b>Hộ vệ: {s:location}</b>."
-		"quest_1117_var_desc"                              "Xịt graffiti ở nhiều địa điểm khác nhau"
-
-// OP11 Week 4 Missions
-		"quest_1119_var_desc"                              "Giết mạng bằng shotgun trong <b>Hộ vệ: {s:location}</b>."
-		"quest_1120_var_desc"                              "Giết mạng theo thứ tự ở các vị trí khác nhau qua radar"
-
-// OP11 Week 5 Missions
-		"quest_1123_var_desc"                              "Giết mạng bằng súng tiểu liên trong <b>Hộ vệ: {s:location}</b>."
-		"quest_1125_var_desc"                              "Hoàn thành một số các loại nhiệm vụ"
-
-// OP11 Week 6 Missions
-		"quest_1127_var_desc"                              "Giết mạng bằng súng trường trong <b>Hộ vệ: {s:location}</b>."
-		"quest_1128_var_desc"                              "Có một chuỗi mạng <b>trong Tử chiến: {s:location}</b>."
-
-// OP11 Week 7 Missions
-		"quest_1131_var_desc"                              "Giết mạng trong <b>Hộ vệ: {s:location}</b>."
-		"quest_1132_var_desc"                              "Giết mạng theo thứ tự ở các vị trí khác nhau qua radar"
-
-// OP11 Week 8 Missions
-		"quest_1135_var_desc"                              "Giết mạng bằng súng ngắn trong <b>Hộ vệ: {s:location}</b>."
-		"quest_1137_var_desc"                              "Hoàn thành một số nhiệm vụ với phụ kiện"
-
-// OP11 Week 9 Missions
-		"quest_1139_var_desc"                              "Giết mạng bằng súng lục trong <b>Hộ vệ: {s:location}</b>."
-		"quest_1140_var_desc"                              "Xịt graffiti vào các vị trị khác nhau"
-
-// OP11 Week 10 Missions
-		"quest_1143_var_desc"                              "Giết mạng bằng AUG trong <b>Hộ vệ: {s:location}</b>."
-		"quest_1144_var_desc"                              "Giết mạng theo thứ tự ở các vị trí khác nhau qua radar"
-
-// OP11 Week 11 Missions
-		"quest_1147_var_desc"                              "Giết mạng bằng MP9 trong <b>Hộ vệ: {s:location}</b>."
-
-// OP11 Week 12 Missions
-		"quest_1151_var_desc"                              "Giết mạng bằng súng tiểu liên trong <b>Hộ vệ: {s:location}</b>."
-		"quest_1152_var_desc"                              "Đạt chuỗi giết"
-
-// OP11 Week 13 Missions
-		"quest_1155_var_desc"                              "Giết mạng bằng vũ khí trong <b>Hộ vệ: {s:location}</b>."
-		"quest_1156_var_desc"                              "Giết mạng theo một loạt các vị trí được đánh dấu trên radar"
-		"quest_1157_var_desc"                              "Xịt graffiti ở nhiều địa điểm khác nhau"
-
-// OP11 Week 14 Missions
-		"quest_1159_var_desc"                              "Giết mạng bằng khối thuốc phá trong <b>Hộ vệ: {s:location}</b>."
-
-// OP11 Week 15 Missions
-		"quest_1163_var_desc"                              "Giết mạng bằng vũ khí hạng nặng trong <b>Hộ vệ: {s:location}</b>."
-
-// OP11 Week 16 Missions
-		"quest_1167_var_desc"                              "Giết mạng trong <b>Hộ vệ: {s:location}</b>."
-		"quest_1169_var_desc"                              "Giết mạng bằng vũ khí từ một trong bốn bộ sưu tập chiến dịch Riptide"
-
-
-// OP11 Week 1 Sub-Missions
-		"quest_1200_var_desc"                              "Thắng {d:points} trận đấu"
-		"quest_1201_var_desc"                              "Thắng {d:points} ván đấu"
-		"quest_1202_var_desc"                              "Gây {d:points} sát thương từ phụ kiện trong <i>một trận đấu</i>"
-		"quest_1203_var_desc"                              "Gây {d:points} sát thương từ phụ kiện"
-		"quest_1204_var_desc"                              "Phá hủy drone của kẻ địch"
-		"quest_1205_var_desc"                              "Bắn nổ một thùng dầu"
-		"quest_1206_var_desc"                              "Phá tanh vài tấm kính"
-		"quest_1207_var_desc"                              "Dùng mìn nhảy phóng khỏi đỉnh ở tháp nước"
-		"quest_1208_var_desc"                              "Giải cứu một con tin"
-		"quest_1209_var_desc"                              "Giết mạng tại vị trí: Xuất phát T"
-		"quest_1210_var_desc"                              "Giết mạng tại vị trí: Dốc T"
-		"quest_1211_var_desc"                              "Giết mạng tại vị trí: Khu A"
-		"quest_1212_var_desc"                              "Giết mạng tại vị trí: Xuất phát CT"
-		"quest_1213_var_desc"                              "Giết mạng tại vị trí: Cửa hàng"
-		"quest_1214_var_desc"                              "Giết mạng tại vị trí: Khu B"
-		"quest_1215_var_desc"                              "Giết mạng tại vị trí: Lối hẹp"
-		"quest_1216_var_desc"                              "Giết mạng tại vị trí: Đường giữa"
-		"quest_1217_var_desc"                              "Giết mạng tại vị trí: Cầu thang"
-		"quest_1218_var_desc"                              "Giết mạng tại vị trí: Khu A (Lần nữa)!"
-		"quest_1219_var_desc"                              "Đạt {d:points} ván giết nhiều người trong <i>một trận đấu</i>"
-		"quest_1220_var_desc"                              "Giết {d:points} mạng"
-
-// OP11 Week 2 Sub-Missions
-		"quest_1221_var_desc"                              "Thắng {d:points} trận đấu"
-		"quest_1222_var_desc"                              "Thắng {d:points} ván đấu"
-		"quest_1223_var_desc"                              "Giết {d:points} mạng bắn xuyên táo trong <i>một trận</i>"
-		"quest_1224_var_desc"                              "Giết {d:points} mạng bắn xuyên táo"
-		"quest_1225_var_desc"                              "Gây sát thương bằng lựu đạn"
-		"quest_1226_var_desc"                              "Giết {d:points} mạng"
-
-// OP11 Week 3 Sub-Missions		
-		"quest_1227_var_desc"                              "Thắng {d:points} trận đấu"
-		"quest_1228_var_desc"                              "Thắng {d:points} ván đấu"
-		"quest_1229_var_desc"                              "Gây {d:points} sát thương trong <i>một trận</i>"
-		"quest_1230_var_desc"                              "Gây {d:points} sát thương"
-		"quest_1231_var_desc"                              "Xịt graffiti tại: Xuất phát CT"
-		"quest_1232_var_desc"                              "Xịt graffiti tại: Khu A"
-		"quest_1233_var_desc"                              "Xịt graffiti tại: Lỗ nấp"
-		"quest_1234_var_desc"                              "Xịt graffiti tại: Khu B"
-		"quest_1235_var_desc"                              "Xịt graffiti tại: Cửa giữa"
-		"quest_1236_var_desc"                              "Xịt graffiti tại: Xuất phát T"
-		"quest_1237_var_desc"                              "Xịt graffiti tại: Lối hẹp"
-		"quest_1238_var_desc"                              "Xịt graffiti tại: Đường hầm - Trên"
-		"quest_1239_var_desc"                              "Xịt graffiti tại: Cửa đường dài"
-		"quest_1240_var_desc"                              "Xịt graffiti tại: Đường giữa"
-
-// OP11 Week 4 Sub-Missions		
-		"quest_1241_var_desc"                              "Thắng {d:points} trận đấu"
-		"quest_1242_var_desc"                              "Thắng {d:points} ván đấu"
-		"quest_1243_var_desc"                              "Giết mạng tại vị trí: Khu bên ngoài"
-		"quest_1244_var_desc"                              "Giết mạng tại vị trí: Khu A"
-		"quest_1245_var_desc"                              "Giết mạng tại vị trí: Sảnh"
-		"quest_1246_var_desc"                              "Giết mạng tại vị trí: Dốc"
-		"quest_1247_var_desc"                              "Giết mạng tại vị trí: Khu B"
-		"quest_1248_var_desc"                              "Giết mạng tại vị trí: SEC-RT"
-		"quest_1249_var_desc"                              "Giết mạng tại vị trí: Khu bên ngoài (lần nữa!)"
-		"quest_1250_var_desc"                              "Giết mạng tại vị trí: Xuất phát T"
-		"quest_1251_var_desc"                              "Giết mạng tại vị trí: Đỉnh silo"
-		"quest_1252_var_desc"                              "Giết mạng tại vị trí: Xuất phát CT"
-		"quest_1253_var_desc"                              "Thực hiện {d:points} lần trong <i>một trận đấu</i>: Giết bằng một trong năm viên đạn đầu tiên trong ván."
-		"quest_1254_var_desc"                              "Giết {d:points} mạng"
-
-// OP11 Week 5 Sub-Missions		
-		"quest_1255_var_desc"                              "Đạt {d:points} MVP trong <i>một trận đấu</i>"
-		"quest_1256_var_desc"                              "Thắng {d:points} ván đấu"
-		"quest_1257_var_desc"                              "Giết {d:points} mạng bắn xuyên táo trong <i>một trận đấu</i>"
-		"quest_1258_var_desc"                              "Giết {d:points} mạng bắn xuyên táo"
-		"quest_1259_var_desc"                              "Kiếm tiền trong khi máy tính bảng đang mất sóng"
-		"quest_1260_var_desc"                              "Mua nâng cấp độ phân giải cao cho máy tính bảng"
-		"quest_1261_var_desc"                              "Phá hủy một ụ súng tự động"
-		"quest_1262_var_desc"                              "Đặt bom C4 tại Tourist"
-		"quest_1263_var_desc"                              "Sát thương một kẻ địch trong khi đứng trên một cục đá"
-		
-// OP11 Week 6 Sub-Missions	
-		"quest_1264_var_desc"                              "Thắng {d:points} trận đấu"
-		"quest_1265_var_desc"                              "Thắng {d:points} ván đấu"
-		"quest_1266_var_desc"                              "Đạt chuỗi giết 3 mạng"
-		"quest_1267_var_desc"                              "Đạt chuỗi giết 5 mạng"
-		"quest_1268_var_desc"                              "Đạt chuỗi giết 7 mạng"
-		"quest_1269_var_desc"                              "Giết {d:points} mạng với súng nhặt từ người chơi khác trong <i>một trận</i>"
-		"quest_1270_var_desc"                              "Giết {d:points} mạng với súng nhặt từ người chơi khác"
-
-// OP11 Week 7 Sub-Missions			
-		"quest_1271_var_desc"                              "Thắng {d:points} trận đấu"
-		"quest_1272_var_desc"                              "Thắng {d:points} ván đấu"
-		"quest_1273_var_desc"                              "Giết mạng tại vị trí: Cửa giữa"
-		"quest_1274_var_desc"                              "Giết mạng tại vị trí: Lối hẹp"
-		"quest_1275_var_desc"                              "Giết mạng tại vị trí: Đầu đường giữa"
-		"quest_1276_var_desc"                              "Giết mạng tại vị trí: Lỗ nấp"
-		"quest_1277_var_desc"                              "Giết mạng tại vị trí: Khu A"
-		"quest_1278_var_desc"                              "Giết mạng tại vị trí: Cửa giữa (lần nữa!)"
-		"quest_1279_var_desc"                              "Giết mạng tại vị trí: Khu B"
-		"quest_1280_var_desc"                              "Giết mạng từ: Đường hầm"
-		"quest_1281_var_desc"                              "Giết mạng tại vị trí: Dốc T"
-		"quest_1282_var_desc"                              "Giết mạng tại vị trí: Xuất phát T"
-		"quest_1283_var_desc"                              "Gây {d:points} sát thương trong khi trên không trong <i>một trận đấu</i>"
-		"quest_1284_var_desc"                              "Gây {d:points} sát thương trong khi trên không"
-
-// OP11 Week 8 Sub-Missions			
-		"quest_1285_var_desc"                              "Thắng {d:points} trận đấu"
-		"quest_1286_var_desc"                              "Thắng {d:points} ván đấu"
-		"quest_1287_var_desc"                              "Đạt tới cấp sử dụng dao"
-		"quest_1288_var_desc"                              "Nâng cấp vũ khí của bạn {d:points} lần"
-		"quest_1289_var_desc"                              "Ném bom khói tại đầu đường giữa"
-		"quest_1290_var_desc"                              "Ném bom khói vào: Chuối"
-		"quest_1291_var_desc"                              "Ném bom xăng vào: Chuối"
-		"quest_1292_var_desc"                              "Làm choáng mắt 3 đối thủ trong một trận"
-		"quest_1293_var_desc"                              "Gây {d:points} sát thương bằng lựu đạn trong một trận đấu"
-
-// OP11 Week 9 Sub-Missions			
-		"quest_1294_var_desc"                              "Giết {d:points} mạng bắn xuyên táo trong <i>một trận đấu</i>"
-		"quest_1295_var_desc"                              "Giết {d:points} mạng bắn xuyên táo"
-		"quest_1296_var_desc"                              "Xịt graffiti ở đỉnh tháp nước"
-		"quest_1297_var_desc"                              "Xịt graffiti trên mỏ neo ở cầu tàu."
-		"quest_1298_var_desc"                              "Xịt graffiti trên cần cẩu"
-		"quest_1299_var_desc"                              "Xịt graffiti trên nóc nhà ở Radio"
-		"quest_1300_var_desc"                              "Xịt graffiti trong chợ ở Hotel"
-		"quest_1301_var_desc"                              "Xịt graffiti ở vị trí: Lò nướng tại Nơi cắm trại"
-		"quest_1302_var_desc"                              "Xịt graffiti ở vị trí: Tháp hải đăng"
-		"quest_1303_var_desc"                              "Xịt graffiti ở vị trí: Cầu"
-		"quest_1304_var_desc"                              "Xịt graffiti ở công trường"
-		"quest_1305_var_desc"                              "Giết {d:points} mạng bằng Deagle trong <i>một trận đấu</i>"
-		"quest_1306_var_desc"                              "Nâng cấp vũ khí của bạn {d:points} lần"
-
-// OP11 Week 10 Sub-Missions			
-		"quest_1307_var_desc"                              "Thắng {d:points} trận đấu"
-		"quest_1308_var_desc"                              "Thắng {d:points} ván đấu"
-		"quest_1309_var_desc"                              "Giết mạng tại vị trí: Sân chơi"
-		"quest_1310_var_desc"                              "Giết mạng tại vị trí: Công viên - cao"
-		"quest_1311_var_desc"                              "Giết mạng tại vị trí: Khu A"
-		"quest_1312_var_desc"                              "Giết mạng tại vị trí: Vị trí bắn tỉa"
-		"quest_1313_var_desc"                              "Giết mạng tại vị trí: Khu B"
-		"quest_1314_var_desc"                              "Giết mạng tại vị trí: Xuất phát T"
-		"quest_1315_var_desc"                              "Giết mạng tại vị trí: Đường hầm"
-		"quest_1316_var_desc"                              "Giết mạng tại vị trí: Sân chơi (lần nữa!)"
-		"quest_1317_var_desc"                              "Giết mạng tại vị trí: Đài phun nước"
-		"quest_1318_var_desc"                              "Giết mạng tại vị trí: Nhà vệ sinh"
-		"quest_1319_var_desc"                              "Giết {d:points} mạng bắn xuyên táo trong <i>một trận đấu</i>"
-		"quest_1320_var_desc"                              "Giết {d:points} mạng bắn xuyên táo"
-
-// OP11 Week 11 Sub-Missions			
-		"quest_1321_var_desc"                              "Thắng {d:points} trận đấu"
-		"quest_1322_var_desc"                              "Thắng {d:points} ván đấu"
-		"quest_1323_var_desc"                              "Dùng ống máu {d:points} lần trong <i>một trận đấu</i>"
-		"quest_1324_var_desc"                              "Dùng ống máu {d:points} lần"
-		"quest_1325_var_desc"                              "Gây {d:points} sát thương bằng lựu đạn trong <i>một trận đấu</i>"
-		"quest_1326_var_desc"                              "Gây {d:points} sát thương bằng lựu đạn"
-
-// OP11 Week 12 Sub-Missions			
-		"quest_1327_var_desc"                              "Thắng {d:points} trận đấu"
-		"quest_1328_var_desc"                              "Thắng {d:points} ván đấu"
-		"quest_1329_var_desc"                              "Đạt chuỗi giết 3 mạng"
-		"quest_1330_var_desc"                              "Đạt chuỗi giết 4 mạng"
-		"quest_1331_var_desc"                              "Đạt chuỗi giết 5 mạng"
-		"quest_1332_var_desc"                              "Giết mạng bằng {d:points} vũ khí khác nhau trong <i>một trận đấu</i>"
-		"quest_1333_var_desc"                              "Giết mạng bằng {d:points} vũ khí khác nhau trong (có thể lặp lại giữa các trận khác nhau)"
-
-// OP11 Week 13 Sub-Missions			
-		"quest_1334_var_desc"                              "Thắng {d:points} trận"
-		"quest_1335_var_desc"                              "Thắng {d:points} ván đấu"
-		"quest_1336_var_desc"                              "Giết mạng tại vị trí: Đường giữa"
-		"quest_1337_var_desc"                              "Giết mạng tại vị trí: Khu A"
-		"quest_1338_var_desc"                              "Giết mạng tại vị trí: Xuất phát CT"
-		"quest_1339_var_desc"                              "Giết mạng tại vị trí: Nhà"
-		"quest_1340_var_desc"                              "Giết mạng tại vị trí: Khu B"
-		"quest_1341_var_desc"                              "Giết mạng tại vị trí: Tàn tích"
-		"quest_1342_var_desc"                              "Giết mạng tại vị trí: Xuất phát T"
-		"quest_1343_var_desc"                              "Giết mạng tại vị trí: Nhà chính"
-		"quest_1344_var_desc"                              "Giết mạng tại vị trí: Khu A (lần nữa!)"
-		"quest_1345_var_desc"                              "Giết mạng tại vị trí: Đường giữa (lần nữa!)"
-		"quest_1346_var_desc"                              "Xịt graffiti tại vòm cửa Tây Kasbah"
-		"quest_1347_var_desc"                              "Xịt graffiti chỗ cầu thang hình xoắn ốc tại Kasbah"
-		"quest_1348_var_desc"                              "Xịt graffiti tại Dome"
-		"quest_1349_var_desc"                              "Xịt graffiti trong: Vòng tròn bãi đáp trực thăng tại Căn cứ"
-		"quest_1350_var_desc"                              "Xịt graffiti trong: Sà lan tại Đội tàu nhỏ"
-		"quest_1351_var_desc"                              "Xịt graffiti trong: Khách sạn Aurore trong Thị trấn"
-		"quest_1352_var_desc"                              "Xịt graffiti trên: Silo 3 tại Bể chứa"
-		"quest_1353_var_desc"                              "Xịt graffiti ở vị trí: Tháp hải đăng"
-		"quest_1354_var_desc"                              "Xịt graffiti trên: Cầu tàu ở Điểm câu cá"
-
-// OP11 Week 14 Sub-Missions			
-		"quest_1355_var_desc"                              "Thắng {d:points} trận đấu"
-		"quest_1356_var_desc"                              "Thắng {d:points} ván đấu"
-		"quest_1357_var_desc"                              "Giết {d:points} mạng khi dùng ống ngắm trong <i>một trận đấu</i>"
-		"quest_1358_var_desc"                              "Giết {d:points} mạng khi dùng ống ngắm từ súng"
-		"quest_1359_var_desc"                              "Giết địch trong 30 giây đầu tiên của trận đấu {d:points} lần"
-		"quest_1360_var_desc"                              "Giết {d:points} mạng"
-
-// OP11 Week 15 Sub-Missions			
-		"quest_1361_var_desc"                              "Thắng {d:points} trận đấu"
-		"quest_1362_var_desc"                              "Thắng {d:points} ván đấu"
-		"quest_1363_var_desc"                              "Giết đầu bảng Đua vũ trang {d:points} lần trong <i>một trận đấu</i>"
-		"quest_1364_var_desc"                              "Giết {d:points} mạng"
-		"quest_1365_var_desc"                              "Gây {d:points} sát thương trong <i>một trận</i>"
-		"quest_1366_var_desc"                              "Gây {d:points} sát thương"
-
-// OP11 Week 16 Sub-Missions	
-		"quest_1367_var_desc"                              "Thắng {d:points} trận đấu"
-		"quest_1368_var_desc"                              "Thắng {d:points} ván đấu"
-		"quest_1369_var_desc"                              "Giết {d:points} kẻ địch với một trong những nhân vật của chiến dịch Riptide trong <i>một trận</i>"
-		"quest_1370_var_desc"                              "Giết {d:points} mạng"
-		"quest_1371_var_desc"                              "Giết {d:points} mạng bằng một vũ khí trong bộ sưu tập chiến dịch Riptide"
-		"quest_1372_var_desc"                              "Giết {d:points} mạng"
-
-
-
-		"quest_default_hud_var_desc" "{s:commandverb} {s:actions} {s:target}"
-		"quest_weapon_hud_var_desc" "{s:commandverb} {s:actions}: {s:weapon}"
-		"quest_single_hud_var_desc"	"{s:commandverb} {s:target} {s:actions}<br> trước khi hết trận"
-		"quest_weapon_single_hud_var_desc" "{s:commandverb} {s:actions}: {s:weapon}<br> trước khi hết trận"
-	
-		//hud exceptions:
-		"quest_931_hud_var_desc"	"Giết bằng: {s:weapon}"
-		"quest_932_hud_var_desc"	"Hạ địch thủ trong lúc đang bay"
-		"quest_933_hud_var_desc"	"Đạt ván thắng"
-		"quest_934_hud_var_desc"	"Giết bằng: {s:weapon}"
-		"quest_935_hud_var_desc"	"Giết bằng {s:weapon}<br> vào cuối trận"
-		"quest_936_hud_var_desc"	"Giết bằng: {s:weapon}"
-		"quest_937_hud_var_desc"	"Sơn Graffiti"
-		"quest_937_hud_var_desc_CT"	"Sơn graffiti tại Silo hoặc Vending"
-		"quest_937_hud_var_desc_T"	"Sơn graffiti tại Heaven hoặc Garage"
-        "quest_938_hud_var_desc"	"Giết người đầu bảng đua vũ trang"
-        "quest_939_hud_var_desc"	"Giết bằng: {s:weapon}"
-        "quest_940_hud_var_desc"	"Đạt ván thắng"
-        "quest_941_hud_var_desc"	"Thắng ván súng lục"
-        "quest_942_hud_var_desc"	"Giết bằng {s:weapon}<br> trước khi hết trận"
-        "quest_943_hud_var_desc"	"Có mạng giết"
-        "quest_944_hud_var_desc"	"Tiêu tiền"
-        "quest_945_hud_var_desc"	"Có mạng giết"
-        "quest_946_hud_var_desc"	"Đạt ván thắng"
-        "quest_947_hud_var_desc"	"Đạt ván thắng"
-		"quest_948_hud_var_desc"	"Giải cứu hoặc ngăn giải cứu"
-		"quest_948_hud_var_desc_CT"	"Giải cứu con tin"
-		"quest_948_hud_var_desc_T"	"Giết người giải cứu con tin"
-        "quest_949_hud_var_desc"	"Giết bằng: {s:weapon}"
-        "quest_950_hud_var_desc"	"Giết bằng vũ khí hạng nặng"	
-        "quest_951_hud_var_desc"	"Giết bằng: {s:weapon}"	
-        "quest_952_hud_var_desc"	"Đạt ván thắng"	
-        "quest_953_hud_var_desc"	"Đạt ván thắng"	
-        "quest_954_hud_var_desc"	"Giết {s:target} mạng trước khi hết trận"
-		"quest_955_hud_var_desc" 	"Làm bạn với gà bằng [{s:bind_use}] <br> trong {d:points} giây"
-		"quest_956_hud_var_desc" 	"Số giây căng dù lướt đi"
-		"quest_957_hud_var_desc" 	"Giết bằng: {s:weapon}"
-		"quest_958_hud_var_desc" 	"Đạt ván thắng"
-		"quest_959_hud_var_desc" 	"Giết mạng"
-		"quest_960_hud_var_desc" 	"Giết bằng: {s:weapon}"
-		"quest_961_hud_var_desc"	"Giết bằng súng lục"
-		"quest_962_hud_var_desc"	"Hạ địch mà không tiêu tiền<br> vào cuối trận"
-		"quest_963_hud_var_desc"	"Giết bằng: {s:weapon}"
-		"quest_964_hud_var_desc"	"Thắng vắn súng lục"
-		"quest_965_hud_var_desc"    "Có mạng giết"
-		"quest_966_hud_var_desc" 	"Kiếm tiền"
-		"quest_967_hud_var_desc"	"Giết bằng: {s:weapon}"
-		"quest_968_hud_var_desc"    "Giết bằng súng bắn tỉa"
-		"quest_969_hud_var_desc"	"Giết mà không cần nhắm bằng {s:weapon}"
-		"quest_970_hud_var_desc"	"Đạt ván thắng"
-		"quest_971_hud_var_desc"	"Có mạng giết"
-		"quest_972_hud_var_desc"    "Giết mạng xuyên táo<br> đến cuối trận"
-		"quest_973_hud_var_desc" 	"Có mạng giết"
-		"quest_974_hud_var_desc" 	"Giết mạng xuyên táo"
-		"quest_975_hud_var_desc"    "Giết bằng vũ khí phe CT"
-		"quest_976_hud_var_desc" 	"Đạt ván thắng"
-		"quest_977_hud_var_desc"	"Đạt ván thắng"
-		"quest_978_hud_var_desc"	"Giết bằng: {s:weapon}"
-		"quest_979_hud_var_desc" 	"Đạt chuỗi giết 4 mạng"
-        "quest_980_hud_var_desc" 	"Đứng hạng 4 hoặc cao hơn"
-		"quest_981_hud_var_desc" 	"Giết mạng bắn xuyên táo: {s:weapon}"		
-		"quest_982_hud_var_desc"	"Bắn xuyên táo bằng {s:weapon} <br> vào cuối trận"	
-		"quest_983_hud_var_desc" 	"Giết mạng bắn xuyên táo"
-		"quest_984_hud_var_desc"    "Đạt được MVP"
-		"quest_985_hud_var_desc" 	"Giết bằng súng lục mặc định"
-		"quest_986_hud_var_desc" 	"Giết bằng: {s:weapon}"
-		"quest_987_hud_var_desc"	"Có mạng giết"
-		"quest_987_hud_var_desc_CT"	"Giết bằng: AK-47"
-		"quest_987_hud_var_desc_T"	"Giết bằng: M4A4 hoặc M4A1-S"
-		"quest_988_hud_var_desc" 	"Giết mạng bằng dao"
-		"quest_989_hud_var_desc"	"Gây sát thương từ phụ kiện"
-		"quest_990_hud_var_desc" 	"Đạt lần giết 5"
-		"quest_991_hud_var_desc_CT" "Giết bằng: Five-Seven"
-		"quest_991_hud_var_desc_T" 	"Giết bằng: Tec-9"
-		"quest_991_hud_var_desc" 	"Giết bằng: Tec-9 hoặc Five-Seven"
-		"quest_992_hud_var_desc" 	"Giết bằng: Khối thuốc phá"
-		"quest_993_hud_var_desc" 	"Gây sát thương từ phụ kiện"
-		"quest_994_hud_var_desc" 	"Giết mạng"
-		"quest_995_hud_var_desc" 	"Đạt ván thắng"
-		"quest_996_hud_var_desc"	"Giết mạng"
-		"quest_997_hud_var_desc_CT"	"Giết bằng: FAMAS"
-		"quest_997_hud_var_desc_T"	"Giết bằng: Galil AR"
-		"quest_997_hud_var_desc"	"Giết bằng: Galil AR hoặc FAMAS"
-		"quest_998_hud_var_desc" 	"Giết bằng: {s:weapon}"
-		"quest_999_hud_var_desc"	"Giết bằng: {s:weapon}"
-		"quest_1000_hud_var_desc" 	"Phá hủy drone của đối phương"
-		"quest_1001_hud_var_desc"   "Đạt nhiều MVP<br> khi hết trận"
-		"quest_1002_hud_var_desc" 	"Đạt số ván giết đa mạng"
-		"quest_1003_hud_var_desc"   "Giết bằng: {s:weapon}"
-		"quest_1004_hud_var_desc"   "Giết bằng: {s:weapon}"
-		"quest_1005_hud_var_desc" 	"Đạt ván thắng"
-		"quest_1006_hud_var_desc" 	"Có mạng giết"
-		"quest_1007_hud_var_desc" 	"Phá cửa bị khóa"
-		"quest_1008_hud_var_desc_CT" 	"Giết bằng: M4A4 hoặc M4A1-S"
-		"quest_1008_hud_var_desc_T"  	"Giết bằng: AK-47"
-		"quest_1008_hud_var_desc" 	"Giết bằng: AK-47 hoặc M4A4"
-		"quest_1009_hud_var_desc"	"Đạt ván thắng"
-		"quest_1010_hud_var_desc"	"Giết bằng: {s:weapon}"
-		"quest_1011_hud_var_desc" 	"Đạt 5 ván thắng trong một hiệp"
-		"quest_1012_hud_var_desc"	"Đạp lên mìn nhảy"
-		"quest_1013_hud_var_desc" 	"Giết bằng: {s:weapon}"
-		"quest_1014_hud_var_desc"   "Giết bằng: {s:weapon}"
-		"quest_1015_hud_var_desc"   "Đạt mạng giết nhưng tiêu dưới $2000"
-		"quest_1016_hud_var_desc"   "Giữ $3000 trên mình"
-		"quest_1017_hud_var_desc" 	"Đạt ván thắng"
-		"quest_1018_hud_var_desc" 	"Đạt mạng giết"
-		"quest_1019_hud_var_desc" 	"Giết bằng tiểu liên"
-		"quest_1020_hud_var_desc" 	"Giết bằng: {s:weapon}"
-		"quest_1021_hud_var_desc" 	"Làm gỏi gà"
-		"quest_1022_hud_var_desc" 	"Thổi bay thùng"
-		"quest_1023_hud_var_desc" 	"Đạt ván thắng"
-		"quest_1024_hud_var_desc" 	"Phá ô kính"
-		"quest_1025_hud_var_desc" 	"Đạt ván thắng"
-		"quest_1027_hud_var_desc"	"Sơn graffiti<br> trong khu vực xuất phát của đối thủ"
-		"quest_1028_hud_var_desc"	"Có mạng giết từ<br> Đường chuối hoặc Căn hộ"
-		"quest_1029_hud_var_desc"	"Ném lựu đạn khói"
-		"quest_1029_hud_var_desc_CT"	"Ném lựu đạn khói:<br> Apartments hoặc T Ramp"
-		"quest_1029_hud_var_desc_T"	"Ném lựu đạn khói:<br> Sniper's Nest hoặc Stairs"
-		"quest_1030_hud_var_desc" 	""
-		"quest_1031_hud_var_desc" 	""
-
-		"quest_1098_hud_var_desc"               "Đạt ván thắng"
-		"quest_1032_hud_var_desc"               "Đạt ván thắng"
-		"quest_1033_hud_var_desc"               "Giết mạng"
-		"quest_1034_hud_var_desc"               "Điều tra bọn Phoenix"
-		"quest_1035_hud_var_desc"               "Giết bằng: AK-47, M4A4, hoặc M4A1-S"
-		"quest_1036_hud_var_desc"               "Đạt ván thắng"
-		"quest_1037_hud_var_desc"               "Giết mạng"
-		"quest_1099_hud_var_desc"               "Đạt được MVP"
-		"quest_1038_hud_var_desc"               "Đạt ván thắng"
-		"quest_1039_hud_var_desc"               "Giết bằng: Nhiều súng lục khác nhau"
-		"quest_1040_hud_var_desc"               "Giết bằng: Súng lục"
-		"quest_1041_hud_var_desc"               "Giết bằng: Desert Eagle"
-		"quest_1042_hud_var_desc"               "Đạt ván thắng"
-		"quest_1043_hud_var_desc"               "Giết mạng"
-		"quest_1044_hud_var_desc"               "Giết kẻ địch ở cự ly 15 mét hoặc hơn"
-		"quest_1045_hud_var_desc"               "Giết bằng: bất kỳ khẩu súng ngắm nào"
-		"quest_1046_hud_var_desc"               "Giết mạng bắn xuyên táo"
-		"quest_1047_hud_var_desc"               "Giết bằng: M249"
-		"quest_1048_hud_var_desc"               "Gây sát thương bằng lựu đạn"
-		"quest_1049_hud_var_desc"               "Kiếm tiền"
-		"quest_1050_hud_var_desc"               "Đạt ván thắng"
-		"quest_1051_hud_var_desc"               "Giết mạng"
-		"quest_1052_hud_var_desc"               "Chọn thẻ vũ khí kẻ thù"
-		"quest_1053_hud_var_desc"               "Ném lựu đạn khói"
-		"quest_1053_hud_var_desc_T"             "Ném lựu đạn khói vào: Garage hoặc M-INI"
-		"quest_1053_hud_var_desc_CT"            "Ném lựu đạn khói vào: Phòng điều khiển hoặc H.U.T."
-		"quest_1054_hud_var_desc"               "Đạt ván thắng"
-		"quest_1055_hud_var_desc"               "Giết mạng"
-		"quest_1056_hud_var_desc"               "Giết mạng tại vị trí: Hầm hoặc Cung điện"
-		"quest_1057_hud_var_desc"               "Giết mạng"
-		"quest_1058_hud_var_desc"               "Đạt ván thắng"
-		"quest_1059_hud_var_desc"               "Giết mạng"
-		"quest_1060_hud_var_desc"               "Giết bằng: {s:weapon}"
-		"quest_1061_hud_var_desc"               "Giết bằng: {s:weapon}"
-		"quest_1062_hud_var_desc"               "Đạt ván thắng"
-		"quest_1063_hud_var_desc"               "Giết mạng"
-		"quest_1064_hud_var_desc"               "Chọn thẻ MVP"
-		"quest_1065_hud_var_desc"               "Sơn Graffiti"
-		"quest_1065_hud_var_desc_T"             "Xịt Graffiti tại Đường giữa"
-		"quest_1065_hud_var_desc_CT"            "Xịt graffiti tại Trên cạnh T hoặc Bên ngoài"
-		"quest_1100_hud_var_desc"               "Đạt ván thắng"
-		"quest_1066_hud_var_desc"               "Đạt ván thắng"
-		"quest_1067_hud_var_desc"               "Xuyên táo bằng AUG"
-		"quest_1068_hud_var_desc"               "Làm choáng một kẻ địch với Lựu đạn choáng"
-		"quest_1069_hud_var_desc"               "Sơn Graffiti"
-		"quest_1069_hud_var_desc_T"             "Xịt graffiti tại Lối hẹp hoặc Đường hầm - trên"
-		"quest_1069_hud_var_desc_CT"            "Xịt graffiti lên vị trí: Đường hầm - dưới hoặc Cầu thang ngắn"
-		"quest_1101_hud_var_desc"               "Đạt ván thắng"
-		"quest_1070_hud_var_desc"               "Đạt ván thắng"
-		"quest_1071_hud_var_desc"               "Trong 10 mét trở lại"
-		"quest_1072_hud_var_desc"               "Giết mạng ở cự ly gần hơn 10 mét"
-		"quest_1073_hud_var_desc"               "Giết mạng"
-		"quest_1074_hud_var_desc"               "Đạt ván thắng"
-		"quest_1075_hud_var_desc"               "Giết mạng"
-		"quest_1076_hud_var_desc"               "Giết bằng bắn xuyên táo"
-		"quest_1077_hud_var_desc"               "Giết bằng: {s:weapon}"
-		"quest_1102_hud_var_desc"               "Đạt ván thắng"
-		"quest_1078_hud_var_desc"               "Đạt ván thắng"
-		"quest_1079_hud_var_desc"               "Giết bằng: {s:weapon}"
-		"quest_1080_hud_var_desc"               "Giết gà"
-		"quest_1081_hud_var_desc"               "Giết mạng"
-		"quest_1082_hud_var_desc"               "Đạt ván thắng"
-		"quest_1083_hud_var_desc"               "Giết mạng"
-		"quest_1084_hud_var_desc"               "Giết mạng"
-		"quest_1085_hud_var_desc"               "Gây sát thương bằng lựu đạn"
-		"quest_1085_v2_hud_var_desc"     	    "Gây sát thương bằng lựu đạn"
-		"quest_1086_hud_var_desc"               "Đạt ván thắng"
-		"quest_1087_hud_var_desc"               "Giết mạng"
-		"quest_1088_hud_var_desc"               "Giết mạng tại vị trí nhất định"
-		"quest_1088_hud_var_desc_T"             "Giết kẻ thù đang giữ vị trí tại Khu A hoặc B"
-		"quest_1088_hud_var_desc_CT"            "Giết mạng tại Khu A hoặc B"
-		"quest_1089_hud_var_desc"               "Giết mạng dùng ống ngắm"
-		"quest_1089_v2_hud_var_desc"               "Giết mạng dùng ống ngắm"
-		"quest_1090_hud_var_desc"               "Đạt ván thắng"
-		"quest_1091_hud_var_desc"               "Giết mạng"
-		"quest_1092_hud_var_desc"               "Ghi điểm bằng vũ khí tăng điểm"
-		"quest_1092_v2_hud_var_desc"            "Ghi điểm bằng vũ khí tăng điểm"
-		"quest_1093_hud_var_desc"               "Tiêu tiền"
-		"quest_1094_hud_var_desc"               "Đạt ván thắng"
-		"quest_1095_hud_var_desc"               "Giết mạng"
-		"quest_1095_v2_hud_var_desc"            "Giết mạng bằng UMP-45"
-		"quest_1096_hud_var_desc"               "Đạt ván thắng"
-		"quest_1097_hud_var_desc"               "Hoàn thành nhiệm vụ"
-		"quest_1097_v2_hud_var_desc"            "Tiến sâu hơn vào khu nhà của phe Phoenix"
-		"quest_1103_hud_var_desc"               "Làm mù mắt kẻ thù với lựu đạn choáng"
-
-
-
-
-/////////////////////////////////////////////////////////////////
-
-
-
-// win quests
-
-		"Quest_Win_a_Mode"										"Tiêu diệt mối nguy: <b>%gamemode%</b>"
-		"Quest_Win_a_Mode_desc"								"Thắng một trận ở chế độ <b>%gamemode%</b>."
-
-		"Quest_Win_a_Mapgroup"								"Cú chốt: <b>%gamemode%, %mapgroup%</b>"
-		"Quest_Win_a_Mapgroup_desc"						"Ghi điểm cho mỗi %actions% trong chế độ <b>%gamemode%</b> trong các trận đấu thuộc <b>%mapgroup%</b>."
-
-		"Quest_Win_a_Map"											"Cú chốt: <b>%gamemode%, %map%</b>"
-		"Quest_Win_a_Map_desc"								"Ghi điểm cho mỗi %actions% ở <b>%map%</b> trong các trận đấu <b>%gamemode%</b>."
-
-		"Quest_Win_Rounds_Map"								"Tham gia: <b>%gamemode%, %mapgroup%</b>"
-		"Quest_Win_Rounds_Map_desc"						"Đạt %actions% tại chế độ <b>%gamemode%</b> trong các trận đấu thuộc <b>%mapgroup%</b>."
-		"Quest_Win_Rounds_Map_Short"						"Ván thắng"
-
-// equipment quests
-
-		"Quest_Weapon_Mode"										"Chuyên môn trang bị: <b>%gamemode%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Mode_desc"							"Ghi điểm cho mỗi %actions%%optional_target% bằng <b>%weapon%</b> trong <b>%gamemode%</b>."
-		
-		"Quest_Weapon_Mode_single_desc"				"Ghi điểm cho mỗi mạng giết bằng <b>%weapon%</b> trong các trận <b>%gamemode%</b>."
-
-// equipment + mapgroup quests
-
-		"Quest_Weapon_Mapgroup"							"Chuyên môn trang bị: <b>%mapgroup%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Mapgroup_desc"					"Ghi điểm %actions%%optional_target% với <b>%weapon%</b> trong các trận <b>%gamemode%: %mapgroup%</b>."
-		"Quest_WeaponDamage_Mapgroup_desc"					"Gây %actions%%optional_target% tới kẻ thù bằng <b>%weapon%</b> trong các trận <b>%gamemode%: %mapgroup%</b>."
-
-	"Quest_Weapon_Within_3_Mapgroup"						"Tốt nghiệp: <b>%mapgroup%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Within_3_Mapgroup_desc"				"Ghi điểm cho mỗi %actions%%optional_target% bằng <b>%weapon%</b> <i> với 3 phát bắn đầu tiên của ván,</i> trong <b>%gamemode%: %mapgroup%</b>."
-
-	"Quest_Weapon_Map"									"Chuyên môn trang bị: <b>%map%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Map_desc"								"Ghi điểm %actions%%optional_target% với <b>%weapon%</b> trong các trận <b>%gamemode%: %map%</b>."
-		"Quest_Weapon_Map_Team_desc"		"Khi chơi phe <b>%team%</b>, ghi điểm %actions%%optional_target% với <b>%weapon%</b> trong các trận <b>%gamemode%: %map%</b>."		
-		"Quest_Weapon_Mapgroup_Team_desc"		"Khi chơi phe <b>%team%</b>, ghi điểm %actions%%optional_target% với <b>%weapon%</b> trong các trận <b>%gamemode%: %mapgroup%</b>."		
-
-		"Quest_WepUpgrade_Mapgroup"					"Nâng cấp vũ khí: <b>%mapgroup%</b>"
-
-	"Quest_Unique_Weapon_Mapgroup"							"Chuyên gia vũ trang: <b>%mapgroup%</b>"
-		"Quest_Unique_Weapon_Mapgroup_desc"					"Trong <b>%gamemode%: %mapgroup%</b>, ghi điểm tiến trình nhiệm vụ cho mỗi %action% <i>thực hiện với vũ khí độc nhất</i>."
-		"Quest_Unique_Weapon_Mapgroup_Team_desc"					"Khi chơi <b>%team%</b> trong <b>%gamemode%: %mapgroup%</b>,  ghi điểm tiến trình nhiệm vụ cho mỗi %action% <i>thực hiện với vũ khí độc nhất</i>."
-
-		"Quest_Defend_Bomb_Mapgroup_desc"					"Ghi điểm cho mỗi %actions% <i>sau khi bom được đặt</i> trong <b>%gamemode%: %mapgroup%</b>."
-
-// Hostage quests
-
-	 "Quest_Rescue_Map"								"Giải cứu con tin: <b>%map%</b>"
-	 "Quest_Rescue_Map_Desc"						"Ghi điểm %actions% trong các trận <b>%gamemode%: %map%</b>."
-
-// Plant bomb quests
-
-	 "Quest_PlantBomb_Mapgroup"									"Chuyên gia chất nổ: <b>%mapgroup%</b>"
-	 "Quest_PlantBomb_Mapgroup_Desc"						"Thực thi %actions% trong trận đấu với <b>%gamemode%: %mapgroup%</b>."
-
-
-// Assassination
-
-	 "Quest_Assassination"									"Ám sát %victim_team%: <b>%target%</b>"
-	 "Quest_Assassination_desc"							"Tìm và giết <b>%target%</b> trong %victim_team% ở <b>%gamemode%: %map%</b>."
-
-	 "quest_target_turner"									"Turner"
-	 "quest_target_jackson"									"Jackson"
-	 "quest_target_chapel"									"Chapel"	 
-	 "quest_target_sergei"									"Sergei"	 
-
-	 "quest_assassination_you_are_target"					"Bạn là mục tiêu bị ám sát.\nBạn đang vào vai %s1."
-	 "quest_assassination_target_on_server"					"Một người chơi đang cố ám sát mục tiêu: %s1"
-	 "quest_assassination_target_on_server_has_quest"		"Bạn đang cố ám sát mục tiêu: %s1"
-	 "quest_assassination_target_killed"					"%s1 đã bị ám sát!"
-	 "quest_assassination_no_longer_target"					"Bạn không còn là %s1." 
-
-// Income
-	 "Quest_Income_Mapgroup"								"Thu nhập: <b>$1,000,000</b>"
-	 "Quest_Income_Mapgroup_desc"						"Kiếm tổng cộng $1,000,000 trong các trận <b>%gamemode%: %mapgroup%</b>."
-	 "Quest_Income_Mapgroup_Team_desc"			"Khi chơi <b>%team%</b>, kiếm tổng cộng $1,000,000 trong các trận đấu <b>%gamemode%: %mapgroup%</b>."
-
-	 "Quest_Spend_Mapgroup_Team_desc"			"Khi chơi <b>%team%</b>, chi trả tổng cộng $1 000 000 trong các trận đấu <b>%gamemode%: %mapgroup%</b> ."
-
-
-//	deathmatch bonus points
-
-		"Quest_DMBonusPoints_Mapgroup"				"Bậc thầy vũ trang: <b>%mapgroup%</b>"
-		"Quest_DMBonusPoints_Mapgroup_desc"		"Ghi điểm bằng vũ khí thưởng thêm trong các trận <b>Tử chiến: %mapgroup%</b>."
-
-		"Quest_DMBonusPoints_Map"							"Bậc thầy vũ trang: <b>%map%</b>"
-		"Quest_DMBonusPoints_Map_desc"				"Ghi điểm bằng vũ khí thưởng thêm trong các trận <b>Tử chiến: %map%</b>."
-
-// play quests
-
-		"Quest_Kills_Mapgroup"							"Do thám mối nguy hại: <b>%gamemode%</b>, <b>%mapgroup%</b>"
-		"Quest_Kills_Mapgroup_desc"					"Ghi điểm %actions%%optional_target% trong các trận <b>%gamemode%: %mapgroup%</b>."
-		"Quest_Kills_Mapgroup_cond_desc"		"Ghi điểm %actions%%optional_target%—<i>%condition%</i>—trong các trận <b>%gamemode%: %mapgroup%</b>."
-		"Quest_Kills_Mapgroup_Team_desc"		"Khi chơi phe <b>%team%</b>, ghi điểm %actions%%optional_target% trong các trận <b>%gamemode%: %mapgroup%</b>."		
-
-		"Quest_Kills_Mapgroup_Victim_Team_desc"		"Khi chơi phe <b>%team%</b>, ghi điểm %actions% lên phe %victim_team% trong các trận <b>%gamemode%: %mapgroup%</b>."
-
-		"Quest_Flashbang_Mapgroup_Team_desc"		"Khi chơi <b>%team%</b>, thực hiện %actions%%optional_target% trong <b>%gamemode%: %mapgroup%</b>."		
-
-
-		"Quest_Burn_Mapgroup_desc"					"Gây %actions% <i>lửa</i> tới kẻ thù trong <b>%gamemode%: %mapgroup%</b>."
-
-		"Quest_Headshots_Mapgroup"							"Xuyên táo: <b>%gamemode%</b>, <b>%mapgroup%</b>"
-		"Quest_Headshots_Mapgroup_desc"					"Ghi điểm cho mỗi %actions% xuyên táo trong <b>%gamemode%: %mapgroup%</b>."
-
-		"Quest_Kills_Map"										"Do thám mối nguy hại: <b>%gamemode%</b>, <b>%map%</b>"
-		"Quest_Kills_Map_desc"							"Ghi điểm %actions%%optional_target% trong các trận <b>%gamemode%: %map%</b>."
-
-		"Quest_Kills_Mode"								"Do thám mối nguy hại: <b>%gamemode%</b>"
-		"Quest_Kills_Mode_desc"						"Ghi điểm %actions%%optional_target% trong các trận <b>%gamemode%</b>."
-
-// chicken quests
-
-	"Quest_Chicken_Kills_Mapgroup"				"Tiếp tế: <b>%gamemode%</b>, <b>%mapgroup%</b>"
-	"Quest_Chicken_Kills_Map"							"Tiếp tế: <b>%gamemode%</b>, <b>%map%</b>"
-	"Quest_Chicken_Kills"						"Cung cấp tiếp tế"
-
-// generic string tokens
-
-	"quest_team_ct"										"Chống khủng bố"
-	"quest_team_terrorist"								"Khủng bố"
-	"quest_complete_the_match"							"Chơi hết trận đấu để hoàn thành nhiệm vụ của bạn"
-	"quest_complete_the_match_uncommitted"				"<img src='file://{images}/icons/ui/info.svg' class=''/>Hoàn thành trận đấu để lưu tiến trình nhiệm vụ"
-
-// Coop quests
-
-	"Quest_Guardian_Bomb"									"Thử thách Hộ vệ Co-op: <b>%map%</b>, <b>%weapon%</b>"
-	"Quest_Guardian_Bomb_Desc"								"Thử thách Hộ vệ Co-op: Vào vai <b>%team%</b> với một đồng đội và bảo vệ khu vực đánh bom khỏi kẻ thù tại bản đồ <b>%map%</b>.<br><br>Đạt một <b>%action%</b> qua việc hạ <b>%kills%</b> kẻ địch bằng vũ khí <b>%weapon%</b>. <b>%extradetails%</b>"
-	"Quest_Guardian_Desc_op08"								"Thử thách Hộ vệ Co-op: Vào vai <b>%team%</b> với một đồng đội và bảo vệ khu vực đánh bom khỏi kẻ thù tại bản đồ <b>%map%</b>.<br><br>Đạt một <b>%action%</b> bằng cách ghi <b>%kills%</b> %killtype% với vũ khí <b>%weapon%</b>. <b>%extradetails%</b>%presence%"
-
-	"Quest_Guardian_Desc_op09"								"{s:commandverb} {s:kills} mạng {s:killtype} bằng {s:weapon} trong <b>Hộ vệ: {s:location}</b>."
-	"Quest_CoopMission_Desc_op09"							"<b>Co-op Strike</b>: hoàn thành nhiệm vụ với một người bạn trong <b>{s:location}</b>."
-	"Quest_Guardian_Desc_op09_extra_equip_1_var_desc"		"{s:commandverb} {s:kills} mạng {s:killtype} bằng {s:weapon} trong <b>Hộ vệ: {s:location}</b>. Người chơi bắt đầu với <b>{s:extraequip0}</b>."
-	"Quest_Guardian_Desc_op09_extra_equip_2_var_desc"		"{s:commandverb} {s:kills} mạng {s:killtype} bằng {s:weapon} trong <b>Hộ vệ: {s:location}</b>. Người chơi bắt đầu với <b>{s:extraequip0}</b> và <b>{s:extraequip1}</b>."
-
-	"Quest_Guardian_Desc_op10"								"{s:commandverb} {s:kills} mạng {s:killtype} bằng {s:weapon} trong <b>Hộ vệ: {s:location}</b>."
-	"Quest_CoopMission_Desc_op10"							"<b>Công kích Co-op</b>: hoàn thành nhiệm vụ với một đồng đội tại <b>{s:location}</b>."
-	"Quest_Guardian_Desc_op10_extra_equip_1_var_desc"		"{s:commandverb} {s:kills} mạng {s:killtype} bằng {s:weapon} trong <b>Hộ vệ: {s:location}</b>. Người chơi bắt đầu với <b>{s:extraequip0}</b>."
-	"Quest_Guardian_Desc_op10_extra_equip_2_var_desc"		"{s:commandverb} {s:kills} mạng {s:killtype} bằng {s:weapon} trong <b>Hộ vệ: {s:location}</b>. Người chơi bắt đầu với <b>{s:extraequip0}</b> và <b>{s:extraequip1}</b>."
-
-	"Quest_Coop_Desc_Rescue"								"Công kích Co-op: Vào vai <b>%team%</b> với một đồng đội và <b>giải cứu con tin</b> ở bản đồ <b>%map%</b>.<br><br><b>%extradetails%</b>"
-	"Quest_Coop_Desc_Recon"									"Công kích Co-op: Vào vai <b>%team%</b> với một đồng đội và <b>thu thập thông tin</b> ở bản đồ <b>%map%</b>.<br><br><b>%extradetails%</b>"
- 	"Quest_Coop_Desc_Bomb"									"Công kích Co-op: Vào vai <b>%team%</b> với một đồng đội và <b>cho nổ</b> <b>%map%</b>.<br><br><b>%extradetails%</b>"
- 
-	"Quest_op09_coopmission"								"Thu hồi một mẫu virút Vùng Nguy Hiểm từ phòng thí nghiệm Phoenix."
-	"Quest_op10_coopmission"								"Phe Phoenix đã bị phát hiện ở một nông trại cũ kỹ. Lục soát nơi này và tìm xem chúng đang lên kế hoạch gì."
-
-	"Quest_Guardian_Hostage"								"Thử thách Hộ vệ Co-op: <b>%map%</b>, <b>%weapon%</b>"
-	"Quest_Guardian_Hostage_Desc"							"Thử thách Hộ vệ Co-op: Vào vai <b>%team%</b> với một đồng đội và ngăn lực lượng chống khủng bố đến con tin tại bản đồ <b>%map%</b>.<br><br>Đạt một <b>%action%</b> qua việc hạ <b>%kills%</b> kẻ địch bằng vũ khí <b>%weapon%</b>. <b>%extradetails%</b>"
-	 
-	"quest_guardian_kills_5"								"5"
-	"quest_guardian_kills_10"								"10"
-	"quest_guardian_kills_15"								"15"
-	"quest_guardian_kills_20"								"20"
-	"quest_guardian_kills_25"								"25"
-	"quest_guardian_kills_30"								"30"
-	"quest_guardian_kills_35"								"35"
-	"quest_guardian_kills_40"								"40"
-	"quest_guardian_kills_45"								"45"
-	"quest_guardian_kills_50"								"50"
-
-// Guardian kill types
-	"quest_killtype_normal"									"lần giết kẻ địch"
-	"quest_killtype_headshot"								"lần <b>xuyên táo</b>"
-	"quest_killtype_blind"									"lần giết khi <b>bị choáng</b>"
-	"quest_killtype_unscoped"								"lần giết <b>không cần ngắm</b>"
-
-	"quest_enemy_weapon"									"Vũ khí kẻ thù"
-	"quest_weapon_CZ75a_or_enemy_weapon"					"CZ75-Auto hoặc bất kỳ vũ khí của địch"
-	"quest_weapon_sniperrifle"								"bất kỳ khẩu súng bắn tỉa"
-	"quest_weapon_any_rifle"								"bất kỳ súng trường"
-	"quest_weapon_m4"										"bất kỳ khẩu súng M4"
-	"quest_weapon_starter_ct"								"bất kỳ khẩu súng lục mặc định cho CT"
-	"quest_weapon_ct"										"Vũ khí chống khủng bố"
-	"quest_weapon_t"										"Vũ khí khủng bố"
-	"quest_weapon_any_pistol"								"bất kỳ khẩu súng lục"
-	"quest_weapon_any_weapon"								"bất kỳ vũ khí"
-	"quest_weapon_any_shotgun"								"bất kì shotgun nào"
-	"quest_weapon_any_smg"									"súng tiểu liên bất kỳ"
-	"quest_weapon_ssg08_or_mag7"							"SSG 08 hoặc MAG-7"
-	"quest_weapon_awp_or_p90"								"AWP hoặc P90"
-	"quest_weapon_unique_pistol"							"Nhiều súng lục khác nhau"
-	"quest_presence_empty"									""
-	"quest_presence_heavy"									"<br><br><b>LỜI KHUYÊN</b>: Kẻ địch sẽ chống cự <i>rất mạnh</i> trong khu vực!"
-
-	"quest_guardian_empty"		" "
-	"quest_guardian_cantbuy"		"<i>Không thể mua trên nhiệm vụ này.</i>"
-	"quest_guardian_maxmoneylimit"		"<i>Số tiền tối đa bị giới hạn trên nhiệm vụ này.</i>"
-	"quest_guardian_killrewardsonly" 	"<i>Chỉ có thể kiếm tiền từ việc đạt điểm giết.</i>"
-	"quest_guardian_moneyreset" 	"<i>Lượng tiền sẽ được đặt lại sau khi thất bại nhiệm vụ.</i>"
-	"quest_guardian_heavyarmor" 	"<i>Có thể sử dụng giáp hạng nặng.</i>"
-	"quest_guardian_noarmor" 	"<i>Không có giáp.</i>"
-	"quest_guardian_heavyarmorresetmoney" 	"<i>Có thể sử dụng giáp hạng nặng. Tiền sẽ được đặt lại sau khi nhiệm vụ thất bại.</i>"
-	 //"quest_guardian_maxmoney_16000"		"$16000"
-	 //"quest_guardian_maxmoney_10000"		"$10000"
-	 //"quest_guardian_maxmoney_6000"			"$6000"
-	 //"quest_guardian_maxmoney_3200"			"$3200"
-	 //"quest_guardian_maxmoney_0"			"$0"
-
-	// "Get [headshot] kills: [unscoped] [AWP]"
-	// Double spaces will automatically be removed.
-	"guardian_mission_type_kills"				"Giết bằng: {s:weapon}"
-	"guardian_mission_type_headshots"			"Bắn xuyên táo với: {s:weapon}"
-	"guardian_mission_type_unscoped"			"Giết mà không cần nhắm bằng: {s:weapon}"
-	"guardian_mission_type_enemy_weapon"		"Giết bằng {s:weapon} của kẻ địch"
-	"guardian_mission_type_enemy_airborne"		"Có mạng khi ở trên không với: {s:weapon}"
-	"guardian_mission_type_flashbang"			"Giết địch bị choáng"
-	"guardian_mission_type_ct_weapons"			"Giết bằng vũ khí của phe chống khủng bố"
-
-//	bonus tokens
-
-	  "quest_bonus_headshot"							"nếu cũng xuyên táo"
-	  "quest_bonus_zoomed"								"khi đang nhắm"
-  	  "quest_bonus_not_zoomed"							"khi không dùng ống ngắm"
-	  "quest_bonus_chickens"							"khi mục tiêu là gà"
-
-	  "quest_bonus_taser"								"khi với khẩu Zeus x27"
-	  "quest_bonus_bomb_planted"						"khi bom được đặt"
-	  "quest_bonus_melee"								"khi với vũ khí cận chiến"	  
-
-
-
-	  "quest_bonus_killstreak_2"						"khi đang ở chuỗi liên sát 2 hay cao hơn"
-	  "quest_bonus_killstreak_3"						"khi đang ở chuỗi liên sát 3 hay cao hơn"
-
-	  "quest_bonus_chickenstreak_2"						"khi đang ở chuỗi liên sát gà 2 hay cao hơn"
-	  "quest_bonus_chickenstreak_3"						"khi đang ở chuỗi liên sát gà 3 hay cao hơn"
-
-	  "quest_bonus_borrowed_gun"						"khi dùng súng của người khác"
-	  "quest_bonus_borrowed_gun_enemy"					"khi dùng súng của kẻ địch"
-	  "quest_bonus_borrowed_gun_own"					"khi dùng chính súng của mục tiêu"
-		"quest_bonus_victim_rescuing"					"khi mục tiêu đang giải cứu con tin"
-		
-	  "quest_bonus_bulletcount_1"						"khi hoàn thành với phát đầu tiên bạn bắn trong ván"
-		
-	  "quest_bonus_totalrounds_2"						"nếu trong 2 ván đầu tiên"
-	  "quest_bonus_totalrounds_3"						"nếu trong 3 ván đầu tiên"
-	  "quest_bonus_totalrounds_4"						"nếu trong 4 ván đầu tiên"
-	  "quest_bonus_totalrounds_5"						"nếu trong 5 ván đầu tiên"
-
-  	  "quest_bonus_weapon_elite"						"khi với Dual Berettas"
-	  "quest_bonus_weapon_ssg08"						"khi với SSG08"
-	  "quest_bonus_weapon_revolver"						"khi với R8 Revolver"
-	  "quest_bonus_weapon_glock_hkp2000_usp_silencer"	"khi với P2000, USP-S, hoặc Glock-18"
-
-		"quest_bonus_set_dust"							"khi vũ khí là từ bộ sưu tập Dust"
-		"quest_bonus_set_aztec"							"khi vũ khí là từ bộ sưu tập Aztec"
-		"quest_bonus_set_vertigo"						"khi vũ khí là từ bộ sưu tập Vertigo"
-		"quest_bonus_set_inferno"						"khi vũ khí là từ bộ sưu tập Inferno"
-		"quest_bonus_set_militia"						"khi vũ khí là từ bộ sưu tập Militia"
-		"quest_bonus_set_nuke"							"khi vũ khí là từ bộ sưu tập Nuke"
-		"quest_bonus_set_office"						"khi vũ khí là từ bộ sưu tập Office"
-		"quest_bonus_set_assault"						"khi vũ khí là từ bộ sưu tập Assault"
-		"quest_bonus_set_dust_2"						"khi vũ khí là từ bộ sưu tập Dust 2"
-		"quest_bonus_set_train"							"khi vũ khí là từ bộ sưu tập Train"
-		"quest_bonus_set_mirage"						"khi vũ khí là từ bộ sưu tập Mirage"
-		"quest_bonus_set_italy"							"khi vũ khí là từ bộ sưu tập Italy"
-		"quest_bonus_set_lake"							"khi vũ khí là từ bộ sưu tập Lake"
-		"quest_bonus_set_safehouse"						"khi vũ khí là từ bộ sưu tập Safehouse"
-		"quest_bonus_set_esports"						"khi vũ khí là từ bộ sưu tập eSports 2013"
-		"quest_bonus_set_weapons_i"						"khi vũ khí là từ bộ sưu tập Arms Deal"
-		"quest_bonus_set_bravo_i"						"khi vũ khí là từ bộ sưu tập Bravo"
-		"quest_bonus_set_bravo_ii"						"khi vũ khí là từ bộ sưu tập Alpha"
-		"quest_bonus_set_weapons_ii"					"khi vũ khí là từ bộ sưu tập Arms Deal 2"
-		"quest_bonus_set_esports_ii"					"khi vũ khí là từ bộ sưu tập eSports 2013 Winter"
-		"quest_bonus_set_esports_2014_summer"			"khi vũ khí là từ bộ sưu tập eSports 2014 Summer"
-		"quest_bonus_set_community_1"					"khi vũ khí là từ bộ sưu tập Winter Offensive"
-		"quest_bonus_set_weapons_iii"					"khi vũ khí là từ bộ sưu tập Arms Deal 3"
-		"quest_bonus_set_community_2"					"khi vũ khí là từ bộ sưu tập Phoenix"
-		"quest_bonus_set_community_3"					"khi vũ khí là từ bộ sưu tập Huntsman"
-		"quest_bonus_set_community_4"					"khi vũ khí là từ bộ sưu tập Breakout"
-		"quest_bonus_set_community_5"					"khi vũ khí là từ bộ sưu tập Vanguard"
-		"quest_bonus_set_community_6"					"khi vũ khí là từ bộ sưu tập Chroma"
-		"quest_bonus_set_community_7"					"khi vũ khí là từ bộ sưu tập Chroma 2"
-		"quest_bonus_set_community_11"					"khi vũ khí là từ bộ sưu tập Wildfire"
-		"quest_bonus_set_bank"							"khi vũ khí là từ bộ sưu tập Bank"
-		"quest_bonus_set_baggage"						"khi vũ khí là từ bộ sưu tập Baggage"
-		"quest_bonus_set_cobblestone"					"khi vũ khí là từ bộ sưu tập Cobblestone"
-		"quest_bonus_set_overpass"						"khi vũ khí là từ bộ sưu tập Overpass"
-		"quest_bonus_set_cache"							"khi vũ khí là từ bộ sưu tập Cache"
-		"quest_bonus_set_kimono"						"khi vũ khí là từ bộ sưu tập Rising Sun"
-
-		"quest_bonus_cs_assault"						"khi chơi trên bản đồ Assault"
-		"quest_bonus_cs_italy"							"khi chơi trên bản đồ Italy"
-		"quest_bonus_cs_militia"						"khi chơi trên bản đồ Militia"
-		"quest_bonus_cs_office"							"khi chơi trên bản đồ Office"
-		"quest_bonus_de_aztec"							"khi chơi trên bản đồ Aztec"
-		"quest_bonus_de_dust"							"khi chơi trên bản đồ Dust"
-		"quest_bonus_de_dust2"							"khi chơi trên bản đồ Dust II"
-		"quest_bonus_de_mirage"							"khi chơi trên bản đồ Mirage"
-		"quest_bonus_de_overpass"						"khi chơi trên bản đồ Overpass"
-		"quest_bonus_de_cbble"							"khi chơi trên bản đồ Cobblestone"
-		"quest_bonus_de_train"							"khi chơi trên bản đồ Train"		
-		"quest_bonus_de_inferno"						"khi chơi trên bản đồ Inferno"
-		"quest_bonus_de_nuke"							"khi chơi trên bản đồ Nuke"
-		"quest_bonus_de_shorttrain"						"khi chơi trên bản đồ Shorttrain"
-		"quest_bonus_de_shortdust"						"khi chơi trên bản đồ Shortdust"
-		"quest_bonus_de_vertigo"						"khi chơi trên bản đồ Vertigo"
-		"quest_bonus_de_balkan"							"khi chơi trên bản đồ Balkan"
-		"quest_bonus_ar_baggage"						"khi chơi trên bản đồ Baggage"
-		"quest_bonus_ar_monastery"						"khi chơi trên bản đồ Monastery"
-		"quest_bonus_ar_shoots"							"khi chơi trên bản đồ Shoots"
-		"quest_bonus_de_embassy"						"khi chơi trên bản đồ Embassy"
-		"quest_bonus_de_bank"							"khi chơi trên bản đồ Bank"
-		"quest_bonus_de_lake"							"khi chơi trên bản đồ Lake"
-		"quest_bonus_de_depot"							"khi chơi trên bản đồ Depot"
-		"quest_bonus_de_safehouse"						"khi chơi trên bản đồ Safehouse"
-		"quest_bonus_de_sugarcane"						"khi chơi trên bản đồ Sugarcane"
-		"quest_bonus_de_stmarc"							"khi chơi trên bản đồ St. Marc"
-		"quest_bonus_cs_museum"							"khi chơi trên bản đồ Museum"
-		"quest_bonus_cs_thunder"						"khi chơi trên bản đồ Thunder"
-		"quest_bonus_de_favela"							"khi chơi trên bản đồ Favela"
-		"quest_bonus_cs_downtown"						"khi chơi trên bản đồ Downtown"
-		"quest_bonus_de_seaside"						"khi chơi trên bản đồ Seaside"
-		"quest_bonus_de_library"						"khi chơi trên bản đồ Library"
-		"quest_bonus_cs_motel"							"khi chơi trên bản đồ Motel"
-		"quest_bonus_de_cache"							"khi chơi trên bản đồ Cache"
-		"quest_bonus_de_ali"							"khi chơi trên bản đồ Ali"
-		"quest_bonus_de_ruins"							"khi chơi trên bản đồ Ruins"
-		"quest_bonus_de_ruby"							"khi chơi trên bản đồ Ruby"
-		"quest_bonus_de_chinatown"						"khi chơi trên bản đồ Chinatown"
-		"quest_bonus_de_gwalior"						"khi chơi trên bản đồ Gwalior"
-		"quest_bonus_cs_agency"							"khi chơi trên bản đồ Agency"
-		"quest_bonus_cs_siege"							"khi chơi trên bản đồ Siege"
-		"quest_bonus_de_castle"							"khi chơi trên bản đồ Castle"
-		"quest_bonus_de_overgrown"						"khi chơi trên bản đồ Overgrown"
-		"quest_bonus_de_blackgold"						"khi chơi trên bản đồ Black Gold"
-		"quest_bonus_cs_rush"							"khi chơi trên bản đồ Rush"
-		"quest_bonus_de_mist"							"khi chơi trên bản đồ Mist"
-		"quest_bonus_cs_insertion"						"khi chơi trên bản đồ Insertion"
-
-		"quest_bonus_cs_workout"						"khi chơi trên bản đồ Workout"
-		"quest_bonus_cs_backalley"						"khi chơi trên bản đồ Back Alley"
-		"quest_bonus_de_marquis"						"khi chơi trên bản đồ Marquis"
-		"quest_bonus_de_facade"							"khi chơi trên bản đồ Facade"
-		"quest_bonus_de_season"							"khi chơi trên bản đồ Season"
-		"quest_bonus_de_bazaar"							"khi chơi trên bản đồ Bazaar"
-		"quest_bonus_de_santorini"						"khi chơi trên bản đồ Santorini"
-
-		"quest_bonus_de_subzero"						"khi chơi trên bản đồ Subzero"
-		"quest_bonus_de_biome"							"khi chơi trên bản đồ Biome"
-
-
-
-
-// OperationalPoints
-
-		"Quest_OperationalPoints_Template"				"Phần thưởng thử thách: %s1"
-
-		"Quest_OperationalPoints_1"					"★"
-		"Quest_OperationalPoints_2"					"★★"
-		"Quest_OperationalPoints_3"					"<font color=\"#ff0000\">★★★★</font>"
-
-// Hud Message
-
-	 "Quest_ProgressMadeMessage1"								" Điểm nhiệm vụ được thêm khi kết thúc trận: +%s1."
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -9455,7 +8207,6 @@
 		"StickerKit_enfu_bombsquad"                       "Bombsquad"   
 		"StickerKit_desc_enfu_bombsquad"                  " "   
 		"StickerKit_enfu_bombsquad_foil"                  "Bombsquad (Cao cấp)"   
-		"StickerKit_desc_bombsquad_foil"                  " "   
 		"StickerKit_enfu_guru"                            "The Guru"   
 		"StickerKit_desc_enfu_guru"                       " "   
 		"StickerKit_enfu_ninja"                           "Silent Ninja"   
@@ -30716,8 +29467,6 @@
 		"StickerKit_desc_pinups_scherry"		" "
 
 		"StickerKit_pinups_tamara"				"Tamara"
-		"StickerKit_desc__pinups_tamara"		" "
-		
 		"StickerKit_pinups_ivette_holo"			"Ivette (Ảnh toàn ký)"
 		"StickerKit_desc_pinups_ivette_holo"	" "
 
@@ -31377,8 +30126,6 @@
 		"StickerKit_desc_halo_legendary"									""
 
 		"StickerKit_halo_misterchief"										"Mister Chief"
-		"StickerKit_desc_misterchief"										""
-
 		"StickerKit_halo_noble"												"Noble"
 		"StickerKit_desc_halo_noble"										""
 		
@@ -32112,11 +30859,7 @@
 		"StickerKit_desc_spring2022_inferno_diorama_foil"				""
 		
 		"StickerKit_spring2022_real_mvp_foil"							"The Real MVP (Cao cấp)"
-		"StickerKit_desc_community2021_real_mvp_foil"					""
-		
 		"StickerKit_spring2022_rock_paper_scissors_foil"				"Rock, Paper, Scissors (Cao cấp)"
-		"StickerKit_desc_community2021_rock_paper_scissors_foil"		""
-		
 		//CSGO10 Sticker Capsule
 
 		"StickerKit_csgo10_arms_race_paper"								"Arms Race"
@@ -32377,8 +31120,6 @@
 		"StickerKit_desc_community2022_old_eye_foil"					""
 		
 		"StickerKit_community2022_peek_foil"							"Peek Me (Cao cấp)"
-		"StickerKit_desc_community2021_peek_foil"						""
-		
 		//Community 2024 Sticker Capsule
 		
 		"StickerKit_community_2024_paper_kickflip_47"					"AKickflip-47"
@@ -32596,8 +31337,6 @@
 		"StickerKit_desc_elemental_craft_foil_lightning_three"				""
 		
 		"StickerKit_elemental_craft_foil_fire_three"						"Winding Scorch (Cao cấp)"
-		"StickerKit_desc_elemental_craft_foil_fire_one"						""
-		
 		"StickerKit_elemental_craft_lenticular_blood_one"					"Ruby Stream (Ảnh nổi 3 chiều)"
 		"StickerKit_desc_elemental_craft_lenticular_blood_one"				""
 		
@@ -37008,7 +35747,7 @@
 // COMMUNITY_34
 
 		"PaintKit_usp_field_snake"						"Được sơn tùy chỉnh với hình kìm gỡ bom chắp cánh trên ống ngắm sau và \"027\" gần chỗ nhả vỏ đạn.\n\n<i>Thực địa nhẹ nhàng</i>"
-		"PaintKit_usp_field_snake_Tag"					"027"
+		"PaintKit_usp_field_snake_Tag"					"27"
 
 		"PaintKit_deagle_calligraff"					"Thanh trượt của khẩu Desert Eagle này được trang trí với nét bút thư pháp màu sơn bạc.\n\n<i>Những thứ này cần thời gian</i>"
 		"PaintKit_deagle_calligraff_Tag"				"Calligraffiti"
@@ -38651,8 +37390,8 @@
 		"Workshop_created" "Ngày tạo"
 		"Workshop_size" "Kích cỡ"
 		"Workshop_View" "Xem trên Workshop"
-		"Workshop_Allow" "Cho phép"
-		"Workshop_Deny" "Từ chối"
+		"Workshop_Allow" "Tải xuống"
+		"Workshop_Deny" "Hủy"
 
 		"SFUI_Workshop_Desc_Pw"				"Các bản đồ bạn đăng ký trên workshop được liệt kê tại đây. Bạn có thể dùng tính năng chơi nhanh cộng đồng để tìm máy chủ cộng đồng tốt nhất dùng màn chơi."
 		"SFUI_Workshop_Desc_Sp_Pw"			"Các bản đồ bạn đăng ký trên workshop được liệt kê tại đây. Bạn có thể thử chúng với bot tại máy của mình."
@@ -38945,12 +37684,6 @@
 		"SFUI_Store_Limited_Bid_Tagline"			"Để đấu giá mặt hàng này"
 		"SFUI_Store_Available_Offers"               "Ưu đãi trong:"
 		"SFUI_Store_Preview"                        "Xem trước"
-
-		"SFUI_Store_Timer_Week:p"                   "%s1 tuần"
-		"SFUI_Store_Timer_Day:p"                    "%s1 ngày"
-		"SFUI_Store_Timer_Hour:p"                   "%s1 giờ"
-		"SFUI_Store_Timer_Min:p"                    "%s1 phút"
-		"SFUI_Store_Timer_Sec:p"                    "%s1 giây"
 
 		"SFUI_Store_Timer_Week:f"                 	"{f:0:value} tuần"
 		"SFUI_Store_Timer_Day:f"                    "{f:0:value} ngày"
@@ -41242,7 +39975,7 @@
 		"SFUI_PlayerDetails_Loading"				"Kiểm tra các lời khen ngợi"
 		"SFUI_PlayerDetails_Loading_Failed"			"Thất bại trong việc tải khen ngợi, vui lòng thử lại sau"
 		"SFUI_PlayerDetails_Previously_Submitted"	"Những lời khen người dùng này đã nhận"
-		"SFUI_PlayerDetails_Commendations_Left:p"		"Bạn có thể khen ngợi thêm %s1 người chơi trong hôm nay"
+		"SFUI_PlayerDetails_Commendations_Left:f"	"Bạn có thể khen ngợi thêm {num_players} {num_players, plural, other{người chơi}} trong hôm nay"
 		"SFUI_PlayerDetails_NoCommendations_Left"   "Bạn đã gửi quá nhiều lời khen, vui lòng thử lại vào ngày mai"
 		"SFUI_PlayerDetails_Updating_Previous_Commendation"   "Bạn hiện đang thay đổi một lời khen đã từng được gửi"
 		"SFUI_PlayerDetails_New_Commendation"   "Bạn hiện đang gửi một lời khen mới"
@@ -41616,7 +40349,7 @@
 		"SFUIHUD_InfoPanel_Coop_Thumb2Ready"					"Ổ USB 2 đã sẵn sàng!"
 		"SFUIHUD_InfoPanel_Coop_Thumb2Retrieved"				"Nhận được ổ USB virus!"	
 
-		"FullPlayerNameOrder_Default"						"%modifier% %clantag% %controller_name% (%current_controller_of_my_pawn%)"
+		"FullPlayerNameOrder_Default:f"						"{modifier} {clantag} {controller_name} ({current_controller_of_my_pawn})"
 
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -43010,8 +41743,8 @@
 		"SFUI_Settings_MiniScoreboardPlayerCount_Tooltip"	"Trong trận đấu đang diễn ra, thay thế ảnh đại diện người chơi thành số lượng người chơi trong bảng điểm mini."
 
 
-		"Post_Round_Damage_Report_Given:p"		" • Sát thương gây → %s3: %s2 trong %s1"
-		"Post_Round_Damage_Report_Taken:p"		" • Sát thương nhận ← %s3: %s2 trong %s1"
+		"Post_Round_Damage_Report_Given:f"		" • Sát thương gây → {player_name}: {f:0:damage} với {num_hits} phát"
+		"Post_Round_Damage_Report_Taken:f"		" • Sát thương nhận ← {player_name}: {f:0:damage} với {num_hits} phát"
 
 		"SFUI_TeamOverheadID"					"Hiện trang bị đội"
 
@@ -43492,8 +42225,8 @@
 
 		"SFUI_UserAlertNoteType_1"			"Máy chủ ở %s1 đang bị quá tải."
 		"SFUI_UserAlertNoteType_2"			"Máy chủ ở %s1 đóng cửa để bảo trì."
-		"SFUI_UserAlertNoteType_LowPlayersR:p"	"Chỉ có %players% người chơi phù hợp đang tìm kiếm trong khu vực %region%."
-		"SFUI_UserAlertNoteType_LowPlayersY:p"	"Chỉ có %players% người chơi phù hợp đang tìm kiếm trong khu vực của bạn."
+		"SFUI_UserAlertNoteType_LowPlayersR:f"	"Chỉ có {players} {players, plural, other{người chơi}} tương thích đang tìm kiếm trong {region}."
+		"SFUI_UserAlertNoteType_LowPlayersY:f"	"Chỉ có {players} {players, plural, other{người chơi}} tương thích đang tìm kiếm trong khu vực của bạn."
 
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"Không thể kết nối tới trận đấu."
 		"SFUI_QMM_ERROR_NotLoggedIn"		"Chưa đăng nhập vào dịch vụ xếp trận Counter-Strike."
@@ -49096,10 +47829,10 @@
 		"practicesettings_infammo_button"			"Đạn không giới hạn"
 		"practicesettings_infwarmup_tooltip"		"Khi <b>bật</b>, trận đấu sẽ ở mãi trong chế độ khởi động và không có bot nào gia nhập."
 		"practicesettings_infwarmup_button"			"Khởi động không giới hạn"
-		"practicesettings_annotations_tooltip"		"Khi <b>bật</b>, hướng dẫn bản đồ được chọn sẽ nạp từ menu thả xuống, và những thiết lập sau đây sẽ bắt buộc bật: khởi động không giới hạn, đạn không giới hạn, và camera khi ném lựu đạn."
-		"practicesettings_annotations_button"		"Sử dụng hướng dẫn bản đồ"
+		"practicesettings_annotations_tooltip"		"Khi <b>bật</b>, hướng dẫn bản đồ được chọn (không bắt buộc) sẽ nạp từ menu thả xuống, và những thiết lập sau đây sẽ bắt buộc bật: khởi động không giới hạn, đạn không giới hạn, và camera khi ném lựu đạn."
+		"practicesettings_annotations_button"		"Bật hướng dẫn bản đồ"
 		"practicesettings_annotations_workshop_tooltip" "Đến Workshop"
-		"practicesettings_annotations_dropdown_tooltip"	"Chỉ định hướng dẫn bản đồ nào sẽ được nạp"
+		"practicesettings_annotations_dropdown_tooltip"	"Chỉ định hướng dẫn bản đồ nào sẽ được nạp (nếu có)"
 
 		"PlayMenuReplayNewUserTrainingButton"		"Chơi lại huấn luyện"
 
@@ -49135,6 +47868,8 @@
 		"Workshop_annotation_ready"					"Sẵn sàng tải lên vật phẩm."		
 		"UI_File_Filter_SupportedAnnotationFormat"	"File văn bản (*.txt)"
 		"annotations_visit_workshop"				"Đến Workshop ⤤"
+		"annotations_exceed_round_limit"			"Không cho phép hướng dẫn bản đồ quá ván {s:rounds} của nửa hiệp"
+
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Game Mode Desc
@@ -50085,6 +48820,1410 @@
 
 		"accolade_quietest"								"Nhẫn giả"
 		"accolade_quietest_desc"						"Ít bước chân thành tiếng nhất:"
+		"accolade_quietest_value"						"{s:accolade-value-string}"
+
+		"accolade_quietest_2"							"Kẻ rình rập"
+		"accolade_quietest_desc_2"						"Số bước chân thành tiếng:"
+
+		"accolade_pistolkills"							"Kẻ lẩy cò"
+		"accolade_pistolkills_desc"						"Giết nhiều nhất bằng súng lục:"
+		"accolade_pistolkills_value"					"{s:accolade-value-string}"
+
+		"accolade_pistolkills_2"						"Vũ khí phụ"
+		"accolade_pistolkills_desc_2"					"Giết bằng súng lục:"
+
+		"accolade_firstkills"							"Người mở màn"
+		"accolade_firstkills_desc"						"Giết mạng đầu nhiều nhất:"
+		"accolade_firstkills_value"						"{s:accolade-value-string}"
+
+		"accolade_firstkills_2"							"Rút súng nhanh"
+		"accolade_firstkills_desc_2"					"Giết mạng đầu:"
+
+		"accolade_sniperkills"							"Thiện xạ"
+		"accolade_sniperkills_desc"						"Giết bằng súng bắn tỉa nhiều nhất:"
+		"accolade_sniperkills_value"					"{s:accolade-value-string}"
+
+		"accolade_sniperkills_2"						"Bắn tỉa"
+		"accolade_sniperkills_desc_2"					"Giết bằng súng bắn tỉa:"
+
+		"accolade_roundssurvived"						"Sống dai"
+		"accolade_roundssurvived_desc"					"Sống sót nhiều ván nhất:"
+		"accolade_roundssurvived_value"					"{s:accolade-value-string}"
+
+		"accolade_roundssurvived_2"						"Kẻ sinh tồn"
+		"accolade_roundssurvived_desc_2"				"Ván sống sót:"
+
+		"accolade_chickenskilled"						"Đại tá"
+		"accolade_chickenskilled_desc"					"Giết nhiều gà nhất:"
+		"accolade_chickenskilled_value"					"{s:accolade-value-string}"
+
+		"accolade_chickenskilled_2"						"Vua đầu bếp"
+		"accolade_chickenskilled_desc_2"				"Số gà sát hại:"
+
+		"accolade_killswhileblind"						"Hiệp sĩ mù"
+		"accolade_killswhileblind_desc"					"Giết nhiều nhất khi bị choáng:"
+		"accolade_killswhileblind_value"				"{s:accolade-value-string}"
+
+		"accolade_killswhileblind_2"					"Bắn điêu"
+		"accolade_killswhileblind_desc_2"				"Giết khi bị choáng:"
+
+		"accolade_bombcarrierkills"						"Bức tường"
+		"accolade_bombcarrierkills_desc"				"Giết người mang bom nhiều nhất:"
+		"accolade_bombcarrierkills_value"				"{s:accolade-value-string}"
+
+		"accolade_bombcarrierkills_2"					"Thọc gậy bánh xe"
+		"accolade_bombcarrierkills_desc_2"				"Giết người mang bom:"
+
+		"accolade_burndamage"							"Người thắp lửa"
+		"accolade_burndamage_desc"						"Sát thương lửa nhiều nhất:"
+		"accolade_burndamage_value"						"{s:accolade-value-string}"
+
+		"accolade_burndamage_2"							"Máy nướng bánh"
+		"accolade_burndamage_desc_2"					"Sát thương lửa:"
+
+		"accolade_cashspent"							"Phú ông"
+		"accolade_cashspent_desc"						"Tiêu tiền nhiều nhất:"
+		"accolade_cashspent_value"						"${s:accolade-value-string}"
+
+		"accolade_cashspent_2"							"Phú ông"
+		"accolade_cashspent_desc_2"						"Tiền đã tiêu:"
+
+		"accolade_uniqueweaponkills"					"Bậc thầy vũ khí"
+		"accolade_uniqueweaponkills_desc"				"Giết nhiều nhất bằng vũ khí khác nhau:"
+		"accolade_uniqueweaponkills_value"				"{s:accolade-value-string}"
+
+		"accolade_uniqueweaponkills_2"					"Vũ khí sư"
+		"accolade_uniqueweaponkills_desc_2"				"Giết bằng vũ khí khác nhau:"
+
+		"accolade_dinks"								"Bác sĩ nha khoa"
+		"accolade_dinks_desc"							"Gõ đầu địch nhiều nhất:"
+		"accolade_dinks_value"							"{s:accolade-value-string}"
+
+		"accolade_dinks_2"								"Thợ cạo"
+		"accolade_dinks_desc_2"							"Gõ đầu:"
+
+		"accolade_taserkills"							"Thần sấm sét"
+		"accolade_taserkills_desc"						"Giết nhiều nhất bằng Zeus:"
+		"accolade_taserkills_value"						"{s:accolade-value-string}"
+
+		"accolade_taserkills_2"							"Hộ vệ sốc điện"
+		"accolade_taserkills_desc_2"					"Giết bằng Zeus:"		
+
+		"accolade_knifekills"							"Cắt tiết đâm chọt"
+		"accolade_knifekills_desc"						"Giết mạng bằng dao nhiều nhất:"
+		"accolade_knifekills_value"						"{s:accolade-value-string}"
+
+		"accolade_knifekills_2"							"Đâm chém tới tấp"
+		"accolade_knifekills_desc_2"					"Giết mạng bằng dao:"			
+
+		"accolade_gimme_01"								"Hỗ trợ tinh thần"
+		"accolade_gimme_01_desc"						""
+
+		"accolade_gimme_02"								"Có tham dự"
+		"accolade_gimme_02_desc"						""
+
+		"accolade_gimme_03"								"Lính dự bị"
+		"accolade_gimme_03_desc"						""
+
+		"accolade_gimme_04"								"Kế hoạch dự phòng"
+		"accolade_gimme_04_desc"						""
+
+		"accolade_gimme_05"								"Binh cánh hậu"
+		"accolade_gimme_05_desc"						""
+
+		"accolade_gimme_06"								"Tư lệnh chỉ tay"
+		"accolade_gimme_06_desc"						""
+
+		"accolade_gimme_07"								"Một người lắm nghề"
+		"accolade_gimme_07_desc"						""
+
+		"accolade_gimme_08"								"Người lính vô danh"
+		"accolade_gimme_08_desc"						""
+
+		"accolade_gimme_09"								"Người tàng hình"
+		"accolade_gimme_09_desc"						""
+
+		"accolade_gimme_10"								"Mất tích trong hành động"
+		"accolade_gimme_10_desc"						""
+
+
+		"accolade_player_score"							"Điểm: {d:score-value-int}"
+
+
+		"playercardstats_adr_title"						"ADR"
+		"playercardstats_adr_value"						"{d:playercardstats-adr}"
+
+		"playercardstats_kda_title"						"KDA"
+		"playercardstats_kda_value"						"{d:playercardstats-kills}-{d:playercardstats-deaths}-{d:playercardstats-assists}"
+
+		"playercardstats_k_title"						"Giết"
+		"playercardstats_k_value"						"{d:playercardstats-kills}"
+
+		"playercardstats_d_title"						"Chết"
+		"playercardstats_d_value"						"{d:playercardstats-deaths}"
+
+		"playercardstats_a_title"						"Hỗ trợ"
+		"playercardstats_a_value"						"{d:playercardstats-assists}"
+
+		"playercardstats_score_title"					"Điểm"
+		"playercardstats_score_value"					"{d:playercardstats-score}"
+
+		"playercardstats_hsp_title"						"% Xuyên táo"
+		"playercardstats_hsp_value"						"{d:playercardstats-hsp}%"
+
+		"playercardstats_ef_title"						"KẺ ĐỊCH BỊ CHOÁNG"
+		"playercardstats_ef_value"						"{d:playercardstats-ef}"
+
+		"playercardstats_ud_title"						"SÁT THƯƠNG PHỤ KIỆN"
+		"playercardstats_ud_value"						"{d:playercardstats-ud}"
+
+		"playercardstats_gglevel_title"					"Cấp độ"
+		"playercardstats_gglevel_value"					"{d:playercardstats-gglevel}"
+
+		"playercardstats_kk_title"						"Giết bằng dao"
+		"playercardstats_kk_value"						"{d:playercardstats-knifekills}"
+
+
+		"eom-vote-for-next-map"							"Bình chọn bản đồ tiếp theo"
+		
+		"eom-survival-damage-taken"						"Sát thương nhận"
+		"eom-survival-damage-given"						"Sát thương gây"
+
+
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	STATS
+		//
+		///////////////////////////////////////////////////////////
+
+		"playerstats_mode_comp_all"			"5v5 (Tất cả)"
+		"playerstats_mode_comp_capt"		"Premier tranh đấu"
+		"playerstats_mode_comp_active"		"Tranh đấu (Gỡ bom)"
+		"playerstats_mode_comp_other"		"Tranh đấu (Giải cứu con tin)"
+		"playerstats_mode_comp_scrim"		"Đụng độ"
+		"playerstats_mode_2v2_all"			"Wingman (Tất cả)"
+		"playerstats_mode_2v2_active"		"Wingman (Thường trực)"
+		"playerstats_mode_2v2_other"		"Wingman (Dự bị)"
+
+		"playerstats_weapons"					"Phong độ vũ khí"
+		"playerstats_heatmap"					"Bản đồ nhiệt"
+		"playerstats_matchlister"				"Số trận"
+		"playerstats_stats"						"Thống kê"
+
+		"playerstats_matchlister_separator"		"{s:separator_title}"
+
+		"playerstats_weapon_tooltip_counts"		"Giết: {d:kills}"
+		"playerstats_weapon_tooltip_kd"			"Giết/Chết: {s:score}"
+
+		"playerstats_map_tooltip_win_loss_tie"	"Thắng/Bại/Hòa"
+		"playerstats_map_tooltip_rndwin_rndloss"	"Ván thắng-thua"
+		"playerstats_map_tooltip_round_winrate"	"Tỷ lệ ván thắng"
+		"playerstats_map_tooltip_match_winrate"	"Tỷ lệ thắng trận"
+
+		"playerstats_complete_nodata"			""
+		"playerstats_complete_somedata"			""
+
+		"playerstats_forceretry"				"Mất kết nối tới máy chủ số liệu.\nNhấp OK để thử kết nối lại."
+		"playerstats_no_data"					"Bạn không có dữ liệu nào trong khoảng thời gian và chế độ được chọn. Thay đổi lựa chọn hoặc chơi vài trận."
+		"playerstats_link"						"Quản lý đăng ký"
+		"playerstats_link_reactivate"			"Kích hoạt lại dịch vụ"
+		"playerstats_link_get"					"Đăng ký"
+
+		"playerstats_subscription_expire_warning"		"<b>Thu thập thông số trận đấu</b> - gói đăng ký <b>sẽ kết thúc trong hôm nay</b>"
+		"playerstats_subscription_renew_automatically"	"<b>Thu thập thông số trận đấu</b> - gói đăng ký sẽ được tự động làm mới sau {d:days} ngày"
+		"playerstats_subscription_renew_unknown"		"<b>Thu thập thông số trận đấu</b> - bạn còn {d:days} ngày trong gói đăng ký"
+		"playerstats_subscription_renew_manually"		"<b>Thu thập thông số trận đấu</b> - còn {d:days} ngày, gói đăng ký của bạn <b>sẽ không tự động làm mới</b>"
+		"playerstats_subscription_expired"				"<b>Đã hết gói dịch vụ</b> - kích hoạt lại gói để thu thập thông số cho trận đấu mới"
+		"playerstats_subscription_not_enrolled"			"<b>Gói dịch vụ đang tắt</b> - đăng ký để thu thập thông số cho các trận đấu mới"
+		"playerstats_subscription_buy_button"			"KÍCH HOẠT GÓI DỊCH VỤ HÀNG THÁNG\n{s:price} / THÁNG"
+
+		"playerstats_past_14"					"14 ngày qua"
+		"playerstats_past_30"					"30 ngày qua"
+		"playerstats_past_90"					"90 ngày qua"
+		"playerstats_alltime"					"Toàn thời gian"
+
+		"stat_best_map"							"Màn chơi giỏi nhất"
+		"stat_best_map_desc"					"Màn chơi bạn có tỷ lệ ván thắng cao nhất so với ván thua"
+
+		"stat_best_weapon"						"Vũ khí tốt nhất"
+
+		"stat_best_mate"						"Đồng đội tốt nhất"
+		"stat_best_mate_desc"					"Đồng đội giúp bạn đạt tỷ lệ ván thắng cao nhất so với ván thua"
+
+		"matchstat_abandoned"					"*Bạn rời trận đấu này trước khi nó kết thúc"
+
+		"playerstats_suffix_per_round"			"/ván"
+		"playerstats_suffix_per_cent"			"%"
+
+		"playerstats_per_round"			"{s:value}/ván"
+		"playerstats_per_cent"			"{s:value}%"
+		"playerstats_no_units"			"{s:value}"	
+
+		"playerstats_percentile"		"Hệ số {s:tt_value} của bạn tốt hơn {s:tt_rank}% người có vé chiến dịch"
+		"playerstats_percentile_subscribers"	"Hệ số {s:tt_value} của bạn tốt hơn {s:tt_rank}% người chơi đăng ký dịch vụ"
+
+
+		"playerstats_mapwinrate"		"Tỷ lệ thắng màn chơi"
+		"playerstats_mapwinrate_rounds"	"Ván"
+		"playerstats_mapwinrate_matches" "Trận đấu"
+
+		"stat_total_score"				"Điểm"
+		"stat_average_score"			"Điểm/ván"
+
+		"stat_total_kills"				"Giết"
+		"stat_average_kills"			"Giết/ván"
+
+		"stat_total_deaths"				"Chết"
+	//	"stat_average_deaths"			"stat_average_deaths"		
+
+		"stat_total_health_removed"		"Sát thương"	
+		"stat_average_health_removed"	"Bình quân sát thương mỗi ván"
+
+		"stat_average_kd"				"Giết/Chết"
+		"stat_average_kd_short"			"K/D"
+
+		"stat_average_hsp"				"stat_average_hsp"
+
+		"stat_total_2k"					"2K"
+		"stat_total_3k"					"3K"
+		"stat_total_4k"					"4K"
+
+		"stat_grenades"					"Lựu đạn nổ"
+		"stat_total_grenade"			"Ném"
+		"stat_average_grenade"			"Thành công"
+		"stat_grenades_desc"			"Tỷ lệ lựu đạn nổ sát thương ít nhất 1 kẻ địch"			
+
+		"stat_flash"					"Lựu đạn choáng"
+		"stat_total_flash"				"Ném"
+		"stat_average_flash"			"Thành công"
+		"stat_flash_desc"				"Tỷ lệ lựu đạn choáng làm mù ít nhất 1 kẻ địch"
+
+		"stat_entry"					"Giết mở màn"
+		"stat_average_entrykd"			"EK/D"
+		"stat_total_entry_attempts"		"Tổng cộng"
+		"stat_entry_desc"				"Tỷ lệ giết mạng đầu so với chết mạng đầu"
+
+		"stat_total_wins"				"Thắng"
+		"stat_total_losses"				"Bại"
+		"stat_total_ties"				"Hòa"
+
+		"stat_total_rounds_played"		"Ván"
+
+		"stat_1vx"						"1vX"
+
+		"stat_1v1"						"1v1"
+
+		"stat_average_1v1"				"Thành công"				
+		"stat_total_1v1_attempts"		"Cơ hội"		
+
+		"stat_1v2"						"1v2"
+
+		"stat_average_1v2"				"Thành công"			
+		"stat_total_1v2_attempts"		"Cơ hội"		
+
+		"num_matches"					"Số trận đã chơi"
+
+		"playerstat_name_0"				"Điểm"
+		"playerstat_name_0_long"		"Điểm mỗi ván"
+		"playerstat_name_0_desc"		"Điểm mỗi ván: {s:value}\nTổng điểm : {d:total}"
+
+
+		"playerstat_name_1"				"Giết"
+		"playerstat_name_1_long"		"Giết mỗi ván"
+		"playerstat_name_1_desc"		"Bình quân giết mỗi ván: {s:value}\nTổng giết : {d:total}"
+
+		"playerstat_name_2"				"Sát thương"
+		"playerstat_name_2_long"		"Sát thương mỗi ván"
+		"playerstat_name_2_desc"		"Bình quân sát thương mỗi ván: {s:value}\nTổng sát thương : {d:total}"	
+
+		"playerstat_name_2.1"			"Sát thương"
+		"playerstat_name_2.5"			"ADR"		
+
+		"playerstat_name_3"				"K/D"
+		"playerstat_name_3_long"		"Giết mỗi mạng"
+		"playerstat_name_3_desc"		"Tỷ lệ giết mỗi mạng: {s:value}"		
+
+		"playerstat_name_4"				"Xuyên táo"
+		"playerstat_name_4_long"		"Tỷ lệ giết xuyên táo"
+		"playerstat_name_4_desc"		"Tỷ lệ giết do bắn xuyên táo : {s:value}\nTổng mạng giết xuyên táo : {d:total}"	
+
+		"playerstat_name_4.5"			"HS%"		
+
+		"playerstat_name_5"				"2K"
+		"playerstat_name_5_long"		"Giết 2"
+		"playerstat_name_5_desc"		"Tổng số ván giết 2 : {s:value}"	
+
+		"playerstat_name_6"				"3K"
+		"playerstat_name_6_long"		"Giết 3"
+		"playerstat_name_6_desc"		"Tổng số ván giết 3 : {s:value}"		
+
+		"playerstat_name_7"				"4K"
+		"playerstat_name_7_long"		"Giết 4"
+		"playerstat_name_7_desc"		"Tổng số ván giết 4 : {s:value}"
+
+		"playerstat_name_7.5"			"Giết đa mạng"
+	
+		"playerstat_name_8"				"Lựu đạn nổ"
+		"playerstat_name_8_long"		"Lựu đạn nổ hiệu quả"
+		"playerstat_name_8_desc"		"Tỷ lệ lựu đạn nổ sát thương ít nhất 1 kẻ địch: {s:value}\nTổng số lựu đạn nổ sát thương ít nhất 1 kẻ địch : {d:total}"			
+
+		"playerstat_name_9"				"FB"
+		"playerstat_name_9_long"		"Lựu đạn choáng hiệu quả"		
+		"playerstat_name_9_desc"		"Tỷ lệ lựu đạn choáng làm mù ít nhất 1 kẻ địch: {s:value}\nTổng số lựu đạn choáng làm mù ít nhất 1 kẻ địch : {d:total}"
+
+		"playerstat_name_10"			"1v1"
+		"playerstat_name_10_long"		"Pha đấu 1v1"
+		"playerstat_name_10_desc"		"Tỷ lệ thắng tình huống 1v1: {s:value}\nTổng thắng tình huống 1v1 : {d:total}"	
+
+		"playerstat_name_11"			"1v2"
+		"playerstat_name_11_long"		"Pha đấu 1v2"
+		"playerstat_name_11_desc"		"Tỷ lệ thắng tình huống 1v2: {s:value}\nTổng thắng tình huống 1v2 : {d:total}"	
+
+		"playerstat_name_12"			"EK"
+		"playerstat_name_12_long"		"Giết mở màn"
+		"playerstat_name_12_desc"		"Tỷ lệ giết mở màn so với chết mở màn: {s:value}\nTổng giết mở màn : {d:total}"
+
+		"stats_graph_button_0"			"Điểm/Ván"
+		"stats_graph_button_1"			"Giết/Ván"
+		"stats_graph_button_2"			"ADR"
+		"stats_graph_button_3"			"K/D"
+		"stats_graph_button_4"			"HS%"
+
+		"ris_score"								"Điểm ván"
+		"ris_t"									"T"
+		"ris_ct"								"CT"
+		"ris_team-title"						"Tỷ lệ thắng đội của bạn"
+		"ris_wins"								"{s:ris_team} thắng!"
+
+		"ris_win"								"thắng"
+		"ris_loss"							"bại"
+
+		"ris_hits"								"trong {s:num_hits}"
+		
+		"prdr_health_removed"					"{d:health_removed} trong {d:num_hits}"
+		"prdr_return_health_removed"				"{d:return_health_removed} trong {d:return_num_hits}"
+
+		"season_stat_title_wins"		"THẮNG"
+        "season_stat_title_ties"		"HÒA"
+        "season_stat_title_losses"		"THUA"
+        "season_stat_title_rounds"		"VÁN ĐẤU"
+        "season_stat_title_kills"		"GIẾT"
+        "season_stat_title_headshots"	"XUYÊN TÁO"
+		"season_stat_title_hs_percent"	"HS%"
+        "season_stat_title_assists"		"HỖ TRỢ"
+        "season_stat_title_deaths"		"CHẾT"
+        "season_stat_title_mvps"		"MVP"
+        "season_stat_title_rounds_3k"	"3K"
+        "season_stat_title_rounds_4k"	"4K"
+        "season_stat_title_rounds_5k"	"5K"
+		"season_stat_title_kpr"			"GIẾT/VÁN"
+		"season_stat_title_kd"			"K/D"
+		"season_stat_title_best_map"	"BẢN ĐỒ TỐT NHẤT"
+		"season_stat_title_win_percent"	"% THẮNG"
+		"season_stat_title_matches_played"	"TRẬN ĐẤU"
+		"season_stat_title_achieved_week"	"HẠNG CAO NHẤT ĐẠT ĐƯỢC VÀO TUẦN"
+		"season_stat_value_kd"				"{s:kdratio}"
+		"season_stat_value_win_percent"		"{s:win-percent}%"
+		"season_stat_value_hs_percent"		"{s:hs-percent}%"
+		"season_section_rank"				"ĐIỂM CAO"
+		"season_section_season_stats"		"THÔNG SỐ MÙA"
+		"season_section_rank_history"		"LỊCH SỬ HẠNG"
+		"season_section_rank_activity"		"TRẬN ĐÃ CHƠI"
+		"season_section_rank_map_stats"		"THÔNG SỐ BẢN ĐỒ"
+		"season_section_rank_map_wins_graph"	"TỔNG THẮNG TRÊN BẢN ĐỒ"
+		"season_section_graph_x_axis_label_min"		"TUẦN {d:week_min}"
+		"season_section_graph_x_axis_label_max"		"TUẦN {d:week_max}"
+		"tooltip-no-map-stats"			"Không có dữ liệu của bạn cho bản đồ này"
+		"tooltip-season-rank-week-idx"		"TUẦN {s:week-id}"
+		"tooltip-season-rank-week-name"		"{s:week-name}"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	WIN PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_winpanel_mvp_award"				"MVP"
+		"Panorama_winpanel_mvp_award_kills"			"MVP"
+		"Panorama_winpanel_mvp_award_ace"			"MVP do đạt được ván Giết 5"
+		"Panorama_winpanel_mvp_award_bombplant"		"MVP do đặt bom thành công"
+		"Panorama_winpanel_mvp_award_bombdefuse"	"MVP do gỡ bom thành công"
+		"Panorama_winpanel_mvp_award_rescue"		"MVP do giải cứu con tin"
+		"Panorama_winpanel_mvp_award_score"			"MVP do điểm cao nhất"
+		"Panorama_winpanel_mvp_award_inferno"		"MVP do gây ra sát thương lửa đáng kể"
+		"Panorama_winpanel_mvp_award_blast"			"MVP do gây ra sát thương nổ đáng kể"
+		"Panorama_winpanel_mvp_award_bombdefuse_clutch"	"MVP do gỡ bom khi là người sống sót cuối cùng"
+		"Panorama_winpanel_mvp_award_bombplant_clutch"	"MVP do đặt và bảo vệ bom thành công"
+		"Panorama_winpanel_mvp_award_gungame"		"MVP"
+		"Panorama_winpanel_mvp_winner"				"MVP"
+		"Panorama_winpanel_mvp_award_kills_three"	"MVP do giết nhiều kẻ thù nhất (3 mạng)"
+		"Panorama_winpanel_mvp_award_kills_four"	"MVP do giết nhiều kẻ thù nhất (4 mạng)"
+
+		"Panorama_WinPanel_rank_awarded_multi"	"Bạn đã đạt {d:rank_increase} hạng mới!"
+
+		"Panorama_WinPanel_rank_name_string"	"{s:current_best_cat} <font color='#CCCCCC'>({s:current_rank_cat})</font>"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	WATCH PANEL
+		//
+		///////////////////////////////////////////////////////////
+		
+		"WatchMenu_Watch"					"Xem"
+		"WatchMenu_Tournament_Versus"		"vs"
+		"WatchMenu_Outcome_Tied"			"Hòa"
+		"WatchMenu_Outcome_Abandon"			"Bỏ cuộc"
+		"WatchMenu_Outcome_Won"				"<img src='file://{images}/icons/ui/trophy.svg' width='15' height='15'/> Chiến thắng"
+		"WatchMenu_Outcome_Lost"			"Thua"
+		"WatchMenu_Expand_Match_Menu"		"Thêm"
+		"WatchMenu_Get_Share_Link"			"Chép mã chia sẻ trận đấu"
+		"WatchMenu_Share_Link_Copied"		"Chép liên kết vào khay nhớ tạm"
+		"WatchMenu_Download_Demo"			"Tải demo để xem"
+		"WatchMenu_Watch_Live"				"Xem trực tiếp"
+		"WatchMenu_Watch_Highlights"		"Xem điểm nhấn"
+		"WatchMenu_Watch_Lowlights"			"Xem điểm nhọ"
+		"WatchMenu_Watch_Highlights_Player_Selected"	"Xem điểm sáng của {s:playerNameTitle}"
+		"WatchMenu_Watch_Lowlights_Player_Selected"	"Xem điểm nhọ của {s:playerNameTitle}"
+		"WatchMenu_Delete"					"Xóa file demo nội bộ"
+		"WatchMenu_Downloading"				"Đang tải xuống"
+		"WatchMenu_Info_Download_Failed"	"Tải chưa xong"
+		"WatchMenu_Info_Download_Failed_Retry" "Thử tải lại file demo?"
+		"WatchMenu_Info_Download_Failed_Info" "Việc tải về chưa hoàn thành. Đã có thông tin bảng điểm nhưng bạn chưa thể xem trận đấu."
+		"WatchMenu_Download_Disabled_Hint"	"Demo trận đã hết hạn và không còn thể tải về."
+		"WatchMenu_Tournament_BulletPoint"	"<ul>
+<li>Xem các trận đấu và dùng hình dán đội để dự đoán đội chiến thắng tại mỗi vòng đấu bảng và đấu loại.</li>
+<li>Mỗi khi dự đoán chính xác, bạn sẽ nhận thêm điểm để có được chiếc cúp Pick'Em - một huy hiệu có thể được trưng bày trên ảnh đại diện Counter-Strike và trên cả hồ sơ Steam của mình.</li>
+<li>Bạn có thể dự đoán các trận đấu vòng bảng cho tới khi vòng bảng chính thức bắt đầu.</li>
+<li>Bạn có thể dự đoán các trận đấu loại trước khi vòng đấu loại chính thức bắt đầu.</li>
+</ul>"
+		"WatchMenu_Viewer"				"Người xem"
+		"WatchMenu_Viewers"				"Người xem"
+		"WatchMenu_Viewers_dv:f"		"{d:spectatorCount} người xem"
+		"WatchMenu_FirstHalf"			"Hiệp đầu"
+		"WatchMenu_SecondHalf"			"Hiệp sau"
+		"WatchMenu_Overtime"			"Hiệp phụ"
+		"MatchInfo_FirstRound"			"Hiệp đầu"
+		"MatchInfo_Halftime"			"Giữa trận"
+		"MatchInfo_Overtime"			"Hiệp phụ"
+		"MatchInfo_RoundDataTitle"      "Phong độ vòng đấu của {s:playerNameTitle}"
+		"MatchInfo_Date"				"{s:month} {s:day}"
+		
+		"MatchInfo_Date_Tournament_Month_Short_8"	"Thg10"		
+		"MatchInfo_Date_Tournament_Month_Final_Short_8"	"Thg11"
+		"MatchInfo_Date_Tournament_Month_Short_9"	"Thg3"
+		"MatchInfo_Date_Tournament_Month_Short_9_1"	"Thg4"
+		"MatchInfo_Date_Tournament_Month_Final_Short_9"	"Thg4"
+		"MatchInfo_Date_Tournament_Month_Short_10"	"Thg7"
+		"MatchInfo_Date_Tournament_Month_Short_10_1"	"Thg7"
+		"MatchInfo_Date_Tournament_Month_Final_Short_10"	"Thg6"
+		"MatchInfo_Date_Tournament_Month_Short_11"	"Thg1"
+		"MatchInfo_Date_Tournament_Month_Short_11_1"	"Thg1"
+		"MatchInfo_Date_Tournament_Month_Final_Short_11"	"Thg1"
+		"MatchInfo_Date_Tournament_Month_Short_12"	"Thg7"
+		"MatchInfo_Date_Tournament_Month_Short_12_1"	"Thg7"
+		"MatchInfo_Date_Tournament_Month_Final_Short_12"	"Thg7"
+		"WatchMenu_PickEm_ComingSoon"	"Chức năng hiển thị các lượt Pick'Em và Đội tuyển trong mơ sẽ ra mắt sau."
+		"WatchMenu_ViewerCount"	"{s:numberOfViewers} người xem trên {s:channel}"
+		"Matchlist_Team_Selection"	"Tất cả các đội"
+
+
+		"pickem_timer_inactive"		"Vòng đấu hiện chưa được mở để dự đoán"
+		"pickem_timer"				"Còn {s:time} để quyết định lựa chọn"
+		"pickem_timer_upsell"		"Còn <b>{s:time}</b> để dự đoán. Mua vé để chơi Pick'Em và nhận token lưu niệm."
+		"pickem_timer_locked"		"Hiện đã khóa các lựa chọn"
+		"pickem_points_earned" 		"điểm nhận được"
+		"pickem_correct_pick" 		"Lựa chọn đúng"
+		"pickem_points_needed_next_level" 	"Cần <b>{d:points}</b> {s:plural} cho cấp <b>{s:level}</b>"
+		"pickem_points_result" 		"Bạn đã đạt được cúp Pick'Em <b>{s:result-level}</b>"
+		"pickem_points_result_bronze" "Bạn đã đạt được cúp Pick'Em <b>Đồng</b>"
+		"pickem_points_result_silver" "Bạn đã đạt được cúp Pick'Em <b>Bạc</b>"
+		"pickem_points_result_gold" "Bạn đã đạt được cúp Pick'Em <b>Vàng</b>"
+		"pickem_point"				"điểm"
+		"pickem_points"				"điểm"
+		"pickem_level_bronze"		"Đồng"
+		"pickem_level_silver"		"Bạc"
+		"pickem_level_gold"			"Vàng"
+		"pickem_group_pick_worth"	"Mỗi lựa chọn chính xác sẽ đạt <b>{d:points} {s:plural} </b>"
+		"pickem_pick_correct_points_earned"	"+ <b>{d:points}</b> {s:plural}"
+		"pickem_pick_drag_hint" 	"Kéo đội vào đây"
+		"pickem_pick_undefeated"	"<b>Chọn</b> đội sẽ <b>đi tiếp với thành tích bất bại</b>"
+		"pickem_pick_eliminated"	"<b>Chọn</b> đội sẽ <b>bị loại mà không thắng một trận nào</b>"
+		"pickem_get_items" 			"Mua hình dán sticker"
+		"pickem_get_items_tooltip" 	"Bạn cần các hình dán sau để thay đổi lựa chọn: <br><br>"
+		"pickem_place_picks" 		"Thay đổi lựa chọn"
+		"pickem_confirm_picks" 		"Xác nhận lựa chọn"
+		"pickem_confirm_Warning"	"<b>Các hình dán này sẽ được dùng trong dự đoán Pick'Em của bạn.</b>\n\nNó vẫn sẽ ở trong kho đồ và có thể dán lên bất cứ vũ khi nào bạn sở hữu hoặc trao đổi sau khi hết vòng sự kiện.\n\n<span class=\"premier-pickban__title__text-red\">\nBạn sẽ không thể sử dụng và trao đổi được chúng cho tới khi cuối vòng sự kiện. Gỡ bỏ lựa chọn ở thời điểm sau này sẽ không rút lại lệnh khóa.</span>\n"
+		"pickem_confirm_ClearAll"	"<b>Hình dán sẽ không mất khi dùng dự đoán Pick'Em.</b>\n\nHình dán được sử dụng trước đó sẽ vẫn ở trong kho đồ của bạn và có thể dùng lên bất kỳ vũ khí nào bạn sở hữu hoặc có được qua trao đổi sau khi chặng sự kiện đã kết thúc.\n"
+		"pickem_confirm_stickes_for_lock" 	"Hình dán để lựa chọn"
+		"pickem_confirm_not_owned" 		"<b>Không thể thực hiện các lựa chọn này.</b><span class=\"premier-pickban__title__text-red\">\nBạn cần phải có hình dán đội tương ứng để cập nhật lựa chọn Pick'Em của mình.</span>"
+		"pickem_apply_emptyslots"		"Bạn không được phép bỏ trống bất kỳ ô dự đoán nào để có thể cập nhật lựa chọn cho Thử thách Pick'Em của mình. Hãy kéo thả nốt lựa chọn của bạn vào các ô trống và nhấn \"Thay đổi lựa chọn\" để xác nhận."
+		"pickem_apply_timeout"			"Chúng tôi không thể cập nhật lựa chọn Pick'Em. Vui lòng thử lại sau."
+		"pickem_apply_drag_hint"	"Kéo lựa chọn vào đây"
+		"pickem_apply_immediate" 		"Đang cập nhật lựa chọn của bạn..."
+		"pickem_save_all" 			"LƯU TẤT CẢ DỰ ĐOÁN"
+		"pickem_make_picks" 		"ĐÃ CHỌN {d:user-picks} / {d:total-picks}"
+		"pickem_drag_picks" 		"Kéo thả đội để lựa chọn"
+		"pickem_reveal_all_results" "Xem thứ hạng cuối cùng"
+		"pickem_saved" 		"Dự đoán đã lưu"
+		"pickem_teams_tbd" 	"Đang đợi kết quả các đội"
+		"pickem_challenge_section_title" "THỬ THÁCH PICK'EM"
+		"pickem_items_section_title" "VẬT PHẨM GIẢI ĐẤU"
+		"pickem_items_tab_opening_stage" "VÒNG ĐẤU MỞ"
+		"pickem_items_tab_elim_stage" "VÒNG ĐẤU LOẠI"
+		"pickem_items_tab_stage_i" "Vòng đấu I"
+		"pickem_items_tab_stage_ii" "Vòng đấu II"
+		"pickem_items_tab_stage_iii" "Vòng đấu III"
+		"pickem_items_tab_playoff_stage" "VÒNG LOẠI TRỰC TIẾP"
+		"pickem_teams_remove_all_tooltip" 	"Xóa tất cả dự đoán"
+		"pickem_teams_fill_tooltip" 	"Điền ngẫu nhiên các ô trống"
+		"pickem_versus"				"VS"
+		"pickem_submit_warning"		"{s:pass-name} chưa kích hoạt"
+		"pickem_submit_warning_tooltip"		"Cần kích hoạt {s:pass-name} để nhận tiến trình cho thử thách Pick'Em. Vé phải được kích hoạt trước khi chặng đấu khóa dự đoán."
+		"pickem_submit_warning_popup_title"	"Lưu dự đoán với vé chưa kích hoạt"
+		"pickem_submit_warning_popup_desc"	"Cần kích hoạt {s:pass-name} để nhận tiến trình cho thử thách Pick'Em. Vé phải được kích hoạt trước khi chặng đấu khóa dự đoán."
+		"pickem_submit_warning_popup_action""Lưu dự đoán với vé chưa kích hoạt"
+		"pickem_submit_warning_popup_action2"	"Kích hoạt vé và lưu dự đoán"
+		"contextmenu_pickem_souvenir_title" 	"Chọn trận mà bạn muốn nhận gói lưu niệm"
+		"contextmenu_pickem_souvenir_no_result" 	"Quay lại khi trận đấu này kết thúc để nhận gói lưu niệm"
+		"mainmenu_major_hub"	"GIẢI VÔ ĐỊCH MAJOR — VẬT PHẨM & TRUNG TÂM "
+		"mainmenu_major_hub_items"	"Hình dán đã mở bán"
+		"mainmenu_major_hub_no_items" "GIẢI VÔ ĐỊCH MAJOR — TRUNG TÂM "
+
+		"pickem_swiss_group_00"									"0:0"
+		"pickem_swiss_group_10"									"1:0"
+		"pickem_swiss_group_11"									"1:1"
+		"pickem_swiss_group_12"									"1:2"
+		"pickem_swiss_group_20"									"2:0"
+		"pickem_swiss_group_21"									"2:1"
+		"pickem_swiss_group_22"									"2:2"
+		"pickem_swiss_group_01"									"0:1"
+		"pickem_swiss_group_02"									"0:2"
+
+		"pickem_swiss_group_30"									"3:0 - thăng hạng"
+		"pickem_swiss_group_3x"									"3:1 3:2\n thăng hạng"
+		"pickem_swiss_group_13"									"1:3 - loại"
+		"pickem_swiss_group_23"									"2:3 - loại"
+		"pickem_swiss_group_03"									"0:3 - loại"
+
+
+
+
+
+
+
+		// WATCH EVENTS
+
+		"eventsched_lan"												"Sự kiện LAN"
+		"eventsched_online"											"Sự kiện trực tuyến"
+		"eventsched_show_online"								"Hiển thị sự kiện trực tuyến"
+		"eventsched_date_format"								"{s:eventsched_date_day} {s:eventsched_date_month}"
+		"eventsched_versus"											"vs"
+		"eventsched_ongoing"										"Đang diễn ra"
+		"eventsched_tbd"												"chưa xác định"
+		"eventsched_live"												"TRẬN TRỰC TIẾP"
+		"eventsched_link"												"Xem thêm thông tin tại HLTV.org"
+		"eventsched_event_link"									"Thông tin sự kiện tại HLTV.org"
+		"eventsched_match_link"									"Thông tin trận đấu tại HLTV.org"
+		"eventsched_team_link"									"Thông tin đội tại HLTV.org"	
+		"eventsched_no_streams"									"Hiện không có kênh phát nào"
+		"eventsched_watch_on_gotv"								"Xem trên CSTV"
+		"eventsched_favorite_tt"								"{s:favorite_tooltip}"
+		"eventsched_favorite_tooltip_prime"			"Đánh dấu yêu thích sự kiện sẽ khiến\ncác trận đấu trực tiếp của nó hiển thị ở sảnh chính."
+		"eventsched_favorite_tooltip_not_prime" "Bạn phải có trạng thái Prime để thêm sự kiện vào mục yêu thích."
+		"eventsched_match_tooltip"							"{s:watchnotice_teamname_1} vs {s:watchnotice_teamname_2}"
+		"eventsched_stream_watch"								"{s:stream_site}"
+		"eventsched_hltv"												"Thông tin về sự kiện được cung cấp bởi HLTV.org"
+		"eventsched_country"										"{s:eventsched_country}"
+		"eventsched_no_live_matches"						"Hiện tại không có trận đấu nào phát trực tiếp."
+		"eventsched_featured"										"Đây là sự kiện yêu thích của cộng đồng trong {s:eventsched_fave_month}."
+		"eventsched_official"										"Đây là sự kiện trong khuôn khổ giải Major Counter-Strike."
+
+		"WatchNotice_Reason_Official"						"Sự kiện này hiển thị vì nằm trong khuôn khổ giải Major Counter-Strike."
+		"WatchNotice_Reason_Personal"						"Sự kiện này được hiển thị vì bạn đã yêu thích nó."
+		"WatchNotice_Reason_Community"					"Sự kiện này được hiển thị vì nó được cộng đồng yêu thích nhất trong {s:watchnotice_fave_month}."
+		"WatchNotice_Watch"											"Xem"
+
+	
+		// Used with formatText.AbbreviateNumber()
+		///////////////////////////////////////////
+		"NumberAbbreviation_E3"			"{s:abbreviated_number}k"
+		
+		// Note to translators: Add as needed. Code will use only available strings. example:
+		// "NumberAbbreviation_E4"		"{s:abbreviated_number}万"	
+
+		"NumberAbbreviation_E6"			"{s:abbreviated_number} triệu"
+		"NumberAbbreviation_E9"			"{s:abbreviated_number} tỉ"
+		"NumberAbbreviation_E12"		"{s:abbreviated_number} ngàn tỉ"
+
+		// Used with formatText.SplitAbbreviateNumber()
+		///////////////////////////////////////////
+		"NumberAbbreviation_suffix_E3"			"k"
+		
+		// Note to translators: Add as needed. Code will use only available strings. example:
+		// "NumberAbbreviation_suffix_E4"		"万"	
+
+		"NumberAbbreviation_suffix_E6"			"M"
+		"NumberAbbreviation_suffix_E9"			"B"
+		"NumberAbbreviation_suffix_E12"			"T"
+
+
+		"digitpanel_digits"			 " 0123456789,.-+?"
+		"digitpanel_digits_premier" " 1234567890,?"
+
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	OVERWATCH
+		//
+		///////////////////////////////////////////////////////////
+		
+		"Panorama_Overwatch_Downloading"		"Đang tải file vụ án..."
+		"Panorama_Overwatch_Review"				"Xem xét một nghi án sẽ mất xấp xỉ vài phút."
+		"Panorama_Overwatch_Welcome"			"Overwatch cho Counter-Strike"
+		"Panorama_Overwatch_Tooltip_p1"			"Trong khuôn khổ công việc Counter-Strike của bạn, bạn sẽ tải xuống và xem xét bản phát lại trận đấu Counter-Strike 2 trên máy chủ chính thức của Valve để tìm các hành vi đáng nghi. Khi bản phát lại kết thúc, bạn sẽ được yêu cầu ra quyết định liên quan đến hành vi của người chơi."
+		"Panorama_Overwatch_Tooltip_sh1"		"Bước 1"
+		"Panorama_Overwatch_Tooltip_p2"			"Nhấn nút TẢI VỀ BẰNG CHỨNG ở góc dưới bên phải để bắt đầu tải xuống phiên Overwatch."
+		"Panorama_Overwatch_Tooltip_sh2"		"Bước 2"
+		"Panorama_Overwatch_Tooltip_p3"			"Nhấn nút XEM BẰNG CHỨNG để xem bản phát lại từ góc nhìn người chơi được ghi bởi máy chủ."
+		"Panorama_Overwatch_Tooltip_sh3"		"Bước 3"
+		"Panorama_Overwatch_Tooltip_p4"			"Sau khi kết thúc phiên án, chọn một phán quyết cho mỗi câu hỏi và nhấn nút GỬI QUYẾT ĐỊNH."
+		"Panorama_Overwatch_Major_Disruption"	"Gián đoạn nghiêm trọng"
+		"Panorama_Overwatch_Minor_Disruption"	"Gián đoạn nhỏ"
+		"Panorama_Overwatch_Res_Griefing"		"Quấy rối đồng đội"
+		"Panorama_Overwatch_Res_AimHacking"		"Hỗ trợ ngắm bắn"
+		"Panorama_Overwatch_Res_WallHacking"	"Hỗ trợ tầm nhìn"
+		"Panorama_Overwatch_Res_SpeedHacking"	"Hỗ trợ ngoài khác"
+		
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	ROSETTA PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_CSGO_Spray_EnableMouse"			"<b>[{g:csgo_key:spray_mouse_enable}]</b> Bật con trỏ"
+		"Panorama_CSGO_Rosetta_Item_Name"			"<font color=\"{s:item_color}\">{s:item_name}</font>"
+		"Panorama_CSGO_Rosetta_Item_Count"			"Lần dùng còn lại: {d:item_count}"
+		"Panorama_Attrib_SpraysHint"					"{s:bind_attack} Để vẽ graffiti"
+		"Panorama_Attrib_SpraysHint_Auto"			"Thả <b>{s:bind_spray_menu}</b> để vẽ graffiti"
+
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	RETICLE PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_HUD_weaponid_swap"			"<font color=\"#6a6156\">[{s:bind_use}] Đổi lấy</font> <font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+		"Panorama_HUD_weaponid_pickup"			"<font color=\"#6a6156\">[{s:bind_use}] Nhặt lấy</font> <font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+		"Panorama_HUD_weaponid_lookat"			"<font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+		"Panorama_HUD_weaponid_holdtopickup"	"<font color=\"#6a6156\">Giữ [{s:bind_use}] để nhặt</font> <font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+
+		"Panorama_HUD_playerid_sameteam"			"<font color='#6E7D5C'>Bạn bè: {g:player_name:html:player_slot} Máu: {d:player_health}%</font>"
+		"Panorama_HUD_playerid_diffteam"			"<font color='#CC0000'>Địch: {g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_playerid_specteam"			"<font color='#6E7D5C'>{g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_playerid_noteam"			"<font color='#FFCC00'>{g:player_name:html:player_slot} Máu:{d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_shadow"		"{g:player_name:player_slot}"
+
+		"Panorama_HUD_playerid_survival_enemy"				"<font color='#CC0000'>Kẻ địch</font>"
+		"Panorama_HUD_playerid_survival_hunter_target"		"<font color='#e58816'>Mục tiêu giá trị cao</font>"
+
+		"Panorama_HUD_botid_request_bomb"		"<font color='#e5da25'>[{s:bind_use}] Lấy bom</font>"
+
+		"Panorama_HUD_hostageid_nh"				"<font color='#e5da25'>Con tin</font>"
+		"Panorama_HUD_hostagename_nh"			"<font color='#e5da25'>{g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_hostageid_nh_use_lead"		"<font color='#e5da25'>[{s:bind_use}] Đặt con tin lên</font>"
+		"Panorama_HUD_hostageid_nh_following"	"<font color='#e5da25'>Con tin (Đang theo {g:player_name:html:player_slot})</font>"
+
+		"Panorama_HUD_hostageid"					"<font color='#e5da25'>Con tin</font><font color='#dcdac0'> {d:player_health}%</font>"
+		"Panorama_HUD_hostageid_use_lead"		"<font color='#e5da25'>[{s:bind_use}] Đặt con tin lên</font><font color='#dcdac0'> {d:player_health}%</font>"
+		"Panorama_HUD_hostageid_following"		"<font color='#e5da25'>Con tin (Đang theo {s:player_name})</font><font color='#dcdac0'> {d:player_health}%</font>"
+
+
+		"Panorama_HUD_playerid_overhead_health"			"{d:player_health}%"
+		"Panorama_HUD_playerid_overhead_money"			"${d:r:player_money}"
+
+		"Panorama_HUD_playerid_overhead_survival"					"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#00c3e1'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_lowhealth"			"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#d82429'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_money"				"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#7ebc50'> ${d:r:player_money}</font>"
+		"Panorama_HUD_playerid_overhead_survival_grey"				"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#dddddd'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_lowhealth_grey"	"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#d82429'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_money_grey"		"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#7ebc50'> ${d:r:player_money}</font>"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	DEATH PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_SurvivalEndOfMatch_ShowStats"			"[{s:bind_jump}] Hiện thông số trận đấu"
+		"Panorama_Death_Cancel_Start_Replay"			"[{s:bind_jump}] Bỏ qua"
+		"Panorama_Death_Cancel_Replay" 				"[{s:bind_jump}] Hủy phát lại"
+		"Panorama_Death_Snapshot"						"[{s:bind_jpeg}] Lưu khoảnh khắc này"
+		"Panorama_HUD_Spectate_Navigation_Replay_Death"	"<font color='#ddbb22'><b>[{s:bind_reload}] Góc nhìn người giết</b></font>"
+
+		"Panorama_DeathPanel_Killer1_YourWeapon"			"giết bạn bằng {s:weapon_name} của chính bạn"
+		"Panorama_DeathPanel_Killer1_KillerWeapon"			"giết bạn bằng {s:weapon_name} của họ"
+		"Panorama_DeathPanel_Killer1_OthersWeapon"			"giết bạn bằng {s:weapon_name} của <font color='#adadad'>{s:other_player_name}</font>"
+		"Panorama_DeathPanel_Killer1_Weapon"				"giết bạn bằng {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_Weapon_Plural" 		"giết bạn bằng {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_Weapon_CustomString" 	"{s:weapon_name}"
+
+		"Panorama_DeathPanel_DamageTaken:f"					"<font color='#A0A0A0'>Sát thương nhận:  </font><font color='#FFFFFF'><b>{d:damage_taken}</b></font> <font color='#A0A0A0'> trong</font> <font color='#FFFFFF'><b>{d:hits_taken} phát </b></font>"
+		"Panorama_DeathPanel_DamageGiven:f"					"<font color='#A0A0A0'>Sát thương gây:  </font><font color='#FFFFFF'><b>{d:damage_given}</b></font> <font color='#A0A0A0'> trong</font> <font color='#FFFFFF'><b>{d:hits_given} phát </b></font>"
+
+		/////////////////////////////////////////////////////////////////
+		//
+		//      CHATWHEEL OPTIONS
+		//
+		////////////////////////////////////////////////////////////
+
+		"Chatwheel_segment_top"	"Trên cùng"
+		"Chatwheel_segment_topright"	"Phải trên cùng"
+		"Chatwheel_segment_right"	"Phải"
+		"Chatwheel_segment_bottomright"	"Phải dưới cùng"
+		"Chatwheel_segment_bottom"	"Dưới cùng"
+		"Chatwheel_segment_bottomleft"	"Trái dưới cùng"
+		"Chatwheel_segment_left"	"Trái"
+		"Chatwheel_segment_topleft"	"Trái trên cùng"
+
+		"Chatwheel_ping_on_cooldown"  "Không thể ping. Ping đang hồi."
+
+		"Chatwheel_plant"	"Đặt bom"
+		"Chatwheel_sitea"	"Ping khu A"
+		"Chatwheel_siteb"	"Ping khu B"
+
+		"Chatwheel_section_move"	"Di chuyển"
+		"Chatwheel_sticktogether"	"Ở cùng nhau"
+		"Chatwheel_followme"	"Theo tôi"
+		"Chatwheel_followingyou"	"Đang theo bạn"
+		"Chatwheel_spreadout"	"Tản ra"
+		"Chatwheel_fallback"	"Lùi lại"
+		"Chatwheel_gogogo"	"Đi đi nào!"
+		"Chatwheel_onmyway"	"Trên đường"
+		"Chatwheel_gethostage"	"Kiểm tra con tin"
+		"Chatwheel_quiet"	"Giữ im lặng"
+
+		"Chatwheel_section_prepare"	"Chuẩn bị"
+		"Chatwheel_requestecoround"	"Để dành tiền đi"
+		"Chatwheel_requestspend"	"Ta nên mua"
+		"Chatwheel_requestleader"	"Ai sẽ chỉ đạo?"
+		"Chatwheel_requestweapon"	"Yêu cầu vũ khí"
+		"Chatwheel_requestplan"		"Kế hoạch là gì?"
+		"Chatwheel_aplan"	"Ping khu A"
+		"Chatwheel_bplan"	"Ping khu B"
+		"Chatwheel_midplan"	"Ping đường giữa"
+
+		"Chatwheel_section_grenades"	"Lựu đạn"
+		"Chatwheel_decoy"	"Cần lựu đạn mồi"
+		"Chatwheel_smoke"	"Cần lựu đạn khói"
+		"Chatwheel_grenade"	"Cần lựu đạn nổ"
+		"Chatwheel_fire"	"Cần bom xăng"
+		"Chatwheel_flashbang"	"Cần lựu đạn choáng"
+		
+		"Chatwheel_section_defend"	"Phòng thủ"
+		"Chatwheel_coverme"	"Yểm trợ tôi"
+		"Chatwheel_coveringyou"	"Đang yểm trợ bạn"
+		"Chatwheel_help"	"Trợ giúp"
+		"Chatwheel_needbackup"	"Cần trợ lực"
+		"Chatwheel_holdposition"	"Giữ vị trí này"
+        "Chatwheel_rotatetome"	"Đảo hướng đến tôi"
+
+		"Chatwheel_section_bomb"	"Trạng thái bom"
+		"Chatwheel_guardingbomb"	"Đang bảo vệ bom"
+		"Chatwheel_bombsiteclear"	"Khu bom trống"
+		"Chatwheel_droppedbomb"	"Bom đã rơi"
+		"Chatwheel_bombpickedup"	"Đã nhặt bom"
+		"Chatwheel_ifixbomb"	"Tôi sẽ tác động bom"
+		"Chatwheel_youfixbomb"	"Bạn tác động bom đi"
+		
+		"Chatwheel_bombat"	"Ping bom" 
+
+		"Chatwheel_section_enemystatus"	"Trạng thái quân địch"
+		"Chatwheel_heardnoise"	"Có tiếng động" 
+		"Chatwheel_enemyspotted"	"Phát hiện kẻ địch"
+		"Chatwheel_sectorclear"	"Khu vực trống"
+		"Chatwheel_sniperspotted"	"Có địch bắn tỉa"
+		"Chatwheel_bombcarrierspotted"	"Thấy địch cầm bom"
+		"Chatwheel_threeleft"	"Còn ba"
+		"Chatwheel_twoleft"	"Còn hai"
+		"Chatwheel_oneleft"	"Còn một"
+		"Chatwheel_oneenemyhere"  "Một quân địch ở đây"
+		"Chatwheel_multipleenemieshere"  "Nhiều quân địch ở đây"
+		"Chatwheel_ihavethebomb"  "Đã nhặt bom"
+
+		"Chatwheel_section_enemykilled"	"Đã hạ quân địch"
+		"Chatwheel_gotheadshot"	"Tôi bắn xuyên táo"
+		"Chatwheel_ikilledsniper"	"Tôi hạ bắn tỉa"
+		"Chatwheel_wekilledsniper"	"Chúng ta hạ bắn tỉa"
+		"Chatwheel_sawheadshot"	"Thấy bạn bắn xuyên táo"
+
+		"Chatwheel_section_combatstatus"	"Trạng thái chiến đấu"
+		"Chatwheel_attacking"	"Tấn công"
+		"Chatwheel_inposition"	"Vào vị trí"
+		"Chatwheel_covering"	"Yểm trợ"
+		"Chatwheel_pinned"	"Tôi bị ghim"
+		"Chatwheel_incombat"	"Đang giao tranh"
+		"Chatwheel_friendlyfire"	"Bắn đồng đội"
+		"Chatwheel_lastunitalive"	"Đơn vị cuối còn sống"
+
+		"Chatwheel_section_responses"	"Phản hồi"
+		"Chatwheel_wewon"	"Chúng ta đã thắng"
+		"Chatwheel_welost"	"Chúng ta đã thua"
+		"Chatwheel_wearewinning"	"Chúng ta đang thắng"
+		"Chatwheel_lostround"	"Thua ván này"
+		"Chatwheel_thanks"	"Cảm ơn!"
+		"Chatwheel_sorry"	"Xin lỗi"
+		"Chatwheel_compliment"	"Hay lắm!"
+		"Chatwheel_affirmative"	"Có"
+		"Chatwheel_negative"	"Không"
+		"Chatwheel_peptalk"	"Tán gẫu"
+		"Chatwheel_cheer"	"Cổ vũ"
+
+		"Chatwheel_plantingata"	"Tôi đang đặt bom ở A"
+		"Chatwheel_plantingatb"	"Tôi đang đặt bom ở B"
+		"Chatwheel_plantedata"	"Tôi đã đặt bom ở A"
+		"Chatwheel_plantedatb"	"Tôi đã đặt bom ở B"
+		"Chatwheel_planted"	"Chúng ta đã đặt bom"
+
+		"Chatwheel_seehostagestaken"	"Con tin đang được giải cứu"
+		"Chatwheel_requestgethostages"	"Giải cứu con tin"
+
+		"Chatwheel_guardinga"	"Tôi đang bảo vệ A"
+		"Chatwheel_guardingb"	"Tôi đang bảo vệ B"
+		
+
+		
+		"Chatwheel_section_command"	"Mệnh lệnh"
+		"Chatwheel_section_report"	"Báo cáo"
+
+		"Chatwheel_description" "Vòng tán gẫu giúp truy cập nhanh các lệnh radio hữu dụng có thể tùy biến được."
+
+		////
+		//
+		// Volatile Laptop
+		//
+		////
+
+		// ---------------------------------------------------------------------------------------------
+		"laptop_window_collection_title"			"XP CHO CATALOG BỘ SƯU TẬP"
+		"laptop_window_expiration_title"			"HẠN SỬ DỤNG"
+		"laptop_window_seal_title"					"TR. THÁI"
+		"laptop_window_messages_title"				"TRÒ CHUYỆN — TAY BUÔN VŨ KHÍ"
+		"laptop_window_currentoffer_title"			"ƯU ĐÃI HIỆN TẠI"
+		"laptop_app_title"							"<span class=\"laptop-app-title-prefix\">ĐẦU-</span>NỐI"
+		"laptop_app_version"						"Phiên bản 1.1.0.2000"
+
+		"dealer_offer_attachment_title"							"{s:item-name}"
+		"dealer_offer_attachment_wear"							"{s:item-rarity}"
+		"dealer_offer_attachment_remaining_title"				"ĐỀ NGHỊ #{d:offer-total}"
+		"dealer_offer_attachment_remaining"						"Đề nghị #{d:offer-total}"
+		"dealer_offer_received_count"							"Đề nghị thứ <b>{s:offer-count}</b>"
+		"dealer_offer_attachment_final_title"					"ĐỀ NGHỊ CUỐI CÙNG"
+		"dealer_offer_attachment_final"							"Đề nghị thứ {s:offer-count} và cuối cùng"
+		"dealer_offer_attachment_status"						"Đề nghị - {s:offer-status}"
+		"dealer_offer_attachment_status-active"					"<b><span class=\"offer-active\">hiệu lực</span></b>"
+		"dealer_offer_attachment_status-price"					"<b><span class=\"offer-active\">{s:offer-price}</span></b>"
+		"dealer_offer_attachment_status-declined-price"			"{s:offer-price}"
+		"dealer_offer_attachment_status-declined"				"<span class=\"offer-declined\">Đề nghị #{s:offer-count} - Từ chối</span>"
+
+		"user_btn_purchase_desc_purchase"		"Giữ để mua vật phẩm này. Sau khi mua, thiết bị đầu nối sẽ tự hủy."
+		"user_btn_purchase_desc_continue"		"Giữ để từ chối vĩnh viễn đề nghị này và xem đề nghị tiếp theo."
+		"user_btn_purchase_desc_end"		"Từ chối đề nghị cuối cùng và hủy thiết bị đầu nối này."
+		"user_btn_purchase_title"			"Đề nghị #{s:offer-count}"
+		"user_btn_purchase_final_title"		"<b>Đề nghị cuối</b>"
+		"user_btn_decline_desc"				"Từ chối đề nghị này và xem đề nghị khác"
+		"user_btn_accept"		"Chấp nhận đề nghị <b>{s:price}</b>"
+		"user_btn_accept_final"	"Chấp nhận đề nghị cuối cùng <b>{s:price}</b>"
+		"user_btn_accept_0"		"Chốt đơn. <b>{s:price} cũng được.</b>"
+		"user_btn_accept_1"		"Được đó — <b>{s:price}</b>"
+		"user_btn_accept_2"		"Nếu <b>{s:price}</b> thì lấy"
+		"user_btn_accept_3"		"<b>{s:price}</b> thì quất"
+		"user_btn_accept_4"		"<b>{s:price}</b>, giá đó thì mê rồi"
+		"user_btn_accept_5"		"Rổ giá oke — <b>{s:price}</b>"
+		"user_btn_next"			"Từ chối đề nghị"
+		"user_btn_next_0"		"Nhìn thơm đó, nhưng thôi"
+		"user_btn_next_1"		"Đồ này ai thèm"
+		"user_btn_next_2"		"Không được đâu"
+		"user_btn_next_3"		"Bỏ qua"
+		"user_btn_next_4"		"Chát quá, không mua"
+		"user_btn_next_5"		"Cảm ơn, nhưng thôi"
+		"user_btn_next_6"		"Khi khác đi"
+		"user_btn_next_7"		"Hôm nay mất hứng rồi"
+		"user_btn_pause"		"Tạm dừng đề nghị"
+		"user_btn_end"			"Từ chối đề nghị cuối cùng"
+
+		"user_message_limit_0"		"Tôi có thể nâng tới <b>{s:limit-setting}</b>."
+		"user_message_limit_1"		"Giờ tới <b>{s:limit-setting}</b> là giá trần rồi đó."
+		"user_message_limit_2"		"Lên tối đa <b>{s:limit-setting}</b> cũng ổn đó."
+		"user_message_limit_3"		"Mức <b>{s:limit-setting}</b> cũng được."
+		"user_message_limit_unlimited_0"	"<b>Không giới hạn</b>, tôi muốn xem hết."
+		"user_message_limit_unlimited_1"	"<b>Chơi tuốt</b>. Không lo về giá."
+		"user_message_limit_unlimited_2"	"Dân chơi tới đây để mua. <b>Đem hết mọi thứ ra</b>."
+		"user_message_limit_unlimited_3"	"Cứ bắn được là tôi hứng thú. <b>Khỏi giới hạn giới giếc gì</b>."
+		"user_message_limit_unlimited_4"	"Giá cao tới đâu cũng được"
+		"offer_limit_setting"		"Giới hạn đề nghị: {s:limit}"
+		"offer_limit_setting_interface"		"Giới hạn đề nghị: {s:limit} <img src='file://{images}/icons/ui/expand.svg' class='expand-icon'/>"
+
+		"dealer_offer_Unknown"							"-"
+		"dealer_offer_1"								"1"
+		"dealer_offer_2"								"2"
+		"dealer_offer_3"								"3"
+		"dealer_offer_4"								"4"
+		"dealer_offer_5"								"5"
+		"dealer_offer_6"								"6"
+		"dealer_offer_7"								"7"
+		"dealer_offer_8"								"8"
+		"dealer_offer_9"								"9"
+		"dealer_offer_10"								"10"
+
+		"current_offer_tooltip"		"Đề nghị hiện tại cho bạn từ tay buôn vũ khí."
+		"declined_offer_tooltip"	"Đã từ chối đề nghị"
+		"future_offer_tooltip"		"Đề nghị chưa được tiết lộ."
+		"laptop_expiration_tooltip"		"Thời hạn trước khi thiết bị đầu nối và tất cả đề nghị hết hạn."
+		"laptop_max_offer_tooltip"		"Đặt mức giới hạn đề nghị tối đa. Bạn chỉ có thể nhận đề nghị dưới mức giới hạn này. Bạn có thể thay đổi bất cứ lúc nào."
+		"collection_xp_tooltip"			"Nhận XP khi xem đề nghị trong bộ sưu tập này. Mở để xem tiến độ và nhận XP."
+		"terminal_offer_limit_tooltip"		"Cập nhật giới hạn đề nghị tối đa. Tay buôn vũ khí sẽ ra đề nghị không quá giới hạn đó."
+		"popup_lootlist_title"			"XP cho catalog bộ sưu tập"
+		"popup_lootlist_desc"			"Nhận XP khi xem đề nghị trong bộ sưu tập này."
+
+		"popup_lootlist_progress:f"      "Đề nghị đã thấy: {d:seen}/{d:total}"
+		"popup_lootlist_claim_xp"		"Nhận XP thưởng"
+		"popup_lootlist_claim_ww"		"Đang nhận XP..."
+		"popup_lootlist_claim_ok"		"✔ Đã nhận XP"
+		"popup_vpn_status_connected"	"Trạng thái: Kết nối tới hệ thống mạng bảo mật"
+		"popup_vpn_status_disconnected"	"Trạng thái: Ngắt kết nối"
+		"popup_signal_full" 			"Tín hiệu tối ưu"
+		"popup_signal_ok" 				"Tín hiệu mạnh"
+		"popup_offer_limit_desc"		"Cập nhật giới hạn tối đa cho đề nghị trong tương lai"
+		"laptop_battery_tooltip" 		"Pin sạc: {d:percent}%"
+		"laptop_original_seal_tooltip" 	"Bất kì vật phẩm được mua từ thiết bị đầu nối vệ tinh này sẽ kèm theo chứng nhận chủ sở hữu gốc, có hiệu lực khi bạn vẫn còn là chủ sở hữu."
+		"laptop_zoom_tooltip" 			"Cuộn chuột để phóng to và thu nhỏ"
+		"laptop_pan_tooltip" 			"Giữ nút \"Shift\" và kéo để di chuyển camera"
+		"laptop_pricing_tooltip"		"Giá cả được áp dụng toàn cầu và điều chỉnh dựa trên nhu cầu từng mặt hàng trong bộ sưu tập."
+
+		"dealer_message_set_offer_limit_0"		"Trước khi làm ăn, giờ bạn được phép phê duyệt tới mức nào?"
+		"dealer_message_set_offer_limit_1"		"Xắn tay lên làm cho xong vụ này.<!--.25--> Tối đa bao nhiêu đây?"
+		"dealer_message_set_offer_limit_2"		"Trước khi vào chuyện...<!--.25--> Nóc tới đâu? Được phê chuẩn tới mức nào?"
+		
+		"dealer_message_start_0"  	"Mấy thứ này đều theo chuẩn cho dân chuyên hết.<!--.25-->Chất lượng khỏi bàn. Giấy tờ cũng khỏi luôn."
+		"dealer_message_start_1"  	"Đang muốn tiễn lô hàng chợ đen, không giấy tờ gì hết.<!--.25-->Đừng lo, an toàn để mua. Không còn lưu hành mấy năm rồi, chả ai ngó tới.<!--.25-->Vẫn bắn ngon khi ngắm trúng mục tiêu, khỏi thắc mắc."
+		"dealer_message_start_2"  	"Hải quan Ahradan giam hàng của tôi vào sáng nay. Tôi cố cứu vớt bằng một câu chuyện thương tâm có người đang hấp hối cần mớ thiết bị y tế... ai biết là ai đâu.<!--.25-->Không ăn thua. Nhưng chiếc cặp đầy tiền thì có.<!--.25-->Xem qua mớ máy lọc máu trước khi tôi chuyển cho bọn trẻ mồ côi nhé."
+		"dealer_message_start_3"  	"Chế độ mới vừa lên ngôi tại một trong những nước có chữ \"stan\".<!--.25-->Cánh cửa kho hàng mở ra và tôi nhảy vào lục lọi.<!--.25-->Tôi chỉ bán những món không thể truy ra gốc gác. Xem thử nhé."
+		"dealer_message_start_4"  	"Đồ tôi có hôm nay sạch lắm.<!--.25-->Về lý thuyết thì bạn là người đầu tiên chạm tay vào."
+		"dealer_message_start_5"  	"Hàng không nguồn gốc, không số sê-ri, hoạt động hoàn hảo.<!--.25-->Tòa án chiến tranh sẽ coi đây là bằng chứng.<!--.25-->Hai ta đều biết đây là kiệt tác tuyệt cmn vời."
+		"dealer_message_start_6"  	"Cả nguyên lô hàng ngoại nhập vừa được giải phóng từ đơn vị diễu hành.<!--.25-->Chủ yếu cầm khoe chứ chưa bắn bao giờ."
+		"dealer_message_start_7"  	"Mấy gã khách kia toàn muốn biết nguồn hàng tôi bán ở đâu. Có duyên hết sức.<!--.25-->Mấy người chỉ cần biết đây có phải là món hàng nóng nhất thị trường không thôi.<!--.25-->Xin thưa: Chuẩn không cần chỉnh."
+		"dealer_message_start_8"  	"Hiệp định hòa bình tại Drosvik. Tôi yêu hòa bình.<!--.25-->Bởi vì tôi quen biết một viên tướng với đống nợ khổng lồ và kho vũ khí đóng bụi.<!--.25-->Ừ thì...<!--.25-->Đương nhiên hòa bình cũng tốt mà. Mạng sống vô tội và...<!--.25-->Tôi đang nói vớ vẩn gì thế, đằng ấy đâu có quan tâm."
+		"dealer_message_start_9"  	"Lô này toàn hàng ngoại nhập chợ đen.<!--.25-->Toàn đồ hiếm, tay mơ không có cửa rờ tới. Xài thì chỉ có mà mê."
+		"dealer_message_start_10"  	"Xấu hổ quá.<!--.25-->Tôi hẳn đã vô tình dán nhầm nhãn một thùng hàng trong lô vận chuyển.<!--.25-->Đúng hơn thì vài chục thùng.<!--.25-->Sao không tôi giúp úm ba la tìm không ra đống hàng tồn trước khi cơ quan quản lý cảng có cớ vào cuộc?"
+		"dealer_message_start_11"  	"Tên thanh tra Drosvik muốn ăn hối lộ vụ này. Gã ngốc đó bắt đầu nói đến chuyện tịch thu hàng.<!--.25-->Và thế là tôi phải kiếm mấy kẻ ở Drosvik có tay nghề nói chuyện. Giờ thì miệng hắn ngậm như hến.<!--.25-->Và may mắn thay, mặt hàng này không cần quảng cáo nhiều."
+		"dealer_message_start_12"  	"Để đưa được lô hàng này qua biên giới, đây cũng không nhớ phải bôi trơn bao nhiêu người ở Ahradan.<!--.25-->Và tất cả số tiền hối lộ đều bằng đồng ahri. Bạn có biết phải chất đống bao nhiêu thùng giấy để hối lộ bằng loại tiền tệ vô giá trị của chúng không? Mấy tên đó phải làm gì với nền kinh tế đi chứ."
+		"dealer_message_start_13"	"Tôi quen tên môi giới ngầm cần xử lý thứ này nhanh gọn lẹ.<!--.25-->Lão nói thẳng luôn: \"Lẹ lẹ.\"<!--.25-->Ngoài ra còn có thòng thêm \"gấp gấp\".<!--.25-->Nói chung là vầy: Nếu đừng thắc mắc tại sao gã lại muốn bán thì bạn sẽ vui vui đấy."
+		"dealer_message_start_14"	"Hôm nay tôi bán mẫu cũ.<!--.25-->Hào nhoáng? Không. Nhưng bền khỏi chê.<!--.25-->Đến đời cháu chút chít vẫn bắn ầm ầm."
+		"dealer_message_start_15"	"Một tên dân quân nổi dậy đã giải phóng mớ đồ này khỏi kho vũ khí của ngài lãnh tụ vĩ đại.<!--.25-->Mà hắn hình như cũng giải phóng thân trên của ngài lãnh tụ khỏi đầu và tứ chi.<!--.25-->(Đây hổng có bán mấy thứ đó đâu, nhưng mà nếu muốn thì tôi có mối cho nè)."
+		"dealer_message_start_16"	"Sếp sòng ở biên giới Drosvik đe dọa sẽ tịch thu lô hàng này.<!--.25-->Tôi nghĩ hắn không nhận được lời nhắn rằng tôi không hối lộ ở Drosvik. Nhất là khi mà lực lượng tay chân lại rẻ mạt đến thế. Drosvik giống như thủ phủ kickboxing của thế giới vậy.<!--.25-->Dù sao đi nữa, người thay thế hắn ta đã làm mất lệnh tịch thu nhưng vẫn còn đôi tay."
+		"dealer_message_start_17"	"Tất cả những thứ này đều đến từ bộ sưu tập riêng của một tỷ phú.<!--.25-->À, cựu tỷ phú. Ông ta đang bị điều tra, nghĩa là tôi sẽ thanh lý những gì ổng không thể.<!--.25-->Nói thiệt nha, bạn cầm nó trên tay trông đẹp hơn là treo trên du thuyền."
+		"dealer_message_start_18"	"Thanh tra bến cảng mò sao ra được lô hàng có cân nặng khác biệt.<!--.25-->Thì cũng hài thật, thùng súng trường nặng y chang thùng \"linh kiện máy kéo\" nếu bạn thêm đúng mười ngàn đô vào bàn cân.<!--.25-->Giờ thì cùng xem mớ linh kiện máy kéo nào."
+		"dealer_message_start_19"	"Những thứ tôi có ngày hôm nay đã trải qua một cuộc đảo chính để đến được tay bạn.<!--.25-->Bề mặt hơi xước tí nhưng chức năng thì hoàn hảo. Tốt gỗ hơn tốt nước sơn, đúng không?"
+		"dealer_message_start_20"	"Một nước cộng hòa nhỏ bé vãi chưởng vừa treo cổ tổng thống của họ.<!--.25-->Thật may mắn khi tôi được thừa hưởng chuỗi tài nguyên của ông ấy."
+		"dealer_message_start_21"	"Gọi là lỗi xử lý cũng được. Điền đơn sai. Vô tình nhầm nhọt.<!--.25-->Đâu phải lúc nào cũng làm đúng. Tôi đây đang cố giúp bè bạn khỏi bay mất ghế trung sĩ hậu cần.<!--.25-->Thứ này giờ phải bốc hơi."
+		"dealer_message_start_22"	"Gã trưởng phòng hải quan cứ nghĩ có thể gây áp lực lên tôi với lô hàng này. Thế là tôi khiến công đoàn bến cảng gây áp lực còn lớn hơn.<!--.25-->Kể ra cũng hài, đống giấy tờ được giải quyết nhanh chóng trong khi cả bọn phải bận tìm kiếm một người mất tích.<!--.25-->Nhưng tôi hy vọng họ sớm tìm thấy. Tôi không nghĩ gã đó biết bơi."
+		"dealer_message_start_23"	"Biên phòng ở Ahradan nói giấy tờ không khớp. Thế rồi tôi đưa cho anh ta một xấp ahri là tự nhiên khớp liền.<!--.25-->Tôi thậm chí còn không biết mười nghìn ahri trị giá bao nhiêu. Khoảng sáu đô la hay gì đó.<!--.25-->Vậy. Bạn muốn xem một số khẩu súng không tồn tại hả?"
+		"dealer_message_start_24"	"Tôi có gã tướng thời chiến muốn mua cho bằng hết mớ này, nhưng lại ngu ngốc bị nổ banh xác khi drone tấn công.<!--.25-->Chân thành khuyên bạn đóng cửa sổ lại. Dù gì đi nữa, gã xuống mồ nhưng bạn lên đồ."
+		"dealer_message_start_25"	"Drosvik mới đổi chế độ. Đây cũng chả biết nguyên nhân, nhưng bằng cách nào đó, cả kho chứa đầy vũ khí bốc hơi sạch trong lúc rối ren.<!--.25-->Và bằng cách nào đó, tất cả rơi vào tay tôi. Điên rồ quá chứ gì?<!--.25-->Chưa hết, giờ tôi đang tính bán bớt đây. Nếu đằng đó hứng thú. Ngay và luôn."
+		"dealer_message_start_26"	"Có nguyên thùng hàng khai nhầm đang muốn phô ra đây. <!--.25-->Đừng để nhãn \"thiết bị nông nghiệp\" lừa. Có mà tự đào đất chôn mình nếu không bóp cò trước."
+		"dealer_message_start_27"	"Tôi ghét thương thảo với phe phiến loạn. Nói thẳng ra là tụi dân thường, còn nói thẳng nữa thì là lũ nghiệp dư chết dẫm.<!--.25-->Chẹp thôi tình hình cũng chả khả quan, trao món thiết bị này cho mấy tay chuyên nghiệp thì hơn."
+		"dealer_message_start_28"	"Khu vực nóng quanh năm ở phía nam vừa chứng kiến sự sụp đổ của quốc hội hai năm một lần.<!--.25--> Cả đống kho vũ khí địa phương giờ bung bét ra cho thiên hạ dòm ngó."
+		"dealer_message_start_29"	"Thanh tra quản lý cảng nói đây là lô hàng bất thường vào thứ Sáu tuần trước.<!--.25-->Tới thứ Hai, khi con gái hắn có đủ tiền học phí đóng cho trường Stamwick thì lô hàng lại được xem là dụng cụ nông nghiệp.<!--.25-->Nói gì giờ, giáo dục quan trọng lắm chứ đùa. Giờ chúng ta ngắm nghía mấy món đồ nông nghiệp ha."
+
+		"dealer_message_resume_0"  	"<!--1-->Quay lại hả. Tốt. Đề nghị vẫn còn hiệu lực."
+		"dealer_message_resume_1"  	"<!--1-->Cần chút thời gian để suy nghĩ? Cứ vô tư."
+		"dealer_message_resume_2"  	"<!--1-->Biết chắc bạn sẽ quay lại mà."
+		"dealer_message_resume_3"  	"<!--1-->Tiếp tục ở đoạn chúng ta ngưng lại nhé."
+		"dealer_message_resume_4"  	"<!--1-->Sẵn sàng chốt đơn chưa?"
+		"dealer_message_resume_5"  	"<!--1-->Tốt, trở lại rồi à. Tôi cần phải tiễn mấy thứ này, không thì mấy tay vô duyên lại đi hỏi han nữa."
+		"dealer_message_resume_6"  	"<!--1-->Mừng bạn trở lại. Chúng ta nói tới đâu rồi?"
+
+		"dealer_message_first_offer_0"	"<!--.5-->Nếu có hứng thú thì chúng ta chốt deal thôi."
+		"dealer_message_first_offer_1"	"<!--.5-->Không giấu giếm, có vài người khác cũng quan tâm món thiết bị này."
+		"dealer_message_first_offer_2"	"<!--.5-->Ưng thì mua lẹ. Không ưng thì nói, còn cả đống người muốn mua đang chờ kia kìa."
+		"dealer_message_first_offer_3"	"<!--.5-->Hàng này là của bạn nếu muốn. Không lấy là chịu thiệt đó."
+		"dealer_message_first_offer_4"	"<!--.5-->Đồng ý thì triển nào. Tôi không thể giữ món này để chờ bạn mãi."
+		"dealer_message_first_offer_5"	"<!--.5-->Đề nghị vẫn còn đó. Lấy hay không nào."
+		"dealer_message_first_offer_6"	"<!--.5-->Giờ có muốn món này không? Sao phải ngại, không thích thì thôi. Còn đầy người muốn mua."
+		"dealer_message_first_offer_7"	"<!--.5-->Giờ có làm ăn hay không?"
+		"dealer_message_first_offer_8"	"<!--.5-->Thời gian là vàng bạc đấy."
+		"dealer_message_first_offer_9"	"<!--.5-->Có muốn làm ăn nữa không?"	
+		"dealer_message_first_offer_10"	"<!--.5-->Tôi chả cần thuyết phục ai, hữu xạ tự nhiên hương. Giờ mua hay không mua?"		
+
+		"dealer_message_next_offer_0"	"<!--1-->Rồi rồi, cái đó không hợp gu. Đồ này thì sao?"
+		"dealer_message_next_offer_1"	"<!--1-->Phí của giời. May là tôi đang có tâm trạng vui vẻ. Xem món này đi."
+		"dealer_message_next_offer_2"	"<!--1-->Không lấy hở? Vậy là bạn chịu thiệt đó. Còn món này thì sao."
+		"dealer_message_next_offer_3"	"<!--1-->Hữu xạ tự nhiên hương. Tôi chẳng sợ ế.<!--.5-->Sẵn đang ở đây thì ngắm thử món này xem, hợp bạn ghê nơi."
+		"dealer_message_next_offer_4"	"<!--1-->Hiểu. Không phải kiểu của bạn. Vậy xem thử món này đi. Chắc hợp gu hơn đó."
+		"dealer_message_next_offer_5"	"<!--1-->Tôi có linh cảm bạn sẽ bỏ qua món đó. May thay, còn một bé xinh đang chờ trong cánh gà."
+		"dealer_message_next_offer_6"	"<!--1-->Ờ cũng đoán vậy. Xem món này thử đi. Chắc sẽ làm tim bạn lỡ một nhịp."
+		"dealer_message_next_offer_7"	"<!--1-->Sau này bạn sẽ hối hận đấy. Nhưng không sao cả. Món này được chứ?"
+		"dealer_message_next_offer_8"	"<!--1-->Biết quá mà. Bạn đâu có cắn câu dễ vậy. Món này thì sao?"
+		"dealer_message_next_offer_9"	"<!--1-->Rồi, cho qua món khai vị. Lên món chính luôn."
+		"dealer_message_next_offer_10"	"<!--1-->Hiểu mà, tôi cũng chả thích hình hài của món đó đâu. Đây đây, nhìn món này xem."		
+		"dealer_message_next_offer_11"   "<!--1-->Món đó chắc phải nhìn nhiều mới đổ. Món này thì ai nhìn cũng thích này."
+		"dealer_message_next_offer_12"   "<!--1-->Lô hàng này còn nhiều món lắm. Nhìn thử bé đẹp này đi."
+		"dealer_message_next_offer_13"   "<!--1-->Biết gì không? Tôi đoán chừng bạn sẽ nói thế mà. Giờ chuyển sang món này nhé."
+		"dealer_message_next_offer_14"   "<!--1-->Bạn khó chiều hơn tôi nghĩ đấy. Món này có làm mắt bạn sáng lên không?"
+		"dealer_message_next_offer_15"   "<!--1-->Bạn không làm tôi buồn đâu. Tôi nào có làm ra món quỷ đó. Cho bạn xem một lựa chọn khác nè."
+		"dealer_message_next_offer_16"   "<!--1-->Là tôi cũng không lấy. Nhưng món này thì khác. Cứ nhìn đi."
+		"dealer_message_next_offer_17"   "<!--1-->Không thích hả? Hiểu. Tới món tiếp theo."
+		"dealer_message_next_offer_18"   "<!--1-->Tiêu chuẩn cao dữ ha. Không thành vấn đề. Món tiếp theo có chất lượng không thua gì vàng 9999."
+		"dealer_message_next_offer_19"   "<!--1-->Tôi nào muốn phí tiền của bạn và phí thời gian của tôi. Cứ nhìn món này xem."
+		"dealer_message_next_offer_20"   "<!--1-->Này, tôi đề cao tính thẳng thắn của bạn. Cùng tiếp tục để khỏi tốn thời gian nào."
+		"dealer_message_next_offer_21"   "<!--1-->Được rồi, bạn không động lòng trước món đó. May mà tôi không chỉ bán một khẩu súng."
+		"dealer_message_next_offer_22"   "<!--1-->Không sao cả. Trong kho vẫn còn nhiều món khác để mang tới đây. Tiếp theo."
+		"dealer_message_next_offer_23"   "<!--1-->Tôi cứ tưởng chắc cú bán được hàng rồi. Có lẽ món này sẽ chốt kèo được đây."
+		"dealer_message_next_offer_24"   "<!--1-->Hiểu rồi. Không phù hợp. Có cái hợp cái không hen. Nhưng món này đây được đo ni đóng giày cho bạn."
+		"dealer_message_next_offer_25"   "<!--1-->Có vẻ bạn chẳng ưng bụng mấy món tôi đã giới thiệu. Để xem cái này có hợp nhãn bạn không."
+		"dealer_message_next_offer_26"   "<!--1-->Rồi rồi, không cà rỡn nữa. Tôi đảm bảo bạn sẽ mê tít món tiếp theo. Chắc vậy."
+		"dealer_message_next_offer_27"   "<!--1-->Không ưng món đó hả? Tôi cất vô kho vũ khí riêng vậy. Món này thì sao?"
+		"dealer_message_next_offer_28"   "<!--1-->Có gu hen. Để xem món tiếp theo có đáp ứng được tiêu chuẩn cao của đằng đó không."
+		"dealer_message_next_offer_29"   "<!--1-->Được rồi, món đó lấy đại trong đống đồ thôi. Giờ để tôi tìm kỹ hơn xíu."
+		"dealer_message_next_offer_30"   "<!--1-->Quên món vừa nãy đi. Đây mới là thứ tôi muốn bạn chiêm ngưỡng."
+		"dealer_message_next_offer_31"   "<!--1-->Món này ghi sẵn tên bạn nè. Ghi kiểu tâm linh á, chứ vừa mở hộp còn mới tinh tươm."
+		"dealer_message_next_offer_32"   "<!--1-->Ừa đâu thể mua hết, tôi hiểu mà. Nhiều khi bạn đang chờ một món gì đó đặc biệt. Như món này."
+		"dealer_message_next_offer_33"   "<!--1-->Cái đó thử nhiệt vui thôi. Món này mới là nhân vật chính bữa tiệc."
+		"dealer_message_next_offer_34"   "<!--1-->Ờ chắc không hợp. Nhưng món tiếp theo đây làm tôi nghĩ tới bạn."
+		"dealer_message_next_offer_35"   "<!--1-->Được thôi. Có món này tôi để dành lại cho bạn nãy giờ."
+		"dealer_message_next_offer_36"   "<!--1-->Ép dầu ép mỡ ai nỡ ép mua. Tôi chỉ đang cố gắng bán được gì thì bán thôi. Tới món tiếp theo."
+		"dealer_message_next_offer_37"   "<!--1-->Không thành vấn đề. Tôi nghĩ món kế tiếp sẽ hợp gu bạn hơn đấy."
+		"dealer_message_next_offer_38"   "<!--1-->Thông minh đó. Biết ngay là bạn không hấp tấp đâu. Để tôi chào hàng một món còn xịn sò hơn."
+		"dealer_message_next_offer_39"   "<!--1-->Không sao. Nếu là tôi cũng chẳng mua. Nhưng món này thì khác..."
+		"dealer_message_next_offer_40"   "<!--1-->Bắt tôi phải vòng ra sau để lấy mấy món hàng cao cấp hả? Ô kê, thích thì chiều."
+
+		"dealer_message_last_offer_0"	"<!--0-->Rồi, đề nghị cúng cùi cuối cùng đây. Có chấp nhận không?"
+		"dealer_message_last_offer_1"	"<!--0-->Hãy coi đây là đề nghị cuối cùng của tôi."
+		"dealer_message_last_offer_2"	"<!--0-->Đề nghị cuối cùng. Đằng ấy mua không mua nói một lời, đừng lần lữa nữa."
+		"dealer_message_last_offer_3"	"<!--0-->Đề nghị cuối.<!--1-->Nếu không mua thì tôi xin kiếu. Thứ này NỔ banh xác ráng chịu."
+		"dealer_message_last_offer_4"	"<!--0-->Đề nghị cuối. Tôi không thèm năn nỉ nha."
+		"dealer_message_last_offer_5"	"<!--0-->Được rồi, đề nghị tốt nhất rồi đó."
+		"dealer_message_last_offer_6"	"<!--0--> Rồi nè. Giờ chốt deal hay không?"		
+		"dealer_message_last_offer_7"	"<!--0-->Đề nghị cuối cùng và tốt nhất."
+		"dealer_message_last_offer_8"	"<!--0-->Mỗi bên nhường nhau chút. Đề nghị này tốt nhất rồi."
+		"dealer_message_last_offer_9"	"<!--0-->Đề nghị này là tốt nhất rồi, chần chừ là mất cơ hội."	
+
+		"dealer_message_end_0"			"<!--0-->Thôi bạn có nhiều cơ hội rồi. Nếu đang cầm thiết bị đầu nối vệ tinh thì thả xuống ngay. Ba... hai..."
+		"dealer_message_end_1"			"<!--0--> Chẹp, tha hồ mà hối tiếc khi bị bắn lần tới rồi lục lọi tìm món vũ khí mà mình vừa chê ỏng chê eo."
+		"dealer_message_end_2"			"<!--0-->Thôi tôi đời nào năn nỉ ai mua. Mong đằng đó đừng có mơ tưởng nhận được thiết bị đầu nối vệ tinh miễn phí."
+		"dealer_message_end_3"			"<!--0-->Quyết định của bạn. Thương vụ của bạn. Đám tang của bạn luôn không chừng.<!--1-->Cẩn thận né cái thiết bị đầu nối vệ tinh chuẩn bị nổ ra đi."
+
+		"dealer_message_timerexpired_0"		"<!--.1-->Rồi, khỏi lo."
+		"dealer_message_timerexpired_1"		"<!--.1-->Quên đi<!--.5-->Bạn đã mất cơ hội."
+		"dealer_message_timerexpired_2"		"<!--.1-->Khỏi giao dịch gì nữa.<!--.5-->Nhà còn bao việc."
+		"dealer_message_timerexpired_3"		"<!--.1-->Thôi để tôi đi tìm người thật sự ý định mua.<!--.5-->Tạm biệt sớm bớt đau khổ."
+		"dealer_message_timerexpired_4"		"<!--.1-->Tùy bạn thôi.<!--.5-->Hẹn gặp lại."
+		"dealer_message_timerexpired_5"		"<!--.1-->Tíc tắc.<!--.5-->Hết giờ."
+		"dealer_message_timerexpired_6"		"<!--.1-->Khỏi giao dịch đi.<!--.5-->Ở chỗ khác là tôi bán được 10 món rồi."
+		"dealer_message_timerexpired_7"		"<!--.1-->Cứ nghĩ tôi đang giúp bạn giết thêm mạng.<!--.5-->Hóa ra tôi chỉ phí thời gian."
+		"dealer_message_timerexpired_8"		"<!--.1-->Thỏa thuận thất bại."	
+		"dealer_message_timerexpired_9"		"<!--.1-->Hết giờ."
+		"dealer_message_timerexpired_10"	"<!--.1-->Tôi chán ngán lắm rồi. Thôi khỏi giao dịch gì nữa."		
+
+		"dealer_message_open_check_out_0"		"<!--.5-->Món này là dành cho bạn. Thế nên tôi mới nghĩ tới bạn trước. Chốt kèo thôi."
+		"dealer_message_open_check_out_1"		"<!--.5-->Quyết định sáng suốt đấy. Để tôi đóng gói cẩn thận cho nhé."
+		"dealer_message_open_check_out_2"		"<!--.5-->Bạn sẽ không hối hận đâu. Người khác thì có đấy."
+		"dealer_message_open_check_out_3"		"<!--.5-->Biết chắc bạn sẽ là mua mà. Ký tên đóng dấu chốt deal nhé."
+		"dealer_message_open_check_out_4"		"<!--.5-->Hoàn hảo rồi. Triển thôi."		
+		"dealer_message_open_check_out_5"		"<!--.5-->Chọn chuẩn đó."	
+		"dealer_message_open_check_out_6"		"<!--.5-->Lựa chọn khôn ngoan nhất của bạn rồi. Chốt nhé."		
+		"dealer_message_open_check_out_7"		"<!--.5-->Tuyệt. Ký tên đóng dấu chốt deal nhé."
+
+		"dealer_message_txn_xld_bailout_0"		"<!--.5-->Không vội. Bạn biết tìm tôi ở đâu mà."
+		"dealer_message_txn_xld_bailout_1"		"<!--.5-->Tôi sẽ ở đây chờ."
+		"dealer_message_txn_xld_bailout_2"		"<!--.5-->Tôi sẽ giữ lại đề nghị này và chờ bạn."
+		"dealer_message_txn_xld_bailout_3"		"<!--.5-->Thế nào bạn cũng quay lại. Cứ việc cân nhắc thêm."
+
+		"dealer_message_purchase_finalizing_0"	"Đang hoàn tất thông tin thanh toán..."
+		"dealer_message_purchase_confirm_0"		"<!--.5-->Xong"
+
+		"dealer_message_stattrack_0"			"Tất nhiên đã cài sẵn StatTrak™."
+		"dealer_message_stattrack_1"			"Bé cưng này có thêm StatTrak™ nữa."
+		"dealer_message_stattrack_2"			"Trang bị StatTrak™, chẳng cần bạn lẩm nhẩm trong đầu nữa."
+		"dealer_message_stattrack_3"			"Đi kèm StatTrak™. Bạn chỉ cần bóp cò, mọi tính toán đã được lo liệu."
+		"dealer_message_stattrack_4"			"StatTrak™. Cứ liên tưởng tới bảng điểm số. Dành cho môn thể thao bắn nhau khốc liệt."
+		"dealer_message_stattrack_6"			"Bao gồm StatTrak™, cho những chuyên gia thích bắn giết VÀ số liệu."
+		"dealer_message_stattrack_7"			"Tất nhiên là kèm theo StatTrak™."
+		"dealer_message_factory_new_0"			"Vừa đập hộp thôi. Tin tôi đi, còn mùi đồ mới đây mà."
+		"dealer_message_factory_new_1"			"Mới nguyên. Món này vẫn còn mùi đồ mới mà."
+		"dealer_message_factory_new_2"			"Chưa dùng tí gì. Bạn là người đầu tiên bóp cò đó."
+		"dealer_message_factory_new_3"			"Lấy trực tiếp từ nơi sản xuất, chưa hao mòn. Đúng ý bạn rồi."
+		"dealer_message_factory_new_4"			"Còn sạch trơn và mới tinh. Không một vết xước, vừa bước vào đời. Giờ trao vô tay bạn."
+		"dealer_message_factory_new_5"			"Còn mới nguyên, chưa bắn bao giờ. Không chút tì vết."
+		"dealer_message_covert_0"				"Bạn ơi, trúng độc đắc rồi đó. Món này không chỉ hiếm đâu, là vũ khí mật vụ đó."
+		"dealer_message_covert_1"				"Tôi đã hành nghề cả thập kỷ mà chưa từng thấy món nào như vầy.<!--.5-->Bạn khá tinh mắt đấy. Và còn may mắn nữa."
+		"dealer_message_covert_2"				"Tôi biết có mấy đứa bán cả mẹ mình cho trại lao động khổ sai để có được thứ đó. Làm tốt lắm."
+		"dealer_message_covert_3"				"Zời ơi. Giờ thì tôi sắp suy nghĩ lại rồi. Mang nó ngay khỏi đây trước khi tôi hối hận vì đã bán."
+		"dealer_message_covert_4"				"Hàng mật vụ. Một trong những thứ bạn có thể chỉ thấy một lần trong đời trên thị trường mở, nếu may mắn.<!--.5-->Tôi nghĩ bạn khá may mắn đấy."
+		"dealer_message_covert_5"				"Nó là viên ngọc từ vương miện. Kể bạn nghe nè. Năm ngoái có người nằng nặc đòi mua. Họ bị thiệt thì bạn lợi rồi."
+		"dealer_message_covert_6"				"Hiếm có khó tìm đấy, lại còn từ trên trời rơi xuống bạn."
+		"dealer_message_covert_7"				"Làm nghề này cả đời nên tôi nói bạn phải tin tôi, hiếm có khó tìm lắm đấy."
+		"dealer_message_covert_8"				"Tôi hy vọng bạn trân trọng kèo thơm vừa chốt. Đồ cho mật vụ. Đúng nghĩa bắt gặp kỳ lân."
+		"dealer_message_covert_9"				"Tốt hơn hết là bạn nên cất nó vào kho vũ khí và đừng để tôi nhìn thấy nó lần nữa trước khi tôi hối hận. Của báu thế còn gì."
+		"dealer_message_classified_0"				"Hàng tuyệt mật. Không nguồn gốc, không giấy tờ. Không ghi chú trong sổ sách."
+		"dealer_message_classified_1"				"Hàng tuyệt mật. Không giấy tờ, không nguồn gốc, không dấu vết."
+		"dealer_message_classified_2"				"Thuộc chiến dịch tuyệt mật, không giấy tờ. Không nói thì chẳng ai biết sự tồn tại của khẩu tôi đang cầm đây."
+		"dealer_message_classified_3"				"Bán kín đáo. Hàng tuyệt mật. Dùng cho tốt nhé."
+		"dealer_message_classified_4"				"Hàng tuyệt mật. Không số sê-ri, không giấy tờ."
+		"dealer_message_classified_5"				"Hàng mật vụ. Tuồn theo đường trái ngạch, số cũng xóa, phủ nhận lúc nào cũng được. Chưa từng thấy qua bao giờ."
+		"dealer_message_restricted_0"				"Lô hàng hạn chế. Cốt tốt hơn, bắn chuẩn hơn. Vượt trội hơn hẳn đồ loại thường."
+		"dealer_message_restricted_1"				"Mấy thứ này bị hạn chế là có lý do hết. Dân thường xài thì phí quá."
+		"dealer_message_restricted_2"				"Hàng hạn chế, tất nhiên. Món vũ khí hạng A mới nhất của bạn."
+		"dealer_message_battle_scarred_0"		"Đâu đó vài vết lõm nhưng vẫn bắn tốt."
+		"dealer_message_battle_scarred_1"		"Có mòn tí, nghĩa là nó đã chứng kiến và trải qua một số hành động."
+		"dealer_message_battle_scarred_2"		"Nhặt từ chiến trường. Trông hao mòn thế thôi nhưng bền như xe tăng đấy."
+		"dealer_message_battle_scarred_3"		"Hao mòn hả? Không không, mấy vết xước này là chiến tích cả."
+		"dealer_message_battle_scarred_4"		"Khẩu này đã kinh qua vài trận chiến. Hơi trầy trụa chút nhưng vẫn được việc."
+		"dealer_message_minimal_wear_0"			"Có chút tì vết trên khẩu này. Một hai chỗ trầy xước, nhưng vẫn ngon lành."
+		"dealer_message_minimal_wear_1"			"Tình trạng hoàn hảo. Gần như thế. Vì có dùng mấy đâu."
+		"dealer_message_minimal_wear_2"			"Có chút tì vết, đã qua sử dụng, nhưng bắn ngon lành."
+		"dealer_message_minimal_wear_3"			"Có chút tì vết. Trầy xước đôi chỗ nhưng đảm bảo không hối hận khi thêm khẩu này vào bộ sưu tập."
+		"dealer_message_minimal_wear_4"			"Dùng vài lần nơi chiến trường rồi, chẳng giấu gì đằng đó. Khẩu này kỳ cựu à nha."
+		"dealer_message_usp-s_0"				"Khẩu này không phát ra tiếng. Hiệu quả nhưng yên lặng."
+		"dealer_message_usp-s_1"				"Tĩnh lặng và kín đáo. Thôi em giấu cho riêng em biết."
+		"dealer_message_usp-s_2"				"Nào trúng đạn mới hay, vì chẳng ai biết đạn bắn ra khi nào và tới đâu."
+		"dealer_message_usp-s_3"				"Khẩu này yên ắng như lời thì thầm."
+		"dealer_message_item_desc_0"			"<!--.25-->Có ghi chú nè:<!--.25-->{s:flavor-text}<!--.25-->Ai hiểu sao hiểu nha."
+		"dealer_message_item_desc_1"			"<!--.25-->Có ghi chú nhỏ đi kèm:<!--.25-->{s:flavor-text}"
+
+		"dealer_message_addition_stattrak_0"	"<!--.25-->... kèm theo StatTrak™."
+		"dealer_message_addition_stattrak_1"	"<!--.25-->Cài sẵn module StatTrak™."
+		"dealer_message_addition_stattrak_2"	"<!--.25-->Với StatTrak™, thoải mái dõi theo thế sự hỗn loạn do bạn gây ra."
+		"dealer_message_addition_stattrak_3"	"<!--.25-->Có thêm StatTrak™ nữa."
+		"dealer_message_addition_stattrak_4"	"<!--.25-->Kèm theo StatTrak™, bạn sẽ chẳng bao giờ mất dấu số người đã hạ gục."
+
+		"dealer_message_addition_factory_new_0"	"<!--.25-->Và còn mới nguyên. Chưa từng bắn."
+		"dealer_message_addition_factory_new_1"	"<!--.25-->Và còn mới nguyên. Chưa bóc tem."
+		"dealer_message_addition_factory_new_2"	"<!--.25-->Lấy trực tiếp từ kho. Mới nguyên."
+		"dealer_message_addition_factory_new_3"	"<!--.25-->Cái này còn mới nguyên. Chưa bắn bao giờ."
+		
+		"dealer_message_limit_first_time_0"		"Tốt thôi, đằng này sẽ ra đề nghị không quá {s:limit}.<!--.25--> Để xem bạn cần gì nào."
+		"dealer_message_limit_first_time_2"		"Chỉ nhận đề nghị dưới {s:limit}, nhớ rồi nhớ rồi.<!--.25--> Không có nhiều thời gian đâu. Làm việc thôi."
+		"dealer_message_limit_first_time_3"		"Ghi nhận. Đã cập nhật lại.<!--.25--> Bắt đầu thôi."
+		"dealer_message_limit_first_time_unlimited_0"		"Tuyệt cú mèo, không giới hạn tối đa. Tôi sẽ mở rộng catalog hiện tại từ giờ trở đi.<!--.25--> Không có nhiều thời gian, làm cho nhanh nào."
+		"dealer_message_limit_first_time_unlimited_1"		"Đã rõ. Không phanh. Giờ chơi nghiêm túc luôn.<!--.25--> Để xem đây có hàng nào bạn cần không."
+
+		"dealer_message_limit_0"				"Tốt thôi, đằng này sẽ ra đề nghị không quá {s:limit}."
+		"dealer_message_limit_1"				"Chỉ nhận đề nghị dưới {s:limit}, nhớ rồi nhớ rồi."
+		"dealer_message_limit_2"				"Đang chỉnh lại tham số. Chỉ đề nghị hàng không quá {s:limit}."
+		"dealer_message_limit_3"				"Đề nghị không quá {s:limit}. Đã ghi nhận và cập nhật lại."
+		"dealer_message_limit_4"				"Tôi chỉ đưa ra những gì có giá không quá {s:limit}"
+		"dealer_message_limit_5"				"Có giới hạn mới rồi, {s:limit}"
+		"dealer_message_limit_6"				"Đã hiểu. Đang đặt lại bộ lọc để đề nghị không quá {s:limit}."
+		"dealer_message_limit_unlimited_0"		"Tuyệt cú mèo, không giới hạn tối đa. Tôi sẽ mở rộng catalog hiện tại từ giờ trở đi."
+		"dealer_message_limit_unlimited_1"		"Đã rõ, không giới hạn. Nếu có gì hiếm hoi thì cũng không ngần ngại."
+		"dealer_message_limit_unlimited_2"		"Nghe như mật rót vào tai. Nếu có gì hợp túi tiền nổi lên thì đây sẽ không ngần ngại giới thiệu"
+		"dealer_message_limit_unlimited_3"		"Đã rõ. Không phanh. Giờ chơi nghiêm túc luôn."
+
+		"system_dealer_left_chat_0"				"Tay buôn đã rời phòng trò chuyện."
+		"system_dealer_join_chat_0"				"Đề nghị từ tay buôn vũ khí cho {s:collection}.<!--1.25-->Đã kết nối với tay buôn"
+		"system_user_reject_offer_0"			"{s:user-name} từ chối đề nghị."
+
+		"system_user_updated_offer_limit_0"			"Cập nhật giới hạn đề nghị tối đa tới {s:limit}. Bạn có thể thay đổi thiết lập bất cứ lúc nào."
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//Retakes
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		"GameUI_Retake_DefendA"					"Phòng thủ khu A!"
+		"GameUI_Retake_DefendB"					"Phòng thủ khu B!"
+		"GameUI_Retake_RetakeA"					"Chiếm lại khu A!"
+		"GameUI_Retake_RetakeB"					"Chiếm lại khu B!"
+		"GameUI_Retake_Notice_MvpCardAvailable"	"Xin chúc mừng! Sẽ có thẻ thưởng MVP cho ván tiếp theo!"
+		"GameUI_Retake_Card_CardsPreview"		"Xem trước thẻ"
+		"GameUI_Retake_Card_AvailableCard"		"Chọn trang bị này"
+		"GameUI_Retake_Card_AvailableCards"		"Chọn một thẻ trang bị"
+
+		"GameUI_Retake_Card_Bonus"				"Thưởng thêm"
+		"GameUI_Retake_Card_Enemy"				"Trang bị phe địch"
+		"GameUI_Retake_Card_Mvp"				"MVP"
+
+		"GameUI_Retake_Card_4v3"				"4v3"
+		"GameUI_Retake_Card_FlashOut"			"Quăng flash nè!"
+		"GameUI_Retake_Card_HideAndPeek"		"Núp bóng và hé mình"
+		"GameUI_Retake_Card_TakeFive"			"Nhặt 5 rồi 7"
+		"GameUI_Retake_Card_OnlyTakesOne"		"Chỉ cần một mà thôi"
+		"GameUI_Retake_Card_SneakyBeakyLike"	"Nhẹ bước như mèo"
+		"GameUI_Retake_Card_UmpInSmoke"			"UMP lên khói"
+		"GameUI_Retake_Card_FunNGun"			"Vũ-khí-tấu-hài"
+		"GameUI_Retake_Card_Sharpshooter"		"Xạ thủ"
+		"GameUI_Retake_Card_BurstBullpup"		"Bullpup chùm ba"
+		"GameUI_Retake_Card_LightEmUp"			"Sáng mắt tinh tươm"
+		"GameUI_Retake_Card_Kobe"				"Kobe!"
+		"GameUI_Retake_Card_1g"					"1g"
+		"GameUI_Retake_Card_DisappearingAct"	"Thoát ẩn"
+		"GameUI_Retake_Card_EyesOnTarget"		"Ngắm thấy mục tiêu"
+		"GameUI_Retake_Card_BehindEnemyLines"	"Sau chân kẻ địch"
+		"GameUI_Retake_Card_4BadGuysLeft"		"Còn bốn tên thôi"
+		"GameUI_Retake_Card_LookAway"			"Ngoảnh mặt đi!"
+		"GameUI_Retake_Card_WhenThereIsSmoke"	"Ở đâu có khói..."
+		"GameUI_Retake_Card_BlindFire"			"Bắn đại"
+		"GameUI_Retake_Card_QueOta"				"Qué ota?"
+		"GameUI_Retake_Card_SmokeScreen"		"Màn khói"
+		"GameUI_Retake_Card_TecTecBoom"			"TEC, TEC, BÙM!"
+		"GameUI_Retake_Card_BackInAFlash"		"Trở lại trong chớp mắt!"
+		"GameUI_Retake_Card_AllIn"				"Vào tất"
+		"GameUI_Retake_Card_BoomBox"			"Hộp nổ"
+		"GameUI_Retake_Card_SetThemFree"		"Cho nó xõa"
+		"GameUI_Retake_Card_OlReliable"			"Cũ nhưng không phũ"
+		"GameUI_Retake_Card_SmokeShow"			"Trình diễn khói"
+		"GameUI_Retake_Card_HotShot"			"Hàng nóng"
+		"GameUI_Retake_Card_EyeSpy"				"Mắt tinh"
+		"GameUI_Retake_Card_TheAWPortunity"		"Cơ hội lên AWP"
+		"GameUI_Retake_Card_FindersKeepers"		"Tìm được của rơi"
+
+		"Hud_Retake_BombSite"					"{s:hud-retake-bombsite}"
+		
+		"Hud_Money" "${d:r:hud-money-amount}"
+		"Hud_Money_Signed" "{s:sign}${d:r:hud-money-delta}"
+
+		"Propcounter_money" "$%s1" //e.g. used on danger zone security door
+
+		"csgo_player_left_game"					" Người chơi %s1 rời trận (%s2)"
+
+		"LoadoutLockedPopupTitle"				"Hành trang đã khóa"
+		"LoadoutLockedPopupText"				"Không thể thay đổi hành trang trong khi tìm trận tranh đấu."
+
+		"Workshop_item_title" "Công cụ đăng gửi vật phẩm"
+		"Workshop_item_error_title" "Nhập tiêu đề cho vật phẩm. Mục này phải bao gồm tên người chơi hoặc các thông tin nhận diện khác"
+		"Workshop_item_error_image" "Chọn ảnh jpeg hoặc png hợp lệ với kích thước nhỏ hơn {s:max_size} và có chiều ngang/cao ít nhất là {d:min_height}"
+		"Workshop_item_ready" "Sẵn sàng tải lên vật phẩm"
+		"SFUI_Go_To_Mic_Enable_key" "Tới nút gán phím micro"
+		"SFUI_Go_To_Console_Key_Binding" "Tới nút gán phím Console"
+
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//Steam Video
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		"SteamVideo_Player_Kill_Title"					"Bạn giết %s1"
+		"SteamVideo_Player_Kill_Description"			"bằng %s1"
+
+		"SteamVideo_Player_Double_Kill_Title"			"Hai mạng"
+		"SteamVideo_Player_Multi_Kill_Title"			"Giết nhiều mạng"
+		
+		"SteamVideo_Player_Death_Title"					"Bạn bị giết bởi %s1"
+		"SteamVideo_Player_Death_Description"			"bằng %s1"
+		"SteamVideo_Player_Death_Description_Plural"	"bằng %s1"
+		"SteamVideo_Player_Killed_Self_Title"			"Bạn tự sát"
+		
+		"SteamVideo_Bomb_Planted_Title"					"Bom đã đặt"
+		"SteamVideo_Bomb_Planted"						"%s1 đã đặt bom"
+		"SteamVideo_Bomb_Planted_LocalPlayer"			"Bạn đã đặt bom"
+		
+		"SteamVideo_Bomb_Defused_Title"					"Bom đã được gỡ"
+		"SteamVideo_Bomb_Defused"						"%s1 đã gỡ bom"
+		"SteamVideo_Bomb_Defused_LocalPlayer"			"Bạn đã gỡ bom"
+		
+		"SteamVideo_Bomb_Exploded_Title"				"Bom nổ"
+		
+		"SteamVideo_Round_Number_Label"					"Ván %s1"
+		"SteamVideo_Start_Of_Round_Title"				"Bắt đầu ván %s1"
+
+		"SteamVideo_MatchScore"							"Điểm"
+		"SteamVideo_KDA"								"K/D/A"
+
+		// ---------------------------------------------------------------------------------------------
+		// WEEKLY MISSIONS
+		// ---------------------------------------------------------------------------------------------
+		"weekly_mission_title"							"NHIỆM VỤ"
+		"weekly_mission_title_complete"					"NHIỆM VỤ HOÀN THÀNH"
+		"weekly_mission_expiration"						"Hết hạn sau <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_expiration_pausemenu"			"Hết hạn sau <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_next_mission"					"Nhiệm vụ tiếp theo bắt đầu sau <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_progress"						"<b>{d:mission-progress}</b>/{d:mission-points}"
+		"CS2_Quest_Weapon_Mode"							"Chuyên môn trang bị: <b>{s:gamemode}</b>, <b>{s:weapon}</b>"
+		"CS2_Quest_Weapon_Mode_desc"					"Ghi điểm cho mỗi {s:actions}{s:optional_target} bằng <b>{s:weapon}</b> trong <b>{s:gamemode}</b>."
+
+		"mission_searching"								"Đang tìm..."
+		"mission_xp_remaining"							"{s:mission-xp} XP"
+
+		"mission_segment_tooltip"						"{d:xp-reward} XP"
+
+		"mission_location"								"<b>{s:gamemode}</b> — <b>{s:location}</b>"
+		"mission_directive:f"							"<b>{d:mission-points}</b> {s:action}"
+ 		"mission_directive_progress:f"					"{d:mission-progress}/<b>{d:mission-points}</b> {s:action}"
+
+
+		"quest_11000_var_desc:f"	  					"Giết bằng {s:item1} trong <b>{s:gamemode}: {s:location}</b>."
+		"quest_11000_var_partial:f" 					"... bằng {s:item1}."
+		"quest_11000_var_ingame:f"	  					"Giết bằng {s:item1}."
+
+		"quest_11001_var_desc:f"	 					"Giết bằng {s:item1} trong <b>{s:gamemode}: {s:location}</b>."
+		"quest_11001_var_partial:f"	 					"... bằng {s:item1}."
+		"quest_11001_var_ingame:f"	 					"Giết một mạng bằng {s:item1}"
+
+		"quest_11002_var_desc:f"	 					"Giết bằng {s:item1} trong <b>{s:gamemode}: {s:location}</b>."
+		"quest_11002_var_partial:f"	 					"... bằng {s:item1}."
+		"quest_11002_var_ingame:f"	 					"Giết bằng {s:item1}"
+
+		"quest_11003_var_desc:f"						"Giết bằng {s:item1} trong <b>{s:gamemode}: {s:location}</b>."
+		"quest_11003_var_partial:f"	 					"... bằng {s:item1}."
+		"quest_11003_var_ingame:f"	 					"Giết bằng {s:item1}"
+
+		"quest_11004_var_desc:f"	 					"Thắng ván đấu trong <b>{s:gamemode}: {s:location}</b>."
+		"quest_11004_var_ingame:f"						"Thắng ván đấu"
+
+		"quest_11005_var_desc:f"	 					"Thắng ván đấu trong <b>{s:gamemode}: {s:location}</b>."
+		"quest_11005_var_ingame:f"						"Thắng ván đấu"
+
+		"quest_11006_var_desc:f"	 					"Thắng ván đấu trong <b>{s:gamemode}: {s:location}</b>."
+		"quest_11006_var_ingame:f"						"Thắng ván đấu"
+
+		"quest_11007_var_desc:f"	 					"Giết bằng {s:item1} trong <b>{s:gamemode}: {s:location}</b>."
+		"quest_11007_var_partial:f"	 					"... bằng {s:item1}."
+		"quest_11007_var_ingame:f"	 					"Giết bằng {s:item1}"
+
+		"quest_11008_var_desc:f"	 					"Thắng ván đấu trong <b>{s:gamemode}: {s:location}</b>."
+		"quest_11008_var_ingame:f"						"Thắng ván đấu"
+
+		"quest_11009_var_desc:f"	 					"Thắng ván đấu trong <b>{s:gamemode}: {s:location}</b>."
+		"quest_11009_var_ingame:f"						"Thắng ván đấu"
+
+		"quest_11010_var_desc:f"	 					"Giết bằng {s:item1} trong <b>{s:gamemode}: {s:location}</b>."
+		"quest_11010_var_partial:f"	 					"... bằng {s:item1}."
+		"quest_11010_var_ingame:f"	 					"Giết bằng {s:item1}"
+
+		"quest_11011_var_desc:f"	 					"Thắng ván đấu trong <b>{s:gamemode}: {s:location}</b>."
+		"quest_11011_var_ingame:f"						"Thắng ván đấu"
+
+		"quest_11012_var_desc:f"	 					"Thắng ván đấu trong <b>{s:gamemode}: {s:location}</b>."
+		"quest_11012_var_ingame:f"						"Thắng ván đấu"
+
+		"quest_11013_var_desc:f"	 					"Thắng ván đấu trong <b>{s:gamemode}: {s:location}</b>."
+		"quest_11013_var_ingame:f"						"Thắng ván đấu"
+
+		"quest_11014_var_desc:f"	 					"Thắng ván đấu trong <b>{s:gamemode}: {s:location}</b>."
+		"quest_11014_var_ingame:f"						"Thắng ván đấu"
+
+		"quest_11015_var_desc:f"	 					"Thắng ván đấu trong <b>{s:gamemode}: {s:location}</b>."
+		"quest_11015_var_ingame:f"						"Thắng ván đấu"
+
+// ---------------------------------------------------------------------------------------------
+// Join Friend Listen Servers
+// ---------------------------------------------------------------------------------------------
+
+		"tooltip_viewaddon"				"Ghé thăm bản đồ tùy chỉnh trên trang Workshop"
+		"tooltip_kick_player"			"Đuổi người chơi khỏi máy chủ cục bộ"		
+		"tooltip_short_viewaddon"			"Xem bản đồ tùy biến"
+		"tooltip_short_kick_player"			"Đuổi"
+
+// crow_mask_50454_comment
+// crow_mask_50455_comment
+}
+
+
+
+
+}
+
+
+				"Ít bước chân thành tiếng nhất:"
 		"accolade_quietest_value"						"{s:accolade-value-string}"
 
 		"accolade_quietest_2"							"Kẻ rình rập"

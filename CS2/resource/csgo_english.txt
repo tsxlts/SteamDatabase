@@ -1591,7 +1591,30 @@
 		"TMid"				"T Mid"
 		"Toilets"			"Toilets"
 		"Candle"			"Candle"
-
+		//Cache
+		"OutsideA"			"Outside A"
+		"OutsideB"			"Outside B"
+		"AHalls"			"A Halls"
+		"BHalls"			"B Halls"
+		"SunRoom"			"Sun Room"
+		"Checkers"			"Checkers"
+		"Headshot"			"Headshot"
+		"TreeRoom"			"Tree Room"
+		"CTLane"			"CT Lane"
+		"Bear"				"Bear"
+		"BusStop"			"Bus Stop"
+		"Corner"			"Corner"
+		"ABoost"			"A Boost"
+		"Highway"			"Highway"
+		"Sandbags"			"Sandbags"
+		"Cubby"				"Cubby"
+		"MidRoof"			"Mid Roof"
+		"Lockers"			"Lockers"
+		"AStairs"			"A Stairs"
+		"TTruck"			"T Truck"
+		"Useless"			"Useless"
+		"TYard"				"T Yard"
+		"Boost"				"Boost"
 		// coop_cementplant
 		"Gravelpit"		"Gravel Pit"
 		"Forest"		"Forest"
@@ -1969,8 +1992,8 @@
 		"Team_Cash_Award_no_income_suicide"					" +$0 penalty for suiciding"
 		"Team_Cash_Award_Generic"							" +$%s1 team income"
 		"Team_Cash_Award_Custom"							" +$%s1 %s2"
-		"Team_Cash_Award_Dead_Terrorists:p"					" +$%s1 team income for %s2 eliminated terrorist#|# +$%s1 team income for %s2 eliminated terrorists"
-		"Team_Cash_Award_Dead_CTs:p"						" +$%s1 team income for %s2 eliminated CT#|# +$%s1 team income for %s2 eliminated CTs"
+		"Team_Cash_Award_Dead_Terrorists:f"					" +$%s1 team income for {num_enemies} eliminated {num_enemies, plural, one{terrorist} other{terrorists}}"
+		"Team_Cash_Award_Dead_CTs:f"						" +$%s1 team income for {num_enemies} eliminated {num_enemies, plural, one{CT} other{CTs}}"
 
 
 		"Notice_Bonus_Shorthanded_Eligibility"			" Your team will be eligible for short-handed income in %s1 rounds"
@@ -2334,10 +2357,14 @@
 		// Econ date formatting supports the following tokens:
 		//    %year%, %monthshort%, %monthlong%, %mmday% (01-31), %mday% (1-31), %day% (legacy unlocalized "Jul 30" shouldn't be used), %hour%, %min%, %sec%
 		//
-		"Econ_DateFormat"						"%monthshort% %mmday%, %year% (%hour%:%min%:%sec%)"
-		"Econ_DateFormat_GMT"					"%monthshort% %mmday%, %year% (%hour%:%min%:%sec%) GMT"
-		"Econ_DateFormat_DateOnly"				"%monthshort% %mmday%, %year%"
-		"Econ_DateFormat_GMT_DateOnly"			"%monthshort% %mmday%, %year% GMT"
+		"Econ_DateFormat:f"							"{monthshort} {mmday}, {year} ({hour}:{min}:{sec})"
+		"Econ_DateFormat_GMT:f"						"{monthshort} {mmday}, {year} ({hour}:{min}:{sec}) GMT"
+		"Econ_DateFormat_DateOnly:f"				"{monthshort} {mmday}, {year}"
+		"Econ_DateFormat_GMT_DateOnly:f"			"{monthshort} {mmday}, {year} GMT"
+		"Econ_DateFormat"							"%monthshort% %mmday%, %year% (%hour%:%min%:%sec%)"
+		"Econ_DateFormat_GMT"						"%monthshort% %mmday%, %year% (%hour%:%min%:%sec%) GMT"
+		"Econ_DateFormat_DateOnly"					"%monthshort% %mmday%, %year%"
+		"Econ_DateFormat_GMT_DateOnly"				"%monthshort% %mmday%, %year% GMT"
 		"Econ_Loot_List_Sticker_ProPlayerSignatures" "Sticker can be autographed by one of the following professional players:"
 		"Econ_Loot_List_Sticker_ProPlayerSignatures_AndSomeMore" "... and %s1 other professional players"
 		"Econ_Loot_List_Sticker_ProOrgsStickers"	"Sticker can represent one of the following organizations:"
@@ -6240,1269 +6267,17 @@
 
 		"quest_desc"								""
 
-		"quest_totalgoal_points_desc"				"Total %actions% required： <b>%points%</b>" // special non-breaking space characters in this string, edit carefully!
-		"quest_attrremaining_points_desc"			"Remaining %actions%： <b>%points%</b>" // special non-breaking space characters in this string, edit carefully!
-		"quest_uncommitted_points_desc"				"Remaining %actions%： <b>%points%</b> (<b>%points uncommitted%</b> earned this match)" // special non-breaking space characters in this string, edit carefully!
-		"quest_uncommitted_points_warn"				" * <i>%actions% will be recorded at end of match</i>"
-	
-		"quest_uncommitted_points_chat_one"	" Mission fulfilled: %action% scored."
-		"quest_uncommitted_points_chat_singular"	" Mission progress: +%points% %action% scored."
-		"quest_uncommitted_points_chat_plural"		" Mission progress: +%points% %actions% scored."
-		"quest_uncommitted_points_chat_event"		" Blitz Mission: %action% scored."		
+		"quest_commandverb_default"					"Get"
 
-		"quest_reward_desc"								"This mission rewards from\n<b>%s1</b>:"
+		"quest_action_plural_act_kill_human"		"kills"
+		"quest_action_singular_act_kill_human"		"kill"
 
-		"quest_reward_xp"									"Mission Reward: <b>%s1</b> XP"
+		"quest_action_plural_act_win_round"			"round wins"
+		"quest_action_singular_act_win_round"		"round win"	
 
-		"quest_event_totalgoal_points_desc"					"Earn boosted XP for every <b>%action%</b> during this event."
-		
-		"quest_bonus_desc"								"Bonus: +<b>%xpperbonusaction%</b> XP per %action%—<i>%xpbonuscondition%.</i>"
-		"quest_bonus_fractional_desc"			"Bonus: +<b>%xpperbonusactions%</b> XP per <b>%n_actions%</b> %actions%—<i>%xpbonuscondition%.</i>"
-		"quest_bonus_single_desc"					"Bonus: +<b>%xpperbonusaction%</b> XP—<i>%xpbonuscondition%.</i>"
-
-
-		"quest_target_chicken"											"chicken"
-		"quest_target_human_or_chicken"									"human or chicken"
-		"quest_target_hostagerescuer"									"hostage rescuer"
-		"quest_target_armsraceleader"									"arms race leader"
-
-		"quest_target_headshot"											"headshot"
-		"quest_target_airborne"											"airborne"
-		"quest_target_pistolround"										"pistol"
-
-		"quest_target_lockeddoor"										"locked doors"
-		"quest_target_explodingbarrel"									"exploding barrels"
-		"quest_target_glasspane"										"glass panes"
-		"quest_target_enemydrone"										"enemy drones"
-
-		"quest_target_shotgun"											"shotgun"
-		"quest_target_sniperrifle"										"sniper rifle"
-		"quest_target_utility"											"utility"
-		"quest_target_defaultctpistol"									"default CT pistol"
-		"quest_target_defaultpistol"									"default pistol"
-		"quest_target_knife"											"knife"
-
-		"quest_action_plural_act_kill_human"							"kills"
-		"quest_action_singular_act_kill_human"							"kill"
-
-		"quest_action_plural_act_kill_chicken"							"kills"
-		"quest_action_singular_act_kill_chicken"						"kill"		
-
-		"quest_action_plural_act_kill_other"							""
-		"quest_action_singular_act_kill_other"							""
-
-		"quest_action_plural_act_protect_chicken"						"seconds protecting a chicken"
-		"quest_action_singular_act_protect_chicken"						"second protecting a chicken"	
-
-		"quest_action_plural_act_kill_target"							"assassinations"
-		"quest_action_singular_act_kill_target"							"assassination"		
-
-		"quest_action_plural_act_damage"								"damage"
-		"quest_action_singular_act_damage"								"damage point inflicted"		
-
-		"quest_action_plural_act_win_match"								"wins"
-		"quest_action_singular_act_win_match"							"win"		
-
-		"quest_action_plural_act_dz_game_end_placement"					"placements"
-		"quest_action_singular_act_dz_game_end_placement"				"placement"	
-
-		"quest_action_plural_act_dz_purchase_item"					"purchases"
-		"quest_action_singular_act_dz_purchase_item"				"purchase"	
-
-		"quest_action_plural_act_win_round"								"round wins"
-		"quest_action_singular_act_win_round"							"round win"	
-
-		"quest_action_plural_act_round_end"								""
-		"quest_action_singular_act_round_end"							""			
-
-		"quest_action_plural_act_round_mvp"								"MVPs"
-		"quest_action_singular_act_round_mvp"							"MVP"
-
-		"quest_action_plural_act_dm_bonus_points"						"points"
-		"quest_action_singular_act_dm_bonus_points"						"point"		
-
-		"quest_action_plural_act_armsrace_level"						"levels"
-		"quest_action_singular_act_armsrace_level"						"level"	
-
-		"quest_action_plural_act_gg_weapon_upgrade"						"upgrades"
-		"quest_action_singular_act_gg_weapon_upgrade"					"upgrade"	
-
-		"quest_action_plural_act_gg_upgrade_to_knifegg"						"upgrades"
-		"quest_action_singular_act_gg_upgrade_to_knifegg"					"upgrade"	
-				
-		"quest_action_plural_act_flashbang_enemy"						"enemy flashes"
-		"quest_action_singular_act_flashbang_enemy"						"enemy flash"		
-		
-		"quest_action_plural_act_pick_up_hostage"						"hostage pick ups"
-		"quest_action_singular_act_pick_up_hostage"						"hostage pick up"		
-		
-		"quest_action_plural_act_rescue_hostage"						"hostage rescues"
-		"quest_action_singular_act_rescue_hostage"						"hostage rescue"		
-		
-		"quest_action_plural_act_defuse_bomb"							"bomb defusals"
-		"quest_action_singular_act_defuse_bomb"							"bomb defusal"		
-		
-		"quest_action_plural_act_plant_bomb"							"bomb plants"
-		"quest_action_singular_act_plant_bomb"							"bomb plant"
-
-		"quest_action_singular_act_income"								"dollar"
-		"quest_action_plural_act_income"								"cash"
-		
-		"quest_action_singular_act_survivalincome"						"dollar"
-		"quest_action_plural_act_survivalincome"						"cash"
-
-		"quest_action_singular_act_spend"								"dollar"
-		"quest_action_plural_act_spend"									"cash"
-
-		"quest_action_singular_act_parachute_landed"					"second gliding in a parachute"
-		"quest_action_plural_act_parachute_landed"						"seconds gliding in a parachute"
-
-		"quest_action_singular_act_bumpmine_launch"						"bumpmine launch"
-		"quest_action_plural_act_bumpmine_launch"						"bumpmine launches"
-
-		"quest_action_singular_headshot_kill"							"headshot kill"
-		"quest_action_plural_headshot_kill"								"headshot kills"
-
-		"quest_action_singular_multikill"								"multi-kill round"
-		"quest_action_plural_multikill"									"multi-kill rounds"
-
-		"quest_action_singular_act_apply_graffiti"						"graffiti"
-		"quest_action_plural_act_apply_graffiti"						"graffiti"
-
-		"quest_action_singular_act_detonate_smokegrenade"				"smoke grenade"
-		"quest_action_plural_act_detonate_smokegrenade"					"smoke grenades"
-
-		"quest_action_singular_act_detonate_molotov"					"molotov"
-		"quest_action_plural_act_detonate_molotov"						"molotovs"
-
-		"quest_action_singular_act_use_healthshot"						"healthshot"
-		"quest_action_plural_act_use_healthshot"						"healthshots"
-		
-		"quest_action_singular_act_retakes_picked_enemy_card"			"enemy card selection"
-		"quest_action_plural_act_retakes_picked_enemy_card"				"enemy card selections"
-
-		"quest_action_singular_act_retakes_picked_mvp_card"				"MVP card selection"
-		"quest_action_plural_act_retakes_picked_mvp_card"				"MVP card selections"
-//
-
-		"quest_action_plural_bomb_plants_or_defuses"					"bomb plants or defusals"
-		"quest_action_singular_bomb_plants_or_defuses"					"bomb plant or defusal"
-		
-		"quest_action_plural_rescue_or_kill_hostages"					"hostage rescues or rescuers killed"
-		"quest_action_singular_rescue_or_kill_hostages"					"hostage rescue or rescuer kill"		
-		
-		"quest_action_plural_damage_burn"								"burn damage"
-		"quest_action_singular_damage_burn"								"points of burn damage"
-
-		"quest_commandverb_default"										"Get"
-		"quest_commandverb_defaultCT"									"As a CT, get"
-		"quest_commandverb_defaultT"									"As a T, get"
-		"quest_commandverb_deal"										"Deal"
-		"quest_commandverb_earn"										"Earn"
-		"quest_commandverb_earnT"										"As a T, earn"
-		"quest_commandverb_spend"										"Spend"
-		"quest_commandverb_execute"										"Execute"
-		"quest_commandverb_destroy"										"Destroy"
-		"quest_commandverb_apply"										"Apply"
-		"quest_commandverb_throw"										"Land"
-
-		"emptystring"													""
+		"emptystring"								""
 
 ////
-
-		"quest_condition_item_own"										"your own"
-		"quest_condition_item_borrowed"									"someone else's"									
-		"quest_condition_item_borrowed_teammate"						"teammate's"									
-		"quest_condition_item_borrowed_enemy"							"enemy's"									
-		"quest_condition_item_borrowed_victim"							"victim's own"									
-		"quest_condition_item_nondefault"								"pretty"
-
-		"quest_LoadoutSlot_Melee"										"knife"
-		"quest_LoadoutSlot_Secondary"									"pistol"
-		"quest_LoadoutSlot_SMG"											"SMG"
-		"quest_LoadoutSlot_Rifle"										"rifle"
-		"quest_LoadoutSlot_Heavy"										"heavy weapon"
-		"quest_LoadoutSlot_Grenade"										"grenade"
-
-		"quest_item_default"											"weapon"
-
-////
-		"quest_event_ending"											"Ends in %s1 minutes"
-		"quest_event_soon_hours"										"Starts in %s1 hours"
-		"quest_event_soon_hms"											"Starts in %s1:%s2:%s3"
-		"quest_event_today"												"Today %s1:%s2"
-		"quest_event_future"											"Starts %s1 %s2 %s3:%s4"
-		"quest_event_timer"												"Starts in %s1"
-
-////
-
-
-
-
-////////////////////////// generalized quest strings //////////////////////////////
-///
-///	Use these if applicable. If not, use this pattern to create new ones.
-///
-///
-///
-
-		"quest_default_0_items_desc" "%commandverb% %target% %actions% in <b>%gamemode%: %location%</b> matches."		
-		"quest_default_1_items_desc" "%commandverb% %target% %actions% with any <i>%item_quality%</i> <b>%item1%</b> in <b>%gamemode%: %location%</b> matches."
-		"quest_default_2_items_desc" "%commandverb% %target% %actions% with any <i>%item_quality%</i> <b>%item1%</b> or <b>%item2%</b> in <b>%gamemode%: %location%</b> matches."
-		"quest_default_3_items_desc" "%commandverb% %target% %actions% with any <i>%item_quality%</i> <b>%item1%</b>, <b>%item2%</b>, or <b>%item3%</b> %item_quality% in <b>%gamemode%: %location%</b> matches."
-		"quest_default_4_items_desc" "%commandverb% %target% %actions% with any <i>%item_quality%</i> <b>%item1%</b>, <b>%item2%</b>, <b>%item3%</b>, or <b>%item4%</b> in <b>%gamemode%: %location%</b> matches."
-
-		"quest_default_hud_0_items_desc" "%commandverb% %target% %actions%"
-		"quest_default_hud_1_items_desc" "%commandverb% %target% %actions%: <i>%item_quality%</i> <b>%item1%</b>"
-		"quest_default_hud_2_items_desc" "%commandverb% %target% %actions%: <i>%item_quality%</i> <b>%item1%</b>/<b>%item2%</b>"
-		"quest_default_hud_3_items_desc" "%commandverb% %target% %actions%: <i>%item_quality%</i> <b>%item1%</b>/<b>%item2%</b>/<b>%item3%</b>"
-		"quest_default_hud_4_items_desc" "%commandverb% %target% %actions%: <i>%item_quality%</i> <b>%item1%</b>/<b>%item2%</b>/<b>%item3%</b>/<b>%item4%</b>"
-
-/////////////////////////////////////////////////////////
-
-/////////////////////////////// Quest Strings via Dialog Vars //////
-///
-/// Used starting with Op09 - the default descriptions should handle most "Perform X Action in GameMode: Location" quests.
-///
-///
-		"quest_default_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} in <b>{s:gamemode}: {s:location}</b>."		
-		"quest_single_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} in a <i>single</i> <b>{s:gamemode}: {s:location}</b> match."		
-		"quest_default_no_map_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} in <b>{s:gamemode}</b>."
-		"quest_single_no_map_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} in a <i>single</i> <b>{s:gamemode}</b> match."		
-
-		"quest_weapon_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} with the {s:weapon} in <b>{s:gamemode}: {s:location}</b>."
-		"quest_weapon_single_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} with the {s:weapon} in a <i>single</i> <b>{s:gamemode}: {s:location}</b> match."
-		"quest_weapon_no_map_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} with the {s:weapon} in <b>{s:gamemode}</b>."
-		"quest_weapon_category_no_map_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} with any {s:weapon} weapon in <b>{s:gamemode}</b>."
-
-		"quest_flyingscoutsman_var_desc"	"{s:commandverb} {d:points} {s:target} {s:actions} in <b>Flying Scoutsman: {s:location}</b>."
-		"quest_flyingscoutsman_no_map_var_desc"	"{s:commandverb} {d:points} {s:target} {s:actions} in <b>Flying Scoutsman</b>."
-
-		"quest_retakes_var_desc"	"{s:commandverb} {d:points} {s:target} {s:actions} in <b>Retakes: {s:location}</b>."
-		"quest_retakes_no_map_var_desc"	"{s:commandverb} {d:points} {s:target} {s:actions} in <b>Retakes</b>."
-
-		"quest_armsrace_var_desc"	 		"{s:commandverb} {d:points} {s:target} {s:actions} in <b>Arms Race</b>."
-		"quest_armsrace_weapon_var_desc"	"{s:commandverb} {d:points} {s:target} {s:actions} with any {s:weapon} in <b>Arms Race</b>."
-
-		// quest exceptions:
-		"quest_931_var_desc"	 "Get {d:points} kills with the {s:weapon} in <b>{s:gamemode}: {s:location}</b>."
-		"quest_932_var_desc"	 "Get {d:points} kills while you are airborne in <b>Flying Scoutsman</b>."
-		"quest_933_var_desc"	 "Get {d:points} round wins in <b>{s:gamemode}: {s:location}</b>."
-		"quest_934_var_desc"	 "Get {s:kills} {s:weapon} kills in <b>Guardian: {s:location}</b>."
-		"quest_935_var_desc"	 "Get {d:points} {s:weapon} kills in a <i>single</i> <b>{s:gamemode}: {s:location}</b> match."
-		"quest_936_var_desc"	 "Get {d:points} {s:weapon} kills in <b>{s:gamemode}</b>."
-		"quest_937_var_desc"	 "Apply {d:points} graffiti in enemy territory in <b>{s:gamemode}: {s:location}</b>."
-		"quest_938_var_desc"	 "Get {d:points} arms race leader kills in <b>{s:gamemode}</b>."
-		"quest_939_var_desc"	 "Get {s:kills} {s:weapon} kills in <b>Guardian: {s:location}</b>."
-		"quest_940_var_desc"	 "Get {d:points} round wins in <b>{s:gamemode}: {s:location}</b>."
-		"quest_941_var_desc"	 "Get {d:points} pistol round wins in <b>{s:gamemode}: {s:location}</b>."
-		"quest_942_var_desc"	 "Get {d:points} {s:weapon} kills in a <i>single</i> <b>{s:gamemode}: {s:location}</b> match."
-		"quest_943_var_desc"	 "Get {d:points} kills in <b>Flying Scoutsman</b>."
-		"quest_944_var_desc"	 "Spend {d:points} cash in a <i>single</i> <b>{s:gamemode}</b> match."
-		"quest_945_var_desc"	 "Get {s:kills} kills in <b>Guardian: {s:location}</b>."
-		"quest_946_var_desc"	 "Get {d:points} round wins in <b>{s:gamemode}: {s:location}</b>."
-		"quest_947_var_desc"	 "Get {d:points} round wins in <b>{s:gamemode}: {s:location}</b>."
-		"quest_948_var_desc"	 "Get {d:points} hostage rescues, or kill {d:points} hostage rescuers in <b>{s:gamemode}: {s:location}</b>."
-        "quest_949_var_desc"	 "Get {d:points} kills with the {s:weapon} in <b>{s:gamemode}: {s:location}</b>."
-        "quest_950_var_desc"	 "Get {d:points} kills with any Heavy Weapon in <b>{s:gamemode}</b>."
-        "quest_951_var_desc"	 "Get {s:kills} {s:weapon} kills in <b>Guardian: {s:location}</b>. Players start with <b>{s:extraequip0}</b>."
-        "quest_952_var_desc"	 "Get {d:points} round wins in <b>{s:gamemode}: {s:location}</b>."
-        "quest_953_var_desc"	 "Get {d:points} round wins in <b>{s:gamemode}: {s:location}</b>."
-        "quest_954_var_desc"	 "Get {d:points} {s:target} kills in a <i>single</i> <b>{s:gamemode}: {s:location}</b> match."
-		"quest_955_var_desc"	 "Befriend chickens for {d:points} seconds in <b>{s:gamemode}: {s:location}</b>."
-		"quest_956_var_desc" 	 "Use a parachute for {d:points} seconds in <b>{s:gamemode}</b>."
-		"quest_957_var_desc" 	 "Get {d:points} kills with the {s:weapon} in <b>{s:gamemode}: {s:location}</b>."
-		"quest_958_var_desc" 	 "Get {d:points} round wins in <b>{s:gamemode}: {s:location}</b> (Scrimmage)."
-		"quest_959_var_desc" 	 "Get {d:points} kills in <b>{s:gamemode}: {s:location}</b>."
-		"quest_960_var_desc"	 "Get {s:kills} {s:weapon} kills in <b>Guardian: {s:location}</b>."
-		"quest_961_var_desc" 	 "Get {d:points} pistol kills in <b>{s:gamemode}: {s:location}</b>."
-		"quest_962_var_desc" 	 "Get {d:points} kills without spending any money in a <i>single</i> <b>{s:gamemode}</b> match."
-		"quest_963_var_desc"	 "Get {s:kills} {s:weapon} kills in <b>Guardian: {s:location}</b>."
-		"quest_964_var_desc" 	 "Get {d:points} pistol round wins in <b>{s:gamemode}</b>."
-		"quest_965_var_desc" 	 "Get {s:kills} {s:weapon} kills in <b>Guardian: {s:location}</b>."
-		"quest_966_var_desc" 	 "Earn ${d:points} in <b>{s:gamemode}: {s:location}</b>."
-		"quest_967_var_desc" 	 "Get {d:points} kills with the {s:weapon} in <b>{s:gamemode}: {s:location}</b>."
-		"quest_968_var_desc"	 "Get {d:points} sniper rifle kills in <b>{s:gamemode}</b>."
-		"quest_969_var_desc" 	 "Get {s:kills} unscoped {s:weapon} kills in <b>Guardian: {s:location}</b>."
-		"quest_970_var_desc" 	 "Get {d:points} round wins in <b>{s:gamemode}: {s:location}</b>."
-		"quest_971_var_desc"	 "Get {s:kills} {s:weapon} kills in <b>Guardian: {s:location}</b>."
-		"quest_972_var_desc" 	 "Get {d:points} headshot kills in a <i>single</i> <b>{s:gamemode}: {s:location}</b> match."
-		"quest_973_var_desc" 	 "Get {d:points} kills in <b>{s:gamemode}: {s:location}</b>."
-		"quest_974_var_desc" 	 "Get {d:points} headshot kills in <b>{s:gamemode}: {s:location}</b>."
-		"quest_975_var_desc"     "Get {s:kills} kills with CT weapons in <b>Guardian: {s:location}</b>."
-		"quest_976_var_desc" 	 "Get {d:points} round wins in <b>{s:gamemode}: {s:location}</b>."
-		"quest_977_var_desc"	 "Get {d:points} round wins in <b>{s:gamemode}: {s:location}</b>."
-		"quest_978_var_desc" 	 "Get {d:points} kills with the {s:weapon} in <b>{s:gamemode}: {s:location}</b>."
-		"quest_979_var_desc"	 "Get a kill streak of four or more in <b>{s:gamemode}: {s:location}</b>."		
-		"quest_980_var_desc" 	 "Place fourth or better in <b>{s:gamemode}</b>."
-		"quest_981_var_desc"     "Get {s:kills} {s:weapon} headshot kills in <b>Guardian: {s:location}</b> <i>with no armor</i>."
-		"quest_982_var_desc" 	 "Get {d:points} headshot kills with the {s:weapon} in a <i>single</i> <b>{s:gamemode}: {s:location}</b> match."
-		"quest_983_var_desc" 	 "Get {d:points} headshot kills in <b>{s:gamemode}</b>."
-		"quest_984_var_desc" 	 "Earn {d:points} MVPs in <b>{s:gamemode}</b> matches."
-		"quest_985_var_desc" 	 "Get {d:points} default pistol kills in <b>{s:gamemode}: {s:location}</b>."
-		"quest_986_var_desc"     "Get {s:kills} {s:weapon} kills in <b>Guardian: {s:location}</b>."
-		"quest_987_var_desc"	 "Get {d:points} kills with an enemy's primary rifle in <b>{s:gamemode}: {s:location}</b>."
-		"quest_988_var_desc"     "Get {d:points} knife kills in <b>Arms Race</b>."
-		"quest_989_var_desc" 	 "Deal {d:points} utility damage in <b>{s:gamemode}</b>."
-		"quest_990_var_desc" 	 "Earn {d:points} aces in <b>{s:gamemode}</b>."
-		"quest_991_var_desc" 	 "Get {d:points} kills with the <b>Tec-9 or Five-Seven</b> in <b>{s:gamemode}: {s:location}</b>."
-		"quest_992_var_desc"     "Get {s:kills} {s:weapon} kills in <b>Guardian: {s:location}</b>."
-		"quest_993_var_desc"	 "Deal {d:points} utility damage in <b>{s:gamemode}: {s:location}</b>."
-		"quest_994_var_desc" 	 "Get {d:points} kills in <b>{s:gamemode}</b>."
-		"quest_995_var_desc" 	 "Get {d:points} round wins in <b>{s:gamemode}: {s:location}</b>."
-		"quest_996_var_desc"     "Get {d:points} kills in <b>{s:gamemode}: {s:location}</b>."
-		"quest_997_var_desc" 	 "Get {d:points} kills with the Galil AR or FAMAS in <b>{s:gamemode}: {s:location}</b>."
-		"quest_998_var_desc"     "Get {s:kills} {s:weapon} kills in <b>Guardian: {s:location}</b>."
-		"quest_999_var_desc" 	 "Get {d:points} kill with the {s:weapon} in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1000_var_desc" 	 "Destroy {d:points} enemy drones {s:actions} in <b>{s:gamemode}</b>."
-		"quest_1001_var_desc" 	 "Earn {d:points} MVPs in a <i>single</i> <b>{s:gamemode}: {s:location}</b> match."
-		"quest_1002_var_desc"	 "Get a kill streak of 2 or more in {d:points} rounds in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1003_var_desc" 	 "Get {d:points} kills with the {s:weapon} in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1004_var_desc"    "Get {s:kills} {s:weapon} kills in <b>Guardian: {s:location}</b>."
-		"quest_1005_var_desc" 	 "Get {d:points} round wins in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1006_var_desc"    "Get {d:points} kills in <b>Arms Race</b>."
-		"quest_1007_var_desc" 	 "Destroy {d:points} locked doors {s:actions} with the {s:weapon} in <b>{s:gamemode}</b>."
-		"quest_1008_var_desc" 	 "Get {d:points} kills with the AK-47 or M4A4 in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1009_var_desc" 	 "Get {d:points} round wins in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1010_var_desc"	 "Get {d:points} kills with the {s:weapon} in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1011_var_desc"    "Win 5 or more rounds in a single half of a <b>{s:gamemode}: {s:location}</b> match."
-		"quest_1012_var_desc" 	 "Step on {d:points} bumpmines in <b>{s:gamemode}</b>."
-		"quest_1013_var_desc" 	 "Get {d:points} {s:weapon} kill in <b>{s:gamemode}</b>."
-		"quest_1014_var_desc"    "Get {s:kills} {s:weapon} kills in <b>Guardian: {s:location}</b>."
-		"quest_1015_var_desc" 	 "Get {d:points} kills without spending over $2000 in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1016_var_desc"	 "Hold $3000 or more in <b>{s:gamemode}</b>."
-		"quest_1017_var_desc" 	 "Get {d:points} round wins in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1018_var_desc"    "Get {s:kills} {s:weapon} kills in <b>Guardian: {s:location}</b>."
-		"quest_1019_var_desc" 	 "Get {d:points} kills with any {s:weapon} in <b>Arms Race</b>."
-		"quest_1020_var_desc" 	 "Get {d:points} kills with the {s:weapon} in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1021_var_desc" 	"Massacre {d:points} chickens in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1022_var_desc" 	"Blow up {d:points} explosive barrels in <b>{s:gamemode}</b>."
-		"quest_1023_var_desc" 	"Get {d:points} round wins in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1024_var_desc" 	"Break {d:points} panes of glass in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1025_var_desc" 	"Get {d:points} round wins in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1027_var_desc"	 "Apply {d:points} graffiti in the opponent's starting area in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1028_var_desc"	 "Get {d:points} kills from <i>Banana</i> or <i>Apartments</i> in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1029_var_desc"	 "Throw {d:points} strategic smoke grenades in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1030_var_desc"	 "Recover a sample of the Danger Zone virus from the Phoenix laboratory."
-		"quest_1031_var_desc"	 "Destroy the Phoenix production facility and eliminate Franz Kriegeld."
-		
-		"quest_1098_var_desc"                                  "Win rounds in <b>{s:location}</b>."
-		"quest_1032_var_desc"                                  "Win rounds in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1033_var_desc"                                  "Get {s:kills} kills in <b>Guardian: {s:location}</b>."
-		"quest_1034_var_desc"                                  "The Phoenix have been spotted! Find out what they are planning."
-		"quest_1035_var_desc"                                  "Get AK47, M4A4, or M4A1-S kills in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1036_var_desc"                                  "Win rounds in <b>{s:location}</b>."
-		"quest_1037_var_desc"                                  "Get kills in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1099_var_desc"                                  "Earn MVPs in <b>{s:location}</b>."
-		"quest_1038_var_desc"                                  "Win rounds in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1039_var_desc"                                  "Get kills with all {s:kills} pistols in <b>Guardian: {s:location}</b>."
-		"quest_1040_var_desc"                                  "Get {s:weapon} kills in <b>{s:location}</b>."
-		"quest_1041_var_desc"                                  "Get {s:weapon} kills in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1042_var_desc"                                  "Win rounds in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1043_var_desc"                                  "Get {s:kills} kills with {s:weapon} in <b>Guardian: {s:location}</b>."
-		"quest_1044_var_desc"                                  "Get kills at a range of at least 15 meters in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1045_var_desc"                                  "Get kills with any sniper rifle in <b>{s:location}</b>."
-		"quest_1046_var_desc"                                  "Get headshot kills in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1047_var_desc"                                  "Get {s:kills} kills with the {s:weapon} in <b>Guardian: {s:location}</b>."
-		"quest_1048_var_desc"                                  "Deal grenade damage in <b>{s:location}</b>."
-		"quest_1049_var_desc"                                  "Earn money in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1050_var_desc"                                  "Win rounds in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1051_var_desc"                                  "Get {s:kills} kills in <b>Guardian: {s:location}</b>."
-		"quest_1052_var_desc"                                  "Select an enemy card in <b>{s:location}</b>."
-		"quest_1053_var_desc"                                  "Detonate smoke grenades at specific locations in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1054_var_desc"                                  "Win rounds in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1055_var_desc"                                  "Get {s:kills} kills with Terrorist weapons in <b>Guardian: {s:location}</b>."
-		"quest_1056_var_desc"                                  "Get kills from Tunnel or Palace in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1057_var_desc"                                  "Get kills in <b>{s:location}</b>."
-		"quest_1058_var_desc"                                  "Win rounds in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1059_var_desc"                                  "Get {s:kills} SMG kills in <b>Guardian: {s:location}</b>."
-		"quest_1060_var_desc"                                  "Get SMG kills in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1061_var_desc"                                  "Get SMG kills in <b>{s:location}</b>."
-		"quest_1062_var_desc"                                  "Win rounds in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1063_var_desc"                                  "Get {s:kills} Shotgun kills in <b>Guardian: {s:location}</b>."
-		"quest_1064_var_desc"                                  "Select an MVP card in <b>{s:location}</b>."
-		"quest_1065_var_desc"                                  "Apply Graffiti at specific locations in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1100_var_desc"                                  "Win rounds in <b>{s:location}</b>."
-		"quest_1066_var_desc"                                  "Win rounds in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1067_var_desc"                                  "Get {s:kills} headshot kills with the AUG in <b>Guardian: {s:location}</b>."
-		"quest_1068_var_desc"                                  "Blind an enemy with a flashbang in <b>{s:location}</b>."
-		"quest_1069_var_desc"                                  "Apply Graffiti at specific locations in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1101_var_desc"                                  "Win rounds in <b>{s:location}</b>."
-		"quest_1070_var_desc"                                  "Win rounds in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1071_var_desc"                                  "Get {s:kills} kills at a range closer than 10 meters in <b>Guardian: {s:location}</b>."
-		"quest_1072_var_desc"                                  "Get kills at a range closer than 10 meters in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1073_var_desc"                                  "Get kills in <b>{s:location}</b>."		
-		"quest_1074_var_desc"                                  "Win rounds in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1075_var_desc"                                  "Get {s:kills} kills in <b>Guardian: {s:location}</b>."
-		"quest_1076_var_desc"                                  "Get headshot kills in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1077_var_desc"                                  "Get Heavy weapon kills in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1102_var_desc"                                  "Win rounds in <b>{s:location}</b>."
-		"quest_1078_var_desc"                                  "Win rounds in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1079_var_desc"                                  "Get {s:kills} SSG08 kills in <b>Guardian: {s:location}</b>."
-		"quest_1080_var_desc"                                  "Get chicken kills in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1081_var_desc"                                  "Get kills in <b>{s:location}</b>."
-		"quest_1082_var_desc"                                  "Win rounds in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1083_var_desc"                                  "Get {s:kills} MAG-7 kills in <b>Guardian: {s:location}</b>."
-		"quest_1084_var_desc"                                  "Get kills in <b>{s:location}</b>."
-		"quest_1085_var_desc"                                  "Deal grenade damage in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1085_v2_var_desc"                   			   "Deal grenade damage in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1086_var_desc"                                  "Win rounds in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1087_var_desc"                                  "Get {s:kills} kills with enemy weapons in <b>Guardian: {s:location}</b>."
-		"quest_1088_var_desc"                                  "Get kills from specific locations in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1089_var_desc"                                  "Get scoped kills in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1089_v2_var_desc"                               "Get scoped kills in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1090_var_desc"                                  "Win rounds in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1091_var_desc"                                  "Get {s:kills} kills in <b>Guardian: {s:location}</b>."
-		"quest_1092_var_desc"                                  "Score points with the bonus weapon in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1092_v2_var_desc"                                  "Score points with the bonus weapon in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1093_var_desc"                                  "Spend money in <b>{s:gamemode}</b>."
-		"quest_1094_var_desc"                                  "Win rounds in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1095_var_desc"                                  "Get {s:kills} kills in <b>Guardian: {s:location}</b>."
-		"quest_1095_v2_var_desc"                                  "Get {s:kills} UMP-45 kills in <b>Guardian: {s:location}</b>."
-		"quest_1096_var_desc"                                  "Win rounds in <b>{s:location}</b>."
-		"quest_1097_var_desc"                                  "Complete the Mission."
-		"quest_1097_v2_var_desc"                                  "<i>...the retina quickly adapts to the bright stimulus, creating temporary blindness.</i>"
-		"quest_1103_var_desc"                                  "Blind the enemy with flashbangs in <b>{s:gamemode}: {s:location}</b>."
-
-// OP11 Week 1 Missions
-		"quest_1106_var_desc"                              "Survive an aerial assault in <b>Guardian: {s:location}</b>."
-		"quest_1107_var_desc"                              "Complete a variety of tasks in <b>Danger Zone: {s:location}</b>"
-		"quest_1108_var_desc"                              "Get kills in a series of different radar locations"
-
-// OP11 Week 2 Missions
-		"quest_1111_var_desc"                              "Get kills in <b>Guardian: {s:location}</b>."
-
-// OP11 Week 3 Missions
-		"quest_1115_var_desc"                              "Get sniper rifle kills in <b>Guardian: {s:location}</b>."
-		"quest_1117_var_desc"                              "Apply graffiti in different locations"
-
-// OP11 Week 4 Missions
-		"quest_1119_var_desc"                              "Get shotgun kills in <b>Guardian: {s:location}</b>."
-		"quest_1120_var_desc"                              "Get kills in a series of different radar locations"
-
-// OP11 Week 5 Missions
-		"quest_1123_var_desc"                              "Get SMG kills in <b>Guardian: {s:location}</b>."
-		"quest_1125_var_desc"                              "Complete a variety of tasks"
-
-// OP11 Week 6 Missions
-		"quest_1127_var_desc"                              "Get rifle kills in <b>Guardian: {s:location}</b>."
-		"quest_1128_var_desc"                              "Get a killstreak in <b>Deathmatch: {s:location}</b>."
-
-// OP11 Week 7 Missions
-		"quest_1131_var_desc"                              "Get kills in <b>Guardian: {s:location}</b>."
-		"quest_1132_var_desc"                              "Get kills in a series of different radar locations"
-
-// OP11 Week 8 Missions
-		"quest_1135_var_desc"                              "Get shotgun kills in <b>Guardian: {s:location}</b>."
-		"quest_1137_var_desc"                              "Complete a variety of tasks with utility"
-
-// OP11 Week 9 Missions
-		"quest_1139_var_desc"                              "Get pistol kills in <b>Guardian: {s:location}</b>."
-		"quest_1140_var_desc"                              "Apply graffiti to various locations"
-
-// OP11 Week 10 Missions
-		"quest_1143_var_desc"                              "Get AUG kills in <b>Guardian: {s:location}</b>."
-		"quest_1144_var_desc"                              "Get kills in a series of different radar locations"
-
-// OP11 Week 11 Missions
-		"quest_1147_var_desc"                              "Get MP9 kills in <b>Guardian: {s:location}</b>."
-
-// OP11 Week 12 Missions
-		"quest_1151_var_desc"                              "Get SMG kills in <b>Guardian: {s:location}</b>."
-		"quest_1152_var_desc"                              "Get kill streaks"
-
-// OP11 Week 13 Missions
-		"quest_1155_var_desc"                              "Get enemy weapon kills in <b>Guardian: {s:location}</b>."
-		"quest_1156_var_desc"                              "Get kills in a series of different radar locations"
-		"quest_1157_var_desc"                              "Apply graffiti to various locations"
-
-// OP11 Week 14 Missions
-		"quest_1159_var_desc"                              "Get Breach Charge kills in <b>Guardian: {s:location}</b>."
-
-// OP11 Week 15 Missions
-		"quest_1163_var_desc"                              "Get Heavy Weapon kills in <b>Guardian: {s:location}</b>."
-
-// OP11 Week 16 Missions
-		"quest_1167_var_desc"                              "Get kills in <b>Guardian: {s:location}</b>."
-		"quest_1169_var_desc"                              "Get kills using weapons from one of the four Operation Riptide collections"
-
-
-// OP11 Week 1 Sub-Missions
-		"quest_1200_var_desc"                              "Win {d:points} match"
-		"quest_1201_var_desc"                              "Win {d:points} rounds"
-		"quest_1202_var_desc"                              "Deal {d:points} utility damage in a <i>single match</i>"
-		"quest_1203_var_desc"                              "Deal {d:points} utility damage"
-		"quest_1204_var_desc"                              "Destroy an enemy drone"
-		"quest_1205_var_desc"                              "Explode a barrel"
-		"quest_1206_var_desc"                              "Destroy some glass"
-		"quest_1207_var_desc"                              "Bump mine launch off the top of the Water Tower"
-		"quest_1208_var_desc"                              "Rescue a hostage"
-		"quest_1209_var_desc"                              "Get a kill from T Start"
-		"quest_1210_var_desc"                              "Get a kill from T Ramp"
-		"quest_1211_var_desc"                              "Get a kill from Bombsite A"
-		"quest_1212_var_desc"                              "Get a kill from CT Start"
-		"quest_1213_var_desc"                              "Get a kill from Shop"
-		"quest_1214_var_desc"                              "Get a kill from Bombsite B"
-		"quest_1215_var_desc"                              "Get a kill from Catwalk"
-		"quest_1216_var_desc"                              "Get a kill from Mid"
-		"quest_1217_var_desc"                              "Get a kill from Stairs"
-		"quest_1218_var_desc"                              "Get a kill from Bombsite A (Again)!"
-		"quest_1219_var_desc"                              "Get {d:points} multi-kill rounds in a <i>single match</i>"
-		"quest_1220_var_desc"                              "Get {d:points} kills"
-
-// OP11 Week 2 Sub-Missions
-		"quest_1221_var_desc"                              "Win {d:points} match"
-		"quest_1222_var_desc"                              "Win {d:points} rounds"
-		"quest_1223_var_desc"                              "Get {d:points} headshot kills in a <i>single match</i>"
-		"quest_1224_var_desc"                              "Get {d:points} headshot kills"
-		"quest_1225_var_desc"                              "Deal grenade damage"
-		"quest_1226_var_desc"                              "Get {d:points} kills"
-
-// OP11 Week 3 Sub-Missions		
-		"quest_1227_var_desc"                              "Win {d:points} match"
-		"quest_1228_var_desc"                              "Win {d:points} rounds"
-		"quest_1229_var_desc"                              "Deal {d:points} damage in a <i>single match</i>"
-		"quest_1230_var_desc"                              "Deal {d:points} damage"
-		"quest_1231_var_desc"                              "Apply graffiti at CT Start"
-		"quest_1232_var_desc"                              "Apply graffiti at Bombsite A"
-		"quest_1233_var_desc"                              "Apply graffiti at Pit"
-		"quest_1234_var_desc"                              "Apply graffiti at Bombsite B"
-		"quest_1235_var_desc"                              "Apply graffiti at Mid Doors"
-		"quest_1236_var_desc"                              "Apply graffiti at T Start"
-		"quest_1237_var_desc"                              "Apply graffiti at Catwalk"
-		"quest_1238_var_desc"                              "Apply graffiti at Upper Tunnel"
-		"quest_1239_var_desc"                              "Apply graffiti at Long Doors"
-		"quest_1240_var_desc"                              "Apply graffiti at Middle"
-
-// OP11 Week 4 Sub-Missions		
-		"quest_1241_var_desc"                              "Win {d:points} match"
-		"quest_1242_var_desc"                              "Win {d:points} rounds"
-		"quest_1243_var_desc"                              "Get a kill from Outside"
-		"quest_1244_var_desc"                              "Get a kill from Bombsite A"
-		"quest_1245_var_desc"                              "Get a kill from Lobby"
-		"quest_1246_var_desc"                              "Get a kill from Ramp"
-		"quest_1247_var_desc"                              "Get a kill from Bombsite B"
-		"quest_1248_var_desc"                              "Get a kill from Secret"
-		"quest_1249_var_desc"                              "Get a kill from Outside (again!)"
-		"quest_1250_var_desc"                              "Get a kill from T Start"
-		"quest_1251_var_desc"                              "Get a kill from the top of Silo"
-		"quest_1252_var_desc"                              "Get a kill from CT Start"
-		"quest_1253_var_desc"                              "Do {d:points} times in a <i>single match</i>: Kill with one of your first 5 bullets of the round."
-		"quest_1254_var_desc"                              "Get {d:points} kills"
-
-// OP11 Week 5 Sub-Missions		
-		"quest_1255_var_desc"                              "Get {d:points} MVPs in a <i>single match</i>"
-		"quest_1256_var_desc"                              "Win {d:points} rounds"
-		"quest_1257_var_desc"                              "Get {d:points} headshot kills in a <i>single match</i>"
-		"quest_1258_var_desc"                              "Get {d:points} headshot kills"
-		"quest_1259_var_desc"                              "Earn money while your tablet has lost reception"
-		"quest_1260_var_desc"                              "Purchase the high res tablet upgrade"
-		"quest_1261_var_desc"                              "Destroy an automated sentry gun turret"
-		"quest_1262_var_desc"                              "Plant C4 at Tourist"
-		"quest_1263_var_desc"                              "Damage an enemy while standing on a rock"
-		
-// OP11 Week 6 Sub-Missions	
-		"quest_1264_var_desc"                              "Win {d:points} match"
-		"quest_1265_var_desc"                              "Win {d:points} rounds"
-		"quest_1266_var_desc"                              "Get a streak of 3 kills"
-		"quest_1267_var_desc"                              "Get a streak of 5 kills"
-		"quest_1268_var_desc"                              "Get a streak of 7 kills"
-		"quest_1269_var_desc"                              "Get {d:points} kills with someone else's gun in a <i>single match</i>"
-		"quest_1270_var_desc"                              "Get {d:points} kills with someone else's gun"
-
-// OP11 Week 7 Sub-Missions			
-		"quest_1271_var_desc"                              "Win {d:points} match"
-		"quest_1272_var_desc"                              "Win {d:points} rounds"
-		"quest_1273_var_desc"                              "Get a kill from Mid Doors"
-		"quest_1274_var_desc"                              "Get a kill from Catwalk"
-		"quest_1275_var_desc"                              "Get a kill from Top of Mid"
-		"quest_1276_var_desc"                              "Get a kill from Pit"
-		"quest_1277_var_desc"                              "Get a kill from Bombsite A"
-		"quest_1278_var_desc"                              "Get a kill from Mid Doors (again!)"
-		"quest_1279_var_desc"                              "Get a kill from Bombsite B"
-		"quest_1280_var_desc"                              "Get a kill from Tunnels"
-		"quest_1281_var_desc"                              "Get a kill from T Ramp"
-		"quest_1282_var_desc"                              "Get a kill from T Start"
-		"quest_1283_var_desc"                              "Deal {d:points} damage while airborne in a <i>single match</i>"
-		"quest_1284_var_desc"                              "Deal {d:points} damage while airborne"
-
-// OP11 Week 8 Sub-Missions			
-		"quest_1285_var_desc"                              "Win {d:points} match"
-		"quest_1286_var_desc"                              "Win {d:points} rounds"
-		"quest_1287_var_desc"                              "Get to the knife level"
-		"quest_1288_var_desc"                              "Upgrade your weapon {d:points} times"
-		"quest_1289_var_desc"                              "Land a smoke at Top of Mid"
-		"quest_1290_var_desc"                              "Land a smoke at Banana"
-		"quest_1291_var_desc"                              "Land a molotov at Banana"
-		"quest_1292_var_desc"                              "Blind 3 enemies in a single match"
-		"quest_1293_var_desc"                              "Deal {d:points} grenade damage in a single match"
-
-// OP11 Week 9 Sub-Missions			
-		"quest_1294_var_desc"                              "Get {d:points} headshots in a <i>single match</i>"
-		"quest_1295_var_desc"                              "Get {d:points} headshot kills"
-		"quest_1296_var_desc"                              "Apply graffiti at the top of Water Tower"
-		"quest_1297_var_desc"                              "Apply graffiti at the anchor at the Pier"
-		"quest_1298_var_desc"                              "Apply graffiti at the Crane"
-		"quest_1299_var_desc"                              "Apply graffiti at the rooftop at Radio"
-		"quest_1300_var_desc"                              "Apply graffiti in the market at Hotel"
-		"quest_1301_var_desc"                              "Apply graffiti on the grills at Picnic"
-		"quest_1302_var_desc"                              "Apply graffiti at the Lighthouse"
-		"quest_1303_var_desc"                              "Apply graffiti on the Bridge"
-		"quest_1304_var_desc"                              "Apply graffiti at Construction Site"
-		"quest_1305_var_desc"                              "Get {d:points} Deagle kills in a <i>single match</i>"
-		"quest_1306_var_desc"                              "Upgrade your weapon {d:points} times"
-
-// OP11 Week 10 Sub-Missions			
-		"quest_1307_var_desc"                              "Win {d:points} match"
-		"quest_1308_var_desc"                              "Win {d:points} rounds"
-		"quest_1309_var_desc"                              "Get a kill from Playground"
-		"quest_1310_var_desc"                              "Get a kill from Upper Park"
-		"quest_1311_var_desc"                              "Get a kill from Bombsite A"
-		"quest_1312_var_desc"                              "Get a kill from Sniper's Nest"
-		"quest_1313_var_desc"                              "Get a kill from Bombsite B"
-		"quest_1314_var_desc"                              "Get a kill from T Start"
-		"quest_1315_var_desc"                              "Get a kill in Tunnels"
-		"quest_1316_var_desc"                              "Get a kill from Playground (again!)"
-		"quest_1317_var_desc"                              "Get a kill from Fountain"
-		"quest_1318_var_desc"                              "Get a kill from Restroom"
-		"quest_1319_var_desc"                              "Get {d:points} headshot kills in a <i>single match</i>"
-		"quest_1320_var_desc"                              "Get {d:points} headshot kills"
-
-// OP11 Week 11 Sub-Missions			
-		"quest_1321_var_desc"                              "Win {d:points} match"
-		"quest_1322_var_desc"                              "Win {d:points} rounds"
-		"quest_1323_var_desc"                              "Use the Healthshot {d:points} times in a <i>single match</i>"
-		"quest_1324_var_desc"                              "Use the Healthshot {d:points} times"
-		"quest_1325_var_desc"                              "Deal {d:points} grenade damage in a <i>single match</i>"
-		"quest_1326_var_desc"                              "Deal {d:points} grenade damage"
-
-// OP11 Week 12 Sub-Missions			
-		"quest_1327_var_desc"                              "Win {d:points} match"
-		"quest_1328_var_desc"                              "Win {d:points} rounds"
-		"quest_1329_var_desc"                              "Get a streak of 3 kills"
-		"quest_1330_var_desc"                              "Get a streak of 4 kills"
-		"quest_1331_var_desc"                              "Get a streak of 5 kills"
-		"quest_1332_var_desc"                              "Get kills with {d:points} different weapons in a <i>single match</i>"
-		"quest_1333_var_desc"                              "Get kills with {d:points} different weapons (can repeat across matches)"
-
-// OP11 Week 13 Sub-Missions			
-		"quest_1334_var_desc"                              "Win {d:points} match"
-		"quest_1335_var_desc"                              "Win {d:points} rounds"
-		"quest_1336_var_desc"                              "Get a kill from Middle"
-		"quest_1337_var_desc"                              "Get a kill from Bombsite A"
-		"quest_1338_var_desc"                              "Get a kill from CT Start"
-		"quest_1339_var_desc"                              "Get a kill from House"
-		"quest_1340_var_desc"                              "Get a kill from Bombsite B"
-		"quest_1341_var_desc"                              "Get a kill from Ruins"
-		"quest_1342_var_desc"                              "Get a kill from T Start"
-		"quest_1343_var_desc"                              "Get a kill from Main Hall"
-		"quest_1344_var_desc"                              "Get a kill from Bombsite A (again!)"
-		"quest_1345_var_desc"                              "Get a kill from Middle (again!)"
-		"quest_1346_var_desc"                              "Spray graffiti at the arch West of Kasbah"
-		"quest_1347_var_desc"                              "Spray graffiti in spiral staircase by Kasbah"
-		"quest_1348_var_desc"                              "Spray graffiti at the Dome"
-		"quest_1349_var_desc"                              "Spray graffiti in the helipad circle at Base"
-		"quest_1350_var_desc"                              "Spray graffiti while on a barge at Floatilla"
-		"quest_1351_var_desc"                              "Spray graffiti inside Hotel Aurore in Town"
-		"quest_1352_var_desc"                              "Spray graffiti on Silo 3 at Tanks"
-		"quest_1353_var_desc"                              "Spray graffiti at the Lighthouse Tower"
-		"quest_1354_var_desc"                              "Spray graffiti at the pier at Fishing"
-
-// OP11 Week 14 Sub-Missions			
-		"quest_1355_var_desc"                              "Win {d:points} match"
-		"quest_1356_var_desc"                              "Win {d:points} rounds"
-		"quest_1357_var_desc"                              "Get {d:points} scoped kills in a <i>single match</i>"
-		"quest_1358_var_desc"                              "Get {d:points} scoped kills"
-		"quest_1359_var_desc"                              "Get kills in the first 30 seconds of a round {d:points} times"
-		"quest_1360_var_desc"                              "Get {d:points} kills"
-
-// OP11 Week 15 Sub-Missions			
-		"quest_1361_var_desc"                              "Win {d:points} match"
-		"quest_1362_var_desc"                              "Win {d:points} rounds"
-		"quest_1363_var_desc"                              "Kill the Arms Race Leader {d:points} times in a <i>single match</i>"
-		"quest_1364_var_desc"                              "Get {d:points} kills"
-		"quest_1365_var_desc"                              "Deal {d:points} damage in a <i>single match</i>"
-		"quest_1366_var_desc"                              "Deal {d:points} damage"
-
-// OP11 Week 16 Sub-Missions	
-		"quest_1367_var_desc"                              "Win {d:points} match"
-		"quest_1368_var_desc"                              "Win {d:points} rounds"
-		"quest_1369_var_desc"                              "Get {d:points} kills with one of the Operation Riptide Agents in a <i>single match</i>"
-		"quest_1370_var_desc"                              "Get {d:points} kills"
-		"quest_1371_var_desc"                              "Get {d:points} kills with a weapon from one of the Operation Riptide Collections"
-		"quest_1372_var_desc"                              "Get {d:points} kills"
-
-
-
-		"quest_default_hud_var_desc" "{s:commandverb} {s:target} {s:actions}"
-		"quest_weapon_hud_var_desc" "{s:commandverb} {s:actions}: {s:weapon}"
-		"quest_single_hud_var_desc"	"{s:commandverb} {s:target} {s:actions}<br> by end of match"
-		"quest_weapon_single_hud_var_desc" "{s:commandverb} {s:actions}: {s:weapon}<br> by end of match"
-	
-		//hud exceptions:
-		"quest_931_hud_var_desc"	"Get Kills: {s:weapon}"
-		"quest_932_hud_var_desc"	"Get kills while airborne"
-		"quest_933_hud_var_desc"	"Get Round Wins"
-		"quest_934_hud_var_desc"	"Get Kills: {s:weapon}"
-		"quest_935_hud_var_desc"	"Get {s:weapon} kills<br> by end of match"
-		"quest_936_hud_var_desc"	"Get Kills: {s:weapon}"
-		"quest_937_hud_var_desc"	"Apply Graffiti"
-		"quest_937_hud_var_desc_CT"	"Apply Graffiti at Silo or Vending"
-		"quest_937_hud_var_desc_T"	"Apply Graffiti at Heaven or Garage"
-        "quest_938_hud_var_desc"	"Get arms race leader kills"
-        "quest_939_hud_var_desc"	"Get Kills: {s:weapon}"
-        "quest_940_hud_var_desc"	"Get Round Wins"
-        "quest_941_hud_var_desc"	"Get Pistol Round Wins"
-        "quest_942_hud_var_desc"	"Get {s:weapon} kills<br> by end of match"
-        "quest_943_hud_var_desc"	"Get Kills"
-        "quest_944_hud_var_desc"	"Spend Cash"
-        "quest_945_hud_var_desc"	"Get Kills"
-        "quest_946_hud_var_desc"	"Get Round Wins"
-        "quest_947_hud_var_desc"	"Get Round Wins"
-		"quest_948_hud_var_desc"	"Rescue or Prevent Rescue"
-		"quest_948_hud_var_desc_CT"	"Rescue Hostages"
-		"quest_948_hud_var_desc_T"	"Kill Hostage Rescuer"
-        "quest_949_hud_var_desc"	"Get Kills: {s:weapon}"
-        "quest_950_hud_var_desc"	"Get Heavy Weapon Kills"	
-        "quest_951_hud_var_desc"	"Get Kills: {s:weapon}"	
-        "quest_952_hud_var_desc"	"Get Round Wins"	
-        "quest_953_hud_var_desc"	"Get Round Wins"	
-        "quest_954_hud_var_desc"	"Get {s:target} kills by end of match"
-		"quest_955_hud_var_desc" 	"Befriend chickens with [{s:bind_use}] <br> for {d:points} seconds"
-		"quest_956_hud_var_desc" 	"Get seconds gliding in a parachute"
-		"quest_957_hud_var_desc" 	"Get kills: {s:weapon}"
-		"quest_958_hud_var_desc" 	"Get round wins"
-		"quest_959_hud_var_desc" 	"Get kills"
-		"quest_960_hud_var_desc" 	"Get Kills: {s:weapon}"
-		"quest_961_hud_var_desc"	"Get pistol kills"
-		"quest_962_hud_var_desc"	"Get kills without spending money<br> by end of match"
-		"quest_963_hud_var_desc"	"Get Kills: {s:weapon}"
-		"quest_964_hud_var_desc"	"Get pistol round wins"
-		"quest_965_hud_var_desc"    "Get Kills"
-		"quest_966_hud_var_desc" 	"Earn money"
-		"quest_967_hud_var_desc"	"Get kills: {s:weapon}"
-		"quest_968_hud_var_desc"    "Get sniper rifle kills"
-		"quest_969_hud_var_desc"	"Get unscoped {s:weapon} kills"
-		"quest_970_hud_var_desc"	"Get round wins"
-		"quest_971_hud_var_desc"	"Get kills"
-		"quest_972_hud_var_desc"    "Get headshot kills<br> by end of match"
-		"quest_973_hud_var_desc" 	"Get kills"
-		"quest_974_hud_var_desc" 	"Get headshot kills"
-		"quest_975_hud_var_desc"    "Get kills with CT Weapons"
-		"quest_976_hud_var_desc" 	"Get round wins"
-		"quest_977_hud_var_desc"	"Get round wins"
-		"quest_978_hud_var_desc"	"Get kills: {s:weapon}"
-		"quest_979_hud_var_desc" 	"Get a kill streak of 4"
-        "quest_980_hud_var_desc" 	"Place fourth or better"
-		"quest_981_hud_var_desc" 	"Get headshot kills: {s:weapon}"		
-		"quest_982_hud_var_desc"	"Get {s:weapon} headshot kills <br> by end of match"	
-		"quest_983_hud_var_desc" 	"Get headshot kills"
-		"quest_984_hud_var_desc"    "Earn MVPs"
-		"quest_985_hud_var_desc" 	"Get default pistol kills"
-		"quest_986_hud_var_desc" 	"Get kills: {s:weapon}"
-		"quest_987_hud_var_desc"	"Get kills"
-		"quest_987_hud_var_desc_CT"	"Get kills: AK-47"
-		"quest_987_hud_var_desc_T"	"Get kills: M4A4 or M4A1-S"
-		"quest_988_hud_var_desc" 	"Get knife kills"
-		"quest_989_hud_var_desc"	"Deal utility damage"
-		"quest_990_hud_var_desc" 	"Get Aces"
-		"quest_991_hud_var_desc_CT" "Get kills: Five-Seven"
-		"quest_991_hud_var_desc_T" 	"Get kills: Tec-9"
-		"quest_991_hud_var_desc" 	"Get kills: Tec-9 or Five-Seven"
-		"quest_992_hud_var_desc" 	"Get kills: Breach Charge"
-		"quest_993_hud_var_desc" 	"Deal utility damage"
-		"quest_994_hud_var_desc" 	"Get kills"
-		"quest_995_hud_var_desc" 	"Get round wins"
-		"quest_996_hud_var_desc"	"Get kills"
-		"quest_997_hud_var_desc_CT"	"Get kills: FAMAS"
-		"quest_997_hud_var_desc_T"	"Get kills: Galil AR"
-		"quest_997_hud_var_desc"	"Get kills: Galil AR or FAMAS"
-		"quest_998_hud_var_desc" 	"Get kills: {s:weapon}"
-		"quest_999_hud_var_desc"	"Get kills: {s:weapon}"
-		"quest_1000_hud_var_desc" 	"Destroy enemy drones"
-		"quest_1001_hud_var_desc"   "Earn MVPs<br> by end of match"
-		"quest_1002_hud_var_desc" 	"Get multi-kill rounds"
-		"quest_1003_hud_var_desc"   "Get kills: {s:weapon}"
-		"quest_1004_hud_var_desc"   "Get kills: {s:weapon}"
-		"quest_1005_hud_var_desc" 	"Get round wins"
-		"quest_1006_hud_var_desc" 	"Get kills"
-		"quest_1007_hud_var_desc" 	"Destroy locked doors"
-		"quest_1008_hud_var_desc_CT" 	"Get kills: M4A4 or M4A1-S"
-		"quest_1008_hud_var_desc_T"  	"Get kills: AK-47"
-		"quest_1008_hud_var_desc" 	"Get kills: AK-47 or M4A4"
-		"quest_1009_hud_var_desc"	"Get round wins"
-		"quest_1010_hud_var_desc"	"Get kills: {s:weapon}"
-		"quest_1011_hud_var_desc" 	"Get 5 round wins in one half"
-		"quest_1012_hud_var_desc"	"Step on bumpmines"
-		"quest_1013_hud_var_desc" 	"Get kills: {s:weapon}"
-		"quest_1014_hud_var_desc"   "Get kills: {s:weapon}"
-		"quest_1015_hud_var_desc"   "Get kills while spending under $2000"
-		"quest_1016_hud_var_desc"   "Hold $3000"
-		"quest_1017_hud_var_desc" 	"Get round wins"
-		"quest_1018_hud_var_desc" 	"Get kills"
-		"quest_1019_hud_var_desc" 	"Get SMG kills"
-		"quest_1020_hud_var_desc" 	"Get kills: {s:weapon}"
-		"quest_1021_hud_var_desc" 	"Massacre chickens"
-		"quest_1022_hud_var_desc" 	"Blow up barrels"
-		"quest_1023_hud_var_desc" 	"Get round wins"
-		"quest_1024_hud_var_desc" 	"Break panes of glass"
-		"quest_1025_hud_var_desc" 	"Get round wins"
-		"quest_1027_hud_var_desc"	"Apply graffiti<br> in enemy starting area"
-		"quest_1028_hud_var_desc"	"Get kills from<br> Banana or Apartments"
-		"quest_1029_hud_var_desc"	"Land smoke grenades"
-		"quest_1029_hud_var_desc_CT"	"Land smoke grenades:<br> Apartments or T Ramp"
-		"quest_1029_hud_var_desc_T"	"Land smoke grenades:<br> Sniper's Nest or Stairs"
-		"quest_1030_hud_var_desc" 	""
-		"quest_1031_hud_var_desc" 	""
-
-		"quest_1098_hud_var_desc"               "Get Round Wins"
-		"quest_1032_hud_var_desc"               "Get Round Wins"
-		"quest_1033_hud_var_desc"               "Get Kills"
-		"quest_1034_hud_var_desc"               "Investigate the Phoenix"
-		"quest_1035_hud_var_desc"               "Get Kills: AK-47, M4A4, or M4A1-S"
-		"quest_1036_hud_var_desc"               "Get Round Wins"
-		"quest_1037_hud_var_desc"               "Get Kills"
-		"quest_1099_hud_var_desc"               "Earn MVPs"
-		"quest_1038_hud_var_desc"               "Get Round Wins"
-		"quest_1039_hud_var_desc"               "Get Kills: Different Pistols"
-		"quest_1040_hud_var_desc"               "Get Kills: Pistol"
-		"quest_1041_hud_var_desc"               "Get Kills: Desert Eagle"
-		"quest_1042_hud_var_desc"               "Get Round Wins"
-		"quest_1043_hud_var_desc"               "Get Kills"
-		"quest_1044_hud_var_desc"               "Get Kills at least 15 meters away"
-		"quest_1045_hud_var_desc"               "Get Kills: any sniper rifle"
-		"quest_1046_hud_var_desc"               "Get Headshot Kills"
-		"quest_1047_hud_var_desc"               "Get Kills: M249"
-		"quest_1048_hud_var_desc"               "Deal Grenade Damage"
-		"quest_1049_hud_var_desc"               "Earn Money"
-		"quest_1050_hud_var_desc"               "Get Round Wins"
-		"quest_1051_hud_var_desc"               "Get Kills"
-		"quest_1052_hud_var_desc"               "Choose the Enemy Card"
-		"quest_1053_hud_var_desc"               "Land Smoke Grenades"
-		"quest_1053_hud_var_desc_T"             "Land Smoke Grenades at Garage or Mini"
-		"quest_1053_hud_var_desc_CT"            "Land Smoke Grenades at Control Room or Hut"
-		"quest_1054_hud_var_desc"               "Get Round Wins"
-		"quest_1055_hud_var_desc"               "Get Kills"
-		"quest_1056_hud_var_desc"               "Get Kills from Tunnel or Palace"
-		"quest_1057_hud_var_desc"               "Get Kills"
-		"quest_1058_hud_var_desc"               "Get Round Wins"
-		"quest_1059_hud_var_desc"               "Get Kills"
-		"quest_1060_hud_var_desc"               "Get Kills: {s:weapon}"
-		"quest_1061_hud_var_desc"               "Get Kills: {s:weapon}"
-		"quest_1062_hud_var_desc"               "Get Round Wins"
-		"quest_1063_hud_var_desc"               "Get Kills"
-		"quest_1064_hud_var_desc"               "Choose the MVP Card"
-		"quest_1065_hud_var_desc"               "Apply Graffiti"
-		"quest_1065_hud_var_desc_T"             "Apply Graffiti at Middle"
-		"quest_1065_hud_var_desc_CT"            "Apply Graffiti at T Side Upper or Outside"
-		"quest_1100_hud_var_desc"               "Get Round Wins"
-		"quest_1066_hud_var_desc"               "Get Round Wins"
-		"quest_1067_hud_var_desc"               "AUG Headshots"
-		"quest_1068_hud_var_desc"               "Blind an Enemy with a Flashbang"
-		"quest_1069_hud_var_desc"               "Apply Graffiti"
-		"quest_1069_hud_var_desc_T"             "Apply Graffiti at Catwalk or Upper Tunnel"
-		"quest_1069_hud_var_desc_CT"            "Apply Graffiti at Lower Tunnel or Short Stairs"
-		"quest_1101_hud_var_desc"               "Get Round Wins"
-		"quest_1070_hud_var_desc"               "Get Round Wins"
-		"quest_1071_hud_var_desc"               "Closer than 10 meters away"
-		"quest_1072_hud_var_desc"               "Get Kills closer than 10 meters away"
-		"quest_1073_hud_var_desc"               "Get Kills"
-		"quest_1074_hud_var_desc"               "Get Round Wins"
-		"quest_1075_hud_var_desc"               "Get Kills"
-		"quest_1076_hud_var_desc"               "Get Headshot Kills"
-		"quest_1077_hud_var_desc"               "Get Kills: {s:weapon}"
-		"quest_1102_hud_var_desc"               "Get Round Wins"
-		"quest_1078_hud_var_desc"               "Get Round Wins"
-		"quest_1079_hud_var_desc"               "Get Kills: {s:weapon}"
-		"quest_1080_hud_var_desc"               "Get Chicken Kills"
-		"quest_1081_hud_var_desc"               "Get Kills"
-		"quest_1082_hud_var_desc"               "Get Round Wins"
-		"quest_1083_hud_var_desc"               "Get Kills"
-		"quest_1084_hud_var_desc"               "Get Kills"
-		"quest_1085_hud_var_desc"               "Deal Grenade Damage"
-		"quest_1085_v2_hud_var_desc"     	    "Deal Grenade Damage"
-		"quest_1086_hud_var_desc"               "Get Round Wins"
-		"quest_1087_hud_var_desc"               "Get Kills"
-		"quest_1088_hud_var_desc"               "Get Kills from Specific Locations"
-		"quest_1088_hud_var_desc_T"             "Kill Enemies Positioned at Bombsite A or B"
-		"quest_1088_hud_var_desc_CT"            "Get Kills from Bombsite A or B"
-		"quest_1089_hud_var_desc"               "Get Scoped Kills"
-		"quest_1089_v2_hud_var_desc"               "Get Scoped Kills"
-		"quest_1090_hud_var_desc"               "Get Round Wins"
-		"quest_1091_hud_var_desc"               "Get Kills"
-		"quest_1092_hud_var_desc"               "Score Points with the Bonus Weapon"
-		"quest_1092_v2_hud_var_desc"            "Score Points with the Bonus Weapon"
-		"quest_1093_hud_var_desc"               "Spend Money"
-		"quest_1094_hud_var_desc"               "Get Round Wins"
-		"quest_1095_hud_var_desc"               "Get Kills"
-		"quest_1095_v2_hud_var_desc"            "Get UMP-45 Kills"
-		"quest_1096_hud_var_desc"               "Get Round Wins"
-		"quest_1097_hud_var_desc"               "Complete the mission"
-		"quest_1097_v2_hud_var_desc"            "Delve deeper into the Phoenix Compound"
-		"quest_1103_hud_var_desc"               "Blind enemies with flashbangs"
-
-
-
-
-/////////////////////////////////////////////////////////////////
-
-
-
-// win quests
-
-		"Quest_Win_a_Mode"										"Threat Neutralized: <b>%gamemode%</b>"
-		"Quest_Win_a_Mode_desc"								"Win one match of <b>%gamemode%</b>."
-
-		"Quest_Win_a_Mapgroup"								"End Game: <b>%gamemode%, %mapgroup%</b>"
-		"Quest_Win_a_Mapgroup_desc"						"Score <b>%gamemode%</b> %actions% in matches of <b>%mapgroup%</b>."
-
-		"Quest_Win_a_Map"											"End Game: <b>%gamemode%, %map%</b>"
-		"Quest_Win_a_Map_desc"								"Score <b>%gamemode%</b> %actions% in matches of <b>%map%</b>."
-
-		"Quest_Win_Rounds_Map"								"Engagement: <b>%gamemode%, %mapgroup%</b>"
-		"Quest_Win_Rounds_Map_desc"						"Score <b>%gamemode%</b> %actions% in matches on <b>%mapgroup%</b>."
-		"Quest_Win_Rounds_Map_Short"						"Round Wins"
-
-// equipment quests
-
-		"Quest_Weapon_Mode"										"Equipment Proficiency: <b>%gamemode%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Mode_desc"							"Score <b>%weapon%</b> %optional_target%%actions% in <b>%gamemode%</b> matches."
-		
-		"Quest_Weapon_Mode_single_desc"				"Score a <b>%weapon%</b> kill in a <b>%gamemode%</b> match."
-
-// equipment + mapgroup quests
-
-		"Quest_Weapon_Mapgroup"							"Equipment Proficiency: <b>%mapgroup%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Mapgroup_desc"					"Score <b>%weapon%</b> %optional_target%%actions% in <b>%gamemode%: %mapgroup%</b> matches."
-		"Quest_WeaponDamage_Mapgroup_desc"					"Deal <b>%weapon%</b> %optional_target%%actions% to enemies in <b>%gamemode%: %mapgroup%</b> matches."
-
-	"Quest_Weapon_Within_3_Mapgroup"						"Graduation: <b>%mapgroup%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Within_3_Mapgroup_desc"				"Score <b>%weapon%</b> %optional_target%%actions%<i> within your first 3 shots of the round,</i> in <b>%gamemode%: %mapgroup%</b> matches."
-
-	"Quest_Weapon_Map"									"Equipment Proficiency: <b>%map%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Map_desc"								"Score <b>%weapon%</b> %optional_target%%actions% in <b>%gamemode%: %map%</b> matches."
-		"Quest_Weapon_Map_Team_desc"		"As a <b>%team%</b>, score <b>%weapon%</b> %optional_target%%actions% in <b>%gamemode%: %map%</b> matches."		
-		"Quest_Weapon_Mapgroup_Team_desc"		"As a <b>%team%</b>, score <b>%weapon%</b> %optional_target%%actions% in <b>%gamemode%: %mapgroup%</b> matches."		
-
-		"Quest_WepUpgrade_Mapgroup"					"Weapon Upgrade: <b>%mapgroup%</b>"
-
-	"Quest_Unique_Weapon_Mapgroup"							"Weapons Expert: <b>%mapgroup%</b>"
-		"Quest_Unique_Weapon_Mapgroup_desc"					"Within <b>%gamemode%: %mapgroup%</b> matches, earn mission progress for each %action% <i>accomplished with a unique weapon</i>."
-		"Quest_Unique_Weapon_Mapgroup_Team_desc"					"As a <b>%team%</b> in <b>%gamemode%: %mapgroup%</b> matches, earn mission progress for each %action% <i>accomplished with a unique weapon</i>."
-
-		"Quest_Defend_Bomb_Mapgroup_desc"					"Score %actions% <i>after the bomb has been planted</i> in <b>%gamemode%: %mapgroup%</b> matches."
-
-// Hostage quests
-
-	 "Quest_Rescue_Map"								"Hostage Extraction: <b>%map%</b>"
-	 "Quest_Rescue_Map_Desc"						"Score %actions% in <b>%gamemode%: %map%</b> matches."
-
-// Plant bomb quests
-
-	 "Quest_PlantBomb_Mapgroup"									"Explosives Expert: <b>%mapgroup%</b>"
-	 "Quest_PlantBomb_Mapgroup_Desc"						"Execute %actions% in <b>%gamemode%: %mapgroup%</b> matches."
-
-
-// Assassination
-
-	 "Quest_Assassination"									"%victim_team% Assassination: <b>%target%</b>"
-	 "Quest_Assassination_desc"							"Find and kill the %victim_team% <b>%target%</b> in <b>%gamemode%: %map%</b> matches."
-
-	 "quest_target_turner"									"Turner"
-	 "quest_target_jackson"									"Jackson"
-	 "quest_target_chapel"									"Chapel"	 
-	 "quest_target_sergei"									"Sergei"	 
-
-	 "quest_assassination_you_are_target"					"You are an Assassination Target.\nYou are %s1."
-	 "quest_assassination_target_on_server"					"A player is trying to kill Assassination Target: %s1"
-	 "quest_assassination_target_on_server_has_quest"		"You are trying to kill Assassination Target: %s1"
-	 "quest_assassination_target_killed"					"%s1 has been assassinated!"
-	 "quest_assassination_no_longer_target"					"You are no longer %s1." 
-
-// Income
-	 "Quest_Income_Mapgroup"								"Gross Income: <b>$1,000,000</b>"
-	 "Quest_Income_Mapgroup_desc"						"Earn a total of $1,000,000 in <b>%gamemode%: %mapgroup%</b> matches."
-	 "Quest_Income_Mapgroup_Team_desc"			"As a <b>%team%</b>, earn a total of $1,000,000 in <b>%gamemode%: %mapgroup%</b> matches."
-
-	 "Quest_Spend_Mapgroup_Team_desc"			"As a <b>%team%</b>, spend a total of $1,000,000 in <b>%gamemode%: %mapgroup%</b> matches."
-
-
-//	deathmatch bonus points
-
-		"Quest_DMBonusPoints_Mapgroup"				"Master of Arms: <b>%mapgroup%</b>"
-		"Quest_DMBonusPoints_Mapgroup_desc"		"Earn points using the Bonus Weapon in <b>Deathmatch: %mapgroup%</b> matches."
-
-		"Quest_DMBonusPoints_Map"							"Master of Arms: <b>%map%</b>"
-		"Quest_DMBonusPoints_Map_desc"				"Earn points using the Bonus Weapon in <b>Deathmatch: %map%</b> matches."
-
-// play quests
-
-		"Quest_Kills_Mapgroup"							"Threat Recon: <b>%gamemode%</b>, <b>%mapgroup%</b>"
-		"Quest_Kills_Mapgroup_desc"					"Score %optional_target%%actions% in <b>%gamemode%: %mapgroup%</b> matches."
-		"Quest_Kills_Mapgroup_cond_desc"		"Score %optional_target%%actions%—<i>%condition%</i>—in <b>%gamemode%: %mapgroup%</b> matches."
-		"Quest_Kills_Mapgroup_Team_desc"		"As a <b>%team%</b>, score %optional_target%%actions% in <b>%gamemode%: %mapgroup%</b> matches."		
-
-		"Quest_Kills_Mapgroup_Victim_Team_desc"		"As a <b>%team%</b>, score %victim_team% %actions% in <b>%gamemode%: %mapgroup%</b> matches."
-
-		"Quest_Flashbang_Mapgroup_Team_desc"		"As a <b>%team%</b>, score %optional_target%%actions% in <b>%gamemode%: %mapgroup%</b> matches."		
-
-
-		"Quest_Burn_Mapgroup_desc"					"Deal <i>burn</i> %actions% to enemies in <b>%gamemode%: %mapgroup%</b> matches."
-
-		"Quest_Headshots_Mapgroup"							"Headshot: <b>%gamemode%</b>, <b>%mapgroup%</b>"
-		"Quest_Headshots_Mapgroup_desc"					"Score headshot %actions% in <b>%gamemode%: %mapgroup%</b> matches."
-
-		"Quest_Kills_Map"										"Threat Recon: <b>%gamemode%</b>, <b>%map%</b>"
-		"Quest_Kills_Map_desc"							"Score %optional_target%%actions% in <b>%gamemode%: %map%</b> matches."
-
-		"Quest_Kills_Mode"								"<b>%gamemode%</b> Threat Recon"
-		"Quest_Kills_Mode_desc"						"Score %optional_target%%actions% in <b>%gamemode%</b> matches."
-
-// chicken quests
-
-	"Quest_Chicken_Kills_Mapgroup"				"Supply Run: <b>%gamemode%</b>, <b>%mapgroup%</b>"
-	"Quest_Chicken_Kills_Map"							"Supply Run: <b>%gamemode%</b>, <b>%map%</b>"
-	"Quest_Chicken_Kills"						"Supply Run"
-
-// generic string tokens
-
-	"quest_team_ct"										"Counter-Terrorist"
-	"quest_team_terrorist"								"Terrorist"
-	"quest_complete_the_match"							"Finish the match to complete your mission"
-	"quest_complete_the_match_uncommitted"				"<img src='file://{images}/icons/ui/info.svg' class=''/>Finish the match to save your mission progress"
-
-// Coop quests
-
-	"Quest_Guardian_Bomb"									"Guardian Co-op Challenge: <b>%map%</b>, <b>%weapon%</b>"
-	"Quest_Guardian_Bomb_Desc"								"Guardian Co-op Challenge: Play as a <b>%team%</b> with a partner and protect the bombsite from enemies on <b>%map%</b>.<br><br>Score a <b>%action%</b> by getting <b>%kills%</b> enemy kills with <b>%weapon%</b>.  <b>%extradetails%</b>"
-	"Quest_Guardian_Desc_op08"								"Guardian Co-op Challenge: Play as a <b>%team%</b> with a partner and protect the bombsite from enemies on <b>%map%</b>.<br><br>Score a <b>%action%</b> by getting <b>%kills%</b> %killtype% with <b>%weapon%</b>.  <b>%extradetails%</b>%presence%"
-
-	"Quest_Guardian_Desc_op09"								"{s:commandverb} {s:kills} {s:weapon} {s:killtype} in <b>Guardian: {s:location}</b>."
-	"Quest_CoopMission_Desc_op09"							"<b>Co-op Strike</b>: complete the objective with a partner in <b>{s:location}</b>."
-	"Quest_Guardian_Desc_op09_extra_equip_1_var_desc"		"{s:commandverb} {s:kills} {s:weapon} {s:killtype} in <b>Guardian: {s:location}</b>. Players start with <b>{s:extraequip0}</b>."
-	"Quest_Guardian_Desc_op09_extra_equip_2_var_desc"		"{s:commandverb} {s:kills} {s:weapon} {s:killtype} in <b>Guardian: {s:location}</b>. Players start with <b>{s:extraequip0}</b> and <b>{s:extraequip1}</b>."
-
-	"Quest_Guardian_Desc_op10"								"{s:commandverb} {s:kills} {s:weapon} {s:killtype} in <b>Guardian: {s:location}</b>."
-	"Quest_CoopMission_Desc_op10"							"<b>Co-op Strike</b>: complete the objective with a partner in <b>{s:location}</b>."
-	"Quest_Guardian_Desc_op10_extra_equip_1_var_desc"		"{s:commandverb} {s:kills} {s:weapon} {s:killtype} in <b>Guardian: {s:location}</b>. Players start with <b>{s:extraequip0}</b>."
-	"Quest_Guardian_Desc_op10_extra_equip_2_var_desc"		"{s:commandverb} {s:kills} {s:weapon} {s:killtype} in <b>Guardian: {s:location}</b>. Players start with <b>{s:extraequip0}</b> and <b>{s:extraequip1}</b>."
-
-	"Quest_Coop_Desc_Rescue"								"Co-op Strike: Play as a <b>%team%</b> with a partner and <b>rescue the hostage</b> from <b>%map%</b>.<br><br><b>%extradetails%</b>"
-	"Quest_Coop_Desc_Recon"									"Co-op Strike: Play as a <b>%team%</b> with a partner and <b>gather intel</b> from <b>%map%</b>.<br><br><b>%extradetails%</b>"
- 	"Quest_Coop_Desc_Bomb"									"Co-op Strike: Play as a <b>%team%</b> with a partner and <b>Blow up</b> the <b>%map%</b>.<br><br><b>%extradetails%</b>"
- 
-	"Quest_op09_coopmission"								"Recover a sample of the Danger Zone virus from the Phoenix laboratory."
-	"Quest_op10_coopmission"								"The Phoenix have been spotted at an old farm. Investigate the area and find out what they are planning."
-
-	"Quest_Guardian_Hostage"								"Guardian Co-op Challenge: <b>%map%</b>, <b>%weapon%</b>"
-	"Quest_Guardian_Hostage_Desc"							"Guardian Co-op Challenge: Play as a <b>%team%</b> with a partner and prevent the Counter-Terrorists from reaching the Hostages on <b>%map%</b>.<br><br>Score a <b>%action%</b> by getting <b>%kills%</b> enemy kills with <b>%weapon%</b>.  <b>%extradetails%</b>"
-	 
-	"quest_guardian_kills_5"								"5"
-	"quest_guardian_kills_10"								"10"
-	"quest_guardian_kills_15"								"15"
-	"quest_guardian_kills_20"								"20"
-	"quest_guardian_kills_25"								"25"
-	"quest_guardian_kills_30"								"30"
-	"quest_guardian_kills_35"								"35"
-	"quest_guardian_kills_40"								"40"
-	"quest_guardian_kills_45"								"45"
-	"quest_guardian_kills_50"								"50"
-
-// Guardian kill types
-	"quest_killtype_normal"									"kills"
-	"quest_killtype_headshot"								"<b>headshot</b> kills"
-	"quest_killtype_blind"									"<b>blinded</b> kills"
-	"quest_killtype_unscoped"								"<b>unscoped</b> kills"
-
-	"quest_enemy_weapon"									"Enemy Weapon"
-	"quest_weapon_CZ75a_or_enemy_weapon"					"CZ75-Auto or any enemy weapon"
-	"quest_weapon_sniperrifle"								"any sniper rifle"
-	"quest_weapon_any_rifle"								"any rifle"
-	"quest_weapon_m4"										"any M4 rifle"
-	"quest_weapon_starter_ct"								"any default CT pistol"
-	"quest_weapon_ct"										"Counter-Terrorist weapon"
-	"quest_weapon_t"										"Terrorist weapon"
-	"quest_weapon_any_pistol"								"any pistol"
-	"quest_weapon_any_weapon"								"any weapon"
-	"quest_weapon_any_shotgun"								"any shotgun"
-	"quest_weapon_any_smg"									"any smg"
-	"quest_weapon_ssg08_or_mag7"							"SSG 08 or MAG-7"
-	"quest_weapon_awp_or_p90"								"AWP or P90"
-	"quest_weapon_unique_pistol"							"Different Pistols"
-	"quest_presence_empty"									""
-	"quest_presence_heavy"									"<br><br><b>ADVISORY</b>: Expect <i>heavy</i> resistance in the area!"
-
-	"quest_guardian_empty"		""
-	"quest_guardian_cantbuy"		"<i>Cannot buy on this mission.</i>"
-	"quest_guardian_maxmoneylimit"		"<i>Max money is limited on this mission.</i>"
-	"quest_guardian_killrewardsonly" 	"<i>Can only earn money from kill rewards.</i>"
-	"quest_guardian_moneyreset" 	"<i>Money is reset after mission failure.</i>"
-	"quest_guardian_heavyarmor" 	"<i>Heavy Assault Suit is available.</i>"
-	"quest_guardian_noarmor" 	"<i>Armor is not available.</i>"
-	"quest_guardian_heavyarmorresetmoney" 	"<i>Heavy Assault Suit is available. Money is reset after mission failure.</i>"
-	 //"quest_guardian_maxmoney_16000"		"$16000"
-	 //"quest_guardian_maxmoney_10000"		"$10000"
-	 //"quest_guardian_maxmoney_6000"			"$6000"
-	 //"quest_guardian_maxmoney_3200"			"$3200"
-	 //"quest_guardian_maxmoney_0"			"$0"
-
-	// "Get [headshot] kills: [unscoped] [AWP]"
-	// Double spaces will automatically be removed.
-	"guardian_mission_type_kills"				"Get kills: {s:weapon}"
-	"guardian_mission_type_headshots"			"Get headshots: {s:weapon}"
-	"guardian_mission_type_unscoped"			"Get unscoped kills: {s:weapon}"
-	"guardian_mission_type_enemy_weapon"		"Get kills with enemy's {s:weapon}"
-	"guardian_mission_type_enemy_airborne"		"Get airborne kills: {s:weapon}"
-	"guardian_mission_type_flashbang"			"Kill blinded enemies"
-	"guardian_mission_type_ct_weapons"			"Get kills with Counter-Terrorist weapons"
-
-//	bonus tokens
-
-	  "quest_bonus_headshot"							"if also a headshot"
-	  "quest_bonus_zoomed"								"while scoped"
-  	  "quest_bonus_not_zoomed"							"while unscoped"
-	  "quest_bonus_chickens"							"when target is a chicken"
-
-	  "quest_bonus_taser"								"when with a Zeus x27"
-	  "quest_bonus_bomb_planted"						"when the bomb is planted"
-	  "quest_bonus_melee"								"when with a melee weapon"	  
-
-
-
-	  "quest_bonus_killstreak_2"						"when in a kill streak of 2 or more"
-	  "quest_bonus_killstreak_3"						"when in a kill streak of 3 or more"
-
-	  "quest_bonus_chickenstreak_2"						"when in a chicken kill streak of 2 or more"
-	  "quest_bonus_chickenstreak_3"						"when in a chicken kill streak of 3 or more"
-
-	  "quest_bonus_borrowed_gun"						"when using someone else's gun"
-	  "quest_bonus_borrowed_gun_enemy"					"when using an enemy's gun"
-	  "quest_bonus_borrowed_gun_own"					"when using the target's own gun"
-		"quest_bonus_victim_rescuing"					"when the target is rescuing a hostage"
-		
-	  "quest_bonus_bulletcount_1"						"when accomplished with your first shot of the round"
-		
-	  "quest_bonus_totalrounds_2"						"if within the first 2 rounds"
-	  "quest_bonus_totalrounds_3"						"if within the first 3 rounds"
-	  "quest_bonus_totalrounds_4"						"if within the first 4 rounds"
-	  "quest_bonus_totalrounds_5"						"if within the first 5 rounds"
-
-  	  "quest_bonus_weapon_elite"						"when with Dual Berettas"
-	  "quest_bonus_weapon_ssg08"						"when with SSG08"
-	  "quest_bonus_weapon_revolver"						"when with R8 Revolver"
-	  "quest_bonus_weapon_glock_hkp2000_usp_silencer"	"when with P2000, USP-S, or Glock-18"
-
-		"quest_bonus_set_dust"							"when the weapon is from the Dust Collection"
-		"quest_bonus_set_aztec"							"when the weapon is from the Aztec Collection"
-		"quest_bonus_set_vertigo"						"when the weapon is from the Vertigo Collection"
-		"quest_bonus_set_inferno"						"when the weapon is from the Inferno Collection"
-		"quest_bonus_set_militia"						"when the weapon is from the Militia Collection"
-		"quest_bonus_set_nuke"							"when the weapon is from the Nuke Collection"
-		"quest_bonus_set_office"						"when the weapon is from the Office Collection"
-		"quest_bonus_set_assault"						"when the weapon is from the Assault Collection"
-		"quest_bonus_set_dust_2"						"when the weapon is from the Dust 2 Collection"
-		"quest_bonus_set_train"							"when the weapon is from the Train Collection"
-		"quest_bonus_set_mirage"						"when the weapon is from the Mirage Collection"
-		"quest_bonus_set_italy"							"when the weapon is from the Italy Collection"
-		"quest_bonus_set_lake"							"when the weapon is from the Lake Collection"
-		"quest_bonus_set_safehouse"						"when the weapon is from the Safehouse Collection"
-		"quest_bonus_set_esports"						"when the weapon is from the eSports 2013 Collection"
-		"quest_bonus_set_weapons_i"						"when the weapon is from the Arms Deal Collection"
-		"quest_bonus_set_bravo_i"						"when the weapon is from the Bravo Collection"
-		"quest_bonus_set_bravo_ii"						"when the weapon is from the Alpha Collection"
-		"quest_bonus_set_weapons_ii"					"when the weapon is from the Arms Deal 2 Collection"
-		"quest_bonus_set_esports_ii"					"when the weapon is from the eSports 2013 winter Collection"
-		"quest_bonus_set_esports_2014_summer"			"when the weapon is from the eSports 2014 Summer Collection"
-		"quest_bonus_set_community_1"					"when the weapon is from the Winter Offensive Collection"
-		"quest_bonus_set_weapons_iii"					"when the weapon is from the Arms Deal 3 Collection"
-		"quest_bonus_set_community_2"					"when the weapon is from the Phoenix Collection"
-		"quest_bonus_set_community_3"					"when the weapon is from the Huntsman Collection"
-		"quest_bonus_set_community_4"					"when the weapon is from the Breakout Collection"
-		"quest_bonus_set_community_5"					"when the weapon is from the Vanguard Collection"
-		"quest_bonus_set_community_6"					"when the weapon is from the Chroma Collection"
-		"quest_bonus_set_community_7"					"when the weapon is from the Chroma 2 Collection"
-		"quest_bonus_set_community_11"					"when the weapon is from the Wildfire Collection"
-		"quest_bonus_set_bank"							"when the weapon is from the Bank Collection"
-		"quest_bonus_set_baggage"						"when the weapon is from the Baggage Collection"
-		"quest_bonus_set_cobblestone"					"when the weapon is from the Cobblestone Collection"
-		"quest_bonus_set_overpass"						"when the weapon is from the Overpass Collection"
-		"quest_bonus_set_cache"							"when the weapon is from the Cache Collection"
-		"quest_bonus_set_kimono"						"when the weapon is from the Rising Sun Collection"
-
-		"quest_bonus_cs_assault"						"when the map is Assault"
-		"quest_bonus_cs_italy"							"when the map is Italy"
-		"quest_bonus_cs_militia"						"when the map is Militia"
-		"quest_bonus_cs_office"							"when the map is Office"
-		"quest_bonus_de_aztec"							"when the map is Aztec"
-		"quest_bonus_de_dust"							"when the map is Dust"
-		"quest_bonus_de_dust2"							"when the map is Dust II"
-		"quest_bonus_de_mirage"							"when the map is Mirage"
-		"quest_bonus_de_overpass"						"when the map is Overpass"
-		"quest_bonus_de_cbble"							"when the map is Cobblestone"
-		"quest_bonus_de_train"							"when the map is Train"		
-		"quest_bonus_de_inferno"						"when the map is Inferno"
-		"quest_bonus_de_nuke"							"when the map is Nuke"
-		"quest_bonus_de_shorttrain"						"when the map is Shorttrain"
-		"quest_bonus_de_shortdust"						"when the map is Shortdust"
-		"quest_bonus_de_vertigo"						"when the map is Vertigo"
-		"quest_bonus_de_balkan"							"when the map is Balkan"
-		"quest_bonus_ar_baggage"						"when the map is Baggage"
-		"quest_bonus_ar_monastery"						"when the map is Monastery"
-		"quest_bonus_ar_shoots"							"when the map is Shoots"
-		"quest_bonus_de_embassy"						"when the map is Embassy"
-		"quest_bonus_de_bank"							"when the map is Bank"
-		"quest_bonus_de_lake"							"when the map is Lake"
-		"quest_bonus_de_depot"							"when the map is Depot"
-		"quest_bonus_de_safehouse"						"when the map is Safehouse"
-		"quest_bonus_de_sugarcane"						"when the map is Sugarcane"
-		"quest_bonus_de_stmarc"							"when the map is St. Marc"
-		"quest_bonus_cs_museum"							"when the map is Museum"
-		"quest_bonus_cs_thunder"						"when the map is Thunder"
-		"quest_bonus_de_favela"							"when the map is Favela"
-		"quest_bonus_cs_downtown"						"when the map is Downtown"
-		"quest_bonus_de_seaside"						"when the map is Seaside"
-		"quest_bonus_de_library"						"when the map is Library"
-		"quest_bonus_cs_motel"							"when the map is Motel"
-		"quest_bonus_de_cache"							"when the map is Cache"
-		"quest_bonus_de_ali"							"when the map is Ali"
-		"quest_bonus_de_ruins"							"when the map is Ruins"
-		"quest_bonus_de_ruby"							"when the map is Ruby"
-		"quest_bonus_de_chinatown"						"when the map is Chinatown"
-		"quest_bonus_de_gwalior"						"when the map is Gwalior"
-		"quest_bonus_cs_agency"							"when the map is Agency"
-		"quest_bonus_cs_siege"							"when the map is Siege"
-		"quest_bonus_de_castle"							"when the map is Castle"
-		"quest_bonus_de_overgrown"						"when the map is Overgrown"
-		"quest_bonus_de_blackgold"						"when the map is Black Gold"
-		"quest_bonus_cs_rush"							"when the map is Rush"
-		"quest_bonus_de_mist"							"when the map is Mist"
-		"quest_bonus_cs_insertion"						"when the map is Insertion"
-
-		"quest_bonus_cs_workout"						"when the map is Workout"
-		"quest_bonus_cs_backalley"						"when the map is Back Alley"
-		"quest_bonus_de_marquis"						"when the map is Marquis"
-		"quest_bonus_de_facade"							"when the map is Facade"
-		"quest_bonus_de_season"							"when the map is Season"
-		"quest_bonus_de_bazaar"							"when the map is Bazaar"
-		"quest_bonus_de_santorini"						"when the map is Santorini"
-
-		"quest_bonus_de_subzero"						"when the map is Subzero"
-		"quest_bonus_de_biome"							"when the map is Biome"
-
-
-
-
-// OperationalPoints
-
-		"Quest_OperationalPoints_Template"				"Challenge Award: %s1"
-
-		"Quest_OperationalPoints_1"					"★"
-		"Quest_OperationalPoints_2"					"★★"
-		"Quest_OperationalPoints_3"					"<font color=\"#ff0000\">★★★★</font>"
-
-// Hud Message
-
-	 "Quest_ProgressMadeMessage1"								" Mission points to be credited at match end: +%s1."
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -9471,7 +8246,7 @@
 		"StickerKit_enfu_bombsquad"                       "Bombsquad"   
 		"StickerKit_desc_enfu_bombsquad"                  ""   
 		"StickerKit_enfu_bombsquad_foil"                  "Bombsquad (Foil)"   
-		"StickerKit_desc_bombsquad_foil"                  ""   
+		"StickerKit_desc_enfu_bombsquad_foil"                  ""   
 		"StickerKit_enfu_guru"                            "The Guru"   
 		"StickerKit_desc_enfu_guru"                       ""   
 		"StickerKit_enfu_ninja"                           "Silent Ninja"   
@@ -30737,7 +29512,7 @@
 		"StickerKit_desc_pinups_scherry"		""
 
 		"StickerKit_pinups_tamara"				"Tamara"
-		"StickerKit_desc__pinups_tamara"		""
+		"StickerKit_desc_pinups_tamara"		""
 		
 		"StickerKit_pinups_ivette_holo"			"Ivette (Holo)"
 		"StickerKit_desc_pinups_ivette_holo"	""
@@ -31398,7 +30173,7 @@
 		"StickerKit_desc_halo_legendary"									""
 
 		"StickerKit_halo_misterchief"										"Mister Chief"
-		"StickerKit_desc_misterchief"										""
+		"StickerKit_desc_halo_misterchief"										""
 
 		"StickerKit_halo_noble"												"Noble"
 		"StickerKit_desc_halo_noble"										""
@@ -32133,10 +30908,10 @@
 		"StickerKit_desc_spring2022_inferno_diorama_foil"				""
 		
 		"StickerKit_spring2022_real_mvp_foil"							"The Real MVP (Foil)"
-		"StickerKit_desc_community2021_real_mvp_foil"					""
+		"StickerKit_desc_spring2022_real_mvp_foil"					""
 		
 		"StickerKit_spring2022_rock_paper_scissors_foil"				"Rock, Paper, Scissors (Foil)"
-		"StickerKit_desc_community2021_rock_paper_scissors_foil"		""
+		"StickerKit_desc_spring2022_rock_paper_scissors_foil"		""
 		
 		//CSGO10 Sticker Capsule
 
@@ -32398,7 +31173,7 @@
 		"StickerKit_desc_community2022_old_eye_foil"					""
 		
 		"StickerKit_community2022_peek_foil"							"Peek Me (Foil)"
-		"StickerKit_desc_community2021_peek_foil"						""
+		"StickerKit_desc_community2022_peek_foil"						""
 		
 		//Community 2024 Sticker Capsule
 		
@@ -32617,7 +31392,7 @@
 		"StickerKit_desc_elemental_craft_foil_lightning_three"				""
 		
 		"StickerKit_elemental_craft_foil_fire_three"						"Winding Scorch (Foil)"
-		"StickerKit_desc_elemental_craft_foil_fire_one"						""
+		"StickerKit_desc_elemental_craft_foil_fire_three"						""
 		
 		"StickerKit_elemental_craft_lenticular_blood_one"					"Ruby Stream (Lenticular)"
 		"StickerKit_desc_elemental_craft_lenticular_blood_one"				""
@@ -37196,7 +35971,7 @@
 // COMMUNITY_34
 
 		"PaintKit_usp_field_snake"						"This custom paint job features a winged defuser beneath the rear sight and \"027\" near the ejection port.\n\n<i>Light field work</i>"
-		"PaintKit_usp_field_snake_Tag"					"027"
+		"PaintKit_usp_field_snake_Tag"					"27"
 
 		"PaintKit_deagle_calligraff"					"The slide of this Desert Eagle has been decorated with silver paint pen calligraphy.\n\n<i>These things take time</i>"
 		"PaintKit_deagle_calligraff_Tag"				"Calligraffiti"
@@ -39161,12 +37936,6 @@
 		"SFUI_Store_Limited_Bid_Tagline"			"To Bid on This Offer"
 		"SFUI_Store_Available_Offers"               "Offers Available Till:"
 		"SFUI_Store_Preview"                        "Preview"
-
-		"SFUI_Store_Timer_Week:p"                   "%s1 Week#|#%s1 Weeks"
-		"SFUI_Store_Timer_Day:p"                    "%s1 Day#|#%s1 Days"
-		"SFUI_Store_Timer_Hour:p"                   "%s1 Hour#|#%s1 Hours"
-		"SFUI_Store_Timer_Min:p"                    "%s1 Min#|#%s1 Mins"
-		"SFUI_Store_Timer_Sec:p"                    "%s1 Sec#|#%s1 Secs"
 
 		"SFUI_Store_Timer_Week:f"                 	"{f:0:value} {f:0:value, plural, one{Week} other{Weeks}}"
 		"SFUI_Store_Timer_Day:f"                    "{f:0:value} {f:0:value, plural, one{Day} other{Days}}"
@@ -41458,7 +40227,7 @@
 		"SFUI_PlayerDetails_Loading"				"Checking Commendations"
 		"SFUI_PlayerDetails_Loading_Failed"			"Failed to load commendations, try again later"
 		"SFUI_PlayerDetails_Previously_Submitted"	"Previously submitted commendations for this user"
-		"SFUI_PlayerDetails_Commendations_Left:p"		"You can commend %s1 more player today#|#You can commend %s1 more players today"
+		"SFUI_PlayerDetails_Commendations_Left:f"	"You can commend {num_players} more {num_players, plural, one{player} other{players}} today"
 		"SFUI_PlayerDetails_NoCommendations_Left"   "You have submitted too many commendations, please try again tomorrow"
 		"SFUI_PlayerDetails_Updating_Previous_Commendation"   "You are changing a previously submitted commendation"
 		"SFUI_PlayerDetails_New_Commendation"   "You are submitting a new commendation"
@@ -41832,7 +40601,7 @@
 		"SFUIHUD_InfoPanel_Coop_Thumb2Ready"					"Thumbstick 2 ready!"
 		"SFUIHUD_InfoPanel_Coop_Thumb2Retrieved"				"Virus thumbstick retrieved!"	
 
-		"FullPlayerNameOrder_Default"						"%modifier% %clantag% %controller_name% (%current_controller_of_my_pawn%)"
+		"FullPlayerNameOrder_Default:f"						"{modifier} {clantag} {controller_name} ({current_controller_of_my_pawn})"
 
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -43226,8 +41995,8 @@
 		"SFUI_Settings_MiniScoreboardPlayerCount_Tooltip"	"During the active portion of the round, replace player avatars with team player count in the mini-scoreboard."
 
 
-		"Post_Round_Damage_Report_Given:p"		" • Damage Given → %s3: %s2 in %s1#|# • Damage Given → %s3: %s2 in %s1"
-		"Post_Round_Damage_Report_Taken:p"		" • Damage Taken ← %s3: %s2 in %s1#|# • Damage Taken ← %s3: %s2 in %s1"
+		"Post_Round_Damage_Report_Given:f"		" • Damage Given → {player_name}: {f:0:damage} in {num_hits}"
+		"Post_Round_Damage_Report_Taken:f"		" • Damage Taken ← {player_name}: {f:0:damage} in {num_hits}"
 
 		"SFUI_TeamOverheadID"					"Show Team Equipment"
 
@@ -43708,8 +42477,8 @@
 
 		"SFUI_UserAlertNoteType_1"			"Servers in %s1 are experiencing high load."
 		"SFUI_UserAlertNoteType_2"			"Servers in %s1 are offline for maintenance."
-		"SFUI_UserAlertNoteType_LowPlayersR:p"	"Only %players% compatible player is searching in %region%.#|#Only %players% compatible players are searching in %region%."
-		"SFUI_UserAlertNoteType_LowPlayersY:p"	"Only %players% compatible player is searching in your region.#|#Only %players% compatible players are searching in your region."
+		"SFUI_UserAlertNoteType_LowPlayersR:f"	"Only {players} compatible {players, plural, one{player} other{players}} is searching in {region}."
+		"SFUI_UserAlertNoteType_LowPlayersY:f"	"Only {players} compatible {players, plural, one{player} other{players}} is searching in your region."
 
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"Failed to connect to the match."
 		"SFUI_QMM_ERROR_NotLoggedIn"		"Not logged in to Counter-Strike matchmaking service."
@@ -50356,6 +49125,1367 @@
 
 		"accolade_bombcarrierkills_2"					"The Interference"
 		"accolade_bombcarrierkills_desc_2"				"Bomb carrier kills:"
+
+		"accolade_burndamage"							"The Fire Starter"
+		"accolade_burndamage_desc"						"Most burn damage:"
+		"accolade_burndamage_value"						"{s:accolade-value-string}"
+
+		"accolade_burndamage_2"							"The Toaster"
+		"accolade_burndamage_desc_2"					"Burn damage:"
+
+		"accolade_cashspent"							"The Big Spender"
+		"accolade_cashspent_desc"						"Most money spent:"
+		"accolade_cashspent_value"						"${s:accolade-value-string}"
+
+		"accolade_cashspent_2"							"The Spender"
+		"accolade_cashspent_desc_2"						"Money spent:"
+
+		"accolade_uniqueweaponkills"					"The Weapons Master"
+		"accolade_uniqueweaponkills_desc"				"Most unique weapon kills:"
+		"accolade_uniqueweaponkills_value"				"{s:accolade-value-string}"
+
+		"accolade_uniqueweaponkills_2"					"The Weapons Trainer"
+		"accolade_uniqueweaponkills_desc_2"				"Unique weapon kills:"
+
+		"accolade_dinks"								"The Dink Master"
+		"accolade_dinks_desc"							"Most dinks:"
+		"accolade_dinks_value"							"{s:accolade-value-string}"
+
+		"accolade_dinks_2"								"The Barber"
+		"accolade_dinks_desc_2"							"Dinks:"
+
+		"accolade_taserkills"							"God of Lightning"
+		"accolade_taserkills_desc"						"Most Zeus kills:"
+		"accolade_taserkills_value"						"{s:accolade-value-string}"
+
+		"accolade_taserkills_2"							"Volt Vanguard"
+		"accolade_taserkills_desc_2"					"Zeus kills:"		
+
+		"accolade_knifekills"							"Stabby McStabface"
+		"accolade_knifekills_desc"						"Most knife kills:"
+		"accolade_knifekills_value"						"{s:accolade-value-string}"
+
+		"accolade_knifekills_2"							"Melee Mayhem"
+		"accolade_knifekills_desc_2"					"knife kills:"			
+
+		"accolade_gimme_01"								"The Moral Support"
+		"accolade_gimme_01_desc"						""
+
+		"accolade_gimme_02"								"The Participant"
+		"accolade_gimme_02_desc"						""
+
+		"accolade_gimme_03"								"The Reservist"
+		"accolade_gimme_03_desc"						""
+
+		"accolade_gimme_04"								"The Backup Plan"
+		"accolade_gimme_04_desc"						""
+
+		"accolade_gimme_05"								"The Rearguard"
+		"accolade_gimme_05_desc"						""
+
+		"accolade_gimme_06"								"The Armchair General"
+		"accolade_gimme_06_desc"						""
+
+		"accolade_gimme_07"								"The Jack of all Trades"
+		"accolade_gimme_07_desc"						""
+
+		"accolade_gimme_08"								"The Unknown Soldier"
+		"accolade_gimme_08_desc"						""
+
+		"accolade_gimme_09"								"The Invisible"
+		"accolade_gimme_09_desc"						""
+
+		"accolade_gimme_10"								"The MIA"
+		"accolade_gimme_10_desc"						""
+
+
+		"accolade_player_score"							"Score: {d:score-value-int}"
+
+
+		"playercardstats_adr_title"						"ADR"
+		"playercardstats_adr_value"						"{d:playercardstats-adr}"
+
+		"playercardstats_kda_title"						"KDA"
+		"playercardstats_kda_value"						"{d:playercardstats-kills}-{d:playercardstats-deaths}-{d:playercardstats-assists}"
+
+		"playercardstats_k_title"						"Kills"
+		"playercardstats_k_value"						"{d:playercardstats-kills}"
+
+		"playercardstats_d_title"						"Deaths"
+		"playercardstats_d_value"						"{d:playercardstats-deaths}"
+
+		"playercardstats_a_title"						"Assists"
+		"playercardstats_a_value"						"{d:playercardstats-assists}"
+
+		"playercardstats_score_title"					"Score"
+		"playercardstats_score_value"					"{d:playercardstats-score}"
+
+		"playercardstats_hsp_title"						"HSP"
+		"playercardstats_hsp_value"						"{d:playercardstats-hsp}%"
+
+		"playercardstats_ef_title"						"ENEMIES FLASHED"
+		"playercardstats_ef_value"						"{d:playercardstats-ef}"
+
+		"playercardstats_ud_title"						"UTILITY DAMAGE"
+		"playercardstats_ud_value"						"{d:playercardstats-ud}"
+
+		"playercardstats_gglevel_title"					"Level"
+		"playercardstats_gglevel_value"					"{d:playercardstats-gglevel}"
+
+		"playercardstats_kk_title"						"Knife Kills"
+		"playercardstats_kk_value"						"{d:playercardstats-knifekills}"
+
+
+		"eom-vote-for-next-map"							"Vote for the next map"
+		
+		"eom-survival-damage-taken"						"Damage Taken"
+		"eom-survival-damage-given"						"Damage Given"
+
+
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	STATS
+		//
+		///////////////////////////////////////////////////////////
+
+		"playerstats_mode_comp_all"			"All 5v5"
+		"playerstats_mode_comp_capt"		"Premier Competitive"
+		"playerstats_mode_comp_active"		"Competitive (Bomb Defusal)"
+		"playerstats_mode_comp_other"		"Competitive (Hostage Rescue)"
+		"playerstats_mode_comp_scrim"		"Scrimmage"
+		"playerstats_mode_2v2_all"			"All Wingman"
+		"playerstats_mode_2v2_active"		"Wingman (Active Duty)"
+		"playerstats_mode_2v2_other"		"Wingman (Reserves Group)"
+
+		"playerstats_weapons"					"Weapon Performance"
+		"playerstats_heatmap"					"Heatmaps"
+		"playerstats_matchlister"				"Matches"
+		"playerstats_stats"						"Stats"
+
+		"playerstats_matchlister_separator"		"{s:separator_title}"
+
+		"playerstats_weapon_tooltip_counts"		"Kills: {d:kills}"
+		"playerstats_weapon_tooltip_kd"			"K/D: {s:score}"
+
+		"playerstats_map_tooltip_win_loss_tie"	"Win/Loss/Tie"
+		"playerstats_map_tooltip_rndwin_rndloss"	"Round Win-Loss"
+		"playerstats_map_tooltip_round_winrate"	"Round Win Rate"
+		"playerstats_map_tooltip_match_winrate"	"Match Win Rate"
+
+		"playerstats_complete_nodata"			""
+		"playerstats_complete_somedata"			""
+
+		"playerstats_forceretry"				"Connection to the stats server was lost.\nClick OK to attempt to reconnect."
+		"playerstats_no_data"					"You have no data in the time range and modes selected. Change your selection or go play some matches."
+		"playerstats_link"						"Manage Subscription"
+		"playerstats_link_reactivate"			"Reactivate Subscription"
+		"playerstats_link_get"					"Subscribe"
+
+		"playerstats_subscription_expire_warning"		"<b>Collecting Match Stats</b> - subscription is <b>expiring today</b>"
+		"playerstats_subscription_renew_automatically"	"<b>Collecting Match Stats</b> - subscription renews automatically in {d:days} days"
+		"playerstats_subscription_renew_unknown"		"<b>Collecting Match Stats</b> - {d:days} days remaining in your subscription"
+		"playerstats_subscription_renew_manually"		"<b>Collecting Match Stats</b> - {d:days} days remaining, your subscription will <b>not automatically renew</b>"
+		"playerstats_subscription_expired"				"<b>Subscription Expired</b> - reactivate your subscription to collect new match stats"
+		"playerstats_subscription_not_enrolled"			"<b>Subscription Inactive</b> - subscribe to collect new match stats"
+		"playerstats_subscription_buy_button"			"ACTIVATE MONTHLY SUBSCRIPTION\n{s:price} / MONTH"
+
+		"playerstats_past_14"					"Past 14 days"
+		"playerstats_past_30"					"Past 30 days"
+		"playerstats_past_90"					"Past 90 days"
+		"playerstats_alltime"					"All time"
+
+		"stat_best_map"							"Best Map"
+		"stat_best_map_desc"					"Map with your highest ratio of rounds won to rounds lost"
+
+		"stat_best_weapon"						"Best Weapon"
+
+		"stat_best_mate"						"Best Mate"
+		"stat_best_mate_desc"					"Teammate who helped you achieve your highest ratio of rounds won to rounds lost"
+
+		"matchstat_abandoned"					"*You left this match before it concluded"
+
+		"playerstats_suffix_per_round"			"/r"
+		"playerstats_suffix_per_cent"			"%"
+
+		"playerstats_per_round"			"{s:value}/r"
+		"playerstats_per_cent"			"{s:value}%"
+		"playerstats_no_units"			"{s:value}"	
+
+		"playerstats_percentile"		"Your rating of {s:tt_value} is better than {s:tt_rank}% of all Operation passholders"
+		"playerstats_percentile_subscribers"	"Your rating of {s:tt_value} is better than {s:tt_rank}% of all subscribers"
+
+
+		"playerstats_mapwinrate"		"Map Win Rates"
+		"playerstats_mapwinrate_rounds"	"Rounds"
+		"playerstats_mapwinrate_matches" "Matches"
+
+		"stat_total_score"				"Score"
+		"stat_average_score"			"Score/round"
+
+		"stat_total_kills"				"Kills"
+		"stat_average_kills"			"Kills/round"
+
+		"stat_total_deaths"				"Deaths"
+	//	"stat_average_deaths"			"stat_average_deaths"		
+
+		"stat_total_health_removed"		"Damage"	
+		"stat_average_health_removed"	"ADR"
+
+		"stat_average_kd"				"Kills/Death"
+		"stat_average_kd_short"			"K/D"
+
+		"stat_average_hsp"				"stat_average_hsp"
+
+		"stat_total_2k"					"2K"
+		"stat_total_3k"					"3K"
+		"stat_total_4k"					"4K"
+
+		"stat_grenades"					"HE Grenades"
+		"stat_total_grenade"			"Throws"
+		"stat_average_grenade"			"Success"
+		"stat_grenades_desc"			"Percentage of HEs thrown that damaged at least 1 enemy"			
+
+		"stat_flash"					"Flashes"
+		"stat_total_flash"				"Throws"
+		"stat_average_flash"			"Success"
+		"stat_flash_desc"				"Percentage of flashbangs thrown that blinded at least 1 enemy"
+
+		"stat_entry"					"Entry Kills"
+		"stat_average_entrykd"			"EK/D"
+		"stat_total_entry_attempts"		"Total"
+		"stat_entry_desc"				"Ratio of first kills to first deaths"
+
+		"stat_total_wins"				"Wins"
+		"stat_total_losses"				"Losses"
+		"stat_total_ties"				"Ties"
+
+		"stat_total_rounds_played"		"Rounds"
+
+		"stat_1vx"						"1vX"
+
+		"stat_1v1"						"1v1"
+
+		"stat_average_1v1"				"Success"				
+		"stat_total_1v1_attempts"		"Opportunities"		
+
+		"stat_1v2"						"1v2"
+
+		"stat_average_1v2"				"Success"			
+		"stat_total_1v2_attempts"		"Opportunities"		
+
+		"num_matches"					"Matches Played"
+
+		"playerstat_name_0"				"Score"
+		"playerstat_name_0_long"		"Score Per Round"
+		"playerstat_name_0_desc"		"Score per round: {s:value}\nTotal score : {d:total}"
+
+
+		"playerstat_name_1"				"Kills"
+		"playerstat_name_1_long"		"Kills Per Round"
+		"playerstat_name_1_desc"		"Average kills per round: {s:value}\nTotal kills : {d:total}"
+
+		"playerstat_name_2"				"DMG"
+		"playerstat_name_2_long"		"Damage Per Round"
+		"playerstat_name_2_desc"		"Average damage per round: {s:value}\nTotal damage : {d:total}"	
+
+		"playerstat_name_2.1"			"Damage"
+		"playerstat_name_2.5"			"ADR"		
+
+		"playerstat_name_3"				"K/D"
+		"playerstat_name_3_long"		"Kills Per Death"
+		"playerstat_name_3_desc"		"Ratio of kills to deaths: {s:value}"		
+
+		"playerstat_name_4"				"HS"
+		"playerstat_name_4_long"		"Headshot Kill Rate"
+		"playerstat_name_4_desc"		"Percentage of kills that were head shot kills : {s:value}\nTotal head shot kills : {d:total}"	
+
+		"playerstat_name_4.5"			"HS%"		
+
+		"playerstat_name_5"				"2K"
+		"playerstat_name_5_long"		"2-Kills"
+		"playerstat_name_5_desc"		"Total 2-kill rounds : {s:value}"	
+
+		"playerstat_name_6"				"3K"
+		"playerstat_name_6_long"		"3-Kills"
+		"playerstat_name_6_desc"		"Total 3-kill rounds : {s:value}"		
+
+		"playerstat_name_7"				"4K"
+		"playerstat_name_7_long"		"4-Kills"
+		"playerstat_name_7_desc"		"Total 4-kill rounds : {s:value}"
+
+		"playerstat_name_7.5"			"Multi-kills"
+	
+		"playerstat_name_8"				"HE"
+		"playerstat_name_8_long"		"Effective HEs"
+		"playerstat_name_8_desc"		"Percentage of HEs thrown that damaged at least 1 enemy: {s:value}\nTotal HEs thrown that damaged at least 1 enemy : {d:total}"			
+
+		"playerstat_name_9"				"FB"
+		"playerstat_name_9_long"		"Effective Flashbangs"		
+		"playerstat_name_9_desc"		"Percentage of flashbangs thrown that blinded at least 1 enemy: {s:value}\nTotal flashbangs thrown that blinded at least 1 enemy : {d:total}"
+
+		"playerstat_name_10"			"1v1"
+		"playerstat_name_10_long"		"1v1 Engagements"
+		"playerstat_name_10_desc"		"Percentage of 1v1 situations won: {s:value}\nTotal 1v1 situations won : {d:total}"	
+
+		"playerstat_name_11"			"1v2"
+		"playerstat_name_11_long"		"1v2 Engagements"
+		"playerstat_name_11_desc"		"Percentage of 1v2 situations won: {s:value}\nTotal 1v2 situations won : {d:total}"	
+
+		"playerstat_name_12"			"EK"
+		"playerstat_name_12_long"		"Entry Kills"
+		"playerstat_name_12_desc"		"Ratio of first kills to first deaths: {s:value}\nTotal first kills : {d:total}"
+
+		"stats_graph_button_0"			"Score/R"
+		"stats_graph_button_1"			"Kills/R"
+		"stats_graph_button_2"			"ADR"
+		"stats_graph_button_3"			"K/D"
+		"stats_graph_button_4"			"HS%"
+
+		"ris_score"								"Rnd Score"
+		"ris_t"									"T"
+		"ris_ct"								"CT"
+		"ris_team-title"						"Your Team's Win Chance"
+		"ris_wins"								"{s:ris_team} Win!"
+
+		"ris_win"								"win"
+		"ris_loss"							"loss"
+
+		"ris_hits"								"in {s:num_hits}"
+		
+		"prdr_health_removed"					"{d:health_removed} in {d:num_hits}"
+		"prdr_return_health_removed"				"{d:return_health_removed} in {d:return_num_hits}"
+
+		"season_stat_title_wins"		"WINS"
+        "season_stat_title_ties"		"TIES"
+        "season_stat_title_losses"		"LOSS"
+        "season_stat_title_rounds"		"ROUNDS"
+        "season_stat_title_kills"		"KILLS"
+        "season_stat_title_headshots"	"HEADSHOTS"
+		"season_stat_title_hs_percent"	"HS%"
+        "season_stat_title_assists"		"ASSISTS"
+        "season_stat_title_deaths"		"DEATHS"
+        "season_stat_title_mvps"		"MVPS"
+        "season_stat_title_rounds_3k"	"3K"
+        "season_stat_title_rounds_4k"	"4K"
+        "season_stat_title_rounds_5k"	"5K"
+		"season_stat_title_kpr"			"KPR"
+		"season_stat_title_kd"			"K/D"
+		"season_stat_title_best_map"	"BEST MAP"
+		"season_stat_title_win_percent"	"WIN RATE"
+		"season_stat_title_matches_played"	"MATCHES"
+		"season_stat_title_achieved_week"	"HIGHEST RANK ACHIEVED WEEK OF"
+		"season_stat_value_kd"				"{s:kdratio}"
+		"season_stat_value_win_percent"		"{s:win-percent}%"
+		"season_stat_value_hs_percent"		"{s:hs-percent}%"
+		"season_section_rank"				"HIGH MARK"
+		"season_section_season_stats"		"SEASON STATS"
+		"season_section_rank_history"		"RANK HISTORY"
+		"season_section_rank_activity"		"MATCHES PLAYED"
+		"season_section_rank_map_stats"		"MAP STATS"
+		"season_section_rank_map_wins_graph"	"TOTAL MAP WINS"
+		"season_section_graph_x_axis_label_min"		"WEEK {d:week_min}"
+		"season_section_graph_x_axis_label_max"		"WEEK {d:week_max}"
+		"tooltip-no-map-stats"			"Your statisitcs are not available for this map"
+		"tooltip-season-rank-week-idx"		"WEEK {s:week-id}"
+		"tooltip-season-rank-week-name"		"{s:week-name}"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	WIN PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_winpanel_mvp_award"				"MVP"
+		"Panorama_winpanel_mvp_award_kills"			"MVP"
+		"Panorama_winpanel_mvp_award_ace"			"MVP for an Ace Round"
+		"Panorama_winpanel_mvp_award_bombplant"		"MVP for planting the bomb"
+		"Panorama_winpanel_mvp_award_bombdefuse"	"MVP for defusing the bomb"
+		"Panorama_winpanel_mvp_award_rescue"		"MVP for extracting a hostage"
+		"Panorama_winpanel_mvp_award_score"			"MVP for highest score"
+		"Panorama_winpanel_mvp_award_inferno"		"MVP for dealing a significant amount of fire damage"
+		"Panorama_winpanel_mvp_award_blast"			"MVP for dealing a significant amount of explosive damage"
+		"Panorama_winpanel_mvp_award_bombdefuse_clutch"	"MVP for a clutch defuse"
+		"Panorama_winpanel_mvp_award_bombplant_clutch"	"MVP for planting and defending the bomb"
+		"Panorama_winpanel_mvp_award_gungame"		"MVP"
+		"Panorama_winpanel_mvp_winner"				"MVP"
+		"Panorama_winpanel_mvp_award_kills_three"	"MVP for most kills (3k)"
+		"Panorama_winpanel_mvp_award_kills_four"	"MVP for most kills (4k)"
+
+		"Panorama_WinPanel_rank_awarded_multi"	"You've achieved {d:rank_increase} new ranks!"
+
+		"Panorama_WinPanel_rank_name_string"	"{s:current_best_cat} <font color='#CCCCCC'>({s:current_rank_cat})</font>"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	WATCH PANEL
+		//
+		///////////////////////////////////////////////////////////
+		
+		"WatchMenu_Watch"					"Watch"
+		"WatchMenu_Tournament_Versus"		"vs"
+		"WatchMenu_Outcome_Tied"			"Tied"
+		"WatchMenu_Outcome_Abandon"			"Abandoned"
+		"WatchMenu_Outcome_Won"				"<img src='file://{images}/icons/ui/trophy.svg' width='15' height='15'/> Victory"
+		"WatchMenu_Outcome_Lost"			"Loss"
+		"WatchMenu_Expand_Match_Menu"		"More"
+		"WatchMenu_Get_Share_Link"			"Copy match sharing code"
+		"WatchMenu_Share_Link_Copied"		"Copied link to clipboard"
+		"WatchMenu_Download_Demo"			"Download demo to watch"
+		"WatchMenu_Watch_Live"				"Watch Live"
+		"WatchMenu_Watch_Highlights"		"Watch Highlights"
+		"WatchMenu_Watch_Lowlights"			"Watch Lowlights"
+		"WatchMenu_Watch_Highlights_Player_Selected"	"Watch {s:playerNameTitle}'s highlights"
+		"WatchMenu_Watch_Lowlights_Player_Selected"	"Watch {s:playerNameTitle}'s lowlights"
+		"WatchMenu_Delete"					"Delete local demo files"
+		"WatchMenu_Downloading"				"Downloading"
+		"WatchMenu_Info_Download_Failed"	"Download Incomplete"
+		"WatchMenu_Info_Download_Failed_Retry" "Attempt to re-download demo files?"
+		"WatchMenu_Info_Download_Failed_Info" "The download did not complete. Scoreboard information is available but you cannot watch the match."
+		"WatchMenu_Download_Disabled_Hint"	"Match demo has expired and is no longer available for download."
+		"WatchMenu_Tournament_BulletPoint"	"<ul>
+												<li>Watch matches and use your team stickers to make predictions for the Group and Playoff Stages.</li>
+												<li>Whenever you make a correct pick, you'll earn points toward a Pick'Em Trophy that can be displayed on your Counter-Strike avatar and in your Steam profile.</li>
+												<li>You can make Group Stage Predictions until the Group Stage begins.</li>
+												<li>You can make Playoff predictions until the Playoffs begin.</li>
+											</ul>"
+		"WatchMenu_Viewer"				"Viewer"
+		"WatchMenu_Viewers"				"Viewers"
+		"WatchMenu_Viewers_dv:f"		"{d:spectatorCount} {spectatorCount, plural, one{Viewer} other{Viewers}}"
+		"WatchMenu_FirstHalf"			"First Half"
+		"WatchMenu_SecondHalf"			"Second Half"
+		"WatchMenu_Overtime"			"Overtime"
+		"MatchInfo_FirstRound"			"1st Round"
+		"MatchInfo_Halftime"			"Halftime"
+		"MatchInfo_Overtime"			"Overtime"
+		"MatchInfo_RoundDataTitle"      "{s:playerNameTitle}'s Round Performance"
+		"MatchInfo_Date"				"{s:month} {s:day}"
+		
+		"MatchInfo_Date_Tournament_Month_Short_8"	"Oct"		
+		"MatchInfo_Date_Tournament_Month_Final_Short_8"	"Nov"
+		"MatchInfo_Date_Tournament_Month_Short_9"	"Mar"
+		"MatchInfo_Date_Tournament_Month_Short_9_1"	"Apr"
+		"MatchInfo_Date_Tournament_Month_Final_Short_9"	"Apr"
+		"MatchInfo_Date_Tournament_Month_Short_10"	"Jul"
+		"MatchInfo_Date_Tournament_Month_Short_10_1"	"Jul"
+		"MatchInfo_Date_Tournament_Month_Final_Short_10"	"Jul"
+		"MatchInfo_Date_Tournament_Month_Short_11"	"Jan"
+		"MatchInfo_Date_Tournament_Month_Short_11_1"	"Jan"
+		"MatchInfo_Date_Tournament_Month_Final_Short_11"	"Jan"
+		"MatchInfo_Date_Tournament_Month_Short_12"	"Jul"
+		"MatchInfo_Date_Tournament_Month_Short_12_1"	"Jul"
+		"MatchInfo_Date_Tournament_Month_Final_Short_12"	"Jul"
+		"WatchMenu_PickEm_ComingSoon"	"Display of past Pick'Em and Fantasy games coming soon."
+		"WatchMenu_ViewerCount"	"{s:numberOfViewers} viewers on {s:channel}"
+		"Matchlist_Team_Selection"	"All Teams"
+
+
+		"pickem_timer_inactive"		"Stage is not currently active for picks"
+		"pickem_timer"				"{s:time} remaining to make your picks"
+		"pickem_timer_upsell"		"<b>{s:time}</b> remaining to make your picks. Get your Pass to play Pick'Em and earn Souvenir Tokens."
+		"pickem_timer_locked"		"Picks are now locked"
+		"pickem_points_earned" 		"Points Earned"
+		"pickem_correct_pick" 		"Correct Pick"
+		"pickem_points_needed_next_level" 	"Get <b>{d:points}</b> more {s:plural} for <b>{s:level}</b>"
+		"pickem_points_result" 		"You got the <b>{s:result-level}</b> Pick'Em trophy"
+		"pickem_points_result_bronze" "You got the <b>Bronze</b> Pick'Em trophy"
+		"pickem_points_result_silver" "You got the <b>Silver</b> Pick'Em trophy"
+		"pickem_points_result_gold" "You got the <b>Gold</b> Pick'Em trophy"
+		"pickem_point"				"point"
+		"pickem_points"				"points"
+		"pickem_level_bronze"		"Bronze"
+		"pickem_level_silver"		"Silver"
+		"pickem_level_gold"			"Gold"
+		"pickem_group_pick_worth"	"Each correct pick earns <b>{d:points} {s:plural} </b>"
+		"pickem_pick_correct_points_earned"	"+ <b>{d:points}</b> {s:plural}"
+		"pickem_pick_drag_hint" 	"Drag team here"
+		"pickem_pick_undefeated"	"<b>Pick</b> a team that will <b>advance undefeated</b>"
+		"pickem_pick_eliminated"	"<b>Pick</b> a team that will be <b>eliminated without winning</b>"
+		"pickem_get_items" 			"Get Stickers"
+		"pickem_get_items_tooltip" 	"You need the following stickers to update your picks: <br><br>"
+		"pickem_place_picks" 		"Update Picks"
+		"pickem_confirm_picks" 		"Confirm Your Picks"
+		"pickem_confirm_Warning"	"<b>These stickers will be used for your Pick'Em picks.</b>\n\nThey will remain in your inventory and can be applied to any weapon you own or traded after the event stage is finished.\n\n<span class=\"premier-pickban__title__text-red\">\nThey will be unusable and untradable until the end of the event stage. Removing a pick at a later time will not undo this lock.</span>\n"
+		"pickem_confirm_ClearAll"	"<b>No stickers will be used for your Pick'Em picks.</b>\n\nStickers that were previously used will remain in your inventory and can be applied to any weapon you own or traded after the event stage is finished.\n"
+		"pickem_confirm_stickes_for_lock" 	"Stickers for picks"
+		"pickem_confirm_not_owned" 		"<b>These picks cannot be placed.</b><span class=\"premier-pickban__title__text-red\">\nYou need the corresponding Team Stickers to update your Pick'Em picks.</span>"
+		"pickem_apply_emptyslots"		"You must fill out all your predictions in order to update your Pick'Em Challenge. Please drag your picks into remaining empty slots and click \"Update Picks\" button again to confirm."
+		"pickem_apply_timeout"			"We were unable to update your Pick'Em picks. Please try again later."
+		"pickem_apply_drag_hint"	"Drag your pick here"
+		"pickem_apply_immediate" 		"Updating Your Picks..."
+		"pickem_save_all" 			"SAVE ALL PICKS"
+		"pickem_make_picks" 		"MADE {d:user-picks} / {d:total-picks} PICKS"
+		"pickem_drag_picks" 		"Drag teams to make your picks"
+		"pickem_reveal_all_results" "Show final standings"
+		"pickem_saved" 		"Picks Saved"
+		"pickem_teams_tbd" 	"Teams to Be Determined"
+		"pickem_challenge_section_title" "PICK'EM CHALLENGE"
+		"pickem_items_section_title" "TOURNAMENT ITEMS"
+		"pickem_items_tab_opening_stage" "OPENING STAGE"
+		"pickem_items_tab_elim_stage" "ELIMINATION STAGE"
+		"pickem_items_tab_stage_i" "Stage I"
+		"pickem_items_tab_stage_ii" "Stage II"
+		"pickem_items_tab_stage_iii" "Stage III"
+		"pickem_items_tab_playoff_stage" "PLAYOFFS"
+		"pickem_teams_remove_all_tooltip" 	"Clear all picks"
+		"pickem_teams_fill_tooltip" 	"Randomly fill empty picks"
+		"pickem_versus"				"VS"
+		"pickem_submit_warning"		"{s:pass-name} not activated"
+		"pickem_submit_warning_tooltip"		"An active {s:pass-name} is required to earn progress on Pick'Em challenges. The pass must be activated before the stage locks."
+		"pickem_submit_warning_popup_title"	"Save Picks Without An Active Pass"
+		"pickem_submit_warning_popup_desc"	"An active {s:pass-name} is required to earn progress on Pick'Em challenges. The pass must be activated before the stage locks."
+		"pickem_submit_warning_popup_action""Save Picks Without An Active Pass"
+		"pickem_submit_warning_popup_action2"	"Activate Pass And Save Picks"
+		"contextmenu_pickem_souvenir_title" 	"Select the match from which you want a Souvenir Package"
+		"contextmenu_pickem_souvenir_no_result" 	"Come back when this matchup has concluded to claim a Souvenir Package"
+		"mainmenu_major_hub"	"MAJOR CHAMPIONSHIP HUB & ITEMS"
+		"mainmenu_major_hub_items"	"Stickers Now Available"
+		"mainmenu_major_hub_no_items" "MAJOR CHAMPIONSHIP HUB"
+
+		"pickem_swiss_group_00"									"0:0"
+		"pickem_swiss_group_10"									"1:0"
+		"pickem_swiss_group_11"									"1:1"
+		"pickem_swiss_group_12"									"1:2"
+		"pickem_swiss_group_20"									"2:0"
+		"pickem_swiss_group_21"									"2:1"
+		"pickem_swiss_group_22"									"2:2"
+		"pickem_swiss_group_01"									"0:1"
+		"pickem_swiss_group_02"									"0:2"
+
+		"pickem_swiss_group_30"									"3:0 - advanced"
+		"pickem_swiss_group_3x"									"3:1 3:2\n advanced"
+		"pickem_swiss_group_13"									"1:3 - eliminated"
+		"pickem_swiss_group_23"									"2:3 - eliminated"
+		"pickem_swiss_group_03"									"0:3 - eliminated"
+
+
+
+
+
+
+
+		// WATCH EVENTS
+
+		"eventsched_lan"												"LAN event"
+		"eventsched_online"											"Online event"
+		"eventsched_show_online"								"Show Online Events"
+		"eventsched_date_format"								"{s:eventsched_date_month} {s:eventsched_date_day}"
+		"eventsched_versus"											"vs"
+		"eventsched_ongoing"										"Ongoing"
+		"eventsched_tbd"												"to be determined"
+		"eventsched_live"												"LIVE MATCH"
+		"eventsched_link"												"More details at HLTV.org"
+		"eventsched_event_link"									"Event details on HLTV.org"
+		"eventsched_match_link"									"Match details on HLTV.org"
+		"eventsched_team_link"									"Team details on HLTV.org"	
+		"eventsched_no_streams"									"No streams available"
+		"eventsched_watch_on_gotv"								"Watch on CSTV"
+		"eventsched_favorite_tt"								"{s:favorite_tooltip}"
+		"eventsched_favorite_tooltip_prime"			"Favoriting an event will make its live\nmatches appear on the main menu."
+		"eventsched_favorite_tooltip_not_prime" "You must have Prime Status to favorite an event."
+		"eventsched_match_tooltip"							"{s:watchnotice_teamname_1} vs {s:watchnotice_teamname_2}"
+		"eventsched_stream_watch"								"{s:stream_site}"
+		"eventsched_hltv"												"Event information provided courtesy of HLTV.org"
+		"eventsched_country"										"{s:eventsched_country}"
+		"eventsched_no_live_matches"						"There are currently no live matches."
+		"eventsched_featured"										"This event is the community favorite for {s:eventsched_fave_month}."
+		"eventsched_official"										"This is a Counter-Strike Major event."
+
+		"WatchNotice_Reason_Official"						"This event is shown because it is a Counter-Strike Major event."
+		"WatchNotice_Reason_Personal"						"This event is shown because you favorited it."
+		"WatchNotice_Reason_Community"					"This event is featured because it is the community favorite for {s:watchnotice_fave_month}."
+		"WatchNotice_Watch"											"Watch"
+
+	
+		// Used with formatText.AbbreviateNumber()
+		///////////////////////////////////////////
+		"NumberAbbreviation_E3"			"{s:abbreviated_number}k"
+		
+		// Note to translators: Add as needed. Code will use only available strings. example:
+		// "NumberAbbreviation_E4"		"{s:abbreviated_number}万"	
+
+		"NumberAbbreviation_E6"			"{s:abbreviated_number}M"
+		"NumberAbbreviation_E9"			"{s:abbreviated_number}B"
+		"NumberAbbreviation_E12"		"{s:abbreviated_number}T"
+
+		// Used with formatText.SplitAbbreviateNumber()
+		///////////////////////////////////////////
+		"NumberAbbreviation_suffix_E3"			"k"
+		
+		// Note to translators: Add as needed. Code will use only available strings. example:
+		// "NumberAbbreviation_suffix_E4"		"万"	
+
+		"NumberAbbreviation_suffix_E6"			"M"
+		"NumberAbbreviation_suffix_E9"			"B"
+		"NumberAbbreviation_suffix_E12"			"T"
+
+
+		"digitpanel_digits"			 " 0123456789,.-+?"
+		"digitpanel_digits_premier" " 1234567890,?"
+
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	OVERWATCH
+		//
+		///////////////////////////////////////////////////////////
+		
+		"Panorama_Overwatch_Downloading"		"Downloading case files..."
+		"Panorama_Overwatch_Review"				"Reviewing a case takes a few minutes."
+		"Panorama_Overwatch_Welcome"			"Counter-Strike Overwatch"
+		"Panorama_Overwatch_Tooltip_p1"			"As part of your Counter-Strike work, you will download and review replays of Counter-Strike 2 matches on official Valve servers to look for suspicious behavior. When the replay concludes you will be asked to cast verdicts regarding the player's gameplay."
+		"Panorama_Overwatch_Tooltip_sh1"		"Step 1"
+		"Panorama_Overwatch_Tooltip_p2"			"Click DOWNLOAD EVIDENCE in the lower right to download an Overwatch case."
+		"Panorama_Overwatch_Tooltip_sh2"		"Step 2"
+		"Panorama_Overwatch_Tooltip_p3"			"Click REVIEW EVIDENCE to watch the replay from the player's perspective as recorded by the server."
+		"Panorama_Overwatch_Tooltip_sh3"		"Step 3"
+		"Panorama_Overwatch_Tooltip_p4"			"Once the case has concluded, select one resolution for each question and click SUBMIT VERDICT."
+		"Panorama_Overwatch_Major_Disruption"	"Major Disruption"
+		"Panorama_Overwatch_Minor_Disruption"	"Minor Disruption"
+		"Panorama_Overwatch_Res_Griefing"		"Griefing"
+		"Panorama_Overwatch_Res_AimHacking"		"Aim Assistance"
+		"Panorama_Overwatch_Res_WallHacking"	"Vision Assistance"
+		"Panorama_Overwatch_Res_SpeedHacking"	"Other External Assistance"
+		
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	ROSETTA PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_CSGO_Spray_EnableMouse"			"<b>[{g:csgo_key:spray_mouse_enable}]</b> Enable Cursor"
+		"Panorama_CSGO_Rosetta_Item_Name"			"<font color=\"{s:item_color}\">{s:item_name}</font>"
+		"Panorama_CSGO_Rosetta_Item_Count"			"Charges Remaining: {d:item_count}"
+		"Panorama_Attrib_SpraysHint"					"{s:bind_attack} To Apply Graffiti"
+		"Panorama_Attrib_SpraysHint_Auto"			"Release <b>{s:bind_spray_menu}</b> To Apply Graffiti"
+
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	RETICLE PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_HUD_weaponid_swap"			"<font color=\"#6a6156\">[{s:bind_use}] Swap for</font> <font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+		"Panorama_HUD_weaponid_pickup"			"<font color=\"#6a6156\">[{s:bind_use}] Pick up</font> <font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+		"Panorama_HUD_weaponid_lookat"			"<font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+		"Panorama_HUD_weaponid_holdtopickup"	"<font color=\"#6a6156\">Hold [{s:bind_use}] to pick up</font> <font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+
+		"Panorama_HUD_playerid_sameteam"			"<font color='#6E7D5C'>Friend: {g:player_name:html:player_slot} Health: {d:player_health}%</font>"
+		"Panorama_HUD_playerid_diffteam"			"<font color='#CC0000'>Enemy: {g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_playerid_specteam"			"<font color='#6E7D5C'>{g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_playerid_noteam"			"<font color='#FFCC00'>{g:player_name:html:player_slot} Health:{d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_shadow"		"{g:player_name:player_slot}"
+
+		"Panorama_HUD_playerid_survival_enemy"				"<font color='#CC0000'>Enemy</font>"
+		"Panorama_HUD_playerid_survival_hunter_target"		"<font color='#e58816'>High Value Target</font>"
+
+		"Panorama_HUD_botid_request_bomb"		"<font color='#e5da25'>[{s:bind_use}] Take Bomb</font>"
+
+		"Panorama_HUD_hostageid_nh"				"<font color='#e5da25'>Hostage</font>"
+		"Panorama_HUD_hostagename_nh"			"<font color='#e5da25'>{g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_hostageid_nh_use_lead"		"<font color='#e5da25'>[{s:bind_use}] Pick Up Hostage</font>"
+		"Panorama_HUD_hostageid_nh_following"	"<font color='#e5da25'>Hostage (Following {g:player_name:html:player_slot})</font>"
+
+		"Panorama_HUD_hostageid"					"<font color='#e5da25'>Hostage</font><font color='#dcdac0'> {d:player_health}%</font>"
+		"Panorama_HUD_hostageid_use_lead"		"<font color='#e5da25'>[{s:bind_use}] Pick Up Hostage</font><font color='#dcdac0'> {d:player_health}%</font>"
+		"Panorama_HUD_hostageid_following"		"<font color='#e5da25'>Hostage (Following {s:player_name})</font><font color='#dcdac0'> {d:player_health}%</font>"
+
+
+		"Panorama_HUD_playerid_overhead_health"			"{d:player_health}%"
+		"Panorama_HUD_playerid_overhead_money"			"${d:r:player_money}"
+
+		"Panorama_HUD_playerid_overhead_survival"					"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#00c3e1'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_lowhealth"			"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#d82429'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_money"				"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#7ebc50'> ${d:r:player_money}</font>"
+		"Panorama_HUD_playerid_overhead_survival_grey"				"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#dddddd'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_lowhealth_grey"	"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#d82429'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_money_grey"		"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#7ebc50'> ${d:r:player_money}</font>"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	DEATH PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_SurvivalEndOfMatch_ShowStats"			"[{s:bind_jump}] Show Match Stats"
+		"Panorama_Death_Cancel_Start_Replay"			"[{s:bind_jump}] Skip"
+		"Panorama_Death_Cancel_Replay" 				"[{s:bind_jump}] Cancel Replay"
+		"Panorama_Death_Snapshot"						"[{s:bind_jpeg}] Save this moment"
+		"Panorama_HUD_Spectate_Navigation_Replay_Death"	"<font color='#ddbb22'><b>[{s:bind_reload}] Killer Replay</b></font>"
+
+		"Panorama_DeathPanel_Killer1_YourWeapon"			"killed you with your own {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_KillerWeapon"			"killed you with their {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_OthersWeapon"			"killed you with <font color='#adadad'>{s:other_player_name}'s</font> {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_Weapon"				"killed you with the {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_Weapon_Plural" 		"killed you with {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_Weapon_CustomString" 	"{s:weapon_name}"
+
+		"Panorama_DeathPanel_DamageTaken:f"					"<font color='#A0A0A0'>Damage taken:  </font><font color='#FFFFFF'><b>{d:damage_taken}</b></font> <font color='#A0A0A0'> in</font> <font color='#FFFFFF'><b>{d:hits_taken} {hits_taken, plural, one{hit} other{hits}} </b></font>"
+		"Panorama_DeathPanel_DamageGiven:f"					"<font color='#A0A0A0'>Damage given:  </font><font color='#FFFFFF'><b>{d:damage_given}</b></font> <font color='#A0A0A0'> in</font> <font color='#FFFFFF'><b>{d:hits_given} {hits_given, plural, one{hit} other{hits}} </b></font>"
+
+		/////////////////////////////////////////////////////////////////
+		//
+		//      CHATWHEEL OPTIONS
+		//
+		////////////////////////////////////////////////////////////
+
+		"Chatwheel_segment_top"	"Top"
+		"Chatwheel_segment_topright"	"Top Right"
+		"Chatwheel_segment_right"	"Right"
+		"Chatwheel_segment_bottomright"	"Bottom Right"
+		"Chatwheel_segment_bottom"	"Bottom"
+		"Chatwheel_segment_bottomleft"	"Bottom Left"
+		"Chatwheel_segment_left"	"Left"
+		"Chatwheel_segment_topleft"	"Top Left"
+
+		"Chatwheel_ping_on_cooldown"  "Cannot ping. Ping is on cooldown."
+
+		"Chatwheel_plant"	"Plant the bomb"
+		"Chatwheel_sitea"	"Ping Site A"
+		"Chatwheel_siteb"	"Ping Site B"
+
+		"Chatwheel_section_move"	"Movement"
+		"Chatwheel_sticktogether"	"Stay together"
+		"Chatwheel_followme"	"Follow me"
+		"Chatwheel_followingyou"	"Following you"
+		"Chatwheel_spreadout"	"Spread out"
+		"Chatwheel_fallback"	"Fall back"
+		"Chatwheel_gogogo"	"Go go go!"
+		"Chatwheel_onmyway"	"On my way"
+		"Chatwheel_gethostage"	"Check the Hostage"
+		"Chatwheel_quiet"	"Need quiet"
+
+		"Chatwheel_section_prepare"	"Preparation"
+		"Chatwheel_requestecoround"	"We should save"
+		"Chatwheel_requestspend"	"We should buy"
+		"Chatwheel_requestleader"	"Who will lead?"
+		"Chatwheel_requestweapon"	"Request a weapon"
+		"Chatwheel_requestplan"		"What's the plan?"
+		"Chatwheel_aplan"	"Ping Site A"
+		"Chatwheel_bplan"	"Ping Site B"
+		"Chatwheel_midplan"	"Ping Middle"
+
+		"Chatwheel_section_grenades"	"Grenades"
+		"Chatwheel_decoy"	"Need Decoys"
+		"Chatwheel_smoke"	"Need Smokes"
+		"Chatwheel_grenade"	"Need Frag Grenades"
+		"Chatwheel_fire"	"Need Molotovs"
+		"Chatwheel_flashbang"	"Need Flashbangs"
+		
+		"Chatwheel_section_defend"	"Defend"
+		"Chatwheel_coverme"	"Cover me"
+		"Chatwheel_coveringyou"	"Covering you"
+		"Chatwheel_help"	"Help"
+		"Chatwheel_needbackup"	"Need Backup"
+		"Chatwheel_holdposition"	"Hold this position"
+        "Chatwheel_rotatetome"	"Rotate to me"
+
+		"Chatwheel_section_bomb"	"Bomb Status"
+		"Chatwheel_guardingbomb"	"Guarding the Bomb"
+		"Chatwheel_bombsiteclear"	"Bombsite clear"
+		"Chatwheel_droppedbomb"	"Bomb was dropped"
+		"Chatwheel_bombpickedup"	"Bomb picked up"
+		"Chatwheel_ifixbomb"	"I'll De/Activate Bomb"
+		"Chatwheel_youfixbomb"	"You De/Activate Bomb"
+		
+		"Chatwheel_bombat"	"Ping Bomb" 
+
+		"Chatwheel_section_enemystatus"	"Enemy Status"
+		"Chatwheel_heardnoise"	"Heard noise" 
+		"Chatwheel_enemyspotted"	"Enemy spotted"
+		"Chatwheel_sectorclear"	"Area clear"
+		"Chatwheel_sniperspotted"	"Sniper spotted"
+		"Chatwheel_bombcarrierspotted"	"Bomb carrier spotted"
+		"Chatwheel_threeleft"	"Three Left"
+		"Chatwheel_twoleft"	"Two Left"
+		"Chatwheel_oneleft"	"One Left"
+		"Chatwheel_oneenemyhere"  "One enemy here"
+		"Chatwheel_multipleenemieshere"  "Multiple enemies here"
+		"Chatwheel_ihavethebomb"  "Bomb picked up"
+
+		"Chatwheel_section_enemykilled"	"Enemy Killed"
+		"Chatwheel_gotheadshot"	"I got a headshot"
+		"Chatwheel_ikilledsniper"	"I killed sniper"
+		"Chatwheel_wekilledsniper"	"We killed sniper"
+		"Chatwheel_sawheadshot"	"Saw your headshot"
+
+		"Chatwheel_section_combatstatus"	"Combat Status"
+		"Chatwheel_attacking"	"Attacking"
+		"Chatwheel_inposition"	"In position"
+		"Chatwheel_covering"	"Covering"
+		"Chatwheel_pinned"	"I'm pinned"
+		"Chatwheel_incombat"	"In combat"
+		"Chatwheel_friendlyfire"	"Friendly fire"
+		"Chatwheel_lastunitalive"	"Last unit alive"
+
+		"Chatwheel_section_responses"	"Responses"
+		"Chatwheel_wewon"	"We won"
+		"Chatwheel_welost"	"We lost"
+		"Chatwheel_wearewinning"	"We're winning"
+		"Chatwheel_lostround"	"Lost this round"
+		"Chatwheel_thanks"	"Thanks!"
+		"Chatwheel_sorry"	"Sorry"
+		"Chatwheel_compliment"	"Nice!"
+		"Chatwheel_affirmative"	"Yes"
+		"Chatwheel_negative"	"No"
+		"Chatwheel_peptalk"	"Pep talk"
+		"Chatwheel_cheer"	"Cheer"
+
+		"Chatwheel_plantingata"	"I'm planting at A"
+		"Chatwheel_plantingatb"	"I'm planting at B"
+		"Chatwheel_plantedata"	"I planted at A"
+		"Chatwheel_plantedatb"	"I planted at B"
+		"Chatwheel_planted"	"We planted the bomb"
+
+		"Chatwheel_seehostagestaken"	"The hostages are being taken"
+		"Chatwheel_requestgethostages"	"Get the hostages"
+
+		"Chatwheel_guardinga"	"I'm guarding A"
+		"Chatwheel_guardingb"	"I'm guarding B"
+		
+
+		
+		"Chatwheel_section_command"	"Commands"
+		"Chatwheel_section_report"	"Report"
+
+		"Chatwheel_description" "The Chatwheel provides quick access to a customizable list of useful radio commands."
+
+		////
+		//
+		// Volatile Laptop
+		//
+		////
+
+		// ---------------------------------------------------------------------------------------------
+		"laptop_window_collection_title"			"COLLECTION CATALOG XP"
+		"laptop_window_expiration_title"			"EXPIRATION"
+		"laptop_window_seal_title"					"STATUS"
+		"laptop_window_messages_title"				"CHAT - ARMS DEALER"
+		"laptop_window_currentoffer_title"			"CURRENT OFFER"
+		"laptop_app_title"							"<span class=\"laptop-app-title-prefix\">UP-</span>Link"
+		"laptop_app_version"						"v 1.1.0.2000"
+
+		"dealer_offer_attachment_title"							"{s:item-name}"
+		"dealer_offer_attachment_wear"							"{s:item-rarity}"
+		"dealer_offer_attachment_remaining_title"				"OFFER #{d:offer-total}"
+		"dealer_offer_attachment_remaining"						"Offer #{d:offer-total}"
+		"dealer_offer_received_count"							"<b>{s:offer-count}</b> Offer"
+		"dealer_offer_attachment_final_title"					"FINAL OFFER"
+		"dealer_offer_attachment_final"							"{s:offer-count} and Final offer"
+		"dealer_offer_attachment_status"						"Offer - {s:offer-status}"
+		"dealer_offer_attachment_status-active"					"<b><span class=\"offer-active\">Active</span></b>"
+		"dealer_offer_attachment_status-price"					"<b><span class=\"offer-active\">{s:offer-price}</span></b>"
+		"dealer_offer_attachment_status-declined-price"			"{s:offer-price}"
+		"dealer_offer_attachment_status-declined"				"<span class=\"offer-declined\">{s:offer-count} Offer - Declined</span>"
+
+		"user_btn_purchase_desc_purchase"		"Hold to purchase this item. After purchase, the Terminal is discarded."
+		"user_btn_purchase_desc_continue"		"Hold to permanently decline this offer and see the next one."
+		"user_btn_purchase_desc_end"		"Decline the final offer and discard this Terminal."
+		"user_btn_purchase_title"			"{s:offer-count} - Offer"
+		"user_btn_purchase_final_title"		"<b>Final Offer</b>"
+		"user_btn_decline_desc"				"Decline this offer and see another one"
+		"user_btn_accept"		"Accept Offer <b>{s:price}</b>"
+		"user_btn_accept_final"	"Accept Final Offer <b>{s:price}</b>"
+		"user_btn_accept_0"		"Deal. <b>{s:price} works.</b>"
+		"user_btn_accept_1"		"I'll accept it - <b>{s:price}</b>"
+		"user_btn_accept_2"		"I'm in for <b>{s:price}</b>"
+		"user_btn_accept_3"		"I'll bite <b>{s:price}</b>"
+		"user_btn_accept_4"		"You've got me at <b>{s:price}</b>"
+		"user_btn_accept_5"		"That's good — <b>{s:price}</b>"
+		"user_btn_next"			"Decline Offer"
+		"user_btn_next_0"		"Tempting, but no"
+		"user_btn_next_1"		"Not worth my bullets"
+		"user_btn_next_2"		"Can't do it"
+		"user_btn_next_3"		"Pass"
+		"user_btn_next_4"		"No deal"
+		"user_btn_next_5"		"Thanks, but no"
+		"user_btn_next_6"		"Not this time"
+		"user_btn_next_7"		"Not today"
+		"user_btn_pause"		"Pause Deal"
+		"user_btn_end"			"Decline Final Offer"
+
+		"user_message_limit_0"		"I can do up to <b>{s:limit-setting}</b>."
+		"user_message_limit_1"		"How about <b>{s:limit-setting}</b> as the ceiling."
+		"user_message_limit_2"		"Up to <b>{s:limit-setting}</b> works for me."
+		"user_message_limit_3"		"<b>{s:limit-setting}</b> cap is good."
+		"user_message_limit_unlimited_0"	"<b>No max</b>, I want to see it all."
+		"user_message_limit_unlimited_1"	"<b>Blank check</b>. Don't worry about the wallet."
+		"user_message_limit_unlimited_2"	"I'm here to buy. <b>Show me everything</b>."
+		"user_message_limit_unlimited_3"	"If it shoots, I'm interested.<b> No limits</b>."
+		"user_message_limit_unlimited_4"	"Sky's the limit"
+		"offer_limit_setting"		"Offer limit: {s:limit}"
+		"offer_limit_setting_interface"		"Offer limit: {s:limit} <img src='file://{images}/icons/ui/expand.svg' class='expand-icon'/>"
+
+		"dealer_offer_Unknown"							"-"
+		"dealer_offer_1"								"1st"
+		"dealer_offer_2"								"2nd"
+		"dealer_offer_3"								"3rd"
+		"dealer_offer_4"								"4th"
+		"dealer_offer_5"								"5th"
+		"dealer_offer_6"								"6th"
+		"dealer_offer_7"								"7th"
+		"dealer_offer_8"								"8th"
+		"dealer_offer_9"								"9th"
+		"dealer_offer_10"								"10th"
+
+		"current_offer_tooltip"		"The Arms Dealer's Current Offer to you."
+		"declined_offer_tooltip"	"Declined offer"
+		"future_offer_tooltip"		"Offer not yet revealed."
+		"laptop_expiration_tooltip"		"Time remaining until this Uplink Terminal and its offers expire."
+		"laptop_max_offer_tooltip"		"Set your Max Offer Limit. You will only receive offers under that limit. You can change it at any time."
+		"collection_xp_tooltip"			"Earn XP for viewing the offers in this collection. Open to see progress and redeem XP."
+		"terminal_offer_limit_tooltip"		"Update your max offer limit. The Arms Dealer will only show you offers up to that limit."
+		"popup_lootlist_title"			"Collection Catalog XP"
+		"popup_lootlist_desc"			"Earn XP for viewing the offers in this collection"
+
+		"popup_lootlist_progress:f"      "Seen {total, plural, one{{d:seen}/{d:total} offer} other{{d:seen}/{d:total} offers}}"
+		"popup_lootlist_claim_xp"		"Get Bonus XP"
+		"popup_lootlist_claim_ww"		"Claiming XP..."
+		"popup_lootlist_claim_ok"		"✔ XP Claimed"
+		"popup_vpn_status_connected"	"Status: Connected to secure network"
+		"popup_vpn_status_disconnected"	"Status: Disconnected"
+		"popup_signal_full" 			"Full Signal"
+		"popup_signal_ok" 				"Strong Signal"
+		"popup_offer_limit_desc"		"Update your max offer limit for all future offers"
+		"laptop_battery_tooltip" 		"Battery Charge: {d:percent}%"
+		"laptop_original_seal_tooltip" 	"Any item purchased from this Uplink Terminal will come with an Original Owner Certificate, which is valid while you are the owner."
+		"laptop_zoom_tooltip" 			"Scroll mouse wheel to zoom in and out"
+		"laptop_pan_tooltip" 			"Hold 'Shift' key and drag to pan the camera"
+		"laptop_pricing_tooltip"		"Prices are global and adjusted automatically based on demand for each item in this collection."
+
+		"dealer_message_set_offer_limit_0"		"First things First. How much are you authorized to drop?"
+		"dealer_message_set_offer_limit_1"		"Lets get this out of the way.<!--.25--> What’s your limit?"
+		"dealer_message_set_offer_limit_2"		"Before we get started...<!--.25--> What’s the cap? How much are you authorized to drop?"
+		
+		"dealer_message_start_0"  	"This stuff's contractor issue across the board.<!--.25-->All the bells and whistles. None of the paperwork."
+		"dealer_message_start_1"  	"I'm moving gray channel stock, no paper.<!--.25-->Don't worry: they're cold. Out of circulation for years, no one's looking for them.<!--.25-->Plus they still shoot when you point them, if you're curious."
+		"dealer_message_start_2"  	"Customs in Ahradan froze my cargo this morning. I tried thawing it out with a sob story about medical equipment and some poor dying... whoever.<!--.25-->That didn't work. But the briefcase full of money did.<!--.25-->How about we take a look at these dialysis machines before I get them to the orphans."
+		"dealer_message_start_3"  	"Regime change just went down in one of the 'stans.<!--.25-->The depot doors swung open and I picked through the pile myself.<!--.25-->I'm only selling the sterile pieces. Take a look."
+		"dealer_message_start_4"  	"The stuff I've got today is all clean.<!--.25-->As far as anyone knows, yours are the first hands they've passed through."
+		"dealer_message_start_5"  	"Sterile pieces, no serials, perfect action.<!--.25-->A war tribunal would call these evidence.<!--.25-->You and I know they're goddamn masterpieces."
+		"dealer_message_start_6"  	"This whole shipment is exotics recently liberated from a parade unit.<!--.25-->Marched around a lot. Never fired."
+		"dealer_message_start_7"  	"My other clients always want to know how I got what I'm selling. I hate that.<!--.25-->All you ever want to know is if it's the best stuff on the market.<!--.25-->Guess what: It is."
+		"dealer_message_start_8"  	"Peace agreement in Drosvik. I love peace.<!--.25-->Because I've got a general with a lot of debts and a fully stocked armory gathering dust.<!--.25-->I mean...<!--.25-->Also because peace is good, obviously. Innocent lives and...<!--.25-->What am I saying, you don't care."
+		"dealer_message_start_9"  	"This load's got exotics from a gray channel diversion.<!--.25-->Unusual calibers, not for amateurs. You'll love 'em."
+		"dealer_message_start_10"  	"This is embarrassing.<!--.25-->I must have accidentally mislabeled a crate on my shipping manifest.<!--.25-->Well. A few dozen crates.<!--.25-->How about you help me make this inventory disappear before the port authority looks into it."
+		"dealer_message_start_11"  	"Drosvik inspector was after a bribe on this one. Idiot started talking about seizure orders. <!--.25-->I've got guys in Drosvik who know how to deal with the talkers. He's got his jaw wired shut now.<!--.25-->And luckily, this merchandise speaks for itself."
+		"dealer_message_start_12"  	"Had to grease every palm in Ahradan getting this shipment over the border.<!--.25-->All the bribes were in ahri, too. Do you know how much paper you have to move to pay bribes in a worthless currency? Those guys need to do something about their economy."
+		"dealer_message_start_13"	"I've got a shadow broker who needs this moved fast.<!--.25-->That's all he said. 'Fast.'<!--.25-->Also the words 'very very'.<!--.25-->Put it this way: If you're not curious why he's selling, you're about to be very very happy."
+		"dealer_message_start_14"	"Legacy models today.<!--.25-->Are they flashy? No. But they're reliable.<!--.25-->Your grandkids'll still be shooting people with 'em."
+		"dealer_message_start_15"	"A rebel militia liberated this hardware from Glorious Leader's armory.<!--.25-->I think he also liberated the Glorious Leader's torso from his limbs and head.<!--.25-->(I don't sell that kind of stuff, but I can put you in touch with a guy if you're interested.)"
+		"dealer_message_start_16"	"Drosvik border chief threatened to seize this shipment.<!--.25-->I don't think he got the memo I don't do bribes in Drosvik. Not when the local muscle is that cheap. Drosvik's like the kickboxing capital of the world.<!--.25-->Anyway, his replacement lost the seizure order. And his arms aren't broken."
+		"dealer_message_start_17"	"This is all from a billionaire's private collection.<!--.25-->Well, a former billionaire. He's under investigation, which means I'm liquidating what he can't.<!--.25-->Let's be honest, this is gonna look nicer in your hand than hanging on a wall in a yacht."
+		"dealer_message_start_18"	"Dock inspector flagged a discrepancy on this shipment.<!--.25-->Funny thing, a crate of rifles weighs exactly the same as a crate of 'tractor parts' once you add exactly ten thousand dollars to the scale.<!--.25-->Let's take a look at these tractor parts."
+		"dealer_message_start_19"	"The stuff I've got today survived a coup to get to you.<!--.25-->Scratched finish, but perfect function. It's what's inside that counts, right?"
+		"dealer_message_start_20"	"A shitty little republic just strung up their president.<!--.25-->Lucky me, I inherited his supply chain."
+		"dealer_message_start_21"	"Call it a processing error. A filing discrepancy. A simple, honest misfiling.<!--.25-->Mistakes happen. I'm just trying to help out a friend so they don't lose their supply sergeant post.<!--.25-->This gear needs to disappear."
+		"dealer_message_start_22"	"Some customs chief thought he could lean on me with this shipment. So I made the dockside unions lean harder.<!--.25-->Funny how fast paperwork clears when everyone's busy looking for a missing person.<!--.25-->I hope they find the poor guy. I don't think he can swim."
+		"dealer_message_start_23"	"Border guard in Ahradan said the paperwork didn't match. So I gave him a stack of ahri and suddenly it did.<!--.25-->I don't even know what ten thousand ahri is in actual money. Like six dollars or something.<!--.25-->So. You want to look at some guns that don't exist?"
+		"dealer_message_start_24"	"I had a war general committed to buying up this merchandise, and the idiot goes and gets blown up in a drone strike.<!--.25-->Keep your windows closed, that's my advice. Anyway, his explosion is your gain."
+		"dealer_message_start_25"	"Regime change in Drosvik. I don't know how this happened, but somehow a warehouse full of weapons crates got lost in the shuffle.<!--.25-->And somehow I wound up with them. Crazy, right?<!--.25-->It gets crazier. Also somehow I might be selling them. To you. Right now."
+		"dealer_message_start_26"	"I've got a crate of misdeclared cargo I want to show you. <!--.25-->Don't let the 'farm equipment' fool you. The only soil you're gonna be pushing is if you don't shoot first."
+		"dealer_message_start_27"	"I hate working with insurgents. It's just a polite way of saying civilians, which is a nice way of saying goddamn amateurs.<!--.25-->Anyway, they've gone dark, so I'm giving some actual professionals a chance at this hardware."
+		"dealer_message_start_28"	"Perennial hot zone down south just had its bi-annual parliament collapse.<!--.25-->Bunch of local armories busted open like pinatas."
+		"dealer_message_start_29"	"Port authority inspector called this shipment irregular last Friday.<!--.25-->By Monday his daughter's got enough tuition money to attend Stamwick and the shipment is farm tools again.<!--.25-->What can I say, education's important. Let's look at some farm tools."
+
+		"dealer_message_resume_0"  	"<!--1-->You're back. Good. Deal's still on the table."
+		"dealer_message_resume_1"  	"<!--1-->Needed a minute to think about it? Not a problem."
+		"dealer_message_resume_2"  	"<!--1-->I figured you'd be back."
+		"dealer_message_resume_3"  	"<!--1-->Let's pick up where we left off."
+		"dealer_message_resume_4"  	"<!--1-->Ready to do some business?"
+		"dealer_message_resume_5"  	"<!--1-->Good, you're back. I need to offload this or the wrong people are going to start asking questions."
+		"dealer_message_resume_6"  	"<!--1-->You're back. Where were we?"
+
+		"dealer_message_first_offer_0"	"<!--.5-->If you're interested let's make a deal."
+		"dealer_message_first_offer_1"	"<!--.5-->Just so you know, I've got other interested parties in this hardware."
+		"dealer_message_first_offer_2"	"<!--.5-->If you're in, you're in. Otherwise tell me, I've got a back channel full of interested buyers."
+		"dealer_message_first_offer_3"	"<!--.5-->This one's yours if you want it. If not, your loss."
+		"dealer_message_first_offer_4"	"<!--.5-->If it's a yes let's do this. I can't keep this deal on the table forever."
+		"dealer_message_first_offer_5"	"<!--.5-->Offer's on the table. Yes or no."
+		"dealer_message_first_offer_6"	"<!--.5-->You want this or not? You're not hurting my feelings if it's a no. I've got other buyers."
+		"dealer_message_first_offer_7"	"<!--.5-->We doing this or not?"
+		"dealer_message_first_offer_8"	"<!--.5-->I don't have all day."
+		"dealer_message_first_offer_9"	"<!--.5-->We doing business or not?"	
+		"dealer_message_first_offer_10"	"<!--.5-->I don't need to hard sell you here, this sells itself. You in or out?"		
+
+		"dealer_message_next_offer_0"	"<!--1-->Alright, that one didn't do it for you. How about this?"
+		"dealer_message_next_offer_1"	"<!--1-->Your loss. Luckily you caught me in a good mood. Check this out."
+		"dealer_message_next_offer_2"	"<!--1-->You're passing? Well, it's your mistake to make. Take a look at this."
+		"dealer_message_next_offer_3"	"<!--1-->This merchandise sells itself. If you're not buying I'll find someone who will.<!--.5-->While I've got you here, though, this one had your name all over it."
+		"dealer_message_next_offer_4"	"<!--1-->I get it. Not your style. Let's see if this is closer. I think you'll like this."
+		"dealer_message_next_offer_5"	"<!--1-->I had a feeling you'd pass on that. Luckily, I had this little beauty waiting in the wings."
+		"dealer_message_next_offer_6"	"<!--1-->Yeah, I figured. Here, check this out. I think this one's more your speed."
+		"dealer_message_next_offer_7"	"<!--1-->You're gonna regret passing on that later. Not a problem. How about this?"
+		"dealer_message_next_offer_8"	"<!--1-->I know you too well. I figured you weren't gonna bite on that. How about this?"
+		"dealer_message_next_offer_9"	"<!--1-->Alright, passing on the appetizer. Get ready for the main course."
+		"dealer_message_next_offer_10"	"<!--1-->I get it, I didn't like the look of that one either. Here, take a look at this."		
+		"dealer_message_next_offer_11"   "<!--1-->That one might have been an acquired taste. This next one's more of a people pleaser."
+		"dealer_message_next_offer_12"   "<!--1-->Plenty more stock where that came from. Take a look at this beauty."
+		"dealer_message_next_offer_13"   "<!--1-->You know what? I thought you might say that. Let’s move on to this one."
+		"dealer_message_next_offer_14"   "<!--1-->You’re harder to please than I thought. This one putting a smile on your face?"
+		"dealer_message_next_offer_15"   "<!--1-->You're not hurting my feelings. I didn't make the damn thing. Here’s another option."
+		"dealer_message_next_offer_16"   "<!--1-->I wouldn’t have taken that either. This one, though. Come on."
+		"dealer_message_next_offer_17"   "<!--1-->Passing? You got it. Next up."
+		"dealer_message_next_offer_18"   "<!--1-->I see you’ve got high standards. Works for me. This next one's the gold standard."
+		"dealer_message_next_offer_19"   "<!--1-->I don't want to waste your money and you don't want to waste my time. Take a look at this."
+		"dealer_message_next_offer_20"   "<!--1-->Hey, I appreciate the honesty. Let's keep it moving and stop wasting time."
+		"dealer_message_next_offer_21"   "<!--1-->Alright, you weren't feeling that one. Good thing I'm selling more than one gun."
+		"dealer_message_next_offer_22"   "<!--1-->Not a problem. Plenty of other inventory to move here. Next up."
+		"dealer_message_next_offer_23"   "<!--1-->I could have sworn I had a sale there. Maybe this will seal the deal."
+		"dealer_message_next_offer_24"   "<!--1-->Got it. Not for you. They can't all be. But this one is calling your name."
+		"dealer_message_next_offer_25"   "<!--1-->Doesn't look like you're picking up what I'm throwing down here. Let's see if this one grabs you."
+		"dealer_message_next_offer_26"   "<!--1-->Okay, no more fooling around. I am absolutely guaranteeing you're gonna love this next one. Probably."
+		"dealer_message_next_offer_27"   "<!--1-->Didn't like that one, huh? It's going in my private armory then. How about this?"
+		"dealer_message_next_offer_28"   "<!--1-->You’ve got taste. Let's see if this next one meets your high standards."
+		"dealer_message_next_offer_29"   "<!--1-->Alright, that one was just the top of the pile. Let me dig a little deeper."
+		"dealer_message_next_offer_30"   "<!--1-->Forget that last one. This is the one I wanted you to take a look at."
+		"dealer_message_next_offer_31"   "<!--1-->This one's got your name all over it. Not literally, it's clean."
+		"dealer_message_next_offer_32"   "<!--1-->Hey, you can't buy all of 'em, I get it. Maybe you're holding out for something in particular. Like this."
+		"dealer_message_next_offer_33"   "<!--1-->That one was practice. This is the real show."
+		"dealer_message_next_offer_34"   "<!--1-->Yeah, I didn’t think so. But this next one. I thought of you when I saw it."
+		"dealer_message_next_offer_35"   "<!--1-->Fair enough. I've been holding this one back for you."
+		"dealer_message_next_offer_36"   "<!--1-->Not my job to make you fall in love with it. I'm just trying to move hardware. Next."
+		"dealer_message_next_offer_37"   "<!--1-->No problem. I think this next one's more up your alley."
+		"dealer_message_next_offer_38"   "<!--1-->Smart. I knew you wouldn't jump at that. Let me show you something better."
+		"dealer_message_next_offer_39"   "<!--1-->Not a problem. I wouldn't have bought that either. Now this, on the other hand..."
+		"dealer_message_next_offer_40"   "<!--1-->Making me go all the way in the back for the premium shelf stuff, huh? Alright, you got it."
+
+		"dealer_message_last_offer_0"	"<!--0-->Alright, last and final offer. Take it or leave it."
+		"dealer_message_last_offer_1"	"<!--0-->Consider this my final offer."
+		"dealer_message_last_offer_2"	"<!--0-->Final offer. Take it or leave it, let's stop wasting my time."
+		"dealer_message_last_offer_3"	"<!--0-->Last offer.<!--1-->You don't want it, I'd take a step back. This thing WILL explode."
+		"dealer_message_last_offer_4"	"<!--0-->Last offer. I'm not begging."
+		"dealer_message_last_offer_5"	"<!--0-->Alright, this is the best I can do."
+		"dealer_message_last_offer_6"	"<!--0-->Fine. Here. We doing this or not?"		
+		"dealer_message_last_offer_7"	"<!--0-->Last best and final offer."
+		"dealer_message_last_offer_8"	"<!--0-->I'll meet you halfway. This is the best I can do."
+		"dealer_message_last_offer_9"	"<!--0-->This is as good as the offer's getting before it goes away."	
+
+		"dealer_message_end_0"			"<!--0-->Alright, you had your chance. If you're holding the exploding Uplink Terminal right now, I'd stop. In three... two..."
+		"dealer_message_end_1"			"<!--0-->Well, you've got something to think about the next time you're getting shot at and you reach for the weapon you just passed on."
+		"dealer_message_end_2"			"<!--0-->Alright, I'm not going to beg you to take it. Hope you didn't think you were getting a free Uplink Terminal out of this."
+		"dealer_message_end_3"			"<!--0-->Your call. Your business. Your funeral, probably.<!--1-->Step away from the about-to-explode Uplink Terminal, if you could."
+
+		"dealer_message_timerexpired_0"		"<!--.1-->Alright, nevermind."
+		"dealer_message_timerexpired_1"		"<!--.1-->Forget it<!--.5-->You had your chance."
+		"dealer_message_timerexpired_2"		"<!--.1-->Deal's off.<!--.5-->I've got things to do here."
+		"dealer_message_timerexpired_3"		"<!--.1-->Alright, let me find a buyer who's buying<!--.5-->We're done here."
+		"dealer_message_timerexpired_4"		"<!--.1-->Your call.<!--.5-->Later."
+		"dealer_message_timerexpired_5"		"<!--.1-->Tick tock.<!--.5-->Time's up."
+		"dealer_message_timerexpired_6"		"<!--.1-->Deal's off.<!--.5-->I could have moved this elsewhere ten times by now."
+		"dealer_message_timerexpired_7"		"<!--.1-->And here I thought I was helping you waste people.<!--.5-->Turns out you're just wasting my time."
+		"dealer_message_timerexpired_8"		"<!--.1-->Deal's off."	
+		"dealer_message_timerexpired_9"		"<!--.1-->Time's up."
+		"dealer_message_timerexpired_10"	"<!--.1-->Alright, I'm officially bored. We're done here."		
+
+		"dealer_message_open_check_out_0"		"<!--.5-->This one had your name all over it. That's why I thought of you first. Let's seal this deal."
+		"dealer_message_open_check_out_1"		"<!--.5-->An excellent decision. I'll make sure it's packed and ready."
+		"dealer_message_open_check_out_2"		"<!--.5-->You won't regret it. Though I'm betting someone's about to."
+		"dealer_message_open_check_out_3"		"<!--.5-->I knew you were my buyer. Let's make it official."
+		"dealer_message_open_check_out_4"		"<!--.5-->Perfect. Let's do this."		
+		"dealer_message_open_check_out_5"		"<!--.5-->Good choice."	
+		"dealer_message_open_check_out_6"		"<!--.5-->Smartest choice you've ever made. Let's make it final."		
+		"dealer_message_open_check_out_7"		"<!--.5-->Good. Let's make it official."
+
+		"dealer_message_txn_xld_bailout_0"		"<!--.5-->No rush. You know where to find me."
+		"dealer_message_txn_xld_bailout_1"		"<!--.5-->I'm not going anywhere."
+		"dealer_message_txn_xld_bailout_2"		"<!--.5-->I'll keep this one on the table for now."
+		"dealer_message_txn_xld_bailout_3"		"<!--.5-->You'll be back. Go chew on it a little."
+
+		"dealer_message_purchase_finalizing_0"	"Finalizing payment details..."
+		"dealer_message_purchase_confirm_0"		"<!--.5-->Done deal"
+
+		"dealer_message_stattrack_0"			"StatTrak™ installed, of course."
+		"dealer_message_stattrack_1"			"This baby comes with StatTrak™, too."
+		"dealer_message_stattrack_2"			"Outfitted with StatTrak™. So you don't have to keep track in your head."
+		"dealer_message_stattrack_3"			"It's got StatTrak™. You pull the trigger, it does the math."
+		"dealer_message_stattrack_4"			"StatTrak™. Think of it like a scoreboard. For a sport where you murder people."
+		"dealer_message_stattrack_6"			"Includes StatTrak™, for the professional who likes murder AND statistics."
+		"dealer_message_stattrack_7"			"Comes with StatTrak™, of course."
+		"dealer_message_factory_new_0"			"Fresh out the box. Trust me, I just gave it a sniff."
+		"dealer_message_factory_new_1"			"Factory new. It's got that new weapon smell."
+		"dealer_message_factory_new_2"			"No mileage on this one. You'll be the first to pull the trigger."
+		"dealer_message_factory_new_3"			"Straight from production, no wear. Just how you like it."
+		"dealer_message_factory_new_4"			"This one's clean and pristine. No scratches, no story. That's where you come in."
+		"dealer_message_factory_new_5"			"Factory new, never fired. This one's immaculate."
+		"dealer_message_covert_0"				"Guess what? You just hit the jackpot. This one's not just rare. It's covert."
+		"dealer_message_covert_1"				"I've been at this for a decade and I've never seen one of those in the wild.<!--.5-->You've got good taste. And better luck."
+		"dealer_message_covert_2"				"I know buyers who'd have sold their own mother to a gulag to get their hands on that. Well done."
+		"dealer_message_covert_3"				"Wow. Now you've got me second-thinking this. Get this out of here before I regret this sale."
+		"dealer_message_covert_4"				"That's covert. You see something like that show up on the open market maybe once in your life, if you're lucky.<!--.5-->Guess you just got lucky."
+		"dealer_message_covert_5"				"This one's a crown jewel. But you know that. I had a buyer lined up for it a year ago. Their loss is your gain."
+		"dealer_message_covert_6"				"As scarce as they come. This one's hard to find, and it just dropped in your lap."
+		"dealer_message_covert_7"				"Take it from someone who finds this hardware for a living. This was very, very hard to find."
+		"dealer_message_covert_8"				"I hope you appreciate the deal you just made. That's covert. You just bought a unicorn."
+		"dealer_message_covert_9"				"You better get that out of my sight and into your arsenal before I regret this. That's the rarest of the rare."
+		"dealer_message_classified_0"				"Classified. Sterile and unpapered. This one's off the books."
+		"dealer_message_classified_1"				"Classified. No papers, this one's clean and untraceable."
+		"dealer_message_classified_2"				"Classified. Black issue, unpapered. What I'm holding right now does not technically exist."
+		"dealer_message_classified_3"				"Private sale only. Classified. Hope you put this to good use."
+		"dealer_message_classified_4"				"Classified. No serial, no papers."
+		"dealer_message_classified_5"				"Classified. Back channel sale only, de-milled and completely deniable. I never saw it."
+		"dealer_message_restricted_0"				"Restricted. Better internals, tighter grouping. Definite edge over the standard issue."
+		"dealer_message_restricted_1"				"This one's restricted for a reason. It performs just a little too well for the civilians."
+		"dealer_message_restricted_2"				"Restricted, of course. Class III, Title II, and your new number one."
+		"dealer_message_battle_scarred_0"		"Got a few dings in it, but it still shoots straight."
+		"dealer_message_battle_scarred_1"		"A little wear, but all that means is it's seen some action and got out the other side of it."
+		"dealer_message_battle_scarred_2"		"Battlefield pickup. Got a few miles on it, but it's a workhorse."
+		"dealer_message_battle_scarred_3"		"I don't think of it as field-worn. I consider it combat proven."
+		"dealer_message_battle_scarred_4"		"This one's seen some action. Some cosmetic wear but still reliable."
+		"dealer_message_minimal_wear_0"			"Minimal wear on this one. Got a scuff or two, but it'll get the job done."
+		"dealer_message_minimal_wear_1"			"Mint condition. Well, mint-ish. Minimal wear."
+		"dealer_message_minimal_wear_2"			"Minimal wear, just a little broken in, nothing to worry about."
+		"dealer_message_minimal_wear_3"			"Minimal wear on this. She's a little banged up, but you won't regret adding her to your arsenal."
+		"dealer_message_minimal_wear_4"			"It's seen a little combat, already, I won't lie to you. This one's a veteran."
+		"dealer_message_usp-s_0"				"This dog won't bark. Nice and quiet."
+		"dealer_message_usp-s_1"				"Quiet and discreet. Sometimes it needs to be our little secret."
+		"dealer_message_usp-s_2"				"They'll feel this one when it gets there, but they won't hear it coming."
+		"dealer_message_usp-s_3"				"This one's a whisperer."
+		"dealer_message_item_desc_0"			"<!--.25-->This one's got a note:<!--.25-->{s:flavor-text}<!--.25-->Whatever that means."
+		"dealer_message_item_desc_1"			"<!--.25-->This one came with a little note:<!--.25-->{s:flavor-text}"
+
+		"dealer_message_addition_stattrak_0"	"<!--.25-->...and with StatTrak™."
+		"dealer_message_addition_stattrak_1"	"<!--.25-->StatTrak™ module's pre-installed."
+		"dealer_message_addition_stattrak_2"	"<!--.25-->With StatTrak™ to track all the chaos you're gonna be making."
+		"dealer_message_addition_stattrak_3"	"<!--.25-->It's got StatTrak™ too."
+		"dealer_message_addition_stattrak_4"	"<!--.25-->Comes with StatTrak™ too, so you're never gonna lose track of the misery you're making."
+
+		"dealer_message_addition_factory_new_0"	"<!--.25-->And it's factory new. Unfired."
+		"dealer_message_addition_factory_new_1"	"<!--.25-->And it's factory new. Pristine."
+		"dealer_message_addition_factory_new_2"	"<!--.25-->Straight from the vault. Factory new."
+		"dealer_message_addition_factory_new_3"	"<!--.25-->This one's factory new. Never fired."
+		
+		"dealer_message_limit_first_time_0"		"Good to know, I'll only show you offers up to {s:limit}.<!--.25--> Let's see what you need."
+		"dealer_message_limit_first_time_2"		"Only offer under {s:limit}, I'll keep that in mind.<!--.25--> Clock's ticking. Let's start."
+		"dealer_message_limit_first_time_3"		"Noted. Updated.<!--.25--> Here we go."
+		"dealer_message_limit_first_time_unlimited_0"		"No max, Excellent. I'll open the current catalog going forward.<!--.25--> Clock's ticking. Let's start."
+		"dealer_message_limit_first_time_unlimited_1"		"Roger. Uncapped. Now we’re getting serious.<!--.25--> Let's see what you need."
+
+		"dealer_message_limit_0"				"Good to know, I'll only show you offers up to {s:limit}."
+		"dealer_message_limit_1"				"Only offers under {s:limit}, I'll keep that in mind."
+		"dealer_message_limit_2"				"Adjusting the parameters. Only offers up to {s:limit}."
+		"dealer_message_limit_3"				"Offers up to {s:limit}. Noted. Updated."
+		"dealer_message_limit_4"				"I’ll only pull what fits the tag, up to {s:limit}"
+		"dealer_message_limit_5"				"{s:limit}, got the new cap"
+		"dealer_message_limit_6"				"Understood. Resetting the filter for offers up to {s:limit}."
+		"dealer_message_limit_unlimited_0"		"No max, Excellent. I'll open the current catalog going forward."
+		"dealer_message_limit_unlimited_1"		"Got it, uncapped. If any thing exotic comes up I won't hold back."
+		"dealer_message_limit_unlimited_2"		"Music to my ears. If something that fits the bill shows up I won't hesitate to show you"
+		"dealer_message_limit_unlimited_3"		"Roger. Uncapped. Now we’re getting serious."
+
+		"system_dealer_left_chat_0"				"The Dealer has left your chat."
+		"system_dealer_join_chat_0"				"{s:collection} Arms Deal Offers.<!--1.25-->Dealer Connected"
+		"system_user_reject_offer_0"			"{s:user-name} Declined Offer."
+
+		"system_user_updated_offer_limit_0"			"Max Offer Limit updated to {s:limit}. You can update the setting at any time."
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//Retakes
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		"GameUI_Retake_DefendA"					"Defend Site A!"
+		"GameUI_Retake_DefendB"					"Defend Site B!"
+		"GameUI_Retake_RetakeA"					"Retake Site A!"
+		"GameUI_Retake_RetakeB"					"Retake Site B!"
+		"GameUI_Retake_Notice_MvpCardAvailable"	"Congratulations! MVP Bonus card available next round!"
+		"GameUI_Retake_Card_CardsPreview"		"Cards Preview"
+		"GameUI_Retake_Card_AvailableCard"		"Select this loadout"
+		"GameUI_Retake_Card_AvailableCards"		"Select a loadout"
+
+		"GameUI_Retake_Card_Bonus"				"Bonus"
+		"GameUI_Retake_Card_Enemy"				"Enemy Loadout"
+		"GameUI_Retake_Card_Mvp"				"MVP"
+
+		"GameUI_Retake_Card_4v3"				"4v3"
+		"GameUI_Retake_Card_FlashOut"			"Flash Out!"
+		"GameUI_Retake_Card_HideAndPeek"		"Hide and Peek"
+		"GameUI_Retake_Card_TakeFive"			"Take Five"
+		"GameUI_Retake_Card_OnlyTakesOne"		"Only Takes One"
+		"GameUI_Retake_Card_SneakyBeakyLike"	"Sneaky Beaky Like"
+		"GameUI_Retake_Card_UmpInSmoke"			"UMP in Smoke"
+		"GameUI_Retake_Card_FunNGun"			"Fun-N-Gun"
+		"GameUI_Retake_Card_Sharpshooter"		"Sharpshooter"
+		"GameUI_Retake_Card_BurstBullpup"		"Burst Bullpup"
+		"GameUI_Retake_Card_LightEmUp"			"Bright Eyed"
+		"GameUI_Retake_Card_Kobe"				"Kobe!"
+		"GameUI_Retake_Card_1g"					"1g"
+		"GameUI_Retake_Card_DisappearingAct"	"Disappearing Act"
+		"GameUI_Retake_Card_EyesOnTarget"		"Eyes On Target"
+		"GameUI_Retake_Card_BehindEnemyLines"	"Behind Enemy Lines"
+		"GameUI_Retake_Card_4BadGuysLeft"		"4 Bad Guys Left"
+		"GameUI_Retake_Card_LookAway"			"Look Away!"
+		"GameUI_Retake_Card_WhenThereIsSmoke"	"Where There's Smoke..."
+		"GameUI_Retake_Card_BlindFire"			"Blind Fire"
+		"GameUI_Retake_Card_QueOta"				"Qué ota?"
+		"GameUI_Retake_Card_SmokeScreen"		"Smoke Screen"
+		"GameUI_Retake_Card_TecTecBoom"			"TEC, TEC, BOOM!"
+		"GameUI_Retake_Card_BackInAFlash"		"Back In a Flash"
+		"GameUI_Retake_Card_AllIn"				"All In"
+		"GameUI_Retake_Card_BoomBox"			"Boom Box"
+		"GameUI_Retake_Card_SetThemFree"		"Set Them Free"
+		"GameUI_Retake_Card_OlReliable"			"Ol' Reliable"
+		"GameUI_Retake_Card_SmokeShow"			"Smoke Show"
+		"GameUI_Retake_Card_HotShot"			"Hot Shot"
+		"GameUI_Retake_Card_EyeSpy"				"Eye Spy"
+		"GameUI_Retake_Card_TheAWPortunity"		"The AWPortunity"
+		"GameUI_Retake_Card_FindersKeepers"		"Finders Keepers"
+
+		"Hud_Retake_BombSite"					"{s:hud-retake-bombsite}"
+		
+		"Hud_Money" "${d:r:hud-money-amount}"
+		"Hud_Money_Signed" "{s:sign}${d:r:hud-money-delta}"
+
+		"Propcounter_money" "$%s1" //e.g. used on danger zone security door
+
+		"csgo_player_left_game"					" Player %s1 left the game (%s2)"
+
+		"LoadoutLockedPopupTitle"				"Loadout Locked"
+		"LoadoutLockedPopupText"				"Loadout changes are not allowed during competitive matchmaking."
+
+		"Workshop_item_title" "Item Submission Tool"
+		"Workshop_item_error_title" "Enter a title for your item. This should include the player name or other identifying information"
+		"Workshop_item_error_image" "Select a valid jpeg or png image less than {s:max_size} and at least {d:min_height} width/height"
+		"Workshop_item_ready" "Submission ready to upload"
+		"SFUI_Go_To_Mic_Enable_key" "Go To Microphone Key Binding"
+		"SFUI_Go_To_Console_Key_Binding" "Go To Console Key Binding"
+
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//Steam Video
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		"SteamVideo_Player_Kill_Title"					"You killed %s1"
+		"SteamVideo_Player_Kill_Description"			"with the %s1"
+
+		"SteamVideo_Player_Double_Kill_Title"			"Double kill"
+		"SteamVideo_Player_Multi_Kill_Title"			"Multi kill"
+		
+		"SteamVideo_Player_Death_Title"					"You were killed by %s1"
+		"SteamVideo_Player_Death_Description"			"with the %s1"
+		"SteamVideo_Player_Death_Description_Plural"	"with %s1"
+		"SteamVideo_Player_Killed_Self_Title"			"You killed yourself"
+		
+		"SteamVideo_Bomb_Planted_Title"					"Bomb planted"
+		"SteamVideo_Bomb_Planted"						"%s1 planted the bomb"
+		"SteamVideo_Bomb_Planted_LocalPlayer"			"You planted the bomb"
+		
+		"SteamVideo_Bomb_Defused_Title"					"Bomb defused"
+		"SteamVideo_Bomb_Defused"						"%s1 defused the bomb"
+		"SteamVideo_Bomb_Defused_LocalPlayer"			"You defused the bomb"
+		
+		"SteamVideo_Bomb_Exploded_Title"				"The bomb exploded"
+		
+		"SteamVideo_Round_Number_Label"					"Round %s1"
+		"SteamVideo_Start_Of_Round_Title"				"Start of round %s1"
+
+		"SteamVideo_MatchScore"							"Score"
+		"SteamVideo_KDA"								"K/D/A"
+
+		// ---------------------------------------------------------------------------------------------
+		// WEEKLY MISSIONS
+		// ---------------------------------------------------------------------------------------------
+		"weekly_mission_title"							"MISSION"
+		"weekly_mission_title_complete"					"MISSION COMPLETE"
+		"weekly_mission_expiration"						"Expires in <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_expiration_pausemenu"			"Expires in <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_next_mission"					"Next mission starts in <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_progress"						"<b>{d:mission-progress}</b>/{d:mission-points}"
+		"CS2_Quest_Weapon_Mode"							"Equipment Proficiency: <b>{s:gamemode}</b>, <b>{s:weapon}</b>"
+		"CS2_Quest_Weapon_Mode_desc"					"Score <b>{s:weapon}</b> {s:optional_target}{s:actions} in <b>{s:gamemode}</b> matches."
+
+		"mission_searching"								"Searching..."
+		"mission_xp_remaining"							"{s:mission-xp} XP"
+
+		"mission_segment_tooltip"						"{d:xp-reward} XP"
+
+		"mission_location"								"<b>{s:gamemode}</b> on <b>{s:location}</b>"
+		"mission_directive:f"							"<b>{d:mission-points}</b> {mission-points, plural, one{{s:action}} other{{s:actions}}}"
+ 		"mission_directive_progress:f"					"{d:mission-progress}/<b>{d:mission-points}</b> {mission-points, plural, one{{s:action}} other{{s:actions}}}"
+
+
+		"quest_11000_var_desc:f"	  					"{mission-points, plural, one{Get a kill with the {s:item1} in <b>{s:gamemode}: {s:location}</b>.} other{Get kills with the {s:item1} in <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11000_var_partial:f" 					"...with the {s:item1}."
+		"quest_11000_var_ingame:f"	  					"{mission-points, plural, one{Get a kill with the {s:item1}.} other{Get kills with the {s:item1}.}}"
+
+		"quest_11001_var_desc:f"	 					"{mission-points, plural, one{Get a kill with the {s:item1} in <b>{s:gamemode}: {s:location}</b>.} other{Get kills with the {s:item1} in <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11001_var_partial:f"	 					"...with the {s:item1}."
+		"quest_11001_var_ingame:f"	 					"{mission-points, plural, one{Get a kill with the {s:item1}} other{Get kills with the {s:item1}}}"
+
+		"quest_11002_var_desc:f"	 					"{mission-points, plural, one{Get a kill with the {s:item1} in <b>{s:gamemode}: {s:location}</b>.} other{Get kills with the {s:item1} in <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11002_var_partial:f"	 					"...with the {s:item1}."
+		"quest_11002_var_ingame:f"	 					"{mission-points, plural, one{Get a kill with the {s:item1}} other{Get kills with the {s:item1}}}"
+
+		"quest_11003_var_desc:f"						"{mission-points, plural, one{Get a kill with the {s:item1} in <b>{s:gamemode}: {s:location}</b>.} other{Get kills with the {s:item1} in <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11003_var_partial:f"	 					"...with the {s:item1}."
+		"quest_11003_var_ingame:f"	 					"{mission-points, plural, one{Get a kill with the {s:item1}} other{Get kills with the {s:item1}}}"
+
+		"quest_11004_var_desc:f"	 					"{mission-points, plural, one{Win a round in <b>{s:gamemode}: {s:location}</b>.} other{Win rounds in <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11004_var_partial:f" 					""
+		"quest_11004_var_ingame:f"						"{mission-points, plural, one{Win a round} other{Win rounds}}"
+
+		"quest_11005_var_desc:f"	 					"{mission-points, plural, one{Win a round in <b>{s:gamemode}: {s:location}</b>.} other{Win rounds in <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11005_var_partial:f" 					""
+		"quest_11005_var_ingame:f"						"{mission-points, plural, one{Win a round} other{Win rounds}}"
+
+		"quest_11006_var_desc:f"	 					"{mission-points, plural, one{Win a round in <b>{s:gamemode}: {s:location}</b>.} other{Win rounds in <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11006_var_partial:f" 					""
+		"quest_11006_var_ingame:f"						"{mission-points, plural, one{Win a round} other{Win rounds}}"
+
+		"quest_11007_var_desc:f"	 					"{mission-points, plural, one{Get a kill with the {s:item1} in <b>{s:gamemode}: {s:location}</b>.} other{Get kills with the {s:item1} in <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11007_var_partial:f"	 					"...with the {s:item1}."
+		"quest_11007_var_ingame:f"	 					"{mission-points, plural, one{Get a kill with the {s:item1}} other{Get kills with the {s:item1}}}"
+
+		"quest_11008_var_desc:f"	 					"{mission-points, plural, one{Win a round in <b>{s:gamemode}: {s:location}</b>.} other{Win rounds in <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11008_var_partial:f" 					""
+		"quest_11008_var_ingame:f"						"{mission-points, plural, one{Win a round} other{Win rounds}}"
+
+		"quest_11009_var_desc:f"	 					"{mission-points, plural, one{Win a round in <b>{s:gamemode}: {s:location}</b>.} other{Win rounds in <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11009_var_partial:f" 					""
+		"quest_11009_var_ingame:f"						"{mission-points, plural, one{Win a round} other{Win rounds}}"
+
+		"quest_11010_var_desc:f"	 					"{mission-points, plural, one{Get a kill with the {s:item1} in <b>{s:gamemode}: {s:location}</b>.} other{Get kills with the {s:item1} in <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11010_var_partial:f"	 					"...with the {s:item1}."
+		"quest_11010_var_ingame:f"	 					"{mission-points, plural, one{Get a kill with the {s:item1}} other{Get kills with the {s:item1}}}"
+
+		"quest_11011_var_desc:f"	 					"{mission-points, plural, one{Win a round in <b>{s:gamemode}: {s:location}</b>.} other{Win rounds in <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11011_var_partial:f" 					""
+		"quest_11011_var_ingame:f"						"{mission-points, plural, one{Win a round} other{Win rounds}}"
+
+		"quest_11012_var_desc:f"	 					"{mission-points, plural, one{Win a round in <b>{s:gamemode}: {s:location}</b>.} other{Win rounds in <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11012_var_partial:f" 					""
+		"quest_11012_var_ingame:f"						"{mission-points, plural, one{Win a round} other{Win rounds}}"
+
+		"quest_11013_var_desc:f"	 					"{mission-points, plural, one{Win a round in <b>{s:gamemode}: {s:location}</b>.} other{Win rounds in <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11013_var_partial:f" 					""
+		"quest_11013_var_ingame:f"						"{mission-points, plural, one{Win a round} other{Win rounds}}"
+
+		"quest_11014_var_desc:f"	 					"{mission-points, plural, one{Win a round in <b>{s:gamemode}: {s:location}</b>.} other{Win rounds in <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11014_var_partial:f" 					""
+		"quest_11014_var_ingame:f"						"{mission-points, plural, one{Win a round} other{Win rounds}}"
+
+		"quest_11015_var_desc:f"	 					"{mission-points, plural, one{Win a round in <b>{s:gamemode}: {s:location}</b>.} other{Win rounds in <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11015_var_partial:f" 					""
+		"quest_11015_var_ingame:f"						"{mission-points, plural, one{Win a round} other{Win rounds}}"
+
+// ---------------------------------------------------------------------------------------------
+// Join Friend Listen Servers
+// ---------------------------------------------------------------------------------------------
+
+		"tooltip_viewaddon"				"Visit custom map on workshop page"
+		"tooltip_kick_player"			"Kick player from local server"		
+		"tooltip_short_viewaddon"			"View Custom Map"
+		"tooltip_short_kick_player"			"Kick"
+
+// SFUI_ENGLISH.txt
+// ---------------------------------------------------------------------------------------------
+}
+
+
+
+
+}
+
+
+omb carrier kills:"
 
 		"accolade_burndamage"							"The Fire Starter"
 		"accolade_burndamage_desc"						"Most burn damage:"

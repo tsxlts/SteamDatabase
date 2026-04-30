@@ -1964,8 +1964,8 @@
 		"Team_Cash_Award_no_income_suicide"					" +0 $ straf over selvmord"
 		"Team_Cash_Award_Generic"							" +%s1 $ holdindkomst"
 		"Team_Cash_Award_Custom"							" +%s1 $ %s2"
-		"Team_Cash_Award_Dead_Terrorists:p"					" +%s1 $ holdindkomst for %s2 elimineret terrorist#|# +%s1 $ holdindkomst for %s2 eliminerede terrorister"
-		"Team_Cash_Award_Dead_CTs:p"						" +%s1 $ holdindkomst for %s2 elimineret CT#|# +%s1 $ holdindkomst for %s2 eliminerede CT'er"
+		"Team_Cash_Award_Dead_Terrorists:f"					" +$%s1 holdindkomst for {num_enemies} {num_enemies, plural, one{elimineret terrorist} other{eliminerede terrorister}}"
+		"Team_Cash_Award_Dead_CTs:f"						" +$%s1 holdindkomst for {num_enemies} {num_enemies, plural, one{elimineret CT} other{eliminerede CT'er}}"
 
 
 		"Notice_Bonus_Shorthanded_Eligibility"			" Dit hold vil kunne modtage erstatningsindkomst for at være underbemandet om %s1 runder."
@@ -2326,10 +2326,14 @@
 		// Econ date formatting supports the following tokens:
 		//    %year%, %monthshort%, %monthlong%, %mmday% (01-31), %mday% (1-31), %day% (legacy unlocalized "Jul 30" shouldn't be used), %hour%, %min%, %sec%
 		//
-		"Econ_DateFormat"						"%mmday%. %monthshort%, %year% (%hour%:%min%:%sec%)"
-		"Econ_DateFormat_GMT"					"%mmday%. %monthshort%, %year% (%hour%:%min%:%sec%) GMT"
-		"Econ_DateFormat_DateOnly"				"%mmday%. %monthshort%, %year%"
-		"Econ_DateFormat_GMT_DateOnly"			"%mmday%. %monthshort%, %year% GMT"
+		"Econ_DateFormat:f"							"{mmday}. {monthshort} {year} ({hour}:{min}:{sec})"
+		"Econ_DateFormat_GMT:f"						"{mmday}. {monthshort} {year} ({hour}:{min}:{sec}) GMT"
+		"Econ_DateFormat_DateOnly:f"				"{mmday}. {monthshort} {year}"
+		"Econ_DateFormat_GMT_DateOnly:f"			"{mmday}. {monthshort} {year} GMT"
+		"Econ_DateFormat"							"%mmday%. %monthshort%, %year% (%hour%:%min%:%sec%)"
+		"Econ_DateFormat_GMT"						"%mmday%. %monthshort%, %year% (%hour%:%min%:%sec%) GMT"
+		"Econ_DateFormat_DateOnly"					"%mmday%. %monthshort%, %year%"
+		"Econ_DateFormat_GMT_DateOnly"				"%mmday%. %monthshort%, %year% GMT"
 		"Econ_Loot_List_Sticker_ProPlayerSignatures" "Klistermærket kan være signeret af én af de følgende professionelle spillere:"
 		"Econ_Loot_List_Sticker_ProPlayerSignatures_AndSomeMore" "... og %s1 andre professionelle spillere"
 		"Econ_Loot_List_Sticker_ProOrgsStickers"	"Klistermærket kan repræsentere en af følgende organisationer:"
@@ -6077,1260 +6081,15 @@
 
 		"quest_desc"								" "
 
-		"quest_totalgoal_points_desc"				"Samlet antal %actions% krævet： <b>%points%</b>" // special non-breaking space characters in this string, edit carefully!
-		"quest_attrremaining_points_desc"			"Tilbageværende %actions%： <b>%points%</b>" // special non-breaking space characters in this string, edit carefully!
-		"quest_uncommitted_points_desc"				"Tilbageværende %actions%： <b>%points%</b> (<b>%points uncommitted%</b> tjent denne kamp)" // special non-breaking space characters in this string, edit carefully!
-		"quest_uncommitted_points_warn"				" * <i>%actions% bliver registreret ved slutningen af kampen</i>"
-	
-		"quest_uncommitted_points_chat_one"	" Mission opfyldt: %action% opnået."
-		"quest_uncommitted_points_chat_singular"	" Missionsfremskridt: +%points% %action% opnået."
-		"quest_uncommitted_points_chat_plural"		" Missionsfremskridt: +%points% %actions% opnået."
-		"quest_uncommitted_points_chat_event"		" Blitz-mission: %action% opnået."		
+		"quest_commandverb_default"					"Få"
 
-		"quest_reward_desc"								"Denne mission belønner fra\n<b>%s1</b>:"
+		"quest_action_plural_act_kill_human"		"drab"
+		"quest_action_singular_act_kill_human"		"drab"
 
-		"quest_reward_xp"									"Missionsbelønning: <b>%s1</b> XP"
-
-		"quest_event_totalgoal_points_desc"					"Optjen øget XP for hver(t) <b>%action%</b> under denne begivenhed."
-		
-		"quest_bonus_desc"								"Bonus: +<b>%xpperbonusaction%</b> XP per %action%—<i>%xpbonuscondition%.</i>"
-		"quest_bonus_fractional_desc"			"Bonus: +<b>%xpperbonusactions%</b> XP per <b>%n_actions%</b> %actions%—<i>%xpbonuscondition%.</i>"
-		"quest_bonus_single_desc"					"Bonus: +<b>%xpperbonusaction%</b> XP—<i>%xpbonuscondition%.</i>"
-
-
-		"quest_target_chicken"											"kylling"
-		"quest_target_human_or_chicken"									"menneske eller kylling"
-		"quest_target_hostagerescuer"									"gidselbefrier"
-		"quest_target_armsraceleader"									"Arms Race-leder"
-
-		"quest_target_headshot"											"hovedskud"
-		"quest_target_airborne"											"luftbåren"
-		"quest_target_pistolround"										"pistol"
-
-		"quest_target_lockeddoor"										"låste døre"
-		"quest_target_explodingbarrel"									"eksplosive tønder"
-		"quest_target_glasspane"										"Glasruder"
-		"quest_target_enemydrone"										"fjendtlige droner"
-
-		"quest_target_shotgun"											"haglgevær"
-		"quest_target_sniperrifle"										"snigskytteriffel"
-		"quest_target_utility"											"hjælpeværktøj"
-		"quest_target_defaultctpistol"									"standard-CT-pistol"
-		"quest_target_defaultpistol"									"standardpistol"
-		"quest_target_knife"											"kniv"
-
-		"quest_action_plural_act_kill_human"							"drab"
-		"quest_action_singular_act_kill_human"							"drab"
-
-		"quest_action_plural_act_kill_chicken"							"drab"
-		"quest_action_singular_act_kill_chicken"						"drab"		
-
-		"quest_action_plural_act_protect_chicken"						"sekunder til at beskytte en kylling"
-		"quest_action_singular_act_protect_chicken"						"sekund til at beskytte en kylling"	
-
-		"quest_action_plural_act_kill_target"							"snigmord"
-		"quest_action_singular_act_kill_target"							"snigmord"		
-
-		"quest_action_plural_act_damage"								"skade"
-		"quest_action_singular_act_damage"								"skadespoint forvoldt"		
-
-		"quest_action_plural_act_win_match"								"sejre"
-		"quest_action_singular_act_win_match"							"sejr"		
-
-		"quest_action_plural_act_dz_game_end_placement"					"placeringer"
-		"quest_action_singular_act_dz_game_end_placement"				"placering"	
-
-		"quest_action_plural_act_dz_purchase_item"					"køb"
-		"quest_action_singular_act_dz_purchase_item"				"køb"	
-
-		"quest_action_plural_act_win_round"								"rundesejre"
-		"quest_action_singular_act_win_round"							"rundesejr"	
-
-		"quest_action_plural_act_round_end"								" "
-		"quest_action_singular_act_round_end"							" "			
-
-		"quest_action_plural_act_round_mvp"								"MVP'er"
-		"quest_action_singular_act_round_mvp"							"MVP"
-
-		"quest_action_plural_act_dm_bonus_points"						"point"
-		"quest_action_singular_act_dm_bonus_points"						"point"		
-
-		"quest_action_plural_act_armsrace_level"						"levels"
-		"quest_action_singular_act_armsrace_level"						"level"	
-
-		"quest_action_plural_act_gg_weapon_upgrade"						"opgraderinger"
-		"quest_action_singular_act_gg_weapon_upgrade"					"opgradering"	
-
-		"quest_action_plural_act_gg_upgrade_to_knifegg"						"opgraderinger"
-		"quest_action_singular_act_gg_upgrade_to_knifegg"					"opgradering"	
-				
-		"quest_action_plural_act_flashbang_enemy"						"blændede fjender"
-		"quest_action_singular_act_flashbang_enemy"						"blændet fjende"		
-		
-		"quest_action_plural_act_pick_up_hostage"						"gidsel-opsamlinger"
-		"quest_action_singular_act_pick_up_hostage"						"gidsel-opsamling"		
-		
-		"quest_action_plural_act_rescue_hostage"						"gidselundsættelser"
-		"quest_action_singular_act_rescue_hostage"						"gidselundsættelse"		
-		
-		"quest_action_plural_act_defuse_bomb"							"bombedemonteringer"
-		"quest_action_singular_act_defuse_bomb"							"bombedemontering"		
-		
-		"quest_action_plural_act_plant_bomb"							"bombeanbringelser"
-		"quest_action_singular_act_plant_bomb"							"bombeanbringelse"
-
-		"quest_action_singular_act_income"								"dollar"
-		"quest_action_plural_act_income"								"penge"
-		
-		"quest_action_singular_act_survivalincome"						"dollar"
-		"quest_action_plural_act_survivalincome"						"kontanter"
-
-		"quest_action_singular_act_spend"								"dollar"
-		"quest_action_plural_act_spend"									"penge"
-
-		"quest_action_singular_act_parachute_landed"					"sekund i luften med en faldskærm"
-		"quest_action_plural_act_parachute_landed"						"sekunder i luften med en faldskærm"
-
-		"quest_action_singular_act_bumpmine_launch"						"hoppeminespring"
-		"quest_action_plural_act_bumpmine_launch"						"hoppeminespring"
-
-		"quest_action_singular_headshot_kill"							"hovedskudsdrab"
-		"quest_action_plural_headshot_kill"								"hovedskudsdrab"
-
-		"quest_action_singular_multikill"								"multi-drabsrunde"
-		"quest_action_plural_multikill"									"multi-drabsrunder"
-
-		"quest_action_singular_act_apply_graffiti"						"graffiti"
-		"quest_action_plural_act_apply_graffiti"						"graffiti"
-
-		"quest_action_singular_act_detonate_smokegrenade"				"røggranat"
-		"quest_action_plural_act_detonate_smokegrenade"					"røggranater"
-
-		"quest_action_singular_act_detonate_molotov"					"molotovcocktail"
-		"quest_action_plural_act_detonate_molotov"						"molotovcocktails"
-
-		"quest_action_singular_act_use_healthshot"						"medicinsprøjte"
-		"quest_action_plural_act_use_healthshot"						"medicinsprøjter"
-		
-		"quest_action_singular_act_retakes_picked_enemy_card"			"fjendens kortudvalg"
-		"quest_action_plural_act_retakes_picked_enemy_card"				"fjendens kortudvalg"
-
-		"quest_action_singular_act_retakes_picked_mvp_card"				"Valg af MVP-kort"
-		"quest_action_plural_act_retakes_picked_mvp_card"				"Valg af MVP-kort"
-//
-
-		"quest_action_plural_bomb_plants_or_defuses"					"bombeanbringelser eller demonteringer"
-		"quest_action_singular_bomb_plants_or_defuses"					"bombeanbringelse eller demontering"
-		
-		"quest_action_plural_rescue_or_kill_hostages"					"gidselsundsætninger eller undsættere dræbt"
-		"quest_action_singular_rescue_or_kill_hostages"					"gidselsundsætning eller undsætterdrab"		
-		
-		"quest_action_plural_damage_burn"								"brandskade"
-		"quest_action_singular_damage_burn"								"point brandskade"
-
-		"quest_commandverb_default"										"Få"
-		"quest_commandverb_defaultCT"									"Som CT: Få"
-		"quest_commandverb_defaultT"									"Som T: Få"
-		"quest_commandverb_deal"										"Gør"
-		"quest_commandverb_earn"										"Optjen"
-		"quest_commandverb_earnT"										"Som T: Optjen"
-		"quest_commandverb_spend"										"Brug"
-		"quest_commandverb_execute"										"Udfør"
-		"quest_commandverb_destroy"										"Ødelæg"
-		"quest_commandverb_apply"										"Anvend"
-		"quest_commandverb_throw"										"Kast"
+		"quest_action_plural_act_win_round"			"rundesejre"
+		"quest_action_singular_act_win_round"		"rundesejr"	
 
 		////
-
-		"quest_condition_item_own"										"din egen"
-		"quest_condition_item_borrowed"									"en andens"									
-		"quest_condition_item_borrowed_teammate"						"holdkammerats"									
-		"quest_condition_item_borrowed_enemy"							"fjendes"									
-		"quest_condition_item_borrowed_victim"							"ofrets egen"									
-		"quest_condition_item_nondefault"								"pæn"
-
-		"quest_LoadoutSlot_Melee"										"kniv"
-		"quest_LoadoutSlot_Secondary"									"pistol"
-		"quest_LoadoutSlot_SMG"											"maskinpistol"
-		"quest_LoadoutSlot_Rifle"										"riffel"
-		"quest_LoadoutSlot_Heavy"										"tungt våben"
-		"quest_LoadoutSlot_Grenade"										"granat"
-
-		"quest_item_default"											"våben"
-
-////
-		"quest_event_ending"											"Slutter om %s1 minutter"
-		"quest_event_soon_hours"										"Starter om %s1 timer"
-		"quest_event_soon_hms"											"Starter om %s1:%s2:%s3"
-		"quest_event_today"												"I dag %s1:%s2"
-		"quest_event_future"											"Starter %s1 %s2 %s3:%s4"
-		"quest_event_timer"												"Starter om %s1"
-
-////
-
-
-
-
-////////////////////////// generalized quest strings //////////////////////////////
-///
-///	Use these if applicable. If not, use this pattern to create new ones.
-///
-///
-///
-
-		"quest_default_0_items_desc" "%commandverb% %target% %actions% i <b>%gamemode%: %location%</b>-kampe."		
-		"quest_default_1_items_desc" "%commandverb% %target% %actions% med enhver/ethvert <i>%item_quality%</i>-<b>%item1%</b> i <b>%gamemode%: %location%</b>-kampe."
-		"quest_default_2_items_desc" "%commandverb% %target% %actions% med enhver/ethvert <i>%item_quality%</i>-<b>%item1%</b> eller -<b>%item2%</b> i <b>%gamemode%: %location%</b>-kampe."
-		"quest_default_3_items_desc" "%commandverb% %target% %actions% med enhver/ethvert <i>%item_quality%</i>-<b>%item1%</b>, -<b>%item2%</b> eller -<b>%item3%</b> i <b>%gamemode%: %location%</b>-kampe."
-		"quest_default_4_items_desc" "%commandverb% %target% %actions% med enhver/ethvert <i>%item_quality%</i>-<b>%item1%</b>, -<b>%item2%</b>, -<b>%item3%</b> eller <b>%item4%</b> i <b>%gamemode%: %location%</b>-kampe."
-
-		"quest_default_hud_0_items_desc" "%commandverb% %target% %actions%"
-		"quest_default_hud_1_items_desc" "%commandverb% %target% %actions%: <i>%item_quality%</i> <b>%item1%</b>"
-		"quest_default_hud_2_items_desc" "%commandverb% %target% %actions%: <i>%item_quality%</i> <b>%item1%</b>/<b>%item2%</b>"
-		"quest_default_hud_3_items_desc" "%commandverb% %target% %actions%: <i>%item_quality%</i> <b>%item1%</b>/<b>%item2%</b>/<b>%item3%</b>"
-		"quest_default_hud_4_items_desc" "%commandverb% %target% %actions%: <i>%item_quality%</i> <b>%item1%</b>/<b>%item2%</b>/<b>%item3%</b>/<b>%item4</b>"
-
-/////////////////////////////////////////////////////////
-
-/////////////////////////////// Quest Strings via Dialog Vars //////
-///
-/// Used starting with Op09 - the default descriptions should handle most "Perform X Action in GameMode: Location" quests.
-///
-///
-		"quest_default_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} i <b>{s:gamemode}: {s:location}</b>."		
-		"quest_single_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} i <i>én enkelt</i> <b>{s:gamemode}: {s:location}</b>."		
-		"quest_default_no_map_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} i <b>{s:gamemode}</b>."
-		"quest_single_no_map_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} i <i>én enkelt</i> <b>{s:gamemode}</b> kamp."		
-
-		"quest_weapon_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} med {s:weapon} i <b>{s:gamemode}: {s:location}</b>."
-		"quest_weapon_single_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} med {s:weapon} i <i>én enkelt</i> <b>{s:gamemode}: {s:location}</b> kamp."
-		"quest_weapon_no_map_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} med {s:weapon} i <b>{s:gamemode}</b>."
-		"quest_weapon_category_no_map_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} med {s:weapon} våben i <b>{s:gamemode}</b>."
-
-		"quest_flyingscoutsman_var_desc"	"{s:commandverb} {d:points} {s:target} {s:actions} i <b>Flying Scoutsman: {s:location}</b>."
-		"quest_flyingscoutsman_no_map_var_desc"	"{s:commandverb} {d:points} {s:target} {s:actions} i <b>Flying Scoutsman</b>."
-
-		"quest_retakes_var_desc"	"{s:commandverb} {d:points} {s:target} {s:actions} i <b>Retakes: {s:location}</b>."
-		"quest_retakes_no_map_var_desc"	"{s:commandverb} {d:points} {s:target} {s:actions} i <b>Retakes</b>."
-
-		"quest_armsrace_var_desc"	 		"{s:commandverb} {d:points} {s:target} {s:actions} i <b>Arms Race</b>."
-		"quest_armsrace_weapon_var_desc"	"{s:commandverb} {d:points} {s:target} {s:actions} med enhver {s:weapon} i <b>Arms Race</b>."
-
-		// quest exceptions:
-		"quest_931_var_desc"	 "Dræb {d:points} fjender med {s:weapon} i <b>{s:gamemode}: {s:location}</b>."
-		"quest_932_var_desc"	 "Dræb {d:points} fjender, mens du er i luften, i <b>Flying Scoutsman</b>."
-		"quest_933_var_desc"	 "Få {d:points} rundesejre i <b>{s:gamemode}: {s:location}</b>."
-		"quest_934_var_desc"	 "Dræb {s:kills} fjender med {s:weapon} i <b>Guardian: {s:location}</b>."
-		"quest_935_var_desc"	 "Få {d:points} {s:weapon} drab i <i>én enkelt</i> <b>{s:gamemode}: {s:location}</b> kamp."
-		"quest_936_var_desc"	 "Dræb {d:points} fjender med {s:weapon} i <b>{s:gamemode}</b>."
-		"quest_937_var_desc"	 "Anvend {d:points} graffiti i fjendens territorium i <b>{s:gamemode}: {s:location}</b>."
-		"quest_938_var_desc"	 "Dræb {d:points} Arms Race-ledere i <b>{s:gamemode}</b>."
-		"quest_939_var_desc"	 "Dræb {s:kills} fjender med {s:weapon} i <b>Guardian: {s:location}</b>."
-		"quest_940_var_desc"	 "Få {d:points} rundesejre i <b>{s:gamemode}: {s:location}</b>."
-		"quest_941_var_desc"	 "Få {d:points} pistolrundesejre i <b>{s:gamemode}: {s:location}</b>."
-		"quest_942_var_desc"	 "Få {d:points} {s:weapon} drab i <i>én enkelt</i> <b>{s:gamemode}: {s:location}</b> kamp."
-		"quest_943_var_desc"	 "Dræb {d:points} fjender i <b>Flying Scoutsman</b>."
-		"quest_944_var_desc"	 "Brug {d:points} kontanter i <i>én enkelt</i> <b>{s:gamemode}</b> kamp."
-		"quest_945_var_desc"	 "Få {s:kills} drab i <b>Guardian: {s:location}</b>."
-		"quest_946_var_desc"	 "Få {d:points} rundesejre i <b>{s:gamemode}: {s:location}</b>."
-		"quest_947_var_desc"	 "Få {d:points} rundesejre i <b>{s:gamemode}: {s:location}</b>."
-		"quest_948_var_desc"	 "Få {d:points} gidselredninger, eller dræb {d:points} gidselreddere i <b>{s:gamemode}: {s:location}</b>."
-        "quest_949_var_desc"	 "Dræb {d:points} fjender med {s:weapon} i <b>{s:gamemode}: {s:location}</b>."
-        "quest_950_var_desc"	 "Få {d:points} drab med alle tunge våben i <b>{s:gamemode}</b>."
-        "quest_951_var_desc"	 "Dræb {s:kills} fjender med {s:weapon} i <b>Guardian: {s:location}</b>. Spillere starter med <b>{s:extraequip0}</b>."
-        "quest_952_var_desc"	 "Få {d:points} rundesejre i <b>{s:gamemode}: {s:location}</b>."
-        "quest_953_var_desc"	 "Få {d:points} rundesejre i <b>{s:gamemode}: {s:location}</b>."
-        "quest_954_var_desc"	 "Få {d:points} {s:target} drab i <i>én enkelt</i> <b>{s:gamemode}: {s:location}</b> kamp."
-		"quest_955_var_desc"	 "Bliv ven med kyllingerne i {d:points} sekunder i <b>{s:gamemode}: {s:location}</b>."
-		"quest_956_var_desc" 	 "Brug en faldskærm i {d:points} sekunder i <b>{s:gamemode}</b>."
-		"quest_957_var_desc" 	 "Dræb {d:points} fjender med {s:weapon} i <b>{s:gamemode}: {s:location}</b>."
-		"quest_958_var_desc" 	 "Få {d:points} rundesejre i <b>{s:gamemode}: {s:location}</b> (venskabskamp)."
-		"quest_959_var_desc" 	 "Dræb {d:points} fjender i <b>{s:gamemode}: {s:location}</b>."
-		"quest_960_var_desc"	 "Dræb {s:kills} fjender med {s:weapon} i <b>Guardian: {s:location}</b>."
-		"quest_961_var_desc" 	 "Dræb {d:points} fjender med pistol i <b>{s:gamemode}: {s:location}</b>."
-		"quest_962_var_desc" 	 "Dræb {d:points} fjender uden at bruge penge i <i>én enkelt</i> <b>{s:gamemode}</b>-kamp."
-		"quest_963_var_desc"	 "Dræb {s:kills} fjender med {s:weapon} i <b>Guardian: {s:location}</b>."
-		"quest_964_var_desc" 	 "Få {d:points} pistolrundesejre i <b>{s:gamemode}: </b>."
-		"quest_965_var_desc" 	 "Dræb {s:kills} fjender med {s:weapon} i <b>Guardian: {s:location}</b>."
-		"quest_966_var_desc" 	 "Tjen ${d:points} i <b>{s:gamemode}: {s:location}</b>."
-		"quest_967_var_desc" 	 "Dræb {d:points} fjender med {s:weapon} i <b>{s:gamemode}: {s:location}</b>."
-		"quest_968_var_desc"	 "Dræb {d:points} fjender med snigskytterifler i <b>{s:gamemode}</b>."
-		"quest_969_var_desc" 	 "Få {s:kills} drab uden brug af sigte med {s:weapon} i <b>Guardian: {s:location}</b>."
-		"quest_970_var_desc" 	 "Få {d:points} rundesejre i <b>{s:gamemode}: {s:location}</b>."
-		"quest_971_var_desc"	 "Dræb {s:kills} fjender med {s:weapon} i <b>Guardian: {s:location}</b>."
-		"quest_972_var_desc" 	 "Dræb {d:points} fjender med hovedskud i <i>én enkelt</i> <b>{s:gamemode}: {s:location}</b>-kamp."
-		"quest_973_var_desc" 	 "Dræb {d:points} fjender i <b>{s:gamemode}: {s:location}</b>."
-		"quest_974_var_desc" 	 "Dræb {d:points} fjender med hovedskud i <b>{s:gamemode}: {s:location}</b>."
-		"quest_975_var_desc"     "Få {s:kills} drab med CT-våben i <b>Guardian: {s:location}</b>."
-		"quest_976_var_desc" 	 "Få {d:points} rundesejre i <b>{s:gamemode}: {s:location}</b>."
-		"quest_977_var_desc"	 "Få {d:points} rundesejre i <b>{s:gamemode}: {s:location}</b>."
-		"quest_978_var_desc" 	 "Dræb {d:points} fjender med {s:weapon} i <b>{s:gamemode}: {s:location}</b>."
-		"quest_979_var_desc"	 "Få en drabsrække på mindst fire i <b>{s:gamemode}: {s:location}</b>."		
-		"quest_980_var_desc" 	 "Kom blandt de bedste fire i <b>{s:gamemode}</b>."
-		"quest_981_var_desc"     "Dræb {s:kills} fjender med hovedskud fra {s:weapon} i <b>Guardian: {s:location}</b> <i>uden nogen rustning</i>."
-		"quest_982_var_desc" 	 "Dræb {d:points} fjender med hovedskud fra {s:weapon} i <i>én enkelt</i> <b>{s:gamemode}: {s:location}</b>-kamp."
-		"quest_983_var_desc" 	 "Dræb {d:points} fjender med hovedskud i <b>{s:gamemode}</b>."
-		"quest_984_var_desc" 	 "Bliv rundens MVP {d:points} gange i <b>{s:gamemode}</b> kampe."
-		"quest_985_var_desc" 	 "Dræb {d:points} fjender med standardpistol i <b>{s:gamemode}: {s:location}</b>."
-		"quest_986_var_desc"     "Dræb {s:kills} fjender med {s:weapon} i <b>Guardian: {s:location}</b>."
-		"quest_987_var_desc"	 "Dræb {d:points} fjender med en fjendes primære riffel i <b>{s:gamemode}: {s:location}</b>."
-		"quest_988_var_desc"     "Dræb {d:points} fjender med kniv i <b>Arms Race</b>."
-		"quest_989_var_desc" 	 "Gør {d:points} skade med kasteskyts i <b>{s:gamemode}</b>."
-		"quest_990_var_desc" 	 "Optjen {d:points} aces i <b>{s:gamemode}</b>."
-		"quest_991_var_desc" 	 "Få {d:points} drab med <b>Tec-9 eller Five-Seven</b> i <b>{s:gamemode}: {s:location}</b>."
-		"quest_992_var_desc"     "Dræb {s:kills} fjender med {s:weapon} i <b>Guardian: {s:location}</b>."
-		"quest_993_var_desc"	 "Gør {d:points} skade med kasteskyts i <b>{s:gamemode}: {s:location}</b>."
-		"quest_994_var_desc" 	 "Dræb {d:points} fjender i <b>{s:gamemode}</b>."
-		"quest_995_var_desc" 	 "Få {d:points} rundesejre i <b>{s:gamemode}: {s:location}</b>."
-		"quest_996_var_desc"     "Dræb {d:points} fjender i <b>{s:gamemode}: {s:location}</b>."
-		"quest_997_var_desc" 	 "Få {d:points} drab med Galil AR eller FAMAS i <b>{s:gamemode}: {s:location}</b>."
-		"quest_998_var_desc"     "Få {s:kills} drab med {s:weapon} i <b>Guardian: {s:location}</b>."
-		"quest_999_var_desc" 	 "Få {d:points} drab med {s:weapon} i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1000_var_desc" 	 "Ødelæg {d:points} fjendtlige droner {s:actions} i <b>{s:gamemode}</b>."
-		"quest_1001_var_desc" 	 "Tjen {d:points} MVP'er i <i>én enkelt</i> kamp i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1002_var_desc"	 "Få en drabsrække på mindst 2 i {d:points} runder i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1003_var_desc" 	 "Dræb {d:points} fjender med {s:weapon} i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1004_var_desc"    "Få {s:kills} drab med {s:weapon} i <b>Guardian: {s:location}</b>."
-		"quest_1005_var_desc" 	 "Få {d:points} rundesejre i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1006_var_desc"    "Få {d:points} drab i <b>Arms Race</b>."
-		"quest_1007_var_desc" 	 "Ødelæg {d:points} låste døre {s:actions} med {s:weapon} i <b>{s:gamemode}</b>."
-		"quest_1008_var_desc" 	 "Få {d:points} drab med AK-47 eller M4A4 i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1009_var_desc" 	 "Få {d:points} rundesejre i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1010_var_desc"	 "Dræb {d:points} fjender med {s:weapon} i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1011_var_desc"    "Vind mindst 5 runder i en enkelt halvleg af en kamp i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1012_var_desc" 	 "Træd på {d:points} hoppeminer i <b>{s:gamemode}</b>."
-		"quest_1013_var_desc" 	 "Dræb {d:points} fjende med {s:weapon} i <b>{s:gamemode}</b>."
-		"quest_1014_var_desc"    "Dræb {s:kills} fjender med {s:weapon} i <b>Guardian: {s:location}</b>."
-		"quest_1015_var_desc" 	 "Få {d:points} drab uden at bruge over $2000 i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1016_var_desc"	 "Hav mindst 3000 $ i <b>{s:gamemode}</b>."
-		"quest_1017_var_desc" 	 "Få {d:points} rundesejre i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1018_var_desc"    "Få {s:kills} drab med {s:weapon} i <b>Guardian: {s:location}</b>."
-		"quest_1019_var_desc" 	 "Dræb {d:points} fjender med {s:weapon} i <b>Arms Race</b>."
-		"quest_1020_var_desc" 	 "Dræb {d:points} fjender med {s:weapon} i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1021_var_desc" 	"Massakrer {d:points} høns i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1022_var_desc" 	"Spræng {d:points} eksplosive tønder i luften i <b>{s:gamemode}</b>."
-		"quest_1023_var_desc" 	"Få {d:points} rundesejre i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1024_var_desc" 	"Knus {d:points} glasruder i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1025_var_desc" 	"Få {d:points} rundesejre i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1027_var_desc"	 "Anvend {d:points} graffiti i fjendens startområde i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1028_var_desc"	 "Få {d:points} drab fra <i>bananen</i> eller <i>lejlighederne</i> i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1029_var_desc"	 "Kast {d:points} strategiske røggranater i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1030_var_desc"	 "Hent en prøve af Danger Zone-virusset fra Phoenix-laboratoriet."
-		"quest_1031_var_desc"	 "Ødelæg Phoenix-produktionsanlægget, og eliminer Franz Kriegeld."
-		
-		"quest_1098_var_desc"                                  "Vind runder i <b>{s:location}</b>."
-		"quest_1032_var_desc"                                  "Vind runder i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1033_var_desc"                                  "Få {s:kills} drab i <b>Guardian: {s:location}</b>."
-		"quest_1034_var_desc"                                  "Phoenix er blevet spottet! Find ud af, hvad de planlægger."
-		"quest_1035_var_desc"                                  "Dræb fjender med AK47, M4A4 eller M4A1-S i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1036_var_desc"                                  "Vind runder i <b>{s:location}</b>."
-		"quest_1037_var_desc"                                  "Dræb fjender i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1099_var_desc"                                  "Tjen MVP'er i <b>{s:location}</b>."
-		"quest_1038_var_desc"                                  "Vind runder i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1039_var_desc"                                  "Dræb fjender med alle {s:kills} pistoler i <b>Guardian: {s:location}</b>."
-		"quest_1040_var_desc"                                  "Dræb {s:weapon} fjender i <b>{s:location}</b>."
-		"quest_1041_var_desc"                                  "Dræb {s:weapon} fjender i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1042_var_desc"                                  "Vind runder i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1043_var_desc"                                  "Få {s:kills} drab med {s:weapon} i <b>Guardian: {s:location}</b>."
-		"quest_1044_var_desc"                                  "Dræb fjender på mindst 15 meters afstand i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1045_var_desc"                                  "Dræb fjender med enhver snigskytteriffel i <b>{s:location}</b>."
-		"quest_1046_var_desc"                                  "Dræb fjender med hovedskud i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1047_var_desc"                                  "Få {s:kills} drab med {s:weapon} i <b>Guardian: {s:location}</b>."
-		"quest_1048_var_desc"                                  "Gør skade med granater i <b>{s:location}</b>."
-		"quest_1049_var_desc"                                  "Tjen penge i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1050_var_desc"                                  "Vind runder i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1051_var_desc"                                  "Få {s:kills} drab i <b>Guardian: {s:location}</b>."
-		"quest_1052_var_desc"                                  "Vælg et fjendekort i <b>{s:location}</b>."
-		"quest_1053_var_desc"                                  "Detoner røggranater på bestemte steder i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1054_var_desc"                                  "Vind runder i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1055_var_desc"                                  "Dræb {s:kills} fjender med terroristvåben i <b>Guardian: {s:location}</b>."
-		"quest_1056_var_desc"                                  "Dræb fjender fra Tunnel eller Palads i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1057_var_desc"                                  "Dræb fjender i <b>{s:location}</b>."
-		"quest_1058_var_desc"                                  "Vind runder i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1059_var_desc"                                  "Dræb {s:kills} fjender med maskinpistoler i <b>Guardian: {s:location}</b>."
-		"quest_1060_var_desc"                                  "Dræb fjender med maskinpistoler i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1061_var_desc"                                  "Dræb fjender med maskinpistoler i <b>{s:location}</b>."
-		"quest_1062_var_desc"                                  "Vind runder i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1063_var_desc"                                  "Dræb {s:kills} fjender med haglgeværer i <b>Guardian: {s:location}</b>."
-		"quest_1064_var_desc"                                  "Vælg et MVP-kort i <b>{s:location}</b>."
-		"quest_1065_var_desc"                                  "Sprøjt graffiti på bestemte steder i {s:gamemode}: {s:location}."
-		"quest_1100_var_desc"                                  "Vind runder i <b>{s:location}</b>."
-		"quest_1066_var_desc"                                  "Vind runder i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1067_var_desc"                                  "Dræb {s:kills} fjender med hovedskud med AUG i <b>Guardian: {s:location}</b>."
-		"quest_1068_var_desc"                                  "Blænd en fjende med en Flashbang-granat i <b>{s:location}</b>."
-		"quest_1069_var_desc"                                  "Sprøjt graffiti på bestemte steder i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1101_var_desc"                                  "Vind runder i <b>{s:location}</b>."
-		"quest_1070_var_desc"                                  "Vind runder i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1071_var_desc"                                  "Dræb {s:kills} fjender på under 10 meters afstand i <b>Guardian: {s:location}</b>."
-		"quest_1072_var_desc"                                  "Dræb fjender på under 10 meters afstand i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1073_var_desc"                                  "Dræb fjender i <b>{s:location}</b>."		
-		"quest_1074_var_desc"                                  "Vind runder i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1075_var_desc"                                  "Få {s:kills} drab i <b>Guardian: {s:location}</b>."
-		"quest_1076_var_desc"                                  "Dræb fjender med hovedskud i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1077_var_desc"                                  "Dræb fjender med tunge våben i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1102_var_desc"                                  "Vind runder i <b>{s:location}</b>."
-		"quest_1078_var_desc"                                  "Vind runder i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1079_var_desc"                                  "Dræb {s:kills} fjender med SSG08 i <b>Guardian: {s:location}</b>."
-		"quest_1080_var_desc"                                  "Dræb kyllinger i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1081_var_desc"                                  "Dræb fjender i <b>{s:location}</b>."
-		"quest_1082_var_desc"                                  "Vind runder i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1083_var_desc"                                  "Dræb {s:kills} fjender med MAG-7 i <b>Guardian: {s:location}</b>."
-		"quest_1084_var_desc"                                  "Dræb fjender i <b>{s:location}</b>."
-		"quest_1085_var_desc"                                  "Gør skade med granater i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1085_v2_var_desc"                   			   "Gør skade med granater i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1086_var_desc"                                  "Vind runder i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1087_var_desc"                                  "Dræb {s:kills} fjender med fjendernes våben i <b>Guardian: {s:location}</b>."
-		"quest_1088_var_desc"                                  "Dræb fjender fra bestemte steder i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1089_var_desc"                                  "Dræb fjender mens du bruger kikkertsigte i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1089_v2_var_desc"                               "Dræb fjender, mens du bruger kikkertsigte i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1090_var_desc"                                  "Vind runder i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1091_var_desc"                                  "Få {s:kills} drab i <b>Guardian: {s:location}</b>."
-		"quest_1092_var_desc"                                  "Scor point med bonusvåbnet i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1092_v2_var_desc"                                  "Scor point med bonusvåbnet i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1093_var_desc"                                  "Brug penge i <b>{s:gamemode}</b>."
-		"quest_1094_var_desc"                                  "Vind runder i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1095_var_desc"                                  "Få {s:kills} drab i <b>Guardian: {s:location}</b>."
-		"quest_1095_v2_var_desc"                                  "Få {s:kills} drab med UMP-45 i <b>Guardian: {s:location}</b>."
-		"quest_1096_var_desc"                                  "Vind runder i <b>{s:location}</b>."
-		"quest_1097_var_desc"                                  "Gennemfør missionen."
-		"quest_1097_v2_var_desc"                                  "<i>...nethinden tilpasser sig hurtigt den lyse stimulus, hvilket skaber midlertidig blindhed.</i>"
-		"quest_1103_var_desc"                                  "Blænd fjenden med flashbanggranater i <b>{s:gamemode}: {s:location}</b>."
-
-// OP11 Week 1 Missions
-		"quest_1106_var_desc"                              "Overlev et luftangreb i <b>Guardian: {s:location}</b>."
-		"quest_1107_var_desc"                              "Gennemfør forskellige opgaver i <b>Danger Zone: {s:location}</b>"
-		"quest_1108_var_desc"                              "Dræb fjender fra en række forskellige radarlokationer"
-
-// OP11 Week 2 Missions
-		"quest_1111_var_desc"                              "Dræb fjender i <b>Guardian: {s:location}</b>."
-
-// OP11 Week 3 Missions
-		"quest_1115_var_desc"                              "Dræb fjender med snigskytterifler i <b>Guardian: {s:location}</b>."
-		"quest_1117_var_desc"                              "Anvend graffiti forskellige steder"
-
-// OP11 Week 4 Missions
-		"quest_1119_var_desc"                              "Dræb fjender med haglgeværer i <b>Guardian: {s:location}</b>."
-		"quest_1120_var_desc"                              "Dræb fjender fra en række forskellige radarlokationer"
-
-// OP11 Week 5 Missions
-		"quest_1123_var_desc"                              "Dræb fjender med maskinpistoler i <b>Guardian: {s:location}</b>."
-		"quest_1125_var_desc"                              "Gennemfør forskellige opgaver"
-
-// OP11 Week 6 Missions
-		"quest_1127_var_desc"                              "Dræb fjender med rifler i <b>Guardian: {s:location}</b>."
-		"quest_1128_var_desc"                              "Få en drabsrække i <b>Deathmatch: {s:location}</b>."
-
-// OP11 Week 7 Missions
-		"quest_1131_var_desc"                              "Dræb fjender i <b>Guardian: {s:location}</b>."
-		"quest_1132_var_desc"                              "Dræb fjender fra en række forskellige radarlokationer"
-
-// OP11 Week 8 Missions
-		"quest_1135_var_desc"                              "Dræb fjender med haglgeværer i <b>Guardian: {s:location}</b>."
-		"quest_1137_var_desc"                              "Klar forskellige opgaver med kasteskyts"
-
-// OP11 Week 9 Missions
-		"quest_1139_var_desc"                              "Dræb fjender med pistoler i <b>Guardian: {s:location}</b>."
-		"quest_1140_var_desc"                              "Anvend graffiti forskellige steder"
-
-// OP11 Week 10 Missions
-		"quest_1143_var_desc"                              "Dræb fjender med AUG i <b>Guardian: {s:location}</b>."
-		"quest_1144_var_desc"                              "Dræb fjender fra en række forskellige radarlokationer"
-
-// OP11 Week 11 Missions
-		"quest_1147_var_desc"                              "Dræb fjender med MP9 i <b>Guardian: {s:location}</b>."
-
-// OP11 Week 12 Missions
-		"quest_1151_var_desc"                              "Dræb fjender med maskinpistol i <b>Guardian: {s:location}</b>."
-		"quest_1152_var_desc"                              "Få drabsrækker"
-
-// OP11 Week 13 Missions
-		"quest_1155_var_desc"                              "Dræb fjender med fjenders våben i <b>Guardian: {s:location}</b>."
-		"quest_1156_var_desc"                              "Dræb fjender fra en række forskellige radarlokationer"
-		"quest_1157_var_desc"                              "Anvend graffiti forskellige steder"
-
-// OP11 Week 14 Missions
-		"quest_1159_var_desc"                              "Dræb fjender med sprængladninger i <b>Guardian: {s:location}</b>."
-
-// OP11 Week 15 Missions
-		"quest_1163_var_desc"                              "Dræb fjender med tunge våben i <b>Guardian: {s:location}</b>."
-
-// OP11 Week 16 Missions
-		"quest_1167_var_desc"                              "Dræb fjender i <b>Guardian: {s:location}</b>."
-		"quest_1169_var_desc"                              "Dræb fjender med våben fra en af de fire Operation Riptide-samlinger"
-
-
-// OP11 Week 1 Sub-Missions
-		"quest_1200_var_desc"                              "Vind {d:points} kamp"
-		"quest_1201_var_desc"                              "Vind {d:points} runder"
-		"quest_1202_var_desc"                              "Gør {d:points} skade med kasteskyts i <i>én enkelt kamp</i>"
-		"quest_1203_var_desc"                              "Gør {d:points} skade med kasteskyts"
-		"quest_1204_var_desc"                              "Ødelæg en fjendtlig drone"
-		"quest_1205_var_desc"                              "Spræng en tønde i luften"
-		"quest_1206_var_desc"                              "Ødelæg noget glas"
-		"quest_1207_var_desc"                              "Spring fra toppen af vandtårnet med hoppemine"
-		"quest_1208_var_desc"                              "Red et gidsel"
-		"quest_1209_var_desc"                              "Dræb en fjende fra T-startstedet"
-		"quest_1210_var_desc"                              "Dræb en fjende fra T-rampen"
-		"quest_1211_var_desc"                              "Dræb en fjende fra bombelokalitet A"
-		"quest_1212_var_desc"                              "Dræb en fjende fra CT-startstedet"
-		"quest_1213_var_desc"                              "Dræb en fjende fra butikken"
-		"quest_1214_var_desc"                              "Dræb en fjende fra bombelokalitet B"
-		"quest_1215_var_desc"                              "Dræb en fjende fra gangbroen"
-		"quest_1216_var_desc"                              "Dræb en fjende fra midten"
-		"quest_1217_var_desc"                              "Dræb en fjende fra trapperne"
-		"quest_1218_var_desc"                              "Dræb en fjende fra bombelokalitet A (igen)!"
-		"quest_1219_var_desc"                              "Få {d:points} multi-drabsrunder i <i>én enkelt kamp</i>"
-		"quest_1220_var_desc"                              "Dræb {d:points} fjender"
-
-// OP11 Week 2 Sub-Missions
-		"quest_1221_var_desc"                              "Vind {d:points} kamp"
-		"quest_1222_var_desc"                              "Vind {d:points} runder"
-		"quest_1223_var_desc"                              "Dræb {d:points} fjender med hovedskud i <i>én enkelt kamp</i>"
-		"quest_1224_var_desc"                              "Dræb {d:points} fjender med hovedskud"
-		"quest_1225_var_desc"                              "Gør skade med granater"
-		"quest_1226_var_desc"                              "Dræb {d:points} fjender"
-
-// OP11 Week 3 Sub-Missions		
-		"quest_1227_var_desc"                              "Vind {d:points} kamp"
-		"quest_1228_var_desc"                              "Vind {d:points} runder"
-		"quest_1229_var_desc"                              "Gør {d:points} skade i <i>én enkelt kamp</i>"
-		"quest_1230_var_desc"                              "Gør {d:points} skade"
-		"quest_1231_var_desc"                              "Anvend graffiti på CT-startsted"
-		"quest_1232_var_desc"                              "Anvend graffiti ved bombelokalitet A"
-		"quest_1233_var_desc"                              "Anvend graffiti ved graven"
-		"quest_1234_var_desc"                              "Anvend graffiti ved bombelokalitet B"
-		"quest_1235_var_desc"                              "Anvend graffiti ved dørene i midten"
-		"quest_1236_var_desc"                              "Anvend graffiti ved T-startsted"
-		"quest_1237_var_desc"                              "Anvend graffiti ved gangbroen"
-		"quest_1238_var_desc"                              "Anvend graffiti ved den øvre tunnel"
-		"quest_1239_var_desc"                              "Anvend graffiti ved de lange døre"
-		"quest_1240_var_desc"                              "Anvend graffiti ved midten"
-
-// OP11 Week 4 Sub-Missions		
-		"quest_1241_var_desc"                              "Vind {d:points} kamp"
-		"quest_1242_var_desc"                              "Vind {d:points} runder"
-		"quest_1243_var_desc"                              "Dræb en fjende udenfor"
-		"quest_1244_var_desc"                              "Dræb en fjende fra bombelokalitet A"
-		"quest_1245_var_desc"                              "Dræb en fjende fra lobbyen"
-		"quest_1246_var_desc"                              "Dræb en fjende fra rampen"
-		"quest_1247_var_desc"                              "Dræb en fjende fra bombelokalitet B"
-		"quest_1248_var_desc"                              "Dræb en fjende fra (hemmelig)"
-		"quest_1249_var_desc"                              "Dræb en fjende udenfor (igen!)"
-		"quest_1250_var_desc"                              "Dræb en fjende fra T-startstedet"
-		"quest_1251_var_desc"                              "Dræb en fjende fra toppen af siloen"
-		"quest_1252_var_desc"                              "Dræb en fjende fra CT-startstedet"
-		"quest_1253_var_desc"                              "Gør følgende {d:points} gange i <i>én enkelt kamp</i>: Dræb en fjende med et af dine første 5 skud i runden."
-		"quest_1254_var_desc"                              "Dræb {d:points} fjender"
-
-// OP11 Week 5 Sub-Missions		
-		"quest_1255_var_desc"                              "Bliv rundens MVP {d:points} gange i <i>én enkelt kamp</i>"
-		"quest_1256_var_desc"                              "Vind {d:points} runder"
-		"quest_1257_var_desc"                              "Dræb {d:points} fjender med hovedskud i <i>én enkelt kamp</i>"
-		"quest_1258_var_desc"                              "Dræb {d:points} fjender med hovedskud"
-		"quest_1259_var_desc"                              "Tjen penge, mens din tablet har mistet forbindelsen"
-		"quest_1260_var_desc"                              "Køb opgradering, som giver højere opløsning på tablet"
-		"quest_1261_var_desc"                              "Ødelæg et automatisk sentry"
-		"quest_1262_var_desc"                              "Anbring C4 ved turistpladsen"
-		"quest_1263_var_desc"                              "Skad en fjende, mens du står på en sten"
-		
-// OP11 Week 6 Sub-Missions	
-		"quest_1264_var_desc"                              "Vind {d:points} kamp"
-		"quest_1265_var_desc"                              "Vind {d:points} runder"
-		"quest_1266_var_desc"                              "Få en drabsrække på 3 drab"
-		"quest_1267_var_desc"                              "Få en drabsrække på 5 drab"
-		"quest_1268_var_desc"                              "Få en drabsrække på 7 drab"
-		"quest_1269_var_desc"                              "Dræb {d:points} fjender med en anden spillers våben i <i>én enkelt kamp</i>"
-		"quest_1270_var_desc"                              "Få {d:points} drab med en andens pistol"
-
-// OP11 Week 7 Sub-Missions			
-		"quest_1271_var_desc"                              "Vind {d:points} kamp"
-		"quest_1272_var_desc"                              "Vind {d:points} runder"
-		"quest_1273_var_desc"                              "Dræb en fjende fra midterdørene"
-		"quest_1274_var_desc"                              "Dræb en fjende fra gangbroen"
-		"quest_1275_var_desc"                              "Dræb en fjende fra toppen af midten"
-		"quest_1276_var_desc"                              "Dræb en fjende fra graven"
-		"quest_1277_var_desc"                              "Dræb en fjende fra bombelokalitet A"
-		"quest_1278_var_desc"                              "Dræb en fjende fra midterdørene (igen!)"
-		"quest_1279_var_desc"                              "Dræb en fjende fra bombelokalitet B"
-		"quest_1280_var_desc"                              "Dræb en fjende fra tunnellerne"
-		"quest_1281_var_desc"                              "Dræb en fjende fra T-rampen"
-		"quest_1282_var_desc"                              "Dræb en fjende fra T-startstedet"
-		"quest_1283_var_desc"                              "Gør {d:points} skade, mens du er i luften, i <i>én enkelt kamp</i>"
-		"quest_1284_var_desc"                              "Gør {d:points} skade, mens du er i luften"
-
-// OP11 Week 8 Sub-Missions			
-		"quest_1285_var_desc"                              "Vind {d:points} kamp"
-		"quest_1286_var_desc"                              "Vind {d:points} runder"
-		"quest_1287_var_desc"                              "Nå til knivsniveauet"
-		"quest_1288_var_desc"                              "Opgrader dit våben {d:points} gange"
-		"quest_1289_var_desc"                              "Kast en røggranat i toppen af midten"
-		"quest_1290_var_desc"                              "Kast en røggranat ved bananen"
-		"quest_1291_var_desc"                              "Kast en molotovcocktail ved bananen"
-		"quest_1292_var_desc"                              "Blænd 3 fjender i én enkelt kamp"
-		"quest_1293_var_desc"                              "Gør {d:points} skade med granater i én enkelt kamp"
-
-// OP11 Week 9 Sub-Missions			
-		"quest_1294_var_desc"                              "Dræb {d:points} fjender med hovedskud i <i>én enkelt kamp</i>"
-		"quest_1295_var_desc"                              "Dræb {d:points} fjender med hovedskud"
-		"quest_1296_var_desc"                              "Anvend graffiti ved toppen af vandtårnet"
-		"quest_1297_var_desc"                              "Anvend graffiti ved ankeret på broen"
-		"quest_1298_var_desc"                              "Anvend graffiti ved kranen"
-		"quest_1299_var_desc"                              "Anvend graffiti på taget ved radiotårnet"
-		"quest_1300_var_desc"                              "Anvend graffiti på markedet ved turistpladsen"
-		"quest_1301_var_desc"                              "Anvend graffiti på grillerne ved picnicområdet"
-		"quest_1302_var_desc"                              "Anvend graffiti på toppen af fyrtårnet"
-		"quest_1303_var_desc"                              "Anvend graffiti på broen"
-		"quest_1304_var_desc"                              "Anvend graffiti på byggepladsen"
-		"quest_1305_var_desc"                              "Dræb {d:points} fjender med Deagle i <i>én enkelt kamp</i>"
-		"quest_1306_var_desc"                              "Opgrader dit våben {d:points} gange"
-
-// OP11 Week 10 Sub-Missions			
-		"quest_1307_var_desc"                              "Vind {d:points} kamp"
-		"quest_1308_var_desc"                              "Vind {d:points} runder"
-		"quest_1309_var_desc"                              "Dræb en fjende fra legepladsen"
-		"quest_1310_var_desc"                              "Dræb en fjende fra den øvre park"
-		"quest_1311_var_desc"                              "Dræb en fjende ved bombelokalitet A"
-		"quest_1312_var_desc"                              "Dræb en fjende ved snigskyttehulen"
-		"quest_1313_var_desc"                              "Dræb en fjende ved bombelokalitet B"
-		"quest_1314_var_desc"                              "Dræb en fjende ved T-startstedet"
-		"quest_1315_var_desc"                              "Dræb en fjende ved tunnellerne"
-		"quest_1316_var_desc"                              "Dræb en fjende ved legepladsen (igen!)"
-		"quest_1317_var_desc"                              "Dræb en fjende ved springvandet"
-		"quest_1318_var_desc"                              "Dræb en fjende ved toiletterne"
-		"quest_1319_var_desc"                              "Dræb {d:points} fjender med hovedskud i <i>én enkelt kamp</i>"
-		"quest_1320_var_desc"                              "Dræb {d:points} fjender med hovedskud"
-
-// OP11 Week 11 Sub-Missions			
-		"quest_1321_var_desc"                              "Vind {d:points} kamp"
-		"quest_1322_var_desc"                              "Vind {d:points} runder"
-		"quest_1323_var_desc"                              "Brug medicinsprøjten {d:points} gange i <i>én enkelt kamp</i>"
-		"quest_1324_var_desc"                              "Brug medicinsprøjten {d:points} gange"
-		"quest_1325_var_desc"                              "Gør {d:points} granatskade i <i>én enkelt kamp</i>"
-		"quest_1326_var_desc"                              "Gør {d:points} granatskade"
-
-// OP11 Week 12 Sub-Missions			
-		"quest_1327_var_desc"                              "Vind {d:points} kamp"
-		"quest_1328_var_desc"                              "Vind {d:points} runder"
-		"quest_1329_var_desc"                              "Dræb 3 fjender i træk"
-		"quest_1330_var_desc"                              "Dræb 4 fjender i træk"
-		"quest_1331_var_desc"                              "Dræb 5 fjender i træk"
-		"quest_1332_var_desc"                              "Dræb fjender med {d:points} forskellige våben i <i>én enkelt kamp</i>"
-		"quest_1333_var_desc"                              "Dræb fjender med {d:points} forskellige våben (kan gentages i flere kampe)"
-
-// OP11 Week 13 Sub-Missions			
-		"quest_1334_var_desc"                              "Vind {d:points} kamp"
-		"quest_1335_var_desc"                              "Vind {d:points} runder"
-		"quest_1336_var_desc"                              "Dræb en fjende fra midten"
-		"quest_1337_var_desc"                              "Dræb en fjende fra bombelokalitet A"
-		"quest_1338_var_desc"                              "Dræb en fjende fra CT-startstedet"
-		"quest_1339_var_desc"                              "Dræb nogen fra huset"
-		"quest_1340_var_desc"                              "Dræb en fjende fra bombelokalitet B"
-		"quest_1341_var_desc"                              "Dræb nogen fra ruinerne"
-		"quest_1342_var_desc"                              "Dræb en fjende fra T-startstedet"
-		"quest_1343_var_desc"                              "Dræb en fjende fra hovedentreen"
-		"quest_1344_var_desc"                              "Dræb en fjende fra bombelokalitet A (igen!)"
-		"quest_1345_var_desc"                              "Dræb en fjende fra midten (igen!)"
-		"quest_1346_var_desc"                              "Sprøjt graffiti ved buen vest for Kasbah"
-		"quest_1347_var_desc"                              "Spray graffiti i vindeltrappe fra Kasbah"
-		"quest_1348_var_desc"                              "Sprøjt graffiti ved kuplen"
-		"quest_1349_var_desc"                              "Sprøjt graffiti i helikopterpladscirklen ved basen"
-		"quest_1350_var_desc"                              "Sprøjt graffiti, mens du er på en pram ved skibssamlingen"
-		"quest_1351_var_desc"                              "Sprøjt graffiti inde på Hotel Aurore i byen"
-		"quest_1352_var_desc"                              "Sprøjt graffiti på silo 3 ved lagertankene"
-		"quest_1353_var_desc"                              "Sprøjt graffiti ved fyrtårnet"
-		"quest_1354_var_desc"                              "Sprøjt graffiti ved molen ved fiskepladsen"
-
-// OP11 Week 14 Sub-Missions			
-		"quest_1355_var_desc"                              "Vind {d:points} kamp"
-		"quest_1356_var_desc"                              "Vind {d:points} runder"
-		"quest_1357_var_desc"                              "Dræb {d:points} fjender, mens du bruger kikkertsigte, i <i>én enkelt kamp</i>"
-		"quest_1358_var_desc"                              "Dræb {d:points} fjender, mens du sigter"
-		"quest_1359_var_desc"                              "Få et drab inden for de første 30 sekunder i en runde {d:points} gange"
-		"quest_1360_var_desc"                              "Dræb {d:points} fjender"
-
-// OP11 Week 15 Sub-Missions			
-		"quest_1361_var_desc"                              "Vind {d:points} kamp"
-		"quest_1362_var_desc"                              "Vind {d:points} runder"
-		"quest_1363_var_desc"                              "Dræb våbenkapløbslederen {d:points} gange i <i>én enkelt kamp</i>"
-		"quest_1364_var_desc"                              "Dræb {d:points} fjender"
-		"quest_1365_var_desc"                              "Gør {d:points} skade i <i>én enkelt kamp</i>"
-		"quest_1366_var_desc"                              "Gør {d:points} skade"
-
-// OP11 Week 16 Sub-Missions	
-		"quest_1367_var_desc"                              "Vind {d:points} kamp"
-		"quest_1368_var_desc"                              "Vind {d:points} runder"
-		"quest_1369_var_desc"                              "Dræb {d:points} fjender med en af agenterne i Operation Riptide i <i>én enkelt kamp</i>"
-		"quest_1370_var_desc"                              "Dræb {d:points} fjender"
-		"quest_1371_var_desc"                              "Dræb {d:points} fjender med et våben fra en af Operation Riptide-samlingerne"
-		"quest_1372_var_desc"                              "Dræb {d:points} fjender"
-
-
-
-		"quest_default_hud_var_desc" "{s:commandverb} {s:target} {s:actions}"
-		"quest_weapon_hud_var_desc" "{s:commandverb} {s:actions}: {s:weapon}"
-		"quest_single_hud_var_desc"	"{s:commandverb} {s:target} {s:actions},<br> før kampen slutter"
-		"quest_weapon_single_hud_var_desc" "{s:commandverb} {s:actions}: {s:weapon},<br> før kampen slutter"
-	
-		//hud exceptions:
-		"quest_931_hud_var_desc"	"Dræb fjender med: {s:weapon}"
-		"quest_932_hud_var_desc"	"Dræb fjender i luften"
-		"quest_933_hud_var_desc"	"Vind runder"
-		"quest_934_hud_var_desc"	"Dræb fjender med: {s:weapon}"
-		"quest_935_hud_var_desc"	"Dræb fjender med {s:weapon},<br>før kampen slutter"
-		"quest_936_hud_var_desc"	"Dræb fjender med: {s:weapon}"
-		"quest_937_hud_var_desc"	"Anvend graffiti"
-		"quest_937_hud_var_desc_CT"	"Anvend graffiti ved siloen eller automaten"
-		"quest_937_hud_var_desc_T"	"Sprøjt graffiti ved himlen eller garagen"
-        "quest_938_hud_var_desc"	"Dræb ledere i Arms Race"
-        "quest_939_hud_var_desc"	"Dræb fjender med: {s:weapon}"
-        "quest_940_hud_var_desc"	"Vind runder"
-        "quest_941_hud_var_desc"	"Vind pistolrunder"
-        "quest_942_hud_var_desc"	"Dræb fjender med {s:weapon},<br>før kampen slutter"
-        "quest_943_hud_var_desc"	"Dræb fjender"
-        "quest_944_hud_var_desc"	"Brug penge"
-        "quest_945_hud_var_desc"	"Dræb fjender"
-        "quest_946_hud_var_desc"	"Vind runder"
-        "quest_947_hud_var_desc"	"Vind runder"
-		"quest_948_hud_var_desc"	"Befri, eller forhindr befrielse"
-		"quest_948_hud_var_desc_CT"	"Red gidsler"
-		"quest_948_hud_var_desc_T"	"Dræb gidselbefrieren"
-        "quest_949_hud_var_desc"	"Dræb fjender med: {s:weapon}"
-        "quest_950_hud_var_desc"	"Dræb fjender med tunge våben"	
-        "quest_951_hud_var_desc"	"Dræb fjender med: {s:weapon}"	
-        "quest_952_hud_var_desc"	"Vind runder"	
-        "quest_953_hud_var_desc"	"Vind runder"	
-        "quest_954_hud_var_desc"	"Dræb fjender fra {s:target}, før kampen slutter"
-		"quest_955_hud_var_desc" 	"Brug [{s:bind_use}] til at blive venner med hønsene <br> i {d:points} sekunder"
-		"quest_956_hud_var_desc" 	"Svæv med faldskærm i flere sekunder"
-		"quest_957_hud_var_desc" 	"Dræb fjender med: {s:weapon}"
-		"quest_958_hud_var_desc" 	"Vind runder"
-		"quest_959_hud_var_desc" 	"Dræb fjender"
-		"quest_960_hud_var_desc" 	"Dræb fjender med: {s:weapon}"
-		"quest_961_hud_var_desc"	"Dræb fjender med pistoler"
-		"quest_962_hud_var_desc"	"Dræb fjender uden at bruge penge,<br> før kampen slutter"
-		"quest_963_hud_var_desc"	"Dræb fjender med: {s:weapon}"
-		"quest_964_hud_var_desc"	"Vind pistolrunder"
-		"quest_965_hud_var_desc"    "Dræb fjender"
-		"quest_966_hud_var_desc" 	"Optjen penge"
-		"quest_967_hud_var_desc"	"Dræb fjender med: {s:weapon}"
-		"quest_968_hud_var_desc"    "Dræb fjender med snigskytterifler"
-		"quest_969_hud_var_desc"	"Dræb fjender uden brug af kikkertsigte med {s:weapon}"
-		"quest_970_hud_var_desc"	"Vind runder"
-		"quest_971_hud_var_desc"	"Dræb fjender"
-		"quest_972_hud_var_desc"    "Dræb fjender med hovedskud<br> før kampen slutter"
-		"quest_973_hud_var_desc" 	"Dræb fjender"
-		"quest_974_hud_var_desc" 	"Dræb fjender med hovedskud"
-		"quest_975_hud_var_desc"    "Dræb fjender med CT-våben"
-		"quest_976_hud_var_desc" 	"Vind runder"
-		"quest_977_hud_var_desc"	"Vind runder"
-		"quest_978_hud_var_desc"	"Dræb fjender med: {s:weapon}"
-		"quest_979_hud_var_desc" 	"Få en drabsrække på 4"
-        "quest_980_hud_var_desc" 	"Kom på en fjerdeplads eller bedre"
-		"quest_981_hud_var_desc" 	"Dræb fjender med hovedskud med: {s:weapon}"		
-		"quest_982_hud_var_desc"	"Dræb fjender med hovedskud fra {s:weapon} <br> før kampen slutter"	
-		"quest_983_hud_var_desc" 	"Dræb fjender med hovedskud"
-		"quest_984_hud_var_desc"    "Tjen MVP'er"
-		"quest_985_hud_var_desc" 	"Dræb fjender med standardpistoler"
-		"quest_986_hud_var_desc" 	"Dræb fjender med: {s:weapon}"
-		"quest_987_hud_var_desc"	"Dræb fjender"
-		"quest_987_hud_var_desc_CT"	"Dræb fjender med: AK-47"
-		"quest_987_hud_var_desc_T"	"Dræb fjender med: M4A4 eller M4A1-S"
-		"quest_988_hud_var_desc" 	"Dræb fjender med kniv"
-		"quest_989_hud_var_desc"	"Gør skade med kasteskyts"
-		"quest_990_hud_var_desc" 	"Få aces"
-		"quest_991_hud_var_desc_CT" "Dræb fjender med: Five-Seven"
-		"quest_991_hud_var_desc_T" 	"Dræb fjender med: Tec-9"
-		"quest_991_hud_var_desc" 	"Dræb fjender med: Tec-9 eller Five-Seven"
-		"quest_992_hud_var_desc" 	"Dræb fjender med: Sprængladning"
-		"quest_993_hud_var_desc" 	"Gør skade med kasteskyts"
-		"quest_994_hud_var_desc" 	"Dræb fjender"
-		"quest_995_hud_var_desc" 	"Vind runder"
-		"quest_996_hud_var_desc"	"Dræb fjender"
-		"quest_997_hud_var_desc_CT"	"Dræb fjender med: FAMAS"
-		"quest_997_hud_var_desc_T"	"Dræb fjender med: Galil AR"
-		"quest_997_hud_var_desc"	"Dræb fjender med: Galil AR eller FAMAS"
-		"quest_998_hud_var_desc" 	"Dræb fjender med: {s:weapon}"
-		"quest_999_hud_var_desc"	"Dræb fjender med: {s:weapon}"
-		"quest_1000_hud_var_desc" 	"Ødelæg fjendtlige droner"
-		"quest_1001_hud_var_desc"   "Tjen MVP'er,<br> før kampen slutter"
-		"quest_1002_hud_var_desc" 	"Få multidrabsrunder"
-		"quest_1003_hud_var_desc"   "Dræb fjender med: {s:weapon}"
-		"quest_1004_hud_var_desc"   "Dræb fjender med: {s:weapon}"
-		"quest_1005_hud_var_desc" 	"Vind runder"
-		"quest_1006_hud_var_desc" 	"Dræb fjender"
-		"quest_1007_hud_var_desc" 	"Ødelæg låste døre"
-		"quest_1008_hud_var_desc_CT" 	"Dræb fjender med: M4A4 eller M4A1-S"
-		"quest_1008_hud_var_desc_T"  	"Dræb fjender med: AK-47"
-		"quest_1008_hud_var_desc" 	"Dræb fjender med: AK-47 eller M4A4"
-		"quest_1009_hud_var_desc"	"Vind runder"
-		"quest_1010_hud_var_desc"	"Dræb fjender med: {s:weapon}"
-		"quest_1011_hud_var_desc" 	"Få 5 rundesejre i én halvleg"
-		"quest_1012_hud_var_desc"	"Træd på hoppeminer"
-		"quest_1013_hud_var_desc" 	"Dræb fjender med: {s:weapon}"
-		"quest_1014_hud_var_desc"   "Dræb fjender med: {s:weapon}"
-		"quest_1015_hud_var_desc"   "Dræb fjender mens du bruger under 2000 $"
-		"quest_1016_hud_var_desc"   "Hav 3000 $"
-		"quest_1017_hud_var_desc" 	"Vind runder"
-		"quest_1018_hud_var_desc" 	"Dræb fjender"
-		"quest_1019_hud_var_desc" 	"Dræb fjender med maskinpistoler"
-		"quest_1020_hud_var_desc" 	"Dræb fjender med: {s:weapon}"
-		"quest_1021_hud_var_desc" 	"Massakrer høns"
-		"quest_1022_hud_var_desc" 	"Spræng tønder i luften"
-		"quest_1023_hud_var_desc" 	"Vind runder"
-		"quest_1024_hud_var_desc" 	"Knus glasruder"
-		"quest_1025_hud_var_desc" 	"Vind runder"
-		"quest_1027_hud_var_desc"	"Anvend graffiti<br> i fjendens startområde"
-		"quest_1028_hud_var_desc"	"Dræb fjender fra<br> Banan eller Lejligheder"
-		"quest_1029_hud_var_desc"	"Kast røggranater"
-		"quest_1029_hud_var_desc_CT"	"Kast røggranater:<br> lejligheder eller T-rampe"
-		"quest_1029_hud_var_desc_T"	"Kast røggranater:<br> snigskyttehule eller trapper"
-		"quest_1098_hud_var_desc"               "Vind runder"
-		"quest_1032_hud_var_desc"               "Vind runder"
-		"quest_1033_hud_var_desc"               "Dræb fjender"
-		"quest_1034_hud_var_desc"               "Undersøg Phoenix"
-		"quest_1035_hud_var_desc"               "Dræb fjender med: AK-47, M4A4 eller M4A1-S"
-		"quest_1036_hud_var_desc"               "Vind runder"
-		"quest_1037_hud_var_desc"               "Dræb fjender"
-		"quest_1099_hud_var_desc"               "Tjen MVP'er"
-		"quest_1038_hud_var_desc"               "Vind runder"
-		"quest_1039_hud_var_desc"               "Dræb fjender med: Forskellige pistoler"
-		"quest_1040_hud_var_desc"               "Dræb fjender med: Pistol"
-		"quest_1041_hud_var_desc"               "Dræb fjender med: Desert Eagle"
-		"quest_1042_hud_var_desc"               "Vind runder"
-		"quest_1043_hud_var_desc"               "Dræb fjender"
-		"quest_1044_hud_var_desc"               "Dræb fjender på mindst 15 meters afstand"
-		"quest_1045_hud_var_desc"               "Dræb fjender med enhver snigskytteriffel"
-		"quest_1046_hud_var_desc"               "Dræb fjender med hovedskud"
-		"quest_1047_hud_var_desc"               "Dræb fjender med: M249"
-		"quest_1048_hud_var_desc"               "Gør skade med granater"
-		"quest_1049_hud_var_desc"               "Optjen penge"
-		"quest_1050_hud_var_desc"               "Vind runder"
-		"quest_1051_hud_var_desc"               "Dræb fjender"
-		"quest_1052_hud_var_desc"               "Vælg fjendekort"
-		"quest_1053_hud_var_desc"               "Kast røggranater"
-		"quest_1053_hud_var_desc_T"             "Kast røggranater ved garagen eller mini"
-		"quest_1053_hud_var_desc_CT"            "Kast røggranater ved kontrolrummet eller hytten"
-		"quest_1054_hud_var_desc"               "Vind runder"
-		"quest_1055_hud_var_desc"               "Dræb fjender"
-		"quest_1056_hud_var_desc"               "Dræb fjender fra tunnellen eller paladset"
-		"quest_1057_hud_var_desc"               "Dræb fjender"
-		"quest_1058_hud_var_desc"               "Vind runder"
-		"quest_1059_hud_var_desc"               "Dræb fjender"
-		"quest_1060_hud_var_desc"               "Dræb fjender med: {s:weapon}"
-		"quest_1061_hud_var_desc"               "Dræb fjender med: {s:weapon}"
-		"quest_1062_hud_var_desc"               "Vind runder"
-		"quest_1063_hud_var_desc"               "Dræb fjender"
-		"quest_1064_hud_var_desc"               "Vælg MVP-kortet"
-		"quest_1065_hud_var_desc"               "Anvend graffiti"
-		"quest_1065_hud_var_desc_T"             "Anvend graffiti ved midten"
-		"quest_1065_hud_var_desc_CT"            "Sprøjt graffiti ved øvre T-side eller udenfor"
-		"quest_1100_hud_var_desc"               "Vind runder"
-		"quest_1066_hud_var_desc"               "Vind runder"
-		"quest_1067_hud_var_desc"               "Hovedskud med AUG"
-		"quest_1068_hud_var_desc"               "Blænd en fjende med en flashbang"
-		"quest_1069_hud_var_desc"               "Anvend graffiti"
-		"quest_1069_hud_var_desc_T"             "Anvend graffiti ved gangbroen eller den øvre tunnel"
-		"quest_1069_hud_var_desc_CT"            "Anvend graffiti ved den nedre tunnel eller de korte trapper"
-		"quest_1101_hud_var_desc"               "Vind runder"
-		"quest_1070_hud_var_desc"               "Vind runder"
-		"quest_1071_hud_var_desc"               "Under 10 meters afstand"
-		"quest_1072_hud_var_desc"               "Dræb fjender på under 10 meters afstand"
-		"quest_1073_hud_var_desc"               "Dræb fjender"
-		"quest_1074_hud_var_desc"               "Vind runder"
-		"quest_1075_hud_var_desc"               "Dræb fjender"
-		"quest_1076_hud_var_desc"               "Dræb fjender med hovedskud"
-		"quest_1077_hud_var_desc"               "Dræb fjender med: {s:weapon}"
-		"quest_1102_hud_var_desc"               "Vind runder"
-		"quest_1078_hud_var_desc"               "Vind runder"
-		"quest_1079_hud_var_desc"               "Dræb fjender med: {s:weapon}"
-		"quest_1080_hud_var_desc"               "Dræb kyllinger"
-		"quest_1081_hud_var_desc"               "Dræb fjender"
-		"quest_1082_hud_var_desc"               "Vind runder"
-		"quest_1083_hud_var_desc"               "Dræb fjender"
-		"quest_1084_hud_var_desc"               "Dræb fjender"
-		"quest_1085_hud_var_desc"               "Gør skade med granater"
-		"quest_1085_v2_hud_var_desc"     	    "Gør skade med granater"
-		"quest_1086_hud_var_desc"               "Vind runder"
-		"quest_1087_hud_var_desc"               "Dræb fjender"
-		"quest_1088_hud_var_desc"               "Dræb fjender fra specifikke steder"
-		"quest_1088_hud_var_desc_T"             "Dræb fjender, som befinder sig ved bombelokalitet A eller B"
-		"quest_1088_hud_var_desc_CT"            "Dræb fjender fra bombelokalitet A eller B"
-		"quest_1089_hud_var_desc"               "Dræb fjender mens du bruger kikkertsigte"
-		"quest_1089_v2_hud_var_desc"               "Dræb fjender, mens du bruger kikkertsigte"
-		"quest_1090_hud_var_desc"               "Vind runder"
-		"quest_1091_hud_var_desc"               "Dræb fjender"
-		"quest_1092_hud_var_desc"               "Scor point med bonusvåbnet"
-		"quest_1092_v2_hud_var_desc"            "Scor point med bonusvåbnet"
-		"quest_1093_hud_var_desc"               "Brug penge"
-		"quest_1094_hud_var_desc"               "Vind runder"
-		"quest_1095_hud_var_desc"               "Dræb fjender"
-		"quest_1095_v2_hud_var_desc"            "Få drab med UMP-45"
-		"quest_1096_hud_var_desc"               "Vind runder"
-		"quest_1097_hud_var_desc"               "Gennemfør missionen"
-		"quest_1097_v2_hud_var_desc"            "Dyk dybere ned i Phoenix Compound"
-		"quest_1103_hud_var_desc"               "Blænd fjender med flashbangs"
-
-
-
-
-/////////////////////////////////////////////////////////////////
-
-
-
-// win quests
-
-		"Quest_Win_a_Mode"										"Trussel neutraliseret: <b>%gamemode%</b>"
-		"Quest_Win_a_Mode_desc"								"Vind en kamp i <b>%gamemode%</b>."
-
-		"Quest_Win_a_Mapgroup"								"Slutspil: <b>%gamemode%, %mapgroup%</b>"
-		"Quest_Win_a_Mapgroup_desc"						"Opnå <b>%gamemode%</b>-%actions% i kampe i <b>%mapgroup%</b>."
-
-		"Quest_Win_a_Map"											"Slutspil: <b>%gamemode%, %map%</b>"
-		"Quest_Win_a_Map_desc"								"Opnå <b>%gamemode%</b>-%actions% i kampe på <b>%map%</b>."
-
-		"Quest_Win_Rounds_Map"								"Sammenstød: <b>%gamemode%, %mapgroup%</b>"
-		"Quest_Win_Rounds_Map_desc"						"Opnå <b>%gamemode%</b> %actions% i kampe på <b>%mapgroup%</b>."
-		"Quest_Win_Rounds_Map_Short"						"Runder vundet"
-
-// equipment quests
-
-		"Quest_Weapon_Mode"										"Udstyrsdygtighed: <b>%gamemode%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Mode_desc"							"Opnå <b>%weapon%</b>-%optional_target%%actions% i <b>%gamemode%</b>-kampe."
-		
-		"Quest_Weapon_Mode_single_desc"				"Dræb en fjende med <b>%weapon%</b> i en <b>%gamemode%</b>-kamp."
-
-// equipment + mapgroup quests
-
-		"Quest_Weapon_Mapgroup"							"Udstyrsdygtighed: <b>%mapgroup%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Mapgroup_desc"					"Opnå <b>%weapon%</b>-%optional_target%%actions% i <b>%gamemode%: %mapgroup%</b>-kampe."
-		"Quest_WeaponDamage_Mapgroup_desc"					"Gør <b>%weapon%</b> %optional_target%%actions% mod fjender i <b>%gamemode%: %mapgroup%</b>-kampe."
-
-	"Quest_Weapon_Within_3_Mapgroup"						"Graduering: <b>%mapgroup%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Within_3_Mapgroup_desc"				"Opnå <b>%weapon%</b> %optional_target%%actions%<i> inden for dine 3 første skud i runden,</i> i <b>%gamemode%: %mapgroup%</b>-kampe."
-
-	"Quest_Weapon_Map"									"Udstyrsdygtighed: <b>%map%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Map_desc"								"Opnå <b>%weapon%</b>-%optional_target%%actions% i <b>%gamemode%: %map%</b>-kampe."
-		"Quest_Weapon_Map_Team_desc"		"Som en <b>%team%</b>, opnå <b>%weapon%</b> %optional_target%%actions% i <b>%gamemode%: %map%</b>-kampe."		
-		"Quest_Weapon_Mapgroup_Team_desc"		"Som en <b>%team%</b>, opnå <b>%weapon%</b> %optional_target%%actions% i <b>%gamemode%: %mapgroup%</b>-kampe."		
-
-		"Quest_WepUpgrade_Mapgroup"					"Våbenopgradering: <b>%mapgroup%</b>"
-
-	"Quest_Unique_Weapon_Mapgroup"							"Weapons Expert: <b>%mapgroup%</b>"
-		"Quest_Unique_Weapon_Mapgroup_desc"					"I <b>%gamemode%: %mapgroup%</b>-kampe, opnå missionsfremskridt for hver %action% <i>gennemført med et unikt våben</i>."
-		"Quest_Unique_Weapon_Mapgroup_Team_desc"					"Som en <b>%team%</b> i <b>%gamemode%: %mapgroup%</b>-kampe, opnå missionsfremskridt for hver %action% <i>gennemført med et unikt våben</i>."
-
-		"Quest_Defend_Bomb_Mapgroup_desc"					"Opnå %actions% <i>efter bomben er blevet anbragt</i> i <b>%gamemode%: %mapgroup%</b>-kampe."
-
-// Hostage quests
-
-	 "Quest_Rescue_Map"								"Gidselsekstraktion: <b>%map%</b>"
-	 "Quest_Rescue_Map_Desc"						"Opnå %actions% i <b>%gamemode%: %map%</b>-kampe."
-
-// Plant bomb quests
-
-	 "Quest_PlantBomb_Mapgroup"									"Sprængstofekspert: <b>%mapgroup%</b>"
-	 "Quest_PlantBomb_Mapgroup_Desc"						"Udfør %actions% i <b>%gamemode%: %mapgroup%</b>-kampe."
-
-
-// Assassination
-
-	 "Quest_Assassination"									"%victim_team%-snigmord: <b>%target%</b>"
-	 "Quest_Assassination_desc"							"Find og dræb %victim_team%en <b>%target%</b> i <b>%gamemode%: %map%</b>-kampe."
-
-	 "quest_target_turner"									"Turner"
-	 "quest_target_jackson"									"Jackson"
-	 "quest_target_chapel"									"Chapel"	 
-	 "quest_target_sergei"									"Sergei"	 
-
-	 "quest_assassination_you_are_target"					"Du er et snigmordsmål.\nDu er %s1."
-	 "quest_assassination_target_on_server"					"En spiller prøver at dræbe snigmordsmål: %s1"
-	 "quest_assassination_target_on_server_has_quest"		"Du prøver at dræbe snigmordsmål: %s1"
-	 "quest_assassination_target_killed"					"%s1 er blevet snigmyrdet!"
-	 "quest_assassination_no_longer_target"					"Du er ikke længere %s1." 
-
-// Income
-	 "Quest_Income_Mapgroup"								"Bruttoindkomst: <b>1.000.000 $</b>"
-	 "Quest_Income_Mapgroup_desc"						"Tjen i alt 1.000.000 $ i kampe i <b>%gamemode%: %mapgroup%</b>."
-	 "Quest_Income_Mapgroup_Team_desc"			"Som en <b>%team%</b>, tjen i alt 1.000.000$ i <b>%gamemode%: %mapgroup%</b>-kampe."
-
-	 "Quest_Spend_Mapgroup_Team_desc"			"Som en <b>%team%</b>, brug i alt 1.000.000$ i <b>%gamemode%: %mapgroup%</b>-kampe."
-
-
-//	deathmatch bonus points
-
-		"Quest_DMBonusPoints_Mapgroup"				"Våbenmester: <b>%mapgroup%</b>"
-		"Quest_DMBonusPoints_Mapgroup_desc"		"Optjen point ved brug af bonusvåbnet i <b>Deathmatch: %mapgroup%</b>-kampe."
-
-		"Quest_DMBonusPoints_Map"							"Våbenmester: <b>%map%</b>"
-		"Quest_DMBonusPoints_Map_desc"				"Optjen point ved brug af bonusvåbnet i <b>Deathmatch: %map%</b>-kampe."
-
-// play quests
-
-		"Quest_Kills_Mapgroup"							"Trusselsrekognoscering: <b>%gamemode%</b>, <b>%mapgroup%</b>"
-		"Quest_Kills_Mapgroup_desc"					"Opnå %optional_target%%actions% i <b>%gamemode%: %mapgroup%</b>-kampe."
-		"Quest_Kills_Mapgroup_cond_desc"		"Opnå %optional_target%%actions%—<i>%condition%</i>—i <b>%gamemode%: %mapgroup%</b>-kampe."
-		"Quest_Kills_Mapgroup_Team_desc"		"Som en <b>%team%</b>, opnå %optional_target%%actions% i <b>%gamemode%: %mapgroup%</b>-kampe."		
-
-		"Quest_Kills_Mapgroup_Victim_Team_desc"		"Som en <b>%team%</b>, opnå %victim_team% %actions% i <b>%gamemode%: %mapgroup%</b>-kampe."
-
-		"Quest_Flashbang_Mapgroup_Team_desc"		"Som en <b>%team%</b>, opnå %optional_target%%actions% i <b>%gamemode%: %mapgroup%</b>-kampe."		
-
-
-		"Quest_Burn_Mapgroup_desc"					"Gør <i>brand</i>-%actions% mod fjender i <b>%gamemode%: %mapgroup%</b>-kampe."
-
-		"Quest_Headshots_Mapgroup"							"Hovedskud: <b>%gamemode%</b>, <b>%mapgroup%</b>"
-		"Quest_Headshots_Mapgroup_desc"					"Opnå hovedskuds%actions% i <b>%gamemode%: %mapgroup%</b>-kampe."
-
-		"Quest_Kills_Map"										"Trusselsrekognoscering: <b>%gamemode%</b>, <b>%map%</b>"
-		"Quest_Kills_Map_desc"							"Opnå %optional_target%%actions% i <b>%gamemode%: %map%</b>-kampe."
-
-		"Quest_Kills_Mode"								"<b>%gamemode%</b>-trusselsrekognoscering"
-		"Quest_Kills_Mode_desc"						"Opnå %optional_target%%actions% i <b>%gamemode%</b>-kampe."
-
-// chicken quests
-
-	"Quest_Chicken_Kills_Mapgroup"				"Forsyningsløb: <b>%gamemode%</b>, <b>%mapgroup%</b>"
-	"Quest_Chicken_Kills_Map"							"Forsyningsløb: <b>%gamemode%</b>, <b>%map%</b>"
-	"Quest_Chicken_Kills"						"Forsyningsløb"
-
-// generic string tokens
-
-	"quest_team_ct"										"Counter-terrorist"
-	"quest_team_terrorist"								"Terrorist"
-	"quest_complete_the_match"							"Færdiggør kampen for at gennemføre din mission"
-	"quest_complete_the_match_uncommitted"				"<img src='file://{images}/icons/ui/info.svg' class=''/>Gennemfør kampen for at gemme dine missionsfremskridt"
-
-// Coop quests
-
-	"Quest_Guardian_Bomb"									"Guardian-samarbejdsudfordring: <b>%map%</b>, <b>%weapon%</b>"
-	"Quest_Guardian_Bomb_Desc"								"Guardian-samarbejdsudfordring: Spil som en <b>%team%</b> med en partner og beskyt bombelokaliteten fra fjender på <b>%map%</b>.<br><br>Opnå en <b>%action%</b> ved at dræbe <b>%kills%</b> fjender med <b>%weapon%</b>. <b>%extradetails%</b>"
-	"Quest_Guardian_Desc_op08"								"Guardian-samarbejdsudfordring: Spil som en <b>%team%</b> med en partner og beskyt bombelokaliteten fra fjender i <b>%map%</b>.<br><br>Opnå <b>%action%</b> ved at få <b>%kills%</b> %killtype% med <b>%weapon%</b>. <b>%extradetails%</b>%presence%"
-
-	"Quest_Guardian_Desc_op09"								"{s:commandverb} {s:kills} {s:weapon} {s:killtype} i <b>Guardian: {s:location}</b>."
-	"Quest_CoopMission_Desc_op09"							"<b>Co-op Strike</b>: Fuldfør målet med en partner i <b>{s:location}</b>."
-	"Quest_Guardian_Desc_op09_extra_equip_1_var_desc"		"{s:commandverb} {s:kills} {s:weapon} {s:killtype} i <b>Guardian: {s:location}</b>. Spillere starter med <b>{s:extraequip0}</b>."
-	"Quest_Guardian_Desc_op09_extra_equip_2_var_desc"		"{s:commandverb} {s:kills} {s:weapon} {s:killtype} i <b>Guardian: {s:location}</b>. Spillere starter med <b>{s:extraequip0}</b> og <b>{s:extraequip1}</b>."
-
-	"Quest_Guardian_Desc_op10"								"{s:commandverb} {s:kills} {s:weapon} {s:killtype} i <b>Guardian: {s:location}</b>."
-	"Quest_CoopMission_Desc_op10"							"<b>Co-op Strike</b>: Fuldfør målet med en partner i <b>{s:location}</b>."
-	"Quest_Guardian_Desc_op10_extra_equip_1_var_desc"		"{s:commandverb} {s:kills} {s:weapon} {s:killtype} i <b>Guardian: {s:location}</b>. Spillere starter med <b>{s:extraequip0}</b>."
-	"Quest_Guardian_Desc_op10_extra_equip_2_var_desc"		"{s:commandverb} {s:kills} {s:weapon} {s:killtype} i <b>Guardian: {s:location}</b>. Spillere starter med <b>{s:extraequip0}</b> og <b>{s:extraequip1}</b>."
-
-	"Quest_Coop_Desc_Rescue"								"Co-op Strike: Spil som <b>%team%</b> med en partner og <b>red gidslet</b> fra <b>%map%</b>.<br><br><b>%extradetails%</b>"
-	"Quest_Coop_Desc_Recon"									"Co-op Strike: Spil som <b>%team%</b> med en partner og <b>indsaml efterretninger</b> fra <b>%map%</b>.<br><br><b>%extradetails%</b>"
- 	"Quest_Coop_Desc_Bomb"									"Co-op Strike: Spil som <b>%team%</b> med en partner og <b>spræng</b> <b>%map%</b> i luften.<br><br><b>%extradetails%</b>"
- 
-	"Quest_op09_coopmission"								"Hent en prøve af Danger Zone-virusset fra Phoenix-laboratoriet."
-	"Quest_op10_coopmission"								"Phoenix er blevet spottet på en gammel gård. Undersøg området, og find ud af, hvad de planlægger."
-
-	"Quest_Guardian_Hostage"								"Guardian-samarbejdsudfordring: <b>%map%</b>, <b>%weapon%</b>"
-	"Quest_Guardian_Hostage_Desc"							"Guardian-samarbejdsudfordring: Spil som en <b>%team%</b> med en partner og forhindr Counter-terroristerne i at nå til gidslet på <b>%map%</b>.<br><br>Opnå en <b>%action%</b> ved at dræbe <b>%kills%</b> fjender med <b>%weapon%</b>. <b>%extradetails%</b>"
-	 
-	"quest_guardian_kills_5"								"5"
-	"quest_guardian_kills_10"								"10"
-	"quest_guardian_kills_15"								"15"
-	"quest_guardian_kills_20"								"20"
-	"quest_guardian_kills_25"								"25"
-	"quest_guardian_kills_30"								"30"
-	"quest_guardian_kills_35"								"35"
-	"quest_guardian_kills_40"								"40"
-	"quest_guardian_kills_45"								"45"
-	"quest_guardian_kills_50"								"50"
-
-// Guardian kill types
-	"quest_killtype_normal"									"drab"
-	"quest_killtype_headshot"								"<b>hovedskudsdrab</b>"
-	"quest_killtype_blind"									"<b>blændede</b> drab"
-	"quest_killtype_unscoped"								"drab <b>uden brug af sigte</b>"
-
-	"quest_enemy_weapon"									"Fjendtligt våben"
-	"quest_weapon_CZ75a_or_enemy_weapon"					"CZ75-Auto eller enhver fjendens våben"
-	"quest_weapon_sniperrifle"								"enhver snigskytteriffel"
-	"quest_weapon_any_rifle"								"enhver riffel"
-	"quest_weapon_m4"										"enhver M4-riffel"
-	"quest_weapon_starter_ct"								"enhver CT-standardpistol"
-	"quest_weapon_ct"										"Counter-terrorist-våben"
-	"quest_weapon_t"										"Terroristvåben"
-	"quest_weapon_any_pistol"								"enhver pistol"
-	"quest_weapon_any_weapon"								"ethvert våben"
-	"quest_weapon_any_shotgun"								"ethvert haglgevær"
-	"quest_weapon_any_smg"									"enhver maskinpistol"
-	"quest_weapon_ssg08_or_mag7"							"SSG 08 eller MAG-7"
-	"quest_weapon_awp_or_p90"								"AWP eller P90"
-	"quest_weapon_unique_pistol"							"Forskellige pistoler"
-	"quest_presence_heavy"									"<br><br><b>RÅDGIVENDE</b>: Forvent <i>kraftig</i> modtand i dette område!"
-
-	"quest_guardian_empty"		" "
-	"quest_guardian_cantbuy"		"<i>Kan ikke købe under denne mission.</i>"
-	"quest_guardian_maxmoneylimit"		"<i>Maksimal pengebeholdning er begrænset på denne mission.</i>"
-	"quest_guardian_killrewardsonly" 	"<i>Kan kun tjene penge fra drabsbelønninger.</i>"
-	"quest_guardian_moneyreset" 	"<i>Penge nulstilles efter missionsfiasko.</i>"
-	"quest_guardian_heavyarmor" 	"<i>Tungangrebsdragt er tilgængelig.</i>"
-	"quest_guardian_noarmor" 	"<i>Rustning ikke tilgængelig.</i>"
-	"quest_guardian_heavyarmorresetmoney" 	"<i>Tungangrebsdragt er tilgængelig. Penge bliver nulstillet efter missionsfejl.</i>"
-	 //"quest_guardian_maxmoney_16000"		"$16000"
-	 //"quest_guardian_maxmoney_10000"		"$10000"
-	 //"quest_guardian_maxmoney_6000"			"$6000"
-	 //"quest_guardian_maxmoney_3200"			"$3200"
-	 //"quest_guardian_maxmoney_0"			"$0"
-
-	// "Get [headshot] kills: [unscoped] [AWP]"
-	// Double spaces will automatically be removed.
-	"guardian_mission_type_kills"				"Dræb fjender med: {s:weapon}"
-	"guardian_mission_type_headshots"			"Få hovedskud med: {s:weapon}"
-	"guardian_mission_type_unscoped"			"Dræb fjender uden brug af kikkertsigte med: {s:weapon}"
-	"guardian_mission_type_enemy_weapon"		"Dræb fjender med en fjendes {s:weapon}"
-	"guardian_mission_type_enemy_airborne"		"Dræb fjender, som befinder sig i luften: {s:weapon}"
-	"guardian_mission_type_flashbang"			"Dræb blændede fjender"
-	"guardian_mission_type_ct_weapons"			"Dræb fjender med Counter-terrorist-våben"
-
-//	bonus tokens
-
-	  "quest_bonus_headshot"							"hvis også et hovedskud"
-	  "quest_bonus_zoomed"								"mens du bruger sigtet"
-  	  "quest_bonus_not_zoomed"							"uden brug af sigtet"
-	  "quest_bonus_chickens"							"når målet er en kylling"
-
-	  "quest_bonus_taser"								"når med en Zeus x27"
-	  "quest_bonus_bomb_planted"						"når bomben er anbragt"
-	  "quest_bonus_melee"								"når med et nærkampsvåben"	  
-
-
-
-	  "quest_bonus_killstreak_2"						"når på en drabsrække på 2 eller flere"
-	  "quest_bonus_killstreak_3"						"når på en drabsrække på 3 eller flere"
-
-	  "quest_bonus_chickenstreak_2"						"når på en kyllinge-drabsrække på 2 eller flere"
-	  "quest_bonus_chickenstreak_3"						"når på en kyllinge-drabsrække på 3 eller flere"
-
-	  "quest_bonus_borrowed_gun"						"ved brug af en andens våben"
-	  "quest_bonus_borrowed_gun_enemy"					"ved brug af en fjendes våben"
-	  "quest_bonus_borrowed_gun_own"					"ved brug af målets eget våben"
-		"quest_bonus_victim_rescuing"					"når målet undsætter et gidsel"
-		
-	  "quest_bonus_bulletcount_1"						"når gennemført med dit første skud i runden"
-		
-	  "quest_bonus_totalrounds_2"						"hvis inden for de første 2 runder"
-	  "quest_bonus_totalrounds_3"						"hvis inden for de første 3 runder"
-	  "quest_bonus_totalrounds_4"						"hvis inden for de første 4 runder"
-	  "quest_bonus_totalrounds_5"						"hvis inden for de første 5 runder"
-
-  	  "quest_bonus_weapon_elite"						"når med Dual Berettas"
-	  "quest_bonus_weapon_ssg08"						"når med SSG08"
-	  "quest_bonus_weapon_revolver"						"når med R8-revolver"
-	  "quest_bonus_weapon_glock_hkp2000_usp_silencer"	"når med P2000, USP-S eller Glock-18"
-
-		"quest_bonus_set_dust"							"når våbnet er fra Dust-samlingen"
-		"quest_bonus_set_aztec"							"når våbnet er fra Aztec-samlingen"
-		"quest_bonus_set_vertigo"						"når våbnet er fra Vertigo-samlingen"
-		"quest_bonus_set_inferno"						"når våbnet er fra Inferno-samlingen"
-		"quest_bonus_set_militia"						"når våbnet er fra Militia-samlingen"
-		"quest_bonus_set_nuke"							"når våbnet er fra Nuke-samlingen"
-		"quest_bonus_set_office"						"når våbnet er fra Office-samlingen"
-		"quest_bonus_set_assault"						"når våbnet er fra Assault-samlingen"
-		"quest_bonus_set_dust_2"						"når våbnet er fra Dust 2-samlingen"
-		"quest_bonus_set_train"							"når våbnet er fra Train-samlingen"
-		"quest_bonus_set_mirage"						"når våbnet er fra Mirage-samlingen"
-		"quest_bonus_set_italy"							"når våbnet er fra Italy-samlingen"
-		"quest_bonus_set_lake"							"når våbnet er fra Lake-samlingen"
-		"quest_bonus_set_safehouse"						"når våbnet er fra Safehouse-samlingen"
-		"quest_bonus_set_esports"						"når våbnet er fra eSports 2013-samlingen"
-		"quest_bonus_set_weapons_i"						"når våbnet er fra Arms Deal-samlingen"
-		"quest_bonus_set_bravo_i"						"når våbnet er fra Bravo-samlingen"
-		"quest_bonus_set_bravo_ii"						"når våbnet er fra Alpha-samlingen"
-		"quest_bonus_set_weapons_ii"					"når våbnet er fra Arms Deal 2-samlingen"
-		"quest_bonus_set_esports_ii"					"når våbnet er fra eSports 2013 Winter-samlingen"
-		"quest_bonus_set_esports_2014_summer"			"når våbnet er fra eSports 2014 Summer-samlingen"
-		"quest_bonus_set_community_1"					"når våbnet er fra Winter Offensive-samlingen"
-		"quest_bonus_set_weapons_iii"					"når våbnet er fra Arms Deal 3-samlingen"
-		"quest_bonus_set_community_2"					"når våbnet er fra Phoenix-samlingen"
-		"quest_bonus_set_community_3"					"når våbnet er fra Huntsman-samlingen"
-		"quest_bonus_set_community_4"					"når våbnet er fra Breakout-samlingen"
-		"quest_bonus_set_community_5"					"når våbnet er fra Vanguard-samlingen"
-		"quest_bonus_set_community_6"					"når våbnet er fra Chroma-samlingen"
-		"quest_bonus_set_community_7"					"når våbnet er fra Chroma 2-samlingen"
-		"quest_bonus_set_community_11"					"når våbnet er fra Wildfire-samlingen"
-		"quest_bonus_set_bank"							"når våbnet er fra Bank-samlingen"
-		"quest_bonus_set_baggage"						"når våbnet er fra Baggage-samlingen"
-		"quest_bonus_set_cobblestone"					"når våbnet er fra Cobblestone-samlingen"
-		"quest_bonus_set_overpass"						"når våbnet er fra Overpass-samlingen"
-		"quest_bonus_set_cache"							"når våbnet er fra Cache-samlingen"
-		"quest_bonus_set_kimono"						"når våbnet er fra Rising Sun-samlingen"
-
-		"quest_bonus_cs_assault"						"når banen er Assault"
-		"quest_bonus_cs_italy"							"når banen er Italy"
-		"quest_bonus_cs_militia"						"når banen er Militia"
-		"quest_bonus_cs_office"							"når banen er Office"
-		"quest_bonus_de_aztec"							"når banen er Aztec"
-		"quest_bonus_de_dust"							"når banen er Dust"
-		"quest_bonus_de_dust2"							"når banen er Dust II"
-		"quest_bonus_de_mirage"							"når banen er Mirage"
-		"quest_bonus_de_overpass"						"når banen er Overpass"
-		"quest_bonus_de_cbble"							"når banen er Cobblestone"
-		"quest_bonus_de_train"							"når banen er Train"		
-		"quest_bonus_de_inferno"						"når banen er Inferno"
-		"quest_bonus_de_nuke"							"når banen er Nuke"
-		"quest_bonus_de_shorttrain"						"når banen er Shorttrain"
-		"quest_bonus_de_shortdust"						"når banen er Shortdust"
-		"quest_bonus_de_vertigo"						"når banen er Vertigo"
-		"quest_bonus_de_balkan"							"når banen er Balkan"
-		"quest_bonus_ar_baggage"						"når banen er Baggage"
-		"quest_bonus_ar_monastery"						"når banen er Monastery"
-		"quest_bonus_ar_shoots"							"når banen er Shoots"
-		"quest_bonus_de_embassy"						"når banen er Embassy"
-		"quest_bonus_de_bank"							"når banen er Bank"
-		"quest_bonus_de_lake"							"når banen er Lake"
-		"quest_bonus_de_depot"							"når banen er Depot"
-		"quest_bonus_de_safehouse"						"når banen er Safehouse"
-		"quest_bonus_de_sugarcane"						"når banen er Sugarcane"
-		"quest_bonus_de_stmarc"							"når banen er St. Marc"
-		"quest_bonus_cs_museum"							"når banen er Museum"
-		"quest_bonus_cs_thunder"						"når banen er Thunder"
-		"quest_bonus_de_favela"							"når banen er Favela"
-		"quest_bonus_cs_downtown"						"når banen er Downtown"
-		"quest_bonus_de_seaside"						"når banen er Seaside"
-		"quest_bonus_de_library"						"når banen er Library"
-		"quest_bonus_cs_motel"							"når banen er Motel"
-		"quest_bonus_de_cache"							"når banen er Cache"
-		"quest_bonus_de_ali"							"når banen er Ali"
-		"quest_bonus_de_ruins"							"når banen er Ruins"
-		"quest_bonus_de_ruby"							"når banen er Ruby"
-		"quest_bonus_de_chinatown"						"når banen er Chinatown"
-		"quest_bonus_de_gwalior"						"når banen er Gwalior"
-		"quest_bonus_cs_agency"							"når banen er Agency"
-		"quest_bonus_cs_siege"							"når banen er Siege"
-		"quest_bonus_de_castle"							"når banen er Castle"
-		"quest_bonus_de_overgrown"						"når banen er Overgrown"
-		"quest_bonus_de_blackgold"						"når banen er Black Gold"
-		"quest_bonus_cs_rush"							"når banen er Rush"
-		"quest_bonus_de_mist"							"når banen er Mist"
-		"quest_bonus_cs_insertion"						"når banen er Insertion"
-
-		"quest_bonus_cs_workout"						"når banen er Workout"
-		"quest_bonus_cs_backalley"						"når banen er Back Alley"
-		"quest_bonus_de_marquis"						"når banen er Marquis"
-		"quest_bonus_de_facade"							"når banen er Facade"
-		"quest_bonus_de_season"							"når banen er Season"
-		"quest_bonus_de_bazaar"							"når banen er Bazaar"
-		"quest_bonus_de_santorini"						"når banen er Santorini"
-
-		"quest_bonus_de_subzero"						"når banen er Subzero"
-		"quest_bonus_de_biome"							"når banen er Biome"
-
-
-
-
-// OperationalPoints
-
-		"Quest_OperationalPoints_Template"				"Udfordringsbelønning: %s1"
-
-		"Quest_OperationalPoints_1"					"★"
-		"Quest_OperationalPoints_2"					"★★"
-		"Quest_OperationalPoints_3"					"<font color=\"#ff0000\">★★★★</font>"
-
-// Hud Message
-
-	 "Quest_ProgressMadeMessage1"								" Missionspoint uddeles ved kampens slutning: +%s1."
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -9300,7 +8059,6 @@ bare glem alt om Proseccoen."
 		"StickerKit_enfu_bombsquad"                       "Bombsquad"   
 		"StickerKit_desc_enfu_bombsquad"                  " "   
 		"StickerKit_enfu_bombsquad_foil"                  "Bombsquad (folie)"   
-		"StickerKit_desc_bombsquad_foil"                  " "   
 		"StickerKit_enfu_guru"                            "The Guru"   
 		"StickerKit_desc_enfu_guru"                       " "   
 		"StickerKit_enfu_ninja"                           "Silent Ninja"   
@@ -30514,8 +29272,6 @@ bare glem alt om Proseccoen."
 		"StickerKit_desc_pinups_scherry"		" "
 
 		"StickerKit_pinups_tamara"				"Tamara"
-		"StickerKit_desc__pinups_tamara"		" "
-		
 		"StickerKit_pinups_ivette_holo"			"Ivette (holo)"
 		"StickerKit_desc_pinups_ivette_holo"	" "
 
@@ -35660,7 +34416,7 @@ bare glem alt om Proseccoen."
 // COMMUNITY_34
 
 		"PaintKit_usp_field_snake"						"Denne specialmaling viser en bevinget tang under bagsigtet og \"027\" nær udkasterporten.\n\n<i>Let feltarbejde</i>"
-		"PaintKit_usp_field_snake_Tag"					"027"
+		"PaintKit_usp_field_snake_Tag"					"27"
 
 		"PaintKit_deagle_calligraff"					"Skinnen på denne Desert Eagle er dekoreret med sølvfarvet kalligrafi.\n\n<i>Disse ting tager tid</i>"
 		"PaintKit_deagle_calligraff_Tag"				"Calligraffiti"
@@ -37282,8 +36038,8 @@ bare glem alt om Proseccoen."
 		"Workshop_created" "Dato oprettet"
 		"Workshop_size" "Størrelse"
 		"Workshop_View" "Vis i værkstedet"
-		"Workshop_Allow" "Tillad"
-		"Workshop_Deny" "Afslå"
+		"Workshop_Allow" "Download"
+		"Workshop_Deny" "Annuller"
 
 		"SFUI_Workshop_Desc_Pw"				"Dine abonnerede værkstedsbaner vises her. Du kan bruge Community Quickplay til at finde den bedste fællesskabsserver med en bestemt bane."
 		"SFUI_Workshop_Desc_Sp_Pw"			"Dine abonnerede værkstedsbaner vises her. Du kan prøve dem lokalt med bots."
@@ -37573,12 +36329,6 @@ bare glem alt om Proseccoen."
 		"SFUI_Store_Limited_Bid_Tagline"			"til at byde på tilbuddet"
 		"SFUI_Store_Available_Offers"               "Tilbud tilgængelige i:"
 		"SFUI_Store_Preview"                        "Forhåndsvis"
-
-		"SFUI_Store_Timer_Week:p"                   "%s1 uge#|#%s1 uger"
-		"SFUI_Store_Timer_Day:p"                    "%s1 dag#|#%s1 dage"
-		"SFUI_Store_Timer_Hour:p"                   "%s1 time#|#%s1 timer"
-		"SFUI_Store_Timer_Min:p"                    "%s1 min.#|#%s1 min."
-		"SFUI_Store_Timer_Sec:p"                    "%s1 sekund#|#%s1 sekunder"
 
 		"SFUI_Store_Timer_Week:f"                 	"{f:0:value, plural, one{{f:0:value} uge} other{{f:0:value} uger}}"
 		"SFUI_Store_Timer_Day:f"                    "{f:0:value, plural, one{{f:0:value} dag} other{{f:0:value} dage}}"
@@ -39866,7 +38616,7 @@ bare glem alt om Proseccoen."
 		"SFUI_PlayerDetails_Loading"				"Tjekker anbefalinger"
 		"SFUI_PlayerDetails_Loading_Failed"			"Kunne ikke indlæse anbefalinger, prøv igen senere"
 		"SFUI_PlayerDetails_Previously_Submitted"	"Tidligere indsendte anbefalinger for denne spiller"
-		"SFUI_PlayerDetails_Commendations_Left:p"		"Du kan anbefale %s1 spiller mere i dag#|#Du kan anbefale %s1 spillere mere i dag"
+		"SFUI_PlayerDetails_Commendations_Left:f"	"Du kan anbefale {num_players} {num_players, plural, one{spiller} other{spillere}} mere i dag"
 		"SFUI_PlayerDetails_NoCommendations_Left"   "Du har indsendt for mange anbefalinger, prøv venligst igen i morgen"
 		"SFUI_PlayerDetails_Updating_Previous_Commendation"   "Du er ved at ændre en tidligere indsendt anbefaling"
 		"SFUI_PlayerDetails_New_Commendation"   "Du er ved at indsende en nye anbefaling"
@@ -40238,7 +38988,7 @@ bare glem alt om Proseccoen."
 		"SFUIHUD_InfoPanel_Coop_Thumb2Ready"					"USB-stik 2 klar!"
 		"SFUIHUD_InfoPanel_Coop_Thumb2Retrieved"				"Virus-stik hentet!"	
 
-		"FullPlayerNameOrder_Default"						"%modifier% %clantag% %controller_name% (%current_controller_of_my_pawn%)"
+		"FullPlayerNameOrder_Default:f"						"{modifier} {clantag} {controller_name} ({current_controller_of_my_pawn})"
 "SFUIHUD_Spectate_Equipment"	"UDSTYRSVÆRDI"
 		"SFUIHUD_Spectate_TeamMoney"	"HOLDPENGE"
 		"SFUIHUD_Spectate_TeamEQValue"	"UDSTYRSVÆRDI FOR HOLD"
@@ -41623,8 +40373,8 @@ bare glem alt om Proseccoen."
 		"SFUI_Settings_MiniScoreboardPlayerCount_Tooltip"	"Under den aktive del af runden erstattes spillernes avatarer med holdets antal spillere på minipointtavlen."
 
 
-		"Post_Round_Damage_Report_Given:p"		" • Skade gjort → %s3: %s2 i %s1#|# • Skade gjort → %s3: %s2 i %s1"
-		"Post_Round_Damage_Report_Taken:p"		" • Skade taget ← %s3: %s2 i %s1#|# • Skade taget ← %s3: %s2 i %s1"
+		"Post_Round_Damage_Report_Given:f"		" • Skade gjort → {player_name}: {f:0:damage} med {num_hits}"
+		"Post_Round_Damage_Report_Taken:f"		" • Skade taget ← {player_name}: {f:0:damage} med {num_hits}"
 
 		"SFUI_TeamOverheadID"					"Vis holdudstyr"
 
@@ -42103,8 +40853,8 @@ bare glem alt om Proseccoen."
 
 		"SFUI_UserAlertNoteType_1"			"Servere i %s1 oplever høj belastning."
 		"SFUI_UserAlertNoteType_2"			"Servere i %s1 er offline pga. vedligeholdelse."
-		"SFUI_UserAlertNoteType_LowPlayersR:p"	"Kun %players% kompatibel spiller søger i %region%.#|#Kun %players% kompatible spillere søger i %region%."
-		"SFUI_UserAlertNoteType_LowPlayersY:p"	"Kun %players% kompatibel spiller søger i din region.#|#Kun %players% kompatible spillere søger i din region."
+		"SFUI_UserAlertNoteType_LowPlayersR:f"	"Kun {players} {players, plural, one{kompatibel spiller} other{kompatible spillere}} søger i {region}."
+		"SFUI_UserAlertNoteType_LowPlayersY:f"	"Kun {players} {players, plural, one{kompatibel spiller} other{kompatible spillere}} søger i din region."
 
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"Kunne ikke forbinde til kampen."
 		"SFUI_QMM_ERROR_NotLoggedIn"		"Ikke logget på Counter-Strike-matchmakingtjenesten."
@@ -47686,10 +46436,10 @@ bare glem alt om Proseccoen."
 		"practicesettings_infammo_button"			"Ubegrænset ammunition"
 		"practicesettings_infwarmup_tooltip"		"Når dette er <b>slået til</b>, vil kampen forblive i en permanent opvarmningstilstand, og ingen bots vil deltage."
 		"practicesettings_infwarmup_button"			"Permanent opvarmning"
-		"practicesettings_annotations_tooltip"		"Når dette er <b>slået til</b>, indlæses den valgte baneguide fra rullemenuen, og følgende indstillinger bliver påtvunget: Permanent opvarmning, Ubegrænset ammunition og Granatkamera."
-		"practicesettings_annotations_button"		"Anvend baneguide"
+		"practicesettings_annotations_tooltip"		"Når dette er <b>slået til</b>, indlæses den (eventuelt) valgte baneguide fra rullemenuen, og følgende indstillinger bliver påtvunget: Permanent opvarmning, Ubegrænset ammunition og Granatkamera."
+		"practicesettings_annotations_button"		"Slå baneguider til"
 		"practicesettings_annotations_workshop_tooltip" "Besøg værkstedet"
-		"practicesettings_annotations_dropdown_tooltip"	"Angiver, hvilken baneguide der bliver indlæst"
+		"practicesettings_annotations_dropdown_tooltip"	"Angiver, hvilken baneguide (om nogen) der bliver indlæst"
 
 		"PlayMenuReplayNewUserTrainingButton"		"Genspil træningsdag"
 
@@ -47725,6 +46475,8 @@ bare glem alt om Proseccoen."
 		"Workshop_annotation_ready"					"Indsendelse klar til upload."		
 		"UI_File_Filter_SupportedAnnotationFormat"	"Tekstfiler (*.txt)"
 		"annotations_visit_workshop"				"Besøg værkstedet ⤤"
+		"annotations_exceed_round_limit"			"Ingen baneguider tilladt efter {s:rounds}. runde i halvlegen"
+
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Game Mode Desc
@@ -48712,6 +47464,1344 @@ bare glem alt om Proseccoen."
 		"accolade_bombcarrierkills"						"Muren"
 		"accolade_bombcarrierkills_desc"				"Flest bombebærere dræbt:"
 		"accolade_bombcarrierkills_value"				"{s:accolade-value-string}"
+
+		"accolade_bombcarrierkills_2"					"Bombebenægteren"
+		"accolade_bombcarrierkills_desc_2"				"Bombebærere dræbt:"
+
+		"accolade_burndamage"							"Pyromanen"
+		"accolade_burndamage_desc"						"Mest brandskade:"
+		"accolade_burndamage_value"						"{s:accolade-value-string}"
+
+		"accolade_burndamage_2"							"Ildmageren"
+		"accolade_burndamage_desc_2"					"Brandskade:"
+
+		"accolade_cashspent"							"Storforbrugeren"
+		"accolade_cashspent_desc"						"Flest penge brugt:"
+		"accolade_cashspent_value"						"{s:accolade-value-string}$"
+
+		"accolade_cashspent_2"							"Storforbrugeren"
+		"accolade_cashspent_desc_2"						"Penge brugt:"
+
+		"accolade_uniqueweaponkills"					"Våbenmesteren"
+		"accolade_uniqueweaponkills_desc"				"Flest unikke våbendrab:"
+		"accolade_uniqueweaponkills_value"				"{s:accolade-value-string}"
+
+		"accolade_uniqueweaponkills_2"					"Våbentræneren"
+		"accolade_uniqueweaponkills_desc_2"				"Unikke våbendrab:"
+
+		"accolade_dinks"								"Dinkmesteren"
+		"accolade_dinks_desc"							"Flest dinkskud:"
+		"accolade_dinks_value"							"{s:accolade-value-string}"
+
+		"accolade_dinks_2"								"Barberen"
+		"accolade_dinks_desc_2"							"Dinkskud:"
+
+		"accolade_taserkills"							"Tordenguden"
+		"accolade_taserkills_desc"						"Flest drab med Zeus:"
+		"accolade_taserkills_value"						"{s:accolade-value-string}"
+
+		"accolade_taserkills_2"							"Spændingslederen"
+		"accolade_taserkills_desc_2"					"Drab med Zeus:"		
+
+		"accolade_knifekills"							"Kniv Knivsen"
+		"accolade_knifekills_desc"						"Flest drab med kniv:"
+		"accolade_knifekills_value"						"{s:accolade-value-string}"
+
+		"accolade_knifekills_2"							"Nærkæmperen"
+		"accolade_knifekills_desc_2"					"Knivdrab:"			
+
+		"accolade_gimme_01"								"Den moralske støtte"
+		"accolade_gimme_02"								"Deltageren"
+		"accolade_gimme_03"								"Reservisten"
+		"accolade_gimme_04"								"Nødplanen"
+		"accolade_gimme_05"								"Bagtroppen"
+		"accolade_gimme_06"								"Lænestolsgeneralen"
+		"accolade_gimme_07"								"Altmuligmand"
+		"accolade_gimme_08"								"Den ukendte soldat"
+		"accolade_gimme_09"								"Den usynlige"
+		"accolade_gimme_10"								"Den fraværende"
+		"accolade_player_score"							"Point: {d:score-value-int}"
+
+
+		"playercardstats_adr_title"						"ADR"
+		"playercardstats_adr_value"						"{d:playercardstats-adr}"
+
+		"playercardstats_kda_title"						"KDA"
+		"playercardstats_kda_value"						"{d:playercardstats-kills}-{d:playercardstats-deaths}-{d:playercardstats-assists}"
+
+		"playercardstats_k_title"						"Drab"
+		"playercardstats_k_value"						"{d:playercardstats-kills}"
+
+		"playercardstats_d_title"						"Dødsfald"
+		"playercardstats_d_value"						"{d:playercardstats-deaths}"
+
+		"playercardstats_a_title"						"Assist"
+		"playercardstats_a_value"						"{d:playercardstats-assists}"
+
+		"playercardstats_score_title"					"Point"
+		"playercardstats_score_value"					"{d:playercardstats-score}"
+
+		"playercardstats_hsp_title"						"HSP"
+		"playercardstats_hsp_value"						"{d:playercardstats-hsp}%"
+
+		"playercardstats_ef_title"						"FJENDER BLÆNDET"
+		"playercardstats_ef_value"						"{d:playercardstats-ef}"
+
+		"playercardstats_ud_title"						"KASTESKYTSSKADE"
+		"playercardstats_ud_value"						"{d:playercardstats-ud}"
+
+		"playercardstats_gglevel_title"					"Niveau"
+		"playercardstats_gglevel_value"					"{d:playercardstats-gglevel}"
+
+		"playercardstats_kk_title"						"Knivdrab"
+		"playercardstats_kk_value"						"{d:playercardstats-knifekills}"
+
+
+		"eom-vote-for-next-map"							"Stem på den næste bane"
+		
+		"eom-survival-damage-taken"						"Skade taget"
+		"eom-survival-damage-given"						"Skade gjort"
+
+
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	STATS
+		//
+		///////////////////////////////////////////////////////////
+
+		"playerstats_mode_comp_all"			"Alle 5v5"
+		"playerstats_mode_comp_capt"		"Premier Competitive"
+		"playerstats_mode_comp_active"		"Competitive (bombedemontering)"
+		"playerstats_mode_comp_other"		"Competitive (gidselundsættelse)"
+		"playerstats_mode_comp_scrim"		"Venskabskamp"
+		"playerstats_mode_2v2_all"			"Alle Wingman"
+		"playerstats_mode_2v2_active"		"Wingman (Active Duty)"
+		"playerstats_mode_2v2_other"		"Wingman (Reserves-gruppen)"
+
+		"playerstats_weapons"					"Våbenpræstation"
+		"playerstats_heatmap"					"Heatmaps"
+		"playerstats_matchlister"				"Kampe"
+		"playerstats_stats"						"Statistikker"
+
+		"playerstats_matchlister_separator"		"{s:separator_title}"
+
+		"playerstats_weapon_tooltip_counts"		"Drab: {d:kills}"
+		"playerstats_weapon_tooltip_kd"			"K/D: {s:score}"
+
+		"playerstats_map_tooltip_win_loss_tie"	"Sejre/Nederlag/Uafgjort"
+		"playerstats_map_tooltip_rndwin_rndloss"	"Runde – sejr/nederlag"
+		"playerstats_map_tooltip_round_winrate"	"Runde – sejrsprocent"
+		"playerstats_map_tooltip_match_winrate"	"Kamp – sejrsprocent"
+
+		"playerstats_complete_nodata"			" "
+		"playerstats_complete_somedata"			" "
+
+		"playerstats_forceretry"				"Forbindelsen til statistikserveren blev afbrudt.\nTryk OK for at forsøge at genoprette forbindelsen."
+		"playerstats_no_data"					"Du har ingen data i det tidsinterval eller de tilstande, som er valgt. Vælg noget andet, eller spil nogle kampe."
+		"playerstats_link"						"Administrer abonnement"
+		"playerstats_link_reactivate"			"Genaktiver abonnement"
+		"playerstats_link_get"					"Abonnér"
+
+		"playerstats_subscription_expire_warning"		"<b>Indsamler kampstatistikker</b> – abonnementet <b>udløber i dag</b>"
+		"playerstats_subscription_renew_automatically"	"<b>Indsamler kampstatistikker</b> – abonnementet fornys automatisk om {d:days} dage"
+		"playerstats_subscription_renew_unknown"		"<b>Indsamler kampstatistikker</b> – {d:days} dage tilbage i dit abonnement"
+		"playerstats_subscription_renew_manually"		"<b>Indsamler kampstatistikker</b> – {d:days} dage tilbage, og dit abonnement <b>fornys ikke automatisk</b>"
+		"playerstats_subscription_expired"				"<b>Indsamler kampstatistikker</b> – genaktiver dit abonnement for at indsamle nye kampstatistikker"
+		"playerstats_subscription_not_enrolled"			"<b>Abonnement inaktivt </b> – abonnér for at indsamle nye kampstatistikker"
+		"playerstats_subscription_buy_button"			"AKTIVER MÅNEDLIGT ABONNEMENT \n{s:price} OM MÅNEDEN"
+
+		"playerstats_past_14"					"Sidste 14 dage"
+		"playerstats_past_30"					"Sidste 30 dage"
+		"playerstats_past_90"					"Sidste 90 dage"
+		"playerstats_alltime"					"Altid"
+
+		"stat_best_map"							"Bedste bane"
+		"stat_best_map_desc"					"Vis din højeste proportion af vundne runder i forhold til tabte runder"
+
+		"stat_best_weapon"						"Bedste våben"
+
+		"stat_best_mate"						"Bedste kammerat"
+		"stat_best_mate_desc"					"Holdkammerat, som hjalp dig med at opnå det højeste forhold mellem vundne og tabte runder"
+
+		"matchstat_abandoned"					"*Du forlod denne kamp, inden den var færdig"
+
+		"playerstats_suffix_per_round"			"/r"
+		"playerstats_suffix_per_cent"			"%"
+
+		"playerstats_per_round"			"{s:value}/r"
+		"playerstats_per_cent"			"{s:value}%"
+		"playerstats_no_units"			"{s:value}"	
+
+		"playerstats_percentile"		"Din rang på {s:tt_value} er bedre end {s:tt_rank}% af alle ejere af operationspasset"
+		"playerstats_percentile_subscribers"	"Din rang på {s:tt_value} er bedre end {s:tt_rank}% af alle abonnenter"
+
+
+		"playerstats_mapwinrate"		"Bane – sejrsprocent"
+		"playerstats_mapwinrate_rounds"	"Runder"
+		"playerstats_mapwinrate_matches" "Kampe"
+
+		"stat_total_score"				"Point"
+		"stat_average_score"			"Score/runde"
+
+		"stat_total_kills"				"Drab"
+		"stat_average_kills"			"Drab/runde"
+
+		"stat_total_deaths"				"Dødsfald"
+	//	"stat_average_deaths"			"stat_average_deaths"		
+
+		"stat_total_health_removed"		"Skade"	
+		"stat_average_health_removed"	"ADR"
+
+		"stat_average_kd"				"Drab/Dødsfald"
+		"stat_average_kd_short"			"K/D"
+
+		"stat_average_hsp"				"stat_average_hsp"
+
+		"stat_total_2k"					"2K"
+		"stat_total_3k"					"3K"
+		"stat_total_4k"					"4K"
+
+		"stat_grenades"					"HE-granater"
+		"stat_total_grenade"			"Kast"
+		"stat_average_grenade"			"Succes"
+		"stat_grenades_desc"			"Procentdel af kastede HE-granater, der skadede mindst én fjende"			
+
+		"stat_flash"					"Blændinger"
+		"stat_total_flash"				"Kast"
+		"stat_average_flash"			"Succes"
+		"stat_flash_desc"				"Procentdel af kastede flashbang-granater, der blændede mindst én fjende"
+
+		"stat_entry"					"Åbningsdrab"
+		"stat_average_entrykd"			"EK/D"
+		"stat_total_entry_attempts"		"I alt"
+		"stat_entry_desc"				"Forholdet mellem første drab og første dødsfald"
+
+		"stat_total_wins"				"Sejre"
+		"stat_total_losses"				"Nederlag"
+		"stat_total_ties"				"Uafgjorte"
+
+		"stat_total_rounds_played"		"Runder"
+
+		"stat_1vx"						"1vX"
+
+		"stat_1v1"						"1v1"
+
+		"stat_average_1v1"				"Succes"				
+		"stat_total_1v1_attempts"		"Muligheder"		
+
+		"stat_1v2"						"1v2"
+
+		"stat_average_1v2"				"Succes"			
+		"stat_total_1v2_attempts"		"Muligheder"		
+
+		"num_matches"					"Kampe spillet"
+
+		"playerstat_name_0"				"Point"
+		"playerstat_name_0_long"		"Point per runde"
+		"playerstat_name_0_desc"		"Point per runde: {s:value}\nPoint i alt : {d:total}"
+
+
+		"playerstat_name_1"				"Drab"
+		"playerstat_name_1_long"		"Drab per runde"
+		"playerstat_name_1_desc"		"Gennemsnitlige drab per runde: {s:value}\nDrab i alt: {d:total}"
+
+		"playerstat_name_2"				"SKADE"
+		"playerstat_name_2_long"		"Skade per runde"
+		"playerstat_name_2_desc"		"Gennemsnitlig skade per runde {s:value}\nSkade i alt: {d:total}"	
+
+		"playerstat_name_2.1"			"Skade"
+		"playerstat_name_2.5"			"ADR"		
+
+		"playerstat_name_3"				"K/D"
+		"playerstat_name_3_long"		"Drab per dødsfald"
+		"playerstat_name_3_desc"		"Forholdet mellem drab og dødsfald: {s:value}"		
+
+		"playerstat_name_4"				"HS"
+		"playerstat_name_4_long"		"Drabsprocent for hovedskud"
+		"playerstat_name_4_desc"		"Procent af drab, som var hovedskudsdrab: {s:value}\nHovedskudsdrab i alt: {d:total}"	
+
+		"playerstat_name_4.5"			"HS%"		
+
+		"playerstat_name_5"				"2K"
+		"playerstat_name_5_long"		"Runder med 2 drab"
+		"playerstat_name_5_desc"		"Runder med 2 drab i alt: {s:value}"	
+
+		"playerstat_name_6"				"3K"
+		"playerstat_name_6_long"		"Runder med 3 drab"
+		"playerstat_name_6_desc"		"Runder med 3 drab i alt: {s:value}"		
+
+		"playerstat_name_7"				"4K"
+		"playerstat_name_7_long"		"4 drab"
+		"playerstat_name_7_desc"		"Runder med 4 drab i alt: {s:value}"
+
+		"playerstat_name_7.5"			"Multidrab"
+	
+		"playerstat_name_8"				"HE"
+		"playerstat_name_8_long"		"Effektive højeksplosiver"
+		"playerstat_name_8_desc"		"Procentdel af kastede HE-granater, der skadede mindst én fjende: {s:value}\nAntal kastede HE-granater, der skadede mindst én fjende: {d:total}"			
+
+		"playerstat_name_9"				"FB"
+		"playerstat_name_9_long"		"Effektive flashbangs"		
+		"playerstat_name_9_desc"		"Procentdel af kastede flashbang-granater, der blændede mindst én fjende: {s:value}\nAntal kastede flashbang-granater, der blændede mindst én fjende: {d:total}"
+
+		"playerstat_name_10"			"1v1"
+		"playerstat_name_10_long"		"1v1-situationer"
+		"playerstat_name_10_desc"		"Procentdel af 1v1-situationer vundet: {s:value}\nAntal 1v1-situationer vundet i alt: {d:total}"	
+
+		"playerstat_name_11"			"1v2"
+		"playerstat_name_11_long"		"1v2-situationer"
+		"playerstat_name_11_desc"		"Procentdel af 1v2-situationer vundet: {s:value}\nAntal 1v1-situationer vundet i alt: {d:total}"	
+
+		"playerstat_name_12"			"Åbningsdrab"
+		"playerstat_name_12_long"		"Åbningsdrab"
+		"playerstat_name_12_desc"		"Forholdet mellem første drab til første dødsfald: {s:value}\nAntal første drab: {d:total}"
+
+		"stats_graph_button_0"			"Point/R"
+		"stats_graph_button_1"			"Drab/R"
+		"stats_graph_button_2"			"ADR"
+		"stats_graph_button_3"			"K/D"
+		"stats_graph_button_4"			"HS%"
+
+		"ris_score"								"Rundepoint"
+		"ris_t"									"T"
+		"ris_ct"								"CT"
+		"ris_team-title"						"Dit holds vinderchance"
+		"ris_wins"								"{s:ris_team} vandt!"
+
+		"ris_win"								"sejr"
+		"ris_loss"							"nederlag"
+
+		"ris_hits"								"i {s:num_hits}"
+		
+		"prdr_health_removed"					"{d:health_removed} fra {d:num_hits}"
+		"prdr_return_health_removed"				"{d:return_health_removed} fra {d:return_num_hits}"
+
+		"season_stat_title_wins"		"SEJRE"
+        "season_stat_title_ties"		"UAFGJORT"
+        "season_stat_title_losses"		"NEDERLAG"
+        "season_stat_title_rounds"		"RUNDER"
+        "season_stat_title_kills"		"DRAB"
+        "season_stat_title_headshots"	"HOVEDSKUD"
+		"season_stat_title_hs_percent"	"HS%"
+        "season_stat_title_assists"		"ASSIST."
+        "season_stat_title_deaths"		"DØDSFALD"
+        "season_stat_title_mvps"		"MVP'ER"
+        "season_stat_title_rounds_3k"	"3K"
+        "season_stat_title_rounds_4k"	"4K"
+        "season_stat_title_rounds_5k"	"5K"
+		"season_stat_title_kpr"			"K/R"
+		"season_stat_title_kd"			"K/D"
+		"season_stat_title_best_map"	"BEDSTE BANE"
+		"season_stat_title_win_percent"	"SEJRS-%"
+		"season_stat_title_matches_played"	"KAMPE"
+		"season_stat_title_achieved_week"	"HØJESTE RANG I UGEN FRA"
+		"season_stat_value_kd"				"{s:kdratio}"
+		"season_stat_value_win_percent"		"{s:win-percent}%"
+		"season_stat_value_hs_percent"		"{s:hs-percent}%"
+		"season_section_rank"				"TOPPUNKT"
+		"season_section_season_stats"		"SÆSONSTATISTIK"
+		"season_section_rank_history"		"RANGHISTORIK"
+		"season_section_rank_activity"		"KAMPE SPILLET"
+		"season_section_rank_map_stats"		"BANESTATISTIK"
+		"season_section_rank_map_wins_graph"	"BANESEJRE I ALT"
+		"season_section_graph_x_axis_label_min"		"UGE {d:week_min}"
+		"season_section_graph_x_axis_label_max"		"UGE {d:week_max}"
+		"tooltip-no-map-stats"			"Statistik ikke tilgængelig for denne bane"
+		"tooltip-season-rank-week-idx"		"UGE {s:week-id}"
+		"tooltip-season-rank-week-name"		"{s:week-name}"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	WIN PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_winpanel_mvp_award"				"MVP"
+		"Panorama_winpanel_mvp_award_kills"			"MVP"
+		"Panorama_winpanel_mvp_award_ace"			"MVP for en ACE-runde"
+		"Panorama_winpanel_mvp_award_bombplant"		"MVP for at anbringe bomben"
+		"Panorama_winpanel_mvp_award_bombdefuse"	"MVP for at demontere bomben"
+		"Panorama_winpanel_mvp_award_rescue"		"MVP for at undsætte et gidsel"
+		"Panorama_winpanel_mvp_award_score"			"MVP for højeste pointtal"
+		"Panorama_winpanel_mvp_award_inferno"		"MVP for at give en betydelig mængde skade med ild"
+		"Panorama_winpanel_mvp_award_blast"			"MVP for at give en betydelig mængde skade med sprængstoffer"
+		"Panorama_winpanel_mvp_award_bombdefuse_clutch"	"MVP for at clutch-demontering"
+		"Panorama_winpanel_mvp_award_bombplant_clutch"	"MVP for at anbringe og forsvare bomben"
+		"Panorama_winpanel_mvp_award_gungame"		"MVP"
+		"Panorama_winpanel_mvp_winner"				"MVP"
+		"Panorama_winpanel_mvp_award_kills_three"	"MVP for flest drab (3)"
+		"Panorama_winpanel_mvp_award_kills_four"	"MVP for flest drab (4)"
+
+		"Panorama_WinPanel_rank_awarded_multi"	"Du opnåede {d:rank_increase} nye ranggrader!"
+
+		"Panorama_WinPanel_rank_name_string"	"{s:current_best_cat} <font color='#CCCCCC'>({s:current_rank_cat})</font>"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	WATCH PANEL
+		//
+		///////////////////////////////////////////////////////////
+		
+		"WatchMenu_Watch"					"Se på"
+		"WatchMenu_Tournament_Versus"		"mod"
+		"WatchMenu_Outcome_Tied"			"Uafgjort"
+		"WatchMenu_Outcome_Abandon"			"Forladt"
+		"WatchMenu_Outcome_Won"				"<img src='file://{images}/icons/ui/trophy.svg' width='15' height='15'/> Sejr"
+		"WatchMenu_Outcome_Lost"			"Nederlag"
+		"WatchMenu_Expand_Match_Menu"		"Mere"
+		"WatchMenu_Get_Share_Link"			"Kopier kampdelingskode"
+		"WatchMenu_Share_Link_Copied"		"Kopierede linket til udklipsholderen"
+		"WatchMenu_Download_Demo"			"Download demo for at se den"
+		"WatchMenu_Watch_Live"				"Se direkte"
+		"WatchMenu_Watch_Highlights"		"Se højdepunkter"
+		"WatchMenu_Watch_Lowlights"			"Se lavpunkter"
+		"WatchMenu_Watch_Highlights_Player_Selected"	"Se højdepunkter fra {s:playerNameTitle}"
+		"WatchMenu_Watch_Lowlights_Player_Selected"	"Se {s:playerNameTitle}'s lavpunkter"
+		"WatchMenu_Delete"					"Slet lokale demofiler"
+		"WatchMenu_Downloading"				"Downloader"
+		"WatchMenu_Info_Download_Failed"	"Download ikke gennemført"
+		"WatchMenu_Info_Download_Failed_Retry" "Forsøg at downloade demofiler igen?"
+		"WatchMenu_Info_Download_Failed_Info" "Downloaden gennemførtes ikke. Pointtavlen er tilgængelig, men du kan ikke se kampen."
+		"WatchMenu_Download_Disabled_Hint"	"Kampdemo er udløbet og er ikke længere tilgængelig som download."
+		"WatchMenu_Tournament_BulletPoint"	"<ul>
+
+<li>Se kampe, og brug dine holdklistermærker til at lave forudsigelser i gruppefasen og slutspillet.</li>
+
+<li>Når du foretager et korrekt valg, får du point til et Pick'Em-trofæ, der kan fremvises på din Counter-Strike-avatar og på din Steam-profil.</li>
+
+<li>Du kan lave gruppefaseforudsigelser, indtil gruppefasen starter.</li>
+
+<li>Du kan lave slutspilsforudsigelser, indtil slutspillet starter.</li>
+
+</ul>"
+		"WatchMenu_Viewer"				"seer"
+		"WatchMenu_Viewers"				"seere"
+		"WatchMenu_Viewers_dv:f"		"{spectatorCount, plural, one{{d:spectatorCount} seer} other{{d:spectatorCount} seere}}"
+		"WatchMenu_FirstHalf"			"Første halvleg"
+		"WatchMenu_SecondHalf"			"Anden halvleg"
+		"WatchMenu_Overtime"			"Overtid"
+		"MatchInfo_FirstRound"			"1. runde"
+		"MatchInfo_Halftime"			"Halvleg"
+		"MatchInfo_Overtime"			"Overtid"
+		"MatchInfo_RoundDataTitle"      "{s:playerNameTitle}'s rundepræstation"
+		"MatchInfo_Date"				"{s:day}. {s:month}"
+		
+		"MatchInfo_Date_Tournament_Month_Short_8"	"Okt."		
+		"MatchInfo_Date_Tournament_Month_Final_Short_8"	"Nov."
+		"MatchInfo_Date_Tournament_Month_Short_9"	"Mar."
+		"MatchInfo_Date_Tournament_Month_Short_9_1"	"Apr."
+		"MatchInfo_Date_Tournament_Month_Final_Short_9"	"Apr."
+		"MatchInfo_Date_Tournament_Month_Short_10"	"Jul."
+		"MatchInfo_Date_Tournament_Month_Short_10_1"	"Jul."
+		"MatchInfo_Date_Tournament_Month_Final_Short_10"	"Juli"
+		"MatchInfo_Date_Tournament_Month_Short_11"	"Jan."
+		"MatchInfo_Date_Tournament_Month_Short_11_1"	"Jan."
+		"MatchInfo_Date_Tournament_Month_Final_Short_11"	"Jan."
+		"MatchInfo_Date_Tournament_Month_Short_12"	"Jul."
+		"MatchInfo_Date_Tournament_Month_Short_12_1"	"Jul."
+		"MatchInfo_Date_Tournament_Month_Final_Short_12"	"Jul."
+		"WatchMenu_PickEm_ComingSoon"	"Fremvisning af tidligere Pick'Em- og fantasispil kommer snart."
+		"WatchMenu_ViewerCount"	"{s:numberOfViewers} seere på {s:channel}"
+		"Matchlist_Team_Selection"	"Alle hold"
+
+
+		"pickem_timer_inactive"		"Der kan ikke foretages valg til denne fase lige nu"
+		"pickem_timer"				"{s:time} tilbage til at foretage dine valg"
+		"pickem_timer_upsell"		"<b>{s:time}</b> tilbage til at foretage dine valg. Få dit pas for at spille Pick'Em og optjene souvenirpoletter."
+		"pickem_timer_locked"		"Valg er nu låst"
+		"pickem_points_earned" 		"Point optjent"
+		"pickem_correct_pick" 		"Korrekt valg"
+		"pickem_points_needed_next_level" 	"Få <b>{d:points}</b> flere {s:plural} for <b>{s:level}</b>"
+		"pickem_points_result" 		"Du vandt dette Pick'Em-trofæ: <b>{s:result-level}</b>"
+		"pickem_points_result_bronze" "Du vandt <b>Bronze</b> Pick'Em-trofæet"
+		"pickem_points_result_silver" "Du vandt <b>Sølv</b> Pick'Em-trofæet"
+		"pickem_points_result_gold" "Du vandt <b>Guld</b> Pick'Em-trofæet"
+		"pickem_point"				"point"
+		"pickem_points"				"point"
+		"pickem_level_bronze"		"bronze"
+		"pickem_level_silver"		"sølv"
+		"pickem_level_gold"			"guld"
+		"pickem_group_pick_worth"	"Hvert korrekt valg optjener <b>{d:points} {s:plural} </b>"
+		"pickem_pick_correct_points_earned"	"+ <b>{d:points}</b> {s:plural}"
+		"pickem_pick_drag_hint" 	"Træk hold hertil"
+		"pickem_pick_undefeated"	"<b>Vælg</b> et hold, der vil <b>gå videre ubesejret</b>"
+		"pickem_pick_eliminated"	"<b>Vælg</b> et hold, der bliver <b>elimineret uden at vinde</b>"
+		"pickem_get_items" 			"Køb klistermærker"
+		"pickem_get_items_tooltip" 	"Du skal bruge følgende klistermærker for at opdatere dine valg: <br><br>"
+		"pickem_place_picks" 		"Opdater valg"
+		"pickem_confirm_picks" 		"Bekræft dine valg"
+		"pickem_confirm_Warning"	"<b>Disse klistermærker vil blive brugt til dine Pick'Em-valg.</b>\n\nDe vil blive i dit inventar og kan anvendes på ethvert våben, du ejer eller har byttet efter begivenhedsfasens afslutning.\n\n<span class=\"premier-pickban__title__text-red\">\nDe vil være ubrugelige og ubyttelige indtil slutningen af begivenhedsfasen. Fjernelse af et valg på et senere tidspunkt ophæver ikke denne lås.</span>\n"
+		"pickem_confirm_ClearAll"	"<b>Ingen klistermærker vil blive brugt til dine Pick'Em-valg.</b>\n\nKlistermærker, der blev brugt tidligere, bliver i dit inventar og kan anvendes på et hvilket som helst våben, du ejer, eller byttes efter begivenhedsfasen.\n"
+		"pickem_confirm_stickes_for_lock" 	"Klistermærker til valg"
+		"pickem_confirm_not_owned" 		"<b>Disse valg kan ikke foretages.</b><span class=\"premier-pickban__title__text-red\">\nDu er nødt til at have de tilsvarende holdklistermærker for at opdatere dine Pick'Em-valg.</span>"
+		"pickem_apply_emptyslots"		"Du skal udfylde dine forudsigelser for at opdatere din Pick'Em-udfordring. Træk dine valg over på de tomme pladser, der er tilbage, og klik på knappen \"Opdater valg\" for at bekræfte."
+		"pickem_apply_timeout"			"Vi kunne ikke opdatere dine Pick'Em-valg. Prøv igen senere."
+		"pickem_apply_drag_hint"	"Træk dit valg hertil"
+		"pickem_apply_immediate" 		"Opdaterer dine valg..."
+		"pickem_save_all" 			"GEM ALLE VALG"
+		"pickem_make_picks" 		"VALG: {d:user-picks} / {d:total-picks}"
+		"pickem_drag_picks" 		"Træk hold for at foretage dine valg"
+		"pickem_reveal_all_results" "Vis slutresultat"
+		"pickem_saved" 		"Valg gemt"
+		"pickem_teams_tbd" 	"Hold ikke afgjort"
+		"pickem_challenge_section_title" "PICK'EM-UDFORDRING"
+		"pickem_items_section_title" "TURNERINGSGENSTANDE"
+		"pickem_items_tab_opening_stage" "ÅBNINGSRUNDEN"
+		"pickem_items_tab_elim_stage" "ELIMINERINGSFASEN"
+		"pickem_items_tab_stage_i" "Fase I"
+		"pickem_items_tab_stage_ii" "Fase II"
+		"pickem_items_tab_stage_iii" "Fase III"
+		"pickem_items_tab_playoff_stage" "SLUTSPIL"
+		"pickem_teams_remove_all_tooltip" 	"Ryd alle valg"
+		"pickem_teams_fill_tooltip" 	"Udfyld tomme valg vilkårligt"
+		"pickem_versus"				"MOD"
+		"pickem_submit_warning"		"{s:pass-name} ikke aktiveret"
+		"pickem_submit_warning_tooltip"		"Et aktivt {s:pass-name} er krævet for at opnå fremskridt i Pick'Em-udfordringerne. Passet skal være aktiveret inden faserne låses."
+		"pickem_submit_warning_popup_title"	"Gem valgene uden et aktivt pas"
+		"pickem_submit_warning_popup_desc"	"Et aktivt {s:pass-name} er krævet for at opnå fremskridt i Pick'Em-udfordringerne. Passet skal være aktiveret inden faserne låses."
+		"pickem_submit_warning_popup_action""Gem valgene uden et aktivt pas"
+		"pickem_submit_warning_popup_action2"	"Aktiver passet og gem valg"
+		"contextmenu_pickem_souvenir_title" 	"Vælg den kamp, du vil have en souvenirpakke fra"
+		"contextmenu_pickem_souvenir_no_result" 	"Kom tilbage, når kampen er færdig, for at indløse en souvenirpakke."
+		"mainmenu_major_hub"	"MAJORMESTERSKAB – HUB OG GENSTANDE"
+		"mainmenu_major_hub_items"	"Klistermærker ude nu"
+		"mainmenu_major_hub_no_items" "MAJORMESTERSKAB – HUB"
+
+		"pickem_swiss_group_00"									"0:0"
+		"pickem_swiss_group_10"									"1:0"
+		"pickem_swiss_group_11"									"1:1"
+		"pickem_swiss_group_12"									"1:2"
+		"pickem_swiss_group_20"									"2:0"
+		"pickem_swiss_group_21"									"2:1"
+		"pickem_swiss_group_22"									"2:2"
+		"pickem_swiss_group_01"									"0:1"
+		"pickem_swiss_group_02"									"0:2"
+
+		"pickem_swiss_group_30"									"3:0 – går videre"
+		"pickem_swiss_group_3x"									"3:1 3:2\n går videre"
+		"pickem_swiss_group_13"									"1:3 – elimineret"
+		"pickem_swiss_group_23"									"2:3 – elimineret"
+		"pickem_swiss_group_03"									"0:3 – elimineret"
+
+
+
+
+
+
+
+		// WATCH EVENTS
+
+		"eventsched_lan"												"LAN-begivenhed"
+		"eventsched_online"											"Onlinebegivenhed"
+		"eventsched_show_online"								"Vis onlinebegivenheder"
+		"eventsched_date_format"								"{s:eventsched_date_day}. {s:eventsched_date_month}"
+		"eventsched_versus"											"mod"
+		"eventsched_ongoing"										"I gang"
+		"eventsched_tbd"												"ikke fastlagt"
+		"eventsched_live"												"DIREKTE KAMP"
+		"eventsched_link"												"Flere oplysninger på HLTV.org"
+		"eventsched_event_link"									"Begivenhedsinfo på HLTV.org"
+		"eventsched_match_link"									"Kampoplysninger på HLTV.org"
+		"eventsched_team_link"									"Holdoplysninger på HLTV.org"	
+		"eventsched_no_streams"									"Ingen streams tilgængelige"
+		"eventsched_watch_on_gotv"								"Se på CSTV"
+		"eventsched_favorite_tt"								"{s:favorite_tooltip}"
+		"eventsched_favorite_tooltip_prime"			"Hvis du tilføjer en begivenhed til foretrukne,\nvises begivenhedens direkte kampe i hovedmenuen."
+		"eventsched_favorite_tooltip_not_prime" "Du skal have Prime-status for at markere en begivenhed som foretrukken."
+		"eventsched_match_tooltip"							"{s:watchnotice_teamname_1} mod {s:watchnotice_teamname_2}"
+		"eventsched_stream_watch"								"{s:stream_site}"
+		"eventsched_hltv"												"Begivenhedsoplysninger leveret af HLTV.org"
+		"eventsched_country"										"{s:eventsched_country}"
+		"eventsched_no_live_matches"						"Der er ingen direkte kampe lige nu."
+		"eventsched_featured"										"Dette er fællesskabets yndlingsbegivenhed i {s:eventsched_fave_month}."
+		"eventsched_official"										"Dette er en major-begivenhed i Counter-Strike."
+
+		"WatchNotice_Reason_Official"						"Denne begivenhed er fremhævet, fordi den er relateret til en Counter-Strike-major."
+		"WatchNotice_Reason_Personal"						"Denne begivenhed vises, fordi det er en af dine foretrukne."
+		"WatchNotice_Reason_Community"					"Denne begivenhed er fremhævet, fordi det er fællesskabets foretrukne i {s:watchnotice_fave_month}."
+		"WatchNotice_Watch"											"Se på"
+
+	
+		// Used with formatText.AbbreviateNumber()
+		///////////////////////////////////////////
+		"NumberAbbreviation_E3"			"{s:abbreviated_number} tus."
+		
+		// Note to translators: Add as needed. Code will use only available strings. example:
+		// "NumberAbbreviation_E4"		"{s:abbreviated_number}万"	
+
+		"NumberAbbreviation_E6"			"{s:abbreviated_number} mio."
+		"NumberAbbreviation_E9"			"{s:abbreviated_number} mia."
+		"NumberAbbreviation_E12"		"{s:abbreviated_number} bio."
+
+		// Used with formatText.SplitAbbreviateNumber()
+		///////////////////////////////////////////
+		"NumberAbbreviation_suffix_E3"			"tus."
+		
+		// Note to translators: Add as needed. Code will use only available strings. example:
+		// "NumberAbbreviation_suffix_E4"		"万"	
+
+		"NumberAbbreviation_suffix_E6"			"mio."
+		"NumberAbbreviation_suffix_E9"			"mia."
+		"NumberAbbreviation_suffix_E12"			"bio."
+
+
+		"digitpanel_digits"			 " 0123456789,.-+?"
+		"digitpanel_digits_premier" " 1234567890,?"
+
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	OVERWATCH
+		//
+		///////////////////////////////////////////////////////////
+		
+		"Panorama_Overwatch_Downloading"		"Downloader sagsfiler..."
+		"Panorama_Overwatch_Review"				"Det tager et par minutter at bedømme en sag."
+		"Panorama_Overwatch_Welcome"			"Counter-Strike Overwatch"
+		"Panorama_Overwatch_Tooltip_p1"			"Som en del af dit arbejde for Counter-Strike kommer du til at downloade og gennemgå gengivelser af Counter-Strike 2-kampe på officielle Valve-servere for at se efter mistænkelig adfærd. Når en gengivelse er færdig, bliver du bedt om at vælge en afgørelse om spillerens adfærd."
+		"Panorama_Overwatch_Tooltip_sh1"		"Trin 1"
+		"Panorama_Overwatch_Tooltip_p2"			"Klik på DOWNLOAD BEVIS nederst til højre for at downloade en Overwatch-sag."
+		"Panorama_Overwatch_Tooltip_sh2"		"Trin 2"
+		"Panorama_Overwatch_Tooltip_p3"			"Klik på GENNEMGÅ BEVIS for at se en gengivelse fra spillerens perspektiv, som serveren har optaget."
+		"Panorama_Overwatch_Tooltip_sh3"		"Trin 3"
+		"Panorama_Overwatch_Tooltip_p4"			"Når sagen er færdig, skal du vælge en afgørelse for hvert spørgsmål og klikke på INDSEND AFGØRELSE."
+		"Panorama_Overwatch_Major_Disruption"	"Større overtrædelse"
+		"Panorama_Overwatch_Minor_Disruption"	"Mindre overtrædelse"
+		"Panorama_Overwatch_Res_Griefing"		"Griefing"
+		"Panorama_Overwatch_Res_AimHacking"		"Sigteassistance"
+		"Panorama_Overwatch_Res_WallHacking"	"Synsassistance"
+		"Panorama_Overwatch_Res_SpeedHacking"	"Anden ekstern assistance"
+		
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	ROSETTA PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_CSGO_Spray_EnableMouse"			"<b>[{g:csgo_key:spray_mouse_enable}]</b> Slå markør til"
+		"Panorama_CSGO_Rosetta_Item_Name"			"<font color=\"{s:item_color}\">{s:item_name}</font>"
+		"Panorama_CSGO_Rosetta_Item_Count"			"Ladninger tilbage: {d:item_count}"
+		"Panorama_Attrib_SpraysHint"					"{s:bind_attack} For at anvende graffiti"
+		"Panorama_Attrib_SpraysHint_Auto"			"Slip <b>{s:bind_spray_menu}</b> for at anvende graffiti"
+
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	RETICLE PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_HUD_weaponid_swap"			"<font color=\"#6a6156\">[{s:bind_use}] Skift til</font> <font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+		"Panorama_HUD_weaponid_pickup"			"<font color=\"#6a6156\">[{s:bind_use}] Saml op</font> <font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+		"Panorama_HUD_weaponid_lookat"			"<font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+		"Panorama_HUD_weaponid_holdtopickup"	"<font color=\"#6a6156\">Hold [{s:bind_use}] for at opsamle</font> <font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+
+		"Panorama_HUD_playerid_sameteam"			"<font color='#6E7D5C'>Ven: {g:player_name:html:player_slot} Helbred: {d:player_health}%</font>"
+		"Panorama_HUD_playerid_diffteam"			"<font color='#CC0000'>Fjende: {g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_playerid_specteam"			"<font color='#6E7D5C'>{g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_playerid_noteam"			"<font color='#FFCC00'>{g:player_name:html:player_slot} helbred:{d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_shadow"		"{g:player_name:player_slot}"
+
+		"Panorama_HUD_playerid_survival_enemy"				"<font color='#CC0000'>Fjende</font>"
+		"Panorama_HUD_playerid_survival_hunter_target"		"<font color='#e58816'>Højværdimål</font>"
+
+		"Panorama_HUD_botid_request_bomb"		"<font color='#e5da25'>[{s:bind_use}] Tag bombe</font>"
+
+		"Panorama_HUD_hostageid_nh"				"<font color='#e5da25'>Gidsel</font>"
+		"Panorama_HUD_hostagename_nh"			"<font color='#e5da25'>{g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_hostageid_nh_use_lead"		"<font color='#e5da25'>[{s:bind_use}] Saml gidsel op</font>"
+		"Panorama_HUD_hostageid_nh_following"	"<font color='#e5da25'>Gidsel (følger {g:player_name:html:player_slot})</font>"
+
+		"Panorama_HUD_hostageid"					"<font color='#e5da25'>Gidsel</font><font color='#dcdac0'> {d:player_health}%</font>"
+		"Panorama_HUD_hostageid_use_lead"		"<font color='#e5da25'>[{s:bind_use}] Saml gidsel op</font><font color='#dcdac0'> {d:player_health}%</font>"
+		"Panorama_HUD_hostageid_following"		"<font color='#e5da25'>Gidsel (følger {s:player_name})</font><font color='#dcdac0'> {d:player_health}%</font>"
+
+
+		"Panorama_HUD_playerid_overhead_health"			"{d:player_health}%"
+		"Panorama_HUD_playerid_overhead_money"			"{d:r:player_money}$"
+
+		"Panorama_HUD_playerid_overhead_survival"					"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#00c3e1'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_lowhealth"			"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#d82429'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_money"				"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#7ebc50'> ${d:r:player_money}</font>"
+		"Panorama_HUD_playerid_overhead_survival_grey"				"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#dddddd'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_lowhealth_grey"	"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#d82429'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_money_grey"		"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#7ebc50'> ${d:r:player_money}</font>"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	DEATH PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_SurvivalEndOfMatch_ShowStats"			"[{s:bind_jump}] Vis kampstatistikker"
+		"Panorama_Death_Cancel_Start_Replay"			"[{s:bind_jump}] Spring over"
+		"Panorama_Death_Cancel_Replay" 				"[{s:bind_jump}] Annuller gengivelse"
+		"Panorama_Death_Snapshot"						"[{s:bind_jpeg}] Gem dette øjeblik"
+		"Panorama_HUD_Spectate_Navigation_Replay_Death"	"<font color='#ddbb22'><b>[{s:bind_reload}] Mordergengivelse</b></font>"
+
+		"Panorama_DeathPanel_Killer1_YourWeapon"			"dræbte dig med din egen {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_KillerWeapon"			"dræbte dig med sin {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_OthersWeapon"			"dræbte dig med <font color='#adadad'>{s:other_player_name}'s</font> {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_Weapon"				"dræbte dig med {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_Weapon_Plural" 		"dræbte dig med {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_Weapon_CustomString" 	"{s:weapon_name}"
+
+		"Panorama_DeathPanel_DamageTaken:f"					"{hits_taken, plural, one{<font color='#A0A0A0'>Skade taget:  </font><font color='#FFFFFF'><b>{d:damage_taken}</b></font> <font color='#A0A0A0'> af</font> <font color='#FFFFFF'><b>{d:hits_taken} træffer</b></font>} other{<font color='#A0A0A0'>Skade taget:  </font><font color='#FFFFFF'><b>{d:damage_taken}</b></font> <font color='#A0A0A0'> af</font> <font color='#FFFFFF'><b>{d:hits_taken} træffere</b></font>}}"
+		"Panorama_DeathPanel_DamageGiven:f"					"{hits_given, plural, one{<font color='#A0A0A0'>Skade gjort:  </font><font color='#FFFFFF'><b>{d:damage_given}</b></font> <font color='#A0A0A0'> med</font> <font color='#FFFFFF'><b>{d:hits_given} træffer</b></font>} other{<font color='#A0A0A0'>Skade gjort:  </font><font color='#FFFFFF'><b>{d:damage_given}</b></font> <font color='#A0A0A0'> med</font> <font color='#FFFFFF'><b>{d:hits_given} træffere</b></font>}}"
+
+		/////////////////////////////////////////////////////////////////
+		//
+		//      CHATWHEEL OPTIONS
+		//
+		////////////////////////////////////////////////////////////
+
+		"Chatwheel_segment_top"	"Øverst"
+		"Chatwheel_segment_topright"	"Øverst til højre"
+		"Chatwheel_segment_right"	"Højre"
+		"Chatwheel_segment_bottomright"	"Nederst til højre"
+		"Chatwheel_segment_bottom"	"Nederst"
+		"Chatwheel_segment_bottomleft"	"Nederst til venstre"
+		"Chatwheel_segment_left"	"Venstre"
+		"Chatwheel_segment_topleft"	"Øverst til venstre"
+
+		"Chatwheel_ping_on_cooldown"  "Du kan ikke pinge. Dine pings er på nedkøling."
+
+		"Chatwheel_plant"	"Anbring bomben"
+		"Chatwheel_sitea"	"Ping bombelokalitet A"
+		"Chatwheel_siteb"	"Ping bombelokalitet B"
+
+		"Chatwheel_section_move"	"Bevægelse"
+		"Chatwheel_sticktogether"	"Bliv sammen"
+		"Chatwheel_followme"	"Følg mig"
+		"Chatwheel_followingyou"	"Følger dig"
+		"Chatwheel_spreadout"	"Del jer"
+		"Chatwheel_fallback"	"Fald tilbage"
+		"Chatwheel_gogogo"	"Go go go!"
+		"Chatwheel_onmyway"	"Er på vej"
+		"Chatwheel_gethostage"	"Tjek gidslet"
+		"Chatwheel_quiet"	"Jeg har brug for stilhed"
+
+		"Chatwheel_section_prepare"	"Forberedelse"
+		"Chatwheel_requestecoround"	"Vi bør spare"
+		"Chatwheel_requestspend"	"Vi bør købe"
+		"Chatwheel_requestleader"	"Hvem fører an?"
+		"Chatwheel_requestweapon"	"Anmod om våben"
+		"Chatwheel_requestplan"		"Hvad er planen?"
+		"Chatwheel_aplan"	"Ping lokalitet A"
+		"Chatwheel_bplan"	"Ping lokalitet B"
+		"Chatwheel_midplan"	"Ping midten"
+
+		"Chatwheel_section_grenades"	"Granater"
+		"Chatwheel_decoy"	"Brug for lokkegranat"
+		"Chatwheel_smoke"	"Brug for røggranat"
+		"Chatwheel_grenade"	"Brug for HE-granat"
+		"Chatwheel_fire"	"Brug for molotov"
+		"Chatwheel_flashbang"	"Brug for flashbang"
+		
+		"Chatwheel_section_defend"	"Forsvar"
+		"Chatwheel_coverme"	"Dæk mig"
+		"Chatwheel_coveringyou"	"Dækker dig"
+		"Chatwheel_help"	"Hjælp"
+		"Chatwheel_needbackup"	"Brug for assistance"
+		"Chatwheel_holdposition"	"Hold denne position"
+        "Chatwheel_rotatetome"	"Rotér til mig"
+
+		"Chatwheel_section_bomb"	"Bombestatus"
+		"Chatwheel_guardingbomb"	"Forsvarer bomben"
+		"Chatwheel_bombsiteclear"	"Bombelokalitet sikret"
+		"Chatwheel_droppedbomb"	"Bombe smidt"
+		"Chatwheel_bombpickedup"	"Bombe samlet op"
+		"Chatwheel_ifixbomb"	"Jeg ordner bomben"
+		"Chatwheel_youfixbomb"	"Du ordner bomben"
+		
+		"Chatwheel_bombat"	"Ping bomben" 
+
+		"Chatwheel_section_enemystatus"	"Fjendens status"
+		"Chatwheel_heardnoise"	"Hørte støj" 
+		"Chatwheel_enemyspotted"	"Fjende spottet"
+		"Chatwheel_sectorclear"	"Område ryddet"
+		"Chatwheel_sniperspotted"	"Snigskytte spottet"
+		"Chatwheel_bombcarrierspotted"	"Bombebærer spottet"
+		"Chatwheel_threeleft"	"Tre tilbage"
+		"Chatwheel_twoleft"	"To tilbage"
+		"Chatwheel_oneleft"	"Én tilbage"
+		"Chatwheel_oneenemyhere"  "Én fjende her"
+		"Chatwheel_multipleenemieshere"  "Flere fjender her"
+		"Chatwheel_ihavethebomb"  "Bombe samlet op"
+
+		"Chatwheel_section_enemykilled"	"Fjende dræbt"
+		"Chatwheel_gotheadshot"	"Jeg fik et hovedskud"
+		"Chatwheel_ikilledsniper"	"Jeg har dræbt en snigskytte"
+		"Chatwheel_wekilledsniper"	"Vi har dræbt en snigskytte"
+		"Chatwheel_sawheadshot"	"Så dit hovedskud"
+
+		"Chatwheel_section_combatstatus"	"Kampstatus"
+		"Chatwheel_attacking"	"Angriber"
+		"Chatwheel_inposition"	"I position"
+		"Chatwheel_covering"	"Giver dækning"
+		"Chatwheel_pinned"	"Jeg er omringet"
+		"Chatwheel_incombat"	"I kamp"
+		"Chatwheel_friendlyfire"	"Egenbeskydning"
+		"Chatwheel_lastunitalive"	"Sidste enhed i live"
+
+		"Chatwheel_section_responses"	"Svar"
+		"Chatwheel_wewon"	"Vi vandt"
+		"Chatwheel_welost"	"Vi tabte"
+		"Chatwheel_wearewinning"	"Vi vinder"
+		"Chatwheel_lostround"	"Vi tabte denne runde"
+		"Chatwheel_thanks"	"Tak!"
+		"Chatwheel_sorry"	"Undskyld"
+		"Chatwheel_compliment"	"Fedt!"
+		"Chatwheel_affirmative"	"Ja"
+		"Chatwheel_negative"	"Nej"
+		"Chatwheel_peptalk"	"Opmuntring"
+		"Chatwheel_cheer"	"Jubl"
+
+		"Chatwheel_plantingata"	"Jeg anbringer bomben ved A"
+		"Chatwheel_plantingatb"	"Jeg anbringer bomben ved B"
+		"Chatwheel_plantedata"	"Jeg anbragte bomben ved A"
+		"Chatwheel_plantedatb"	"Jeg anbragte bomben ved B"
+		"Chatwheel_planted"	"Vi anbragte bomben"
+
+		"Chatwheel_seehostagestaken"	"Gidslerne bliver reddet"
+		"Chatwheel_requestgethostages"	"Tag gidslerne"
+
+		"Chatwheel_guardinga"	"Jeg beskytter A"
+		"Chatwheel_guardingb"	"Jeg beskytter B"
+		
+
+		
+		"Chatwheel_section_command"	"Kommandoer"
+		"Chatwheel_section_report"	"Rapportér"
+
+		"Chatwheel_description" "Chathjulet giver hurtig adgang til en selvvalg liste over brugbare radiokommandoer."
+
+		////
+		//
+		// Volatile Laptop
+		//
+		////
+
+		// ---------------------------------------------------------------------------------------------
+		"laptop_window_collection_title"			"XP FRA SAMLINGSKATALOG"
+		"laptop_window_expiration_title"			"UDLØBER"
+		"laptop_window_seal_title"					"STATUS"
+		"laptop_window_messages_title"				"CHAT – VÅBENHANDLER"
+		"laptop_window_currentoffer_title"			"NUVÆRENDE TILBUD"
+		"laptop_app_title"							"<span class=\"laptop-app-title-prefix\">UP-</span>Link"
+		"laptop_app_version"						"v 1.1.0.2000"
+
+		"dealer_offer_attachment_title"							"{s:item-name}"
+		"dealer_offer_attachment_wear"							"{s:item-rarity}"
+		"dealer_offer_attachment_remaining_title"				"TILBUD #{d:offer-total}"
+		"dealer_offer_attachment_remaining"						"Tilbud #{d:offer-total}"
+		"dealer_offer_received_count"							"<b>{s:offer-count}</b> tilbud"
+		"dealer_offer_attachment_final_title"					"SIDSTE TILBUD"
+		"dealer_offer_attachment_final"							"{s:offer-count} og sidste tilbud"
+		"dealer_offer_attachment_status"						"Tilbud – {s:offer-status}"
+		"dealer_offer_attachment_status-active"					"<b><span class=\"offer-active\">Aktiv</span></b>"
+		"dealer_offer_attachment_status-price"					"<b><span class=\"offer-active\">{s:offer-price}</span></b>"
+		"dealer_offer_attachment_status-declined-price"			"{s:offer-price}"
+		"dealer_offer_attachment_status-declined"				"<span class=\"offer-declined\">{s:offer-count} tilbud – afvist</span>"
+
+		"user_btn_purchase_desc_purchase"		"Hold for at købe denne genstand. Efter køb bliver terminalen kasseret."
+		"user_btn_purchase_desc_continue"		"Hold for at afvise dette tilbud permanent og se det næste."
+		"user_btn_purchase_desc_end"		"Afvis det sidste tilbud, og kassér denne terminal."
+		"user_btn_purchase_title"			"{s:offer-count} tilbud"
+		"user_btn_purchase_final_title"		"<b>Sidste tilbud</b>"
+		"user_btn_decline_desc"				"Afvis dette tilbud og se et nyt"
+		"user_btn_accept"		"Accepter tilbud <b>{s:price}</b>"
+		"user_btn_accept_final"	"Accepter sidste tilbud <b>{s:price}</b>"
+		"user_btn_accept_0"		"Aftale. <b>{s:price} fungerer.</b>"
+		"user_btn_accept_1"		"Det accepterer jeg – <b>{s:price}</b>"
+		"user_btn_accept_2"		"Jeg er med på <b>{s:price}</b>"
+		"user_btn_accept_3"		"Jeg bider på <b>{s:price}</b>"
+		"user_btn_accept_4"		"For <b>{s:price}</b> er jeg med"
+		"user_btn_accept_5"		"Det lyder godt – <b>{s:price}</b>"
+		"user_btn_next"			"Afvis tilbud"
+		"user_btn_next_0"		"Fristende, men nej"
+		"user_btn_next_1"		"Ikke mine kugler værd"
+		"user_btn_next_2"		"Går ikke"
+		"user_btn_next_3"		"Pas"
+		"user_btn_next_4"		"Ingen aftale"
+		"user_btn_next_5"		"Tak, men nej"
+		"user_btn_next_6"		"Ikke denne gang"
+		"user_btn_next_7"		"Ikke i dag"
+		"user_btn_pause"		"Sæt handlen på pause"
+		"user_btn_end"			"Afvis det sidste tilbud"
+
+		"user_message_limit_0"		"Jeg kan gå op til <b>{s:limit-setting}</b>."
+		"user_message_limit_1"		"Hvad med et loft på <b>{s:limit-setting}</b>?"
+		"user_message_limit_2"		"Op til <b>{s:limit-setting}</b> fungerer for mig."
+		"user_message_limit_3"		"Maks. <b>{s:limit-setting}</b> er godt."
+		"user_message_limit_unlimited_0"	"<b>Intet maksimum</b>, jeg vil se det hele."
+		"user_message_limit_unlimited_1"	"<b>Jeg betaler hvad som helst</b>. Tænk ikke på tegnebogen."
+		"user_message_limit_unlimited_2"	"Jeg er her for at købe. <b>Vis mig alt</b>."
+		"user_message_limit_unlimited_3"	"Hvis det kan skyde, er jeg interesseret.<b> Ingen begrænsninger</b>."
+		"user_message_limit_unlimited_4"	"Der er ingen grænser"
+		"offer_limit_setting"		"Tilbudsgrænse: {s:limit}"
+		"offer_limit_setting_interface"		"Tilbudsgrænse: {s:limit} <img src='file://{images}/icons/ui/expand.svg' class='expand-icon'/>"
+
+		"dealer_offer_Unknown"							"-"
+		"dealer_offer_1"								"1."
+		"dealer_offer_2"								"2."
+		"dealer_offer_3"								"3."
+		"dealer_offer_4"								"4."
+		"dealer_offer_5"								"5."
+		"dealer_offer_6"								"6."
+		"dealer_offer_7"								"7."
+		"dealer_offer_8"								"8."
+		"dealer_offer_9"								"9."
+		"dealer_offer_10"								"10."
+
+		"current_offer_tooltip"		"Våbenhandlerens nuværende tilbud til dig."
+		"declined_offer_tooltip"	"Afvist tilbud"
+		"future_offer_tooltip"		"Tilbud ikke afsløret endnu."
+		"laptop_expiration_tooltip"		"Tid tilbage, før denne uplinkterminal og tilbuddene i den udløber."
+		"laptop_max_offer_tooltip"		"Set en maksimal tilbudsgrænse. Du modtager kun tilbud under denne grænse. Du kan ændre den når som helst."
+		"collection_xp_tooltip"			"Optjen XP for at se tilbuddene i denne samling. Åbn for at se fremskridt og indløse XP."
+		"terminal_offer_limit_tooltip"		"Opdater din maksimale tilbudsgrænse. Våbenhandleren viser dig kun tilbud op til den grænse."
+		"popup_lootlist_title"			"XP fra samlingskatalog"
+		"popup_lootlist_desc"			"Optjen XP for at se tilbuddene i denne samling"
+
+		"popup_lootlist_progress:f"      "Set {total, plural, one{{d:seen}/{d:total} tilbud} other{{d:seen}/{d:total} tilbud}}"
+		"popup_lootlist_claim_xp"		"Få bonus-XP"
+		"popup_lootlist_claim_ww"		"Indløser XP..."
+		"popup_lootlist_claim_ok"		"✔ XP indløst"
+		"popup_vpn_status_connected"	"Status: Forbundet til sikkert netværk"
+		"popup_vpn_status_disconnected"	"Status: Forbindelse afbrudt"
+		"popup_signal_full" 			"Fuldt signal"
+		"popup_signal_ok" 				"Stærkt signal"
+		"popup_offer_limit_desc"		"Opdater din maksimale tilbudsgrænse for alle fremtidige tilbud"
+		"laptop_battery_tooltip" 		"Batteri: {d:percent}%"
+		"laptop_original_seal_tooltip" 	"Genstande, som købes fra denne uplinkterminal, leveres med det originale ejercertifikat, som er gyldigt, mens du er ejer."
+		"laptop_zoom_tooltip" 			"Rul musehjulet for at zoome ind og ud"
+		"laptop_pan_tooltip" 			"Hold Shift-tasten nede og træk for at panorere med kameraet"
+		"laptop_pricing_tooltip"		"Priserne er globale og justeres automatisk baseret på efterspørgslen på hver genstand i samlingen."
+
+		"dealer_message_set_offer_limit_0"		"Det vigtigste først. Hvor meget har du beføjelse til at bruge?"
+		"dealer_message_set_offer_limit_1"		"Lad os få dette af vejen.<!--.25--> Hvad er din grænse?"
+		"dealer_message_set_offer_limit_2"		"Inden vi begynder...<!--.25--> Hvad er maks.? Hvor meget har du beføjelse til at bruge?"
+		
+		"dealer_message_start_0"  	"Det kommer direkte fra leverandøren.<!--.25-->Alt, man kunne ønske sig. Uden al papirarbejdet."
+		"dealer_message_start_1"  	"Jeg arbejder i det grå område, ingen dokumentation.<!--.25-->Bare rolig, de er kolde. De har ikke været i omløb i årevis, ingen leder efter dem.<!--.25-->Og de skyder stadig, når man peger med dem, hvis du er nysgerrig."
+		"dealer_message_start_2"  	"Tolderne i Ahradan tilbageholdt mine varer i morges. Jeg prøvede at få dem udleveret med en meget rørende historie om medicinsk udstyr og en stakkels døende... en eller anden.<!--.25-->Det virkede ikke. Men attachémappen fuld af penge gjorde.<!--.25-->Hvad med om vi ser på de her dialysemaskiner, før jeg giver dem til nogle forældreløse børn?"
+		"dealer_message_start_3"  	"Der skete netop et regimeskifte i et af \"stanerne\".<!--.25-->Dørene til depotet blev svunget op, og jeg gik bunken igennem selv.<!--.25-->Jeg sælger kun de sterile våben. Tag et kig."
+		"dealer_message_start_4"  	"De ting, jeg har i dag, er alle sammen rene.<!--.25-->Så vidt vides, er du den første, som har dem i hænderne."
+		"dealer_message_start_5"  	"Sterile stykker, ingen serienumre, god stand.<!--.25-->En krigsdomstol ville kalde dem beviser.<!--.25-->Du og jeg ved, at de er mesterstykker."
+		"dealer_message_start_6"  	"Hele denne sending af eksotiske varer blev for nylig frigjort fra en paradeenhed.<!--.25-->Blev marcheret meget rundt. Aldrig affyret."
+		"dealer_message_start_7"  	"Mine andre kunder spørger altid, hvordan jeg har fået fat i det, jeg sælger. Det hader jeg.<!--.25-->Det eneste, du spørger om, er, om det er det bedste på markedet.<!--.25-->Gæt en gang: Det er det."
+		"dealer_message_start_8"  	"Fredsaftale i Drosvik. Jeg elsker fred.<!--.25-->For jeg har en general med en stor gæld og et fyldt våbenlager, som står og samler støv.<!--.25-->Jeg mener...<!--.25-->Også fordi fred er godt, selvfølgelig. Uskyldige liv og...<!--.25-->Det, jeg siger, er, du er ligeglad."
+		"dealer_message_start_9"  	"Denne sending har eksotiske varer, som jeg har omdirigeret fra det grå marked.<!--.25-->Usædvanlige kalibre, ikke for amatører. Du vil elske dem."
+		"dealer_message_start_10"  	"Det her er pinligt.<!--.25-->Jeg må være kommet til at angive en kasse forkert på tolddeklarationen.<!--.25-->Nå. Adskillige kasser.<!--.25-->Hvad med at du hjælper mig af med de her varer, før havnemyndighederne undersøger sagen?"
+		"dealer_message_start_11"  	"Inspektøren i Drosvik var ude efter noget under bordet med den her. Idioten begyndte at snakke om beslaglæggelse. <!--.25-->Jeg har folk i Drosvik, som ved, hvad man gør med snakkehoveder. Hans mund er lukket nu.<!--.25-->Og heldigvis taler de her varer for sig selv."
+		"dealer_message_start_12"  	"Måtte smøre alle i Ahradan for at få denne forsendelse over grænsen.<!--.25-->Og alle bestikkelserne var i ahri. Ved du, hvor meget papir der skal til for at betale bestikkelser i en værdiløs valuta? De folk burde gøre noget ved deres økonomi."
+		"dealer_message_start_13"	"Jeg har en mellemmand, der har brug for at afsætte det her hurtigt.<!--.25-->Det er alt, hvad han sagde. \"Hurtigt.\"<!--.25-->Også ordene \"meget, meget\".<!--.25-->Sagt på denne måde: Hvis du ikke er nysgerrig efter, hvorfor han sælger, bliver du snart meget, meget glad."
+		"dealer_message_start_14"	"Klassiske modeller i dag.<!--.25-->Er de prangende? Nej. Men de er pålidelige.<!--.25-->Dine børnebørn kommer også til at skyde folk med dem."
+		"dealer_message_start_15"	"En oprørsmilits befriede dette udstyr fra Den Fantastiske Leders våbenlager.<!--.25--> Jeg tror også, de befriede Den Fantastiske Leders krop fra hans lemmer og hoved.<!--.25-->(Jeg sælger ikke den slags ting, men jeg kan sætte dig i kontakt med en fyr, hvis det har interesse)."
+		"dealer_message_start_16"	"Grænsechefen i Drosvik truede med at beslaglægge denne sending.<!--.25-->Jeg tror ikke, han fik beskeden om, at jeg ikke bestikker folk i Drosvik. Ikke når den lokale muskelkraft er så billig. Drosvik er ligesom verdens kickboxinghovedstad.<!--.25-->Nå, hans stedfortræder har tabt beslaglæggelsesordren. Og hans arme er ikke brækkede."
+		"dealer_message_start_17"	"Det her er alt sammen fra en milliardærs private samling.<!--.25-->Nå ja, tidligere milliardær. Han er under efterforskning, hvilket betyder, at jeg er i gang med at afsætte det, han ikke kan.<!--.25-->Ærligt talt vil den her se bedre ud i dine hænder end på væggen på en yacht."
+		"dealer_message_start_18"	"Havneinspektøren identificerede en afvigelse ved denne sending.<!--.25-->Det sjove er, at en kasse med rifler vejer lige så meget som en kasse med \"traktordele\", når man lægger præcis ti tusind dollars på vægten.<!--.25-->Lad os se på de traktordele."
+		"dealer_message_start_19"	"De ting, jeg har i dag, overlevede et kup for at nå frem til dig.<!--.25-->Ridser i lakken, men de fungerer perfekt. Det er det, der er indeni, der tæller, ik'?"
+		"dealer_message_start_20"	"En lille dum republik har lige hængt sin præsident.<!--.25-->Heldigt for mig har jeg arvet hans forsyningskæde."
+		"dealer_message_start_21"	"Kald det for en ekspeditionsfejl. En afvigelse i papirarbejdet. En simpel og ærlig fejlarkivering.<!--.25-->Fejl er uundgåelige. Jeg prøver bare at hjælpe en ven, så han ikke mister posten som forsyningssergent.<!--.25-->Det her udstyr skal af vejen."
+		"dealer_message_start_22"	"En eller anden toldchef troede, han kunne lægge pres på mig med denne sending. Så jeg fik fagforeningerne ved havnen til at lægge mere pres på.<!--.25-->Sjovt, hvor hurtigt papirarbejde forsvinder, når alle har travlt med at lede efter en forsvundet person.<!--.25-->Jeg håber, de finder staklen. Jeg tror ikke, han kan svømme."
+		"dealer_message_start_23"	"Grænsevagten i Ahradan sagde, at papirerne ikke var i orden. Så gav jeg ham en stak ahri, og pludselig var de i orden.<!--.25-->Jeg ved ikke engang, hvad ti tusind ahri er i rigtige penge. Seks dollar eller noget i den stil.<!--.25-->Så. Har du lyst til at se nogle våben, som ikke eksisterer?"
+		"dealer_message_start_24"	"Jeg havde en krigsgeneral, som havde forpligtet sig til at købe disse varer, og så går idioten hen og bliver sprængt i luften i et droneangreb.<!--.25-->Hold vinduerne lukkede, siger jeg bare. Nå, eksplosionen er til fordel for dig."
+		"dealer_message_start_25"	"Regimeskifte i Drosvik. Aner ikke, hvordan det skete, men på en eller måde forsvandt et lager fyldt med våbenkasser.<!--.25-->Og på en eller anden måde havnede de hos mig. Er det ikke vildt?<!--.25-->Og det bliver vildere, for på en eller måde sælger jeg dem måske også. Til dig. Lige nu."
+		"dealer_message_start_26"	"Jeg har en kasse med fejldeklarerede varer, jeg vil vise dig. <!--.25-->Lad dig ikke narre af \"landbrugsudstyret\". Du får ikke jord under neglene, medmindre du ikke skyder først."
+		"dealer_message_start_27"	"Jeg hader at arbejde med oprørere. Det er bare et pænt ord for civile, som er et pænt ord for forbandede amatører.<!--.25-->Nå, men jeg har ikke hørt fra dem, så jeg giver nogle ægte professionelle en chance med dette udstyr."
+		"dealer_message_start_28"	"Den flerårige varme zone mod syd har lige oplevet det halvårlige kollaps i parlamentet.<!--.25-->En masse lokale våbenlagre sprunget åbne som piñataer."
+		"dealer_message_start_29"	"Havneinspektøren kaldte denne forsendelse for ureglementeret sidste fredag.<!--.25-->Mandag havde hans datter penge nok til at studere på Stamwick, og forsendelsen er igen landbrugsudstyr.<!--.25-->Hvad kan jeg sige, uddannelse er vigtigt. Lad os se på noget landbrugsudstyr."
+
+		"dealer_message_resume_0"  	"<!--1-->Du er tilbage. Godt. Tilbuddet er stadig på bordet."
+		"dealer_message_resume_1"  	"<!--1-->Skulle du tænke lidt over det? Ikke noget problem."
+		"dealer_message_resume_2"  	"<!--1-->Jeg tænkte godt, du ville komme tilbage."
+		"dealer_message_resume_3"  	"<!--1-->Lad os fortsætte, hvor vi slap."
+		"dealer_message_resume_4"  	"<!--1-->Klar til at slå en handel af?"
+		"dealer_message_resume_5"  	"<!--1-->Godt, du er tilbage. Jeg har brug for at afsætte det her, ellers begynder de forkerte folk at stille spørgsmål."
+		"dealer_message_resume_6"  	"<!--1-->Du er tilbage. Hvor var vi?"
+
+		"dealer_message_first_offer_0"	"<!--.5-->Hvis du er interesseret, så lad os slå en handel af."
+		"dealer_message_first_offer_1"	"<!--.5-->Bare så du ved det, så har jeg andre, som er interesserede i denne vare."
+		"dealer_message_first_offer_2"	"<!--.5-->Hvis du er med på den, har vi en aftale. Ellers så sig til, jeg har mange andre interesserede købere ved bagdøren."
+		"dealer_message_first_offer_3"	"<!--.5-->Den er din, hvis du vil have den. Ellers er det dit tab."
+		"dealer_message_first_offer_4"	"<!--.5-->Hvis det er et ja, så gør vi det. Jeg kan ikke lade tilbuddet ligge på bordet for evigt."
+		"dealer_message_first_offer_5"	"<!--.5-->Tilbuddet er på bordet. Ja eller nej."
+		"dealer_message_first_offer_6"	"<!--.5-->Vil du have det eller ej? Du sårer mig ikke, hvis du siger nej. Jeg har andre købere."
+		"dealer_message_first_offer_7"	"<!--.5-->Gør vi det eller ej?"
+		"dealer_message_first_offer_8"	"<!--.5-->Jeg har ikke hele dagen."
+		"dealer_message_first_offer_9"	"<!--.5-->Skal vi lave en handel eller ej?"	
+		"dealer_message_first_offer_10"	"<!--.5-->Jeg behøver ikke at bruge aggressive salgsteknikker, den her sælger sig selv. Slår du til eller ej?"		
+
+		"dealer_message_next_offer_0"	"<!--1-->Okay, den var ikke noget for dig. Hvad med den her?"
+		"dealer_message_next_offer_1"	"<!--1-->Dit tab. Heldigvis er jeg i godt humør. Prøv lige at se den her."
+		"dealer_message_next_offer_2"	"<!--1-->Siger du pas? Nå, det er din fejl. Se den her."
+		"dealer_message_next_offer_3"	"<!--1-->Disse varer sælger sig selv. Hvis du ikke køber, finder jeg en anden, som vil.<!--.5-->Men mens jeg har dig, så er den her perfekt for dig."
+		"dealer_message_next_offer_4"	"<!--1-->Jeg forstår. Ikke din stil. Lad os se, om den her er tættere på. Jeg tror, du vil kunne lide den."
+		"dealer_message_next_offer_5"	"<!--1-->Jeg havde på fornemmelsen, at du ville sige nej. Heldigvis havde jeg denne skønhed klar i kulisserne."
+		"dealer_message_next_offer_6"	"<!--1-->Ja, det tænkte jeg nok. Her, se lige den her. Den er mere noget for dig, tror jeg."
+		"dealer_message_next_offer_7"	"<!--1-->Du kommer til at fortryde det senere, hvis du ikke slår til. Ikke noget problem. Hvad med denne?"
+		"dealer_message_next_offer_8"	"<!--1-->Jeg kender dig for godt. Jeg tænkte nok, du ikke ville bide på krogen. Hvad med denne?"
+		"dealer_message_next_offer_9"	"<!--1-->Okay, vi springer forretten over. Gør klar til hovedretten."
+		"dealer_message_next_offer_10"	"<!--1-->Det kan jeg godt forstå, jeg syntes heller ikke om den. Her, se på denne."		
+		"dealer_message_next_offer_11"   "<!--1-->Den ville man nok skulle vænne sig til. Den næste falder måske mere i smag."
+		"dealer_message_next_offer_12"   "<!--1-->Meget mere på lager, hvor den kom fra. Se lige det her pragteksemplar."
+		"dealer_message_next_offer_13"   "<!--1-->Ved du hvad? Det tænkte jeg, du måske ville sige. Lad os gå videre til denne."
+		"dealer_message_next_offer_14"   "<!--1-->Du er sværere at gøre tilfreds, end jeg troede. Får den her dig til at trække på smilebåndet?"
+		"dealer_message_next_offer_15"   "<!--1-->Du sårer ikke mine følelser. Jeg har ikke lavet den. Her er en anden mulighed."
+		"dealer_message_next_offer_16"   "<!--1-->Jeg ville heller ikke have taget den. Men den her. Kom nu."
+		"dealer_message_next_offer_17"   "<!--1-->Siger du pas? Okay. Lad os se på det næste."
+		"dealer_message_next_offer_18"   "<!--1-->Jeg ser, du har høje standarder. Fint med mig. Den næste her er guldstandarden."
+		"dealer_message_next_offer_19"   "<!--1-->Jeg ønsker ikke at spilde dine penge, og du ønsker ikke at spilde min tid. Se den her."
+		"dealer_message_next_offer_20"   "<!--1-->Hey, jeg sætter pris på ærlighed. Lad os gå videre og ikke spilde mere tid."
+		"dealer_message_next_offer_21"   "<!--1-->Okay, den sagde dig ikke noget. Godt, jeg har flere våben til salg."
+		"dealer_message_next_offer_22"   "<!--1-->Ikke noget problem. Masser af andre varer at sælge her. Her er den næste."
+		"dealer_message_next_offer_23"   "<!--1-->Jeg kunne have sværget, jeg havde et salg der. Måske det her afgør sagen."
+		"dealer_message_next_offer_24"   "<!--1-->Okay. Ikke din smag. Det kan de ikke alle sammen være. Men den her kalder på dig."
+		"dealer_message_next_offer_25"   "<!--1-->Det lader ikke til, at du forstår, hvad det er, jeg viser dig. Lad os se, om du kan lide den her."
+		"dealer_message_next_offer_26"   "<!--1-->Okay, ikke mere sjov og ballade. Jeg garanterer, at du vil elske den næste. Sandsynligvis."
+		"dealer_message_next_offer_27"   "<!--1-->Den kunne du ikke lide, hva'? Så kommer den i mit private våbenlager. Hvad med den her?"
+		"dealer_message_next_offer_28"   "<!--1-->Du har god smag. Lad os se, om den næste lever op til dine høje standarder."
+		"dealer_message_next_offer_29"   "<!--1-->Okay, den lå øverst i bunken. Lad mig grave lidt dybere."
+		"dealer_message_next_offer_30"   "<!--1-->Glem den sidste. Det var den her, jeg vil have, du skulle se."
+		"dealer_message_next_offer_31"   "<!--1-->Dit navn står på den her. Ikke bogstaveligt talt, den er helt ren."
+		"dealer_message_next_offer_32"   "<!--1-->Hey, du kan ikke købe dem alle sammen, det ved jeg godt. Måske venter du på noget særligt. Som den her."
+		"dealer_message_next_offer_33"   "<!--1-->Den der var bare en prøve. Nu kommer det rigtige show."
+		"dealer_message_next_offer_34"   "<!--1-->Ja, det tænkte jeg heller ikke. Men den næste. Jeg tænkte på dig, da jeg så den."
+		"dealer_message_next_offer_35"   "<!--1-->Fair nok. Jeg har holdt på den her for dig."
+		"dealer_message_next_offer_36"   "<!--1-->Ikke mit job at få dig til at elske den. Jeg prøver bare at sælge ting. Næste."
+		"dealer_message_next_offer_37"   "<!--1-->Intet problem. Jeg tror, den næste mere er noget for dig."
+		"dealer_message_next_offer_38"   "<!--1-->Klogt. Jeg vidste, du ikke viIle kaste dig over den. Lad mig vise dig noget bedre."
+		"dealer_message_next_offer_39"   "<!--1-->Ikke noget problem. Jeg ville heller ikke have købt den. Men den her til gengæld..."
+		"dealer_message_next_offer_40"   "<!--1-->Tvinger mig til at gå ned bagerst på lageret for at hente de allerbedste ting, hm? Okay, det gør jeg."
+
+		"dealer_message_last_offer_0"	"<!--0-->Okay, sidste og endelige tilbud. Tag det eller lad vær'."
+		"dealer_message_last_offer_1"	"<!--0-->Betragt det her som mit sidste tilbud."
+		"dealer_message_last_offer_2"	"<!--0-->Sidste tilbud. Tag det eller lad være, lad os ikke spilde mere tid."
+		"dealer_message_last_offer_3"	"<!--0-->Sidste tilbud.<!--1-->Vil du ikke have den, ville jeg træde et skridt tilbage. Den VIL eksplodere."
+		"dealer_message_last_offer_4"	"<!--0-->Sidste tilbud. Jeg vil ikke tigge."
+		"dealer_message_last_offer_5"	"<!--0-->Okay, det her er det bedste, jeg kan gøre."
+		"dealer_message_last_offer_6"	"<!--0-->Fint. Her. Gør vi det eller ej?"		
+		"dealer_message_last_offer_7"	"<!--0-->Sidste og bedste tilbud."
+		"dealer_message_last_offer_8"	"<!--0-->Vi mødes i midten. Det her er det bedste, jeg kan gøre."
+		"dealer_message_last_offer_9"	"<!--0-->Dette tilbud bliver ikke bedre."	
+
+		"dealer_message_end_0"			"<!--0-->Okay, du havde chancen. Hvis du holder uplinkterminalen lige nu, ville jeg slippe den. Om tre... to..."
+		"dealer_message_end_1"			"<!--0-->Ja, du har noget at tænke over, næste gang du bliver skudt på, og du rækker ud efter det våben, du lige har sagt nej til."
+		"dealer_message_end_2"			"<!--0-->Okay, jeg vil ikke tigge dig om at tage den. Håber ikke, du troede, du kunne få en gratis uplinkterminal ud af det her."
+		"dealer_message_end_3"			"<!--0-->Op til dig. Det er din sag. Din begravelse, sikkert.<!--1-->Træd venligst væk fra uplinkterminalen, som eksploderer om lidt."
+
+		"dealer_message_timerexpired_0"		"<!--.1-->Okay, lige meget."
+		"dealer_message_timerexpired_1"		"<!--.1-->Glem det<!--.5-->Du havde chancen."
+		"dealer_message_timerexpired_2"		"<!--.1-->Ingen aftale så.<!--.5-->Jeg har ting, jeg skal ordne her."
+		"dealer_message_timerexpired_3"		"<!--.1-->Okay, lad mig finde en køber, som faktisk vil købe<!--.5-->Vi er færdige her."
+		"dealer_message_timerexpired_4"		"<!--.1-->Op til dig.<!--.5-->Vi snakkes."
+		"dealer_message_timerexpired_5"		"<!--.1-->Tik tak.<!--.5-->Tiden er gået."
+		"dealer_message_timerexpired_6"		"<!--.1-->Ingen aftale.<!--.5-->Jeg kunne have solgt det her til anden side 10 gange på denne tid."
+		"dealer_message_timerexpired_7"		"<!--.1-->Og her troede jeg, at jeg hjalp dig med at slå folk ihjel.<!--.5-->Det viser sig, at du bare slår tiden ihjel."
+		"dealer_message_timerexpired_8"		"<!--.1-->Ingen aftale."	
+		"dealer_message_timerexpired_9"		"<!--.1-->Tiden er gået."
+		"dealer_message_timerexpired_10"	"<!--.1-->Okay, jeg keder mig officielt nu. Vi er færdige her."		
+
+		"dealer_message_open_check_out_0"		"<!--.5-->Den her er helt perfekt for dig. Derfor tænkte jeg på dig først. Lad os lave en aftale."
+		"dealer_message_open_check_out_1"		"<!--.5-->En udmærket beslutning. Jeg sørger for, den er pakket og klar."
+		"dealer_message_open_check_out_2"		"<!--.5-->Du vil ikke fortryde det. Selvom jeg tror, at nogen snart vil."
+		"dealer_message_open_check_out_3"		"<!--.5-->Jeg vidste, du ville købe. Lad os gøre det officielt."
+		"dealer_message_open_check_out_4"		"<!--.5-->Perfekt. Lad os gøre det."		
+		"dealer_message_open_check_out_5"		"<!--.5-->Godt valg."	
+		"dealer_message_open_check_out_6"		"<!--.5-->Dit klogeste valg nogensinde. Lad os gøre handlen færdig."		
+		"dealer_message_open_check_out_7"		"<!--.5-->Godt. Lad os gøre det officielt."
+
+		"dealer_message_txn_xld_bailout_0"		"<!--.5-->Det haster ikke. Du ved, hvor du kan finde mig."
+		"dealer_message_txn_xld_bailout_1"		"<!--.5-->Jeg går ingen steder."
+		"dealer_message_txn_xld_bailout_2"		"<!--.5-->Jeg lader denne ligge på bordet indtil videre."
+		"dealer_message_txn_xld_bailout_3"		"<!--.5-->Du kommer tilbage. Tyg lidt på det."
+
+		"dealer_message_purchase_finalizing_0"	"Færdiggør betalingsoplysningerne..."
+		"dealer_message_purchase_confirm_0"		"<!--.5-->Det er en aftale"
+
+		"dealer_message_stattrack_0"			"StatTrak™ installeret, selvfølgelig."
+		"dealer_message_stattrack_1"			"Denne sag har også StatTrak™."
+		"dealer_message_stattrack_2"			"Udstyret med StatTrak™. Så behøver du ikke at holde styr på det hele i hovedet."
+		"dealer_message_stattrack_3"			"Den har StatTrak™. Du trykker på aftrækkeren, den laver regnestykket."
+		"dealer_message_stattrack_4"			"StatTrak™. Betragt det som en pointtavle. Til en sport, hvor du myrder folk."
+		"dealer_message_stattrack_6"			"Inkluderer StatTrak™, til de professionelle, som elsker mord OG statistikker."
+		"dealer_message_stattrack_7"			"Leveres med StatTrak™, selvfølgelig."
+		"dealer_message_factory_new_0"			"Frisk fra kassen. Tro mig, jeg lugtede til den."
+		"dealer_message_factory_new_1"			"Fabriksny. Den dufter af nyt våben."
+		"dealer_message_factory_new_2"			"Aldrig brugt før. Du bliver den første til at trykke på aftrækkeren."
+		"dealer_message_factory_new_3"			"Direkte fra samlebåndet, ingen slitage. Præcis, som du kan lide det."
+		"dealer_message_factory_new_4"			"Den her er ren og helt som ny. Ingen ridser, ingen historie. Det er her, du kommer ind."
+		"dealer_message_factory_new_5"			"Fabriksny, aldrig affyret. Den er pletfri."
+		"dealer_message_covert_0"				"Ved du hvad? Du har lige scoret kassen. Den her er ikke bare sjælden. Den er hemmelig."
+		"dealer_message_covert_1"				"Jeg har lavet det her i et årti, og jeg har aldrig set sådan en i det fri.<!--.5-->Du har god smag. Og bedre held."
+		"dealer_message_covert_2"				"Jeg kender købere, der ville have solgt deres egen mor til en gulag for at få fingrene i den. Godt gået."
+		"dealer_message_covert_3"				"Wow. Nu får du mig til at overveje det her igen. Få den ud herfra, før jeg fortryder salget."
+		"dealer_message_covert_4"				"Den er hemmelig. Det er sådan en, der dukker op på det åbne marked måske én gang i livet, hvis man er heldig.<!--.5-->Du må have heldet med dig."
+		"dealer_message_covert_5"				"Den her er en kronjuvel. Men det ved du. Jeg havde en køber til den for et år siden. Skidt for dem, godt for dig."
+		"dealer_message_covert_6"				"Sjældnere bliver det ikke. Denne her er svær at finde, og den faldt lige ned i skødet på dig."
+		"dealer_message_covert_7"				"Tag det fra en, der lever af at finde denne slags udstyr. Det var meget, meget svært at finde."
+		"dealer_message_covert_8"				"Jeg håber, du værdsætter den handel, du lige har gjort. Det er et hemmeligt våben. Du har netop købt en enhjørning."
+		"dealer_message_covert_9"				"Se at få den væk og ind i dit arsenal, før jeg fortryder det her. Det er den sjældneste af de sjældne."
+		"dealer_message_classified_0"				"Klassificeret. Steril og uden dokumentation. Den er helt udenfor regnskabet."
+		"dealer_message_classified_1"				"Klassificeret. Ingen papirer, den er ren og kan ikke spores."
+		"dealer_message_classified_2"				"Klassificeret. Uden papirer. Det, jeg har i hænderne lige nu, findes teknisk set ikke."
+		"dealer_message_classified_3"				"Kun privat salg. Klassificeret. Håber, du vil gøre god brug af den."
+		"dealer_message_classified_4"				"Klassificeret. Uden serienummer, uden papirer."
+		"dealer_message_classified_5"				"Klassificeret. Kun bagdørssalg. Deaktiveret og kan nægtes fuldstændigt. Jeg har aldrig set den før."
+		"dealer_message_restricted_0"				"Begrænset. Bedre mekanisme, tættere skud. Klar fordel overfor standardudgaven."
+		"dealer_message_restricted_1"				"Der er en grund til, at den her er begrænset. Den fungerer lidt for godt til civile."
+		"dealer_message_restricted_2"				"Begrænset, naturligvis. Klasse tre, type to, og din nye nummer et."
+		"dealer_message_battle_scarred_0"		"Har et par skrammer, men den skyder stadig lige."
+		"dealer_message_battle_scarred_1"		"Lidt slidt, men det betyder bare, at den har været med i kampens hede og har overlevet."
+		"dealer_message_battle_scarred_2"		"Fundet på slagmarken. Godt brugt, men det er en arbejdshest."
+		"dealer_message_battle_scarred_3"		"Jeg tænker ikke på den som brugt på slagmarken. Jeg anser den for at have bevist sig selv i kamp."
+		"dealer_message_battle_scarred_4"		"Den her har været nogle ting igennem. Lidt kosmetisk slitage, men stadig pålidelig."
+		"dealer_message_minimal_wear_0"			"Minimal slitage på den her. En ridse eller to, men den fungerer fint."
+		"dealer_message_minimal_wear_1"			"Perfekt stand. Altså, perfekt-agtig. Minimal slitage."
+		"dealer_message_minimal_wear_2"			"Minimal slitage, bare lidt brugt, ingen grund til bekymring."
+		"dealer_message_minimal_wear_3"			"Minimal slitage på denne. Et par småskader, men du vil ikke fortryde at have den i arsenalet."
+		"dealer_message_minimal_wear_4"			"Den har været med i nogle kampe, ja, jeg vil ikke lyve for dig. Den her er en veteran."
+		"dealer_message_usp-s_0"				"Denne hund gør ikke. God og stille."
+		"dealer_message_usp-s_1"				"Stille og diskret. Nogle gange skal det være vores lille hemmelighed."
+		"dealer_message_usp-s_2"				"Den her kommer de til at mærke, når den rammer, men de vil ikke høre den komme."
+		"dealer_message_usp-s_3"				"Den her hvisker."
+		"dealer_message_item_desc_0"			"<!--.25-->Den her har en note:<!--.25-->{s:flavor-text}<!--.25-->Hvad det så end betyder."
+		"dealer_message_item_desc_1"			"<!--.25-->Den her har en lille note:<!--.25-->{s:flavor-text}"
+
+		"dealer_message_addition_stattrak_0"	"<!--.25-->... og med StatTrak™."
+		"dealer_message_addition_stattrak_1"	"<!--.25-->StatTrak™-modulet er forudinstalleret."
+		"dealer_message_addition_stattrak_2"	"<!--.25-->Med StatTrak™ til at holde styr på alt det kaos, du kommer til at skabe."
+		"dealer_message_addition_stattrak_3"	"<!--.25-->Den har også StatTrak™."
+		"dealer_message_addition_stattrak_4"	"<!--.25-->Leveres også med StatTrak™, så du aldrig mister overblikket over al den elendighed, du skaber."
+
+		"dealer_message_addition_factory_new_0"	"<!--.25-->Og den er fabriksny. Aldrig affyret."
+		"dealer_message_addition_factory_new_1"	"<!--.25-->Og den er helt ny. Fejlfri."
+		"dealer_message_addition_factory_new_2"	"<!--.25-->Direkte fra fabrikken. Helt ny."
+		"dealer_message_addition_factory_new_3"	"<!--.25-->Den her er fabriksny. Aldrig affyret."
+		
+		"dealer_message_limit_first_time_0"		"Godt at vide, jeg viser dig kun tilbud op til {s:limit}.<!--.25--> Lad os se, hvad du har brug for."
+		"dealer_message_limit_first_time_2"		"Kun tilbud under {s:limit}. Det skal jeg nok huske.<!--.25--> Tiden går. Lad os komme i gang."
+		"dealer_message_limit_first_time_3"		"Godt. Opdateret.<!--.25--> Lad os komme i gang."
+		"dealer_message_limit_first_time_unlimited_0"		"Intet maksimum, fantastisk. Jeg åbner hele det aktuelle katalog fremover.<!--.25--> Tiden går. Lad os komme i gang."
+		"dealer_message_limit_first_time_unlimited_1"		"Forstået. Ingen grænse. Nu bliver det alvor.<!--.25--> Lad os se, hvad du har brug for."
+
+		"dealer_message_limit_0"				"Godt at vide, jeg viser dig kun tilbud op til {s:limit}."
+		"dealer_message_limit_1"				"Kun tilbud under {s:limit}. Det skal jeg nok huske."
+		"dealer_message_limit_2"				"Vi justerer parametrene. Kun tilbud op til {s:limit}."
+		"dealer_message_limit_3"				"Tilbud op til {s:limit}. Godt. Opdateret."
+		"dealer_message_limit_4"				"Jeg henter kun det, der passer med prismærket, op til {s:limit}"
+		"dealer_message_limit_5"				"{s:limit}, ny grænse noteret"
+		"dealer_message_limit_6"				"Forstået. Nulstiller filteret for tilbud op til {s:limit}."
+		"dealer_message_limit_unlimited_0"		"Intet maksimum, fantastisk. Jeg åbner hele det aktuelle katalog fremover."
+		"dealer_message_limit_unlimited_1"		"Noteret, ingen grænse. Hvis der dukker noget eksotisk op, holder jeg ikke tilbage."
+		"dealer_message_limit_unlimited_2"		"Sød musik i mine ører. Hvis noget dukker op, der opfylder betingelserne, viser jeg det straks til dig."
+		"dealer_message_limit_unlimited_3"		"Forstået. Ingen grænse. Nu bliver det alvor."
+
+		"system_dealer_left_chat_0"				"Våbenhandleren har forladt chatten."
+		"system_dealer_join_chat_0"				"Våbentilbud fra {s:collection}.<!--1.25-->Våbenhandler online"
+		"system_user_reject_offer_0"			"{s:user-name} afviste tilbuddet."
+
+		"system_user_updated_offer_limit_0"			"Maks. tilbudsgrænse opdateret til {s:limit}. Du kan opdatere indstillingen når som helst."
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//Retakes
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		"GameUI_Retake_DefendA"					"Forsvar A!"
+		"GameUI_Retake_DefendB"					"Forsvar B!"
+		"GameUI_Retake_RetakeA"					"Genindtag bombelokalitet A!"
+		"GameUI_Retake_RetakeB"					"Genindtag bombelokalitet B!"
+		"GameUI_Retake_Notice_MvpCardAvailable"	"Tillykke! MVP-bonuskort er tilgængeligt næste runde!"
+		"GameUI_Retake_Card_CardsPreview"		"Kortforhåndsvisning"
+		"GameUI_Retake_Card_AvailableCard"		"Vælg dette udstyr"
+		"GameUI_Retake_Card_AvailableCards"		"Vælg udstyr"
+
+		"GameUI_Retake_Card_Bonus"				"Bonus"
+		"GameUI_Retake_Card_Enemy"				"Fjendens udstyr"
+		"GameUI_Retake_Card_Mvp"				"MVP"
+
+		"GameUI_Retake_Card_4v3"				"4v3"
+		"GameUI_Retake_Card_FlashOut"			"Væk i et glimt!"
+		"GameUI_Retake_Card_HideAndPeek"		"Gemmeleg"
+		"GameUI_Retake_Card_TakeFive"			"5'eren"
+		"GameUI_Retake_Card_OnlyTakesOne"		"Bare ét skud"
+		"GameUI_Retake_Card_SneakyBeakyLike"	"Listefødder"
+		"GameUI_Retake_Card_UmpInSmoke"			"UMP i røgen"
+		"GameUI_Retake_Card_FunNGun"			"Skyd-og-Nyd"
+		"GameUI_Retake_Card_Sharpshooter"		"Skarpskytte"
+		"GameUI_Retake_Card_BurstBullpup"		"Bullpup og salver"
+		"GameUI_Retake_Card_LightEmUp"			"Et glimt i øjet"
+		"GameUI_Retake_Card_Kobe"				"Kobe!"
+		"GameUI_Retake_Card_1g"					"1g"
+		"GameUI_Retake_Card_DisappearingAct"	"Forsvindingsnummer"
+		"GameUI_Retake_Card_EyesOnTarget"		"Øje på målet"
+		"GameUI_Retake_Card_BehindEnemyLines"	"Bag fjendens linjer"
+		"GameUI_Retake_Card_4BadGuysLeft"		"4 skurke tilbage"
+		"GameUI_Retake_Card_LookAway"			"Kig væk!"
+		"GameUI_Retake_Card_WhenThereIsSmoke"	"Med røg følger..."
+		"GameUI_Retake_Card_BlindFire"			"Skud i blinde"
+		"GameUI_Retake_Card_QueOta"				"Qué ota?"
+		"GameUI_Retake_Card_SmokeScreen"		"Røgslør"
+		"GameUI_Retake_Card_TecTecBoom"			"TEC, TEC, BANG!"
+		"GameUI_Retake_Card_BackInAFlash"		"På et blink"
+		"GameUI_Retake_Card_AllIn"				"All-in"
+		"GameUI_Retake_Card_BoomBox"			"Ghettoblaster"
+		"GameUI_Retake_Card_SetThemFree"		"Sæt dem fri"
+		"GameUI_Retake_Card_OlReliable"			"Den gode gamle"
+		"GameUI_Retake_Card_SmokeShow"			"Røgforestilling"
+		"GameUI_Retake_Card_HotShot"			"Hotshot"
+		"GameUI_Retake_Card_EyeSpy"				"Et godt øje"
+		"GameUI_Retake_Card_TheAWPortunity"		"En AWPlagt mulighed"
+		"GameUI_Retake_Card_FindersKeepers"		"Hvad man finder, må man beholde"
+
+		"Hud_Retake_BombSite"					"{s:hud-retake-bombsite}"
+		
+		"Hud_Money" "{d:r:hud-money-amount} $"
+		"Hud_Money_Signed" "{s:sign}{d:r:hud-money-delta} $"
+
+		"Propcounter_money" "%s1 $" //e.g. used on danger zone security door
+
+		"csgo_player_left_game"					" %s1 har forladt spillet (%s2)"
+
+		"LoadoutLockedPopupTitle"				"Udstyr låst"
+		"LoadoutLockedPopupText"				"Udstyrsændringer er ikke tilladte under Competitive-matchmaking."
+
+		"Workshop_item_title" "Værktøj til indsendelse af genstande"
+		"Workshop_item_error_title" "Indtast et navn til genstanden. Dette bør indeholde spillernavnet eller andre identificerende oplysninger."
+		"Workshop_item_error_image" "Vælg et gyldigt .jpeg- eller .png-billede på mindre end {s:max_size} og med en bredde/højde på mindst {d:min_height}"
+		"Workshop_item_ready" "Indsendelse klar til upload"
+		"SFUI_Go_To_Mic_Enable_key" "Gå til tastebinding for mikrofon"
+		"SFUI_Go_To_Console_Key_Binding" "Gå til tastebinding for konsol"
+
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//Steam Video
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		"SteamVideo_Player_Kill_Title"					"Du dræbte %s1"
+		"SteamVideo_Player_Kill_Description"			"med %s1"
+
+		"SteamVideo_Player_Double_Kill_Title"			"Dobbelt drab"
+		"SteamVideo_Player_Multi_Kill_Title"			"Multidrab"
+		
+		"SteamVideo_Player_Death_Title"					"Du blev dræbt af %s1"
+		"SteamVideo_Player_Death_Description"			"med %s1"
+		"SteamVideo_Player_Death_Description_Plural"	"med %s1"
+		"SteamVideo_Player_Killed_Self_Title"			"Du dræbte dig selv"
+		
+		"SteamVideo_Bomb_Planted_Title"					"Bombe anbragt"
+		"SteamVideo_Bomb_Planted"						"%s1 anbragte bomben"
+		"SteamVideo_Bomb_Planted_LocalPlayer"			"Du anbragte bomben"
+		
+		"SteamVideo_Bomb_Defused_Title"					"Bombe demonteret"
+		"SteamVideo_Bomb_Defused"						"%s1 demonterede bomben"
+		"SteamVideo_Bomb_Defused_LocalPlayer"			"Du demonterede bomben"
+		
+		"SteamVideo_Bomb_Exploded_Title"				"Bomben eksploderede"
+		
+		"SteamVideo_Round_Number_Label"					"Runde %s1"
+		"SteamVideo_Start_Of_Round_Title"				"Start på runde %s1"
+
+		"SteamVideo_MatchScore"							"Point"
+		"SteamVideo_KDA"								"K/D/A"
+
+		// ---------------------------------------------------------------------------------------------
+		// WEEKLY MISSIONS
+		// ---------------------------------------------------------------------------------------------
+		"weekly_mission_title"							"MISSION"
+		"weekly_mission_title_complete"					"MISSION GENNEMFØRT"
+		"weekly_mission_expiration"						"Udløber om <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_expiration_pausemenu"			"Udløber om <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_next_mission"					"Næste mission starter om <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_progress"						"<b>{d:mission-progress}</b>/{d:mission-points}"
+		"CS2_Quest_Weapon_Mode"							"Udstyrsdygtighed: <b>{s:gamemode}</b>, <b>{s:weapon}</b>"
+		"CS2_Quest_Weapon_Mode_desc"					"Opnå <b>{s:weapon}</b>-{s:optional_target}{s:actions} i <b>{s:gamemode}</b>-kampe."
+
+		"mission_searching"								"Søger..."
+		"mission_xp_remaining"							"{s:mission-xp} XP"
+
+		"mission_segment_tooltip"						"{d:xp-reward} XP"
+
+		"mission_location"								"<b>{s:gamemode}</b> i <b>{s:location}</b>"
+		"mission_directive:f"							"{mission-points, plural, one{<b>{d:mission-points}</b> {s:action}} other{<b>{d:mission-points}</b> {s:actions}}}"
+ 		"mission_directive_progress:f"					"{mission-points, plural, one{{d:mission-progress}/<b>{d:mission-points}</b> {s:action}} other{{d:mission-progress}/<b>{d:mission-points}</b> {s:actions}}}"
+
+
+		"quest_11000_var_desc:f"	  					"{mission-points, plural, one{Dræb en fjende med {s:item1} i <b>{s:gamemode}: {s:location}</b>.} other{Dræb fjender med {s:item1} i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11000_var_partial:f" 					"...med {s:item1}."
+		"quest_11000_var_ingame:f"	  					"{mission-points, plural, one{Dræb en fjende med {s:item1}.} other{Dræb fjender med {s:item1}.}}"
+
+		"quest_11001_var_desc:f"	 					"{mission-points, plural, one{Dræb en fjende med {s:item1} i <b>{s:gamemode}: {s:location}</b>.} other{Dræb fjender med {s:item1} i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11001_var_partial:f"	 					"...med {s:item1}."
+		"quest_11001_var_ingame:f"	 					"{mission-points, plural, one{Dræb en fjende med {s:item1}} other{Dræb fjender med {s:item1}}}"
+
+		"quest_11002_var_desc:f"	 					"{mission-points, plural, one{Dræb en fjende med {s:item1} i <b>{s:gamemode}: {s:location}</b>.} other{Dræb fjender med {s:item1} i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11002_var_partial:f"	 					"...med {s:item1}."
+		"quest_11002_var_ingame:f"	 					"{mission-points, plural, one{Dræb en fjende med {s:item1}} other{Dræb fjender med {s:item1}}}"
+
+		"quest_11003_var_desc:f"						"{mission-points, plural, one{Dræb en fjende med {s:item1} i <b>{s:gamemode}: {s:location}</b>.} other{Dræb fjender med {s:item1} i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11003_var_partial:f"	 					"...med {s:item1}."
+		"quest_11003_var_ingame:f"	 					"{mission-points, plural, one{Dræb en fjende med {s:item1}} other{Dræb fjender med {s:item1}}}"
+
+		"quest_11004_var_desc:f"	 					"{mission-points, plural, one{Vind en runde i <b>{s:gamemode}: {s:location}</b>.} other{Vind runder i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11004_var_ingame:f"						"{mission-points, plural, one{Vind en runde} other{Vind runder}}"
+
+		"quest_11005_var_desc:f"	 					"{mission-points, plural, one{Vind en runde i <b>{s:gamemode}: {s:location}</b>.} other{Vind runder i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11005_var_ingame:f"						"{mission-points, plural, one{Vind en runde} other{Vind runder}}"
+
+		"quest_11006_var_desc:f"	 					"{mission-points, plural, one{Vind en runde i <b>{s:gamemode}: {s:location}</b>.} other{Vind runder i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11006_var_ingame:f"						"{mission-points, plural, one{Vind en runde} other{Vind runder}}"
+
+		"quest_11007_var_desc:f"	 					"{mission-points, plural, one{Dræb en fjende med {s:item1} i <b>{s:gamemode}: {s:location}</b>.} other{Dræb fjender med {s:item1} i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11007_var_partial:f"	 					"...med {s:item1}."
+		"quest_11007_var_ingame:f"	 					"{mission-points, plural, one{Dræb en fjende med {s:item1}} other{Dræb fjender med {s:item1}}}"
+
+		"quest_11008_var_desc:f"	 					"{mission-points, plural, one{Vind en runde i <b>{s:gamemode}: {s:location}</b>.} other{Vind runder i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11008_var_ingame:f"						"{mission-points, plural, one{Vind en runde} other{Vind runder}}"
+
+		"quest_11009_var_desc:f"	 					"{mission-points, plural, one{Vind en runde i <b>{s:gamemode}: {s:location}</b>.} other{Vind runder i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11009_var_ingame:f"						"{mission-points, plural, one{Vind en runde} other{Vind runder}}"
+
+		"quest_11010_var_desc:f"	 					"{mission-points, plural, one{Dræb en fjende med {s:item1} i <b>{s:gamemode}: {s:location}</b>.} other{Dræb fjender med {s:item1} i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11010_var_partial:f"	 					"...med {s:item1}."
+		"quest_11010_var_ingame:f"	 					"{mission-points, plural, one{Dræb en fjende med {s:item1}} other{Dræb fjender med {s:item1}}}"
+
+		"quest_11011_var_desc:f"	 					"{mission-points, plural, one{Vind en runde i <b>{s:gamemode}: {s:location}</b>.} other{Vind runder i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11011_var_ingame:f"						"{mission-points, plural, one{Vind en runde} other{Vind runder}}"
+
+		"quest_11012_var_desc:f"	 					"{mission-points, plural, one{Vind en runde i <b>{s:gamemode}: {s:location}</b>.} other{Vind runder i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11012_var_ingame:f"						"{mission-points, plural, one{Vind en runde} other{Vind runder}}"
+
+		"quest_11013_var_desc:f"	 					"{mission-points, plural, one{Vind en runde i <b>{s:gamemode}: {s:location}</b>.} other{Vind runder i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11013_var_ingame:f"						"{mission-points, plural, one{Vind en runde} other{Vind runder}}"
+
+		"quest_11014_var_desc:f"	 					"{mission-points, plural, one{Vind en runde i <b>{s:gamemode}: {s:location}</b>.} other{Vind runder i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11014_var_ingame:f"						"{mission-points, plural, one{Vind en runde} other{Vind runder}}"
+
+		"quest_11015_var_desc:f"	 					"{mission-points, plural, one{Vind en runde i <b>{s:gamemode}: {s:location}</b>.} other{Vind runder i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11015_var_ingame:f"						"{mission-points, plural, one{Vind en runde} other{Vind runder}}"
+
+// ---------------------------------------------------------------------------------------------
+// Join Friend Listen Servers
+// ---------------------------------------------------------------------------------------------
+
+		"tooltip_viewaddon"				"Gå til tilpasset bane på værkstedssiden"
+		"tooltip_kick_player"			"Smid spiller ud fra lokal server"		
+		"tooltip_short_viewaddon"			"Vis tilpasset bane"
+		"tooltip_short_kick_player"			"Smid ud"
+
+// crow_mask_50454_comment
+// crow_mask_50455_comment
+}
+
+
+
+
+}
+
+
+_value"				"{s:accolade-value-string}"
 
 		"accolade_bombcarrierkills_2"					"Bombebenægteren"
 		"accolade_bombcarrierkills_desc_2"				"Bombebærere dræbt:"

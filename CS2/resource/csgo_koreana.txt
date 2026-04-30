@@ -400,7 +400,7 @@
 		"GameUI_ChangeGame"		"게임 변경"
 		"GameUI_NoOtherGamesAvailable"  "플레이할 수 있는 게임이 없습니다."
 
-		"GameUI_DownloadFilter_Title"		"게임 서버가 컴퓨터에\n사용자 지정 콘텐츠를 다운로드할 때"
+		"GameUI_DownloadFilter_Title"		"게임 서버가 컴퓨터에\n맞춤 콘텐츠를 다운로드할 때"
 		"GameUI_DownloadFilter_ALL"		"서버의 모든 사용자 지정 파일 허용"
 		"GameUI_DownloadFilter_NoSounds"	"사용자 지정 소리는 다운로드하지 않습니다."
 		"GameUI_DownloadFilter_None"		"사용자 지정 파일은 다운로드하지 않습니다."
@@ -1896,6 +1896,9 @@
 		"Player_Killing_Spree_more"		"파죽지세!!! x%s1"
 		"Player_Killed_Enemy_Leader"	"적군 팀의 선두를 처치했습니다!"
 		"SFUI_Player_Is_Leader"			"팀의 선두입니다"
+		"SFUI_PlayerCount_Alive_Left:f"		"{left_side_alive, plural, other{생존}}"
+		"SFUI_PlayerCount_Alive_Right:f"	"{right_side_alive, plural, other{생존}}"
+
 		"hostagerescuetime"			"대테러부대가 인질을 확보하여 시간이 연장되었습니다."
 
 		// Cash award reasons
@@ -1961,8 +1964,8 @@
 		"Team_Cash_Award_no_income_suicide"					" +$0: 자살 페널티"
 		"Team_Cash_Award_Generic"							" +$%s1 팀 보상"
 		"Team_Cash_Award_Custom"							" +$%s1 %s2"
-		"Team_Cash_Award_Dead_Terrorists:p"					" +$%s1 테러리스트 %s2명 처치 팀 보상"
-		"Team_Cash_Award_Dead_CTs:p"						" +$%s1 대테러부대 %s2명 처치 팀 보상"
+		"Team_Cash_Award_Dead_Terrorists:f"					" +$%s1 {num_enemies, plural, other{테러리스트}} {num_enemies}명 처치 팀 보상"
+		"Team_Cash_Award_Dead_CTs:f"						" +$%s1 {num_enemies, plural, other{대테러부대}} {num_enemies}명 처치 팀 보상"
 
 
 		"Notice_Bonus_Shorthanded_Eligibility"			" %s1라운드 안에 팀원 부족 보상 획득 가능"
@@ -2323,10 +2326,14 @@
 		// Econ date formatting supports the following tokens:
 		//    %year%, %monthshort%, %monthlong%, %mmday% (01-31), %mday% (1-31), %day% (legacy unlocalized "Jul 30" shouldn't be used), %hour%, %min%, %sec%
 		//
-		"Econ_DateFormat"						"%monthshort% %mmday%, %year%(%hour%:%min%:%sec%)"
-		"Econ_DateFormat_GMT"					"%monthshort% %mmday%, %year%(%hour%:%min%:%sec%) GMT"
-		"Econ_DateFormat_DateOnly"				"%monthshort% %mmday%, %year%	"
-		"Econ_DateFormat_GMT_DateOnly"			"%monthshort% %mmday%, %year% GMT"
+		"Econ_DateFormat:f"							"{year}년 {monthshort} {mmday}일 {hour}:{min}:{sec}"
+		"Econ_DateFormat_GMT:f"						"{year}년 {monthshort} {mmday}일 {hour}:{min}:{sec}(그리니치 표준시)"
+		"Econ_DateFormat_DateOnly:f"				"{year}년 {monthshort} {mmday}일"
+		"Econ_DateFormat_GMT_DateOnly:f"			"{year}년 {monthshort} {mmday}일(그리니치 표준시)"
+		"Econ_DateFormat"							"%monthshort% %mmday%, %year%(%hour%:%min%:%sec%)"
+		"Econ_DateFormat_GMT"						"%monthshort% %mmday%, %year%(%hour%:%min%:%sec%) GMT"
+		"Econ_DateFormat_DateOnly"					"%monthshort% %mmday%, %year%	"
+		"Econ_DateFormat_GMT_DateOnly"				"%monthshort% %mmday%, %year% GMT"
 		"Econ_Loot_List_Sticker_ProPlayerSignatures" "이 캡슐에는 다음 선수 중 1명이 사인한 스티커가 들어 있습니다."
 		"Econ_Loot_List_Sticker_ProPlayerSignatures_AndSomeMore" "...그리고 %s1명의 또 다른 선수"
 		"Econ_Loot_List_Sticker_ProOrgsStickers"	"다음 중 한 팀의 스티커가 포함되어 있습니다."
@@ -2415,6 +2422,7 @@
 		"NewItemMethod_CommunityMarketPurchase"	"장터에서 구매한 상품:"
 
 		"ItemHistory_ActionWithTime"									"%s2에 %s1"
+		"ItemHistory_Action_GSCreate"									"등록됨"
 		"ItemHistory_Action_GenericAdd"									"추가됨"
 		"ItemHistory_Action_GenericRemove"								"제거 혹은 수정됨"
 		"ItemHistory_Action_Traded"										"거래됨"
@@ -2445,7 +2453,7 @@
 		"ItemHistory_Action_CDKeyRevoke"								"CD 키 폐기됨"
 		"ItemHistory_Action_PurchaseConsumedAsNonItem"					"구매에 사용됨"
 		"ItemHistory_Action_EconSetUnowned"								"거래됨"
-		"ItemHistory_Action_EconConvertGameLicense"						"게임 라이센스로 변환됨"
+		"ItemHistory_Action_EconConvertGameLicense"						"게임 라이선스로 변환됨"
 		"ItemHistory_Action_EconActivatedRecurringSubscription"			"활성화된 구독 서비스"
 		"ItemHistory_Action_GiftDelivery_Add"							"선물로 받음"
 		"ItemHistory_Action_GiftDelivery_Remove"						"선물로 보냄"
@@ -2478,6 +2486,10 @@
 		"ItemHistory_Action_TournamentDrop"								"기념품 드롭 획득"
 		"ItemHistory_Action_TemplateItemGrant"							"획득"
 		"ItemHistory_Action_Market_Add"									"Steam 커뮤니티 장터에서 받음"
+		"ItemHistory_Action_Market_Sealed"								"Steam 장터 판매 등록 완료"
+		"ItemHistory_Action_Market_Unsealed"							"Steam 장터 판매 등록 취소 완료"
+		"ItemHistory_Action_Market_SoldSealed"							"Steam 장터 판매 완료"
+
 		"ItemHistory_Transaction_Delete"								"직접 삭제함"
 		"ItemHistory_Transaction_Craft"									"제작"
 		"ItemHistory_Transaction_UnlockCrate"							"상자 개봉"
@@ -2634,6 +2646,7 @@
 		"Attrib_NeverTradableButHasAfterDate1"		"이 아이템은 거래 및 판매할 수 없습니다."
 		"Attrib_NeverTradableButHasAfterDate2"		"사용 시 아이템은 %s1까지 거래가 제한됩니다."
 		"Attrib_TradeProtectedEscrowDate"			"⇆ 이 아이템은 거래 보안이 적용되어 있으므로 %s1까지 사용, 수정 또는 양도할 수 없습니다."
+		"Attrib_TradeProtectedEscrowMarket"			"⇆ 이 아이템은 현재 Steam 장터에 판매 등록되어 있습니다. 장터에 판매 등록되어 있는 동안에는 아이템을 소모하거나 수정할 수 없습니다."
 		"Attrib_TradableAfterDate"					"%s1 이후 거래 가능"
 		"Attrib_TradableMarketableAfterDate"		"%s1 후 거래 및 판매 가능"
 		"Attrib_MarketableWithRestrictions"			"바로 장터에 팔 수 있습니다"
@@ -5841,1256 +5854,15 @@
 		
 		"quest"										"임무"
 
-		"quest_totalgoal_points_desc"				"총 필요한 %actions%： <b>%points%</b>점" // special non-breaking space characters in this string, edit carefully!
-		"quest_attrremaining_points_desc"			"남은 %actions% ： <b>%points%</b>" // special non-breaking space characters in this string, edit carefully!
-		"quest_uncommitted_points_desc"				"남은 %actions%： <b>%points%</b>(이 매치에서 <b>%points uncommitted%</b> 점을 얻었습니다)" // special non-breaking space characters in this string, edit carefully!
-		"quest_uncommitted_points_warn"				" * <i>매치가 끝나면 %actions% 횟수가 기록될 것입니다</i>"
-	
-		"quest_uncommitted_points_chat_one"	" 임무를 수행했습니다: %action% 횟수가 기록되었습니다."
-		"quest_uncommitted_points_chat_singular"	"임무 진척도: +%points% %action% 기록됨."
-		"quest_uncommitted_points_chat_plural"		" 임무 진행도: +%points% %actions% 점수 획득."
-		"quest_uncommitted_points_chat_event"		" 맹공 임무: %action% 횟수가 기록되었습니다."		
+		"quest_commandverb_default"					"하세요"
 
-		"quest_reward_desc"								"이 임무는 \n<b>%s1</b> 중 하나를 보상으로 지급합니다."
+		"quest_action_plural_act_kill_human"		"처치"
+		"quest_action_singular_act_kill_human"		"처치"
 
-		"quest_reward_xp"									"임무 보상: <b>%s1</b> 경험치"
-
-		"quest_event_totalgoal_points_desc"					"이 이벤트가 진행되는 동안 <b>%action%</b>할 때마다 경험치 부스트를 획득하세요."
-		
-		"quest_bonus_desc"								"보너스: %action%당 경험치 +<b>%xpperbonusaction%</b> 획득(<i>%xpbonuscondition%</i>)"
-		"quest_bonus_fractional_desc"			"보너스: %actions%량 <b>%n_actions%</b>마다 경험치 +<b>%xpperbonusactions%</b> 획득(<i>%xpbonuscondition%</i>)"
-		"quest_bonus_single_desc"					"보너스: 경험치 +<b>%xpperbonusaction%</b> 획득(<i>%xpbonuscondition%</i>)"
-
-
-		"quest_target_chicken"											"닭을"
-		"quest_target_human_or_chicken"									"사람 또는 닭을"
-		"quest_target_hostagerescuer"									"인질 구출자를"
-		"quest_target_armsraceleader"									"레이스 선두를"
-
-		"quest_target_headshot"											"헤드샷"
-		"quest_target_airborne"											"공수부대를"
-		"quest_target_pistolround"										"권총으로"
-
-		"quest_target_lockeddoor"										"잠긴 문을"
-		"quest_target_explodingbarrel"									"폭발하는 배럴로"
-		"quest_target_glasspane"										"판유리에"
-		"quest_target_enemydrone"										"적군 드론으로"
-
-		"quest_target_shotgun"											"산탄총으로"
-		"quest_target_sniperrifle"										"저격소총으로"
-		"quest_target_utility"											"유틸리티를"
-		"quest_target_defaultctpistol"									"기본 CT 권총으로"
-		"quest_target_defaultpistol"									"기본 권총으로"
-		"quest_target_knife"											"칼"
-
-		"quest_action_plural_act_kill_human"							"처치"
-		"quest_action_singular_act_kill_human"							"처치"
-
-		"quest_action_plural_act_kill_chicken"							"처치"
-		"quest_action_singular_act_kill_chicken"						"처치"		
-
-		"quest_action_plural_act_protect_chicken"						"초 동안 닭을 보호"
-		"quest_action_singular_act_protect_chicken"						"초 동안 닭을 보호"	
-
-		"quest_action_plural_act_kill_target"							"암살"
-		"quest_action_singular_act_kill_target"							"암살"		
-
-		"quest_action_plural_act_damage"								"피해"
-		"quest_action_singular_act_damage"								"만큼의 피해를"		
-
-		"quest_action_plural_act_win_match"								"승리"
-		"quest_action_singular_act_win_match"							"승리"		
-
-		"quest_action_plural_act_dz_game_end_placement"					"배치"
-		"quest_action_singular_act_dz_game_end_placement"				"배치"	
-
-		"quest_action_plural_act_dz_purchase_item"					"구매"
-		"quest_action_singular_act_dz_purchase_item"				"구매"	
-
-		"quest_action_plural_act_win_round"								"라운드 승리"
-		"quest_action_singular_act_win_round"							"라운드 승리"	
-
-		"quest_action_plural_act_round_mvp"								"MVP를"
-		"quest_action_singular_act_round_mvp"							"MVP를"
-
-		"quest_action_plural_act_dm_bonus_points"						"점수"
-		"quest_action_singular_act_dm_bonus_points"						"점수"		
-
-		"quest_action_plural_act_armsrace_level"						"레벨을"
-		"quest_action_singular_act_armsrace_level"						"레벨을"	
-
-		"quest_action_plural_act_gg_weapon_upgrade"						"업그레이드"
-		"quest_action_singular_act_gg_weapon_upgrade"					"업그레이드"	
-
-		"quest_action_plural_act_gg_upgrade_to_knifegg"						"업그레이드"
-		"quest_action_singular_act_gg_upgrade_to_knifegg"					"업그레이드"	
-				
-		"quest_action_plural_act_flashbang_enemy"						"섬광탄으로 공격"
-		"quest_action_singular_act_flashbang_enemy"						"섬광탄으로 공격"		
-		
-		"quest_action_plural_act_pick_up_hostage"						"인질을 픽업"
-		"quest_action_singular_act_pick_up_hostage"						"인질을 픽업"		
-		
-		"quest_action_plural_act_rescue_hostage"						"인질을 구출"
-		"quest_action_singular_act_rescue_hostage"						"인질을 구출"		
-		
-		"quest_action_plural_act_defuse_bomb"							"폭탄을 해체"
-		"quest_action_singular_act_defuse_bomb"							"폭탄을 해체"		
-		
-		"quest_action_plural_act_plant_bomb"							"폭탄을 설치"
-		"quest_action_singular_act_plant_bomb"							"폭탄을 설치"
-
-		"quest_action_singular_act_income"								"자금"
-		"quest_action_plural_act_income"								"자금"
-		
-		"quest_action_singular_act_survivalincome"						"자금"
-		"quest_action_plural_act_survivalincome"						"자금"
-
-		"quest_action_singular_act_spend"								"자금"
-		"quest_action_plural_act_spend"									"자금"
-
-		"quest_action_singular_act_parachute_landed"					"초 동안 낙하산을 타고 활공"
-		"quest_action_plural_act_parachute_landed"						"초 동안 낙하산을 타고 활공"
-
-		"quest_action_singular_act_bumpmine_launch"						"범프 지뢰를 폭파"
-		"quest_action_plural_act_bumpmine_launch"						"범프 지뢰를 폭파"
-
-		"quest_action_singular_headshot_kill"							"헤드샷 처치"
-		"quest_action_plural_headshot_kill"								"헤드샷 처치"
-
-		"quest_action_singular_multikill"								"다수 처치 라운드를 달성"
-		"quest_action_plural_multikill"									"다수 처치 라운드를 달성"
-
-		"quest_action_singular_act_apply_graffiti"						"그래피티"
-		"quest_action_plural_act_apply_graffiti"						"그래피티"
-
-		"quest_action_singular_act_detonate_smokegrenade"				"연막탄"
-		"quest_action_plural_act_detonate_smokegrenade"					"연막탄"
-
-		"quest_action_singular_act_detonate_molotov"					"화염병"
-		"quest_action_plural_act_detonate_molotov"						"화염병"
-
-		"quest_action_singular_act_use_healthshot"						"의료 주사"
-		"quest_action_plural_act_use_healthshot"						"의료 주사"
-		
-		"quest_action_singular_act_retakes_picked_enemy_card"			"적군 카드 선택"
-		"quest_action_plural_act_retakes_picked_enemy_card"				"적군 카드 선택"
-
-		"quest_action_singular_act_retakes_picked_mvp_card"				"MVP 카드 선택"
-		"quest_action_plural_act_retakes_picked_mvp_card"				"MVP 카드 선택"
-//
-
-		"quest_action_plural_bomb_plants_or_defuses"					"폭탄 설치 또는 해체"
-		"quest_action_singular_bomb_plants_or_defuses"					"폭탄 설치 또는 해체"
-		
-		"quest_action_plural_rescue_or_kill_hostages"					"인질 구출 혹은 구출자를 처치"
-		"quest_action_singular_rescue_or_kill_hostages"					"인질 구출 혹은 구출자를 처치"		
-		
-		"quest_action_plural_damage_burn"								"화상 피해를"
-		"quest_action_singular_damage_burn"								"화상 피해량 점수를 획득"
-
-		"quest_commandverb_default"										"하세요"
-		"quest_commandverb_defaultCT"									"CT로"
-		"quest_commandverb_defaultT"									"T로"
-		"quest_commandverb_deal"										"가하세요"
-		"quest_commandverb_earn"										"획득하세요"
-		"quest_commandverb_earnT"										"T로"
-		"quest_commandverb_spend"										"지출하세요"
-		"quest_commandverb_execute"										"실행하세요"
-		"quest_commandverb_destroy"										"파괴하세요"
-		"quest_commandverb_apply"										"적용하세요"
-		"quest_commandverb_throw"										"투척하세요"
+		"quest_action_plural_act_win_round"			"라운드 승리"
+		"quest_action_singular_act_win_round"		"라운드 승리"	
 
 		////
-
-		"quest_condition_item_own"										"자신의"
-		"quest_condition_item_borrowed"									"다른 플레이어의"									
-		"quest_condition_item_borrowed_teammate"						"팀원의"									
-		"quest_condition_item_borrowed_enemy"							"적의"									
-		"quest_condition_item_borrowed_victim"							"희생자의"									
-		"quest_condition_item_nondefault"								"예쁜"
-
-		"quest_LoadoutSlot_Melee"										"칼"
-		"quest_LoadoutSlot_Secondary"									"권총"
-		"quest_LoadoutSlot_SMG"											"기관단총"
-		"quest_LoadoutSlot_Rifle"										"소총"
-		"quest_LoadoutSlot_Heavy"										"중화기"
-		"quest_LoadoutSlot_Grenade"										"수류탄"
-
-		"quest_item_default"											"무기"
-
-////
-		"quest_event_ending"											"종료 %s1분 전"
-		"quest_event_soon_hours"										"시작 %s1시간 전"
-		"quest_event_soon_hms"											"시작까지 남은 시간 %s1:%s2:%s3"
-		"quest_event_today"												"오늘 %s1:%s2"
-		"quest_event_future"											"%s1 시작까지 남은 시간 %s2 %s3:%s4"
-		"quest_event_timer"												"시작까지 남은 시간 %s1"
-
-////
-
-
-
-
-////////////////////////// generalized quest strings //////////////////////////////
-///
-///	Use these if applicable. If not, use this pattern to create new ones.
-///
-///
-///
-
-		"quest_default_0_items_desc" "<b>%gamemode% 모드: %location%</b> 매치에서 %target% %actions%%commandverb%."		
-		"quest_default_1_items_desc" "<b>%gamemode% 모드: %location%</b> 매치에서 아무 <i>%item_quality%</i> <b>%item1%</b> 무기로 %target% %actions%%commandverb%."
-		"quest_default_2_items_desc" "<b>%gamemode% 모드: %location%</b> 매치에서 아무 <i>%item_quality%</i> <b>%item1%</b> 또는 <b>%item2%</b> 무기로 %target% %actions%%commandverb%."
-		"quest_default_3_items_desc" "<b>%gamemode% 모드: %location%</b> 매치에서 아무 <i>%item_quality%</i> <b>%item1%</b>, <b>%item2%</b> 또는 <b>%item3%</b> %item_quality% 무기로 %target% %actions%%commandverb%."
-		"quest_default_4_items_desc" "<b>%gamemode% 모드: %location%</b> 매치에서 아무 <i>%item_quality%</i> <b>%item1%</b>, <b>%item2%</b>, <b>%item3%</b> 또는 <b>%item4%</b> 무기로 %target% %actions%%commandverb%."
-
-		"quest_default_hud_0_items_desc" "%target% %actions%%commandverb%."
-		"quest_default_hud_1_items_desc" "<i>%item_quality%</i> <b>%item1%</b> 무기로 %target% %actions%%commandverb%."
-		"quest_default_hud_2_items_desc" "<i>%item_quality%</i> <b>%item1%</b>/<b>%item2%</b> %target% %actions%%commandverb%."
-		"quest_default_hud_3_items_desc" "%target% %actions%%commandverb%: <i>%item_quality%</i> <b>%item1%</b>/<b>%item2%</b>/<b>%item3%</b>"
-		"quest_default_hud_4_items_desc" "%target% %actions%%commandverb%: <i>%item_quality%</i> <b>%item1%</b>/<b>%item2%</b>/<b>%item3%</b>/<b>%item4%</b>"
-
-/////////////////////////////////////////////////////////
-
-/////////////////////////////// Quest Strings via Dialog Vars //////
-///
-/// Used starting with Op09 - the default descriptions should handle most "Perform X Action in GameMode: Location" quests.
-///
-///
-		"quest_default_var_desc" "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 적군 {d:points}명을 {s:target} {s:actions}{s:commandverb}."		
-		"quest_single_var_desc" "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 적군 {d:points}명을 {s:target} {s:actions}{s:commandverb}."		
-		"quest_default_no_map_var_desc" "<b>{s:gamemode} 모드</b>에서 적군 {d:points}명을 {s:target} {s:actions}{s:commandverb}."
-		"quest_single_no_map_var_desc" "<b>{s:gamemode} 모드</b> 매치에서 적군 {d:points}명을 {s:target} {s:actions}{s:commandverb}."		
-
-		"quest_weapon_var_desc" "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 {s:weapon} 무기로 적군 {d:points}명을 {s:target} {s:actions}{s:commandverb}."
-		"quest_weapon_single_var_desc" "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 {s:weapon} 무기로 적군{d:points}명을 {s:target} {s:actions}{s:commandverb}."
-		"quest_weapon_no_map_var_desc" "<b>{s:gamemode} 모드</b>에서 {s:weapon} 무기로 적군 {d:points}명을 {s:target} {s:actions}{s:commandverb}."
-		"quest_weapon_category_no_map_var_desc" "<b>{s:gamemode} 모드</b>에서 아무 {s:weapon} 무기로 적군 {d:points}명을 {s:target} {s:actions}{s:commandverb}."
-
-		"quest_flyingscoutsman_var_desc"	"<b>비행 저격수 모드: {s:location}</b> 매치에서 {s:target} {d:points}명 {s:actions}{s:commandverb}."
-		"quest_flyingscoutsman_no_map_var_desc"	"<b>비행 저격수 모드</b>에서 {s:target} {d:points}명 {s:actions}{s:commandverb}."
-
-		"quest_retakes_var_desc"	"<b>탈환 모드: {s:location}</b> 매치에서 {s:target} {d:points}명 {s:actions}{s:commandverb}."
-		"quest_retakes_no_map_var_desc"	"<b>탈환 모드</b>에서 {s:target} {d:points}명 {s:actions}{s:commandverb}."
-
-		"quest_armsrace_var_desc"	 		"<b>무기 레이스 모드</b>에서 {s:target} {d:points}명 {s:actions}{s:commandverb}."
-		"quest_armsrace_weapon_var_desc"	"<b>무기 레이스 모드</b>에서 아무 {s:weapon} 무기로 적군을 {d:points}명 {s:target} {s:actions}{s:commandverb}."
-
-		// quest exceptions:
-		"quest_931_var_desc"	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 {s:weapon} 무기로 적군 {d:points}명을 처치하세요."
-		"quest_932_var_desc"	 "<b>비행 저격수 모드</b>에서 낙하 상태로 적군 {d:points}명을 처치하세요."
-		"quest_933_var_desc"	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 {d:points}번 승리하세요."
-		"quest_934_var_desc"	 "<b>수호자 모드: {s:location}</b> 매치에서 {s:weapon} 무기로 적군 {s:kills}명을 처치하세요."
-		"quest_935_var_desc"	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 {s:weapon} 무기로 적군 {d:points}명을 처치하세요."
-		"quest_936_var_desc"	 "<b>{s:gamemode} 모드</b>에서 {s:weapon} 무기로 적군 {d:points}명을 처치하세요."
-		"quest_937_var_desc"	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 적군의 구역에 그래피티를 {d:points}번 남기세요."
-		"quest_938_var_desc"	 "<b>{s:gamemode} 모드</b>에서 무기 레이스 선두를 {d:points}명 처치하세요."
-		"quest_939_var_desc"	 "<b>수호자 모드: {s:location}</b> 매치에서 {s:weapon} 무기로 적군 {s:kills}명을 처치하세요."
-		"quest_940_var_desc"	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 {d:points}번 승리하세요."
-		"quest_941_var_desc"	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 권총전을 {d:points}번 승리하세요."
-		"quest_942_var_desc"	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 {s:weapon} 무기로 적군 {d:points}명을 처치하세요."
-		"quest_943_var_desc"	 "<b>비행 저격수 모드</b>에서 적군 {d:points}명을 처치하세요."
-		"quest_944_var_desc"	 "<b>{s:gamemode} 모드</b> 매치에서 {d:points} 자금을 사용하세요."
-		"quest_945_var_desc"	 "<b>수호자 모드: {s:location}</b> 매치에서 적군 {s:kills}명을 처치하세요."
-		"quest_946_var_desc"	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 {d:points}번 승리하세요."
-		"quest_947_var_desc"	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 {d:points}번 승리하세요."
-		"quest_948_var_desc"	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 인질을 {d:points}번 구출하거나 인질 구출자를 {d:points}명 처치하세요."
-        "quest_949_var_desc"	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 {s:weapon} 무기로 적군 {d:points}명을 처치하세요."
-        "quest_950_var_desc"	 "<b>{s:gamemode} 모드</b>에서 아무 중화기로 적군 {d:points}명을 처치하세요."
-        "quest_951_var_desc"	 "<b>수호자 모드: {s:location}</b> 매치에서 {s:weapon} 무기로 적군 {s:kills}명을 처치하세요. 플레이어는 <b>{s:extraequip0}</b> 장비로 시작합니다."
-        "quest_952_var_desc"	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 {d:points}번 승리하세요."
-        "quest_953_var_desc"	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 {d:points}번 승리하세요."
-        "quest_954_var_desc"	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 {s:target} 무기로 적군 {d:points}명을 처치하세요."
-		"quest_955_var_desc"	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 닭과 친구를 {d:points}번 맺으세요."
-		"quest_956_var_desc" 	 "<b>{s:gamemode} 모드</b>에서 {d:points}초 동안 낙하산을 타고 활공하세요."
-		"quest_957_var_desc" 	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 {s:weapon} 무기로 적군 {d:points}명을 처치하세요."
-		"quest_958_var_desc" 	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 {d:points}번 승리하세요(스크리미지)."
-		"quest_959_var_desc" 	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 적군 {d:points}명을 처치하세요."
-		"quest_960_var_desc"	 "<b>수호자 모드: {s:location}</b> 매치에서 {s:weapon} 무기로 적군 {s:kills}명을 처치하세요."
-		"quest_961_var_desc" 	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 권총으로 적군 {d:points}명을 처치하세요."
-		"quest_962_var_desc" 	 "<b>{s:gamemode} 모드 </b> 매치에서 자금을 사용하지 않고 적군 {d:points}명을 처치하세요."
-		"quest_963_var_desc"	 "<b>수호자 모드: {s:location}</b> 매치에서 {s:weapon} 무기로 적군 {s:kills}명을 처치하세요."
-		"quest_964_var_desc" 	 "<b>{s:gamemode} 모드</b>에서 권총전을 {d:points}번 승리하세요."
-		"quest_965_var_desc" 	 "<b>수호자 모드: {s:location}</b> 매치에서 {s:weapon} 무기로 적군 {s:kills}명을 처치하세요."
-		"quest_966_var_desc" 	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 ${d:points}를 획득하세요."
-		"quest_967_var_desc" 	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 {s:weapon} 무기로 적군 {d:points}명을 처치하세요."
-		"quest_968_var_desc"	 "<b>{s:gamemode} 모드</b>에서 저격소총으로 적군 {d:points}명을 처치하세요."
-		"quest_969_var_desc" 	 "<b>수호자 모드: {s:location}</b> 매치에서 조준경을 사용하지 않고 적군 {s:kills}명을 {s:weapon} 무기로 처치하세요."
-		"quest_970_var_desc" 	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 {d:points}번 승리하세요."
-		"quest_971_var_desc"	 "<b>수호자 모드: {s:location}</b> 매치에서 {s:weapon} 무기로 적군 {s:kills}명을 처치하세요."
-		"quest_972_var_desc" 	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 적군 {d:points}명을 헤드샷으로 처치하세요."
-		"quest_973_var_desc" 	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 적군 {d:points}명을 처치하세요."
-		"quest_974_var_desc" 	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 적군 {d:points}명을 헤드샷으로 처치하세요."
-		"quest_975_var_desc"     "<b>수호자 모드: {s:location}</b> 매치에서 CT 무기로 적군 {s:kills}명을 처치하세요."
-		"quest_976_var_desc" 	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 {d:points}번 승리하세요."
-		"quest_977_var_desc"	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 {d:points}번 승리하세요."
-		"quest_978_var_desc" 	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 {s:weapon} 무기로 적군 {d:points}명을 처치하세요."
-		"quest_979_var_desc"	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 적군을 4연속 이상 처치하세요."		
-		"quest_980_var_desc" 	 "<b>{s:gamemode} 모드</b>에서 4위 이상을 달성하세요."
-		"quest_981_var_desc"     "<b>수호자 모드: {s:location}</b> 매치에서 <i>방탄복</i>없이 {s:weapon} 무기로 적군 {s:kills}명을 헤드샷으로 처치하세요."
-		"quest_982_var_desc" 	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 {s:weapon} 무기로 적군 {d:points}명을 헤드샷으로 처치하세요."
-		"quest_983_var_desc" 	 "<b>{s:gamemode} 모드</b>에서 적군 {d:points}명을 헤드샷으로 처치하세요."
-		"quest_984_var_desc" 	 "<b>{s:gamemode} 모드</b>에서 MVP로 {d:points}번 선정되세요."
-		"quest_985_var_desc" 	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 기본 권총으로 적군 {d:points}명을 처치하세요."
-		"quest_986_var_desc"     "<b>수호자 모드: {s:location}</b> 매치에서 {s:weapon} 무기로 적군 {s:kills}명을 처치하세요."
-		"quest_987_var_desc"	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 적군의 기본 소총으로 적군 {d:points}명을 처치하세요."
-		"quest_988_var_desc"     "<b>무기 레이스 모드</b>에서 칼로 적군 {d:points}명을 처치하세요."
-		"quest_989_var_desc" 	 "<b>{s:gamemode} 모드</b>에서 유틸리티 피해량 {d:points}을 가하세요."
-		"quest_990_var_desc" 	 "<b>{s:gamemode} 모드</b>에서 에이스로 {d:points}번 선정되세요."
-		"quest_991_var_desc" 	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 <b>Tec-9 또는 파이브 세븐</b>으로 적군 {d:points}명을 처치하세요."
-		"quest_992_var_desc"     "<b>수호자 모드: {s:location}</b> 매치에서 {s:weapon} 무기로 적군 {s:kills}명을 처치하세요."
-		"quest_993_var_desc"	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 유틸리티 피해량을 {d:points} 입히세요."
-		"quest_994_var_desc" 	 "<b>{s:gamemode} 모드</b>에서 적군 {d:points}명을 처치하세요."
-		"quest_995_var_desc" 	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 {d:points}번 승리하세요."
-		"quest_996_var_desc"     "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 적군 {d:points}명을 처치하세요."
-		"quest_997_var_desc" 	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 갈릴 돌격소총 또는 파마스로 적군 {d:points}명을 처치하세요."
-		"quest_998_var_desc"     "<b>수호자 모드: {s:location}</b> 매치에서 {s:weapon} 무기로 적군 {s:kills}명을 처치하세요."
-		"quest_999_var_desc" 	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 {s:weapon} 무기로 적군 {d:points}명을 처치하세요."
-		"quest_1000_var_desc" 	 "<b>{s:gamemode} 모드</b>에서 적군의 드론을 {s:actions}하여 {d:points}번 파괴하세요."
-		"quest_1001_var_desc" 	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 MVP로 {d:points}번 선정되세요."
-		"quest_1002_var_desc"	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 {d:points}번의 라운드 안에 적군을 2연속 이상 처치하세요."
-		"quest_1003_var_desc" 	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 {s:weapon} 무기로 적군 {d:points}명을 처치하세요."
-		"quest_1004_var_desc"    "<b>수호자 모드: {s:location}</b> 매치에서 {s:weapon} 무기로 적군 {s:kills}명을 처치하세요."
-		"quest_1005_var_desc" 	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 {d:points}번 승리하세요."
-		"quest_1006_var_desc"    "<b>무기 레이스 모드</b>에서 적군 {d:points}명을 처치하세요."
-		"quest_1007_var_desc" 	 "<b>{s:gamemode} 모드</b>에서 {s:weapon} 무기로 잠긴 문을 {s:actions}하여 {d:points}번 파괴하세요."
-		"quest_1008_var_desc" 	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 AK-47 또는 M4A4로 적군 {d:points}명을 처치하세요."
-		"quest_1009_var_desc" 	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 {d:points}번 승리하세요."
-		"quest_1010_var_desc"	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 {s:weapon} 무기로 적군 {d:points}명을 처치하세요."
-		"quest_1011_var_desc"    "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 전반전 또는 후반전 라운드를 5번 이상 승리하세요."
-		"quest_1012_var_desc" 	 "<b>{s:gamemode} 모드</b>에서 범프 지뢰를 {d:points}번 밟으세요."
-		"quest_1013_var_desc" 	 "<b>{s:gamemode} 모드</b>에서 {s:weapon} 무기로 적군 {d:points}명을 처치하세요."
-		"quest_1014_var_desc"    "<b>수호자 모드: {s:location}</b> 매치에서 {s:weapon} 무기로 적군 {s:kills}명을 처치하세요."
-		"quest_1015_var_desc" 	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 $2000 이상을 사용하지 않고 적군 {d:points}명을 처치하세요."
-		"quest_1016_var_desc"	 "<b>{s:gamemode} 모드</b>에서 $3,000 이상을 유지하세요."
-		"quest_1017_var_desc" 	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 {d:points}번 승리하세요."
-		"quest_1018_var_desc"    "<b>수호자 모드: {s:location}</b> 매치에서 {s:weapon} 무기로 적군 {s:kills}명을 처치하세요."
-		"quest_1019_var_desc" 	 "<b>무기 레이스 모드</b>에서 아무 {s:weapon} 무기로 적군 {d:points}명을 처치하세요."
-		"quest_1020_var_desc" 	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 {s:weapon} 무기로 적군 {d:points}명을 처치하세요."
-		"quest_1021_var_desc" 	"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 닭 {d:points}마리를 처치하세요."
-		"quest_1022_var_desc" 	"<b>{s:gamemode} 모드</b>에서 드럼통 {d:points}개를 폭파하세요."
-		"quest_1023_var_desc" 	"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 {d:points}번 승리하세요."
-		"quest_1024_var_desc" 	"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 유리 {d:points}장을 파괴하세요."
-		"quest_1025_var_desc" 	"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 {d:points}번 승리하세요."
-		"quest_1027_var_desc"	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 적군의 시작 위치에 그래피티를 {d:points}번 남기세요."
-		"quest_1028_var_desc"	 "<b>{s:gamemode} 모드: {s:location}</b>의 <i>바나나</i> 또는 <i>아파트</i>에서 적군 {d:points}명을 처치하세요."
-		"quest_1029_var_desc"	 "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 연막탄을 전략적으로 {d:points}번 투척하세요."
-		"quest_1030_var_desc"	 "피닉스 연구소에서 위험지대 바이러스 샘플을 되찾으세요."
-		"quest_1031_var_desc"	 "피닉스 생산 시설을 파괴하고 프란즈 크리겔드를 제거하세요."
-		
-		"quest_1098_var_desc"                                  "<b>{s:location}</b> 매치에서 라운드를 승리하세요."
-		"quest_1032_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
-		"quest_1033_var_desc"                                  "<b>수호자 모드: {s:location}</b> 매치에서 적군 {s:kills}명을 처치하세요."
-		"quest_1034_var_desc"                                  "피닉스 커넥션을 포착했습니다! 그들이 무엇을 계획하고 있는지 알아내세요."
-		"quest_1035_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 AK-47, M4A4, M4A1-S로 적군을 처치하세요."
-		"quest_1036_var_desc"                                  "<b>{s:location}</b> 매치에서 라운드를 승리하세요."
-		"quest_1037_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 적군을 처치하세요."
-		"quest_1099_var_desc"                                  "<b>{s:location}</b> 매치에서 MVP로 선정되세요."
-		"quest_1038_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
-		"quest_1039_var_desc"                                  "<b>수호자 모드: {s:location}</b> 매치에서 권총으로 적군 {s:kills}명을 처치하세요."
-		"quest_1040_var_desc"                                  "<b>{s:location}</b> 매치에서 {s:weapon} 무기로 적군을 처치하세요."
-		"quest_1041_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 {s:weapon} 무기로 적군을 처치하세요."
-		"quest_1042_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
-		"quest_1043_var_desc"                                  "<b>수호자 모드: {s:location}</b> 매치에서 {s:weapon} 무기로 적군 {s:kills}명을 처치하세요."
-		"quest_1044_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 최소 15m 거리 내에 있는 적군을 처치하세요."
-		"quest_1045_var_desc"                                  "<b>{s:location}</b> 매치에서 아무 저격소총으로 적군을 처치하세요."
-		"quest_1046_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 적군을 헤드샷으로 처치하세요."
-		"quest_1047_var_desc"                                  "<b>수호자 모드: {s:location}</b> 매치에서 {s:weapon} 무기로 적군 {s:kills}명을 처치하세요."
-		"quest_1048_var_desc"                                  "<b>{s:location}</b> 매치에서 수류탄으로 피해를 입히세요."
-		"quest_1049_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 자금을 획득하세요."
-		"quest_1050_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
-		"quest_1051_var_desc"                                  "<b>수호자 모드: {s:location}</b> 매치에서 적군 {s:kills}명을 처치하세요."
-		"quest_1052_var_desc"                                  "<b>{s:location}</b> 매치에서 적군 카드를 선택하세요."
-		"quest_1053_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 특정한 장소에 연막탄을 터트리세요."
-		"quest_1054_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
-		"quest_1055_var_desc"                                  "<b>수호자 모드: {s:location}</b> 매치에서 테러리스트 무기로 적군 {s:kills}명을 처치하세요."
-		"quest_1056_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 터널 또는 궁전에서 적군을 처치하세요."
-		"quest_1057_var_desc"                                  "<b>{s:location}</b> 매치에서 적군을 처치하세요."
-		"quest_1058_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
-		"quest_1059_var_desc"                                  "<b>Guardian: {s:location}</b> 매치에서 기관단총으로 적군 {s:kills}명을 처치하세요."
-		"quest_1060_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 기관단총으로 적군을 처치하세요."
-		"quest_1061_var_desc"                                  "<b>{s:location}</b> 매치에서 기관단총으로 적군을 처치하세요."
-		"quest_1062_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
-		"quest_1063_var_desc"                                  "<b>수호자 모드: {s:location}</b> 매치에서 산탄총으로 적군 {s:kills}명을 처치하세요."
-		"quest_1064_var_desc"                                  "<b>{s:location}</b> 매치에서 MVP 카드를 선택하세요."
-		"quest_1065_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 지정된 위치에 그래피티를 남기세요."
-		"quest_1100_var_desc"                                  "<b>{s:location}</b> 매치에서 라운드를 승리하세요."
-		"quest_1066_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
-		"quest_1067_var_desc"                                  "<b>수호자 모드: {s:location}</b> 매치에서 AUG로 적군 {s:kills}명을 헤드샷으로 처치하세요."
-		"quest_1068_var_desc"                                  "<b>{s:location}</b> 매치에서 섬광탄으로 적군의 시야를 방해하세요."
-		"quest_1069_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 지정된 위치에 그래피티를 남기세요."
-		"quest_1101_var_desc"                                  "<b>{s:location}</b> 매치에서 라운드를 승리하세요."
-		"quest_1070_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
-		"quest_1071_var_desc"                                  "<b>수호자 모드: {s:location}</b> 매치에서 10m 거리 내에 있는 적군 {s:kills}명을 처치하세요."
-		"quest_1072_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 10m 거리 내에 있는 적군을 처치하세요."
-		"quest_1073_var_desc"                                  "<b>{s:location}</b> 매치에서 적군을 처치하세요."		
-		"quest_1074_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
-		"quest_1075_var_desc"                                  "<b>수호자 모드: {s:location}</b> 매치에서 적군 {s:kills}명을 처치하세요."
-		"quest_1076_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 적군을 헤드샷으로 처치하세요."
-		"quest_1077_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 중화기로 적군을 처치하세요."
-		"quest_1102_var_desc"                                  "<b>{s:location}</b> 매치에서 라운드를 승리하세요."
-		"quest_1078_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
-		"quest_1079_var_desc"                                  "<b>수호자 모드의 {s:location}</b> 매치에서 SSG 08 저격소총으로 적군 {s:kills}명을 처치하세요."
-		"quest_1080_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 닭을 처치하세요."
-		"quest_1081_var_desc"                                  "<b>{s:location}</b> 매치에서 적군을 처치하세요."
-		"quest_1082_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
-		"quest_1083_var_desc"                                  "<b>수호자 모드: {s:location}</b> 매치에서 MAG-7으로 적군 {s:kills}명을 처치하세요."
-		"quest_1084_var_desc"                                  "<b>{s:location}</b> 매치에서 적군을 처치하세요."
-		"quest_1085_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 수류탄 피해를 입히세요."
-		"quest_1085_v2_var_desc"                   			   "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 수류탄 피해를 입히세요."
-		"quest_1086_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
-		"quest_1087_var_desc"                                  "<b>수호자 모드: {s:location}</b> 매치에서 적군의 무기로 적군 {s:kills}명을 처치하세요."
-		"quest_1088_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 특정 위치에서 적군을 처치하세요."
-		"quest_1089_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 조준경을 사용하여 적군을 처치하세요."
-		"quest_1089_v2_var_desc"                               "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 조준경을 사용하여 적군을 처치하세요."
-		"quest_1090_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
-		"quest_1091_var_desc"                                  "<b>수호자 모드: {s:location}</b> 매치에서 적군 {s:kills}명을 처치하세요."
-		"quest_1092_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 보너스 무기로 점수를 획득하세요."
-		"quest_1092_v2_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 보너스 무기로 점수를 획득하세요."
-		"quest_1093_var_desc"                                  "<b>{s:gamemode} 모드</b>에서 자금을 사용하세요."
-		"quest_1094_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
-		"quest_1095_var_desc"                                  "<b>수호자 모드: {s:location}</b> 매치에서 적군 {s:kills}명을 처치하세요."
-		"quest_1095_v2_var_desc"                                  "<b>수호자 모드: {s:location}</b> 매치에서 UMP-45로 적군 {s:kills}명을 처치하세요."
-		"quest_1096_var_desc"                                  "<b>{s:location}</b> 매치에서 라운드를 승리하세요."
-		"quest_1097_var_desc"                                  "임무를 완수하세요."
-		"quest_1097_v2_var_desc"                                  "<i>...망막이 밝은 빛에 빠르게 적응하며, 일시적으로 시야를 방해합니다.</i>"
-		"quest_1103_var_desc"                                  "<b>{s:gamemode} 모드: {s:location}</b> 매치에서 섬광탄으로 적군의 시야를 방해하세요."
-
-// OP11 Week 1 Missions
-		"quest_1106_var_desc"                              "<b>수호자 모드: {s:location}</b> 매치에서 공습에 맞서 살아남으세요."
-		"quest_1107_var_desc"                              "<b>위험지대 모드: {s:location}</b> 매치에서 여러 임무를 완수하세요."
-		"quest_1108_var_desc"                              "여러 레이더 위치에서 처치하기"
-
-// OP11 Week 2 Missions
-		"quest_1111_var_desc"                              "<b>수호자 모드: {s:location}</b> 매치에서 적군을 처치하세요."
-
-// OP11 Week 3 Missions
-		"quest_1115_var_desc"                              "<b>수호자 모드: {s:location}</b> 매치에서 저격소총으로 적군을 처치하세요."
-		"quest_1117_var_desc"                              "여러 장소에 그래피티 남기기"
-
-// OP11 Week 4 Missions
-		"quest_1119_var_desc"                              "<b>수호자 모드: {s:location}</b> 매치에서 산탄총으로 적군을 처치하세요."
-		"quest_1120_var_desc"                              "여러 레이더 위치에서 처치하기"
-
-// OP11 Week 5 Missions
-		"quest_1123_var_desc"                              "<b>수호자 모드: {s:location}</b> 매치에서 기관단총으로 적군을 처치하세요."
-		"quest_1125_var_desc"                              "다양한 임무 완수"
-
-// OP11 Week 6 Missions
-		"quest_1127_var_desc"                              "<b>수호자 모드: {s:location}</b> 매치에서 소총으로 적군을 처치하세요."
-		"quest_1128_var_desc"                              "<b>데스매치 모드: {s:location}</b> 매치에서 적군을 연속 처치하세요."
-
-// OP11 Week 7 Missions
-		"quest_1131_var_desc"                              "<b>수호자 모드: {s:location}</b> 매치에서 적군을 처치하세요."
-		"quest_1132_var_desc"                              "여러 레이더 위치에서 처치하기"
-
-// OP11 Week 8 Missions
-		"quest_1135_var_desc"                              "<b>수호자 모드: {s:location}</b> 매치에서 산탄총으로 적군을 처치하세요."
-		"quest_1137_var_desc"                              "유틸리티로 여러 목표 완수하기"
-
-// OP11 Week 9 Missions
-		"quest_1139_var_desc"                              "<b>수호자 모드: {s:location}</b> 매치에서 권총으로 적군을 처치하세요."
-		"quest_1140_var_desc"                              "여러 장소에 그래피티 남기기"
-
-// OP11 Week 10 Missions
-		"quest_1143_var_desc"                              "<b>수호자 모드: {s:location}</b> 매치에서 AUG로 처치하세요."
-		"quest_1144_var_desc"                              "여러 레이더 위치에서 처치하기"
-
-// OP11 Week 11 Missions
-		"quest_1147_var_desc"                              "<b>수호자 모드: {s:location}</b> 매치에서 MP9으로 적군을 처치하세요."
-
-// OP11 Week 12 Missions
-		"quest_1151_var_desc"                              "<b>수호자 모드: {s:location}</b> 매치에서 기관단총으로 적군을 처치하세요."
-		"quest_1152_var_desc"                              "연속 처치하기"
-
-// OP11 Week 13 Missions
-		"quest_1155_var_desc"                              "<b>수호자 모드: {s:location}</b> 매치에서 적군의 무기로 적군을 처치하세요."
-		"quest_1156_var_desc"                              "여러 레이더 위치에서 처치하기"
-		"quest_1157_var_desc"                              "여러 장소에 그래피티 남기기"
-
-// OP11 Week 14 Missions
-		"quest_1159_var_desc"                              "<b>수호자 모드: {s:location}</b> 매치에서 돌파용 폭약으로 적군을 처치하세요."
-
-// OP11 Week 15 Missions
-		"quest_1163_var_desc"                              "<b>수호자 모드: {s:location}</b> 매치에서 중화기로 처치하세요."
-
-// OP11 Week 16 Missions
-		"quest_1167_var_desc"                              "<b>수호자 모드: {s:location}</b> 매치에서 적군을 처치하세요."
-		"quest_1169_var_desc"                              "립타이드 작전 수집품의 무기 4개 중 1개를 사용하여 처치하기"
-
-
-// OP11 Week 1 Sub-Missions
-		"quest_1200_var_desc"                              "매치 {d:points}번 승리하기"
-		"quest_1201_var_desc"                              "라운드 {d:points}번 승리하기"
-		"quest_1202_var_desc"                              "매치에서 유틸리티 피해량 {d:points} 입히기"
-		"quest_1203_var_desc"                              "유틸리티 피해량 {d:points} 입히기"
-		"quest_1204_var_desc"                              "적군 드론 파괴하기"
-		"quest_1205_var_desc"                              "드럼통 폭발시키기"
-		"quest_1206_var_desc"                              "유리 부수기"
-		"quest_1207_var_desc"                              "급수탑 위에서 범프 지뢰 폭파하기"
-		"quest_1208_var_desc"                              "인질 구출하기"
-		"quest_1209_var_desc"                              "T 시작 지점에서 처치하기"
-		"quest_1210_var_desc"                              "T 경사로에서 처치하기"
-		"quest_1211_var_desc"                              "폭파 지점 A에서 처치하기"
-		"quest_1212_var_desc"                              "CT 시작 지점에서 처치하기"
-		"quest_1213_var_desc"                              "상점에서 처치하기"
-		"quest_1214_var_desc"                              "폭파 지점 B에서 처치하기"
-		"quest_1215_var_desc"                              "좁은 통로에서 처치하기"
-		"quest_1216_var_desc"                              "중부에서 처치하기"
-		"quest_1217_var_desc"                              "계단에서 처치하기"
-		"quest_1218_var_desc"                              "폭파 지점 A에서 처치하기(다시!)"
-		"quest_1219_var_desc"                              "매치에서 멀티 킬을 {d:points}번 성공하세요."
-		"quest_1220_var_desc"                              "적군 {d:points}명 처치하기"
-
-// OP11 Week 2 Sub-Missions
-		"quest_1221_var_desc"                              "매치 {d:points}번 승리하기"
-		"quest_1222_var_desc"                              "라운드 {d:points}번 승리하기"
-		"quest_1223_var_desc"                              "매치에서 적군 {d:points}명 헤드샷으로 처치하기"
-		"quest_1224_var_desc"                              "적군 {d:points}명 헤드샷으로 처치하기"
-		"quest_1225_var_desc"                              "수류탄 피해 가하기"
-		"quest_1226_var_desc"                              "적군 {d:points}명 처치하기"
-
-// OP11 Week 3 Sub-Missions		
-		"quest_1227_var_desc"                              "매치 {d:points}번 승리하기"
-		"quest_1228_var_desc"                              "라운드 {d:points}번 승리하기"
-		"quest_1229_var_desc"                              "매치에서 피해량 {d:points} 입히기"
-		"quest_1230_var_desc"                              "피해량 {d:points} 입히기"
-		"quest_1231_var_desc"                              "CT 시작 지점에 그래피티 남기기"
-		"quest_1232_var_desc"                              "폭파 지점 A에 그래피티 남기기"
-		"quest_1233_var_desc"                              "구덩이에 그래피티 남기기"
-		"quest_1234_var_desc"                              "폭파 지점 B에 그래피티 남기기"
-		"quest_1235_var_desc"                              "중부 문에 그래피티 남기기"
-		"quest_1236_var_desc"                              "T 시작 지점에 그래피티 남기기"
-		"quest_1237_var_desc"                              "좁은 통로에 그래피티 남기기"
-		"quest_1238_var_desc"                              "상단 터널에 그래피티 남기기"
-		"quest_1239_var_desc"                              "긴 쪽 문에 그래피티 남기기"
-		"quest_1240_var_desc"                              "중부에 그래피티 남기기"
-
-// OP11 Week 4 Sub-Missions		
-		"quest_1241_var_desc"                              "매치 {d:points}번 승리하기"
-		"quest_1242_var_desc"                              "라운드 {d:points}번 승리하기"
-		"quest_1243_var_desc"                              "실외에서 처치하기"
-		"quest_1244_var_desc"                              "폭파 지점 A에서 처치하기"
-		"quest_1245_var_desc"                              "로비에서 처치하기"
-		"quest_1246_var_desc"                              "경사로에서 처치하기"
-		"quest_1247_var_desc"                              "폭파 지점 B에서 처치하기"
-		"quest_1248_var_desc"                              "기밀에서 처치하기"
-		"quest_1249_var_desc"                              "실외에서 처치하기(다시!)"
-		"quest_1250_var_desc"                              "T 시작 지점에서 처치하기"
-		"quest_1251_var_desc"                              "사일로 위에서 처치하기"
-		"quest_1252_var_desc"                              "CT 시작 지점에서 처치하기"
-		"quest_1253_var_desc"                              "매치에서 라운드 시작 후 첫 5발 안에 적군을 {d:points}번 처치하세요."
-		"quest_1254_var_desc"                              "적군 {d:points}명 처치하기"
-
-// OP11 Week 5 Sub-Missions		
-		"quest_1255_var_desc"                              "매치에서 MVP로 {d:points}번 선정되기"
-		"quest_1256_var_desc"                              "라운드 {d:points}번 승리하기"
-		"quest_1257_var_desc"                              "매치에서 적군 {d:points}명 헤드샷으로 처치하기"
-		"quest_1258_var_desc"                              "적군 {d:points}명 헤드샷으로 처치하기"
-		"quest_1259_var_desc"                              "태블릿 통신이 끊긴 동안 자금 획득하기"
-		"quest_1260_var_desc"                              "태블릿 고해상도 업그레이드 구매하기"
-		"quest_1261_var_desc"                              "자동 보초 포탑 파괴하기"
-		"quest_1262_var_desc"                              "관광 안내소에 C4 설치하기"
-		"quest_1263_var_desc"                              "바위에 서 있는 상태에서 적군에게 피해 입히기"
-		
-// OP11 Week 6 Sub-Missions	
-		"quest_1264_var_desc"                              "매치 {d:points}번 승리하기"
-		"quest_1265_var_desc"                              "라운드 {d:points}번 승리하기"
-		"quest_1266_var_desc"                              "3연속 처치하기"
-		"quest_1267_var_desc"                              "5연속 처치하기"
-		"quest_1268_var_desc"                              "7연속 처치하기"
-		"quest_1269_var_desc"                              "매치에서 다른 사람의 총으로 적군 {d:points}명 처치하기"
-		"quest_1270_var_desc"                              "다른 사람의 총으로 적군 {d:points}명 처치하기"
-
-// OP11 Week 7 Sub-Missions			
-		"quest_1271_var_desc"                              "매치 {d:points}번 승리하기"
-		"quest_1272_var_desc"                              "라운드 {d:points}번 승리하기"
-		"quest_1273_var_desc"                              "중부 문에서 처치하기"
-		"quest_1274_var_desc"                              "좁은 통로에서 처치하기"
-		"quest_1275_var_desc"                              "중부 상단에서 처치하기"
-		"quest_1276_var_desc"                              "구덩이에서 처치하기"
-		"quest_1277_var_desc"                              "폭파 지점 A에서 처치하기"
-		"quest_1278_var_desc"                              "중부 문에서 처치하기(다시!)"
-		"quest_1279_var_desc"                              "폭파 지점 B에서 처치하기"
-		"quest_1280_var_desc"                              "터널에서 처치하기"
-		"quest_1281_var_desc"                              "T 경사로에서 처치하기"
-		"quest_1282_var_desc"                              "T 시작 지점에서 처치하기"
-		"quest_1283_var_desc"                              "매치에서 공중에 있는 상태에서 피해량 {d:points} 입히기"
-		"quest_1284_var_desc"                              "낙하 상태에서 피해량 {d:points} 입히기"
-
-// OP11 Week 8 Sub-Missions			
-		"quest_1285_var_desc"                              "매치 {d:points}번 승리하기"
-		"quest_1286_var_desc"                              "라운드 {d:points}번 승리하기"
-		"quest_1287_var_desc"                              "칼 레벨에 도달하기"
-		"quest_1288_var_desc"                              "무기를 {d:points}번 업그레이드하기"
-		"quest_1289_var_desc"                              "중부 상단에 연막탄 투척하기"
-		"quest_1290_var_desc"                              "바나나에 연막탄 투척하기"
-		"quest_1291_var_desc"                              "바나나에 화염병 투척하기"
-		"quest_1292_var_desc"                              "매치에서 적군 3명 시야 방해하기"
-		"quest_1293_var_desc"                              "매치에서 수류탄으로 피해량 {d:points} 입히기"
-
-// OP11 Week 9 Sub-Missions			
-		"quest_1294_var_desc"                              "매치에서 헤드샷으로 {d:points}명 처치하기"
-		"quest_1295_var_desc"                              "적군 {d:points}명 헤드샷으로 처치하기"
-		"quest_1296_var_desc"                              "급수탑 위에 그래피티 남기기"
-		"quest_1297_var_desc"                              "방파제의 닻에 그래피티 남기기"
-		"quest_1298_var_desc"                              "크레인에 그래피티 남기기"
-		"quest_1299_var_desc"                              "무전실 옥상에 그래피티 남기기"
-		"quest_1300_var_desc"                              "호텔 매점에 그래피티 남기기"
-		"quest_1301_var_desc"                              "피크닉의 그릴에 그래피티 남기기"
-		"quest_1302_var_desc"                              "등대에 그래피티 남기기"
-		"quest_1303_var_desc"                              "다리 위에 그래피티 남기기"
-		"quest_1304_var_desc"                              "공사 현장에 그래피티 남기기"
-		"quest_1305_var_desc"                              "매치에서 데저트 이글로 적군 {d:points}명 처치하기"
-		"quest_1306_var_desc"                              "무기를 {d:points}번 업그레이드하기"
-
-// OP11 Week 10 Sub-Missions			
-		"quest_1307_var_desc"                              "매치 {d:points}번 승리하기"
-		"quest_1308_var_desc"                              "라운드 {d:points}번 승리하기"
-		"quest_1309_var_desc"                              "놀이터에서 처치하기"
-		"quest_1310_var_desc"                              "공원 상부에서 처치하기"
-		"quest_1311_var_desc"                              "폭파 지점 A에서 처치하기"
-		"quest_1312_var_desc"                              "저격수 은신처에서 처치하기"
-		"quest_1313_var_desc"                              "폭파 지점 B에서 처치하기"
-		"quest_1314_var_desc"                              "T 시작 지점에서 처치하기"
-		"quest_1315_var_desc"                              "터널에서 처치하기"
-		"quest_1316_var_desc"                              "놀이터에서 처치하기(다시!)"
-		"quest_1317_var_desc"                              "분수대에서 처치하기"
-		"quest_1318_var_desc"                              "화장실에서 처치하기"
-		"quest_1319_var_desc"                              "매치에서 적군 {d:points}명 헤드샷으로 처치하기"
-		"quest_1320_var_desc"                              "적군 {d:points}명 헤드샷으로 처치하기"
-
-// OP11 Week 11 Sub-Missions			
-		"quest_1321_var_desc"                              "매치 {d:points}번 승리하기"
-		"quest_1322_var_desc"                              "라운드 {d:points}번 승리하기"
-		"quest_1323_var_desc"                              "매치에서 의료 주사를 {d:points}번 사용하기"
-		"quest_1324_var_desc"                              "의료 주사 {d:points}번 사용하기"
-		"quest_1325_var_desc"                              "매치에서 수류탄 피해량 {d:points} 입히기"
-		"quest_1326_var_desc"                              "수류탄 피해량 {d:points} 입히기"
-
-// OP11 Week 12 Sub-Missions			
-		"quest_1327_var_desc"                              "매치 {d:points}번 승리하기"
-		"quest_1328_var_desc"                              "라운드 {d:points}번 승리하기"
-		"quest_1329_var_desc"                              "3연속 처치하기"
-		"quest_1330_var_desc"                              "4연속 처치하기"
-		"quest_1331_var_desc"                              "5연속 처치하기"
-		"quest_1332_var_desc"                              "매치에서 {d:points}개의 무기로 처치하기"
-		"quest_1333_var_desc"                              "{d:points}개의 무기로 처치하기(여러 매치에서 반복 가능)"
-
-// OP11 Week 13 Sub-Missions			
-		"quest_1334_var_desc"                              "매치 {d:points}번 승리하기"
-		"quest_1335_var_desc"                              "라운드 {d:points}번 승리하기"
-		"quest_1336_var_desc"                              "중부에서 처치하기"
-		"quest_1337_var_desc"                              "폭파 지점 A에서 처치하기"
-		"quest_1338_var_desc"                              "CT 시작 지점에서 처치하기"
-		"quest_1339_var_desc"                              "집에서 처치하기"
-		"quest_1340_var_desc"                              "폭파 지점 B에서 처치하기"
-		"quest_1341_var_desc"                              "폐허에서 처치하기"
-		"quest_1342_var_desc"                              "T 시작 지점에서 처치하기"
-		"quest_1343_var_desc"                              "메인 홀에서 처치하기"
-		"quest_1344_var_desc"                              "폭파 지점 A에서 처치하기(다시!)"
-		"quest_1345_var_desc"                              "중부에서 처치하기(다시!)"
-		"quest_1346_var_desc"                              "카스바 서쪽 아치에 프래피티 남기기"
-		"quest_1347_var_desc"                              "카스바의 나선형 계단에 그래피티 남기기"
-		"quest_1348_var_desc"                              "돔에 그래피티 남기기"
-		"quest_1349_var_desc"                              "기지의 헬기 착륙장 원에 그래피티 남기기"
-		"quest_1350_var_desc"                              "화물선에서 바지선 위에 그래피티 남기기"
-		"quest_1351_var_desc"                              "시내의 아우로레 호텔 안에 그래피티 남기기"
-		"quest_1352_var_desc"                              "물탱크의 3번째 사일로에 그래피티 남기기"
-		"quest_1353_var_desc"                              "등대에 그래피티 남기기"
-		"quest_1354_var_desc"                              "낚시터의 부두에 그래피티 남기기"
-
-// OP11 Week 14 Sub-Missions			
-		"quest_1355_var_desc"                              "매치 {d:points}번 승리하기"
-		"quest_1356_var_desc"                              "라운드 {d:points}번 승리하기"
-		"quest_1357_var_desc"                              "매치에서 조준경을 사용하여 적군 {d:points}명 처치하기"
-		"quest_1358_var_desc"                              "조준경을 사용하여 적군 {d:points}명 처치하기"
-		"quest_1359_var_desc"                              "라운드 시작 30초 안에 적군 {d:points}번 처치하기"
-		"quest_1360_var_desc"                              "적군 {d:points}명 처치하기"
-
-// OP11 Week 15 Sub-Missions			
-		"quest_1361_var_desc"                              "매치 {d:points}번 승리하기"
-		"quest_1362_var_desc"                              "라운드 {d:points}번 승리하기"
-		"quest_1363_var_desc"                              "무기 레이스 모드 매치에서 선두 플레이어 {d:points}번 처치하기"
-		"quest_1364_var_desc"                              "적군 {d:points}명 처치하기"
-		"quest_1365_var_desc"                              "매치에서 피해량 {d:points} 입히기"
-		"quest_1366_var_desc"                              "피해량 {d:points} 입히기"
-
-// OP11 Week 16 Sub-Missions	
-		"quest_1367_var_desc"                              "매치 {d:points}번 승리하기"
-		"quest_1368_var_desc"                              "라운드 {d:points}번 승리하기"
-		"quest_1369_var_desc"                              "매치에서 립타이드 작전 요원을 사용하여 {d:points}명 처치하기"
-		"quest_1370_var_desc"                              "적군 {d:points}명 처치하기"
-		"quest_1371_var_desc"                              "립타이드 작전 수집품 무기로 적군 {d:points}명 처치하기"
-		"quest_1372_var_desc"                              "적군 {d:points}명 처치하기"
-
-
-
-		"quest_default_hud_var_desc" "{s:target} {s:actions}{s:commandverb}."
-		"quest_weapon_hud_var_desc" "{s:weapon} 무기로 {s:actions}{s:commandverb}."
-		"quest_single_hud_var_desc"	"매치 종료까지<br> {s:target} {s:actions}{s:commandverb}."
-		"quest_weapon_single_hud_var_desc" "매치 종료까지 {s:weapon} 무기로<br> {s:actions}{s:commandverb}."
-	
-		//hud exceptions:
-		"quest_931_hud_var_desc"	"{s:weapon} 무기로 처치하기"
-		"quest_932_hud_var_desc"	"낙하 상태에서 처치하기"
-		"quest_933_hud_var_desc"	"라운드 승리하기"
-		"quest_934_hud_var_desc"	"{s:weapon} 무기로 처치하기"
-		"quest_935_hud_var_desc"	"매치 종료 시<br> {s:weapon} 무기로 적군 처치하기"
-		"quest_936_hud_var_desc"	"{s:weapon} 무기로 처치하기"
-		"quest_937_hud_var_desc"	"그래피티 남기기"
-		"quest_937_hud_var_desc_CT"	"사일로나 자판기에 그래피티 남기기"
-		"quest_937_hud_var_desc_T"	"천국 또는 차고에 그래피티 남기기"
-        "quest_938_hud_var_desc"	"무기 레이스 선두 플레이어 처치하기"
-        "quest_939_hud_var_desc"	"{s:weapon} 무기로 처치하기"
-        "quest_940_hud_var_desc"	"라운드 승리하기"
-        "quest_941_hud_var_desc"	"권총전 승리하기"
-        "quest_942_hud_var_desc"	"매치 종료 시<br> {s:weapon} 무기로 적군 처치하기"
-        "quest_943_hud_var_desc"	"적군 처치하기"
-        "quest_944_hud_var_desc"	"자금 사용하기"
-        "quest_945_hud_var_desc"	"적군 처치하기"
-        "quest_946_hud_var_desc"	"라운드 승리하기"
-        "quest_947_hud_var_desc"	"라운드 승리하기"
-		"quest_948_hud_var_desc"	"구출하거나 구출 저지하기"
-		"quest_948_hud_var_desc_CT"	"인질 구출하기"
-		"quest_948_hud_var_desc_T"	"인질 구출자 처치하기"
-        "quest_949_hud_var_desc"	"{s:weapon} 무기로 처치하기"
-        "quest_950_hud_var_desc"	"중화기로 처치하기"	
-        "quest_951_hud_var_desc"	"{s:weapon} 무기로 처치하기"	
-        "quest_952_hud_var_desc"	"라운드 승리하기"	
-        "quest_953_hud_var_desc"	"라운드 승리하기"	
-        "quest_954_hud_var_desc"	"매치 종료까지 {s:target}번 처치하기"
-		"quest_955_hud_var_desc" 	"[{s:bind_use}] {d:points}초 간 닭과 친구 맺기"
-		"quest_956_hud_var_desc" 	"낙하산을 타고 몇 초간 활공하기"
-		"quest_957_hud_var_desc" 	"{s:weapon} 무기로 처치하기"
-		"quest_958_hud_var_desc" 	"라운드 승리하기"
-		"quest_959_hud_var_desc" 	"적군 처치하기"
-		"quest_960_hud_var_desc" 	"{s:weapon} 무기로 처치하기"
-		"quest_961_hud_var_desc"	"권총으로 처치하기"
-		"quest_962_hud_var_desc"	"매치 종료까지<br> 자금을 사용하지 않고 적군 처치하기"
-		"quest_963_hud_var_desc"	"{s:weapon} 무기로 처치하기"
-		"quest_964_hud_var_desc"	"권총전 승리하기"
-		"quest_965_hud_var_desc"    "적군 처치하기"
-		"quest_966_hud_var_desc" 	"자금 획득하기"
-		"quest_967_hud_var_desc"	"{s:weapon} 무기로 처치하기"
-		"quest_968_hud_var_desc"    "저격소총으로 처치하기"
-		"quest_969_hud_var_desc"	"{s:weapon}으로 조준경을 사용하지 않고 처치하기"
-		"quest_970_hud_var_desc"	"라운드 승리하기"
-		"quest_971_hud_var_desc"	"적군 처치하기"
-		"quest_972_hud_var_desc"    "매치 종료까지<br> 헤드샷 처치하기"
-		"quest_973_hud_var_desc" 	"적군 처치하기"
-		"quest_974_hud_var_desc" 	"헤드샷 처치하기"
-		"quest_975_hud_var_desc"    "CT 무기로 처치하기"
-		"quest_976_hud_var_desc" 	"라운드 승리하기"
-		"quest_977_hud_var_desc"	"라운드 승리하기"
-		"quest_978_hud_var_desc"	"{s:weapon} 무기로 처치하기"
-		"quest_979_hud_var_desc" 	"4연속 처치하기"
-        "quest_980_hud_var_desc" 	"4위 이상 하기"
-		"quest_981_hud_var_desc" 	"{s:weapon} 무기로 헤드샷 처치하기"		
-		"quest_982_hud_var_desc"	"매치 종료까지<br> {s:weapon} 무기로 헤드샷 처치하기"	
-		"quest_983_hud_var_desc" 	"헤드샷 처치하기"
-		"quest_984_hud_var_desc"    "MVP로 선정되기"
-		"quest_985_hud_var_desc" 	"기본 권총으로 처치하기"
-		"quest_986_hud_var_desc" 	"{s:weapon} 무기로 처치하기"
-		"quest_987_hud_var_desc"	"적군 처치하기"
-		"quest_987_hud_var_desc_CT"	"AK-47로 처치하기"
-		"quest_987_hud_var_desc_T"	"M4A4 또는 M4A1-S로 처치하기"
-		"quest_988_hud_var_desc" 	"칼로 처치하기"
-		"quest_989_hud_var_desc"	"유틸리티 피해 입히기"
-		"quest_990_hud_var_desc" 	"에이스로 선정되기"
-		"quest_991_hud_var_desc_CT" "파이브세븐으로 처치하기"
-		"quest_991_hud_var_desc_T" 	"Tec-9로 처치하기"
-		"quest_991_hud_var_desc" 	"Tec-9 또는 파이브세븐으로 처치하기"
-		"quest_992_hud_var_desc" 	"돌파용 폭약으로 처치하기"
-		"quest_993_hud_var_desc" 	"유틸리티 피해 입히기"
-		"quest_994_hud_var_desc" 	"적군 처치하기"
-		"quest_995_hud_var_desc" 	"라운드 승리하기"
-		"quest_996_hud_var_desc"	"적군 처치하기"
-		"quest_997_hud_var_desc_CT"	"파마스로 처치하기"
-		"quest_997_hud_var_desc_T"	"갈릴 돌격소총으로 처치하기"
-		"quest_997_hud_var_desc"	"갈릴 돌격소총 또는 파마스로 처치하기"
-		"quest_998_hud_var_desc" 	"{s:weapon} 무기로 처치하기"
-		"quest_999_hud_var_desc"	"{s:weapon} 무기로 처치하기"
-		"quest_1000_hud_var_desc" 	"적군 드론 파괴하기"
-		"quest_1001_hud_var_desc"   "매치 종료 시<br> MVP로 선정되기"
-		"quest_1002_hud_var_desc" 	"라운드에서 다수 처치하기"
-		"quest_1003_hud_var_desc"   "{s:weapon} 무기로 처치하기"
-		"quest_1004_hud_var_desc"   "{s:weapon} 무기로 처치하기"
-		"quest_1005_hud_var_desc" 	"라운드 승리하기"
-		"quest_1006_hud_var_desc" 	"적군 처치하기"
-		"quest_1007_hud_var_desc" 	"잠긴 문 파괴하기"
-		"quest_1008_hud_var_desc_CT" 	"M4A4 또는 M4A1-S로 처치하기"
-		"quest_1008_hud_var_desc_T"  	"AK-47로 처치하기"
-		"quest_1008_hud_var_desc" 	"AK-47 또는 M4A4로 처치하기"
-		"quest_1009_hud_var_desc"	"라운드 승리하기"
-		"quest_1010_hud_var_desc"	"{s:weapon} 무기로 처치하기"
-		"quest_1011_hud_var_desc" 	"전반전에서 5번 승리하기"
-		"quest_1012_hud_var_desc"	"범프 지뢰 밟기"
-		"quest_1013_hud_var_desc" 	"{s:weapon} 무기로 처치하기"
-		"quest_1014_hud_var_desc"   "{s:weapon} 무기로 처치하기"
-		"quest_1015_hud_var_desc"   "자금 $2000 이하로 지출하고 처치하기"
-		"quest_1016_hud_var_desc"   "$3,000 유지하기"
-		"quest_1017_hud_var_desc" 	"라운드 승리하기"
-		"quest_1018_hud_var_desc" 	"적군 처치하기"
-		"quest_1019_hud_var_desc" 	"기관단총으로 처치하기"
-		"quest_1020_hud_var_desc" 	"{s:weapon} 무기로 처치하기"
-		"quest_1021_hud_var_desc" 	"닭 처치하기"
-		"quest_1022_hud_var_desc" 	"드럼통 폭발시키기"
-		"quest_1023_hud_var_desc" 	"라운드 승리하기"
-		"quest_1024_hud_var_desc" 	"유리창 파괴"
-		"quest_1025_hud_var_desc" 	"라운드 승리하기"
-		"quest_1027_hud_var_desc"	"적군의 시작 지점에<br> 그래피티 남기기"
-		"quest_1028_hud_var_desc"	"바나나 또는 아파트에서<br> 처치하기"
-		"quest_1029_hud_var_desc"	"연막탄 투척하기"
-		"quest_1029_hud_var_desc_CT"	"아파트 또는 T 경사로에<br> 연막탄 투척하기"
-		"quest_1029_hud_var_desc_T"	"저격수 은신처 또는 계단에<br> 연막탄 투척하기"
-		"quest_1098_hud_var_desc"               "라운드 승리하기"
-		"quest_1032_hud_var_desc"               "라운드 승리하기"
-		"quest_1033_hud_var_desc"               "적군 처치하기"
-		"quest_1034_hud_var_desc"               "피닉스 커넥션 조사하기"
-		"quest_1035_hud_var_desc"               "AK-47, M4A4, 또는 M4A1-S로 처치하기"
-		"quest_1036_hud_var_desc"               "라운드 승리하기"
-		"quest_1037_hud_var_desc"               "적군 처치하기"
-		"quest_1099_hud_var_desc"               "MVP로 선정되기"
-		"quest_1038_hud_var_desc"               "라운드 승리하기"
-		"quest_1039_hud_var_desc"               "여러 권총으로 처치하기"
-		"quest_1040_hud_var_desc"               "권총으로 처치하기"
-		"quest_1041_hud_var_desc"               "데저트 이글로 처치하기"
-		"quest_1042_hud_var_desc"               "라운드 승리하기"
-		"quest_1043_hud_var_desc"               "적군 처치하기"
-		"quest_1044_hud_var_desc"               "15미터 이상의 거리에서 처치하기"
-		"quest_1045_hud_var_desc"               "아무 저격소총으로 처치하기"
-		"quest_1046_hud_var_desc"               "헤드샷 처치하기"
-		"quest_1047_hud_var_desc"               "M249 무기로 처치하기"
-		"quest_1048_hud_var_desc"               "수류탄 피해 입히기"
-		"quest_1049_hud_var_desc"               "자금 획득하기"
-		"quest_1050_hud_var_desc"               "라운드 승리하기"
-		"quest_1051_hud_var_desc"               "적군 처치하기"
-		"quest_1052_hud_var_desc"               "적군 팀 카드 고르기"
-		"quest_1053_hud_var_desc"               "연막탄 투척하기"
-		"quest_1053_hud_var_desc_T"             "차고 또는 미니에 연막탄 투척하기"
-		"quest_1053_hud_var_desc_CT"            "통제실 또는 오두막에 연막탄 투척하기"
-		"quest_1054_hud_var_desc"               "라운드 승리하기"
-		"quest_1055_hud_var_desc"               "적군 처치하기"
-		"quest_1056_hud_var_desc"               "터널 또는 궁전에서 처치하기"
-		"quest_1057_hud_var_desc"               "적군 처치하기"
-		"quest_1058_hud_var_desc"               "라운드 승리하기"
-		"quest_1059_hud_var_desc"               "적군 처치하기"
-		"quest_1060_hud_var_desc"               "{s:weapon} 무기로 처치하기"
-		"quest_1061_hud_var_desc"               "{s:weapon} 무기로 처치하기"
-		"quest_1062_hud_var_desc"               "라운드 승리하기"
-		"quest_1063_hud_var_desc"               "적군 처치하기"
-		"quest_1064_hud_var_desc"               "MVP 카드 선택하기"
-		"quest_1065_hud_var_desc"               "그래피티 남기기"
-		"quest_1065_hud_var_desc_T"             "중부에 그래피티 남기기"
-		"quest_1065_hud_var_desc_CT"            "T 측면 위 또는 외부에서 그래피티 남기기"
-		"quest_1100_hud_var_desc"               "라운드 승리하기"
-		"quest_1066_hud_var_desc"               "라운드 승리하기"
-		"quest_1067_hud_var_desc"               "AUG로 헤드샷 처치하기"
-		"quest_1068_hud_var_desc"               "섬광탄으로 적군의 시야 방해하기"
-		"quest_1069_hud_var_desc"               "그래피티 남기기"
-		"quest_1069_hud_var_desc_T"             "좁은 통로 또는 상단 터널에 그래피티 남기기"
-		"quest_1069_hud_var_desc_CT"            "하단 터널 또는 짧은 쪽 계단에 그래피티 남기기"
-		"quest_1101_hud_var_desc"               "라운드 승리하기"
-		"quest_1070_hud_var_desc"               "라운드 승리하기"
-		"quest_1071_hud_var_desc"               "10m 이내"
-		"quest_1072_hud_var_desc"               "10미터 이내 거리에서 처치하기"
-		"quest_1073_hud_var_desc"               "적군 처치하기"
-		"quest_1074_hud_var_desc"               "라운드 승리하기"
-		"quest_1075_hud_var_desc"               "적군 처치하기"
-		"quest_1076_hud_var_desc"               "헤드샷 처치하기"
-		"quest_1077_hud_var_desc"               "{s:weapon} 무기로 처치하기"
-		"quest_1102_hud_var_desc"               "라운드 승리하기"
-		"quest_1078_hud_var_desc"               "라운드 승리하기"
-		"quest_1079_hud_var_desc"               "{s:weapon} 무기로 처치하기"
-		"quest_1080_hud_var_desc"               "닭 처치하기"
-		"quest_1081_hud_var_desc"               "적군 처치하기"
-		"quest_1082_hud_var_desc"               "라운드 승리하기"
-		"quest_1083_hud_var_desc"               "적군 처치하기"
-		"quest_1084_hud_var_desc"               "적군 처치하기"
-		"quest_1085_hud_var_desc"               "수류탄 피해 입히기"
-		"quest_1085_v2_hud_var_desc"     	    "수류탄 피해 입히기"
-		"quest_1086_hud_var_desc"               "라운드 승리하기"
-		"quest_1087_hud_var_desc"               "적군 처치하기"
-		"quest_1088_hud_var_desc"               "특정 장소에서 처치하기"
-		"quest_1088_hud_var_desc_T"             "폭파 지점 A 또는 B에 있는 적군 처치하기"
-		"quest_1088_hud_var_desc_CT"            "폭파 지점 A 또는 B에서 처치하기"
-		"quest_1089_hud_var_desc"               "조준경을 사용하여 처치하기"
-		"quest_1089_v2_hud_var_desc"               "조준경을 사용하여 처치하기"
-		"quest_1090_hud_var_desc"               "라운드 승리하기"
-		"quest_1091_hud_var_desc"               "적군 처치하기"
-		"quest_1092_hud_var_desc"               "보너스 무기로 점수 획득하기"
-		"quest_1092_v2_hud_var_desc"            "보너스 무기로 점수 획득하기"
-		"quest_1093_hud_var_desc"               "자금 사용하기"
-		"quest_1094_hud_var_desc"               "라운드 승리하기"
-		"quest_1095_hud_var_desc"               "적군 처치하기"
-		"quest_1095_v2_hud_var_desc"            "UMP-45로 처치하기"
-		"quest_1096_hud_var_desc"               "라운드 승리하기"
-		"quest_1097_hud_var_desc"               "임무 완수하기"
-		"quest_1097_v2_hud_var_desc"            "피닉스 수용 시설에 침입하기"
-		"quest_1103_hud_var_desc"               "섬광탄으로 적군 시야 방해하기"
-
-
-
-
-/////////////////////////////////////////////////////////////////
-
-
-
-// win quests
-
-		"Quest_Win_a_Mode"										"위협 무력화: <b>%gamemode% 모드</b>"
-		"Quest_Win_a_Mode_desc"								"<b>%gamemode% 모드</b>에서 승리하세요."
-
-		"Quest_Win_a_Mapgroup"								"매치 종료: <b>%gamemode% 모드</b>, <b>%mapgroup%</b>"
-		"Quest_Win_a_Mapgroup_desc"						"<b>%gamemode% 모드</b> <b>%mapgroup%</b> 매치에서 %actions%하세요."
-
-		"Quest_Win_a_Map"											"게임 마무리: <b>%gamemode%, %map%</b>"
-		"Quest_Win_a_Map_desc"								"<b>%gamemode% 모드</b> <b>%map%</b> 매치에서 %actions%하세요."
-
-		"Quest_Win_Rounds_Map"								"위협 제거: <b>%gamemode%, %mapgroup%</b>"
-		"Quest_Win_Rounds_Map_desc"						"<b>%mapgroup%</b>에서 <b>%gamemode% 모드</b>매치 %actions%하세요."
-		"Quest_Win_Rounds_Map_Short"						"이겨야 할 라운드 수"
-
-// equipment quests
-
-		"Quest_Weapon_Mode"										"장비 훈련: <b>%gamemode% 모드</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Mode_desc"							"<b>%gamemode% 모드</b>매치에서 <b>%weapon%</b> 무기로 %optional_target%%actions%하여 점수를 획득하세요."
-		
-		"Quest_Weapon_Mode_single_desc"				"<b>%gamemode% 모드</b> 매치에서 <b>%weapon%</b> 무기로 적군을 처치하세요."
-
-// equipment + mapgroup quests
-
-		"Quest_Weapon_Mapgroup"							"장비 훈련: <b>%mapgroup%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Mapgroup_desc"					"<b>%gamemode% 모드: %mapgroup%</b> 매치에서 <b>%weapon%</b> 무기로 %optional_target%%actions%하세요."
-		"Quest_WeaponDamage_Mapgroup_desc"					"<b>%gamemode% 모드: %mapgroup%</b> 매치에서 <b>%weapon%</b> 무기로 %optional_target%%actions%하여 적군에게 피해를 가하세요."
-
-	"Quest_Weapon_Within_3_Mapgroup"						"졸업: <b>%mapgroup%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Within_3_Mapgroup_desc"				"<b>%gamemode% 모드: %mapgroup%</b> 매치에서 <b>%weapon%</b> 무기로 쏜 첫 3발로</i> %optional_target%%actions%하여 점수를 획득하세요."
-
-	"Quest_Weapon_Map"									"장비 훈련: <b>%map%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Map_desc"								"<b>%gamemode% 모드: %map%</b> 매치에서 <b>%weapon%</b> 무기로 %optional_target%%actions%하세요."
-		"Quest_Weapon_Map_Team_desc"		"<b>%gamemode% 모드: %map%</b> 매치에서 <b>%team%</b> 팀에 참가하여 <b>%weapon%</b> 무기로 %optional_target%%actions%하여 점수를 획득하세요."		
-		"Quest_Weapon_Mapgroup_Team_desc"		"<b>%gamemode% 모드: %mapgroup%</b> 매치에서 <b>%team%</b> 팀에 참가하여 <b>%weapon%</b> 무기로 %optional_target%%actions%하여 점수를 획득하세요."		
-
-		"Quest_WepUpgrade_Mapgroup"					"무기 강화: <b>%mapgroup%</b>"
-
-	"Quest_Unique_Weapon_Mapgroup"							"무기 전문가: <b>%mapgroup%</b>"
-		"Quest_Unique_Weapon_Mapgroup_desc"					"<b>%gamemode% 모드: %mapgroup%</b> 매치 중에, 지정된 무기로 %action%할 때마다 임무 진행도가 증가합니다."
-		"Quest_Unique_Weapon_Mapgroup_Team_desc"					"<b>%gamemode% 모드: %mapgroup%</b> 매치에서 <b>%team%</b>팀으로 참가하여, <i>지정된 무기</i>로 %action%할 때마다 임무 진행도가 증가합니다."
-
-		"Quest_Defend_Bomb_Mapgroup_desc"					"<b>%gamemode% 모드: %mapgroup%</b> 매치에서 <i>폭탄을 설치한 후</i> %actions%하세요."
-
-// Hostage quests
-
-	 "Quest_Rescue_Map"								"인질 구출: <b>%map%</b>"
-	 "Quest_Rescue_Map_Desc"						"<b>%gamemode% 모드: %map%</b> 매치에서 %actions%하세요."
-
-// Plant bomb quests
-
-	 "Quest_PlantBomb_Mapgroup"									"폭파 전문가: <b>%mapgroup%</b>"
-	 "Quest_PlantBomb_Mapgroup_Desc"						"<b>%gamemode% 모드: %mapgroup%</b> 매치에서 %actions%하세요."
-
-
-// Assassination
-
-	 "Quest_Assassination"									"%victim_team% 암살: <b>%target%</b>"
-	 "Quest_Assassination_desc"							"<b>%gamemode% 모드: %map%</b> 매치에서 %victim_team% 팀의 <b>%target%</b> 요원을 찾아내어 처치하세요."
-
-	 "quest_target_turner"									"터너"
-	 "quest_target_jackson"									"잭슨"
-	 "quest_target_chapel"									"채플"	 
-	 "quest_target_sergei"									"세르게이"	 
-
-	 "quest_assassination_you_are_target"					"암살 목표가 되었습니다.\n플레이어가 %s1 요원입니다."
-	 "quest_assassination_target_on_server"					"적군 팀 암살 목표: %s1"
-	 "quest_assassination_target_on_server_has_quest"		"암살 목표: %s1"
-	 "quest_assassination_target_killed"					"%s1 암살 성공!"
-	 "quest_assassination_no_longer_target"					"더 이상 %s1 요원이 아닙니다." 
-
-// Income
-	 "Quest_Income_Mapgroup"								"수익 벌기: <b>$1,000,000</b>"
-	 "Quest_Income_Mapgroup_desc"						"<b>%gamemode% 모드: %mapgroup%</b> 매치에서 총 $1,000,000의 자금을 획득하세요."
-	 "Quest_Income_Mapgroup_Team_desc"			"<b>%gamemode% 모드: %mapgroup%</b> 매치에서 <b>%team%</b> 팀으로 총 $1,000,000를 벌어야 합니다."
-
-	 "Quest_Spend_Mapgroup_Team_desc"			"<b>%gamemode% 모드: %mapgroup%</b> 매치에서 <b>%team%</b> 팀으로 총 $1,000,000를 벌어야 합니다."
-
-
-//	deathmatch bonus points
-
-		"Quest_DMBonusPoints_Mapgroup"				"무기의 달인: <b>%mapgroup%</b>"
-		"Quest_DMBonusPoints_Mapgroup_desc"		"<b>데스매치 모드: %mapgroup%</b> 매치에서 보너스 무기를 사용해 점수를 획득하세요."
-
-		"Quest_DMBonusPoints_Map"							"무기의 달인: <b>%map%</b>"
-		"Quest_DMBonusPoints_Map_desc"				"<b>데스매치: %map%</b> 맵에서 보너스 무기를 사용해 점수를 획득하세요."
-
-// play quests
-
-		"Quest_Kills_Mapgroup"							"위협 정찰: <b>%gamemode% 모드</b>, <b>%mapgroup%</b>"
-		"Quest_Kills_Mapgroup_desc"					"<b>%gamemode% 모드: %mapgroup%</b> 매치에서 %optional_target%%actions%하세요."
-		"Quest_Kills_Mapgroup_cond_desc"		"<b>%gamemode% 모드: %mapgroup%</b> 매치에서 <i>%condition%</i> %optional_target%%actions%하세요."
-		"Quest_Kills_Mapgroup_Team_desc"		"<b>%gamemode% 모드: %mapgroup%</b> 매치에서 <b>%team%</b> 팀에 참가하여 %optional_target%%actions%하세요."		
-
-		"Quest_Kills_Mapgroup_Victim_Team_desc"		"<b>%gamemode% 모드: %mapgroup%</b> 매치에서 <b>%team%</b>팀에 참가하여, %victim_team% 팀을 %actions%하세요."
-
-		"Quest_Flashbang_Mapgroup_Team_desc"		"<b>%gamemode% 모드: %mapgroup%</b> 매치에서 <b>%team%</b> 팀에 참가하여 %optional_target%%actions%하세요."		
-
-
-		"Quest_Burn_Mapgroup_desc"					"<b>%gamemode% 모드: %mapgroup%</b> 매치에서 적군에게 <i>화상</i> %actions% 가하세요."
-
-		"Quest_Headshots_Mapgroup"							"헤드샷: <b>%gamemode% 모드</b>, <b>%mapgroup%</b>"
-		"Quest_Headshots_Mapgroup_desc"					"<b>%gamemode% 모드: %mapgroup%</b> 매치에서 적군을 헤드샷으로 %actions%하세요."
-
-		"Quest_Kills_Map"										"위협 정찰: <b>%gamemode% 모드</b>, <b>%map%</b>"
-		"Quest_Kills_Map_desc"							"<b>%gamemode% 모드: %map%</b> 매치에서 %optional_target%%actions%하세요."
-
-		"Quest_Kills_Mode"								"<b>%gamemode% 모드</b>위협 정찰"
-		"Quest_Kills_Mode_desc"						"<b>%gamemode% 모드</b> 매치에서 %optional_target%%actions%하세요."
-
-// chicken quests
-
-	"Quest_Chicken_Kills_Mapgroup"				"보급 물자 확보: <b>%gamemode% 모드</b>, <b>%mapgroup%</b>"
-	"Quest_Chicken_Kills_Map"							"보급 물자 확보: <b>%gamemode% 모드</b>, <b>%map%</b>"
-	"Quest_Chicken_Kills"						"보급 물자 확보"
-
-// generic string tokens
-
-	"quest_team_ct"										"대테러부대"
-	"quest_team_terrorist"								"테러리스트"
-	"quest_complete_the_match"							"매치를 완료하여 임무 완수하기"
-	"quest_complete_the_match_uncommitted"				"<img src='file://{images}/icons/ui/info.svg' class=''/>임무 진척도를 저장하려면 매치를 완료하세요."
-
-// Coop quests
-
-	"Quest_Guardian_Bomb"									"수호자 모드 협동 도전: <b>%map%</b>, <b>%weapon%</b>"
-	"Quest_Guardian_Bomb_Desc"								"수호자 모드 협동 도전: 동료와 함께 <b>%team%</b> 팀으로 플레이하세요. <b>%map%</b> 맵에서 적군으로부터 폭파 지점을 보호하세요. <br><br> <b>%weapon%</b> 무기로 적군 <b>%kills%</b>명을 처치하여 <b>%action%</b>하세요. <b>%extradetails%</b>"
-	"Quest_Guardian_Desc_op08"								"수호자 모드 협동 도전: 동료와 함께 <b>%team%</b> 팀으로 플레이하세요.<b>%map%</b> 맵에서 적군으로부터 폭파 지점을 보호하세요.<br><br><b>%weapon%</b> 무기로 적군 <b>%kills%</b>명을 %killtype%하여 <b>%action%</b>하세요. <b>%extradetails%</b>%presence%"
-
-	"Quest_Guardian_Desc_op09"								"<b>수호자 모드: {s:location}</b> 매치에서 {s:weapon} 무기로 적군 {s:kills}명을 {s:killtype}{s:commandverb}."
-	"Quest_CoopMission_Desc_op09"							"<b>협동 작전</b>: 파트너와 함께 <b>{s:location}</b> 매치에서 목표를 완수하세요."
-	"Quest_Guardian_Desc_op09_extra_equip_1_var_desc"		"<b>수호자 모드: {s:location}</b>에서 적군 {s:kills}명을 {s:weapon} 무기로 {s:killtype}{s:commandverb}. 플레이어는 <b>{s:extraequip0}</b> 장비로 시작합니다."
-	"Quest_Guardian_Desc_op09_extra_equip_2_var_desc"		"<b>수호자 모드: {s:location}</b>에서 적군 {s:kills}명을 {s:weapon} 무기로 {s:killtype}{s:commandverb}. 플레이어는 <b>{s:extraequip0}</b> 및 <b>{s:extraequip1}</b> 장비로 시작합니다."
-
-	"Quest_Guardian_Desc_op10"								"<b>수호자 모드: {s:location}</b>에서 적군 {s:kills}명을 {s:weapon} 무기로 {s:killtype}{s:commandverb}."
-	"Quest_CoopMission_Desc_op10"							"<b>협동 작전</b>: 파트너와 함께 <b>{s:location}</b> 매치에서 목표를 완수하세요."
-	"Quest_Guardian_Desc_op10_extra_equip_1_var_desc"		"<b>수호자 모드: {s:location}</b>에서 적군 {s:kills}명을 {s:weapon}무기로 {s:killtype}{s:commandverb}. 플레이어는 <b>{s:extraequip0}</b> 장비로 시작합니다."
-	"Quest_Guardian_Desc_op10_extra_equip_2_var_desc"		"<b>수호자 모드: {s:location}</b> 매치에서 적군 {s:kills}명을 {s:weapon} 무기로 {s:killtype}{s:commandverb}. 플레이어는 <b>{s:extraequip0}</b> 및 <b>{s:extraequip1}</b> 장비로 시작합니다."
-
-	"Quest_Coop_Desc_Rescue"								"협동 공격 모드: <b>%map%</b> 맵에서 동료와 <b>%team%</b> 팀으로 <b>인질을 구출합니다</b>.<br><br><b>%extradetails%</b>"
-	"Quest_Coop_Desc_Recon"									"협동 공격 모드: <b>%map%</b> 맵에서 동료와 <b>%team%</b> 팀으로 <b>정보를 수집합니다</b>.<br><br><b>%extradetails%</b>"
- 	"Quest_Coop_Desc_Bomb"									"협동 공격 모드: <b>%map%</b> 맵에서 동료와 <b>%team%</b> 팀으로 <b>폭탄을 폭파합니다</b>.<br><br><b>%extradetails%</b>"
- 
-	"Quest_op09_coopmission"								"피닉스 연구소에서 위험지대 바이러스 샘플을 되찾으세요."
-	"Quest_op10_coopmission"								"피닉스가 오래된 농장에서 포착되었습니다. 해당 지역을 조사하여 무엇을 계획하고 있는지 알아내세요."
-
-	"Quest_Guardian_Hostage"								"수호자 모드 협동 도전: <b>%map%</b>, <b>%weapon%</b>"
-	"Quest_Guardian_Hostage_Desc"							"수호자 모드 협동 도전: 동료와 함께 <b>%team%</b> 팀으로 플레이하세요. <b>%map%</b> 맵에서 대테러부대의 인질 구출을 저지하세요.<br><br> <b>%weapon%</b> 무기로 적군 <b>%kills%</b>명을 처치하여 <b>%action%</b>하세요. <b>%extradetails%</b>"
-	 
-	"quest_guardian_kills_5"								"5"
-	"quest_guardian_kills_10"								"10"
-	"quest_guardian_kills_15"								"15"
-	"quest_guardian_kills_20"								"20"
-	"quest_guardian_kills_25"								"25"
-	"quest_guardian_kills_30"								"30"
-	"quest_guardian_kills_35"								"35"
-	"quest_guardian_kills_40"								"40"
-	"quest_guardian_kills_45"								"45"
-	"quest_guardian_kills_50"								"50"
-
-// Guardian kill types
-	"quest_killtype_normal"									"처치"
-	"quest_killtype_headshot"								"<b>헤드샷으로 처치</b>"
-	"quest_killtype_blind"									"<b>섬광탄으로 시야를 방해한 뒤 처치</b>"
-	"quest_killtype_unscoped"								"<b>조준경을 사용하지 않고 처치</b>"
-
-	"quest_enemy_weapon"									"적군 무기"
-	"quest_weapon_CZ75a_or_enemy_weapon"					"CZ75 기관권총 혹은 적군의 무기"
-	"quest_weapon_sniperrifle"								"아무 저격소총"
-	"quest_weapon_any_rifle"								"아무 소총"
-	"quest_weapon_m4"										"아무 M4 소총"
-	"quest_weapon_starter_ct"								"아무 CT 기본 권총으로"
-	"quest_weapon_ct"										"대테러부대 무기"
-	"quest_weapon_t"										"테러리스트 무기"
-	"quest_weapon_any_pistol"								"아무 권총"
-	"quest_weapon_any_weapon"								"아무"
-	"quest_weapon_any_shotgun"								"아무 산탄총"
-	"quest_weapon_any_smg"									"아무 기관단총"
-	"quest_weapon_ssg08_or_mag7"							"SSG 08 또는 MAG-7"
-	"quest_weapon_awp_or_p90"								"AWP 또는 P90"
-	"quest_weapon_unique_pistol"							"다른 권총"
-	"quest_presence_heavy"									"<br><br><b>주의</b>: <i>강력한</i> 저항이 예상됩니다!"
-
-	"quest_guardian_cantbuy"		"<i>이 임무에서는 구매할 수 없습니다.</i>"
-	"quest_guardian_maxmoneylimit"		"<i>이 임무중에는 최대 자금 소지액이 제한됩니다.</i>"
-	"quest_guardian_killrewardsonly" 	"<i>처치 보상에서만 돈을 획득할 수 있습니다.</i>"
-	"quest_guardian_moneyreset" 	"<i>임무 실패 시 자금은 회수됩니다.</i>"
-	"quest_guardian_heavyarmor" 	"<i>강화 방탄복을 구매할 수 있습니다.</i>"
-	"quest_guardian_noarmor" 	"<i>방탄복</i>을 구매할 수 없습니다."
-	"quest_guardian_heavyarmorresetmoney" 	"<i>강화 방탄복을 구매할 수 있습니다. 임무 실패 시 자금이 초기화됩니다.</i>"
-	 //"quest_guardian_maxmoney_16000"		"$16000"
-	 //"quest_guardian_maxmoney_10000"		"$10000"
-	 //"quest_guardian_maxmoney_6000"			"$6000"
-	 //"quest_guardian_maxmoney_3200"			"$3200"
-	 //"quest_guardian_maxmoney_0"			"$0"
-
-	// "Get [headshot] kills: [unscoped] [AWP]"
-	// Double spaces will automatically be removed.
-	"guardian_mission_type_kills"				"{s:weapon} 무기로 처치하기"
-	"guardian_mission_type_headshots"			"{s:weapon} 무기로 헤드샷 처치하기"
-	"guardian_mission_type_unscoped"			"{s:weapon} 무기로 조준경을 사용하지 않고 처치하기"
-	"guardian_mission_type_enemy_weapon"		"적군의 {s:weapon} 무기로 처치하기"
-	"guardian_mission_type_enemy_airborne"		"{s:weapon} 무기로 공중에 있는 상태에서 적군 처치하기"
-	"guardian_mission_type_flashbang"			"시야가 차단된 적 처치하기"
-	"guardian_mission_type_ct_weapons"			"대테러부대 무기로 처치"
-
-//	bonus tokens
-
-	  "quest_bonus_headshot"							"헤드샷 처치 시"
-	  "quest_bonus_zoomed"								"조준경을 사용하여 처치 시"
-  	  "quest_bonus_not_zoomed"							"조준경을 사용하지 않고 처치 시"
-	  "quest_bonus_chickens"							"닭 처치 시"
-
-	  "quest_bonus_taser"								"제우스 x27로 처치 시"
-	  "quest_bonus_bomb_planted"						"폭탄 설치 이후"
-	  "quest_bonus_melee"								"근접 무기로 처치 시"	  
-
-
-
-	  "quest_bonus_killstreak_2"						"2연속 이상 처치 시"
-	  "quest_bonus_killstreak_3"						"3연속 이상 처치 시"
-
-	  "quest_bonus_chickenstreak_2"						"닭 2연속 이상 처치 시"
-	  "quest_bonus_chickenstreak_3"						"닭 3연속 이상 처치 시"
-
-	  "quest_bonus_borrowed_gun"						"다른 플레이어의 무기로 처치 시"
-	  "quest_bonus_borrowed_gun_enemy"					"적군의 무기로 처치 시"
-	  "quest_bonus_borrowed_gun_own"					"목표 대상의 무기로 처치 시"
-		"quest_bonus_victim_rescuing"					"목표 대상이 인질 구출 시"
-		
-	  "quest_bonus_bulletcount_1"						"라운드 중 첫 사격으로 임무 완료 시"
-		
-	  "quest_bonus_totalrounds_2"						"첫 2라운드 이내인 경우"
-	  "quest_bonus_totalrounds_3"						"첫 3라운드 이내인 경우"
-	  "quest_bonus_totalrounds_4"						"첫 4라운드 이내인 경우"
-	  "quest_bonus_totalrounds_5"						"첫 5라운드 이내인 경우"
-
-  	  "quest_bonus_weapon_elite"						"듀얼 베레타로 처치 시"
-	  "quest_bonus_weapon_ssg08"						"SSG08로 처치 시"
-	  "quest_bonus_weapon_revolver"						"R8 리볼버로 처치 시"
-	  "quest_bonus_weapon_glock_hkp2000_usp_silencer"	"P2000, 글록-18, USP-S로 처치 시"
-
-		"quest_bonus_set_dust"							"더스트 수집품 무기로 처치 시"
-		"quest_bonus_set_aztec"							"아즈텍 수집품 무기로 처치 시"
-		"quest_bonus_set_vertigo"						"버티고 수집품 무기로 처치 시"
-		"quest_bonus_set_inferno"						"인페르노 수집품 무기로 처치 시"
-		"quest_bonus_set_militia"						"밀리샤 수집품 무기로 처치 시"
-		"quest_bonus_set_nuke"							"뉴크 수집품 무기로 처치 시"
-		"quest_bonus_set_office"						"사무실 수집품 무기로 처치 시"
-		"quest_bonus_set_assault"						"돌격 수집품 무기로 처치 시"
-		"quest_bonus_set_dust_2"						"더스트 2 수집품 무기로 처치 시"
-		"quest_bonus_set_train"							"열차 수집품 무기로 처치 시"
-		"quest_bonus_set_mirage"						"신기루 수집품 무기로 처치 시"
-		"quest_bonus_set_italy"							"이탈리아 수집품 무기로 처치 시"
-		"quest_bonus_set_lake"							"호수 수집품 무기로 처치 시"
-		"quest_bonus_set_safehouse"						"안전 가옥 수집품 무기로 처치 시"
-		"quest_bonus_set_esports"						"eSports 2013 수집품 무기로 처치 시"
-		"quest_bonus_set_weapons_i"						"무기 거래 수집품 무기로 처치 시"
-		"quest_bonus_set_bravo_i"						"브라보 수집품 무기로 처치 시"
-		"quest_bonus_set_bravo_ii"						"알파 수집품 무기로 처치 시"
-		"quest_bonus_set_weapons_ii"					"무기 거래 2 수집품 무기로 처치 시"
-		"quest_bonus_set_esports_ii"					"eSports 2013 겨울 수집품 무기로 처치 시"
-		"quest_bonus_set_esports_2014_summer"			"eSports 2014 여름 수집품 무기로 처치 시"
-		"quest_bonus_set_community_1"					"Winter Offensive 수집품 무기로 처치 시"
-		"quest_bonus_set_weapons_iii"					"무기 거래 3 수집품 무기로 처치 시"
-		"quest_bonus_set_community_2"					"피닉스 수집품 무기로 처치 시"
-		"quest_bonus_set_community_3"					"헌츠맨 수집품 무기로 처치 시"
-		"quest_bonus_set_community_4"					"돌파 수집품 무기로 처치 시"
-		"quest_bonus_set_community_5"					"선봉 수집품 무기로 처치 시"
-		"quest_bonus_set_community_6"					"크로마 수집품 무기로 처치 시"
-		"quest_bonus_set_community_7"					"크로마 2 수집품 무기로 처치 시"
-		"quest_bonus_set_community_11"					"들불 수집품 무기로 처치 시"
-		"quest_bonus_set_bank"							"은행 수집품 무기로 처치 시"
-		"quest_bonus_set_baggage"						"수하물 수집품 무기로 처치 시"
-		"quest_bonus_set_cobblestone"					"코블 수집품 무기로 처치 시"
-		"quest_bonus_set_overpass"						"오버패스 수집품 무기로 처치 시"
-		"quest_bonus_set_cache"							"무기창고 수집품 무기로 처치 시"
-		"quest_bonus_set_kimono"						"떠오르는 태양 수집품 무기로 처치 시"
-
-		"quest_bonus_cs_assault"						"돌격 맵인 경우"
-		"quest_bonus_cs_italy"							"이탈리아 맵인 경우"
-		"quest_bonus_cs_militia"						"밀리샤 맵인 경우"
-		"quest_bonus_cs_office"							"사무실 맵인 경우"
-		"quest_bonus_de_aztec"							"아즈텍 맵인 경우"
-		"quest_bonus_de_dust"							"더스트 맵인 경우"
-		"quest_bonus_de_dust2"							"더스트 2 맵인 경우"
-		"quest_bonus_de_mirage"							"신기루 맵인 경우"
-		"quest_bonus_de_overpass"						"오버패스 맵인 경우"
-		"quest_bonus_de_cbble"							"코블 맵인 경우"
-		"quest_bonus_de_train"							"열차 맵인 경우"		
-		"quest_bonus_de_inferno"						"인페르노 맵인 경우"
-		"quest_bonus_de_nuke"							"뉴크 맵인 경우"
-		"quest_bonus_de_shorttrain"						"소형 열차 맵인 경우"
-		"quest_bonus_de_shortdust"						"소형 더스트 맵인 경우"
-		"quest_bonus_de_vertigo"						"버티고 맵인 경우"
-		"quest_bonus_de_balkan"							"발칸 맵인 경우"
-		"quest_bonus_ar_baggage"						"수하물 맵인 경우"
-		"quest_bonus_ar_monastery"						"사원 맵인 경우"
-		"quest_bonus_ar_shoots"							"재배소 맵인 경우"
-		"quest_bonus_de_embassy"						"대사관 맵인 경우"
-		"quest_bonus_de_bank"							"은행 맵인 경우"
-		"quest_bonus_de_lake"							"호수 맵인 경우"
-		"quest_bonus_de_depot"							"창고 맵인 경우"
-		"quest_bonus_de_safehouse"						"안전 가옥 맵인 경우"
-		"quest_bonus_de_sugarcane"						"사탕수수 제분소 맵인 경우"
-		"quest_bonus_de_stmarc"							"성 마르크 맵인 경우"
-		"quest_bonus_cs_museum"							"박물관 맵인 경우"
-		"quest_bonus_cs_thunder"						"댐 시설 맵인 경우"
-		"quest_bonus_de_favela"							"빈민가 맵인 경우"
-		"quest_bonus_cs_downtown"						"다운타운 맵인 경우"
-		"quest_bonus_de_seaside"						"해변 맵인 경우"
-		"quest_bonus_de_library"						"도서관 맵인 경우"
-		"quest_bonus_cs_motel"							"모텔 맵인 경우"
-		"quest_bonus_de_cache"							"무기창고 맵인 경우"
-		"quest_bonus_de_ali"							"알리 맵인 경우"
-		"quest_bonus_de_ruins"							"폐허 맵인 경우"
-		"quest_bonus_de_ruby"							"루비 맵인 경우"
-		"quest_bonus_de_chinatown"						"차이나타운 맵인 경우"
-		"quest_bonus_de_gwalior"						"괄리오르 맵인 경우"
-		"quest_bonus_cs_agency"							"에이전시 맵인 경우"
-		"quest_bonus_cs_siege"							"시즈 맵인 경우"
-		"quest_bonus_de_castle"							"성곽 맵인 경우"
-		"quest_bonus_de_overgrown"						"조선소 맵인 경우"
-		"quest_bonus_de_blackgold"						"검은 황금 맵인 경우"
-		"quest_bonus_cs_rush"							"습격 맵인 경우"
-		"quest_bonus_de_mist"							"안개 맵인 경우"
-		"quest_bonus_cs_insertion"						"침입 맵인 경우"
-
-		"quest_bonus_cs_workout"						"스포츠센터 맵인 경우"
-		"quest_bonus_cs_backalley"						"뒷골목 맵인 경우"
-		"quest_bonus_de_marquis"						"마르퀴스 맵인 경우"
-		"quest_bonus_de_facade"							"파사드 맵인 경우"
-		"quest_bonus_de_season"							"시즌 맵인 경우"
-		"quest_bonus_de_bazaar"							"시장 맵인 경우"
-		"quest_bonus_de_santorini"						"산토리니 맵인 경우"
-
-		"quest_bonus_de_subzero"						"서브제로 맵인 경우"
-		"quest_bonus_de_biome"							"바이옴 맵인 경우"
-
-
-
-
-// OperationalPoints
-
-		"Quest_OperationalPoints_Template"				"도전 보상: %s1"
-
-		"Quest_OperationalPoints_1"					"★"
-		"Quest_OperationalPoints_2"					"★★"
-		"Quest_OperationalPoints_3"					"<font color=\"#ff0000\">★★★★</font>"
-
-// Hud Message
-
-	 "Quest_ProgressMadeMessage1"								" 임무 점수는 매치가 종료되고 기록됩니다: +%s1."
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -34182,7 +32954,7 @@
 	"PaintKit_cu_mag7_insomnia"										"주황색과 검정색 팔레트를 사용하여 물고기가 사람의 입으로 헤엄치는 모습으로 도색했습니다.\n\n<i>꿀꺽, 꿀꺽, 꿀꺽</i>"
 	"PaintKit_cu_mag7_insomnia_Tag"									"불면증"
 
-	"PaintKit_cu_ak_head_shot_holo"									"'HEAD SHOT GUN'이라는 그래피티를 특수 도색하고 진주빛 광택이 나는 페인트로 마감했습니다.\n\n<i>모두가 목표를 가지고 있지. 하지만 너는 목표를 이루기 위해 무엇을 했지? - 부스, 무기 거래상</i>"
+	"PaintKit_cu_ak_head_shot_holo"									"'HEAD SHOT GUN'이라는 그래피티를 특수 도색하고 진줏빛 광택이 나는 페인트로 마감했습니다.\n\n<i>모두가 목표를 가지고 있지. 하지만 너는 목표를 이루기 위해 무엇을 했지? - 부스, 무기 거래상</i>"
 	"PaintKit_cu_ak_head_shot_holo_Tag"								"헤드샷"
 
 	"PaintKit_gs_awp_limbo_snake"									"무기 양쪽을 뱀 디자인을 특수 도색했습니다. 한 마리는 붉은색을 띠고 있으며, 다른 한 마리는 금색을 띠고 있습니다.\n\n<i>모든 이야기에는 두 가지 측면이 존재한다.</i>"
@@ -34352,7 +33124,7 @@
 // COMMUNITY_34
 
 		"PaintKit_usp_field_snake"						"가늠자 아래에는 날개 달린 뇌관 문양을 탄피 분출구 근처에는 '027' 숫자를 페인트로 특수 도색했습니다.\n\n간단한 현장 작업"
-		"PaintKit_usp_field_snake_Tag"					"027"
+		"PaintKit_usp_field_snake_Tag"					"27"
 
 		"PaintKit_deagle_calligraff"					"데저트 이글의 옆면을 은색 페인트 펜을 사용하여 캘리그래피로 꾸몄습니다.\n\n긴 시간을 필요로 하는 작업"
 		"PaintKit_deagle_calligraff_Tag"				"캘리그래피티"
@@ -34505,6 +33277,103 @@
 		"PaintKit_m4a1s_quick_liquidation"				"어두운 바탕에 엄선된 빨간색과 파란색 페인트로 하이라이트를 추가하여 M4A1-S가 마치 조명 아래에서 빛나는 느낌이 나도록 특수 도색했습니다.\n\n<i>조용한 반향</i>"
 		
 		"PaintKit_aug_trigger_discipline_velco"			"파란색 아이소메트릭 패턴을 적용하고 주황색으로 장식했습니다.\n\n인내심은 그 자체로 보상입니다."
+"PaintKit_glove_driver_knit_argyle_green_Tag"					"핸드 스웨터"
+		
+		"PaintKit_glove_driver_ostrich_purple_Tag"						"보라색 타조 가죽"
+		
+		"PaintKit_glove_driver_silk_dragon_white_Tag"					"웨이브 체이서"
+		
+		"PaintKit_glove_brocade_crane_Tag"								"비단 두루미"
+		
+		"PaintKit_glove_driver_brocade_flower_red_Tag"					"비단 꽃"
+		
+		"PaintKit_glove_driver_dragon_scale_red_Tag"					"용 가죽"
+		
+		"PaintKit_glove_driver_embroidered_flowers_teal_Tag"			"정원"
+		
+		"PaintKit_glove_driver_scallop_metallic_blue_Tag"				"물결 문양"
+		
+		"PaintKit_glove_sport_velvet_red_Tag"							"오컬트"
+		
+		"PaintKit_glove_sport_beadwork_diamonds_purple_Tag"				"바이올렛 비즈"
+		
+		"PaintKit_glove_sport_camo_winter_Tag"							"살얼음"
+		
+		"PaintKit_glove_sport_pinstripe_black_Tag"						"크림 핀스트라이프"
+		
+		"PaintKit_glove_sport_racer_red_Tag"							"레드 레이서"
+		
+		"PaintKit_glove_sport_tech_gradient_bright_Tag"					"울트라 바이올렛"
+		
+		"PaintKit_glove_specialist_abstract_green_Tag"					"라임 폴리캠"
+		
+		"PaintKit_glove_specialist_graffiti_black_Tag"					"블랙북"
+		
+		"PaintKit_glove_specialist_quilted_black_Tag"					"초콜릿 체스터필드"
+		
+		"PaintKit_glove_specialist_quilted_white_Tag"					"필로우 펀처"
+		
+		"PaintKit_glove_specialist_sunburst_red_Tag"					"햇살"
+		
+		"PaintKit_glove_specialist_dragon_blue_Tag"						"클라우드 체이서"
+		
+		"PaintKit_glove_specialist_wave_blue_Tag"						"높은 파도"
+		
+// END COMMUNITY_37 GLOVES
+
+// COMMUNITY_37 WEAPONS
+		
+		"PaintKit_glock_jdpeek"											"네온 색상과 반짝이는 금속성 페인트를 사용하여 특수 도색했습니다.\n\n나한테는 좀 과하지만, 고객 취향은 또 다르니까... - 부스, 무기 거래상"
+		"PaintKit_glock_jdpeek_Tag"										"완벽 튜닝"
+					
+		"PaintKit_awp_queens_gambit"									"로열 블루와 골드 색상 페인트로 특수 도색했습니다. 개머리판 앞쪽에는 여왕의 모습을 손으로 직접 그렸습니다.\n\n한 발 한발이 왕실의 힘과 완벽함을 담은 칙령과도 같습니다."
+		"PaintKit_awp_queens_gambit_Tag"								"퀸스 갬빗"
+					
+		"PaintKit_p90_deathgaze"										"카라라 대리석 느낌이 나는 바탕에 그래피티 스타일로 메두사를 특수 도색했습니다.\n\n속임수를 바탕으로 세워진 우상을 숭배하지 말라."
+		"PaintKit_p90_deathgaze_Tag"									"죽음의 시선"
+					
+		"PaintKit_p250_kintsugi"										"상아색 바탕에 선명한 주황색 새와 금색 장식을 특수 도색했습니다.\n\n고급 킨츠기 접시처럼, 이 무기도 특별한 날에만 사용됩니다."
+		"PaintKit_p250_kintsugi_Tag"									"킨츠기"
+					
+		"PaintKit_mp9_urban_sovereign"									"도시적인 소재가 돋보이는 디자인을 특수 도색하고 금색 그래피티로 장식했습니다.\n\n왕은 벽 뒤에 숨지 않고, 벽에 그림을 그립니다."
+		"PaintKit_mp9_urban_sovereign_Tag"								"어반 소버린"
+					
+		"PaintKit_mp7_amberline"										"주황색과 흰색 대각선을 스프레이 페인트로 도색했습니다.\n\n손안의 위력"
+		"PaintKit_mp7_amberline_Tag"									"엠버라인"
+					
+		"PaintKit_bizon_rmx"											"보라색 그라데이션과 빨간색 및 흰색이 돋보이는 디자인을 특수 도색했습니다.\n\n가볍고 빠르며 위험합니다... 이론상으로는 말이죠."
+		"PaintKit_bizon_rmx_Tag"										"RMX"
+					
+		"PaintKit_ak47_crane_flight"									"검은색 및 흰색 바탕에 학을 손으로 직접 그리고 금색 장식을 더했습니다.\n\n개기월식 직전"
+		"PaintKit_ak47_crane_flight_Tag"								"두루미의 날갯짓"
+					
+		"PaintKit_deagle_firebreathing"									"진줏빛 광택이 나는 페인트로 보라색과 파란색 불꽃 무늬를 특수 도색했습니다.\n\n특별한 품질과 특성을 갖추고 있습니다."
+		"PaintKit_deagle_firebreathing_Tag"								"불의 숨결"
+					
+		"PaintKit_ump_fragment"											"은색, 검정색, 빨간색이 돋보이는 디자인을 특수 도색했습니다.\n\n산산조각 흔적도 없이."
+		"PaintKit_ump_fragment_Tag"										"산산조각"
+					
+		"PaintKit_sawedoff_fusion"										"검정색과 금색으로 구성된 디자인을 특수 도색했습니다. 빛이 비추는 방향에 따라 추가적인 세부 장식이 드러납니다.\n\n많은 걸 봤지..."
+		"PaintKit_sawedoff_fusion_Tag"									"퓨전"
+					
+		"PaintKit_galil_galigator"										"초록색과 노란색 바탕에 악어와 유해 물질 표시를 특수 도색했습니다.\n\n우걱, 우걱, 우걱!"
+		"PaintKit_galil_galigator_Tag"									"갈리게이터"
+					
+		"PaintKit_fiveseven_polymer_dark"								"투명한 보라색 폴리머로 만들어진 것처럼 보이도록 특수 도색했습니다.\n\n보라색 사탕 통에 들어 있습니다."
+		"PaintKit_fiveseven_polymer_dark_Tag"							"다크 폴리머"
+					
+		"PaintKit_usps_silent_boy"										"검은색과 파란색으로 이루어진 기하학적 문양과 표창 무늬를 특수 도색했습니다.\n\n공격 시 신중할 것."
+		"PaintKit_usps_silent_boy_Tag"									"사일런트 샷"
+					
+		"PaintKit_m4a4_zubastick_bw"									"M4A4에 날카로운 이빨과 주황색 눈을 손으로 직접 그렸습니다.\n\n1991년경."
+		"PaintKit_m4a4_zubastick_bw_Tag"								"날카로운 이빨"
+					
+		"PaintKit_m4a1s_electrum"										"초록색 대리석 느낌이 나는 바탕을 특수 도색하고 금색과 빨간색으로 장식했습니다.\n\n그들은 당신에게 충분한 보수를 하지 않겠지만, 난 다르지. - 발레리아 제너, 혁명가"
+		"PaintKit_m4a1s_electrum_Tag"									"일렉트럼"
+					
+		"PaintKit_m249_blocks_purple"									"기하학적 디자인을 보라색 페인트로 특수 도색했습니다. \n\n블록 쌓기"
+		"PaintKit_m249_blocks_purple_Tag"								"보크 블록"
+		
 // END COMMUNITY_37 WEAPONS
 
 // OVERPASS_2024
@@ -35063,7 +33932,7 @@
 		"PaintKit_hye_firework_patches"						"폭발을 추상적으로 표현한 붉은색 패턴을 도색했습니다.\n\n\"쿨한 남자는 폭발에도 뒤를 돌아보지 않지.\""
 		"PaintKit_hye_firework_patches_Tag"					"발열 폭발"
 
-		"PaintKit_soe_purple"								"보라색 위장 패턴을 도색하고 진주빛으로 마감 처리했습니다.\n\n새로 나온 치명적인 음료!"
+		"PaintKit_soe_purple"								"보라색 위장 패턴을 도색하고 진줏빛으로 마감 처리했습니다.\n\n새로 나온 치명적인 음료!"
 		"PaintKit_soe_purple_Tag"							"수면 물약"
 
 		"PaintKit_hye_animal_print_90s"						"밝은 네온 색상의 동물 무늬 패턴을 도색했습니다.\n\n몇 가지 색상이 아니라 색상 팔레트네요."
@@ -35241,6 +34110,7 @@
 		"StoreCheckout_GameLicense_AlreadyOwned"		"Counter-Strike: Global Offensive 게임 라이선스를 이미 소유하고 있습니다."
 		"StoreCheckout_GameLicense_PurchasePending_PW"	"이미 Counter-Strike: Global Offensive 게임 라이선스를 구매하셨습니다. 현재 Perfect World의 이전 결제 내역을 확인하고자 합니다. 만일 Perfect World 잔액이 사용된 경우, 이전 구매는 곧 자동적으로 완료됩니다. 그렇지 않은 경우, 잠시 뒤 다시 시도해 주세요."
 		"StoreCheckout_NotEnoughRoom"			"물품을 구매할 만큼 보관함에 충분한 여유 공간이 없습니다."
+		"StoreCheckout_NotEnoughRoom_TooManyStorageUnits"	"이미 보유하고 있는 저장 컨테이너가 너무 많습니다.\n\n계정 소유자가 Steam 고객 지원에 문의하기 전까지는 게임 내 상점에서 추가로 저장 컨테이터를 구매할 수 없습니다."
 		"StoreCheckout_TooManyItemsInCart"		"장바구니에 제품이 너무 많아 결제를 진행할 수 없습니다. 제품 개수를 줄이고 다시 시도해 주세요."
 		"StoreCheckout_PurchaseExpiredItemsUnavailable" "구매 거래가 만료되었거나 해당 제품이 더 이상 판매되지 않습니다. 금액이 청구되지 않았습니다. 다시 구매해 주세요."
 		"StoreCheckout_ContactSupport_Dialog_Title"	"경고"
@@ -35876,8 +34746,8 @@
 		"Workshop_created" "만든 날짜"
 		"Workshop_size" "크기"
 		"Workshop_View" "창작마당에서 보기"
-		"Workshop_Allow" "허용"
-		"Workshop_Deny" "거부"
+		"Workshop_Allow" "다운로드"
+		"Workshop_Deny" "취소"
 
 		"SFUI_Workshop_Desc_Pw"				"창작마당에서 구독한 맵은 여기에 표시됩니다. 맵을 사용하는 최적의 커뮤니티 서버는 커뮤니티 퀵 플레이로 찾을 수 있습니다."
 		"SFUI_Workshop_Desc_Sp_Pw"			"창작마당에서 구독한 맵은 여기에 표시됩니다. 봇과 함께 플레이해 볼 수 있습니다."
@@ -36167,12 +35037,6 @@
 		"SFUI_Store_Limited_Bid_Tagline"			"이 아이템에 입찰"
 		"SFUI_Store_Available_Offers"               "제안 유효 기간:"
 		"SFUI_Store_Preview"                        "미리 보기"
-
-		"SFUI_Store_Timer_Week:p"                   "%s1주"
-		"SFUI_Store_Timer_Day:p"                    "%s1일"
-		"SFUI_Store_Timer_Hour:p"                   "%s1시간"
-		"SFUI_Store_Timer_Min:p"                    "%s1분"
-		"SFUI_Store_Timer_Sec:p"                    "%s1초"
 
 		"SFUI_Store_Timer_Week:f"                 	"{f:0:value}주"
 		"SFUI_Store_Timer_Day:f"                    "{f:0:value}일"
@@ -36634,6 +35498,7 @@
 		"SFUI_InvContextMenu_preview_musickit"       "음악 미리 듣기"
 		"SFUI_InvContextMenu_decodable"     "상자 열기"
 		"SFUI_InvContextMenu_sell"			"장터에 팔기"
+		"SFUI_InvContextMenu_marketlisting"	"장터 판매 등록 목록 보기"
 		"SFUI_InvContextMenu_openloadout"   "로드아웃에서 보기"
 		"SFUI_InvContextMenu_inspectcase"	"열기..."
 		"SFUI_InvContextMenu_useitem"	    "아이템 사용"
@@ -37655,6 +36520,7 @@
 		"CSGO_Demo_Toggle"							"[Shift+F2]"
 		"CSGO_Demo_Time"							"{s:current_time} / {s:total_time}"
 		"CSGO_Demo_Round"							"라운드:"
+		"CSGO_Demo_Highlight"						"하이라이트"
 		"CSGO_Demo_End_Playback"					"재생 종료"
 		"CSGO_Demo_End_Playback_Overwatch"			"평결로 건너뛰기"
 		"CSGO_Demo_End_Playback_Overwatch_Finished"	"평결로 이동"
@@ -38446,7 +37312,7 @@
 		"SFUI_PlayerDetails_Loading"				"칭찬 사항 확인"
 		"SFUI_PlayerDetails_Loading_Failed"			"칭찬 사항을 불러오는 데 실패했습니다. 잠시 후 다시 시도해 주세요."
 		"SFUI_PlayerDetails_Previously_Submitted"	"이 사용자에 대한 칭찬"
-		"SFUI_PlayerDetails_Commendations_Left:p"		"오늘 %s1명의 플레이어를 더 칭찬할 수 있습니다."
+		"SFUI_PlayerDetails_Commendations_Left:f"	"오늘 {num_players, plural, other{플레이어}} {num_players}명을 더 칭찬할 수 있습니다."
 		"SFUI_PlayerDetails_NoCommendations_Left"   "칭찬을 너무 많이 했습니다. 내일 다시 시도해 주세요."
 		"SFUI_PlayerDetails_Updating_Previous_Commendation"   "이전에 제출한 칭찬을 변경하고 있습니다."
 		"SFUI_PlayerDetails_New_Commendation"   "새 칭찬을 제출하고 있습니다."
@@ -38817,6 +37683,8 @@
 		"SFUIHUD_InfoPanel_Coop_Thumb2Insert"					"저장장치를 회수했습니다.\n바이러스를 설치합니다!"
 		"SFUIHUD_InfoPanel_Coop_Thumb2Ready"					"두 번째 저장장치가 준비되었습니다!"
 		"SFUIHUD_InfoPanel_Coop_Thumb2Retrieved"				"바이러스가 든 저장장치를 회수했습니다!"	
+
+		"FullPlayerNameOrder_Default:f"						"{modifier} {clantag} {controller_name}({current_controller_of_my_pawn})"
 "SFUIHUD_Spectate_Equipment"	"팀 장비 가격 총합"
 		"SFUIHUD_Spectate_TeamMoney"	"팀 자금"
 		"SFUIHUD_Spectate_TeamEQValue"	"팀 장비 가격"
@@ -40026,6 +38894,8 @@
 		"SFUI_Settings_Network_Bandwidth_40mbps"   "Mbps"
 		"SFUI_Settings_Network_Bandwidth_Max"	   "제한 없음"
 
+		"SFUI_Settings_Volatile_Limit_Unlimited"	"무제한"
+
 		"SFUI_FeatureUnavailableDuringBeta"		"베타 버전에서는 사용할 수 없습니다."
 
 		"SFUI_Settings_Always_Show_Inventory"	"항상 보관함 표시"
@@ -40200,8 +39070,8 @@
 		"SFUI_Settings_MiniScoreboardPlayerCount_Tooltip"	"라운드가 진행되는 동안 소형 점수판에 플레이어 아바타 대신 각 팀의 플레이어 인원수를 표시합니다."
 
 
-		"Post_Round_Damage_Report_Given:p"		" • 입힌 피해량 → %s3: %s1번 타격으로 %s2 피해"
-		"Post_Round_Damage_Report_Taken:p"		" • 받은 피해량 ← %s3: %s1번 타격으로 %s2 피해"
+		"Post_Round_Damage_Report_Given:f"		" • 입힌 피해량 → {player_name}: {f:0:damage}({num_hits}번 타격) "
+		"Post_Round_Damage_Report_Taken:f"		" • 받은 피해량← {player_name}: {f:0:damage}({num_hits}번 타격)"
 
 		"SFUI_TeamOverheadID"					"팀 장비 표시"
 
@@ -40680,8 +39550,8 @@
 
 		"SFUI_UserAlertNoteType_1"			"%s1 의 서버가 현재 과부하된 상태입니다."
 		"SFUI_UserAlertNoteType_2"			"%s1 서버는 점검 중입니다."
-		"SFUI_UserAlertNoteType_LowPlayersR:p"	"%region% 지역에서 플레이어가 %players%명이 매치를 찾고 있습니다."
-		"SFUI_UserAlertNoteType_LowPlayersY:p"	"사용자의 지역에서 플레이어 %players%명이 매치를 찾고 있습니다."
+		"SFUI_UserAlertNoteType_LowPlayersR:f"	"{region}에서 매치를 찾고 있는 {players, plural, other{플레이어}}가 {players}명밖에 없습니다."
+		"SFUI_UserAlertNoteType_LowPlayersY:f"	"플레이어의 지역에서 매치를 찾고 있는 {players, plural, other{플레이어}}가 {players}명밖에 없습니다."
 
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"매치 입장에 실패했습니다."
 		"SFUI_QMM_ERROR_NotLoggedIn"		"Counter-Strike 매치메이킹 서비스에 로그인되어 있지 않습니다."
@@ -40931,7 +39801,7 @@
 		"SFUI_ExpandClan"					"팀 확장"
 		"SFUI_Lobby_KickButton"				"추방"
 		"SFUI_Lobby_QuickMatchButton"		"빠른 매치"
-		"SFUI_Lobby_CustomMatchButton"		"사용자 지정 매치"
+		"SFUI_Lobby_CustomMatchButton"		"맞춤 매치"
 		"SFUI_Lobby_ClientInviteButton"		"친구 초대"
 		"SFUI_Lobby_Title"		"대기실"
 
@@ -41225,10 +40095,10 @@
 		"SFUI_Lobby_StatusRichPresence_coopmission_community"			"커뮤니티 협동 공격"
 		"SFUI_Lobby_StatusRichPresence_coopmission_watch"				"Counter-Strike 관전 중"
 		"SFUI_Lobby_StatusRichPresence_coopmission_review"				"Counter-Strike 리플레이 시청 중"
-		"SFUI_Lobby_StatusRichPresence_custom_lobby"						"사용자 지정 맵 대기실"
-		"SFUI_Lobby_StatusRichPresence_custom_game"						"사용자 지정 맵 플레이 중"
-		"SFUI_Lobby_StatusRichPresence_custom_community"					"커뮤니티 사용자 지정 맵"
-		"SFUI_Lobby_StatusRichPresence_custom_watch"						"사용자 지정 맵 관전 중"
+		"SFUI_Lobby_StatusRichPresence_custom_lobby"						"맞춤 맵 대기실"
+		"SFUI_Lobby_StatusRichPresence_custom_game"						"맞춤 맵 플레이 중"
+		"SFUI_Lobby_StatusRichPresence_custom_community"					"커뮤니티 맞춤 맵"
+		"SFUI_Lobby_StatusRichPresence_custom_watch"						"맞춤 맵 관전 중"
 		"SFUI_Lobby_StatusRichPresence_custom_review"					"사용자 정의 맵 리플레이 시청 중"
 		"SFUI_Lobby_StatusRichPresence_gungameprogressive_lobby"		"무기 레이스 대기실"
 		"SFUI_Lobby_StatusRichPresence_gungameprogressive_game"			"무기 레이스 플레이 중"
@@ -45119,6 +43989,7 @@
 		"inv_context_remove_patch"			"패치 제거"		
 		"inv_context_openloadout"			"로드아웃에서 보기"
 		"inv_context_sell"					"장터에 팔기"
+		"inv_context_marketlisting"			"장터 판매 등록 목록 보기"
 		"inv_context_tradeup_add"			"무기 거래 계약서 사용"
 		"inv_context_tradeup_remove"		"무기 거래 계약서에서 제거"
 		"inv_context_open_contract"			"계약서 열기"
@@ -45176,6 +44047,7 @@
 		"inv_session_prop_updated"			"업데이트!"
 		"inv_session_prop_quest_reward"		"보상!"
 		"inv_session_prop_xpshopredeem"		"신규!"
+		"inv_session_prop_marketlisting"	"<img src='file://{images}/icons/ui/coupon.svg' class='item-tile__onmarket'/> 판매 등록된 아이템"
 		"inv_equipped_item"					"<b>{s:team}</b> 팀이 <b>{s:name}</b> 아이템을 장착했습니다."
 		"inv_equipped_item_noteam"			"<b>{s:name}</b> 아이템을 장착했습니다."
 		"inv_unequipped_item"				"<b>{s:name}</b> 아이템을 장착 해제했습니다"
@@ -45280,6 +44152,7 @@
 		"popup_delete_title"	"{s:itemname}"
 		"popup_delete_desc"		"아이템을 삭제할까요?"
 		"popup_delete_warning"	"아이템을 삭제하면 되돌릴 수 없습니다."
+		"popup_delete_tooltip"	"이 아이템을 삭제하려면 길게 누르세요. 아이템 삭제는 취소할 수 없습니다."
 		"popup_delete_button"	"아이템 버리기"
 
 		"popup_usegift_title"	"{s:itemname} 아이템 선물"
@@ -45424,7 +44297,7 @@
 		"popup_xray_in_use_title"		"엑스레이 스캐너"
 		"popup_xray_in_use_desc"		"현재 엑스레이 스캐너에는 이전에 스캔 한 상자의 아이템이 표시되어 있습니다. \n\n엑스레이 스캐너를 다시 사용하려면 먼저 해당 아이템을 수령하세요."
 		"popup_xray_first_use_title"	"엑스레이 스캐너"
-		"popup_xray_first_use_desc"		"엑스레이 스캐너를 사용하면 상자 안에 포함된 아이템을 확인할 수 있습니다. <br><br>엑스레이 스캐너에는 거래가 불가능한 1회용 <b>{s:itemname}</b> 아이템이 포함되어 있습니다. <br><br>엑스레이 스캐너를 다시 사용하려면 먼저 해당 아이템을 수령하세요."
+		"popup_xray_first_use_desc"		"엑스레이 스캐너를 사용하면 상자 안에 포함된 아이템을 확인할 수 있습니다. <br><br>엑스레이 스캐너에는 거래가 불가능한 일회용 <b>{s:itemname}</b> 아이템이 포함되어 있습니다. <br><br>엑스레이 스캐너를 다시 사용하려면 먼저 해당 아이템을 수령하세요."
 
 		// equip
 		"popup_equip_title"				"{s:item_name} 장착 위치 선택"
@@ -46248,10 +45121,10 @@
 		"practicesettings_infammo_button"			"무한 탄약"
 		"practicesettings_infwarmup_tooltip"		"<b>활성화 시</b> 준비 시간 상태가 유지되며 봇이 참가하지 않습니다."
 		"practicesettings_infwarmup_button"			"무한 준비 시간"
-		"practicesettings_annotations_tooltip"		"이 기능을 <b>활성화하면</b> 드롭다운 메뉴에서 선택된 맵 가이드를 이용할 수 있으며 무한 준비 시간, 무한 탄약, 수류탄 카메라 옵션이 함께 실행됩니다."
-		"practicesettings_annotations_button"		"맵 가이드 사용"
+		"practicesettings_annotations_tooltip"		"이 기능을 <b>활성화하면</b> 드롭다운 메뉴에 선택되어 있는 맵 가이드(선택 사항)를 불러오며 무한 준비 시간, 무한 탄약, 수류탄 카메라 옵션이 함께 실행됩니다."
+		"practicesettings_annotations_button"		"맵 가이드 활성화"
 		"practicesettings_annotations_workshop_tooltip" "창작마당 방문"
-		"practicesettings_annotations_dropdown_tooltip"	"불러올 맵 가이드를 지정합니다."
+		"practicesettings_annotations_dropdown_tooltip"	"선택한 경우 해당 맵 가이드를 불러옵니다."
 
 		"PlayMenuReplayNewUserTrainingButton"		"훈련 기간 리플레이"
 
@@ -46287,6 +45160,8 @@
 		"Workshop_annotation_ready"					"파일을 업로드할 준비가 되었습니다."		
 		"UI_File_Filter_SupportedAnnotationFormat"	"텍스트 파일(*.txt)"
 		"annotations_visit_workshop"				"창작마당 방문 ⤤"
+		"annotations_exceed_round_limit"			"전반전 {s:rounds}라운드 이후에는 맵 가이드를 사용할 수 없습니다."
+
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Game Mode Desc
@@ -47367,6 +46242,1210 @@
 		"playerstats_weapon_tooltip_kd"			"처치/사망: {s:score}"
 
 		"playerstats_map_tooltip_win_loss_tie"	"승리/패배/무승부"
+		"playerstats_map_tooltip_rndwin_rndloss"	"라운드 승리/패배"
+		"playerstats_map_tooltip_round_winrate"	"라운드 승률"
+		"playerstats_map_tooltip_match_winrate"	"매치 승률"
+
+		"playerstats_forceretry"				"통계 서버와의 연결이 끊겼습니다.\n확인을 클릭하여 다시 연결하세요."
+		"playerstats_no_data"					"선택한 기간 및 모드와 일치하는 데이터가 없습니다. 선택 사항을 변경하거나 매치를 플레이하세요."
+		"playerstats_link"						"구독 관리"
+		"playerstats_link_reactivate"			"구독 다시 활성화"
+		"playerstats_link_get"					"구독"
+
+		"playerstats_subscription_expire_warning"		"<b>매치 통계 수집 중</b> - 구독이 <b>오늘 만료</b>됩니다."
+		"playerstats_subscription_renew_automatically"	"<b>매치 통계 수집 중</b> - {d:days}일 후 구독이 자동으로 갱신됩니다."
+		"playerstats_subscription_renew_unknown"		"<b>매치 통계 수집 중</b> - 구독 만료까지 {d:days}일 남았습니다."
+		"playerstats_subscription_renew_manually"		"<b>매치 통계 수집 중</b> - 구독 만료까지 {d:days}일 남았으며, 구독은 <b>자동으로 갱신되지 않습니다</b>"
+		"playerstats_subscription_expired"				"<b>구독 만료 상태</b> - 새로운 매치 통계를 수집하기 위해 구독을 다시 활성화하세요."
+		"playerstats_subscription_not_enrolled"			"<b>구독 비활성화 상태</b> - 새로운 매치 통계를 수집하려면 구독하세요."
+		"playerstats_subscription_buy_button"			"월간 구독 활성화\n{s:price}/월"
+
+		"playerstats_past_14"					"최근 14일"
+		"playerstats_past_30"					"최근 30일"
+		"playerstats_past_90"					"최근 90일"
+		"playerstats_alltime"					"전체"
+
+		"stat_best_map"							"최고의 맵"
+		"stat_best_map_desc"					"최대 라운드 승리/패배 비율을 기록한 맵"
+
+		"stat_best_weapon"						"최고의 무기"
+
+		"stat_best_mate"						"최고의 팀원"
+		"stat_best_mate_desc"					"최대 라운드 승리/패배 비율 달성을 도운 팀원"
+
+		"matchstat_abandoned"					"*매치가 종료되기 전에 퇴장했습니다"
+
+		"playerstats_suffix_per_round"			"/라운드"
+		"playerstats_suffix_per_cent"			"%"
+
+		"playerstats_per_round"			"{s:value}/라운드"
+		"playerstats_per_cent"			"{s:value}%"
+		"playerstats_no_units"			"{s:value}"	
+
+		"playerstats_percentile"		"플레이어의 {s:tt_value} 등급은 작전 참가권 소지자 전체의 {s:tt_rank}% 보다 높습니다."
+		"playerstats_percentile_subscribers"	"플레이어의 {s:tt_value} 등급은 구독자 전체의 {s:tt_rank}% 보다 높습니다."
+
+
+		"playerstats_mapwinrate"		"맵 승률"
+		"playerstats_mapwinrate_rounds"	"라운드"
+		"playerstats_mapwinrate_matches" "매치"
+
+		"stat_total_score"				"점수"
+		"stat_average_score"			"라운드당 점수"
+
+		"stat_total_kills"				"처치 수"
+		"stat_average_kills"			"라운드당 처치"
+
+		"stat_total_deaths"				"사망 수"
+	//	"stat_average_deaths"			"stat_average_deaths"		
+
+		"stat_total_health_removed"		"피해량"	
+		"stat_average_health_removed"	"라운드당 평균 피해량"
+
+		"stat_average_kd"				"처치/사망"
+		"stat_average_kd_short"			"처치/사망"
+
+		"stat_average_hsp"				"stat_average_hsp"
+
+		"stat_total_2k"					"2연속"
+		"stat_total_3k"					"3연속"
+		"stat_total_4k"					"4연속"
+
+		"stat_grenades"					"고폭 수류탄"
+		"stat_total_grenade"			"투척 횟수"
+		"stat_average_grenade"			"성공률"
+		"stat_grenades_desc"			"유효한 고폭 수류탄 비율(최소 1명)"			
+
+		"stat_flash"					"섬광탄"
+		"stat_total_flash"				"섬광탄 투척 횟수"
+		"stat_average_flash"			"성공률"
+		"stat_flash_desc"				"유효한 섬광탄 비율(최소 1명)"
+
+		"stat_entry"					"엔트리 처치"
+		"stat_average_entrykd"			"EK/D"
+		"stat_total_entry_attempts"		"합계"
+		"stat_entry_desc"				"첫 처치 / 첫 사망 비율"
+
+		"stat_total_wins"				"승"
+		"stat_total_losses"				"패"
+		"stat_total_ties"				"무"
+
+		"stat_total_rounds_played"		"라운드"
+
+		"stat_1vx"						"1vX"
+
+		"stat_1v1"						"1 대 1"
+
+		"stat_average_1v1"				"성공률"				
+		"stat_total_1v1_attempts"		"기회"		
+
+		"stat_1v2"						"1대2"
+
+		"stat_average_1v2"				"성공률"			
+		"stat_total_1v2_attempts"		"기회"		
+
+		"num_matches"					"플레이한 매치"
+
+		"playerstat_name_0"				"점수"
+		"playerstat_name_0_long"		"라운드당 점수"
+		"playerstat_name_0_desc"		"라운드당 점수: {s:value}점\n합계: {d:total}점"
+
+
+		"playerstat_name_1"				"처치 수"
+		"playerstat_name_1_long"		"라운드당 처치"
+		"playerstat_name_1_desc"		"라운드당 평균 처치 수: {s:value}명\n처치 수 합계: {d:total}명"
+
+		"playerstat_name_2"				"피해량"
+		"playerstat_name_2_long"		"라운드당 피해량"
+		"playerstat_name_2_desc"		"라운드당 평균 피해량: {s:value}\n피해량 합계: {d:total}"	
+
+		"playerstat_name_2.1"			"피해량"
+		"playerstat_name_2.5"			"라운드당 평균 피해량"		
+
+		"playerstat_name_3"				"처치/사망"
+		"playerstat_name_3_long"		"사망당 처치"
+		"playerstat_name_3_desc"		"처치/사망 비율: {s:value}"		
+
+		"playerstat_name_4"				"헤드샷"
+		"playerstat_name_4_long"		"헤드샷 처치율"
+		"playerstat_name_4_desc"		"헤드샷 처치 비율: {s:value}%\n헤드샷 처치 합계: {d:total}명"	
+
+		"playerstat_name_4.5"			"헤드샷 %"		
+
+		"playerstat_name_5"				"2연속"
+		"playerstat_name_5_long"		"2연속 처치"
+		"playerstat_name_5_desc"		"2연속 처치 라운드 합계: {s:value}"	
+
+		"playerstat_name_6"				"3연속"
+		"playerstat_name_6_long"		"3연속 처치"
+		"playerstat_name_6_desc"		"3연속 처치 라운드 합계 : {s:value}"		
+
+		"playerstat_name_7"				"4연속"
+		"playerstat_name_7_long"		"4연속 처치"
+		"playerstat_name_7_desc"		"4연속 처치 라운드 합계: {s:value}"
+
+		"playerstat_name_7.5"			"연속 처치"
+	
+		"playerstat_name_8"				"고폭 수류탄"
+		"playerstat_name_8_long"		"유효한 고폭 수류탄"
+		"playerstat_name_8_desc"		"유효한 고폭 수류탄(최소 1명) \n비율: {s:value}%, 합계: {d:total}개"			
+
+		"playerstat_name_9"				"섬광탄"
+		"playerstat_name_9_long"		"유효한 섬광탄"		
+		"playerstat_name_9_desc"		"유효한 섬광탄 비율(최소 1명) \n비율: {s:value}%, 합계: {d:total}개"
+
+		"playerstat_name_10"			"1 대 1"
+		"playerstat_name_10_long"		"1 대 1 교전"
+		"playerstat_name_10_desc"		"1 대 1 상황 \n승률: {s:value}, 승수: {d:total}번"	
+
+		"playerstat_name_11"			"1 대 2"
+		"playerstat_name_11_long"		"1 대 2 교전"
+		"playerstat_name_11_desc"		"1 대 2 상황 \n승률: {s:value}%, 승수: {d:total}번"	
+
+		"playerstat_name_12"			"EK"
+		"playerstat_name_12_long"		"엔트리 처치"
+		"playerstat_name_12_desc"		"첫 처치/첫 사망 비율: {s:value}%\n첫 처치 수 합계: {d:total}명"
+
+		"stats_graph_button_0"			"라운드당 점수"
+		"stats_graph_button_1"			"라운드당 처치"
+		"stats_graph_button_2"			"ADR"
+		"stats_graph_button_3"			"K/D"
+		"stats_graph_button_4"			"헤드샷 %"
+
+		"ris_score"								"라운드 점수"
+		"ris_t"									"T"
+		"ris_ct"								"CT"
+		"ris_team-title"						"플레이어 팀 승률"
+		"ris_wins"								"{s:ris_team} 승리!"
+
+		"ris_win"								"승리"
+		"ris_loss"							"패배"
+
+		"ris_hits"								"{s:num_hits}번"
+		
+		"prdr_health_removed"					"{d:health_removed}({d:num_hits}번 타격)"
+		"prdr_return_health_removed"				"{d:return_health_removed}({d:return_num_hits}번 타격)"
+
+		"season_stat_title_wins"		"승리"
+        "season_stat_title_ties"		"무승부"
+        "season_stat_title_losses"		"패배"
+        "season_stat_title_rounds"		"라운드"
+        "season_stat_title_kills"		"처치"
+        "season_stat_title_headshots"	"헤드샷"
+		"season_stat_title_hs_percent"	"헤드샷 %"
+        "season_stat_title_assists"		"도움"
+        "season_stat_title_deaths"		"사망"
+        "season_stat_title_mvps"		"MVP"
+        "season_stat_title_rounds_3k"	"3연속 처치"
+        "season_stat_title_rounds_4k"	"4연속 처치"
+        "season_stat_title_rounds_5k"	"5연속 처치"
+		"season_stat_title_kpr"			"라운드당 처치 수"
+		"season_stat_title_kd"			"처치/사망"
+		"season_stat_title_best_map"	"최고 맵"
+		"season_stat_title_win_percent"	"승률"
+		"season_stat_title_matches_played"	"매치"
+		"season_stat_title_achieved_week"	"주간 최고 달성 등급"
+		"season_stat_value_kd"				"{s:kdratio}"
+		"season_stat_value_win_percent"		"{s:win-percent}%"
+		"season_stat_value_hs_percent"		"{s:hs-percent}%"
+		"season_section_rank"				"고점"
+		"season_section_season_stats"		"시즌 통계"
+		"season_section_rank_history"		"등급 기록"
+		"season_section_rank_activity"		"플레이한 매치"
+		"season_section_rank_map_stats"		"맵 통계"
+		"season_section_rank_map_wins_graph"	"맵별 승리"
+		"season_section_graph_x_axis_label_min"		"{d:week_min}주차"
+		"season_section_graph_x_axis_label_max"		"{d:week_max}주차"
+		"tooltip-no-map-stats"			"이 맵에 대한 통계가 없습니다."
+		"tooltip-season-rank-week-idx"		"{s:week-id}주"
+		"tooltip-season-rank-week-name"		"{s:week-name}"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	WIN PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_winpanel_mvp_award"				"MVP"
+		"Panorama_winpanel_mvp_award_kills"			"MVP"
+		"Panorama_winpanel_mvp_award_ace"			"MVP: 라운드 에이스 "
+		"Panorama_winpanel_mvp_award_bombplant"		"MVP: 폭탄 설치"
+		"Panorama_winpanel_mvp_award_bombdefuse"	"MVP: 폭탄 해체"
+		"Panorama_winpanel_mvp_award_rescue"		"MVP: 인질 구출 "
+		"Panorama_winpanel_mvp_award_score"			"MVP: 최고 점수"
+		"Panorama_winpanel_mvp_award_inferno"		"MVP: 상당한 화염 피해"
+		"Panorama_winpanel_mvp_award_blast"			"MVP: 상당한 폭발 피해"
+		"Panorama_winpanel_mvp_award_bombdefuse_clutch"	"MVP: 혼자 살아남아 폭탄 해체"
+		"Panorama_winpanel_mvp_award_bombplant_clutch"	"MVP: 폭탄 설치 및 방어"
+		"Panorama_winpanel_mvp_award_gungame"		"MVP"
+		"Panorama_winpanel_mvp_winner"				"MVP"
+		"Panorama_winpanel_mvp_award_kills_three"	"MVP: 최다 처치(3명)"
+		"Panorama_winpanel_mvp_award_kills_four"	"MVP: 최다 처치(4명)"
+
+		"Panorama_WinPanel_rank_awarded_multi"	"새로운 랭크 {d:rank_increase} 달성!"
+
+		"Panorama_WinPanel_rank_name_string"	"{s:current_best_cat} <font color='#CCCCCC'>({s:current_rank_cat})</font>"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	WATCH PANEL
+		//
+		///////////////////////////////////////////////////////////
+		
+		"WatchMenu_Watch"					"관전"
+		"WatchMenu_Tournament_Versus"		"대"
+		"WatchMenu_Outcome_Tied"			"무승부"
+		"WatchMenu_Outcome_Abandon"			"포기"
+		"WatchMenu_Outcome_Won"				"<img src='file://{images}/icons/ui/trophy.svg' width='15' height='15'/> 승리"
+		"WatchMenu_Outcome_Lost"			"패배"
+		"WatchMenu_Expand_Match_Menu"		"더 보기"
+		"WatchMenu_Get_Share_Link"			"매치 공유 코드 복사"
+		"WatchMenu_Share_Link_Copied"		"클립보드에 링크 복사됨"
+		"WatchMenu_Download_Demo"			"데모 다운로드 및 시청"
+		"WatchMenu_Watch_Live"				"실시간 관전"
+		"WatchMenu_Watch_Highlights"		"하이라이트 시청"
+		"WatchMenu_Watch_Lowlights"			"비운의 순간 보기"
+		"WatchMenu_Watch_Highlights_Player_Selected"	"{s:playerNameTitle} 님의 하이라이트 시청"
+		"WatchMenu_Watch_Lowlights_Player_Selected"	"{s:playerNameTitle} 님의 비운의 순간 보기"
+		"WatchMenu_Delete"					"로컬 데모 파일 삭제"
+		"WatchMenu_Downloading"				"다운로드 중"
+		"WatchMenu_Info_Download_Failed"	"다운로드 미완료"
+		"WatchMenu_Info_Download_Failed_Retry" "데모 파일 다운로드를 다시 시도할까요?"
+		"WatchMenu_Info_Download_Failed_Info" "다운로드가 완료되지 않았습니다. 점수판 정보를 이용할 수는 있지만 매치를 관전할 수는 없습니다."
+		"WatchMenu_Download_Disabled_Hint"	"매치 데모가 만료되어 더 이상 다운로드할 수 없습니다."
+		"WatchMenu_Tournament_BulletPoint"	"<ul>
+												<li>매치를 관전하고 팀 스티커를 사용해 그룹 스테이지와 플레이오프 스테이지에서 승자 예측에 도전하세요.</li>
+												<li>예측이 적중할 때마다 Counter-Strike 아바타와 Steam 프로필에 전시할 수 있는 승자 예측 도전 트로피를 받기 위한 점수를 획득할 수 있습니다.</li>
+												<li>그룹 스테이지가 시작되기 전까지 그룹 스테이지 매치 승자를 예측할 수 있습니다.</li>
+												<li>플레이오프 스테이지가 시작되기 전까지 플레이오프 스테이지 매치 승자를 예측할 수 있습니다.</li>
+											</ul>"
+		"WatchMenu_Viewer"				"관전자"
+		"WatchMenu_Viewers"				"관전자"
+		"WatchMenu_Viewers_dv:f"		"관전자 {d:spectatorCount}명"
+		"WatchMenu_FirstHalf"			"전반전"
+		"WatchMenu_SecondHalf"			"후반전"
+		"WatchMenu_Overtime"			"연장전"
+		"MatchInfo_FirstRound"			"첫 번째 라운드"
+		"MatchInfo_Halftime"			"교대 시간"
+		"MatchInfo_Overtime"			"연장전"
+		"MatchInfo_RoundDataTitle"      "{s:playerNameTitle} 님의 라운드 성적"
+		"MatchInfo_Date"				"{s:month} {s:day}"
+		
+		"MatchInfo_Date_Tournament_Month_Short_8"	"10월"		
+		"MatchInfo_Date_Tournament_Month_Final_Short_8"	"11월"
+		"MatchInfo_Date_Tournament_Month_Short_9"	"3월"
+		"MatchInfo_Date_Tournament_Month_Short_9_1"	"4월"
+		"MatchInfo_Date_Tournament_Month_Final_Short_9"	"4월"
+		"MatchInfo_Date_Tournament_Month_Short_10"	"7월"
+		"MatchInfo_Date_Tournament_Month_Short_10_1"	"7월"
+		"MatchInfo_Date_Tournament_Month_Final_Short_10"	"7월"
+		"MatchInfo_Date_Tournament_Month_Short_11"	"1월"
+		"MatchInfo_Date_Tournament_Month_Short_11_1"	"1월"
+		"MatchInfo_Date_Tournament_Month_Final_Short_11"	"1월"
+		"MatchInfo_Date_Tournament_Month_Short_12"	"7월"
+		"MatchInfo_Date_Tournament_Month_Short_12_1"	"7월"
+		"MatchInfo_Date_Tournament_Month_Final_Short_12"	"7월"
+		"WatchMenu_PickEm_ComingSoon"	"이전의 승자 예측 도전과 환상 대전 게임이 곧 표시됩니다."
+		"WatchMenu_ViewerCount"	"{s:channel} 관전자: {s:numberOfViewers}명"
+		"Matchlist_Team_Selection"	"모든 팀"
+
+
+		"pickem_timer_inactive"		"해당 스테이지의 승자 예측 도전이 활성화되어 있지 않습니다."
+		"pickem_timer"				"승자 예측 도전 선택까지 남은 시간: {s:time}"
+		"pickem_timer_upsell"		"승자 예측 도전까지 <b>{s:time}</b> 남았습니다. 참가권을 획득하여 승자 예측 도전에 참가하고 기념품 토큰도 획득하세요."
+		"pickem_timer_locked"		"승자 예측 도전이 종료되었습니다."
+		"pickem_points_earned" 		"포인트 획득"
+		"pickem_correct_pick" 		"예측 성공"
+		"pickem_points_needed_next_level" 	"<b>{s:level}</b> 레벨로 업그레이드하려면 <b>{d:points}{s:plural}</b>을 추가로 획득하세요."
+		"pickem_points_result" 		"승자 예측 도전 <b>{s:result-level}</b> 트로피를 획득했습니다"
+		"pickem_points_result_bronze" "승자 예측 도전 <b>동</b> 트로피를 획득했습니다"
+		"pickem_points_result_silver" "승자 예측 도전 <b>은</b> 트로피를 획득했습니다"
+		"pickem_points_result_gold" "승자 예측 도전 <b>금</b> 트로피를 획득했습니다"
+		"pickem_point"				"점"
+		"pickem_points"				"점"
+		"pickem_level_bronze"		"동메달"
+		"pickem_level_silver"		"은메달"
+		"pickem_level_gold"			"금메달"
+		"pickem_group_pick_worth"	"승자 예측 도전에 성공하면 <b>{d:points}{s:plural}</b>을 획득합니다."
+		"pickem_pick_correct_points_earned"	"+ <b>{d:points}</b> {s:plural}"
+		"pickem_pick_drag_hint" 	"여기에 팀을 끌어다 놓으세요"
+		"pickem_pick_undefeated"	"<b>무패로 다음 스테이지에 진출</b>할 것 같은 팀을 <b>선택</b>하세요."
+		"pickem_pick_eliminated"	"<b>무승으로 탈락</b>할 것 같은 팀을 <b>선택</b>하세요."
+		"pickem_get_items" 			"스티커 획득하기"
+		"pickem_get_items_tooltip" 	"승자 예측 도전을 업데이트하려면 다음 스티커가 필요합니다: <br><br>"
+		"pickem_place_picks" 		"승자 예측 도전 업데이트"
+		"pickem_confirm_picks" 		"승자 예측 도전 확정"
+		"pickem_confirm_Warning"	"<b>스티커는 승자 예측 도전에 사용됩니다.</b>\n\n스티커는 보관함에 계속 보관되며, 이벤트 스테이지가 종료되면 무기에 적용하거나 거래할 수 있습니다.\n\n<span class=\"premier-pickban__title__text-red\">\n스티커는 이벤트 스테이지가 종료될 때까지 사용 및 거래할 수 없습니다. 나중에 선택을 제거해도 잠금 상태는 해제되지 않습니다.</span>\n"
+		"pickem_confirm_ClearAll"	"<b>승자 예측 도전에 사용할 스티커가 없습니다.</b>\n\n이전에 사용한 스티커는 보관함에 남게 되며, 이벤트 스테이지가 종료된 뒤 무기에 적용하거나 거래할 수 있습니다.\n"
+		"pickem_confirm_stickes_for_lock" 	"승자 예측 도전에 사용할 스티커"
+		"pickem_confirm_not_owned" 		"<b>다음과 같이 배치할 수 없습니다.</b><span class=\"premier-pickban__title__text-red\">\n승자 예측 도전을 업데이트하려면 해당 팀의 팀 스티커가 필요합니다.</span>"
+		"pickem_apply_emptyslots"		"승자 예측 도전을 업데이트하려면 모든 예측을 선택해야 합니다. 빈 칸에 예측하려는 대상을 끌어다 놓고 '예측 업데이트' 버튼을 다시 클릭하여 확정하세요."
+		"pickem_apply_timeout"			"승자 예측 도전을 업데이트하는 데 실패했습니다. 나중에 다시 시도하세요."
+		"pickem_apply_drag_hint"	"예측 승자를 끌어다 놓으세요"
+		"pickem_apply_immediate" 		"나의 승자 예측 도전 업데이트 중..."
+		"pickem_save_all" 			"모든 예측 저장"
+		"pickem_make_picks" 		"{d:total-picks}/{d:user-picks} 예측 완료"
+		"pickem_drag_picks" 		"선택한 팀을 끌어다 놓으세요."
+		"pickem_reveal_all_results" "최종 순위 보기"
+		"pickem_saved" 		"예측 저장됨"
+		"pickem_teams_tbd" 	"팀 예측 미정"
+		"pickem_challenge_section_title" "승자 예측 도전"
+		"pickem_items_section_title" "토너먼트 아이템"
+		"pickem_items_tab_opening_stage" "오프닝 스테이지"
+		"pickem_items_tab_elim_stage" "일리미네이션 스테이지"
+		"pickem_items_tab_stage_i" "스테이지 1"
+		"pickem_items_tab_stage_ii" "스테이지 2"
+		"pickem_items_tab_stage_iii" "스테이지 3"
+		"pickem_items_tab_playoff_stage" "플레이오프"
+		"pickem_teams_remove_all_tooltip" 	"모든 예측 초기화"
+		"pickem_teams_fill_tooltip" 	"비어 있는 예측을 무작위로 채웁니다."
+		"pickem_versus"				"VS"
+		"pickem_submit_warning"		"{s:pass-name}가 활성화되지 않음"
+		"pickem_submit_warning_tooltip"		"승자 예측 도전을 진행하려면 활성화된 {s:pass-name}가 필요합니다. 스테이지가 잠기기 전에 패스를 활성화해야 합니다."
+		"pickem_submit_warning_popup_title"	"활성화된 패스 없이 승자 예측 저장"
+		"pickem_submit_warning_popup_desc"	"승자 예측 도전을 진행하려면 활성화된 {s:pass-name}가 필요합니다. 스테이지가 잠기기 전에 패스를 활성화해야 합니다."
+		"pickem_submit_warning_popup_action""활성화된 패스 없이 승자 예측 저장"
+		"pickem_submit_warning_popup_action2"	"패스 활성화 후 승자 예측 저장"
+		"contextmenu_pickem_souvenir_title" 	"기념품 패키지를 원하는 매치를 선택하세요"
+		"contextmenu_pickem_souvenir_no_result" 	"이 매치업이 끝나면 다시 돌아와서 기념품 패키지를 받으세요."
+		"mainmenu_major_hub"	"메이저 대회 허브 및 아이템"
+		"mainmenu_major_hub_items"	"스티커 지금 구매 가능"
+		"mainmenu_major_hub_no_items" "메이저 대회 허브"
+
+		"pickem_swiss_group_00"									"0:0"
+		"pickem_swiss_group_10"									"1:0"
+		"pickem_swiss_group_11"									"1:1"
+		"pickem_swiss_group_12"									"1:2"
+		"pickem_swiss_group_20"									"2:0"
+		"pickem_swiss_group_21"									"2:1"
+		"pickem_swiss_group_22"									"2:2"
+		"pickem_swiss_group_01"									"0:1"
+		"pickem_swiss_group_02"									"0:2"
+
+		"pickem_swiss_group_30"									"3:0 - 진출"
+		"pickem_swiss_group_3x"									"3:1 3:2\n 진출"
+		"pickem_swiss_group_13"									"1:3 - 탈락"
+		"pickem_swiss_group_23"									"2:3 - 탈락"
+		"pickem_swiss_group_03"									"0:3 - 탈락"
+
+
+
+
+
+
+
+		// WATCH EVENTS
+
+		"eventsched_lan"												"LAN 이벤트"
+		"eventsched_online"											"온라인 이벤트"
+		"eventsched_show_online"								"온라인 이벤트 보기"
+		"eventsched_date_format"								"{s:eventsched_date_month} {s:eventsched_date_day}"
+		"eventsched_versus"											"대"
+		"eventsched_ongoing"										"진행 중"
+		"eventsched_tbd"												"추후 공지"
+		"eventsched_live"												"실시간 매치"
+		"eventsched_link"												"HLTV.org에서 세부 정보 보기"
+		"eventsched_event_link"									"HLTV.org에서 이벤트 세부 정보 보기"
+		"eventsched_match_link"									"HLTV.org에서 매치 세부 정보 보기"
+		"eventsched_team_link"									"HLTV.org에서 팀 세부 정보 보기"	
+		"eventsched_no_streams"									"진행 중인 스트리밍이 없습니다"
+		"eventsched_watch_on_gotv"								"CSTV로 시청"
+		"eventsched_favorite_tt"								"{s:favorite_tooltip}"
+		"eventsched_favorite_tooltip_prime"			"이벤트를 즐겨찾기에 추가하면\n실시간 매치가 메인 메뉴에 표시됩니다."
+		"eventsched_favorite_tooltip_not_prime" "이벤트를 즐겨찾기에 추가하려면 프라임 계정이 필요합니다."
+		"eventsched_match_tooltip"							"{s:watchnotice_teamname_1} 대 {s:watchnotice_teamname_2}"
+		"eventsched_stream_watch"								"{s:stream_site}"
+		"eventsched_hltv"												"HLTV.org에서 이벤트 정보 제공"
+		"eventsched_country"										"{s:eventsched_country}"
+		"eventsched_no_live_matches"						"현재 실시간 매치가 없습니다."
+		"eventsched_featured"										"이 이벤트는 {s:eventsched_fave_month}월에 커뮤니티에서 가장 인기를 얻은 이벤트입니다."
+		"eventsched_official"										"Counter-Strike 메이저 이벤트입니다."
+
+		"WatchNotice_Reason_Official"						"이 이벤트는 Counter-Strike 메이저 이벤트이기 때문에 표시됩니다."
+		"WatchNotice_Reason_Personal"						"이 이벤트는 즐겨찾기에 추가되었으므로 표시됩니다."
+		"WatchNotice_Reason_Community"					"이 이벤트는 {s:watchnotice_fave_month}월에 커뮤니티에서 가장 많은 인기를 얻었기 때문에 추천되었습니다."
+		"WatchNotice_Watch"											"관전"
+
+	
+		// Used with formatText.AbbreviateNumber()
+		///////////////////////////////////////////
+		"NumberAbbreviation_E3"			"{s:abbreviated_number}K"
+		
+		// Note to translators: Add as needed. Code will use only available strings. example:
+		// "NumberAbbreviation_E4"		"{s:abbreviated_number}万"	
+
+		"NumberAbbreviation_E6"			"{s:abbreviated_number}M"
+		"NumberAbbreviation_E9"			"{s:abbreviated_number}B"
+		"NumberAbbreviation_E12"		"{s:abbreviated_number}T"
+
+		// Used with formatText.SplitAbbreviateNumber()
+		///////////////////////////////////////////
+		"NumberAbbreviation_suffix_E3"			"K"
+		
+		// Note to translators: Add as needed. Code will use only available strings. example:
+		// "NumberAbbreviation_suffix_E4"		"万"	
+
+		"NumberAbbreviation_suffix_E6"			"M"
+		"NumberAbbreviation_suffix_E9"			"B"
+		"NumberAbbreviation_suffix_E12"			"T"
+
+
+		"digitpanel_digits"			 " 0123456789,.-+?"
+		"digitpanel_digits_premier" " 1234567890,?"
+
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	OVERWATCH
+		//
+		///////////////////////////////////////////////////////////
+		
+		"Panorama_Overwatch_Downloading"		"사건 파일 다운로드 중..."
+		"Panorama_Overwatch_Review"				"사건 검토는 몇 분 정도 소요됩니다."
+		"Panorama_Overwatch_Welcome"			"Counter-Strike 감시부대"
+		"Panorama_Overwatch_Tooltip_p1"			"Counter-Strike 게임플레이 경험의 질을 높이기 위한 노력의 일환으로, 감시부대원은 공식 Valve 서버에서 Counter-Strike 2 매치의 리플레이를 다운로드하고 검토하여 의심스러운 부정행위를 확인할 수 있습니다. 리플레이를 검토하고 나면 해당 플레이어의 게임플레이에 대한 평결을 요청받게 됩니다."
+		"Panorama_Overwatch_Tooltip_sh1"		"1단계"
+		"Panorama_Overwatch_Tooltip_p2"			"오른쪽 하단의 '상황 증거 다운로드'를 클릭하여 감시부대 사건을 다운로드하세요."
+		"Panorama_Overwatch_Tooltip_sh2"		"2단계"
+		"Panorama_Overwatch_Tooltip_p3"			"'상황 증거 검토하기'를 클릭하여 서버에서 녹화한 플레이어 관점의 리플레이를 시청하세요. "
+		"Panorama_Overwatch_Tooltip_sh3"		"3단계"
+		"Panorama_Overwatch_Tooltip_p4"			"사건 검토가 완료되면, 각 질문에 대한 답을 1개씩 선택하고 '평결 제출'을 클릭하세요."
+		"Panorama_Overwatch_Major_Disruption"	"중대한 피해"
+		"Panorama_Overwatch_Minor_Disruption"	"경미한 피해"
+		"Panorama_Overwatch_Res_Griefing"		"게임 방해"
+		"Panorama_Overwatch_Res_AimHacking"		"조준 보조"
+		"Panorama_Overwatch_Res_WallHacking"	"시각적 보조"
+		"Panorama_Overwatch_Res_SpeedHacking"	"기타 외부적 보조"
+		
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	ROSETTA PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_CSGO_Spray_EnableMouse"			"<b>[{g:csgo_key:spray_mouse_enable}]</b> 마우스 커서 사용"
+		"Panorama_CSGO_Rosetta_Item_Name"			"<font color=\"{s:item_color}\">{s:item_name}</font>"
+		"Panorama_CSGO_Rosetta_Item_Count"			"남은 사용 횟수: {d:item_count}"
+		"Panorama_Attrib_SpraysHint"					"{s:bind_attack} 그래피티 남기기"
+		"Panorama_Attrib_SpraysHint_Auto"			"그래피티 남기기: <b>{s:bind_spray_menu}</b>"
+
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	RETICLE PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_HUD_weaponid_swap"			"<font color=\"#6a6156\">[{s:bind_use}] </font> <font color=\"#{s:weapon_color}\">{s:weapon_name}</font>으(로) 교체"
+		"Panorama_HUD_weaponid_pickup"			"<font color=\"#{s:weapon_color}\">{s:weapon_name}</font> <font color=\"#6a6156\">[{s:bind_use}] 줍기</font>"
+		"Panorama_HUD_weaponid_lookat"			"<font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+		"Panorama_HUD_weaponid_holdtopickup"	"<font color=\"#6a6156\">[{s:bind_use}] 길게 누르기 </font> <font color=\"#{s:weapon_color}\">{s:weapon_name}</font> 무기 줍기"
+
+		"Panorama_HUD_playerid_sameteam"			"<font color='#6E7D5C'>아군: {g:player_name:html:player_slot} 체력: {d:player_health}%</font>"
+		"Panorama_HUD_playerid_diffteam"			"<font color='#CC0000'>적군: {g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_playerid_specteam"			"<font color='#6E7D5C'>{g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_playerid_noteam"			"<font color='#FFCC00'>{g:player_name:html:player_slot} 체력:{d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_shadow"		"{g:player_name:player_slot}"
+
+		"Panorama_HUD_playerid_survival_enemy"				"<font color='#CC0000'>적군</font>"
+		"Panorama_HUD_playerid_survival_hunter_target"		"<font color='#e58816'>고가치 표적</font>"
+
+		"Panorama_HUD_botid_request_bomb"		"<font color='#e5da25'>[{s:bind_use}] 폭탄 건네받기</font>"
+
+		"Panorama_HUD_hostageid_nh"				"<font color='#e5da25'>인질</font>"
+		"Panorama_HUD_hostagename_nh"			"<font color='#e5da25'>{g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_hostageid_nh_use_lead"		"<font color='#e5da25'>[{s:bind_use}] 인질 구출</font>"
+		"Panorama_HUD_hostageid_nh_following"	"<font color='#e5da25'>인질 ({g:player_name:html:player_slot} 님을 따라가는 중)</font>"
+
+		"Panorama_HUD_hostageid"					"<font color='#e5da25'>인질</font><font color='#dcdac0'> {d:player_health}%</font>"
+		"Panorama_HUD_hostageid_use_lead"		"<font color='#e5da25'>[{s:bind_use}] 인질 구출</font><font color='#dcdac0'> {d:player_health}%</font>"
+		"Panorama_HUD_hostageid_following"		"<font color='#e5da25'>인질 ({s:player_name} 님이 구출 중)</font><font color='#dcdac0'> {d:player_health}%</font>"
+
+
+		"Panorama_HUD_playerid_overhead_health"			"{d:player_health}%"
+		"Panorama_HUD_playerid_overhead_money"			"${d:r:player_money}"
+
+		"Panorama_HUD_playerid_overhead_survival"					"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#00c3e1'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_lowhealth"			"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#d82429'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_money"				"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#7ebc50'> ${d:r:player_money}</font>"
+		"Panorama_HUD_playerid_overhead_survival_grey"				"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#dddddd'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_lowhealth_grey"	"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#d82429'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_money_grey"		"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#7ebc50'> ${d:r:player_money}</font>"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	DEATH PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_SurvivalEndOfMatch_ShowStats"			"[{s:bind_jump}] 매치 통계 보기"
+		"Panorama_Death_Cancel_Start_Replay"			"[{s:bind_jump}] 건너뛰기"
+		"Panorama_Death_Cancel_Replay" 				"[{s:bind_jump}] 리플레이 취소"
+		"Panorama_Death_Snapshot"						"[{s:bind_jpeg}] 지금 이 순간 저장"
+		"Panorama_HUD_Spectate_Navigation_Replay_Death"	"<font color='#ddbb22'><b>[{s:bind_reload}] 킬러 리플레이</b></font>"
+
+		"Panorama_DeathPanel_Killer1_YourWeapon"			"사용한 무기: 내가 쓰던 {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_KillerWeapon"			"사용한 무기: {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_OthersWeapon"			"사용한 무기: <font color='#adadad'>{s:other_player_name}</font> 님의 {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_Weapon"				"사용한 무기: {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_Weapon_Plural" 		"사용한 무기: {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_Weapon_CustomString" 	"{s:weapon_name}"
+
+		"Panorama_DeathPanel_DamageTaken:f"					"<font color='#A0A0A0'>받은 피해량: </font><font color='#FFFFFF'><b>{d:damage_taken}</b></font><font color='#A0A0A0'>(</font><font color='#FFFFFF'><b>{d:hits_taken}번 타격</b></font><font color='#A0A0A0'>)</font>"
+		"Panorama_DeathPanel_DamageGiven:f"					"<font color='#A0A0A0'>가한 피해량: </font><font color='#FFFFFF'><b>{d:damage_given}</b></font><font color='#A0A0A0'>(</font><font color='#FFFFFF'><b>{d:hits_given}번 타격</b></font><font color='#A0A0A0'>)</font>"
+
+		/////////////////////////////////////////////////////////////////
+		//
+		//      CHATWHEEL OPTIONS
+		//
+		////////////////////////////////////////////////////////////
+
+		"Chatwheel_segment_top"	"상단"
+		"Chatwheel_segment_topright"	"오른쪽 상단"
+		"Chatwheel_segment_right"	"오른쪽"
+		"Chatwheel_segment_bottomright"	"오른쪽 하단"
+		"Chatwheel_segment_bottom"	"하단"
+		"Chatwheel_segment_bottomleft"	"왼쪽 하단"
+		"Chatwheel_segment_left"	"왼쪽"
+		"Chatwheel_segment_topleft"	"왼쪽 상단"
+
+		"Chatwheel_ping_on_cooldown"  "핑을 사용할 수 없습니다. 핑에 쿨다운이 적용되었습니다."
+
+		"Chatwheel_plant"	"폭탄을 설치하라"
+		"Chatwheel_sitea"	"폭파 지점 A로"
+		"Chatwheel_siteb"	"B 지점으로"
+
+		"Chatwheel_section_move"	"이동"
+		"Chatwheel_sticktogether"	"흩어지지 마라"
+		"Chatwheel_followme"	"따라와라"
+		"Chatwheel_followingyou"	"따라가고 있다"
+		"Chatwheel_spreadout"	"흩어져라"
+		"Chatwheel_fallback"	"후퇴하라"
+		"Chatwheel_gogogo"	"전진하라!"
+		"Chatwheel_onmyway"	"이동 중"
+		"Chatwheel_gethostage"	"인질을 확인하라"
+		"Chatwheel_quiet"	"조용히 움직여라"
+
+		"Chatwheel_section_prepare"	"준비"
+		"Chatwheel_requestecoround"	"자금을 아껴야 한다"
+		"Chatwheel_requestspend"	"구매해야 한다"
+		"Chatwheel_requestleader"	"선두는 누가 맡나?"
+		"Chatwheel_requestweapon"	"무기 요청"
+		"Chatwheel_requestplan"		"작전이 있나?"
+		"Chatwheel_aplan"	"폭파 지점 A 표시"
+		"Chatwheel_bplan"	"B 지점 표시"
+		"Chatwheel_midplan"	"중부로"
+
+		"Chatwheel_section_grenades"	"수류탄"
+		"Chatwheel_decoy"	"유인탄이 필요하다"
+		"Chatwheel_smoke"	"연막탄이 필요하다"
+		"Chatwheel_grenade"	"수류탄이 필요하다"
+		"Chatwheel_fire"	"화염병이 필요하다"
+		"Chatwheel_flashbang"	"섬광탄이 필요하다"
+		
+		"Chatwheel_section_defend"	"방어"
+		"Chatwheel_coverme"	"엄호하라"
+		"Chatwheel_coveringyou"	"엄호한다"
+		"Chatwheel_help"	"지원 요청"
+		"Chatwheel_needbackup"	"지원이 필요하다"
+		"Chatwheel_holdposition"	"이 위치를 사수하라"
+        "Chatwheel_rotatetome"	"교대한다"
+
+		"Chatwheel_section_bomb"	"폭탄 상태"
+		"Chatwheel_guardingbomb"	"폭탄을 보호 중이다"
+		"Chatwheel_bombsiteclear"	"폭파 지점 확보"
+		"Chatwheel_droppedbomb"	"폭탄을 떨어뜨렸다"
+		"Chatwheel_bombpickedup"	"폭탄을 확보했다"
+		"Chatwheel_ifixbomb"	"폭탄을 해체/설치하겠다"
+		"Chatwheel_youfixbomb"	"폭탄을 해체/설치하라"
+		
+		"Chatwheel_bombat"	"폭탄 위치 보고" 
+
+		"Chatwheel_section_enemystatus"	"적군 상태"
+		"Chatwheel_heardnoise"	"인기척을 느꼈다" 
+		"Chatwheel_enemyspotted"	"적군 발견"
+		"Chatwheel_sectorclear"	"구역 확보 완료"
+		"Chatwheel_sniperspotted"	"저격수 발견"
+		"Chatwheel_bombcarrierspotted"	"폭탄 운반자 발견"
+		"Chatwheel_threeleft"	"3명 남았다"
+		"Chatwheel_twoleft"	"2명 남았다"
+		"Chatwheel_oneleft"	"1명 남았다"
+		"Chatwheel_oneenemyhere"  "적군 1명 발견"
+		"Chatwheel_multipleenemieshere"  "다수의 적 발견"
+		"Chatwheel_ihavethebomb"  "폭탄을 확보했다"
+
+		"Chatwheel_section_enemykilled"	"적군 처치"
+		"Chatwheel_gotheadshot"	"헤드샷으로 처치했다"
+		"Chatwheel_ikilledsniper"	"저격수를 처치했다"
+		"Chatwheel_wekilledsniper"	"저격수를 처치했다"
+		"Chatwheel_sawheadshot"	"헤드샷 확인"
+
+		"Chatwheel_section_combatstatus"	"전투 상태"
+		"Chatwheel_attacking"	"공격 중"
+		"Chatwheel_inposition"	"위치 확보"
+		"Chatwheel_covering"	"엄호 중"
+		"Chatwheel_pinned"	"포위되었다"
+		"Chatwheel_incombat"	"전투 중"
+		"Chatwheel_friendlyfire"	"팀원 공격"
+		"Chatwheel_lastunitalive"	"마지막 생존 팀원"
+
+		"Chatwheel_section_responses"	"응답"
+		"Chatwheel_wewon"	"팀이 승리했다"
+		"Chatwheel_welost"	"팀이 패배했다"
+		"Chatwheel_wearewinning"	"이기고 있다"
+		"Chatwheel_lostround"	"이번 라운드는 패배했다"
+		"Chatwheel_thanks"	"고맙다!"
+		"Chatwheel_sorry"	"사과"
+		"Chatwheel_compliment"	"잘했다!"
+		"Chatwheel_affirmative"	"동의"
+		"Chatwheel_negative"	"반대"
+		"Chatwheel_peptalk"	"격려"
+		"Chatwheel_cheer"	"응원"
+
+		"Chatwheel_plantingata"	"폭파 지점 A에 폭탄 설치 중"
+		"Chatwheel_plantingatb"	"B 지점에 폭탄 설치 중"
+		"Chatwheel_plantedata"	"폭파 지점 A에 폭탄 설치 완료"
+		"Chatwheel_plantedatb"	"B 지점에 폭탄 설치 완료"
+		"Chatwheel_planted"	"폭탄 설치 완료"
+
+		"Chatwheel_seehostagestaken"	"인질이 구출되고 있다"
+		"Chatwheel_requestgethostages"	"인질을 구출하라"
+
+		"Chatwheel_guardinga"	"폭파 지점 A에서 잠복 중"
+		"Chatwheel_guardingb"	"B 지점에서 잠복 중"
+		
+
+		
+		"Chatwheel_section_command"	"명령"
+		"Chatwheel_section_report"	"보고"
+
+		"Chatwheel_description" "채팅 휠은 유용한 무전 명령을 지정하여 빠르게 사용할 수 있도록 도와줍니다."
+
+		////
+		//
+		// Volatile Laptop
+		//
+		////
+
+		// ---------------------------------------------------------------------------------------------
+		"laptop_window_collection_title"			"수집품 카탈로그 경험치"
+		"laptop_window_expiration_title"			"만료"
+		"laptop_window_seal_title"					"상태"
+		"laptop_window_messages_title"				"채팅 - 무기 거래상"
+		"laptop_window_currentoffer_title"			"현재 제안"
+		"laptop_app_title"							"<span class=\"laptop-app-title-prefix\">업</span>링크"
+		"laptop_app_version"						"v 1.1.0.2000"
+
+		"dealer_offer_attachment_title"							"{s:item-name}"
+		"dealer_offer_attachment_wear"							"{s:item-rarity}"
+		"dealer_offer_attachment_remaining_title"				"남은 제안: {d:offer-total}개"
+		"dealer_offer_attachment_remaining"						"남은 제안: {d:offer-total}개"
+		"dealer_offer_received_count"							"<b>{s:offer-count}</b> 제안"
+		"dealer_offer_attachment_final_title"					"최종 제안"
+		"dealer_offer_attachment_final"							"{s:offer-count} 및 최종 제안"
+		"dealer_offer_attachment_status"						"제안 - {s:offer-status}"
+		"dealer_offer_attachment_status-active"					"<b><span class=\"offer-active\">제안 유효</span></b>"
+		"dealer_offer_attachment_status-price"					"<b><span class=\"offer-active\">{s:offer-price}</span></b>"
+		"dealer_offer_attachment_status-declined-price"			"{s:offer-price}"
+		"dealer_offer_attachment_status-declined"				"<span class=\"offer-declined\">{s:offer-count} 제안 - 거절</span>"
+
+		"user_btn_purchase_desc_purchase"		"이 아이템을 구매하려면 길게 누르세요. 구매 후 터미널은 자동으로 파기됩니다."
+		"user_btn_purchase_desc_continue"		"이 제안을 거절하고 다음 제안을 확인하려면 길게 누르세요."
+		"user_btn_purchase_desc_end"		"최종 제안을 거절하고 이 터미널을 파기합니다."
+		"user_btn_purchase_title"			"{s:offer-count} 제안"
+		"user_btn_purchase_final_title"		"<b>최종 제안</b>"
+		"user_btn_decline_desc"				"이 제안을 거절하고 다른 제안을 확인합니다."
+		"user_btn_accept"		"<b>{s:price}</b>에 수락하지."
+		"user_btn_accept_final"	"<b>{s:price}</b>에 거래를 끝내지."
+		"user_btn_accept_0"		"좋다. <b>{s:price}</b>에 거래하지."
+		"user_btn_accept_1"		"<b>{s:price}</b>에 수락하겠다."
+		"user_btn_accept_2"		"<b>{s:price}</b>에 거래하겠다."
+		"user_btn_accept_3"		"<b>{s:price}</b>에 가져가지."
+		"user_btn_accept_4"		"<b>{s:price}</b>, 거절할 수 없지."
+		"user_btn_accept_5"		"<b>{s:price}</b>, 가격 좋군."
+		"user_btn_next"			"제안을 거절하겠네."
+		"user_btn_next_0"		"관심은 있지만 거절하겠다."
+		"user_btn_next_1"		"총알이 아깝군."
+		"user_btn_next_2"		"수락할 수 없네."
+		"user_btn_next_3"		"이건 넘어가지."
+		"user_btn_next_4"		"거절하겠다."
+		"user_btn_next_5"		"고맙지만 거절하겠다."
+		"user_btn_next_6"		"이번에는 넘어가겠네."
+		"user_btn_next_7"		"오늘은 넘어가겠네."
+		"user_btn_pause"		"거래 일시 정지"
+		"user_btn_end"			"최종 제안 거절"
+
+		"user_message_limit_0"		"<b>{s:limit-setting}</b>까지는 가능하네."
+		"user_message_limit_1"		"상한선은 <b>{s:limit-setting}</b>정도로 하지."
+		"user_message_limit_2"		"<b>{s:limit-setting}</b>까지는 괜찮다."
+		"user_message_limit_3"		"한도는 <b>{s:limit-setting}</b> 정도면 좋을 거 같군."
+		"user_message_limit_unlimited_0"	"<b>한도는 없네</b>. 전부 다 보여 주게."
+		"user_message_limit_unlimited_1"	"<b>한도는 없네</b>. 지갑 사정은 걱정하지 말게."
+		"user_message_limit_unlimited_2"	"오늘 마음먹고 사러 왔으니 <b>다 꺼내 보라고</b>."
+		"user_message_limit_unlimited_3"	"총알이 나가는 무기라면 다 관심 있지. <b>한도는 없네</b>."
+		"user_message_limit_unlimited_4"	"한도는 무한이야."
+		"offer_limit_setting"		"제안 한도: {s:limit}"
+		"offer_limit_setting_interface"		"제안 한도: {s:limit} <img src='file://{images}/icons/ui/expand.svg' class='expand-icon'/>"
+
+		"dealer_offer_Unknown"							"-"
+		"dealer_offer_1"								"1번째"
+		"dealer_offer_2"								"2번째"
+		"dealer_offer_3"								"3번째"
+		"dealer_offer_4"								"4번째"
+		"dealer_offer_5"								"5번째"
+		"dealer_offer_6"								"6번째"
+		"dealer_offer_7"								"7번째"
+		"dealer_offer_8"								"8번째"
+		"dealer_offer_9"								"9번째"
+		"dealer_offer_10"								"10번째"
+
+		"current_offer_tooltip"		"무기 거래상이 현재 제공한 제안입니다."
+		"declined_offer_tooltip"	"거절한 제안"
+		"future_offer_tooltip"		"제안이 아직 공개되지 않았습니다."
+		"laptop_expiration_tooltip"		"이 업링크 터미널과 해당 제안이 만료되기까지 남은 시간입니다."
+		"laptop_max_offer_tooltip"		"최대 제안 한도를 설정합니다. 해당 한도 이하의 제안만 받게 됩니다. 한도는 언제든지 변경할 수 있습니다."
+		"collection_xp_tooltip"			"이 수집품의 제안을 확인하고 경험치를 획득하세요. 진행도를 확인하고 경험치를 획득하려면 클릭하세요."
+		"terminal_offer_limit_tooltip"		"최대 제안 한도를 변경합니다. 무기 거래상은 해당 한도 가격 내의 무기만 보여줍니다."
+		"popup_lootlist_title"			"수집품 카탈로그 경험치"
+		"popup_lootlist_desc"			"이 수집품의 제안을 확인하고 경험치를 획득하세요."
+
+		"popup_lootlist_progress:f"      "확인한 제안: {total, plural, other{{d:total}개 중 {d:seen}개}}"
+		"popup_lootlist_claim_xp"		"보너스 경험치 획득"
+		"popup_lootlist_claim_ww"		"경험치 획득 중..."
+		"popup_lootlist_claim_ok"		"✔ 경험치 획득"
+		"popup_vpn_status_connected"	"상태: 보안 네트워크에 연결됨"
+		"popup_vpn_status_disconnected"	"상태: 연결 끊김"
+		"popup_signal_full" 			"신호 강도: 매우 강함"
+		"popup_signal_ok" 				"신호 강도: 강함"
+		"popup_offer_limit_desc"		"향후 모든 제안에 대한 최대 제안 한도를 설정합니다."
+		"laptop_battery_tooltip" 		"배터리 충전: {d:percent}%"
+		"laptop_original_seal_tooltip" 	"이 업링크 터미널에서 구매한 모든 아이템에는 최초 소유자 증명서가 함께 제공됩니다. 이 증명서는 아이템을 소유하고 있는 한 유효합니다."
+		"laptop_zoom_tooltip" 			"확대/축소하려면 마우스 휠을 스크롤하세요."
+		"laptop_pan_tooltip" 			"화면을 이동하려면 'Shift' 키를 누른 상태로 마우스를 끌어 움직이세요."
+		"laptop_pricing_tooltip"		"가격은 전 세계 모든 지역에 대해 동일하게 책정되며 이 수집품에 포함된 각 아이템의 수요에 따라 자동으로 조정됩니다."
+
+		"dealer_message_set_offer_limit_0"		"먼저 정하고 시작하지. 얼마까지 쓸 수 있나?"
+		"dealer_message_set_offer_limit_1"		"일단 이것부터 묻겠네.<!--.25--> 한도가 어떻게 되나?"
+		"dealer_message_set_offer_limit_2"		"무엇보다 먼저....<!--.25--> 한도는 얼마지? 예산이 어떻게 되나?"
+		
+		"dealer_message_start_0"  	"이 무기는 최상급 전문 요원용이라네.<!--.25-->상태도 좋고 작동도 아주 잘 되지. 복잡한 서류 작업도 전혀 필요 없다고."
+		"dealer_message_start_1"  	"회색시장에서 가져온 무기가 좀 있어. 당연히 기록은 없지.<!--.25-->추적이 불가능하니 걱정은 말게. 몇 년간 시장에서 유통되지 않은 물건이라 아무도 눈치 못 챌 거야.<!--.25-->게다가 여전히 잘 나간다고. 궁금하면 한번 쏴 보든지."
+		"dealer_message_start_2"  	"오늘 아침 아흐라단 세관에서 내 화물을 압류했다네. 불쌍하게 죽어가는 사람들을 살리려면 의료 장비가 필요하다는 뭐 그런 슬픈 이야기로 설득해 보려고 했거든.<!--.25-->그닥 효과가 없었지. 그런데 돈이 가득 든 서류 가방은 효과가 직방이더군.<!--.25-->이 투석기를 보육원에 보내기 전에 살펴보는 건 어떨까나?"
+		"dealer_message_start_3"  	"얼마 전 중앙아시아 국가 중 하나에서 정권 교체가 일어났네.<!--.25-->군수 창고 문이 활짝 열려 있길래 직접 가서 뒤져 봤지.<!--.25-->추적 불가능한 깨끗한 무기로만 가져왔으니 한번 살펴보게."
+		"dealer_message_start_4"  	"오늘 가지고 온 무기는 모두 깨끗하다네.<!--.25-->내가 아는 바로는, 지금까지 누구도 손대지 않은 무기일세."
+		"dealer_message_start_5"  	"깨끗하고, 일련번호도 없고, 상태까지 완벽한 무기가 있다네.<!--.25-->전범 재판소에서는 단순히 전쟁 범죄 증거물로 치부하겠지.<!--.25-->그렇지만 자네와 나는 이런 물건이 진짜 걸작이라는 걸 알고 있지 않나."
+		"dealer_message_start_6"  	"이번 무기는 모두 최근 의장대에서 풀린 희귀한 물건이라네.<!--.25-->행사 때문에 이곳저곳으로 많이 운반되기는 했지만, 한 번도 실제로 사용된 적은 없다네."
+		"dealer_message_start_7"  	"다른 거래자들은 항상 내가 파는 물건을 어떻게 구했는지 궁금해하지. 정말인지 너무 싫다네.<!--.25-->자네가 유일하게 물어보는 건 시장에서 가장 좋은 무기냐 아니냐지.<!--.25-->이번 무기도 당연히 최고 중의 최고라네."
+		"dealer_message_start_8"  	"드로스비크 평화 협정이 생각나서 말인데, 난 평화를 사랑한다네.<!--.25-->전쟁이 나면 나한테 큰 빚을 진 장군이랑 문제만 더 복잡해질 거야. 무기고에 물건도 가득해서 걱정할 일도 없고 말이야.<!--.25-->그러니까 내 말은...<!--.25-->평화는 좋은 거니, 당연하지. 무고한 생명이...<!--.25-->아니, 내가 왜 변명을 하고 있지? 자네는 신경도 안 쓸텐데."
+		"dealer_message_start_9"  	"이번 화물에는 회색시장에서 가져온 희귀한 물건이 아주 많네.<!--.25-->구경이 특이해서 아마추어는 손도 못 대는 무기도 있지. 분명 마음에 들 거네."
+		"dealer_message_start_10"  	"아이고 내 정신 좀 봐.<!--.25-->선적 서류에 깜빡하고 품목을 잘못 기재한 상자가 하나 있지 뭐야.<!--.25-->아, 사실은 하나가 아니라 수십 개를 깜빡했어.<!--.25-->제대로 된 물건을 좀 채워 넣어야 할 거 같은데... 항만 당국에서 조사를 나오기 전에 자네가 상자에 든 물건을 없애는 걸 도와주는 건 어떤가?"
+		"dealer_message_start_11"  	"드로스비크 검사관이 이 무기를 뇌물로 받아먹으려고 했지. 얼마나 갖고 싶었는지 멍청하게 압수 명령까지 들먹이더군.<!--.25-->드로스비크에 말 많은 놈들을 어떻게 상대해야 할지 아는 사람을 내가 좀 알고 있다고. 그자는 이제 입도 뻥끗하지 못한다네.<!--.25-->이 무기가 얼마나 근사한지 말로 설명할 필요가 없다는 게 다행일 뿐이야."
+		"dealer_message_start_12"  	"이 화물을 국경 너머로 보내려고 아흐라단 놈들한테 일일이 뒷돈을 줘야 했지.<!--.25-->뇌물도 죄다 아흐리로 줬고 말이야. 종잇장이나 다름없이 가치가 바닥난 화폐로 뇌물을 바치려면 얼마나 많은 양의 종이를 날라야 하는지 알고 있나? 그 녀석들은 지역 경제에도 좀 신경 써야 하지 않나 싶어."
+		"dealer_message_start_13"	"이 물건을 빨리 처리해 달라는 회색시장 브로커가 있다네.<!--.25-->그는 다른 말 없이 '빨리' 처리해 달라고만 했어.<!--.25-->아 참, '아주 아주' 빨리라고 했지.<!--.25-->그러니까, 이 물건을 빨리 팔려고 하는 이유만 궁금해하지 않는다면, 물건 자체는 흠잡을 곳이 없으니 자네는 아주 아주 행복할 거야."
+		"dealer_message_start_14"	"오늘은 구형 모델을 가져왔다네.<!--.25-->화려하진 않지만, 믿을 만하거든.<!--.25-->자네 손주 세대까지도 거뜬히 문제없을 거야."
+		"dealer_message_start_15"	"한 반군 민병대원이 지도자의 무기고를 털어 빼돌린 물건이라네.<!--.25-->그자가 지도자의 몸통에서 팔다리랑 머리도 털어 낸 걸로 보여.<!--.25-->(그런 물건은 내가 취급하진 않지만, 필요하면 그쪽 사람을 소개해 줄 수는 있네.)"
+		"dealer_message_start_16"	"드로스비크 국경 지휘관이 이 화물을 압수하겠다고 협박했지.<!--.25-->드로스비크에서는 내가 뇌물을 안 준다는 말을 못 들은 모양이야. 그 동네 힘 좋은 깡패를 부리는 게 훨씬 싼데 뇌물이 왜 필요하겠어. 드로스비크는 세계 킥복싱의 수도나 다름없잖아.<!--.25-->새로 온 지휘관은 압수 명령을 잃어버렸다고 하더군. 눈치가 좋은 덕에 그자 팔은 잘 붙어있겠어."
+		"dealer_message_start_17"	"이 물건은 전부 억만장자의 개인 소장품이네.<!--.25-->아, 억만장자였었다고 하는 게 맞겠군. 지금 조사를 받고 있거든. 그래서 그자가 팔지 못한 물건을 내가 대신 처분하고 있다네.<!--.25-->솔직히 말하면, 이런 물건은 요트 벽에 매달려 있는 것보다는 자네 손에 들려 있는 게 낫겠어."
+		"dealer_message_start_18"	"부두 검사관이 이 '트랙터 부품' 화물이 무게가 안 맞는다고 지적하더군.<!--.25-->웃기는 건, 소총 한 상자에 1만 달러를 더하면 그자가 말하는 화물 무게와 완전히 같아진다는 거야.<!--.25-->자, 이 트랙터 부품을 좀 보게나."
+		"dealer_message_start_19"	"오늘 가지고 온 건 무려 쿠데타에서 살아남은 무기라네.<!--.25-->겉에 흠집은 좀 났지만 작동하는 데 전혀 문제가 없다고. 중요한 건 성능 아니겠나?"
+		"dealer_message_start_20"	"보잘것없는 한 작은 공화국에서 대통령을 교수형에 처했다네.<!--.25-->운 좋게도 내가 그의 공급망을 손에 넣었지."
+		"dealer_message_start_21"	"처리 오류나 서류상 착오라고 해 두지. 단순한 기재 실수니까.<!--.25-->실수는 발생하기 마련 아닌가. 난 그저 친구가 보급 부사관 자리를 잃지 않도록 도와주려는 것뿐이니까.<!--.25-->이건 사라져야 할 물건이라네."
+		"dealer_message_start_22"	"어느 세관장이 이 화물로 뇌물을 더 쥐어짜 내려고 날 압박했네. 그래서 부두의 노동조합원 중 좀 힘 있는 자들에게 맡겼지.<!--.25-->모두가 실종자를 찾느라 바쁠 때는 서류 작업이 속전속결로 마무리되는 게 참 재미있단 말이야.<!--.25-->그 불쌍한 자를 빨리 찾아야 할 텐데. 수영을 못하는 거 같았거든."
+		"dealer_message_start_23"	"아흐라단의 국경 수비대원이 서류가 일치하지 않는다고 하는 거야. 그래서 아흐리 한 더미를 쥐여 주었더니, 갑자기 서류가 일치한다고 하더군.<!--.25-->실제로 1만 아흐리가 얼마나 가치가 있는지는 나도 잘 몰라. 한 6달러 정도 하려나.<!--.25-->아무튼, 존재하지 않는 거나 다름없는 이 무기를 한번 볼 텐가?"
+		"dealer_message_start_24"	"어느 한 장군이 이 물건을 사기로 했는데, 한심하게도 드론 폭격을 받아 죽어버렸지 뭐야.<!--.25-->그러니까 창문은 닫아 두는 게 좋아. 내 조언일세. 아무튼, 그자가 폭격을 받은 덕분에 자네가 이득을 보는군."
+		"dealer_message_start_25"	"드로스비크 정권이 교체되었다더군. 어떻게 된 일인지는 모르겠지만, 무기 상자로 가득 찬 창고가 난리통에 사라졌다지?<!--.25-->그런데 어쩌다 보니 내가 그걸 찾아냈단 말이야. 신기하지?<!--.25-->더 신기한 건, 내가 그걸 팔려고 내놓을 수도 있다는 거지. 바로 지금, 자네에게 말이야."
+		"dealer_message_start_26"	"자네에게 보여 주고 싶은 잘못 신고된 화물이 있다네.<!--.25-->'농기구'라고 얕보지 말게나. 먼저 쏘지 않으면 자네 위에 흙이 덮일 테니까."
+		"dealer_message_start_27"	"난 반란군이랑 일하는 게 정말 싫어. 반란군은 그냥 총을 든 민간인을 정중하게 표현한 거고, 결국 아마추어를 멋들어지게 포장해서 부르는 거니까.<!--.25-->어쨌든 그들이 자취를 감췄으니, 이제 진짜 전문가가 이 무기를 다루는 게 마땅하지."
+		"dealer_message_start_28"	"항상 정세가 혼란스러운 남부 지역에서 국회가 붕괴되었다지. 거기는 반년마다 정권이 뒤집히는 거 같아.<!--.25-->아무튼 덕분에 현지 무기고가 박 터지듯 활짝 열린 모양이야."
+		"dealer_message_start_29"	"지난 금요일에 항만 당국 검사관이 이 화물이 의심스럽다고 말했지.<!--.25-->그런데 월요일에 그의 딸이 스탬윅 등록금을 치르고도 남을 만큼 돈이 충분해지니, 의심이 싹 사라지고 화물이 농기구로 처리되었더군.<!--.25-->내가 하고 싶은 말이야, 교육은 중요하다는 걸세. 자, 농기구나 한번 살펴보게나."
+
+		"dealer_message_resume_0"  	"<!--1-->다시 왔군. 잘 왔네. 거래는 아직 유효해."
+		"dealer_message_resume_1"  	"<!--1-->생각할 시간이 더 필요한가? 문제없다네."
+		"dealer_message_resume_2"  	"<!--1-->돌아올 줄 알고 있었다네."
+		"dealer_message_resume_3"  	"<!--1-->지난번에 거래하다만 물건부터 다시 시작하지."
+		"dealer_message_resume_4"  	"<!--1-->거래할 준비는 되었나?"
+		"dealer_message_resume_5"  	"<!--1-->좋아, 돌아왔군. 이 물건을 좀 빨리 처리해야 하네. 안 그러면 엉뚱한 놈들이 물건에 관해 물어보기 시작할 거라고."
+		"dealer_message_resume_6"  	"<!--1-->자네, 돌아왔구먼. 이거까지 보여줬었던 거 같은데?"
+
+		"dealer_message_first_offer_0"	"<!--.5-->관심이 있다면 거래해 보자고."
+		"dealer_message_first_offer_1"	"<!--.5-->참고로 말하는데, 이 무기에 관심을 보이는 이들이 많아."
+		"dealer_message_first_offer_2"	"<!--.5-->원한다면 거래하자고. 안 할 거면 말하게나. 회색시장에는 이걸 사겠다는 사람들이 줄을 섰다네."
+		"dealer_message_first_offer_3"	"<!--.5-->원한다면 자네 것이네. 아니면 뭐, 자네 손해지."
+		"dealer_message_first_offer_4"	"<!--.5-->맘에 들면 얼른 결정하게나. 이 가격은 오늘뿐일세."
+		"dealer_message_first_offer_5"	"<!--.5-->자, 이게 내 제안이네. 구매할 건가 말 건가?"
+		"dealer_message_first_offer_6"	"<!--.5-->살 건가, 말 건가? 안 산다고 해도 괜찮다네. 어차피 살 사람은 많으니까."
+		"dealer_message_first_offer_7"	"<!--.5-->아무튼 거래를 시작해 볼까?"
+		"dealer_message_first_offer_8"	"<!--.5-->오늘은 좀 바쁘니 빨리 결정하게."
+		"dealer_message_first_offer_9"	"<!--.5-->거래를 할 건가, 말 건가?"	
+		"dealer_message_first_offer_10"	"<!--.5-->이 물건은 사달라고 굳이 설득하지 않아도 알아서 팔릴 정도라네. 구매할 건가? 말 건가?"		
+
+		"dealer_message_next_offer_0"	"<!--1-->알겠네, 맘에 들지 않는 모양이로군. 그럼 이건 어떤가?"
+		"dealer_message_next_offer_1"	"<!--1-->안 사겠다면 자네만 손해지. 오늘은 특별히 다른 물건을 하나 더 보여 주겠네. 자, 이건 어떤가?"
+		"dealer_message_next_offer_2"	"<!--1-->그냥 넘긴다고? 글쎄, 실수가 아니라면 좋겠군. 자, 이건 어떤가?"
+		"dealer_message_next_offer_3"	"<!--1-->이 물건은 없어서 못 파는 정도지. 자네가 사지 않아도 살만한 사람은 쉽게 찾을 수 있다네.<!--.5-->하지만 자네가 여기 있는 동안, 이 물건엔 자네 이름표가 붙어 있는 거나 마찬가지라고."
+		"dealer_message_next_offer_4"	"<!--1-->아, 알겠네. 자네 취향이 아니었군. 그럼 이건 어떤가? 마음에 드는지 한번 보게나."
+		"dealer_message_next_offer_5"	"<!--1-->자네가 별로라고 생각할 것 같았다네. 다행히도 이 물건이 딱 기다리고 있었지."
+		"dealer_message_next_offer_6"	"<!--1-->그래, 그럴 줄 알았네. 이건 어떤가? 왠지 자네는 이걸 더 마음에 들어 할 거 같군."
+		"dealer_message_next_offer_7"	"<!--1-->저 물건을 안 산 걸 나중에 후회할지도 모르네. 난 상관없지만. 이건 어떤가?"
+		"dealer_message_next_offer_8"	"<!--1-->난 자네를 너무 잘 알고 있는 거 같군. 그걸 선택하지 않을 줄 알았네. 자, 이거는 어떤가?"
+		"dealer_message_next_offer_9"	"<!--1-->좋아, 애피타이저는 넘기겠다 그거군. 그럼 바로 메인 코스로 들어가지."
+		"dealer_message_next_offer_10"	"<!--1-->알았네, 내가 보기에도 그저 그렇더군. 자, 이걸 보시게나."		
+		"dealer_message_next_offer_11"   "<!--1-->그건 취향이 독특한 사람들이 찾는 물건이기는 해. 좀 더 대중적인 물건은 이거고."
+		"dealer_message_next_offer_12"   "<!--1-->재고는 아직 많이 남아 있어. 이 훌륭한 물건을 좀 보게나."
+		"dealer_message_next_offer_13"   "<!--1-->그거 아나? 자네가 그렇게 말할 줄 알고 있었다네. 다음 물건으로 넘어가도록 하지."
+		"dealer_message_next_offer_14"   "<!--1-->자네 입맛을 맞추기가 생각보다 까다롭군. 이 정도면 자네 마음에 들겠나?"
+		"dealer_message_next_offer_15"   "<!--1-->내 기분은 걱정하지 말게. 어차피 내가 만든 물건도 아니니. 여기 다른 물건이 또 있지."
+		"dealer_message_next_offer_16"   "<!--1-->나 같아도 안 샀을 거야. 하지만 이건 좀 다르지. 어서 확인해 보게."
+		"dealer_message_next_offer_17"   "<!--1-->넘어간다고? 알았네. 자, 다음."
+		"dealer_message_next_offer_18"   "<!--1-->역시 자네는 까다롭군. 그래도 문제없다고. 이번에 보여줄 거는 최고급이니."
+		"dealer_message_next_offer_19"   "<!--1-->나도 자네가 돈을 낭비하지 않길 바라고, 자네도 내 시간을 낭비하고 싶지 않겠지. 이걸 한번 보게나."
+		"dealer_message_next_offer_20"   "<!--1-->솔직해서 좋군. 시간 낭비하지 말고 다음 물건으로 넘어가지."
+		"dealer_message_next_offer_21"   "<!--1-->알았네, 마음에 안 드나 보군. 나한테 좋은 물건이 많이 있으니 다행이지."
+		"dealer_message_next_offer_22"   "<!--1-->문제없다네. 아직 물건이 충분히 있으니. 다음 물건을 보게나."
+		"dealer_message_next_offer_23"   "<!--1-->그거는 정말 자네가 살 줄 알았는데 말야. 이거라면 거래할 마음이 생길지도 모르겠군."
+		"dealer_message_next_offer_24"   "<!--1-->알겠네. 이건 아닌가 보군. 뭐, 다 마음에 들 수는 없지. 하지만 이 무기는 자네에게 딱일 거 같은데?"
+		"dealer_message_next_offer_25"   "<!--1-->썩 내키지 않나 보군. 그렇다면 이 무기는 자네의 마음에 드는지 한번 보게."
+		"dealer_message_next_offer_26"   "<!--1-->알겠네. 지금까지는 그냥 맛보기였다고. 이 무기는 정말 마음에 들 거라고 생각하네."
+		"dealer_message_next_offer_27"   "<!--1-->마음에 안 드나? 그럼 이거는 내 무기고에 넣어 두도록 하지. 이거는 어떤가?"
+		"dealer_message_next_offer_28"   "<!--1-->눈이 높은데? 다음 무기가 어디 까다로운 자네 마음에 드는지 한번 보게나."
+		"dealer_message_next_offer_29"   "<!--1-->아, 그건 그냥 가장 위에 있던 것 중 하나였네. 조금 더 뒤져보도록 하지."
+		"dealer_message_next_offer_30"   "<!--1-->방금 전 거는 잊어버리게. 자네가 한번 봤으면 했던 건 이거였어."
+		"dealer_message_next_offer_31"   "<!--1-->이거는 딱 봐도 자네 거 같지 않나? 상태도 깨끗하다고."
+		"dealer_message_next_offer_32"   "<!--1-->전부 살 수 없으니 까다롭게 구는 거 다 이해한다고. 더 특별한 걸 기다리고 있는 거라면 이것만 한 게 없지"
+		"dealer_message_next_offer_33"   "<!--1-->그냥 심심풀이로 던져 본 거였어. 이게 진짜라네."
+		"dealer_message_next_offer_34"   "<!--1-->내 그럴 줄 알았지. 하지만 이 무기는 보자마자 자네가 생각났지."
+		"dealer_message_next_offer_35"   "<!--1-->이해하네. 이거는 나중에 보여 주려고 아껴두던 거네."
+		"dealer_message_next_offer_36"   "<!--1-->이 물건이 마음에 들지 않는다면 내가 뭐 어쩔 수 있나. 그저 다음 물건으로 넘어가는 수밖에."
+		"dealer_message_next_offer_37"   "<!--1-->걱정 말게. 이 무기가 아마 자네 마음에 더 들 거 같군."
+		"dealer_message_next_offer_38"   "<!--1-->역시, 자네가 그 제안을 덥석 수락하지는 않을 거 같았어. 더 나은 걸 보여 주겠네."
+		"dealer_message_next_offer_39"   "<!--1-->괜찮다네. 나라도 거절했을 거야. 그렇지만 이거라면 얘기가 다르지..."
+		"dealer_message_next_offer_40"   "<!--1-->결국 맨 뒤에 있는 고급 선반 물건까지 뒤져 보게 만드는군? 좋아, 알았다네."
+
+		"dealer_message_last_offer_0"	"<!--0-->자, 이게 최종 제안이네. 수락하거나 거절하거나, 자네 선택이라네."
+		"dealer_message_last_offer_1"	"<!--0-->이게 최종 제안이네."
+		"dealer_message_last_offer_2"	"<!--0-->최종 제안이네. 어서 마음 가는 대로 하라고. 내가 좀 바쁘신 몸이라."
+		"dealer_message_last_offer_3"	"<!--0-->최종 제안이네.<!--1-->거절할 거면 뒤로 물러서는 게 좋을 거야. 이 터미널이 곧 폭발할 테니."
+		"dealer_message_last_offer_4"	"<!--0-->최종 제안이네. 선택은 자네 몫이야."
+		"dealer_message_last_offer_5"	"<!--0-->자, 이게 최선이라네."
+		"dealer_message_last_offer_6"	"<!--0-->자, 그럼 이거는? 거래를 할 건가, 말 건가?"		
+		"dealer_message_last_offer_7"	"<!--0-->이게 가장 좋은 최종 제안이라네."
+		"dealer_message_last_offer_8"	"<!--0-->타협하도록 하지. 이게 내가 할 수 있는 최선이라고."
+		"dealer_message_last_offer_9"	"<!--0-->놓치면 끝이라고. 이게 가장 좋은 제안이라네."	
+
+		"dealer_message_end_0"			"<!--0-->어쩔 수 없지. 제안을 거절한 건 자네니까. 업링크 터미널이 곧 폭발할 텐데 아직도 들고 있진 않겠지? 나라면 내려놓고 물러서겠네. 3... 2..."
+		"dealer_message_end_1"			"<!--0-->자네가 원치 않는다면 별 수 있나. 나중에 총알 세례 속에서 방금 거절한 무기가 있었으면 하고 후회해도 내 책임은 아니라네."
+		"dealer_message_end_2"			"<!--0-->알겠네. 제안을 수락하라고 애걸복걸할 생각은 없다고. 그나저나, 업링크 터미널을 공짜로 계속 쓸 수 있을 거라고 생각한 건 아니겠지?"
+		"dealer_message_end_3"			"<!--0-->결정도 책임도 모두 자네의 몫이지. 그런데 목숨값까지 치를지도 모르겠는걸.<!--1-->업링크 터미널이 폭발하기 직전이니 어서 물러나라고."
+
+		"dealer_message_timerexpired_0"		"<!--.1-->알겠네, 거래는 없던 걸로 하지."
+		"dealer_message_timerexpired_1"		"<!--.1-->됐네.<!--.5-->분명 기회는 있었어."
+		"dealer_message_timerexpired_2"		"<!--.1-->거래는 끝이네.<!--.5-->나도 내 할 일이 있다고."
+		"dealer_message_timerexpired_3"		"<!--.1-->알았네, 물건을 정말 구매할 사람을 찾아야겠군.<!--.5-->이 거래는 끝났네."
+		"dealer_message_timerexpired_4"		"<!--.1-->자네가 편한 대로 해.<!--.5-->다음에 또 보자고."
+		"dealer_message_timerexpired_5"		"<!--.1-->시계를 보게나.<!--.5-->시간이 다 됐네."
+		"dealer_message_timerexpired_6"		"<!--.1-->거래를 무르겠네.<!--.5-->지금쯤이면 다른 곳에서 10개는 팔았을 걸세."
+		"dealer_message_timerexpired_7"		"<!--.1-->난 자네의 적군을 날려버리는 걸 도와주고 있는 줄 알았네.<!--.5-->근데 지금 보니 자네 덕에 내 시간만 날려버리고 있었군."
+		"dealer_message_timerexpired_8"		"<!--.1-->거래는 끝났네."	
+		"dealer_message_timerexpired_9"		"<!--.1-->시간이 다 됐군."
+		"dealer_message_timerexpired_10"	"<!--.1-->여기까지만 하지. 좀 지루하군. 거래는 끝이네."		
+
+		"dealer_message_open_check_out_0"		"<!--.5-->이건 딱 자네 것 같았어. 그러니까 자네한테 제일 먼저 보여준 거 아니겠나. 자, 거래를 마무리하자고."
+		"dealer_message_open_check_out_1"		"<!--.5-->훌륭한 결정이군. 잘 포장해서 준비해 두겠네."
+		"dealer_message_open_check_out_2"		"<!--.5-->후회하지 않을 걸세. 이걸 놓친 누군가는 그럴 수도 있겠군."
+		"dealer_message_open_check_out_3"		"<!--.5-->자네가 이 물건을 선택할 줄 알았어. 자, 거래를 마무리 짓도록 하지."
+		"dealer_message_open_check_out_4"		"<!--.5-->완벽해. 마무리해 보자고."		
+		"dealer_message_open_check_out_5"		"<!--.5-->훌륭한 선택이야."	
+		"dealer_message_open_check_out_6"		"<!--.5-->아주 좋은 선택이었다고 내가 장담하지. 그럼 거래를 마무리 짓자고."		
+		"dealer_message_open_check_out_7"		"<!--.5-->좋아. 그럼 거래를 마무리 짓도록 하지."
+
+		"dealer_message_txn_xld_bailout_0"		"<!--.5-->서두를 것 없네. 내가 어디 있는지 알고 있지 않나."
+		"dealer_message_txn_xld_bailout_1"		"<!--.5-->난 여기 계속 있을 걸세."
+		"dealer_message_txn_xld_bailout_2"		"<!--.5-->이 제안은 일단 보류해 두지."
+		"dealer_message_txn_xld_bailout_3"		"<!--.5-->곧 돌아올 거라고 믿겠네. 가서 좀 더 생각해 보시게나."
+
+		"dealer_message_purchase_finalizing_0"	"결제 정보 최종 확인 중..."
+		"dealer_message_purchase_confirm_0"		"<!--.5-->훌륭한 거래였어."
+
+		"dealer_message_stattrack_0"			"당연히 StatTrak™도 있지."
+		"dealer_message_stattrack_1"			"이 물건은 StatTrak™이 있다네."
+		"dealer_message_stattrack_2"			"StatTrak™이 있으니 더 이상 일일이 계산할 필요가 없지."
+		"dealer_message_stattrack_3"			"StatTrak™ 포함이네. 방아쇠만 당기면 계산은 알아서 되지."
+		"dealer_message_stattrack_4"			"StatTrak™은 점수판이라고 생각하면 돼. 어떻게 보면, 자네도 처치할 때마다 점수를 올리는 스포츠를 하는 셈이니."
+		"dealer_message_stattrack_6"			"StatTrak™ 포함이야. 적군을 처치하고 처치 수를 확인하기 좋아하는 프로를 위한 기능이지."
+		"dealer_message_stattrack_7"			"물론 StatTrak™도 제공된다고."
+		"dealer_message_factory_new_0"			"이거는 새 물건이야. 믿어도 돼. 새것 냄새가 나거든."
+		"dealer_message_factory_new_1"			"새 물건일세. 새 무기 냄새가 나지 않나?"
+		"dealer_message_factory_new_2"			"한 번도 쓴 적 없는 새 물건이야. 자네가 처음으로 방아쇠를 당기게 되는 걸세."
+		"dealer_message_factory_new_3"			"공장에서 바로 받은 새 물건이야. 자네가 원하는 대로지."
+		"dealer_message_factory_new_4"			"아주 깨끗한 새 물건이야. 긁힌 자국도 없고 사용된 내역도 없네. 바로 자네에게 필요한 것이지."
+		"dealer_message_factory_new_5"			"새 물건이라 사용된 적이 없다네. 흠잡을 데 없이 깨끗하지."
+		"dealer_message_covert_0"				"그거 아나? 자네 지금 복권 맞은 거야. 이건 그냥 희귀한 게 아니라 극비 무기라고."
+		"dealer_message_covert_1"				"내가 10년간 이 일을 해 왔지만, 이걸 실제로 본 적은 한 번도 없었네.<!--.5-->보는 눈만 좋은 게 아니라 운까지 좋군."
+		"dealer_message_covert_2"				"이 물건을 손에 넣으려고 가족까지 팔아넘기려고 하던 작자들도 있다니까. 운이 좋군."
+		"dealer_message_covert_3"				"아니, 자네 반응을 보니 마음이 흔들리는데. 내가 거래를 후회하기 전에, 얼른 가져가라고."
+		"dealer_message_covert_4"				"극비 무기라네. 운이 좋아도 평생 한 번 시장에서 볼까 말까 한 물건이지.<!--.5-->자넨 운이 참 좋군."
+		"dealer_message_covert_5"				"이건 아주 귀한 물건이야. 자네도 이미 말고 있겠지. 이미 1년 전부터 구매자가 줄을 섰다는 걸. 그자들은 안됐지만 자네는 좋은 거지 뭐."
+		"dealer_message_covert_6"				"정말 진귀한 물건이라네. 쉽게 찾을 수도 없는 이런 물건을 살 수 있는 기회가 지금 눈앞에 있는 걸세."
+		"dealer_message_covert_7"				"희귀한 무기를 찾는 걸 업으로 하는 내가 말하는데, 이거는 굉장히 찾기 힘든 물건이라고."
+		"dealer_message_covert_8"				"방금 마친 거래에 만족하길 바라네. 극비 무기거든. 자넨 유니콘을 발견한 거나 마찬가지야."
+		"dealer_message_covert_9"				"내가 후회하기 전에 얼른 자네 무기고에 넣게나. 정말 희귀한 물건 중에서도 희귀한 물건이야."
+		"dealer_message_classified_0"				"기밀 무기지. 깨끗하고 등록 기록도 없지. 장부에 거래 기록도 남지 않을 거야."
+		"dealer_message_classified_1"				"기밀 무기지. 등록 기록도 없어서 깨끗하고 추적도 불가능하지."
+		"dealer_message_classified_2"				"기밀 무기지. 비공식 작전용이니 추적도 불가능해. 그러니까 이 물건은 공식 기록상 존재하지 않는 거나 다름없다네."
+		"dealer_message_classified_3"				"비공식으로만 거래되는 걸세. 기밀 무기지. 자네가 잘 써줬으면 하네."
+		"dealer_message_classified_4"				"기밀 무기지. 일련번호도 없고 등록 기록도 없다네."
+		"dealer_message_classified_5"				"기밀 무기지. 비공식 거래만 가능하다네. 식별 부품이랑 등록 기록을 모두 제거한 상태라 추적이 불가능하지. 난 본 적 없는 걸로 하겠어."
+		"dealer_message_restricted_0"				"제한 무기지. 내부 구조도 더 견고하게 설계되어 있네. 군용 무기랑은 급이 다르다고."
+		"dealer_message_restricted_1"				"이 무기는 괜히 제한 무기인 게 아니야. 민간용으로는 과하다 싶을 만큼 성능이 좋거든."
+		"dealer_message_restricted_2"				"물론 제한 무기라네. 클래스 3, 타이틀 2 그리고 자네의 1번 무기가 되겠지. 가장 자주 찾게 될 테니 말이야."
+		"dealer_message_battle_scarred_0"		"좀 패인 부분이 있지만 총알은 아주 똑바로 나간다네."
+		"dealer_message_battle_scarred_1"		"흠집이 좀 있기는 한데, 여러 전투를 겪고도 살아남았으니 건재한 물건이라는 증거 아니겠나."
+		"dealer_message_battle_scarred_2"		"전장에서 습득한 거라네. 사용한 흔적이 좀 있긴 하지만 아주 힘 있게 잘 나가지."
+		"dealer_message_battle_scarred_3"		"단순히 현장에서 닳은 무기가 아니네. 전투를 통해 검증된 무기라고나 할까나."
+		"dealer_message_battle_scarred_4"		"실전 경험을 좀 쌓은 녀석이야. 외관상 좀 닳긴 했지만 여전히 믿음직스럽지."
+		"dealer_message_minimal_wear_0"			"마모가 거의 없어. 한두 군데 흠집이 있지만, 기능에는 아무 문제가 없다네."
+		"dealer_message_minimal_wear_1"			"상태가 아주 좋아. 거의 새것 같지. 사용 흔적도 거의 없다네."
+		"dealer_message_minimal_wear_2"			"조금 마모되긴 했으나 살짝 손길을 탄 정도라서 특별히 걱정할 건 없다네."
+		"dealer_message_minimal_wear_3"			"마모가 거의 없어. 조금 낡았지만, 무기고에 추가하면 후회하지 않을 걸세."
+		"dealer_message_minimal_wear_4"			"솔직히 말하면 이미 전투에서 몇 번 사용된 물건일세. 하지만 베테랑들이 찾을 만한 물건이라고."
+		"dealer_message_usp-s_0"				"이 물건은 소리를 내질 않지. 조용하게 잘 나가거든."
+		"dealer_message_usp-s_1"				"조용하고 신중해야 할 때 좋지. 이 거래가 우리 사이의 작은 비밀인 것처럼."
+		"dealer_message_usp-s_2"				"총알을 맞았다는 건 느낄 수 있을 거야, 총알이 어디서 날아왔는지는 모르겠지만."
+		"dealer_message_usp-s_3"				"이건 속삭이듯이 작은 소리만 난다네."
+		"dealer_message_item_desc_0"			"<!--.25-->여기 쪽지에 뭐라고 적혀 있는데.<!--.25-->{s:flavor-text}<!--.25-->무슨 뜻인지는 모르지만."
+		"dealer_message_item_desc_1"			"<!--.25-->여기 작은 쪽지가 들어 있군.<!--.25-->{s:flavor-text}"
+
+		"dealer_message_addition_stattrak_0"	"<!--.25-->...StatTrak™도 포함되어 있지."
+		"dealer_message_addition_stattrak_1"	"<!--.25-->StatTrak™ 모듈이 내장되어 있어."
+		"dealer_message_addition_stattrak_2"	"<!--.25-->StatTrak™이 있으니 앞으로는 정신없는 와중에도 처치 수를 추적할 수 있지."
+		"dealer_message_addition_stattrak_3"	"<!--.25-->StatTrak™도 포함되어 있다네."
+		"dealer_message_addition_stattrak_4"	"<!--.25-->StatTrak™도 포함되어 있으니 고달프게 처치한 적군 수를 기억할 수 있다네."
+
+		"dealer_message_addition_factory_new_0"	"<!--.25-->이건 새 물건이야. 한 번도 사용된 적이 없지."
+		"dealer_message_addition_factory_new_1"	"<!--.25-->완전 새 물건이야. 흠잡을 데가 없어."
+		"dealer_message_addition_factory_new_2"	"<!--.25-->방금 출고된 것이야. 따끈따끈하다네."
+		"dealer_message_addition_factory_new_3"	"<!--.25-->새 물건이라서 실제로 사용된 적이 없지."
+		
+		"dealer_message_limit_first_time_0"		"알겠네. 그럼, 가격이 {s:limit} 이하인 물건만 보여주지.<!--.25--> 맘에 드는 게 있는지 보자고."
+		"dealer_message_limit_first_time_2"		"{s:limit} 이하의 물건만이라, 알겠네. 기억하도록 하지!<!--.25--> 시간이 얼마 없으니 바로 시작하지."
+		"dealer_message_limit_first_time_3"		"좋아, 업데이트했네.<!--.25-->시작하지."
+		"dealer_message_limit_first_time_unlimited_0"		"최대한도가 없다니, 아주 좋아. 앞으로는 지금 보여주는 수준의 물건으로만 준비하도록 하겠네.<!--.25--> 시간이 얼마 없으니 바로 시작하지."
+		"dealer_message_limit_first_time_unlimited_1"		"한도가 없다니, 알겠네. 이제야 진짜 거래할 맛이 나겠군.<!--.25-->원하는 게 있는지 보자고."
+
+		"dealer_message_limit_0"				"알겠네. 그럼, 가격이 {s:limit} 이하인 물건만 보여주지."
+		"dealer_message_limit_1"				"{s:limit} 이하의 물건만이라, 알겠네. 기억하도록 하지."
+		"dealer_message_limit_2"				"최대 가격이 {s:limit}인 물건만 골라서 보여주도록 하겠네."
+		"dealer_message_limit_3"				"최고 {s:limit}까지라, 알았네. 기억해 두지."
+		"dealer_message_limit_4"				"가격대가 맞는 것만 보여 주겠네, 최대 {s:limit}까지로 말이지."
+		"dealer_message_limit_5"				"최대한도는 {s:limit}, 잘 알겠네."
+		"dealer_message_limit_6"				"알았네. 최대한도가 {s:limit}까지라는 점 명심하지."
+		"dealer_message_limit_unlimited_0"		"최대한도가 없다니, 아주 좋아. 앞으로는 지금 보여주는 수준의 물건으로만 준비하도록 하겠네."
+		"dealer_message_limit_unlimited_1"		"한도가 없다니, 알겠네. 끝내주는 물건이 있으면 주저 없이 보여주도록 하지."
+		"dealer_message_limit_unlimited_2"		"아주 맘에 들어. 자네한테 어울릴만한 물건이 나오거든 바로 보여주도록 하지."
+		"dealer_message_limit_unlimited_3"		"한도가 없다니, 알겠네. 이제야 진짜 거래할 맛이 나겠군."
+
+		"system_dealer_left_chat_0"				"무기 거래상이 채팅에서 나갔습니다."
+		"system_dealer_join_chat_0"				"{s:collection} 무기 거래 제안<!--1.25-->무기 거래상이 연결되었습니다."
+		"system_user_reject_offer_0"			"{s:user-name} 님이 제안을 거절했습니다."
+
+		"system_user_updated_offer_limit_0"			"최대 제안 가격을 {s:limit}로 업데이트했습니다. 언제든지 최대 제안 가격을 변경할 수 있습니다."
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//Retakes
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		"GameUI_Retake_DefendA"					"폭파 지점 A을 방어하라!"
+		"GameUI_Retake_DefendB"					"B 지점을 방어하라!"
+		"GameUI_Retake_RetakeA"					"폭파 지점 A을 탈환하라!"
+		"GameUI_Retake_RetakeB"					"B 지점을 탈환하라!"
+		"GameUI_Retake_Notice_MvpCardAvailable"	"축하합니다! 다음 라운드에 MVP 보너스 카드를 사용할 수 있습니다!"
+		"GameUI_Retake_Card_CardsPreview"		"카드 미리 보기"
+		"GameUI_Retake_Card_AvailableCard"		"이 로드아웃 선택"
+		"GameUI_Retake_Card_AvailableCards"		"로드아웃 선택"
+
+		"GameUI_Retake_Card_Bonus"				"보너스"
+		"GameUI_Retake_Card_Enemy"				"적군의 로드아웃"
+		"GameUI_Retake_Card_Mvp"				"MVP"
+
+		"GameUI_Retake_Card_4v3"				"4v3"
+		"GameUI_Retake_Card_FlashOut"			"섬광탄 투척!"
+		"GameUI_Retake_Card_HideAndPeek"		"숨바꼭질"
+		"GameUI_Retake_Card_TakeFive"			"테이크 파이브"
+		"GameUI_Retake_Card_OnlyTakesOne"		"하나면 충분함"
+		"GameUI_Retake_Card_SneakyBeakyLike"	"쥐도 새도 모르게"
+		"GameUI_Retake_Card_UmpInSmoke"			"연막 속 UMP"
+		"GameUI_Retake_Card_FunNGun"			"빵야빵야"
+		"GameUI_Retake_Card_Sharpshooter"		"명사수"
+		"GameUI_Retake_Card_BurstBullpup"		"불펍 작열"
+		"GameUI_Retake_Card_LightEmUp"			"눈이 반짝반짝"
+		"GameUI_Retake_Card_Kobe"				"코비!"
+		"GameUI_Retake_Card_1g"					"1g"
+		"GameUI_Retake_Card_DisappearingAct"	"소멸 조치"
+		"GameUI_Retake_Card_EyesOnTarget"		"적 발견"
+		"GameUI_Retake_Card_BehindEnemyLines"	"전선 너머"
+		"GameUI_Retake_Card_4BadGuysLeft"		"적군 4명 남음"
+		"GameUI_Retake_Card_LookAway"			"보지마!"
+		"GameUI_Retake_Card_WhenThereIsSmoke"	"연막이 있다는 건..."
+		"GameUI_Retake_Card_BlindFire"			"눈먼 사격"
+		"GameUI_Retake_Card_QueOta"				"하나 더 필요해?"
+		"GameUI_Retake_Card_SmokeScreen"		"연막 스크린"
+		"GameUI_Retake_Card_TecTecBoom"			"텍, 텍, 붐!"
+		"GameUI_Retake_Card_BackInAFlash"		"손은 눈보다 빠르다"
+		"GameUI_Retake_Card_AllIn"				"올인"
+		"GameUI_Retake_Card_BoomBox"			"붐 박스"
+		"GameUI_Retake_Card_SetThemFree"		"자유롭게 하리"
+		"GameUI_Retake_Card_OlReliable"			"검증된 신뢰도"
+		"GameUI_Retake_Card_SmokeShow"			"스모크 쇼"
+		"GameUI_Retake_Card_HotShot"			"핫샷"
+		"GameUI_Retake_Card_EyeSpy"				"아이 스파이"
+		"GameUI_Retake_Card_TheAWPortunity"		"오퍼튜니티"
+		"GameUI_Retake_Card_FindersKeepers"		"찾는 사람이 임자"
+
+		"Hud_Retake_BombSite"					"{s:hud-retake-bombsite}"
+		
+		"Hud_Money" "${d:r:hud-money-amount}"
+		"Hud_Money_Signed" "{s:sign}${d:r:hud-money-delta}"
+
+		"Propcounter_money" "$%s1" //e.g. used on danger zone security door
+
+		"csgo_player_left_game"					" %s1 님이 게임에서 나갔습니다.(%s2)"
+
+		"LoadoutLockedPopupTitle"				"로드아웃 잠김"
+		"LoadoutLockedPopupText"				"경쟁 모드 매치메이킹 중에는 로드아웃을 변경할 수 없습니다."
+
+		"Workshop_item_title" "아이템 제출 도구"
+		"Workshop_item_error_title" "아이템의 제목을 입력하세요. 플레이어 이름 또는 기타 식별 정보가 포함되어야 합니다."
+		"Workshop_item_error_image" "크기가 가로 최대 {s:max_size}, 세로 최소 {d:min_height}인 JPEG 또는 PNG 파일을 선택하세요."
+		"Workshop_item_ready" "아이템을 업로드할 준비가 되었습니다."
+		"SFUI_Go_To_Mic_Enable_key" "마이크 키 바인딩으로 이동"
+		"SFUI_Go_To_Console_Key_Binding" "콘솔 키 바인딩으로 이동"
+
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//Steam Video
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		"SteamVideo_Player_Kill_Title"					"%s1 님을 처치"
+		"SteamVideo_Player_Kill_Description"			"사용한 무기: %s1"
+
+		"SteamVideo_Player_Double_Kill_Title"			"2연속 처치"
+		"SteamVideo_Player_Multi_Kill_Title"			"다수 연속 처치"
+		
+		"SteamVideo_Player_Death_Title"					"%s1 님에게 사망"
+		"SteamVideo_Player_Death_Description"			"사용한 무기: %s1"
+		"SteamVideo_Player_Death_Description_Plural"	"사용한 무기: %s1"
+		"SteamVideo_Player_Killed_Self_Title"			"자살"
+		
+		"SteamVideo_Bomb_Planted_Title"					"폭탄 설치"
+		"SteamVideo_Bomb_Planted"						"%s1 님이 폭탄을 설치함"
+		"SteamVideo_Bomb_Planted_LocalPlayer"			"내가 폭탄을 설치함"
+		
+		"SteamVideo_Bomb_Defused_Title"					"폭탄 해체"
+		"SteamVideo_Bomb_Defused"						"%s1 님이 폭탄을 해제함"
+		"SteamVideo_Bomb_Defused_LocalPlayer"			"내가 폭탄을 해체함"
+		
+		"SteamVideo_Bomb_Exploded_Title"				"폭탄 폭발"
+		
+		"SteamVideo_Round_Number_Label"					"라운드 %s1"
+		"SteamVideo_Start_Of_Round_Title"				"라운드 %s1 시작"
+
+		"SteamVideo_MatchScore"							"점수"
+		"SteamVideo_KDA"								"처치/사망/도움"
+
+		// ---------------------------------------------------------------------------------------------
+		// WEEKLY MISSIONS
+		// ---------------------------------------------------------------------------------------------
+		"weekly_mission_title"							"임무"
+		"weekly_mission_title_complete"					"임무 완료"
+		"weekly_mission_expiration"						"남은 기간: <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_expiration_pausemenu"			"남은 기간: <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_next_mission"					"다음 임무까지 남은 기간: <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_progress"						"<b>{d:mission-progress}</b>/{d:mission-points}"
+		"CS2_Quest_Weapon_Mode"							"장비 훈련: <b>{s:gamemode} 모드</b>, <b>{s:weapon}</b>"
+		"CS2_Quest_Weapon_Mode_desc"					"<b>{s:gamemode}</b> 모드 매치에서 <b>{s:weapon}</b> 무기로 {s:optional_target}{s:actions}하세요."
+
+		"mission_searching"								"검색 중..."
+		"mission_xp_remaining"							"경험치 {s:mission-xp}"
+
+		"mission_segment_tooltip"						"경험치 {d:xp-reward}"
+
+		"mission_location"								"<b>{s:location}</b> 맵 <b>{s:gamemode}</b> 모드 매치"
+		"mission_directive:f"							"{s:action} <b>{d:mission-points}</b>점"
+ 		"mission_directive_progress:f"					"{s:action} {d:mission-progress}/<b>{d:mission-points}</b> 점"
+
+
+		"quest_11000_var_desc:f"	  					"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 {s:item1} 무기로 적군 1명을 처치하세요."
+		"quest_11000_var_partial:f" 					"사용 무기: {s:item1}"
+		"quest_11000_var_ingame:f"	  					"{s:item1} 무기로 적군 1명 처치"
+
+		"quest_11001_var_desc:f"	 					"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 {s:item1} 무기로 적군 1명을 처치하세요."
+		"quest_11001_var_partial:f"	 					"사용 무기: {s:item1}"
+		"quest_11001_var_ingame:f"	 					"{s:item1} 무기로 적군 1명 처치"
+
+		"quest_11002_var_desc:f"	 					"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 {s:item1} 무기로 적군 1명을 처치하세요."
+		"quest_11002_var_partial:f"	 					"사용 무기: {s:item1}"
+		"quest_11002_var_ingame:f"	 					"{s:item1} 무기로 적군 1명 처치"
+
+		"quest_11003_var_desc:f"						"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 {s:item1} 무기로 적군 1명을 처치하세요."
+		"quest_11003_var_partial:f"	 					"사용 무기: {s:item1}"
+		"quest_11003_var_ingame:f"	 					"{s:item1} 무기로 적군 1명 처치"
+
+		"quest_11004_var_desc:f"	 					"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
+		"quest_11004_var_ingame:f"						"라운드 승리"
+
+		"quest_11005_var_desc:f"	 					"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
+		"quest_11005_var_ingame:f"						"라운드 승리"
+
+		"quest_11006_var_desc:f"	 					"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
+		"quest_11006_var_ingame:f"						"라운드 승리"
+
+		"quest_11007_var_desc:f"	 					"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 {s:item1} 무기로 적군 1명을 처치하세요."
+		"quest_11007_var_partial:f"	 					"사용 무기: {s:item1}"
+		"quest_11007_var_ingame:f"	 					"{s:item1} 무기로 적군 1명 처치"
+
+		"quest_11008_var_desc:f"	 					"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
+		"quest_11008_var_ingame:f"						"라운드 승리"
+
+		"quest_11009_var_desc:f"	 					"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
+		"quest_11009_var_ingame:f"						"라운드 승리"
+
+		"quest_11010_var_desc:f"	 					"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 {s:item1} 무기로 적군 1명을 처치하세요."
+		"quest_11010_var_partial:f"	 					"사용 무기: {s:item1}"
+		"quest_11010_var_ingame:f"	 					"{s:item1} 무기로 적군 1명 처치"
+
+		"quest_11011_var_desc:f"	 					"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
+		"quest_11011_var_ingame:f"						"라운드 승리"
+
+		"quest_11012_var_desc:f"	 					"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
+		"quest_11012_var_ingame:f"						"라운드 승리"
+
+		"quest_11013_var_desc:f"	 					"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
+		"quest_11013_var_ingame:f"						"라운드 승리"
+
+		"quest_11014_var_desc:f"	 					"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
+		"quest_11014_var_ingame:f"						"라운드 승리"
+
+		"quest_11015_var_desc:f"	 					"<b>{s:gamemode} 모드: {s:location}</b> 매치에서 라운드를 승리하세요."
+		"quest_11015_var_ingame:f"						"라운드 승리"
+
+// ---------------------------------------------------------------------------------------------
+// Join Friend Listen Servers
+// ---------------------------------------------------------------------------------------------
+
+		"tooltip_viewaddon"				"창작마당 페이지로 이동하여 맞춤 맵을 확인하세요."
+		"tooltip_kick_player"			"로컬 서버에서 플레이어를 추방합니다."		
+		"tooltip_short_viewaddon"			"맞춤 맵 보기"
+		"tooltip_short_kick_player"			"추방"
+
+// crow_mask_50454_comment
+// crow_mask_50455_comment
+}
+
+
+
+
+}
+
+
+	"playerstats_map_tooltip_win_loss_tie"	"승리/패배/무승부"
 		"playerstats_map_tooltip_rndwin_rndloss"	"라운드 승리/패배"
 		"playerstats_map_tooltip_round_winrate"	"라운드 승률"
 		"playerstats_map_tooltip_match_winrate"	"매치 승률"

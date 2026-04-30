@@ -1968,8 +1968,8 @@
 		"Team_Cash_Award_no_income_suicide"					" +0$ penalizare pentru sinucidere."
 		"Team_Cash_Award_Generic"							" +%s1$ recompensă de echipă."
 		"Team_Cash_Award_Custom"							" +%s1$ %s2"
-		"Team_Cash_Award_Dead_Terrorists:p"					" +%s1$ recompensă de echipă pentru eliminarea unui terorist.#|# +%s1$ recompensă de echipă pentru eliminarea a %s2 teroriști.#|# +%s1$ recompensă de echipă pentru eliminarea a %s2 de teroriști."
-		"Team_Cash_Award_Dead_CTs:p"						" +%s1$ recompensă de echipă pentru eliminarea unui contraterorist.#|# +%s1$ recompensă de echipă pentru eliminarea a %s2 contrateroriști.#|# +%s1$ recompensă de echipă pentru eliminarea a %s2 de contrateroriști."
+		"Team_Cash_Award_Dead_Terrorists:f"					" +$%s1 recompensă de echipă pentru eliminarea {num_enemies, plural, one{unui terorist} few{a {num_enemies} teroriști} other{a {num_enemies} de teroriști}}."
+		"Team_Cash_Award_Dead_CTs:f"						" +$%s1 recompensă de echipă pentru eliminarea {num_enemies, plural, one{unui contraterorist} few{a {num_enemies} contrateroriști} other{a {num_enemies} de contrateroriști}}."
 
 
 		"Notice_Bonus_Shorthanded_Eligibility"			" Echipa ta va fi eligibilă pentru un venit privind inferioritatea numerică în %s1 runde."
@@ -2333,10 +2333,14 @@
 		// Econ date formatting supports the following tokens:
 		//    %year%, %monthshort%, %monthlong%, %mmday% (01-31), %mday% (1-31), %day% (legacy unlocalized "Jul 30" shouldn't be used), %hour%, %min%, %sec%
 		//
-		"Econ_DateFormat"						"%mmday% %monthshort% %year% (%hour%:%min%:%sec%)"
-		"Econ_DateFormat_GMT"					"%mmday% %monthshort% %year% (%hour%:%min%:%sec%) GMT"
-		"Econ_DateFormat_DateOnly"				"%mmday% %monthshort% %year%"
-		"Econ_DateFormat_GMT_DateOnly"			"%mmday% %monthshort% %year% GMT"
+		"Econ_DateFormat:f"							"{mmday} {monthshort} {year} ({hour}:{min}:{sec})"
+		"Econ_DateFormat_GMT:f"						"{mmday} {monthshort} {year} ({hour}:{min}:{sec}) GMT"
+		"Econ_DateFormat_DateOnly:f"				"{mmday} {monthshort} {year}"
+		"Econ_DateFormat_GMT_DateOnly:f"			"{mmday} {monthshort} {year} GMT"
+		"Econ_DateFormat"							"%mmday% %monthshort% %year% (%hour%:%min%:%sec%)"
+		"Econ_DateFormat_GMT"						"%mmday% %monthshort% %year% (%hour%:%min%:%sec%) GMT"
+		"Econ_DateFormat_DateOnly"					"%mmday% %monthshort% %year%"
+		"Econ_DateFormat_GMT_DateOnly"				"%mmday% %monthshort% %year% GMT"
 		"Econ_Loot_List_Sticker_ProPlayerSignatures" "Abțibildul poate fi semnat de unul dintre următorii jucători profesioniști:"
 		"Econ_Loot_List_Sticker_ProPlayerSignatures_AndSomeMore" "... și alți %s1 jucători profesioniști"
 		"Econ_Loot_List_Sticker_ProOrgsStickers"	"Abțibildul poate reprezenta una dintre următoarele organizații:"
@@ -5867,1256 +5871,15 @@ Colecția Spectrum"
 		
 		"quest"										"Misiune"
 
-		"quest_totalgoal_points_desc"				"Numărul total de %actions% necesar： <b>%points%</b>" // special non-breaking space characters in this string, edit carefully!
-		"quest_attrremaining_points_desc"			"%actions% rămase： <b>%points%</b>" // special non-breaking space characters in this string, edit carefully!
-		"quest_uncommitted_points_desc"				"%actions% rămase： <b>%points%</b> (<b>%points uncommitted%</b> câștigate în acest meci)" // special non-breaking space characters in this string, edit carefully!
-		"quest_uncommitted_points_warn"				" * <i>%actions% vor fi înregistrate la finalul meciului</i>"
-	
-		"quest_uncommitted_points_chat_one"	" Misiune îndeplinită: %action% obținută."
-		"quest_uncommitted_points_chat_singular"	" Progresul misiunii: +%points% %action% obținute."
-		"quest_uncommitted_points_chat_plural"		" Progresul misiunii: +%points% %actions% obținute."
-		"quest_uncommitted_points_chat_event"		" Misiune Blitz: %action% obținută."		
+		"quest_commandverb_default"					"Realizează"
 
-		"quest_reward_desc"								"Recompense posibile\n<b>%s1</b>:"
+		"quest_action_plural_act_kill_human"		"ucideri"
+		"quest_action_singular_act_kill_human"		"o ucidere"
 
-		"quest_reward_xp"									"Recompensă pentru misiune: <b>%s1</b> XP"
-
-		"quest_event_totalgoal_points_desc"					"Obține un bonus de XP pentru fiecare <b>%action%</b> din timpul evenimentului."
-		
-		"quest_bonus_desc"								"Bonus: +<b>%xpperbonusaction%</b> XP per %action%—<i>%xpbonuscondition%.</i>"
-		"quest_bonus_fractional_desc"			"Bonus: +<b>%xpperbonusactions%</b> XP per <b>%n_actions%</b> %actions%—<i>%xpbonuscondition%.</i>"
-		"quest_bonus_single_desc"					"Bonus: +<b>%xpperbonusaction%</b> XP—<i>%xpbonuscondition%.</i>"
-
-
-		"quest_target_chicken"											"de găini"
-		"quest_target_human_or_chicken"									"de oameni sau găini"
-		"quest_target_hostagerescuer"									"salvator de ostatici"
-		"quest_target_armsraceleader"									"liderul din Arms Race"
-
-		"quest_target_headshot"											"lovitură în cap"
-		"quest_target_airborne"											"în aer"
-		"quest_target_pistolround"										"pistolul"
-
-		"quest_target_lockeddoor"										"uși încuiate"
-		"quest_target_explodingbarrel"									"butoaie explozive"
-		"quest_target_glasspane"										"panouri de sticlă"
-		"quest_target_enemydrone"										"drone inamice"
-
-		"quest_target_shotgun"											"pușca"
-		"quest_target_sniperrifle"										"arma cu lunetă"
-		"quest_target_utility"											"utilitarele"
-		"quest_target_defaultctpistol"									"pistolul CT standard"
-		"quest_target_defaultpistol"									"pistolul standard"
-		"quest_target_knife"											"cuțitul"
-
-		"quest_action_plural_act_kill_human"							"ucideri"
-		"quest_action_singular_act_kill_human"							"o ucidere"
-
-		"quest_action_plural_act_kill_chicken"							"ucideri"
-		"quest_action_singular_act_kill_chicken"						"o ucidere"		
-
-		"quest_action_plural_act_protect_chicken"						"secunde pentru protejarea unei găini"
-		"quest_action_singular_act_protect_chicken"						"secundă pentru protejarea unei găini"	
-
-		"quest_action_plural_act_kill_target"							"asasinări"
-		"quest_action_singular_act_kill_target"							"o asasinare"		
-
-		"quest_action_plural_act_damage"								"răni"
-		"quest_action_singular_act_damage"								"un punct de răni cauzat"		
-
-		"quest_action_plural_act_win_match"								"victorii"
-		"quest_action_singular_act_win_match"							"o victorie"		
-
-		"quest_action_plural_act_dz_game_end_placement"					"plasamente"
-		"quest_action_singular_act_dz_game_end_placement"				"plasament"	
-
-		"quest_action_plural_act_dz_purchase_item"					"achiziții"
-		"quest_action_singular_act_dz_purchase_item"				"o achiziție"	
-
-		"quest_action_plural_act_win_round"								"runde câștigate"
-		"quest_action_singular_act_win_round"							"o rundă câștigată"	
-
-		"quest_action_plural_act_round_mvp"								"MVP-uri"
-		"quest_action_singular_act_round_mvp"							"MVP"
-
-		"quest_action_plural_act_dm_bonus_points"						"puncte"
-		"quest_action_singular_act_dm_bonus_points"						"un punct"		
-
-		"quest_action_plural_act_armsrace_level"						"niveluri"
-		"quest_action_singular_act_armsrace_level"						"un nivel"	
-
-		"quest_action_plural_act_gg_weapon_upgrade"						"îmbunătățiri"
-		"quest_action_singular_act_gg_weapon_upgrade"					"o îmbunătățire"	
-
-		"quest_action_plural_act_gg_upgrade_to_knifegg"						"Îmbunătățiri"
-		"quest_action_singular_act_gg_upgrade_to_knifegg"					"îmbunătățire"	
-				
-		"quest_action_plural_act_flashbang_enemy"						"inamici orbiți cu grenada de șoc"
-		"quest_action_singular_act_flashbang_enemy"						"un inamic orbit cu grenada de șoc"		
-		
-		"quest_action_plural_act_pick_up_hostage"						"ostatici preluați"
-		"quest_action_singular_act_pick_up_hostage"						"un ostatic preluat"		
-		
-		"quest_action_plural_act_rescue_hostage"						"ostatici salvați"
-		"quest_action_singular_act_rescue_hostage"						"un ostatic salvat"		
-		
-		"quest_action_plural_act_defuse_bomb"							"bombe dezamorsate"
-		"quest_action_singular_act_defuse_bomb"							"o bombă dezamorsată"		
-		
-		"quest_action_plural_act_plant_bomb"							"bombe armate"
-		"quest_action_singular_act_plant_bomb"							"o bombă armată"
-
-		"quest_action_singular_act_income"								"dolar"
-		"quest_action_plural_act_income"								"bani"
-		
-		"quest_action_singular_act_survivalincome"						"dolari"
-		"quest_action_plural_act_survivalincome"						"bani"
-
-		"quest_action_singular_act_spend"								"dolar"
-		"quest_action_plural_act_spend"									"bani"
-
-		"quest_action_singular_act_parachute_landed"					"secundă cu parașuta"
-		"quest_action_plural_act_parachute_landed"						"secunde cu parașuta"
-
-		"quest_action_singular_act_bumpmine_launch"						"lansare de mină propulsoare"
-		"quest_action_plural_act_bumpmine_launch"						"lansare de mină propulsoare"
-
-		"quest_action_singular_headshot_kill"							"o ucidere cu lovitură în cap"
-		"quest_action_plural_headshot_kill"								"ucideri cu lovituri în cap"
-
-		"quest_action_singular_multikill"								"o rundă cu multe ucideri"
-		"quest_action_plural_multikill"									"runde cu ucideri multiple"
-
-		"quest_action_singular_act_apply_graffiti"						"graffiti"
-		"quest_action_plural_act_apply_graffiti"						"graffiti"
-
-		"quest_action_singular_act_detonate_smokegrenade"				"grenadă fumigenă"
-		"quest_action_plural_act_detonate_smokegrenade"					"grenade fumigene"
-
-		"quest_action_singular_act_detonate_molotov"					"un molotov"
-		"quest_action_plural_act_detonate_molotov"						"molotovuri"
-
-		"quest_action_singular_act_use_healthshot"						"injecție medicală"
-		"quest_action_plural_act_use_healthshot"						"injecții medicale"
-		
-		"quest_action_singular_act_retakes_picked_enemy_card"			"selectarea cartonașului inamic"
-		"quest_action_plural_act_retakes_picked_enemy_card"				"selectările cartonașelor inamice"
-
-		"quest_action_singular_act_retakes_picked_mvp_card"				"selectarea cartonașului MVP"
-		"quest_action_plural_act_retakes_picked_mvp_card"				"selectările cartonașelor MVP"
-//
-
-		"quest_action_plural_bomb_plants_or_defuses"					"bombe armate sau dezamorsate"
-		"quest_action_singular_bomb_plants_or_defuses"					"o bombă armată sau dezamorsată"
-		
-		"quest_action_plural_rescue_or_kill_hostages"					"ostatici salvați sau salvatori uciși"
-		"quest_action_singular_rescue_or_kill_hostages"					"un ostatic salvat sau salvator ucis"		
-		
-		"quest_action_plural_damage_burn"								"răni de arsură"
-		"quest_action_singular_damage_burn"								"puncte pentru răni de arsură"
-
-		"quest_commandverb_default"										"Realizează"
-		"quest_commandverb_defaultCT"									"Ca CT, realizează"
-		"quest_commandverb_defaultT"									"Ca T, realizează"
-		"quest_commandverb_deal"										"Provoacă"
-		"quest_commandverb_earn"										"Câștigă"
-		"quest_commandverb_earnT"										"Ca T, câștigă"
-		"quest_commandverb_spend"										"Cheltuiește"
-		"quest_commandverb_execute"										"Execută"
-		"quest_commandverb_destroy"										"Distruge"
-		"quest_commandverb_apply"										"Aplică"
-		"quest_commandverb_throw"										"Aruncă"
+		"quest_action_plural_act_win_round"			"runde câștigate"
+		"quest_action_singular_act_win_round"		"o rundă câștigată"	
 
 		////
-
-		"quest_condition_item_own"										"al tău"
-		"quest_condition_item_borrowed"									"altcuiva"									
-		"quest_condition_item_borrowed_teammate"						"coechipierului"									
-		"quest_condition_item_borrowed_enemy"							"inamicului"									
-		"quest_condition_item_borrowed_victim"							"arma proprie a victimei"									
-		"quest_condition_item_nondefault"								"drăguț"
-
-		"quest_LoadoutSlot_Melee"										"cuțit"
-		"quest_LoadoutSlot_Secondary"									"pistol"
-		"quest_LoadoutSlot_SMG"											"Pistol-mitralieră"
-		"quest_LoadoutSlot_Rifle"										"pușcă ghintuită"
-		"quest_LoadoutSlot_Heavy"										"armă grea"
-		"quest_LoadoutSlot_Grenade"										"grenadă"
-
-		"quest_item_default"											"armă"
-
-////
-		"quest_event_ending"											"Se termină în %s1 minute"
-		"quest_event_soon_hours"										"Începe în %s1 ore"
-		"quest_event_soon_hms"											"Începe în %s1:%s2:%s3"
-		"quest_event_today"												"Astăzi %s1:%s2"
-		"quest_event_future"											"Începe %s1 %s2 %s3:%s4"
-		"quest_event_timer"												"Începe în %s1"
-
-////
-
-
-
-
-////////////////////////// generalized quest strings //////////////////////////////
-///
-///	Use these if applicable. If not, use this pattern to create new ones.
-///
-///
-///
-
-		"quest_default_0_items_desc" "%commandverb% %target% %actions% în <b>%gamemode%: meciuri pe %location%</b>."		
-		"quest_default_1_items_desc" "%commandverb% %target% %actions% cu orice <i>%item_quality%</i> <b>%item1%</b> în meciuri <b>%gamemode%: %location%</b>."
-		"quest_default_2_items_desc" "%commandverb% %target% %actions% cu orice <i>%item_quality%</i> <b>%item1%</b> sau <b>%item2%</b> în meciuri <b>%gamemode%: %location%</b>."
-		"quest_default_3_items_desc" "%commandverb% %target% %actions% cu orice <i>%item_quality%</i> <b>%item1%</b>, <b>%item2%</b> sau <b>%item3%</b> %item_quality% în meciuri <b>%gamemode%: %location%</b>."
-		"quest_default_4_items_desc" "%commandverb% %target% %actions% cu orice <i>%item_quality%</i> <b>%item1%</b>, <b>%item2%</b>, <b>%item3%</b> sau <b>%item4%</b> în meciuri <b>%gamemode%: %location%</b>."
-
-		"quest_default_hud_0_items_desc" "%commandverb% %target% %actions%"
-		"quest_default_hud_1_items_desc" "%commandverb% %target% %actions%: <b>%item1%</b> <i>%item_quality%</i>"
-		"quest_default_hud_2_items_desc" "%commandverb% %target% %actions%: %item1%/%item2% %item_quality%"
-		"quest_default_hud_3_items_desc" "%commandverb% %target% %actions%: <b>%item1%</b>/<b>%item2%</b>/<b>%item3%</b> <i>%item_quality%</i>"
-		"quest_default_hud_4_items_desc" "%commandverb% %target% %actions%: <b>%item1%</b>/<b>%item2%</b>/<b>%item3%</b>/<b>%item4</b> <i>%item_quality%</i>"
-
-/////////////////////////////////////////////////////////
-
-/////////////////////////////// Quest Strings via Dialog Vars //////
-///
-/// Used starting with Op09 - the default descriptions should handle most "Perform X Action in GameMode: Location" quests.
-///
-///
-		"quest_default_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} în <b>{s:gamemode}: {s:location}</b>."		
-		"quest_single_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} într-un <i>singur</i> meci în <b>{s:gamemode}: {s:location}</b>."		
-		"quest_default_no_map_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} în <b>{s:gamemode}</b>."
-		"quest_single_no_map_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} într-un <i>singur</i> meci în <b>{s:gamemode}</b>."		
-
-		"quest_weapon_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} cu {s:weapon} în <b>{s:gamemode}: {s:location}</b>."
-		"quest_weapon_single_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} cu {s:weapon} într-un <i>singur</i> meci în <b>{s:gamemode}: {s:location}</b>."
-		"quest_weapon_no_map_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} cu {s:weapon} în <b>{s:gamemode}</b>."
-		"quest_weapon_category_no_map_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} cu orice armă {s:weapon} în <b>{s:gamemode}</b>."
-
-		"quest_flyingscoutsman_var_desc"	"{s:commandverb} {d:points} {s:target} {s:actions} în <b>Flying Scoutsman: {s:location}</b>."
-		"quest_flyingscoutsman_no_map_var_desc"	"{s:commandverb} {d:points} {s:target} {s:actions} în <b>Flying Scoutsman</b>."
-
-		"quest_retakes_var_desc"	"{s:commandverb} {d:points} {s:target} {s:actions} în <b>Retakes: {s:location}</b>."
-		"quest_retakes_no_map_var_desc"	"{s:commandverb} {d:points} {s:target} {s:actions} în <b>Retakes</b>."
-
-		"quest_armsrace_var_desc"	 		"{s:commandverb} {d:points} {s:target} {s:actions} în <b>Arms Race</b>."
-		"quest_armsrace_weapon_var_desc"	"{s:commandverb} {d:points} {s:target} {s:actions} cu orice {s:weapon} în <b>Arms Race</b>."
-
-		// quest exceptions:
-		"quest_931_var_desc"	 "Realizează {d:points} ucideri cu {s:weapon} în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_932_var_desc"	 "Realizează {d:points} ucideri cât timp te afli în aer în modul <b>Flying Scoutsman</b>."
-		"quest_933_var_desc"	 "Câștigă {d:points} runde în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_934_var_desc"	 "Realizează {s:kills} ucideri cu {s:weapon} în modul <b>Guardian: {s:location}</b>."
-		"quest_935_var_desc"	 "Realizează {d:points} ucideri cu {s:weapon} într-un <i>singur</i> meci în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_936_var_desc"	 "Realizează {d:points} ucideri cu {s:weapon} în modul <b>{s:gamemode}</b>."
-		"quest_937_var_desc"	 "Aplică {d:points} graffitiuri pe teritoriul inamic în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_938_var_desc"	 "Ucide liderul de {d:points} ori în modul <b>{s:gamemode}</b>."
-		"quest_939_var_desc"	 "Realizează {s:kills} ucideri cu {s:weapon} în modul <b>Guardian: {s:location}</b>."
-		"quest_940_var_desc"	 "Câștigă {d:points} runde în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_941_var_desc"	 "Câștigă {d:points} runde de pistoale în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_942_var_desc"	 "Realizează {d:points} ucideri cu {s:weapon} într-un <i>singur</i> meci în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_943_var_desc"	 "Realizează {d:points} ucideri în modul <b>Flying Scoutsman</b>."
-		"quest_944_var_desc"	 "Cheltuie {d:points} într-un <i>singur</i> meci în modul <b>{s:gamemode}</b>."
-		"quest_945_var_desc"	 "Realizează {s:kills} ucideri în modul <b>Guardian: {s:location}</b>."
-		"quest_946_var_desc"	 "Câștigă {d:points} runde în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_947_var_desc"	 "Câștigă {d:points} runde în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_948_var_desc"	 "Salvează {d:points} ostatici sau ucide {d:points} salvatori de ostatici în modul <b>{s:gamemode}: {s:location}</b>."
-        "quest_949_var_desc"	 "Realizează {d:points} ucideri cu {s:weapon} în modul <b>{s:gamemode}: {s:location}</b>."
-        "quest_950_var_desc"	 "Realizează {d:points} ucideri cu orice armă grea în modul <b>{s:gamemode}</b>."
-        "quest_951_var_desc"	 "Realizează {s:kills} ucideri cu {s:weapon} în modul <b>Guardian: {s:location}</b>. Jucătorii încep cu: <b>{s:extraequip0}</b>."
-        "quest_952_var_desc"	 "Câștigă {d:points} runde în modul <b>{s:gamemode}: {s:location}</b>."
-        "quest_953_var_desc"	 "Câștigă {d:points} runde în modul <b>{s:gamemode}: {s:location}</b>."
-        "quest_954_var_desc"	 "Realizează {d:points} ucideri cu {s:target} într-un <i>singur</i> meci în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_955_var_desc"	 "Împrietenește-te cu găinile timp de {d:points} de secunde în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_956_var_desc" 	 "Folosește o parașută timp de {d:points} secunde în modul <b>{s:gamemode}</b>."
-		"quest_957_var_desc" 	 "Realizează {d:points} ucideri cu {s:weapon} în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_958_var_desc" 	 "Câștigă {d:points} runde în modul <b>{s:gamemode}: {s:location}</b> (Scrimmage)."
-		"quest_959_var_desc" 	 "Realizează {d:points} ucideri în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_960_var_desc"	 "Realizează {s:kills} ucideri cu {s:weapon} în modul <b>Guardian: {s:location}</b>."
-		"quest_961_var_desc" 	 "Realizează {d:points} ucideri cu pistolul în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_962_var_desc" 	 "Realizează {d:points} ucideri fără a cheltui vreun ban într-un <i>singur</i> meci în modul <b>{s:gamemode}</b>."
-		"quest_963_var_desc"	 "Realizează {s:kills} ucideri cu {s:weapon} în modul <b>Guardian: {s:location}</b>."
-		"quest_964_var_desc" 	 "Câștigă {d:points} runde de pistoale în modul <b>{s:gamemode}</b>."
-		"quest_965_var_desc" 	 "Realizează {s:kills} ucideri cu {s:weapon} în modul <b>Guardian: {s:location}</b>."
-		"quest_966_var_desc" 	 "Obține {d:points}$ în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_967_var_desc" 	 "Realizează {d:points} ucideri cu {s:weapon} în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_968_var_desc"	 "Realizează {d:points} ucideri cu o armă cu lunetă în modul <b>{s:gamemode}</b>."
-		"quest_969_var_desc" 	 "Realizează {s:kills} ucideri cu {s:weapon} fără a folosi luneta, în modul <b>Guardian: {s:location}</b>."
-		"quest_970_var_desc" 	 "Câștigă {d:points} runde în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_971_var_desc"	 "Realizează {s:kills} ucideri cu {s:weapon} în modul <b>Guardian: {s:location}</b>."
-		"quest_972_var_desc" 	 "Realizează {d:points} ucideri cu lovituri în cap, într-un <i>singur</i> meci în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_973_var_desc" 	 "Realizează {d:points} ucideri în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_974_var_desc" 	 "Realizează {d:points} ucideri cu lovituri în cap în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_975_var_desc"     "Realizează {s:kills} ucideri cu arme de CT în modul <b>Guardian: {s:location}</b>."
-		"quest_976_var_desc" 	 "Câștigă {d:points} runde în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_977_var_desc"	 "Câștigă {d:points} runde în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_978_var_desc" 	 "Realizează {d:points} ucideri cu {s:weapon} în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_979_var_desc"	 "Realizează o serie de patru ucideri sau mai multe în modul <b>{s:gamemode}: {s:location}</b>."		
-		"quest_980_var_desc" 	 "Clasează-te pe locul patru sau unul mai bun în modul <b>{s:gamemode}</b>."
-		"quest_981_var_desc"     "Realizează {s:kills} cu lovituri în cap cu {s:weapon} în modul <b>Guardian: {s:location}</b> <i>fără armură</i>."
-		"quest_982_var_desc" 	 "Realizează {d:points} ucideri cu lovituri în cap folosind {s:weapon} într-un <i>singur</i> meci <b>{s:gamemode}: {s:location}</b>."
-		"quest_983_var_desc" 	 "Realizează {d:points} ucideri cu lovituri în cap în modul <b>{s:gamemode}</b>."
-		"quest_984_var_desc" 	 "Obține {d:points} MVP-uri în modul <b>{s:gamemode}</b>."
-		"quest_985_var_desc" 	 "Realizează {d:points} ucideri cu pistolul implicit în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_986_var_desc"     "Realizează {s:kills} ucideri cu {s:weapon} în modul <b>Guardian: {s:location}</b>."
-		"quest_987_var_desc"	 "Realizează {d:points} ucideri cu arma principală a unui inamic în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_988_var_desc"     "Realizează {d:points} ucideri folosind cuțitul în modul <b>Arms Race</b>."
-		"quest_989_var_desc" 	 "Cauzează {d:points} de răni cu obiectele utilitare în modul <b>{s:gamemode}</b>."
-		"quest_990_var_desc" 	 "Ucide întreaga echipă adversă de {d:points} ori în modul <b>{s:gamemode}</b>."
-		"quest_991_var_desc" 	 "Realizează {d:points} ucideri cu <b>Tec-9 sau Five-Seven</b> în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_992_var_desc"     "Realizează {s:kills} ucideri cu {s:weapon} în modul <b>Guardian: {s:location}</b>."
-		"quest_993_var_desc"	 "Cauzează {d:points} de răni cu obiectele utilitare în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_994_var_desc" 	 "Realizează {d:points} ucideri în modul <b>{s:gamemode}</b>."
-		"quest_995_var_desc" 	 "Câștigă {d:points} runde în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_996_var_desc"     "Realizează {d:points} ucideri în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_997_var_desc" 	 "Realizează {d:points} ucideri cu Galil AR sau FAMAS în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_998_var_desc"     "Realizează {s:kills} ucideri cu {s:weapon} în modul <b>Guardian: {s:location}</b>."
-		"quest_999_var_desc" 	 "Realizează {d:points} ucidere cu {s:weapon} în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1000_var_desc" 	 "Distruge {d:points} drone inamice {s:actions} în modul <b>{s:gamemode}</b>."
-		"quest_1001_var_desc" 	 "Obține {d:points} MVP-uri într-un <i>singur</i> meci în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1002_var_desc"	 "Realizează o serie de 2 sau mai multe ucideri timp de {d:points} runde în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1003_var_desc" 	 "Realizează {d:points} ucideri cu {s:weapon} în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1004_var_desc"    "Realizează {s:kills} ucideri cu {s:weapon} în modul <b>Guardian: {s:location}</b>."
-		"quest_1005_var_desc" 	 "Câștigă {d:points} runde în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1006_var_desc"    "Realizează {d:points} ucideri în modul <b>Arms Race</b>."
-		"quest_1007_var_desc" 	 "Distruge {d:points} uși încuiate {s:actions} folosind {s:weapon} în modul <b>{s:gamemode}</b>."
-		"quest_1008_var_desc" 	 "Realizează {d:points} ucideri cu AK-47 sau M4A4 în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1009_var_desc" 	 "Câștigă {d:points} runde în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1010_var_desc"	 "Realizează {d:points} ucideri cu {s:weapon} în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1011_var_desc"    "Câștigă 5 sau mai multe runde într-o singură repriză a unui meci <b>{s:gamemode}: {s:location}</b>."
-		"quest_1012_var_desc" 	 "Calcă pe {d:points} mine propulsoare în <b>{s:gamemode}</b>."
-		"quest_1013_var_desc" 	 "Realizează {d:points} ucidere cu {s:weapon} în modul <b>{s:gamemode}</b>."
-		"quest_1014_var_desc"    "Realizează {s:kills} ucideri cu {s:weapon} în modul <b>Guardian: {s:location}</b>."
-		"quest_1015_var_desc" 	 "Realizează {d:points} ucideri cheltuind cel mult 2.000$ în <b>{s:gamemode}: {s:location}</b>."
-		"quest_1016_var_desc"	 "Deține 3.000$ sau mai mult în <b>{s:gamemode}</b>."
-		"quest_1017_var_desc" 	 "Câștigă {d:points} runde în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1018_var_desc"    "Realizează {s:kills} ucideri cu {s:weapon} în modul <b>Guardian: {s:location}</b>."
-		"quest_1019_var_desc" 	 "Realizează {d:points} ucideri cu orice {s:weapon} în modul <b>Arms Race</b>."
-		"quest_1020_var_desc" 	 "Realizează {d:points} ucideri cu {s:weapon} în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1021_var_desc" 	"Masacrează {d:points} găini în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1022_var_desc" 	"Aruncă în aer {d:points} butoaie explozive în modul <b>{s:gamemode}</b>."
-		"quest_1023_var_desc" 	"Câștigă {d:points} runde în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1024_var_desc" 	"Sparge {d:points} panouri de sticlă în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1025_var_desc" 	"Câștigă {d:points} runde în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1027_var_desc"	 "Aplică {d:points} graffitiuri în baza inamicului în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1028_var_desc"	 "Realizează {d:points} ucideri de pe <i>banană</i> sau din <i>apartamente</i> în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1029_var_desc"	 "Aruncă {d:points} grenade fumigene strategice în <b>{s:gamemode}: {s:location}</b>."
-		"quest_1030_var_desc"	 "Recuperează o mostră a virusului din zona periculoasă din laboratorul Phoenix."
-		"quest_1031_var_desc"	 "Distruge instalația de producție Phoenix și elimină-l pe Franz Kriegeld."
-		
-		"quest_1098_var_desc"                                  "Câștigă runde în <b>{s:location}</b>."
-		"quest_1032_var_desc"                                  "Câștigă runde în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1033_var_desc"                                  "Realizează {s:kills} ucideri în modul <b>Guardian: {s:location}</b>."
-		"quest_1034_var_desc"                                  "Cei din organizația Phoenix au fost zăriți! Află ce pun la cale."
-		"quest_1035_var_desc"                                  "Realizează ucideri cu AK47, M4A4 sau M4A1-S în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1036_var_desc"                                  "Câștigă runde în <b>{s:location}</b>."
-		"quest_1037_var_desc"                                  "Realizează ucideri în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1099_var_desc"                                  "Obține MVP-uri în <b>{s:location}</b>."
-		"quest_1038_var_desc"                                  "Câștigă runde în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1039_var_desc"                                  "Realizează ucideri cu toate cele {s:kills} pistoale în modul <b>Guardian: {s:location}</b>."
-		"quest_1040_var_desc"                                  "Realizează ucideri cu {s:weapon}ul pe <b>{s:location}</b>."
-		"quest_1041_var_desc"                                  "Realizează ucideri cu {s:weapon} în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1042_var_desc"                                  "Câștigă runde în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1043_var_desc"                                  "Realizează {s:kills} ucideri cu {s:weapon} în modul <b>Guardian: {s:location}</b>."
-		"quest_1044_var_desc"                                  "Realizează ucideri de la o distanță de cel puțin 15 metri în <b>{s:gamemode}: {s:location}</b>."
-		"quest_1045_var_desc"                                  "Realizează ucideri cu orice armă cu lunetă în <b>{s:location}</b>."
-		"quest_1046_var_desc"                                  "Realizează ucideri cu lovituri în cap în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1047_var_desc"                                  "Realizează {s:kills} ucideri cu {s:weapon} în modul <b>Guardian: {s:location}</b>."
-		"quest_1048_var_desc"                                  "Rănește inamicii folosind grenadele în <b>{s:location}</b>."
-		"quest_1049_var_desc"                                  "Obține bani în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1050_var_desc"                                  "Câștigă runde în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1051_var_desc"                                  "Realizează {s:kills} ucideri în modul <b>Guardian: {s:location}</b>."
-		"quest_1052_var_desc"                                  "Selectează un cartonaș inamic în <b>{s:location}</b>."
-		"quest_1053_var_desc"                                  "Detonează grenade fumigene în locații specifice în <b>{s:gamemode}: {s:location}</b>."
-		"quest_1054_var_desc"                                  "Câștigă runde în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1055_var_desc"                                  "Realizează {s:kills} ucideri cu armele teroriștilor în modul <b>Guardian: {s:location}</b>."
-		"quest_1056_var_desc"                                  "Realizează ucideri în tunel sau palat în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1057_var_desc"                                  "Realizează ucideri în <b>{s:location}</b>."
-		"quest_1058_var_desc"                                  "Câștigă runde în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1059_var_desc"                                  "Realizează {s:kills} ucideri cu pistolul-mitralieră în modul <b>Guardian: {s:location}</b>."
-		"quest_1060_var_desc"                                  "Realizează ucideri cu pistolul-mitralieră în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1061_var_desc"                                  "Realizează ucideri cu pistolul-mitralieră în <b>{s:location}</b>."
-		"quest_1062_var_desc"                                  "Câștigă runde în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1063_var_desc"                                  "Realizează {s:kills} ucideri cu pușca în modul <b>Guardian: {s:location}</b>."
-		"quest_1064_var_desc"                                  "Selectează un cartonaș MVP în <b>{s:location}</b>."
-		"quest_1065_var_desc"                                  "Aplică graffiti în locații specifice în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1100_var_desc"                                  "Câștigă runde în <b>{s:location}</b>."
-		"quest_1066_var_desc"                                  "Câștigă runde în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1067_var_desc"                                  "Realizează {s:kills} ucideri cu lovituri în cap cu AUG în <b>Guardian: {s:location}</b>."
-		"quest_1068_var_desc"                                  "Orbește un inamic cu o grenadă de șoc în <b>{s:location}</b>."
-		"quest_1069_var_desc"                                  "Aplică graffiti în locațiile specifice în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1101_var_desc"                                  "Câștigă runde în <b>{s:location}</b>."
-		"quest_1070_var_desc"                                  "Câștigă runde în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1071_var_desc"                                  "Realizează {s:kills} ucideri de la o distanță mai mică de 10 metri în <b>Guardian: {s:location}</b>."
-		"quest_1072_var_desc"                                  "Realizează ucideri de la o distanță de cel mult 10 metri în <b>{s:gamemode}: {s:location}</b>."
-		"quest_1073_var_desc"                                  "Realizează ucideri în <b>{s:location}</b>."		
-		"quest_1074_var_desc"                                  "Câștigă runde în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1075_var_desc"                                  "Realizează {s:kills} ucideri în modul <b>Guardian: {s:location}</b>."
-		"quest_1076_var_desc"                                  "Realizează ucideri cu lovituri în cap în <b>{s:gamemode}: {s:location}</b>."
-		"quest_1077_var_desc"                                  "Realizează ucideri cu armele grele în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1102_var_desc"                                  "Câștigă runde în <b>{s:location}</b>."
-		"quest_1078_var_desc"                                  "Câștigă runde în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1079_var_desc"                                  "Realizează {s:kills} ucideri cu SSG08 în <b>Guardian: {s:location}</b>."
-		"quest_1080_var_desc"                                  "Ucide găini în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1081_var_desc"                                  "Realizează ucideri în <b>{s:location}</b>."
-		"quest_1082_var_desc"                                  "Câștigă runde în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1083_var_desc"                                  "Realizează {s:kills} ucideri cu MAG-7 în <b>Guardian: {s:location}</b>."
-		"quest_1084_var_desc"                                  "Realizează ucideri în <b>{s:location}</b>."
-		"quest_1085_var_desc"                                  "Cauzează răni cu grenada în <b>{s:gamemode}: {s:location}</b>."
-		"quest_1085_v2_var_desc"                   			   "Cauzează răni cu grenada în <b>{s:gamemode}: {s:location}</b>."
-		"quest_1086_var_desc"                                  "Câștigă runde în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1087_var_desc"                                  "Realizează {s:kills} ucideri cu armele inamicilor în <b>Guardian: {s:location}</b>."
-		"quest_1088_var_desc"                                  "Realizează ucideri din locațiile specifice în <b>{s:gamemode}: {s:location}</b>."
-		"quest_1089_var_desc"                                  "Realizează ucideri în timp ce folosești luneta în <b>{s:gamemode}: {s:location}</b>."
-		"quest_1089_v2_var_desc"                               "Realizează ucideri în timp ce folosești luneta în <b>{s:gamemode}: {s:location}</b>."
-		"quest_1090_var_desc"                                  "Câștigă runde în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1091_var_desc"                                  "Realizează {s:kills} ucideri în modul <b>Guardian: {s:location}</b>."
-		"quest_1092_var_desc"                                  "Înscrie puncte cu arma bonus în <b>{s:gamemode}: {s:location}</b>."
-		"quest_1092_v2_var_desc"                                  "Înscrie puncte cu arma bonus în <b>{s:gamemode}: {s:location}</b>."
-		"quest_1093_var_desc"                                  "Cheltuie bani în <b>{s:gamemode}</b>."
-		"quest_1094_var_desc"                                  "Câștigă runde în modul <b>{s:gamemode}: {s:location}</b>."
-		"quest_1095_var_desc"                                  "Realizează {s:kills} ucideri în modul <b>Guardian: {s:location}</b>."
-		"quest_1095_v2_var_desc"                                  "Realizează {s:kills} ucideri cu UMP-45 în <b>Guardian: {s:location}</b>."
-		"quest_1096_var_desc"                                  "Câștigă runde în <b>{s:location}</b>."
-		"quest_1097_var_desc"                                  "Finalizează misiunea."
-		"quest_1097_v2_var_desc"                                  "<i>...retina se adaptează rapid stimulului luminos, producând o orbire temporară</i>"
-		"quest_1103_var_desc"                                  "Orbește inamicii cu grenade de șoc în <b>{s:gamemode}: {s:location}</b>."
-
-// OP11 Week 1 Missions
-		"quest_1106_var_desc"                              "Supraviețuiește unui atac aerian în <b>Guardian: {s:location}</b>."
-		"quest_1107_var_desc"                              "Finalizează o varietate de sarcini în <b>Danger Zone: {s:location}</b>"
-		"quest_1108_var_desc"                              "Realizează ucideri într-o serie de locații diferite de pe radar"
-
-// OP11 Week 2 Missions
-		"quest_1111_var_desc"                              "Realizează ucideri în <b>Guardian: {s:location}</b>."
-
-// OP11 Week 3 Missions
-		"quest_1115_var_desc"                              "Realizează ucideri cu o armă cu lunetă în <b>Guardian: {s:location}</b>."
-		"quest_1117_var_desc"                              "Aplică graffiti în diverse locații"
-
-// OP11 Week 4 Missions
-		"quest_1119_var_desc"                              "Realizează ucideri cu pușca în <b>Guardian: {s:location}</b>."
-		"quest_1120_var_desc"                              "Realizează ucideri într-o serie de locații diferite de pe radar"
-
-// OP11 Week 5 Missions
-		"quest_1123_var_desc"                              "Realizează ucideri cu pistolul-mitralieră în <b>Guardian: {s:location}</b>."
-		"quest_1125_var_desc"                              "Finalizează o varietate de sarcini"
-
-// OP11 Week 6 Missions
-		"quest_1127_var_desc"                              "Realizează ucideri cu pușca ghintuită în <b>Guardian: {s:location}</b>."
-		"quest_1128_var_desc"                              "Realizează o serie de ucideri în <b>Deathmatch: {s:location}</b>."
-
-// OP11 Week 7 Missions
-		"quest_1131_var_desc"                              "Realizează ucideri în <b>Guardian: {s:location}</b>."
-		"quest_1132_var_desc"                              "Realizează ucideri într-o serie de locații diferite de pe radar"
-
-// OP11 Week 8 Missions
-		"quest_1135_var_desc"                              "Realizează ucideri cu pușca în <b>Guardian: {s:location}</b>."
-		"quest_1137_var_desc"                              "Finalizează o varietate de sarcini cu obiectele utilitare"
-
-// OP11 Week 9 Missions
-		"quest_1139_var_desc"                              "Realizează ucideri cu pistolul în <b>Guardian: {s:location}</b>."
-		"quest_1140_var_desc"                              "Aplică graffiti în diferite locații"
-
-// OP11 Week 10 Missions
-		"quest_1143_var_desc"                              "Realizează ucideri cu AUG-ul în <b>Guardian: {s:location}</b>."
-		"quest_1144_var_desc"                              "Realizează ucideri într-o serie de locații diferite de pe radar"
-
-// OP11 Week 11 Missions
-		"quest_1147_var_desc"                              "Realizează ucideri cu MP9 în <b>Guardian: {s:location}</b>."
-
-// OP11 Week 12 Missions
-		"quest_1151_var_desc"                              "Realizează ucideri cu pistolul-mitralieră în <b>Guardian: {s:location}</b>."
-		"quest_1152_var_desc"                              "Realizează serii de ucideri"
-
-// OP11 Week 13 Missions
-		"quest_1155_var_desc"                              "Realizează ucideri cu armele inamicilor în <b>Guardian: {s:location}</b>."
-		"quest_1156_var_desc"                              "Realizează ucideri într-o serie de locații diferite de pe radar"
-		"quest_1157_var_desc"                              "Aplică graffiti în diferite locații"
-
-// OP11 Week 14 Missions
-		"quest_1159_var_desc"                              "Realizează ucideri cu explozibili de breșă în <b>Guardian: {s:location}</b>."
-
-// OP11 Week 15 Missions
-		"quest_1163_var_desc"                              "Realizează ucideri cu arme grele în <b>Guardian: {s:location}</b>."
-
-// OP11 Week 16 Missions
-		"quest_1167_var_desc"                              "Realizează ucideri în <b>Guardian: {s:location}</b>."
-		"quest_1169_var_desc"                              "Realizează ucideri folosind arme din cadrul uneia dintre cele patru colecții ale operațiunii Riptide"
-
-
-// OP11 Week 1 Sub-Missions
-		"quest_1200_var_desc"                              "Câștigă {d:points} meci"
-		"quest_1201_var_desc"                              "Câștigă {d:points} runde"
-		"quest_1202_var_desc"                              "Cauzează {d:points} de răni cu obiectele utilitare într-un <i>singur meci</i>"
-		"quest_1203_var_desc"                              "Cauzează {d:points} de răni cu obiectele utilitare"
-		"quest_1204_var_desc"                              "Distruge o dronă inamică"
-		"quest_1205_var_desc"                              "Aruncă în aer un butoi"
-		"quest_1206_var_desc"                              "Distruge niște sticlă"
-		"quest_1207_var_desc"                              "Utilizează o mină propulsoare pentru a te lansa de pe turnul de apă"
-		"quest_1208_var_desc"                              "Salvează un ostatic"
-		"quest_1209_var_desc"                              "Realizează o ucidere din baza T"
-		"quest_1210_var_desc"                              "Realizează o ucidere de pe rampa T"
-		"quest_1211_var_desc"                              "Realizează o ucidere din zona țintă A"
-		"quest_1212_var_desc"                              "Realizează o ucidere din baza CT"
-		"quest_1213_var_desc"                              "Realizează o ucidere din magazin"
-		"quest_1214_var_desc"                              "Realizează o ucidere din zona țintă B"
-		"quest_1215_var_desc"                              "Realizează o ucidere de pe pasarelă"
-		"quest_1216_var_desc"                              "Realizează o ucidere de pe culoarul din mijloc"
-		"quest_1217_var_desc"                              "Realizează o ucidere de pe scări"
-		"quest_1218_var_desc"                              "Realizează o ucidere din zona țintă A (din nou)!"
-		"quest_1219_var_desc"                              "Realizează ucideri multiple timp de {d:points} runde într-un <i>singur meci</i>"
-		"quest_1220_var_desc"                              "Realizează {d:points} de ucideri"
-
-// OP11 Week 2 Sub-Missions
-		"quest_1221_var_desc"                              "Câștigă {d:points} meci"
-		"quest_1222_var_desc"                              "Câștigă {d:points} de runde"
-		"quest_1223_var_desc"                              "Realizează {d:points} de ucideri cu lovituri în cap într-un <i>singur meci</i>"
-		"quest_1224_var_desc"                              "Realizează {d:points} de ucideri cu lovituri în cap"
-		"quest_1225_var_desc"                              "Cauzează răni cu grenada"
-		"quest_1226_var_desc"                              "Realizează {d:points} ucideri"
-
-// OP11 Week 3 Sub-Missions		
-		"quest_1227_var_desc"                              "Câștigă {d:points} meci"
-		"quest_1228_var_desc"                              "Câștigă {d:points} runde"
-		"quest_1229_var_desc"                              "Cauzează {d:points} de răni într-un <i>singur meci</i>"
-		"quest_1230_var_desc"                              "Cauzează {d:points} de răni"
-		"quest_1231_var_desc"                              "Aplică graffiti în baza CT"
-		"quest_1232_var_desc"                              "Aplică graffiti în zona țintă A"
-		"quest_1233_var_desc"                              "Aplică graffiti la groapă"
-		"quest_1234_var_desc"                              "Aplică graffiti în zona țintă B"
-		"quest_1235_var_desc"                              "Aplică graffiti la ușile din mijloc"
-		"quest_1236_var_desc"                              "Aplică graffiti în baza T"
-		"quest_1237_var_desc"                              "Aplică graffiti pe pasarelă"
-		"quest_1238_var_desc"                              "Aplică graffiti în tunelul de sus"
-		"quest_1239_var_desc"                              "Aplică graffiti la ușile de pe lung"
-		"quest_1240_var_desc"                              "Aplică graffiti în culoarul de pe mijloc"
-
-// OP11 Week 4 Sub-Missions		
-		"quest_1241_var_desc"                              "Câștigă {d:points} meci"
-		"quest_1242_var_desc"                              "Câștigă {d:points} de runde"
-		"quest_1243_var_desc"                              "Realizează o ucidere de afară"
-		"quest_1244_var_desc"                              "Realizează o ucidere din zona țintă A"
-		"quest_1245_var_desc"                              "Realizează o ucidere din lobby"
-		"quest_1246_var_desc"                              "Realizează o ucidere de pe rampă"
-		"quest_1247_var_desc"                              "Realizează o ucidere din zona țintă B"
-		"quest_1248_var_desc"                              "Realizează o ucidere din secret"
-		"quest_1249_var_desc"                              "Realizează o ucidere de afară (din nou!)"
-		"quest_1250_var_desc"                              "Realizează o ucidere din baza T"
-		"quest_1251_var_desc"                              "Realizează o ucidere de pe siloz"
-		"quest_1252_var_desc"                              "Realizează o ucidere din baza CT"
-		"quest_1253_var_desc"                              "Realizează de {d:points} ori într-un <i>singur meci</i>: ucide cu unul din primele tale 5 gloanțe ale rundei."
-		"quest_1254_var_desc"                              "Realizează {d:points} de ucideri"
-
-// OP11 Week 5 Sub-Missions		
-		"quest_1255_var_desc"                              "Obține {d:points} MVP-uri într-un <i>singur meci</i>"
-		"quest_1256_var_desc"                              "Câștigă {d:points} de runde"
-		"quest_1257_var_desc"                              "Realizează {d:points} ucideri cu lovituri în cap într-un <i>singur meci</i>"
-		"quest_1258_var_desc"                              "Realizează {d:points} de ucideri cu lovituri în cap"
-		"quest_1259_var_desc"                              "Obține bani cât timp tableta ta nu are semnal"
-		"quest_1260_var_desc"                              "Cumpără îmbunătățirea de rezoluție înaltă pentru tabletă"
-		"quest_1261_var_desc"                              "Distruge o turelă santinelă automată"
-		"quest_1262_var_desc"                              "Armează C4 la Motel"
-		"quest_1263_var_desc"                              "Cauzează răni unui inamic cât timp stai pe o stâncă"
-		
-// OP11 Week 6 Sub-Missions	
-		"quest_1264_var_desc"                              "Câștigă {d:points} meci"
-		"quest_1265_var_desc"                              "Câștigă {d:points} de runde"
-		"quest_1266_var_desc"                              "Realizează o serie de 3 ucideri"
-		"quest_1267_var_desc"                              "Realizează o serie de 5 ucideri"
-		"quest_1268_var_desc"                              "Realizează o serie de 7 ucideri"
-		"quest_1269_var_desc"                              "Realizează {d:points} ucideri cu arma altcuiva într-un <i>singur meci</i>"
-		"quest_1270_var_desc"                              "Realizează {d:points} ucideri cu arma altcuiva"
-
-// OP11 Week 7 Sub-Missions			
-		"quest_1271_var_desc"                              "Câștigă {d:points} meci"
-		"quest_1272_var_desc"                              "Câștigă {d:points} de runde"
-		"quest_1273_var_desc"                              "Realizează o ucidere de la ușile din mijloc"
-		"quest_1274_var_desc"                              "Realizează o ucidere de pe pasarelă"
-		"quest_1275_var_desc"                              "Realizează o ucidere din partea de sus culoarului din mijloc"
-		"quest_1276_var_desc"                              "Realizează o ucidere din groapă"
-		"quest_1277_var_desc"                              "Realizează o ucidere din zona țintă A"
-		"quest_1278_var_desc"                              "Realizează o ucidere de la ușile din mijloc (din nou!)"
-		"quest_1279_var_desc"                              "Realizează o ucidere din zona țintă B"
-		"quest_1280_var_desc"                              "Realizează o ucidere din tuneluri"
-		"quest_1281_var_desc"                              "Realizează o ucidere de pe rampa T"
-		"quest_1282_var_desc"                              "Realizează o ucidere din baza T"
-		"quest_1283_var_desc"                              "Cauzează {d:points} de răni în timp ce te afli în aer într-un <i>singur meci</i>"
-		"quest_1284_var_desc"                              "Cauzează {d:points} de răni în timp ce te afli în aer"
-
-// OP11 Week 8 Sub-Missions			
-		"quest_1285_var_desc"                              "Câștigă {d:points} meci"
-		"quest_1286_var_desc"                              "Câștigă {d:points} de runde"
-		"quest_1287_var_desc"                              "Ajunge la nivelul cuțitului"
-		"quest_1288_var_desc"                              "Îmbunătățește-ți arma de {d:points} de ori"
-		"quest_1289_var_desc"                              "Aruncă o grenadă fumigenă în partea de sus a culoarului din mijloc"
-		"quest_1290_var_desc"                              "Aruncă o grenadă fumigenă pe banană"
-		"quest_1291_var_desc"                              "Aruncă un molotov pe banană"
-		"quest_1292_var_desc"                              "Orbește 3 inamici într-un singur meci"
-		"quest_1293_var_desc"                              "Cauzează {d:points} de răni cu grenada într-un singur meci"
-
-// OP11 Week 9 Sub-Missions			
-		"quest_1294_var_desc"                              "Realizează {d:points} ucideri cu lovituri în cap într-un <i>singur meci</i>"
-		"quest_1295_var_desc"                              "Realizează {d:points} de ucideri cu lovituri în cap"
-		"quest_1296_var_desc"                              "Aplică graffiti pe partea superioară a turnului de apă"
-		"quest_1297_var_desc"                              "Aplică graffiti la ancora de la dig"
-		"quest_1298_var_desc"                              "Aplică graffiti la macara"
-		"quest_1299_var_desc"                              "Aplică graffiti pe acoperiș la radio"
-		"quest_1300_var_desc"                              "Aplică graffiti în piață la hotel"
-		"quest_1301_var_desc"                              "Aplică graffiti pe grătarele de la picnic"
-		"quest_1302_var_desc"                              "Aplică graffiti la far"
-		"quest_1303_var_desc"                              "Aplică graffiti pe pod"
-		"quest_1304_var_desc"                              "Aplică graffiti la șantier"
-		"quest_1305_var_desc"                              "Realizează {d:points} ucideri cu Deagle-ul într-un <i>singur meci</i>"
-		"quest_1306_var_desc"                              "Îmbunătățește-ți arma de {d:points} ori"
-
-// OP11 Week 10 Sub-Missions			
-		"quest_1307_var_desc"                              "Câștigă {d:points} meci"
-		"quest_1308_var_desc"                              "Câștigă {d:points} de runde"
-		"quest_1309_var_desc"                              "Realizează o ucidere de la locul de joacă"
-		"quest_1310_var_desc"                              "Realizează o ucidere din parcul superior"
-		"quest_1311_var_desc"                              "Realizează o ucidere din zona țintă A"
-		"quest_1312_var_desc"                              "Realizează o ucidere din cuibul lunetistului"
-		"quest_1313_var_desc"                              "Realizează o ucidere din zona țintă B"
-		"quest_1314_var_desc"                              "Realizează o ucidere din baza T"
-		"quest_1315_var_desc"                              "Realizează o ucidere în tuneluri"
-		"quest_1316_var_desc"                              "Realizează o ucidere de la locul de joacă (din nou!)"
-		"quest_1317_var_desc"                              "Realizează o ucidere de la fântână"
-		"quest_1318_var_desc"                              "Realizează o ucidere din toalete"
-		"quest_1319_var_desc"                              "Realizează {d:points} ucideri cu lovituri în cap într-un <i>singur meci</i>"
-		"quest_1320_var_desc"                              "Realizează {d:points} de ucideri cu lovituri în cap"
-
-// OP11 Week 11 Sub-Missions			
-		"quest_1321_var_desc"                              "Câștigă {d:points} meci"
-		"quest_1322_var_desc"                              "Câștigă {d:points} de runde"
-		"quest_1323_var_desc"                              "Folosește injecția medicală de {d:points} ori într-un <i>singur meci</i>"
-		"quest_1324_var_desc"                              "Folosește injecția medicală de {d:points} ori"
-		"quest_1325_var_desc"                              "Cauzează {d:points} de răni cu grenada într-un <i>singur meci</i>"
-		"quest_1326_var_desc"                              "Cauzează {d:points} de răni cu grenada"
-
-// OP11 Week 12 Sub-Missions			
-		"quest_1327_var_desc"                              "Câștigă {d:points} meci"
-		"quest_1328_var_desc"                              "Câștigă {d:points} de runde"
-		"quest_1329_var_desc"                              "Realizează o serie de 3 ucideri"
-		"quest_1330_var_desc"                              "Realizează o serie de 4 ucideri"
-		"quest_1331_var_desc"                              "Realizează o serie de 5 ucideri"
-		"quest_1332_var_desc"                              "Realizează ucideri cu {d:points} arme diferite într-un <i>singur meci</i>"
-		"quest_1333_var_desc"                              "Realizează ucideri cu {d:points} de arme diferite (armele pot fi refolosite în meciuri diferite)"
-
-// OP11 Week 13 Sub-Missions			
-		"quest_1334_var_desc"                              "Câștigă {d:points} meci"
-		"quest_1335_var_desc"                              "Câștigă {d:points} runde"
-		"quest_1336_var_desc"                              "Realizează o ucidere din culoarul din mijloc"
-		"quest_1337_var_desc"                              "Realizează o ucidere din zona țintă A"
-		"quest_1338_var_desc"                              "Realizează o ucidere din baza CT"
-		"quest_1339_var_desc"                              "Realizează o ucidere din casă"
-		"quest_1340_var_desc"                              "Realizează o ucidere din zona țintă B"
-		"quest_1341_var_desc"                              "Realizează o ucidere de la ruine"
-		"quest_1342_var_desc"                              "Realizează o ucidere din baza T"
-		"quest_1343_var_desc"                              "Realizează o ucidere din holul principal"
-		"quest_1344_var_desc"                              "Realizează o ucidere din zona țintă A (din nou!)"
-		"quest_1345_var_desc"                              "Realizează o ucidere din culoarul din mijloc (din nou!)"
-		"quest_1346_var_desc"                              "Aplică graffiti la arcada din vestul Casbahului"
-		"quest_1347_var_desc"                              "Aplică graffiti la scara spiralată din Casbah"
-		"quest_1348_var_desc"                              "Aplică graffiti la dom"
-		"quest_1349_var_desc"                              "Aplică graffiti în cercul heliportului din bază"
-		"quest_1350_var_desc"                              "Aplică graffiti cât timp te afli pe o barjă din zona barjelor"
-		"quest_1351_var_desc"                              "Aplică graffiti în interiorul hotelului Aurore din oraș"
-		"quest_1352_var_desc"                              "Aplică graffiti pe silozul 3 din zona rezervoarelor"
-		"quest_1353_var_desc"                              "Aplică graffiti la far"
-		"quest_1354_var_desc"                              "Aplică graffiti pe digul din zona de pescuit"
-
-// OP11 Week 14 Sub-Missions			
-		"quest_1355_var_desc"                              "Câștigă {d:points} meci"
-		"quest_1356_var_desc"                              "Câștigă {d:points} de runde"
-		"quest_1357_var_desc"                              "Realizează {d:points} de ucideri în timp ce folosești luneta, într-un <i>singur meci</i>"
-		"quest_1358_var_desc"                              "Realizează {d:points} de ucideri în timp ce folosești luneta"
-		"quest_1359_var_desc"                              "Realizează ucideri în primele 30 de secunde ale unei runde de {d:points} ori"
-		"quest_1360_var_desc"                              "Realizează {d:points} de ucideri"
-
-// OP11 Week 15 Sub-Missions			
-		"quest_1361_var_desc"                              "Câștigă {d:points} meci"
-		"quest_1362_var_desc"                              "Câștigă {d:points} de runde"
-		"quest_1363_var_desc"                              "Ucide liderul din modul Arms Race de {d:points} ori într-un <i>singur meci</i>"
-		"quest_1364_var_desc"                              "Realizează {d:points} de ucideri"
-		"quest_1365_var_desc"                              "Realizează {d:points} de daune într-un <i>singur meci</i>"
-		"quest_1366_var_desc"                              "Realizează {d:points} de daune"
-
-// OP11 Week 16 Sub-Missions	
-		"quest_1367_var_desc"                              "Câștigă {d:points} meci"
-		"quest_1368_var_desc"                              "Câștigă {d:points} de runde"
-		"quest_1369_var_desc"                              "Realizează {d:points} de ucideri cu unul dintre agenții operațiunii Riptide, într-un <i>singur meci</i>"
-		"quest_1370_var_desc"                              "Realizează {d:points} de ucideri"
-		"quest_1371_var_desc"                              "Realizează {d:points} ucideri folosind o armă din cadrul uneia dintre colecțiile operațiunii Riptide"
-		"quest_1372_var_desc"                              "Realizează {d:points} de ucideri"
-
-
-
-		"quest_default_hud_var_desc" "{s:commandverb} {s:target} {s:actions}"
-		"quest_weapon_hud_var_desc" "{s:commandverb} {s:actions} cu: {s:weapon}"
-		"quest_single_hud_var_desc"	"{s:commandverb} {s:target} {s:actions}<br>până la finalul meciului"
-		"quest_weapon_single_hud_var_desc" "{s:commandverb} {s:actions} cu: {s:weapon}<br>până la finalul meciului"
-	
-		//hud exceptions:
-		"quest_931_hud_var_desc"	"Realizează ucideri cu: {s:weapon}"
-		"quest_932_hud_var_desc"	"Realizează ucideri în timp ce te afli în aer"
-		"quest_933_hud_var_desc"	"Câștigă runde"
-		"quest_934_hud_var_desc"	"Realizează ucideri cu: {s:weapon}"
-		"quest_935_hud_var_desc"	"Realizează ucideri cu {s:weapon}<br> până la finalul meciului"
-		"quest_936_hud_var_desc"	"Realizează ucideri cu: {s:weapon}"
-		"quest_937_hud_var_desc"	"Aplică graffiti"
-		"quest_937_hud_var_desc_CT"	"Aplică graffiti la siloz sau automat"
-		"quest_937_hud_var_desc_T"	"Aplică graffiti în rai sau garaj"
-        "quest_938_hud_var_desc"	"Ucide liderii din Arms Race"
-        "quest_939_hud_var_desc"	"Realizează ucideri cu: {s:weapon}"
-        "quest_940_hud_var_desc"	"Câștigă runde"
-        "quest_941_hud_var_desc"	"Câștigă runde de pistoale"
-        "quest_942_hud_var_desc"	"Realizează ucideri cu {s:weapon}<br> până la finalul meciului"
-        "quest_943_hud_var_desc"	"Realizează ucideri"
-        "quest_944_hud_var_desc"	"Cheltuie bani"
-        "quest_945_hud_var_desc"	"Realizează ucideri"
-        "quest_946_hud_var_desc"	"Câștigă runde"
-        "quest_947_hud_var_desc"	"Câștigă runde"
-		"quest_948_hud_var_desc"	"Salvează sau împiedică salvarea"
-		"quest_948_hud_var_desc_CT"	"Salvează ostatici"
-		"quest_948_hud_var_desc_T"	"Ucide salvatorul de ostatici"
-        "quest_949_hud_var_desc"	"Realizează ucideri cu: {s:weapon}"
-        "quest_950_hud_var_desc"	"Realizează ucideri cu arme grele"	
-        "quest_951_hud_var_desc"	"Realizează ucideri cu: {s:weapon}"	
-        "quest_952_hud_var_desc"	"Câștigă runde"	
-        "quest_953_hud_var_desc"	"Câștigă runde"	
-        "quest_954_hud_var_desc"	"Realizează ucideri cu {s:target} până la finalul meciului"
-		"quest_955_hud_var_desc" 	"Împrietenește-te cu găini folosind [{s:bind_use}] <br> timp de {d:points} secunde"
-		"quest_956_hud_var_desc" 	"Folosește parașuta pentru a obține timp"
-		"quest_957_hud_var_desc" 	"Realizează ucideri cu: {s:weapon}"
-		"quest_958_hud_var_desc" 	"Câștigă runde"
-		"quest_959_hud_var_desc" 	"Realizează ucideri"
-		"quest_960_hud_var_desc" 	"Realizează ucideri cu: {s:weapon}"
-		"quest_961_hud_var_desc"	"Realizează ucideri cu un pistol"
-		"quest_962_hud_var_desc"	"Realizează ucideri fără a cheltui bani<br>până la finalul meciului"
-		"quest_963_hud_var_desc"	"Realizează ucideri cu: {s:weapon}"
-		"quest_964_hud_var_desc"	"Câștigă runde de pistoale"
-		"quest_965_hud_var_desc"    "Realizează ucideri"
-		"quest_966_hud_var_desc" 	"Obține bani"
-		"quest_967_hud_var_desc"	"Realizează ucideri cu: {s:weapon}"
-		"quest_968_hud_var_desc"    "Realizează ucideri cu o armă cu lunetă"
-		"quest_969_hud_var_desc"	"Realizează ucideri cu {s:weapon} fără a folosi luneta"
-		"quest_970_hud_var_desc"	"Câștigă runde"
-		"quest_971_hud_var_desc"	"Realizează ucideri"
-		"quest_972_hud_var_desc"    "Realizează ucideri cu lovituri în cap<br>până la finalul meciului"
-		"quest_973_hud_var_desc" 	"Realizează ucideri"
-		"quest_974_hud_var_desc" 	"Realizează ucideri cu lovituri în cap"
-		"quest_975_hud_var_desc"    "Realizează ucideri cu arme de CT"
-		"quest_976_hud_var_desc" 	"Câștigă runde"
-		"quest_977_hud_var_desc"	"Câștigă runde"
-		"quest_978_hud_var_desc"	"Realizează ucideri cu: {s:weapon}"
-		"quest_979_hud_var_desc" 	"Realizează o serie de 4 ucideri"
-        "quest_980_hud_var_desc" 	"Clasează-te pe locul patru sau unul mai bun"
-		"quest_981_hud_var_desc" 	"Realizează ucideri cu lovituri în cap folosind: {s:weapon}"		
-		"quest_982_hud_var_desc"	"Realizează {s:weapon} ucideri cu lovituri în cap <br> până la finalul meciului"	
-		"quest_983_hud_var_desc" 	"Realizează ucideri cu lovituri în cap"
-		"quest_984_hud_var_desc"    "Obține MVP-uri"
-		"quest_985_hud_var_desc" 	"Realizează ucideri cu pistolul implicit"
-		"quest_986_hud_var_desc" 	"Realizează ucideri cu: {s:weapon}"
-		"quest_987_hud_var_desc"	"Realizează ucideri"
-		"quest_987_hud_var_desc_CT"	"Realizează ucideri cu: AK-47"
-		"quest_987_hud_var_desc_T"	"Realizează ucideri cu: M4A4 sau M4A1-S"
-		"quest_988_hud_var_desc" 	"Realizează ucideri folosind cuțitul"
-		"quest_989_hud_var_desc"	"Cauzează răni cu obiectele utilitare"
-		"quest_990_hud_var_desc" 	"Ucide toată echipa adversă"
-		"quest_991_hud_var_desc_CT" "Realizează ucideri cu: Five-Seven"
-		"quest_991_hud_var_desc_T" 	"Realizează ucideri cu: Tec-9"
-		"quest_991_hud_var_desc" 	"Realizează ucideri cu: Tec-9 sau Five-Seven"
-		"quest_992_hud_var_desc" 	"Realizează ucideri cu: explozibili de breșă"
-		"quest_993_hud_var_desc" 	"Realizează răni cu obiecte utilitare"
-		"quest_994_hud_var_desc" 	"Realizează ucideri"
-		"quest_995_hud_var_desc" 	"Câștigă runde"
-		"quest_996_hud_var_desc"	"Realizează ucideri"
-		"quest_997_hud_var_desc_CT"	"Realizează ucideri cu: FAMAS"
-		"quest_997_hud_var_desc_T"	"Realizează ucideri cu: Galil AR"
-		"quest_997_hud_var_desc"	"Realizează ucideri cu: Galil AR sau FAMAS"
-		"quest_998_hud_var_desc" 	"Realizează ucideri cu: {s:weapon}"
-		"quest_999_hud_var_desc"	"Realizează ucideri cu: {s:weapon}"
-		"quest_1000_hud_var_desc" 	"Distruge drone inamice"
-		"quest_1001_hud_var_desc"   "Obține MVP-uri<br> până la finalul meciului"
-		"quest_1002_hud_var_desc" 	"Realizează mai multe ucideri pe rundă"
-		"quest_1003_hud_var_desc"   "Realizează ucideri cu: {s:weapon}"
-		"quest_1004_hud_var_desc"   "Realizează ucideri cu: {s:weapon}"
-		"quest_1005_hud_var_desc" 	"Câștigă runde"
-		"quest_1006_hud_var_desc" 	"Realizează ucideri"
-		"quest_1007_hud_var_desc" 	"Distruge uși încuiate"
-		"quest_1008_hud_var_desc_CT" 	"Realizează ucideri cu: M4A4 sau M4A1-S"
-		"quest_1008_hud_var_desc_T"  	"Realizează ucideri cu: AK-47"
-		"quest_1008_hud_var_desc" 	"Realizează ucideri cu: AK-47 sau M4A4"
-		"quest_1009_hud_var_desc"	"Câștigă runde"
-		"quest_1010_hud_var_desc"	"Realizează ucideri cu: {s:weapon}"
-		"quest_1011_hud_var_desc" 	"Câștigă 5 runde într-o repriză"
-		"quest_1012_hud_var_desc"	"Calcă pe mine propulsoare"
-		"quest_1013_hud_var_desc" 	"Realizează ucideri cu: {s:weapon}"
-		"quest_1014_hud_var_desc"   "Realizează ucideri cu: {s:weapon}"
-		"quest_1015_hud_var_desc"   "Realizează ucideri și cheltuiește mai puțin de 2.000$"
-		"quest_1016_hud_var_desc"   "Acumulează 3.000$"
-		"quest_1017_hud_var_desc" 	"Câștigă runde"
-		"quest_1018_hud_var_desc" 	"Realizează ucideri"
-		"quest_1019_hud_var_desc" 	"Realizează ucideri cu un pistol-mitralieră"
-		"quest_1020_hud_var_desc" 	"Realizează ucideri cu: {s:weapon}"
-		"quest_1021_hud_var_desc" 	"Masacrează găini"
-		"quest_1022_hud_var_desc" 	"Aruncă în aer butoaie"
-		"quest_1023_hud_var_desc" 	"Câștigă runde"
-		"quest_1024_hud_var_desc" 	"Sparge panouri de sticlă"
-		"quest_1025_hud_var_desc" 	"Câștigă runde"
-		"quest_1027_hud_var_desc"	"Aplică graffiti<br>în baza inamică"
-		"quest_1028_hud_var_desc"	"Realizează ucideri de pe<br>banană sau din apartamente"
-		"quest_1029_hud_var_desc"	"Aruncă grenade fumigene"
-		"quest_1029_hud_var_desc_CT"	"Aruncă grenade fumigene:<br>Apartamente sau rampa T"
-		"quest_1029_hud_var_desc_T"	"Aruncă grenade fumigene:<br>Cuibul lunetistului sau scări"
-		"quest_1098_hud_var_desc"               "Câștigă runde"
-		"quest_1032_hud_var_desc"               "Câștigă runde"
-		"quest_1033_hud_var_desc"               "Realizează ucideri"
-		"quest_1034_hud_var_desc"               "Investighează organizația Phoenix"
-		"quest_1035_hud_var_desc"               "Realizează ucideri cu: AK-47, M4A4 sau M4A1-S"
-		"quest_1036_hud_var_desc"               "Câștigă runde"
-		"quest_1037_hud_var_desc"               "Realizează ucideri"
-		"quest_1099_hud_var_desc"               "Obține MVP-uri"
-		"quest_1038_hud_var_desc"               "Câștigă runde"
-		"quest_1039_hud_var_desc"               "Realizează ucideri cu: pistoale diferite"
-		"quest_1040_hud_var_desc"               "Realizează ucideri cu: pistolul"
-		"quest_1041_hud_var_desc"               "Realizează ucideri cu: Desert Eagle"
-		"quest_1042_hud_var_desc"               "Câștigă runde"
-		"quest_1043_hud_var_desc"               "Realizează ucideri"
-		"quest_1044_hud_var_desc"               "Realizează ucideri de la o distanță de cel puțin 15 metri"
-		"quest_1045_hud_var_desc"               "Realizează ucideri cu: orice armă cu lunetă"
-		"quest_1046_hud_var_desc"               "Realizează ucideri cu lovituri în cap"
-		"quest_1047_hud_var_desc"               "Realizează ucideri cu: M249"
-		"quest_1048_hud_var_desc"               "Rănește inamicii folosind grenadele"
-		"quest_1049_hud_var_desc"               "Obține bani"
-		"quest_1050_hud_var_desc"               "Câștigă runde"
-		"quest_1051_hud_var_desc"               "Realizează ucideri"
-		"quest_1052_hud_var_desc"               "Selectează cartonașul inamic"
-		"quest_1053_hud_var_desc"               "Aruncă grenade fumigene"
-		"quest_1053_hud_var_desc_T"             "Aruncă grenade fumigene în „garaj” sau „mini”"
-		"quest_1053_hud_var_desc_CT"            "Aruncă grenade fumigene în camera de control sau baracă"
-		"quest_1054_hud_var_desc"               "Câștigă runde"
-		"quest_1055_hud_var_desc"               "Realizează ucideri"
-		"quest_1056_hud_var_desc"               "Realizează ucideri în tunel sau palat"
-		"quest_1057_hud_var_desc"               "Realizează ucideri"
-		"quest_1058_hud_var_desc"               "Câștigă runde"
-		"quest_1059_hud_var_desc"               "Realizează ucideri"
-		"quest_1060_hud_var_desc"               "Realizează ucideri cu: {s:weapon}"
-		"quest_1061_hud_var_desc"               "Realizează ucideri cu: {s:weapon}"
-		"quest_1062_hud_var_desc"               "Câștigă runde"
-		"quest_1063_hud_var_desc"               "Realizează ucideri"
-		"quest_1064_hud_var_desc"               "Alege cartonașul MVP"
-		"quest_1065_hud_var_desc"               "Aplică graffiti"
-		"quest_1065_hud_var_desc_T"             "Aplică graffiti pe mid"
-		"quest_1065_hud_var_desc_CT"            "Aplică graffiti în zona superioară de la T sau afară"
-		"quest_1100_hud_var_desc"               "Câștigă runde"
-		"quest_1066_hud_var_desc"               "Câștigă runde"
-		"quest_1067_hud_var_desc"               "AUG (lovituri în cap)"
-		"quest_1068_hud_var_desc"               "Orbește un inamic cu o grenadă de șoc"
-		"quest_1069_hud_var_desc"               "Aplică graffiti"
-		"quest_1069_hud_var_desc_T"             "Aplică graffiti la pasarelă sau în tunelul de sus"
-		"quest_1069_hud_var_desc_CT"            "Aplică graffiti: tunelul de jos sau scările de pe scurt"
-		"quest_1101_hud_var_desc"               "Câștigă runde"
-		"quest_1070_hud_var_desc"               "Câștigă runde"
-		"quest_1071_hud_var_desc"               "Realizează ucideri de la o distanță mai mică de 10 metri"
-		"quest_1072_hud_var_desc"               "Realizează ucideri de la o distanță de cel mult 10 metri"
-		"quest_1073_hud_var_desc"               "Realizează ucideri"
-		"quest_1074_hud_var_desc"               "Câștigă runde"
-		"quest_1075_hud_var_desc"               "Realizează ucideri"
-		"quest_1076_hud_var_desc"               "Realizează ucideri cu lovituri în cap"
-		"quest_1077_hud_var_desc"               "Realizează ucideri cu: {s:weapon}"
-		"quest_1102_hud_var_desc"               "Câștigă runde"
-		"quest_1078_hud_var_desc"               "Câștigă runde"
-		"quest_1079_hud_var_desc"               "Realizează ucideri cu: {s:weapon}"
-		"quest_1080_hud_var_desc"               "Ucide găini"
-		"quest_1081_hud_var_desc"               "Realizează ucideri"
-		"quest_1082_hud_var_desc"               "Câștigă runde"
-		"quest_1083_hud_var_desc"               "Realizează ucideri"
-		"quest_1084_hud_var_desc"               "Realizează ucideri"
-		"quest_1085_hud_var_desc"               "Cauzează răni cu grenada"
-		"quest_1085_v2_hud_var_desc"     	    "Rănește inamicii folosind grenadele"
-		"quest_1086_hud_var_desc"               "Câștigă runde"
-		"quest_1087_hud_var_desc"               "Realizează ucideri"
-		"quest_1088_hud_var_desc"               "Realizează ucideri din locațiile specifice"
-		"quest_1088_hud_var_desc_T"             "Ucide inamici aflați la zona țintă A sau B"
-		"quest_1088_hud_var_desc_CT"            "Realizează ucideri din zona țintă A sau B"
-		"quest_1089_hud_var_desc"               "Realizează ucideri în timp ce folosești luneta"
-		"quest_1089_v2_hud_var_desc"               "Realizează ucideri în timp ce folosești luneta"
-		"quest_1090_hud_var_desc"               "Câștigă runde"
-		"quest_1091_hud_var_desc"               "Realizează ucideri"
-		"quest_1092_hud_var_desc"               "Înscrie puncte cu arma bonus"
-		"quest_1092_v2_hud_var_desc"            "Înscrie puncte cu arma bonus"
-		"quest_1093_hud_var_desc"               "Cheltuie bani"
-		"quest_1094_hud_var_desc"               "Câștigă runde"
-		"quest_1095_hud_var_desc"               "Realizează ucideri"
-		"quest_1095_v2_hud_var_desc"            "Realizează ucideri cu UMP-45"
-		"quest_1096_hud_var_desc"               "Câștigă runde"
-		"quest_1097_hud_var_desc"               "Finalizează misiunea"
-		"quest_1097_v2_hud_var_desc"            "Pătrunde mai adânc în complexul Phoenix"
-		"quest_1103_hud_var_desc"               "Orbește inamicii cu grenade de șoc"
-
-
-
-
-/////////////////////////////////////////////////////////////////
-
-
-
-// win quests
-
-		"Quest_Win_a_Mode"										"Pericole neutralizate: <b>%gamemode%</b>"
-		"Quest_Win_a_Mode_desc"								"Câștigă un meci <b>%gamemode%</b>."
-
-		"Quest_Win_a_Mapgroup"								"Încheie meciul: <b>%gamemode%</b>, <b>%mapgroup%</b>"
-		"Quest_Win_a_Mapgroup_desc"						"Obține %actions% în %gamemode% pe <b>%mapgroup%</b>."
-
-		"Quest_Win_a_Map"											"End Game: <b>%gamemode%, %map%</b>"
-		"Quest_Win_a_Map_desc"								"Obține %actions% în <b>%gamemode%</b> pe <b>%map%</b>."
-
-		"Quest_Win_Rounds_Map"								"Implicare: <b>%gamemode%, %mapgroup%</b>"
-		"Quest_Win_Rounds_Map_desc"						"Obține %actions% în <b>%gamemode%</b> pe <b>%mapgroup%</b>."
-		"Quest_Win_Rounds_Map_Short"						"Runde câștigate"
-
-// equipment quests
-
-		"Quest_Weapon_Mode"										"Specializare pe echipament: <b>%gamemode%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Mode_desc"							"Obține %actions% %optional_target% cu <b>%weapon%</b> în meciuri <b>%gamemode%</b>."
-		
-		"Quest_Weapon_Mode_single_desc"				"Obține o ucidere cu <b>%weapon%</b> într-un meci <b>%gamemode%</b>."
-
-// equipment + mapgroup quests
-
-		"Quest_Weapon_Mapgroup"							"Specializare pe echipament: <b>%mapgroup%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Mapgroup_desc"					"Obține %actions% %optional_target% cu <b>%weapon%</b> în meciuri <b>%gamemode%: %mapgroup%</b>."
-		"Quest_WeaponDamage_Mapgroup_desc"					"Provoacă %actions% %optional_target% inamicilor folosind <b>%weapon%</b> în meciuri <b>%gamemode%: %mapgroup%</b>."
-
-	"Quest_Weapon_Within_3_Mapgroup"						"Absolvire: <b>%mapgroup%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Within_3_Mapgroup_desc"				"Obține %actions% %optional_target% folosind <b>%weapon%</b> <i>cu primele tale 3 împușcături din rundă,</i> în meciuri <b>%gamemode%: %mapgroup%</b>."
-
-	"Quest_Weapon_Map"									"Specializare pe echipament: <b>%map%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Map_desc"								"Obține %actions% %optional_target% cu <b>%weapon%</b> în meciuri <b>%gamemode%: %map%</b>."
-		"Quest_Weapon_Map_Team_desc"		"Fiind la <b>%team%</b>, obține %actions% %optional_target% folosind <b>%weapon%</b> în meciuri <b>%gamemode%: %map%</b>."		
-		"Quest_Weapon_Mapgroup_Team_desc"		"Fiind la <b>%team%</b>, obține %actions% %optional_target% folosind <b>%weapon%</b> în meciuri <b>%gamemode%: %mapgroup%</b>."		
-
-		"Quest_WepUpgrade_Mapgroup"					"Îmbunătățire armă: <b>%mapgroup%</b>"
-
-	"Quest_Unique_Weapon_Mapgroup"							"Weapons Expert: <b>%mapgroup%</b>"
-		"Quest_Unique_Weapon_Mapgroup_desc"					"În meciuri <b>%gamemode%: %mapgroup%</b>, obține progresul misiunii pentru fiecare %action% <i>realizată cu o armă unică</i>."
-		"Quest_Unique_Weapon_Mapgroup_Team_desc"					"Fiind la <b>%team%</b> în meciuri <b>%gamemode%: %mapgroup%</b>, obține progresul misiunii pentru fiecare %action% <i> realizată cu o armă unică</i>."
-
-		"Quest_Defend_Bomb_Mapgroup_desc"					"Obține %actions% <i>după ce bomba a fost armată</i> în meciuri <b>%gamemode%: %mapgroup%</b>."
-
-// Hostage quests
-
-	 "Quest_Rescue_Map"								"Salvare ostatici: <b>%map%</b>"
-	 "Quest_Rescue_Map_Desc"						"Obține %actions% în meciuri <b>%gamemode%: %map%</b>."
-
-// Plant bomb quests
-
-	 "Quest_PlantBomb_Mapgroup"									"Expert în explozibili: <b>%mapgroup%</b>"
-	 "Quest_PlantBomb_Mapgroup_Desc"						"Efectuează %actions% în meciuri <b>%gamemode%: %mapgroup%</b>."
-
-
-// Assassination
-
-	 "Quest_Assassination"									"Asasinare %victim_team%: <b>%target%</b>"
-	 "Quest_Assassination_desc"							"Caută-l și ucide-l pe %victim_team% <b>%target%</b> în meciuri <b>%gamemode%: %map%</b>."
-
-	 "quest_target_turner"									"Turner"
-	 "quest_target_jackson"									"Jackson"
-	 "quest_target_chapel"									"Chapel"	 
-	 "quest_target_sergei"									"Sergei"	 
-
-	 "quest_assassination_you_are_target"					"Ești ținta de asasinare.\nEști %s1."
-	 "quest_assassination_target_on_server"					"Un jucător încearcă să omoare ținta de asasinare: %s1"
-	 "quest_assassination_target_on_server_has_quest"		"Încerci să omori ținta de asasinare: %s1"
-	 "quest_assassination_target_killed"					"%s1 a fost asasinat!"
-	 "quest_assassination_no_longer_target"					"Nu mai ești %s1." 
-
-// Income
-	 "Quest_Income_Mapgroup"								"Venit brut: <b>1.000.000$</b>"
-	 "Quest_Income_Mapgroup_desc"						"Câștigă un total de 1.000.000$ în meciuri <b>%gamemode%: %mapgroup%</b>."
-	 "Quest_Income_Mapgroup_Team_desc"			"Fiind la %team%, obține un total de 1.000.000$ în meciuri %gamemode%: %mapgroup%."
-
-	 "Quest_Spend_Mapgroup_Team_desc"			"Fiind la %team%, cheltuiește un total de 1.000.000$ în meciuri %gamemode%: %mapgroup%."
-
-
-//	deathmatch bonus points
-
-		"Quest_DMBonusPoints_Mapgroup"				"Maestrul Armelor: <b>%mapgroup%</b>"
-		"Quest_DMBonusPoints_Mapgroup_desc"		"Obține puncte folosind arma bonus în meciuri <b>Deathmatch: %mapgroup%</b>."
-
-		"Quest_DMBonusPoints_Map"							"Maestrul Armelor: <b>%map%</b>"
-		"Quest_DMBonusPoints_Map_desc"				"Obține puncte folosind arma bonus în meciuri <b>Deathmatch: %map%</b>."
-
-// play quests
-
-		"Quest_Kills_Mapgroup"							"Amenințare reperată: <b>%gamemode%</b>, <b>%mapgroup%</b>"
-		"Quest_Kills_Mapgroup_desc"					"Obține %actions% %optional_target% în meciuri <b>%gamemode%: %mapgroup%</b>."
-		"Quest_Kills_Mapgroup_cond_desc"		"Obține %actions% %optional_target%—<i>%condition%</i>— în meciuri <b>%gamemode%: %mapgroup%</b>."
-		"Quest_Kills_Mapgroup_Team_desc"		"Fiind la <b>%team%</b>, obține %actions% %optional_target% în meciuri <b>%gamemode%: %mapgroup%</b>."		
-
-		"Quest_Kills_Mapgroup_Victim_Team_desc"		"Fiind la <b>%team%</b>, obține %victim_team% %actions% în meciuri <b>%gamemode%: %mapgroup%</b>."
-
-		"Quest_Flashbang_Mapgroup_Team_desc"		"Fiind la <b>%team%</b>, obține %actions% %optional_target% în meciuri <b>%gamemode%: %mapgroup%</b>."		
-
-
-		"Quest_Burn_Mapgroup_desc"					"Provoacă <i>arsuri</i> %actions% inamicilor în meciuri <b>%gamemode%: %mapgroup%</b>."
-
-		"Quest_Headshots_Mapgroup"							"Lovitură în cap: <b>%gamemode%</b>, <b>%mapgroup%</b>"
-		"Quest_Headshots_Mapgroup_desc"					"Obține %actions% cu lovituri în cap în meciuri <b>%gamemode%: %mapgroup%</b>."
-
-		"Quest_Kills_Map"										"Amenințare reperată: <b>%gamemode%</b>, <b>%map%</b>"
-		"Quest_Kills_Map_desc"							"Obține %actions% %optional_target% în meciuri <b>%gamemode%: %map%</b>."
-
-		"Quest_Kills_Mode"								"Amenințare reperată: <b>%gamemode%</b>"
-		"Quest_Kills_Mode_desc"						"Obține %actions% %optional_target% în meciuri <b>%gamemode%</b>."
-
-// chicken quests
-
-	"Quest_Chicken_Kills_Mapgroup"				"Aprovizionare: <b>%gamemode%</b>, <b>%mapgroup%</b>"
-	"Quest_Chicken_Kills_Map"							"Aprovizionare: <b>%gamemode%</b>, <b>%map%</b>"
-	"Quest_Chicken_Kills"						"Supply Run"
-
-// generic string tokens
-
-	"quest_team_ct"										"Contrateroriști"
-	"quest_team_terrorist"								"Teroriști"
-	"quest_complete_the_match"							"Termină meciul pentru a-ți finaliza misiunea"
-	"quest_complete_the_match_uncommitted"				"<img src='file://{images}/icons/ui/info.svg' class=''/>Termină meciul pentru a-ți salva progresul misiunii"
-
-// Coop quests
-
-	"Quest_Guardian_Bomb"									"Provocare Guardian Co-op: <b>%map%</b>, <b>%weapon%</b>"
-	"Quest_Guardian_Bomb_Desc"								"Provocare Guardian Co-op: Joacă la <b>%team%</b> cu un partener și protejați zona țintă de inamici pe <b>%map%</b>.<br><br>Obține <b>%action%</b> realizând <b>%kills%</b> ucideri de inamici cu <b>%weapon%</b>. <b>%extradetails%</b>"
-	"Quest_Guardian_Desc_op08"								"Provocare Guardian Co-op: Joacă la <b>%team%</b> cu un partener și protejați zona țintă de inamici pe <b>%map%</b>.<br><br>Obține <b>%action%</b> prin realizarea a <b>%kills%</b> %killtype% folosind <b>%weapon%</b>. <b>%extradetails%</b>%presence%"
-
-	"Quest_Guardian_Desc_op09"								"{s:commandverb} {s:kills} de {s:killtype} cu {s:weapon} în <b>Guardian: {s:location}</b>."
-	"Quest_CoopMission_Desc_op09"							"<b>Co-op Strike</b>: finalizează obiectivul cu un partener în <b>{s:location}</b>."
-	"Quest_Guardian_Desc_op09_extra_equip_1_var_desc"		"{s:commandverb} {s:kills} de {s:killtype} cu {s:weapon} în <b>Guardian: {s:location}</b>. Jucătorii încep cu: <b>{s:extraequip0}</b>."
-	"Quest_Guardian_Desc_op09_extra_equip_2_var_desc"		"{s:commandverb} {s:kills} de {s:killtype} cu {s:weapon} în <b>Guardian: {s:location}</b>. Jucătorii încep cu: <b>{s:extraequip0}</b> și <b>{s:extraequip1}</b>."
-
-	"Quest_Guardian_Desc_op10"								"{s:commandverb} {s:kills} de {s:killtype} cu {s:weapon} în <b>Guardian: {s:location}</b>."
-	"Quest_CoopMission_Desc_op10"							"<b>Co-op Strike</b>: finalizează obiectivul cu un partener în <b>{s:location}</b>."
-	"Quest_Guardian_Desc_op10_extra_equip_1_var_desc"		"{s:commandverb} {s:kills} de {s:killtype} cu {s:weapon} în <b>Guardian: {s:location}</b>. Jucătorii încep cu: <b>{s:extraequip0}</b>."
-	"Quest_Guardian_Desc_op10_extra_equip_2_var_desc"		"{s:commandverb} {s:kills} de {s:killtype} cu {s:weapon} în <b>Guardian: {s:location}</b>. Jucătorii încep cu: <b>{s:extraequip0}</b> și <b>{s:extraequip1}</b>."
-
-	"Quest_Coop_Desc_Rescue"								"Co-op Strike: Joacă la <b>%team%</b> cu un partener și <b>salvați ostaticul</b> de pe <b>%map%</b>.<br><br><b>%extradetails%</b>"
-	"Quest_Coop_Desc_Recon"									"Co-op Strike: Joacă la <b>%team%</b> cu un partener și <b>culegeți informații</b> de pe <b>%map%</b>.<br><br><b>%extradetails%</b>"
- 	"Quest_Coop_Desc_Bomb"									"Co-op Strike: Joacă la <b>%team%</b> cu un partener și <b>faceți o explozie</b> pe <b>%map%</b>.<br><br><b>%extradetails%</b>"
- 
-	"Quest_op09_coopmission"								"Recuperează o mostră a virusului din zona periculoasă din laboratorul Phoenix."
-	"Quest_op10_coopmission"								"Facțiunea Phoenix a fost reperată la o fermă veche. Investighează zona și află ce pune la cale."
-
-	"Quest_Guardian_Hostage"								"Provocare Guardian Co-op: <b>%map%</b>, <b>%weapon%</b>"
-	"Quest_Guardian_Hostage_Desc"							"Provocare Guardian Co-op: Joacă la <b>%team%</b> cu un partener și împiedicați contrateroriștii să ajungă la ostatici pe <b>%map%</b>.<br><br>Obține <b>%action%</b> realizând <b>%kills%</b> ucideri de inamici cu <b>%weapon%</b>. <b>%extradetails%</b>"
-	 
-	"quest_guardian_kills_5"								"5"
-	"quest_guardian_kills_10"								"10"
-	"quest_guardian_kills_15"								"15"
-	"quest_guardian_kills_20"								"20"
-	"quest_guardian_kills_25"								"25"
-	"quest_guardian_kills_30"								"30"
-	"quest_guardian_kills_35"								"35"
-	"quest_guardian_kills_40"								"40"
-	"quest_guardian_kills_45"								"45"
-	"quest_guardian_kills_50"								"50"
-
-// Guardian kill types
-	"quest_killtype_normal"									"ucideri"
-	"quest_killtype_headshot"								"ucideri cu <b>lovituri în cap</b>"
-	"quest_killtype_blind"									"ucideri de inamici <b>orbiți</b>"
-	"quest_killtype_unscoped"								"ucideri <b>când nu privești prin lunetă</b>"
-
-	"quest_enemy_weapon"									"o armă inamică"
-	"quest_weapon_CZ75a_or_enemy_weapon"					"CZ75-Auto sau cu orice armă a inamicului"
-	"quest_weapon_sniperrifle"								"orice armă cu lunetă"
-	"quest_weapon_any_rifle"								"orice pușcă ghintuită"
-	"quest_weapon_m4"										"orice pușcă ghintuită M4"
-	"quest_weapon_starter_ct"								"orice pistol CT implicit"
-	"quest_weapon_ct"										"armă de contrateroriști"
-	"quest_weapon_t"										"armă de teroriști"
-	"quest_weapon_any_pistol"								"orice pistol"
-	"quest_weapon_any_weapon"								"orice armă"
-	"quest_weapon_any_shotgun"								"orice pușcă"
-	"quest_weapon_any_smg"									"orice pistol-mitralieră"
-	"quest_weapon_ssg08_or_mag7"							"SSG 08 sau MAG-7"
-	"quest_weapon_awp_or_p90"								"AWP sau P90"
-	"quest_weapon_unique_pistol"							"pistoale diferite"
-	"quest_presence_heavy"									"<br><br><b>AVERTIZARE</b>: Așteaptă-te la rezistență <i>grea</i> în zonă!"
-
-	"quest_guardian_cantbuy"		"<i>Nu poți cumpăra în timpul acestei misiuni.</i>"
-	"quest_guardian_maxmoneylimit"		"<i>Banii maximi sunt limitați în această misiune.</i>"
-	"quest_guardian_killrewardsonly" 	"<i>Poți câștiga bani numai din ucideri.</i>"
-	"quest_guardian_moneyreset" 	"<i>Banii sunt resetați după fiecare eșuare a misiunii.</i>"
-	"quest_guardian_heavyarmor" 	"<i>Armura grea de asalt este disponibilă.</i>"
-	"quest_guardian_noarmor" 	"<i>Armura nu este disponibilă.</i>"
-	"quest_guardian_heavyarmorresetmoney" 	"<i>Armura grea de asalt este disponibilă. Banii sunt resetați după eșecul misiunii.</i>"
-	 //"quest_guardian_maxmoney_16000"		"$16000"
-	 //"quest_guardian_maxmoney_10000"		"$10000"
-	 //"quest_guardian_maxmoney_6000"			"$6000"
-	 //"quest_guardian_maxmoney_3200"			"$3200"
-	 //"quest_guardian_maxmoney_0"			"$0"
-
-	// "Get [headshot] kills: [unscoped] [AWP]"
-	// Double spaces will automatically be removed.
-	"guardian_mission_type_kills"				"Realizează ucideri cu: {s:weapon}"
-	"guardian_mission_type_headshots"			"Realizează ucideri cu lovituri în cap cu: {s:weapon}"
-	"guardian_mission_type_unscoped"			"Realizează ucideri fără a folosi luneta cu: {s:weapon}"
-	"guardian_mission_type_enemy_weapon"		"Realizează ucideri cu arma {s:weapon} a inamicului"
-	"guardian_mission_type_enemy_airborne"		"Realizează ucideri din aer: {s:weapon}"
-	"guardian_mission_type_flashbang"			"Ucide inamici orbiți"
-	"guardian_mission_type_ct_weapons"			"Realizează ucideri cu arme de contrateroriști"
-
-//	bonus tokens
-
-	  "quest_bonus_headshot"							"dacă e și o lovitură în cap"
-	  "quest_bonus_zoomed"								"când privești prin lunetă"
-  	  "quest_bonus_not_zoomed"							"când nu privești prin lunetă"
-	  "quest_bonus_chickens"							"când ținta este o găină"
-
-	  "quest_bonus_taser"								"când folosești Zeus x27"
-	  "quest_bonus_bomb_planted"						"când bomba este armată"
-	  "quest_bonus_melee"								"când folosești o armă albă"	  
-
-
-
-	  "quest_bonus_killstreak_2"						"într-un șir de 2 sau mai multe ucideri"
-	  "quest_bonus_killstreak_3"						"într-un șir de 3 sau mai multe ucideri"
-
-	  "quest_bonus_chickenstreak_2"						"într-un șir de 2 sau mai multe găini ucise"
-	  "quest_bonus_chickenstreak_3"						"într-un șir de 3 sau mai multe găini ucise"
-
-	  "quest_bonus_borrowed_gun"						"când folosești arma altcuiva"
-	  "quest_bonus_borrowed_gun_enemy"					"când folosești arma unui inamic"
-	  "quest_bonus_borrowed_gun_own"					"când folosești arma victimei"
-		"quest_bonus_victim_rescuing"					"când victima salvează un ostatic"
-		
-	  "quest_bonus_bulletcount_1"						"când este îndeplinită cu prima ta împușcătură a rundei"
-		
-	  "quest_bonus_totalrounds_2"						"dacă în timpul primelor 2 runde"
-	  "quest_bonus_totalrounds_3"						"dacă în timpul primelor 3 runde"
-	  "quest_bonus_totalrounds_4"						"dacă în timpul primelor 4 runde"
-	  "quest_bonus_totalrounds_5"						"dacă în timpul primelor 5 runde"
-
-  	  "quest_bonus_weapon_elite"						"când folosești Dual Berettas"
-	  "quest_bonus_weapon_ssg08"						"când folosești SSG08"
-	  "quest_bonus_weapon_revolver"						"când folosești Revolver R8"
-	  "quest_bonus_weapon_glock_hkp2000_usp_silencer"	"când folosești P2000, USP-S sau Glock-18"
-
-		"quest_bonus_set_dust"							"când arma este din colecția Dust"
-		"quest_bonus_set_aztec"							"când arma este din colecția Aztec"
-		"quest_bonus_set_vertigo"						"când arma este din colecția Vertigo"
-		"quest_bonus_set_inferno"						"când arma este din colecția Inferno"
-		"quest_bonus_set_militia"						"când arma este din colecția Militia"
-		"quest_bonus_set_nuke"							"când arma este din colecția Nuke"
-		"quest_bonus_set_office"						"când arma este din colecția Office"
-		"quest_bonus_set_assault"						"când arma este din colecția Assault"
-		"quest_bonus_set_dust_2"						"când arma este din colecția Dust 2"
-		"quest_bonus_set_train"							"când arma este din colecția Train"
-		"quest_bonus_set_mirage"						"când arma este din colecția Mirage"
-		"quest_bonus_set_italy"							"când arma este din colecția Italy"
-		"quest_bonus_set_lake"							"când arma este din colecția Lake"
-		"quest_bonus_set_safehouse"						"când arma este din colecția Safehouse"
-		"quest_bonus_set_esports"						"când arma este din colecția eSports 2013"
-		"quest_bonus_set_weapons_i"						"când arma este din colecția Arms Deal"
-		"quest_bonus_set_bravo_i"						"când arma este din colecția Bravo"
-		"quest_bonus_set_bravo_ii"						"când arma este din colecția Alpha"
-		"quest_bonus_set_weapons_ii"					"când arma este din colecția Arms Deal 2"
-		"quest_bonus_set_esports_ii"					"când arma este din colecția eSports 2013 Winter"
-		"quest_bonus_set_esports_2014_summer"			"când arma este din colecția eSports 2014 Summer"
-		"quest_bonus_set_community_1"					"când arma este din colecția Winter Offensive"
-		"quest_bonus_set_weapons_iii"					"când arma este din colecția Arms Deal 3"
-		"quest_bonus_set_community_2"					"când arma este din colecția Phoenix"
-		"quest_bonus_set_community_3"					"când arma este din colecția Huntsman"
-		"quest_bonus_set_community_4"					"când arma este din colecția Breakout"
-		"quest_bonus_set_community_5"					"când arma este din colecția Vanguard"
-		"quest_bonus_set_community_6"					"când arma este din colecția Chroma"
-		"quest_bonus_set_community_7"					"când arma este din colecția Chroma 2"
-		"quest_bonus_set_community_11"					"când arma este din colecția Wildfire"
-		"quest_bonus_set_bank"							"când arma este din colecția Bank"
-		"quest_bonus_set_baggage"						"când arma este din colecția Baggage"
-		"quest_bonus_set_cobblestone"					"când arma este din colecția Cobblestone"
-		"quest_bonus_set_overpass"						"când arma este din colecția Overpass"
-		"quest_bonus_set_cache"							"când arma este din colecția Cache"
-		"quest_bonus_set_kimono"						"când arma este din colecția Rising Sun"
-
-		"quest_bonus_cs_assault"						"când harta este Assault"
-		"quest_bonus_cs_italy"							"când harta este Italy"
-		"quest_bonus_cs_militia"						"când harta este Militia"
-		"quest_bonus_cs_office"							"când harta este Office"
-		"quest_bonus_de_aztec"							"când harta este Aztec"
-		"quest_bonus_de_dust"							"când harta este Dust"
-		"quest_bonus_de_dust2"							"când harta este Dust II"
-		"quest_bonus_de_mirage"							"când harta este Mirage"
-		"quest_bonus_de_overpass"						"când harta este Overpass"
-		"quest_bonus_de_cbble"							"când harta este Cobblestone"
-		"quest_bonus_de_train"							"când harta este Train"		
-		"quest_bonus_de_inferno"						"când harta este Inferno"
-		"quest_bonus_de_nuke"							"când harta este Nuke"
-		"quest_bonus_de_shorttrain"						"când harta este Shorttrain"
-		"quest_bonus_de_shortdust"						"când harta este Shortdust"
-		"quest_bonus_de_vertigo"						"când harta este Vertigo"
-		"quest_bonus_de_balkan"							"când harta este Balkan"
-		"quest_bonus_ar_baggage"						"când harta este Baggage"
-		"quest_bonus_ar_monastery"						"când harta este Monastery"
-		"quest_bonus_ar_shoots"							"când harta este Shoots"
-		"quest_bonus_de_embassy"						"când harta este Embassy"
-		"quest_bonus_de_bank"							"când harta este Bank"
-		"quest_bonus_de_lake"							"când harta este Lake"
-		"quest_bonus_de_depot"							"când harta este Depot"
-		"quest_bonus_de_safehouse"						"când harta este Safehouse"
-		"quest_bonus_de_sugarcane"						"când harta este Sugarcane"
-		"quest_bonus_de_stmarc"							"când harta este St. Marc"
-		"quest_bonus_cs_museum"							"când harta este Museum"
-		"quest_bonus_cs_thunder"						"când harta este Thunder"
-		"quest_bonus_de_favela"							"când harta este Favela"
-		"quest_bonus_cs_downtown"						"când harta este Downtown"
-		"quest_bonus_de_seaside"						"când harta este Seaside"
-		"quest_bonus_de_library"						"când harta este Library"
-		"quest_bonus_cs_motel"							"când harta este Motel"
-		"quest_bonus_de_cache"							"când harta este Cache"
-		"quest_bonus_de_ali"							"când harta este Ali"
-		"quest_bonus_de_ruins"							"când harta este Ruins"
-		"quest_bonus_de_ruby"							"când harta este Ruby"
-		"quest_bonus_de_chinatown"						"când harta este Chinatown"
-		"quest_bonus_de_gwalior"						"când harta este Gwalior"
-		"quest_bonus_cs_agency"							"când harta este Agency"
-		"quest_bonus_cs_siege"							"când harta este Siege"
-		"quest_bonus_de_castle"							"când harta este Castle"
-		"quest_bonus_de_overgrown"						"când harta este Overgrown"
-		"quest_bonus_de_blackgold"						"când harta este Black Gold"
-		"quest_bonus_cs_rush"							"când harta este Rush"
-		"quest_bonus_de_mist"							"când harta este Mist"
-		"quest_bonus_cs_insertion"						"când harta este Insertion"
-
-		"quest_bonus_cs_workout"						"când harta este Workout"
-		"quest_bonus_cs_backalley"						"când harta este Back Alley"
-		"quest_bonus_de_marquis"						"când harta este Marquis"
-		"quest_bonus_de_facade"							"când harta este Facade"
-		"quest_bonus_de_season"							"când harta este Season"
-		"quest_bonus_de_bazaar"							"când harta este Bazaar"
-		"quest_bonus_de_santorini"						"când harta este Santorini"
-
-		"quest_bonus_de_subzero"						"când harta este Subzero"
-		"quest_bonus_de_biome"							"când harta este Biome"
-
-
-
-
-// OperationalPoints
-
-		"Quest_OperationalPoints_Template"				"Recompensă: %s1"
-
-		"Quest_OperationalPoints_1"					"★"
-		"Quest_OperationalPoints_2"					"★★"
-		"Quest_OperationalPoints_3"					"<font color=\"#ff0000\">★★★★</font>"
-
-// Hud Message
-
-	 "Quest_ProgressMadeMessage1"								" Punctele misiunii vor fi dobândite la sfârșitul meciului: +%s1."
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -34400,7 +33163,7 @@ Colecția Spectrum"
 // COMMUNITY_34
 
 		"PaintKit_usp_field_snake"						"Acest desen personalizat ilustrează un clește de dezamorsare cu aripi sub înălțător și textul „027” pe manșon.\n\n<i>Muncă pe teren ușoară</i>"
-		"PaintKit_usp_field_snake_Tag"					"027"
+		"PaintKit_usp_field_snake_Tag"					"27"
 
 		"PaintKit_deagle_calligraff"					"Manșonul acestui Desert Eagle a fost decorat cu elemente de caligrafie de culoare argintie.\n\n<i>Chestiile astea necesită timp</i>"
 		"PaintKit_deagle_calligraff_Tag"				"Calligraffiti"
@@ -34594,38 +33357,60 @@ Colecția Spectrum"
 		"PaintKit_glove_specialist_dragon_blue_Tag"						"Cloud Chaser"
 		
 		"PaintKit_glove_specialist_wave_blue_Tag"						"Big Swell"
-"PaintKit_glock_jdpeek_Tag"										"Fully Tuned"
+		
+// END COMMUNITY_37 GLOVES
+
+// COMMUNITY_37 WEAPONS
+		
+		"PaintKit_glock_jdpeek"											"Această armă fost vopsită personalizat folosind culori neon și vopsea sclipitoare metalizată.\n\n<i>Este puțin prea mult pentru mine, dar nu sunt eu publicul țintă... – Booth, traficant de arme</i>"
+		"PaintKit_glock_jdpeek_Tag"										"Fully Tuned"
 					
+		"PaintKit_awp_queens_gambit"									"Această armă a fost vopsită în albastru regal și auriu. O regină a fost vopsită manual pe patul armei.\n\n<i>Fiecare împușcătură este un decret regal de putere și precizie</i>"
 		"PaintKit_awp_queens_gambit_Tag"								"Queen's Gambit"
 					
+		"PaintKit_p90_deathgaze"										"Această armă fost vopsită personalizat cu un graffiti cu o Meduză pe un strat de bază de marmură de Carrara.\n\n<i>Nu venera idolii care s-au înălțat prin înșelătorie</i>"
 		"PaintKit_p90_deathgaze_Tag"									"Deathgaze"
 					
+		"PaintKit_p250_kintsugi"										"O pasăre de un portocaliu aprins, cu accente aurii, a fost vopsită pe un strat de bază de culoarea fildeșului.\n\n<i>La fel ca farfuriile pretențioase, această armă este folosită numai pentru ocazii speciale</i>"
 		"PaintKit_p250_kintsugi_Tag"									"Kintsugi"
 					
+		"PaintKit_mp9_urban_sovereign"									"Această armă a fost vopsită personalizat cu un model urban și finisată cu un graffiti auriu.\n\n<i>Regii nu se ascund în spatele zidurilor, ci le pictează</i>"
 		"PaintKit_mp9_urban_sovereign_Tag"								"Urban Sovereign"
 					
+		"PaintKit_mp7_amberline"										"Această armă a fost vopsită prin pulverizare cu dungi diagonale portocalii și albe.\n\n<i>O marcă în mâini</i>"
 		"PaintKit_mp7_amberline_Tag"									"Amberline"
 					
+		"PaintKit_bizon_rmx"											"Această armă a fost vopsită personalizat cu un degradeu violet și un model cu roșu și alb.\n\n<i>Ușoară, rapidă și periculoasă... în teorie</i>"
 		"PaintKit_bizon_rmx_Tag"										"RMX"
 					
+		"PaintKit_ak47_crane_flight"									"Această armă a fost vopsită manual cu o barză cu accente aurii a fost vopsită pe un strat de bază alb-negru.\n\n<i>Momentul care precede luna sângerie</i>"
 		"PaintKit_ak47_crane_flight_Tag"								"Crane Flight"
 					
+		"PaintKit_deagle_firebreathing"									"Această armă a fost vopsită personalizat cu flăcări violet și albastre folosind vopsea sidefie.\n\n<i>Conține calități și abilități excepționale</i>"
 		"PaintKit_deagle_firebreathing_Tag"								"Firebreathing"
 					
+		"PaintKit_ump_fragment"											"Această armă a fost vopsită personalizat cu un model argintiu, negru și roșu.\n\n<i>Plecat la vânătoare</i>"
 		"PaintKit_ump_fragment_Tag"										"Fragment"
 					
+		"PaintKit_sawedoff_fusion"										"Această armă a fost vopsită personalizat cu un model negru și auriu. În condiții de iluminare diferită se pot observa detalii suplimentare.\n\n<i>Am văzut chestii...</i>"
 		"PaintKit_sawedoff_fusion_Tag"									"Fusion"
 					
+		"PaintKit_galil_galigator"										"Această armă a fost vopsită personalizat cu un aligator și simboluri toxice peste un strat de bază galben.\n\n<i>HAP! HAP! HAP!</i>"
 		"PaintKit_galil_galigator_Tag"									"Galigator"
 					
+		"PaintKit_fiveseven_polymer_dark"								"Acest model personalizat îi conferă armei un aspect de polimer violet transparent.\n\n<i>Ambalat într-o folie violetă de bomboană</i>"
 		"PaintKit_fiveseven_polymer_dark_Tag"							"Dark Polymer"
 					
+		"PaintKit_usps_silent_boy"										"Această armă a fost vopsită personalizat cu simboluri geometrice negre și albastre și shurikenuri.\n\n<i>Păstrați discreția pe durata execuției agresiunii</i>"
 		"PaintKit_usps_silent_boy_Tag"									"Silent Shot"
 					
+		"PaintKit_m4a4_zubastick_bw"									"Pe acest M4A4 au fost vopsiți manual dinți și ochi portocalii.\n\n<i>Circa 1991</i>"
 		"PaintKit_m4a4_zubastick_bw_Tag"								"Zubastick"
 					
+		"PaintKit_m4a1s_electrum"										"Această armă a fost vopsită personalizat cu un strat de bază verde marmorat și a fost finisată cu accente aurii și roșii.\n\n<i>Nu ești plătit îndeajuns să cari asta, dar o voi face eu – Valeria Jenner, revoluționară</i>"
 		"PaintKit_m4a1s_electrum_Tag"									"Electrum"
 					
+		"PaintKit_m249_blocks_purple"									"Această armă a fost vopsită personalizat folosind un model geometric grafic violet.\n\n<i>Pune-le una peste alta</i>"
 		"PaintKit_m249_blocks_purple_Tag"								"Bock Blocks"
 		
 // END COMMUNITY_37 WEAPONS
@@ -36000,8 +34785,8 @@ Colecția Spectrum"
 		"Workshop_created" "Data creării"
 		"Workshop_size" "Mărime"
 		"Workshop_View" "Vezi în atelier"
-		"Workshop_Allow" "Permite"
-		"Workshop_Deny" "Refuză"
+		"Workshop_Allow" "Descarcă"
+		"Workshop_Deny" "Anulează"
 
 		"SFUI_Workshop_Desc_Pw"				"Hărțile din atelier la care ești abonat sunt listate aici. Poți să folosești sistemul de joc rapid pentru a găsi cel mai bun server comunitar care rulează o hartă."
 		"SFUI_Workshop_Desc_Sp_Pw"			"Hărțile din atelier la care ești abonat sunt listate aici. Poți să le încerci local cu boții."
@@ -36291,12 +35076,6 @@ Colecția Spectrum"
 		"SFUI_Store_Limited_Bid_Tagline"			"pentru a face o ofertă"
 		"SFUI_Store_Available_Offers"               "Oferte disponibile timp de:"
 		"SFUI_Store_Preview"                        "Previzualizează"
-
-		"SFUI_Store_Timer_Week:p"                   "%s1 săptămână#|#%s1 săptămâni#|#%s1 de săptămâni"
-		"SFUI_Store_Timer_Day:p"                    "%s1 zi#|#%s1 zile#|#%s1 de zile"
-		"SFUI_Store_Timer_Hour:p"                   "%s1 oră#|#%s1 ore#|#%s1 de ore"
-		"SFUI_Store_Timer_Min:p"                    "%s1 minut#|#%s1 minute#|#%s1 de minute"
-		"SFUI_Store_Timer_Sec:p"                    "%s1 secundă#|#%s1 secunde#|#%s1 de secunde"
 
 		"SFUI_Store_Timer_Week:f"                 	"{f:0:value, plural, one{{f:0:value} săptămână} few{{f:0:value} săptămâni} other{{f:0:value} de săptămâni}}"
 		"SFUI_Store_Timer_Day:f"                    "{f:0:value, plural, one{{f:0:value} zi} few{{f:0:value} zile} other{{f:0:value} de zile}}"
@@ -38577,7 +37356,7 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"SFUI_PlayerDetails_Loading"				"Se verifică laudele"
 		"SFUI_PlayerDetails_Loading_Failed"			"Laudele nu au putut fi încărcate. Te rugăm să încerci din nou mai târziu!"
 		"SFUI_PlayerDetails_Previously_Submitted"	"Laude trimise anterior pentru acest utilizator"
-		"SFUI_PlayerDetails_Commendations_Left:p"		"Azi mai poți lăuda încă un jucător.#|#Azi mai poți lăuda încă %s1 jucători.#|#Azi mai poți lăuda încă %s1 de jucători."
+		"SFUI_PlayerDetails_Commendations_Left:f"	"Azi mai poți lăuda încă {num_players, plural, one{un jucător} few {{num_players} jucători} other{{num_players} de jucători}}."
 		"SFUI_PlayerDetails_NoCommendations_Left"   "Ai trimis prea multe laude, te rugăm să încerci mâine din nou"
 		"SFUI_PlayerDetails_Updating_Previous_Commendation"   "Schimbi o laudă trimisă anterior"
 		"SFUI_PlayerDetails_New_Commendation"   "Trimiți o nouă laudă"
@@ -38935,6 +37714,8 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"SFUIHUD_InfoPanel_Coop_Thumb2Insert"					"USB-ul a fost recuperat.\nAcum se instalează virusul!"
 		"SFUIHUD_InfoPanel_Coop_Thumb2Ready"					"USB-ul 2 este pregătit!"
 		"SFUIHUD_InfoPanel_Coop_Thumb2Retrieved"				"USB-ul cu virus a fost recuperat!"	
+
+		"FullPlayerNameOrder_Default:f"						"{modifier} {clantag} {controller_name} ({current_controller_of_my_pawn})"
 "SFUIHUD_Spectate_Equipment"	"VALOAREA ECHIPAMENTULUI"
 		"SFUIHUD_Spectate_TeamMoney"	"BANII ECHIPEI"
 		"SFUIHUD_Spectate_TeamEQValue"	"VALOAREA ECHIPAMENTULUI ECHIPEI"
@@ -40319,8 +39100,8 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"SFUI_Settings_MiniScoreboardPlayerCount_Tooltip"	"În timpul perioadei active a rundei, înlocuiește în minitabela de scor avatarurile jucătorilor echipelor cu un contor care indică numărul de jucători rămași în viață."
 
 
-		"Post_Round_Damage_Report_Given:p"		" • Răni provocate → %s3: %s2 în %s1#|# • Răni provocate → %s3: %s2 în %s1#|# • Răni provocate → %s3: %s2 în %s1"
-		"Post_Round_Damage_Report_Taken:p"		" • Răni suferite ← %s3: %s2 în %s1#|# • Răni suferite ← %s3: %s2 în %s1#|# • Răni suferite ← %s3: %s2 în %s1"
+		"Post_Round_Damage_Report_Given:f"		" • Răni provocate → {player_name}: {f:0:damage} în {num_hits}"
+		"Post_Round_Damage_Report_Taken:f"		" • Răni suferite ← {player_name}: {f:0:damage} în {num_hits}"
 
 		"SFUI_TeamOverheadID"					"Arată echipamentul echipei"
 
@@ -40799,8 +39580,8 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 
 		"SFUI_UserAlertNoteType_1"			"Serverele din %s1 sunt supraîncărcate."
 		"SFUI_UserAlertNoteType_2"			"Serverele din %s1 sunt oprite pentru mentenanță."
-		"SFUI_UserAlertNoteType_LowPlayersR:p"	"Doar un jucător compatibil caută un meci în %region%.#|#Doar %players% jucători compatibili caută un meci în %region%.#|#Doar %players% de jucători compatibili caută un meci în %region%."
-		"SFUI_UserAlertNoteType_LowPlayersY:p"	"Doar un jucător compatibil caută un meci în regiunea ta.#|#Doar %players% jucători compatibili caută un meci în regiunea ta.#|#Doar %players% de jucători compatibili caută un meci în regiunea ta."
+		"SFUI_UserAlertNoteType_LowPlayersR:f"	"{players, plural, one{Doar un jucător compatibil} few {Doar {players} jucători compatibili} other{Doar {players} de jucători compatibili} =0{Niciun jucător compatibil nu}} caută un meci în {region}."
+		"SFUI_UserAlertNoteType_LowPlayersY:f"	"{players, plural, one{Doar un jucător compatibil} few {Doar {players} jucători compatibili} other{Doar {players} de jucători compatibili} =0{Niciun jucător compatibil nu}} caută un meci în regiunea ta."
 
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"Conectarea la meci a eșuat."
 		"SFUI_QMM_ERROR_NotLoggedIn"		"Nu ești conectat la serviciul de matchmaking Counter-Strike."
@@ -46369,10 +45150,10 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"practicesettings_infammo_button"			"Muniție infinită"
 		"practicesettings_infwarmup_tooltip"		"Când această opțiune este <b>activată</b>, meciul va rămâne într-o fază de încălzire permanentă și niciun bot nu se va alătura meciului."
 		"practicesettings_infwarmup_button"			"Încălzire permanentă"
-		"practicesettings_annotations_tooltip"		"Când această opțiune este <b>activată</b>, va fi încărcat ghidul pentru hartă selectat din meniul vertical, iar următoarele setări vor fi activate: încălzire permanentă, muniție infinită și camera grenadei."
-		"practicesettings_annotations_button"		"Utilizează ghidul hărții"
+		"practicesettings_annotations_tooltip"		"Când această opțiune este <b>activată</b>, va fi încărcat (opțional) ghidul pentru hartă selectat din meniul vertical, iar următoarele setări vor fi activate: încălzire permanentă, muniție infinită și camera grenadei."
+		"practicesettings_annotations_button"		"Activează ghidurile pentru hărți"
 		"practicesettings_annotations_workshop_tooltip" "Accesează atelierul"
-		"practicesettings_annotations_dropdown_tooltip"	"Specifică ce ghid pentru hartă va fi încărcat."
+		"practicesettings_annotations_dropdown_tooltip"	"Specifică ce ghid pentru hartă va fi încărcat (dacă trebuie încărcat vreunul)."
 
 		"PlayMenuReplayNewUserTrainingButton"		"Reia instrucția"
 
@@ -46408,6 +45189,8 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"Workshop_annotation_ready"					"Articolul este gata pentru a fi încărcat."		
 		"UI_File_Filter_SupportedAnnotationFormat"	"Fișiere text (*.txt)"
 		"annotations_visit_workshop"				"Accesează atelierul ⤤"
+		"annotations_exceed_round_limit"			"Ghidurile pentru hărți nu sunt permise după runda {s:rounds} a reprizei"
+
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Game Mode Desc
@@ -47496,6 +46279,1225 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"playerstats_mode_comp_active"		"Competitiv (dezamorsare de bombă)"
 		"playerstats_mode_comp_other"		"Competitiv (salvare de ostatici)"
 		"playerstats_mode_comp_scrim"		"Scrimmage"
+		"playerstats_mode_2v2_all"			"Wingman (toate)"
+		"playerstats_mode_2v2_active"		"Wingman (serviciu activ)"
+		"playerstats_mode_2v2_other"		"Wingman (grupul de rezervă)"
+
+		"playerstats_weapons"					"Statistici arme"
+		"playerstats_heatmap"					"Cartografierea activității"
+		"playerstats_matchlister"				"Meciuri"
+		"playerstats_stats"						"Statistici"
+
+		"playerstats_matchlister_separator"		"{s:separator_title}"
+
+		"playerstats_weapon_tooltip_counts"		"Ucideri: {d:kills}"
+		"playerstats_weapon_tooltip_kd"			"U/D: {s:score}"
+
+		"playerstats_map_tooltip_win_loss_tie"	"Victorii/Înfrângeri/Remize"
+		"playerstats_map_tooltip_rndwin_rndloss"	"Runde câștigate/pierdute"
+		"playerstats_map_tooltip_round_winrate"	"Raportul de runde câștigate"
+		"playerstats_map_tooltip_match_winrate"	"Raportul de meciuri câștigate"
+
+		"playerstats_forceretry"				"S-a pierdut conexiunea cu serverele pentru statistici.\nApasă OK pentru a încerca să te reconectezi."
+		"playerstats_no_data"					"Nu există date pentru perioada și modurile de joc selectate. Modifică selecția sau joacă câteva meciuri."
+		"playerstats_link"						"Gestionează abonamentul"
+		"playerstats_link_reactivate"			"Reactivează abonamentul"
+		"playerstats_link_get"					"Abonează-te"
+
+		"playerstats_subscription_expire_warning"		"<b>Datele meciurilor sunt înregistrate</b> - abonamentul <b>expiră astăzi</b>"
+		"playerstats_subscription_renew_automatically"	"<b>Datele meciurilor sunt înregistrate</b> - abonamentul se va reînnoi automat în {d:days} zile"
+		"playerstats_subscription_renew_unknown"		"<b>Datele meciurilor sunt înregistrate</b> - {d:days} zile rămase din abonamentul tău"
+		"playerstats_subscription_renew_manually"		"<b>Datele meciurilor sunt înregistrate</b> - {d:days} zile rămase din abonamentul tău - abonamentul tău <b>nu se va reînnoi automat</b>"
+		"playerstats_subscription_expired"				"<b>Abonament expirat</b> - reactivează-ți abonamentul pentru ca noi date despre meciurile tale să fie înregistrate"
+		"playerstats_subscription_not_enrolled"			"<b>Abonament inactiv</b> - abonează-te pentru ca noi date despre meciurile tale să fie înregistrate"
+		"playerstats_subscription_buy_button"			"ACTIVEAZĂ ABONAMENTUL LUNAR\n{s:price}/LUNĂ"
+
+		"playerstats_past_14"					"Ultimele 14 zile"
+		"playerstats_past_30"					"Ultimele 30 de zile"
+		"playerstats_past_90"					"Ultimele 90 de zile"
+		"playerstats_alltime"					"Totdeauna"
+
+		"stat_best_map"							"Cea mai bună hartă"
+		"stat_best_map_desc"					"Harta cu cel mai mare procentaj de runde câștigate"
+
+		"stat_best_weapon"						"Cea mai bună armă"
+
+		"stat_best_mate"						"Cel mai bun amic"
+		"stat_best_mate_desc"					"Coechipierul care te-a ajutat să obții cel mai bun raport de runde câștigate/pierdute"
+
+		"matchstat_abandoned"					"*Ai părăsit acest meci înainte să se încheie"
+
+		"playerstats_suffix_per_round"			"/r"
+		"playerstats_suffix_per_cent"			"%"
+
+		"playerstats_per_round"			"{s:value}/r"
+		"playerstats_per_cent"			"{s:value}%"
+		"playerstats_no_units"			"{s:value}"	
+
+		"playerstats_percentile"		"Raportul tău de {s:tt_value} este mai bun decât cel al {s:tt_rank}% dintre posesorii de permis ai operațiunii"
+		"playerstats_percentile_subscribers"	"Raportul tău de {s:tt_value} este mai bun decât cel al {s:tt_rank}% dintre toți abonații"
+
+
+		"playerstats_mapwinrate"		"Rapoartele de câștig pentru hărți"
+		"playerstats_mapwinrate_rounds"	"Runde"
+		"playerstats_mapwinrate_matches" "Meciuri"
+
+		"stat_total_score"				"Scor"
+		"stat_average_score"			"Scor/rundă"
+
+		"stat_total_kills"				"Ucideri"
+		"stat_average_kills"			"Ucideri/rundă"
+
+		"stat_total_deaths"				"Decese"
+	//	"stat_average_deaths"			"stat_average_deaths"		
+
+		"stat_total_health_removed"		"Răni"	
+		"stat_average_health_removed"	"MRPR"
+
+		"stat_average_kd"				"Ucideri/Decese"
+		"stat_average_kd_short"			"U/D"
+
+		"stat_average_hsp"				"stat_average_hsp"
+
+		"stat_total_2k"					"2U"
+		"stat_total_3k"					"3U"
+		"stat_total_4k"					"4U"
+
+		"stat_grenades"					"Grenade explozive"
+		"stat_total_grenade"			"Aruncări"
+		"stat_average_grenade"			"Succes"
+		"stat_grenades_desc"			"Procentajul grenadelor explozive care au rănit cel puțin un inamic"			
+
+		"stat_flash"					"Grenade de șoc"
+		"stat_total_flash"				"Aruncări"
+		"stat_average_flash"			"Succes"
+		"stat_flash_desc"				"Procentajul grenadelor de șoc care au orbit cel puțin un inamic"
+
+		"stat_entry"					"Prim-ucideri"
+		"stat_average_entrykd"			"PU/D"
+		"stat_total_entry_attempts"		"Total"
+		"stat_entry_desc"				"Raportul prim-ucideri/prim-decese"
+
+		"stat_total_wins"				"Victorii"
+		"stat_total_losses"				"Înfrângeri"
+		"stat_total_ties"				"Remize"
+
+		"stat_total_rounds_played"		"Runde"
+
+		"stat_1vx"						"1vX"
+
+		"stat_1v1"						"1v1"
+
+		"stat_average_1v1"				"Succes"				
+		"stat_total_1v1_attempts"		"Oportunități"		
+
+		"stat_1v2"						"1v2"
+
+		"stat_average_1v2"				"Succes"			
+		"stat_total_1v2_attempts"		"Oportunități"		
+
+		"num_matches"					"Meciuri jucate"
+
+		"playerstat_name_0"				"Scor"
+		"playerstat_name_0_long"		"Scor per rundă"
+		"playerstat_name_0_desc"		"Scor per rundă: {s:value}\nScor total: {d:total}"
+
+
+		"playerstat_name_1"				"Ucideri"
+		"playerstat_name_1_long"		"Ucideri per rundă"
+		"playerstat_name_1_desc"		"Media de ucideri per rundă: {s:value}\nTotalul uciderilor: {d:total}"
+
+		"playerstat_name_2"				"RĂNI"
+		"playerstat_name_2_long"		"Răni per rundă"
+		"playerstat_name_2_desc"		"Media rănilor per rundă: {s:value}\nTotalul rănilor: {d:total}"	
+
+		"playerstat_name_2.1"			"Răni"
+		"playerstat_name_2.5"			"MRPR"		
+
+		"playerstat_name_3"				"U/D"
+		"playerstat_name_3_long"		"Ucideri per deces"
+		"playerstat_name_3_desc"		"Raportul ucideri/decese: {s:value}"		
+
+		"playerstat_name_4"				"LC"
+		"playerstat_name_4_long"		"Raportul de ucideri cu lovituri în cap"
+		"playerstat_name_4_desc"		"Procentajul de ucideri care au fost realizate cu lovituri în cap: {s:value}\nTotalul de ucideri cu lovituri în cap : {d:total}"	
+
+		"playerstat_name_4.5"			"LC%"		
+
+		"playerstat_name_5"				"2U"
+		"playerstat_name_5_long"		"2 ucideri"
+		"playerstat_name_5_desc"		"Totalul rundelor cu 2 ucideri: {s:value}"	
+
+		"playerstat_name_6"				"3U"
+		"playerstat_name_6_long"		"3 ucideri"
+		"playerstat_name_6_desc"		"Totalul rundelor cu 3 ucideri: {s:value}"		
+
+		"playerstat_name_7"				"4U"
+		"playerstat_name_7_long"		"4 ucideri"
+		"playerstat_name_7_desc"		"Totalul rundelor cu 4 ucideri: {s:value}"
+
+		"playerstat_name_7.5"			"Ucideri multiple"
+	
+		"playerstat_name_8"				"GE"
+		"playerstat_name_8_long"		"Grenade explozive eficace"
+		"playerstat_name_8_desc"		"Procentajul grenadelor explozive aruncate care au rănit cel puțin un inamic: {s:value}\nTotalul grenadelor explozive aruncate care au rănit cel puțin un inamic: {d:total}"			
+
+		"playerstat_name_9"				"GȘ"
+		"playerstat_name_9_long"		"Grenade de șoc eficace"		
+		"playerstat_name_9_desc"		"Procentajul grenadelor de șoc aruncate care au orbit cel puțin un inamic: {s:value}\nTotalul grenadelor de șoc aruncate care au orbit cel puțin un inamic: {d:total}"
+
+		"playerstat_name_10"			"1v1"
+		"playerstat_name_10_long"		"Confruntări 1v1"
+		"playerstat_name_10_desc"		"Procentajul confruntărilor 1v1 câștigate: {s:value}\nTotalul confruntărilor 1v1 câștigate: {d:total}"	
+
+		"playerstat_name_11"			"1v2"
+		"playerstat_name_11_long"		"Confruntări 1v2"
+		"playerstat_name_11_desc"		"Procentajul confruntărilor 1v2 câștigate: {s:value}\nTotalul confruntărilor 1v2 câștigate: {d:total}"	
+
+		"playerstat_name_12"			"PU"
+		"playerstat_name_12_long"		"Prim-ucideri"
+		"playerstat_name_12_desc"		"Raportul de prim-ucideri/prim-decese: {s:value}\nTotalul de prim-ucideri : {d:total}"
+
+		"stats_graph_button_0"			"Scor/R"
+		"stats_graph_button_1"			"Ucideri/R"
+		"stats_graph_button_2"			"MRPR"
+		"stats_graph_button_3"			"U/D"
+		"stats_graph_button_4"			"LC%"
+
+		"ris_score"								"Scorul rundei"
+		"ris_t"									"T"
+		"ris_ct"								"CT"
+		"ris_team-title"						"Șansa de câștig a echipei tale"
+		"ris_wins"								"{s:ris_team}i câștigă!"
+
+		"ris_win"								"victorie"
+		"ris_loss"							"înfrângere"
+
+		"ris_hits"								"în {s:num_hits}"
+		
+		"prdr_health_removed"					"{d:health_removed} în {d:num_hits}"
+		"prdr_return_health_removed"				"{d:return_health_removed} în {d:return_num_hits}"
+
+		"season_stat_title_wins"		"VICTORII"
+        "season_stat_title_ties"		"REMIZE"
+        "season_stat_title_losses"		"ÎNFRÂNGERI"
+        "season_stat_title_rounds"		"RUNDE"
+        "season_stat_title_kills"		"UCIDERI"
+        "season_stat_title_headshots"	"LOVITURI ÎN CAP"
+		"season_stat_title_hs_percent"	"LC%"
+        "season_stat_title_assists"		"ASISTĂRI"
+        "season_stat_title_deaths"		"DECESE"
+        "season_stat_title_mvps"		"MVP-URI"
+        "season_stat_title_rounds_3k"	"3U"
+        "season_stat_title_rounds_4k"	"4U"
+        "season_stat_title_rounds_5k"	"5U"
+		"season_stat_title_kpr"			"UPR"
+		"season_stat_title_kd"			"U/D"
+		"season_stat_title_best_map"	"CEA MAI BUNĂ HARTĂ"
+		"season_stat_title_win_percent"	"% VICTORII"
+		"season_stat_title_matches_played"	"MECIURI"
+		"season_stat_title_achieved_week"	"CEA MAI MARE CLASIFICARE A FOST ATINSĂ ÎN SĂPTĂMÂNA"
+		"season_stat_value_kd"				"{s:kdratio}"
+		"season_stat_value_win_percent"		"{s:win-percent}%"
+		"season_stat_value_hs_percent"		"{s:hs-percent}%"
+		"season_section_rank"				"VÂRF"
+		"season_section_season_stats"		"STATISTICILE SEZONULUI"
+		"season_section_rank_history"		"ISTORICUL CLASIFICĂRII"
+		"season_section_rank_activity"		"MECIURI JUCATE"
+		"season_section_rank_map_stats"		"STATISTICILE HĂRȚILOR"
+		"season_section_rank_map_wins_graph"	"TOTALUL VICTORIILOR DE PE HĂRȚI"
+		"season_section_graph_x_axis_label_min"		"SĂPTĂMÂNA {d:week_min}"
+		"season_section_graph_x_axis_label_max"		"SĂPTĂMÂNA {d:week_max}"
+		"tooltip-no-map-stats"			"Statisticile tale nu sunt disponibile pentru harta aceasta."
+		"tooltip-season-rank-week-idx"		"SĂPTĂMÂNA {s:week-id}"
+		"tooltip-season-rank-week-name"		"{s:week-name}"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	WIN PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_winpanel_mvp_award"				"MVP"
+		"Panorama_winpanel_mvp_award_kills"			"MVP"
+		"Panorama_winpanel_mvp_award_ace"			"MVP pentru eliminarea întregii echipe adverse"
+		"Panorama_winpanel_mvp_award_bombplant"		"MVP pentru armarea bombei"
+		"Panorama_winpanel_mvp_award_bombdefuse"	"MVP pentru dezamorsarea bombei"
+		"Panorama_winpanel_mvp_award_rescue"		"MVP pentru salvarea unui ostatic"
+		"Panorama_winpanel_mvp_award_score"			"MVP pentru cel mai mare scor"
+		"Panorama_winpanel_mvp_award_inferno"		"MVP pentru răni semnificative cauzate de foc"
+		"Panorama_winpanel_mvp_award_blast"			"MVP pentru răni semnificative cauzate de explozibili"
+		"Panorama_winpanel_mvp_award_bombdefuse_clutch"	"MVP pentru dezamorsare ca ultim supraviețuitor"
+		"Panorama_winpanel_mvp_award_bombplant_clutch"	"MVP pentru armarea și protejarea bombei"
+		"Panorama_winpanel_mvp_award_gungame"		"MVP"
+		"Panorama_winpanel_mvp_winner"				"MVP"
+		"Panorama_winpanel_mvp_award_kills_three"	"MVP pentru cele mai multe ucideri (3U)"
+		"Panorama_winpanel_mvp_award_kills_four"	"MVP pentru cele mai multe ucideri (4U)"
+
+		"Panorama_WinPanel_rank_awarded_multi"	"Ai obținut {d:rank_increase} ranguri noi!"
+
+		"Panorama_WinPanel_rank_name_string"	"{s:current_best_cat} <font color='#CCCCCC'>({s:current_rank_cat})</font>"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	WATCH PANEL
+		//
+		///////////////////////////////////////////////////////////
+		
+		"WatchMenu_Watch"					"Urmărește"
+		"WatchMenu_Tournament_Versus"		"vs"
+		"WatchMenu_Outcome_Tied"			"Remiză"
+		"WatchMenu_Outcome_Abandon"			"A abandonat"
+		"WatchMenu_Outcome_Won"				"<img src='file://{images}/icons/ui/trophy.svg' width='15' height='15'/> Victorie"
+		"WatchMenu_Outcome_Lost"			"Înfrângere"
+		"WatchMenu_Expand_Match_Menu"		"Mai multe"
+		"WatchMenu_Get_Share_Link"			"Copiază codul de partajare al meciului"
+		"WatchMenu_Share_Link_Copied"		"Linkul a fost copiat în clipboard"
+		"WatchMenu_Download_Demo"			"Descarcă demoul pentru a-l viziona"
+		"WatchMenu_Watch_Live"				"Urmărește live"
+		"WatchMenu_Watch_Highlights"		"Urmărește momentele deosebite"
+		"WatchMenu_Watch_Lowlights"			"Urmărește punctele slabe"
+		"WatchMenu_Watch_Highlights_Player_Selected"	"Urmărește momentele deosebite ale lui {s:playerNameTitle}"
+		"WatchMenu_Watch_Lowlights_Player_Selected"	"Urmărește punctele slabe ale lui {s:playerNameTitle}"
+		"WatchMenu_Delete"					"Șterge fișierele demo locale"
+		"WatchMenu_Downloading"				"Se descarcă"
+		"WatchMenu_Info_Download_Failed"	"Descărcare incompletă"
+		"WatchMenu_Info_Download_Failed_Retry" "Încerci să descarci din nou fișierele demoului?"
+		"WatchMenu_Info_Download_Failed_Info" "Descărcarea nu a putut fi finalizată. Informațiile din tabela de scor sunt disponibile, dar nu poți urmări meciul."
+		"WatchMenu_Download_Disabled_Hint"	"Demoul meciului a expirat și nu mai este disponibil pentru descărcare."
+		"WatchMenu_Tournament_BulletPoint"	"<ul>
+<li>Urmărește meciurile și folosește abțibildurile echipelor pentru a face pronosticuri pentru faza grupelor și faza eliminatorie.</li>
+<li>De fiecare dată când oferi un pronostic corect, vei obține puncte care te aduc cu un pas mai aproape de un trofeu Pick'Em, trofeu care poate fi afișat deasupra avatarului tău CS:GO și pe profilul tău Steam.</li>
+<li>Poți face pronosticuri pentru faza grupelor înainte ca aceasta să înceapă.</li>
+<li>Poți face pronosticuri pentru faza eliminatorie înainte ca aceasta să înceapă.</li>
+</ul>"
+		"WatchMenu_Viewer"				"spectator"
+		"WatchMenu_Viewers"				"spectatori"
+		"WatchMenu_Viewers_dv:f"		"{spectatorCount, plural, one{{d:spectatorCount} spectator} few{{d:spectatorCount} spectatori} other{{d:spectatorCount} de spectatori}}"
+		"WatchMenu_FirstHalf"			"Prima repriză"
+		"WatchMenu_SecondHalf"			"A doua repriză"
+		"WatchMenu_Overtime"			"Prelungiri"
+		"MatchInfo_FirstRound"			"Prima rundă"
+		"MatchInfo_Halftime"			"Pauza meciului"
+		"MatchInfo_Overtime"			"Prelungiri"
+		"MatchInfo_RoundDataTitle"      "Performanțele lui {s:playerNameTitle} de-a lungul rundelor"
+		"MatchInfo_Date"				"{s:day} {s:month}"
+		
+		"MatchInfo_Date_Tournament_Month_Short_8"	"oct."		
+		"MatchInfo_Date_Tournament_Month_Final_Short_8"	"nov."
+		"MatchInfo_Date_Tournament_Month_Short_9"	"mart."
+		"MatchInfo_Date_Tournament_Month_Short_9_1"	"apr."
+		"MatchInfo_Date_Tournament_Month_Final_Short_9"	"apr."
+		"MatchInfo_Date_Tournament_Month_Short_10"	"iul."
+		"MatchInfo_Date_Tournament_Month_Short_10_1"	"iul."
+		"MatchInfo_Date_Tournament_Month_Final_Short_10"	"iul."
+		"MatchInfo_Date_Tournament_Month_Short_11"	"ian."
+		"MatchInfo_Date_Tournament_Month_Short_11_1"	"ian."
+		"MatchInfo_Date_Tournament_Month_Final_Short_11"	"ian."
+		"MatchInfo_Date_Tournament_Month_Short_12"	"iul."
+		"MatchInfo_Date_Tournament_Month_Short_12_1"	"iul."
+		"MatchInfo_Date_Tournament_Month_Final_Short_12"	"iul."
+		"WatchMenu_PickEm_ComingSoon"	"O prezentare a meciurilor Pick'Em și Fantasy din trecut va fi disponibilă în curând."
+		"WatchMenu_ViewerCount"	"{s:numberOfViewers} spectatori pe {s:channel}"
+		"Matchlist_Team_Selection"	"Toate echipele"
+
+
+		"pickem_timer_inactive"		"Pronosticurile nu sunt încă disponibile pentru această etapă"
+		"pickem_timer"				"Timpul rămas pentru a face pronosticuri: {s:time}"
+		"pickem_timer_upsell"		"Timpul rămas pentru a face pronosticuri: <b>{s:time}</b>. Cumpără un bilet pentru a lua parte la provocarea Pick'Em și a obține un jeton de suvenir."
+		"pickem_timer_locked"		"Pronosticurile sunt acum blocate"
+		"pickem_points_earned" 		"Puncte obținute"
+		"pickem_correct_pick" 		"Pronostic corect"
+		"pickem_points_needed_next_level" 	"Obține încă <b>{d:points}</b> {s:plural} pentru trofeul de <b>{s:level}</b>"
+		"pickem_points_result" 		"Ai obținut trofeul Pick'Em de <b>{s:result-level}</b>"
+		"pickem_points_result_bronze" "Ai obținut trofeul Pick'Em de <b>bronz</b>"
+		"pickem_points_result_silver" "Ai obținut trofeul Pick'Em de <b>argint</b>"
+		"pickem_points_result_gold" "Ai obținut trofeul Pick'Em de <b>aur</b>"
+		"pickem_point"				"punct"
+		"pickem_points"				"puncte"
+		"pickem_level_bronze"		"bronz"
+		"pickem_level_silver"		"argint"
+		"pickem_level_gold"			"aur"
+		"pickem_group_pick_worth"	"Fiecare pronostic corect îți va oferi <b>{d:points} {s:plural} </b>"
+		"pickem_pick_correct_points_earned"	"+ <b>{d:points}</b> {s:plural}"
+		"pickem_pick_drag_hint" 	"Trage echipa aici"
+		"pickem_pick_undefeated"	"<b>Alege</b> o echipă care va <b>avansa neînvinsă</b>"
+		"pickem_pick_eliminated"	"<b>Alege</b> o echipă care va fi <b>eliminată fără a câștiga vreun meci</b>"
+		"pickem_get_items" 			"Achiziționează abțibilduri"
+		"pickem_get_items_tooltip" 	"Ai nevoie de următoarele abțibilduri pentru a-ți actualiza pronosticurile: <br><br>"
+		"pickem_place_picks" 		"Actualizează pronosticurile"
+		"pickem_confirm_picks" 		"Confirmă pronosticurile"
+		"pickem_confirm_Warning"	"<b>Aceste abțibilduri vor fi folosite pentru pronosticurile tale Pick'Em.</b>\n\nAcestea vor rămâne în inventarul tău și vor putea fi aplicate pe orice armă pe care o deții sau pot fi date la schimb după terminarea acestei etape a evenimentului.\n\n<span class=\"premier-pickban__title__text-red\">\nEle nu vor putea fi folosite sau date la schimb până la sfârșitul etapei acestui eveniment, chiar dacă alegi să anulezi ulterior un pronostic.</span>\n"
+		"pickem_confirm_ClearAll"	"<b>Niciun abțibild nu va fi folosit pentru pronosticurile tale Pick'Em.</b>\n\nAbțibildurile care au fost folosite anterior vor rămâne în inventarul tău și vor putea fi aplicate pe orice armă pe care o deții sau pot fi date la schimb după terminarea acestei etape a evenimentului.\n"
+		"pickem_confirm_stickes_for_lock" 	"Abțibilduri pentru pronosticuri"
+		"pickem_confirm_not_owned" 		"<b>Aceste pronosticuri nu pot fi trimise.</b><span class=\"premier-pickban__title__text-red\">\nAi nevoie de abțibildurile corespunzătoare pentru a-ți actualiza pronosticurile Pick'Em.</span>"
+		"pickem_apply_emptyslots"		"Trebuie să realizezi toate pronosticurile pentru a-ți actualiza provocarea Pick'Em. Te rugăm să amplasezi alegerile în sloturile rămase libere și să apeși butonul „Actualizează pronosticurile” pentru confirmare."
+		"pickem_apply_timeout"			"Nu am putut să-ți actualizăm pronosticurile Pick'Em. Te rugăm să încerci din nou mai târziu."
+		"pickem_apply_drag_hint"	"Trage alegerea ta aici"
+		"pickem_apply_immediate" 		"Se actualizează alegerile tale..."
+		"pickem_save_all" 			"SALVEAZĂ TOATE PRONOSTICURILE"
+		"pickem_make_picks" 		"{d:user-picks} / {d:total-picks} PRONOSTICURI REALIZATE"
+		"pickem_drag_picks" 		"Trage echipele pentru a realiza pronosticuri"
+		"pickem_reveal_all_results" "Afișează clasamentul final"
+		"pickem_saved" 		"Pronosticuri salvate"
+		"pickem_teams_tbd" 	"Echipele urmează să fie determinate"
+		"pickem_challenge_section_title" "PROVOCAREA PICK'EM"
+		"pickem_items_section_title" "OBIECTE DE TURNEU"
+		"pickem_items_tab_opening_stage" "FAZA DE DESCHIDERE"
+		"pickem_items_tab_elim_stage" "FAZA ELIMINATORIE"
+		"pickem_items_tab_stage_i" "Faza I"
+		"pickem_items_tab_stage_ii" "Faza II"
+		"pickem_items_tab_stage_iii" "Faza III"
+		"pickem_items_tab_playoff_stage" "PLAY-OFFURI"
+		"pickem_teams_remove_all_tooltip" 	"Șterge toate pronosticurile"
+		"pickem_teams_fill_tooltip" 	"Completează aleatoriu pronosticurile rămase"
+		"pickem_versus"				"VS"
+		"pickem_submit_warning"		"Nu ai un {s:pass-name} activat"
+		"pickem_submit_warning_tooltip"		"Un {s:pass-name} activ este necesar pentru a progresa în cadrul provocărilor Pick'Em. Biletul trebuie activat înainte de blocarea fazei."
+		"pickem_submit_warning_popup_title"	"Salvează-ți pronosticurile fără un bilet activ"
+		"pickem_submit_warning_popup_desc"	"Un {s:pass-name} activ este necesar pentru a progresa în cadrul provocărilor Pick'Em. Biletul trebuie activat înainte de blocarea fazei."
+		"pickem_submit_warning_popup_action""Salvează-ți pronosticurile fără un bilet activ"
+		"pickem_submit_warning_popup_action2"	"Activează biletul și salvează pronosticurile"
+		"contextmenu_pickem_souvenir_title" 	"Selectează meciul pentru care dorești să primești un pachet cu suvenir"
+		"contextmenu_pickem_souvenir_no_result" 	"Revino după ce acest meci se încheie pentru a revendica un pachet cu suvenir"
+		"mainmenu_major_hub"	"CAMPIONATUL MAJOR\nCENTRU ȘI OBIECTE"
+		"mainmenu_major_hub_items"	"Abțibildurile sunt disponibile acum"
+		"mainmenu_major_hub_no_items" "CENTRUL CAMPIONATULUI MAJOR"
+
+		"pickem_swiss_group_00"									"0:0"
+		"pickem_swiss_group_10"									"1:0"
+		"pickem_swiss_group_11"									"1:1"
+		"pickem_swiss_group_12"									"1:2"
+		"pickem_swiss_group_20"									"2:0"
+		"pickem_swiss_group_21"									"2:1"
+		"pickem_swiss_group_22"									"2:2"
+		"pickem_swiss_group_01"									"0:1"
+		"pickem_swiss_group_02"									"0:2"
+
+		"pickem_swiss_group_30"									"Avansează cu 3:0"
+		"pickem_swiss_group_3x"									"Avansează cu\n3:1 3:2"
+		"pickem_swiss_group_13"									"Eliminate cu 1:3"
+		"pickem_swiss_group_23"									"Eliminate cu 2:3"
+		"pickem_swiss_group_03"									"Eliminate cu 0:3"
+
+
+
+
+
+
+
+		// WATCH EVENTS
+
+		"eventsched_lan"												"Eveniment LAN"
+		"eventsched_online"											"Eveniment online"
+		"eventsched_show_online"								"Arată evenimentele online"
+		"eventsched_date_format"								"{s:eventsched_date_day} {s:eventsched_date_month}"
+		"eventsched_versus"											"vs"
+		"eventsched_ongoing"										"În desfășurare"
+		"eventsched_tbd"												"urmează să fie determinată"
+		"eventsched_live"												"MECI ÎN DIRECT"
+		"eventsched_link"												"Mai multe detalii pe HLTV.org"
+		"eventsched_event_link"									"Detalii despre turneu pe HLTV.org"
+		"eventsched_match_link"									"Detalii despre meci pe HLTV.org"
+		"eventsched_team_link"									"Detalii despre echipă pe HLTV.org"	
+		"eventsched_no_streams"									"Nicio transmisiune disponibilă"
+		"eventsched_watch_on_gotv"								"Urmărește pe CSTV"
+		"eventsched_favorite_tt"								"{s:favorite_tooltip}"
+		"eventsched_favorite_tooltip_prime"			"Adăugarea unui meci la preferate va face ca\nmeciurile live ale acestuia să apară în meniul principal."
+		"eventsched_favorite_tooltip_not_prime" "Trebuie să ai statutul Prime pentru a adăuga la preferate un eveniment."
+		"eventsched_match_tooltip"							"{s:watchnotice_teamname_1} vs {s:watchnotice_teamname_2}"
+		"eventsched_stream_watch"								"{s:stream_site}"
+		"eventsched_hltv"												"Informații despre eveniment puse la dispoziție de HLTV.org"
+		"eventsched_country"										"{s:eventsched_country}"
+		"eventsched_no_live_matches"						"În prezent nu există niciun meci în direct."
+		"eventsched_featured"										"Acesta este evenimentul preferat al comunității pentru luna {s:eventsched_fave_month}."
+		"eventsched_official"										"Acesta este un eveniment asociat unui campionat major de Counter-Strike."
+
+		"WatchNotice_Reason_Official"						"Acest eveniment este afișat deoarece este un eveniment asociat unui campionat major de Counter-Strike."
+		"WatchNotice_Reason_Personal"						"Evenimentul acesta este afișat deoarece l-ai adăugat la preferate."
+		"WatchNotice_Reason_Community"					"Acest eveniment este evidențiat deoarece este favoritul comunității pentru luna {s:watchnotice_fave_month}."
+		"WatchNotice_Watch"											"Urmărește"
+
+	
+		// Used with formatText.AbbreviateNumber()
+		///////////////////////////////////////////
+		"NumberAbbreviation_E3"			"{s:abbreviated_number}k"
+		
+		// Note to translators: Add as needed. Code will use only available strings. example:
+		// "NumberAbbreviation_E4"		"{s:abbreviated_number}万"	
+
+		"NumberAbbreviation_E6"			"{s:abbreviated_number} mil."
+		"NumberAbbreviation_E9"			"{s:abbreviated_number} mld."
+		"NumberAbbreviation_E12"		"{s:abbreviated_number} trl."
+
+		// Used with formatText.SplitAbbreviateNumber()
+		///////////////////////////////////////////
+		"NumberAbbreviation_suffix_E3"			"m"
+		
+		// Note to translators: Add as needed. Code will use only available strings. example:
+		// "NumberAbbreviation_suffix_E4"		"万"	
+
+		"NumberAbbreviation_suffix_E6"			"mil."
+		"NumberAbbreviation_suffix_E9"			"mld."
+		"NumberAbbreviation_suffix_E12"			"trl."
+
+
+		"digitpanel_digits"			 " 0123456789,.-+?"
+		"digitpanel_digits_premier" " 1234567890,?"
+
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	OVERWATCH
+		//
+		///////////////////////////////////////////////////////////
+		
+		"Panorama_Overwatch_Downloading"		"Se descarcă fișierele cazului..."
+		"Panorama_Overwatch_Review"				"Examinarea unui caz necesită câteva minute."
+		"Panorama_Overwatch_Welcome"			"Counter-Strike - Consiliul Overwatch"
+		"Panorama_Overwatch_Tooltip_p1"			"În calitate de investigator Overwatch, vei descărca și vei examina reluări ale meciurilor de Counter-Strike 2 de pe serverele oficiale pentru a identifica orice comportament suspect. După ce vei termina de vizionat reluarea, va trebui să-ți exprimi verdictul cu privire la comportamentul jucătorului în cauză."
+		"Panorama_Overwatch_Tooltip_sh1"		"Pasul 1"
+		"Panorama_Overwatch_Tooltip_p2"			"Apasă butonul DESCARCĂ DOVEZILE din partea dreaptă jos pentru a descărca un caz Overwatch."
+		"Panorama_Overwatch_Tooltip_sh2"		"Pasul 2"
+		"Panorama_Overwatch_Tooltip_p3"			"Apasă butonul EXAMINEAZĂ DOVEZILE pentru a urmări reluarea cu perspectiva jucătorului, așa cum a fost înregistrată de către server."
+		"Panorama_Overwatch_Tooltip_sh3"		"Pasul 3"
+		"Panorama_Overwatch_Tooltip_p4"			"După ce ai examinat cazul, alege o rezoluție pentru fiecare întrebare și apasă butonul TRIMITE VERDICTUL."
+		"Panorama_Overwatch_Major_Disruption"	"Perturbare majoră"
+		"Panorama_Overwatch_Minor_Disruption"	"Perturbare minoră"
+		"Panorama_Overwatch_Res_Griefing"		"Șicanare"
+		"Panorama_Overwatch_Res_AimHacking"		"Ajutor extern pentru țintire"
+		"Panorama_Overwatch_Res_WallHacking"	"Ajutor extern pentru vizibilitate"
+		"Panorama_Overwatch_Res_SpeedHacking"	"Alt ajutor extern"
+		
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	ROSETTA PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_CSGO_Spray_EnableMouse"			"<b>[{g:csgo_key:spray_mouse_enable}]</b> Activează cursorul"
+		"Panorama_CSGO_Rosetta_Item_Name"			"<font color=\"{s:item_color}\">{s:item_name}</font>"
+		"Panorama_CSGO_Rosetta_Item_Count"			"Aplicări rămase: {d:item_count}"
+		"Panorama_Attrib_SpraysHint"					"{s:bind_attack} pentru a aplica graffitiul"
+		"Panorama_Attrib_SpraysHint_Auto"			"Eliberează <b>{s:bind_spray_menu}</b> pentru a aplica graffitiul"
+
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	RETICLE PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_HUD_weaponid_swap"			"<font color=\"#6a6156\">[{s:bind_use}] schimbă cu</font> <font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+		"Panorama_HUD_weaponid_pickup"			"<font color=\"#6a6156\">[{s:bind_use}] ia</font> <font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+		"Panorama_HUD_weaponid_lookat"			"<font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+		"Panorama_HUD_weaponid_holdtopickup"	"<font color=\"#6a6156\">Ține apăsat [{s:bind_use}] pentru a prelua</font> <font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+
+		"Panorama_HUD_playerid_sameteam"			"<font color='#6E7D5C'>Prieten: {g:player_name:html:player_slot} Viață: {d:player_health}%</font>"
+		"Panorama_HUD_playerid_diffteam"			"<font color='#CC0000'>Inamic: {g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_playerid_specteam"			"<font color='#6E7D5C'>{g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_playerid_noteam"			"<font color='#FFCC00'>{g:player_name:html:player_slot} Viață:{d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_shadow"		"{g:player_name:player_slot}"
+
+		"Panorama_HUD_playerid_survival_enemy"				"<font color='#CC0000'>Inamic</font>"
+		"Panorama_HUD_playerid_survival_hunter_target"		"<font color='#e58816'>Țintă de mare interes</font>"
+
+		"Panorama_HUD_botid_request_bomb"		"<font color='#e5da25'>[{s:bind_use}] ia bomba</font>"
+
+		"Panorama_HUD_hostageid_nh"				"<font color='#e5da25'>Ostatic</font>"
+		"Panorama_HUD_hostagename_nh"			"<font color='#e5da25'>{g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_hostageid_nh_use_lead"		"<font color='#e5da25'>[{s:bind_use}] ia ostaticul</font>"
+		"Panorama_HUD_hostageid_nh_following"	"<font color='#e5da25'>Ostatic (escortat de {g:player_name:html:player_slot})</font>"
+
+		"Panorama_HUD_hostageid"					"<font color='#e5da25'>Ostatic</font><font color='#dcdac0'> {d:player_health}%</font>"
+		"Panorama_HUD_hostageid_use_lead"		"<font color='#e5da25'>[{s:bind_use}] ia ostaticul </font><font color='#dcdac0'> {d:player_health}%</font>"
+		"Panorama_HUD_hostageid_following"		"<font color='#e5da25'>Ostatic (escortat de {s:player_name})</font><font color='#dcdac0'> {d:player_health}%</font>"
+
+
+		"Panorama_HUD_playerid_overhead_health"			"{d:player_health}%"
+		"Panorama_HUD_playerid_overhead_money"			"{d:r:player_money}$"
+
+		"Panorama_HUD_playerid_overhead_survival"					"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#00c3e1'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_lowhealth"			"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#d82429'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_money"				"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#7ebc50'> {d:r:player_money}$</font>"
+		"Panorama_HUD_playerid_overhead_survival_grey"				"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#dddddd'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_lowhealth_grey"	"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#d82429'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_money_grey"		"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#7ebc50'> {d:r:player_money}$</font>"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	DEATH PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_SurvivalEndOfMatch_ShowStats"			"[{s:bind_jump}] afișează statisticile meciului"
+		"Panorama_Death_Cancel_Start_Replay"			"[{s:bind_jump}] sari peste"
+		"Panorama_Death_Cancel_Replay" 				"[{s:bind_jump}] anulează reluarea"
+		"Panorama_Death_Snapshot"						"[{s:bind_jpeg}] salvează acest moment"
+		"Panorama_HUD_Spectate_Navigation_Replay_Death"	"<font color='#ddbb22'><b>[{s:bind_reload}] reluare mortală</b></font>"
+
+		"Panorama_DeathPanel_Killer1_YourWeapon"			"te-a ucis cu arma ta - {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_KillerWeapon"			"te-a ucis cu arma sa - {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_OthersWeapon"			"te-a ucis cu arma lui <font color='#adadad'>{s:other_player_name}</font> - {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_Weapon"				"te-a ucis cu {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_Weapon_Plural" 		"te-a ucis cu {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_Weapon_CustomString" 	"{s:weapon_name}"
+
+		"Panorama_DeathPanel_DamageTaken:f"					"{hits_taken, plural, one{<font color='#A0A0A0'>Răni suferite:  </font><font color='#FFFFFF'><b>{d:damage_taken}</b></font> <font color='#A0A0A0'></font> <font color='#FFFFFF'><b>într-o lovitură </b></font>} few{<font color='#A0A0A0'>Răni suferite:  </font><font color='#FFFFFF'><b>{d:damage_taken}</b></font> <font color='#A0A0A0'> în</font> <font color='#FFFFFF'><b>{d:hits_taken} lovituri </b></font>} other{<font color='#A0A0A0'>Răni suferite:  </font><font color='#FFFFFF'><b>{d:damage_taken}</b></font> <font color='#A0A0A0'> în</font> <font color='#FFFFFF'><b>{d:hits_taken} de lovituri </b></font>}}"
+		"Panorama_DeathPanel_DamageGiven:f"					"{hits_given, plural, one{<font color='#A0A0A0'>Răni provocate:  </font><font color='#FFFFFF'><b>{d:damage_given}</b></font> <font color='#A0A0A0'></font> <font color='#FFFFFF'><b>într-o lovitură </b></font>} few{<font color='#A0A0A0'>Răni provocate:  </font><font color='#FFFFFF'><b>{d:damage_given}</b></font> <font color='#A0A0A0'> în</font> <font color='#FFFFFF'><b>{d:hits_given} lovituri </b></font>} other{<font color='#A0A0A0'>Răni provocate:  </font><font color='#FFFFFF'><b>{d:damage_given}</b></font> <font color='#A0A0A0'> în</font> <font color='#FFFFFF'><b>{d:hits_given} de lovituri </b></font>}}"
+
+		/////////////////////////////////////////////////////////////////
+		//
+		//      CHATWHEEL OPTIONS
+		//
+		////////////////////////////////////////////////////////////
+
+		"Chatwheel_segment_top"	"Sus"
+		"Chatwheel_segment_topright"	"Dreapta sus"
+		"Chatwheel_segment_right"	"Dreapta"
+		"Chatwheel_segment_bottomright"	"Dreapta jos"
+		"Chatwheel_segment_bottom"	"Jos"
+		"Chatwheel_segment_bottomleft"	"Stânga jos"
+		"Chatwheel_segment_left"	"Stânga"
+		"Chatwheel_segment_topleft"	"Stânga sus"
+
+		"Chatwheel_ping_on_cooldown"  "Așteaptă puțin înainte de a trimite noi indicații."
+
+		"Chatwheel_plant"	"Armează bomba"
+		"Chatwheel_sitea"	"Indică zona țintă A"
+		"Chatwheel_siteb"	"Indică zona țintă B"
+
+		"Chatwheel_section_move"	"Deplasare"
+		"Chatwheel_sticktogether"	"Rămâneți împreună"
+		"Chatwheel_followme"	"Urmați-mă"
+		"Chatwheel_followingyou"	"Te urmez"
+		"Chatwheel_spreadout"	"Împrăștiați-vă"
+		"Chatwheel_fallback"	"Retragerea"
+		"Chatwheel_gogogo"	"Hai, hai, hai!"
+		"Chatwheel_onmyway"	"Sunt pe drum"
+		"Chatwheel_gethostage"	"Verificați ostaticul"
+		"Chatwheel_quiet"	"Am nevoie de liniște"
+
+		"Chatwheel_section_prepare"	"Pregătire"
+		"Chatwheel_requestecoround"	"Ar trebui să salvăm echipamentul"
+		"Chatwheel_requestspend"	"Ar trebui să cumpărăm"
+		"Chatwheel_requestleader"	"Cine preia conducerea?"
+		"Chatwheel_requestweapon"	"Am nevoie de o armă"
+		"Chatwheel_requestplan"		"Care-i planul?"
+		"Chatwheel_aplan"	"Indică zona țintă A"
+		"Chatwheel_bplan"	"Indică zona țintă B"
+		"Chatwheel_midplan"	"Indică zona din mijloc"
+
+		"Chatwheel_section_grenades"	"Grenade"
+		"Chatwheel_decoy"	"Avem nevoie de momeli"
+		"Chatwheel_smoke"	"Avem nevoie de grenade fumigene"
+		"Chatwheel_grenade"	"Avem nevoie de grenade explozive"
+		"Chatwheel_fire"	"Am nevoie de molotovuri"
+		"Chatwheel_flashbang"	"Avem nevoie de grenade de șoc"
+		
+		"Chatwheel_section_defend"	"Apărare"
+		"Chatwheel_coverme"	"Acoperiți-mă"
+		"Chatwheel_coveringyou"	"Te acopăr"
+		"Chatwheel_help"	"Ajutor"
+		"Chatwheel_needbackup"	"Am nevoie de întăriri"
+		"Chatwheel_holdposition"	"Rămâneți aici"
+        "Chatwheel_rotatetome"	"Veniți aici"
+
+		"Chatwheel_section_bomb"	"Starea bombei"
+		"Chatwheel_guardingbomb"	"Păzesc bomba"
+		"Chatwheel_bombsiteclear"	"Zonă țintă liberă"
+		"Chatwheel_droppedbomb"	"Bomba a căzut"
+		"Chatwheel_bombpickedup"	"Bomba a fost luată"
+		"Chatwheel_ifixbomb"	"Voi de/activa bomba"
+		"Chatwheel_youfixbomb"	"Dez/activează bomba"
+		
+		"Chatwheel_bombat"	"Indică bomba" 
+
+		"Chatwheel_section_enemystatus"	"Starea inamicilor"
+		"Chatwheel_heardnoise"	"Am auzit zgomote" 
+		"Chatwheel_enemyspotted"	"Inamic reperat"
+		"Chatwheel_sectorclear"	"Zonă liberă"
+		"Chatwheel_sniperspotted"	"Lunetist reperat"
+		"Chatwheel_bombcarrierspotted"	"Persoană cu bombă reperată"
+		"Chatwheel_threeleft"	"Trei rămași"
+		"Chatwheel_twoleft"	"Doi rămași"
+		"Chatwheel_oneleft"	"Unul rămas"
+		"Chatwheel_oneenemyhere"  "Un inamic aici"
+		"Chatwheel_multipleenemieshere"  "Mai mulți inamici aici"
+		"Chatwheel_ihavethebomb"  "Am luat bomba"
+
+		"Chatwheel_section_enemykilled"	"Inamic ucis"
+		"Chatwheel_gotheadshot"	"Am ucis cu o lovitură în cap"
+		"Chatwheel_ikilledsniper"	"Am ucis lunetistul"
+		"Chatwheel_wekilledsniper"	"Noi am ucis lunetistul"
+		"Chatwheel_sawheadshot"	"Ți-am văzut lovitura în cap"
+
+		"Chatwheel_section_combatstatus"	"Starea confruntării"
+		"Chatwheel_attacking"	"Atac"
+		"Chatwheel_inposition"	"Pe poziție"
+		"Chatwheel_covering"	"Te acopăr"
+		"Chatwheel_pinned"	"Nu mă pot mișca"
+		"Chatwheel_incombat"	"În luptă"
+		"Chatwheel_friendlyfire"	"Rănire coechipieri"
+		"Chatwheel_lastunitalive"	"Ultima unitate în viață"
+
+		"Chatwheel_section_responses"	"Răspunsuri"
+		"Chatwheel_wewon"	"Am câștigat"
+		"Chatwheel_welost"	"Am pierdut"
+		"Chatwheel_wearewinning"	"Câștigăm"
+		"Chatwheel_lostround"	"Am pierdut runda asta"
+		"Chatwheel_thanks"	"Mersi!"
+		"Chatwheel_sorry"	"Scuze"
+		"Chatwheel_compliment"	"Frumos!"
+		"Chatwheel_affirmative"	"Da"
+		"Chatwheel_negative"	"Nu"
+		"Chatwheel_peptalk"	"Încurajare"
+		"Chatwheel_cheer"	"Urare"
+
+		"Chatwheel_plantingata"	"Armez bomba în A"
+		"Chatwheel_plantingatb"	"Armez bomba în B"
+		"Chatwheel_plantedata"	"Am armat bomba în A"
+		"Chatwheel_plantedatb"	"Am armat bomba în B"
+		"Chatwheel_planted"	"Am armat bomba"
+
+		"Chatwheel_seehostagestaken"	"Ostaticii sunt preluați"
+		"Chatwheel_requestgethostages"	"Preluați ostaticii"
+
+		"Chatwheel_guardinga"	"Păzesc în A"
+		"Chatwheel_guardingb"	"Păzesc în B"
+		
+
+		
+		"Chatwheel_section_command"	"Comenzi"
+		"Chatwheel_section_report"	"Raportare"
+
+		"Chatwheel_description" "Rotița de chat îți oferă acces rapid la o listă personalizabilă de comenzi radio utile."
+
+		////
+		//
+		// Volatile Laptop
+		//
+		////
+
+		// ---------------------------------------------------------------------------------------------
+		"laptop_window_collection_title"			"PUNCTE DE EXPERIENȚĂ PENTRU CATALOGUL COLECȚIEI"
+		"laptop_window_expiration_title"			"EXPIRARE"
+		"laptop_window_seal_title"					"STARE"
+		"laptop_window_messages_title"				"CHAT – TRAFICANT DE ARME"
+		"laptop_window_currentoffer_title"			"OFERTA ACTUALĂ"
+		"laptop_app_title"							"<span class=\"laptop-app-title-prefix\">UP-</span>Link"
+		"laptop_app_version"						"v 1.1.0.2000"
+
+		"dealer_offer_attachment_title"							"{s:item-name}"
+		"dealer_offer_attachment_wear"							"{s:item-rarity}"
+		"dealer_offer_attachment_remaining_title"				"OFERTA #{d:offer-total}"
+		"dealer_offer_attachment_remaining"						"Oferta #{d:offer-total}"
+		"dealer_offer_received_count"							"<b>{s:offer-count}</b> ofertă"
+		"dealer_offer_attachment_final_title"					"OFERTA FINALĂ"
+		"dealer_offer_attachment_final"							"{s:offer-count} și ultima ofertă"
+		"dealer_offer_attachment_status"						"Ofertă – {s:offer-status}"
+		"dealer_offer_attachment_status-active"					"<b><span class=\"offer-active\">activă</span></b>"
+		"dealer_offer_attachment_status-price"					"<b><span class=\"offer-active\">{s:offer-price}</span></b>"
+		"dealer_offer_attachment_status-declined-price"			"{s:offer-price}"
+		"dealer_offer_attachment_status-declined"				"<span class=\"offer-declined\">{s:offer-count} ofertă – refuzată</span>"
+
+		"user_btn_purchase_desc_purchase"		"Menține apăsat pentru a achiziționa acest obiect. După achiziție, terminalul va fi înlăturat."
+		"user_btn_purchase_desc_continue"		"Menține apăsat pentru a refuza această ofertă și a solicita una nouă."
+		"user_btn_purchase_desc_end"		"Refuză oferta finală și înlătură terminalul."
+		"user_btn_purchase_title"			"{s:offer-count} ofertă"
+		"user_btn_purchase_final_title"		"<b>Oferta finală</b>"
+		"user_btn_decline_desc"				"Refuză oferta aceasta și solicită una nouă."
+		"user_btn_accept"		"Accept oferta la <b>{s:price}</b>"
+		"user_btn_accept_final"	"Accept oferta finală la <b>{s:price}</b>"
+		"user_btn_accept_0"		"S-a făcut. Sunt de acord cu <b>{s:price}</b>."
+		"user_btn_accept_1"		"Accept – <b>{s:price}</b>"
+		"user_btn_accept_2"		"Batem palma pentru <b>{s:price}</b>"
+		"user_btn_accept_3"		"O să accept pentru <b>{s:price}</b>"
+		"user_btn_accept_4"		"Nu pot refuza pentru <b>{s:price}</b>"
+		"user_btn_accept_5"		"OK — <b>{s:price}</b>"
+		"user_btn_next"			"Refuză oferta"
+		"user_btn_next_0"		"Tentant, dar nu"
+		"user_btn_next_1"		"Nu merită"
+		"user_btn_next_2"		"Nu mă interesează"
+		"user_btn_next_3"		"Pas"
+		"user_btn_next_4"		"Nu batem palma"
+		"user_btn_next_5"		"Mersi, dar nu sunt interesat"
+		"user_btn_next_6"		"Nu cred"
+		"user_btn_next_7"		"Poate altă dată"
+		"user_btn_pause"		"Întrerupe înțelegerea"
+		"user_btn_end"			"Refuză oferta finală"
+
+		"user_message_limit_0"		"Pot merge până la <b>{s:limit-setting}</b>."
+		"user_message_limit_1"		"Ce zici de un buget de <b>{s:limit-setting}</b>?"
+		"user_message_limit_2"		"Un buget de <b>{s:limit-setting}</b> îmi convine."
+		"user_message_limit_3"		"Un buget de <b>{s:limit-setting}</b> este în regulă."
+		"user_message_limit_unlimited_0"	"<b>Fără limită</b>, vreau să vad totul."
+		"user_message_limit_unlimited_1"	"<b>Cec în alb</b>. Nu-ți face griji despre bugetul meu."
+		"user_message_limit_unlimited_2"	"Sunt aici pentru a cumpăra. <b>Arată-mi totul</b>."
+		"user_message_limit_unlimited_3"	"Dacă trage, mă interesează.<b>Nicio limită</b>."
+		"user_message_limit_unlimited_4"	"Cerul este limita."
+		"offer_limit_setting"		"Bugetul pentru oferte: {s:limit}"
+		"offer_limit_setting_interface"		"Bugetul pentru oferte: {s:limit} <img src='file://{images}/icons/ui/expand.svg' class='expand-icon'/>"
+
+		"dealer_offer_Unknown"							"-"
+		"dealer_offer_1"								"Prima"
+		"dealer_offer_2"								"A doua"
+		"dealer_offer_3"								"A treia"
+		"dealer_offer_4"								"A patra"
+		"dealer_offer_5"								"A cincea"
+		"dealer_offer_6"								"A șasea"
+		"dealer_offer_7"								"A șaptea"
+		"dealer_offer_8"								"A opta"
+		"dealer_offer_9"								"A noua"
+		"dealer_offer_10"								"A zecea"
+
+		"current_offer_tooltip"		"Oferta actuală pentru tine a traficantului de arme."
+		"declined_offer_tooltip"	"Ofertă refuzată."
+		"future_offer_tooltip"		"Ofertă nedezvăluită încă."
+		"laptop_expiration_tooltip"		"Timpul rămas până la expirarea acestui terminal Uplink și a ofertelor sale."
+		"laptop_max_offer_tooltip"		"Setează-ți bugetul pentru oferte. Vei primi numai oferte care se încadrează în buget. Poți modifica oricând valoarea bugetului."
+		"collection_xp_tooltip"			"Câștigă puncte de experiență pentru vizualizarea ofertelor din această colecție. Deschide pentru a vedea progresul și revendica punctele de experiență."
+		"terminal_offer_limit_tooltip"		"Actualizează-ți bugetul pentru oferte. Traficantul de arme va veni doar cu oferte care se încadrează în buget."
+		"popup_lootlist_title"			"PE pentru catalogul colecției"
+		"popup_lootlist_desc"			"Câștigă puncte de experiență pentru vizualizarea ofertelor din această colecție."
+
+		"popup_lootlist_progress:f"      "Ai văzut {total, plural, one{singura ofertă} few{{d:seen}/{d:total} oferte} other{{d:seen}/{d:total} de oferte}}"
+		"popup_lootlist_claim_xp"		"Obține bonusul de PE"
+		"popup_lootlist_claim_ww"		"Se revendică PE..."
+		"popup_lootlist_claim_ok"		"✔ PE revendicate"
+		"popup_vpn_status_connected"	"Stare: conectat la o rețea securizată"
+		"popup_vpn_status_disconnected"	"Stare: deconectat"
+		"popup_signal_full" 			"Semnal plin"
+		"popup_signal_ok" 				"Semnal puternic"
+		"popup_offer_limit_desc"		"Actualizează-ți bugetul pentru fiecare dintre ofertele viitoare."
+		"laptop_battery_tooltip" 		"Baterie: {d:percent}%"
+		"laptop_original_seal_tooltip" 	"Orice obiect achiziționat prin intermediul acestui terminal Uplink va veni cu un certificat de proprietar inițial, care este valabil cât timp ești proprietarul acestuia."
+		"laptop_zoom_tooltip" 			"Folosește rotița mouse-ului pentru zoom."
+		"laptop_pan_tooltip" 			"Menține apăsată tasta „Shift” și trage pentru a deplasa camera."
+		"laptop_pricing_tooltip"		"Prețurile sunt globale și ajustate automat în funcție de cererea pentru fiecare obiect din această colecție."
+
+		"dealer_message_set_offer_limit_0"		"Înainte de toate, care este bugetul tău maxim?"
+		"dealer_message_set_offer_limit_1"		"Să ne punem de acord.<!--.25--> Ce buget ai?"
+		"dealer_message_set_offer_limit_2"		"Înainte de a începe...<!--.25--> Despre ce buget vorbim? Cât vrei să cheltuiești?"
+		
+		"dealer_message_start_0"  	"Totul se negociază cu clientul.<!--.25-->Am tot ce-ți trebuie. Fără hârțogăraie."
+		"dealer_message_start_1"  	"Am un transport de marfă de pe piața gri, fără acte.<!--.25-->Nu-ți face griji, au uitat toți de armele astea. Sunt scoase din circulație de ani întregi și nu le mai caută nimeni.<!--.25-->În plus, dacă te interesează, încă mai trag în direcția în care le îndrepți."
+		"dealer_message_start_2"  	"Vameșii din Ahradan au pus azi-dimineață mâna pe transportul meu. Am încercat să o dreg cu o poveste jalnică despre faptul că transport echipament medical vital pentru niște muribunzi... <!--.25-->N-au fost impresionați de poveste, însă servieta plină cu bani a fost totuși pe placul lor.<!--.25-->Ce ai zice să aruncăm o privire la aparatele astea de dializă înainte de a le livra orfanilor."
+		"dealer_message_start_3"  	"Tocmai ce a avut loc o schimbare de regim într-una dintre regiuni.<!--.25-->În timp ce armata era ocupată cu această chestiune, m-am strecurat în depozitele ei pentru a scotoci.<!--.25-->Am doar marfă fantomă. Aruncă o privire."
+		"dealer_message_start_4"  	"Toată marfa de astăzi este curată.<!--.25-->Nimeni nu va știi că nu ești primul care pune mâna pe ele."
+		"dealer_message_start_5"  	"Marfă fantomă, neștanțată, gata de utilizare.<!--.25-->Probabil că un tribunal militar ar folosi-o ca probă.<!--.25-->Amândoi știm totuși că sunt niște adevărate capodopere."
+		"dealer_message_start_6"  	"Toată marfa asta este dintr-un lot de piese exotice eliberat de la o unitate ceremonială.<!--.25-->Au fost folosite mult la mărșăluit, dar n-au tras niciun foc."
+		"dealer_message_start_7"  	"Ceilalți clienți vor întotdeauna să afle de unde provine marfa. Urăsc când fac asta.<!--.25-->Tot ce trebuie să te intereseze este dacă e cea mai bună marfă de pe piață.<!--.25-->Ghici ce: chiar este."
+		"dealer_message_start_8"  	"Acordul de pace din Drosvik. Ador pacea.<!--.25-->Asta pentru că știu un general plin de datorii și un depozit de arme care adună praf.<!--.25-->Vreau să spun că...<!--.25-->Ador pacea și pentru că e bună, evident. Toate acele vieți nevinovate și...<!--.25-->Ce tot bolborosesc aici, doar nu te interesează."
+		"dealer_message_start_9"  	"Lotul ăsta e plin de piese exotice sustrase din piața gri.<!--.25-->Calibre nu tocmai normale, deci nu sunt pentru amatori. O să le iubești."
+		"dealer_message_start_10"  	"Ce rușine.<!--.25-->Cred că am etichetat greșit o ladă în avizul meu de expediție.<!--.25-->Bine, poate câteva zeci de lăzi.<!--.25-->Ce-ar fi să mă ajuți să scap de ele înainte ca autoritățile portuare să le inspecteze."
+		"dealer_message_start_11"  	"A trebuit să mituiesc un inspector din Drosvik pentru asta. Idiotul începuse să vorbească de ordine de confiscare.<!--.25-->Noroc că am niște băieți în Drosvik care știu să aibă grijă de guralivi. Inspectorul e acum cu gura încleștată.<!--.25-->Din fericire, marfa asta vorbește de la sine."
+		"dealer_message_start_12"  	"A trebuit să-i mituiesc aproape pe toți din Ahradan pentru a trece granița cu acest transport.<!--.25-->I-am plătit pe toți în ahri. Ai idee câte tone de bancnote trebuie să transferi dintr-o parte în alta pentru a oferi atenții într-o monedă devalorizată? Tipii ăia ar trebui să facă ceva în privința economiei lor."
+		"dealer_message_start_13"	"Am un intermediar fantomă care are nevoie să transfere rapid marfa asta.<!--.25-->Asta e tot ce a spus: „Rapid”.<!--.25-->Și: „foarte”.<!--.25-->Iată cum ar trebui să vezi lucrurile: dacă nu te interesează de ce vrea să scape de marfă, vei fi foarte fericit."
+		"dealer_message_start_14"	"Azi am o serie de modele clasice.<!--.25-->Sunt extravagante? Nu. Dar te poți baza pe ele.<!--.25-->Până și nepoții tăi vor ajunge să se bucure de ele."
+		"dealer_message_start_15"	"O miliție rebelă a eliberat acest echipament din armurăria liderului Glorios.<!--.25-->Cred că aceasta a eliberat și trunchiul liderului Glorios de membrele și capul său.<!--.25-->(Totuși, nu vând astfel de lucruri, dar te pot pune în legătură cu un tip dacă ești interesat.)"
+		"dealer_message_start_16"	"Șeful poliției din frontieră din Drosvik a amenințat că va confisca acest transport.<!--.25-->Probabil că nu a aflat că nu practic mita în Drosvik. Cu atât mai puțin atunci când serviciile tipilor plini de mușchi din zonă sunt atât de ieftine. Drosvik este cunoscut drept capitala mondială a kickboxingului.<!--.25-->În orice caz, înlocuitorul său a pierdut ordinul de confiscare, dar nu și-a pierdut și brațele."
+		"dealer_message_start_17"	"Toate astea provin din colecția privată a unui miliardar.<!--.25-->Ei bine, a unui fost miliardar. Acum că este anchetat, încerc să-l ajut să lichideze câteva active problematice.<!--.25-->Hai să fim sinceri, aceste piese mai bine ajung în mâinile tale decât să fie agățate pe peretele unui iaht."
+		"dealer_message_start_18"	"Transportul ăsta a fost oprit de un inspector portuar pentru nereguli.<!--.25-->Știi care e partea amuzantă? O ladă cu carabine cântărește la fel de mult ca o ladă cu „piese de tractor” atunci când adaugi exact zece mii de dolari pe cântar.<!--.25-->Hai să aruncăm o privire la piesele astea de tractor."
+		"dealer_message_start_19"	"Marfa pe care ți-am adus-o azi a supraviețuit unei lovituri de stat.<!--.25-->Piesele sunt puțin zgâriate, dar funcționează perfect. Ceea ce contează e ce se află la interior, nu-i așa?"
+		"dealer_message_start_20"	"O republică mică și nenorocită tocmai și-a spânzurat președintele.<!--.25-->Norocul meu că am moștenit lanțul său de aprovizionare."
+		"dealer_message_start_21"	"Numește-o cum vrei: o eroare de procesare, o discrepanță în declarații sau o simplă greșeală onestă.<!--.25-->Cu toții mai greșim, iar eu doar încerc să-mi ajut un prieten să nu-și piardă postul de sergent de aprovizionare.<!--.25-->Echipamentul ăsta trebuie să se facă nevăzut."
+		"dealer_message_start_22"	"Un șef de birou vamal credea că poate face presiuni asupra mea cu acest transport. Am avut grijă ca sindicatele portuare să facă și mai multă presiune.<!--.25-->E amuzant cât de repede se pot ocupa de formalitățile vamale atunci când sunt cu toții ocupați să caute o persoană dispărută.<!--.25-->Sper că-l vor găsi pe bietul tip. Nu cred că știe să înoate."
+		"dealer_message_start_23"	"Un polițist de frontieră din Ahradan a declarat că actele nu erau conforme. Așa că i-am oferit un teanc de ahri și deodată au devenit conforme<!--.25-->Nici n-am idee cât mai înseamnă 10.000 de ahri în banii de azi. Probabil vreo șase dolari.<!--.25-->Așadar, te interesează să vezi niște arme fantomă?"
+		"dealer_message_start_24"	"Am avut un general de război interesat de marfa asta, dar idiotul s-a găsit să moară într-o explozie cauzată de un atac cu drone.<!--.25-->Sfatul meu e să stai mereu cu ferestrele închise. În orice caz, moartea sa, norocul tău."
+		"dealer_message_start_25"	"Schimbarea de regim din Drosvik. Nici n-am idee cum s-a întâmplat, dar se pare că un depozit plin cu lăzi cu arme s-a pierdut în toată învălmășeala de acolo.<!--.25-->Și, cumva, m-am trezit cu toate astea. Ce nebunie, nu?<!--.25-->Dar asta nu e tot. Totodată, s-ar putea să mă scap de ele, așa că ți le ofer ție. Chiar acum."
+		"dealer_message_start_26"	"Am o ladă cu marfă etichetată greșit pe care aș vrea să o vezi. <!--.25-->Nu te lăsa păcălit de „echipamentul agricol”. Te vei atinge de pământ doar dacă nu vei trage tu primul."
+		"dealer_message_start_27"	"Urăsc să am de-a face cu insurgenții. E doar un mod politicos de a-i numi pe civili, care e un mod politicos de a spune amatori nenorociți.<!--.25-->În orice caz, acești cumpărători au încetat să mai comunice, așa că le voi oferi unor profesioniști șansa de a pune mâna pe acest echipament."
+		"dealer_message_start_28"	"În sud, în zona perpetuu fierbinte, tocmai a avut loc prăbușirea bianuală a parlamentului.<!--.25--Mai multe armurării locale s-au deschis precum niște piñata."
+		"dealer_message_start_29"	"Inspectorul autorității portuare a semnalat acest transport ca fiind unul neautorizat vinerea trecută.<!--.25-->Până luni, fiica sa avea să primească suficienți bani pentru a-și începe studiile la Stamwick. Din nou, acesta a fost doar un alt transport de echipamente agricole.<!--.25-->Ce pot spune, educația e importantă. Hai să aruncăm o privire la câteva echipamente agricole."
+
+		"dealer_message_resume_0"  	"<!--1-->Te-ai întors. Bun. Oferta e încă valabilă."
+		"dealer_message_resume_1"  	"<!--1-->Ai nevoie de puțin timp să te gândești? E în regulă."
+		"dealer_message_resume_2"  	"<!--1-->M-am gândit că te vei întoarce."
+		"dealer_message_resume_3"  	"<!--1-->Să continuăm de unde am rămas."
+		"dealer_message_resume_4"  	"<!--1-->Ești gata de afaceri?"
+		"dealer_message_resume_5"  	"<!--1-->Bun, te-ai întors. Trebuie să mă scap de asta, altfel niște tipi nu tocmai plăcuți vor începe să pună întrebări."
+		"dealer_message_resume_6"  	"<!--1-->Te-ai întors. Unde rămăsesem?"
+
+		"dealer_message_first_offer_0"	"<!--.5-->Dacă ești interesat, haide să facem o înțelegere."
+		"dealer_message_first_offer_1"	"<!--.5-->Doar ca să știi, sunt și alții interesați de echipamentul ăsta."
+		"dealer_message_first_offer_2"	"<!--.5-->Dacă te bagi, nu mai e loc de întors. Altfel, spune-mi, căci am o mulțime de alți cumpărători interesați care așteaptă la coadă."
+		"dealer_message_first_offer_3"	"<!--.5-->Asta-i pentru tine, dacă ești interesat. Altfel, e problema ta."
+		"dealer_message_first_offer_4"	"<!--.5-->Dacă ești interesat, hai să batem palma. Nu pot păstra oferta asta le nesfârșit."
+		"dealer_message_first_offer_5"	"<!--.5-->Asta-i oferta. Ești interesat sau nu?"
+		"dealer_message_first_offer_6"	"<!--.5-->Ești interesat sau nu? Nu mă deranjează dacă nu te interesează. Am și alți cumpărători."
+		"dealer_message_first_offer_7"	"<!--.5-->Batem palma sau nu?"
+		"dealer_message_first_offer_8"	"<!--.5-->N-am toată ziua la dispoziție."
+		"dealer_message_first_offer_9"	"<!--.5-->Avem o înțelegere sau nu?"	
+		"dealer_message_first_offer_10"	"<!--.5-->Nu trebuie să te conving să cumperi. Chestia asta se vinde de la sine. Te bagi sau nu?"		
+
+		"dealer_message_next_offer_0"	"<!--1-->Bun, se pare că nu ți-a plăcut oferta anterioară. Ce zici de asta?"
+		"dealer_message_next_offer_1"	"<!--1-->Pierderea ta. Din fericire, m-ai prins în toane bune. Ce zici de asta?"
+		"dealer_message_next_offer_2"	"<!--1-->Nu ești interesat? Ei bine, asta-i greșeala ta. Aruncă o privire la asta."
+		"dealer_message_next_offer_3"	"<!--1-->Piesa asta vorbește de la sine. Dacă nu ești interesat, voi găsi pe altcineva.<!--.5-->Dacă tot ești aici, asta pare să fie pe gustul tău."
+		"dealer_message_next_offer_4"	"<!--1-->Înțeleg. Nu e genul tău. Cred că s-ar putea ca asta să-ți placă mai mult."
+		"dealer_message_next_offer_5"	"<!--1-->Aveam un presentiment că nu te interesează. Din fericire, aveam această frumusețe pregătită."
+		"dealer_message_next_offer_6"	"<!--1-->Da, mi-am dat seama. Ce zici de asta? Cred că asta e mai pe gustul tău."
+		"dealer_message_next_offer_7"	"<!--1-->O sa regreți că n-ai acceptat ultima ofertă, dar nu-i nicio problemă. Ce zici de asta?"
+		"dealer_message_next_offer_8"	"<!--1-->Te cunosc prea bine. Mi-am dat seama că nu te interesează. Ce zici totuși de asta?"
+		"dealer_message_next_offer_9"	"<!--1-->Bun, te interesează lucrurile mai serioase. Pregătește-te pentru următoarea ofertă."
+		"dealer_message_next_offer_10"	"<!--1-->Înțeleg, nici mie nu-mi plăcea cum arată. Privește totuși aici."		
+		"dealer_message_next_offer_11"   "<!--1-->Aia nu e tocmai pe gustul tuturor. Următoarea e totuși mai pe placul oamenilor."
+		"dealer_message_next_offer_12"   "<!--1-->Nu duc lipsă de inventar pentru aia. Aruncă-ți totuși ochii la această frumusețe."
+		"dealer_message_next_offer_13"   "<!--1-->Știi ce? Mă așteptam să spui asta. Să trecem la următoarea."
+		"dealer_message_next_offer_14"   "<!--1-->Ești mai greu de mulțumit decât credeam. Asta te încântă?"
+		"dealer_message_next_offer_15"   "<!--1-->Nu mă deranjează. Doar n-am făcut eu arma. Iată altă variantă."
+		"dealer_message_next_offer_16"   "<!--1-->Nici eu n-aș fi luat-o. Asta, totuși, e altceva."
+		"dealer_message_next_offer_17"   "<!--1-->Nu te interesează? În regulă. Să trecem la următoarea."
+		"dealer_message_next_offer_18"   "<!--1-->Observ că ai standarde ridicate. N-am nicio problemă cu asta. Următoarea îți va depăși așteptările."
+		"dealer_message_next_offer_19"   "<!--1-->Nu vreau să-ți irosesc banii, iar tu nu vrei să-mi irosești timpul. Privește aici."
+		"dealer_message_next_offer_20"   "<!--1-->Hei, apreciez sinceritatea. Hai să trecem la următoarea și să nu mai pierdem vremea."
+		"dealer_message_next_offer_21"   "<!--1-->În regulă, nu te atrăgea. Partea bună e că am mai multe arme."
+		"dealer_message_next_offer_22"   "<!--1-->Nicio problemă. Am o mulțime de stocuri. Să trecem la următoarea."
+		"dealer_message_next_offer_23"   "<!--1-->Aș fi putut jura că urma să batem palma. Poate oferta asta e pe placul tău."
+		"dealer_message_next_offer_24"   "<!--1-->Am priceput. Nu e ce trebuie. Fiecare cu gusturile lui. Asta pare totuși să fie ceea ce cauți."
+		"dealer_message_next_offer_25"   "<!--1-->Nu pare să-ți atragă atenția ofertele mele. Să vedem ce părere ai despre asta."
+		"dealer_message_next_offer_26"   "<!--1-->OK, gata cu prostiile. Îți garantez absolut că o să-ți placă următoarea. Probabil."
+		"dealer_message_next_offer_27"   "<!--1-->Nu ți-a plăcut? Atunci va merge la armurăria mea privată. Ce zici de asta?"
+		"dealer_message_next_offer_28"   "<!--1-->Ai gusturi bune. Să vedem dacă următoarea e pe placul tău."
+		"dealer_message_next_offer_29"   "<!--1-->Bun, aia era prima din lotul pe care-l am. Ia să vedem ce mai am pe aici."
+		"dealer_message_next_offer_30"   "<!--1-->Uită de ultima. Asta e cea pe care voiam să o vezi."
+		"dealer_message_next_offer_31"   "<!--1-->Asta pare să aibă numele tău. Nu la propriu, doar e o armă fantomă."
+		"dealer_message_next_offer_32"   "<!--1-->Hei, înțeleg că nu le poți cumpăra pe toate. Poate aștepți ceva anume. Cum ar fi asta."
+		"dealer_message_next_offer_33"   "<!--1-->Doar te testam. Uite marfa adevărată."
+		"dealer_message_next_offer_34"   "<!--1-->Da, bănuiam eu. Dar următoarea totuși. M-am gândit la tine când am văzut-o."
+		"dealer_message_next_offer_35"   "<!--1-->De înțeles. Am păstrat asta pentru tine."
+		"dealer_message_next_offer_36"   "<!--1-->Nu e treaba mea să te fac să-ți placă. Încerc doar să transfer echipamentul. Să trecem mai departe."
+		"dealer_message_next_offer_37"   "<!--1-->Nicio problemă. Cred că următoarea o să fie mai pe placul tău."
+		"dealer_message_next_offer_38"   "<!--1-->Isteață alegere. Știam că n-o să te avânți. Hai să-ți arăt ceva mai bun."
+		"dealer_message_next_offer_39"   "<!--1-->Nu-i o problemă. Nici eu n-aș fi cumpărat-o. Asta, pe de altă parte..."
+		"dealer_message_next_offer_40"   "<!--1-->Vrei să mă duc să-ți aduc marfă de pe raftul cu lucruri premium, nu-i așa? Bine, s-a făcut."
+
+		"dealer_message_last_offer_0"	"<!--0-->Bun, asta-i oferta finală. Dacă-ți convine bine, dacă nu, iar bine."
+		"dealer_message_last_offer_1"	"<!--0-->Asta să știi că e oferta mea finală."
+		"dealer_message_last_offer_2"	"<!--0-->Oferta finală. Tu decizi, dar hai, nu-mi mai irosi timpul."
+		"dealer_message_last_offer_3"	"<!--0-->Ultima ofertă.<!--1-->Dacă nu te interesează, mă retrag. Chestia asta VA exploda."
+		"dealer_message_last_offer_4"	"<!--0-->Ultima ofertă. Nu mă milogesc."
+		"dealer_message_last_offer_5"	"<!--0-->Bine, asta-i cea mai bună ofertă a mea."
+		"dealer_message_last_offer_6"	"<!--0-->Bine, uite. Batem palma sau nu?"		
+		"dealer_message_last_offer_7"	"<!--0-->Ultima și cea mai bună ofertă."
+		"dealer_message_last_offer_8"	"<!--0-->Nici ca mine, nici ca tine. Asta-i cea mai bună ofertă a mea."
+		"dealer_message_last_offer_9"	"<!--0-->Nu vei găsi o ofertă mai bună ca asta."	
+
+		"dealer_message_end_0"			"<!--0-->În regulă, ai avut șansa ta. Dacă ții în mână terminalul Uplink care urmează să explodeze, l-aș arunca chiar acum în locul tău. În trei... doi..."
+		"dealer_message_end_1"			"<!--0-->Ei bine, acum ai la ce să te gândești data viitoare când vei fi împușcat și vei dori să folosești arma pe care tocmai ai refuzat-o."
+		"dealer_message_end_2"			"<!--0-->OK, n-o să te implor să o iei. Sper cu nu te așteptai să te alegi din asta cu un terminal Uplink gratuit."
+		"dealer_message_end_3"			"<!--0-->Cum dorești. Decizia ta, înmormântarea ta, probabil.<!--1-->Îndepărtează-te de terminalul Uplink care urmează să explodeze, dacă poți."
+
+		"dealer_message_timerexpired_0"		"<!--.1-->Bine, nu mai contează."
+		"dealer_message_timerexpired_1"		"<!--.1-->Uită de asta.<!--.5-->S-a dus ocazia."
+		"dealer_message_timerexpired_2"		"<!--.1-->Gata cu negociatul.<!--.5-->Am și altceva de făcut."
+		"dealer_message_timerexpired_3"		"<!--.1-->Bine, o să caut un client care va și cumpăra.<!--.5-->Am încheiat discuția."
+		"dealer_message_timerexpired_4"		"<!--.1-->Cum crezi.<!--.5-->Pe mai târziu."
+		"dealer_message_timerexpired_5"		"<!--.1-->Tic-tac.<!--.5-->A expirat timpul."
+		"dealer_message_timerexpired_6"		"<!--.1-->Gata cu negociatul.<!--.5-->Aș fi putut transfera marfa asta de zece ori până acum."
+		"dealer_message_timerexpired_7"		"<!--.1-->Și eu care credeam că o sa te ajut să scapi de câțiva oameni.<!--.5-->Se pare că doar mi-ai irosit timpul."
+		"dealer_message_timerexpired_8"		"<!--.1-->Înțelegerea pică."	
+		"dealer_message_timerexpired_9"		"<!--.1-->S-a scurs timpul."
+		"dealer_message_timerexpired_10"	"<!--.1-->Bun, m-am plictisit deja. Am încheiat orice discuție."		
+
+		"dealer_message_open_check_out_0"		"<!--.5-->Asta era făcută pentru tine. De asta m-am și gândit la tine prima dată. Hai să batem palma."
+		"dealer_message_open_check_out_1"		"<!--.5-->O decizie excelentă. Mă voi ocupa de împachetare și transport."
+		"dealer_message_open_check_out_2"		"<!--.5-->N-o să regreți decizia. Deși pariez că cineva o va face."
+		"dealer_message_open_check_out_3"		"<!--.5-->Știam că mă pot baza pe tine. Hai să încheiem înțelegerea."
+		"dealer_message_open_check_out_4"		"<!--.5-->Perfect. Să o facem."		
+		"dealer_message_open_check_out_5"		"<!--.5-->Bună alegere."	
+		"dealer_message_open_check_out_6"		"<!--.5-->Cea mai bună alegere pe care ai făcut-o vreodată. Hai să încheiem înțelegerea."		
+		"dealer_message_open_check_out_7"		"<!--.5-->Bun. Hai să încheiem."
+
+		"dealer_message_txn_xld_bailout_0"		"<!--.5-->Nu e grabă. Știi unde mă poți găsi."
+		"dealer_message_txn_xld_bailout_1"		"<!--.5-->Nu plec nicăieri."
+		"dealer_message_txn_xld_bailout_2"		"<!--.5-->O să păstrez oferta asta valabilă."
+		"dealer_message_txn_xld_bailout_3"		"<!--.5-->Te vei întoarce. Du-te și rumegă puțin oferta."
+
+		"dealer_message_purchase_finalizing_0"	"Se finalizează plata..."
+		"dealer_message_purchase_confirm_0"		"<!--.5-->Am bătut palma."
+
+		"dealer_message_stattrack_0"			"Cu contor StatTrak™ instalat, desigur."
+		"dealer_message_stattrack_1"			"Frumusețea asta vine și cu StatTrak™, desigur."
+		"dealer_message_stattrack_2"			"Echipată cu StatTrak™. Nu mai trebuie să-ți bați capul cu numărătoarea."
+		"dealer_message_stattrack_3"			"Vine cu StatTrak™. Doar apeși trăgaciul, iar el se ocupă de calcule."
+		"dealer_message_stattrack_4"			"StatTrak™. Se aseamănă cu o tabelă de scor. Pentru un sport în care ucizi oameni."
+		"dealer_message_stattrack_6"			"Include StatTrak™, pentru profesionistul căruia îi plac crimele ȘI statisticile."
+		"dealer_message_stattrack_7"			"Echipată cu StatTrak™, normal."
+		"dealer_message_factory_new_0"			"Proaspăt scoasă din cutie. Crede-mă, încă miroase a nou."
+		"dealer_message_factory_new_1"			"Nouă. Are mirosul specific unei arme noi."
+		"dealer_message_factory_new_2"			"Zero gloanțe trase. Vei fi primul care va avea ocazia să apese trăgaciul."
+		"dealer_message_factory_new_3"			"Direct de pe linia de producție, fără urme de uzură. Exact cum îți place."
+		"dealer_message_factory_new_4"			"Asta-i curată și impecabilă. Fără zgârieturi sau istoric. Încă."
+		"dealer_message_factory_new_5"			"Nouă, fără focuri trase. Este imaculată."
+		"dealer_message_covert_0"				"Ghici ce? Tocmai ai dat lovitura. Asta nu doar că e rară, ci și clandestină."
+		"dealer_message_covert_1"				"Sunt în domeniu de un deceniu și e prima dată când văd în fața ochilor așa ceva.<!--.5-->Ai gusturi bune și mult noroc."
+		"dealer_message_covert_2"				"Cunosc cumpărători care ar fi în stare să-și vândă mama unui gulag pentru o armă ca asta. Bravo."
+		"dealer_message_covert_3"				"Uau. Acum m-ai pus pe gânduri. Ia-o până nu regret această tranzacție."
+		"dealer_message_covert_4"				"E o armă clandestină. Ai ocazia să te întâlnești cu așa ceva pe piața liberă o dată în viață, dacă ai noroc.<!--.5-->Se pare că tocmai ai avut noroc."
+		"dealer_message_covert_5"				"Asta e o bijuterie de armă. Dar știi asta. Am avut un cumpărător interesat de ea acum un an, dar s-a răzgândit. Pierderea lui e câștigul tău."
+		"dealer_message_covert_6"				"Extrem de rare. Una ca asta e greu de găsit, iar acum ai ocazia să fie a ta."
+		"dealer_message_covert_7"				"Iată părerea cuiva care lucrează în domeniu: o armă ca asta e foarte greu de găsit."
+		"dealer_message_covert_8"				"Sper că apreciezi înțelegerea pe care tocmai ai făcut-o. E secretă. Tocmai ai cumpărat un unicorn."
+		"dealer_message_covert_9"				"Ai face bine să o iei din fața mea și să o muți în arsenalul tău înainte să regret. E cea mai rară piesă dintre toate."
+		"dealer_message_classified_0"				"Secretă. Fantomă și fără documente. E neînregistrată."
+		"dealer_message_classified_1"				"Secretă. Fără documente. O armă fantomă fără urmă."
+		"dealer_message_classified_2"				"Secretă. De pe piața neagră, fără documente. Ceea ce vezi acum nici măcar nu există, tehnic vorbind."
+		"dealer_message_classified_3"				"Doar pentru tranzacții private. Secretă. Sper să o folosești cu folos."
+		"dealer_message_classified_4"				"Secretă. Neștanțată, fără documente."
+		"dealer_message_classified_5"				"Secretă. Disponibilă doar prin canale clandestine. Scoasă din gestiune și fără urme. N-am văzut-o niciodată."
+		"dealer_message_restricted_0"				"Restricționată. Componente mai bune și o asamblare mai precisă. Clar superioară față de versiunea standard."
+		"dealer_message_restricted_1"				"E restricționată dintr-un motiv. E mult prea performantă pentru civili."
+		"dealer_message_restricted_2"				"Restricționată, desigur. Categoria B. Noua ta armă preferată."
+		"dealer_message_battle_scarred_0"		"E puțin uzată, dar încă trage drept."
+		"dealer_message_battle_scarred_1"		"Prezintă puțină uzură, dar asta înseamnă că a avut parte de ceva acțiune și că funcționează bine."
+		"dealer_message_battle_scarred_2"		"Găsită pe câmpul de luptă. Nu e străină de focuri și știi că te poți baza pe ea."
+		"dealer_message_battle_scarred_3"		"Nu aș spune că a fost uzată pe câmpul de luptă. Mai degrabă a fost testată în luptă."
+		"dealer_message_battle_scarred_4"		"Asta a avut parte de ceva acțiune. Doar câteva semne vizibile de uzură, dar încă te poți baza pe ea."
+		"dealer_message_minimal_wear_0"			"Prezintă semne ușoare de uzură. Are una, două zgârieturi maxim, dar își face treaba."
+		"dealer_message_minimal_wear_1"			"Stare impecabilă. Ei bine, aproape impecabilă. Uzură minimă."
+		"dealer_message_minimal_wear_2"			"Uzură minimă, doar niște mici zgârieturi. Nimic de care să-ți faci griji."
+		"dealer_message_minimal_wear_3"			"Arma asta se prezintă cu uzură minimă. Ușoare urme de uzură, dar nu vei regreta dacă o vei adăuga în arsenalul tău."
+		"dealer_message_minimal_wear_4"			"A participat în câteva lupte deja, n-am să te mint. Are deja experiență pe câmpul de luptă."
+		"dealer_message_usp-s_0"				"Nu va fi gălăgios. Își va face treaba frumos și în liniște."
+		"dealer_message_usp-s_1"				"Silențios și discret. Uneori trebuie să rămână doar un mic secret."
+		"dealer_message_usp-s_2"				"Îi vor simți prezența, dar nu-l vor auzi."
+		"dealer_message_usp-s_3"				"Acesta e mai silențios."
+		"dealer_message_item_desc_0"			"<!--.25-->Arma asta are un mesaj atașat:<!--.25-->{s:flavor-text}<!--.25-->Ce-o fi însemnând și asta."
+		"dealer_message_item_desc_1"			"<!--.25-->Arma asta a venit cu un scurt mesaj:<!--.25-->{s:flavor-text}"
+
+		"dealer_message_addition_stattrak_0"	"<!--.25-->...și cu StatTrak™."
+		"dealer_message_addition_stattrak_1"	"<!--.25-->modul StatTrak™ preinstalat."
+		"dealer_message_addition_stattrak_2"	"<!--.25-->Cu StatTrak™ pentru a contoriza tot haosul pe care urmează să-l faci."
+		"dealer_message_addition_stattrak_3"	"<!--.25-->Are și contor StatTrak™."
+		"dealer_message_addition_stattrak_4"	"<!--.25-->Are și contor StatTrak™, astfel încât să poți ține evidența suferinței pe care o provoci."
+
+		"dealer_message_addition_factory_new_0"	"<!--.25-->Și e nouă. N-a tras niciun foc."
+		"dealer_message_addition_factory_new_1"	"<!--.25-->Și e nouă. Impecabilă."
+		"dealer_message_addition_factory_new_2"	"<!--.25-->Direct din depozit. Este nouă."
+		"dealer_message_addition_factory_new_3"	"<!--.25-->Arma asta e nouă. N-a tras niciun foc."
+		
+		"dealer_message_limit_first_time_0"		"Bine de știut, îți voi arăta doar oferte de până la {s:limit}.<!--.25--> Hai să vedem de ce ai nevoie."
+		"dealer_message_limit_first_time_2"		"Doar oferte sub {s:limit}. Voi ține cont de asta.<!--.25--> Timpul trece, așa că să-i dăm bătaie."
+		"dealer_message_limit_first_time_3"		"Notat. Actualizat.<!--.25--> Să-i dăm drumul."
+		"dealer_message_limit_first_time_unlimited_0"		"Buget nelimitat. Excelent. De acum înainte, îți voi arăta întregul catalog actual.<!--.25--> Timpul trece, așa că să-i dăm bătaie."
+		"dealer_message_limit_first_time_unlimited_1"		"Înțeles. Buget nelimitat. Trecem la chestii serioase.<!--.25--> Hai să vedem de ce ai nevoie."
+
+		"dealer_message_limit_0"				"Bine de știut. Îți voi arăta doar oferte de până la {s:limit}."
+		"dealer_message_limit_1"				"Doar oferte sub {s:limit}. Voi ține cont de asta."
+		"dealer_message_limit_2"				"Ajustez parametrii. Doar oferte până la {s:limit}."
+		"dealer_message_limit_3"				"Oferte până la {s:limit}. Notat. Actualizat."
+		"dealer_message_limit_4"				"Voi alege doar ce se încadrează în bugetul tău de: {s:limit}."
+		"dealer_message_limit_5"				"În regulă, am setat noul buget de: {s:limit}"
+		"dealer_message_limit_6"				"Am înțeles. Resetez filtrul pentru oferte. Noul buget: {s:limit}."
+		"dealer_message_limit_unlimited_0"		"Buget nelimitat. Excelent. De acum înainte, îți voi arăta întregul catalog actual."
+		"dealer_message_limit_unlimited_1"		"Am înțeles. Buget nelimitat. Dacă găsesc ceva exotic, am să ți-l arăt negreșit."
+		"dealer_message_limit_unlimited_2"		"Sună perfect. Dacă apare ceva care corespunde criteriilor tale, nu voi ezita să ți-l arăt."
+		"dealer_message_limit_unlimited_3"		"Înțeles. Buget nelimitat. Trecem la chestii serioase."
+
+		"system_dealer_left_chat_0"				"Traficantul a părăsit chatul."
+		"system_dealer_join_chat_0"				"{s:collection} – ofertele traficantului de arme.<!--1.25-->Traficantul s-a conectat."
+		"system_user_reject_offer_0"			"{s:user-name} a refuzat oferta."
+
+		"system_user_updated_offer_limit_0"			"Bugetul a fost actualizat la: {s:limit}. Poți actualiza bugetul în orice moment."
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//Retakes
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		"GameUI_Retake_DefendA"					"Apără zona țintă A!"
+		"GameUI_Retake_DefendB"					"Apără zona țintă B!"
+		"GameUI_Retake_RetakeA"					"Reia controlul asupra țintei A!"
+		"GameUI_Retake_RetakeB"					"Reia controlul asupra țintei B!"
+		"GameUI_Retake_Notice_MvpCardAvailable"	"Felicitări! Un cartonaș MVP bonus va fi disponibil runda următoare!"
+		"GameUI_Retake_Card_CardsPreview"		"Previzualizare cartonașe"
+		"GameUI_Retake_Card_AvailableCard"		"Selectează acest echipament"
+		"GameUI_Retake_Card_AvailableCards"		"Selectează un echipament"
+
+		"GameUI_Retake_Card_Bonus"				"Bonus"
+		"GameUI_Retake_Card_Enemy"				"Echipament inamic"
+		"GameUI_Retake_Card_Mvp"				"MVP"
+
+		"GameUI_Retake_Card_4v3"				"4v3"
+		"GameUI_Retake_Card_FlashOut"			"Atenție la grenada de șoc!"
+		"GameUI_Retake_Card_HideAndPeek"		"De-a v-ați ascunselea"
+		"GameUI_Retake_Card_TakeFive"			"Pauză"
+		"GameUI_Retake_Card_OnlyTakesOne"		"Unul și bun"
+		"GameUI_Retake_Card_SneakyBeakyLike"	"Pe vârfuri"
+		"GameUI_Retake_Card_UmpInSmoke"			"UMP în fum"
+		"GameUI_Retake_Card_FunNGun"			"Distracție cu arme"
+		"GameUI_Retake_Card_Sharpshooter"		"Trăgător de elită"
+		"GameUI_Retake_Card_BurstBullpup"		"Bullpup și rafale"
+		"GameUI_Retake_Card_LightEmUp"			"Privire sclipitoare"
+		"GameUI_Retake_Card_Kobe"				"Kobe!"
+		"GameUI_Retake_Card_1g"					"1g"
+		"GameUI_Retake_Card_DisappearingAct"	"Dispariție"
+		"GameUI_Retake_Card_EyesOnTarget"		"Ochi pe țintă"
+		"GameUI_Retake_Card_BehindEnemyLines"	"În spatele liniilor inamice"
+		"GameUI_Retake_Card_4BadGuysLeft"		"Cvartetul răufăcător"
+		"GameUI_Retake_Card_LookAway"			"Uită-te în altă parte!"
+		"GameUI_Retake_Card_WhenThereIsSmoke"	"Unde-i fum..."
+		"GameUI_Retake_Card_BlindFire"			"La ghici"
+		"GameUI_Retake_Card_QueOta"				"Qué ota?"
+		"GameUI_Retake_Card_SmokeScreen"		"Cortină de fum"
+		"GameUI_Retake_Card_TecTecBoom"			"TEC, TEC, BUM!"
+		"GameUI_Retake_Card_BackInAFlash"		"Înapoi cât ai clipi"
+		"GameUI_Retake_Card_AllIn"				"Totul sau nimic"
+		"GameUI_Retake_Card_BoomBox"			"Asurzitor"
+		"GameUI_Retake_Card_SetThemFree"		"Eliberarea"
+		"GameUI_Retake_Card_OlReliable"			"Vechi și fiabil"
+		"GameUI_Retake_Card_SmokeShow"			"Cortină de fum"
+		"GameUI_Retake_Card_HotShot"			"Foc de voie"
+		"GameUI_Retake_Card_EyeSpy"				"Ochiul din umbră"
+		"GameUI_Retake_Card_TheAWPortunity"		"AWPortunistul"
+		"GameUI_Retake_Card_FindersKeepers"		"Ce-am găsit al meu să fie"
+
+		"Hud_Retake_BombSite"					"{s:hud-retake-bombsite}"
+		
+		"Hud_Money" "{d:r:hud-money-amount}$"
+		"Hud_Money_Signed" "{s:sign}{d:r:hud-money-delta}$"
+
+		"Propcounter_money" "%s1$" //e.g. used on danger zone security door
+
+		"csgo_player_left_game"					" %s1 a părăsit meciul (%s2)."
+
+		"LoadoutLockedPopupTitle"				"Echipament activ blocat"
+		"LoadoutLockedPopupText"				"Echipamentul activ nu poate fi modificat în timpul meciurilor competitive."
+
+		"Workshop_item_title" "Instrument pentru încărcarea obiectelor"
+		"Workshop_item_error_title" "Introdu un titlu pentru obiectul tău. Acesta ar trebui să includă numele jucătorului sau alte informații de identificare."
+		"Workshop_item_error_image" "Selectează o imagine validă în format .jpeg sau .png, mai mică de {s:max_size}, care să aibă o lățime/înălțime minimă de {d:min_height}."
+		"Workshop_item_ready" "Obiectul este gata pentru a fi încărcat"
+		"SFUI_Go_To_Mic_Enable_key" "Accesează asocierea de tastă pentru microfon"
+		"SFUI_Go_To_Console_Key_Binding" "Accesează asocierea de tastă pentru consolă"
+
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//Steam Video
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		"SteamVideo_Player_Kill_Title"					"Ai ucis pe %s1"
+		"SteamVideo_Player_Kill_Description"			"cu %s1"
+
+		"SteamVideo_Player_Double_Kill_Title"			"Ucidere dublă"
+		"SteamVideo_Player_Multi_Kill_Title"			"Multiucidere"
+		
+		"SteamVideo_Player_Death_Title"					"Ai fost ucis de %s1"
+		"SteamVideo_Player_Death_Description"			"cu %s1"
+		"SteamVideo_Player_Death_Description_Plural"	"cu %s1"
+		"SteamVideo_Player_Killed_Self_Title"			"Te-ai sinucis"
+		
+		"SteamVideo_Bomb_Planted_Title"					"Bomba a fost armată"
+		"SteamVideo_Bomb_Planted"						"%s1 a armat bomba"
+		"SteamVideo_Bomb_Planted_LocalPlayer"			"Ai armat bomba"
+		
+		"SteamVideo_Bomb_Defused_Title"					"Bomba a fost dezamorsată"
+		"SteamVideo_Bomb_Defused"						"%s1 a dezamorsat bomba"
+		"SteamVideo_Bomb_Defused_LocalPlayer"			"Ai dezamorsat bomba"
+		
+		"SteamVideo_Bomb_Exploded_Title"				"Bomba a explodat"
+		
+		"SteamVideo_Round_Number_Label"					"Runda %s1"
+		"SteamVideo_Start_Of_Round_Title"				"Începutul rundei %s1"
+
+		"SteamVideo_MatchScore"							"Scor"
+		"SteamVideo_KDA"								"U/D/A"
+
+		// ---------------------------------------------------------------------------------------------
+		// WEEKLY MISSIONS
+		// ---------------------------------------------------------------------------------------------
+		"weekly_mission_title"							"MISIUNE"
+		"weekly_mission_title_complete"					"MISIUNE FINALIZATĂ"
+		"weekly_mission_expiration"						"Expiră în <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_expiration_pausemenu"			"Expiră în <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_next_mission"					"Următoarea misiune începe în <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_progress"						"<b>{d:mission-progress}</b>/{d:mission-points}"
+		"CS2_Quest_Weapon_Mode"							"Specializare pe echipament: <b>{s:gamemode}</b>, <b>{s:weapon}</b>"
+		"CS2_Quest_Weapon_Mode_desc"					"Obține {s:actions} {s:optional_target} cu <b>{s:weapon}</b> în meciuri <b>{s:gamemode}</b>."
+
+		"mission_searching"								"Se caută..."
+		"mission_xp_remaining"							"{s:mission-xp} PE"
+
+		"mission_segment_tooltip"						"{d:xp-reward} PE"
+
+		"mission_location"								"<b>{s:gamemode}</b> pe <b>{s:location}</b>"
+		"mission_directive:f"							"{mission-points, plural, one{<b>{d:mission-points}</b> {s:action}} few{<b>{d:mission-points}</b> {s:actions}} other{<b>{d:mission-points}</b> {s:actions}}}"
+ 		"mission_directive_progress:f"					"{mission-points, plural, one{{d:mission-progress}/<b>{d:mission-points}</b> {s:action}} few{{d:mission-progress}/<b>{d:mission-points}</b> {s:actions}} other{{d:mission-progress}/<b>{d:mission-points}</b> {s:actions}}}"
+
+
+		"quest_11000_var_desc:f"	  					"{mission-points, plural, one{Realizează o ucidere cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.} few{Realizează ucideri cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.} other{Realizează ucideri cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11000_var_partial:f" 					"...cu {s:item1}."
+		"quest_11000_var_ingame:f"	  					"{mission-points, plural, one{Realizează o ucidere cu {s:item1}} few{Realizează ucideri cu {s:item1}} other{Realizează ucideri cu {s:item1}}}"
+
+		"quest_11001_var_desc:f"	 					"{mission-points, plural, one{Realizează o ucidere cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.} few{Realizează ucideri cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.} other{Realizează ucideri cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11001_var_partial:f"	 					"...cu {s:item1}."
+		"quest_11001_var_ingame:f"	 					"{mission-points, plural, one{Realizează o ucidere cu {s:item1}} few{Realizează ucideri cu {s:item1}} other{Realizează ucideri cu {s:item1}}}"
+
+		"quest_11002_var_desc:f"	 					"{mission-points, plural, one{Realizează o ucidere cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.} few{Realizează ucideri cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.} other{Realizează ucideri cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11002_var_partial:f"	 					"...cu {s:item1}."
+		"quest_11002_var_ingame:f"	 					"{mission-points, plural, one{Realizează o ucidere cu {s:item1}} few{Realizează ucideri cu {s:item1}} other{Realizează ucideri cu {s:item1}}}"
+
+		"quest_11003_var_desc:f"						"{mission-points, plural, one{Realizează o ucidere cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.} few{Realizează ucideri cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.} other{Realizează ucideri cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11003_var_partial:f"	 					"...cu {s:item1}."
+		"quest_11003_var_ingame:f"	 					"{mission-points, plural, one{Realizează o ucidere cu {s:item1}} few{Realizează ucideri cu {s:item1}} other{Realizează ucideri cu {s:item1}}}"
+
+		"quest_11004_var_desc:f"	 					"{mission-points, plural, one{Câștigă o rundă în <b>{s:gamemode}: {s:location}</b>.} few{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.} other{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11004_var_ingame:f"						"{mission-points, plural, one{Câștigă o rundă} few{Câștigă runde} other{Câștigă runde}}"
+
+		"quest_11005_var_desc:f"	 					"{mission-points, plural, one{Câștigă o rundă în <b>{s:gamemode}: {s:location}</b>.} few{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.} other{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11005_var_ingame:f"						"{mission-points, plural, one{Câștigă o rundă} few{Câștigă runde} other{Câștigă runde}}"
+
+		"quest_11006_var_desc:f"	 					"{mission-points, plural, one{Câștigă o rundă în <b>{s:gamemode}: {s:location}</b>.} few{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.} other{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11006_var_ingame:f"						"{mission-points, plural, one{Câștigă o rundă} few{Câștigă runde} other{Câștigă runde}}"
+
+		"quest_11007_var_desc:f"	 					"{mission-points, plural, one{Realizează o ucidere cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.} few{Realizează ucideri cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.} other{Realizează ucideri cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11007_var_partial:f"	 					"...cu {s:item1}."
+		"quest_11007_var_ingame:f"	 					"{mission-points, plural, one{Realizează o ucidere cu {s:item1}} few{Realizează ucideri cu {s:item1}} other{Realizează ucideri cu {s:item1}}}"
+
+		"quest_11008_var_desc:f"	 					"{mission-points, plural, one{Câștigă o rundă în <b>{s:gamemode}: {s:location}</b>.} few{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.} other{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11008_var_ingame:f"						"{mission-points, plural, one{Câștigă o rundă} few{Câștigă runde} other{Câștigă runde}}"
+
+		"quest_11009_var_desc:f"	 					"{mission-points, plural, one{Câștigă o rundă în <b>{s:gamemode}: {s:location}</b>.} few{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.} other{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11009_var_ingame:f"						"{mission-points, plural, one{Câștigă o rundă} few{Câștigă runde} other{Câștigă runde}}"
+
+		"quest_11010_var_desc:f"	 					"{mission-points, plural, one{Realizează o ucidere cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.} few{Realizează ucideri cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.} other{Realizează ucideri cu {s:item1} în <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11010_var_partial:f"	 					"...cu {s:item1}."
+		"quest_11010_var_ingame:f"	 					"{mission-points, plural, one{Realizează o ucidere cu {s:item1}} few{Realizează ucideri cu {s:item1}} other{Realizează ucideri cu {s:item1}}}"
+
+		"quest_11011_var_desc:f"	 					"{mission-points, plural, one{Câștigă o rundă în <b>{s:gamemode}: {s:location}</b>.} few{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.} other{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11011_var_ingame:f"						"{mission-points, plural, one{Câștigă o rundă} few{Câștigă runde} other{Câștigă runde}}"
+
+		"quest_11012_var_desc:f"	 					"{mission-points, plural, one{Câștigă o rundă în <b>{s:gamemode}: {s:location}</b>.} few{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.} other{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11012_var_ingame:f"						"{mission-points, plural, one{Câștigă o rundă} few{Câștigă runde} other{Câștigă runde}}"
+
+		"quest_11013_var_desc:f"	 					"{mission-points, plural, one{Câștigă o rundă în <b>{s:gamemode}: {s:location}</b>.} few{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.} other{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11013_var_ingame:f"						"{mission-points, plural, one{Câștigă o rundă} few{Câștigă runde} other{Câștigă runde}}"
+
+		"quest_11014_var_desc:f"	 					"{mission-points, plural, one{Câștigă o rundă în <b>{s:gamemode}: {s:location}</b>.} few{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.} other{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11014_var_ingame:f"						"{mission-points, plural, one{Câștigă o rundă} few{Câștigă runde} other{Câștigă runde}}"
+
+		"quest_11015_var_desc:f"	 					"{mission-points, plural, one{Câștigă o rundă în <b>{s:gamemode}: {s:location}</b>.} few{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.} other{Câștigă runde în <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11015_var_ingame:f"						"{mission-points, plural, one{Câștigă o rundă} few{Câștigă runde} other{Câștigă runde}}"
+
+// ---------------------------------------------------------------------------------------------
+// Join Friend Listen Servers
+// ---------------------------------------------------------------------------------------------
+
+		"tooltip_viewaddon"				"Accesează pagina de atelier a hărții personalizate"
+		"tooltip_kick_player"			"Elimină jucătorul de pe serverul local"		
+		"tooltip_short_viewaddon"			"Vezi harta personalizată"
+		"tooltip_short_kick_player"			"Exclude"
+
+// crow_mask_50454_comment
+// crow_mask_50455_comment
+}
+
+
+
+
+}
+
+
+mmage"
 		"playerstats_mode_2v2_all"			"Wingman (toate)"
 		"playerstats_mode_2v2_active"		"Wingman (serviciu activ)"
 		"playerstats_mode_2v2_other"		"Wingman (grupul de rezervă)"

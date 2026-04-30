@@ -1968,8 +1968,8 @@
 		"Team_Cash_Award_no_income_suicide"					" +$0 за самоубийство"
 		"Team_Cash_Award_Generic"							" +$%s1 командных"
 		"Team_Cash_Award_Custom"							" +$%s1 %s2"
-		"Team_Cash_Award_Dead_Terrorists:p"					" +$%s1 командных за устранение террориста#|# +$%s1 командных за устранение %s2 террористов#|# +$%s1 командных за устранение %s2 террористов#|# +$%s1 командных за устранение %s2 террористов#|# +$%s1 командных за устранение %s2 террориста"
-		"Team_Cash_Award_Dead_CTs:p"						" +$%s1 командных за устранение спецназовца#|# +$%s1 командных за устранение %s2 спецназовцев#|# +$%s1 командных за устранение %s2 спецназовцев#|# +$%s1 командных за устранение %s2 спецназовцев#|# +$%s1 командных за устранение %s2 спецназовца"
+		"Team_Cash_Award_Dead_Terrorists:f"					" +$%s1 командных за устранение {num_enemies} {num_enemies, plural, one{террориста} few {террористов} many {террористов} other{террориста}}"
+		"Team_Cash_Award_Dead_CTs:f"						" +$%s1 командных за устранение {num_enemies} {num_enemies, plural, one{спецназовца} few {спецназовцев} many {спецназовцев} other{спецназовца}}"
 
 
 		"Notice_Bonus_Shorthanded_Eligibility"			" Раундов до получения бонуса за игру в меньшинстве: %s1."
@@ -2329,10 +2329,14 @@
 		// Econ date formatting supports the following tokens:
 		//    %year%, %monthshort%, %monthlong%, %mmday% (01-31), %mday% (1-31), %day% (legacy unlocalized "Jul 30" shouldn't be used), %hour%, %min%, %sec%
 		//
-		"Econ_DateFormat"						"%mmday% %monthshort% %year% (%hour%:%min%:%sec%)"
-		"Econ_DateFormat_GMT"					"%mmday% %monthshort% %year% (%hour%:%min%:%sec%) GMT"
-		"Econ_DateFormat_DateOnly"				"%mmday% %monthshort% %year%"
-		"Econ_DateFormat_GMT_DateOnly"			"%mmday% %monthshort% %year% GMT"
+		"Econ_DateFormat:f"							"{mmday} {monthshort} {year} ({hour}:{min}:{sec})"
+		"Econ_DateFormat_GMT:f"						"{mmday} {monthshort} {year} ({hour}:{min}:{sec}) GMT"
+		"Econ_DateFormat_DateOnly:f"				"{mmday} {monthshort} {year}"
+		"Econ_DateFormat_GMT_DateOnly:f"			"{mmday} {monthshort} {year} GMT"
+		"Econ_DateFormat"							"%mmday% %monthshort% %year% (%hour%:%min%:%sec%)"
+		"Econ_DateFormat_GMT"						"%mmday% %monthshort% %year% (%hour%:%min%:%sec%) GMT"
+		"Econ_DateFormat_DateOnly"					"%mmday% %monthshort% %year%"
+		"Econ_DateFormat_GMT_DateOnly"				"%mmday% %monthshort% %year% GMT"
 		"Econ_Loot_List_Sticker_ProPlayerSignatures" "Наклейка подписана одним из следующих профессиональных игроков:"
 		"Econ_Loot_List_Sticker_ProPlayerSignatures_AndSomeMore" "...и ещё %s1 профессиональных игроков"
 		"Econ_Loot_List_Sticker_ProOrgsStickers"	"Наклейка может принадлежать одной из следующих организаций:"
@@ -5849,1256 +5853,15 @@
 		
 		"quest"										"Миссия"
 
-		"quest_totalgoal_points_desc"				"Всего %actions% необходимо： <b>%points%</b>" // special non-breaking space characters in this string, edit carefully!
-		"quest_attrremaining_points_desc"			"Осталось %actions%： <b>%points%</b>" // special non-breaking space characters in this string, edit carefully!
-		"quest_uncommitted_points_desc"				"Осталось %actions%： <b>%points%</b> (<b>%points uncommitted%</b> за этот матч)" // special non-breaking space characters in this string, edit carefully!
-		"quest_uncommitted_points_warn"				" * <i>Счетчик %actions% обновится в конце матча</i>"
-	
-		"quest_uncommitted_points_chat_one"	"Миссия выполнена: вам засчитали %action%."
-		"quest_uncommitted_points_chat_singular"	"Засчитано %action%: +%points%."
-		"quest_uncommitted_points_chat_plural"		" Засчитано %actions%: +%points%."
-		"quest_uncommitted_points_chat_event"		" Блиц-миссия: вам засчитали %action%."		
+		"quest_commandverb_default"					"Совершите"
 
-		"quest_reward_desc"								"Награды за эту миссию\n<b>(%s1)</b>:"
+		"quest_action_plural_act_kill_human"		"убийств"
+		"quest_action_singular_act_kill_human"		"убийство"
 
-		"quest_reward_xp"									"Награда за выполнение: <b>%s1</b> ед. опыта"
-
-		"quest_event_totalgoal_points_desc"					"Вы будете получать больше опыта за <b>%action%</b> во время этого события."
-		
-		"quest_bonus_desc"								"Дополнительно: +<b>%xpperbonusaction%</b> ед. опыта за %action% <i>%xpbonuscondition%.</i>"
-		"quest_bonus_fractional_desc"			"Дополнительно: +<b>%xpperbonusactions%</b> ед. опыта за <b>%n_actions%</b> %actions% <i>%xpbonuscondition%.</i>"
-		"quest_bonus_single_desc"					"Дополнительно: +<b>%xpperbonusaction%</b> ед. опыта <i>%xpbonuscondition%.</i>"
-
-
-		"quest_target_chicken"											"куриц"
-		"quest_target_human_or_chicken"									"врагов или куриц"
-		"quest_target_hostagerescuer"									"спасителей заложника"
-		"quest_target_armsraceleader"									"лидеров гонки вооружений"
-
-		"quest_target_headshot"											"в голову"
-		"quest_target_airborne"											"в воздухе"
-		"quest_target_pistolround"										"из пистолетов"
-
-		"quest_target_lockeddoor"										"закрытые двери"
-		"quest_target_explodingbarrel"									"взрывные бочки"
-		"quest_target_glasspane"										"стёкла"
-		"quest_target_enemydrone"										"вражеские дроны"
-
-		"quest_target_shotgun"											"из дробовиков"
-		"quest_target_sniperrifle"										"из снайперских винтовок"
-		"quest_target_utility"											"гранатами"
-		"quest_target_defaultctpistol"									"из начального пистолета спецназа"
-		"quest_target_defaultpistol"									"из начального пистолета"
-		"quest_target_knife"											"ножом"
-
-		"quest_action_plural_act_kill_human"							"убийств"
-		"quest_action_singular_act_kill_human"							"убийство"
-
-		"quest_action_plural_act_kill_chicken"							"убийств"
-		"quest_action_singular_act_kill_chicken"						"убийство"		
-
-		"quest_action_plural_act_protect_chicken"						"секунд защиты курицы"
-		"quest_action_singular_act_protect_chicken"						"секунду защиты курицы"	
-
-		"quest_action_plural_act_kill_target"							"устранений"
-		"quest_action_singular_act_kill_target"							"устранение"		
-
-		"quest_action_plural_act_damage"								"ед. урона"
-		"quest_action_singular_act_damage"								"нанесённый урон"		
-
-		"quest_action_plural_act_win_match"								"побед"
-		"quest_action_singular_act_win_match"							"победу"		
-
-		"quest_action_plural_act_dz_game_end_placement"					"мест"
-		"quest_action_singular_act_dz_game_end_placement"				"место"	
-
-		"quest_action_plural_act_dz_purchase_item"					"покупок"
-		"quest_action_singular_act_dz_purchase_item"				"покупку"	
-
-		"quest_action_plural_act_win_round"								"побед в раундах"
-		"quest_action_singular_act_win_round"							"победу в раунде"	
-
-		"quest_action_plural_act_round_mvp"								"наград СЦИ"
-		"quest_action_singular_act_round_mvp"							"награду СЦИ"
-
-		"quest_action_plural_act_dm_bonus_points"						"очк."
-		"quest_action_singular_act_dm_bonus_points"						"очко"		
-
-		"quest_action_plural_act_armsrace_level"						"уровней"
-		"quest_action_singular_act_armsrace_level"						"уровень"	
-
-		"quest_action_plural_act_gg_weapon_upgrade"						"улучшений"
-		"quest_action_singular_act_gg_weapon_upgrade"					"улучшение"	
-
-		"quest_action_plural_act_gg_upgrade_to_knifegg"						"улучшений"
-		"quest_action_singular_act_gg_upgrade_to_knifegg"					"улучшение"	
-				
-		"quest_action_plural_act_flashbang_enemy"						"ослеплений врага"
-		"quest_action_singular_act_flashbang_enemy"						"ослепление врага"		
-		
-		"quest_action_plural_act_pick_up_hostage"						"подборов заложника"
-		"quest_action_singular_act_pick_up_hostage"						"подбор заложника"		
-		
-		"quest_action_plural_act_rescue_hostage"						"спасений заложника"
-		"quest_action_singular_act_rescue_hostage"						"спасение заложника"		
-		
-		"quest_action_plural_act_defuse_bomb"							"обезвреживаний бомбы"
-		"quest_action_singular_act_defuse_bomb"							"обезвреживание бомбы"		
-		
-		"quest_action_plural_act_plant_bomb"							"закладок бомбы"
-		"quest_action_singular_act_plant_bomb"							"закладку бомбы"
-
-		"quest_action_singular_act_income"								"доллар"
-		"quest_action_plural_act_income"								"долларов"
-		
-		"quest_action_singular_act_survivalincome"						"доллар"
-		"quest_action_plural_act_survivalincome"						"наличных"
-
-		"quest_action_singular_act_spend"								"доллар"
-		"quest_action_plural_act_spend"									"долларов"
-
-		"quest_action_singular_act_parachute_landed"					"секунду спуска с парашютом"
-		"quest_action_plural_act_parachute_landed"						"секунды спуска с парашютом"
-
-		"quest_action_singular_act_bumpmine_launch"						"запуск толчковой мины"
-		"quest_action_plural_act_bumpmine_launch"						"запусков толчковой мины"
-
-		"quest_action_singular_headshot_kill"							"убийство в голову"
-		"quest_action_plural_headshot_kill"								"убийств в голову"
-
-		"quest_action_singular_multikill"								"раунд с несколькими убийствами"
-		"quest_action_plural_multikill"									"раундов с несколькими убийствами"
-
-		"quest_action_singular_act_apply_graffiti"						"граффити"
-		"quest_action_plural_act_apply_graffiti"						"граффити"
-
-		"quest_action_singular_act_detonate_smokegrenade"				"дымовую гранату"
-		"quest_action_plural_act_detonate_smokegrenade"					"дымовые гранаты"
-
-		"quest_action_singular_act_detonate_molotov"					"коктейль Молотова"
-		"quest_action_plural_act_detonate_molotov"						"коктейлей Молотова"
-
-		"quest_action_singular_act_use_healthshot"						"медшприц"
-		"quest_action_plural_act_use_healthshot"						"медшприцев"
-		
-		"quest_action_singular_act_retakes_picked_enemy_card"			"выбор карточки врага"
-		"quest_action_plural_act_retakes_picked_enemy_card"				"выборов карточки врага"
-
-		"quest_action_singular_act_retakes_picked_mvp_card"				"выбор карточки СЦИ"
-		"quest_action_plural_act_retakes_picked_mvp_card"				"выборов карточки СЦИ"
-//
-
-		"quest_action_plural_bomb_plants_or_defuses"					"закладок и обезвреживаний бомб"
-		"quest_action_singular_bomb_plants_or_defuses"					"закладку или обезвреживание бомбы"
-		
-		"quest_action_plural_rescue_or_kill_hostages"					"заложников спасено или спасателей убито"
-		"quest_action_singular_rescue_or_kill_hostages"					"спасение заложника или убийство спасателя"		
-		
-		"quest_action_plural_damage_burn"								"ед. урона от огня"
-		"quest_action_singular_damage_burn"								"урон от огня"
-
-		"quest_commandverb_default"										"Совершите"
-		"quest_commandverb_defaultCT"									"Играя за спецназ, наберите достаточно"
-		"quest_commandverb_defaultT"									"Играя за террористов, наберите достаточно"
-		"quest_commandverb_deal"										"Нанесите достаточно"
-		"quest_commandverb_earn"										"Заработайте"
-		"quest_commandverb_earnT"										"Играя за террористов, заработайте"
-		"quest_commandverb_spend"										"Потратьте"
-		"quest_commandverb_execute"										"Проведите достаточно"
-		"quest_commandverb_destroy"										"Уничтожьте"
-		"quest_commandverb_apply"										"Нанесите"
-		"quest_commandverb_throw"										"Бросьте"
+		"quest_action_plural_act_win_round"			"побед в раундах"
+		"quest_action_singular_act_win_round"		"победу в раунде"	
 
 		////
-
-		"quest_condition_item_own"										"из своего инвентаря"
-		"quest_condition_item_borrowed"									"другого игрока"									
-		"quest_condition_item_borrowed_teammate"						"союзника"									
-		"quest_condition_item_borrowed_enemy"							"врага"									
-		"quest_condition_item_borrowed_victim"							"жертвы"									
-		"quest_condition_item_nondefault"								"в хорошем состоянии"
-
-		"quest_LoadoutSlot_Melee"										"ножом"
-		"quest_LoadoutSlot_Secondary"									"пистолетами"
-		"quest_LoadoutSlot_SMG"											"пистолетами-пулемётами"
-		"quest_LoadoutSlot_Rifle"										"винтовками"
-		"quest_LoadoutSlot_Heavy"										"тяжелым оружием"
-		"quest_LoadoutSlot_Grenade"										"гранатой"
-
-		"quest_item_default"											"оружием"
-
-////
-		"quest_event_ending"											"закончится через %s1 мин."
-		"quest_event_soon_hours"										"начнется через %s1 ч."
-		"quest_event_soon_hms"											"начнется через %s1:%s2:%s3"
-		"quest_event_today"												"начнется сегодня в %s1:%s2"
-		"quest_event_future"											"начнется %s1 %s2 в %s3:%s4"
-		"quest_event_timer"												"Начнется через %s1"
-
-////
-
-
-
-
-////////////////////////// generalized quest strings //////////////////////////////
-///
-///	Use these if applicable. If not, use this pattern to create new ones.
-///
-///
-///
-
-		"quest_default_0_items_desc" "%commandverb% %target% %actions% в <b>режиме «%gamemode%» (%location%)</b>."		
-		"quest_default_1_items_desc" "%commandverb% %actions% %target% <b>%item1%</b> <i>%item_quality%</i> в <b>режиме «%gamemode%» (%location%)</b>."
-		"quest_default_2_items_desc" "%commandverb% %actions% %target% <b>%item1%</b> или <b>%item2%</b> <i>%item_quality%</i> в <b>режиме «%gamemode%» (%location%)</b>."
-		"quest_default_3_items_desc" "%commandverb% %actions% %target% <b>%item1%</b>, <b>%item2%</b> или <b>%item3%</b> <i>%item_quality%</i> в <b>режиме «%gamemode%» (%location%)</b>."
-		"quest_default_4_items_desc" "%commandverb% %actions% %target% <b>%item1%</b>, <b>%item2%</b>, <b>%item3%</b> или <b>%item4%</b> <i>%item_quality%</i> в <b>режиме «%gamemode%» (%location%)</b>."
-
-		"quest_default_hud_0_items_desc" "%commandverb% %target% %actions%"
-		"quest_default_hud_1_items_desc" "%commandverb% %target% %actions%: <i>%item_quality%</i> <b>%item1%</b>"
-		"quest_default_hud_2_items_desc" "%commandverb% %target% %actions%: <i>%item_quality%</i> <b>%item1%</b>/<b>%item2%</b>"
-		"quest_default_hud_3_items_desc" "%commandverb% %target% %actions%: <i>%item_quality%</i> <b>%item1%</b>/<b>%item2%</b>/<b>%item3%</b>"
-		"quest_default_hud_4_items_desc" "%commandverb% %target% %actions%: <i>%item_quality%</i> <b>%item1%</b>/<b>%item2%</b>/<b>%item3%</b>/<b>%item4</b>"
-
-/////////////////////////////////////////////////////////
-
-/////////////////////////////// Quest Strings via Dialog Vars //////
-///
-/// Used starting with Op09 - the default descriptions should handle most "Perform X Action in GameMode: Location" quests.
-///
-///
-		"quest_default_var_desc" "{s:commandverb} {s:target} {s:actions} ({d:points}) в режиме <b>«{s:gamemode}»: {s:location}</b>."		
-		"quest_single_var_desc" "{s:commandverb} {s:target} {s:actions} ({d:points}) за <i>один</i> матч в режиме <b>«{s:gamemode}»: {s:location}</b>."		
-		"quest_default_no_map_var_desc" "{s:commandverb} {s:target} {s:actions} ({d:points}) в режиме <b>«{s:gamemode}»</b>."
-		"quest_single_no_map_var_desc" "{s:commandverb} {s:target} {s:actions} ({d:points}) за <i>один</i> матч в режиме <b>«{s:gamemode}»</b>."		
-
-		"quest_weapon_var_desc" "{s:commandverb} {s:target} {s:actions} ({d:points}) с помощью {s:weapon} в режиме <b>«{s:gamemode}»: {s:location}</b>."
-		"quest_weapon_single_var_desc" "{s:commandverb} {s:target} {s:actions} ({d:points}) с помощью {s:weapon} за <i>один</i> матч в режиме <b>«{s:gamemode}»: {s:location}</b>."
-		"quest_weapon_no_map_var_desc" "{s:commandverb} {s:target} {s:actions} ({d:points}) с помощью {s:weapon} в режиме <b>«{s:gamemode}»</b>."
-		"quest_weapon_category_no_map_var_desc" "{s:commandverb} {s:target} {s:actions} ({d:points}) {s:weapon} в режиме <b>«{s:gamemode}»</b>."
-
-		"quest_flyingscoutsman_var_desc"	"{s:commandverb} {s:target} {s:actions} ({d:points}) в режиме <b>«Перелётные снайперы»: {s:location}</b>."
-		"quest_flyingscoutsman_no_map_var_desc"	"{s:commandverb} {s:target} {s:actions} ({d:points}) в режиме <b>«Перелётные снайперы»</b>."
-
-		"quest_retakes_var_desc"	"{s:commandverb} {d:points} {s:actions} {s:target} в режиме <b>зачистки: {s:location}</b>."
-		"quest_retakes_no_map_var_desc"	"{s:commandverb} {d:points} {s:actions} {s:target} в режиме <b>зачистки</b>."
-
-		"quest_armsrace_var_desc"	 		"{s:commandverb} {s:target} {s:actions} ({d:points}) в режиме <b>«Гонка вооружений»</b>."
-		"quest_armsrace_weapon_var_desc"	"{s:commandverb} {s:target} {s:actions} ({d:points}) {s:weapon} в режиме <b>«Гонка вооружений»</b>."
-
-		// quest exceptions:
-		"quest_931_var_desc"	 "Совершите {d:points} убийств, используя {s:weapon}, в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_932_var_desc"	 "Совершите {d:points} убийств в воздухе в режиме <b>«Перелётные снайперы»</b>."
-		"quest_933_var_desc"	 "Победите в раунде {d:points} раз(а) в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_934_var_desc"	 "Совершите {s:kills} убийств, используя {s:weapon}, в режиме <b>стражей: {s:location}</b>."
-		"quest_935_var_desc"	 "Совершите {d:points} убийств, используя {s:weapon}, за <i>один</i> матч в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_936_var_desc"	 "Совершите {d:points} убийств, используя {s:weapon}, в режиме <b>«{s:gamemode}»</b>."
-		"quest_937_var_desc"	 "Нанесите {d:points} граффити на вражеской территории <b>({s:gamemode}: {s:location})</b>."
-		"quest_938_var_desc"	 "Убейте лидера {d:points} раз(а) в режиме <b>«{s:gamemode}»</b>."
-		"quest_939_var_desc"	 "Совершите {s:kills} убийств, используя {s:weapon}, в режиме <b>стражей: {s:location}</b>."
-		"quest_940_var_desc"	 "Победите в раунде {d:points} раз(а) в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_941_var_desc"	 "Победите в пистолетном раунде {d:points} раз(а) в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_942_var_desc"	 "Совершите {d:points} убийств, используя {s:weapon}, за <i>один</i> матч в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_943_var_desc"	 "Совершите {d:points} убийств в режиме <b>«Перелётные снайперы»</b>."
-		"quest_944_var_desc"	 "Потратьте {d:points} за <i>один</i> матч в режиме <b>«{s:gamemode}»</b>."
-		"quest_945_var_desc"	 "Совершите {s:kills} убийств в режиме <b>стражей: {s:location}</b>."
-		"quest_946_var_desc"	 "Победите в раунде {d:points} раз(а) в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_947_var_desc"	 "Победите в раунде {d:points} раз(а) в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_948_var_desc"	 "Спасите {d:points} заложников или убейте {d:points} спасителей заложников в режиме <b>«{s:gamemode}» ({s:location})</b>."
-        "quest_949_var_desc"	 "Совершите {d:points} убийств, используя {s:weapon}, в режиме <b>«{s:gamemode}» ({s:location})</b>."
-        "quest_950_var_desc"	 "Совершите {d:points} убийств тяжёлым оружием в режиме <b>«{s:gamemode}»</b>."
-        "quest_951_var_desc"	 "Совершите {s:kills} убийств, используя {s:weapon}, в режиме <b>стражей: {s:location}</b>. В начале у игроков есть <b>{s:extraequip0}</b>."
-        "quest_952_var_desc"	 "Победите в раунде {d:points} раз(а) в режиме <b>«{s:gamemode}» ({s:location})</b>."
-        "quest_953_var_desc"	 "Победите в раунде {d:points} раз(а) в режиме <b>«{s:gamemode}» ({s:location})</b>."
-        "quest_954_var_desc"	 "Совершите {d:points} убийств {s:target} за <i>один</i> матч в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_955_var_desc"	 "Приручайте куриц и защищайте их {d:points} сек. в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_956_var_desc" 	 "Используйте парашют {d:points} сек. в режиме <b>«{s:gamemode}»</b>."
-		"quest_957_var_desc" 	 "Совершите {d:points} убийств, используя {s:weapon}, в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_958_var_desc" 	 "Победите в раунде {d:points} раз(а) в режиме схватки <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_959_var_desc" 	 "Совершите {d:points} убийств в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_960_var_desc"	 "Совершите {s:kills} убийств, используя {s:weapon}, в режиме <b>«Стражи» ({s:location})</b>."
-		"quest_961_var_desc" 	 "Совершите {d:points} убийств пистолетами в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_962_var_desc" 	 "Совершите {d:points} убийств(а), не потратив денег, за <i>один</i> матч в режиме <b>«{s:gamemode}»</b>."
-		"quest_963_var_desc"	 "Совершите {s:kills} убийств, используя {s:weapon}, в режиме <b>«Стражи» ({s:location})</b>."
-		"quest_964_var_desc" 	 "Победите в пистолетном раунде {d:points} раз(а) в режиме <b>«{s:gamemode}»</b>."
-		"quest_965_var_desc" 	 "Совершите {s:kills} убийств в режиме <b>«Стражи» ({s:location})</b>."
-		"quest_966_var_desc" 	 "Заработайте {d:points} долларов в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_967_var_desc" 	 "Совершите {d:points} убийств, используя {s:weapon}, в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_968_var_desc"	 "Совершите {d:points} убийств снайперскими винтовками в режиме <b>«{s:gamemode}»</b>."
-		"quest_969_var_desc" 	 "Совершите {s:kills} убийств, используя {s:weapon} без прицеливания, в режиме <b>«Стражи» ({s:location})</b>."
-		"quest_970_var_desc" 	 "Победите в раунде {d:points} раз(а) в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_971_var_desc"	 "Совершите {s:kills} убийств, используя {s:weapon}, в режиме <b>«Стражи» ({s:location})</b>."
-		"quest_972_var_desc" 	 "Совершите {d:points} убийств выстрелами в голову за <i>один</i> матч в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_973_var_desc" 	 "Совершите {d:points} убийств в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_974_var_desc" 	 "Совершите {d:points} убийств выстрелами в голову в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_975_var_desc"     "Совершите {s:kills} убийств оружием спецназа в режиме <b>«Стражи» ({s:location})</b>."
-		"quest_976_var_desc" 	 "Победите в раунде {d:points} раз(а) в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_977_var_desc"	 "Победите в раунде {d:points} раз(а) в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_978_var_desc" 	 "Совершите {d:points} убийств, используя {s:weapon}, в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_979_var_desc"	 "Совершите серию из четырёх убийств в режиме <b>«{s:gamemode}» ({s:location})</b>."		
-		"quest_980_var_desc" 	 "Займите хотя бы четвёртое место в режиме <b>«{s:gamemode}»</b>."
-		"quest_981_var_desc"     "Совершите {s:kills} убийств выстрелами в голову из {s:weapon} в режиме <b>«Стражи» ({s:location})</b>, <i>не имея брони</i>."
-		"quest_982_var_desc" 	 "Совершите {d:points} убийств выстрелами в голову из {s:weapon} за <i>один</i> матч в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_983_var_desc" 	 "Совершите {d:points} убийств выстрелами в голову в режиме <b>«{s:gamemode}»</b>."
-		"quest_984_var_desc" 	 "Заслужите {d:points} наград СЦИ в режиме <b>«{s:gamemode}»</b>."
-		"quest_985_var_desc" 	 "Совершите {d:points} убийств из начального пистолета в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_986_var_desc"     "Совершите {s:kills} убийств из {s:weapon} в режиме <b>«Стражи» ({s:location})</b>."
-		"quest_987_var_desc"	 "Совершите {d:points} убийств из основной вражеской винтовки в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_988_var_desc"     "Совершите {d:points} убийства ножом в режиме <b>«Гонка вооружений»</b>."
-		"quest_989_var_desc" 	 "Нанесите {d:points} ед. урона гранатами в режиме <b>«{s:gamemode}»</b>."
-		"quest_990_var_desc" 	 "Совершите {d:points} эйсов в режиме <b>«{s:gamemode}»</b>."
-		"quest_991_var_desc" 	 "Совершите {d:points} убийств из <b>Tec-9 или Five-Seven</b> в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_992_var_desc"     "Совершите {s:kills} убийств, используя {s:weapon}, в режиме <b>«Стражи» ({s:location})</b>."
-		"quest_993_var_desc"	 "Нанесите {d:points} ед. урона гранатами в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_994_var_desc" 	 "Совершите {d:points} убийств в режиме <b>«{s:gamemode}»</b>."
-		"quest_995_var_desc" 	 "Победите в {d:points} раундах в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_996_var_desc"     "Совершите {d:points} убийств в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_997_var_desc" 	 "Совершите {d:points} убийств из автомата «Галиль» или FAMAS в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_998_var_desc"     "Совершите {s:kills} убийств из {s:weapon} в режиме <b>«Стражи» ({s:location})</b>."
-		"quest_999_var_desc" 	 "Совершите {d:points} убийство из {s:weapon} в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1000_var_desc" 	 "Уничтожьте {d:points} вражеских дрона {s:actions} в режиме <b>«{s:gamemode}»</b>."
-		"quest_1001_var_desc" 	 "Заслужите {d:points} награды СЦИ за один матч в режиме «{s:gamemode}» ({s:location})."
-		"quest_1002_var_desc"	 "Совершите серию хотя бы из двух убийств в {d:points} раундах в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1003_var_desc" 	 "Совершите {d:points} убийств, используя {s:weapon}, в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1004_var_desc"    "Совершите {s:kills} убийств из {s:weapon} в режиме <b>«Стражи» ({s:location})</b>."
-		"quest_1005_var_desc" 	 "Победите в {d:points} раундах в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1006_var_desc"    "Совершите {d:points} убийств в режиме <b>«Гонка вооружений»</b>."
-		"quest_1007_var_desc" 	 "Уничтожьте {d:points} запертых дверей, {s:actions} используя {s:weapon}, в режиме <b>«{s:gamemode}»</b>."
-		"quest_1008_var_desc" 	 "Совершите {d:points} убийств из AK-47 или M4A4 в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1009_var_desc" 	 "Победите в {d:points} раундах в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1010_var_desc"	 "Совершите {d:points} убийств, используя {s:weapon}, в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1011_var_desc"    "Выиграйте хотя бы 5 раундов за одну из половин матча в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1012_var_desc" 	 "Наступите на {d:points} толчковые мины в режиме <b>«{s:gamemode}»</b>."
-		"quest_1013_var_desc" 	 "Совершите {d:points} убийство из {s:weapon} в режиме <b>«{s:gamemode}»</b>."
-		"quest_1014_var_desc"    "Совершите {s:kills} убийств из {s:weapon} в режиме <b>«Стражи» ({s:location})</b>."
-		"quest_1015_var_desc" 	 "Совершите {d:points} убийств, потратив не более $2000, в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1016_var_desc"	 "Накопите хотя бы $3000 в режиме <b>«{s:gamemode}»</b>."
-		"quest_1017_var_desc" 	 "Победите в {d:points} раундах в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1018_var_desc"    "Совершите {s:kills} убийств из {s:weapon} в режиме <b>«Стражи» ({s:location})</b>."
-		"quest_1019_var_desc" 	 "Совершите {d:points} убийств, используя {s:weapon}, в режиме <b>«Гонка вооружений»</b>."
-		"quest_1020_var_desc" 	 "Совершите {d:points} убийств из {s:weapon} в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1021_var_desc" 	"Убейте {d:points} куриц в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1022_var_desc" 	"Взорвите {d:points} бочек в режиме <b>«{s:gamemode}»</b>."
-		"quest_1023_var_desc" 	"Победите в {d:points} раундах в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1024_var_desc" 	"Разбейте {d:points} стёкол в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1025_var_desc" 	"Победите в {d:points} раундах в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1027_var_desc"	 "Нанесите {d:points} граффити на стартовой вражеской территории <b>({s:gamemode}: {s:location})</b>."
-		"quest_1028_var_desc"	 "Совершите {d:points} убийств с <i>«Дуги»</i> или из <i>«Апартаментов»</i> в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1029_var_desc"	 "Бросайте стратегические дымовые гранаты ({d:points}) в режиме <b>«{s:gamemode}»: {s:location}</b>."
-		"quest_1030_var_desc"	 "Добудьте образец вируса Запретной зоны из лаборатории «Феникса»."
-		"quest_1031_var_desc"	 "Уничтожьте производственную базу «Феникса» и устраните Франца Кригельда."
-		
-		"quest_1098_var_desc"                                  "Побеждайте в раундах: <b>{s:location}</b>."
-		"quest_1032_var_desc"                                  "Побеждайте в раундах в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1033_var_desc"                                  "Совершите {s:kills} убийств в режиме <b>стражей: {s:location}</b>."
-		"quest_1034_var_desc"                                  "Замечены силы «Феникса»! Выясните, что они замышляют."
-		"quest_1035_var_desc"                                  "Совершайте убийства из AK47, M4A4 или M4A1-S в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1036_var_desc"                                  "Побеждайте в раундах: <b>{s:location}</b>."
-		"quest_1037_var_desc"                                  "Совершайте убийства в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1099_var_desc"                                  "Заслужите награды СЦИ: <b>{s:location}</b>."
-		"quest_1038_var_desc"                                  "Побеждайте в раундах в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1039_var_desc"                                  "Совершите по убийству из всех {s:kills} пистолетов в режиме <b>стражей: {s:location}</b>."
-		"quest_1040_var_desc"                                  "Совершайте убийства, используя {s:weapon}: <b>{s:location}</b>."
-		"quest_1041_var_desc"                                  "Совершайте убийства из {s:weapon} в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1042_var_desc"                                  "Побеждайте в раундах в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1043_var_desc"                                  "Совершите {s:kills} убийств из {s:weapon} в режиме <b>стражей ({s:location})</b>."
-		"quest_1044_var_desc"                                  "Совершайте убийства с расстояния не менее 15 м в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1045_var_desc"                                  "Совершайте убийства из снайперских винтовок: <b>{s:location}</b>."
-		"quest_1046_var_desc"                                  "Совершайте убийства выстрелами в голову в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1047_var_desc"                                  "Совершите {s:kills} убийств из {s:weapon} в режиме <b>стражей ({s:location})</b>."
-		"quest_1048_var_desc"                                  "Наносите урон гранатами: <b>{s:location}</b>."
-		"quest_1049_var_desc"                                  "Зарабатывайте деньги в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1050_var_desc"                                  "Побеждайте в раундах в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1051_var_desc"                                  "Совершите {s:kills} убийств в режиме <b>стражей: {s:location}</b>."
-		"quest_1052_var_desc"                                  "Выберите карточку врага: <b>{s:location}</b>."
-		"quest_1053_var_desc"                                  "Кидайте дымовые гранаты в определённые места в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1054_var_desc"                                  "Побеждайте в раундах в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1055_var_desc"                                  "Совершите {s:kills} убийств оружием террористов в режиме <b>стражей: {s:location}</b>."
-		"quest_1056_var_desc"                                  "Совершайте убийства из «Туннеля» или «Дворца» в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1057_var_desc"                                  "Совершайте убийства: <b>{s:location}</b>."
-		"quest_1058_var_desc"                                  "Побеждайте в раундах в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1059_var_desc"                                  "Совершите {s:kills} убийств из пистолетов-пулемётов в режиме <b>стражей: {s:location}</b>."
-		"quest_1060_var_desc"                                  "Совершайте убийства из пистолетов-пулемётов в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1061_var_desc"                                  "Совершайте убийства из пистолетов-пулемётов: <b>{s:location}</b>."
-		"quest_1062_var_desc"                                  "Побеждайте в раундах в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1063_var_desc"                                  "Совершите {s:kills} убийств из дробовиков в режиме <b>стражей: {s:location}</b>."
-		"quest_1064_var_desc"                                  "Выберите карточку СЦИ: <b>{s:location}</b>."
-		"quest_1065_var_desc"                                  "Наносите граффити в определённых местах в режиме <b>«{s:gamemode}»: {s:location}</b>."
-		"quest_1100_var_desc"                                  "Побеждайте в раундах: <b>{s:location}</b>."
-		"quest_1066_var_desc"                                  "Побеждайте в раундах в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1067_var_desc"                                  "Совершите {s:kills} убийств выстрелами в голову из AUG в режиме <b>стражей: {s:location}</b>."
-		"quest_1068_var_desc"                                  "Ослепите врага светошумовой гранатой: <b>{s:location}</b>."
-		"quest_1069_var_desc"                                  "Наносите граффити в определённых местах в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1101_var_desc"                                  "Побеждайте в раундах: <b>{s:location}</b>."
-		"quest_1070_var_desc"                                  "Побеждайте в раундах в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1071_var_desc"                                  "Совершите {s:kills} убийств с расстояния не более 10 м в режиме <b>стражей: {s:location}</b>."
-		"quest_1072_var_desc"                                  "Совершайте убийства с расстояния не более 10 м в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1073_var_desc"                                  "Совершайте убийства: <b>{s:location}</b>."		
-		"quest_1074_var_desc"                                  "Побеждайте в раундах в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1075_var_desc"                                  "Совершите {s:kills} убийств в режиме <b>стражей: {s:location}</b>."
-		"quest_1076_var_desc"                                  "Совершайте убийства выстрелами в голову в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1077_var_desc"                                  "Совершайте убийства из тяжёлого оружия в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1102_var_desc"                                  "Побеждайте в раундах: <b>{s:location}</b>."
-		"quest_1078_var_desc"                                  "Побеждайте в раундах в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1079_var_desc"                                  "Совершите {s:kills} убийств из SSG08 в режиме <b>стражей: {s:location}</b>."
-		"quest_1080_var_desc"                                  "Убивайте куриц в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1081_var_desc"                                  "Совершайте убийства: <b>{s:location}</b>."
-		"quest_1082_var_desc"                                  "Побеждайте в раундах в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1083_var_desc"                                  "Совершите {s:kills} убийств из MAG-7 в режиме <b>стражей: {s:location}</b>."
-		"quest_1084_var_desc"                                  "Совершайте убийства: <b>{s:location}</b>."
-		"quest_1085_var_desc"                                  "Наносите урон гранатами в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1085_v2_var_desc"                   			   "Наносите урон гранатами в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1086_var_desc"                                  "Побеждайте в раундах в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1087_var_desc"                                  "Совершите {s:kills} убийств из вражеского оружия в режиме <b>стражей: {s:location}</b>."
-		"quest_1088_var_desc"                                  "Совершайте убийства из определённых мест в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1089_var_desc"                                  "Совершайте убийства с прицеливанием в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1089_v2_var_desc"                               "Совершайте убийства с прицеливанием в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1090_var_desc"                                  "Побеждайте в раундах в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1091_var_desc"                                  "Совершите {s:kills} убийств в режиме <b>стражей: {s:location}</b>."
-		"quest_1092_var_desc"                                  "Зарабатывайте очки, используя бонусное оружие в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1092_v2_var_desc"                                  "Зарабатывайте очки, используя бонусное оружие в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1093_var_desc"                                  "Тратьте деньги деньги в режиме <b>«{s:gamemode}»</b>."
-		"quest_1094_var_desc"                                  "Побеждайте в раундах в режиме <b>«{s:gamemode}» ({s:location})</b>."
-		"quest_1095_var_desc"                                  "Совершите {s:kills} убийств в режиме <b>стражей: {s:location}</b>."
-		"quest_1095_v2_var_desc"                                  "Совершите {s:kills} убийств из UMP-45 в режиме <b>стражей: {s:location}</b>."
-		"quest_1096_var_desc"                                  "Побеждайте в раундах: <b>{s:location}</b>."
-		"quest_1097_var_desc"                                  "Выполните миссию."
-		"quest_1097_v2_var_desc"                                  "<i>...сетчатка быстро подстраивается под скачок яркости, создавая временную слепоту.</i>"
-		"quest_1103_var_desc"                                  "Ослепляйте врагов светошумовыми гранатами в режиме <b>«{s:gamemode}» ({s:location})</b>."
-
-// OP11 Week 1 Missions
-		"quest_1106_var_desc"                              "Переживите нападение с воздуха в режиме <b>стражей: {s:location}</b>."
-		"quest_1107_var_desc"                              "Выполняйте различные задания в режиме <b>«Запретная зона»: {s:location}</b>"
-		"quest_1108_var_desc"                              "Совершайте убийства в различных местах"
-
-// OP11 Week 2 Missions
-		"quest_1111_var_desc"                              "Совершайте убийства в режиме <b>стражей: {s:location}</b>."
-
-// OP11 Week 3 Missions
-		"quest_1115_var_desc"                              "Совершайте убийства из снайперских винтовок в режиме <b>стражей: {s:location}</b>."
-		"quest_1117_var_desc"                              "Наносите граффити в различных местах"
-
-// OP11 Week 4 Missions
-		"quest_1119_var_desc"                              "Совершайте убийства из дробовика в режиме <b>стражей: {s:location}</b>."
-		"quest_1120_var_desc"                              "Совершайте убийства в различных местах"
-
-// OP11 Week 5 Missions
-		"quest_1123_var_desc"                              "Совершайте убийства из пистолетов-пулемётов в режиме <b>стражей: {s:location}</b>."
-		"quest_1125_var_desc"                              "Выполняйте различные задания"
-
-// OP11 Week 6 Missions
-		"quest_1127_var_desc"                              "Совершайте убийства из винтовок в режиме <b>стражей: {s:location}</b>."
-		"quest_1128_var_desc"                              "Совершите серию убийств в режиме <b>«Бой насмерть»: {s:location}</b>."
-
-// OP11 Week 7 Missions
-		"quest_1131_var_desc"                              "Совершайте убийства в режиме <b>стражей: {s:location}</b>."
-		"quest_1132_var_desc"                              "Совершайте убийства в различных местах"
-
-// OP11 Week 8 Missions
-		"quest_1135_var_desc"                              "Совершайте убийства из дробовика в режиме <b>стражей: {s:location}</b>."
-		"quest_1137_var_desc"                              "Выполняйте различные задания, связанные с гранатами"
-
-// OP11 Week 9 Missions
-		"quest_1139_var_desc"                              "Совершайте убийства из пистолета в режиме <b>стражей: {s:location}</b>."
-		"quest_1140_var_desc"                              "Наносите граффити в различных местах"
-
-// OP11 Week 10 Missions
-		"quest_1143_var_desc"                              "Совершайте убийства из AUG в режиме <b>стражей: {s:location}</b>."
-		"quest_1144_var_desc"                              "Совершайте убийства в различных местах"
-
-// OP11 Week 11 Missions
-		"quest_1147_var_desc"                              "Совершайте убийства из MP9 в режиме <b>стражей: {s:location}</b>."
-
-// OP11 Week 12 Missions
-		"quest_1151_var_desc"                              "Совершайте убийства из пистолетов-пулемётов в режиме <b>стражей: {s:location}</b>."
-		"quest_1152_var_desc"                              "Совершайте серии убийств"
-
-// OP11 Week 13 Missions
-		"quest_1155_var_desc"                              "Совершайте убийства из оружия врага в режиме <b>стражей: ({s:location})</b>."
-		"quest_1156_var_desc"                              "Совершайте убийства в различных местах"
-		"quest_1157_var_desc"                              "Наносите граффити в различных местах"
-
-// OP11 Week 14 Missions
-		"quest_1159_var_desc"                              "Совершайте убийства пробивными зарядами в режиме <b>стражей: {s:location}</b>."
-
-// OP11 Week 15 Missions
-		"quest_1163_var_desc"                              "Совершайте убийства из тяжёлого оружия в режиме <b>стражей: {s:location}</b>."
-
-// OP11 Week 16 Missions
-		"quest_1167_var_desc"                              "Совершайте убийства в режиме <b>стражей: {s:location}</b>."
-		"quest_1169_var_desc"                              "Совершайте убийства оружием, входящем в коллекции операции «Хищные воды»"
-
-
-// OP11 Week 1 Sub-Missions
-		"quest_1200_var_desc"                              "Победите в {d:points} матче"
-		"quest_1201_var_desc"                              "Победите в {d:points} раундах"
-		"quest_1202_var_desc"                              "Нанесите {d:points} ед. урона гранатами <i>за один матч</i>"
-		"quest_1203_var_desc"                              "Нанесите {d:points} ед. урона гранатами"
-		"quest_1204_var_desc"                              "Уничтожьте вражеский дрон"
-		"quest_1205_var_desc"                              "Взорвите бочку"
-		"quest_1206_var_desc"                              "Ломайте стекло"
-		"quest_1207_var_desc"                              "Спрыгните с верхушки водонапорной башни, подлетев на толчковой мине"
-		"quest_1208_var_desc"                              "Спасите заложника"
-		"quest_1209_var_desc"                              "Убейте врага, находясь на базе террористов"
-		"quest_1210_var_desc"                              "Убейте врага, находясь на рампе террористов"
-		"quest_1211_var_desc"                              "Убейте врага, находясь на точке закладки А"
-		"quest_1212_var_desc"                              "Убейте врага, находясь на базе спецназа"
-		"quest_1213_var_desc"                              "Убейте врага, находясь в магазине"
-		"quest_1214_var_desc"                              "Убейте врага, находясь на точке закладки В"
-		"quest_1215_var_desc"                              "Убейте врага, находясь на «Уступе»"
-		"quest_1216_var_desc"                              "Убейте врага, находясь в «Центре»"
-		"quest_1217_var_desc"                              "Убейте врага, находясь на «Ступенях»"
-		"quest_1218_var_desc"                              "Убейте врага, находясь на точке закладки А (да, снова!)"
-		"quest_1219_var_desc"                              "Совершите несколько убийств в {d:points} раундах <i>за один матч</i>"
-		"quest_1220_var_desc"                              "Совершите {d:points} убийств"
-
-// OP11 Week 2 Sub-Missions
-		"quest_1221_var_desc"                              "Победите в {d:points} матче"
-		"quest_1222_var_desc"                              "Победите в {d:points} раундах"
-		"quest_1223_var_desc"                              "Совершите {d:points} убийств выстрелами в голову за <i>один матч</i>"
-		"quest_1224_var_desc"                              "Совершите {d:points} убийств выстрелами в голову"
-		"quest_1225_var_desc"                              "Наносите урон гранатами"
-		"quest_1226_var_desc"                              "Совершите {d:points} убийств"
-
-// OP11 Week 3 Sub-Missions		
-		"quest_1227_var_desc"                              "Победите в {d:points} матче"
-		"quest_1228_var_desc"                              "Победите в {d:points} раунде"
-		"quest_1229_var_desc"                              "Нанесите {d:points} ед. урона <i>за один матч</i>"
-		"quest_1230_var_desc"                              "Нанесите {d:points} ед. урона"
-		"quest_1231_var_desc"                              "Наносите граффити на базе спецназа"
-		"quest_1232_var_desc"                              "Наносите граффити на точке закладки А"
-		"quest_1233_var_desc"                              "Наносите граффити в «Яме»"
-		"quest_1234_var_desc"                              "Наносите граффити на точке закладки В"
-		"quest_1235_var_desc"                              "Наносите граффити у дверей в центре"
-		"quest_1236_var_desc"                              "Наносите граффити на базе террористов"
-		"quest_1237_var_desc"                              "Наносите граффити на «Уступе»"
-		"quest_1238_var_desc"                              "Наносите граффити в «Верхнем туннеле»"
-		"quest_1239_var_desc"                              "Наносите граффити у дверей «длины»"
-		"quest_1240_var_desc"                              "Наносите граффити в «Центре»"
-
-// OP11 Week 4 Sub-Missions		
-		"quest_1241_var_desc"                              "Победите в {d:points} матче"
-		"quest_1242_var_desc"                              "Победите в {d:points} раунде"
-		"quest_1243_var_desc"                              "Убейте врага, находясь на улице"
-		"quest_1244_var_desc"                              "Убейте врага, находясь на точке закладки А"
-		"quest_1245_var_desc"                              "Убейте врага, находясь в холле"
-		"quest_1246_var_desc"                              "Убейте врага, находясь на рампе"
-		"quest_1247_var_desc"                              "Убейте врага, находясь на точке закладки В"
-		"quest_1248_var_desc"                              "Убейте врага, находясь в запасном ходе"
-		"quest_1249_var_desc"                              "Убейте врага, находясь на улице (да, снова!)"
-		"quest_1250_var_desc"                              "Убейте врага, находясь на базе террористов"
-		"quest_1251_var_desc"                              "Убейте врага, находясь на «Бочке»"
-		"quest_1252_var_desc"                              "Убейте врага, находясь на базе спецназа"
-		"quest_1253_var_desc"                              "{d:points} раз(а) <i>за один матч</i>: совершите убийство одной из первых пяти пуль, выпущенных вами."
-		"quest_1254_var_desc"                              "Совершите {d:points} убийств"
-
-// OP11 Week 5 Sub-Missions		
-		"quest_1255_var_desc"                              "Заслужите {d:points} наград СЦИ <i>за один матч</i>"
-		"quest_1256_var_desc"                              "Победите в {d:points} раунде"
-		"quest_1257_var_desc"                              "Совершите {d:points} убийств выстрелами в голову <i>за один матч</i>"
-		"quest_1258_var_desc"                              "Совершите {d:points} убийств выстрелами в голову"
-		"quest_1259_var_desc"                              "Заработайте деньги, когда у вашего планшета нет связи"
-		"quest_1260_var_desc"                              "Купите улучшение планшета «Высокое разрешение»"
-		"quest_1261_var_desc"                              "Уничтожьте автоматическую турель"
-		"quest_1262_var_desc"                              "Заложите C4 в «Отеле»"
-		"quest_1263_var_desc"                              "Нанесите урон врагу, стоя на камне"
-		
-// OP11 Week 6 Sub-Missions	
-		"quest_1264_var_desc"                              "Победите в {d:points} матче"
-		"quest_1265_var_desc"                              "Победите в {d:points} раунде"
-		"quest_1266_var_desc"                              "Совершите 3 убийства подряд"
-		"quest_1267_var_desc"                              "Совершите 5 убийств подряд"
-		"quest_1268_var_desc"                              "Совершите 7 убийств подряд"
-		"quest_1269_var_desc"                              "Совершите {d:points} убийств из чужого оружия <i>за один матч</i>"
-		"quest_1270_var_desc"                              "Совершите {d:points} убийств из чужого оружия"
-
-// OP11 Week 7 Sub-Missions			
-		"quest_1271_var_desc"                              "Победите в {d:points} матче"
-		"quest_1272_var_desc"                              "Победите в {d:points} раунде"
-		"quest_1273_var_desc"                              "Убейте врага, находясь у дверей в центре"
-		"quest_1274_var_desc"                              "Убейте врага, находясь на уступе"
-		"quest_1275_var_desc"                              "Убейте врага, находясь в верхней части центра"
-		"quest_1276_var_desc"                              "Убейте врага, находясь в яме"
-		"quest_1277_var_desc"                              "Убейте врага, находясь на точке закладки А"
-		"quest_1278_var_desc"                              "Убейте врага, находясь у дверей в центре (да, снова!)"
-		"quest_1279_var_desc"                              "Убейте врага, находясь на точке закладки В"
-		"quest_1280_var_desc"                              "Убейте врага, находясь в туннелях"
-		"quest_1281_var_desc"                              "Убейте врага, находясь на рампе террористов"
-		"quest_1282_var_desc"                              "Убейте врага, находясь на базе террористов"
-		"quest_1283_var_desc"                              "Нанесите {d:points} ед. урона <i>за один матч</i>, находясь в воздухе"
-		"quest_1284_var_desc"                              "Нанесите {d:points} ед. урона, находясь в воздухе"
-
-// OP11 Week 8 Sub-Missions			
-		"quest_1285_var_desc"                              "Победите в {d:points} матче"
-		"quest_1286_var_desc"                              "Победите в {d:points} раундах"
-		"quest_1287_var_desc"                              "Доберитесь до ножа"
-		"quest_1288_var_desc"                              "Улучшите своё оружие {d:points} раз"
-		"quest_1289_var_desc"                              "Киньте дымовую гранату в верхнюю часть центра"
-		"quest_1290_var_desc"                              "Киньте дымовую гранату на дугу"
-		"quest_1291_var_desc"                              "Киньте коктейль Молотова на дугу"
-		"quest_1292_var_desc"                              "Ослепите 3 врагов за один матч"
-		"quest_1293_var_desc"                              "Нанесите {d:points} ед. урона гранатами за один матч"
-
-// OP11 Week 9 Sub-Missions			
-		"quest_1294_var_desc"                              "Совершите {d:points} убийств в голову <i>за один матч</i>"
-		"quest_1295_var_desc"                              "Совершите {d:points} убийств выстрелами в голову"
-		"quest_1296_var_desc"                              "Нанесите граффити наверху водонапорной башни"
-		"quest_1297_var_desc"                              "Нанесите граффити у якоря на пирсе"
-		"quest_1298_var_desc"                              "Нанесите граффити у крана"
-		"quest_1299_var_desc"                              "Нанесите граффити на крыше здания радио"
-		"quest_1300_var_desc"                              "Нанесите граффити в магазине рядом с отелем"
-		"quest_1301_var_desc"                              "Нанесите граффити в зоне гриля на пикнике"
-		"quest_1302_var_desc"                              "Нанесите граффити на маяке"
-		"quest_1303_var_desc"                              "Нанесите граффити на мост"
-		"quest_1304_var_desc"                              "Нанесите граффити в зоне стройки"
-		"quest_1305_var_desc"                              "Совершите {d:points} убийств из Desert Eagle <i>за один матч</i>"
-		"quest_1306_var_desc"                              "Улучшите своё оружие {d:points} раз"
-
-// OP11 Week 10 Sub-Missions			
-		"quest_1307_var_desc"                              "Победите в {d:points} матче"
-		"quest_1308_var_desc"                              "Победите в {d:points} раунде"
-		"quest_1309_var_desc"                              "Убейте врага, находясь на игровой площадке"
-		"quest_1310_var_desc"                              "Убейте врага, находясь в верхнем парке"
-		"quest_1311_var_desc"                              "Убейте врага, находясь на точке закладки А"
-		"quest_1312_var_desc"                              "Убейте врага, находясь на снайперской позиции"
-		"quest_1313_var_desc"                              "Убейте врага, находясь на точке закладки В"
-		"quest_1314_var_desc"                              "Убейте врага, находясь на базе террористов"
-		"quest_1315_var_desc"                              "Убейте врага, находясь в туннелях"
-		"quest_1316_var_desc"                              "Убейте врага, находясь на игровой площадке (снова!)"
-		"quest_1317_var_desc"                              "Убейте врага, находясь у фонтана"
-		"quest_1318_var_desc"                              "Убейте врага, находясь в уборной"
-		"quest_1319_var_desc"                              "Совершите {d:points} убийств выстрелами в голову <i>за один матч</i>"
-		"quest_1320_var_desc"                              "Совершите {d:points} убийств выстрелами в голову"
-
-// OP11 Week 11 Sub-Missions			
-		"quest_1321_var_desc"                              "Победите в {d:points} матче"
-		"quest_1322_var_desc"                              "Победите в {d:points} раунде"
-		"quest_1323_var_desc"                              "Используйте медшприц {d:points} раза <i>за один матч</i>"
-		"quest_1324_var_desc"                              "Используйте медшприц {d:points} раз"
-		"quest_1325_var_desc"                              "Нанесите {d:points} ед. урона гранатами <i>за один матч</i>"
-		"quest_1326_var_desc"                              "Нанесите {d:points} ед. урона гранатами"
-
-// OP11 Week 12 Sub-Missions			
-		"quest_1327_var_desc"                              "Победите в {d:points} матче"
-		"quest_1328_var_desc"                              "Победите в {d:points} раунде"
-		"quest_1329_var_desc"                              "Совершите серию из 3 убийств"
-		"quest_1330_var_desc"                              "Совершите серию из 4 убийств"
-		"quest_1331_var_desc"                              "Совершите серию из 5 убийств"
-		"quest_1332_var_desc"                              "Совершите {d:points} убийств разным оружием <i>за один матч</i>"
-		"quest_1333_var_desc"                              "Совершите {d:points} убийств разным оружием (в разных матчах оружие может повторяться)"
-
-// OP11 Week 13 Sub-Missions			
-		"quest_1334_var_desc"                              "Победите в {d:points} матче"
-		"quest_1335_var_desc"                              "Победите в {d:points} раунде"
-		"quest_1336_var_desc"                              "Убейте врага, находясь в центре"
-		"quest_1337_var_desc"                              "Убейте врага, находясь на точке закладки А"
-		"quest_1338_var_desc"                              "Убейте врага, находясь на базе спецназа"
-		"quest_1339_var_desc"                              "Убейте врага, находясь в доме"
-		"quest_1340_var_desc"                              "Убейте врага, находясь на точке закладки В"
-		"quest_1341_var_desc"                              "Убейте врага, находясь в руинах"
-		"quest_1342_var_desc"                              "Убейте врага, находясь на базе террористов"
-		"quest_1343_var_desc"                              "Убейте врага, находясь в основном корридоре"
-		"quest_1344_var_desc"                              "Убейте врага, находясь на точке закладки А (снова!)"
-		"quest_1345_var_desc"                              "Убейте врага, находясь в центре (снова!)"
-		"quest_1346_var_desc"                              "Нанесите граффити на арке к западу от касбы"
-		"quest_1347_var_desc"                              "Нанесите граффити на спиральной лестнице у касбы"
-		"quest_1348_var_desc"                              "Нанесите граффити на куполе"
-		"quest_1349_var_desc"                              "Нанесите граффити на вертолётной площадке на базе"
-		"quest_1350_var_desc"                              "Нанесите граффити на барже"
-		"quest_1351_var_desc"                              "Нанесите граффити в отеле «Аврора» в городе"
-		"quest_1352_var_desc"                              "Нанесите граффити на третьем резервуаре"
-		"quest_1353_var_desc"                              "Нанесите граффити на маяке"
-		"quest_1354_var_desc"                              "Нанесите граффити на пирсе в доках"
-
-// OP11 Week 14 Sub-Missions			
-		"quest_1355_var_desc"                              "Победите в {d:points} матче"
-		"quest_1356_var_desc"                              "Победите в {d:points} раунде"
-		"quest_1357_var_desc"                              "Совершите {d:points} убийств с прицеливанием <i>за один матч</i>"
-		"quest_1358_var_desc"                              "Совершите {d:points} убийств с прицеливанием"
-		"quest_1359_var_desc"                              "Совершите убийство в первые 30 секунд раунда {d:points} раз"
-		"quest_1360_var_desc"                              "Совершите {d:points} убийств"
-
-// OP11 Week 15 Sub-Missions			
-		"quest_1361_var_desc"                              "Победите в {d:points} матче"
-		"quest_1362_var_desc"                              "Победите в {d:points} раунде"
-		"quest_1363_var_desc"                              "Убейте лидера гонки вооружений {d:points} раз(а) <i>за один матч</i>"
-		"quest_1364_var_desc"                              "Совершите {d:points} убийств"
-		"quest_1365_var_desc"                              "Нанесите {d:points} ед. урона <i>за один матч</i>"
-		"quest_1366_var_desc"                              "Нанесите {d:points} ед. урона"
-
-// OP11 Week 16 Sub-Missions	
-		"quest_1367_var_desc"                              "Победите в {d:points} матче"
-		"quest_1368_var_desc"                              "Победите в {d:points} раунде"
-		"quest_1369_var_desc"                              "Совершите {d:points} убийств в облике агента операции «Хищные воды» <i>за один матч</i>"
-		"quest_1370_var_desc"                              "Совершите {d:points} убийств"
-		"quest_1371_var_desc"                              "Совершите {d:points} убийств оружием, входящем в коллекции операции «Хищные воды»"
-		"quest_1372_var_desc"                              "Совершите {d:points} убийств"
-
-
-
-		"quest_default_hud_var_desc" "{s:commandverb} {s:target} {s:actions}"
-		"quest_weapon_hud_var_desc" "{s:commandverb} {s:actions}: {s:weapon}"
-		"quest_single_hud_var_desc"	"{s:commandverb} {s:target} {s:actions}<br> до конца матча"
-		"quest_weapon_single_hud_var_desc" "{s:commandverb} {s:actions}: {s:weapon}<br> до конца матча"
-	
-		//hud exceptions:
-		"quest_931_hud_var_desc"	"Совершайте убийства: {s:weapon}"
-		"quest_932_hud_var_desc"	"Совершайте убийства в воздухе"
-		"quest_933_hud_var_desc"	"Побеждайте в раундах"
-		"quest_934_hud_var_desc"	"Совершайте убийства: {s:weapon}"
-		"quest_935_hud_var_desc"	"Совершайте в этом матче убийства,<br>используя {s:weapon}"
-		"quest_936_hud_var_desc"	"Совершайте убийства: {s:weapon}"
-		"quest_937_hud_var_desc"	"Наносите граффити"
-		"quest_937_hud_var_desc_CT"	"Наносите граффити на «Бочке» или в «Трофеях»"
-		"quest_937_hud_var_desc_T"	"Наносите граффити на «Верхе» или в «Гараже»"
-        "quest_938_hud_var_desc"	"Убивайте лидера гонки вооружений"
-        "quest_939_hud_var_desc"	"Совершайте убийства: {s:weapon}"
-        "quest_940_hud_var_desc"	"Побеждайте в раундах"
-        "quest_941_hud_var_desc"	"Побеждайте в пистолетных раундах"
-        "quest_942_hud_var_desc"	"Совершайте в этом матче убийства,<br>используя {s:weapon}"
-        "quest_943_hud_var_desc"	"Совершайте убийства"
-        "quest_944_hud_var_desc"	"Тратьте деньги"
-        "quest_945_hud_var_desc"	"Совершайте убийства"
-        "quest_946_hud_var_desc"	"Побеждайте в раундах"
-        "quest_947_hud_var_desc"	"Побеждайте в раундах"
-		"quest_948_hud_var_desc"	"Совершите или остановите спасение"
-		"quest_948_hud_var_desc_CT"	"Спасайте заложников"
-		"quest_948_hud_var_desc_T"	"Убейте спецназовца, несущего заложника"
-        "quest_949_hud_var_desc"	"Совершайте убийства: {s:weapon}"
-        "quest_950_hud_var_desc"	"Совершайте убийства из тяжёлого оружия"	
-        "quest_951_hud_var_desc"	"Совершайте убийства: {s:weapon}"	
-        "quest_952_hud_var_desc"	"Побеждайте в раундах"	
-        "quest_953_hud_var_desc"	"Побеждайте в раундах"	
-        "quest_954_hud_var_desc"	"Убивайте {s:target} в этом матче"
-		"quest_955_hud_var_desc" 	"Приручайте куриц кнопкой [{s:bind_use}] <br> на {d:points} секунд."
-		"quest_956_hud_var_desc" 	"Набирайте секунды спуска с парашютом"
-		"quest_957_hud_var_desc" 	"Совершайте убийства: {s:weapon}"
-		"quest_958_hud_var_desc" 	"Побеждайте в раундах"
-		"quest_959_hud_var_desc" 	"Совершайте убийства"
-		"quest_960_hud_var_desc" 	"Совершайте убийства: {s:weapon}"
-		"quest_961_hud_var_desc"	"Совершайте убийства пистолетами"
-		"quest_962_hud_var_desc"	"Совершайте в этом матче убийства,<br>не тратя деньги"
-		"quest_963_hud_var_desc"	"Совершайте убийства: {s:weapon}"
-		"quest_964_hud_var_desc"	"Побеждайте в пистолетных раундах"
-		"quest_965_hud_var_desc"    "Совершайте убийства"
-		"quest_966_hud_var_desc" 	"Зарабатывайте деньги"
-		"quest_967_hud_var_desc"	"Совершайте убийства: {s:weapon}"
-		"quest_968_hud_var_desc"    "Совершайте убийства снайперскими винтовками"
-		"quest_969_hud_var_desc"	"Совершайте убийства без прицеливания: {s:weapon}"
-		"quest_970_hud_var_desc"	"Побеждайте в раундах"
-		"quest_971_hud_var_desc"	"Совершайте убийства"
-		"quest_972_hud_var_desc"    "Совершайте убийства выстрелами <br> в голову в этом матче"
-		"quest_973_hud_var_desc" 	"Совершайте убийства"
-		"quest_974_hud_var_desc" 	"Совершайте убийства выстрелами в голову"
-		"quest_975_hud_var_desc"    "Совершайте убийства оружием спецназа"
-		"quest_976_hud_var_desc" 	"Побеждайте в раундах"
-		"quest_977_hud_var_desc"	"Побеждайте в раундах"
-		"quest_978_hud_var_desc"	"Совершайте убийства: {s:weapon}"
-		"quest_979_hud_var_desc" 	"Совершите серию из четырёх убийств"
-        "quest_980_hud_var_desc" 	"Займите хотя бы четвёртое место"
-		"quest_981_hud_var_desc" 	"Совершайте убийства выстрелами в голову: {s:weapon}"		
-		"quest_982_hud_var_desc"	"Совершайте в этом матче убийства <br> выстрелами в голову: {s:weapon}"	
-		"quest_983_hud_var_desc" 	"Совершайте убийства выстрелами в голову"
-		"quest_984_hud_var_desc"    "Заслужите награды СЦИ"
-		"quest_985_hud_var_desc" 	"Совершайте убийства из начального пистолета"
-		"quest_986_hud_var_desc" 	"Совершайте убийства: {s:weapon}"
-		"quest_987_hud_var_desc"	"Совершайте убийства"
-		"quest_987_hud_var_desc_CT"	"Совершайте убийства из AK-47"
-		"quest_987_hud_var_desc_T"	"Совершайте убийства из M4A4 или M4A1-S"
-		"quest_988_hud_var_desc" 	"Совершайте убийства ножом"
-		"quest_989_hud_var_desc"	"Наносите урон гранатами"
-		"quest_990_hud_var_desc" 	"Совершайте эйсы"
-		"quest_991_hud_var_desc_CT" "Совершайте убийства: Five-Seven"
-		"quest_991_hud_var_desc_T" 	"Совершайте убийства: Tec-9"
-		"quest_991_hud_var_desc" 	"Совершайте убийства: Tec-9 или Five-Seven"
-		"quest_992_hud_var_desc" 	"Совершайте убийства: пробивной заряд"
-		"quest_993_hud_var_desc" 	"Наносите урон гранатами"
-		"quest_994_hud_var_desc" 	"Совершайте убийства"
-		"quest_995_hud_var_desc" 	"Побеждайте в раундах"
-		"quest_996_hud_var_desc"	"Совершайте убийства"
-		"quest_997_hud_var_desc_CT"	"Совершайте убийства: FAMAS"
-		"quest_997_hud_var_desc_T"	"Совершайте убийства: «Галиль»"
-		"quest_997_hud_var_desc"	"Совершайте убийства: «Галиль» или FAMAS"
-		"quest_998_hud_var_desc" 	"Совершайте убийства: {s:weapon}"
-		"quest_999_hud_var_desc"	"Совершайте убийства: {s:weapon}"
-		"quest_1000_hud_var_desc" 	"Уничтожайте вражеские дроны"
-		"quest_1001_hud_var_desc"   "Заслужите награды СЦИ<br>в этом матче"
-		"quest_1002_hud_var_desc" 	"Убивайте несколько врагов за раунд"
-		"quest_1003_hud_var_desc"   "Совершайте убийства: {s:weapon}"
-		"quest_1004_hud_var_desc"   "Совершайте убийства: {s:weapon}"
-		"quest_1005_hud_var_desc" 	"Побеждайте в раундах"
-		"quest_1006_hud_var_desc" 	"Совершайте убийства"
-		"quest_1007_hud_var_desc" 	"Уничтожайте запертые двери"
-		"quest_1008_hud_var_desc_CT" 	"Совершайте убийства: M4A4 или M4A1-S"
-		"quest_1008_hud_var_desc_T"  	"Совершайте убийства: AK-47"
-		"quest_1008_hud_var_desc" 	"Совершайте убийства: AK-47 или M4A4"
-		"quest_1009_hud_var_desc"	"Побеждайте в раундах"
-		"quest_1010_hud_var_desc"	"Совершайте убийства: {s:weapon}"
-		"quest_1011_hud_var_desc" 	"Выиграйте в 5 раундах за любую половину игры"
-		"quest_1012_hud_var_desc"	"Наступайте на прыжковые мины"
-		"quest_1013_hud_var_desc" 	"Совершайте убийства: {s:weapon}"
-		"quest_1014_hud_var_desc"   "Совершайте убийства: {s:weapon}"
-		"quest_1015_hud_var_desc"   "Совершайте убийства, потратив меньше $2000"
-		"quest_1016_hud_var_desc"   "Наберите $3000"
-		"quest_1017_hud_var_desc" 	"Побеждайте в раундах"
-		"quest_1018_hud_var_desc" 	"Совершайте убийства"
-		"quest_1019_hud_var_desc" 	"Совершайте убийства: пистолеты-пулемёты"
-		"quest_1020_hud_var_desc" 	"Совершайте убийства: {s:weapon}"
-		"quest_1021_hud_var_desc" 	"Убивайте куриц"
-		"quest_1022_hud_var_desc" 	"Взрывайте бочки"
-		"quest_1023_hud_var_desc" 	"Побеждайте в раундах"
-		"quest_1024_hud_var_desc" 	"Разбивайте стёкла"
-		"quest_1025_hud_var_desc" 	"Побеждайте в раундах"
-		"quest_1027_hud_var_desc"	"Наносите граффити<br> на стартовой вражеской территории"
-		"quest_1028_hud_var_desc"	"Совершайте убийства с «Дуги»<br>или из «Апартаментов»"
-		"quest_1029_hud_var_desc"	"Кидайте дымовые гранаты"
-		"quest_1029_hud_var_desc_CT"	"Кидайте дымовые гранаты<br>в апартаменты или на рампу террористов"
-		"quest_1029_hud_var_desc_T"	"Кидайте дымовые гранаты<br>на «Снайперскую позицию» или «Лестницу»"
-		"quest_1098_hud_var_desc"               "Побеждайте в раундах"
-		"quest_1032_hud_var_desc"               "Побеждайте в раундах"
-		"quest_1033_hud_var_desc"               "Совершайте убийства"
-		"quest_1034_hud_var_desc"               "Расследуйте деятельность «Феникса»"
-		"quest_1035_hud_var_desc"               "Совершайте убийства: AK-47, M4A4 или M4A1-S"
-		"quest_1036_hud_var_desc"               "Побеждайте в раундах"
-		"quest_1037_hud_var_desc"               "Совершайте убийства"
-		"quest_1099_hud_var_desc"               "Заслужите награды СЦИ"
-		"quest_1038_hud_var_desc"               "Побеждайте в раундах"
-		"quest_1039_hud_var_desc"               "Совершайте убийства: разные пистолеты"
-		"quest_1040_hud_var_desc"               "Совершайте убийства: пистолеты"
-		"quest_1041_hud_var_desc"               "Совершайте убийства: Desert Eagle"
-		"quest_1042_hud_var_desc"               "Побеждайте в раундах"
-		"quest_1043_hud_var_desc"               "Совершайте убийства"
-		"quest_1044_hud_var_desc"               "Совершайте убийства минимум с 15 метров"
-		"quest_1045_hud_var_desc"               "Совершайте убийства: снайперские винтовки"
-		"quest_1046_hud_var_desc"               "Совершайте убийства выстрелами в голову"
-		"quest_1047_hud_var_desc"               "Совершайте убийства: M249"
-		"quest_1048_hud_var_desc"               "Наносите урон гранатами"
-		"quest_1049_hud_var_desc"               "Зарабатывайте деньги"
-		"quest_1050_hud_var_desc"               "Побеждайте в раундах"
-		"quest_1051_hud_var_desc"               "Совершайте убийства"
-		"quest_1052_hud_var_desc"               "Выберите карточку врага"
-		"quest_1053_hud_var_desc"               "Кидайте дымовые гранаты"
-		"quest_1053_hud_var_desc_T"             "Кидайте дымовые гранаты в «Гараж» или «Главный вход»"
-		"quest_1053_hud_var_desc_CT"            "Кидайте дымовые гранаты в «Комнату управления» или «Будку»"
-		"quest_1054_hud_var_desc"               "Побеждайте в раундах"
-		"quest_1055_hud_var_desc"               "Совершайте убийства"
-		"quest_1056_hud_var_desc"               "Совершайте убийства из «Туннеля» или «Дворца»"
-		"quest_1057_hud_var_desc"               "Совершайте убийства"
-		"quest_1058_hud_var_desc"               "Побеждайте в раундах"
-		"quest_1059_hud_var_desc"               "Совершайте убийства"
-		"quest_1060_hud_var_desc"               "Совершайте убийства: {s:weapon}"
-		"quest_1061_hud_var_desc"               "Совершайте убийства: {s:weapon}"
-		"quest_1062_hud_var_desc"               "Побеждайте в раундах"
-		"quest_1063_hud_var_desc"               "Совершайте убийства"
-		"quest_1064_hud_var_desc"               "Выберите карточку СЦИ"
-		"quest_1065_hud_var_desc"               "Наносите граффити"
-		"quest_1065_hud_var_desc_T"             "Наносите граффити в «Центре»"
-		"quest_1065_hud_var_desc_CT"            "Наносите граффити в «Верхнем проходе террористов» или на «Улице»"
-		"quest_1100_hud_var_desc"               "Побеждайте в раундах"
-		"quest_1066_hud_var_desc"               "Побеждайте в раундах"
-		"quest_1067_hud_var_desc"               "Совершайте убийства выстрелами в голову из AUG"
-		"quest_1068_hud_var_desc"               "Ослепите врага светошумовой гранатой"
-		"quest_1069_hud_var_desc"               "Наносите граффити"
-		"quest_1069_hud_var_desc_T"             "Наносите граффити на «Уступе» или в «Верхнем туннеле»"
-		"quest_1069_hud_var_desc_CT"            "Наносите граффити в «Нижнем туннеле» или на «Коротком подъёме»"
-		"quest_1101_hud_var_desc"               "Побеждайте в раундах"
-		"quest_1070_hud_var_desc"               "Побеждайте в раундах"
-		"quest_1071_hud_var_desc"               "С расстояния не более 10 метров"
-		"quest_1072_hud_var_desc"               "Совершайте убийства с расстояния не более 10 метров"
-		"quest_1073_hud_var_desc"               "Совершайте убийства"
-		"quest_1074_hud_var_desc"               "Побеждайте в раундах"
-		"quest_1075_hud_var_desc"               "Совершайте убийства"
-		"quest_1076_hud_var_desc"               "Совершайте убийства выстрелами в голову"
-		"quest_1077_hud_var_desc"               "Совершайте убийства: {s:weapon}"
-		"quest_1102_hud_var_desc"               "Побеждайте в раундах"
-		"quest_1078_hud_var_desc"               "Побеждайте в раундах"
-		"quest_1079_hud_var_desc"               "Совершайте убийства: {s:weapon}"
-		"quest_1080_hud_var_desc"               "Убивайте куриц"
-		"quest_1081_hud_var_desc"               "Совершайте убийства"
-		"quest_1082_hud_var_desc"               "Побеждайте в раундах"
-		"quest_1083_hud_var_desc"               "Совершайте убийства"
-		"quest_1084_hud_var_desc"               "Совершайте убийства"
-		"quest_1085_hud_var_desc"               "Наносите урон гранатами"
-		"quest_1085_v2_hud_var_desc"     	    "Наносите урон гранатами"
-		"quest_1086_hud_var_desc"               "Побеждайте в раундах"
-		"quest_1087_hud_var_desc"               "Совершайте убийства"
-		"quest_1088_hud_var_desc"               "Совершайте убийства из определённых мест"
-		"quest_1088_hud_var_desc_T"             "Убивайте врагов, находящихся на точках закладки"
-		"quest_1088_hud_var_desc_CT"            "Совершайте убийства, находясь на точке закладки"
-		"quest_1089_hud_var_desc"               "Совершайте убийства с прицеливанием"
-		"quest_1089_v2_hud_var_desc"               "Совершайте убийства с прицеливанием"
-		"quest_1090_hud_var_desc"               "Побеждайте в раундах"
-		"quest_1091_hud_var_desc"               "Совершайте убийства"
-		"quest_1092_hud_var_desc"               "Зарабатывайте очки, используя бонусное оружие"
-		"quest_1092_v2_hud_var_desc"            "Зарабатывайте очки, используя бонусное оружие"
-		"quest_1093_hud_var_desc"               "Тратьте деньги"
-		"quest_1094_hud_var_desc"               "Побеждайте в раундах"
-		"quest_1095_hud_var_desc"               "Совершайте убийства"
-		"quest_1095_v2_hud_var_desc"            "Совершайте убийства: UMP-45"
-		"quest_1096_hud_var_desc"               "Побеждайте в раундах"
-		"quest_1097_hud_var_desc"               "Выполните миссию"
-		"quest_1097_v2_hud_var_desc"            "Проберитесь вглубь базы «Феникса»"
-		"quest_1103_hud_var_desc"               "Ослепите врагов светошумовыми гранатами"
-
-
-
-
-/////////////////////////////////////////////////////////////////
-
-
-
-// win quests
-
-		"Quest_Win_a_Mode"										"Устранение угрозы: <b>%gamemode%</b>"
-		"Quest_Win_a_Mode_desc"								"Выиграйте один матч в режиме <b>«%gamemode%»</b>."
-
-		"Quest_Win_a_Mapgroup"								"Окончить игру: <b>%mapgroup% (%gamemode%)</b>"
-		"Quest_Win_a_Mapgroup_desc"						"Совершите несколько %actions% в режиме <b>«%gamemode%»</b> <b>(%mapgroup%)</b>."
-
-		"Quest_Win_a_Map"											"Окончить игру: <b>%map% (%gamemode%)</b>"
-		"Quest_Win_a_Map_desc"								"Совершите несколько %actions% на карте <b>%map%</b> в режиме <b>«%gamemode%»</b>."
-
-		"Quest_Win_Rounds_Map"								"Сражение: <b>%gamemode%, %mapgroup%</b>"
-		"Quest_Win_Rounds_Map_desc"						"Получите несколько %actions% в режиме <b>«%gamemode%»</b> <b>(%mapgroup%)</b>."
-		"Quest_Win_Rounds_Map_Short"						"Победы в раундах"
-
-// equipment quests
-
-		"Quest_Weapon_Mode"										"Освоение оружия: <b>%gamemode%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Mode_desc"							"Совершите несколько %actions%%optional_target%, используя <b>%weapon%</b> в режиме <b>«%gamemode%»</b>."
-		
-		"Quest_Weapon_Mode_single_desc"				"Совершите одно убийство из <b>%weapon%</b> в режиме <b>«%gamemode%»</b>."
-
-// equipment + mapgroup quests
-
-		"Quest_Weapon_Mapgroup"							"Освоение оружия: <b>%weapon%</b> (<b>%mapgroup%</b>)"
-		"Quest_Weapon_Mapgroup_desc"					"Совершите несколько %actions% %optional_target%из <b>%weapon%</b> в режиме <b>«%gamemode%» (%mapgroup%)</b>."
-		"Quest_WeaponDamage_Mapgroup_desc"					"Нанесите врагам определенное количество %optional_target%%actions% из <b>%weapon%</b> в режиме <b>%gamemode% (%mapgroup%)</b>."
-
-	"Quest_Weapon_Within_3_Mapgroup"						"Проверка умений: <b>%mapgroup%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Within_3_Mapgroup_desc"				"Совершите несколько %actions% %optional_target% из <b>%weapon%</b> <i>за первые 3 выстрела в раунде</i> в режиме <b>«%gamemode%» (%mapgroup%)</b>."
-
-	"Quest_Weapon_Map"									"Освоение оружия: <b>%weapon%</b> (<b>%map%</b>)"
-		"Quest_Weapon_Map_desc"								"Совершите несколько %actions% %optional_target%из <b>%weapon%</b> в режиме <b>«%gamemode%» на карте %map%</b>."
-		"Quest_Weapon_Map_Team_desc"		"Играя за команду <b>%team%</b>, совершите несколько %actions% %optional_target%, используя <b>%weapon%</b> в режиме <b>«%gamemode%» на карте %map%</b>."		
-		"Quest_Weapon_Mapgroup_Team_desc"		"Играя за <b>%team%</b>, совершите несколько %actions%%optional_target%, используя <b>%weapon%</b> в режиме <b>«%gamemode%» (%mapgroup%)</b>."		
-
-		"Quest_WepUpgrade_Mapgroup"					"Улучшение оружия: <b>%mapgroup%</b>"
-
-	"Quest_Unique_Weapon_Mapgroup"							"Эксперт по оружию: <b>%mapgroup%</b>"
-		"Quest_Unique_Weapon_Mapgroup_desc"					"В режиме <b>«%gamemode%» (%mapgroup%)</b> продвигайтесь по миссии за каждое %action% <i>из уникального оружия</i>."
-		"Quest_Unique_Weapon_Mapgroup_Team_desc"					"Играя за <b>%team%</b> в режиме <b>«%gamemode%» (%mapgroup%)</b>, продвигайтесь по миссии за каждое %action% <i>из уникального оружия</i>."
-
-		"Quest_Defend_Bomb_Mapgroup_desc"					"Совершите несколько %actions% <i>после закладки бомбы</i> в режиме <b>«%gamemode%» (%mapgroup%)</b>."
-
-// Hostage quests
-
-	 "Quest_Rescue_Map"								"Спасение заложника: <b>%map%</b>"
-	 "Quest_Rescue_Map_Desc"						"Совершите несколько %actions% в режиме <b>«%gamemode%» (%map%)</b>."
-
-// Plant bomb quests
-
-	 "Quest_PlantBomb_Mapgroup"									"Эксперт по взрывчатке: <b>%mapgroup%</b>"
-	 "Quest_PlantBomb_Mapgroup_Desc"						"Совершите несколько %actions% в режиме <b>«%gamemode%» (%mapgroup%)</b>."
-
-
-// Assassination
-
-	 "Quest_Assassination"									"Устранение %victim_team% <b>%target%</b>"
-	 "Quest_Assassination_desc"							"Найдите и устраните %victim_team% по имени <b>%target%</b> в режиме <b>«%gamemode%» на карте %map%</b>."
-
-	 "quest_target_turner"									"Turner"
-	 "quest_target_jackson"									"Jackson"
-	 "quest_target_chapel"									"Chapel"	 
-	 "quest_target_sergei"									"Sergei"	 
-
-	 "quest_assassination_you_are_target"					"Одному из игроков поставлена задача устранить вас.\nВас зовут %s1."
-	 "quest_assassination_target_on_server"					"Один из игроков пытается устранить цель — %s1"
-	 "quest_assassination_target_on_server_has_quest"		"Ваша цель устранения: %s1"
-	 "quest_assassination_target_killed"					"%s1 устранен!"
-	 "quest_assassination_no_longer_target"					"Вы больше не %s1." 
-
-// Income
-	 "Quest_Income_Mapgroup"								"Валовой доход: <b>1,000,000 $</b>"
-	 "Quest_Income_Mapgroup_desc"						"Заработайте 1,000,000 $ в режиме <b>«%gamemode%» (%mapgroup%)</b>."
-	 "Quest_Income_Mapgroup_Team_desc"			"Играя за <b>%team%</b>, заработайте в сумме $1 000 000 в режиме <b>«%gamemode%» (%mapgroup%)</b>."
-
-	 "Quest_Spend_Mapgroup_Team_desc"			"Играя за <b>%team%</b>, потратьте в сумме $1 000 000 в режиме <b>«%gamemode%» (%mapgroup%)</b>."
-
-
-//	deathmatch bonus points
-
-		"Quest_DMBonusPoints_Mapgroup"				"Специалист по вооружению: <b>%mapgroup%</b>"
-		"Quest_DMBonusPoints_Mapgroup_desc"		"Зарабатывайте очки, используя бонусное оружие в режиме <b>«Бой насмерть» (%mapgroup%)</b>."
-
-		"Quest_DMBonusPoints_Map"							"Специалист по вооружению: <b>%map%</b>"
-		"Quest_DMBonusPoints_Map_desc"				"Зарабатывайте очки, используя бонусное оружие в режиме <b>«Бой насмерть» на карте %map%</b>."
-
-// play quests
-
-		"Quest_Kills_Mapgroup"							"Разведка: <b>%mapgroup%</b> (<b>%gamemode%</b>)"
-		"Quest_Kills_Mapgroup_desc"					"Совершите несколько %actions%%optional_target% в режиме <b>«%gamemode%» (%mapgroup%)</b>."
-		"Quest_Kills_Mapgroup_cond_desc"		"Совершите несколько %actions%%optional_target% <i>%condition%</i> в режиме <b>«%gamemode%» (%mapgroup%)</b>."
-		"Quest_Kills_Mapgroup_Team_desc"		"Играя за <b>%team%</b>, совершите несколько %actions% %optional_target% в режиме <b>«%gamemode%» (%mapgroup%)</b>."		
-
-		"Quest_Kills_Mapgroup_Victim_Team_desc"		"Играя за <b>%team%</b>, совершите несколько %actions%  %victim_team% в режиме <b>«%gamemode%» (%mapgroup%)</b>."
-
-		"Quest_Flashbang_Mapgroup_Team_desc"		"Играя за <b>%team%</b>, совершите несколько %actions% %optional_target% в режиме <b>«%gamemode%» (%mapgroup%)</b>."		
-
-
-		"Quest_Burn_Mapgroup_desc"					"Нанесите врагам определенное количество %actions% <i>огнем</i> в режиме <b>«%gamemode%» (%mapgroup%)</b>."
-
-		"Quest_Headshots_Mapgroup"							"Выстрел в голову: <b>%gamemode%</b>, <b>%mapgroup%</b>"
-		"Quest_Headshots_Mapgroup_desc"					"Совершите несколько %actions% выстрелами в голову в режиме <b>«%gamemode%» (%mapgroup%)</b>."
-
-		"Quest_Kills_Map"										"Разведка: <b>%map%</b> (<b>%gamemode%</b>)"
-		"Quest_Kills_Map_desc"							"Совершите несколько %actions%%optional_target% в режиме <b>«%gamemode%»</b> на карте <b>%map%</b>."
-
-		"Quest_Kills_Mode"								"Разведка: <b>%gamemode%</b>"
-		"Quest_Kills_Mode_desc"						"Совершите несколько %actions% %optional_target%в режиме <b>«%gamemode%»</b>."
-
-// chicken quests
-
-	"Quest_Chicken_Kills_Mapgroup"				"Заготовка провианта: <b>%mapgroup%</b> (<b>%gamemode%</b>)"
-	"Quest_Chicken_Kills_Map"							"Заготовка провианта: <b>%map%</b> (<b>%gamemode%</b>)"
-	"Quest_Chicken_Kills"						"Заготовка провианта"
-
-// generic string tokens
-
-	"quest_team_ct"										"спецназовца"
-	"quest_team_terrorist"								"террориста"
-	"quest_complete_the_match"							"Доиграйте до конца, чтобы выполнить миссию"
-	"quest_complete_the_match_uncommitted"				"<img src='file://{images}/icons/ui/info.svg' class=''/>Доиграйте до конца, чтобы сохранить прогресс миссии"
-
-// Coop quests
-
-	"Quest_Guardian_Bomb"									"Совместное испытание стражей: <b>%map%</b>, <b>%weapon%</b>"
-	"Quest_Guardian_Bomb_Desc"								"Совместное испытание стражей: играя за <b>%team%</b> со своим напарником, защитите от врагов точку закладки бомбы на <b>%map%</b>.<br><br>Заработайте <b>%action%</b>, убив <b>%kills%</b> врагов из <b>%weapon%</b>. <b>%extradetails%</b>"
-	"Quest_Guardian_Desc_op08"								"Совместное испытание стражей: Играя за <b>%team%</b> с товарищем, защитите от врагов точку закладки бомбы на карте <b>%map%</b>.<br><br>Заработайте <b>%action%</b>, убив <b>%kills%</b> %killtype% при помощи <b>%weapon%</b>. <b>%extradetails%</b>%presence%"
-
-	"Quest_Guardian_Desc_op09"								"{s:commandverb} {s:kills} {s:killtype} {s:weapon} в режиме <b>стражей: {s:location}</b>."
-	"Quest_CoopMission_Desc_op09"							"<b>Совместный налёт</b>: играя с напарником, выполните задание на карте <b>{s:location}</b>."
-	"Quest_Guardian_Desc_op09_extra_equip_1_var_desc"		"{s:commandverb} {s:kills} {s:killtype} {s:weapon} в режиме <b>стражей: {s:location}</b>. Игроки начинают с <b>{s:extraequip0}</b>."
-	"Quest_Guardian_Desc_op09_extra_equip_2_var_desc"		"{s:commandverb} {s:kills} {s:killtype} {s:weapon} в режиме <b>стражей: {s:location}</b>. Игроки начинают с <b>{s:extraequip0}</b> и <b>{s:extraequip1}</b>."
-
-	"Quest_Guardian_Desc_op10"								"{s:commandverb} {s:kills} {s:killtype} {s:weapon} в режиме <b>стражей: {s:location}</b>."
-	"Quest_CoopMission_Desc_op10"							"<b>Совместный налёт</b>: играя с напарником, выполните задание на карте <b>{s:location}</b>."
-	"Quest_Guardian_Desc_op10_extra_equip_1_var_desc"		"{s:commandverb} {s:kills} {s:killtype} {s:weapon} в режиме <b>стражей: {s:location}</b>. Игроки начинают с <b>{s:extraequip0}</b>."
-	"Quest_Guardian_Desc_op10_extra_equip_2_var_desc"		"{s:commandverb} {s:kills} {s:killtype} {s:weapon} в режиме <b>стражей: {s:location}</b>. Игроки начинают с <b>{s:extraequip0}</b> и <b>{s:extraequip1}</b>."
-
-	"Quest_Coop_Desc_Rescue"								"Совместный налёт: играя за <b>%team%</b> со своим напарником, <b>спасите заложника</b> на карте <b>%map%</b>.<br><br><b>%extradetails%</b>"
-	"Quest_Coop_Desc_Recon"									"Совместный налёт: играя за <b>%team%</b> со своим напарником, <b>заполучите разведданные</b> на карте <b>%map%</b>.<br><br><b>%extradetails%</b>"
- 	"Quest_Coop_Desc_Bomb"									"Совместный налёт: играя за <b>%team%</b> со своим напарником, <b>взорвите</b> <b>%map%</b>.<br><br><b>%extradetails%</b>"
- 
-	"Quest_op09_coopmission"								"Добудьте образец вируса Запретной зоны из лаборатории «Феникса»."
-	"Quest_op10_coopmission"								"Силы «Феникса» были замечены на старой ферме. Обследуйте территорию и узнайте, что они замышляют."
-
-	"Quest_Guardian_Hostage"								"Совместное испытание стражей: <b>%map%</b>, <b>%weapon%</b>"
-	"Quest_Guardian_Hostage_Desc"							"Совместное испытание стражей: играя за <b>%team%</b> со своим напарником, не дайте спецназу спасти заложников на карте <b>%map%</b>.<br><br>Заработайте <b>%action%</b>, убив <b>%kills%</b> врагов из <b>%weapon%</b>. <b>%extradetails%</b>"
-	 
-	"quest_guardian_kills_5"								"5"
-	"quest_guardian_kills_10"								"10"
-	"quest_guardian_kills_15"								"15"
-	"quest_guardian_kills_20"								"20"
-	"quest_guardian_kills_25"								"25"
-	"quest_guardian_kills_30"								"30"
-	"quest_guardian_kills_35"								"35"
-	"quest_guardian_kills_40"								"40"
-	"quest_guardian_kills_45"								"45"
-	"quest_guardian_kills_50"								"50"
-
-// Guardian kill types
-	"quest_killtype_normal"									"убийств"
-	"quest_killtype_headshot"								"убийств <b>в голову</b>"
-	"quest_killtype_blind"									"убийств <b>ослеплённых</b> врагов"
-	"quest_killtype_unscoped"								"врагов <b>без прицела</b>"
-
-	"quest_enemy_weapon"									"вражеским оружием"
-	"quest_weapon_CZ75a_or_enemy_weapon"					"CZ75-Auto или любого вражеского оружия"
-	"quest_weapon_sniperrifle"								"любой снайперской винтовки"
-	"quest_weapon_any_rifle"								"любой винтовки"
-	"quest_weapon_m4"										"любой винтовки M4"
-	"quest_weapon_starter_ct"								"любого начального пистолета спецназа"
-	"quest_weapon_ct"										"оружия спецназа"
-	"quest_weapon_t"										"оружия террористов"
-	"quest_weapon_any_pistol"								"любого пистолета"
-	"quest_weapon_any_weapon"								"любого оружия"
-	"quest_weapon_any_shotgun"								"любого дробовика"
-	"quest_weapon_any_smg"									"любого пистолета-пулемёта"
-	"quest_weapon_ssg08_or_mag7"							"SSG 08 или MAG-7"
-	"quest_weapon_awp_or_p90"								"AWP или P90"
-	"quest_weapon_unique_pistol"							"разных пистолетов"
-	"quest_presence_heavy"									"<br><br><b>ВНИМАНИЕ</b>: Ожидайте <i>значительное</i> сопротивление!"
-
-	"quest_guardian_cantbuy"		"<i>В этой миссии нельзя покупать оружие.</i>"
-	"quest_guardian_maxmoneylimit"		"<i>Максимальное количество денег в этой миссии ограничено.</i>"
-	"quest_guardian_killrewardsonly" 	"<i>Деньги выдаются только за убийства.</i>"
-	"quest_guardian_moneyreset" 	"<i>Заработанные деньги теряются при провале миссии.</i>"
-	"quest_guardian_heavyarmor" 	"<i>Можно приобрести комплект тяжёлой брони.</i>"
-	"quest_guardian_noarmor" 	"<i>Броню приобретать нельзя.</i>"
-	"quest_guardian_heavyarmorresetmoney" 	"<i>Можно приобрести комплект тяжёлой брони. При поражении деньги сбрасываются.</i>"
-	 //"quest_guardian_maxmoney_16000"		"$16000"
-	 //"quest_guardian_maxmoney_10000"		"$10000"
-	 //"quest_guardian_maxmoney_6000"			"$6000"
-	 //"quest_guardian_maxmoney_3200"			"$3200"
-	 //"quest_guardian_maxmoney_0"			"$0"
-
-	// "Get [headshot] kills: [unscoped] [AWP]"
-	// Double spaces will automatically be removed.
-	"guardian_mission_type_kills"				"Совершайте убийства из {s:weapon}"
-	"guardian_mission_type_headshots"			"Попадайте в голову: {s:weapon}"
-	"guardian_mission_type_unscoped"			"Совершайте убийства без прицеливания: {s:weapon}"
-	"guardian_mission_type_enemy_weapon"		"Совершайте убийства вражеским оружием: {s:weapon}"
-	"guardian_mission_type_enemy_airborne"		"Совершайте убийства в воздухе: {s:weapon}"
-	"guardian_mission_type_flashbang"			"Убивайте ослеплённых врагов"
-	"guardian_mission_type_ct_weapons"			"Совершайте убийства оружием спецназа"
-
-//	bonus tokens
-
-	  "quest_bonus_headshot"							"попаданием в голову"
-	  "quest_bonus_zoomed"								"во время прицеливания"
-  	  "quest_bonus_not_zoomed"							"без прицеливания"
-	  "quest_bonus_chickens"							"курицы"
-
-	  "quest_bonus_taser"								"с помощью Zeus x27"
-	  "quest_bonus_bomb_planted"						"после закладки бомбы"
-	  "quest_bonus_melee"								"оружием ближнего боя"	  
-
-
-
-	  "quest_bonus_killstreak_2"						"2 или больше врагов подряд"
-	  "quest_bonus_killstreak_3"						"3 или больше врагов подряд"
-
-	  "quest_bonus_chickenstreak_2"						"2 или больше куриц подряд"
-	  "quest_bonus_chickenstreak_3"						"3 или больше куриц подряд"
-
-	  "quest_bonus_borrowed_gun"						"чужим оружием"
-	  "quest_bonus_borrowed_gun_enemy"					"вражеским оружием"
-	  "quest_bonus_borrowed_gun_own"					"оружием цели"
-		"quest_bonus_victim_rescuing"					"несущего заложника"
-		
-	  "quest_bonus_bulletcount_1"						"первым выстрелом в раунде"
-		
-	  "quest_bonus_totalrounds_2"						"до третьего раунда"
-	  "quest_bonus_totalrounds_3"						"до четвертого раунда"
-	  "quest_bonus_totalrounds_4"						"до пятого раунда"
-	  "quest_bonus_totalrounds_5"						"до шестого раунда"
-
-  	  "quest_bonus_weapon_elite"						"из Dual Berettas"
-	  "quest_bonus_weapon_ssg08"						"из SSG 08"
-	  "quest_bonus_weapon_revolver"						"из револьвера R8"
-	  "quest_bonus_weapon_glock_hkp2000_usp_silencer"	"из P2000, USP-S или Glock-18"
-
-		"quest_bonus_set_dust"							"оружием из коллекции Dust"
-		"quest_bonus_set_aztec"							"оружием из коллекции Aztec"
-		"quest_bonus_set_vertigo"						"оружием из коллекции Vertigo"
-		"quest_bonus_set_inferno"						"оружием из коллекции Inferno"
-		"quest_bonus_set_militia"						"оружием из коллекции Militia"
-		"quest_bonus_set_nuke"							"оружием из коллекции Nuke"
-		"quest_bonus_set_office"						"оружием из коллекции Office"
-		"quest_bonus_set_assault"						"оружием из коллекции Assault"
-		"quest_bonus_set_dust_2"						"оружием из коллекции Dust 2"
-		"quest_bonus_set_train"							"оружием из коллекции Train"
-		"quest_bonus_set_mirage"						"оружием из коллекции Mirage"
-		"quest_bonus_set_italy"							"оружием из коллекции Italy"
-		"quest_bonus_set_lake"							"оружием из коллекции Lake"
-		"quest_bonus_set_safehouse"						"оружием из коллекции Safehouse"
-		"quest_bonus_set_esports"						"оружием из коллекции eSports 2013"
-		"quest_bonus_set_weapons_i"						"оружием из коллекции Arms Deal"
-		"quest_bonus_set_bravo_i"						"оружием из коллекции «Браво»"
-		"quest_bonus_set_bravo_ii"						"оружием из коллекции «Альфа»"
-		"quest_bonus_set_weapons_ii"					"оружием из коллекции Arms Deal 2"
-		"quest_bonus_set_esports_ii"					"оружием из коллекции eSports Winter 2013"
-		"quest_bonus_set_esports_2014_summer"			"оружием из коллекции eSports 2014 Summer"
-		"quest_bonus_set_community_1"					"оружием из коллекции Winter Offensive"
-		"quest_bonus_set_weapons_iii"					"оружием из коллекции Arms Deal 3"
-		"quest_bonus_set_community_2"					"оружием из коллекции «Феникс»"
-		"quest_bonus_set_community_3"					"оружием из Охотничьей коллекции"
-		"quest_bonus_set_community_4"					"оружием из коллекции «Прорыв»"
-		"quest_bonus_set_community_5"					"оружием из коллекции «Авангард»"
-		"quest_bonus_set_community_6"					"оружием из коллекции хромированного кейса"
-		"quest_bonus_set_community_7"					"оружием из коллекции хромированного кейса #2"
-		"quest_bonus_set_community_11"					"оружием из коллекции «Дикое пламя»"
-		"quest_bonus_set_bank"							"оружием из коллекции Bank"
-		"quest_bonus_set_baggage"						"оружием из коллекции Baggage"
-		"quest_bonus_set_cobblestone"					"оружием из коллекции Cobblestone"
-		"quest_bonus_set_overpass"						"оружием из коллекции Overpass"
-		"quest_bonus_set_cache"							"оружием из коллекции Cache"
-		"quest_bonus_set_kimono"						"оружием из коллекции «Рассвет»"
-
-		"quest_bonus_cs_assault"						"на карте Assault"
-		"quest_bonus_cs_italy"							"на карте Italy"
-		"quest_bonus_cs_militia"						"на карте Militia"
-		"quest_bonus_cs_office"							"на карте Office"
-		"quest_bonus_de_aztec"							"на карте Aztec"
-		"quest_bonus_de_dust"							"на карте Dust"
-		"quest_bonus_de_dust2"							"на карте Dust II"
-		"quest_bonus_de_mirage"							"на карте Mirage"
-		"quest_bonus_de_overpass"						"на карте Overpass"
-		"quest_bonus_de_cbble"							"на карте Cobblestone"
-		"quest_bonus_de_train"							"на карте Train"		
-		"quest_bonus_de_inferno"						"на карте Inferno"
-		"quest_bonus_de_nuke"							"на карте Nuke"
-		"quest_bonus_de_shorttrain"						"на карте Shorttrain"
-		"quest_bonus_de_shortdust"						"на карте Shortdust"
-		"quest_bonus_de_vertigo"						"на карте Vertigo"
-		"quest_bonus_de_balkan"							"на карте Balkan"
-		"quest_bonus_ar_baggage"						"на карте Baggage"
-		"quest_bonus_ar_monastery"						"на карте Monastery"
-		"quest_bonus_ar_shoots"							"на карте Shoots"
-		"quest_bonus_de_embassy"						"на карте Embassy"
-		"quest_bonus_de_bank"							"на карте Bank"
-		"quest_bonus_de_lake"							"на карте Lake"
-		"quest_bonus_de_depot"							"на карте Depot"
-		"quest_bonus_de_safehouse"						"на карте Safehouse"
-		"quest_bonus_de_sugarcane"						"на карте Sugarcane"
-		"quest_bonus_de_stmarc"							"на карте St. Marc"
-		"quest_bonus_cs_museum"							"на карте Museum"
-		"quest_bonus_cs_thunder"						"на карте Thunder"
-		"quest_bonus_de_favela"							"на карте Favela"
-		"quest_bonus_cs_downtown"						"на карте Downtown"
-		"quest_bonus_de_seaside"						"на карте Seaside"
-		"quest_bonus_de_library"						"на карте Library"
-		"quest_bonus_cs_motel"							"на карте Motel"
-		"quest_bonus_de_cache"							"на карте Cache"
-		"quest_bonus_de_ali"							"на карте Ali"
-		"quest_bonus_de_ruins"							"на карте Ruins"
-		"quest_bonus_de_ruby"							"на карте Ruby"
-		"quest_bonus_de_chinatown"						"на карте Chinatown"
-		"quest_bonus_de_gwalior"						"на карте Gwalior"
-		"quest_bonus_cs_agency"							"на карте Agency"
-		"quest_bonus_cs_siege"							"на карте Siege"
-		"quest_bonus_de_castle"							"на карте Castle"
-		"quest_bonus_de_overgrown"						"на карте Overgrown"
-		"quest_bonus_de_blackgold"						"на карте Black Gold"
-		"quest_bonus_cs_rush"							"на карте Rush"
-		"quest_bonus_de_mist"							"на карте Mist"
-		"quest_bonus_cs_insertion"						"на карте Insertion"
-
-		"quest_bonus_cs_workout"						"на карте Workout"
-		"quest_bonus_cs_backalley"						"на карте Back Alley"
-		"quest_bonus_de_marquis"						"на карте Marquis"
-		"quest_bonus_de_facade"							"на карте Facade"
-		"quest_bonus_de_season"							"на карте Season"
-		"quest_bonus_de_bazaar"							"на карте Bazaar"
-		"quest_bonus_de_santorini"						"на карте Santorini"
-
-		"quest_bonus_de_subzero"						"на карте Subzero"
-		"quest_bonus_de_biome"							"на карте Biome"
-
-
-
-
-// OperationalPoints
-
-		"Quest_OperationalPoints_Template"				"Доп. награда: %s1"
-
-		"Quest_OperationalPoints_1"					"★"
-		"Quest_OperationalPoints_2"					"★★"
-		"Quest_OperationalPoints_3"					"<font color=\"#ff0000\">★★★★</font>"
-
-// Hud Message
-
-	 "Quest_ProgressMadeMessage1"								" Очков будет засчитано в конце матча: +%s1."
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -34293,6 +33056,8 @@
 	"PaintKit_gs_mag7_goold_Tag"									"Медное покрытие"
 
 	"PaintKit_gs_mp7_strone"										"Линии на корпусе напоминают топографическую карту.\n\n<i>Карта кровотока</i>"
+	"PaintKit_gs_mp7_strone_Tag"									"Жар солнца"
+
 	"PaintKit_gs_nova_sobek"										"Чёрно-золотая раскраска оружия вдохновлена египетскими орнаментами.\n\n<i>Вода порождает хаос</i>"
 	"PaintKit_gs_nova_sobek_Tag"									"Укус Себека"
 
@@ -34377,7 +33142,7 @@
 // COMMUNITY_34
 
 		"PaintKit_usp_field_snake"						"Под целиком изображены кусачки сапёра с крылышками, а под эжекционным отверстием — надпись «027».\n\n<i>Непыльная работа на выезде</i>"
-		"PaintKit_usp_field_snake_Tag"					"027"
+		"PaintKit_usp_field_snake_Tag"					"27"
 
 		"PaintKit_deagle_calligraff"					"На затвор пистолета серебряной краской нанесён каллиграфический рисунок.\n\n<i>Спешка здесь ни к чему</i>"
 		"PaintKit_deagle_calligraff_Tag"				"Каллиграффити"
@@ -34530,6 +33295,103 @@
 		"PaintKit_m4a1s_quick_liquidation"				"Благодаря тёмной основе и тщательно подобранным красным и синим элементам это оружие будто бы переливается на свету.\n\n<i>Спокойное размышление</i>"
 		
 		"PaintKit_aug_trigger_discipline_velco"			"На оружие нанесён голубой изометрический узор, дополненный оранжевыми акцентами.\n\n<i>Терпение вознаграждается</i>"
+"PaintKit_glove_driver_knit_argyle_green_Tag"					"Наручные свитера"
+		
+		"PaintKit_glove_driver_ostrich_purple_Tag"						"Сливовое перо"
+		
+		"PaintKit_glove_driver_silk_dragon_white_Tag"					"Погоня за волной"
+		
+		"PaintKit_glove_brocade_crane_Tag"								"Парчовый журавль"
+		
+		"PaintKit_glove_driver_brocade_flower_red_Tag"					"Парчовые цветы"
+		
+		"PaintKit_glove_driver_dragon_scale_red_Tag"					"Драконьи кулаки"
+		
+		"PaintKit_glove_driver_embroidered_flowers_teal_Tag"			"Цветник"
+		
+		"PaintKit_glove_driver_scallop_metallic_blue_Tag"				"Сэйгайха"
+		
+		"PaintKit_glove_sport_velvet_red_Tag"							"Оккультизм"
+		
+		"PaintKit_glove_sport_beadwork_diamonds_purple_Tag"				"Фиолетовый бисер"
+		
+		"PaintKit_glove_sport_camo_winter_Tag"							"Мороз"
+		
+		"PaintKit_glove_sport_pinstripe_black_Tag"						"Кремовые завитки"
+		
+		"PaintKit_glove_sport_racer_red_Tag"							"Багровый гонщик"
+		
+		"PaintKit_glove_sport_tech_gradient_bright_Tag"					"Неоновое насилие"
+		
+		"PaintKit_glove_specialist_abstract_green_Tag"					"Лаймовый поликамуфляж"
+		
+		"PaintKit_glove_specialist_graffiti_black_Tag"					"Чёрная книга"
+		
+		"PaintKit_glove_specialist_quilted_black_Tag"					"Шоколадный «честерфилд»"
+		
+		"PaintKit_glove_specialist_quilted_white_Tag"					"Подушкобойки"
+		
+		"PaintKit_glove_specialist_sunburst_red_Tag"					"Лучи солнца"
+		
+		"PaintKit_glove_specialist_dragon_blue_Tag"						"Погоня за облаком"
+		
+		"PaintKit_glove_specialist_wave_blue_Tag"						"Великий вал"
+		
+// END COMMUNITY_37 GLOVES
+
+// COMMUNITY_37 WEAPONS
+		
+		"PaintKit_glock_jdpeek"											"На корпус нанесён рисунок в неоновых цветах краской с металлическим отблеском.\n\n<i>«Для меня немного чересчур, но я не целевая аудитория...» — Бут, торговец оружием</i>"
+		"PaintKit_glock_jdpeek_Tag"										"Полный раскрас"
+					
+		"PaintKit_awp_queens_gambit"									"На корпус нанесён рисунок в королевском синем и золотом цветах. Королева на прикладе нарисована вручную.\n\n<i>Каждый выстрел — демонстрация королевской мощи и точности</i>"
+		"PaintKit_awp_queens_gambit_Tag"								"Гамбит королевы"
+					
+		"PaintKit_p90_deathgaze"										"На корпус нанесён рисунок Медузы в стиле граффити поверх основы, имитирующей каррарский мрамор.\n\n<i>Не поклоняйтесь идолам, на лжи воздвигнутым</i>"
+		"PaintKit_p90_deathgaze_Tag"									"Взор смерти"
+					
+		"PaintKit_p250_kintsugi"										"На корпус цвета слоновой кости нанесена эффектная оранжевая птица и золотые детали.\n\n<i>Это оружие как дорогой сервиз — достают только по особым поводам</i>"
+		"PaintKit_p250_kintsugi_Tag"									"Кинцуги"
+					
+		"PaintKit_mp9_urban_sovereign"									"На корпус нанесён рисунок в урбанистическом стиле с золотистыми граффити.\n\n<i>Короли не прячутся за стенами, они их расписывают</i>"
+		"PaintKit_mp9_urban_sovereign_Tag"								"Городской суверен"
+					
+		"PaintKit_mp7_amberline"										"На корпус нанесены диагональные полосы оранжевого и белого цветов.\n\n<i>Стиль в вашей руке</i>"
+		"PaintKit_mp7_amberline_Tag"									"Янтарная линия"
+					
+		"PaintKit_bizon_rmx"											"На корпус нанесён фиолетовый градиент с красно-белым узором.\n\n<i>Лёгкое, быстрое и опасное... в теории</i>"
+		"PaintKit_bizon_rmx_Tag"										"RMX"
+					
+		"PaintKit_ak47_crane_flight"									"На корпус вручную нанесён рисунок журавля и золотистые детали поверх чёрно-белой основы.\n\n<i>Перед кровавой луной</i>"
+		"PaintKit_ak47_crane_flight_Tag"								"Полёт журавля"
+					
+		"PaintKit_deagle_firebreathing"									"На корпус перламутровой краской нанесён рисунок фиолетовых и синих языков пламени.\n\n<i>Обладает исключительными качествами и характеристиками</i>"
+		"PaintKit_deagle_firebreathing_Tag"								"Огненное дыхание"
+					
+		"PaintKit_ump_fragment"											"На корпус нанесён рисунок в серебристом, чёрном и красном цветах.\n\n<i>Пора набирать фраги</i>"
+		"PaintKit_ump_fragment_Tag"										"Фрагмент"
+					
+		"PaintKit_sawedoff_fusion"										"На корпус нанесён чёрно-золотистый узор. При разном освещении раскрываются дополнительные детали.\n\n<i>Глаз всякое видал...</i>"
+		"PaintKit_sawedoff_fusion_Tag"									"Слияние"
+					
+		"PaintKit_galil_galigator"										"На корпусе поверх жёлто-зелёной основы изображены аллигатор и символы радиационного загрязнения.\n\n<i>ХРУМ! ХРУМ! ХРУМ!</i>"
+		"PaintKit_galil_galigator_Tag"									"Галлигатор"
+					
+		"PaintKit_fiveseven_polymer_dark"								"Благодаря нанесённому на корпус рисунку пистолет выглядит так, будто сделан из прозрачного фиолетового полимера.\n\n<i>В фиолетовой конфетной обёртке</i>"
+		"PaintKit_fiveseven_polymer_dark_Tag"							"Тёмный полимер"
+					
+		"PaintKit_usps_silent_boy"										"На корпус нанесён рисунок в чёрно-голубых цветах с иероглифами и сюрикенами.\n\n<i>Проявляя агрессию, соблюдайте скрытность</i>"
+		"PaintKit_usps_silent_boy_Tag"									"Бесшумный выстрел"
+					
+		"PaintKit_m4a4_zubastick_bw"									"На корпус этого автомата M4A4 нанесён рисунок зубов и оранжевых глаз.\n\n<i>Примерно 1991 год</i>"
+		"PaintKit_m4a4_zubastick_bw_Tag"								"Зубастик"
+					
+		"PaintKit_m4a1s_electrum"										"На корпус нанесена зелёная основа с мраморным узором, а также золотистыми и красными деталями.\n\n<i>«Они платят недостаточно, чтобы это нести, но я всё равно буду», — Валерия Дженнер, революционерка</i>"
+		"PaintKit_m4a1s_electrum_Tag"									"Электрум"
+					
+		"PaintKit_m249_blocks_purple"									"На корпус нанесён фиолетовый геометрический узор.\n\n<i>Укладываем штабелями</i>"
+		"PaintKit_m249_blocks_purple_Tag"								"Птицеблоки"
+		
 // END COMMUNITY_37 WEAPONS
 
 // OVERPASS_2024
@@ -35266,6 +34128,7 @@
 		"StoreCheckout_GameLicense_AlreadyOwned"		"У вас уже есть игровая лицензия Counter-Strike."
 		"StoreCheckout_GameLicense_PurchasePending_PW"	"Вы уже начали процесс покупки игровой лицензии Counter-Strike. Сейчас мы пытаемся проверить состояние вашей предыдущей операции на Perfect World. Если средства списаны, ваша покупка вскоре автоматически завершится. В ином случае немного подождите и повторите попытку."
 		"StoreCheckout_NotEnoughRoom"			"В инвентаре недостаточно места для покупки такого количества предметов.\nВо внутриигровом магазине можно приобрести хранилище.\nТуда можно перенести лишние предметы из вашего инвентаря, чтобы позже достать их обратно."
+		"StoreCheckout_NotEnoughRoom_TooManyStorageUnits"	"У вас уже слишком много хранилищ.\n\nВы не сможете приобрести дополнительные во внутриигровом магазине, пока не обратитесь в службу поддержки Steam."
 		"StoreCheckout_TooManyItemsInCart"		"Невозможно произвести оплату, так как вы приобретаете слишком много предметов. Попробуйте выбрать меньше предметов и повторите попытку."
 		"StoreCheckout_PurchaseExpiredItemsUnavailable" "Срок действия вашей транзакции истёк, или этот предмет больше не доступен для покупки. С вас не были списаны средства. Попробуйте совершить покупку снова."
 		"StoreCheckout_ContactSupport_Dialog_Title"	"Предупреждение"
@@ -35901,8 +34764,8 @@
 		"Workshop_created" "Дата создания"
 		"Workshop_size" "Размер"
 		"Workshop_View" "Открыть в мастерской"
-		"Workshop_Allow" "Разрешить"
-		"Workshop_Deny" "Отказаться"
+		"Workshop_Allow" "Скачать"
+		"Workshop_Deny" "Отмена"
 
 		"SFUI_Workshop_Desc_Pw"				"Здесь находятся карты из мастерской, на которые вы подписаны. В разделе «Быстрая игра сообщества» вы можете найти самый подходящий сервер сообщества с нужной картой."
 		"SFUI_Workshop_Desc_Sp_Pw"			"Здесь находятся карты из мастерской, на которые вы подписаны. Вы можете запустить их на локальном сервере с ботами."
@@ -36193,12 +35056,6 @@
 		"SFUI_Store_Limited_Bid_Tagline"			"до конца торгов"
 		"SFUI_Store_Available_Offers"               "Предложения действуют ещё"
 		"SFUI_Store_Preview"                        "Посмотреть"
-
-		"SFUI_Store_Timer_Week:p"                   "%s1 неделя#|#%s1 недели#|#%s1 недель#|#%s1 недель#|#%s1 недели"
-		"SFUI_Store_Timer_Day:p"                    "%s1 день#|#%s1 дня#|#%s1 дней#|#%s1 дней#|#%s1 дня"
-		"SFUI_Store_Timer_Hour:p"                   "%s1 час#|#%s1 часа#|#%s1 часов#|#%s1 часов#|#%s1 часа"
-		"SFUI_Store_Timer_Min:p"                    "%s1 мин.#|#%s1 мин.#|#%s1 мин.#|#%s1 мин.#|#%s1 мин."
-		"SFUI_Store_Timer_Sec:p"                    "%s1 сек.#|#%s1 сек.#|#%s1 сек.#|#%s1 сек.#|#%s1 сек."
 
 		"SFUI_Store_Timer_Week:f"                 	"{f:0:value, plural, one{{f:0:value} неделя} few{{f:0:value} недели} many{{f:0:value} недель} other{{f:0:value} недели}}"
 		"SFUI_Store_Timer_Day:f"                    "{f:0:value, plural, one{{f:0:value} день} few{{f:0:value} дня} many{{f:0:value} дней} other{{f:0:value} дня}}"
@@ -37683,6 +36540,7 @@
 		"CSGO_Demo_Toggle"							"[Shift+F2]"
 		"CSGO_Demo_Time"							"{s:current_time} / {s:total_time}"
 		"CSGO_Demo_Round"							"Раунд:"
+		"CSGO_Demo_Highlight"						"Показательные моменты"
 		"CSGO_Demo_End_Playback"					"Остановить воспроизведение"
 		"CSGO_Demo_End_Playback_Overwatch"			"Перейти к вердикту"
 		"CSGO_Demo_End_Playback_Overwatch_Finished"	"Перейти к вердикту"
@@ -38474,7 +37332,7 @@
 		"SFUI_PlayerDetails_Loading"				"Проверка благодарностей"
 		"SFUI_PlayerDetails_Loading_Failed"			"Не удалось загрузить благодарности, повторите попытку позже"
 		"SFUI_PlayerDetails_Previously_Submitted"	"Вы уже отправляли благодарность этому пользователю"
-		"SFUI_PlayerDetails_Commendations_Left:p"		"Сегодня вы сможете поблагодарить ещё %s1 игрока#|#Сегодня вы сможете поблагодарить ещё %s1 игроков#|#Сегодня вы сможете поблагодарить ещё %s1 игроков#|#Сегодня вы сможете поблагодарить ещё %s1 игроков#|#Сегодня вы сможете поблагодарить ещё %s1 игрока"
+		"SFUI_PlayerDetails_Commendations_Left:f"	"Сегодня вы сможете похвалить ещё {num_players} {num_players, plural, one{игрока} few{игроков} many{игроков} other{игрока}}"
 		"SFUI_PlayerDetails_NoCommendations_Left"   "Вы отправили слишком много благодарностей, повторите попытку завтра"
 		"SFUI_PlayerDetails_Updating_Previous_Commendation"   "Вы редактируете ранее отправленную благодарность"
 		"SFUI_PlayerDetails_New_Commendation"   "Вы отправляете новую благодарность"
@@ -38833,7 +37691,7 @@
 		"SFUIHUD_InfoPanel_Coop_Thumb2Ready"					"Второй флеш-накопитель готов!"
 		"SFUIHUD_InfoPanel_Coop_Thumb2Retrieved"				"Флеш-накопитель с вирусом у вас!"	
 
-		"FullPlayerNameOrder_Default"						"%modifier% %clantag% %controller_name% (%current_controller_of_my_pawn%)"
+		"FullPlayerNameOrder_Default:f"						"{modifier} {clantag} {controller_name} ({current_controller_of_my_pawn})"
 "SFUIHUD_Spectate_Equipment"	"СТОИМОСТЬ СНАРЯЖЕНИЯ"
 		"SFUIHUD_Spectate_TeamMoney"	"ДЕНЬГИ КОМАНДЫ"
 		"SFUIHUD_Spectate_TeamEQValue"	"ЦЕННОСТЬ СНАРЯЖЕНИЯ"
@@ -40218,8 +39076,8 @@
 		"SFUI_Settings_MiniScoreboardPlayerCount_Tooltip"	"Во время активной части раунда заменяет аватары игроков в мини-таблице результатов на число живых игроков в каждой из команд."
 
 
-		"Post_Round_Damage_Report_Given:p"		" • Нанесено урона → %s3: %s2 ед. от %s1 попадания#|#  • Нанесено урона → %s3: %s2 ед. от %s1 попаданий#|#  • Нанесено урона → %s3: %s2 ед. от %s1 попаданий#|#  • Нанесено урона → %s3: %s2 ед. от %s1 попаданий#|#  • Нанесено урона → %s3: %s2 ед. от %s1 попадания"
-		"Post_Round_Damage_Report_Taken:p"		" • Получено урона ← %s3: %s2 ед. от %s1 попадания#|# • Получено урона ← %s3: %s2 ед. от %s1 попаданий#|# • Получено урона ← %s3: %s2 ед. от %s1 попаданий#|# • Получено урона ← %s3: %s2 ед. от %s1 попаданий#|# • Получено урона ← %s3: %s2 ед. от %s1 попадания"
+		"Post_Round_Damage_Report_Given:f"		" • Нанесено урона → {player_name}: {f:0:damage} ед. за {num_hits, plural, one{попадание} few{попадания} many{попаданий} other{попадания}}"
+		"Post_Round_Damage_Report_Taken:f"		" • Получено урона ← {player_name}: {f:0:damage} ед. за {num_hits, plural, one{попадание} few{попадания} many{попаданий} other{попадания}}"
 
 		"SFUI_TeamOverheadID"					"Снаряжение команды"
 
@@ -40698,8 +39556,8 @@
 
 		"SFUI_UserAlertNoteType_1"			"Серверы в данном регионе (%s1) перегружены."
 		"SFUI_UserAlertNoteType_2"			"Серверы в данном регионе (%s1) закрыты на техническое обслуживание."
-		"SFUI_UserAlertNoteType_LowPlayersR:p"	"В регионе «%region%» матч ищет только %players% совместимый игрок.#|#В регионе «%region%» матч ищет только %players% совместимых игрока.#|#В регионе «%region%» матч ищет только %players% совместимых игроков.#|#В регионе «%region%» матч ищет только %players% совместимых игроков.#|#В регионе «%region%» матч ищет только %players% совместимого игрока."
-		"SFUI_UserAlertNoteType_LowPlayersY:p"	"В вашем регионе матч ищет только %players% совместимый игрок.#|#В вашем регионе матч ищет только %players% совместимых игрока.#|#В вашем регионе матч ищет только %players% совместимых игроков.#|#В вашем регионе матч ищет только %players% совместимых игроков.#|#В вашем регионе матч ищет только %players% совместимого игрока."
+		"SFUI_UserAlertNoteType_LowPlayersR:f"	"В регионе «{region}» матч ищет только {players} {players, plural, one{совместимый игрок} few{совместимых игрока} many{совместимых игроков} other{совместимого игрока}}."
+		"SFUI_UserAlertNoteType_LowPlayersY:f"	"В вашем регионе матч ищет только {players} {players, plural, one{совместимый игрок} few{совместимых игрока} many{совместимых игроков} other{совместимого игрока}}."
 
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"Не удалось подключиться к матчу."
 		"SFUI_QMM_ERROR_NotLoggedIn"		"Вы не авторизованы в системе подбора матчей Counter-Strike."
@@ -46268,10 +45126,10 @@
 		"practicesettings_infammo_button"			"Бесконечные патроны"
 		"practicesettings_infwarmup_tooltip"		"Если <b>включено</b>, в матче будет постоянная разминка, и в него не будут вступать боты."
 		"practicesettings_infwarmup_button"			"Вечная разминка"
-		"practicesettings_annotations_tooltip"		"Если <b>включено</b>, загружается выбранное из выпадающего списка руководство по карте и принудительно активируются следующие настройки: вечная разминка, бесконечные патроны и камера гранат."
-		"practicesettings_annotations_button"		"Руководство по карте"
+		"practicesettings_annotations_tooltip"		"Если <b>включено</b>, позволяет выбрать руководство по карте из выпадающего списка и принудительно активирует следующие настройки: вечная разминка, бесконечные патроны и камера гранат."
+		"practicesettings_annotations_button"		"Включить руководства"
 		"practicesettings_annotations_workshop_tooltip" "Открыть мастерскую"
-		"practicesettings_annotations_dropdown_tooltip"	"Указывает, какое руководство по карте будет загружено"
+		"practicesettings_annotations_dropdown_tooltip"	"Указывает, какое руководство по карте будет загружено (если оно выбрано)"
 
 		"PlayMenuReplayNewUserTrainingButton"		"Перепройти обучение"
 
@@ -46307,6 +45165,8 @@
 		"Workshop_annotation_ready"					"Работа готова к загрузке."		
 		"UI_File_Filter_SupportedAnnotationFormat"	"Текстовые файлы (*.txt)"
 		"annotations_visit_workshop"				"Открыть мастерскую ⤤"
+		"annotations_exceed_round_limit"			"Руководства недоступны после {s:rounds}-го раунда половины"
+
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Game Mode Desc
@@ -47448,6 +46308,1149 @@
 		"stat_average_health_removed"	"СУ/Р"
 
 		"stat_average_kd"				"Убийства/смерти"
+		"stat_average_kd_short"			"У/С"
+
+		"stat_average_hsp"				"stat_average_hsp"
+
+		"stat_total_2k"					"2 уб."
+		"stat_total_3k"					"3 уб."
+		"stat_total_4k"					"4 уб."
+
+		"stat_grenades"					"Осколочные гранаты"
+		"stat_total_grenade"			"Бросков"
+		"stat_average_grenade"			"Попаданий"
+		"stat_grenades_desc"			"Процент от числа осколочных гранат, которые нанесли урон хотя бы одному врагу"			
+
+		"stat_flash"					"Светошумовые"
+		"stat_total_flash"				"Бросков"
+		"stat_average_flash"			"Попаданий"
+		"stat_flash_desc"				"Процент брошенных светошумовых гранат, которые ослепили хотя бы одного врага"
+
+		"stat_entry"					"Первые убийства"
+		"stat_average_entrykd"			"ПУ/С"
+		"stat_total_entry_attempts"		"Всего"
+		"stat_entry_desc"				"Соотношение первых убийств и первых смертей"
+
+		"stat_total_wins"				"Победы"
+		"stat_total_losses"				"Поражения"
+		"stat_total_ties"				"Ничьи"
+
+		"stat_total_rounds_played"		"Раунды"
+
+		"stat_1vx"						"1 на ?"
+
+		"stat_1v1"						"1 на 1"
+
+		"stat_average_1v1"				"Побед"				
+		"stat_total_1v1_attempts"		"Ситуаций"		
+
+		"stat_1v2"						"1 на 2"
+
+		"stat_average_1v2"				"Побед"			
+		"stat_total_1v2_attempts"		"Ситуаций"		
+
+		"num_matches"					"Всего матчей"
+
+		"playerstat_name_0"				"Счёт"
+		"playerstat_name_0_long"		"Счёт/раунд"
+		"playerstat_name_0_desc"		"Счёт/раунд: {s:value}\nОбщий счёт: {d:total}"
+
+
+		"playerstat_name_1"				"Убийства"
+		"playerstat_name_1_long"		"Убийств/раунд"
+		"playerstat_name_1_desc"		"Сред. убийства/раунд: {s:value}\nВсего убийств: {d:total}"
+
+		"playerstat_name_2"				"Урон"
+		"playerstat_name_2_long"		"Урон/раунд"
+		"playerstat_name_2_desc"		"Сред. урон/раунд: {s:value}\nВсего урона: {d:total}"	
+
+		"playerstat_name_2.1"			"Урон"
+		"playerstat_name_2.5"			"СУ/Р"		
+
+		"playerstat_name_3"				"У/С"
+		"playerstat_name_3_long"		"Убийства/смерти"
+		"playerstat_name_3_desc"		"Соотношение убийств и смертей: {s:value}"		
+
+		"playerstat_name_4"				"ГОЛ."
+		"playerstat_name_4_long"		"Убийств в голову"
+		"playerstat_name_4_desc"		"Процент убийств попаданием в голову: {s:value}\nВсего убийств в голову: {d:total}"	
+
+		"playerstat_name_4.5"			"ГОЛ.%"		
+
+		"playerstat_name_5"				"2 уб."
+		"playerstat_name_5_long"		"2 убийства"
+		"playerstat_name_5_desc"		"Раундов с 2 убийствами: {s:value}"	
+
+		"playerstat_name_6"				"3 уб."
+		"playerstat_name_6_long"		"3 убийства"
+		"playerstat_name_6_desc"		"Раундов с 3 убийствами: {s:value}"		
+
+		"playerstat_name_7"				"4 уб."
+		"playerstat_name_7_long"		"4 убийства"
+		"playerstat_name_7_desc"		"Раундов с 4 убийствами: {s:value}"
+
+		"playerstat_name_7.5"			"Неск. убийств"
+	
+		"playerstat_name_8"				"ОГ"
+		"playerstat_name_8_long"		"Эффективные ОГ"
+		"playerstat_name_8_desc"		"Процент осколочных гранат, которые нанесли урон хотя бы 1 врагу: {s:value}\nВсего осколочных гранат, которые нанесли урон хотя бы 1 врагу: {d:total}"			
+
+		"playerstat_name_9"				"СГ"
+		"playerstat_name_9_long"		"Эффективные светошумовые"		
+		"playerstat_name_9_desc"		"Процент светошумовых гранат, которые ослепили хотя бы 1 врага: {s:value}\nВсего светошумовых гранат, которые ослепили хотя бы 1 врага: {d:total}"
+
+		"playerstat_name_10"			"1 на 1"
+		"playerstat_name_10_long"		"Ситуаций 1 на 1"
+		"playerstat_name_10_desc"		"Процент побед в ситуации 1 на 1: {s:value}\nВсего побед 1 на 1: {d:total}"	
+
+		"playerstat_name_11"			"1 на 2"
+		"playerstat_name_11_long"		"Ситуаций 1 на 2"
+		"playerstat_name_11_desc"		"Процент побед в ситуации 1 на 2: {s:value}\nВсего побед 1 против 2: {d:total}"	
+
+		"playerstat_name_12"			"ПУ"
+		"playerstat_name_12_long"		"Первые убийства"
+		"playerstat_name_12_desc"		"Соотношение первых убийств и первых смертей: {s:value}\nВсего первых убийств: {d:total}"
+
+		"stats_graph_button_0"			"Счёт/раунд"
+		"stats_graph_button_1"			"Уб./раунд"
+		"stats_graph_button_2"			"СУ/Р"
+		"stats_graph_button_3"			"У/С"
+		"stats_graph_button_4"			"ГОЛ.%"
+
+		"ris_score"								"Счёт раунда"
+		"ris_t"									"Т"
+		"ris_ct"								"СП"
+		"ris_team-title"						"Ваш шанс победы"
+		"ris_wins"								"{s:ris_team} побеждают!"
+
+		"ris_win"								"победа"
+		"ris_loss"							"поражение"
+
+		"ris_hits"								"за {s:num_hits}"
+		
+		"prdr_health_removed"					"{d:health_removed} за {d:num_hits}"
+		"prdr_return_health_removed"				"{d:return_health_removed} за {d:return_num_hits}"
+
+		"season_stat_title_wins"		"ПОБЕДЫ"
+        "season_stat_title_ties"		"НИЧЬИ"
+        "season_stat_title_losses"		"ПОРАЖЕНИЯ"
+        "season_stat_title_rounds"		"РАУНДЫ"
+        "season_stat_title_kills"		"УБИЙСТВА"
+        "season_stat_title_headshots"	"В ГОЛОВУ"
+		"season_stat_title_hs_percent"	"%В ГОЛ."
+        "season_stat_title_assists"		"ПОМОЩИ"
+        "season_stat_title_deaths"		"СМЕРТИ"
+        "season_stat_title_mvps"		"СЦИ"
+        "season_stat_title_rounds_3k"	"3 УБ."
+        "season_stat_title_rounds_4k"	"4 УБ."
+        "season_stat_title_rounds_5k"	"5 УБ."
+		"season_stat_title_kpr"			"У/Р"
+		"season_stat_title_kd"			"У/С"
+		"season_stat_title_best_map"	"ЛУЧШАЯ КАРТА"
+		"season_stat_title_win_percent"	"ДОЛЯ ПОБЕД"
+		"season_stat_title_matches_played"	"МАТЧИ"
+		"season_stat_title_achieved_week"	"НАИВЫСШИЙ РЕЙТИНГ ДОСТИГНУТ В НЕДЕЛЮ С"
+		"season_stat_value_kd"				"{s:kdratio}"
+		"season_stat_value_win_percent"		"{s:win-percent}%"
+		"season_stat_value_hs_percent"		"{s:hs-percent}%"
+		"season_section_rank"				"НАИВЫСШИЙ"
+		"season_section_season_stats"		"СТАТИСТИКА ЗА СЕЗОН"
+		"season_section_rank_history"		"ИСТОРИЯ РЕЙТИНГА"
+		"season_section_rank_activity"		"МАТЧЕЙ СЫГРАНО"
+		"season_section_rank_map_stats"		"СТАТИСТИКА ПО КАРТАМ"
+		"season_section_rank_map_wins_graph"	"РАЗБИВКА ПОБЕД ПО КАРТАМ"
+		"season_section_graph_x_axis_label_min"		"{d:week_min}-Я НЕДЕЛЯ"
+		"season_section_graph_x_axis_label_max"		"{d:week_max}-Я НЕДЕЛЯ"
+		"tooltip-no-map-stats"			"Ваша статистика для этой карты недоступна"
+		"tooltip-season-rank-week-idx"		"{s:week-id}-Я НЕДЕЛЯ"
+		"tooltip-season-rank-week-name"		"{s:week-name}"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	WIN PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_winpanel_mvp_award"				"СЦИ"
+		"Panorama_winpanel_mvp_award_kills"			"Самый ценный игрок"
+		"Panorama_winpanel_mvp_award_ace"			"Самый ценный игрок за убийство всех врагов"
+		"Panorama_winpanel_mvp_award_bombplant"		"Самый ценный игрок за закладку бомбы"
+		"Panorama_winpanel_mvp_award_bombdefuse"	"Самый ценный игрок за обезвреживание бомбы"
+		"Panorama_winpanel_mvp_award_rescue"		"Самый ценный игрок за спасение заложника"
+		"Panorama_winpanel_mvp_award_score"			"Самый ценный игрок за наибольший счёт"
+		"Panorama_winpanel_mvp_award_inferno"		"Самый ценный игрок за нанесение наибольшего урона огнём"
+		"Panorama_winpanel_mvp_award_blast"			"Самый ценный игрок за нанесение наибольшего урона взрывчаткой"
+		"Panorama_winpanel_mvp_award_bombdefuse_clutch"	"Самый ценный игрок за обезвреживание бомбы в одиночку"
+		"Panorama_winpanel_mvp_award_bombplant_clutch"	"Самый ценный игрок за закладку и защиту бомбы"
+		"Panorama_winpanel_mvp_award_gungame"		"Самый ценный игрок"
+		"Panorama_winpanel_mvp_winner"				"СЦИ"
+		"Panorama_winpanel_mvp_award_kills_three"	"Самый ценный игрок за наибольшее число убийств (3)"
+		"Panorama_winpanel_mvp_award_kills_four"	"Самый ценный игрок за наибольшее число убийств (4)"
+
+		"Panorama_WinPanel_rank_awarded_multi"	"Получено новых рангов: {d:rank_increase}"
+
+		"Panorama_WinPanel_rank_name_string"	"{s:current_best_cat} <font color='#CCCCCC'>({s:current_rank_cat})</font>"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	WATCH PANEL
+		//
+		///////////////////////////////////////////////////////////
+		
+		"WatchMenu_Watch"					"Смотреть"
+		"WatchMenu_Tournament_Versus"		"и"
+		"WatchMenu_Outcome_Tied"			"Ничья"
+		"WatchMenu_Outcome_Abandon"			"Покинуто"
+		"WatchMenu_Outcome_Won"				"<img src='file://{images}/icons/ui/trophy.svg' width='15' height='15'/> Победа"
+		"WatchMenu_Outcome_Lost"			"Поражение"
+		"WatchMenu_Expand_Match_Menu"		"Ещё"
+		"WatchMenu_Get_Share_Link"			"Скопировать ссылку на запись"
+		"WatchMenu_Share_Link_Copied"		"Ссылка скопирована в буфер обмена"
+		"WatchMenu_Download_Demo"			"Скачать запись матча"
+		"WatchMenu_Watch_Live"				"Смотреть в прямом эфире"
+		"WatchMenu_Watch_Highlights"		"Смотреть лучшие моменты"
+		"WatchMenu_Watch_Lowlights"			"Худшие моменты"
+		"WatchMenu_Watch_Highlights_Player_Selected"	"Лучшие моменты {s:playerNameTitle}"
+		"WatchMenu_Watch_Lowlights_Player_Selected"	"Худшие моменты {s:playerNameTitle}"
+		"WatchMenu_Delete"					"Удалить локальные файлы записи"
+		"WatchMenu_Downloading"				"Скачивание"
+		"WatchMenu_Info_Download_Failed"	"Скачивание не завершено"
+		"WatchMenu_Info_Download_Failed_Retry" "Попробовать скачать запись заново?"
+		"WatchMenu_Info_Download_Failed_Info" "Скачивание не завершено. Вам доступна информация из таблицы результатов, но вы не можете посмотреть матч."
+		"WatchMenu_Download_Disabled_Hint"	"Срок хранения записи истёк, и её больше нельзя скачать."
+		"WatchMenu_Tournament_BulletPoint"	"<ul>
+<li>Смотрите матчи и делайте прогнозы на групповой этап и стадию плей-офф с помощью наклеек команд.</li>
+<li>За каждый верный прогноз вы получите очки, улучшающие трофей прогнозов. Его можно будет выставить напоказ в профиле Counter-Strike и Steam.</li>
+<li>Прогнозы на групповой этап можно сделать только до его начала.</li>
+<li>Прогнозы на плей-офф можно сделать только до его начала.</li>
+</ul>"
+		"WatchMenu_Viewer"				"Зритель"
+		"WatchMenu_Viewers"				"Зрителей"
+		"WatchMenu_Viewers_dv:f"		"{spectatorCount, plural, one{{d:spectatorCount} зритель} few{{d:spectatorCount} зрителя} many{{d:spectatorCount} зрителей} other{{d:spectatorCount} зрителя}}"
+		"WatchMenu_FirstHalf"			"Первая половина"
+		"WatchMenu_SecondHalf"			"Вторая половина"
+		"WatchMenu_Overtime"			"Овертайм"
+		"MatchInfo_FirstRound"			"1-й раунд"
+		"MatchInfo_Halftime"			"Перерыв"
+		"MatchInfo_Overtime"			"Овертайм"
+		"MatchInfo_RoundDataTitle"      "Заслуги {s:playerNameTitle} по раундам"
+		"MatchInfo_Date"				"{s:month} {s:day}"
+		
+		"MatchInfo_Date_Tournament_Month_Short_8"	"окт"		
+		"MatchInfo_Date_Tournament_Month_Final_Short_8"	"ноя"
+		"MatchInfo_Date_Tournament_Month_Short_9"	"мар"
+		"MatchInfo_Date_Tournament_Month_Short_9_1"	"апр"
+		"MatchInfo_Date_Tournament_Month_Final_Short_9"	"апр"
+		"MatchInfo_Date_Tournament_Month_Short_10"	"июл"
+		"MatchInfo_Date_Tournament_Month_Short_10_1"	"июл"
+		"MatchInfo_Date_Tournament_Month_Final_Short_10"	"июл"
+		"MatchInfo_Date_Tournament_Month_Short_11"	"янв"
+		"MatchInfo_Date_Tournament_Month_Short_11_1"	"янв"
+		"MatchInfo_Date_Tournament_Month_Final_Short_11"	"янв"
+		"MatchInfo_Date_Tournament_Month_Short_12"	"июл"
+		"MatchInfo_Date_Tournament_Month_Short_12_1"	"июл"
+		"MatchInfo_Date_Tournament_Month_Final_Short_12"	"июл"
+		"WatchMenu_PickEm_ComingSoon"	"Просмотр прошлых прогнозов и фэнтези-команд ещё недоступен."
+		"WatchMenu_ViewerCount"	"{s:channel} | Зрителей: {s:numberOfViewers}"
+		"Matchlist_Team_Selection"	"Все команды"
+
+
+		"pickem_timer_inactive"		"Пока что прогнозы сделать нельзя"
+		"pickem_timer"				"Прогнозы закроются через {s:time}"
+		"pickem_timer_upsell"		"Прогнозы закроются через <b>{s:time}</b>. Приобретите пропуск, чтобы делать прогнозы и зарабатывать сувенирные жетоны."
+		"pickem_timer_locked"		"Прогнозы закрыты"
+		"pickem_points_earned" 		"очк."
+		"pickem_correct_pick" 		"Верный прогноз"
+		"pickem_points_needed_next_level" 	"До <b>{s:level}</b> осталось <b>{d:points}</b> {s:plural}"
+		"pickem_points_result" 		"Вы получили трофей прогнозов из <b>{s:result-level}</b>"
+		"pickem_points_result_bronze" "Вы получили <b>бронзовый</b> трофей прогнозов"
+		"pickem_points_result_silver" "Вы получили <b>серебряный</b> трофей прогнозов"
+		"pickem_points_result_gold" "Вы получили <b>золотой</b> трофей прогнозов"
+		"pickem_point"				"очко"
+		"pickem_points"				"очк."
+		"pickem_level_bronze"		"бронзы"
+		"pickem_level_silver"		"серебра"
+		"pickem_level_gold"			"золота"
+		"pickem_group_pick_worth"	"За каждый верный прогноз даётся <b>{d:points} {s:plural} </b>"
+		"pickem_pick_correct_points_earned"	"+ <b>{d:points}</b> {s:plural}"
+		"pickem_pick_drag_hint" 	"Перетащите команду сюда"
+		"pickem_pick_undefeated"	"<b>Выберите</b> команду, которая <b>пройдёт этап без единого поражения</b>"
+		"pickem_pick_eliminated"	"<b>Выберите</b> команду, которая <b>покинет турнир без единой победы</b>"
+		"pickem_get_items" 			"Купить наклейки"
+		"pickem_get_items_tooltip" 	"Чтобы сделать прогнозы, вам нужны эти наклейки: <br><br>"
+		"pickem_place_picks" 		"Сделать прогнозы"
+		"pickem_confirm_picks" 		"Подтверждение прогнозов"
+		"pickem_confirm_Warning"	"<b>Эти наклейки будут использоваться в прогнозах на турнир.</b>\n\nОни останутся в вашем инвентаре, и их можно будет наклеить на любое оружие или обменять после текущего этапа турнира.\n\n<span class=\"premier-pickban__title__text-red\">\nЭти наклейки нельзя будет использовать или обменять до конца текущего этапа турнира. Вы не снимете эти ограничения, даже если удалите прогноз.</span>\n"
+		"pickem_confirm_ClearAll"	"<b>В ваших прогнозах не останется наклеек.</b>\n\nНаклейки, использованные в прогнозах, останутся в вашем инвентаре, и их можно будет наклеить на любое оружие или обменять после текущего этапа турнира.\n"
+		"pickem_confirm_stickes_for_lock" 	"Наклейки для прогнозов"
+		"pickem_confirm_not_owned" 		"<b>Вы не можете сделать эти прогнозы.</b><span class=\"premier-pickban__title__text-red\">\nДля этого нужны наклейки соответствующих команд.</span>"
+		"pickem_apply_emptyslots"		"Сделайте все прогнозы, чтобы обновить их. Перетащите команды в пустые ячейки и нажмите на кнопку «Сделать прогнозы», чтобы подтвердить свой выбор."
+		"pickem_apply_timeout"			"Не удалось изменить ваши прогнозы. Повторите попытку позже."
+		"pickem_apply_drag_hint"	"Перетащите ваш выбор сюда"
+		"pickem_apply_immediate" 		"Обновление прогнозов..."
+		"pickem_save_all" 			"СОХРАНИТЬ ПРОГНОЗЫ"
+		"pickem_make_picks" 		"ПРОГНОЗОВ: {d:user-picks} / {d:total-picks}"
+		"pickem_drag_picks" 		"Делайте прогнозы, перетаскивая команды"
+		"pickem_reveal_all_results" "Показать результаты"
+		"pickem_saved" 		"Прогнозы сохранены"
+		"pickem_teams_tbd" 	"Команды ещё не известны"
+		"pickem_challenge_section_title" "ПРОГНОЗЫ"
+		"pickem_items_section_title" "ТУРНИРНЫЕ ПРЕДМЕТЫ"
+		"pickem_items_tab_opening_stage" "НАЧАЛЬНЫЙ ЭТАП"
+		"pickem_items_tab_elim_stage" "ЭТАП ВЫБЫВАНИЯ"
+		"pickem_items_tab_stage_i" "Этап I"
+		"pickem_items_tab_stage_ii" "Этап II"
+		"pickem_items_tab_stage_iii" "Этап III"
+		"pickem_items_tab_playoff_stage" "ПЛЕЙ-ОФФ"
+		"pickem_teams_remove_all_tooltip" 	"Убрать все прогнозы"
+		"pickem_teams_fill_tooltip" 	"Заполнить пустые ячейки случайным образом"
+		"pickem_versus"				"И"
+		"pickem_submit_warning"		"{s:pass-name} не активирован"
+		"pickem_submit_warning_tooltip"		"Активируйте {s:pass-name} до начала этапа, чтобы ваши прогнозы на него засчитались."
+		"pickem_submit_warning_popup_title"	"Сохранить прогнозы без активированного пропуска"
+		"pickem_submit_warning_popup_desc"	"Активируйте {s:pass-name} до начала этапа, чтобы ваши прогнозы на него засчитались."
+		"pickem_submit_warning_popup_action""Сохранить прогнозы без активированного пропуска"
+		"pickem_submit_warning_popup_action2"	"Активировать пропуск и сохранить прогнозы"
+		"contextmenu_pickem_souvenir_title" 	"Выберите матч, сувенирный набор которого хотите получить"
+		"contextmenu_pickem_souvenir_no_result" 	"Возвращайтесь после завершения матча, чтобы получить сувенирный набор"
+		"mainmenu_major_hub"	"МЕЙДЖОР-ТУРНИР И ПРЕДМЕТЫ"
+		"mainmenu_major_hub_items"	"Наклейки уже доступны"
+		"mainmenu_major_hub_no_items" "МЕЙДЖОР-ТУРНИР"
+
+		"pickem_swiss_group_00"									"0:0"
+		"pickem_swiss_group_10"									"1:0"
+		"pickem_swiss_group_11"									"1:1"
+		"pickem_swiss_group_12"									"1:2"
+		"pickem_swiss_group_20"									"2:0"
+		"pickem_swiss_group_21"									"2:1"
+		"pickem_swiss_group_22"									"2:2"
+		"pickem_swiss_group_01"									"0:1"
+		"pickem_swiss_group_02"									"0:2"
+
+		"pickem_swiss_group_30"									"3:0 — прошли"
+		"pickem_swiss_group_3x"									"3:1 3:2\n прошли"
+		"pickem_swiss_group_13"									"1:3 — выбыли"
+		"pickem_swiss_group_23"									"2:3 — выбыли"
+		"pickem_swiss_group_03"									"0:3 — выбыли"
+
+
+
+
+
+
+
+		// WATCH EVENTS
+
+		"eventsched_lan"												"LAN-турнир"
+		"eventsched_online"											"Онлайн-турнир"
+		"eventsched_show_online"								"Показать онлайн-турниры"
+		"eventsched_date_format"								"{s:eventsched_date_day} {s:eventsched_date_month}"
+		"eventsched_versus"											"и"
+		"eventsched_ongoing"										"Сейчас"
+		"eventsched_tbd"												"неизвестно"
+		"eventsched_live"												"ПРЯМОЙ ЭФИР"
+		"eventsched_link"												"Узнать больше на HLTV.org"
+		"eventsched_event_link"									"Страница турнира на HLTV.org"
+		"eventsched_match_link"									"Страница матча на HLTV.org"
+		"eventsched_team_link"									"Страница команды на HLTV.org"	
+		"eventsched_no_streams"									"Нет трансляций"
+		"eventsched_watch_on_gotv"								"Смотреть в CSTV"
+		"eventsched_favorite_tt"								"{s:favorite_tooltip}"
+		"eventsched_favorite_tooltip_prime"			"Добавив турнир в избранное,\nвы увидите его матчи в главном меню."
+		"eventsched_favorite_tooltip_not_prime" "Чтобы добавить турнир в избранное, необходим прайм-статус."
+		"eventsched_match_tooltip"							"{s:watchnotice_teamname_1} и {s:watchnotice_teamname_2}"
+		"eventsched_stream_watch"								"{s:stream_site}"
+		"eventsched_hltv"												"Информация о турнирах предоставлена порталом HLTV.org"
+		"eventsched_country"										"{s:eventsched_country}"
+		"eventsched_no_live_matches"						"Нет матчей в прямом эфире."
+		"eventsched_featured"										"Самый популярный среди игроков турнир за {s:eventsched_fave_month}."
+		"eventsched_official"										"Это событие связано с мейджор-турниром."
+
+		"WatchNotice_Reason_Official"						"Это событие показано, потому что оно связано с мейджор-турниром."
+		"WatchNotice_Reason_Personal"						"Этот турнир отображается, потому что вы добавили его в избранное."
+		"WatchNotice_Reason_Community"					"Этот турнир отображается, потому что он наиболее популярный среди игроков за {s:watchnotice_fave_month}."
+		"WatchNotice_Watch"											"Смотреть"
+
+	
+		// Used with formatText.AbbreviateNumber()
+		///////////////////////////////////////////
+		"NumberAbbreviation_E3"			"{s:abbreviated_number} тыс."
+		
+		// Note to translators: Add as needed. Code will use only available strings. example:
+		// "NumberAbbreviation_E4"		"{s:abbreviated_number}万"	
+
+		"NumberAbbreviation_E6"			"{s:abbreviated_number} млн"
+		"NumberAbbreviation_E9"			"{s:abbreviated_number} млрд"
+		"NumberAbbreviation_E12"		"{s:abbreviated_number} трлн"
+
+		// Used with formatText.SplitAbbreviateNumber()
+		///////////////////////////////////////////
+		"NumberAbbreviation_suffix_E3"			" тыс."
+		
+		// Note to translators: Add as needed. Code will use only available strings. example:
+		// "NumberAbbreviation_suffix_E4"		"万"	
+
+		"NumberAbbreviation_suffix_E6"			" млн"
+		"NumberAbbreviation_suffix_E9"			" млрд"
+		"NumberAbbreviation_suffix_E12"			" трлн"
+
+
+		"digitpanel_digits"			 " 0123456789,.-+?"
+		"digitpanel_digits_premier" " 1234567890,?"
+
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	OVERWATCH
+		//
+		///////////////////////////////////////////////////////////
+		
+		"Panorama_Overwatch_Downloading"		"Дело скачивается..."
+		"Panorama_Overwatch_Review"				"Рассмотрение дела займёт несколько минут."
+		"Panorama_Overwatch_Welcome"			"Патруль Counter-Strike"
+		"Panorama_Overwatch_Tooltip_p1"			"Вам нужно будет скачивать и просматривать записи матчей Counter-Strike 2 с официальных серверов Valve в поисках подозрительных моментов. После просмотра вас попросят вынести вердикт по поводу поведения игрока."
+		"Panorama_Overwatch_Tooltip_sh1"		"Шаг 1"
+		"Panorama_Overwatch_Tooltip_p2"			"Нажмите на кнопку «СКАЧАТЬ ДЕЛО» внизу справа, чтобы скачать дело патруля."
+		"Panorama_Overwatch_Tooltip_sh2"		"Шаг 2"
+		"Panorama_Overwatch_Tooltip_p3"			"Нажмите на кнопку «РАССМОТРЕТЬ ДЕЛО», чтобы посмотреть записанный сервером повтор с точки зрения подозреваемого игрока."
+		"Panorama_Overwatch_Tooltip_sh3"		"Шаг 3"
+		"Panorama_Overwatch_Tooltip_p4"			"После просмотра выберите решение по каждому из вопросов и нажмите на кнопку «ВЫНЕСТИ ВЕРДИКТ»."
+		"Panorama_Overwatch_Major_Disruption"	"Серьёзное нарушение"
+		"Panorama_Overwatch_Minor_Disruption"	"Мелкое нарушение"
+		"Panorama_Overwatch_Res_Griefing"		"Препятствование нормальной игре"
+		"Panorama_Overwatch_Res_AimHacking"		"Помощь в прицеливании"
+		"Panorama_Overwatch_Res_WallHacking"	"Помощь в обнаружении"
+		"Panorama_Overwatch_Res_SpeedHacking"	"Другие вспомогательные средства"
+		
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	ROSETTA PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_CSGO_Spray_EnableMouse"			"<b>[{g:csgo_key:spray_mouse_enable}]</b> Включить курсор"
+		"Panorama_CSGO_Rosetta_Item_Name"			"<font color=\"{s:item_color}\">{s:item_name}</font>"
+		"Panorama_CSGO_Rosetta_Item_Count"			"Зарядов: {d:item_count}"
+		"Panorama_Attrib_SpraysHint"					"[{s:bind_attack}] Нанести граффити"
+		"Panorama_Attrib_SpraysHint_Auto"			"Отпустите <b>{s:bind_spray_menu}</b>, чтобы нанести граффити"
+
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	RETICLE PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_HUD_weaponid_swap"			"<font color=\"#6a6156\">[{s:bind_use}] Сменить на</font> <font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+		"Panorama_HUD_weaponid_pickup"			"<font color=\"#6a6156\">[{s:bind_use}] Подобрать</font> <font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+		"Panorama_HUD_weaponid_lookat"			"<font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+		"Panorama_HUD_weaponid_holdtopickup"	"<font color=\"#6a6156\">Зажмите [{s:bind_use}], чтобы подобрать</font> <font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+
+		"Panorama_HUD_playerid_sameteam"			"<font color='#6E7D5C'>Союзник: {g:player_name:html:player_slot} Здоровье: {d:player_health}%</font>"
+		"Panorama_HUD_playerid_diffteam"			"<font color='#CC0000'>Враг: {g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_playerid_specteam"			"<font color='#6E7D5C'>{g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_playerid_noteam"			"<font color='#FFCC00'>{g:player_name:html:player_slot} Здоровье:{d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_shadow"		"{g:player_name:player_slot}"
+
+		"Panorama_HUD_playerid_survival_enemy"				"<font color='#CC0000'>Враг</font>"
+		"Panorama_HUD_playerid_survival_hunter_target"		"<font color='#e58816'>Ценная цель</font>"
+
+		"Panorama_HUD_botid_request_bomb"		"<font color='#e5da25'>[{s:bind_use}] Взять бомбу</font>"
+
+		"Panorama_HUD_hostageid_nh"				"<font color='#e5da25'>Заложник</font>"
+		"Panorama_HUD_hostagename_nh"			"<font color='#e5da25'>{g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_hostageid_nh_use_lead"		"<font color='#e5da25'>[{s:bind_use}] Подобрать заложника</font>"
+		"Panorama_HUD_hostageid_nh_following"	"<font color='#e5da25'>Заложник (следует за {g:player_name:html:player_slot})</font>"
+
+		"Panorama_HUD_hostageid"					"<font color='#e5da25'>Заложник</font><font color='#dcdac0'> {d:player_health}%</font>"
+		"Panorama_HUD_hostageid_use_lead"		"<font color='#e5da25'>[{s:bind_use}] Подобрать заложника</font><font color='#dcdac0'> {d:player_health}%</font>"
+		"Panorama_HUD_hostageid_following"		"<font color='#e5da25'>Заложник (следует за {s:player_name})</font><font color='#dcdac0'> {d:player_health}%</font>"
+
+
+		"Panorama_HUD_playerid_overhead_health"			"{d:player_health}%"
+		"Panorama_HUD_playerid_overhead_money"			"${d:r:player_money}"
+
+		"Panorama_HUD_playerid_overhead_survival"					"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#00c3e1'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_lowhealth"			"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#d82429'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_money"				"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#7ebc50'> ${d:r:player_money}</font>"
+		"Panorama_HUD_playerid_overhead_survival_grey"				"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#dddddd'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_lowhealth_grey"	"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#d82429'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_money_grey"		"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#7ebc50'> ${d:r:player_money}</font>"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	DEATH PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_SurvivalEndOfMatch_ShowStats"			"[{s:bind_jump}] Статистика матча"
+		"Panorama_Death_Cancel_Start_Replay"			"[{s:bind_jump}] Пропустить"
+		"Panorama_Death_Cancel_Replay" 				"[{s:bind_jump}] Убрать запись"
+		"Panorama_Death_Snapshot"						"[{s:bind_jpeg}] Сделать скриншот"
+		"Panorama_HUD_Spectate_Navigation_Replay_Death"	"<font color='#ddbb22'><b>[{s:bind_reload}] Запись убийства</b></font>"
+
+		"Panorama_DeathPanel_Killer1_YourWeapon"			"убивает вас вашим же оружием ({s:weapon_name})"
+		"Panorama_DeathPanel_Killer1_KillerWeapon"			"убивает вас ({s:weapon_name})"
+		"Panorama_DeathPanel_Killer1_OthersWeapon"			"убивает вас ({s:weapon_name} игрока <font color='#adadad'>{s:other_player_name}</font>)"
+		"Panorama_DeathPanel_Killer1_Weapon"				"убивает вас ({s:weapon_name})"
+		"Panorama_DeathPanel_Killer1_Weapon_Plural" 		"убивает вас ({s:weapon_name})"
+		"Panorama_DeathPanel_Killer1_Weapon_CustomString" 	"{s:weapon_name}"
+
+		"Panorama_DeathPanel_DamageTaken:f"					"{hits_taken, plural, one{<font color='#A0A0A0'>Получено урона: </font><font color='#FFFFFF'><b>{d:damage_taken} ед.</b></font> <font color='#A0A0A0'> от</font> <font color='#FFFFFF'><b>{d:hits_taken} попадания</b></font>} few{<font color='#A0A0A0'>Получено урона: </font><font color='#FFFFFF'><b>{d:damage_taken} ед.</b></font> <font color='#A0A0A0'> от</font> <font color='#FFFFFF'><b>{d:hits_taken} попаданий</b></font>} many{<font color='#A0A0A0'>Получено урона: </font><font color='#FFFFFF'><b>{d:damage_taken} ед.</b></font> <font color='#A0A0A0'> от</font> <font color='#FFFFFF'><b>{d:hits_taken} попаданий</b></font>} other{<font color='#A0A0A0'>Получено урона: </font><font color='#FFFFFF'><b>{d:damage_taken} ед.</b></font> <font color='#A0A0A0'> от</font> <font color='#FFFFFF'><b>{d:hits_taken} попадания</b></font>}}"
+		"Panorama_DeathPanel_DamageGiven:f"					"{hits_given, plural, one{<font color='#A0A0A0'>Нанесено урона: </font><font color='#FFFFFF'><b>{d:damage_given} ед.</b></font> <font color='#A0A0A0'> за</font> <font color='#FFFFFF'><b>{d:hits_given} попадание</b></font>} few{<font color='#A0A0A0'>Нанесено урона: </font><font color='#FFFFFF'><b>{d:damage_given} ед.</b></font> <font color='#A0A0A0'> за</font> <font color='#FFFFFF'><b>{d:hits_given} попадания</b></font>} many{<font color='#A0A0A0'>Нанесено урона: </font><font color='#FFFFFF'><b>{d:damage_given} ед.</b></font> <font color='#A0A0A0'> за</font> <font color='#FFFFFF'><b>{d:hits_given} попаданий</b></font>} other{<font color='#A0A0A0'>Нанесено урона: </font><font color='#FFFFFF'><b>{d:damage_given} ед.</b></font> <font color='#A0A0A0'> за</font> <font color='#FFFFFF'><b>{d:hits_given} попадания</b></font>}}"
+
+		/////////////////////////////////////////////////////////////////
+		//
+		//      CHATWHEEL OPTIONS
+		//
+		////////////////////////////////////////////////////////////
+
+		"Chatwheel_segment_top"	"Сверху"
+		"Chatwheel_segment_topright"	"Справа сверху"
+		"Chatwheel_segment_right"	"Справа"
+		"Chatwheel_segment_bottomright"	"Справа снизу"
+		"Chatwheel_segment_bottom"	"Снизу"
+		"Chatwheel_segment_bottomleft"	"Слева снизу"
+		"Chatwheel_segment_left"	"Слева"
+		"Chatwheel_segment_topleft"	"Слева сверху"
+
+		"Chatwheel_ping_on_cooldown"  "Метки перезаряжаются."
+
+		"Chatwheel_plant"	"Заложите бомбу"
+		"Chatwheel_sitea"	"Метка на точку А"
+		"Chatwheel_siteb"	"Метка на точку В"
+
+		"Chatwheel_section_move"	"Движение"
+		"Chatwheel_sticktogether"	"Держитесь вместе"
+		"Chatwheel_followme"	"Следуйте за мной"
+		"Chatwheel_followingyou"	"Следую за вами"
+		"Chatwheel_spreadout"	"Рассредоточьтесь"
+		"Chatwheel_fallback"	"Отступаем"
+		"Chatwheel_gogogo"	"Пошли, пошли!"
+		"Chatwheel_onmyway"	"Я в пути"
+		"Chatwheel_gethostage"	"Проверьте заложника"
+		"Chatwheel_quiet"	"Нужна тишина"
+
+		"Chatwheel_section_prepare"	"Подготовка"
+		"Chatwheel_requestecoround"	"Нужно экономить"
+		"Chatwheel_requestspend"	"Нужно покупать"
+		"Chatwheel_requestleader"	"Кто пойдёт первым?"
+		"Chatwheel_requestweapon"	"Запрашиваю оружие"
+		"Chatwheel_requestplan"		"Какой план?"
+		"Chatwheel_aplan"	"Метка на точку А"
+		"Chatwheel_bplan"	"Метка на точку В"
+		"Chatwheel_midplan"	"Метка на центр"
+
+		"Chatwheel_section_grenades"	"Гранаты"
+		"Chatwheel_decoy"	"Нужны ложные гранаты"
+		"Chatwheel_smoke"	"Нужны дымовые гранаты"
+		"Chatwheel_grenade"	"Нужны осколочные гранаты"
+		"Chatwheel_fire"	"Нужны коктейли Молотова"
+		"Chatwheel_flashbang"	"Нужны светошумовые гранаты"
+		
+		"Chatwheel_section_defend"	"Защищайте"
+		"Chatwheel_coverme"	"Прикройте меня"
+		"Chatwheel_coveringyou"	"Прикрываю"
+		"Chatwheel_help"	"Помощь"
+		"Chatwheel_needbackup"	"Нужно подкрепление"
+		"Chatwheel_holdposition"	"Удерживайте эту позицию"
+        "Chatwheel_rotatetome"	"Подходите ко мне"
+
+		"Chatwheel_section_bomb"	"Проверьте бомбу"
+		"Chatwheel_guardingbomb"	"Охраняю бомбу"
+		"Chatwheel_bombsiteclear"	"Точка закладки чиста"
+		"Chatwheel_droppedbomb"	"Бомба сброшена"
+		"Chatwheel_bombpickedup"	"Бомба подобрана"
+		"Chatwheel_ifixbomb"	"Я разберусь с бомбой"
+		"Chatwheel_youfixbomb"	"Разберись с бомбой"
+		
+		"Chatwheel_bombat"	"Метка на бомбу" 
+
+		"Chatwheel_section_enemystatus"	"Статус противника"
+		"Chatwheel_heardnoise"	"Слышу шум" 
+		"Chatwheel_enemyspotted"	"Замечен враг"
+		"Chatwheel_sectorclear"	"Всё чисто"
+		"Chatwheel_sniperspotted"	"Замечен снайпер"
+		"Chatwheel_bombcarrierspotted"	"Замечена бомба"
+		"Chatwheel_threeleft"	"Осталось трое"
+		"Chatwheel_twoleft"	"Осталось двое"
+		"Chatwheel_oneleft"	"Остался один"
+		"Chatwheel_oneenemyhere"  "Здесь один враг"
+		"Chatwheel_multipleenemieshere"  "Здесь несколько врагов"
+		"Chatwheel_ihavethebomb"  "Бомба подобрана"
+
+		"Chatwheel_section_enemykilled"	"Враг убит"
+		"Chatwheel_gotheadshot"	"Прямо в голову"
+		"Chatwheel_ikilledsniper"	"Снайпер убит"
+		"Chatwheel_wekilledsniper"	"Мы убили снайпера"
+		"Chatwheel_sawheadshot"	"Отличное попадание в голову"
+
+		"Chatwheel_section_combatstatus"	"Статус боя"
+		"Chatwheel_attacking"	"Атакую"
+		"Chatwheel_inposition"	"Я на месте"
+		"Chatwheel_covering"	"Прикрываю"
+		"Chatwheel_pinned"	"Меня зажали"
+		"Chatwheel_incombat"	"Веду бой"
+		"Chatwheel_friendlyfire"	"Огонь по своим"
+		"Chatwheel_lastunitalive"	"Последний боец в строю"
+
+		"Chatwheel_section_responses"	"Ответы"
+		"Chatwheel_wewon"	"Мы победили"
+		"Chatwheel_welost"	"Мы проиграли"
+		"Chatwheel_wearewinning"	"Мы побеждаем"
+		"Chatwheel_lostround"	"Мы проиграли этот раунд"
+		"Chatwheel_thanks"	"Спасибо!"
+		"Chatwheel_sorry"	"Извините"
+		"Chatwheel_compliment"	"Отлично!"
+		"Chatwheel_affirmative"	"Да"
+		"Chatwheel_negative"	"Нет"
+		"Chatwheel_peptalk"	"Напутствие"
+		"Chatwheel_cheer"	"Подбадривание"
+
+		"Chatwheel_plantingata"	"Закладываю на точке A"
+		"Chatwheel_plantingatb"	"Закладываю на точке B"
+		"Chatwheel_plantedata"	"Бомба заложена на A"
+		"Chatwheel_plantedatb"	"Бомба заложена на B"
+		"Chatwheel_planted"	"Мы заложили бомбу"
+
+		"Chatwheel_seehostagestaken"	"Заложников подбирают"
+		"Chatwheel_requestgethostages"	"Займитесь заложниками"
+
+		"Chatwheel_guardinga"	"Охраняю точку A"
+		"Chatwheel_guardingb"	"Охраняю точку B"
+		
+
+		
+		"Chatwheel_section_command"	"Команды"
+		"Chatwheel_section_report"	"Доложи"
+
+		"Chatwheel_description" "Колесо чата даёт быстрый доступ к настраиваемому списку полезных радиокоманд."
+
+		////
+		//
+		// Volatile Laptop
+		//
+		////
+
+		// ---------------------------------------------------------------------------------------------
+		"laptop_window_collection_title"			"ОПЫТ ЗА ИЗУЧЕНИЕ КАТАЛОГА"
+		"laptop_window_expiration_title"			"ОСТАЛОСЬ"
+		"laptop_window_seal_title"					"СТАТУС"
+		"laptop_window_messages_title"				"ЧАТ — ТОРГОВЕЦ ОРУЖИЕМ"
+		"laptop_window_currentoffer_title"			"ТЕКУЩЕЕ ПРЕДЛОЖЕНИЕ"
+		"laptop_app_title"							"<span class=\"laptop-app-title-prefix\">UP-</span>Link"
+		"laptop_app_version"						"версия 1.1.0.2000"
+
+		"dealer_offer_attachment_title"							"{s:item-name}"
+		"dealer_offer_attachment_wear"							"{s:item-rarity}"
+		"dealer_offer_attachment_remaining_title"				"ПРЕДЛОЖЕНИЕ {d:offer-total}"
+		"dealer_offer_attachment_remaining"						"Предложение {d:offer-total}"
+		"dealer_offer_received_count"							"<b>{s:offer-count}-е</b> предложение"
+		"dealer_offer_attachment_final_title"					"ФИНАЛЬНОЕ ПРЕДЛОЖЕНИЕ"
+		"dealer_offer_attachment_final"							"{s:offer-count}-е, финальное предложение"
+		"dealer_offer_attachment_status"						"Предложение — {s:offer-status}"
+		"dealer_offer_attachment_status-active"					"<b><span class=\"offer-active\">действует</span></b>"
+		"dealer_offer_attachment_status-price"					"<b><span class=\"offer-active\">{s:offer-price}</span></b>"
+		"dealer_offer_attachment_status-declined-price"			"{s:offer-price}"
+		"dealer_offer_attachment_status-declined"				"<span class=\"offer-declined\">{s:offer-count} предложение — отклонено</span>"
+
+		"user_btn_purchase_desc_purchase"		"Удерживайте, чтобы приобрести этот предмет. После покупки терминал утилизируется."
+		"user_btn_purchase_desc_continue"		"Удерживайте, чтобы окончательно отклонить это предложение и увидеть следующее."
+		"user_btn_purchase_desc_end"		"Отклонить финальное предложение и утилизировать этот терминал."
+		"user_btn_purchase_title"			"{s:offer-count} предложение"
+		"user_btn_purchase_final_title"		"<b>Финальное предложение</b>"
+		"user_btn_decline_desc"				"Отклонить это предложение и перейти к другому"
+		"user_btn_accept"		"Взять за <b>{s:price}</b>"
+		"user_btn_accept_final"	"Принять предложение <b>{s:price}</b>"
+		"user_btn_accept_0"		"<b>{s:price}</b> подходит."
+		"user_btn_accept_1"		"Беру за <b>{s:price}</b>"
+		"user_btn_accept_2"		"Возьму за <b>{s:price}</b>"
+		"user_btn_accept_3"		"Урву за <b>{s:price}</b>"
+		"user_btn_accept_4"		"<b>{s:price}</b> пойдёт, беру"
+		"user_btn_accept_5"		"<b>{s:price}</b> устраивает"
+		"user_btn_next"			"Отклонить"
+		"user_btn_next_0"		"Заманчиво, но откажусь"
+		"user_btn_next_1"		"Не стоит моих пуль"
+		"user_btn_next_2"		"Не-а"
+		"user_btn_next_3"		"Я пас"
+		"user_btn_next_4"		"Не пойдёт"
+		"user_btn_next_5"		"Спасибо, но нет"
+		"user_btn_next_6"		"Не в этот раз"
+		"user_btn_next_7"		"Не сегодня"
+		"user_btn_pause"		"Приостановить сделку"
+		"user_btn_end"			"Утилизировать терминал"
+
+		"user_message_limit_0"		"Мой максимум — <b>{s:limit-setting}</b>."
+		"user_message_limit_1"		"Как насчёт потолка в <b>{s:limit-setting}</b>?"
+		"user_message_limit_2"		"До <b>{s:limit-setting}</b> мне подходит."
+		"user_message_limit_3"		"Потолок в <b>{s:limit-setting}</b> подходит."
+		"user_message_limit_unlimited_0"	"<b>Лимита нет</b>, показывай всё."
+		"user_message_limit_unlimited_1"	"<b>У тебя карт-бланш.</b> За кошелёк не переживай."
+		"user_message_limit_unlimited_2"	"Я здесь, чтобы покупать. <b>Показывай всё.</b>"
+		"user_message_limit_unlimited_3"	"Если стреляет, я взгляну. <b>Цена не главное.</b>"
+		"user_message_limit_unlimited_4"	"Предела нет."
+		"offer_limit_setting"		"Макс. цена: {s:limit}"
+		"offer_limit_setting_interface"		"Макс. цена: {s:limit} <img src='file://{images}/icons/ui/expand.svg' class='expand-icon'/>"
+
+		"dealer_offer_Unknown"							"-"
+		"dealer_offer_1"								"1-е"
+		"dealer_offer_2"								"2-е"
+		"dealer_offer_3"								"3-е"
+		"dealer_offer_4"								"4-е"
+		"dealer_offer_5"								"5-е"
+		"dealer_offer_6"								"6-е"
+		"dealer_offer_7"								"7-е"
+		"dealer_offer_8"								"8-е"
+		"dealer_offer_9"								"9-е"
+		"dealer_offer_10"								"10-е"
+
+		"current_offer_tooltip"		"Текущее предложение торговца оружием."
+		"declined_offer_tooltip"	"Отклонённое предложение"
+		"future_offer_tooltip"		"Предложение ещё не представлено."
+		"laptop_expiration_tooltip"		"Время до истечения срока действия этого терминала и предложений в нём."
+		"laptop_max_offer_tooltip"		"Укажите максимальную цену, чтобы получать предложения только в её пределах. Лимит можно изменить в любое время."
+		"collection_xp_tooltip"			"Зарабатывайте очки опыта за просмотр предложений из этой коллекции. Откройте, чтобы увидеть прогресс и получить очки."
+		"terminal_offer_limit_tooltip"		"Максимальная цена предложений. Торговец будет показывать товары только в её пределах."
+		"popup_lootlist_title"			"Опыт за изучение каталога"
+		"popup_lootlist_desc"			"Зарабатывайте очки опыта за просмотр предложений из этой коллекции"
+
+		"popup_lootlist_progress:f"      "Просмотрено {total, plural, one{{d:seen}/{d:total} предложения} few{{d:seen}/{d:total} предложений} many{{d:seen}/{d:total} предложений} other{{d:seen}/{d:total} предложения}}"
+		"popup_lootlist_claim_xp"		"Получить опыт"
+		"popup_lootlist_claim_ww"		"Получение опыта..."
+		"popup_lootlist_claim_ok"		"✔ Очки получены"
+		"popup_vpn_status_connected"	"Статус: подключён к защищённой сети"
+		"popup_vpn_status_disconnected"	"Статус: отключён"
+		"popup_signal_full" 			"Полный сигнал"
+		"popup_signal_ok" 				"Сильный сигнал"
+		"popup_offer_limit_desc"		"Изменить максимальную цену для всех будущих предложений"
+		"laptop_battery_tooltip" 		"Заряд батареи: {d:percent}%"
+		"laptop_original_seal_tooltip" 	"Любой предмет, приобретённый через этот терминал, будет поставлен с сертификатом первоначального владельца. Он действителен, пока предмет ваш."
+		"laptop_zoom_tooltip" 			"Прокручивайте колёсико мыши, чтобы приблизить или отдалить камеру"
+		"laptop_pan_tooltip" 			"Зажмите клавишу Shift и левую кнопку мыши, чтобы перетащить камеру"
+		"laptop_pricing_tooltip"		"Цены являются глобальными и корректируются автоматически в зависимости от спроса на каждый предмет в этой коллекции."
+
+		"dealer_message_set_offer_limit_0"		"Сначала главное: сколько можешь выложить?"
+		"dealer_message_set_offer_limit_1"		"Давай сразу проясним.<!--.25--> Какой у тебя лимит?"
+		"dealer_message_set_offer_limit_2"		"Прежде чем начать...<!--.25--> Какой потолок? Сколько сможешь выложить?"
+		
+		"dealer_message_start_0"  	"Весь товар напрямую от поставщика.<!--.25-->Полная комплектация и никакой бумажной волокиты."
+		"dealer_message_start_1"  	"Товар с серого рынка, никаких бумаг.<!--.25-->Не волнуйся: пушки остыли. Давным-давно сняты с учёта, так что никто их не ищет.<!--.25-->Но всё ещё стреляют при наведении, если любопытно."
+		"dealer_message_start_2"  	"Этим утром таможня в Ахрадане заморозила мой груз. Я попытался растрогать их сопливой историей о медицинском оборудовании и несчастных умирающих... каких-то там.<!--.25-->Не сработало. Зато сработал набитый деньгами чемодан.<!--.25-->Давай взглянем на эти аппараты для диализа, прежде чем я повезу их сиротам."
+		"dealer_message_start_3"  	"В одном из «станов» только-только сменился режим.<!--.25-->Двери склада нараспашку — я лично прошёлся по запасам.<!--.25-->Я продаю только чистый товар. Взгляни."
+		"dealer_message_start_4"  	"В сегодняшней поставке всё чистое.<!--.25-->Считай, что будешь первым владельцем."
+		"dealer_message_start_5"  	"Пушки стерильные, никаких серийников. И работают как по маслу.<!--.25-->Военный трибунал назвал бы их уликами.<!--.25-->А мы с тобой знаем, что это чёртовы шедевры."
+		"dealer_message_start_6"  	"Вся партия состоит из экзотики, недавно освобождённой от парадного подразделения.<!--.25-->Много маршировали. Никогда не стреляли."
+		"dealer_message_start_7"  	"Другие клиенты вечно спрашивают, откуда товар. Бесят.<!--.25-->А тебе нужно, только чтобы товар был лучшим на рынке.<!--.25-->И знаешь что? Он такой и есть."
+		"dealer_message_start_8"  	"Мирное соглашение в Дросвике. Люблю мир.<!--.25-->Ведь у меня есть знакомый генерал с кучей долгов и битком набитым арсеналом, собирающим пыль.<!--.25-->Нет, ну ясное дело...<!--.25-->Ещё потому, что мир — это хорошо. Невинные жизни и...<!--.25-->Ладно, тебе и так всё равно."
+		"dealer_message_start_9"  	"В этой партии есть экзотика, добытая через серый канал.<!--.25-->Необычные калибры, не для дилетантов. Тебе понравится."
+		"dealer_message_start_10"  	"Как неловко-то.<!--.25-->Должно быть, я случайно неправильно промаркировал ящик в своей накладной.<!--.25-->То есть... несколько десятков ящиков.<!--.25-->Не поможешь мне избавиться от этого груза, прежде чем до него доберётся администрация порта?"
+		"dealer_message_start_11"  	"Инспектор в Дросвике хотел взятку за этот груз — придурок начал заливать о наложении ареста. <!--.25-->У меня в Дросвике есть свои парни, которые знают, как поступать с такими говорунами. Теперь у него рот на замке.<!--.25-->К счастью, этот товар говорит сам за себя."
+		"dealer_message_start_12"  	"Пришлось дать каждому в Ахрадане на лапу, чтобы переправить этот груз через границу.<!--.25-->Да ещё и подмазки все были в ахри. Знаешь сколько нужно фантиков, чтобы дать взятку в бесполезной валюте? Этим ребятам нужно что-то делать с экономикой."
+		"dealer_message_start_13"	"У меня есть знакомый теневой брокер, которому нужно быстро двинуть этот товар.<!--.25-->Только и сказал: «Быстро».<!--.25-->Ещё были слова «очень и очень».<!--.25-->Скажем так: если тебе всё равно, почему он продаёт, товар тебе очень и очень понравится."
+		"dealer_message_start_14"	"Сегодня старые модели.<!--.25-->В глаза не бросаются, зато надёжные.<!--.25-->Ещё твои внуки постреляют из них по людям."
+		"dealer_message_start_15"	"Повстанцы освободили это снаряжение из арсенала Великого Вождя.<!--.25-->По-моему, ещё они освободили туловище Великого Вождя от его конечностей и головы.<!--.25-->(Я такое не продаю, но если хочешь, могу помочь связаться с нужным парнем.)"
+		"dealer_message_start_16"	"Начальник пограничной службы Дросвика угрожал конфисковать этот груз.<!--.25-->Думаю, ему не передали записку о том, что я не даю взяток в Дросвике. Зачем, если местных молодцев можно так дёшево нанять? Дросвик — чуть ли не мировая столица кикбоксинга.<!--.25-->В общем, его преемник приказ о конфискации потерял. И руки у него не сломаны."
+		"dealer_message_start_17"	"Это всё из частной коллекции миллиардера.<!--.25-->Ну, бывшего миллиардера. Он под следствием, так что я ликвидирую всё, что не может он.<!--.25-->Будем откровенны: у тебя в руке это будет смотреться лучше, чем на стене яхты."
+		"dealer_message_start_18"	"Инспектор дока заметил несоответствие в этой партии.<!--.25-->Забавно, что ящик винтовок весит столько же, сколько ящик «тракторных запчастей», если добавить на весы ровно десять тысяч долларов.<!--.25-->Давай взглянем на эти тракторные запчасти."
+		"dealer_message_start_19"	"Сегодняшняя партия пережила государственный переворот.<!--.25-->Есть царапины, но всё работает идеально. Ведь главное — что внутри, правильно?"
+		"dealer_message_start_20"	"Одна маленькая дерьмовая республика повесила своего президента.<!--.25-->К счастью, я унаследовал его цепочку поставок."
+		"dealer_message_start_21"	"Считай это ошибкой обработки. Несоответствием в декларации. Простым и честным несоответствием.<!--.25-->Ошибки случаются. Я пытаюсь помочь старому другу не потерять должность сержанта по снабжению.<!--.25-->Это снаряжение должно исчезнуть."
+		"dealer_message_start_22"	"Начальник одной таможни думал, что может положиться на меня с этим грузом. А я сделал так, что портовые профсоюзы положились ещё сильнее.<!--.25-->Забавно, как быстро подписываются бумаги, когда все заняты поиском пропавшего человека.<!--.25-->Надеюсь, они найдут беднягу. Не думаю, что он умеет плавать."
+		"dealer_message_start_23"	"Пограничник в Ахрадане сказал, что по накладным не сходится. Дал ему пачку ахри, и всё вдруг сошлось.<!--.25-->Я даже не знаю, сколько десять тысяч ахри будет в переводе на реальные деньги. Долларов шесть вроде.<!--.25-->Так это. Хочешь взглянуть на несуществующие по бумагам пушки?"
+		"dealer_message_start_24"	"Этот товар должен был взять один генерал, но этот болван подорвался при ударе дрона.<!--.25-->Мой тебе совет: закрывай окна. Ну что ж, для него взрыв, а для тебя — выигрыш."
+		"dealer_message_start_25"	"Смена режима в Дросвике. Не знаю, что произошло, но каким-то образом склад, набитый ящиками с оружием, затерялся в суете.<!--.25-->И каким-то образом оказался у меня. Чудеса, скажи?<!--.25-->Не поверишь: ещё каким-то образом я могу это оружие продать. Тебе. Прямо сейчас."
+		"dealer_message_start_26"	"Хочу показать тебе ящик с неверно задекларированным грузом. <!--.25-->Не обращай внимания на надпись «сельскохозяйственный инвентарь». С землёй придётся иметь дело, только если не выстрелишь первым."
+		"dealer_message_start_27"	"Ненавижу работать с повстанцами. Это просто вежливое название «гражданских», что, в свою очередь, является тактичным способом сказать «чёртовы дилетанты».<!--.25-->Короче, они залегли на дно, так что я даю шанс профессионалам обзавестись этим снаряжением."
+		"dealer_message_start_28"	"В южной стране с постоянными конфликтами как раз прошло ежеполугодное падение парламента.<!--.25-->Ворота многих местных складов с оружием разбили как пиньяты."
+		"dealer_message_start_29"	"В прошлую пятницу инспектор портнадзора заявил, что этот груз несанкционированный.<!--.25-->К понедельнику у его дочери было достаточно денег для поступления в Стамвик, а груз снова стал сельскохозяйственными инструментами.<!--.25-->Я всегда говорю, что образование — это важно. Давай взглянем на инструменты."
+
+		"dealer_message_resume_0"  	"<!--1-->Хорошо, ты снова здесь. Предложение всё ещё на столе."
+		"dealer_message_resume_1"  	"<!--1-->Нужна была минутка, чтобы обдумать? Без проблем."
+		"dealer_message_resume_2"  	"<!--1-->Я знал, что ты вернёшься."
+		"dealer_message_resume_3"  	"<!--1-->Продолжим с того, на чём остановились."
+		"dealer_message_resume_4"  	"<!--1-->Ну что, к делу?"
+		"dealer_message_resume_5"  	"<!--1-->Ты здесь, хорошо. Мне нужно это сбыть, иначе не те люди начнут задавать вопросы."
+		"dealer_message_resume_6"  	"<!--1-->О, ты снова здесь. На чём мы остановились?"
+
+		"dealer_message_first_offer_0"	"<!--.5-->Если заинтересовало, давай заключим сделку."
+		"dealer_message_first_offer_1"	"<!--.5-->На всякий случай: на этот товар есть и другие покупатели."
+		"dealer_message_first_offer_2"	"<!--.5-->Если ты в деле, тогда работаем. Если нет, говори, потому что у меня есть другой канал с кучей заинтересованных покупателей."
+		"dealer_message_first_offer_3"	"<!--.5-->Если хочешь, товар твой. А нет — ну и зря."
+		"dealer_message_first_offer_4"	"<!--.5-->Если да, заключаем сделку. Я не могу держать предложение на столе вечно."
+		"dealer_message_first_offer_5"	"<!--.5-->Предложение на столе. Да или нет."
+		"dealer_message_first_offer_6"	"<!--.5-->Так что, да или нет? Я не обижусь, есть и другие покупатели."
+		"dealer_message_first_offer_7"	"<!--.5-->Берёшь или нет?"
+		"dealer_message_first_offer_8"	"<!--.5-->Я не могу ждать целый день."
+		"dealer_message_first_offer_9"	"<!--.5-->Так что насчёт сделки?"	
+		"dealer_message_first_offer_10"	"<!--.5-->Я не буду ничего навязывать, товар и так ходовой. Берёшь или нет?"		
+
+		"dealer_message_next_offer_0"	"<!--1-->Не подошло, бывает. Как насчёт этого?"
+		"dealer_message_next_offer_1"	"<!--1-->Ну и зря. Но тебе повезло, я сейчас в хорошем настроении. Взгляни-ка на это."
+		"dealer_message_next_offer_2"	"<!--1-->Не нравится? Что ж, дело твоё. Взгляни на это."
+		"dealer_message_next_offer_3"	"<!--1-->Этот товар не нуждается в рекламе. Не возьмёшь ты, найдётся кто-то другой.<!--.5-->Но пока ты здесь, взгляни-ка на это — прямо вижу тебя с ним."
+		"dealer_message_next_offer_4"	"<!--1-->Не твой стиль, понимаю. Взгляни — может, это будет ближе. Думаю, тебе понравится."
+		"dealer_message_next_offer_5"	"<!--1-->Прям чувствовал, что ты откажешься. К счастью, эта красота как раз ждала своего часа."
+		"dealer_message_next_offer_6"	"<!--1-->Я так и подумал. Взгляни на это. Думаю, оно больше в твоём стиле."
+		"dealer_message_next_offer_7"	"<!--1-->Потом пожалеешь. Но ничего. Как насчёт этого?"
+		"dealer_message_next_offer_8"	"<!--1-->Я слишком хорошо тебя знаю — прям чувствовал, что не возьмёшь. Как насчёт этого?"
+		"dealer_message_next_offer_9"	"<!--1-->Ладно, с закусками закончили. Пора переходить к основному блюду."
+		"dealer_message_next_offer_10"	"<!--1-->Понимаю, мне тоже внешний вид не очень. Вот, взгляни на это."		
+		"dealer_message_next_offer_11"   "<!--1-->Предыдущий вариант, возможно, был на любителя. Вот следующий не может не понравиться."
+		"dealer_message_next_offer_12"   "<!--1-->У меня много добра из той же партии. Взгляни на эту красоту."
+		"dealer_message_next_offer_13"   "<!--1-->Знаешь что? Я так и думал, что ты это скажешь. Перейдём к следующему."
+		"dealer_message_next_offer_14"   "<!--1-->Тебе не так-то просто угодить. А это заставит тебя улыбнуться?"
+		"dealer_message_next_offer_15"   "<!--1-->Никаких обид, не я же производитель. Вот ещё вариант."
+		"dealer_message_next_offer_16"   "<!--1-->Я бы и сам не взял. Зато вот это... Ты только взгляни."
+		"dealer_message_next_offer_17"   "<!--1-->Нет? Ладно, едем дальше."
+		"dealer_message_next_offer_18"   "<!--1-->Вижу, у тебя высокие стандарты. Что ж, мне подходит. Следующий экземпляр — золотой стандарт."
+		"dealer_message_next_offer_19"   "<!--1-->Не хочу тратить попусту твои деньги и своё время. Взгляни на это."
+		"dealer_message_next_offer_20"   "<!--1-->Я ценю честность. Едем дальше и не тратим попусту время."
+		"dealer_message_next_offer_21"   "<!--1-->Ладно, этот вариант тебе не зашёл. Хорошо, что у меня на продажу не одна пушка."
+		"dealer_message_next_offer_22"   "<!--1-->Не проблема. У меня много других вариантов. Вот следующий."
+		"dealer_message_next_offer_23"   "<!--1-->А я был уверен, что возьмёшь. Может, остановишься на следующем."
+		"dealer_message_next_offer_24"   "<!--1-->Понял, не для тебя. Ну все и не могут нравиться. Но это вот прямо взывает к тебе."
+		"dealer_message_next_offer_25"   "<!--1-->Ты, кажется, не совсем понимаешь, что теряешь. Может, это тебя зацепит."
+		"dealer_message_next_offer_26"   "<!--1-->Ладно, теперь давай серьёзно. Я абсолютно гарантирую, что следующее предложение тебе понравится. Наверное."
+		"dealer_message_next_offer_27"   "<!--1-->Не понравилось, да? Тогда пойдёт в мой личный арсенал. А как насчёт этого?"
+		"dealer_message_next_offer_28"   "<!--1-->У тебя есть вкус. Посмотрим, соответствует ли следующий вариант твоим высоким стандартам."
+		"dealer_message_next_offer_29"   "<!--1-->Ладно, это была только вершина кучи. Копну-ка немного глубже."
+		"dealer_message_next_offer_30"   "<!--1-->Забудь последний вариант. Взгляни-ка лучше на этот."
+		"dealer_message_next_offer_31"   "<!--1-->Здесь прямо написано твоё имя. Не буквально, товар чистый."
+		"dealer_message_next_offer_32"   "<!--1-->Всё не купишь, я понимаю. Возможно, ты ждёшь чего-то особенного. Как это."
+		"dealer_message_next_offer_33"   "<!--1-->То была разминка. А вот это уже серьёзное дело."
+		"dealer_message_next_offer_34"   "<!--1-->Да, я так и понял. Но вот следующий вариант... Я подумал о тебе, когда его увидел."
+		"dealer_message_next_offer_35"   "<!--1-->Справедливо. Я придержал это для тебя."
+		"dealer_message_next_offer_36"   "<!--1-->Моя работа — продать товар, а не заставить тебя его полюбить. Едем дальше."
+		"dealer_message_next_offer_37"   "<!--1-->Без проблем. Думаю, это тебе больше придётся по душе."
+		"dealer_message_next_offer_38"   "<!--1-->Умно. Я знал, что не бросишься покупать. Давай покажу кое-что получше."
+		"dealer_message_next_offer_39"   "<!--1-->Не проблема, я бы и сам не взял. Впрочем, вот это..."
+		"dealer_message_next_offer_40"   "<!--1-->Таки хочешь, чтобы я сходил к полке с премиум-товаром, да? Что ж, будь по-твоему."
+
+		"dealer_message_last_offer_0"	"<!--0-->Что ж, последнее и финальное предложение. Либо да, либо нет."
+		"dealer_message_last_offer_1"	"<!--0-->Считай это моим финальным предложением."
+		"dealer_message_last_offer_2"	"<!--0-->Финальное предложение. Либо да, либо нет — хватит тратить моё время."
+		"dealer_message_last_offer_3"	"<!--0-->Последнее предложение.<!--1-->Если не нравится, советую отойти подальше. Эта штука ВЗОРВЁТСЯ."
+		"dealer_message_last_offer_4"	"<!--0-->Последнее предложение. Упрашивать не буду."
+		"dealer_message_last_offer_5"	"<!--0-->Вот, это моё лучшее предложение."
+		"dealer_message_last_offer_6"	"<!--0-->Ладно. Вот. Берёшь или нет?"		
+		"dealer_message_last_offer_7"	"<!--0-->Лучшее и самое последнее предложение."
+		"dealer_message_last_offer_8"	"<!--0-->Пойду тебе навстречу. Моё лучшее предложение."
+		"dealer_message_last_offer_9"	"<!--0-->Это лучшее предложение. Другого не будет."	
+
+		"dealer_message_end_0"			"<!--0-->Что ж, у тебя был шанс. Если держишь взрывающийся терминал, лучше брось. Три... два..."
+		"dealer_message_end_1"			"<!--0-->Что ж, у тебя будет о чём задуматься, когда в следующий раз окажешься под огнём и потянешься за оружием, которого у тебя нет."
+		"dealer_message_end_2"			"<!--0-->Хорошо, я умолять не буду. Надеюсь, у тебя не было мыслей обзавестись бесплатным терминалом."
+		"dealer_message_end_3"			"<!--0-->Твой выбор — твоё дело. Или твои похороны.<!--1-->Отойди, пожалуйста, от терминала — он вот-вот взорвётся."
+
+		"dealer_message_timerexpired_0"		"<!--.1-->Ладно, проехали."
+		"dealer_message_timerexpired_1"		"<!--.1-->Забудь.<!--.5-->У тебя был шанс."
+		"dealer_message_timerexpired_2"		"<!--.1-->Сделки не будет.<!--.5-->У меня дела."
+		"dealer_message_timerexpired_3"		"<!--.1-->Хорошо, найду покупателя, который что-то да покупает.<!--.5-->Мы закончили."
+		"dealer_message_timerexpired_4"		"<!--.1-->Дело твоё.<!--.5-->Позже."
+		"dealer_message_timerexpired_5"		"<!--.1-->Тик-так.<!--.5-->Время вышло."
+		"dealer_message_timerexpired_6"		"<!--.1-->Сделки не будет.<!--.5-->Я бы десять раз уже продал."
+		"dealer_message_timerexpired_7"		"<!--.1-->Я-то думал, что помогаю тебе избавляться от людей.<!--.5-->Оказалось, это ты избавляешь меня от времени."
+		"dealer_message_timerexpired_8"		"<!--.1-->Сделка сорвана."	
+		"dealer_message_timerexpired_9"		"<!--.1-->Время вышло."
+		"dealer_message_timerexpired_10"	"<!--.1-->Мне официально надоело. На этом закончим."		
+
+		"dealer_message_open_check_out_0"		"<!--.5-->Этот товар просто создан для тебя. Я сразу о тебе подумал, как его увидел. Давай скрепим сделку."
+		"dealer_message_open_check_out_1"		"<!--.5-->Отличный выбор. Проверю, чтобы всё было упаковано и готово."
+		"dealer_message_open_check_out_2"		"<!--.5-->Ты не пожалеешь. Но бьюсь об заклад, что скоро это сделает кто-то другой."
+		"dealer_message_open_check_out_3"		"<!--.5-->Я знал, что ты мой покупатель. Давай оформим сделку."
+		"dealer_message_open_check_out_4"		"<!--.5-->Идеально. Оформляем."		
+		"dealer_message_open_check_out_5"		"<!--.5-->Хороший выбор."	
+		"dealer_message_open_check_out_6"		"<!--.5-->Самое разумное из всех твоих решений. Финализируем сделку."		
+		"dealer_message_open_check_out_7"		"<!--.5-->Хорошо. Оформим сделку."
+
+		"dealer_message_txn_xld_bailout_0"		"<!--.5-->Никакой спешки. Ты знаешь, где меня найти."
+		"dealer_message_txn_xld_bailout_1"		"<!--.5-->Я никуда не денусь."
+		"dealer_message_txn_xld_bailout_2"		"<!--.5-->Оставляю предложение на столе."
+		"dealer_message_txn_xld_bailout_3"		"<!--.5-->Ты вернёшься. Иди обдумай."
+
+		"dealer_message_purchase_finalizing_0"	"Финализация платежа..."
+		"dealer_message_purchase_confirm_0"		"<!--.5-->Готово!"
+
+		"dealer_message_stattrack_0"			"StatTrak™ установлен, конечно."
+		"dealer_message_stattrack_1"			"В комплекте с этой крошкой идёт StatTrak™."
+		"dealer_message_stattrack_2"			"Пушка оснащена StatTrak™. Не нужно будет считать в голове."
+		"dealer_message_stattrack_3"			"Идёт с технологией StatTrak™. Ты нажимаешь на курок, а она ведёт подсчёт."
+		"dealer_message_stattrack_4"			"StatTrak™. Что-то наподобие таблицы результатов. В спорте, где нужно убивать людей."
+		"dealer_message_stattrack_6"			"Идёт со StatTrak™ — для профессионала, который любит убийства И статистику."
+		"dealer_message_stattrack_7"			"Идёт со StatTrak™, конечно."
+		"dealer_message_factory_new_0"			"Впервые достал из ящика. Поверь, только что понюхал."
+		"dealer_message_factory_new_1"			"Прямо с завода. Пахнет новым оружием."
+		"dealer_message_factory_new_2"			"Эта без пробега. Твой выстрел будет первым."
+		"dealer_message_factory_new_3"			"Прямо с производства, без износа. Всё как ты любишь."
+		"dealer_message_factory_new_4"			"Эта в чистом и идеальном состоянии. Ни царапины, ни истории. И тут появляешься ты."
+		"dealer_message_factory_new_5"			"Прямо с завода, ещё не стреляла. Сама безупречность."
+		"dealer_message_covert_0"				"Знаешь что? Тебе только что удалось сорвать джекпот. Этот товар не просто редкий, он сверхсекретный."
+		"dealer_message_covert_1"				"Я в этом деле уже десять лет, но ещё ни разу не видел их на рынке.<!--.5-->У тебя хороший вкус. А удача — ещё лучше."
+		"dealer_message_covert_2"				"Знаю покупателей, которые сослали бы собственную мать в ГУЛАГ, чтобы заполучить этот товар. Везёт тебе."
+		"dealer_message_covert_3"				"Ого. Ты заставляешь меня сомневаться. Убери с глаз моих, пока я не передумал продавать."
+		"dealer_message_covert_4"				"Товар сверхсекретный. Если повезёт, такой встретишь на рынке разве что раз за всю жизнь.<!--.5-->Что ж, тебе как раз повезло."
+		"dealer_message_covert_5"				"Это настоящая жемчужина. Но ты и так в курсе. Год назад у меня был на неё покупатель. Зря отказался, теперь она достанется тебе."
+		"dealer_message_covert_6"				"Очень и очень редкий товар. Такой непросто найти, а тебе вот прямо в руки попал."
+		"dealer_message_covert_7"				"Получил от человека, зарабатывающего на жизнь поиском такого товара. Его найти ой как непросто."
+		"dealer_message_covert_8"				"Надеюсь, ты понимаешь ценность этой сделки. Товар сверхсекретный. Считай, что тебе достался единорог."
+		"dealer_message_covert_9"				"Убери с моих глаз в свой арсенал, пока я не пожалел. Товар сверхредкий."
+		"dealer_message_classified_0"				"Засекреченное. Чистое и без бумаг. Снято с учёта."
+		"dealer_message_classified_1"				"Засекреченное. Никаких бумаг — чистое, не отследишь."
+		"dealer_message_classified_2"				"Засекреченное. Выпущено вчёрную, без бумаг. Официально его не существует."
+		"dealer_message_classified_3"				"Только для закрытой продажи. Засекреченное. Надеюсь, найдёшь ему применение."
+		"dealer_message_classified_4"				"Засекреченное. Ни серийников, ни бумаг."
+		"dealer_message_classified_5"				"Засекреченное. Продаю только по секретным каналам — оружие снято с учёта, не отследишь. Я ничего не видел."
+		"dealer_message_restricted_0"				"Запрещённое. Начинка лучше, стрельба кучнее. Явно превосходит стандартную модель."
+		"dealer_message_restricted_1"				"Это запрещено не просто так. Немного мощновато для гражданских."
+		"dealer_message_restricted_2"				"Запрещённое, конечно. Третий класс, второй раздел и твой новый номер один."
+		"dealer_message_battle_scarred_0"		"Есть пара вмятин, но стреляет точно."
+		"dealer_message_battle_scarred_1"		"Есть небольшой износ, но это лишь значит, что оружие успешно показало себя в боях."
+		"dealer_message_battle_scarred_2"		"Подобрана на поле боя. Есть несколько миль пробега, но лошадка рабочая."
+		"dealer_message_battle_scarred_3"		"Не назвал бы его изношенным. Скорее, проверенным в бою."
+		"dealer_message_battle_scarred_4"		"Эта побывала в боях. Есть косметический износ, но пушка всё ещё надёжная."
+		"dealer_message_minimal_wear_0"			"Минимальный износ. Есть пара царапин, но работает как надо."
+		"dealer_message_minimal_wear_1"			"Отличное состояние. Ну почти. Износ минимальный."
+		"dealer_message_minimal_wear_2"			"Минимальный износ, просто слегка пристрелянное. Беспокоиться не о чем."
+		"dealer_message_minimal_wear_3"			"Минимальный износ. Есть небольшие потёртости, но ты не пожалеешь, если возьмёшь себе в арсенал."
+		"dealer_message_minimal_wear_4"			"Эта уже побывала в боях, врать не буду. Настоящая ветеранша."
+		"dealer_message_usp-s_0"				"Эта собака не лает. Послушная и тихая."
+		"dealer_message_usp-s_1"				"Беззвучный и незаметный. Иногда дело требует тишины."
+		"dealer_message_usp-s_2"				"Они почувствуют его, но не услышат."
+		"dealer_message_usp-s_3"				"Тихий-претихий."
+		"dealer_message_item_desc_0"			"<!--.25-->К этому есть заметка:<!--.25-->{s:flavor-text}<!--.25-->Что бы это ни значило."
+		"dealer_message_item_desc_1"			"<!--.25-->К этому есть небольшая короткая заметка:<!--.25-->{s:flavor-text}"
+
+		"dealer_message_addition_stattrak_0"	"<!--.25-->...и со StatTrak™."
+		"dealer_message_addition_stattrak_1"	"<!--.25-->Модуль StatTrak™ предустановлен."
+		"dealer_message_addition_stattrak_2"	"<!--.25-->Со StatTrak™, чтобы отслеживать весь хаос, который ты собираешься творить."
+		"dealer_message_addition_stattrak_3"	"<!--.25-->Также установлен StatTrak™."
+		"dealer_message_addition_stattrak_4"	"<!--.25-->Идёт со StatTrak™, чтобы записывать все беды, которые несёшь."
+
+		"dealer_message_addition_factory_new_0"	"<!--.25-->Прямо с завода. Ещё не стреляла."
+		"dealer_message_addition_factory_new_1"	"<!--.25-->Прямо с завода. В нетронутом состоянии."
+		"dealer_message_addition_factory_new_2"	"<!--.25-->Прямо из хранилища. Новёхонькая."
+		"dealer_message_addition_factory_new_3"	"<!--.25-->Эта прямо с завода. Ещё не стреляла."
+		
+		"dealer_message_limit_first_time_0"		"Понял, буду предлагать не дороже {s:limit}.<!--.25--> Давай посмотрим, что тебе нужно."
+		"dealer_message_limit_first_time_2"		"Только предложения ниже {s:limit}, я учту.<!--.25--> Часики тикают. Давай начнём."
+		"dealer_message_limit_first_time_3"		"Понял. Записал.<!--.25--> Поехали."
+		"dealer_message_limit_first_time_unlimited_0"		"Отлично, лимита нет. К нашим услугам весь каталог.<!--.25--> Часики тикают. Давай начнём."
+		"dealer_message_limit_first_time_unlimited_1"		"Понял. Без потолка. Вот это серьёзный подход.<!--.25--> Давай посмотрим, что тебе нужно."
+
+		"dealer_message_limit_0"				"Понял, буду предлагать варианты не дороже {s:limit}."
+		"dealer_message_limit_1"				"Только предложения ниже {s:limit}, я учту."
+		"dealer_message_limit_2"				"Корректирую параметры. Только предложения до {s:limit}."
+		"dealer_message_limit_3"				"Предлагать не дороже {s:limit}. Понял. Записал."
+		"dealer_message_limit_4"				"Понял, буду искать ценники не выше {s:limit}"
+		"dealer_message_limit_5"				"Новый потолок — {s:limit}, записал"
+		"dealer_message_limit_6"				"Понял. Предложения теперь не дороже {s:limit}."
+		"dealer_message_limit_unlimited_0"		"Отлично, лимита нет. К нашим услугам весь каталог."
+		"dealer_message_limit_unlimited_1"		"Понял, без потолка. Если найдётся что-то экзотическое, я предложу."
+		"dealer_message_limit_unlimited_2"		"Как бальзам на душу. Если отыщется что-то подходящее, сразу покажу."
+		"dealer_message_limit_unlimited_3"		"Понял. Без потолка. Вот это серьёзный подход."
+
+		"system_dealer_left_chat_0"				"Торговец вышел из чата."
+		"system_dealer_join_chat_0"				"{s:collection} — предложения торговца оружием.<!--1.25-->Торговец подключился"
+		"system_user_reject_offer_0"			"Игрок {s:user-name} отклонил предложение."
+
+		"system_user_updated_offer_limit_0"			"Новая максимальная цена — {s:limit}. Её можно изменить в любое время."
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//Retakes
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		"GameUI_Retake_DefendA"					"Защитите точку А!"
+		"GameUI_Retake_DefendB"					"Защитите точку В!"
+		"GameUI_Retake_RetakeA"					"Зачистите точку А!"
+		"GameUI_Retake_RetakeB"					"Зачистите точку В!"
+		"GameUI_Retake_Notice_MvpCardAvailable"	"В следующем раунде у вас будет бонусная карточка СЦИ!"
+		"GameUI_Retake_Card_CardsPreview"		"Предпросмотр карточек"
+		"GameUI_Retake_Card_AvailableCard"		"Выберите снаряжение"
+		"GameUI_Retake_Card_AvailableCards"		"Выберите снаряжение"
+
+		"GameUI_Retake_Card_Bonus"				"Бонус"
+		"GameUI_Retake_Card_Enemy"				"Оружие врага"
+		"GameUI_Retake_Card_Mvp"				"СЦИ"
+
+		"GameUI_Retake_Card_4v3"				"4 на 3"
+		"GameUI_Retake_Card_FlashOut"			"Светошумовая пошла!"
+		"GameUI_Retake_Card_HideAndPeek"		"Сиди, но высовывайся"
+		"GameUI_Retake_Card_TakeFive"			"Пятёрочка"
+		"GameUI_Retake_Card_OnlyTakesOne"		"Хватит и одного"
+		"GameUI_Retake_Card_SneakyBeakyLike"	"Тише воды, ниже травы"
+		"GameUI_Retake_Card_UmpInSmoke"			"Пистолето-пулемётный дым"
+		"GameUI_Retake_Card_FunNGun"			"Оружейное веселье"
+		"GameUI_Retake_Card_Sharpshooter"		"Первоклассный стрелок"
+		"GameUI_Retake_Card_BurstBullpup"		"Короткие очереди"
+		"GameUI_Retake_Card_LightEmUp"			"Блеск в глазах"
+		"GameUI_Retake_Card_Kobe"				"Трёхочковый"
+		"GameUI_Retake_Card_1g"					"Аутодафе"
+		"GameUI_Retake_Card_DisappearingAct"	"Фокус с исчезновением"
+		"GameUI_Retake_Card_EyesOnTarget"		"В поле зрения"
+		"GameUI_Retake_Card_BehindEnemyLines"	"В тылу врага"
+		"GameUI_Retake_Card_4BadGuysLeft"		"Четыре плохиша"
+		"GameUI_Retake_Card_LookAway"			"Отвернись!"
+		"GameUI_Retake_Card_WhenThereIsSmoke"	"Нет дыма..."
+		"GameUI_Retake_Card_BlindFire"			"Огонь вслепую"
+		"GameUI_Retake_Card_QueOta"				"Ещё маслинку?"
+		"GameUI_Retake_Card_SmokeScreen"		"Дымовая завеса"
+		"GameUI_Retake_Card_TecTecBoom"			"ТЕК, ТЕК, что тут у нас?"
+		"GameUI_Retake_Card_BackInAFlash"		"Ослепительное возвращение"
+		"GameUI_Retake_Card_AllIn"				"Ва-банк"
+		"GameUI_Retake_Card_BoomBox"			"Взрывная мелодия"
+		"GameUI_Retake_Card_SetThemFree"		"Дай им свободу"
+		"GameUI_Retake_Card_OlReliable"			"Надёжное средство"
+		"GameUI_Retake_Card_SmokeShow"			"Дымовое шоу"
+		"GameUI_Retake_Card_HotShot"			"В объятьях огня"
+		"GameUI_Retake_Card_EyeSpy"				"Глаз-алмаз"
+		"GameUI_Retake_Card_TheAWPortunity"		"Снайперская AWP-ерация"
+		"GameUI_Retake_Card_FindersKeepers"		"Что упало — то пропало"
+
+		"Hud_Retake_BombSite"					"{s:hud-retake-bombsite}"
+		
+		"Hud_Money" "${d:r:hud-money-amount}"
+		"Hud_Money_Signed" "{s:sign}${d:r:hud-money-delta}"
+
+		"Propcounter_money" "$%s1" //e.g. used on danger zone security door
+
+		"csgo_player_left_game"					"  Игрок %s1 покинул матч (%s2)"
+
+		"LoadoutLockedPopupTitle"				"Снаряжение нельзя поменять"
+		"LoadoutLockedPopupText"				"Снаряжение нельзя менять во время подбора соревновательных матчей."
+
+		"Workshop_item_title" "Инструмент для подачи работ"
+		"Workshop_item_error_title" "Введите название своего предмета. Оно должно содержать имя игрока или другую идентифицирующую информацию."
+		"Workshop_item_error_image" "Выберите изображение формата JPEG или PNG размером менее {s:max_size} и хотя бы {d:min_height} в ширину/высоту"
+		"Workshop_item_ready" "Работа готова к загрузке"
+		"SFUI_Go_To_Mic_Enable_key" "Привязать клавишу для включения микрофона"
+		"SFUI_Go_To_Console_Key_Binding" "Привязать клавишу для вызова консоли"
+
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//Steam Video
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		"SteamVideo_Player_Kill_Title"					"Вы убили игрока %s1"
+		"SteamVideo_Player_Kill_Description"			"Оружие: %s1"
+
+		"SteamVideo_Player_Double_Kill_Title"			"Два убийства"
+		"SteamVideo_Player_Multi_Kill_Title"			"Несколько убийств"
+		
+		"SteamVideo_Player_Death_Title"					"Вас убил игрок %s1"
+		"SteamVideo_Player_Death_Description"			"Оружие: %s1"
+		"SteamVideo_Player_Death_Description_Plural"	"Оружие: %s1"
+		"SteamVideo_Player_Killed_Self_Title"			"Вы убили себя"
+		
+		"SteamVideo_Bomb_Planted_Title"					"Бомба заложена"
+		"SteamVideo_Bomb_Planted"						"Игрок %s1 заложил бомбу"
+		"SteamVideo_Bomb_Planted_LocalPlayer"			"Вы заложили бомбу"
+		
+		"SteamVideo_Bomb_Defused_Title"					"Бомба обезврежена"
+		"SteamVideo_Bomb_Defused"						"Игрок %s1 обезвредил бомбу"
+		"SteamVideo_Bomb_Defused_LocalPlayer"			"Вы обезвредили бомбу"
+		
+		"SteamVideo_Bomb_Exploded_Title"				"Бомба взорвалась"
+		
+		"SteamVideo_Round_Number_Label"					"%s1-й раунд"
+		"SteamVideo_Start_Of_Round_Title"				"Начало %s1-го раунда"
+
+		"SteamVideo_MatchScore"							"Счёт"
+		"SteamVideo_KDA"								"У/С/П"
+
+		// ---------------------------------------------------------------------------------------------
+		// WEEKLY MISSIONS
+		// ---------------------------------------------------------------------------------------------
+		"weekly_mission_title"							"МИССИЯ"
+		"weekly_mission_title_complete"					"МИССИЯ ВЫПОЛНЕНА"
+		"weekly_mission_expiration"						"истекает через <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_expiration_pausemenu"			"Истекает через <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_next_mission"					"Следующая миссия начнётся через <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_progress"						"<b>{d:mission-progress}</b>/{d:mission-points}"
+		"CS2_Quest_Weapon_Mode"							"Освоение оружия: <b>«{s:gamemode}»</b>, <b>{s:weapon}</b>"
+		"CS2_Quest_Weapon_Mode_desc"					"Совершите несколько {s:actions}{s:optional_target}, используя <b>{s:weapon}</b> в режиме <b>«{s:gamemode}»</b>."
+
+		"mission_searching"								"Поиск…"
+		"mission_xp_remaining"							"{s:mission-xp} ЕО"
+
+		"mission_segment_tooltip"						"{d:xp-reward} ед. опыта"
+
+		"mission_location"								"<b>«{s:gamemode}»</b>, <b>{s:location}</b>"
+		"mission_directive:f"							"{mission-points, plural, one{<b>{d:mission-points}</b> {s:action}} few{<b>{d:mission-points}</b> {s:actions}} many{<b>{d:mission-points}</b> {s:actions}} other{<b>{d:mission-points}</b> {s:actions}}}"
+ 		"mission_directive_progress:f"					"{mission-points, plural, one{{d:mission-progress}/<b>{d:mission-points}</b> {s:action}} few{{d:mission-progress}/<b>{d:mission-points}</b> {s:actions}} many{{d:mission-progress}/<b>{d:mission-points}</b> {s:actions}} other{{d:mission-progress}/<b>{d:mission-points}</b> {s:actions}}}"
+
+
+		"quest_11000_var_desc:f"	  					"{mission-points, plural, one{{s:item1}: совершите убийство в режиме <b>«{s:gamemode}» ({s:location})</b>.} few{{s:item1}: совершайте убийства в режиме <b>«{s:gamemode}» ({s:location})</b>.} many{{s:item1}: совершайте убийства в режиме <b>«{s:gamemode}» ({s:location})</b>.} other{{s:item1}: совершайте убийства в режиме <b>«{s:gamemode}» ({s:location})</b>.}}"
+		"quest_11000_var_partial:f" 					"Оружие: {s:item1}."
+		"quest_11000_var_ingame:f"	  					"{mission-points, plural, one{{s:item1}: совершите убийство.} few{{s:item1}: совершайте убийства.} many{{s:item1}: совершайте убийства.} other{{s:item1}: совершайте убийства.}}"
+
+		"quest_11001_var_desc:f"	 					"{mission-points, plural, one{{s:item1}: совершите убийство в режиме <b>«{s:gamemode}» ({s:location})</b>.} few{{s:item1}: совершайте убийства в режиме <b>«{s:gamemode}» ({s:location})</b>.} many{{s:item1}: совершайте убийства в режиме <b>«{s:gamemode}» ({s:location})</b>.} other{{s:item1}: совершайте убийства в режиме <b>«{s:gamemode}» ({s:location})</b>.}}"
+		"quest_11001_var_partial:f"	 					"Оружие: {s:item1}."
+		"quest_11001_var_ingame:f"	 					"{mission-points, plural, one{{s:item1}: совершите убийство} few{{s:item1}: совершайте убийства} many{{s:item1}: совершайте убийства} other{{s:item1}: совершайте убийства}}"
+
+		"quest_11002_var_desc:f"	 					"{mission-points, plural, one{{s:item1}: совершите убийство в режиме <b>«{s:gamemode}» ({s:location})</b>.} few{{s:item1}: совершайте убийства в режиме <b>«{s:gamemode}» ({s:location})</b>.} many{{s:item1}: совершайте убийства в режиме <b>«{s:gamemode}» ({s:location})</b>.} other{{s:item1}: совершайте убийства в режиме <b>«{s:gamemode}» ({s:location})</b>.}}"
+		"quest_11002_var_partial:f"	 					"Оружие: {s:item1}."
+		"quest_11002_var_ingame:f"	 					"{mission-points, plural, one{{s:item1}: совершите убийство} few{{s:item1}: совершайте убийства} many{{s:item1}: совершайте убийства} other{{s:item1}: совершайте убийства}}"
+
+		"quest_11003_var_desc:f"						"{mission-points, plural, one{{s:item1}: совершите убийство в режиме <b>«{s:gamemode}» ({s:location})</b>.} few{{s:item1}: совершайте убийства в режиме <b>«{s:gamemode}» ({s:location})</b>.} many{{s:item1}: совершайте убийства в режиме <b>«{s:gamemode}» ({s:location})</b>.} other{{s:item1}: совершайте убийства в режиме <b>«{s:gamemode}» ({s:location})</b>.}}"
+		"quest_11003_var_partial:f"	 					"Оружие: {s:item1}."
+		"quest_11003_var_ingame:f"	 					"{mission-points, plural, one{{s:item1}: совершите убийство} few{{s:item1}: совершайте убийства} many{{s:item1}: совершайте убийства} other{{s:item1}: совершайте убийства}}"
+
+		"quest_11004_var_desc:f"	 					"{mission-points, plural, one{Выиграйте раунд в режиме <b>«{s:gamemode}» ({s:location})</b>.} few{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.} many{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.} other{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.}}"
+		"quest_11004_var_ingame:f"						"{mission-points, plural, one{Выиграйте раунд} few{Выигрывайте раунды} many{Выигрывайте раунды} other{Выигрывайте раунды}}"
+
+		"quest_11005_var_desc:f"	 					"{mission-points, plural, one{Выиграйте раунд в режиме <b>«{s:gamemode}» ({s:location})</b>.} few{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.} many{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.} other{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.}}"
+		"quest_11005_var_ingame:f"						"{mission-points, plural, one{Выиграйте раунд} few{Выигрывайте раунды} many{Выигрывайте раунды} other{Выигрывайте раунды}}"
+
+		"quest_11006_var_desc:f"	 					"{mission-points, plural, one{Выиграйте раунд в режиме <b>«{s:gamemode}» ({s:location})</b>.} few{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.} many{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.} other{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.}}"
+		"quest_11006_var_ingame:f"						"{mission-points, plural, one{Выиграйте раунд} few{Выигрывайте раунды} many{Выигрывайте раунды} other{Выигрывайте раунды}}"
+
+		"quest_11007_var_desc:f"	 					"{mission-points, plural, one{{s:item1}: совершите убийство в режиме <b>«{s:gamemode}» ({s:location})</b>.} few{{s:item1}: совершайте убийства в режиме <b>«{s:gamemode}» ({s:location})</b>.} many{{s:item1}: совершайте убийства в режиме <b>«{s:gamemode}» ({s:location})</b>.} other{{s:item1}: совершайте убийства в режиме <b>«{s:gamemode}» ({s:location})</b>.}}"
+		"quest_11007_var_partial:f"	 					"Оружие: {s:item1}."
+		"quest_11007_var_ingame:f"	 					"{mission-points, plural, one{{s:item1}: совершите убийство} few{{s:item1}: совершайте убийства} many{{s:item1}: совершайте убийства} other{{s:item1}: совершайте убийства}}"
+
+		"quest_11008_var_desc:f"	 					"{mission-points, plural, one{Выиграйте раунд в режиме <b>«{s:gamemode}» ({s:location})</b>.} few{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.} many{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.} other{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.}}"
+		"quest_11008_var_ingame:f"						"{mission-points, plural, one{Выиграйте раунд} few{Выигрывайте раунды} many{Выигрывайте раунды} other{Выигрывайте раунды}}"
+
+		"quest_11009_var_desc:f"	 					"{mission-points, plural, one{Выиграйте раунд в режиме <b>«{s:gamemode}» ({s:location})</b>.} few{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.} many{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.} other{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.}}"
+		"quest_11009_var_ingame:f"						"{mission-points, plural, one{Выиграйте раунд} few{Выигрывайте раунды} many{Выигрывайте раунды} other{Выигрывайте раунды}}"
+
+		"quest_11010_var_desc:f"	 					"{mission-points, plural, one{{s:item1}: совершите убийство в режиме <b>«{s:gamemode}» ({s:location})</b>.} few{{s:item1}: совершайте убийства в режиме <b>«{s:gamemode}» ({s:location})</b>.} many{{s:item1}: совершайте убийства в режиме <b>«{s:gamemode}» ({s:location})</b>.} other{{s:item1}: совершайте убийства в режиме <b>«{s:gamemode}» ({s:location})</b>.}}"
+		"quest_11010_var_partial:f"	 					"Оружие: {s:item1}."
+		"quest_11010_var_ingame:f"	 					"{mission-points, plural, one{{s:item1}: совершите убийство} few{{s:item1}: совершайте убийства} many{{s:item1}: совершайте убийства} other{{s:item1}: совершайте убийства}}"
+
+		"quest_11011_var_desc:f"	 					"{mission-points, plural, one{Выиграйте раунд в режиме <b>«{s:gamemode}» ({s:location})</b>.} few{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.} many{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.} other{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.}}"
+		"quest_11011_var_ingame:f"						"{mission-points, plural, one{Выиграйте раунд} few{Выигрывайте раунды} many{Выигрывайте раунды} other{Выигрывайте раунды}}"
+
+		"quest_11012_var_desc:f"	 					"{mission-points, plural, one{Выиграйте раунд в режиме <b>«{s:gamemode}» ({s:location})</b>.} few{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.} many{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.} other{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.}}"
+		"quest_11012_var_ingame:f"						"{mission-points, plural, one{Выиграйте раунд} few{Выигрывайте раунды} many{Выигрывайте раунды} other{Выигрывайте раунды}}"
+
+		"quest_11013_var_desc:f"	 					"{mission-points, plural, one{Выиграйте раунд в режиме <b>«{s:gamemode}» ({s:location})</b>.} few{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.} many{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.} other{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.}}"
+		"quest_11013_var_ingame:f"						"{mission-points, plural, one{Выиграйте раунд} few{Выигрывайте раунды} many{Выигрывайте раунды} other{Выигрывайте раунды}}"
+
+		"quest_11014_var_desc:f"	 					"{mission-points, plural, one{Выиграйте раунд в режиме <b>«{s:gamemode}» ({s:location})</b>.} few{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.} many{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.} other{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.}}"
+		"quest_11014_var_ingame:f"						"{mission-points, plural, one{Выиграйте раунд} few{Выигрывайте раунды} many{Выигрывайте раунды} other{Выигрывайте раунды}}"
+
+		"quest_11015_var_desc:f"	 					"{mission-points, plural, one{Выиграйте раунд в режиме <b>«{s:gamemode}» ({s:location})</b>.} few{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.} many{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.} other{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.}}"
+		"quest_11015_var_ingame:f"						"{mission-points, plural, one{Выиграйте раунд} few{Выигрывайте раунды} many{Выигрывайте раунды} other{Выигрывайте раунды}}"
+
+// ---------------------------------------------------------------------------------------------
+// Join Friend Listen Servers
+// ---------------------------------------------------------------------------------------------
+
+		"tooltip_viewaddon"				"Открыть страницу пользовательской карты в мастерской"
+		"tooltip_kick_player"			"Выгнать игрока с локального сервера"		
+		"tooltip_short_viewaddon"			"Просмотреть пользовательскую карту"
+		"tooltip_short_kick_player"			"Выгнать"
+
+// crow_mask_50454_comment
+// crow_mask_50455_comment
+}
+
+
+
+
+}
+
+
+ийства/смерти"
 		"stat_average_kd_short"			"У/С"
 
 		"stat_average_hsp"				"stat_average_hsp"

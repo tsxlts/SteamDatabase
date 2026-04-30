@@ -425,7 +425,7 @@
 		"LoadingProgress_CSFunLoading1"		"Přebíjení zásobníků..."
 		"LoadingProgress_CSFunLoading2"		"Vytahování pojistek..."
 		"LoadingProgress_CSFunLoading3"		"Naplňování molotovů..."
-		"LoadingProgress_CSFunLoading4"		"Nakupování munice..."
+		"LoadingProgress_CSFunLoading4"		"Nakupování střeliva..."
 		"LoadingProgress_CSFunLoading5"		"Počítání kulek..."
 		"LoadingProgress_CSFunLoading6"		"Oprašování brnění..."
 		"LoadingProgress_CSFunLoading7"		"Opravování helem..."
@@ -1968,8 +1968,8 @@
 		"Team_Cash_Award_no_income_suicide"					" +0 $ za sebevraždu"
 		"Team_Cash_Award_Generic"							" +%s1 $ pro celý tým"
 		"Team_Cash_Award_Custom"							" +%s1 $ %s2"
-		"Team_Cash_Award_Dead_Terrorists:p"					" +%s1 $ pro celý tým za eliminaci %s2 Teroristy#|# +%s1 $ pro celý tým za eliminaci %s2 Teroristů#|# +%s1 $ pro celý tým za eliminaci %s2 Teroristů#|# +%s1 $ pro celý tým za eliminaci %s2 Teroristy"
-		"Team_Cash_Award_Dead_CTs:p"						" +%s1 $ pro celý tým za eliminaci %s2 Counter-Teroristy#|# +%s1 $ pro celý tým za eliminaci %s2 Counter-Teroristů#|# +%s1 $ pro celý tým za eliminaci %s2 Counter-Teroristů#|# +%s1 $ pro celý tým za eliminaci %s2 Counter-Teroristy"
+		"Team_Cash_Award_Dead_Terrorists:f"					" +%s1 $ pro celý tým za eliminaci {num_enemies} {num_enemies, plural, one{Teroristy} few{Teroristů} many{Teroristy} other{Teroristů}}"
+		"Team_Cash_Award_Dead_CTs:f"						" +$%s1 pro celý tým za eliminaci {num_enemies} {num_enemies, plural, one{Counter-Teroristy} few{Counter-Teroristů} many{Counter-Teroristy} other{Counter-Teroristů}}"
 
 
 		"Notice_Bonus_Shorthanded_Eligibility"			" Tvůj tým bude mít za %s1 kola nárok na příjem za hru v oslabení"
@@ -2333,10 +2333,14 @@
 		// Econ date formatting supports the following tokens:
 		//    %year%, %monthshort%, %monthlong%, %mmday% (01-31), %mday% (1-31), %day% (legacy unlocalized "Jul 30" shouldn't be used), %hour%, %min%, %sec%
 		//
-		"Econ_DateFormat"						"%mmday%. %monthshort% %year% (%hour%.%min%:%sec%)"
-		"Econ_DateFormat_GMT"					"%mmday%. %monthshort% %year% (%hour%.%min%:%sec%) GMT"
-		"Econ_DateFormat_DateOnly"				"%mmday%. %monthshort% %year%"
-		"Econ_DateFormat_GMT_DateOnly"			"%mmday%. %monthshort% %year% GMT"
+		"Econ_DateFormat:f"							"{mmday}. {monthshort} {year} ({hour}.{min}:{sec})"
+		"Econ_DateFormat_GMT:f"						"{monthshort}. {mmday} {year} ({hour}.{min}:{sec}) GMT"
+		"Econ_DateFormat_DateOnly:f"				"{mmday}. {monthshort} {year}"
+		"Econ_DateFormat_GMT_DateOnly:f"			"{mmday}. {monthshort} {year} GMT"
+		"Econ_DateFormat"							"%mmday%. %monthshort% %year% (%hour%.%min%:%sec%)"
+		"Econ_DateFormat_GMT"						"%mmday%. %monthshort% %year% (%hour%.%min%:%sec%) GMT"
+		"Econ_DateFormat_DateOnly"					"%mmday%. %monthshort% %year%"
+		"Econ_DateFormat_GMT_DateOnly"				"%mmday%. %monthshort% %year% GMT"
 		"Econ_Loot_List_Sticker_ProPlayerSignatures" "Samolepka může být podepsána jedním z následujících profesionálních hráčů:"
 		"Econ_Loot_List_Sticker_ProPlayerSignatures_AndSomeMore" "... a %s1 dalšími profesionálními hráči"
 		"Econ_Loot_List_Sticker_ProOrgsStickers"	"Samolepka může nést logo jednoho z následujících týmů či organizací:"
@@ -5948,1257 +5952,15 @@
 
 		"quest_desc"								" "
 
-		"quest_totalgoal_points_desc"				"Potřebný počet akcí (%actions%)： <b>%points%</b>" // special non-breaking space characters in this string, edit carefully!
-		"quest_attrremaining_points_desc"			"Zbývající akce (%actions%)： <b>%points%</b>" // special non-breaking space characters in this string, edit carefully!
-		"quest_uncommitted_points_desc"				"Zbývající akce (%actions%)： <b>%points%</b> (<b>%points uncommitted%</b> získáno během tohoto zápasu)" // special non-breaking space characters in this string, edit carefully!
-		"quest_uncommitted_points_warn"				" * <i>akce (%actions%) budou započítány na konci tohoto zápasu</i>"
-	
-		"quest_uncommitted_points_chat_one"	" Postup v misi: akce (%action%) byla zaznamenána."
-		"quest_uncommitted_points_chat_singular"	" Postup v misi: +%points% akce (%action%) byla zaznamenána."
-		"quest_uncommitted_points_chat_plural"		" Postup v misi: +%points% akcí (%actions%) bylo zaznamenáno."
-		"quest_uncommitted_points_chat_event"		" Blesková mise: akce (%action%) byla zaznamenána."		
+		"quest_commandverb_default"					"Proveď"
 
-		"quest_reward_desc"								"Za splnění této mise získáš odměnu z\n<b>%s1</b>:"
+		"quest_action_plural_act_kill_human"		"zabití"
+		"quest_action_singular_act_kill_human"		"zabití"
 
-		"quest_reward_xp"									"Odměna za splnění: <b>%s1</b> XP"
-
-		"quest_event_totalgoal_points_desc"					"Za každou akci (<b>%action%</b>) provedenou během této události získáš XP navíc."
-		
-		"quest_bonus_desc"								"Bonus: +<b>%xpperbonusaction%</b> XP za akci (%action%), <i>%xpbonuscondition%.</i>"
-		"quest_bonus_fractional_desc"			"Bonus: +<b>%xpperbonusactions%</b> XP za <b>%n_actions%</b> akcí (%actions%), <i>%xpbonuscondition%.</i>"
-		"quest_bonus_single_desc"					"Bonus: +<b>%xpperbonusaction%</b> XP, <i>%xpbonuscondition%.</i>"
-
-
-		"quest_target_chicken"											"slepic"
-		"quest_target_human_or_chicken"									"hráčů nebo slepic"
-		"quest_target_hostagerescuer"									"zachránce rukojmích"
-		"quest_target_armsraceleader"									"vedoucí hráč"
-
-		"quest_target_headshot"											"headshotů"
-		"quest_target_airborne"											"ve vzduchu"
-		"quest_target_pistolround"										"pistole"
-
-		"quest_target_lockeddoor"										"zamčené dveře"
-		"quest_target_explodingbarrel"									"výbušné barely"
-		"quest_target_glasspane"										"skleněné tabule"
-		"quest_target_enemydrone"										"nepřátelské drony"
-
-		"quest_target_shotgun"											"brokovnice"
-		"quest_target_sniperrifle"										"odstřelovací puška"
-		"quest_target_utility"											"granát"
-		"quest_target_defaultctpistol"									"výchozí pistole CT"
-		"quest_target_defaultpistol"									"výchozí pistole"
-		"quest_target_knife"											"nůž"
-
-		"quest_action_plural_act_kill_human"							"zabití"
-		"quest_action_singular_act_kill_human"							"zabití"
-
-		"quest_action_plural_act_kill_chicken"							"zabití"
-		"quest_action_singular_act_kill_chicken"						"zabití"		
-
-		"quest_action_plural_act_protect_chicken"						"sekund ochranou slepice"
-		"quest_action_singular_act_protect_chicken"						"sekundu ochranou slepice"	
-
-		"quest_action_plural_act_kill_target"							"vraždy"
-		"quest_action_singular_act_kill_target"							"vražda"		
-
-		"quest_action_plural_act_damage"								"poškození"
-		"quest_action_singular_act_damage"								"bod poškození"		
-
-		"quest_action_plural_act_win_match"								"výher"
-		"quest_action_singular_act_win_match"							"výhry"		
-
-		"quest_action_plural_act_dz_game_end_placement"					"umístění"
-		"quest_action_singular_act_dz_game_end_placement"				"umístění"	
-
-		"quest_action_plural_act_dz_purchase_item"					"nákupy"
-		"quest_action_singular_act_dz_purchase_item"				"nákup"	
-
-		"quest_action_plural_act_win_round"								"vyhraných kol"
-		"quest_action_singular_act_win_round"							"vyhrané kolo"	
-
-		"quest_action_plural_act_round_mvp"								"ocenění „Nejlepší hráč“"
-		"quest_action_singular_act_round_mvp"							"ocenění „Nejlepší hráč“"
-
-		"quest_action_plural_act_dm_bonus_points"						"bodů"
-		"quest_action_singular_act_dm_bonus_points"						"bod"		
-
-		"quest_action_plural_act_armsrace_level"						"úrovně"
-		"quest_action_singular_act_armsrace_level"						"úroveň"	
-
-		"quest_action_plural_act_gg_weapon_upgrade"						"vylepšení"
-		"quest_action_singular_act_gg_weapon_upgrade"					"vylepšení"	
-
-		"quest_action_plural_act_gg_upgrade_to_knifegg"						"vylepšení"
-		"quest_action_singular_act_gg_upgrade_to_knifegg"					"vylepšení"	
-				
-		"quest_action_plural_act_flashbang_enemy"						"oslepení nepřátel"
-		"quest_action_singular_act_flashbang_enemy"						"oslepení nepřítele"		
-		
-		"quest_action_plural_act_pick_up_hostage"						"dosažení rukojmích"
-		"quest_action_singular_act_pick_up_hostage"						"dosažení rukojmích"		
-		
-		"quest_action_plural_act_rescue_hostage"						"zachránění rukojmích"
-		"quest_action_singular_act_rescue_hostage"						"zachránění rukojmích"		
-		
-		"quest_action_plural_act_defuse_bomb"							"zneškodnění bomby"
-		"quest_action_singular_act_defuse_bomb"							"zneškodnění bomby"		
-		
-		"quest_action_plural_act_plant_bomb"							"položení bomby"
-		"quest_action_singular_act_plant_bomb"							"položení bomby"
-
-		"quest_action_singular_act_income"								"dolar"
-		"quest_action_plural_act_income"								"dolarů"
-		
-		"quest_action_singular_act_survivalincome"						"dolar"
-		"quest_action_plural_act_survivalincome"						"dolarů"
-
-		"quest_action_singular_act_spend"								"dolar"
-		"quest_action_plural_act_spend"									"dolarů"
-
-		"quest_action_singular_act_parachute_landed"					"sekundu plachtění s padákem"
-		"quest_action_plural_act_parachute_landed"						"sekund plachtění s padákem"
-
-		"quest_action_singular_act_bumpmine_launch"						"odraz od odrážecí miny"
-		"quest_action_plural_act_bumpmine_launch"						"odrazů od odrážecí miny"
-
-		"quest_action_singular_headshot_kill"							"zabití headshotem"
-		"quest_action_plural_headshot_kill"								"zabití headshotem"
-
-		"quest_action_singular_multikill"								"více zabití v jednom kole"
-		"quest_action_plural_multikill"									"více zabití v jednom kole"
-
-		"quest_action_singular_act_apply_graffiti"						"graffiti"
-		"quest_action_plural_act_apply_graffiti"						"graffiti"
-
-		"quest_action_singular_act_detonate_smokegrenade"				"dýmovnice"
-		"quest_action_plural_act_detonate_smokegrenade"					"dýmovnic"
-
-		"quest_action_singular_act_detonate_molotov"					"molotov"
-		"quest_action_plural_act_detonate_molotov"						"molotovy"
-
-		"quest_action_singular_act_use_healthshot"						"adrenalin"
-		"quest_action_plural_act_use_healthshot"						"adrenaliny"
-		
-		"quest_action_singular_act_retakes_picked_enemy_card"			"výběr nepřátelské karty"
-		"quest_action_plural_act_retakes_picked_enemy_card"				"výběrů nepřátelské karty"
-
-		"quest_action_singular_act_retakes_picked_mvp_card"				"výběr karty pro nejlepšího hráče"
-		"quest_action_plural_act_retakes_picked_mvp_card"				"výběrů karty pro nejlepšího hráče"
-//
-
-		"quest_action_plural_bomb_plants_or_defuses"					"položení nebo zneškodnění bomby"
-		"quest_action_singular_bomb_plants_or_defuses"					"položení nebo zneškodnění bomby"
-		
-		"quest_action_plural_rescue_or_kill_hostages"					"zachránění rukojmích nebo zabití zachránců rukojmích"
-		"quest_action_singular_rescue_or_kill_hostages"					"zachránění rukojmích nebo zabití zachránců rukojmích"		
-		
-		"quest_action_plural_damage_burn"								"poškození hořením"
-		"quest_action_singular_damage_burn"								"bodů poškození hořením"
-
-		"quest_commandverb_default"										"Proveď"
-		"quest_commandverb_defaultCT"									"Jako CT proveď"
-		"quest_commandverb_defaultT"									"Jako T proveď"
-		"quest_commandverb_deal"										"Uděl"
-		"quest_commandverb_earn"										"Získej"
-		"quest_commandverb_earnT"										"Jako T získej"
-		"quest_commandverb_spend"										"Utrať"
-		"quest_commandverb_execute"										"Proveď"
-		"quest_commandverb_destroy"										"Znič"
-		"quest_commandverb_apply"										"Použij"
-		"quest_commandverb_throw"										"Proveď"
+		"quest_action_plural_act_win_round"			"vyhraných kol"
+		"quest_action_singular_act_win_round"		"vyhrané kolo"	
 
 		////
-
-		"quest_condition_item_own"										"tvojí"
-		"quest_condition_item_borrowed"									"cizí"									
-		"quest_condition_item_borrowed_teammate"						"spoluhráčovy"									
-		"quest_condition_item_borrowed_enemy"							"nepřítelovy"									
-		"quest_condition_item_borrowed_victim"							"nepřítelovy bývalé"									
-		"quest_condition_item_nondefault"								"moc pěkné"
-
-		"quest_LoadoutSlot_Melee"										"nůž"
-		"quest_LoadoutSlot_Secondary"									"pistole"
-		"quest_LoadoutSlot_SMG"											"samopalem"
-		"quest_LoadoutSlot_Rifle"										"puška"
-		"quest_LoadoutSlot_Heavy"										"těžká zbraň"
-		"quest_LoadoutSlot_Grenade"										"granát"
-
-		"quest_item_default"											"zbraň"
-
-////
-		"quest_event_ending"											"Končí za %s1 minut"
-		"quest_event_soon_hours"										"Začíná za %s1 hodin"
-		"quest_event_soon_hms"											"Začíná za %s1:%s2:%s3"
-		"quest_event_today"												"Dnes v %s1:%s2"
-		"quest_event_future"											"Začíná %s1 %s2 %s3:%s4"
-		"quest_event_timer"												"Začíná za %s1"
-
-////
-
-
-
-
-////////////////////////// generalized quest strings //////////////////////////////
-///
-///	Use these if applicable. If not, use this pattern to create new ones.
-///
-///
-///
-
-		"quest_default_0_items_desc" "%commandverb% %actions% %target% na mapě %location% v módu <b>%gamemode%</b>."		
-		"quest_default_1_items_desc" "%commandverb% %actions% %target% pomocí <i>%item_quality%</i> zbraně <b>%item1%</b> na mapě %location% v módu <b>%gamemode%</b>."
-		"quest_default_2_items_desc" "%commandverb% %actions% %target% pomocí <i>%item_quality%</i> zbraně <b>%item1%</b> nebo <b>%item2%</b> na mapě %location% v módu <b>%gamemode%</b>."
-		"quest_default_3_items_desc" "%commandverb% %actions% %target% pomocí <i>%item_quality%</i> zbraně <b>%item1%</b>, <b>%item2%</b> nebo <b>%item3%</b> na mapě %location% v módu <b>%gamemode%</b>."
-		"quest_default_4_items_desc" "%commandverb% %actions% %target% pomocí <i>%item_quality%</i> zbraně <b>%item1%</b>, <b>%item2%</b>, <b>%item3%</b> nebo <b>%item4%</b> na mapě %location% v módu <b>%gamemode%</b>."
-
-		"quest_default_hud_0_items_desc" "%commandverb% %target% %actions%"
-		"quest_default_hud_1_items_desc" "%commandverb% %target% %actions%: <i>%item_quality%</i> <b>%item1%</b>"
-		"quest_default_hud_2_items_desc" "%commandverb% %target% %actions%: <i>%item_quality%</i> <b>%item1%</b>/<b>%item2%</b>"
-		"quest_default_hud_3_items_desc" "%commandverb% %target% %actions%: <i>%item_quality%</i> <b>%item1%</b>/<b>%item2%</b>/<b>%item3%</b>"
-		"quest_default_hud_4_items_desc" "%commandverb% %target% %actions%: <i>%item_quality%</i> <b>%item1%</b>/<b>%item2%</b>/<b>%item3%</b>/<b>%item4</b>"
-
-/////////////////////////////////////////////////////////
-
-/////////////////////////////// Quest Strings via Dialog Vars //////
-///
-/// Used starting with Op09 - the default descriptions should handle most "Perform X Action in GameMode: Location" quests.
-///
-///
-		"quest_default_var_desc" "<b>{s:gamemode}: {s:location}</b> | {s:commandverb} {d:points} {s:actions} pomocí {s:target}."		
-		"quest_single_var_desc" "<b>{s:gamemode}: {s:location}</b> | {s:commandverb} {d:points} {s:actions} pomocí {s:target} v <i>jediném</i> zápase."		
-		"quest_default_no_map_var_desc" "<b>{s:gamemode}</b> | {s:commandverb} {d:points} {s:actions} pomocí {s:target}."
-		"quest_single_no_map_var_desc" "<b>{s:gamemode}</b> | {s:commandverb} {d:points} {s:actions} pomocí {s:target} v <i>jediném</i> zápase."		
-
-		"quest_weapon_var_desc" "<b>{s:gamemode}: {s:location}</b> | {s:commandverb} {d:points} {s:actions} {s:target} pomocí zbraně {s:weapon}."
-		"quest_weapon_single_var_desc" "<b>{s:gamemode}: {s:location}</b> | {s:commandverb} {d:points} {s:actions} {s:target} pomocí zbraně {s:weapon} v <i>jediném</i> zápase."
-		"quest_weapon_no_map_var_desc" "<b>{s:gamemode}</b> | {s:commandverb} {d:points} {s:actions} {s:target} pomocí zbraně {s:weapon}."
-		"quest_weapon_category_no_map_var_desc" "<b>{s:gamemode}</b> | {s:commandverb} {d:points} {s:actions} {s:target} pomocí libovolné zbraně typu {s:weapon}."
-
-		"quest_flyingscoutsman_var_desc"	"<b>Létající snajpr: {s:location}</b> | {s:commandverb} {d:points} {s:actions} pomocí {s:target}."
-		"quest_flyingscoutsman_no_map_var_desc"	"<b>Létající snajpr</b> | {s:commandverb} {d:points} {s:actions} pomocí {s:target}."
-
-		"quest_retakes_var_desc"	"<b>Přetahovaná: {s:location}</b> | {s:commandverb} {d:points} {s:actions} {s:target}."
-		"quest_retakes_no_map_var_desc"	"<b>Přetahovaná</b> | {s:commandverb} {d:points} {s:actions} {s:target}."
-
-		"quest_armsrace_var_desc"	 		"<b>Závod ve zbrojení</b> | {s:commandverb} {d:points} {s:actions} pomocí {s:target}."
-		"quest_armsrace_weapon_var_desc"	"<b>Závod ve zbrojení</b> | {s:commandverb} {d:points} {s:actions} {s:target} pomocí libovolné zbraně typu {s:weapon}."
-
-		// quest exceptions:
-		"quest_931_var_desc"	 "<b>{s:gamemode}: {s:location}</b> | Zabij {d:points} nepřátel zbraní {s:weapon}."
-		"quest_932_var_desc"	 "<b>Létající snajpr</b> | Zabij {d:points} nepřátel, zatímco jsi ve vzduchu."
-		"quest_933_var_desc"	 "<b>{s:gamemode}: {s:location}</b> | Vyhraj {d:points} kol."
-		"quest_934_var_desc"	 "<b>Stráž: {s:location}</b> | Zabij {s:kills} nepřátel zbraní {s:weapon}."
-		"quest_935_var_desc"	 "<b>{s:gamemode}: {s:location}</b> | Zabij {d:points} nepřátel zbraní {s:weapon} v <i>jediném</i> zápase."
-		"quest_936_var_desc"	 "<b>{s:gamemode}</b> | Zabij {d:points} nepřátel zbraní {s:weapon}."
-		"quest_937_var_desc"	 "<b>{s:gamemode}: {s:location}</b> | Nasprejuj {d:points} graffiti na nepřátelském území."
-		"quest_938_var_desc"	 "<b>{s:gamemode}</b> | {d:points}× zabij vedoucího hráče."
-		"quest_939_var_desc"	 "<b>Stráž: {s:location}</b> | Zabij {s:kills} nepřátel zbraní {s:weapon}."
-		"quest_940_var_desc"	 "<b>{s:gamemode}: {s:location}</b> | Vyhraj {d:points} kol."
-		"quest_941_var_desc"	 "<b>{s:gamemode}: {s:location}</b> | Vyhraj {d:points} kola s pistolemi."
-		"quest_942_var_desc"	 "<b>{s:gamemode}: {s:location}</b> | Zabij {d:points} nepřátel zbraní {s:weapon} v <i>jediném</i> zápase."
-		"quest_943_var_desc"	 "<b>Létající snajpr</b> | Zabij {d:points} nepřátel."
-		"quest_944_var_desc"	 "<b>{s:gamemode}</b> | Utrať {d:points} dolarů v <i>jediném</i> zápase."
-		"quest_945_var_desc"	 "<b>Stráž: {s:location}</b> | Zabij {s:kills} nepřátel."
-		"quest_946_var_desc"	 "<b>{s:gamemode}: {s:location}</b> | Vyhraj {d:points} kol."
-		"quest_947_var_desc"	 "<b>{s:gamemode}: {s:location}</b> | Vyhraj {d:points} kol."
-		"quest_948_var_desc"	 "<b>{s:gamemode}: {s:location}</b> | Zachraň {d:points} rukojmích, nebo zabij {d:points} zachránců."
-        "quest_949_var_desc"	 "<b>{s:gamemode}: {s:location}</b> | Zabij {d:points} nepřátel zbraní {s:weapon}."
-        "quest_950_var_desc"	 "<b>{s:gamemode}</b> | Zabij {d:points} nepřátel libovolnou těžkou zbraní."
-        "quest_951_var_desc"	 "<b>Stráž: {s:location}</b> | Zabij {s:kills} nepřátel zbraní typu {s:weapon}. Hráči získají do začátku předmět <b>{s:extraequip0}</b>."
-        "quest_952_var_desc"	 "<b>{s:gamemode}: {s:location}</b> | Vyhraj {d:points} kol."
-        "quest_953_var_desc"	 "<b>{s:gamemode}: {s:location}</b> | Vyhraj {d:points} kol."
-        "quest_954_var_desc"	 "<b>{s:gamemode}: {s:location}</b> | Zabij {d:points} nepřátel zbraní typu {s:target} v <i>jediném</i> zápase."
-		"quest_955_var_desc"	 "<b>{s:gamemode}: {s:location}</b> | Spřátel se se slepicemi a {d:points} sekund je ubraň."
-		"quest_956_var_desc" 	 "<b>{s:gamemode}</b> | Celkem {d:points} sekund plachti s padákem."
-		"quest_957_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> | Zabij {d:points} nepřátel zbraní {s:weapon}."
-		"quest_958_var_desc" 	 "<b>{s:gamemode} (cvičný): {s:location}</b> | Vyhraj {d:points} kol."
-		"quest_959_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> | Zabij {d:points} nepřátel."
-		"quest_960_var_desc"	 "<b>Stráž: {s:location}</b> | Zabij {s:kills} nepřátel zbraní {s:weapon}."
-		"quest_961_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> | Zabij pistolí {d:points} nepřátel."
-		"quest_962_var_desc" 	 "<b>{s:gamemode}</b> | Zabij v <i>jediném</i> zápase {d:points} nepřátele, aniž bys utratil jediný dolar."
-		"quest_963_var_desc"	 "<b>Stráž: {s:location}</b> | Zabij {s:kills} nepřátel zbraní {s:weapon}."
-		"quest_964_var_desc" 	 "<b>{s:gamemode}</b> | Vyhraj {d:points} kola s pistolemi."
-		"quest_965_var_desc" 	 "<b>Stráž: {s:location}</b> | Zabij {s:kills} nepřátel."
-		"quest_966_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> | Získej {d:points} dolarů."
-		"quest_967_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> | Zabij {d:points} nepřátel zbraní {s:weapon}."
-		"quest_968_var_desc"	 "<b>{s:gamemode}</b> | Zabij odstřelovací puškou {d:points} nepřátele."
-		"quest_969_var_desc" 	 "<b>Stráž: {s:location}</b> | Zabij {s:kills} nepřátele zbraní {s:weapon} bez přiblížení."
-		"quest_970_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> | Vyhraj {d:points} kol."
-		"quest_971_var_desc"	 "<b>Stráž: {s:location}</b> | Zabij {s:kills} nepřátel."
-		"quest_972_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> | V <i>jediném</i> zápase zabij headshoty {d:points} nepřátel."
-		"quest_973_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> | Zabij {d:points} nepřátel."
-		"quest_974_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> | Zabij headshoty {d:points} nepřátel."
-		"quest_975_var_desc"     "<b>Stráž: {s:location}</b> | Zabij {s:kills} nepřátel zbraní Counter-Teroristů."
-		"quest_976_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> | Vyhraj {d:points} kol."
-		"quest_977_var_desc"	 "<b>{s:gamemode}: {s:location}</b> | Vyhraj {d:points} kol."
-		"quest_978_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> | Zabij {d:points} nepřátel zbraní {s:weapon}."
-		"quest_979_var_desc"	 "<b>{s:gamemode}: {s:location}</b> | Dosáhni série čtyř nebo více zabití."		
-		"quest_980_var_desc" 	 "<b>{s:gamemode}</b> | Umísti se na čtvrtém nebo lepším místě."
-		"quest_981_var_desc"     "<b>Stráž: {s:location}</b> | Zabij {s:kills} nepřátel headshotem od zbraně {s:weapon}, když <i>nejsi vybaven brněním</i>."
-		"quest_982_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> | V <i>jediném</i> zápase zabij headshoty od zbraně {s:weapon} {d:points} nepřátel."
-		"quest_983_var_desc" 	 "<b>{s:gamemode}</b> | Zabij headshoty {d:points} nepřátel."
-		"quest_984_var_desc" 	 "<b>{s:gamemode}</b> | {d:points}× se staň nejlepším hráčem."
-		"quest_985_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> | Zabij výchozí pistolí {d:points} nepřátel."
-		"quest_986_var_desc"     "<b>Stráž: {s:location}</b> | Zabij {s:kills} nepřátel zbraní {s:weapon}."
-		"quest_987_var_desc"	 "<b>{s:gamemode}: {s:location}</b> | {d:points}× proveď zabití nepřítelovou primární puškou."
-		"quest_988_var_desc"     "<b>Závod ve zbrojení</b> | Zabij {d:points} nepřátele nožem."
-		"quest_989_var_desc" 	 "<b>{s:gamemode}</b> | Proveď granáty {d:points} bodů poškození."
-		"quest_990_var_desc" 	 "<b>{s:gamemode}</b> | {d:points}× proveď eso."
-		"quest_991_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> | Zabij {d:points} nepřátel zbraní <b>Tec-9 nebo Five-Seven</b>."
-		"quest_992_var_desc"     "<b>Stráž: {s:location}</b> | Zabij {s:kills} nepřátel zbraní {s:weapon}."
-		"quest_993_var_desc"	 "<b>{s:gamemode}: {s:location}</b> | Proveď granáty {d:points} bodů poškození."
-		"quest_994_var_desc" 	 "<b>{s:gamemode}</b> | Zabij {d:points} nepřátel."
-		"quest_995_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> | Vyhraj {d:points} kol."
-		"quest_996_var_desc"     "<b>{s:gamemode}: {s:location}</b> | Zabij {d:points} nepřátel."
-		"quest_997_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> | Zabij {d:points} nepřátel zbraní Galil AR nebo FAMAS."
-		"quest_998_var_desc"     "<b>Stráž: {s:location}</b> | Zabij {s:kills} nepřátel zbraní {s:weapon}."
-		"quest_999_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> | Zabij {d:points} nepřítele zbraní {s:weapon}."
-		"quest_1000_var_desc" 	 "<b>{s:gamemode}</b> | Znič {d:points} nepřátelské drony. {s:actions}"
-		"quest_1001_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> | {d:points}× se staň nejlepším hráčem v <i>jediném</i> zápase."
-		"quest_1002_var_desc"	 "<b>{s:gamemode}: {s:location}</b> | V {d:points} kolech dosáhni série dvou nebo více zabití."
-		"quest_1003_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> | Zabij {d:points} nepřátel zbraní {s:weapon}."
-		"quest_1004_var_desc"    "<b>Stráž: {s:location}</b> | Zabij {s:kills} nepřátel zbraní {s:weapon}."
-		"quest_1005_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> | Vyhraj {d:points} kol."
-		"quest_1006_var_desc"    "<b>Závod ve zbrojení</b> | Zabij {d:points} nepřátel."
-		"quest_1007_var_desc" 	 "<b>{s:gamemode}</b> | Pomocí zbraně {s:weapon} znič {d:points} zamčených dveří. {s:actions}"
-		"quest_1008_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> | Zabij {d:points} nepřátel zbraní AK-47 nebo M4A4."
-		"quest_1009_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> | Vyhraj {d:points} kol."
-		"quest_1010_var_desc"	 "<b>{s:gamemode}: {s:location}</b> | Zabij {d:points} nepřátel zbraní {s:weapon}."
-		"quest_1011_var_desc"    "<b>{s:gamemode}: {s:location}</b> | Vyhraj 5 nebo více kol v jediné polovině zápasu."
-		"quest_1012_var_desc" 	 "<b>{s:gamemode}</b> | Stoupni na {d:points} odrážecí miny."
-		"quest_1013_var_desc" 	 "<b>{s:gamemode}</b> | Zabij {d:points} nepřítele zbraní {s:weapon}."
-		"quest_1014_var_desc"    "<b>Stráž: {s:location}</b> | Zabij {s:kills} nepřátel zbraní {s:weapon}."
-		"quest_1015_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> | Zabij {d:points} nepřátel, aniž bys utratil více než 2000 dolarů."
-		"quest_1016_var_desc"	 "<b>{s:gamemode}</b> | Měj u sebe 3000 nebo více dolarů."
-		"quest_1017_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> | Vyhraj {d:points} kol."
-		"quest_1018_var_desc"    "<b>Stráž: {s:location}</b> | Zabij {s:kills} nepřátel."
-		"quest_1019_var_desc" 	 "<b>Závod ve zbrojení</b> | Zabij {d:points} nepřátel libovolným samopalem."
-		"quest_1020_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> | Zabij {d:points} nepřátel zbraní {s:weapon}."
-		"quest_1021_var_desc" 	"<b>{s:gamemode}: {s:location}</b> | Zmasakruj {d:points} slepic."
-		"quest_1022_var_desc" 	"<b>{s:gamemode}</b> | Odpal {d:points} výbušných barelů."
-		"quest_1023_var_desc" 	"<b>{s:gamemode}: {s:location}</b> | Vyhraj {d:points} kol."
-		"quest_1024_var_desc" 	"<b>{s:gamemode}: {s:location}</b> | Znič {d:points} tabulek skla."
-		"quest_1025_var_desc" 	"<b>{s:gamemode}: {s:location}</b> | Vyhraj {d:points} kol."
-		"quest_1027_var_desc"	 "<b>{s:gamemode}: {s:location}</b> | Nasprejuj {d:points} graffiti na nepřátelském startu."
-		"quest_1028_var_desc"	 "<b>{s:gamemode}: {s:location}</b> | Zabij {d:points} nepřátel, zatímco se nacházíš v části <i>Banán</i> nebo <i>Apartmány</i>."
-		"quest_1029_var_desc"	 "<b>{s:gamemode}: {s:location}</b> | Hoď {d:points} strategických dýmovnic."
-		"quest_1030_var_desc"	 "Získej vzorek viru „Zóna smrti“ z laboratoře teroristické skupiny Phoenix."
-		"quest_1031_var_desc"	 "Znič výrobní závod teroristické skupiny Phoenix a zabij Franze Kriegelda."
-		
-		"quest_1098_var_desc"                                  "<b>{s:location}</b> | Vyhrávej kola."
-		"quest_1032_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Vyhrávej kola."
-		"quest_1033_var_desc"                                  "<b>Stráž: {s:location}</b> | Zabij {s:kills} nepřátel."
-		"quest_1034_var_desc"                                  "Byly spatřeny jednotky teroristické skupiny Phoenix! Zjisti, co mají za lubem."
-		"quest_1035_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Zabíjej nepřátele zbraní AK47, M4A4 nebo M4A1-S."
-		"quest_1036_var_desc"                                  "<b>{s:location}</b> | Vyhrávej kola."
-		"quest_1037_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Zabíjej nepřátele."
-		"quest_1099_var_desc"                                  "<b>{s:location}</b> | Získávej ocenění „Nejlepší hráč“."
-		"quest_1038_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Vyhrávej kola."
-		"quest_1039_var_desc"                                  "<b>Stráž: {s:location}</b> | Zabíjej nepřátele všemi {s:kills} pistolemi."
-		"quest_1040_var_desc"                                  "<b>{s:location}</b> | Zabíjej nepřátele pistolemi."
-		"quest_1041_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Zabíjej nepřátele zbraní {s:weapon}."
-		"quest_1042_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Vyhrávej kola."
-		"quest_1043_var_desc"                                  "<b>Stráž: {s:location}</b> | Zabij {s:kills} nepřátel libovolnou odstřelovací puškou."
-		"quest_1044_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Zabíjej nepřátele ze vzdálenosti 15 nebo více metrů."
-		"quest_1045_var_desc"                                  "<b>{s:location}</b> | Zabíjej nepřátele libovolnými odstřelovacími puškami."
-		"quest_1046_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Zabíjej nepřátele headshoty."
-		"quest_1047_var_desc"                                  "<b>Stráž: {s:location}</b> | Zabij {s:kills} nepřátel zbraní {s:weapon}."
-		"quest_1048_var_desc"                                  "<b>{s:location}</b> | Uděluj poškození granáty."
-		"quest_1049_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Získávej peníze."
-		"quest_1050_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Vyhrávej kola."
-		"quest_1051_var_desc"                                  "<b>Stráž: {s:location}</b> | Zabij {s:kills} nepřátel."
-		"quest_1052_var_desc"                                  "<b>{s:location}</b> | Vyber si nepřátelskou kartu."
-		"quest_1053_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Házej dýmovnice na určená místa."
-		"quest_1054_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Vyhrávej kola."
-		"quest_1055_var_desc"                                  "<b>Stráž: {s:location}</b> | Zabij {s:kills} nepřátel zbraněmi Teroristů."
-		"quest_1056_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Zabíjej nepřátele z části „Tunel“ nebo „Palác“."
-		"quest_1057_var_desc"                                  "<b>{s:location}</b> | Zabíjej nepřátele."
-		"quest_1058_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Vyhrávej kola."
-		"quest_1059_var_desc"                                  "<b>Stráž: {s:location}</b> | Zabij {s:kills} nepřátel samopaly."
-		"quest_1060_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Zabíjej nepřátele samopaly."
-		"quest_1061_var_desc"                                  "<b>{s:location}</b> | Zabíjej nepřátele samopaly."
-		"quest_1062_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Vyhrávej kola."
-		"quest_1063_var_desc"                                  "<b>Stráž: {s:location}</b> | Zabij {s:kills} nepřátel brokovnicemi."
-		"quest_1064_var_desc"                                  "<b>{s:location}</b> | Vyber si kartu pro nejlepšího hráče."
-		"quest_1065_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Sprejuj graffiti na určených místech."
-		"quest_1100_var_desc"                                  "<b>{s:location}</b> | Vyhrávej kola."
-		"quest_1066_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Vyhrávej kola."
-		"quest_1067_var_desc"                                  "<b>Stráž: {s:location}</b> | Zabij {s:kills} nepřátel headshoty zbraní AUG."
-		"quest_1068_var_desc"                                  "<b>{s:location}</b> | Oslepuj nepřátele granáty."
-		"quest_1069_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Sprejuj graffiti na určených místech."
-		"quest_1101_var_desc"                                  "<b>{s:location}</b> | Vyhrávej kola."
-		"quest_1070_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Vyhrávej kola."
-		"quest_1071_var_desc"                                  "<b>Stráž: {s:location}</b> | Zabíjej nepřátele ze vzdálenosti menší než 10 metrů."
-		"quest_1072_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Zabíjej nepřátele ze vzdálenosti menší než 10 metrů."
-		"quest_1073_var_desc"                                  "<b>{s:location}</b> | Zabíjej nepřátele."		
-		"quest_1074_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Vyhrávej kola."
-		"quest_1075_var_desc"                                  "<b>Stráž: {s:location}</b> | Zabij {s:kills} nepřátel."
-		"quest_1076_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Zabíjej nepřátele headshoty."
-		"quest_1077_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Zabíjej nepřátele těžkými zbraněmi."
-		"quest_1102_var_desc"                                  "<b>{s:location}</b> | Vyhrávej kola."
-		"quest_1078_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Vyhrávej kola."
-		"quest_1079_var_desc"                                  "<b>Stráž: {s:location}</b> | Zabij {s:kills} nepřátel zbraní SSG08."
-		"quest_1080_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Zabíjej slepice."
-		"quest_1081_var_desc"                                  "<b>{s:location}</b> | Zabíjej nepřátele."
-		"quest_1082_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Vyhrávej kola."
-		"quest_1083_var_desc"                                  "<b>Stráž: {s:location}</b> | Zabij {s:kills} nepřátel zbraní MAG-7."
-		"quest_1084_var_desc"                                  "<b>{s:location}</b> | Zabíjej nepřátele."
-		"quest_1085_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Uděluj poškození granáty."
-		"quest_1085_v2_var_desc"                   			   "<b>{s:gamemode}: {s:location}</b> | Uděluj poškození granáty."
-		"quest_1086_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Vyhrávej kola."
-		"quest_1087_var_desc"                                  "<b>Stráž: {s:location}</b> | Proveď {s:kills} zabití zbraněmi nepřátel."
-		"quest_1088_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Zabíjej nepřátele z určených částí mapy."
-		"quest_1089_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Zabíjej nepřátele s přiblížením."
-		"quest_1089_v2_var_desc"                               "<b>{s:gamemode}: {s:location}</b> | Zabíjej nepřátele s přiblížením."
-		"quest_1090_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Vyhrávej kola."
-		"quest_1091_var_desc"                                  "<b>Stráž: {s:location}</b> | Zabij {s:kills} nepřátel."
-		"quest_1092_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Získávej body při používání bonusových zbraní."
-		"quest_1092_v2_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Získávej body při používání bonusových zbraní."
-		"quest_1093_var_desc"                                  "<b>{s:gamemode}</b> | Utrácej peníze."
-		"quest_1094_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Vyhrávej kola."
-		"quest_1095_var_desc"                                  "<b>Stráž: {s:location}</b> | Zabij {s:kills} nepřátel."
-		"quest_1095_v2_var_desc"                                  "<b>Stráž: {s:location}</b> | Zabij {s:kills} nepřátel zbraní UMP-45."
-		"quest_1096_var_desc"                                  "<b>{s:location}</b> | Vyhrávej kola."
-		"quest_1097_var_desc"                                  "Dokonči misi."
-		"quest_1097_v2_var_desc"                                  "<i>... sítnice se rychle přizpůsobí prudkému světlu, což vyústí v dočasné oslepnutí.</i>"
-		"quest_1103_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> | Oslepuj nepřátele granáty."
-
-// OP11 Week 1 Missions
-		"quest_1106_var_desc"                              "<b>Stráž: {s:location}</b> | Přežij nálet parašutistů"
-		"quest_1107_var_desc"                              "<b>Zóna smrti: {s:location}</b> | Dokonči všechny zadané úkoly"
-		"quest_1108_var_desc"                              "Zabíjej nepřátele z určených částí mapy"
-
-// OP11 Week 2 Missions
-		"quest_1111_var_desc"                              "<b>Stráž: {s:location}</b> | Zabíjej nepřátele"
-
-// OP11 Week 3 Missions
-		"quest_1115_var_desc"                              "<b>Stráž: {s:location}</b> | Zabíjej nepřátele odstřelovacími puškami"
-		"quest_1117_var_desc"                              "Sprejuj graffiti na určených místech"
-
-// OP11 Week 4 Missions
-		"quest_1119_var_desc"                              "<b>Stráž: {s:location}</b> | Zabíjej nepřátele brokovnicemi"
-		"quest_1120_var_desc"                              "Zabíjej nepřátele z určených částí mapy"
-
-// OP11 Week 5 Missions
-		"quest_1123_var_desc"                              "<b>Stráž: {s:location}</b> | Zabíjej nepřátele samopaly"
-		"quest_1125_var_desc"                              "Dokonči všechny zadané úkoly"
-
-// OP11 Week 6 Missions
-		"quest_1127_var_desc"                              "<b>Stráž: {s:location}</b> | Zabíjej nepřátele puškami"
-		"quest_1128_var_desc"                              "<b>Deathmatch: {s:location}</b> | Dosáhni série zabití"
-
-// OP11 Week 7 Missions
-		"quest_1131_var_desc"                              "<b>Stráž: {s:location}</b> | Zabíjej nepřátele"
-		"quest_1132_var_desc"                              "Zabíjej nepřátele z určených částí mapy"
-
-// OP11 Week 8 Missions
-		"quest_1135_var_desc"                              "<b>Stráž: {s:location}</b> | Zabíjej nepřátele brokovnicemi"
-		"quest_1137_var_desc"                              "Dokonči všechny zadané úkoly spojené s granáty"
-
-// OP11 Week 9 Missions
-		"quest_1139_var_desc"                              "<b>Stráž: {s:location}</b> | Zabíjej nepřátele pistolemi"
-		"quest_1140_var_desc"                              "Sprejuj graffiti na určených místech"
-
-// OP11 Week 10 Missions
-		"quest_1143_var_desc"                              "<b>Stráž: {s:location}</b> | Zabíjej nepřátele zbraní AUG"
-		"quest_1144_var_desc"                              "Zabíjej nepřátele z určených částí mapy"
-
-// OP11 Week 11 Missions
-		"quest_1147_var_desc"                              "<b>Stráž: {s:location}</b> | Zabíjej nepřátele zbraní MP9"
-
-// OP11 Week 12 Missions
-		"quest_1151_var_desc"                              "<b>Stráž: {s:location}</b> | Zabíjej nepřátele samopaly"
-		"quest_1152_var_desc"                              "Dosahuj sérií zabití"
-
-// OP11 Week 13 Missions
-		"quest_1155_var_desc"                              "<b>Stráž: {s:location}</b> | Zabíjej nepřátele jejich zbraněmi"
-		"quest_1156_var_desc"                              "Zabíjej nepřátele z určených částí mapy"
-		"quest_1157_var_desc"                              "Sprejuj graffiti na určených místech"
-
-// OP11 Week 14 Missions
-		"quest_1159_var_desc"                              "<b>Stráž: {s:location}</b> | Zabíjej nepřátele dálkově ovládanými výbušninami"
-
-// OP11 Week 15 Missions
-		"quest_1163_var_desc"                              "<b>Stráž: {s:location}</b> | Zabíjej nepřátele těžkými zbraněmi"
-
-// OP11 Week 16 Missions
-		"quest_1167_var_desc"                              "<b>Stráž: {s:location}</b> | Zabíjej nepřátele"
-		"quest_1169_var_desc"                              "Zabíjej nepřátele zbraněmi z jedné ze čtyř kolekcí operace Riptide"
-
-
-// OP11 Week 1 Sub-Missions
-		"quest_1200_var_desc"                              "Vyhraj {d:points} zápas"
-		"quest_1201_var_desc"                              "Vyhraj {d:points} kol"
-		"quest_1202_var_desc"                              "Uděl granáty {d:points} bodů poškození v <i>jediném zápase</i>"
-		"quest_1203_var_desc"                              "Uděl granáty {d:points} bodů poškození"
-		"quest_1204_var_desc"                              "Znič nepřátelský dron"
-		"quest_1205_var_desc"                              "Odpal výbušný barel"
-		"quest_1206_var_desc"                              "Rozbij několik tabulek skla"
-		"quest_1207_var_desc"                              "Odraz se minou z vrcholku vodárny"
-		"quest_1208_var_desc"                              "Zachraň rukojmího"
-		"quest_1209_var_desc"                              "Proveď zabití z části „Start T“"
-		"quest_1210_var_desc"                              "Proveď zabití z části „Rampa T“"
-		"quest_1211_var_desc"                              "Proveď zabití z části „Místo pro bombu A“"
-		"quest_1212_var_desc"                              "Proveď zabití z části „Start CT“"
-		"quest_1213_var_desc"                              "Proveď zabití z části „Obchod“"
-		"quest_1214_var_desc"                              "Proveď zabití z části „Místo pro bombu B“"
-		"quest_1215_var_desc"                              "Proveď zabití z části „Lávka“"
-		"quest_1216_var_desc"                              "Proveď zabití z části „Střed“"
-		"quest_1217_var_desc"                              "Proveď zabití z části „Schody“"
-		"quest_1218_var_desc"                              "Proveď zabití z části „Místo pro bombu A“ (ano, znovu)"
-		"quest_1219_var_desc"                              "Proveď {d:points} série zabití v <i>jediném zápase</i>"
-		"quest_1220_var_desc"                              "Zabij {d:points} nepřátel"
-
-// OP11 Week 2 Sub-Missions
-		"quest_1221_var_desc"                              "Vyhraj {d:points} zápas"
-		"quest_1222_var_desc"                              "Vyhraj {d:points} kol"
-		"quest_1223_var_desc"                              "Zabij headshoty {d:points} nepřátel v <i>jediném zápase</i>"
-		"quest_1224_var_desc"                              "Zabij headshoty {d:points} nepřátel"
-		"quest_1225_var_desc"                              "Uděluj poškození granáty"
-		"quest_1226_var_desc"                              "Zabij {d:points} nepřátel"
-
-// OP11 Week 3 Sub-Missions		
-		"quest_1227_var_desc"                              "Vyhraj {d:points} zápas"
-		"quest_1228_var_desc"                              "Vyhraj {d:points} kol"
-		"quest_1229_var_desc"                              "Uděl {d:points} bodů poškození v <i>jediném zápase</i>"
-		"quest_1230_var_desc"                              "Uděl {d:points} bodů poškození"
-		"quest_1231_var_desc"                              "Nasprejuj graffiti v části „Start CT“"
-		"quest_1232_var_desc"                              "Nasprejuj graffiti v části „Místo pro bombu A“"
-		"quest_1233_var_desc"                              "Nasprejuj graffiti v části „Jáma“"
-		"quest_1234_var_desc"                              "Nasprejuj graffiti v části „Místo pro bombu B“"
-		"quest_1235_var_desc"                              "Nasprejuj graffiti v části „Prostřední dveře“"
-		"quest_1236_var_desc"                              "Nasprejuj graffiti v části „Start T“"
-		"quest_1237_var_desc"                              "Nasprejuj graffiti v části „Lávka“"
-		"quest_1238_var_desc"                              "Nasprejuj graffiti v části „Horní tunel“"
-		"quest_1239_var_desc"                              "Nasprejuj graffiti v části „Dlouhé dveře“"
-		"quest_1240_var_desc"                              "Nasprejuj graffiti v části „Střed“"
-
-// OP11 Week 4 Sub-Missions		
-		"quest_1241_var_desc"                              "Vyhraj {d:points} zápas"
-		"quest_1242_var_desc"                              "Vyhraj {d:points} kol"
-		"quest_1243_var_desc"                              "Proveď zabití z části „Vnějšek“"
-		"quest_1244_var_desc"                              "Proveď zabití z části „Místo pro bombu A“"
-		"quest_1245_var_desc"                              "Proveď zabití z části „Vestibul“"
-		"quest_1246_var_desc"                              "Proveď zabití z části „Rampa“"
-		"quest_1247_var_desc"                              "Proveď zabití z části „Místo pro bombu B“"
-		"quest_1248_var_desc"                              "Proveď zabití z části „Tajný vchod“"
-		"quest_1249_var_desc"                              "Proveď zabití z části „Vnějšek“ (znovu!)"
-		"quest_1250_var_desc"                              "Proveď zabití z části „Start T“"
-		"quest_1251_var_desc"                              "Proveď zabití z vrcholku části „Silo“"
-		"quest_1252_var_desc"                              "Proveď zabití z části „Start CT“"
-		"quest_1253_var_desc"                              "{d:points}× proveď v <i>jediném zápase</i>: zabij nepřítele jednou z pěti prvních vystřelených kulek v kole"
-		"quest_1254_var_desc"                              "Zabij {d:points} nepřátel"
-
-// OP11 Week 5 Sub-Missions		
-		"quest_1255_var_desc"                              "Získej v <i>jediném zápase</i> {d:points} ocenění „Nejlepší hráč“"
-		"quest_1256_var_desc"                              "Vyhraj {d:points} kol"
-		"quest_1257_var_desc"                              "Zabij headshoty {d:points} nepřátel v <i>jediném zápase</i>"
-		"quest_1258_var_desc"                              "Zabij headshoty {d:points} nepřátel"
-		"quest_1259_var_desc"                              "Získej peníze, zatímco tvůj tablet nemá signál"
-		"quest_1260_var_desc"                              "Zakup si vylepšení tabletu „Větší přesnost“"
-		"quest_1261_var_desc"                              "Znič automatickou střílnu"
-		"quest_1262_var_desc"                              "Polož bombu na místě „Motel“"
-		"quest_1263_var_desc"                              "Uděl nepříteli poškození, zatímco stojíš na kameni"
-		
-// OP11 Week 6 Sub-Missions	
-		"quest_1264_var_desc"                              "Vyhraj {d:points} zápas"
-		"quest_1265_var_desc"                              "Vyhraj {d:points} kol"
-		"quest_1266_var_desc"                              "Dosáhni série 3 zabití"
-		"quest_1267_var_desc"                              "Dosáhni série 5 zabití"
-		"quest_1268_var_desc"                              "Dosáhni série 7 zabití"
-		"quest_1269_var_desc"                              "Zabij {d:points} nepřátel cizí zbraní v <i>jediném zápase</i>"
-		"quest_1270_var_desc"                              "Zabij {d:points} nepřátel cizí zbraní"
-
-// OP11 Week 7 Sub-Missions			
-		"quest_1271_var_desc"                              "Vyhraj {d:points} zápas"
-		"quest_1272_var_desc"                              "Vyhraj {d:points} kol"
-		"quest_1273_var_desc"                              "Proveď zabití z části „Prostřední dveře“"
-		"quest_1274_var_desc"                              "Proveď zabití z části „Lávka“"
-		"quest_1275_var_desc"                              "Proveď zabití z části „Vršek středu“"
-		"quest_1276_var_desc"                              "Proveď zabití z části „Jáma“"
-		"quest_1277_var_desc"                              "Proveď zabití z části „Místo pro bombu A“"
-		"quest_1278_var_desc"                              "Proveď zabití z části „Prostřední dveře“ (znovu!)"
-		"quest_1279_var_desc"                              "Proveď zabití z části „Místo pro bombu B“"
-		"quest_1280_var_desc"                              "Proveď zabití z části „Tunely“"
-		"quest_1281_var_desc"                              "Proveď zabití z části „Rampa T“"
-		"quest_1282_var_desc"                              "Proveď zabití z části „Start T“"
-		"quest_1283_var_desc"                              "Uděl v <i>jediném zápase</i> {d:points} bodů poškození, zatímco budeš ve vzduchu"
-		"quest_1284_var_desc"                              "Uděl {d:points} bodů poškození, zatímco budeš ve vzduchu"
-
-// OP11 Week 8 Sub-Missions			
-		"quest_1285_var_desc"                              "Vyhraj {d:points} zápas"
-		"quest_1286_var_desc"                              "Vyhraj {d:points} kol"
-		"quest_1287_var_desc"                              "Dosáhni úrovně s nožem"
-		"quest_1288_var_desc"                              "{d:points}× vylepši svoji zbraň (získej tu následující)"
-		"quest_1289_var_desc"                              "Hoď dýmovnici na část „Vršek středu“"
-		"quest_1290_var_desc"                              "Hoď dýmovnici na část „Banán“"
-		"quest_1291_var_desc"                              "Hoď molotov na část „Banán“"
-		"quest_1292_var_desc"                              "Oslep 3 nepřátele v jediném zápase"
-		"quest_1293_var_desc"                              "Uděl granáty {d:points} bodů poškození v jediném zápase"
-
-// OP11 Week 9 Sub-Missions			
-		"quest_1294_var_desc"                              "Zabij headshoty {d:points} nepřátel v <i>jediném zápase</i>"
-		"quest_1295_var_desc"                              "Zabij headshoty {d:points} nepřátel"
-		"quest_1296_var_desc"                              "Nasprejuj graffiti v části „Vodárna (vrcholek)“"
-		"quest_1297_var_desc"                              "Nasprejuj graffiti v části „Molo (kotva)“"
-		"quest_1298_var_desc"                              "Nasprejuj graffiti v části „Jeřáb“"
-		"quest_1299_var_desc"                              "Nasprejuj graffiti v části „Vysílač (střecha)“"
-		"quest_1300_var_desc"                              "Nasprejuj graffiti v části „Motel (tržiště)“"
-		"quest_1301_var_desc"                              "Nasprejuj graffiti v části „Kemp (grily)“"
-		"quest_1302_var_desc"                              "Nasprejuj graffiti v části „Maják“"
-		"quest_1303_var_desc"                              "Nasprejuj graffiti v části „Most“"
-		"quest_1304_var_desc"                              "Nasprejuj graffiti v části „Staveniště“"
-		"quest_1305_var_desc"                              "Zabij {d:points} nepřátel zbraní Desert Eagle v <i>jediném zápase</i>"
-		"quest_1306_var_desc"                              "{d:points}× vylepši svoji zbraň (získej tu následující)"
-
-// OP11 Week 10 Sub-Missions			
-		"quest_1307_var_desc"                              "Vyhraj {d:points} zápas"
-		"quest_1308_var_desc"                              "Vyhraj {d:points} kol"
-		"quest_1309_var_desc"                              "Proveď zabití z části „Hřiště“"
-		"quest_1310_var_desc"                              "Proveď zabití z části „Vrchní park“"
-		"quest_1311_var_desc"                              "Proveď zabití z části „Místo pro bombu A“"
-		"quest_1312_var_desc"                              "Proveď zabití z části „Odstřelovačské hnízdo“"
-		"quest_1313_var_desc"                              "Proveď zabití z části „Místo pro bombu B“"
-		"quest_1314_var_desc"                              "Proveď zabití z části „Start T“"
-		"quest_1315_var_desc"                              "Proveď zabití z části „Tunely“"
-		"quest_1316_var_desc"                              "Proveď zabití z části „Hřiště“ (znovu!)"
-		"quest_1317_var_desc"                              "Proveď zabití z části „Kašna“"
-		"quest_1318_var_desc"                              "Proveď zabití z části „Toalety“"
-		"quest_1319_var_desc"                              "Zabij headshoty {d:points} nepřátel v <i>jediném zápase</i>"
-		"quest_1320_var_desc"                              "Zabij headshoty {d:points} nepřátel"
-
-// OP11 Week 11 Sub-Missions			
-		"quest_1321_var_desc"                              "Vyhraj {d:points} zápas"
-		"quest_1322_var_desc"                              "Vyhraj {d:points} kol"
-		"quest_1323_var_desc"                              "Celkem {d:points}× použij adrenalin v <i>jediném zápase</i>"
-		"quest_1324_var_desc"                              "Celkem {d:points}× použij adrenalin"
-		"quest_1325_var_desc"                              "Uděl granáty {d:points} bodů poškození v <i>jediném zápase</i>"
-		"quest_1326_var_desc"                              "Uděl granáty {d:points} bodů poškození"
-
-// OP11 Week 12 Sub-Missions			
-		"quest_1327_var_desc"                              "Vyhraj {d:points} zápas"
-		"quest_1328_var_desc"                              "Vyhraj {d:points} kol"
-		"quest_1329_var_desc"                              "Dosáhni série 3 zabití"
-		"quest_1330_var_desc"                              "Dosáhni série 4 zabití"
-		"quest_1331_var_desc"                              "Dosáhni série 5 zabití"
-		"quest_1332_var_desc"                              "Zabij nepřátele {d:points} různými zbraněmi v <i>jediném zápase</i>"
-		"quest_1333_var_desc"                              "Zabij nepřátele {d:points} různými zbraněmi (zbraně se mohou opakovat napříč zápasy)"
-
-// OP11 Week 13 Sub-Missions			
-		"quest_1334_var_desc"                              "Vyhraj {d:points} zápas"
-		"quest_1335_var_desc"                              "Vyhraj {d:points} kol"
-		"quest_1336_var_desc"                              "Proveď zabití z části „Střed“"
-		"quest_1337_var_desc"                              "Proveď zabití z části „Místo pro bombu A“"
-		"quest_1338_var_desc"                              "Proveď zabití z části „Start CT“"
-		"quest_1339_var_desc"                              "Proveď zabití z části „Dům“"
-		"quest_1340_var_desc"                              "Proveď zabití z části „Místo pro bombu B“"
-		"quest_1341_var_desc"                              "Proveď zabití z části „Ruiny“"
-		"quest_1342_var_desc"                              "Proveď zabití z části „Start T“"
-		"quest_1343_var_desc"                              "Proveď zabití z části „Hlavní sál“"
-		"quest_1344_var_desc"                              "Proveď zabití z části „Místo pro bombu A“ (znovu!)"
-		"quest_1345_var_desc"                              "Proveď zabití z části „Střed“ (znovu!)"
-		"quest_1346_var_desc"                              "Nasprejuj graffiti na oblouk západně od části „Kasba“"
-		"quest_1347_var_desc"                              "Nasprejuj graffiti na točitém schodišti poblíž části „Kasba“"
-		"quest_1348_var_desc"                              "Nasprejuj graffiti v části „Kupole“"
-		"quest_1349_var_desc"                              "Nasprejuj graffiti na značku heliportu v části „Základna“"
-		"quest_1350_var_desc"                              "Nasprejuj graffiti na loď v části „Vraky“"
-		"quest_1351_var_desc"                              "Nasprejuj graffiti v hotelu Aurora v části „Město“"
-		"quest_1352_var_desc"                              "Nasprejuj graffiti na silo č. 3 v části „Nádrže“"
-		"quest_1353_var_desc"                              "Nasprejuj graffiti v části „Maják (věž)“"
-		"quest_1354_var_desc"                              "Nasprejuj graffiti přímo na molo v části „Molo“"
-
-// OP11 Week 14 Sub-Missions			
-		"quest_1355_var_desc"                              "Vyhraj {d:points} zápas"
-		"quest_1356_var_desc"                              "Vyhraj {d:points} kol"
-		"quest_1357_var_desc"                              "Zabij {d:points} nepřátel s přiblížením v <i>jediném zápase</i>"
-		"quest_1358_var_desc"                              "Zabij {d:points} nepřátel s přiblížením"
-		"quest_1359_var_desc"                              "Celkem {d:points}× proveď zabití v prvních 30 sekundách kola"
-		"quest_1360_var_desc"                              "Zabij {d:points} nepřátel"
-
-// OP11 Week 15 Sub-Missions			
-		"quest_1361_var_desc"                              "Vyhraj {d:points} zápas"
-		"quest_1362_var_desc"                              "Vyhraj {d:points} kol"
-		"quest_1363_var_desc"                              "Celkem {d:points}× v <i>jediném zápase</i> zabij vedoucího hráče"
-		"quest_1364_var_desc"                              "Zabij {d:points} nepřátel"
-		"quest_1365_var_desc"                              "Uděl {d:points} bodů poškození v <i>jediném zápase</i>"
-		"quest_1366_var_desc"                              "Uděl {d:points} bodů poškození"
-
-// OP11 Week 16 Sub-Missions	
-		"quest_1367_var_desc"                              "Vyhraj {d:points} zápas"
-		"quest_1368_var_desc"                              "Vyhraj {d:points} kol"
-		"quest_1369_var_desc"                              "Zabij {d:points} nepřátel v <i>jediném zápase</i>, zatímco jsi vybaven jedním z agentů operace Riptide"
-		"quest_1370_var_desc"                              "Zabij {d:points} nepřátel"
-		"quest_1371_var_desc"                              "Zabij {d:points} nepřátel zbraní z jedné z kolekcí operace Riptide"
-		"quest_1372_var_desc"                              "Zabij {d:points} nepřátel"
-
-
-
-		"quest_default_hud_var_desc" "{s:commandverb} {s:target} {s:actions}"
-		"quest_weapon_hud_var_desc" "{s:commandverb} {s:actions} pomocí: {s:weapon}"
-		"quest_single_hud_var_desc"	"{s:commandverb} {s:actions} pomocí: {s:target}<br>(v rámci jednoho zápasu)"
-		"quest_weapon_single_hud_var_desc" "{s:commandverb} {s:actions} pomocí: {s:weapon}<br>(v rámci jednoho zápasu)"
-	
-		//hud exceptions:
-		"quest_931_hud_var_desc"	"Zabíjej nepřátele pomocí: {s:weapon}"
-		"quest_932_hud_var_desc"	"Zabíjej nepřátele, zatímco jsi ve vzduchu"
-		"quest_933_hud_var_desc"	"Vyhrávej kola"
-		"quest_934_hud_var_desc"	"Zabíjej nepřátele pomocí: {s:weapon}"
-		"quest_935_hud_var_desc"	"Zabíjej nepřátele pomocí: {s:weapon}<br>(v rámci jednoho zápasu)"
-		"quest_936_hud_var_desc"	"Zabíjej nepřátele pomocí: {s:weapon}"
-		"quest_937_hud_var_desc"	"Sprejuj graffiti"
-		"quest_937_hud_var_desc_CT"	"Sprejuj graffiti v částech „Silo“ nebo „Automaty“"
-		"quest_937_hud_var_desc_T"	"Sprejuj graffiti v částech „Nebe“ nebo „Garáž“"
-        "quest_938_hud_var_desc"	"Zabíjej vedoucí hráče"
-        "quest_939_hud_var_desc"	"Zabíjej nepřátele pomocí: {s:weapon}"
-        "quest_940_hud_var_desc"	"Vyhrávej kola"
-        "quest_941_hud_var_desc"	"Vyhrávej kola s pistolemi"
-        "quest_942_hud_var_desc"	"Zabíjej nepřátele pomocí: {s:weapon}<br>(v rámci jednoho zápasu)"
-        "quest_943_hud_var_desc"	"Zabíjej nepřátele"
-        "quest_944_hud_var_desc"	"Utrácej peníze"
-        "quest_945_hud_var_desc"	"Zabíjej nepřátele"
-        "quest_946_hud_var_desc"	"Vyhrávej kola"
-        "quest_947_hud_var_desc"	"Vyhrávej kola"
-		"quest_948_hud_var_desc"	"Zachraňuj rukojmí, nebo zabíjej zachránce"
-		"quest_948_hud_var_desc_CT"	"Zachraňuj rukojmí"
-		"quest_948_hud_var_desc_T"	"Zabíjej zachránce rukojmích"
-        "quest_949_hud_var_desc"	"Zabíjej nepřátele pomocí: {s:weapon}"
-        "quest_950_hud_var_desc"	"Zabíjej nepřátele těžkými zbraněmi"	
-        "quest_951_hud_var_desc"	"Zabíjej nepřátele pomocí: {s:weapon}"	
-        "quest_952_hud_var_desc"	"Vyhrávej kola"	
-        "quest_953_hud_var_desc"	"Vyhrávej kola"	
-        "quest_954_hud_var_desc"	"Zabíjej nepřátele pomocí: {s:target} (v rámci jednoho zápasu)"
-		"quest_955_hud_var_desc" 	"Spřátel se se slepicemi pomocí klávesy [{s:bind_use}] a <br> {d:points} sekund je ubraň"
-		"quest_956_hud_var_desc" 	"Plachti s padákem"
-		"quest_957_hud_var_desc" 	"Zabíjej nepřátele pomocí: {s:weapon}"
-		"quest_958_hud_var_desc" 	"Vyhrávej kola"
-		"quest_959_hud_var_desc" 	"Zabíjej nepřátele"
-		"quest_960_hud_var_desc" 	"Zabíjej nepřátele pomocí: {s:weapon}"
-		"quest_961_hud_var_desc"	"Zabíjej nepřátele pomocí pistolí"
-		"quest_962_hud_var_desc"	"Zabíjej nepřátele, aniž bys nakupoval<br>(v rámci jednoho zápasu)"
-		"quest_963_hud_var_desc"	"Zabíjej nepřátele pomocí: {s:weapon}"
-		"quest_964_hud_var_desc"	"Vyhrávej kola s pistolemi"
-		"quest_965_hud_var_desc"    "Zabíjej nepřátele"
-		"quest_966_hud_var_desc" 	"Získávej peníze"
-		"quest_967_hud_var_desc"	"Zabíjej nepřátele pomocí: {s:weapon}"
-		"quest_968_hud_var_desc"    "Zabíjej nepřátele pomocí odstřelovacích pušek"
-		"quest_969_hud_var_desc"	"Zabíjej nepřátele bez přiblížení pomocí: {s:weapon}"
-		"quest_970_hud_var_desc"	"Vyhrávej kola"
-		"quest_971_hud_var_desc"	"Zabíjej nepřátele"
-		"quest_972_hud_var_desc"    "Zabíjej nepřátele headshoty<br>(v rámci jednoho zápasu)"
-		"quest_973_hud_var_desc" 	"Zabíjej nepřátele"
-		"quest_974_hud_var_desc" 	"Zabíjej nepřátele headshoty"
-		"quest_975_hud_var_desc"    "Zabíjej nepřátele pomocí zbraní CT"
-		"quest_976_hud_var_desc" 	"Vyhrávej kola"
-		"quest_977_hud_var_desc"	"Vyhrávej kola"
-		"quest_978_hud_var_desc"	"Zabíjej nepřátele pomocí: {s:weapon}"
-		"quest_979_hud_var_desc" 	"Dosáhni série 4 zabití"
-        "quest_980_hud_var_desc" 	"Umísti se na čtvrtém nebo lepším místě"
-		"quest_981_hud_var_desc" 	"Zabíjej nepřátele headshoty pomocí: {s:weapon}"		
-		"quest_982_hud_var_desc"	"Zabíjej nepřátele headshoty pomocí: {s:weapon}<br>(v rámci jednoho zápasu)"	
-		"quest_983_hud_var_desc" 	"Zabíjej nepřátele headshoty"
-		"quest_984_hud_var_desc"    "Získávej ocenění „Nejlepší hráč“"
-		"quest_985_hud_var_desc" 	"Zabíjej nepřátele pomocí výchozí pistole"
-		"quest_986_hud_var_desc" 	"Zabíjej nepřátele pomocí: {s:weapon}"
-		"quest_987_hud_var_desc"	"Zabíjej nepřátele"
-		"quest_987_hud_var_desc_CT"	"Zabíjej nepřátele pomocí: AK-47"
-		"quest_987_hud_var_desc_T"	"Zabíjej nepřátele pomocí: M4A4 nebo M4A1-S"
-		"quest_988_hud_var_desc" 	"Zabíjej nepřátele pomocí nože"
-		"quest_989_hud_var_desc"	"Prováděj poškození granáty"
-		"quest_990_hud_var_desc" 	"Prováděj esa"
-		"quest_991_hud_var_desc_CT" "Zabíjej nepřátele pomocí: Five-Seven"
-		"quest_991_hud_var_desc_T" 	"Zabíjej nepřátele pomocí: Tec-9"
-		"quest_991_hud_var_desc" 	"Zabíjej nepřátele pomocí: Tec-9 nebo Five-Seven"
-		"quest_992_hud_var_desc" 	"Zabíjej nepřátele pomocí: Dálkově ovládaná výbušnina"
-		"quest_993_hud_var_desc" 	"Prováděj poškození granáty"
-		"quest_994_hud_var_desc" 	"Zabíjej nepřátele"
-		"quest_995_hud_var_desc" 	"Vyhrávej kola"
-		"quest_996_hud_var_desc"	"Zabíjej nepřátele"
-		"quest_997_hud_var_desc_CT"	"Zabíjej nepřátele pomocí: FAMAS"
-		"quest_997_hud_var_desc_T"	"Zabíjej nepřátele pomocí: Galil AR"
-		"quest_997_hud_var_desc"	"Zabíjej nepřátele pomocí: Galil AR nebo FAMAS"
-		"quest_998_hud_var_desc" 	"Zabíjej nepřátele pomocí: {s:weapon}"
-		"quest_999_hud_var_desc"	"Zabíjej nepřátele pomocí: {s:weapon}"
-		"quest_1000_hud_var_desc" 	"Nič nepřátelské drony"
-		"quest_1001_hud_var_desc"   "Získávej ocenění „Nejlepší hráč“<br>(v rámci jednoho zápasu)"
-		"quest_1002_hud_var_desc" 	"Prováděj série zabití"
-		"quest_1003_hud_var_desc"   "Zabíjej nepřátele pomocí: {s:weapon}"
-		"quest_1004_hud_var_desc"   "Zabíjej nepřátele pomocí: {s:weapon}"
-		"quest_1005_hud_var_desc" 	"Vyhrávej kola"
-		"quest_1006_hud_var_desc" 	"Zabíjej nepřátele"
-		"quest_1007_hud_var_desc" 	"Nič zamčené dveře"
-		"quest_1008_hud_var_desc_CT" 	"Zabíjej nepřátele pomocí: M4A4 nebo M4A1-S"
-		"quest_1008_hud_var_desc_T"  	"Zabíjej nepřátele pomocí: AK-47"
-		"quest_1008_hud_var_desc" 	"Zabíjej nepřátele pomocí: AK-47 nebo M4A4"
-		"quest_1009_hud_var_desc"	"Vyhrávej kola"
-		"quest_1010_hud_var_desc"	"Zabíjej nepřátele pomocí: {s:weapon}"
-		"quest_1011_hud_var_desc" 	"Vyhraj 5 kol v první polovině zápasu"
-		"quest_1012_hud_var_desc"	"Stoupej na odrážecí miny"
-		"quest_1013_hud_var_desc" 	"Zabíjej nepřátele pomocí: {s:weapon}"
-		"quest_1014_hud_var_desc"   "Zabíjej nepřátele pomocí: {s:weapon}"
-		"quest_1015_hud_var_desc"   "Zabíjej nepřátele, aniž bys utratil víc než 2000 $"
-		"quest_1016_hud_var_desc"   "Měj u sebe 3000 $"
-		"quest_1017_hud_var_desc" 	"Vyhrávej kola"
-		"quest_1018_hud_var_desc" 	"Zabíjej nepřátele"
-		"quest_1019_hud_var_desc" 	"Zabíjej nepřátele pomocí samopalů"
-		"quest_1020_hud_var_desc" 	"Zabíjej nepřátele pomocí: {s:weapon}"
-		"quest_1021_hud_var_desc" 	"Masakruj slepice"
-		"quest_1022_hud_var_desc" 	"Odpaluj barely"
-		"quest_1023_hud_var_desc" 	"Vyhrávej kola"
-		"quest_1024_hud_var_desc" 	"Nič tabulky skla"
-		"quest_1025_hud_var_desc" 	"Vyhrávej kola"
-		"quest_1027_hud_var_desc"	"Sprejuj graffiti<br>na nepřátelském startu"
-		"quest_1028_hud_var_desc"	"Zabíjej nepřátele z části<br>„Banán“ nebo „Apartmány“"
-		"quest_1029_hud_var_desc"	"Házej dýmovnice"
-		"quest_1029_hud_var_desc_CT"	"Házej dýmovnice na část<br>„Apartmány“ nebo „Rampa T“"
-		"quest_1029_hud_var_desc_T"	"Házej dýmovnice na část<br>„Odstřelovačské hnízdo“ nebo „Schody“"
-		"quest_1098_hud_var_desc"               "Vyhrávej kola"
-		"quest_1032_hud_var_desc"               "Vyhrávej kola"
-		"quest_1033_hud_var_desc"               "Zabíjej nepřátele"
-		"quest_1034_hud_var_desc"               "Zjisti, co má Phoenix za lubem"
-		"quest_1035_hud_var_desc"               "Zabíjej nepřátele pomocí: AK-47, M4A4 nebo M4A1-S"
-		"quest_1036_hud_var_desc"               "Vyhrávej kola"
-		"quest_1037_hud_var_desc"               "Zabíjej nepřátele"
-		"quest_1099_hud_var_desc"               "Získávej ocenění „Nejlepší hráč“"
-		"quest_1038_hud_var_desc"               "Vyhrávej kola"
-		"quest_1039_hud_var_desc"               "Zabíjej nepřátele pomocí: různé pistole"
-		"quest_1040_hud_var_desc"               "Zabíjej nepřátele pomocí: pistole"
-		"quest_1041_hud_var_desc"               "Zabíjej nepřátele pomocí: Desert Eagle"
-		"quest_1042_hud_var_desc"               "Vyhrávej kola"
-		"quest_1043_hud_var_desc"               "Zabíjej nepřátele"
-		"quest_1044_hud_var_desc"               "Zabíjej nepřátele ze vzdálenosti 15 nebo více metrů"
-		"quest_1045_hud_var_desc"               "Zabíjej nepřátele pomocí: libovolná odstřelovací puška"
-		"quest_1046_hud_var_desc"               "Zabíjej nepřátele headshoty"
-		"quest_1047_hud_var_desc"               "Zabíjej nepřátele pomocí: M249"
-		"quest_1048_hud_var_desc"               "Uděluj poškození granáty"
-		"quest_1049_hud_var_desc"               "Získávej peníze"
-		"quest_1050_hud_var_desc"               "Vyhrávej kola"
-		"quest_1051_hud_var_desc"               "Zabíjej nepřátele"
-		"quest_1052_hud_var_desc"               "Vyber si nepřátelskou kartu"
-		"quest_1053_hud_var_desc"               "Házej dýmovnice"
-		"quest_1053_hud_var_desc_T"             "Házej dýmovnice na část „Garáž“ nebo „Hlavní vchod“"
-		"quest_1053_hud_var_desc_CT"            "Házej dýmovnice na část „Řídící místnost“ nebo „Budka“"
-		"quest_1054_hud_var_desc"               "Vyhrávej kola"
-		"quest_1055_hud_var_desc"               "Zabíjej nepřátele"
-		"quest_1056_hud_var_desc"               "Zabíjej nepřátele z části „Tunel“ nebo „Palác“"
-		"quest_1057_hud_var_desc"               "Zabíjej nepřátele"
-		"quest_1058_hud_var_desc"               "Vyhrávej kola"
-		"quest_1059_hud_var_desc"               "Zabíjej nepřátele"
-		"quest_1060_hud_var_desc"               "Zabíjej nepřátele pomocí: {s:weapon}"
-		"quest_1061_hud_var_desc"               "Zabíjej nepřátele pomocí: {s:weapon}"
-		"quest_1062_hud_var_desc"               "Vyhrávej kola"
-		"quest_1063_hud_var_desc"               "Zabíjej nepřátele"
-		"quest_1064_hud_var_desc"               "Vyber si kartu pro nejlepšího hráče"
-		"quest_1065_hud_var_desc"               "Sprejuj graffiti"
-		"quest_1065_hud_var_desc_T"             "Sprejuj graffiti v části „Střed“"
-		"quest_1065_hud_var_desc_CT"            "Sprejuj graffiti v části „T horní“ nebo „Vnějšek“"
-		"quest_1100_hud_var_desc"               "Vyhrávej kola"
-		"quest_1066_hud_var_desc"               "Vyhrávej kola"
-		"quest_1067_hud_var_desc"               "Zabíjej headshoty zbraní AUG"
-		"quest_1068_hud_var_desc"               "Oslepuj nepřátele granáty"
-		"quest_1069_hud_var_desc"               "Sprejuj graffiti"
-		"quest_1069_hud_var_desc_T"             "Sprejuj graffiti v části „Lávka“ nebo „Horní tunel“"
-		"quest_1069_hud_var_desc_CT"            "Sprejuj graffiti v části „Spodní tunel“ nebo „Krátké schody“"
-		"quest_1101_hud_var_desc"               "Vyhrávej kola"
-		"quest_1070_hud_var_desc"               "Vyhrávej kola"
-		"quest_1071_hud_var_desc"               "Ze vzdálenosti menší než 10 metrů"
-		"quest_1072_hud_var_desc"               "Zabíjej nepřátele ze vzdálenosti menší než 10 metrů"
-		"quest_1073_hud_var_desc"               "Zabíjej nepřátele"
-		"quest_1074_hud_var_desc"               "Vyhrávej kola"
-		"quest_1075_hud_var_desc"               "Zabíjej nepřátele"
-		"quest_1076_hud_var_desc"               "Zabíjej nepřátele headshoty"
-		"quest_1077_hud_var_desc"               "Zabíjej nepřátele pomocí: {s:weapon}"
-		"quest_1102_hud_var_desc"               "Vyhrávej kola"
-		"quest_1078_hud_var_desc"               "Vyhrávej kola"
-		"quest_1079_hud_var_desc"               "Zabíjej nepřátele pomocí: {s:weapon}"
-		"quest_1080_hud_var_desc"               "Zabíjej slepice"
-		"quest_1081_hud_var_desc"               "Zabíjej nepřátele"
-		"quest_1082_hud_var_desc"               "Vyhrávej kola"
-		"quest_1083_hud_var_desc"               "Zabíjej nepřátele"
-		"quest_1084_hud_var_desc"               "Zabíjej nepřátele"
-		"quest_1085_hud_var_desc"               "Uděluj poškození granáty"
-		"quest_1085_v2_hud_var_desc"     	    "Uděluj poškození granáty"
-		"quest_1086_hud_var_desc"               "Vyhrávej kola"
-		"quest_1087_hud_var_desc"               "Zabíjej nepřátele"
-		"quest_1088_hud_var_desc"               "Zabíjej nepřátele z určených částí mapy"
-		"quest_1088_hud_var_desc_T"             "Zabíjej nepřátele nacházející se na místě pro bombu A nebo B"
-		"quest_1088_hud_var_desc_CT"            "Zabíjej nepřátele z místa pro bombu A nebo B"
-		"quest_1089_hud_var_desc"               "Zabíjej nepřátele s přiblížením"
-		"quest_1089_v2_hud_var_desc"               "Zabíjej nepřátele s přiblížením"
-		"quest_1090_hud_var_desc"               "Vyhrávej kola"
-		"quest_1091_hud_var_desc"               "Zabíjej nepřátele"
-		"quest_1092_hud_var_desc"               "Získávej body při používání bonusových zbraní"
-		"quest_1092_v2_hud_var_desc"            "Získávej body při používání bonusových zbraní"
-		"quest_1093_hud_var_desc"               "Utrácej peníze"
-		"quest_1094_hud_var_desc"               "Vyhrávej kola"
-		"quest_1095_hud_var_desc"               "Zabíjej nepřátele"
-		"quest_1095_v2_hud_var_desc"            "Zabíjej nepřátele pomocí: UMP-45"
-		"quest_1096_hud_var_desc"               "Vyhrávej kola"
-		"quest_1097_hud_var_desc"               "Dokonči misi"
-		"quest_1097_v2_hud_var_desc"            "Dostaň se hlouběji do základny Phoenixu"
-		"quest_1103_hud_var_desc"               "Oslepuj nepřátele granáty"
-
-
-
-
-/////////////////////////////////////////////////////////////////
-
-
-
-// win quests
-
-		"Quest_Win_a_Mode"										"Zneškodnění hrozby: <b>%gamemode%</b>"
-		"Quest_Win_a_Mode_desc"								"Vyhraj jeden zápas v módu <b>%gamemode%</b>."
-
-		"Quest_Win_a_Mapgroup"								"Plnění rozkazů: <b>%gamemode%</b>, <b>%mapgroup%</b>"
-		"Quest_Win_a_Mapgroup_desc"						"Dosáhni %actions% na mapách z kategorie „%mapgroup%“ v módu <b>%gamemode%</b>."
-
-		"Quest_Win_a_Map"											"Plnění rozkazů: <b>%gamemode%, %map%</b>"
-		"Quest_Win_a_Map_desc"								"Dosáhni %actions% na mapě <b>%map%</b> v módu <b>%gamemode%</b>."
-
-		"Quest_Win_Rounds_Map"								"Plné nasazení: <b>%gamemode%, %mapgroup%</b>"
-		"Quest_Win_Rounds_Map_desc"						"Dosáhni %actions% na mapách z kategorie „%mapgroup%“ v módu <b>%gamemode%</b>."
-		"Quest_Win_Rounds_Map_Short"						"Úspěšná mise"
-
-// equipment quests
-
-		"Quest_Weapon_Mode"										"Zbraňový specialista: <b>%gamemode%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Mode_desc"							"Proveď %actions%%optional_target% pomocí zbraně <b>%weapon%</b> v módu <b>%gamemode%</b>."
-		
-		"Quest_Weapon_Mode_single_desc"				"V módu <b>%gamemode%</b> zabij nepřítele pomocí <b>%weapon%</b>."
-
-// equipment + mapgroup quests
-
-		"Quest_Weapon_Mapgroup"							"Zbraňový specialista: <b>%mapgroup%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Mapgroup_desc"					"Proveď %actions%%optional_target% pomocí zbraně <b>%weapon%</b> na mapách z kategorie „%mapgroup%“ v módu <b>%gamemode%</b>."
-		"Quest_WeaponDamage_Mapgroup_desc"					"Uděl nepřátelům %actions%%optional_target% pomocí zbraně <b>%weapon%</b> na mapách z kategorie „%mapgroup%“ v módu <b>%gamemode%</b>."
-
-	"Quest_Weapon_Within_3_Mapgroup"						"Zkouška: <b>%mapgroup%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Within_3_Mapgroup_desc"				"Proveď %actions%%optional_target% pomocí zbraně <b>%weapon%</b> a <i>svých prvních 3 kulek kola</i> na mapách z kategorie „%mapgroup%“ v módu <b>%gamemode%</b>."
-
-	"Quest_Weapon_Map"									"Zbraňový specialista: <b>%map%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Map_desc"								"Proveď %actions%%optional_target% pomocí zbraně <b>%weapon%</b> na mapě %map% v módu <b>%gamemode%</b>."
-		"Quest_Weapon_Map_Team_desc"		"Jako <b>%team%</b> proveď %actions%%optional_target% pomocí zbraně <b>%weapon%</b> na mapě %map% v módu <b>%gamemode%</b>."		
-		"Quest_Weapon_Mapgroup_Team_desc"		"Jako <b>%team%</b> proveď %actions%%optional_target% pomocí zbraně <b>%weapon%</b> na mapách z kategorie „%mapgroup%“ v módu <b>%gamemode%</b>."		
-
-		"Quest_WepUpgrade_Mapgroup"					"Vylepšování zbraní: <b>%mapgroup%</b>"
-
-	"Quest_Unique_Weapon_Mapgroup"							"Expert přes zbraně: <b>%mapgroup%</b>"
-		"Quest_Unique_Weapon_Mapgroup_desc"					"Na mapách z kategorie „%mapgroup%“ v módu <b>%gamemode%</b> získej postup v misi za každé %action% <i>provedené jinou zbraní</i>."
-		"Quest_Unique_Weapon_Mapgroup_Team_desc"					"Jako <b>%team%</b> na mapách z kategorie „%mapgroup%“ v módu <b>%gamemode%</b> získej postup v misi za každé %action% <i>provedené jinou zbraní</i>."
-
-		"Quest_Defend_Bomb_Mapgroup_desc"					"Proveď %actions% <i>poté, co je položena bomba</i>, na mapách z kategorie „%mapgroup%“ v módu <b>%gamemode%</b>."
-
-// Hostage quests
-
-	 "Quest_Rescue_Map"								"Osvobození rukojmích: <b>%map%</b>"
-	 "Quest_Rescue_Map_Desc"						"Proveď %actions% na mapě %map% v módu <b>%gamemode%</b>."
-
-// Plant bomb quests
-
-	 "Quest_PlantBomb_Mapgroup"									"Expert přes výbušniny: <b>%mapgroup%</b>"
-	 "Quest_PlantBomb_Mapgroup_Desc"						"Proveď %actions% na mapách z kategorie „%mapgroup%“ v módu <b>%gamemode%</b>."
-
-
-// Assassination
-
-	 "Quest_Assassination"									"Vražda cíle, který je %victim_team%: <b>%target%</b>"
-	 "Quest_Assassination_desc"							"Najdi a zabij cíl jménem <b>%target%</b>, který je jako %victim_team% na mapě %map% v módu <b>%gamemode%</b>."
-
-	 "quest_target_turner"									"Turner"
-	 "quest_target_jackson"									"Jackson"
-	 "quest_target_chapel"									"Chapel"	 
-	 "quest_target_sergei"									"Sergei"	 
-
-	 "quest_assassination_you_are_target"					"Nyní jsi cílem některého z hráčů.\nTvé jméno je %s1."
-	 "quest_assassination_target_on_server"					"Hráč má za úkol zavraždit cíl známý pod jménem %s1"
-	 "quest_assassination_target_on_server_has_quest"		"Máš za úkol zavraždit cíl známý pod jménem %s1"
-	 "quest_assassination_target_killed"					"%s1 byl zavražděn!"
-	 "quest_assassination_no_longer_target"					"Již nejsi cíl známý pod jménem %s1." 
-
-// Income
-	 "Quest_Income_Mapgroup"								"Hrubý příjem: <b>1 000 000 dolarů</b>"
-	 "Quest_Income_Mapgroup_desc"						"Získej celkem 1 000 000 dolarů na mapách z kategorie „%mapgroup%“ v módu <b>%gamemode%</b>."
-	 "Quest_Income_Mapgroup_Team_desc"			"Jako <b>%team%</b> získej celkem 1 000 000 dolarů na mapách z kategorie „%mapgroup%“ v módu <b>%gamemode%</b>."
-
-	 "Quest_Spend_Mapgroup_Team_desc"			"Jako <b>%team%</b> utrať celkem 1 000 000 dolarů na mapách z kategorie „%mapgroup%“ v módu <b>%gamemode%</b>."
-
-
-//	deathmatch bonus points
-
-		"Quest_DMBonusPoints_Mapgroup"				"Univerzální voják: <b>%mapgroup%</b>"
-		"Quest_DMBonusPoints_Mapgroup_desc"		"Získávej body za používání bonusových zbraní v módu <b>Deathmatch na mapách z kategorie „%mapgroup%“</b>."
-
-		"Quest_DMBonusPoints_Map"							"Univerzální voják: <b>%map%</b>"
-		"Quest_DMBonusPoints_Map_desc"				"Získávej body za používání bonusových zbraní v módu <b>Deathmatch na mapě %map%</b>."
-
-// play quests
-
-		"Quest_Kills_Mapgroup"							"Likvidace cíle: <b>%gamemode%</b>, <b>%mapgroup%</b>"
-		"Quest_Kills_Mapgroup_desc"					"Proveď %actions%%optional_target% na mapách z kategorie „%mapgroup%“ v módu <b>%gamemode%</b>."
-		"Quest_Kills_Mapgroup_cond_desc"		"Proveď %actions%%optional_target%, <i>%condition%</i> na mapách z kategorie „%mapgroup%“ v módu <b>%gamemode%</b>."
-		"Quest_Kills_Mapgroup_Team_desc"		"Jako <b>%team%</b> proveď %actions%%optional_target%, <i>%condition%</i> na mapách z kategorie „%mapgroup%“ v módu <b>%gamemode%</b>."		
-
-		"Quest_Kills_Mapgroup_Victim_Team_desc"		"Jako <b>%team%</b> proveď %actions% hráče, který je %victim_team% na mapách z kategorie „%mapgroup%“ v módu <b>%gamemode%</b>."
-
-		"Quest_Flashbang_Mapgroup_Team_desc"		"Jako <b>%team%</b> proveď %actions%%optional_target% na mapách z kategorie „%mapgroup%“ v módu <b>%gamemode%</b>."		
-
-
-		"Quest_Burn_Mapgroup_desc"					"Uděl %actions% <i>hořením</i> nepřátelům na mapách z kategorie „%mapgroup%“ v módu <b>%gamemode%</b>."
-
-		"Quest_Headshots_Mapgroup"							"Headshoty: <b>%gamemode%</b>, <b>%mapgroup%</b>"
-		"Quest_Headshots_Mapgroup_desc"					"Proveď %actions% headshotem na mapách z kategorie „%mapgroup%“ v módu <b>%gamemode%</b>."
-
-		"Quest_Kills_Map"										"Likvidace cíle: <b>%gamemode%</b>, <b>%map%</b>"
-		"Quest_Kills_Map_desc"							"Proveď %actions%%optional_target% na mapách z kategorie „%mapgroup%“ v módu <b>%gamemode%</b>."
-
-		"Quest_Kills_Mode"								"Likvidace cíle: <b>%gamemode%</b>"
-		"Quest_Kills_Mode_desc"						"Proveď %actions%%optional_target% v módu <b>%gamemode%</b>."
-
-// chicken quests
-
-	"Quest_Chicken_Kills_Mapgroup"				"Slepičí polévka: <b>%gamemode%</b>, <b>%mapgroup%</b>"
-	"Quest_Chicken_Kills_Map"							"Slepičí polévka: <b>%gamemode%</b>, <b>%map%</b>"
-	"Quest_Chicken_Kills"						"Slepičí polévka"
-
-// generic string tokens
-
-	"quest_team_ct"										"Counter-Terorista"
-	"quest_team_terrorist"								"Terorista"
-	"quest_complete_the_match"							"Pro dokončení mise dohraj zápas"
-	"quest_complete_the_match_uncommitted"				"<img src='file://{images}/icons/ui/info.svg' class=''/>Pro uložení postupu mise dohraj zápas"
-
-// Coop quests
-
-	"Quest_Guardian_Bomb"									"Kooperativní úkol módu Stráž: <b>%map%</b>, <b>%weapon%</b>"
-	"Quest_Guardian_Bomb_Desc"								"Kooperativní úkol módu Stráž: Jako <b>%team%</b> společně s partnerem ochraň místo pro bombu na mapě <b>%map%</b> před nepřáteli.<br><br>Dosáhni <b>%action%</b> tím, že pomocí zbraně <b>%weapon%</b> provedeš <b>%kills%</b> zabití. <b>%extradetails%</b>"
-	"Quest_Guardian_Desc_op08"								"Kooperativní úkol módu Stráž: Jako <b>%team%</b> společně s partnerem ochraň místo pro bombu na mapě <b>%map%</b>.<br><br>Dosáhni <b>%action%</b> tím, že pomocí <b>%weapon%</b> provedeš <b>%kills%</b> %killtype%. <b>%extradetails%</b>%presence%"
-
-	"Quest_Guardian_Desc_op09"								"<b>Stráž: {s:location}</b> | {s:commandverb} {s:kills} {s:killtype} pomocí zbraně {s:weapon}."
-	"Quest_CoopMission_Desc_op09"							"<b>Zásah: {s:location}</b> | Společně s partnerem splňte úkol mapy."
-	"Quest_Guardian_Desc_op09_extra_equip_1_var_desc"		"<b>Stráž: {s:location}</b> | {s:commandverb} {s:kills} {s:killtype} pomocí zbraně {s:weapon}. Hráči získají do začátku předmět <b>{s:extraequip0}</b>."
-	"Quest_Guardian_Desc_op09_extra_equip_2_var_desc"		"<b>Stráž: {s:location}</b> | {s:commandverb} {s:kills} {s:killtype} pomocí zbraně {s:weapon}. Hráči získají do začátku předmět <b>{s:extraequip0}</b> a <b>{s:extraequip1}</b>."
-
-	"Quest_Guardian_Desc_op10"								"<b>Stráž: {s:location}</b> | {s:commandverb} {s:kills} {s:killtype} pomocí zbraně {s:weapon}."
-	"Quest_CoopMission_Desc_op10"							"<b>Zásah: {s:location}</b> | Společně s partnerem splňte úkol mapy."
-	"Quest_Guardian_Desc_op10_extra_equip_1_var_desc"		"<b>Stráž: {s:location}</b> | {s:commandverb} {s:kills} {s:killtype} pomocí zbraně {s:weapon}. Hráči získají do začátku předmět <b>{s:extraequip0}</b>."
-	"Quest_Guardian_Desc_op10_extra_equip_2_var_desc"		"<b>Stráž: {s:location}</b> | {s:commandverb} {s:kills} {s:killtype} pomocí zbraně {s:weapon}. Hráči získají do začátku předmět <b>{s:extraequip0}</b> a <b>{s:extraequip1}</b>."
-
-	"Quest_Coop_Desc_Rescue"								"Kooperativní mise módu Zásah: Jako <b>%team%</b> společně s partnerem <b>zachraň rukojmí</b> na mapě <b>%map%</b>.<br><br><b>%extradetails%</b>"
-	"Quest_Coop_Desc_Recon"									"Kooperativní mise módu Zásah: Jako <b>%team%</b> společně s partnerem <b>získej informace</b> v <b>%map%</b>.<br><br><b>%extradetails%</b>"
- 	"Quest_Coop_Desc_Bomb"									"Kooperativní mise módu Zásah: Jako <b>%team%</b> společně s partnerem <b>vyhoď do povětří</b> <b>%map%</b>.<br><br><b>%extradetails%</b>"
- 
-	"Quest_op09_coopmission"								"Získej vzorek viru „Zóna smrti“ z laboratoře teroristické skupiny Phoenix."
-	"Quest_op10_coopmission"								"Poblíž staré farmy byly spatřeny jednotky teroristické skupiny Phoenix. Prozkoumej oblast a zjisti, co mají za lubem."
-
-	"Quest_Guardian_Hostage"								"Kooperativní úkol módu Stráž: <b>%map%</b>, <b>%weapon%</b>"
-	"Quest_Guardian_Hostage_Desc"							"Kooperativní úkol módu Stráž: Jako <b>%team%</b> společně s partnerem zabraň Counter-Teroristům v dosažení rukojmích na mapě <b>%map%</b>.<br><br>Dosáhni <b>%action%</b> tím, že pomocí zbraně <b>%weapon%</b> provedeš <b>%kills%</b> zabití. <b>%extradetails%</b>"
-	 
-	"quest_guardian_kills_5"								"5"
-	"quest_guardian_kills_10"								"10"
-	"quest_guardian_kills_15"								"15"
-	"quest_guardian_kills_20"								"20"
-	"quest_guardian_kills_25"								"25"
-	"quest_guardian_kills_30"								"30"
-	"quest_guardian_kills_35"								"35"
-	"quest_guardian_kills_40"								"40"
-	"quest_guardian_kills_45"								"45"
-	"quest_guardian_kills_50"								"50"
-
-// Guardian kill types
-	"quest_killtype_normal"									"zabití"
-	"quest_killtype_headshot"								"zabití <b>headshotem</b>"
-	"quest_killtype_blind"									"zabití <b>oslepených</b>"
-	"quest_killtype_unscoped"								"zabití <b>bez přiblížení</b>"
-
-	"quest_enemy_weapon"									"nepřátelská zbraň"
-	"quest_weapon_CZ75a_or_enemy_weapon"					"CZ75-Auto nebo jiná nepřátelská zbraň"
-	"quest_weapon_sniperrifle"								"libovolná odstřelovací puška"
-	"quest_weapon_any_rifle"								"libovolná puška"
-	"quest_weapon_m4"										"libovolná puška M4"
-	"quest_weapon_starter_ct"								"libovolná výchozí pistole CT"
-	"quest_weapon_ct"										"zbraň CT"
-	"quest_weapon_t"										"zbraň T"
-	"quest_weapon_any_pistol"								"libovolná pistole"
-	"quest_weapon_any_weapon"								"libovolná zbraň"
-	"quest_weapon_any_shotgun"								"libovolná brokovnice"
-	"quest_weapon_any_smg"									"libovolný samopal"
-	"quest_weapon_ssg08_or_mag7"							"SSG 08 nebo MAG-7"
-	"quest_weapon_awp_or_p90"								"AWP nebo P90"
-	"quest_weapon_unique_pistol"							"Různé pistole"
-	"quest_presence_heavy"									"<br><br><b>UPOZORNĚNÍ</b>: Počítej s <i>těžkým</i> odporem nepřátel!"
-
-	"quest_guardian_empty"		" "
-	"quest_guardian_cantbuy"		"<i>V této misi si nemůžeš nic kupovat.</i>"
-	"quest_guardian_maxmoneylimit"		"<i>V této misi jsi limitován maximálním množstvím peněz.</i>"
-	"quest_guardian_killrewardsonly" 	"<i>Peníze můžeš získat pouze zabíjením.</i>"
-	"quest_guardian_moneyreset" 	"<i>Peníze se resetují po neúspěchu v misi.</i>"
-	"quest_guardian_heavyarmor" 	"<i>Je dostupná těžká vesta.</i>"
-	"quest_guardian_noarmor" 	"<i>Není dostupné brnění.</i>"
-	"quest_guardian_heavyarmorresetmoney" 	"<i>Je dostupná těžká vesta. Peníze se resetují po neúspěchu v misi.</i>"
-	 //"quest_guardian_maxmoney_16000"		"$16000"
-	 //"quest_guardian_maxmoney_10000"		"$10000"
-	 //"quest_guardian_maxmoney_6000"			"$6000"
-	 //"quest_guardian_maxmoney_3200"			"$3200"
-	 //"quest_guardian_maxmoney_0"			"$0"
-
-	// "Get [headshot] kills: [unscoped] [AWP]"
-	// Double spaces will automatically be removed.
-	"guardian_mission_type_kills"				"Zabíjej nepřátele pomocí: {s:weapon}"
-	"guardian_mission_type_headshots"			"Dávej headshoty pomocí: {s:weapon}"
-	"guardian_mission_type_unscoped"			"Zabíjej nepřátele bez přiblížení pomocí: {s:weapon}"
-	"guardian_mission_type_enemy_weapon"		"Zabíjej pomocí nepřátelské zbraně: {s:weapon}"
-	"guardian_mission_type_enemy_airborne"		"Zabíjej nepřátele nacházející se ve vzduchu pomocí: {s:weapon}"
-	"guardian_mission_type_flashbang"			"Zabíjej oslepené nepřátele"
-	"guardian_mission_type_ct_weapons"			"Zabíjej nepřátele pomocí zbraní CT"
-
-//	bonus tokens
-
-	  "quest_bonus_headshot"							"pokud je zaznamenán headshot"
-	  "quest_bonus_zoomed"								"pokud máš přiblíženo"
-  	  "quest_bonus_not_zoomed"							"pokud nemáš přiblíženo"
-	  "quest_bonus_chickens"							"pokud zabiješ slepici"
-
-	  "quest_bonus_taser"								"pokud použiješ Zeus x27"
-	  "quest_bonus_bomb_planted"						"pokud je položena bomba"
-	  "quest_bonus_melee"								"pokud použiješ zbraň na blízko"	  
-
-
-
-	  "quest_bonus_killstreak_2"						"pokud máš sérii 2 nebo více zabití"
-	  "quest_bonus_killstreak_3"						"pokud máš sérii 3 nebo více zabití"
-
-	  "quest_bonus_chickenstreak_2"						"pokud máš sérii 2 nebo více zabití slepic"
-	  "quest_bonus_chickenstreak_3"						"pokud máš sérii 3 nebo více zabití slepic"
-
-	  "quest_bonus_borrowed_gun"						"pokud použiješ cizí zbraň"
-	  "quest_bonus_borrowed_gun_enemy"					"pokud použiješ nepřátelskou zbraň"
-	  "quest_bonus_borrowed_gun_own"					"pokud použiješ zbraň, která patřila tvému cíli"
-		"quest_bonus_victim_rescuing"					"pokud cíl zachraňuje rukojmí"
-		
-	  "quest_bonus_bulletcount_1"						"pokud se ti to podaří první střelou v daném kole"
-		
-	  "quest_bonus_totalrounds_2"						"pokud se ti to podaří během prvních 2 kol"
-	  "quest_bonus_totalrounds_3"						"pokud se ti to podaří během prvních 3 kol"
-	  "quest_bonus_totalrounds_4"						"pokud se ti to podaří během prvních 4 kol"
-	  "quest_bonus_totalrounds_5"						"pokud se ti to podaří během prvních 5 kol"
-
-  	  "quest_bonus_weapon_elite"						"pokud použiješ Dual Berettas"
-	  "quest_bonus_weapon_ssg08"						"pokud použiješ SSG08"
-	  "quest_bonus_weapon_revolver"						"pokud použiješ revolver R8"
-	  "quest_bonus_weapon_glock_hkp2000_usp_silencer"	"pokud použiješ P2000, USP-S nebo Glock-18"
-
-		"quest_bonus_set_dust"							"pokud použiješ zbraň z kolekce Dust"
-		"quest_bonus_set_aztec"							"pokud použiješ zbraň z kolekce Aztec"
-		"quest_bonus_set_vertigo"						"pokud použiješ zbraň z kolekce Vertigo"
-		"quest_bonus_set_inferno"						"pokud použiješ zbraň z kolekce Inferno"
-		"quest_bonus_set_militia"						"pokud použiješ zbraň z kolekce Militia"
-		"quest_bonus_set_nuke"							"pokud použiješ zbraň z kolekce Nuke"
-		"quest_bonus_set_office"						"pokud použiješ zbraň z kolekce Office"
-		"quest_bonus_set_assault"						"pokud použiješ zbraň z kolekce Assault"
-		"quest_bonus_set_dust_2"						"pokud použiješ zbraň z kolekce Dust 2"
-		"quest_bonus_set_train"							"pokud použiješ zbraň z kolekce Train"
-		"quest_bonus_set_mirage"						"pokud použiješ zbraň z kolekce Mirage"
-		"quest_bonus_set_italy"							"pokud použiješ zbraň z kolekce Italy"
-		"quest_bonus_set_lake"							"pokud použiješ zbraň z kolekce Lake"
-		"quest_bonus_set_safehouse"						"pokud použiješ zbraň z kolekce Safehouse"
-		"quest_bonus_set_esports"						"pokud použiješ zbraň z kolekce eSports 2013"
-		"quest_bonus_set_weapons_i"						"pokud použiješ zbraň z kolekce Arms Deal"
-		"quest_bonus_set_bravo_i"						"pokud použiješ zbraň z kolekce Bravo"
-		"quest_bonus_set_bravo_ii"						"pokud použiješ zbraň z kolekce Alpha"
-		"quest_bonus_set_weapons_ii"					"pokud použiješ zbraň z kolekce Arms Deal 2"
-		"quest_bonus_set_esports_ii"					"pokud použiješ zbraň z kolekce eSports 2013 Winter"
-		"quest_bonus_set_esports_2014_summer"			"pokud použiješ zbraň z kolekce eSports 2014 Summer"
-		"quest_bonus_set_community_1"					"pokud použiješ zbraň z kolekce Winter Offensive"
-		"quest_bonus_set_weapons_iii"					"pokud použiješ zbraň z kolekce Arms Deal 3"
-		"quest_bonus_set_community_2"					"pokud použiješ zbraň z kolekce Phoenix"
-		"quest_bonus_set_community_3"					"pokud použiješ zbraň z kolekce Huntsman"
-		"quest_bonus_set_community_4"					"pokud použiješ zbraň z kolekce Breakout"
-		"quest_bonus_set_community_5"					"pokud použiješ zbraň z kolekce Vanguard"
-		"quest_bonus_set_community_6"					"pokud použiješ zbraň z kolekce Chroma"
-		"quest_bonus_set_community_7"					"pokud použiješ zbraň z kolekce Chroma 2"
-		"quest_bonus_set_community_11"					"pokud použiješ zbraň z kolekce Wildfire"
-		"quest_bonus_set_bank"							"pokud použiješ zbraň z kolekce Bank"
-		"quest_bonus_set_baggage"						"pokud použiješ zbraň z kolekce Baggage"
-		"quest_bonus_set_cobblestone"					"pokud použiješ zbraň z kolekce Cobblestone"
-		"quest_bonus_set_overpass"						"pokud použiješ zbraň z kolekce Overpass"
-		"quest_bonus_set_cache"							"pokud použiješ zbraň z kolekce Cache"
-		"quest_bonus_set_kimono"						"pokud použiješ zbraň z kolekce Rising Sun"
-
-		"quest_bonus_cs_assault"						"pokud hraješ na mapě Assault"
-		"quest_bonus_cs_italy"							"pokud hraješ na mapě Italy"
-		"quest_bonus_cs_militia"						"pokud hraješ na mapě Militia"
-		"quest_bonus_cs_office"							"pokud hraješ na mapě Office"
-		"quest_bonus_de_aztec"							"pokud hraješ na mapě Aztec"
-		"quest_bonus_de_dust"							"pokud hraješ na mapě Dust"
-		"quest_bonus_de_dust2"							"pokud hraješ na mapě Dust II"
-		"quest_bonus_de_mirage"							"pokud hraješ na mapě Mirage"
-		"quest_bonus_de_overpass"						"pokud hraješ na mapě Overpass"
-		"quest_bonus_de_cbble"							"pokud hraješ na mapě Cobblestone"
-		"quest_bonus_de_train"							"pokud hraješ na mapě Train"		
-		"quest_bonus_de_inferno"						"pokud hraješ na mapě Inferno"
-		"quest_bonus_de_nuke"							"pokud hraješ na mapě Nuke"
-		"quest_bonus_de_shorttrain"						"pokud hraješ na mapě Shorttrain"
-		"quest_bonus_de_shortdust"						"pokud hraješ na mapě Shortdust"
-		"quest_bonus_de_vertigo"						"pokud hraješ na mapě Vertigo"
-		"quest_bonus_de_balkan"							"pokud hraješ na mapě Balkan"
-		"quest_bonus_ar_baggage"						"pokud hraješ na mapě Baggage"
-		"quest_bonus_ar_monastery"						"pokud hraješ na mapě Monastery"
-		"quest_bonus_ar_shoots"							"pokud hraješ na mapě Shoots"
-		"quest_bonus_de_embassy"						"pokud hraješ na mapě Embassy"
-		"quest_bonus_de_bank"							"pokud hraješ na mapě Bank"
-		"quest_bonus_de_lake"							"pokud hraješ na mapě Lake"
-		"quest_bonus_de_depot"							"pokud hraješ na mapě Depot"
-		"quest_bonus_de_safehouse"						"pokud hraješ na mapě Safehouse"
-		"quest_bonus_de_sugarcane"						"pokud hraješ na mapě Sugarcane"
-		"quest_bonus_de_stmarc"							"pokud hraješ na mapě St. Marc"
-		"quest_bonus_cs_museum"							"pokud hraješ na mapě Museum"
-		"quest_bonus_cs_thunder"						"pokud hraješ na mapě Thunder"
-		"quest_bonus_de_favela"							"pokud hraješ na mapě Favela"
-		"quest_bonus_cs_downtown"						"pokud hraješ na mapě Downtown"
-		"quest_bonus_de_seaside"						"pokud hraješ na mapě Seaside"
-		"quest_bonus_de_library"						"pokud hraješ na mapě Library"
-		"quest_bonus_cs_motel"							"pokud hraješ na mapě Motel"
-		"quest_bonus_de_cache"							"pokud hraješ na mapě Cache"
-		"quest_bonus_de_ali"							"pokud hraješ na mapě Ali"
-		"quest_bonus_de_ruins"							"pokud hraješ na mapě Ruins"
-		"quest_bonus_de_ruby"							"pokud hraješ na mapě Ruby"
-		"quest_bonus_de_chinatown"						"pokud hraješ na mapě Chinatown"
-		"quest_bonus_de_gwalior"						"pokud hraješ na mapě Gwalior"
-		"quest_bonus_cs_agency"							"pokud hraješ na mapě Agency"
-		"quest_bonus_cs_siege"							"pokud hraješ na mapě Siege"
-		"quest_bonus_de_castle"							"pokud hraješ na mapě Castle"
-		"quest_bonus_de_overgrown"						"pokud hraješ na mapě Overgrown"
-		"quest_bonus_de_blackgold"						"pokud hraješ na mapě Black Gold"
-		"quest_bonus_cs_rush"							"pokud hraješ na mapě Rush"
-		"quest_bonus_de_mist"							"pokud hraješ na mapě Mist"
-		"quest_bonus_cs_insertion"						"pokud hraješ na mapě Insertion"
-
-		"quest_bonus_cs_workout"						"pokud hraješ na mapě Workout"
-		"quest_bonus_cs_backalley"						"pokud hraješ na mapě Back Alley"
-		"quest_bonus_de_marquis"						"pokud hraješ na mapě Marquis"
-		"quest_bonus_de_facade"							"pokud hraješ na mapě Facade"
-		"quest_bonus_de_season"							"pokud hraješ na mapě Season"
-		"quest_bonus_de_bazaar"							"pokud hraješ na mapě Bazaar"
-		"quest_bonus_de_santorini"						"pokud hraješ na mapě Santorini"
-
-		"quest_bonus_de_subzero"						"pokud hraješ na mapě Subzero"
-		"quest_bonus_de_biome"							"pokud hraješ na mapě Biome"
-
-
-
-
-// OperationalPoints
-
-		"Quest_OperationalPoints_Template"				"Hvězdy: %s1"
-
-		"Quest_OperationalPoints_1"					"★"
-		"Quest_OperationalPoints_2"					"★★"
-		"Quest_OperationalPoints_3"					"<font color=\"#ff0000\">★★★★</font>"
-
-// Hud Message
-
-	 "Quest_ProgressMadeMessage1"								" Body, které získáš na konci zápasu: +%s1."
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -9167,7 +7929,6 @@
 		"StickerKit_enfu_bombsquad"                       "Bombsquad"   
 		"StickerKit_desc_enfu_bombsquad"                  " "   
 		"StickerKit_enfu_bombsquad_foil"                  "Bombsquad (speciální)"   
-		"StickerKit_desc_bombsquad_foil"                  " "   
 		"StickerKit_enfu_guru"                            "Guru"   
 		"StickerKit_desc_enfu_guru"                       " "   
 		"StickerKit_enfu_ninja"                           "Silent Ninja"   
@@ -35067,7 +33828,7 @@
 // COMMUNITY_34
 
 		"PaintKit_usp_field_snake"						"Pod hledí zbraně byl nakreslen symbol Counter-Teroristů a poblíž vyhazovacího portu se skví nápis „027“.\n\n<i>Akorát se vrátila z terénu</i>"
-		"PaintKit_usp_field_snake_Tag"					"027"
+		"PaintKit_usp_field_snake_Tag"					"27"
 
 		"PaintKit_deagle_calligraff"					"Závěr této zbraně byl ozdoben kaligrafií vytvořenou stříbrnou fixou.\n\n<i>Umění není na počkání</i>"
 		"PaintKit_deagle_calligraff_Tag"				"Calligraffiti"
@@ -35150,7 +33911,7 @@
 		"PaintKit_p2k_fractal"								"Na zbraň byly metalickou šedou barvou naneseny fraktální vzory a následně byla dozdobena oranžovými částmi.\n\n<i>&gt;&gt;EXPERIMENT S TEXTUROU ZBRANĚ, ZÁZNAM PRVNÍ&lt;&lt;</i>"
 		"PaintKit_p2k_fractal_Tag"							"Sure Grip"
 		
-		"PaintKit_mag7_ammo_box"							"Zbraň byla nabarvena tak, aby připomínala bednu s municí.\n\n<i>Ber, dokud je co</i>"
+		"PaintKit_mag7_ammo_box"							"Zbraň byla nabarvena tak, aby připomínala bednu se střelivem.\n\n<i>Ber, dokud je co</i>"
 		"PaintKit_mag7_ammo_box_Tag"						"Resupply"
 		
 		"PaintKit_usps_bruteforce_green"					"Na zbraň byl nanesen vzor kombinující mátově zelené a stříbrné odstíny.\n\n<i>Sklenice osudu je vždy poloprázdná</i>"
@@ -36689,8 +35450,8 @@
 		"Workshop_created" "Datum vytvoření"
 		"Workshop_size" "Velikost"
 		"Workshop_View" "Zobrazit ve workshopu"
-		"Workshop_Allow" "Povolit"
-		"Workshop_Deny" "Zakázat"
+		"Workshop_Allow" "Stáhnout"
+		"Workshop_Deny" "Zrušit"
 
 		"SFUI_Workshop_Desc_Pw"				"Zde jsou uvedeny mapy z workshopu, které odebíráš. Pomocí možnosti „Komunitní rychlý zápas“ můžeš najít nejlepší komunitní server s danou mapou."
 		"SFUI_Workshop_Desc_Sp_Pw"			"Zde jsou uvedeny mapy z workshopu, které odebíráš. Pokud chceš, můžeš si je zahrát lokálně proti botům."
@@ -36980,12 +35741,6 @@
 		"SFUI_Store_Limited_Bid_Tagline"			"přihazování na tuto nabídku"
 		"SFUI_Store_Available_Offers"               "Nabídky vyprší za:"
 		"SFUI_Store_Preview"                        "Náhled"
-
-		"SFUI_Store_Timer_Week:p"                   "%s1 týden#|#%s1 týdny#|#%s1 týdnů#|#%s1 týdne"
-		"SFUI_Store_Timer_Day:p"                    "%s1 den#|#%s1 dny#|#%s1 dnů#|#%s1 dne"
-		"SFUI_Store_Timer_Hour:p"                   "%s1 hodina#|#%s1 hodiny#|#%s1 hodin#|#%s1 hodiny"
-		"SFUI_Store_Timer_Min:p"                    "%s1 minuta#|#%s1 minuty#|#%s1 minut#|#%s1 minuty"
-		"SFUI_Store_Timer_Sec:p"                    "%s1 sekunda#|#%s1 sekundy#|#%s1 sekund#|#%s1 sekundy"
 
 		"SFUI_Store_Timer_Week:f"                 	"{f:0:value, plural, one{{f:0:value} týden} few{{f:0:value} týdny} many{{f:0:value} týdne} other{{f:0:value} týdnů}}"
 		"SFUI_Store_Timer_Day:f"                    "{f:0:value, plural, one{{f:0:value} den} few{{f:0:value} dny} many{{f:0:value} dne} other{{f:0:value} dnů}}"
@@ -38483,7 +37238,7 @@
 		"CSGO_Demo_Toggle_Overview"					"[{s:bind_duck}]: Přehled"
 		"CSGO_Demo_Settings_XRay"					"Rentgen (lze přepnout pomocí [{s:bind_slot12}])"
 		"CSGO_Demo_Settings_TrueView_Explanation"	"Technologie TrueView opětovným prováděním predikce na straně klienta rekonstruuje to, co hráč původně viděl. Výsledkem je přesnější napodobení podmínek, které měl server pro registraci zásahů."
-		"CSGO_Demo_Settings_TrueView_Enable"		"Povolit TrueView"
+		"CSGO_Demo_Settings_TrueView_Enable"		"Aktivovat TrueView"
 		"CSGO_Demo_Settings_TrueViewDOA"				"Zahrnout „posmrtné“ akce"
 		"CSGO_Demo_Settings_TrueViewDOA_Explanation"	"Zajišťuje, že bude opětovně prováděna predikce příkazů (na straně klienta), které nebyly uskutečněny na serveru, jelikož hráč byl v momentě jejich doručení už mrtvý. Zakázáním této možnosti se bude záznam lišit od původního zážitku, ale bude více odpovídat tomu, co se stalo na serveru."
 		"CSGO_Demo_Settings_TrueViewWrongVersion"		"Povolit nesoulad verzí"
@@ -39270,7 +38025,7 @@
 		"SFUI_PlayerDetails_Loading"				"Kontrolování doporučení"
 		"SFUI_PlayerDetails_Loading_Failed"			"Nepodařilo se načíst doporučení, zkus to později"
 		"SFUI_PlayerDetails_Previously_Submitted"	"Předchozí doporučení pro tohoto hráče"
-		"SFUI_PlayerDetails_Commendations_Left:p"		"Dnes můžeš doporučit ještě %s1 dalšího hráče#|#Dnes můžeš doporučit ještě %s1 další hráče#|#Dnes můžeš doporučit ještě %s1 dalších hráčů#|#Dnes můžeš doporučit ještě %s1 dalšího hráče"
+		"SFUI_PlayerDetails_Commendations_Left:f"	"Dnes můžeš doporučit ještě {num_players} {num_players, plural, one{dalšího hráče} few{další hráče} many{dalšího hráče} other{dalších hráčů}}"
 		"SFUI_PlayerDetails_NoCommendations_Left"   "Odeslal jsi příliš mnoho doporučení, zkus to zítra znovu"
 		"SFUI_PlayerDetails_Updating_Previous_Commendation"   "Měníš dříve odeslané doporučení"
 		"SFUI_PlayerDetails_New_Commendation"   "Odesíláš nové doporučení"
@@ -39642,7 +38397,7 @@
 		"SFUIHUD_InfoPanel_Coop_Thumb2Ready"					"Je připraven 2. flash disk!"
 		"SFUIHUD_InfoPanel_Coop_Thumb2Retrieved"				"Byl odpojen flash disk s virem!"	
 
-		"FullPlayerNameOrder_Default"						"%modifier% %clantag% %controller_name% (%current_controller_of_my_pawn%)"
+		"FullPlayerNameOrder_Default:f"						"{modifier} {clantag} {controller_name} ({current_controller_of_my_pawn})"
 "SFUIHUD_Spectate_Equipment"	"HODNOTA VÝBAVY"
 		"SFUIHUD_Spectate_TeamMoney"	"PENÍZE TÝMU"
 		"SFUIHUD_Spectate_TeamEQValue"	"HODNOTA VYBAVENÍ TÝMU"
@@ -40940,11 +39695,11 @@
 
 		"SFUI_Settings_HUD_BackgroundAlpha"			"Průhlednost pozadí ukazatelů"
 		"SFUI_Settings_HUD_BackgroundAlpha_Info"	"Určuje průhlednost pozadí ukazatele peněz, zdraví, pozice a nábojů."
-		"SFUI_Settings_HUD_Style"					"Zobrazení zdraví a munice"
+		"SFUI_Settings_HUD_Style"					"Zobrazení zdraví a nábojů"
 		"SFUI_Settings_HUD_Style_Default"			"Výchozí"
 		"SFUI_Settings_HUD_Style_Simple"			"Zjednodušené"
 
-		"SFUI_Settings_HUD_HealthAmmo_Style"		"Zobrazení zdraví a munice"
+		"SFUI_Settings_HUD_HealthAmmo_Style"		"Zobrazení zdraví a nábojů"
 		"SFUI_Settings_HUD_HealthAmmo_Style_0"		"Výchozí"
 		"SFUI_Settings_HUD_HealthAmmo_Style_1"		"Zjednodušené"
 		"SFUI_Settings_HUD_Radar_Size"				"Velikost radaru"
@@ -41027,8 +39782,8 @@
 		"SFUI_Settings_MiniScoreboardPlayerCount_Tooltip"	"Určuje, zdali má mini-tabulka skóre v průběhu kola místo avatarů hráčů zobrazovat jejich počty."
 
 
-		"Post_Round_Damage_Report_Given:p"		" • Udělené poškození → %s3: %s2 v %s1 zásahu#|# • Udělené poškození → %s3: %s2 ve %s1 zásazích#|# • Udělené poškození → %s3: %s2 v %s1 zásazích#|# • Udělené poškození → %s3: %s2 v %s1 zásahu"
-		"Post_Round_Damage_Report_Taken:p"		" • Utržené poškození ← %s3: %s2 v %s1 zásahu#|# • Utržené poškození ← %s3: %s2 ve %s1 zásazích#|# • Utržené poškození ← %s3: %s2 v %s1 zásazích#|# • Utržené poškození ← %s3: %s2 v %s1 zásahu"
+		"Post_Round_Damage_Report_Given:f"		" • Udělené poškození → {player_name}: {f:0:damage} {num_hits, plural, one{v {num_hits} zásahu} few{ve {num_hits} zásazích} many{v {num_hits} zásahu} other{v {num_hits} zásazích}}"
+		"Post_Round_Damage_Report_Taken:f"		" • Utržené poškození ← {player_name}: {f:0:damage} {num_hits, plural, one{v {num_hits} zásahu} few{ve {num_hits} zásazích} many{v {num_hits} zásahu} other{v {num_hits} zásazích}}"
 
 		"SFUI_TeamOverheadID"					"Výbava spoluhráčů"
 
@@ -41146,7 +39901,7 @@
 		"Pano_BuyMenu_ArmorPen_val" "{d:r:armor_pen}"
 		"SFUI_BuyMenu_Range" "PŘESNÝ DOSTŘEL"
 		"Pano_BuyMenu_Range_val" "{d:r:range} m"
-		"SFUI_BuyMenu_AmmoLabel" "MUNICE:"
+		"SFUI_BuyMenu_AmmoLabel" "STŘELIVO:"
 		"SFUI_BuyMenu_SpecialLabel" "SPECIÁLNÍ:"
 		"SFUI_BuyMenu_CountryLabel" "PŮVOD:"
 		"SFUI_BuyMenu_Penetration" "PRŮRAZNOST:"
@@ -41507,8 +40262,8 @@
 
 		"SFUI_UserAlertNoteType_1"			"Servery ve tvé oblasti (%s1) jsou velmi vytížené."
 		"SFUI_UserAlertNoteType_2"			"Servery ve tvé oblasti (%s1) jsou kvůli údržbě offline."
-		"SFUI_UserAlertNoteType_LowPlayersR:p"	"V regionu „%region%“ vyhledává zápas pouze %players% vhodný hráč.#|#V regionu „%region%“ vyhledávají zápas pouze %players% vhodní hráči.#|#V regionu „%region%“ vyhledává zápas pouze %players% vhodných hráčů.#|#V regionu „%region%“ vyhledává zápas pouze %players% vhodného hráče."
-		"SFUI_UserAlertNoteType_LowPlayersY:p"	"Ve tvém regionu vyhledává zápas pouze %players% vhodný hráč.#|#Ve tvém regionu vyhledávají zápas pouze %players% vhodní hráči.#|#Ve tvém regionu vyhledává zápas pouze %players% vhodných hráčů.#|#Ve tvém regionu vyhledává zápas pouze %players% vhodného hráče."
+		"SFUI_UserAlertNoteType_LowPlayersR:f"	"V regionu „{region}“ {players, plural, one{vyhledává zápas pouze {players} vhodný hráč} few{vyhledávají zápas pouze {players} vhodní hráči} many{vyhledává zápas pouze {players} vhodného hráče} other{vyhledává zápas pouze {players} vhodných hráčů}}."
+		"SFUI_UserAlertNoteType_LowPlayersY:f"	"Ve tvém regionu {players, plural, one{vyhledává zápas pouze {players} vhodný hráč} few{vyhledávají zápas pouze {players} vhodní hráči} many{vyhledává zápas pouze {players} vhodného hráče} other{vyhledává zápas pouze {players} vhodných hráčů}}."
 
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"Nepodařilo se připojit do zápasu."
 		"SFUI_QMM_ERROR_NotLoggedIn"		"Nejsi připojen ke službě spravující vyhledávání zápasů."
@@ -43828,7 +42583,7 @@
 		"RESCUE_ALL_HOSTAGES_DESC"	"Zachraň v jednom kole všechny rukojmí."
 		"FAST_HOSTAGE_RESCUE_NAME"	"Spěšné osvobození"
 		"FAST_HOSTAGE_RESCUE_DESC"	"Zachraň všechny rukojmí do 90 sekund."
-		"KILL_TWO_WITH_ONE_SHOT_NAME"	"Úspora munice"
+		"KILL_TWO_WITH_ONE_SHOT_NAME"	"Úspora střeliva"
 		"KILL_TWO_WITH_ONE_SHOT_DESC"	"Zabij dva nepřátele jednou kulkou."
 		"EARN_MONEY_LOW_NAME"	"Válečné dluhopisy"
 		"EARN_MONEY_LOW_DESC"	"Vydělej si celkem 50 000 $."
@@ -44294,7 +43049,7 @@
 		"SFUI_Hint_XM1014_Hint1"		"Brokovnice XM1014 je extrémně silná a užitečná na krátkou vzdálenost. Z velké vzdálenosti s ní ale netrefíš ani vrata od stodoly."
 		"SFUI_Hint_M4A4_Hint1"          "M4A4 je silná a přesná automatická puška, jež vyniká v boji na střední vzdálenost, ale lze s ní s trochou cviku zabíjet i na krátkou a velkou vzdálenost."
 		"SFUI_Hint_AK47_Hint1"          "AK-47 je jak silná, tak hlučná puška. Trpí velmi silným zpětným rázem, ale přesní střelci ji preferují pro smrtící zásahy do hlavy."
-		"SFUI_Hint_Deagle_Hint1"        "Desert Eagle .50C je opravdový příruční kanón. Jeho silná munice okamžitě zastaví nepřítele, ale má velmi malý zásobník."
+		"SFUI_Hint_Deagle_Hint1"        "Desert Eagle .50C je opravdový příruční kanón. Jeho silné náboje okamžitě zastaví nepřítele, ale má velmi malý zásobník."
 		"SFUI_Hint_Backstab"			"Pokud je k tobě nepřítel otočen zády, bodni ho nožem. Udělí mu to mnohem větší poškození a obvykle to vyústí v okamžité zabití."
 		"SFUI_Hint_Flashbang_Turn"		"Odvrácením zraku od výbuchu oslepujícího granátu zmírníš jeho oslepující účinky."
 		"SFUI_Hint_Fire_Makes_Slow"		"Pro zapálení oblasti a zpomalení přesunu nepřátel se nejvíce hodí molotovy a zápalné granáty."
@@ -44320,7 +43075,7 @@
 
 		// TIPS
 		"SFUI_Hint_Stick_With_Team"		"Bojovat sám je nebezpečné. Zůstaň se svým týmem a vzájemně si kryjte záda."
-		"SFUI_Hint_Ammo_Mangement"		"Správa munice je extrémně důležitá. Pokud ti dojdou náboje uprostřed přestřelky, jsi nahraný."
+		"SFUI_Hint_Ammo_Mangement"		"Správa střeliva je extrémně důležitá. Pokud ti dojdou náboje uprostřed přestřelky, jsi nahraný."
 		"SFUI_Hint_Vulnerable_Reloading" "Když přebíjíš, jsi zranitelný. Předtím než začneš přebíjet, se ujisti, že jsi na bezpečném místě nebo krytý."
 		"SFUI_Hint_Shoot_Thru_Walls"	"Silné zbraně dokáží prostřelit některé tenčí materiály. Pokud se nepřítel skrývá za dřevěnými dveřmi nebo tenkými stěnami, stále ho můžeš zasáhnout."
 		"SFUI_Hint_LearnRadar"			"Tvůj radar ukazuje spoluhráče, nepřátele a bombu. Pro taktickou výhodu se ho nauč průběžně kontrolovat."
@@ -44389,12 +43144,12 @@
 		"Hint_Survival_Underground"			"Úkryt pod zemí je skvělá věc, ale signál tam na tabletu nenajdeš."
 		"Hint_Survival_DuffelBags"			"Tašky s penězi jde otevřít dvěma způsoby. Klávesou [%+use%] z nich peníze vyndáš potichu a pomaleji, zatímco stiskem [%+attack%] je s hlasitým trhnutím rozřízneš."
 		"Hint_Survival_Healthshot"			"Adrenalin ([%slot12%]) poskytuje také dočasné navýšení rychlosti pohybu."
-		"Hint_Survival_AutoWeapons"			"Munice není nazbyt a zpětný ráz je potvora, takže si dávej extra velký pozor, jinak zůstaneš na suchu uprostřed přestřelky."
+		"Hint_Survival_AutoWeapons"			"Střeliva není nazbyt a zpětný ráz je potvora, takže si dávej extra velký pozor, jinak zůstaneš na suchu uprostřed přestřelky."
 		"Hint_Survival_EarlyFight"			"Ze začátku má každý hráč málo vybavení, takže pokud vycítíš šanci, klidně přepadni nepřítele holýma rukama a neboj se, že by tě překvapil brokovnicí."
 		"Hint_Survival_PredictEnemy"		"Na tabletu můžeš vidět rozpínání zóny smrti. Důležitá informace, která napoví, kam asi povedou kroky nepřátel."
 		"Hint_Survival_UseCash"				"Klávesou [%+use%] sebereš peníze nebo předměty, ke kterým se nedostaneš tak blízko, aby byly sebrány automaticky."
 		"Hint_Survival_FastDeliver"			"Vylepšení „Sledování dronů“ dá tvému tabletu schopnost vidět všechny prolétající drony a také zrychlí doručování tvých zásilek."
-		"Hint_Survival_Information"			"Někdy jsou informace mocnější munice. Kdo zná pozici svých nepřátel, je o krok blíže k vítězství."
+		"Hint_Survival_Information"			"Někdy jsou informace mocnější střeliva. Kdo zná pozici svých nepřátel, je o krok blíže k vítězství."
 		"Hint_Survival_UseHostage"			"Podržením [%+use%] můžeš položit rukojmího. Pokud je tedy kam."
 		"Hint_Survival_BurnGrass"			"Nepřítel se schoval do vysoké trávy? Zapal ji a uvidíš, jak rychle vyběhne!"
 		"Hint_Survival_Parachute"			"Padák tě může zachránit před smrtícím pádem. Ve vzduchu jej otevřeš klávesou [%+jump%]."
@@ -47080,14 +45835,14 @@
 
 		"practicesettings_grenades_tooltip"			"Pokud je tato možnost <b>povolena</b>, pro každý granát bude zvýrazněna trajektorie letu a ve speciálním náhledovém okně ukázáno místo dopadu."
 		"practicesettings_grenades_button"			"Procvičování granátů"
-		"practicesettings_infammo_tooltip"			"Pokud je tato možnost <b>povolena</b>, zbraně nebudou spotřebovávat munici a nebude nutné je přebíjet."
+		"practicesettings_infammo_tooltip"			"Pokud je tato možnost <b>povolena</b>, zbraně nebudou spotřebovávat střelivo a nebude nutné je přebíjet."
 		"practicesettings_infammo_button"			"Neomezené zbraně"
 		"practicesettings_infwarmup_tooltip"		"Pokud je tato možnost <b>povolena</b>, zápas zůstane permanentně v zahřívacím kole a nepřipojí se do něj žádní boti."
 		"practicesettings_infwarmup_button"			"Nekonečná rozcvička"
-		"practicesettings_annotations_tooltip"		"Pokud je tato možnost <b>povolena</b>, dojde k načtení výuky mapy vybrané v rozbalovací nabídce a vynucení následujících možností: nekonečná rozcvička, neomezené zbraně a procvičování granátů."
+		"practicesettings_annotations_tooltip"		"Pokud je tato možnost <b>povolena</b>, dojde k načtení (volitelné) výuky mapy vybrané v rozbalovací nabídce a vynucení následujících možností: nekonečná rozcvička, neomezené zbraně a procvičování granátů."
 		"practicesettings_annotations_button"		"Výuka mapy"
 		"practicesettings_annotations_workshop_tooltip" "Navštívit workshop"
-		"practicesettings_annotations_dropdown_tooltip"	"Určuje, která výuka mapy bude načtena."
+		"practicesettings_annotations_dropdown_tooltip"	"Určuje, která výuka mapy (pokud vůbec) bude načtena."
 
 		"PlayMenuReplayNewUserTrainingButton"		"Zopakovat výcvik"
 
@@ -47123,6 +45878,8 @@
 		"Workshop_annotation_ready"					"Výuka je připravena na nahrání."		
 		"UI_File_Filter_SupportedAnnotationFormat"	"Textové soubory (*.txt)"
 		"annotations_visit_workshop"				"Navštívit workshop ⤤"
+		"annotations_exceed_round_limit"			"Výuka mapy je zakázána po {s:rounds}. kole poloviny zápasu"
+
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Game Mode Desc
@@ -47183,7 +45940,7 @@
 		"BuyMenu_Movement" 				"POHYBLIVOST"
 		"BuyMenu_ArmorPen" 				"PRŮRAZNOST BRNĚNÍ"
 		"BuyMenu_Range" 				"PŘESNÝ DOSTŘEL"
-		"BuyMenu_AmmoLabel" 			"MUNICE"
+		"BuyMenu_AmmoLabel" 			"STŘELIVO"
 		"BuyMenu_SpecialLabel" 			"SPECIÁLNÍ"
 		"BuyMenu_CountryLabel" 			"ZEMĚ"
 		"BuyMenu_Penetration" 			"PRŮRAZNOST"
@@ -48084,6 +46841,1351 @@
 
 		"accolade_chickenskilled"						"Plukovník"
 		"accolade_chickenskilled_desc"					"Nejvíce zabitých slepic:"
+		"accolade_chickenskilled_value"					"{s:accolade-value-string}"
+
+		"accolade_chickenskilled_2"						"Šéfkuchař"
+		"accolade_chickenskilled_desc_2"				"Zabité slepice:"
+
+		"accolade_killswhileblind"						"Slepá spravedlnost"
+		"accolade_killswhileblind_desc"					"Nejvíce zabití naslepo:"
+		"accolade_killswhileblind_value"				"{s:accolade-value-string}"
+
+		"accolade_killswhileblind_2"					"Šťastlivec"
+		"accolade_killswhileblind_desc_2"				"Zabití naslepo:"
+
+		"accolade_bombcarrierkills"						"Obránce"
+		"accolade_bombcarrierkills_desc"				"Nejvíce zabití hráčů s bombou:"
+		"accolade_bombcarrierkills_value"				"{s:accolade-value-string}"
+
+		"accolade_bombcarrierkills_2"					"Strážce"
+		"accolade_bombcarrierkills_desc_2"				"Zabití hráčů s bombou:"
+
+		"accolade_burndamage"							"Pyroman"
+		"accolade_burndamage_desc"						"Nejvyšší poškození hořením:"
+		"accolade_burndamage_value"						"{s:accolade-value-string}"
+
+		"accolade_burndamage_2"							"Žhář"
+		"accolade_burndamage_desc_2"					"Poškození hořením:"
+
+		"accolade_cashspent"							"Velký investor"
+		"accolade_cashspent_desc"						"Nejvíce utracených peněz:"
+		"accolade_cashspent_value"						"{s:accolade-value-string} $"
+
+		"accolade_cashspent_2"							"Investor"
+		"accolade_cashspent_desc_2"						"Utracené peníze:"
+
+		"accolade_uniqueweaponkills"					"Maximální univerzál"
+		"accolade_uniqueweaponkills_desc"				"Nejvíce zabití různými zbraněmi:"
+		"accolade_uniqueweaponkills_value"				"{s:accolade-value-string}"
+
+		"accolade_uniqueweaponkills_2"					"Univerzál"
+		"accolade_uniqueweaponkills_desc_2"				"Zabití různými zbraněmi:"
+
+		"accolade_dinks"								"Zkušený kadeřník"
+		"accolade_dinks_desc"							"Nejvíce headshotů bez zabití:"
+		"accolade_dinks_value"							"{s:accolade-value-string}"
+
+		"accolade_dinks_2"								"Kadeřník"
+		"accolade_dinks_desc_2"							"Headshoty bez zabití:"
+
+		"accolade_taserkills"							"Bůh blesků"
+		"accolade_taserkills_desc"						"Nejvíce zabití Zeusem:"
+		"accolade_taserkills_value"						"{s:accolade-value-string}"
+
+		"accolade_taserkills_2"							"Nabíječ"
+		"accolade_taserkills_desc_2"					"Zabití Zeusem:"		
+
+		"accolade_knifekills"							"Rozparovač"
+		"accolade_knifekills_desc"						"Nejvíce zabití nožem:"
+		"accolade_knifekills_value"						"{s:accolade-value-string}"
+
+		"accolade_knifekills_2"							"Intimní zabiják"
+		"accolade_knifekills_desc_2"					"Zabití nožem:"			
+
+		"accolade_gimme_01"								"Morální podpora"
+		"accolade_gimme_02"								"Účastník"
+		"accolade_gimme_03"								"Záložník"
+		"accolade_gimme_04"								"Záskok"
+		"accolade_gimme_05"								"Zahřívač střídačky"
+		"accolade_gimme_06"								"Samozvaný generál"
+		"accolade_gimme_07"								"Brouk Pytlík"
+		"accolade_gimme_08"								"Neznámý vojín"
+		"accolade_gimme_09"								"Pan Nikdo"
+		"accolade_gimme_10"								"Chybějící článek"
+		"accolade_player_score"							"Skóre: {d:score-value-int}"
+
+
+		"playercardstats_adr_title"						"PP/K"
+		"playercardstats_adr_value"						"{d:playercardstats-adr}"
+
+		"playercardstats_kda_title"						"Z/S/A"
+		"playercardstats_kda_value"						"{d:playercardstats-kills}/{d:playercardstats-deaths}/{d:playercardstats-assists}"
+
+		"playercardstats_k_title"						"Zabití"
+		"playercardstats_k_value"						"{d:playercardstats-kills}"
+
+		"playercardstats_d_title"						"Smrti"
+		"playercardstats_d_value"						"{d:playercardstats-deaths}"
+
+		"playercardstats_a_title"						"Asistence"
+		"playercardstats_a_value"						"{d:playercardstats-assists}"
+
+		"playercardstats_score_title"					"Skóre"
+		"playercardstats_score_value"					"{d:playercardstats-score}"
+
+		"playercardstats_hsp_title"						"% HS"
+		"playercardstats_hsp_value"						"{d:playercardstats-hsp} %"
+
+		"playercardstats_ef_title"						"OSLEPENÍ NEPŘÁTELÉ"
+		"playercardstats_ef_value"						"{d:playercardstats-ef}"
+
+		"playercardstats_ud_title"						"POŠKOZENÍ GRANÁTY"
+		"playercardstats_ud_value"						"{d:playercardstats-ud}"
+
+		"playercardstats_gglevel_title"					"Úroveň"
+		"playercardstats_gglevel_value"					"{d:playercardstats-gglevel}"
+
+		"playercardstats_kk_title"						"Zabití nožem"
+		"playercardstats_kk_value"						"{d:playercardstats-knifekills}"
+
+
+		"eom-vote-for-next-map"							"Hlasuj pro další mapu"
+		
+		"eom-survival-damage-taken"						"Utržené poškození"
+		"eom-survival-damage-given"						"Udělené poškození"
+
+
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	STATS
+		//
+		///////////////////////////////////////////////////////////
+
+		"playerstats_mode_comp_all"			"Všechny 5 na 5"
+		"playerstats_mode_comp_capt"		"Premier"
+		"playerstats_mode_comp_active"		"Kompetitivní s bombou"
+		"playerstats_mode_comp_other"		"Kompetitivní s rukojmími"
+		"playerstats_mode_comp_scrim"		"Cvičné"
+		"playerstats_mode_2v2_all"			"Bratr ve zbrani (všechny)"
+		"playerstats_mode_2v2_active"		"Bratr ve zbrani (aktivní služba)"
+		"playerstats_mode_2v2_other"		"Bratr ve zbrani (záloha)"
+
+		"playerstats_weapons"					"Statistiky zbraní"
+		"playerstats_heatmap"					"Tepelné mapy"
+		"playerstats_matchlister"				"Zápasy"
+		"playerstats_stats"						"Statistiky"
+
+		"playerstats_matchlister_separator"		"{s:separator_title}"
+
+		"playerstats_weapon_tooltip_counts"		"Zabití: {d:kills}"
+		"playerstats_weapon_tooltip_kd"			"Z/S: {s:score}"
+
+		"playerstats_map_tooltip_win_loss_tie"	"Výhry/prohry/remízy"
+		"playerstats_map_tooltip_rndwin_rndloss"	"Výhry/prohry kol"
+		"playerstats_map_tooltip_round_winrate"	"Vyhraná kola"
+		"playerstats_map_tooltip_match_winrate"	"Vyhrané zápasy"
+
+		"playerstats_forceretry"				"Spojení se serverem uchovávajícím statistiky bylo ztraceno.\nKliknutím na „OK“ se zkusíš znovu připojit."
+		"playerstats_no_data"					"Ve vybraném časovém rozpětí a módu nemáš žádná data. Změň své filtry, nebo jdi hraním vytvořit své statistiky."
+		"playerstats_link"						"Spravovat předplatné"
+		"playerstats_link_reactivate"			"Obnovit předplatné"
+		"playerstats_link_get"					"Aktivovat předplatné"
+
+		"playerstats_subscription_expire_warning"		"<b>Jsou zaznamenávány statistiky</b> – předplatné <b>vyprší ke dnešnímu dni</b>"
+		"playerstats_subscription_renew_automatically"	"<b>Jsou zaznamenávány statistiky</b> – předplatné bude automaticky obnoveno za {d:days} dní"
+		"playerstats_subscription_renew_unknown"		"<b>Jsou zaznamenávány statistiky</b> – předplatné vyprší za {d:days} dní"
+		"playerstats_subscription_renew_manually"		"<b>Jsou zaznamenávány statistiky</b> – předplatné vyprší za {d:days} dní a <b>nebude automaticky obnoveno</b>"
+		"playerstats_subscription_expired"				"<b>Předplatné vypršelo</b> – pro záznam nových statistik obnov své předplatné"
+		"playerstats_subscription_not_enrolled"			"<b>Předplatné není aktivní</b> – pro záznam nových statistik aktivuj předplatné"
+		"playerstats_subscription_buy_button"			"AKTIVOVAT PŘEDPLATNÉ\n{s:price} MĚSÍČNĚ"
+
+		"playerstats_past_14"					"Za posledních 14 dní"
+		"playerstats_past_30"					"Za posledních 30 dní"
+		"playerstats_past_90"					"Za posledních 90 dní"
+		"playerstats_alltime"					"Za celou dobu"
+
+		"stat_best_map"							"Nejlepší mapa"
+		"stat_best_map_desc"					"Mapa, na které máš nejvyšší poměr vyhraných vůči prohraným kolům"
+
+		"stat_best_weapon"						"Nejlepší zbraně"
+
+		"stat_best_mate"						"Nejlepší spoluhráč"
+		"stat_best_mate_desc"					"Spoluhráč, který ti pomohl dosáhnout nejvyššího poměru vyhraných vůči prohraným kolům"
+
+		"matchstat_abandoned"					"* Tento zápas jsi opustil před koncem"
+
+		"playerstats_suffix_per_round"			"za kolo"
+		"playerstats_suffix_per_cent"			"%"
+
+		"playerstats_per_round"			"{s:value} za kolo"
+		"playerstats_per_cent"			"{s:value}%"
+		"playerstats_no_units"			"{s:value}"	
+
+		"playerstats_percentile"		"Tvé hodnocení ({s:tt_value}) je lepší než hodnocení {s:tt_rank} % všech vlastníků vstupenky"
+		"playerstats_percentile_subscribers"	"Tvé hodnocení ({s:tt_value}) je lepší než hodnocení {s:tt_rank} % všech předplatitelů"
+
+
+		"playerstats_mapwinrate"		"Úspěšnost dle map"
+		"playerstats_mapwinrate_rounds"	"Kola"
+		"playerstats_mapwinrate_matches" "Zápasy"
+
+		"stat_total_score"				"Skóre"
+		"stat_average_score"			"Skóre za kolo"
+
+		"stat_total_kills"				"Zabití"
+		"stat_average_kills"			"Zabití za kolo"
+
+		"stat_total_deaths"				"Smrti"
+	//	"stat_average_deaths"			"stat_average_deaths"		
+
+		"stat_total_health_removed"		"Poškození"	
+		"stat_average_health_removed"	"PP/K"
+
+		"stat_average_kd"				"Zabití/smrti"
+		"stat_average_kd_short"			"Z/S"
+
+		"stat_average_hsp"				"stat_average_hsp"
+
+		"stat_total_2k"					"2Z"
+		"stat_total_3k"					"3Z"
+		"stat_total_4k"					"4Z"
+
+		"stat_grenades"					"Výbušné granáty"
+		"stat_total_grenade"			"Hody"
+		"stat_average_grenade"			"Úspěšnost"
+		"stat_grenades_desc"			"Procento hozených výbušných granátů, které udělily poškození alespoň 1 nepříteli"			
+
+		"stat_flash"					"Oslepující granáty"
+		"stat_total_flash"				"Hody"
+		"stat_average_flash"			"Úspěšnost"
+		"stat_flash_desc"				"Procento hozených oslepujících granátů, které oslepily alespoň 1 nepřítele"
+
+		"stat_entry"					"Úvodní zabití"
+		"stat_average_entrykd"			"ÚZ/S"
+		"stat_total_entry_attempts"		"Celkem"
+		"stat_entry_desc"				"Poměr prvních zabití vůči prvním smrtím"
+
+		"stat_total_wins"				"Výhry"
+		"stat_total_losses"				"Prohry"
+		"stat_total_ties"				"Remízy"
+
+		"stat_total_rounds_played"		"Kola"
+
+		"stat_1vx"						"1 na X"
+
+		"stat_1v1"						"1 na 1"
+
+		"stat_average_1v1"				"Úspěšnost"				
+		"stat_total_1v1_attempts"		"Příležitosti"		
+
+		"stat_1v2"						"1 na 2"
+
+		"stat_average_1v2"				"Úspěšnost"			
+		"stat_total_1v2_attempts"		"Příležitosti"		
+
+		"num_matches"					"Odehrané zápasy"
+
+		"playerstat_name_0"				"Skóre"
+		"playerstat_name_0_long"		"Skóre za kolo"
+		"playerstat_name_0_desc"		"Skóre za kolo: {s:value}\nCelkové skóre: {d:total}"
+
+
+		"playerstat_name_1"				"Zabití"
+		"playerstat_name_1_long"		"Zabití za kolo"
+		"playerstat_name_1_desc"		"Průměr zabití za kolo: {s:value}\nCelkem zabití: {d:total}"
+
+		"playerstat_name_2"				"POŠK"
+		"playerstat_name_2_long"		"Poškození za kolo"
+		"playerstat_name_2_desc"		"Průměr poškození za kolo: {s:value}\nCelkové poškození: {d:total}"	
+
+		"playerstat_name_2.1"			"Poškození"
+		"playerstat_name_2.5"			"PP/K"		
+
+		"playerstat_name_3"				"Z/S"
+		"playerstat_name_3_long"		"Poměr zabití a smrtí"
+		"playerstat_name_3_desc"		"Poměr zabití vůči smrtím: {s:value}"		
+
+		"playerstat_name_4"				"HS"
+		"playerstat_name_4_long"		"Poměr headshotů a zabití"
+		"playerstat_name_4_desc"		"Procento zabití provedených headshoty: {s:value}\nCelkem zabití headshoty: {d:total}"	
+
+		"playerstat_name_4.5"			"% HS"		
+
+		"playerstat_name_5"				"2Z"
+		"playerstat_name_5_long"		"2 zabití"
+		"playerstat_name_5_desc"		"Celkem kol se 2 zabitími: {s:value}"	
+
+		"playerstat_name_6"				"3Z"
+		"playerstat_name_6_long"		"3 zabití"
+		"playerstat_name_6_desc"		"Celkem kol se 3 zabitími: {s:value}"		
+
+		"playerstat_name_7"				"4Z"
+		"playerstat_name_7_long"		"4 zabití"
+		"playerstat_name_7_desc"		"Celkem kol se 4 zabitími: {s:value}"
+
+		"playerstat_name_7.5"			"Více zabití"
+	
+		"playerstat_name_8"				"VG"
+		"playerstat_name_8_long"		"Efektivní výbušné granáty"
+		"playerstat_name_8_desc"		"Procento výbušných granátů, které zasáhly min. 1 nepřítele: {s:value}\nCelkem výbušných granátů, které zasáhly min. 1 nepřítele: {d:total}"			
+
+		"playerstat_name_9"				"OG"
+		"playerstat_name_9_long"		"Efektivní oslepující granáty"		
+		"playerstat_name_9_desc"		"Procento oslepujících granátů, které oslepily min. 1 nepřítele: {s:value}\nCelkem oslepujících granátů, které oslepily min. 1 nepřítele: {d:total}"
+
+		"playerstat_name_10"			"1 na 1"
+		"playerstat_name_10_long"		"Potyčky 1 na 1"
+		"playerstat_name_10_desc"		"Procento vyhraných potyček 1 na 1: {s:value}\nCelkem vyhraných potyček 1 na 1: {d:total}"	
+
+		"playerstat_name_11"			"1 na 2"
+		"playerstat_name_11_long"		"Potyčky 1 na 2"
+		"playerstat_name_11_desc"		"Procento vyhraných potyček 1 na 2: {s:value}\nCelkem vyhraných potyček 1 na 2: {d:total}"	
+
+		"playerstat_name_12"			"ÚZ"
+		"playerstat_name_12_long"		"Úvodní zabití"
+		"playerstat_name_12_desc"		"Poměr prvních zabití vůči prvním smrtím: {s:value}\nCelkem prvních zabití: {d:total}"
+
+		"stats_graph_button_0"			"Skóre za kolo"
+		"stats_graph_button_1"			"Zabití za kolo"
+		"stats_graph_button_2"			"Průměr. poškození za kolo"
+		"stats_graph_button_3"			"Poměr zabití a smrtí"
+		"stats_graph_button_4"			"Procento headshotů"
+
+		"ris_score"								"Skóre kola"
+		"ris_t"									"T"
+		"ris_ct"								"CT"
+		"ris_team-title"						"Šance tvého týmu na výhru"
+		"ris_wins"								"Vyhráli {s:ris_team}!"
+
+		"ris_win"								"výhra"
+		"ris_loss"							"prohra"
+
+		"ris_hits"								"v {s:num_hits} zásazích"
+		
+		"prdr_health_removed"					"{d:health_removed} v {d:num_hits}"
+		"prdr_return_health_removed"				"{d:return_health_removed} v {d:return_num_hits}"
+
+		"season_stat_title_wins"		"VÝHRY"
+        "season_stat_title_ties"		"REMÍZY"
+        "season_stat_title_losses"		"PROHRY"
+        "season_stat_title_rounds"		"KOLA"
+        "season_stat_title_kills"		"ZABITÍ"
+        "season_stat_title_headshots"	"HEADSHOTY"
+		"season_stat_title_hs_percent"	"% HS"
+        "season_stat_title_assists"		"ASISTENCE"
+        "season_stat_title_deaths"		"SMRTI"
+        "season_stat_title_mvps"		"NEJ. HRÁČ"
+        "season_stat_title_rounds_3k"	"3Z"
+        "season_stat_title_rounds_4k"	"4Z"
+        "season_stat_title_rounds_5k"	"5Z"
+		"season_stat_title_kpr"			"ZZK"
+		"season_stat_title_kd"			"Z/S"
+		"season_stat_title_best_map"	"NEJLEPŠÍ MAPA"
+		"season_stat_title_win_percent"	"% VÝHER"
+		"season_stat_title_matches_played"	"ZÁPASY"
+		"season_stat_title_achieved_week"	"NEJVYŠŠÍHO RATINGU BYLO DOSAŽENO V TÝDNU OD"
+		"season_stat_value_kd"				"{s:kdratio}"
+		"season_stat_value_win_percent"		"{s:win-percent} %"
+		"season_stat_value_hs_percent"		"{s:hs-percent} %"
+		"season_section_rank"				"NEJVYŠŠÍ RATING"
+		"season_section_season_stats"		"STATISTIKY SEZÓNY"
+		"season_section_rank_history"		"HISTORIE RATINGU"
+		"season_section_rank_activity"		"ODEHRANÉ ZÁPASY"
+		"season_section_rank_map_stats"		"STATISTIKY MAP"
+		"season_section_rank_map_wins_graph"	"VÝHRY PODLE MAP"
+		"season_section_graph_x_axis_label_min"		"{d:week_min}. TÝDEN"
+		"season_section_graph_x_axis_label_max"		"{d:week_max}. TÝDEN"
+		"tooltip-no-map-stats"			"Pro tuto mapu nemáš k dispozici žádné statistiky"
+		"tooltip-season-rank-week-idx"		"{s:week-id}. TÝDEN"
+		"tooltip-season-rank-week-name"		"{s:week-name}"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	WIN PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_winpanel_mvp_award"				"Nejlepší hráč"
+		"Panorama_winpanel_mvp_award_kills"			"Nejlepší hráč"
+		"Panorama_winpanel_mvp_award_ace"			"Nejlepší hráč za vystřihnutí esa"
+		"Panorama_winpanel_mvp_award_bombplant"		"Nejlepší hráč za položení bomby"
+		"Panorama_winpanel_mvp_award_bombdefuse"	"Nejlepší hráč za zneškodnění bomby"
+		"Panorama_winpanel_mvp_award_rescue"		"Nejlepší hráč za záchranu rukojmího"
+		"Panorama_winpanel_mvp_award_score"			"Nejlepší hráč za nejvyšší skóre"
+		"Panorama_winpanel_mvp_award_inferno"		"Nejlepší hráč za udělení značného poškození ohněm"
+		"Panorama_winpanel_mvp_award_blast"			"Nejlepší hráč za udělení značného poškození výbušninami"
+		"Panorama_winpanel_mvp_award_bombdefuse_clutch"	"Nejlepší hráč za zneškodnění bomby proti přesile"
+		"Panorama_winpanel_mvp_award_bombplant_clutch"	"Nejlepší hráč za položení a ubránění bomby"
+		"Panorama_winpanel_mvp_award_gungame"		"Nejlepší hráč"
+		"Panorama_winpanel_mvp_winner"				"Nejlepší hráč"
+		"Panorama_winpanel_mvp_award_kills_three"	"Nejlepší hráč za nejvíce zabití (3)"
+		"Panorama_winpanel_mvp_award_kills_four"	"Nejlepší hráč za nejvíce zabití (4)"
+
+		"Panorama_WinPanel_rank_awarded_multi"	"Dosáhl jsi {d:rank_increase} nových úrovní!"
+
+		"Panorama_WinPanel_rank_name_string"	"{s:current_best_cat} <font color='#CCCCCC'>({s:current_rank_cat})</font>"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	WATCH PANEL
+		//
+		///////////////////////////////////////////////////////////
+		
+		"WatchMenu_Watch"					"Sledovat"
+		"WatchMenu_Tournament_Versus"		"vs."
+		"WatchMenu_Outcome_Tied"			"Remizovali"
+		"WatchMenu_Outcome_Abandon"			"Opustili"
+		"WatchMenu_Outcome_Won"				"<img src='file://{images}/icons/ui/trophy.svg' width='15' height='15'/> Výhra"
+		"WatchMenu_Outcome_Lost"			"Prohra"
+		"WatchMenu_Expand_Match_Menu"		"Více"
+		"WatchMenu_Get_Share_Link"			"Kopírovat kód pro sdílení zápasu"
+		"WatchMenu_Share_Link_Copied"		"Odkaz byl zkopírován do schránky"
+		"WatchMenu_Download_Demo"			"Stáhnout demo"
+		"WatchMenu_Watch_Live"				"Sledovat živě"
+		"WatchMenu_Watch_Highlights"		"Přehrát významné okamžiky"
+		"WatchMenu_Watch_Lowlights"			"Přehrát nepovedené okamžiky"
+		"WatchMenu_Watch_Highlights_Player_Selected"	"Přehrát významné okamžiky hráče {s:playerNameTitle}"
+		"WatchMenu_Watch_Lowlights_Player_Selected"	"Přehrát nepovedené okamžiky hráče {s:playerNameTitle}"
+		"WatchMenu_Delete"					"Smazat místní soubory dema"
+		"WatchMenu_Downloading"				"Stahování"
+		"WatchMenu_Info_Download_Failed"	"Stahování nebylo dokončeno"
+		"WatchMenu_Info_Download_Failed_Retry" "Opakovat stahování souborů dema?"
+		"WatchMenu_Info_Download_Failed_Info" "Stahování nebylo dokončeno. Můžeš si prohlédnout tabulku statistik, ale zápas si nepřehraješ."
+		"WatchMenu_Download_Disabled_Hint"	"Demo zápasu vypršelo a už jej není možné stáhnout."
+		"WatchMenu_Tournament_BulletPoint"	"<ul>
+<li>Sleduj zápasy a pomocí samolepek týmů tipuj výsledky skupinové fáze a playoff.</li>
+<li>Za každý správný tip obdržíš body potřebné pro zisk trofeje, kterou si budeš moci vystavit na svém herním profilu i na profilu ve službě Steam.</li>
+<li>Tipy na skupinovou fázi musíš zadat před jejím začátkem.</li>
+<li>Stejně tak tipy na playoff musíš zadat ještě, než začne.</li>
+</ul>"
+		"WatchMenu_Viewer"				"Divák"
+		"WatchMenu_Viewers"				"diváků"
+		"WatchMenu_Viewers_dv:f"		"{spectatorCount, plural, one{{d:spectatorCount} divák} few{{d:spectatorCount} diváci} many{{d:spectatorCount} diváka} other{{d:spectatorCount} diváků}}"
+		"WatchMenu_FirstHalf"			"První polovina"
+		"WatchMenu_SecondHalf"			"Druhá polovina"
+		"WatchMenu_Overtime"			"Prodloužení"
+		"MatchInfo_FirstRound"			"1. kolo"
+		"MatchInfo_Halftime"			"Poločas"
+		"MatchInfo_Overtime"			"Prodloužení"
+		"MatchInfo_RoundDataTitle"      "Výkony hráče {s:playerNameTitle} v jednotlivých kolech"
+		"MatchInfo_Date"				"{s:day}. {s:month}"
+		
+		"MatchInfo_Date_Tournament_Month_Short_8"	"říj."		
+		"MatchInfo_Date_Tournament_Month_Final_Short_8"	"lis."
+		"MatchInfo_Date_Tournament_Month_Short_9"	"bře."
+		"MatchInfo_Date_Tournament_Month_Short_9_1"	"dub."
+		"MatchInfo_Date_Tournament_Month_Final_Short_9"	"dub."
+		"MatchInfo_Date_Tournament_Month_Short_10"	"čvc."
+		"MatchInfo_Date_Tournament_Month_Short_10_1"	"čvc."
+		"MatchInfo_Date_Tournament_Month_Final_Short_10"	"čvc."
+		"MatchInfo_Date_Tournament_Month_Short_11"	"led."
+		"MatchInfo_Date_Tournament_Month_Short_11_1"	"led."
+		"MatchInfo_Date_Tournament_Month_Final_Short_11"	"led."
+		"MatchInfo_Date_Tournament_Month_Short_12"	"čvc."
+		"MatchInfo_Date_Tournament_Month_Short_12_1"	"čvc."
+		"MatchInfo_Date_Tournament_Month_Final_Short_12"	"čvc."
+		"WatchMenu_PickEm_ComingSoon"	"Seznam předešlých a nadcházejících tipovacích soutěží a soutěží Fantasy týmů."
+		"WatchMenu_ViewerCount"	"{s:numberOfViewers} diváků na {s:channel}"
+		"Matchlist_Team_Selection"	"Všechny týmy"
+
+
+		"pickem_timer_inactive"		"Na tyto zápasy momentálně nelze tipovat"
+		"pickem_timer"				"Na zadání tipů máš ještě {s:time}"
+		"pickem_timer_upsell"		"Na zadání tipů máš ještě <b>{s:time}</b>. Kup si vstupenku, aby ses mohl zúčastnit tipovací soutěže a vyhrát žetony suvenýrů!"
+		"pickem_timer_locked"		"Tipy jsou uzamčeny"
+		"pickem_points_earned" 		"Získané body"
+		"pickem_correct_pick" 		"Správný tip"
+		"pickem_points_needed_next_level" 	"Na <b>{s:level}</b> trofej potřebuješ ještě <b>{d:points}</b> {s:plural}"
+		"pickem_points_result" 		"Získal jsi <b>{s:result-level}</b> trofej tipovací soutěže"
+		"pickem_points_result_bronze" "Získal jsi <b>bronzovou</b> trofej tipovací soutěže"
+		"pickem_points_result_silver" "Získal jsi <b>stříbrnou</b> trofej tipovací soutěže"
+		"pickem_points_result_gold" "Získal jsi <b>zlatou</b> trofej tipovací soutěže"
+		"pickem_point"				"bod"
+		"pickem_points"				"bodů"
+		"pickem_level_bronze"		"bronzovou"
+		"pickem_level_silver"		"stříbrnou"
+		"pickem_level_gold"			"zlatou"
+		"pickem_group_pick_worth"	"Za každý správný tip získáš <b>{d:points} {s:plural} </b>"
+		"pickem_pick_correct_points_earned"	"+ <b>{d:points}</b> {s:plural}"
+		"pickem_pick_drag_hint" 	"Sem přetáhni tým"
+		"pickem_pick_undefeated"	"<b>Tipni si</b> tým, který <b>postoupí bez jediné prohry</b>"
+		"pickem_pick_eliminated"	"<b>Tipni si</b> tým, který <b>vypadne bez jediné výhry</b>"
+		"pickem_get_items" 			"Zakoupit samolepky"
+		"pickem_get_items_tooltip" 	"Pro aktualizování svých tipů budeš potřebovat následující samolepky: <br><br>"
+		"pickem_place_picks" 		"Aktualizovat tipy"
+		"pickem_confirm_picks" 		"Potvrzení tipů"
+		"pickem_confirm_Warning"	"<b>Následující samolepky budou použity pro tipovací soutěž.</b>\n\nTyto samolepky zůstanou ve tvém inventáři a budeš je moci nalepit na libovolnou zbraň nebo je po skončení probíhající fáze šampionátu vyměnit.\n\n<span class=\"premier-pickban__title__text-red\">\nDokud však neskončí probíhající fáze šampionátu, tyto samolepky budou uzamčeny a nebude je možné znovu použít ani vyměnit. Pokud odebereš svůj tip, uzamčení dané samolepky tím nezrušíš.</span>\n"
+		"pickem_confirm_ClearAll"	"<b>Pro tipovací soutěž nebudou použity žádné samolepky.</b>\n\nDříve použité samolepky zůstanou ve tvém inventáři a budeš je moci nalepit na libovolnou zbraň nebo je po skončení probíhající fáze šampionátu vyměnit.\n"
+		"pickem_confirm_stickes_for_lock" 	"Chybějící samolepky"
+		"pickem_confirm_not_owned" 		"<b>Tipy nelze zadat.</b><span class=\"premier-pickban__title__text-red\">\nPro aktualizování svých tipů potřebuješ samolepky odpovídajících týmů.</span>"
+		"pickem_apply_emptyslots"		"Pro aktualizaci zadaných tipů je musíš zadat všechny. Přetáhni proto týmy do zbývajících prázdných slotů a potvrď své předpovědi kliknutím na tlačítko „Aktualizovat tipy“."
+		"pickem_apply_timeout"			"Nepodařilo se nám aktualizovat tvé tipy. Zkus to později znovu."
+		"pickem_apply_drag_hint"	"Sem přetáhni svůj tip"
+		"pickem_apply_immediate" 		"Aktualizování tipů..."
+		"pickem_save_all" 			"ULOŽIT TIPY"
+		"pickem_make_picks" 		"ZADANÉ TIPY: {d:user-picks}/{d:total-picks}"
+		"pickem_drag_picks" 		"Přetažením zadej své tipy"
+		"pickem_reveal_all_results" "Zobrazit konečné výsledky"
+		"pickem_saved" 		"Tipy uloženy"
+		"pickem_teams_tbd" 	"Týmy budou určeny"
+		"pickem_challenge_section_title" "TIPOVACÍ SOUTĚŽ"
+		"pickem_items_section_title" "PŘEDMĚTY ŠAMPIONÁTU"
+		"pickem_items_tab_opening_stage" "ÚVODNÍ FÁZE"
+		"pickem_items_tab_elim_stage" "VYŘAZOVACÍ FÁZE"
+		"pickem_items_tab_stage_i" "První fáze"
+		"pickem_items_tab_stage_ii" "Druhá fáze"
+		"pickem_items_tab_stage_iii" "Třetí fáze"
+		"pickem_items_tab_playoff_stage" "PLAYOFF"
+		"pickem_teams_remove_all_tooltip" 	"Zrušit všechny tipy"
+		"pickem_teams_fill_tooltip" 	"Náhodně zaplnit prázdná místa"
+		"pickem_versus"				"VS."
+		"pickem_submit_warning"		"{s:pass-name} není aktivována"
+		"pickem_submit_warning_tooltip"		"{s:pass-name} musí být aktivována, aby bylo možné dokončovat úkoly. Vstupenka musí být aktivována před uzamčením tipů dané fáze šampionátu."
+		"pickem_submit_warning_popup_title"	"Uložit tipy bez aktivované vstupenky"
+		"pickem_submit_warning_popup_desc"	"{s:pass-name} musí být aktivována, aby bylo možné dokončovat úkoly. Vstupenka musí být aktivována před uzamčením tipů dané fáze šampionátu."
+		"pickem_submit_warning_popup_action""Uložit tipy bez aktivované vstupenky"
+		"pickem_submit_warning_popup_action2"	"Aktivovat vstupenku a uložit tipy"
+		"contextmenu_pickem_souvenir_title" 	"Vyber mapu, ze které si chceš vyzvednout suvenýr"
+		"contextmenu_pickem_souvenir_no_result" 	"Suvenýr z tohoto zápasu si budeš moci vyzvednout až po jeho skončení"
+		"mainmenu_major_hub"	"CENTRUM A PŘEDMĚTY ŠAMPIONÁTU"
+		"mainmenu_major_hub_items"	"Nově jsou dostupné také samolepky"
+		"mainmenu_major_hub_no_items" "CENTRUM ŠAMPIONÁTU"
+
+		"pickem_swiss_group_00"									"0:0"
+		"pickem_swiss_group_10"									"1:0"
+		"pickem_swiss_group_11"									"1:1"
+		"pickem_swiss_group_12"									"1:2"
+		"pickem_swiss_group_20"									"2:0"
+		"pickem_swiss_group_21"									"2:1"
+		"pickem_swiss_group_22"									"2:2"
+		"pickem_swiss_group_01"									"0:1"
+		"pickem_swiss_group_02"									"0:2"
+
+		"pickem_swiss_group_30"									"3:0 – postupují"
+		"pickem_swiss_group_3x"									"3:1 3:2\n postupují"
+		"pickem_swiss_group_13"									"1:3 – vypadávají"
+		"pickem_swiss_group_23"									"2:3 – vypadávají"
+		"pickem_swiss_group_03"									"0:3 – vypadávají"
+
+
+
+
+
+
+
+		// WATCH EVENTS
+
+		"eventsched_lan"												"LAN událost"
+		"eventsched_online"											"Online událost"
+		"eventsched_show_online"								"Zobrazit online události"
+		"eventsched_date_format"								"{s:eventsched_date_day} {s:eventsched_date_month}"
+		"eventsched_versus"											"vs."
+		"eventsched_ongoing"										"Probíhá"
+		"eventsched_tbd"												"bude určeno"
+		"eventsched_live"												"ŽIVÝ ZÁPAS"
+		"eventsched_link"												"Detaily na HLTV.org"
+		"eventsched_event_link"									"Detaily události na HLTV.org"
+		"eventsched_match_link"									"Detaily zápasu na HLTV.org"
+		"eventsched_team_link"									"Detaily týmu na HLTV.org"	
+		"eventsched_no_streams"									"Přenosy nejsou dostupné"
+		"eventsched_watch_on_gotv"								"Sledovat na CSTV"
+		"eventsched_favorite_tt"								"{s:favorite_tooltip}"
+		"eventsched_favorite_tooltip_prime"			"Živé zápasy oblíbených událostí se\nti budou zobrazovat v hlavní nabídce."
+		"eventsched_favorite_tooltip_not_prime" "Pro přidání události do oblíbených musíš disponovat primárním statusem."
+		"eventsched_match_tooltip"							"{s:watchnotice_teamname_1} vs. {s:watchnotice_teamname_2}"
+		"eventsched_stream_watch"								"{s:stream_site}"
+		"eventsched_hltv"												"Informace o událostech jsou poskytovány stránkou HLTV.org"
+		"eventsched_country"										"{s:eventsched_country}"
+		"eventsched_no_live_matches"						"Momentálně neprobíhají žádné zápasy."
+		"eventsched_featured"										"Nejoblíbenější událost měsíce {s:eventsched_fave_month}."
+		"eventsched_official"										"Toto je událost spojená s velkým šampionátem ve hře Counter-Strike."
+
+		"WatchNotice_Reason_Official"						"Tato událost je vybraná, protože je spojená s velkým šampionátem ve hře Counter-Strike."
+		"WatchNotice_Reason_Personal"						"Tato událost se zobrazuje, protože sis ji přidal do oblíbených."
+		"WatchNotice_Reason_Community"					"Tato událost je vybraná, protože je nejoblíbenější událostí za měsíc {s:watchnotice_fave_month}."
+		"WatchNotice_Watch"											"Sledovat"
+
+	
+		// Used with formatText.AbbreviateNumber()
+		///////////////////////////////////////////
+		"NumberAbbreviation_E3"			"{s:abbreviated_number} tis."
+		
+		// Note to translators: Add as needed. Code will use only available strings. example:
+		// "NumberAbbreviation_E4"		"{s:abbreviated_number}万"	
+
+		"NumberAbbreviation_E6"			"{s:abbreviated_number} mil."
+		"NumberAbbreviation_E9"			"{s:abbreviated_number} mld."
+		"NumberAbbreviation_E12"		"{s:abbreviated_number} bil."
+
+		// Used with formatText.SplitAbbreviateNumber()
+		///////////////////////////////////////////
+		"NumberAbbreviation_suffix_E3"			"tis."
+		
+		// Note to translators: Add as needed. Code will use only available strings. example:
+		// "NumberAbbreviation_suffix_E4"		"万"	
+
+		"NumberAbbreviation_suffix_E6"			"mil."
+		"NumberAbbreviation_suffix_E9"			"mld."
+		"NumberAbbreviation_suffix_E12"			"bil."
+
+
+		"digitpanel_digits"			 " 0123456789,.-+?"
+		"digitpanel_digits_premier" " 1234567890,?"
+
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	OVERWATCH
+		//
+		///////////////////////////////////////////////////////////
+		
+		"Panorama_Overwatch_Downloading"		"Stahování souborů případu..."
+		"Panorama_Overwatch_Review"				"Přezkoumání případu zabere několik minut."
+		"Panorama_Overwatch_Welcome"			"Dozor hry Counter-Strike 2"
+		"Panorama_Overwatch_Tooltip_p1"			"Protože jsi vyšetřovatel Dozoru, je tvojí prací přezkoumávat záznamy ze zápasů hry CS2 na oficiálních serverech a rozhodovat o tom, zdali došlo k nevhodnému chování. Vždy když tedy zhlédneš záznam, budeš požádán o vynesení verdiktu nad daným podezřelým."
+		"Panorama_Overwatch_Tooltip_sh1"		"1. krok"
+		"Panorama_Overwatch_Tooltip_p2"			"Vpravo dole klikni na tlačítko „STÁHNOUT DŮKAZ“."
+		"Panorama_Overwatch_Tooltip_sh2"		"2. krok"
+		"Panorama_Overwatch_Tooltip_p3"			"Po stažení klikni na tlačítko „PŘEZKOUMAT DŮKAZ“ a zhlédni záznam z pohledu podezřelého hráče."
+		"Panorama_Overwatch_Tooltip_sh3"		"3. krok"
+		"Panorama_Overwatch_Tooltip_p4"			"Až záznam skončí, vyber pro každou otázku jednu z nabízených možností a klikni na tlačítko „ODESLAT VERDIKT“."
+		"Panorama_Overwatch_Major_Disruption"	"Závažný přestupek"
+		"Panorama_Overwatch_Minor_Disruption"	"Méně závažný přestupek"
+		"Panorama_Overwatch_Res_Griefing"		"Kazení hry"
+		"Panorama_Overwatch_Res_AimHacking"		"Použití podpory míření"
+		"Panorama_Overwatch_Res_WallHacking"	"Použití podpory vidění"
+		"Panorama_Overwatch_Res_SpeedHacking"	"Použití jiného externího programu"
+		
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	ROSETTA PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_CSGO_Spray_EnableMouse"			"<b>[{g:csgo_key:spray_mouse_enable}]</b> Zpřístupnit kurzor"
+		"Panorama_CSGO_Rosetta_Item_Name"			"<font color=\"{s:item_color}\">{s:item_name}</font>"
+		"Panorama_CSGO_Rosetta_Item_Count"			"Zbývající použití: {d:item_count}"
+		"Panorama_Attrib_SpraysHint"					"{s:bind_attack} Nasprejovat graffiti"
+		"Panorama_Attrib_SpraysHint_Auto"			"<b>{s:bind_spray_menu}</b> Nasprejovat graffiti"
+
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	RETICLE PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_HUD_weaponid_swap"			"<font color=\"#6a6156\">[{s:bind_use}] Vyměnit za</font> <font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+		"Panorama_HUD_weaponid_pickup"			"<font color=\"#6a6156\">[{s:bind_use}] Sebrat</font> <font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+		"Panorama_HUD_weaponid_lookat"			"<font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+		"Panorama_HUD_weaponid_holdtopickup"	"<font color=\"#6a6156\">Podržením [{s:bind_use}] seber</font> <font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+
+		"Panorama_HUD_playerid_sameteam"			"<font color='#6E7D5C'>Spojenec: {g:player_name:html:player_slot} Zdraví: {d:player_health} %</font>"
+		"Panorama_HUD_playerid_diffteam"			"<font color='#CC0000'>Nepřítel: {g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_playerid_specteam"			"<font color='#6E7D5C'>{g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_playerid_noteam"			"<font color='#FFCC00'>{g:player_name:html:player_slot} Zdraví: {d:player_health} %</font>"
+		"Panorama_HUD_playerid_overhead_shadow"		"{g:player_name:player_slot}"
+
+		"Panorama_HUD_playerid_survival_enemy"				"<font color='#CC0000'>Nepřítel</font>"
+		"Panorama_HUD_playerid_survival_hunter_target"		"<font color='#e58816'>Prioritní cíl</font>"
+
+		"Panorama_HUD_botid_request_bomb"		"<font color='#e5da25'>[{s:bind_use}] Vzít si bombu</font>"
+
+		"Panorama_HUD_hostageid_nh"				"<font color='#e5da25'>Rukojmí</font>"
+		"Panorama_HUD_hostagename_nh"			"<font color='#e5da25'>{g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_hostageid_nh_use_lead"		"<font color='#e5da25'>[{s:bind_use}] Zvednout rukojmího</font>"
+		"Panorama_HUD_hostageid_nh_following"	"<font color='#e5da25'>Rukojmí (následuje hráče {g:player_name:html:player_slot})</font>"
+
+		"Panorama_HUD_hostageid"					"<font color='#e5da25'>Rukojmí</font><font color='#dcdac0'> {d:player_health} %</font>"
+		"Panorama_HUD_hostageid_use_lead"		"<font color='#e5da25'>[{s:bind_use}] Zvednout rukojmího</font><font color='#dcdac0'> {d:player_health} %</font>"
+		"Panorama_HUD_hostageid_following"		"<font color='#e5da25'>Rukojmí (následuje hráče {s:player_name})</font><font color='#dcdac0'> {d:player_health} %</font>"
+
+
+		"Panorama_HUD_playerid_overhead_health"			"{d:player_health} %"
+		"Panorama_HUD_playerid_overhead_money"			"{d:r:player_money} $"
+
+		"Panorama_HUD_playerid_overhead_survival"					"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#00c3e1'> {d:player_health} %</font>"
+		"Panorama_HUD_playerid_overhead_survival_lowhealth"			"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#d82429'> {d:player_health} %</font>"
+		"Panorama_HUD_playerid_overhead_survival_money"				"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#7ebc50'> {d:r:player_money} $</font>"
+		"Panorama_HUD_playerid_overhead_survival_grey"				"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#dddddd'> {d:player_health} %</font>"
+		"Panorama_HUD_playerid_overhead_survival_lowhealth_grey"	"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#d82429'> {d:player_health} %</font>"
+		"Panorama_HUD_playerid_overhead_survival_money_grey"		"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#7ebc50'> {d:r:player_money} $</font>"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	DEATH PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_SurvivalEndOfMatch_ShowStats"			"[{s:bind_jump}] Zobrazit statistiky"
+		"Panorama_Death_Cancel_Start_Replay"			"[{s:bind_jump}] Přeskočit"
+		"Panorama_Death_Cancel_Replay" 				"[{s:bind_jump}] Zrušit záznam"
+		"Panorama_Death_Snapshot"						"[{s:bind_jpeg}] Zachytit tento moment"
+		"Panorama_HUD_Spectate_Navigation_Replay_Death"	"<font color='#ddbb22'><b>[{s:bind_reload}] Záznam z očí vraha</b></font>"
+
+		"Panorama_DeathPanel_Killer1_YourWeapon"			"tě zabil pomocí tvé zbraně {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_KillerWeapon"			"tě zabil pomocí své zbraně {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_OthersWeapon"			"tě zabil pomocí zbraně {s:weapon_name} hráče <font color='#adadad'>{s:other_player_name}</font>"
+		"Panorama_DeathPanel_Killer1_Weapon"				"tě zabil pomocí {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_Weapon_Plural" 		"tě zabil pomocí {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_Weapon_CustomString" 	"{s:weapon_name}"
+
+		"Panorama_DeathPanel_DamageTaken:f"					"{hits_taken, plural, one{<font color='#A0A0A0'>Utržené poškození: </font><font color='#FFFFFF'><b>{d:damage_taken}</b></font> <font color='#A0A0A0'>v</font> <font color='#FFFFFF'><b>{d:hits_taken} zásahu</b></font>} few{<font color='#A0A0A0'>Utržené poškození: </font><font color='#FFFFFF'><b>{d:damage_taken}</b></font> <font color='#A0A0A0'>ve</font> <font color='#FFFFFF'><b>{d:hits_taken} zásazích</b></font>} many{<font color='#A0A0A0'>Utržené poškození: </font><font color='#FFFFFF'><b>{d:damage_taken}</b></font> <font color='#A0A0A0'>v</font> <font color='#FFFFFF'><b>{d:hits_taken} zásahu</b></font>} other{<font color='#A0A0A0'>Utržené poškození: </font><font color='#FFFFFF'><b>{d:damage_taken}</b></font> <font color='#A0A0A0'>v</font> <font color='#FFFFFF'><b>{d:hits_taken} zásazích</b></font>}}"
+		"Panorama_DeathPanel_DamageGiven:f"					"{hits_given, plural, one{<font color='#A0A0A0'>Udělené poškození: </font><font color='#FFFFFF'><b>{d:damage_given}</b></font> <font color='#A0A0A0'>v</font> <font color='#FFFFFF'><b>{d:hits_given} zásahu</b></font>} few{<font color='#A0A0A0'>Udělené poškození: </font><font color='#FFFFFF'><b>{d:damage_given}</b></font> <font color='#A0A0A0'>ve</font> <font color='#FFFFFF'><b>{d:hits_given} zásazích</b></font>} many{<font color='#A0A0A0'>Udělené poškození: </font><font color='#FFFFFF'><b>{d:damage_given}</b></font> <font color='#A0A0A0'>v</font> <font color='#FFFFFF'><b>{d:hits_given} zásahu</b></font>} other{<font color='#A0A0A0'>Udělené poškození: </font><font color='#FFFFFF'><b>{d:damage_given}</b></font> <font color='#A0A0A0'>v</font> <font color='#FFFFFF'><b>{d:hits_given} zásazích</b></font>}}"
+
+		/////////////////////////////////////////////////////////////////
+		//
+		//      CHATWHEEL OPTIONS
+		//
+		////////////////////////////////////////////////////////////
+
+		"Chatwheel_segment_top"	"Nahoře"
+		"Chatwheel_segment_topright"	"Vpravo nahoře"
+		"Chatwheel_segment_right"	"Vpravo"
+		"Chatwheel_segment_bottomright"	"Vpravo dole"
+		"Chatwheel_segment_bottom"	"Dole"
+		"Chatwheel_segment_bottomleft"	"Vlevo dole"
+		"Chatwheel_segment_left"	"Vlevo"
+		"Chatwheel_segment_topleft"	"Vlevo nahoře"
+
+		"Chatwheel_ping_on_cooldown"  "Momentálně nemůžeš použít ukazovátko."
+
+		"Chatwheel_plant"	"Polož bombu"
+		"Chatwheel_sitea"	"Místo pro bombu A"
+		"Chatwheel_siteb"	"Místo pro bombu B"
+
+		"Chatwheel_section_move"	"Přesun"
+		"Chatwheel_sticktogether"	"Držte se u sebe"
+		"Chatwheel_followme"	"Následujte mě"
+		"Chatwheel_followingyou"	"Následuji tě"
+		"Chatwheel_spreadout"	"Rozdělte se"
+		"Chatwheel_fallback"	"Stáhněte se"
+		"Chatwheel_gogogo"	"Pohyb, pohyb!"
+		"Chatwheel_onmyway"	"Jsem na cestě"
+		"Chatwheel_gethostage"	"Zkontrolujte rukojmí"
+		"Chatwheel_quiet"	"Buďte potichu"
+
+		"Chatwheel_section_prepare"	"Příprava"
+		"Chatwheel_requestecoround"	"Měli bychom šetřit"
+		"Chatwheel_requestspend"	"Měli bychom nakoupit"
+		"Chatwheel_requestleader"	"Kdo se ujme vedení?"
+		"Chatwheel_requestweapon"	"Potřebuji zbraň"
+		"Chatwheel_requestplan"		"Jaký je plán?"
+		"Chatwheel_aplan"	"Místo pro bombu A"
+		"Chatwheel_bplan"	"Místo pro bombu B"
+		"Chatwheel_midplan"	"Střed mapy"
+
+		"Chatwheel_section_grenades"	"Granáty"
+		"Chatwheel_decoy"	"Potřebujeme návnady"
+		"Chatwheel_smoke"	"Potřebujeme dýmovnice"
+		"Chatwheel_grenade"	"Potřebujeme výbušné granáty"
+		"Chatwheel_fire"	"Potřebujeme molotovy"
+		"Chatwheel_flashbang"	"Potřebujeme oslepující granáty"
+		
+		"Chatwheel_section_defend"	"Obrana"
+		"Chatwheel_coverme"	"Kryjte mě"
+		"Chatwheel_coveringyou"	"Kryju tě"
+		"Chatwheel_help"	"Potřebuji pomoc"
+		"Chatwheel_needbackup"	"Potřebuji posily"
+		"Chatwheel_holdposition"	"Držte tuto pozici"
+        "Chatwheel_rotatetome"	"Přesuňte se ke mně"
+
+		"Chatwheel_section_bomb"	"Stav bomby"
+		"Chatwheel_guardingbomb"	"Bráním bombu"
+		"Chatwheel_bombsiteclear"	"Místo pro bombu je čisté"
+		"Chatwheel_droppedbomb"	"Bomba byla upuštěna"
+		"Chatwheel_bombpickedup"	"Bomba byla sebrána"
+		"Chatwheel_ifixbomb"	"Já de/aktivuji bombu"
+		"Chatwheel_youfixbomb"	"Ty de/aktivuj bombu"
+		
+		"Chatwheel_bombat"	"Tady je bomba" 
+
+		"Chatwheel_section_enemystatus"	"Stav nepřátel"
+		"Chatwheel_heardnoise"	"Něco jsem slyšel" 
+		"Chatwheel_enemyspotted"	"Spatřil jsem nepřítele"
+		"Chatwheel_sectorclear"	"Oblast je čistá"
+		"Chatwheel_sniperspotted"	"Spatřil jsem odstřelovače"
+		"Chatwheel_bombcarrierspotted"	"Spatřil jsem nepřítele s bombou"
+		"Chatwheel_threeleft"	"Zbývají ještě tři"
+		"Chatwheel_twoleft"	"Zbývají ještě dva"
+		"Chatwheel_oneleft"	"Zbývá už jen jeden"
+		"Chatwheel_oneenemyhere"  "Tady je jeden nepřítel"
+		"Chatwheel_multipleenemieshere"  "Tady je více nepřátel"
+		"Chatwheel_ihavethebomb"  "Sebral jsem bombu"
+
+		"Chatwheel_section_enemykilled"	"Zabil jsem nepřítele"
+		"Chatwheel_gotheadshot"	"Dal jsem headshot"
+		"Chatwheel_ikilledsniper"	"Zabil jsem ostřelovače"
+		"Chatwheel_wekilledsniper"	"Zabili jsme odstřelovače"
+		"Chatwheel_sawheadshot"	"Viděl jsem tvůj headshot"
+
+		"Chatwheel_section_combatstatus"	"Stav boje"
+		"Chatwheel_attacking"	"Útočím"
+		"Chatwheel_inposition"	"Jsem na pozici"
+		"Chatwheel_covering"	"Kryju tě/oblast"
+		"Chatwheel_pinned"	"Nemůžu se hnout"
+		"Chatwheel_incombat"	"Jsem v přestřelce"
+		"Chatwheel_friendlyfire"	"Střelba do vlastních"
+		"Chatwheel_lastunitalive"	"Zbývá poslední naživu"
+
+		"Chatwheel_section_responses"	"Odpovědi"
+		"Chatwheel_wewon"	"Vyhráli jsme"
+		"Chatwheel_welost"	"Prohráli jsme"
+		"Chatwheel_wearewinning"	"Zatím máme navrch"
+		"Chatwheel_lostround"	"Tohle kolo jsme prohráli"
+		"Chatwheel_thanks"	"Díky!"
+		"Chatwheel_sorry"	"Pardon"
+		"Chatwheel_compliment"	"Pěkný!"
+		"Chatwheel_affirmative"	"Ano"
+		"Chatwheel_negative"	"Ne"
+		"Chatwheel_peptalk"	"Motivační řeč"
+		"Chatwheel_cheer"	"Jásot"
+
+		"Chatwheel_plantingata"	"Pokládám na A"
+		"Chatwheel_plantingatb"	"Pokládám na B"
+		"Chatwheel_plantedata"	"Položil jsem na A"
+		"Chatwheel_plantedatb"	"Položil jsem na B"
+		"Chatwheel_planted"	"Položili jsme bombu"
+
+		"Chatwheel_seehostagestaken"	"Rukojmí jsou odváděni"
+		"Chatwheel_requestgethostages"	"Dostaňte rukojmí"
+
+		"Chatwheel_guardinga"	"Bráním A"
+		"Chatwheel_guardingb"	"Bráním B"
+		
+
+		
+		"Chatwheel_section_command"	"Příkazy"
+		"Chatwheel_section_report"	"Hlášení"
+
+		"Chatwheel_description" "Díky chatovacím kolečkům získáš rychlý přístup k přizpůsobitelným seznamům zpráv posílaných vysílačkou."
+
+		////
+		//
+		// Volatile Laptop
+		//
+		////
+
+		// ---------------------------------------------------------------------------------------------
+		"laptop_window_collection_title"			"XP ZA KATALOGIZACI KOLEKCE"
+		"laptop_window_expiration_title"			"PLATNOST"
+		"laptop_window_seal_title"					"STATUS"
+		"laptop_window_messages_title"				"CHAT – OBCHODNÍK SE ZBRANĚMI"
+		"laptop_window_currentoffer_title"			"AKTUÁLNÍ NABÍDKA"
+		"laptop_app_title"							"<span class=\"laptop-app-title-prefix\">UP-</span>Link"
+		"laptop_app_version"						"v 1.1.0.2000"
+
+		"dealer_offer_attachment_title"							"{s:item-name}"
+		"dealer_offer_attachment_wear"							"{s:item-rarity}"
+		"dealer_offer_attachment_remaining_title"				"NABÍDKA Č. {d:offer-total}"
+		"dealer_offer_attachment_remaining"						"Nabídka č. {d:offer-total}"
+		"dealer_offer_received_count"							"<b>{s:offer-count}</b> nabídka"
+		"dealer_offer_attachment_final_title"					"POSLEDNÍ NABÍDKA"
+		"dealer_offer_attachment_final"							"{s:offer-count} a poslední nabídka"
+		"dealer_offer_attachment_status"						"Nabídka – {s:offer-status}"
+		"dealer_offer_attachment_status-active"					"<b><span class=\"offer-active\">Aktivní</span></b>"
+		"dealer_offer_attachment_status-price"					"<b><span class=\"offer-active\">{s:offer-price}</span></b>"
+		"dealer_offer_attachment_status-declined-price"			"{s:offer-price}"
+		"dealer_offer_attachment_status-declined"				"<span class=\"offer-declined\">{s:offer-count} nabídka – odmítnuta</span>"
+
+		"user_btn_purchase_desc_purchase"		"Podržením tohoto tlačítka si zakoupíš nabízený předmět a zahodíš terminál."
+		"user_btn_purchase_desc_continue"		"Podržením tohoto tlačítka permanentně odmítneš tuto nabídku a požádáš o další."
+		"user_btn_purchase_desc_end"		"Podržením tohoto tlačítka permanentně odmítneš poslední nabídku a zahodíš terminál."
+		"user_btn_purchase_title"			"{s:offer-count} nabídka"
+		"user_btn_purchase_final_title"		"<b>Poslední nabídka</b>"
+		"user_btn_decline_desc"				"Podržením tohoto tlačítka odmítneš tuto nabídku a požádáš o další."
+		"user_btn_accept"		"Přijmout nabídku – <b>{s:price}</b>"
+		"user_btn_accept_final"	"Přijmout poslední nabídku – <b>{s:price}</b>"
+		"user_btn_accept_0"		"Platí – <b>{s:price}</b>"
+		"user_btn_accept_1"		"Beru – <b>{s:price}</b>"
+		"user_btn_accept_2"		"Za <b>{s:price}</b> to koupím"
+		"user_btn_accept_3"		"OK – <b>{s:price}</b>"
+		"user_btn_accept_4"		"Za <b>{s:price}</b> do toho jdu"
+		"user_btn_accept_5"		"To by šlo – <b>{s:price}</b>"
+		"user_btn_next"			"Odmítnout nabídku"
+		"user_btn_next_0"		"Lákavé, ale ne"
+		"user_btn_next_1"		"To mi za to nestojí"
+		"user_btn_next_2"		"Ne, díky"
+		"user_btn_next_3"		"Nemám zájem"
+		"user_btn_next_4"		"Neberu"
+		"user_btn_next_5"		"Díky, ale ne"
+		"user_btn_next_6"		"Nezájem"
+		"user_btn_next_7"		"Dneska ne"
+		"user_btn_pause"		"Pozastavit nabídku"
+		"user_btn_end"			"Odmítnout poslední nabídku"
+
+		"user_message_limit_0"		"Můžu jít až na <b>{s:limit-setting}</b>."
+		"user_message_limit_1"		"Co takhle <b>{s:limit-setting}</b> jako strop?"
+		"user_message_limit_2"		"Maximálně dám <b>{s:limit-setting}</b>."
+		"user_message_limit_3"		"<b>{s:limit-setting}</b> mi zní jako dobrý limit."
+		"user_message_limit_unlimited_0"	"<b>Žádné maximum</b>. Chci vidět všechno."
+		"user_message_limit_unlimited_1"	"<b>Bianko šek</b>. O moji peněženku se nestarej."
+		"user_message_limit_unlimited_2"	"Jsem tu, abych nakoupil. <b>Ukaž mi všechno</b>."
+		"user_message_limit_unlimited_3"	"Pokud to střílí, mám zájem. <b>Žádný limit</b>."
+		"user_message_limit_unlimited_4"	"Cenu neřeším."
+		"offer_limit_setting"		"Cenový limit: {s:limit}"
+		"offer_limit_setting_interface"		"Cenový limit: {s:limit} <img src='file://{images}/icons/ui/expand.svg' class='expand-icon'/>"
+
+		"dealer_offer_Unknown"							"–"
+		"dealer_offer_1"								"1."
+		"dealer_offer_2"								"2."
+		"dealer_offer_3"								"3."
+		"dealer_offer_4"								"4."
+		"dealer_offer_5"								"5."
+		"dealer_offer_6"								"6."
+		"dealer_offer_7"								"7."
+		"dealer_offer_8"								"8."
+		"dealer_offer_9"								"9."
+		"dealer_offer_10"								"10."
+
+		"current_offer_tooltip"		"Aktuální nabídka, kterou pro tebe obchodník má."
+		"declined_offer_tooltip"	"Odmítnutá nabídka."
+		"future_offer_tooltip"		"Tato nabídka ještě nebyla odhalena."
+		"laptop_expiration_tooltip"		"Čas zbývající do vypršení platnosti tohoto terminálu a jeho nabídek."
+		"laptop_max_offer_tooltip"		"Maximální cenový limit. Budeš dostávat pouze nabídky, které jsou pod tímto limitem. Limit lze kdykoli změnit."
+		"collection_xp_tooltip"			"Za prohlížení nabídek z této kolekce můžeš získat XP. Po otevření zjistíš svůj postup."
+		"terminal_offer_limit_tooltip"		"Cenový limit nabídek, kterého se bude obchodník se zbraněmi držet."
+		"popup_lootlist_title"			"Katalogizace kolekce"
+		"popup_lootlist_desc"			"Získávej XP za prohlížení nabídek z této kolekce."
+
+		"popup_lootlist_progress:f"      "Prohlédl sis {d:seen}/{d:total} nabídek"
+		"popup_lootlist_claim_xp"		"Získat XP"
+		"popup_lootlist_claim_ww"		"Získávání XP..."
+		"popup_lootlist_claim_ok"		"✔ XP získána"
+		"popup_vpn_status_connected"	"Stav: Připojeno k zabezpečené síti"
+		"popup_vpn_status_disconnected"	"Stav: Odpojeno"
+		"popup_signal_full" 			"Plný signál"
+		"popup_signal_ok" 				"Silný signál"
+		"popup_offer_limit_desc"		"Cenový limit všech budoucích nabídek."
+		"laptop_battery_tooltip" 		"Nabití baterie: {d:percent} %"
+		"laptop_original_seal_tooltip" 	"Libovolný předmět zakoupený z tohoto terminálu bude opatřen certifikátem původního majitele, který zůstane platný, dokud se bude předmět nacházet ve tvém inventáři."
+		"laptop_zoom_tooltip" 			"Pro přiblížení a oddálení pohledu otáčej kolečkem myši."
+		"laptop_pan_tooltip" 			"Pro posunutí pohledu podrž klávesu Shift a levé tlačítko myši a táhni myší."
+		"laptop_pricing_tooltip"		"Ceny jsou platné globálně a automaticky se přizpůsobují poptávce po jednotlivých předmětech z této kolekce."
+
+		"dealer_message_set_offer_limit_0"		"Nejdřív si musíme něco vyjasnit. Kolik můžeš utratit?"
+		"dealer_message_set_offer_limit_1"		"Jedna otázka na začátek.<!--.25--> Jakej máš cenovej strop?"
+		"dealer_message_set_offer_limit_2"		"Než se do toho pustíme...<!--.25-->Jakej máš limit? Kolik můžeš utratit?"
+		
+		"dealer_message_start_0"  	"Profesionální kousky, jeden jako druhej.<!--.25-->Sto procent kvalita, nula procent papírování."
+		"dealer_message_start_1"  	"Mám tu nějaký šedý zboží bez papírů.<!--.25-->Ale neboj, nejsou to horký kusy. V oběhu už nejsou roky a nikdo je nehledá.<!--.25-->A střílej pořád jako nový, aby sis nemyslel."
+		"dealer_message_start_2"  	"Celníci v Ahradánu mi dneska ráno zmrazili náklad. Zkusil jsem je obměkčit historkou o zdravotnickym vybavení a chudácích dětech, ale nedali se.<!--.25-->Pomoh až kufřík plnej peněz.<!--.25-->Tak co kdyby sis prohlíd ty moje teploměry, než je předám sirotkům?"
+		"dealer_message_start_3"  	"V jednom z těch „stánů“ se zase měnil režim...<!--.25-->Takže armádní zbrojnice byla dokořán otevřená a já se tam tím pěkně prohrábnul.<!--.25-->Ale prodávám jenom sterilní kousky, neboj."
+		"dealer_message_start_4"  	"Všechno, co tu dneska mám, je čistý.<!--.25-->Papírově vzato budeš první majitel."
+		"dealer_message_start_5"  	"Sterilní kousky, žádný sériový čísla, plná funkčnost.<!--.25-->Válečnej tribunál by tomu říkal důkazy.<!--.25-->Ty a já ale víme, že jsou to umělecký díla."
+		"dealer_message_start_6"  	"Tahle zásilka je plná exotickejch kousků od palácový gardy.<!--.25-->Často se s nima pochodovalo, ale nikdy nestřílelo."
+		"dealer_message_start_7"  	"Ostatní klienti se pořád vyptávaj, kde jsem vzal svoje zboží. Fakt otravný.<!--.25-->Zato tebe zajímá jenom to, jestli je to nejlepší zboží na trhu.<!--.25-->A věř mi, že je."
+		"dealer_message_start_8"  	"Mírová dohoda v Drosviku. A mír je bezva věc.<!--.25-->Především protože mám generála po uši v dluzích a s našlapanou zbrojnicí, která chytá prach.<!--.25-->Mno...<!--.25-->A taky protože mír je dobrej sám o sobě. Životy nevinejch a tak...<!--.25-->Ale to je ti asi fuk."
+		"dealer_message_start_9"  	"Tenhle náklad je plnej exotiky z šedýho trhu.<!--.25-->Hogofogo kalibry, nic pro amatéry. Bude se ti to líbit."
+		"dealer_message_start_10"  	"To se podívejme.<!--.25-->Asi jsem chybně označil bednu na lodním seznamu.<!--.25-->Nebo pár desítek beden.<!--.25-->Co kdybys mi pomohl nechat tohle zboží zmizet, než se začne zajímat přístavní správa."
+		"dealer_message_start_11"  	"Inspektor z Drosviku si na tomhle chtěl nahnat úplatek. A když ho blbec nedostal, začal žvanit o zabavení.<!--.25-->Takže jsem na něj poslal svoje lidi, a teď má držku v drátech.<!--.25-->Ale tohle zboží naštěstí mluví samo za sebe..."
+		"dealer_message_start_12"  	"Abych tuhle zásilku dostal přes hranice, musel jsem podmáznout snad všechny obyvatele Ahradánu.<!--.25-->A všechny ty úplatky byly v ahri. Víš, kolik tun papíru padne na úplatky v tý jejich bezcenný měně? Není divu, že už tam nemaj lesy."
+		"dealer_message_start_13"	"Tenhle náklad je od prostředníka, kterej se ho potřebuje rychle zbavit.<!--.25-->Takhle mi to řekl. „Rychle“.<!--.25-->A ještě dodal „velmi“.<!--.25-->Takže pokud se nebudeš vyptávat, věřím, že budeš „velmi“ spokojený."
+		"dealer_message_start_14"	"Dneska tu mám starší kusy.<!--.25-->Jsou nablejskaný? Ne. Ale jsou spolehlivý.<!--.25-->Věř tomu, že s tímhle budou střílet ještě tvoje vnoučata."
+		"dealer_message_start_15"	"Tenhle vercajk osvobodila povstalecká milice ze zbrojnice Slovutného vůdce.<!--.25-->A co jsem slyšel, tak osvobodili i hlavu vůdce od jeho těla.<!--.25-->To druhý neprodávám, ale kdybys měl zájem, dám ti kontakt."
+		"dealer_message_start_16"	"Šéf pohraniční stráže v Drosviku vyhrožoval, že mi tuhle zásilku zabaví.<!--.25-->Asi se k němu nedoneslo, že v Drosviku úplatky nevedu. Především protože tam každej druhej dělá kickbox a za pár babek by zlámal hnáty i svojí mámě.<!--.25-->Takže jeho nástupce zásilku nějakým nedopatřením ztratil. Jó, náhody se dějou."
+		"dealer_message_start_17"	"Tohle všechno pochází ze soukromý sbírky jednoho miliardáře.<!--.25-->Nebo teda bejvalýho miliardáře. Teď na něj nastoupili, takže likviduju věci za něj.<!--.25-->Ale ruku na srdce, tyhle kousky budou radši v akci, než aby visely někde na stěně."
+		"dealer_message_start_18"	"Tuhle zásilku pozastavil inspektor v docích pro nesrovnalosti.<!--.25-->Ale věděl jsi, že bedna zbraní váží úplně stejně jako bedna dílů k traktorům, když na váhu přidáš deset tisíc dolarů?<!--.25-->Takže vytáhni šrajtofli a pojď si vybrat díly na svůj traktor."
+		"dealer_message_start_19"	"Zboží, který tu mám dneska, přežilo státní převrat.<!--.25-->Sem tam je teda škrábanec, ale za funkčnost ručím. A kniha se nemá soudit podle obalu, ne?"
+		"dealer_message_start_20"	"Nějaká posraná malá zemička pověsila svýho prezidenta.<!--.25-->A hádej, kdo podědil jeho kontakty."
+		"dealer_message_start_21"	"Říkej tomu procesní chyba. Nesrovnalost při papírování. Úplně obyčejná chybička.<!--.25-->Někdy se to zkrátka nepovede, a já teď pomáhám kamarádovi, aby nepřišel o místo správce.<!--.25-->Tohle zboží musí zmizet. Kapiš?"
+		"dealer_message_start_22"	"Ňákej vrchní celník si myslel, že mě přes tuhle zásilku bude moct zakleknout. Tak jsem na něj nechal zakleknout odbory.<!--.25-->Je sranda, jak rychle se vyřeší papírování, když maj všichni plný ruce práce s hledáním pohřešovanýho chlápka.<!--.25-->Doufám ale, že ho najdou. Nemyslím si, že umí plavat."
+		"dealer_message_start_23"	"Podle chlapíka na hranicích Ahradánu neseděly papíry. Tak jsem mu strčil štos ahri, a najednou bylo všechno v cajku.<!--.25-->Ani nevím, kolik je deset tisíc ahri ve skutečnejch penězích. Šest babek? Tak nějak.<!--.25-->Ale to máš fuk. Chceš se mrknout na bouchačky, který oficiálně neexistujou?"
+		"dealer_message_start_24"	"Tohle zboží měl zapikaný jeden generál, ale ten vůl se nechal odstřelit dronem.<!--.25-->Jaký z toho plyne ponaučení? Nevylejzej ven."
+		"dealer_message_start_25"	"Změna režimu v Drosviku. A nikdo neví jak, ale zmizel sklad plnej zbraní.<!--.25-->Který se pak záhadně objevily u mě. Hustý, co?<!--.25-->To ale není všechno. Nějakou záhadou je prodávám. Tobě."
+		"dealer_message_start_26"	"Mám tady bednu špatně deklarovanýho nákladu.<!--.25-->Toho nápisu „zemědělské vybavení“ si nevšímej. Jedinej, kdo bude rejt hlínu, budou tvý nepřátelé."
+		"dealer_message_start_27"	"Nesnáším jednání s povstalci. Je to jen slušný označení civilistů, což je zase slušnej způsob, jak říct, že je někdo amatér.<!--.25-->Tak jako tak, tyhle kupci přestali komunikovat, takže dávám šanci skutečným profíkům."
+		"dealer_message_start_28"	"V nějaký díře na jihu jako každoročně padla vláda.<!--.25-->A to bych byl blbej, kdybych jim tam tohle nechal ve skladech."
+		"dealer_message_start_29"	"Přístavní úřad v pátek označil tuhle zásilku na neoprávněnou.<!--.25-->Do pondělka měla dcera šéfa dost peněz, aby zaplatila školný na Stamwicku a ze zásilky se zase stalo farmářský náčiní.<!--.25-->Já to říkám pořád, že vzdělání je důležitý."
+
+		"dealer_message_resume_0"  	"<!--1-->Jsi zpátky. Bezva. Nabídka pořád platí."
+		"dealer_message_resume_1"  	"<!--1-->Potřeboval sis to promyslet? Není problém."
+		"dealer_message_resume_2"  	"<!--1-->Tušil jsem, že se vrátíš."
+		"dealer_message_resume_3"  	"<!--1-->Budeme pokračovat, kde jsme skončili."
+		"dealer_message_resume_4"  	"<!--1-->Připravenej uzavřít obchod?"
+		"dealer_message_resume_5"  	"<!--1-->To jsem rád, že seš zpátky. Musím se toho zbavit, jinak kolem začnou čmuchat nesprávný lidi."
+		"dealer_message_resume_6"  	"<!--1-->No to je dost. Tak kde jsme skončili?"
+
+		"dealer_message_first_offer_0"	"<!--.5-->Pokud máš zájem, může bejt tenhle kousek tvůj."
+		"dealer_message_first_offer_1"	"<!--.5-->Jen abys věděl, na tenhle vercajk mám i jiný zájemce."
+		"dealer_message_first_offer_2"	"<!--.5-->Pokud bereš, tak ber. Jestli ne, tak mi to řekni. Mám tu další chaty plný zájemců."
+		"dealer_message_first_offer_3"	"<!--.5-->Jestli chceš, tahle kráska může bejt tvoje. Jestli ne, smůla."
+		"dealer_message_first_offer_4"	"<!--.5-->Tak máš zájem, nebo ne? Nemůžu čekat, než ti to schválí i tvoje stará."
+		"dealer_message_first_offer_5"	"<!--.5-->Tady je nabídka. Jdeš do ní?"
+		"dealer_message_first_offer_6"	"<!--.5-->Máš zájem, nebo ne? Neurazím se, když mě odmítneš. Mám i jiný kupce."
+		"dealer_message_first_offer_7"	"<!--.5-->Tak jo, nebo ne?"
+		"dealer_message_first_offer_8"	"<!--.5-->Nemám na tebe ale celej den."
+		"dealer_message_first_offer_9"	"<!--.5-->Bereš, nebo ne?"	
+		"dealer_message_first_offer_10"	"<!--.5-->Nevím, co víc ti k tomu říct, tahle věc se prodává sama. Bereš, nebo ne?"		
+
+		"dealer_message_next_offer_0"	"<!--1-->OK, tamta ti nesedla. Co tahle?"
+		"dealer_message_next_offer_1"	"<!--1-->Máš štěstí, že mám dobrou náladu. Mrkej na tohle."
+		"dealer_message_next_offer_2"	"<!--1-->Nezájem? Děláš chybu, příteli. Ale koukni na tuhle."
+		"dealer_message_next_offer_3"	"<!--1-->Tohle zboží se prodává samo, takže pokud nemáš zájem ty, někdo jinej určitě bude.<!--.5-->Ale když už tě tady mám, mrkej na tuhle, ta by ti slušela."
+		"dealer_message_next_offer_4"	"<!--1-->Chápu, ta nebyla tvůj styl. A co tahle? Ta by se ti mohla líbit."
+		"dealer_message_next_offer_5"	"<!--1-->Tušil jsem, že mě s tamtou pošleš do háje, a proto jsem měl v záloze tuhle."
+		"dealer_message_next_offer_6"	"<!--1-->Jasný, chápu. Ale koukej na tuhle. Ta se k tobě hodí víc."
+		"dealer_message_next_offer_7"	"<!--1-->Ještě toho budeš litovat, ale oukej. Co tuhle?"
+		"dealer_message_next_offer_8"	"<!--1-->Mám tě přečtenýho. Bylo mi jasný, že na tamtu nekejvneš. A co na tuhle?"
+		"dealer_message_next_offer_9"	"<!--1-->OK, o předkrm očividně nemáš zájem. Tak přejdeme na hlavní chod."
+		"dealer_message_next_offer_10"	"<!--1-->Chápu, tamta se mi taky moc nelíbila. Ale mrkej na tuhle."		
+		"dealer_message_next_offer_11"   "<!--1-->Na tamtu musí člověk holt dospět. Ale tahle další by ti mohla přijít k chuti."
+		"dealer_message_next_offer_12"   "<!--1-->Neboj, mám tady hromadu dalších. Jen se podívej na tuhle krasotinku."
+		"dealer_message_next_offer_13"   "<!--1-->Víš ty co? Myslel jsem si, že ji odmítneš. Zkusíme teda tuhle."
+		"dealer_message_next_offer_14"   "<!--1-->Tobě se člověk jen tak nezavděčí. Ale co bys řekl na tuhle?"
+		"dealer_message_next_offer_15"   "<!--1-->Neboj, já se neurazím. Tady máš jinou nabídku."
+		"dealer_message_next_offer_16"   "<!--1-->Souhlasím, taky bych ji nevzal. Ale tahle je jiný kafe."
+		"dealer_message_next_offer_17"   "<!--1-->Nezájem? Jak myslíš. Jedeme dál."
+		"dealer_message_next_offer_18"   "<!--1-->Pán má vysoký požadavky. Tak teda přitvrdíme."
+		"dealer_message_next_offer_19"   "<!--1-->Chápu, ty nechceš ztrácet peníze a já zase nechci ztrácet čas. Takže jdeme na další."
+		"dealer_message_next_offer_20"   "<!--1-->Cením si upřímnosti. Tak popojedem, ať tu neztrácíme čas."
+		"dealer_message_next_offer_21"   "<!--1-->Chápu, tamta se ti nezdála. Naštěstí mám v zásobě víc než jednu bouchačku."
+		"dealer_message_next_offer_22"   "<!--1-->Žádný problém, mám toho tady ještě hafo. Takže jdeme na další."
+		"dealer_message_next_offer_23"   "<!--1-->Čekal bych, že tě na tamtu utáhnu. Ale tak zkusíme tuhle."
+		"dealer_message_next_offer_24"   "<!--1-->Rozumím, nebyla to ta pravá. A ani každá být nemůže. Ale tahle, ta ti chce říkat pane."
+		"dealer_message_next_offer_25"   "<!--1-->OK, vypadá to, že ti moje zboží moc nevoní. Ale to jsi ještě neviděl tohle."
+		"dealer_message_next_offer_26"   "<!--1-->OK, konec srandy. Garantuju ti, že tuhle si zamiluješ. Nejspíš."
+		"dealer_message_next_offer_27"   "<!--1-->Nelíbí? Tak zůstane v mojí soukromé sbírce. A co tahle?"
+		"dealer_message_next_offer_28"   "<!--1-->Ty máš teda nároky. Tak zjistíme, jestli ti bude štymovat tahle."
+		"dealer_message_next_offer_29"   "<!--1-->To byla jen první z mnoha. Hrábnu trochu hloubš."
+		"dealer_message_next_offer_30"   "<!--1-->Zapomeň na tu předchozí, především jsem ti chtěl ukázat tuhle."
+		"dealer_message_next_offer_31"   "<!--1-->Tahle má na sobě tvoje jméno. Ne doslova, páč je čistá, ale chápeš."
+		"dealer_message_next_offer_32"   "<!--1-->Čekáš na tu pravou, co? Tak se pokochej touhle."
+		"dealer_message_next_offer_33"   "<!--1-->To jsem tě jenom zkoušel. Tuhle už ale myslím vážně."
+		"dealer_message_next_offer_34"   "<!--1-->Jo, myslel jsem si to. Ale co tahle? Když jsem ji viděl, vzpomněl jsem si na tebe."
+		"dealer_message_next_offer_35"   "<!--1-->Dobrá tedy. Beztak jsem tu pro tebe schovával tuhle."
+		"dealer_message_next_offer_36"   "<!--1-->Tohle nemá bejt seznamka s bouchačkama, ale prodej vercajku. Jdeme na další."
+		"dealer_message_next_offer_37"   "<!--1-->Žádnej problém. Tahle by se ti ale mohla líbit víc."
+		"dealer_message_next_offer_38"   "<!--1-->Seš chytrej, že jsi na to neskočil. Zasloužíš si teda lepší nabídku."
+		"dealer_message_next_offer_39"   "<!--1-->Není problém, taky bych ji nekoupil. Zato tuhle..."
+		"dealer_message_next_offer_40"   "<!--1-->Chceš, abych došel dozadu pro prémiový zboží, jo? OK, máš to mít."
+
+		"dealer_message_last_offer_0"	"<!--0-->OK, poslední nabídka. Ber, nebo nech být."
+		"dealer_message_last_offer_1"	"<!--0-->Považuj tohle za moji poslední nabídku."
+		"dealer_message_last_offer_2"	"<!--0-->Poslední nabídka. Ber, nebo neber, ale hlavně už mě nezdržuj."
+		"dealer_message_last_offer_3"	"<!--0-->Poslední nabídka.<!--1-->Pokud nemáš zájem, dopuručuju udělat pár kroků dozadu, protože tenhle terminál vybouchne."
+		"dealer_message_last_offer_4"	"<!--0-->Poslední nabídka. Ale přemlouvat tě nebudu."
+		"dealer_message_last_offer_5"	"<!--0-->Tohle je to nejlepší, co tady teď mám."
+		"dealer_message_last_offer_6"	"<!--0-->Fajn, tady máš. Jdeš do toho, nebo ne?"		
+		"dealer_message_last_offer_7"	"<!--0-->Poslední a nejlepší nabídka."
+		"dealer_message_last_offer_8"	"<!--0-->Chceš smlouvat? Já už níž jít nemůžu."
+		"dealer_message_last_offer_9"	"<!--0-->Lepší nabídku tady nenajdeš."	
+
+		"dealer_message_end_0"			"<!--0-->Měl jsi svoji šanci. Pokud tenhle terminál držíš v ruce, doporučoval bych ho zahodit, protož vybouchne za tři... dva..."
+		"dealer_message_end_1"			"<!--0-->Máš o čem přemejšlet, až budeš příště po krk v průseru a bude ti chybět bouchačka."
+		"dealer_message_end_2"			"<!--0-->Doprošovat se tě nebudu. Snad sis ale nemyslel, že ti zůstane grátis tenhle terminál..."
+		"dealer_message_end_3"			"<!--0-->Tvoje volba. A tvůj pohřeb, řek bych.<!--1-->Jo a bejt tebou, tak zahodím ten terminál, jinak skončíš ještě dřív."
+
+		"dealer_message_timerexpired_0"		"<!--.1-->OK, tak nic."
+		"dealer_message_timerexpired_1"		"<!--.1-->Smůla.<!--.5-->Ale neříkej, že jsem ti nedal šanci."
+		"dealer_message_timerexpired_2"		"<!--.1-->Nabídka padá.<!--.5-->Mám na práci důležitější věci."
+		"dealer_message_timerexpired_3"		"<!--.1-->OK, tak já jdu najít někoho, kdo bude mít zájem.<!--.5-->Měj se."
+		"dealer_message_timerexpired_4"		"<!--.1-->Jak myslíš.<!--.5-->Tak zas někdy."
+		"dealer_message_timerexpired_5"		"<!--.1-->Tik tak.<!--.5-->Čas vypršel."
+		"dealer_message_timerexpired_6"		"<!--.1-->Nabídka padá.<!--.5-->Kdybych s tebou neztrácel čas, už jsem to mohl mít dvakrát prodaný."
+		"dealer_message_timerexpired_7"		"<!--.1-->Já vůl si myslel, že máš opravdu zájem.<!--.5-->Taková ztráta času..."
+		"dealer_message_timerexpired_8"		"<!--.1-->Nabídka vypršela."	
+		"dealer_message_timerexpired_9"		"<!--.1-->Čas vypršel."
+		"dealer_message_timerexpired_10"	"<!--.1-->Oficiálně už se začínám nudit. Tady jsme skončili."		
+
+		"dealer_message_open_check_out_0"		"<!--.5-->Tahle ti byla zkrátka souzená. Tak to dotáhneme."
+		"dealer_message_open_check_out_1"		"<!--.5-->Skvělá volba. Zabalím ti ji s sebou."
+		"dealer_message_open_check_out_2"		"<!--.5-->Nebudeš toho litovat. Ale někdo jinej nejspíš jo."
+		"dealer_message_open_check_out_3"		"<!--.5-->Věděl jsem, že seš můj člověk. Tak si plácneme."
+		"dealer_message_open_check_out_4"		"<!--.5-->Paráda, tak to dotáhneme."		
+		"dealer_message_open_check_out_5"		"<!--.5-->Skvělá volba."	
+		"dealer_message_open_check_out_6"		"<!--.5-->Nejlepší rozhodnutí, jaký jsi dneska udělal. Tak to finalizujem."		
+		"dealer_message_open_check_out_7"		"<!--.5-->Bezva. Tak to stvrdíme podpisem."
+
+		"dealer_message_txn_xld_bailout_0"		"<!--.5-->Žádnej spěch. Víš, kde mě najít."
+		"dealer_message_txn_xld_bailout_1"		"<!--.5-->Já ti nikam neuteču."
+		"dealer_message_txn_xld_bailout_2"		"<!--.5-->Že seš to ty, zatím nechám tuhle nabídku na stole."
+		"dealer_message_txn_xld_bailout_3"		"<!--.5-->Nech si to projít hlavou, a pak se vrať."
+
+		"dealer_message_purchase_finalizing_0"	"Finalizace nákupu..."
+		"dealer_message_purchase_confirm_0"		"<!--.5-->Máme hotovo."
+
+		"dealer_message_stattrack_0"			"Včetně technologie StatTrak™."
+		"dealer_message_stattrack_1"			"Plus je u ní technologie StatTrak™."
+		"dealer_message_stattrack_2"			"Technologie StatTrak™ součástí balení. Takže nemusíš zářezy počítat na prstech."
+		"dealer_message_stattrack_3"			"Včetně technologie StatTrak™. Takže ty mačkáš spoušť, a matiku necháváš na zbrani."
+		"dealer_message_stattrack_4"			"Včetně technologie StatTrak™. Ber to jako takovou výsledkovou tabuli. Ale pro zabíjení lidí."
+		"dealer_message_stattrack_6"			"Včetně technologie StatTrak™. Ideální pro někoho, kdo má rád zabíjení a statistiky."
+		"dealer_message_stattrack_7"			"Samozřejmě nechybí počitadlo zabití."
+		"dealer_message_factory_new_0"			"Ještě voňavá z výroby. Věř mi, čuchal jsem k ní."
+		"dealer_message_factory_new_1"			"Zbrusu nová. Ještě voňavá."
+		"dealer_message_factory_new_2"			"Nulovej nájezd. Budeš první, kdo zmáčkne spoušť."
+		"dealer_message_factory_new_3"			"Akorát sjela z linky. Přesně, jak to máš rád."
+		"dealer_message_factory_new_4"			"Čistá a nedotčená. Žádný škrábance, žádná historie. Od toho seš tu ty."
+		"dealer_message_factory_new_5"			"Zbrusu nová, ještě nestřílela. Panna Marie mýho katalogu."
+		"dealer_message_covert_0"				"Kamaráde, právě jsi trefil jackpot. Tahle bouchačka není jenom vzácná, je unikátní."
+		"dealer_message_covert_1"				"Dělám v týhle branži už celý věky, ale tuhle jsem dostal do ruky prvně.<!--.5-->Máš zatracený štěstí, že ti ji vůbec nabízím."
+		"dealer_message_covert_2"				"Znám kupce, který by za tuhle bouchačku prodali svojí mámu do otroctví. Jak to vidíš ty?"
+		"dealer_message_covert_3"				"To je kousek, co? Rozhoduj rychle, než si ten prodej rozmyslím."
+		"dealer_message_covert_4"				"Jedna ze „skrytejch“ zbraní. Pokud máš štěstí, narazíš na ni na trhu jednou za život.<!--.5-->Věř mi, že tohle nechceš promeškat."
+		"dealer_message_covert_5"				"Tahle bouchačka je klenot. Ale to určitě víš. Před rokem jsem na ní měl kupce, ale nakonec couvnul, takže toho využij."
+		"dealer_message_covert_6"				"Vzácná jako jednorožec. A tobě právě spadla do klína."
+		"dealer_message_covert_7"				"Tahle práce mě živí, takže mi věř, když říkám, že tuhle bouchačku nebylo snadný získat."
+		"dealer_message_covert_8"				"Doufám, že si tohohle náležitě ceníš. Je to jako kdybych ti prodával jednorožce."
+		"dealer_message_covert_9"				"Bejt tebou, tak ji koupím, než toho začnu litovat. Tahle je nejvzácnější z vzácných."
+		"dealer_message_classified_0"				"Tajná, sterilní a bez papírů. Tuhle nenajdeš v žádnejch záznamech."
+		"dealer_message_classified_1"				"Tahle zbraň nemá žádný papíry a nikdo ji nedohledá."
+		"dealer_message_classified_2"				"Vydaná bokem, pěkně bez papírů. To, co teď držím v ruce, technicky vzato neexistuje."
+		"dealer_message_classified_3"				"Určená pouze pro soukromý prodej. Tak snad ti bude dobře sloužit."
+		"dealer_message_classified_4"				"Tajná zbraň. Bez papírů a sériovejch čísel."
+		"dealer_message_classified_5"				"Tahle má sundaný čísla a prodávala se vždycky jen pod pultem. A kdyby se někdo ptal, nikdy jsem ji neviděl."
+		"dealer_message_restricted_0"				"Běžně zakázaná, s lepšíma vnitřnostma a přesnější střelbou. Standard se s ní nemůže rovnat."
+		"dealer_message_restricted_1"				"Tahle zbraň není zakázaná jen tak pro srandu králíkům. Pro civilisty je zkrátka až moc dobrá."
+		"dealer_message_restricted_2"				"Zakázaná, jak jinak. Třída tři, hodnost dva a tvoje nový číslo jedna."
+		"dealer_message_battle_scarred_0"		"Trochu obouchaná, ale pořád střílí rovně."
+		"dealer_message_battle_scarred_1"		"Trochu poničená, ale to znamená, že poznala akci a přežila ji."
+		"dealer_message_battle_scarred_2"		"Dárek z bojiště. Už má něco najeto, ale ještě si s ní užiješ."
+		"dealer_message_battle_scarred_3"		"Poničená bojem? Já tomu říkám „osvědčená v boji“."
+		"dealer_message_battle_scarred_4"		"Tahle už má něco za sebou, ale dám za ni ruku do ohně."
+		"dealer_message_minimal_wear_0"			"Minimální opotřebení. Jeden dva škrábance možná najdeš, ale na funkci živočicháře nemaj vliv."
+		"dealer_message_minimal_wear_1"			"Zbrusu nová. Teda relativně. Lehce opotřebená, pokud chceš jít do detailu."
+		"dealer_message_minimal_wear_2"			"Minimální opotřebení. Nic, čeho by ses měl bát."
+		"dealer_message_minimal_wear_3"			"Lehce opotřebená. Nic vážnýho, a ve tvým arzenálu se bude vyjímat."
+		"dealer_message_minimal_wear_4"			"Nebudu ti lhát, už něco pamatuje. Ale přece bys neřek ne veteránovi."
+		"dealer_message_usp-s_0"				"S touhle tě nikdo neuslyší."
+		"dealer_message_usp-s_1"				"Tichá a diskrétní. Protože každej občas potřebuje trochu soukromí."
+		"dealer_message_usp-s_2"				"Tvoji nepřátelé ji pocítí, ale neuslyší."
+		"dealer_message_usp-s_3"				"Tahle udrží tajemství."
+		"dealer_message_item_desc_0"			"<!--.25-->S touhle přišla i poznámka:<!--.25-->{s:flavor-text}<!--.25-->Kdo ví, co tím básník chtěl říct."
+		"dealer_message_item_desc_1"			"<!--.25-->U týhle bylo něco napsáno:<!--.25-->{s:flavor-text}"
+
+		"dealer_message_addition_stattrak_0"	"<!--.25-->... a má modul StatTrak™."
+		"dealer_message_addition_stattrak_1"	"<!--.25-->Včetně modulu StatTrak™."
+		"dealer_message_addition_stattrak_2"	"<!--.25-->A má i StatTrak™, takže si bude pamatovat, co s ní napácháš."
+		"dealer_message_addition_stattrak_3"	"<!--.25-->A ještě ke všemu na sobě má StatTrak™."
+		"dealer_message_addition_stattrak_4"	"<!--.25-->Tenhle mazlík má i počitadlo StatTrak™. To aby ti pořád připomínala, kolik lidí už jsi odkrágloval."
+
+		"dealer_message_addition_factory_new_0"	"<!--.25-->A je zbrusu nová. Ještě nikdy nestřílela."
+		"dealer_message_addition_factory_new_1"	"<!--.25-->A je zbrusu nová. Neposkvrněná!"
+		"dealer_message_addition_factory_new_2"	"<!--.25-->Zbrusu nová. Doteď ležela v trezoru."
+		"dealer_message_addition_factory_new_3"	"<!--.25-->Zbrusu nová. To znamená, že ještě nestřílela."
+		
+		"dealer_message_limit_first_time_0"		"Dobrý vědět. Budu ti teda ukazovat věci jen do {s:limit}.<!--.25-->Tak se na to podíváme..."
+		"dealer_message_limit_first_time_2"		"Nabídky jen do {s:limit}. OK, budu na to myslet.<!--.25-->Ale běží nám čas, takže s chutí do toho."
+		"dealer_message_limit_first_time_3"		"Poznamenáno a aktualizováno.<!--.25-->Dáme se do toho."
+		"dealer_message_limit_first_time_unlimited_0"		"Žádný maximum, paráda. Otevřu ti celej katalog.<!--.25-->Už ale běží čas, takže s chutí do toho."
+		"dealer_message_limit_first_time_unlimited_1"		"Žádnej strop. Tak se mi to líbí.<!--.25-->Pustíme se do toho."
+
+		"dealer_message_limit_0"				"Dobrý vědět. Budu ti teda ukazovat věci jen do {s:limit}."
+		"dealer_message_limit_1"				"Nabídky jen do {s:limit}. OK, budu na to myslet."
+		"dealer_message_limit_2"				"Upravuju parametry. Nabídky jen do {s:limit}."
+		"dealer_message_limit_3"				"Nabídky jen do {s:limit}. Aktualizováno."
+		"dealer_message_limit_4"				"Budu vytahovat jen to, co má cenovku pod {s:limit}."
+		"dealer_message_limit_5"				"{s:limit} je novej strop."
+		"dealer_message_limit_6"				"Chápu a resetuju filtr na limit {s:limit}."
+		"dealer_message_limit_unlimited_0"		"Žádný maximum, paráda. Otevřu ti celej katalog."
+		"dealer_message_limit_unlimited_1"		"Bez omezení, oukej. Pokud se objeví něco eňo ňuno, nebudu to před tebou schovávat."
+		"dealer_message_limit_unlimited_2"		"To je hudba pro moje uši. Ukážu ti všechno, co tu mám."
+		"dealer_message_limit_unlimited_3"		"Žádnej strop. Tak se mi to líbí."
+
+		"system_dealer_left_chat_0"				"Obchodník se odpojil z chatu."
+		"system_dealer_join_chat_0"				"{s:collection} – nabídka zbraní.<!--1.25-->Obchodník se připojil do chatu."
+		"system_user_reject_offer_0"			"{s:user-name} odmítnul nabídku."
+
+		"system_user_updated_offer_limit_0"			"Cenový limit byl aktualizován na {s:limit}. Limit lze kdykoli změnit."
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//Retakes
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		"GameUI_Retake_DefendA"					"Ubraň místo pro bombu A!"
+		"GameUI_Retake_DefendB"					"Ubraň místo pro bombu B!"
+		"GameUI_Retake_RetakeA"					"Znovu ovládni místo pro bombu A!"
+		"GameUI_Retake_RetakeB"					"Znovu ovládni místo pro bombu B!"
+		"GameUI_Retake_Notice_MvpCardAvailable"	"Gratulujeme! V příštím kole ti bude dostupná karta pro nejlepšího hráče!"
+		"GameUI_Retake_Card_CardsPreview"		"Náhled karet"
+		"GameUI_Retake_Card_AvailableCard"		"Vybrat toto vybavení"
+		"GameUI_Retake_Card_AvailableCards"		"Vyber si vybavení"
+
+		"GameUI_Retake_Card_Bonus"				"Bonus"
+		"GameUI_Retake_Card_Enemy"				"Nepřátelské vybavení"
+		"GameUI_Retake_Card_Mvp"				"Nej. hráč"
+
+		"GameUI_Retake_Card_4v3"				"4 na 3"
+		"GameUI_Retake_Card_FlashOut"			"Slepá spravedlnost"
+		"GameUI_Retake_Card_HideAndPeek"		"Hra na schovávanou"
+		"GameUI_Retake_Card_TakeFive"			"Pětasedmdesátka"
+		"GameUI_Retake_Card_OnlyTakesOne"		"Příruční kanón"
+		"GameUI_Retake_Card_SneakyBeakyLike"	"Základní výbava"
+		"GameUI_Retake_Card_UmpInSmoke"			"Decentní smoking"
+		"GameUI_Retake_Card_FunNGun"			"Zábava do kapsy"
+		"GameUI_Retake_Card_Sharpshooter"		"Anton Špelec"
+		"GameUI_Retake_Card_BurstBullpup"		"Fronta na dávky"
+		"GameUI_Retake_Card_LightEmUp"			"Ostrý mezi slepými"
+		"GameUI_Retake_Card_Kobe"				"Kobe!"
+		"GameUI_Retake_Card_1g"					"1g"
+		"GameUI_Retake_Card_DisappearingAct"	"Kouzlo zmizení"
+		"GameUI_Retake_Card_EyesOnTarget"		"AUGmentovaný voják"
+		"GameUI_Retake_Card_BehindEnemyLines"	"Za nepřátelskou linií"
+		"GameUI_Retake_Card_4BadGuysLeft"		"Dycky Glock!"
+		"GameUI_Retake_Card_LookAway"			"Pozor, nedívat!"
+		"GameUI_Retake_Card_WhenThereIsSmoke"	"Kde je kouř..."
+		"GameUI_Retake_Card_BlindFire"			"Střelba naslepo"
+		"GameUI_Retake_Card_QueOta"				"Qué ota?"
+		"GameUI_Retake_Card_SmokeScreen"		"Kouřová clona"
+		"GameUI_Retake_Card_TecTecBoom"			"Tecnoparty"
+		"GameUI_Retake_Card_BackInAFlash"		"Oslepující lUMPárna"
+		"GameUI_Retake_Card_AllIn"				"Galileo Zabiei"
+		"GameUI_Retake_Card_BoomBox"			"Krabička smrti"
+		"GameUI_Retake_Card_SetThemFree"		"Přihláška do skautu"
+		"GameUI_Retake_Card_OlReliable"			"Osvědčené kombo"
+		"GameUI_Retake_Card_SmokeShow"			"Kouř z kalašnikovu"
+		"GameUI_Retake_Card_HotShot"			"Ohňová show"
+		"GameUI_Retake_Card_EyeSpy"				"5G? Raději SG"
+		"GameUI_Retake_Card_TheAWPortunity"		"Klikací adventura"
+		"GameUI_Retake_Card_FindersKeepers"		"Co si kdo najde"
+
+		"Hud_Retake_BombSite"					"{s:hud-retake-bombsite}"
+		
+		"Hud_Money" "{d:r:hud-money-amount} $"
+		"Hud_Money_Signed" "{s:sign}{d:r:hud-money-delta} $"
+
+		"Propcounter_money" "%s1 $" //e.g. used on danger zone security door
+
+		"csgo_player_left_game"					" %s1 opustil zápas (%s2)"
+
+		"LoadoutLockedPopupTitle"				"Vybavení je uzamčeno"
+		"LoadoutLockedPopupText"				"Při vyhledávání kompetitivních zápasů není povoleno měnit vybavení."
+
+		"Workshop_item_title" "Nástroj pro nahrání položek"
+		"Workshop_item_error_title" "Zadej název položky. V názvu by mělo být zahrnuto jméno hráče nebo jiný identifikační údaj."
+		"Workshop_item_error_image" "Vyber platný obrázek formátu JPEG nebo PNG, který je menší než {s:max_size} a má alespoň {d:min_height} pixelů na výšku/šířku."
+		"Workshop_item_ready" "Výtvor je připraven na nahrání"
+		"SFUI_Go_To_Mic_Enable_key" "Přejít na nastavení klávesy mikrofonu"
+		"SFUI_Go_To_Console_Key_Binding" "Přejít na nastavení klávesy konzole"
+
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//Steam Video
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		"SteamVideo_Player_Kill_Title"					"Zabili jste hráče %s1"
+		"SteamVideo_Player_Kill_Description"			"pomocí %s1"
+
+		"SteamVideo_Player_Double_Kill_Title"			"Dvojnásobné zabití"
+		"SteamVideo_Player_Multi_Kill_Title"			"Vícenásobné zabití"
+		
+		"SteamVideo_Player_Death_Title"					"Zabil Vás hráč %s1"
+		"SteamVideo_Player_Death_Description"			"pomocí %s1"
+		"SteamVideo_Player_Death_Description_Plural"	"pomocí %s1"
+		"SteamVideo_Player_Killed_Self_Title"			"Zabili jste sami sebe"
+		
+		"SteamVideo_Bomb_Planted_Title"					"Bomba byla položena"
+		"SteamVideo_Bomb_Planted"						"Hráč %s1 položil bombu"
+		"SteamVideo_Bomb_Planted_LocalPlayer"			"Položili jste bombu"
+		
+		"SteamVideo_Bomb_Defused_Title"					"Bomba byla zneškodněna"
+		"SteamVideo_Bomb_Defused"						"Hráč %s1 zneškodnil bombu"
+		"SteamVideo_Bomb_Defused_LocalPlayer"			"Zneškodnili jste bombu"
+		
+		"SteamVideo_Bomb_Exploded_Title"				"Bomba vybuchla"
+		
+		"SteamVideo_Round_Number_Label"					"%s1. kolo"
+		"SteamVideo_Start_Of_Round_Title"				"Začátek %s1. kola"
+
+		"SteamVideo_MatchScore"							"Skóre"
+		"SteamVideo_KDA"								"Z/S/A"
+
+		// ---------------------------------------------------------------------------------------------
+		// WEEKLY MISSIONS
+		// ---------------------------------------------------------------------------------------------
+		"weekly_mission_title"							"MISE"
+		"weekly_mission_title_complete"					"MISE DOKONČENA"
+		"weekly_mission_expiration"						"Vyprší za <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_expiration_pausemenu"			"Vyprší za <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_next_mission"					"Nová mise začne za <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_progress"						"<b>{d:mission-progress}</b>/{d:mission-points}"
+		"CS2_Quest_Weapon_Mode"							"Zbraňový specialista: <b>{s:gamemode}</b>, <b>{s:weapon}</b>"
+		"CS2_Quest_Weapon_Mode_desc"					"<b>{s:gamemode}</b> | Proveď {s:actions}{s:optional_target} pomocí zbraně <b>{s:weapon}</b>."
+
+		"mission_searching"								"Vyhledávání..."
+		"mission_xp_remaining"							"{s:mission-xp} XP"
+
+		"mission_segment_tooltip"						"{d:xp-reward} XP"
+
+		"mission_location"								"<b>{s:gamemode}</b> | <b>{s:location}</b>"
+		"mission_directive:f"							"{mission-points, plural, one{<b>{d:mission-points}</b> {s:action}} few{<b>{d:mission-points}</b> {s:actions}} many{<b>{d:mission-points}</b> {s:actions}} other{<b>{d:mission-points}</b> {s:actions}}}"
+ 		"mission_directive_progress:f"					"{mission-points, plural, one{{d:mission-progress}/<b>{d:mission-points}</b> {s:action}} few{{d:mission-progress}/<b>{d:mission-points}</b> {s:actions}} many{{d:mission-progress}/<b>{d:mission-points}</b> {s:actions}} other{{d:mission-progress}/<b>{d:mission-points}</b> {s:actions}}}"
+
+
+		"quest_11000_var_desc:f"	  					"{mission-points, plural, one{<b>{s:gamemode}: {s:location}</b> | Zabij určitý počet nepřátel zbraní {s:item1}.} few{<b>{s:gamemode}: {s:location}</b> | Zabij určitý počet nepřátel zbraní {s:item1}.} many{<b>{s:gamemode}: {s:location}</b> | Zabij určitý počet nepřátel zbraní {s:item1}.} other{<b>{s:gamemode}: {s:location}</b> | Zabij určitý počet nepřátel zbraní {s:item1}.}}"
+		"quest_11000_var_partial:f" 					"... zbraní {s:item1}."
+		"quest_11000_var_ingame:f"	  					"{mission-points, plural, one{Zabíjej nepřátele zbraní {s:item1}} few{Zabíjej nepřátele zbraní {s:item1}} many{Zabíjej nepřátele zbraní {s:item1}} other{Zabíjej nepřátele zbraní {s:item1}}}"
+
+		"quest_11001_var_desc:f"	 					"{mission-points, plural, one{<b>{s:gamemode}: {s:location}</b> | Zabij určitý počet nepřátel zbraní {s:item1}.} few{<b>{s:gamemode}: {s:location}</b> | Zabij určitý počet nepřátel zbraní {s:item1}.} many{<b>{s:gamemode}: {s:location}</b> | Zabij určitý počet nepřátel zbraní {s:item1}.} other{<b>{s:gamemode}: {s:location}</b> | Zabij určitý počet nepřátel zbraní {s:item1}.}}"
+		"quest_11001_var_partial:f"	 					"... zbraní {s:item1}."
+		"quest_11001_var_ingame:f"	 					"{mission-points, plural, one{Zabíjej nepřátele zbraní {s:item1}} few{Zabíjej nepřátele zbraní {s:item1}} many{Zabíjej nepřátele zbraní {s:item1}} other{Zabíjej nepřátele zbraní {s:item1}}}"
+
+		"quest_11002_var_desc:f"	 					"{mission-points, plural, one{<b>{s:gamemode}: {s:location}</b> | Zabij určitý počet nepřátel zbraní {s:item1}.} few{<b>{s:gamemode}: {s:location}</b> | Zabij určitý počet nepřátel zbraní {s:item1}.} many{<b>{s:gamemode}: {s:location}</b> | Zabij určitý počet nepřátel zbraní {s:item1}.} other{<b>{s:gamemode}: {s:location}</b> | Zabij určitý počet nepřátel zbraní {s:item1}.}}"
+		"quest_11002_var_partial:f"	 					"... zbraní {s:item1}."
+		"quest_11002_var_ingame:f"	 					"{mission-points, plural, one{Zabíjej nepřátele zbraní {s:item1}} few{Zabíjej nepřátele zbraní {s:item1}} many{Zabíjej nepřátele zbraní {s:item1}} other{Zabíjej nepřátele zbraní {s:item1}}}"
+
+		"quest_11003_var_desc:f"						"{mission-points, plural, one{<b>{s:gamemode}: {s:location}</b> | Zabij určitý počet nepřátel zbraní {s:item1}.} few{<b>{s:gamemode}: {s:location}</b> | Zabij určitý počet nepřátel zbraní {s:item1}.} many{<b>{s:gamemode}: {s:location}</b> | Zabij určitý počet nepřátel zbraní {s:item1}.} other{<b>{s:gamemode}: {s:location}</b> | Zabij určitý počet nepřátel zbraní {s:item1}.}}"
+		"quest_11003_var_partial:f"	 					"... zbraní {s:item1}."
+		"quest_11003_var_ingame:f"	 					"{mission-points, plural, one{Zabíjej nepřátele zbraní {s:item1}} few{Zabíjej nepřátele zbraní {s:item1}} many{Zabíjej nepřátele zbraní {s:item1}} other{Zabíjej nepřátele zbraní {s:item1}}}"
+
+		"quest_11004_var_desc:f"	 					"{mission-points, plural, one{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} few{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} many{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} other{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.}}"
+		"quest_11004_var_ingame:f"						"{mission-points, plural, one{Vyhrávej kola} few{Vyhrávej kola} many{Vyhrávej kola} other{Vyhrávej kola}}"
+
+		"quest_11005_var_desc:f"	 					"{mission-points, plural, one{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} few{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} many{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} other{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.}}"
+		"quest_11005_var_ingame:f"						"{mission-points, plural, one{Vyhrávej kola} few{Vyhrávej kola} many{Vyhrávej kola} other{Vyhrávej kola}}"
+
+		"quest_11006_var_desc:f"	 					"{mission-points, plural, one{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} few{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} many{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} other{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.}}"
+		"quest_11006_var_ingame:f"						"{mission-points, plural, one{Vyhrávej kola} few{Vyhrávej kola} many{Vyhrávej kola} other{Vyhrávej kola}}"
+
+		"quest_11007_var_desc:f"	 					"{mission-points, plural, one{<b>{s:gamemode}: {s:location}</b> | Zabij určitý počet nepřátel zbraní {s:item1}.} few{<b>{s:gamemode}: {s:location}</b> | Zabij určitý počet nepřátel zbraní {s:item1}.} many{<b>{s:gamemode}: {s:location}</b> | Zabij určitý počet nepřátel zbraní {s:item1}.} other{<b>{s:gamemode}: {s:location}</b> | Zabij určitý počet nepřátel zbraní {s:item1}.}}"
+		"quest_11007_var_partial:f"	 					"... zbraní {s:item1}."
+		"quest_11007_var_ingame:f"	 					"{mission-points, plural, one{Zabíjej nepřátele zbraní {s:item1}} few{Zabíjej nepřátele zbraní {s:item1}} many{Zabíjej nepřátele zbraní {s:item1}} other{Zabíjej nepřátele zbraní {s:item1}}}"
+
+		"quest_11008_var_desc:f"	 					"{mission-points, plural, one{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} few{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} many{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} other{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.}}"
+		"quest_11008_var_ingame:f"						"{mission-points, plural, one{Vyhrávej kola} few{Vyhrávej kola} many{Vyhrávej kola} other{Vyhrávej kola}}"
+
+		"quest_11009_var_desc:f"	 					"{mission-points, plural, one{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} few{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} many{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} other{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.}}"
+		"quest_11009_var_ingame:f"						"{mission-points, plural, one{Vyhrávej kola} few{Vyhrávej kola} many{Vyhrávej kola} other{Vyhrávej kola}}"
+
+		"quest_11010_var_desc:f"	 					"{mission-points, plural, one{<b>{s:gamemode}: {s:location}</b> | Zabij určitý počet nepřátel zbraní {s:item1}.} few{<b>{s:gamemode}: {s:location}</b> | Zabij určitý počet nepřátel zbraní {s:item1}.} many{<b>{s:gamemode}: {s:location}</b> | Zabij určitý počet nepřátel zbraní {s:item1}.} other{<b>{s:gamemode}: {s:location}</b> | Zabij určitý počet nepřátel zbraní {s:item1}.}}"
+		"quest_11010_var_partial:f"	 					"... zbraní {s:item1}."
+		"quest_11010_var_ingame:f"	 					"{mission-points, plural, one{Zabíjej nepřátele zbraní {s:item1}} few{Zabíjej nepřátele zbraní {s:item1}} many{Zabíjej nepřátele zbraní {s:item1}} other{Zabíjej nepřátele zbraní {s:item1}}}"
+
+		"quest_11011_var_desc:f"	 					"{mission-points, plural, one{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} few{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} many{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} other{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.}}"
+		"quest_11011_var_ingame:f"						"{mission-points, plural, one{Vyhrávej kola} few{Vyhrávej kola} many{Vyhrávej kola} other{Vyhrávej kola}}"
+
+		"quest_11012_var_desc:f"	 					"{mission-points, plural, one{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} few{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} many{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} other{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.}}"
+		"quest_11012_var_ingame:f"						"{mission-points, plural, one{Vyhrávej kola} few{Vyhrávej kola} many{Vyhrávej kola} other{Vyhrávej kola}}"
+
+		"quest_11013_var_desc:f"	 					"{mission-points, plural, one{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} few{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} many{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} other{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.}}"
+		"quest_11013_var_ingame:f"						"{mission-points, plural, one{Vyhrávej kola} few{Vyhrávej kola} many{Vyhrávej kola} other{Vyhrávej kola}}"
+
+		"quest_11014_var_desc:f"	 					"{mission-points, plural, one{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} few{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} many{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} other{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.}}"
+		"quest_11014_var_ingame:f"						"{mission-points, plural, one{Vyhrávej kola} few{Vyhrávej kola} many{Vyhrávej kola} other{Vyhrávej kola}}"
+
+		"quest_11015_var_desc:f"	 					"{mission-points, plural, one{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} few{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} many{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} other{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.}}"
+		"quest_11015_var_ingame:f"						"{mission-points, plural, one{Vyhrávej kola} few{Vyhrávej kola} many{Vyhrávej kola} other{Vyhrávej kola}}"
+
+// ---------------------------------------------------------------------------------------------
+// Join Friend Listen Servers
+// ---------------------------------------------------------------------------------------------
+
+		"tooltip_viewaddon"				"Přejít na stránku mapy ve workshopu"
+		"tooltip_kick_player"			"Vyhodit hráče z lokálního serveru"		
+		"tooltip_short_viewaddon"			"Info o mapě"
+		"tooltip_short_kick_player"			"Vyhození"
+
+// crow_mask_50454_comment
+// crow_mask_50455_comment
+}
+
+
+
+
+}
+
+
+lepic:"
 		"accolade_chickenskilled_value"					"{s:accolade-value-string}"
 
 		"accolade_chickenskilled_2"						"Šéfkuchař"

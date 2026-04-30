@@ -1968,8 +1968,8 @@
 		"Team_Cash_Award_no_income_suicide"					" +$0 penalti karena bunuh diri"
 		"Team_Cash_Award_Generic"							" +$%s1 hadiah tim"
 		"Team_Cash_Award_Custom"							" +$%s1 %s2"
-		"Team_Cash_Award_Dead_Terrorists:p"					" +$%s1 hadiah tim untuk %s2 teroris yang dieliminasi"
-		"Team_Cash_Award_Dead_CTs:p"						" +$%s1 hadiah tim untuk %s2 AT yang dieliminasi"
+		"Team_Cash_Award_Dead_Terrorists:f"					" +$%s1 hadiah tim untuk {num_enemies} {num_enemies, plural, other{teroris}} yang tereliminasi"
+		"Team_Cash_Award_Dead_CTs:f"						" +$%s1 hadiah tim untuk {num_enemies} {num_enemies, plural, other{AT}} yang tereliminasi"
 
 
 		"Notice_Bonus_Shorthanded_Eligibility"			" Timmu berhak mendapatkan uang tambahan untuk %s1 ronde"
@@ -2329,10 +2329,14 @@
 		// Econ date formatting supports the following tokens:
 		//    %year%, %monthshort%, %monthlong%, %mmday% (01-31), %mday% (1-31), %day% (legacy unlocalized "Jul 30" shouldn't be used), %hour%, %min%, %sec%
 		//
-		"Econ_DateFormat"						"%mmday% %monthshort% %year% (%hour%:%min%:%sec%)"
-		"Econ_DateFormat_GMT"					"%mmday% %monthshort% %year% (%hour%:%min%:%sec%) GMT"
-		"Econ_DateFormat_DateOnly"				"%mmday% %monthshort% %year%"
-		"Econ_DateFormat_GMT_DateOnly"			"%mmday% %monthshort% %year% GMT"
+		"Econ_DateFormat:f"							"{mmday} {monthshort} {year} ({hour}.{min}.{sec})"
+		"Econ_DateFormat_GMT:f"						"{mmday} {monthshort} {year} ({hour}.{min}.{sec}) GMT"
+		"Econ_DateFormat_DateOnly:f"				"{mmday} {monthshort} {year}"
+		"Econ_DateFormat_GMT_DateOnly:f"			"{mmday} {monthshort} {year} GMT"
+		"Econ_DateFormat"							"%mmday% %monthshort% %year% (%hour%:%min%:%sec%)"
+		"Econ_DateFormat_GMT"						"%mmday% %monthshort% %year% (%hour%:%min%:%sec%) GMT"
+		"Econ_DateFormat_DateOnly"					"%mmday% %monthshort% %year%"
+		"Econ_DateFormat_GMT_DateOnly"				"%mmday% %monthshort% %year% GMT"
 		"Econ_Loot_List_Sticker_ProPlayerSignatures" "Stiker bisa ditandatangani oleh salah satu pemain profesional berikut:"
 		"Econ_Loot_List_Sticker_ProPlayerSignatures_AndSomeMore" "... dan %s1 pemain profesional lainnya"
 		"Econ_Loot_List_Sticker_ProOrgsStickers"	"Stiker bisa mewakili salah satu organisasi berikut:"
@@ -5842,1256 +5846,15 @@
 		
 		"quest"										"Misi"
 
-		"quest_totalgoal_points_desc"				"Total %actions% diperlukan： <b>%points%</b>" // special non-breaking space characters in this string, edit carefully!
-		"quest_attrremaining_points_desc"			"Sisa %actions%： <b>%points%</b>" // special non-breaking space characters in this string, edit carefully!
-		"quest_uncommitted_points_desc"				"Sisa %actions%： <b>%points%</b> (<b>%points uncommitted%</b> didapat dari pertandingan ini)" // special non-breaking space characters in this string, edit carefully!
-		"quest_uncommitted_points_warn"				" * <i>%actions% akan dicatat di akhir pertandingan</i>"
-	
-		"quest_uncommitted_points_chat_one"	" Misi selesai: %action% diperoleh."
-		"quest_uncommitted_points_chat_singular"	" Progres misi: +%points% %action% diperoleh."
-		"quest_uncommitted_points_chat_plural"		" Progres misi: +%points% %actions% diperoleh."
-		"quest_uncommitted_points_chat_event"		" Misi Blitz: %action% diperoleh."		
+		"quest_commandverb_default"					"Dapatkan"
 
-		"quest_reward_desc"								"Misi ini akan memberikan hadiah\n<b>%s1</b>:"
+		"quest_action_plural_act_kill_human"		"kill"
+		"quest_action_singular_act_kill_human"		"kill"
 
-		"quest_reward_xp"									"Hadiah Misi: <b>%s1</b> XP"
-
-		"quest_event_totalgoal_points_desc"					"Dapatkan XP tambahan untuk setiap <b>%action%</b> selama event berlangsung."
-		
-		"quest_bonus_desc"								"Bonus: +<b>%xpperbonusaction%</b> XP per %action%—<i>%xpbonuscondition%.</i>"
-		"quest_bonus_fractional_desc"			"Bonus: +<b>%xpperbonusactions%</b> XP per <b>%n_actions%</b> %actions%—<i>%xpbonuscondition%.</i>"
-		"quest_bonus_single_desc"					"Bonus: +<b>%xpperbonusaction%</b> XP—<i>%xpbonuscondition%.</i>"
-
-
-		"quest_target_chicken"											"ayam"
-		"quest_target_human_or_chicken"									"manusia atau ayam"
-		"quest_target_hostagerescuer"									"penyelamat sandera"
-		"quest_target_armsraceleader"									"pemimpin arms race"
-
-		"quest_target_headshot"											"headshot"
-		"quest_target_airborne"											"di udara"
-		"quest_target_pistolround"										"pistol"
-
-		"quest_target_lockeddoor"										"pintu terkunci"
-		"quest_target_explodingbarrel"									"barel meledak"
-		"quest_target_glasspane"										"panel kaca"
-		"quest_target_enemydrone"										"drone musuh"
-
-		"quest_target_shotgun"											"shotgun"
-		"quest_target_sniperrifle"										"sniper rifle"
-		"quest_target_utility"											"item utilitas"
-		"quest_target_defaultctpistol"									"pistol default AT"
-		"quest_target_defaultpistol"									"pistol default"
-		"quest_target_knife"											"pisau"
-
-		"quest_action_plural_act_kill_human"							"kill"
-		"quest_action_singular_act_kill_human"							"kill"
-
-		"quest_action_plural_act_kill_chicken"							"kill"
-		"quest_action_singular_act_kill_chicken"						"kill"		
-
-		"quest_action_plural_act_protect_chicken"						"lama melindungi ayam (detik)"
-		"quest_action_singular_act_protect_chicken"						"lama melindungi ayam (detik)"	
-
-		"quest_action_plural_act_kill_target"							"kill target"
-		"quest_action_singular_act_kill_target"							"kill target"		
-
-		"quest_action_plural_act_damage"								"damage"
-		"quest_action_singular_act_damage"								"damage yang diberikan"		
-
-		"quest_action_plural_act_win_match"								"menang"
-		"quest_action_singular_act_win_match"							"menang"		
-
-		"quest_action_plural_act_dz_game_end_placement"					"penempatan"
-		"quest_action_singular_act_dz_game_end_placement"				"penempatan"	
-
-		"quest_action_plural_act_dz_purchase_item"					"pembelian"
-		"quest_action_singular_act_dz_purchase_item"				"pembelian"	
-
-		"quest_action_plural_act_win_round"								"ronde dimenangkan"
-		"quest_action_singular_act_win_round"							"ronde dimenangkan"	
-
-		"quest_action_plural_act_round_mvp"								"MVP"
-		"quest_action_singular_act_round_mvp"							"MVP"
-
-		"quest_action_plural_act_dm_bonus_points"						"poin"
-		"quest_action_singular_act_dm_bonus_points"						"poin"		
-
-		"quest_action_plural_act_armsrace_level"						"level"
-		"quest_action_singular_act_armsrace_level"						"level"	
-
-		"quest_action_plural_act_gg_weapon_upgrade"						"upgrade"
-		"quest_action_singular_act_gg_weapon_upgrade"					"upgrade"	
-
-		"quest_action_plural_act_gg_upgrade_to_knifegg"						"upgrade"
-		"quest_action_singular_act_gg_upgrade_to_knifegg"					"upgrade"	
-				
-		"quest_action_plural_act_flashbang_enemy"						"membutakan musuh"
-		"quest_action_singular_act_flashbang_enemy"						"membutakan musuh"		
-		
-		"quest_action_plural_act_pick_up_hostage"						"membawa sandera"
-		"quest_action_singular_act_pick_up_hostage"						"membawa sandera"		
-		
-		"quest_action_plural_act_rescue_hostage"						"menyelamatkan sandera"
-		"quest_action_singular_act_rescue_hostage"						"menyelamatkan sandera"		
-		
-		"quest_action_plural_act_defuse_bomb"							"menjinakkan bom"
-		"quest_action_singular_act_defuse_bomb"							"menjinakkan bom"		
-		
-		"quest_action_plural_act_plant_bomb"							"memasang bom"
-		"quest_action_singular_act_plant_bomb"							"memasang bom"
-
-		"quest_action_singular_act_income"								"dolar"
-		"quest_action_plural_act_income"								"cash"
-		
-		"quest_action_singular_act_survivalincome"						"dolar"
-		"quest_action_plural_act_survivalincome"						"cash"
-
-		"quest_action_singular_act_spend"								"dolar"
-		"quest_action_plural_act_spend"									"cash"
-
-		"quest_action_singular_act_parachute_landed"					"lama meluncur dengan parasut (detik)"
-		"quest_action_plural_act_parachute_landed"						"lama meluncur dengan parasut (detik)"
-
-		"quest_action_singular_act_bumpmine_launch"						"meluncur dengan Bump Mine"
-		"quest_action_plural_act_bumpmine_launch"						"meluncur dengan Bump Mine"
-
-		"quest_action_singular_headshot_kill"							"kill headshot"
-		"quest_action_plural_headshot_kill"								"kill headshot"
-
-		"quest_action_singular_multikill"								"ronde multi-kill"
-		"quest_action_plural_multikill"									"ronde multi-kill"
-
-		"quest_action_singular_act_apply_graffiti"						"grafiti"
-		"quest_action_plural_act_apply_graffiti"						"grafiti"
-
-		"quest_action_singular_act_detonate_smokegrenade"				"granat asap"
-		"quest_action_plural_act_detonate_smokegrenade"					"granat asap"
-
-		"quest_action_singular_act_detonate_molotov"					"molotov"
-		"quest_action_plural_act_detonate_molotov"						"molotov"
-
-		"quest_action_singular_act_use_healthshot"						"healthshot"
-		"quest_action_plural_act_use_healthshot"						"healthshot"
-		
-		"quest_action_singular_act_retakes_picked_enemy_card"			"pemilihan kartu musuh"
-		"quest_action_plural_act_retakes_picked_enemy_card"				"pemilihan kartu musuh"
-
-		"quest_action_singular_act_retakes_picked_mvp_card"				"pemilihan kartu MVP"
-		"quest_action_plural_act_retakes_picked_mvp_card"				"pemilihan kartu MVP"
-//
-
-		"quest_action_plural_bomb_plants_or_defuses"					"memasang atau menjinakkan bom"
-		"quest_action_singular_bomb_plants_or_defuses"					"memasang atau menjinakkan bom"
-		
-		"quest_action_plural_rescue_or_kill_hostages"					"kill penyelamat sandera atau menyelamatkan sandera"
-		"quest_action_singular_rescue_or_kill_hostages"					"kill penyelamat sandera atau menyelamatkan sandera"		
-		
-		"quest_action_plural_damage_burn"								"damage terbakar"
-		"quest_action_singular_damage_burn"								"poin damage terbakar"
-
-		"quest_commandverb_default"										"Dapatkan"
-		"quest_commandverb_defaultCT"									"Sebagai AT, dapatkan"
-		"quest_commandverb_defaultT"									"Sebagai T, dapatkan"
-		"quest_commandverb_deal"										"Berikan"
-		"quest_commandverb_earn"										"Dapatkan"
-		"quest_commandverb_earnT"										"Sebagai T, dapatkan"
-		"quest_commandverb_spend"										"Habiskan"
-		"quest_commandverb_execute"										"Lakukan"
-		"quest_commandverb_destroy"										"Hancurkan"
-		"quest_commandverb_apply"										"Terapkan"
-		"quest_commandverb_throw"										"Daratkan"
+		"quest_action_plural_act_win_round"			"ronde dimenangkan"
+		"quest_action_singular_act_win_round"		"ronde dimenangkan"	
 
 		////
-
-		"quest_condition_item_own"										"milikmu"
-		"quest_condition_item_borrowed"									"milik orang lain"									
-		"quest_condition_item_borrowed_teammate"						"milik rekan tim"									
-		"quest_condition_item_borrowed_enemy"							"milik musuh"									
-		"quest_condition_item_borrowed_victim"							"milik korban"									
-		"quest_condition_item_nondefault"								"bagus"
-
-		"quest_LoadoutSlot_Melee"										"pisau"
-		"quest_LoadoutSlot_Secondary"									"pistol"
-		"quest_LoadoutSlot_SMG"											"SMG"
-		"quest_LoadoutSlot_Rifle"										"rifle"
-		"quest_LoadoutSlot_Heavy"										"senjata berat"
-		"quest_LoadoutSlot_Grenade"										"granat"
-
-		"quest_item_default"											"senjata"
-
-////
-		"quest_event_ending"											"Berakhir dalam %s1 menit"
-		"quest_event_soon_hours"										"Dimulai dalam %s1 jam"
-		"quest_event_soon_hms"											"Dimulai dalam %s1:%s2:%s3"
-		"quest_event_today"												"Hari ini %s1:%s2"
-		"quest_event_future"											"Dimulai pada %s1 %s2 %s3:%s4"
-		"quest_event_timer"												"Dimulai dalam %s1"
-
-////
-
-
-
-
-////////////////////////// generalized quest strings //////////////////////////////
-///
-///	Use these if applicable. If not, use this pattern to create new ones.
-///
-///
-///
-
-		"quest_default_0_items_desc" "%commandverb% %target% %actions% di dalam pertandingan <b>%gamemode%: %location%</b>."		
-		"quest_default_1_items_desc" "%commandverb% %target% %actions% dengan <i>%item_quality%</i> apa saja <b>%item1%</b> di dalam pertandingan <b>%gamemode%: %location%</b>."
-		"quest_default_2_items_desc" "%commandverb% %target% %actions% dengan <i>%item_quality%</i> <b>%item1%</b> atau <b>%item2%</b> apa saja di dalam pertandingan <b>%gamemode%: %location%</b>."
-		"quest_default_3_items_desc" "%commandverb% %target% %actions% dengan <i>%item_quality%</i> <b>%item1%</b>, <b>%item2%</b>, atau <b>%item3%</b> %item_quality% apa saja di dalam pertandingan <b>%gamemode%: %location%</b>."
-		"quest_default_4_items_desc" "%commandverb% %target% %actions% dengan <i>%item_quality%</i> <b>%item1%</b>, <b>%item2%</b>, <b>%item3%</b>, atau <b>%item4%</b> apa saja di dalam pertandingan <b>%gamemode%: %location%</b>."
-
-		"quest_default_hud_0_items_desc" "%commandverb% %target% %actions%"
-		"quest_default_hud_1_items_desc" "%commandverb% %target% %actions%: <i>%item_quality%</i> <b>%item1%</b>"
-		"quest_default_hud_2_items_desc" "%commandverb% %target% %actions%: <i>%item_quality%</i> <b>%item1%</b>/<b>%item2%</b>"
-		"quest_default_hud_3_items_desc" "%commandverb% %target% %actions%: <i>%item_quality%</i> <b>%item1%</b>/<b>%item2%</b>/<b>%item3%</b>"
-		"quest_default_hud_4_items_desc" "%commandverb% %target% %actions%: <i>%item_quality%</i> <b>%item1%</b>/<b>%item2%</b>/<b>%item3%</b>/<b>%item4%</b>"
-
-/////////////////////////////////////////////////////////
-
-/////////////////////////////// Quest Strings via Dialog Vars //////
-///
-/// Used starting with Op09 - the default descriptions should handle most "Perform X Action in GameMode: Location" quests.
-///
-///
-		"quest_default_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} di dalam <b>{s:gamemode}: {s:location}</b>."		
-		"quest_single_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} di dalam <i>satu</i> pertandingan <b>{s:gamemode}: {s:location}</b>."		
-		"quest_default_no_map_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} di mode <b>{s:gamemode}</b>."
-		"quest_single_no_map_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} di dalam <i>satu</i> pertandingan <b>{s:gamemode}</b>."		
-
-		"quest_weapon_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} menggunakan {s:weapon} di dalam <b>{s:gamemode}: {s:location}</b>."
-		"quest_weapon_single_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} menggunakan {s:weapon} di dalam <i>satu</i> pertandingan <b>{s:gamemode}: {s:location}</b>."
-		"quest_weapon_no_map_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} menggunakan {s:weapon} di dalam <b>{s:gamemode}</b>."
-		"quest_weapon_category_no_map_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} menggunakan senjata {s:weapon} di dalam <b>{s:gamemode}</b>."
-
-		"quest_flyingscoutsman_var_desc"	"{s:commandverb} {d:points} {s:target} {s:actions} di mode <b>Flying Scoutsman: {s:location}</b>."
-		"quest_flyingscoutsman_no_map_var_desc"	"{s:commandverb} {d:points} {s:target} {s:actions} di mode <b>Flying Scoutsman</b>."
-
-		"quest_retakes_var_desc"	"{s:commandverb} {d:points} {s:target} {s:actions} di mode <b>Retakes: {s:location}</b>."
-		"quest_retakes_no_map_var_desc"	"{s:commandverb} {d:points} {s:target} {s:actions} di mode <b>Retakes</b>."
-
-		"quest_armsrace_var_desc"	 		"{s:commandverb} {d:points} {s:target} {s:actions} di mode <b>Arms Race</b>."
-		"quest_armsrace_weapon_var_desc"	"{s:commandverb} {d:points} {s:target} {s:actions} menggunakan {s:weapon} di mode <b>Arms Race</b>."
-
-		// quest exceptions:
-		"quest_931_var_desc"	 "Dapatkan {d:points} kill menggunakan {s:weapon} di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_932_var_desc"	 "Dapatkan {d:points} kill saat kamu berada di udara dalam mode <b>Flying Scoutsman</b>."
-		"quest_933_var_desc"	 "Menangkan {d:points} ronde di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_934_var_desc"	 "Dapatkan {s:kills} kill {s:weapon} di mode <b>Guardian: {s:location}</b>."
-		"quest_935_var_desc"	 "Dapatkan {d:points} kill {s:weapon} dalam <i>satu</i> pertandingan <b>{s:gamemode}: {s:location}</b>."
-		"quest_936_var_desc"	 "Dapatkan {d:points} kill {s:weapon} di mode <b>{s:gamemode}</b>."
-		"quest_937_var_desc"	 "Semprot {d:points} grafiti di teritori musuh dalam mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_938_var_desc"	 "Dapatkan {d:points} kill leader arms race di mode <b>{s:gamemode}</b>."
-		"quest_939_var_desc"	 "Dapatkan {s:kills} kill {s:weapon} di mode <b>Guardian: {s:location}</b>."
-		"quest_940_var_desc"	 "Menangkan {d:points} ronde di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_941_var_desc"	 "Menangkan {d:points} ronde pistol di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_942_var_desc"	 "Dapatkan {d:points} kill {s:weapon} dalam <i>satu</i> pertandingan <b>{s:gamemode}: {s:location}</b>."
-		"quest_943_var_desc"	 "Dapatkan {d:points} kill di mode <b>Flying Scoutsman</b>."
-		"quest_944_var_desc"	 "Gunakan {d:points} cash dalam <i>satu</i> pertandingan <b>{s:gamemode}</b>."
-		"quest_945_var_desc"	 "Dapatkan {s:kills} kill di mode <b>Guardian: {s:location}</b>."
-		"quest_946_var_desc"	 "Menangkan {d:points} ronde di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_947_var_desc"	 "Menangkan {d:points} ronde di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_948_var_desc"	 "Selamatkan sandera {d:points} kali, atau bunuh {d:points} penyelamat sandera di mode <b>{s:gamemode}: {s:location}</b>."
-        "quest_949_var_desc"	 "Dapatkan {d:points} kill menggunakan {s:weapon} di mode <b>{s:gamemode}: {s:location}</b>."
-        "quest_950_var_desc"	 "Dapatkan {d:points} kill menggunakan Senjata Berat apa saja di mode <b>{s:gamemode}</b>."
-        "quest_951_var_desc"	 "Dapatkan {s:kills} kill {s:weapon} di mode <b>Guardian: {s:location}</b>. Pemain mulai pertandingan dengan <b>{s:extraequip0}</b>."
-        "quest_952_var_desc"	 "Menangkan {d:points} ronde di mode <b>{s:gamemode}: {s:location}</b>."
-        "quest_953_var_desc"	 "Menangkan {d:points} ronde di mode <b>{s:gamemode}: {s:location}</b>."
-        "quest_954_var_desc"	 "Dapatkan {d:points} kill {s:target} dalam <i>satu</i> pertandingan <b>{s:gamemode}: {s:location}</b>."
-		"quest_955_var_desc"	 "Berteman dengan ayam selama {d:points} detik di <b>{s:gamemode}: {s:location}</b>."
-		"quest_956_var_desc" 	 "Gunakan parasut selama {d:points} detik di mode <b>{s:gamemode}</b>."
-		"quest_957_var_desc" 	 "Dapatkan {d:points} kill menggunakan {s:weapon} di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_958_var_desc" 	 "Menangkan {d:points} ronde di mode <b>{s:gamemode}: {s:location}</b> (Scrimmage)."
-		"quest_959_var_desc" 	 "Dapatkan {d:points} kill di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_960_var_desc"	 "Dapatkan {s:kills} kill {s:weapon} di mode <b>Guardian: {s:location}</b>."
-		"quest_961_var_desc" 	 "Dapatkan {d:points} kill pistol di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_962_var_desc" 	 "Dapatkan {d:points} kill tanpa mengeluarkan uang dalam <i>satu</i> pertandingan <b>{s:gamemode}</b>."
-		"quest_963_var_desc"	 "Dapatkan {s:kills} kill {s:weapon} di mode <b>Guardian: {s:location}</b>."
-		"quest_964_var_desc" 	 "Menangkan {d:points} ronde pistol di mode <b>{s:gamemode}</b>."
-		"quest_965_var_desc" 	 "Dapatkan {s:kills} kill {s:weapon} di mode <b>Guardian: {s:location}</b>."
-		"quest_966_var_desc" 	 "Dapatkan ${d:points} di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_967_var_desc" 	 "Dapatkan {d:points} kill menggunakan {s:weapon} di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_968_var_desc"	 "Dapatkan {d:points} kill sniper rifle di mode <b>{s:gamemode}</b>."
-		"quest_969_var_desc" 	 "Dapatkan {s:kills} kill tanpa menggunakan teleskop{s:weapon} di mode <b>Guardian: {s:location}</b>."
-		"quest_970_var_desc" 	 "Menangkan {d:points} ronde di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_971_var_desc"	 "Dapatkan {s:kills} kill {s:weapon} di mode <b>Guardian: {s:location}</b>."
-		"quest_972_var_desc" 	 "Dapatkan {d:points} kill headshot dalam <i>satu</i> <b> pertandingan {s:gamemode}: {s:location}</b>."
-		"quest_973_var_desc" 	 "Dapatkan {d:points} kill di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_974_var_desc" 	 "Dapatkan {d:points} kill headshot di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_975_var_desc"     "Dapatkan {s:kills} kill dengan senjata AT di mode <b>Guardian: {s:location}</b>."
-		"quest_976_var_desc" 	 "Menangkan {d:points} ronde di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_977_var_desc"	 "Menangkan {d:points} ronde di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_978_var_desc" 	 "Dapatkan {d:points} kill menggunakan {s:weapon} di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_979_var_desc"	 "Dapatkan empat kill beruntun atau lebih di mode <b>{s:gamemode}: {s:location}</b>."		
-		"quest_980_var_desc" 	 "Dapatkan peringkat keempat atau lebih baik di mode <b>{s:gamemode}</b>."
-		"quest_981_var_desc"     "Dapatkan {s:kills} kill headshot {s:weapon} di mode <b>Guardian: {s:location}</b> <i>tanpa menggunakan armor</i>."
-		"quest_982_var_desc" 	 "Dapatkan {d:points} kill headshot menggunakan {s:weapon} dalam <i>satu</i> pertandingan <b>{s:gamemode}: {s:location}</b>."
-		"quest_983_var_desc" 	 "Dapatkan {d:points} kill headshot di mode <b>{s:gamemode}</b>."
-		"quest_984_var_desc" 	 "Dapatkan {d:points} kali MVP di pertandingan mode <b>{s:gamemode}</b>."
-		"quest_985_var_desc" 	 "Dapatkan {d:points} kill menggunakan pistol default di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_986_var_desc"     "Dapatkan {s:kills} kill {s:weapon} di mode <b>Guardian: {s:location}</b>."
-		"quest_987_var_desc"	 "Dapatkan {d:points} kill menggunakan rifle musuh di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_988_var_desc"     "Dapatkan {d:points} kill pisau di mode <b>Arms Race</b>."
-		"quest_989_var_desc" 	 "Berikan {d:points} damage item utilitas di mode <b>{s:gamemode}</b>."
-		"quest_990_var_desc" 	 "Dapatkan {d:points} ace di mode <b>{s:gamemode}</b>."
-		"quest_991_var_desc" 	 "Dapatkan {d:points} kill menggunakan <b>Tec-9 atau Five-Seven</b> di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_992_var_desc"     "Dapatkan {s:kills} kill {s:weapon} di mode <b>Guardian: {s:location}</b>."
-		"quest_993_var_desc"	 "Berikan {d:points} damage item utilitas di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_994_var_desc" 	 "Dapatkan {d:points} kill di mode <b>{s:gamemode}</b>."
-		"quest_995_var_desc" 	 "Menangkan {d:points} ronde di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_996_var_desc"     "Dapatkan {d:points} kill di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_997_var_desc" 	 "Dapatkan {d:points} kill menggunakan Galil AR atau FAMAS di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_998_var_desc"     "Dapatkan {s:kills} kill {s:weapon} di mode <b>Guardian: {s:location}</b>."
-		"quest_999_var_desc" 	 "Dapatkan {d:points} kill menggunakan {s:weapon} di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1000_var_desc" 	 "Hancurkan {d:points} drone musuh {s:actions} di mode <b>{s:gamemode}</b>."
-		"quest_1001_var_desc" 	 "Dapatkan {d:points} MVP dalam <i>satu</i> pertandingan <b>{s:gamemode}: {s:location}</b>."
-		"quest_1002_var_desc"	 "Dapatkan dua kill beruntun atau lebih dalam {d:points} ronde di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1003_var_desc" 	 "Dapatkan {d:points} kill menggunakan {s:weapon} di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1004_var_desc"    "Dapatkan {s:kills} kill {s:weapon} di mode <b>Guardian: {s:location}</b>."
-		"quest_1005_var_desc" 	 "Menangkan {d:points} ronde di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1006_var_desc"    "Dapatkan {d:points} kill di mode <b>Arms Race</b>."
-		"quest_1007_var_desc" 	 "Hancurkan {d:points} pintu yang terkunci {s:actions} menggunakan {s:weapon} di mode <b>{s:gamemode}</b>."
-		"quest_1008_var_desc" 	 "Dapatkan {d:points} kill menggunakan AK-47 atau M4A4 di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1009_var_desc" 	 "Menangkan {d:points} ronde di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1010_var_desc"	 "Dapatkan {d:points} kill menggunakan {s:weapon} di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1011_var_desc"    "Menangkan 5 ronde atau lebih di dalam setengah pertandingan <b>{s:gamemode}: {s:location}</b>."
-		"quest_1012_var_desc" 	 "Injak {d:points} Bump Mine di mode <b>{s:gamemode}</b>."
-		"quest_1013_var_desc" 	 "Dapatkan {d:points} kill {s:weapon} di mode <b>{s:gamemode}</b>."
-		"quest_1014_var_desc"    "Dapatkan {s:kills} kill {s:weapon} di mode <b>Guardian: {s:location}</b>."
-		"quest_1015_var_desc" 	 "Dapatkan {d:points} kill tanpa menggunakan uang lebih dari $2000 di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1016_var_desc"	 "Kumpulkan $3000 atau lebih di mode <b>{s:gamemode}</b>."
-		"quest_1017_var_desc" 	 "Menangkan {d:points} ronde di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1018_var_desc"    "Dapatkan {s:kills} kill {s:weapon} di mode <b>Guardian: {s:location}</b>."
-		"quest_1019_var_desc" 	 "Dapatkan {d:points} kill dengan {s:weapon} apa pun di mode <b>Arms Race</b>."
-		"quest_1020_var_desc" 	 "Dapatkan {d:points} kill menggunakan {s:weapon} di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1021_var_desc" 	"Bunuh {d:points} ayam di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1022_var_desc" 	"Ledakkan {d:points} barel di mode <b>{s:gamemode}</b>."
-		"quest_1023_var_desc" 	"Menangkan {d:points} ronde di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1024_var_desc" 	"Hancurkan {d:points} panel kaca di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1025_var_desc" 	"Menangkan {d:points} ronde di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1027_var_desc"	 "Semprot {d:points} grafiti di area spawn musuh dalam mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1028_var_desc"	 "Dapatkan {d:points} kill di <i>Banana</i> atau <i>Apartemen</i> dalam mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1029_var_desc"	 "Lempar {d:points} granat asap di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1030_var_desc"	 "Dapatkan sampel virus Zona Bahaya dari laboratorium Phoenix."
-		"quest_1031_var_desc"	 "Hancurkan fasilitas produksi The Phoenix dan habisi Franz Kriegeld."
-		
-		"quest_1098_var_desc"                                  "Menangkan ronde di <b>{s:location}</b>."
-		"quest_1032_var_desc"                                  "Menangkan ronde di <b>{s:gamemode}: {s:location}</b>."
-		"quest_1033_var_desc"                                  "Dapatkan {s:kills} kill di mode <b>Guardian: {s:location}</b>."
-		"quest_1034_var_desc"                                  "The Phoenix ditemukan! Cari tahu tentang rencana mereka."
-		"quest_1035_var_desc"                                  "Dapatkan kill menggunakan AK-47, M4A4, atau M4A1-S di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1036_var_desc"                                  "Menangkan ronde di <b>{s:location}</b>."
-		"quest_1037_var_desc"                                  "Dapatkan kill di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1099_var_desc"                                  "Dapatkan MVP di mode <b>{s:location}</b>."
-		"quest_1038_var_desc"                                  "Menangkan ronde di <b>{s:gamemode}: {s:location}</b>."
-		"quest_1039_var_desc"                                  "Dapatkan {s:kills} kill menggunakan semua pistol di mode <b>Guardian: {s:location}</b>."
-		"quest_1040_var_desc"                                  "Dapatkan kill {s:weapon} di mode <b>{s:location}</b>."
-		"quest_1041_var_desc"                                  "Dapatkan kill {s:weapon} di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1042_var_desc"                                  "Menangkan ronde di <b>{s:gamemode}: {s:location}</b>."
-		"quest_1043_var_desc"                                  "Dapatkan {s:kills} kill menggunakan {s:weapon} di mode <b>Guardian: {s:location}</b>."
-		"quest_1044_var_desc"                                  "Dapatkan kill dari jarak minimum 15 meter di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1045_var_desc"                                  "Dapatkan kill dengan sniper rifle apa pun di mode <b>{s:location}</b>."
-		"quest_1046_var_desc"                                  "Dapatkan kill headshot di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1047_var_desc"                                  "Dapatkan {s:kills} kill menggunakan {s:weapon} di mode <b>Guardian: {s:location}</b>."
-		"quest_1048_var_desc"                                  "Berikan damage menggunakan granat di mode <b>{s:location}</b>."
-		"quest_1049_var_desc"                                  "Dapatkan uang di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1050_var_desc"                                  "Menangkan ronde di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1051_var_desc"                                  "Dapatkan {s:kills} kill di mode <b>Guardian: {s:location}</b>."
-		"quest_1052_var_desc"                                  "Pilih satu kartu musuh di mode <b>{s:location}</b>."
-		"quest_1053_var_desc"                                  "Ledakkan Granat Asap di lokasi yang ditentukan dalam mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1054_var_desc"                                  "Menangkan ronde di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1055_var_desc"                                  "Dapatkan {s:kills} kill dengan senjata Teroris di mode <b>Guardian: {s:location}</b>."
-		"quest_1056_var_desc"                                  "Dapatkan kill di Terowongan atau Istana dalam mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1057_var_desc"                                  "Dapatkan kill di mode <b>{s:location}</b>."
-		"quest_1058_var_desc"                                  "Menangkan ronde di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1059_var_desc"                                  "Dapatkan {s:kills} kill SMG di mode <b>Guardian: {s:location}</b>."
-		"quest_1060_var_desc"                                  "Dapatkan kill SMG di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1061_var_desc"                                  "Dapatkan kill SMG di mode <b>{s:location}</b>."
-		"quest_1062_var_desc"                                  "Menangkan pertandingan di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1063_var_desc"                                  "Dapatkan {s:kills} kill Shotgun di mode <b>Guardian: {s:location}</b>."
-		"quest_1064_var_desc"                                  "Pilih satu kartu MVP di mode <b>{s:location}</b>."
-		"quest_1065_var_desc"                                  "Semprot Grafiti di lokasi yang telah ditentukan dalam mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1100_var_desc"                                  "Menangkan ronde di <b>{s:location}</b>."
-		"quest_1066_var_desc"                                  "Menangkan ronde di <b>{s:gamemode}: {s:location}</b>."
-		"quest_1067_var_desc"                                  "Dapatkan {s:kills} kill headshot menggunakan AUG di mode <b>Guardian: {s:location}</b>."
-		"quest_1068_var_desc"                                  "Butakan musuh menggunakan Granat Kejut di <b>{s:location}</b>."
-		"quest_1069_var_desc"                                  "Semprot Grafiti di lokasi yang telah ditentukan dalam mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1101_var_desc"                                  "Menangkan ronde di <b>{s:location}</b>."
-		"quest_1070_var_desc"                                  "Menangkan pertandingan di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1071_var_desc"                                  "Dapatkan {s:kills} kill dari jarak kurang dari 10 meter di mode <b>Guardian: {s:location}</b>."
-		"quest_1072_var_desc"                                  "Dapatkan kill dari jarak kurang dari 10 meter di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1073_var_desc"                                  "Dapatkan kill di mode <b>{s:location}</b>."		
-		"quest_1074_var_desc"                                  "Menangkan ronde di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1075_var_desc"                                  "Dapatkan {s:kills} kill di mode <b>Guardian: {s:location}</b>."
-		"quest_1076_var_desc"                                  "Dapatkan kill headshot di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1077_var_desc"                                  "Dapatkan kill Senjata Berat di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1102_var_desc"                                  "Menangkan ronde di <b>{s:location}</b>."
-		"quest_1078_var_desc"                                  "Menangkan ronde di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1079_var_desc"                                  "Dapatkan {s:kills} kill SSG08 di mode <b>Guardian: {s:location}</b>."
-		"quest_1080_var_desc"                                  "Kill ayam di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1081_var_desc"                                  "Dapatkan kill di mode <b>{s:location}</b>."
-		"quest_1082_var_desc"                                  "Menangkan ronde di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1083_var_desc"                                  "Dapatkan {s:kills} kill MAG-7 di mode <b>Guardian: {s:location}</b>."
-		"quest_1084_var_desc"                                  "Dapatkan kill di mode <b>{s:location}</b>."
-		"quest_1085_var_desc"                                  "Berikan damage dengan granat di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1085_v2_var_desc"                   			   "Berikan damage dengan granat di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1086_var_desc"                                  "Menangkan ronde di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1087_var_desc"                                  "Dapatkan {s:kills} kill dengan senjata musuh di mode <b>Guardian: {s:location}</b>."
-		"quest_1088_var_desc"                                  "Dapatkan kill dari lokasi spesifik di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1089_var_desc"                                  "Dapatkan kill ketika menggunakan teleskop di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1089_v2_var_desc"                               "Dapatkan kill ketika menggunakan teleskop di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1090_var_desc"                                  "Menangkan ronde di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1091_var_desc"                                  "Dapatkan {s:kills} kill di mode <b>Guardian: {s:location}</b>."
-		"quest_1092_var_desc"                                  "Dapatkan poin menggunakan senjata bonus di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1092_v2_var_desc"                                  "Dapatkan poin menggunakan senjata bonus di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1093_var_desc"                                  "Gunakan uang di mode <b>{s:gamemode}</b>."
-		"quest_1094_var_desc"                                  "Menangkan ronde di mode <b>{s:gamemode}: {s:location}</b>."
-		"quest_1095_var_desc"                                  "Dapatkan {s:kills} kill di mode <b>Guardian: {s:location}</b>."
-		"quest_1095_v2_var_desc"                                  "Dapatkan {s:kills} kill UMP-45 di mode <b>Guardian: {s:location}</b>."
-		"quest_1096_var_desc"                                  "Menangkan ronde di mode <b>{s:location}</b>."
-		"quest_1097_var_desc"                                  "Selesaikan Misi."
-		"quest_1097_v2_var_desc"                                  "<i>...retina beradaptasi dengan cepat terhadap cahaya, sehingga penglihatan menjadi kabur untuk sementara.</i>"
-		"quest_1103_var_desc"                                  "Butakan musuh menggunakan Granat Kejut di mode <b>{s:gamemode}: {s:location}</b>."
-
-// OP11 Week 1 Missions
-		"quest_1106_var_desc"                              "Selamat dari serangan udara di mode <b>Guardian: {s:location}</b>."
-		"quest_1107_var_desc"                              "Selesaikan berbagai tugas di mode <b>Zona Bahaya: {s:location}</b>"
-		"quest_1108_var_desc"                              "Dapatkan kill di lokasi radar yang berbeda"
-
-// OP11 Week 2 Missions
-		"quest_1111_var_desc"                              "Dapatkan kill di mode <b>Guardian: {s:location}</b>."
-
-// OP11 Week 3 Missions
-		"quest_1115_var_desc"                              "Dapatkan kill sniper rifle di mode <b>Guardian: {s:location}</b>."
-		"quest_1117_var_desc"                              "Semprot graffiti di lokasi yang berbeda-beda"
-
-// OP11 Week 4 Missions
-		"quest_1119_var_desc"                              "Dapatkan kill Shotgun di mode <b>Guardian: {s:location}</b>."
-		"quest_1120_var_desc"                              "Dapatkan kill di lokasi radar yang berbeda"
-
-// OP11 Week 5 Missions
-		"quest_1123_var_desc"                              "Dapatkan kill SMG di mode <b>Guardian: {s:location}</b>."
-		"quest_1125_var_desc"                              "Selesaikan berbagai tugas"
-
-// OP11 Week 6 Missions
-		"quest_1127_var_desc"                              "Dapatkan kill rifle di mode <b>Guardian: {s:location}</b>."
-		"quest_1128_var_desc"                              "Dapatkan kill beruntun di mode <b>Deathmatch: {s:location}</b>."
-
-// OP11 Week 7 Missions
-		"quest_1131_var_desc"                              "Dapatkan kill di mode <b>Guardian: {s:location}</b>."
-		"quest_1132_var_desc"                              "Dapatkan kill di lokasi radar yang berbeda"
-
-// OP11 Week 8 Missions
-		"quest_1135_var_desc"                              "Dapatkan kill Shotgun di mode <b>Guardian: {s:location}</b>."
-		"quest_1137_var_desc"                              "Selesaikan berbagai task menggunakan item utilitas"
-
-// OP11 Week 9 Missions
-		"quest_1139_var_desc"                              "Dapatkan kill pistol di mode <b>Guardian: {s:location}</b>."
-		"quest_1140_var_desc"                              "Semprot grafiti di berbagai lokasi"
-
-// OP11 Week 10 Missions
-		"quest_1143_var_desc"                              "Dapatkan kill AUG di mode <b>Guardian: {s:location}</b>."
-		"quest_1144_var_desc"                              "Dapatkan kill di lokasi radar yang berbeda"
-
-// OP11 Week 11 Missions
-		"quest_1147_var_desc"                              "Dapatkan kill MP9 di mode <b>Guardian: {s:location}</b>."
-
-// OP11 Week 12 Missions
-		"quest_1151_var_desc"                              "Dapatkan kill SMG di mode <b>Guardian: {s:location}</b>."
-		"quest_1152_var_desc"                              "Dapatkan kill beruntun"
-
-// OP11 Week 13 Missions
-		"quest_1155_var_desc"                              "Dapatkan kill dengan senjata musuh di <b>Guardian: {s:location}</b>."
-		"quest_1156_var_desc"                              "Dapatkan kill di lokasi radar yang berbeda"
-		"quest_1157_var_desc"                              "Semprot grafiti di berbagai lokasi"
-
-// OP11 Week 14 Missions
-		"quest_1159_var_desc"                              "Dapatkan kill Breach Charge di mode <b>Guardian: {s:location}</b>."
-
-// OP11 Week 15 Missions
-		"quest_1163_var_desc"                              "Dapatkan kill Senjata Berat di mode <b>Guardian: {s:location}</b>."
-
-// OP11 Week 16 Missions
-		"quest_1167_var_desc"                              "Dapatkan kill di mode <b>Guardian: {s:location}</b>."
-		"quest_1169_var_desc"                              "Dapatkan kill menggunakan salah satu dari empat Koleksi Operation Riptide"
-
-
-// OP11 Week 1 Sub-Missions
-		"quest_1200_var_desc"                              "Menangkan {d:points} pertandingan"
-		"quest_1201_var_desc"                              "Menangkan {d:points} ronde"
-		"quest_1202_var_desc"                              "Berikan {d:points} damage item utilitas dalam <i>satu pertandingan</i>"
-		"quest_1203_var_desc"                              "Berikan {d:points} damage item utilitas"
-		"quest_1204_var_desc"                              "Hancurkan drone musuh"
-		"quest_1205_var_desc"                              "Ledakkan barel"
-		"quest_1206_var_desc"                              "Hancurkan beberapa kaca"
-		"quest_1207_var_desc"                              "Lompat menggunakan Bump Mine dari puncak Menara Air"
-		"quest_1208_var_desc"                              "Selamatkan sandera"
-		"quest_1209_var_desc"                              "Dapatkan kill di area Spawn T"
-		"quest_1210_var_desc"                              "Dapatkan kill di area T Ramp"
-		"quest_1211_var_desc"                              "Dapatkan kill di area Bombsite A"
-		"quest_1212_var_desc"                              "Dapatkan kill di area Spawn AT"
-		"quest_1213_var_desc"                              "Dapatkan kill di area Toko"
-		"quest_1214_var_desc"                              "Dapatkan kill di area Bombsite B"
-		"quest_1215_var_desc"                              "Dapatkan kill di area Catwalk"
-		"quest_1216_var_desc"                              "Dapatkan kill di area Mid"
-		"quest_1217_var_desc"                              "Dapatkan kill di area Tangga"
-		"quest_1218_var_desc"                              "Dapatkan kill di area Bombsite A (Lagi)!"
-		"quest_1219_var_desc"                              "Dapatkan {d:points} ronde multi-kill dalam <i>satu pertandingan</i>"
-		"quest_1220_var_desc"                              "Dapatkan {d:points} kill"
-
-// OP11 Week 2 Sub-Missions
-		"quest_1221_var_desc"                              "Menangkan {d:points} pertandingan"
-		"quest_1222_var_desc"                              "Menangkan {d:points} ronde"
-		"quest_1223_var_desc"                              "Dapatkan {d:points} kill headshot dalam <i>satu pertandingan</i>"
-		"quest_1224_var_desc"                              "Dapatkan {d:points} kill headshot"
-		"quest_1225_var_desc"                              "Berikan damage dengan granat"
-		"quest_1226_var_desc"                              "Dapatkan {d:points} kill"
-
-// OP11 Week 3 Sub-Missions		
-		"quest_1227_var_desc"                              "Menangkan {d:points} pertandingan"
-		"quest_1228_var_desc"                              "Menangkan {d:points} ronde"
-		"quest_1229_var_desc"                              "Berikan {d:points} damage dalam <i>satu pertandingan</i>"
-		"quest_1230_var_desc"                              "Berikan {d:points} damage"
-		"quest_1231_var_desc"                              "Semprot grafiti di Spawn AT"
-		"quest_1232_var_desc"                              "Semprot grafiti di Bombsite A"
-		"quest_1233_var_desc"                              "Semprot grafiti di Pit"
-		"quest_1234_var_desc"                              "Semprot grafiti di Bombsite B"
-		"quest_1235_var_desc"                              "Semprot grafiti di Mid Doors"
-		"quest_1236_var_desc"                              "Semprot grafiti di Spawn T"
-		"quest_1237_var_desc"                              "Semprot grafiti di Catwalk"
-		"quest_1238_var_desc"                              "Semprot grafiti di Terowongan Atas"
-		"quest_1239_var_desc"                              "Semprot grafiti di Long Doors"
-		"quest_1240_var_desc"                              "Semprot grafiti di Middle"
-
-// OP11 Week 4 Sub-Missions		
-		"quest_1241_var_desc"                              "Menangkan {d:points} pertandingan"
-		"quest_1242_var_desc"                              "Menangkan {d:points} ronde"
-		"quest_1243_var_desc"                              "Dapatkan kill dari Area Luar"
-		"quest_1244_var_desc"                              "Dapatkan kill dari Bombsite A"
-		"quest_1245_var_desc"                              "Dapatkan kill dari Lobby"
-		"quest_1246_var_desc"                              "Dapatkan kill dari Ramp"
-		"quest_1247_var_desc"                              "Dapatkan kill dari Bombsite B"
-		"quest_1248_var_desc"                              "Dapatkan kill dari Secret"
-		"quest_1249_var_desc"                              "Dapatkan kill dari Area Luar (lagi!)"
-		"quest_1250_var_desc"                              "Dapatkan kill dari Spawn T"
-		"quest_1251_var_desc"                              "Dapatkan kill dari atas Silo"
-		"quest_1252_var_desc"                              "Dapatkan kill dari Spawn AT"
-		"quest_1253_var_desc"                              "Lakukan {d:points} kali dalam <i>satu pertandingan</i>: Bunuh musuh menggunakan 5 peluru pertamamu di dalam ronde."
-		"quest_1254_var_desc"                              "Dapatkan {d:points} kill"
-
-// OP11 Week 5 Sub-Missions		
-		"quest_1255_var_desc"                              "Dapatkan {d:points} MVP dalam <i>satu pertandingan</i>"
-		"quest_1256_var_desc"                              "Menangkan {d:points} ronde"
-		"quest_1257_var_desc"                              "Dapatkan {d:points} kill headshot dalam <i>satu pertandingan</i>"
-		"quest_1258_var_desc"                              "Dapatkan {d:points} kill headshot"
-		"quest_1259_var_desc"                              "Dapatkan uang saat tabletmu kehilangan sinyal"
-		"quest_1260_var_desc"                              "Beli upgrade tablet high res"
-		"quest_1261_var_desc"                              "Hancurkan senjata penjaga otomatis"
-		"quest_1262_var_desc"                              "Pasang C4 di Tourist"
-		"quest_1263_var_desc"                              "Berikan damage ke musuh saat sedang berdiri di atas batu"
-		
-// OP11 Week 6 Sub-Missions	
-		"quest_1264_var_desc"                              "Menangkan {d:points} pertandingan"
-		"quest_1265_var_desc"                              "Menangkan {d:points} ronde"
-		"quest_1266_var_desc"                              "Dapatkan 3 kill beruntun"
-		"quest_1267_var_desc"                              "Dapatkan 5 kill beruntun"
-		"quest_1268_var_desc"                              "Dapatkan 7 kill beruntun"
-		"quest_1269_var_desc"                              "Dapatkan {d:points} kill menggunakan senjata orang lain di dalam <i>satu pertandingan</i>"
-		"quest_1270_var_desc"                              "Dapatkan {d:points} kill menggunakan senjata orang lain"
-
-// OP11 Week 7 Sub-Missions			
-		"quest_1271_var_desc"                              "Menangkan {d:points} pertandingan"
-		"quest_1272_var_desc"                              "Menangkan {d:points} ronde"
-		"quest_1273_var_desc"                              "Dapatkan kill di area Mid Doors"
-		"quest_1274_var_desc"                              "Dapatkan kill di area Catwalk"
-		"quest_1275_var_desc"                              "Dapatkan kill di area Mid Atas"
-		"quest_1276_var_desc"                              "Dapatkan kill di area Pit"
-		"quest_1277_var_desc"                              "Dapatkan kill di area Bombsite A"
-		"quest_1278_var_desc"                              "Dapatkan kill di area Mid Doors (lagi!)"
-		"quest_1279_var_desc"                              "Dapatkan kill di area Bombsite B"
-		"quest_1280_var_desc"                              "Dapatkan kill di area Terowongan"
-		"quest_1281_var_desc"                              "Dapatkan kill di area T Ramp"
-		"quest_1282_var_desc"                              "Dapatkan kill di area Spawn T"
-		"quest_1283_var_desc"                              "Berikan {d:points} damage ketika sedang berada di udara dalam <i>satu pertandingan</i>"
-		"quest_1284_var_desc"                              "Berikan {d:points} damage ketika sedang berada di udara"
-
-// OP11 Week 8 Sub-Missions			
-		"quest_1285_var_desc"                              "Menangkan {d:points} pertandingan"
-		"quest_1286_var_desc"                              "Menangkan {d:points} ronde"
-		"quest_1287_var_desc"                              "Capai level pisau"
-		"quest_1288_var_desc"                              "Upgrade senjatamu {d:points} kali"
-		"quest_1289_var_desc"                              "Lempar Granat Asap ke area Mid Atas"
-		"quest_1290_var_desc"                              "Lempar Granat Asap ke area Banana"
-		"quest_1291_var_desc"                              "Lempar molotov ke area Banana"
-		"quest_1292_var_desc"                              "Butakan 3 musuh di dalam satu pertandingan"
-		"quest_1293_var_desc"                              "Berikan {d:points} damage dengan granat dalam satu pertandingan"
-
-// OP11 Week 9 Sub-Missions			
-		"quest_1294_var_desc"                              "Dapatkan {d:points} headshot dalam <i>satu pertandingan</i>"
-		"quest_1295_var_desc"                              "Dapatkan {d:points} kill headshot"
-		"quest_1296_var_desc"                              "Semprot grafiti di bagian atas area Menara Air"
-		"quest_1297_var_desc"                              "Semprot grafiti pada jangkar di area Pier"
-		"quest_1298_var_desc"                              "Semprot grafiti di area Crane"
-		"quest_1299_var_desc"                              "Semprot grafiti di atap area Radio"
-		"quest_1300_var_desc"                              "Semprot grafiti di pasar area Hotel"
-		"quest_1301_var_desc"                              "Semprot grafiti pada pemanggang di Picnic"
-		"quest_1302_var_desc"                              "Semprot grafiti di area Mercusuar"
-		"quest_1303_var_desc"                              "Semprot grafiti di area Jembatan"
-		"quest_1304_var_desc"                              "Semprot grafiti di area Situs Konstruksi"
-		"quest_1305_var_desc"                              "Dapatkan {d:points} kill Deagle dalam <i>satu pertandingan</i>"
-		"quest_1306_var_desc"                              "Upgrade senjatamu {d:points} kali"
-
-// OP11 Week 10 Sub-Missions			
-		"quest_1307_var_desc"                              "Menangkan {d:points} pertandingan"
-		"quest_1308_var_desc"                              "Menangkan {d:points} ronde"
-		"quest_1309_var_desc"                              "Dapatkan kill di area Taman Bermain"
-		"quest_1310_var_desc"                              "Dapatkan kill di area Taman Atas"
-		"quest_1311_var_desc"                              "Dapatkan kill di area Bombsite A"
-		"quest_1312_var_desc"                              "Dapatkan kill di area Sarang Sniper"
-		"quest_1313_var_desc"                              "Dapatkan kill di area Bombsite B"
-		"quest_1314_var_desc"                              "Dapatkan kill di area Spawn T"
-		"quest_1315_var_desc"                              "Dapatkan kill di area Terowongan"
-		"quest_1316_var_desc"                              "Dapatkan kill di area Taman Bermain (lagi!)"
-		"quest_1317_var_desc"                              "Dapatkan kill di area Air Mancur"
-		"quest_1318_var_desc"                              "Dapatkan kill di area Toilet"
-		"quest_1319_var_desc"                              "Dapatkan {d:points} kill headshot dalam <i>satu pertandingan</i>"
-		"quest_1320_var_desc"                              "Dapatkan {d:points} kill headshot"
-
-// OP11 Week 11 Sub-Missions			
-		"quest_1321_var_desc"                              "Menangkan {d:points} pertandingan"
-		"quest_1322_var_desc"                              "Menangkan {d:points} ronde"
-		"quest_1323_var_desc"                              "Gunakan Healthshot {d:points} kali dalam <i>satu pertandingan</i>"
-		"quest_1324_var_desc"                              "Gunakan Healthshot {d:points} kali"
-		"quest_1325_var_desc"                              "Berikan {d:points} damage dengan granat dalam <i>satu pertandingan</i>"
-		"quest_1326_var_desc"                              "Berikan {d:points} damage dengan granat"
-
-// OP11 Week 12 Sub-Missions			
-		"quest_1327_var_desc"                              "Menangkan {d:points} pertandingan"
-		"quest_1328_var_desc"                              "Menangkan {d:points} ronde"
-		"quest_1329_var_desc"                              "Dapatkan 3 kill beruntun"
-		"quest_1330_var_desc"                              "Dapatkan 4 kill beruntun"
-		"quest_1331_var_desc"                              "Dapatkan 5 kill beruntun"
-		"quest_1332_var_desc"                              "Dapatkan kill dengan {d:points} senjata berbeda dalam <i>satu pertandingan</i>"
-		"quest_1333_var_desc"                              "Dapatkan kill dengan {d:points} senjata yang berbeda (bisa diulang di sepanjang pertandingan)"
-
-// OP11 Week 13 Sub-Missions			
-		"quest_1334_var_desc"                              "Menangkan {d:points} pertandingan"
-		"quest_1335_var_desc"                              "Menangkan {d:points} ronde"
-		"quest_1336_var_desc"                              "Dapatkan kill di area Middle"
-		"quest_1337_var_desc"                              "Dapatkan kill di area Bombsite A"
-		"quest_1338_var_desc"                              "Dapatkan kill di area Spawn AT"
-		"quest_1339_var_desc"                              "Dapatkan kill di area Rumah"
-		"quest_1340_var_desc"                              "Dapatkan kill di area Bombsite B"
-		"quest_1341_var_desc"                              "Dapatkan kill di area Ruins"
-		"quest_1342_var_desc"                              "Dapatkan kill di area Spawn T"
-		"quest_1343_var_desc"                              "Dapatkan kill di area Aula Utama"
-		"quest_1344_var_desc"                              "Dapatkan kill di area Bombsite A (lagi!)"
-		"quest_1345_var_desc"                              "Dapatkan kill di area Middle (lagi!)"
-		"quest_1346_var_desc"                              "Semprot graffiti di area arch di Barat Kasbah"
-		"quest_1347_var_desc"                              "Semprot graffiti di tangga spiral area sebelah Kasbah"
-		"quest_1348_var_desc"                              "Semprot grafiti di area Kubah"
-		"quest_1349_var_desc"                              "Semprot grafiti di lingkaran helipad area Base"
-		"quest_1350_var_desc"                              "Semprot grafiti pada tongkang di area Floatilla"
-		"quest_1351_var_desc"                              "Semprot grafiti di dalam area Hotel Aurore di Kota"
-		"quest_1352_var_desc"                              "Semprot grafiti di Silo 3 area Tank"
-		"quest_1353_var_desc"                              "Semprot grafiti di area Menara Mercusuar"
-		"quest_1354_var_desc"                              "Semprot grafiti pada dermaga di area Fishing"
-
-// OP11 Week 14 Sub-Missions			
-		"quest_1355_var_desc"                              "Menangkan {d:points} pertandingan"
-		"quest_1356_var_desc"                              "Menangkan {d:points} ronde"
-		"quest_1357_var_desc"                              "Dapatkan {d:points} kill saat menggunakan teleskop dalam <i>satu pertandingan</i>"
-		"quest_1358_var_desc"                              "Dapatkan {d:points} kill saat menggunakan teleskop"
-		"quest_1359_var_desc"                              "Dapatkan kill di 30 detik pertama sejak ronde dimulai sebanyak {d:points} kali"
-		"quest_1360_var_desc"                              "Dapatkan {d:points} kill"
-
-// OP11 Week 15 Sub-Missions			
-		"quest_1361_var_desc"                              "Menangkan {d:points} pertandingan"
-		"quest_1362_var_desc"                              "Menangkan {d:points} ronde"
-		"quest_1363_var_desc"                              "Bunuh Pemimpin Arms Race {d:points} kali dalam <i>satu pertandingan</i>"
-		"quest_1364_var_desc"                              "Dapatkan {d:points} kill"
-		"quest_1365_var_desc"                              "Berikan {d:points} damage dalam <i>satu pertandingan</i>"
-		"quest_1366_var_desc"                              "Berikan {d:points} damage"
-
-// OP11 Week 16 Sub-Missions	
-		"quest_1367_var_desc"                              "Menangkan {d:points} pertandingan"
-		"quest_1368_var_desc"                              "Menangkan {d:points} ronde"
-		"quest_1369_var_desc"                              "Dapatkan {d:points} kill menggunakan salah satu Agen Operation Riptide dalam <i>satu pertandingan</i>"
-		"quest_1370_var_desc"                              "Dapatkan {d:points} kill"
-		"quest_1371_var_desc"                              "Dapatkan {d:points} kill menggunakan salah satu senjata dari Koleksi Operation Riptide"
-		"quest_1372_var_desc"                              "Dapatkan {d:points} kill"
-
-
-
-		"quest_default_hud_var_desc" "{s:commandverb} {s:target} {s:actions}"
-		"quest_weapon_hud_var_desc" "{s:commandverb} {s:actions}: {s:weapon}"
-		"quest_single_hud_var_desc"	"{s:commandverb} {s:target} {s:actions}<br> di akhir pertandingan"
-		"quest_weapon_single_hud_var_desc" "{s:commandverb} {s:actions}: {s:weapon}<br> di akhir pertandingan"
-	
-		//hud exceptions:
-		"quest_931_hud_var_desc"	"Dapatkan Kill: {s:weapon}"
-		"quest_932_hud_var_desc"	"Dapatkan kill saat di udara"
-		"quest_933_hud_var_desc"	"Menangkan Ronde"
-		"quest_934_hud_var_desc"	"Dapatkan Kill: {s:weapon}"
-		"quest_935_hud_var_desc"	"Dapatkan kill {s:weapon} <br> di akhir pertandingan"
-		"quest_936_hud_var_desc"	"Dapatkan Kill: {s:weapon}"
-		"quest_937_hud_var_desc"	"Semprot Grafiti"
-		"quest_937_hud_var_desc_CT"	"Semprot Graffiti di Silo atau Vending"
-		"quest_937_hud_var_desc_T"	"Semprot Grafiti di area Surga atau Garasi"
-        "quest_938_hud_var_desc"	"Kill pemimpin Arms Race"
-        "quest_939_hud_var_desc"	"Dapatkan Kill: {s:weapon}"
-        "quest_940_hud_var_desc"	"Menangkan Ronde"
-        "quest_941_hud_var_desc"	"Menangkan Ronde Pistol"
-        "quest_942_hud_var_desc"	"Dapatkan kill {s:weapon}<br> di akhir pertandingan"
-        "quest_943_hud_var_desc"	"Dapatkan Kill"
-        "quest_944_hud_var_desc"	"Belanjakan Uang"
-        "quest_945_hud_var_desc"	"Dapatkan Kill"
-        "quest_946_hud_var_desc"	"Menangkan Ronde"
-        "quest_947_hud_var_desc"	"Menangkan Ronde"
-		"quest_948_hud_var_desc"	"Selamatkan atau Cegah Penyelamatan"
-		"quest_948_hud_var_desc_CT"	"Selamatkan Sandera"
-		"quest_948_hud_var_desc_T"	"Bunuh Penyelamat Sandera"
-        "quest_949_hud_var_desc"	"Dapatkan Kill: {s:weapon}"
-        "quest_950_hud_var_desc"	"Dapatkan Kill Senjata Berat"	
-        "quest_951_hud_var_desc"	"Dapatkan Kill: {s:weapon}"	
-        "quest_952_hud_var_desc"	"Menangkan Ronde"	
-        "quest_953_hud_var_desc"	"Menangkan Ronde"	
-        "quest_954_hud_var_desc"	"Dapatkan {s:target} kill pada akhir pertandingan"
-		"quest_955_hud_var_desc" 	"Berteman dengan ayam menggunakan [{s:bind_use}] <br> selama {d:points} detik"
-		"quest_956_hud_var_desc" 	"Gunakan parasut untuk meluncur selama beberapa detik"
-		"quest_957_hud_var_desc" 	"Dapatkan kill: {s:weapon}"
-		"quest_958_hud_var_desc" 	"Menangkan ronde"
-		"quest_959_hud_var_desc" 	"Dapatkan kill"
-		"quest_960_hud_var_desc" 	"Dapatkan Kill: {s:weapon}"
-		"quest_961_hud_var_desc"	"Dapatkan kill pistol"
-		"quest_962_hud_var_desc"	"Dapatkan kill tanpa menghabiskan uang sampai<br> akhir pertandingan"
-		"quest_963_hud_var_desc"	"Dapatkan Kill: {s:weapon}"
-		"quest_964_hud_var_desc"	"Menangkan ronde pistol"
-		"quest_965_hud_var_desc"    "Dapatkan Kill"
-		"quest_966_hud_var_desc" 	"Dapatkan uang"
-		"quest_967_hud_var_desc"	"Dapatkan kill: {s:weapon}"
-		"quest_968_hud_var_desc"    "Dapatkan kill sniper rifle"
-		"quest_969_hud_var_desc"	"Dapatkan kill menggunakan {s:weapon} tanpa teleskop"
-		"quest_970_hud_var_desc"	"Menangkan ronde"
-		"quest_971_hud_var_desc"	"Dapatkan kill"
-		"quest_972_hud_var_desc"    "Dapatkan kill headshot<br> di akhir pertandingan"
-		"quest_973_hud_var_desc" 	"Dapatkan kill"
-		"quest_974_hud_var_desc" 	"Dapatkan kill headshot"
-		"quest_975_hud_var_desc"    "Dapatkan kill dengan Senjata AT"
-		"quest_976_hud_var_desc" 	"Menangkan ronde"
-		"quest_977_hud_var_desc"	"Menangkan ronde"
-		"quest_978_hud_var_desc"	"Dapatkan kill: {s:weapon}"
-		"quest_979_hud_var_desc" 	"Dapatkan 4 kill beruntun"
-        "quest_980_hud_var_desc" 	"Raih peringkat keempat atau lebih baik"
-		"quest_981_hud_var_desc" 	"Dapatkan kill headshot: {s:weapon}"		
-		"quest_982_hud_var_desc"	"Dapatkan kill headshot dengan {s:weapon} <br> di akhir pertandingan"	
-		"quest_983_hud_var_desc" 	"Dapatkan kill headshot"
-		"quest_984_hud_var_desc"    "Dapatkan MVP"
-		"quest_985_hud_var_desc" 	"Dapatkan kill dengan pistol default"
-		"quest_986_hud_var_desc" 	"Dapatkan kill: {s:weapon}"
-		"quest_987_hud_var_desc"	"Dapatkan kill"
-		"quest_987_hud_var_desc_CT"	"Dapatkan kill: AK-47"
-		"quest_987_hud_var_desc_T"	"Dapatkan kill: M4A4 atau M4A1-S"
-		"quest_988_hud_var_desc" 	"Dapatkan kill dengan pisau"
-		"quest_989_hud_var_desc"	"Hasilkan damage item utilitas"
-		"quest_990_hud_var_desc" 	"Dapatkan Ace"
-		"quest_991_hud_var_desc_CT" "Dapatkan kill: Five-Seven"
-		"quest_991_hud_var_desc_T" 	"Dapatkan kill: Tec-9"
-		"quest_991_hud_var_desc" 	"Dapatkan kill: Tec-9 atau Five-Seven"
-		"quest_992_hud_var_desc" 	"Dapatkan kill: Breach Charge"
-		"quest_993_hud_var_desc" 	"Hasilkan damage item utilitas"
-		"quest_994_hud_var_desc" 	"Dapatkan kill"
-		"quest_995_hud_var_desc" 	"Menangkan ronde"
-		"quest_996_hud_var_desc"	"Dapatkan kill"
-		"quest_997_hud_var_desc_CT"	"Dapatkan kill: FAMAS"
-		"quest_997_hud_var_desc_T"	"Dapatkan kill: Galil AR"
-		"quest_997_hud_var_desc"	"Dapatkan kill: Galil AR atau FAMAS"
-		"quest_998_hud_var_desc" 	"Dapatkan kill: {s:weapon}"
-		"quest_999_hud_var_desc"	"Dapatkan kill: {s:weapon}"
-		"quest_1000_hud_var_desc" 	"Hancurkan drone musuh"
-		"quest_1001_hud_var_desc"   "Dapatkan MVP pada<br> akhir pertandingan"
-		"quest_1002_hud_var_desc" 	"Kill beberapa kali dalam satu ronde"
-		"quest_1003_hud_var_desc"   "Dapatkan kill: {s:weapon}"
-		"quest_1004_hud_var_desc"   "Dapatkan kill: {s:weapon}"
-		"quest_1005_hud_var_desc" 	"Menangkan ronde"
-		"quest_1006_hud_var_desc" 	"Dapatkan kill"
-		"quest_1007_hud_var_desc" 	"Hancurkan pintu yang terkunci"
-		"quest_1008_hud_var_desc_CT" 	"Dapatkan kill: M4A4 or M4A1-S"
-		"quest_1008_hud_var_desc_T"  	"Dapatkan kill: AK-47"
-		"quest_1008_hud_var_desc" 	"Dapatkan kill: AK-47 or M4A4"
-		"quest_1009_hud_var_desc"	"Menangkan ronde"
-		"quest_1010_hud_var_desc"	"Dapatkan kill: {s:weapon}"
-		"quest_1011_hud_var_desc" 	"Menangkan 5 ronde di babak pertama"
-		"quest_1012_hud_var_desc"	"Injak Bump Mine"
-		"quest_1013_hud_var_desc" 	"Dapatkan kill: {s:weapon}"
-		"quest_1014_hud_var_desc"   "Dapatkan kill: {s:weapon}"
-		"quest_1015_hud_var_desc"   "Dapatkan kill ketika menghabiskan kurang dari $2000"
-		"quest_1016_hud_var_desc"   "Simpan $3000"
-		"quest_1017_hud_var_desc" 	"Menangkan ronde"
-		"quest_1018_hud_var_desc" 	"Dapatkan kill"
-		"quest_1019_hud_var_desc" 	"Dapatkan kill SMG"
-		"quest_1020_hud_var_desc" 	"Dapatkan kill: {s:weapon}"
-		"quest_1021_hud_var_desc" 	"Habisi ayam"
-		"quest_1022_hud_var_desc" 	"Ledakkan barel"
-		"quest_1023_hud_var_desc" 	"Menangkan ronde"
-		"quest_1024_hud_var_desc" 	"Hancurkan panel kaca"
-		"quest_1025_hud_var_desc" 	"Menangkan ronde"
-		"quest_1027_hud_var_desc"	"Semprot grafiti<br> di area spawn musuh"
-		"quest_1028_hud_var_desc"	"Dapatkan kill di <br> Banana atau Apartemen"
-		"quest_1029_hud_var_desc"	"Lempar granat asap"
-		"quest_1029_hud_var_desc_CT"	"Lempar granat asap ke:<br> Apartemen atau T Ramp"
-		"quest_1029_hud_var_desc_T"	"Lempar granat asap ke:<br> Sarang Sniper atau Tangga"
-		"quest_1098_hud_var_desc"               "Menangkan Ronde"
-		"quest_1032_hud_var_desc"               "Menangkan Ronde"
-		"quest_1033_hud_var_desc"               "Dapatkan Kill"
-		"quest_1034_hud_var_desc"               "Selidiki The Phoenix"
-		"quest_1035_hud_var_desc"               "Dapatkan Kill: 47, M4A4, atau M4A1-S"
-		"quest_1036_hud_var_desc"               "Menangkan Ronde"
-		"quest_1037_hud_var_desc"               "Dapatkan Kill"
-		"quest_1099_hud_var_desc"               "Dapatkan MVP"
-		"quest_1038_hud_var_desc"               "Menangkan Ronde"
-		"quest_1039_hud_var_desc"               "Dapatkan Kill: Pistol Berbeda"
-		"quest_1040_hud_var_desc"               "Dapatkan Kill: Pistol"
-		"quest_1041_hud_var_desc"               "Dapatkan Kill: Desert Eagle"
-		"quest_1042_hud_var_desc"               "Menangkan Ronde"
-		"quest_1043_hud_var_desc"               "Dapatkan Kill"
-		"quest_1044_hud_var_desc"               "Dapatkan Kill dari jarak minimum 15 meter"
-		"quest_1045_hud_var_desc"               "Dapatkan Kill: sniper rifle apa pun"
-		"quest_1046_hud_var_desc"               "Dapatkan Kill Headshot"
-		"quest_1047_hud_var_desc"               "Dapatkan Kill: M249"
-		"quest_1048_hud_var_desc"               "Berikan damage dengan granat"
-		"quest_1049_hud_var_desc"               "Dapatkan Uang"
-		"quest_1050_hud_var_desc"               "Menangkan Ronde"
-		"quest_1051_hud_var_desc"               "Dapatkan Kill"
-		"quest_1052_hud_var_desc"               "Pilih Kartu Musuh"
-		"quest_1053_hud_var_desc"               "Lempar Granat Asap"
-		"quest_1053_hud_var_desc_T"             "Lempar Granat Asap ke Garasi atau Mini"
-		"quest_1053_hud_var_desc_CT"            "Lempar Granat Asap ke Ruang Kendali atau Hut"
-		"quest_1054_hud_var_desc"               "Menangkan Ronde"
-		"quest_1055_hud_var_desc"               "Dapatkan Kill"
-		"quest_1056_hud_var_desc"               "Dapatkan Kill dari Terowongan atau Istana"
-		"quest_1057_hud_var_desc"               "Dapatkan Kill"
-		"quest_1058_hud_var_desc"               "Menangkan Ronde"
-		"quest_1059_hud_var_desc"               "Dapatkan Kill"
-		"quest_1060_hud_var_desc"               "Dapatkan Kill: {s:weapon}"
-		"quest_1061_hud_var_desc"               "Dapatkan Kill: {s:weapon}"
-		"quest_1062_hud_var_desc"               "Menangkan Ronde"
-		"quest_1063_hud_var_desc"               "Dapatkan Kill"
-		"quest_1064_hud_var_desc"               "Pilih Kartu MVP"
-		"quest_1065_hud_var_desc"               "Semprot Grafiti"
-		"quest_1065_hud_var_desc_T"             "Semprot Grafiti di Middle"
-		"quest_1065_hud_var_desc_CT"            "Semprot Grafiti di Sisi T Atas atau Area Luar"
-		"quest_1100_hud_var_desc"               "Menangkan Ronde"
-		"quest_1066_hud_var_desc"               "Menangkan Ronde"
-		"quest_1067_hud_var_desc"               "Headshot AUG"
-		"quest_1068_hud_var_desc"               "Butakan Musuh dengan Granat Kejut"
-		"quest_1069_hud_var_desc"               "Semprot Grafiti"
-		"quest_1069_hud_var_desc_T"             "Semprot Grafiti di Catwalk atau Terowongan Atas"
-		"quest_1069_hud_var_desc_CT"            "Semprot Grafiti di Terowongan Bawah atau Tangga Pendek"
-		"quest_1101_hud_var_desc"               "Menangkan Ronde"
-		"quest_1070_hud_var_desc"               "Menangkan Ronde"
-		"quest_1071_hud_var_desc"               "Kurang dari 10 meter"
-		"quest_1072_hud_var_desc"               "Dapatkan Kill dalam jarak kurang dari 10 meter"
-		"quest_1073_hud_var_desc"               "Dapatkan Kill"
-		"quest_1074_hud_var_desc"               "Menangkan Ronde"
-		"quest_1075_hud_var_desc"               "Dapatkan Kill"
-		"quest_1076_hud_var_desc"               "Dapatkan Kill Headshot"
-		"quest_1077_hud_var_desc"               "Dapatkan Kill: {s:weapon}"
-		"quest_1102_hud_var_desc"               "Menangkan Ronde"
-		"quest_1078_hud_var_desc"               "Menangkan Ronde"
-		"quest_1079_hud_var_desc"               "Dapatkan Kill: {s:weapon}"
-		"quest_1080_hud_var_desc"               "Kill Ayam"
-		"quest_1081_hud_var_desc"               "Dapatkan Kill"
-		"quest_1082_hud_var_desc"               "Menangkan Ronde"
-		"quest_1083_hud_var_desc"               "Dapatkan Kill"
-		"quest_1084_hud_var_desc"               "Dapatkan Kill"
-		"quest_1085_hud_var_desc"               "Berikan Damage dengan Granat"
-		"quest_1085_v2_hud_var_desc"     	    "Berikan Damage dengan Granat"
-		"quest_1086_hud_var_desc"               "Menangkan Ronde"
-		"quest_1087_hud_var_desc"               "Dapatkan Kill"
-		"quest_1088_hud_var_desc"               "Dapatkan Kill dari Lokasi yang Ditentukan"
-		"quest_1088_hud_var_desc_T"             "Kill Musuh yang Ada di Bombsite A atau B"
-		"quest_1088_hud_var_desc_CT"            "Dapatkan Kill dari Bombsite A atau B"
-		"quest_1089_hud_var_desc"               "Dapatkan Kill dengan teleskop"
-		"quest_1089_v2_hud_var_desc"               "Dapatkan Kill dengan teleskop"
-		"quest_1090_hud_var_desc"               "Menangkan Ronde"
-		"quest_1091_hud_var_desc"               "Dapatkan Kill"
-		"quest_1092_hud_var_desc"               "Dapatkan Poin dengan Senjata Bonus"
-		"quest_1092_v2_hud_var_desc"            "Dapatkan Poin dengan Senjata Bonus"
-		"quest_1093_hud_var_desc"               "Gunakan Uang"
-		"quest_1094_hud_var_desc"               "Menangkan Ronde"
-		"quest_1095_hud_var_desc"               "Dapatkan Kill"
-		"quest_1095_v2_hud_var_desc"            "Dapatkan Kill UMP-45"
-		"quest_1096_hud_var_desc"               "Menangkan Ronde"
-		"quest_1097_hud_var_desc"               "Selesaikan misi"
-		"quest_1097_v2_hud_var_desc"            "Masuk lebih dalam lagi di Phoenix Compound"
-		"quest_1103_hud_var_desc"               "Butakan musuh dengan Granat Kejut"
-
-
-
-
-/////////////////////////////////////////////////////////////////
-
-
-
-// win quests
-
-		"Quest_Win_a_Mode"										"Ancaman Berhasil Dinetralkan: <b>%gamemode%</b>"
-		"Quest_Win_a_Mode_desc"								"Menangkan satu pertandingan <b>%gamemode%</b>."
-
-		"Quest_Win_a_Mapgroup"								"Akhiri Permainan: <b>%gamemode%, %mapgroup%</b>"
-		"Quest_Win_a_Mapgroup_desc"						"Dapatkan %actions% <b>%gamemode%</b> di dalam pertandingan <b>%mapgroup%</b>."
-
-		"Quest_Win_a_Map"											"Akhiri Permainan: <b>%gamemode%, %map%</b>"
-		"Quest_Win_a_Map_desc"								"Dapatkan %actions% <b>%gamemode%</b> di dalam pertandingan <b>%map%</b>."
-
-		"Quest_Win_Rounds_Map"								"Engagement: <b>%gamemode%, %mapgroup%</b>"
-		"Quest_Win_Rounds_Map_desc"						"Dapatkan %actions% <b>%gamemode%</b> di dalam pertandingan <b>%mapgroup%</b>."
-		"Quest_Win_Rounds_Map_Short"						"Jumlah Menang Ronde"
-
-// equipment quests
-
-		"Quest_Weapon_Mode"										"Profisiensi Peralatan: <b>%gamemode%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Mode_desc"							"Dapatkan %optional_target%%actions% <b>%weapon%</b> dalam pertandingan <b>%gamemode%</b>."
-		
-		"Quest_Weapon_Mode_single_desc"				"Dapatkan kill <b>%weapon%</b> dalam pertandingan <b>%gamemode%</b>."
-
-// equipment + mapgroup quests
-
-		"Quest_Weapon_Mapgroup"							"Profisiensi Peralatan: <b>%mapgroup%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Mapgroup_desc"					"Dapatkan %optional_target%%actions% <b>%weapon%</b> dalam pertandingan <b>%gamemode%: %mapgroup%</b>."
-		"Quest_WeaponDamage_Mapgroup_desc"					"Berikan <b>%weapon%</b> %optional_target%%actions% ke musuh dalam pertandingan <b>%gamemode%: %mapgroup%</b>."
-
-	"Quest_Weapon_Within_3_Mapgroup"						"Kelulusan: <b>%mapgroup%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Within_3_Mapgroup_desc"				"Dapatkan %optional_target%%actions% <b>%weapon%</b><i> dengan 3 tembakan pertamamu dalam satu ronde </i> di <b>%gamemode%: %mapgroup%</b>."
-
-	"Quest_Weapon_Map"									"Profisiensi Peralatan: <b>%map%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Map_desc"								"Dapatkan %optional_target%%actions% <b>%weapon%</b> dalam pertandingan <b>%gamemode%: %map%</b>."
-		"Quest_Weapon_Map_Team_desc"		"Dapatkan %optional_target%%actions% <b>%weapon%</b> di <b>%gamemode%: %map%</b> sebagai <b>%team%</b>."		
-		"Quest_Weapon_Mapgroup_Team_desc"		"Dapatkan <b>%weapon%</b> %optional_target%%actions% dalam pertandingan <b>%gamemode%: %mapgroup%</b> sebagai <b>%team%</b>."		
-
-		"Quest_WepUpgrade_Mapgroup"					"Upgrade Senjata: <b>%mapgroup%</b>"
-
-	"Quest_Unique_Weapon_Mapgroup"							"Weapons Expert: <b>%mapgroup%</b>"
-		"Quest_Unique_Weapon_Mapgroup_desc"					"Dalam pertandingan <b>%gamemode%: %mapgroup%</b>, dapatkan progres misi untuk setiap %action% <i>yang diselesaikan dengan senjata unique</i>."
-		"Quest_Unique_Weapon_Mapgroup_Team_desc"					"Dalam pertandingan <b>%gamemode%: %mapgroup%</b>, dapatkan progres misi untuk setiap %action% <i>yang diselesaikan dengan senjata unique</i> sebagai <b>%team%</b>."
-
-		"Quest_Defend_Bomb_Mapgroup_desc"					"Dapatkan %actions% <i>setelah bom dipasang</i> di dalam pertandingan <b>%gamemode%: %mapgroup%</b>."
-
-// Hostage quests
-
-	 "Quest_Rescue_Map"								"Penyelamatan Sandera: <b>%map%</b>"
-	 "Quest_Rescue_Map_Desc"						"Dapatkan %actions% dalam pertandingan <b>%gamemode%: %map%</b>."
-
-// Plant bomb quests
-
-	 "Quest_PlantBomb_Mapgroup"									"Explosives Expert: <b>%mapgroup%</b>"
-	 "Quest_PlantBomb_Mapgroup_Desc"						"Lakukan %actions% dalam pertandingan <b>%gamemode%: %mapgroup%</b>."
-
-
-// Assassination
-
-	 "Quest_Assassination"									"%victim_team% Target Kill: <b>%target%</b>"
-	 "Quest_Assassination_desc"							"Temukan dan bunuh %victim_team% <b>%target%</b> dalam pertandingan <b>%gamemode%: %map%</b>."
-
-	 "quest_target_turner"									"Turner"
-	 "quest_target_jackson"									"Jackson"
-	 "quest_target_chapel"									"Chapel"	 
-	 "quest_target_sergei"									"Sergei"	 
-
-	 "quest_assassination_you_are_target"					"Kamu menjadi Target Pembunuhan.\nKamu adalah %s1."
-	 "quest_assassination_target_on_server"					"Seorang pemain sedang mencoba membunuh Target Pembunuhan: %s1"
-	 "quest_assassination_target_on_server_has_quest"		"Kamu sedang mencoba membunuh Target Pembunuhan: %s1"
-	 "quest_assassination_target_killed"					"%s1 telah dibunuh!"
-	 "quest_assassination_no_longer_target"					"Kamu bukan lagi %s1." 
-
-// Income
-	 "Quest_Income_Mapgroup"								"Pendapatan Kotor: <b>$1.000.000</b>"
-	 "Quest_Income_Mapgroup_desc"						"Dapatkan total $1.000.000 dalam pertandingan <b>%gamemode%: %mapgroup%</b>."
-	 "Quest_Income_Mapgroup_Team_desc"			"Sebagai <b>%team%</b>, dapatkan uang total $1.000.000 dalam pertandingan <b>%gamemode%: %mapgroup%</b>."
-
-	 "Quest_Spend_Mapgroup_Team_desc"			"Sebagai <b>%team%</b>, dapatkan total $1.000.000 dalam pertandingan <b>%gamemode%: %mapgroup%</b>."
-
-
-//	deathmatch bonus points
-
-		"Quest_DMBonusPoints_Mapgroup"				"Master of Arms: <b>%mapgroup%</b>"
-		"Quest_DMBonusPoints_Mapgroup_desc"		"Dapatkan poin menggunakan Senjata Bonus dalam pertandingan <b>Deathmatch: %mapgroup%</b>."
-
-		"Quest_DMBonusPoints_Map"							"Master of Arms: <b>%map%</b>"
-		"Quest_DMBonusPoints_Map_desc"				"Dapatkan poin menggunakan Senjata Bonus dalam pertandingan <b>Deathmatch: %map%</b>."
-
-// play quests
-
-		"Quest_Kills_Mapgroup"							"Threat Recon: <b>%gamemode%</b>, <b>%mapgroup%</b>"
-		"Quest_Kills_Mapgroup_desc"					"Dapatkan %optional_target%%actions% dalam pertandingan <b>%gamemode%: %mapgroup%</b>."
-		"Quest_Kills_Mapgroup_cond_desc"		"Dapatkan %optional_target%%actions%—<i>%condition%</i>—dalam pertandingan <b>%gamemode%: %mapgroup%</b>."
-		"Quest_Kills_Mapgroup_Team_desc"		"Dapatkan skor %optional_target%%actions% dalam pertandingan <b>%gamemode%: %mapgroup%</b> sebagai <b>%team%</b>."		
-
-		"Quest_Kills_Mapgroup_Victim_Team_desc"		"Dapatkan %actions% %victim_team% dalam pertandingan <b>%gamemode%: %mapgroup%</b> sebagai <b>%team%</b>."
-
-		"Quest_Flashbang_Mapgroup_Team_desc"		"Dapatkan %actions% %optional_target% dalam pertandingan <b>%gamemode%: %mapgroup%</b> sebagai <b>%team%</b>."		
-
-
-		"Quest_Burn_Mapgroup_desc"					"Hasilkan %actions% <i>burn</i> ke musuh dalam pertandingan <b>%gamemode%: %mapgroup%</b>."
-
-		"Quest_Headshots_Mapgroup"							"Headshot: <b>%gamemode%</b>, <b>%mapgroup%</b>"
-		"Quest_Headshots_Mapgroup_desc"					"Dapatkan headshot %actions% dalam pertandingan <b>%gamemode%: %mapgroup%</b>."
-
-		"Quest_Kills_Map"										"Threat Recon: <b>%gamemode%</b>, <b>%map%</b>"
-		"Quest_Kills_Map_desc"							"Dapatkan %optional_target%%actions% dalam pertandingan <b>%gamemode%: %map%</b>."
-
-		"Quest_Kills_Mode"								"<b>%gamemode%</b> Threat Recon"
-		"Quest_Kills_Mode_desc"						"Dapatkan %optional_target%%actions% dalam pertandingan <b>%gamemode%</b>."
-
-// chicken quests
-
-	"Quest_Chicken_Kills_Mapgroup"				"Supply Run: <b>%gamemode%</b>, <b>%mapgroup%</b>"
-	"Quest_Chicken_Kills_Map"							"Supply Run: <b>%gamemode%</b>, <b>%map%</b>"
-	"Quest_Chicken_Kills"						"Supply Run"
-
-// generic string tokens
-
-	"quest_team_ct"										"Anti-Teroris"
-	"quest_team_terrorist"								"Teroris"
-	"quest_complete_the_match"							"Selesaikan pertandingan untuk menyelesaikan misi"
-	"quest_complete_the_match_uncommitted"				"<img src='file://{images}/icons/ui/info.svg' class=''/>Selesaikan pertandingan untuk menyimpan progres misi"
-
-// Coop quests
-
-	"Quest_Guardian_Bomb"									"Tantangan Co-op Guardian: <b>%map%</b>, <b>%weapon%</b>"
-	"Quest_Guardian_Bomb_Desc"								"Tantangan Co-op Guardian: Main sebagai <b>%team%</b> bersama teman dan lindungi bombsite dari musuh di <b>%map%</b>.<br><br>Dapatkan <b>%action%</b> dengan kill <b>%kills%</b> musuh menggunakan <b>%weapon%</b>.  <b>%extradetails%</b>"
-	"Quest_Guardian_Desc_op08"								"Tantangan Co-op Guardian: Main sebagai <b>%team%</b> bersama teman dan lindungi bombsite dari musuh di <b>%map%</b>.<br><br>Dapatkan <b>%action%</b> dengan kill <b>%kills%</b> %killtype% musuh menggunakan <b>%weapon%</b>. <b>%extradetails%</b>%presence%"
-
-	"Quest_Guardian_Desc_op09"								"{s:commandverb} {s:kills} {s:weapon} {s:killtype} di mode <b>Guardian: {s:location}</b>."
-	"Quest_CoopMission_Desc_op09"							"<b>Co-op Strike</b>: selesaikan misi bersama partner di <b>{s:location}</b>."
-	"Quest_Guardian_Desc_op09_extra_equip_1_var_desc"		"{s:commandverb} {s:kills} {s:weapon} {s:killtype} di mode <b>Guardian: {s:location}</b>. Pemain akan mulai dengan <b>{s:extraequip0}</b>."
-	"Quest_Guardian_Desc_op09_extra_equip_2_var_desc"		"{s:commandverb} {s:kills} {s:weapon} {s:killtype} di mode <b>Guardian: {s:location}</b>. Pemain akan mulai dengan <b>{s:extraequip0}</b> dan <b>{s:extraequip1}</b>."
-
-	"Quest_Guardian_Desc_op10"								"{s:commandverb} {s:kills} {s:weapon} {s:killtype} di mode <b>Guardian: {s:location}</b>."
-	"Quest_CoopMission_Desc_op10"							"<b>Co-op Strike</b>: selesaikan misi bersama partner di <b>{s:location}</b>."
-	"Quest_Guardian_Desc_op10_extra_equip_1_var_desc"		"{s:commandverb} {s:kills} {s:weapon} {s:killtype} di mode <b>Guardian: {s:location}</b>. Pemain akan mulai dengan <b>{s:extraequip0}</b>."
-	"Quest_Guardian_Desc_op10_extra_equip_2_var_desc"		"{s:commandverb} {s:kills} {s:weapon} {s:killtype} di mode <b>Guardian: {s:location}</b>. Pemain akan mulai dengan <b>{s:extraequip0}</b> dan <b>{s:extraequip1}</b>."
-
-	"Quest_Coop_Desc_Rescue"								"Co-op Strike: Main sebagai <b>%team%</b> bersama teman dan <b>lindungi sandera</b> di <b>%map%</b>.<br><br><b>%extradetails%</b>"
-	"Quest_Coop_Desc_Recon"									"Co-op Strike: Main sebagai <b>%team%</b> bersama teman dan <b>dapatkan informasi</b> di <b>%map%</b>.<br><br><b>%extradetails%</b>"
- 	"Quest_Coop_Desc_Bomb"									"Co-op Strike: Main sebagai <b>%team%</b> bersama teman dan <b>Ledakkan</b> <b>%map%</b>.<br><br><b>%extradetails%</b>"
- 
-	"Quest_op09_coopmission"								"Ambil sampel virus Zona Bahaya dari laboratorium The Phoenix."
-	"Quest_op10_coopmission"								"Pasukan The Phoenix telah terlihat di sebuah peternakan tua. Selidiki area tersebut dan cari tahu apa yang mereka rencanakan."
-
-	"Quest_Guardian_Hostage"								"Tantangan Co-op Guardian: <b>%map%</b>, <b>%weapon%</b>"
-	"Quest_Guardian_Hostage_Desc"							"Tantangan Co-op Guardian: Main sebagai <b>%team%</b> bersama teman dan cegah tim Anti-Teroris dari mencapai lokasi sandera di <b>%map%</b>.<br><br>Dapatkan <b>%action%</b> dengan kill <b>%kills%</b> musuh menggunakan <b>%weapon%</b>. <b>%extradetails%</b>"
-	 
-	"quest_guardian_kills_5"								"5"
-	"quest_guardian_kills_10"								"10"
-	"quest_guardian_kills_15"								"15"
-	"quest_guardian_kills_20"								"20"
-	"quest_guardian_kills_25"								"25"
-	"quest_guardian_kills_30"								"30"
-	"quest_guardian_kills_35"								"35"
-	"quest_guardian_kills_40"								"40"
-	"quest_guardian_kills_45"								"45"
-	"quest_guardian_kills_50"								"50"
-
-// Guardian kill types
-	"quest_killtype_normal"									"kill"
-	"quest_killtype_headshot"								"kill <b>headshot</b>"
-	"quest_killtype_blind"									"kill <b>terbutakan</b>"
-	"quest_killtype_unscoped"								"kill <b>tanpa teleskop</b>"
-
-	"quest_enemy_weapon"									"Senjata Musuh"
-	"quest_weapon_CZ75a_or_enemy_weapon"					"CZ75-Auto atau senjata musuh apa pun"
-	"quest_weapon_sniperrifle"								"sniper rifle apa pun"
-	"quest_weapon_any_rifle"								"rifle apa pun"
-	"quest_weapon_m4"										"M4 rifle apa pun"
-	"quest_weapon_starter_ct"								"pistol default AT apa pun"
-	"quest_weapon_ct"										"Senjata Anti-Teroris"
-	"quest_weapon_t"										"Senjata Teroris"
-	"quest_weapon_any_pistol"								"pistol apa pun"
-	"quest_weapon_any_weapon"								"senjata apa pun"
-	"quest_weapon_any_shotgun"								"shotgun apa pun"
-	"quest_weapon_any_smg"									"smg apa pun"
-	"quest_weapon_ssg08_or_mag7"							"SSG 08 atau MAG-7"
-	"quest_weapon_awp_or_p90"								"AWP atau P90"
-	"quest_weapon_unique_pistol"							"Pistol yang Berbeda"
-	"quest_presence_heavy"									"<br><br><b>PERINGATAN</b>: Waspada perlawanan <i>berat</i> di area tersebut!"
-
-	"quest_guardian_cantbuy"		"<i>Tidak dapat membeli barang di misi ini.</i>"
-	"quest_guardian_maxmoneylimit"		"<i>Jumlah uang maksimum dibatasi pada misi ini.</i>"
-	"quest_guardian_killrewardsonly" 	"<i>Hanya bisa mendapatkan uang melalui imbalan kill.</i>"
-	"quest_guardian_moneyreset" 	"<i>Jumlah uang akan di-reset setelah misi gagal.</i>"
-	"quest_guardian_heavyarmor" 	"<i>Heavy Assault Suit tersedia.</i>"
-	"quest_guardian_noarmor" 	"<i>Armor tidak tersedia.</i>"
-	"quest_guardian_heavyarmorresetmoney" 	"<i>Heavy Assault Suit tersedia. Jumlah uang akan di-reset jika misi gagal.</i>"
-	 //"quest_guardian_maxmoney_16000"		"$16000"
-	 //"quest_guardian_maxmoney_10000"		"$10000"
-	 //"quest_guardian_maxmoney_6000"			"$6000"
-	 //"quest_guardian_maxmoney_3200"			"$3200"
-	 //"quest_guardian_maxmoney_0"			"$0"
-
-	// "Get [headshot] kills: [unscoped] [AWP]"
-	// Double spaces will automatically be removed.
-	"guardian_mission_type_kills"				"Dapatkan kill: {s:weapon}"
-	"guardian_mission_type_headshots"			"Dapatkan headshot: {s:weapon}"
-	"guardian_mission_type_unscoped"			"Dapatkan kill tanpa teleskop: {s:weapon}"
-	"guardian_mission_type_enemy_weapon"		"Dapatkan kill dengan {s:weapon} milik musuh"
-	"guardian_mission_type_enemy_airborne"		"Dapatkan kill di udara: {s:weapon}"
-	"guardian_mission_type_flashbang"			"Kill musuh yang dibutakan"
-	"guardian_mission_type_ct_weapons"			"Dapatkan kill dengan senjata Anti-Teroris"
-
-//	bonus tokens
-
-	  "quest_bonus_headshot"							"jika headshot juga"
-	  "quest_bonus_zoomed"								"ketika menggunakan teleskop"
-  	  "quest_bonus_not_zoomed"							"ketika tidak menggunakan teleskop"
-	  "quest_bonus_chickens"							"ketika targetnya adalah ayam"
-
-	  "quest_bonus_taser"								"ketika menggunakan Zeus x27"
-	  "quest_bonus_bomb_planted"						"ketika bom terpasang"
-	  "quest_bonus_melee"								"ketika menggunakan senjata melee"	  
-
-
-
-	  "quest_bonus_killstreak_2"						"ketika mendapat 2 kill beruntun atau lebih"
-	  "quest_bonus_killstreak_3"						"ketika mendapat 3 kill beruntun atau lebih"
-
-	  "quest_bonus_chickenstreak_2"						"ketika mendapat 2 kill ayam beruntun atau lebih"
-	  "quest_bonus_chickenstreak_3"						"ketika mendapat 3 kill ayam beruntun atau lebih"
-
-	  "quest_bonus_borrowed_gun"						"ketika menggunakan senjata orang lain"
-	  "quest_bonus_borrowed_gun_enemy"					"ketika menggunakan senjata musuh"
-	  "quest_bonus_borrowed_gun_own"					"ketika menggunakan senjata milik target"
-		"quest_bonus_victim_rescuing"					"ketika target sedang menyelamatkan sandera"
-		
-	  "quest_bonus_bulletcount_1"						"ketika dicapai dengan tembakan pertamamu pada ronde tersebut"
-		
-	  "quest_bonus_totalrounds_2"						"jika dalam 2 ronde pertama"
-	  "quest_bonus_totalrounds_3"						"jika dalam 3 ronde pertama"
-	  "quest_bonus_totalrounds_4"						"jika dalam 4 ronde pertama"
-	  "quest_bonus_totalrounds_5"						"jika dalam 5 ronde pertama"
-
-  	  "quest_bonus_weapon_elite"						"ketika menggunakan Dual Berettas"
-	  "quest_bonus_weapon_ssg08"						"ketika meggunakan SSG08"
-	  "quest_bonus_weapon_revolver"						"ketika menggunakan R8 Revolver"
-	  "quest_bonus_weapon_glock_hkp2000_usp_silencer"	"ketika menggunakan P2000, USP-S, atau Glock-18"
-
-		"quest_bonus_set_dust"							"ketika senjata berasal dari Koleksi Dust"
-		"quest_bonus_set_aztec"							"ketika senjata berasal dari Koleksi Aztec"
-		"quest_bonus_set_vertigo"						"ketika senjata berasal dari Koleksi Vertigo"
-		"quest_bonus_set_inferno"						"ketika senjata berasal dari Koleksi Inferno"
-		"quest_bonus_set_militia"						"ketika senjata berasal dari Koleksi Militia"
-		"quest_bonus_set_nuke"							"ketika senjata berasal dari Koleksi Nuke"
-		"quest_bonus_set_office"						"ketika senjata berasal dari Koleksi Office"
-		"quest_bonus_set_assault"						"ketika senjata berasal dari Koleksi Assault"
-		"quest_bonus_set_dust_2"						"ketika senjata berasal dari Koleksi Dust 2"
-		"quest_bonus_set_train"							"ketika senjata berasal dari Koleksi Train"
-		"quest_bonus_set_mirage"						"ketika senjata berasal dari Koleksi Mirage"
-		"quest_bonus_set_italy"							"ketika senjata berasal dari Koleksi Italy"
-		"quest_bonus_set_lake"							"ketika senjata berasal dari Koleksi Lake"
-		"quest_bonus_set_safehouse"						"ketika senjata berasal dari Koleksi Safehouse"
-		"quest_bonus_set_esports"						"ketika senjata berasal dari Koleksi eSports 2013"
-		"quest_bonus_set_weapons_i"						"ketika senjata berasal dari Koleksi Arms Deal"
-		"quest_bonus_set_bravo_i"						"ketika senjata berasal dari Koleksi Bravo"
-		"quest_bonus_set_bravo_ii"						"ketika senjata berasal dari Koleksi Alpha"
-		"quest_bonus_set_weapons_ii"					"ketika senjata berasal dari Koleksi Arms Deal 2"
-		"quest_bonus_set_esports_ii"					"ketika senjata berasal dari Koleksi eSports 2013 Winter"
-		"quest_bonus_set_esports_2014_summer"			"ketika senjata berasal dari Koleksi eSports 2014 Summer"
-		"quest_bonus_set_community_1"					"ketika senjata berasal dari Koleksi Winter Offensive"
-		"quest_bonus_set_weapons_iii"					"ketika senjata berasal dari Koleksi Arms Deal 3"
-		"quest_bonus_set_community_2"					"ketika senjata berasal dari Koleksi Phoenix"
-		"quest_bonus_set_community_3"					"ketika senjata berasal dari Koleksi Huntsman"
-		"quest_bonus_set_community_4"					"ketika senjata berasal dari Koleksi Breakout"
-		"quest_bonus_set_community_5"					"ketika senjata berasal dari Koleksi Vanguard"
-		"quest_bonus_set_community_6"					"ketika senjata berasal dari Koleksi Chroma"
-		"quest_bonus_set_community_7"					"ketika senjata berasal dari Koleksi Chroma 2"
-		"quest_bonus_set_community_11"					"ketika senjata berasal dari Koleksi Wildfire"
-		"quest_bonus_set_bank"							"ketika senjata berasal dari Koleksi Bank"
-		"quest_bonus_set_baggage"						"ketika senjata berasal dari Koleksi Baggage"
-		"quest_bonus_set_cobblestone"					"ketika senjata berasal dari Koleksi Cobblestone"
-		"quest_bonus_set_overpass"						"ketika senjata berasal dari Koleksi Overpass"
-		"quest_bonus_set_cache"							"ketika senjata berasal dari Koleksi Cache"
-		"quest_bonus_set_kimono"						"ketika senjata berasal dari Koleksi Rising Sun"
-
-		"quest_bonus_cs_assault"						"ketika map-nya adalah Assault"
-		"quest_bonus_cs_italy"							"ketika map-nya adalah Italy"
-		"quest_bonus_cs_militia"						"ketika map-nya adalah Militia"
-		"quest_bonus_cs_office"							"ketika map-nya adalah Office"
-		"quest_bonus_de_aztec"							"ketika map-nya adalah Aztec"
-		"quest_bonus_de_dust"							"ketika map-nya adalah Dust"
-		"quest_bonus_de_dust2"							"ketika map-nya adalah Dust II"
-		"quest_bonus_de_mirage"							"ketika map-nya adalah Mirage"
-		"quest_bonus_de_overpass"						"ketika map-nya adalah Overpass"
-		"quest_bonus_de_cbble"							"ketika map-nya adalah Cobblestone"
-		"quest_bonus_de_train"							"ketika map-nya adalah Train"		
-		"quest_bonus_de_inferno"						"ketika map-nya adalah Inferno"
-		"quest_bonus_de_nuke"							"ketika map-nya adalah Nuke"
-		"quest_bonus_de_shorttrain"						"ketika map-nya adalah Shorttrain"
-		"quest_bonus_de_shortdust"						"ketika map-nya adalah Shortdust"
-		"quest_bonus_de_vertigo"						"ketika map-nya adalah Vertigo"
-		"quest_bonus_de_balkan"							"ketika map-nya adalah Balkan"
-		"quest_bonus_ar_baggage"						"ketika map-nya adalah Baggage"
-		"quest_bonus_ar_monastery"						"ketika map-nya adalah Monastery"
-		"quest_bonus_ar_shoots"							"ketika map-nya adalah Shoots"
-		"quest_bonus_de_embassy"						"ketika map-nya adalah Embassy"
-		"quest_bonus_de_bank"							"ketika map-nya adalah Bank"
-		"quest_bonus_de_lake"							"ketika map-nya adalah Lake"
-		"quest_bonus_de_depot"							"ketika map-nya adalah Depot"
-		"quest_bonus_de_safehouse"						"ketika map-nya adalah Safehouse"
-		"quest_bonus_de_sugarcane"						"ketika map-nya adalah Sugarcane"
-		"quest_bonus_de_stmarc"							"ketika map-nya adalah St. Marc"
-		"quest_bonus_cs_museum"							"ketika map-nya adalah Museum"
-		"quest_bonus_cs_thunder"						"ketika map-nya adalah Thunder"
-		"quest_bonus_de_favela"							"ketika map-nya adalah Favela"
-		"quest_bonus_cs_downtown"						"ketika map-nya adalah Downtown"
-		"quest_bonus_de_seaside"						"ketika map-nya adalah Seaside"
-		"quest_bonus_de_library"						"ketika map-nya adalah Library"
-		"quest_bonus_cs_motel"							"ketika map-nya adalah Motel"
-		"quest_bonus_de_cache"							"ketika map-nya adalah Cache"
-		"quest_bonus_de_ali"							"ketika map-nya adalah Ali"
-		"quest_bonus_de_ruins"							"ketika map-nya adalah Ruins"
-		"quest_bonus_de_ruby"							"ketika map-nya adalah Ruby"
-		"quest_bonus_de_chinatown"						"ketika map-nya adalah Chinatown"
-		"quest_bonus_de_gwalior"						"ketika map-nya adalah Gwalior"
-		"quest_bonus_cs_agency"							"ketika map-nya adalah Agency"
-		"quest_bonus_cs_siege"							"ketika map-nya adalah Siege"
-		"quest_bonus_de_castle"							"ketika map-nya adalah Castle"
-		"quest_bonus_de_overgrown"						"ketika map-nya adalah Overgrown"
-		"quest_bonus_de_blackgold"						"ketika map-nya adalah Black Gold"
-		"quest_bonus_cs_rush"							"ketika map-nya adalah Rush"
-		"quest_bonus_de_mist"							"ketika map-nya adalah Mist"
-		"quest_bonus_cs_insertion"						"ketika map-nya adalah Insertion"
-
-		"quest_bonus_cs_workout"						"ketika map-nya adalah Workout"
-		"quest_bonus_cs_backalley"						"ketika map-nya adalah Back Alley"
-		"quest_bonus_de_marquis"						"ketika map-nya adalah Marquis"
-		"quest_bonus_de_facade"							"ketika map-nya adalah Facade"
-		"quest_bonus_de_season"							"ketika map-nya adalah Season"
-		"quest_bonus_de_bazaar"							"ketika map-nya adalah Bazaar"
-		"quest_bonus_de_santorini"						"ketika map-nya adalah Santorini"
-
-		"quest_bonus_de_subzero"						"ketika map-nya adalah Subzero"
-		"quest_bonus_de_biome"							"ketika map-nya adalah Biome"
-
-
-
-
-// OperationalPoints
-
-		"Quest_OperationalPoints_Template"				"Penghargaan Tantangan: %s1"
-
-		"Quest_OperationalPoints_1"					"★"
-		"Quest_OperationalPoints_2"					"★★"
-		"Quest_OperationalPoints_3"					"<font color=\"#ff0000\">★★★★</font>"
-
-// Hud Message
-
-	 "Quest_ProgressMadeMessage1"								" Poin misi yang akan didapat di akhir pertandingan: +%s1."
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -33688,7 +32451,7 @@ melawan FaZe."
 // COMMUNITY_34
 
 		"PaintKit_usp_field_snake"						"Cat khusus ini menampilkan alat penjinak dengan sayap di bawah rear sight dan angka \"027\" di dekat pelontar selongsong peluru.\n\n<i>Pekerjaan ringan</i>"
-		"PaintKit_usp_field_snake_Tag"					"027"
+		"PaintKit_usp_field_snake_Tag"					"27"
 
 		"PaintKit_deagle_calligraff"					"Bagian slide Desert Eagle ini telah dihias dengan kaligrafi warna perak.\n\n<i>Hal seperti ini membutuhkan waktu</i>"
 		"PaintKit_deagle_calligraff_Tag"				"Calligraffiti"
@@ -35310,8 +34073,8 @@ melawan FaZe."
 		"Workshop_created" "Tanggal Dibuat"
 		"Workshop_size" "Ukuran"
 		"Workshop_View" "Lihat di Workshop"
-		"Workshop_Allow" "Izinkan"
-		"Workshop_Deny" "Tolak"
+		"Workshop_Allow" "Unduh"
+		"Workshop_Deny" "Batal"
 
 		"SFUI_Workshop_Desc_Pw"				"Map workshop berlangganan kamu tercantum di sini. Kamu bisa menggunakan Main Cepat Komunitas untuk menemukan server komunitas terbaik yang menjalankan map."
 		"SFUI_Workshop_Desc_Sp_Pw"			"Map workshop berlangganan kamu tercantum di sini. Kamu bisa mencobanya secara lokal dengan bot."
@@ -35601,12 +34364,6 @@ melawan FaZe."
 		"SFUI_Store_Limited_Bid_Tagline"			"Untuk Mendapatkan Penawaran Ini"
 		"SFUI_Store_Available_Offers"               "Penawaran Tersedia Hingga:"
 		"SFUI_Store_Preview"                        "Pratinjau"
-
-		"SFUI_Store_Timer_Week:p"                   "%s1 Minggu"
-		"SFUI_Store_Timer_Day:p"                    "%s1 Hari"
-		"SFUI_Store_Timer_Hour:p"                   "%s1 Jam"
-		"SFUI_Store_Timer_Min:p"                    "%s1 Menit"
-		"SFUI_Store_Timer_Sec:p"                    "%s1 Detik"
 
 		"SFUI_Store_Timer_Week:f"                 	"{f:0:value} Minggu"
 		"SFUI_Store_Timer_Day:f"                    "{f:0:value} Hari"
@@ -37853,7 +36610,7 @@ melawan FaZe."
 		"SFUI_PlayerDetails_Cancel"		"BATAL"
 		"SFUI_PlayerDetails_Submit"		"KIRIM"
 		"SFUI_PlayerDetails_Ok"			"OK"
-		"SFUI_PlayerDetails_Commend"		"Rekomendasi"
+		"SFUI_PlayerDetails_Commend"		"Rekomendasikan"
 		"SFUI_PlayerDetails_Report"			"Laporkan"
 		"SFUI_PlayerDetails_Commend_TargetPlayer"	"Rekomendasikan {s:target_player}"
 
@@ -37880,7 +36637,7 @@ melawan FaZe."
 		"SFUI_PlayerDetails_Loading"				"Memeriksa Rekomendasi"
 		"SFUI_PlayerDetails_Loading_Failed"			"Gagal memuat rekomendasi, silakan coba lagi nanti"
 		"SFUI_PlayerDetails_Previously_Submitted"	"Rekomendasi yang sebelumnya diberikan untuk pemain ini"
-		"SFUI_PlayerDetails_Commendations_Left:p"		"Kamu bisa memberikan rekomendasi untuk %s1 pemain lagi hari ini"
+		"SFUI_PlayerDetails_Commendations_Left:f"	"Kamu bisa memberikan rekomendasi kepada {num_players} {num_players, plural, other{pemain}} lagi hari ini"
 		"SFUI_PlayerDetails_NoCommendations_Left"   "Kamu telah memberikan terlalu banyak rekomendasi hari ini, silakan coba lagi besok"
 		"SFUI_PlayerDetails_Updating_Previous_Commendation"   "Kamu mengubah rekomendasi yang telah diberikan sebelumnya"
 		"SFUI_PlayerDetails_New_Commendation"   "Kamu memberikan rekomendasi baru"
@@ -38238,6 +36995,8 @@ melawan FaZe."
 		"SFUIHUD_InfoPanel_Coop_Thumb2Insert"					"USB diambil.\nMenginstall virus!"
 		"SFUIHUD_InfoPanel_Coop_Thumb2Ready"					"USB 2 siap!"
 		"SFUIHUD_InfoPanel_Coop_Thumb2Retrieved"				"USB virus diambil!"	
+
+		"FullPlayerNameOrder_Default:f"						"{modifier} {clantag} {controller_name} ({current_controller_of_my_pawn})"
 "SFUIHUD_Spectate_Equipment"	"NILAI PERALATAN"
 		"SFUIHUD_Spectate_TeamMoney"	"UANG TIM"
 		"SFUIHUD_Spectate_TeamEQValue"	"NILAI EQ TIM"
@@ -39622,8 +38381,8 @@ melawan FaZe."
 		"SFUI_Settings_MiniScoreboardPlayerCount_Tooltip"	"Di dalam ronde aktif, ganti avatar pemain dengan jumlah pemain tim di papan skor mini."
 
 
-		"Post_Round_Damage_Report_Given:p"		" • Damage Diberikan → %s3: %s2 dalam %s1"
-		"Post_Round_Damage_Report_Taken:p"		" • Damage Diterima ← %s3: %s2 dalam %s1"
+		"Post_Round_Damage_Report_Given:f"		" • Damage Diberikan → {player_name}: {f:0:damage} dalam {num_hits}"
+		"Post_Round_Damage_Report_Taken:f"		" • Damage Diterima ← {player_name}: {f:0:damage} dalam {num_hits}"
 
 		"SFUI_TeamOverheadID"					"Tampilkan Peralatan Tim"
 
@@ -40102,8 +38861,8 @@ melawan FaZe."
 
 		"SFUI_UserAlertNoteType_1"			"Server di %s1 sedang penuh."
 		"SFUI_UserAlertNoteType_2"			"Server di %s1 sedang offline untuk maintenance."
-		"SFUI_UserAlertNoteType_LowPlayersR:p"	"Hanya %players% pemain yang kompatibel yang sedang mencari pertandingan di wilayah %region%."
-		"SFUI_UserAlertNoteType_LowPlayersY:p"	"Hanya %players% pemain yang kompatibel yang sedang mencari pertandingan di wilayahmu."
+		"SFUI_UserAlertNoteType_LowPlayersR:f"	"Hanya {players} {players, plural, other{pemain}} yang kompatibel yang sedang mencari di wilayah {region}."
+		"SFUI_UserAlertNoteType_LowPlayersY:f"	"Hanya {players} {players, plural, other{pemain}} yang kompatibel yang sedang mencari di wilayahmu."
 
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"Gagal terhubung ke pertandingan."
 		"SFUI_QMM_ERROR_NotLoggedIn"		"Belum login ke layanan matchmaking Counter-Strike."
@@ -45280,7 +44039,7 @@ melawan FaZe."
 		"permissions_allow_nearby_desc"		"Izinkan pemain di sekitar untuk mengisi slot kosong di lobimu"
 		"permissions_nearby"				"Izinkan pemain di sekitar"
 		"permissions_apply"					"Terapkan Pengaturan"
-		"permissions_open_party"			"Buka Party"
+		"permissions_open_party"			"Party Terbuka"
 		"play_lobbyleader_title"			"Pengaturan lobi {s:name}"
 		"play_lobbyleader_setting"			"Pengaturan Pemimpin Lobi"
 		"party_tooltip_gamemode"			"Mode Game yang Dipilih"
@@ -45672,10 +44431,10 @@ melawan FaZe."
 		"practicesettings_infammo_button"			"Amunisi Tak Terbatas"
 		"practicesettings_infwarmup_tooltip"		"Ketika <b>diaktifkan</b>, pertandingan akan terus berada dalam mode pemanasan dan tidak akan ada bot yang bergabung."
 		"practicesettings_infwarmup_button"			"Pemanasan Tak Terbatas"
-		"practicesettings_annotations_tooltip"		"Ketika <b>diaktifkan</b>, panduan map yang dipilih dari daftar akan dimuat, dan pengaturan berikut akan digunakan: pemanasan tak terbatas, amunisi tak terbatas, dan kamera granat."
-		"practicesettings_annotations_button"		"Gunakan Panduan Map"
+		"practicesettings_annotations_tooltip"		"Ketika <b>diaktifkan</b>, panduan map yang dipilih (secara opsional) dari daftar akan dimuat, dan pengaturan berikut akan digunakan: pemanasan tak terbatas, amunisi tak terbatas, dan kamera granat."
+		"practicesettings_annotations_button"		"Aktifkan Panduan Map"
 		"practicesettings_annotations_workshop_tooltip" "Kunjungi Workshop"
-		"practicesettings_annotations_dropdown_tooltip"	"Menentukan Panduan Map mana yang akan dimuat"
+		"practicesettings_annotations_dropdown_tooltip"	"Menentukan Panduan Map mana yang akan dimuat (jika ada)"
 
 		"PlayMenuReplayNewUserTrainingButton"		"Ulang Hari Pelatihan"
 
@@ -45704,13 +44463,15 @@ melawan FaZe."
 		"annotations_local"							"Penyimpanan Lokal"
 		"annotations_workshop"						"Workshop"
 		"annotations_official"						"Resmi"
-		"annotations_none"							"Tidak Ada Panduan Map"
+		"annotations_none"							"Tanpa Panduan Map"
 		"Workshop_annotation_title"					"Alat Pengajuan Panduan Map"
 		"Workshop_annotation_error_title"			"Masukkan judul untuk panduan map-mu."
 		"Workshop_annotation_error_file"			"Pilih file anotasi .txt yang valid."
 		"Workshop_annotation_ready"					"Pengajuan siap untuk diunggah."		
 		"UI_File_Filter_SupportedAnnotationFormat"	"File teks (*.txt)"
 		"annotations_visit_workshop"				"Kunjungi Workshop ⤤"
+		"annotations_exceed_round_limit"			"Panduan map tidak diizinkan setelah ronde {s:rounds} di setiap babak"
+
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Game Mode Desc
@@ -46586,6 +45347,1415 @@ melawan FaZe."
 		"accolade_livetime_desc_2"						"Waktu hidup:"
 
 		"accolade_deaths"								"Click Bait"
+		"accolade_deaths_desc"							"Death terbanyak:"
+		"accolade_deaths_value"							"{s:accolade-value-string}"
+
+		"accolade_deaths_2"								"Pemberani"
+		"accolade_deaths_desc_2"						"Death:"
+
+		"accolade_nopurchasewins"						"Pemulung"
+		"accolade_nopurchasewins_desc"					"Menang ronde tanpa membeli apa pun terbanyak:"
+		"accolade_nopurchasewins_value"					"{s:accolade-value-string}"
+
+		"accolade_nopurchasewins_2"						"Penghemat"
+		"accolade_nopurchasewins_desc_2"				"Menang ronde tanpa membeli apa pun:"
+
+		"accolade_clutchkills"							"Raja Clutch"
+		"accolade_clutchkills_desc"						"Clutch kill terbanyak:"
+		"accolade_clutchkills_value"					"{s:accolade-value-string}"
+
+		"accolade_clutchkills_2"						"Pembersih"
+		"accolade_clutchkills_desc_2"					"Clutch kill:"
+
+		"accolade_loudest"								"Paling Berisik"
+		"accolade_loudest_desc"							"Langkah kaki paling terdengar:"
+		"accolade_loudest_value"						"{s:accolade-value-string}"
+
+		"accolade_loudest_2"							"Penuh Percaya Diri"
+		"accolade_loudest_desc_2"						"Langkah kaki terdengar:"
+
+		"accolade_quietest"								"Ninja"
+		"accolade_quietest_desc"						"Langkah kaki paling sedikit terdengar:"
+		"accolade_quietest_value"						"{s:accolade-value-string}"
+
+		"accolade_quietest_2"							"Penguntit"
+		"accolade_quietest_desc_2"						"Langkah kaki sedikit terdengar:"
+
+		"accolade_pistolkills"							"Koboi Jitu"
+		"accolade_pistolkills_desc"						"Kill pistol terbanyak:"
+		"accolade_pistolkills_value"					"{s:accolade-value-string}"
+
+		"accolade_pistolkills_2"						"The Sidearm"
+		"accolade_pistolkills_desc_2"					"Kill pistol:"
+
+		"accolade_firstkills"							"Penerobos"
+		"accolade_firstkills_desc"						"Kill pertama terbanyak:"
+		"accolade_firstkills_value"						"{s:accolade-value-string}"
+
+		"accolade_firstkills_2"							"Refleks Cepat"
+		"accolade_firstkills_desc_2"					"Kill pertama:"
+
+		"accolade_sniperkills"							"Penembak Jitu"
+		"accolade_sniperkills_desc"						"Kill sniper terbanyak:"
+		"accolade_sniperkills_value"					"{s:accolade-value-string}"
+
+		"accolade_sniperkills_2"						"Sniper"
+		"accolade_sniperkills_desc_2"					"Kill sniper:"
+
+		"accolade_roundssurvived"						"Pantang Gugur"
+		"accolade_roundssurvived_desc"					"Bertahan hidup di ronde terbanyak:"
+		"accolade_roundssurvived_value"					"{s:accolade-value-string}"
+
+		"accolade_roundssurvived_2"						"Penyintas"
+		"accolade_roundssurvived_desc_2"				"Bertahan hidup di ronde:"
+
+		"accolade_chickenskilled"						"Kolonel"
+		"accolade_chickenskilled_desc"					"Membunuh ayam terbanyak:"
+		"accolade_chickenskilled_value"					"{s:accolade-value-string}"
+
+		"accolade_chickenskilled_2"						"Master Chef"
+		"accolade_chickenskilled_desc_2"				"Membunuh ayam:"
+
+		"accolade_killswhileblind"						"Mata Batin"
+		"accolade_killswhileblind_desc"					"Kill terbanyak ketika dibutakan:"
+		"accolade_killswhileblind_value"				"{s:accolade-value-string}"
+
+		"accolade_killswhileblind_2"					"Trick Shot"
+		"accolade_killswhileblind_desc_2"				"Kill ketika dibutakan:"
+
+		"accolade_bombcarrierkills"						"Tembok Pertahanan"
+		"accolade_bombcarrierkills_desc"				"Kill pembawa bom terbanyak:"
+		"accolade_bombcarrierkills_value"				"{s:accolade-value-string}"
+
+		"accolade_bombcarrierkills_2"					"Interuptor"
+		"accolade_bombcarrierkills_desc_2"				"Kill pembawa bom:"
+
+		"accolade_burndamage"							"Penyulut Api"
+		"accolade_burndamage_desc"						"Damage burn terbanyak:"
+		"accolade_burndamage_value"						"{s:accolade-value-string}"
+
+		"accolade_burndamage_2"							"Pemanggang"
+		"accolade_burndamage_desc_2"					"Damage burn:"
+
+		"accolade_cashspent"							"Berfoya-foya"
+		"accolade_cashspent_desc"						"Uang digunakan terbanyak:"
+		"accolade_cashspent_value"						"${s:accolade-value-string}"
+
+		"accolade_cashspent_2"							"Bos Besar"
+		"accolade_cashspent_desc_2"						"Uang digunakan:"
+
+		"accolade_uniqueweaponkills"					"Pakar Senjata"
+		"accolade_uniqueweaponkills_desc"				"Kill senjata unik terbanyak:"
+		"accolade_uniqueweaponkills_value"				"{s:accolade-value-string}"
+
+		"accolade_uniqueweaponkills_2"					"Instruktur Senjata"
+		"accolade_uniqueweaponkills_desc_2"				"Kill senjata unik:"
+
+		"accolade_dinks"								"Ahli Melukai"
+		"accolade_dinks_desc"							"Dink terbanyak:"
+		"accolade_dinks_value"							"{s:accolade-value-string}"
+
+		"accolade_dinks_2"								"Tukang Cukur"
+		"accolade_dinks_desc_2"							"Dink:"
+
+		"accolade_taserkills"							"Dewa Petir"
+		"accolade_taserkills_desc"						"Kill Zeus terbanyak:"
+		"accolade_taserkills_value"						"{s:accolade-value-string}"
+
+		"accolade_taserkills_2"							"Penyetrum"
+		"accolade_taserkills_desc_2"					"Jumlah Kill (Zeus):"		
+
+		"accolade_knifekills"							"Penusuk Handal"
+		"accolade_knifekills_desc"						"Kill pisau terbanyak:"
+		"accolade_knifekills_value"						"{s:accolade-value-string}"
+
+		"accolade_knifekills_2"							"Tukang Tusuk"
+		"accolade_knifekills_desc_2"					"Jumlah Kill (Pisau):"			
+
+		"accolade_gimme_01"								"Pendukung Moral"
+		"accolade_gimme_02"								"Partisipan"
+		"accolade_gimme_03"								"Cadangan"
+		"accolade_gimme_04"								"Plan B"
+		"accolade_gimme_05"								"Barisan Belakang"
+		"accolade_gimme_06"								"The Armchair General"
+		"accolade_gimme_07"								"Multitalenta"
+		"accolade_gimme_08"								"Prajurit Tanpa Nama"
+		"accolade_gimme_09"								"Tak Terlihat"
+		"accolade_gimme_10"								"Tukang Ngilang"
+		"accolade_player_score"							"Skor: {d:score-value-int}"
+
+
+		"playercardstats_adr_title"						"ADR"
+		"playercardstats_adr_value"						"{d:playercardstats-adr}"
+
+		"playercardstats_kda_title"						"KDA"
+		"playercardstats_kda_value"						"{d:playercardstats-kills}-{d:playercardstats-deaths}-{d:playercardstats-assists}"
+
+		"playercardstats_k_title"						"Kill"
+		"playercardstats_k_value"						"{d:playercardstats-kills}"
+
+		"playercardstats_d_title"						"Death"
+		"playercardstats_d_value"						"{d:playercardstats-deaths}"
+
+		"playercardstats_a_title"						"Assist"
+		"playercardstats_a_value"						"{d:playercardstats-assists}"
+
+		"playercardstats_score_title"					"Skor"
+		"playercardstats_score_value"					"{d:playercardstats-score}"
+
+		"playercardstats_hsp_title"						"HSP"
+		"playercardstats_hsp_value"						"{d:playercardstats-hsp}%"
+
+		"playercardstats_ef_title"						"MUSUH TERKENA FLASH"
+		"playercardstats_ef_value"						"{d:playercardstats-ef}"
+
+		"playercardstats_ud_title"						"DAMAGE ITEM UTILITAS"
+		"playercardstats_ud_value"						"{d:playercardstats-ud}"
+
+		"playercardstats_gglevel_title"					"Level"
+		"playercardstats_gglevel_value"					"{d:playercardstats-gglevel}"
+
+		"playercardstats_kk_title"						"Jumlah Kill (Pisau)"
+		"playercardstats_kk_value"						"{d:playercardstats-knifekills}"
+
+
+		"eom-vote-for-next-map"							"Vote untuk map berikutnya"
+		
+		"eom-survival-damage-taken"						"Damage Diterima"
+		"eom-survival-damage-given"						"Damage Diberikan"
+
+
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	STATS
+		//
+		///////////////////////////////////////////////////////////
+
+		"playerstats_mode_comp_all"			"Semua 5v5"
+		"playerstats_mode_comp_capt"		"Premier Kompetitif"
+		"playerstats_mode_comp_active"		"Kompetitif (Penjinakkan Bom)"
+		"playerstats_mode_comp_other"		"Kompetitif (Penyelamatan Sandera)"
+		"playerstats_mode_comp_scrim"		"Scrimmage"
+		"playerstats_mode_2v2_all"			"Semua Wingman"
+		"playerstats_mode_2v2_active"		"Wingman (Active Duty)"
+		"playerstats_mode_2v2_other"		"Wingman (Grup Cadangan)"
+
+		"playerstats_weapons"					"Performa Senjata"
+		"playerstats_heatmap"					"Heatmap"
+		"playerstats_matchlister"				"Pertandingan"
+		"playerstats_stats"						"Statistik"
+
+		"playerstats_matchlister_separator"		"{s:separator_title}"
+
+		"playerstats_weapon_tooltip_counts"		"Kill: {d:kills}"
+		"playerstats_weapon_tooltip_kd"			"K/D: {s:score}"
+
+		"playerstats_map_tooltip_win_loss_tie"	"Menang/Kalah/Seri"
+		"playerstats_map_tooltip_rndwin_rndloss"	"Menang-Kalah Ronde"
+		"playerstats_map_tooltip_round_winrate"	"Persentase Menang Ronde"
+		"playerstats_map_tooltip_match_winrate"	"Persentase Menang Pertandingan"
+
+		"playerstats_forceretry"				"Koneksi ke server statistik hilang.\nKlik OK untuk mencoba menghubungkan kembali."
+		"playerstats_no_data"					"Tidak memiliki data di rentang waktu dan mode yang dipilih. Ubah pilihanmu atau bermain di beberapa pertandingan."
+		"playerstats_link"						"Kelola Langganan"
+		"playerstats_link_reactivate"			"Aktifkan Kembali Langganan"
+		"playerstats_link_get"					"Langganan"
+
+		"playerstats_subscription_expire_warning"		"<b>Mengumpulkan Statistik Pertandingan</b> - langganan akan <b>kedaluwarsa hari ini</b>"
+		"playerstats_subscription_renew_automatically"	"<b>Mengumpulkan Statistik Pertandingan</b> - langganan akan diperbarui secara otomatis dalam {d:days} hari"
+		"playerstats_subscription_renew_unknown"		"<b>Mengumpulkan Statistik Pertandingan</b> - {d:days} hari tersisa untuk periode berlanggananmu"
+		"playerstats_subscription_renew_manually"		"<b>Mengumpulkan Statistik Pertandingan</b> - {d:days} hari tersisa, langgananmu tidak akan <b>diperbarui secara otomatis</b>"
+		"playerstats_subscription_expired"				"<b>Masa Berlaku Langganan Kedaluwarsa</b> - aktifkan kembali langgananmu untuk mendapatkan statistik pertandingan yang baru"
+		"playerstats_subscription_not_enrolled"			"<b>Langganan Tidak Aktif</b> - aktifkan langganan untuk mengumpulkan statistik pertandingan terbaru"
+		"playerstats_subscription_buy_button"			"AKTIFKAN BERLANGGANAN BULANAN\n{s:price} / BULAN"
+
+		"playerstats_past_14"					"14 hari terakhir"
+		"playerstats_past_30"					"30 hari terakhir"
+		"playerstats_past_90"					"90 hari terakhir"
+		"playerstats_alltime"					"Semua waktu"
+
+		"stat_best_map"							"Map Terbaik"
+		"stat_best_map_desc"					"Map dengan rasio menang/kalah ronde tertinggimu"
+
+		"stat_best_weapon"						"Senjata Terbaik"
+
+		"stat_best_mate"						"Teman Terbaik"
+		"stat_best_mate_desc"					"Rekan tim yang membantumu mencapai rasio menang/kalah ronde tertinggi"
+
+		"matchstat_abandoned"					"*Kamu meninggalkan pertandingan sebelum berakhir"
+
+		"playerstats_suffix_per_round"			"/r"
+		"playerstats_suffix_per_cent"			"%"
+
+		"playerstats_per_round"			"{s:value}/r"
+		"playerstats_per_cent"			"{s:value}%"
+		"playerstats_no_units"			"{s:value}"	
+
+		"playerstats_percentile"		"Rating {s:tt_value} milikmu lebih baik dari {s:tt_rank}% semua pemilik Pas Operation"
+		"playerstats_percentile_subscribers"	"Rating {s:tt_value} milikmu lebih baik dari {s:tt_rank}% semua Pelanggan"
+
+
+		"playerstats_mapwinrate"		"Persentase Menang Map"
+		"playerstats_mapwinrate_rounds"	"Ronde"
+		"playerstats_mapwinrate_matches" "Pertandingan"
+
+		"stat_total_score"				"Skor"
+		"stat_average_score"			"Skor/ronde"
+
+		"stat_total_kills"				"Kill"
+		"stat_average_kills"			"Kill/ronde"
+
+		"stat_total_deaths"				"Death"
+	//	"stat_average_deaths"			"stat_average_deaths"		
+
+		"stat_total_health_removed"		"Damage"	
+		"stat_average_health_removed"	"ADR"
+
+		"stat_average_kd"				"Kill/Death"
+		"stat_average_kd_short"			"K/D"
+
+		"stat_average_hsp"				"stat_average_hsp"
+
+		"stat_total_2k"					"2K"
+		"stat_total_3k"					"3K"
+		"stat_total_4k"					"4K"
+
+		"stat_grenades"					"Granat HE"
+		"stat_total_grenade"			"Dilempar"
+		"stat_average_grenade"			"Berhasil"
+		"stat_grenades_desc"			"Persentase Granat HE yang dilempar dan melukai minimum 1 musuh"			
+
+		"stat_flash"					"Flash"
+		"stat_total_flash"				"Dilempar"
+		"stat_average_flash"			"Berhasil"
+		"stat_flash_desc"				"Persentase granat kejut yang dilempar membutakan minimum 1 musuh"
+
+		"stat_entry"					"Kill Pertama"
+		"stat_average_entrykd"			"EK/D"
+		"stat_total_entry_attempts"		"Total"
+		"stat_entry_desc"				"Rasio kill pertama terhadap death pertama"
+
+		"stat_total_wins"				"Menang"
+		"stat_total_losses"				"Kalah"
+		"stat_total_ties"				"Seri"
+
+		"stat_total_rounds_played"		"Ronde"
+
+		"stat_1vx"						"1vX"
+
+		"stat_1v1"						"1v1"
+
+		"stat_average_1v1"				"Berhasil"				
+		"stat_total_1v1_attempts"		"Kesempatan"		
+
+		"stat_1v2"						"1v1"
+
+		"stat_average_1v2"				"Berhasil"			
+		"stat_total_1v2_attempts"		"Kesempatan"		
+
+		"num_matches"					"Pertandingan Dimainkan"
+
+		"playerstat_name_0"				"Skor"
+		"playerstat_name_0_long"		"Skor Per Ronde"
+		"playerstat_name_0_desc"		"Skor per ronde: {s:value}\nTotal skor : {d:total}"
+
+
+		"playerstat_name_1"				"Kill"
+		"playerstat_name_1_long"		"Kill Per Ronde"
+		"playerstat_name_1_desc"		"Kill rata-rata per ronde: {s:value}\nTotal kill : {d:total}"
+
+		"playerstat_name_2"				"DMG"
+		"playerstat_name_2_long"		"Damage Per Ronde"
+		"playerstat_name_2_desc"		"Damage rata-rata per ronde: {s:value}\nTotal damage : {d:total}"	
+
+		"playerstat_name_2.1"			"Damage"
+		"playerstat_name_2.5"			"ADR"		
+
+		"playerstat_name_3"				"K/D"
+		"playerstat_name_3_long"		"Kill Per Death"
+		"playerstat_name_3_desc"		"Rasio kill terhadap death: {s:value}"		
+
+		"playerstat_name_4"				"HS"
+		"playerstat_name_4_long"		"Persentase Kill Headshot"
+		"playerstat_name_4_desc"		"Persentase kill head shot : {s:value}\nTotal kill head shot : {d:total}"	
+
+		"playerstat_name_4.5"			"HS%"		
+
+		"playerstat_name_5"				"2K"
+		"playerstat_name_5_long"		"2-Kill"
+		"playerstat_name_5_desc"		"Total ronde 2-kill : {s:value}"	
+
+		"playerstat_name_6"				"3K"
+		"playerstat_name_6_long"		"3-Kill"
+		"playerstat_name_6_desc"		"Total ronde 3-kill : {s:value}"		
+
+		"playerstat_name_7"				"4K"
+		"playerstat_name_7_long"		"4-Kill"
+		"playerstat_name_7_desc"		"Total ronde 4-kill : {s:value}"
+
+		"playerstat_name_7.5"			"Multi-kill"
+	
+		"playerstat_name_8"				"HE"
+		"playerstat_name_8_long"		"HE Efektif"
+		"playerstat_name_8_desc"		"Persentase Granat HE yang dilempar dan melukai minimum 1 musuh: {s:value}\nTotal Granat HE yang dilempar dan melukai minimum 1 musuh : {d:total}"			
+
+		"playerstat_name_9"				"FB"
+		"playerstat_name_9_long"		"Granat Kejut Efektif"		
+		"playerstat_name_9_desc"		"Persentase granat kejut yang dilemparkan dan membutakan setidaknya 1 musuh: {s:value}\nTotal Granat Kejut yang dilemparkan dan membutakan setidaknya 1 musuh : {d:total}"
+
+		"playerstat_name_10"			"1v1"
+		"playerstat_name_10_long"		"Pertarungan 1v1"
+		"playerstat_name_10_desc"		"Persentase pertarungan 1v1 yang dimenangkan: {s:value}\nTotal pertarungan 1v1 yang dimenangkan : {d:total}"	
+
+		"playerstat_name_11"			"1v2"
+		"playerstat_name_11_long"		"Pertarungan 1v2"
+		"playerstat_name_11_desc"		"Persentase pertarungan 1v2 yang dimenangkan: {s:value}\nTotal pertarungan 1v2 yang dimenangkan : {d:total}"	
+
+		"playerstat_name_12"			"EK"
+		"playerstat_name_12_long"		"Kill Pertama"
+		"playerstat_name_12_desc"		"Rasio kill pertama terhadap death pertama: {s:value}\nTotal kill pertama : {d:total}"
+
+		"stats_graph_button_0"			"Skor/R"
+		"stats_graph_button_1"			"Kill/R"
+		"stats_graph_button_2"			"ADR"
+		"stats_graph_button_3"			"K/D"
+		"stats_graph_button_4"			"HS%"
+
+		"ris_score"								"Skor Rnd"
+		"ris_t"									"T"
+		"ris_ct"								"AT"
+		"ris_team-title"						"Peluang Menang Timmu"
+		"ris_wins"								"{s:ris_team} Menang!"
+
+		"ris_win"								"menang"
+		"ris_loss"							"kalah"
+
+		"ris_hits"								"dalam {s:num_hits}"
+		
+		"prdr_health_removed"					"{d:health_removed}/{d:num_hits} hit"
+		"prdr_return_health_removed"				"{d:return_health_removed} / {d:return_num_hits} hit"
+
+		"season_stat_title_wins"		"MENANG"
+        "season_stat_title_ties"		"SERI"
+        "season_stat_title_losses"		"KALAH"
+        "season_stat_title_rounds"		"RONDE"
+        "season_stat_title_kills"		"KILL"
+        "season_stat_title_headshots"	"HEADSHOT"
+		"season_stat_title_hs_percent"	"HS%"
+        "season_stat_title_assists"		"ASSIST"
+        "season_stat_title_deaths"		"DEATH"
+        "season_stat_title_mvps"		"MVP"
+        "season_stat_title_rounds_3k"	"3K"
+        "season_stat_title_rounds_4k"	"4K"
+        "season_stat_title_rounds_5k"	"5K"
+		"season_stat_title_kpr"			"KPR"
+		"season_stat_title_kd"			"K/D"
+		"season_stat_title_best_map"	"MAP TERBAIK"
+		"season_stat_title_win_percent"	"% MENANG"
+		"season_stat_title_matches_played"	"PERTANDINGAN"
+		"season_stat_title_achieved_week"	"RANKING TERTINGGI MINGGU INI"
+		"season_stat_value_kd"				"{s:kdratio}"
+		"season_stat_value_win_percent"		"{s:win-percent}%"
+		"season_stat_value_hs_percent"		"{s:hs-percent}%"
+		"season_section_rank"				"SKOR TINGGI"
+		"season_section_season_stats"		"STATISTIK MUSIM"
+		"season_section_rank_history"		"RIWAYAT RANKING"
+		"season_section_rank_activity"		"PERTANDINGAN DIMAINKAN"
+		"season_section_rank_map_stats"		"STATISTIK MAP"
+		"season_section_rank_map_wins_graph"	"TOTAL KEMENANGAN MAP"
+		"season_section_graph_x_axis_label_min"		"MINGGU {d:week_min}"
+		"season_section_graph_x_axis_label_max"		"MINGGU {d:week_max}"
+		"tooltip-no-map-stats"			"Statistikmu tidak tersedia untuk map ini"
+		"tooltip-season-rank-week-idx"		"MINGGU {s:week-id}"
+		"tooltip-season-rank-week-name"		"{s:week-name}"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	WIN PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_winpanel_mvp_award"				"MVP"
+		"Panorama_winpanel_mvp_award_kills"			"MVP"
+		"Panorama_winpanel_mvp_award_ace"			"MVP karena berhasil menjadi ACE di dalam Ronde"
+		"Panorama_winpanel_mvp_award_bombplant"		"MVP karena berhasil memasang bom"
+		"Panorama_winpanel_mvp_award_bombdefuse"	"MVP karena berhasil menjinakkan bom"
+		"Panorama_winpanel_mvp_award_rescue"		"MVP karena berhasil menyelamatkan sandera"
+		"Panorama_winpanel_mvp_award_score"			"MVP untuk skor terbaik"
+		"Panorama_winpanel_mvp_award_inferno"		"MVP karena berhasil memberikan damage yang signifikan menggunakan api"
+		"Panorama_winpanel_mvp_award_blast"			"MVP karena berhasil memberikan damage yang signifikan menggunakan peledak"
+		"Panorama_winpanel_mvp_award_bombdefuse_clutch"	"MVP karena menjinakkan bom sebagai yang terakhir bertahan hidup"
+		"Panorama_winpanel_mvp_award_bombplant_clutch"	"MVP karena berhasil memasang dan melindungi bom"
+		"Panorama_winpanel_mvp_award_gungame"		"MVP"
+		"Panorama_winpanel_mvp_winner"				"MVP"
+		"Panorama_winpanel_mvp_award_kills_three"	"MVP untuk kill terbanyak (3k)"
+		"Panorama_winpanel_mvp_award_kills_four"	"MVP untuk kill terbanyak (4k)"
+
+		"Panorama_WinPanel_rank_awarded_multi"	"Kamu berhasil mencapai ranking {d:rank_increase} baru!"
+
+		"Panorama_WinPanel_rank_name_string"	"{s:current_best_cat} <font color='#CCCCCC'>({s:current_rank_cat})</font>"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	WATCH PANEL
+		//
+		///////////////////////////////////////////////////////////
+		
+		"WatchMenu_Watch"					"Tonton"
+		"WatchMenu_Tournament_Versus"		"vs"
+		"WatchMenu_Outcome_Tied"			"Seri"
+		"WatchMenu_Outcome_Abandon"			"Ditinggalkan"
+		"WatchMenu_Outcome_Won"				"<img src='file://{images}/icons/ui/trophy.svg' width='15' height='15'/> Menang"
+		"WatchMenu_Outcome_Lost"			"Kalah"
+		"WatchMenu_Expand_Match_Menu"		"Lainnya"
+		"WatchMenu_Get_Share_Link"			"Salin kode Match Sharing"
+		"WatchMenu_Share_Link_Copied"		"Tautan disalin ke clipboard"
+		"WatchMenu_Download_Demo"			"Unduh demo untuk menonton"
+		"WatchMenu_Watch_Live"				"Tonton Live"
+		"WatchMenu_Watch_Highlights"		"Tonton Sorotan"
+		"WatchMenu_Watch_Lowlights"			"Tonton Momen Terburuk"
+		"WatchMenu_Watch_Highlights_Player_Selected"	"Tonton highlight {s:playerNameTitle}"
+		"WatchMenu_Watch_Lowlights_Player_Selected"	"Lihat momen terburuk {s:playerNameTitle}"
+		"WatchMenu_Delete"					"Hapus file demo lokal"
+		"WatchMenu_Downloading"				"Mengunduh"
+		"WatchMenu_Info_Download_Failed"	"Unduhan Tidak Selesai"
+		"WatchMenu_Info_Download_Failed_Retry" "Coba unduh ulang file demo?"
+		"WatchMenu_Info_Download_Failed_Info" "Unduhan tidak selesai. Informasi papan skor tersedia, tapi kamu tidak bisa menonton pertandingan."
+		"WatchMenu_Download_Disabled_Hint"	"Demo pertandingan telah kedaluwarsa dan tidak lagi tersedia untuk diunduh."
+		"WatchMenu_Tournament_BulletPoint"	"<ul>
+												<li>Tonton pertandingan dan gunakan stiker timmu untuk membuat prediksi Babak Grup dan Playoff.</li>
+												<li>Setiap kali kamu membuat pilihan yang benar, kamu akan mendapatkan poin untuk Piala Pick'Em yang dapat ditampilkan di avatar Counter-Strike dan profil Steam-mu.</li>
+												<li>Kamu dapat membuat prediksi Babak Grup hingga Babak Grup dimulai.</li>
+												<li>Kamu dapat membuat prediksi Playoff sampai Playoff dimulai.</li>
+											</ul>"
+		"WatchMenu_Viewer"				"Penonton"
+		"WatchMenu_Viewers"				"Penonton"
+		"WatchMenu_Viewers_dv:f"		"{d:spectatorCount} Penonton"
+		"WatchMenu_FirstHalf"			"Babak Pertama"
+		"WatchMenu_SecondHalf"			"Babak Kedua"
+		"WatchMenu_Overtime"			"Overtime"
+		"MatchInfo_FirstRound"			"Ronde Pertama"
+		"MatchInfo_Halftime"			"Halftime"
+		"MatchInfo_Overtime"			"Overtime"
+		"MatchInfo_RoundDataTitle"      "Performa {s:playerNameTitle} di dalam Ronde"
+		"MatchInfo_Date"				"{s:month} {s:day}"
+		
+		"MatchInfo_Date_Tournament_Month_Short_8"	"Okt"		
+		"MatchInfo_Date_Tournament_Month_Final_Short_8"	"Nov"
+		"MatchInfo_Date_Tournament_Month_Short_9"	"Mar"
+		"MatchInfo_Date_Tournament_Month_Short_9_1"	"Apr"
+		"MatchInfo_Date_Tournament_Month_Final_Short_9"	"Apr"
+		"MatchInfo_Date_Tournament_Month_Short_10"	"Jul"
+		"MatchInfo_Date_Tournament_Month_Short_10_1"	"Jul"
+		"MatchInfo_Date_Tournament_Month_Final_Short_10"	"Jul"
+		"MatchInfo_Date_Tournament_Month_Short_11"	"Jan"
+		"MatchInfo_Date_Tournament_Month_Short_11_1"	"Jan"
+		"MatchInfo_Date_Tournament_Month_Final_Short_11"	"Jan"
+		"MatchInfo_Date_Tournament_Month_Short_12"	"Jul"
+		"MatchInfo_Date_Tournament_Month_Short_12_1"	"Jul"
+		"MatchInfo_Date_Tournament_Month_Final_Short_12"	"Jul"
+		"WatchMenu_PickEm_ComingSoon"	"Tampilan Pick'Em dan Game Fantasi yang lalu akan segera hadir."
+		"WatchMenu_ViewerCount"	"{s:numberOfViewers} penonton di {s:channel}"
+		"Matchlist_Team_Selection"	"Semua Tim"
+
+
+		"pickem_timer_inactive"		"Stage ini sedang tidak aktif untuk dipilih"
+		"pickem_timer"				"Tersisa {s:time} untuk membuat pilihanmu"
+		"pickem_timer_upsell"		"Tersisa <b>{s:time}</b> untuk membuat pilihanmu. Dapatkan Pas untuk bermain Pick'Em dan mendapatkan Token Suvenir."
+		"pickem_timer_locked"		"Pemilihan dikunci"
+		"pickem_points_earned" 		"Poin Diperoleh"
+		"pickem_correct_pick" 		"Pilihan yang Benar"
+		"pickem_points_needed_next_level" 	"Dapatkan <b>{d:points}</b> lagi {s:plural} untuk <b>{s:level}</b>"
+		"pickem_points_result" 		"Kamu mendapatkan piala Pick'Em <b>{s:result-level}</b>"
+		"pickem_points_result_bronze" "Kamu mendapatkan piala Pick'Em <b>Perunggu</b>"
+		"pickem_points_result_silver" "Kamu mendapatkan piala Pick'Em <b>Perak</b>"
+		"pickem_points_result_gold" "Kamu mendapatkan piala Pick'Em <b>Emas</b>"
+		"pickem_point"				"poin"
+		"pickem_points"				"poin"
+		"pickem_level_bronze"		"Perunggu"
+		"pickem_level_silver"		"Perak"
+		"pickem_level_gold"			"Emas"
+		"pickem_group_pick_worth"	"Setiap pilihan yang benar memberikan <b>{d:points} {s:plural}</b>"
+		"pickem_pick_correct_points_earned"	"+ <b>{d:points}</b> {s:plural}"
+		"pickem_pick_drag_hint" 	"Tarik tim ke sini"
+		"pickem_pick_undefeated"	"<b>Pilih</b> tim yang akan <b>maju tanpa terkalahkan</b>"
+		"pickem_pick_eliminated"	"<b>Pilih</b> tim yang akan <b>tereliminasi tanpa memenangkan pertandingan</b>"
+		"pickem_get_items" 			"Dapatkan Stiker"
+		"pickem_get_items_tooltip" 	"Kamu membutuhkan stiker berikut untuk memperbarui pilihanmu: <br><br>"
+		"pickem_place_picks" 		"Perbarui Pilihan"
+		"pickem_confirm_picks" 		"Konfirmasi Pilihanmu"
+		"pickem_confirm_Warning"	"<b>Stiker ini akan digunakan untuk pilihan Pick'Em kamu.</b>\n\nStiker akan tetap ada di dalam inventarismu dan bisa ditempelkan ke senjata mana pun yang kamu miliki atau ditukarkan setelah stage event selesai.\n\n<span class=\"premier-pickban__title__text-red\">\nStiker tidak bisa digunakan dan ditukarkan hingga stage event berakhir. Menghapus pilihanmu tidak akan membatalkan penguncian.</span>\n"
+		"pickem_confirm_ClearAll"	"<b>Tidak ada stiker yang akan digunakan untuk pilihan Pick'Em kamu.</b>\n\nStiker yang sebelumnya digunakan akan tetap ada di dalam inventarismu dan bisa ditempelkan ke senjata mana pun yang kamu miliki atau ditukarkan setelah stage event berakhir.\n"
+		"pickem_confirm_stickes_for_lock" 	"Stiker untuk memilih"
+		"pickem_confirm_not_owned" 		"<b>Pilihan ini tidak bisa dilakukan.</b><span class=\"premier-pickban__title__text-red\">\nKamu memerlukan Stiker Tim yang sesuai untuk memperbarui pilihan Pick'Em kamu.</span>"
+		"pickem_apply_emptyslots"		"Kamu harus mengisi semua prediksimu untuk memperbarui Tantangan Pick'Em. Silakan seret dan lepas pilihanmu ke slot yang masih kosong dan klik tombol \"Perbarui Pilihan\" lagi untuk mengonfirmasi."
+		"pickem_apply_timeout"			"Kami tidak dapat memperbarui pilihan Pick'Em kamu. Silakan coba lagi nanti."
+		"pickem_apply_drag_hint"	"Tarik pilihanmu ke sini"
+		"pickem_apply_immediate" 		"Memperbarui Pilihanmu..."
+		"pickem_save_all" 			"SIMPAN SEMUA PILIHAN"
+		"pickem_make_picks" 		"MEMBUAT {d:user-picks}/{d:total-picks} PILIHAN"
+		"pickem_drag_picks" 		"Seret tim untuk membuat pilihanmu"
+		"pickem_reveal_all_results" "Tampilkan hasil akhir"
+		"pickem_saved" 		"Pilihan Disimpan"
+		"pickem_teams_tbd" 	"Tim Segera Ditentukan"
+		"pickem_challenge_section_title" "TANTANGAN PICK'EM"
+		"pickem_items_section_title" "ITEM TURNAMEN"
+		"pickem_items_tab_opening_stage" "BABAK PEMBUKAAN"
+		"pickem_items_tab_elim_stage" "BABAK ELIMINASI"
+		"pickem_items_tab_stage_i" "Babak I"
+		"pickem_items_tab_stage_ii" "Babak II"
+		"pickem_items_tab_stage_iii" "Babak III"
+		"pickem_items_tab_playoff_stage" "PLAYOFF"
+		"pickem_teams_remove_all_tooltip" 	"Hapus semua pilihan"
+		"pickem_teams_fill_tooltip" 	"Isi pilihan yang kosong secara acak"
+		"pickem_versus"				"VS"
+		"pickem_submit_warning"		"{s:pass-name} tidak diaktifkan"
+		"pickem_submit_warning_tooltip"		"{s:pass-name} aktif diperlukan untuk memperoleh progres pada tantangan Pick'Em. Pas harus diaktifkan sebelum babak dikunci."
+		"pickem_submit_warning_popup_title"	"Simpan Pilihan Tanpa Pas Aktif"
+		"pickem_submit_warning_popup_desc"	"{s:pass-name} aktif diperlukan untuk memperoleh progres pada tantangan Pick'Em. Pas harus diaktifkan sebelum babak dikunci."
+		"pickem_submit_warning_popup_action""Simpan Pilihan Tanpa Pas Aktif"
+		"pickem_submit_warning_popup_action2"	"Aktifkan Pas Dan Simpan Pilihan"
+		"contextmenu_pickem_souvenir_title" 	"Pilih pertandingan dengan Paket Suvenir yang kamu inginkan"
+		"contextmenu_pickem_souvenir_no_result" 	"Kembalilah ketika hasil pertandingan telah ditentukan untuk mengeklaim Paket Suvenir"
+		"mainmenu_major_hub"	"HUB & ITEM TURNAMEN MAJOR"
+		"mainmenu_major_hub_items"	"Stiker Telah Tersedia"
+		"mainmenu_major_hub_no_items" "HUB TURNAMEN MAJOR"
+
+		"pickem_swiss_group_00"									"0:0"
+		"pickem_swiss_group_10"									"1:0"
+		"pickem_swiss_group_11"									"1:1"
+		"pickem_swiss_group_12"									"1:2"
+		"pickem_swiss_group_20"									"2:0"
+		"pickem_swiss_group_21"									"2:1"
+		"pickem_swiss_group_22"									"2:2"
+		"pickem_swiss_group_01"									"0:1"
+		"pickem_swiss_group_02"									"0:2"
+
+		"pickem_swiss_group_30"									"3:0 - lolos"
+		"pickem_swiss_group_3x"									"3:1 3:2\n lolos"
+		"pickem_swiss_group_13"									"1:3 - gugur"
+		"pickem_swiss_group_23"									"2:3 - gugur"
+		"pickem_swiss_group_03"									"0:3 - gugur"
+
+
+
+
+
+
+
+		// WATCH EVENTS
+
+		"eventsched_lan"												"Event LAN"
+		"eventsched_online"											"Event Online"
+		"eventsched_show_online"								"Tampilkan Event Online"
+		"eventsched_date_format"								"{s:eventsched_date_month} {s:eventsched_date_day}"
+		"eventsched_versus"											"vs"
+		"eventsched_ongoing"										"Berlangsung"
+		"eventsched_tbd"												"akan ditentukan"
+		"eventsched_live"												"PERTANDINGAN LANGSUNG"
+		"eventsched_link"												"Lihat detail lebih lengkap di HLTV.org"
+		"eventsched_event_link"									"Lihat detail event di HLTV.org"
+		"eventsched_match_link"									"Lihat detail pertandingan di HLTV.org"
+		"eventsched_team_link"									"Lihat detail tim di HLTV.org"	
+		"eventsched_no_streams"									"Tidak ada streaming yang tersedia"
+		"eventsched_watch_on_gotv"								"Tonton di CSTV"
+		"eventsched_favorite_tt"								"{s:favorite_tooltip}"
+		"eventsched_favorite_tooltip_prime"			"Memilih event sebagai favorit akan membuat\npertandingan langsungnya muncul di menu utama."
+		"eventsched_favorite_tooltip_not_prime" "Kamu harus memiliki Status Prime untuk memilih event sebagai favorit."
+		"eventsched_match_tooltip"							"{s:watchnotice_teamname_1} vs {s:watchnotice_teamname_2}"
+		"eventsched_stream_watch"								"{s:stream_site}"
+		"eventsched_hltv"												"Informasi event yang diberikan dipersembahkan oleh HLTV.org"
+		"eventsched_country"										"{s:eventsched_country}"
+		"eventsched_no_live_matches"						"Saat ini tidak ada pertandingan langsung."
+		"eventsched_featured"										"Event ini adalah favorit komunitas untuk {s:eventsched_fave_month}."
+		"eventsched_official"										"Ini adalah event Major Counter-Strike."
+
+		"WatchNotice_Reason_Official"						"Event ini ditampilkan karena ini adalah event Major Counter-Strike."
+		"WatchNotice_Reason_Personal"						"Event ini ditampilkan karena kamu memilihnya sebagai favorit."
+		"WatchNotice_Reason_Community"					"Event ini ditampilkan karena ini adalah event favorit komunitas untuk {s:watchnotice_fave_month}."
+		"WatchNotice_Watch"											"Tonton"
+
+	
+		// Used with formatText.AbbreviateNumber()
+		///////////////////////////////////////////
+		"NumberAbbreviation_E3"			"{s:abbreviated_number}k"
+		
+		// Note to translators: Add as needed. Code will use only available strings. example:
+		// "NumberAbbreviation_E4"		"{s:abbreviated_number}万"	
+
+		"NumberAbbreviation_E6"			"{s:abbreviated_number}M"
+		"NumberAbbreviation_E9"			"{s:abbreviated_number}B"
+		"NumberAbbreviation_E12"		"{s:abbreviated_number}T"
+
+		// Used with formatText.SplitAbbreviateNumber()
+		///////////////////////////////////////////
+		"NumberAbbreviation_suffix_E3"			"k"
+		
+		// Note to translators: Add as needed. Code will use only available strings. example:
+		// "NumberAbbreviation_suffix_E4"		"万"	
+
+		"NumberAbbreviation_suffix_E6"			"M"
+		"NumberAbbreviation_suffix_E9"			"B"
+		"NumberAbbreviation_suffix_E12"			"T"
+
+
+		"digitpanel_digits"			 " 0123456789,.-+?"
+		"digitpanel_digits_premier" " 1234567890,?"
+
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	OVERWATCH
+		//
+		///////////////////////////////////////////////////////////
+		
+		"Panorama_Overwatch_Downloading"		"Mengunduh file kasus..."
+		"Panorama_Overwatch_Review"				"Meninjau kasus memerlukan waktu sekitar beberapa menit."
+		"Panorama_Overwatch_Welcome"			"Overwatch Counter-Strike"
+		"Panorama_Overwatch_Tooltip_p1"			"Sebagai bagian dari tugasmu di Counter-Strike, kamu akan mengunduh dan meninjau tayangan ulang pertandingan Counter-Strike 2 di server resmi Valve untuk meninjau perilaku yang mencurigakan. Ketika pemutaran ulang selesai, kamu akan diminta untuk memberikan putusan atas cara bermain pemain yang ditinjau."
+		"Panorama_Overwatch_Tooltip_sh1"		"Langkah 1"
+		"Panorama_Overwatch_Tooltip_p2"			"Klik UNDUH BUKTI di kanan bawah untuk mengunduh kasus Overwatch."
+		"Panorama_Overwatch_Tooltip_sh2"		"Langkah 2"
+		"Panorama_Overwatch_Tooltip_p3"			"Klik TINJAU BUKTI untuk menonton tayangan ulang dari perspektif pemain seperti yang direkam oleh server."
+		"Panorama_Overwatch_Tooltip_sh3"		"Langkah 3"
+		"Panorama_Overwatch_Tooltip_p4"			"Begitu kasus selesai ditinjau, pilih satu jawaban untuk masing-masing pertanyaan dan klik BERIKAN PUTUSAN."
+		"Panorama_Overwatch_Major_Disruption"	"Gangguan Besar"
+		"Panorama_Overwatch_Minor_Disruption"	"Gangguan Kecil"
+		"Panorama_Overwatch_Res_Griefing"		"Griefing"
+		"Panorama_Overwatch_Res_AimHacking"		"Bantuan Pembidik"
+		"Panorama_Overwatch_Res_WallHacking"	"Bantuan Pandangan"
+		"Panorama_Overwatch_Res_SpeedHacking"	"Bantuan Eksternal Lain"
+		
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	ROSETTA PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_CSGO_Spray_EnableMouse"			"<b>[{g:csgo_key:spray_mouse_enable}]</b> Aktifkan Kursor"
+		"Panorama_CSGO_Rosetta_Item_Name"			"<font color=\"{s:item_color}\">{s:item_name}</font>"
+		"Panorama_CSGO_Rosetta_Item_Count"			"Sisa: {d:item_count}"
+		"Panorama_Attrib_SpraysHint"					"{s:bind_attack} Untuk Menyemprot Grafiti"
+		"Panorama_Attrib_SpraysHint_Auto"			"Lepas <b>{s:bind_spray_menu}</b> Untuk Menyemprot Grafiti"
+
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	RETICLE PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_HUD_weaponid_swap"			"<font color=\"#6a6156\">[{s:bind_use}] Tukar untuk</font> <font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+		"Panorama_HUD_weaponid_pickup"			"<font color=\"#6a6156\">[{s:bind_use}] Ambil</font> <font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+		"Panorama_HUD_weaponid_lookat"			"<font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+		"Panorama_HUD_weaponid_holdtopickup"	"<font color=\"#6a6156\">Tahan [{s:bind_use}] untuk mengambil</font> <font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+
+		"Panorama_HUD_playerid_sameteam"			"<font color='#6E7D5C'>Teman: {g:player_name:html:player_slot} Health: {d:player_health}%</font>"
+		"Panorama_HUD_playerid_diffteam"			"<font color='#CC0000'>Musuh: {g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_playerid_specteam"			"<font color='#6E7D5C'>{g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_playerid_noteam"			"<font color='#FFCC00'>{g:player_name:html:player_slot} Health:{d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_shadow"		"{g:player_name:player_slot}"
+
+		"Panorama_HUD_playerid_survival_enemy"				"<font color='#CC0000'>Musuh</font>"
+		"Panorama_HUD_playerid_survival_hunter_target"		"<font color='#e58816'>Target Bernilai Tinggi</font>"
+
+		"Panorama_HUD_botid_request_bomb"		"<font color='#e5da25'>[{s:bind_use}] Ambil Bom</font>"
+
+		"Panorama_HUD_hostageid_nh"				"<font color='#e5da25'>Sandera</font>"
+		"Panorama_HUD_hostagename_nh"			"<font color='#e5da25'>{g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_hostageid_nh_use_lead"		"<font color='#e5da25'>[{s:bind_use}] Bawa Sandera</font>"
+		"Panorama_HUD_hostageid_nh_following"	"<font color='#e5da25'>Sandera (Mengikuti {g:player_name:html:player_slot})</font>"
+
+		"Panorama_HUD_hostageid"					"<font color='#e5da25'>Sandera</font><font color='#dcdac0'> {d:player_health}%</font>"
+		"Panorama_HUD_hostageid_use_lead"		"<font color='#e5da25'>[{s:bind_use}] Bawa Sandera</font><font color='#dcdac0'> {d:player_health}%</font>"
+		"Panorama_HUD_hostageid_following"		"<font color='#e5da25'>Sandera (Mengikuti {s:player_name})</font><font color='#dcdac0'> {d:player_health}%</font>"
+
+
+		"Panorama_HUD_playerid_overhead_health"			"{d:player_health}%"
+		"Panorama_HUD_playerid_overhead_money"			"${d:r:player_money}"
+
+		"Panorama_HUD_playerid_overhead_survival"					"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#00c3e1'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_lowhealth"			"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#d82429'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_money"				"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#7ebc50'> ${d:r:player_money}</font>"
+		"Panorama_HUD_playerid_overhead_survival_grey"				"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#dddddd'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_lowhealth_grey"	"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#d82429'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_money_grey"		"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#7ebc50'> ${d:r:player_money}</font>"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	DEATH PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_SurvivalEndOfMatch_ShowStats"			"[{s:bind_jump}] Tampilkan Statistik Pertandingan"
+		"Panorama_Death_Cancel_Start_Replay"			"[{s:bind_jump}] Lewati"
+		"Panorama_Death_Cancel_Replay" 				"[{s:bind_jump}] Batalkan Replay"
+		"Panorama_Death_Snapshot"						"[{s:bind_jpeg}] Simpan peristiwa ini"
+		"Panorama_HUD_Spectate_Navigation_Replay_Death"	"<font color='#ddbb22'><b>[{s:bind_reload}] Killer Replay</b></font>"
+
+		"Panorama_DeathPanel_Killer1_YourWeapon"			"membunuhmu dengan {s:weapon_name} milikmu"
+		"Panorama_DeathPanel_Killer1_KillerWeapon"			"membunuhmu dengan {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_OthersWeapon"			"membunuhmu dengan <font color='#adadad'>{s:other_player_name}</font>{s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_Weapon"				"membunuhmu dengan {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_Weapon_Plural" 		"membunuhmu dengan {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_Weapon_CustomString" 	"{s:weapon_name}"
+
+		"Panorama_DeathPanel_DamageTaken:f"					"<font color='#A0A0A0'>Damage diterima:  </font><font color='#FFFFFF'><b>{d:damage_taken}</b></font> <font color='#A0A0A0'> dalam</font> <font color='#FFFFFF'><b>{d:hits_taken} hit </b></font>"
+		"Panorama_DeathPanel_DamageGiven:f"					"<font color='#A0A0A0'>Damage diberikan:  </font><font color='#FFFFFF'><b>{d:damage_given}</b></font> <font color='#A0A0A0'> dalam</font> <font color='#FFFFFF'><b>{d:hits_given} hit </b></font>"
+
+		/////////////////////////////////////////////////////////////////
+		//
+		//      CHATWHEEL OPTIONS
+		//
+		////////////////////////////////////////////////////////////
+
+		"Chatwheel_segment_top"	"Atas"
+		"Chatwheel_segment_topright"	"Kanan Atas"
+		"Chatwheel_segment_right"	"Kanan"
+		"Chatwheel_segment_bottomright"	"Kanan Bawah"
+		"Chatwheel_segment_bottom"	"Bawah"
+		"Chatwheel_segment_bottomleft"	"Kiri Bawah"
+		"Chatwheel_segment_left"	"Kiri"
+		"Chatwheel_segment_topleft"	"Kiri Atas"
+
+		"Chatwheel_ping_on_cooldown"  "Tidak bisa ping. Ping sedang dalam cooldown."
+
+		"Chatwheel_plant"	"Pasang bom"
+		"Chatwheel_sitea"	"Ping Site A"
+		"Chatwheel_siteb"	"Ping Site B"
+
+		"Chatwheel_section_move"	"Bergerak"
+		"Chatwheel_sticktogether"	"Tetap bersama"
+		"Chatwheel_followme"	"Ikuti aku"
+		"Chatwheel_followingyou"	"Mengikutimu"
+		"Chatwheel_spreadout"	"Berpencar"
+		"Chatwheel_fallback"	"Mundur"
+		"Chatwheel_gogogo"	"Go go go!"
+		"Chatwheel_onmyway"	"Dalam perjalanan"
+		"Chatwheel_gethostage"	"Periksa Sandera"
+		"Chatwheel_quiet"	"Jangan berisik"
+
+		"Chatwheel_section_prepare"	"Bersiap-siap"
+		"Chatwheel_requestecoround"	"Kita harus menghemat"
+		"Chatwheel_requestspend"	"Kita harus membeli"
+		"Chatwheel_requestleader"	"Siapa yang memimpin?"
+		"Chatwheel_requestweapon"	"Meminta senjata"
+		"Chatwheel_requestplan"		"Apa rencananya?"
+		"Chatwheel_aplan"	"Ping Site A"
+		"Chatwheel_bplan"	"Ping Site B"
+		"Chatwheel_midplan"	"Ping Middle"
+
+		"Chatwheel_section_grenades"	"Granat"
+		"Chatwheel_decoy"	"Butuh Umpan"
+		"Chatwheel_smoke"	"Butuh Smoke"
+		"Chatwheel_grenade"	"Butuh Granat Serpihan"
+		"Chatwheel_fire"	"Butuh Molotov"
+		"Chatwheel_flashbang"	"Butuh Granat Kejut"
+		
+		"Chatwheel_section_defend"	"Bertahan"
+		"Chatwheel_coverme"	"Lindungi aku"
+		"Chatwheel_coveringyou"	"Aku melindungimu"
+		"Chatwheel_help"	"Tolong"
+		"Chatwheel_needbackup"	"Perlu Bantuan"
+		"Chatwheel_holdposition"	"Tahan Posisi"
+        "Chatwheel_rotatetome"	"Tukar tempat denganku"
+
+		"Chatwheel_section_bomb"	"Status Bom"
+		"Chatwheel_guardingbomb"	"Melindungi Bom"
+		"Chatwheel_bombsiteclear"	"Bombsite aman"
+		"Chatwheel_droppedbomb"	"Bom terjatuh"
+		"Chatwheel_bombpickedup"	"Bom diambil"
+		"Chatwheel_ifixbomb"	"Aku yang urus bom"
+		"Chatwheel_youfixbomb"	"Kamu yang urus bom"
+		
+		"Chatwheel_bombat"	"Ping Bom" 
+
+		"Chatwheel_section_enemystatus"	"Status Musuh"
+		"Chatwheel_heardnoise"	"Ada suara" 
+		"Chatwheel_enemyspotted"	"Musuh terlihat"
+		"Chatwheel_sectorclear"	"Area aman"
+		"Chatwheel_sniperspotted"	"Sniper terlihat"
+		"Chatwheel_bombcarrierspotted"	"Pembawa bom terlihat"
+		"Chatwheel_threeleft"	"Sisa Tiga"
+		"Chatwheel_twoleft"	"Sisa Dua"
+		"Chatwheel_oneleft"	"Sisa Satu"
+		"Chatwheel_oneenemyhere"  "Ada satu musuh di sini"
+		"Chatwheel_multipleenemieshere"  "Ada beberapa musuh di sini"
+		"Chatwheel_ihavethebomb"  "Bom diambil"
+
+		"Chatwheel_section_enemykilled"	"Musuh Terbunuh"
+		"Chatwheel_gotheadshot"	"Aku dapat headshot"
+		"Chatwheel_ikilledsniper"	"Aku membunuh sniper"
+		"Chatwheel_wekilledsniper"	"Kami membunuh sniper"
+		"Chatwheel_sawheadshot"	"Melihat headshot-mu"
+
+		"Chatwheel_section_combatstatus"	"Status Pertarungan"
+		"Chatwheel_attacking"	"Menyerang"
+		"Chatwheel_inposition"	"Dalam posisi"
+		"Chatwheel_covering"	"Melindungi"
+		"Chatwheel_pinned"	"Aku terjebak"
+		"Chatwheel_incombat"	"Dalam pertarungan"
+		"Chatwheel_friendlyfire"	"Friendly fire"
+		"Chatwheel_lastunitalive"	"Unit terakhir yang masih hidup"
+
+		"Chatwheel_section_responses"	"Tanggapan"
+		"Chatwheel_wewon"	"Kita menang"
+		"Chatwheel_welost"	"Kita kalah"
+		"Chatwheel_wearewinning"	"Kita menang"
+		"Chatwheel_lostround"	"Kalah di ronde ini"
+		"Chatwheel_thanks"	"Terima kasih!"
+		"Chatwheel_sorry"	"Maaf"
+		"Chatwheel_compliment"	"Bagus!"
+		"Chatwheel_affirmative"	"Ya"
+		"Chatwheel_negative"	"Tidak"
+		"Chatwheel_peptalk"	"Motivasi"
+		"Chatwheel_cheer"	"Semangat"
+
+		"Chatwheel_plantingata"	"Memasang di A"
+		"Chatwheel_plantingatb"	"Memasang di B"
+		"Chatwheel_plantedata"	"Terpasang di A"
+		"Chatwheel_plantedatb"	"Terpasang di B"
+		"Chatwheel_planted"	"Bom terpasang"
+
+		"Chatwheel_seehostagestaken"	"Sandera sedang dibawa"
+		"Chatwheel_requestgethostages"	"Selamatkan sandera"
+
+		"Chatwheel_guardinga"	"Menjaga A"
+		"Chatwheel_guardingb"	"Menjaga B"
+		
+
+		
+		"Chatwheel_section_command"	"Perintah"
+		"Chatwheel_section_report"	"Laporan"
+
+		"Chatwheel_description" "Chatwheel menyediakan akses cepat ke daftar perintah radio yang berguna dan dapat disesuaikan."
+
+		////
+		//
+		// Volatile Laptop
+		//
+		////
+
+		// ---------------------------------------------------------------------------------------------
+		"laptop_window_collection_title"			"XP KATALOG KOLEKSI"
+		"laptop_window_expiration_title"			"KEDALUWARSA"
+		"laptop_window_seal_title"					"STATUS"
+		"laptop_window_messages_title"				"OBROLAN - PEDANGANG SENJATA"
+		"laptop_window_currentoffer_title"			"PENAWARAN SAAT INI"
+		"laptop_app_title"							"<span class=\"laptop-app-title-prefix\">UP-</span>Link"
+		"laptop_app_version"						"v 1.1.0.2000"
+
+		"dealer_offer_attachment_title"							"{s:item-name}"
+		"dealer_offer_attachment_wear"							"{s:item-rarity}"
+		"dealer_offer_attachment_remaining_title"				"PENAWARAN #{d:offer-total}"
+		"dealer_offer_attachment_remaining"						"Penawaran #{d:offer-total}"
+		"dealer_offer_received_count"							"<b>{s:offer-count}</b> Penawaran"
+		"dealer_offer_attachment_final_title"					"PENAWARAN TERAKHIR"
+		"dealer_offer_attachment_final"							"{s:offer-count} dan Penawaran Terakhir"
+		"dealer_offer_attachment_status"						"Penawaran - {s:offer-status}"
+		"dealer_offer_attachment_status-active"					"<b><span class=\"offer-active\">Aktif</span></b>"
+		"dealer_offer_attachment_status-price"					"<b><span class=\"offer-active\">{s:offer-price}</span></b>"
+		"dealer_offer_attachment_status-declined-price"			"{s:offer-price}"
+		"dealer_offer_attachment_status-declined"				"<span class=\"offer-declined\">{s:offer-count} Penawaran - Ditolak</span>"
+
+		"user_btn_purchase_desc_purchase"		"Tahan untuk membeli item ini. Setelah dibeli, Terminal akan dibuang."
+		"user_btn_purchase_desc_continue"		"Tahan untuk menolak penawaran ini secara permanen dan melihat yang berikutnya."
+		"user_btn_purchase_desc_end"		"Tolak penawaran terakhir dan buang Terminal ini."
+		"user_btn_purchase_title"			"{s:offer-count} - Penawaran"
+		"user_btn_purchase_final_title"		"<b>Penawaran Akhir</b>"
+		"user_btn_decline_desc"				"Tolak penawaran ini dan lihat yang lain"
+		"user_btn_accept"		"Terima Penawaran <b>{s:price}</b>"
+		"user_btn_accept_final"	"Terima Penawaran Terakhir <b>{s:price}</b>"
+		"user_btn_accept_0"		"Oke. <b>{s:price} tidak masalah.</b>"
+		"user_btn_accept_1"		"Aku setuju - <b>{s:price}</b>"
+		"user_btn_accept_2"		"<b>{s:price}</b> boleh juga"
+		"user_btn_accept_3"		"Aku terima <b>{s:price}</b>"
+		"user_btn_accept_4"		"<b>{s:price}</b> tidak bisa ditolak"
+		"user_btn_accept_5"		"Bagus juga — <b>{s:price}</b>"
+		"user_btn_next"			"Tolak Penawaran"
+		"user_btn_next_0"		"Menarik, tapi tidak"
+		"user_btn_next_1"		"Ini kurang oke"
+		"user_btn_next_2"		"Tidak bisa"
+		"user_btn_next_3"		"Lewat"
+		"user_btn_next_4"		"Tidak mau"
+		"user_btn_next_5"		"Terima kasih, tapi tidak"
+		"user_btn_next_6"		"Tidak sekarang"
+		"user_btn_next_7"		"Tidak hari ini"
+		"user_btn_pause"		"Jeda Penawaran"
+		"user_btn_end"			"Tolak Penawaran Terakhir"
+
+		"user_message_limit_0"		"Aku sanggup maksimum <b>{s:limit-setting}</b>."
+		"user_message_limit_1"		"Bagaimana kalau <b>{s:limit-setting}</b> jadi batas tertingginya?"
+		"user_message_limit_2"		"Sampai <b>{s:limit-setting}</b> tidak masalah bagiku."
+		"user_message_limit_3"		"Maksimum <b>{s:limit-setting}</b> masih oke."
+		"user_message_limit_unlimited_0"	"<b>Tidak ada batas maksimum</b>. Aku mau lihat semuanya."
+		"user_message_limit_unlimited_1"	"<b>Cek blanko</b>. Jangan khawatir soal uang."
+		"user_message_limit_unlimited_2"	"Aku di sini untuk membeli. <b>Perlihatkan semuanya</b>."
+		"user_message_limit_unlimited_3"	"Asalkan bisa menembak dengan baik, aku tertarik.<b>Tidak ada batasan</b>."
+		"user_message_limit_unlimited_4"	"Uang bukan masalah"
+		"offer_limit_setting"		"Batas Harga: {s:limit}"
+		"offer_limit_setting_interface"		"Batas Harga: {s:limit} <img src='file://{images}/icons/ui/expand.svg' class='expand-icon'/>"
+
+		"dealer_offer_Unknown"							"-"
+		"dealer_offer_1"								"Ke-1"
+		"dealer_offer_2"								"Ke-2"
+		"dealer_offer_3"								"Ke-3"
+		"dealer_offer_4"								"Ke-4"
+		"dealer_offer_5"								"Ke-5"
+		"dealer_offer_6"								"Ke-6"
+		"dealer_offer_7"								"Ke-7"
+		"dealer_offer_8"								"Ke-8"
+		"dealer_offer_9"								"Ke-9"
+		"dealer_offer_10"								"Ke-10"
+
+		"current_offer_tooltip"		"Penawaran Terkini dari Pedagang Senjata."
+		"declined_offer_tooltip"	"Penawaran ditolak"
+		"future_offer_tooltip"		"Penawaran belum diperlihatkan."
+		"laptop_expiration_tooltip"		"Sisa waktu sampai Terminal Uplink ini dan penawarannya kedaluwarsa."
+		"laptop_max_offer_tooltip"		"Atur Batas Harga Maksimum. Kamu hanya akan menerima penawaran di bawah batas tersebut. Kamu bisa mengubahnya kapan saja."
+		"collection_xp_tooltip"			"Dapatkan XP dengan melihat penawaran dalam koleksi ini. Buka untuk melihat progres dan menebus XP."
+		"terminal_offer_limit_tooltip"		"Perbarui batas harga maksimum. Penjual Senjata hanya akan memberikan penawaran sampai batas tersebut."
+		"popup_lootlist_title"			"XP Katalog Koleksi"
+		"popup_lootlist_desc"			"Dapatkan XP dengan melihat penawaran dalam koleksi ini"
+
+		"popup_lootlist_progress:f"      "Telah melihat {d:seen}/{d:total} penawaran"
+		"popup_lootlist_claim_xp"		"Dapatkan Bonus XP"
+		"popup_lootlist_claim_ww"		"Mengeklaim XP..."
+		"popup_lootlist_claim_ok"		"✔ XP Diklaim"
+		"popup_vpn_status_connected"	"Status: Terhubung ke jaringan aman"
+		"popup_vpn_status_disconnected"	"Status: Terputus"
+		"popup_signal_full" 			"Sinyal Penuh"
+		"popup_signal_ok" 				"Sinyal Kuat"
+		"popup_offer_limit_desc"		"Perbarui batas harga maksimum untuk semua tawaran selanjutnya"
+		"laptop_battery_tooltip" 		"Daya Baterai: {d:percent}%"
+		"laptop_original_seal_tooltip" 	"Item apa pun yang dibeli dari Terminal Uplink ini akan dilengkapi dengan Sertifikat Pemilik Asli, yang berlaku selama kamu menjadi pemiliknya."
+		"laptop_zoom_tooltip" 			"Gulir roda mouse untuk memperbesar dan memperkecil"
+		"laptop_pan_tooltip" 			"Tahan tombol \"SHIFT\" dan seret untuk menggeser kamera"
+		"laptop_pricing_tooltip"		"Harga bersifat global dan disesuaikan secara otomatis berdasarkan permintaan terhadap setiap item dalam koleksi ini."
+
+		"dealer_message_set_offer_limit_0"		"Pertama-tama, berapa banyak uangmu yang bisa dibelanjakan?"
+		"dealer_message_set_offer_limit_1"		"Ayo kita singkirkan ini. <!--.25--> Berapa batasnya?"
+		"dealer_message_set_offer_limit_2"		"Sebelum kita mulai...<!--.25--> Berapa batasnya? Berapa banyak uangmu yang bisa dibelanjakan?"
+		
+		"dealer_message_start_0"  	"Semuanya sudah dinegosiasikan dengan klien.<!--.25-->Aku punya semua yang kau butuhkan. Tidak perlu dokumen."
+		"dealer_message_start_1"  	"Aku menerima kiriman dari pasar gelap, tanpa dokumen.<!--.25-->Jangan khawatir, tidak ada yang tahu tentang senjata-senjata ini. Sudah tidak beredar selama bertahun-tahun dan tidak ada yang mencarinya.<!--.25-->Senjata ini juga masih bisa menembak dengan baik, kalau itu yang jadi pertanyaanmu."
+		"dealer_message_start_2"  	"Petugas bea cukai di Ahradan menyita kirimanku pagi ini. Aku mencoba mendapatkan simpati mereka dengan mengarang cerita yang tidak masuk akal tentang membawa peralatan medis untuk orang-orang yang sekarat... <!--.25-->Mereka tidak terkesan dengan cerita itu, tapi lain halnya dengan sebuah koper yang penuh uang.<!--.25-->Bagaimana kalau kita lihat mesin dialisis ini sebelum aku memberikannya kepada anak-anak yatim."
+		"dealer_message_start_3"  	"Baru saja terjadi pergantian rezim di salah satu negara \"-stan\".<!--.25-->Sementara tentara sibuk mengurus hal itu, aku menyelinap ke gudang mereka untuk melihat-lihat.<!--.25-->Aku hanya menjual barang-barang yang tidak dapat dilacak. Coba kau lihat sendiri."
+		"dealer_message_start_4"  	"Barang-barang yang aku punya hari ini semuanya bersih<!--.25-->Sejauh yang diketahui siapa pun, tanganmu adalah yang pertama menyentuhnya."
+		"dealer_message_start_5"  	"Senjata-senjata ini tidak memiliki nomor seri dan tidak bisa dilacak, sempurna!<!--.25-->Pengadilan militer mungkin akan menggunakannya sebagai barang bukti.<!--.25-->Meski begitu, kita berdua tahu bahwa ini adalah mahakarya sejati."
+		"dealer_message_start_6"  	"Seluruh kiriman ini adalah senjata eksotis dari unit parade.<!--.25-->Sering dipakai untuk parade. Tidak pernah dipakai untuk menembak."
+		"dealer_message_start_7"  	"Klienku yang lain selalu ingin tahu asal muasal senjata yang kujual. Aku benci itu.<!--.25-->Kalau kau, hanya ingin tahu apakah itu barang yang terbaik di pasaran.<!--.25-->Mau tahu jawabannya? Tentu saja iya."
+		"dealer_message_start_8"  	"Ada perjanjian damai di Drosvik. Aku cinta damai.<!--.25-->Karena aku kenal seorang jenderal yang punya banyak utang dan gudang senjata yang berdebu.<!--.25-->Maksudku...<!--.25-->tentu saja karena damai itu hal yang baik. Nyawa orang tak berdosa dan sebagainya...<!--.25-->Ah, bicara apa aku, kau tidak peduli tentang itu."
+		"dealer_message_start_9"  	"Muatan ini berisi berbagai senjata eksotis yang berasal dari pasar gelap.<!--.25-->Kalibernya unik, bukan untuk amatir. Kau pasti suka."
+		"dealer_message_start_10"  	"Ini memalukan.<!--.25-->Sepertinya aku salah memberi label untuk peti yang ada di dalam daftar muatanku.<!--.25-->Yah, ada beberapa lusin peti.<!--.25-->Bantu aku menghilangkan inventaris ini sebelum otoritas pelabuhan mulai menyelidikinya."
+		"dealer_message_start_11"  	"Seorang inspektur di Drosvik ingin tahu apakah aku bersedia menyuapnya untuk yang satu ini. Si idiot itu mulai bicara tentang perintah penyitaan.<!--.25-->Aku kenal beberapa orang di Drosvik yang tahu cara menghadapi orang-orang yang banyak bicara. Dia tidak bisa bicara apa-apa lagi sekarang.<!--.25-->Dan untungnya, aku tidak perlu banyak bicara soal senjata bagus ini."
+		"dealer_message_start_12"  	"Aku harus menyuap setiap orang di Ahradan agar bisa membawa kiriman ini melewati perbatasan.<!--.25-->Mereka juga hanya bisa disuap dengan mata uang ahri. Apa kau tahu ada berapa dokumen yang harus dikerjakan untuk bisa menyuap menggunakan mata uang tak berharga seperti itu? Mereka perlu melakukan sesuatu untuk memperbaiki ekonomi mereka."
+		"dealer_message_start_13"	"Aku punya perantara yang ingin barang-barang ini dikirim secepatnya.<!--.25-->Hanya itu yang dia katakan: \"Cepat\".<!--.25-->Dan \"sangat, sangat\".<!--.25-->Kurang lebih begini: Kalau kau tidak penasaran mengapa dia berjualan, kau akan sangat, sangat senang."
+		"dealer_message_start_14"	"Aku punya model lama hari ini<!--.25-->Apakah semuanya trendi? Tidak. Tapi bisa diandalkan.<!--.25-->Cucu-cucumu akan tetap menembak orang dengan itu."
+		"dealer_message_start_15"	"Milisi pemberontak membebaskan senjata ini dari gudang senjata Pemimpin Agung.<!--.25-->Selain itu, sepertinya mereka juga membebaskan kepala dan anggota tubuh si Pemimpin Agung itu dari tubuhnya.<!--.25-->(Ini bukan jenis barang yang biasa kujual, tapi aku kenal seseorang yang bisa membantumu jika kau mau membelinya.)"
+		"dealer_message_start_16"	"Kepala perbatasan Drosvik mengancam akan menyita kiriman ini.<!--.25-->Sepertinya dia tidak mendengar kalau aku tidak melakukan penyuapan di Drosvik, apalagi membayar penduduk setempat yang jago kickboxing jatuhnya lebih murah.<!--.25-->Akhirnya, penggantinya kehilangan perintah penyitaan itu. Dan lengannya tidak patah."
+		"dealer_message_start_17"	"Ini semua dari koleksi pribadi seorang biliuner.<!--.25-->Mantan biliuner, tepatnya. Dia sedang diselidiki, yang berarti aku akan mengambil apa yang dia tidak bisa ambil.<!--.25-->Jujur saja, senjata ini lebih berguna di tanganmu daripada tergantung di dinding kapal pesiar."
+		"dealer_message_start_18"	"Inspektur dermaga menemukan adanya ketidaksesuaian pada pengiriman ini.<!--.25-->Lucunya, satu peti berisi senapan beratnya sama persis dengan satu peti berisi \"komponen traktor\" setelah ditambahkan tepat sepuluh ribu dolar ke timbangannya.<!--.25-->Sekarang, mari kita lihat komponen-komponen traktor ini."
+		"dealer_message_start_19"	"Barang-barang yang kubawa hari ini melewati kudeta dulu untuk sampai kepadamu.<!--.25-->Agak lecet, tapi berfungsi dengan sempurna. Itu yang penting, kan?"
+		"dealer_message_start_20"	"Beberapa republikan di suatu tempat baru saja menyingkirkan presidennya.<!--.25-->Untungnya, aku mewarisi rantai pasokannya."
+		"dealer_message_start_21"	"Sebut saja itu kesalahan prosedur. Ketidaksesuaian dokumen. Kesalahan yang biasa saja.<!--.25-->Kesalahan memang biasa terjadi, kan. Aku hanya mencoba membantu teman agar dia tidak kehilangan posisinya sebagai sersan logistik.<!--.25-->Semua ini harus disingkirkan."
+		"dealer_message_start_22"	"Seorang kepala bea cukai mengira dia bisa menekanku soal ini. Jadi, aku meminta serikat pekerja pelabuhan untuk menekan lebih keras lagi.<!--.25-->Lucunya, birokrasi jadi tidak terlalu merepotkan ketika semua orang sibuk mencari orang hilang.<!--.25-->Semoga mereka bisa menemukannya. Kurasa dia tidak bisa berenang."
+		"dealer_message_start_23"	"Penjaga perbatasan di Ahradan bilang dokumennya tidak cocok. Jadi kuberikan dia setumpuk ahri dan tiba-tiba saja dokumennya jadi cocok.<!--.25-->Aku bahkan tidak tahu berapa banyak sepuluh ribu ahri itu sebenarnya. Mungkin enam dolar.<!--.25-->Jadi, kau mau lihat senjata gaib?"
+		"dealer_message_start_24"	"Aku kenal seorang jenderal yang sangat ingin membeli barang ini, tapi si idiot itu pergi dan terkena ledakan oleh serangan drone.<!--.25-->Selalu tutup jendela, itu saja saranku. Pokoknya, ledakannya adalah keberuntunganmu."
+		"dealer_message_start_25"	"Pergantian rezim di Drosvik. Entah bagaimana bisa terjadi, tapi peti-peti senjata di gudang senjata mereka bisa hilang.<!--.25-->Dan tiba-tiba saja itu semua ada padaku. Gila, kan?<!--.25-->Ceritanya jadi lebih gila lagi. Entah bagaimana aku mungkin akan menjualnya. Kepadamu. Sekarang."
+		"dealer_message_start_26"	"Aku punya peti penuh barang dagangan yang salah dideklarasikan dan ingin kutunjukkan kepadamu.<!--.25-->Jangan tertipu dengan label \"peralatan pertanian\" di sini. Satu-satunya tanah yang akan kau gali adalah kuburanmu sendiri jika tidak menembak duluan."
+		"dealer_message_start_27"	"Aku benci bekerja dengan pemberontak. Itu hanya cara sopan untuk menyebut \"warga sipil\", yang juga cara sopan untuk menyebut \"amatir bodoh\".<!--.25-->Omong-omong, aku belum mendengar kabar dari mereka lagi, jadi aku akan memberi kesempatan kepada para profesional untuk mencoba senjata ini."
+		"dealer_message_start_28"	"Di selatan, di zona yang selalu panas, keruntuhan parlemen dua tahunan baru saja terjadi.<!--.25-->Sejumlah gudang senjata lokal dibuka seperti piñata."
+		"dealer_message_start_29"	"Jumat lalu, Inspektur Otoritas Pelabuhan menyebut pengiriman ini tidak wajar.<!--.25-->Pada hari Senin, tiba-tiba dia punya cukup uang untuk mengirim putrinya ke Stamwick, dan pengiriman ini kembali menjadi \"alat pertanian\" biasa.<!--.25-->Mau bilang apa aku, pendidikan itu penting, kan. Mari kita lihat beberapa contoh alat pertanian."
+
+		"dealer_message_resume_0"  	"<!--1-->Kau kembali. Bagus. Penawaran masih terbuka."
+		"dealer_message_resume_1"  	"<!--1-->Butuh waktu sebentar untuk berpikir? Tidak masalah."
+		"dealer_message_resume_2"  	"<!--1-->Sudah kuduga kau akan kembali."
+		"dealer_message_resume_3"  	"<!--1-->Ayo kita lanjutkan lagi."
+		"dealer_message_resume_4"  	"<!--1-->Siap untuk berbisnis?"
+		"dealer_message_resume_5"  	"<!--1-->Bagus. Kau kembali. Aku harus melepas ini atau orang yang salah akan mulai menginterogasiku."
+		"dealer_message_resume_6"  	"<!--1-->Kau kembali. Sampai mana kita?"
+
+		"dealer_message_first_offer_0"	"<!--.5-->Kalau kau tertarik silakan pasang harga."
+		"dealer_message_first_offer_1"	"<!--.5-->Asal kau tahu, ada orang lain juga yang berminat dengan yang ini."
+		"dealer_message_first_offer_2"	"<!--.5-->Kalau kau mau, ambillah. Kalau tidak, masih ada banyak pembeli lain yang tertarik."
+		"dealer_message_first_offer_3"	"<!--.5-->Ini bisa menjadi milikmu kalau kau mau. Kalau tidak, ya, kau yang rugi."
+		"dealer_message_first_offer_4"	"<!--.5-->Ambillah kalau kau mau. Aku tidak bisa terus-terusan menahan penawaran ini."
+		"dealer_message_first_offer_5"	"<!--.5-->Penawarannya sudah dibuka. Mau atau tidak?"
+		"dealer_message_first_offer_6"	"<!--.5-->Kau mau ini atau tidak? Aku tidak akan sakit hati jika kau menolak. Aku punya pembeli lain."
+		"dealer_message_first_offer_7"	"<!--.5-->Mau lanjut atau tidak?"
+		"dealer_message_first_offer_8"	"<!--.5-->Aku tidak punya waktu seharian."
+		"dealer_message_first_offer_9"	"<!--.5-->Mau berbisnis atau tidak?"	
+		"dealer_message_first_offer_10"	"<!--.5-->Aku tidak perlu memaksanmu untuk membelinya, ini akan terjual dengan sendirinya. Mau atau tidak?"		
+
+		"dealer_message_next_offer_0"	"<!--1-->Baiklah, yang itu tidak cocok untukmu. Bagaimana dengan ini?"
+		"dealer_message_next_offer_1"	"<!--1-->Rugi sekali. Untungnya aku sedang senang. Coba lihat yang ini."
+		"dealer_message_next_offer_2"	"<!--1-->Tidak mau? Penyesalan ditanggung sendiri, ya. Coba lihat yang ini."
+		"dealer_message_next_offer_3"	"<!--1-->Barang ini sangat laku. Kalau kau tidak mau beli, aku akan cari pembeli lain.<!--.5-->Tapi, karena kau sudah di sini, coba lihat, yang ini cocok dengan gayamu."
+		"dealer_message_next_offer_4"	"<!--1-->Aku mengerti. Bukan gayamu. Coba kita lihat, mungkin yang ini lebih cocok untukmu."
+		"dealer_message_next_offer_5"	"<!--1-->Sudah kuduga kau akan menolaknya. Untungnya, masih ada barang bagus yang lain."
+		"dealer_message_next_offer_6"	"<!--1-->Sudah kuduga. Coba lihat yang ini. Sepertinya ini lebih cocok untukmu."
+		"dealer_message_next_offer_7"	"<!--1-->Kau akan menyesal sudah menolaknya. Tidak masalah, sih. Bagaimana dengan yang ini?"
+		"dealer_message_next_offer_8"	"<!--1-->Aku sangat mengenalmu. Aku tahu kau akan menolak yang itu. Bagaimana dengan yang ini?"
+		"dealer_message_next_offer_9"	"<!--1-->Baiklah, kau tidak mau makanan pembuka. Bersiaplah untuk hidangan utama."
+		"dealer_message_next_offer_10"	"<!--1-->Aku mengerti, aku juga kurang suka yang itu. Ini, coba lihat yang satu ini."		
+		"dealer_message_next_offer_11"   "<!--1-->Yang sebelumnya mungkin terasa asing bagimu. Tapi, yang berikutnya pasti akan terasa familier."
+		"dealer_message_next_offer_12"   "<!--1-->Yang tadi masih banyak stoknya. Coba lihat yang satu ini."
+		"dealer_message_next_offer_13"   "<!--1-->Kau tahu? Sudah kuduga kau akan bilang itu. Ayo kita lanjut ke yang berikutnya."
+		"dealer_message_next_offer_14"   "<!--1-->Ternyata kau tidak cepat puas, ya. Apa yang ini menarik untukmu?"
+		"dealer_message_next_offer_15"   "<!--1-->Kau tidak melukai perasaanku. Bukan aku pembuatnya. Ini, ada pilihan lain."
+		"dealer_message_next_offer_16"   "<!--1-->Aku juga tidak akan mengambilnya, sih. Kalau yang ini? Pasti kau ambil, kan."
+		"dealer_message_next_offer_17"   "<!--1-->Tidak mau? Oke. Berikutnya."
+		"dealer_message_next_offer_18"   "<!--1-->Standarmu tinggi, ya. Tidak masalah. Yang berikutnya akan melampaui ekspektasimu."
+		"dealer_message_next_offer_19"   "<!--1-->Aku tidak akan membuang-buang uangmu, dan jangan buang-buang waktuku. Lihatlah ini."
+		"dealer_message_next_offer_20"   "<!--1-->Hei, aku menghargai kejujuranmu. Mari lanjutkan dan berhenti membuang-buang waktu."
+		"dealer_message_next_offer_21"   "<!--1-->Baiklah, kamu tidak cocok dengan yang itu. Untungnya aku menjual lebih dari satu senjata."
+		"dealer_message_next_offer_22"   "<!--1-->Tidak masalah. Masih banyak barang yang lain. Berikutnya."
+		"dealer_message_next_offer_23"   "<!--1-->Kukira yang tadi akan terjual. Bagaimana dengan yang ini?"
+		"dealer_message_next_offer_24"   "<!--1-->Oke. Kau tidak menyukainya. Tidak semuanya bisa membuatmu senang, tapi yang satu ini memanggilmu."
+		"dealer_message_next_offer_25"   "<!--1-->Tidak tertarik dengan yang tadi, ya. Mungkin yang ini bisa membuatmu tertarik."
+		"dealer_message_next_offer_26"   "<!--1-->Oke, cukup main-mainnya. Aku jamin kau pasti akan suka yang berikutnya. Mungkin."
+		"dealer_message_next_offer_27"   "<!--1-->Tidak suka yang itu, ya? Buatku saja kalau begitu. Bagaimana dengan yang ini?"
+		"dealer_message_next_offer_28"   "<!--1-->Seleramu tinggi, ya. Mari kita lihat apakah yang berikutnya bisa memenuhi standarmu."
+		"dealer_message_next_offer_29"   "<!--1-->Baiklah, yang tadi itu baru permulaan. Biar aku coba pilihkan yang lain."
+		"dealer_message_next_offer_30"   "<!--1-->Lupakan yang tadi. Inilah yang ingin kutunjukkan padamu."
+		"dealer_message_next_offer_31"   "<!--1-->Aku bisa lihat namamu di sini. Tidak secara harfiah. Ini bersih, kok."
+		"dealer_message_next_offer_32"   "<!--1-->Kau tidak bisa beli semuanya. Aku paham. Mungkin kau sedang menunggu sesuatu yang spesial. Seperti ini."
+		"dealer_message_next_offer_33"   "<!--1-->Yang tadi itu hanya latihan. Ini baru yang sesungguhnya."
+		"dealer_message_next_offer_34"   "<!--1-->Sudah kuduga. Tapi, coba yang ini. Yang ini mengingatkanku padamu."
+		"dealer_message_next_offer_35"   "<!--1-->Bisa dimengerti. Aku sudah menyiapkan yang ini untukmu."
+		"dealer_message_next_offer_36"   "<!--1-->Bukan tugasku untuk membuatmu menyukainya. Aku hanya mencoba menjualnya. Berikutnya."
+		"dealer_message_next_offer_37"   "<!--1-->Tidak masalah. Kurasa yang berikutnya akan cocok untukmu."
+		"dealer_message_next_offer_38"   "<!--1-->Kau memang pintar. Aku yakin kau tidak akan mengambilnya. Sini, kuperlihatkan yang lebih bagus."
+		"dealer_message_next_offer_39"   "<!--1-->Tidak masalah. Aku juga tidak akan mengambilnya. Nah, tapi, kalau yang ini..."
+		"dealer_message_next_offer_40"   "<!--1-->Mau membuatku jauh-jauh ke belakang untuk mencari barang-barang premium, ya? Baiklah."
+
+		"dealer_message_last_offer_0"	"<!--0-->Baiklah, ini penawaran terakhir. Ambil atau lupakan."
+		"dealer_message_last_offer_1"	"<!--0-->Anggap ini penawaran terakhirku."
+		"dealer_message_last_offer_2"	"<!--0-->Penawaran terakhir. Mau terima atau tidak? Jangan membuang waktuku."
+		"dealer_message_last_offer_3"	"<!--0-->Penawaran terakhir.<!--1-->Kalau kau tidak mau, sebaiknya mundur saja. Ini BAKAL meledak."
+		"dealer_message_last_offer_4"	"<!--0-->Penawaran terakhir. Aku tidak bercanda."
+		"dealer_message_last_offer_5"	"<!--0-->Baiklah, ini yang terbaik dariku."
+		"dealer_message_last_offer_6"	"<!--0-->Baiklah. Ini. Mau atau tidak?"		
+		"dealer_message_last_offer_7"	"<!--0-->Penawaran terbaik dan terakhir."
+		"dealer_message_last_offer_8"	"<!--0-->Baiklah, Ini yang terbaik yang bisa kuberikan."
+		"dealer_message_last_offer_9"	"<!--0-->Ini penawaran terbaik yang bisa kau dapatkan sebelum hilang."	
+
+		"dealer_message_end_0"			"<!--0-->Yah, hanya ini yang bisa kutawarkan. Kalau kau sedang memegang Terminal Uplink yang akan segera meledak itu, sebaiknya buang secepatnya. Dalam tiga... dua..."
+		"dealer_message_end_1"			"<!--0-->Aku yakin kau akan terbayang senjata yang baru saja kamu tolak saat kau tertembak nanti."
+		"dealer_message_end_2"			"<!--0-->Aku tidak akan memohon padamu untuk mengambilnya. Semoga kau tidak sedang berpikir akan mendapatkan Terminal Uplink gratis nantinya."
+		"dealer_message_end_3"			"<!--0-->Keputusanmu. Urusanmu. Akhir darimu, mungkin.<!--1-->Menjauhlah dari Terminal Uplink yang akan meledak ini, kalau bisa."
+
+		"dealer_message_timerexpired_0"		"<!--.1-->Baiklah, lupakan saja."
+		"dealer_message_timerexpired_1"		"<!--.1-->Lupakan saja<!--.5-->Kau menyia-nyiakan kesempatanmu."
+		"dealer_message_timerexpired_2"		"<!--.1-->Tidak ada penawaran lagi.<!--.5-->Aku punya urusan lain."
+		"dealer_message_timerexpired_3"		"<!--.1-->Ya, sudah, aku akan temukan pembeli lain<!--.5-->Kita sudah selesai."
+		"dealer_message_timerexpired_4"		"<!--.1-->Terserah kau saja<!--.5-->Sampai nanti."
+		"dealer_message_timerexpired_5"		"<!--.1-->Tik tok.<!--.5-->Waktunya habis."
+		"dealer_message_timerexpired_6"		"<!--.1-->Tidak ada penawaran lagi.<!--.5-->Aku bisa menjualnya sepuluh kali lipat di tempat lain."
+		"dealer_message_timerexpired_7"		"<!--.1-->Kupikir aku bisa membantumu menyingkirkan musuhmu.<!--.5-->Pada akhirnya, kau hanya membuang-buang waktuku."
+		"dealer_message_timerexpired_8"		"<!--.1-->Tidak ada penawaran lagi."	
+		"dealer_message_timerexpired_9"		"<!--.1-->Waktumu habis."
+		"dealer_message_timerexpired_10"	"<!--.1-->Baiklah, aku sudah bosan. Kita selesai di sini."		
+
+		"dealer_message_open_check_out_0"		"<!--.5-->Yang ini benar-benar sesuai gayamu, makanya aku langsung menawarkanmu. Ayo kita sepakati ini."
+		"dealer_message_open_check_out_1"		"<!--.5-->Keputusan yang bagus. Akan kupastikan itu dikemas dengan rapi."
+		"dealer_message_open_check_out_2"		"<!--.5-->Kau tidak akan menyesalinya. Meskipun aku yakin seseorang akan menyesalinya."
+		"dealer_message_open_check_out_3"		"<!--.5-->Aku tahu kau akan membelinya. Ayo kita resmikan."
+		"dealer_message_open_check_out_4"		"<!--.5-->Sempurna. Mari kita selesaikan."		
+		"dealer_message_open_check_out_5"		"<!--.5-->Pilihan bagus."	
+		"dealer_message_open_check_out_6"		"<!--.5-->Pilihan tercerdas yang pernah kau buat. Ayo kita selesaikan."		
+		"dealer_message_open_check_out_7"		"<!--.5-->Bagus. Ayo kita resmikan."
+
+		"dealer_message_txn_xld_bailout_0"		"<!--.5-->Tidak usah buru-buru. Kau tahu di mana aku."
+		"dealer_message_txn_xld_bailout_1"		"<!--.5-->Aku tidak akan ke mana-mana."
+		"dealer_message_txn_xld_bailout_2"		"<!--.5-->Aku akan membiarkan penawaran ini tetap terbuka untuk sekarang."
+		"dealer_message_txn_xld_bailout_3"		"<!--.5-->Kau akan kembali. Pikirkan saja dulu."
+
+		"dealer_message_purchase_finalizing_0"	"Menyelesaikan pembayaran..."
+		"dealer_message_purchase_confirm_0"		"<!--.5-->Jadi terima, ya"
+
+		"dealer_message_stattrack_0"			"Tentu saja sudah dengan StatTrak™."
+		"dealer_message_stattrack_1"			"Si manis ini juga sudah dilengkapi dengan StatTrak™."
+		"dealer_message_stattrack_2"			"Dilengkapi dengan StatTrak™. Jadi praktis untukmu."
+		"dealer_message_stattrack_3"			"Sudah dilengkapi dengan StatTrak™. Kau tinggal tarik pelatuknya, sistem yang catat datanya."
+		"dealer_message_stattrack_4"			"StatTrak™. Anggap saja seperti papan skor. Untuk olahraga di mana kau membunuh orang."
+		"dealer_message_stattrack_6"			"Sudah termasuk StatTrak™, untuk para profesional yang menyukai pembunuhan DAN statistik."
+		"dealer_message_stattrack_7"			"Tentu saja sudah dilengkapi StatTrak™."
+		"dealer_message_factory_new_0"			"Ini masih baru. Percayalah, coba saja kau endus."
+		"dealer_message_factory_new_1"			"Baru keluar dari pabrik. Masih ada bau senjata barunya."
+		"dealer_message_factory_new_2"			"Meterannya masih nol. Kau akan jadi orang pertama yang menarik pelatuknya."
+		"dealer_message_factory_new_3"			"Langsung dari pabrik, tanpa lecet. Persis seperti yang kau suka."
+		"dealer_message_factory_new_4"			"Yang ini bersih dan mulus. Tanpa goresan, tanpa cerita. Kaulah yang akan menulis ceritanya."
+		"dealer_message_factory_new_5"			"Baru dari pabrik, belum pernah dipakai menembak. Sangat mulus."
+		"dealer_message_covert_0"				"Tahu, tidak? Kau baru saja dapat jackpot. Yang ini bukan hanya langka, tapi juga tersembunyi."
+		"dealer_message_covert_1"				"Aku sudah melakukan ini selama satu dekade dan belum pernah melihat yang ini tergeletak begitu saja.<!--.5-->Kau punya selera yang bagus ... dan keberuntungan yang sangat baik."
+		"dealer_message_covert_2"				"Aku tahu pembeli yang akan rela menjual ibu mereka sendiri ke gulag demi mendapatkan itu. Kau memang pintar."
+		"dealer_message_covert_3"				"Wah. Kau jadi membuatku berpikir ulang. Cepat ambil ini sebelum aku menyesalinya."
+		"dealer_message_covert_4"				"Itu senjata tersembunyi. Kau mungkin bisa melihatnya di pasar hanya sekali seumur hidup, kalau beruntung.<!--.5-->Sepertinya kau memang beruntung."
+		"dealer_message_covert_5"				"Ini dia permatanya, tapi kau pasti sudah tahu itu. Aku pernah punya pembeli yang tertarik dengan ini setahun yang lalu, tapi dia berubah pikiran. Dia yang rugi, sih."
+		"dealer_message_covert_6"				"Langka sekali. Yang ini susah dicari, dan tiba-tiba ada di depan matamu."
+		"dealer_message_covert_7"				"Dengarkan kata orang yang mencari nafkah dengan menjual senjata ini. Ini sangat, sangat sulit ditemukan."
+		"dealer_message_covert_8"				"Semoga kau bangga dengan pilihanmu. Itu senjata tersembunyi. Kau baru saja mendapatkan sebuah unikorn."
+		"dealer_message_covert_9"				"Sebaiknya singkirkan benda itu dari pandanganku ke arsenalmu sebelum aku menyesali ini. Itu senjata terlangka dari yang langka."
+		"dealer_message_classified_0"				"Rahasia. Tidak terdaftar dan tanpa dokumen. Senjata ini tidak tercantum di mana pun."
+		"dealer_message_classified_1"				"Rahasia dan tanpa dokumen. Barang ini bersih dan tidak bisa dilacak."
+		"dealer_message_classified_2"				"Rahasia, tanpa dokumen, dan tidak tercatat di mana pun. Barang ini secara teknis tidak pernah ada."
+		"dealer_message_classified_3"				"Penjualan eksklusif. Rahasia. Semoga kau menyukainya."
+		"dealer_message_classified_4"				"Rahasia. Tanpa nomor seri, tak terdaftar di mana pun."
+		"dealer_message_classified_5"				"Rahasia. Hanya dijual melalui jalur belakang dan direset meterannya. Anggap saja aku belum pernah melihatnya."
+		"dealer_message_restricted_0"				"Terbatas. Komponen internal yang lebih baik, perakitan yang lebih presisi. Jelas lebih unggul daripada versi standar."
+		"dealer_message_restricted_1"				"Yang ini terbatas karena suatu alasan. Performanya sedikit terlalu bagus untuk warga sipil."
+		"dealer_message_restricted_2"				"Terbatas, tentu saja. Kelas III, Peringkat II, dan nomor satumu yang baru."
+		"dealer_message_battle_scarred_0"		"Ada beberapa penyok, tapi masih bisa menembak lurus."
+		"dealer_message_battle_scarred_1"		"Sedikit usang, tapi berarti sudah melalui berbagai keadaan dan berhasil melewatinya."
+		"dealer_message_battle_scarred_2"		"Diambil dari medan perang. Sudah pernah dipakai, tapi tetap tangguh."
+		"dealer_message_battle_scarred_3"		"Aku tidak menganggapnya usang. Aku menganggapnya teruji dalam pertempuran."
+		"dealer_message_battle_scarred_4"		"Yang ini sudah pernah dipakai. Ada sedikit goresan, tapi masih dapat diandalkan."
+		"dealer_message_minimal_wear_0"			"Yang ini baru dipakai sebentar. Ada satu atau dua goresan, tapi masih dapat digunakan dengan baik."
+		"dealer_message_minimal_wear_1"			"Kondisi baru. Yah, agak baru, lah. Baru dipakai sedikit."
+		"dealer_message_minimal_wear_2"			"Baru dipakai sebentar, dengan sedikit kerusakan, tapi tidak ada yang perlu dikhawatirkan."
+		"dealer_message_minimal_wear_3"			"Jarang dipakai. Sedikit baret, tapi kau tidak akan menyesal memasukkannya ke arsenalmu."
+		"dealer_message_minimal_wear_4"			"Jujur, yang ini sudah teruji dalam pertempuran. Bahkan bisa dianggap senjata veteran."
+		"dealer_message_usp-s_0"				"Yang ini tidak berisik. Patuh dan tenang."
+		"dealer_message_usp-s_1"				"Tenang dan aman dipakai. Ini akan jadi rahasia kecil kita."
+		"dealer_message_usp-s_2"				"Musuhmu akan merasakan pelurunya, tapi mereka tidak akan mendengarnya datang."
+		"dealer_message_usp-s_3"				"Yang ini sangat tenang."
+		"dealer_message_item_desc_0"			"<!--.25-->Yang ini ada catatannya:<!--.25-->{s:flavor-text}<!--.25-->Apa pun itu artinya."
+		"dealer_message_item_desc_1"			"<!--.25-->Yang ini disertai catatan kecil:<!--.25-->{s:flavor-text}"
+
+		"dealer_message_addition_stattrak_0"	"<!--.25-->...dan dilengkapi StatTrak™."
+		"dealer_message_addition_stattrak_1"	"<!--.25-->Modul StatTrak™ sudah terinstal."
+		"dealer_message_addition_stattrak_2"	"<!--.25-->Dilengkapi StatTrak™ untuk melacak semua kekacauan yang kau buat."
+		"dealer_message_addition_stattrak_3"	"<!--.25-->Ada StatTrak™-nya juga."
+		"dealer_message_addition_stattrak_4"	"<!--.25-->Ada StatTrak™-nya juga, jadi kau tidak akan pernah kehilangan jejak kesengsaraan yang kau buat."
+
+		"dealer_message_addition_factory_new_0"	"<!--.25-->Dan ini baru dari pabrik. Belum pernah dipakai menembak."
+		"dealer_message_addition_factory_new_1"	"<!--.25-->Dan ini baru dari pabrik. Masih mulus."
+		"dealer_message_addition_factory_new_2"	"<!--.25-->Baru, diambil langsung dari gudang."
+		"dealer_message_addition_factory_new_3"	"<!--.25-->Yang ini masih baru. Belum pernah ditembakkan."
+		
+		"dealer_message_limit_first_time_0"		"Baiklah, aku hanya akan memberikan penawaran sampai {s:limit}.<!--.25--> Ayo kita lihat apa yang kau butuhkan."
+		"dealer_message_limit_first_time_2"		"Hanya barang di bawah {s:limit}, ya.<!--.25--> Baiklah, ayo kita mulai."
+		"dealer_message_limit_first_time_3"		"Baiklah, sudah kucatat.<!--.25--> Ayo kita mulai."
+		"dealer_message_limit_first_time_unlimited_0"		"Tidak ada batas? Bagus sekali. Aku akan memperlihatkan katalog terbaru mulai sekarang.<!--.25--> Waktu terus berjalan, mari kita mulai."
+		"dealer_message_limit_first_time_unlimited_1"		"Tidak terbatas. Oke, sekarang kita bisa mulai serius.<!--.25--> Ayo lihat apa yang kau butuhkan."
+
+		"dealer_message_limit_0"				"Baiklah. Aku hanya akan memberikan penawaran sampai {s:limit}."
+		"dealer_message_limit_1"				"Hanya penawaran di bawah {s:limit}. Baiklah, aku akan mengingatnya."
+		"dealer_message_limit_2"				"Aku akan menyesuaikan parameternya dan hanya memberikan penawaran sampai {s:limit}."
+		"dealer_message_limit_3"				"Hanya penawaran dengan harga maksimum {s:limit}. Baiklah."
+		"dealer_message_limit_4"				"Aku hanya akan memperlihatkan barang dengan harga yang sesuai, maksimum {s:limit}."
+		"dealer_message_limit_5"				"Maksimum {s:limit}. Oke."
+		"dealer_message_limit_6"				"Baik. Mengatur ulang filter untuk memberikan penawaran dengan nilai maksimum {s:limit}."
+		"dealer_message_limit_unlimited_0"		"Tidak ada batas maksimum. Luar biasa. Aku akan memperlihatkan katalog terbaru mulai saat ini."
+		"dealer_message_limit_unlimited_1"		"Tidak terbatas? Oke. Jika ada item eksotis yang muncul, aku tidak akan ragu memperlihatkannya kepadamu."
+		"dealer_message_limit_unlimited_2"		"Senang mendengarnya. Jika aku mendapatkan barang yang menarik, aku tidak akan ragu memperlihatkannya kepadamu."
+		"dealer_message_limit_unlimited_3"		"Tidak terbatas. Baiklah. Sekarang kita bisa mulai serius."
+
+		"system_dealer_left_chat_0"				"Pedagang Senjata telah meninggalkan obrolan."
+		"system_dealer_join_chat_0"				"{s:collection} Penawaran Senjata.<!--1.25-->Pedagang Senjata Terhubung"
+		"system_user_reject_offer_0"			"{s:user-name} Menolak Penawaran."
+
+		"system_user_updated_offer_limit_0"			"Batas Harga Maksimum diperbarui menjadi {s:limit}. Kamu bisa mengubah pengaturan ini kapan saja."
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//Retakes
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		"GameUI_Retake_DefendA"					"Lindungi Site A!"
+		"GameUI_Retake_DefendB"					"Lindungi Site B!"
+		"GameUI_Retake_RetakeA"					"Kuasai Site A!"
+		"GameUI_Retake_RetakeB"					"Kuasai Site B!"
+		"GameUI_Retake_Notice_MvpCardAvailable"	"Selamat! Kartu Bonus MVP tersedia di ronde berikutnya!"
+		"GameUI_Retake_Card_CardsPreview"		"Pratinjau Kartu"
+		"GameUI_Retake_Card_AvailableCard"		"Pilih Perlengkapan Ini"
+		"GameUI_Retake_Card_AvailableCards"		"Pilih perlengkapan"
+
+		"GameUI_Retake_Card_Bonus"				"Bonus"
+		"GameUI_Retake_Card_Enemy"				"Perlengkapan Musuh"
+		"GameUI_Retake_Card_Mvp"				"MVP"
+
+		"GameUI_Retake_Card_4v3"				"4v3"
+		"GameUI_Retake_Card_FlashOut"			"Flash Out!"
+		"GameUI_Retake_Card_HideAndPeek"		"Hide and Peek"
+		"GameUI_Retake_Card_TakeFive"			"Take Five"
+		"GameUI_Retake_Card_OnlyTakesOne"		"Only Takes One"
+		"GameUI_Retake_Card_SneakyBeakyLike"	"Sneaky Beaky Like"
+		"GameUI_Retake_Card_UmpInSmoke"			"UMP in Smoke"
+		"GameUI_Retake_Card_FunNGun"			"Fun-N-Gun"
+		"GameUI_Retake_Card_Sharpshooter"		"Sharpshooter"
+		"GameUI_Retake_Card_BurstBullpup"		"Burst Bullpup"
+		"GameUI_Retake_Card_LightEmUp"			"Bright Eyed"
+		"GameUI_Retake_Card_Kobe"				"Kobe!"
+		"GameUI_Retake_Card_1g"					"1g"
+		"GameUI_Retake_Card_DisappearingAct"	"Disappearing Act"
+		"GameUI_Retake_Card_EyesOnTarget"		"Eyes On Target"
+		"GameUI_Retake_Card_BehindEnemyLines"	"Behind Enemy Lines"
+		"GameUI_Retake_Card_4BadGuysLeft"		"4 Bad Guys Left"
+		"GameUI_Retake_Card_LookAway"			"Look Away!"
+		"GameUI_Retake_Card_WhenThereIsSmoke"	"Where There's Smoke..."
+		"GameUI_Retake_Card_BlindFire"			"Blind Fire"
+		"GameUI_Retake_Card_QueOta"				"Qué ota?"
+		"GameUI_Retake_Card_SmokeScreen"		"Smoke Screen"
+		"GameUI_Retake_Card_TecTecBoom"			"TEC, TEC, BOOM!"
+		"GameUI_Retake_Card_BackInAFlash"		"Back In a Flash"
+		"GameUI_Retake_Card_AllIn"				"All In"
+		"GameUI_Retake_Card_BoomBox"			"Boom Box"
+		"GameUI_Retake_Card_SetThemFree"		"Set Them Free"
+		"GameUI_Retake_Card_OlReliable"			"Ol' Reliable"
+		"GameUI_Retake_Card_SmokeShow"			"Smoke Show"
+		"GameUI_Retake_Card_HotShot"			"Hot Shot"
+		"GameUI_Retake_Card_EyeSpy"				"Eye Spy"
+		"GameUI_Retake_Card_TheAWPortunity"		"The AWPortunity"
+		"GameUI_Retake_Card_FindersKeepers"		"Finders Keepers"
+
+		"Hud_Retake_BombSite"					"{s:hud-retake-bombsite}"
+		
+		"Hud_Money" "${d:r:hud-money-amount}"
+		"Hud_Money_Signed" "{s:sign}${d:r:hud-money-delta}"
+
+		"Propcounter_money" "$%s1" //e.g. used on danger zone security door
+
+		"csgo_player_left_game"					" Pemain %s1 keluar dari permainan (%s2)"
+
+		"LoadoutLockedPopupTitle"				"Perlengkapan Terkunci"
+		"LoadoutLockedPopupText"				"Perubahan pada Perlengkapan tidak dapat dilakukan saat matchmaking mode kompetitif sedang berlangsung."
+
+		"Workshop_item_title" "Alat Pengajuan Item"
+		"Workshop_item_error_title" "Masukkan sebuah nama untuk item-mu. Nama item harus mengandung nama pemain atau informasi pengidentifikasi lainnya"
+		"Workshop_item_error_image" "Pilih gambar dengan format .jpeg atau .png yang valid dan dengan ukuran kurang dari {s:max_size} dan memiliki lebar/tinggi minimum {d:min_height}"
+		"Workshop_item_ready" "Pengajuan siap untuk diunggah"
+		"SFUI_Go_To_Mic_Enable_key" "Buka Pengaturan Tombol Mikrofon"
+		"SFUI_Go_To_Console_Key_Binding" "Buka Pengaturan Tombol Konsol"
+
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//Steam Video
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		"SteamVideo_Player_Kill_Title"					"Kamu membunuh %s1"
+		"SteamVideo_Player_Kill_Description"			"dengan %s1"
+
+		"SteamVideo_Player_Double_Kill_Title"			"Double kill"
+		"SteamVideo_Player_Multi_Kill_Title"			"Multi kill"
+		
+		"SteamVideo_Player_Death_Title"					"Kamu dibunuh oleh %s1"
+		"SteamVideo_Player_Death_Description"			"dengan %s1"
+		"SteamVideo_Player_Death_Description_Plural"	"dengan %s1"
+		"SteamVideo_Player_Killed_Self_Title"			"Kamu melakukan bunuh diri"
+		
+		"SteamVideo_Bomb_Planted_Title"					"Bom dipasang"
+		"SteamVideo_Bomb_Planted"						"%s1 telah memasang bom"
+		"SteamVideo_Bomb_Planted_LocalPlayer"			"Kamu telah memasang bom"
+		
+		"SteamVideo_Bomb_Defused_Title"					"Bom dijinakkan"
+		"SteamVideo_Bomb_Defused"						"%s1 berhasil menjinakkan bom"
+		"SteamVideo_Bomb_Defused_LocalPlayer"			"Kamu berhasil menjinakkan bom"
+		
+		"SteamVideo_Bomb_Exploded_Title"				"Bom meledak"
+		
+		"SteamVideo_Round_Number_Label"					"Ronde %s1"
+		"SteamVideo_Start_Of_Round_Title"				"Awal ronde %s1"
+
+		"SteamVideo_MatchScore"							"Skor"
+		"SteamVideo_KDA"								"K/D/A"
+
+		// ---------------------------------------------------------------------------------------------
+		// WEEKLY MISSIONS
+		// ---------------------------------------------------------------------------------------------
+		"weekly_mission_title"							"MISI"
+		"weekly_mission_title_complete"					"MISI SELESAI"
+		"weekly_mission_expiration"						"Berakhir dalam <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_expiration_pausemenu"			"Berakhir dalam <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_next_mission"					"Misi berikutnya dimulai dalam <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_progress"						"<b>{d:mission-progress}</b>/{d:mission-points}"
+		"CS2_Quest_Weapon_Mode"							"Profisiensi Peralatan: <b>{s:gamemode}</b>, <b>{s:weapon}</b>"
+		"CS2_Quest_Weapon_Mode_desc"					"Dapatkan {s:optional_target}{s:actions} <b>{s:weapon}</b> dalam pertandingan <b>{s:gamemode}</b>."
+
+		"mission_searching"								"Mencari..."
+		"mission_xp_remaining"							"{s:mission-xp} XP"
+
+		"mission_segment_tooltip"						"{d:xp-reward} XP"
+
+		"mission_location"								"<b>{s:gamemode}</b> di <b>{s:location}</b>"
+		"mission_directive:f"							"<b>{d:mission-points}</b> {s:action}"
+ 		"mission_directive_progress:f"					"{d:mission-progress}/<b>{d:mission-points}</b> {s:action}"
+
+
+		"quest_11000_var_desc:f"	  					"Dapatkan satu atau beberapa kill dengan {s:item1} di mode <b>{s:gamemode}: {s:location}</b>."
+		"quest_11000_var_partial:f" 					"...menggunakan {s:item1}."
+		"quest_11000_var_ingame:f"	  					"Dapatkan satu atau beberapa kill dengan {s:item1}."
+
+		"quest_11001_var_desc:f"	 					"Dapatkan satu atau beberapa kill dengan {s:item1} di mode <b>{s:gamemode}:{s:location}</b>."
+		"quest_11001_var_partial:f"	 					"...menggunakan {s:item1}."
+		"quest_11001_var_ingame:f"	 					"Dapatkan satu atau beberapa kill dengan {s:item1}"
+
+		"quest_11002_var_desc:f"	 					"Dapatkan satu atau beberapa kill dengan {s:item1} di mode <b>{s:gamemode}: {s:location}</b>."
+		"quest_11002_var_partial:f"	 					"...menggunakan {s:item1}."
+		"quest_11002_var_ingame:f"	 					"Dapatkan satu atau beberapa kill dengan {s:item1}"
+
+		"quest_11003_var_desc:f"						"Dapatkan satu atau beberapa kill dengan {s:item1} di mode <b>{s:gamemode}: {s:location}</b>."
+		"quest_11003_var_partial:f"	 					"...menggunakan {s:item1}."
+		"quest_11003_var_ingame:f"	 					"Dapatkan satu atau beberapa kill dengan {s:item1}"
+
+		"quest_11004_var_desc:f"	 					"Menangkan satu atau beberapa ronde di mode <b>{s:gamemode}: {s:location}</b>."
+		"quest_11004_var_ingame:f"						"Menangkan satu atau beberapa ronde"
+
+		"quest_11005_var_desc:f"	 					"Menangkan satu atau beberapa ronde di mode <b>{s:gamemode}: {s:location}</b>."
+		"quest_11005_var_ingame:f"						"Menangkan satu atau beberapa ronde"
+
+		"quest_11006_var_desc:f"	 					"Menangkan satu atau beberapa ronde di mode <b>{s:gamemode}: {s:location}</b>."
+		"quest_11006_var_ingame:f"						"Menangkan satu atau beberapa ronde"
+
+		"quest_11007_var_desc:f"	 					"Dapatkan satu atau beberapa kill dengan {s:item1} di mode <b>{s:gamemode}: {s:location}</b>."
+		"quest_11007_var_partial:f"	 					"...menggunakan {s:item1}."
+		"quest_11007_var_ingame:f"	 					"Dapatkan satu atau beberapa kill dengan {s:item1}"
+
+		"quest_11008_var_desc:f"	 					"Menangkan satu atau beberapa ronde di mode <b>{s:gamemode}: {s:location}</b>."
+		"quest_11008_var_ingame:f"						"Menangkan satu atau beberapa ronde"
+
+		"quest_11009_var_desc:f"	 					"Menangkan satu atau beberapa ronde di mode <b>{s:gamemode}: {s:location}</b>."
+		"quest_11009_var_ingame:f"						"Menangkan satu atau beberapa ronde"
+
+		"quest_11010_var_desc:f"	 					"Dapatkan satu atau beberapa kill dengan {s:item1} di mode <b>{s:gamemode}:{s:location}</b>."
+		"quest_11010_var_partial:f"	 					"...menggunakan {s:item1}."
+		"quest_11010_var_ingame:f"	 					"Dapatkan satu atau beberapa kill dengan {s:item1}"
+
+		"quest_11011_var_desc:f"	 					"Menangkan satu atau beberapa ronde di mode <b>{s:gamemode}: {s:location}</b>."
+		"quest_11011_var_ingame:f"						"Menangkan satu atau beberapa ronde"
+
+		"quest_11012_var_desc:f"	 					"Menangkan satu atau beberapa ronde di mode <b>{s:gamemode}: {s:location}</b>."
+		"quest_11012_var_ingame:f"						"Menangkan satu atau beberapa ronde"
+
+		"quest_11013_var_desc:f"	 					"Menangkan satu atau beberapa ronde di mode <b>{s:gamemode}: {s:location}</b>."
+		"quest_11013_var_ingame:f"						"Menangkan satu atau beberapa ronde"
+
+		"quest_11014_var_desc:f"	 					"Menangkan satu atau beberapa ronde di mode <b>{s:gamemode}: {s:location}</b>."
+		"quest_11014_var_ingame:f"						"Menangkan satu atau beberapa ronde"
+
+		"quest_11015_var_desc:f"	 					"Menangkan satu atau beberapa ronde di mode <b>{s:gamemode}: {s:location}</b>."
+		"quest_11015_var_ingame:f"						"Menangkan satu atau beberapa ronde"
+
+// ---------------------------------------------------------------------------------------------
+// Join Friend Listen Servers
+// ---------------------------------------------------------------------------------------------
+
+		"tooltip_viewaddon"				"Lihat map kustom di halaman workshop"
+		"tooltip_kick_player"			"Keluarkan pemain dari server lokal"		
+		"tooltip_short_viewaddon"			"Lihat Map Kustom"
+		"tooltip_short_kick_player"			"Keluarkan"
+
+// crow_mask_50454_comment
+// crow_mask_50455_comment
+}
+
+
+
+
+}
+
+
+aths"								"Click Bait"
 		"accolade_deaths_desc"							"Death terbanyak:"
 		"accolade_deaths_value"							"{s:accolade-value-string}"
 

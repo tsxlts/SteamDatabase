@@ -1964,8 +1964,8 @@
 		"Team_Cash_Award_no_income_suicide"					" +$0 straff för självmord"
 		"Team_Cash_Award_Generic"							" +$%s1 laginkomst"
 		"Team_Cash_Award_Custom"							" +$%s1 %s2"
-		"Team_Cash_Award_Dead_Terrorists:p"					" +$%s1 laginkomst för %s2 eliminerad terrorist#|# +$%s1 laginkomst för %s2 eliminerade terrorister"
-		"Team_Cash_Award_Dead_CTs:p"						" +$%s1 laginkomst för %s2 eliminerad antiterrorist#|# +$%s1 laginkomst för %s2 eliminerade antiterrorister"
+		"Team_Cash_Award_Dead_Terrorists:f"					" +$%s1 lagsinkomst för {num_enemies} {num_enemies, plural, one{eliminerad terrorist} other{eliminerade terrorister}}"
+		"Team_Cash_Award_Dead_CTs:f"						" +$%s1 lagsinkomst för {num_enemies} {num_enemies, plural, one{eliminerad antiterrorist} other{eliminerade antiterrorister}}"
 
 
 		"Notice_Bonus_Shorthanded_Eligibility"			" Ditt lag kommer att få inkomst för att vara underbemannade om %s1 rundor."
@@ -2329,10 +2329,14 @@
 		// Econ date formatting supports the following tokens:
 		//    %year%, %monthshort%, %monthlong%, %mmday% (01-31), %mday% (1-31), %day% (legacy unlocalized "Jul 30" shouldn't be used), %hour%, %min%, %sec%
 		//
-		"Econ_DateFormat"						"%mmday% %monthshort%, %year% (%hour%:%min%:%sec%)"
-		"Econ_DateFormat_GMT"					"%mmday% %monthshort%, %year% (%hour%:%min%:%sec%) GMT"
-		"Econ_DateFormat_DateOnly"				"%mmday% %monthshort%, %year%"
-		"Econ_DateFormat_GMT_DateOnly"			"%mmday% %monthshort%, %year% GMT"
+		"Econ_DateFormat:f"							"{mmday} {monthshort}, {year} ({hour}:{min}:{sec})"
+		"Econ_DateFormat_GMT:f"						"{monthshort} {mmday}, {year} ({hour}:{min}:{sec}) GMT"
+		"Econ_DateFormat_DateOnly:f"				"{mmday} {monthshort}, {year}"
+		"Econ_DateFormat_GMT_DateOnly:f"			"{mmday} {monthshort}, {year} GMT"
+		"Econ_DateFormat"							"%mmday% %monthshort%, %year% (%hour%:%min%:%sec%)"
+		"Econ_DateFormat_GMT"						"%mmday% %monthshort%, %year% (%hour%:%min%:%sec%) GMT"
+		"Econ_DateFormat_DateOnly"					"%mmday% %monthshort%, %year%"
+		"Econ_DateFormat_GMT_DateOnly"				"%mmday% %monthshort%, %year% GMT"
 		"Econ_Loot_List_Sticker_ProPlayerSignatures" "Klistermärket kan vara signerat av en av följande professionella spelare:"
 		"Econ_Loot_List_Sticker_ProPlayerSignatures_AndSomeMore" "... och %s1 andra professionella spelare"
 		"Econ_Loot_List_Sticker_ProOrgsStickers"	"Klistermärket kan representera ett av följande organisationer:"
@@ -5851,1258 +5855,15 @@
 		
 		"quest"										"Uppdrag"
 
-		"quest_totalgoal_points_desc"				"Antal %actions% som behövs： <b>%points%</b>" // special non-breaking space characters in this string, edit carefully!
-		"quest_attrremaining_points_desc"			"Återstående %actions%： <b>%points%</b>" // special non-breaking space characters in this string, edit carefully!
-		"quest_uncommitted_points_desc"				"Återstående %actions%： <b>%points%</b> (<b>%points uncommitted%</b> intjänade denna match)" // special non-breaking space characters in this string, edit carefully!
-		"quest_uncommitted_points_warn"				" * <i>%actions% kommer att registreras i slutet av matchen</i>"
-	
-		"quest_uncommitted_points_chat_one"	" Uppdrag fullbordat: %action% uppnått."
-		"quest_uncommitted_points_chat_singular"	" Uppdragsframsteg: +%points% %action% uppnått."
-		"quest_uncommitted_points_chat_plural"		" Uppdragsframsteg: +%points% %actions% uppnådda."
-		"quest_uncommitted_points_chat_event"		" Blitz-uppdrag: %action% erhållna."		
+		"quest_commandverb_default"					"Få"
 
-		"quest_reward_desc"								"Detta uppdrag ger belöningar från\n<b>%s1</b>:"
+		"quest_action_plural_act_kill_human"		"dödade"
+		"quest_action_singular_act_kill_human"		"dödad"
 
-		"quest_reward_xp"									"Uppdragsbelöning: <b>%s1</b> XP"
-
-		"quest_event_totalgoal_points_desc"					"Få extra XP för varje <b>%action%</b> under detta event."
-		
-		"quest_bonus_desc"								"Bonus: +<b>%xpperbonusaction%</b> XP per %action%—<i>%xpbonuscondition%.</i>"
-		"quest_bonus_fractional_desc"			"Bonus: +<b>%xpperbonusactions%</b> XP per <b>%n_actions%</b> %actions%—<i>%xpbonuscondition%.</i>"
-		"quest_bonus_single_desc"					"Bonus: +<b>%xpperbonusaction%</b> XP—<i>%xpbonuscondition%.</i>"
-
-
-		"quest_target_chicken"											"kyckling"
-		"quest_target_human_or_chicken"									"människa eller kyckling"
-		"quest_target_hostagerescuer"									"gisslanbefriare"
-		"quest_target_armsraceleader"									"Arms Race-ledare"
-
-		"quest_target_headshot"											"huvudskott"
-		"quest_target_airborne"											"luftburen"
-		"quest_target_pistolround"										"pistol"
-
-		"quest_target_lockeddoor"										"låsta dörrar"
-		"quest_target_explodingbarrel"									"explosiva tunnor"
-		"quest_target_glasspane"										"glasrutor"
-		"quest_target_enemydrone"										"fientliga drönare"
-
-		"quest_target_shotgun"											"hagelgevär"
-		"quest_target_sniperrifle"										"krypskyttegevär"
-		"quest_target_utility"											"utrustning"
-		"quest_target_defaultctpistol"									"standard CT-pistol"
-		"quest_target_defaultpistol"									"standardpistol"
-		"quest_target_knife"											"kniv"
-
-		"quest_action_plural_act_kill_human"							"dödade"
-		"quest_action_singular_act_kill_human"							"dödad"
-
-		"quest_action_plural_act_kill_chicken"							"dödade"
-		"quest_action_singular_act_kill_chicken"						"dödad"		
-
-		"quest_action_plural_act_protect_chicken"						"sekunder till att skydda en kyckling"
-		"quest_action_singular_act_protect_chicken"						"sekunder till att skydda en kyckling"	
-
-		"quest_action_plural_act_kill_target"							"lönnmord"
-		"quest_action_singular_act_kill_target"							"lönnmord"		
-
-		"quest_action_plural_act_damage"								"skada"
-		"quest_action_singular_act_damage"								"skada vållad"		
-
-		"quest_action_plural_act_win_match"								"vinster"
-		"quest_action_singular_act_win_match"							"vinst"		
-
-		"quest_action_plural_act_dz_game_end_placement"					"placeringar"
-		"quest_action_singular_act_dz_game_end_placement"				"placering"	
-
-		"quest_action_plural_act_dz_purchase_item"					"köp"
-		"quest_action_singular_act_dz_purchase_item"				"köp"	
-
-		"quest_action_plural_act_win_round"								"rundvinster"
-		"quest_action_singular_act_win_round"							"rundvinst"	
-
-		"quest_action_singular_act_round_end"							""			
-
-		"quest_action_plural_act_round_mvp"								"MVP-stjärnor"
-		"quest_action_singular_act_round_mvp"							"MVP"
-
-		"quest_action_plural_act_dm_bonus_points"						"poäng"
-		"quest_action_singular_act_dm_bonus_points"						"poäng"		
-
-		"quest_action_plural_act_armsrace_level"						"nivåer"
-		"quest_action_singular_act_armsrace_level"						"nivå"	
-
-		"quest_action_plural_act_gg_weapon_upgrade"						"uppgraderingar"
-		"quest_action_singular_act_gg_weapon_upgrade"					"uppgradering"	
-
-		"quest_action_plural_act_gg_upgrade_to_knifegg"						"uppgraderingar"
-		"quest_action_singular_act_gg_upgrade_to_knifegg"					"uppgradering"	
-				
-		"quest_action_plural_act_flashbang_enemy"						"fiender bländade"
-		"quest_action_singular_act_flashbang_enemy"						"fiende bländad"		
-		
-		"quest_action_plural_act_pick_up_hostage"						"gisslanhämtningar"
-		"quest_action_singular_act_pick_up_hostage"						"gisslanhämtning"		
-		
-		"quest_action_plural_act_rescue_hostage"						"gisslanräddningar"
-		"quest_action_singular_act_rescue_hostage"						"gisslanräddning"		
-		
-		"quest_action_plural_act_defuse_bomb"							"bombdesarmeringar"
-		"quest_action_singular_act_defuse_bomb"							"bombdesarmering"		
-		
-		"quest_action_plural_act_plant_bomb"							"bombplaceringar"
-		"quest_action_singular_act_plant_bomb"							"bombplacering"
-
-		"quest_action_singular_act_income"								"dollar"
-		"quest_action_plural_act_income"								"pengar"
-		
-		"quest_action_singular_act_survivalincome"						"dollar"
-		"quest_action_plural_act_survivalincome"						"pengar"
-
-		"quest_action_singular_act_spend"								"dollar"
-		"quest_action_plural_act_spend"									"pengar"
-
-		"quest_action_singular_act_parachute_landed"					"sekunder i luften med fallskärm"
-		"quest_action_plural_act_parachute_landed"						"sekunder i luften med fallskärm"
-
-		"quest_action_singular_act_bumpmine_launch"						"hopp med studsmina"
-		"quest_action_plural_act_bumpmine_launch"						"hopp med studsmina"
-
-		"quest_action_singular_headshot_kill"							"huvudskottmord"
-		"quest_action_plural_headshot_kill"								"huvudskottmord"
-
-		"quest_action_singular_multikill"								"flermordsrunda"
-		"quest_action_plural_multikill"									"flermordsrundor"
-
-		"quest_action_singular_act_apply_graffiti"						"graffiti"
-		"quest_action_plural_act_apply_graffiti"						"graffiti"
-
-		"quest_action_singular_act_detonate_smokegrenade"				"rökgranat"
-		"quest_action_plural_act_detonate_smokegrenade"					"rökgranater"
-
-		"quest_action_singular_act_detonate_molotov"					"molotov"
-		"quest_action_plural_act_detonate_molotov"						"molotovcocktailar"
-
-		"quest_action_singular_act_use_healthshot"						"hälsospruta"
-		"quest_action_plural_act_use_healthshot"						"hälsosprutor"
-		
-		"quest_action_singular_act_retakes_picked_enemy_card"			"motståndarens kortval"
-		"quest_action_plural_act_retakes_picked_enemy_card"				"motståndarnas kortval"
-
-		"quest_action_singular_act_retakes_picked_mvp_card"				"Val av MVP-kort"
-		"quest_action_plural_act_retakes_picked_mvp_card"				"Val av MVP-kort"
-//
-
-		"quest_action_plural_bomb_plants_or_defuses"					"bombutplaceringar eller -desarmeringar"
-		"quest_action_singular_bomb_plants_or_defuses"					"bombutplacering eller -desarmering"
-		
-		"quest_action_plural_rescue_or_kill_hostages"					"gisslanfritagningar eller dödade fritagare"
-		"quest_action_singular_rescue_or_kill_hostages"					"gisslanfritagning eller dödad fritagare"		
-		
-		"quest_action_plural_damage_burn"								"brännskada"
-		"quest_action_singular_damage_burn"								"brännskadepoäng"
-
-		"quest_commandverb_default"										"Få"
-		"quest_commandverb_defaultCT"									"Som CT, få"
-		"quest_commandverb_defaultT"									"Som T, få"
-		"quest_commandverb_deal"										"Gör"
-		"quest_commandverb_earn"										"Tjäna"
-		"quest_commandverb_earnT"										"Som T, få"
-		"quest_commandverb_spend"										"Spendera"
-		"quest_commandverb_execute"										"Utför"
-		"quest_commandverb_destroy"										"Förstör"
-		"quest_commandverb_apply"										"Verkställ"
-		"quest_commandverb_throw"										"Träffa"
+		"quest_action_plural_act_win_round"			"rundvinster"
+		"quest_action_singular_act_win_round"		"rundvinst"	
 
 		////
-
-		"quest_condition_item_own"										"din egna"
-		"quest_condition_item_borrowed"									"någon annans"									
-		"quest_condition_item_borrowed_teammate"						"lagkamrats"									
-		"quest_condition_item_borrowed_enemy"							"fiendens"									
-		"quest_condition_item_borrowed_victim"							"offrets egna"									
-		"quest_condition_item_nondefault"								"fin"
-
-		"quest_LoadoutSlot_Melee"										"kniv"
-		"quest_LoadoutSlot_Secondary"									"pistol"
-		"quest_LoadoutSlot_SMG"											"SMG"
-		"quest_LoadoutSlot_Rifle"										"gevär"
-		"quest_LoadoutSlot_Heavy"										"tunga vapen"
-		"quest_LoadoutSlot_Grenade"										"granat"
-
-		"quest_item_default"											"vapen"
-
-////
-		"quest_event_ending"											"Avslutas om %s1 minuter"
-		"quest_event_soon_hours"										"Börjar om %s1 timmar"
-		"quest_event_soon_hms"											"Startar om %s1:%s2:%s3"
-		"quest_event_today"												"Idag %s1:%s2"
-		"quest_event_future"											"Startar %s1 %s2 %s3:%s4"
-		"quest_event_timer"												"Börjar om %s1"
-
-////
-
-
-
-
-////////////////////////// generalized quest strings //////////////////////////////
-///
-///	Use these if applicable. If not, use this pattern to create new ones.
-///
-///
-///
-
-		"quest_default_0_items_desc" "%commandverb% %target% %actions% i <b>%gamemode%: %location%</b>-matcher."		
-		"quest_default_1_items_desc" "%commandverb% %target% %actions% med <i>%item_quality%</i> <b>%item1%</b> i <b>%gamemode%: %location%</b>-matcher."
-		"quest_default_2_items_desc" "%commandverb% %target% %actions% med <i>%item_quality%</i> <b>%item1%</b> eller <b>%item2%</b> i <b>%gamemode%: %location%</b>-matcher."
-		"quest_default_3_items_desc" "%commandverb% %target% %actions% med <i>%item_quality%</i> <b>%item1%</b>, <b>%item2%</b>, eller <b>%item3%</b> %item_quality% i <b>%gamemode%: %location%</b>-matcher."
-		"quest_default_4_items_desc" "%commandverb% %target% %actions% med <i>%item_quality%</i> <b>%item1%</b>, <b>%item2%</b>, <b>%item3%</b>, eller <b>%item4%</b> i <b>%gamemode%: %location%</b>-matcher."
-
-		"quest_default_hud_0_items_desc" "%commandverb% %target% %actions%"
-		"quest_default_hud_1_items_desc" "%commandverb% %target% %actions%: <i>%item_quality%</i> <b>%item1%</b>"
-		"quest_default_hud_2_items_desc" "%commandverb% %target% %actions%: <i>%item_quality%</i> <b>%item1%</b>/<b>%item2%</b>"
-		"quest_default_hud_3_items_desc" "%commandverb% %target% %actions%: <i>%item_quality%</i> <b>%item1%</b>/<b>%item2%</b>/<b>%item3%</b>"
-		"quest_default_hud_4_items_desc" "%commandverb% %target% %actions%: <i>%item_quality%</i> <b>%item1%</b>/<b>%item2%</b>/<b>%item3%</b>/<b>%item4</b>"
-
-/////////////////////////////////////////////////////////
-
-/////////////////////////////// Quest Strings via Dialog Vars //////
-///
-/// Used starting with Op09 - the default descriptions should handle most "Perform X Action in GameMode: Location" quests.
-///
-///
-		"quest_default_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} i <b>{s:gamemode}: {s:location}</b>."		
-		"quest_single_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} i en <i>enda</i> <b>{s:gamemode}: {s:location}</b>-match."		
-		"quest_default_no_map_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} i <b>{s:gamemode}</b>."
-		"quest_single_no_map_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} i en <i>enda</i> <b>{s:gamemode}</b>-match."		
-
-		"quest_weapon_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} med {s:weapon} i <b>{s:gamemode}: {s:location}</b>."
-		"quest_weapon_single_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} med {s:weapon} i en <i>enda</i> <b>{s:gamemode}: {s:location}</b>-match."
-		"quest_weapon_no_map_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} med {s:weapon} i <b>{s:gamemode}</b>."
-		"quest_weapon_category_no_map_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} med ett {s:weapon}-vapen i <b>{s:gamemode}</b>."
-
-		"quest_flyingscoutsman_var_desc"	"{s:commandverb} {d:points} {s:target} {s:actions} i <b>Flygande Scoutsman: {s:location}</b>."
-		"quest_flyingscoutsman_no_map_var_desc"	"{s:commandverb} {d:points} {s:target} {s:actions} i <b>Flygande Scoutsman</b>."
-
-		"quest_retakes_var_desc"	"{s:commandverb} {d:points} {s:target} {s:actions} i <b>Retakes: {s:location}</b>."
-		"quest_retakes_no_map_var_desc"	"{s:commandverb} {d:points} {s:target} {s:actions} i <b>Retakes</b>."
-
-		"quest_armsrace_var_desc"	 		"{s:commandverb} {d:points} {s:target} {s:actions} i <b>Arms Race</b>."
-		"quest_armsrace_weapon_var_desc"	"{s:commandverb} {d:points} {s:target} {s:actions} med {s:weapon} i <b>Arms Race</b>."
-
-		// quest exceptions:
-		"quest_931_var_desc"	 "Döda {d:points} fiender med {s:weapon} i <b>{s:gamemode}: {s:location}</b>."
-		"quest_932_var_desc"	 "Döda {d:points} medan du är i luften i <b>Flygande Scoutsman</b>."
-		"quest_933_var_desc"	 "Vinn {d:points} rundor i <b>{s:gamemode}: {s:location}</b>."
-		"quest_934_var_desc"	 "Döda {s:kills} med {s:weapon} i <b>Guardian: {s:location}</b>."
-		"quest_935_var_desc"	 "Döda {d:points} fiender med {s:weapon} i en <i>enda</i> <b>{s:gamemode}: {s:location}</b>-match."
-		"quest_936_var_desc"	 "Döda {d:points} fiender med {s:weapon} i <b>{s:gamemode}</b>."
-		"quest_937_var_desc"	 "Använd {d:points} graffiti i fiendens område i <b>{s:gamemode}: {s:location}</b>."
-		"quest_938_var_desc"	 "Döda Arms Race-ledaren {d:points} gånger i <b>{s:gamemode}</b>."
-		"quest_939_var_desc"	 "Döda {s:kills} med {s:weapon} i <b>Guardian: {s:location}</b>."
-		"quest_940_var_desc"	 "Vinn {d:points} rundor i <b>{s:gamemode}: {s:location}</b>."
-		"quest_941_var_desc"	 "Vinn {d:points} pistolrundor i <b>{s:gamemode}: {s:location}</b>."
-		"quest_942_var_desc"	 "Döda {d:points} fiender med {s:weapon} i en <i>enda</i> <b>{s:gamemode} {s:location}</b>-match."
-		"quest_943_var_desc"	 "Döda {d:points} fiender i <b>Flying Scoutsman</b>."
-		"quest_944_var_desc"	 "Spendera {d:points} pengar i en <i>enda</i> <b>{s:gamemode}</b>-match."
-		"quest_945_var_desc"	 "Döda {s:kills} i <b>Guardian: {s:location}</b>."
-		"quest_946_var_desc"	 "Vinn {d:points} rundor i <b>{s:gamemode}: {s:location}</b>."
-		"quest_947_var_desc"	 "Vinn {d:points} rundor i <b>{s:gamemode}: {s:location}</b>."
-		"quest_948_var_desc"	 "Rädda {d:points} gisslan, eller döda {d:points} gisslanräddare i <b>{s:gamemode}: {s:location}</b>."
-        "quest_949_var_desc"	 "Döda {d:points}fiender med {s:weapon} i <b>{s:gamemode}: {s:location}</b>."
-        "quest_950_var_desc"	 "Döda {d:points} fiender med ett tungt vapen i <b>{s:gamemode}</b>."
-        "quest_951_var_desc"	 "Döda {s:kills} med {s:weapon} i <b>Guardian: {s:location}</b>. Spelare börjar med <b>{s:extraequip0}</b>."
-        "quest_952_var_desc"	 "Vinn {d:points} rundor i <b>{s:gamemode}: {s:location}</b>."
-        "quest_953_var_desc"	 "Vinn {d:points} rundor i <b>{s:gamemode}: {s:location}</b>."
-        "quest_954_var_desc"	 "Döda {d:points} fiender med {s:target} i en <i>enda</i> <b>{s:gamemode}: {s:location}</b>-match."
-		"quest_955_var_desc"	 "Bli vän med hönor i {d:points} sekunder i <b>{s:gamemode}: {s:location}</b>."
-		"quest_956_var_desc" 	 "Använd en fallskärm i {d:points} sekunder i <b>{s:gamemode}</b>."
-		"quest_957_var_desc" 	 "Döda {d:points} fiender med {s:weapon} i <b>{s:gamemode}: {s:location}</b>."
-		"quest_958_var_desc" 	 "Vinn {d:points} rundor i <b>{s:gamemode}: {s:location}</b> (träningsmatch)."
-		"quest_959_var_desc" 	 "Döda {d:points}fiender i <b>{s:gamemode}: {s:location}</b>."
-		"quest_960_var_desc"	 "Döda {s:kills} med {s:weapon} i <b>Guardian: {s:location}</b>."
-		"quest_961_var_desc" 	 "Döda {d:points} fiender med pistol i <b>{s:gamemode}: {s:location}</b>."
-		"quest_962_var_desc" 	 "Döda {d:points} fiender utan att spendera några pengar i en <i>enda</i> <b>{s:gamemode}</b>-match."
-		"quest_963_var_desc"	 "Döda {s:kills} med {s:weapon} i <b>Guardian: {s:location}</b>."
-		"quest_964_var_desc" 	 "Vinn {d:points} pistolrundor i <b>{s:gamemode}</b>."
-		"quest_965_var_desc" 	 "Döda {s:kills} med {s:weapon} i <b>Guardian: {s:location}</b>."
-		"quest_966_var_desc" 	 "Tjäna ${d:points} i <b>{s:gamemode}: {s:location}</b>."
-		"quest_967_var_desc" 	 "Döda {d:points} fiender med {s:weapon} i <b>{s:gamemode}: {s:location}</b>."
-		"quest_968_var_desc"	 "Döda {d:points} fiender med ett krypskyttegevär i <b>{s:gamemode}</b>."
-		"quest_969_var_desc" 	 "Döda {s:kills} utan att använda kikarsiktet med {s:weapon} i <b>Guardian: {s:location}</b>."
-		"quest_970_var_desc" 	 "Vinn {d:points} rundor i <b>{s:gamemode}: {s:location}</b>."
-		"quest_971_var_desc"	 "Döda {s:kills} med {s:weapon} i <b>Guardian: {s:location}</b>."
-		"quest_972_var_desc" 	 "Döda {d:points} fiender med huvudskott i en <i>enda</i> <b>{s:gamemode}: {s:location}</b>-match."
-		"quest_973_var_desc" 	 "Döda {d:points} fiender i <b>{s:gamemode}: {s:location}</b>."
-		"quest_974_var_desc" 	 "Döda {d:points} fiender med huvudskott i <b>{s:gamemode}: {s:location}</b>."
-		"quest_975_var_desc"     "Döda {s:kills} med CT-vapen i <b>Guardian: {s:location}</b>."
-		"quest_976_var_desc" 	 "Vinn {d:points} rundor i <b>{s:gamemode}: {s:location}</b>."
-		"quest_977_var_desc"	 "Vinn {d:points} rundor i <b>{s:gamemode}: {s:location}</b>."
-		"quest_978_var_desc" 	 "Döda {d:points} fiender med {s:weapon} i <b>{s:gamemode}: {s:location}</b>."
-		"quest_979_var_desc"	 "Döda fyra eller flera i rad i <b>{s:gamemode}: {s:location}</b>."		
-		"quest_980_var_desc" 	 "Kom på fjärde plats eller bättre i <b>{s:gamemode}</b>."
-		"quest_981_var_desc"     "Döda {s:kills} med huvudskott med {s:weapon} i <b>Guardian: {s:location}</b> <i>utan skyddsväst</i>."
-		"quest_982_var_desc" 	 "Döda {d:points} fiender med huvudskott med {s:weapon} i en <i>enda</i> <b>{s:gamemode}: {s:location}</b>-match."
-		"quest_983_var_desc" 	 "Döda {d:points} fiender med huvudskott i <b>{s:gamemode}</b>."
-		"quest_984_var_desc" 	 "Bli MVP {d:points} gånger i <b>{s:gamemode}</b>-matcher."
-		"quest_985_var_desc" 	 "Döda {d:points} fiender med standardpistolen i <b>{s:gamemode}: {s:location}</b>."
-		"quest_986_var_desc"     "Döda {s:kills} med {s:weapon} i <b>Guardian: {s:location}</b>."
-		"quest_987_var_desc"	 "Döda {d:points} fiender med en fiendes primära vapen i <b>{s:gamemode}: {s:location}</b>."
-		"quest_988_var_desc"     "Döda {d:points} fiender med kniv i <b>Arms Race</b>."
-		"quest_989_var_desc" 	 "Gör {d:points} skada med granater i <b>{s:gamemode}</b>."
-		"quest_990_var_desc" 	 "Döda hela det andra laget {d:points} gång i <b>{s:gamemode}</b>."
-		"quest_991_var_desc" 	 "Döda {d:points} fiender med <b>Tec-9 eller Five-Seven</b> i <b>{s:gamemode}: {s:location}</b>."
-		"quest_992_var_desc"     "Döda {s:kills} med {s:weapon} i <b>Guardian: {s:location}</b>."
-		"quest_993_var_desc"	 "Gör {d:points} skada med granater i <b>{s:gamemode}: {s:location}</b>."
-		"quest_994_var_desc" 	 "Döda {d:points} fiender i <b>{s:gamemode}</b>."
-		"quest_995_var_desc" 	 "Vinn {d:points} rundor i <b>{s:gamemode}: {s:location}</b>."
-		"quest_996_var_desc"     "Döda {d:points} med i <b>{s:gamemode}: {s:location}</b>."
-		"quest_997_var_desc" 	 "Döda {d:points} fiender med Galil AR eller FAMAS i <b>{s:gamemode}: {s:location}</b>."
-		"quest_998_var_desc"     "Döda {s:kills} med {s:weapon} i <b>Guardian: {s:location}</b>."
-		"quest_999_var_desc" 	 "Döda {d:points} fiender med {s:weapon} i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1000_var_desc" 	 "Förstör {d:points} fientliga drönare {s:actions} i <b>{s:gamemode}</b>."
-		"quest_1001_var_desc" 	 "Bli MVP {d:points} gånger i en <i>enda</i> <b>{s:gamemode}: {s:location}</b>-match."
-		"quest_1002_var_desc"	 "Döda två eller flera fiender i rad i {d:points} rundor i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1003_var_desc" 	 "Döda {d:points} fiender med {s:weapon} i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1004_var_desc"    "Döda {s:kills} med {s:weapon} i <b>Guardian: {s:location}</b>."
-		"quest_1005_var_desc" 	 "Vinn {d:points} rundor i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1006_var_desc"    "Döda {d:points} fiender i <b>Arms Race</b>."
-		"quest_1007_var_desc" 	 "Förstör {d:points} låsta dörrar {s:actions} med {s:weapon} i <b>{s:gamemode}</b>."
-		"quest_1008_var_desc" 	 "Döda {d:points} fiender med AK-47 eller M4A4 i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1009_var_desc" 	 "Vinn {d:points} rundor i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1010_var_desc"	 "Döda {d:points} fiender med {s:weapon} i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1011_var_desc"    "Vinn 5 eller fler rundor i en halva av en <b>{s:gamemode}: {s:location}</b>-match."
-		"quest_1012_var_desc" 	 "Gå på {d:points} studsminor i <b>{s:gamemode}</b>."
-		"quest_1013_var_desc" 	 "Döda {d:points} fiender med {s:weapon} i <b>{s:gamemode}</b>."
-		"quest_1014_var_desc"    "Döda {s:kills} med {s:weapon} i <b>Guardian: {s:location}</b>."
-		"quest_1015_var_desc" 	 "Döda {d:points} fiender utan att spendera 2 000 $ i<b>{s:gamemode}: {s:location}</b>."
-		"quest_1016_var_desc"	 "Inneha 3 000 $ eller mer i <b>{s:gamemode}</b>."
-		"quest_1017_var_desc" 	 "Vinn {d:points} rundor i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1018_var_desc"    "Döda {s:kills} {s:weapon} i <b>Guardian: {s:location}</b>."
-		"quest_1019_var_desc" 	 "Döda {d:points} fiender med {s:weapon} i <b>Arms Race</b>."
-		"quest_1020_var_desc" 	 "Döda {d:points} med {s:weapon} i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1021_var_desc" 	"Massakrera {d:points} hönor i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1022_var_desc" 	"Spräng {d:points} explosiva tunnor i <b>{s:gamemode}</b>."
-		"quest_1023_var_desc" 	"Vinn {d:points} rundor i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1024_var_desc" 	"Förstör {d:points} glasrutor i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1025_var_desc" 	"Vinn {d:points} rundor i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1027_var_desc"	 "Använd {d:points} graffiti i motståndarens startområde i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1028_var_desc"	 "Döda {d:points} fiender från <i>bananen</i> eller <i>lägenheter</i> i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1029_var_desc"	 "Kasta {d:points} strategiska rökgranater i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1030_var_desc"	 "Hämta ett prov av Danger Zone-viruset från Phoenix-laboratoriet."
-		"quest_1031_var_desc"	 "Förstör Phoenixs produktionsanläggning och eliminera Franz Kriegeld."
-		
-		"quest_1098_var_desc"                                  "Vinn rundor i <b>{s:location}</b>."
-		"quest_1032_var_desc"                                  "Vinn rundor i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1033_var_desc"                                  "Döda {s:kills} fiender i <b>Guardian: {s:location}</b>."
-		"quest_1034_var_desc"                                  "Phoenix-rebellerna har upptäckts! Ta reda på vad de planerar att göra."
-		"quest_1035_var_desc"                                  "Döda med AK47, M4A4, eller M4A1-S i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1036_var_desc"                                  "Vinn rundor i <b>{s:location}</b>."
-		"quest_1037_var_desc"                                  "Döda fiender i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1099_var_desc"                                  "Uppnå MVP i <b>{s:location}</b>."
-		"quest_1038_var_desc"                                  "Vinn rundor i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1039_var_desc"                                  "Döda fiender med alla {s:kills} pistoler i <b>Guardian: {s:location}</b>."
-		"quest_1040_var_desc"                                  "Döda fiender med {s:weapon} i <b>{s:location}</b>."
-		"quest_1041_var_desc"                                  "Döda fiender med {s:weapon} i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1042_var_desc"                                  "Vinn rundor i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1043_var_desc"                                  "Döda {s:kills} fiender med {s:weapon} i <b>Guardian: {s:location}</b>."
-		"quest_1044_var_desc"                                  "Döda fiender på minst 15 meters avstånd i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1045_var_desc"                                  "Döda fiender med valfritt krypskyttegevär i <b>{s:location}</b>."
-		"quest_1046_var_desc"                                  "Döda fiender med huvudskott i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1047_var_desc"                                  "Döda {s:kills} fiender med {s:weapon} i <b>Guardian: {s:location}</b>."
-		"quest_1048_var_desc"                                  "Gör skada med granater i <b>{s:location}</b>."
-		"quest_1049_var_desc"                                  "Tjäna in pengar i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1050_var_desc"                                  "Vinn rundor i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1051_var_desc"                                  "Döda {s:kills} fiender i <b>Guardian: {s:location}</b>."
-		"quest_1052_var_desc"                                  "Välj ett kort från motståndarlaget i <b>{s:location}</b>."
-		"quest_1053_var_desc"                                  "Kasta rökgranater som landar på specifika platser i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1054_var_desc"                                  "Vinn rundor i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1055_var_desc"                                  "Döda {s:kills} fiender med terroristvapen i <b>Guardian: {s:location}</b>."
-		"quest_1056_var_desc"                                  "Döda fiender i tunneln eller palatset i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1057_var_desc"                                  "Döda fiender i <b>{s:location}</b>."
-		"quest_1058_var_desc"                                  "Vinn rundor i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1059_var_desc"                                  "Döda {s:kills} fiender med k-pist i <b>Guardian: {s:location}</b>."
-		"quest_1060_var_desc"                                  "Döda fiender med k-pist i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1061_var_desc"                                  "Döda fiender med k-pist i <b>{s:location}</b>."
-		"quest_1062_var_desc"                                  "Vinn rundor i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1063_var_desc"                                  "Döda {s:kills} fiender med hagelgevär i <b>Guardian: {s:location}</b>."
-		"quest_1064_var_desc"                                  "Välj ett MVP-kort i <b>{s:location}</b>."
-		"quest_1065_var_desc"                                  "Spreja graffiti på specifika platser i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1100_var_desc"                                  "Vinn rundor i <b>{s:location}</b>."
-		"quest_1066_var_desc"                                  "Vinn rundor i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1067_var_desc"                                  "Döda {s:kills} fiender med huvudskott med AUG i <b>Guardian: {s:location}</b>."
-		"quest_1068_var_desc"                                  "Blända en fiende med en chockgranat i <b>{s:location}</b>."
-		"quest_1069_var_desc"                                  "Spreja graffiti på specifika platser i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1101_var_desc"                                  "Vinn rundor i <b>{s:location}</b>."
-		"quest_1070_var_desc"                                  "Vinn rundor i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1071_var_desc"                                  "Döda {s:kills} fiender på mindre än 10 meters avstånd i <b>Guardian: {s:location}</b>."
-		"quest_1072_var_desc"                                  "Döda fiender på ett avstånd mindre än 10 meter i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1073_var_desc"                                  "Döda fiender i <b>{s:location}</b>."		
-		"quest_1074_var_desc"                                  "Vinn rundor i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1075_var_desc"                                  "Döda {s:kills} fiender i <b>Guardian: {s:location}</b>."
-		"quest_1076_var_desc"                                  "Döda fiender med huvudskott i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1077_var_desc"                                  "Döda fiender med tyngre vapen i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1102_var_desc"                                  "Vinn rundor i <b>{s:location}</b>."
-		"quest_1078_var_desc"                                  "Vinn rundor i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1079_var_desc"                                  "Döda {s:kills} fiender med SSG08 i <b>Guardian: {s:location}</b>."
-		"quest_1080_var_desc"                                  "Döda hönor i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1081_var_desc"                                  "Döda fiender i <b>{s:location}</b>."
-		"quest_1082_var_desc"                                  "Vinn rundor i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1083_var_desc"                                  "Döda {s:kills} fiender med MAG-7 i <b>Guardian: {s:location}</b>."
-		"quest_1084_var_desc"                                  "Döda fiender i <b>{s:location}</b>."
-		"quest_1085_var_desc"                                  "Gör skada med granater i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1085_v2_var_desc"                   			   "Gör skada med granater i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1086_var_desc"                                  "Vinn rundor i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1087_var_desc"                                  "Döda {s:kills} fiender med fiendevapen i <b>Guardian: {s:location}</b>."
-		"quest_1088_var_desc"                                  "Döda fiender från specifika platser i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1089_var_desc"                                  "Döda fiender med kikarsiktet i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1089_v2_var_desc"                               "Döda fiender med kikarsiktet i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1090_var_desc"                                  "Vinn rundor i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1091_var_desc"                                  "Döda {s:kills} fiender i <b>Guardian: {s:location}</b>."
-		"quest_1092_var_desc"                                  "Få poäng med bonusvapnet i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1092_v2_var_desc"                                  "Få poäng med bonusvapnet i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1093_var_desc"                                  "Spendera pengar i <b>{s:gamemode}</b>."
-		"quest_1094_var_desc"                                  "Vinn rundor i <b>{s:gamemode}: {s:location}</b>."
-		"quest_1095_var_desc"                                  "Döda {s:kills} fiender i <b>Guardian: {s:location}</b>."
-		"quest_1095_v2_var_desc"                                  "Döda {s:kills} fiender med UMP-45 i <b>Guardian: {s:location}</b>."
-		"quest_1096_var_desc"                                  "Vinn rundor i <b>{s:location}</b>."
-		"quest_1097_var_desc"                                  "Slutför uppdraget."
-		"quest_1097_v2_var_desc"                                  "<i>... näthinnan anpassar sig snabbt till det starka skenet, som förblindar temporärt.</i>"
-		"quest_1103_var_desc"                                  "Blända fiender med chockgranater i <b>{s:gamemode}: {s:location}</b>."
-
-// OP11 Week 1 Missions
-		"quest_1106_var_desc"                              "Överlev en luftattack i <b>Guardian: {s:location}</b>."
-		"quest_1107_var_desc"                              "Utför flera olika uppdrag i <b>Danger Zone: {s:location}</b>"
-		"quest_1108_var_desc"                              "Döda fiender på olika platser"
-
-// OP11 Week 2 Missions
-		"quest_1111_var_desc"                              "Döda fiender i <b>Guardian: {s:location}</b>."
-
-// OP11 Week 3 Missions
-		"quest_1115_var_desc"                              "Döda fiender med krypskyttegevär i <b>Guardian: {s:location}</b>."
-		"quest_1117_var_desc"                              "Spreja graffiti på olika platser"
-
-// OP11 Week 4 Missions
-		"quest_1119_var_desc"                              "Döda fiender med hagelgevär i <b>Guardian: {s:location}</b>."
-		"quest_1120_var_desc"                              "Döda fiender på olika platser"
-
-// OP11 Week 5 Missions
-		"quest_1123_var_desc"                              "Döda fiender med SMG i <b>Guardian: {s:location}</b>."
-		"quest_1125_var_desc"                              "Slutför en mängd olika uppdrag"
-
-// OP11 Week 6 Missions
-		"quest_1127_var_desc"                              "Döda fiender med gevär i <b>Guardian: {s:location}</b>."
-		"quest_1128_var_desc"                              "Få en killstreak i <b>Deathmatch: {s:location}</b>."
-
-// OP11 Week 7 Missions
-		"quest_1131_var_desc"                              "Döda fiender i <b>Guardian: {s:location}</b>."
-		"quest_1132_var_desc"                              "Döda fiender på en rad olika radarplatser"
-
-// OP11 Week 8 Missions
-		"quest_1135_var_desc"                              "Döda fiender med hagelgevär i <b>Guardian: {s:location}</b>."
-		"quest_1137_var_desc"                              "Slutför en mängd olika uppdrag med granater"
-
-// OP11 Week 9 Missions
-		"quest_1139_var_desc"                              "Döda med pistoler i <b>Guardian: {s:location}</b>."
-		"quest_1140_var_desc"                              "Spreja graffiti på olika platser"
-
-// OP11 Week 10 Missions
-		"quest_1143_var_desc"                              "Döda fiender med AUG i <b>Guardian: {s:location}</b>."
-		"quest_1144_var_desc"                              "Döda fiender på en rad olika radarplatser"
-
-// OP11 Week 11 Missions
-		"quest_1147_var_desc"                              "Döda fiender med MP9 i <b>Guardian: {s:location}</b>."
-
-// OP11 Week 12 Missions
-		"quest_1151_var_desc"                              "Döda fiender med SMG i <b>Guardian: {s:location}</b>."
-		"quest_1152_var_desc"                              "Få kill streaks"
-
-// OP11 Week 13 Missions
-		"quest_1155_var_desc"                              "Döda med fiendens vapen i <b>Guardian: {s:location}</b>."
-		"quest_1156_var_desc"                              "Döda fiender på en rad olika radarplatser"
-		"quest_1157_var_desc"                              "Spreja graffiti på olika platser"
-
-// OP11 Week 14 Missions
-		"quest_1159_var_desc"                              "Döda fiender med sprängladdning i <b>Guardian: {s:location}</b>."
-
-// OP11 Week 15 Missions
-		"quest_1163_var_desc"                              "Döda fiender med tunga vapen i <b>Guardian: {s:location}</b>."
-
-// OP11 Week 16 Missions
-		"quest_1167_var_desc"                              "Döda fiender i <b>Guardian: {s:location}</b>."
-		"quest_1169_var_desc"                              "Döda fiender med vapen från en av de fyra Operation Riptide-kollektionerna"
-
-
-// OP11 Week 1 Sub-Missions
-		"quest_1200_var_desc"                              "Vinn {d:points} match"
-		"quest_1201_var_desc"                              "Vinn {d:points} rundor"
-		"quest_1202_var_desc"                              "Gör {d:points} skada med granater i en <i>enskild match</i>"
-		"quest_1203_var_desc"                              "Gör {d:points} skada med granater"
-		"quest_1204_var_desc"                              "Förstör en fiendedrönare"
-		"quest_1205_var_desc"                              "Spräng en tunna"
-		"quest_1206_var_desc"                              "Förstör lite glas"
-		"quest_1207_var_desc"                              "Hoppa från vattentornet med en studsmina"
-		"quest_1208_var_desc"                              "Rädda en gisslan"
-		"quest_1209_var_desc"                              "Döda en fiende från T-starten"
-		"quest_1210_var_desc"                              "Döda en fiende från T-rampen"
-		"quest_1211_var_desc"                              "Döda en fiende från bombplats A"
-		"quest_1212_var_desc"                              "Döda en fiende från AT-starten"
-		"quest_1213_var_desc"                              "Döda en fiende från butiken"
-		"quest_1214_var_desc"                              "Döda en fiende från bombplats B"
-		"quest_1215_var_desc"                              "Döda en fiende från gångbron"
-		"quest_1216_var_desc"                              "Döda en fiende från mitten."
-		"quest_1217_var_desc"                              "Döda en fiende från trapporna."
-		"quest_1218_var_desc"                              "Döda en fiende från bombplats A (igen)!"
-		"quest_1219_var_desc"                              "Få {d:points} multi-kill-rundor i <i>en enskild match</i>"
-		"quest_1220_var_desc"                              "Döda {d:points} fiender"
-
-// OP11 Week 2 Sub-Missions
-		"quest_1221_var_desc"                              "Vinn {d:points} match"
-		"quest_1222_var_desc"                              "Vinn {d:points} rundor"
-		"quest_1223_var_desc"                              "Döda {d:points} fiender med huvudskott i en <i>enskild match</i>"
-		"quest_1224_var_desc"                              "Döda {d:points} fiender med huvudskott"
-		"quest_1225_var_desc"                              "Gör skada med granater"
-		"quest_1226_var_desc"                              "Döda {d:points} fiender"
-
-// OP11 Week 3 Sub-Missions		
-		"quest_1227_var_desc"                              "Vinn {d:points} match"
-		"quest_1228_var_desc"                              "Vinn {d:points} rundor"
-		"quest_1229_var_desc"                              "Gör {d:points} skada i en <i>enskild match</i>"
-		"quest_1230_var_desc"                              "Gör {d:points} skada"
-		"quest_1231_var_desc"                              "Spreja graffiti vid AT-starten"
-		"quest_1232_var_desc"                              "Spreja graffiti vid bombplats A"
-		"quest_1233_var_desc"                              "Spreja graffiti vid gropen"
-		"quest_1234_var_desc"                              "Spreja graffiti vid bombplats B"
-		"quest_1235_var_desc"                              "Spreja graffiti vid mittdörrarna"
-		"quest_1236_var_desc"                              "Spreja graffiti vid T-starten"
-		"quest_1237_var_desc"                              "Spreja graffiti vid gångbron"
-		"quest_1238_var_desc"                              "Spreja graffiti vid översta tunneln"
-		"quest_1239_var_desc"                              "Spreja graffiti vid långdörrarna"
-		"quest_1240_var_desc"                              "Spreja graffiti vid mitten"
-
-// OP11 Week 4 Sub-Missions		
-		"quest_1241_var_desc"                              "Vinn {d:points} match"
-		"quest_1242_var_desc"                              "Vinn {d:points} rundor"
-		"quest_1243_var_desc"                              "Döda en fiende utifrån"
-		"quest_1244_var_desc"                              "Döda en fiende från bombplats A"
-		"quest_1245_var_desc"                              "Döda en fiende från lobbyn"
-		"quest_1246_var_desc"                              "Döda en fiende från rampen"
-		"quest_1247_var_desc"                              "Döda en fiende från bombplats B"
-		"quest_1248_var_desc"                              "Döda en fiende från Secret"
-		"quest_1249_var_desc"                              "Döda en fiende utifrån (igen!)"
-		"quest_1250_var_desc"                              "Döda en fiende från T-starten"
-		"quest_1251_var_desc"                              "Döda en fiende från toppen av silon"
-		"quest_1252_var_desc"                              "Döda en fiende från CT-starten"
-		"quest_1253_var_desc"                              "Gör följande {d:points} gånger i en <i>enskild match</i>: Döda en fiende med en av dina 5 första kulor i rundan."
-		"quest_1254_var_desc"                              "Döda {d:points} fiender"
-
-// OP11 Week 5 Sub-Missions		
-		"quest_1255_var_desc"                              "Bli MVP {d:points} gånger i en <i>enda match</i>"
-		"quest_1256_var_desc"                              "Vinn {d:points} rundor"
-		"quest_1257_var_desc"                              "Döda {d:points} fiender med huvudskott i en <i>enda match</i>"
-		"quest_1258_var_desc"                              "Döda {d:points} fiender med huvudskott"
-		"quest_1259_var_desc"                              "Tjäna pengar medan din platta är utan mottagning"
-		"quest_1260_var_desc"                              "Köp uppgraderingen som ger högre upplösning till plattan"
-		"quest_1261_var_desc"                              "Förstör ett automatiskt vaktgevär"
-		"quest_1262_var_desc"                              "Placera en C4 vid turistplatsen"
-		"quest_1263_var_desc"                              "Skada en fiende medan du står på en sten"
-		
-// OP11 Week 6 Sub-Missions	
-		"quest_1264_var_desc"                              "Vinn {d:points} match"
-		"quest_1265_var_desc"                              "Vinn {d:points} rundor"
-		"quest_1266_var_desc"                              "Döda tre i rad"
-		"quest_1267_var_desc"                              "Döda fem i rad"
-		"quest_1268_var_desc"                              "Döda sju i rad"
-		"quest_1269_var_desc"                              "Döda {d:points} fiender med någon annans vapen i en <i>enskild match</i>"
-		"quest_1270_var_desc"                              "Döda {d:points} fiender med någon annans vapen"
-
-// OP11 Week 7 Sub-Missions			
-		"quest_1271_var_desc"                              "Vinn {d:points} match"
-		"quest_1272_var_desc"                              "Vinn {d:points} rundor"
-		"quest_1273_var_desc"                              "Döda en fiende från mittendörrarna"
-		"quest_1274_var_desc"                              "Döda en fiende från catwalk"
-		"quest_1275_var_desc"                              "Döda en fiende från toppen av mitten"
-		"quest_1276_var_desc"                              "Döda en fiende från gropen"
-		"quest_1277_var_desc"                              "Döda en fiende från bombplats A"
-		"quest_1278_var_desc"                              "Döda en fiende från mittendörrarna (igen!)"
-		"quest_1279_var_desc"                              "Döda en fiende från bombplats B"
-		"quest_1280_var_desc"                              "Döda en fiende från tunnlarna"
-		"quest_1281_var_desc"                              "Döda en fiende från T-rampen"
-		"quest_1282_var_desc"                              "Döda en fiende från T-starten"
-		"quest_1283_var_desc"                              "Gör {d:points} skada medan du är i luften i en <i>enskild match</i>"
-		"quest_1284_var_desc"                              "Gör {d:points} skada medan du är i luften"
-
-// OP11 Week 8 Sub-Missions			
-		"quest_1285_var_desc"                              "Vinn {d:points} match"
-		"quest_1286_var_desc"                              "Vinn {d:points} rundor"
-		"quest_1287_var_desc"                              "Ta dig till knivnivån"
-		"quest_1288_var_desc"                              "Uppgradera ditt vapen {d:points} gånger"
-		"quest_1289_var_desc"                              "Kasta en rökgranat till toppen av mitten"
-		"quest_1290_var_desc"                              "Kasta en rökgranat vid bananen"
-		"quest_1291_var_desc"                              "Kasta en molotovcocktail vid bananen"
-		"quest_1292_var_desc"                              "Blända 3 fiender i en enskild match"
-		"quest_1293_var_desc"                              "Gör {d:points} skada med granater i en enskild match"
-
-// OP11 Week 9 Sub-Missions			
-		"quest_1294_var_desc"                              "Få {d:points} huvudskott i <i>en enda match</i>"
-		"quest_1295_var_desc"                              "Döda {d:points} fiender med huvudskott"
-		"quest_1296_var_desc"                              "Spreja graffiti på toppen av vattentornet"
-		"quest_1297_var_desc"                              "Spreja graffiti på ankaret vid piren"
-		"quest_1298_var_desc"                              "Spreja graffiti vid byggkranen"
-		"quest_1299_var_desc"                              "Spreja graffiti på taket vid radion"
-		"quest_1300_var_desc"                              "Spreja graffiti i marknaden vid hotellet"
-		"quest_1301_var_desc"                              "Spreja graffiti på grillarna vid picknicken"
-		"quest_1302_var_desc"                              "Spreja graffiti på toppen av fyren"
-		"quest_1303_var_desc"                              "Spreja graffiti på bron"
-		"quest_1304_var_desc"                              "Spreja graffiti på byggarbetsplatsen"
-		"quest_1305_var_desc"                              "Döda {d:points} fiender med Deagle i <i>en enda match</i>"
-		"quest_1306_var_desc"                              "Uppgradera ditt vapen {d:points} gånger"
-
-// OP11 Week 10 Sub-Missions			
-		"quest_1307_var_desc"                              "Vinn {d:points} match"
-		"quest_1308_var_desc"                              "Vinn {d:points} rundor"
-		"quest_1309_var_desc"                              "Döda en fiende från lekplatsen"
-		"quest_1310_var_desc"                              "Döda en fiende från övre parken"
-		"quest_1311_var_desc"                              "Döda en fiende från bombplats A"
-		"quest_1312_var_desc"                              "Döda en fiende från snipernästet"
-		"quest_1313_var_desc"                              "Döda en fiende från bombplats B"
-		"quest_1314_var_desc"                              "Döda en fiende från T-starten"
-		"quest_1315_var_desc"                              "Döda en fiende i tunnlarna"
-		"quest_1316_var_desc"                              "Döda en fiende från lekplatsen (igen!)"
-		"quest_1317_var_desc"                              "Döda en fiende från fontänen"
-		"quest_1318_var_desc"                              "Döda en fiende från toaletterna"
-		"quest_1319_var_desc"                              "Döda {d:points} fiender med huvudskott i en <i>enskild match</i>"
-		"quest_1320_var_desc"                              "Döda {d:points} fiender med huvudskott"
-
-// OP11 Week 11 Sub-Missions			
-		"quest_1321_var_desc"                              "Vinn {d:points} match"
-		"quest_1322_var_desc"                              "Vinn {d:points} rundor"
-		"quest_1323_var_desc"                              "Använd hälsosprutan {d:points} gånger i en <i>enskild match</i>"
-		"quest_1324_var_desc"                              "Använd hälsosprutan {d:points} gånger"
-		"quest_1325_var_desc"                              "Gör {d:points} skada med granater i en <i>enskild match</i>"
-		"quest_1326_var_desc"                              "Gör {d:points} skada med granater"
-
-// OP11 Week 12 Sub-Missions			
-		"quest_1327_var_desc"                              "Vinn {d:points} match"
-		"quest_1328_var_desc"                              "Vinn {d:points} rundor"
-		"quest_1329_var_desc"                              "Döda tre i rad"
-		"quest_1330_var_desc"                              "Döda fyra i rad"
-		"quest_1331_var_desc"                              "Döda fem i rad"
-		"quest_1332_var_desc"                              "Döda fiender med {d:points} olika vapen i en <i>enskild match</i>"
-		"quest_1333_var_desc"                              "Döda fiender med {d:points} olika vapen (kan upprepas i flera matcher)"
-
-// OP11 Week 13 Sub-Missions			
-		"quest_1334_var_desc"                              "Vinn {d:points} match"
-		"quest_1335_var_desc"                              "Vinn {d:points} rundor"
-		"quest_1336_var_desc"                              "Döda en fiende från mitten"
-		"quest_1337_var_desc"                              "Döda en fiende från bombplats A"
-		"quest_1338_var_desc"                              "Döda en fiende från CT-starten"
-		"quest_1339_var_desc"                              "Döda en fiende från huset"
-		"quest_1340_var_desc"                              "Döda en fiende från bombplats B"
-		"quest_1341_var_desc"                              "Döda en fiende från ruinerna"
-		"quest_1342_var_desc"                              "Döda en fiende från T-starten"
-		"quest_1343_var_desc"                              "Döda en fiende från huvudsalen"
-		"quest_1344_var_desc"                              "Döda en fiende från bombplats A (igen)!"
-		"quest_1345_var_desc"                              "Döda en fiende från mitten (igen!)"
-		"quest_1346_var_desc"                              "Spreja graffiti vid valvet väster om Kasbah"
-		"quest_1347_var_desc"                              "Spreja graffiti i spiraltrappan vid Kasbah"
-		"quest_1348_var_desc"                              "Spreja graffiti vid kupolen"
-		"quest_1349_var_desc"                              "Spreja graffiti vid helikopterplattan vid basen"
-		"quest_1350_var_desc"                              "Spreja graffiti när du är på en pråm vid lastfartygen"
-		"quest_1351_var_desc"                              "Spreja graffiti inuti Hotel Aurore i staden"
-		"quest_1352_var_desc"                              "Spreja graffiti på silo 3 vid tankarna"
-		"quest_1353_var_desc"                              "Spreja graffiti vid fyrtornet"
-		"quest_1354_var_desc"                              "Spreja graffiti vid piren vid fiskeplatsen"
-
-// OP11 Week 14 Sub-Missions			
-		"quest_1355_var_desc"                              "Vinn {d:points} match"
-		"quest_1356_var_desc"                              "Vinn {d:points} rundor"
-		"quest_1357_var_desc"                              "Döda {d:points} fiender medan du använder kikarsikte i <i>en enda match</i>"
-		"quest_1358_var_desc"                              "Döda {d:points} fiender medan du använder kikarsikte"
-		"quest_1359_var_desc"                              "Döda fiender under de första 30 sekunderna av en runda {d:points} gånger"
-		"quest_1360_var_desc"                              "Döda {d:points} fiender"
-
-// OP11 Week 15 Sub-Missions			
-		"quest_1361_var_desc"                              "Vinn {d:points} match"
-		"quest_1362_var_desc"                              "Vinn {d:points} rundor"
-		"quest_1363_var_desc"                              "Döda Arms Race-ledaren {d:points} gånger i <i>en enda match</i>"
-		"quest_1364_var_desc"                              "Döda {d:points} fiender"
-		"quest_1365_var_desc"                              "Gör {d:points} skada i en <i>enskild match</i>"
-		"quest_1366_var_desc"                              "Gör {d:points} skada"
-
-// OP11 Week 16 Sub-Missions	
-		"quest_1367_var_desc"                              "Vinn {d:points} match"
-		"quest_1368_var_desc"                              "Vinn {d:points} rundor"
-		"quest_1369_var_desc"                              "Döda {d:points} fiender med en Operation Riptide-agent i <i>en enda match</i>"
-		"quest_1370_var_desc"                              "Döda {d:points} fiender"
-		"quest_1371_var_desc"                              "Döda {d:points} fiender med vapen från en av Operation Riptide-kollektionerna"
-		"quest_1372_var_desc"                              "Döda {d:points} fiender"
-
-
-
-		"quest_default_hud_var_desc" "{s:commandverb} {s:target} {s:actions}"
-		"quest_weapon_hud_var_desc" "{s:commandverb} {s:actions}: {s:weapon}"
-		"quest_single_hud_var_desc"	"{s:commandverb} {s:target} {s:actions}<br> innan matchens slut"
-		"quest_weapon_single_hud_var_desc" "{s:commandverb} {s:actions}: {s:weapon}<br> innan matchens slut"
-	
-		//hud exceptions:
-		"quest_931_hud_var_desc"	"Döda fiender med {s:weapon}"
-		"quest_932_hud_var_desc"	"Döda medan du är i luften"
-		"quest_933_hud_var_desc"	"Vinn rundor"
-		"quest_934_hud_var_desc"	"Döda fiender med {s:weapon}"
-		"quest_935_hud_var_desc"	"Döda med {s:weapon}<br> innan matchens slut"
-		"quest_936_hud_var_desc"	"Döda fiender med {s:weapon}"
-		"quest_937_hud_var_desc"	"Använd graffiti"
-		"quest_937_hud_var_desc_CT"	"Spraya graffiti vid silon eller varuautomaterna"
-		"quest_937_hud_var_desc_T"	"Spraya graffiti vid Heaven eller Garage"
-        "quest_938_hud_var_desc"	"Döda Arms Race-ledaren"
-        "quest_939_hud_var_desc"	"Döda fiender med {s:weapon}"
-        "quest_940_hud_var_desc"	"Vinn rundor"
-        "quest_941_hud_var_desc"	"Vinn pistolrundor"
-        "quest_942_hud_var_desc"	"Döda med {s:weapon} <br> innan matchens slut"
-        "quest_943_hud_var_desc"	"Döda"
-        "quest_944_hud_var_desc"	"Spendera pengar"
-        "quest_945_hud_var_desc"	"Döda"
-        "quest_946_hud_var_desc"	"Vinn rundor"
-        "quest_947_hud_var_desc"	"Vinn rundor"
-		"quest_948_hud_var_desc"	"Rädda eller förhindra räddningen"
-		"quest_948_hud_var_desc_CT"	"Rädda gisslan"
-		"quest_948_hud_var_desc_T"	"Döda gisslanbefriaren"
-        "quest_949_hud_var_desc"	"Döda fiender med {s:weapon}"
-        "quest_950_hud_var_desc"	"Döda med tunga vapen"	
-        "quest_951_hud_var_desc"	"Döda fiender med {s:weapon}"	
-        "quest_952_hud_var_desc"	"Vinn rundor"	
-        "quest_953_hud_var_desc"	"Vinn rundor"	
-        "quest_954_hud_var_desc"	"Döda {s:target} innan matchens slut"
-		"quest_955_hud_var_desc" 	"Bli vän med kycklingar[{s:bind_use}] <br> i {d:points} sekunder"
-		"quest_956_hud_var_desc" 	"Spendera tid i luften med fallskärm"
-		"quest_957_hud_var_desc" 	"Döda fiender med {s:weapon}"
-		"quest_958_hud_var_desc" 	"Vinn rundor"
-		"quest_959_hud_var_desc" 	"Döda"
-		"quest_960_hud_var_desc" 	"Döda fiender med {s:weapon}"
-		"quest_961_hud_var_desc"	"Döda med pistol"
-		"quest_962_hud_var_desc"	"Döda utan att spendera pengar<br> innan matchens slut"
-		"quest_963_hud_var_desc"	"Döda fiender med {s:weapon}"
-		"quest_964_hud_var_desc"	"Vinn pistolrundor"
-		"quest_965_hud_var_desc"    "Döda"
-		"quest_966_hud_var_desc" 	"Tjäna pengar"
-		"quest_967_hud_var_desc"	"Döda fiender med {s:weapon}"
-		"quest_968_hud_var_desc"    "Döda med krypskyttegevär"
-		"quest_969_hud_var_desc"	"Döda med {s:weapon} utan sikte"
-		"quest_970_hud_var_desc"	"Vinn rundor"
-		"quest_971_hud_var_desc"	"Döda"
-		"quest_972_hud_var_desc"    "Döda med huvudskott<br> innan matchens slut"
-		"quest_973_hud_var_desc" 	"Döda"
-		"quest_974_hud_var_desc" 	"Döda med huvudskott"
-		"quest_975_hud_var_desc"    "Döda med CT-vapen"
-		"quest_976_hud_var_desc" 	"Vinn rundor"
-		"quest_977_hud_var_desc"	"Vinn rundor"
-		"quest_978_hud_var_desc"	"Döda fiender med {s:weapon}"
-		"quest_979_hud_var_desc" 	"Döda fyra i rad"
-        "quest_980_hud_var_desc" 	"Kom på fjärde plats eller bättre"
-		"quest_981_hud_var_desc" 	"Döda med huvudskott med: {s:weapon}"		
-		"quest_982_hud_var_desc"	"Döda med huvudskott med {s:weapon} <br> innan matchens slut"	
-		"quest_983_hud_var_desc" 	"Döda med huvudskott"
-		"quest_984_hud_var_desc"    "Få MVP-stjärnor"
-		"quest_985_hud_var_desc" 	"Döda med standardpistolen"
-		"quest_986_hud_var_desc" 	"Döda fiender med {s:weapon}"
-		"quest_987_hud_var_desc"	"Döda med"
-		"quest_987_hud_var_desc_CT"	"Döda fiender med AK-47"
-		"quest_987_hud_var_desc_T"	"Döda fiender med M4A4 eller M4A1-S"
-		"quest_988_hud_var_desc" 	"Döda med kniv"
-		"quest_989_hud_var_desc"	"Gör skada med granater"
-		"quest_990_hud_var_desc" 	"Eliminera egenhändigt motståndarlaget"
-		"quest_991_hud_var_desc_CT" "Döda fiender med Five-Seven"
-		"quest_991_hud_var_desc_T" 	"Döda fiender med Tec-9"
-		"quest_991_hud_var_desc" 	"Döda fiender med Tec-9 eller Five-Seven"
-		"quest_992_hud_var_desc" 	"Döda fiender med sprängladdning"
-		"quest_993_hud_var_desc" 	"Gör skada med granater"
-		"quest_994_hud_var_desc" 	"Döda"
-		"quest_995_hud_var_desc" 	"Vinn rundor"
-		"quest_996_hud_var_desc"	"Döda"
-		"quest_997_hud_var_desc_CT"	"Döda fiender med FAMAS"
-		"quest_997_hud_var_desc_T"	"Döda fiender med Galil AR"
-		"quest_997_hud_var_desc"	"Döda fiender med Galil AR eller FAMAS"
-		"quest_998_hud_var_desc" 	"Döda fiender med {s:weapon}"
-		"quest_999_hud_var_desc"	"Döda fiender med {s:weapon}"
-		"quest_1000_hud_var_desc" 	"Förstör fientliga drönare"
-		"quest_1001_hud_var_desc"   "Få MVP-stjärnor<br> vid matchens slut"
-		"quest_1002_hud_var_desc" 	"Döda flera under samma runda"
-		"quest_1003_hud_var_desc"   "Döda fiender med {s:weapon}"
-		"quest_1004_hud_var_desc"   "Döda fiender med {s:weapon}"
-		"quest_1005_hud_var_desc" 	"Vinn rundor"
-		"quest_1006_hud_var_desc" 	"Döda"
-		"quest_1007_hud_var_desc" 	"Förstör låsta dörrar"
-		"quest_1008_hud_var_desc_CT" 	"Döda fiender med M4A4 eller M4A1-S"
-		"quest_1008_hud_var_desc_T"  	"Döda fiender med AK-47"
-		"quest_1008_hud_var_desc" 	"Döda fiender med AK-47 eller M4A4"
-		"quest_1009_hud_var_desc"	"Vinn rundor"
-		"quest_1010_hud_var_desc"	"Döda fiender med {s:weapon}"
-		"quest_1011_hud_var_desc" 	"Vinn 5 rundor i en halvlek"
-		"quest_1012_hud_var_desc"	"Gå på studsminor"
-		"quest_1013_hud_var_desc" 	"Döda fiender med {s:weapon}"
-		"quest_1014_hud_var_desc"   "Döda fiender med {s:weapon}"
-		"quest_1015_hud_var_desc"   "Döda medan du spenderar mindre än 2 000 $"
-		"quest_1016_hud_var_desc"   "Inneha 3 000 $"
-		"quest_1017_hud_var_desc" 	"Vinn rundor"
-		"quest_1018_hud_var_desc" 	"Döda"
-		"quest_1019_hud_var_desc" 	"Döda med SMG"
-		"quest_1020_hud_var_desc" 	"Döda fiender med {s:weapon}"
-		"quest_1021_hud_var_desc" 	"Massakrera hönor"
-		"quest_1022_hud_var_desc" 	"Spräng tunnor"
-		"quest_1023_hud_var_desc" 	"Vinn rundor"
-		"quest_1024_hud_var_desc" 	"Förstör glasrutor"
-		"quest_1025_hud_var_desc" 	"Vinn rundor"
-		"quest_1027_hud_var_desc"	"Använd graffiti<br> i fiendens startområde"
-		"quest_1028_hud_var_desc"	"Döda från<br> Banan eller Lägenheter"
-		"quest_1029_hud_var_desc"	"Träffa med rökgranater"
-		"quest_1029_hud_var_desc_CT"	"Träffa med rökgranater:<br> Lägenheter eller T-ramp"
-		"quest_1029_hud_var_desc_T"	"Träffa med rökgranater:<br> Snipernästet eller Trappan"
-		"quest_1098_hud_var_desc"               "Vinn rundor"
-		"quest_1032_hud_var_desc"               "Vinn rundor"
-		"quest_1033_hud_var_desc"               "Döda fiender"
-		"quest_1034_hud_var_desc"               "Undersök Phoenix"
-		"quest_1035_hud_var_desc"               "Döda fiender med AK-47, M4A4, eller M4A1-S"
-		"quest_1036_hud_var_desc"               "Vinn rundor"
-		"quest_1037_hud_var_desc"               "Döda fiender"
-		"quest_1099_hud_var_desc"               "Få MVP-stjärnor"
-		"quest_1038_hud_var_desc"               "Vinn rundor"
-		"quest_1039_hud_var_desc"               "Döda fiender med olika pistoler"
-		"quest_1040_hud_var_desc"               "Döda fiender med pistol"
-		"quest_1041_hud_var_desc"               "Döda fiender med Desert Eagle"
-		"quest_1042_hud_var_desc"               "Vinn rundor"
-		"quest_1043_hud_var_desc"               "Döda fiender"
-		"quest_1044_hud_var_desc"               "Döda fiender på minst 15 meters avstånd"
-		"quest_1045_hud_var_desc"               "Döda fiender med krypskyttegevär"
-		"quest_1046_hud_var_desc"               "Döda fiender med huvudskott"
-		"quest_1047_hud_var_desc"               "Döda fiender med M249"
-		"quest_1048_hud_var_desc"               "Gör skada med granater"
-		"quest_1049_hud_var_desc"               "Tjäna pengar"
-		"quest_1050_hud_var_desc"               "Vinn rundor"
-		"quest_1051_hud_var_desc"               "Döda fiender"
-		"quest_1052_hud_var_desc"               "Välj fiendens kort"
-		"quest_1053_hud_var_desc"               "Kasta rökgranater"
-		"quest_1053_hud_var_desc_T"             "Kasta rökgranater som landar vid Garage eller Mini"
-		"quest_1053_hud_var_desc_CT"            "Kasta rökgranater som landar i kontrollrummet eller skjulet"
-		"quest_1054_hud_var_desc"               "Vinn rundor"
-		"quest_1055_hud_var_desc"               "Döda fiender"
-		"quest_1056_hud_var_desc"               "Döda fiender i tunneln eller palatset"
-		"quest_1057_hud_var_desc"               "Döda fiender"
-		"quest_1058_hud_var_desc"               "Vinn rundor"
-		"quest_1059_hud_var_desc"               "Döda fiender"
-		"quest_1060_hud_var_desc"               "Döda fiender med {s:weapon}"
-		"quest_1061_hud_var_desc"               "Döda fiender med {s:weapon}"
-		"quest_1062_hud_var_desc"               "Vinn rundor"
-		"quest_1063_hud_var_desc"               "Döda fiender"
-		"quest_1064_hud_var_desc"               "Välj MVP-kortet"
-		"quest_1065_hud_var_desc"               "Spreja graffiti"
-		"quest_1065_hud_var_desc_T"             "Spreja graffiti vid mitten"
-		"quest_1065_hud_var_desc_CT"            "Spreja graffiti vid övre T-sidan eller utomhus"
-		"quest_1100_hud_var_desc"               "Vinn rundor"
-		"quest_1066_hud_var_desc"               "Vinn rundor"
-		"quest_1067_hud_var_desc"               "AUG-huvudskott"
-		"quest_1068_hud_var_desc"               "Blända en fiende med en chockgranat"
-		"quest_1069_hud_var_desc"               "Spreja graffiti"
-		"quest_1069_hud_var_desc_T"             "Spreja graffiti vid Catwalk eller övre tunneln"
-		"quest_1069_hud_var_desc_CT"            "Spreja graffiti vid de nedre tunnlarna eller den korta trappen"
-		"quest_1101_hud_var_desc"               "Vinn rundor"
-		"quest_1070_hud_var_desc"               "Vinn rundor"
-		"quest_1071_hud_var_desc"               "Närmare än 10 meters avstånd"
-		"quest_1072_hud_var_desc"               "Döda fiender som är närmare än 10 meter"
-		"quest_1073_hud_var_desc"               "Döda fiender"
-		"quest_1074_hud_var_desc"               "Vinn rundor"
-		"quest_1075_hud_var_desc"               "Döda fiender"
-		"quest_1076_hud_var_desc"               "Döda med huvudskott"
-		"quest_1077_hud_var_desc"               "Döda fiender med {s:weapon}"
-		"quest_1102_hud_var_desc"               "Vinn rundor"
-		"quest_1078_hud_var_desc"               "Vinn rundor"
-		"quest_1079_hud_var_desc"               "Döda fiender med {s:weapon}"
-		"quest_1080_hud_var_desc"               "Döda hönor"
-		"quest_1081_hud_var_desc"               "Döda fiender"
-		"quest_1082_hud_var_desc"               "Vinn rundor"
-		"quest_1083_hud_var_desc"               "Döda fiender"
-		"quest_1084_hud_var_desc"               "Döda fiender"
-		"quest_1085_hud_var_desc"               "Gör skada med granater"
-		"quest_1085_v2_hud_var_desc"     	    "Gör skada med granater"
-		"quest_1086_hud_var_desc"               "Vinn rundor"
-		"quest_1087_hud_var_desc"               "Döda fiender"
-		"quest_1088_hud_var_desc"               "Döda fiender från specifika platser"
-		"quest_1088_hud_var_desc_T"             "Döda fiender som befinner sig på bombplats A eller B"
-		"quest_1088_hud_var_desc_CT"            "Döda fiender från bombplats A eller B"
-		"quest_1089_hud_var_desc"               "Döda fiender med kikarsikte"
-		"quest_1089_v2_hud_var_desc"               "Döda fiender med kikarsikte"
-		"quest_1090_hud_var_desc"               "Vinn rundor"
-		"quest_1091_hud_var_desc"               "Döda fiender"
-		"quest_1092_hud_var_desc"               "Få poäng med bonusvapnet"
-		"quest_1092_v2_hud_var_desc"            "Få poäng med bonusvapnet"
-		"quest_1093_hud_var_desc"               "Spendera pengar"
-		"quest_1094_hud_var_desc"               "Vinn rundor"
-		"quest_1095_hud_var_desc"               "Döda fiender"
-		"quest_1095_v2_hud_var_desc"            "Döda fiender med UMP-45"
-		"quest_1096_hud_var_desc"               "Vinn rundor"
-		"quest_1097_hud_var_desc"               "Slutför uppdraget"
-		"quest_1097_v2_hud_var_desc"            "Undersök Phoenix-komplexet vidare"
-		"quest_1103_hud_var_desc"               "Blända fiender med chockgranater"
-
-
-
-
-/////////////////////////////////////////////////////////////////
-
-
-
-// win quests
-
-		"Quest_Win_a_Mode"										"Hot neutraliserat: <b>%gamemode%</b>"
-		"Quest_Win_a_Mode_desc"								"Vinn en match i spelläget <b>%gamemode%</b>."
-
-		"Quest_Win_a_Mapgroup"								"Avsluta spel: <b>%gamemode%, %mapgroup%</b>"
-		"Quest_Win_a_Mapgroup_desc"						"Få %actions% i <b>%gamemode%</b> i matcher på <b>%mapgroup%</b>."
-
-		"Quest_Win_a_Map"											"Spel slut: <b>%gamemode%, %map%</b>"
-		"Quest_Win_a_Map_desc"								"Få %actions% i <b>%gamemode%</b> i matcher på <b>%map%</b>."
-
-		"Quest_Win_Rounds_Map"								"Avtal: <b>%gamemode%, %mapgroup%</b>"
-		"Quest_Win_Rounds_Map_desc"						"Få %actions% i <b>%gamemode%</b> i matcher på <b>%mapgroup%</b>."
-		"Quest_Win_Rounds_Map_Short"						"Rundvinster"
-
-// equipment quests
-
-		"Quest_Weapon_Mode"										"Utrustningsfärdighet: <b>%gamemode%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Mode_desc"							"Få <b>%weapon%</b> %optional_target%%actions% i <b>%gamemode%</b>."
-		
-		"Quest_Weapon_Mode_single_desc"				"Döda någon med <b>%weapon%</b> i <b>%gamemode%</b>."
-
-// equipment + mapgroup quests
-
-		"Quest_Weapon_Mapgroup"							"Utrustningsfärdighet: <b>%mapgroup%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Mapgroup_desc"					"Få <b>%weapon%</b> %optional_target%%actions% i <b>%gamemode%: %mapgroup%</b>."
-		"Quest_WeaponDamage_Mapgroup_desc"					"Dela ut %optional_target%%actions% med <b>%weapon%</b> till fiender i <b>%gamemode%: %mapgroup%</b>."
-
-	"Quest_Weapon_Within_3_Mapgroup"						"Gradering: <b>%mapgroup%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Within_3_Mapgroup_desc"				"Få %optional_target%%actions% med <b>%weapon%</b><i> inom dina 3 första skott i rundan,</i> i <b>%gamemode%: %mapgroup%</b>."
-
-	"Quest_Weapon_Map"									"Utrustningsfärdighet: <b>%map%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Map_desc"								"Få <b>%weapon%</b> %optional_target%%actions% i <b>%gamemode%: %map%</b>."
-		"Quest_Weapon_Map_Team_desc"		"Som en <b>%team%</b>, få %optional_target%%actions% med <b>%weapon%</b> i <b>%gamemode%: %map%</b>."		
-		"Quest_Weapon_Mapgroup_Team_desc"		"Som en <b>%team%</b>, få %optional_target%%actions% med <b>%weapon%</b> i <b>%gamemode%: %mapgroup%</b>."		
-
-		"Quest_WepUpgrade_Mapgroup"					"Vapenuppgradering: <b>%mapgroup%</b>"
-
-	"Quest_Unique_Weapon_Mapgroup"							"Vapenexpert: <b>%mapgroup%</b>"
-		"Quest_Unique_Weapon_Mapgroup_desc"					"I <b>%gamemode%: %mapgroup%</b>, tjäna uppdragsframsteg för varje %action% <i>genomförd med ett unikt vapen</i>."
-		"Quest_Unique_Weapon_Mapgroup_Team_desc"					"Som en <b>%team%</b> i <b>%gamemode%: %mapgroup%</b>, tjäna uppdragsframsteg för varje %action% <i>genomförd med ett unikt vapen</i>."
-
-		"Quest_Defend_Bomb_Mapgroup_desc"					"Få %actions% <i>efter att bomben har placerats</i> i <b>%gamemode%: %mapgroup%</b>."
-
-// Hostage quests
-
-	 "Quest_Rescue_Map"								"Gisslansituation: <b>%map%</b>"
-	 "Quest_Rescue_Map_Desc"						"Utför %actions% i <b>%gamemode%: %map%</b>."
-
-// Plant bomb quests
-
-	 "Quest_PlantBomb_Mapgroup"									"Sprängämnesexpert: <b>%mapgroup%</b>"
-	 "Quest_PlantBomb_Mapgroup_Desc"						"Utför %actions% i <b>%gamemode%: %mapgroup%</b>."
-
-
-// Assassination
-
-	 "Quest_Assassination"									"%victim_team%-lönnmord: <b>%target%</b>"
-	 "Quest_Assassination_desc"							"Hitta och döda <b>%target%</b> (%victim_team%) i <b>%gamemode%: %map%</b>."
-
-	 "quest_target_turner"									"Turner"
-	 "quest_target_jackson"									"Jackson"
-	 "quest_target_chapel"									"Chapel"	 
-	 "quest_target_sergei"									"Sergei"	 
-
-	 "quest_assassination_you_are_target"					"Du är ett mål för lönnmörd.\nDu är %s1."
-	 "quest_assassination_target_on_server"					"En spelare försöker lönnmörda: %s1"
-	 "quest_assassination_target_on_server_has_quest"		"Du försöker döda lönnmordsmålet: %s1"
-	 "quest_assassination_target_killed"					"%s1 har dödats!"
-	 "quest_assassination_no_longer_target"					"Du är inte längre %s1." 
-
-// Income
-	 "Quest_Income_Mapgroup"								"Bruttoinkomst: <b>$1,000,000</b>"
-	 "Quest_Income_Mapgroup_desc"						"Tjäna totalt $1,000,000 i <b>%gamemode%: %mapgroup%</b>."
-	 "Quest_Income_Mapgroup_Team_desc"			"Som en <b>%team%</b>, tjäna totalt $1,000,000 i <b>%gamemode%: %mapgroup%</b>."
-
-	 "Quest_Spend_Mapgroup_Team_desc"			"Som en <b>%team%</b>, spendera totalt $1,000,000 i <b>%gamemode%: %mapgroup%</b>."
-
-
-//	deathmatch bonus points
-
-		"Quest_DMBonusPoints_Mapgroup"				"Vapenexpert: <b>%mapgroup%</b>"
-		"Quest_DMBonusPoints_Mapgroup_desc"		"Tjäna poäng genom att använda bonusvapnet i spelläget <b>Deathmatch: %mapgroup%</b> matcher."
-
-		"Quest_DMBonusPoints_Map"							"Vapenexpert: <b>%map%</b>"
-		"Quest_DMBonusPoints_Map_desc"				"Tjäna poäng genom att använda bonusvapnet i spelläget <b>Deathmatch: %map%</b> matcher."
-
-// play quests
-
-		"Quest_Kills_Mapgroup"							"Hotspaning: <b>%gamemode%</b>, <b>%mapgroup%</b>"
-		"Quest_Kills_Mapgroup_desc"					"Få %optional_target%%actions% i <b>%gamemode%: %mapgroup%</b>."
-		"Quest_Kills_Mapgroup_cond_desc"		"Få %optional_target%%actions%—<i>%condition%</i>—i <b>%gamemode%: %mapgroup%</b>."
-		"Quest_Kills_Mapgroup_Team_desc"		"Som en <b>%team%</b>, få %optional_target%%actions% i <b>%gamemode%: %mapgroup%</b>."		
-
-		"Quest_Kills_Mapgroup_Victim_Team_desc"		"Som en <b>%team%</b>, uppnå %actions% mot %victim_team% i <b>%gamemode%: %mapgroup%</b>."
-
-		"Quest_Flashbang_Mapgroup_Team_desc"		"Som en <b>%team%</b>, få %optional_target%%actions% i <b>%gamemode%: %mapgroup%</b>."		
-
-
-		"Quest_Burn_Mapgroup_desc"					"Dela ut <i>bränn</i>%actions% till fiender i <b>%gamemode%: %mapgroup%</b>."
-
-		"Quest_Headshots_Mapgroup"							"Huvudskott: <b>%gamemode%</b>, <b>%mapgroup%</b>"
-		"Quest_Headshots_Mapgroup_desc"					"Få %actions% med huvudskott i <b>%gamemode%: %mapgroup%</b>."
-
-		"Quest_Kills_Map"										"Hotspaning: <b>%gamemode%</b>, <b>%map%</b>"
-		"Quest_Kills_Map_desc"							"Få %optional_target%%actions% i <b>%gamemode%: %map%</b>."
-
-		"Quest_Kills_Mode"								"<b>%gamemode%</b> Hotspaning"
-		"Quest_Kills_Mode_desc"						"Få %optional_target%%actions% i <b>%gamemode%</b>."
-
-// chicken quests
-
-	"Quest_Chicken_Kills_Mapgroup"				"Supply Run: <b>%gamemode%</b>, <b>%mapgroup%</b>"
-	"Quest_Chicken_Kills_Map"							"Supply Run: <b>%gamemode%</b>, <b>%map%</b>"
-	"Quest_Chicken_Kills"						"Supply Run"
-
-// generic string tokens
-
-	"quest_team_ct"										"Antiterrorist"
-	"quest_team_terrorist"								"Terrorist"
-	"quest_complete_the_match"							"Avsluta matchen för att slutföra ditt uppdrag"
-	"quest_complete_the_match_uncommitted"				"<img src='file://{images}/icons/ui/info.svg' class=''/>Avsluta matchen för att spara uppdragsframsteg"
-
-// Coop quests
-
-	"Quest_Guardian_Bomb"									"Guardian-samarbetsuppdrag: <b>%map%</b>, <b>%weapon%</b>"
-	"Quest_Guardian_Bomb_Desc"								"Guardian-samarbetsuppdrag: Spela som en <b>%team%</b> med en partner och skydda bombplatsen från fiender på <b>%map%</b>.<br><br>Få en <b>%action%</b> genom att få <b>%kills%</b> fiender dödade med <b>%weapon%</b>. <b>%extradetails%</b>"
-	"Quest_Guardian_Desc_op08"								"Guardian Co-op-utmaning: Spela som en <b>%team%</b> med en partner och skydda bombplatsen från fiender på <b>%map%</b>.<br><br>Få en <b>%action%</b> genom att få <b>%kills%</b> %killtype% med <b>%weapon%</b>. <b>%extradetails%</b>%presence%"
-
-	"Quest_Guardian_Desc_op09"								"{s:commandverb} {s:kills} {s:weapon} {s:killtype} i <b>Guardian: {s:location}</b>."
-	"Quest_CoopMission_Desc_op09"							"<b>Co-op Strike</b>: genomför uppdraget med en partner i <b>{s:location}</b>."
-	"Quest_Guardian_Desc_op09_extra_equip_1_var_desc"		"{s:commandverb} {s:kills} {s:weapon} {s:killtype} i <b>Guardian: {s:location}</b>. Spelare börjar med <b>{s:extraequip0}</b>."
-	"Quest_Guardian_Desc_op09_extra_equip_2_var_desc"		"{s:commandverb} {s:kills} {s:weapon} {s:killtype} i <b>Guardian: {s:location}</b>. Spelare börjar med <b>{s:extraequip0}</b> och <b>{s:extraequip1}</b>."
-
-	"Quest_Guardian_Desc_op10"								"{s:commandverb} {s:kills} {s:weapon} {s:killtype} i <b>Guardian: {s:location}</b>."
-	"Quest_CoopMission_Desc_op10"							"<b>Co-op Strike</b>: genomför uppdraget med en partner i <b>{s:location}</b>."
-	"Quest_Guardian_Desc_op10_extra_equip_1_var_desc"		"{s:commandverb} {s:kills} {s:weapon} {s:killtype} i <b>Guardian: {s:location}</b>. Spelare börjar med <b>{s:extraequip0}</b>."
-	"Quest_Guardian_Desc_op10_extra_equip_2_var_desc"		"{s:commandverb} {s:kills} {s:weapon} {s:killtype} i <b>Guardian: {s:location}</b>. Spelare börjar med <b>{s:extraequip0}</b> och <b>{s:extraequip1}</b>."
-
-	"Quest_Coop_Desc_Rescue"								"Co-op Strike: Spela som en <b>%team%</b> med en partner och <b>frita gisslan</b> från <b>%map%</b>.<br><br><b>%extradetails%</b>"
-	"Quest_Coop_Desc_Recon"									"Co-op Strike: Spela som en <b>%team%</b> med en partner och <b>hämta information</b> från <b>%map%</b>.<br><br><b>%extradetails%</b>"
- 	"Quest_Coop_Desc_Bomb"									"Co-op Strike: Spela som en <b>%team%</b> med en partner och <b>spräng</b> banan <b>%map%</b>.<br><br><b>%extradetails%</b>"
- 
-	"Quest_op09_coopmission"								"Hämta ett prov av Danger Zone-viruset från Phoenix-laboratoriet."
-	"Quest_op10_coopmission"								"Phoenix-rebellerna har upptäckts vid en gammal bondgård. Utforska området och ta reda på vad de har för planer."
-
-	"Quest_Guardian_Hostage"								"Guardian-samarbetsuppdrag: <b>%map%</b>, <b>%weapon%</b>"
-	"Quest_Guardian_Hostage_Desc"							"Guardian-samarbetsuppdrag: Spela som en <b>%team%</b> med en partner och förhindra antiterroristerna från att nå gisslan på <b>%map%</b>.<br><br>Få en <b>%action%</b> genom att få <b>%kills%</b> fiender dödade med <b>%weapon%</b>. <b>%extradetails%</b>"
-	 
-	"quest_guardian_kills_5"								"5"
-	"quest_guardian_kills_10"								"10"
-	"quest_guardian_kills_15"								"15"
-	"quest_guardian_kills_20"								"20"
-	"quest_guardian_kills_25"								"25"
-	"quest_guardian_kills_30"								"30"
-	"quest_guardian_kills_35"								"35"
-	"quest_guardian_kills_40"								"40"
-	"quest_guardian_kills_45"								"45"
-	"quest_guardian_kills_50"								"50"
-
-// Guardian kill types
-	"quest_killtype_normal"									"dödade"
-	"quest_killtype_headshot"								"<b>huvudskott</b>sdråp"
-	"quest_killtype_blind"									"<b>bländade</b> dråp"
-	"quest_killtype_unscoped"								"dråp <b>utan sikte</b>"
-
-	"quest_enemy_weapon"									"Motståndarvapen"
-	"quest_weapon_CZ75a_or_enemy_weapon"					"CZ75-Auto eller med en fiendes vapen"
-	"quest_weapon_sniperrifle"								"valfritt prickskyttegevär"
-	"quest_weapon_any_rifle"								"valfritt gevär"
-	"quest_weapon_m4"										"valfritt M4-gevär"
-	"quest_weapon_starter_ct"								"valfri standardpistol (CT)"
-	"quest_weapon_ct"										"CT-vapen"
-	"quest_weapon_t"										"Terroristvapen"
-	"quest_weapon_any_pistol"								"valfri pistol"
-	"quest_weapon_any_weapon"								"valfritt vapen"
-	"quest_weapon_any_shotgun"								"ett hagelgevär"
-	"quest_weapon_any_smg"									"valfri k-pist"
-	"quest_weapon_ssg08_or_mag7"							"SSG 08 eller MAG-7"
-	"quest_weapon_awp_or_p90"								"AWP eller P90"
-	"quest_weapon_unique_pistol"							"Olika pistoler"
-	"quest_presence_heavy"									"<br><br><b>RÅDGIVANDE</b>: <i>Tungt</i> motstånd förväntas i området!"
-
-	"quest_guardian_cantbuy"		"<i>Du kan inte köpa i detta uppdrag.</i>"
-	"quest_guardian_maxmoneylimit"		"<i>Maxgräns för pengarna är begränsad i detta uppdrag.</i>"
-	"quest_guardian_killrewardsonly" 	"<i>Kan endast tjäna pengar från mordbelöningar.</i>"
-	"quest_guardian_moneyreset" 	"<i>Pengar nollställs efter misslyckat uppdrag.</i>"
-	"quest_guardian_heavyarmor" 	"<i>Tung attackdräkt är tillgänglig.</i>"
-	"quest_guardian_noarmor" 	"<i>Kevlar är ej tillgängligt.</i>"
-	"quest_guardian_heavyarmorresetmoney" 	"<i>Tung attackdräkt är tillgänglig. Pengar återställs efter misslyckat uppdrag.</i>"
-	 //"quest_guardian_maxmoney_16000"		"$16000"
-	 //"quest_guardian_maxmoney_10000"		"$10000"
-	 //"quest_guardian_maxmoney_6000"			"$6000"
-	 //"quest_guardian_maxmoney_3200"			"$3200"
-	 //"quest_guardian_maxmoney_0"			"$0"
-
-	// "Get [headshot] kills: [unscoped] [AWP]"
-	// Double spaces will automatically be removed.
-	"guardian_mission_type_kills"				"Döda fiender med {s:weapon}"
-	"guardian_mission_type_headshots"			"Döda med huvudskott: {s:weapon}"
-	"guardian_mission_type_unscoped"			"Döda utan sikte: {s:weapon}"
-	"guardian_mission_type_enemy_weapon"		"Döda med fiendens {s:weapon}"
-	"guardian_mission_type_enemy_airborne"		"Döda i luften: {s:weapon}"
-	"guardian_mission_type_flashbang"			"Döda bländade fiender"
-	"guardian_mission_type_ct_weapons"			"Döda med antiterroristvapen"
-
-//	bonus tokens
-
-	  "quest_bonus_headshot"							"om också ett huvudskott"
-	  "quest_bonus_zoomed"								"medan du använder siktet"
-  	  "quest_bonus_not_zoomed"							"utan sikte"
-	  "quest_bonus_chickens"							"när målet är en kyckling"
-
-	  "quest_bonus_taser"								"om med en Zeus x27"
-	  "quest_bonus_bomb_planted"						"när bomben är placerad"
-	  "quest_bonus_melee"								"när med ett närstridsvapen"	  
-
-
-
-	  "quest_bonus_killstreak_2"						"när du dödat 2 eller fler i rad"
-	  "quest_bonus_killstreak_3"						"när du dödat 3 eller fler i rad"
-
-	  "quest_bonus_chickenstreak_2"						"när du dödat 2 eller fler kycklingar i rad"
-	  "quest_bonus_chickenstreak_3"						"när du dödat 2 eller fler kycklingar i rad"
-
-	  "quest_bonus_borrowed_gun"						"när någon annans vapen används"
-	  "quest_bonus_borrowed_gun_enemy"					"när du använder en fiendes vapen"
-	  "quest_bonus_borrowed_gun_own"					"när målets egna vapen används"
-		"quest_bonus_victim_rescuing"					"när målet räddar en gisslan"
-		
-	  "quest_bonus_bulletcount_1"						"när du utför det med ditt första skott av rundan"
-		
-	  "quest_bonus_totalrounds_2"						"om inom de första 2 rundorna"
-	  "quest_bonus_totalrounds_3"						"om inom de första 3 rundorna"
-	  "quest_bonus_totalrounds_4"						"om inom de första 4 rundorna"
-	  "quest_bonus_totalrounds_5"						"om inom de första 5 rundorna"
-
-  	  "quest_bonus_weapon_elite"						"med Dual Berettas"
-	  "quest_bonus_weapon_ssg08"						"med SSG08"
-	  "quest_bonus_weapon_revolver"						"med R8 Revolver"
-	  "quest_bonus_weapon_glock_hkp2000_usp_silencer"	"med P2000, USP-S, eller Glock-18"
-
-		"quest_bonus_set_dust"							"när vapnet är från Dust-kollektionen"
-		"quest_bonus_set_aztec"							"när vapnet är från Aztec-kollektionen"
-		"quest_bonus_set_vertigo"						"när vapnet är från Vertigo-kollektionen"
-		"quest_bonus_set_inferno"						"när vapnet är från Inferno-kollektionen"
-		"quest_bonus_set_militia"						"när vapnet är från Militia-kollektionen"
-		"quest_bonus_set_nuke"							"när vapnet är från Nuke-kollektionen"
-		"quest_bonus_set_office"						"när vapnet är från Office-kollektionen"
-		"quest_bonus_set_assault"						"när vapnet är från Assault-kollektionen"
-		"quest_bonus_set_dust_2"						"när vapnet är från Dust 2-kollektionen"
-		"quest_bonus_set_train"							"när vapnet är från Train-kollektionen"
-		"quest_bonus_set_mirage"						"när vapnet är från Mirage-kollektionen"
-		"quest_bonus_set_italy"							"när vapnet är från Italy-kollektionen"
-		"quest_bonus_set_lake"							"när vapnet är från Lake-kollektionen"
-		"quest_bonus_set_safehouse"						"när vapnet är från Safehouse-kollektionen"
-		"quest_bonus_set_esports"						"när vapnet är från eSports 2013-kollektionen"
-		"quest_bonus_set_weapons_i"						"när vapnet är från Arms Deal-kollektionen"
-		"quest_bonus_set_bravo_i"						"när vapnet är från Bravo-kollektionen"
-		"quest_bonus_set_bravo_ii"						"när vapnet är från Alpha-kollektionen"
-		"quest_bonus_set_weapons_ii"					"när vapnet är från Arms Deal 2-kollektionen"
-		"quest_bonus_set_esports_ii"					"när vapnet är från eSports 2013 Winter-kollektionen"
-		"quest_bonus_set_esports_2014_summer"			"när vapnet är från eSports 2014 Summer-kollektionen"
-		"quest_bonus_set_community_1"					"när vapnet är från Winter Offensive-kollektionen"
-		"quest_bonus_set_weapons_iii"					"när vapnet är från Arms Deal 3-kollektionen"
-		"quest_bonus_set_community_2"					"när vapnet är från Phoenix-kollektionen"
-		"quest_bonus_set_community_3"					"när vapnet är från Huntsman-kollektionen"
-		"quest_bonus_set_community_4"					"när vapnet är från Breakout-kollektionen"
-		"quest_bonus_set_community_5"					"när vapnet är från Vanguard-kollektionen"
-		"quest_bonus_set_community_6"					"när vapnet är från Chroma-kollektionen"
-		"quest_bonus_set_community_7"					"när vapnet är från Chroma 2-kollektionen"
-		"quest_bonus_set_community_11"					"med ett vapen från Wildfire-kollektionen"
-		"quest_bonus_set_bank"							"när vapnet är från Bank-kollektionen"
-		"quest_bonus_set_baggage"						"när vapnet är från Baggage-kollektionen"
-		"quest_bonus_set_cobblestone"					"när vapnet är från Cobblestone-kollektionen"
-		"quest_bonus_set_overpass"						"när vapnet är från Overpass-kollektionen"
-		"quest_bonus_set_cache"							"när vapnet är från Cache-kollektionen"
-		"quest_bonus_set_kimono"						"med ett vapen från Rising Sun-kollektionen"
-
-		"quest_bonus_cs_assault"						"när banan är Assault"
-		"quest_bonus_cs_italy"							"när banan är Italy"
-		"quest_bonus_cs_militia"						"när banan är Militia"
-		"quest_bonus_cs_office"							"när banan är Office"
-		"quest_bonus_de_aztec"							"när banan är Aztec"
-		"quest_bonus_de_dust"							"när banan är Dust"
-		"quest_bonus_de_dust2"							"när banan är Dust II"
-		"quest_bonus_de_mirage"							"när banan är Mirage"
-		"quest_bonus_de_overpass"						"när banan är Overpass"
-		"quest_bonus_de_cbble"							"när banan är Cobblestone"
-		"quest_bonus_de_train"							"när banan är Train"		
-		"quest_bonus_de_inferno"						"när banan är Inferno"
-		"quest_bonus_de_nuke"							"när banan är Nuke"
-		"quest_bonus_de_shorttrain"						"när banan är Shorttrain"
-		"quest_bonus_de_shortdust"						"när banan är Shortdust"
-		"quest_bonus_de_vertigo"						"när banan är Vertigo"
-		"quest_bonus_de_balkan"							"när banan är Balkan"
-		"quest_bonus_ar_baggage"						"när banan är Baggage"
-		"quest_bonus_ar_monastery"						"när banan är Monastery"
-		"quest_bonus_ar_shoots"							"när banan är Shoots"
-		"quest_bonus_de_embassy"						"när banan är Embassy"
-		"quest_bonus_de_bank"							"när banan är Bank"
-		"quest_bonus_de_lake"							"när banan är Lake"
-		"quest_bonus_de_depot"							"när banan är Depot"
-		"quest_bonus_de_safehouse"						"när banan är Safehouse"
-		"quest_bonus_de_sugarcane"						"när banan är Sugarcane"
-		"quest_bonus_de_stmarc"							"när banan är St. Marc"
-		"quest_bonus_cs_museum"							"när banan är Museum"
-		"quest_bonus_cs_thunder"						"när banan är Thunder"
-		"quest_bonus_de_favela"							"när banan är Favela"
-		"quest_bonus_cs_downtown"						"när banan är Downtown"
-		"quest_bonus_de_seaside"						"när banan är Seaside"
-		"quest_bonus_de_library"						"när banan är Library"
-		"quest_bonus_cs_motel"							"när banan är Motel"
-		"quest_bonus_de_cache"							"när banan är Cache"
-		"quest_bonus_de_ali"							"när banan är Ali"
-		"quest_bonus_de_ruins"							"när banan är Ruins"
-		"quest_bonus_de_ruby"							"när banan är Ruby"
-		"quest_bonus_de_chinatown"						"när banan är Chinatown"
-		"quest_bonus_de_gwalior"						"när banan är Gwalior"
-		"quest_bonus_cs_agency"							"när banan är Agency"
-		"quest_bonus_cs_siege"							"när banan är Siege"
-		"quest_bonus_de_castle"							"när banan är Castle"
-		"quest_bonus_de_overgrown"						"när banan är Overgrown"
-		"quest_bonus_de_blackgold"						"när banan är Black Gold"
-		"quest_bonus_cs_rush"							"när banan är Rush"
-		"quest_bonus_de_mist"							"när banan är Mist"
-		"quest_bonus_cs_insertion"						"när banan är Insertion"
-
-		"quest_bonus_cs_workout"						"när banan är Workout"
-		"quest_bonus_cs_backalley"						"när banan är Back Alley"
-		"quest_bonus_de_marquis"						"när banan är Marquis"
-		"quest_bonus_de_facade"							"när banan är Facade"
-		"quest_bonus_de_season"							"när banan är Season"
-		"quest_bonus_de_bazaar"							"när banan är Bazaar"
-		"quest_bonus_de_santorini"						"när banan är Santorini"
-
-		"quest_bonus_de_subzero"						"när banan är Subzero"
-		"quest_bonus_de_biome"							"när banan är Biome"
-
-
-
-
-// OperationalPoints
-
-		"Quest_OperationalPoints_Template"				"Utmaningsbelöning: %s1"
-
-		"Quest_OperationalPoints_1"					"★"
-		"Quest_OperationalPoints_2"					"★★"
-		"Quest_OperationalPoints_3"					"<font color=\"#ff0000\">★★★★</font>"
-
-// Hud Message
-
-	 "Quest_ProgressMadeMessage1"								" Uppdragspoäng som kommer att tillgodoräknas vid slutet av matchen: +%s1."
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -8522,7 +7283,6 @@
 		"StickerKit_enfu_bombsquad"                       "Bombsquad"   
 		"StickerKit_desc_enfu_bombsquad"                  ""   
 		"StickerKit_enfu_bombsquad_foil"                  "Bombsquad (Foil)"   
-		"StickerKit_desc_bombsquad_foil"                  ""   
 		"StickerKit_enfu_guru"                            "The Guru"   
 		"StickerKit_desc_enfu_guru"                       ""   
 		"StickerKit_enfu_ninja"                           "Silent Ninja"   
@@ -34414,7 +33174,7 @@
 // COMMUNITY_34
 
 		"PaintKit_usp_field_snake"						"Den har målats med bevingad avbitare under det bakre siktet och 027 nära utkastaröppningen.\n\n<i>Lätt fältarbete</i>"
-		"PaintKit_usp_field_snake_Tag"					"027"
+		"PaintKit_usp_field_snake_Tag"					"27"
 
 		"PaintKit_deagle_calligraff"					"Bilden på denna Desert Eagle har dekorerats med silverfärgad pennkalligrafi.\n\n<i>Sånt här tar tid</i>"
 		"PaintKit_deagle_calligraff_Tag"				"Calligraffiti"
@@ -36036,8 +34796,8 @@
 		"Workshop_created" "Skapad den"
 		"Workshop_size" "Storlek"
 		"Workshop_View" "Visa i workshop"
-		"Workshop_Allow" "Tillåt"
-		"Workshop_Deny" "Neka"
+		"Workshop_Allow" "Ladda ner"
+		"Workshop_Deny" "Avbryt"
 
 		"SFUI_Workshop_Desc_Pw"				"Workshop-banor som du abonnerar på är listade här. Du kan använda gemenskapssnabbspel för att hitta de bästa gemenskapsservrarna som kör en bana."
 		"SFUI_Workshop_Desc_Sp_Pw"			"Workshop-banor som du abonnerar på är listade här. Du kan prova dem lokalt med bottar."
@@ -36327,12 +35087,6 @@
 		"SFUI_Store_Limited_Bid_Tagline"			"att lägga bud på det här erbjudandet"
 		"SFUI_Store_Available_Offers"               "Erbjudande tillgängliga till:"
 		"SFUI_Store_Preview"                        "Granska"
-
-		"SFUI_Store_Timer_Week:p"                   "%s1 vecka#|#%s1 veckor"
-		"SFUI_Store_Timer_Day:p"                    "%s1 dag#|#%s1 dagar"
-		"SFUI_Store_Timer_Hour:p"                   "%s1 timme#|#%s1 timmar"
-		"SFUI_Store_Timer_Min:p"                    "%s1 min.#|#%s1 min."
-		"SFUI_Store_Timer_Sec:p"                    "%s1 sek.#|#%s1 sek."
 
 		"SFUI_Store_Timer_Week:f"                 	"{f:0:value, plural, one{{f:0:value} vecka} other{{f:0:value} veckor}}"
 		"SFUI_Store_Timer_Day:f"                    "{f:0:value, plural, one{{f:0:value} dag} other{{f:0:value} dagar}}"
@@ -38609,7 +37363,7 @@
 		"SFUI_PlayerDetails_Loading"				"Kontrollerar lovord"
 		"SFUI_PlayerDetails_Loading_Failed"			"Misslyckades med att ladda lovord, försök igen senare"
 		"SFUI_PlayerDetails_Previously_Submitted"	"Tidigare inskickade beröm för denna användare"
-		"SFUI_PlayerDetails_Commendations_Left:p"		"Du kan ge beröm till %s mer spelare idag#|#Du kan ge beröm till %s fler spelare idag"
+		"SFUI_PlayerDetails_Commendations_Left:f"	"Du kan ge beröm till {num_players} till {num_players, plural, one{spelare} other{spelare}} idag"
 		"SFUI_PlayerDetails_NoCommendations_Left"   "Du har skickat in för många beröm, försök gärna igen imorgon"
 		"SFUI_PlayerDetails_Updating_Previous_Commendation"   "Du ändrar ett tidigare inskickat lovord"
 		"SFUI_PlayerDetails_New_Commendation"   "Du skickar in ett nytt beröm"
@@ -38981,7 +37735,7 @@
 		"SFUIHUD_InfoPanel_Coop_Thumb2Ready"					"Enhet 2 redo!"
 		"SFUIHUD_InfoPanel_Coop_Thumb2Retrieved"				"Virus-enheten togs tillbaka!"	
 
-		"FullPlayerNameOrder_Default"						"%modifier% %clantag% %controller_name% (%current_controller_of_my_pawn%)"
+		"FullPlayerNameOrder_Default:f"						"{modifier} {clantag} {controller_name} ({current_controller_of_my_pawn})"
 "SFUIHUD_Spectate_Equipment"	"UTRUSTNINGSVÄRDE"
 		"SFUIHUD_Spectate_TeamMoney"	"LAGPENGAR"
 		"SFUIHUD_Spectate_TeamEQValue"	"LAGETS UTRUSTNINGSVÄRDE"
@@ -40366,8 +39120,8 @@
 		"SFUI_Settings_MiniScoreboardPlayerCount_Tooltip"	"Under den aktiva delen av rundan, ersätt spelaravatarer med lagspelarantal på miniresultattavlan."
 
 
-		"Post_Round_Damage_Report_Given:p"		" • Skada gjord → %s3: %s2 på %s1#|# • Skada gjord → %s3: %s2 på %s1"
-		"Post_Round_Damage_Report_Taken:p"		" • Skada tagen ← %s3: %s2 med %s1#|# • Skada tagen ← %s3: %s2 med %s1"
+		"Post_Round_Damage_Report_Given:f"		" • Skada gjord → {player_name}: {f:0:damage} med {num_hits}"
+		"Post_Round_Damage_Report_Taken:f"		" • Skada tagen → {player_name}: {f:0:damage} med {num_hits}"
 
 		"SFUI_TeamOverheadID"					"Visa lagutrustning"
 
@@ -40846,8 +39600,8 @@
 
 		"SFUI_UserAlertNoteType_1"			"Servrar i %s1 är under hög belastning."
 		"SFUI_UserAlertNoteType_2"			"Servar i %s1 är nere för underhåll."
-		"SFUI_UserAlertNoteType_LowPlayersR:p"	"Endast %players% passande spelare söker i %region%.#|#Endast %players% passande spelare söker i %region%."
-		"SFUI_UserAlertNoteType_LowPlayersY:p"	"Endast %players% passande spelare söker i din region.#|#Endast %players% passande spelare söker i din region."
+		"SFUI_UserAlertNoteType_LowPlayersR:f"	"Bara {players} {players, plural, one{kompatibel spelare} other{kompatibla spelare}} söker i {region}."
+		"SFUI_UserAlertNoteType_LowPlayersY:f"	"Bara {players} {players, plural, one{kompatibel spelare} other{kompatibla spelare}} söker i din {region}."
 
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"Kunde inte ansluta till match."
 		"SFUI_QMM_ERROR_NotLoggedIn"		"Inte inloggad till Counter-Strikes matchningstjänst."
@@ -46418,10 +45172,10 @@ Om samma match redan laddats ner lokalt och filen blivit förstörd, radera då 
 		"practicesettings_infammo_button"			"Oändlig ammunition"
 		"practicesettings_infwarmup_tooltip"		"När det här är<b>aktiverat</b> förblir matchen i permanent uppvärmningsläge och inga bottar går med."
 		"practicesettings_infwarmup_button"			"Oändlig uppvärmning"
-		"practicesettings_annotations_tooltip"		"När detta är <b>aktiverat</b> läses banguiden från rullgardinsmenyn in och följande inställningar kommer att aktiveras: oändlig uppvärmning, oändlig ammunition och granatkamera."
-		"practicesettings_annotations_button"		"Använd banguide"
+		"practicesettings_annotations_tooltip"		"När funkotionen är <b>aktiverad</b> blir den (valfria) banguiden från rullgardinsmenyn inläst och följande inställningar aktiveras: oändlig uppvärmning, oändlig ammunition och granatkamera."
+		"practicesettings_annotations_button"		"Aktivera banguider"
 		"practicesettings_annotations_workshop_tooltip" "Besök workshop"
-		"practicesettings_annotations_dropdown_tooltip"	"Anger vilken banguide som kommer att läsas in"
+		"practicesettings_annotations_dropdown_tooltip"	"Anger vilken banguide (om någon) som ska läsas in"
 
 		"PlayMenuReplayNewUserTrainingButton"		"Spela träningsdag igen"
 
@@ -46457,6 +45211,8 @@ Om samma match redan laddats ner lokalt och filen blivit förstörd, radera då 
 		"Workshop_annotation_ready"					"Inlämningen är redo att laddas upp."		
 		"UI_File_Filter_SupportedAnnotationFormat"	"Textfiler (*.txt)"
 		"annotations_visit_workshop"				"Besök workshop ⤤"
+		"annotations_exceed_round_limit"			"Inga banguider tillåtna efter runda {s:rounds} av halvleken"
+
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Game Mode Desc
@@ -46984,7 +45740,7 @@ Om samma match redan laddats ner lokalt och filen blivit förstörd, radera då 
 		//
 		///////////////////////////////////////////////////////////
 		
-		"eom-skillgroup-win:f"							"{matcheswon, plural, one{{s:rating_type}-match vunnen} other{{s:rating_type}-matcher vunna}"
+		"eom-skillgroup-win:f"							"{matcheswon, plural, one{{s:rating_type}-match vunnen} other{{s:rating_type}-matcher vunna}}"
 		"eom-skillgroup-map-win:f"						"{matcheswon, plural, one{{s:rating_type} {s:map} match vunnen} other{{s:rating_type} {s:map} matcher vunna}}"
 
 		"eom-skillgroup-needed-wins:f"					"{winsneeded, plural, one{Vinn {d:winsneeded} match för att visa skicklighetsgrupp.} other{Vinn <b>{d:winsneeded}</b> matcher för att visa skicklighetsgrupp.}}"
@@ -47464,6 +46220,1307 @@ Om samma match redan laddats ner lokalt och filen blivit förstörd, radera då 
 
 		"accolade_dinks_2"								"Barberaren"
 		"accolade_dinks_desc_2"							"Huvudträffar:"
+
+		"accolade_taserkills"							"Blixtguden"
+		"accolade_taserkills_desc"						"Flest Zeus-kills:"
+		"accolade_taserkills_value"						"{s:accolade-value-string}"
+
+		"accolade_taserkills_2"							"Strömledaren"
+		"accolade_taserkills_desc_2"					"Zeus-kills:"		
+
+		"accolade_knifekills"							"Kniv Knivsson"
+		"accolade_knifekills_desc"						"Flest kills med kniv:"
+		"accolade_knifekills_value"						"{s:accolade-value-string}"
+
+		"accolade_knifekills_2"							"Närstridskämpen"
+		"accolade_knifekills_desc_2"					"Kills med kniv:"			
+
+		"accolade_gimme_01"								"Moraliskt stöd"
+		"accolade_gimme_02"								"Deltagaren"
+		"accolade_gimme_03"								"Inhopparen"
+		"accolade_gimme_04"								"Plan B"
+		"accolade_gimme_05"								"Eftertruppen"
+		"accolade_gimme_06"								"Fåtöljsgeneralen"
+		"accolade_gimme_07"								"Mångsysslaren"
+		"accolade_gimme_08"								"Den okända soldaten"
+		"accolade_gimme_09"								"Det osynliga"
+		"accolade_gimme_10"								"Den saknade"
+		"accolade_player_score"							"Poäng: {d:score-value-int}"
+
+
+		"playercardstats_adr_title"						"ADR"
+		"playercardstats_adr_value"						"{d:playercardstats-adr}"
+
+		"playercardstats_kda_title"						"KDA"
+		"playercardstats_kda_value"						"{d:playercardstats-kills}/{d:playercardstats-deaths}/{d:playercardstats-assists}"
+
+		"playercardstats_k_title"						"Kills"
+		"playercardstats_k_value"						"{d:playercardstats-kills}"
+
+		"playercardstats_d_title"						"Dödsfall"
+		"playercardstats_d_value"						"{d:playercardstats-deaths}"
+
+		"playercardstats_a_title"						"Assister"
+		"playercardstats_a_value"						"{d:playercardstats-assists}"
+
+		"playercardstats_score_title"					"Poäng"
+		"playercardstats_score_value"					"{d:playercardstats-score}"
+
+		"playercardstats_hsp_title"						"HSP"
+		"playercardstats_hsp_value"						"{d:playercardstats-hsp} %"
+
+		"playercardstats_ef_title"						"FIENDER BLÄNDADE"
+		"playercardstats_ef_value"						"{d:playercardstats-ef}"
+
+		"playercardstats_ud_title"						"SKADA MED GRANATER"
+		"playercardstats_ud_value"						"{d:playercardstats-ud}"
+
+		"playercardstats_gglevel_title"					"Nivå"
+		"playercardstats_gglevel_value"					"{d:playercardstats-gglevel}"
+
+		"playercardstats_kk_title"						"Kills med kniv"
+		"playercardstats_kk_value"						"{d:playercardstats-knifekills}"
+
+
+		"eom-vote-for-next-map"							"Rösta på nästa bana"
+		
+		"eom-survival-damage-taken"						"Skada tagen"
+		"eom-survival-damage-given"						"Skada gjord"
+
+
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	STATS
+		//
+		///////////////////////////////////////////////////////////
+
+		"playerstats_mode_comp_all"			"Alla 5v5"
+		"playerstats_mode_comp_capt"		"Premier Competitive"
+		"playerstats_mode_comp_active"		"Tävlingsläge (bombdesarmering)"
+		"playerstats_mode_comp_other"		"Tävlingsläge (gisslanräddning)"
+		"playerstats_mode_comp_scrim"		"Träningsläge"
+		"playerstats_mode_2v2_all"			"Alla Wingman"
+		"playerstats_mode_2v2_active"		"Wingman (Active Duty)"
+		"playerstats_mode_2v2_other"		"Wingman (reservgrupp)"
+
+		"playerstats_weapons"					"Vapenstatistik"
+		"playerstats_heatmap"					"Heatmaps"
+		"playerstats_matchlister"				"Matcher"
+		"playerstats_stats"						"Statistik"
+
+		"playerstats_matchlister_separator"		"{s:separator_title}"
+
+		"playerstats_weapon_tooltip_counts"		"Dödade: {d:kills}"
+		"playerstats_weapon_tooltip_kd"			"K/D: {s:score}"
+
+		"playerstats_map_tooltip_win_loss_tie"	"Vinst/Förlust/Oavgjort"
+		"playerstats_map_tooltip_rndwin_rndloss"	"Runda – vinst/förlust"
+		"playerstats_map_tooltip_round_winrate"	"Runda – vinstratio"
+		"playerstats_map_tooltip_match_winrate"	"Matchvinstratio"
+
+		"playerstats_forceretry"				"Anslutningen till statistikservern bröts.\nKlicka på OK för att försöka återansluta."
+		"playerstats_no_data"					"Du har ingen data i det valda spelläget eller tidsperioden. Ändra ditt val eller spela några matcher."
+		"playerstats_link"						"Hantera abonnemang"
+		"playerstats_link_reactivate"			"Återaktivera abonnemang"
+		"playerstats_link_get"					"Abonnera"
+
+		"playerstats_subscription_expire_warning"		"<b>Insamling av matchstatistik</b> – abonnemanget <b>upphör i dag</b>"
+		"playerstats_subscription_renew_automatically"	"<b>Insamling av matchstatistik</b> – abonnemanget förnyas automatiskt om {d:days} dagar"
+		"playerstats_subscription_renew_unknown"		"<b>Insamling av matchstatistik</b> – {d:days} dagar kvar på ditt abonnemang"
+		"playerstats_subscription_renew_manually"		"<b>Insamling av matchstatistik</b> – {d:days} dagar kvar. Ditt abonnemang <b>förnyas inte automatiskt</b>"
+		"playerstats_subscription_expired"				"<b>Abonnemanget har upphört</b> – återaktivera ditt abonnemang för att samla in ny matchstatistik"
+		"playerstats_subscription_not_enrolled"			"<b>Abonnemanget är avaktiverat</b> – abonnera för att samla in ny matchstatistik"
+		"playerstats_subscription_buy_button"			"AKTIVERA MÅNADSABONNEMANG\n{s:price}/MÅNAD"
+
+		"playerstats_past_14"					"Senaste 14 dagarna"
+		"playerstats_past_30"					"Senaste 30 dagarna"
+		"playerstats_past_90"					"Senaste 90 dagarna"
+		"playerstats_alltime"					"Genom tiderna"
+
+		"stat_best_map"							"Bästa banan"
+		"stat_best_map_desc"					"Banor med din högsta ratio av vunna rundor mot förlorade rundor"
+
+		"stat_best_weapon"						"Bästa vapnet"
+
+		"stat_best_mate"						"Bästa lagkamrat"
+		"stat_best_mate_desc"					"Lagkamrat som hjälpt dig nå din högsta ratio av vunna rundor mot förlorade rundor"
+
+		"matchstat_abandoned"					"*Du lämnade denna match innan den slutfördes"
+
+		"playerstats_suffix_per_round"			"/r"
+		"playerstats_suffix_per_cent"			"%"
+
+		"playerstats_per_round"			"{s:value}/r"
+		"playerstats_per_cent"			"{s:value} %"
+		"playerstats_no_units"			"{s:value}"	
+
+		"playerstats_percentile"		"Din rankning, {s:tt_value}, är bättre än {s:tt_rank} % av alla med Operation-passet"
+		"playerstats_percentile_subscribers"	"Din rankning, {s:tt_value}, är bättre än {s:tt_rank} % av alla abonnenter"
+
+
+		"playerstats_mapwinrate"		"Vinstprocent för banor"
+		"playerstats_mapwinrate_rounds"	"Rundor"
+		"playerstats_mapwinrate_matches" "Matcher"
+
+		"stat_total_score"				"Poäng"
+		"stat_average_score"			"Poäng/runda"
+
+		"stat_total_kills"				"Dödade"
+		"stat_average_kills"			"Dödade/runda"
+
+		"stat_total_deaths"				"Dödsfall"
+	//	"stat_average_deaths"			"stat_average_deaths"		
+
+		"stat_total_health_removed"		"Skada"	
+		"stat_average_health_removed"	"ADR"
+
+		"stat_average_kd"				"Dödade/Dödsfall"
+		"stat_average_kd_short"			"K/D"
+
+		"stat_average_hsp"				"stat_average_hsp"
+
+		"stat_total_2k"					"2K"
+		"stat_total_3k"					"3K"
+		"stat_total_4k"					"4K"
+
+		"stat_grenades"					"Handgranater"
+		"stat_total_grenade"			"Kast"
+		"stat_average_grenade"			"Framgång"
+		"stat_grenades_desc"			"Procent av granatkast som skadade åtminstone 1 fiende"			
+
+		"stat_flash"					"Chockgranater"
+		"stat_total_flash"				"Kast"
+		"stat_average_flash"			"Framgång"
+		"stat_flash_desc"				"Procent av kastade chockgranater som bländade åtminstone 1 fiende"
+
+		"stat_entry"					"Dödade vid start"
+		"stat_average_entrykd"			"EK/D"
+		"stat_total_entry_attempts"		"Totalt"
+		"stat_entry_desc"				"Förhållandet mellan första kill och första dödsfall"
+
+		"stat_total_wins"				"Vinster"
+		"stat_total_losses"				"Förluster"
+		"stat_total_ties"				"Oavgjort"
+
+		"stat_total_rounds_played"		"Rundor"
+
+		"stat_1vx"						"1vX"
+
+		"stat_1v1"						"1v1"
+
+		"stat_average_1v1"				"Framgång"				
+		"stat_total_1v1_attempts"		"Tillfällen"		
+
+		"stat_1v2"						"1v2"
+
+		"stat_average_1v2"				"Framgång"			
+		"stat_total_1v2_attempts"		"Tillfällen"		
+
+		"num_matches"					"Spelade matcher"
+
+		"playerstat_name_0"				"Poäng"
+		"playerstat_name_0_long"		"Poäng per runda"
+		"playerstat_name_0_desc"		"Poäng per runda: {s:value}\nTotal poäng : {d:total}"
+
+
+		"playerstat_name_1"				"Dödade"
+		"playerstat_name_1_long"		"Dödade per runda"
+		"playerstat_name_1_desc"		"Genomsnittligt antal kills per omgång: {s:value}\nTotalt antal kills: {d:total}"
+
+		"playerstat_name_2"				"Skada"
+		"playerstat_name_2_long"		"Skada per runda"
+		"playerstat_name_2_desc"		"Genomsnittlig skada per runda: {s:value}\nTotal skada : {d:total}"	
+
+		"playerstat_name_2.1"			"Skada"
+		"playerstat_name_2.5"			"ADR"		
+
+		"playerstat_name_3"				"K/D"
+		"playerstat_name_3_long"		"Dödade per dödsfall"
+		"playerstat_name_3_desc"		"Förhållandet mellan kills och dödsfall: {s:value}"		
+
+		"playerstat_name_4"				"HS"
+		"playerstat_name_4_long"		"Procent kills med huvudskott"
+		"playerstat_name_4_desc"		"Procentandel dödade med huvudskott: {s:value}\nTotalt antal dödade med huvudskott: {d:total}"	
+
+		"playerstat_name_4.5"			"HS %"		
+
+		"playerstat_name_5"				"2K"
+		"playerstat_name_5_long"		"Två dödade"
+		"playerstat_name_5_desc"		"Antal rundor med 2 dödade : {s:value}"	
+
+		"playerstat_name_6"				"3K"
+		"playerstat_name_6_long"		"3 dödade"
+		"playerstat_name_6_desc"		"Antal rundor med 3 dödade : {s:value}"		
+
+		"playerstat_name_7"				"4K"
+		"playerstat_name_7_long"		"4-dödade"
+		"playerstat_name_7_desc"		"Antal rundor med 4 dödade : {s:value}"
+
+		"playerstat_name_7.5"			"Multikill"
+	
+		"playerstat_name_8"				"HE"
+		"playerstat_name_8_long"		"Effektiva HE-granater"
+		"playerstat_name_8_desc"		"Procent av handgranater som skadade åtminstone 1 fiende: {s:value}\nTotalt antal kastade handgranater som skadade åtminstone 1 fiende : {d:total}"			
+
+		"playerstat_name_9"				"FB"
+		"playerstat_name_9_long"		"Effektiva chockgranater"		
+		"playerstat_name_9_desc"		"Procent av chockgranater som bländade åtminstone 1 fiende: {s:value}\nTotalt antal kastade chockgranater som bländade åtminstone 1 fiende : {d:total}"
+
+		"playerstat_name_10"			"1v1"
+		"playerstat_name_10_long"		"1v1-strider"
+		"playerstat_name_10_desc"		"Procent av 1v1-situationer vunna: {s:value}\nTotalt vunna 1v1-situationer: {d:total}"	
+
+		"playerstat_name_11"			"1v2"
+		"playerstat_name_11_long"		"1v2-strider"
+		"playerstat_name_11_desc"		"Procent av 1v2-situationer vunna: {s:value}\nTotalt vunna 1v2-situationer: {d:total}"	
+
+		"playerstat_name_12"			"EK"
+		"playerstat_name_12_long"		"Dödade vid start"
+		"playerstat_name_12_desc"		"Förhållande mellan första dödade och första dödsfall: {s:value}\nTotalt antal första dödade: {d:total}"
+
+		"stats_graph_button_0"			"Poäng/R"
+		"stats_graph_button_1"			"Dödade/R"
+		"stats_graph_button_2"			"ADR"
+		"stats_graph_button_3"			"K/D"
+		"stats_graph_button_4"			"HS %"
+
+		"ris_score"								"Rundpoäng"
+		"ris_t"									"T"
+		"ris_ct"								"CT"
+		"ris_team-title"						"Ditt lags vinstchans"
+		"ris_wins"								"{s:ris_team} vinner!"
+
+		"ris_win"								"vinst"
+		"ris_loss"							"förlust"
+
+		"ris_hits"								"i {s:num_hits}"
+		
+		"prdr_health_removed"					"{d:health_removed} i {d:num_hits}"
+		"prdr_return_health_removed"				"{d:return_health_removed} i {d:return_num_hits}"
+
+		"season_stat_title_wins"		"VINST"
+        "season_stat_title_ties"		"OAVGJORT"
+        "season_stat_title_losses"		"FÖRLUST"
+        "season_stat_title_rounds"		"RUNDOR"
+        "season_stat_title_kills"		"DÖDADE"
+        "season_stat_title_headshots"	"HUVUDSKOTT"
+		"season_stat_title_hs_percent"	"HS %"
+        "season_stat_title_assists"		"ASSISTER"
+        "season_stat_title_deaths"		"DÖDSFALL"
+        "season_stat_title_mvps"		"MVP:ER"
+        "season_stat_title_rounds_3k"	"3K"
+        "season_stat_title_rounds_4k"	"4K"
+        "season_stat_title_rounds_5k"	"5K"
+		"season_stat_title_kpr"			"KPR"
+		"season_stat_title_kd"			"K/D"
+		"season_stat_title_best_map"	"BÄSTA BANA"
+		"season_stat_title_win_percent"	"VINST%"
+		"season_stat_title_matches_played"	"MATCHER"
+		"season_stat_title_achieved_week"	"HÖGSTA RANG UPPNÅDD UNDER VECKAN"
+		"season_stat_value_kd"				"{s:kdratio}"
+		"season_stat_value_win_percent"		"{s:win-percent} %"
+		"season_stat_value_hs_percent"		"{s:hs-percent} %"
+		"season_section_rank"				"TOPPUNKT"
+		"season_section_season_stats"		"SÄSONGSSTATISTIK"
+		"season_section_rank_history"		"RANGHISTORIK"
+		"season_section_rank_activity"		"MATCHER SPELADE"
+		"season_section_rank_map_stats"		"BANSTATISTIK"
+		"season_section_rank_map_wins_graph"	"TOTALT ANTAL BANVINSTER"
+		"season_section_graph_x_axis_label_min"		"VECKA {d:week_min}"
+		"season_section_graph_x_axis_label_max"		"VECKA {d:week_max}"
+		"tooltip-no-map-stats"			"Statistik är inte tillgänglig för den här banan"
+		"tooltip-season-rank-week-idx"		"VECKA {s:week-id}"
+		"tooltip-season-rank-week-name"		"{s:week-name}"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	WIN PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_winpanel_mvp_award"				"MVP"
+		"Panorama_winpanel_mvp_award_kills"			"MVP"
+		"Panorama_winpanel_mvp_award_ace"			"MVP för en Ace-runda"
+		"Panorama_winpanel_mvp_award_bombplant"		"MVP för att ha placerat bomben"
+		"Panorama_winpanel_mvp_award_bombdefuse"	"MVP för att ha desarmerat bomben"
+		"Panorama_winpanel_mvp_award_rescue"		"MVP för att ha fritagit en gisslan"
+		"Panorama_winpanel_mvp_award_score"			"MVP för högst poäng"
+		"Panorama_winpanel_mvp_award_inferno"		"MVP för att ha gjort en betydande mängd skada med eld"
+		"Panorama_winpanel_mvp_award_blast"			"MVP för att ha gjort en betydande mängd skada med sprängämnen"
+		"Panorama_winpanel_mvp_award_bombdefuse_clutch"	"MVP för att ha desarmerat i underläge"
+		"Panorama_winpanel_mvp_award_bombplant_clutch"	"MVP för att ha planterat och försvarat bomben"
+		"Panorama_winpanel_mvp_award_gungame"		"MVP"
+		"Panorama_winpanel_mvp_winner"				"MVP"
+		"Panorama_winpanel_mvp_award_kills_three"	"MVP för flest kills (3)"
+		"Panorama_winpanel_mvp_award_kills_four"	"MVP för flest kills (4)"
+
+		"Panorama_WinPanel_rank_awarded_multi"	"Du har uppnått {d:rank_increase} nya ranger!"
+
+		"Panorama_WinPanel_rank_name_string"	"{s:current_best_cat} <font color='#CCCCCC'>({s:current_rank_cat})</font>"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	WATCH PANEL
+		//
+		///////////////////////////////////////////////////////////
+		
+		"WatchMenu_Watch"					"Titta"
+		"WatchMenu_Tournament_Versus"		"mot"
+		"WatchMenu_Outcome_Tied"			"Oavgjord"
+		"WatchMenu_Outcome_Abandon"			"Övergav"
+		"WatchMenu_Outcome_Won"				"<img src='file://{images}/icons/ui/trophy.svg' width='15' height='15'/> Vinst"
+		"WatchMenu_Outcome_Lost"			"Förlust"
+		"WatchMenu_Expand_Match_Menu"		"Mer"
+		"WatchMenu_Get_Share_Link"			"Kopiera matchdelningskoden"
+		"WatchMenu_Share_Link_Copied"		"Länken kopierades till urklipp"
+		"WatchMenu_Download_Demo"			"Ladda ner demo för att titta"
+		"WatchMenu_Watch_Live"				"Titta live"
+		"WatchMenu_Watch_Highlights"		"Titta på höjdpunkterna"
+		"WatchMenu_Watch_Lowlights"			"Se lågpunkter"
+		"WatchMenu_Watch_Highlights_Player_Selected"	"Se {s:playerNameTitle}s höjdpunkter"
+		"WatchMenu_Watch_Lowlights_Player_Selected"	"Se {s:playerNameTitle}s lågpunkter"
+		"WatchMenu_Delete"					"Ta bort lokala demofiler"
+		"WatchMenu_Downloading"				"Laddar ned"
+		"WatchMenu_Info_Download_Failed"	"Ofullständig nedladdning"
+		"WatchMenu_Info_Download_Failed_Retry" "Försök att ladda ner demofiler igen?"
+		"WatchMenu_Info_Download_Failed_Info" "Nedladdningen slutfördes inte. Resultattavlans information finns men du kan inte titta på matchen."
+		"WatchMenu_Download_Disabled_Hint"	"Matchens demo har utgått och kan inte längre laddas ned."
+		"WatchMenu_Tournament_BulletPoint"	"<ul>
+<li>Titta på matcher och använd dina lagklistermärken för att göra förutsägelser för gruppspelet och slutspelet.</li>
+
+<li>När du gör ett korrekt val, får du poäng till en Pick'Em-trofé som kan visas upp på din Counter-Strike-avatar och på din Steam-profil.</li>
+
+												<li>Du kan göra förutsägelser för gruppspelet tills det börjar.</li>
+												<li>Du kan göra förutsägelser för slutspelet tills det börjar.</li>
+											</ul>"
+		"WatchMenu_Viewer"				"Tittare"
+		"WatchMenu_Viewers"				"Tittare"
+		"WatchMenu_Viewers_dv:f"		"{spectatorCount, plural, one{{d:spectatorCount} tittare} other{{d:spectatorCount} tittare}}"
+		"WatchMenu_FirstHalf"			"Första halvan"
+		"WatchMenu_SecondHalf"			"Andra halvan"
+		"WatchMenu_Overtime"			"Förlängning"
+		"MatchInfo_FirstRound"			"1:a rundan"
+		"MatchInfo_Halftime"			"Halvtid"
+		"MatchInfo_Overtime"			"Förlängning"
+		"MatchInfo_RoundDataTitle"      "{s:playerNameTitle}s prestation denna runda"
+		"MatchInfo_Date"				"{s:day} {s:month}"
+		
+		"MatchInfo_Date_Tournament_Month_Short_8"	"okt"		
+		"MatchInfo_Date_Tournament_Month_Final_Short_8"	"nov"
+		"MatchInfo_Date_Tournament_Month_Short_9"	"mar"
+		"MatchInfo_Date_Tournament_Month_Short_9_1"	"apr"
+		"MatchInfo_Date_Tournament_Month_Final_Short_9"	"apr"
+		"MatchInfo_Date_Tournament_Month_Short_10"	"jul"
+		"MatchInfo_Date_Tournament_Month_Short_10_1"	"jul"
+		"MatchInfo_Date_Tournament_Month_Final_Short_10"	"jul"
+		"MatchInfo_Date_Tournament_Month_Short_11"	"jan"
+		"MatchInfo_Date_Tournament_Month_Short_11_1"	"jan"
+		"MatchInfo_Date_Tournament_Month_Final_Short_11"	"jan"
+		"MatchInfo_Date_Tournament_Month_Short_12"	"jul"
+		"MatchInfo_Date_Tournament_Month_Short_12_1"	"jul"
+		"MatchInfo_Date_Tournament_Month_Final_Short_12"	"jul"
+		"WatchMenu_PickEm_ComingSoon"	"Tidigare Pick'Em- och Fantasy-spel kommer snart."
+		"WatchMenu_ViewerCount"	"{s:numberOfViewers} tittare på {s:channel}"
+		"Matchlist_Team_Selection"	"Alla lag"
+
+
+		"pickem_timer_inactive"		"Det går inte att göra val för denna etapp just nu"
+		"pickem_timer"				"{s:time} kvar att göra dina val"
+		"pickem_timer_upsell"		"<b>{s:time}</b> återstår att göra dina val. Skaffa ett pass för att spela Pick'Em och för att få souvenirpolletter."
+		"pickem_timer_locked"		"Valen är nu låsta"
+		"pickem_points_earned" 		"Intjänade poäng"
+		"pickem_correct_pick" 		"Korrekt val"
+		"pickem_points_needed_next_level" 	"Skaffa <b>{d:points}</b> {s:plural} till för <b>{s:level}</b>"
+		"pickem_points_result" 		"Du fick en Pick'Em-trofé av <b>{s:result-level}</b>"
+		"pickem_points_result_bronze" "Du fick Pick'Em-<b>bronstrofén</b>"
+		"pickem_points_result_silver" "Du fick Pick'Em-<b>silvertrofén</b>"
+		"pickem_points_result_gold" "Du fick Pick'Em-<b>guldtrofén</b>"
+		"pickem_point"				"poäng"
+		"pickem_points"				"poäng"
+		"pickem_level_bronze"		"Brons"
+		"pickem_level_silver"		"Silver"
+		"pickem_level_gold"			"Guld"
+		"pickem_group_pick_worth"	"Varje korrekt val ger <b>{d:points} {s:plural} </b>"
+		"pickem_pick_correct_points_earned"	"+ <b>{d:points}</b> {s:plural}"
+		"pickem_pick_drag_hint" 	"Dra lag hit"
+		"pickem_pick_undefeated"	"<b>Välj</b> ett lag som kommer att <b>gå vidare obesegrade</b>"
+		"pickem_pick_eliminated"	"<b>Välj</b> ett lag som kommer att <b>elimineras utan att vinna</b>"
+		"pickem_get_items" 			"Skaffa klistermärken"
+		"pickem_get_items_tooltip" 	"Du behöver följande klistermärken för att uppdatera dina val: <br><br>"
+		"pickem_place_picks" 		"Uppdatera val"
+		"pickem_confirm_picks" 		"Bekräfta dina val"
+		"pickem_confirm_Warning"	"<b>Dessa klistermärken kommer att användas för dina Pick'Em-val.</b>\n\nDe kommer att finnas kvar i ditt förråd och kan appliceras på vapen du äger eller bytas efter att eventetappen är slut.\n\n<span class=\"premier-pickban__title__text-red\">\nDe kommer varken kunna användas eller bytas förrän slutet av eventetappen. Val som tas bort vid ett senare tillfälle tar inte bort detta lås.</span>\n"
+		"pickem_confirm_ClearAll"	"<b>Inga klistermärken kommer att användas för dina Pick'Em-val.</b>\n\nKlistermärken som redan har använts kommer att finnas kvar i ditt förråd och kan appliceras på vapen du äger eller eller bytas efter att eventetappen är slut.\n"
+		"pickem_confirm_stickes_for_lock" 	"Klistermärken för val"
+		"pickem_confirm_not_owned" 		"<b>Dessa val kan inte göras.</b><span class=\"premier-pickban__title__text-red\">\nDu måste ha de motsvarande lagklistermärkena för att uppdatera dina Pick'Em-val.</span>"
+		"pickem_apply_emptyslots"		"Du måste fylla i alla dina förutsägelser för att uppdatera din Pick'Em-utmaning. Dra dina val till återstående tomma platser och klicka på knappen ”Uppdatera val” igen för att bekräfta."
+		"pickem_apply_timeout"			"Vi kunde inte uppdatera dina Pick'Em-val. Försök igen senare."
+		"pickem_apply_drag_hint"	"Dra ditt val hit"
+		"pickem_apply_immediate" 		"Uppdaterar dina val..."
+		"pickem_save_all" 			"SPARA ALLA VAL"
+		"pickem_make_picks" 		"VAL: {d:user-picks} / {d:total-picks}"
+		"pickem_drag_picks" 		"Dra lag för att göra dina val"
+		"pickem_reveal_all_results" "Visa slutresultat"
+		"pickem_saved" 		"Val sparade"
+		"pickem_teams_tbd" 	"Lag har inte fastställts"
+		"pickem_challenge_section_title" "PICK'EM-UTMANING"
+		"pickem_items_section_title" "TURNERINGSARTIKLAR"
+		"pickem_items_tab_opening_stage" "INLEDNINGSFAS"
+		"pickem_items_tab_elim_stage" "UTSLAGSFAS"
+		"pickem_items_tab_stage_i" "Fas I"
+		"pickem_items_tab_stage_ii" "Fas II"
+		"pickem_items_tab_stage_iii" "Fas III"
+		"pickem_items_tab_playoff_stage" "SLUTSPEL"
+		"pickem_teams_remove_all_tooltip" 	"Rensa alla val"
+		"pickem_teams_fill_tooltip" 	"Fyll ut tomma val slumpmässigt"
+		"pickem_versus"				"VS"
+		"pickem_submit_warning"		"{s:pass-name} är inte aktiverat"
+		"pickem_submit_warning_tooltip"		"{s:pass-name} måste vara aktiverat för att det ska gå att göra framsteg i Pick’Em-utmaningarna. Passet måste aktiveras innan etappen låses upp."
+		"pickem_submit_warning_popup_title"	"Spara val utan ett aktivt pass"
+		"pickem_submit_warning_popup_desc"	"{s:pass-name} måste vara aktiverat för att det ska gå att göra framsteg i Pick’Em-utmaningarna. Passet måste aktiveras innan etappen låses upp."
+		"pickem_submit_warning_popup_action""Spara val utan ett aktivt pass"
+		"pickem_submit_warning_popup_action2"	"Aktivera passet och spara valen"
+		"contextmenu_pickem_souvenir_title" 	"Välj vilken match du vill ha ett souvenirpaket från"
+		"contextmenu_pickem_souvenir_no_result" 	"Kom tillbaka när matchen har avslutats för att hämta ett souvenirpaket"
+		"mainmenu_major_hub"	"MAJOR-MÄSTERSKAP – HUBB OCH ARTIKLAR"
+		"mainmenu_major_hub_items"	"Klistermärken tillgängliga nu"
+		"mainmenu_major_hub_no_items" "MAJOR-MÄSTERSKAP – HUBB"
+
+		"pickem_swiss_group_00"									"0:0"
+		"pickem_swiss_group_10"									"1:0"
+		"pickem_swiss_group_11"									"1:1"
+		"pickem_swiss_group_12"									"1:2"
+		"pickem_swiss_group_20"									"2:0"
+		"pickem_swiss_group_21"									"2:1"
+		"pickem_swiss_group_22"									"2:2"
+		"pickem_swiss_group_01"									"0:1"
+		"pickem_swiss_group_02"									"0:2"
+
+		"pickem_swiss_group_30"									"3:0 – går vidare"
+		"pickem_swiss_group_3x"									"3:1 3:2\n går vidare"
+		"pickem_swiss_group_13"									"1:3 – utslagen"
+		"pickem_swiss_group_23"									"2:3 – utslagen"
+		"pickem_swiss_group_03"									"0:3 – utslagen"
+
+
+
+
+
+
+
+		// WATCH EVENTS
+
+		"eventsched_lan"												"LAN-event"
+		"eventsched_online"											"Onlineevent"
+		"eventsched_show_online"								"Visa onlineevent"
+		"eventsched_date_format"								"{s:eventsched_date_day} {s:eventsched_date_month}"
+		"eventsched_versus"											"mot"
+		"eventsched_ongoing"										"Pågår"
+		"eventsched_tbd"												"ej fastställt"
+		"eventsched_live"												"LIVEMATCH"
+		"eventsched_link"												"Mer information på HLTV.org"
+		"eventsched_event_link"									"Eventinformation på HLTV.org"
+		"eventsched_match_link"									"Matchinformation på HLTV.org"
+		"eventsched_team_link"									"Laginformation på HLTV.org"	
+		"eventsched_no_streams"									"Inga streams tillgängliga"
+		"eventsched_watch_on_gotv"								"Se på CSTV"
+		"eventsched_favorite_tt"								"{s:favorite_tooltip}"
+		"eventsched_favorite_tooltip_prime"			"Favoritmarkera ett event för att dess\nlivematcher ska visas i huvudmenyn."
+		"eventsched_favorite_tooltip_not_prime" "Du måste ha Prime-status för att favoritmarkera ett event."
+		"eventsched_match_tooltip"							"{s:watchnotice_teamname_1} mot {s:watchnotice_teamname_2}"
+		"eventsched_stream_watch"								"{s:stream_site}"
+		"eventsched_hltv"												"Eventinformation tillgodosett av HLTV.org"
+		"eventsched_country"										"{s:eventsched_country}"
+		"eventsched_no_live_matches"						"Det spelas inga matcher just nu."
+		"eventsched_featured"										"Detta evenemang är gemenskapens favorit i {s:eventsched_fave_month}."
+		"eventsched_official"										"Detta event är relaterat till en Counter-Strike-major."
+
+		"WatchNotice_Reason_Official"						"Detta event visas eftersom det är relaterat till en Counter-Strike-major."
+		"WatchNotice_Reason_Personal"						"Detta event visas eftersom du har favoritmarkerat det."
+		"WatchNotice_Reason_Community"					"Detta event visas eftersom det var gemenskapens favorit i {s:watchnotice_fave_month}."
+		"WatchNotice_Watch"											"Titta"
+
+	
+		// Used with formatText.AbbreviateNumber()
+		///////////////////////////////////////////
+		"NumberAbbreviation_E3"			"{s:abbreviated_number} tn"
+		
+		// Note to translators: Add as needed. Code will use only available strings. example:
+		// "NumberAbbreviation_E4"		"{s:abbreviated_number}万"	
+
+		"NumberAbbreviation_E6"			"{s:abbreviated_number} mn"
+		"NumberAbbreviation_E9"			"{s:abbreviated_number} md"
+		"NumberAbbreviation_E12"		"{s:abbreviated_number} bn"
+
+		// Used with formatText.SplitAbbreviateNumber()
+		///////////////////////////////////////////
+		"NumberAbbreviation_suffix_E3"			"k"
+		
+		// Note to translators: Add as needed. Code will use only available strings. example:
+		// "NumberAbbreviation_suffix_E4"		"万"	
+
+		"NumberAbbreviation_suffix_E6"			"mn"
+		"NumberAbbreviation_suffix_E9"			"md"
+		"NumberAbbreviation_suffix_E12"			"T"
+
+
+		"digitpanel_digits"			 " 0123456789,.-+?"
+		"digitpanel_digits_premier" " 1234567890,?"
+
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	OVERWATCH
+		//
+		///////////////////////////////////////////////////////////
+		
+		"Panorama_Overwatch_Downloading"		"Laddar ned bevisfiler ..."
+		"Panorama_Overwatch_Review"				"Det tar några minuter att granska ett ärende."
+		"Panorama_Overwatch_Welcome"			"Counter-Strike Overwatch"
+		"Panorama_Overwatch_Tooltip_p1"			"Som en del av ditt arbete för Counter-Strike kommer du att ladda ned och granska repriser av Counter-Strike 2-matcher på officiella Valve-servrar för att leta efter misstänkt beteende. När reprisen är slut kommer du att bli ombedd att avge ditt utlåtande angående spelarens gameplay."
+		"Panorama_Overwatch_Tooltip_sh1"		"Steg 1"
+		"Panorama_Overwatch_Tooltip_p2"			"Klicka på LADDA NED BEVIS längst ned till höger för att ladda ned ett Overwatch-ärende."
+		"Panorama_Overwatch_Tooltip_sh2"		"Steg 2"
+		"Panorama_Overwatch_Tooltip_p3"			"Klicka på GRANSKA BEVIS för att titta på reprisen, som har spelats in av servern, från spelarens perspektiv."
+		"Panorama_Overwatch_Tooltip_sh3"		"Steg 3"
+		"Panorama_Overwatch_Tooltip_p4"			"När ärendet är avslutat väljer du en lösning för varje fråga och klickar på ÖVERLÄMNA UTLÅTANDE."
+		"Panorama_Overwatch_Major_Disruption"	"Grovt störningsmoment"
+		"Panorama_Overwatch_Minor_Disruption"	"Mindre störningsmoment"
+		"Panorama_Overwatch_Res_Griefing"		"Griefing"
+		"Panorama_Overwatch_Res_AimHacking"		"Sikteassistans"
+		"Panorama_Overwatch_Res_WallHacking"	"Synlighetsassistans"
+		"Panorama_Overwatch_Res_SpeedHacking"	"Annan extern assistans"
+		
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	ROSETTA PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_CSGO_Spray_EnableMouse"			"<b>[{g:csgo_key:spray_mouse_enable}]</b> Aktivera muspekaren"
+		"Panorama_CSGO_Rosetta_Item_Name"			"<font color=\"{s:item_color}\">{s:item_name}</font>"
+		"Panorama_CSGO_Rosetta_Item_Count"			"Återstående laddningar: {d:item_count}"
+		"Panorama_Attrib_SpraysHint"					"{s:bind_attack} för att använda graffiti"
+		"Panorama_Attrib_SpraysHint_Auto"			"Släpp <b>{s:bind_spray_menu}</b> för att spraya graffiti"
+
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	RETICLE PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_HUD_weaponid_swap"			"<font color=\"#6a6156\">[{s:bind_use}] Byt till</font> <font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+		"Panorama_HUD_weaponid_pickup"			"<font color=\"#6a6156\">[{s:bind_use}] Plocka upp</font> <font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+		"Panorama_HUD_weaponid_lookat"			"<font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+		"Panorama_HUD_weaponid_holdtopickup"	"<font color=\"#6a6156\">Håll in [{s:bind_use}] för att ta upp </font> <font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+
+		"Panorama_HUD_playerid_sameteam"			"<font color='#6E7D5C'>Vän: {g:player_name:html:player_slot} Hälsa: {d:player_health} %</font>"
+		"Panorama_HUD_playerid_diffteam"			"<font color='#CC0000'>Fiende: {g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_playerid_specteam"			"<font color='#6E7D5C'>{g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_playerid_noteam"			"<font color='#FFCC00'>{g:player_name:html:player_slot} Hälsa:{d:player_health} %</font>"
+		"Panorama_HUD_playerid_overhead_shadow"		"{g:player_name:player_slot}"
+
+		"Panorama_HUD_playerid_survival_enemy"				"<font color='#CC0000'>Fiende</font>"
+		"Panorama_HUD_playerid_survival_hunter_target"		"<font color='#e58816'>Högprioriterat mål</font>"
+
+		"Panorama_HUD_botid_request_bomb"		"<font color='#e5da25'>[{s:bind_use}] Ta bomben</font>"
+
+		"Panorama_HUD_hostageid_nh"				"<font color='#e5da25'>Gisslan</font>"
+		"Panorama_HUD_hostagename_nh"			"<font color='#e5da25'>{g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_hostageid_nh_use_lead"		"<font color='#e5da25'>[{s:bind_use}] Plocka upp gisslan</font>"
+		"Panorama_HUD_hostageid_nh_following"	"<font color='#e5da25'>Gisslan (följer {g:player_name:html:player_slot})</font>"
+
+		"Panorama_HUD_hostageid"					"<font color='#e5da25'>Gisslan</font><font color='#dcdac0'> {d:player_health}%</font>"
+		"Panorama_HUD_hostageid_use_lead"		"<font color='#e5da25'>[{s:bind_use}] Plocka upp gisslan</font><font color='#dcdac0'> {d:player_health}%</font>"
+		"Panorama_HUD_hostageid_following"		"<font color='#e5da25'>Gisslan (följer {s:player_name})</font><font color='#dcdac0'> {d:player_health}%</font>"
+
+
+		"Panorama_HUD_playerid_overhead_health"			"{d:player_health} %"
+		"Panorama_HUD_playerid_overhead_money"			"${d:r:player_money}"
+
+		"Panorama_HUD_playerid_overhead_survival"					"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#00c3e1'> {d:player_health} %</font>"
+		"Panorama_HUD_playerid_overhead_survival_lowhealth"			"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#d82429'> {d:player_health} %</font>"
+		"Panorama_HUD_playerid_overhead_survival_money"				"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#7ebc50'> ${d:r:player_money}</font>"
+		"Panorama_HUD_playerid_overhead_survival_grey"				"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#dddddd'> {d:player_health} %</font>"
+		"Panorama_HUD_playerid_overhead_survival_lowhealth_grey"	"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#d82429'> {d:player_health} %</font>"
+		"Panorama_HUD_playerid_overhead_survival_money_grey"		"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#7ebc50'> ${d:r:player_money}</font>"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	DEATH PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_SurvivalEndOfMatch_ShowStats"			"[{s:bind_jump}] Visa matchstatistik"
+		"Panorama_Death_Cancel_Start_Replay"			"[{s:bind_jump}] Hoppa över"
+		"Panorama_Death_Cancel_Replay" 				"[{s:bind_jump}] Avbryt repris"
+		"Panorama_Death_Snapshot"						"[{s:bind_jpeg}] Spara detta ögonblick"
+		"Panorama_HUD_Spectate_Navigation_Replay_Death"	"<font color='#ddbb22'><b>[{s:bind_reload}] Dödsrepris</b></font>"
+
+		"Panorama_DeathPanel_Killer1_YourWeapon"			"dödade dig med din egen {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_KillerWeapon"			"dödade dig med sin {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_OthersWeapon"			"dödade dig med <font color='#adadad'>{s:other_player_name}s</font> {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_Weapon"				"dödade dig med {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_Weapon_Plural" 		"dödade dig med {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_Weapon_CustomString" 	"{s:weapon_name}"
+
+		"Panorama_DeathPanel_DamageTaken:f"					"{hits_taken, plural, one{<font color='#A0A0A0'>Skada tagen:  </font><font color='#FFFFFF'><b>{d:damage_taken}</b></font> <font color='#A0A0A0'> med</font> <font color='#FFFFFF'><b>{d:hits_taken} träff </b></font>} other{<font color='#A0A0A0'>Skada tagen:  </font><font color='#FFFFFF'><b>{d:damage_taken}</b></font> <font color='#A0A0A0'> med</font> <font color='#FFFFFF'><b>{d:hits_taken} träffar </b></font>}}"
+		"Panorama_DeathPanel_DamageGiven:f"					"{hits_given, plural, one{<font color='#A0A0A0'>Skada gjord:  </font><font color='#FFFFFF'><b>{d:damage_given}</b></font> <font color='#A0A0A0'> med</font> <font color='#FFFFFF'><b>{d:hits_given} träff </b></font>} other{<font color='#A0A0A0'>Skada gjord:  </font><font color='#FFFFFF'><b>{d:damage_given}</b></font> <font color='#A0A0A0'> med</font> <font color='#FFFFFF'><b>{d:hits_given} träffar </b></font>}}"
+
+		/////////////////////////////////////////////////////////////////
+		//
+		//      CHATWHEEL OPTIONS
+		//
+		////////////////////////////////////////////////////////////
+
+		"Chatwheel_segment_top"	"Överst"
+		"Chatwheel_segment_topright"	"Överst till höger"
+		"Chatwheel_segment_right"	"Höger"
+		"Chatwheel_segment_bottomright"	"Nederst till höger"
+		"Chatwheel_segment_bottom"	"Nederst"
+		"Chatwheel_segment_bottomleft"	"Nederst till vänster"
+		"Chatwheel_segment_left"	"Vänster"
+		"Chatwheel_segment_topleft"	"Överst till vänster"
+
+		"Chatwheel_ping_on_cooldown"  "Kan inte pinga. Ping är på cooldown."
+
+		"Chatwheel_plant"	"Placera bomben"
+		"Chatwheel_sitea"	"Pinga bombplats A"
+		"Chatwheel_siteb"	"Plinga bombplats B"
+
+		"Chatwheel_section_move"	"Rörelse"
+		"Chatwheel_sticktogether"	"Håll ihop"
+		"Chatwheel_followme"	"Följ mig"
+		"Chatwheel_followingyou"	"Följer dig"
+		"Chatwheel_spreadout"	"Sprid ut er"
+		"Chatwheel_fallback"	"Retirera"
+		"Chatwheel_gogogo"	"Kör kör kör!"
+		"Chatwheel_onmyway"	"På väg"
+		"Chatwheel_gethostage"	"Kontrollera gisslan"
+		"Chatwheel_quiet"	"Tyst!"
+
+		"Chatwheel_section_prepare"	"Förberedelse"
+		"Chatwheel_requestecoround"	"Vi borde spara"
+		"Chatwheel_requestspend"	"Vi borde köpa"
+		"Chatwheel_requestleader"	"Vem ska leda oss?"
+		"Chatwheel_requestweapon"	"Behöver ett vapen"
+		"Chatwheel_requestplan"		"Vad är planen?"
+		"Chatwheel_aplan"	"Plinga bombplats A"
+		"Chatwheel_bplan"	"Plinga bombplats B"
+		"Chatwheel_midplan"	"Pinga mitten"
+
+		"Chatwheel_section_grenades"	"Granater"
+		"Chatwheel_decoy"	"Behöver lockgranat"
+		"Chatwheel_smoke"	"Behöver rökgranater"
+		"Chatwheel_grenade"	"Behöver handgranater"
+		"Chatwheel_fire"	"Behöver molotovs"
+		"Chatwheel_flashbang"	"Behöver chockgranater"
+		
+		"Chatwheel_section_defend"	"Försvara"
+		"Chatwheel_coverme"	"Täck mig"
+		"Chatwheel_coveringyou"	"Täcker dig"
+		"Chatwheel_help"	"Hjälp"
+		"Chatwheel_needbackup"	"Behöver förstärkning"
+		"Chatwheel_holdposition"	"Håll den här positionen"
+        "Chatwheel_rotatetome"	"Rotera till mig"
+
+		"Chatwheel_section_bomb"	"Bombstatus"
+		"Chatwheel_guardingbomb"	"Vaktar bomben"
+		"Chatwheel_bombsiteclear"	"Bombplatsen är säkrad"
+		"Chatwheel_droppedbomb"	"Bomben släpptes"
+		"Chatwheel_bombpickedup"	"Bomb upplockad"
+		"Chatwheel_ifixbomb"	"Jag av/aktiverar bomben"
+		"Chatwheel_youfixbomb"	"Du av/aktiverar bomben"
+		
+		"Chatwheel_bombat"	"Plinga bomben" 
+
+		"Chatwheel_section_enemystatus"	"Fiendestatus"
+		"Chatwheel_heardnoise"	"Hörde ljud" 
+		"Chatwheel_enemyspotted"	"Fiende upptäckt"
+		"Chatwheel_sectorclear"	"Området säkrat"
+		"Chatwheel_sniperspotted"	"Krypskytt upptäckt"
+		"Chatwheel_bombcarrierspotted"	"Bombbärare upptäckt"
+		"Chatwheel_threeleft"	"Tre kvar"
+		"Chatwheel_twoleft"	"Två kvar"
+		"Chatwheel_oneleft"	"En kvar"
+		"Chatwheel_oneenemyhere"  "En fiende här"
+		"Chatwheel_multipleenemieshere"  "Flera fiender här"
+		"Chatwheel_ihavethebomb"  "Bomb upplockad"
+
+		"Chatwheel_section_enemykilled"	"Fiende dödad"
+		"Chatwheel_gotheadshot"	"Jag fick ett huvudskott"
+		"Chatwheel_ikilledsniper"	"Jag dödade krypskytten"
+		"Chatwheel_wekilledsniper"	"Vi dödade krypskytten"
+		"Chatwheel_sawheadshot"	"Snyggt headshot"
+
+		"Chatwheel_section_combatstatus"	"Stridsstatus"
+		"Chatwheel_attacking"	"Anfaller"
+		"Chatwheel_inposition"	"På plats"
+		"Chatwheel_covering"	"Täcker"
+		"Chatwheel_pinned"	"Jag är under beskjutning"
+		"Chatwheel_incombat"	"I strid"
+		"Chatwheel_friendlyfire"	"Vådabeskjutning"
+		"Chatwheel_lastunitalive"	"Sista personen vid liv"
+
+		"Chatwheel_section_responses"	"Svar"
+		"Chatwheel_wewon"	"Vi vann"
+		"Chatwheel_welost"	"Vi förlorade"
+		"Chatwheel_wearewinning"	"Vi vinner"
+		"Chatwheel_lostround"	"Förlorade denna runda"
+		"Chatwheel_thanks"	"Tack!"
+		"Chatwheel_sorry"	"Förlåt"
+		"Chatwheel_compliment"	"Snyggt!"
+		"Chatwheel_affirmative"	"Ja"
+		"Chatwheel_negative"	"Nej"
+		"Chatwheel_peptalk"	"Peptalk"
+		"Chatwheel_cheer"	"Jubel"
+
+		"Chatwheel_plantingata"	"Jag placerar bomben vid A"
+		"Chatwheel_plantingatb"	"Jag placerar bomben vid B"
+		"Chatwheel_plantedata"	"Jag placerade bomben vid A"
+		"Chatwheel_plantedatb"	"Jag placerade bomben vid B"
+		"Chatwheel_planted"	"Vi placerade bomben"
+
+		"Chatwheel_seehostagestaken"	"Gisslan fritas"
+		"Chatwheel_requestgethostages"	"Befria gisslan"
+
+		"Chatwheel_guardinga"	"Jag vaktar A"
+		"Chatwheel_guardingb"	"Jag bevakar B"
+		
+
+		
+		"Chatwheel_section_command"	"Kommandon"
+		"Chatwheel_section_report"	"Rapportera"
+
+		"Chatwheel_description" "Chatthjulet ger snabb åtkomst till en anpassningsbar lista med relevanta radiokommandon."
+
+		////
+		//
+		// Volatile Laptop
+		//
+		////
+
+		// ---------------------------------------------------------------------------------------------
+		"laptop_window_collection_title"			"XP FRÅN KOLLEKTIONSKATALOG"
+		"laptop_window_expiration_title"			"UPPHÖR"
+		"laptop_window_seal_title"					"STATUS"
+		"laptop_window_messages_title"				"CHATT – VAPENHANDLARE"
+		"laptop_window_currentoffer_title"			"AKTUELLT ERBJUDANDE"
+		"laptop_app_title"							"<span class=\"laptop-app-title-prefix\">UP-</span>Link"
+		"laptop_app_version"						"v 1.1.0.2000"
+
+		"dealer_offer_attachment_title"							"{s:item-name}"
+		"dealer_offer_attachment_wear"							"{s:item-rarity}"
+		"dealer_offer_attachment_remaining_title"				"ERBJUDANDE {d:offer-total}"
+		"dealer_offer_attachment_remaining"						"Erbjudande {d:offer-total}"
+		"dealer_offer_received_count"							"<b>{s:offer-count}</b> erbjudande"
+		"dealer_offer_attachment_final_title"					"SLUTGILTIGT ERBJUDANDE"
+		"dealer_offer_attachment_final"							"{s:offer-count} och slutgiltigt erbjudande"
+		"dealer_offer_attachment_status"						"Erbjudande – {s:offer-status}"
+		"dealer_offer_attachment_status-active"					"<b><span class=\"offer-active\">Aktiv</span></b>"
+		"dealer_offer_attachment_status-price"					"<b><span class=\"offer-active\">{s:offer-price}</span></b>"
+		"dealer_offer_attachment_status-declined-price"			"{s:offer-price}"
+		"dealer_offer_attachment_status-declined"				"<span class=\"offer-declined\">{s:offer-count} Erbjudande – avböjt</span>"
+
+		"user_btn_purchase_desc_purchase"		"Håll knappen nedtryckt för att köpa det här föremålet. Terminalen kasseras efter köpet."
+		"user_btn_purchase_desc_continue"		"Håll ner för att avböja erbjudandet permanent och se nästa."
+		"user_btn_purchase_desc_end"		"Avböj det slutgiltiga erbjudandet och kassera denna terminal."
+		"user_btn_purchase_title"			"{s:offer-count} – erbjudande"
+		"user_btn_purchase_final_title"		"<b>Sista erbjudandet</b>"
+		"user_btn_decline_desc"				"Avböj detta erbjudande och se ett nytt"
+		"user_btn_accept"		"Acceptera erbjudande <b>{s:price}</b>"
+		"user_btn_accept_final"	"Acceptera slutgiltigt erbjudande <b>{s:price}</b>"
+		"user_btn_accept_0"		"Deal. <b>{s:price} accepteras.</b>"
+		"user_btn_accept_1"		"Jag accepterar – <b>{s:price}</b>"
+		"user_btn_accept_2"		"Jag går med på <b>{s:price}</b>"
+		"user_btn_accept_3"		"Jag nappar på <b>{s:price}</b>"
+		"user_btn_accept_4"		"För <b>{s:price}</b> är jag med."
+		"user_btn_accept_5"		"Det låter bra – <b>{s:price}</b>"
+		"user_btn_next"			"Avböj erbjudandet"
+		"user_btn_next_0"		"Lockande, men nej tack"
+		"user_btn_next_1"		"Inte värt mina kulor"
+		"user_btn_next_2"		"Det går jag inte med på"
+		"user_btn_next_3"		"Pass"
+		"user_btn_next_4"		"Ingen deal"
+		"user_btn_next_5"		"Nej tack"
+		"user_btn_next_6"		"Inte den här gången"
+		"user_btn_next_7"		"Inte idag"
+		"user_btn_pause"		"Pausa dealen"
+		"user_btn_end"			"Avböj slutgiltigt erbjudande"
+
+		"user_message_limit_0"		"Jag kan gå upp till <b>{s:limit-setting}</b>."
+		"user_message_limit_1"		"Vad sägs om <b>{s:limit-setting}</b> som max?"
+		"user_message_limit_2"		"Upp till <b>{s:limit-setting}</b> går bra för mig."
+		"user_message_limit_3"		"<b>{s:limit-setting}</b> är bra som max."
+		"user_message_limit_unlimited_0"	"<b>Inget maxpris</b> – visa mig allt."
+		"user_message_limit_unlimited_1"	"<b>Blankcheck</b>. Tänk inte på plånboken."
+		"user_message_limit_unlimited_2"	"Jag är här för att handla. <b>Visa mig allt</b>."
+		"user_message_limit_unlimited_3"	"Om den kan skjuta är jag intresserad.<b> Inga gränser</b>."
+		"user_message_limit_unlimited_4"	"Ingenting är omöjligt."
+		"offer_limit_setting"		"Erbjudandegräns: {s:limit}"
+		"offer_limit_setting_interface"		"Erbjudandegräns: {s:limit} <img src='file://{images}/icons/ui/expand.svg' class='expand-icon'/>"
+
+		"dealer_offer_Unknown"							"–"
+		"dealer_offer_1"								"1:a"
+		"dealer_offer_2"								"2:a"
+		"dealer_offer_3"								"3:a"
+		"dealer_offer_4"								"4:a"
+		"dealer_offer_5"								"5:a"
+		"dealer_offer_6"								"6:a"
+		"dealer_offer_7"								"7:a"
+		"dealer_offer_8"								"8:a"
+		"dealer_offer_9"								"9:a"
+		"dealer_offer_10"								"10:a"
+
+		"current_offer_tooltip"		"Vapenhandlarens aktuella erbjudande till dig."
+		"declined_offer_tooltip"	"Avböjt erbjudande"
+		"future_offer_tooltip"		"Erbjudandet är ännu inte avslöjat."
+		"laptop_expiration_tooltip"		"Tid kvar tills denna terminal och erbjudandena i den upphör."
+		"laptop_max_offer_tooltip"		"Ange en maximal erbjudandegräns. Du får bara erbjudanden under den gränsen, och du kan ändra den när som helst."
+		"collection_xp_tooltip"			"Tjäna XP genom att se erbjudandena i den här kollektionen. Öppna för att se framsteg och hämta XP."
+		"terminal_offer_limit_tooltip"		"Uppdatera din maximala erbjudandegräns. Vapenhandlaren visar bara erbjudanden upp till den gränsen."
+		"popup_lootlist_title"			"XP från kollektionskatalog"
+		"popup_lootlist_desc"			"Tjäna XP genom att titta på erbjudandena i den här kollektionen"
+
+		"popup_lootlist_progress:f"      "Sett {total, plural, one{{d:seen}/{d:total} erbjudande} other{{d:seen}/{d:total} erbjudanden}}"
+		"popup_lootlist_claim_xp"		"Få bonus-XP"
+		"popup_lootlist_claim_ww"		"Hämtar XP ..."
+		"popup_lootlist_claim_ok"		"✔ XP hämtad"
+		"popup_vpn_status_connected"	"Status: Ansluten till ett säkert nätverk"
+		"popup_vpn_status_disconnected"	"Status: Frånkopplad"
+		"popup_signal_full" 			"Optimal signal"
+		"popup_signal_ok" 				"Stark signal"
+		"popup_offer_limit_desc"		"Uppdatera din maximala erbjudandegräns för alla framtida erbjudanden"
+		"laptop_battery_tooltip" 		"Batteri: {d:percent} %"
+		"laptop_original_seal_tooltip" 	"Alla föremål som köps från denna terminal levereras med ett originalägarintyg, vilket är giltigt så länge du är ägaren."
+		"laptop_zoom_tooltip" 			"Skrolla med mushjulet för att zooma in och ut"
+		"laptop_pan_tooltip" 			"Håll ner shift-tangenten och dra för att panorera kameran"
+		"laptop_pricing_tooltip"		"Priserna är globala och justeras automatiskt baserat på efterfrågan för varje artikel i kollektionen."
+
+		"dealer_message_set_offer_limit_0"		"Först och främst: Hur mycket är du villig att spendera?"
+		"dealer_message_set_offer_limit_1"		"Låt oss få det här ur vägen.<!--.25--> Vad är din gräns?"
+		"dealer_message_set_offer_limit_2"		"Innan vi börjar ...<!--.25--> Vad har du som gräns? Hur mycket är du villig att spendera?"
+		
+		"dealer_message_start_0"  	"Det här är bara professionella grejer!<!--.25-->Alla finesser. Ingen dokumentation."
+		"dealer_message_start_1"  	"Jag säljer gråmarknadsvaror utan dokumentation<!--.25-->Slappna av, de är kalla. De har inte varit i omlopp på flera år, ingen letar efter dem.<!--.25-->Och om du undrar så skjuter de fortfarande dit du riktar dem."
+		"dealer_message_start_2"  	"Tullen i Ahradan beslagtog min last i morse. Jag försökte ta tillbaka den med en snyfthistoria om medicinsk utrustning och nån stackare som är döende ...<!--.25-->Det funkade inte. Men det gjorde en väska full med pengar.<!--.25-->Vad sägs om att ta en titt på de här dialysmaskinerna innan jag ger dem till de föräldralösa barnen."
+		"dealer_message_start_3"  	"Ett regimskifte inträffade just i ett av stan-länderna<!--.25-->Depådörrarna svängdes upp och jag rotade igenom högen själv.<!--.25-->Jag säljer bara de sterila delarna. Ta en titt."
+		"dealer_message_start_4"  	"Allt jag har idag är rent.<!--.25-->Så vitt nån vet är dina händer de första som har rört vid dem."
+		"dealer_message_start_5"  	"Sterila delar, inga serienummer, i felfritt skick.<!--.25-->En krigsdomstol skulle kalla dem bevis.<!--.25-->Du och jag vet att de är mästerverk."
+		"dealer_message_start_6"  	"Hela den här leveransen består av exotiska varor som nyligen har befriats från en paradenhet.<!--.25-->Mycket marscherade. Avfyrades aldrig."
+		"dealer_message_start_7"  	"Mina andra kunder vill alltid veta hur jag får tag på det jag säljer. Jag hatar det.<!--.25-->Allt du behöver veta är om det är det bästa på marknaden.<!--.25-->Vet du vad? Det är det."
+		"dealer_message_start_8"  	"Fredsavtal i Drosvik. Jag älskar fred.<!--.25-->För att jag har en general med många skulder och ett välutrustat vapenförråd som samlar damm.<!--.25-->Jag menar ...<!--.25-->Fred är såklart bra också. Oskyldiga liv och ...<!--.25-->Vad jag snackar, du bryr dig inte."
+		"dealer_message_start_9"  	"Den här lasten innehåller några exotiska exemplar som jag fått tag på via gråa kanaler.<!--.25-->Ovanliga kaliber, inget för amatörer. Du kommer att älska dem."
+		"dealer_message_start_10"  	"Det här är pinsamt.<!--.25-->Jag måste ha råkat märka en låda fel på tulldeklarationen.<!--.25-->Ja ja. Några dussin lådor.<!--.25-->Vad sägs om att du hjälper mig att få det här inventariet att försvinna innan hamnmyndigheten börjar undersöka det hela."
+		"dealer_message_start_11"  	"Inspektören i Drosvik var ute efter en muta för den här. Idioten började prata om beslagsorder.<!--.25-->Jag har killar i Drosvik som vet hur man hanterar pratkvarnar. Han håller käften nu.<!--.25-->Och som tur är talar den här varan för sig själv."
+		"dealer_message_start_12"  	"Var tvungen att smöra för alla i Ahradan för att få den här leveransen över gränsen.<!--.25-->Alla mutor var dessutom i ahri. Förstår du hur mycket papper som behövs för att betala mutor med en värdelös valuta? De måste verkligen göra nåt åt sin ekonomi."
+		"dealer_message_start_13"	"Den här är från en mellanhand som behöver bli av med den snabbt som attan.<!--.25-->Det var allt han sa. Snabbt!<!--.25-->Och som attan!<!--.25-->Jag säger så här: Om du inte undrar varför han säljer, så är du snart en lyckans ost."
+		"dealer_message_start_14"	"Klassiska modeller idag.<!--.25-->Är de pråliga? Nej. Men de är pålitliga.<!--.25-->Dina barnbarn kommer att skjuta folk med dem."
+		"dealer_message_start_15"	"En rebellmilis befriade det här från den ärorika ledarens vapenförråd.<!--.25-->Jag tror att han också befriade den ärorika ledarens överkropp från lemmar och huvud.<!--.25-->(Jag säljer inte sånt, men jag har kontakter, om du är intresserad.)"
+		"dealer_message_start_16"	"Gränschefen i Drosvik hotade att beslagta den här leveransen<!--.25-->Jag tror inte att han fick meddelandet om att jag inte tar mutor i Drosvik. Inte när de lokala muskelknuttarna är så billiga. Drosvik är typ världens kickboxningscentrum.<!--.25-->Hur som helst, hans ersättare tappade bort beslagstagningsbeslutet. Och hans armar är inte brutna."
+		"dealer_message_start_17"	"Allt detta kommer från en miljardärs privata samling.<!--.25-->En före detta miljardär. Han är under utredning, vilket innebär att jag likviderar det han inte kan.<!--.25-->Låt oss vara ärliga, det här kommer att se finare ut hos dig än på en vägg i en yacht."
+		"dealer_message_start_18"	"Hamninspektören upptäckte en avvikelse i den här leveransen.<!--.25-->Lustigt nog väger en låda med gevär exakt lika mycket som en låda med ”traktordelar” när man lägger till exakt tiotusen dollar på vågen.<!--.25-->Vi tar oss en titt på de så kallade traktordelarna."
+		"dealer_message_start_19"	"Grejerna jag har idag överlevde en kupp för att komma till dig.<!--.25-->Lackeringen är repig, men det är inget fel på funktionen. Det är insidan som räknas, eller hur?"
+		"dealer_message_start_20"	"En liten löjlig republik hängde precis sin president.<!--.25-->Jag hade turen att få ärva hans leveranskedja."
+		"dealer_message_start_21"	"Kalla det ett handläggningsfel. En avvikelse i pappersarbetet. En enkel felarkivering.<!--.25--> Misstag händer. Jag försöker bara hjälpa en vän så att han inte förlorar sin tjänst som förvaltningssergeant.<!--.25-->Den här utrustningen måste bort."
+		"dealer_message_start_22"	"Någon tullchef trodde att han kunde pressa mig med den här leveransen. Så jag fick hamnarbetarfacket att pressa hårdare.<!--.25-->Det är intressant hur snabbt pappersarbetet går i lås när alla är upptagna med att leta efter en försvunnen person.<!--.25-->Jag hoppas att de hittar den stackarn. Jag tror inte att han vet hur man simmar."
+		"dealer_message_start_23"	"Gränsvakten i Ahradan sa att dokumentationen inte stämde. Så jag gav honom en hög med ahri och plötsligt stämde den.<!--.25-->Jag vet inte ens vad tiotusen ahri är i riktiga pengar. Typ sex dollar eller nåt.<!--.25-->Vill du titta på några vapen som inte existerar?"
+		"dealer_message_start_24"	"Jag hade en krigsgeneral som åtog sig att köpa upp de här varorna, och så går idioten och sprängs i ett drönaranfall.<!--.25-->Håll fönstren stängda, det är mitt råd. Hur som helst, hans explosion är din vinst."
+		"dealer_message_start_25"	"Regimskifte i Drosvik. Jag vet inte hur det här gick till, men på nåt sätt försvann ett lager fullt med vapenlådor i kaoset.<!--.25-->Och på nåt sätt hamnade de hos mig. Galet, eller hur?<!--.25-->Det blir ännu galnare. På nåt sätt kanske jag säljer dem. Till dig. Just nu."
+		"dealer_message_start_26"	"Jag har en låda med feldeklarerad last som jag vill visa dig.<!--.25-->Låt dig inte luras av namnet jordbruksutrustning. Du lär bara bita i gräset om du inte skjuter först."
+		"dealer_message_start_27"	"Jag hatar att arbeta med upprorsmän. Det är bara ett fint ord för civila, vilket är ett snällt sätt att säga förbannade amatörer<!--.25-->Hur som helst, jag har inte hört nåt från dem, så jag ger några riktiga proffs en chans med de här varorna."
+		"dealer_message_start_28"	"Den ständigt heta zonen i södern har precis upplevt sin halvårliga parlamentskollaps.<!--.25-->Ett gäng lokala vapenförråd spräcktes som piñatas."
+		"dealer_message_start_29"	"Hamnmyndighetens inspektör kallade den här leveransen oregelmässig i fredags.<!--.25-->På måndagen hade hans dotter tillräckligt med studiemedel för att gå på Stamwick och leveransen är jordbruksredskap igen.<!--.25-->Vad kan jag säga, utbildning är viktigt. Vi tar en titt på några jordbruksredskap."
+
+		"dealer_message_resume_0"  	"<!--1--> Du är tillbaka. Bra. Dealen är fortfarande aktuell."
+		"dealer_message_resume_1"  	"<!--1-->Behövde du tänka på saken? Inga problem."
+		"dealer_message_resume_2"  	"<!--1-->Jag trodde nog att du skulle komma tillbaka."
+		"dealer_message_resume_3"  	"<!--1-->Vi fortsätter där vi slutade."
+		"dealer_message_resume_4"  	"<!--1-->Redo att göra lite affärer?"
+		"dealer_message_resume_5"  	"<!--1-->Bra, du är tillbaka. Jag måste göra mig av med det här, annars börjar fel personer ställa frågor."
+		"dealer_message_resume_6"  	"<!--1-->Du är tillbaka. Var var vi?"
+
+		"dealer_message_first_offer_0"	"<!--.5-->Om du är intresserad så gör vi en deal."
+		"dealer_message_first_offer_1"	"<!--.5-->Bara så att du vet, jag har andra som är intresserade av den här varan."
+		"dealer_message_first_offer_2"	"<!--.5-->Om du är med, så är du med. Säg till annars, jag har många intresserade köpare."
+		"dealer_message_first_offer_3"	"<!--.5-->Den är din om du vill ha den. Annars är det din förlust."
+		"dealer_message_first_offer_4"	"<!--.5-->Om svaret är ja, så kör vi. Erbjudandet varar inte för evigt."
+		"dealer_message_first_offer_5"	"<!--.5-->Erbjudandet står fast. Ja eller nej?"
+		"dealer_message_first_offer_6"	"<!--.5-->Vill du ha det här eller inte? Jag blir inte sårad om du säger nej. Jag har gott om andra köpare."
+		"dealer_message_first_offer_7"	"<!--.5-->Ska vi göra det här eller inte?"
+		"dealer_message_first_offer_8"	"<!--.5--> Jag har inte hela dagen på mig."
+		"dealer_message_first_offer_9"	"<!--.5-->Blir det nån deal eller inte?"	
+		"dealer_message_first_offer_10"	"<!--.5-->Jag behöver inte övertyga dig här, det här säljer sig självt. Ska du slå till eller inte?"		
+
+		"dealer_message_next_offer_0"	"<!--1-->Okej, det där var inte för dig. Vad sägs om det här?"
+		"dealer_message_next_offer_1"	"<!--1-->Din förlust. Jag är som tur är på bra humör. Kolla in det här."
+		"dealer_message_next_offer_2"	"<!--1-->Står du över? Ditt misstag. Ta en titt på det här."
+		"dealer_message_next_offer_3"	"<!--1-->Den här varan säljer sig själv. Om du inte köper den så hittar jag nån som gör det.<!--.5-->Men nu när du ändå är här, så är det här perfekt för dig."
+		"dealer_message_next_offer_4"	"<!--1-->Jag fattar. Inte din stil. Får se om det här passar bättre. Jag tror att du kommer att gilla det här."
+		"dealer_message_next_offer_5"	"<!--1-->Jag trodde nog att du skulle stå över. Som tur var hade jag den här lilla skönheten väntandes i kulisserna."
+		"dealer_message_next_offer_6"	"<!--1-->Som jag trodde. Här, kolla in det här. Det tror jag är mer i din stil."
+		"dealer_message_next_offer_7"	"<!--1-->Du kommer att ångra att du stod över. Inga problem. Vad sägs om det här?"
+		"dealer_message_next_offer_8"	"<!--1-->Jag känner dig alltför väl. Jag visste att du inte skulle nappa. Vad sägs om det här?"
+		"dealer_message_next_offer_9"	"<!--1-->Okej, vi hoppar över förrätten. Gör dig redo för huvudrätten."
+		"dealer_message_next_offer_10"	"<!--1-->Jag förstår, jag gillade inte heller hur det såg ut. Kolla in det här!"		
+		"dealer_message_next_offer_11"   "<!--1-->Det där kanske är nåt man måste vänja sig vid. Nästa kanske faller dig i smaken bättre."
+		"dealer_message_next_offer_12"   "<!--1-->Det finns en massa mer i lager. Kolla in det här praktexemplaret."
+		"dealer_message_next_offer_13"   "<!--1-->Vet du vad? Jag hade på känn att du skulle säga det. Vi går vidare till det här."
+		"dealer_message_next_offer_14"   "<!--1-->Du är svårare att vara till lags än jag trodde. Får det här dig att le?"
+		"dealer_message_next_offer_15"   "<!--1-->Du sårar mig inte. Jag gjorde inte den där förbannade saken. Här är ett annat alternativ."
+		"dealer_message_next_offer_16"   "<!--1-->Jag skulle inte ha valt det heller. Men det här. Kom igen."
+		"dealer_message_next_offer_17"   "<!--1-->Du avstår? Uppfattat. Nästa."
+		"dealer_message_next_offer_18"   "<!--1-->Jag ser att du har höga krav. Funkar för mig. Nästa är guldstandarden."
+		"dealer_message_next_offer_19"   "<!--1-->Jag vill inte slösa dina pengar och du vill inte slösa min tid. Ta en titt på det här."
+		"dealer_message_next_offer_20"   "<!--1-->Du, jag uppskattar ärligheten. Nu fortsätter vi och slutar att slösa bort tiden."
+		"dealer_message_next_offer_21"   "<!--1-->Okej, det kändes inte rätt för dig. Vilken tur att jag har fler än ett vapen till salu."
+		"dealer_message_next_offer_22"   "<!--1-->Inga problem. Massor av andra varor till försäljning här. Nästa."
+		"dealer_message_next_offer_23"   "<!--1-->Jag kunde ha svurit på att jag skulle få det sålt. Kanske det här kan avgöra saken."
+		"dealer_message_next_offer_24"   "<!--1-->Uppfattat. Inget för dig. Allt kan inte vara det. Men det här vill ha din uppmärksamhet."
+		"dealer_message_next_offer_25"   "<!--1-->Det verkar inte som att du fattar vad jag erbjuder här. Vi får se om det här fångar din uppmärksamhet."
+		"dealer_message_next_offer_26"   "<!--1-->Okej, sluttramsat. Jag garanterar dig att du kommer att gilla nästa. Förmodligen."
+		"dealer_message_next_offer_27"   "<!--1-->Du gillade inte det, va? Då hamnar det i mitt privata vapenförråd. Vad sägs om det här?"
+		"dealer_message_next_offer_28"   "<!--1-->Du har smak. Nu får vi se om nästa exemplar uppfyller dina höga krav."
+		"dealer_message_next_offer_29"   "<!--1-->Okej, det där var bara högst upp i högen. Låt mig gräva lite djupare."
+		"dealer_message_next_offer_30"   "<!--1-->Glöm det sista. Det är det här jag ville att du skulle titta på."
+		"dealer_message_next_offer_31"   "<!--1-->Det där bär ditt namn. Inte bokstavligen, det är rent."
+		"dealer_message_next_offer_32"   "<!--1-->Jag vet att du inte kan köpa allt. Du kanske väntar på nåt särskilt. Som det här."
+		"dealer_message_next_offer_33"   "<!--1-->Det där vara bara övning. Nu är vi framme vid den verkliga showen."
+		"dealer_message_next_offer_34"   "<!--1-->Det trodde jag inte heller. Men det här. Jag tänkte på dig när jag såg det."
+		"dealer_message_next_offer_35"   "<!--1-->Rimligt. Jag har sparat det här till dig."
+		"dealer_message_next_offer_36"   "<!--1-->Det är inte mitt jobb att få dig att älska det. Jag försöker bara sälja hårdvara. Nästa."
+		"dealer_message_next_offer_37"   "<!--1-->Inga problem. Jag tror att nästa är mer i din smak."
+		"dealer_message_next_offer_38"   "<!--1-->Smart. Jag visste att du inte skulle kasta dig över det. Här är nåt bättre."
+		"dealer_message_next_offer_39"   "<!--1-->Inga problem. Jag skulle inte heller ha köpt det. Det här, å andra sidan ..."
+		"dealer_message_next_offer_40"   "<!--1--> Jaså, du får mig att hämta grejerna från den översta hyllan? Säger du det så."
+
+		"dealer_message_last_offer_0"	"<!--0-->Okej, det sista och slutgiltiga erbjudandet. Ja eller nej?"
+		"dealer_message_last_offer_1"	"<!--0-->Betrakta detta som mitt slutgiltiga erbjudande."
+		"dealer_message_last_offer_2"	"<!--0-->Slutgiltigt erbjudande. Ja eller nej? Det är dags att sluta slösa bort min tid."
+		"dealer_message_last_offer_3"	"<!--0-->Sista erbjudandet.<!--1--> Om du inte vill ha det skulle jag ta ett steg tillbaka. Den här saken KOMMER att explodera."
+		"dealer_message_last_offer_4"	"<!--0-->Sista erbjudandet. Jag tänker inte böna och be."
+		"dealer_message_last_offer_5"	"<!--0-->Okej, det här är det bästa jag kan erbjuda."
+		"dealer_message_last_offer_6"	"<!--0-->Visst. Här. Har vi en deal eller inte?"		
+		"dealer_message_last_offer_7"	"<!--0-->Det slutgiltiga och bästa erbjudandet."
+		"dealer_message_last_offer_8"	"<!--0-->Jag möter dig halvvägs. Det här är det bästa jag kan erbjuda."
+		"dealer_message_last_offer_9"	"<!--0-->Erbjudandet blir inte bättre än så innan det försvinner."	
+
+		"dealer_message_end_0"			"<!--0-->Okej, du hade din chans. Om du håller i den exploderande terminalen nu, skulle jag släppa den. Om tre ... två ..."
+		"dealer_message_end_1"			"<!--0-->Du har nåt att tänka på nästa gång du blir skjuten och sträcker dig efter vapnet du just tackade nej till."
+		"dealer_message_end_2"			"<!--0-->Okej, jag tänker inte böna och be för att du ska ta det. Hoppas att du inte trodde att detta gav dig en gratis terminal."
+		"dealer_message_end_3"			"<!--0-->Ditt val. Din ensak. Din begravning, förmodligen.<!--1-->Var så snäll och gå bort från den exploderande terminalen."
+
+		"dealer_message_timerexpired_0"		"<!--.1-->Okej, glöm det."
+		"dealer_message_timerexpired_1"		"<!--.1-->Glöm det<!--.5--> Du hade din chans."
+		"dealer_message_timerexpired_2"		"<!--.1-->Ingen deal.<!--.5-->Jag har saker att göra."
+		"dealer_message_timerexpired_3"		"<!--.1-->Okej, dags att hitta nån som faktiskt vill handla<!--.5-->Vi är klara här."
+		"dealer_message_timerexpired_4"		"<!--.1-->Ditt val.<!--.5-->Vi hörs."
+		"dealer_message_timerexpired_5"		"<!--.1-->Tick ​​tack.<!--.5-->Tiden är ute."
+		"dealer_message_timerexpired_6"		"<!--.1--> Ingen deal.<!--.5-->Jag kunde ha sålt det här tio gånger vid det här laget."
+		"dealer_message_timerexpired_7"		"<!--.1-->Och här trodde jag att jag försökte hjälpa dig att döda folk.<!--.5-->Det enda du var ute efter var att döda tid."
+		"dealer_message_timerexpired_8"		"<!--.1-->Ingen deal."	
+		"dealer_message_timerexpired_9"		"<!--.1-->Tiden är ute."
+		"dealer_message_timerexpired_10"	"<!--.1-->Okej, jag är officiellt uttråkad. Vi är klara här."		
+
+		"dealer_message_open_check_out_0"		"<!--.5-->Det här var menat för dig. Därför tänkte jag på dig först. Vi tar och spikar det."
+		"dealer_message_open_check_out_1"		"<!--.5-->Ett utmärkt beslut. Jag ska se till att det är packat och klart."
+		"dealer_message_open_check_out_2"		"<!--.5-->Du kommer inte ångra dig. Fast jag slår vad om att någon kommer att göra det."
+		"dealer_message_open_check_out_3"		"<!--.5-->Jag visste att du ville handla. Nu avslutar vi affären."
+		"dealer_message_open_check_out_4"		"<!--.5-->Perfekt. Vi kör."		
+		"dealer_message_open_check_out_5"		"<!--.5--> Bra val."	
+		"dealer_message_open_check_out_6"		"<!--.5-->Smartaste valet du nånsin gjort. Vi tar och avslutar affären."		
+		"dealer_message_open_check_out_7"		"<!--.5-->Bra. Nu avslutar vi affären."
+
+		"dealer_message_txn_xld_bailout_0"		"<!--.5-->Ingen brådska. Du vet var jag finns."
+		"dealer_message_txn_xld_bailout_1"		"<!--.5-->Jag ska ingenstans."
+		"dealer_message_txn_xld_bailout_2"		"<!--.5-->Vi håller det öppet tills vidare."
+		"dealer_message_txn_xld_bailout_3"		"<!--.5-->Kom tillbaka senare. Fundera på saken."
+
+		"dealer_message_purchase_finalizing_0"	"Slutför betalningen ..."
+		"dealer_message_purchase_confirm_0"		"<!--.5-->Avtalat."
+
+		"dealer_message_stattrack_0"			"Självklart med StatTrak™ installerat."
+		"dealer_message_stattrack_1"			"Den här raringen levereras också med StatTrak™."
+		"dealer_message_stattrack_2"			"Med StatTrak™. Så du behöver inte hålla räkningen i huvudet."
+		"dealer_message_stattrack_3"			"Med StatTrak™. Du trycker på avtryckaren, så görs uträkningarna."
+		"dealer_message_stattrack_4"			"StatTrak™. Tänk dig det som en resultattavla. För en sport där man mördar människor."
+		"dealer_message_stattrack_6"			"Inkluderar StatTrak™, för proffsen som gillar mord OCH statistik."
+		"dealer_message_stattrack_7"			"Levereras såklart med StatTrak™."
+		"dealer_message_factory_new_0"			"Direkt ur lådan. Lita på mig, jag har bara kastat ett getöga på det."
+		"dealer_message_factory_new_1"			"Direkt från fabriken. Det luktar nytt vapen."
+		"dealer_message_factory_new_2"			"Har aldrig använts. Du blir den första som trycker in avtryckaren."
+		"dealer_message_factory_new_3"			"Direkt från produktionen, inget slitage. Precis som du vill ha det."
+		"dealer_message_factory_new_4"			"Rent och orört. Inga repor, ingen historia. Det är där du kommer in."
+		"dealer_message_factory_new_5"			"Direkt från fabriken, aldrig avfyrat. Helt felfritt."
+		"dealer_message_covert_0"				"Gissa vad? Du tog precis hem jackpotten. Det här är inte bara sällsynt. Det är hemligt."
+		"dealer_message_covert_1"				"Jag har hållit på med det här i ett årtionde och jag har aldrig sett ett sånt i verkliga livet.<!--.5-->Du har god smak. Och ännu mer tur."
+		"dealer_message_covert_2"				"Jag känner köpare som skulle ha sålt sin egen mamma till en gulag för att lägga vantarna på det. Bra jobbat."
+		"dealer_message_covert_3"				"Oj. Nu börjar jag komma på andra tankar. Ta bort det innan jag ångrar försäljningen."
+		"dealer_message_covert_4"				"Det är hemligt. Man ser nåt liknande dyka upp på den öppna marknaden kanske en gång i livet, om man har tur.<!--.5-->Antar att du bara hade tur."
+		"dealer_message_covert_5"				"Det här är en kronjuvel. Men det visste du redan. Jag hade en köpare till det för ett år sedan. Surt, sa räven."
+		"dealer_message_covert_6"				"Det blir inte mer sällsynt än så. Det här är svårt att hitta, och till dig kom det som på beställning."
+		"dealer_message_covert_7"				"Ta det från nån som lever på att hitta den här sortens varor. Det var supersvårt att få tag på det."
+		"dealer_message_covert_8"				"Jag hoppas att du värdesätter dealen du just gjorde. Du köpte precis en enhörning."
+		"dealer_message_covert_9"				"Få bort det ur min åsyn och in i din arsenal innan jag ångrar det här. Det blir inte mer sällsynt än så här."
+		"dealer_message_classified_0"				"Klassificerat. Sterilt och utan dokumentation. Det här existerar inte officiellt."
+		"dealer_message_classified_1"				"Klassificerat. Inga papper, det här är rent och ospårbart."
+		"dealer_message_classified_2"				"Klassificerat. Utan dokumentation. Det jag håller i just nu finns tekniskt sett inte."
+		"dealer_message_classified_3"				"Endast privatförsäljning. Klassificerat. Hoppas det kommer väl till pass."
+		"dealer_message_classified_4"				"Klassificerat. Inget serienummer, inga papper."
+		"dealer_message_classified_5"				"Klassificerat. Serienummer saknas. Endast försäljning under disk. Jag har aldrig sett det."
+		"dealer_message_restricted_0"				"Begränsad utgåva. Bättre mekanism, tätare skott. Definitivt bättre än standardutgåvan."
+		"dealer_message_restricted_1"				"Den här är begränsad utgåva av en anledning. Den presterar lite för bra för civila."
+		"dealer_message_restricted_2"				"Begränsad utgåva, såklart. Klass III, typ II och din nya nummer ett."
+		"dealer_message_battle_scarred_0"		"Det har några skråmor, men skjuter fortfarande som det ska."
+		"dealer_message_battle_scarred_1"		"Lite slitage, men allt det innebär är att det har fått lite action och överlevt."
+		"dealer_message_battle_scarred_2"		"Från slagfältet. Har använts en del, men det är en arbetshäst."
+		"dealer_message_battle_scarred_3"		"Jag ser det inte som använt i fält. Jag ser det som beprövat i strid."
+		"dealer_message_battle_scarred_4"		"Det här har varit med om en del. Lite kosmetiskt slitage men fortfarande pålitligt."
+		"dealer_message_minimal_wear_0"			"Minimalt slitage. Har en eller två skavanker, men det ska nog klara jobbet."
+		"dealer_message_minimal_wear_1"			"Nyskick. Typ nyskick. Minimalt slitage."
+		"dealer_message_minimal_wear_2"			"Minimalt slitage, bara lite inkörd, inget att oroa sig för."
+		"dealer_message_minimal_wear_3"			"Minimalt slitage. Lite småskador, men du kommer inte ångra att du la till det i arsenalen."
+		"dealer_message_minimal_wear_4"			"Det har redan sett lite strid, jag tänker inte ljuga för dig. Det är en veteran."
+		"dealer_message_usp-s_0"				"Den här hunden skäller inte. Lugnt och fint."
+		"dealer_message_usp-s_1"				"Tyst och diskret. Ibland behöver det vara vår lilla hemlighet."
+		"dealer_message_usp-s_2"				"De kommer att känna det här vid träff, men de kommer inte att höra nåt."
+		"dealer_message_usp-s_3"				"En smygare."
+		"dealer_message_item_desc_0"			"<!--.25-->Det här har ett meddelande:<!--.25-->{s:flavor-text}<!--.25--> Vad nu det betyder."
+		"dealer_message_item_desc_1"			"<!--.25-->Det här har ett litet meddelande:<!--.25-->{s:flavor-text}"
+
+		"dealer_message_addition_stattrak_0"	"<!--.25-->... och med StatTrak™."
+		"dealer_message_addition_stattrak_1"	"<!--.25-->StatTrak™-modulen är förinstallerad."
+		"dealer_message_addition_stattrak_2"	"<!--.25-->Med StatTrak™, för att spåra allt kaos du kommer att orsaka."
+		"dealer_message_addition_stattrak_3"	"<!--.25-->Det har StatTrak™ också."
+		"dealer_message_addition_stattrak_4"	"<!--.25-->Levereras med StatTrak™, så att du alltid kan hålla koll på det elände du orsakar."
+
+		"dealer_message_addition_factory_new_0"	"<!--.25-->Det är fabriksnytt. Aldrig avfyrat."
+		"dealer_message_addition_factory_new_1"	"<!--.25-->Fabriksnytt. Felfritt."
+		"dealer_message_addition_factory_new_2"	"<!--.25-->Direkt från valvet. Fabriksnytt."
+		"dealer_message_addition_factory_new_3"	"<!--.25-->Direkt från fabriken. Har aldrig avfyrats."
+		
+		"dealer_message_limit_first_time_0"		"Bra att veta, jag ska bara visa erbjudanden upp till {s:limit}.<!--.25--> Få se vad du behöver."
+		"dealer_message_limit_first_time_2"		"Bara erbjudanden under {s:limit}. Det ska jag ha i åtanke.<!--.25--> Klockan tickar. Nu börjar vi."
+		"dealer_message_limit_first_time_3"		"Noterat. Uppdaterat.<!--.25--> Nu kör vi."
+		"dealer_message_limit_first_time_unlimited_0"		"Ingen maxgräns. Utmärkt. Jag öppnar den aktuella katalogen i fortsättningen.<!--.25--> Klockan tickar. Nu börjar vi."
+		"dealer_message_limit_first_time_unlimited_1"		"Uppfattat. Ingen gräns. Nu menar vi allvar.<!--.25--> Få se vad du behöver."
+
+		"dealer_message_limit_0"				"Bra att veta. Jag ska bara visa erbjudanden upp till {s:limit}."
+		"dealer_message_limit_1"				"Bara erbjudanden under {s:limit}. Jag ska ha det i åtanke."
+		"dealer_message_limit_2"				"Justerar parametrarna. Endast erbjudanden upp till {s:limit}."
+		"dealer_message_limit_3"				"Erbjudanden upp till {s:limit}. Noterat. Uppdaterat."
+		"dealer_message_limit_4"				"Jag visar bara det som passar prislappen, upp till {s:limit}."
+		"dealer_message_limit_5"				"{s:limit} är den nya gränsen. Uppfattat."
+		"dealer_message_limit_6"				"Uppfattat. Filtret för erbjudanden återställs till upp till {s:limit}."
+		"dealer_message_limit_unlimited_0"		"Ingen maxgräns – utmärkt. Jag öppnar den aktuella katalogen i fortsättningen."
+		"dealer_message_limit_unlimited_1"		"Ingen gräns – uppfattat. Om något spännande dyker upp håller jag inte tillbaka."
+		"dealer_message_limit_unlimited_2"		"Ljuv musik. Om något som passar dig dyker upp tvekar jag inte att visa dig det."
+		"dealer_message_limit_unlimited_3"		"Uppfattat. Ingen gräns. Nu menar vi allvar."
+
+		"system_dealer_left_chat_0"				"Vapenhandlaren har lämnat chatten."
+		"system_dealer_join_chat_0"				"Erbjudanden från {s:collection}.<!--1.25-->Vapenhandlaren online"
+		"system_user_reject_offer_0"			"{s:user-name} avböjde erbjudandet"
+
+		"system_user_updated_offer_limit_0"			"Maximal erbjudandegräns uppdaterad till {s:limit}. Du kan uppdatera inställningen när som helst."
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//Retakes
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		"GameUI_Retake_DefendA"					"Försvara bombplats A!"
+		"GameUI_Retake_DefendB"					"Försvara bombplats B!"
+		"GameUI_Retake_RetakeA"					"Återta bombplats A!"
+		"GameUI_Retake_RetakeB"					"Återta bombplats B!"
+		"GameUI_Retake_Notice_MvpCardAvailable"	"Grattis! Ett MVP-bonuskort kan väljas nästa runda!"
+		"GameUI_Retake_Card_CardsPreview"		"Förhandsvisning av kort"
+		"GameUI_Retake_Card_AvailableCard"		"Välj denna utrustning"
+		"GameUI_Retake_Card_AvailableCards"		"Välj utrustning"
+
+		"GameUI_Retake_Card_Bonus"				"Bonus"
+		"GameUI_Retake_Card_Enemy"				"Fiendens utrustning"
+		"GameUI_Retake_Card_Mvp"				"MVP"
+
+		"GameUI_Retake_Card_4v3"				"4v3"
+		"GameUI_Retake_Card_FlashOut"			"Chockgranat kastad!"
+		"GameUI_Retake_Card_HideAndPeek"		"Kurragömma"
+		"GameUI_Retake_Card_TakeFive"			"Femman"
+		"GameUI_Retake_Card_OnlyTakesOne"		"Det enda du behöver"
+		"GameUI_Retake_Card_SneakyBeakyLike"	"Sneaky Beaky Like"
+		"GameUI_Retake_Card_UmpInSmoke"			"UMP i rök"
+		"GameUI_Retake_Card_FunNGun"			"Kul med kulor"
+		"GameUI_Retake_Card_Sharpshooter"		"Skarpskytt"
+		"GameUI_Retake_Card_BurstBullpup"		"Bullpupsalva"
+		"GameUI_Retake_Card_LightEmUp"			"Ljuskänslig"
+		"GameUI_Retake_Card_Kobe"				"Kobe!"
+		"GameUI_Retake_Card_1g"					"1g"
+		"GameUI_Retake_Card_DisappearingAct"	"Hokus pokus"
+		"GameUI_Retake_Card_EyesOnTarget"		"Ögon på målet"
+		"GameUI_Retake_Card_BehindEnemyLines"	"Bakom fiendelinjen"
+		"GameUI_Retake_Card_4BadGuysLeft"		"4 skurkar kvar"
+		"GameUI_Retake_Card_LookAway"			"Titta bort!"
+		"GameUI_Retake_Card_WhenThereIsSmoke"	"Där det finns rök ..."
+		"GameUI_Retake_Card_BlindFire"			"Blint raseri"
+		"GameUI_Retake_Card_QueOta"				"Qué ota?"
+		"GameUI_Retake_Card_SmokeScreen"		"Rökridå"
+		"GameUI_Retake_Card_TecTecBoom"			"TEC, TEC, BOOM!"
+		"GameUI_Retake_Card_BackInAFlash"		"Bländande retur"
+		"GameUI_Retake_Card_AllIn"				"All-in"
+		"GameUI_Retake_Card_BoomBox"			"Bergsprängare"
+		"GameUI_Retake_Card_SetThemFree"		"Släpp dem fria"
+		"GameUI_Retake_Card_OlReliable"			"Gamla godingen"
+		"GameUI_Retake_Card_SmokeShow"			"Rökfestival"
+		"GameUI_Retake_Card_HotShot"			"Höjdare"
+		"GameUI_Retake_Card_EyeSpy"				"Skarpögd"
+		"GameUI_Retake_Card_TheAWPortunity"		"AWPotential"
+		"GameUI_Retake_Card_FindersKeepers"		"Funnet vunnet"
+
+		"Hud_Retake_BombSite"					"{s:hud-retake-bombsite}"
+		
+		"Hud_Money" "{d:r:hud-money-amount} $"
+		"Hud_Money_Signed" "{s:sign}{d:r:hud-money-delta} $"
+
+		"Propcounter_money" "$%s1" //e.g. used on danger zone security door
+
+		"csgo_player_left_game"					" Spelare %s1 lämnade spelet (%s2)"
+
+		"LoadoutLockedPopupTitle"				"Låst utrustning"
+		"LoadoutLockedPopupText"				"Ändringar av utrustningen tillåts inte under tävlingsmatchning."
+
+		"Workshop_item_title" "Inlämningsverktyg för föremål"
+		"Workshop_item_error_title" "Ange ett namn för föremålet. Namnet bör innehålla spelarnamnet eller annan identifierade information."
+		"Workshop_item_error_image" "Välj en giltig .jpeg- eller .png-bild som är mindre än {s:max_size} och minst {d:min_height} på bredden/höjden."
+		"Workshop_item_ready" "Inlämningen är redo att laddas upp"
+		"SFUI_Go_To_Mic_Enable_key" "Gå till tangentbindning för mikrofon"
+		"SFUI_Go_To_Console_Key_Binding" "Gå till tangentbindning för konsol"
+
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//Steam Video
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		"SteamVideo_Player_Kill_Title"					"Du dödade %s1"
+		"SteamVideo_Player_Kill_Description"			"med %s1"
+
+		"SteamVideo_Player_Double_Kill_Title"			"Dubbelkill"
+		"SteamVideo_Player_Multi_Kill_Title"			"Multikill"
+		
+		"SteamVideo_Player_Death_Title"					"Du dödades av %s1"
+		"SteamVideo_Player_Death_Description"			"med %s1"
+		"SteamVideo_Player_Death_Description_Plural"	"med %s1"
+		"SteamVideo_Player_Killed_Self_Title"			"Du dödade dig själv"
+		
+		"SteamVideo_Bomb_Planted_Title"					"Bomben har placerats"
+		"SteamVideo_Bomb_Planted"						"%s1 placerade bomben"
+		"SteamVideo_Bomb_Planted_LocalPlayer"			"Du placerade bomben"
+		
+		"SteamVideo_Bomb_Defused_Title"					"Bomb desarmerades"
+		"SteamVideo_Bomb_Defused"						"%s desarmerade bomben"
+		"SteamVideo_Bomb_Defused_LocalPlayer"			"Du desarmerade bomben"
+		
+		"SteamVideo_Bomb_Exploded_Title"				"Bomben exploderade"
+		
+		"SteamVideo_Round_Number_Label"					"Runda %s1"
+		"SteamVideo_Start_Of_Round_Title"				"Start av runda %s1"
+
+		"SteamVideo_MatchScore"							"Poäng"
+		"SteamVideo_KDA"								"K/D/A"
+
+		// ---------------------------------------------------------------------------------------------
+		// WEEKLY MISSIONS
+		// ---------------------------------------------------------------------------------------------
+		"weekly_mission_title"							"UPPDRAG"
+		"weekly_mission_title_complete"					"UPPDRAG SLUTFÖRT"
+		"weekly_mission_expiration"						"Upphör om <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_expiration_pausemenu"			"Upphör om <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_next_mission"					"Nästa uppdrag startar om <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_progress"						"<b>{d:mission-progress}</b>/{d:mission-points}"
+		"CS2_Quest_Weapon_Mode"							"Utrustningsfärdighet: <b>{s:gamemode}</b>, <b>{s:weapon}</b>"
+		"CS2_Quest_Weapon_Mode_desc"					"Få <b>{s:weapon}</b> {s:optional_target}{s:actions} i <b>{s:gamemode}</b>."
+
+		"mission_searching"								"Söker ..."
+		"mission_xp_remaining"							"{s:mission-xp} XP"
+
+		"mission_segment_tooltip"						"{d:xp-reward} XP"
+
+		"mission_location"								"<b>{s:gamemode}</b> på <b>{s:location}</b>"
+		"mission_directive:f"							"{mission-points, plural, one{<b>{d:mission-points}</b> {s:action}} other{<b>{d:mission-points}</b> {s:actions}}}"
+ 		"mission_directive_progress:f"					"{mission-points, plural, one{{d:mission-progress}/<b>{d:mission-points}</b> {s:action}} other{{d:mission-progress}/<b>{d:mission-points}</b> {s:actions}}}"
+
+
+		"quest_11000_var_desc:f"	  					"{mission-points, plural, one{Döda en fiende med {s:item1} i <b>{s:gamemode}: {s:location}</b>.} other{Döda fiender med {s:item1} i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11000_var_partial:f" 					"... med {s:item1}."
+		"quest_11000_var_ingame:f"	  					"{mission-points, plural, one{Döda en fiende med {s:item1}.} other{Döda fiender med {s:item1}.}}"
+
+		"quest_11001_var_desc:f"	 					"{mission-points, plural, one{Döda en fiende med {s:item1} i <b>{s:gamemode}: {s:location}</b>.} other{Döda fiender med {s:item1} i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11001_var_partial:f"	 					"... med {s:item1}."
+		"quest_11001_var_ingame:f"	 					"{mission-points, plural, one{Döda en fiende med {s:item1}} other{Döda fiender med {s:item1}}}"
+
+		"quest_11002_var_desc:f"	 					"{mission-points, plural, one{Döda en fiende med {s:item1} i <b>{s:gamemode}: {s:location}</b>.} other{Döda fiender med {s:item1} i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11002_var_partial:f"	 					"... med {s:item1}."
+		"quest_11002_var_ingame:f"	 					"{mission-points, plural, one{Döda en fiende med {s:item1}} other{Döda fiender med {s:item1}}}"
+
+		"quest_11003_var_desc:f"						"{mission-points, plural, one{Döda en fiende med {s:item1} i <b>{s:gamemode}: {s:location}</b>.} other{Döda fiender med {s:item1} i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11003_var_partial:f"	 					"... med {s:item1}."
+		"quest_11003_var_ingame:f"	 					"{mission-points, plural, one{Döda en fiende med {s:item1}} other{Döda fiender med {s:item1}}}"
+
+		"quest_11004_var_desc:f"	 					"{mission-points, plural, one{Vinn en runda i <b>{s:gamemode}: {s:location}</b>.} other{Vinn rundor i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11004_var_ingame:f"						"{mission-points, plural, one{Vinn en runda} other{Vinn rundor}}"
+
+		"quest_11005_var_desc:f"	 					"{mission-points, plural, one{Vinn en runda i <b>{s:gamemode}: {s:location}</b>.} other{Vinn rundor i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11005_var_ingame:f"						"{mission-points, plural, one{Vinn en runda} other{Vinn rundor}}"
+
+		"quest_11006_var_desc:f"	 					"{mission-points, plural, one{Vinn en runda i <b>{s:gamemode}: {s:location}</b>.} other{Vinn rundor i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11006_var_ingame:f"						"{mission-points, plural, one{Vinn en runda} other{Vinn rundor}}"
+
+		"quest_11007_var_desc:f"	 					"{mission-points, plural, one{Döda en fiende med {s:item1} i <b>{s:gamemode}: {s:location}</b>.} other{Döda fiender med {s:item1} i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11007_var_partial:f"	 					"... med {s:item1}."
+		"quest_11007_var_ingame:f"	 					"{mission-points, plural, one{Döda en fiende med {s:item1}} other{Döda fiender med {s:item1}}}"
+
+		"quest_11008_var_desc:f"	 					"{mission-points, plural, one{Vinn en runda i <b>{s:gamemode}: {s:location}</b>.} other{Vinn rundor i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11008_var_ingame:f"						"{mission-points, plural, one{Vinn en runda} other{Vinn rundor}}"
+
+		"quest_11009_var_desc:f"	 					"{mission-points, plural, one{Vinn en runda i <b>{s:gamemode}: {s:location}</b>.} other{Vinn rundor i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11009_var_ingame:f"						"{mission-points, plural, one{Vinn en runda} other{Vinn rundor}}"
+
+		"quest_11010_var_desc:f"	 					"{mission-points, plural, one{Döda en fiende med {s:item1} i <b>{s:gamemode}: {s:location}</b>.} other{Döda fiender med {s:item1} i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11010_var_partial:f"	 					"... med {s:item1}."
+		"quest_11010_var_ingame:f"	 					"{mission-points, plural, one{Döda en fiende med {s:item1}} other{Döda fiender med {s:item1}}}"
+
+		"quest_11011_var_desc:f"	 					"{mission-points, plural, one{Vinn en runda i <b>{s:gamemode}: {s:location}</b>.} other{Vinn rundor i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11011_var_ingame:f"						"{mission-points, plural, one{Vinn en runda} other{Vinn rundor}}"
+
+		"quest_11012_var_desc:f"	 					"{mission-points, plural, one{Vinn en runda i <b>{s:gamemode}: {s:location}</b>.} other{Vinn rundor i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11012_var_ingame:f"						"{mission-points, plural, one{Vinn en runda} other{Vinn rundor}}"
+
+		"quest_11013_var_desc:f"	 					"{mission-points, plural, one{Vinn en runda i <b>{s:gamemode}: {s:location}</b>.} other{Vinn rundor i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11013_var_ingame:f"						"{mission-points, plural, one{Vinn en runda} other{Vinn rundor}}"
+
+		"quest_11014_var_desc:f"	 					"{mission-points, plural, one{Vinn en runda i <b>{s:gamemode}: {s:location}</b>.} other{Vinn rundor i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11014_var_ingame:f"						"{mission-points, plural, one{Vinn en runda} other{Vinn rundor}}"
+
+		"quest_11015_var_desc:f"	 					"{mission-points, plural, one{Vinn en runda i <b>{s:gamemode}: {s:location}</b>.} other{Vinn rundor i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11015_var_ingame:f"						"{mission-points, plural, one{Vinn en runda} other{Vinn rundor}}"
+
+// ---------------------------------------------------------------------------------------------
+// Join Friend Listen Servers
+// ---------------------------------------------------------------------------------------------
+
+		"tooltip_viewaddon"				"Gå till den anpassade banan på workshopsidan"
+		"tooltip_kick_player"			"Sparka ut spelare från lokal server"		
+		"tooltip_short_viewaddon"			"Visa anpassad bana"
+		"tooltip_short_kick_player"			"Sparka ut"
+
+// crow_mask_50454_comment
+// crow_mask_50455_comment
+}
+
+
+
+
+}
+
+
+räffar:"
 
 		"accolade_taserkills"							"Blixtguden"
 		"accolade_taserkills_desc"						"Flest Zeus-kills:"

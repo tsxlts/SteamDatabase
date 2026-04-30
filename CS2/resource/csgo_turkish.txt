@@ -1196,7 +1196,7 @@ VIP'ye bu bölgelerden birine ulaşana kadar koruma sağla."
 		"Cstrike_TitlesTXT_Name_change_at_respawn"							"İsmin sonraki canlanmada değişecek."
 		"Cstrike_TitlesTXT_Name_change_limit_exceeded"						"İsim değiştirme reddedildi (karakter aşıldı)."
 		"Cstrike_TitlesTXT_Not_Enough_Money"								"Yeterli paran yok."
-		"Cstrike_TitlesTXT_Not_Enough_Money_NextRound"						"Yeterli paran yok. Kazandığın %s1$ bu raunt harcanamaz."
+		"Cstrike_TitlesTXT_Not_Enough_Money_NextRound"						"Yeterli paran yok.\nKazandığın $%s1 bu raunt harcanamaz."
 		"Cstrike_TitlesTXT_OBS_CHASE_FREE"									"Serbest Takip Kamerası"
 		"Cstrike_TitlesTXT_OBS_CHASE_LOCKED"								"Sabit Takip Kamerası"
 		"Cstrike_TitlesTXT_OBS_IN_EYE"										"Birinci Şahıs"
@@ -1971,8 +1971,8 @@ VIP'ye bu bölgelerden birine ulaşana kadar koruma sağla."
 		"Team_Cash_Award_no_income_suicide"					" +$0: İntihar ettiğin için ceza."
 		"Team_Cash_Award_Generic"							" +$%s1: takım geliri."
 		"Team_Cash_Award_Custom"							" +$%s1: %s2"
-		"Team_Cash_Award_Dead_Terrorists:p"					" +$%s1: Öldürülen %s2 terörist için takım geliri.#|# +$%s1: Öldürülen %s2 terörist için takım geliri."
-		"Team_Cash_Award_Dead_CTs:p"						" +$%s1: Öldürülen %s2 AT için takım geliri.#|# +$%s1: Öldürülen %s2 AT için takım geliri."
+		"Team_Cash_Award_Dead_Terrorists:f"					" +$%s1: Öldürülen {num_enemies} {num_enemies, plural, other{terörist}} için takım geliri."
+		"Team_Cash_Award_Dead_CTs:f"						" +$%s1: Öldürülen {num_enemies} {num_enemies, plural, other{AT}} için takım geliri."
 
 
 		"Notice_Bonus_Shorthanded_Eligibility"			"Takımın %s1 raunt sonra az kişiyle oynama geliri almaya hak kazanacak."
@@ -2332,10 +2332,14 @@ VIP'ye bu bölgelerden birine ulaşana kadar koruma sağla."
 		// Econ date formatting supports the following tokens:
 		//    %year%, %monthshort%, %monthlong%, %mmday% (01-31), %mday% (1-31), %day% (legacy unlocalized "Jul 30" shouldn't be used), %hour%, %min%, %sec%
 		//
-		"Econ_DateFormat"						"%mmday% %monthshort% %year% (%hour%:%min%:%sec%)"
-		"Econ_DateFormat_GMT"					"%mmday% %monthshort% %year% (%hour%:%min%:%sec%) GMT"
-		"Econ_DateFormat_DateOnly"				"%mmday% %monthshort% %year%"
-		"Econ_DateFormat_GMT_DateOnly"			"%mmday% %monthshort% %year%"
+		"Econ_DateFormat:f"							"{mmday} {monthshort} {year} ({hour}:{min}:{sec})"
+		"Econ_DateFormat_GMT:f"						"{mmday} {monthshort} {year} ({hour}:{min}:{sec}) GMT"
+		"Econ_DateFormat_DateOnly:f"				"{mmday} {monthshort} {year}"
+		"Econ_DateFormat_GMT_DateOnly:f"			"{mmday} {monthshort} {year}"
+		"Econ_DateFormat"							"%mmday% %monthshort% %year% (%hour%:%min%:%sec%)"
+		"Econ_DateFormat_GMT"						"%mmday% %monthshort% %year% (%hour%:%min%:%sec%) GMT"
+		"Econ_DateFormat_DateOnly"					"%mmday% %monthshort% %year%"
+		"Econ_DateFormat_GMT_DateOnly"				"%mmday% %monthshort% %year%"
 		"Econ_Loot_List_Sticker_ProPlayerSignatures" "Çıkartmalar aşağıdaki profesyonel oyunculardan birisi tarafından imzalanabilir:"
 		"Econ_Loot_List_Sticker_ProPlayerSignatures_AndSomeMore" "... ve %s1 diğer profesyonel oyuncu"
 		"Econ_Loot_List_Sticker_ProOrgsStickers"	"Çıkartma aşağıdaki organizasyonlardan bir tanesini temsil edebilir:"
@@ -5852,1256 +5856,15 @@ VIP'ye bu bölgelerden birine ulaşana kadar koruma sağla."
 		
 		"quest"										"Görev"
 
-		"quest_totalgoal_points_desc"				"Gerekli toplam %actions%： <b>%points%</b>" // special non-breaking space characters in this string, edit carefully!
-		"quest_attrremaining_points_desc"			"Kalan %actions%： <b>%points%</b>" // special non-breaking space characters in this string, edit carefully!
-		"quest_uncommitted_points_desc"				"Kalan %actions%： <b>%points%</b> (bu maç <b>%points uncommitted%</b> yapıldı)" // special non-breaking space characters in this string, edit carefully!
-		"quest_uncommitted_points_warn"				" * <i>Bu maçın %actions% istatistikleri maçın sonunda kaydedilecektir</i>"
-	
-		"quest_uncommitted_points_chat_one"	"Görev tamamlandı: %action% yapıldı."
-		"quest_uncommitted_points_chat_singular"	"Görev ilerlemesi: +%points% %action% yapıldı."
-		"quest_uncommitted_points_chat_plural"		" Görev ilerlemesi: +%points% %actions% yapıldı."
-		"quest_uncommitted_points_chat_event"		" Yıldırım Görevi: %action% yapıldı."		
+		"quest_commandverb_default"					"yap"
 
-		"quest_reward_desc"								"Şuradan bir ödül verir\n<b>%s1</b>:"
+		"quest_action_plural_act_kill_human"		"leş"
+		"quest_action_singular_act_kill_human"		"leş"
 
-		"quest_reward_xp"									"Görev Ödülü: <b>%s1</b> XP"
-
-		"quest_event_totalgoal_points_desc"					"Bu etkinlik boyunca her <b>%action%</b> için hızlandırılmış XP kazanın."
-		
-		"quest_bonus_desc"								"Bonus: %action% başına +<b>%xpperbonusaction%</b> XP—<i>eğer %xpbonuscondition%.</i>"
-		"quest_bonus_fractional_desc"			"Bonus: <b>%n_actions%</b> %actions% başına +<b>%xpperbonusactions%</b> XP—<i>eğer %xpbonuscondition%.</i>"
-		"quest_bonus_single_desc"					"Bonus: +<b>%xpperbonusaction%</b> XP—<i>eğer %xpbonuscondition%.</i>"
-
-
-		"quest_target_chicken"											"tavuk"
-		"quest_target_human_or_chicken"									"insan veya tavuk"
-		"quest_target_hostagerescuer"									"rehine kurtarıcı"
-		"quest_target_armsraceleader"									"silah yarışı lideri"
-
-		"quest_target_headshot"											"kafadan vuruş"
-		"quest_target_airborne"											"havada"
-		"quest_target_pistolround"										"tabanca"
-
-		"quest_target_lockeddoor"										"kilitli kapılar"
-		"quest_target_explodingbarrel"									"patlayan varil"
-		"quest_target_glasspane"										"cam panel"
-		"quest_target_enemydrone"										"düşman İHA'ları"
-
-		"quest_target_shotgun"											"pompalı tüfek"
-		"quest_target_sniperrifle"										"keskin nişancı tüfeği"
-		"quest_target_utility"											"araçlar"
-		"quest_target_defaultctpistol"									"varsayılan AT tabancası"
-		"quest_target_defaultpistol"									"varsayılan tabanca"
-		"quest_target_knife"											"bıçak"
-
-		"quest_action_plural_act_kill_human"							"leş"
-		"quest_action_singular_act_kill_human"							"leş"
-
-		"quest_action_plural_act_kill_chicken"							"leş"
-		"quest_action_singular_act_kill_chicken"						"leş"		
-
-		"quest_action_plural_act_protect_chicken"						"saniye tavuğu korudu"
-		"quest_action_singular_act_protect_chicken"						"saniye tavuğu korudu"	
-
-		"quest_action_plural_act_kill_target"							"suikast"
-		"quest_action_singular_act_kill_target"							"suikast"		
-
-		"quest_action_plural_act_damage"								"hasar"
-		"quest_action_singular_act_damage"								"hasar puanı verildi"		
-
-		"quest_action_plural_act_win_match"								"galibiyet"
-		"quest_action_singular_act_win_match"							"galibiyet"		
-
-		"quest_action_plural_act_dz_game_end_placement"					"sıralama"
-		"quest_action_singular_act_dz_game_end_placement"				"sıralama"	
-
-		"quest_action_plural_act_dz_purchase_item"					"satın alma"
-		"quest_action_singular_act_dz_purchase_item"				"satın alma"	
-
-		"quest_action_plural_act_win_round"								"raunt galibiyeti"
-		"quest_action_singular_act_win_round"							"raunt galibiyeti"	
-
-		"quest_action_plural_act_round_mvp"								"EDO'lar"
-		"quest_action_singular_act_round_mvp"							"EDO"
-
-		"quest_action_plural_act_dm_bonus_points"						"puan"
-		"quest_action_singular_act_dm_bonus_points"						"puan"		
-
-		"quest_action_plural_act_armsrace_level"						"seviye"
-		"quest_action_singular_act_armsrace_level"						"seviye"	
-
-		"quest_action_plural_act_gg_weapon_upgrade"						"yükseltme"
-		"quest_action_singular_act_gg_weapon_upgrade"					"yükseltme"	
-
-		"quest_action_plural_act_gg_upgrade_to_knifegg"						"geliştirmeler"
-		"quest_action_singular_act_gg_upgrade_to_knifegg"					"geliştirme"	
-				
-		"quest_action_plural_act_flashbang_enemy"						"düşman kör etme"
-		"quest_action_singular_act_flashbang_enemy"						"düşman kör etme"		
-		
-		"quest_action_plural_act_pick_up_hostage"						"rehine alma"
-		"quest_action_singular_act_pick_up_hostage"						"rehine alma"		
-		
-		"quest_action_plural_act_rescue_hostage"						"rehine kurtarma"
-		"quest_action_singular_act_rescue_hostage"						"rehine kurtarma"		
-		
-		"quest_action_plural_act_defuse_bomb"							"bomba imhası"
-		"quest_action_singular_act_defuse_bomb"							"bomba imhası"		
-		
-		"quest_action_plural_act_plant_bomb"							"bomba kurma"
-		"quest_action_singular_act_plant_bomb"							"bomba kurma"
-
-		"quest_action_singular_act_income"								"dolar"
-		"quest_action_plural_act_income"								"para"
-		
-		"quest_action_singular_act_survivalincome"						"dolar"
-		"quest_action_plural_act_survivalincome"						"para"
-
-		"quest_action_singular_act_spend"								"dolar"
-		"quest_action_plural_act_spend"									"para"
-
-		"quest_action_singular_act_parachute_landed"					"saniye paraşütle süzüldü"
-		"quest_action_plural_act_parachute_landed"						"saniye paraşütle süzüldü"
-
-		"quest_action_singular_act_bumpmine_launch"						"fırlatma mayını atışı"
-		"quest_action_plural_act_bumpmine_launch"						"fırlatma mayını atışı"
-
-		"quest_action_singular_headshot_kill"							"kafadan vuruş leşi"
-		"quest_action_plural_headshot_kill"								"kafadan vuruş leşleri"
-
-		"quest_action_singular_multikill"								"çok leşli raunt"
-		"quest_action_plural_multikill"									"çok leşli raunt"
-
-		"quest_action_singular_act_apply_graffiti"						"grafiti"
-		"quest_action_plural_act_apply_graffiti"						"grafiti"
-
-		"quest_action_singular_act_detonate_smokegrenade"				"sis bombası"
-		"quest_action_plural_act_detonate_smokegrenade"					"sis bombası"
-
-		"quest_action_singular_act_detonate_molotov"					"molotof"
-		"quest_action_plural_act_detonate_molotov"						"molotof"
-
-		"quest_action_singular_act_use_healthshot"						"sağlık aşısı"
-		"quest_action_plural_act_use_healthshot"						"sağlık aşısı"
-		
-		"quest_action_singular_act_retakes_picked_enemy_card"			"düşman kart seçimi"
-		"quest_action_plural_act_retakes_picked_enemy_card"				"düşman kart seçimi"
-
-		"quest_action_singular_act_retakes_picked_mvp_card"				"EDO kart seçimi"
-		"quest_action_plural_act_retakes_picked_mvp_card"				"EDO kart seçimi"
-//
-
-		"quest_action_plural_bomb_plants_or_defuses"					"bomba kurulumu veya imhası"
-		"quest_action_singular_bomb_plants_or_defuses"					"bomba kurulumu veya imhası"
-		
-		"quest_action_plural_rescue_or_kill_hostages"					"rehine kurtarması veya kurtarıcı öldürmesi"
-		"quest_action_singular_rescue_or_kill_hostages"					"rehine kurtarması veya kurtarıcı öldürmesi"		
-		
-		"quest_action_plural_damage_burn"								"yakma hasarı"
-		"quest_action_singular_damage_burn"								"yakma hasarı"
-
-		"quest_commandverb_default"										"yap"
-		"quest_commandverb_defaultCT"									"AT olarak şunu al:"
-		"quest_commandverb_defaultT"									"T olarak şunu al:"
-		"quest_commandverb_deal"										"ver"
-		"quest_commandverb_earn"										"kazan"
-		"quest_commandverb_earnT"										"T olarak şunu kazan:"
-		"quest_commandverb_spend"										"harca"
-		"quest_commandverb_execute"										"yap"
-		"quest_commandverb_destroy"										"Yok Et"
-		"quest_commandverb_apply"										"Uygula"
-		"quest_commandverb_throw"										"Fırlat"
+		"quest_action_plural_act_win_round"			"raunt galibiyeti"
+		"quest_action_singular_act_win_round"		"raunt galibiyeti"	
 
 		////
-
-		"quest_condition_item_own"										"senin"
-		"quest_condition_item_borrowed"									"başkasının"									
-		"quest_condition_item_borrowed_teammate"						"takım arkadaşının"									
-		"quest_condition_item_borrowed_enemy"							"düşmanın"									
-		"quest_condition_item_borrowed_victim"							"kurbanın"									
-		"quest_condition_item_nondefault"								"güzel"
-
-		"quest_LoadoutSlot_Melee"										"bıçak"
-		"quest_LoadoutSlot_Secondary"									"tabanca"
-		"quest_LoadoutSlot_SMG"											"Hafif Makineli"
-		"quest_LoadoutSlot_Rifle"										"tüfek"
-		"quest_LoadoutSlot_Heavy"										"ağır silah"
-		"quest_LoadoutSlot_Grenade"										"el bombasi"
-
-		"quest_item_default"											"silahı"
-
-////
-		"quest_event_ending"											"%s1 dakika içerisinde sona erecek"
-		"quest_event_soon_hours"										"%s1 saat içerisinde başlayacak"
-		"quest_event_soon_hms"											"%s1:%s2:%s3 sonra başlayacak"
-		"quest_event_today"												"Bugün %s1:%s2"
-		"quest_event_future"											"%s1 %s2 %s3:%s4 içerisinde başlayacak"
-		"quest_event_timer"												"%s1 içinde başlayacak"
-
-////
-
-
-
-
-////////////////////////// generalized quest strings //////////////////////////////
-///
-///	Use these if applicable. If not, use this pattern to create new ones.
-///
-///
-///
-
-		"quest_default_0_items_desc" "<b>%gamemode%: %location%</b> maçlarında %target% %actions% %commandverb%"		
-		"quest_default_1_items_desc" "Herhangi bir <i>%item_quality%</i> <b>%item1%</b> ile <b>%gamemode%: %location%</b> maçlarında %target% %actions% %commandverb%."
-		"quest_default_2_items_desc" "Herhangi bir <i>%item_quality%</i> <b>%item1%</b> veya <b>%item2%</b> ile <b>%gamemode%: %location%</b> maçlarında %target% %actions% %commandverb%."
-		"quest_default_3_items_desc" "Herhangi bir <i>%item_quality%</i> <b>%item1%</b>, <b>%item2%</b> veya <b>%item3%</b> %item_quality%ile <b>%gamemode%: %location%</b> maçlarında %target% %actions% %commandverb%."
-		"quest_default_4_items_desc" "Herhangi bir <i>%item_quality%</i> <b>%item1%</b>, <b>%item2%</b>, <b>%item3%</b> veya <b>%item4% ile</b> <b>%gamemode%: %location%</b> maçlarında %target% %actions% %commandverb%."
-
-		"quest_default_hud_0_items_desc" "%target% %actions% %commandverb%"
-		"quest_default_hud_1_items_desc" "%target% %actions% %commandverb%: <i>%item_quality%</i> <b>%item1%</b>"
-		"quest_default_hud_2_items_desc" "%target% %actions% %commandverb%: <i>%item_quality%</i> <b>%item1%</b>/<b>%item2%</b>"
-		"quest_default_hud_3_items_desc" "%target% %actions% %commandverb%: <i>%item_quality%</i> <b>%item1%</b>/<b>%item2%</b>/<b>%item3%</b>"
-		"quest_default_hud_4_items_desc" "%target% %actions% %commandverb%: <i>%item_quality%</i> <b>%item1%</b>/<b>%item2%</b>/<b>%item3%</b>/<b>%item4</b>"
-
-/////////////////////////////////////////////////////////
-
-/////////////////////////////// Quest Strings via Dialog Vars //////
-///
-/// Used starting with Op09 - the default descriptions should handle most "Perform X Action in GameMode: Location" quests.
-///
-///
-		"quest_default_var_desc" "<b>{s:gamemode}: {s:location}</b> oynarken {s:commandverb} {d:points} {s:target} {s:actions}."		
-		"quest_single_var_desc" "<i>Tek bir</i> <b>{s:gamemode}: {s:location}</b> maçında {s:commandverb} {d:points} {s:target} {s:actions}."		
-		"quest_default_no_map_var_desc" "<b>{s:gamemode}</b> oynarken {s:commandverb} {d:points} {s:target} {s:actions}."
-		"quest_single_no_map_var_desc" "<i>Tek bir</i> <b>{s:gamemode}</b> maçında {s:commandverb} {d:points} {s:target} {s:actions}."		
-
-		"quest_weapon_var_desc" "{s:weapon} ile <b>{s:gamemode}: {s:location}</b> oynarken {s:commandverb} {d:points} {s:target} {s:actions}."
-		"quest_weapon_single_var_desc" "{s:weapon} ile <i>tek bir</i> <b>{s:gamemode}: {s:location}</b> maçında {s:commandverb} {d:points} {s:target} {s:actions}."
-		"quest_weapon_no_map_var_desc" "{s:weapon} ile <b>{s:gamemode}</b> oynarken {s:commandverb} {d:points} {s:target} {s:actions}."
-		"quest_weapon_category_no_map_var_desc" "Herhangi bir {s:weapon} ile <b>{s:gamemode}</b> oynarken {s:commandverb} {d:points} {s:target} {s:actions}."
-
-		"quest_flyingscoutsman_var_desc"	"<b>Uçan Gözcü: {s:location}</b> oynarken {s:commandverb} {d:points} {s:target} {s:actions}."
-		"quest_flyingscoutsman_no_map_var_desc"	"<b>Uçan Gözcü</b> ile {s:commandverb} {d:points} {s:target} {s:actions}."
-
-		"quest_retakes_var_desc"	"<b>Geri Alma: {s:location}</b> oynarken {s:target} ile {d:points} {s:actions} {s:commandverb}."
-		"quest_retakes_no_map_var_desc"	"<b>Geri Alma</b> oynarken {s:target} ile {d:points} {s:actions} {s:commandverb}."
-
-		"quest_armsrace_var_desc"	 		"<b>Silah Yarışı</b> oynarken {s:commandverb} {d:points} {s:target} {s:actions}."
-		"quest_armsrace_weapon_var_desc"	"<b>Silah Yarışı</b> oynarken herhangi bir {s:weapon} ile {s:commandverb} {d:points} {s:target} {s:actions}."
-
-		// quest exceptions:
-		"quest_931_var_desc"	 "<b>{s:gamemode}: {s:location}</b> oynarken {s:weapon} ile {d:points} düşman öldür."
-		"quest_932_var_desc"	 "<b>Uçan Gözcü</b>'de havadayken {d:points} düşman öldür."
-		"quest_933_var_desc"	 "<b>{s:gamemode}: {s:location}</b> oynarken {d:points} raunt galibiyeti elde et."
-		"quest_934_var_desc"	 "<b>Muhafız: {s:location}</b> oynarken {s:weapon} ile {s:kills} düşman öldür."
-		"quest_935_var_desc"	 "<i>Tek bir</i> <b>{s:gamemode}: {s:location}</b> maçında {s:weapon} ile {d:points} düşman öldür."
-		"quest_936_var_desc"	 "<b>{s:gamemode}</b> oynarken {s:weapon} ile {d:points} düşman öldür."
-		"quest_937_var_desc"	 "<b>{s:gamemode}: {s:location}</b> oynarken düşman bölgesine {d:points} grafiti yap."
-		"quest_938_var_desc"	 "<b>{s:gamemode}</b> oynarken {d:points} silah yarışı liderini öldür."
-		"quest_939_var_desc"	 "<b>Muhafız: {s:location}</b> oynarken {s:weapon} ile {s:kills} düşman öldür."
-		"quest_940_var_desc"	 "<b>{s:gamemode}: {s:location}</b> oynarken {d:points} raunt galibiyeti elde et."
-		"quest_941_var_desc"	 "<b>{s:gamemode}: {s:location}</b> oynarken {d:points} tabanca raundu galibiyeti elde et."
-		"quest_942_var_desc"	 "<i>Tek bir</i> <b>{s:gamemode}: {s:location}</b> maçında {s:weapon} ile {d:points} düşman öldür."
-		"quest_943_var_desc"	 "<b>Uçan Gözcü</b>'de {d:points} düşman öldür."
-		"quest_944_var_desc"	 "<i>Tek bir</i> <b>{s:gamemode}</b> maçında {d:points} harca."
-		"quest_945_var_desc"	 "<b>Muhafız: {s:location}</b> oynarken {s:kills} düşman öldür."
-		"quest_946_var_desc"	 "{s:gamemode}: {s:location} oynarken <b>{d:points} raunt galibiyeti elde et</b>."
-		"quest_947_var_desc"	 "<b>{s:gamemode}: {s:location}</b> oynarken {d:points} raunt galibiyeti elde et."
-		"quest_948_var_desc"	 "<b>{s:gamemode}: {s:location}</b> oynarken {d:points} rehine kurtar veya rehine kurtaran {d:points} kişiyi öldür."
-        "quest_949_var_desc"	 "<b>{s:gamemode}: {s:location}</b> oynarken {s:weapon} ile {d:points} düşman öldür."
-        "quest_950_var_desc"	 "<b>{s:gamemode}</b> oynarken herhangi bir ağır silahla {d:points} düşman öldür."
-        "quest_951_var_desc"	 "<b>Muhafız: {s:location}</b> oynarken {s:weapon} ile {s:kills} düşman öldür. Oyuncular <b>{s:extraequip0}</b> ile başlar."
-        "quest_952_var_desc"	 "<b>{s:gamemode}: {s:location}</b> oynarken {d:points} raunt galibiyeti elde et."
-        "quest_953_var_desc"	 "<b>{s:gamemode}: {s:location}</b> oynarken {d:points} raunt galibiyeti elde et."
-        "quest_954_var_desc"	 "<i>Tek bir</i> <b>{s:gamemode}: {s:location}</b> maçında {s:target} kullanarak {d:points} düşman öldür."
-		"quest_955_var_desc"	 "<b>{s:gamemode}: {s:location}</b> oynarken tavuklarla {d:points} saniyeliğine arkadaş ol."
-		"quest_956_var_desc" 	 "<b>{s:gamemode}</b> oynarken {d:points} saniye paraşüt kullan."
-		"quest_957_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> oynarken {s:weapon} ile {d:points} düşman öldür."
-		"quest_958_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> (Hazırlık) oynarken {d:points} raunt kazan."
-		"quest_959_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> oynarken {d:points} düşman öldür."
-		"quest_960_var_desc"	 "<b>Muhafız: {s:location}</b> oynarken {s:weapon} ile {s:kills} düşman öldür."
-		"quest_961_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> oynarken tabancayla {d:points} düşman öldür."
-		"quest_962_var_desc" 	 "<i>Tek bir</i> <b>{s:gamemode}</b> maçında hiç para harcamadan {d:points} düşman öldür."
-		"quest_963_var_desc"	 "<b>Muhafız: {s:location}</b> oynarken {s:weapon} ile {s:kills} düşman öldür."
-		"quest_964_var_desc" 	 "<b>{s:gamemode}</b> oynarken {d:points} tabanca raundu kazan."
-		"quest_965_var_desc" 	 "<b>Muhafız: {s:location}</b> oynarken {s:weapon} ile {s:kills} düşman öldür."
-		"quest_966_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> oynarken ${d:points} kazan."
-		"quest_967_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> oynarken {s:weapon} ile {d:points} düşman öldür."
-		"quest_968_var_desc"	 "<b>{s:gamemode}</b> oynarken bir keskin nişancı tüfeğiyle {d:points} düşman öldür."
-		"quest_969_var_desc" 	 "<b>Muhafız: {s:location}</b> oynarken dürbünden bakmadan {s:weapon} ile {s:kills} düşman öldür."
-		"quest_970_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> oynarken {d:points} raunt kazan."
-		"quest_971_var_desc"	 "<b>Muhafız: {s:location}</b> oynarken {s:weapon} ile {s:kills} düşman öldür."
-		"quest_972_var_desc" 	 "<i>Tek bir</i> <b>{s:gamemode}: {s:location}</b> maçında {d:points} defa kafadan vurarak düşman öldür."
-		"quest_973_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> oynarken {d:points} düşman öldür."
-		"quest_974_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> oynarken kafadan vurarak {d:points} düşman öldür."
-		"quest_975_var_desc"     "<b>Muhafız: {s:location}</b> oynarken AT silahlarını kullanarak {s:kills} düşman öldür."
-		"quest_976_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> oynarken {d:points} raunt kazan."
-		"quest_977_var_desc"	 "<b>{s:gamemode}: {s:location}</b> oynarken {d:points} raunt kazan."
-		"quest_978_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> oynarken {s:weapon} ile {d:points} düşman öldür."
-		"quest_979_var_desc"	 "<b>{s:gamemode}: {s:location}</b> oynarken dört veya daha fazla leş serisi yap."		
-		"quest_980_var_desc" 	 "<b>{s:gamemode}</b> modunda dördüncülük veya daha iyi derece yap."
-		"quest_981_var_desc"     "<b>Muhafız: {s:location}</b> oynarken, <i>zırh almadan</i> {s:weapon} ile kafadan vuruş yaparak {s:kills} düşman öldür."
-		"quest_982_var_desc" 	 "<i>Tek bir</i> <b>{s:gamemode}: {s:location}</b> maçında {s:weapon} ile kafadan vurarak {d:points} düşman öldür."
-		"quest_983_var_desc" 	 "<b>{s:gamemode}</b> oynarken kafadan vurarak {d:points} düşman öldür."
-		"quest_984_var_desc" 	 "<b>{s:gamemode}</b> maçlarında {d:points} EDO elde et."
-		"quest_985_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> oynarken varsayılan tabancayla {d:points} düşman öldür."
-		"quest_986_var_desc"     "<b>Guardian: {s:location}</b> oynarken {s:weapon} ile {s:kills} düşman öldür."
-		"quest_987_var_desc"	 "<b>{s:gamemode}: {s:location}</b> oynarken düşmanın birincil tüfeğiyle {d:points} düşman öldür."
-		"quest_988_var_desc"     "<b>Silah Yarışı</b> oynarken bıçakla {d:points} düşman öldür."
-		"quest_989_var_desc" 	 "<b>{s:gamemode}</b> oynarken {d:points} araç hasarı ver."
-		"quest_990_var_desc" 	 "<b>{s:gamemode}</b> oynarken {d:points} defa karşı takımdaki herkesi öldür."
-		"quest_991_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> oynarken <b>Tec-9 veya Five-Seven</b> ile {d:points} düşman öldür."
-		"quest_992_var_desc"     "<b>Muhafız: {s:location}</b> oynarken {s:weapon} ile {s:kills} düşman öldür."
-		"quest_993_var_desc"	 "<b>{s:gamemode}: {s:location}</b> oynarken düşmanlara {d:points} araç hasarı ver."
-		"quest_994_var_desc" 	 "<b>{s:gamemode}</b> oynarken {d:points} düşman öldür."
-		"quest_995_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> oynarken {d:points} raunt kazan."
-		"quest_996_var_desc"     "<b>{s:gamemode}: {s:location}</b> oynarken {d:points} düşman öldür."
-		"quest_997_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> oynarken <b>Galil AR veya FAMAS </b> ile {d:points} düşman öldür."
-		"quest_998_var_desc"     "<b>Muhafız: {s:location}</b> oynarken {s:weapon} ile {s:kills} düşman öldür."
-		"quest_999_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> oynarken {s:weapon} ile {d:points} düşman öldür."
-		"quest_1000_var_desc" 	 "<b>{s:gamemode}</b> oynarken {d:points} düşman {s:actions} İHA'sını yok et."
-		"quest_1001_var_desc" 	 "<i>Tek bir</i> <b>{s:gamemode}: {s:location}</b> maçında {d:points} EDO kazan."
-		"quest_1002_var_desc"	 "<b>{s:gamemode}: {s:location}</b> oynarken {d:points} rauntta 2 veya daha fazla leşli seri yap."
-		"quest_1003_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> oynarken {s:weapon} ile {d:points} düşman öldür."
-		"quest_1004_var_desc"    "<b>Muhafız: {s:location}</b> oynarken {s:weapon} ile {s:kills} düşman öldür."
-		"quest_1005_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> oynarken {d:points} raunt kazan."
-		"quest_1006_var_desc"    "<b>Silah Yarışı</b> oynarken {d:points} düşman öldür."
-		"quest_1007_var_desc" 	 "<b>{s:gamemode}</b> oynarken {s:weapon} ile  {d:points} {s:actions} defa kapıları yok et."
-		"quest_1008_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> oynarken AK-47 veya M4A4 ile {d:points} düşman öldür."
-		"quest_1009_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> oynarken {d:points} raunt kazan."
-		"quest_1010_var_desc"	 "<b>{s:gamemode}: {s:location}</b> oynarken {s:weapon} ile {d:points} düşman öldür."
-		"quest_1011_var_desc"    "<b>{s:gamemode}: {s:location}</b> oynarken maçın tek yarısında 5 veya daha fazla raunt kazan."
-		"quest_1012_var_desc" 	 "<b>{s:gamemode}</b> oynarken {d:points} fırlatma mayınına bas."
-		"quest_1013_var_desc" 	 "<b>{s:gamemode}</b> oynarken {s:weapon} ile {d:points} düşman öldür."
-		"quest_1014_var_desc"    "<b>Muhafız: {s:location}</b> oynarken {s:weapon} ile {s:kills} düşman öldür."
-		"quest_1015_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> oynarken $2000 değerinden daha fazla para harcamadan {d:points} düşman öldür."
-		"quest_1016_var_desc"	 "<b>{s:gamemode}</b> oynarken $3000 veya fazlasına sahip ol."
-		"quest_1017_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> oynarken {d:points} raunt kazan."
-		"quest_1018_var_desc"    "<b>Muhafız: {s:location}</b> oynarken {s:weapon} ile {s:kills} düşman öldür."
-		"quest_1019_var_desc" 	 "<b>Silah Yarışı</b> oynarken herhangi bir {s:weapon} ile {d:points} düşman öldür."
-		"quest_1020_var_desc" 	 "<b>{s:gamemode}: {s:location}</b> oynarken {s:weapon} ile {d:points} düşman öldür."
-		"quest_1021_var_desc" 	"<b>{s:gamemode}: {s:location}</b> oynarken {d:points} tavuk katlet."
-		"quest_1022_var_desc" 	"<b>{s:gamemode}</b> oynarken {d:points} tane patlayıcı varili patlat."
-		"quest_1023_var_desc" 	"<b>{s:gamemode}: {s:location}</b> oynarken {d:points} raunt kazan."
-		"quest_1024_var_desc" 	"<b>{s:gamemode}: {s:location}</b> oynarken {d:points} cam kır."
-		"quest_1025_var_desc" 	"<b>{s:gamemode}: {s:location}</b> oynarken {d:points} raunt kazan."
-		"quest_1027_var_desc"	 "<b>{s:gamemode}: {s:location}</b> oynarken düşmanın başlangıç bölgesine {d:points} grafiti yap."
-		"quest_1028_var_desc"	 "<b>{s:gamemode}: {s:location}</b> oynarken <i>Muz</i> ya da <i>Apartmanlarda</i> {d:points} düşman öldür."
-		"quest_1029_var_desc"	 "<b>{s:gamemode}: {s:location}</b> oynarken {d:points} defa stratejik bir şekilde sis bombası at."
-		"quest_1030_var_desc"	 "Anka laboratuvarından Tehlikeli Bölge virüsü numunesi al."
-		"quest_1031_var_desc"	 "Anka üretim tesisini yok et ve Franz Kriegeld'i öldür."
-		
-		"quest_1098_var_desc"                                  "<b>{s:location}</b> oynarken raunt kazan."
-		"quest_1032_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken raunt kazan."
-		"quest_1033_var_desc"                                  "<b>Muhafız: {s:location}</b> oynarken {s:kills} düşman öldür."
-		"quest_1034_var_desc"                                  "Anka'nın yeri saptandı! Ne planladıklarını öğren."
-		"quest_1035_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken AK47, M4A4, veya M4A1-S ile düşman öldür."
-		"quest_1036_var_desc"                                  "<b>{s:location}</b> oynarken raunt kazan."
-		"quest_1037_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken düşman öldür."
-		"quest_1099_var_desc"                                  "<b>{s:location}</b> oynarken EDO kazan."
-		"quest_1038_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken raunt kazan."
-		"quest_1039_var_desc"                                  "<b>Muhafız: {s:location}</b> oynarken {s:kills} tabancanın tamamını kullanarak düşman öldür."
-		"quest_1040_var_desc"                                  "<b>{s:location}</b> oynarken {s:weapon} kullanarak düşman öldür."
-		"quest_1041_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken {s:weapon} kullanarak düşman öldür."
-		"quest_1042_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken raunt kazan."
-		"quest_1043_var_desc"                                  "<b>Muhafız: {s:location}</b> oynarken {s:weapon} kullanarak {s:kills} düşman öldür."
-		"quest_1044_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken en az 15 metre mesafeden düşman öldür."
-		"quest_1045_var_desc"                                  "<b>{s:location}</b> oynarken herhangi bir keskin nişancı tüfeği ile düşman öldür."
-		"quest_1046_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken kafadan vuruş ile düşman öldür."
-		"quest_1047_var_desc"                                  "<b>Muhafız: {s:location}</b> oynarken {s:weapon} kullanarak {s:kills} düşman öldür."
-		"quest_1048_var_desc"                                  "<b>{s:location}</b> oynarken el bombası hasarı ver."
-		"quest_1049_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken para kazan."
-		"quest_1050_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken raunt kazan."
-		"quest_1051_var_desc"                                  "<b>Muhafız: {s:location}</b> oynarken {s:kills} düşman öldür."
-		"quest_1052_var_desc"                                  "<b>{s:location}</b> oynarken bir düşman kartı seç."
-		"quest_1053_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken belirli yerlerde sis bombası patlat."
-		"quest_1054_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken raunt kazan."
-		"quest_1055_var_desc"                                  "<b>Muhafız: {s:location}</b> oynarken terörist silahlarıyla {s:kills} düşman öldür."
-		"quest_1056_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken Tünel'den veya Saray'dan düşman öldür."
-		"quest_1057_var_desc"                                  "<b>{s:location}:</b> oynarken düşman öldür."
-		"quest_1058_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken raunt kazan."
-		"quest_1059_var_desc"                                  "<b>Muhafız: {s:location}</b> oynarken hafif makineli silahlarla {s:kills} düşman öldür."
-		"quest_1060_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken hafif makineli silahlarla düşman öldür."
-		"quest_1061_var_desc"                                  "<b>{s:location}</b> oynarken hafif makineli silahlarla düşman öldür."
-		"quest_1062_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken raunt kazan."
-		"quest_1063_var_desc"                                  "<b>Muhafız: {s:location}</b> oynarken pompalılarla {s:kills} düşman öldür."
-		"quest_1064_var_desc"                                  "<b>{s:location}</b> oynarken bir EDO kartı seç."
-		"quest_1065_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken belirli noktalara grafiti yap."
-		"quest_1100_var_desc"                                  "<b>{s:location}</b> oynarken raunt kazan."
-		"quest_1066_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken raunt kazan."
-		"quest_1067_var_desc"                                  "<b>Muhafız: {s:location}</b> oynarken AUG ile {s:kills} düşmanı kafadan vurarak öldür."
-		"quest_1068_var_desc"                                  "<b>{s:location}</b> oynarken flaş bombasıyla bir düşmanı kör et."
-		"quest_1069_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken belirli yerlere grafiti yap."
-		"quest_1101_var_desc"                                  "<b>{s:location}</b> oynarken raunt kazan."
-		"quest_1070_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken raunt kazan."
-		"quest_1071_var_desc"                                  "<b>Muhafız: {s:location}</b> oynarken 10 metreden az bir mesafeden {s:kills} düşman öldür."
-		"quest_1072_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken 10 metreden az bir mesafeden düşman öldür."
-		"quest_1073_var_desc"                                  "<b>{s:location}</b> oynarken düşman öldür."		
-		"quest_1074_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken raunt kazan."
-		"quest_1075_var_desc"                                  "<b>Muhafız: {s:location}</b> oynarken {s:kills} düşman öldür."
-		"quest_1076_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken düşmanları kafadan vurarak öldür."
-		"quest_1077_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken ağır silahlar kullanarak düşman öldür."
-		"quest_1102_var_desc"                                  "<b>{s:location}</b> oynarken raunt kazan."
-		"quest_1078_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken raunt kazan."
-		"quest_1079_var_desc"                                  "<b>Muhafız: {s:location}</b> oynarken {s:kills} düşmanı SSG08 ile öldür."
-		"quest_1080_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken tavuk öldür."
-		"quest_1081_var_desc"                                  "<b>{s:location}</b> oynarken düşman öldür."
-		"quest_1082_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken raunt kazan."
-		"quest_1083_var_desc"                                  "<b>Muhafız: {s:location}</b> oynarken MAG-7 ile {s:kills} düşman öldür."
-		"quest_1084_var_desc"                                  "<b>{s:location}</b> oynarken düşman öldür."
-		"quest_1085_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken el bombası hasarı ver."
-		"quest_1085_v2_var_desc"                   			   "<b>{s:gamemode}: {s:location}</b> oynarken el bombası hasarı ver."
-		"quest_1086_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken raunt kazan."
-		"quest_1087_var_desc"                                  "<b>Muhafız: {s:location}</b> oynarken düşman silahlarıyla {s:kills} düşman öldür."
-		"quest_1088_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken belirli yerlerden düşman öldür."
-		"quest_1089_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken dürbünden nişan alarak düşman öldür."
-		"quest_1089_v2_var_desc"                               "<b>{s:gamemode}: {s:location}</b> oynarken dürbünden nişan alarak düşman öldür."
-		"quest_1090_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken raunt kazan."
-		"quest_1091_var_desc"                                  "<b>Muhafız: {s:location}</b> oynarken {s:kills} düşman öldür."
-		"quest_1092_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken bonus silahlarla puan elde et."
-		"quest_1092_v2_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken bonus silahlarla puan elde et."
-		"quest_1093_var_desc"                                  "<b>{s:gamemode}</b> oynarken para harca."
-		"quest_1094_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken raunt kazan."
-		"quest_1095_var_desc"                                  "<b>Muhafız: {s:location}</b> oynarken {s:kills} düşman öldür."
-		"quest_1095_v2_var_desc"                                  "<b>Muhafız: {s:location}</b> oynarken UMP-45 ile {s:kills} düşman öldür."
-		"quest_1096_var_desc"                                  "<b>{s:location}</b> oynarken raunt kazan."
-		"quest_1097_var_desc"                                  "Görevi tamamla."
-		"quest_1097_v2_var_desc"                                  "<i>... Retina, parlak uyaran karşısında hızlıca adapte olmaya çalışırken geçici körlüğe neden olur.</i>"
-		"quest_1103_var_desc"                                  "<b>{s:gamemode}: {s:location}</b> oynarken düşmanları flaş bombalarla kör et."
-
-// OP11 Week 1 Missions
-		"quest_1106_var_desc"                              "<b>Muhafız: {s:location}</b> oynarken bir hava saldırısından sağ çık."
-		"quest_1107_var_desc"                              "<b>Tehlikeli Bölge: {s:location}</b> oynarken çeşitli görevleri tamamla"
-		"quest_1108_var_desc"                              "Farklı radar konumlarında düşman öldür"
-
-// OP11 Week 2 Missions
-		"quest_1111_var_desc"                              "<b>Muhafız: {s:location}</b> oynarken düşman öldür."
-
-// OP11 Week 3 Missions
-		"quest_1115_var_desc"                              "<b>Muhafız: {s:location}</b> oynarken keskin nişancı tüfekleriyle düşman öldür."
-		"quest_1117_var_desc"                              "Farklı konumlara grafiti yap"
-
-// OP11 Week 4 Missions
-		"quest_1119_var_desc"                              "<b>Muhafız: {s:location}</b> oynarken pompalılarla düşman öldür."
-		"quest_1120_var_desc"                              "Farklı radar konumlarında düşman öldür"
-
-// OP11 Week 5 Missions
-		"quest_1123_var_desc"                              "<b>Muhafız: {s:location}</b> oynarken hafif makineli silahlarla düşman öldür."
-		"quest_1125_var_desc"                              "Çeşitli görevleri tamamla"
-
-// OP11 Week 6 Missions
-		"quest_1127_var_desc"                              "<b>Muhafız: {s:location}</b> oynarken tüfekle düşman öldür."
-		"quest_1128_var_desc"                              "<b>Ölüm Maçı: {s:location}</b> oynarken leş serisi yap."
-
-// OP11 Week 7 Missions
-		"quest_1131_var_desc"                              "<b>Muhafız: {s:location}</b> oynarken düşman öldür."
-		"quest_1132_var_desc"                              "Bir dizi farklı radar konumunda düşman öldür"
-
-// OP11 Week 8 Missions
-		"quest_1135_var_desc"                              "<b>Muhafız: {s:location}</b> oynarken pompalılarla düşman öldür."
-		"quest_1137_var_desc"                              "Araçları kullanarak bir dizi görevi tamamla"
-
-// OP11 Week 9 Missions
-		"quest_1139_var_desc"                              "<b>Muhafız: {s:location}</b> oynarken tabancayla düşman öldür."
-		"quest_1140_var_desc"                              "Çeşitli yerlere grafiti yap"
-
-// OP11 Week 10 Missions
-		"quest_1143_var_desc"                              "<b>Muhafız: {s:location}</b> oynarken AUG ile düşman öldür."
-		"quest_1144_var_desc"                              "Farklı radar bölgelerinde düşman öldür"
-
-// OP11 Week 11 Missions
-		"quest_1147_var_desc"                              "<b>Muhafız: {s:location}</b> oynarken MP9 ile düşman öldür."
-
-// OP11 Week 12 Missions
-		"quest_1151_var_desc"                              "<b>Muhafız: {s:location}</b> oynarken hafif makineli silahlarla düşman öldür."
-		"quest_1152_var_desc"                              "Leş serisi yap"
-
-// OP11 Week 13 Missions
-		"quest_1155_var_desc"                              "<b>Muhafız: {s:location}</b> oynarken düşman silahıyla düşman öldür."
-		"quest_1156_var_desc"                              "Bir dizi farklı radar konumunda düşman öldür"
-		"quest_1157_var_desc"                              "Çeşitli yerlere grafiti yap"
-
-// OP11 Week 14 Missions
-		"quest_1159_var_desc"                              "<b>Muhafız: {s:location}</b> oynarken yıkım bombasıyla düşman öldür."
-
-// OP11 Week 15 Missions
-		"quest_1163_var_desc"                              "<b>Muhafız: {s:location}</b> oynarken ağır silahlarla düşman öldür."
-
-// OP11 Week 16 Missions
-		"quest_1167_var_desc"                              "<b>Muhafız: {s:location}</b> oynarken düşman öldür."
-		"quest_1169_var_desc"                              "Girdap Operasyonu koleksiyonundaki dört silahtan birini kullanarak düşman öldür"
-
-
-// OP11 Week 1 Sub-Missions
-		"quest_1200_var_desc"                              "{d:points} maç kazan"
-		"quest_1201_var_desc"                              "{d:points} raunt kazan"
-		"quest_1202_var_desc"                              "<i>Tek bir maçta</i> düşmanlara {d:points} araç hasarı ver"
-		"quest_1203_var_desc"                              "{d:points} araç hasarı ver"
-		"quest_1204_var_desc"                              "Bir düşman İHA'sını yok et"
-		"quest_1205_var_desc"                              "Bir varil patlat"
-		"quest_1206_var_desc"                              "Biraz cam kır"
-		"quest_1207_var_desc"                              "Su Kulesi'nin tepesinden fırlatma mayınıyla zıpla"
-		"quest_1208_var_desc"                              "Bir rehine kurtar"
-		"quest_1209_var_desc"                              "T başlangıç noktasından bir düşman öldür"
-		"quest_1210_var_desc"                              "T rampasından bir düşman öldür"
-		"quest_1211_var_desc"                              "A bombalama alanından düşman öldür"
-		"quest_1212_var_desc"                              "AT başlangıç noktasından bir düşman öldür"
-		"quest_1213_var_desc"                              "Dükkândan bir düşman öldür"
-		"quest_1214_var_desc"                              "B bombalama alanından düşman öldür"
-		"quest_1215_var_desc"                              "Geçitten bir düşman öldür"
-		"quest_1216_var_desc"                              "Ortadan bir düşman öldür"
-		"quest_1217_var_desc"                              "Merdivenlerden bir düşman öldür"
-		"quest_1218_var_desc"                              "A bombalama alanından düşman öldür (yine)!"
-		"quest_1219_var_desc"                              "<i>Tek bir maçta</i> {d:points} raundu, birden fazla leş yaparak bitir"
-		"quest_1220_var_desc"                              "{d:points} düşman öldür"
-
-// OP11 Week 2 Sub-Missions
-		"quest_1221_var_desc"                              "{d:points} maç kazan"
-		"quest_1222_var_desc"                              "{d:points} raunt kazan"
-		"quest_1223_var_desc"                              "<i>Tek bir maçta</i> {d:points} defa kafadan vurarak düşman öldür"
-		"quest_1224_var_desc"                              "Kafadan vurarak {d:points} düşman öldür"
-		"quest_1225_var_desc"                              "El bombası hasarı ver"
-		"quest_1226_var_desc"                              "{d:points} düşman öldür"
-
-// OP11 Week 3 Sub-Missions		
-		"quest_1227_var_desc"                              "{d:points} maç kazan"
-		"quest_1228_var_desc"                              "{d:points} raunt kazan"
-		"quest_1229_var_desc"                              "<i>Tek bir maçta</i> düşmanlara {d:points} hasar ver"
-		"quest_1230_var_desc"                              "{d:points} hasar ver"
-		"quest_1231_var_desc"                              "AT başlangıç noktasına grafiti yap"
-		"quest_1232_var_desc"                              "A bombalama alanına grafiti yap"
-		"quest_1233_var_desc"                              "Çukura grafiti yap"
-		"quest_1234_var_desc"                              "B bombalama alanına grafiti yap"
-		"quest_1235_var_desc"                              "Orta kapılarına grafiti yap"
-		"quest_1236_var_desc"                              "T başlangıç noktasına grafiti yap"
-		"quest_1237_var_desc"                              "Geçite grafiti yap"
-		"quest_1238_var_desc"                              "Üst tünele grafiti yap"
-		"quest_1239_var_desc"                              "Uzun kapılarına grafiti yap"
-		"quest_1240_var_desc"                              "Ortaya grafiti yap"
-
-// OP11 Week 4 Sub-Missions		
-		"quest_1241_var_desc"                              "{d:points} maç kazan"
-		"quest_1242_var_desc"                              "{d:points} raunt kazan"
-		"quest_1243_var_desc"                              "Dışarıdan düşman öldür"
-		"quest_1244_var_desc"                              "Bombalama alanı A'dan düşman öldür"
-		"quest_1245_var_desc"                              "Lobiden düşman öldür"
-		"quest_1246_var_desc"                              "Rampadan düşman öldür"
-		"quest_1247_var_desc"                              "Bombalama alanı B'den düşman öldür"
-		"quest_1248_var_desc"                              "Gizliden düşman öldür"
-		"quest_1249_var_desc"                              "Dışarıdan düşman öldür (yine!)"
-		"quest_1250_var_desc"                              "T başlangıç noktasından düşman öldür"
-		"quest_1251_var_desc"                              "Silonun tepesinden düşman öldür"
-		"quest_1252_var_desc"                              "AT başlangıç noktasından düşman öldür"
-		"quest_1253_var_desc"                              "<i>Tek bir maçta</i> {d:points} defa yap: Raunt başladıktan sonra ilk beş merminle bir düşmanı öldür."
-		"quest_1254_var_desc"                              "{d:points} düşman öldür"
-
-// OP11 Week 5 Sub-Missions		
-		"quest_1255_var_desc"                              "<i>Tek bir maçta</i> {d:points} EDO kazan"
-		"quest_1256_var_desc"                              "{d:points} raunt kazan"
-		"quest_1257_var_desc"                              "<i>Tek bir maçta</i> {d:points} düşmanı kafadan vurarak öldür"
-		"quest_1258_var_desc"                              "{d:points} düşmanı kafadan vurarak öldür"
-		"quest_1259_var_desc"                              "Tabletin çekim alanı dışındayken para kazan"
-		"quest_1260_var_desc"                              "Yüksek çözünürlük tablet geliştirmesini satın al"
-		"quest_1261_var_desc"                              "Otomatik bir taret silahını yok et"
-		"quest_1262_var_desc"                              "Motele C4 yerleştir"
-		"quest_1263_var_desc"                              "Bir taşın üzerinde dururken düşmana hasar ver"
-		
-// OP11 Week 6 Sub-Missions	
-		"quest_1264_var_desc"                              "{d:points} maç kazan"
-		"quest_1265_var_desc"                              "{d:points} raunt kazan"
-		"quest_1266_var_desc"                              "3 leş serisi yap"
-		"quest_1267_var_desc"                              "5 leş serisi yap"
-		"quest_1268_var_desc"                              "7 leş serisi yap"
-		"quest_1269_var_desc"                              "<i>Tek bir maçta</i> başka birinin silahıyla {d:points} düşman öldür"
-		"quest_1270_var_desc"                              "Başka birinin silahıyla {d:points} düşman öldür"
-
-// OP11 Week 7 Sub-Missions			
-		"quest_1271_var_desc"                              "{d:points} maç kazan"
-		"quest_1272_var_desc"                              "{d:points} raunt kazan"
-		"quest_1273_var_desc"                              "Orta kapılardan düşman öldür"
-		"quest_1274_var_desc"                              "Geçitten düşman öldür"
-		"quest_1275_var_desc"                              "Ortanın üstünden düşman öldür"
-		"quest_1276_var_desc"                              "Çukurdan düşman öldür"
-		"quest_1277_var_desc"                              "Bombalama alanı A'dan düşman öldür"
-		"quest_1278_var_desc"                              "Orta kapılardan düşman öldür (yine!)"
-		"quest_1279_var_desc"                              "Bombalama alanı B'den düşman öldür"
-		"quest_1280_var_desc"                              "Tünellerden düşman öldür"
-		"quest_1281_var_desc"                              "T rampasından düşman öldür"
-		"quest_1282_var_desc"                              "T başlangıç noktasından düşman öldür"
-		"quest_1283_var_desc"                              "<i>Tek bir maçta</i> havadayken {d:points} hasar ver"
-		"quest_1284_var_desc"                              "Havadayken {d:points} hasar ver"
-
-// OP11 Week 8 Sub-Missions			
-		"quest_1285_var_desc"                              "{d:points} maç kazan"
-		"quest_1286_var_desc"                              "{d:points} raunt kazan"
-		"quest_1287_var_desc"                              "Bıçak seviyesine ulaş"
-		"quest_1288_var_desc"                              "Silahını {d:points} kez yükselt"
-		"quest_1289_var_desc"                              "Ortanın üstüne sis bombası at"
-		"quest_1290_var_desc"                              "Muza sis bombası at"
-		"quest_1291_var_desc"                              "Muza molotof at"
-		"quest_1292_var_desc"                              "Tek bir maçta 3 düşmanı kör et"
-		"quest_1293_var_desc"                              "Tek bir maçta {d:points} el bombası hasarı ver"
-
-// OP11 Week 9 Sub-Missions			
-		"quest_1294_var_desc"                              "<i>Tek bir maçta</i> {d:points} defa kafadan vurarak düşman öldür"
-		"quest_1295_var_desc"                              "{d:points} düşmanı kafadan vurarak öldür"
-		"quest_1296_var_desc"                              "Su kulesinin üstüne grafiti yap"
-		"quest_1297_var_desc"                              "İskeledeki çapaya grafiti yap"
-		"quest_1298_var_desc"                              "Vince grafiti yap"
-		"quest_1299_var_desc"                              "Radyonun çatısına grafiti yap"
-		"quest_1300_var_desc"                              "Hoteldeki pazara grafiti yap"
-		"quest_1301_var_desc"                              "Piknik alanındaki mangallara grafiti yap"
-		"quest_1302_var_desc"                              "Deniz fenerine grafiti yap"
-		"quest_1303_var_desc"                              "Köprüye grafiti yap"
-		"quest_1304_var_desc"                              "İnşaat alanında grafiti yap"
-		"quest_1305_var_desc"                              "<i>Tek bir maçta</i> Deagle ile {d:points} düşman öldür"
-		"quest_1306_var_desc"                              "Silahını {d:points} kez geliştir"
-
-// OP11 Week 10 Sub-Missions			
-		"quest_1307_var_desc"                              "{d:points} maç kazan"
-		"quest_1308_var_desc"                              "{d:points} raunt kazan"
-		"quest_1309_var_desc"                              "Oyun alanından bir düşman öldür"
-		"quest_1310_var_desc"                              "Üst parktan bir düşman öldür"
-		"quest_1311_var_desc"                              "Bombalama alanı A'dan bir düşman öldür"
-		"quest_1312_var_desc"                              "Keskin nişancı yuvasından bir düşman öldür"
-		"quest_1313_var_desc"                              "Bombalama alanı B'den bir düşman öldür"
-		"quest_1314_var_desc"                              "T başlangıç alanından bir düşman öldür"
-		"quest_1315_var_desc"                              "Tünelde bir düşman öldür"
-		"quest_1316_var_desc"                              "Oyun alanından bir düşman öldür (yine!)"
-		"quest_1317_var_desc"                              "Çeşmeden bir düşman öldür"
-		"quest_1318_var_desc"                              "Tuvaletten bir düşman öldür"
-		"quest_1319_var_desc"                              "<i>Tek bir maçta</i> {d:points} düşmanı kafadan vurarak öldür"
-		"quest_1320_var_desc"                              "{d:points} düşmanı kafadan vurarak öldür"
-
-// OP11 Week 11 Sub-Missions			
-		"quest_1321_var_desc"                              "{d:points} maç kazan"
-		"quest_1322_var_desc"                              "{d:points} raunt kazan"
-		"quest_1323_var_desc"                              "<i>Tek bir maçta</i> {d:points} kez Sağlık Aşısı kullan"
-		"quest_1324_var_desc"                              "{d:points} kez Sağlık Aşısı kullan"
-		"quest_1325_var_desc"                              "<i>Tek bir maçta</i> el bombası ile {d:points} hasar ver"
-		"quest_1326_var_desc"                              "{d:points} el bombası hasarı ver"
-
-// OP11 Week 12 Sub-Missions			
-		"quest_1327_var_desc"                              "{d:points} maç kazan"
-		"quest_1328_var_desc"                              "{d:points} raunt kazan"
-		"quest_1329_var_desc"                              "3'lü bir leş serisi yap"
-		"quest_1330_var_desc"                              "4'lü bir leş serisi yap"
-		"quest_1331_var_desc"                              "5'li bir leş serisi yap"
-		"quest_1332_var_desc"                              "<i>Tek bir maçta</i> {d:points} farklı silahla düşman öldür"
-		"quest_1333_var_desc"                              "{d:points} farklı silahla düşman öldür (maçlar arasında tekrarlanabilir)"
-
-// OP11 Week 13 Sub-Missions			
-		"quest_1334_var_desc"                              "{d:points} maç kazan"
-		"quest_1335_var_desc"                              "{d:points} raunt kazan"
-		"quest_1336_var_desc"                              "Ortadan bir düşman öldür"
-		"quest_1337_var_desc"                              "Bombalama alanı A'dan bir düşman öldür"
-		"quest_1338_var_desc"                              "AT başlangıç noktasından bir düşman öldür"
-		"quest_1339_var_desc"                              "Evden bir düşman öldür"
-		"quest_1340_var_desc"                              "Bombalama alanı B'den bir düşman öldür"
-		"quest_1341_var_desc"                              "Harabelerden bir düşman öldür"
-		"quest_1342_var_desc"                              "T başlangıç noktasından bir düşman öldür"
-		"quest_1343_var_desc"                              "Ana koridordan bir düşman öldür"
-		"quest_1344_var_desc"                              "Bombalama alanı A'dan bir düşman öldür (yine!)"
-		"quest_1345_var_desc"                              "Ortadan bir düşman öldür (yine!)"
-		"quest_1346_var_desc"                              "Batı Kasbah kemerine grafiti yap"
-		"quest_1347_var_desc"                              "Kasbah'ın spiral merdivenlerine grafiti yap"
-		"quest_1348_var_desc"                              "Kubbeye grafiti yap"
-		"quest_1349_var_desc"                              "Üsteki helikopter pistine grafiti yap"
-		"quest_1350_var_desc"                              "Filotillada bir mavnanın üzerindeyken grafiti yap"
-		"quest_1351_var_desc"                              "Kasabadaki Hotel Aurore'nin içine grafiti yap"
-		"quest_1352_var_desc"                              "Tankların oradaki 3. siloya grafiti yap"
-		"quest_1353_var_desc"                              "Deniz feneri kulesine grafiti yap"
-		"quest_1354_var_desc"                              "Rıhtımdaki iskelede grafiti yap"
-
-// OP11 Week 14 Sub-Missions			
-		"quest_1355_var_desc"                              "{d:points} maç kazan"
-		"quest_1356_var_desc"                              "{d:points} raunt kazan"
-		"quest_1357_var_desc"                              "<i>Bir maçta</i> {d:points} düşmanı dürbünle öldür"
-		"quest_1358_var_desc"                              "{d:points} düşmanı dürbünle öldür"
-		"quest_1359_var_desc"                              "Raundun ilk 30 saniyesinde {d:points} kere düşman öldür"
-		"quest_1360_var_desc"                              "{d:points} düşman öldür"
-
-// OP11 Week 15 Sub-Missions			
-		"quest_1361_var_desc"                              "{d:points} maç kazan"
-		"quest_1362_var_desc"                              "{d:points} raunt kazan"
-		"quest_1363_var_desc"                              "<i>Bir maçta</i> Silah Yarışı liderini {d:points} kez öldür"
-		"quest_1364_var_desc"                              "{d:points} düşman öldür"
-		"quest_1365_var_desc"                              "<i>Bir maçta</i> {d:points} hasar ver"
-		"quest_1366_var_desc"                              "{d:points} hasar ver"
-
-// OP11 Week 16 Sub-Missions	
-		"quest_1367_var_desc"                              "{d:points} maç kazan"
-		"quest_1368_var_desc"                              "{d:points} raunt kazan"
-		"quest_1369_var_desc"                              "<i>Bir maçta</i> Girdap Operasyonu ajanlarından biriyle {d:points} düşman öldür"
-		"quest_1370_var_desc"                              "{d:points} düşman öldür"
-		"quest_1371_var_desc"                              "Girdap Operasyonu koleksiyonundaki silahlardan biriyle {d:points} düşman öldür"
-		"quest_1372_var_desc"                              "{d:points} düşman öldür"
-
-
-
-		"quest_default_hud_var_desc" "{s:target} {s:actions} {s:commandverb}"
-		"quest_weapon_hud_var_desc" "{s:commandverb} {s:actions}: {s:weapon}"
-		"quest_single_hud_var_desc"	"maç sonunda<br> {s:commandverb} {s:target} {s:actions}"
-		"quest_weapon_single_hud_var_desc" "maç sonunda<br> {s:commandverb} {s:actions}: {s:weapon}"
-	
-		//hud exceptions:
-		"quest_931_hud_var_desc"	"Düşman öldür: {s:weapon}"
-		"quest_932_hud_var_desc"	"Havadayken düşman öldür"
-		"quest_933_hud_var_desc"	"Raunt Kazan"
-		"quest_934_hud_var_desc"	"Düşman öldür: {s:weapon}"
-		"quest_935_hud_var_desc"	"Maç bitene kadar<br>{s:weapon} ile düşman öldür"
-		"quest_936_hud_var_desc"	"Düşman öldür: {s:weapon}"
-		"quest_937_hud_var_desc"	"Grafiti yap"
-		"quest_937_hud_var_desc_CT"	"Silo ya da Otomat'a grafiti yap"
-		"quest_937_hud_var_desc_T"	"Cennet ya da Garaj'a grafiti yap"
-        "quest_938_hud_var_desc"	"Silah yarışı liderini öldür"
-        "quest_939_hud_var_desc"	"Düşman öldür: {s:weapon}"
-        "quest_940_hud_var_desc"	"Raunt Kazan"
-        "quest_941_hud_var_desc"	"Tabanca Raundu Kazan"
-        "quest_942_hud_var_desc"	"Maç bitene kadar<br>{s:weapon} ile düşman öldür"
-        "quest_943_hud_var_desc"	"Düşman Öldür"
-        "quest_944_hud_var_desc"	"Para Harca"
-        "quest_945_hud_var_desc"	"Düşman Öldür"
-        "quest_946_hud_var_desc"	"Raunt Kazan"
-        "quest_947_hud_var_desc"	"Raunt Kazan"
-		"quest_948_hud_var_desc"	"Kurtar veya Kurtaranı Durdur"
-		"quest_948_hud_var_desc_CT"	"Rehine kurtar"
-		"quest_948_hud_var_desc_T"	"Rehine kurtarıcıyı öldür"
-        "quest_949_hud_var_desc"	"Düşman öldür: {s:weapon}"
-        "quest_950_hud_var_desc"	"Ağır silah kullanarak düşman öldür"	
-        "quest_951_hud_var_desc"	"Düşman öldür: {s:weapon}"	
-        "quest_952_hud_var_desc"	"Raunt Kazan"	
-        "quest_953_hud_var_desc"	"Raunt Kazan"	
-        "quest_954_hud_var_desc"	"Maç bitene kadar {s:target} düşman öldür"
-		"quest_955_hud_var_desc" 	"[{s:bind_use}] tuşunu kullanarak tavuklarla <br> {d:points} saniyeliğine arkadaş ol"
-		"quest_956_hud_var_desc" 	"Paraşütle belirli bir süre boyunca süzül"
-		"quest_957_hud_var_desc" 	"Düşman öldür: {s:weapon}"
-		"quest_958_hud_var_desc" 	"Raunt kazan"
-		"quest_959_hud_var_desc" 	"Düşman öldür"
-		"quest_960_hud_var_desc" 	"Düşman Öldür: {s:weapon}"
-		"quest_961_hud_var_desc"	"Tabancayla düşman öldür"
-		"quest_962_hud_var_desc"	"Maç bitene kadar<br>para harcamadan düşman öldür"
-		"quest_963_hud_var_desc"	"Düşman Öldür: {s:weapon}"
-		"quest_964_hud_var_desc"	"Tabanca raundu kazan"
-		"quest_965_hud_var_desc"    "Düşman Öldür"
-		"quest_966_hud_var_desc" 	"Para kazan"
-		"quest_967_hud_var_desc"	"Düşman öldür: {s:weapon}"
-		"quest_968_hud_var_desc"    "Keskin nişancı tüfeğiyle düşman öldür"
-		"quest_969_hud_var_desc"	"Dürbün kullanmadan {s:weapon} ile düşman öldür"
-		"quest_970_hud_var_desc"	"Raunt kazan"
-		"quest_971_hud_var_desc"	"Düşman öldür"
-		"quest_972_hud_var_desc"    "Maçın sonuna kadar kafadan <br> vuruşla düşman öldür"
-		"quest_973_hud_var_desc" 	"Düşman öldür"
-		"quest_974_hud_var_desc" 	"Kafadan vuruşla düşman öldür"
-		"quest_975_hud_var_desc"    "AT silahlarıyla düşman öldür"
-		"quest_976_hud_var_desc" 	"Raunt kazan"
-		"quest_977_hud_var_desc"	"Raunt kazan"
-		"quest_978_hud_var_desc"	"Düşman öldür: {s:weapon}"
-		"quest_979_hud_var_desc" 	"4'lü leş serisi yap"
-        "quest_980_hud_var_desc" 	"Dördüncü veya daha iyi bir sıralama elde et"
-		"quest_981_hud_var_desc" 	"Kafadan vurarak düşman öldür: {s:weapon}"		
-		"quest_982_hud_var_desc"	"Maç bitene kadar {s:weapon} kullanarak<br>kafadan vuruşla düşman öldür"	
-		"quest_983_hud_var_desc" 	"Kafadan vurarak düşman öldür"
-		"quest_984_hud_var_desc"    "EDO elde et"
-		"quest_985_hud_var_desc" 	"Varsayılan tabancayla düşman öldür"
-		"quest_986_hud_var_desc" 	"Düşman öldür: {s:weapon}"
-		"quest_987_hud_var_desc"	"Düşman öldür"
-		"quest_987_hud_var_desc_CT"	"Düşman öldür: AK-47"
-		"quest_987_hud_var_desc_T"	"Düşman öldür: M4A4 veya M4A1-S"
-		"quest_988_hud_var_desc" 	"Bıçakla düşman öldür"
-		"quest_989_hud_var_desc"	"Araç hasarı ver"
-		"quest_990_hud_var_desc" 	"Düşman takımın tamamını öldür"
-		"quest_991_hud_var_desc_CT" "Düşman öldür: Five-Seven"
-		"quest_991_hud_var_desc_T" 	"Düşman öldür: Tec-9"
-		"quest_991_hud_var_desc" 	"Düşman öldür: Tec-9 veya Five-Seven"
-		"quest_992_hud_var_desc" 	"Düşman öldür: Yıkım Bombası"
-		"quest_993_hud_var_desc" 	"Araç hasarı ver"
-		"quest_994_hud_var_desc" 	"Düşman öldür"
-		"quest_995_hud_var_desc" 	"Raunt kazan"
-		"quest_996_hud_var_desc"	"Düşman öldür"
-		"quest_997_hud_var_desc_CT"	"Düşman öldür: FAMAS"
-		"quest_997_hud_var_desc_T"	"Düşman öldür: Galil AR"
-		"quest_997_hud_var_desc"	"Düşman öldür: Galil AR veya FAMAS"
-		"quest_998_hud_var_desc" 	"Düşman öldür: {s:weapon}"
-		"quest_999_hud_var_desc"	"Düşman öldür: {s:weapon}"
-		"quest_1000_hud_var_desc" 	"Düşman İHA'larını yok et"
-		"quest_1001_hud_var_desc"   "Maç bitene kadar<br>EDO kazan"
-		"quest_1002_hud_var_desc" 	"Çok leşli raunt yap"
-		"quest_1003_hud_var_desc"   "Düşman öldür: {s:weapon}"
-		"quest_1004_hud_var_desc"   "Düşman öldür: {s:weapon}"
-		"quest_1005_hud_var_desc" 	"Raunt kazan"
-		"quest_1006_hud_var_desc" 	"Düşman öldür"
-		"quest_1007_hud_var_desc" 	"Kilitli Kapıları Yok et"
-		"quest_1008_hud_var_desc_CT" 	"Düşman öldür: M4A4 veya M4A1-S"
-		"quest_1008_hud_var_desc_T"  	"Düşman öldür: AK-47"
-		"quest_1008_hud_var_desc" 	"Düşman öldür: AK-47 veya M4A4"
-		"quest_1009_hud_var_desc"	"Raunt kazan"
-		"quest_1010_hud_var_desc"	"Düşman öldür: {s:weapon}"
-		"quest_1011_hud_var_desc" 	"Bir yarıda 5 raunt kazan"
-		"quest_1012_hud_var_desc"	"Fırlatma mayınlarına bas"
-		"quest_1013_hud_var_desc" 	"Düşman öldür: {s:weapon}"
-		"quest_1014_hud_var_desc"   "Düşman öldür: {s:weapon}"
-		"quest_1015_hud_var_desc"   "$2000'dan daha az harcayarak düşman öldür"
-		"quest_1016_hud_var_desc"   "$3000'a sahip ol"
-		"quest_1017_hud_var_desc" 	"Raunt kazan"
-		"quest_1018_hud_var_desc" 	"Düşman öldür"
-		"quest_1019_hud_var_desc" 	"SMG leşi yap"
-		"quest_1020_hud_var_desc" 	"Düşman öldür: {s:weapon}"
-		"quest_1021_hud_var_desc" 	"Tavuk katlet"
-		"quest_1022_hud_var_desc" 	"Varil patlat"
-		"quest_1023_hud_var_desc" 	"Raunt kazan"
-		"quest_1024_hud_var_desc" 	"Cam kır"
-		"quest_1025_hud_var_desc" 	"Raunt kazan"
-		"quest_1027_hud_var_desc"	"Düşman başlangıç bölgesine<br>grafiti yap"
-		"quest_1028_hud_var_desc"	"Muz veya Apartmanlarda<br>düşman öldür"
-		"quest_1029_hud_var_desc"	"Sis bombası at"
-		"quest_1029_hud_var_desc_CT"	"Apartmanlara ya da T Rampası'na<br>sis bombası at"
-		"quest_1029_hud_var_desc_T"	"Nişancı'nın Yuvası'na ya da Merdivenlere<br>sis bombası at"
-		"quest_1098_hud_var_desc"               "Raunt Kazan"
-		"quest_1032_hud_var_desc"               "Raunt Kazan"
-		"quest_1033_hud_var_desc"               "Düşman Öldür"
-		"quest_1034_hud_var_desc"               "Anka'yı Araştır"
-		"quest_1035_hud_var_desc"               "Düşman öldür: AK-47, M4A4 veya M4A1-S"
-		"quest_1036_hud_var_desc"               "Raunt Kazan"
-		"quest_1037_hud_var_desc"               "Düşman Öldür"
-		"quest_1099_hud_var_desc"               "EDO Kazan"
-		"quest_1038_hud_var_desc"               "Raunt Kazan"
-		"quest_1039_hud_var_desc"               "Düşman Öldür: Farklı Tabancalar"
-		"quest_1040_hud_var_desc"               "Düşman Öldür: Tabanca"
-		"quest_1041_hud_var_desc"               "Düşman Öldür: Desert Eagle"
-		"quest_1042_hud_var_desc"               "Raunt Kazan"
-		"quest_1043_hud_var_desc"               "Düşman Öldür"
-		"quest_1044_hud_var_desc"               "En az 15 metre uzaktan düşman öldür"
-		"quest_1045_hud_var_desc"               "Düşman Öldür: Herhangi bir keskin nişancı tüfeği"
-		"quest_1046_hud_var_desc"               "Kafadan vurarak düşman öldür"
-		"quest_1047_hud_var_desc"               "Düşman öldür: M249"
-		"quest_1048_hud_var_desc"               "El Bombası Hasarı Ver"
-		"quest_1049_hud_var_desc"               "Para Kazan"
-		"quest_1050_hud_var_desc"               "Raunt Kazan"
-		"quest_1051_hud_var_desc"               "Düşman Öldür"
-		"quest_1052_hud_var_desc"               "Düşman Kartını Seç"
-		"quest_1053_hud_var_desc"               "Sis Bombası At"
-		"quest_1053_hud_var_desc_T"             "Garaj veya Mini'ye sis bombası at"
-		"quest_1053_hud_var_desc_CT"            "Kontrol odası veya Kulübe'ye sis bombası at"
-		"quest_1054_hud_var_desc"               "Raunt Kazan"
-		"quest_1055_hud_var_desc"               "Düşman Öldür"
-		"quest_1056_hud_var_desc"               "Tünel'den veya Saray'dan Düşman Öldür"
-		"quest_1057_hud_var_desc"               "Düşman Öldür"
-		"quest_1058_hud_var_desc"               "Raunt Kazan"
-		"quest_1059_hud_var_desc"               "Düşman Öldür"
-		"quest_1060_hud_var_desc"               "Düşman Öldür: {s:weapon}"
-		"quest_1061_hud_var_desc"               "Düşman Öldür: {s:weapon}"
-		"quest_1062_hud_var_desc"               "Raunt Kazan"
-		"quest_1063_hud_var_desc"               "Düşman Öldür"
-		"quest_1064_hud_var_desc"               "EDO Kartı Seç"
-		"quest_1065_hud_var_desc"               "Grafiti Yap"
-		"quest_1065_hud_var_desc_T"             "Orta'ya Grafiti Yap"
-		"quest_1065_hud_var_desc_CT"            "Üst T Tarafı'na veya Dışarı'ya Grafiti Yap"
-		"quest_1100_hud_var_desc"               "Raunt Kazan"
-		"quest_1066_hud_var_desc"               "Raunt Kazan"
-		"quest_1067_hud_var_desc"               "AUG Kafadan Vuruşları"
-		"quest_1068_hud_var_desc"               "Bir Düşmanı Flaş Bombasıyla Kör Et"
-		"quest_1069_hud_var_desc"               "Grafiti Yap"
-		"quest_1069_hud_var_desc_T"             "Geçit veya Üst Tünel'e Grafiti Yap"
-		"quest_1069_hud_var_desc_CT"            "Alt Tünel veya Kısa Merdivenlere Grafiti Yap"
-		"quest_1101_hud_var_desc"               "Raunt Kazan"
-		"quest_1070_hud_var_desc"               "Raunt Kazan"
-		"quest_1071_hud_var_desc"               "10 metreden daha az bir mesafeden"
-		"quest_1072_hud_var_desc"               "10 metreden az bir mesafeden düşman öldür"
-		"quest_1073_hud_var_desc"               "Düşman Öldür"
-		"quest_1074_hud_var_desc"               "Raunt Kazan"
-		"quest_1075_hud_var_desc"               "Düşman Öldür"
-		"quest_1076_hud_var_desc"               "Kafadan Vurarak Düşman Öldür"
-		"quest_1077_hud_var_desc"               "Düşman Öldür: {s:weapon}"
-		"quest_1102_hud_var_desc"               "Raunt Kazan"
-		"quest_1078_hud_var_desc"               "Raunt Kazan"
-		"quest_1079_hud_var_desc"               "Düşman Öldür: {s:weapon}"
-		"quest_1080_hud_var_desc"               "Tavuk Öldür"
-		"quest_1081_hud_var_desc"               "Düşman Öldür"
-		"quest_1082_hud_var_desc"               "Raunt Kazan"
-		"quest_1083_hud_var_desc"               "Düşman Öldür"
-		"quest_1084_hud_var_desc"               "Düşman Öldür"
-		"quest_1085_hud_var_desc"               "El Bombası Hasarı Ver"
-		"quest_1085_v2_hud_var_desc"     	    "El Bombası Hasarı Ver"
-		"quest_1086_hud_var_desc"               "Raunt Kazan"
-		"quest_1087_hud_var_desc"               "Düşman Öldür"
-		"quest_1088_hud_var_desc"               "Belirli Yerlerden Düşman Öldür"
-		"quest_1088_hud_var_desc_T"             "A veya B bombalama alanında düşman öldür"
-		"quest_1088_hud_var_desc_CT"            "A veya B bombalama alanında düşman öldür"
-		"quest_1089_hud_var_desc"               "Dürbünden Nişan Alarak Düşman Öldür"
-		"quest_1089_v2_hud_var_desc"               "Dürbünden Nişan Alarak Düşman Öldür"
-		"quest_1090_hud_var_desc"               "Raunt Kazan"
-		"quest_1091_hud_var_desc"               "Düşman Öldür"
-		"quest_1092_hud_var_desc"               "Bonus Silahlarla Puan Kazan"
-		"quest_1092_v2_hud_var_desc"            "Bonus Silahlarla Puan Kazan"
-		"quest_1093_hud_var_desc"               "Para Harca"
-		"quest_1094_hud_var_desc"               "Raunt Kazan"
-		"quest_1095_hud_var_desc"               "Düşman Öldür"
-		"quest_1095_v2_hud_var_desc"            "UMP-45 ile Düşman Öldür"
-		"quest_1096_hud_var_desc"               "Raunt Kazan"
-		"quest_1097_hud_var_desc"               "Görevi tamamla"
-		"quest_1097_v2_hud_var_desc"            "Anka Tesisi'nin derinliklerine doğru ilerle"
-		"quest_1103_hud_var_desc"               "Düşmanları flaş bombası kullanarak kör et"
-
-
-
-
-/////////////////////////////////////////////////////////////////
-
-
-
-// win quests
-
-		"Quest_Win_a_Mode"										"Tehlike Yok Etme: <b>%gamemode%</b>"
-		"Quest_Win_a_Mode_desc"								"<b>%gamemode%</b> modunda bir maç kazan."
-
-		"Quest_Win_a_Mapgroup"								"Oyun Sonu: <b>%gamemode%</b>, <b>%mapgroup%</b>"
-		"Quest_Win_a_Mapgroup_desc"						"<b>%mapgroup%</b> maçlarında <b>%gamemode%</b> %actions% yap."
-
-		"Quest_Win_a_Map"											"Oyun Sonu: <b>%gamemode%, %map%</b>"
-		"Quest_Win_a_Map_desc"								"<b>%map%</b> maçlarında <b>%gamemode%</b> %actions% yap."
-
-		"Quest_Win_Rounds_Map"								"Çarpışma: <b>%gamemode%, %mapgroup%</b>"
-		"Quest_Win_Rounds_Map_desc"						"<b>%mapgroup%</b> maçlarında <b>%gamemode%</b> %actions% yap."
-		"Quest_Win_Rounds_Map_Short"						"Kazanılan Rauntlar"
-
-// equipment quests
-
-		"Quest_Weapon_Mode"										"Ekipman Ustalığı: <b>%gamemode%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Mode_desc"							"<b>%gamemode%</b> maçlarında <b>%weapon%</b> ile %optional_target%%actions% yap."
-		
-		"Quest_Weapon_Mode_single_desc"				"<b>%gamemode%</b> maçında <b>%weapon%</b> leşi yap."
-
-// equipment + mapgroup quests
-
-		"Quest_Weapon_Mapgroup"							"Ekipman Ustalığı: <b>%mapgroup%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Mapgroup_desc"					"<b>%gamemode%: %mapgroup%</b> maçlarında <b>%weapon%</b> ile %optional_target%%actions% yap."
-		"Quest_WeaponDamage_Mapgroup_desc"					"<b>%gamemode%: %mapgroup%</b> maçlarında <b>%weapon%</b> ile %optional_target%%actions% ver."
-
-	"Quest_Weapon_Within_3_Mapgroup"						"Mezuniyet: <b>%mapgroup%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Within_3_Mapgroup_desc"				"<b>%gamemode%: %mapgroup%</b> maçlarında <i>rauntta yaptığın ilk 3 atış içerisinde</i> <b>%weapon%</b> ile %optional_target%%actions% yap."
-
-	"Quest_Weapon_Map"									"Ekipman Ustalığı: <b>%map%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Map_desc"								"<b>%gamemode%: %map%</b> maçlarında <b>%weapon%</b> ile %optional_target%%actions% yap."
-		"Quest_Weapon_Map_Team_desc"		"<b>%team%</b> iken, <b>%gamemode%: %map%</b> maçlarında <b>%weapon%</b> ile %optional_target%%actions% yap."		
-		"Quest_Weapon_Mapgroup_Team_desc"		"<b>%team%</b> iken, <b>%gamemode%: %mapgroup%</b> maçlarında <b>%weapon%</b> ile %optional_target%%actions% yap."		
-
-		"Quest_WepUpgrade_Mapgroup"					"Silah Geliştirmesi: <b>%mapgroup%</b>"
-
-	"Quest_Unique_Weapon_Mapgroup"							"Silahların Ustası: <b>%mapgroup%</b>"
-		"Quest_Unique_Weapon_Mapgroup_desc"					"<b>%gamemode%: %mapgroup%</b> maçları içerisinde, her <i>benzersiz bir silah ile yapılan</i> %action% ile görev ilerlemesi kaydet."
-		"Quest_Unique_Weapon_Mapgroup_Team_desc"					"<b>%team%</b> iken, <b>%gamemode%: %mapgroup%</b> maçlarında her <i>benzersiz bir silah ile yapılan</i> %action% ile görev ilerlemesi kaydet."
-
-		"Quest_Defend_Bomb_Mapgroup_desc"					"<i>Bomba kurulduktan sonra</i> <b>%gamemode%: %mapgroup%</b> maçlarında %actions% yap."
-
-// Hostage quests
-
-	 "Quest_Rescue_Map"								"Rehine Tahliyesi: <b>%map%</b>"
-	 "Quest_Rescue_Map_Desc"						"<b>%gamemode%: %map%</b> maçlarında %actions% yap."
-
-// Plant bomb quests
-
-	 "Quest_PlantBomb_Mapgroup"									"Patlayıcıların Ustası: <b>%mapgroup%</b>"
-	 "Quest_PlantBomb_Mapgroup_Desc"						"<b>%gamemode%: %mapgroup%</b> maçlarında %actions% gerçekleştir."
-
-
-// Assassination
-
-	 "Quest_Assassination"									"%victim_team% Suikasti: <b>%target%</b>"
-	 "Quest_Assassination_desc"							"<b>%gamemode%: %map%</b> maçlarında %victim_team% <b>%target%</b> oyuncusunu bul ve öldür."
-
-	 "quest_target_turner"									"Turner"
-	 "quest_target_jackson"									"Jackson"
-	 "quest_target_chapel"									"Chapel"	 
-	 "quest_target_sergei"									"Sergei"	 
-
-	 "quest_assassination_you_are_target"					"Suikast Hedefisin: %s1.\nŞu sensin: %s1."
-	 "quest_assassination_target_on_server"					"Bir oyuncu Suikast Hedefini öldürmeye çalışıyor: %s1"
-	 "quest_assassination_target_on_server_has_quest"		"Şu Suikast Hedefini öldürmeye çalışıyorsun: %s1"
-	 "quest_assassination_target_killed"					"%s1 suikaste uğradı!"
-	 "quest_assassination_no_longer_target"					"Artık %s1 değilsin." 
-
-// Income
-	 "Quest_Income_Mapgroup"								"Brüt Gelir: <b>$1,000,000</b>"
-	 "Quest_Income_Mapgroup_desc"						"<b>%gamemode%: %mapgroup%</b> maçlarında toplam $1,000,000 kazan."
-	 "Quest_Income_Mapgroup_Team_desc"			"<b>%team%</b> iken, <b>%gamemode%: %mapgroup%</b> maçlarında toplam $1,000,000 kazan."
-
-	 "Quest_Spend_Mapgroup_Team_desc"			"<b>%team%</b> iken, <b>%gamemode%: %mapgroup%</b> maçlarında toplam $1,000,000 harca."
-
-
-//	deathmatch bonus points
-
-		"Quest_DMBonusPoints_Mapgroup"				"Silah Ustası: <b>%mapgroup%</b>"
-		"Quest_DMBonusPoints_Mapgroup_desc"		"<b>Ölüm Maçı: %mapgroup%</b> maçlarında Bonus Silahları kullanarak puan kazan."
-
-		"Quest_DMBonusPoints_Map"							"Silah Ustası: <b>%map%</b>"
-		"Quest_DMBonusPoints_Map_desc"				"<b>Ölüm Maçı: %map%</b> maçlarında Bonus Silahları kullanarak puan kazan."
-
-// play quests
-
-		"Quest_Kills_Mapgroup"							"Tehlike Gözlemi: <b>%gamemode%</b>, <b>%mapgroup%</b>"
-		"Quest_Kills_Mapgroup_desc"					"<b>%gamemode%: %mapgroup%</b> maçlarında %optional_target%%actions% yap."
-		"Quest_Kills_Mapgroup_cond_desc"		"<i>%condition%</i> <b>%gamemode%: %mapgroup%</b> maçlarında %optional_target%%actions% yap."
-		"Quest_Kills_Mapgroup_Team_desc"		"<b>%team%</b> iken, <b>%gamemode%: %mapgroup%</b> maçlarında %optional_target%%actions% yap."		
-
-		"Quest_Kills_Mapgroup_Victim_Team_desc"		"<b>%team%</b> iken, <b>%gamemode%: %mapgroup%</b> maçlarında %victim_team% %actions% yap."
-
-		"Quest_Flashbang_Mapgroup_Team_desc"		"<b>%team%</b> iken, <b>%gamemode%: %mapgroup%</b> maçlarında %optional_target%%actions% yap."		
-
-
-		"Quest_Burn_Mapgroup_desc"					"<i>Yanıcı bombalar ile</i> <b>%gamemode%: %mapgroup%</b> maçlarında düşmanlara %actions% ver."
-
-		"Quest_Headshots_Mapgroup"							"Kafadan Vuruş: <b>%gamemode%</b>, <b>%mapgroup%</b>"
-		"Quest_Headshots_Mapgroup_desc"					"<b>%gamemode%: %mapgroup%</b> maçlarında kafadan vuruş ile %actions% yap."
-
-		"Quest_Kills_Map"										"Tehlike Gözlemi: <b>%gamemode%</b>, <b>%map%</b>"
-		"Quest_Kills_Map_desc"							"<b>%gamemode%: %map%</b> maçlarında %optional_target%%actions% yap."
-
-		"Quest_Kills_Mode"								"<b>%gamemode%</b> Tehdit Gözlemi"
-		"Quest_Kills_Mode_desc"						"<b>%gamemode%</b> maçlarında %optional_target%%actions% yap."
-
-// chicken quests
-
-	"Quest_Chicken_Kills_Mapgroup"				"İhtiyaç Koşusu: <b>%gamemode%</b>, <b>%mapgroup%</b>"
-	"Quest_Chicken_Kills_Map"							"İhtiyaç Koşusu: <b>%gamemode%</b>, <b>%map%</b>"
-	"Quest_Chicken_Kills"						"İkmal Koşusu"
-
-// generic string tokens
-
-	"quest_team_ct"										"Anti-Terörist"
-	"quest_team_terrorist"								"Terörist"
-	"quest_complete_the_match"							"Görevini tamamlamak için maçı bitir"
-	"quest_complete_the_match_uncommitted"				"<img src='file://{images}/icons/ui/info.svg' class=''/>Görev ilerlemeni kaydetmek için maçı bitir"
-
-// Coop quests
-
-	"Quest_Guardian_Bomb"									"Muhafız Eşli Oyun Mücadelesi: <b>%map%</b>, <b>%weapon%</b>"
-	"Quest_Guardian_Bomb_Desc"								"Muhafız Eşli Oyun Mücadelesi: Bir arkadaşınla birlikte <b>%team%</b> takımında oyna ve <b>%map%</b> haritasında bombalama alanını düşmanlardan koru.<br><br><b>%weapon%</b> ile <b>%kills%</b> düşman leşi alarak <b>%action%</b> yap. <b>%extradetails%</b>"
-	"Quest_Guardian_Desc_op08"								"Eşli Muhafız Mücadelesi: Bir ortak ile birlikte bir <b>%team%</b> olarak oynayın ve <b>%map%</b> haritasında bombalama alanını düşmanlardan koruyun.<br><br><b>%weapon%</b> silahıyla <b>%kills%</b> %killtype% ile bir <b>%action%</b> başar. <b>%extradetails%</b>%presence%"
-
-	"Quest_Guardian_Desc_op09"								"<b>Muhafız: {s:location}</b> oynarken {s:weapon} ile {s:kills} {s:killtype} {s:commandverb}."
-	"Quest_CoopMission_Desc_op09"							"<b>Eşli Saldırı</b>: <b>{s:location}</b haritasındaki görevleri başka biriyle birlikte tamamlayın."
-	"Quest_Guardian_Desc_op09_extra_equip_1_var_desc"		"<b>Muhafız: {s:location}</b> oynarken {s:weapon} ile {s:kills} {s:killtype} {s:commandverb}. Oyuncular <b>{s:extraequip0}</b> ile başlar."
-	"Quest_Guardian_Desc_op09_extra_equip_2_var_desc"		"<b>Muhafız: {s:location}</b> oynarken {s:weapon} ile {s:kills} {s:killtype} {s:commandverb}. Oyuncular <b>{s:extraequip0}</b> ve <b>{s:extraequip1}</b> ile başlar."
-
-	"Quest_Guardian_Desc_op10"								"<b>Muhafız: {s:location}</b> oynarken {s:weapon} ile {s:kills} {s:killtype} {s:commandverb}."
-	"Quest_CoopMission_Desc_op10"							"<b>Eşli Saldırı</b>: <b>{s:location}</b> haritasındaki görevleri başka biriyle birlikte tamamla."
-	"Quest_Guardian_Desc_op10_extra_equip_1_var_desc"		"<b>Muhafız: {s:location}</b> oynarken {s:weapon} ile {s:kills} {s:killtype} {s:commandverb}. Oyuncular <b>{s:extraequip0}</b> ile başlar."
-	"Quest_Guardian_Desc_op10_extra_equip_2_var_desc"		"<b>Muhafız: {s:location}</b> oynarken {s:weapon} ile {s:kills} {s:killtype} {s:commandverb}. Oyuncular <b>{s:extraequip0}</b> ve <b>{s:extraequip1}</b> ile başlar."
-
-	"Quest_Coop_Desc_Rescue"								"Eşli Saldırı: Bir partner ile <b>%team%</b> olarak oyna ve <b>%map%</b> haritasında <b>rehineleri kurtar</b>.<br><br><b>%extradetails%</b>"
-	"Quest_Coop_Desc_Recon"									"Eşli Saldırı: Bir partner ile <b>%team%</b> olarak oyna ve <b>%map%</b> haritasında <b>istihbaratı topla</b>.<br><br><b>%extradetails%</b>"
- 	"Quest_Coop_Desc_Bomb"									"Eşli Saldırı: Bir partner ile <b>%team%</b> olarak oyna ve <b>%map%</b> haritasını <b>Patlat</b>.<br><br><b>%extradetails%</b>"
- 
-	"Quest_op09_coopmission"								"Anka laboratuvarından Tehlikeli Bölge virüsü numunesi al."
-	"Quest_op10_coopmission"								"Anka eski bir çiftlikte ortaya çıktı. Bölgeyi araştır ve ne planladıklarını öğren."
-
-	"Quest_Guardian_Hostage"								"Muhafız Eşli Oyun Mücadelesi: <b>%map%</b>, <b>%weapon%</b>"
-	"Quest_Guardian_Hostage_Desc"							"Muhafız Eşli Oyun Mücadelesi: Bir arkadaşınla birlikte <b>%team%</b> takımında oyna ve <b>%map%</b> haritasında Anti-Teröristlerin Rehinelere ulaşmasını engelle.<br><br><b>%weapon%</b> ile <b>%kills%</b> düşman leşi alarak <b>%action%</b> yap. <b>%extradetails%</b>"
-	 
-	"quest_guardian_kills_5"								"5"
-	"quest_guardian_kills_10"								"10"
-	"quest_guardian_kills_15"								"15"
-	"quest_guardian_kills_20"								"20"
-	"quest_guardian_kills_25"								"25"
-	"quest_guardian_kills_30"								"30"
-	"quest_guardian_kills_35"								"35"
-	"quest_guardian_kills_40"								"40"
-	"quest_guardian_kills_45"								"45"
-	"quest_guardian_kills_50"								"50"
-
-// Guardian kill types
-	"quest_killtype_normal"									"düşman leşi"
-	"quest_killtype_headshot"								"<b>kafadan vuruş</b> leşi"
-	"quest_killtype_blind"									"<b>kör edilmiş</b> düşman leşi"
-	"quest_killtype_unscoped"								"<b>dürbünsüz</b> leş"
-
-	"quest_enemy_weapon"									"Düşman Silahı"
-	"quest_weapon_CZ75a_or_enemy_weapon"					"CZ75-Otomatik veya herhangi bir düşman silahı"
-	"quest_weapon_sniperrifle"								"herhangi bir keskin nişancı tüfeği"
-	"quest_weapon_any_rifle"								"herhangi bir tüfek"
-	"quest_weapon_m4"										"herhangi M4 tüfeği"
-	"quest_weapon_starter_ct"								"herhangi bir varsayılan AT tabancası"
-	"quest_weapon_ct"										"Anti-Terörist silahı"
-	"quest_weapon_t"										"Terörist silahı"
-	"quest_weapon_any_pistol"								"herhangi bir tabanca"
-	"quest_weapon_any_weapon"								"herhangi bir silah"
-	"quest_weapon_any_shotgun"								"herhangi bir pompalı tüfek"
-	"quest_weapon_any_smg"									"herhangi bir hafif makineli silah"
-	"quest_weapon_ssg08_or_mag7"							"SSG 08 veya MAG-7"
-	"quest_weapon_awp_or_p90"								"AWP veya P90"
-	"quest_weapon_unique_pistol"							"Farklı Tabancalar"
-	"quest_presence_heavy"									"<br><br><b>DİKKAT</b>: Bölgede <i>ağır</i> direnişe hazır olun!"
-
-	"quest_guardian_cantbuy"		"<i>Bu görevde satın alım yapılamaz.</i>"
-	"quest_guardian_maxmoneylimit"		"<i>Bu görevde maksimum para sınırlıdır.</i>"
-	"quest_guardian_killrewardsonly" 	"<i>Sadece leş ödüllerinden para kazanılabilir.</i>"
-	"quest_guardian_moneyreset" 	"<i>Görev başarısızlığı halinde para sıfırlanır.</i>"
-	"quest_guardian_heavyarmor" 	"<i>Ağır Saldırı Zırhı kullanılabilir.</i>"
-	"quest_guardian_noarmor" 	"<i>Zırh kullanılamaz.</i>"
-	"quest_guardian_heavyarmorresetmoney" 	"<i>Ağır Saldırı Zırhı kullanılabilir. Görev başarısızlığı halinde para sıfırlanacaktır.</i>"
-	 //"quest_guardian_maxmoney_16000"		"$16000"
-	 //"quest_guardian_maxmoney_10000"		"$10000"
-	 //"quest_guardian_maxmoney_6000"			"$6000"
-	 //"quest_guardian_maxmoney_3200"			"$3200"
-	 //"quest_guardian_maxmoney_0"			"$0"
-
-	// "Get [headshot] kills: [unscoped] [AWP]"
-	// Double spaces will automatically be removed.
-	"guardian_mission_type_kills"				"Düşman öldür: {s:weapon}"
-	"guardian_mission_type_headshots"			"Kafadan vuruş yap: {s:weapon}"
-	"guardian_mission_type_unscoped"			"{s:weapon} ile dürbünsüz düşman öldür"
-	"guardian_mission_type_enemy_weapon"		"Düşmanın {s:weapon} silahıyla düşman öldür"
-	"guardian_mission_type_enemy_airborne"		"{s:weapon} ile havadayken düşman öldür"
-	"guardian_mission_type_flashbang"			"Kör edilmiş düşmanları öldür"
-	"guardian_mission_type_ct_weapons"			"Anti-Terörist silahlarıyla düşman öldür"
-
-//	bonus tokens
-
-	  "quest_bonus_headshot"							"kafadan vuruşsa"
-	  "quest_bonus_zoomed"								"dürbün açıksa"
-  	  "quest_bonus_not_zoomed"							"dürbün kapalıysa"
-	  "quest_bonus_chickens"							"hedef bir tavuksa"
-
-	  "quest_bonus_taser"								"Zeus x27 ile yapılırsa"
-	  "quest_bonus_bomb_planted"						"bomba kuruluysa"
-	  "quest_bonus_melee"								"bir yakın dövüş silahı ile yapılırsa"	  
-
-
-
-	  "quest_bonus_killstreak_2"						"art arda 2 veya daha fazla düşman öldürmüşsen"
-	  "quest_bonus_killstreak_3"						"art arda 3 veya daha fazla düşman öldürmüşsen"
-
-	  "quest_bonus_chickenstreak_2"						"art arda 2 veya daha fazla tavuk öldürmüşsen"
-	  "quest_bonus_chickenstreak_3"						"art arda 3 veya daha fazla tavuk öldürmüşsen"
-
-	  "quest_bonus_borrowed_gun"						"başka birisinin silahını kullanıyorsan"
-	  "quest_bonus_borrowed_gun_enemy"					"bir düşmanın silahını kullanıyorsan"
-	  "quest_bonus_borrowed_gun_own"					"hedefin kendi silahını kullanıyorsan"
-		"quest_bonus_victim_rescuing"					"hedef bir rehineyi kurtarıyorsa"
-		
-	  "quest_bonus_bulletcount_1"						"raunttaki ilk atışınla başarmışsan"
-		
-	  "quest_bonus_totalrounds_2"						"ilk 2 raunt içerisindeyse"
-	  "quest_bonus_totalrounds_3"						"ilk 3 raunt içerisindeyse"
-	  "quest_bonus_totalrounds_4"						"ilk 4 raunt içerisindeyse"
-	  "quest_bonus_totalrounds_5"						"ilk 5 raunt içerisindeyse"
-
-  	  "quest_bonus_weapon_elite"						"Çift Berettalar ile öldürülürse"
-	  "quest_bonus_weapon_ssg08"						"SSG08 ile öldürülürse"
-	  "quest_bonus_weapon_revolver"						"R8 Revolver ile öldürülürse"
-	  "quest_bonus_weapon_glock_hkp2000_usp_silencer"	"P2000, USP-S veya Glock-18 ile öldürülürse"
-
-		"quest_bonus_set_dust"							"silah Dust Koleksiyonu'ndan ise"
-		"quest_bonus_set_aztec"							"silah Aztec Koleksiyonu'ndan ise"
-		"quest_bonus_set_vertigo"						"silah Vertigo Koleksiyonu'ndan ise"
-		"quest_bonus_set_inferno"						"silah Inferno Koleksiyonu'ndan ise"
-		"quest_bonus_set_militia"						"silah Militia Koleksiyonu'ndan ise"
-		"quest_bonus_set_nuke"							"silah Nuke Koleksiyonu'ndan ise"
-		"quest_bonus_set_office"						"silah Office Koleksiyonu'ndan ise"
-		"quest_bonus_set_assault"						"silah Assault Koleksiyonu'ndan ise"
-		"quest_bonus_set_dust_2"						"silah Dust 2 Koleksiyonu'ndan ise"
-		"quest_bonus_set_train"							"silah Train Koleksiyonu'ndan ise"
-		"quest_bonus_set_mirage"						"silah Mirage Koleksiyonu'ndan ise"
-		"quest_bonus_set_italy"							"silah Italy Koleksiyonu'ndan ise"
-		"quest_bonus_set_lake"							"silah Lake Koleksiyonu'ndan ise"
-		"quest_bonus_set_safehouse"						"silah Safehouse Koleksiyonu'ndan ise"
-		"quest_bonus_set_esports"						"silah eSports 2013 Koleksiyonu'ndan ise"
-		"quest_bonus_set_weapons_i"						"silah Silah Anlaşması Koleksiyonu'ndan ise"
-		"quest_bonus_set_bravo_i"						"silah Bravo Koleksiyonu'ndan ise"
-		"quest_bonus_set_bravo_ii"						"silah Alfa Koleksiyonu'ndan ise"
-		"quest_bonus_set_weapons_ii"					"silah Silah Anlaşması 2 Koleksiyonu'ndan ise"
-		"quest_bonus_set_esports_ii"					"silah eSports 2013 Kış Koleksiyonu'ndan ise"
-		"quest_bonus_set_esports_2014_summer"			"silah eSports 2014 Yaz Koleksiyonu'ndan ise"
-		"quest_bonus_set_community_1"					"silah Kış Saldırısı Koleksiyonu'ndan ise"
-		"quest_bonus_set_weapons_iii"					"silah Silah Anlaşması 3 Koleksiyonu'ndan ise"
-		"quest_bonus_set_community_2"					"silah Anka Koleksiyonu'ndan ise"
-		"quest_bonus_set_community_3"					"silah Avcı Koleksiyonu'ndan ise"
-		"quest_bonus_set_community_4"					"silah Firar Koleksiyonu'ndan ise"
-		"quest_bonus_set_community_5"					"silah Öncü Koleksiyonu'ndan ise"
-		"quest_bonus_set_community_6"					"silah Kroma Koleksiyonu'ndan ise"
-		"quest_bonus_set_community_7"					"silah Kroma 2 Koleksiyonu'ndan ise"
-		"quest_bonus_set_community_11"					"Yaban Ateşi Koleksiyonundan bir silah ile öldürülürse"
-		"quest_bonus_set_bank"							"silah Bank Koleksiyonu'ndan ise"
-		"quest_bonus_set_baggage"						"silah Baggage Koleksiyonu'ndan ise"
-		"quest_bonus_set_cobblestone"					"silah Cobblestone Koleksiyonu'ndan ise"
-		"quest_bonus_set_overpass"						"silah Overpass Koleksiyonu'ndan ise"
-		"quest_bonus_set_cache"							"silah Cache Koleksiyonu'ndan ise"
-		"quest_bonus_set_kimono"						"Doğan Güneş Koleksiyonundan bir silah ile öldürülürse"
-
-		"quest_bonus_cs_assault"						"harita Assault ise"
-		"quest_bonus_cs_italy"							"harita Italy ise"
-		"quest_bonus_cs_militia"						"harita Militia ise"
-		"quest_bonus_cs_office"							"harita Office ise"
-		"quest_bonus_de_aztec"							"harita Aztec ise"
-		"quest_bonus_de_dust"							"harita Dust ise"
-		"quest_bonus_de_dust2"							"harita Dust II ise"
-		"quest_bonus_de_mirage"							"harita Mirage ise"
-		"quest_bonus_de_overpass"						"harita Overpass ise"
-		"quest_bonus_de_cbble"							"harita Cobblestone ise"
-		"quest_bonus_de_train"							"harita Train ise"		
-		"quest_bonus_de_inferno"						"harita Inferno ise"
-		"quest_bonus_de_nuke"							"harita Nuke ise"
-		"quest_bonus_de_shorttrain"						"harita Shorttrain ise"
-		"quest_bonus_de_shortdust"						"harita Shortdust ise"
-		"quest_bonus_de_vertigo"						"harita Vertigo ise"
-		"quest_bonus_de_balkan"							"harita Balkan ise"
-		"quest_bonus_ar_baggage"						"harita Baggage ise"
-		"quest_bonus_ar_monastery"						"harita Monastery ise"
-		"quest_bonus_ar_shoots"							"harita Shoots ise"
-		"quest_bonus_de_embassy"						"harita Embassy ise"
-		"quest_bonus_de_bank"							"harita Bank ise"
-		"quest_bonus_de_lake"							"harita Lake ise"
-		"quest_bonus_de_depot"							"harita Depot ise"
-		"quest_bonus_de_safehouse"						"harita Safehouse ise"
-		"quest_bonus_de_sugarcane"						"harita Sugarcane ise"
-		"quest_bonus_de_stmarc"							"harita St. Marc ise"
-		"quest_bonus_cs_museum"							"harita Museum ise"
-		"quest_bonus_cs_thunder"						"harita Thunder ise"
-		"quest_bonus_de_favela"							"harita Favela ise"
-		"quest_bonus_cs_downtown"						"harita Downtown ise"
-		"quest_bonus_de_seaside"						"harita Seaside ise"
-		"quest_bonus_de_library"						"harita Library ise"
-		"quest_bonus_cs_motel"							"harita Motel ise"
-		"quest_bonus_de_cache"							"harita Cache ise"
-		"quest_bonus_de_ali"							"harita Ali ise"
-		"quest_bonus_de_ruins"							"harita Ruins ise"
-		"quest_bonus_de_ruby"							"harita Ruby'yken"
-		"quest_bonus_de_chinatown"						"harita Chinatown ise"
-		"quest_bonus_de_gwalior"						"harita Gwalior ise"
-		"quest_bonus_cs_agency"							"harita Agency ise"
-		"quest_bonus_cs_siege"							"harita Siege ise"
-		"quest_bonus_de_castle"							"harita Castle ise"
-		"quest_bonus_de_overgrown"						"harita Overgrown ise"
-		"quest_bonus_de_blackgold"						"harita Black Gold ise"
-		"quest_bonus_cs_rush"							"harita Rush ise"
-		"quest_bonus_de_mist"							"harita Mist ise"
-		"quest_bonus_cs_insertion"						"harita Insertion ise"
-
-		"quest_bonus_cs_workout"						"harita Workout ise"
-		"quest_bonus_cs_backalley"						"harita Back Alley ise"
-		"quest_bonus_de_marquis"						"harita Marquis ise"
-		"quest_bonus_de_facade"							"harita Facade ise"
-		"quest_bonus_de_season"							"harita Season ise"
-		"quest_bonus_de_bazaar"							"harita Bazaar ise"
-		"quest_bonus_de_santorini"						"harita Santorini iken"
-
-		"quest_bonus_de_subzero"						"harita Subzero ise"
-		"quest_bonus_de_biome"							"harita Biome ise"
-
-
-
-
-// OperationalPoints
-
-		"Quest_OperationalPoints_Template"				"Mücadele Ödülü: %s1"
-
-		"Quest_OperationalPoints_1"					"★"
-		"Quest_OperationalPoints_2"					"★★"
-		"Quest_OperationalPoints_3"					"<font color=\"#ff0000\">★★★★</font>"
-
-// Hud Message
-
-	 "Quest_ProgressMadeMessage1"								"Maç sonunda kazanılacak görev puanı: +%s1."
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -34373,7 +33136,7 @@ Bu çıkartma, forZe eSports için Berlin 2019'da oynayan profesyonel oyuncu And
 // COMMUNITY_34
 
 		"PaintKit_usp_field_snake"						"Bu özel boya tasarımı, gezin altında kanatlı bir imha aygıtı ve kovan atma boşluğunun yanında \"027\" sayısını içeriyor.\n\n<i>Hafif saha çalışması</i>"
-		"PaintKit_usp_field_snake_Tag"					"027"
+		"PaintKit_usp_field_snake_Tag"					"27"
 
 		"PaintKit_deagle_calligraff"					"Desert Eagle'ın sürgüsü gümüş renginde boya kullanılarak kaligrafi kalemiyle süslenmiştir.\n\n<i>Böyle şeyler zaman alır</i>"
 		"PaintKit_deagle_calligraff_Tag"				"Kaligrafiti"
@@ -35293,7 +34056,7 @@ Bu çıkartma, forZe eSports için Berlin 2019'da oynayan profesyonel oyuncu And
 		"Store_TotalSubtextB"	"Tüm eşyalar satın alma işleminden sonra envanterine eklenecektir"
 		"Store_Remove"			"KALDIR"
 		"Store_CartIsEmpty"		"Alışveriş sepetinizde eşya bulunmamaktadır."
-		"Store_Wallet"			"Steam Hesap Bakiyesi: %s1$ (alışverişten sonra kalacak bakiye: %s2$)"
+		"Store_Wallet"			"Steam Hesap Bakiyesi: $%s1 (alışverişten sonra kalacak bakiye: $%s2)"
 		"Store_Wallet_EmptyCart" "Steam Hesap Bakiyesi: $%s1"
 		"Store_FeaturedItem"	"GÖZDE EŞYA!"
 		"Store_PreviewItem"		"ÖN İZLEME"
@@ -35995,8 +34758,8 @@ Bu çıkartma, forZe eSports için Berlin 2019'da oynayan profesyonel oyuncu And
 		"Workshop_created" "Oluşturulma Tarihi"
 		"Workshop_size" "Boyut"
 		"Workshop_View" "Atölye'de Görüntüle"
-		"Workshop_Allow" "İzin Ver"
-		"Workshop_Deny" "Reddet"
+		"Workshop_Allow" "İndir"
+		"Workshop_Deny" "İptal Et"
 
 		"SFUI_Workshop_Desc_Pw"				"Abone olduğunuz atölye haritaları burada listelenir. Bir haritayı çalıştıran en iyi topluluk sunucusunu bulmak için Topluluk Hızlı Oyun özelliğini kullanın."
 		"SFUI_Workshop_Desc_Sp_Pw"			"Abone olduğunuz atölye haritaları burada listelenir. Bu haritaları yerel oyunda botlar ile deneyebilirsiniz."
@@ -36286,12 +35049,6 @@ Bu çıkartma, forZe eSports için Berlin 2019'da oynayan profesyonel oyuncu And
 		"SFUI_Store_Limited_Bid_Tagline"			"Son Şans"
 		"SFUI_Store_Available_Offers"               "Tekliflerin Geçerlilik Süresi:"
 		"SFUI_Store_Preview"                        "Ön İzle"
-
-		"SFUI_Store_Timer_Week:p"                   "%s1 Hafta#|#%s1 Hafta"
-		"SFUI_Store_Timer_Day:p"                    "%s1 Gün#|#%s1 Gün"
-		"SFUI_Store_Timer_Hour:p"                   "%s1 Saat#|#%s1 Saat"
-		"SFUI_Store_Timer_Min:p"                    "%s1 Dakika#|#%s1 Dakika"
-		"SFUI_Store_Timer_Sec:p"                    "%s1 Saniye#|#%s1 Saniye"
 
 		"SFUI_Store_Timer_Week:f"                 	"{f:0:value, plural, one{{f:0:value} Hafta} other{{f:0:value} Hafta}}"
 		"SFUI_Store_Timer_Day:f"                    "{f:0:value, plural, one{{f:0:value} Gün} other{{f:0:value} Gün}}"
@@ -38574,7 +37331,7 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"SFUI_PlayerDetails_Loading"				"Övgüler Kontrol Ediliyor"
 		"SFUI_PlayerDetails_Loading_Failed"			"Övgüler yüklenemedi, daha sonra tekrar dene"
 		"SFUI_PlayerDetails_Previously_Submitted"	"Bu oyuncuya daha önce gönderilen övgüler"
-		"SFUI_PlayerDetails_Commendations_Left:p"		"Bugün %s1 oyuncuya daha övgüde bulunabilirsin#|#Bugün %s1 oyuncuya daha övgüde bulunabilirsin"
+		"SFUI_PlayerDetails_Commendations_Left:f"	"Bugün {num_players} {num_players, plural, other{oyuncuyu}} daha övebilirsin."
 		"SFUI_PlayerDetails_NoCommendations_Left"   "Çok fazla övgü gönderdin, yarın tekrar dene"
 		"SFUI_PlayerDetails_Updating_Previous_Commendation"   "Daha önce gönderdiğin övgüyü değiştiriyorsun"
 		"SFUI_PlayerDetails_New_Commendation"   "Yeni bir övgü gönderiyorsun"
@@ -38933,7 +37690,7 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"SFUIHUD_InfoPanel_Coop_Thumb2Ready"					"Flash bellek 2 hazır!"
 		"SFUIHUD_InfoPanel_Coop_Thumb2Retrieved"				"Virüs flash belleği alındı!"	
 
-		"FullPlayerNameOrder_Default"						"%modifier% %clantag% %controller_name% (%current_controller_of_my_pawn%)"
+		"FullPlayerNameOrder_Default:f"						"{modifier} {clantag} {controller_name} ({current_controller_of_my_pawn})"
 "SFUIHUD_Spectate_Equipment"	"EKİPMAN DEĞERİ"
 		"SFUIHUD_Spectate_TeamMoney"	"TAKIM PARASI"
 		"SFUIHUD_Spectate_TeamEQValue"	"TAKIM EKİPMAN DEĞERİ"
@@ -40318,8 +39075,8 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"SFUI_Settings_MiniScoreboardPlayerCount_Tooltip"	"Rauntların aktif kısmı sırasında mini skor tablosunda oyuncu avatarlarının yerini takımdaki oyucu sayısı sayacı alacak."
 
 
-		"Post_Round_Damage_Report_Given:p"		" • Verilen Hasar → %s3: %s1 vuruşta %s2#|# • Verilen Hasar → %s3: %s1 vuruşta %s2"
-		"Post_Round_Damage_Report_Taken:p"		" • Alınan Hasar ← %s3: %s1 vuruşta %s2#|# • Alınan Hasar ← %s3: %s1 vuruşta %s2"
+		"Post_Round_Damage_Report_Given:f"		" • Verilen Hasar → {player_name}: {num_hits} vuruşta {f:0:damage}"
+		"Post_Round_Damage_Report_Taken:f"		" • Alınan Hasar← {player_name}: {num_hits} vuruşta {f:0:damage}"
 
 		"SFUI_TeamOverheadID"					"Takım Ekipmanını Göster"
 
@@ -40798,8 +39555,8 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 
 		"SFUI_UserAlertNoteType_1"			"%s1 sunucuları aşırı yoğunluk yaşıyor."
 		"SFUI_UserAlertNoteType_2"			"%s1 sunucuları bakımdan dolayı çevrimdışı."
-		"SFUI_UserAlertNoteType_LowPlayersR:p"	"%region% bölgesinde sadece %players% uygun oyuncu maç aratıyor.#|#%region% bölgesinde sadece %players% uygun oyuncu maç aratıyor."
-		"SFUI_UserAlertNoteType_LowPlayersY:p"	"Bölgende sadece %players% uygun oyuncu maç aratıyor.#|#Bölgende sadece %players% uygun oyuncu maç aratıyor."
+		"SFUI_UserAlertNoteType_LowPlayersR:f"	"{region} bölgesinde yalnızca {players} uygun {players, plural, other{oyuncu}} maç arıyor."
+		"SFUI_UserAlertNoteType_LowPlayersY:f"	"Bölgenizde yalnızca {players} uygun {players, plural, other{oyuncu}} maç arıyor."
 
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"Maça bağlanılamadı."
 		"SFUI_QMM_ERROR_NotLoggedIn"		"Counter-Strike eşleştirme hizmetine giriş yapılmadı."
@@ -46370,10 +45127,10 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"practicesettings_infammo_button"			"Sınırsız Mermi"
 		"practicesettings_infwarmup_tooltip"		"<b>Etkinleştirildiğinde</b>, maç kalıcı olarak ısınma modunda kalır ve botlar katılmaz."
 		"practicesettings_infwarmup_button"			"Sonsuz Isınma"
-		"practicesettings_annotations_tooltip"		"<b>Etkinleştirildiğinde</b>, açılır menüden seçilen harita rehberi yüklenir ve şu ayarlar zorunlu olarak devreye alınır: Sonsuz ısınma, sonsuz cephane ve el bombası kamerası."
-		"practicesettings_annotations_button"		"Harita Rehberini Kullan"
+		"practicesettings_annotations_tooltip"		"<b>Etkinleştirildiğinde</b>, açılır menüden seçilen harita rehberi (isteğe bağlı) yüklenir ve şu ayarlar zorunlu olarak uygulanır: Sonsuz ısınma, sınırsız mermi ve el bombası kamerası."
+		"practicesettings_annotations_button"		"Harita Rehberlerini Etkinleştir"
 		"practicesettings_annotations_workshop_tooltip" "Atölyeyi Ziyaret Et"
-		"practicesettings_annotations_dropdown_tooltip"	"Hangi harita rehberinin yükleneceğini belirtir."
+		"practicesettings_annotations_dropdown_tooltip"	"Hangi harita rehberinin (varsa) yükleneceğini belirtir."
 
 		"PlayMenuReplayNewUserTrainingButton"		"Eğitim Gününü Tekrarla"
 
@@ -46409,6 +45166,8 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 		"Workshop_annotation_ready"					"Gönderim yüklenmeye hazır."		
 		"UI_File_Filter_SupportedAnnotationFormat"	"Metin dosyaları (*.txt)"
 		"annotations_visit_workshop"				"Atölyeyi Ziyaret Et ⤤"
+		"annotations_exceed_round_limit"			"Yarının {s:rounds} raundundan sonra harita rehberlerine izin verilmez."
+
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Game Mode Desc
@@ -47313,6 +46072,1386 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 
 		"accolade_quietest"								"Ninja"
 		"accolade_quietest_desc"						"En az duyulan ayak sesi:"
+		"accolade_quietest_value"						"{s:accolade-value-string}"
+
+		"accolade_quietest_2"							"İz Sürücü"
+		"accolade_quietest_desc_2"						"Duyulan ayak sesleri:"
+
+		"accolade_pistolkills"							"Silahşor"
+		"accolade_pistolkills_desc"						"En fazla tabanca leşi:"
+		"accolade_pistolkills_value"					"{s:accolade-value-string}"
+
+		"accolade_pistolkills_2"						"Tabanca"
+		"accolade_pistolkills_desc_2"					"Tabanca leşleri:"
+
+		"accolade_firstkills"							"İlk Kâtil"
+		"accolade_firstkills_desc"						"En çok ilk leş:"
+		"accolade_firstkills_value"						"{s:accolade-value-string}"
+
+		"accolade_firstkills_2"							"Hızlı Silah Çekme Ustası"
+		"accolade_firstkills_desc_2"					"İlk leşler:"
+
+		"accolade_sniperkills"							"Keskin Nişancı"
+		"accolade_sniperkills_desc"						"En fazla keskin nişancı leşi:"
+		"accolade_sniperkills_value"					"{s:accolade-value-string}"
+
+		"accolade_sniperkills_2"						"Keskin Nişancı"
+		"accolade_sniperkills_desc_2"					"Keskin nişancı leşleri:"
+
+		"accolade_roundssurvived"						"Zor Ölen"
+		"accolade_roundssurvived_desc"					"En fazla hayatta kalınan raunt sayısı:"
+		"accolade_roundssurvived_value"					"{s:accolade-value-string}"
+
+		"accolade_roundssurvived_2"						"Hayatta Kalma Uzmanı"
+		"accolade_roundssurvived_desc_2"				"Hayatta kalınan raunt sayısı:"
+
+		"accolade_chickenskilled"						"Tavukçu Albay"
+		"accolade_chickenskilled_desc"					"En fazla katledilen tavuk:"
+		"accolade_chickenskilled_value"					"{s:accolade-value-string}"
+
+		"accolade_chickenskilled_2"						"Usta Şef"
+		"accolade_chickenskilled_desc_2"				"Katledilen tavuklar:"
+
+		"accolade_killswhileblind"						"Kör Kahraman"
+		"accolade_killswhileblind_desc"					"Körken en fazla alınan leş:"
+		"accolade_killswhileblind_value"				"{s:accolade-value-string}"
+
+		"accolade_killswhileblind_2"					"Marifetli Nişancı"
+		"accolade_killswhileblind_desc_2"				"Körken alınan leşler:"
+
+		"accolade_bombcarrierkills"						"Duvar"
+		"accolade_bombcarrierkills_desc"				"En fazla bomba taşıyıcısı leşi:"
+		"accolade_bombcarrierkills_value"				"{s:accolade-value-string}"
+
+		"accolade_bombcarrierkills_2"					"Müdahale"
+		"accolade_bombcarrierkills_desc_2"				"Bomba taşıyıcısı leşleri:"
+
+		"accolade_burndamage"							"Kundakçı"
+		"accolade_burndamage_desc"						"En fazla alev hasarı:"
+		"accolade_burndamage_value"						"{s:accolade-value-string}"
+
+		"accolade_burndamage_2"							"Alev Sever"
+		"accolade_burndamage_desc_2"					"Yakma hasarı:"
+
+		"accolade_cashspent"							"Büyük Savurgan"
+		"accolade_cashspent_desc"						"En fazla harcanan para:"
+		"accolade_cashspent_value"						"${s:accolade-value-string}"
+
+		"accolade_cashspent_2"							"Savurgan"
+		"accolade_cashspent_desc_2"						"Harcanan para:"
+
+		"accolade_uniqueweaponkills"					"Silah Üstadı"
+		"accolade_uniqueweaponkills_desc"				"En fazla özel silah leşi:"
+		"accolade_uniqueweaponkills_value"				"{s:accolade-value-string}"
+
+		"accolade_uniqueweaponkills_2"					"Silah Talimcisi"
+		"accolade_uniqueweaponkills_desc_2"				"Özel silah leşleri:"
+
+		"accolade_dinks"								"İsabet Üstadı"
+		"accolade_dinks_desc"							"En fazla kafadan vuruşlar:"
+		"accolade_dinks_value"							"{s:accolade-value-string}"
+
+		"accolade_dinks_2"								"Berber"
+		"accolade_dinks_desc_2"							"Kafadan Vuruşlar:"
+
+		"accolade_taserkills"							"Yıldırım Tanrısı"
+		"accolade_taserkills_desc"						"En fazla Zeus Leşi:"
+		"accolade_taserkills_value"						"{s:accolade-value-string}"
+
+		"accolade_taserkills_2"							"Volt Öncüsü"
+		"accolade_taserkills_desc_2"					"Zeus leşleri:"		
+
+		"accolade_knifekills"							"Bıçakçı"
+		"accolade_knifekills_desc"						"En fazla bıçak leşi:"
+		"accolade_knifekills_value"						"{s:accolade-value-string}"
+
+		"accolade_knifekills_2"							"Yakın Dövüş Kargaşası"
+		"accolade_knifekills_desc_2"					"Bıçak leşleri:"			
+
+		"accolade_gimme_01"								"Moral Desteği"
+		"accolade_gimme_02"								"Katılımcı"
+		"accolade_gimme_03"								"Yedek"
+		"accolade_gimme_04"								"Yedek Plan"
+		"accolade_gimme_05"								"Artçı Birlik"
+		"accolade_gimme_06"								"Koltuk Generali"
+		"accolade_gimme_07"								"Her Şeyin Ustası"
+		"accolade_gimme_08"								"Bilinmeyen Asker"
+		"accolade_gimme_09"								"Görünmez"
+		"accolade_gimme_10"								"Muharebede Kayıp"
+		"accolade_player_score"							"Skor: {d:score-value-int}"
+
+
+		"playercardstats_adr_title"						"RHO"
+		"playercardstats_adr_value"						"{d:playercardstats-adr}"
+
+		"playercardstats_kda_title"						"LÖA"
+		"playercardstats_kda_value"						"{d:playercardstats-kills}-{d:playercardstats-deaths}-{d:playercardstats-assists}"
+
+		"playercardstats_k_title"						"Leş"
+		"playercardstats_k_value"						"{d:playercardstats-kills}"
+
+		"playercardstats_d_title"						"Ölüm"
+		"playercardstats_d_value"						"{d:playercardstats-deaths}"
+
+		"playercardstats_a_title"						"Asist"
+		"playercardstats_a_value"						"{d:playercardstats-assists}"
+
+		"playercardstats_score_title"					"Skor"
+		"playercardstats_score_value"					"{d:playercardstats-score}"
+
+		"playercardstats_hsp_title"						"KVY"
+		"playercardstats_hsp_value"						"%{d:playercardstats-hsp}"
+
+		"playercardstats_ef_title"						"KÖR EDİLEN DÜŞMANLAR"
+		"playercardstats_ef_value"						"{d:playercardstats-ef}"
+
+		"playercardstats_ud_title"						"ARAÇ HASARI"
+		"playercardstats_ud_value"						"{d:playercardstats-ud}"
+
+		"playercardstats_gglevel_title"					"Seviye"
+		"playercardstats_gglevel_value"					"{d:playercardstats-gglevel}"
+
+		"playercardstats_kk_title"						"Bıçak Leşleri"
+		"playercardstats_kk_value"						"{d:playercardstats-knifekills}"
+
+
+		"eom-vote-for-next-map"							"Sonraki harita için oy ver"
+		
+		"eom-survival-damage-taken"						"Alınan Hasar"
+		"eom-survival-damage-given"						"Verilen Hasar"
+
+
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	STATS
+		//
+		///////////////////////////////////////////////////////////
+
+		"playerstats_mode_comp_all"			"5v5 (Hepsi)"
+		"playerstats_mode_comp_capt"		"Seçkin Rekabetçi"
+		"playerstats_mode_comp_active"		"Rekabetçi (Bomba İmha)"
+		"playerstats_mode_comp_other"		"Rekabetçi (Rehine Kurtarma)"
+		"playerstats_mode_comp_scrim"		"Hazırlık"
+		"playerstats_mode_2v2_all"			"Yoldaş (Hepsi)"
+		"playerstats_mode_2v2_active"		"Yoldaş (Aktif Görev)"
+		"playerstats_mode_2v2_other"		"Yoldaş (Rezerv Grubu)"
+
+		"playerstats_weapons"					"Silah Performansı"
+		"playerstats_heatmap"					"Isı Haritaları"
+		"playerstats_matchlister"				"Maç"
+		"playerstats_stats"						"İstatistikler"
+
+		"playerstats_matchlister_separator"		"{s:separator_title}"
+
+		"playerstats_weapon_tooltip_counts"		"Leş: {d:kills}"
+		"playerstats_weapon_tooltip_kd"			"L/Ö: {s:score}"
+
+		"playerstats_map_tooltip_win_loss_tie"	"Kazanma/Kaybetme/Beraberlik: {d:wins}/{d:losses}/{d:ties}"
+		"playerstats_map_tooltip_rndwin_rndloss"	"Raunt Kazanma-Kaybetme"
+		"playerstats_map_tooltip_round_winrate"	"Raunt Kazanma Oranı"
+		"playerstats_map_tooltip_match_winrate"	"Maç Kazanma Oranı"
+
+		"playerstats_forceretry"				"İstatistik sunucularıyla bağlantı koptu.\nYeniden bağlanmayı denemek için TAMAM'a tıklayın."
+		"playerstats_no_data"					"Seçili bu tarih aralığı ve modlar için veri yok. Seçimini değiştir veya maç yap."
+		"playerstats_link"						"Aboneliği Yönet"
+		"playerstats_link_reactivate"			"Aboneliği Yeniden Etkinleştir"
+		"playerstats_link_get"					"Abone Ol"
+
+		"playerstats_subscription_expire_warning"		"<b>Maç İstatistikleri Toplanıyor</b> - Abonelik süresi <b>bugün doluyor</b>"
+		"playerstats_subscription_renew_automatically"	"<b>Maç İstatistikleri Toplanıyor</b> - Aboneliğin {d:days} gün sonra otomatik olarak yenilenir"
+		"playerstats_subscription_renew_unknown"		"<b>Maç İstatistikleri Toplanıyor</b> - Aboneliğin bitmesine {d:days} gün kaldı"
+		"playerstats_subscription_renew_manually"		"<b>Maç İstatistikleri Toplanıyor</b> - Aboneliğinin bitmesine {d:days} kaldı, <b>aboneliğin otomatik olarak yenilenmeyecek</b>"
+		"playerstats_subscription_expired"				"<b>Abonelik Süresi Doldu</b> - Yeni maç istatistiklerini toplamak için aboneliğini yeniden etkinleştir"
+		"playerstats_subscription_not_enrolled"			"<b>Abonelik Etkin Değil</b> - Yeni maç istatistikleri toplamak için abone ol"
+		"playerstats_subscription_buy_button"			"AYLIK ABONELİĞİ ETKİNLEŞTİR\n{s:price} / AY"
+
+		"playerstats_past_14"					"Son 14 gün"
+		"playerstats_past_30"					"Son 30 gün"
+		"playerstats_past_90"					"Son 90 gün"
+		"playerstats_alltime"					"Tüm zamanlar"
+
+		"stat_best_map"							"En İyi Harita"
+		"stat_best_map_desc"					"Kazanılan raunt sayısının kaybedilen raunt sayısına oranı en yüksek olan harita"
+
+		"stat_best_weapon"						"En İyi Silah"
+
+		"stat_best_mate"						"En İyi Takım Üyesi"
+		"stat_best_mate_desc"					"Kazandığın raunt sayısının kaybettiğin raunt sayısına oranla en yüksek olmasına yardım eden takım üyesi"
+
+		"matchstat_abandoned"					"*Bu maç sona ermeden çıktın"
+
+		"playerstats_suffix_per_round"			"/r"
+		"playerstats_suffix_per_cent"			"%"
+
+		"playerstats_per_round"			"{s:value}/r"
+		"playerstats_per_cent"			"%{s:value}"
+		"playerstats_no_units"			"{s:value}"	
+
+		"playerstats_percentile"		"{s:tt_value} oranın tüm operasyon bileti sahiplerinin % {s:tt_rank} kadarından daha iyi"
+		"playerstats_percentile_subscribers"	"{s:tt_value} oranın tüm abonelerin % {s:tt_rank} kadarından daha iyi"
+
+
+		"playerstats_mapwinrate"		"Harita Kazanma Oranları"
+		"playerstats_mapwinrate_rounds"	"Raunt"
+		"playerstats_mapwinrate_matches" "Maç"
+
+		"stat_total_score"				"Skor"
+		"stat_average_score"			"Skor/raunt"
+
+		"stat_total_kills"				"Leş"
+		"stat_average_kills"			"Leş/raunt"
+
+		"stat_total_deaths"				"Ölüm"
+	//	"stat_average_deaths"			"stat_average_deaths"		
+
+		"stat_total_health_removed"		"Hasar"	
+		"stat_average_health_removed"	"RHO"
+
+		"stat_average_kd"				"Leş/ölüm"
+		"stat_average_kd_short"			"L/Ö"
+
+		"stat_average_hsp"				"stat_average_hsp"
+
+		"stat_total_2k"					"2L"
+		"stat_total_3k"					"3L"
+		"stat_total_4k"					"4L"
+
+		"stat_grenades"					"El Bombası"
+		"stat_total_grenade"			"Fırlatılan"
+		"stat_average_grenade"			"Başarı"
+		"stat_grenades_desc"			"En az 1 düşmana hasar vermiş el bombası atışlarının yüzdesi"			
+
+		"stat_flash"					"Flaş"
+		"stat_total_flash"				"Fırlatılan"
+		"stat_average_flash"			"Başarı"
+		"stat_flash_desc"				"En az 1 düşmanı kör etmiş flaş bombası atışlarının yüzdesi"
+
+		"stat_entry"					"Giriş Leşleri"
+		"stat_average_entrykd"			"GL/Ö"
+		"stat_total_entry_attempts"		"Toplam"
+		"stat_entry_desc"				"İlk leşlerin ilk ölümlere oranı"
+
+		"stat_total_wins"				"Galibiyet"
+		"stat_total_losses"				"Mağlubiyet"
+		"stat_total_ties"				"Berabere"
+
+		"stat_total_rounds_played"		"Raunt"
+
+		"stat_1vx"						"1vX"
+
+		"stat_1v1"						"1v1"
+
+		"stat_average_1v1"				"Başarı"				
+		"stat_total_1v1_attempts"		"Fırsat"		
+
+		"stat_1v2"						"1v2"
+
+		"stat_average_1v2"				"Başarı"			
+		"stat_total_1v2_attempts"		"Fırsat"		
+
+		"num_matches"					"Oynanan Maç"
+
+		"playerstat_name_0"				"Skor"
+		"playerstat_name_0_long"		"Raunt Başına Skor"
+		"playerstat_name_0_desc"		"Raunt başına skor: {s:value}\nToplam skor: {d:total}"
+
+
+		"playerstat_name_1"				"Leş"
+		"playerstat_name_1_long"		"Raunt Başına Leş"
+		"playerstat_name_1_desc"		"Raunt başına ortalama leş: {s:value}\n Toplam leş: {d:total}"
+
+		"playerstat_name_2"				"HSR"
+		"playerstat_name_2_long"		"Raunt Başına Hasar"
+		"playerstat_name_2_desc"		"Raunt başına ortalama hasar: {s:value}\n Toplam hasar: {d:total}"	
+
+		"playerstat_name_2.1"			"Hasar"
+		"playerstat_name_2.5"			"RHO"		
+
+		"playerstat_name_3"				"L/Ö"
+		"playerstat_name_3_long"		"Ölüm Başına Leş"
+		"playerstat_name_3_desc"		"Leşlerin ölüme oranı: {s:value}"		
+
+		"playerstat_name_4"				"KV"
+		"playerstat_name_4_long"		"Kafadan Vuruş Leş Oranı"
+		"playerstat_name_4_desc"		"Kafadan vuruş leşlerinin toplam leşlere oranı: {s:value}\nToplam kafadan vuruş leşleri: {d:total}"	
+
+		"playerstat_name_4.5"			"KV%"		
+
+		"playerstat_name_5"				"2L"
+		"playerstat_name_5_long"		"2 Leş"
+		"playerstat_name_5_desc"		"Toplam 2 leşli rauntlar: {s:value}"	
+
+		"playerstat_name_6"				"3L"
+		"playerstat_name_6_long"		"3 Leş"
+		"playerstat_name_6_desc"		"Toplam 3 leşli rauntlar: {s:value}"		
+
+		"playerstat_name_7"				"4L"
+		"playerstat_name_7_long"		"4 Leş"
+		"playerstat_name_7_desc"		"Toplam 4 leşli rauntlar: {s:value}"
+
+		"playerstat_name_7.5"			"Çoklu Leş"
+	
+		"playerstat_name_8"				"EB"
+		"playerstat_name_8_long"		"Etkili El Bombaları"
+		"playerstat_name_8_desc"		"En az 1 düşmana hasar vermiş el bombası atışlarının yüzdesi: {s:value}\nEn az 1 düşmana hasar vermiş toplam el bombası atışları: {d:total}"			
+
+		"playerstat_name_9"				"FB"
+		"playerstat_name_9_long"		"Etkili Flaş Bombaları"		
+		"playerstat_name_9_desc"		"En az 1 düşmanı kör etmiş flaş bombası atışlarının yüzdesi: {s:value}\nEn az 1 düşmanı kör etmiş flaş bombası atışları: {d:total}"
+
+		"playerstat_name_10"			"1v1"
+		"playerstat_name_10_long"		"1v1 Karşılaşmaları"
+		"playerstat_name_10_desc"		"1v1 kazanma yüzdesi: {s:value}\nKazanılan toplam 1v1: {d:total}"	
+
+		"playerstat_name_11"			"1v2"
+		"playerstat_name_11_long"		"1v2 Karşılaşmaları"
+		"playerstat_name_11_desc"		"1v2 kazanma yüzdesi: {s:value}\nKazanılan toplam 1v2: {d:total}"	
+
+		"playerstat_name_12"			"GL"
+		"playerstat_name_12_long"		"Giriş Leşi"
+		"playerstat_name_12_desc"		"İlk leşlerin ilk ölümlere olan oran: {s:value}\nToplam ilk leş: {d:total}"
+
+		"stats_graph_button_0"			"Skor/r"
+		"stats_graph_button_1"			"Leş/r"
+		"stats_graph_button_2"			"RHO"
+		"stats_graph_button_3"			"L/Ö"
+		"stats_graph_button_4"			"KV%"
+
+		"ris_score"								"Raunt Skoru"
+		"ris_t"									"T"
+		"ris_ct"								"AT"
+		"ris_team-title"						"Takımının Kazanma Şansı"
+		"ris_wins"								"{s:ris_team} Galibiyeti!"
+
+		"ris_win"								"galibiyet"
+		"ris_loss"							"mağlubiyet"
+
+		"ris_hits"								"{s:num_hits} vuruşta"
+		
+		"prdr_health_removed"					"{d:health_removed}({d:num_hits} atış)"
+		"prdr_return_health_removed"				"{d:return_health_removed}({d:return_num_hits} atış)"
+
+		"season_stat_title_wins"		"GALİBİYET"
+        "season_stat_title_ties"		"BERABERE"
+        "season_stat_title_losses"		"MAĞLUBİYET"
+        "season_stat_title_rounds"		"RAUNT"
+        "season_stat_title_kills"		"LEŞ"
+        "season_stat_title_headshots"	"KAFADAN VURUŞ"
+		"season_stat_title_hs_percent"	"KV%"
+        "season_stat_title_assists"		"ASİST"
+        "season_stat_title_deaths"		"ÖLÜM"
+        "season_stat_title_mvps"		"EDO"
+        "season_stat_title_rounds_3k"	"3L"
+        "season_stat_title_rounds_4k"	"4L"
+        "season_stat_title_rounds_5k"	"5L"
+		"season_stat_title_kpr"			"RBL"
+		"season_stat_title_kd"			"L/Ö"
+		"season_stat_title_best_map"	"EN İYİ HARİTA"
+		"season_stat_title_win_percent"	"GLB. ORANI"
+		"season_stat_title_matches_played"	"MAÇ"
+		"season_stat_title_achieved_week"	"ŞU HAFTADA ELDE EDİLEN EN YÜKSEK RÜTBE:"
+		"season_stat_value_kd"				"{s:kdratio}"
+		"season_stat_value_win_percent"		"%{s:win-percent}"
+		"season_stat_value_hs_percent"		"%{s:hs-percent}"
+		"season_section_rank"				"YÜKSEK SKOR"
+		"season_section_season_stats"		"SEZON İSTATİSTİKLERİ"
+		"season_section_rank_history"		"SIRALAMA GEÇMİŞİ"
+		"season_section_rank_activity"		"OYNANAN MAÇ"
+		"season_section_rank_map_stats"		"HARİTA İSTATİSTİKLERİ"
+		"season_section_rank_map_wins_graph"	"TOPLAM HARİTA GALİBİYETİ"
+		"season_section_graph_x_axis_label_min"		"{d:week_min}. HAFTA"
+		"season_section_graph_x_axis_label_max"		"{d:week_max}. HAFTA"
+		"tooltip-no-map-stats"			"Bu harita için istatistik mevcut değil"
+		"tooltip-season-rank-week-idx"		"{s:week-id}. HAFTA"
+		"tooltip-season-rank-week-name"		"{s:week-name}"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	WIN PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_winpanel_mvp_award"				"EDO"
+		"Panorama_winpanel_mvp_award_kills"			"EDO"
+		"Panorama_winpanel_mvp_award_ace"			"EDO: Herkesi öldürdüğü için"
+		"Panorama_winpanel_mvp_award_bombplant"		"EDO: Bombayı kurduğu için"
+		"Panorama_winpanel_mvp_award_bombdefuse"	"EDO: Bombayı imha ettiği için"
+		"Panorama_winpanel_mvp_award_rescue"		"EDO: Bir rehine kurtardığı için"
+		"Panorama_winpanel_mvp_award_score"			"EDO: En yüksek skoru elde ettiği için"
+		"Panorama_winpanel_mvp_award_inferno"		"EDO: Ateşle çok yüksek hasar verme"
+		"Panorama_winpanel_mvp_award_blast"			"EDO: Bombayla çok yüksek hasar verme"
+		"Panorama_winpanel_mvp_award_bombdefuse_clutch"	"EDO: Takımında hayatta kalan tek oyuncuyken bombayı imha etme"
+		"Panorama_winpanel_mvp_award_bombplant_clutch"	"EDO: Bombayı kurduğu ve savunduğu için"
+		"Panorama_winpanel_mvp_award_gungame"		"EDO"
+		"Panorama_winpanel_mvp_winner"				"EDO"
+		"Panorama_winpanel_mvp_award_kills_three"	"EDO: En fazla leş (3'lü)"
+		"Panorama_winpanel_mvp_award_kills_four"	"EDO: En fazla leş (4'lü)"
+
+		"Panorama_WinPanel_rank_awarded_multi"	"{d:rank_increase} yeni rütbe kazandın!"
+
+		"Panorama_WinPanel_rank_name_string"	"{s:current_best_cat} <font color='#CCCCCC'>({s:current_rank_cat})</font>"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	WATCH PANEL
+		//
+		///////////////////////////////////////////////////////////
+		
+		"WatchMenu_Watch"					"İzle"
+		"WatchMenu_Tournament_Versus"		"vs"
+		"WatchMenu_Outcome_Tied"			"Berabere"
+		"WatchMenu_Outcome_Abandon"			"Terk Edildi"
+		"WatchMenu_Outcome_Won"				"<img src='file://{images}/icons/ui/trophy.svg' width='15' height='15'/> Kazanıldı"
+		"WatchMenu_Outcome_Lost"			"Kaybedildi"
+		"WatchMenu_Expand_Match_Menu"		"Daha Fazla"
+		"WatchMenu_Get_Share_Link"			"Maç paylaşım kodunu kopyala"
+		"WatchMenu_Share_Link_Copied"		"Bağlantı panoya kopyalandı"
+		"WatchMenu_Download_Demo"			"İzlemek için demoyu indir"
+		"WatchMenu_Watch_Live"				"Canlı İzle"
+		"WatchMenu_Watch_Highlights"		"Önemli Anları Seyret"
+		"WatchMenu_Watch_Lowlights"			"Kötü Anları Seyret"
+		"WatchMenu_Watch_Highlights_Player_Selected"	"{s:playerNameTitle} oyuncusunun önemli anlarını izle"
+		"WatchMenu_Watch_Lowlights_Player_Selected"	"{s:playerNameTitle} oyuncusuna ait kötü anları seyret"
+		"WatchMenu_Delete"					"Yerel demo dosyalarını sil"
+		"WatchMenu_Downloading"				"İndiriliyor"
+		"WatchMenu_Info_Download_Failed"	"İndirme Tamamlanamadı"
+		"WatchMenu_Info_Download_Failed_Retry" "Demo dosyalarının yeniden indirilmesi denensin mi?"
+		"WatchMenu_Info_Download_Failed_Info" "İndirme tamamlanamadı. Skor tablosu bilgisi mevcut ancak maçı izleyemezsiniz."
+		"WatchMenu_Download_Disabled_Hint"	"Maç demosunun süresi doldu ve artık indirilemez."
+		"WatchMenu_Tournament_BulletPoint"	"<ul>
+<li>Grup ve Eleme etaplarında tahmin yapabilmek için takım çıkartmalarını kullan ve maçları izle.</li>
+<li>Her doğru bir tahminde bulunduğun zaman, Steam profilinde ve Counter-Strike avatarında gösterilebilinen Takım Seçim Ödülüne yönelik puanlar kazanırsın.</li>
+<li>Grup Etabı başlayana kadar Grup Etabı için tahminde bulunabilirsin.</li>
+<li>Elemeler başlayana kadar Elemeler için tahminde bulunabilirsin.</li>
+</ul>"
+		"WatchMenu_Viewer"				"İzleyici"
+		"WatchMenu_Viewers"				"İzleyici"
+		"WatchMenu_Viewers_dv:f"		"{spectatorCount, plural, one{{d:spectatorCount} İzleyici} other{{d:spectatorCount} İzleyici}}"
+		"WatchMenu_FirstHalf"			"İlk Yarı"
+		"WatchMenu_SecondHalf"			"İkinci Yarı"
+		"WatchMenu_Overtime"			"Uzatma Süresi"
+		"MatchInfo_FirstRound"			"1. Raunt"
+		"MatchInfo_Halftime"			"Devre Arası"
+		"MatchInfo_Overtime"			"Uzatma Süresi"
+		"MatchInfo_RoundDataTitle"      "{s:playerNameTitle} oyuncusuna ait raunt performansı"
+		"MatchInfo_Date"				"{s:day} {s:month}"
+		
+		"MatchInfo_Date_Tournament_Month_Short_8"	"Eki"		
+		"MatchInfo_Date_Tournament_Month_Final_Short_8"	"Kas"
+		"MatchInfo_Date_Tournament_Month_Short_9"	"Mar"
+		"MatchInfo_Date_Tournament_Month_Short_9_1"	"Nis"
+		"MatchInfo_Date_Tournament_Month_Final_Short_9"	"Nis"
+		"MatchInfo_Date_Tournament_Month_Short_10"	"Tem"
+		"MatchInfo_Date_Tournament_Month_Short_10_1"	"Tem"
+		"MatchInfo_Date_Tournament_Month_Final_Short_10"	"Tem"
+		"MatchInfo_Date_Tournament_Month_Short_11"	"Oca"
+		"MatchInfo_Date_Tournament_Month_Short_11_1"	"Oca"
+		"MatchInfo_Date_Tournament_Month_Final_Short_11"	"Oca"
+		"MatchInfo_Date_Tournament_Month_Short_12"	"Tem"
+		"MatchInfo_Date_Tournament_Month_Short_12_1"	"Tem"
+		"MatchInfo_Date_Tournament_Month_Final_Short_12"	"Tem"
+		"WatchMenu_PickEm_ComingSoon"	"Geçmiş Seçim Mücadelesi ve fantezi oyunları vitrini pek yakında."
+		"WatchMenu_ViewerCount"	"{s:numberOfViewers} izleyici {s:channel} kanalını izliyor"
+		"Matchlist_Team_Selection"	"Bütün Takımlar"
+
+
+		"pickem_timer_inactive"		"Şu anda seçim yapılamaz"
+		"pickem_timer"				"Seçim yapmak için kalan süre: {s:time}"
+		"pickem_timer_upsell"		"Tahminlerini yapmak için <b>{s:time}</b> kadar süren kaldı. Seçim Mücadelesi'ne katılmak ve hatıra paketi jetonlarını kazanmak için hemen İzleyici Bileti'ni al."
+		"pickem_timer_locked"		"Seçimler kilitlenmiştir"
+		"pickem_points_earned" 		"Puan Kazanıldı"
+		"pickem_correct_pick" 		"Doğru Seçim"
+		"pickem_points_needed_next_level" 	"<b>{s:level}</b> için <b>{d:points}</b> {s:plural} daha kazanın"
+		"pickem_points_result" 		"<b>{s:result-level}</b> Seçim Mücadelesi kupasını kazandın"
+		"pickem_points_result_bronze" "<b>Bronz</b> Seçim ödülünü kazandın"
+		"pickem_points_result_silver" "<b>Gümüş</b> Seçim ödülünü kazandın"
+		"pickem_points_result_gold" "<b>Altın</b> Seçim ödülünü kazandın"
+		"pickem_point"				"puan"
+		"pickem_points"				"puan"
+		"pickem_level_bronze"		"Bronz"
+		"pickem_level_silver"		"Gümüş"
+		"pickem_level_gold"			"Altın"
+		"pickem_group_pick_worth"	"Her doğru seçim  <b>{d:points} {s:plural}</b> kazandırır"
+		"pickem_pick_correct_points_earned"	"+ <b>{d:points}</b> {s:plural}"
+		"pickem_pick_drag_hint" 	"Takımı buraya sürükle"
+		"pickem_pick_undefeated"	"<b>Namağlup tur atlayacak</b> bir takım <b>seçin</b>"
+		"pickem_pick_eliminated"	"<b>Bir maç kazanamadan elenecek</b> bir takım <b>seçin</b>"
+		"pickem_get_items" 			"Çıkartmaları Edinin"
+		"pickem_get_items_tooltip" 	"Seçimlerinizi güncellemek için aşağıdaki çıkartmalara ihtiyacınız var: <br><br>"
+		"pickem_place_picks" 		"Seçimleri Güncelle"
+		"pickem_confirm_picks" 		"Seçimlerinizi Onaylayın"
+		"pickem_confirm_Warning"	"<b>Bu çıkartmalar Takım Seçim Mücadelesi seçimleriniz için kullanılacaktır.</b>\n\nBu çıkartmalar envanterinizde kalmaya devam edecektir ve etkinlik aşaması sona erdikten sonra sahip olduğun herhangi bir silaha uygulanabilir veya takaslanabilir.\n\n<span class=\"premier-pickban__title__text-red\">\nEtkinlik aşamasının sonuna kadar kullanılamaz ve takaslanamaz olacaklardır. Seçimini yaptıktan sonra kaldırmak bu kilidi kaldırmayacaktır.</span>\n"
+		"pickem_confirm_ClearAll"	"<b>Takım Seçim Mücadeleniz için herhangi bir çıkartma kullanılmayacaktır.</b>\n\nDaha önceden kullanılmış çıkartmalar etkinlik aşaması sona erdikten sonra envanterinizde kalacaklardır ve herhangi bir silaha uygulanabilir veya takaslanabilir.\n"
+		"pickem_confirm_stickes_for_lock" 	"Seçimler için olan çıkartmalar"
+		"pickem_confirm_not_owned" 		"<b>Bu seçimler yerleştirilemiyor.</b><span class=\"premier-pickban__title__text-red\">\nTakım Seçim Mücadelesi'nde seçimini güncellemek için o takımın takım çıkartmasına ihtiyacın var.</span>"
+		"pickem_apply_emptyslots"		"Seçim Mücadelesi tahminlerini güncelleyebilmek için bütün tahminleri doldurmalısın. Lütfen seçimlerini kalan boş alanlara sürükle ve \"Seçimleri Güncelle\" tuşuna tekrar basarak onayla."
+		"pickem_apply_timeout"			"Takım Seçim Mücadelesi seçimlerini güncelleyemedik. Lütfen daha sonra tekrar dene."
+		"pickem_apply_drag_hint"	"Seçimini buraya sürükle"
+		"pickem_apply_immediate" 		"Seçimlerin Güncelleniyor..."
+		"pickem_save_all" 			"TÜM SEÇİMLERİ KAYDET"
+		"pickem_make_picks" 		"YAPILAN SEÇİMLER: {d:user-picks}/{d:total-picks}"
+		"pickem_drag_picks" 		"Takımları sürükleyerek seçim yap"
+		"pickem_reveal_all_results" "Son sıralamayı göster"
+		"pickem_saved" 		"Seçimler Kaydedildi"
+		"pickem_teams_tbd" 	"Takımlar Belirlenecek"
+		"pickem_challenge_section_title" "SEÇİM MÜCADELESİ"
+		"pickem_items_section_title" "TURNUVA EŞYALARI"
+		"pickem_items_tab_opening_stage" "AÇILIŞ AŞAMASI"
+		"pickem_items_tab_elim_stage" "ELEME AŞAMASI"
+		"pickem_items_tab_stage_i" "1. Aşama"
+		"pickem_items_tab_stage_ii" "2. Aşama"
+		"pickem_items_tab_stage_iii" "3. Aşama"
+		"pickem_items_tab_playoff_stage" "PLAYOFF'LAR"
+		"pickem_teams_remove_all_tooltip" 	"Tüm seçimleri temizle"
+		"pickem_teams_fill_tooltip" 	"Boş seçimleri rastgele doldur"
+		"pickem_versus"				"VS."
+		"pickem_submit_warning"		"{s:pass-name} etkinleştirilmedi"
+		"pickem_submit_warning_tooltip"		"Seçim Mücadelesi ilerlemesi kazanmak için etkinleştirilmiş bir {s:pass-name} gereklidir. Bilet, aşama için seçimler kilitlenmeden önce etkinleştirilmelidir."
+		"pickem_submit_warning_popup_title"	"Etkinleştirilmiş Bilet Olmadan Seçimleri Kaydet"
+		"pickem_submit_warning_popup_desc"	"Seçim Mücadelesi ilerlemesi kazanmak için etkinleştirilmiş bir {s:pass-name} gereklidir. Bilet, aşama için seçimler kilitlenmeden önce etkinleştirilmelidir."
+		"pickem_submit_warning_popup_action""Etkinleştirilmiş Bilet Olmadan Seçimleri Kaydet"
+		"pickem_submit_warning_popup_action2"	"Bileti Etkinleştir ve Seçimleri Kaydet"
+		"contextmenu_pickem_souvenir_title" 	"Hatıra paketinin alınacağı maçı seç"
+		"contextmenu_pickem_souvenir_no_result" 	"Hatıra paketi almak için maç bittikten sonra tekrar gel"
+		"mainmenu_major_hub"	"MAJOR ŞAMPİYONASI MERKEZİ VE EŞYALARI"
+		"mainmenu_major_hub_items"	"Çıkartmalar Şimdi Alınabilir"
+		"mainmenu_major_hub_no_items" "MAJOR ŞAMPİYONASI MERKEZİ"
+
+		"pickem_swiss_group_00"									"0:0"
+		"pickem_swiss_group_10"									"1:0"
+		"pickem_swiss_group_11"									"1:1"
+		"pickem_swiss_group_12"									"1:2"
+		"pickem_swiss_group_20"									"2:0"
+		"pickem_swiss_group_21"									"2:1"
+		"pickem_swiss_group_22"									"2:2"
+		"pickem_swiss_group_01"									"0:1"
+		"pickem_swiss_group_02"									"0:2"
+
+		"pickem_swiss_group_30"									"3:0 - çıktı"
+		"pickem_swiss_group_3x"									"3:1 3:2\n çıktı"
+		"pickem_swiss_group_13"									"1:3 - elendi"
+		"pickem_swiss_group_23"									"2:3 - elendi"
+		"pickem_swiss_group_03"									"0:3 - elendi"
+
+
+
+
+
+
+
+		// WATCH EVENTS
+
+		"eventsched_lan"												"LAN etkinliği"
+		"eventsched_online"											"Çevrimiçi etkinlik"
+		"eventsched_show_online"								"Çevrimiçi Etkinlikleri Göster"
+		"eventsched_date_format"								"{s:eventsched_date_day} {s:eventsched_date_month}"
+		"eventsched_versus"											"vs"
+		"eventsched_ongoing"										"Devam Edenler"
+		"eventsched_tbd"												"belirlenecek"
+		"eventsched_live"												"CANLI MAÇ"
+		"eventsched_link"												"Daha fazla bilgi HLTV.org adresinde"
+		"eventsched_event_link"									"Etkinlik detayları HLTV.org adresinde"
+		"eventsched_match_link"									"Maç detayları HLTV.org adresinde"
+		"eventsched_team_link"									"Takım detayları HLTV.org adresinde"	
+		"eventsched_no_streams"									"İzlenebilir yayın yok"
+		"eventsched_watch_on_gotv"								"CSTV'de İzle"
+		"eventsched_favorite_tt"								"{s:favorite_tooltip}"
+		"eventsched_favorite_tooltip_prime"			"Bir etkinliği favorilediğinde bu etkinliğin\ncanlı maçları ana menüde görünür."
+		"eventsched_favorite_tooltip_not_prime" "Etkinliği favorilemek için Seçkin Durumu'na sahip olmalısın."
+		"eventsched_match_tooltip"							"{s:watchnotice_teamname_1} vs {s:watchnotice_teamname_2}"
+		"eventsched_stream_watch"								"{s:stream_site}"
+		"eventsched_hltv"												"Etkinlik bilgileri HLTV.org tarafından sağlanmaktadır"
+		"eventsched_country"										"{s:eventsched_country}"
+		"eventsched_no_live_matches"						"Şu anda canlı maç yok."
+		"eventsched_featured"										"Bu etkinlik, {s:eventsched_fave_month} için bir topluluk favorisi."
+		"eventsched_official"										"Bu bir Counter-Strike Major etkinliğidir."
+
+		"WatchNotice_Reason_Official"						"Bu etkinlik, bir Counter-Strike Major etkinliği olduğu için gösteriliyor."
+		"WatchNotice_Reason_Personal"						"Bu etkinlik, favorilerine eklediğin için gösteriliyor."
+		"WatchNotice_Reason_Community"					"Bu etkinlik, {s:watchnotice_fave_month} için bir topluluk favorisi olduğundan öne çıkarılıyor."
+		"WatchNotice_Watch"											"İzle"
+
+	
+		// Used with formatText.AbbreviateNumber()
+		///////////////////////////////////////////
+		"NumberAbbreviation_E3"			"{s:abbreviated_number} B"
+		
+		// Note to translators: Add as needed. Code will use only available strings. example:
+		// "NumberAbbreviation_E4"		"{s:abbreviated_number}万"	
+
+		"NumberAbbreviation_E6"			"{s:abbreviated_number} Mn"
+		"NumberAbbreviation_E9"			"{s:abbreviated_number} Mr"
+		"NumberAbbreviation_E12"		"{s:abbreviated_number} T"
+
+		// Used with formatText.SplitAbbreviateNumber()
+		///////////////////////////////////////////
+		"NumberAbbreviation_suffix_E3"			"B"
+		
+		// Note to translators: Add as needed. Code will use only available strings. example:
+		// "NumberAbbreviation_suffix_E4"		"万"	
+
+		"NumberAbbreviation_suffix_E6"			"Mn"
+		"NumberAbbreviation_suffix_E9"			"Mr"
+		"NumberAbbreviation_suffix_E12"			"T"
+
+
+		"digitpanel_digits"			 " 0123456789,.-+?"
+		"digitpanel_digits_premier" " 1234567890,?"
+
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	OVERWATCH
+		//
+		///////////////////////////////////////////////////////////
+		
+		"Panorama_Overwatch_Downloading"		"Vaka dosyaları indiriliyor..."
+		"Panorama_Overwatch_Review"				"Bir vakayı incelemek birkaç dakika sürer."
+		"Panorama_Overwatch_Welcome"			"Counter-Strike Overwatch"
+		"Panorama_Overwatch_Tooltip_p1"			"Counter-Strike çalışmanın bir parçası olarak, şüpheli davranışları tespit etmek için resmî Valve sunucularında oynanan Counter-Strike 2 maçlarının tekrarlarını indirecek ve inceleyeceksin. Tekrar sona erdiğinde, oyuncunun oynayışıyla ilgili kararlar vermen istenecek."
+		"Panorama_Overwatch_Tooltip_sh1"		"Adım 1"
+		"Panorama_Overwatch_Tooltip_p2"			"Bir Overwatch vakasını indirmek için sağ alttaki DELİLLERİ İNDİR'e tıkla."
+		"Panorama_Overwatch_Tooltip_sh2"		"Adım 2"
+		"Panorama_Overwatch_Tooltip_p3"			"Sunucunun kaydettiği tekrarı oyuncunun bakış açısından izlemek için DELİLLERİ İNCELE'ye tıkla."
+		"Panorama_Overwatch_Tooltip_sh3"		"Adım 3"
+		"Panorama_Overwatch_Tooltip_p4"			"Vaka sonuçlandığında, her soru için bir karar seç ve KARARI BİLDİR'e tıkla."
+		"Panorama_Overwatch_Major_Disruption"	"Büyük Suç"
+		"Panorama_Overwatch_Minor_Disruption"	"Küçük Suç"
+		"Panorama_Overwatch_Res_Griefing"		"Oyunbozanlık"
+		"Panorama_Overwatch_Res_AimHacking"		"Nişan Desteği"
+		"Panorama_Overwatch_Res_WallHacking"	"Görüş Desteği"
+		"Panorama_Overwatch_Res_SpeedHacking"	"Diğer Dış Destekler"
+		
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	ROSETTA PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_CSGO_Spray_EnableMouse"			"<b>[{g:csgo_key:spray_mouse_enable}]</b> İmleci Etkinleştir"
+		"Panorama_CSGO_Rosetta_Item_Name"			"<font color=\"{s:item_color}\">{s:item_name}</font>"
+		"Panorama_CSGO_Rosetta_Item_Count"			"Kalan Kullanımlar: {d:item_count}"
+		"Panorama_Attrib_SpraysHint"					"{s:bind_attack} Grafiti Uygula"
+		"Panorama_Attrib_SpraysHint_Auto"			"Grafitiyi uygulamak için <b>{s:bind_spray_menu}</b> tuşunu bırak"
+
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	RETICLE PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_HUD_weaponid_swap"			"<font color=\"#6a6156\">[{s:bind_use}] Değiştir</font> <font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+		"Panorama_HUD_weaponid_pickup"			"<font color=\"#6a6156\">[{s:bind_use}] Al</font> <font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+		"Panorama_HUD_weaponid_lookat"			"<font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+		"Panorama_HUD_weaponid_holdtopickup"	"<font color=\"#6a6156\"></font><font color=\"#{s:weapon_color}\">{s:weapon_name}</font> kullanmak için [{s:bind_use}] tuşuna bas"
+
+		"Panorama_HUD_playerid_sameteam"			"<font color='#6E7D5C'>Arkadaş: {g:player_name:html:player_slot} Sağlık: %{d:player_health}</font>"
+		"Panorama_HUD_playerid_diffteam"			"<font color='#CC0000'>Düşman: {g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_playerid_specteam"			"<font color='#6E7D5C'>{g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_playerid_noteam"			"<font color='#FFCC00'>{g:player_name:html:player_slot} Sağlık: %{d:player_health}</font>"
+		"Panorama_HUD_playerid_overhead_shadow"		"{g:player_name:player_slot}"
+
+		"Panorama_HUD_playerid_survival_enemy"				"<font color='#CC0000'>Düşman</font>"
+		"Panorama_HUD_playerid_survival_hunter_target"		"<font color='#e58816'>Yüksek Değerli Hedef</font>"
+
+		"Panorama_HUD_botid_request_bomb"		"<font color='#e5da25'>[{s:bind_use}] Bombayı Al</font>"
+
+		"Panorama_HUD_hostageid_nh"				"<font color='#e5da25'>Rehine</font>"
+		"Panorama_HUD_hostagename_nh"			"<font color='#e5da25'>{g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_hostageid_nh_use_lead"		"<font color='#e5da25'>[{s:bind_use}] Rehineyi Al</font>"
+		"Panorama_HUD_hostageid_nh_following"	"<font color='#e5da25'>Rehine ({g:player_name:html:player_slot} oyuncusunu takip ediyor)</font>"
+
+		"Panorama_HUD_hostageid"					"<font color='#e5da25'>Rehine</font><font color='#dcdac0'> %{d:player_health}</font>"
+		"Panorama_HUD_hostageid_use_lead"		"<font color='#e5da25'>[{s:bind_use}] Rehineyi Al </font><font color='#dcdac0'> %{d:player_health}</font>"
+		"Panorama_HUD_hostageid_following"		"<font color='#e5da25'>Rehine ({s:player_name} oyuncusunu takip ediyor)</font><font color='#dcdac0'> %{d:player_health}</font>"
+
+
+		"Panorama_HUD_playerid_overhead_health"			"%{d:player_health}"
+		"Panorama_HUD_playerid_overhead_money"			"${d:r:player_money}"
+
+		"Panorama_HUD_playerid_overhead_survival"					"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#00c3e1'> %{d:player_health}</font>"
+		"Panorama_HUD_playerid_overhead_survival_lowhealth"			"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#d82429'> %{d:player_health}</font>"
+		"Panorama_HUD_playerid_overhead_survival_money"				"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#7ebc50'> ${d:r:player_money}</font>"
+		"Panorama_HUD_playerid_overhead_survival_grey"				"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#dddddd'> %{d:player_health}</font>"
+		"Panorama_HUD_playerid_overhead_survival_lowhealth_grey"	"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#d82429'> %{d:player_health}</font>"
+		"Panorama_HUD_playerid_overhead_survival_money_grey"		"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#7ebc50'> ${d:r:player_money}</font>"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	DEATH PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_SurvivalEndOfMatch_ShowStats"			"[{s:bind_jump}] Maç İstatistiklerini Göster"
+		"Panorama_Death_Cancel_Start_Replay"			"[{s:bind_jump}] Atla"
+		"Panorama_Death_Cancel_Replay" 				"[{s:bind_jump}] Tekrarı İptal Et"
+		"Panorama_Death_Snapshot"						"[{s:bind_jpeg}] Bu anı kaydet"
+		"Panorama_HUD_Spectate_Navigation_Replay_Death"	"<font color='#ddbb22'><b>[{s:bind_reload}] Ölüm Kamerası Tekrarı</b></font>"
+
+		"Panorama_DeathPanel_Killer1_YourWeapon"			"seni kendi {s:weapon_name} silahınla öldürdü"
+		"Panorama_DeathPanel_Killer1_KillerWeapon"			"seni {s:weapon_name} ile öldürdü"
+		"Panorama_DeathPanel_Killer1_OthersWeapon"			"seni <font color='#adadad'>{s:other_player_name} oyuncusuna ait</font> {s:weapon_name} ile öldürdü"
+		"Panorama_DeathPanel_Killer1_Weapon"				"seni {s:weapon_name} ile öldürdü"
+		"Panorama_DeathPanel_Killer1_Weapon_Plural" 		"seni {s:weapon_name} ile öldürdü"
+		"Panorama_DeathPanel_Killer1_Weapon_CustomString" 	"{s:weapon_name}"
+
+		"Panorama_DeathPanel_DamageTaken:f"					"{hits_taken, plural, one{<font color='#A0A0A0'>Alınan hasar: </font><font color='#FFFFFF'><b>{d:hits_taken} vuruşta </b></font> <font color='#FFFFFF'><b>{d:damage_taken}</b></font> </font>} other{<font color='#A0A0A0'>Alınan hasar: </font><font color='#FFFFFF'><b>{d:hits_taken} vuruşta </b></font> <font color='#FFFFFF'><b>{d:damage_taken}</b></font>}}"
+		"Panorama_DeathPanel_DamageGiven:f"					"{hits_given, plural, one{<font color='#A0A0A0'>Verilen hasar: </font><font color='#FFFFFF'><b>{d:hits_given} vuruşta </b></font> <font color='#FFFFFF'><b>{d:damage_given}</b></font>} other{<font color='#A0A0A0'>Verilen hasar: </font><font color='#FFFFFF'><b>{d:hits_given} vuruşta </b></font> <font color='#FFFFFF'><b>{d:damage_given}</b></font>}}"
+
+		/////////////////////////////////////////////////////////////////
+		//
+		//      CHATWHEEL OPTIONS
+		//
+		////////////////////////////////////////////////////////////
+
+		"Chatwheel_segment_top"	"Üst"
+		"Chatwheel_segment_topright"	"Sağ Üst"
+		"Chatwheel_segment_right"	"Sağ"
+		"Chatwheel_segment_bottomright"	"Sağ Alt"
+		"Chatwheel_segment_bottom"	"Alt"
+		"Chatwheel_segment_bottomleft"	"Sol Alt"
+		"Chatwheel_segment_left"	"Sol"
+		"Chatwheel_segment_topleft"	"Sol Üst"
+
+		"Chatwheel_ping_on_cooldown"  "Pinglenemedi. Ping dolum süresinde."
+
+		"Chatwheel_plant"	"Bombayı kur"
+		"Chatwheel_sitea"	"A bombalama alanını pingle"
+		"Chatwheel_siteb"	"B bombalama alanını pingle"
+
+		"Chatwheel_section_move"	"Hareket"
+		"Chatwheel_sticktogether"	"Bir arada kalın"
+		"Chatwheel_followme"	"Beni takip edin"
+		"Chatwheel_followingyou"	"Seni takip ediyorum"
+		"Chatwheel_spreadout"	"Yayılın"
+		"Chatwheel_fallback"	"Geri çekilin"
+		"Chatwheel_gogogo"	"Haydi haydi haydi!"
+		"Chatwheel_onmyway"	"Yoldayım"
+		"Chatwheel_gethostage"	"Rehineyi kontrol edin"
+		"Chatwheel_quiet"	"Sessiz"
+
+		"Chatwheel_section_prepare"	"Hazırlık"
+		"Chatwheel_requestecoround"	"Paramızı biriktirmeliyiz"
+		"Chatwheel_requestspend"	"Ekipman almalıyız"
+		"Chatwheel_requestleader"	"Kim öncülük edecek?"
+		"Chatwheel_requestweapon"	"Bir silah iste"
+		"Chatwheel_requestplan"		"Plan nedir?"
+		"Chatwheel_aplan"	"A alanını pingle"
+		"Chatwheel_bplan"	"B bombalama alanını pingle"
+		"Chatwheel_midplan"	"Ortayı pingle"
+
+		"Chatwheel_section_grenades"	"El Bombaları"
+		"Chatwheel_decoy"	"Yanıltıcı bomba lazım"
+		"Chatwheel_smoke"	"Sis lazım"
+		"Chatwheel_grenade"	"El bombası lazım"
+		"Chatwheel_fire"	"Molotof lazım"
+		"Chatwheel_flashbang"	"Flaş bombası lazım"
+		
+		"Chatwheel_section_defend"	"Savunma"
+		"Chatwheel_coverme"	"Beni koruyun"
+		"Chatwheel_coveringyou"	"Seni koruyorum"
+		"Chatwheel_help"	"Yardım edin"
+		"Chatwheel_needbackup"	"Destek istiyorum"
+		"Chatwheel_holdposition"	"Burayı koruyun"
+        "Chatwheel_rotatetome"	"Bana gelin"
+
+		"Chatwheel_section_bomb"	"Bomba Durumu"
+		"Chatwheel_guardingbomb"	"Bombayı koruyorum"
+		"Chatwheel_bombsiteclear"	"Bombalama alanı temiz"
+		"Chatwheel_droppedbomb"	"Bomba düştü"
+		"Chatwheel_bombpickedup"	"Bomba yerden alındı"
+		"Chatwheel_ifixbomb"	"Bomba görevi bende"
+		"Chatwheel_youfixbomb"	"Bomba görevi sende"
+		
+		"Chatwheel_bombat"	"Bombayı pingle" 
+
+		"Chatwheel_section_enemystatus"	"Düşman Durumu"
+		"Chatwheel_heardnoise"	"Ses duydum" 
+		"Chatwheel_enemyspotted"	"Düşmanı gördüm"
+		"Chatwheel_sectorclear"	"Bölge temiz"
+		"Chatwheel_sniperspotted"	"Nişancı görüldü"
+		"Chatwheel_bombcarrierspotted"	"Bomba taşıyıcısı görüldü"
+		"Chatwheel_threeleft"	"Üç düşman kaldı"
+		"Chatwheel_twoleft"	"İki düşman kaldı"
+		"Chatwheel_oneleft"	"Bir düşman kaldı"
+		"Chatwheel_oneenemyhere"  "Düşmanın biri burada"
+		"Chatwheel_multipleenemieshere"  "Burada birçok düşman var"
+		"Chatwheel_ihavethebomb"  "Bomba yerden alındı"
+
+		"Chatwheel_section_enemykilled"	"Düşman öldürüldü"
+		"Chatwheel_gotheadshot"	"Kafadan vurdum"
+		"Chatwheel_ikilledsniper"	"Keskin nişancıyı öldürdüm"
+		"Chatwheel_wekilledsniper"	"Keskin nişancıyı öldürdük"
+		"Chatwheel_sawheadshot"	"Kafadan vuruşunu gördüm"
+
+		"Chatwheel_section_combatstatus"	"Çarpışma Durumu"
+		"Chatwheel_attacking"	"Saldırıyorum"
+		"Chatwheel_inposition"	"Pozisyon aldım"
+		"Chatwheel_covering"	"Koruyorum"
+		"Chatwheel_pinned"	"Sıkıştım"
+		"Chatwheel_incombat"	"Çarpışmadayım"
+		"Chatwheel_friendlyfire"	"Dost ateşi"
+		"Chatwheel_lastunitalive"	"Hayatta kalan son düşman"
+
+		"Chatwheel_section_responses"	"Cevaplar"
+		"Chatwheel_wewon"	"Kazandık"
+		"Chatwheel_welost"	"Kaybettik"
+		"Chatwheel_wearewinning"	"Kazanıyoruz"
+		"Chatwheel_lostround"	"Bu raundu kaybettik"
+		"Chatwheel_thanks"	"Teşekkürler!"
+		"Chatwheel_sorry"	"Pardon"
+		"Chatwheel_compliment"	"Çok iyi!"
+		"Chatwheel_affirmative"	"Evet"
+		"Chatwheel_negative"	"Hayır"
+		"Chatwheel_peptalk"	"Moral konuşması"
+		"Chatwheel_cheer"	"Haydi takım"
+
+		"Chatwheel_plantingata"	"A'ya bomba kuruyorum"
+		"Chatwheel_plantingatb"	"B'ye bomba kuruyorum"
+		"Chatwheel_plantedata"	"A'ya bomba kurdum"
+		"Chatwheel_plantedatb"	"B'ye bomba kurdum"
+		"Chatwheel_planted"	"Bombayı kurduk"
+
+		"Chatwheel_seehostagestaken"	"Rehineler alınıyor"
+		"Chatwheel_requestgethostages"	"Rehineleri al"
+
+		"Chatwheel_guardinga"	"A'yı koruyorum"
+		"Chatwheel_guardingb"	"B'yi koruyorum"
+		
+
+		
+		"Chatwheel_section_command"	"Emirler"
+		"Chatwheel_section_report"	"Rapor"
+
+		"Chatwheel_description" "Sohbet çarkı, yararlı telsiz komutlarının kişiselleştirilebilir bir listesine hızlı erişim sağlar."
+
+		////
+		//
+		// Volatile Laptop
+		//
+		////
+
+		// ---------------------------------------------------------------------------------------------
+		"laptop_window_collection_title"			"KOLEKSİYON KATALOĞU TP"
+		"laptop_window_expiration_title"			"KALAN SÜRE"
+		"laptop_window_seal_title"					"DURUM"
+		"laptop_window_messages_title"				"SOHBET - SİLAH TACİRİ"
+		"laptop_window_currentoffer_title"			"MEVCUT TEKLİF"
+		"laptop_app_title"							"<span class=\"laptop-app-title-prefix\">Bağlantı</span>"
+		"laptop_app_version"						"v 1.1.0.2000"
+
+		"dealer_offer_attachment_title"							"{s:item-name}"
+		"dealer_offer_attachment_wear"							"{s:item-rarity}"
+		"dealer_offer_attachment_remaining_title"				"TEKLİF NO.: {d:offer-total}"
+		"dealer_offer_attachment_remaining"						"Teklif no.: {d:offer-total}"
+		"dealer_offer_received_count"							"<b>{s:offer-count}</b> Teklif"
+		"dealer_offer_attachment_final_title"					"SON TEKLİF"
+		"dealer_offer_attachment_final"							"{s:offer-count} ve son teklif"
+		"dealer_offer_attachment_status"						"Teklif - {s:offer-status}"
+		"dealer_offer_attachment_status-active"					"<b><span class=\"offer-active\">Aktif</span></b>"
+		"dealer_offer_attachment_status-price"					"<b><span class=\"offer-active\">{s:offer-price}</span></b>"
+		"dealer_offer_attachment_status-declined-price"			"{s:offer-price}"
+		"dealer_offer_attachment_status-declined"				"<span class=\"offer-declined\">{s:offer-count} Teklif - Reddedildi</span>"
+
+		"user_btn_purchase_desc_purchase"		"Bu eşyayı satın almak için basılı tut. Satın alma işleminden sonra terminal silinir."
+		"user_btn_purchase_desc_continue"		"Bu teklifi kalıcı olarak reddetmek ve bir sonraki teklifi görmek için basılı tut."
+		"user_btn_purchase_desc_end"		"Son teklifi reddet ve bu terminali sil."
+		"user_btn_purchase_title"			"{s:offer-count} Teklif"
+		"user_btn_purchase_final_title"		"<b>Son Teklif</b>"
+		"user_btn_decline_desc"				"Bu teklifi reddet ve başka bir teklife bak."
+		"user_btn_accept"		"<b>{s:price}</b> Teklifini Kabul Et"
+		"user_btn_accept_final"	"<b>{s:price}</b> Son Teklifini Kabul Et"
+		"user_btn_accept_0"		"Tamam. <b>{s:price} uygun.</b>"
+		"user_btn_accept_1"		"Kabul ediyorum- <b>{s:price}</b>"
+		"user_btn_accept_2"		"<b>{s:price}</b> olur"
+		"user_btn_accept_3"		"<b>{s:price}</b> olsun"
+		"user_btn_accept_4"		"<b>{s:price}</b> uygun"
+		"user_btn_accept_5"		"Tamam — <b>{s:price}</b>"
+		"user_btn_next"			"Teklifi Reddet"
+		"user_btn_next_0"		"Cazip ama hayır"
+		"user_btn_next_1"		"Mermilerime layık değil"
+		"user_btn_next_2"		"Olmaz"
+		"user_btn_next_3"		"Geç"
+		"user_btn_next_4"		"Kabul edemem"
+		"user_btn_next_5"		"Sağ ol ama hayır"
+		"user_btn_next_6"		"Maalesef"
+		"user_btn_next_7"		"İmkanı yok"
+		"user_btn_pause"		"Teklifi Duraklat"
+		"user_btn_end"			"Son Teklifi Reddet"
+
+		"user_message_limit_0"		"En fazla <b>{s:limit-setting}</b> ödeyebilirim."
+		"user_message_limit_1"		"En yüksek miktar <b>{s:limit-setting}</b> olsun."
+		"user_message_limit_2"		"En fazla <b>{s:limit-setting}</b> bana uyar."
+		"user_message_limit_3"		"<b>{s:limit-setting}</b> sınırı uygun."
+		"user_message_limit_unlimited_0"	"<b>Sınır yok</b>, hepsini görmek istiyorum."
+		"user_message_limit_unlimited_1"	"<b>Limitsiz</b>. Para sorun değil."
+		"user_message_limit_unlimited_2"	"Alıcıyım. <b>Bana her şeyi göster</b>."
+		"user_message_limit_unlimited_3"	"Ateş ediyorsa ilgimi çekiyor.<b> Sınır yok</b>."
+		"user_message_limit_unlimited_4"	"Sınır yok."
+		"offer_limit_setting"		"Teklif limiti: {s:limit}"
+		"offer_limit_setting_interface"		"Teklif limiti: {s:limit} <img src='file://{images}/icons/ui/expand.svg' class='expand-icon'/>"
+
+		"dealer_offer_Unknown"							"-"
+		"dealer_offer_1"								"1."
+		"dealer_offer_2"								"2."
+		"dealer_offer_3"								"3."
+		"dealer_offer_4"								"4."
+		"dealer_offer_5"								"5."
+		"dealer_offer_6"								"6."
+		"dealer_offer_7"								"7."
+		"dealer_offer_8"								"8."
+		"dealer_offer_9"								"9."
+		"dealer_offer_10"								"10."
+
+		"current_offer_tooltip"		"Silah tacirinin mevcut teklifi."
+		"declined_offer_tooltip"	"Reddedilen teklif."
+		"future_offer_tooltip"		"Teklif henüz açılmadı."
+		"laptop_expiration_tooltip"		"Bu bağlantı terminali ve tekliflerinin sona ermesine kalan süre."
+		"laptop_max_offer_tooltip"		"Maksimum teklif limitini belirle. Yalnızca bu limitin altındaki teklifleri alırsın. İstediğin zaman değiştirebilirsin."
+		"collection_xp_tooltip"			"Bu koleksiyondaki teklifleri görüntüleyerek TP kazan. İlerlemeyi görmek ve TP almak için aç."
+		"terminal_offer_limit_tooltip"		"Maksimum teklif limitini güncelle. Silah taciri yalnızca bu limite kadar olan teklifleri gösterir."
+		"popup_lootlist_title"			"Koleksiyon Kataloğu TP"
+		"popup_lootlist_desc"			"Bu koleksiyondaki teklifleri görüntüleyerek TP kazan."
+
+		"popup_lootlist_progress:f"      "{d:seen}/{d:total} teklif görüntülendi"
+		"popup_lootlist_claim_xp"		"Bonus TP Kazan"
+		"popup_lootlist_claim_ww"		"TP alınıyor..."
+		"popup_lootlist_claim_ok"		"✔ TP alındı"
+		"popup_vpn_status_connected"	"Durum: Güvenli ağa bağlanıldı"
+		"popup_vpn_status_disconnected"	"Durum: Bağlantı kesildi"
+		"popup_signal_full" 			"Tam Sinyal"
+		"popup_signal_ok" 				"Güçlü Sinyal"
+		"popup_offer_limit_desc"		"Maksimum teklif limitini gelecekteki tüm teklifler için güncelle."
+		"laptop_battery_tooltip" 		"Pil Seviyesi: %{d:percent}"
+		"laptop_original_seal_tooltip" 	"Bu bağlantı terminalinden satın alınan her eşya, sana ait olduğu sürece geçerli olan birinci el belgesi ile birlikte gelir."
+		"laptop_zoom_tooltip" 			"Yakınlaştırmak ve uzaklaştırmak için fare tekerleğini döndür."
+		"laptop_pan_tooltip" 			"Kamerayı kaydırmak için Shift tuşunu basılı tut ve fareyi sürükle."
+		"laptop_pricing_tooltip"		"Fiyatlar küreseldir ve bu koleksiyondaki her bir eşyaya yönelik talebe göre otomatik olarak belirlenir."
+
+		"dealer_message_set_offer_limit_0"		"Öncelikle bütçen ne kadar?"
+		"dealer_message_set_offer_limit_1"		"Öncelikle bu konuyu aradan çıkaralım.<!--.25--> Limitin nedir?"
+		"dealer_message_set_offer_limit_2"		"Başlamadan önce...<!--.25--> Üst sınır ne kadar? Ne kadar ödemeye hazırsın?"
+		
+		"dealer_message_start_0"  	"Bunlar tamamen profesyonel ekipmanlar.<!--.25-->Tam teşkilat. Üstelik evrak işi yok."
+		"dealer_message_start_1"  	"Karaborsa ürünlerini satıyorum. Evraksız.<!--.25-->Merak etme. İzlerini süremezler. Bu silahlar yıllardır satılmıyor.<!--.25-->Ama nişan aldığında ateş ediyorlar. Denemek istersen."
+		"dealer_message_start_2"  	"Ürünlerim Ahradan'daki gümrükte takıldı. Ölmek üzere olan zavallı insanlar için tıbbi ekipmanlar falan diye duygu sömürüsü yapmaya çalıştım.<!--.25-->İşe yaramadı. Ama nakit dolu bir çanta yaradı.<!--.25-->Yetimhanelere teslim etmeden önce şu diyalizörlere bir bakalım mı?"
+		"dealer_message_start_3"  	"Adı \"-istan\" ile biten ülkelerden birinde rejim değişti.<!--.25-->Silah depoları açıldı. Ben de bir şeyler kaptım.<!--.25-->Sadece kaliteli mal satıyorum. Bir bak."
+		"dealer_message_start_4"  	"Bugünkü mallarım tertemiz.<!--.25-->Senden önce bunlara kimse dokunmamıştır bile."
+		"dealer_message_start_5"  	"Temiz mallar, seri numaraları yok. Sağlamlar.<!--.25-->Muhtemelen bir askerî mahkemede delil olarak kullanılırlardı.<!--.25-->İkimiz de bunların şaheser olduğunu görebiliyoruz."
+		"dealer_message_start_6"  	"Tüm sevkiyat, yakın zamandaki bir askeri geçit töreninden kalan egzotik silahlarla dolu.<!--.25-->Sadece yürüyüşte taşınmışlar, ateş bile edilmemişler."
+		"dealer_message_start_7"  	"Diğer müşterilerim sürekli ürünlerimi nereden aldığımı sorup duruyor. Hiç sevmiyorum.<!--.25-->Senin tek derdin piyasadaki en iyi malları almak.<!--.25-->Benimkiler harbiden de öyle."
+		"dealer_message_start_8"  	"Drosvik'te barış anlaşması yapıldı. Barışı seviyorum.<!--.25-->Tıka basa silahla dolu toz toplayan bir depoya sahip borca batmış bir general tanıyorum da.<!--.25-->Yani...<!--.25-->Tabii ki barış çok güzel bir şey. Masum hayatlar ve...<!--.25-->Ne diyorum ben ya? Umurunda değil ki."
+		"dealer_message_start_9"  	"Bu postada karaborsadan aldığım egzotik mallar var.<!--.25-->Alışılmadık kalibreler, amatör işi değil. Bayılacaksın."
+		"dealer_message_start_10"  	"Hay aksi.<!--.25-->Gümrük beyannamemde bir sandığı yanlış etiketlemişim.<!--.25-->Yani birkaç düzine sandığı.<!--.25-->Liman yetkilileri haberdar olmadan önce bu mallardan kurtulmama yardım eder misin?"
+		"dealer_message_start_11"  	"Drosvik'teki müfettiş rüşvet peşindeydi. Aptal herif, el koyma emirlerinden bahsetmeye başladı.<!--.25--> Drosvik'te bunun gibi gevezelerle nasıl başa çıkacağını bilen adamlarım var. Çenesi tellerle bağlı şimdi.<!--.25--> Neyse ki bu ürün kendini kanıtlıyor."
+		"dealer_message_start_12"  	"Bu sevkiyatı sınırdan geçirmek için Ahradan'daki herkese rüşvet vermek zorunda kaldım.<!--.25-->Üstelik ödemeleri ahri ile istediler. Değersiz bir parayla rüşvet vermek için elinde ne kadar nakit olması gerek biliyor musun? Ekonomilerini acilen düzeltmeleri gerek."
+		"dealer_message_start_13"	"Bu mallardan hemen kurtulması gereken bir karaborsa satıcısı var.<!--.25-->Bana tek söylediği şey \"Hemen\".<!--.25-->Bir de \"şimdi\".<!--.25-->Şöyle söyleyeyim, bu malları neden sattığını umursamıyorsan, bu alışverişten memnun kalacaksın."
+		"dealer_message_start_14"	"Bugün eski modeller satıyorum.<!--.25-->Gösterişliler mi? Hayır ama sağlamlar.<!--.25-->Bir gün torunların da bunlarla birilerini vurur."
+		"dealer_message_start_15"	"İsyancı bir milis grubu bunları şanlı liderin cephaneliğinden koparmış<!--.25-->Şanlı liderin uzuvlarını ve kafasını da koparmışlar sanırım.<!--.25-->(Ben öyle şeyler satmıyorum ama ilgileniyorsan tanıdığım biri var.)"
+		"dealer_message_start_16"	"Drosvik'teki sınır polisi sevkiyata el koyacağını söyledi.<!--.25-->Drosvik'te rüşvet vermediğimi duymamış herhâlde. Hele ki yerli adam tutmak bu kadar ucuzken. Drosvik dünyanın kickboks başkenti gibi bir şey.<!--.25-->Neyse. Yerine geçen kişi el koyma emrini kaybetmiş. Kırık kolu da yok."
+		"dealer_message_start_17"	"Tüm bunlar bir milyarderin özel koleksiyonuydu.<!--.25-->Eskiden milyardermiş yani. Şu an soruşturma altında. Mallarını tasfiye edemeyince ben yapayım dedim.<!--.25-->Hem bir yatın duvarında asılı duracağına senin elinde daha güzel durmaz mı?"
+		"dealer_message_start_18"	"Liman denetmeni bu sevkiyatta bir anormallik tespit etti.<!--.25-->Komik olan şu ki, tartıya tam on bin dolar koyduğunda, bir sandık dolusu tüfek, bir sandık dolusu \"traktör parçası\" ile aynı ağırlıkta çıkıyor.<!--.25-->Gel şu traktör parçalarına bir bakalım."
+		"dealer_message_start_19"	"Bugünkü mallar darbeden kurtulup da buralara geldi.<!--.25-->Biraz çizilmişler ama harika çalışıyorlar. Önemli olan işlevleri, değil mi?"
+		"dealer_message_start_20"	"Boktan küçük bir cumhuriyet, başkanının boynuna ilmeği geçirdi.<!--.25-->Kısmetliyim. Tedarik zinciri bana miras kaldı."
+		"dealer_message_start_21"	"İşlem hatası, belge uyuşmazlığı, basit bir evrak sorunu. Neyse ne.<!--.25-->Herkes hata yapar. Ben sadece arkadaşımın ikmal çavuşu görevinden atılmaması için ona yardım etmeye çalışıyorum.<!--.25-->Bu ekipmanı ortadan kaldırmamız gerek."
+		"dealer_message_start_22"	"Üst düzey bir gümrük görevlisi bu sevkiyat konusunda bana istediğini yaptırabileceğini sandı. Ben de rıhtım işçileri sendikasından yardım aldım.<!--.25-->Herkes kayıp birini aramakla meşgulken evrak işleri ne kadar da çabuk halloluyor.<!--.25-->Umarım adamı bulurlar. Yüzme bilmiyor sanırım."
+		"dealer_message_start_23"	"Ahradan'daki sınır polisi evraklarda uyuşmazlık olduğunu söyledi. Bir tomar ahriyle uyuşmazlığı çözdük.<!--.25-->On bin ahri ne kadar ediyor hiç bilmiyorum bile. Altı dolar falandır.<!--.25-->Neyse. Şu var olmayan silahlara bakmak ister misin?"
+		"dealer_message_start_24"	"Bunları satın alacak bir general vardı ama aptal adam bir dron saldırısında havaya uçtu.<!--.25-->Sana tavsiyem, pencerelerini hep kapalı tut. Ama patlaması sana yaradı."
+		"dealer_message_start_25"	"Drosvik'te rejim değişikliği oldu. Nasıl oldu bilmiyorum ama kargaşada bir depo dolusu silah sandığı kayboldu.<!--.25-->Bir şekilde de benim elime geçtiler. İnanılmaz, değil mi?<!--.25-->İşin daha da ilginci bunları satıyorum. Sana. Şimdi."
+		"dealer_message_start_26"	"Sana sevkiyat sırasında yanlış etiketlenmiş bir sandık göstereyim. <!--.25-->\"Tarım ekipmanları\" etiketine aldanma. Tetiği hızlı çekmediğin an organik gübre olursun."
+		"dealer_message_start_27"	"İhtilalcilerle çalışmaktan nefret ediyorum. Kibarca siviller yani. Tabiri caizse amatörler.<!--.25-->Neyse. İletişimi kestiler. Bu malları gerçek profesyonellere bırakayım diyorum."
+		"dealer_message_start_28"	"Güneyde senelerdir yaşanan gergin durum yine hükümetin düşmesiyle sonuçlandı.<!--.25-->Birçok yerel silah deposu balon gibi patlatıldı."
+		"dealer_message_start_29"	"Liman denetmeni geçen cuma bu sevkiyatın usulsüz olduğunu söyledi.<!--.25-->Pazartesi günü, kızını Stamwick'te okutacak kadar para aldı. Sevkiyat da yine \"tarım araçları\" olarak etiketlendi.<!--.25-->Ee, eğitim önemli. Gel şu tarım araçlarına bakalım."
+
+		"dealer_message_resume_0"  	"<!--1-->Geri geldin demek. Güzel. Teklif hâlâ geçerli."
+		"dealer_message_resume_1"  	"<!--1-->Düşünmek için zamana mı ihtiyacın vardı? Sorun değil."
+		"dealer_message_resume_2"  	"<!--1-->Geri döneceğini biliyordum."
+		"dealer_message_resume_3"  	"<!--1-->Kaldığımız yerden devam edelim."
+		"dealer_message_resume_4"  	"<!--1-->Pazarlık için hazır mısın?"
+		"dealer_message_resume_5"  	"<!--1-->Geri dönmene sevindim. Bu eşyadan kurtulmam gerek, yoksa yanlış kişilerin dikkatini çekmeye başlayacak."
+		"dealer_message_resume_6"  	"<!--1-->Demek geri döndün. Nerede kalmıştık?"
+
+		"dealer_message_first_offer_0"	"<!--.5-->İlgileniyorsan fiyat konuşalım."
+		"dealer_message_first_offer_1"	"<!--.5-->Bu eşyayla ilgilenen başkaları da var."
+		"dealer_message_first_offer_2"	"<!--.5-->Alacaksan al, aksi hâlde ilgilenen bir sürü sürü alıcı var."
+		"dealer_message_first_offer_3"	"<!--.5-->İstiyorsan bu senin olabilir. İstemiyorsan, senin kaybın."
+		"dealer_message_first_offer_4"	"<!--.5-->Kabul ediyorsan anlaştık. Bu teklif sonsuza kadar geçerli değil."
+		"dealer_message_first_offer_5"	"<!--.5-->Teklif masada. Evet veya hayır."
+		"dealer_message_first_offer_6"	"<!--.5-->Bunu istiyor musun, istemiyor musun? Hayır demen beni incitmez. Başka alıcılar da var."
+		"dealer_message_first_offer_7"	"<!--.5-->Var mısın yok musun?"
+		"dealer_message_first_offer_8"	"<!--.5-->Bütün gün seni bekleyemem."
+		"dealer_message_first_offer_9"	"<!--.5-->Anlaştık mı?"	
+		"dealer_message_first_offer_10"	"<!--.5-->Bunu alman için ısrar etmeme bile gerek yok. Ürün ortada. Ne diyorsun?"		
+
+		"dealer_message_next_offer_0"	"<!--1-->Pekala, işine gelmedi. Bu nasıl?"
+		"dealer_message_next_offer_1"	"<!--1-->Senin kaybın. Neyse ki iyi günümdeyim. Şuna bir bak."
+		"dealer_message_next_offer_2"	"<!--1-->Kabul etmiyor musun? Hata yapıyorsun bence. Şuna da bir bak."
+		"dealer_message_next_offer_3"	"<!--1-->Bu ürünün kalitesi ortada. Almayacaksan, alacak birini bulurum.<!--.5-->Ama hazır sen buradayken şunu söylemeliyim, bu ürün tam sana göre."
+		"dealer_message_next_offer_4"	"<!--1-->Anladım, tarzın değil. Peki bu nasıl? Beğeneceğini düşünüyorum."
+		"dealer_message_next_offer_5"	"<!--1-->Onu beğenmeyeceğini hissetmiştim. Neyse ki bu güzel parçayı senin için hazırda tutuyordum."
+		"dealer_message_next_offer_6"	"<!--1-->Tahmin etmiştim. Şuna da bir göz at. Sanırım senin tarzına daha uygun."
+		"dealer_message_next_offer_7"	"<!--1-->Bunu almadığına pişman olacaksın. Ama sorun değil. Peki ya bu nasıl?"
+		"dealer_message_next_offer_8"	"<!--1-->Seni çok iyi tanıyorum. Buna kanmayacağını tahmin etmiştim. Buna ne dersin?"
+		"dealer_message_next_offer_9"	"<!--1-->Anladım, mezeleri geçiyorsun. O zaman ana yemeğe hazır ol."
+		"dealer_message_next_offer_10"	"<!--1-->Anlıyorum, ben de onu beğenmemiştim. Al, şuna bir bak."		
+		"dealer_message_next_offer_11"   "<!--1-->O herkesin beğendiği bir ürün değildi. Sıradaki daha çok insanı memnun etmeye yönelik."
+		"dealer_message_next_offer_12"   "<!--1-->Daha stokta bir sürü var. Şunun güzelliğine bir bak."
+		"dealer_message_next_offer_13"   "<!--1-->Biliyor musun? Bunu söyleyeceğini tahmin etmiştim. Hadi sıradakine geçelim."
+		"dealer_message_next_offer_14"   "<!--1-->Seni memnun etmek düşündüğümden daha zormuş. Bunu beğendin mi?"
+		"dealer_message_next_offer_15"   "<!--1-->Duygularımı incitmiyorsun. Lanet şeyi ben yapmadım sonuçta. İşte başka bir seçenek."
+		"dealer_message_next_offer_16"   "<!--1-->Ben de onu almazdım. Fakat bu başka. Hadi ama."
+		"dealer_message_next_offer_17"   "<!--1-->Almıyor musun? Tamam. Sıradaki."
+		"dealer_message_next_offer_18"   "<!--1-->Görüyorum ki yüksek standartlara sahipsin. Bana uyar. Sıradaki altın standart."
+		"dealer_message_next_offer_19"   "<!--1-->Paranı boşa harcamanı istemem, sen de benim zamanımı boşa harcamak istemezsin. Şuna bir bak."
+		"dealer_message_next_offer_20"   "<!--1-->Dürüstlüğünü takdir ediyorum. Zaman kaybetmeden devam edelim."
+		"dealer_message_next_offer_21"   "<!--1-->Pekala, ona da için ısınmadı. Neyse ki sattığım tek silah o değil."
+		"dealer_message_next_offer_22"   "<!--1-->Sorun değil. Envanterde çok sayıda silah var. Sıradaki."
+		"dealer_message_next_offer_23"   "<!--1-->Bir satış yapmaya çok yaklaşmıştım. Belki bunda anlaşırız."
+		"dealer_message_next_offer_24"   "<!--1-->Anladım. Sana göre değil. Hepsini sevecek değilsin. Ama bu tam sana göre."
+		"dealer_message_next_offer_25"   "<!--1-->Bunlar pek ilgini çekmiyor gibi. Bakalım bunu beğenecek misin?"
+		"dealer_message_next_offer_26"   "<!--1-->Tamam, bu kadar oyalanma yeter. Bir sonrakini kesinlikle seveceğine eminim. Galiba yani."
+		"dealer_message_next_offer_27"   "<!--1-->Hoşuna gitmedi mi? O zaman özel cephaneliğime koyacağım. Buna ne dersin?"
+		"dealer_message_next_offer_28"   "<!--1-->Zevkli birisin. Bakalım bir sonraki silah yüksek standartlarını karşılayacak mı?"
+		"dealer_message_next_offer_29"   "<!--1-->Tamam, bunu yığının en üstünde olduğu için gösterdim. Altta kalanları çıkarayım."
+		"dealer_message_next_offer_30"   "<!--1-->O son gösterdiğimi unut. Bakmanı istediğim asıl ürün buydu."
+		"dealer_message_next_offer_31"   "<!--1-->Bunun üzerinde senin adın yazıyor. Kelimenin tam anlamıyla değil tabii, silah temiz."
+		"dealer_message_next_offer_32"   "<!--1-->Hepsini alacak değilsin, anlıyorum. Belki de özellikle aradığın bir şey var. Mesela bunun gibi."
+		"dealer_message_next_offer_33"   "<!--1-->O provaydı. Asıl gösteri bu."
+		"dealer_message_next_offer_34"   "<!--1-->Evet, tahmin etmiştim. Ama bu sıradaki silah başka. Görünce aklıma sen geldin."
+		"dealer_message_next_offer_35"   "<!--1-->Anlıyorum. Bunu senin için saklıyordum."
+		"dealer_message_next_offer_36"   "<!--1-->Bunu sana sevdirmek benim işim değil. Ben sadece silahları elimden çıkarmaya çalışıyorum. Sıradaki."
+		"dealer_message_next_offer_37"   "<!--1-->Sorun değil. Sanırım bir sonraki ürün daha çok hoşuna gidecek."
+		"dealer_message_next_offer_38"   "<!--1-->Akıllıca. Buna atlamayacağını biliyordum. Sana daha iyisini göstereyim."
+		"dealer_message_next_offer_39"   "<!--1-->Sorun değil. Onu ben de almazdım. Ancak bu..."
+		"dealer_message_next_offer_40"   "<!--1-->Beni en arkaya, kaliteli ürünlerin olduğu rafa gitmeye zorluyorsun, öyle mi? Tamam o zaman."
+
+		"dealer_message_last_offer_0"	"<!--0-->Pekala, son teklif. İster al ister alma."
+		"dealer_message_last_offer_1"	"<!--0-->Bunu son teklifim olarak düşün."
+		"dealer_message_last_offer_2"	"<!--0-->Son teklif. İster al ister alma. Vaktimi boşa harcamayalım."
+		"dealer_message_last_offer_3"	"<!--0-->Son teklif.<!--1--> İstemiyorsan geri çekil. Bu şey PATLAYACAK."
+		"dealer_message_last_offer_4"	"<!--0-->Son teklifim. Yalvaracak değilim."
+		"dealer_message_last_offer_5"	"<!--0-->Pekala, son oluru bu."
+		"dealer_message_last_offer_6"	"<!--0-->Peki. Buna bak. Ne diyorsun?"		
+		"dealer_message_last_offer_7"	"<!--0-->En iyi ve en son teklifim."
+		"dealer_message_last_offer_8"	"<!--0-->Ortada buluşalım. Elimden gelen bu kadar."
+		"dealer_message_last_offer_9"	"<!--0-->Bundan daha iyi bir teklifim olmayacak."	
+
+		"dealer_message_end_0"			"<!--0-->Pekala, şansını kaybettin. Şu anda patlayacak bağlantı terminalini tutuyorsan, bırakmanı öneririm. Üç... iki..."
+		"dealer_message_end_1"			"<!--0-->En azından, bir gün sana ateş edilirken elin az önce almadığın silahı aradığında, aklına gelecek bir ders olur."
+		"dealer_message_end_2"			"<!--0-->Peki, yalvaracak hâlim yok. Umarım bundan bedava bir bağlantı terminali kazanacağını düşünmüyordun."
+		"dealer_message_end_3"			"<!--0-->Senin fırsatın, senin kararın ve muhtemelen senin cenazen.<!--1-->Mümkünse patlamak üzere olan bağlantı terminalinden uzaklaş."
+
+		"dealer_message_timerexpired_0"		"<!--.1-->Neyse boşver."
+		"dealer_message_timerexpired_1"		"<!--.1-->Boşver<!--.5-->Fırsatı kaçırdın."
+		"dealer_message_timerexpired_2"		"<!--.1-->Teklif artık geçersiz.<!--.5-->İşim gücüm var."
+		"dealer_message_timerexpired_3"		"<!--.1-->Gerçekten satın alacak müşterilere ihtiyacım var<!--.5-->Gidebilirsin."
+		"dealer_message_timerexpired_4"		"<!--.1-->Karar senin.<!--.5-->Görüşürüz."
+		"dealer_message_timerexpired_5"		"<!--.1-->Tik tak.<!--.5-->Süre bitti."
+		"dealer_message_timerexpired_6"		"<!--.1-->Teklif iptal.<!--.5-->Başka yerde bunu on kere satmıştım şimdi."
+		"dealer_message_timerexpired_7"		"<!--.1-->Sana düşmanlarını harcaman için yardım ettiğimi sanıyordum.<!--.5-->Meğer sen vaktimi boşa harcıyormuşsun."
+		"dealer_message_timerexpired_8"		"<!--.1-->Anlaşamadık."	
+		"dealer_message_timerexpired_9"		"<!--.1-->Süre doldu."
+		"dealer_message_timerexpired_10"	"<!--.1-->Artık gerçekten sıkıldım. Buraya kadar."		
+
+		"dealer_message_open_check_out_0"		"<!--.5-->Bu tam sana göreydi. Bu yüzden ilk aklıma sen geldin. Hadi satışı tamamlayalım."
+		"dealer_message_open_check_out_1"		"<!--.5-->Harika bir karar. Paketleyip hazırlıyorum."
+		"dealer_message_open_check_out_2"		"<!--.5-->Bunu aldığına pişman olmayacaksın. Ama eminim düşmaların doğduğuna pişman olacak."
+		"dealer_message_open_check_out_3"		"<!--.5-->Alıcı olduğunu biliyordum. Hadi alışverişi tamamlayalım."
+		"dealer_message_open_check_out_4"		"<!--.5-->Harika. Hadi bitirelim bu işi."		
+		"dealer_message_open_check_out_5"		"<!--.5-->Güzel seçim."	
+		"dealer_message_open_check_out_6"		"<!--.5-->Hayatında verdiğin en akıllıca karar. Hadi işlemi tamamlayalım."		
+		"dealer_message_open_check_out_7"		"<!--.5-->Güzel. Hadi bu işi bitirelim."
+
+		"dealer_message_txn_xld_bailout_0"		"<!--.5-->Acele etme. Bana nasıl ulaşacağını biliyorsun."
+		"dealer_message_txn_xld_bailout_1"		"<!--.5-->Buralarda olacağım."
+		"dealer_message_txn_xld_bailout_2"		"<!--.5-->Teklifi şimdilik masada bırakıyorum."
+		"dealer_message_txn_xld_bailout_3"		"<!--.5-->Geri döneceksin. Biraz düşün istersen."
+
+		"dealer_message_purchase_finalizing_0"	"Satın alma işlemi tamamlanıyor..."
+		"dealer_message_purchase_confirm_0"		"<!--.5-->Anlaştık."
+
+		"dealer_message_stattrack_0"			"Tabii ki StatTrak™ takılı."
+		"dealer_message_stattrack_1"			"Bu bebeğe de StatTrak™ takılı."
+		"dealer_message_stattrack_2"			"StatTrak™ takılı. Sayıları aklında tutmana gerek yok."
+		"dealer_message_stattrack_3"			"StatTrak™ dâhil. Sen tetiği çek, hesaplamayı ona bırak."
+		"dealer_message_stattrack_4"			"StatTrak™. Skor tablosu gibi. Ama insanları öldürdüğün bir sporda."
+		"dealer_message_stattrack_6"			"StatTrak™ dâhil. Cinayeti ve istatistikleri seven profesyoneller için."
+		"dealer_message_stattrack_7"			"Elbette StatTrak™ takılı."
+		"dealer_message_factory_new_0"			"Yepyeni. Ciddiyim. Kokladım."
+		"dealer_message_factory_new_1"			"Fabrikadan yeni çıktı. Hâlâ yeni silah kokusu var."
+		"dealer_message_factory_new_2"			"Hiç kullanılmamış. Tetiği ilk sen çekeceksin."
+		"dealer_message_factory_new_3"			"Fabrikadan yeni çıktı. Aşınma, eskime yok. Tam istediğin gibi."
+		"dealer_message_factory_new_4"			"Temiz ve yeni. Çiziği, geçmişi yok. Bundan sonrası sende."
+		"dealer_message_factory_new_5"			"Fabrikadan yeni çıktı. Hiç ateş edilmedi. Tertemiz."
+		"dealer_message_covert_0"				"Çok şanslısın. Bu silah sadece nadir değil, aynı zamanda çok gizli."
+		"dealer_message_covert_1"				"On yıldır bu işteyim ve piyasada bununla hiç karşılaşmadım.<!--.5-->Zevk sahibisin. Şanslısın da."
+		"dealer_message_covert_2"				"Bunu elde etmek için kendi annelerini bile satacak alıcılar tanıyorum. Bravo."
+		"dealer_message_covert_3"				"Bak şimdi tereddüt etmeye başladım. Hadi al da git yoksa sattığıma pişman olacağım."
+		"dealer_message_covert_4"				"Çok gizli bir parça bu. Böyle bir şeyi piyasada belki bir kere görürsün, o da şanslıysan.<!--.5-->Şanslı günündeymişsin."
+		"dealer_message_covert_5"				"Bu silah çok değerli. Zaten biliyorsun. Bir alıcım bunun için bir yıl önce sıraya girdi. Sana kısmetmiş."
+		"dealer_message_covert_6"				"Çok nadir bir şey. Bulması zor ama senin ayağına geldi."
+		"dealer_message_covert_7"				"Bunu geçimini bu tür malları arayarak sağlayan biri olarak söylüyorum. Bu silahı bulmak çok ama çok zordu."
+		"dealer_message_covert_8"				"Umarım bunun ne kadar iyi bir alışveriş olduğunun farkındasındır. Bu gizli bir parça. Tabiri caizse tek boynuzlu at."
+		"dealer_message_covert_9"				"Sattığıma pişman olmadan önce şunu gözümün önünden çekip silah depona koysan iyi olur. Çok nadir bir parça."
+		"dealer_message_classified_0"				"Gizli. Temiz ve evraksız. Kayıt dışı satılıyor."
+		"dealer_message_classified_1"				"Gizli. Evraksız. Temiz bir parça, izi sürülemez."
+		"dealer_message_classified_2"				"Gizli. Karaborsa malı, evraksız. Elimde tuttuğum şey teknik olarak yok bile."
+		"dealer_message_classified_3"				"Sadece özel olarak satılıyor. Gizli. Güle güle kullan."
+		"dealer_message_classified_4"				"Gizli. Seri numarası yok, evrak yok."
+		"dealer_message_classified_5"				"Gizli. Sadece üstü kapalı yollarla satılıyor. Parçalara ayrıldı. Tamamen kayıt dışı. Görmedim bile."
+		"dealer_message_restricted_0"				"Sınırlı. Daha iyi mekanik, daha isabetli atış. Standart modele kıyasla çok daha iyi."
+		"dealer_message_restricted_1"				"Bunun sınırlı olmasının bir sebebi var. Performansı siviller için biraz fazla iyi."
+		"dealer_message_restricted_2"				"Sınırlı tabii ki. Kanunen kısıtlı kategoride. Yeni favori parçan."
+		"dealer_message_battle_scarred_0"		"Yer yer ezikler var ama yine de düzgün ateş ediyor."
+		"dealer_message_battle_scarred_1"		"Biraz hırpalanmış ama sonuçta çok fazla şey atlattı ve hâlâ sapasağlam."
+		"dealer_message_battle_scarred_2"		"Savaş alanından alındı. Bir iki çatışmaya girdi ama dayanıklı."
+		"dealer_message_battle_scarred_3"		"Ben buna aşınmış demezdim, savaşta test edilmiş derdim."
+		"dealer_message_battle_scarred_4"		"Bu silah çok şey atlattı. Biraz kozmetik aşınma var ama hâlâ sağlam."
+		"dealer_message_minimal_wear_0"			"Neredeyse hiç aşınmamış. Bir iki çiziği var o kadar. İş görür."
+		"dealer_message_minimal_wear_1"			"Sıfır. Yani sıfır gibi. Çok az kullanılmış."
+		"dealer_message_minimal_wear_2"			"Hafif aşınmış. Kullanımdan dolayı. Önemli bir şey değil."
+		"dealer_message_minimal_wear_3"			"Hafif aşınmış. Biraz hasarlı ama silah depona eklediğine pişman olmayacaksın."
+		"dealer_message_minimal_wear_4"			"Az çatışmaya girmedi, yalan yok. Emektar."
+		"dealer_message_usp-s_0"				"Kimseyi uyandırmaz. Sessiz ve sakin."
+		"dealer_message_usp-s_1"				"Sessiz, dikkat çekmez. Bazı şeylerin aramızda sır kalması gerek."
+		"dealer_message_usp-s_2"				"O kadar sessiz ki, hedefini gafil avlar."
+		"dealer_message_usp-s_3"				"Çıt çıkarmaz."
+		"dealer_message_item_desc_0"			"<!--.25-->Bunun üzerinde not var:<!--.25-->{s:flavor-text}<!--.25-->O da ne demekse."
+		"dealer_message_item_desc_1"			"<!--.25-->Buna not eklenmiş:<!--.25-->{s:flavor-text}"
+
+		"dealer_message_addition_stattrak_0"	"<!--.25-->...ve StatTrak™ takılı."
+		"dealer_message_addition_stattrak_1"	"<!--.25-->StatTrak™ modülü takılı."
+		"dealer_message_addition_stattrak_2"	"<!--.25-->StatTrak™ ile yaratacağın kaosu takip et."
+		"dealer_message_addition_stattrak_3"	"<!--.25-->StatTrak™ de takılı."
+		"dealer_message_addition_stattrak_4"	"<!--.25-->Üstelik StatTrak™ takılı. Ne kadar acı çektirdiğini takip edebilirsin."
+
+		"dealer_message_addition_factory_new_0"	"<!--.25-->Fabrikadan yeni çıktı. Hiç ateş edilmedi."
+		"dealer_message_addition_factory_new_1"	"<!--.25-->Fabrikadan yeni çıktı. Yepyeni."
+		"dealer_message_addition_factory_new_2"	"<!--.25-->Depodan yeni çıktı. Hiç kullanılmadı."
+		"dealer_message_addition_factory_new_3"	"<!--.25-->Yepyeni. Hiç ateş edilmedi."
+		
+		"dealer_message_limit_first_time_0"		"Tamam, sadece {s:limit} limitine kadar olan teklifleri göstereceğim.<!--.25--> Bakalım sana uygun ne varmış."
+		"dealer_message_limit_first_time_2"		"Yalnızca {s:limit} altındaki teklifler, tamamdır.<!--.25--> Süre daralıyor, hadi başlayalım."
+		"dealer_message_limit_first_time_3"		"Anladım ve güncelledim.<!--.25--> İşte."
+		"dealer_message_limit_first_time_unlimited_0"		"Sınır yok demek, harika. Güncel kataloğu açacağım.<!--.25--> Süre daralıyor. Hadi başlayalım."
+		"dealer_message_limit_first_time_unlimited_1"		"Anlaşıldı. Sınırsız. Şimdi oldu.<!--.25--> Bakalım sana göre ne var."
+
+		"dealer_message_limit_0"				"Tamam, sadece {s:limit} limitine kadar olan teklifleri göstereceğim."
+		"dealer_message_limit_1"				"Yalnızca {s:limit} altındaki teklifler, tamamdır."
+		"dealer_message_limit_2"				"Limiti uyguluyorum. Sadece {s:limit} ve altındaki teklifler."
+		"dealer_message_limit_3"				"En fazla {s:limit}. Anlaşıldı ve güncellendi."
+		"dealer_message_limit_4"				"Sadece etikete uyanları göstereceğim, en fazla {s:limit} olacak."
+		"dealer_message_limit_5"				"{s:limit}. Yeni limit tamamdır."
+		"dealer_message_limit_6"				"Anlaşıldı. Teklifler en fazla {s:limit} olacak şekilde sıfırlanıyor."
+		"dealer_message_limit_unlimited_0"		"Sınır yok demek, harika. Güncel kataloğu açacağım."
+		"dealer_message_limit_unlimited_1"		"Anladım, sınırsız. Sıra dışı bir şeyler çıkarsa göstereceğim."
+		"dealer_message_limit_unlimited_2"		"Tam duymak istediğim şey. Çok değerli bir şey gelirse sana göstermekten çekinmeyeceğim."
+		"dealer_message_limit_unlimited_3"		"Anlaşıldı. Sınırsız. Şimdi oldu."
+
+		"system_dealer_left_chat_0"				"Satıcı sohbetten çıktı."
+		"system_dealer_join_chat_0"				"{s:collection} Silah Taciri Teklifleri.<!--1.25-->Satıcı Bağlandı"
+		"system_user_reject_offer_0"			"{s:user-name} teklifi reddetti."
+
+		"system_user_updated_offer_limit_0"			"Maksimum teklif limiti {s:limit} olarak güncellendi. İstediğin zaman güncelleyebilirsin."
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//Retakes
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		"GameUI_Retake_DefendA"					"A Alanını Koru!"
+		"GameUI_Retake_DefendB"					"B Alanını Koru!"
+		"GameUI_Retake_RetakeA"					"A Alanını Geri Al!"
+		"GameUI_Retake_RetakeB"					"B Alanını Geri Al!"
+		"GameUI_Retake_Notice_MvpCardAvailable"	"Tebrikler! EDO bonus kartı bir sonraki rauntta alınabilir!"
+		"GameUI_Retake_Card_CardsPreview"		"Kart Ön İzlemesi"
+		"GameUI_Retake_Card_AvailableCard"		"Bu ekipmanı seç"
+		"GameUI_Retake_Card_AvailableCards"		"Bir ekipman seç"
+
+		"GameUI_Retake_Card_Bonus"				"Bonus"
+		"GameUI_Retake_Card_Enemy"				"Düşman Ekipmanı"
+		"GameUI_Retake_Card_Mvp"				"EDO"
+
+		"GameUI_Retake_Card_4v3"				"4v3"
+		"GameUI_Retake_Card_FlashOut"			"Flaşlıyorum!"
+		"GameUI_Retake_Card_HideAndPeek"		"Saklan ve Bak"
+		"GameUI_Retake_Card_TakeFive"			"Mola"
+		"GameUI_Retake_Card_OnlyTakesOne"		"Bir Kişi Yeter"
+		"GameUI_Retake_Card_SneakyBeakyLike"	"Sinsi Bir Tavuk Gibi"
+		"GameUI_Retake_Card_UmpInSmoke"			"Sisteki UMP"
+		"GameUI_Retake_Card_FunNGun"			"Hızlı Ve Eğlenceli"
+		"GameUI_Retake_Card_Sharpshooter"		"Keskin Nişancı"
+		"GameUI_Retake_Card_BurstBullpup"		"Üçlü Bullpup"
+		"GameUI_Retake_Card_LightEmUp"			"Parlak Gözlü"
+		"GameUI_Retake_Card_Kobe"				"Kobe!"
+		"GameUI_Retake_Card_1g"					"1g"
+		"GameUI_Retake_Card_DisappearingAct"	"Kayboluş Numarası"
+		"GameUI_Retake_Card_EyesOnTarget"		"Gözler Hedefte"
+		"GameUI_Retake_Card_BehindEnemyLines"	"Düşman Hatlarının Arkasında"
+		"GameUI_Retake_Card_4BadGuysLeft"		"4 Kötü Adam Kaldı"
+		"GameUI_Retake_Card_LookAway"			"Başka Yere Bak!"
+		"GameUI_Retake_Card_WhenThereIsSmoke"	"Duman Olan Yerde..."
+		"GameUI_Retake_Card_BlindFire"			"Kör Ateş"
+		"GameUI_Retake_Card_QueOta"				"Qué ota?"
+		"GameUI_Retake_Card_SmokeScreen"		"Sis Perdesi"
+		"GameUI_Retake_Card_TecTecBoom"			"TEC, TEC, BUM!"
+		"GameUI_Retake_Card_BackInAFlash"		"Kör Edici Geri Dönüş"
+		"GameUI_Retake_Card_AllIn"				"Rest"
+		"GameUI_Retake_Card_BoomBox"			"Boom Box"
+		"GameUI_Retake_Card_SetThemFree"		"Onları Özgür Bırak"
+		"GameUI_Retake_Card_OlReliable"			"Emektar"
+		"GameUI_Retake_Card_SmokeShow"			"Sis Şovu"
+		"GameUI_Retake_Card_HotShot"			"Sıcak Atış"
+		"GameUI_Retake_Card_EyeSpy"				"Casus Göz"
+		"GameUI_Retake_Card_TheAWPortunity"		"AWP Fırsatı"
+		"GameUI_Retake_Card_FindersKeepers"		"Mal Bulanındır"
+
+		"Hud_Retake_BombSite"					"{s:hud-retake-bombsite}"
+		
+		"Hud_Money" "${d:r:hud-money-amount}"
+		"Hud_Money_Signed" "{s:sign}${d:r:hud-money-delta}"
+
+		"Propcounter_money" "$%s1" //e.g. used on danger zone security door
+
+		"csgo_player_left_game"					" %s1 oyundan ayrıldı (%s2)"
+
+		"LoadoutLockedPopupTitle"				"Ekipman Kilitli"
+		"LoadoutLockedPopupText"				"Rekabetçi eşleştirme süresince ekipman değişikliklerine izin verilmez."
+
+		"Workshop_item_title" "Eşya Gönderme Aracı"
+		"Workshop_item_error_title" "Eşyanız için bir başlık girin. Bu, oyuncu adını veya diğer tanımlayıcı bilgileri içermelidir."
+		"Workshop_item_error_image" "{s:max_size} boyutundan küçük ve en az {d:min_height} genişlik/yüksekliğe sahip JPEG veya PNG türünde geçerli bir görseli seçin."
+		"Workshop_item_ready" "Gönderim yüklenmeye hazır"
+		"SFUI_Go_To_Mic_Enable_key" "Mikrofon Tuş Atamasına Git"
+		"SFUI_Go_To_Console_Key_Binding" "Konsol Tuş Atamasına Git"
+
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//Steam Video
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		"SteamVideo_Player_Kill_Title"					"%s1 adlı oyuncuyu öldürdün"
+		"SteamVideo_Player_Kill_Description"			"Silah: %s1"
+
+		"SteamVideo_Player_Double_Kill_Title"			"İki leş"
+		"SteamVideo_Player_Multi_Kill_Title"			"Çoklu leş"
+		
+		"SteamVideo_Player_Death_Title"					"%s1 tarafından öldürüldün"
+		"SteamVideo_Player_Death_Description"			"Silah: %s1"
+		"SteamVideo_Player_Death_Description_Plural"	"Silah: %s1"
+		"SteamVideo_Player_Killed_Self_Title"			"Kendini öldürdün"
+		
+		"SteamVideo_Bomb_Planted_Title"					"Bomba kuruldu"
+		"SteamVideo_Bomb_Planted"						"%s1 bombayı kurdu"
+		"SteamVideo_Bomb_Planted_LocalPlayer"			"Bombayı kurdun"
+		
+		"SteamVideo_Bomb_Defused_Title"					"Bomba imha edildi"
+		"SteamVideo_Bomb_Defused"						"%s1 bombayı imha etti"
+		"SteamVideo_Bomb_Defused_LocalPlayer"			"Bombayı imha ettin"
+		
+		"SteamVideo_Bomb_Exploded_Title"				"Bomba patladı"
+		
+		"SteamVideo_Round_Number_Label"					"Raunt %s1"
+		"SteamVideo_Start_Of_Round_Title"				"%s1. raundun başı"
+
+		"SteamVideo_MatchScore"							"Skor"
+		"SteamVideo_KDA"								"L/Ö/A"
+
+		// ---------------------------------------------------------------------------------------------
+		// WEEKLY MISSIONS
+		// ---------------------------------------------------------------------------------------------
+		"weekly_mission_title"							"GÖREV"
+		"weekly_mission_title_complete"					"GÖREV TAMAMLANDI"
+		"weekly_mission_expiration"						"Bitmesine: <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_expiration_pausemenu"			"Bitmesine: <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_next_mission"					"Sonraki Göreve: <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_progress"						"<b>{d:mission-progress}</b>/{d:mission-points}"
+		"CS2_Quest_Weapon_Mode"							"Ekipman Ustalığı: <b>{s:gamemode}</b>, <b>{s:weapon}</b>"
+		"CS2_Quest_Weapon_Mode_desc"					"<b>{s:gamemode}</b> maçlarında <b>{s:weapon}</b> ile {s:optional_target}{s:actions} yap."
+
+		"mission_searching"								"Aranıyor..."
+		"mission_xp_remaining"							"{s:mission-xp} TP"
+
+		"mission_segment_tooltip"						"{d:xp-reward} TP"
+
+		"mission_location"								"<b>{s:gamemode}</b> - <b>{s:location}</b>"
+		"mission_directive:f"							"{mission-points, plural, one{<b>{d:mission-points}</b> {s:action}} other{<b>{d:mission-points}</b> {s:actions}}}"
+ 		"mission_directive_progress:f"					"{mission-points, plural, one{{d:mission-progress}/<b>{d:mission-points}</b> {s:action}} other{{d:mission-progress}/<b>{d:mission-points}</b> {s:actions}}}"
+
+
+		"quest_11000_var_desc:f"	  					"{mission-points, plural, one{<b>{s:gamemode}: {s:location}</b> oynarken {s:item1} ile bir leş yap.} other{<b>{s:gamemode}: {s:location}</b> oynarken {s:item1} ile birden fazla leş yap.}}"
+		"quest_11000_var_partial:f" 					"... {s:item1} ile."
+		"quest_11000_var_ingame:f"	  					"{mission-points, plural, one{{s:item1} ile bir leş yap.} other{{s:item1} ile birden fazla leş yap.}}"
+
+		"quest_11001_var_desc:f"	 					"{mission-points, plural, one{<b>{s:gamemode}: {s:location}</b> oynarken {s:item1} ile bir leş yap.} other{<b>{s:gamemode}: {s:location}</b> oynarken {s:item1} ile birden fazla leş yap.}}"
+		"quest_11001_var_partial:f"	 					"... {s:item1} ile."
+		"quest_11001_var_ingame:f"	 					"{mission-points, plural, one{{s:item1} ile bir leş yap.} other{{s:item1} ile birden fazla leş yap.}}"
+
+		"quest_11002_var_desc:f"	 					"{mission-points, plural, one{<b>{s:gamemode}: {s:location}</b> oynarken {s:item1} ile bir leş yap.} other{<b>{s:gamemode}: {s:location}</b> oynarken {s:item1} ile birden fazla leş yap.}}"
+		"quest_11002_var_partial:f"	 					"... {s:item1} ile."
+		"quest_11002_var_ingame:f"	 					"{mission-points, plural, one{{s:item1} ile bir leş yap.} other{{s:item1} ile birden fazla leş yap.}}"
+
+		"quest_11003_var_desc:f"						"{mission-points, plural, one{<b>{s:gamemode}: {s:location}</b> oynarken {s:item1} ile bir leş yap.} other{<b>{s:gamemode}: {s:location}</b> oynarken {s:item1} ile birden fazla leş yap.}}"
+		"quest_11003_var_partial:f"	 					"... {s:item1} ile."
+		"quest_11003_var_ingame:f"	 					"{mission-points, plural, one{{s:item1} ile bir leş yap.} other{{s:item1} ile birden fazla leş yap.}}"
+
+		"quest_11004_var_desc:f"	 					"{mission-points, plural, one{<b>{s:gamemode}: {s:location}</b> oynarken bir raunt kazan.} other{<b>{s:gamemode}: {s:location}</b> oynarken birden fazla raunt kazan.}}"
+		"quest_11004_var_ingame:f"						"{mission-points, plural, one{Bir raunt kazan.} other{Birden fazla raunt kazan.}}"
+
+		"quest_11005_var_desc:f"	 					"{mission-points, plural, one{<b>{s:gamemode}: {s:location}</b> oynarken bir raunt kazan.} other{<b>{s:gamemode}: {s:location}</b> oynarken birden fazla raunt kazan.}}"
+		"quest_11005_var_ingame:f"						"{mission-points, plural, one{Bir raunt kazan.} other{Birden fazla raunt kazan.}}"
+
+		"quest_11006_var_desc:f"	 					"{mission-points, plural, one{<b>{s:gamemode}: {s:location}</b> oynarken bir raunt kazan.} other{<b>{s:gamemode}: {s:location}</b> oynarken birden fazla raunt kazan.}}"
+		"quest_11006_var_ingame:f"						"{mission-points, plural, one{Bir raunt kazan.} other{Birden fazla raunt kazan.}}"
+
+		"quest_11007_var_desc:f"	 					"{mission-points, plural, one{<b>{s:gamemode}: {s:location}</b> oynarken {s:item1} ile bir leş yap.} other{<b>{s:gamemode}: {s:location}</b> oynarken {s:item1} ile birden fazla leş yap.}}"
+		"quest_11007_var_partial:f"	 					"... {s:item1} ile."
+		"quest_11007_var_ingame:f"	 					"{mission-points, plural, one{{s:item1} ile bir leş yap.} other{{s:item1} ile birden fazla leş yap.}}"
+
+		"quest_11008_var_desc:f"	 					"{mission-points, plural, one{<b>{s:gamemode}: {s:location}</b> oynarken bir raunt kazan.} other{<b>{s:gamemode}: {s:location}</b> oynarken birden fazla raunt kazan.}}"
+		"quest_11008_var_ingame:f"						"{mission-points, plural, one{Bir raunt kazan.} other{Birden fazla raunt kazan.}}"
+
+		"quest_11009_var_desc:f"	 					"{mission-points, plural, one{<b>{s:gamemode}: {s:location}</b> oynarken bir raunt kazan.} other{<b>{s:gamemode}: {s:location}</b> oynarken birden fazla raunt kazan.}}"
+		"quest_11009_var_ingame:f"						"{mission-points, plural, one{Bir raunt kazan.} other{Birden fazla raunt kazan.}}"
+
+		"quest_11010_var_desc:f"	 					"{mission-points, plural, one{<b>{s:gamemode}: {s:location}</b> oynarken {s:item1} ile bir leş yap.} other{<b>{s:gamemode}: {s:location}</b> oynarken {s:item1} ile birden fazla leş yap.}}"
+		"quest_11010_var_partial:f"	 					"... {s:item1} ile."
+		"quest_11010_var_ingame:f"	 					"{mission-points, plural, one{{s:item1} ile bir leş yap.} other{{s:item1} ile birden fazla leş yap.}}"
+
+		"quest_11011_var_desc:f"	 					"{mission-points, plural, one{<b>{s:gamemode}: {s:location}</b> oynarken bir raunt kazan.} other{<b>{s:gamemode}: {s:location}</b> oynarken birden fazla raunt kazan.}}"
+		"quest_11011_var_ingame:f"						"{mission-points, plural, one{Bir raunt kazan.} other{Birden fazla raunt kazan.}}"
+
+		"quest_11012_var_desc:f"	 					"{mission-points, plural, one{<b>{s:gamemode}: {s:location}</b> oynarken bir raunt kazan.} other{<b>{s:gamemode}: {s:location}</b> oynarken birden fazla raunt kazan.}}"
+		"quest_11012_var_ingame:f"						"{mission-points, plural, one{Bir raunt kazan.} other{Birden fazla raunt kazan.}}"
+
+		"quest_11013_var_desc:f"	 					"{mission-points, plural, one{<b>{s:gamemode}: {s:location}</b> oynarken bir raunt kazan.} other{<b>{s:gamemode}: {s:location}</b> oynarken birden fazla raunt kazan.}}"
+		"quest_11013_var_ingame:f"						"{mission-points, plural, one{Bir raunt kazan.} other{Birden fazla raunt kazan.}}"
+
+		"quest_11014_var_desc:f"	 					"{mission-points, plural, one{<b>{s:gamemode}: {s:location}</b> oynarken bir raunt kazan.} other{<b>{s:gamemode}: {s:location}</b> oynarken birden fazla raunt kazan.}}"
+		"quest_11014_var_ingame:f"						"{mission-points, plural, one{Bir raunt kazan.} other{Birden fazla raunt kazan.}}"
+
+		"quest_11015_var_desc:f"	 					"{mission-points, plural, one{<b>{s:gamemode}: {s:location}</b> oynarken bir raunt kazan.} other{<b>{s:gamemode}: {s:location}</b> oynarken birden fazla raunt kazan.}}"
+		"quest_11015_var_ingame:f"						"{mission-points, plural, one{Bir raunt kazan.} other{Birden fazla raunt kazan.}}"
+
+// ---------------------------------------------------------------------------------------------
+// Join Friend Listen Servers
+// ---------------------------------------------------------------------------------------------
+
+		"tooltip_viewaddon"				"Özel haritanın atölye sayfasına git"
+		"tooltip_kick_player"			"Oyuncuyu yerel sunucudan at"		
+		"tooltip_short_viewaddon"			"Özel Haritayı Görüntüle"
+		"tooltip_short_kick_player"			"At"
+
+// crow_mask_50454_comment
+// crow_mask_50455_comment
+}
+
+
+
+
+}
+
+
+ietest_desc"						"En az duyulan ayak sesi:"
 		"accolade_quietest_value"						"{s:accolade-value-string}"
 
 		"accolade_quietest_2"							"İz Sürücü"

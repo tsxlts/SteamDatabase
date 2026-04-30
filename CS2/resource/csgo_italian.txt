@@ -1968,8 +1968,8 @@
 		"Team_Cash_Award_no_income_suicide"					" +0$ di penalità per il suicidio."
 		"Team_Cash_Award_Generic"							" +%s1 $ di guadagno di squadra."
 		"Team_Cash_Award_Custom"							" +%s1 $ %s2"
-		"Team_Cash_Award_Dead_Terrorists:p"					" +%s1 $ alla squadra per aver eliminato %s2 Terrorista.#|# +%s1 $ alla squadra per aver eliminato %s2 Terroristi."
-		"Team_Cash_Award_Dead_CTs:p"						" +%s1 $ alla squadra per aver eliminato %s2 AT.#|# +%s1 $ alla squadra per aver eliminato %s2 AT."
+		"Team_Cash_Award_Dead_Terrorists:f"					"+%s1 $ alla squadra per aver eliminato {num_enemies} {num_enemies, plural, one{terrorista} other{terroristi}}."
+		"Team_Cash_Award_Dead_CTs:f"						"+%s1 $ alla squadra per aver eliminato {num_enemies} {num_enemies, plural, one{Anti-Terrorista} other{Anti-Terroristi}}."
 
 
 		"Notice_Bonus_Shorthanded_Eligibility"			" La tua squadra otterrà un bonus di inferiorità numerica tra %s1 round."
@@ -2329,10 +2329,14 @@
 		// Econ date formatting supports the following tokens:
 		//    %year%, %monthshort%, %monthlong%, %mmday% (01-31), %mday% (1-31), %day% (legacy unlocalized "Jul 30" shouldn't be used), %hour%, %min%, %sec%
 		//
-		"Econ_DateFormat"						"%mmday% %monthshort% %year% (%hour%:%min%:%sec%)"
-		"Econ_DateFormat_GMT"					"%mmday% %monthshort% %year% (%hour%:%min%:%sec%) (GMT)"
-		"Econ_DateFormat_DateOnly"				"%mmday% %monthshort% %year%"
-		"Econ_DateFormat_GMT_DateOnly"			"%mmday% %monthshort% %year% (GMT)"
+		"Econ_DateFormat:f"							"{mmday} {monthshort} {year} ({hour}:{min}:{sec})"
+		"Econ_DateFormat_GMT:f"						"{mmday} {monthshort} {year} ({hour}:{min}:{sec}) (GMT)"
+		"Econ_DateFormat_DateOnly:f"				"{mmday} {monthshort} {year}"
+		"Econ_DateFormat_GMT_DateOnly:f"			"{mmday} {monthshort} {year} (GMT)"
+		"Econ_DateFormat"							"%mmday% %monthshort% %year% (%hour%:%min%:%sec%)"
+		"Econ_DateFormat_GMT"						"%mmday% %monthshort% %year% (%hour%:%min%:%sec%) (GMT)"
+		"Econ_DateFormat_DateOnly"					"%mmday% %monthshort% %year%"
+		"Econ_DateFormat_GMT_DateOnly"				"%mmday% %monthshort% %year% (GMT)"
 		"Econ_Loot_List_Sticker_ProPlayerSignatures" "L'adesivo può essere autografato da uno dei seguenti giocatori professionisti:"
 		"Econ_Loot_List_Sticker_ProPlayerSignatures_AndSomeMore" "... e altri %s1 giocatori professionisti"
 		"Econ_Loot_List_Sticker_ProOrgsStickers"	"L'adesivo può rappresentare una delle seguenti organizzazioni:"
@@ -5851,1256 +5855,15 @@
 		
 		"quest"										"Missione"
 
-		"quest_totalgoal_points_desc"				"%actions% totali richiesti: <b>%points%</b>" // special non-breaking space characters in this string, edit carefully!
-		"quest_attrremaining_points_desc"			"%actions% rimanenti: <b>%points%</b>" // special non-breaking space characters in this string, edit carefully!
-		"quest_uncommitted_points_desc"				"%actions% rimanenti: <b>%points%</b> (<b>%points uncommitted%</b> ottenuti in questa partita)" // special non-breaking space characters in this string, edit carefully!
-		"quest_uncommitted_points_warn"				" * <i>%actions% verranno registrati al termine di questa partita</i>"
-	
-		"quest_uncommitted_points_chat_one"	" Missione completata: %action% ottenuto."
-		"quest_uncommitted_points_chat_singular"	" Progresso della missione: +%points% %action% ottenuto."
-		"quest_uncommitted_points_chat_plural"		" Progresso della missione: +%points% %actions% ottenuti."
-		"quest_uncommitted_points_chat_event"		" Missione lampo: +1 %action%."		
+		"quest_commandverb_default"					"Ottieni"
 
-		"quest_reward_desc"								"Le ricompense di questa missione da\n<b>%s1</b>:"
+		"quest_action_plural_act_kill_human"		"uccisioni"
+		"quest_action_singular_act_kill_human"		"uccisione"
 
-		"quest_reward_xp"									"Ricompensa della missione: <b>%s1</b> ESP"
-
-		"quest_event_totalgoal_points_desc"					"Guadagna punti ESP aggiuntivi per ogni \"<b>%action%</b>\" durante questo evento."
-		
-		"quest_bonus_desc"								"Bonus: +<b>%xpperbonusaction%</b> ESP per %action%—<i>%xpbonuscondition%.</i>"
-		"quest_bonus_fractional_desc"			"Bonus: +<b>%xpperbonusactions%</b> ESP per <b>%n_actions%</b> %actions%—<i>%xpbonuscondition%.</i>"
-		"quest_bonus_single_desc"					"Bonus: +<b>%xpperbonusaction%</b> ESP—<i>%xpbonuscondition%.</i>"
-
-
-		"quest_target_chicken"											"gallina"
-		"quest_target_human_or_chicken"									"umano o gallina"
-		"quest_target_hostagerescuer"									"soccorritore di ostaggi"
-		"quest_target_armsraceleader"									"leader di Corsa alle armi"
-
-		"quest_target_headshot"											"colpo alla testa"
-		"quest_target_airborne"											"in aria"
-		"quest_target_pistolround"										"pistola"
-
-		"quest_target_lockeddoor"										"porte chiuse"
-		"quest_target_explodingbarrel"									"barili esplosivi"
-		"quest_target_glasspane"										"pannelli di vetro"
-		"quest_target_enemydrone"										"droni nemici"
-
-		"quest_target_shotgun"											"fucile a pompa"
-		"quest_target_sniperrifle"										"fucile di precisione"
-		"quest_target_utility"											"granate"
-		"quest_target_defaultctpistol"									"pistola AT predefinita"
-		"quest_target_defaultpistol"									"pistola predefinita"
-		"quest_target_knife"											"coltello"
-
-		"quest_action_plural_act_kill_human"							"uccisioni"
-		"quest_action_singular_act_kill_human"							"uccisione"
-
-		"quest_action_plural_act_kill_chicken"							"uccisione"
-		"quest_action_singular_act_kill_chicken"						"uccisione"		
-
-		"quest_action_plural_act_protect_chicken"						"secondi passati a proteggere un pollo"
-		"quest_action_singular_act_protect_chicken"						"secondo passato a proteggere un pollo"	
-
-		"quest_action_plural_act_kill_target"							"assassini"
-		"quest_action_singular_act_kill_target"							"assassinio"		
-
-		"quest_action_plural_act_damage"								"danni"
-		"quest_action_singular_act_damage"								"punto danno inflitto"		
-
-		"quest_action_plural_act_win_match"								"vittorie"
-		"quest_action_singular_act_win_match"							"vittoria"		
-
-		"quest_action_plural_act_dz_game_end_placement"					"posizioni"
-		"quest_action_singular_act_dz_game_end_placement"				"posizione"	
-
-		"quest_action_plural_act_dz_purchase_item"					"acquisti"
-		"quest_action_singular_act_dz_purchase_item"				"acquisto"	
-
-		"quest_action_plural_act_win_round"								"round vinti"
-		"quest_action_singular_act_win_round"							"round vinto"	
-
-		"quest_action_plural_act_round_mvp"								"MVP"
-		"quest_action_singular_act_round_mvp"							"MVP"
-
-		"quest_action_plural_act_dm_bonus_points"						"punti"
-		"quest_action_singular_act_dm_bonus_points"						"punto"		
-
-		"quest_action_plural_act_armsrace_level"						"livelli"
-		"quest_action_singular_act_armsrace_level"						"livello"	
-
-		"quest_action_plural_act_gg_weapon_upgrade"						"miglioramenti"
-		"quest_action_singular_act_gg_weapon_upgrade"					"miglioramento"	
-
-		"quest_action_plural_act_gg_upgrade_to_knifegg"						"potenziamenti"
-		"quest_action_singular_act_gg_upgrade_to_knifegg"					"potenziamento"	
-				
-		"quest_action_plural_act_flashbang_enemy"						"nemici con le flashbang"
-		"quest_action_singular_act_flashbang_enemy"						"nemico con la flashbang"		
-		
-		"quest_action_plural_act_pick_up_hostage"						"ostaggi prelevati"
-		"quest_action_singular_act_pick_up_hostage"						"ostaggio prelevato"		
-		
-		"quest_action_plural_act_rescue_hostage"						"ostaggi salvati"
-		"quest_action_singular_act_rescue_hostage"						"ostaggio estratto"		
-		
-		"quest_action_plural_act_defuse_bomb"							"bombe disinnescate"
-		"quest_action_singular_act_defuse_bomb"							"bomba disinnescata"		
-		
-		"quest_action_plural_act_plant_bomb"							"bombe piazzate"
-		"quest_action_singular_act_plant_bomb"							"bomba piazzata"
-
-		"quest_action_singular_act_income"								"dollaro"
-		"quest_action_plural_act_income"								"denaro"
-		
-		"quest_action_singular_act_survivalincome"						"dollaro"
-		"quest_action_plural_act_survivalincome"						"dollari"
-
-		"quest_action_singular_act_spend"								"dollaro"
-		"quest_action_plural_act_spend"									"denaro"
-
-		"quest_action_singular_act_parachute_landed"					"secondo con il paracadute"
-		"quest_action_plural_act_parachute_landed"						"secondi con il paracadute"
-
-		"quest_action_singular_act_bumpmine_launch"						"lancio di mina da salto"
-		"quest_action_plural_act_bumpmine_launch"						"lanci di mine da salto"
-
-		"quest_action_singular_headshot_kill"							"uccisione con colpo alla testa"
-		"quest_action_plural_headshot_kill"								"uccisioni con colpo alla testa"
-
-		"quest_action_singular_multikill"								"round con uccisioni multiple"
-		"quest_action_plural_multikill"									"round con uccisioni multiple"
-
-		"quest_action_singular_act_apply_graffiti"						"graffito"
-		"quest_action_plural_act_apply_graffiti"						"graffiti"
-
-		"quest_action_singular_act_detonate_smokegrenade"				"granata fumogena"
-		"quest_action_plural_act_detonate_smokegrenade"					"granate fumogene"
-
-		"quest_action_singular_act_detonate_molotov"					"molotov"
-		"quest_action_plural_act_detonate_molotov"						"molotov"
-
-		"quest_action_singular_act_use_healthshot"						"iniezione"
-		"quest_action_plural_act_use_healthshot"						"iniezioni"
-		
-		"quest_action_singular_act_retakes_picked_enemy_card"			"selezione carta nemica"
-		"quest_action_plural_act_retakes_picked_enemy_card"				"selezioni carte nemiche"
-
-		"quest_action_singular_act_retakes_picked_mvp_card"				"selezione carte MVP"
-		"quest_action_plural_act_retakes_picked_mvp_card"				"selezioni carte MVP"
-//
-
-		"quest_action_plural_bomb_plants_or_defuses"					"bombe piazzate o disinnescate"
-		"quest_action_singular_bomb_plants_or_defuses"					"bomba piazzata o disinnescata"
-		
-		"quest_action_plural_rescue_or_kill_hostages"					"ostaggi salvati o soccorritori uccisi"
-		"quest_action_singular_rescue_or_kill_hostages"					"ostaggio salvato o soccorritore ucciso"		
-		
-		"quest_action_plural_damage_burn"								"danni da ustione"
-		"quest_action_singular_damage_burn"								"punti di danno da bruciatura"
-
-		"quest_commandverb_default"										"Ottieni"
-		"quest_commandverb_defaultCT"									"Come Anti-Terrorista, ottieni"
-		"quest_commandverb_defaultT"									"Come Terrorista, ottieni"
-		"quest_commandverb_deal"										"Infliggi"
-		"quest_commandverb_earn"										"Ottieni"
-		"quest_commandverb_earnT"										"Come Terrorista, guadagna"
-		"quest_commandverb_spend"										"Spendi"
-		"quest_commandverb_execute"										"Esegui"
-		"quest_commandverb_destroy"										"Distruggi"
-		"quest_commandverb_apply"										"Applica"
-		"quest_commandverb_throw"										"Lancia"
+		"quest_action_plural_act_win_round"			"round vinti"
+		"quest_action_singular_act_win_round"		"round vinto"	
 
 		////
-
-		"quest_condition_item_own"										"di tua proprietà"
-		"quest_condition_item_borrowed"									"di qualcun altro"									
-		"quest_condition_item_borrowed_teammate"						"di un compagno di squadra"									
-		"quest_condition_item_borrowed_enemy"							"di un nemico"									
-		"quest_condition_item_borrowed_victim"							"di una vittima"									
-		"quest_condition_item_nondefault"								"con una skin"
-
-		"quest_LoadoutSlot_Melee"										"coltello"
-		"quest_LoadoutSlot_Secondary"									"pistola"
-		"quest_LoadoutSlot_SMG"											"Mitra"
-		"quest_LoadoutSlot_Rifle"										"fucile"
-		"quest_LoadoutSlot_Heavy"										"arma pesante"
-		"quest_LoadoutSlot_Grenade"										"granata"
-
-		"quest_item_default"											"arma"
-
-////
-		"quest_event_ending"											"Termina tra %s1 minuti"
-		"quest_event_soon_hours"										"Inizia tra %s1 ore"
-		"quest_event_soon_hms"											"Inizia tra %s1:%s2:%s3"
-		"quest_event_today"												"Oggi %s1:%s2"
-		"quest_event_future"											"Comincia il %s1 %s2 alle %s3:%s4"
-		"quest_event_timer"												"Inizia tra %s1"
-
-////
-
-
-
-
-////////////////////////// generalized quest strings //////////////////////////////
-///
-///	Use these if applicable. If not, use this pattern to create new ones.
-///
-///
-///
-
-		"quest_default_0_items_desc" "%commandverb% %target% %actions% in partite <b>%gamemode%: %location%</b>"		
-		"quest_default_1_items_desc" "%commandverb% %target% %actions% con qualunque <b>%item1%</b> <i>%item_quality%</i> in partite <b>%gamemode%: %location%</b>."
-		"quest_default_2_items_desc" "%commandverb% %target% %actions% con qualunque <b>%item1%</b> o <b>%item2%</b> <i>%item_quality%</i> in partite <b>%gamemode%: %location%</b>."
-		"quest_default_3_items_desc" "%commandverb% %target% %actions% con qualunque <b>%item1%</b>, <b>%item2%</b> o <b>%item3%</b> <i>%item_quality%</i> in partite <b>%gamemode%: %location%</b>."
-		"quest_default_4_items_desc" "%commandverb% %target% %actions% con qualunque <b>%item1%</b>, <b>%item2%</b>, <b>%item3%</b> o <b>%item4%</b> <i>%item_quality%</i> in partite <b>%gamemode%: %location%</b>."
-
-		"quest_default_hud_0_items_desc" "%commandverb% %target% %actions%"
-		"quest_default_hud_1_items_desc" "%commandverb% %target% %actions% con: <b>%item1%</b> <i>%item_quality%</i>"
-		"quest_default_hud_2_items_desc" "%commandverb% %target% %actions% con: <b>%item1%</b>/<b>%item2%</b> <i>%item_quality%</i>"
-		"quest_default_hud_3_items_desc" "%commandverb% %target% %actions% con: <b>%item1%</b>/<b>%item2%</b>/<b>%item3%</b> <i>%item_quality%</i>"
-		"quest_default_hud_4_items_desc" "%commandverb% %target% %actions% con: <b>%item1%</b>/<b>%item2%</b>/<b>%item3%</b>/<b>%item4</b> <i>%item_quality%</i>"
-
-/////////////////////////////////////////////////////////
-
-/////////////////////////////// Quest Strings via Dialog Vars //////
-///
-/// Used starting with Op09 - the default descriptions should handle most "Perform X Action in GameMode: Location" quests.
-///
-///
-		"quest_default_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} in <b>{s:gamemode}: {s:location}</b>."		
-		"quest_single_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} in una <i>singola</i> partita <b>{s:gamemode}: {s:location}</b>."		
-		"quest_default_no_map_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} in <b>{s:gamemode}</b>."
-		"quest_single_no_map_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} in una <i>singola</i> partita <b>{s:gamemode}</b>."		
-
-		"quest_weapon_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} con {s:weapon} in <b>{s:gamemode}: {s:location}</b>."
-		"quest_weapon_single_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} con {s:weapon} in una <i>singola</i> partita <b>{s:gamemode}: {s:location}</b>."
-		"quest_weapon_no_map_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} con {s:weapon} in <b>{s:gamemode}</b>."
-		"quest_weapon_category_no_map_var_desc" "{s:commandverb} {d:points} {s:target} {s:actions} con qualunque {s:weapon} in <b>{s:gamemode}</b>."
-
-		"quest_flyingscoutsman_var_desc"	"{s:commandverb} {d:points} {s:target} {s:actions} in <b>Tiro a volo: {s:location}</b>."
-		"quest_flyingscoutsman_no_map_var_desc"	"{s:commandverb} {d:points} {s:target} {s:actions} in <b>Tiro a volo</b>."
-
-		"quest_retakes_var_desc"	"{s:commandverb} {d:points} {s:target} {s:actions} in <b>Retakes: {s:location}</b>."
-		"quest_retakes_no_map_var_desc"	"{s:commandverb} {d:points} {s:target} {s:actions} in <b>Retakes</b>."
-
-		"quest_armsrace_var_desc"	 		"{s:commandverb} {d:points} {s:target} {s:actions} in <b>Corsa alle armi</b>."
-		"quest_armsrace_weapon_var_desc"	"{s:commandverb} {d:points} {s:target} {s:actions} con qualunque {s:weapon} in <b>Corsa alle armi</b>."
-
-		// quest exceptions:
-		"quest_931_var_desc"	 "Uccidi {d:points} nemici con {s:weapon} in <b>{s:gamemode}: {s:location}</b>."
-		"quest_932_var_desc"	 "Uccidi {d:points} nemici mentre sei in aria in <b>Tiro a volo</b>."
-		"quest_933_var_desc"	 "Vinci {d:points} round in <b>{s:gamemode}: {s:location}</b>."
-		"quest_934_var_desc"	 "Uccidi {s:kills} nemici con {s:weapon} in <b>Guardiano: {s:location}</b>."
-		"quest_935_var_desc"	 "Uccidi {d:points} nemici con {s:weapon} in una <i>singola</i> partita in <b>{s:gamemode}: {s:location}</b>."
-		"quest_936_var_desc"	 "Uccidi {d:points} nemici con {s:weapon} in <b>{s:gamemode}</b>."
-		"quest_937_var_desc"	 "Applica {d:points} graffiti nel territorio nemico in <b>{s:gamemode}: {s:location}</b>."
-		"quest_938_var_desc"	 "Uccidi {d:points} nemici da leader in <b>{s:gamemode}</b>."
-		"quest_939_var_desc"	 "Uccidi {s:kills} nemici con {s:weapon} in <b>Guardiano: {s:location}</b>."
-		"quest_940_var_desc"	 "Vinci {d:points} round in <b>{s:gamemode}: {s:location}</b>."
-		"quest_941_var_desc"	 "Vinci {d:points} round della pistola in <b>{s:gamemode}: {s:location}</b>."
-		"quest_942_var_desc"	 "Uccidi {d:points} nemici con {s:weapon} in una <i>singola</i> partita in <b>{s:gamemode}: {s:location}</b>."
-		"quest_943_var_desc"	 "Uccidi {d:points} nemici in <b>Tiro a volo</b>."
-		"quest_944_var_desc"	 "Spendi {d:points} in una <i>singola</i> partita <b>{s:gamemode}</b>."
-		"quest_945_var_desc"	 "Uccidi {s:kills} nemici in <b>Guardiano: {s:location}</b>."
-		"quest_946_var_desc"	 "Vinci {d:points} round in <b>{s:gamemode}: {s:location}</b>."
-		"quest_947_var_desc"	 "Vinci {d:points} round in <b>{s:gamemode}: {s:location}</b>."
-		"quest_948_var_desc"	 "Salva {d:points} ostaggi o uccidi {d:points} soccorritori in <b>{s:gamemode}: {s:location}</b>."
-        "quest_949_var_desc"	 "Uccidi {d:points} nemici con {s:weapon} in <b>{s:gamemode}: {s:location}</b>."
-        "quest_950_var_desc"	 "Uccidi {d:points} nemici con armi pesanti in <b>{s:gamemode}</b>."
-        "quest_951_var_desc"	 "Uccidi {s:kills} nemici con {s:weapon} in <b>Guardiano: {s:location}</b>. I giocatori iniziano con: <b>{s:extraequip0}</b>."
-        "quest_952_var_desc"	 "Vinci {d:points} round in <b>{s:gamemode}: {s:location}</b>."
-        "quest_953_var_desc"	 "Vinci {d:points} round in <b>{s:gamemode}: {s:location}</b>."
-        "quest_954_var_desc"	 "Uccidi {d:points} nemici con {s:target} in una <i>singola</i> partita <b>{s:gamemode}: {s:location}</b>."
-		"quest_955_var_desc"	 "Fai amicizia con i polli per {d:points} secondi in <b>{s:gamemode}: {s:location}</b>."
-		"quest_956_var_desc" 	 "Usa un paracadute per {d:points} secondi in <b>{s:gamemode}</b>."
-		"quest_957_var_desc" 	 "Uccidi {d:points} nemici con {s:weapon} in <b>{s:gamemode}: {s:location}</b>."
-		"quest_958_var_desc" 	 "Vinci {d:points} round <b>{s:gamemode}: {s:location}</b> (Mischia)."
-		"quest_959_var_desc" 	 "Uccidi {d:points} nemici in <b>{s:gamemode}: {s:location}</b>."
-		"quest_960_var_desc"	 "Uccidi {s:kills} nemici con {s:weapon} in <b>Guardiano: {s:location}</b>."
-		"quest_961_var_desc" 	 "Uccidi {d:points} nemici con la pistola in <b>{s:gamemode}: {s:location}</b>."
-		"quest_962_var_desc" 	 "Uccidi {d:points} nemici senza spendere denaro in una <i>singola</i> partita <b>{s:gamemode}</b>."
-		"quest_963_var_desc"	 "Uccidi {s:kills} nemici con {s:weapon} in <b>Guardiano: {s:location}</b>."
-		"quest_964_var_desc" 	 "Vinci {d:points} round della pistola in <b>{s:gamemode}</b>."
-		"quest_965_var_desc" 	 "Uccidi {s:kills} nemici con {s:weapon} in <b>Guardiano: {s:location}</b>."
-		"quest_966_var_desc" 	 "Guadagna {d:points} $ in <b>{s:gamemode}: {s:location}</b>."
-		"quest_967_var_desc" 	 "Uccidi {d:points} nemici con {s:weapon} in <b>{s:gamemode}: {s:location}</b>."
-		"quest_968_var_desc"	 "Uccidi {d:points} nemici col fucile da precisione in <b>{s:gamemode}</b>."
-		"quest_969_var_desc" 	 "Ottieni {s:kills} uccisioni senza mirare con {s:weapon} in <b>Guardiano: {s:location}</b>."
-		"quest_970_var_desc" 	 "Vinci {d:points} round in <b>{s:gamemode}: {s:location}</b>."
-		"quest_971_var_desc"	 "Uccidi {s:kills} nemici con {s:weapon} in <b>Guardiano: {s:location}</b>."
-		"quest_972_var_desc" 	 "Uccidi {d:points} nemici con colpo alla testa in una <i>singola</i> partita <b>{s:gamemode}: {s:location}</b>."
-		"quest_973_var_desc" 	 "Uccidi {d:points} nemici in <b>{s:gamemode}: {s:location}</b>."
-		"quest_974_var_desc" 	 "Uccidi {d:points} nemici con colpo alla testa in <b>{s:gamemode}: {s:location}</b>."
-		"quest_975_var_desc"     "Uccidi {s:kills} nemici con armi AT in <b>Guardiano: {s:location}</b>."
-		"quest_976_var_desc" 	 "Vinci {d:points} round in <b>{s:gamemode}: {s:location}</b>."
-		"quest_977_var_desc"	 "Vinci {d:points} round in <b>{s:gamemode}: {s:location}</b>."
-		"quest_978_var_desc" 	 "Uccidi {d:points} nemici con {s:weapon} in <b>{s:gamemode}: {s:location}</b>."
-		"quest_979_var_desc"	 "Ottieni una serie di quattro o più uccisioni in <b>{s:gamemode}: {s:location}</b>."		
-		"quest_980_var_desc" 	 "Arriva almeno quarto in <b>{s:gamemode}</b>."
-		"quest_981_var_desc"     "Uccidi {s:kills} nemici con colpo alla testa con {s:weapon} in <b>Guardiano: {s:location}</b> <i>senza giubbotto antiproiettile</i>."
-		"quest_982_var_desc" 	 "Uccidi {d:points} nemici con colpo alla testa con {s:weapon} in una <i>singola</i> partita <b>{s:gamemode}: {s:location}</b>."
-		"quest_983_var_desc" 	 "Uccidi {d:points} nemici con colpo alla testa in <b>{s:gamemode}</b>."
-		"quest_984_var_desc" 	 "Diventa MVP {d:points} volte in partite <b>{s:gamemode}</b>."
-		"quest_985_var_desc" 	 "Uccidi {d:points} nemici con la pistola predefinita in <b>{s:gamemode}: {s:location}</b>."
-		"quest_986_var_desc"     "Uccidi {s:kills} nemici con {s:weapon} in <b>Guardiano: {s:location}</b>."
-		"quest_987_var_desc"	 "Uccidi {d:points} nemici con il fucile principale di un nemico in <b>{s:gamemode}: {s:location}</b>."
-		"quest_988_var_desc"     "Uccidi {d:points} nemici con il coltello in <b>Corsa alle armi</b>."
-		"quest_989_var_desc" 	 "Infliggi {d:points} danni diversi in <b>{s:gamemode}</b>."
-		"quest_990_var_desc" 	 "Elimina {d:points} volte tutta la squadra nemica in <b>{s:gamemode}</b>."
-		"quest_991_var_desc" 	 "Uccidi {d:points} nemici con <b>Tec-9 o Five-Seven</b> in <b>{s:gamemode}: {s:location}</b>."
-		"quest_992_var_desc"     "Uccidi {s:kills} nemici con {s:weapon} in <b>Guardiano: {s:location}</b>."
-		"quest_993_var_desc"	 "Infliggi {d:points} danni diversi in <b>{s:gamemode}: {s:location}</b>."
-		"quest_994_var_desc" 	 "Uccidi {d:points} nemici in <b>{s:gamemode}</b>."
-		"quest_995_var_desc" 	 "Vinci {d:points} round in <b>{s:gamemode}: {s:location}</b>."
-		"quest_996_var_desc"     "Uccidi {d:points} nemici in <b>{s:gamemode}: {s:location}</b>."
-		"quest_997_var_desc" 	 "Uccidi {d:points} nemici con il Galil AR o il FAMAS in <b>{s:gamemode}: {s:location}</b>."
-		"quest_998_var_desc"     "Uccidi {s:kills} nemici con {s:weapon} in <b>Guardiano: {s:location}</b>."
-		"quest_999_var_desc" 	 "Ottieni {d:points} uccisioni con {s:weapon} in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1000_var_desc" 	 "Distruggi {d:points} droni nemici {s:actions} in <b>{s:gamemode}</b>."
-		"quest_1001_var_desc" 	 "Ottieni {d:points} MVP in una <i>singola</i> partita <b>{s:gamemode}: {s:location}</b>."
-		"quest_1002_var_desc"	 "Ottieni una serie di 2 o più uccisioni in {d:points} round in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1003_var_desc" 	 "Uccidi {d:points} nemici con {s:weapon} in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1004_var_desc"    "Uccidi {s:kills} nemici con {s:weapon} in <b>Guardiano: {s:location}</b>."
-		"quest_1005_var_desc" 	 "Vinci {d:points} round in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1006_var_desc"    "Uccidi {d:points} nemici in <b>Corsa alle armi</b>."
-		"quest_1007_var_desc" 	 "Distruggi {d:points} porte chiuse {s:actions} con {s:weapon} in <b>{s:gamemode}</b>."
-		"quest_1008_var_desc" 	 "Uccidi {d:points} nemici con AK-47 o M4A4 in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1009_var_desc" 	 "Vinci {d:points} round in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1010_var_desc"	 "Uccidi {d:points} nemici con {s:weapon} in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1011_var_desc"    "Vinci almeno 5 round nella prima metà di una partita <b>{s:gamemode}: {s:location}</b>."
-		"quest_1012_var_desc" 	 "Passa su {d:points} mine da salto in <b>{s:gamemode}</b>."
-		"quest_1013_var_desc" 	 "Uccidi {d:points} nemici con {s:weapon} in <b>{s:gamemode}</b>."
-		"quest_1014_var_desc"    "Uccidi {s:kills} nemici con {s:weapon} in <b>Guardiano: {s:location}</b>."
-		"quest_1015_var_desc" 	 "Uccidi {d:points} nemici senza spendere più di 2000 $ in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1016_var_desc"	 "Accumula almeno 3000 $ in <b>{s:gamemode}</b>."
-		"quest_1017_var_desc" 	 "Vinci {d:points} round in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1018_var_desc"    "Uccidi {s:kills} nemici con {s:weapon} in <b>Guardiano: {s:location}</b>."
-		"quest_1019_var_desc" 	 "Uccidi {d:points} nemici con qualunque {s:weapon} in <b>Corsa alle armi</b>."
-		"quest_1020_var_desc" 	 "Uccidi {d:points} nemici con {s:weapon} in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1021_var_desc" 	"Massacra {d:points} polli in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1022_var_desc" 	"Fai saltare in aria {d:points} barili esplosivi in <b>{s:gamemode}</b>."
-		"quest_1023_var_desc" 	"Vinci {d:points} round in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1024_var_desc" 	"Rompi {d:points} pannelli di vetro in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1025_var_desc" 	"Vinci {d:points} round in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1027_var_desc"	 "Applica {d:points} graffiti nella zona iniziale della squadra nemica in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1028_var_desc"	 "Uccidi {d:points} nemici da <i>Banana</i> o <i>Appartamenti</i> in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1029_var_desc"	 "Lancia {d:points} granate fumogene strategiche in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1030_var_desc"	 "Recupera un campione del virus della Zona di pericolo dal laboratorio Phoenix."
-		"quest_1031_var_desc"	 "Distruggi la struttura Phoenix ed elimina Franz Kriegeld."
-		
-		"quest_1098_var_desc"                                  "Vinci dei round in <b>{s:location}</b>."
-		"quest_1032_var_desc"                                  "Vinci dei round in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1033_var_desc"                                  "Uccidi {s:kills} nemici in <b>Guardiano: {s:location}</b>."
-		"quest_1034_var_desc"                                  "Avvistati soldati Phoenix! Scopri cosa stanno tramando."
-		"quest_1035_var_desc"                                  "Uccidi dei nemici con AK47, M4A4 o M4A1-S in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1036_var_desc"                                  "Vinci dei round in <b>{s:location}</b>."
-		"quest_1037_var_desc"                                  "Uccidi dei nemici in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1099_var_desc"                                  "Diventa MVP in <b>{s:location}</b>."
-		"quest_1038_var_desc"                                  "Vinci dei round in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1039_var_desc"                                  "Uccidi dei nemici con tutte le {s:kills} pistole in <b>Guardiano: {s:location}</b>."
-		"quest_1040_var_desc"                                  "Uccidi dei nemici con {s:weapon} in <b>{s:location}</b>."
-		"quest_1041_var_desc"                                  "Uccidi dei nemici con {s:weapon} in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1042_var_desc"                                  "Vinci dei round in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1043_var_desc"                                  "Uccidi {s:kills} nemici con {s:weapon} in <b>Guardiano: {s:location}</b>."
-		"quest_1044_var_desc"                                  "Uccidi dei nemici da una distanza di almeno 15 metri in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1045_var_desc"                                  "Uccidi dei nemici con qualsiasi fucile di precisione in <b>{s:location}</b>."
-		"quest_1046_var_desc"                                  "Uccidi con colpo alla testa in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1047_var_desc"                                  "Uccidi {s:kills} nemici con {s:weapon} in <b>Guardiano: {s:location}</b>."
-		"quest_1048_var_desc"                                  "Infliggi danno con le granate in <b>{s:location}</b>."
-		"quest_1049_var_desc"                                  "Guadagna denaro in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1050_var_desc"                                  "Vinci dei round in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1051_var_desc"                                  "Uccidi {s:kills} nemici in <b>Guardiano: {s:location}</b>."
-		"quest_1052_var_desc"                                  "Scegli una carta nemica in <b>{s:location}</b>."
-		"quest_1053_var_desc"                                  "Fai detonare granate fumogene in posizioni specifiche in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1054_var_desc"                                  "Vinci dei round in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1055_var_desc"                                  "Uccidi {s:kills} nemici con armi dei Terroristi in <b>Guardiano: {s:location}</b>."
-		"quest_1056_var_desc"                                  "Uccidi dei nemici da Tunnel o da Palazzo in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1057_var_desc"                                  "Uccidi dei nemici in <b>{s:location}</b>."
-		"quest_1058_var_desc"                                  "Vinci dei round in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1059_var_desc"                                  "Uccidi {s:kills} nemici con mitra in <b>Guardiano: {s:location}</b>."
-		"quest_1060_var_desc"                                  "Uccidi dei nemici con mitra in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1061_var_desc"                                  "Uccidi dei nemici con mitra in <b>{s:location}</b>."
-		"quest_1062_var_desc"                                  "Vinci dei round in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1063_var_desc"                                  "Uccidi {s:kills} nemici con fucili a pompa in <b>Guardiano: {s:location}</b>."
-		"quest_1064_var_desc"                                  "Scegli una carta MVP in <b>{s:location}</b>."
-		"quest_1065_var_desc"                                  "Applica graffiti in posizioni specifiche in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1100_var_desc"                                  "Vinci dei round su <b>{s:location}</b>."
-		"quest_1066_var_desc"                                  "Vinci dei round in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1067_var_desc"                                  "Uccidi {s:kills} nemici con colpo alla testa con AUG in <b>Guardiano: {s:location}</b>."
-		"quest_1068_var_desc"                                  "Acceca un nemico con una granata flashbang in <b>{s:location}</b>."
-		"quest_1069_var_desc"                                  "Applica graffiti in posizioni specifiche in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1101_var_desc"                                  "Vinci dei round su <b>{s:location}</b>."
-		"quest_1070_var_desc"                                  "Vinci dei round in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1071_var_desc"                                  "Uccidi {s:kills} nemici da una distanza inferiore a 10 metri su <b>Guardiano: {s:location}</b>."
-		"quest_1072_var_desc"                                  "Uccidi dei nemici da una distanza inferiore ai 10 metri in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1073_var_desc"                                  "Uccidi dei nemici in <b>{s:location}</b>."		
-		"quest_1074_var_desc"                                  "Vinci dei round in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1075_var_desc"                                  "Uccidi {s:kills} nemici in <b>Guardiano: {s:location}</b>."
-		"quest_1076_var_desc"                                  "Uccidi dei nemici con colpo alla testa in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1077_var_desc"                                  "Uccidi dei nemici con armi pesanti in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1102_var_desc"                                  "Vinci dei round su <b>{s:location}</b>."
-		"quest_1078_var_desc"                                  "Vinci dei round in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1079_var_desc"                                  "Uccidi {s:kills} nemici con SSG08 su <b>Guardiano: {s:location}</b>."
-		"quest_1080_var_desc"                                  "Uccidi le galline in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1081_var_desc"                                  "Uccidi dei nemici in <b>{s:location}</b>."
-		"quest_1082_var_desc"                                  "Vinci dei round in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1083_var_desc"                                  "Uccidi {s:kills} nemici con MAG-7 in <b>Guardiano: {s:location}</b>."
-		"quest_1084_var_desc"                                  "Uccidi dei nemici in <b>{s:location}</b>."
-		"quest_1085_var_desc"                                  "Infliggi danno con le granate in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1085_v2_var_desc"                   			   "Infliggi danno con le granate in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1086_var_desc"                                  "Vinci dei round in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1087_var_desc"                                  "Uccidi {s:kills} nemici con armi nemiche in <b>Guardiano: {s:location}</b>."
-		"quest_1088_var_desc"                                  "Uccidi dei nemici da posizioni specifiche in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1089_var_desc"                                  "Ottieni uccisioni con mirino in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1089_v2_var_desc"                               "Ottieni uccisioni con mirino in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1090_var_desc"                                  "Vinci dei round in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1091_var_desc"                                  "Uccidi {s:kills} nemici in <b>Guardiano: {s:location}</b>."
-		"quest_1092_var_desc"                                  "Ottieni punti con l'arma bonus in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1092_v2_var_desc"                                  "Ottieni punti con l'arma bonus in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1093_var_desc"                                  "Spendi denaro in <b>{s:gamemode}</b>."
-		"quest_1094_var_desc"                                  "Vinci dei round in <b>{s:gamemode}: {s:location}</b>."
-		"quest_1095_var_desc"                                  "Uccidi {s:kills} nemici in <b>Guardiano: {s:location}</b>."
-		"quest_1095_v2_var_desc"                                  "Ottieni {s:kills} uccisioni con UMP-45 in <b>Guardiano: {s:location}</b>."
-		"quest_1096_var_desc"                                  "Vinci dei round in <b>{s:location}</b>."
-		"quest_1097_var_desc"                                  "Completa la missione."
-		"quest_1097_v2_var_desc"                                  "<i>...la retina si adatta rapidamente agli stimoli luminosi, portando ad una cecità temporanea.</i>"
-		"quest_1103_var_desc"                                  "Acceca i nemici con granate flashbang in <b>{s:gamemode}: {s:location}</b>."
-
-// OP11 Week 1 Missions
-		"quest_1106_var_desc"                              "Sopravvivi a un attacco aereo in <b>Guardiano: {s:location}</b>."
-		"quest_1107_var_desc"                              "Completa una serie di incarichi in <b>Zona di pericolo: {s:location}</b>."
-		"quest_1108_var_desc"                              "Uccidi dei nemici in una serie di posizioni diverse."
-
-// OP11 Week 2 Missions
-		"quest_1111_var_desc"                              "Uccidi dei nemici in <b>Guardiano: {s:location}</b>."
-
-// OP11 Week 3 Missions
-		"quest_1115_var_desc"                              "Uccidi con fucile da cecchino in <b>Guardiano: {s:location}</b>."
-		"quest_1117_var_desc"                              "Applica graffiti in diverse posizioni."
-
-// OP11 Week 4 Missions
-		"quest_1119_var_desc"                              "Uccidi dei nemici con il fucile a pompa in <b>Guardiano: {s:location}</b>."
-		"quest_1120_var_desc"                              "Uccidi dei nemici in una serie di posizioni diverse."
-
-// OP11 Week 5 Missions
-		"quest_1123_var_desc"                              "Uccidi dei nemici con mitra in <b>Guardiano: {s:location}</b>."
-		"quest_1125_var_desc"                              "Completa una serie di incarichi."
-
-// OP11 Week 6 Missions
-		"quest_1127_var_desc"                              "Uccidi dei nemici col fucile in <b>Guardiano: {s:location}</b>."
-		"quest_1128_var_desc"                              "Ottieni una serie di uccisioni in <b>Deathmatch: {s:location}</b>."
-
-// OP11 Week 7 Missions
-		"quest_1131_var_desc"                              "Ottieni delle uccisioni in <b>Guardiano: {s:location}</b>."
-		"quest_1132_var_desc"                              "Uccidi dei nemici in una serie di posizioni diverse."
-
-// OP11 Week 8 Missions
-		"quest_1135_var_desc"                              "Ottieni delle uccisioni con shotgun in <b>Guardiano: {s:location}</b>."
-		"quest_1137_var_desc"                              "Completa una serie di incarichi con gli strumenti"
-
-// OP11 Week 9 Missions
-		"quest_1139_var_desc"                              "Uccidi dei nemici con la pistola in <b>Guardiano: {s:location}</b>."
-		"quest_1140_var_desc"                              "Applica graffiti in diversi luoghi"
-
-// OP11 Week 10 Missions
-		"quest_1143_var_desc"                              "Ottieni uccisioni con AUG in <b>Guardiano: {s:location}</b>."
-		"quest_1144_var_desc"                              "Uccidi dei nemici in una serie di posizioni diverse."
-
-// OP11 Week 11 Missions
-		"quest_1147_var_desc"                              "Ottieni uccisioni con MP9 in <b>Guardiano: {s:location}</b>."
-
-// OP11 Week 12 Missions
-		"quest_1151_var_desc"                              "Ottieni uccisioni con mitra in <b>Guardiano: {s:location}</b>."
-		"quest_1152_var_desc"                              "Ottieni serie di uccisioni"
-
-// OP11 Week 13 Missions
-		"quest_1155_var_desc"                              "Ottieni delle uccisioni con armi nemiche in <b>Guardiano: {s:location}</b>."
-		"quest_1156_var_desc"                              "Uccidi dei nemici in una serie di posizioni diverse."
-		"quest_1157_var_desc"                              "Applica graffiti in diversi luoghi"
-
-// OP11 Week 14 Missions
-		"quest_1159_var_desc"                              "Uccidi dei nemici con cariche esplosive in <b>Guardiano: {s:location}</b>."
-
-// OP11 Week 15 Missions
-		"quest_1163_var_desc"                              "Uccidi dei nemici con armi pesanti in <b>Guardiano: {s:location}</b>."
-
-// OP11 Week 16 Missions
-		"quest_1167_var_desc"                              "Uccidi dei nemici in <b>Guardiano: {s:location}</b>."
-		"quest_1169_var_desc"                              "Uccidi dei nemici usando armi di una delle quattro collezioni dell'Operazione Riptide"
-
-
-// OP11 Week 1 Sub-Missions
-		"quest_1200_var_desc"                              "Vinci {d:points} partita."
-		"quest_1201_var_desc"                              "Vinci {d:points} round."
-		"quest_1202_var_desc"                              "Infliggi {d:points} danni diversi in una <i>singola partita</i>."
-		"quest_1203_var_desc"                              "Infliggi {d:points} danni diversi."
-		"quest_1204_var_desc"                              "Distruggi un drone nemico."
-		"quest_1205_var_desc"                              "Fai esplodere un barile."
-		"quest_1206_var_desc"                              "Distruggi un po' di vetri."
-		"quest_1207_var_desc"                              "Usa una mina da salto per atterrare in cima alla torre idrica."
-		"quest_1208_var_desc"                              "Salva un ostaggio."
-		"quest_1209_var_desc"                              "Uccidi un nemico dalla Base T"
-		"quest_1210_var_desc"                              "Uccidi un nemico dalla Rampa T."
-		"quest_1211_var_desc"                              "Uccidi un nemico dal Sito della bomba A"
-		"quest_1212_var_desc"                              "Uccidi un nemico dalla Base AT."
-		"quest_1213_var_desc"                              "Uccidi un nemico dal Negozio."
-		"quest_1214_var_desc"                              "Uccidi un nemico dal Sito della bomba B"
-		"quest_1215_var_desc"                              "Uccidi un nemico dalla Passerella."
-		"quest_1216_var_desc"                              "Uccidi un nemico da Mid."
-		"quest_1217_var_desc"                              "Uccidi un nemico dalle Scale."
-		"quest_1218_var_desc"                              "Uccidi (di nuovo!) un nemico dal Sito della bomba A"
-		"quest_1219_var_desc"                              "Ottieni {d:points} round con uccisioni multiple in una <i>singola partita</i>."
-		"quest_1220_var_desc"                              "Uccidi {d:points} nemici."
-
-// OP11 Week 2 Sub-Missions
-		"quest_1221_var_desc"                              "Vinci {d:points} partita."
-		"quest_1222_var_desc"                              "Vinci {d:points} round."
-		"quest_1223_var_desc"                              "Uccidi {d:points} nemici con colpo alla testa in una <i>singola partita</i>."
-		"quest_1224_var_desc"                              "Uccidi {d:points} nemici con colpo alla testa."
-		"quest_1225_var_desc"                              "Infliggi danno con le granate."
-		"quest_1226_var_desc"                              "Uccidi {d:points} nemici."
-
-// OP11 Week 3 Sub-Missions		
-		"quest_1227_var_desc"                              "Vinci {d:points} partita."
-		"quest_1228_var_desc"                              "Vinci {d:points} round."
-		"quest_1229_var_desc"                              "Infliggi {d:points} danni in una <i>singola partita</i>."
-		"quest_1230_var_desc"                              "Infliggi {d:points} danni."
-		"quest_1231_var_desc"                              "Applica graffiti alla Base AT."
-		"quest_1232_var_desc"                              "Applica graffiti presso il Sito della bomba A"
-		"quest_1233_var_desc"                              "Applica graffiti al Pozzo."
-		"quest_1234_var_desc"                              "Applica graffiti presso il Sito della bomba B"
-		"quest_1235_var_desc"                              "Applica graffiti alle Porte di mid."
-		"quest_1236_var_desc"                              "Applica graffiti alla Base T."
-		"quest_1237_var_desc"                              "Applica graffiti presso la Passerella."
-		"quest_1238_var_desc"                              "Applica graffiti al Tunnel superiore."
-		"quest_1239_var_desc"                              "Applica graffiti alle Porte grandi."
-		"quest_1240_var_desc"                              "Applica graffiti su Medio."
-
-// OP11 Week 4 Sub-Missions		
-		"quest_1241_var_desc"                              "Vinci {d:points} partita."
-		"quest_1242_var_desc"                              "Vinci {d:points} round"
-		"quest_1243_var_desc"                              "Uccidi un nemico da Esterni"
-		"quest_1244_var_desc"                              "Uccidi un nemico dal Sito della bomba A"
-		"quest_1245_var_desc"                              "Uccidi un nemico dalla Lobby"
-		"quest_1246_var_desc"                              "Uccidi un nemico dalla Rampa"
-		"quest_1247_var_desc"                              "Uccidi un nemico dal Sito della bomba B"
-		"quest_1248_var_desc"                              "Uccidi un nemico da Segreto"
-		"quest_1249_var_desc"                              "Uccidi un nemico da Esterni (di nuovo!)"
-		"quest_1250_var_desc"                              "Uccidi un nemico dalla Base T"
-		"quest_1251_var_desc"                              "Uccidi un nemico dalla cima del Silos"
-		"quest_1252_var_desc"                              "Uccidi un nemico dalla Base AT"
-		"quest_1253_var_desc"                              "Ripeti {d:points} volte in una <i>singola partita</i>: uccidi un nemico con uno dei tuoi primi 5 proiettili del round."
-		"quest_1254_var_desc"                              "Ottieni {d:points} uccisioni"
-
-// OP11 Week 5 Sub-Missions		
-		"quest_1255_var_desc"                              "Ottieni {d:points} MVP in una <i>singola partita</i>."
-		"quest_1256_var_desc"                              "Vinci {d:points} round"
-		"quest_1257_var_desc"                              "Ottieni {d:points} uccisioni con colpo alla testa in una <i>singola partita</i>."
-		"quest_1258_var_desc"                              "Ottieni {d:points} uccisioni con colpo alla testa."
-		"quest_1259_var_desc"                              "Guadagna denaro mentre il tuo tablet ha perso il segnale"
-		"quest_1260_var_desc"                              "Acquista l'aggiornamento Precisione per il tablet"
-		"quest_1261_var_desc"                              "Distruggi una torretta sentinella automatica"
-		"quest_1262_var_desc"                              "Pianta il C4 presso il Motel"
-		"quest_1263_var_desc"                              "Infliggi danni a un nemico mentre sei in piedi su una roccia"
-		
-// OP11 Week 6 Sub-Missions	
-		"quest_1264_var_desc"                              "Vinci {d:points} partita"
-		"quest_1265_var_desc"                              "Vinci {d:points} round"
-		"quest_1266_var_desc"                              "Ottieni una serie di 3 uccisioni"
-		"quest_1267_var_desc"                              "Ottieni una serie di 5 uccisioni"
-		"quest_1268_var_desc"                              "Ottieni una serie di 7 uccisioni."
-		"quest_1269_var_desc"                              "Ottieni {d:points} uccisioni con una pistola altrui in una <i>singola partita</i>."
-		"quest_1270_var_desc"                              "Ottieni {d:points} uccisioni con una pistola altrui."
-
-// OP11 Week 7 Sub-Missions			
-		"quest_1271_var_desc"                              "Vinci {d:points} partita"
-		"quest_1272_var_desc"                              "Vinci {d:points} round"
-		"quest_1273_var_desc"                              "Uccidi un nemico da Porte di mid."
-		"quest_1274_var_desc"                              "Uccidi un nemico dalla Passerella"
-		"quest_1275_var_desc"                              "Uccidi un nemico da Medio superiore"
-		"quest_1276_var_desc"                              "Uccidi un nemico dal Pozzo"
-		"quest_1277_var_desc"                              "Uccidi un nemico dal Sito della bomba A"
-		"quest_1278_var_desc"                              "Uccidi un nemico da Porte di mid (di nuovo!)."
-		"quest_1279_var_desc"                              "Uccidi un nemico dal Sito della bomba B"
-		"quest_1280_var_desc"                              "Uccidi un nemico da Tunnel."
-		"quest_1281_var_desc"                              "Uccidi un nemico dalla Rampa T"
-		"quest_1282_var_desc"                              "Uccidi un nemico dalla Base T"
-		"quest_1283_var_desc"                              "Infliggi {d:points} danni mentre sei in aria in una <i>singola partita</i>."
-		"quest_1284_var_desc"                              "Infliggi {d:points} danni mentre sei in aria"
-
-// OP11 Week 8 Sub-Missions			
-		"quest_1285_var_desc"                              "Vinci {d:points} partita."
-		"quest_1286_var_desc"                              "Vinci {d:points} round."
-		"quest_1287_var_desc"                              "Raggiungi il livello del coltello."
-		"quest_1288_var_desc"                              "Potenzia la tua arma {d:points} volte."
-		"quest_1289_var_desc"                              "Lancia una granata fumogena da Medio superiore"
-		"quest_1290_var_desc"                              "Lancia una granata fumogena presso Banana."
-		"quest_1291_var_desc"                              "Lancia una molotov presso Banana."
-		"quest_1292_var_desc"                              "Acceca 3 nemici in una singola partita."
-		"quest_1293_var_desc"                              "Infliggi {d:points} danni da granate in una singola partita."
-
-// OP11 Week 9 Sub-Missions			
-		"quest_1294_var_desc"                              "Totalizza {d:points} colpi alla testa in una <i>singola partita</i>"
-		"quest_1295_var_desc"                              "Uccidi {d:points} nemici con colpo alla testa"
-		"quest_1296_var_desc"                              "Applica graffiti in cima alla Torre idrica"
-		"quest_1297_var_desc"                              "Applica graffiti sull'ancora al Molo"
-		"quest_1298_var_desc"                              "Applica graffiti sul Montacarichi"
-		"quest_1299_var_desc"                              "Applica graffiti sul tetto della Torre radio"
-		"quest_1300_var_desc"                              "Applica graffiti nel mercato presso l'Hotel"
-		"quest_1301_var_desc"                              "Applica graffiti sulle griglie presso Picnic"
-		"quest_1302_var_desc"                              "Applica graffiti al Faro"
-		"quest_1303_var_desc"                              "Applica graffiti sul Ponte"
-		"quest_1304_var_desc"                              "Applica graffiti presso il Cantiere"
-		"quest_1305_var_desc"                              "Uccidi {d:points} nemici con la Deagle in una <i>singola partita</i>"
-		"quest_1306_var_desc"                              "Potenzia la tua arma {d:points} volte"
-
-// OP11 Week 10 Sub-Missions			
-		"quest_1307_var_desc"                              "Vinci {d:points} partita"
-		"quest_1308_var_desc"                              "Vinci {d:points} round"
-		"quest_1309_var_desc"                              "Uccidi un nemico dal Parco giochi"
-		"quest_1310_var_desc"                              "Uccidi un nemico dal Parco superiore"
-		"quest_1311_var_desc"                              "Uccidi un nemico dal Sito della bomba A"
-		"quest_1312_var_desc"                              "Uccidi un nemico dalla Tana del cecchino"
-		"quest_1313_var_desc"                              "Uccidi un nemico dal Sito della bomba B"
-		"quest_1314_var_desc"                              "Uccidi un nemico dalla Base T"
-		"quest_1315_var_desc"                              "Ottieni una uccisione nei Tunnel"
-		"quest_1316_var_desc"                              "Uccidi un nemico dal Parco giochi (di nuovo!)"
-		"quest_1317_var_desc"                              "Uccidi un nemico dalla Fontana"
-		"quest_1318_var_desc"                              "Uccidi un nemico dai Servizi"
-		"quest_1319_var_desc"                              "Ottieni {d:points} uccisioni con colpo alla testa in una <i>singola partita</i>"
-		"quest_1320_var_desc"                              "Ottieni {d:points} uccisioni con colpo alla testa"
-
-// OP11 Week 11 Sub-Missions			
-		"quest_1321_var_desc"                              "Vinci {d:points} partita"
-		"quest_1322_var_desc"                              "Vinci {d:points} round"
-		"quest_1323_var_desc"                              "Usa l'iniezione {d:points} volte in una <i>singola partita</i>"
-		"quest_1324_var_desc"                              "Usa l'iniezione {d:points} volte"
-		"quest_1325_var_desc"                              "Infliggi {d:points} danni da granate in una <i>singola partita</i>"
-		"quest_1326_var_desc"                              "Infliggi {d:points} danni da granate"
-
-// OP11 Week 12 Sub-Missions			
-		"quest_1327_var_desc"                              "Vinci {d:points} partita"
-		"quest_1328_var_desc"                              "Vinci {d:points} round"
-		"quest_1329_var_desc"                              "Ottieni una serie di 3 uccisioni"
-		"quest_1330_var_desc"                              "Ottieni una serie di 4 uccisioni"
-		"quest_1331_var_desc"                              "Ottieni una serie di 5 uccisioni"
-		"quest_1332_var_desc"                              "Ottieni uccisioni con {d:points} armi diverse in una <i>singola partita</i>"
-		"quest_1333_var_desc"                              "Ottieni uccisioni con {d:points} armi diverse (ripetibile)"
-
-// OP11 Week 13 Sub-Missions			
-		"quest_1334_var_desc"                              "Vinci {d:points} partita"
-		"quest_1335_var_desc"                              "Vinci {d:points} round"
-		"quest_1336_var_desc"                              "Ottieni una uccisione da Medio"
-		"quest_1337_var_desc"                              "Uccidi un nemico dal Sito della bomba A"
-		"quest_1338_var_desc"                              "Uccidi un nemico dalla Base AT"
-		"quest_1339_var_desc"                              "Uccidi un nemico dalla Casa"
-		"quest_1340_var_desc"                              "Uccidi un nemico dal Sito della bomba B"
-		"quest_1341_var_desc"                              "Uccidi un nemico dalle Rovine"
-		"quest_1342_var_desc"                              "Uccidi un nemico dalla base T"
-		"quest_1343_var_desc"                              "Uccidi un nemico dal Corridoio principale"
-		"quest_1344_var_desc"                              "Uccidi un nemico dal Sito della bomba A (di nuovo!)"
-		"quest_1345_var_desc"                              "Uccidi un nemico da Medio (di nuovo!)"
-		"quest_1346_var_desc"                              "Applica un graffito sull'arco a ovest della Qasba"
-		"quest_1347_var_desc"                              "Applica un graffito nella scala a chiocciola vicino alla Qasba"
-		"quest_1348_var_desc"                              "Applica un graffito presso la Cupola"
-		"quest_1349_var_desc"                              "Applica un graffito sulla elisuperficie presso la Base"
-		"quest_1350_var_desc"                              "Applica un graffito mentre sei sulla chiatta presso la Flotta"
-		"quest_1351_var_desc"                              "Applica un graffito dentro all'Hotel Aurora nella Città"
-		"quest_1352_var_desc"                              "Applica un graffito sul Silo 3 presso i Serbatoi"
-		"quest_1353_var_desc"                              "Applica un graffito presso la Torre del Faro"
-		"quest_1354_var_desc"                              "Applica un graffito sul Molo nella Zona di pesca"
-
-// OP11 Week 14 Sub-Missions			
-		"quest_1355_var_desc"                              "Vinci {d:points} partita"
-		"quest_1356_var_desc"                              "Vinci {d:points} round"
-		"quest_1357_var_desc"                              "Uccidi {d:points} nemici con il mirino in una <i>singola partita</i>"
-		"quest_1358_var_desc"                              "Uccidi {d:points} nemici con il mirino"
-		"quest_1359_var_desc"                              "Uccidi dei nemici nei primi 30 secondi di un round {d:points} volte"
-		"quest_1360_var_desc"                              "Uccidi {d:points} nemici"
-
-// OP11 Week 15 Sub-Missions			
-		"quest_1361_var_desc"                              "Vinci {d:points} partita"
-		"quest_1362_var_desc"                              "Vinci {d:points} round"
-		"quest_1363_var_desc"                              "Uccidi il leader della Corsa alle armi {d:points} volte in una <i>singola partita</i>"
-		"quest_1364_var_desc"                              "Uccidi {d:points} nemici"
-		"quest_1365_var_desc"                              "Infliggi {d:points} danni in una <i>singola partita</i>"
-		"quest_1366_var_desc"                              "Infliggi {d:points} danni"
-
-// OP11 Week 16 Sub-Missions	
-		"quest_1367_var_desc"                              "Vinci {d:points} partita"
-		"quest_1368_var_desc"                              "Vinci {d:points} round"
-		"quest_1369_var_desc"                              "Uccidi {d:points} nemici con uno degli agenti dell'Operazione Riptide in una <i>singola partita</i>"
-		"quest_1370_var_desc"                              "Uccidi {d:points} nemici"
-		"quest_1371_var_desc"                              "Uccidi {d:points} nemici con un'arma di una delle collezioni dell'Operazione Riptide"
-		"quest_1372_var_desc"                              "Uccidi {d:points} nemici"
-
-
-
-		"quest_default_hud_var_desc" "{s:commandverb} {s:target} {s:actions}"
-		"quest_weapon_hud_var_desc" "{s:commandverb} {s:actions}: {s:weapon}"
-		"quest_single_hud_var_desc"	"{s:commandverb} {s:target} {s:actions}<br> entro la fine della partita"
-		"quest_weapon_single_hud_var_desc" "{s:commandverb} {s:actions}: {s:weapon}<br> entro la fine della partita"
-	
-		//hud exceptions:
-		"quest_931_hud_var_desc"	"Uccidi con: {s:weapon}"
-		"quest_932_hud_var_desc"	"Uccidi dei nemici mentre sei in aria"
-		"quest_933_hud_var_desc"	"Vinci dei round"
-		"quest_934_hud_var_desc"	"Uccidi con: {s:weapon}"
-		"quest_935_hud_var_desc"	"Uccidi nemici con {s:weapon}<br>entro la fine della partita"
-		"quest_936_hud_var_desc"	"Uccidi con: {s:weapon}"
-		"quest_937_hud_var_desc"	"Applica graffito"
-		"quest_937_hud_var_desc_CT"	"Applica graffiti presso il Silo o i Distributori automatici"
-		"quest_937_hud_var_desc_T"	"Applica graffiti presso Paradiso o il Garage"
-        "quest_938_hud_var_desc"	"Uccidi dei nemici da leader"
-        "quest_939_hud_var_desc"	"Uccidi con: {s:weapon}"
-        "quest_940_hud_var_desc"	"Vinci dei round"
-        "quest_941_hud_var_desc"	"Vinci dei round della pistola"
-        "quest_942_hud_var_desc"	"Uccidi con {s:weapon}<br>entro la fine della partita"
-        "quest_943_hud_var_desc"	"Uccidi dei nemici"
-        "quest_944_hud_var_desc"	"Spendi denaro"
-        "quest_945_hud_var_desc"	"Uccidi dei nemici"
-        "quest_946_hud_var_desc"	"Vinci dei round"
-        "quest_947_hud_var_desc"	"Vinci dei round"
-		"quest_948_hud_var_desc"	"Salva o impedisci un salvataggio"
-		"quest_948_hud_var_desc_CT"	"Salva degli ostaggi"
-		"quest_948_hud_var_desc_T"	"Uccidi il soccorritore degli ostaggi"
-        "quest_949_hud_var_desc"	"Uccidi con: {s:weapon}"
-        "quest_950_hud_var_desc"	"Uccidi dei nemici con armi pesanti"	
-        "quest_951_hud_var_desc"	"Uccidi con: {s:weapon}"	
-        "quest_952_hud_var_desc"	"Vinci dei round"	
-        "quest_953_hud_var_desc"	"Vinci dei round"	
-        "quest_954_hud_var_desc"	"Uccidi {s:target} nemici entro la fine della partita"
-		"quest_955_hud_var_desc" 	"Fai amicizia con le galline con [{s:bind_use}] <br> per {d:points} secondi"
-		"quest_956_hud_var_desc" 	"Trascorri alcuni secondi planando con il paracadute"
-		"quest_957_hud_var_desc" 	"Uccidi con: {s:weapon}"
-		"quest_958_hud_var_desc" 	"Vinci dei round"
-		"quest_959_hud_var_desc" 	"Uccidi dei nemici"
-		"quest_960_hud_var_desc" 	"Uccidi con: {s:weapon}"
-		"quest_961_hud_var_desc"	"Uccidi dei nemici con la pistola"
-		"quest_962_hud_var_desc"	"Uccidi dei nemici senza spendere denaro<br> entro la fine della partita"
-		"quest_963_hud_var_desc"	"Uccidi con: {s:weapon}"
-		"quest_964_hud_var_desc"	"Vinci dei round della pistola"
-		"quest_965_hud_var_desc"    "Uccidi dei nemici"
-		"quest_966_hud_var_desc" 	"Guadagna"
-		"quest_967_hud_var_desc"	"Uccidi con: {s:weapon}"
-		"quest_968_hud_var_desc"    "Uccidi dei nemici con fucile di precisione"
-		"quest_969_hud_var_desc"	"Uccidi dei nemici con {s:weapon} senza mirare"
-		"quest_970_hud_var_desc"	"Vinci dei round"
-		"quest_971_hud_var_desc"	"Uccidi dei nemici"
-		"quest_972_hud_var_desc"    "Uccidi dei nemici con colpo alla testa<br> entro la fine della partita"
-		"quest_973_hud_var_desc" 	"Uccidi dei nemici"
-		"quest_974_hud_var_desc" 	"Uccidi dei nemici con colpo alla testa"
-		"quest_975_hud_var_desc"    "Uccidi dei nemici con armi AT"
-		"quest_976_hud_var_desc" 	"Vinci dei round"
-		"quest_977_hud_var_desc"	"Vinci dei round"
-		"quest_978_hud_var_desc"	"Uccidi con: {s:weapon}"
-		"quest_979_hud_var_desc" 	"Ottieni una serie di 4 uccisioni"
-        "quest_980_hud_var_desc" 	"Arriva almeno in quarta posizione"
-		"quest_981_hud_var_desc" 	"Uccidi dei nemici con colpo alla testa: {s:weapon}"		
-		"quest_982_hud_var_desc"	"Uccidi dei nemici con colpo alla testa con {s:weapon}<br>entro la fine della partita"	
-		"quest_983_hud_var_desc" 	"Uccidi dei nemici con colpo alla testa"
-		"quest_984_hud_var_desc"    "Diventa MVP"
-		"quest_985_hud_var_desc" 	"Uccidi dei nemici con la pistola predefinita"
-		"quest_986_hud_var_desc" 	"Uccidi con: {s:weapon}"
-		"quest_987_hud_var_desc"	"Uccidi dei nemici"
-		"quest_987_hud_var_desc_CT"	"Uccidi con: AK-47"
-		"quest_987_hud_var_desc_T"	"Uccidi con: M4A4 o M4A1-S"
-		"quest_988_hud_var_desc" 	"Uccidi con il coltello"
-		"quest_989_hud_var_desc"	"Infliggi danni diversi"
-		"quest_990_hud_var_desc" 	"Uccidi l'intera squadra nemica"
-		"quest_991_hud_var_desc_CT" "Uccidi con: Five-Seven"
-		"quest_991_hud_var_desc_T" 	"Uccidi con: Tec-9"
-		"quest_991_hud_var_desc" 	"Uccidi con: Tec-9 o Five-Seven"
-		"quest_992_hud_var_desc" 	"Uccidi con: Carica esplosiva"
-		"quest_993_hud_var_desc" 	"Infliggi danni diversi"
-		"quest_994_hud_var_desc" 	"Uccidi gli avversari"
-		"quest_995_hud_var_desc" 	"Vinci dei round"
-		"quest_996_hud_var_desc"	"Uccidi gli avversari"
-		"quest_997_hud_var_desc_CT"	"Uccidi con: FAMAS"
-		"quest_997_hud_var_desc_T"	"Uccidi con: Galil AR"
-		"quest_997_hud_var_desc"	"Uccidi con: Galil AR o FAMAS"
-		"quest_998_hud_var_desc" 	"Uccidi con: {s:weapon}"
-		"quest_999_hud_var_desc"	"Uccidi con: {s:weapon}"
-		"quest_1000_hud_var_desc" 	"Distruggi i droni nemici"
-		"quest_1001_hud_var_desc"   "Diventa MVP il maggior numero di volte<br>entro la fine della partita"
-		"quest_1002_hud_var_desc" 	"Vinci dei round con serie di uccisioni"
-		"quest_1003_hud_var_desc"   "Uccidi con: {s:weapon}"
-		"quest_1004_hud_var_desc"   "Uccidi con: {s:weapon}"
-		"quest_1005_hud_var_desc" 	"Vinci dei round"
-		"quest_1006_hud_var_desc" 	"Uccidi dei nemici"
-		"quest_1007_hud_var_desc" 	"Distruggi le porte chiuse"
-		"quest_1008_hud_var_desc_CT" 	"Uccidi con: M4A4 o M4A1-S"
-		"quest_1008_hud_var_desc_T"  	"Uccidi con: AK-47"
-		"quest_1008_hud_var_desc" 	"Uccidi con: AK-47 o M4A4"
-		"quest_1009_hud_var_desc"	"Vinci dei round"
-		"quest_1010_hud_var_desc"	"Uccidi con: {s:weapon}"
-		"quest_1011_hud_var_desc" 	"Vinci 5 round nella prima parte della partita"
-		"quest_1012_hud_var_desc"	"Passa sulle mine da salto"
-		"quest_1013_hud_var_desc" 	"Uccidi con: {s:weapon}"
-		"quest_1014_hud_var_desc"   "Uccidi con: {s:weapon}"
-		"quest_1015_hud_var_desc"   "Uccidi dei nemici spendendo meno di 2000 $"
-		"quest_1016_hud_var_desc"   "Ottieni 3000 $"
-		"quest_1017_hud_var_desc" 	"Vinci dei round"
-		"quest_1018_hud_var_desc" 	"Uccidi dei nemici"
-		"quest_1019_hud_var_desc" 	"Uccidi i nemici con mitra"
-		"quest_1020_hud_var_desc" 	"Uccidi con: {s:weapon}"
-		"quest_1021_hud_var_desc" 	"Massacra i polli"
-		"quest_1022_hud_var_desc" 	"Fai saltare i barili"
-		"quest_1023_hud_var_desc" 	"Vinci dei round"
-		"quest_1024_hud_var_desc" 	"Rompi i pannelli di vetro"
-		"quest_1025_hud_var_desc" 	"Vinci dei round"
-		"quest_1027_hud_var_desc"	"Applica graffiti<br>nella zona d'inizio nemica"
-		"quest_1028_hud_var_desc"	"Uccidi dei nemici da<br> Banana o Appartamenti"
-		"quest_1029_hud_var_desc"	"Lancia granate fumogene"
-		"quest_1029_hud_var_desc_CT"	"Lancia granate fumogene<br>da Appartamenti o Rampa T"
-		"quest_1029_hud_var_desc_T"	"Lancia granate fumogene<br>da Tana del cecchino o Scale"
-		"quest_1098_hud_var_desc"               "Vinci dei round"
-		"quest_1032_hud_var_desc"               "Vinci dei round"
-		"quest_1033_hud_var_desc"               "Uccidi dei nemici"
-		"quest_1034_hud_var_desc"               "Indaga sui Phoenix"
-		"quest_1035_hud_var_desc"               "Uccidi con: AK-47, M4A4 o M4A1-S"
-		"quest_1036_hud_var_desc"               "Vinci dei round"
-		"quest_1037_hud_var_desc"               "Uccidi dei nemici"
-		"quest_1099_hud_var_desc"               "Diventa MVP"
-		"quest_1038_hud_var_desc"               "Vinci dei round"
-		"quest_1039_hud_var_desc"               "Uccidi con: varie pistole"
-		"quest_1040_hud_var_desc"               "Uccidi con: pistola"
-		"quest_1041_hud_var_desc"               "Uccidi con: Desert Eagle"
-		"quest_1042_hud_var_desc"               "Vinci dei round"
-		"quest_1043_hud_var_desc"               "Uccidi dei nemici"
-		"quest_1044_hud_var_desc"               "Uccidi dei nemici da almeno 15 metri di distanza"
-		"quest_1045_hud_var_desc"               "Uccidi con: qualunque fucile di precisione"
-		"quest_1046_hud_var_desc"               "Uccidi con un colpo alla testa"
-		"quest_1047_hud_var_desc"               "Uccidi con: M249"
-		"quest_1048_hud_var_desc"               "Infliggi danno con le granate."
-		"quest_1049_hud_var_desc"               "Guadagna"
-		"quest_1050_hud_var_desc"               "Vinci dei round"
-		"quest_1051_hud_var_desc"               "Uccidi dei nemici"
-		"quest_1052_hud_var_desc"               "Scegli la carta avversaria"
-		"quest_1053_hud_var_desc"               "Lancia granate fumogene"
-		"quest_1053_hud_var_desc_T"             "Lancia granate fumogene su Garage o Mini"
-		"quest_1053_hud_var_desc_CT"            "Lancia granate fumogene su Sala di controllo o Capanno"
-		"quest_1054_hud_var_desc"               "Vinci dei round"
-		"quest_1055_hud_var_desc"               "Uccidi dei nemici"
-		"quest_1056_hud_var_desc"               "Uccidi dei nemici da Tunnel o Palazzo"
-		"quest_1057_hud_var_desc"               "Uccidi dei nemici"
-		"quest_1058_hud_var_desc"               "Vinci dei round"
-		"quest_1059_hud_var_desc"               "Uccidi dei nemici"
-		"quest_1060_hud_var_desc"               "Uccidi con: {s:weapon}"
-		"quest_1061_hud_var_desc"               "Uccidi con: {s:weapon}"
-		"quest_1062_hud_var_desc"               "Vinci dei round"
-		"quest_1063_hud_var_desc"               "Uccidi dei nemici"
-		"quest_1064_hud_var_desc"               "Scegli la carta MVP"
-		"quest_1065_hud_var_desc"               "Applica graffito"
-		"quest_1065_hud_var_desc_T"             "Applica graffiti su Medio"
-		"quest_1065_hud_var_desc_CT"            "Applica graffiti su Lato superiore T o Esterni"
-		"quest_1100_hud_var_desc"               "Vinci dei round"
-		"quest_1066_hud_var_desc"               "Vinci dei round"
-		"quest_1067_hud_var_desc"               "Uccisioni con colpo alla testa con AUG"
-		"quest_1068_hud_var_desc"               "Acceca un nemico con una granata flashbang"
-		"quest_1069_hud_var_desc"               "Applica graffiti"
-		"quest_1069_hud_var_desc_T"             "Applica graffiti presso la Passerella o il Tunnel superiore"
-		"quest_1069_hud_var_desc_CT"            "Applica graffiti presso il Tunnel inferiore o le Scale corte"
-		"quest_1101_hud_var_desc"               "Vinci dei round"
-		"quest_1070_hud_var_desc"               "Vinci dei round"
-		"quest_1071_hud_var_desc"               "A meno di 10 metri di distanza"
-		"quest_1072_hud_var_desc"               "Uccidi dei nemici da meno di 10 metri di distanza"
-		"quest_1073_hud_var_desc"               "Uccidi dei nemici"
-		"quest_1074_hud_var_desc"               "Vinci dei round"
-		"quest_1075_hud_var_desc"               "Uccidi dei nemici"
-		"quest_1076_hud_var_desc"               "Uccidi dei nemici con colpo alla testa"
-		"quest_1077_hud_var_desc"               "Uccidi con: {s:weapon}"
-		"quest_1102_hud_var_desc"               "Vinci dei round"
-		"quest_1078_hud_var_desc"               "Vinci dei round"
-		"quest_1079_hud_var_desc"               "Uccidi dei nemici con {s:weapon}"
-		"quest_1080_hud_var_desc"               "Uccidi le galline"
-		"quest_1081_hud_var_desc"               "Uccidi dei nemici"
-		"quest_1082_hud_var_desc"               "Vinci dei round"
-		"quest_1083_hud_var_desc"               "Uccidi dei nemici"
-		"quest_1084_hud_var_desc"               "Uccidi dei nemici"
-		"quest_1085_hud_var_desc"               "Infliggi danno con le granate."
-		"quest_1085_v2_hud_var_desc"     	    "Infliggi danno con le granate."
-		"quest_1086_hud_var_desc"               "Vinci dei round"
-		"quest_1087_hud_var_desc"               "Uccidi dei nemici"
-		"quest_1088_hud_var_desc"               "Uccidi dei nemici da posizioni specifiche"
-		"quest_1088_hud_var_desc_T"             "Uccidi nemici che si trovano nel Sito della bomba A o B"
-		"quest_1088_hud_var_desc_CT"            "Uccidi nemici dal Sito della bomba A o B"
-		"quest_1089_hud_var_desc"               "Uccidi dei nemici con il mirino"
-		"quest_1089_v2_hud_var_desc"               "Uccidi dei nemici con il mirino"
-		"quest_1090_hud_var_desc"               "Vinci dei round"
-		"quest_1091_hud_var_desc"               "Uccidi dei nemici"
-		"quest_1092_hud_var_desc"               "Ottieni punti con l'arma bonus"
-		"quest_1092_v2_hud_var_desc"            "Ottieni punti con l'arma bonus"
-		"quest_1093_hud_var_desc"               "Spendi denaro"
-		"quest_1094_hud_var_desc"               "Vinci dei round"
-		"quest_1095_hud_var_desc"               "Uccidi dei nemici"
-		"quest_1095_v2_hud_var_desc"            "Uccidi dei nemici con UMP-45"
-		"quest_1096_hud_var_desc"               "Vinci dei round"
-		"quest_1097_hud_var_desc"               "Completa la missione"
-		"quest_1097_v2_hud_var_desc"            "Addentrati nel complesso Phoenix"
-		"quest_1103_hud_var_desc"               "Acceca nemici con granate flashbang"
-
-
-
-
-/////////////////////////////////////////////////////////////////
-
-
-
-// win quests
-
-		"Quest_Win_a_Mode"										"Minaccia neutralizzata: <b>%gamemode%</b>"
-		"Quest_Win_a_Mode_desc"								"Vinci una partita in modalità <b>%gamemode%</b>."
-
-		"Quest_Win_a_Mapgroup"								"Fine partita: <b>%gamemode%, %mapgroup%</b>"
-		"Quest_Win_a_Mapgroup_desc"						"Ottieni %actions% in modalità <b>%gamemode%</b>, su <b>%mapgroup%</b>."
-
-		"Quest_Win_a_Map"											"Fine partita: <b>%gamemode%, %map%</b>"
-		"Quest_Win_a_Map_desc"								"Ottieni %actions% in modalità <b>%gamemode%</b>, su <b>%map%</b>."
-
-		"Quest_Win_Rounds_Map"								"Ingaggio: <b>%gamemode%, %mapgroup%</b>"
-		"Quest_Win_Rounds_Map_desc"						"Ottieni %actions% in modalità <b>%gamemode%</b> su <b>%mapgroup%</b>."
-		"Quest_Win_Rounds_Map_Short"						"Round vinti"
-
-// equipment quests
-
-		"Quest_Weapon_Mode"										"Competenza tecnica in <b>%gamemode%</b>: <b>%weapon%</b>"
-		"Quest_Weapon_Mode_desc"							"Ottieni %optional_target%%actions% con l'arma <b>%weapon%</b> nelle partite della modalità <b>%gamemode%</b>."
-		
-		"Quest_Weapon_Mode_single_desc"				"Ottieni un'uccisione con <b>%weapon%</b> in una partita della modalità <b>%gamemode%</b>."
-
-// equipment + mapgroup quests
-
-		"Quest_Weapon_Mapgroup"							"Competenza tecnica su <b>%mapgroup%</b> con <b>%weapon%</b>"
-		"Quest_Weapon_Mapgroup_desc"					"Ottieni %optional_target%%actions% con <b>%weapon%</b> in <b>%gamemode% su %mapgroup%</b>."
-		"Quest_WeaponDamage_Mapgroup_desc"					"Infliggi %optional_target%%actions% con <b>%weapon%</b> ai nemici in modalità <b>%gamemode% su %mapgroup%</b>."
-
-	"Quest_Weapon_Within_3_Mapgroup"						"Diploma: <b>%mapgroup%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Within_3_Mapgroup_desc"				"Ottieni %optional_target%%actions% con <b>%weapon%</b> <i>nei primi 3 colpi sparati in un round,</i> in modalità <b>%gamemode% su %mapgroup%</b>."
-
-	"Quest_Weapon_Map"									"Competenza tecnica su <b>%map%</b> con <b>%weapon%</b>"
-		"Quest_Weapon_Map_desc"								"Ottieni %optional_target%%actions% con <b>%weapon%</b> in <b>%gamemode%: su %map%</b>."
-		"Quest_Weapon_Map_Team_desc"		"Come <b>%team%</b>, ottieni %optional_target%%actions% con <b>%weapon%</b> in modalità <b>%gamemode% su %map%</b>."		
-		"Quest_Weapon_Mapgroup_Team_desc"		"Come <b>%team%</b>, ottieni %optional_target%%actions% con <b>%weapon%</b> in modalità <b>%gamemode% su %mapgroup%</b>."		
-
-		"Quest_WepUpgrade_Mapgroup"					"Cambio d'arma: <b>%mapgroup%</b>"
-
-	"Quest_Unique_Weapon_Mapgroup"							"Esperto di armi: <b>%mapgroup%</b>"
-		"Quest_Unique_Weapon_Mapgroup_desc"					"Nelle partite in modalità <b>%gamemode% su %mapgroup%</b>, ottieni un progresso sulle missioni per ciascuna %action% <i>realizzata con un'arma differente</i>."
-		"Quest_Unique_Weapon_Mapgroup_Team_desc"					"Come <b>%team%</b> nelle partite in modalità <b>%gamemode% su %mapgroup%</b>, ottieni un progresso sulle missioni per ciascuna %action% <i>realizzata con un'arma differente</i>."
-
-		"Quest_Defend_Bomb_Mapgroup_desc"					"Ottieni %actions% <i>dopo il piazzamento della bomba</i> nelle partite in modalità <b>%gamemode% su %mapgroup%</b>."
-
-// Hostage quests
-
-	 "Quest_Rescue_Map"								"Estrazione degli ostaggi: <b>%map%</b>"
-	 "Quest_Rescue_Map_Desc"						"Ottieni %actions% nelle partite in modalità <b>%gamemode% su %map%</b>."
-
-// Plant bomb quests
-
-	 "Quest_PlantBomb_Mapgroup"									"Esperto di esplosivi: <b>%mapgroup%</b>"
-	 "Quest_PlantBomb_Mapgroup_Desc"						"Ottieni %actions% nelle partite in modalità <b>%gamemode% su %mapgroup%</b>."
-
-
-// Assassination
-
-	 "Quest_Assassination"									"Assassinio per %victim_team%: <b>%target%</b>"
-	 "Quest_Assassination_desc"							"Trova e uccidi <b>%target%</b> della squadra %victim_team% nelle partite della modalità <b>%gamemode% su %map%</b>."
-
-	 "quest_target_turner"									"Turner"
-	 "quest_target_jackson"									"Jackson"
-	 "quest_target_chapel"									"Chapel"	 
-	 "quest_target_sergei"									"Sergei"	 
-
-	 "quest_assassination_you_are_target"					"Sei il bersaglio di un assassinio.\nSei %s1."
-	 "quest_assassination_target_on_server"					"Un giocatore sta cercando di uccidere il bersaglio dell'assassinio: %s1"
-	 "quest_assassination_target_on_server_has_quest"		"Stai cercando di assassinare il bersaglio: %s1"
-	 "quest_assassination_target_killed"					"%s1 è stato assassinato!"
-	 "quest_assassination_no_longer_target"					"Non sei più %s1." 
-
-// Income
-	 "Quest_Income_Mapgroup"								"Reddito lordo: <b>1.000.000 $</b>"
-	 "Quest_Income_Mapgroup_desc"						"Guadagna un totale di 1.000.000 $ nelle partite in modalità <b>%gamemode% su %mapgroup%</b>."
-	 "Quest_Income_Mapgroup_Team_desc"			"Come <b>%team%</b>, guadagna un totale di 1.000.000 $ nelle partite in modalità <b>%gamemode% su %mapgroup%</b>."
-
-	 "Quest_Spend_Mapgroup_Team_desc"			"Come <b>%team%</b>, spendi un totale di 1.000.000 $ nelle partite in modalità <b>%gamemode% su %mapgroup%</b>."
-
-
-//	deathmatch bonus points
-
-		"Quest_DMBonusPoints_Mapgroup"				"Maestro d'armi: <b>%mapgroup%</b>"
-		"Quest_DMBonusPoints_Mapgroup_desc"		"Guadagna punti usando l'arma bonus in <b>Deathmatch su %mapgroup%</b>."
-
-		"Quest_DMBonusPoints_Map"							"Maestro d'armi: <b>%map%</b>"
-		"Quest_DMBonusPoints_Map_desc"				"Guadagna punti usando l'arma bonus in <b>Deathmatch su %map%</b>."
-
-// play quests
-
-		"Quest_Kills_Mapgroup"							"Rapporto minacce: <b>%gamemode%</b>, <b>%mapgroup%</b>"
-		"Quest_Kills_Mapgroup_desc"					"Ottieni %optional_target%%actions% in modalità <b>%gamemode%, su %mapgroup%</b>."
-		"Quest_Kills_Mapgroup_cond_desc"		"Ottieni %optional_target%%actions%—<i>%condition%</i>— nelle partite in modalità <b>%gamemode% su %mapgroup%</b>."
-		"Quest_Kills_Mapgroup_Team_desc"		"Come <b>%team%</b>, ottieni %optional_target%%actions% nelle partite in modalità <b>%gamemode% su %mapgroup%</b>."		
-
-		"Quest_Kills_Mapgroup_Victim_Team_desc"		"Come <b>%team%</b>, ottieni %actions% ai danni della squadra %victim_team% nelle partite in modalità <b>%gamemode% su %mapgroup%</b>."
-
-		"Quest_Flashbang_Mapgroup_Team_desc"		"Come <b>%team%</b>, acceca %optional_target%%actions% nelle partite in modalità <b>%gamemode% su %mapgroup%</b>."		
-
-
-		"Quest_Burn_Mapgroup_desc"					"Infliggi %actions% <i>da bruciatura</i> ai nemici nelle partite in modalità <b>%gamemode% su %mapgroup%</b>."
-
-		"Quest_Headshots_Mapgroup"							"Colpo alla testa: <b>%gamemode%</b>, <b>%mapgroup%</b>"
-		"Quest_Headshots_Mapgroup_desc"					"Ottieni %actions% con colpi alla testa nelle partite in modalità <b>%gamemode% su %mapgroup%</b>."
-
-		"Quest_Kills_Map"										"Rapporto minacce: <b>%gamemode%</b>, <b>%map%</b>"
-		"Quest_Kills_Map_desc"							"Ottieni %optional_target%%actions% in modalità <b>%gamemode%, su %map%</b>."
-
-		"Quest_Kills_Mode"								"Rapporto minacce: <b>%gamemode%</b>"
-		"Quest_Kills_Mode_desc"						"Ottieni %optional_target%%actions% in modalità <b>%gamemode%</b>."
-
-// chicken quests
-
-	"Quest_Chicken_Kills_Mapgroup"				"Giro di rifornimento: <b>%gamemode%</b>, <b>%mapgroup%</b>"
-	"Quest_Chicken_Kills_Map"							"Giro di rifornimento: <b>%gamemode%</b>, <b>%map%</b>"
-	"Quest_Chicken_Kills"						"Giro di rifornimento"
-
-// generic string tokens
-
-	"quest_team_ct"										"Anti-Terroristi"
-	"quest_team_terrorist"								"Terroristi"
-	"quest_complete_the_match"							"Termina la partita per completare la missione"
-	"quest_complete_the_match_uncommitted"				"<img src='file://{images}/icons/ui/info.svg' class=''/>Completa la partita per salvare i tuoi progressi nella missione"
-
-// Coop quests
-
-	"Quest_Guardian_Bomb"									"Sfida cooperativa Guardiano: <b>%map%</b>, <b>%weapon%</b>"
-	"Quest_Guardian_Bomb_Desc"								"Sfida cooperativa Guardiano: gioca come <b>%team%</b> con un partner e proteggi il Sito della bomba dai nemici su <b>%map%</b>.<br><br>Ottieni un <b>%action%</b> uccidendo <b>%kills%</b> nemici con <b>%weapon%</b>. <b>%extradetails%</b>"
-	"Quest_Guardian_Desc_op08"								"Sfida Guardiano in cooperativa: Gioca come <b>%team%</b> con un compagno e proteggi il Sito della bomba dai nemici sulla mappa <b>%map%</b>.<br><br>Ottieni una <b>%action%</b> uccidendo <b>%kills%</b> %killtype% con: <b>%weapon%</b>. <b>%extradetails%</b>%presence%"
-
-	"Quest_Guardian_Desc_op09"								"{s:commandverb} {s:kills} {s:killtype} con {s:weapon} in <b>Guardiano: {s:location}</b>."
-	"Quest_CoopMission_Desc_op09"							"<b>Attacco cooperativo</b>: completa l'obiettivo con un partner in <b>{s:location}</b>."
-	"Quest_Guardian_Desc_op09_extra_equip_1_var_desc"		"{s:commandverb} {s:kills} {s:killtype} con {s:weapon} in <b>Guardiano: {s:location}</b>. I giocatori iniziano con <b>{s:extraequip0}</b>."
-	"Quest_Guardian_Desc_op09_extra_equip_2_var_desc"		"{s:commandverb} {s:kills} {s:killtype} con {s:weapon} in <b>Guardiano: {s:location}</b>. I giocatori iniziano con <b>{s:extraequip0}</b> e <b>{s:extraequip1}</b>."
-
-	"Quest_Guardian_Desc_op10"								"{s:commandverb} {s:kills} {s:killtype} con {s:weapon} in <b>Guardiano: {s:location}</b>."
-	"Quest_CoopMission_Desc_op10"							"<b>Attacco cooperativo</b>: completa l'obiettivo con un partner in <b>{s:location}</b>."
-	"Quest_Guardian_Desc_op10_extra_equip_1_var_desc"		"{s:commandverb} {s:kills} {s:killtype} con {s:weapon} in <b>Guardiano: {s:location}</b>. I giocatori iniziano con <b>{s:extraequip0}</b>."
-	"Quest_Guardian_Desc_op10_extra_equip_2_var_desc"		"{s:commandverb} {s:kills} {s:killtype} con {s:weapon} in <b>Guardiano: {s:location}</b>. I giocatori iniziano con <b>{s:extraequip0}</b> e <b>{s:extraequip1}</b>."
-
-	"Quest_Coop_Desc_Rescue"								"Attacco cooperativo: Gioca come <b>%team%</b> con un compagno e <b>libera l'ostaggio</b> di <b>%map%</b>.<br><br><b>%extradetails%</b>"
-	"Quest_Coop_Desc_Recon"									"Attacco cooperativo: Gioca come <b>%team%</b> con un compagno e <b>recupera le informazioni</b> di <b>%map%</b>.<br><br><b>%extradetails%</b>"
- 	"Quest_Coop_Desc_Bomb"									"Attacco cooperativo: Gioca come <b>%team%</b> con un compagno e <b>fai saltare in aria</b> <b>%map%</b>.<br><br><b>%extradetails%</b>"
- 
-	"Quest_op09_coopmission"								"Recupera un campione del virus di Zona di pericolo dal laboratorio Phoenix."
-	"Quest_op10_coopmission"								"I Phoenix sono stati avvistati in una vecchia fattoria. Ispeziona l'area e scopri cosa stanno tramando."
-
-	"Quest_Guardian_Hostage"								"Sfida cooperativa Guardiano: <b>%map%</b>, <b>%weapon%</b>"
-	"Quest_Guardian_Hostage_Desc"							"Sfida cooperativa Guardiano: gioca come <b>%team%</b> con un partner e impedisci agli Anti-Terroristi di raggiungere gli ostaggi su <b>%map%</b>.<br><br>Ottieni un <b>%action%</b> uccidendo <b>%kills%</b> nemici con <b>%weapon%</b>. <b>%extradetails%</b>"
-	 
-	"quest_guardian_kills_5"								"5"
-	"quest_guardian_kills_10"								"10"
-	"quest_guardian_kills_15"								"15"
-	"quest_guardian_kills_20"								"20"
-	"quest_guardian_kills_25"								"25"
-	"quest_guardian_kills_30"								"30"
-	"quest_guardian_kills_35"								"35"
-	"quest_guardian_kills_40"								"40"
-	"quest_guardian_kills_45"								"45"
-	"quest_guardian_kills_50"								"50"
-
-// Guardian kill types
-	"quest_killtype_normal"									"uccisioni"
-	"quest_killtype_headshot"								"nemici con un <b>colpo alla testa</b>"
-	"quest_killtype_blind"									"uccisioni da <b>accecati</b>"
-	"quest_killtype_unscoped"								"nemici <b>senza usare il mirino</b>"
-
-	"quest_enemy_weapon"									"Arma nemica"
-	"quest_weapon_CZ75a_or_enemy_weapon"					"CZ75-Auto o qualunque arma nemica"
-	"quest_weapon_sniperrifle"								"qualsiasi fucile di precisione"
-	"quest_weapon_any_rifle"								"qualsiasi fucile"
-	"quest_weapon_m4"										"qualsiasi fucile M4"
-	"quest_weapon_starter_ct"								"qualsiasi pistola predefinita AT"
-	"quest_weapon_ct"										"Arma degli Anti-Terroristi"
-	"quest_weapon_t"										"Arma da Terrorista"
-	"quest_weapon_any_pistol"								"qualsiasi pistola"
-	"quest_weapon_any_weapon"								"qualunque arma"
-	"quest_weapon_any_shotgun"								"qualsiasi fucile a pompa"
-	"quest_weapon_any_smg"									"qualunque mitra"
-	"quest_weapon_ssg08_or_mag7"							"SSG 08 o MAG-7"
-	"quest_weapon_awp_or_p90"								"AWP o P90"
-	"quest_weapon_unique_pistol"							"Varie pistole"
-	"quest_presence_heavy"									"<br><br><b>ATTENZIONE</b>: Aspettati una <i>forte</i> resistenza nella zona!"
-
-	"quest_guardian_cantbuy"		"<i>Impossibile acquistare in questa missione.</i>"
-	"quest_guardian_maxmoneylimit"		"<i>Il denaro ha un limite massimo in questa missione.</i>"
-	"quest_guardian_killrewardsonly" 	"<i>Solo le uccisioni ti permettono di guadagnare dei soldi.</i>"
-	"quest_guardian_moneyreset" 	"<i>Il denaro viene azzerato a missione fallita.</i>"
-	"quest_guardian_heavyarmor" 	"<i>L'armatura pesante è disponibile.</i>"
-	"quest_guardian_noarmor" 	"<i>Armatura non disponibile.</i>"
-	"quest_guardian_heavyarmorresetmoney" 	"<i>L'armatura pesante è disponibile. Il denaro viene ripristinato se la missione fallisce.</i>"
-	 //"quest_guardian_maxmoney_16000"		"$16000"
-	 //"quest_guardian_maxmoney_10000"		"$10000"
-	 //"quest_guardian_maxmoney_6000"			"$6000"
-	 //"quest_guardian_maxmoney_3200"			"$3200"
-	 //"quest_guardian_maxmoney_0"			"$0"
-
-	// "Get [headshot] kills: [unscoped] [AWP]"
-	// Double spaces will automatically be removed.
-	"guardian_mission_type_kills"				"Uccidi con: {s:weapon}"
-	"guardian_mission_type_headshots"			"Colpi alla testa con: {s:weapon}"
-	"guardian_mission_type_unscoped"			"Uccidi dei nemici senza prendere la mira con: {s:weapon}"
-	"guardian_mission_type_enemy_weapon"		"Uccidi dei nemici con {s:weapon} di un nemico"
-	"guardian_mission_type_enemy_airborne"		"Uccidi dei nemici mentre sei in aria con: {s:weapon}"
-	"guardian_mission_type_flashbang"			"Uccidi nemici accecati"
-	"guardian_mission_type_ct_weapons"			"Uccidi dei nemici con armi degli Anti-Terroristi"
-
-//	bonus tokens
-
-	  "quest_bonus_headshot"							"se è anche un colpo alla testa"
-	  "quest_bonus_zoomed"								"con lo zoom attivo"
-  	  "quest_bonus_not_zoomed"							"senza mirare"
-	  "quest_bonus_chickens"							"quando il bersaglio è una gallina"
-
-	  "quest_bonus_taser"								"con uno Zeus x27"
-	  "quest_bonus_bomb_planted"						"quando la bomba è stata piazzata"
-	  "quest_bonus_melee"								"con un'arma da mischia"	  
-
-
-
-	  "quest_bonus_killstreak_2"						"con una serie di 2 o più uccisioni"
-	  "quest_bonus_killstreak_3"						"con una serie di 3 o più uccisioni"
-
-	  "quest_bonus_chickenstreak_2"						"con una serie di 2 o più uccisioni di galline"
-	  "quest_bonus_chickenstreak_3"						"con una serie di 3 o più uccisioni di galline"
-
-	  "quest_bonus_borrowed_gun"						"con l'arma di qualcun altro"
-	  "quest_bonus_borrowed_gun_enemy"					"con l'arma di un nemico"
-	  "quest_bonus_borrowed_gun_own"					"con l'arma del bersaglio stesso"
-		"quest_bonus_victim_rescuing"					"quando il bersaglio sta prelevando un ostaggio"
-		
-	  "quest_bonus_bulletcount_1"						"quando è il tuo primo colpo del round"
-		
-	  "quest_bonus_totalrounds_2"						"se avviene entro i primi 2 round"
-	  "quest_bonus_totalrounds_3"						"se avviene entro i primi 3 round"
-	  "quest_bonus_totalrounds_4"						"se avviene entro i primi 4 round"
-	  "quest_bonus_totalrounds_5"						"se avviene entro i primi 5 round"
-
-  	  "quest_bonus_weapon_elite"						"con Doppia Beretta"
-	  "quest_bonus_weapon_ssg08"						"con SSG08"
-	  "quest_bonus_weapon_revolver"						"con Revolver R8"
-	  "quest_bonus_weapon_glock_hkp2000_usp_silencer"	"con P-2000, USP-S o Glock-18"
-
-		"quest_bonus_set_dust"							"quando l'arma proviene dalla collezione di Dust"
-		"quest_bonus_set_aztec"							"quando l'arma proviene dalla collezione di Aztec"
-		"quest_bonus_set_vertigo"						"quando l'arma proviene dalla collezione di Vertigo"
-		"quest_bonus_set_inferno"						"quando l'arma proviene dalla collezione di Inferno"
-		"quest_bonus_set_militia"						"quando l'arma proviene dalla collezione di Militia"
-		"quest_bonus_set_nuke"							"quando l'arma proviene dalla collezione di Nuke"
-		"quest_bonus_set_office"						"quando l'arma proviene dalla collezione di Office"
-		"quest_bonus_set_assault"						"quando l'arma proviene dalla collezione di Assault"
-		"quest_bonus_set_dust_2"						"quando l'arma proviene dalla collezione di Dust 2"
-		"quest_bonus_set_train"							"quando l'arma proviene dalla collezione di Train"
-		"quest_bonus_set_mirage"						"quando l'arma proviene dalla collezione di Mirage"
-		"quest_bonus_set_italy"							"quando l'arma proviene dalla collezione di Italy"
-		"quest_bonus_set_lake"							"quando l'arma proviene dalla collezione di Lake"
-		"quest_bonus_set_safehouse"						"quando l'arma proviene dalla collezione di Safehouse"
-		"quest_bonus_set_esports"						"quando l'arma proviene dalla collezione degli eSport del 2013"
-		"quest_bonus_set_weapons_i"						"quando l'arma proviene dalla collezione del Traffico d'armi"
-		"quest_bonus_set_bravo_i"						"quando l'arma proviene dalla collezione Bravo"
-		"quest_bonus_set_bravo_ii"						"quando l'arma proviene dalla collezione Alpha"
-		"quest_bonus_set_weapons_ii"					"quando l'arma proviene dalla collezione del Traffico d'armi 2"
-		"quest_bonus_set_esports_ii"					"quando l'arma proviene dalla collezione degli eSport invernali del 2013"
-		"quest_bonus_set_esports_2014_summer"			"quando l'arma proviene dalla collezione degli eSport estivi del 2014"
-		"quest_bonus_set_community_1"					"quando l'arma proviene dalla collezione dell'Offensiva invernale"
-		"quest_bonus_set_weapons_iii"					"quando l'arma proviene dalla collezione del Traffico d'armi 3"
-		"quest_bonus_set_community_2"					"quando l'arma proviene dalla collezione Phoenix"
-		"quest_bonus_set_community_3"					"quando l'arma proviene dalla collezione del Cacciatore"
-		"quest_bonus_set_community_4"					"quando l'arma proviene dalla collezione Breakout"
-		"quest_bonus_set_community_5"					"quando l'arma proviene dalla collezione Vanguard"
-		"quest_bonus_set_community_6"					"quando l'arma proviene dalla collezione Cromatica"
-		"quest_bonus_set_community_7"					"quando l'arma proviene dalla collezione Cromatica 2"
-		"quest_bonus_set_community_11"					"quando l'arma proviene dalla collezione Wildfire"
-		"quest_bonus_set_bank"							"quando l'arma proviene dalla collezione di Bank"
-		"quest_bonus_set_baggage"						"quando l'arma proviene dalla collezione di Baggage"
-		"quest_bonus_set_cobblestone"					"quando l'arma proviene dalla collezione di Cobblestone"
-		"quest_bonus_set_overpass"						"quando l'arma proviene dalla collezione di Overpass"
-		"quest_bonus_set_cache"							"quando l'arma proviene dalla collezione di Cache"
-		"quest_bonus_set_kimono"						"quando l'arma proviene dalla collezione del Sole nascente"
-
-		"quest_bonus_cs_assault"						"quando la mappa è Assault"
-		"quest_bonus_cs_italy"							"quando la mappa è Italy"
-		"quest_bonus_cs_militia"						"quando la mappa è Militia"
-		"quest_bonus_cs_office"							"quando la mappa è Office"
-		"quest_bonus_de_aztec"							"quando la mappa è Aztec"
-		"quest_bonus_de_dust"							"quando la mappa è Dust"
-		"quest_bonus_de_dust2"							"quando la mappa è Dust II"
-		"quest_bonus_de_mirage"							"quando la mappa è Mirage"
-		"quest_bonus_de_overpass"						"quando la mappa è Overpass"
-		"quest_bonus_de_cbble"							"quando la mappa è Cobblestone"
-		"quest_bonus_de_train"							"quando la mappa è Train"		
-		"quest_bonus_de_inferno"						"quando la mappa è Inferno"
-		"quest_bonus_de_nuke"							"quando la mappa è Nuke"
-		"quest_bonus_de_shorttrain"						"quando la mappa è Shorttrain"
-		"quest_bonus_de_shortdust"						"quando la mappa è Shortdust"
-		"quest_bonus_de_vertigo"						"quando la mappa è Vertigo"
-		"quest_bonus_de_balkan"							"quando la mappa è Balkan"
-		"quest_bonus_ar_baggage"						"quando la mappa è Baggage"
-		"quest_bonus_ar_monastery"						"quando la mappa è Monastery"
-		"quest_bonus_ar_shoots"							"quando la mappa è Shoots"
-		"quest_bonus_de_embassy"						"quando la mappa è Embassy"
-		"quest_bonus_de_bank"							"quando la mappa è Bank"
-		"quest_bonus_de_lake"							"quando la mappa è Lake"
-		"quest_bonus_de_depot"							"quando la mappa è Depot"
-		"quest_bonus_de_safehouse"						"quando la mappa è Safehouse"
-		"quest_bonus_de_sugarcane"						"quando la mappa è Sugarcane"
-		"quest_bonus_de_stmarc"							"quando la mappa è St. Marc"
-		"quest_bonus_cs_museum"							"quando la mappa è Museum"
-		"quest_bonus_cs_thunder"						"quando la mappa è Thunder"
-		"quest_bonus_de_favela"							"quando la mappa è Favela"
-		"quest_bonus_cs_downtown"						"quando la mappa è Downtown"
-		"quest_bonus_de_seaside"						"quando la mappa è Seaside"
-		"quest_bonus_de_library"						"quando la mappa è Library"
-		"quest_bonus_cs_motel"							"quando la mappa è Motel"
-		"quest_bonus_de_cache"							"quando la mappa è Cache"
-		"quest_bonus_de_ali"							"quando la mappa è Ali"
-		"quest_bonus_de_ruins"							"quando la mappa è Ruins"
-		"quest_bonus_de_ruby"							"quando la mappa è Ruby"
-		"quest_bonus_de_chinatown"						"quando la mappa è Chinatown"
-		"quest_bonus_de_gwalior"						"quando la mappa è Gwalior"
-		"quest_bonus_cs_agency"							"quando la mappa è Agency"
-		"quest_bonus_cs_siege"							"quando la mappa è Siege"
-		"quest_bonus_de_castle"							"quando la mappa è Castle"
-		"quest_bonus_de_overgrown"						"quando la mappa è Overgrown"
-		"quest_bonus_de_blackgold"						"quando la mappa è Black Gold"
-		"quest_bonus_cs_rush"							"quando la mappa è Rush"
-		"quest_bonus_de_mist"							"quando la mappa è Mist"
-		"quest_bonus_cs_insertion"						"quando la mappa è Insertion"
-
-		"quest_bonus_cs_workout"						"quando la mappa è Workout"
-		"quest_bonus_cs_backalley"						"quando la mappa è Back Alley"
-		"quest_bonus_de_marquis"						"quando la mappa è Marquis"
-		"quest_bonus_de_facade"							"quando la mappa è Facade"
-		"quest_bonus_de_season"							"quando la mappa è Season"
-		"quest_bonus_de_bazaar"							"quando la mappa è Bazaar"
-		"quest_bonus_de_santorini"						"quando la mappa è Santorini"
-
-		"quest_bonus_de_subzero"						"quando la mappa è Subzero"
-		"quest_bonus_de_biome"							"quando la mappa è Biome"
-
-
-
-
-// OperationalPoints
-
-		"Quest_OperationalPoints_Template"				"Ricompensa: %s1"
-
-		"Quest_OperationalPoints_1"					"★"
-		"Quest_OperationalPoints_2"					"★★"
-		"Quest_OperationalPoints_3"					"<font color=\"#ff0000\">★★★★</font>"
-
-// Hud Message
-
-	 "Quest_ProgressMadeMessage1"								" Punti della missione assegnati alla fine della partita: +%s1."
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -34361,7 +33124,7 @@ Esca per una doppia uccisione"
 // COMMUNITY_34
 
 		"PaintKit_usp_field_snake"						"Questa verniciatura personalizzata rappresenta un kit di disinnesco alato sotto il mirino e la sigla \"027\" sul carrello.\n\n<i>Operazioni leggere su campo.</i>"
-		"PaintKit_usp_field_snake_Tag"					"027"
+		"PaintKit_usp_field_snake_Tag"					"27"
 
 		"PaintKit_deagle_calligraff"					"La canna di questa Desert Eagle è stata decorata con una calligrafia argentata.\n\n<i>Queste cose portano via tempo.</i>"
 		"PaintKit_deagle_calligraff_Tag"				"Calligraffiti"
@@ -35983,8 +34746,8 @@ Esca per una doppia uccisione"
 		"Workshop_created" "Data di creazione"
 		"Workshop_size" "Dimensioni"
 		"Workshop_View" "Vedi nel Workshop"
-		"Workshop_Allow" "Consenti"
-		"Workshop_Deny" "Nega"
+		"Workshop_Allow" "Scarica"
+		"Workshop_Deny" "Annulla"
 
 		"SFUI_Workshop_Desc_Pw"				"Qui sono elencate le mappe del Workshop a cui ti sei sottoscritto. Puoi usare il sistema di partite rapide della Comunità per trovare il miglior server della Comunità con queste mappe."
 		"SFUI_Workshop_Desc_Sp_Pw"			"Qui sono elencate le mappe del Workshop a cui ti sei sottoscritto. Puoi provarle localmente con dei bot."
@@ -36274,12 +35037,6 @@ Esca per una doppia uccisione"
 		"SFUI_Store_Limited_Bid_Tagline"			"per fare un'offerta"
 		"SFUI_Store_Available_Offers"               "Offerte disponibili ancora per:"
 		"SFUI_Store_Preview"                        "Anteprima"
-
-		"SFUI_Store_Timer_Week:p"                   "%s1 settimana#|#%s1 settimane"
-		"SFUI_Store_Timer_Day:p"                    "%s1 giorno#|#%s1 giorni"
-		"SFUI_Store_Timer_Hour:p"                   "%s1 ora#|#%s1 ore"
-		"SFUI_Store_Timer_Min:p"                    "%s1 minuto#|#%s1 minuti"
-		"SFUI_Store_Timer_Sec:p"                    "%s1 sec#|#%s1 sec"
 
 		"SFUI_Store_Timer_Week:f"                 	"{f:0:value} {f:0:value, plural, one{settimana} other{settimane}}"
 		"SFUI_Store_Timer_Day:f"                    "{f:0:value} {f:0:value, plural, one{giorno} other{giorni}}"
@@ -38558,7 +37315,7 @@ Esca per una doppia uccisione"
 		"SFUI_PlayerDetails_Loading"				"Caricamento degli elogi"
 		"SFUI_PlayerDetails_Loading_Failed"			"Impossibile caricare gli elogi, riprova più tardi"
 		"SFUI_PlayerDetails_Previously_Submitted"	"Elogi inviati per questo utente"
-		"SFUI_PlayerDetails_Commendations_Left:p"		"Oggi puoi elogiare %s1 altro giocatore#|#Oggi puoi elogiare %s1 altri giocatori"
+		"SFUI_PlayerDetails_Commendations_Left:f"	"Oggi puoi elogiare ancora {num_players} {num_players, plural, one{giocatore} other{giocatori}}."
 		"SFUI_PlayerDetails_NoCommendations_Left"   "Hai inviato troppi elogi, riprova domani"
 		"SFUI_PlayerDetails_Updating_Previous_Commendation"   "Stai modificando un elogio già inviato"
 		"SFUI_PlayerDetails_New_Commendation"   "Stai inviando un nuovo elogio"
@@ -38582,9 +37339,9 @@ Esca per una doppia uccisione"
 		"SFUI_scoreboard_lbl_spec"	"SPET"
 		"SFUI_Scoreboard_1st"		"1°"
 		"SFUI_Scoreboard_2nd"		"2°"
-		"SFUI_Scoreboard_1st_Half"		"1° Tempo"
+		"SFUI_Scoreboard_1st_Half"		"1° tempo"
 		"SFUI_Scoreboard_Halftime"		"Intervallo"
-		"SFUI_Scoreboard_2nd_Half"	"2° Tempo"
+		"SFUI_Scoreboard_2nd_Half"	"2° tempo"
 		"SFUI_Scoreboard_Overtime"	"Supplementari"
 		"SFUI_Scoreboard_OvertimeHalftime"	"Intervallo dei supplementari"
 		"SFUI_Scoreboard_Overtime1stHalf"	"1° tempo supplementare"
@@ -38917,7 +37674,7 @@ Esca per una doppia uccisione"
 		"SFUIHUD_InfoPanel_Coop_Thumb2Ready"					"Seconda USB pronta!"
 		"SFUIHUD_InfoPanel_Coop_Thumb2Retrieved"				"USB con virus rimossa!"	
 
-		"FullPlayerNameOrder_Default"						"%modifier% %clantag% %controller_name% (%current_controller_of_my_pawn%)"
+		"FullPlayerNameOrder_Default:f"						"{modifier} {clantag} {controller_name} ({current_controller_of_my_pawn})"
 "SFUIHUD_Spectate_Equipment"	"VALORE DELL'EQUIPAGGIAMENTO"
 		"SFUIHUD_Spectate_TeamMoney"	"DENARO DELLA SQUADRA"
 		"SFUIHUD_Spectate_TeamEQValue"	"VALORE EQUIPAGGIAMENTO"
@@ -40302,8 +39059,8 @@ Esca per una doppia uccisione"
 		"SFUI_Settings_MiniScoreboardPlayerCount_Tooltip"	"Durante la fase attiva del round, sostituisci gli avatar dei giocatori con il numero dei giocatori della squadra nella mini-tabella."
 
 
-		"Post_Round_Damage_Report_Given:p"		" • Danni inflitti → %s3: %s2 in %s1#|# • Danni inflitti → %s3: %s2 in %s1"
-		"Post_Round_Damage_Report_Taken:p"		" • Danni subiti ← %s3: %s2 in %s1#|# • Danni subiti ← %s3: %s2 in %s1"
+		"Post_Round_Damage_Report_Given:f"		" • Danni inflitti → {player_name}: {f:0:damage} in {num_hits}"
+		"Post_Round_Damage_Report_Taken:f"		" • Danni subiti ← {player_name}: {f:0:damage} in {num_hits}"
 
 		"SFUI_TeamOverheadID"					"Mostra l'equipaggiamento della squadra"
 
@@ -40782,8 +39539,8 @@ Esca per una doppia uccisione"
 
 		"SFUI_UserAlertNoteType_1"			"I server della regione %s1 stanno riscontrando un carico eccessivo."
 		"SFUI_UserAlertNoteType_2"			"I server della regione %s1 sono offline per manutenzione."
-		"SFUI_UserAlertNoteType_LowPlayersR:p"	"Solo %players% giocatore compatibile sta cercando una partita nella regione \"%region%\".#|#Solo %players% giocatori compatibili stanno cercando una partita nella regione \"%region%\"."
-		"SFUI_UserAlertNoteType_LowPlayersY:p"	"Solo %players% giocatore compatibile sta cercando una partita nella tua regione.#|#Solo %players% giocatori compatibili stanno cercando una partita nella tua regione."
+		"SFUI_UserAlertNoteType_LowPlayersR:f"	"Solo {players} {players, plural, one{giocatore compatibile è} other{giocatori compatibili sono}} alla ricerca di partite in {region}."
+		"SFUI_UserAlertNoteType_LowPlayersY:f"	"Solo {players} {players, plural, one{giocatore compatibile è} other{giocatori compatibili sono}} alla ricerca di partite nella tua regione."
 
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"Impossibile connettersi alla partita."
 		"SFUI_QMM_ERROR_NotLoggedIn"		"Non connesso al servizio di matchmaking di Counter-Strike."
@@ -46355,10 +45112,10 @@ Vuoi attivare il tuo pass ora?"
 		"practicesettings_infammo_button"			"Munizioni infinite"
 		"practicesettings_infwarmup_tooltip"		"Quando è <b>abilitata</b>, la partità resterà permanentemente in fase di riscaldamento e nessun bot si unirà ad essa."
 		"practicesettings_infwarmup_button"			"Riscaldamento infinito"
-		"practicesettings_annotations_tooltip"		"Quando è <b>abilitata</b>, verrà caricata la guida della mappa selezionata dal menu a tendina e le seguenti impostazioni verranno attivate: riscaldamento infinito, munizioni infinite e telecamera granate."
-		"practicesettings_annotations_button"		"Usa guida della mappa"
+		"practicesettings_annotations_tooltip"		"Quando è <b>abilitata</b>, verrà caricata la guida della mappa (facoltativa) selezionata dal menu a tendina e le seguenti impostazioni verranno attivate: riscaldamento infinito, munizioni infinite e telecamera granate."
+		"practicesettings_annotations_button"		"Abilita guide della mappa"
 		"practicesettings_annotations_workshop_tooltip" "Visita il Workshop"
-		"practicesettings_annotations_dropdown_tooltip"	"Specifica quale guida della mappa verrà caricata"
+		"practicesettings_annotations_dropdown_tooltip"	"Specifica quale guida della mappa verrà caricata (e se caricarla o meno)"
 
 		"PlayMenuReplayNewUserTrainingButton"		"Ripeti giornata di addestramento"
 
@@ -46394,6 +45151,8 @@ Vuoi attivare il tuo pass ora?"
 		"Workshop_annotation_ready"					"Invio pronto per il caricamento."		
 		"UI_File_Filter_SupportedAnnotationFormat"	"File di testo (*.txt)"
 		"annotations_visit_workshop"				"Visita il Workshop ⤤"
+		"annotations_exceed_round_limit"			"Nessuna guida della mappa consentita oltre il {s:rounds}° round del tempo"
+
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Game Mode Desc
@@ -47330,6 +46089,1354 @@ Vuoi attivare il tuo pass ora?"
 
 		"accolade_roundssurvived_2"						"Survivalista"
 		"accolade_roundssurvived_desc_2"				"Round superati:"
+
+		"accolade_chickenskilled"						"Avicoltore mancato"
+		"accolade_chickenskilled_desc"					"Record di polli massacrati:"
+		"accolade_chickenskilled_value"					"{s:accolade-value-string}"
+
+		"accolade_chickenskilled_2"						"Master chef"
+		"accolade_chickenskilled_desc_2"				"Polli massacrati:"
+
+		"accolade_killswhileblind"						"Eroe cieco"
+		"accolade_killswhileblind_desc"					"Record di uccisioni da accecato:"
+		"accolade_killswhileblind_value"				"{s:accolade-value-string}"
+
+		"accolade_killswhileblind_2"					"Colpo fortunato"
+		"accolade_killswhileblind_desc_2"				"Uccisioni da accecato:"
+
+		"accolade_bombcarrierkills"						"Il muro"
+		"accolade_bombcarrierkills_desc"				"Record di portatori della bomba uccisi:"
+		"accolade_bombcarrierkills_value"				"{s:accolade-value-string}"
+
+		"accolade_bombcarrierkills_2"					"Interferenza"
+		"accolade_bombcarrierkills_desc_2"				"Portatori della bomba uccisi:"
+
+		"accolade_burndamage"							"Incendiario"
+		"accolade_burndamage_desc"						"Record di danni da ustione:"
+		"accolade_burndamage_value"						"{s:accolade-value-string}"
+
+		"accolade_burndamage_2"							"Il tostapane"
+		"accolade_burndamage_desc_2"					"Danni da ustione:"
+
+		"accolade_cashspent"							"Scialacquatore"
+		"accolade_cashspent_desc"						"Record di denaro speso:"
+		"accolade_cashspent_value"						"{s:accolade-value-string} $"
+
+		"accolade_cashspent_2"							"Spendaccione"
+		"accolade_cashspent_desc_2"						"Denaro speso:"
+
+		"accolade_uniqueweaponkills"					"Maestro d'armi"
+		"accolade_uniqueweaponkills_desc"				"Record di uccisioni con una singola arma:"
+		"accolade_uniqueweaponkills_value"				"{s:accolade-value-string}"
+
+		"accolade_uniqueweaponkills_2"					"Esperto d'armi"
+		"accolade_uniqueweaponkills_desc_2"				"Uccisioni con una singola arma:"
+
+		"accolade_dinks"								"Maestro a salve"
+		"accolade_dinks_desc"							"Record di colpi alla testa non letali:"
+		"accolade_dinks_value"							"{s:accolade-value-string}"
+
+		"accolade_dinks_2"								"Barbiere"
+		"accolade_dinks_desc_2"							"Colpi alla testa non letali:"
+
+		"accolade_taserkills"							"Dio del tuono"
+		"accolade_taserkills_desc"						"Record di uccisioni con Zeus:"
+		"accolade_taserkills_value"						"{s:accolade-value-string}"
+
+		"accolade_taserkills_2"							"Voltmetro"
+		"accolade_taserkills_desc_2"					"Uccisioni con Zeus:"		
+
+		"accolade_knifekills"							"Fratello Coltello"
+		"accolade_knifekills_desc"						"Record di uccisioni con il coltello:"
+		"accolade_knifekills_value"						"{s:accolade-value-string}"
+
+		"accolade_knifekills_2"							"Ti lamo molto"
+		"accolade_knifekills_desc_2"					"Uccisioni con coltello:"			
+
+		"accolade_gimme_01"								"Supporto morale"
+		"accolade_gimme_02"								"Partecipante"
+		"accolade_gimme_03"								"Riservista"
+		"accolade_gimme_04"								"Piano B"
+		"accolade_gimme_05"								"Retroguardia"
+		"accolade_gimme_06"								"Comandante a distanza"
+		"accolade_gimme_07"								"Tuttofare"
+		"accolade_gimme_08"								"Milite ignoto"
+		"accolade_gimme_09"								"Invisibile"
+		"accolade_gimme_10"								"Disperso"
+		"accolade_player_score"							"Punti: {d:score-value-int}"
+
+
+		"playercardstats_adr_title"						"DMR"
+		"playercardstats_adr_value"						"{d:playercardstats-adr}"
+
+		"playercardstats_kda_title"						"UMA"
+		"playercardstats_kda_value"						"{d:playercardstats-kills}-{d:playercardstats-deaths}-{d:playercardstats-assists}"
+
+		"playercardstats_k_title"						"Uccisioni"
+		"playercardstats_k_value"						"{d:playercardstats-kills}"
+
+		"playercardstats_d_title"						"Morti"
+		"playercardstats_d_value"						"{d:playercardstats-deaths}"
+
+		"playercardstats_a_title"						"Aiuti"
+		"playercardstats_a_value"						"{d:playercardstats-assists}"
+
+		"playercardstats_score_title"					"Punti"
+		"playercardstats_score_value"					"{d:playercardstats-score}"
+
+		"playercardstats_hsp_title"						"HS"
+		"playercardstats_hsp_value"						"{d:playercardstats-hsp}%"
+
+		"playercardstats_ef_title"						"NEMICI ACCECATI"
+		"playercardstats_ef_value"						"{d:playercardstats-ef}"
+
+		"playercardstats_ud_title"						"DANNI DIVERSI"
+		"playercardstats_ud_value"						"{d:playercardstats-ud}"
+
+		"playercardstats_gglevel_title"					"Livello"
+		"playercardstats_gglevel_value"					"{d:playercardstats-gglevel}"
+
+		"playercardstats_kk_title"						"Uccisioni con coltello"
+		"playercardstats_kk_value"						"{d:playercardstats-knifekills}"
+
+
+		"eom-vote-for-next-map"							"Vota per la prossima mappa"
+		
+		"eom-survival-damage-taken"						"Danni subiti"
+		"eom-survival-damage-given"						"Danni inflitti"
+
+
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	STATS
+		//
+		///////////////////////////////////////////////////////////
+
+		"playerstats_mode_comp_all"			"5 contro 5 (tutti)"
+		"playerstats_mode_comp_capt"		"Competitiva Premier"
+		"playerstats_mode_comp_active"		"Competitiva (Disinnesco della bomba)"
+		"playerstats_mode_comp_other"		"Competitiva (Salvataggio degli ostaggi)"
+		"playerstats_mode_comp_scrim"		"Mischia"
+		"playerstats_mode_2v2_all"			"Braccio destro (tutti)"
+		"playerstats_mode_2v2_active"		"Braccio destro (Servizio attivo)"
+		"playerstats_mode_2v2_other"		"Braccio destro (Riserve)"
+
+		"playerstats_weapons"					"Prestazioni delle armi"
+		"playerstats_heatmap"					"Mappe termiche"
+		"playerstats_matchlister"				"Partite"
+		"playerstats_stats"						"Statistiche"
+
+		"playerstats_matchlister_separator"		"{s:separator_title}"
+
+		"playerstats_weapon_tooltip_counts"		"Uccisioni: {d:kills}"
+		"playerstats_weapon_tooltip_kd"			"U/M: {s:score}"
+
+		"playerstats_map_tooltip_win_loss_tie"	"Vittorie/Sconfitte/Pareggi"
+		"playerstats_map_tooltip_rndwin_rndloss"	"Round vinti/persi"
+		"playerstats_map_tooltip_round_winrate"	"Tasso di round vinti"
+		"playerstats_map_tooltip_match_winrate"	"Tasso di partite vinte"
+
+		"playerstats_forceretry"				"La connessione al server delle statistiche si è interrotta.\nFai clic su OK per riconnetterti."
+		"playerstats_no_data"					"Nessun dato disponibile nel periodo di tempo e nelle modalità selezionate. Modifica le tue scelte o gioca a qualche partita."
+		"playerstats_link"						"Gestisci sottoscrizione"
+		"playerstats_link_reactivate"			"Riattiva sottoscrizione"
+		"playerstats_link_get"					"Sottoscrivi"
+
+		"playerstats_subscription_expire_warning"		"<b>Raccolta statistiche delle partite</b> - la sottoscrizione <b>scade oggi</b>"
+		"playerstats_subscription_renew_automatically"	"<b>Raccolta statistiche delle partite</b> - la sottoscrizione si rinnova automaticamente tra {d:days} giorni"
+		"playerstats_subscription_renew_unknown"		"<b>Raccolta statistiche delle partite</b> - restano {d:days} giorni di sottoscrizione"
+		"playerstats_subscription_renew_manually"		"<b>Raccolta statistiche delle partite</b> - {d:days} giorni rimasti, la tua sottoscrizione <b>non si rinnoverà automaticamente</b>"
+		"playerstats_subscription_expired"				"<b>Sottoscrizione scaduta</b> - riattiva la tua sottoscrizione per raccogliere le statistiche delle partite"
+		"playerstats_subscription_not_enrolled"			"<b>Sottoscrizione non attiva</b> - effettua la sottoscrizione per raccogliere nuove statistiche delle partite"
+		"playerstats_subscription_buy_button"			"ATTIVA SOTTOSCRIZIONE MENSILE\n{s:price} AL MESE"
+
+		"playerstats_past_14"					"Ultimi 14 giorni"
+		"playerstats_past_30"					"Ultimi 30 giorni"
+		"playerstats_past_90"					"Ultimi 90 giorni"
+		"playerstats_alltime"					"Sempre"
+
+		"stat_best_map"							"Mappa migliore"
+		"stat_best_map_desc"					"La mappa col tuo migliore tasso di round vinti rispetto a quelli persi"
+
+		"stat_best_weapon"						"Miglior arma"
+
+		"stat_best_mate"						"Miglior compagno"
+		"stat_best_mate_desc"					"Il compagno di squadra che ti ha aiutato a ottenere il tuo miglior tasso di round vinti rispetto a quelli persi"
+
+		"matchstat_abandoned"					"*Hai abbandonato questa partita prima della fine"
+
+		"playerstats_suffix_per_round"			"/r"
+		"playerstats_suffix_per_cent"			"%"
+
+		"playerstats_per_round"			"{s:value}/r"
+		"playerstats_per_cent"			"{s:value}%"
+		"playerstats_no_units"			"{s:value}"	
+
+		"playerstats_percentile"		"Il tuo tasso di {s:tt_value} è migliore del {s:tt_rank}% di tutti i possessori del Pass dell'Operazione"
+		"playerstats_percentile_subscribers"	"La tua valutazione di {s:tt_value} è migliore del {s:tt_rank}% di tutti i sottoscrittori"
+
+
+		"playerstats_mapwinrate"		"Tassi di vittoria nelle mappe"
+		"playerstats_mapwinrate_rounds"	"Round"
+		"playerstats_mapwinrate_matches" "Partite"
+
+		"stat_total_score"				"Punti"
+		"stat_average_score"			"Punti/round"
+
+		"stat_total_kills"				"Uccisioni"
+		"stat_average_kills"			"Uccisioni/round"
+
+		"stat_total_deaths"				"Morti"
+	//	"stat_average_deaths"			"stat_average_deaths"		
+
+		"stat_total_health_removed"		"Danni"	
+		"stat_average_health_removed"	"DMR"
+
+		"stat_average_kd"				"Uccisioni/morti"
+		"stat_average_kd_short"			"U/M"
+
+		"stat_average_hsp"				"stat_average_hsp"
+
+		"stat_total_2k"					"2U"
+		"stat_total_3k"					"3U"
+		"stat_total_4k"					"4U"
+
+		"stat_grenades"					"Granate AE"
+		"stat_total_grenade"			"Lanci"
+		"stat_average_grenade"			"Successi"
+		"stat_grenades_desc"			"Percentuale di granate AE lanciate che hanno danneggiato almeno 1 nemico"			
+
+		"stat_flash"					"Flash"
+		"stat_total_flash"				"Lanci"
+		"stat_average_flash"			"Successi"
+		"stat_flash_desc"				"Percentuale di granate flashbang che hanno accecato almeno 1 nemico"
+
+		"stat_entry"					"Prime uccisioni"
+		"stat_average_entrykd"			"PU/M"
+		"stat_total_entry_attempts"		"Totale"
+		"stat_entry_desc"				"Rapporto prime uccisioni/prime morti"
+
+		"stat_total_wins"				"Vittorie"
+		"stat_total_losses"				"Sconfitte"
+		"stat_total_ties"				"Pareggi"
+
+		"stat_total_rounds_played"		"Round"
+
+		"stat_1vx"						"1 contro X"
+
+		"stat_1v1"						"1 contro 1"
+
+		"stat_average_1v1"				"Successi"				
+		"stat_total_1v1_attempts"		"Opportunità"		
+
+		"stat_1v2"						"1 contro 2"
+
+		"stat_average_1v2"				"Successi"			
+		"stat_total_1v2_attempts"		"Opportunità"		
+
+		"num_matches"					"Partite giocate"
+
+		"playerstat_name_0"				"Punti"
+		"playerstat_name_0_long"		"Punti per round"
+		"playerstat_name_0_desc"		"Punti per round: {s:value}\nPunti totali: {d:total}"
+
+
+		"playerstat_name_1"				"Uccisioni"
+		"playerstat_name_1_long"		"Uccisioni per round"
+		"playerstat_name_1_desc"		"Uccisioni medie per round: {s:value}\nUccisioni totali: {d:total}"
+
+		"playerstat_name_2"				"Danni"
+		"playerstat_name_2_long"		"Danno per round"
+		"playerstat_name_2_desc"		"Danno medio per round: {s:value}\nDanno totale: {d:total}"	
+
+		"playerstat_name_2.1"			"Danni"
+		"playerstat_name_2.5"			"DMR"		
+
+		"playerstat_name_3"				"U/M"
+		"playerstat_name_3_long"		"Uccisioni per morte"
+		"playerstat_name_3_desc"		"Rapporto uccisioni/morti: {s:value}"		
+
+		"playerstat_name_4"				"HS"
+		"playerstat_name_4_long"		"Tasso di uccisioni con colpo alla testa"
+		"playerstat_name_4_desc"		"Percentuale di uccisioni con colpo alla testa: {s:value}\nTotale uccisioni con colpo alla testa: {d:total}"	
+
+		"playerstat_name_4.5"			"%HS"		
+
+		"playerstat_name_5"				"2U"
+		"playerstat_name_5_long"		"2 uccisioni"
+		"playerstat_name_5_desc"		"Round con 2 uccisioni: {s:value}"	
+
+		"playerstat_name_6"				"3U"
+		"playerstat_name_6_long"		"3 uccisioni"
+		"playerstat_name_6_desc"		"Round con 3 uccisioni: {s:value}"		
+
+		"playerstat_name_7"				"4U"
+		"playerstat_name_7_long"		"4 uccisioni"
+		"playerstat_name_7_desc"		"Round con 4 uccisioni: {s:value}"
+
+		"playerstat_name_7.5"			"Uccisioni multiple"
+	
+		"playerstat_name_8"				"AE"
+		"playerstat_name_8_long"		"AE efficaci"
+		"playerstat_name_8_desc"		"Percentuale di granate AE che hanno danneggiato almeno 1 nemico: {s:value}\nGranate AE totali che hanno danneggiato almeno 1 nemico: {d:total}"			
+
+		"playerstat_name_9"				"FB"
+		"playerstat_name_9_long"		"Granate flashbang efficaci"		
+		"playerstat_name_9_desc"		"Percentuale di granate flashbang che hanno accecato almeno 1 nemico: {s:value}\nGranate flashbang totali che hanno accecato almeno 1 nemico: {d:total}"
+
+		"playerstat_name_10"			"1 contro 1"
+		"playerstat_name_10_long"		"Scontri 1 contro 1"
+		"playerstat_name_10_desc"		"Percentuale di scontri 1 contro 1 vinti: {s:value}\nTotale scontri 1 contro 1 vinti: {d:total}"	
+
+		"playerstat_name_11"			"1 contro 2"
+		"playerstat_name_11_long"		"Scontri 1 contro 2"
+		"playerstat_name_11_desc"		"Percentuale di scontri 1 contro 2 vinti: {s:value}\nTotale scontri 1 contro 2 vinti: {d:total}"	
+
+		"playerstat_name_12"			"PU"
+		"playerstat_name_12_long"		"Prime uccisioni"
+		"playerstat_name_12_desc"		"Rapporto prime uccisioni/prime morti: {s:value}\nPrime uccisioni totali: {d:total}"
+
+		"stats_graph_button_0"			"Punti/r"
+		"stats_graph_button_1"			"Uccisioni/r"
+		"stats_graph_button_2"			"DMR"
+		"stats_graph_button_3"			"U/M"
+		"stats_graph_button_4"			"%HS"
+
+		"ris_score"								"Punti round"
+		"ris_t"									"T"
+		"ris_ct"								"AT"
+		"ris_team-title"						"Probabilità di vittoria della tua squadra"
+		"ris_wins"								"Vittoria: {s:ris_team}!"
+
+		"ris_win"								"vittoria"
+		"ris_loss"							"sconfitta"
+
+		"ris_hits"								"in {s:num_hits}"
+		
+		"prdr_health_removed"					"{d:health_removed} in {d:num_hits}"
+		"prdr_return_health_removed"				"{d:return_health_removed} in {d:return_num_hits}"
+
+		"season_stat_title_wins"		"VITTORIE"
+        "season_stat_title_ties"		"PAREGGI"
+        "season_stat_title_losses"		"SCONFITTE"
+        "season_stat_title_rounds"		"ROUND"
+        "season_stat_title_kills"		"UCCISIONI"
+        "season_stat_title_headshots"	"COLPI ALLA TESTA"
+		"season_stat_title_hs_percent"	"%HS"
+        "season_stat_title_assists"		"ASSIST"
+        "season_stat_title_deaths"		"MORTI"
+        "season_stat_title_mvps"		"MVP"
+        "season_stat_title_rounds_3k"	"3K"
+        "season_stat_title_rounds_4k"	"4K"
+        "season_stat_title_rounds_5k"	"5K"
+		"season_stat_title_kpr"			"UPR"
+		"season_stat_title_kd"			"U/M"
+		"season_stat_title_best_map"	"MAPPA MIGLIORE"
+		"season_stat_title_win_percent"	"% VITTORIE"
+		"season_stat_title_matches_played"	"PARTITE"
+		"season_stat_title_achieved_week"	"GRADO MASSIMO RAGGIUNTO NELLA SETTIMANA:"
+		"season_stat_value_kd"				"{s:kdratio}"
+		"season_stat_value_win_percent"		"{s:win-percent}%"
+		"season_stat_value_hs_percent"		"{s:hs-percent}%"
+		"season_section_rank"				"PUNTEGGIO ALTO"
+		"season_section_season_stats"		"STATISTICHE DELLA STAGIONE"
+		"season_section_rank_history"		"STORICO VALUTAZIONE"
+		"season_section_rank_activity"		"PARTITE GIOCATE"
+		"season_section_rank_map_stats"		"STATISTICHE PER MAPPA"
+		"season_section_rank_map_wins_graph"	"TOTALE DI VITTORIE NELLE MAPPE"
+		"season_section_graph_x_axis_label_min"		"SETTIMANA {d:week_min}"
+		"season_section_graph_x_axis_label_max"		"SETTIMANA {d:week_max}"
+		"tooltip-no-map-stats"			"Le tue statistiche non sono disponibili per questa mappa"
+		"tooltip-season-rank-week-idx"		"SETTIMANA {s:week-id}"
+		"tooltip-season-rank-week-name"		"{s:week-name}"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	WIN PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_winpanel_mvp_award"				"MVP"
+		"Panorama_winpanel_mvp_award_kills"			"MVP"
+		"Panorama_winpanel_mvp_award_ace"			"MVP per un round di eliminazione totale"
+		"Panorama_winpanel_mvp_award_bombplant"		"MVP per aver piazzato la bomba"
+		"Panorama_winpanel_mvp_award_bombdefuse"	"MVP per aver disinnescato la bomba"
+		"Panorama_winpanel_mvp_award_rescue"		"MVP per aver salvato un ostaggio"
+		"Panorama_winpanel_mvp_award_score"			"MVP per il punteggio più alto"
+		"Panorama_winpanel_mvp_award_inferno"		"MVP per aver inflitto molti danni da fuoco"
+		"Panorama_winpanel_mvp_award_blast"			"MVP per aver inflitto molti danni da esplosivo"
+		"Panorama_winpanel_mvp_award_bombdefuse_clutch"	"MVP per aver disinnescato la bomba come ultimo membro della squadra"
+		"Panorama_winpanel_mvp_award_bombplant_clutch"	"MVP per aver piazzato e difeso la bomba"
+		"Panorama_winpanel_mvp_award_gungame"		"MVP"
+		"Panorama_winpanel_mvp_winner"				"MVP"
+		"Panorama_winpanel_mvp_award_kills_three"	"MVP per record di uccisioni (3)"
+		"Panorama_winpanel_mvp_award_kills_four"	"MVP per record di uccisioni (4)"
+
+		"Panorama_WinPanel_rank_awarded_multi"	"Hai ottenuto {d:rank_increase} nuovi gradi!"
+
+		"Panorama_WinPanel_rank_name_string"	"{s:current_best_cat} <font color='#CCCCCC'>({s:current_rank_cat})</font>"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	WATCH PANEL
+		//
+		///////////////////////////////////////////////////////////
+		
+		"WatchMenu_Watch"					"Guarda"
+		"WatchMenu_Tournament_Versus"		"contro"
+		"WatchMenu_Outcome_Tied"			"Parità"
+		"WatchMenu_Outcome_Abandon"			"Abbandono"
+		"WatchMenu_Outcome_Won"				"<img src='file://{images}/icons/ui/trophy.svg' width='15' height='15'/> Vittoria"
+		"WatchMenu_Outcome_Lost"			"Sconfitta"
+		"WatchMenu_Expand_Match_Menu"		"Altro"
+		"WatchMenu_Get_Share_Link"			"Copia il codice per condividere la partita"
+		"WatchMenu_Share_Link_Copied"		"Link copiato negli appunti"
+		"WatchMenu_Download_Demo"			"Scarica e guarda la demo"
+		"WatchMenu_Watch_Live"				"Guarda in diretta"
+		"WatchMenu_Watch_Highlights"		"Guarda i momenti salienti"
+		"WatchMenu_Watch_Lowlights"			"Guarda i momenti peggiori"
+		"WatchMenu_Watch_Highlights_Player_Selected"	"Guarda i momenti salienti di {s:playerNameTitle}"
+		"WatchMenu_Watch_Lowlights_Player_Selected"	"Guarda i momenti peggiori di {s:playerNameTitle}"
+		"WatchMenu_Delete"					"Cancella i file locali delle demo"
+		"WatchMenu_Downloading"				"Download in corso"
+		"WatchMenu_Info_Download_Failed"	"Impossibile completare il download"
+		"WatchMenu_Info_Download_Failed_Retry" "Riprovare?"
+		"WatchMenu_Info_Download_Failed_Info" "Il download non è stato completato. La tabella dei punteggi è disponibile, ma non puoi guardare la partita."
+		"WatchMenu_Download_Disabled_Hint"	"La demo della partita è scaduta e non è più possibile scaricarla."
+		"WatchMenu_Tournament_BulletPoint"	"<ul>
+												<li>Guarda le partite e usa gli adesivi della tua squadra per fare pronostici per la fase a gironi e quella dei playoff.</li>
+												<li>Ogni qualvolta il tuo pronostico sarà corretto, guadagnerai punti per il trofeo della sfida che potrai sfoggiare sul tuo avatar di Counter-Strike e sul tuo profilo di Steam.</li>
+												<li>Puoi fare pronostici sulla fase a gironi fino al suo inizio.</li>
+												<li>Puoi fare pronostici sulla fase dei playoff fino al suo inizio.</li>
+											</ul>"
+		"WatchMenu_Viewer"				"Spettatore"
+		"WatchMenu_Viewers"				"Spettatori"
+		"WatchMenu_Viewers_dv:f"		"{spectatorCount, plural, one{{d:spectatorCount} spettatore} other{{d:spectatorCount} spettatori}}"
+		"WatchMenu_FirstHalf"			"Primo tempo"
+		"WatchMenu_SecondHalf"			"Secondo tempo"
+		"WatchMenu_Overtime"			"Tempi supplementari"
+		"MatchInfo_FirstRound"			"Primo round"
+		"MatchInfo_Halftime"			"Intervallo"
+		"MatchInfo_Overtime"			"Tempo supplementare"
+		"MatchInfo_RoundDataTitle"      "Prestazioni di {s:playerNameTitle}"
+		"MatchInfo_Date"				"{s:day} {s:month}"
+		
+		"MatchInfo_Date_Tournament_Month_Short_8"	"ott"		
+		"MatchInfo_Date_Tournament_Month_Final_Short_8"	"nov"
+		"MatchInfo_Date_Tournament_Month_Short_9"	"mar"
+		"MatchInfo_Date_Tournament_Month_Short_9_1"	"apr"
+		"MatchInfo_Date_Tournament_Month_Final_Short_9"	"apr"
+		"MatchInfo_Date_Tournament_Month_Short_10"	"lug"
+		"MatchInfo_Date_Tournament_Month_Short_10_1"	"lug"
+		"MatchInfo_Date_Tournament_Month_Final_Short_10"	"lug"
+		"MatchInfo_Date_Tournament_Month_Short_11"	"gen"
+		"MatchInfo_Date_Tournament_Month_Short_11_1"	"gen"
+		"MatchInfo_Date_Tournament_Month_Final_Short_11"	"gen"
+		"MatchInfo_Date_Tournament_Month_Short_12"	"lug"
+		"MatchInfo_Date_Tournament_Month_Short_12_1"	"lug"
+		"MatchInfo_Date_Tournament_Month_Final_Short_12"	"lug"
+		"WatchMenu_PickEm_ComingSoon"	"La cronologia delle sfide Pick'Em e del FantaGO sarà disponibile a breve."
+		"WatchMenu_ViewerCount"	"{s:numberOfViewers} spettatori su {s:channel}"
+		"Matchlist_Team_Selection"	"Tutte le squadre"
+
+
+		"pickem_timer_inactive"		"In questa fase non è possibile fare pronostici"
+		"pickem_timer"				"Tempo rimasto per fare i pronostici: {s:time}"
+		"pickem_timer_upsell"		"Tempo rimasto per fare i tuoi pronostici: <b>{s:time}</b>. Ottieni il Pass per giocare al Pick'Em e vincere token souvenir."
+		"pickem_timer_locked"		"I pronostici sono chiusi"
+		"pickem_points_earned" 		"Punti ottenuti"
+		"pickem_correct_pick" 		"Pronostico corretto"
+		"pickem_points_needed_next_level" 	"Mancano <b>{d:points}</b> {s:plural} al livello <b>{s:level}</b>"
+		"pickem_points_result" 		"Hai ottenuto il trofeo <b>{s:result-level}</b> del Pick'Em"
+		"pickem_points_result_bronze" "Hai ottenuto il trofeo di <b>Bronzo</b> del Pick'Em"
+		"pickem_points_result_silver" "Hai ottenuto il trofeo d'<b>Argento</b> del Pick'Em"
+		"pickem_points_result_gold" "Hai ottenuto il trofeo d'<b>Oro</b> del Pick'Em"
+		"pickem_point"				"punto"
+		"pickem_points"				"punti"
+		"pickem_level_bronze"		"Bronzo"
+		"pickem_level_silver"		"Argento"
+		"pickem_level_gold"			"Oro"
+		"pickem_group_pick_worth"	"Ogni pronostico corretto ti farà guadagnare <b>{d:points} {s:plural} </b>"
+		"pickem_pick_correct_points_earned"	"+ <b>{d:points}</b> {s:plural}"
+		"pickem_pick_drag_hint" 	"Trascina qui una squadra"
+		"pickem_pick_undefeated"	"<b>Scegli</b> una squadra che <b>si qualificherà senza essere sconfitta</b>"
+		"pickem_pick_eliminated"	"<b>Scegli</b> una squadra che sarà <b>eliminata senza vincere alcuna partita</b>"
+		"pickem_get_items" 			"Ottieni adesivi"
+		"pickem_get_items_tooltip" 	"Hai bisogno dei seguenti adesivi per aggiornare i tuoi pronostici: <br><br>"
+		"pickem_place_picks" 		"Aggiorna pronostici"
+		"pickem_confirm_picks" 		"Conferma i tuoi pronostici"
+		"pickem_confirm_Warning"	"<b>Questi adesivi verranno usati per i tuoi pronostici Pick'Em.</b>\n\nResteranno nel tuo inventario e possono essere applicati su qualunque arma che possiedi o che hai scambiato dopo la fine di questa fase dell'evento.\n\n<span class=\"premier-pickban__title__text-red\">\nDiventeranno inutilizzabili e non scambiabili fino al termine di questa fase dell'evento. Questo blocco non verrà annullato se cambi pronostico.</span>\n"
+		"pickem_confirm_ClearAll"	"<b>Non verranno usati adesivi per i tuoi pronostici del Pick'Em.</b>\n\nGli adesivi che hai utilizzato in precedenza rimarranno nel tuo inventario e potranno essere applicati su qualsiasi arma in tuo possesso o scambiati dopo la fine di questa fase dell'evento.\n"
+		"pickem_confirm_stickes_for_lock" 	"Adesivi dei pronostici"
+		"pickem_confirm_not_owned" 		"<b>Questi pronostici non possono essere registrati.</b><span class=\"premier-pickban__title__text-red\">\nHai bisogno degli adesivi delle squadre corrispondenti per aggiornare i tuoi pronostici.</span>"
+		"pickem_apply_emptyslots"		"Devi piazzare tutti i pronostici per poter aggiornare la sfida Pick'Em. Trascina le tue scelte negli slot vuoti che rimangono e clicca sul pulsante \"Aggiorna pronostici\" per confermare."
+		"pickem_apply_timeout"			"Si è verificato un errore durante l'aggiornamento dei pronostici del Pick'Em. Riprova più tardi."
+		"pickem_apply_drag_hint"	"Trascina qui la tua scelta"
+		"pickem_apply_immediate" 		"Aggiornamento dei tuoi pronostici..."
+		"pickem_save_all" 			"SALVA TUTTI I PRONOSTICI"
+		"pickem_make_picks" 		"PRONOSTICI EFFETTUATI: {d:user-picks}/{d:total-picks}"
+		"pickem_drag_picks" 		"Trascina le squadre per fare i tuoi pronostici"
+		"pickem_reveal_all_results" "Mostra posizioni finali"
+		"pickem_saved" 		"Pronostici salvati"
+		"pickem_teams_tbd" 	"Squadre da decidersi"
+		"pickem_challenge_section_title" "SFIDA PICK'EM"
+		"pickem_items_section_title" "OGGETTI DEL TORNEO"
+		"pickem_items_tab_opening_stage" "FASE DI APERTURA"
+		"pickem_items_tab_elim_stage" "FASE DI ELIMINAZIONE"
+		"pickem_items_tab_stage_i" "Fase I"
+		"pickem_items_tab_stage_ii" "Fase II"
+		"pickem_items_tab_stage_iii" "Fase III"
+		"pickem_items_tab_playoff_stage" "PLAYOFF"
+		"pickem_teams_remove_all_tooltip" 	"Cancella tutti i pronostici"
+		"pickem_teams_fill_tooltip" 	"Riempi in modo casuale i pronostici vuoti"
+		"pickem_versus"				"VS"
+		"pickem_submit_warning"		"{s:pass-name} non attivato"
+		"pickem_submit_warning_tooltip"		"È necessario un {s:pass-name} attivo per fare progressi nelle Sfide Pick'Em. Il pass deve essere attivato prima della chiusura della fase."
+		"pickem_submit_warning_popup_title"	"Salva le scelte senza un pass attivo"
+		"pickem_submit_warning_popup_desc"	"È necessario un {s:pass-name} attivo per fare progressi nelle Sfide Pick'Em. Il pass deve essere attivato prima della chiusura della fase."
+		"pickem_submit_warning_popup_action""Salva le scelte senza un pass attivo"
+		"pickem_submit_warning_popup_action2"	"Attiva il pass e salva le scelte"
+		"contextmenu_pickem_souvenir_title" 	"Seleziona la partita per la quale desideri ricevere un pacchetto souvenir"
+		"contextmenu_pickem_souvenir_no_result" 	"Torna alla conclusione di questa partita per riscattare un pacchetto souvenir"
+		"mainmenu_major_hub"	"HUB E OGGETTI DEL CAMPIONATO MAJOR"
+		"mainmenu_major_hub_items"	"Adesivi ora disponibili"
+		"mainmenu_major_hub_no_items" "HUB DEL CAMPIONATO MAJOR"
+
+		"pickem_swiss_group_00"									"0:0"
+		"pickem_swiss_group_10"									"1:0"
+		"pickem_swiss_group_11"									"1:1"
+		"pickem_swiss_group_12"									"1:2"
+		"pickem_swiss_group_20"									"2:0"
+		"pickem_swiss_group_21"									"2:1"
+		"pickem_swiss_group_22"									"2:2"
+		"pickem_swiss_group_01"									"0:1"
+		"pickem_swiss_group_02"									"0:2"
+
+		"pickem_swiss_group_30"									"3:0 - avanzata"
+		"pickem_swiss_group_3x"									"3:1 3:2\n avanzata"
+		"pickem_swiss_group_13"									"1:3 - eliminata"
+		"pickem_swiss_group_23"									"2:3 - eliminata"
+		"pickem_swiss_group_03"									"0:3 - eliminata"
+
+
+
+
+
+
+
+		// WATCH EVENTS
+
+		"eventsched_lan"												"Evento LAN"
+		"eventsched_online"											"Evento online"
+		"eventsched_show_online"								"Mostra eventi online"
+		"eventsched_date_format"								"{s:eventsched_date_day} {s:eventsched_date_month}"
+		"eventsched_versus"											"vs"
+		"eventsched_ongoing"										"In corso"
+		"eventsched_tbd"												"non ancora stabilito"
+		"eventsched_live"												"PARTITA IN DIRETTA"
+		"eventsched_link"												"Ulteriori dettagli su HLTV.org"
+		"eventsched_event_link"									"Dettagli dell'evento su HLTV.org"
+		"eventsched_match_link"									"Dettagli su HLTV.org"
+		"eventsched_team_link"									"Dettagli delle squadre su HLTV.org"	
+		"eventsched_no_streams"									"Nessuna trasmissione disponibile"
+		"eventsched_watch_on_gotv"								"Guarda su CSTV"
+		"eventsched_favorite_tt"								"{s:favorite_tooltip}"
+		"eventsched_favorite_tooltip_prime"			"Contrassegnando un evento come preferito\n farà sì che le relative partite in diretta appaiano nel menu principale."
+		"eventsched_favorite_tooltip_not_prime" "Devi avere lo stato Prime per poter contrassegnare un evento come preferito."
+		"eventsched_match_tooltip"							"{s:watchnotice_teamname_1} vs {s:watchnotice_teamname_2}"
+		"eventsched_stream_watch"								"{s:stream_site}"
+		"eventsched_hltv"												"Informazioni dell'evento offerte da HLTV.org"
+		"eventsched_country"										"{s:eventsched_country}"
+		"eventsched_no_live_matches"						"Al momento non ci sono partite in diretta."
+		"eventsched_featured"										"Questo evento è il preferito della Comunità per il mese di {s:eventsched_fave_month}."
+		"eventsched_official"										"Questo è un evento Major di Counter-Strike."
+
+		"WatchNotice_Reason_Official"						"Questo evento è mostrato perché si tratta di un evento relativo a un torneo Major di Counter-Strike."
+		"WatchNotice_Reason_Personal"						"Questo evento è mostrato perché l'hai contrassegnato come preferito."
+		"WatchNotice_Reason_Community"					"Questo evento è in evidenza perché è il preferito della Comunità per il mese di {s:watchnotice_fave_month}."
+		"WatchNotice_Watch"											"Guarda"
+
+	
+		// Used with formatText.AbbreviateNumber()
+		///////////////////////////////////////////
+		"NumberAbbreviation_E3"			"{s:abbreviated_number}k"
+		
+		// Note to translators: Add as needed. Code will use only available strings. example:
+		// "NumberAbbreviation_E4"		"{s:abbreviated_number}万"	
+
+		"NumberAbbreviation_E6"			"{s:abbreviated_number}M"
+		"NumberAbbreviation_E9"			"{s:abbreviated_number}B"
+		"NumberAbbreviation_E12"		"{s:abbreviated_number}T"
+
+		// Used with formatText.SplitAbbreviateNumber()
+		///////////////////////////////////////////
+		"NumberAbbreviation_suffix_E3"			" mila"
+		
+		// Note to translators: Add as needed. Code will use only available strings. example:
+		// "NumberAbbreviation_suffix_E4"		"万"	
+
+		"NumberAbbreviation_suffix_E6"			" mln."
+		"NumberAbbreviation_suffix_E9"			" mlrd."
+		"NumberAbbreviation_suffix_E12"			"T"
+
+
+		"digitpanel_digits"			 " 0123456789,.-+?"
+		"digitpanel_digits_premier" " 1234567890,?"
+
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	OVERWATCH
+		//
+		///////////////////////////////////////////////////////////
+		
+		"Panorama_Overwatch_Downloading"		"Download dei file del caso..."
+		"Panorama_Overwatch_Review"				"La valutazione di un caso richiede pochi minuti."
+		"Panorama_Overwatch_Welcome"			"Sorveglianza di Counter-Strike"
+		"Panorama_Overwatch_Tooltip_p1"			"Come parte del tuo lavoro per Counter-Strike, scaricherai e analizzerai i replay di partite di Counter-Strike 2 su server ufficiali di Valve in cerca di comportamenti sospetti. Al termine del replay ti verrà chiesto di emettere dei verdetti sul gameplay del giocatore."
+		"Panorama_Overwatch_Tooltip_sh1"		"Fase 1"
+		"Panorama_Overwatch_Tooltip_p2"			"Clicca su SCARICA VIDEO in basso a destra per scaricare un caso della Sorveglianza."
+		"Panorama_Overwatch_Tooltip_sh2"		"Fase 2"
+		"Panorama_Overwatch_Tooltip_p3"			"Clicca su ESAMINA VIDEO per guardare il replay dal punto di vista del giocatore così come registrato dal server."
+		"Panorama_Overwatch_Tooltip_sh3"		"Fase 3"
+		"Panorama_Overwatch_Tooltip_p4"			"Dopo la conclusione del caso, seleziona un verdetto per ogni domanda e clicca su INVIA VERDETTO."
+		"Panorama_Overwatch_Major_Disruption"	"Violazione maggiore"
+		"Panorama_Overwatch_Minor_Disruption"	"Violazione minore"
+		"Panorama_Overwatch_Res_Griefing"		"Griefing"
+		"Panorama_Overwatch_Res_AimHacking"		"Mira assistita"
+		"Panorama_Overwatch_Res_WallHacking"	"Visione assistita"
+		"Panorama_Overwatch_Res_SpeedHacking"	"Altri aiuti esterni"
+		
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	ROSETTA PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_CSGO_Spray_EnableMouse"			"<b>[{g:csgo_key:spray_mouse_enable}]</b> Attiva il cursore"
+		"Panorama_CSGO_Rosetta_Item_Name"			"<font color=\"{s:item_color}\">{s:item_name}</font>"
+		"Panorama_CSGO_Rosetta_Item_Count"			"Utilizzi rimasti: {d:item_count}"
+		"Panorama_Attrib_SpraysHint"					"{s:bind_attack} per applicare il graffito"
+		"Panorama_Attrib_SpraysHint_Auto"			"Rilascia <b>{s:bind_spray_menu}</b> per applicare il graffito"
+
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	RETICLE PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_HUD_weaponid_swap"			"<font color=\"#6a6156\">[{s:bind_use}] Scambia per</font> <font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+		"Panorama_HUD_weaponid_pickup"			"<font color=\"#6a6156\">[{s:bind_use}] Raccogli</font> <font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+		"Panorama_HUD_weaponid_lookat"			"<font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+		"Panorama_HUD_weaponid_holdtopickup"	"<font color=\"#6a6156\">Tieni premuto [{s:bind_use}] per prendere</font> <font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+
+		"Panorama_HUD_playerid_sameteam"			"<font color='#6E7D5C'>Amico: {g:player_name:html:player_slot} Salute: {d:player_health}%</font>"
+		"Panorama_HUD_playerid_diffteam"			"<font color='#CC0000'>Nemico: {g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_playerid_specteam"			"<font color='#6E7D5C'>{g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_playerid_noteam"			"<font color='#FFCC00'>{g:player_name:html:player_slot} Salute:{d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_shadow"		"{g:player_name:player_slot}"
+
+		"Panorama_HUD_playerid_survival_enemy"				"<font color='#CC0000'>Nemico</font>"
+		"Panorama_HUD_playerid_survival_hunter_target"		"<font color='#e58816'>Bersaglio di alto livello</font>"
+
+		"Panorama_HUD_botid_request_bomb"		"<font color='#e5da25'>[{s:bind_use}] Prendi la bomba</font>"
+
+		"Panorama_HUD_hostageid_nh"				"<font color='#e5da25'>Ostaggio</font>"
+		"Panorama_HUD_hostagename_nh"			"<font color='#e5da25'>{g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_hostageid_nh_use_lead"		"<font color='#e5da25'>[{s:bind_use}] Recupera l'ostaggio</font>"
+		"Panorama_HUD_hostageid_nh_following"	"<font color='#e5da25'>Ostaggio (sta seguendo {g:player_name:html:player_slot})</font>"
+
+		"Panorama_HUD_hostageid"					"<font color='#e5da25'>Ostaggio</font><font color='#dcdac0'> {d:player_health}%</font>"
+		"Panorama_HUD_hostageid_use_lead"		"<font color='#e5da25'>[{s:bind_use}] Recupera l'ostaggio</font><font color='#dcdac0'> {d:player_health}%</font>"
+		"Panorama_HUD_hostageid_following"		"<font color='#e5da25'>Ostaggio (sta seguendo {s:player_name})</font><font color='#dcdac0'> {d:player_health}%</font>"
+
+
+		"Panorama_HUD_playerid_overhead_health"			"{d:player_health}%"
+		"Panorama_HUD_playerid_overhead_money"			"{d:r:player_money} $"
+
+		"Panorama_HUD_playerid_overhead_survival"					"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#00c3e1'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_lowhealth"			"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#d82429'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_money"				"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#7ebc50'>{d:r:player_money} $</font>"
+		"Panorama_HUD_playerid_overhead_survival_grey"				"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#dddddd'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_lowhealth_grey"	"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#d82429'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_money_grey"		"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#7ebc50'> {d:r:player_money} $</font>"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	DEATH PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_SurvivalEndOfMatch_ShowStats"			"[{s:bind_jump}] Mostra le statistiche"
+		"Panorama_Death_Cancel_Start_Replay"			"[{s:bind_jump}] Salta"
+		"Panorama_Death_Cancel_Replay" 				"[{s:bind_jump}] Annulla replay"
+		"Panorama_Death_Snapshot"						"[{s:bind_jpeg}] Immortala questo momento"
+		"Panorama_HUD_Spectate_Navigation_Replay_Death"	"<font color='#ddbb22'><b>[{s:bind_reload}] Replay della morte</b></font>"
+
+		"Panorama_DeathPanel_Killer1_YourWeapon"			"ti ha ucciso con la tua arma: {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_KillerWeapon"			"ti ha ucciso con la sua arma: {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_OthersWeapon"			"ti ha ucciso con l'arma di <font color='#adadad'>{s:other_player_name}</font>: {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_Weapon"				"ti ha ucciso con: {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_Weapon_Plural" 		"ti ha ucciso con: {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_Weapon_CustomString" 	"{s:weapon_name}"
+
+		"Panorama_DeathPanel_DamageTaken:f"					"<font color='#A0A0A0'>Danni subiti:  </font><font color='#FFFFFF'><b>{d:damage_taken}</b></font> <font color='#A0A0A0'> con</font> <font color='#FFFFFF'><b>{d:hits_taken} {hits_taken, plural, one{colpo} other{colpi}} </b></font>"
+		"Panorama_DeathPanel_DamageGiven:f"					"<font color='#A0A0A0'>Danni inflitti: </font><font color='#FFFFFF'><b>{d:damage_given}</b></font> <font color='#A0A0A0'>con</font> <font color='#FFFFFF'><b>{d:hits_given} {hits_given, plural, one{colpo} other{colpi}} </b></font>"
+
+		/////////////////////////////////////////////////////////////////
+		//
+		//      CHATWHEEL OPTIONS
+		//
+		////////////////////////////////////////////////////////////
+
+		"Chatwheel_segment_top"	"In alto"
+		"Chatwheel_segment_topright"	"In alto a destra"
+		"Chatwheel_segment_right"	"A destra"
+		"Chatwheel_segment_bottomright"	"In basso a destra"
+		"Chatwheel_segment_bottom"	"In basso"
+		"Chatwheel_segment_bottomleft"	"In basso a sinistra"
+		"Chatwheel_segment_left"	"A sinistra"
+		"Chatwheel_segment_topleft"	"In alto a sinistra"
+
+		"Chatwheel_ping_on_cooldown"  "Impossibile segnalare (attendi)."
+
+		"Chatwheel_plant"	"Piazza la bomba."
+		"Chatwheel_sitea"	"Segnala il Sito A."
+		"Chatwheel_siteb"	"Segnala il Sito B."
+
+		"Chatwheel_section_move"	"Movimento."
+		"Chatwheel_sticktogether"	"Restare uniti."
+		"Chatwheel_followme"	"Seguitemi."
+		"Chatwheel_followingyou"	"Seguo."
+		"Chatwheel_spreadout"	"Sparpagliarsi."
+		"Chatwheel_fallback"	"Ritirata."
+		"Chatwheel_gogogo"	"Via, via, via!"
+		"Chatwheel_onmyway"	"Sto arrivando."
+		"Chatwheel_gethostage"	"Controllare l'ostaggio."
+		"Chatwheel_quiet"	"Silenzio."
+
+		"Chatwheel_section_prepare"	"Preparazione."
+		"Chatwheel_requestecoround"	"Risparmiamo."
+		"Chatwheel_requestspend"	"Acquistiamo."
+		"Chatwheel_requestleader"	"Chi è al comando?"
+		"Chatwheel_requestweapon"	"Chiedi arma."
+		"Chatwheel_requestplan"		"Qual è il piano?"
+		"Chatwheel_aplan"	"Segnala il Sito A."
+		"Chatwheel_bplan"	"Segnala il Sito B."
+		"Chatwheel_midplan"	"Segnala sito intermedio."
+
+		"Chatwheel_section_grenades"	"Granate."
+		"Chatwheel_decoy"	"Servono granate diversive."
+		"Chatwheel_smoke"	"Servono fumogene."
+		"Chatwheel_grenade"	"Servono granate esplosive."
+		"Chatwheel_fire"	"Servono molotov."
+		"Chatwheel_flashbang"	"Servono flashbang."
+		
+		"Chatwheel_section_defend"	"Difesa."
+		"Chatwheel_coverme"	"Copritemi."
+		"Chatwheel_coveringyou"	"Ti copro."
+		"Chatwheel_help"	"Aiuto."
+		"Chatwheel_needbackup"	"Servono rinforzi."
+		"Chatwheel_holdposition"	"Mantenere la posizione."
+        "Chatwheel_rotatetome"	"Convergete verso di me."
+
+		"Chatwheel_section_bomb"	"Stato della bomba."
+		"Chatwheel_guardingbomb"	"Proteggo la bomba."
+		"Chatwheel_bombsiteclear"	"Sito della bomba libero."
+		"Chatwheel_droppedbomb"	"Bomba lasciata."
+		"Chatwheel_bombpickedup"	"Bomba raccolta"
+		"Chatwheel_ifixbomb"	"Disinnesco/innesco la bomba."
+		"Chatwheel_youfixbomb"	"Disinnesca/innesca la bomba."
+		
+		"Chatwheel_bombat"	"Segnala la bomba." 
+
+		"Chatwheel_section_enemystatus"	"Stato del nemico."
+		"Chatwheel_heardnoise"	"Ho sentito qualcosa." 
+		"Chatwheel_enemyspotted"	"Nemico individuato."
+		"Chatwheel_sectorclear"	"Settore libero."
+		"Chatwheel_sniperspotted"	"Cecchino individuato."
+		"Chatwheel_bombcarrierspotted"	"Portatore della bomba in vista."
+		"Chatwheel_threeleft"	"Ne restano tre."
+		"Chatwheel_twoleft"	"Ne restano due."
+		"Chatwheel_oneleft"	"Ne resta uno."
+		"Chatwheel_oneenemyhere"  "Nemico qui."
+		"Chatwheel_multipleenemieshere"  "Nemici multipli qui."
+		"Chatwheel_ihavethebomb"  "Bomba raccolta."
+
+		"Chatwheel_section_enemykilled"	"Nemico ucciso."
+		"Chatwheel_gotheadshot"	"Colpo alla testa."
+		"Chatwheel_ikilledsniper"	"Cecchino ucciso."
+		"Chatwheel_wekilledsniper"	"Cecchino ucciso."
+		"Chatwheel_sawheadshot"	"Bel colpo alla testa."
+
+		"Chatwheel_section_combatstatus"	"Stato del combattimento."
+		"Chatwheel_attacking"	"All'attacco."
+		"Chatwheel_inposition"	"In posizione."
+		"Chatwheel_covering"	"Copertura."
+		"Chatwheel_pinned"	"Sono bloccato."
+		"Chatwheel_incombat"	"In combattimento."
+		"Chatwheel_friendlyfire"	"Fuoco amico."
+		"Chatwheel_lastunitalive"	"Ultima unità viva."
+
+		"Chatwheel_section_responses"	"Risposte."
+		"Chatwheel_wewon"	"Abbiamo vinto."
+		"Chatwheel_welost"	"Abbiamo perso."
+		"Chatwheel_wearewinning"	"Stiamo vincendo."
+		"Chatwheel_lostround"	"Questo round è perso."
+		"Chatwheel_thanks"	"Grazie!"
+		"Chatwheel_sorry"	"Mi spiace."
+		"Chatwheel_compliment"	"Bravo!"
+		"Chatwheel_affirmative"	"Sì."
+		"Chatwheel_negative"	"No."
+		"Chatwheel_peptalk"	"Incoraggiamento."
+		"Chatwheel_cheer"	"Evviva!"
+
+		"Chatwheel_plantingata"	"Piazzo la bomba in A"
+		"Chatwheel_plantingatb"	"Piazzo la bomba in B"
+		"Chatwheel_plantedata"	"Bomba piazzata in A"
+		"Chatwheel_plantedatb"	"Bomba piazzata in B"
+		"Chatwheel_planted"	"Abbiamo piazzato la bomba"
+
+		"Chatwheel_seehostagestaken"	"Ostaggi in fase di recupero"
+		"Chatwheel_requestgethostages"	"Recuperate gli ostaggi"
+
+		"Chatwheel_guardinga"	"Controllo A"
+		"Chatwheel_guardingb"	"Controllo B"
+		
+
+		
+		"Chatwheel_section_command"	"Comandi."
+		"Chatwheel_section_report"	"Segnalazioni."
+
+		"Chatwheel_description" "La chat radiale permette di accedere rapidamente a una lista personalizzabile di utili comandi radio."
+
+		////
+		//
+		// Volatile Laptop
+		//
+		////
+
+		// ---------------------------------------------------------------------------------------------
+		"laptop_window_collection_title"			"ESP CATALOGO COLLEZIONE"
+		"laptop_window_expiration_title"			"SCADENZA"
+		"laptop_window_seal_title"					"STATO"
+		"laptop_window_messages_title"				"CHAT - TRAFFICANTE D'ARMI"
+		"laptop_window_currentoffer_title"			"OFFERTA ATTUALE"
+		"laptop_app_title"							"<span class=\"laptop-app-title-prefix\">UP-</span>Link"
+		"laptop_app_version"						"v 1.1.0.2000"
+
+		"dealer_offer_attachment_title"							"{s:item-name}"
+		"dealer_offer_attachment_wear"							"{s:item-rarity}"
+		"dealer_offer_attachment_remaining_title"				"OFFERTA #{d:offer-total}"
+		"dealer_offer_attachment_remaining"						"Offerta #{d:offer-total}"
+		"dealer_offer_received_count"							"<b>{s:offer-count}</b> offerta"
+		"dealer_offer_attachment_final_title"					"OFFERTA FINALE"
+		"dealer_offer_attachment_final"							"{s:offer-count} e ultima offerta"
+		"dealer_offer_attachment_status"						"Offerta - {s:offer-status}"
+		"dealer_offer_attachment_status-active"					"<b><span class=\"offer-active\">attiva</span></b>"
+		"dealer_offer_attachment_status-price"					"<b><span class=\"offer-active\">{s:offer-price}</span></b>"
+		"dealer_offer_attachment_status-declined-price"			"{s:offer-price}"
+		"dealer_offer_attachment_status-declined"				"<span class=\"offer-declined\">{s:offer-count} offerta rifiutata</span>"
+
+		"user_btn_purchase_desc_purchase"		"Tieni premuto per acquistare questo articolo. Dopo l'acquisto, il terminale viene eliminato."
+		"user_btn_purchase_desc_continue"		"Tieni premuto per rifiutare definitivamente questa offerta e vedere quella successiva."
+		"user_btn_purchase_desc_end"		"Rifiuta l'offerta finale e scarta questo terminale."
+		"user_btn_purchase_title"			"{s:offer-count} offerta"
+		"user_btn_purchase_final_title"		"<b>Offerta finale</b>"
+		"user_btn_decline_desc"				"Rifiuta questa offerta e visualizzane un'altra"
+		"user_btn_accept"		"Accetta l'offerta <b>{s:price}</b>"
+		"user_btn_accept_final"	"Accetta l'offerta finale <b>{s:price}</b>"
+		"user_btn_accept_0"		"Affare fatto. <b>{s:price} va bene.</b>"
+		"user_btn_accept_1"		"Accetto - <b>{s:price}</b>"
+		"user_btn_accept_2"		"Ci sto per <b>{s:price}</b>"
+		"user_btn_accept_3"		"Posso arrivare a <b>{s:price}</b>"
+		"user_btn_accept_4"		"Ci accordiamo a <b>{s:price}</b>"
+		"user_btn_accept_5"		"Ci sto — <b>{s:price}</b>"
+		"user_btn_next"			"Rifiuta l'offerta"
+		"user_btn_next_0"		"Allettante, ma no"
+		"user_btn_next_1"		"Non vale i miei proiettili"
+		"user_btn_next_2"		"Non posso arrivarci"
+		"user_btn_next_3"		"Passa"
+		"user_btn_next_4"		"Niente accordo"
+		"user_btn_next_5"		"Grazie, ma no"
+		"user_btn_next_6"		"Non questa volta"
+		"user_btn_next_7"		"Non oggi"
+		"user_btn_pause"		"Pausa negoziazione"
+		"user_btn_end"			"Rifiuta l'offerta finale"
+
+		"user_message_limit_0"		"Posso arrivare a <b>{s:limit-setting}</b>."
+		"user_message_limit_1"		"Che ne dici di <b>{s:limit-setting}</b> come limite massimo?"
+		"user_message_limit_2"		"Fino a <b>{s:limit-setting}</b> va bene per me."
+		"user_message_limit_3"		"Il limite di <b>{s:limit-setting}</b> va bene."
+		"user_message_limit_unlimited_0"	"<b>Nessun valore massimo</b>, voglio vedere tutto."
+		"user_message_limit_unlimited_1"	"<b>Assegno in bianco</b>. Non preoccuparti del portafoglio."
+		"user_message_limit_unlimited_2"	"Sono qui per comprare. <b>Mostrami tutto</b>."
+		"user_message_limit_unlimited_3"	"Se spara, mi interessa.<b> Nessun limite</b>."
+		"user_message_limit_unlimited_4"	"Non ci sono limiti"
+		"offer_limit_setting"		"Limite offerta: {s:limit}"
+		"offer_limit_setting_interface"		"Limite offerta: {s:limit} <img src='file://{images}/icons/ui/expand.svg' class='expand-icon'/>"
+
+		"dealer_offer_Unknown"							"-"
+		"dealer_offer_1"								"1ª"
+		"dealer_offer_2"								"2ª"
+		"dealer_offer_3"								"3ª"
+		"dealer_offer_4"								"4ª"
+		"dealer_offer_5"								"5ª"
+		"dealer_offer_6"								"6ª"
+		"dealer_offer_7"								"7ª"
+		"dealer_offer_8"								"8ª"
+		"dealer_offer_9"								"9ª"
+		"dealer_offer_10"								"10ª"
+
+		"current_offer_tooltip"		"L'offerta attuale del trafficante d'armi per te."
+		"declined_offer_tooltip"	"Offerta rifiutata"
+		"future_offer_tooltip"		"Offerta non ancora rivelata."
+		"laptop_expiration_tooltip"		"Tempo rimanente fino alla scadenza di questo terminale Uplink e delle sue offerte."
+		"laptop_max_offer_tooltip"		"Imposta il tuo limite massimo dell'offerta. Riceverai solo offerte al di sotto di tale limite. Puoi modificarlo in qualsiasi momento."
+		"collection_xp_tooltip"			"Guadagna ESP visualizzando le offerte di questa raccolta. Apri per vedere i progressi e riscattare ESP."
+		"terminal_offer_limit_tooltip"		"Aggiorna il tuo limite massimo dell'offerta. Il trafficante d'armi ti mostrerà solo le offerte fino a quel limite."
+		"popup_lootlist_title"			"ESP catalogo raccolta"
+		"popup_lootlist_desc"			"Guadagna ESP visualizzando le offerte di questa raccolta"
+
+		"popup_lootlist_progress:f"      "Offerte viste: {total, plural, one{{d:seen}/{d:total}} other{{d:seen}/{d:total}}}"
+		"popup_lootlist_claim_xp"		"Ottieni ESP bonus"
+		"popup_lootlist_claim_ww"		"Richiesta ESP in corso..."
+		"popup_lootlist_claim_ok"		"✔ ESP ottenuta"
+		"popup_vpn_status_connected"	"Stato: connesso a una rete sicura"
+		"popup_vpn_status_disconnected"	"Stato: disconnesso"
+		"popup_signal_full" 			"Segnale ottimale"
+		"popup_signal_ok" 				"Segnale forte"
+		"popup_offer_limit_desc"		"Aggiorna il tuo limite massimo di offerta per tutte le offerte future"
+		"laptop_battery_tooltip" 		"Batteria: {d:percent}%"
+		"laptop_original_seal_tooltip" 	"Qualsiasi oggetto acquistato da questo terminale Uplink verrà fornito con un certificato di proprietà originale, valido finché resterà in tuo possesso."
+		"laptop_zoom_tooltip" 			"Scorri la rotellina del mouse per ingrandire o ridurre"
+		"laptop_pan_tooltip" 			"Tieni premuto \"Maiusc\" e trascina per muovere la telecamera"
+		"laptop_pricing_tooltip"		"I prezzi sono validi a livello globale e si adattano automaticamente in base alla domanda di ciascun oggetto di questa collezione."
+
+		"dealer_message_set_offer_limit_0"		"Partiamo dall'inizio. Quanto puoi spendere?"
+		"dealer_message_set_offer_limit_1"		"Andiamo al punto.<!--.25--> Qual è il tuo limite massimo?"
+		"dealer_message_set_offer_limit_2"		"Prima di iniziare...<!--.25--> Qual è il limite? Quanto puoi spendere?"
+		
+		"dealer_message_start_0"  	"Questa è roba da veri mercenari.<!--.25-->È nuova di zecca con tutti gli optional. E senza scartoffie."
+		"dealer_message_start_1"  	"Sto smerciando materiale dal mercato grigio, senza scartoffie.<!--.25-->Non preoccuparti: è roba fuori dai radar di chiunque.<!--.25-->Sono armi fuori dalla circolazione da anni, nessuno le sta cercando. E, per la cronaca, sparano ancora proiettili."
+		"dealer_message_start_2"  	"La dogana di Ahradan ha sequestrato la mia merce stamattina. Ho cercato di smussare la situazione raccontando una storia strappalacrime sulla mancanza di attrezzature mediche e sui poveri malati che stanno morendo...<!--.25-->Non ha funzionato. Ma la valigetta piena di soldi sì.<!--.25-->Che ne dite di dare un'occhiata a queste \"macchine per la dialisi\" prima di mandarle agli orfanelli?"
+		"dealer_message_start_3"  	"C'è stata una rivoluzione in uno di quei Paesi che finiscono in \"istan\".<!--.25-->Ho avuto accesso al deposito e ho potuto rovistare a mio piacimento.<!--.25-->Sto vendendo solo le armi valide. Dai un'occhiata."
+		"dealer_message_start_4"  	"È roba pulita quella di oggi.<!--.25-->Per quanto ne sappiamo, le tue mani sono le prime a toccarla."
+		"dealer_message_start_5"  	"Armi sterili, senza numero di serie, perfettamente funzionanti.<!--.25-->In un tribunale militare potrebbero essere considerate prove.<!--.25-->Tu ed io sappiamo che sono dei capolavori."
+		"dealer_message_start_6"  	"Questa viene da un lotto di armi esotiche provenienti da un'unità da parata.<!--.25-->Ha percorso un sacco di chilometri, ma non ha mai sparato un colpo."
+		"dealer_message_start_7"  	"Gli altri clienti vogliono sempre sapere come ho acquistato la merce. Non mi piace.<!--.25-->Tu vuoi solo sapere se sono le migliori armi sul mercato.<!--.25-->Pensa un po': lo sono davvero."
+		"dealer_message_start_8"  	"Accordo di pace a Drosvik. Amo la pace.<!--.25-->Perché ho un generale con molti debiti e un'armeria ben rifornita che sta raccogliendo la polvere.<!--.25--> Voglio dire...<!--.25-->Anche perché la pace è un bene, ovviamente. Vite innocenti e...<!--.25-->Ma che sto dicendo, non ti interessa."
+		"dealer_message_start_9"  	"Questo carico contiene oggetti esotici provenienti da una deviazione del canale grigio.<!--.25-->Calibri inusuali, non per dilettanti. Li adorerai."
+		"dealer_message_start_10"  	"È imbarazzante.<!--.25-->Devo aver accidentalmente etichettato erroneamente una cassa nella mia spedizione.<!--.25-->Qualche decina di casse.<!--.25-->Che ne dici di aiutarmi a far sparire questo inventario prima che l'autorità portuale lo esamini?"
+		"dealer_message_start_11"  	"L'ispettore di Drosvik era alla ricerca di tangenti per questo caso. L'idiota ha iniziato a parlare di ordini di sequestro.<!--.25-->Ho uomini a Drosvik che sanno come comportarsi con chi parla troppo. Ora ha la mascella ben serrata dal fil di ferro.<!--.25-->Per fortuna, questa merce parla da sé."
+		"dealer_message_start_12"  	"Ho dovuto ungere ogni palmo di Ahradan per far passare questo carico oltre il confine.<!--.25-->E tutte le tangenti erano in ahri. Sai quanta carta devi portare con te per pagare tangenti in una valuta senza valore? Quei ragazzi devono fare qualcosa per la loro economia."
+		"dealer_message_start_13"	"Ho un intermediario che ha bisogno che questo venga spedito rapidamente.<!--.25-->È tutto quello che ha detto: \"Rapidamente\"!<!--.25-->E anche \"molto, molto\".<!--.25-->Pensala così: se non sei curioso di sapere perché vuole vendere, sarai molto, molto felice."
+		"dealer_message_start_14"	"Oggi sono arrivati alcuni vecchi modelli.<!--.25-->Sono appariscenti? No. Ma sono affidabili.<!--.25-->I tuoi nipoti un giorno ci si divertiranno ancora."
+		"dealer_message_start_15"	"Una milizia ribelle ha liberato questa merce dall'arsenale del Leader Glorioso.<!--.25-->Credo che abbia anche liberato il corpo del Leader Glorioso dalle sue stesse membra e dalla sua testa.<!--.25-->(Non è il tipo di cose che vendo di solito, ma conosco un tizio che può aiutarti se vuoi comprarle.)"
+		"dealer_message_start_16"	"Il capo della polizia di frontiera di Drosvik ha minacciato di sequestrare questo carico.<!--.25-->Credo che nessuno gli abbia detto che non pago tangenti a Drosvik. Non quando è più economico pagare alcuni locali per spezzare le braccia. Drosvik è una specie di capitale mondiale del kickboxing.<!--.25-->Comunque, il suo sostituto ha perso l'ordine di sequestro. E le sue braccia non sono rotte."
+		"dealer_message_start_17"	"Tutto questo proviene dalla collezione privata di un miliardario.<!--.25-->Cioè, un ex miliardario. È sotto inchiesta, il che significa che sto liquidando ciò che lui non può liquidare.<!--.25->Diciamo la verità, quest'arma è più utile nelle tue mani che appesa alla parete di uno yacht."
+		"dealer_message_start_18"	"L'ispettore portuale ha segnalato una discrepanza in questo lotto.<!--.25-->La cosa divertente è che una cassa di fucili pesa esattamente quanto una cassa di \"componenti per trattori\" dopo aver aggiunto esattamente diecimila dollari alla bilancia.<!--.25-->Vediamo allora questi componenti per trattori."
+		"dealer_message_start_19"	"Quello che ho qui oggi è sopravvissuto a un colpo di stato per arrivare nelle tue mani.<!--.25-->La finitura è un po' graffiata, ma funziona perfettamente. Conta solo ciò che c'è dentro, no?"
+		"dealer_message_start_20"	"Una piccola repubblica di merda si è appena liberata del suo presidente.<!--.25-->Fortunatamente, ho ereditato la sua catena di approvvigionamento."
+		"dealer_message_start_21"	"Consideralo un errore di elaborazione. Una discrepanza di archiviazione. Un errore semplice e onesto.<!--.25-->Capita di sbagliare. Sto solo cercando di aiutare un amico a non perdere il posto di sergente addetto alla logistica.<!--.25-->Questa attrezzatura deve sparire."
+		"dealer_message_start_22"	"Un capo della polizia doganale pensava di potermi mettere sotto pressione per questo carico. Allora ho fatto in modo che i sindacati portuali aumentassero la pressione.<!--.25-->È buffo come la burocrazia smetta di essere un problema quando tutti sono alla ricerca di una persona scomparsa.<!--.25-->Spero che lo trovino. Credo che non sapesse nuotare."
+		"dealer_message_start_23"	"Una guardia di frontiera ad Ahradan ha detto che c'era un problema con i documenti. Allora gli ho dato una mazzetta di ahris e improvvisamente il problema è sparito.<!--.25-->Non so nemmeno quanto valgano diecimila ahris. Saranno tipo sei dollari.<!--.25-->Comunque, vuoi vedere delle armi che non esistono?"
+		"dealer_message_start_24"	"Conoscevo un generale intenzionato a comprare la merce, ma hanno fatto saltare in aria quell'idiota con l'attacco di un drone<!--.25-->Tieni sempre le finestre chiuse, ti consiglio solo questo. In ogni caso, la sua esplosione è la tua fortuna."
+		"dealer_message_start_25"	"Il regime è cambiato a Drosvik. Non so come sia successo, ma un magazzino pieno di casse di armi è andato perso nella confusione.<!--.25-->E chissà come, mi sono ritrovato con tutte le casse. Roba da pazzi, no!?<!--.25-->Ma aspetta, c'è dell'altro. Chissà come, è possibile che voglia venderle. A te. Proprio adesso."
+		"dealer_message_start_26"	"Ho una cassa di merce dichiarata erroneamente che voglio mostrarti. <!--.25-->Non farti ingannare dall'etichetta che dice \"attrezzatura agricola\". Ti ritroverai a scavare la terra solo se non spari per primo."
+		"dealer_message_start_27"	"Detesto lavorare con i ribelli. È solo un modo educato per dire \"civili\", che è un modo gentile per dire \"maledetti dilettanti\".<!--.25-->Comunque, sono spariti, quindi sto dando la possibilità a qualche vero professionista di provare quest'arma."
+		"dealer_message_start_28"	"Il parlamento di uno di questi Paesi più a sud, dove fa sempre caldo, ha appena avuto il suo consueto crollo semestrale.<!--.25-->Un sacco di arsenali locali sono stati aperti come pignatte."
+		"dealer_message_start_29"	"Venerdì scorso un ispettore dell'autorità portuale ha classificato questo lotto come \"irregolare\".<!--.25-->Lunedì sua figlia ha ricevuto abbastanza soldi per andare all'università e il lotto è stato nuovamente classificato come \"attrezzatura agricola\".<!--.25-->Che dire, l'istruzione è importante. Cambiando argomento, come ti sembrano queste attrezzature agricole?!"
+
+		"dealer_message_resume_0"  	"<!--1-->Sei di ritorno. Bene. L'offerta è ancora sul tavolo."
+		"dealer_message_resume_1"  	"<!--1-->Hai bisogno di un minuto per pensarci? Fai pure."
+		"dealer_message_resume_2"  	"<!--1-->Immaginavo che avresti fatto ritorno."
+		"dealer_message_resume_3"  	"<!--1-->Riprendiamo da dove eravamo rimasti."
+		"dealer_message_resume_4"  	"<!--1-->Te la senti di fare affari?"
+		"dealer_message_resume_5"  	"<!--1-->Bene, sei di ritorno. Devo liberarmi di questa, altrimenti le persone sbagliate inizieranno a farmi domande."
+		"dealer_message_resume_6"  	"<!--1-->Sei di ritorno. Dove eravamo rimasti?"
+
+		"dealer_message_first_offer_0"	"<!--.5-->Se ti interessa, troviamo un accordo."
+		"dealer_message_first_offer_1"	"<!--.5-->Giusto per informarti, ho altre persone interessate a quest'arma."
+		"dealer_message_first_offer_2"	"<!--.5-->Se l'arma ti interessa, accetta. Diversamente, dimmelo. Ho un canale secondario pieno di acquirenti interessati."
+		"dealer_message_first_offer_3"	"<!--.5-->Se la vuoi, questa è tua. Altrimenti, pazienza."
+		"dealer_message_first_offer_4"	"<!--.5-->Se ti interessa l'arma, troviamo un accordo. Non posso aspettare per sempre."
+		"dealer_message_first_offer_5"	"<!--.5-->L'offerta è sul tavolo. Sì o no."
+		"dealer_message_first_offer_6"	"<!--.5-->La vuoi o no? Se non ti interessa, non mi offendo. Ho altri acquirenti."
+		"dealer_message_first_offer_7"	"<!--.5-->Allora, cosa vuoi fare?"
+		"dealer_message_first_offer_8"	"<!--.5-->Non ho tutto il giorno."
+		"dealer_message_first_offer_9"	"<!--.5-->Troviamo un accordo o no?"	
+		"dealer_message_first_offer_10"	"<!--.5-->Non c'è bisogno che ti faccia pressioni, si vende da sola. Ci stai o no?"		
+
+		"dealer_message_next_offer_0"	"<!--1-->Ok, non ti è piaciuta. E questa?"
+		"dealer_message_next_offer_1"	"<!--1-->Peggio per te. Per fortuna, sono di buon umore. Guarda qui."
+		"dealer_message_next_offer_2"	"<!--1-->Passi? Beh, la scelta è tua. Ma guarda questa, allora."
+		"dealer_message_next_offer_3"	"<!--1-->Questa merce si vende da sola. Se non la compri tu, lo farà qualcun altro.<!--.5-->Ma visto che sei qui, questo è proprio ciò che fa per te."
+		"dealer_message_next_offer_4"	"<!--1-->Capisco. Non è il tuo genere. Vediamo se questa fa al caso tuo. Penso di sì."
+		"dealer_message_next_offer_5"	"<!--1-->Avevo la sensazione che non avresti accettato. Per fortuna avevo anche questa meraviglia."
+		"dealer_message_next_offer_6"	"<!--1-->Non mi sorprende. Ma guarda questa. Credo che questa sia più adatta a te."
+		"dealer_message_next_offer_7"	"<!--1-->Ti pentirai di passare alla prossima. Ma non è un problema. Che ne dici di questa?"
+		"dealer_message_next_offer_8"	"<!--1-->Ti conosco bene. Immaginavo che non ti sarebbe piaciuta. Che ne dici di questa?"
+		"dealer_message_next_offer_9"	"<!--1-->Gli antipasti sono già stati serviti. Preparati per la portata principale."
+		"dealer_message_next_offer_10"	"<!--1-->Sì, anche a me non fa impazzire. Dimmi cosa ne pensi di questa, allora."		
+		"dealer_message_next_offer_11"   "<!--1-->Quella era forse più da intenditori. La prossima è per il grande pubblico."
+		"dealer_message_next_offer_12"   "<!--1-->Non ho problemi di inventario. Guarda che bellezza."
+		"dealer_message_next_offer_13"   "<!--1-->Sai una cosa? Immaginavo che avresti detto così. Passiamo alla prossima."
+		"dealer_message_next_offer_14"   "<!--1-->Sei più difficile da accontentare di quanto pensassi. Questa è di tuo gradimento?"
+		"dealer_message_next_offer_15"   "<!--1-->Non stai ferendo i miei sentimenti. Non l'ho fatta io quella dannata cosa. Ecco un'altra opzione."
+		"dealer_message_next_offer_16"   "<!--1-->Nemmeno io avrei accettato. Questa, però... Insomma."
+		"dealer_message_next_offer_17"   "<!--1-->Passi? Ricevuto. Alla prossima."
+		"dealer_message_next_offer_18"   "<!--1-->Vedo che hai degli standard elevati. Per me va bene. La prossima è il gold standard."
+		"dealer_message_next_offer_19"   "<!--1-->Non voglio sprecare i tuoi soldi e tu non vuoi far perdere tempo a me. Dai un'occhiata qui."
+		"dealer_message_next_offer_20"   "<!--1-->Ehi, apprezzo l'onestà. Passiamo oltre e smettiamo di perdere tempo."
+		"dealer_message_next_offer_21"   "<!--1-->Va bene, non te la sentivi. Meno male che sto vendendo più di una pistola."
+		"dealer_message_next_offer_22"   "<!--1-->Non è un problema. Ho un sacco di altro inventario da far girare qui. Andiamo avanti."
+		"dealer_message_next_offer_23"   "<!--1-->Avrei giurato di avere una vendita già in tasca. Forse quest'offerta concluderà l'affare."
+		"dealer_message_next_offer_24"   "<!--1-->Capito. Non fa per te. Non può andare bene a tutti. Ma su questa sembra esserci scritto il tuo nome."
+		"dealer_message_next_offer_25"   "<!--1-->Non sembra che tu stia cogliendo quello che sto seminando. Vediamo se questo cattura la tua attenzione."
+		"dealer_message_next_offer_26"   "<!--1-->Ok, basta giochetti. Ti garantisco assolutamente che adorerai la prossima. Probabilmente."
+		"dealer_message_next_offer_27"   "<!--1-->Quella non ti è piaciuta, eh? Allora andrà nella mia armeria privata. Che ne dici di questa?"
+		"dealer_message_next_offer_28"   "<!--1-->Hai buon gusto. Vediamo se la prossima soddisfa i tuoi standard elevati."
+		"dealer_message_next_offer_29"   "<!--1-->Va bene, quella era solo la cima della pila. Permettimi di scavare un po' più a fondo."
+		"dealer_message_next_offer_30"   "<!--1-->Dimentica l'ultima. Questa è quella che volevo farti vedere."
+		"dealer_message_next_offer_31"   "<!--1-->Questa ha il tuo nome dappertutto. Non letteralmente, è pulita."
+		"dealer_message_next_offer_32"   "<!--1-->Ehi, non puoi comprare tutto, lo capisco. Forse ti stai contenendo per qualcosa in particolare. Come quest'offerta."
+		"dealer_message_next_offer_33"   "<!--1-->Quella era di prova. Questo è il vero spettacolo."
+		"dealer_message_next_offer_34"   "<!--1-->Proprio come pensavo. Ma la prossima... Ho pensato a te quando l'ho vista."
+		"dealer_message_next_offer_35"   "<!--1-->Mi sta bene. Questa l'ho tenuta da parte per te."
+		"dealer_message_next_offer_36"   "<!--1-->Non è compito mio farti innamorare di un'offerta simile. Sto solo cercando di spostare il materiale. Andiamo oltre."
+		"dealer_message_next_offer_37"   "<!--1-->Nessun problema. Penso che la prossima sia più adatta a te."
+		"dealer_message_next_offer_38"   "<!--1-->Intelligente. Sapevo che non ti avrebbe impressionato. Lascia che ti mostri qualcosa di meglio."
+		"dealer_message_next_offer_39"   "<!--1-->Nessun problema. Nemmeno io avrei effettuato l'acquisto. Questa, invece..."
+		"dealer_message_next_offer_40"   "<!--1-->Mi fai andare fino in fondo per la roba premium, eh? Va bene, ecco qua."
+
+		"dealer_message_last_offer_0"	"<!--0-->Bene, ultimissima offerta. Prendere o lasciare."
+		"dealer_message_last_offer_1"	"<!--0-->Considera questa come la mia ultima offerta."
+		"dealer_message_last_offer_2"	"<!--0-->Ultima offerta. Prendere o lasciare, così la smettiamo di farmi perdere tempo."
+		"dealer_message_last_offer_3"	"<!--0-->Ultima offerta.<!--1-->Se non la vuoi, io farei un passo indietro. Questa è roba esplosiva."
+		"dealer_message_last_offer_4"	"<!--0-->Ultima offerta. Non finirò per implorarti."
+		"dealer_message_last_offer_5"	"<!--0-->Va bene, questo è il massimo che posso fare."
+		"dealer_message_last_offer_6"	"<!--0-->Bene. Ecco qua. Procediamo o no?"		
+		"dealer_message_last_offer_7"	"<!--0-->Ultima offerta, la migliore e definitiva."
+		"dealer_message_last_offer_8"	"<!--0-->Cerco di venirti incontro. Questo è il massimo che posso fare."
+		"dealer_message_last_offer_9"	"<!--0-->Non riceverai un'offerta migliore, prima che questa sparisca."	
+
+		"dealer_message_end_0"			"<!--0-->Bene, hai avuto la tua occasione. Se hai in mano il terminale Uplink che sta esplodendo in questo momento, mi fermerei. Tra tre... due..."
+		"dealer_message_end_1"			"<!--0-->Beh, avrai qualcosa a cui pensare la prossima volta che ti sparano e vorrai l'arma a cui hai appena rinunciato."
+		"dealer_message_end_2"			"<!--0-->Va bene, non ho intenzione di pregarti di accettare. Spero che tu non abbia pensato di ottenere un terminale Uplink gratuito da tutto questo."
+		"dealer_message_end_3"			"<!--0-->Scelta tua. Affari tuoi. Funerale tuo, probabilmente.<!--1-->Fai un passo indietro dal terminale Uplink che sta per esplodere, prego."
+
+		"dealer_message_timerexpired_0"		"<!--.1-->Va bene, non importa."
+		"dealer_message_timerexpired_1"		"<!--.1-->Lascia perdere<!--.5-->Hai avuto la tua occasione."
+		"dealer_message_timerexpired_2"		"<!--.1-->L'affare è saltato.<!--.5-->Ho altro da fare qui."
+		"dealer_message_timerexpired_3"		"<!--.1-->Va bene, fammi trovare un acquirente che compri davvero.<!--.5-->Qui abbiamo finito."
+		"dealer_message_timerexpired_4"		"<!--.1-->La scelta è tua.<!--.5-->Più tardi."
+		"dealer_message_timerexpired_5"		"<!--.1-->Tic tac!<!--.5-->Tempo scaduto."
+		"dealer_message_timerexpired_6"		"<!--.1-->L'affare è saltato.<!--.5-->Avrei potuto fare un affare con qualcun altro già dieci volte a quest'ora."
+		"dealer_message_timerexpired_7"		"<!--.1-->E io che pensavo di aiutarti ad ammazzare qualcuno.<!--.5-->Invece alla fine qui stai solo ammazzando il mio tempo."
+		"dealer_message_timerexpired_8"		"<!--.1-->L'affare è saltato."	
+		"dealer_message_timerexpired_9"		"<!--.1-->Tempo scaduto."
+		"dealer_message_timerexpired_10"	"<!--.1-->Basta, mi hai davvero stufato. Abbiamo chiuso."		
+
+		"dealer_message_open_check_out_0"		"<!--.5-->Questa faceva al caso tuo, quindi ho pensato subito a te. Concludiamo l'affare."
+		"dealer_message_open_check_out_1"		"<!--.5-->Scelta eccellente. Mi assicurerò che sia pronta e imballata."
+		"dealer_message_open_check_out_2"		"<!--.5--> Non te ne pentirai. Anche se scommetto che qualcuno sta per farlo."
+		"dealer_message_open_check_out_3"		"<!--.5-->Sapevo che l'avresti acquistata. Rendiamolo ufficiale."
+		"dealer_message_open_check_out_4"		"<!--.5-->Perfetto. Procediamo."		
+		"dealer_message_open_check_out_5"		"<!--.5-->Ottima scelta."	
+		"dealer_message_open_check_out_6"		"<!--.5-->La decisione migliore che potessi prendere. Chiudiamo l'affare."		
+		"dealer_message_open_check_out_7"		"<!--.5-->Bene. Rendiamolo ufficiale."
+
+		"dealer_message_txn_xld_bailout_0"		"<!--.5-->Nessuna fretta. Sai dove trovarmi."
+		"dealer_message_txn_xld_bailout_1"		"<!--.5-->Non vado da nessuna parte."
+		"dealer_message_txn_xld_bailout_2"		"<!--.5-->Questa proposta rimane aperta per ora."
+		"dealer_message_txn_xld_bailout_3"		"<!--.5-->So che tornerai. Pensaci su."
+
+		"dealer_message_purchase_finalizing_0"	"Finalizzazione dei dettagli di pagamento..."
+		"dealer_message_purchase_confirm_0"		"<!--.5-->Affare fatto."
+
+		"dealer_message_stattrack_0"			"StatTrak™ installato, ovviamente."
+		"dealer_message_stattrack_1"			"Anche questa bellezza è dotata di StatTrak™."
+		"dealer_message_stattrack_2"			"Dotata di StatTrak™. Così non devi tenere a mente quanti ne fai fuori."
+		"dealer_message_stattrack_3"			"Dotata di StatTrak™. Tu premi il grilletto, il resto lo calcola lui."
+		"dealer_message_stattrack_4"			"StatTrak™. Pensa a un tabellone segnapunti... per uno sport dove si ammazza la gente."
+		"dealer_message_stattrack_6"			"Include StatTrak™, per i professionisti che si muovono tra uccisioni e statistiche."
+		"dealer_message_stattrack_7"			"Viene fornita con StatTrak™, ovviamente."
+		"dealer_message_factory_new_0"			"Appena tolta dalla confezione. Credimi, profuma ancora di nuovo."
+		"dealer_message_factory_new_1"			"Nuova di pacca. Con quell'odore di nuova arma."
+		"dealer_message_factory_new_2"			"Zero chilometri. Nessuno ha mai premuto il grilletto."
+		"dealer_message_factory_new_3"			"Direttamente dalla fabbrica, senza alcun segno di usura. Proprio come piace a te."
+		"dealer_message_factory_new_4"			"Pulita e immacolata. Senza graffi, senza storia. La sua inizierà solo quando la acquisterai."
+		"dealer_message_factory_new_5"			"Appena uscita dalla fabbrica, mai provata. Impeccabile."
+		"dealer_message_covert_0"				"Indovina? Jackpot! Questo pezzo non è soltanto raro... è da collezione segreta."
+		"dealer_message_covert_1"				"Faccio questo lavoro da dieci anni e non ne ho mai vista una in circolazione.<!--.5-->Hai buon gusto. E ancora più fortuna."
+		"dealer_message_covert_2"				"So di gente che avrebbe spedito la madre in un gulag pur di averla. Complimenti."
+		"dealer_message_covert_3"				"Wow. Ora mi stai dacendo venire dei ripensamenti. Toglila di mezzo prima che mi penta della vendita."
+		"dealer_message_covert_4"				"È una cosa segreta. Se hai fortuna, una cosa simile sul mercato la incroci forse una volta nella vita.<!--.5--> E a quanto pare, ti è andata bene."
+		"dealer_message_covert_5"				"Questo è un vero gioiello, e tu lo sai bene. Un anno fa avevo già un acquirente in lista. Lui ci ha perso... tu ci hai guadagnato."
+		"dealer_message_covert_6"				"È una rarità, davvero difficile da trovare. Eppure è qui di fronte a te."
+		"dealer_message_covert_7"				"Credimi, mi guadagno da vivere vendendo questo genere di merce. Questa è stata molto difficile da trovare."
+		"dealer_message_covert_8"				"Spero che apprezzi l'affare che hai appena fatto. È una tale rarità che è come se avessi appena comprato un unicorno."
+		"dealer_message_covert_9"				"Faresti meglio a togliermela da davanti e metterla nel tuo arsenale prima che me ne penta. È la più rara tra le rarità."
+		"dealer_message_classified_0"				"Confidenziale, sterile e senza documenti. Praticamente un fantasma."
+		"dealer_message_classified_1"				"Confidenziale e senza documenti. Irrintracciabile e pulita."
+		"dealer_message_classified_2"				"Confidenziale. Clandestina e senza documenti. L'arma che sto tenendo in mano ufficialmente non esiste."
+		"dealer_message_classified_3"				"Solo per vendite private al dettaglio. È confidenziale. Spero che tu ne faccia buon uso."
+		"dealer_message_classified_4"				"Nessun numero di serie, niente documenti. Totalmente confidenziale."
+		"dealer_message_classified_5"				"Confidenziale. In vendita solo su canali secondari, non militari e totalmente negabili. Io non l'ho mai vista."
+		"dealer_message_restricted_0"				"Riservata. Meccanica interna migliorata, precisione assoluta. Sicuramente un passo avanti rispetto al modello base."
+		"dealer_message_restricted_1"				"Questa è riservata per un motivo: funziona un po' troppo bene per i civili."
+		"dealer_message_restricted_2"				"Riservata, certo. Classe III, Titolo II e la tua nuova numero 1."
+		"dealer_message_battle_scarred_0"		"Qualche segno ce l'ha, ma la sua traiettoria resta impeccabile."
+		"dealer_message_battle_scarred_1"		"Un po' usurata, ma vuol solo dire che ha fatto la sua parte ed è ancora qui."
+		"dealer_message_battle_scarred_2"		"Raccolta sul campo di battaglia. Ha qualche chilometro alle spalle, ma è un mulo da lavoro."
+		"dealer_message_battle_scarred_3"		"Non la definirei consumata. È piuttosto molto ben collaudata sul campo."
+		"dealer_message_battle_scarred_4"		"Questa ha conosciuto il fuoco dell'azione. L'estetica porta i suoi segni ma la sua affidabilità resta intatta."
+		"dealer_message_minimal_wear_0"			"Quasi come nuova. Qualche segnetto qua e là, ma fa ancora il suo dovere."
+		"dealer_message_minimal_wear_1"			"Condizioni perfette. Beh, quasi perfette. Usura minima."
+		"dealer_message_minimal_wear_2"			"Usura minima, appena un po' vissuta, ma nulla che conti davvero."
+		"dealer_message_minimal_wear_3"			"L'usura è minima. È un po' rovinata, ma non ti pentirai di averla aggiunta al tuo arsenale."
+		"dealer_message_minimal_wear_4"			"Ha già fatto la sua parte in combattimento, non te lo nego. Questa è una veterana."
+		"dealer_message_usp-s_0"				"Questo cane non abbaia. Bello e silenzioso."
+		"dealer_message_usp-s_1"				"Silenziosa e discreta. A volte è meglio che le cose restino tra noi."
+		"dealer_message_usp-s_2"				"La noteranno quando sarà il suo momento, ma non la sentiranno arrivare."
+		"dealer_message_usp-s_3"				"Questa ti sussurra all'orecchio..."
+		"dealer_message_item_desc_0"			"<!--.25-->Questa ha un messaggio!:<!--.25-->{s:flavor-text}<!--.25-->Qualunque cosa significhi."
+		"dealer_message_item_desc_1"			"<!--.25-->Questa ha un breve messaggio:<!--.25-->{s:flavor-text}"
+
+		"dealer_message_addition_stattrak_0"	"<!--.25-->...e con StatTrak™."
+		"dealer_message_addition_stattrak_1"	"<!--.25-->Il modulo StatTrak™ è preinstallato."
+		"dealer_message_addition_stattrak_2"	"<!--.25-->Con StatTrak™ per tenere traccia di tutto il caos che provocherai."
+		"dealer_message_addition_stattrak_3"	"<!--.25-->Ha anche StatTrak™."
+		"dealer_message_addition_stattrak_4"	"<!--.25-->C'è anche StatTrak™, così non perderai mai neanche una virgola del dolore che infliggerai."
+
+		"dealer_message_addition_factory_new_0"	"<!--.25-->È nuova di fabbrica. Non ha mai fatto fuoco."
+		"dealer_message_addition_factory_new_1"	"<!--.25-->È nuova di fabbrica. Immacolata."
+		"dealer_message_addition_factory_new_2"	"<!--.25-->Direttamente dal deposito. Neanche un graffio."
+		"dealer_message_addition_factory_new_3"	"<!--.25-->Nuova di fabbrica. Non ha mai sparato."
+		
+		"dealer_message_limit_first_time_0"		"Buono a sapersi, ti mostrerò solo le offerte fino a {s:limit}.<!--.25--> Vediamo di cosa hai bisogno."
+		"dealer_message_limit_first_time_2"		"Offerta valida solo sotto {s:limit}, lo terrò a mente.<!--.25--> Il tempo stringe. Cominciamo."
+		"dealer_message_limit_first_time_3"		"Bene, ho capito.<!--.25--> Diamoci dentro."
+		"dealer_message_limit_first_time_unlimited_0"		"Nessun limite massimo, eccellente. Aprirò il catalogo attuale d'ora in avanti.<!--.25--> Il tempo stringe, cominciamo."
+		"dealer_message_limit_first_time_unlimited_1"		"Ricevuto. Senza limiti. Ora si fa sul serio.<!--.25--> Vediamo di cosa hai bisogno."
+
+		"dealer_message_limit_0"				"Buono a sapersi, ti mostrerò solo le offerte fino a {s:limit}."
+		"dealer_message_limit_1"				"Solo offerte sotto {s:limit}, lo terrò a mente."
+		"dealer_message_limit_2"				"Regolazione dei parametri. Offerte solo fino a {s:limit}."
+		"dealer_message_limit_3"				"Offerte fino a {s:limit}. Me lo segno. Aggiornato."
+		"dealer_message_limit_4"				"Tirerò fuori solo articoli alla tua portata, fino a {s:limit}."
+		"dealer_message_limit_5"				"{s:limit}, ho ricevuto il nuovo limite."
+		"dealer_message_limit_6"				"Ricevuto. Reimposto il filtro per le offerte fino a {s:limit}."
+		"dealer_message_limit_unlimited_0"		"Nessun limite massimo, eccellente. Aprirò il catalogo attuale d'ora in avanti."
+		"dealer_message_limit_unlimited_1"		"Capito, senza alcun limite. Se viene fuori qualcosa di esotico, lo saprai."
+		"dealer_message_limit_unlimited_2"		"Musica per le mie orecchie. Se dovessi trovare qualcosa che soddisfa le tue esigenze, non esiterò a mostrartelo."
+		"dealer_message_limit_unlimited_3"		"Ricevuto. Senza limiti. Ora si fa sul serio."
+
+		"system_dealer_left_chat_0"				"Il trafficante ha lasciato la chat."
+		"system_dealer_join_chat_0"				"Offerte del trafficante d'armi per: {s:collection}<!--1.25-->Trafficante online"
+		"system_user_reject_offer_0"			"{s:user-name} ha rifiutato l'offerta."
+
+		"system_user_updated_offer_limit_0"			"Limite massimo delle offerte aggiornato a {s:limit}. Puoi aggiornare l'impostazione in qualsiasi momento."
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//Retakes
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		"GameUI_Retake_DefendA"					"Difendi il Sito A!"
+		"GameUI_Retake_DefendB"					"Difendi il Sito B!"
+		"GameUI_Retake_RetakeA"					"Riconquista il Sito A!"
+		"GameUI_Retake_RetakeB"					"Riconquista il Sito B!"
+		"GameUI_Retake_Notice_MvpCardAvailable"	"Congratulazioni! La carta MVP bonus sarà disponibile al prossimo round!"
+		"GameUI_Retake_Card_CardsPreview"		"Anteprima delle carte"
+		"GameUI_Retake_Card_AvailableCard"		"Scegli questo assetto"
+		"GameUI_Retake_Card_AvailableCards"		"Scegli un assetto"
+
+		"GameUI_Retake_Card_Bonus"				"Bonus"
+		"GameUI_Retake_Card_Enemy"				"Assetto nemico"
+		"GameUI_Retake_Card_Mvp"				"MVP"
+
+		"GameUI_Retake_Card_4v3"				"4v3"
+		"GameUI_Retake_Card_FlashOut"			"Flashbang lanciata!"
+		"GameUI_Retake_Card_HideAndPeek"		"Guardone"
+		"GameUI_Retake_Card_TakeFive"			"Dammi il cinque"
+		"GameUI_Retake_Card_OnlyTakesOne"		"Ne basta uno"
+		"GameUI_Retake_Card_SneakyBeakyLike"	"Di soppiatto"
+		"GameUI_Retake_Card_UmpInSmoke"			"Grande UMPresa"
+		"GameUI_Retake_Card_FunNGun"			"Giochi a base di piombo"
+		"GameUI_Retake_Card_Sharpshooter"		"Tiratore scelto"
+		"GameUI_Retake_Card_BurstBullpup"		"Bullpup a ripetizione"
+		"GameUI_Retake_Card_LightEmUp"			"Bagliore negli occhi"
+		"GameUI_Retake_Card_Kobe"				"Kobe!"
+		"GameUI_Retake_Card_1g"					"1g"
+		"GameUI_Retake_Card_DisappearingAct"	"Scomparsa"
+		"GameUI_Retake_Card_EyesOnTarget"		"Occhi sul bersaglio"
+		"GameUI_Retake_Card_BehindEnemyLines"	"Dietro le linee nemiche"
+		"GameUI_Retake_Card_4BadGuysLeft"		"4 cattivi rimasti"
+		"GameUI_Retake_Card_LookAway"			"Non guardate!"
+		"GameUI_Retake_Card_WhenThereIsSmoke"	"Dove c'è fumo..."
+		"GameUI_Retake_Card_BlindFire"			"Furia cieca"
+		"GameUI_Retake_Card_QueOta"				"Qué ota?"
+		"GameUI_Retake_Card_SmokeScreen"		"Cortina fumogena"
+		"GameUI_Retake_Card_TecTecBoom"			"TEC, TEC, BOOM!"
+		"GameUI_Retake_Card_BackInAFlash"		"Torno in un lampo"
+		"GameUI_Retake_Card_AllIn"				"All in"
+		"GameUI_Retake_Card_BoomBox"			"Cassa esplosiva"
+		"GameUI_Retake_Card_SetThemFree"		"Liberazione"
+		"GameUI_Retake_Card_OlReliable"			"Meno c'è, meno si rompe"
+		"GameUI_Retake_Card_SmokeShow"			"Giochi di fumo"
+		"GameUI_Retake_Card_HotShot"			"Colpo grosso"
+		"GameUI_Retake_Card_EyeSpy"				"So che sei lì"
+		"GameUI_Retake_Card_TheAWPortunity"		"L'AWPportunità"
+		"GameUI_Retake_Card_FindersKeepers"		"Chi trova tiene"
+
+		"Hud_Retake_BombSite"					"{s:hud-retake-bombsite}"
+		
+		"Hud_Money" "{d:r:hud-money-amount} $"
+		"Hud_Money_Signed" "{s:sign} {d:r:hud-money-delta} $"
+
+		"Propcounter_money" "%s1 $" //e.g. used on danger zone security door
+
+		"csgo_player_left_game"					" %s1 ha abbandonato la partita. (%s2)"
+
+		"LoadoutLockedPopupTitle"				"Assetto bloccato"
+		"LoadoutLockedPopupText"				"Le modifiche all'assetto non sono consentite durante il matchmaking Competitivo."
+
+		"Workshop_item_title" "Strumento di invio oggetti"
+		"Workshop_item_error_title" "Inserisci un titolo per il tuo oggetto. Deve includere il nome del giocatore o altre informazioni identificative."
+		"Workshop_item_error_image" "Seleziona un'immagine jpeg o png valida di dimensioni inferiori a {s:max_size} e di dimensioni minime di {d:min_height} per larghezza/altezza."
+		"Workshop_item_ready" "Invio pronto per il caricamento"
+		"SFUI_Go_To_Mic_Enable_key" "Vai all'associazione di tasti del microfono"
+		"SFUI_Go_To_Console_Key_Binding" "Vai all'associazione di tasti della console"
+
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//Steam Video
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		"SteamVideo_Player_Kill_Title"					"Hai ucciso %s1"
+		"SteamVideo_Player_Kill_Description"			"con: %s1"
+
+		"SteamVideo_Player_Double_Kill_Title"			"Doppia uccisione"
+		"SteamVideo_Player_Multi_Kill_Title"			"Uccisione multipla"
+		
+		"SteamVideo_Player_Death_Title"					"%s1 ti ha ucciso"
+		"SteamVideo_Player_Death_Description"			"con: %s1"
+		"SteamVideo_Player_Death_Description_Plural"	"con: %s1"
+		"SteamVideo_Player_Killed_Self_Title"			"Hai commesso suicidio"
+		
+		"SteamVideo_Bomb_Planted_Title"					"Bomba piazzata"
+		"SteamVideo_Bomb_Planted"						"%s1 ha piazzato la bomba"
+		"SteamVideo_Bomb_Planted_LocalPlayer"			"Hai piazzato la bomba"
+		
+		"SteamVideo_Bomb_Defused_Title"					"Bomba disinnescata"
+		"SteamVideo_Bomb_Defused"						"%s1 ha disinnescato la bomba"
+		"SteamVideo_Bomb_Defused_LocalPlayer"			"Hai disinnescato la bomba"
+		
+		"SteamVideo_Bomb_Exploded_Title"				"La bomba è esplosa"
+		
+		"SteamVideo_Round_Number_Label"					"Round %s1"
+		"SteamVideo_Start_Of_Round_Title"				"Inizio del %s1° round"
+
+		"SteamVideo_MatchScore"							"Punti"
+		"SteamVideo_KDA"								"U/M/A"
+
+		// ---------------------------------------------------------------------------------------------
+		// WEEKLY MISSIONS
+		// ---------------------------------------------------------------------------------------------
+		"weekly_mission_title"							"MISSIONE"
+		"weekly_mission_title_complete"					"MISSIONE COMPLETATA"
+		"weekly_mission_expiration"						"Scade tra <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_expiration_pausemenu"			"Scade tra <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_next_mission"					"La prossima missione inizia tra <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_progress"						"<b>{d:mission-progress}</b>/{d:mission-points}"
+		"CS2_Quest_Weapon_Mode"							"Competenza tecnica in <b>{s:gamemode}</b>: <b>{s:weapon}</b>"
+		"CS2_Quest_Weapon_Mode_desc"					"Ottieni {s:optional_target}{s:actions} con l'arma <b>{s:weapon}</b> nelle partite della modalità <b>{s:gamemode}</b>."
+
+		"mission_searching"								"Ricerca in corso..."
+		"mission_xp_remaining"							"{s:mission-xp} punti ESP"
+
+		"mission_segment_tooltip"						"{d:xp-reward} punti ESP"
+
+		"mission_location"								"<b>{s:gamemode}</b> in <b>{s:location}</b>"
+		"mission_directive:f"							"{mission-points, plural, one{<b>{d:mission-points}</b> {s:action}} other{<b>{d:mission-points}</b> {s:actions}}}"
+ 		"mission_directive_progress:f"					"{mission-points, plural, one{{d:mission-progress}/<b>{d:mission-points}</b> {s:action}} other{{d:mission-progress}/<b>{d:mission-points}</b> {s:actions}}}"
+
+
+		"quest_11000_var_desc:f"	  					"{mission-points, plural, one{Ottieni un'uccisione con {s:item1} in <b>{s:gamemode}: {s:location}</b>.} other{Ottieni uccisioni con {s:item1} in <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11000_var_partial:f" 					"...con: {s:item1}."
+		"quest_11000_var_ingame:f"	  					"{mission-points, plural, one{Ottieni un'uccisione con {s:item1}.} other{Ottieni uccisioni con {s:item1}.}}"
+
+		"quest_11001_var_desc:f"	 					"{mission-points, plural, one{Ottieni un'uccisione con {s:item1} in <b>{s:gamemode}: {s:location}</b>.} other{Ottieni uccisioni con {s:item1} in <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11001_var_partial:f"	 					"...con: {s:item1}."
+		"quest_11001_var_ingame:f"	 					"{mission-points, plural, one{Ottieni un'uccisione con {s:item1}} other{Ottieni uccisioni con {s:item1}}}"
+
+		"quest_11002_var_desc:f"	 					"{mission-points, plural, one{Ottieni un'uccisione con {s:item1} in <b>{s:gamemode}: {s:location}</b>.} other{Ottieni uccisioni con {s:item1} in <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11002_var_partial:f"	 					"...con: {s:item1}."
+		"quest_11002_var_ingame:f"	 					"{mission-points, plural, one{Ottieni un'uccisione con {s:item1}} other{Ottieni uccisioni con {s:item1}}}"
+
+		"quest_11003_var_desc:f"						"{mission-points, plural, one{Ottieni un'uccisione con {s:item1} in <b>{s:gamemode}: {s:location}</b>.} other{Ottieni uccisioni con {s:item1} in <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11003_var_partial:f"	 					"...con: {s:item1}."
+		"quest_11003_var_ingame:f"	 					"{mission-points, plural, one{Ottieni un'uccisione con {s:item1}} other{Ottieni uccisioni con {s:item1}}}"
+
+		"quest_11004_var_desc:f"	 					"{mission-points, plural, one{Vinci un round in <b>{s:gamemode}: {s:location}</b>.} other{Vinci dei round in <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11004_var_ingame:f"						"{mission-points, plural, one{Vinci un round} other{Vinci dei round}}"
+
+		"quest_11005_var_desc:f"	 					"{mission-points, plural, one{Vinci un round in <b>{s:gamemode}: {s:location}</b>.} other{Vinci dei round in <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11005_var_ingame:f"						"{mission-points, plural, one{Vinci un round} other{Vinci dei round}}"
+
+		"quest_11006_var_desc:f"	 					"{mission-points, plural, one{Vinci un round in <b>{s:gamemode}: {s:location}</b>.} other{Vinci dei round in <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11006_var_ingame:f"						"{mission-points, plural, one{Vinci un round} other{Vinci dei round}}"
+
+		"quest_11007_var_desc:f"	 					"{mission-points, plural, one{Ottieni un'uccisione con {s:item1} in <b>{s:gamemode}: {s:location}</b>.} other{Ottieni uccisioni con {s:item1} in <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11007_var_partial:f"	 					"...con: {s:item1}."
+		"quest_11007_var_ingame:f"	 					"{mission-points, plural, one{Ottieni un'uccisione con {s:item1}} other{Ottieni uccisioni con {s:item1}}}"
+
+		"quest_11008_var_desc:f"	 					"{mission-points, plural, one{Vinci un round in <b>{s:gamemode}: {s:location}</b>.} other{Vinci dei round in <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11008_var_ingame:f"						"{mission-points, plural, one{Vinci un round} other{Vinci dei round}}"
+
+		"quest_11009_var_desc:f"	 					"{mission-points, plural, one{Vinci un round in <b>{s:gamemode}: {s:location}</b>.} other{Vinci dei round in <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11009_var_ingame:f"						"{mission-points, plural, one{Vinci un round} other{Vinci dei round}}"
+
+		"quest_11010_var_desc:f"	 					"{mission-points, plural, one{Ottieni un'uccisione con {s:item1} in <b>{s:gamemode}: {s:location}</b>.} other{Ottieni uccisioni con {s:item1} in <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11010_var_partial:f"	 					"...con: {s:item1}."
+		"quest_11010_var_ingame:f"	 					"{mission-points, plural, one{Ottieni un'uccisione con {s:item1}} other{Ottieni uccisioni con {s:item1}}}"
+
+		"quest_11011_var_desc:f"	 					"{mission-points, plural, one{Vinci un round in <b>{s:gamemode}: {s:location}</b>.} other{Vinci dei round in <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11011_var_ingame:f"						"{mission-points, plural, one{Vinci un round} other{Vinci dei round}}"
+
+		"quest_11012_var_desc:f"	 					"{mission-points, plural, one{Vinci un round in <b>{s:gamemode}: {s:location}</b>.} other{Vinci dei round in <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11012_var_ingame:f"						"{mission-points, plural, one{Vinci un round} other{Vinci dei round}}"
+
+		"quest_11013_var_desc:f"	 					"{mission-points, plural, one{Vinci un round in <b>{s:gamemode}: {s:location}</b>.} other{Vinci dei round in <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11013_var_ingame:f"						"{mission-points, plural, one{Vinci un round} other{Vinci dei round}}"
+
+		"quest_11014_var_desc:f"	 					"{mission-points, plural, one{Vinci un round in <b>{s:gamemode}: {s:location}</b>.} other{Vinci dei round in <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11014_var_ingame:f"						"{mission-points, plural, one{Vinci un round} other{Vinci dei round}}"
+
+		"quest_11015_var_desc:f"	 					"{mission-points, plural, one{Vinci un round in <b>{s:gamemode}: {s:location}</b>.} other{Vinci dei round in <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11015_var_ingame:f"						"{mission-points, plural, one{Vinci un round} other{Vinci dei round}}"
+
+// ---------------------------------------------------------------------------------------------
+// Join Friend Listen Servers
+// ---------------------------------------------------------------------------------------------
+
+		"tooltip_viewaddon"				"Visita la mappa personalizzata nella pagina del Workshop"
+		"tooltip_kick_player"			"Espelli giocatore dal server locale"		
+		"tooltip_short_viewaddon"			"Vedi mappa personalizzata"
+		"tooltip_short_kick_player"			"Espelli"
+
+// crow_mask_50454_comment
+// crow_mask_50455_comment
+}
+
+
+
+
+}
+
+
+d_desc_2"				"Round superati:"
 
 		"accolade_chickenskilled"						"Avicoltore mancato"
 		"accolade_chickenskilled_desc"					"Record di polli massacrati:"

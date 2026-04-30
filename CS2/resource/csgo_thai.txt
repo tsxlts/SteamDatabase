@@ -1965,8 +1965,8 @@
 		"Team_Cash_Award_no_income_suicide"					" +$0 ลงโทษสำหรับการฆ่าตัวตาย"
 		"Team_Cash_Award_Generic"							" +$%s1 รายได้ทีม"
 		"Team_Cash_Award_Custom"							" +$%s1 %s2"
-		"Team_Cash_Award_Dead_Terrorists:p"					" +$%s1 รายได้ทีมสำหรับการกำจัดผู้ก่อการร้าย %s2 คน"
-		"Team_Cash_Award_Dead_CTs:p"						" +$%s1 รายได้ทีมสำหรับการกำจัดหน่วยต่อต้านผู้ก่อการร้าย %s2 คน"
+		"Team_Cash_Award_Dead_Terrorists:f"					" +$%s1 รายได้ทีมสำหรับการกำจัด{num_enemies, plural, other{ผู้ก่อการร้าย}} {num_enemies} คน"
+		"Team_Cash_Award_Dead_CTs:f"						" +$%s1 รายได้ทีมสำหรับการกำจัด{num_enemies, plural, other{หน่วยต่อต้านผู้ก่อการร้าย}} {num_enemies} คน"
 
 
 		"Notice_Bonus_Shorthanded_Eligibility"			" ทีมของคุณจะได้รับรายได้เมื่อคนน้อยกว่าใน %s1 รอบ"
@@ -2330,10 +2330,14 @@
 		// Econ date formatting supports the following tokens:
 		//    %year%, %monthshort%, %monthlong%, %mmday% (01-31), %mday% (1-31), %day% (legacy unlocalized "Jul 30" shouldn't be used), %hour%, %min%, %sec%
 		//
-		"Econ_DateFormat"						"%mmday% %monthshort% %year% (%hour%:%min%:%sec%)	"
-		"Econ_DateFormat_GMT"					"%mmday% %monthshort% %year% (%hour%:%min%:%sec%) GMT"
-		"Econ_DateFormat_DateOnly"				"%mmday% %monthshort% %year%	"
-		"Econ_DateFormat_GMT_DateOnly"			"%mmday% %monthshort% %year% GMT	"
+		"Econ_DateFormat:f"							"{mmday} {monthshort} {year} ({hour}:{min}:{sec})	"
+		"Econ_DateFormat_GMT:f"						"{mmday} {monthshort} {year} ({hour}:{min}:{sec}) GMT"
+		"Econ_DateFormat_DateOnly:f"				"{mmday} {monthshort} {year}	"
+		"Econ_DateFormat_GMT_DateOnly:f"			"{mmday} {monthshort} {year} GMT	"
+		"Econ_DateFormat"							"%mmday% %monthshort% %year% (%hour%:%min%:%sec%)	"
+		"Econ_DateFormat_GMT"						"%mmday% %monthshort% %year% (%hour%:%min%:%sec%) GMT"
+		"Econ_DateFormat_DateOnly"					"%mmday% %monthshort% %year%	"
+		"Econ_DateFormat_GMT_DateOnly"				"%mmday% %monthshort% %year% GMT	"
 		"Econ_Loot_List_Sticker_ProPlayerSignatures" "สติกเกอร์สามารถเป็นลายเซ็นของหนึ่งในผู้เล่นมืออาชีพดังต่อไปนี้:"
 		"Econ_Loot_List_Sticker_ProPlayerSignatures_AndSomeMore" "... และผู้เล่นมือชีพอื่น ๆ อีก %s1 ราย"
 		"Econ_Loot_List_Sticker_ProOrgsStickers"	"สติกเกอร์สามารถใช้เป็นตัวแทนขององค์กรดังต่อไปนี้ได้:"
@@ -6044,1259 +6048,15 @@
 
 		"quest_desc"								" "
 
-		"quest_totalgoal_points_desc"				"จำนวน %actions% ทั้งหมดที่ต้องการ： <b>%points%</b>" // special non-breaking space characters in this string, edit carefully!
-		"quest_attrremaining_points_desc"			"คงเหลือ %actions%： <b>%points%</b>" // special non-breaking space characters in this string, edit carefully!
-		"quest_uncommitted_points_desc"				"คงเหลือ %actions%： <b>%points%</b> (<b>%points uncommitted%</b> ที่ได้รับในแมตช์นี้)" // special non-breaking space characters in this string, edit carefully!
-		"quest_uncommitted_points_warn"				" * <i>%actions% จะทำการบันทึกเมื่อจบแมตช์</i>"
-	
-		"quest_uncommitted_points_chat_one"	"ภารกิจลุล่วง: %action% คะแนน"
-		"quest_uncommitted_points_chat_singular"	" ความคืบหน้าภารกิจ: +%points% %action% คะแนน"
-		"quest_uncommitted_points_chat_plural"		" ความคืบหน้าภารกิจ: คะแนน %actions% +%points%"
-		"quest_uncommitted_points_chat_event"		" ภารกิจ Blitz: คะแนน %action%"		
+		"quest_commandverb_default"					"ทำ"
 
-		"quest_reward_desc"								"ภารกิจนี้มีของรางวัลจาก\n<b>%s1</b>:"
+		"quest_action_plural_act_kill_human"		"การสังหาร"
+		"quest_action_singular_act_kill_human"		"การสังหาร"
 
-		"quest_reward_xp"									"รางวัลภารกิจ: <b>%s1</b> XP"
-
-		"quest_event_totalgoal_points_desc"					"รับ XP พิเศษจาก <b>%action%</b> ทุกครั้งในช่วงกิจกรรมนี้"
-		
-		"quest_bonus_desc"								"โบนัส: +<b>%xpperbonusaction%</b> XP ต่อ %action%—<i>%xpbonuscondition%</i>"
-		"quest_bonus_fractional_desc"			"โบนัส: +<b>%xpperbonusactions%</b> XP ต่อ <b>%n_actions%</b> %actions%—<i>%xpbonuscondition%</i>"
-		"quest_bonus_single_desc"					"โบนัส: +<b>%xpperbonusaction%</b> XP—<i>%xpbonuscondition%</i>"
-
-
-		"quest_target_chicken"											"ไก่"
-		"quest_target_human_or_chicken"									"คนหรือไก่"
-		"quest_target_hostagerescuer"									"ผู้ช่วยเหลือตัวประกัน"
-		"quest_target_armsraceleader"									"ผู้นำประชันอาวุธ"
-
-		"quest_target_headshot"											"ยิงศีรษะ"
-		"quest_target_airborne"											"กลางอากาศ"
-		"quest_target_pistolround"										"ปืนพก"
-
-		"quest_target_lockeddoor"										"ประตูที่ล็อค"
-		"quest_target_explodingbarrel"									"ถังระเบิด"
-		"quest_target_glasspane"										"บานกระจก"
-		"quest_target_enemydrone"										"โดรนศัตรู"
-
-		"quest_target_shotgun"											"ปืนลูกซอง"
-		"quest_target_sniperrifle"										"ปืนสไนเปอร์ไรเฟิล"
-		"quest_target_utility"											"เบ็ดเตล็ด"
-		"quest_target_defaultctpistol"									"ปืนพก CT เริ่มต้น"
-		"quest_target_defaultpistol"									"ปืนพกเริ่มต้น"
-		"quest_target_knife"											"มีด"
-
-		"quest_action_plural_act_kill_human"							"การสังหาร"
-		"quest_action_singular_act_kill_human"							"การสังหาร"
-
-		"quest_action_plural_act_kill_chicken"							"การสังหาร"
-		"quest_action_singular_act_kill_chicken"						"การสังหาร"		
-
-		"quest_action_plural_act_protect_chicken"						"วินาทีสำหรับการปกป้องไก่"
-		"quest_action_singular_act_protect_chicken"						"วินาทีสำหรับการปกป้องไก่"	
-
-		"quest_action_plural_act_kill_target"							"การลอบสังหาร"
-		"quest_action_singular_act_kill_target"							"การลอบสังหาร"		
-
-		"quest_action_plural_act_damage"								"ความเสียหาย"
-		"quest_action_singular_act_damage"								"คะแนนความเสียหายที่เกิดขึ้น"		
-
-		"quest_action_plural_act_win_match"								"การชนะ"
-		"quest_action_singular_act_win_match"							"การชนะ"		
-
-		"quest_action_plural_act_dz_game_end_placement"					"การวาง"
-		"quest_action_singular_act_dz_game_end_placement"				"การวาง"	
-
-		"quest_action_plural_act_dz_purchase_item"					"ซื้อ"
-		"quest_action_singular_act_dz_purchase_item"				"ซื้อ"	
-
-		"quest_action_plural_act_win_round"								"การชนะรอบ"
-		"quest_action_singular_act_win_round"							"การชนะรอบ"	
-
-		"quest_action_singular_act_round_end"							""			
-
-		"quest_action_plural_act_round_mvp"								"MVP"
-		"quest_action_singular_act_round_mvp"							"MVP"
-
-		"quest_action_plural_act_dm_bonus_points"						"คะแนน"
-		"quest_action_singular_act_dm_bonus_points"						"คะแนน"		
-
-		"quest_action_plural_act_armsrace_level"						"เลเวล"
-		"quest_action_singular_act_armsrace_level"						"เลเวล"	
-
-		"quest_action_plural_act_gg_weapon_upgrade"						"อัปเกรด"
-		"quest_action_singular_act_gg_weapon_upgrade"					"อัปเกรด"	
-
-		"quest_action_plural_act_gg_upgrade_to_knifegg"						"อัปเกรด"
-		"quest_action_singular_act_gg_upgrade_to_knifegg"					"อัปเกรด"	
-				
-		"quest_action_plural_act_flashbang_enemy"						"การปาระเบิดแสงใส่ศัตรู"
-		"quest_action_singular_act_flashbang_enemy"						"การปาระเบิดแสงใส่ศัตรู"		
-		
-		"quest_action_plural_act_pick_up_hostage"						"การแบกตัวประกัน"
-		"quest_action_singular_act_pick_up_hostage"						"การแบกตัวประกัน"		
-		
-		"quest_action_plural_act_rescue_hostage"						"การช่วยเหลือตัวประกัน"
-		"quest_action_singular_act_rescue_hostage"						"การช่วยเหลือตัวประกัน"		
-		
-		"quest_action_plural_act_defuse_bomb"							"การปลดชนวนระเบิด"
-		"quest_action_singular_act_defuse_bomb"							"การปลดชนวนระเบิด"		
-		
-		"quest_action_plural_act_plant_bomb"							"การวางระเบิด"
-		"quest_action_singular_act_plant_bomb"							"การวางระเบิด"
-
-		"quest_action_singular_act_income"								"ดอลลาร์"
-		"quest_action_plural_act_income"								"เงิน"
-		
-		"quest_action_singular_act_survivalincome"						"ดอลลาร์"
-		"quest_action_plural_act_survivalincome"						"เงิน"
-
-		"quest_action_singular_act_spend"								"ดอลลาร์"
-		"quest_action_plural_act_spend"									"เงิน"
-
-		"quest_action_singular_act_parachute_landed"					"วินาทีสำหรับการร่อนร่มชูชีพ"
-		"quest_action_plural_act_parachute_landed"						"วินาทีสำหรับการร่อนร่มชูชีพ"
-
-		"quest_action_singular_act_bumpmine_launch"						"การเริ่มเปิดบัมพ์ไมน์"
-		"quest_action_plural_act_bumpmine_launch"						"การเริ่มเปิดบัมพ์ไมน์"
-
-		"quest_action_singular_headshot_kill"							"การสังหารโดยยิงศีรษะ"
-		"quest_action_plural_headshot_kill"								"การสังหารโดยการยิงศีรษะ"
-
-		"quest_action_singular_multikill"								"การสังหารหลายคนในรอบ"
-		"quest_action_plural_multikill"									"การสังหารหลายคนในรอบ"
-
-		"quest_action_singular_act_apply_graffiti"						"กราฟฟิตี้"
-		"quest_action_plural_act_apply_graffiti"						"กราฟฟิตี้"
-
-		"quest_action_singular_act_detonate_smokegrenade"				"ระเบิดควัน"
-		"quest_action_plural_act_detonate_smokegrenade"					"ระเบิดควัน"
-
-		"quest_action_singular_act_detonate_molotov"					"ระเบิดขวด"
-		"quest_action_plural_act_detonate_molotov"						"ระเบิดขวด"
-
-		"quest_action_singular_act_use_healthshot"						"เข็มฉีดยา"
-		"quest_action_plural_act_use_healthshot"						"เข็มฉีดยา"
-		
-		"quest_action_singular_act_retakes_picked_enemy_card"			"การเลือกการ์ดของศัตรู"
-		"quest_action_plural_act_retakes_picked_enemy_card"				"การเลือกการ์ดของศัตรู"
-
-		"quest_action_singular_act_retakes_picked_mvp_card"				"การเลือกการ์ดของ MVP"
-		"quest_action_plural_act_retakes_picked_mvp_card"				"การเลือกการ์ดของ MVP"
-//
-
-		"quest_action_plural_bomb_plants_or_defuses"					"การวางหรือปลดชนวนระเบิด"
-		"quest_action_singular_bomb_plants_or_defuses"					"การวางหรือปลดชนวนระเบิด"
-		
-		"quest_action_plural_rescue_or_kill_hostages"					"การช่วยเหลือตัวประกันหรือการสังหารผู้ช่วยเหลือ"
-		"quest_action_singular_rescue_or_kill_hostages"					"การช่วยเหลือตัวประกันหรือการสังหารผู้ช่วยเหลือ"		
-		
-		"quest_action_plural_damage_burn"								"ความเสียหายจากการเผา"
-		"quest_action_singular_damage_burn"								"คะแนนของความเสียหายจากการเผา"
-
-		"quest_commandverb_default"										"ทำ"
-		"quest_commandverb_defaultCT"									"เมื่อเล่นเป็น CT ทำ"
-		"quest_commandverb_defaultT"									"เมื่อเล่นเป็น T ทำ"
-		"quest_commandverb_deal"										"จัดสรร"
-		"quest_commandverb_earn"										"เก็บ"
-		"quest_commandverb_earnT"										"เมื่อเล่นเป็น T เก็บ"
-		"quest_commandverb_spend"										"ใช้"
-		"quest_commandverb_execute"										"ดำเนินการ"
-		"quest_commandverb_destroy"										"ทำลาย"
-		"quest_commandverb_apply"										"ใช้"
-		"quest_commandverb_throw"										"โยน"
+		"quest_action_plural_act_win_round"			"การชนะรอบ"
+		"quest_action_singular_act_win_round"		"การชนะรอบ"	
 
 		////
-
-		"quest_condition_item_own"										"ของคุณเอง"
-		"quest_condition_item_borrowed"									"ของใครก็ได้"									
-		"quest_condition_item_borrowed_teammate"						"ของเพื่อนร่วมทีม"									
-		"quest_condition_item_borrowed_enemy"							"ของศัตรู"									
-		"quest_condition_item_borrowed_victim"							"victim's own"									
-		"quest_condition_item_nondefault"								"งดงาม"
-
-		"quest_LoadoutSlot_Melee"										"มีด"
-		"quest_LoadoutSlot_Secondary"									"ปืนพก"
-		"quest_LoadoutSlot_SMG"											"ปืนกลมือ"
-		"quest_LoadoutSlot_Rifle"										"ปืนไรเฟิล"
-		"quest_LoadoutSlot_Heavy"										"อาวุธหนัก"
-		"quest_LoadoutSlot_Grenade"										"ระเบิด"
-
-		"quest_item_default"											"อาวุธ"
-
-////
-		"quest_event_ending"											"จะสิ้นสุดใน %s1 นาที"
-		"quest_event_soon_hours"										"จะเริ่มใน %s1 ชั่วโมง"
-		"quest_event_soon_hms"											"จะเริ่มใน %s1:%s2:%s3"
-		"quest_event_today"												"วันนี้ %s1:%s2"
-		"quest_event_future"											"เริ่ม %s1 %s2 %s3:%s4"
-		"quest_event_timer"												"จะเริ่มใน %s1"
-
-////
-
-
-
-
-////////////////////////// generalized quest strings //////////////////////////////
-///
-///	Use these if applicable. If not, use this pattern to create new ones.
-///
-///
-///
-
-		"quest_default_0_items_desc" "%commandverb%%actions%%target% ในแมตช์โหมด <b>%gamemode%: %location%</b>"		
-		"quest_default_1_items_desc" "%commandverb%%actions%%target%ด้วย <b>%item1%</b><i>%item_quality%</i> ใดก็ได้ในแมตช์โหมด <b>%gamemode%: %location%</b>"
-		"quest_default_2_items_desc" "%commandverb%%actions%%target%ด้วย <b>%item1%</b><i>%item_quality%</i> หรือ <b>%item2%</b> ใดก็ได้ในแมตช์โหมด <b>%gamemode%: %location%</b>"
-		"quest_default_3_items_desc" "%commandverb%%actions%%target%ด้วย <b>%item1%</b>, <b>%item2%</b><i>%item_quality%</i> หรือ <b>%item3%</b> %item_quality% ใดก็ได้ในแมตช์โหมด <b>%gamemode%: %location%</b>"
-		"quest_default_4_items_desc" "%commandverb%%actions%%target%ด้วย <i>%item_quality%</i> <b>%item1%</b>, <b>%item2%</b>, <b>%item3%</b> หรือ <b>%item4%</b> ใดก็ได้ในแมตช์โหมด <b>%gamemode%: %location%</b>"
-
-		"quest_default_hud_0_items_desc" "%commandverb%%actions%%target%"
-		"quest_default_hud_1_items_desc" "%commandverb% %actions% %target%: <i>%item_quality%</i> <b>%item1%</b>"
-		"quest_default_hud_2_items_desc" "%commandverb% %actions% %target%: <i>%item_quality%</i> <b>%item1%</b>/<b>%item2%</b>"
-		"quest_default_hud_3_items_desc" "%commandverb% %actions% %target%: <i>%item_quality%</i> <b>%item1%</b>/<b>%item2%</b>/<b>%item3%</b>"
-		"quest_default_hud_4_items_desc" "%commandverb% %actions% %target%: <i>%item_quality%</i> <b>%item1%</b>/<b>%item2%</b>/<b>%item3%</b>/<b>%item4</b>"
-
-/////////////////////////////////////////////////////////
-
-/////////////////////////////// Quest Strings via Dialog Vars //////
-///
-/// Used starting with Op09 - the default descriptions should handle most "Perform X Action in GameMode: Location" quests.
-///
-///
-		"quest_default_var_desc" "{s:commandverb}{s:actions}{s:target} {d:points} ครั้งในโหมด <b>{s:gamemode}: {s:location}</b>"		
-		"quest_single_var_desc" "{s:commandverb}{s:actions}{s:target} {d:points} ครั้งในโหมด <b>{s:gamemode}: {s:location}</b> ภายในแมตช์ <i>เดียว</i>"		
-		"quest_default_no_map_var_desc" "{s:commandverb}{s:actions} {d:points} ครั้งด้วย {s:target} ในโหมด <b>{s:gamemode}</b>"
-		"quest_single_no_map_var_desc" "{s:commandverb}{s:actions}{s:target} {d:points} ครั้งในโหมด <b>{s:gamemode}</b> ภายในแมตช์ <i>เดียว</i>"		
-
-		"quest_weapon_var_desc" "{s:commandverb}{s:actions}{s:target} {d:points} ครั้งด้วย {s:weapon} ในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_weapon_single_var_desc" "{s:commandverb}{s:actions}{s:target} {d:points} ครั้งด้วย {s:weapon} ในโหมด <b>{s:gamemode}: {s:location}</b> ภายในแมตช์ <i>เดียว</i>"
-		"quest_weapon_no_map_var_desc" "{s:commandverb}{s:actions}{s:target} {d:points} ครั้งด้วย {s:weapon} ในโหมด <b>{s:gamemode}</b>"
-		"quest_weapon_category_no_map_var_desc" "{s:commandverb}{s:actions}{s:target} {d:points} ครั้งด้วยอาวุธ {s:weapon} ใดก็ได้ในโหมด <b>{s:gamemode}</b>"
-
-		"quest_flyingscoutsman_var_desc"	"{s:commandverb}{s:actions}{s:target} {d:points} ครั้งในโหมด <b>สไนเปอร์บิน: {s:location}</b>"
-		"quest_flyingscoutsman_no_map_var_desc"	"{s:commandverb}{s:actions}{s:target} {d:points} ครั้งในโหมด <b>สไนเปอร์บิน</b>"
-
-		"quest_retakes_var_desc"	"{s:commandverb}{s:actions} {d:points} ครั้งกับ {s:target} ในโหมด <b>ยึดคืน: {s:location}</b>"
-		"quest_retakes_no_map_var_desc"	"{s:commandverb}{s:actions} {d:points} ครั้งกับ {s:target} ในโหมด <b>ยึดคืน</b>"
-
-		"quest_armsrace_var_desc"	 		"{s:commandverb}{s:actions}{s:target} {d:points} ครั้งในโหมด <b>ประชันอาวุธ</b>"
-		"quest_armsrace_weapon_var_desc"	"{s:commandverb}{s:actions}{s:target} {d:points} ครั้งด้วย {s:weapon} ใดก็ได้ในโหมด <b>ประชันอาวุธ</b>"
-
-		// quest exceptions:
-		"quest_931_var_desc"	 "ทำการสังหาร {d:points} ครั้งด้วย {s:weapon} ในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_932_var_desc"	 "ทำการสังหาร {d:points} ครั้งขณะที่คุณอยู่กลางอากาศในโหมด <b>สไนเปอร์บิน</b>"
-		"quest_933_var_desc"	 "ทำการชนะรอบ {d:points} ครั้งในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_934_var_desc"	 "ทำการสังหาร {s:kills} ครั้งด้วย {s:weapon} ในโหมด <b>การ์เดียน: {s:location}</b>"
-		"quest_935_var_desc"	 "ทำการสังหาร {d:points} ครั้งด้วย {s:weapon} ในโหมด <b>{s:gamemode}: {s:location}</b> ภายในแมตช์ <i>เดียว</i>"
-		"quest_936_var_desc"	 "ทำการสังหาร {d:points} ครั้งด้วย {s:weapon} ในโหมด <b>{s:gamemode}</b>"
-		"quest_937_var_desc"	 "พ่นกราฟฟิตี้ {d:points} ครั้งในอาณาเขตศัตรูในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_938_var_desc"	 "ทำการสังหารผู้นำประชันอาวุธ {d:points} ครั้งในโหมด <b>{s:gamemode}</b>"
-		"quest_939_var_desc"	 "ทำการสังหาร {s:kills} ครั้งด้วย {s:weapon} ในโหมด <b>การ์เดียน: {s:location}</b>"
-		"quest_940_var_desc"	 "ทำการชนะรอบ {d:points} ครั้งในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_941_var_desc"	 "ทำการชนะรอบด้วยปืนพก {d:points} ครั้งในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_942_var_desc"	 "ทำการสังหาร {d:points} ครั้งด้วย {s:weapon} ในโหมด <b>{s:gamemode}: {s:location}</b> ภายในแมตช์ <i>เดียว</i>"
-		"quest_943_var_desc"	 "ทำการสังหาร {d:points} ครั้งในโหมด <b>สไนเปอร์บิน</b>"
-		"quest_944_var_desc"	 "จ่ายเงิน {d:points} ในโหมด <b>{s:gamemode}</b> ภายในแมตช์ <i>เดียว</i>"
-		"quest_945_var_desc"	 "ทำการสังหาร {s:kills} ครั้งในโหมด <b>การ์เดียน: {s:location}</b>"
-		"quest_946_var_desc"	 "ทำการชนะรอบ {d:points} ครั้งในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_947_var_desc"	 "ทำการชนะรอบ {d:points} ครั้งในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_948_var_desc"	 "ทำการช่วยเหลือตัวประกัน {d:points} คนหรือสังหารผู้ช่วยเหลือตัวประกัน {d:points} คนในโหมด <b>{s:gamemode}: {s:location}</b>"
-        "quest_949_var_desc"	 "ทำการสังหาร {d:points} ครั้งด้วย {s:weapon} ในโหมด <b>{s:gamemode}: {s:location}</b>"
-        "quest_950_var_desc"	 "ทำการสังหาร {d:points} ครั้งด้วยอาวุธหนักในโหมด <b>{s:gamemode}</b>"
-        "quest_951_var_desc"	 "ทำการสังหาร {s:kills} ครั้งด้วย {s:weapon} ในโหมด <b>การ์เดียน: {s:location}</b> ผู้เล่นจะเริ่มต้นพร้อม <b>{s:extraequip0}</b>"
-        "quest_952_var_desc"	 "ทำการชนะรอบ {d:points} ครั้งในโหมด <b>{s:gamemode}: {s:location}</b>"
-        "quest_953_var_desc"	 "ทำการชนะรอบ {d:points} ครั้งในโหมด <b>{s:gamemode}: {s:location}</b>"
-        "quest_954_var_desc"	 "ทำการสังหาร {d:points} ครั้งด้วย {s:target} ในโหมด <b>{s:gamemode}: {s:location}</b> ภายในแมตช์ <i>เดียว</i>"
-		"quest_955_var_desc"	 "ตีสนิทกับไก่เป็นระยะเวลา {d:points} วินาทีในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_956_var_desc" 	 "ใช้ร่มชูชีพเป็นเวลา {d:points} วินาทีในโหมด <b>{s:gamemode}</b>"
-		"quest_957_var_desc" 	 "ทำการสังหาร {d:points} ครั้งด้วย {s:weapon} ในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_958_var_desc" 	 "ทำการชนะรอบ {d:points} ในโหมด <b>{s:gamemode}: {s:location}</b> (ประจัญบาน)"
-		"quest_959_var_desc" 	 "ทำการสังหาร {d:points} ครั้งในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_960_var_desc"	 "ทำการสังหาร {s:kills} ครั้งด้วย {s:weapon} ในโหมด <b>การ์เดียน: {s:location}</b>"
-		"quest_961_var_desc" 	 "ทำการสังหารด้วยปืนพก {d:points} ครั้งในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_962_var_desc" 	 "ทำการสังหาร {d:points} ครั้งโดยไม่จ่ายเงินซื้ออะไรเลยในโหมด <b>{s:gamemode}</b> ภายในแมตช์ <i>เดียว</i>"
-		"quest_963_var_desc"	 "ทำการสังหาร {s:kills} ครั้งด้วย {s:weapon} ในโหมด <b>การ์เดียน: {s:location}</b>"
-		"quest_964_var_desc" 	 "ทำการชนะรอบด้วยปืนพก {d:points} ครั้งในโหมด <b>{s:gamemode}</b>"
-		"quest_965_var_desc" 	 "ทำการสังหาร {s:kills} ครั้งด้วย {s:weapon} ในโหมด <b>การ์เดียน: {s:location}</b>"
-		"quest_966_var_desc" 	 "เก็บเงิน ${d:points} ในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_967_var_desc" 	 "ทำการสังหาร {d:points} ครั้งด้วย {s:weapon} ในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_968_var_desc"	 "ทำการสังหารด้วยปืนสไนเปอร์ไรเฟิล {d:points} ครั้งในโหมด <b>{s:gamemode}</b>"
-		"quest_969_var_desc" 	 "ทำการสังหารโดยไม่ใช้กล้องเล็ง {s:kills} ครั้งด้วย {s:weapon} ในโหมด <b>การ์เดียน: {s:location}</b>"
-		"quest_970_var_desc" 	 "ทำการชนะรอบ {d:points} ครั้งในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_971_var_desc"	 "ทำการสังหาร {s:kills} ครั้งด้วย {s:weapon} ในโหมด <b>การ์เดียน: {s:location}</b>"
-		"quest_972_var_desc" 	 "ทำการสังหารโดยการยิงศีรษะ {d:points} ครั้งในโหมด <b>{s:gamemode}: {s:location}</b> ภายในแมตช์ <i>เดียว</i>"
-		"quest_973_var_desc" 	 "ทำการสังหาร {d:points} ครั้งในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_974_var_desc" 	 "ทำการสังหารโดยการยิงศีรษะ {d:points} ครั้งในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_975_var_desc"     "ทำการสังหาร {s:kills} ครั้งด้วยอาวุธ CT ในโหมด <b>การ์เดียน: {s:location}</b>"
-		"quest_976_var_desc" 	 "ทำการชนะรอบ {d:points} ครั้งในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_977_var_desc"	 "ทำการชนะรอบ {d:points} ครั้งในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_978_var_desc" 	 "ทำการสังหาร {d:points} ครั้งด้วย {s:weapon} ในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_979_var_desc"	 "ทำการสังหารต่อเนื่องมากกว่า 4 ครั้งขึ้นไปในโหมด <b>{s:gamemode}: {s:location}</b>"		
-		"quest_980_var_desc" 	 "ได้อันดับที่สี่หรือดีกว่านั้นในโหมด <b>{s:gamemode}</b>"
-		"quest_981_var_desc"     "ทำการสังหารโดยการยิงศีรษะ {s:kills} ครั้งด้วย {s:weapon} ในโหมด <b>การ์เดียน: {s:location}</b> <i>โดยไม่สวมเกราะป้องกัน</i>"
-		"quest_982_var_desc" 	 "ทำการสังหารโดยการยิงศีรษะ {d:points} ครั้งด้วย {s:weapon} ในโหมด <b>{s:gamemode}: {s:location}</b> ภายในแมตช์ <i>เดียว</i>"
-		"quest_983_var_desc" 	 "ทำการสังหารโดยการยิงศีรษะ {d:points} ครั้งในโหมด <b>{s:gamemode}</b>"
-		"quest_984_var_desc" 	 "เก็บ {d:points} MVP ในโหมด <b>{s:gamemode}</b>"
-		"quest_985_var_desc" 	 "ทำการสังหาร {d:points} ครั้งด้วยปืนพกเริ่มต้นในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_986_var_desc"     "ทำการสังหาร {s:kills} ครั้งด้วย {s:weapon} ในโหมด <b>การ์เดียน: {s:location}</b>"
-		"quest_987_var_desc"	 "ทำการสังหาร {d:points} ครั้งด้วยปืนไรเฟิลหลักของศัตรูในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_988_var_desc"     "ทำการสังหารด้วยมีด {d:points} ครั้งในโหมด <b>ประชันอาวุธ</b>"
-		"quest_989_var_desc" 	 "ทำความเสียหายเบ็ดเตล็ด {d:points} หน่วยในโหมด <b>{s:gamemode}</b>"
-		"quest_990_var_desc" 	 "เก็บ 5 คน {d:points} ครั้งในโหมด <b>{s:gamemode}</b>"
-		"quest_991_var_desc" 	 "ทำการสังหาร {d:points} ครั้งด้วย <b>Tec-9 หรือ Five-Seven</b> ในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_992_var_desc"     "ทำการสังหาร {s:kills} ครั้งด้วย {s:weapon} ในโหมด <b>การ์เดียน: {s:location}</b>"
-		"quest_993_var_desc"	 "ทำความเสียหายเบ็ดเตล็ด {d:points} หน่วยในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_994_var_desc" 	 "ทำการสังหาร {d:points} ครั้งในโหมด <b>{s:gamemode}</b>"
-		"quest_995_var_desc" 	 "ทำการชนะรอบ {d:points} ครั้งในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_996_var_desc"     "ทำการสังหาร {d:points} ครั้งในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_997_var_desc" 	 "ทำการสังหาร {d:points} ครั้งด้วย Galil AR หรือ FAMAS ในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_998_var_desc"     "ทำการสังหาร {s:kills} ครั้งด้วย {s:weapon} ในโหมด <b>การ์เดียน: {s:location}</b>"
-		"quest_999_var_desc" 	 "ทำการสังหาร {d:points} ครั้งด้วย {s:weapon} ในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1000_var_desc" 	 "ทำลายโดรนศัตรู {d:points} ตัว {s:actions} ในโหมด <b>{s:gamemode}</b>"
-		"quest_1001_var_desc" 	 "เก็บ MPV {d:points} ครั้งในโหมด <b>{s:gamemode}: {s:location}</b> ภายในแมตช์ <i>เดียว</i>"
-		"quest_1002_var_desc"	 "ทำการสังหารต่อเนื่องมากกว่า 2 ครั้งขึ้นไปภายใน {d:points} รอบในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1003_var_desc" 	 "ทำการสังหาร {d:points} ครั้งด้วย {s:weapon} ในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1004_var_desc"    "ทำการสังหาร {s:kills} ครั้งด้วย {s:weapon} ในโหมด <b>การ์เดียน: {s:location}</b>"
-		"quest_1005_var_desc" 	 "ทำการชนะรอบ {d:points} ครั้งในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1006_var_desc"    "ทำการสังหาร {d:points} ครั้งในโหมด <b>ประชันอาวุธ</b>"
-		"quest_1007_var_desc" 	 "ทำลายประตูที่ล็อค {d:points} บาน {s:actions} ด้วย {s:weapon} ในโหมด <b>{s:gamemode}</b>"
-		"quest_1008_var_desc" 	 "ทำการสังหาร {d:points} ครั้งด้วย AK-47 หรือ M4A4 ในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1009_var_desc" 	 "ทำการชนะรอบ {d:points} ครั้งในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1010_var_desc"	 "ทำการสังหาร {d:points} ครั้งด้วย {s:weapon} ในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1011_var_desc"    "ชนะ 5 รอบหรือมากกว่านั้นในครึ่งแรกของแมตช์โหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1012_var_desc" 	 "เหยียบบนบัมพ์ไมน์ {d:points} ครั้งในโหมด <b>{s:gamemode}</b>"
-		"quest_1013_var_desc" 	 "ทำการสังหาร {d:points} ครั้งด้วย {s:weapon} ในโหมด <b>{s:gamemode}</b>"
-		"quest_1014_var_desc"    "ทำการสังหาร {s:kills} ครั้งด้วย {s:weapon} ในโหมด <b>การ์เดียน: {s:location}</b>"
-		"quest_1015_var_desc" 	 "ทำการสังหาร {d:points} ครั้งโดยไม่ใช้เงินมากกว่า $2000 ในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1016_var_desc"	 "เก็บเงินไว้ได้มากกว่า $3000 ในโหมด <b>{s:gamemode}</b>"
-		"quest_1017_var_desc" 	 "ทำการชนะรอบ {d:points} ครั้งในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1018_var_desc"    "ทำการสังหาร {s:kills} ครั้งด้วย {s:weapon} ในโหมด <b>การ์เดียน: {s:location}</b>"
-		"quest_1019_var_desc" 	 "ทำการสังหาร {d:points} ครั้งด้วย {s:weapon} ใดก็ได้ในโหมด <b>ประชันอาวุธ</b>"
-		"quest_1020_var_desc" 	 "ทำการสังหาร {d:points} ครั้งด้วย {s:weapon} ในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1021_var_desc" 	"ฆ่าไก่ {d:points} ตัวในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1022_var_desc" 	"ระเบิดถังแดง {d:points} ครั้งในโหมด <b>{s:gamemode}</b>"
-		"quest_1023_var_desc" 	"ทำการชนะรอบ {d:points} ครั้งในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1024_var_desc" 	"ทำลายบานกระจก {d:points} ครั้งในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1025_var_desc" 	"ทำการชนะรอบ {d:points} ครั้งในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1027_var_desc"	 "พ่นกราฟฟิตี้ {d:points} ครั้งในพื้นที่เริ่มต้นของศัตรูในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1028_var_desc"	 "ทำการสังหาร {d:points} ครั้งจากตำแหน่งจุด <i>บานาน่า</i> หรือ <i>อพาร์ตเมนท์</i> ในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1029_var_desc"	 "โยนระเบิดควันจุดยุทธศาสตร์ {d:points} ครั้งในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1030_var_desc"	 "เก็บตัวอย่างของไวรัสในโซนอันตรายจากห้องวิจัยของฟีนิกซ์"
-		"quest_1031_var_desc"	 "ทำลายโรงงานผลิตของฟีนิกซ์และกำจัดฟรานซ์ ครีเกลด์"
-		
-		"quest_1098_var_desc"                                  "ชนะรอบใน <b>{s:location}</b>"
-		"quest_1032_var_desc"                                  "ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1033_var_desc"                                  "ทำการสังหาร {s:kills} คนในโหมด <b>การ์เดียน: {s:location}</b>"
-		"quest_1034_var_desc"                                  "กลุ่มผู้ก่อการร้าย Phoenix ได้โผล่มาแล้ว! ไปสืบมาว่าพวกมันกำลังวางแผนอะไรอยู่"
-		"quest_1035_var_desc"                                  "ทำการสังหารด้วย AK47, M4A4 หรือ M4A1-S ในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1036_var_desc"                                  "ชนะรอบใน <b>{s:location}</b>"
-		"quest_1037_var_desc"                                  "ทำการสังหารในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1099_var_desc"                                  "เก็บ MVP ใน <b>{s:location}</b>"
-		"quest_1038_var_desc"                                  "ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1039_var_desc"                                  "ทำการสังหารด้วยปืนพกทั้งหมด {s:kills} คนในโหมด <b>การ์เดียน: {s:location}</b>"
-		"quest_1040_var_desc"                                  "ทำการสังหารด้วย {s:weapon} ใน <b>{s:location}</b>"
-		"quest_1041_var_desc"                                  "ทำการสังหารด้วย {s:weapon} ในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1042_var_desc"                                  "ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1043_var_desc"                                  "ทำการสังหาร {s:kills} คนด้วย {s:weapon} ในโหมด <b>การ์เดียน: {s:location}</b>"
-		"quest_1044_var_desc"                                  "ทำการสังหารในระยะอย่างน้อย 15 เมตรในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1045_var_desc"                                  "ทำการสังหารด้วยปืนสไนเปอร์ไรเฟิลใดก็ได้ใน <b>{s:location}</b>"
-		"quest_1046_var_desc"                                  "ทำการสังหารโดยการยิงศีรษะในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1047_var_desc"                                  "ทำการสังหาร {s:kills} คนด้วย {s:weapon} ในโหมด <b>การ์เดียน: {s:location}</b>"
-		"quest_1048_var_desc"                                  "สร้างความเสียหายด้วยระเบิดใน <b>{s:location}</b>"
-		"quest_1049_var_desc"                                  "เก็บเงินในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1050_var_desc"                                  "ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1051_var_desc"                                  "ทำการสังหาร {s:kills} คนในโหมด <b>การ์เดียน: {s:location}</b>"
-		"quest_1052_var_desc"                                  "เลือกการ์ดของศัตรูใน <b>{s:location}</b>"
-		"quest_1053_var_desc"                                  "วางระเบิดควันที่ตำแหน่งที่กำหนดไว้ในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1054_var_desc"                                  "ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1055_var_desc"                                  "ทำการสังหาร {s:kills} คนด้วยอาวุธของผู้ก่อการร้ายในโหมด <b>การ์เดียน: {s:location}</b>"
-		"quest_1056_var_desc"                                  "ทำการสังหารจากอุโมงค์หรือวังในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1057_var_desc"                                  "ทำการสังหารใน <b>{s:location}</b>"
-		"quest_1058_var_desc"                                  "ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1059_var_desc"                                  "ทำการสังหาร {s:kills} คนด้วยปืนกลมือในโหมด <b>การ์เดียน: {s:location}</b>"
-		"quest_1060_var_desc"                                  "ทำการสังหารด้วยปืนกลมือในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1061_var_desc"                                  "ทำการสังหารด้วยปืนกลมือใน <b>{s:location}</b>"
-		"quest_1062_var_desc"                                  "ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1063_var_desc"                                  "ทำการสังหาร {s:kills} คนด้วยปืนลูกซองในโหมด <b>การ์เดียน: {s:location}</b>"
-		"quest_1064_var_desc"                                  "เลือกการ์ดของ MVP ใน <b>{s:location}</b>"
-		"quest_1065_var_desc"                                  "พ่นกราฟฟิตี้ที่ตำแหน่งที่กำหนดไว้ในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1100_var_desc"                                  "ทำการชนะรอบใน <b>{s:location}</b>"
-		"quest_1066_var_desc"                                  "ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1067_var_desc"                                  "ทำการสังหารโดยการยิงศีรษะ {s:kills} คนด้วยปืน AUG ในโหมด <b>การ์เดียน: {s:location}</b>"
-		"quest_1068_var_desc"                                  "ทำให้ศัตรูตาพร่ามัวด้วยระเบิดแสงใน <b>{s:location}</b>"
-		"quest_1069_var_desc"                                  "พ่นกราฟฟิตี้ที่ตำแหน่งที่กำหนดไว้ในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1101_var_desc"                                  "ทำการชนะรอบใน <b>{s:location}</b>"
-		"quest_1070_var_desc"                                  "ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1071_var_desc"                                  "ทำการสังหารในระยะใกล้กว่า 10 เมตรเป็นจำนวน {s:kills} คนในโหมด <b>การ์เดียน: {s:location}</b>"
-		"quest_1072_var_desc"                                  "ทำการสังหารในระยะที่ใกล้กว่า 10 เมตรในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1073_var_desc"                                  "ทำการสังหารใน <b>{s:location}</b>"		
-		"quest_1074_var_desc"                                  "ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1075_var_desc"                                  "ทำการสังหาร {s:kills} คนในโหมด <b>การ์เดียน: {s:location}</b>"
-		"quest_1076_var_desc"                                  "ทำการสังหารโดยการยิงศีรษะในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1077_var_desc"                                  "ทำการสังหารด้วยอาวุธหนักในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1102_var_desc"                                  "ทำการชนะรอบใน <b>{s:location}</b>"
-		"quest_1078_var_desc"                                  "ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1079_var_desc"                                  "ทำการสังหารด้วยปืน SSG08 {s:kills} ครั้งในโหมด <b>การ์เดียน: {s:location}</b>"
-		"quest_1080_var_desc"                                  "ทำการสังหารไก่ในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1081_var_desc"                                  "ทำการสังหารใน <b>{s:location}</b>"
-		"quest_1082_var_desc"                                  "ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1083_var_desc"                                  "ทำการสังหาร {s:kills} ครั้งด้วย MAG-7 ในโหมด <b>การ์เดียน: {s:location}</b>"
-		"quest_1084_var_desc"                                  "ทำการสังหารใน <b>{s:location}</b>"
-		"quest_1085_var_desc"                                  "สร้างความเสียหายด้วยระเบิดในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1085_v2_var_desc"                   			   "สร้างความเสียหายด้วยระเบิดในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1086_var_desc"                                  "ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1087_var_desc"                                  "ทำการสังหาร {s:kills} ครั้งด้วยอาวุธของศัตรูในโหมด <b>การ์เดียน: {s:location}</b>"
-		"quest_1088_var_desc"                                  "ทำการสังหารจากตำแหน่งที่กำหนดไว้ในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1089_var_desc"                                  "ทำการสังหารโดยใช้กล้องเล็งในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1089_v2_var_desc"                               "ทำการสังหารโดยใช้กล้องเล็งในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1090_var_desc"                                  "ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1091_var_desc"                                  "ทำการสังหาร {s:kills} ครั้งในโหมด <b>การ์เดียน: {s:location}</b>"
-		"quest_1092_var_desc"                                  "ทำคะแนนด้วยอาวุธโบนัสในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1092_v2_var_desc"                                  "ทำคะแนนด้วยอาวุธโบนัสในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1093_var_desc"                                  "ใช้จ่ายเงินในโหมด <b>{s:gamemode}</b>"
-		"quest_1094_var_desc"                                  "ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
-		"quest_1095_var_desc"                                  "ทำการสังหาร {s:kills} ครั้งในโหมด <b>การ์เดียน: {s:location}</b>"
-		"quest_1095_v2_var_desc"                                  "ทำการสังหาร {s:kills} ครั้งด้วย UMP-45 ในโหมด <b>การ์เดียน: {s:location}</b>"
-		"quest_1096_var_desc"                                  "ชนะรอบใน <b>{s:location}</b>"
-		"quest_1097_var_desc"                                  "ทำภารกิจให้เสร็จสมบูรณ์"
-		"quest_1097_v2_var_desc"                                  "<i>...จอตาปรับตัวต่อสิ่งกระตุ้นที่สว่างได้อย่างรวดเร็ว ทำให้ตาพร่ามัวชั่วคราว</i>"
-		"quest_1103_var_desc"                                  "ทำให้ศัตรูตาพร่ามัวด้วยระเบิดแสงในโหมด <b>{s:gamemode}: {s:location}</b>"
-
-// OP11 Week 1 Missions
-		"quest_1106_var_desc"                              "เอาชีวิตรอดจากการโจมตีทางอากาศในโหมด<b>การ์เดียน: {s:location}</b>"
-		"quest_1107_var_desc"                              "ทำหลายภารกิจให้เสร็จในโหมด<b>โซนอันตราย: {s:location}</b>"
-		"quest_1108_var_desc"                              "ทำการสังหารตามชุดตำแหน่งเรดาร์ที่แตกต่างกัน"
-
-// OP11 Week 2 Missions
-		"quest_1111_var_desc"                              "ทำการสังหารในโหมด<b>การ์เดียน: {s:location}</b>"
-
-// OP11 Week 3 Missions
-		"quest_1115_var_desc"                              "ทำการสังหารด้วยปืนสไนเปอร์ไรเฟิลในโหมด<b>การ์เดียน: {s:location}</b>"
-		"quest_1117_var_desc"                              "พ่นกราฟฟิตี้ในตำแหน่งที่ต่างกัน"
-
-// OP11 Week 4 Missions
-		"quest_1119_var_desc"                              "ทำการสังหารด้วยปืนลูกซองในโหมด<b>การ์เดียน: {s:location}</b>"
-		"quest_1120_var_desc"                              "ทำการสังหารตามชุดตำแหน่งเรดาร์ที่แตกต่างกัน"
-
-// OP11 Week 5 Missions
-		"quest_1123_var_desc"                              "ทำการสังหารด้วยปืนกลมือในโหมด<b>การ์เดียน: {s:location}</b>"
-		"quest_1125_var_desc"                              "ทำหลายภารกิจให้เสร็จสมบูรณ์"
-
-// OP11 Week 6 Missions
-		"quest_1127_var_desc"                              "ทำการสังหารด้วยสไนเปอร์ไรเฟิลในโหมด<b>การ์เดียน: {s:location}</b>"
-		"quest_1128_var_desc"                              "ทำการสังหารต่อเนื่องในโหมด<b>เดธแมตช์: {s:location}</b>"
-
-// OP11 Week 7 Missions
-		"quest_1131_var_desc"                              "ทำการสังหารในโหมด<b>การ์เดียน: {s:location}</b>"
-		"quest_1132_var_desc"                              "ทำการสังหารตามชุดตำแหน่งเรดาร์ที่แตกต่างกัน"
-
-// OP11 Week 8 Missions
-		"quest_1135_var_desc"                              "ทำการสังหารด้วยปืนลูกซองในโหมด<b>การ์เดียน: {s:location}</b>"
-		"quest_1137_var_desc"                              "ทำหลายภารกิจเบ็ดเตล็ดให้เสร็จสมบูรณ์"
-
-// OP11 Week 9 Missions
-		"quest_1139_var_desc"                              "ทำการสังหารด้วยปืนพกในโหมด<b>การ์เดียน: {s:location}</b>"
-		"quest_1140_var_desc"                              "พ่นกราฟฟิตี้หลายตำแหน่ง"
-
-// OP11 Week 10 Missions
-		"quest_1143_var_desc"                              "ทำการสังหารด้วย AUG ในโหมด<b>การ์เดียน: {s:location}</b>"
-		"quest_1144_var_desc"                              "ทำการสังหารตามชุดตำแหน่งเรดาร์ที่แตกต่างกัน"
-
-// OP11 Week 11 Missions
-		"quest_1147_var_desc"                              "ทำการสังหารด้วย MP9 ในโหมด<b>การ์เดียน: {s:location}</b>"
-
-// OP11 Week 12 Missions
-		"quest_1151_var_desc"                              "ทำการสังหารด้วยปืนกลมือในโหมด<b>การ์เดียน: {s:location}</b>"
-		"quest_1152_var_desc"                              "ทำการสังหารต่อเนื่อง"
-
-// OP11 Week 13 Missions
-		"quest_1155_var_desc"                              "ทำการสังหารศัตรูด้วยอาวุธในโหมด<b>การ์เดียน: {s:location}</b>"
-		"quest_1156_var_desc"                              "ทำการสังหารตามชุดตำแหน่งเรดาร์ที่แตกต่างกัน"
-		"quest_1157_var_desc"                              "พ่นกราฟฟิตี้หลายตำแหน่ง"
-
-// OP11 Week 14 Missions
-		"quest_1159_var_desc"                              "ทำการสังหารด้วยบรีชชาร์จในโหมด<b>การ์เดียน: {s:location}</b>"
-
-// OP11 Week 15 Missions
-		"quest_1163_var_desc"                              "ทำการสังหารด้วยอาวุธหนักในโหมด<b>การ์เดียน: {s:location}</b>"
-
-// OP11 Week 16 Missions
-		"quest_1167_var_desc"                              "ทำการสังหารในโหมด<b>การ์เดียน: {s:location}</b>"
-		"quest_1169_var_desc"                              "ทำการสังหารโดยใช้อาวุธจาก 1 ใน 4 ของชุดสะสมปฏิบัติการ Riptide"
-
-
-// OP11 Week 1 Sub-Missions
-		"quest_1200_var_desc"                              "ชนะ {d:points} แมตช์"
-		"quest_1201_var_desc"                              "ชนะ {d:points} รอบ"
-		"quest_1202_var_desc"                              "สร้างความเสียหายเบ็ดเตล็ด {d:points} หน่วยใน<i>แมตช์เดียว</i>"
-		"quest_1203_var_desc"                              "สร้างความเสียหายเบ็ดเตล็ด {d:points} หน่วย"
-		"quest_1204_var_desc"                              "ทำลายโดรนศัตรู"
-		"quest_1205_var_desc"                              "ระเบิดถัง"
-		"quest_1206_var_desc"                              "ทำลายกระจก"
-		"quest_1207_var_desc"                              "บินพุ่งขึ้นฟ้าด้วยบัมพ์ไมน์ที่วางบนยอดหอถังเก็บน้ำ"
-		"quest_1208_var_desc"                              "ช่วยเหลือตัวประกัน"
-		"quest_1209_var_desc"                              "ทำการสังหารจากจุดเริ่มต้น T"
-		"quest_1210_var_desc"                              "ทำการสังหารจากทางลาด T"
-		"quest_1211_var_desc"                              "ทำการสังหารจากจุดวางระเบิด A"
-		"quest_1212_var_desc"                              "ทำการสังหารจากจุดเริ่มต้น CT"
-		"quest_1213_var_desc"                              "ทำการสังหารจากร้านค้า"
-		"quest_1214_var_desc"                              "ทำการสังหารจากจุดวางระเบิด B"
-		"quest_1215_var_desc"                              "ทำการสังหารจากทางแคบ"
-		"quest_1216_var_desc"                              "ทำการสังหารจากจุดกลาง"
-		"quest_1217_var_desc"                              "ทำการสังหารจากบันได"
-		"quest_1218_var_desc"                              "ทำการสังหารจากจุดวางระเบิด A (อีกครั้ง)!"
-		"quest_1219_var_desc"                              "ทำการสังหารหลายคนในรอบ {d:points} ครั้งใน<i>แมตช์เดียว</i>"
-		"quest_1220_var_desc"                              "ทำการสังหาร {d:points} ครั้ง"
-
-// OP11 Week 2 Sub-Missions
-		"quest_1221_var_desc"                              "ชนะ {d:points} แมตช์"
-		"quest_1222_var_desc"                              "ชนะ {d:points} รอบ"
-		"quest_1223_var_desc"                              "ทำการสังหารโดยการยิงศีรษะ {d:points} ครั้งใน<i>แมตช์เดียว</i>"
-		"quest_1224_var_desc"                              "ทำการสังหารโดยการยิงศีรษะ {d:points} ครั้ง"
-		"quest_1225_var_desc"                              "สร้างความเสียหายด้วยระเบิด"
-		"quest_1226_var_desc"                              "ทำการสังหาร {d:points} ครั้ง"
-
-// OP11 Week 3 Sub-Missions		
-		"quest_1227_var_desc"                              "ชนะ {d:points} แมตช์"
-		"quest_1228_var_desc"                              "ชนะ {d:points} รอบ"
-		"quest_1229_var_desc"                              "สร้างความเสียหาย {d:points} หน่วยใน<i>แมตช์เดียว</i>"
-		"quest_1230_var_desc"                              "สร้างความเสียหาย {d:points} หน่วย"
-		"quest_1231_var_desc"                              "พ่นกราฟฟิตี้ที่จุดเริ่มต้น CT"
-		"quest_1232_var_desc"                              "พ่นกราฟฟิตี้ที่จุดวางระเบิด A"
-		"quest_1233_var_desc"                              "พ่นกราฟฟิตี้ที่หลุม"
-		"quest_1234_var_desc"                              "พ่นกราฟฟิตี้ที่จุดวางระเบิด B"
-		"quest_1235_var_desc"                              "พ่นกราฟฟิตี้ที่ประตูกลาง"
-		"quest_1236_var_desc"                              "พ่นกราฟฟิตี้ที่จุดเริ่มต้น T"
-		"quest_1237_var_desc"                              "พ่นกราฟฟิตี้ที่ทางแคบ"
-		"quest_1238_var_desc"                              "พ่นกราฟฟิตี้ที่อุโมงค์ด้านบน"
-		"quest_1239_var_desc"                              "พ่นกราฟฟิตี้ที่ประตูยาว"
-		"quest_1240_var_desc"                              "พ่นกราฟฟิตี้ที่จุดกลาง"
-
-// OP11 Week 4 Sub-Missions		
-		"quest_1241_var_desc"                              "ชนะ {d:points} แมตช์"
-		"quest_1242_var_desc"                              "ชนะ {d:points} รอบ"
-		"quest_1243_var_desc"                              "ทำการสังหารจากด้านนอก"
-		"quest_1244_var_desc"                              "ทำการสังหารจากจุดวางระเบิด A"
-		"quest_1245_var_desc"                              "ทำการสังหารจากล็อบบี้"
-		"quest_1246_var_desc"                              "ทำการสังหารจากทางลาด"
-		"quest_1247_var_desc"                              "ทำการสังหารจากจุดวางระเบิด B"
-		"quest_1248_var_desc"                              "ทำการสังหารจากทางลับ"
-		"quest_1249_var_desc"                              "ทำการสังหารจากด้านนอก (อีกครั้ง!)"
-		"quest_1250_var_desc"                              "ทำการสังหารจากจุดเริ่มต้น T"
-		"quest_1251_var_desc"                              "ทำการสังหารจากด้านบนของไซโล"
-		"quest_1252_var_desc"                              "ทำการสังหารจากจุดเริ่มต้น CT"
-		"quest_1253_var_desc"                              "ทำ {d:points} ครั้งใน<i>แมตช์เดียว</i>: สังหารโดยใช้กระสุน 5 นัดแรกของรอบ"
-		"quest_1254_var_desc"                              "ทำการสังหาร {d:points} ครั้ง"
-
-// OP11 Week 5 Sub-Missions		
-		"quest_1255_var_desc"                              "เก็บ MVP {d:points} ครั้งใน<i>แมตช์เดียว</i>"
-		"quest_1256_var_desc"                              "ชนะ {d:points} รอบ"
-		"quest_1257_var_desc"                              "ทำการสังหารโดยการยิงศีรษะ {d:points} ครั้งใน<i>แมตช์เดียว</i>"
-		"quest_1258_var_desc"                              "ทำการสังหารโดยการยิงศีรษะ {d:points} ครั้ง"
-		"quest_1259_var_desc"                              "เก็บเงินขณะที่แท็บเล็ตของคุณไม่มีสัญญาณ"
-		"quest_1260_var_desc"                              "สั่งซื้อแท็บเล็ตอัปเกรดความละเอียดสูง"
-		"quest_1261_var_desc"                              "ทำลายป้อมปืนอัตโนมัติ"
-		"quest_1262_var_desc"                              "วางระเบิด C4 ในจุดท่องเที่ยว"
-		"quest_1263_var_desc"                              "สร้างความเสียหายให้ศัตรูขณะยืนบนหิน"
-		
-// OP11 Week 6 Sub-Missions	
-		"quest_1264_var_desc"                              "ชนะ {d:points} แมตช์"
-		"quest_1265_var_desc"                              "ชนะ {d:points} รอบ"
-		"quest_1266_var_desc"                              "ทำการสังหารต่อเนื่อง 3 ศพ"
-		"quest_1267_var_desc"                              "ทำการสังหารต่อเนื่อง 5 ศพ"
-		"quest_1268_var_desc"                              "ทำการสังหารต่อเนื่อง 7 ศพ"
-		"quest_1269_var_desc"                              "ทำการสังหารด้วยปืนของคนอื่น {d:points} ครั้งใน<i>แมตช์เดียว</i>"
-		"quest_1270_var_desc"                              "ทำการสังหารด้วยปืนของคนอื่น {d:points} ครั้ง"
-
-// OP11 Week 7 Sub-Missions			
-		"quest_1271_var_desc"                              "ชนะ {d:points} แมตช์"
-		"quest_1272_var_desc"                              "ชนะ {d:points} รอบ"
-		"quest_1273_var_desc"                              "ทำการสังหารจากประตูกลาง"
-		"quest_1274_var_desc"                              "ทำการสังหารจากทางแคบ"
-		"quest_1275_var_desc"                              "ทำการสังหารจากด้านบนจุดกลาง"
-		"quest_1276_var_desc"                              "ทำการสังหารจากหลุม"
-		"quest_1277_var_desc"                              "ทำการสังหารจากจุดวางระเบิด A"
-		"quest_1278_var_desc"                              "ทำการสังหารจากประตูกลาง (อีกครั้ง!)"
-		"quest_1279_var_desc"                              "ทำการสังหารจากจุดวางระเบิด B"
-		"quest_1280_var_desc"                              "ทำการสังหารจากอุโมงค์"
-		"quest_1281_var_desc"                              "ทำการสังหารจากทางลาด T"
-		"quest_1282_var_desc"                              "ทำการสังหารจากจุดเริ่มต้น T"
-		"quest_1283_var_desc"                              "สร้างความเสียหาย {d:points} หน่วยขณะอยู่กลางอากาศใน<i>แมตช์เดียว</i>"
-		"quest_1284_var_desc"                              "สร้างความเสียหาย {d:points} หน่วยขณะลอยกลางอากาศ"
-
-// OP11 Week 8 Sub-Missions			
-		"quest_1285_var_desc"                              "ชนะ {d:points} แมตช์"
-		"quest_1286_var_desc"                              "ชนะ {d:points} รอบ"
-		"quest_1287_var_desc"                              "เลื่อนขั้นไปจนถึงระดับมีด"
-		"quest_1288_var_desc"                              "อัปเกรดอาวุธของคุณ {d:points} ครั้ง"
-		"quest_1289_var_desc"                              "ใช้ระเบิดควันที่ด้านบนจุดกลาง"
-		"quest_1290_var_desc"                              "ใช้ระเบิดควันที่จุดบานาน่า"
-		"quest_1291_var_desc"                              "ใช้ระเบิดขวดที่จุดบานาน่า"
-		"quest_1292_var_desc"                              "ทำให้ศัตรู 3 คนตาพร่ามัวในแมตช์เดียว"
-		"quest_1293_var_desc"                              "สร้างความเสียหายด้วยระเบิด {d:points} หน่วยในแมตช์เดียว"
-
-// OP11 Week 9 Sub-Missions			
-		"quest_1294_var_desc"                              "ทำการสังหารโดยการยิงศีรษะ {d:points} ครั้งใน<i>แมตช์เดียว</i>"
-		"quest_1295_var_desc"                              "ทำการสังหารโดยการยิงศีรษะ {d:points} ครั้ง"
-		"quest_1296_var_desc"                              "พ่นกราฟฟิตี้ที่ด้านบนของหอถังเก็บน้ำ"
-		"quest_1297_var_desc"                              "พ่นกราฟฟิตี้ตรงสมอที่สะพานท่าเรือ"
-		"quest_1298_var_desc"                              "พ่นกราฟฟิตี้ที่เครน"
-		"quest_1299_var_desc"                              "พ่นกราฟฟิตี้ที่ด้านบนหลังคาของเสาวิทยุ"
-		"quest_1300_var_desc"                              "พ่นกราฟฟิตี้ในตลาดที่โรงแรม"
-		"quest_1301_var_desc"                              "พ่นกราฟฟิตี้ใส่เตาย่างที่จุดปิกนิก"
-		"quest_1302_var_desc"                              "พ่นกราฟฟิตี้ที่ประภาคาร"
-		"quest_1303_var_desc"                              "พ่นกราฟฟิตี้บนสะพาน"
-		"quest_1304_var_desc"                              "พ่นกราฟฟิตี้ที่ไซต์ก่อสร้าง"
-		"quest_1305_var_desc"                              "ทำการสังหารด้วย Deagle {d:points} ครั้งใน<i>แมตช์เดียว</i>"
-		"quest_1306_var_desc"                              "อัปเกรดอาวุธของคุณ {d:points} ครั้ง"
-
-// OP11 Week 10 Sub-Missions			
-		"quest_1307_var_desc"                              "ชนะ {d:points} แมตช์"
-		"quest_1308_var_desc"                              "ชนะ {d:points} รอบ"
-		"quest_1309_var_desc"                              "ทำการสังหารจากสนามเด็กเล่น"
-		"quest_1310_var_desc"                              "ทำการสังหารจากสวนด้านบน"
-		"quest_1311_var_desc"                              "ทำการสังหารจากจุดวางระเบิด A"
-		"quest_1312_var_desc"                              "ทำการสังหารจากจุดซุ่มยิง"
-		"quest_1313_var_desc"                              "ทำการสังหารจากจุดวางระเบิด B"
-		"quest_1314_var_desc"                              "ทำการสังหารจากจุดเริ่มต้น T"
-		"quest_1315_var_desc"                              "ทำการสังหารในอุโมงค์"
-		"quest_1316_var_desc"                              "ทำการสังหารจากสนามเด็กเล่น (อีกครั้ง!)"
-		"quest_1317_var_desc"                              "ทำการสังหารจากน้ำพุ"
-		"quest_1318_var_desc"                              "ทำการสังหารจากห้องน้ำ"
-		"quest_1319_var_desc"                              "ทำการสังหารโดยการยิงศีรษะ {d:points} ครั้งใน<i>แมตช์เดียว</i>"
-		"quest_1320_var_desc"                              "ทำการสังหารโดยการยิงศีรษะ {d:points} ครั้ง"
-
-// OP11 Week 11 Sub-Missions			
-		"quest_1321_var_desc"                              "ชนะ {d:points} แมตช์"
-		"quest_1322_var_desc"                              "ชนะ {d:points} รอบ"
-		"quest_1323_var_desc"                              "ใช้เข็มฉีดยา {d:points} ครั้งใน<i>แมตช์เดียว</i>"
-		"quest_1324_var_desc"                              "ใช้เข็มฉีดยา {d:points} ครั้ง"
-		"quest_1325_var_desc"                              "สร้างความเสียหายด้วยระเบิด {d:points} หน่วยใน<i>แมตช์เดียว</i>"
-		"quest_1326_var_desc"                              "สร้างความเสียหายด้วยระเบิด {d:points} หน่วย"
-
-// OP11 Week 12 Sub-Missions			
-		"quest_1327_var_desc"                              "ชนะ {d:points} แมตช์"
-		"quest_1328_var_desc"                              "ชนะ {d:points} รอบ"
-		"quest_1329_var_desc"                              "ทำการสังหารต่อเนื่อง 3 ศพ"
-		"quest_1330_var_desc"                              "ทำการสังหารต่อเนื่อง 4 ศพ"
-		"quest_1331_var_desc"                              "ทำการสังหารต่อเนื่อง 5 ศพ"
-		"quest_1332_var_desc"                              "ทำการสังหารด้วยอาวุธที่ต่างกัน {d:points} ครั้งใน<i>แมตช์เดียว</i>"
-		"quest_1333_var_desc"                              "ทำการสังหารด้วยอาวุธที่ต่างกัน {d:points} ครั้ง (สามารถทำซ้ำในหลายแมตช์ได้)"
-
-// OP11 Week 13 Sub-Missions			
-		"quest_1334_var_desc"                              "ชนะ {d:points} แมตช์"
-		"quest_1335_var_desc"                              "ชนะ {d:points} รอบ"
-		"quest_1336_var_desc"                              "ทำการสังหารจากจุดกลาง"
-		"quest_1337_var_desc"                              "ทำการสังหารจากจุดวางระเบิด A"
-		"quest_1338_var_desc"                              "ทำการสังหารจากจุดเริ่มต้น CT"
-		"quest_1339_var_desc"                              "ทำการสังหารจากบ้าน"
-		"quest_1340_var_desc"                              "ทำการสังหารจากจุดวางระเบิด B"
-		"quest_1341_var_desc"                              "ทำการสังหารจากซากปรักหักพัง"
-		"quest_1342_var_desc"                              "ทำการสังหารจากจุดเริ่มต้น T"
-		"quest_1343_var_desc"                              "ทำการสังหารจากห้องโถงหลัก"
-		"quest_1344_var_desc"                              "ทำการสังหารจากจุดวางระเบิด A (อีกครั้ง!)"
-		"quest_1345_var_desc"                              "ทำการสังหารจากจุดกลาง (อีกครั้ง!)"
-		"quest_1346_var_desc"                              "พ่นกราฟฟิตี้ที่ซุ้มประตูตะวันตกของคาสบาฮ์"
-		"quest_1347_var_desc"                              "พ่นกราฟฟิตี้ที่บันไดวนของคาสบาฮ์"
-		"quest_1348_var_desc"                              "พ่นกราฟฟิตี้ที่โดม"
-		"quest_1349_var_desc"                              "พ่นกราฟฟิตี้ที่วงกลมของลานจอดเฮลิคอปเตอร์ที่ฐานทัพ"
-		"quest_1350_var_desc"                              "พ่นกราฟฟิตี้ที่เรือตรงจุดโฟลทิลลา"
-		"quest_1351_var_desc"                              "พ่นกราฟฟิตี้ด้านในโรงแรม Aurore ในเมือง"
-		"quest_1352_var_desc"                              "พ่นกราฟฟิตี้ที่ไซโล 3 ที่แท็งค์"
-		"quest_1353_var_desc"                              "พ่นกราฟฟิตี้ที่หอคอยประภาคาร"
-		"quest_1354_var_desc"                              "พ่นกราฟฟิตี้ที่สะพานท่าเรือตรงจุดตกปลา"
-
-// OP11 Week 14 Sub-Missions			
-		"quest_1355_var_desc"                              "ชนะ {d:points} แมตช์"
-		"quest_1356_var_desc"                              "ชนะ {d:points} รอบ"
-		"quest_1357_var_desc"                              "ทำการสังหารโดยใช้กล้องเล็ง {d:points} ครั้งใน<i>แมตช์เดียว</i>"
-		"quest_1358_var_desc"                              "ทำการสังหารโดยใช้กล้องเล็ง {d:points} ครั้ง"
-		"quest_1359_var_desc"                              "ทำการสังหารใน 30 วินาทีแรกของรอบ {d:points} ครั้ง"
-		"quest_1360_var_desc"                              "ทำการสังหาร {d:points} ครั้ง"
-
-// OP11 Week 15 Sub-Missions			
-		"quest_1361_var_desc"                              "ชนะ {d:points} แมตช์"
-		"quest_1362_var_desc"                              "ชนะ {d:points} รอบ"
-		"quest_1363_var_desc"                              "ทำการสังหารผู้นำประชันอาวุธ {d:points} ครั้งใน<i>แมตช์เดียว</i>"
-		"quest_1364_var_desc"                              "ทำการสังหาร {d:points} ครั้ง"
-		"quest_1365_var_desc"                              "สร้างความเสียหาย {d:points} หน่วยใน<i>แมตช์เดียว</i>"
-		"quest_1366_var_desc"                              "สร้างความเสียหาย {d:points} หน่วย"
-
-// OP11 Week 16 Sub-Missions	
-		"quest_1367_var_desc"                              "ชนะ {d:points} แมตช์"
-		"quest_1368_var_desc"                              "ชนะ {d:points} รอบ"
-		"quest_1369_var_desc"                              "ทำการสังหาร {d:points} ครั้งด้วยหนึ่งในเจ้าหน้าที่จากปฏิบัติการ Riptide ใน<i>แมตช์เดียว</i>"
-		"quest_1370_var_desc"                              "ทำการสังหาร {d:points} ครั้ง"
-		"quest_1371_var_desc"                              "ทำการสังหาร {d:points} ครั้งด้วยอาวุธจากหนึ่งในชุดสะสมปฏิบัติการ Riptide"
-		"quest_1372_var_desc"                              "ทำการสังหาร {d:points} ครั้ง"
-
-
-
-		"quest_default_hud_var_desc" "{s:commandverb}{s:actions}{s:target}"
-		"quest_weapon_hud_var_desc" "{s:commandverb}{s:actions}ด้วย: {s:weapon}"
-		"quest_single_hud_var_desc"	"{s:commandverb}{s:actions}{s:target}<br> ก่อนจบแมตช์"
-		"quest_weapon_single_hud_var_desc" "{s:commandverb}{s:actions}ด้วย: {s:weapon}<br> ก่อนจบแมตช์"
-	
-		//hud exceptions:
-		"quest_931_hud_var_desc"	"ทำการสังหารด้วย: {s:weapon}"
-		"quest_932_hud_var_desc"	"ทำการสังหารในขณะที่อยู่กลางอากาศ"
-		"quest_933_hud_var_desc"	"ทำการชนะรอบ"
-		"quest_934_hud_var_desc"	"ทำการสังหารด้วย: {s:weapon}"
-		"quest_935_hud_var_desc"	"ทำการสังหารด้วย {s:weapon} <br> ก่อนจบแมตช์"
-		"quest_936_hud_var_desc"	"ทำการสังหารด้วย: {s:weapon}"
-		"quest_937_hud_var_desc"	"พ่นกราฟฟิตี้"
-		"quest_937_hud_var_desc_CT"	"พ่นกราฟฟิตี้ที่ไซโลหรือตู้จำหน่ายสินค้า"
-		"quest_937_hud_var_desc_T"	"พ่นกราฟฟิตี้ที่เฮฟเว่นหรือโรงรถ"
-        "quest_938_hud_var_desc"	"ทำการสังหารผู้นำประชันอาวุธ"
-        "quest_939_hud_var_desc"	"ทำการสังหารด้วย: {s:weapon}"
-        "quest_940_hud_var_desc"	"ทำการชนะรอบ"
-        "quest_941_hud_var_desc"	"ทำการชนะรอบด้วยปืนพก"
-        "quest_942_hud_var_desc"	"ทำการสังหารด้วย {s:weapon} <br> ก่อนจบแมตช์"
-        "quest_943_hud_var_desc"	"ทำการสังหาร"
-        "quest_944_hud_var_desc"	"จ่ายเงิน"
-        "quest_945_hud_var_desc"	"ทำการสังหาร"
-        "quest_946_hud_var_desc"	"ทำการชนะรอบ"
-        "quest_947_hud_var_desc"	"ทำการชนะรอบ"
-		"quest_948_hud_var_desc"	"ช่วยเหลือหรือป้องกันการช่วยเหลือ"
-		"quest_948_hud_var_desc_CT"	"ช่วยเหลือตัวประกัน"
-		"quest_948_hud_var_desc_T"	"สังหารผู้ช่วยเหลือตัวประกัน"
-        "quest_949_hud_var_desc"	"ทำการสังหารด้วย: {s:weapon}"
-        "quest_950_hud_var_desc"	"ทำการสังหารด้วยอาวุธหนัก"	
-        "quest_951_hud_var_desc"	"ทำการสังหารด้วย: {s:weapon}"	
-        "quest_952_hud_var_desc"	"ทำการชนะรอบ"	
-        "quest_953_hud_var_desc"	"ทำการชนะรอบ"	
-        "quest_954_hud_var_desc"	"ทำการสังหาร {s:target} ก่อนจบแมตช์"
-		"quest_955_hud_var_desc" 	"ตีสนิทกับไก่ด้วย [{s:bind_use}] <br> เป็นระยะเวลา {d:points} วินาที"
-		"quest_956_hud_var_desc" 	"ร่อนร่มชูชีพเป็นระยะเวลาตามวินาที"
-		"quest_957_hud_var_desc" 	"ทำการสังหารด้วย: {s:weapon}"
-		"quest_958_hud_var_desc" 	"ทำการชนะรอบ"
-		"quest_959_hud_var_desc" 	"ทำการสังหาร"
-		"quest_960_hud_var_desc" 	"ทำการสังหารด้วย: {s:weapon}"
-		"quest_961_hud_var_desc"	"ทำการสังหารด้วยปืนพก"
-		"quest_962_hud_var_desc"	"ทำการสังหารโดยไม่จ่ายเงินซื้ออะไรเลย<br> ก่อนจบแมตช์"
-		"quest_963_hud_var_desc"	"ทำการสังหารด้วย: {s:weapon}"
-		"quest_964_hud_var_desc"	"ทำการชนะรอบด้วยปืนพก"
-		"quest_965_hud_var_desc"    "ทำการสังหาร"
-		"quest_966_hud_var_desc" 	"เก็บเงิน"
-		"quest_967_hud_var_desc"	"ทำการสังหารด้วย: {s:weapon}"
-		"quest_968_hud_var_desc"    "ทำการสังหารด้วยปืนสไนเปอร์ไรเฟิล"
-		"quest_969_hud_var_desc"	"ทำการสังหารโดยไม่ใช้กล้องเล็งด้วย {s:weapon}"
-		"quest_970_hud_var_desc"	"ทำการชนะรอบ"
-		"quest_971_hud_var_desc"	"ทำการสังหาร"
-		"quest_972_hud_var_desc"    "ทำการสังหารโดยการยิงโดนศีรษะ<br> ก่อนจบแมตช์"
-		"quest_973_hud_var_desc" 	"ทำการสังหาร"
-		"quest_974_hud_var_desc" 	"ทำการสังหารโดยการยิงศีรษะ"
-		"quest_975_hud_var_desc"    "ทำการสังหารด้วยอาวุธ CT"
-		"quest_976_hud_var_desc" 	"ทำการชนะรอบ"
-		"quest_977_hud_var_desc"	"ทำการชนะรอบ"
-		"quest_978_hud_var_desc"	"ทำการสังหารด้วย: {s:weapon}"
-		"quest_979_hud_var_desc" 	"ทำการสังหารต่อเนื่อง 4 ครั้ง"
-        "quest_980_hud_var_desc" 	"ได้อันดับที่สี่หรือดีกว่านั้น"
-		"quest_981_hud_var_desc" 	"ทำการสังหารโดยการยิงศีรษะด้วย: {s:weapon}"		
-		"quest_982_hud_var_desc"	"ทำการสังหารโดยการยิงศีรษะด้วย {s:weapon} <br> ก่อนจบแมตช์"	
-		"quest_983_hud_var_desc" 	"ทำการสังหารโดยการยิงศีรษะ"
-		"quest_984_hud_var_desc"    "เก็บ MVP"
-		"quest_985_hud_var_desc" 	"ทำการสังหารด้วยปืนพกเริ่มต้น"
-		"quest_986_hud_var_desc" 	"ทำการสังหารด้วย: {s:weapon}"
-		"quest_987_hud_var_desc"	"ทำการสังหาร"
-		"quest_987_hud_var_desc_CT"	"ทำการสังหารด้วย: AK-47"
-		"quest_987_hud_var_desc_T"	"ทำการสังหารด้วย: M4A4 หรือ M4A1-S"
-		"quest_988_hud_var_desc" 	"ทำการสังหารด้วยมีด"
-		"quest_989_hud_var_desc"	"ทำความเสียหายเบ็ดเตล็ด"
-		"quest_990_hud_var_desc" 	"เก็บ 5 คน"
-		"quest_991_hud_var_desc_CT" "ทำการสังหารด้วย: Five-Seven"
-		"quest_991_hud_var_desc_T" 	"ทำการสังหารด้วย: Tec-9"
-		"quest_991_hud_var_desc" 	"ทำการสังหารด้วย: Tec-9 หรือ Five-Seven"
-		"quest_992_hud_var_desc" 	"ทำการสังหารด้วย: บรีชชาร์จ"
-		"quest_993_hud_var_desc" 	"ทำความเสียหายเบ็ดเตล็ด"
-		"quest_994_hud_var_desc" 	"ทำการสังหาร"
-		"quest_995_hud_var_desc" 	"ทำการชนะรอบ"
-		"quest_996_hud_var_desc"	"ทำการสังหาร"
-		"quest_997_hud_var_desc_CT"	"ทำการสังหารด้วย: FAMAS"
-		"quest_997_hud_var_desc_T"	"ทำการสังหารด้วย: Galil AR"
-		"quest_997_hud_var_desc"	"ทำการสังหารด้วย: Galil AR หรือ FAMAS"
-		"quest_998_hud_var_desc" 	"ทำการสังหารด้วย: {s:weapon}"
-		"quest_999_hud_var_desc"	"ทำการสังหารด้วย: {s:weapon}"
-		"quest_1000_hud_var_desc" 	"ทำลายโดรนศัตรู"
-		"quest_1001_hud_var_desc"   "เก็บ MVP<br>ก่อนจบแมตช์"
-		"quest_1002_hud_var_desc" 	"ทำการสังหารหลายคนในรอบ"
-		"quest_1003_hud_var_desc"   "ทำการสังหารด้วย: {s:weapon}"
-		"quest_1004_hud_var_desc"   "ทำการสังหารด้วย: {s:weapon}"
-		"quest_1005_hud_var_desc" 	"ทำการชนะรอบ"
-		"quest_1006_hud_var_desc" 	"ทำการสังหาร"
-		"quest_1007_hud_var_desc" 	"ทำลายประตูที่ล็อค"
-		"quest_1008_hud_var_desc_CT" 	"ทำการสังหารด้วย: M4A4 หรือ M4A1-S"
-		"quest_1008_hud_var_desc_T"  	"ทำการสังหารด้วย: AK-47"
-		"quest_1008_hud_var_desc" 	"ทำการสังหารด้วย: AK-47 หรือ M4A4"
-		"quest_1009_hud_var_desc"	"ทำการชนะรอบ"
-		"quest_1010_hud_var_desc"	"ทำการสังหารด้วย: {s:weapon}"
-		"quest_1011_hud_var_desc" 	"ทำการชนะรอบ 5 ครั้งในครึ่งแรก"
-		"quest_1012_hud_var_desc"	"เหยียบบนบัมพ์ไมน์"
-		"quest_1013_hud_var_desc" 	"ทำการสังหารด้วย: {s:weapon}"
-		"quest_1014_hud_var_desc"   "ทำการสังหารด้วย: {s:weapon}"
-		"quest_1015_hud_var_desc"   "ทำการสังหารขณะใช้เงินน้อยกว่า $2000"
-		"quest_1016_hud_var_desc"   "มีเงิน $3000"
-		"quest_1017_hud_var_desc" 	"ทำการชนะรอบ"
-		"quest_1018_hud_var_desc" 	"ทำการสังหาร"
-		"quest_1019_hud_var_desc" 	"ทำการสังหารด้วยปืนกลมือ"
-		"quest_1020_hud_var_desc" 	"ทำการสังหารด้วย: {s:weapon}"
-		"quest_1021_hud_var_desc" 	"ฆ่าไก่"
-		"quest_1022_hud_var_desc" 	"ระเบิดถังแดง"
-		"quest_1023_hud_var_desc" 	"ทำการชนะรอบ"
-		"quest_1024_hud_var_desc" 	"ทำลายบานกระจก"
-		"quest_1025_hud_var_desc" 	"ทำการชนะรอบ"
-		"quest_1027_hud_var_desc"	"พ่นกราฟฟิตี้<br> ในพื้นที่เริ่มต้นของศัตรู"
-		"quest_1028_hud_var_desc"	"ทำการสังหารจากตำแหน่งจุด<br> บานาน่าหรืออพาร์ตเมนท์"
-		"quest_1029_hud_var_desc"	"โยนระเบิดควัน"
-		"quest_1029_hud_var_desc_CT"	"โยนระเบิดควันที่:<br> อพาร์ตเมนท์หรือทางลาด T"
-		"quest_1029_hud_var_desc_T"	"โยนระเบิดควันที่:<br> จุดซุ่มยิงหรือบันได"
-		"quest_1098_hud_var_desc"               "ทำการชนะรอบ"
-		"quest_1032_hud_var_desc"               "ทำการชนะรอบ"
-		"quest_1033_hud_var_desc"               "ทำการสังหาร"
-		"quest_1034_hud_var_desc"               "สืบสวนเรื่องกลุ่มผู้ก่อการร้าย Phoenix"
-		"quest_1035_hud_var_desc"               "ทำการสังหารด้วย: AK-47, M4A4 หรือ M4A1-S"
-		"quest_1036_hud_var_desc"               "ทำการชนะรอบ"
-		"quest_1037_hud_var_desc"               "ทำการสังหาร"
-		"quest_1099_hud_var_desc"               "เก็บ MVP"
-		"quest_1038_hud_var_desc"               "ทำการชนะรอบ"
-		"quest_1039_hud_var_desc"               "ทำการสังหารด้วย: ปืนพกที่ต่างกัน"
-		"quest_1040_hud_var_desc"               "ทำการสังหารด้วย: ปืนพก"
-		"quest_1041_hud_var_desc"               "ทำการสังหารด้วย: Desert Eagle"
-		"quest_1042_hud_var_desc"               "ทำการชนะรอบ"
-		"quest_1043_hud_var_desc"               "ทำการสังหาร"
-		"quest_1044_hud_var_desc"               "ทำการสังหารในระยะไกลอย่างน้อย 15 เมตร"
-		"quest_1045_hud_var_desc"               "ทำการสังหารด้วย: ปืนสไนเปอร์ไรเฟิลใดก็ได้"
-		"quest_1046_hud_var_desc"               "ทำการสังหารโดยการยิงศีรษะ"
-		"quest_1047_hud_var_desc"               "ทำการสังหารด้วย: M249"
-		"quest_1048_hud_var_desc"               "สร้างความเสียหายด้วยระเบิด"
-		"quest_1049_hud_var_desc"               "เก็บเงิน"
-		"quest_1050_hud_var_desc"               "ทำการชนะรอบ"
-		"quest_1051_hud_var_desc"               "ทำการสังหาร"
-		"quest_1052_hud_var_desc"               "เลือกการ์ดศัตรู"
-		"quest_1053_hud_var_desc"               "โยนระเบิดควันใส่พื้น"
-		"quest_1053_hud_var_desc_T"             "โยนระเบิดควันใส่พื้นที่โรงรถหรือห้องเล็ก"
-		"quest_1053_hud_var_desc_CT"            "โยนระเบิดควันใส่พื้นที่ห้องควบคุมหรือกระท่อม"
-		"quest_1054_hud_var_desc"               "ทำการชนะรอบ"
-		"quest_1055_hud_var_desc"               "ทำการสังหาร"
-		"quest_1056_hud_var_desc"               "ทำการสังหารจากอุโมงค์หรือวัง"
-		"quest_1057_hud_var_desc"               "ทำการสังหาร"
-		"quest_1058_hud_var_desc"               "ทำการชนะรอบ"
-		"quest_1059_hud_var_desc"               "ทำการสังหาร"
-		"quest_1060_hud_var_desc"               "ทำการสังหารด้วย: {s:weapon}"
-		"quest_1061_hud_var_desc"               "ทำการสังหารด้วย: {s:weapon}"
-		"quest_1062_hud_var_desc"               "ทำการชนะรอบ"
-		"quest_1063_hud_var_desc"               "ทำการสังหาร"
-		"quest_1064_hud_var_desc"               "เลือกการ์ด MVP"
-		"quest_1065_hud_var_desc"               "พ่นกราฟฟิตี้"
-		"quest_1065_hud_var_desc_T"             "พ่นกราฟฟิตี้ที่จุดกลาง"
-		"quest_1065_hud_var_desc_CT"            "พ่นกราฟฟิตี้ที่ด้านบนฝั่ง T หรือด้านนอก"
-		"quest_1100_hud_var_desc"               "ทำการชนะรอบ"
-		"quest_1066_hud_var_desc"               "ทำการชนะรอบ"
-		"quest_1067_hud_var_desc"               "ยิงหัวด้วยปืน AUG"
-		"quest_1068_hud_var_desc"               "ทำให้ศัตรูตาพร่ามัวด้วยระเบิดแสง"
-		"quest_1069_hud_var_desc"               "พ่นกราฟฟิตี้"
-		"quest_1069_hud_var_desc_T"             "พ่นกราฟฟิตี้ที่ทางแคบหรืออุโมงค์ด้านบน"
-		"quest_1069_hud_var_desc_CT"            "พ่นกราฟฟิตี้ที่อุโมงค์ล่างหรือบันไดสั้น"
-		"quest_1101_hud_var_desc"               "ทำการชนะรอบ"
-		"quest_1070_hud_var_desc"               "ทำการชนะรอบ"
-		"quest_1071_hud_var_desc"               "ระยะใกล้กว่า 10 เมตร"
-		"quest_1072_hud_var_desc"               "ทำการสังหารในระยะใกล้กว่า 10 เมตร"
-		"quest_1073_hud_var_desc"               "ทำการสังหาร"
-		"quest_1074_hud_var_desc"               "ทำการชนะรอบ"
-		"quest_1075_hud_var_desc"               "ทำการสังหาร"
-		"quest_1076_hud_var_desc"               "ทำการสังหารโดยการยิงศีรษะ"
-		"quest_1077_hud_var_desc"               "ทำการสังหารด้วย: {s:weapon}"
-		"quest_1102_hud_var_desc"               "ทำการชนะรอบ"
-		"quest_1078_hud_var_desc"               "ทำการชนะรอบ"
-		"quest_1079_hud_var_desc"               "ทำการสังหารด้วย: {s:weapon}"
-		"quest_1080_hud_var_desc"               "ทำการสังหารไก่"
-		"quest_1081_hud_var_desc"               "ทำการสังหาร"
-		"quest_1082_hud_var_desc"               "ทำการชนะรอบ"
-		"quest_1083_hud_var_desc"               "ทำการสังหาร"
-		"quest_1084_hud_var_desc"               "ทำการสังหาร"
-		"quest_1085_hud_var_desc"               "สร้างความเสียหายด้วยระเบิด"
-		"quest_1085_v2_hud_var_desc"     	    "สร้างความเสียหายด้วยระเบิด"
-		"quest_1086_hud_var_desc"               "ทำการชนะรอบ"
-		"quest_1087_hud_var_desc"               "ทำการสังหาร"
-		"quest_1088_hud_var_desc"               "ทำการสังหารจากตำแหน่งที่กำหนดไว้"
-		"quest_1088_hud_var_desc_T"             "สังหารศัตรูในตำแหน่งจุดวางระเบิด A หรือ B"
-		"quest_1088_hud_var_desc_CT"            "ทำการสังหารจากจุดวางระเบิด A หรือ B"
-		"quest_1089_hud_var_desc"               "ทำการสังหารโดยใช้กล้องเล็ง"
-		"quest_1089_v2_hud_var_desc"               "ทำการสังหารโดยใช้กล้องเล็ง"
-		"quest_1090_hud_var_desc"               "ทำการชนะรอบ"
-		"quest_1091_hud_var_desc"               "ทำการสังหาร"
-		"quest_1092_hud_var_desc"               "ทำคะแนนด้วยอาวุธโบนัส"
-		"quest_1092_v2_hud_var_desc"            "ทำคะแนนด้วยอาวุธโบนัส"
-		"quest_1093_hud_var_desc"               "ใช้จ่ายเงิน"
-		"quest_1094_hud_var_desc"               "ทำการชนะรอบ"
-		"quest_1095_hud_var_desc"               "ทำการสังหาร"
-		"quest_1095_v2_hud_var_desc"            "ทำการสังหารด้วย UMP-45"
-		"quest_1096_hud_var_desc"               "ทำการชนะรอบ"
-		"quest_1097_hud_var_desc"               "ทำภารกิจให้เสร็จสมบูรณ์"
-		"quest_1097_v2_hud_var_desc"            "ขุดคุ้ยข้อมูลเชิงลึกที่โรงงานผสมปูนซีเมนต์ของฟีนิกซ์"
-		"quest_1103_hud_var_desc"               "ทำศัตรูตาพร่ามัวด้วยระเบิดแสง"
-
-
-
-
-/////////////////////////////////////////////////////////////////
-
-
-
-// win quests
-
-		"Quest_Win_a_Mode"										"ลบล้างภัยคุกคาม: <b>%gamemode%</b>"
-		"Quest_Win_a_Mode_desc"								"ชนะหนึ่งแมตช์ของ <b>%gamemode%</b>"
-
-		"Quest_Win_a_Mapgroup"								"จบเกม: <b>%gamemode%, %mapgroup%</b>"
-		"Quest_Win_a_Mapgroup_desc"						"เก็บคะแนน %actions% โหมด <b>%gamemode%</b> ในแมตช์ของ <b>%mapgroup%</b>"
-
-		"Quest_Win_a_Map"											"จบเกม: <b>%gamemode%, %map%</b>"
-		"Quest_Win_a_Map_desc"								"เก็บคะแนน %actions% โหมด <b>%gamemode%</b> ในแมตช์ <b>%map%</b>"
-
-		"Quest_Win_Rounds_Map"								"การสู้รบ: <b>%gamemode%, %mapgroup%</b>"
-		"Quest_Win_Rounds_Map_desc"						"เก็บคะแนน %actions% โหมด <b>%gamemode%</b> ในแมตช์ <b>%mapgroup%</b>"
-		"Quest_Win_Rounds_Map_Short"						"การชนะรอบ"
-
-// equipment quests
-
-		"Quest_Weapon_Mode"										"ความชำนาญด้านอาวุธ: <b>%gamemode%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Mode_desc"							"ใช้ <b>%weapon%</b> เก็บคะแนน %actions%%optional_target% ในแมตช์ <b>%gamemode%</b>"
-		
-		"Quest_Weapon_Mode_single_desc"				"ใช้ <b>%weapon%</b> สังหารในแมตช์ <b>%gamemode%</b>"
-
-// equipment + mapgroup quests
-
-		"Quest_Weapon_Mapgroup"							"ความชำนาญอุปกรณ์: <b>%mapgroup%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Mapgroup_desc"					"ใช้ <b>%weapon%</b> เก็บคะแนน %actions%%optional_target% ในแมตช์ <b>%gamemode%: %mapgroup%</b>"
-		"Quest_WeaponDamage_Mapgroup_desc"					"ใช้ <b>%weapon%</b> %actions%%optional_target% ศัตรูในแมตช์ <b>%gamemode%: %mapgroup%</b>"
-
-	"Quest_Weapon_Within_3_Mapgroup"						"สำเร็จการศึกษา: <b>%mapgroup%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Within_3_Mapgroup_desc"				"ใช้ <b>%weapon%</b> เก็บคะแนน %actions%%optional_target%<i> ภายในการยิง 3 นัดแรกของรอบ</i> ในแมตช์ <b>%gamemode%: %mapgroup%</b>"
-
-	"Quest_Weapon_Map"									"ความชำนาญอุปกรณ์: <b>%map%</b>, <b>%weapon%</b>"
-		"Quest_Weapon_Map_desc"								"ใช้ <b>%weapon%</b> เก็บคะแนน %actions%%optional_target% ในแมตช์ <b>%gamemode%: %map%</b>"
-		"Quest_Weapon_Map_Team_desc"		"เล่นเป็น <b>%team%</b> ใช้ <b>%weapon%</b> เก็บคะแนน %actions%%optional_target% ในแมตช์ <b>%gamemode%: %map%</b>"		
-		"Quest_Weapon_Mapgroup_Team_desc"		"เล่นเป็น <b>%team%</b> ใช้ <b>%weapon%</b> เก็บคะแนน %actions%%optional_target% ในแมตช์ <b>%gamemode%: %mapgroup%</b>"		
-
-		"Quest_WepUpgrade_Mapgroup"					"อัปเกรดอาวุธ: <b>%mapgroup%</b>"
-
-	"Quest_Unique_Weapon_Mapgroup"							"ผู้เชี่ยวชาญอาวุธ: <b>%mapgroup%</b>"
-		"Quest_Unique_Weapon_Mapgroup_desc"					"ภายในแมตช์ <b>%gamemode%: %mapgroup%</b> รับความคืบหน้าภารกิจจากแต่ละ %action% <i>สำเร็จด้วยอาวุธที่ไม่ซ้ำกัน</i>"
-		"Quest_Unique_Weapon_Mapgroup_Team_desc"					"เล่นเป็น <b>%team%</b> ในแมตช์ <b>%gamemode%: %mapgroup%</b> รับความคืบหน้าภารกิจในแต่ละ %action% <i>สำเร็จด้วยอาวุธที่ไม่ซ้ำกัน</i>"
-
-		"Quest_Defend_Bomb_Mapgroup_desc"					"เก็บคะแนน %actions% <i>หลังระเบิดได้ถูกวางแล้ว</i> ในแมตช์ <b>%gamemode%: %mapgroup%</b>"
-
-// Hostage quests
-
-	 "Quest_Rescue_Map"								"ภารกิจช่วยตัวประกัน: <b>%map%</b>"
-	 "Quest_Rescue_Map_Desc"						"เก็บคะแนน %actions% ในแมตช์ <b>%gamemode%: %map%</b>"
-
-// Plant bomb quests
-
-	 "Quest_PlantBomb_Mapgroup"									"ผู้เชี่ยวชาญวัตถุระเบิด: <b>%mapgroup%</b>"
-	 "Quest_PlantBomb_Mapgroup_Desc"						"ดำเนินการ %actions% ในแมตช์ <b>%gamemode%: %mapgroup%</b>"
-
-
-// Assassination
-
-	 "Quest_Assassination"									"ลอบสังหาร %victim_team%: <b>%target%</b>"
-	 "Quest_Assassination_desc"							"ค้นหาและสังหาร %victim_team% <b>%target%</b> ในแมตช์ <b>%gamemode%: %map%</b>"
-
-	 "quest_target_turner"									"Turner"
-	 "quest_target_jackson"									"Jackson"
-	 "quest_target_chapel"									"Chapel"	 
-	 "quest_target_sergei"									"Sergei"	 
-
-	 "quest_assassination_you_are_target"					"คุณเป็นเป้าหมายลอบสังหาร\nคุณคือ %s1"
-	 "quest_assassination_target_on_server"					"มีผู้เล่นกำลังพยายามลอบสังหารเป้าหมาย: %s1"
-	 "quest_assassination_target_on_server_has_quest"		"คุณกำลังได้รับภารกิจให้ลอบสังหาร: %s1"
-	 "quest_assassination_target_killed"					"%s1 ถูกลอบสังหารแล้ว!"
-	 "quest_assassination_no_longer_target"					"คุณไม่ได้เป็น %s1 อีกต่อไป" 
-
-// Income
-	 "Quest_Income_Mapgroup"								"รายได้รวม: <b>$1,000,000</b>"
-	 "Quest_Income_Mapgroup_desc"						"ได้รับเงินรวมทั้งหมด $1,000,000 ใน <b>%gamemode%: %mapgroup%</b> แมตช์"
-	 "Quest_Income_Mapgroup_Team_desc"			"เล่นเป็น <b>%team%</b> รับเงินรวมทั้งหมด $1,000,000 ในแมตช์ <b>%gamemode%: %mapgroup%</b>"
-
-	 "Quest_Spend_Mapgroup_Team_desc"			"เล่นเป็น <b>%team%</b> ใช้จ่ายเงินรวมทั้งหมด $1,000,000 ในแมตช์ <b>%gamemode%: %mapgroup%</b>"
-
-
-//	deathmatch bonus points
-
-		"Quest_DMBonusPoints_Mapgroup"				"เจ้าแห่งอาวุธ: <b>%mapgroup%</b>"
-		"Quest_DMBonusPoints_Mapgroup_desc"		"เก็บคะแนนโดยการใช้อาวุธพิเศษในแมตช์ <b>เดธแมตช์: %mapgroup%</b>"
-
-		"Quest_DMBonusPoints_Map"							"เจ้าแห่งอาวุธ: <b>%map%</b>"
-		"Quest_DMBonusPoints_Map_desc"				"เก็บคะแนนโดยการใช้อาวุธพิเศษในแมตช์ <b>เดธแมตช์: %map%</b>"
-
-// play quests
-
-		"Quest_Kills_Mapgroup"							"ภัยคุกคามการจารกรรม: <b>%gamemode%</b>, <b>%mapgroup%</b>"
-		"Quest_Kills_Mapgroup_desc"					"เก็บคะแนน %actions%%optional_target% ในแมตช์โหมด <b>%gamemode%: %mapgroup%</b>"
-		"Quest_Kills_Mapgroup_cond_desc"		"เก็บคะแนน %actions%%optional_target%—<i>%condition%</i>—ในแมตช์โหมด <b>%gamemode%: %mapgroup%</b>"
-		"Quest_Kills_Mapgroup_Team_desc"		"เมื่อเล่นเป็น <b>%team%</b> เก็บคะแนน %actions%%optional_target% ในแมตช์โหมด <b>%gamemode%: %mapgroup%</b>"		
-
-		"Quest_Kills_Mapgroup_Victim_Team_desc"		"เมื่อเล่นเป็น <b>%team%</b> เก็บคะแนน %actions%%victim_team% ในแมตช์โหมด <b>%gamemode%: %mapgroup%</b>"
-
-		"Quest_Flashbang_Mapgroup_Team_desc"		"เล่นเป็น <b>%team%</b> เก็บคะแนน %actions%%optional_target% ในแมตช์ <b>%gamemode%: %mapgroup%</b>"		
-
-
-		"Quest_Burn_Mapgroup_desc"					"ใช้ <i>การเผา</i> ทำ %actions% ศัตรูในแมตช์ <b>%gamemode%: %mapgroup%</b>"
-
-		"Quest_Headshots_Mapgroup"							"ยิงศีรษะ: <b>%gamemode%</b>, <b>%mapgroup%</b>"
-		"Quest_Headshots_Mapgroup_desc"					"เก็บคะแนน %actions% ยิงศีรษะในแมตช์ <b>%gamemode%: %mapgroup%</b>"
-
-		"Quest_Kills_Map"										"ภัยคุกคามการจารกรรม: <b>%gamemode%</b>, <b>%map%</b>"
-		"Quest_Kills_Map_desc"							"เก็บคะแนน %actions%%optional_target% ในแมตช์โหมด <b>%gamemode%: %map%</b>"
-
-		"Quest_Kills_Mode"								"<b>%gamemode%</b> ภัยคุกคามการจารกรรม"
-		"Quest_Kills_Mode_desc"						"เก็บคะแนน %actions%%optional_target% ในแมตช์โหมด <b>%gamemode%</b>"
-
-// chicken quests
-
-	"Quest_Chicken_Kills_Mapgroup"				"Supply Run: <b>%gamemode%</b>, <b>%mapgroup%</b>"
-	"Quest_Chicken_Kills_Map"							"Supply Run: <b>%gamemode%</b>, <b>%map%</b>"
-	"Quest_Chicken_Kills"						"Supply Run"
-
-// generic string tokens
-
-	"quest_team_ct"										"หน่วยต่อต้านผู้ก่อการร้าย"
-	"quest_team_terrorist"								"ผู้ก่อการร้าย"
-	"quest_complete_the_match"							"เล่นแมตช์ให้จบเพื่อทำภารกิจของคุณให้เสร็จสมบูรณ์"
-	"quest_complete_the_match_uncommitted"				"<img src='file://{images}/icons/ui/info.svg' class=''/>จบแมตช์เพื่อบันทึกความคืบหน้าภารกิจของคุณ"
-
-// Coop quests
-
-	"Quest_Guardian_Bomb"									"การท้าทายการ์เดียนแบบร่วมมือกัน: <b>%map%</b> <b>%weapon%</b>"
-	"Quest_Guardian_Bomb_Desc"								"การท้าทายการ์เดียนแบบร่วมมือกัน : เล่นเป็น <b>%team%</b> กับผู้ร่วมมือ และป้องกันจุดวางระเบิดจากศัตรูบนแผนที่ <b>%map%</b><br><br>เก็บคะแนน <b>%action%</b> จากการสังหารศัตรู <b>%kills%</b> คน ด้วย <b>%weapon%</b> <b>%extradetails%</b>"
-	"Quest_Guardian_Desc_op08"								"การท้าทายการ์เดียนแบบร่วมมือกัน: เล่นเป็น <b>%team%</b> กับผู้ร่วมมือ และป้องกันจุดวางระเบิดจากศัตรูบนแผนที่ <b>%map%</b><br><br>เก็บคะแนน <b>%action%</b> จากการ%killtype% <b>%kills%</b> ครั้ง ด้วย <b>%weapon%</b> <b>%extradetails%</b>%presence%"
-
-	"Quest_Guardian_Desc_op09"								"{s:commandverb}{s:killtype} {s:kills} ครั้งด้วย {s:weapon} ในโหมด <b>การ์เดียน: {s:location}</b>"
-	"Quest_CoopMission_Desc_op09"							"<b>จู่โจมแบบร่วมมือกัน</b>: ทำเป้าหมายภารกิจให้เสร็จสมบูรณ์พร้อมคู่หูใน <b>{s:location}</b>"
-	"Quest_Guardian_Desc_op09_extra_equip_1_var_desc"		"{s:commandverb}{s:killtype} {s:kills} ครั้งด้วย {s:weapon} ในโหมด <b>การ์เดียน: {s:location}</b> ผู้เล่นจะเริ่มต้นพร้อม <b>{s:extraequip0}</b>"
-	"Quest_Guardian_Desc_op09_extra_equip_2_var_desc"		"{s:commandverb}{s:killtype} {s:kills} ครั้งด้วย {s:weapon} ในโหมด <b>การ์เดียน: {s:location}</b> ผู้เล่นจะเริ่มต้นพร้อม <b>{s:extraequip0}</b> และ <b>{s:extraequip1}</b>"
-
-	"Quest_Guardian_Desc_op10"								"{s:commandverb}{s:killtype} {s:kills} ครั้งด้วย {s:weapon} ในโหมด <b>การ์เดียน: {s:location}</b>"
-	"Quest_CoopMission_Desc_op10"							"<b>จู่โจมแบบร่วมมือกัน</b>: ทำเป้าหมายภารกิจให้เสร็จสมบูรณ์พร้อมคู่หูใน <b>{s:location}</b>"
-	"Quest_Guardian_Desc_op10_extra_equip_1_var_desc"		"{s:commandverb}{s:killtype} {s:kills} ครั้งด้วย {s:weapon} ในโหมด <b>การ์เดียน: {s:location}</b> ผู้เล่นจะเริ่มต้นพร้อม <b>{s:extraequip0}</b>"
-	"Quest_Guardian_Desc_op10_extra_equip_2_var_desc"		"{s:commandverb}{s:killtype} {s:kills} ครั้งด้วย {s:weapon} ในโหมด <b>การ์เดียน: {s:location}</b> ผู้เล่นจะเริ่มต้นพร้อม <b>{s:extraequip0}</b> และ <b>{s:extraequip1}</b>"
-
-	"Quest_Coop_Desc_Rescue"								"จู่โจมแบบร่วมมือกัน: เล่นเป็น <b>%team%</b> ร่วมกับคู่หูและ <b>ช่วยเหลือตัวประกัน</b> จาก <b>%map%</b><br><br><b>%extradetails%</b>"
-	"Quest_Coop_Desc_Recon"									"จู่โจมแบบร่วมมือกัน: เล่นเป็น <b>%team%</b> ร่วมกับคู่หูและ <b>รวบรวมเอกสารลับ</b> จาก <b>%map%</b><br><br><b>%extradetails%</b>"
- 	"Quest_Coop_Desc_Bomb"									"จู่โจมแบบร่วมมือกัน: เล่นเป็น <b>%team%</b> ร่วมกับคู่หูและ <b>ระเบิด</b> <b>%map%</b><br><br><b>%extradetails%</b>"
- 
-	"Quest_op09_coopmission"								"เก็บตัวอย่างของไวรัสในโซนอันตรายจากห้องวิจัยของฟีนิกซ์"
-	"Quest_op10_coopmission"								"กลุ่ม Phoenix ได้ปรากฏตัวที่ฟาร์มเก่าแห่งหนึ่ง ตรวจสอบพื้นที่และสืบมาว่าพวกมันกำลังวางแผนอะไรอยู่"
-
-	"Quest_Guardian_Hostage"								"การท้าทายการ์เดียนแบบร่วมมือกัน: <b>%map%</b> <b>%weapon%</b>"
-	"Quest_Guardian_Hostage_Desc"							"การท้าทายการ์เดียนแบบร่วมมือกัน: เล่นเป็น <b>%team%</b> กับผู้ร่วมมือ และป้องกันไม่ให้หน่วยต่อต้านผู้ก่อการร้ายช่วยเหลือตัวประกันแผนที่ <b>%map%</b><br><br>เก็บคะแนน <b>%action%</b> จากการสังหารศัตรู <b>%kills%</b> คน ด้วย <b>%weapon%</b> <b>%extradetails%</b>"
-	 
-	"quest_guardian_kills_5"								"5"
-	"quest_guardian_kills_10"								"10"
-	"quest_guardian_kills_15"								"15"
-	"quest_guardian_kills_20"								"20"
-	"quest_guardian_kills_25"								"25"
-	"quest_guardian_kills_30"								"30"
-	"quest_guardian_kills_35"								"35"
-	"quest_guardian_kills_40"								"40"
-	"quest_guardian_kills_45"								"45"
-	"quest_guardian_kills_50"								"50"
-
-// Guardian kill types
-	"quest_killtype_normal"									"สังหาร"
-	"quest_killtype_headshot"								"สังหารโดย <b>ยิงศีรษะ</b>"
-	"quest_killtype_blind"									"สังหารขณะ<b>ตาพร่ามัว</b>"
-	"quest_killtype_unscoped"								"สังหารโดย <b>ไม่ใช้กล้องเล็ง</b>"
-
-	"quest_enemy_weapon"									"อาวุธของศัตรู"
-	"quest_weapon_CZ75a_or_enemy_weapon"					"CZ75-Auto หรืออาวุธใดก็ได้ของศัตรู"
-	"quest_weapon_sniperrifle"								"ปืนสไนเปอร์ไรเฟิลใดก็ได้"
-	"quest_weapon_any_rifle"								"ปืนไรเฟิลใดก็ได้"
-	"quest_weapon_m4"										"ปืนไรเฟิล M4 ใดก็ได้"
-	"quest_weapon_starter_ct"								"ปืนพก CT เริ่มต้นใดก็ได้"
-	"quest_weapon_ct"										"อาวุธหน่วยต่อต้านผู้ก่อการร้าย"
-	"quest_weapon_t"										"อาวุธของผู้ก่อการร้าย"
-	"quest_weapon_any_pistol"								"ปืนพกใดก็ได้"
-	"quest_weapon_any_weapon"								"อาวุธใดก็ได้"
-	"quest_weapon_any_shotgun"								"ปืนลูกซองใดก็ได้"
-	"quest_weapon_any_smg"									"ปืนกลมือใดก็ได้"
-	"quest_weapon_ssg08_or_mag7"							"SSG 08 หรือ MAG-7"
-	"quest_weapon_awp_or_p90"								"AWP หรือ P90"
-	"quest_weapon_unique_pistol"							"ปืนพกที่ต่างกัน"
-	"quest_presence_heavy"									"<br><br><b>ที่ปรึกษา</b>: คาดว่ามี <i>เกราะหนัก</i> ต่อต้านในพื้นที่!"
-
-	"quest_guardian_empty"		" "
-	"quest_guardian_cantbuy"		"<i>ไม่สามารถซื้อบนภารกิจนี้ได้</i>"
-	"quest_guardian_maxmoneylimit"		"<i>ภารกิจนี้ถูกจำกัดเงินสูงสุด</i>"
-	"quest_guardian_killrewardsonly" 	"<i>สามารถรับเงินได้จากรางวัลการฆ่าเท่านั้น</i>"
-	"quest_guardian_moneyreset" 	"<i>เงินจะถูกรีเซ็ตหลังจากภารกิจล้มเหลว</i>"
-	"quest_guardian_heavyarmor" 	"<i>ชุดหน่วยจู่โจมอาวุธหนักสามารถใช้งานได้</i>"
-	"quest_guardian_noarmor" 	"<i>เกราะไม่สามารถใช้งานได้</i>"
-	"quest_guardian_heavyarmorresetmoney" 	"<i>ชุดหน่วยจู่โจมอาวุธหนักสามารถใช้งานได้ และเงินจะถูกรีเซ็ตหลังจากภารกิจล้มเหลว</i>"
-	 //"quest_guardian_maxmoney_16000"		"$16000"
-	 //"quest_guardian_maxmoney_10000"		"$10000"
-	 //"quest_guardian_maxmoney_6000"			"$6000"
-	 //"quest_guardian_maxmoney_3200"			"$3200"
-	 //"quest_guardian_maxmoney_0"			"$0"
-
-	// "Get [headshot] kills: [unscoped] [AWP]"
-	// Double spaces will automatically be removed.
-	"guardian_mission_type_kills"				"ทำการสังหารด้วย: {s:weapon}"
-	"guardian_mission_type_headshots"			"ทำการยิงศีรษะด้วย: {s:weapon}"
-	"guardian_mission_type_unscoped"			"ทำการสังหารโดยไม่ใช้กล้องเล็งด้วย: {s:weapon}"
-	"guardian_mission_type_enemy_weapon"		"ทำการสังหารด้วย {s:weapon} ของศัตรู"
-	"guardian_mission_type_enemy_airborne"		"ทำการสังหารกลางอากาศด้วย: {s:weapon}"
-	"guardian_mission_type_flashbang"			"สังหารศัตรูที่ตาพร่ามัว"
-	"guardian_mission_type_ct_weapons"			"ทำการสังหารด้วยอาวุธของหน่วยต่อต้านผู้ก่อการร้าย"
-
-//	bonus tokens
-
-	  "quest_bonus_headshot"							"หากยิงศีรษะด้วย"
-	  "quest_bonus_zoomed"								"ขณะใช้กล้องเล็ง"
-  	  "quest_bonus_not_zoomed"							"ขณะไม่ใช้กล้องเล็ง"
-	  "quest_bonus_chickens"							"เมื่อเป้าหมายเป็นไก่"
-
-	  "quest_bonus_taser"								"เมื่อใช้ Zeus x27"
-	  "quest_bonus_bomb_planted"						"เมื่อระเบิดถูกวางแล้ว"
-	  "quest_bonus_melee"								"เมื่อใช้อาวุธระยะประชิด"	  
-
-
-
-	  "quest_bonus_killstreak_2"						"เมื่ออยูในการสังหารต่อเนื่อง 2 ครั้งติดต่อกันหรือมากกว่า"
-	  "quest_bonus_killstreak_3"						"เมื่อสังหารต่อเนื่อง 3 คนขึ้นไป"
-
-	  "quest_bonus_chickenstreak_2"						"เมื่อมีการสังหารไก่ต่อเนื่อง 2 ตัวขึ้นไป"
-	  "quest_bonus_chickenstreak_3"						"เมื่อมีการสังหารไก่ต่อเนื่อง 3 ตัวขึ้นไป"
-
-	  "quest_bonus_borrowed_gun"						"เมื่อใช้อาวุธปืนของคนอื่น"
-	  "quest_bonus_borrowed_gun_enemy"					"เมื่อใช้อาวุธปืนของฝ่ายศัตรู"
-	  "quest_bonus_borrowed_gun_own"					"เมื่อใช้อาวุธปืนของเป้าหมาย"
-		"quest_bonus_victim_rescuing"					"เมื่อเป้าหมายกำลังช่วยเหลือตัวประกัน"
-		
-	  "quest_bonus_bulletcount_1"						"ทำสำเร็จได้เมื่อคุณได้ยิงเป็นคนแรกของรอบ"
-		
-	  "quest_bonus_totalrounds_2"						"ถ้าทำได้ใน 2 รอบแรก"
-	  "quest_bonus_totalrounds_3"						"ถ้าทำได้ใน 3 รอบแรก"
-	  "quest_bonus_totalrounds_4"						"ถ้าทำได้ใน 4 รอบแรก"
-	  "quest_bonus_totalrounds_5"						"ถ้าทำได้ใน 5 รอบแรก"
-
-  	  "quest_bonus_weapon_elite"						"เมื่อใช้ Dual Berettas"
-	  "quest_bonus_weapon_ssg08"						"เมื่อใช้ SSG08"
-	  "quest_bonus_weapon_revolver"						"เมื่อใช้ R8 Revolver"
-	  "quest_bonus_weapon_glock_hkp2000_usp_silencer"	"เมื่อใช้ P2000, USP-S หรือ Glock-18"
-
-		"quest_bonus_set_dust"							"เมื่ออาวุธมาจากชุดสะสม Dust"
-		"quest_bonus_set_aztec"							"เมื่ออาวุธมาจากชุดสะสม Aztec"
-		"quest_bonus_set_vertigo"						"เมื่ออาวุธมาจากชุดสะสม Vertigo"
-		"quest_bonus_set_inferno"						"เมื่ออาวุธมาจากชุดสะสม Inferno"
-		"quest_bonus_set_militia"						"เมื่ออาวุธมาจากชุดสะสม Militia"
-		"quest_bonus_set_nuke"							"เมื่ออาวุธมาจากชุดสะสม Nuke"
-		"quest_bonus_set_office"						"เมื่ออาวุธมาจากชุดสะสม Office"
-		"quest_bonus_set_assault"						"เมื่ออาวุธมาจากชุดสะสม Assault"
-		"quest_bonus_set_dust_2"						"เมื่ออาวุธมาจากชุดสะสม Dust 2"
-		"quest_bonus_set_train"							"เมื่ออาวุธมาจากชุดสะสม Train"
-		"quest_bonus_set_mirage"						"เมื่ออาวุธมาจากชุดสะสม Mirage"
-		"quest_bonus_set_italy"							"เมื่ออาวุธมาจากชุดสะสม Italy"
-		"quest_bonus_set_lake"							"เมื่ออาวุธมาจากชุดสะสม Lake"
-		"quest_bonus_set_safehouse"						"เมื่ออาวุธมาจากชุดสะสม Safehouse"
-		"quest_bonus_set_esports"						"เมื่ออาวุธมาจากชุดสะสม eSports 2013"
-		"quest_bonus_set_weapons_i"						"เมื่ออาวุธมาจากชุดสะสม Arms Deal"
-		"quest_bonus_set_bravo_i"						"เมื่ออาวุธมาจากชุดสะสม Bravo"
-		"quest_bonus_set_bravo_ii"						"เมื่ออาวุธมาจากชุดสะสม Alpha"
-		"quest_bonus_set_weapons_ii"					"เมื่ออาวุธมาจากชุดสะสม Arms Deal 2"
-		"quest_bonus_set_esports_ii"					"เมื่ออาวุธมาจากชุดสะสม eSports 2013 Winter"
-		"quest_bonus_set_esports_2014_summer"			"เมื่ออาวุธมาจากชุดสะสม eSports 2014 Summer"
-		"quest_bonus_set_community_1"					"เมื่ออาวุธมาจากชุดสะสม Winter Offensive"
-		"quest_bonus_set_weapons_iii"					"เมื่ออาวุธมาจากชุดสะสม Arms Deal 3"
-		"quest_bonus_set_community_2"					"เมื่ออาวุธมาจากชุดสะสม Phoenix"
-		"quest_bonus_set_community_3"					"เมื่ออาวุธมาจากชุดสะสม Huntsman"
-		"quest_bonus_set_community_4"					"เมื่ออาวุธมาจากชุดสะสม Breakout"
-		"quest_bonus_set_community_5"					"เมื่ออาวุธมาจากชุดสะสม Vanguard"
-		"quest_bonus_set_community_6"					"เมื่ออาวุธมาจากชุดสะสม Chroma"
-		"quest_bonus_set_community_7"					"เมื่ออาวุธมาจากชุดสะสม Chroma 2"
-		"quest_bonus_set_community_11"					"เมื่ออาวุธมาจากชุดสะสม Wildfire"
-		"quest_bonus_set_bank"							"เมื่ออาวุธมาจากชุดสะสม Bank"
-		"quest_bonus_set_baggage"						"เมื่ออาวุธมาจากชุดสะสม Baggage"
-		"quest_bonus_set_cobblestone"					"เมื่ออาวุธมาจากชุดสะสม Cobblestone"
-		"quest_bonus_set_overpass"						"เมื่ออาวุธมาจากชุดสะสม Overpass"
-		"quest_bonus_set_cache"							"เมื่ออาวุธมาจากชุดสะสม Cache"
-		"quest_bonus_set_kimono"						"เมื่ออาวุธมาจากชุดสะสม Rising Sun"
-
-		"quest_bonus_cs_assault"						"เมื่อแผนที่เป็น Assault"
-		"quest_bonus_cs_italy"							"เมื่อแผนที่เป็น Italy"
-		"quest_bonus_cs_militia"						"เมื่อแผนที่เป็น Militia"
-		"quest_bonus_cs_office"							"เมื่อแผนที่เป็น Office"
-		"quest_bonus_de_aztec"							"เมื่อแผนที่เป็น Aztec"
-		"quest_bonus_de_dust"							"เมื่อแผนที่เป็น Dust"
-		"quest_bonus_de_dust2"							"เมื่อแผนที่เป็น Dust II"
-		"quest_bonus_de_mirage"							"เมื่อแผนที่เป็น Mirage"
-		"quest_bonus_de_overpass"						"เมื่อแผนที่เป็น Overpass"
-		"quest_bonus_de_cbble"							"เมื่อแผนที่เป็น Cobblestone"
-		"quest_bonus_de_train"							"เมื่อแผนที่เป็น Train"		
-		"quest_bonus_de_inferno"						"เมื่อแผนที่เป็น Inferno"
-		"quest_bonus_de_nuke"							"เมื่อแผนที่เป็น Nuke"
-		"quest_bonus_de_shorttrain"						"เมื่อแผนที่เป็น Shorttrain"
-		"quest_bonus_de_shortdust"						"เมื่อแผนที่เป็น Shortdust"
-		"quest_bonus_de_vertigo"						"เมื่อแผนที่เป็น Vertigo"
-		"quest_bonus_de_balkan"							"เมื่อแผนที่เป็น Balkan"
-		"quest_bonus_ar_baggage"						"เมื่อแผนที่เป็น Baggage"
-		"quest_bonus_ar_monastery"						"เมื่อแผนที่เป็น Monastery"
-		"quest_bonus_ar_shoots"							"เมื่อแผนที่เป็น Shoots"
-		"quest_bonus_de_embassy"						"เมื่อแผนที่เป็น Embassy"
-		"quest_bonus_de_bank"							"เมื่อแผนที่เป็น Bank"
-		"quest_bonus_de_lake"							"เมื่อแผนที่เป็น Lake"
-		"quest_bonus_de_depot"							"เมื่อแผนที่เป็น Depot"
-		"quest_bonus_de_safehouse"						"เมื่อแผนที่เป็น Safehouse"
-		"quest_bonus_de_sugarcane"						"เมื่อแผนที่เป็น Sugarcane"
-		"quest_bonus_de_stmarc"							"เมื่อแผนที่เป็น St. Marc"
-		"quest_bonus_cs_museum"							"เมื่อแผนที่เป็น Museum"
-		"quest_bonus_cs_thunder"						"เมื่อแผนที่เป็น Thunder"
-		"quest_bonus_de_favela"							"เมื่อแผนที่เป็น Favela"
-		"quest_bonus_cs_downtown"						"เมื่อแผนที่เป็น Downtown"
-		"quest_bonus_de_seaside"						"เมื่อแผนที่เป็น Seaside"
-		"quest_bonus_de_library"						"เมื่อแผนที่เป็น Library"
-		"quest_bonus_cs_motel"							"เมื่อแผนที่เป็น Motel"
-		"quest_bonus_de_cache"							"เมื่อแผนที่เป็น Cache"
-		"quest_bonus_de_ali"							"เมื่อแผนที่เป็น Ali"
-		"quest_bonus_de_ruins"							"เมื่อแผนที่เป็น Ruins"
-		"quest_bonus_de_ruby"							"เมื่อแผนที่คือ Ruby"
-		"quest_bonus_de_chinatown"						"เมื่อแผนที่เป็น Chinatown"
-		"quest_bonus_de_gwalior"						"เมื่อแผนที่เป็น Gwalior"
-		"quest_bonus_cs_agency"							"เมื่อแผนที่เป็น Agency"
-		"quest_bonus_cs_siege"							"เมื่อแผนที่เป็น Siege"
-		"quest_bonus_de_castle"							"เมื่อแผนที่เป็น Castle"
-		"quest_bonus_de_overgrown"						"เมื่อแผนที่เป็น Overgrown"
-		"quest_bonus_de_blackgold"						"เมื่อแผนที่เป็น Black Gold"
-		"quest_bonus_cs_rush"							"เมื่อแผนที่เป็น Rush"
-		"quest_bonus_de_mist"							"เมื่อแผนที่เป็น Mist"
-		"quest_bonus_cs_insertion"						"เมื่อแผนที่เป็น Insertion"
-
-		"quest_bonus_cs_workout"						"เมื่อแผนที่เป็น Workout"
-		"quest_bonus_cs_backalley"						"เมื่อแผนที่เป็น Back Alley"
-		"quest_bonus_de_marquis"						"เมื่อแผนที่เป็น Marquis"
-		"quest_bonus_de_facade"							"เมื่อแผนที่เป็น Facade"
-		"quest_bonus_de_season"							"เมื่อแผนที่เป็น Season"
-		"quest_bonus_de_bazaar"							"เมื่อแผนที่เป็น Bazaar"
-		"quest_bonus_de_santorini"						"เมื่อแผนที่เป็น Santorini"
-
-		"quest_bonus_de_subzero"						"เมื่อแผนที่เป็น Subzero"
-		"quest_bonus_de_biome"							"เมื่อแผนที่เป็น Biome"
-
-
-
-
-// OperationalPoints
-
-		"Quest_OperationalPoints_Template"				"รางวัลของการท้าทาย: %s1"
-
-		"Quest_OperationalPoints_1"					"★"
-		"Quest_OperationalPoints_2"					"★★"
-		"Quest_OperationalPoints_3"					"<font color=\"#ff0000\">★★★★</font>"
-
-// Hud Message
-
-	 "Quest_ProgressMadeMessage1"								" คะแนนภารกิจจะถูกรวมเพิ่มเมื่อแมตช์สิ้นสุด: +%s1"
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -9266,7 +8026,6 @@
 		"StickerKit_enfu_bombsquad"                       "Bombsquad"   
 		"StickerKit_desc_enfu_bombsquad"                  " "   
 		"StickerKit_enfu_bombsquad_foil"                  "Bombsquad (ฟอยล์)"   
-		"StickerKit_desc_bombsquad_foil"                  " "   
 		"StickerKit_enfu_guru"                            "The Guru"   
 		"StickerKit_desc_enfu_guru"                       " "   
 		"StickerKit_enfu_ninja"                           "Silent Ninja"   
@@ -30475,8 +29234,6 @@
 		"StickerKit_desc_pinups_scherry"		" "
 
 		"StickerKit_pinups_tamara"				"Tamara"
-		"StickerKit_desc__pinups_tamara"		" "
-		
 		"StickerKit_pinups_ivette_holo"			"Ivette (โฮโล)"
 		"StickerKit_desc_pinups_ivette_holo"	" "
 
@@ -35395,7 +34152,7 @@
 // COMMUNITY_34
 
 		"PaintKit_usp_field_snake"						"มันถูกลงสีแบบกำหนดเองด้วยลายอุปกรณ์ปลดชนวนมีปีกข้างใต้ศูนย์เล็งและมีเลข \"027\" ใกล้ตรงช่องดีดกระสุน\n\n<i>งานภาคสนามเบา ๆ</i>"
-		"PaintKit_usp_field_snake_Tag"					"027"
+		"PaintKit_usp_field_snake_Tag"					"27"
 
 		"PaintKit_deagle_calligraff"					"สไลด์ของปืน Desert Eagle ถูกตกแต่งด้วยตัวอักษรที่บรรจงเขียนด้วยพู่กันสีเงิน\n\n<i>สิ่งเหล่านี้ต้องใช้เวลา</i>"
 		"PaintKit_deagle_calligraff_Tag"				"Calligraffiti"
@@ -37017,8 +35774,8 @@
 		"Workshop_created" "วันที่สร้าง"
 		"Workshop_size" "ขนาด"
 		"Workshop_View" "ดูบนเวิร์กช็อป"
-		"Workshop_Allow" "อนุญาต"
-		"Workshop_Deny" "ปฏิเสธ"
+		"Workshop_Allow" "ดาวน์โหลด"
+		"Workshop_Deny" "ยกเลิก"
 
 		"SFUI_Workshop_Desc_Pw"				"แผนที่เวิร์กชอปที่สมัครเป็นสมาชิกของคุณจะถูกแสดงที่นี่ คุณสามารถใช้ปุ่มเล่นในชุมชนอย่างรวดเร็วเพื่อค้นหาเซิร์ฟเวอร์ชุมชนที่ดีที่สุดที่เรียกใช้แผนที่"
 		"SFUI_Workshop_Desc_Sp_Pw"			"แผนที่เวิร์กชอปที่สมัครเป็นสมาชิกของคุณจะถูกแสดงที่นี่ คุณสามารถลองเล่นทดสอบกับบอทได้"
@@ -37308,12 +36065,6 @@
 		"SFUI_Store_Limited_Bid_Tagline"			"เสนอราคาให้ข้อเสนอนี้"
 		"SFUI_Store_Available_Offers"               "ข้อเสนอมีอยู่จนถึง:"
 		"SFUI_Store_Preview"                        "ตัวอย่าง"
-
-		"SFUI_Store_Timer_Week:p"                   "%s1 สัปดาห์"
-		"SFUI_Store_Timer_Day:p"                    "%s1 วัน"
-		"SFUI_Store_Timer_Hour:p"                   "%s1 ชั่วโมง"
-		"SFUI_Store_Timer_Min:p"                    "%s1 นาที"
-		"SFUI_Store_Timer_Sec:p"                    "%s1 วินาที"
 
 		"SFUI_Store_Timer_Week:f"                 	"{f:0:value} สัปดาห์"
 		"SFUI_Store_Timer_Day:f"                    "{f:0:value} วัน"
@@ -39603,7 +38354,7 @@
 		"SFUI_PlayerDetails_Loading"				"กำลังตรวจสอบคำชมเชย"
 		"SFUI_PlayerDetails_Loading_Failed"			"ล้มเหลวในการโหลดคำชมเชย กรุณาลองใหม่อีกครั้งภายหลัง"
 		"SFUI_PlayerDetails_Previously_Submitted"	"คำชมเชยที่เคยส่งก่อนหน้าสำหรับผู้เล่นนี้"
-		"SFUI_PlayerDetails_Commendations_Left:p"		"วันนี้คุณสามารถชมเชยผู้เล่นอื่นได้อีก %s1 คน"
+		"SFUI_PlayerDetails_Commendations_Left:f"	"วันนี้คุณสามารถชมเชย{num_players, plural, other{ผู้เล่น}}ได้อีก {num_players} คน"
 		"SFUI_PlayerDetails_NoCommendations_Left"   "คุณได้ส่งคำชมเชยไว้มากเกินไป กรุณาลองใหม่ในวันพรุ่งนี้"
 		"SFUI_PlayerDetails_Updating_Previous_Commendation"   "คุณกำลังแก้ไขคำชมเชยที่ได้ส่งไปก่อนหน้านี้"
 		"SFUI_PlayerDetails_New_Commendation"   "คุณกำลังส่งคำชมเชยใหม่"
@@ -39975,7 +38726,7 @@
 		"SFUIHUD_InfoPanel_Coop_Thumb2Ready"					"ทัมสติก 2 พร้อม!"
 		"SFUIHUD_InfoPanel_Coop_Thumb2Retrieved"				"ได้รับทัมสติกไวรัสแล้ว!"	
 
-		"FullPlayerNameOrder_Default"						"%modifier% %clantag% %controller_name% (%current_controller_of_my_pawn%)"
+		"FullPlayerNameOrder_Default:f"						"{modifier} {clantag} {controller_name} ({current_controller_of_my_pawn})"
 "SFUIHUD_Spectate_Equipment"	"มูลค่าอุปกรณ์"
 		"SFUIHUD_Spectate_TeamMoney"	"เงินทีม"
 		"SFUIHUD_Spectate_TeamEQValue"	"มูลค่าอุปกรณ์อาวุธทีม"
@@ -41360,8 +40111,8 @@
 		"SFUI_Settings_MiniScoreboardPlayerCount_Tooltip"	"ช่วงที่รอบยังดำเนินอยู่ ภาพแทนตัวของผู้เล่นจะถูกแทนที่ด้วยจำนวนผู้เล่นของทีมในกระดานคะแนนแบบย่อ"
 
 
-		"Post_Round_Damage_Report_Given:p"		" • ความเสียหายที่ทำได้ → %s3: %s2 ใน %s1"
-		"Post_Round_Damage_Report_Taken:p"		" • ความเสียหายที่ได้รับ ← %s3: %s2 ใน %s1"
+		"Post_Round_Damage_Report_Given:f"		" • ความเสียหายที่ทำได้ → {player_name}: {f:0:damage} ใน {num_hits}"
+		"Post_Round_Damage_Report_Taken:f"		" • ความเสียหายที่ได้รับ ← {player_name}: {f:0:damage} ใน {num_hits}"
 
 		"SFUI_TeamOverheadID"					"แสดงอุปกรณ์อาวุธในทีม"
 
@@ -41840,8 +40591,8 @@
 
 		"SFUI_UserAlertNoteType_1"			"เซิร์ฟเวอร์ใน %s1 กำลังประสบกับการโหลดอย่างหนัก"
 		"SFUI_UserAlertNoteType_2"			"เซิร์ฟเวอร์ใน %s1 กำลังออฟไลน์เพื่อทำการซ่อมบำรุง"
-		"SFUI_UserAlertNoteType_LowPlayersR:p"	"มีผู้เล่นที่เล่นด้วยกันได้ %players% คนเท่านั้นที่กำลังค้นหาแมตช์ในภูมิภาค \"%region%\" อยู่"
-		"SFUI_UserAlertNoteType_LowPlayersY:p"	"มีผู้เล่นที่เล่นด้วยกันได้ %players% คนเท่านั้นที่กำลังค้นหาแมตช์ในภูมิภาค \"%region%\" ของคุณอยู่"
+		"SFUI_UserAlertNoteType_LowPlayersR:f"	"มี{players, plural, other{ผู้เล่น}}ที่เล่นด้วยกันได้ {players} คนเท่านั้นที่กำลังค้นหาแมตช์ในภูมิภาค {region}"
+		"SFUI_UserAlertNoteType_LowPlayersY:f"	"มี{players, plural, other{ผู้เล่น}}ที่เล่นด้วยกันได้ {players} คนเท่านั้นที่กำลังค้นหาแมตช์ในภูมิภาคของคุณ"
 
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"ล้มเหลวในการเชื่อมต่อไปยังแมตช์"
 		"SFUI_QMM_ERROR_NotLoggedIn"		"ไม่ได้เข้าสู่ระบบไปยังบริการการค้นหาแมตช์ Counter-Strike"
@@ -47419,10 +46170,10 @@
 		"practicesettings_infammo_button"			"กระสุนไม่จำกัด"
 		"practicesettings_infwarmup_tooltip"		"เมื่อ<b>เปิดใช้งาน</b>แล้ว แมตช์จะอยู่ในรอบอุ่นเครื่องถาวรและไม่มีบอทเข้าร่วม"
 		"practicesettings_infwarmup_button"			"รอบอุ่นเครื่องไม่จำกัด"
-		"practicesettings_annotations_tooltip"		"เมื่อ<b>เปิดใช้งาน</b> คู่มือแผนที่ที่ถูกเลือกจากเมนูดรอปดาวน์จะถูกโหลด และการตั้งค่าดังต่อไปนี้จะถูกบังคับให้เปิดใช้งาน: รอบอุ่นเครื่องไม่จำกัด กระสุนไม่จำกัด และมุมกล้องระเบิด"
-		"practicesettings_annotations_button"		"ใช้คู่มือแผนที่"
+		"practicesettings_annotations_tooltip"		"เมื่อ<b>เปิดใช้งาน</b> คู่มือแผนที่ที่เลือกไว้ (หรือไม่ได้เลือกไว้) จากเมนูดรอปดาวน์จะถูกโหลด และการตั้งค่าดังต่อไปนี้จะถูกบังคับให้เปิดใช้งาน: รอบอุ่นเครื่องไม่จำกัด กระสุนไม่จำกัด และมุมกล้องระเบิด"
+		"practicesettings_annotations_button"		"เปิดใช้งานคู่มือแผนที่"
 		"practicesettings_annotations_workshop_tooltip" "เยี่ยมชมเวิร์กชอป"
-		"practicesettings_annotations_dropdown_tooltip"	"ระบุคู่มือแผนที่ที่จะโหลด"
+		"practicesettings_annotations_dropdown_tooltip"	"ระบุว่าจะโหลดคู่มือแผนที่ใด (หากมี)"
 
 		"PlayMenuReplayNewUserTrainingButton"		"รีเพลย์วันฝึกซ้อม"
 
@@ -47458,6 +46209,8 @@
 		"Workshop_annotation_ready"					"การส่งพร้อมที่จะอัปโหลด"		
 		"UI_File_Filter_SupportedAnnotationFormat"	"ไฟล์ข้อความ (*.txt)"
 		"annotations_visit_workshop"				"เยี่ยมชมเวิร์กชอป ⤤"
+		"annotations_exceed_round_limit"			"ไม่อนุญาตให้ใช้คู่มือแผนที่หลังจากรอบที่ {s:rounds} ของครึ่งแรก"
+
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Game Mode Desc
@@ -48573,6 +47326,1197 @@
 		"playerstats_subscription_expire_warning"		"<b>รวบรวมสถิติแมตช์</b> - การสมัครสมาชิก<b>กำลังหมดอายุในวันนี้</b>"
 		"playerstats_subscription_renew_automatically"	"<b>รวบรวมสถิติแมตช์</b> - การสมัครสมาชิกจะต่ออายุโดยอัตโนมัติใน {d:days} วัน"
 		"playerstats_subscription_renew_unknown"		"<b>รวบรวมสถิติแมตช์</b> - การสมัครสมาชิกของคุณคงเหลืออยู่ {d:days} วัน"
+		"playerstats_subscription_renew_manually"		"<b>รวบรวมสถิติแมตช์</b> - การสมัครสมาชิกของคุณคงเหลืออยู่ {d:days} วัน และจะ<b>ไม่ถูกต่ออายุโดยอัตโนมัติ</b>"
+		"playerstats_subscription_expired"				"<b>การสมัครสมาชิกหมดอายุแล้ว</b> - เปิดใช้การสมัครสมาชิกของคุณอีกครั้งเพื่อรวบรวมสถิติแมตช์ใหม่"
+		"playerstats_subscription_not_enrolled"			"<b>ไม่ได้เปิดใช้การสมัครสมาชิก</b> - สมัครสมาชิกเพื่อรวบรวมสถิติแมตช์ใหม่"
+		"playerstats_subscription_buy_button"			"เปิดใช้การสมัครสมาชิกรายเดือน\n{s:price} / เดือน"
+
+		"playerstats_past_14"					"14 วันที่ผ่านมา"
+		"playerstats_past_30"					"30 วันที่ผ่านมา"
+		"playerstats_past_90"					"90 วันที่ผ่านมา"
+		"playerstats_alltime"					"เวลาทั้งหมด"
+
+		"stat_best_map"							"แผนที่ดีที่สุด"
+		"stat_best_map_desc"					"แผนที่ที่มีอัตราส่วนสูงสุดของรอบที่ชนะต่อรอบที่แพ้ของคุณ"
+
+		"stat_best_weapon"						"อาวุธที่ดีที่สุด"
+
+		"stat_best_mate"						"เพื่อนที่ดีที่สุด"
+		"stat_best_mate_desc"					"เพื่อนร่วมทีมผู้ที่ช่วยเหลือคุณให้ได้รับอัตราส่วนสูงสุดของรอบที่ชนะต่อรอบที่แพ้"
+
+		"matchstat_abandoned"					"*คุณออกจากแมตช์นี้ก่อนจบ"
+
+		"playerstats_suffix_per_round"			"/ร"
+		"playerstats_suffix_per_cent"			"%"
+
+		"playerstats_per_round"			"{s:value}/ร"
+		"playerstats_per_cent"			"{s:value}%"
+		"playerstats_no_units"			"{s:value}"	
+
+		"playerstats_percentile"		"คะแนน {s:tt_value} ของคุณดีกว่า {s:tt_rank}% ของผู้มีบัตรผ่านปฏิบัติการทั้งหมด"
+		"playerstats_percentile_subscribers"	"คะแนน {s:tt_value} ของคุณดีกว่า {s:tt_rank}% ของผู้ที่เป็นสมาชิกทั้งหมด"
+
+
+		"playerstats_mapwinrate"		"อัตราชนะแผนที่"
+		"playerstats_mapwinrate_rounds"	"รอบ"
+		"playerstats_mapwinrate_matches" "แมตช์"
+
+		"stat_total_score"				"คะแนน"
+		"stat_average_score"			"คะแนน/รอบ"
+
+		"stat_total_kills"				"ฆ่า"
+		"stat_average_kills"			"ฆ่า/รอบ"
+
+		"stat_total_deaths"				"ตาย"
+	//	"stat_average_deaths"			"stat_average_deaths"		
+
+		"stat_total_health_removed"		"ดาเมจ"	
+		"stat_average_health_removed"	"ยิงเฉลี่ย"
+
+		"stat_average_kd"				"ฆ่า/ตาย"
+		"stat_average_kd_short"			"ฆ่า/ตาย"
+
+		"stat_average_hsp"				"stat_average_hsp"
+
+		"stat_total_2k"					"ฆ่า2"
+		"stat_total_3k"					"ฆ่า3"
+		"stat_total_4k"					"ฆ่า4"
+
+		"stat_grenades"					"ระเบิดแรงสูง"
+		"stat_total_grenade"			"ขว้าง"
+		"stat_average_grenade"			"สำเร็จ"
+		"stat_grenades_desc"			"% ของระเบิดแรงสูงที่สร้างความเสียหายศัตรูอย่างน้อย 1 คน"			
+
+		"stat_flash"					"แฟลช"
+		"stat_total_flash"				"ขว้าง"
+		"stat_average_flash"			"สำเร็จ"
+		"stat_flash_desc"				"% ของระเบิดแสงที่ทำศัตรูตาพร่ามัวอย่างน้อย 1 คน"
+
+		"stat_entry"					"ฆ่าก่อน"
+		"stat_average_entrykd"			"ฆ่าก่อน/ตาย"
+		"stat_total_entry_attempts"		"รวมทั้งหมด"
+		"stat_entry_desc"				"อัตราส่วนของการฆ่าก่อนต่อการตายก่อน"
+
+		"stat_total_wins"				"ชนะ"
+		"stat_total_losses"				"แพ้"
+		"stat_total_ties"				"เสมอ"
+
+		"stat_total_rounds_played"		"รอบ"
+
+		"stat_1vx"						"1vX"
+
+		"stat_1v1"						"1v1"
+
+		"stat_average_1v1"				"สำเร็จ"				
+		"stat_total_1v1_attempts"		"โอกาส"		
+
+		"stat_1v2"						"1v2"
+
+		"stat_average_1v2"				"สำเร็จ"			
+		"stat_total_1v2_attempts"		"โอกาส"		
+
+		"num_matches"					"แมตช์ที่เล่น"
+
+		"playerstat_name_0"				"คะแนน"
+		"playerstat_name_0_long"		"คะแนนต่อรอบ"
+		"playerstat_name_0_desc"		"คะแนนต่อรอบ: {s:value}\nคะแนนรวมทั้งหมด : {d:total}"
+
+
+		"playerstat_name_1"				"ฆ่า"
+		"playerstat_name_1_long"		"ฆ่าต่อรอบ"
+		"playerstat_name_1_desc"		"ฆ่าเฉลี่ยต่อรอบ: {s:value}\nฆ่ารวมทั้งหมด : {d:total}"
+
+		"playerstat_name_2"				"ดาเมจ"
+		"playerstat_name_2_long"		"ความเสียหายต่อรอบ"
+		"playerstat_name_2_desc"		"ความเสียหายเฉลี่ยต่อรอบ: {s:value}\nความเสียหายรวมทั้งหมด : {d:total}"	
+
+		"playerstat_name_2.1"			"ดาเมจ"
+		"playerstat_name_2.5"			"ยิงเฉลี่ย"		
+
+		"playerstat_name_3"				"ฆ่า/ตาย"
+		"playerstat_name_3_long"		"ฆ่าต่อตาย"
+		"playerstat_name_3_desc"		"อัตราส่วนของการฆ่าต่อการตาย: {s:value}"		
+
+		"playerstat_name_4"				"ยิงหัว"
+		"playerstat_name_4_long"		"อัตราฆ่าโดยการยิงศีรษะ"
+		"playerstat_name_4_desc"		"% ของการฆ่าด้วยการยิงหัว : {s:value}\nฆ่าด้วยการยิงหัวรวมทั้งหมด : {d:total}"	
+
+		"playerstat_name_4.5"			"%ยิงหัว"		
+
+		"playerstat_name_5"				"ฆ่า2"
+		"playerstat_name_5_long"		"ฆ่า 2 คน"
+		"playerstat_name_5_desc"		"รอบฆ่า 2 คนรวมทั้งหมด : {s:value}"	
+
+		"playerstat_name_6"				"ฆ่า3"
+		"playerstat_name_6_long"		"ฆ่า 3 คน"
+		"playerstat_name_6_desc"		"รอบที่ฆ่า 3 คนรวมทั้งหมด : {s:value}"		
+
+		"playerstat_name_7"				"ฆ่า4"
+		"playerstat_name_7_long"		"ฆ่า 4 คน"
+		"playerstat_name_7_desc"		"รอบฆ่า 4 คนรวมทั้งหมด : {s:value}"
+
+		"playerstat_name_7.5"			"ฆ่าหลายคน"
+	
+		"playerstat_name_8"				"ระเบิด"
+		"playerstat_name_8_long"		"ระเบิดที่ได้ผล"
+		"playerstat_name_8_desc"		"% ของการขว้างระเบิดแรงสูงที่สร้างความเสียหายศัตรูอย่างน้อย 1 คน: {s:value}\nขว้างระเบิดแรงสูงที่สร้างความเสียหายศัตรูอย่างน้อย 1 คนรวมทั้งหมด : {d:total}"			
+
+		"playerstat_name_9"				"ระเบิดแสง"
+		"playerstat_name_9_long"		"ระเบิดแสงที่ได้ผล"		
+		"playerstat_name_9_desc"		"% ของการขว้างระเบิดแสงที่ทำให้ศัตรูตาพร่ามัวอย่างน้อย 1 คน: {s:value}\nขว้างระเบิดแสงที่ทำให้ศัตรูตาพร่ามัวอย่างน้อย 1 คนรวมทั้งหมด : {d:total}"
+
+		"playerstat_name_10"			"1v1"
+		"playerstat_name_10_long"		"ดวล 1v1"
+		"playerstat_name_10_desc"		"% ของการชนะในสถานการณ์ 1v1: {s:value}\nชนะในสถานการณ์ 1v1 รวมทั้งหมด : {d:total}"	
+
+		"playerstat_name_11"			"1v2"
+		"playerstat_name_11_long"		"ดวล 1v2"
+		"playerstat_name_11_desc"		"% ของการชนะในสถานการณ์ 1v2: {s:value}\nชนะในสถานการณ์ 1v2 รวมทั้งหมด : {d:total}"	
+
+		"playerstat_name_12"			"ฆ่าก่อน"
+		"playerstat_name_12_long"		"ฆ่าก่อน"
+		"playerstat_name_12_desc"		"อัตราส่วนของการฆ่าก่อนต่อการตายก่อน: {s:value}\nฆ่าก่อนรวมทั้งหมด : {d:total}"
+
+		"stats_graph_button_0"			"คะแนน/ร"
+		"stats_graph_button_1"			"ฆ่า/ร"
+		"stats_graph_button_2"			"ยิงเฉลี่ย"
+		"stats_graph_button_3"			"ฆ่า/ตาย"
+		"stats_graph_button_4"			"%ยิงหัว"
+
+		"ris_score"								"คะแนนรอบ"
+		"ris_t"									"T"
+		"ris_ct"								"CT"
+		"ris_team-title"						"โอกาสชนะทีมของคุณ"
+		"ris_wins"								"{s:ris_team} ชนะ!"
+
+		"ris_win"								"ชนะ"
+		"ris_loss"							"แพ้"
+
+		"ris_hits"								"ใน {s:num_hits}"
+		
+		"prdr_health_removed"					"{d:health_removed} ใน {d:num_hits}"
+		"prdr_return_health_removed"				"{d:return_health_removed} ใน {d:return_num_hits}"
+
+		"season_stat_title_wins"		"ชนะ"
+        "season_stat_title_ties"		"เสมอ"
+        "season_stat_title_losses"		"แพ้"
+        "season_stat_title_rounds"		"รอบ"
+        "season_stat_title_kills"		"ฆ่า"
+        "season_stat_title_headshots"	"ยิงหัว"
+		"season_stat_title_hs_percent"	"%ยิงหัว"
+        "season_stat_title_assists"		"ช่วย"
+        "season_stat_title_deaths"		"ตาย"
+        "season_stat_title_mvps"		"MVP"
+        "season_stat_title_rounds_3k"	"ฆ่า3"
+        "season_stat_title_rounds_4k"	"ฆ่า4"
+        "season_stat_title_rounds_5k"	"ฆ่า5"
+		"season_stat_title_kpr"			"ฆ่า/รอบ"
+		"season_stat_title_kd"			"ฆ่า/ตาย"
+		"season_stat_title_best_map"	"แผนที่เล่นดีสุด"
+		"season_stat_title_win_percent"	"อัตราชนะ"
+		"season_stat_title_matches_played"	"แมตช์"
+		"season_stat_title_achieved_week"	"แรงก์สูงสุดที่ทำได้ในสัปดาห์"
+		"season_stat_value_kd"				"{s:kdratio}"
+		"season_stat_value_win_percent"		"{s:win-percent}%"
+		"season_stat_value_hs_percent"		"{s:hs-percent}%"
+		"season_section_rank"				"คะแนนสูง"
+		"season_section_season_stats"		"สถิติฤดูกาล"
+		"season_section_rank_history"		"ประวัติแรงก์"
+		"season_section_rank_activity"		"แมตช์ที่เล่น"
+		"season_section_rank_map_stats"		"สถิติแผนที่"
+		"season_section_rank_map_wins_graph"	"ชนะแผนที่ทั้งหมด"
+		"season_section_graph_x_axis_label_min"		"สัปดาห์ {d:week_min}"
+		"season_section_graph_x_axis_label_max"		"สัปดาห์ {d:week_max}"
+		"tooltip-no-map-stats"			"สถิติของคุณไม่พร้อมใช้งานสำหรับแผนที่นี้"
+		"tooltip-season-rank-week-idx"		"สัปดาห์ {s:week-id}"
+		"tooltip-season-rank-week-name"		"{s:week-name}"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	WIN PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_winpanel_mvp_award"				"MVP"
+		"Panorama_winpanel_mvp_award_kills"			"MVP"
+		"Panorama_winpanel_mvp_award_ace"			"MVP สำหรับรอบฆ่าทั้งทีม"
+		"Panorama_winpanel_mvp_award_bombplant"		"MVP สำหรับวางระเบิด"
+		"Panorama_winpanel_mvp_award_bombdefuse"	"MVP สำหรับการปลดชนวนระเบิด"
+		"Panorama_winpanel_mvp_award_rescue"		"MVP สำหรับการช่วยเหลือตัวประกัน"
+		"Panorama_winpanel_mvp_award_score"			"MVP สำหรับผู้มีคะแนนสูงสุด"
+		"Panorama_winpanel_mvp_award_inferno"		"MVP สำหรับการสร้างความเสียหายด้วยไฟมากสุด"
+		"Panorama_winpanel_mvp_award_blast"			"MVP สำหรับการสร้างความเสียหายด้วยแรงระเบิดมากสุด"
+		"Panorama_winpanel_mvp_award_bombdefuse_clutch"	"MVP สำหรับปลดชนวนระเบิดเป็นคนสุดท้าย"
+		"Panorama_winpanel_mvp_award_bombplant_clutch"	"MVP สำหรับการวางและป้องกันระเบิด"
+		"Panorama_winpanel_mvp_award_gungame"		"MVP"
+		"Panorama_winpanel_mvp_winner"				"MVP"
+		"Panorama_winpanel_mvp_award_kills_three"	"MVP สำหรับการฆ่ามากที่สุด (ฆ่า3)"
+		"Panorama_winpanel_mvp_award_kills_four"	"MVP สำหรับการฆ่ามากที่สุด (ฆ่า4)"
+
+		"Panorama_WinPanel_rank_awarded_multi"	"คุณได้รับแรงก์ใหม่ {d:rank_increase}!"
+
+		"Panorama_WinPanel_rank_name_string"	"{s:current_best_cat} <font color='#CCCCCC'>({s:current_rank_cat})</font>"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	WATCH PANEL
+		//
+		///////////////////////////////////////////////////////////
+		
+		"WatchMenu_Watch"					"เข้าชม"
+		"WatchMenu_Tournament_Versus"		"ปะทะ"
+		"WatchMenu_Outcome_Tied"			"เสมอ"
+		"WatchMenu_Outcome_Abandon"			"ละทิ้งเกม"
+		"WatchMenu_Outcome_Won"				"<img src='file://{images}/icons/ui/trophy.svg' width='15' height='15'/> ชนะ"
+		"WatchMenu_Outcome_Lost"			"แพ้"
+		"WatchMenu_Expand_Match_Menu"		"เพิ่มเติม"
+		"WatchMenu_Get_Share_Link"			"คัดลอกรหัสการแบ่งปันแมตช์"
+		"WatchMenu_Share_Link_Copied"		"คัดลอกลิงก์ไปยังคลิปบอร์ด"
+		"WatchMenu_Download_Demo"			"ดาวน์โหลดเดโมเพื่อเข้าชม"
+		"WatchMenu_Watch_Live"				"เข้าชมการถ่ายทอดสด"
+		"WatchMenu_Watch_Highlights"		"เข้าชมไฮไลต์"
+		"WatchMenu_Watch_Lowlights"			"รับชมโลว์ไลต์"
+		"WatchMenu_Watch_Highlights_Player_Selected"	"รับชมไฮไลต์ของ {s:playerNameTitle}"
+		"WatchMenu_Watch_Lowlights_Player_Selected"	"รับชมโลว์ไลต์ของ {s:playerNameTitle}"
+		"WatchMenu_Delete"					"ลบไฟล์เดโมภายในเครื่อง"
+		"WatchMenu_Downloading"				"กำลังดาวน์โหลด"
+		"WatchMenu_Info_Download_Failed"	"ดาวน์โหลดไม่สมบูรณ์"
+		"WatchMenu_Info_Download_Failed_Retry" "พยายามดาวน์โหลดไฟล์เดโมอีกครั้ง?"
+		"WatchMenu_Info_Download_Failed_Info" "ดาวน์โหลดไม่เสร็จสมบูรณ์ ข้อมูลกระดานคะแนนพร้อมใช้งานแต่คุณไม่สามารถเข้าชมแมตช์ได้"
+		"WatchMenu_Download_Disabled_Hint"	"เดโมของแมตช์ได้หมดอายุแล้ว และไม่พร้อมให้ดาวน์โหลดอีกต่อไป"
+		"WatchMenu_Tournament_BulletPoint"	"<ul>
+												<li>รับชมแมตช์และใช้สติกเกอร์ทีมของคุณเพื่อทายผลของรอบแบ่งกลุ่มและรอบตัดเชือก</li>
+												<li>เมื่อคุณเลือกได้ถูกต้อง คุณจะได้รับคะแนนเพิ่มไปยังถ้วย Pick'Em ที่สามารถนำไปแสดงบนภาพแทนตัว Counter-Strike ของคุณและในโปรไฟล์ Steam ของคุณได้</li>
+												<li>คุณสามารถทายผลรอบแบ่งกลุ่มได้จนกว่ารอบแบ่งกลุ่มจะเริ่มขึ้น</li>
+												<li>คุณสามารถทายผลรอบตัดเชือกได้จนกว่ารอบตัดเชือกจะเริ่มขึ้น</li>
+											</ul>"
+		"WatchMenu_Viewer"				"ผู้ชม"
+		"WatchMenu_Viewers"				"ผู้ชม"
+		"WatchMenu_Viewers_dv:f"		"{d:spectatorCount} ผู้ชม"
+		"WatchMenu_FirstHalf"			"ครึ่งแรก"
+		"WatchMenu_SecondHalf"			"ครึ่งหลัง"
+		"WatchMenu_Overtime"			"ต่อเวลา"
+		"MatchInfo_FirstRound"			"รอบที่ 1"
+		"MatchInfo_Halftime"			"เวลาพักครึ่ง"
+		"MatchInfo_Overtime"			"ต่อเวลา"
+		"MatchInfo_RoundDataTitle"      "ประสิทธิภาพในแต่ละรอบของ {s:playerNameTitle}"
+		"MatchInfo_Date"				"{s:month} {s:day}"
+		
+		"MatchInfo_Date_Tournament_Month_Short_8"	"ต.ค."		
+		"MatchInfo_Date_Tournament_Month_Final_Short_8"	"พ.ย."
+		"MatchInfo_Date_Tournament_Month_Short_9"	"มี.ค."
+		"MatchInfo_Date_Tournament_Month_Short_9_1"	"เม.ย."
+		"MatchInfo_Date_Tournament_Month_Final_Short_9"	"เม.ย."
+		"MatchInfo_Date_Tournament_Month_Short_10"	"ก.ค."
+		"MatchInfo_Date_Tournament_Month_Short_10_1"	"ก.ค."
+		"MatchInfo_Date_Tournament_Month_Final_Short_10"	"ก.ค."
+		"MatchInfo_Date_Tournament_Month_Short_11"	"ม.ค."
+		"MatchInfo_Date_Tournament_Month_Short_11_1"	"ม.ค."
+		"MatchInfo_Date_Tournament_Month_Final_Short_11"	"ม.ค."
+		"MatchInfo_Date_Tournament_Month_Short_12"	"ก.ค."
+		"MatchInfo_Date_Tournament_Month_Short_12_1"	"ก.ค."
+		"MatchInfo_Date_Tournament_Month_Final_Short_12"	"ก.ค."
+		"WatchMenu_PickEm_ComingSoon"	"แสดงเกม Pick'Em และแฟนตาซีในอดีตที่ผ่านมาเร็ว ๆ นี้"
+		"WatchMenu_ViewerCount"	"{s:numberOfViewers} ผู้ชมบน {s:channel}"
+		"Matchlist_Team_Selection"	"ทีมทั้งหมด"
+
+
+		"pickem_timer_inactive"		"รอบในขณะนี้ยังไม่เปิดใช้งานสำหรับการเลือก"
+		"pickem_timer"				"เวลาคงเหลือ {s:time} เพื่อทำการเลือกของคุณ"
+		"pickem_timer_upsell"		"เวลาคงเหลือ <b>{s:time}</b> เพื่อทำการเลือกของคุณ ซื้อบัตรผ่านของคุณเพื่อเล่น Pick'Em และรับเหรียญของที่ระลึก"
+		"pickem_timer_locked"		"การเลือกถูกล็อคแล้วในขณะนี้"
+		"pickem_points_earned" 		"คะแนนที่ได้รับ"
+		"pickem_correct_pick" 		"เลือกถูกต้อง"
+		"pickem_points_needed_next_level" 	"เก็บอีก <b>{d:points}</b> {s:plural} สำหรับ <b>{s:level}</b>"
+		"pickem_points_result" 		"คุณได้รับถ้วยรางวัล Pick'Em <b>{s:result-level}</b>"
+		"pickem_points_result_bronze" "คุณได้รับถ้วยรางวัล Pick'Em <b>ทองแดง</b>"
+		"pickem_points_result_silver" "คุณได้รับถ้วยรางวัล Pick'Em <b>เงิน</b>"
+		"pickem_points_result_gold" "คุณได้รับถ้วยรางวัล Pick'Em <b>ทอง</b>"
+		"pickem_point"				"คะแนน"
+		"pickem_points"				"คะแนน"
+		"pickem_level_bronze"		"ทองแดง"
+		"pickem_level_silver"		"เงิน"
+		"pickem_level_gold"			"ทอง"
+		"pickem_group_pick_worth"	"การเลือกที่ถูกต้องแต่ละครัั้งจะได้รับ <b>{d:points} {s:plural} </b>"
+		"pickem_pick_correct_points_earned"	"+ <b>{d:points}</b> {s:plural}"
+		"pickem_pick_drag_hint" 	"ลากทีมมาที่นี่"
+		"pickem_pick_undefeated"	"<b>เลือก</b>ทีมที่จะ<b>ชนะแบบไร้พ่าย</b>"
+		"pickem_pick_eliminated"	"<b>เลือก</b>ทีมที่จะ<b>ตกรอบโดยไม่ชนะแม้แต่แมตช์เดียว</b>"
+		"pickem_get_items" 			"ซื้อสติกเกอร์"
+		"pickem_get_items_tooltip" 	"คุณจำเป็นต้องมีสติกเกอร์ดังต่อไปนี้เพื่ออัปเดตการเลือกของคุณ: <br><br>"
+		"pickem_place_picks" 		"อัปเดตการเลือก"
+		"pickem_confirm_picks" 		"ยืนยันการเลือกของคุณ"
+		"pickem_confirm_Warning"	"<b>สติกเกอร์เหล่านี้จะถูกใช้สำหรับการเลือก Pick'Em ของคุณ</b>\n\nสติกเกอร์จะยังคงอยู่ในช่องเก็บของของคุณและสามารถติดกับอาวุธใดก็ได้ที่คุณเป็นเจ้าของอยู่ หรือนำไปแลกเปลี่ยนหลังจากรอบกิจกรรมได้จบลง\n\n<span class=\"premier-pickban__title__text-red\">\nสติกเกอร์จะถูกทำให้เป็นแบบไม่สามารถใช้งานและไม่สามารถแลกเปลี่ยนได้จนกว่ารอบกิจกรรมจะจบลง การลบการเลือกออกภายหลังจะไม่ยกเลิกการล็อคนี้</span>\n"
+		"pickem_confirm_ClearAll"	"<b>ไม่มีสติกเกอร์จะถูกใช้สำหรับการเลือก Pick'Em ของคุณ</b>\n\nสติกเกอร์ที่ถูกใช้ก่อนหน้าจะยังคงอยู่ในช่องเก็บของของคุณและสามารถติดกับอาวุธใดก็ได้ที่คุณเป็นเจ้าของอยู่ หรือนำไปแลกเปลี่ยนหลังจากรอบกิจกรรมได้จบลง\n"
+		"pickem_confirm_stickes_for_lock" 	"สติกเกอร์สำหรับเลือก"
+		"pickem_confirm_not_owned" 		"<b>การเลือกเหล่านี้ไม่สามารถวางสติกเกอร์ได้</b><span class=\"premier-pickban__title__text-red\">\nคุณจำเป็นต้องใช้สติกเกอร์ทีมที่สอดคล้องกันเพื่ออัปเดตการเลือก Pick'Em ของคุณ</span>"
+		"pickem_apply_emptyslots"		"คุณต้องใส่การทายผลของคุณทั้งหมดเพื่ออัปเดตการท้าทาย Pick'Em ของคุณ กรุณาลากการเลือกของคุณไปยังช่องว่างที่ยังเหลืออยู่และคลิกปุ่ม \"อัปเดตการเลือก\" อีกครั้งเพื่อยืนยัน"
+		"pickem_apply_timeout"			"คุณไม่สามารถอัปเดตการเลือก Pick'Em ของคุณได้ กรุณาลองใหม่อีกครั้งภายหลัง"
+		"pickem_apply_drag_hint"	"ลากการเลือกของคุณมาที่นี่"
+		"pickem_apply_immediate" 		"กำลังอัปเดตการเลือกของคุณ..."
+		"pickem_save_all" 			"บันทึกการเลือกทั้งหมด"
+		"pickem_make_picks" 		"ทำการเลือก {d:user-picks} / {d:total-picks} ได้"
+		"pickem_drag_picks" 		"ลากทีมเพื่อทำการเลือกของคุณ"
+		"pickem_reveal_all_results" "แสดงทีมที่เข้ารอบช่วงสุดท้าย"
+		"pickem_saved" 		"การเลือกถูกบันทึกแล้ว"
+		"pickem_teams_tbd" 	"ทีมรอกำหนด"
+		"pickem_challenge_section_title" "การท้าทาย PICK'EM"
+		"pickem_items_section_title" "ไอเท็มทัวร์นาเมนต์"
+		"pickem_items_tab_opening_stage" "รอบเปิดตัว"
+		"pickem_items_tab_elim_stage" "รอบแพ้คัดออก"
+		"pickem_items_tab_stage_i" "รอบ I"
+		"pickem_items_tab_stage_ii" "Stage II"
+		"pickem_items_tab_stage_iii" "รอบ III"
+		"pickem_items_tab_playoff_stage" "รอบตัดเชือก"
+		"pickem_teams_remove_all_tooltip" 	"ล้างการเลือกทั้งหมด"
+		"pickem_teams_fill_tooltip" 	"เลือกเติมการทายผลที่ยังไม่ได้วางแบบสุ่ม"
+		"pickem_versus"				"ปะทะ"
+		"pickem_submit_warning"		"{s:pass-name} ไม่ได้เปิดใช้งาน"
+		"pickem_submit_warning_tooltip"		"จำเป็นต้องเปิดใช้งาน{s:pass-name} เพื่อรับความคืบหน้าของการท้าทาย Pick'Em และบัตรผ่านต้องถูกเปิดใช้งานก่อนรอบจะถูกล็อค"
+		"pickem_submit_warning_popup_title"	"บันทึกการเลือกโดยไม่เปิดใช้งานบัตรผ่าน"
+		"pickem_submit_warning_popup_desc"	"จำเป็นต้องเปิดใช้งาน{s:pass-name} เพื่อรับความคืบหน้าของการท้าทาย Pick'Em และบัตรผ่านต้องถูกเปิดใช้งานก่อนรอบจะถูกล็อค"
+		"pickem_submit_warning_popup_action""บันทึกการเลือกโดยไม่เปิดใช้งานบัตรผ่าน"
+		"pickem_submit_warning_popup_action2"	"เปิดใช้งานบัตรผ่านและบันทึกการเลือก"
+		"contextmenu_pickem_souvenir_title" 	"เลือกแมตช์ที่คุณต้องการแพ็กเกจของที่ระลึก"
+		"contextmenu_pickem_souvenir_no_result" 	"กลับมาอีกครั้งเมื่อแมตช์นี้สิ้นสุดลงเพื่อรับแพ็กเกจของที่ระลึก"
+		"mainmenu_major_hub"	"ไอเท็มและศูนย์กลางการแข่งขันชิงแชมป์เมเจอร์"
+		"mainmenu_major_hub_items"	"สติกเกอร์วางจำหน่ายแล้ว"
+		"mainmenu_major_hub_no_items" "ศูนย์กลางการแข่งขันชิงแชมป์เมเจอร์"
+
+		"pickem_swiss_group_00"									"0:0"
+		"pickem_swiss_group_10"									"1:0"
+		"pickem_swiss_group_11"									"1:1"
+		"pickem_swiss_group_12"									"1:2"
+		"pickem_swiss_group_20"									"2:0"
+		"pickem_swiss_group_21"									"2:1"
+		"pickem_swiss_group_22"									"2:2"
+		"pickem_swiss_group_01"									"0:1"
+		"pickem_swiss_group_02"									"0:2"
+
+		"pickem_swiss_group_30"									"3:0 - เข้ารอบ"
+		"pickem_swiss_group_3x"									"3:1 3:2\n เข้ารอบ"
+		"pickem_swiss_group_13"									"1:3 - ตกรอบ"
+		"pickem_swiss_group_23"									"2:3 - ตกรอบ"
+		"pickem_swiss_group_03"									"0:3 - ตกรอบ"
+
+
+
+
+
+
+
+		// WATCH EVENTS
+
+		"eventsched_lan"												"กิจกรรม LAN"
+		"eventsched_online"											"กิจกรรมออนไลน์"
+		"eventsched_show_online"								"แสดงกิจกรรมออนไลน์"
+		"eventsched_date_format"								"{s:eventsched_date_day} {s:eventsched_date_month}"
+		"eventsched_versus"											"ปะทะ"
+		"eventsched_ongoing"										"กำลังดำเนินอยู่"
+		"eventsched_tbd"												"รอกำหนด"
+		"eventsched_live"												"แมตช์ถ่ายทอดสด"
+		"eventsched_link"												"รายละเอียดเพิ่มเติมที่ HLTV.org"
+		"eventsched_event_link"									"รายละเอียดกิจกรรมที่ HLTV.org"
+		"eventsched_match_link"									"รายละเอียดแมตช์ที่ HLTV.org"
+		"eventsched_team_link"									"รายละเอียดทีมที่ HLTV.org"	
+		"eventsched_no_streams"									"ไม่มีสตรีม"
+		"eventsched_watch_on_gotv"								"รับชมบน CSTV"
+		"eventsched_favorite_tt"								"{s:favorite_tooltip}"
+		"eventsched_favorite_tooltip_prime"			"การตั้งกิจกรรมที่ชื่นชอบ\nจะทำให้แมตช์การถ่ายทอดสดนั้นปรากฏขึ้นบนเมนูหลัก"
+		"eventsched_favorite_tooltip_not_prime" "คุณจำเป็นต้องมีสถานะไพรม์เพื่อตั้งกิจกรรมที่ชื่นชอบ"
+		"eventsched_match_tooltip"							"{s:watchnotice_teamname_1} ปะทะ {s:watchnotice_teamname_2}"
+		"eventsched_stream_watch"								"{s:stream_site}"
+		"eventsched_hltv"												"ข้อมูลกิจกรรมได้รับความอนุเคราะห์จาก HLTV.org"
+		"eventsched_country"										"{s:eventsched_country}"
+		"eventsched_no_live_matches"						"ไม่มีแมตช์ถ่ายทอดสดในขณะนี้"
+		"eventsched_featured"										"กิจกรรมนี้เป็นกิจกรรมที่ชื่นชอบของชุมชนสำหรับเดือน {s:eventsched_fave_month}"
+		"eventsched_official"										"นี่คือกิจกรรมเมเจอร์ Counter-Strike"
+
+		"WatchNotice_Reason_Official"						"กิจกรรมนี้แสดงขึ้น เนื่องจากเป็นกิจกรรมเมเจอร์ Counter-Strike"
+		"WatchNotice_Reason_Personal"						"กิจกรรมนี้แสดงขึ้น เนื่องจากคุณได้ตั้งเป็นกิจกรรมที่ชื่นชอบ"
+		"WatchNotice_Reason_Community"					"กิจกรรมนี้ถูกแนะนำ เนื่องจากเป็นกิจกรรมที่ชื่นชอบของชุมชนสำหรับเดือน {s:watchnotice_fave_month}"
+		"WatchNotice_Watch"											"รับชม"
+
+	
+		// Used with formatText.AbbreviateNumber()
+		///////////////////////////////////////////
+		"NumberAbbreviation_E3"			"{s:abbreviated_number} พัน"
+		
+		// Note to translators: Add as needed. Code will use only available strings. example:
+		// "NumberAbbreviation_E4"		"{s:abbreviated_number}万"	
+
+		"NumberAbbreviation_E6"			"{s:abbreviated_number} ล้าน"
+		"NumberAbbreviation_E9"			"{s:abbreviated_number} พันล้าน"
+		"NumberAbbreviation_E12"		"{s:abbreviated_number} ล้านล้าน"
+
+		// Used with formatText.SplitAbbreviateNumber()
+		///////////////////////////////////////////
+		"NumberAbbreviation_suffix_E3"			"พัน"
+		
+		// Note to translators: Add as needed. Code will use only available strings. example:
+		// "NumberAbbreviation_suffix_E4"		"万"	
+
+		"NumberAbbreviation_suffix_E6"			"ล้าน"
+		"NumberAbbreviation_suffix_E9"			"พันล้าน"
+		"NumberAbbreviation_suffix_E12"			"ล้านล้าน"
+
+
+		"digitpanel_digits"			 " 0123456789,.-+?"
+		"digitpanel_digits_premier" " 1234567890,?"
+
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	OVERWATCH
+		//
+		///////////////////////////////////////////////////////////
+		
+		"Panorama_Overwatch_Downloading"		"กำลังดาวน์โหลดไฟล์คดี..."
+		"Panorama_Overwatch_Review"				"การตรวจสอบคดีจะใช้เวลาไม่กี่นาที"
+		"Panorama_Overwatch_Welcome"			"โอเวอร์วอตช์ Counter-Strike"
+		"Panorama_Overwatch_Tooltip_p1"			"ในฐานะที่คุณเป็นส่วนหนึ่งของการตรวจสอบ Counter-Strike คุณจะดาวน์โหลดและตรวจสอบรีเพลย์ของการแข่งขัน Counter-Strike 2 บนเซิร์ฟเวอร์ทางการของ Valve เพื่อตรวจสอบพฤติกรรมที่น่าสงสัย เมื่อรีเพลย์สิ้นสุดลง คุณจะได้รับคำขอให้ตัดสินเกี่ยวกับเกมเพลย์ของผู้เล่นนั้น"
+		"Panorama_Overwatch_Tooltip_sh1"		"ขั้นตอนที่ 1"
+		"Panorama_Overwatch_Tooltip_p2"			"คลิก \"ดาวน์โหลดหลักฐาน\" ที่มุมขวาล่างเพื่อดาวน์โหลดคดีโอเวอร์วอตช์"
+		"Panorama_Overwatch_Tooltip_sh2"		"ขั้นตอนที่ 2"
+		"Panorama_Overwatch_Tooltip_p3"			"คลิก \"ตรวจสอบหลักฐาน\" เพื่อดูรีเพลย์จากมุมมองของผู้เล่นที่บันทึกไว้โดยเซิร์ฟเวอร์"
+		"Panorama_Overwatch_Tooltip_sh3"		"ขั้นตอนที่ 3"
+		"Panorama_Overwatch_Tooltip_p4"			"เมื่อคดีสิ้นสุดลง ให้เลือกลงมติหนึ่งคำตัดสินสำหรับแต่ละคำถาม แล้วคลิก \"ส่งคำตัดสิน\""
+		"Panorama_Overwatch_Major_Disruption"	"ปัญหาการก่อกวนหลัก"
+		"Panorama_Overwatch_Minor_Disruption"	"ปัญหาการก่อกวนเล็กน้อย"
+		"Panorama_Overwatch_Res_Griefing"		"สร้างปัญหา"
+		"Panorama_Overwatch_Res_AimHacking"		"ใช้โปรแกรมช่วยเล็ง"
+		"Panorama_Overwatch_Res_WallHacking"	"ใช้โปรแกรมช่วยมอง"
+		"Panorama_Overwatch_Res_SpeedHacking"	"ใช้โปรแกรมช่วยอื่นจากภายนอก"
+		
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	ROSETTA PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_CSGO_Spray_EnableMouse"			"<b>[{g:csgo_key:spray_mouse_enable}]</b> เพื่อเปิดใช้งานเคอร์เซอร์"
+		"Panorama_CSGO_Rosetta_Item_Name"			"<font color=\"{s:item_color}\">{s:item_name}</font>"
+		"Panorama_CSGO_Rosetta_Item_Count"			"ชาร์จคงเหลือ: {d:item_count}"
+		"Panorama_Attrib_SpraysHint"					"{s:bind_attack} เพื่อพ่นกราฟฟิตี้"
+		"Panorama_Attrib_SpraysHint_Auto"			"ปล่อย <b>{s:bind_spray_menu}</b> เพื่อพ่นกราฟฟิตี้"
+
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	RETICLE PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_HUD_weaponid_swap"			"<font color=\"#6a6156\">[{s:bind_use}] สลับเป็น</font> <font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+		"Panorama_HUD_weaponid_pickup"			"<font color=\"#6a6156\">[{s:bind_use}] เก็บ</font> <font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+		"Panorama_HUD_weaponid_lookat"			"<font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+		"Panorama_HUD_weaponid_holdtopickup"	"<font color=\"#6a6156\">กด [{s:bind_use}] ค้างเพื่อเก็บ</font> <font color=\"#{s:weapon_color}\">{s:weapon_name}</font>"
+
+		"Panorama_HUD_playerid_sameteam"			"<font color='#6E7D5C'>เพื่อน: {g:player_name:html:player_slot} พลังชีวิต: {d:player_health}%</font>"
+		"Panorama_HUD_playerid_diffteam"			"<font color='#CC0000'>ศัตรู: {g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_playerid_specteam"			"<font color='#6E7D5C'>{g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_playerid_noteam"			"<font color='#FFCC00'>{g:player_name:html:player_slot} พลังชีวิต:{d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_shadow"		"{g:player_name:player_slot}"
+
+		"Panorama_HUD_playerid_survival_enemy"				"<font color='#CC0000'>ศัตรู</font>"
+		"Panorama_HUD_playerid_survival_hunter_target"		"<font color='#e58816'>เป้าหมายค่าหัวสูง</font>"
+
+		"Panorama_HUD_botid_request_bomb"		"<font color='#e5da25'>[{s:bind_use}] เก็บระเบิด</font>"
+
+		"Panorama_HUD_hostageid_nh"				"<font color='#e5da25'>ตัวประกัน</font>"
+		"Panorama_HUD_hostagename_nh"			"<font color='#e5da25'>{g:player_name:html:player_slot}</font>"
+		"Panorama_HUD_hostageid_nh_use_lead"		"<font color='#e5da25'>[{s:bind_use}] รับตัวประกัน</font>"
+		"Panorama_HUD_hostageid_nh_following"	"<font color='#e5da25'>ตัวประกัน (กำลังตาม {g:player_name:html:player_slot})</font>"
+
+		"Panorama_HUD_hostageid"					"<font color='#e5da25'>ตัวประกัน</font><font color='#dcdac0'> {d:player_health}%</font>"
+		"Panorama_HUD_hostageid_use_lead"		"<font color='#e5da25'>[{s:bind_use}] เพื่อแบกตัวประกัน</font><font color='#dcdac0'> {d:player_health}%</font>"
+		"Panorama_HUD_hostageid_following"		"<font color='#e5da25'>ตัวประกัน (กำลังติดตาม {s:player_name})</font><font color='#dcdac0'> {d:player_health}%</font>"
+
+
+		"Panorama_HUD_playerid_overhead_health"			"{d:player_health}%"
+		"Panorama_HUD_playerid_overhead_money"			"${d:r:player_money}"
+
+		"Panorama_HUD_playerid_overhead_survival"					"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#00c3e1'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_lowhealth"			"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#d82429'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_money"				"<font color='#00c3e1'>{g:player_name:html:player_slot}</font><font color='#7ebc50'> ${d:r:player_money}</font>"
+		"Panorama_HUD_playerid_overhead_survival_grey"				"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#dddddd'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_lowhealth_grey"	"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#d82429'> {d:player_health}%</font>"
+		"Panorama_HUD_playerid_overhead_survival_money_grey"		"<font color='#dddddd'>{g:player_name:html:player_slot}</font><font color='#7ebc50'> ${d:r:player_money}</font>"
+
+		//////////////////////////////////////////////////////////////////
+		//
+		//	DEATH PANEL
+		//
+		///////////////////////////////////////////////////////////
+
+		"Panorama_SurvivalEndOfMatch_ShowStats"			"[{s:bind_jump}] แสดงสถานะแมตช์"
+		"Panorama_Death_Cancel_Start_Replay"			"[{s:bind_jump}] ข้าม"
+		"Panorama_Death_Cancel_Replay" 				"[{s:bind_jump}] ยกเลิกรีเพลย์"
+		"Panorama_Death_Snapshot"						"[{s:bind_jpeg}] บันทึกภาพนี้ไว้"
+		"Panorama_HUD_Spectate_Navigation_Replay_Death"	"<font color='#ddbb22'><b>[{s:bind_reload}] รีเพลย์ผู้สังหาร</b></font>"
+
+		"Panorama_DeathPanel_Killer1_YourWeapon"			"ฆ่าคุณด้วย {s:weapon_name} ของคุณเอง"
+		"Panorama_DeathPanel_Killer1_KillerWeapon"			"ฆ่าคุณด้วย {s:weapon_name} ของเขา"
+		"Panorama_DeathPanel_Killer1_OthersWeapon"			"ฆ่าคุณด้วย {s:weapon_name} ของ <font color='#adadad'>{s:other_player_name}</font>"
+		"Panorama_DeathPanel_Killer1_Weapon"				"ฆ่าคุณด้วย {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_Weapon_Plural" 		"ฆ่าคุณด้วย {s:weapon_name}"
+		"Panorama_DeathPanel_Killer1_Weapon_CustomString" 	"{s:weapon_name}"
+
+		"Panorama_DeathPanel_DamageTaken:f"					"<font color='#A0A0A0'>ความเสียหายที่ได้รับ:  </font><font color='#FFFFFF'><b>{d:damage_taken}</b></font> <font color='#A0A0A0'> ใน</font> <font color='#FFFFFF'><b>{d:hits_taken} ครั้ง </b></font>"
+		"Panorama_DeathPanel_DamageGiven:f"					"<font color='#A0A0A0'>ความเสียหายที่ทำได้: </font><font color='#FFFFFF'><b>{d:damage_given}</b></font> <font color='#A0A0A0'> ใน</font> <font color='#FFFFFF'><b>{d:hits_given} ครั้ง </b></font>"
+
+		/////////////////////////////////////////////////////////////////
+		//
+		//      CHATWHEEL OPTIONS
+		//
+		////////////////////////////////////////////////////////////
+
+		"Chatwheel_segment_top"	"บน"
+		"Chatwheel_segment_topright"	"บนขวา"
+		"Chatwheel_segment_right"	"ขวา"
+		"Chatwheel_segment_bottomright"	"ล่างขวา"
+		"Chatwheel_segment_bottom"	"ล่าง"
+		"Chatwheel_segment_bottomleft"	"ล่างซ้าย"
+		"Chatwheel_segment_left"	"ซ้าย"
+		"Chatwheel_segment_topleft"	"บนซ้าย"
+
+		"Chatwheel_ping_on_cooldown"  "ไม่สามารถปิ๊งได้ การปิ๊งกำลังคูลดาวน์อยู่"
+
+		"Chatwheel_plant"	"วางระเบิด"
+		"Chatwheel_sitea"	"ปิ๊งจุด A"
+		"Chatwheel_siteb"	"ปิ๊งจุด B"
+
+		"Chatwheel_section_move"	"การเคลื่อนที่"
+		"Chatwheel_sticktogether"	"เกาะกลุ่มกันไว้"
+		"Chatwheel_followme"	"ตามฉันมา"
+		"Chatwheel_followingyou"	"กำลังตามอยู่"
+		"Chatwheel_spreadout"	"แยกกัน"
+		"Chatwheel_fallback"	"ถอยกลับ"
+		"Chatwheel_gogogo"	"ไป ไป ไป!"
+		"Chatwheel_onmyway"	"กำลังไป"
+		"Chatwheel_gethostage"	"ตรวจดูตัวประกันด้วย"
+		"Chatwheel_quiet"	"เงียบหน่อย"
+
+		"Chatwheel_section_prepare"	"การเตรียมพร้อม"
+		"Chatwheel_requestecoround"	"เราควรประหยัดเงินนะ"
+		"Chatwheel_requestspend"	"เราควรซื้อของนะ"
+		"Chatwheel_requestleader"	"ใครจะนำ?"
+		"Chatwheel_requestweapon"	"ขออาวุธหน่อย"
+		"Chatwheel_requestplan"		"มีแผนอะไรบ้าง?"
+		"Chatwheel_aplan"	"ปิ๊งจุด A"
+		"Chatwheel_bplan"	"ปิ๊งจุด B"
+		"Chatwheel_midplan"	"ปิ๊งจุดกลาง"
+
+		"Chatwheel_section_grenades"	"ระเบิด"
+		"Chatwheel_decoy"	"ต้องการตัวล่อ"
+		"Chatwheel_smoke"	"ต้องการระเบิดควัน"
+		"Chatwheel_grenade"	"ต้องการระเบิดมือ"
+		"Chatwheel_fire"	"ต้องการระเบิดขวด"
+		"Chatwheel_flashbang"	"ต้องการระเบิดแสง"
+		
+		"Chatwheel_section_defend"	"ป้องกัน"
+		"Chatwheel_coverme"	"คุ้มกันหน่อย"
+		"Chatwheel_coveringyou"	"กำลังคุ้มกันคุณอยู่"
+		"Chatwheel_help"	"ช่วยด้วย"
+		"Chatwheel_needbackup"	"ต้องการกำลังเสริม"
+		"Chatwheel_holdposition"	"ยึดตำแหน่งนี้ไว้"
+        "Chatwheel_rotatetome"	"หันกลับมาหาฉัน"
+
+		"Chatwheel_section_bomb"	"สถานะระเบิด"
+		"Chatwheel_guardingbomb"	"กำลังคุ้มกันระเบิด"
+		"Chatwheel_bombsiteclear"	"จุดวางระเบิดเคลียร์"
+		"Chatwheel_droppedbomb"	"ระเบิดหล่นแล้ว"
+		"Chatwheel_bombpickedup"	"ระเบิดถูกเก็บแล้ว"
+		"Chatwheel_ifixbomb"	"ฉันจะปลด/วางระเบิดนะ"
+		"Chatwheel_youfixbomb"	"คุณปลด/วางระเบิดนะ"
+		
+		"Chatwheel_bombat"	"ปิ๊งระเบิดหน่อย" 
+
+		"Chatwheel_section_enemystatus"	"สถานะศัตรู"
+		"Chatwheel_heardnoise"	"ได้ยินเสียง" 
+		"Chatwheel_enemyspotted"	"พบศัตรูแล้ว"
+		"Chatwheel_sectorclear"	"พื้นที่เคลียร์"
+		"Chatwheel_sniperspotted"	"เจอสไนเปอร์แล้ว"
+		"Chatwheel_bombcarrierspotted"	"เจอคนถือระเบิดแล้ว"
+		"Chatwheel_threeleft"	"เหลือสามคน"
+		"Chatwheel_twoleft"	"เหลือสองคน"
+		"Chatwheel_oneleft"	"เหลือหนึ่งคน"
+		"Chatwheel_oneenemyhere"  "มีศัตรูหนึ่งคนที่นี่"
+		"Chatwheel_multipleenemieshere"  "พบศัตรูหลายคนที่นี่"
+		"Chatwheel_ihavethebomb"  "ฉันเก็บระเบิดแล้ว"
+
+		"Chatwheel_section_enemykilled"	"ศัตรูที่ฆ่า"
+		"Chatwheel_gotheadshot"	"ฉันโดนยิงหัว"
+		"Chatwheel_ikilledsniper"	"ฉันฆ่าสไนเปอร์แล้ว"
+		"Chatwheel_wekilledsniper"	"เราฆ่าสไนเปอร์แล้ว"
+		"Chatwheel_sawheadshot"	"เห็นคุณยิงหัว"
+
+		"Chatwheel_section_combatstatus"	"สถานะการต่อสู้"
+		"Chatwheel_attacking"	"กำลังโจมตี"
+		"Chatwheel_inposition"	"ประจำตำแหน่ง"
+		"Chatwheel_covering"	"กำลังคุ้มกัน"
+		"Chatwheel_pinned"	"ฉันถูกตรึงไว้"
+		"Chatwheel_incombat"	"กำลังต่อสู้"
+		"Chatwheel_friendlyfire"	"ยิงฝ่ายเดียวกัน"
+		"Chatwheel_lastunitalive"	"คนสุดท้ายยังไม่ตาย"
+
+		"Chatwheel_section_responses"	"การตอบสนอง"
+		"Chatwheel_wewon"	"เราชนะ"
+		"Chatwheel_welost"	"เราแพ้"
+		"Chatwheel_wearewinning"	"เรากำลังชนะ"
+		"Chatwheel_lostround"	"รอบนี้แพ้แล้ว"
+		"Chatwheel_thanks"	"ขอบคุณ!"
+		"Chatwheel_sorry"	"ขอโทษ"
+		"Chatwheel_compliment"	"เยี่ยม!"
+		"Chatwheel_affirmative"	"ใช่"
+		"Chatwheel_negative"	"ไม่"
+		"Chatwheel_peptalk"	"พูดให้กำลังใจหน่อย"
+		"Chatwheel_cheer"	"ไชโย"
+
+		"Chatwheel_plantingata"	"ฉันกำลังวางระเบิดที่จุด A"
+		"Chatwheel_plantingatb"	"ฉันกำลังวางระเบิดที่จุด B"
+		"Chatwheel_plantedata"	"ฉันวางระเบิดที่จุด A แล้ว"
+		"Chatwheel_plantedatb"	"ฉันวางระเบิดที่จุด B แล้ว"
+		"Chatwheel_planted"	"เราวางระเบิดแล้ว"
+
+		"Chatwheel_seehostagestaken"	"ตัวประกันกำลังถูกพาไป"
+		"Chatwheel_requestgethostages"	"จับตัวประกันไว้"
+
+		"Chatwheel_guardinga"	"ฉันกำลังคุ้มกันจุด A"
+		"Chatwheel_guardingb"	"ฉันกำลังคุ้มกันจุด B"
+		
+
+		
+		"Chatwheel_section_command"	"คำสั่ง"
+		"Chatwheel_section_report"	"รายงาน"
+
+		"Chatwheel_description" "กงล้อแช็ตทำให้เข้าถึงรายการคำสั่งวิทยุที่มีประโยชน์ที่สามารถปรับแต่งได้อย่างรวดเร็ว"
+
+		////
+		//
+		// Volatile Laptop
+		//
+		////
+
+		// ---------------------------------------------------------------------------------------------
+		"laptop_window_collection_title"			"XP แคตตาล็อกชุดสะสม"
+		"laptop_window_expiration_title"			"วันหมดอายุ"
+		"laptop_window_seal_title"					"สถานะ"
+		"laptop_window_messages_title"				"แช็ต - นักค้าอาวุธ"
+		"laptop_window_currentoffer_title"			"ข้อเสนอปัจจุบัน"
+		"laptop_app_title"							"<span class=\"laptop-app-title-prefix\">UP-</span>Link"
+		"laptop_app_version"						"v 1.1.0.2000"
+
+		"dealer_offer_attachment_title"							"{s:item-name}"
+		"dealer_offer_attachment_wear"							"{s:item-rarity}"
+		"dealer_offer_attachment_remaining_title"				"ข้อเสนอ #{d:offer-total}"
+		"dealer_offer_attachment_remaining"						"ข้อเสนอ #{d:offer-total}"
+		"dealer_offer_received_count"							"ข้อเสนอ <b>{s:offer-count}</b>"
+		"dealer_offer_attachment_final_title"					"ข้อเสนอสุดท้าย"
+		"dealer_offer_attachment_final"							"ข้อเสนอ {s:offer-count} และข้อเสนอสุดท้าย"
+		"dealer_offer_attachment_status"						"ข้อเสนอ - {s:offer-status}"
+		"dealer_offer_attachment_status-active"					"<b><span class=\"offer-active\">เปิดใช้งาน</span></b>"
+		"dealer_offer_attachment_status-price"					"<b><span class=\"offer-active\">{s:offer-price}</span></b>"
+		"dealer_offer_attachment_status-declined-price"			"{s:offer-price}"
+		"dealer_offer_attachment_status-declined"				"<span class=\"offer-declined\">ข้อเสนอ {s:offer-count} - ปฏิเสธ</span>"
+
+		"user_btn_purchase_desc_purchase"		"กดค้างไว้เพื่อซื้อไอเท็มนี้ หลังการซื้อแล้ว เทอร์มินัลจะถูกทิ้งไป"
+		"user_btn_purchase_desc_continue"		"กดค้างเพื่อปฏิเสธข้อเสนอนี้ถาวรและดูข้อเสนอถัดไป"
+		"user_btn_purchase_desc_end"		"ปฏิเสธข้อเสนอสุดท้ายและทิ้งเทอร์มินัลนี้"
+		"user_btn_purchase_title"			"ข้อเสนอ - {s:offer-count}"
+		"user_btn_purchase_final_title"		"<b>ข้อเสนอสุดท้าย</b>"
+		"user_btn_decline_desc"				"ปฏิเสธข้อเสนอนี้และดูข้อเสนออื่น"
+		"user_btn_accept"		"ยอมรับข้อเสนอ <b>{s:price}</b>"
+		"user_btn_accept_final"	"ยอมรับข้อเสนอสุดท้าย <b>{s:price}</b>"
+		"user_btn_accept_0"		"ข้อเสนอ <b> {s:price} ใช้ได้</b>"
+		"user_btn_accept_1"		"ฉันยอมรับราคาได้ - <b>{s:price}</b>"
+		"user_btn_accept_2"		"ฉันรับราคา <b>{s:price}</b>"
+		"user_btn_accept_3"		"ฉันจะซื้อที่ราคา <b>{s:price}</b>"
+		"user_btn_accept_4"		"ฉันให้ราคาคุณได้ที่ <b>{s:price}</b>"
+		"user_btn_accept_5"		"นั่นราคาดีเลย — <b>{s:price}</b>"
+		"user_btn_next"			"ปฏิเสธข้อเสนอ"
+		"user_btn_next_0"		"น่าสนใจนะ แต่ไม่ล่ะ"
+		"user_btn_next_1"		"ไม่คุ้มกับทุนฉันเลย"
+		"user_btn_next_2"		"รับไม่ได้หรอก"
+		"user_btn_next_3"		"ผ่าน"
+		"user_btn_next_4"		"ไม่รับข้อเสนอหรอก"
+		"user_btn_next_5"		"ขอบใจนะ แต่ไม่ล่ะ"
+		"user_btn_next_6"		"ไม่ใช่คราวนี้"
+		"user_btn_next_7"		"ไม่ใช่วันนี้"
+		"user_btn_pause"		"หยุดข้อเสนอชั่วคราว"
+		"user_btn_end"			"ปฏิเสธข้อเสนอสุดท้าย"
+
+		"user_message_limit_0"		"ฉันสามารถรับราคาได้ถึง <b>{s:limit-setting}</b>"
+		"user_message_limit_1"		"กำหนดเพดานราคาเป็น <b>{s:limit-setting}</b> ดีไหม"
+		"user_message_limit_2"		"จำกัดราคาไว้ <b>{s:limit-setting}</b> กำลังดี"
+		"user_message_limit_3"		"จำกัดราคาไว้ที่ <b>{s:limit-setting}</b> กำลังดี"
+		"user_message_limit_unlimited_0"	"<b>ไม่ต้องจำกัดราคา</b> ฉันอยากดูทุกอย่าง"
+		"user_message_limit_unlimited_1"	"<b>งบไม่อั้น</b> ไม่ต้องห่วงเรื่องเงินหรอก"
+		"user_message_limit_unlimited_2"	"ฉันตั้งใจมาซื้อของ <b>มีอะไรก็เอามาดูให้หมด</b>"
+		"user_message_limit_unlimited_3"	"ถ้ามันใช้ได้ ฉันก็สนใจ <b>ไม่จำกัดราคา</b>"
+		"user_message_limit_unlimited_4"	"งบไม่อั้น"
+		"offer_limit_setting"		"จำกัดข้อเสนอ: {s:limit}"
+		"offer_limit_setting_interface"		"ขีดจำกัดข้อเสนอ: {s:limit} <img src='file://{images}/icons/ui/expand.svg' class='expand-icon'/>"
+
+		"dealer_offer_Unknown"							"-"
+		"dealer_offer_1"								"1"
+		"dealer_offer_2"								"2"
+		"dealer_offer_3"								"3"
+		"dealer_offer_4"								"4"
+		"dealer_offer_5"								"5"
+		"dealer_offer_6"								"6"
+		"dealer_offer_7"								"7"
+		"dealer_offer_8"								"8"
+		"dealer_offer_9"								"9"
+		"dealer_offer_10"								"10"
+
+		"current_offer_tooltip"		"ข้อเสนอปัจจุบันของนักค้าอาวุธถึงคุณ"
+		"declined_offer_tooltip"	"ข้อเสนอถูกปฏิเสธ"
+		"future_offer_tooltip"		"ข้อเสนอยังไม่เปิดเผย"
+		"laptop_expiration_tooltip"		"เวลาที่เหลืออยู่จนกว่าอัปลิงก์เทอร์มินัลและข้อเสนอจะหมดอายุ"
+		"laptop_max_offer_tooltip"		"ตั้งค่าขีดจำกัดข้อเสนอสูงสุดของคุณ คุณจะได้รับเฉพาะข้อเสนอที่ราคาต่ำกว่าขีดจำกัดที่กำหนดไว้ คุณสามารถเปลี่ยนการตั้งค่าได้ทุกเมื่อ"
+		"collection_xp_tooltip"			"รับ XP จากการดูข้อเสนอในชุดสะสมนี้ เปิดเพื่อดูความคืบหน้าและแลกรับ XP"
+		"terminal_offer_limit_tooltip"		"อัปเดตขีดจำกัดข้อเสนอสูงสุดของคุณ นักค้าอาวุธจะแสดงเฉพาะข้อเสนอที่ไม่เกินราคาที่คุณจำกัดไว้"
+		"popup_lootlist_title"			"XP แคตตาล็อกชุดสะสม"
+		"popup_lootlist_desc"			"รับ XP จากการดูข้อเสนอในชุดสะสมนี้"
+
+		"popup_lootlist_progress:f"      "ดูข้อเสนอ {total, plural, other{{d:seen}/{d:total} แล้ว}}"
+		"popup_lootlist_claim_xp"		"รับ XP โบนัส"
+		"popup_lootlist_claim_ww"		"กำลังรับ XP..."
+		"popup_lootlist_claim_ok"		"✔ XP ที่ได้รับ"
+		"popup_vpn_status_connected"	"สถานะ: เชื่อมต่อกับเครือข่ายที่ปลอดภัยแล้ว"
+		"popup_vpn_status_disconnected"	"สถานะ: ตัดการเชื่อมต่อ"
+		"popup_signal_full" 			"สัญญาณเต็ม"
+		"popup_signal_ok" 				"สัญญาณแรง"
+		"popup_offer_limit_desc"		"อัปเดตขีดจำกัดข้อเสนอสูงสุดของคุณให้ทุกข้อเสนอในอนาคต"
+		"laptop_battery_tooltip" 		"ชาร์จแบตเตอรี่: {d:percent}%"
+		"laptop_original_seal_tooltip" 	"ไอเท็มใดก็ตามที่ถูกสั่งซื้อจากอัปลิงก์เทอร์มินัลจะมาพร้อมใบรับรองเจ้าของเดิม ซึ่งจะมีผลตลอดระยะเวลาที่คุณเป็นเจ้าของ"
+		"laptop_zoom_tooltip" 			"เลื่อนล้อเมาส์เพื่อซูมเข้าและออก"
+		"laptop_pan_tooltip" 			"กดปุ่ม \"Shift\" ค้างไว้แล้วลากเพื่อแพนกล้อง"
+		"laptop_pricing_tooltip"		"ราคาเป็นราคาเดียวกันทั่วโลกและจะปรับเองโดยอัตโนมัติตามความต้องการไอเท็มแต่ละรายการในชุดสะสมนี้"
+
+		"dealer_message_set_offer_limit_0"		"ก่อนอื่นเลย คุณรับราคาข้อเสนอของสินค้าได้มากแค่ไหน?"
+		"dealer_message_set_offer_limit_1"		"มาคุยเรื่องนี้ให้เสร็จก่อนดีกว่า<!--.25--> คุณจำกัดงบไว้เท่าไหร่?"
+		"dealer_message_set_offer_limit_2"		"ก่อนเราจะเริ่มกัน...<!--.25--> จำกัดงบไว้เท่าไหร่? คุณรับราคาข้อเสนอของสินค้าได้มากแค่ไหน?"
+		
+		"dealer_message_start_0"  	"ของพวกนี้เป็นรุ่นที่ใช้กันในหมู่ผู้รับเหมา<!--.25-->มีครบทุกฟังก์ชัน ลูกเล่นเพียบ แถมไม่มีเอกสาร"
+		"dealer_message_start_1"  	"ฉันกำลังปล่อยของจากสต็อกในช่องทางสีเทา ไม่มีเอกสาร<!--.25-->ไม่ต้องห่วง พวกนี้ของเย็นสนิทแล้ว หลุดออกจากระบบไปหลายปี ไม่มีใครมาตามหาหรอก<!--.25-->แถมยังยิงได้ตรงเป้าที่คุณเล็ง ถ้าคุณอยากลองนะ"
+		"dealer_message_start_2"  	"ศุลกากรที่อาฮ์ราแดนอายัดสินค้าของฉันไว้เมื่อเช้านี้ ฉันพยายามแก้สถานการณ์ด้วยเรื่องเศร้าเกี่ยวกับอุปกรณ์การแพทย์กับใครสักคนที่กำลังจะตาย...ไม่ว่าจะเป็นใครก็ตาม<!--.25-->ไม่ได้ผลหรอก แต่สุดท้ายกระเป๋าเอกสารที่เต็มไปด้วยเงินต่างหากที่ได้ผล<!--.25-->มาลองดูเครื่องฟอกไตไหม ก่อนที่ฉันจะเอาไปให้พวกเด็กกำพร้า"
+		"dealer_message_start_3"  	"เพิ่งเกิดการเปลี่ยนแปลงระบอบการปกครองขึ้นในรัฐหนึ่ง<!--.25-->ประตูโกดังเปิดออกแล้วฉันก็เลือกดูของจากกองนั้นด้วยตนเอง<!--.25-->ฉันขายเฉพาะชิ้นส่วนที่ปลอดเชื้อ เลือกดูได้เลยนะ"
+		"dealer_message_start_4"  	"ของที่ฉันมีในวันนี้สะอาดทั้งหมด<!--.25-->รู้ ๆ กันอยู่ว่าของพวกนี้จะผ่านมือคุณเป็นคนแรก"
+		"dealer_message_start_5"  	"ชิ้นส่วนปลอดเชื้อ ไม่มีหมายเลขซีเรียล ทำงานได้อย่างสมบูรณ์แบบ<!--.25-->ศาลอาชญากรสงครามเรียกสิ่งเหล่านี้ว่าหลักฐาน<!--.25-->แต่คุณกับฉันรู้ดีว่าสิ่งเหล่านี้เป็นผลงานชิ้นเอก"
+		"dealer_message_start_6"  	"ของที่ส่งมาทั้งหมดนี้เป็นของหายากที่เพิ่งได้รับการปลดปล่อยจากหน่วยสวนสนาม<!--.25-->ผ่านการสวนสนามมาเยอะ แต่ไม่เคยยิงเลย"
+		"dealer_message_start_7"  	"ลูกค้าคนอื่นมักจะถามว่าฉันไปหาของจากไหนมาขาย ฉันไม่ชอบเลย<!--.25-->แต่คุณสนใจเพียงแค่ว่ามันคือของที่ดีที่สุดในตลาดหรือเปล่า<!--.25-->ลองทายดูสิ: ใช่แล้วล่ะ มันดีที่สุด"
+		"dealer_message_start_8"  	"ข้อตกลงสันติภาพในดรอสวิก ฉันรักสันติภาพ<!--.25-->เพราะฉันรู้จักนายพลคนหนึ่งที่มีหนี้สินมากมายพร้อมอาวุธเต็มคลังแต่ไม่มีใครใช้<!--.25-->คือแบบว่า...<!--.25-->แล้วก็เห็นได้ชัดเลยว่าสันติภาพนั้นเป็นสิ่งที่ดี ชีวิตที่ไร้เดียงสาและ...<!--.25-->คุณไม่สนใจเลยว่าฉันกำลังพูดถึงอะไร"
+		"dealer_message_start_9"  	"ของล็อตนี้มีของแปลก ๆ จากช่องทางสีเทา<!--.25-->ลำกล้องปืนขนาดพิเศษ ไม่ใช่ของสำหรับมือสมัครเล่น คุณต้องชอบแน่ ๆ"
+		"dealer_message_start_10"  	"น่าอายจัง<!--.25-->ฉันคงจะติดป้ายลังบนรายการจัดส่งผิด<!--.25-->เอิ่ม มีลังสัก 2-3 โหลได้มั้ง<!--.25-->คุณช่วยฉันจัดการสินค้าพวกนี้ให้หายไปก่อนที่เจ้าหน้าที่ท่าเรือจะมาตรวจสอบได้ไหม"
+		"dealer_message_start_11"  	"เจ้าพนักงานตรวจสอบในดรอสวิกเรียกร้องสินบนสำหรับของชิ้นนี้ เจ้าโง่นั่นเริ่มพูดถึงคำสั่งยึด <!--.25-->ฉันรู้จักคนในดรอสวิกที่รู้วิธีจัดการกับพวกช่างพูด ตอนนี้เขาอ้าปากไม่ได้แล้วแหละ<!--.25-->โชคดีที่สินค้าชิ้นนี้พูดแทนตนเองได้"
+		"dealer_message_start_12"  	"ต้องยัดเงินให้ทุกคนที่อาฮ์ราแดน ถึงจะเอาของล็อตนี้ข้ามชายแดนมาได้<!--.25-->สินบนทั้งหมดต้องจ่ายเป็นเงินอาฮ์ริอีกนะ รู้ไหม? ว่าต้องขนเงินไปเป็นตั้ง ๆ เพื่อจ่ายสินบนด้วยสกุลเงินที่ไร้ค่า พวกนั้นควรทำอะไรสักอย่างกับเศรษฐกิจของตัวเองได้แล้ว"
+		"dealer_message_start_13"	"ฉันมีนายหน้าลับคนหนึ่งที่ต้องการให้ของนี่ถูกขนย้ายออกไปอย่างเร็ว<!--.25-->ทั้งหมดที่เขาพูดก็แค่ \"เร็ว\"<!--.25-->อีกคำที่พูดก็ \"มาก ๆ\"<!--.25-->เอาเป็นว่า: ถ้าคุณไม่อยากรู้ว่าเขาขายทำไม งั้นคุณกำลังจะได้มีความสุขมาก ๆ เลยล่ะ"
+		"dealer_message_start_14"	"วันนี้มีแต่รุ่นเก่า ๆ หน่อยนะ<!--.25-->ดูหรูหราไหม? ไม่ล่ะ แต่ไว้วางใจได้แน่นอน<!--.25-->หลานของคุณก็อาจเอาไปยิงเล่นได้เลย"
+		"dealer_message_start_15"	"กองกำลังฝ่ายกบฏยึดอาวุธพวกนี้มาจากคลังของท่านผู้นำผู้ยิ่งใหญ่<!--.25-->ฉันว่าน่าจะยึดร่างลำตัวของท่านผู้นำพร้อมแยกส่วนออกจากแขน ขา และหัวด้วยนะ<!--.25-->(ของแบบนั้นฉันไม่ขายหรอก แต่ถ้าคุณสนใจ ฉันพอจะแนะนำคนที่ขายให้ได้อยู่)"
+		"dealer_message_start_16"	"หัวหน้าด่านชายแดนดรอสวิกขู่จะยึดของล็อตนี้ไป<!--.25-->ฉันว่าเขาคงไม่ได้รับบันทึกว่า ฉันไม่จ่ายสินบนในดรอสวิกหรอกนะ โดยเฉพาะเมื่อพวกนักเลงกล้ามโตท้องถิ่นมันถูกซะขนาดนั้น ดรอสวิกมันก็เหมือนเมืองหลวงของมวยโลกนั่นแหละ<!--.25-->เอาเถอะ สุดท้ายคนที่มาแทนเขาก็ดันทำใบคำสั่งยึดของหายไปเอง และแขนเขาก็ยังไม่หักนะ"
+		"dealer_message_start_17"	"ของทั้งหมดนี่มาจากชุดสะสมส่วนตัวของมหาเศรษฐีเลยนะ<!--.25-->จริง ๆ ตอนนี้ก็เป็นแค่อดีตมหาเศรษฐีแล้วล่ะ เขากำลังถูกสอบสวนอยู่ ซึ่งหมายความว่าฉันก็กำลังปล่อยของที่เขาปล่อยเองไม่ได้<!--.25-->พูดตรง ๆ เลยนะ มันจะดูดีขึ้นเยอะ ถ้าอยู่ในมือคุณมากกว่าที่จะแขวนโชว์บนผนังเรือยอชท์ซะอีก"
+		"dealer_message_start_18"	"เจ้าพนักงานตรวจสอบที่ท่าเรือเจอความผิดปกติในสินค้าล็อตนี้<!--.25-->เรื่องตลกก็คือ ลังปืนไรเฟิลหนึ่งลัง มันดันหนักพอดีเป๊ะเท่ากับลัง \"อะไหล่รถแทรกเตอร์\" ถ้าเอาเงินหมื่นดอลลาร์วางลงไปบนตาชั่งด้วยก็เป๊ะเลย<!--.25-->มาลองดูอะไหล่แทรกเตอร์พวกนี้สิ"
+		"dealer_message_start_19"	"ของที่ฉันมีวันนี้รอดมาจากการรัฐประหารกว่าจะมาถึงมือคุณ<!--.25-->ถึงภายนอกจะมีรอยถลอก แต่ฟังก์ชันยังสมบูรณ์ สิ่งสำคัญคือของข้างในใช่ไหมล่ะ?"
+		"dealer_message_start_20"	"สาธารณรัฐกระจอก ๆ เพิ่งเอาประธานาธิบดีของตัวเองไปแขวนคอ<!--.25-->โชคดีของฉันที่ได้สืบทอดเส้นทางลำเลียงสินค้าของเขาต่อ"
+		"dealer_message_start_21"	"เรียกว่าความผิดพลาดในการประมวลผลก็ได้ ความคลาดเคลื่อนในเอกสาร หรือพูดง่าย ๆ ก็คือการจัดเก็บที่ผิดพลาดแบบซื่อ ๆ<!--.25-->เรื่องพลาด ๆ แบบนี้มันเกิดขึ้นได้ ฉันก็แค่พยายามช่วยเพื่อนเอาไว้ เขาจะได้ไม่ถูกปลดออกจากตำแหน่งจ่าสิบเอก<!--.25-->สินค้าล็อตนี้มันต้องหายไปจากระบบ"
+		"dealer_message_start_22"	"หัวหน้าศุลกากรบางคนคิดว่าจะกดดันฉันได้ด้วยของล็อตนี้ แต่ฉันก็ให้สหภาพแรงงานท่าเรือกดดันเขาหนักกว่าอีก<!--.25-->เรื่องตลกคือเอกสารมันเคลียร์เร็วมาก ตอนที่ทุกคนมัวแต่ยุ่งตามหาคนหายอยู่<!--.25-->หวังว่าพวกเขาจะเจอคนน่าสงสารคนนั้นนะ ฉันคิดว่าเขาคงว่ายน้ำไม่เป็นด้วยซ้ำ"
+		"dealer_message_start_23"	"เจ้าหน้าที่ด่านตรวจชายแดนในอาฮ์ราแดนบอกว่าเอกสารไม่ถูกต้อง ฉันเลยให้อาฮ์ริไปฟ่อนหนึ่ง แล้วจู่ ๆ เอกสารก็ถูกต้องซะงั้น<!--.25-->ฉันไม่รู้ด้วยซ้ำว่า 10,000 อาฮ์ริคิดเป็นเงินจริงเท่าไหร่ ประมาณ 6 ดอลลาร์หรืออะไรประมาณนั้นมั้ง<!--.25-->แล้วคุณอยากดูปืนที่ไม่มีอยู่จริงบ้างไหมล่ะ?"
+		"dealer_message_start_24"	"ฉันมีนายพลกระหายสงครามที่รับปากว่าจะเหมาสินค้าพวกนี้หมด แต่เผอิญนายพลงั่งนั่นดันไปโดนโดรนยิงจนเป็นผุยผง<!--.25-->ปิดหน้าต่างไว้ให้มิดชิดนะ ขอบอก แต่โชคร้ายของเขาคือโชคดีของคุณ"
+		"dealer_message_start_25"	"ฉันไม่รู้ว่าการเปลี่ยนแปลงระบอบการปกครองในดรอสวิกนั่นเกิดขึ้นได้ยังไง แต่ไป ๆ มา ๆ โกดังที่เต็มไปด้วยลังอาวุธก็หายวับไปท่ามกลางความชุลมุนวุ่นวาย<!--.25-->แล้วไป ๆ มา ๆ มันก็ตกมาอยู่ในมือฉัน พิลึกใช่ไหมล่ะ<!--.25-->แต่มันพิสดารไปกว่านั้นอีกนะ ไป ๆ มา ๆ อีกเหมือนกันที่ฉันอาจเอามาขาย ให้คุณไง ตอนนี้เลยก็ได้นะ"
+		"dealer_message_start_26"	"ฉันมีลังสินค้าที่สำแดงไว้ผิด แต่อยากจะให้คุณดูนะ<!--.25-->อย่าหลงเชื่อป้ายกำกับที่บอกว่าเป็น \"อุปกรณ์เกษตร\" ล่ะ ดินจะกลบหน้าคุณเอาได้ง่าย ๆ ถ้าคุณไม่ยิงก่อน"
+		"dealer_message_start_27"	"ฉันเกลียดการร่วมมือกับพวกกบฏ ที่จริงมันเป็นแค่คำสุภาพที่ใช้เรียกบรรดาพลเรือน ซึ่งเป็นคำสุภาพที่ใช้เรียกพวกมือสมัครเล่นกิ๊กก๊อก<!--.25-->แต่เอาเถอะ พวกนั้นหายเข้ากลีบเมฆกันไปหมดแล้ว ฉันก็เลยเปิดโอกาสให้มือโปรตัวจริงลองอาวุธนี้มั่ง"
+		"dealer_message_start_28"	"พื้นที่อันตรายทางใต้ที่เต็มไปด้วยปมความขัดแย้งอย่างต่อเนื่องนั้นเพิ่งมีรัฐสภาที่ล่มสลายทุกหกเดือนไปหยก ๆ<!--.25-->คลังอาวุธในท้องถิ่นหลายแห่งโดนบุกตีจนแตกกระจุยเหมือนตุ๊กตาปิญญาตาเลย"
+		"dealer_message_start_29"	"เมื่อวันศุกร์ที่ผ่านมา เจ้าพนักงานตรวจสอบที่ท่าเรือระบุว่าตู้สินค้านี้มีลักษณะผิดปกติ<!--.25-->พอถึงวันจันทร์ ลูกสาวของเขาก็มีเงินค่าเล่าเรียนเพียงพอที่จะเข้าเรียนที่ Stamwick และตู้สินค้านั่นก็กลายเป็นอุปกรณ์เกษตรอีกแล้ว<!--.25-->ฉันจะพูดอะไรได้ การศึกษาเป็นสิ่งสำคัญนะ เรามาดูอุปกรณ์เกษตรกันดีกว่า"
+
+		"dealer_message_resume_0"  	"<!--1-->คุณกลับมาแล้ว ดีล่ะ ข้อเสนอยังอยู่นะ"
+		"dealer_message_resume_1"  	"<!--1-->ต้องใช้เวลาคิดสักครู่ใช่ไหม? ไม่มีปัญหา"
+		"dealer_message_resume_2"  	"<!--1-->ฉันคิดไว้แล้ว คุณต้องกลับมา"
+		"dealer_message_resume_3"  	"<!--1-->เรามาเริ่มกันต่อจากที่เราค้างไว้ดีกว่า"
+		"dealer_message_resume_4"  	"<!--1-->พร้อมจะทำธุรกิจกันหรือยัง?"
+		"dealer_message_resume_5"  	"<!--1-->ดีเลย คุณกลับมาแล้ว ฉันต้องจัดการเรื่องนี้ให้จบ ไม่งั้นคนไม่ถูกใจจะเริ่มสงสัย"
+		"dealer_message_resume_6"  	"<!--1-->คุณกลับมาแล้ว เราถึงไหนแล้วนะ?"
+
+		"dealer_message_first_offer_0"	"<!--.5-->ถ้าคุณสนใจ เรามาทำข้อตกลงกันเถอะ"
+		"dealer_message_first_offer_1"	"<!--.5-->ขอบอกให้คุณรู้ไว้ ฉันยังมีคนอื่นที่สนใจของชิ้นนี้อยู่นะ"
+		"dealer_message_first_offer_2"	"<!--.5-->ถ้าคุณจะเอา ก็เอาเลย ไม่อย่างนั้นก็บอกมา ฉันมีช่องทางขายให้ผู้ซื้อที่สนใจเยอะแยะ"
+		"dealer_message_first_offer_3"	"<!--.5-->อันนี้เป็นของคุณเลย ถ้าสนใจ ถ้าไม่เอา คุณก็พลาดเอง"
+		"dealer_message_first_offer_4"	"<!--.5-->ถ้าตกลงก็มาเริ่มกันเลย ฉันคงข้อเสนอนี้ไว้ตลอดไม่ได้หรอกนะ"
+		"dealer_message_first_offer_5"	"<!--.5-->ข้อเสนออยู่ตรงหน้าแล้ว เอาหรือไม่เอา"
+		"dealer_message_first_offer_6"	"<!--.5-->คุณจะเอาไหมเนี่ย? คุณไม่ทำร้ายความรู้สึกฉันหรอก ถ้าบอกไม่เอา ฉันมีคนซื้ออีกหลายคนรออยู่"
+		"dealer_message_first_offer_7"	"<!--.5-->เราจะซื้อขายกันไหม?"
+		"dealer_message_first_offer_8"	"<!--.5-->ฉันไม่มีเวลาทั้งวันหรอกนะ"
+		"dealer_message_first_offer_9"	"<!--.5-->เราจะทำธุรกิจกันหรือเปล่า?"	
+		"dealer_message_first_offer_10"	"<!--.5-->ฉันไม่อยากเสนอขายจนเกินไปนะ ของมันขายตัวเองได้อยู่แล้ว คุณจะเอาหรือไม่เอา?"		
+
+		"dealer_message_next_offer_0"	"<!--1-->เอาล่ะ อันนั้นคงไม่ถูกใจคุณ แล้วอันนี้ล่ะ?"
+		"dealer_message_next_offer_1"	"<!--1-->คุณพลาดแล้ว โชคดีนะคุณมาเจอฉันตอนอารมณ์ดี ลองดูอันนี้สิ"
+		"dealer_message_next_offer_2"	"<!--1-->ขอผ่านเหรอ? เอาเถอะ คุณพลาดแล้ว ลองดูอันนี้ละกัน"
+		"dealer_message_next_offer_3"	"<!--1-->ของชิ้นนี้มันขายตัวของมันเองได้อยู่แล้ว ถ้าคุณไม่ซื้อ ฉันก็แค่หาคนอื่นมาซื้อ<!--.5-->แต่ในเมื่อคุณยังอยู่ที่นี่ ฉันว่าชิ้นนี้มันเหมาะกับคุณที่สุดเลยล่ะ"
+		"dealer_message_next_offer_4"	"<!--1-->ฉันเข้าใจแล้ว มันไม่ใช่แนวของคุณ ลองดูอันนี้ได้ไหม ฉันคิดว่าคุณน่าจะชอบนะ"
+		"dealer_message_next_offer_5"	"<!--1-->ฉันรู้สึกว่า คุณจะขอผ่านของอันนั้น โชคดีที่ฉันมีเจ้าตัวน้อยแสนสวยรอให้ชมอยู่"
+		"dealer_message_next_offer_6"	"<!--1-->ใช่ ฉันว่าแล้วเชียว ลองดูอันนี้ ฉันว่ามันเหมาะกับคุณมาก"
+		"dealer_message_next_offer_7"	"<!--1-->คุณต้องเสียใจที่ขอผ่านของอันนั้นภายหลังแน่ แต่ไม่เป็นไร ลองดูอันนี้หน่อยไหม?"
+		"dealer_message_next_offer_8"	"<!--1-->ฉันรู้จักคุณดีเกินไป ฉันคิดแล้วว่าคุณไม่เอาอันนั้นแน่ ลองดูอันนี้หน่อยไหม?"
+		"dealer_message_next_offer_9"	"<!--1-->เอาล่ะ ข้ามจานเรียกน้ำย่อยไปก่อน เตรียมพร้อมเจอจานหลักได้เลย"
+		"dealer_message_next_offer_10"	"<!--1-->ฉันเข้าใจแล้ว ฉันก็ไม่ชอบอันนั้นเหมือนกัน ลองดูอันนี้หน่อย"		
+		"dealer_message_next_offer_11"   "<!--1-->อันนั้นอาจจะฝืนรสนิยมไปหน่อย งั้นอันต่อไปน่าจะทำให้พอใจได้มากกว่านี้"
+		"dealer_message_next_offer_12"   "<!--1-->สต็อกสินค้าของเรายังมีอีกเพียบเลย มาดูของชิ้นงามอันนี้สิ"
+		"dealer_message_next_offer_13"   "<!--1-->รู้อะไรไหม? ฉันนึกแล้วว่าคุณต้องพูดแบบนี้แน่ งั้นเรามาดูอันถัดไปกันเถอะ"
+		"dealer_message_next_offer_14"   "<!--1-->คุณนี่เอาใจยากกว่าที่คิดแฮะ อันนี้พอจะทำให้คุณยิ้มได้บ้างไหม?"
+		"dealer_message_next_offer_15"   "<!--1-->ฉันไม่เสียความรู้สึกหรอกนะ ฉันไม่ได้เป็นคนสร้างมันขึ้นมาสักหน่อย เอาตัวเลือกอื่นไปดูนะ"
+		"dealer_message_next_offer_16"   "<!--1-->ฉันเองก็คงไม่เอาอันนั้นเหมือนกัน แต่ว่าดูอันนี้สิ น่าสนใจมาก"
+		"dealer_message_next_offer_17"   "<!--1-->ขอผ่านเหรอ? เข้าใจแล้ว งั้นข้อเสนอต่อไปนะ"
+		"dealer_message_next_offer_18"   "<!--1-->คุณเนี่ยมาตราฐานสูงชะมัด เข้าทางฉันเลย อันต่อไปคือมาตราฐานทองเลย"
+		"dealer_message_next_offer_19"   "<!--1-->ฉันไม่อยากให้คุณเสียดายเงิน และคุณก็คงไม่อยากให้ฉันเสียดายเวลาเหมือนกัน มาดูอันนี้กัน"
+		"dealer_message_next_offer_20"   "<!--1-->เฮ้ย ฉันชื่นชมในความจริงใจนะ ไปกันต่อเลยจะได้ไม่เสียเวลา"
+		"dealer_message_next_offer_21"   "<!--1-->โอเค คุณไม่ชอบอันนั้นสินะ ดีนะที่ฉันมีปืนมาขายมากกว่าหนึ่งกระบอก"
+		"dealer_message_next_offer_22"   "<!--1-->ไม่มีปัญหา ยังมีของอีกเพียบเลย มาดูอันต่อไป"
+		"dealer_message_next_offer_23"   "<!--1-->ฉันนึกว่าขายได้แล้วนะเนี่ย… งั้นลองอันนี้ละกัน เผื่อจะปิดการขายได้จริง ๆ"
+		"dealer_message_next_offer_24"   "<!--1-->เข้าใจแล้ว คุณไม่ชอบก็ไม่เป็นไร มันก็ไม่เหมาะกับทุกคนหรอก แต่อันนี้กำลังเรียกหาคุณก็ได้"
+		"dealer_message_next_offer_25"   "<!--1-->ดูเหมือนคุณจะไม่ค่อยเข้าใจสิ่งที่ฉันพยายามเสนออยู่นะ งั้นลองดูอันนี้หน่อย เผื่อจะโดนใจคุณ"
+		"dealer_message_next_offer_26"   "<!--1-->โอเค ไม่มาเล่น ๆ แล้วนะ อันต่อไปฉันรับประกันเลยว่า คุณต้องชอบแน่ ๆ น่าจะมั้ง"
+		"dealer_message_next_offer_27"   "<!--1-->ไม่ชอบอันนั้นเหรอ? งั้นฉันเก็บเข้าคลังอาวุธของฉันก็ได้… แล้วอันนี้ล่ะ เป็นไง?"
+		"dealer_message_next_offer_28"   "<!--1-->คุณนี่รสนิยมดีจริง ๆ งั้นมาลองดูอันต่อไปหน่อยสิ ว่าจะผ่านมาตรฐานสูงของคุณได้ไหม"
+		"dealer_message_next_offer_29"   "<!--1-->เอาล่ะ อันเมื่อกี้มันก็แค่ของกองบนสุดเอง เดี๋ยวฉันขอคุ้ยลงไปลึกกว่านี้หน่อย"
+		"dealer_message_next_offer_30"   "<!--1-->ลืมอันก่อนหน้านี้ไปซะ ฉันอยากให้คุณดูอันนี้หน่อย"
+		"dealer_message_next_offer_31"   "<!--1-->อันนี้เหมาะกับคุณที่สุดแล้ว ไม่ได้จะอวยนะ แต่อันนี้ของสภาพดีเลย"
+		"dealer_message_next_offer_32"   "<!--1-->เฮ้ คุณจะซื้อหมดทุกอันไม่ได้หรอก ฉันเข้าใจนะ บางทีคุณอาจกำลังรออันพิเศษอยู่… อย่างเช่นอันนี้ไง"
+		"dealer_message_next_offer_33"   "<!--1-->อันนั้นแค่ซ้อม ๆ นะ อันนี้สิของจริง"
+		"dealer_message_next_offer_34"   "<!--1-->ใช่ ฉันไม่คิดว่าจะขายได้เหมือนกัน แต่อันถัดไปล่ะ ฉันเห็นอันนี้ก็นึกถึงคุณเลย"
+		"dealer_message_next_offer_35"   "<!--1-->ก็จริงนะ อันนี้ฉันเก็บไว้ให้คุณเลยล่ะ"
+		"dealer_message_next_offer_36"   "<!--1-->ไม่ใช่งานฉันหรอกนะที่จะทำให้คุณมาชอบมัน ฉันก็แค่พยายามขายของก็เท่านั้น งั้นอันต่อไปเลย"
+		"dealer_message_next_offer_37"   "<!--1-->ไม่เป็นไร ฉันว่าอันต่อไปนี่น่าจะเหมาะกับคุณมากกว่า"
+		"dealer_message_next_offer_38"   "<!--1-->ฉลาดนี่นา ฉันก็รู้อยู่แล้วล่ะว่าคุณคงไม่รีบเอาอันนั้นหรอก งั้นเดี๋ยวฉันเอาอันที่ดีกว่านี้มาให้ดู"
+		"dealer_message_next_offer_39"   "<!--1-->ไม่มีปัญหา ฉันเองก็คงไม่ซื้ออันนั้นเหมือนกันแหละ แต่อันนี้สิ อีกเรื่องเลยนะ..."
+		"dealer_message_next_offer_40"   "<!--1-->นี่ฉันต้องลุยไปถึงหลังร้าน หยิบของจากชั้นเอาอันพรีเมียมมาเลยใช่ไหม? ได้เลย จัดให้!"
+
+		"dealer_message_last_offer_0"	"<!--0-->เอาล่ะ ข้อเสนอสุดท้ายของสุดท้ายแล้วนะ รับหรือไม่รับ"
+		"dealer_message_last_offer_1"	"<!--0-->ลองพิจารณาข้อเสนอสุดท้ายของฉันดู"
+		"dealer_message_last_offer_2"	"<!--0-->ข้อเสนอสุดท้ายแล้ว รับหรือไม่รับ ช่วยเลิกทำฉันเสียเวลาได้แล้ว"
+		"dealer_message_last_offer_3"	"<!--0-->ข้อเสนอสุดท้ายแล้ว<!--1-->คุณไม่อยากได้ก็ไม่เป็นไรนะ แต่ถ้าเป็นฉันจะถอยห่างหน่อย ของอันนี้มันระเบิดแน่ ๆ เลย"
+		"dealer_message_last_offer_4"	"<!--0-->ข้อเสนอสุดท้ายแล้ว ฉันไม่ขอร้องหรอกนะ"
+		"dealer_message_last_offer_5"	"<!--0-->เอาล่ะ อันนี้ดีสุดเท่าที่ฉันจะเสนอได้แล้ว"
+		"dealer_message_last_offer_6"	"<!--0-->โอเค ข้อเสนอนี้ เราจะรับกันไหม?"		
+		"dealer_message_last_offer_7"	"<!--0-->ข้อเสนอสุดท้ายและท้ายสุดนะ"
+		"dealer_message_last_offer_8"	"<!--0-->เราพบกันครึ่งทางก็แล้วกัน นี่เป็นข้อเสนอที่ดีที่สุดเท่าที่ฉันจะให้ได้แล้วนะ"
+		"dealer_message_last_offer_9"	"<!--0-->นี่แหละคือข้อเสนอดีที่สุดแล้ว ก่อนที่มันจะหายไปนะ"	
+
+		"dealer_message_end_0"			"<!--0-->เอาล่ะ คุณมีโอกาสแล้ว ถ้าตอนนี้คุณกำลังถืออัปลิงก์เทอร์มินัลที่กำลังจะระเบิดอยู่ล่ะก็ ฉันจะหยุดในสาม… สอง…"
+		"dealer_message_end_1"			"<!--0-->เอิ่ม คุณคงจะมีอะไรให้คิดถึงในครั้งถัดไปที่คุณถูกยิง แล้วคว้าหาปืนที่คุณเพิ่งปฏิเสธไป"
+		"dealer_message_end_2"			"<!--0-->โอเค ฉันจะไม่ขอร้องให้คุณรับมันไป หวังว่าคุณคงไม่ได้คิดว่าจะได้อัปลิงก์เทอร์มินัลออกไปฟรี ๆ นะ"
+		"dealer_message_end_3"			"<!--0-->คุณเลือกเอง ธุรกิจของคุณ งานศพของคุณด้วยล่ะมั้ง<!--1-->ถ้าไม่ลำบากเกินไปช่วยถอยห่างจากอัปลิงก์เทอร์มินัลที่กำลังจะระเบิดด้วยนะ"
+
+		"dealer_message_timerexpired_0"		"<!--.1-->เอาล่ะ ไม่เป็นไร"
+		"dealer_message_timerexpired_1"		"<!--.1-->ช่างเถอะ<!--.5-->คุณพลาดโอกาสแล้ว"
+		"dealer_message_timerexpired_2"		"<!--.1-->ข้อเสนอหมดแล้ว<!--.5-->ฉันมีเรื่องต้องทำที่นี่อีกนะ"
+		"dealer_message_timerexpired_3"		"<!--.1-->โอเค เดี๋ยวฉันจะไปหาคนซื้อที่พร้อมจะซื้อ<!--.5-->เราจบกันแค่นี้"
+		"dealer_message_timerexpired_4"		"<!--.1-->แล้วแต่คุณเลย<!--.5-->ไว้เจอกัน"
+		"dealer_message_timerexpired_5"		"<!--.1-->ติ๊กต๊อก<!--.5-->หมดเวลา"
+		"dealer_message_timerexpired_6"		"<!--.1-->ข้อเสนอจบแล้ว<!--.5-->ฉันเอาของนี่ไปขายที่อื่นได้เป็นสิบ ๆ เท่าเลย"
+		"dealer_message_timerexpired_7"		"<!--.1-->ฉันนึกว่ากำลังช่วยคุณกำจัดคนเสียอีก<!--.5-->กลายเป็นว่าคุณกำลังทำให้ฉันเสียเวลาซะงั้น"
+		"dealer_message_timerexpired_8"		"<!--.1-->ข้อเสนอจบแล้ว"	
+		"dealer_message_timerexpired_9"		"<!--.1-->หมดเวลาแล้ว"
+		"dealer_message_timerexpired_10"	"<!--.1-->เอาล่ะ ฉันเบื่อแล้ว เราจบแค่นี้นะ"		
+
+		"dealer_message_open_check_out_0"		"<!--.5-->อันนี้มันเหมาะกับคุณที่สุดเลย นั่นคือเหตุผลที่ฉันนึกถึงคุณเป็นคนแรก มาปิดดีลนี้กันเถอะ"
+		"dealer_message_open_check_out_1"		"<!--.5-->เป็นการตัดสินใจที่ยอดเยี่ยม เดี๋ยวฉันจะจัดการแพ็กของให้เรียบร้อย"
+		"dealer_message_open_check_out_2"		"<!--.5-->คุณจะไม่เสียใจหรอก แต่ฉันว่าคงมีใครบางคนกำลังจะเสียใจ"
+		"dealer_message_open_check_out_3"		"<!--.5-->ฉันนึกแล้วว่าคุณจะต้องเป็นลูกค้าของฉัน เรามาทำให้เป็นทางการกันเถอะ"
+		"dealer_message_open_check_out_4"		"<!--.5-->ยอดเยี่ยม มาลุยกันเลย"		
+		"dealer_message_open_check_out_5"		"<!--.5-->เลือกได้ดี"	
+		"dealer_message_open_check_out_6"		"<!--.5-->คุณเลือกได้ฉลาดมาก มาทำธุรกิจให้จบเถอะ"		
+		"dealer_message_open_check_out_7"		"<!--.5-->ดี งั้นมาทำให้มันเป็นทางการเถอะ"
+
+		"dealer_message_txn_xld_bailout_0"		"<!--.5-->ไม่ต้องรีบ คุณรู้ว่าจะเจอฉันได้ที่ไหน"
+		"dealer_message_txn_xld_bailout_1"		"<!--.5-->ฉันไม่ได้จะไปไหนหรอก"
+		"dealer_message_txn_xld_bailout_2"		"<!--.5-->ฉันจะเก็บอันนี้ไว้ให้ก่อนแล้วกัน"
+		"dealer_message_txn_xld_bailout_3"		"<!--.5-->เดี๋ยวคุณก็กลับมา ลองกลับไปคิดดูก่อนนะ"
+
+		"dealer_message_purchase_finalizing_0"	"กำลังสรุปรายละเอียดการชำระเงิน..."
+		"dealer_message_purchase_confirm_0"		"<!--.5-->ข้อตกลงเสร็จสิ้นแล้ว"
+
+		"dealer_message_stattrack_0"			"แน่นอน มี StatTrak™ ติดตั้งไว้"
+		"dealer_message_stattrack_1"			"อันนี้มาพร้อม StatTrak™ ด้วยนะ"
+		"dealer_message_stattrack_2"			"มาพร้อมกับ StatTrak™ คุณจึงไม่ต้องคอยนับในใจด้วยตนเอง"
+		"dealer_message_stattrack_3"			"มันมี StatTrak™ ด้วย แค่คุณเหนี่ยวไก เดี๋ยวมันก็คิดเลขให้เอง"
+		"dealer_message_stattrack_4"			"StatTrak™ คิดซะว่ามันเหมือนกระดานคะแนนสำหรับเก็บแต้มตอนคุณฆ่าคนละกัน"
+		"dealer_message_stattrack_6"			"อันนี้มาพร้อมกับ StatTrak™ สำหรับมืออาชีพที่ชอบทั้งการฆ่าและบันทึกสถิติ"
+		"dealer_message_stattrack_7"			"แน่นอนว่า มาพร้อม StatTrak™ ด้วยนะ"
+		"dealer_message_factory_new_0"			"อันนี้เพิ่งออกจากกล่องสด ๆ เลยนะ เชื่อสิ ฉันเพิ่งลองดมดูเอง"
+		"dealer_message_factory_new_1"			"ของใหม่จากโรงงาน มีกลิ่นอาวุธใหม่ด้วย"
+		"dealer_message_factory_new_2"			"อันนี้ยังไม่เคยถูกใช้งานเลย คุณจะเป็นคนแรกที่ได้เหนี่ยวไก"
+		"dealer_message_factory_new_3"			"อันนี้ออกมาจากสายการผลิตโดยตรง ไม่มีรอยสึกหรอเลย ถูกใจคุณแน่นอน"
+		"dealer_message_factory_new_4"			"อันนี้สะอาดเอี่ยมไร้ที่ติ ไม่มีรอย ไม่มีประวัติ อันนี้แหละที่รอให้คุณมารับไป"
+		"dealer_message_factory_new_5"			"ของใหม่จากโรงงาน ไม่เคยยิง อันนี้ไร้ที่ติเลย"
+		"dealer_message_covert_0"				"ลองเดาดูไหม? คุณเพิ่งถูกแจ็กพอตเข้าแล้ว ของอันนี้ไม่ใช่แค่หายาก แต่มันคืออาวุธระดับลึกลับเลยนะ"
+		"dealer_message_covert_1"				"ฉันทำงานนี้มากว่าสิบปีแล้วยังไม่เคยเห็นของแบบนี้โผล่มาเลย<!--.5-->คุณนี่มีรสนิยมดีจริง ๆ และยังโชคดีอีกด้วย"
+		"dealer_message_covert_2"				"ฉันรู้จักคนซื้อบางคนที่ถึงกับยอมขายแม่ตัวเองให้พวกกูลักเพื่อแลกกับการได้ของอันนี้มาเลยนะ เยี่ยมมากเลย"
+		"dealer_message_covert_3"				"ว้าว ตอนนี้ฉันเริ่มลังเลแล้วนะ รีบเอาไปก่อนที่ฉันจะเสียดายของในการขายครั้งนี้"
+		"dealer_message_covert_4"				"นั่นคืออาวุธระดับลึกลับเลยนะ ของแบบนี้คุณอาจจะได้เห็นในตลาดเสรีสักครั้งในชีวิต ถ้าคุณโชคดีนะ<!--.5-->ดูเหมือนว่า คุณจะเป็นผู้โชคดีคนนั้นนะ"
+		"dealer_message_covert_5"				"อันนี้คือเพชรยอดมงกุฎเลยนะ แต่คุณเองก็คงรู้ดี ปีที่แล้วฉันมีคนเตรียมซื้อไว้แล้ว แต่พวกเขาพลาดไป กลายเป็นคุณได้ประโยชน์แทนซะงั้น"
+		"dealer_message_covert_6"				"หายากนะเนี่ย อันนี้ของหายากจริง ๆ แล้วยังโผล่มาอยู่ตรงหน้าคุณพอดีอีกด้วย"
+		"dealer_message_covert_7"				"ฟังจากคนที่หาของพวกนี้เป็นอาชีพเถอะ ของอันนี้หายากมากจริง ๆ"
+		"dealer_message_covert_8"				"ฉันหวังว่าคุณจะเห็นคุณค่าของข้อเสนอที่คุณเพิ่งทำไปนะ นี่มันของระดับลึกลับจริง ๆ คุณเพิ่งซื้อของหายากระดับยูนิคอร์นเลยล่ะ"
+		"dealer_message_covert_9"				"คุณควรเอาของนี่ออกไปจากสายตาฉันและเก็บเข้าคลังของคุณ ก่อนที่ฉันจะเปลี่ยนใจนะ นี่มันของหายากที่สุดในบรรดาของหายากแล้ว"
+		"dealer_message_classified_0"				"อาวุธระดับลับเฉพาะ ปลอดหลักฐาน ไม่มีเอกสารผูกมัด ของอันนี้อยู่นอกบัญชีทั้งหมด"
+		"dealer_message_classified_1"				"อาวุธระดับลับเฉพาะ ไม่มีเอกสาร ของอันนี้ประวัติใสและไม่สามารถสืบย้อนกลับได้"
+		"dealer_message_classified_2"				"อาวุธระดับลับเฉพาะ ประวัติดำมืด ไม่มีเอกสาร ของที่ฉันกำลังถืออยู่นี้ ตามเทคนิคแล้วมันไม่ได้มีอยู่จริง"
+		"dealer_message_classified_3"				"อันนี้ขายแบบส่วนตัวเท่านั้น อาวุธระดับลับเฉพาะ หวังว่าคุณจะเอาไปใช้ให้เกิดประโยชน์นะ"
+		"dealer_message_classified_4"				"อาวุธระดับลับเฉพาะ ไม่มีซีเรียล ไม่มีเอกสาร"
+		"dealer_message_classified_5"				"อาวุธระดับลับเฉพาะ ขายผ่านช่องทางลับเท่านั้น ถูกลดสภาพ และปฏิเสธความเกี่ยวข้องได้เต็มที่ ฉันไม่เคยเห็นมันมาก่อนเลย"
+		"dealer_message_restricted_0"				"อาวุธระดับหวงห้าม กลไกภายในดีกว่า กระสุนเกาะกลุ่มกว่า เหนือกว่าอาวุธระดับมาตรฐานแน่นอน"
+		"dealer_message_restricted_1"				"อันนี้จัดอยู่ในอาวุธระดับหวงห้ามก็มีเหตุผลนะ มันทำงานได้ดีเกินไปสำหรับพลเรือนทั่วไป"
+		"dealer_message_restricted_2"				"อาวุธระดับหวงห้าม แน่นอน ของระดับคลาส III ชื่อ II และนี่แหละจะเป็นอาวุธอันดับหนึ่งใหม่ของคุณ"
+		"dealer_message_battle_scarred_0"		"มีรอยบุบนิดหน่อย แต่ก็ยังยิงได้ตรงอยู่"
+		"dealer_message_battle_scarred_1"		"มีรอยเล็กน้อย แต่นั่นก็หมายความว่ามันผ่านศึกมาแล้ว และยังรอดมาได้"
+		"dealer_message_battle_scarred_2"		"เก็บมาจากสนามรบ ใช้งานมาพอสมควรแล้ว แต่ก็ยังเป็นม้าศึกที่ไว้ใจได้"
+		"dealer_message_battle_scarred_3"		"ฉันไม่ได้มองว่ามันเป็นของมือสองจากสนามรบหรอกนะ ฉันมองว่ามันคือของที่ผ่านการพิสูจน์แล้วในสนามรบต่างหาก"
+		"dealer_message_battle_scarred_4"		"อันนี้ผ่านการใช้งานมาบ้าง มีรอยสึกภายนอกเล็กน้อย แต่ยังใช้งานได้ดี"
+		"dealer_message_minimal_wear_0"			"มีรอยถลอกเล็กน้อยบนอันนี้ มีรอยขีดข่วนอยู่บ้าง แต่ก็ยังใช้งานได้แน่นอน"
+		"dealer_message_minimal_wear_1"			"สภาพใหม่กริ๊บ จริง ๆ ก็เหมือนของใหม่ มีรอยถลอกเล็กน้อย"
+		"dealer_message_minimal_wear_2"			"มีรอยถลอกเล็กน้อย แค่ถลอกนิดหน่อย ไม่มีอะไรน่ากังวลหรอก"
+		"dealer_message_minimal_wear_3"			"อันนี้มีรอยถลอกเล็กน้อยเอง ถึงจะมีบุบนิดหน่อย แต่คุณไม่ผิดหวังแน่นอนถ้าได้เก็บเข้าคลังอาวุธของคุณ"
+		"dealer_message_minimal_wear_4"			"มันเคยผ่านสนามรบมาบ้างแล้ว ฉันไม่โกหกหรอก ของอันนี้เป็นเหมือนทหารผ่านศึกเลยล่ะ"
+		"dealer_message_usp-s_0"				"หมาตัวนี้ไม่เห่าเลย ไม่ดื้อและเงียบดีด้วย"
+		"dealer_message_usp-s_1"				"เงียบเชียบและระวังตัว บางครั้งอาจต้องถือเป็นความลับเล็ก ๆ ของเรา"
+		"dealer_message_usp-s_2"				"ทุกคนจะรับรู้เมื่อมันมาถึง แต่ไม่มีทางรู้ล่วงหน้า"
+		"dealer_message_usp-s_3"				"อันนี้เงียบเหมือนเสียงกระซิบเลย"
+		"dealer_message_item_desc_0"			"<!--.25-->อันนี้มีข้อความด้วย:<!--.25-->{s:flavor-text}<!--.25-->ไม่รู้ว่ามันหมายถึงอะไรก็เถอะ"
+		"dealer_message_item_desc_1"			"<!--.25-->อันนี้มาพร้อมข้อความเล็กน้อย:<!--.25-->{s:flavor-text}"
+
+		"dealer_message_addition_stattrak_0"	"<!--.25-->...และมาพร้อม StatTrak™ ด้วย"
+		"dealer_message_addition_stattrak_1"	"<!--.25-->โมดูล StatTrak™ ถูกติดตั้งไว้ล่วงหน้าแล้ว"
+		"dealer_message_addition_stattrak_2"	"<!--.25-->มาพร้อม StatTrak™ ที่จะคอยติดตามความหายนะทั้งหมดที่คุณสร้างขึ้น"
+		"dealer_message_addition_stattrak_3"	"<!--.25-->มี StatTrak™ ด้วยนะ"
+		"dealer_message_addition_stattrak_4"	"<!--.25-->มาพร้อม StatTrak™ ด้วย ดังนั้นคุณจะไม่มีวันลืมความทุกข์ระทมที่คุณสร้างขึ้นมา"
+
+		"dealer_message_addition_factory_new_0"	"<!--.25-->และนี่เป็นของใหม่จากโรงงานเลย ยังไม่ใช้ยิง"
+		"dealer_message_addition_factory_new_1"	"<!--.25-->และมันเป็นของใหม่จากโรงงาน สภาพดีเยี่ยม"
+		"dealer_message_addition_factory_new_2"	"<!--.25-->ส่งตรงจากห้องนิรภัย ของใหม่จากโรงงานเลย"
+		"dealer_message_addition_factory_new_3"	"<!--.25-->อันนี้ของใหม่จากโรงงาน ไม่เคยยิงเลย"
+		
+		"dealer_message_limit_first_time_0"		"ดีที่รู้ไว้ก่อน ฉันจะแสดงเฉพาะข้อเสนอไม่เกิน {s:limit} ให้คุณนะ <!--.25--> มาดูกันว่าคุณอยากได้อันไหนบ้าง"
+		"dealer_message_limit_first_time_2"		"แสดงเฉพาะข้อเสนอที่ไม่เกิน {s:limit} เท่านั้น ฉันจะจำเอาไว้<!--.25--> เวลาเหลือน้อยแล้ว มาเริ่มกันเลย"
+		"dealer_message_limit_first_time_3"		"รับทราบ อัปเดตแล้ว<!--.25--> เรามาต่อกันเลย"
+		"dealer_message_limit_first_time_unlimited_0"		"ไม่จำกัดงบสินะ ยอดเยี่ยม ฉันจะเปิดแค็ตตาล็อกสินค้าปัจจุบันให้ดูเรื่อย ๆ นะ<!--.25--> เวลาเหลือน้อยแล้ว มาเริ่มกันเลย"
+		"dealer_message_limit_first_time_unlimited_1"		"รับทราบ งบไม่อั้นนะ ตอนนี้เรามาจริงจังกันหน่อย<!--.25--> มาดูกันว่าคุณอยากได้อันไหนบ้าง"
+
+		"dealer_message_limit_0"				"ดีที่รู้ไว้ก่อน ฉันจะแสดงเฉพาะข้อเสนอไม่เกิน {s:limit} ให้คุณนะ"
+		"dealer_message_limit_1"				"แสดงเฉพาะข้อเสนอไม่เกิน {s:limit} เท่านั้นนะ ฉันจะจำเอาไว้"
+		"dealer_message_limit_2"				"กำลังปรับพารามิเตอร์อยู่ แสดงเฉพาะข้อเสนอไม่เกิน {s:limit}"
+		"dealer_message_limit_3"				"ข้อเสนอสูงสุดถึง {s:limit} รับทราบ อัปเดตแล้ว"
+		"dealer_message_limit_4"				"ฉันจะเลือกเฉพาะสินค้าที่ตรงกับแท็กในราคาไม่เกิน {s:limit} ให้นะ"
+		"dealer_message_limit_5"				"{s:limit} ได้ถูกกำหนดเป็นการจำกัดราคาใหม่"
+		"dealer_message_limit_6"				"เข้าใจแล้ว รีเซ็ตตัวกรองสำหรับข้อเสนอที่มีราคาไม่เกิน {s:limit}"
+		"dealer_message_limit_unlimited_0"		"ไม่จำกัดงบสินะ ยอดเยี่ยม ฉันจะเปิดแค็ตตาล็อกสินค้าปัจจุบันให้ดูเรื่อย ๆ นะ"
+		"dealer_message_limit_unlimited_1"		"เข้าใจแล้ว งบไม่อั้น หากมีของแปลกใหม่เข้ามา ฉันจะส่งข้อเสนอให้ไม่ยั้งเลย"
+		"dealer_message_limit_unlimited_2"		"ดูดีสำหรับฉันเลยล่ะ ถ้ามีสินค้าอะไรที่เหมาะสมปรากฏขึ้น ฉันจะไม่ลังเลที่จะนำมาให้คุณดูเลย"
+		"dealer_message_limit_unlimited_3"		"รับทราบ งบไม่อั้นนะ ตอนนี้เรามาจริงจังกันหน่อย"
+
+		"system_dealer_left_chat_0"				"ตัวแทนจำหน่ายออกจากแช็ตของคุณแล้ว"
+		"system_dealer_join_chat_0"				"ข้อเสนอนักค้าอาวุธสำหรับ {s:collection}<!--1.25-->เชื่อมต่อกับตัวแทนจำหน่ายแล้ว"
+		"system_user_reject_offer_0"			"{s:user-name} ปฏิเสธข้อเสนอ"
+
+		"system_user_updated_offer_limit_0"			"ขีดจำกัดข้อเสนอสูงสุดถูกอัปเดตเป็น {s:limit} คุณสามารถอัปเดตการตั้งค่าได้ตลอดเวลา"
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//Retakes
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		"GameUI_Retake_DefendA"					"ป้องกันจุด A!"
+		"GameUI_Retake_DefendB"					"ป้องกันจุด B!"
+		"GameUI_Retake_RetakeA"					"ยึดคืนจุด A!"
+		"GameUI_Retake_RetakeB"					"ยึดคืนจุด B!"
+		"GameUI_Retake_Notice_MvpCardAvailable"	"ขอแสดงความยินดีด้วย! การ์ดโบนัส MVP จะพร้อมใช้งานในรอบถัดไป!"
+		"GameUI_Retake_Card_CardsPreview"		"ตัวอย่างการ์ด"
+		"GameUI_Retake_Card_AvailableCard"		"เลือกชุดอุปกรณ์นี้"
+		"GameUI_Retake_Card_AvailableCards"		"เลือกชุดอุปกรณ์"
+
+		"GameUI_Retake_Card_Bonus"				"โบนัส"
+		"GameUI_Retake_Card_Enemy"				"Enemy Loadout"
+		"GameUI_Retake_Card_Mvp"				"MVP"
+
+		"GameUI_Retake_Card_4v3"				"4v3"
+		"GameUI_Retake_Card_FlashOut"			"Flash Out!"
+		"GameUI_Retake_Card_HideAndPeek"		"Hide and Peek"
+		"GameUI_Retake_Card_TakeFive"			"Take Five"
+		"GameUI_Retake_Card_OnlyTakesOne"		"Only Takes One"
+		"GameUI_Retake_Card_SneakyBeakyLike"	"Sneaky Beaky Like"
+		"GameUI_Retake_Card_UmpInSmoke"			"UMP in Smoke"
+		"GameUI_Retake_Card_FunNGun"			"Fun-N-Gun"
+		"GameUI_Retake_Card_Sharpshooter"		"Sharpshooter"
+		"GameUI_Retake_Card_BurstBullpup"		"Burst Bullpup"
+		"GameUI_Retake_Card_LightEmUp"			"Bright Eyed"
+		"GameUI_Retake_Card_Kobe"				"Kobe!"
+		"GameUI_Retake_Card_1g"					"1g"
+		"GameUI_Retake_Card_DisappearingAct"	"Disappearing Act"
+		"GameUI_Retake_Card_EyesOnTarget"		"Eyes On Target"
+		"GameUI_Retake_Card_BehindEnemyLines"	"Behind Enemy Lines"
+		"GameUI_Retake_Card_4BadGuysLeft"		"4 Bad Guys Left"
+		"GameUI_Retake_Card_LookAway"			"Look Away!"
+		"GameUI_Retake_Card_WhenThereIsSmoke"	"Where There's Smoke..."
+		"GameUI_Retake_Card_BlindFire"			"Blind Fire"
+		"GameUI_Retake_Card_QueOta"				"Qué ota?"
+		"GameUI_Retake_Card_SmokeScreen"		"Smoke Screen"
+		"GameUI_Retake_Card_TecTecBoom"			"TEC, TEC, BOOM!"
+		"GameUI_Retake_Card_BackInAFlash"		"Back In a Flash"
+		"GameUI_Retake_Card_AllIn"				"All In"
+		"GameUI_Retake_Card_BoomBox"			"Boom Box"
+		"GameUI_Retake_Card_SetThemFree"		"Set Them Free"
+		"GameUI_Retake_Card_OlReliable"			"Ol' Reliable"
+		"GameUI_Retake_Card_SmokeShow"			"Smoke Show"
+		"GameUI_Retake_Card_HotShot"			"Hot Shot"
+		"GameUI_Retake_Card_EyeSpy"				"Eye Spy"
+		"GameUI_Retake_Card_TheAWPortunity"		"The AWPortunity"
+		"GameUI_Retake_Card_FindersKeepers"		"Finders Keepers"
+
+		"Hud_Retake_BombSite"					"{s:hud-retake-bombsite}"
+		
+		"Hud_Money" "${d:r:hud-money-amount}"
+		"Hud_Money_Signed" "{s:sign}${d:r:hud-money-delta}"
+
+		"Propcounter_money" "$%s1" //e.g. used on danger zone security door
+
+		"csgo_player_left_game"					" ผู้เล่น %s1 ได้ออกจากเกม (%s2)"
+
+		"LoadoutLockedPopupTitle"				"ชุดอุปกรณ์ถูกล็อคแล้ว"
+		"LoadoutLockedPopupText"				"ไม่อนุญาตให้เปลี่ยนชุดอุปกรณ์ในระหว่างการค้นหาแมตช์"
+
+		"Workshop_item_title" "เครื่องมือส่งผลงานไอเท็ม"
+		"Workshop_item_error_title" "กรอกชื่อไอเท็มของคุณ ซึ่งควรมีชื่อผู้เล่นและข้อมูลระบุตัวตนอื่น ๆ"
+		"Workshop_item_error_image" "เลือกภาพ JPEG หรือ PNG ที่ถูกต้อง ซึ่งมีขนาดน้อยกว่า {s:max_size} และมีความกว้าง/ความสูงอย่างน้อย {d:min_height}"
+		"Workshop_item_ready" "การส่งพร้อมที่จะอัปโหลด"
+		"SFUI_Go_To_Mic_Enable_key" "ไปที่การกำหนดปุ่มคีย์ไมโครโฟน"
+		"SFUI_Go_To_Console_Key_Binding" "ไปที่การกำหนดปุ่มคีย์คอนโซล"
+
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//Steam Video
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		"SteamVideo_Player_Kill_Title"					"คุณได้ฆ่า %s1"
+		"SteamVideo_Player_Kill_Description"			"ด้วย %s1"
+
+		"SteamVideo_Player_Double_Kill_Title"			"ฆ่าสองคน"
+		"SteamVideo_Player_Multi_Kill_Title"			"ฆ่าหลายคน"
+		
+		"SteamVideo_Player_Death_Title"					"คุณถูกฆ่าโดย %s1"
+		"SteamVideo_Player_Death_Description"			"ด้วย %s1"
+		"SteamVideo_Player_Death_Description_Plural"	"ด้วย %s1"
+		"SteamVideo_Player_Killed_Self_Title"			"คุณได้ฆ่าตัวตาย"
+		
+		"SteamVideo_Bomb_Planted_Title"					"ระเบิดถูกวางแล้ว"
+		"SteamVideo_Bomb_Planted"						"%s1 ได้วางระเบิด"
+		"SteamVideo_Bomb_Planted_LocalPlayer"			"คุณได้วางระเบิด"
+		
+		"SteamVideo_Bomb_Defused_Title"					"ปลดชนวนระเบิดแล้ว"
+		"SteamVideo_Bomb_Defused"						"%s1 ได้ปลดชนวนระเบิด"
+		"SteamVideo_Bomb_Defused_LocalPlayer"			"คุณได้ปลดชนวนระเบิด"
+		
+		"SteamVideo_Bomb_Exploded_Title"				"ระเบิดได้ถูกจุดระเบิดแล้ว"
+		
+		"SteamVideo_Round_Number_Label"					"รอบ %s1"
+		"SteamVideo_Start_Of_Round_Title"				"เริ่มต้นรอบ %s1"
+
+		"SteamVideo_MatchScore"							"คะแนน"
+		"SteamVideo_KDA"								"K/D/A"
+
+		// ---------------------------------------------------------------------------------------------
+		// WEEKLY MISSIONS
+		// ---------------------------------------------------------------------------------------------
+		"weekly_mission_title"							"ภารกิจ"
+		"weekly_mission_title_complete"					"ภารกิจเสร็จสิ้น"
+		"weekly_mission_expiration"						"หมดอายุใน <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_expiration_pausemenu"			"หมดอายุใน <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_next_mission"					"ภารกิจถัดไปจะเริ่มใน <b>{s:mission-time-remaining}</b>"
+		"weekly_mission_progress"						"<b>{d:mission-progress}</b>/{d:mission-points}"
+		"CS2_Quest_Weapon_Mode"							"ความชำนาญด้านอาวุธ: <b>{s:gamemode}</b>, <b>{s:weapon}</b>"
+		"CS2_Quest_Weapon_Mode_desc"					"ใช้ <b>{s:weapon}</b> เก็บคะแนน {s:actions}{s:optional_target} ในแมตช์ <b>{s:gamemode}</b>"
+
+		"mission_searching"								"กำลังค้นหา..."
+		"mission_xp_remaining"							"{s:mission-xp} XP"
+
+		"mission_segment_tooltip"						"{d:xp-reward} XP"
+
+		"mission_location"								"<b>{s:gamemode}</b> ใน <b>{s:location}</b>"
+		"mission_directive:f"							"<b>{d:mission-points}</b> {s:action}"
+ 		"mission_directive_progress:f"					"{d:mission-progress}/<b>{d:mission-points}</b> {s:action}"
+
+
+		"quest_11000_var_desc:f"	  					"ทำการสังหารด้วย {s:item1} ในโหมด <b>{s:gamemode}: {s:location}</b>"
+		"quest_11000_var_partial:f" 					"...ด้วย {s:item1}"
+		"quest_11000_var_ingame:f"	  					"ทำการสังหารด้วย {s:item1}"
+
+		"quest_11001_var_desc:f"	 					"ทำการสังหารด้วย {s:item1} ในโหมด <b>{s:gamemode}: {s:location}</b>"
+		"quest_11001_var_partial:f"	 					"...ด้วย {s:item1}"
+		"quest_11001_var_ingame:f"	 					"ทำการสังหารด้วย {s:item1}"
+
+		"quest_11002_var_desc:f"	 					"ทำการสังหารด้วย {s:item1} ในโหมด <b>{s:gamemode}: {s:location}</b>"
+		"quest_11002_var_partial:f"	 					"...ด้วย {s:item1}"
+		"quest_11002_var_ingame:f"	 					"ทำการสังหารด้วย {s:item1}"
+
+		"quest_11003_var_desc:f"						"ทำการสังหารด้วย {s:item1} ในโหมด <b>{s:gamemode}: {s:location}</b>"
+		"quest_11003_var_partial:f"	 					"...ด้วย {s:item1}"
+		"quest_11003_var_ingame:f"	 					"ทำการสังหารด้วย {s:item1}"
+
+		"quest_11004_var_desc:f"	 					"ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
+		"quest_11004_var_ingame:f"						"ชนะรอบ"
+
+		"quest_11005_var_desc:f"	 					"ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
+		"quest_11005_var_ingame:f"						"ชนะรอบ"
+
+		"quest_11006_var_desc:f"	 					"ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
+		"quest_11006_var_ingame:f"						"ชนะรอบ"
+
+		"quest_11007_var_desc:f"	 					"ทำการสังหารด้วย {s:item1} ในโหมด <b>{s:gamemode}: {s:location}</b>"
+		"quest_11007_var_partial:f"	 					"...ด้วย {s:item1}"
+		"quest_11007_var_ingame:f"	 					"ทำการสังหารด้วย {s:item1}"
+
+		"quest_11008_var_desc:f"	 					"ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
+		"quest_11008_var_ingame:f"						"ชนะรอบ"
+
+		"quest_11009_var_desc:f"	 					"ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
+		"quest_11009_var_ingame:f"						"ชนะรอบ"
+
+		"quest_11010_var_desc:f"	 					"ทำการสังหารด้วย {s:item1} ในโหมด <b>{s:gamemode}: {s:location}</b>"
+		"quest_11010_var_partial:f"	 					"...ด้วย {s:item1}"
+		"quest_11010_var_ingame:f"	 					"ทำการสังหารด้วย {s:item1}"
+
+		"quest_11011_var_desc:f"	 					"ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
+		"quest_11011_var_ingame:f"						"ชนะรอบ"
+
+		"quest_11012_var_desc:f"	 					"ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
+		"quest_11012_var_ingame:f"						"ชนะรอบ"
+
+		"quest_11013_var_desc:f"	 					"ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
+		"quest_11013_var_ingame:f"						"ชนะรอบ"
+
+		"quest_11014_var_desc:f"	 					"ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
+		"quest_11014_var_ingame:f"						"ชนะรอบ"
+
+		"quest_11015_var_desc:f"	 					"ชนะรอบในโหมด <b>{s:gamemode}: {s:location}</b>"
+		"quest_11015_var_ingame:f"						"ชนะรอบ"
+
+// ---------------------------------------------------------------------------------------------
+// Join Friend Listen Servers
+// ---------------------------------------------------------------------------------------------
+
+		"tooltip_viewaddon"				"ดูแผนที่แบบกำหนดเองในหน้าเวิร์กชอป"
+		"tooltip_kick_player"			"เตะผู้เล่นออกจากเซิร์ฟเวอร์ท้องถิ่น"		
+		"tooltip_short_viewaddon"			"ดูแผนที่แบบกำหนดเอง"
+		"tooltip_short_kick_player"			"เตะ"
+
+// crow_mask_50454_comment
+// crow_mask_50455_comment
+}
+
+
+
+
+}
+
+
+��ู่ {d:days} วัน"
 		"playerstats_subscription_renew_manually"		"<b>รวบรวมสถิติแมตช์</b> - การสมัครสมาชิกของคุณคงเหลืออยู่ {d:days} วัน และจะ<b>ไม่ถูกต่ออายุโดยอัตโนมัติ</b>"
 		"playerstats_subscription_expired"				"<b>การสมัครสมาชิกหมดอายุแล้ว</b> - เปิดใช้การสมัครสมาชิกของคุณอีกครั้งเพื่อรวบรวมสถิติแมตช์ใหม่"
 		"playerstats_subscription_not_enrolled"			"<b>ไม่ได้เปิดใช้การสมัครสมาชิก</b> - สมัครสมาชิกเพื่อรวบรวมสถิติแมตช์ใหม่"
