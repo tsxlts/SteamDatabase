@@ -499,7 +499,7 @@
 		"loadingscreen_title_de_inferno"		"Inferno"
 		"loadingscreen_title_de_inferno_1"		"Точка закладки А"
 		"loadingscreen_title_de_inferno_2"		"Точка закладки В"
-		"loadingscreen_title_de_inferno_3"		"Дуга"
+		"loadingscreen_title_de_inferno_3"		"Банан"
 		"loadingscreen_title_de_inferno_4"		"Церковь"
 
 		"loadingscreen_title_de_mirage"			"Mirage"
@@ -1471,12 +1471,12 @@
 		//Inferno
 		"Garden"		"Сад"
 		"Ruins"			"Руины"
-		"Banana"		"Дуга"
+		"Banana"		"Банан"
 		"Logs"			"Поленница"
 		"TStairs"		"Ступени террористов"
 		"SecondMid"		"Второй центральный ход"
 		"Hay"			"Сено"
-		"Quad"			"Угол"
+		"Quad"			"Площадка"
 		"Arch"			"Арка"
 		"Library"		"Библиотека"
 		"Graveyard"		"Кладбище"
@@ -1590,7 +1590,30 @@
 		"TMid"				"Центр, сторона террористов"
 		"Toilets"			"Туалеты"
 		"Candle"			"Свеча"
-
+		//Cache
+		"OutsideA"			"Снаружи точки A"
+		"OutsideB"			"Снаружи точки B"
+		"AHalls"			"Коридор к точке A"
+		"BHalls"			"Коридор к точке B"
+		"SunRoom"			"Солнце"
+		"Checkers"			"Шашки"
+		"Headshot"			"Голова"
+		"TreeRoom"			"Дерево"
+		"CTLane"			"Выход спецназа"
+		"Bear"				"Медведь"
+		"BusStop"			"Остановка"
+		"Corner"			"Угол"
+		"ABoost"			"Подсадка на A"
+		"Highway"			"Проезд"
+		"Sandbags"			"Мешки"
+		"Cubby"				"Тупик"
+		"MidRoof"			"Крыша в центре"
+		"Lockers"			"Шкафчики"
+		"AStairs"			"Ступени у точки A"
+		"TTruck"			"Грузовик террористов"
+		"Useless"			"Бесполезный двор"
+		"TYard"				"Двор террористов"
+		"Boost"				"Подсадка"
 		// coop_cementplant
 		"Gravelpit"		"Карьер"
 		"Forest"		"Лес"
@@ -4132,13 +4155,13 @@
 		"CSGO_crate_sprays_illuminate1_desc"	"В этой капсуле содержатся разнообразные граффити от Perfect World в честь запуска Counter-Strike: Global Offensive в континентальном Китае."
 		"coupon_illuminate_sprays_capsule_01"		"Ящик с граффити Perfect World"
 		
-		"CSGO_crate_musickit_nightmode_capsule"	    "Ящик с музыкой от NIGHTMODE"
-		"CSGO_crate_musickit_nightmode_capsule_desc"	"Этот ящик содержит различные наборы музыки от NIGHTMODE."
-		"coupon_nightmode_musickit_capsule"		"Ящик с музыкой от NIGHTMODE"
+		"CSGO_crate_musickit_nightmode_capsule"	    "Ящик с музыкой NIGHTMODE"
+		"CSGO_crate_musickit_nightmode_capsule_desc"	"Этот ящик содержит различные наборы музыки от исполнителей с лейбла NIGHTMODE."
+		"coupon_nightmode_musickit_capsule"		"Ящик с музыкой NIGHTMODE"
 		
-		"CSGO_crate_musickit_nightmode_stattrak_capsule"	    "Ящик с музыкой от NIGHTMODE — StatTrak™"
-		"CSGO_crate_musickit_nightmode_stattrak_capsule_desc"	"Этот ящик содержит различные наборы музыки с технологией StatTrak™ от NIGHTMODE."
-		"coupon_nightmode_stattrak_musickit_capsule"		"Ящик с музыкой от NIGHTMODE — StatTrak™"
+		"CSGO_crate_musickit_nightmode_stattrak_capsule"	    "Ящик с музыкой NIGHTMODE — StatTrak™"
+		"CSGO_crate_musickit_nightmode_stattrak_capsule_desc"	"Этот ящик содержит различные наборы музыки с технологией StatTrak™ от исполнителей с лейбла NIGHTMODE."
+		"coupon_nightmode_stattrak_musickit_capsule"		"Ящик с музыкой NIGHTMODE — StatTrak™"
 		
 		"CSGO_crate_musickit_masterminds2_capsule"	    	"Ящик с музыкой «Великие умы 2»"
 		"CSGO_crate_musickit_masterminds2_capsule_desc"		"Этот ящик содержит наборы музыки от разных композиторов."
@@ -5842,6 +5865,36 @@
 		"musickit_jamesandthecoldgun_01_desc"			"Валлийский рок-дуэт James and the Cold Gun вспыхивает чистой и бескомпромиссной энергией, смешивая классический панк-настрой и запал современного альтернативного рока в этом обжигающем наборе музыки."
 		"coupon_jamesandthecoldgun_01"					"Набор музыки | James and the Cold Gun — Chewing Glass"
 		"coupon_jamesandthecoldgun_01_stattrak"			"StatTrak™ Набор музыки | James and the Cold Gun — Chewing Glass"
+		
+		"musickit_alrt_01"						"ALRT — DOPAMINE HIT"
+		"musickit_alrt_01_desc"					"Задорная композиция в жанре басс-хаус от ALRT дарит несравненный «ДОПАМИНОВЫЙ ЗАРЯД», благодаря которому вы всегда будете в фокусе и сможете проявить себя в решающий момент."
+		"coupon_alrt_01"						"Набор музыки | ALRT — DOPAMINE HIT"
+		"coupon_alrt_01_stattrak"				"StatTrak™ Набор музыки | ALRT — DOPAMINE HIT"
+		
+		"musickit_altare_01"					"Altare — Change My Mind"
+		"musickit_altare_01_desc"				"Эйфорический и воодушевляющий трек Change My Mind от Altare идеально подходит для моментов, когда кажется, что никто не сможет встать у вас на пути."
+		"coupon_altare_01"						"Набор музыки | Altare — Change My Mind"
+		"coupon_altare_01_stattrak"				"StatTrak™ Набор музыки | Altare — Change My Mind"
+		
+		"musickit_borne_01"						"borne — Give It To Me"
+		"musickit_borne_01_desc"				"Заслышав грязный бас в бомбезном треке Give It To Me от borne, игроки будут готовы задать жару своим соперникам в Counter-Strike и не только."
+		"coupon_borne_01"						"Набор музыки | borne — Give It To Me"
+		"coupon_borne_01_stattrak"				"StatTrak™ Набор музыки | borne — Give It To Me"
+		
+		"musickit_pirapus_01"					"Pirapus — EVERYNITE"
+		"musickit_pirapus_01_desc"				"EVERYNITE — энергичный трек в стиле драм-н-бейс от Pirapus, который вызывает ощущение близости к великому. Как и следует из названия, вы будете в фокусе каждую ночь."
+		"coupon_pirapus_01"						"Набор музыки | Pirapus — EVERYNITE"
+		"coupon_pirapus_01_stattrak"			"StatTrak™ Набор музыки | Pirapus — EVERYNITE"
+		
+		"musickit_repiet_01"					"Repiet & Julia Kleijn — On And On"
+		"musickit_repiet_01_desc"				"Заразительный трек On And On от Repiet и Julia Kleijn подготовит вас ко всевозможным испытаниям: задав тон для преодоления любых препятствий, он сопроводит вас через взлёты и падения."
+		"coupon_repiet_01"						"Набор музыки | Repiet & Julia Kleijn — On And On"
+		"coupon_repiet_01_stattrak"				"StatTrak™ Набор музыки | Repiet & Julia Kleijn — On And On"
+		
+		"musickit_shockone_01"					"ShockOne — Voices"
+		"musickit_shockone_01_desc"				"Ощутите свободу благодаря Voices — энергичной композиции в жанре драм-н-бейс за авторством ShockOne. Мощные басовые линии этого набора музыки, призванного приводить к успеху в напряжённые моменты, сделают вас лучшим игроком не один раз."
+		"coupon_shockone_01"					"Набор музыки | ShockOne — Voices"
+		"coupon_shockone_01_stattrak"			"StatTrak™ Набор музыки | ShockOne — Voices"
 
 //////////////////
 
@@ -34080,6 +34133,8 @@
 		"store_nav_popular"		"НОВОЕ И ПОПУЛЯРНОЕ"
 		"store_linked_item_tooltip"		"Нажмите, чтобы увидеть обе версии предмета"
 		"store_nav_more"		"Ещё"
+		"store_nav_shop_all"		"Показать все"
+		"store_nav_section_coupon_nightmode2" "Наборы музыки<br>NIGHTMODE II"
 
 		"StoreCheckout_NoItems"			"Ваша корзина пуста!"
 		"StoreCheckout_TooManyItems"	"В вашей корзине слишком много предметов!"
@@ -37508,7 +37563,10 @@
 		"SFUI_match_cancelled"			"Матч отменён"
 		"SFUI_match_abort_match_network_event"	"Из-за перебоев в работе сети матч завершён.\nОн не повлияет на ваше звание."
 		"SFUI_match_abort_match_vac_live"	"Система VAC Live обнаружила читера и завершила этот матч.\nОн не повлияет на ваше звание."
-		"SFUI_match_abort_match_abnormal_behavior"	"Система VAC обнаружила необычное поведение и отменила матч.\nИгрок, чьё поведение сочтено необычным, и его группа временно заблокированы."
+		
+		"SFUI_match_abort_match_abnormal_behavior"	"Игрок %s1 и все члены его группы получили временную блокировку VACNET."
+		"SFUI_match_abort_match_abnormal_behavior_pano"	"Система VACNET обнаружила необычное поведение и отменила матч."
+
 		"SFUI_match_vac_live_partied_with_cheater"	"Прогресс этого матча не будет засчитан, так как игрок из вашего лобби был заблокирован."
 		"SFUI_match_abort_match_missing_player"	" Матч отменяется, потому что игрок не смог подключиться."
 		"SFUI_match_abort_match_player_abandoned"	" Матч отменяется, потому что игрок отключился."
@@ -39076,8 +39134,8 @@
 		"SFUI_Settings_MiniScoreboardPlayerCount_Tooltip"	"Во время активной части раунда заменяет аватары игроков в мини-таблице результатов на число живых игроков в каждой из команд."
 
 
-		"Post_Round_Damage_Report_Given:f"		" • Нанесено урона → {player_name}: {f:0:damage} ед. за {num_hits, plural, one{попадание} few{попадания} many{попаданий} other{попадания}}"
-		"Post_Round_Damage_Report_Taken:f"		" • Получено урона ← {player_name}: {f:0:damage} ед. за {num_hits, plural, one{попадание} few{попадания} many{попаданий} other{попадания}}"
+		"Post_Round_Damage_Report_Given:f"		" • Нанесённый урон → {player_name}: {f:0:damage} ед. за {num_hits, plural, one{попадание} few{попадания} many{попаданий} other{попадания}}"
+		"Post_Round_Damage_Report_Taken:f"		" • Полученный урон ← {player_name}: {f:0:damage} ед. за {num_hits, plural, one{попадание} few{попадания} many{попаданий} other{попадания}}"
 
 		"SFUI_TeamOverheadID"					"Снаряжение команды"
 
@@ -39556,8 +39614,8 @@
 
 		"SFUI_UserAlertNoteType_1"			"Серверы в данном регионе (%s1) перегружены."
 		"SFUI_UserAlertNoteType_2"			"Серверы в данном регионе (%s1) закрыты на техническое обслуживание."
-		"SFUI_UserAlertNoteType_LowPlayersR:f"	"В регионе «{region}» матч ищет только {players} {players, plural, one{совместимый игрок} few{совместимых игрока} many{совместимых игроков} other{совместимого игрока}}."
-		"SFUI_UserAlertNoteType_LowPlayersY:f"	"В вашем регионе матч ищет только {players} {players, plural, one{совместимый игрок} few{совместимых игрока} many{совместимых игроков} other{совместимого игрока}}."
+		"SFUI_UserAlertNoteType_LowPlayersR:f"	"В регионе «{region}» матч {players, plural, one{ищет только {players} совместимый игрок} few{ищут только {players} совместимых игрока} many{ищут только {players} совместимых игроков} other{ищет только {players} совместимого игрока}}."
+		"SFUI_UserAlertNoteType_LowPlayersY:f"	"В вашем регионе матч {players, plural, one{ищет только {players} совместимый игрок} few{ищут только {players} совместимых игрока} many{ищут только {players} совместимых игроков} other{ищет только {players} совместимого игрока}}."
 
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"Не удалось подключиться к матчу."
 		"SFUI_QMM_ERROR_NotLoggedIn"		"Вы не авторизованы в системе подбора матчей Counter-Strike."
@@ -47431,6 +47489,9 @@
 		"quest_11015_var_desc:f"	 					"{mission-points, plural, one{Выиграйте раунд в режиме <b>«{s:gamemode}» ({s:location})</b>.} few{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.} many{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.} other{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.}}"
 		"quest_11015_var_ingame:f"						"{mission-points, plural, one{Выиграйте раунд} few{Выигрывайте раунды} many{Выигрывайте раунды} other{Выигрывайте раунды}}"
 
+		"quest_11016_var_desc:f"	 					"{mission-points, plural, one{Выиграйте раунд в режиме <b>«{s:gamemode}» ({s:location})</b>.} few{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.} many{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.} other{Выигрывайте раунды в режиме <b>«{s:gamemode}» ({s:location})</b>.}}"
+		"quest_11016_var_ingame:f"						"{mission-points, plural, one{Выиграйте раунд} few{Выигрывайте раунды} many{Выигрывайте раунды} other{Выигрывайте раунды}}"
+
 // ---------------------------------------------------------------------------------------------
 // Join Friend Listen Servers
 // ---------------------------------------------------------------------------------------------
@@ -47440,8 +47501,8 @@
 		"tooltip_short_viewaddon"			"Просмотреть пользовательскую карту"
 		"tooltip_short_kick_player"			"Выгнать"
 
-// crow_mask_50454_comment
-// crow_mask_50455_comment
+// crow_mask_50516_comment
+// crow_mask_50517_comment
 }
 
 

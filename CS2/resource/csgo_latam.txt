@@ -1468,7 +1468,7 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"Warehouse"		"Almacén"
 		"BackStairs"	"Escaleras traseras"
 		"Rafters"		"Vigas"
-		"Forklift"		"Carretilla elevadora"
+		"Forklift"		"Montacargas"
 		//Inferno
 		"Garden"		"Jardín"
 		"Ruins"			"Ruinas"
@@ -1591,7 +1591,30 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"TMid"				"Medio T"
 		"Toilets"			"Baños"
 		"Candle"			"Vela"
-
+		//Cache
+		"OutsideA"			"Principal A"
+		"OutsideB"			"Principal B"
+		"AHalls"			"Pasillos A"
+		"BHalls"			"Pasillos B"
+		"SunRoom"			"Sala de sol"
+		"Checkers"			"Ajedrez"
+		"Headshot"			"Disparo a la cabeza"
+		"TreeRoom"			"Sala del árbol"
+		"CTLane"			"Senda AT"
+		"Bear"				"Oso"
+		"BusStop"			"Parada de autobús"
+		"Corner"			"Esquina"
+		"ABoost"			"Cajas en A"
+		"Highway"			"Carretera"
+		"Sandbags"			"Bolsas de arena"
+		"Cubby"				"Rincón"
+		"MidRoof"			"Tejado de medio"
+		"Lockers"			"Casilleros"
+		"AStairs"			"Escaleras A"
+		"TTruck"			"Camión T"
+		"Useless"			"Inútil"
+		"TYard"				"Patio T"
+		"Boost"				"Tejado rojo"
 		// coop_cementplant
 		"Gravelpit"		"Gravera"
 		"Forest"		"Bosque"
@@ -5843,6 +5866,36 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"musickit_jamesandthecoldgun_01_desc"			"El dúo de rock galés James and the Cold Gun desata una energía pura y sin filtros, mezclando la actitud punk clásica con el fuego del rock alternativo moderno para crear un kit de música vertiginoso."
 		"coupon_jamesandthecoldgun_01"					"Kit de música | James and the Cold Gun, Chewing Glass"
 		"coupon_jamesandthecoldgun_01_stattrak"			"Kit de música de StatTrak™ | James and the Cold Gun, Chewing Glass"
+		
+		"musickit_alrt_01"						"ALRT, DOPAMINE HIT"
+		"musickit_alrt_01_desc"					"El disco de bass house enérgico de ALRT ofrece el máximo \"GOLPE DE DOPAMINA\", manteniéndote concentrado y listo para estar a la altura de las circunstancias cuando es más necesario."
+		"coupon_alrt_01"						"Kit de música | ALRT, DOPAMINE HIT"
+		"coupon_alrt_01_stattrak"				"Kit de música de StatTrak™ | ALRT, DOPAMINE HIT"
+		
+		"musickit_altare_01"					"Altare, Change My Mind"
+		"musickit_altare_01_desc"				"El himno eufórico de Altare, \"Change My Mind\", es perfecto para los momentos más eufóricos, cuando parece que nadie puede interponerse en tu camino."
+		"coupon_altare_01"						"Kit de música | Altare, Change My Mind"
+		"coupon_altare_01_stattrak"				"Kit de música de StatTrak™ | Altare, Change My Mind"
+		
+		"musickit_borne_01"						"borne, Give It To Me"
+		"musickit_borne_01_desc"				"El potente tema de bajo de borne, \"Give It To Me\", hará que los jugadores estén listos para darlo todo contra sus oponentes en Counter-Strike y más allá."
+		"coupon_borne_01"						"Kit de música | borne, Give It To Me"
+		"coupon_borne_01_stattrak"				"Kit de música de StatTrak™ | borne, Give It To Me"
+		
+		"musickit_pirapus_01"					"Pirapus, EVERYNITE"
+		"musickit_pirapus_01_desc"				"“EVERYNITE”, un electrizante himno de drum and bass de Pirapus, evoca la sensación de estar a punto de lograr algo extraordinario. Como su nombre indica, tus sentidos estarán en alerta máxima, noche tras noche."
+		"coupon_pirapus_01"						"Kit de música | Pirapus, EVERYNITE"
+		"coupon_pirapus_01_stattrak"			"Kit de música de StatTrak™ | Pirapus, EVERYNITE"
+		
+		"musickit_repiet_01"					"Repiet & Julia Kleijn, On And On"
+		"musickit_repiet_01_desc"				"Prepárate para cualquier reto con la pegajosa pista de Repiet y Julia Kleijn \"On And On\". La mezcla de agudos y graves de esta melodía marca el ritmo para atacar cualquier obstáculo."
+		"coupon_repiet_01"						"Kit de música | Repiet & Julia Kleijn, On And On"
+		"coupon_repiet_01_stattrak"				"Kit de música de StatTrak™ | Repiet & Julia Kleijn, On And On"
+		
+		"musickit_shockone_01"					"ShockOne, Voices"
+		"musickit_shockone_01_desc"				"Suéltate con el electrizante álbum de drum and bass de ShockOne, \"Voices\". Ideal para los momentos decisivos, este kit de música incluye líneas de bajo que te convertirán en el JMV de muchas partidas."
+		"coupon_shockone_01"					"Kit de música | ShockOne, Voices"
+		"coupon_shockone_01_stattrak"			"Kit de música de StatTrak™ | ShockOne, Voices"
 
 //////////////////
 
@@ -34059,6 +34112,8 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"store_nav_popular"		"NUEVAS Y POPULARES"
 		"store_linked_item_tooltip"		"Haz clic para ver ambas versiones de este objeto"
 		"store_nav_more"		"Ver más"
+		"store_nav_shop_all"		"Lista completa"
+		"store_nav_section_coupon_nightmode2" "NIGHTMODE II<br>Kits de música"
 
 		"StoreCheckout_NoItems"			"¡Tu carrito de compras está vacío!"
 		"StoreCheckout_TooManyItems"	"¡Tienes demasiados objetos en tu carrito de compras!"
@@ -37485,7 +37540,10 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"SFUI_match_cancelled"			"Partida cancelada"
 		"SFUI_match_abort_match_network_event"	"La partida se canceló debido a una interrupción de la red.\nEsta partida no afectará a tu calificación de habilidad."
 		"SFUI_match_abort_match_vac_live"	"VAC Live detectó a alguien haciendo trampas y finalizó la partida.\nTu grupo de habilidad no se verá afectado."
-		"SFUI_match_abort_match_abnormal_behavior"	"VAC ha detectado juego irregular y canceló la partida.\nEl jugador marcado por VAC y su grupo han recibido una suspensión."
+		
+		"SFUI_match_abort_match_abnormal_behavior"	"%s1 y todos los miembros del grupo recibieron suspensiones de VACNET."
+		"SFUI_match_abort_match_abnormal_behavior_pano"	"VACNET detectó un juego irregular y canceló la partida."
+
 		"SFUI_match_vac_live_partied_with_cheater"	"No obtendrás experiencia por esta partida, ya que un jugador de tu grupo fue vetado."
 		"SFUI_match_abort_match_missing_player"	" Se cancela la partida porque uno de los jugadores no se ha conectado."
 		"SFUI_match_abort_match_player_abandoned"	" Se cancela la partida porque uno de los jugadores se ha desconectado."
@@ -47410,6 +47468,9 @@ Tu obtención de EXP de recompensa de misión no volverá a su valor normal hast
 		"quest_11015_var_desc:f"	 					"{mission-points, plural, one{Gana una ronda en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>.} other{Gana rondas en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>.}}"
 		"quest_11015_var_ingame:f"						"{mission-points, plural, one{Gana una ronda} other{Gana rondas}}"
 
+		"quest_11016_var_desc:f"	 					"{mission-points, plural, one{Gana una ronda en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>.} other{Gana varias rondas en <b>{s:location}</b> jugando en el modo <b>{s:gamemode}</b>.}}"
+		"quest_11016_var_ingame:f"						"{mission-points, plural, one{Gana una ronda} other{Gana rondas}}"
+
 // ---------------------------------------------------------------------------------------------
 // Join Friend Listen Servers
 // ---------------------------------------------------------------------------------------------
@@ -47419,8 +47480,8 @@ Tu obtención de EXP de recompensa de misión no volverá a su valor normal hast
 		"tooltip_short_viewaddon"			"Ver mapa personalizado"
 		"tooltip_short_kick_player"			"Expulsar"
 
-// crow_mask_50454_comment
-// crow_mask_50455_comment
+// crow_mask_50516_comment
+// crow_mask_50517_comment
 }
 
 

@@ -1590,7 +1590,30 @@
 		"TMid"				"Т среда"
 		"Toilets"			"Тоалетни"
 		"Candle"			"Свещ"
-
+		//Cache
+		"OutsideA"			"Отвън „A“"
+		"OutsideB"			"Отвън „B“"
+		"AHalls"			"Зала „A“"
+		"BHalls"			"Зала „B“"
+		"SunRoom"			"Зимна градина"
+		"Checkers"			"Кариран под"
+		"Headshot"			"Изстрел в главата"
+		"TreeRoom"			"Дървесна стая"
+		"CTLane"			"КТ алея"
+		"Bear"				"Мечка"
+		"BusStop"			"Автобусна спирка"
+		"Corner"			"Ъгъл"
+		"ABoost"			"Подсилване „A“"
+		"Highway"			"Магистрала"
+		"Sandbags"			"Чували с пясък"
+		"Cubby"				"Ниша"
+		"MidRoof"			"Покрив в средата"
+		"Lockers"			"Шкафове"
+		"AStairs"			"Стълбище „A“"
+		"TTruck"			"Камион на Т"
+		"Useless"			"Безполезно"
+		"TYard"				"Двор на Т"
+		"Boost"				"Подсилване"
 		// coop_cementplant
 		"Gravelpit"		"Чакълен изкоп"
 		"Forest"		"Гора"
@@ -6230,6 +6253,36 @@
 		"musickit_jamesandthecoldgun_01_desc"			"<b><font color='#F2A93E'>James and the Cold Gun, Chewing Glass</font></b>\n \nУелското рок дуо James and the Cold Gun отприщва чиста, нефилтрирана енергия, смесвайки класическо пънк отношение с модерен алтернативен рок плам, за да създаде зашеметяващ музикален комплект."
 		"coupon_jamesandthecoldgun_01"					"Музикален комплект | James and the Cold Gun — Chewing Glass"
 		"coupon_jamesandthecoldgun_01_stattrak"			"StatTrak™ музикален комплект | James and the Cold Gun — Chewing Glass"
+		
+		"musickit_alrt_01"						"ALRT — DOPAMINE HIT"
+		"musickit_alrt_01_desc"					"<b><font color='#F2A93E'>ALRT, DOPAMINE HIT</font></b>\n \nХаус албумът с жизнена бас секция на ALRT поднася най-добрата доза допамин („DOPAMINE HIT“), който Ви държи под напрежение и готови да се изправите с проява на висота, когато наистина е от значение."
+		"coupon_alrt_01"						"Музикален комплект | ALRT — DOPAMINE HIT"
+		"coupon_alrt_01_stattrak"				"StatTrak™ музикален комплект | ALRT — DOPAMINE HIT"
+		
+		"musickit_altare_01"					"Altare — Change My Mind"
+		"musickit_altare_01_desc"				"<b><font color='#F2A93E'>Altare, Change My Mind</font></b>\n \nЕуфоричният уейв химн на Altare, „Change My Mind“, е перфектен за моментите на върховното възхищение, когато се чувствате така, сякаш никой не може да Ви се противопостави."
+		"coupon_altare_01"						"Музикален комплект | Altare — Change My Mind"
+		"coupon_altare_01_stattrak"				"StatTrak™ музикален комплект | Altare — Change My Mind"
+		
+		"musickit_borne_01"						"borne — Give It To Me"
+		"musickit_borne_01_desc"				"<b><font color='#F2A93E'>borne, Give It To Me</font></b>\n \nНепреклонната басова тупалка „Give It To Me“ на Borne ще подготви играчите да се раздават срещу своите опоненти в Counter-Strike, че и отвъд."
+		"coupon_borne_01"						"Музикален комплект | borne — Give It To Me"
+		"coupon_borne_01_stattrak"				"StatTrak™ музикален комплект | borne — Give It To Me"
+		
+		"musickit_pirapus_01"					"Pirapus — EVERYNITE"
+		"musickit_pirapus_01_desc"				"<b><font color='#F2A93E'>Pirapus, EVERYNITE</font></b>\n \nВисокооктановият дръм енд бейс химн на Pirapus, „EVERYNITE“ („'СЯКА ВЕЧЕР“),навява усещането, че сте на прага на величието. Наистина отговаряйки на името си, тава парче Ви гарантира, че ще сте съсредоточени всяка нощ."
+		"coupon_pirapus_01"						"Музикален комплект | Pirapus — EVERYNITE"
+		"coupon_pirapus_01_stattrak"			"StatTrak™ музикален комплект | Pirapus — EVERYNITE"
+		
+		"musickit_repiet_01"					"Repiet & Julia Kleijn — On And On"
+		"musickit_repiet_01_desc"				"<b><font color='#F2A93E'>Repiet & Julia Kleijn — On And On</font></b>\n \nБъдете подготвени за всякакво предизвикателство със заразителното парче „On And On“ на Repiet & Julia Kleijn. През висините и низините, това е мелодия, която задава тона за атака на всяко препятствие."
+		"coupon_repiet_01"						"Музикален комплект | Repiet & Julia Kleijn — On And On"
+		"coupon_repiet_01_stattrak"				"StatTrak™ музикален комплект | Repiet & Julia Kleijn — On And On"
+		
+		"musickit_shockone_01"					"ShockOne — Voices"
+		"musickit_shockone_01_desc"				"<b><font color='#F2A93E'>ShockOne, Voices</font></b>\n \nОтприщете се свободно с енергичния дръм енд бейс сингъл „Voices“ на ShockOne. Подбуждащ решаващи проигравания в критични схватки, този музикален комплект включва слисващи басови партии, които ще Ви пренесат до много титли за НЦИ."
+		"coupon_shockone_01"					"Музикален комплект | ShockOne — Voices"
+		"coupon_shockone_01_stattrak"			"StatTrak™ музикален комплект | ShockOne — Voices"
 
 //////////////////
 
@@ -36914,6 +36967,8 @@
 		"store_nav_popular"		"НОВИ И ПОПУЛЯРНИ"
 		"store_linked_item_tooltip"		"Кликнете, за да видите и двете версии на този артикул"
 		"store_nav_more"		"Вижте още"
+		"store_nav_shop_all"		"Пазаруване за всички"
+		"store_nav_section_coupon_nightmode2" "Музикални комплекти<br>NIGHTMODE II"
 
 		"StoreCheckout_NoItems"			"Кошницата Ви е празна!"
 		"StoreCheckout_TooManyItems"	"Имате прекалено много артикули в кошницата!"
@@ -40579,7 +40634,10 @@ Counter-Strike разполага с четири основни игрални 
 		"SFUI_match_cancelled"			"Мачът е отменен"
 		"SFUI_match_abort_match_network_event"	"Мрежово прекъсване доведе до отмяна на мача.\nТози мач няма да повлияе върху рейтинга Ви на умение."
 		"SFUI_match_abort_match_vac_live"	"VAC Live засече измамник и прекрати мача.\nТози мач няма да повлияе върху рейтинга Ви на умение."
-		"SFUI_match_abort_match_abnormal_behavior"	"VAC засече необичайно игрално преживяване и отмени мача.\nИграчът, който беше отбелязан от VAC, както и неговата дружина получиха време за изчакване."
+		
+		"SFUI_match_abort_match_abnormal_behavior"	"%s1 и всякакви дружинни членове получиха време за изчакване от VACNET."
+		"SFUI_match_abort_match_abnormal_behavior_pano"	"VACNET засече необичайно игрално преживяване и отмени мача."
+
 		"SFUI_match_vac_live_partied_with_cheater"	"За този мач няма да бъде присъден напредък, защото на играч от Вашата дружина е била наложена забрана."
 		"SFUI_match_abort_match_missing_player"	"Мачът се отменя, защото един играч не се свърза."
 		"SFUI_match_abort_match_player_abandoned"	" Мачът бива отказан, защото даден играч се разкачи."
@@ -50634,6 +50692,9 @@ Counter-Strike разполага с четири основни игрални 
 		"quest_11015_var_partial:f" 					""
 		"quest_11015_var_ingame:f"						"{mission-points, plural, one{Спечелете рунд.} other{Спечелете рундове.}}"
 
+		"quest_11016_var_desc:f"	 					"{mission-points, plural, one{Спечелете рунд в <b>„{s:gamemode}“ — {s:location}</b>.} other{Спечелете рундове в <b>„{s:gamemode}“ — {s:location}</b>.}}"
+		"quest_11016_var_ingame:f"						"{mission-points, plural, one{Спечелете рунд.} other{Спечелете рундове.}}"
+
 // ---------------------------------------------------------------------------------------------
 // Join Friend Listen Servers
 // ---------------------------------------------------------------------------------------------
@@ -50643,8 +50704,8 @@ Counter-Strike разполага с четири основни игрални 
 		"tooltip_short_viewaddon"			"Преглед на персонализирана карта"
 		"tooltip_short_kick_player"			"Изритване"
 
-// crow_mask_50454_comment
-// crow_mask_50455_comment
+// crow_mask_50516_comment
+// crow_mask_50517_comment
 }
 
 

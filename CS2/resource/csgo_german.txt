@@ -1586,7 +1586,30 @@
 		"TMid"				"T-Mitte"
 		"Toilets"			"Toiletten"
 		"Candle"			"Kerze"
-
+		//Cache
+		"OutsideA"			"Außerhalb A"
+		"OutsideB"			"Außerhalb B"
+		"AHalls"			"A-Halle"
+		"BHalls"			"B-Halle"
+		"SunRoom"			"Seitengang"
+		"Checkers"			"Schachtgang"
+		"Headshot"			"Headshot"
+		"TreeRoom"			"Baum"
+		"CTLane"			"AT-Gasse"
+		"Bear"				"Bär"
+		"BusStop"			"Bushaltestelle"
+		"Corner"			"Ecke"
+		"ABoost"			"A-Boost"
+		"Highway"			"Highway"
+		"Sandbags"			"Sandsäcke"
+		"Cubby"				"Nische"
+		"MidRoof"			"Mitte-Dach"
+		"Lockers"			"Spinde"
+		"AStairs"			"A-Treppe"
+		"TTruck"			"T-Laster"
+		"Useless"			"Schieber"
+		"TYard"				"T-Hof"
+		"Boost"				"Boost"
 		// coop_cementplant
 		"Gravelpit"		"Kiesgrube"
 		"Forest"		"Wald"
@@ -5839,6 +5862,36 @@
 		"musickit_jamesandthecoldgun_01_desc"			"Das walisische Rock-Duo James and the Cold Gun entfesselt pure, ungefilterte Energie und verbindet klassische Punk-Attitüde mit modernem Alternative-Rock-Feuer, wodurch ein mitreißendes Musikkit entsteht."
 		"coupon_jamesandthecoldgun_01"					"Musikkit | James and the Cold Gun, Chewing Glass"
 		"coupon_jamesandthecoldgun_01_stattrak"			"StatTrak™-Musikkit | James and the Cold Gun, Chewing Glass"
+		
+		"musickit_alrt_01"						"ALRT, DOPAMINE HIT"
+		"musickit_alrt_01_desc"					"ALRTs mitreißender Bass-House-Track sorgt für den ultimativen „DOPAMINE HIT“ und liefert den nötigen Schwung, um in den entscheidenden Momenten zur Höchstleistung aufzulaufen."
+		"coupon_alrt_01"						"Musikkit | ALRT, DOPAMINE HIT"
+		"coupon_alrt_01_stattrak"				"StatTrak™-Musikkit | ALRT, DOPAMINE HIT"
+		
+		"musickit_altare_01"					"Altare, Change My Mind"
+		"musickit_altare_01_desc"				"Altares euphorische Wave-Hymne „Change My Mind“ ist perfekt für die höchsten Höhen, wenn man das Gefühl hat, dass einem nichts und niemand im Weg stehen kann."
+		"coupon_altare_01"						"Musikkit | Altare, Change My Mind"
+		"coupon_altare_01_stattrak"				"StatTrak™-Musikkit | Altare, Change My Mind"
+		
+		"musickit_borne_01"						"borne, Give It To Me"
+		"musickit_borne_01_desc"				"bornes kraftvoller Bass-Kracher „Give It To Me“ bringt einen dazu, es seinen Gegnern in Counter-Strike und anderswo richtig zu zeigen."
+		"coupon_borne_01"						"Musikkit | borne, Give It To Me"
+		"coupon_borne_01_stattrak"				"StatTrak™-Musikkit | borne, Give It To Me"
+		
+		"musickit_pirapus_01"					"Pirapus, EVERYNITE"
+		"musickit_pirapus_01_desc"				"Pirapus’ energiegeladene Drum-and-Bass-Hymne „EVERYNITE“ vermittelt das Gefühl, kurz vor dem Durchbruch zu stehen. Wie der Name schon vermuten lässt, sorgt dieser Track dafür, dass man jede Nacht voll und ganz bei der Sache ist."
+		"coupon_pirapus_01"						"Musikkit | Pirapus, EVERYNITE"
+		"coupon_pirapus_01_stattrak"			"StatTrak™-Musikkit | Pirapus, EVERYNITE"
+		
+		"musickit_repiet_01"					"Repiet & Julia Kleijn, On And On"
+		"musickit_repiet_01_desc"				"Mit dem mitreißenden Track „On And On“ von Repiet und Julia Kleijn ist man für jede Herausforderung gewappnet. Ob in guten oder in schlechten Zeiten – dieser Track gibt den richtigen Rhythmus vor, um jedes Hindernis zu überwinden."
+		"coupon_repiet_01"						"Musikkit | Repiet & Julia Kleijn, On And On"
+		"coupon_repiet_01_stattrak"				"StatTrak™-Musikkit | Repiet & Julia Kleijn, On And On"
+		
+		"musickit_shockone_01"					"ShockOne, Voices"
+		"musickit_shockone_01_desc"				"Lasst euch von ShockOnes energiegeladener Drum-and-Bass-Platte „Voices“ mitreißen. Dieses Musikkit ist wie geschaffen für entscheidende Momente und bietet kraftvolle Basslines, die euch zu vielen Auszeichnungen zum besten Spieler verhelfen wird."
+		"coupon_shockone_01"					"Musikkit | ShockOne, Voices"
+		"coupon_shockone_01_stattrak"			"StatTrak™-Musikkit | ShockOne, Voices"
 
 //////////////////
 
@@ -34056,6 +34109,8 @@
 		"store_nav_popular"		"NEU & BELIEBT"
 		"store_linked_item_tooltip"		"Klicken, um beide Versionen des Gegenstands anzuzeigen"
 		"store_nav_more"		"Mehr anzeigen"
+		"store_nav_shop_all"		"Alle anzeigen"
+		"store_nav_section_coupon_nightmode2" "NIGHTMODE II<br>Musikkits"
 
 		"StoreCheckout_NoItems"			"Ihr Warenkorb ist leer!"
 		"StoreCheckout_TooManyItems"	"Sie haben zu viele Artikel in Ihrem Warenkorb!"
@@ -37482,7 +37537,10 @@
 		"SFUI_match_cancelled"			"Partie abgebrochen"
 		"SFUI_match_abort_match_network_event"	"Eine Netzwerkunterbrechung führte zum Abbruch des Spiels.\nDieses Spiel hat keinen Einfluss auf Ihre CS-Wertung/Skill-Gruppe."
 		"SFUI_match_abort_match_vac_live"	"VAC Live hat einen Betrüger erkannt und die Partie abgebrochen.\nDiese Partie hat keinen Einfluss auf Ihre Skill-Gruppe oder CS-Wertung."
-		"SFUI_match_abort_match_abnormal_behavior"	"VAC hat ein auffälliges Spielverhalten festgestellt und das Spiel abgebrochen.\nDer von VAC als auffällig befundene Spieler und seine Lobby haben eine Strafzeit erhalten."
+		
+		"SFUI_match_abort_match_abnormal_behavior"	"%s1 und alle Gruppenmitglieder haben eine VACNET-Strafzeit erhalten."
+		"SFUI_match_abort_match_abnormal_behavior_pano"	"VACNET hat ein auffälliges Spielverhalten festgestellt und das Spiel abgebrochen."
+
 		"SFUI_match_vac_live_partied_with_cheater"	"Für diese Partie wird kein Fortschritt vergeben, da ein Spieler Ihrer Seite vom Spiel ausgeschlossen wurde."
 		"SFUI_match_abort_match_missing_player"	"Das Spiel wird abgebrochen, da ein Spieler keine Verbindung herstellen konnte."
 		"SFUI_match_abort_match_player_abandoned"	" Das Spiel wird abgebrochen, da ein Spieler die Verbindung getrennt hat."
@@ -47405,6 +47463,9 @@
 		"quest_11015_var_desc:f"	 					"{mission-points, plural, one{Gewinnen Sie eine Runde im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.} other{Gewinnen Sie mehrere Runden im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.}}"
 		"quest_11015_var_ingame:f"						"{mission-points, plural, one{Gewinnen Sie eine Runde.} other{Gewinnen Sie mehrere Runden.}}"
 
+		"quest_11016_var_desc:f"	 					"{mission-points, plural, one{Gewinnen Sie eine Runde im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.} other{Gewinnen Sie Runden im Spielmodus <b>{s:gamemode}</b> auf <b>{s:location}</b>.}}"
+		"quest_11016_var_ingame:f"						"{mission-points, plural, one{Gewinnen Sie eine Runde.} other{Gewinnen Sie Runden.}}"
+
 // ---------------------------------------------------------------------------------------------
 // Join Friend Listen Servers
 // ---------------------------------------------------------------------------------------------
@@ -47414,8 +47475,8 @@
 		"tooltip_short_viewaddon"			"Benutzerdefinierte Karte anzeigen"
 		"tooltip_short_kick_player"			"Herauswerfen"
 
-// crow_mask_50454_comment
-// crow_mask_50455_comment
+// crow_mask_50516_comment
+// crow_mask_50517_comment
 }
 
 

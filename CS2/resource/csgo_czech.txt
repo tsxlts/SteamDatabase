@@ -1447,7 +1447,7 @@
 		"Decon"			"Dekontaminační místnost"
 		"Observation"		"Kontrolní místnost"
 		"Admin"			"Kanceláře"
-		"Toxic"			"Sklad odpadu"
+		"Toxic"			"Toxický odpad"
 		"Mini"			"Mini"
 		"Control"		"Řídicí místnost"
 		"Heaven"		"Nebe"
@@ -1573,7 +1573,7 @@
 		"BRamp"			 "Rampa u B"
 		"BMain"			 "Hlavní na B"
 		"BBridge"			 "Most na B"
-		"Yard"				"Nádvoří"
+		"Yard"				"Prostranství"
 		"Bikes"				"Půjčovna kol"
 		"Import"			 "Přepravní společnost"
 		"Milk"				"Mlékárna"
@@ -1590,7 +1590,30 @@
 		"TMid"				"Střed T"
 		"Toilets"			"Toalety"
 		"Candle"			"Svíčka"
-
+		//Cache
+		"OutsideA"			"Vnějšek A"
+		"OutsideB"			"Vnějšek B"
+		"AHalls"			"Chodby u A"
+		"BHalls"			"Chodby u B"
+		"SunRoom"			"Pod sluncem"
+		"Checkers"			"Šachovnice"
+		"Headshot"			"Nízká zídka"
+		"TreeRoom"			"Hala se stromem"
+		"CTLane"			"Linka CT"
+		"Bear"				"U medvěda"
+		"BusStop"			"Autobusová zastávka"
+		"Corner"			"Růžek"
+		"ABoost"			"Vysoká pozice na A"
+		"Highway"			"Dálnice"
+		"Sandbags"			"Pytle s pískem"
+		"Cubby"				"Mezera"
+		"MidRoof"			"Střecha na středu"
+		"Lockers"			"Skříňky"
+		"AStairs"			"Schody na A"
+		"TTruck"			"Nákladní auto T"
+		"Useless"			"Dvorek navíc"
+		"TYard"				"Prostranství T"
+		"Boost"				"Spojnice přes střechu"
 		// coop_cementplant
 		"Gravelpit"		"Lom"
 		"Forest"		"Les"
@@ -5906,7 +5929,7 @@
 		"coupon_selectiveresponse_01_stattrak"			"Hudební balíček StatTrak™ | Selective Response – No Love Only Pleasure"
 		
 		"musickit_jonathanyoung_01"					"Jonathan Young – Starship Velociraptor"
-		"musickit_jonathanyoung_01_desc"			"Jak jsme si sakra mohli myslet, že CS2 bude kompletní bez power metalu ve stylu vesmírných pirátů? Naštěstí se objevil Jonathan Young se svým albem Starship Velociraptor, které se zhlédlo v anime a videohrách, a konečně zaplnil tuhle mezeru o velikosti mezihvězdné fregaty."
+		"musickit_jonathanyoung_01_desc"			"Jak jsme si sakra mohli myslet, že CS2 bude kompletní bez power metalu ve stylu vesmírných pirátů? Naštěstí se objevil Jonathan Young se svým albem „Starship Velociraptor“, které se zhlédlo v anime a videohrách, a konečně zaplnil tuhle mezeru o velikosti mezihvězdné fregaty."
 		"coupon_jonathanyoung_01"					"Hudební balíček | Jonathan Young – Starship Velociraptor"
 		"coupon_jonathanyoung_01_stattrak"			"Hudební balíček StatTrak™ | Jonathan Young – Starship Velociraptor"
 		
@@ -5926,7 +5949,7 @@
 		"coupon_killermike_01_stattrak"			"Hudební balíček StatTrak™ | Killer Mike – MICHAEL"
 		
 		"musickit_health_01"				"HEALTH – RAT WARS"
-		"musickit_health_01_desc"			"Popadni bouchačku a do sluchátek nahoď brutální industriální metal z alba RAT WARS od nikoho jiného než od legendárních HEALTH."
+		"musickit_health_01_desc"			"Popadni bouchačku a do sluchátek nahoď brutální industriální metal z alba „RAT WARS“ od nikoho jiného než od legendárních HEALTH."
 		"coupon_health_01"					"Hudební balíček | HEALTH – RAT WARS"
 		"coupon_health_01_stattrak"			"Hudební balíček StatTrak™ | HEALTH – RAT WARS"
 		
@@ -5939,6 +5962,36 @@
 		"musickit_jamesandthecoldgun_01_desc"			"Velšské rockové duo James and the Cold Gun rozpoutalo nefiltrovanou energii spojující klasické punkové manýry s moderním alternativním rockem. Věř nám, že tady chceš být přímo v kotli!"
 		"coupon_jamesandthecoldgun_01"					"Hudební balíček | James and the Cold Gun – Chewing Glass"
 		"coupon_jamesandthecoldgun_01_stattrak"			"Hudební balíček StatTrak™ | James and the Cold Gun – Chewing Glass"
+		
+		"musickit_alrt_01"						"ALRT – DOPAMINE HIT"
+		"musickit_alrt_01_desc"					"Injekce dopaminu ve formě hudebního balíčku! ALRTův energický bass housový počin „DOPAMINE HIT“ je zkrátka dokonalý pomocník pro situace, kdy se potřebuješ „locknout“ a vytáhnout ze sebe maximum!"
+		"coupon_alrt_01"						"Hudební balíček | ALRT – DOPAMINE HIT"
+		"coupon_alrt_01_stattrak"				"Hudební balíček StatTrak™ | ALRT – DOPAMINE HIT"
+		
+		"musickit_altare_01"					"Altare – Change My Mind"
+		"musickit_altare_01_desc"				"„Change My Mind“ je Altareho euforická pocta žánru wave, která perfektně doplní topové momenty, kdy máš pocit, že tě nikdo nezastaví. A ať někdo zkusí změnit tvůj názor!"
+		"coupon_altare_01"						"Hudební balíček | Altare – Change My Mind"
+		"coupon_altare_01_stattrak"				"Hudební balíček StatTrak™ | Altare – Change My Mind"
+		
+		"musickit_borne_01"						"borne – Give It To Me"
+		"musickit_borne_01_desc"				"„Jen do mě!“ řve borne skrz svůj drsný bass housový nářez „Give It To Me“ a ty se k němu můžeš přidat. Jestli si teda troufáš!"
+		"coupon_borne_01"						"Hudební balíček | borne – Give It To Me"
+		"coupon_borne_01_stattrak"				"Hudební balíček StatTrak™ | borne – Give It To Me"
+		
+		"musickit_pirapus_01"					"Pirapus – EVERYNITE"
+		"musickit_pirapus_01_desc"				"„EVERYNITE“ od Pirapuse je našlapaná hymna žánru drum’n’bass, která tě dovede až k branám dokonalosti, a to prosím pěkně každý večer, sedm dní v týdnu."
+		"coupon_pirapus_01"						"Hudební balíček | Pirapus – EVERYNITE"
+		"coupon_pirapus_01_stattrak"			"Hudební balíček StatTrak™ | Pirapus – EVERYNITE"
+		
+		"musickit_repiet_01"					"Repiet & Julia Kleijn – On And On"
+		"musickit_repiet_01_desc"				"Repiet a Julia Kleijn přináší nakažlivě rytmický balíček „On And On“, který udá tempo všem herním situacím a pomůže ti překonat všechny výzvy."
+		"coupon_repiet_01"						"Hudební balíček | Repiet & Julia Kleijn – On And On"
+		"coupon_repiet_01_stattrak"				"Hudební balíček StatTrak™ | Repiet & Julia Kleijn – On And On"
+		
+		"musickit_shockone_01"					"ShockOne – Voices"
+		"musickit_shockone_01_desc"				"Prolom okovy průměrnosti díky brutálně energickému drum’n’bass balíčku „Voices“ od DJ známého jako ShockOne a nech se jeho údernou basou vynést až mezi nejlepší hráče."
+		"coupon_shockone_01"					"Hudební balíček | ShockOne – Voices"
+		"coupon_shockone_01_stattrak"			"Hudební balíček StatTrak™ | ShockOne – Voices"
 
 //////////////////
 
@@ -34766,6 +34819,8 @@
 		"store_nav_popular"		"NOVÉ A POPULÁRNÍ"
 		"store_linked_item_tooltip"		"Kliknutím si prohlédneš obě verze předmětu"
 		"store_nav_more"		"Více"
+		"store_nav_shop_all"		"Prohlédnout všechny"
+		"store_nav_section_coupon_nightmode2" "Hudební balíčky<br>NIGHTMODE II"
 
 		"StoreCheckout_NoItems"			"Tvůj nákupní košík je prázdný!"
 		"StoreCheckout_TooManyItems"	"V nákupním košíku máš příliš mnoho předmětů!"
@@ -36022,7 +36077,7 @@
 		"SFUI_InvTooltip_Wear_Amount_2"						"Opotřebený"
 		"SFUI_InvTooltip_Wear_Amount_3"						"Silně opotřebený"
 		"SFUI_InvTooltip_Wear_Amount_4"						"Poničený bojem"
-		"SFUI_InvTooltip_Wear_Amount_NA"					"Nenabarveno"
+		"SFUI_InvTooltip_Wear_Amount_NA"					"Neznámý"
 		"SFUI_InvTooltip_TournamentTag"						"Turnaj"
 		"SFUI_InvTooltip_TournamentTeamTag"					"Tým"
 		"SFUI_InvTooltip_ProPlayerTag"						"Profesionální hráč"
@@ -38207,7 +38262,10 @@
 		"SFUI_match_cancelled"			"Zápas byl zrušen"
 		"SFUI_match_abort_match_network_event"	"Přerušení spojení vyústilo ve zrušení zápasu.\nTento zápas neovlivní tvůj rating CS."
 		"SFUI_match_abort_match_vac_live"	"Ochrana VAC Live detekovala podvodníka a ukončila zápas.\nTento zápas neovlivní tvůj rating CS."
-		"SFUI_match_abort_match_abnormal_behavior"	"Ochrana VAC detekovala nezvyklé chování a zrušila zápas.\nNa hráče označeného ochranou a jeho skupinu byla uvalena penalizace."
+		
+		"SFUI_match_abort_match_abnormal_behavior"	"Na hráče %s1 a všechny členy jeho skupiny byla uvalena penalizace ochrany VACnet."
+		"SFUI_match_abort_match_abnormal_behavior_pano"	"Ochrana VACnet detekovala nezvyklé chování a zrušila zápas."
+
 		"SFUI_match_vac_live_partied_with_cheater"	"Za tento zápas nezískáš žádný postup, protože člen tvojí skupiny byl zabanován."
 		"SFUI_match_abort_match_missing_player"	" Zápas bude zrušen, protože se jeden hráč vůbec nepřipojil."
 		"SFUI_match_abort_match_player_abandoned"	" Zápas bude zrušen, protože se jeden hráč odpojil."
@@ -48166,6 +48224,9 @@
 		"quest_11015_var_desc:f"	 					"{mission-points, plural, one{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} few{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} many{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} other{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.}}"
 		"quest_11015_var_ingame:f"						"{mission-points, plural, one{Vyhrávej kola} few{Vyhrávej kola} many{Vyhrávej kola} other{Vyhrávej kola}}"
 
+		"quest_11016_var_desc:f"	 					"{mission-points, plural, one{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} few{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} many{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.} other{<b>{s:gamemode}: {s:location}</b> | Vyhraj určitý počet kol.}}"
+		"quest_11016_var_ingame:f"						"{mission-points, plural, one{Vyhrávej kola} few{Vyhrávej kola} many{Vyhrávej kola} other{Vyhrávej kola}}"
+
 // ---------------------------------------------------------------------------------------------
 // Join Friend Listen Servers
 // ---------------------------------------------------------------------------------------------
@@ -48175,8 +48236,8 @@
 		"tooltip_short_viewaddon"			"Info o mapě"
 		"tooltip_short_kick_player"			"Vyhození"
 
-// crow_mask_50454_comment
-// crow_mask_50455_comment
+// crow_mask_50516_comment
+// crow_mask_50517_comment
 }
 
 

@@ -1586,7 +1586,30 @@
 		"TMid"				"T-mitt"
 		"Toilets"			"Toaletter"
 		"Candle"			"Stearinljus"
-
+		//Cache
+		"OutsideA"			"Utanför A"
+		"OutsideB"			"Utanför B"
+		"AHalls"			"A-korridoren"
+		"BHalls"			"B-korridoren"
+		"SunRoom"			"Solrummet"
+		"Checkers"			"Rutiga rummet"
+		"Headshot"			"Huvudskott"
+		"TreeRoom"			"Trädrummet"
+		"CTLane"			"AT-vägen"
+		"Bear"				"Björnen"
+		"BusStop"			"Busshållplats"
+		"Corner"			"Hörn"
+		"ABoost"			"A-boost"
+		"Highway"			"Huvudvägen"
+		"Sandbags"			"Sandsäckarna"
+		"Cubby"				"Krypin"
+		"MidRoof"			"Mittentaket"
+		"Lockers"			"Skåp"
+		"AStairs"			"A-trapporna"
+		"TTruck"			"T-lastbilen"
+		"Useless"			"Värdelöst"
+		"TYard"				"T-gård"
+		"Boost"				"Boost"
 		// coop_cementplant
 		"Gravelpit"		"Grusgrop"
 		"Forest"		"Skog"
@@ -5844,6 +5867,36 @@
 		"musickit_jamesandthecoldgun_01_desc"			"Den walesiska rockduon James and the Cold Gun släpper loss ren, ofiltrerad energi och blandar klassisk punkattityd med modern alternativ rock för att skapa ett brännhett musikpaket."
 		"coupon_jamesandthecoldgun_01"					"Musikpaket | James and the Cold Gun, Chewing Glass"
 		"coupon_jamesandthecoldgun_01_stattrak"			"Musikpaket (StatTrak™)| James and the Cold Gun, Chewing Glass"
+		
+		"musickit_alrt_01"						"ALRT – DOPAMINE HIT"
+		"musickit_alrt_01_desc"					"ALRTs studsiga bass house-skriva levererar en ultimat DOPAMINE HIT, som håller dig fokuserad och redo att visa vad du går för."
+		"coupon_alrt_01"						"Musikpaket | ALRT – DOPAMINE HIT"
+		"coupon_alrt_01_stattrak"				"Musikpaket (StatTrak™) | ALRT – DOPAMINE HIT"
+		
+		"musickit_altare_01"					"Altare – Change My Mind"
+		"musickit_altare_01_desc"				"Altares euforiska wave-hymn Change My Mind är perfekt för de högsta av höjder när det känns som om ingen kan stå i din väg."
+		"coupon_altare_01"						"Musikpaket | Altare – Change My Mind"
+		"coupon_altare_01_stattrak"				"Musikpaket (StatTrak™) | Altare – Change My Mind"
+		
+		"musickit_borne_01"						"borne – Give It To Me"
+		"musickit_borne_01_desc"				"bornes råa baslåt Give It To Me gör spelarna redo att ge det till sina motståndare både i och utanför Counter-Strike."
+		"coupon_borne_01"						"Musikpaket | borne – Give It To Me"
+		"coupon_borne_01_stattrak"				"Musikpaket (StatTrak™) | borne – Give It To Me"
+		
+		"musickit_pirapus_01"					"Pirapus – EVERYNITE"
+		"musickit_pirapus_01_desc"				"Pirapus högoktaniga drum and bass-hymn EVERYNITE skapar känslan av att stå på tröskeln till storhet. Som namnet antyder ser den till att du är helt inne i zonen varje natt."
+		"coupon_pirapus_01"						"Musikpaket | Pirapus – EVERYNITE"
+		"coupon_pirapus_01_stattrak"			"Musikpaket (StatTrak™) | Pirapus – EVERYNITE"
+		
+		"musickit_repiet_01"					"Repiet & Julia Kleijn – On And On"
+		"musickit_repiet_01_desc"				"Var beredd på alla utmaningar med den medryckande låten On And On av Repiet och Julia Kleijn. Genom upp- och nedgångar är det en melodi som sätter stämningen för att tackla alla hinder."
+		"coupon_repiet_01"						"Musikpaket | Repiet & Julia Kleijn – On And On"
+		"coupon_repiet_01_stattrak"				"Musikpaket (StatTrak™) | Repiet & Julia Kleijn – On And On"
+		
+		"musickit_shockone_01"					"ShockOne – Voices"
+		"musickit_shockone_01_desc"				"Bryt loss med ShockOnes högenergiska drum and bass-skiva Voices. Detta musikpaket innehåller slagkraftiga basgångar som tar dig till MVP, perfekt för att leverera i avgörande ögonblick."
+		"coupon_shockone_01"					"Musikpaket | ShockOne – Voices"
+		"coupon_shockone_01_stattrak"			"Musikpaket (StatTrak™) | ShockOne – Voices"
 
 //////////////////
 
@@ -34112,6 +34165,8 @@
 		"store_nav_popular"		"NYTT OCH POPULÄRT"
 		"store_linked_item_tooltip"		"Klicka för att se båda versionerna av föremålet"
 		"store_nav_more"		"Visa mer"
+		"store_nav_shop_all"		"Visa alla"
+		"store_nav_section_coupon_nightmode2" "NIGHTMODE II<br>Musikpaket"
 
 		"StoreCheckout_NoItems"			"Din kundvagn är tom!"
 		"StoreCheckout_TooManyItems"	"Du har för många varor i din kundvagn!"
@@ -37545,7 +37600,10 @@
 		"SFUI_match_cancelled"			"Match inställd"
 		"SFUI_match_abort_match_network_event"	"Ett nätverksavbrott har resulterat i att matchen avbröts.\nDen här matchen påverkar inte din skicklighetsnivå."
 		"SFUI_match_abort_match_vac_live"	"VAC Live har upptäckt en fuskare och avslutat matchen.\nDen här matchen påverkar inte din skicklighetsnivå."
-		"SFUI_match_abort_match_abnormal_behavior"	"VAC har upptäckt oregelmässigt gameplay och har avbrutit matchen.\nSpelaren som flaggades av VAC och hens grupp har fått en cooldown."
+		
+		"SFUI_match_abort_match_abnormal_behavior"	"%s1 och eventuella gruppmedlemmar har fått en VACNET-cooldown."
+		"SFUI_match_abort_match_abnormal_behavior_pano"	"VACNET har upptäckt oregelmässigt spelande och har avbrutit matchen."
+
 		"SFUI_match_vac_live_partied_with_cheater"	"Du får inga framsteg från den här matchen eftersom en spelare i din grupp blev avstängd."
 		"SFUI_match_abort_match_missing_player"	" Matchen avbryts för att en spelare inte har anslutit."
 		"SFUI_match_abort_match_player_abandoned"	" Matchen avbryts eftersom en spelare är frånkopplad."
@@ -47501,6 +47559,9 @@ Om samma match redan laddats ner lokalt och filen blivit förstörd, radera då 
 		"quest_11015_var_desc:f"	 					"{mission-points, plural, one{Vinn en runda i <b>{s:gamemode}: {s:location}</b>.} other{Vinn rundor i <b>{s:gamemode}: {s:location}</b>.}}"
 		"quest_11015_var_ingame:f"						"{mission-points, plural, one{Vinn en runda} other{Vinn rundor}}"
 
+		"quest_11016_var_desc:f"	 					"{mission-points, plural, one{Vinn en runda i <b>{s:gamemode}: {s:location}</b>.} other{Vinn rundor i <b>{s:gamemode}: {s:location}</b>.}}"
+		"quest_11016_var_ingame:f"						"{mission-points, plural, one{Vinn en runda} other{Vinn rundor}}"
+
 // ---------------------------------------------------------------------------------------------
 // Join Friend Listen Servers
 // ---------------------------------------------------------------------------------------------
@@ -47510,8 +47571,8 @@ Om samma match redan laddats ner lokalt och filen blivit förstörd, radera då 
 		"tooltip_short_viewaddon"			"Visa anpassad bana"
 		"tooltip_short_kick_player"			"Sparka ut"
 
-// crow_mask_50454_comment
-// crow_mask_50455_comment
+// crow_mask_50516_comment
+// crow_mask_50517_comment
 }
 
 

@@ -1586,7 +1586,30 @@
 		"TMid"				"Terroristien keskiosa"
 		"Toilets"			"Vessat"
 		"Candle"			"Kynttilä"
-
+		//Cache
+		"OutsideA"			"Ulkoalue A"
+		"OutsideB"			"Ulkoalue B"
+		"AHalls"			"A-hallit"
+		"BHalls"			"B-hallit"
+		"SunRoom"			"Aurinkoinen"
+		"Checkers"			"Tammihuone"
+		"Headshot"			"Pääosuma"
+		"TreeRoom"			"Puuhalli"
+		"CTLane"			"Erikoisjoukkojen linja"
+		"Bear"				"Karhu"
+		"BusStop"			"Bussipysäkki"
+		"Corner"			"Kulma"
+		"ABoost"			"A-alueen laatikot"
+		"Highway"			"Pitkä kaista"
+		"Sandbags"			"Hiekkasäkit"
+		"Cubby"				"Kolo"
+		"MidRoof"			"Keskikatto"
+		"Lockers"			"Lokerot"
+		"AStairs"			"A-portaat"
+		"TTruck"			"Terroristien kuorma-auto"
+		"Useless"			"Turha nurkka"
+		"TYard"				"T-piha"
+		"Boost"				"Välikatto"
 		// coop_cementplant
 		"Gravelpit"		"Hiekkamonttu"
 		"Forest"		"Metsä"
@@ -6032,6 +6055,36 @@
 		"musickit_jamesandthecoldgun_01_desc"			"Walesilainen rock-duo James and the Cold Gun on täynnä energiaa, klassista punk-asennetta ja modernia alt-rockia. Tätä musiikkipakkausta ei pitele mikään."
 		"coupon_jamesandthecoldgun_01"					"Musiikkipakkaus | James and the Cold Gun, Chewing Glass"
 		"coupon_jamesandthecoldgun_01_stattrak"			"StatTrak™-musiikkipakkaus | James and the Cold Gun, Chewing Glass"
+		
+		"musickit_alrt_01"						"ALRT, DOPAMINE HIT"
+		"musickit_alrt_01_desc"					"ALRT tarjoaa äärimmäisen dopamiinipiikin bassopainoitteisella kappaleellaan, joka pitää sinut valppaana pelin tärkeimpinä hetkinä."
+		"coupon_alrt_01"						"Musiikkipakkaus | ALRT, DOPAMINE HIT"
+		"coupon_alrt_01_stattrak"				"StatTrak™ -musiikkipakkaus | ALRT, DOPAMINE HIT"
+		
+		"musickit_altare_01"					"Altare, Change My Mind"
+		"musickit_altare_01_desc"				"Altaren euforinen kappale Change My Mind on täydellinen voitokkaita hetkiä varten, jolloin tunnet olevasi pysäyttämätön."
+		"coupon_altare_01"						"Musiikkipakkaus | Altare, Change My Mind"
+		"coupon_altare_01_stattrak"				"StatTrak™ -musiikkipakkaus | Altare, Change My Mind"
+		
+		"musickit_borne_01"						"borne, Give It To Me"
+		"musickit_borne_01_desc"				"Tarttuva basso on etualalla bornen kappaleessa Give It To Me, joka inspiroi pelaajia antamaan kaikkensa sekä Counter-Strikessa että muuallakin."
+		"coupon_borne_01"						"Musiikkipakkaus | borne, Give It To Me"
+		"coupon_borne_01_stattrak"				"StatTrak™ -musiikkipakkaus | borne, Give It To Me"
+		
+		"musickit_pirapus_01"					"Pirapus, EVERYNITE"
+		"musickit_pirapus_01_desc"				"Pirapusin energiaa pursuava drum and bass -kappale EVERYNITE saa kuuntelijan tuntemaan olevansa suuruuden äärellä. Nimensä mukaisesti tätä kelpaa kuunnella illasta toiseen."
+		"coupon_pirapus_01"						"Musiikkipakkaus | Pirapus, EVERYNITE"
+		"coupon_pirapus_01_stattrak"			"StatTrak™ -musiikkipakkaus | Pirapus, EVERYNITE"
+		
+		"musickit_repiet_01"					"Repiet & Julia Kleijn, On And On"
+		"musickit_repiet_01_desc"				"Kun pistät Repietin ja Julia Kleijnin korvamadon On And On soimaan, olet valmiis kohtaamaan minkä tahansa haasteen."
+		"coupon_repiet_01"						"Musiikkipakkaus | Repiet & Julia Kleijn, On And On"
+		"coupon_repiet_01_stattrak"				"StatTrak™ -musiikkipakkaus | Repiet & Julia Kleijn, On And On"
+		
+		"musickit_shockone_01"					"ShockOne, Voices"
+		"musickit_shockone_01_desc"				"ShockOnen nopeatempoinen ja tiukkoihin tilanteisiin sopiva drum and bass -kappale on täynnä raskaita bassolinjoja, joiden innoittamana tähtipelaajan titteli on melkein taattu."
+		"coupon_shockone_01"					"Musiikkipakkaus | ShockOne, Voices"
+		"coupon_shockone_01_stattrak"			"StatTrak™ -musiikkipakkaus | ShockOne, Voices"
 
 //////////////////
 
@@ -35086,6 +35139,8 @@
 		"store_nav_popular"		"UUDET SUOSIKIT"
 		"store_linked_item_tooltip"		"Klikkaa nähdäksesi esineen molemmat versiot"
 		"store_nav_more"		"Näytä lisää"
+		"store_nav_shop_all"		"Näytä kaikki"
+		"store_nav_section_coupon_nightmode2" "NIGHTMODE II<br>-musiikkipakkaukset"
 
 		"StoreCheckout_NoItems"			"Ostoskorisi on tyhjä!"
 		"StoreCheckout_TooManyItems"	"Ostoskoriisi ei mahdu enempää!"
@@ -38526,7 +38581,10 @@
 		"SFUI_match_cancelled"			"Ottelu peruttu"
 		"SFUI_match_abort_match_network_event"	"Verkkokatkos johti ottelun perumiseen.\nOttelu ei vaikuta taitotasoosi."
 		"SFUI_match_abort_match_vac_live"	"VAC Live on havainnut huijarin ja päättänyt ottelun.\nOttelu ei vaikuta taitotasoosi."
-		"SFUI_match_abort_match_abnormal_behavior"	"VAC on havainnut sääntöjenvastaista pelaamista ja perunut ottelun.\nVäärin toimineelle pelaajalle ja hänen seurueelleen on annettu jäähy."
+		
+		"SFUI_match_abort_match_abnormal_behavior"	"%s1 ja kaikki muut ryhmän jäsenet, joille ei ole asetettu VACNET-jäähyä."
+		"SFUI_match_abort_match_abnormal_behavior_pano"	"VACnet on havainnut poikkeavaa pelitoimintaa ja perunut ottelun."
+
 		"SFUI_match_vac_live_partied_with_cheater"	"Ottelusta ei myönnetä edistymistä, koska joukkueesi pelaaja sai porttikiellon."
 		"SFUI_match_abort_match_missing_player"	" Ottelu peruutetaan, koska osa pelaajista ei yhdistänyt ajoissa."
 		"SFUI_match_abort_match_player_abandoned"	" Ottelu perutaan, koska pelaaja on poistunut palvelimelta."
@@ -48478,6 +48536,9 @@ Huomaa! Et voi käyttää kivääriä panssarihyökkäyspuvun kanssa."
 		"quest_11015_var_desc:f"	 					"{mission-points, plural, one{Voita erä pelitilassa <b>{s:gamemode} ja kartalla {s:location}</b>.} other{Voita eriä pelitilassa <b>{s:gamemode} ja kartalla {s:location}</b>.}}"
 		"quest_11015_var_ingame:f"						"{mission-points, plural, one{Voita erä.} other{Voita eriä.}}"
 
+		"quest_11016_var_desc:f"	 					"{mission-points, plural, one{Voita erä pelitilassa <b>{s:gamemode} kartalla {s:location}</b>.} other{Voita eriä pelitilassa <b>{s:gamemode} kartalla {s:location}</b>.}}"
+		"quest_11016_var_ingame:f"						"{mission-points, plural, one{Voita erä} other{Voita eriä}}"
+
 // ---------------------------------------------------------------------------------------------
 // Join Friend Listen Servers
 // ---------------------------------------------------------------------------------------------
@@ -48487,8 +48548,8 @@ Huomaa! Et voi käyttää kivääriä panssarihyökkäyspuvun kanssa."
 		"tooltip_short_viewaddon"			"Näytä mukautettu kartta"
 		"tooltip_short_kick_player"			"Poista"
 
-// crow_mask_50454_comment
-// crow_mask_50455_comment
+// crow_mask_50516_comment
+// crow_mask_50517_comment
 }
 
 

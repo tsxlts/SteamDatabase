@@ -1590,7 +1590,30 @@
 		"TMid"				"Środek T"
 		"Toilets"			"Toalety"
 		"Candle"			"Świeca"
-
+		//Cache
+		"OutsideA"			"Na zewnątrz A"
+		"OutsideB"			"Na zewnątrz B"
+		"AHalls"			"Korytarze przy A"
+		"BHalls"			"Korytarze przy B"
+		"SunRoom"			"Pokój słoneczny"
+		"Checkers"			"Szachownica"
+		"Headshot"			"Główka"
+		"TreeRoom"			"Hala z drzewem"
+		"CTLane"			"Hala AT"
+		"Bear"				"Niedźwiedź"
+		"BusStop"			"Przystanek"
+		"Corner"			"Róg"
+		"ABoost"			"Podsadzka na A"
+		"Highway"			"Rampa"
+		"Sandbags"			"Worki z piaskiem"
+		"Cubby"				"Wnęka"
+		"MidRoof"			"Dach na środku"
+		"Lockers"			"Szafki"
+		"AStairs"			"Schody przy A"
+		"TTruck"			"Ciężarówka T"
+		"Useless"			"Śmietnik"
+		"TYard"				"Plac T"
+		"Boost"				"Podsadzka"
 		// coop_cementplant
 		"Gravelpit"		"Dół z żużlem"
 		"Forest"		"Las"
@@ -5842,8 +5865,8 @@
 		"musickit_jamesandthecoldgun_01_desc"			"Walijski duet rockowy James and the Cold Gun uwalnia czystą, niefiltrowaną energię, łącząc klasyczny punk z ogniem nowoczesnego rocka alternatywnego, tworząc porywający zestaw utworów."
 		"coupon_jamesandthecoldgun_01"					"Zestaw utworów | James and the Cold Gun, Chewing Glass"
 		"coupon_jamesandthecoldgun_01_stattrak"			"Zestaw utworów StatTrak™ | James and the Cold Gun, Chewing Glass"
-
-//////////////////
+		
+		//////////////////
 
 	"csgo_thousands_separator"			" " // Note: This only supports , and .
 
@@ -34058,7 +34081,6 @@
 		"store_nav_popular"		"NOWE I POPULARNE"
 		"store_linked_item_tooltip"		"Kliknij, aby wyświetlić obie wersje tego przedmiotu."
 		"store_nav_more"		"Zobacz więcej"
-
 		"StoreCheckout_NoItems"			"Twój koszyk jest pusty!"
 		"StoreCheckout_TooManyItems"	"W koszyku znajduje się zbyt dużo przedmiotów!"
 		"StoreCheckout_Loading"			"Przechodzenie do kasy..."
@@ -37484,7 +37506,7 @@
 		"SFUI_match_cancelled"			"Mecz anulowany"
 		"SFUI_match_abort_match_network_event"	"Z powodu zakłoceń w sieci mecz został anulowany.\nTen mecz nie wpłynie na ocenę twoich umiejętności."
 		"SFUI_match_abort_match_vac_live"	"System VAC Live wykrył oszusta i zakończył mecz.\nTen mecz nie wpłynie na twoją ocenę umiejętności."
-		"SFUI_match_abort_match_abnormal_behavior"	"VAC wykrył nieregularną rozgrywkę i anulował mecz.\nGracz oznaczony przez VAC oraz jego zespół otrzymali karę czasową."
+		
 		"SFUI_match_vac_live_partied_with_cheater"	"Twój postęp dla tego meczu nie zostanie zarejestrowany, ponieważ gracz w Twoim zespole został zablokowany."
 		"SFUI_match_abort_match_missing_player"	" Mecz zostaje anulowany, ponieważ gracz nigdy się nie połączył."
 		"SFUI_match_abort_match_player_abandoned"	" Mecz zostaje anulowany, ponieważ jeden z graczy rozłączył się."
@@ -47407,6 +47429,9 @@
 		"quest_11015_var_desc:f"	 					"{mission-points, plural, one{Wygraj rundę. <b>Tryb: {s:gamemode}. Mapa: {s:location}.</b>} few{Wygraj rundy. <b>Tryb: {s:gamemode}. Mapa: {s:location}.</b>} many{Wygraj rundy. <b>Tryb: {s:gamemode}. Mapa: {s:location}.</b>} other{Wygraj rundy. <b>Tryb: {s:gamemode}. Mapa: {s:location}.</b>}}"
 		"quest_11015_var_ingame:f"						"{mission-points, plural, one{Wygraj rundę.} few{Wygraj rundy.} many{Wygraj rundy.} other{Wygraj rundy.}}"
 
+		"quest_11016_var_desc:f"	 					"{mission-points, plural, one{Wygraj rundę. <b>Tryb: {s:gamemode}. Mapa: {s:location}.</b>} few{Wygraj rundy. <b>Tryb: {s:gamemode}. Mapa: {s:location}.</b>} many{Wygraj rundy. <b>Tryb: {s:gamemode}. Mapa: {s:location}.</b>} other{Wygraj rundy. <b>Tryb: {s:gamemode}. Mapa: {s:location}.</b>}}"
+		"quest_11016_var_ingame:f"						"{mission-points, plural, one{Wygraj rundę.} few{Wygraj rundy.} many{Wygraj rundy.} other{Wygraj rundy.}}"
+
 // ---------------------------------------------------------------------------------------------
 // Join Friend Listen Servers
 // ---------------------------------------------------------------------------------------------
@@ -47416,8 +47441,8 @@
 		"tooltip_short_viewaddon"			"Zobacz niestandardową mapę"
 		"tooltip_short_kick_player"			"Wyrzuć"
 
-// crow_mask_50454_comment
-// crow_mask_50455_comment
+// crow_mask_50516_comment
+// crow_mask_50517_comment
 }
 
 

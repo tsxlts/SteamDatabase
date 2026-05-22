@@ -1590,7 +1590,30 @@
 		"TMid"				"Mid T"
 		"Toilets"			"Toilet"
 		"Candle"			"Lilin"
-
+		//Cache
+		"OutsideA"			"Area Luar A"
+		"OutsideB"			"Area Luar B"
+		"AHalls"			"Aula A"
+		"BHalls"			"Aula B"
+		"SunRoom"			"Matahari"
+		"Checkers"			"Catur"
+		"Headshot"			"Headshot"
+		"TreeRoom"			"Ruangan Pohon"
+		"CTLane"			"Jalur AT"
+		"Bear"				"Beruang"
+		"BusStop"			"Halte Bus"
+		"Corner"			"Sudut"
+		"ABoost"			"Pijakan A"
+		"Highway"			"Tanjakan"
+		"Sandbags"			"Karung Pasir"
+		"Cubby"				"Pojok"
+		"MidRoof"			"Atap Tengah"
+		"Lockers"			"Loker"
+		"AStairs"			"Tangga A"
+		"TTruck"			"Truk T"
+		"Useless"			"Area Kosong"
+		"TYard"				"Halaman T"
+		"Boost"				"Pijakan"
 		// coop_cementplant
 		"Gravelpit"		"Gravel Pit"
 		"Forest"		"Hutan"
@@ -5835,6 +5858,36 @@
 		"musickit_jamesandthecoldgun_01_desc"			"Duo rock dari Wales, James and the Cold Gun melepaskan energi murni tanpa filter, memadukan nuansa punk klasik dengan kobaran suara alt-rock modern untuk menciptakan sebuah kit musik yang menggemparkan."
 		"coupon_jamesandthecoldgun_01"					"Kit Musik | James and the Cold Gun, Chewing Glass"
 		"coupon_jamesandthecoldgun_01_stattrak"			"Kit Musik StatTrak™ | James and the Cold Gun, Chewing Glass"
+		
+		"musickit_alrt_01"						"ALRT, DOPAMINE HIT"
+		"musickit_alrt_01_desc"					"ALRT merilis \"DOPAMINE HIT\", sebuah musik bass house yang energik. yang dapat membuatmu tetap fokus dan siap untuk tampil maksimal di setiap momen penting."
+		"coupon_alrt_01"						"Kit Musik | ALRT, DOPAMINE HIT"
+		"coupon_alrt_01_stattrak"				"Kit Musik StatTrak™ | ALRT, DOPAMINE HIT"
+		
+		"musickit_altare_01"					"Altare, Change My Mind"
+		"musickit_altare_01_desc"				"Musik penuh gelombang euforia dari Altare, \"Change My Mind\", sangat sempurna diputar di momen terbaik ketika kamu merasa tidak ada yang dapat menghalangimu."
+		"coupon_altare_01"						"Kit Musik | Altare, Change My Mind"
+		"coupon_altare_01_stattrak"				"Kit Musik StatTrak™ | Altare, Change My Mind"
+		
+		"musickit_borne_01"						"borne, Give It To Me"
+		"musickit_borne_01_desc"				"\"Give It To Me\", musik dengan hentakan bass yang keras dari borne akan membuat pemain siap menghabisi lawan-lawan mereka, baik di dalam atau di luar Counter-Strike."
+		"coupon_borne_01"						"Kit Musik | borne, Give It To Me"
+		"coupon_borne_01_stattrak"				"Kit Musik StatTrak™ | borne, Give It To Me"
+		
+		"musickit_pirapus_01"					"Pirapus, EVERYNITE"
+		"musickit_pirapus_01_desc"				"Musik dengan suara bass dan drum beroktan tinggi dari Pirapus, \"EVERYNITE\", membangkitkan perasaan saat berada di puncak kesuksesan. Sesuai namanya, kit musik ini memastikan agar kamu tetap fokus setiap malam."
+		"coupon_pirapus_01"						"Kit Musik | Pirapus, EVERYNITE"
+		"coupon_pirapus_01_stattrak"			"Kit Musik StatTrak™ | Pirapus, EVERYNITE"
+		
+		"musickit_repiet_01"					"Repiet & Julia Kleijn, On And On"
+		"musickit_repiet_01_desc"				"Hadapi segala tantangan bersama musik adiktif dari Repiet & Julia Kleijn, \"On And On\". Dalam segala situasi, musik ini menjadi pengiring yang tepat untuk menyerang semua tantangan yang ada."
+		"coupon_repiet_01"						"Kit Musik | Repiet & Julia Kleijn, On And On"
+		"coupon_repiet_01_stattrak"				"Kit Musik StatTrak™ | Repiet & Julia Kleijn, On And On"
+		
+		"musickit_shockone_01"					"ShockOne, Voices"
+		"musickit_shockone_01_desc"				"Lepaskanlah dirimu dengan irama drum dan bass berenergi tinggi dari ShockOne, \"Voices.\" Musik ini siap membantumu memberikan performa terbaik di saat-saat genting dengan membawa irama bass yang menghentak, yang akan membawakanmu lebih banyak gelar MVP."
+		"coupon_shockone_01"					"Kit Musik | ShockOne, Voices"
+		"coupon_shockone_01_stattrak"			"Kit Musik StatTrak™ | ShockOne, Voices"
 
 //////////////////
 
@@ -33389,6 +33442,8 @@ melawan FaZe."
 		"store_nav_popular"		"BARU & POPULER"
 		"store_linked_item_tooltip"		"Klik untuk melihat kedua versi item ini"
 		"store_nav_more"		"Lihat Lebih Banyak"
+		"store_nav_shop_all"		"Lihat Semua"
+		"store_nav_section_coupon_nightmode2" "Kit Musik<br>NIGHTMODE II"
 
 		"StoreCheckout_NoItems"			"Keranjang belanjamu kosong!"
 		"StoreCheckout_TooManyItems"	"Kamu punya terlalu banyak item di keranjang belanja!"
@@ -36813,7 +36868,10 @@ melawan FaZe."
 		"SFUI_match_cancelled"			"Pertandingan Dibatalkan"
 		"SFUI_match_abort_match_network_event"	"Interupsi pada jaringan mengakibatkan pertandingan dibatalkan.\nPertandingan ini tidak akan mempengaruhi Rating Skill kamu."
 		"SFUI_match_abort_match_vac_live"	"VAC Live mendeteksi adanya cheater dan mengakhiri pertandingan.\nPertandingan ini tidak akan memengaruhi Kelasmu."
-		"SFUI_match_abort_match_abnormal_behavior"	"VAC mendeteksi permainan yang abnormal dan telah membatalkan pertandingan.\nPemain yang ditandai oleh VAC dan party-nya telah mendapatkan penalti."
+		
+		"SFUI_match_abort_match_abnormal_behavior"	"%s1 dan anggota party lainnya telah menerima penalti VACnet."
+		"SFUI_match_abort_match_abnormal_behavior_pano"	"VACnet mendeteksi adanya permainan yang tidak biasa dan telah membatalkan pertandingan."
+
 		"SFUI_match_vac_live_partied_with_cheater"	"Tidak ada progres yang akan diberikan untuk pertandingan ini karena pemain di party-mu terkena ban."
 		"SFUI_match_abort_match_missing_player"	" Pertandingan dibatalkan karena ada pemain yang tidak dapat terhubung."
 		"SFUI_match_abort_match_player_abandoned"	" Pertandingan dibatalkan karena ada pemain yang terputus."
@@ -37911,8 +37969,8 @@ melawan FaZe."
 		"SFUI_Settings_PlayerConstrast_Disabled"	"Dinonaktifkan"
 		"SFUI_Settings_PlayerConstrast_Enabled"		"Diaktifkan"
 
-		"SFUI_Settings_AOProxy"				"Oklusi Ambient"
-		"SFUI_Settings_AOProxy_Info"		"Hitung pencahayaan menggunakan Oklusi Ambient. Mengaktifkan Oklusi Ambient dapat menurunkan performa grafis."
+		"SFUI_Settings_AOProxy"				"Oklusi Ambien"
+		"SFUI_Settings_AOProxy_Info"		"Hitung pencahayaan menggunakan Oklusi Ambien. Mengaktifkan Oklusi Ambien dapat menurunkan performa grafis."
 
 		"SFUI_Settings_FSR"					"FidelityFX Super Resolution (FSR)"
 		"SFUI_Settings_FSR_Info"			"FidelityFX Super Resolution (FSR) dapat meningkatkan performa dengan melakukan rendering pada resolusi yang rendah dan upscaling menggunakan metode spasial berkualitas tinggi."
@@ -38394,14 +38452,14 @@ melawan FaZe."
 		"SFUI_Settings_HUDScaleMed"		"Desktop"
 		"SFUI_Settings_HUDScaleLarge"	"Couch"
 
-		"SFUI_Settings_ViewmodelPos"	"Posisi Viewmodel"
+		"SFUI_Settings_ViewmodelPos"	"Posisi Model Perspektif Orang Pertama"
 		"SFUI_Settings_ViewmodelPosDesktop"		"Desktop"
-		"SFUI_Settings_ViewmodelPosCouch"		"Couch"
+		"SFUI_Settings_ViewmodelPosCouch"		"Sofa"
 		"SFUI_Settings_ViewmodelPosClassic"		"Klasik"
 		
-		"Cstrike_SwitchHandedness"					"Ganti Viewmodel Tangan Kiri/Kanan"
-		"Cstrike_PreferredHandedness"				"Pilihan Viewmodel Tangan Kiri/Kanan"
-		"Cstrike_PreferredHandedness_Desc"			"Atur tampilan tangan dominan (kanan/kiri). Terdapat juga pengaturan tombol untuk mengalihkan tampilan tangan dominan untuk sementara saat sedang bermain."
+		"Cstrike_SwitchHandedness"					"Ganti Model Tangan Perspektif Orang Pertama (Kiri/Kanan)"
+		"Cstrike_PreferredHandedness"				"Preferensi Model Tangan Perspektif Orang Pertama (Kiri/Kanan)"
+		"Cstrike_PreferredHandedness_Desc"			"Mengatur tampilan default tangan dari perspektif orang pertama (kanan/kiri). Terdapat juga pengaturan tombol untuk mengganti sisi untuk sementara saat sedang bermain."
 		"Cstrike_PreferredHandedness_Right"			"Kanan"
 		"Cstrike_PreferredHandedness_Left"			"Kiri"
 		"Cstrike_GoToSwitchHandednessKeyBinding"	"Pergi ke Pengaturan Tombol Ganti Tangan"
@@ -46736,6 +46794,9 @@ melawan FaZe."
 		"quest_11015_var_desc:f"	 					"Menangkan satu atau beberapa ronde di mode <b>{s:gamemode}: {s:location}</b>."
 		"quest_11015_var_ingame:f"						"Menangkan satu atau beberapa ronde"
 
+		"quest_11016_var_desc:f"	 					"Menangkan satu atau beberapa ronde di mode <b>{s:gamemode}: {s:location}</b>."
+		"quest_11016_var_ingame:f"						"Menangkan satu atau beberapa ronde"
+
 // ---------------------------------------------------------------------------------------------
 // Join Friend Listen Servers
 // ---------------------------------------------------------------------------------------------
@@ -46745,8 +46806,8 @@ melawan FaZe."
 		"tooltip_short_viewaddon"			"Lihat Map Kustom"
 		"tooltip_short_kick_player"			"Keluarkan"
 
-// crow_mask_50454_comment
-// crow_mask_50455_comment
+// crow_mask_50516_comment
+// crow_mask_50517_comment
 }
 
 

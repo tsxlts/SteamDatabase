@@ -1459,7 +1459,7 @@
 		"Radio"			"Радіо"
 		"Hut"			"Хатина"
 		"Crows"			"Ворони"
-		"Squeaky"		"Скрипляча підлога"
+		"Squeaky"		"Скрипучі двері"
 		"Yellow"		"Жовтий"
 		"Main"			"Головна зона"
 		"CTRed"			"Червоний Св"
@@ -1590,7 +1590,30 @@
 		"TMid"				"Центр T"
 		"Toilets"			"Туалети"
 		"Candle"			"Свічка"
-
+		//Cache
+		"OutsideA"			"Зовні A"
+		"OutsideB"			"Зовні B"
+		"AHalls"			"Коридор до A"
+		"BHalls"			"Коридор до B"
+		"SunRoom"			"Сонячне приміщення"
+		"Checkers"			"Шахівниця"
+		"Headshot"			"Голова"
+		"TreeRoom"			"Дерево"
+		"CTLane"			"Провулок С"
+		"Bear"				"Ведмідь"
+		"BusStop"			"Автобусна зупинка"
+		"Corner"			"Кут"
+		"ABoost"			"Контейнери на A"
+		"Highway"			"Дорога"
+		"Sandbags"			"Мішки з піском"
+		"Cubby"				"Закуток"
+		"MidRoof"			"Дах на центрі"
+		"Lockers"			"Шафки"
+		"AStairs"			"Сходи на A"
+		"TTruck"			"Вантажівка Т"
+		"Useless"			"Безкорисний двір"
+		"TYard"				"Двір Т"
+		"Boost"				"Підсадка"
 		// coop_cementplant
 		"Gravelpit"		"Гравійний кар’єр"
 		"Forest"		"Ліс"
@@ -5548,7 +5571,7 @@
 		"CSGO_set_community_11"			"Колекція «Дике полум’я»"
 		"CSGO_set_community_11_desc"		" "
 		
-		"CSGO_set_community_12"			"Колекція «Хрома»"
+		"CSGO_set_community_12"			"Колекція «Хрома 3»"
 		"CSGO_set_community_12_desc"		""
 		
 		"CSGO_set_community_13"			"Колекція «Гамма»"
@@ -6222,6 +6245,36 @@
 		"musickit_jamesandthecoldgun_01_desc"			"Рок-дует із Вельсу James and the Cold Gun випускає чисту й неприборкану енергію, змішуючи класичне панкове подання із запалом сучасного альт-року й отримуючи на виході альбом, здатний до самозаймання."
 		"coupon_jamesandthecoldgun_01"					"Музичний альбом | James and the Cold Gun — Chewing Glass"
 		"coupon_jamesandthecoldgun_01_stattrak"			"Музичний альбом зі СтатТрек™ | James and the Cold Gun — Chewing Glass"
+		
+		"musickit_alrt_01"						"ALRT — «DOPAMINE HIT»"
+		"musickit_alrt_01_desc"					"Життєствердний хаус-трек від ALRT надає дозу дофаміну, яка забезпечує зосередженість й енергію для відповіді на виклик у найважливіший момент."
+		"coupon_alrt_01"						"Музичний альбом | ALRT — «DOPAMINE HIT»"
+		"coupon_alrt_01_stattrak"				"Музичний альбом зі СтатТрек™ | ALRT — «DOPAMINE HIT»"
+		
+		"musickit_altare_01"					"Altare — «Change My Mind»"
+		"musickit_altare_01_desc"				"Ейфорійний гімн від Altare «Change My Mind» — ідеальний саундтрек для моментів із відчуттям непереможності, коли ніхто й ніщо не може стати на заваді."
+		"coupon_altare_01"						"Музичний альбом | Altare — «Change My Mind»"
+		"coupon_altare_01_stattrak"				"Музичний альбом зі СтатТрек™ | Altare — «Change My Mind»"
+		
+		"musickit_borne_01"						"borne — «Give It To Me»"
+		"musickit_borne_01_desc"				"Хрипкий басовий бенґер «Give It To Me» від borne налаштує гравців дати гідний бій противникам у Counter-Strike і не лише."
+		"coupon_borne_01"						"Музичний альбом | borne — «Give It To Me»"
+		"coupon_borne_01_stattrak"				"Музичний альбом зі СтатТрек™ | borne — «Give It To Me»"
+		
+		"musickit_pirapus_01"					"Pirapus — «EVERYNITE»"
+		"musickit_pirapus_01_desc"				"Високооктановий драм-енд-бейс у треку «EVERYNITE» від Pirapus навіює відчуття, ніби стоїш на вершині світу. Як обіцяє назва, цей гімн налаштовуватиме на велич щовечора."
+		"coupon_pirapus_01"						"Музичний альбом | Pirapus — «EVERYNITE»"
+		"coupon_pirapus_01_stattrak"			"Музичний альбом зі СтатТрек™ | Pirapus — «EVERYNITE»"
+		
+		"musickit_repiet_01"					"Repiet & Julia Kleijn — «On And On»"
+		"musickit_repiet_01_desc"				"Будьте готові до будь-якого виклику із заразним треком від Repiet та Julia Kleijn «On And On». Його енергія задає тон для подолання всіх можливих перешкод."
+		"coupon_repiet_01"						"Музичний альбом | Repiet & Julia Kleijn — «On And On»"
+		"coupon_repiet_01_stattrak"				"Музичний альбом зі СтатТрек™ | Repiet & Julia Kleijn — «On And On»"
+		
+		"musickit_shockone_01"					"ShockOne — «Voices»"
+		"musickit_shockone_01_desc"				"Вирвіться на свободу з енергійним драм-енд-бейс у записі «Voices» від ShockOne. Їхні потужні баси допоможуть знайти вихід зі складних ситуацій і принесуть чимало перемог."
+		"coupon_shockone_01"					"Музичний альбом | ShockOne — «Voices»"
+		"coupon_shockone_01_stattrak"			"Музичний альбом зі СтатТрек™ | ShockOne — «Voices»"
 
 //////////////////
 
@@ -17056,8 +17109,8 @@
 	"CSGO_crate_sticker_pack_rmr2020_challengers_tag" "Претенденти «РВТ 2020»"
 	"CSGO_crate_sticker_pack_rmr2020_challengers"     "Претенденти «РВТ 2020»"
 	"CSGO_crate_sticker_pack_rmr2020_challengers_desc" "Ця капсула містить одну паперову, голографічну, лискучу або золоту наліпку з автографом учасника «РВТ 2020».\n\n50% коштів від продажу цієї капсули отримають вказані організації.\n\nЦя наліпка прикріплюється на будь-яку вашу зброю. Її можна пошкрябати, щоби надати зношеного вигляду. Ви можете шкрябати наліпку кілька разів, щоразу роблячи її обшарпанішою, аж доки вона не відпаде зі зброї."
-	"CSGO_crate_sticker_pack_rmr2020_contenders_tag" "Претенденти «РВТ 2020»"
-	"CSGO_crate_sticker_pack_rmr2020_contenders"     "Претенденти «РВТ 2020»"
+	"CSGO_crate_sticker_pack_rmr2020_contenders_tag" "Учасники «РВТ 2020»"
+	"CSGO_crate_sticker_pack_rmr2020_contenders"     "Учасники «РВТ 2020»"
 	"CSGO_crate_sticker_pack_rmr2020_contenders_desc" "Ця капсула містить одну паперову, голографічну, лискучу або золоту наліпку з автографом учасника «РВТ 2020».\n\n50% коштів від продажу цієї капсули отримають вказані організації.\n\nЦя наліпка прикріплюється на будь-яку вашу зброю. Її можна пошкрябати, щоби надати зношеного вигляду. Ви можете шкрябати наліпку кілька разів, щоразу роблячи її обшарпанішою, аж доки вона не відпаде зі зброї."
 
 		// ======================================
@@ -36864,6 +36917,8 @@
 		"store_nav_popular"		"НОВЕ І ПОПУЛЯРНЕ"
 		"store_linked_item_tooltip"		"Клацніть, щоби побачити обидві версії предмета."
 		"store_nav_more"		"Більше"
+		"store_nav_shop_all"		"Придбати всі"
+		"store_nav_section_coupon_nightmode2" "Музичні альбоми<br>NIGHTMODE II"
 
 		"StoreCheckout_NoItems"			"Ваш кошик порожній!"
 		"StoreCheckout_TooManyItems"	"У вашому кошику забагато предметів!"
@@ -40339,7 +40394,10 @@
 		"SFUI_match_cancelled"			"Матч скасовано"
 		"SFUI_match_abort_match_network_event"	"Збій у мережі призвів до скасування матчу.\nЦей матч не вплине на ваше звання."
 		"SFUI_match_abort_match_vac_live"	"VAC Live виявив чітера й закінчив матч.\nЦей матч не вплине на ваше звання."
-		"SFUI_match_abort_match_abnormal_behavior"	"VAC виявив нетипову ігрову поведінку і скасував матч.\nГравець із цією поведінкою та його команда отримали тимчасове блокування."
+		
+		"SFUI_match_abort_match_abnormal_behavior"	"%s1 та всі учасники групи отримали блокування VACnet."
+		"SFUI_match_abort_match_abnormal_behavior_pano"	"VACnet виявив нетипову ігрову поведінку і скасував матч."
+
 		"SFUI_match_vac_live_partied_with_cheater"	"Прогрес за цей матч не зарахується, бо гравця з вашої групи було заблоковано."
 		"SFUI_match_abort_match_missing_player"	" Матч скасовується, бо гравець так і не підключився."
 		"SFUI_match_abort_match_player_abandoned"	" Матч скасовано через від’єднання гравця."
@@ -50384,6 +50442,9 @@
 		"quest_11015_var_desc:f"	 					"{mission-points, plural, one{Виграйте раунд у режимі <b>«{s:gamemode}» на мапі {s:location}</b>.} few{Виграйте раунди в режимі <b>«{s:gamemode}» на мапі {s:location}</b>.} many{Виграйте раунди в режимі <b>«{s:gamemode}» на мапі {s:location}</b>.} other{Виграйте раунди в режимі <b>«{s:gamemode}» на мапі {s:location}</b>.}}"
 		"quest_11015_var_ingame:f"						"{mission-points, plural, one{Виграйте раунд} few{Виграйте раунди} many{Виграйте раунди} other{Виграйте раунди}}"
 
+		"quest_11016_var_desc:f"	 					"{mission-points, plural, one{Виграйте раунд у режимі <b>«{s:gamemode}» на мапі {s:location}</b>.} few{Виграйте раунди в режимі <b>«{s:gamemode}» на мапі {s:location}</b>.} many{Виграйте раунди в режимі <b>«{s:gamemode}» на мапі {s:location}</b>.} other{Виграйте раунди в режимі <b>«{s:gamemode}» на мапі {s:location}</b>.}}"
+		"quest_11016_var_ingame:f"						"{mission-points, plural, one{Виграйте раунд} few{Виграйте раунди} many{Виграйте раунди} other{Виграйте раунди}}"
+
 // ---------------------------------------------------------------------------------------------
 // Join Friend Listen Servers
 // ---------------------------------------------------------------------------------------------
@@ -50393,8 +50454,8 @@
 		"tooltip_short_viewaddon"			"Переглянути нестандартну мапу"
 		"tooltip_short_kick_player"			"Вигнати"
 
-// crow_mask_50454_comment
-// crow_mask_50455_comment
+// crow_mask_50516_comment
+// crow_mask_50517_comment
 }
 
 
