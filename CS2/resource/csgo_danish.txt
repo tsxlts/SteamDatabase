@@ -5325,10 +5325,6 @@
 		"CSGO_TeamID_142"       "Parivision"
 		"CSGO_TeamID_143"       "The Huns"
 		"CSGO_TeamID_144"       "RED Canids"
-
-
-
-
 		"Place_Name_1st"		"Mestre"
 		"Place_Name_2nd"		"Storfinalist"
 		"Place_Name_3rd-4th"	"Semifinalist"
@@ -29253,8 +29249,13 @@ bare glem alt om Proseccoen."
 		"SFUI_MajorEventVenue_StreamTitle_25_2" "Budapest 2025 – StarLadder Major – Direkte stream"
 
 		//
-		// 2025 StarLadder Budapest 2025 CS2 Major Championship Strings Block End
+//
+//
+//
+	//
+		// 2026 IEM Cologne 2026 CS2 Major Championship Strings Block End
 		// ======================================
+
 
 
 // ---------------------------------------------------------------------------------------------
@@ -35406,8 +35407,6 @@ bare glem alt om Proseccoen."
 		"store_nav_store"		"VÆRKTØJER"
 		"store_nav_popular"		"NYT OG POPULÆRT"
 		"store_linked_item_tooltip"		"Klik for at se begge versioner af denne genstand"
-		"store_nav_more"		"Se mere"
-		"store_nav_shop_all"		"Se alle"
 		"store_nav_section_coupon_nightmode2" "Musiksæt:<br>NIGHTMODE II"
 
 		"StoreCheckout_NoItems"			"Din indkøbskurv er tom!"
@@ -36379,6 +36378,7 @@ bare glem alt om Proseccoen."
 		"SFUI_Store_Offer_Days_Remaining_bid:f"		"{daysremaining, plural, one{{d:daysremaining} dag tilbage til at byde på dette tilbud} other{{d:daysremaining} dage tilbage til at byde på dette tilbud}}"
 		"SFUI_Store_Offer_Days_Remaining_last_claim:f"	"Sidste chance for at indløse dette tilbud"
 		"SFUI_Store_Offer_Days_Remaining_last_bid:f"	"Sidste chance for at byde på dette tilbud"
+
 		"SFUI_Store_Last_Chance"                    "Sidste chance"
 		"SFUI_Store_Limited_Time_Tagline"           "til at udnytte tilbuddet"
 		"SFUI_Store_Limited_Bid_Tagline"			"til at byde på tilbuddet"
@@ -36927,7 +36927,6 @@ bare glem alt om Proseccoen."
 		"popup_scrape_sticker_level"		"Klistermærkets skrabegrad"
 		"SFUI_Sticker_RemoveImmediate_Desc" "Bekræft venligst, at du ønsker at fjerne dette klistermærke fra genstanden. Det fjernede klistermærke vil blive destrueret."
 		"SFUI_Sticker_RemoveImmediate_Tooltip" "<b>Tryk</b> og <b>hold</b> for at fjerne det valgte klistermærke fra genstanden.<br>Det fjernede klistermærke ødelægges."
-
 		"SFUI_Sticker_Remove_Desc"          "At skrabe dette klistermærke yderligere vil fjerne det fra genstanden, og det vil blive ødelagt." 
 		"SFUI_Patch_Remove"           		"Fjern lap"
 		"SFUI_Patch_Remove_Desc"			"Bekræft venligst, at du ønsker at fjerne denne lap fra din agent. Den fjernede lap vil blive destrueret." 
@@ -37554,7 +37553,6 @@ bare glem alt om Proseccoen."
 		"CSGO_Fantasy_NoSTickers_In_Table" "Du ejer på nuværende tidspunkt ikke nogen <b>%s1</b>-spillerautografklistermærker.\nDu kan købe holdautografkapsler eller købe autografklistermærker direkte fra markedet."
 		"major_hub_souvenir_package_desc"	"Klik på en færdig kamp nedenfor for at indløse en souvenir eller købe en for <span class=\"major-hub-store__souvenir__price\">{s:souvenir_price}</span>"
 		"major_hub_souvenir_package_desc_no_price"	"Klik på en færdig kamp nedenfor for at indløse en souvenir."
-		
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Journal
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -40911,9 +40909,6 @@ bare glem alt om Proseccoen."
 
 		"SFUI_UserAlertNoteType_1"			"Servere i %s1 oplever høj belastning."
 		"SFUI_UserAlertNoteType_2"			"Servere i %s1 er offline pga. vedligeholdelse."
-		"SFUI_UserAlertNoteType_LowPlayersR:f"	"Kun {players} {players, plural, one{kompatibel spiller} other{kompatible spillere}} søger i {region}."
-		"SFUI_UserAlertNoteType_LowPlayersY:f"	"Kun {players} {players, plural, one{kompatibel spiller} other{kompatible spillere}} søger i din region."
-
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"Kunne ikke forbinde til kampen."
 		"SFUI_QMM_ERROR_NotLoggedIn"		"Ikke logget på Counter-Strike-matchmakingtjenesten."
 		"SFUI_QMM_ERROR_NotVacVerified"		"VAC kunne ikke bekræfte din spilsession."
@@ -42900,10 +42895,6 @@ bare glem alt om Proseccoen."
 		"SFUI_ProPlayer_xielo" "Vladislav Lysov"
 		"SFUI_ProPlayer_xkacpersky" "Kacper Gabara"
 		"SFUI_ProPlayer_xotic" "Zack Elshani"
-
-
-
-
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Leaderboards
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -45555,7 +45546,6 @@ bare glem alt om Proseccoen."
 		//Sticker or Patch
 
 		"popup_can_stick_desc"			"Brug på <b> {s:tool_target_name}</b>"
-
 		"popup_can_stick_title_patch" 							"Påfør lap"
 		"popup_can_stick_scrape_full_patch"						"Fjern en lap fra <b> {s:tool_target_name}</b>"
 		"popup_can_stick_scrape_patch"							"Skrab en lap fra <b> {s:tool_target_name}</b>"
@@ -45640,8 +45630,7 @@ bare glem alt om Proseccoen."
 		"popup_totool_purchase_header"	"Køb"
 		"popup_totool_purchase_header2"	"KØB FOR AT INDLØSE"
 		"popup_totool_decodeable_header_terminal"	"Bryd forseglingen på terminalen"
-
-		//Purchase
+//Purchase
 		"popup_cartpreview_button"		"Forhåndsvis"
 		"popup_cartpreview_title"		"Forhåndsvisning"
 		"popup_purchase_title"			"Køb"
@@ -46334,7 +46323,6 @@ bare glem alt om Proseccoen."
 		"tooltip_inspect_weapon_model"	"Inspicer våbenmodel"
 		"tooltip_inspect_weapon_model_faction"	"Inspicer spillermodel"
 		"tooltip_inspect_play_mvp_anthem"	"Afspil MVP-slagsang"
-
 		"tooltip_lookat_weapon_model"	"Inspiceringsanimation i førsteperson"
 		"tooltip_inspect_open_season_stats" "Vis sæsonstatistik"
 		
@@ -46478,7 +46466,6 @@ bare glem alt om Proseccoen."
 		"tooltip_prime"								"Konto med Prime-status"
 
 		"tooltip_demo_highlights_toggle"			"Slå afspilning af højdepunkter til/fra"
-
 		"mainmenu_go_to_character_loadout"			"Vis agent i udstyr"
 		"mainmenu_switch_vanity_to_t"				"Vis udstyret T-agent"
 		"mainmenu_switch_vanity_to_ct"				"Vis udstyret CT-agent"
@@ -48041,14 +48028,7 @@ bare glem alt om Proseccoen."
 		"pickem_swiss_group_13"									"1:3 – elimineret"
 		"pickem_swiss_group_23"									"2:3 – elimineret"
 		"pickem_swiss_group_03"									"0:3 – elimineret"
-
-
-
-
-
-
-
-		// WATCH EVENTS
+// WATCH EVENTS
 
 		"eventsched_lan"												"LAN-begivenhed"
 		"eventsched_online"											"Onlinebegivenhed"
@@ -48852,8 +48832,8 @@ bare glem alt om Proseccoen."
 		"tooltip_short_viewaddon"			"Vis tilpasset bane"
 		"tooltip_short_kick_player"			"Smid ud"
 
-// crow_mask_50516_comment
-// crow_mask_50517_comment
+// crow_mask_52326_comment
+// crow_mask_52327_comment
 }
 
 

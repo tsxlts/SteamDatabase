@@ -5201,10 +5201,6 @@
 		"CSGO_TeamID_142"       "PARIVISION"
 		"CSGO_TeamID_143"       "The Huns"
 		"CSGO_TeamID_144"       "RED Canids"
-
-
-
-
 		"Place_Name_1st"		"Чемпион"
 		"Place_Name_2nd"		"Гранд-финалист"
 		"Place_Name_3rd-4th"	"Полуфиналист"
@@ -28465,8 +28461,18 @@
 		"SFUI_MajorEventVenue_StreamTitle_25_2" "StarLadder Budapest Major 2025 — прямой эфир"
 
 		//
-		// 2025 StarLadder Budapest 2025 CS2 Major Championship Strings Block End
+//
+//
+//
+	"CSGO_TournamentPass_cologne2026_store_desc" "Пропуск зрителя, наклейки, автографы и не только"
+
+	"CSGO_TournamentPass_cologne2026_pack_tinyname" "Пропуск с жетонами"
+	"CSGO_Tournament_Event_Location_26"		"Кёльн-2026"
+		"CSGO_Watch_Cat_Tournament_26"      "Кёльн-2026"
+		//
+		// 2026 IEM Cologne 2026 CS2 Major Championship Strings Block End
 		// ======================================
+
 
 
 // ---------------------------------------------------------------------------------------------
@@ -34132,8 +34138,6 @@
 		"store_nav_store"		"ИНСТРУМЕНТЫ"
 		"store_nav_popular"		"НОВОЕ И ПОПУЛЯРНОЕ"
 		"store_linked_item_tooltip"		"Нажмите, чтобы увидеть обе версии предмета"
-		"store_nav_more"		"Ещё"
-		"store_nav_shop_all"		"Показать все"
 		"store_nav_section_coupon_nightmode2" "Наборы музыки<br>NIGHTMODE II"
 
 		"StoreCheckout_NoItems"			"Ваша корзина пуста!"
@@ -35106,6 +35110,7 @@
 		"SFUI_Store_Offer_Days_Remaining_bid:f"		"{daysremaining, plural, one{Остался {d:daysremaining} день, чтобы поставить на это предложение} few{Осталось {d:daysremaining} дня, чтобы поставить на это предложение} many{Осталось {d:daysremaining} дней, чтобы поставить на это предложение} other{Осталось {d:daysremaining} дня, чтобы поставить на это предложение}}"
 		"SFUI_Store_Offer_Days_Remaining_last_claim:f"	"Последний шанс воспользоваться этим предложением"
 		"SFUI_Store_Offer_Days_Remaining_last_bid:f"	"Последний шанс поставить на это предложение"
+
 		"SFUI_Store_Last_Chance"                    "Последний шанс"
 		"SFUI_Store_Limited_Time_Tagline"           "до конца предложения"
 		"SFUI_Store_Limited_Bid_Tagline"			"до конца торгов"
@@ -35651,10 +35656,10 @@
 		"popup_remove_patch_button"         "Снять нашивку"
 		"popup_remove_sticker_button"       "Поскрести наклейку"
 		"popup_remove_sticker_button_negative"  "Удалить наклейку"
+		"popup_remove_sticker_button_negative_wipestickers"  "Удалить все наклейки"
 		"popup_scrape_sticker_level"		"Степень износа наклейки"
 		"SFUI_Sticker_RemoveImmediate_Desc" "Вы уверены, что хотите убрать наклейку с предмета? Эта наклейка будет уничтожена."
 		"SFUI_Sticker_RemoveImmediate_Tooltip" "<b>Нажмите</b> и <b>удерживайте</b>, чтобы удалить выбранную наклейку с этого предмета.<br>Удалённая наклейка будет уничтожена."
-
 		"SFUI_Sticker_Remove_Desc"          "Если поскрести эту наклейку еще раз, она исчезнет с предмета и будет уничтожена." 
 		"SFUI_Patch_Remove"           		"Снять нашивку"
 		"SFUI_Patch_Remove_Desc"			"Вы уверены, что хотите снять эту нашивку с агента? Она будет уничтожена." 
@@ -36281,7 +36286,7 @@
 		"CSGO_Fantasy_NoSTickers_In_Table" "У вас нет наклеек-автографов с <b>%s1</b>.\nИх можно получить из капсул с автографами или купить на Торговой площадке."
 		"major_hub_souvenir_package_desc"	"Нажмите на любой завершившийся матч ниже, чтобы получить сувенир или купить его за <span class=\"major-hub-store__souvenir__price\">{s:souvenir_price}</span>"
 		"major_hub_souvenir_package_desc_no_price"	"Нажмите на любой завершившийся матч ниже, чтобы получить сувенир."
-		
+		"major_hub_store_title_event" 	"Магазин {s:tournament_name}"
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Journal
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -39614,9 +39619,6 @@
 
 		"SFUI_UserAlertNoteType_1"			"Серверы в данном регионе (%s1) перегружены."
 		"SFUI_UserAlertNoteType_2"			"Серверы в данном регионе (%s1) закрыты на техническое обслуживание."
-		"SFUI_UserAlertNoteType_LowPlayersR:f"	"В регионе «{region}» матч {players, plural, one{ищет только {players} совместимый игрок} few{ищут только {players} совместимых игрока} many{ищут только {players} совместимых игроков} other{ищет только {players} совместимого игрока}}."
-		"SFUI_UserAlertNoteType_LowPlayersY:f"	"В вашем регионе матч {players, plural, one{ищет только {players} совместимый игрок} few{ищут только {players} совместимых игрока} many{ищут только {players} совместимых игроков} other{ищет только {players} совместимого игрока}}."
-
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"Не удалось подключиться к матчу."
 		"SFUI_QMM_ERROR_NotLoggedIn"		"Вы не авторизованы в системе подбора матчей Counter-Strike."
 		"SFUI_QMM_ERROR_NotVacVerified"		"Система VAC не смогла проверить вашу игровую сессию."
@@ -41595,10 +41597,6 @@
 		"SFUI_ProPlayer_xielo" "Владислав Лысов"
 		"SFUI_ProPlayer_xkacpersky" "Кацпер Габара"
 		"SFUI_ProPlayer_xotic" "Зак Эльшани"
-
-
-
-
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Leaderboards
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -44245,7 +44243,6 @@
 		//Sticker or Patch
 
 		"popup_can_stick_desc"			"Использовать на <b> {s:tool_target_name}</b>"
-
 		"popup_can_stick_title_patch" 							"Нанести нашивку"
 		"popup_can_stick_scrape_full_patch"						"Удалить нашивку с <b> {s:tool_target_name}</b>"
 		"popup_can_stick_scrape_patch"							"Поскрести нашивку на <b> {s:tool_target_name}</b>"
@@ -44330,8 +44327,7 @@
 		"popup_totool_purchase_header"	"Купить"
 		"popup_totool_purchase_header2"	"КУПИТЕ, ЧТОБЫ ПОЛУЧИТЬ"
 		"popup_totool_decodeable_header_terminal"	"Активировать терминал"
-
-		//Purchase
+//Purchase
 		"popup_cartpreview_button"		"Предпросмотр"
 		"popup_cartpreview_title"		"Предпросмотр"
 		"popup_purchase_title"			"Купить"
@@ -45024,7 +45020,6 @@
 		"tooltip_inspect_weapon_model"	"Осмотреть оружие"
 		"tooltip_inspect_weapon_model_faction"	"Осмотреть с моделью игрока"
 		"tooltip_inspect_play_mvp_anthem"	"Прослушать гимн СЦИ"
-
 		"tooltip_lookat_weapon_model"	"Анимация осмотра от первого лица"
 		"tooltip_inspect_open_season_stats" "Показать статистику за сезон"
 		
@@ -45168,7 +45163,6 @@
 		"tooltip_prime"								"Прайм-статус включён"
 
 		"tooltip_demo_highlights_toggle"			"Режим ключевых моментов"
-
 		"mainmenu_go_to_character_loadout"			"Показать агента в снаряжении"
 		"mainmenu_switch_vanity_to_t"				"Показать выбранного террориста"
 		"mainmenu_switch_vanity_to_ct"				"Показать выбранного спецназовца"
@@ -46690,13 +46684,8 @@
 		"pickem_swiss_group_13"									"1:3 — выбыли"
 		"pickem_swiss_group_23"									"2:3 — выбыли"
 		"pickem_swiss_group_03"									"0:3 — выбыли"
-
-
-
-
-
-
-
+"major_store_nav_home"			"Главная"
+		"major_store_checkout_activate_btn"		"Активировать жетоны"
 		// WATCH EVENTS
 
 		"eventsched_lan"												"LAN-турнир"
@@ -47501,8 +47490,8 @@
 		"tooltip_short_viewaddon"			"Просмотреть пользовательскую карту"
 		"tooltip_short_kick_player"			"Выгнать"
 
-// crow_mask_50516_comment
-// crow_mask_50517_comment
+// crow_mask_52326_comment
+// crow_mask_52327_comment
 }
 
 

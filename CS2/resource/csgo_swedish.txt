@@ -5203,10 +5203,6 @@
 		"CSGO_TeamID_142"       "Parivision"
 		"CSGO_TeamID_143"       "The Huns"
 		"CSGO_TeamID_144"       "RED Canids"
-
-
-
-
 		"Place_Name_1st"		"Mästare"
 		"Place_Name_2nd"		"Finalist"
 		"Place_Name_3rd-4th"	"Semifinalist"
@@ -28468,8 +28464,13 @@
 		"SFUI_MajorEventVenue_StreamTitle_25_2" "Budapest 2025 – StarLadder Major – livestream"
 
 		//
-		// 2025 StarLadder Budapest 2025 CS2 Major Championship Strings Block End
+//
+//
+//
+	//
+		// 2026 IEM Cologne 2026 CS2 Major Championship Strings Block End
 		// ======================================
+
 
 
 // ---------------------------------------------------------------------------------------------
@@ -34164,8 +34165,6 @@
 		"store_nav_store"		"VERKTYG"
 		"store_nav_popular"		"NYTT OCH POPULÄRT"
 		"store_linked_item_tooltip"		"Klicka för att se båda versionerna av föremålet"
-		"store_nav_more"		"Visa mer"
-		"store_nav_shop_all"		"Visa alla"
 		"store_nav_section_coupon_nightmode2" "NIGHTMODE II<br>Musikpaket"
 
 		"StoreCheckout_NoItems"			"Din kundvagn är tom!"
@@ -35137,6 +35136,7 @@
 		"SFUI_Store_Offer_Days_Remaining_bid:f"		"{daysremaining, plural, one{{d:daysremaining} dag kvar att bjuda på erbjudandet} other{{d:daysremaining} dagar kvar att bjuda på erbjudandet}}"
 		"SFUI_Store_Offer_Days_Remaining_last_claim:f"	"Sista chansen att göra anspråk på erbjudandet"
 		"SFUI_Store_Offer_Days_Remaining_last_bid:f"	"Sista chansen att bjuda på erbjudandet"
+
 		"SFUI_Store_Last_Chance"                    "Sista chansen"
 		"SFUI_Store_Limited_Time_Tagline"           "att ta del av erbjudandet"
 		"SFUI_Store_Limited_Bid_Tagline"			"att lägga bud på det här erbjudandet"
@@ -35685,7 +35685,6 @@
 		"popup_scrape_sticker_level"		"Klistermärkets skrapgrad"
 		"SFUI_Sticker_RemoveImmediate_Desc" "Bekräfta att du vill ta bort det här klistermärket från föremålet. Det borttagna klistermärket kommer att förstöras."
 		"SFUI_Sticker_RemoveImmediate_Tooltip" "<b>Tryck</b> och <b>håll</b> för att ta bort valt klistermärke från artikeln.<br>Det borttagna klistermärket kommer att förstöras."
-
 		"SFUI_Sticker_Remove_Desc"          "Om du skrapar bort mer av det här klistermärket tas det bort från föremålet och förstörs." 
 		"SFUI_Patch_Remove"           		"Ta bort tygmärke"
 		"SFUI_Patch_Remove_Desc"			"Bekräfta att du vill ta bort det här tygmärket från din agent. Det borttagna tygmärket kommer att förstöras." 
@@ -36311,7 +36310,6 @@
 		"CSGO_Fantasy_NoSTickers_In_Table" "Du äger för närvarande inga <b>%s1</b> spelarautograf-klistermärken.\nDu kan köpa lagautograf-kapslar eller skaffa autografklistermärken direkt från marknaden."
 		"major_hub_souvenir_package_desc"	"Klicka på en avslutad match nedan för att hämta en souvenir eller köpa en för <span class=\"major-hub-store__souvenir__price\">{s:souvenir_price}</span>"
 		"major_hub_souvenir_package_desc_no_price"	"Klicka på en avslutad match nedan och få en souvenir."
-		
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Journal
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -39658,9 +39656,6 @@
 
 		"SFUI_UserAlertNoteType_1"			"Servrar i %s1 är under hög belastning."
 		"SFUI_UserAlertNoteType_2"			"Servar i %s1 är nere för underhåll."
-		"SFUI_UserAlertNoteType_LowPlayersR:f"	"Bara {players} {players, plural, one{kompatibel spelare} other{kompatibla spelare}} söker i {region}."
-		"SFUI_UserAlertNoteType_LowPlayersY:f"	"Bara {players} {players, plural, one{kompatibel spelare} other{kompatibla spelare}} söker i din {region}."
-
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"Kunde inte ansluta till match."
 		"SFUI_QMM_ERROR_NotLoggedIn"		"Inte inloggad till Counter-Strikes matchningstjänst."
 		"SFUI_QMM_ERROR_NotVacVerified"		"VAC kunde inte verifiera din spelsession."
@@ -41639,10 +41634,6 @@
 		"SFUI_ProPlayer_xielo" "Vladislav Lysov"
 		"SFUI_ProPlayer_xkacpersky" "Kacper Gabara"
 		"SFUI_ProPlayer_xotic" "Zack Elshani"
-
-
-
-
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Leaderboards
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -44291,7 +44282,6 @@ Om samma match redan laddats ner lokalt och filen blivit förstörd, radera då 
 		//Sticker or Patch
 
 		"popup_can_stick_desc"			"Använd på <b> {s:tool_target_name}</b>"
-
 		"popup_can_stick_title_patch" 							"Fäst tygmärke"
 		"popup_can_stick_scrape_full_patch"						"Ta bort ett tygmärke från <b> {s:tool_target_name}</b>"
 		"popup_can_stick_scrape_patch"							"Skrapa ett tygmärke från <b> {s:tool_target_name}</b>"
@@ -44376,8 +44366,7 @@ Om samma match redan laddats ner lokalt och filen blivit förstörd, radera då 
 		"popup_totool_purchase_header"	"Köp"
 		"popup_totool_purchase_header2"	"KÖP FÖR ATT FÅ"
 		"popup_totool_decodeable_header_terminal"	"Öppna terminalen"
-
-		//Purchase
+//Purchase
 		"popup_cartpreview_button"		"Förhandsvisa"
 		"popup_cartpreview_title"		"Förhandsvisa"
 		"popup_purchase_title"			"Köp"
@@ -45070,7 +45059,6 @@ Om samma match redan laddats ner lokalt och filen blivit förstörd, radera då 
 		"tooltip_inspect_weapon_model"	"Inspektera vapenmodell"
 		"tooltip_inspect_weapon_model_faction"	"Inspektera spelarmodell"
 		"tooltip_inspect_play_mvp_anthem"	"Spela MVP-musik"
-
 		"tooltip_lookat_weapon_model"	"Inspektionsanimation i förstaperson"
 		"tooltip_inspect_open_season_stats" "Visa säsongsstatistik"
 		
@@ -45214,7 +45202,6 @@ Om samma match redan laddats ner lokalt och filen blivit förstörd, radera då 
 		"tooltip_prime"								"Prime-aktiverat konto"
 
 		"tooltip_demo_highlights_toggle"			"Växla för uppspelning av höjdpunkter"
-
 		"mainmenu_go_to_character_loadout"			"Visa agent i utrustningen"
 		"mainmenu_switch_vanity_to_t"				"Visa utrustad T-agent"
 		"mainmenu_switch_vanity_to_ct"				"Visa utrustad CT-agent"
@@ -46760,14 +46747,7 @@ Om samma match redan laddats ner lokalt och filen blivit förstörd, radera då 
 		"pickem_swiss_group_13"									"1:3 – utslagen"
 		"pickem_swiss_group_23"									"2:3 – utslagen"
 		"pickem_swiss_group_03"									"0:3 – utslagen"
-
-
-
-
-
-
-
-		// WATCH EVENTS
+// WATCH EVENTS
 
 		"eventsched_lan"												"LAN-event"
 		"eventsched_online"											"Onlineevent"
@@ -47571,8 +47551,8 @@ Om samma match redan laddats ner lokalt och filen blivit förstörd, radera då 
 		"tooltip_short_viewaddon"			"Visa anpassad bana"
 		"tooltip_short_kick_player"			"Sparka ut"
 
-// crow_mask_50516_comment
-// crow_mask_50517_comment
+// crow_mask_52326_comment
+// crow_mask_52327_comment
 }
 
 

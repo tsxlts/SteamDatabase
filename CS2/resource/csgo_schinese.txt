@@ -5197,10 +5197,6 @@
 		"CSGO_TeamID_142"       "Parivision"
 		"CSGO_TeamID_143"       "The Huns"
 		"CSGO_TeamID_144"       "RED Canids"
-
-
-
-
 		"Place_Name_1st"		"冠军选手"
 		"Place_Name_2nd"		"决赛选手"
 		"Place_Name_3rd-4th"	"半决赛选手"
@@ -28439,8 +28435,13 @@
 		"SFUI_MajorEventVenue_StreamTitle_25_2" "2025年布达佩斯 - StarLadder 特级锦标赛 - 直播"
 
 		//
-		// 2025 StarLadder Budapest 2025 CS2 Major Championship Strings Block End
+//
+//
+//
+	//
+		// 2026 IEM Cologne 2026 CS2 Major Championship Strings Block End
 		// ======================================
+
 
 
 // ---------------------------------------------------------------------------------------------
@@ -34106,8 +34107,6 @@
 		"store_nav_store"		"工具"
 		"store_nav_popular"		"新鲜 & 热门"
 		"store_linked_item_tooltip"		"点击查看该物品的两个版本"
-		"store_nav_more"		"查看更多"
-		"store_nav_shop_all"		"所有商品"
 		"store_nav_section_coupon_nightmode2" "夜间模式II<br>系列音乐盒"
 
 		"StoreCheckout_NoItems"			"您的购物车是空的！"
@@ -35079,6 +35078,7 @@
 		"SFUI_Store_Offer_Days_Remaining_bid:f"		"此报价剩余出价时间 {d:daysremaining} 天"
 		"SFUI_Store_Offer_Days_Remaining_last_claim:f"	"获取此报价最终机会"
 		"SFUI_Store_Offer_Days_Remaining_last_bid:f"	"此报价最终出价机会"
+
 		"SFUI_Store_Last_Chance"                    "最后机会"
 		"SFUI_Store_Limited_Time_Tagline"           "领取优惠"
 		"SFUI_Store_Limited_Bid_Tagline"			"参与此物品竞拍"
@@ -35627,7 +35627,6 @@
 		"popup_scrape_sticker_level"		"印花刮除等级"
 		"SFUI_Sticker_RemoveImmediate_Desc" "请确认是否要从物品上移除此印花。移除的印花将消失。"
 		"SFUI_Sticker_RemoveImmediate_Tooltip" "<b>长按</b>从物品上移除选定印花。<br>被移除的印花将被销毁。"
-
 		"SFUI_Sticker_Remove_Desc"          "如果您继续刮除印花，印花将从物品上移除并摧毁。" 
 		"SFUI_Patch_Remove"           		"移除布章"
 		"SFUI_Patch_Remove_Desc"			"请确认您是否想要将此布章从您的探员身上移除。移除的布章会被摧毁。" 
@@ -36253,7 +36252,6 @@
 		"CSGO_Fantasy_NoSTickers_In_Table" "您目前没有任何<b>%s1</b>的选手亲笔签名印花。\n您可以购买战队亲笔签名胶囊，或是直接从市场入手亲笔签名印花。"
 		"major_hub_souvenir_package_desc"	"点击以下任何已结束的比赛，即可兑换纪念包或以 <span class=\"major-hub-store__souvenir__price\">{s:souvenir_price}</span> 的价格购买纪念包"
 		"major_hub_souvenir_package_desc_no_price"	"点击以下任何已结束的比赛兑换纪念包。"
-		
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Journal
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -39586,9 +39584,6 @@
 
 		"SFUI_UserAlertNoteType_1"			"%s1服务器目前负载过高。"
 		"SFUI_UserAlertNoteType_2"			"%s1服务器目前因维护处于脱机状态。"
-		"SFUI_UserAlertNoteType_LowPlayersR:f"	"{region} 区域仅有 {players} 名 {players, plural, one{玩家} other{玩家}} 正在搜索匹配。"
-		"SFUI_UserAlertNoteType_LowPlayersY:f"	"你的区域仅有 {players} 名 {players, plural, one{玩家} other{玩家}} 正在搜索匹配。"
-
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"连接至比赛失败。"
 		"SFUI_QMM_ERROR_NotLoggedIn"		"连接至 反恐精英 对战匹配服务器失败。"
 		"SFUI_QMM_ERROR_NotVacVerified"		"VAC 无法验证您的游戏会话。"
@@ -41567,10 +41562,6 @@
 		"SFUI_ProPlayer_xielo" "Vladislav Lysov"
 		"SFUI_ProPlayer_xkacpersky" "Kacper Gabara"
 		"SFUI_ProPlayer_xotic" "Zack Elshani"
-
-
-
-
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Leaderboards
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -44217,7 +44208,6 @@
 		//Sticker or Patch
 
 		"popup_can_stick_desc"			"使用 <b> {s:tool_target_name}</b>"
-
 		"popup_can_stick_title_patch" 							"应用布章"
 		"popup_can_stick_scrape_full_patch"						"从 <b> {s:tool_target_name}</b> 上移除一个布章"
 		"popup_can_stick_scrape_patch"							"从 <b> {s:tool_target_name}</b> 上刮一个布章"
@@ -44302,8 +44292,7 @@
 		"popup_totool_purchase_header"	"购买"
 		"popup_totool_purchase_header2"	"购买以获得"
 		"popup_totool_decodeable_header_terminal"	"开启终端机"
-
-		//Purchase
+//Purchase
 		"popup_cartpreview_button"		"预览"
 		"popup_cartpreview_title"		"预览"
 		"popup_purchase_title"			"购买"
@@ -44996,7 +44985,6 @@
 		"tooltip_inspect_weapon_model"	"检视武器模型"
 		"tooltip_inspect_weapon_model_faction"	"检视人物模型"
 		"tooltip_inspect_play_mvp_anthem"	"播放 MVP 凯歌"
-
 		"tooltip_lookat_weapon_model"	"第一人称检视动画"
 		"tooltip_inspect_open_season_stats" "查看赛季统计数据"
 		
@@ -45140,7 +45128,6 @@
 		"tooltip_prime"								"优先状态帐户"
 
 		"tooltip_demo_highlights_toggle"			"切换高光时刻回放"
-
 		"mainmenu_go_to_character_loadout"			"在武器装备中查看探员"
 		"mainmenu_switch_vanity_to_t"				"显示已装备好的 T 探员"
 		"mainmenu_switch_vanity_to_ct"				"显示已装备好的 CT 探员"
@@ -46662,14 +46649,7 @@
 		"pickem_swiss_group_13"									"1:3 - 淘汰"
 		"pickem_swiss_group_23"									"2:3 - 淘汰"
 		"pickem_swiss_group_03"									"0:3 - 淘汰"
-
-
-
-
-
-
-
-		// WATCH EVENTS
+// WATCH EVENTS
 
 		"eventsched_lan"												"线下赛事"
 		"eventsched_online"											"线上赛事"
@@ -47476,8 +47456,8 @@
 		"tooltip_short_viewaddon"			"查看自定义地图"
 		"tooltip_short_kick_player"			"踢出"
 
-// crow_mask_50516_comment
-// crow_mask_50517_comment
+// crow_mask_52326_comment
+// crow_mask_52327_comment
 }
 
 

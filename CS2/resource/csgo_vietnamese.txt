@@ -5403,10 +5403,6 @@
 		"CSGO_TeamID_142"       "Parivision"
 		"CSGO_TeamID_143"       "The Huns"
 		"CSGO_TeamID_144"       "RED Canids"
-
-
-
-
 		"Place_Name_1st"		"Quán quân"
 		"Place_Name_2nd"		"Á quân"
 		"Place_Name_3rd-4th"	"Đội lọt vào bán kết"
@@ -29448,8 +29444,13 @@
 		"SFUI_MajorEventVenue_StreamTitle_25_2" "Budapest 2025 - Major StarLadder - Trực tiếp"
 
 		//
-		// 2025 StarLadder Budapest 2025 CS2 Major Championship Strings Block End
+//
+//
+//
+	//
+		// 2026 IEM Cologne 2026 CS2 Major Championship Strings Block End
 		// ======================================
+
 
 
 // ---------------------------------------------------------------------------------------------
@@ -36737,8 +36738,6 @@
 		"store_nav_store"		"CÔNG CỤ"
 		"store_nav_popular"		"MỚI & PHỔ BIẾN"
 		"store_linked_item_tooltip"		"Nhấn vào đây để xem cả hai phiên bản của vật phẩm này"
-		"store_nav_more"		"Xem thêm"
-		"store_nav_shop_all"		"Xem tất cả trong cửa hàng"
 		"store_nav_section_coupon_nightmode2" "Gói âm thanh<br>NIGHTMODE II"
 
 		"StoreCheckout_NoItems"			"Giỏ hàng của bạn đang trống!"
@@ -37734,6 +37733,7 @@
 		"SFUI_Store_Offer_Days_Remaining_bid:f"		"còn {d:daysremaining} ngày để đấu giá mặt hàng này"
 		"SFUI_Store_Offer_Days_Remaining_last_claim:f"	"Cơ hội cuối để nhận mặt hàng này"
 		"SFUI_Store_Offer_Days_Remaining_last_bid:f"	"Cơ hội cuối để đấu giá mặt hàng này"
+
 		"SFUI_Store_Last_Chance"                    "Cơ hội cuối"
 		"SFUI_Store_Limited_Time_Tagline"           "Để nhận mặt hàng này"
 		"SFUI_Store_Limited_Bid_Tagline"			"Để đấu giá mặt hàng này"
@@ -38284,7 +38284,6 @@
 		"popup_scrape_sticker_level"		"Mức độ cào hình dán"
 		"SFUI_Sticker_RemoveImmediate_Desc" "Vui lòng xác nhận bạn muốn gỡ hình dán này khỏi vật phẩm. Sau khi gỡ, hình dán sẽ bị tiêu hủy."
 		"SFUI_Sticker_RemoveImmediate_Tooltip" "<b>Ấn</b> và <b>giữ</b> để gỡ bỏ hình dán được chọn khỏi vật phẩm.<br>Sau khi gỡ, hình dán sẽ bị tiêu hủy."
-
 		"SFUI_Sticker_Remove_Desc"          "Cào hình dán này lần nữa sẽ loại bỏ nó khỏi vật phẩm và hình dán sẽ bị hủy bỏ." 
 		"SFUI_Patch_Remove"           		"Gỡ phù hiệu"
 		"SFUI_Patch_Remove_Desc"			"Xin hãy xác nhận rằng bạn muốn gỡ phù hiệu này khỏi đặc vụ. Sau khi gỡ, phù hiệu sẽ bị hủy." 
@@ -38911,7 +38910,6 @@
 		"CSGO_Fantasy_NoSTickers_In_Table" "Bạn hiện tại không sở hữu hình dán có chữ kí tuyển thủ <b>%s1</b>.\nBạn có thể mua gói chữ ký đội hoặc lên chợ cộng đồng để có được hình dán có chữ kí."
 		"major_hub_souvenir_package_desc"	"Nhấn vào bất kì trận đấu đã kết thúc dưới đây để nhận gói lưu niệm hoặc mua một gói với giá <span class=\"major-hub-store__souvenir__price\">{s:souvenir_price}</span>"
 		"major_hub_souvenir_package_desc_no_price"	"Nhấn vào bất kì trận đấu đã kết thúc dưới đây để nhận gói lưu niệm."
-		
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Journal
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -42283,9 +42281,6 @@
 
 		"SFUI_UserAlertNoteType_1"			"Máy chủ ở %s1 đang bị quá tải."
 		"SFUI_UserAlertNoteType_2"			"Máy chủ ở %s1 đóng cửa để bảo trì."
-		"SFUI_UserAlertNoteType_LowPlayersR:f"	"Chỉ có {players} {players, plural, other{người chơi}} tương thích đang tìm kiếm trong {region}."
-		"SFUI_UserAlertNoteType_LowPlayersY:f"	"Chỉ có {players} {players, plural, other{người chơi}} tương thích đang tìm kiếm trong khu vực của bạn."
-
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"Không thể kết nối tới trận đấu."
 		"SFUI_QMM_ERROR_NotLoggedIn"		"Chưa đăng nhập vào dịch vụ xếp trận Counter-Strike."
 		"SFUI_QMM_ERROR_NotVacVerified"		"VAC không thể xác thực phiên chơi của bạn."
@@ -44286,10 +44281,6 @@
 		"SFUI_ProPlayer_xielo" "Vladislav Lysov"
 		"SFUI_ProPlayer_xkacpersky" "Kacper Gabara"
 		"SFUI_ProPlayer_xotic" "Zack Elshani"
-
-
-
-
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Leaderboards
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -46944,7 +46935,6 @@
 		//Sticker or Patch
 
 		"popup_can_stick_desc"			"Sử dụng lên <b> {s:tool_target_name}</b>"
-
 		"popup_can_stick_title_patch" 							"Dùng phù hiệu"
 		"popup_can_stick_scrape_full_patch"						"Gỡ một phù hiệu khỏi <b> {s:tool_target_name}</b>"
 		"popup_can_stick_scrape_patch"							"Cào một phù hiệu trên <b> {s:tool_target_name}</b>"
@@ -47029,8 +47019,7 @@
 		"popup_totool_purchase_header"	"Mua"
 		"popup_totool_purchase_header2"	"MUA ĐỂ NHẬN"
 		"popup_totool_decodeable_header_terminal"	"Mở bọc thiết bị đầu nối"
-
-		//Purchase
+//Purchase
 		"popup_cartpreview_button"		"Xem trước"
 		"popup_cartpreview_title"		"Xem trước"
 		"popup_purchase_title"			"Mua"
@@ -47725,7 +47714,6 @@
 		"tooltip_inspect_weapon_model"	"Kiểm tra mô hình vũ khí"
 		"tooltip_inspect_weapon_model_faction"	"Kiểm tra mô hình nhân vật"
 		"tooltip_inspect_play_mvp_anthem"	"Phát nhạc MVP"
-
 		"tooltip_lookat_weapon_model"	"Hành động ngắm nghía góc nhìn thứ nhất"
 		"tooltip_inspect_open_season_stats" "Xem thông số mùa đấu"
 		
@@ -47871,7 +47859,6 @@
 		"tooltip_prime"								"Tài khoản đã bật Prime"
 
 		"tooltip_demo_highlights_toggle"			"Bật/tắt phát lại tiêu điểm"
-
 		"mainmenu_go_to_character_loadout"			"Xem đặc vụ trong hành trang"
 		"mainmenu_switch_vanity_to_t"				"Hiện đặc vụ T đang dùng"
 		"mainmenu_switch_vanity_to_ct"				"Hiện đặc vụ CT đang dùng"
@@ -49463,14 +49450,7 @@
 		"pickem_swiss_group_13"									"1:3 - loại"
 		"pickem_swiss_group_23"									"2:3 - loại"
 		"pickem_swiss_group_03"									"0:3 - loại"
-
-
-
-
-
-
-
-		// WATCH EVENTS
+// WATCH EVENTS
 
 		"eventsched_lan"												"Sự kiện LAN"
 		"eventsched_online"											"Sự kiện trực tuyến"
@@ -50274,8 +50254,8 @@
 		"tooltip_short_viewaddon"			"Xem bản đồ tùy biến"
 		"tooltip_short_kick_player"			"Đuổi"
 
-// crow_mask_50516_comment
-// crow_mask_50517_comment
+// crow_mask_52326_comment
+// crow_mask_52327_comment
 }
 
 

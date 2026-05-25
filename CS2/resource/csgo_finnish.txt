@@ -5311,6 +5311,10 @@
 		"CSGO_TeamID_142"       "Parivision"
 		"CSGO_TeamID_143"       "The Huns"
 		"CSGO_TeamID_144"       "RED Canids"
+		"CSGO_TeamID_145"       "FUT"
+		"CSGO_TeamID_146"       "Gaimin Gladiators"
+		"CSGO_TeamID_147"       "Sinners"
+		"CSGO_TeamID_148"       "THUNDER dOWNUNDER"
 
 
 
@@ -29211,8 +29215,17 @@
 		"SFUI_MajorEventVenue_StreamTitle_25_2" "Budapest 2025 – StarLadder-major – Suora lähetys"
 
 		//
-		// 2025 StarLadder Budapest 2025 CS2 Major Championship Strings Block End
+//
+//
+//
+	"CSGO_TournamentPass_cologne2026" "Köln 2026 -katsojapassi"
+	"CSGO_TournamentPass_cologne2026_Desc" "Tämä on sinetöity IEM Köln 2026 CS2 Major -turnauksen katsojapassi. Avaamalla passin saat Köln 2026 -kolikon, jolla seuraat edistymistäsi tapahtuman ajan. Passi sisältää myös pääsyn Köln 2026 Pick'Em -haasteeseen, Steam.tv-chatin kannustuslogoihin, kolikkohaasteisiin ja rajoittamattomiin graffitien käyttömahdollisuuksiin pelissä tapahtuman ajan.\n\nPäivitä Köln 2026 -kolikkosi suorittamalla haasteita. Ansaitse 300 Köln 2026 -polettia joka kerta, kun kolikkosi päivittyy.\n\n50 % passin myyntituloista käytetään mukana olevien pelaajien ja organisaatioiden tukemiseen."
+	"CSGO_CollectibleCoin_cologne2026_Champion_Desc"			"Tämä turnauspalkinto myönnettiin IEM Köln 2026 CS2 Majorin voittajalle."
+	"CSGO_Tournament_Event_Location_26"		"Köln 2026"
+		//
+		// 2026 IEM Cologne 2026 CS2 Major Championship Strings Block End
 		// ======================================
+
 
 
 // ---------------------------------------------------------------------------------------------
@@ -35138,8 +35151,6 @@
 		"store_nav_store"		"TYÖKALUT"
 		"store_nav_popular"		"UUDET SUOSIKIT"
 		"store_linked_item_tooltip"		"Klikkaa nähdäksesi esineen molemmat versiot"
-		"store_nav_more"		"Näytä lisää"
-		"store_nav_shop_all"		"Näytä kaikki"
 		"store_nav_section_coupon_nightmode2" "NIGHTMODE II<br>-musiikkipakkaukset"
 
 		"StoreCheckout_NoItems"			"Ostoskorisi on tyhjä!"
@@ -36111,6 +36122,7 @@
 		"SFUI_Store_Offer_Days_Remaining_bid:f"		"{daysremaining, plural, one{{d:daysremaining} päivä aikaa tehdä tarjous} other{{d:daysremaining} päivää aikaa tehdä tarjous}}"
 		"SFUI_Store_Offer_Days_Remaining_last_claim:f"	"Viimeinen mahdollisuus lunastaa tarjous"
 		"SFUI_Store_Offer_Days_Remaining_last_bid:f"	"Viimeinen mahdollisuus tehdä tarjous"
+
 		"SFUI_Store_Last_Chance"                    "Viimeinen tilaisuus"
 		"SFUI_Store_Limited_Time_Tagline"           "lunastaa tarjous"
 		"SFUI_Store_Limited_Bid_Tagline"			"tehdä tarjous"
@@ -36659,7 +36671,6 @@
 		"popup_scrape_sticker_level"		"Tarran raaputustaso"
 		"SFUI_Sticker_RemoveImmediate_Desc" "Vahvista, että haluat poistaa tarran esineestä. Poistettu tarra tuhotaan."
 		"SFUI_Sticker_RemoveImmediate_Tooltip" "<b>Paina</b> ja <b>pidä painettuna</b>, jos haluat poistaa valitun tarran esineestä.<br>Poistettu tarra tuhoutuu."
-
 		"SFUI_Sticker_Remove_Desc"          "Seuraava raaputus poistaa tarran aseesta ja tuhoaa sen." 
 		"SFUI_Patch_Remove"           		"Poista kangasmerkki"
 		"SFUI_Patch_Remove_Desc"			"Vahvista, että haluat poistaa kangasmerkin agentiltasi. Poistettu merkki tuhotaan." 
@@ -37289,7 +37300,6 @@
 		"CSGO_Fantasy_NoSTickers_In_Table" "Et omista tällä hetkellä yhtään tapahtuman <b>%s1</b> pelaajien nimikirjoittamaa tarraa.\nVoit ostaa joukkueen nimikirjoituskapselin tai hankkia nimikirjoitetun tarran suoraan kauppapaikalta."
 		"major_hub_souvenir_package_desc"	"Klikkaa mitä tahansa pelattua ottelua alta ja lunasta tai osta tuliainen hintaan <span class=\"major-hub-store__souvenir__price\">{s:souvenir_price}</span>"
 		"major_hub_souvenir_package_desc_no_price"	"Klikkaa mitä tahansa pelattua ottelua alta ja lunasta tuliainen."
-		
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Journal
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -39937,7 +39947,7 @@
 		"SFUI_Settings_SplitMode_Vert" "Vierekkäin"
 		"SFUI_Settings_SplitMode_Horz" "Päällä / Alla"
 
-		"SFUI_Settings_HudTelemetry_FrameTime" "Näytä ruudunpäivitysaika ja ruudunpäivityksen nopeus (FPS)"
+		"SFUI_Settings_HudTelemetry_FrameTime" "Näytä kuvanpäivitysaika ja kuvataajuus (FPS)"
 		"SFUI_Settings_HudTelemetry_FrameTime_Info" "Näyttää huonoimman viimeaikaisen ruudunpäivitysajan millisekunteina sekä sitä vastaavan kuvia sekunnissa (FPS) -luvun."
 
 		"SFUI_Settings_HudTelemetry_FrameTimePoor" "Ruudunpäivitysajan varoituskynnys"
@@ -40641,9 +40651,6 @@ Huomaa! Et voi käyttää kivääriä panssarihyökkäyspuvun kanssa."
 
 		"SFUI_UserAlertNoteType_1"			"Palvelimet alueella %s1 ovat rasituksen alla."
 		"SFUI_UserAlertNoteType_2"			"Palvelimet alueella %s1 poissa käytöstä huollon vuoksi."
-		"SFUI_UserAlertNoteType_LowPlayersR:f"	"{players} {players, plural, one{yhteensopiva pelaaja} other{yhteensopivaa pelaajaa}} on pelihaussa alueella {region}."
-		"SFUI_UserAlertNoteType_LowPlayersY:f"	"{players} {players, plural, one{yhteensopiva pelaaja} other{yhteensopivaa pelaajaa}} on pelihaussa alueellasi."
-
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"Peliin yhdistäminen epäonnistui."
 		"SFUI_QMM_ERROR_NotLoggedIn"		"Kirjautuminen Counter-Strike-pelihakupalveluun puuttuu."
 		"SFUI_QMM_ERROR_NotVacVerified"		"VAC ei pystynyt todentamaan peli-istuntoasi."
@@ -42131,6 +42138,7 @@ Huomaa! Et voi käyttää kivääriä panssarihyökkäyspuvun kanssa."
 		"SFUI_ProPlayer_zonic" "Danny Sørensen"
 		"SFUI_ProPlayer_styko" "Martin Styk"
 		"SFUI_ProPlayer_zero" "Patrik Zudel"
+		"SFUI_ProPlayer_zerocn" "Su Jingshen"
 		"SFUI_ProPlayer_deadfox" "Bence Borocz"
 		"SFUI_ProPlayer_angel" "Kyrylo Karasov"
 		"SFUI_ProPlayer_sixer" "Christophe Xia"
@@ -42630,6 +42638,33 @@ Huomaa! Et voi käyttää kivääriä panssarihyökkäyspuvun kanssa."
 		"SFUI_ProPlayer_xielo" "Vladislav Lysov"
 		"SFUI_ProPlayer_xkacpersky" "Kacper Gabara"
 		"SFUI_ProPlayer_xotic" "Zack Elshani"
+		"SFUI_ProPlayer_asap" "Tyson Paterson"
+		"SFUI_ProPlayer_azuwu" "Oscar Bell"
+		"SFUI_ProPlayer_beastik" "Sebastian Daňo"
+		"SFUI_ProPlayer_cmtry" "Nikita Samolotov"
+		"SFUI_ProPlayer_dem0n" "Dmytro Myroshnychenko"
+		"SFUI_ProPlayer_doc" "Danilo Barros"
+		"SFUI_ProPlayer_dziugss" "Džiugas Steponavičius"
+		"SFUI_ProPlayer_gafolo" "Victor Andrade"
+		"SFUI_ProPlayer_gizmy" "Jack von Spreckelsen"
+		"SFUI_ProPlayer_gr1ks" "Gleb Gazin"
+		"SFUI_ProPlayer_huasopeek" "Matias Ibañez Hernandez"
+		"SFUI_ProPlayer_hypex" "Milan Polowiec"
+		"SFUI_ProPlayer_kisserek" "Kamil Banak"
+		"SFUI_ProPlayer_koala" "João Pfeffer"
+		"SFUI_ProPlayer_krabeni" "Aulon Fazlija"
+		"SFUI_ProPlayer_maxxkor" "Máximo Cortina"
+		"SFUI_ProPlayer_meyern" "Ignacio Meyer"
+		"SFUI_ProPlayer_modo" "Mădălin-Andrei Mirea"
+		"SFUI_ProPlayer_nilo" "Linus Bergman"
+		"SFUI_ProPlayer_rainwaker" "Aleks Petrov"
+		"SFUI_ProPlayer_rdnzao" "Daniel Monteiro"
+		"SFUI_ProPlayer_ryu" "Gytis Glušauskas"
+		"SFUI_ProPlayer_s1zzi" "Danylo Vinnyk"
+		"SFUI_ProPlayer_shock" "Max Kvapil"
+		"SFUI_ProPlayer_soulfly" "Caner Kesici"
+		"SFUI_ProPlayer_stressarn" "Jordan Manevski"
+		"SFUI_ProPlayer_tjp" "Tynan Purtell"
 
 
 
@@ -45283,7 +45318,6 @@ Huomaa! Et voi käyttää kivääriä panssarihyökkäyspuvun kanssa."
 		//Sticker or Patch
 
 		"popup_can_stick_desc"			"Käytä: <b> {s:tool_target_name}</b>"
-
 		"popup_can_stick_title_patch" 							"Käytä kangasmerkki"
 		"popup_can_stick_scrape_full_patch"						"Poista kangasmerkki kohteesta <b>{s:tool_target_name}</b>"
 		"popup_can_stick_scrape_patch"							"Raaputa kangasmerkki pois kohteesta <b>{s:tool_target_name}</b>"
@@ -45368,8 +45402,7 @@ Huomaa! Et voi käyttää kivääriä panssarihyökkäyspuvun kanssa."
 		"popup_totool_purchase_header"	"Osta"
 		"popup_totool_purchase_header2"	"OSTA JA LUNASTA"
 		"popup_totool_decodeable_header_terminal"	"Avaa terminaali"
-
-		//Purchase
+//Purchase
 		"popup_cartpreview_button"		"Esikatsele"
 		"popup_cartpreview_title"		"Esikatsele"
 		"popup_purchase_title"			"Osta"
@@ -46062,7 +46095,6 @@ Huomaa! Et voi käyttää kivääriä panssarihyökkäyspuvun kanssa."
 		"tooltip_inspect_weapon_model"	"Tarkastele asemallia"
 		"tooltip_inspect_weapon_model_faction"	"Tarkastele pelaajan mallia"
 		"tooltip_inspect_play_mvp_anthem"	"Toista MVP-melodia"
-
 		"tooltip_lookat_weapon_model"	"Ensimmäisen persoonan tarkasteluanimaatio"
 		"tooltip_inspect_open_season_stats" "Näytä kauden tilastot"
 		
@@ -46206,7 +46238,6 @@ Huomaa! Et voi käyttää kivääriä panssarihyökkäyspuvun kanssa."
 		"tooltip_prime"								"Tilillä on Prime-tila"
 
 		"tooltip_demo_highlights_toggle"			"Kohokohtien toistaminen päälle/pois"
-
 		"mainmenu_go_to_character_loadout"			"Näytä agentti varustelastissa"
 		"mainmenu_switch_vanity_to_t"				"Näytä varustettu T-agentti"
 		"mainmenu_switch_vanity_to_ct"				"Näytä varustettu CT-agentti"
@@ -47737,14 +47768,7 @@ Huomaa! Et voi käyttää kivääriä panssarihyökkäyspuvun kanssa."
 		"pickem_swiss_group_13"									"1–3: karsiutui"
 		"pickem_swiss_group_23"									"2–3: karsiutui"
 		"pickem_swiss_group_03"									"0–3: karsiutui"
-
-
-
-
-
-
-
-		// WATCH EVENTS
+// WATCH EVENTS
 
 		"eventsched_lan"												"LAN-tapahtuma"
 		"eventsched_online"											"Online-tapahtuma"
@@ -48548,8 +48572,8 @@ Huomaa! Et voi käyttää kivääriä panssarihyökkäyspuvun kanssa."
 		"tooltip_short_viewaddon"			"Näytä mukautettu kartta"
 		"tooltip_short_kick_player"			"Poista"
 
-// crow_mask_50516_comment
-// crow_mask_50517_comment
+// crow_mask_52326_comment
+// crow_mask_52327_comment
 }
 
 

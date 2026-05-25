@@ -5313,10 +5313,6 @@
 		"CSGO_TeamID_142"       "Parivision"
 		"CSGO_TeamID_143"       "The Huns"
 		"CSGO_TeamID_144"       "RED Canids"
-
-
-
-
 		"Place_Name_1st"		"Πρωταθλητές"
 		"Place_Name_2nd"		"Φιναλίστ"
 		"Place_Name_3rd-4th"	"Φιναλίστ ημιτελικών"
@@ -29227,8 +29223,15 @@
 		"SFUI_MajorEventVenue_StreamTitle_25_2" "Βουδαπέστη 2025 – StarLadder Major – Ζωντανή μετάδοση"
 
 		//
-		// 2025 StarLadder Budapest 2025 CS2 Major Championship Strings Block End
+//
+//
+//
+	"CSGO_TournamentPass_cologne2026" "Πάσο θεατή – Κολωνία 2026"
+	"CSGO_Tournament_Event_Location_26"		"Κολωνία 2026"
+		//
+		// 2026 IEM Cologne 2026 CS2 Major Championship Strings Block End
 		// ======================================
+
 
 
 // ---------------------------------------------------------------------------------------------
@@ -35317,8 +35320,6 @@
 		"store_nav_store"		"ΕΡΓΑΛΕΙΑ"
 		"store_nav_popular"		"ΝΕΑ ΚΑΙ ΔΗΜΟΦΙΛΗ"
 		"store_linked_item_tooltip"		"Κάντε κλικ για να δείτε και τις δύο εκδόσεις αυτού του αντικειμένου"
-		"store_nav_more"		"ΠΕΡΙΣΣΟΤΕΡΑ"
-		"store_nav_shop_all"		"ΑΓΟΡΑ ΟΛΩΝ"
 		"store_nav_section_coupon_nightmode2" "Μουσικά κουτιά<br>NIGHTMODE II"
 
 		"StoreCheckout_NoItems"			"Το καλάθι αγορών σας είναι άδειο!"
@@ -36290,6 +36291,7 @@
 		"SFUI_Store_Offer_Days_Remaining_bid:f"		"{daysremaining, plural, one{Απομένει {d:daysremaining} ημέρα για να κάνετε μια προσφορά} other{Απομένουν {d:daysremaining} ημέρες για να κάνετε μια προσφορά}}"
 		"SFUI_Store_Offer_Days_Remaining_last_claim:f"	"Τελευταία ευκαιρία για απόκτηση αυτής της προσφοράς"
 		"SFUI_Store_Offer_Days_Remaining_last_bid:f"	"Τελευταία ευκαιρία για να κάνετε προσφορά"
+
 		"SFUI_Store_Last_Chance"                    "Τελευταία ευκαιρία"
 		"SFUI_Store_Limited_Time_Tagline"           "για απόκτηση αυτής της προσφοράς"
 		"SFUI_Store_Limited_Bid_Tagline"			"για υποβολή προσφοράς"
@@ -36838,7 +36840,6 @@
 		"popup_scrape_sticker_level"		"Επίπεδο ξυσίματος αυτοκόλλητου"
 		"SFUI_Sticker_RemoveImmediate_Desc" "Επιβεβαιώστε ότι θέλετε να αφαιρέσετε αυτό το αυτοκόλλητο από το αντικείμενο. Το αφαιρούμενο αυτοκόλλητο θα καταστραφεί."
 		"SFUI_Sticker_RemoveImmediate_Tooltip" "<b>Πατήστε</b> και <b>κρατήστε το πατημένο</b>, για να αφαιρέσετε το επιλεγμένο αυτοκόλλητο από το αντικείμενο.<br>Το αυτοκόλλητο που αφαιρέθηκε θα καταστραφεί."
-
 		"SFUI_Sticker_Remove_Desc"          "Ξύνοντας περισσότερο αυτό το αυτοκόλλητο θα αφαιρεθεί από το αντικείμενο και θα καταστραφεί." 
 		"SFUI_Patch_Remove"           		"Αφαίρεση διακριτικού"
 		"SFUI_Patch_Remove_Desc"			"Επιβεβαιώστε ότι θέλετε να αφαιρέσετε αυτό το διακριτικό από τον πράκτορά σας. Το αφαιρούμενο διακριτικό θα καταστραφεί." 
@@ -37464,7 +37465,6 @@
 		"CSGO_Fantasy_NoSTickers_In_Table" "Δεν κατέχετε αυτοκόλλητα με αυτόγραφα παικτών για το <b>%s1</b>.\nΜπορείτε να αγοράσετε κάψουλες αυτογράφων ομάδων ή να λάβετε αυτοκόλλητα με αυτόγραφο απευθείας από την αγορά."
 		"major_hub_souvenir_package_desc"	"Κάντε κλικ σε οποιονδήποτε ολοκληρωμένο αγώνα παρακάτω, για να αποκτήσετε ένα Σουβενίρ ή αγοράστε ένα με <span class=\"major-hub-store__souvenir__price\">{s:souvenir_price}</span>"
 		"major_hub_souvenir_package_desc_no_price"	"Κάντε κλικ σε οποιονδήποτε ολοκληρωμένο αγώνα παρακάτω για να αποκτήσετε ένα Σουβενίρ."
-		
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Journal
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -40822,9 +40822,6 @@
 
 		"SFUI_UserAlertNoteType_1"			"Οι διακομιστές σε %s1 αντιμετωπίζουν υψηλό φόρτο."
 		"SFUI_UserAlertNoteType_2"			"Οι διακομιστές σε %s1 είναι εκτός σύνδεσης για συντήρηση."
-		"SFUI_UserAlertNoteType_LowPlayersR:f"	"Μόνο {players} {players, plural, one{συμβατός παίκτης κάνει} other{συμβατοί παίκτες κάνουν}} αναζήτηση σε {region}."
-		"SFUI_UserAlertNoteType_LowPlayersY:f"	"Μόνο {players} {players, plural, one{συμβατός παίκτης κάνει} other{συμβατοί παίκτες κάνουν}} αναζήτηση στην περιοχή σας."
-
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"Αποτυχία σύνδεσης στο παιχνίδι."
 		"SFUI_QMM_ERROR_NotLoggedIn"		"Δεν είστε συνδεδεμένοι στην υπηρεσία εύρεσης παιχνιδιού του Counter-Strike."
 		"SFUI_QMM_ERROR_NotVacVerified"		"Αδυναμία επαλήθευσης της συνεδρίας παιχνιδιού σας από το VAC."
@@ -42811,10 +42808,6 @@
 		"SFUI_ProPlayer_xielo" "Vladislav Lysov"
 		"SFUI_ProPlayer_xkacpersky" "Kacper Gabara"
 		"SFUI_ProPlayer_xotic" "Zack Elshani"
-
-
-
-
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Leaderboards
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -45463,7 +45456,6 @@
 		//Sticker or Patch
 
 		"popup_can_stick_desc"			"Χρήση σε <b> {s:tool_target_name}</b>"
-
 		"popup_can_stick_title_patch" 							"Εφαρμογή διακριτικού"
 		"popup_can_stick_scrape_full_patch"						"Αφαίρεση διακριτικού από <b> {s:tool_target_name}</b>"
 		"popup_can_stick_scrape_patch"							"Ξύσιμο διακριτικού από <b> {s:tool_target_name}</b>"
@@ -45548,8 +45540,7 @@
 		"popup_totool_purchase_header"	"Αγορά"
 		"popup_totool_purchase_header2"	"ΑΓΟΡΑ ΓΙΑ ΑΠΟΚΤΗΣΗ"
 		"popup_totool_decodeable_header_terminal"	"Αποσφράγιση Τερματικού"
-
-		//Purchase
+//Purchase
 		"popup_cartpreview_button"		"Προεπισκόπηση"
 		"popup_cartpreview_title"		"Προεπισκόπηση"
 		"popup_purchase_title"			"Αγορά"
@@ -46242,7 +46233,6 @@
 		"tooltip_inspect_weapon_model"	"Επιθεώρηση μοντέλου όπλου"
 		"tooltip_inspect_weapon_model_faction"	"Επιθεώρηση μοντέλου παίκτη"
 		"tooltip_inspect_play_mvp_anthem"	"Αναπαραγωγή ύμνου MVP"
-
 		"tooltip_lookat_weapon_model"	"Κίνηση επιθεώρησης πρώτου προσώπου"
 		"tooltip_inspect_open_season_stats" "Προβολή στατιστικών σεζόν"
 		
@@ -46386,7 +46376,6 @@
 		"tooltip_prime"								"Ενεργός λογαριασμός Prime"
 
 		"tooltip_demo_highlights_toggle"			"Αναπαραγωγή καλύτερων στιγμών"
-
 		"mainmenu_go_to_character_loadout"			"Προβολή Πράκτορα στην Εξόπλιση"
 		"mainmenu_switch_vanity_to_t"				"Εμφάνιση εξοπλ. πράκτορα Τ"
 		"mainmenu_switch_vanity_to_ct"				"Εμφάνιση εξοπλ. πράκτορα ΑΤ"
@@ -47932,14 +47921,7 @@
 		"pickem_swiss_group_13"									"1:3 – ΑΠΟΚΛΕΙΣΤΗΚΕ"
 		"pickem_swiss_group_23"									"2:3 – ΑΠΟΚΛΕΙΣΤΗΚΕ"
 		"pickem_swiss_group_03"									"0:3 – ΑΠΟΚΛΕΙΣΤΗΚΕ"
-
-
-
-
-
-
-
-		// WATCH EVENTS
+// WATCH EVENTS
 
 		"eventsched_lan"												"Εκδήλωση LAN"
 		"eventsched_online"											"Διαδικτυακή εκδήλωση"
@@ -48743,8 +48725,8 @@
 		"tooltip_short_viewaddon"			"Προβολή προσαρμοσμένου χάρτη"
 		"tooltip_short_kick_player"			"Αποβολή"
 
-// crow_mask_50516_comment
-// crow_mask_50517_comment
+// crow_mask_52326_comment
+// crow_mask_52327_comment
 }
 
 

@@ -5409,10 +5409,6 @@
 		"CSGO_TeamID_142"       "PARIVISION"
 		"CSGO_TeamID_143"       "The Huns"
 		"CSGO_TeamID_144"       "RED Canids"
-
-
-
-
 		"Place_Name_1st"		"Чемпіони"
 		"Place_Name_2nd"		"Фіналісти"
 		"Place_Name_3rd-4th"	"Півфіналісти"
@@ -29460,8 +29456,70 @@
 		"SFUI_MajorEventVenue_StreamTitle_25_2" "Будапешт 2025 — великий турнір від StarLadder — наживо"
 
 		//
-		// 2025 StarLadder Budapest 2025 CS2 Major Championship Strings Block End
+//
+//
+//
+	"CSGO_TournamentPass_cologne2026_store_desc" "Глядацька перепустка, наліпки, автографи та інше"
+
+	"CSGO_TournamentPass_cologne2026" "Глядацька перепустка «Кельн 2026»"
+	"CSGO_TournamentPass_cologne2026_Desc" "Це запечатана глядацька перепустка великого чемпіонату «IEM Кельн 2026». Якщо її відкрити, вона дасть монету «Кельн 2026», яка відстежує ваш поступ упродовж події, а також доступ до прогнозів на турнір, позначок чату Steam.tv, виконання завдань та необмежену кількість командних графіті на час турніру. \n\nПокращити монету «Кельн 2026» можна через виконання завдань. Отримуйте 300 жетонів «Кельн 2026» щоразу, як покращуєте свою монету.\n\n50% коштів, отриманих із продажу цієї перепустки, буде передано гравцям та організаціям, що беруть участь у цьому чемпіонаті."
+	"CSGO_TournamentPass_cologne2026_pack_tinyname" "Перепустка та жетони"
+	"CSGO_TournamentChallenge_cologne2026_activate_pass" "Активуйте свою монету до завершення турніру"
+	"CSGO_TournamentChallenge_cologne2026_contenders_calender" "Зробіть усі десять прогнозів на етап I до його початку"
+	"CSGO_TournamentChallenge_cologne2026_contenders_pickem" "Зробіть п’ять правильних прогнозів на етап I"
+	"CSGO_TournamentChallenge_cologne2026_challengers_calender" "Зробіть усі десять прогнозів на етап II до його початку"
+	"CSGO_TournamentChallenge_cologne2026_challengers_pickem" "Зробіть п’ять правильних прогнозів на етап II"
+	"CSGO_TournamentChallenge_cologne2026_legends_calender" "Зробіть усі десять прогнозів на етап III до його початку"
+	"CSGO_TournamentChallenge_cologne2026_legends_pickem" "Зробіть п’ять правильних прогнозів на етап III"
+	"CSGO_TournamentChallenge_cologne2026_quarterfinals_pickem" "Зробіть два правильні прогнози на чвертьфінали"
+	"CSGO_TournamentChallenge_cologne2026_semifinals_pickem" "Зробіть один правильний прогноз на півфінали"
+	"CSGO_TournamentChallenge_cologne2026_grandfinal_pickem" "Зробіть правильний прогноз на ґранд-фінал"
+
+	"StickerKit_cologne2026_team_navi" "Natus Vincere | Кельн 2026"
+	"StickerKit_cologne2026_team_navi_foil" "Natus Vincere (лискуча) | Кельн 2026"
+	"StickerKit_cologne2026_team_navi_holo" "Natus Vincere (голографічна) | Кельн 2026"
+	"StickerKit_cologne2026_team_navi_gold" "Natus Vincere (золота) | Кельн 2026"
+	"StickerKit_cologne2026_team_astr_foil" "Astralis (лискуча) | Кельн 2026"
+	"StickerKit_cologne2026_team_astr_holo" "Astralis (голографічна) | Кельн 2026"
+	"StickerKit_cologne2026_team_astr_gold" "Astralis (золота) | Кельн 2026"
+	"StickerKit_cologne2026_team_liq" "Team Liquid | Кельн 2026"
+	"StickerKit_cologne2026_team_liq_foil" "Team Liquid (лискуча) | Кельн 2026"
+	"StickerKit_cologne2026_team_liq_holo" "Team Liquid (голографічна) | Кельн 2026"
+	"StickerKit_cologne2026_team_liq_gold" "Team Liquid (золота) | Кельн 2026"
+	"CSGO_crate_sticker_pack_cologne2026_all_tinyname" "Наліпки"
+	"CSGO_crate_sticker_pack_cologne2026_orgs_tinyname" "Командні наліпки"
+	"CSGO_crate_store_pack_cologne2026_signatures_groupname" "Автографи гравців"
+	"CSGO_crate_signature_pack_cologne2026_group_players_tinyname" "Автографи гравців"
+	"StickerKit_cologne2026_signature_apex" "apEX | Кельн 2026"
+	"StickerKit_cologne2026_signature_apex_foil" "apEX (лискуча) | Кельн 2026"
+	"StickerKit_cologne2026_signature_apex_gold" "apEX (золота) | Кельн 2026"
+	"StickerKit_cologne2026_signature_niko" "NiKo | Кельн 2026"
+	"StickerKit_cologne2026_signature_niko_foil" "NiKo (лискуча) | Кельн 2026"
+	"StickerKit_cologne2026_signature_niko_gold" "NiKo (золота) | Кельн 2026"
+	"StickerKit_cologne2026_signature_fallen" "FalleN | Кельн 2026"
+	"StickerKit_cologne2026_signature_fallen_foil" "FalleN (лискуча) | Кельн 2026"
+	"StickerKit_cologne2026_signature_fallen_gold" "FalleN (золота) | Кельн 2026"
+	"StickerKit_cologne2026_signature_snax" "Snax | Кельн 2026"
+	"StickerKit_cologne2026_signature_snax_foil" "Snax (лискуча) | Кельн 2026"
+	"StickerKit_cologne2026_signature_snax_gold" "Snax (золота) | Кельн 2026"
+	"StickerKit_cologne2026_signature_nitro" "nitr0 | Кельн 2026"
+	"StickerKit_cologne2026_signature_nitro_foil" "nitr0 (лискуча) | Кельн 2026"
+	"StickerKit_cologne2026_signature_nitro_gold" "nitr0 (золота) | Кельн 2026"
+	"StickerKit_cologne2026_signature_elige" "EliGE | Кельн 2026"
+	"StickerKit_cologne2026_signature_elige_foil" "EliGE (лискуча) | Кельн 2026"
+	"StickerKit_cologne2026_signature_elige_gold" "EliGE (золота) | Кельн 2026"
+	"StickerKit_cologne2026_signature_naf" "NAF | Кельн 2026"
+	"StickerKit_cologne2026_signature_naf_foil" "NAF (лискуча) | Кельн 2026"
+	"StickerKit_cologne2026_signature_naf_gold" "NAF (золота) | Кельн 2026"
+	"StickerKit_cologne2026_signature_jks" "jks | Кельн 2026"
+	"StickerKit_cologne2026_signature_jks_foil" "jks (лискуча) | Кельн 2026"
+	"StickerKit_cologne2026_signature_jks_gold" "jks (золота) | Кельн 2026"
+	"CSGO_official_leaderboard_pickem_cologne2026_team"	"Змагання прогнозів на «Кельн 2026»"
+		"CSGO_Tournament_Event_Location_26"		"Кельн 2026"
+		//
+		// 2026 IEM Cologne 2026 CS2 Major Championship Strings Block End
 		// ======================================
+
 
 
 // ---------------------------------------------------------------------------------------------
@@ -36916,8 +36974,6 @@
 		"store_nav_store"		"ІНСТРУМЕНТИ"
 		"store_nav_popular"		"НОВЕ І ПОПУЛЯРНЕ"
 		"store_linked_item_tooltip"		"Клацніть, щоби побачити обидві версії предмета."
-		"store_nav_more"		"Більше"
-		"store_nav_shop_all"		"Придбати всі"
 		"store_nav_section_coupon_nightmode2" "Музичні альбоми<br>NIGHTMODE II"
 
 		"StoreCheckout_NoItems"			"Ваш кошик порожній!"
@@ -37913,6 +37969,7 @@
 		"SFUI_Store_Offer_Days_Remaining_bid:f"		"{daysremaining, plural, one{Залишається {d:daysremaining} день, щоб скористатися цією пропозицією} few{Залишається {d:daysremaining} дні, щоб скористатися цією пропозицією} many{Залишається {d:daysremaining} днів, щоб скористатися цією пропозицією} other{Залишається {d:daysremaining} дня, щоб скористатися цією пропозицією}}"
 		"SFUI_Store_Offer_Days_Remaining_last_claim:f"	"Останній шанс скористатися цією пропозицією"
 		"SFUI_Store_Offer_Days_Remaining_last_bid:f"	"Останній шанс зробити ставку на цю пропозицію"
+
 		"SFUI_Store_Last_Chance"                    "Останній шанс"
 		"SFUI_Store_Limited_Time_Tagline"           "скористатися цією пропозицією"
 		"SFUI_Store_Limited_Bid_Tagline"			"для ставки на цю пропозицію"
@@ -38460,10 +38517,10 @@
 		"popup_remove_patch_button"         "Вилучити нашивку"
 		"popup_remove_sticker_button"       "Подряпати наліпку"
 		"popup_remove_sticker_button_negative"  "Здерти наліпку"
+		"popup_remove_sticker_button_negative_wipestickers"  "Прибрати всі наліпки"
 		"popup_scrape_sticker_level"		"Рівень дряпання наліпки"
 		"SFUI_Sticker_RemoveImmediate_Desc" "Підтвердьте бажання вилучити наліпку з предмета. Після цієї дії вона знищиться."
 		"SFUI_Sticker_RemoveImmediate_Tooltip" "<b>Натисніть</b> і <b>утримуйте</b>, щоби вилучити вибрану наліпку з предмета.<br>Вилучена наліпка буде знищена."
-
 		"SFUI_Sticker_Remove_Desc"          "Подальше дряпання наліпки здере її зі зброї, і наліпку буде знищено." 
 		"SFUI_Patch_Remove"           		"Вилучити нашивку"
 		"SFUI_Patch_Remove_Desc"			"Будь ласка, підтвердьте бажання вилучити цю нашивку. Після цієї дії вона знищиться." 
@@ -39090,7 +39147,6 @@
 		"CSGO_Fantasy_NoSTickers_In_Table" "Ви на даний момент не володієте жодною наліпкою з автографом гравців чемпіонату <b>%s1</b>.\nВи можете придбати капсулу з автографом команди, або отримати наліпки з автографом напряму з ринку."
 		"major_hub_souvenir_package_desc"	"Клацніть нижче будь-який завершений матч, щоб отримати сувенір чи придбати його за <span class=\"major-hub-store__souvenir__price\">{s:souvenir_price}</span>"
 		"major_hub_souvenir_package_desc_no_price"	"Клацніть нижче будь-який завершений матч, щоб отримати сувенір."
-		
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Journal
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -42463,9 +42519,6 @@
 
 		"SFUI_UserAlertNoteType_1"			"%s1 — сервери сильно навантажені."
 		"SFUI_UserAlertNoteType_2"			"%s1: сервери вимкнені на технічне обслуговування."
-		"SFUI_UserAlertNoteType_LowPlayersR:f"	"Лише {players} {players, plural, one{сумісний гравець шукає} few {сумісні гравці шукають} many {сумісних гравців шукають} other{сумісного гравця шукає}} матч у регіоні {region}."
-		"SFUI_UserAlertNoteType_LowPlayersY:f"	"Лише {players} {players, plural, one{сумісний гравець шукає} few {сумісні гравці шукають} many {сумісних гравців шукають} other{сумісного гравця шукає}} матч у вашому регіоні."
-
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"Не вдалося підключитися до матчу."
 		"SFUI_QMM_ERROR_NotLoggedIn"		"Не виконано вхід до сервісу пошуку матчів Counter-Strike."
 		"SFUI_QMM_ERROR_NotVacVerified"		"Античіт Valve не зміг перевірити ваш ігровий сеанс."
@@ -43966,7 +44019,6 @@
 		"SFUI_ProPlayer_spaze" "Ivan Obrezhan"
 		"SFUI_ProPlayer_zonic" "Danny Sørensen"
 		"SFUI_ProPlayer_styko" "Мартін Стик"
-		"SFUI_ProPlayer_zero" "Patrik Zudel"
 		"SFUI_ProPlayer_deadfox" "Bence Borocz"
 		"SFUI_ProPlayer_angel" "Kyrylo Karasov"
 		"SFUI_ProPlayer_sixer" "Christophe Xia"
@@ -44236,7 +44288,6 @@
 		"SFUI_ProPlayer_lucaozy"    "Лукас Невес"
 		"SFUI_ProPlayer_pancc"    "Fillipe Martins"
 		"SFUI_ProPlayer_doto"    "Joonas Forss"
-		"SFUI_ProPlayer_bymas"    "Aurimas Pipiras"
 		"SFUI_ProPlayer_nickelback"    "Олексій Трофімов"
 		"SFUI_ProPlayer_ins"    "Джошуа Поттер"
 		"SFUI_ProPlayer_magixx"    "Борислав Воробйов"
@@ -44256,21 +44307,17 @@
 		"SFUI_ProPlayer_exit" "Рафаел Ласерда"
 		"SFUI_ProPlayer_fang" "Justin Coakley"
 		"SFUI_ProPlayer_farlig" "Asger Chen Jensen"
-		"SFUI_ProPlayer_faven" "Josef Baumann"
 		"SFUI_ProPlayer_floppy" "Рікі Кемері"
 		"SFUI_ProPlayer_gxx" "Genc Kolgeci"
 		"SFUI_ProPlayer_imorr" "Ömer Karataş"
-		"SFUI_ProPlayer_jota" "Jhonatan Gaudencio"
 		"SFUI_ProPlayer_jt" "Йоанніс Теодосіу"
 		"SFUI_ProPlayer_juanflatroo" "Flatron Halimi"
 		"SFUI_ProPlayer_junior" "Paytyn Johnson"
 		"SFUI_ProPlayer_kabal" "Batbayar Bat-Enkh"
 		"SFUI_ProPlayer_kensi" "Aleksandr Gurkin"
 		"SFUI_ProPlayer_krimbo" "Карім Мусса"
-		"SFUI_ProPlayer_luken" "Luca Nadotti"
 		"SFUI_ProPlayer_m0nesy" "Ілля Осіпов"
 		"SFUI_ProPlayer_maden" "Pavle Bošković"
-		"SFUI_ProPlayer_max" "Maximiliano González"
 		"SFUI_ProPlayer_nin9" "Єсунтумур Ґантулґин"
 		"SFUI_ProPlayer_norwi" "Evgenii Ermolin"
 		"SFUI_ProPlayer_osee" "Джош Ом"
@@ -44302,7 +44349,6 @@
 		"SFUI_ProPlayer_dav1deus" "Давид Лоренсо Тапія Мальдонадо"
 		"SFUI_ProPlayer_buda" "Nicolás Kramer"
 		"SFUI_ProPlayer_slaxz" "Фріц Дітріх"
-		"SFUI_ProPlayer_launx" "Laurentiu Iulian Tarlea"
 		"SFUI_ProPlayer_staehr" "Віктор Гансен"
 		"SFUI_ProPlayer_mezii" "Вільям Кемерон Меррімен"
 		"SFUI_ProPlayer_fashr" "Dion Derksen"
@@ -44466,10 +44512,6 @@
 		"SFUI_ProPlayer_xielo" "Владислав Лисов"
 		"SFUI_ProPlayer_xkacpersky" "Каспер Ґабара"
 		"SFUI_ProPlayer_xotic" "Зак Ельшані"
-
-
-
-
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Leaderboards
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -47124,7 +47166,6 @@
 		//Sticker or Patch
 
 		"popup_can_stick_desc"			"Застосувати на <b> {s:tool_target_name}</b>"
-
 		"popup_can_stick_title_patch" 							"Застосувати нашивку"
 		"popup_can_stick_scrape_full_patch"						"Вилучити нашивку з <b> {s:tool_target_name}</b>"
 		"popup_can_stick_scrape_patch"							"Здерти нашивку з <b>{s:tool_target_name}</b>"
@@ -47209,8 +47250,7 @@
 		"popup_totool_purchase_header"	"Придбати"
 		"popup_totool_purchase_header2"	"ПРИДБАЙТЕ, ЩОБ ОТРИМАТИ"
 		"popup_totool_decodeable_header_terminal"	"Розпечатати термінал"
-
-		//Purchase
+//Purchase
 		"popup_cartpreview_button"		"Попередній огляд"
 		"popup_cartpreview_title"		"Попередній огляд"
 		"popup_purchase_title"			"Придбати"
@@ -47905,7 +47945,6 @@
 		"tooltip_inspect_weapon_model"	"Оглянути модель зброї"
 		"tooltip_inspect_weapon_model_faction"	"Оглянути модель гравця"
 		"tooltip_inspect_play_mvp_anthem"	"Грати гімн найкращого гравця"
-
 		"tooltip_lookat_weapon_model"	"Анімація огляду від першої особи"
 		"tooltip_inspect_open_season_stats" "Дивитися сезонну статистику"
 		
@@ -48051,7 +48090,6 @@
 		"tooltip_prime"								"Прайм-акаунт увімкнено"
 
 		"tooltip_demo_highlights_toggle"			"Перемкнути на «режим ключових моментів»"
-
 		"mainmenu_go_to_character_loadout"			"Дивитися на агента в спорядженні"
 		"mainmenu_switch_vanity_to_t"				"Показати спорядженого агента Т"
 		"mainmenu_switch_vanity_to_ct"				"Показати спорядженого агента С"
@@ -49643,13 +49681,14 @@
 		"pickem_swiss_group_13"									"1:3 — вибули"
 		"pickem_swiss_group_23"									"2:3 — вибули"
 		"pickem_swiss_group_03"									"0:3 — вибули"
-
-
-
-
-
-
-
+"major_store_sort_alphabetical" "За алфавітом"
+		"major_store_sort_filter"		"Фільтр"
+		"major_store_nav_home"			"Домівка"
+		"major_store_team_stickers-pack"		"Командні наліпки"
+		"major_store_filter_section_type" "Тип"
+		"major_store_filter_type_clear_all" 	"Скинути вибір"
+		"major_store_checkout_total_price"	"Загальна вартість"
+		"major_store_checkout_activate_btn"		"Активувати жетони"
 		// WATCH EVENTS
 
 		"eventsched_lan"												"LAN-турнір"
@@ -50454,8 +50493,8 @@
 		"tooltip_short_viewaddon"			"Переглянути нестандартну мапу"
 		"tooltip_short_kick_player"			"Вигнати"
 
-// crow_mask_50516_comment
-// crow_mask_50517_comment
+// crow_mask_52326_comment
+// crow_mask_52327_comment
 }
 
 

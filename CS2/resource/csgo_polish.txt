@@ -5201,10 +5201,6 @@
 		"CSGO_TeamID_142"       "Parivision"
 		"CSGO_TeamID_143"       "The Huns"
 		"CSGO_TeamID_144"       "RED Canids"
-
-
-
-
 		"Place_Name_1st"		"Mistrzowie"
 		"Place_Name_2nd"		"Finalista"
 		"Place_Name_3rd-4th"	"Półfinalista"
@@ -28413,8 +28409,13 @@
 		"SFUI_MajorEventVenue_StreamTitle_25_2" "Budapeszt 2025 – Mistrzostwa StarLadder – Transmisja na żywo"
 
 		//
-		// 2025 StarLadder Budapest 2025 CS2 Major Championship Strings Block End
+//
+//
+//
+	//
+		// 2026 IEM Cologne 2026 CS2 Major Championship Strings Block End
 		// ======================================
+
 
 
 // ---------------------------------------------------------------------------------------------
@@ -34080,7 +34081,6 @@
 		"store_nav_store"		"NARZĘDZIA"
 		"store_nav_popular"		"NOWE I POPULARNE"
 		"store_linked_item_tooltip"		"Kliknij, aby wyświetlić obie wersje tego przedmiotu."
-		"store_nav_more"		"Zobacz więcej"
 		"StoreCheckout_NoItems"			"Twój koszyk jest pusty!"
 		"StoreCheckout_TooManyItems"	"W koszyku znajduje się zbyt dużo przedmiotów!"
 		"StoreCheckout_Loading"			"Przechodzenie do kasy..."
@@ -35050,6 +35050,7 @@
 		"SFUI_Store_Offer_Days_Remaining_bid:f"		"{daysremaining, plural, one{Pozostał {d:daysremaining} dzień do złożenia oferty} few{Pozostały {d:daysremaining} dni do złożenia oferty} many{Pozostało {d:daysremaining} dni do złożenia oferty} other{Pozostało {d:daysremaining} dnia do złożenia oferty}}"
 		"SFUI_Store_Offer_Days_Remaining_last_claim:f"	"Ostatnia szansa na skorzystanie z tej oferty"
 		"SFUI_Store_Offer_Days_Remaining_last_bid:f"	"Ostatnia szansa na złożenie oferty"
+
 		"SFUI_Store_Last_Chance"                    "Ostatnia szansa"
 		"SFUI_Store_Limited_Time_Tagline"           "do skorzystania z oferty"
 		"SFUI_Store_Limited_Bid_Tagline"			"do złożenia oferty"
@@ -35598,7 +35599,6 @@
 		"popup_scrape_sticker_level"		"Poziom zdrapania naklejki"
 		"SFUI_Sticker_RemoveImmediate_Desc" "Potwierdź, że chcesz usunąć tę naklejkę z przedmiotu. Usunięta naklejka zostanie zniszczona."
 		"SFUI_Sticker_RemoveImmediate_Tooltip" "<b>Wciśnij</b> i <b>przytrzymaj</b>, by usunąć zaznaczoną naklejkę z przedmiotu.<br>Usunięta naklejka zostanie zniszczona."
-
 		"SFUI_Sticker_Remove_Desc"          "Dalsze zdrapywanie naklejki doprowadzi do usunięcia jej z przedmiotu i zniszczenia." 
 		"SFUI_Patch_Remove"           		"Usuń naszywkę"
 		"SFUI_Patch_Remove_Desc"			"Potwierdź, że chcesz usunąć tę naszywkę z twojego agenta. Usunięta naszywka zostanie zniszczona." 
@@ -36224,7 +36224,6 @@
 		"CSGO_Fantasy_NoSTickers_In_Table" "Obecnie nie posiadasz żadnych naklejek z autografami graczy z <b>%s1</b>.\nMożesz kupić pojemniki z autografami drużyn lub nabyć naklejki z autografami bezpośrednio na rynku."
 		"major_hub_souvenir_package_desc"	"Kliknij dowolny zakończony mecz poniżej, by odebrać pamiątkę lub kup ją za <span class=\"major-hub-store__souvenir__price\">{s:souvenir_price}</span>."
 		"major_hub_souvenir_package_desc_no_price"	"Kliknij dowolny zakończony mecz poniżej, by odebrać pamiątkę."
-		
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Journal
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -39554,9 +39553,6 @@
 
 		"SFUI_UserAlertNoteType_1"			"%s1 – serwer znajduje się pod dużym obciążeniem."
 		"SFUI_UserAlertNoteType_2"			"%s1 - serwer wyłączony na czas prac konserwacyjnych."
-		"SFUI_UserAlertNoteType_LowPlayersR:f"	"[{region}] Tylko {players} {players, plural, one{pasujący gracz} few{pasujących graczy} many{pasujących graczy} other{pasującego gracza}} szuka gry w tym regionie."
-		"SFUI_UserAlertNoteType_LowPlayersY:f"	"Tylko {players} {players, plural, one{pasujący gracz} few{pasujących graczy} many{pasujących graczy} other{pasującego gracza}} szuka gry w twoim regionie."
-
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"Nie udało się dołączyć do meczu."
 		"SFUI_QMM_ERROR_NotLoggedIn"		"Nie zalogowano do usługi wyszukiwania gier Counter-Strike."
 		"SFUI_QMM_ERROR_NotVacVerified"		"System VAC nie mógł zweryfikować twojej sesji gry."
@@ -41535,10 +41531,6 @@
 		"SFUI_ProPlayer_xielo" "Władisław Łysow"
 		"SFUI_ProPlayer_xkacpersky" "Kacper Gabara"
 		"SFUI_ProPlayer_xotic" "Zack Elshani"
-
-
-
-
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Leaderboards
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -44185,7 +44177,6 @@
 		//Sticker or Patch
 
 		"popup_can_stick_desc"			"Użyj na: <b> {s:tool_target_name}</b>"
-
 		"popup_can_stick_title_patch" 							"Użyj naszywki"
 		"popup_can_stick_scrape_full_patch"						"Usuń naszywkę z: <b> {s:tool_target_name}</b>"
 		"popup_can_stick_scrape_patch"							"Zerwij naszywkę z: <b> {s:tool_target_name}</b>"
@@ -44270,8 +44261,7 @@
 		"popup_totool_purchase_header"	"Zakup"
 		"popup_totool_purchase_header2"	"ZAKUP, BY ODEBRAĆ"
 		"popup_totool_decodeable_header_terminal"	"Otwórz terminal"
-
-		//Purchase
+//Purchase
 		"popup_cartpreview_button"		"Podgląd"
 		"popup_cartpreview_title"		"Podgląd"
 		"popup_purchase_title"			"Zakup"
@@ -44964,7 +44954,6 @@
 		"tooltip_inspect_weapon_model"	"Zbadaj model broni"
 		"tooltip_inspect_weapon_model_faction"	"Zbadaj model gracza"
 		"tooltip_inspect_play_mvp_anthem"	"Odtwórz hymn MVP"
-
 		"tooltip_lookat_weapon_model"	"Animacja sprawdzania przedmiotów z pierwszej osoby"
 		"tooltip_inspect_open_season_stats" "Zobacz statystyki sezonu"
 		
@@ -45108,7 +45097,6 @@
 		"tooltip_prime"								"Konto ze statusem Prime"
 
 		"tooltip_demo_highlights_toggle"			"Przełącz odtwarzanie najlepszych momentów."
-
 		"mainmenu_go_to_character_loadout"			"Zobacz agenta w wyposażeniu"
 		"mainmenu_switch_vanity_to_t"				"Pokaż wybranego agenta terrorystów"
 		"mainmenu_switch_vanity_to_ct"				"Pokaż wybranego agenta antyterrorystów"
@@ -46630,14 +46618,7 @@
 		"pickem_swiss_group_13"									"1:3 – eliminacja"
 		"pickem_swiss_group_23"									"2:3 – eliminacja"
 		"pickem_swiss_group_03"									"0:3 – eliminacja"
-
-
-
-
-
-
-
-		// WATCH EVENTS
+// WATCH EVENTS
 
 		"eventsched_lan"												"Wydarzenie LAN"
 		"eventsched_online"											"Wydarzenie online"
@@ -47441,8 +47422,8 @@
 		"tooltip_short_viewaddon"			"Zobacz niestandardową mapę"
 		"tooltip_short_kick_player"			"Wyrzuć"
 
-// crow_mask_50516_comment
-// crow_mask_50517_comment
+// crow_mask_52326_comment
+// crow_mask_52327_comment
 }
 
 

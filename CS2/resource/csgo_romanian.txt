@@ -5212,10 +5212,6 @@ Acest trofeu a fost acordat sfertfinaliștilor campionatului de CS:GO ELEAGUE Bo
 		"CSGO_TeamID_142"       "Parivision"
 		"CSGO_TeamID_143"       "The Huns"
 		"CSGO_TeamID_144"       "RED Canids"
-
-
-
-
 		"Place_Name_1st"		"Campioană"
 		"Place_Name_2nd"		"Finalistă"
 		"Place_Name_3rd-4th"	"Semifinalistă"
@@ -28466,8 +28462,13 @@ Colecția Spectrum"
 		"SFUI_MajorEventVenue_StreamTitle_25_2" "Budapest 2025 - Campionat major StarLadder - Transmisiune live"
 
 		//
-		// 2025 StarLadder Budapest 2025 CS2 Major Championship Strings Block End
+//
+//
+//
+	//
+		// 2026 IEM Cologne 2026 CS2 Major Championship Strings Block End
 		// ======================================
+
 
 
 // ---------------------------------------------------------------------------------------------
@@ -34153,8 +34154,6 @@ Colecția Spectrum"
 		"store_nav_store"		"INSTRUMENTE"
 		"store_nav_popular"		"NOI ȘI POPULARE"
 		"store_linked_item_tooltip"		"Vezi ambele versiuni ale acestui obiect"
-		"store_nav_more"		"Vezi mai multe"
-		"store_nav_shop_all"		"Vezi tot"
 		"store_nav_section_coupon_nightmode2" "Pachete muzicale<br>NIGHTMODE II"
 
 		"StoreCheckout_NoItems"			"Coșul de cumpărături este gol!"
@@ -35126,6 +35125,7 @@ Colecția Spectrum"
 		"SFUI_Store_Offer_Days_Remaining_bid:f"		"{daysremaining, plural, one{O zi rămasă de a licita pentru această ofertă} few{{d:daysremaining} zile rămase de a licita pentru această ofertă} other{{d:daysremaining} de zile rămase de a licita pentru această ofertă}}"
 		"SFUI_Store_Offer_Days_Remaining_last_claim:f"	"Ultima șansă de a profita de această ofertă"
 		"SFUI_Store_Offer_Days_Remaining_last_bid:f"	"Ultima șansă de a licita pentru această ofertă"
+
 		"SFUI_Store_Last_Chance"                    "Ultima șansă"
 		"SFUI_Store_Limited_Time_Tagline"           "de a profita de această ofertă"
 		"SFUI_Store_Limited_Bid_Tagline"			"pentru a face o ofertă"
@@ -35675,7 +35675,6 @@ Această cutie conține 17 finisaje de arme create de comunitate din colecția S
 		"popup_scrape_sticker_level"		"Nivelul de răzuire al abțibildului"
 		"SFUI_Sticker_RemoveImmediate_Desc" "Te rugăm să confirmi faptul că vrei să înlături abțibildul acesta de pe obiect. Abțibildul va fi distrus după înlăturare."
 		"SFUI_Sticker_RemoveImmediate_Tooltip" "<b>Apasă</b> și <b>menține apăsat</b> pentru a înlătura abțibildul de pe obiect.<br>Abțibildul va fi distrus după înlăturare."
-
 		"SFUI_Sticker_Remove_Desc"          "Dacă răzuiești în continuare acest abțibild, îl vei șterge de pe obiect și-l vei distruge." 
 		"SFUI_Patch_Remove"           		"Înlătură ecusonul brodat"
 		"SFUI_Patch_Remove_Desc"			"Te rugăm să confirmi faptul că vrei să înlături ecusonul brodat de pe agentul tău. Ecusonul brodat va fi distrus după înlăturare." 
@@ -36305,7 +36304,6 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"CSGO_Fantasy_NoSTickers_In_Table" "În prezent nu deții niciun abțibild cu autografele jucătorilor de la <b>%s1</b>.\nPoți cumpăra capsule cu autografele echipelor sau abțibildurile cu autografe direct din piața comunitară."
 		"major_hub_souvenir_package_desc"	"Apasă clic mai jos pe orice meci încheiat pentru a revendica un suvenir sau a achiziționa unul pentru suma de <span class=\"major-hub-store__souvenir__price\">{s:souvenir_price}</span>."
 		"major_hub_souvenir_package_desc_no_price"	"Apasă clic mai jos pe orice meci încheiat pentru a revendica un suvenir."
-		
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Journal
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -39638,9 +39636,6 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 
 		"SFUI_UserAlertNoteType_1"			"Serverele din %s1 sunt supraîncărcate."
 		"SFUI_UserAlertNoteType_2"			"Serverele din %s1 sunt oprite pentru mentenanță."
-		"SFUI_UserAlertNoteType_LowPlayersR:f"	"{players, plural, one{Doar un jucător compatibil} few {Doar {players} jucători compatibili} other{Doar {players} de jucători compatibili} =0{Niciun jucător compatibil nu}} caută un meci în {region}."
-		"SFUI_UserAlertNoteType_LowPlayersY:f"	"{players, plural, one{Doar un jucător compatibil} few {Doar {players} jucători compatibili} other{Doar {players} de jucători compatibili} =0{Niciun jucător compatibil nu}} caută un meci în regiunea ta."
-
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"Conectarea la meci a eșuat."
 		"SFUI_QMM_ERROR_NotLoggedIn"		"Nu ești conectat la serviciul de matchmaking Counter-Strike."
 		"SFUI_QMM_ERROR_NotVacVerified"		"VAC nu a putut să-ți verifice sesiunea de joc."
@@ -41619,10 +41614,6 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"SFUI_ProPlayer_xielo" "Vladislav Lysov"
 		"SFUI_ProPlayer_xkacpersky" "Kacper Gabara"
 		"SFUI_ProPlayer_xotic" "Zack Elshani"
-
-
-
-
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Leaderboards
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -44269,7 +44260,6 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		//Sticker or Patch
 
 		"popup_can_stick_desc"			"Folosește pe <b> {s:tool_target_name}</b>"
-
 		"popup_can_stick_title_patch" 							"Aplică ecusonul brodat"
 		"popup_can_stick_scrape_full_patch"						"Înlătură un ecuson brodat de pe <b> {s:tool_target_name}</b>"
 		"popup_can_stick_scrape_patch"							"Răzuiește un ecuson brodat de pe <b> {s:tool_target_name}</b>"
@@ -44354,8 +44344,7 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"popup_totool_purchase_header"	"Achiziționează"
 		"popup_totool_purchase_header2"	"ACHIZIȚIONEAZĂ PENTRU A REVENDICA"
 		"popup_totool_decodeable_header_terminal"	"Desigilează terminalul"
-
-		//Purchase
+//Purchase
 		"popup_cartpreview_button"		"Previzualizează"
 		"popup_cartpreview_title"		"Previzualizează"
 		"popup_purchase_title"			"Achiziționează"
@@ -45048,7 +45037,6 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"tooltip_inspect_weapon_model"	"Inspectează modelul de armă"
 		"tooltip_inspect_weapon_model_faction"	"Inspectează modelul de jucător"
 		"tooltip_inspect_play_mvp_anthem"	"Redă imnul MVP"
-
 		"tooltip_lookat_weapon_model"	"Animația de inspectare first-person."
 		"tooltip_inspect_open_season_stats" "Vezi statisticile sezonului"
 		
@@ -45192,7 +45180,6 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"tooltip_prime"								"Cont cu Prime activat"
 
 		"tooltip_demo_highlights_toggle"			"Comută redarea momentelor importante"
-
 		"mainmenu_go_to_character_loadout"			"Vezi agentul în echipamentul activ"
 		"mainmenu_switch_vanity_to_t"				"Afișează agentul T echipat"
 		"mainmenu_switch_vanity_to_ct"				"Afișează agentul CT echipat"
@@ -46737,14 +46724,7 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"pickem_swiss_group_13"									"Eliminate cu 1:3"
 		"pickem_swiss_group_23"									"Eliminate cu 2:3"
 		"pickem_swiss_group_03"									"Eliminate cu 0:3"
-
-
-
-
-
-
-
-		// WATCH EVENTS
+// WATCH EVENTS
 
 		"eventsched_lan"												"Eveniment LAN"
 		"eventsched_online"											"Eveniment online"
@@ -47548,8 +47528,8 @@ Fiecare pronostic corect te aduce cu <b>3</b> puncte mai aproape de trofeul Pick
 		"tooltip_short_viewaddon"			"Vezi harta personalizată"
 		"tooltip_short_kick_player"			"Exclude"
 
-// crow_mask_50516_comment
-// crow_mask_50517_comment
+// crow_mask_52326_comment
+// crow_mask_52327_comment
 }
 
 

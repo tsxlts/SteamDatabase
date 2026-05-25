@@ -5202,10 +5202,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"CSGO_TeamID_142"       "Parivision"
 		"CSGO_TeamID_143"       "The Huns"
 		"CSGO_TeamID_144"       "RED Canids"
-
-
-
-
 		"Place_Name_1st"		"Campeón"
 		"Place_Name_2nd"		"Gran finalista"
 		"Place_Name_3rd-4th"	"Semifinalista"
@@ -28444,8 +28440,13 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"SFUI_MajorEventVenue_StreamTitle_25_2" "Budapest 2025 - Major StarLadder - Retransmisión en directo"
 
 		//
-		// 2025 StarLadder Budapest 2025 CS2 Major Championship Strings Block End
+//
+//
+//
+	//
+		// 2026 IEM Cologne 2026 CS2 Major Championship Strings Block End
 		// ======================================
+
 
 
 // ---------------------------------------------------------------------------------------------
@@ -34111,8 +34112,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"store_nav_store"		"HERRAMIENTAS"
 		"store_nav_popular"		"NUEVOS Y POPULARES"
 		"store_linked_item_tooltip"		"Haz clic para ver las dos versiones de este artículo"
-		"store_nav_more"		"Ver más"
-		"store_nav_shop_all"		"Lista completa"
 		"store_nav_section_coupon_nightmode2" "NIGHTMODE II<br>Kits de música"
 
 		"StoreCheckout_NoItems"			"¡Tu carro de la compra está vacío!"
@@ -35084,6 +35083,7 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"SFUI_Store_Offer_Days_Remaining_bid:f"		"{daysremaining, plural, one{Queda {d:daysremaining} día para pujar por esta oferta} other{Quedan {d:daysremaining} días para pujar por esta oferta}}"
 		"SFUI_Store_Offer_Days_Remaining_last_claim:f"	"Última oportunidad para reclamar esta oferta"
 		"SFUI_Store_Offer_Days_Remaining_last_bid:f"	"Última oportunidad para pujar por esta oferta"
+
 		"SFUI_Store_Last_Chance"                    "Última oportunidad"
 		"SFUI_Store_Limited_Time_Tagline"           "para reclamar esta oferta"
 		"SFUI_Store_Limited_Bid_Tagline"			"para pujar en esta oferta"
@@ -35632,7 +35632,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"popup_scrape_sticker_level"		"Nivel de raspado de la pegatina"
 		"SFUI_Sticker_RemoveImmediate_Desc" "Por favor, confirma que deseas quitar esta pegatina del artículo. La pegatina retirada se destruirá."
 		"SFUI_Sticker_RemoveImmediate_Tooltip" "<b>Pulsa</b> y <b>mantén pulsado</b> para quitar la pegatina seleccionada del artículo.<br>La pegatina que se quite se destruirá."
-
 		"SFUI_Sticker_Remove_Desc"          "Raspar más esta pegatina hará que ésta sea eliminada del artículo y a continuación destruida." 
 		"SFUI_Patch_Remove"           		"Eliminar parche"
 		"SFUI_Patch_Remove_Desc"			"Por favor, confirma que deseas quitar este parche del agente. El parche retirado se destruirá." 
@@ -36258,7 +36257,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"CSGO_Fantasy_NoSTickers_In_Table" "Actualmente no tienes ninguna pegatina autografiada por un jugador de <b>%s1</b>.\nPuedes comprar cápsulas de pegatinas de equipo o conseguir pegatinas autografiadas directamente en el mercado."
 		"major_hub_souvenir_package_desc"	"Haz clic en una partida finalizada de abajo para reclamar o comprar un regalo por <span class=\"major-hub-store__souvenir__price\">{s:souvenir_price}</span>"
 		"major_hub_souvenir_package_desc_no_price"	"Haz clic en cualquier partida finalizada de abajo para reclamar un regalo."
-		
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Journal
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -39591,9 +39589,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 
 		"SFUI_UserAlertNoteType_1"			"Los servidores de %s1 están experimentando un alto nivel de carga."
 		"SFUI_UserAlertNoteType_2"			"Los servidores de %s1 están desconectados por mantenimiento."
-		"SFUI_UserAlertNoteType_LowPlayersR:f"	"Solo hay {players} {players, plural, one{jugador compatible} other{jugadores compatibles}} buscando una partida en {region}."
-		"SFUI_UserAlertNoteType_LowPlayersY:f"	"Solo hay {players} {players, plural, one{jugador compatible} other{jugadores compatibles}} buscando una partida en tu región."
-
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"No se ha podido conectar con la partida."
 		"SFUI_QMM_ERROR_NotLoggedIn"		"No se ha iniciado sesión en el servicio de matchmaking de Counter‑Strike."
 		"SFUI_QMM_ERROR_NotVacVerified"		"VAC no pudo verificar tu sesión de juego."
@@ -41572,10 +41567,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"SFUI_ProPlayer_xielo" "Vladislav Lysov"
 		"SFUI_ProPlayer_xkacpersky" "Kacper Gabara"
 		"SFUI_ProPlayer_xotic" "Zack Elshani"
-
-
-
-
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Leaderboards
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -44222,7 +44213,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		//Sticker or Patch
 
 		"popup_can_stick_desc"			"Usar en <b>{s:tool_target_name}</b>"
-
 		"popup_can_stick_title_patch" 							"Aplicar parche"
 		"popup_can_stick_scrape_full_patch"						"Quitar un parche de <b> {s:tool_target_name}</b>"
 		"popup_can_stick_scrape_patch"							"Raspar un parche de <b> {s:tool_target_name}</b>"
@@ -44307,8 +44297,7 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"popup_totool_purchase_header"	"Comprar"
 		"popup_totool_purchase_header2"	"COMPRAR PARA RECLAMAR"
 		"popup_totool_decodeable_header_terminal"	"Desprecintar terminal"
-
-		//Purchase
+//Purchase
 		"popup_cartpreview_button"		"Previsualizar"
 		"popup_cartpreview_title"		"Vista previa"
 		"popup_purchase_title"			"Comprar"
@@ -45001,7 +44990,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"tooltip_inspect_weapon_model"	"Inspeccionar modelo de arma"
 		"tooltip_inspect_weapon_model_faction"	"Inspeccionar modelo de jugador"
 		"tooltip_inspect_play_mvp_anthem"	"Reproducir el himno de JMV"
-
 		"tooltip_lookat_weapon_model"	"Animación de inspección en primera persona"
 		"tooltip_inspect_open_season_stats" "Ver estadísticas de la temporada"
 		
@@ -45145,7 +45133,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"tooltip_prime"								"Cuenta con Prime activado"
 
 		"tooltip_demo_highlights_toggle"			"Alterna la reproducción de lo más destacado"
-
 		"mainmenu_go_to_character_loadout"			"Ver agente en «Artículos equipados»"
 		"mainmenu_switch_vanity_to_t"				"Mostrar agente T equipado"
 		"mainmenu_switch_vanity_to_ct"				"Mostrar agente AT equipado"
@@ -46667,14 +46654,7 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"pickem_swiss_group_13"									"1:3 - eliminado"
 		"pickem_swiss_group_23"									"2:3 - eliminado"
 		"pickem_swiss_group_03"									"0:3 - eliminado"
-
-
-
-
-
-
-
-		// WATCH EVENTS
+// WATCH EVENTS
 
 		"eventsched_lan"												"Evento LAN"
 		"eventsched_online"											"Evento en línea"
@@ -47478,8 +47458,8 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"tooltip_short_viewaddon"			"Ver mapa personalizado"
 		"tooltip_short_kick_player"			"Expulsar"
 
-// crow_mask_50516_comment
-// crow_mask_50517_comment
+// crow_mask_52326_comment
+// crow_mask_52327_comment
 }
 
 

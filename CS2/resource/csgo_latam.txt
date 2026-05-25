@@ -5202,6 +5202,10 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"CSGO_TeamID_142"       "Parivision"
 		"CSGO_TeamID_143"       "The Huns"
 		"CSGO_TeamID_144"       "RED Canids"
+		"CSGO_TeamID_145"       "FUT"
+		"CSGO_TeamID_146"       "Gaimin Gladiators"
+		"CSGO_TeamID_147"       "Sinners"
+		"CSGO_TeamID_148"       "THUNDER dOWNUNDER"
 
 
 
@@ -28444,8 +28448,16 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"SFUI_MajorEventVenue_StreamTitle_25_2" "Budapest 2025 - Major StarLadder - Retransmisión en directo"
 
 		//
-		// 2025 StarLadder Budapest 2025 CS2 Major Championship Strings Block End
+//
+//
+//
+	"CSGO_TournamentPass_cologne2026" "Pase de espectador de Colonia 2026"
+	"CSGO_TournamentPass_cologne2026_Desc" "Este es un pase de espectador precintado del Campeonato Major de CS2 IEM de Colonia 2026. Una vez abierto, te proporcionará una moneda de Colonia 2026 que registra tu progreso a lo largo del evento, acceso completo al Desafío Pick'Em de Colonia 2026, íconos para el chat de Steam.tv, desafíos de moneda y oportunidades ilimitadas para obtener grafitis en el juego durante todo el evento.\n\nPuedes subir de nivel tu moneda de Colonia 2026 completando desafíos. Obtendrás 300 fichas de Colonia 2026 cada vez que la moneda suba de nivel.\n\nEl 50 % de los ingresos de la venta de este pase se destinará a las organizaciones y jugadores participantes."
+	"CSGO_Tournament_Event_Location_26"		"Colonia 2026"
+		//
+		// 2026 IEM Cologne 2026 CS2 Major Championship Strings Block End
 		// ======================================
+
 
 
 // ---------------------------------------------------------------------------------------------
@@ -34111,8 +34123,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"store_nav_store"		"HERRAMIENTAS"
 		"store_nav_popular"		"NUEVAS Y POPULARES"
 		"store_linked_item_tooltip"		"Haz clic para ver ambas versiones de este objeto"
-		"store_nav_more"		"Ver más"
-		"store_nav_shop_all"		"Lista completa"
 		"store_nav_section_coupon_nightmode2" "NIGHTMODE II<br>Kits de música"
 
 		"StoreCheckout_NoItems"			"¡Tu carrito de compras está vacío!"
@@ -35084,6 +35094,7 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"SFUI_Store_Offer_Days_Remaining_bid:f"		"{daysremaining, plural, one{Queda {d:daysremaining} día para hacer esta oferta} other{Quedan {d:daysremaining} días para hacer esta oferta}}"
 		"SFUI_Store_Offer_Days_Remaining_last_claim:f"	"Última oportunidad para reclamar esta oferta"
 		"SFUI_Store_Offer_Days_Remaining_last_bid:f"	"Última oportunidad para hacer una oferta"
+
 		"SFUI_Store_Last_Chance"                    "Última oportunidad"
 		"SFUI_Store_Limited_Time_Tagline"           "para reclamar esta oferta"
 		"SFUI_Store_Limited_Bid_Tagline"			"Para hacer una oferta"
@@ -35632,7 +35643,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"popup_scrape_sticker_level"		"Nivel de raspado de la calcomanía"
 		"SFUI_Sticker_RemoveImmediate_Desc" "Por favor, confirma que deseas quitar esta calcomanía del artículo. La calcomanía retirada se destruirá."
 		"SFUI_Sticker_RemoveImmediate_Tooltip" "<b>Presiona</b> y <b>mantén presionado</b> para quitar la calcomanía seleccionada del artículo.<br>La calcomanía que se quite se destruirá."
-
 		"SFUI_Sticker_Remove_Desc"          "Raspar más esta calcomanía hará que ésta sea eliminada del objeto y a continuación destruida." 
 		"SFUI_Patch_Remove"           		"Quitar parche"
 		"SFUI_Patch_Remove_Desc"			"Por favor, confirma que deseas quitar este parche de tu agente. Al retirarlo, el parche se destruirá." 
@@ -36258,7 +36268,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"CSGO_Fantasy_NoSTickers_In_Table" "Actualmente no tienes ninguna calcomanía autografiada por un jugador de <b>%s1</b>.\nPuedes comprar cápsulas de calcomanías de equipo o conseguir calcomanías autografiadas directamente en el mercado."
 		"major_hub_souvenir_package_desc"	"Haz clic en cualquiera de las partidas finalizadas a continuación para reclamar un recuerdo o comprar uno por <span class=\"major-hub-store__souvenir__price\">{s:souvenir_price}</span>"
 		"major_hub_souvenir_package_desc_no_price"	"Haz clic en cualquier partida terminada a continuación para reclamar un recuerdo."
-		
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Journal
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -39591,9 +39600,6 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 
 		"SFUI_UserAlertNoteType_1"			"Los servidores de %s1 están experimentando un alto nivel de carga."
 		"SFUI_UserAlertNoteType_2"			"Los servidores de %s1 están desconectados por mantenimiento."
-		"SFUI_UserAlertNoteType_LowPlayersR:f"	"Solo {players} {players, plural, one{jugador compatible} other{jugadores compatibles}} están buscando en {region}."
-		"SFUI_UserAlertNoteType_LowPlayersY:f"	"Solo {players} {players, plural, one{jugador compatible} other{jugadores compatibles}} están buscando en tu región."
-
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"No se ha podido conectar con la partida."
 		"SFUI_QMM_ERROR_NotLoggedIn"		"No has iniciado sesión en el servicio de matchmaking de Counter-Strike."
 		"SFUI_QMM_ERROR_NotVacVerified"		"VAC no pudo verificar tu sesión de juego."
@@ -41073,6 +41079,7 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"SFUI_ProPlayer_zonic" "Danny Sørensen"
 		"SFUI_ProPlayer_styko" "Martin Styk"
 		"SFUI_ProPlayer_zero" "Patrik Zudel"
+		"SFUI_ProPlayer_zerocn" "Su Jingshen"
 		"SFUI_ProPlayer_deadfox" "Bence Borocz"
 		"SFUI_ProPlayer_angel" "Kyrylo Karasov"
 		"SFUI_ProPlayer_sixer" "Christophe Xia"
@@ -41572,6 +41579,33 @@ La predicción del daño puede mejorar la respuesta de los disparos de forma sig
 		"SFUI_ProPlayer_xielo" "Vladislav Lysov"
 		"SFUI_ProPlayer_xkacpersky" "Kacper Gabara"
 		"SFUI_ProPlayer_xotic" "Zack Elshani"
+		"SFUI_ProPlayer_asap" "Tyson Paterson"
+		"SFUI_ProPlayer_azuwu" "Oscar Bell"
+		"SFUI_ProPlayer_beastik" "Sebastian Daňo"
+		"SFUI_ProPlayer_cmtry" "Nikita Samolotov"
+		"SFUI_ProPlayer_dem0n" "Dmytro Myroshnychenko"
+		"SFUI_ProPlayer_doc" "Danilo Barros"
+		"SFUI_ProPlayer_dziugss" "Džiugas Steponavičius"
+		"SFUI_ProPlayer_gafolo" "Victor Andrade"
+		"SFUI_ProPlayer_gizmy" "Jack von Spreckelsen"
+		"SFUI_ProPlayer_gr1ks" "Gleb Gazin"
+		"SFUI_ProPlayer_huasopeek" "Matias Ibañez Hernandez"
+		"SFUI_ProPlayer_hypex" "Milan Polowiec"
+		"SFUI_ProPlayer_kisserek" "Kamil Banak"
+		"SFUI_ProPlayer_koala" "João Pfeffer"
+		"SFUI_ProPlayer_krabeni" "Aulon Fazlija"
+		"SFUI_ProPlayer_maxxkor" "Máximo Cortina"
+		"SFUI_ProPlayer_meyern" "Ignacio Meyer"
+		"SFUI_ProPlayer_modo" "Mădălin-Andrei Mirea"
+		"SFUI_ProPlayer_nilo" "Linus Bergman"
+		"SFUI_ProPlayer_rainwaker" "Aleks Petrov"
+		"SFUI_ProPlayer_rdnzao" "Daniel Monteiro"
+		"SFUI_ProPlayer_ryu" "Gytis Glušauskas"
+		"SFUI_ProPlayer_s1zzi" "Danylo Vinnyk"
+		"SFUI_ProPlayer_shock" "Max Kvapil"
+		"SFUI_ProPlayer_soulfly" "Caner Kesici"
+		"SFUI_ProPlayer_stressarn" "Jordan Manevski"
+		"SFUI_ProPlayer_tjp" "Tynan Purtell"
 
 
 
@@ -44224,7 +44258,6 @@ Tu obtención de EXP de recompensa de misión no volverá a su valor normal hast
 		//Sticker or Patch
 
 		"popup_can_stick_desc"			"Usar en <b>{s:tool_target_name}</b>"
-
 		"popup_can_stick_title_patch" 							"Aplicar parche"
 		"popup_can_stick_scrape_full_patch"						"Quitar un parche de <b>{s:tool_target_name}</b>"
 		"popup_can_stick_scrape_patch"							"Raspar un parche de <b>{s:tool_target_name}</b>"
@@ -44309,8 +44342,7 @@ Tu obtención de EXP de recompensa de misión no volverá a su valor normal hast
 		"popup_totool_purchase_header"	"Adquirir objeto"
 		"popup_totool_purchase_header2"	"COMPRAR PARA RECLAMAR"
 		"popup_totool_decodeable_header_terminal"	"Abrir sello de terminal"
-
-		//Purchase
+//Purchase
 		"popup_cartpreview_button"		"Previsualizar"
 		"popup_cartpreview_title"		"Vista previa"
 		"popup_purchase_title"			"Adquirir objeto"
@@ -45003,7 +45035,6 @@ Tu obtención de EXP de recompensa de misión no volverá a su valor normal hast
 		"tooltip_inspect_weapon_model"	"Inspeccionar modelo de arma"
 		"tooltip_inspect_weapon_model_faction"	"Examinar modelo de jugador"
 		"tooltip_inspect_play_mvp_anthem"	"Reproducir himno de MJ"
-
 		"tooltip_lookat_weapon_model"	"Animación de inspección en primera persona"
 		"tooltip_inspect_open_season_stats" "Ver estadísticas de la temporada"
 		
@@ -45147,7 +45178,6 @@ Tu obtención de EXP de recompensa de misión no volverá a su valor normal hast
 		"tooltip_prime"								"Cuenta con Prime activado"
 
 		"tooltip_demo_highlights_toggle"			"Alterna la reproducción de lo más destacado"
-
 		"mainmenu_go_to_character_loadout"			"Ver Agente en Equipamiento"
 		"mainmenu_switch_vanity_to_t"				"Mostrar agente T equipado"
 		"mainmenu_switch_vanity_to_ct"				"Mostrar agente AT equipado"
@@ -46669,14 +46699,7 @@ Tu obtención de EXP de recompensa de misión no volverá a su valor normal hast
 		"pickem_swiss_group_13"									"1:3 - eliminado"
 		"pickem_swiss_group_23"									"2:3 - eliminado"
 		"pickem_swiss_group_03"									"0:3 - eliminado"
-
-
-
-
-
-
-
-		// WATCH EVENTS
+// WATCH EVENTS
 
 		"eventsched_lan"												"Evento LAN"
 		"eventsched_online"											"Evento en línea"
@@ -47480,8 +47503,8 @@ Tu obtención de EXP de recompensa de misión no volverá a su valor normal hast
 		"tooltip_short_viewaddon"			"Ver mapa personalizado"
 		"tooltip_short_kick_player"			"Expulsar"
 
-// crow_mask_50516_comment
-// crow_mask_50517_comment
+// crow_mask_52326_comment
+// crow_mask_52327_comment
 }
 
 

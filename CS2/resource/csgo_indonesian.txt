@@ -5194,10 +5194,6 @@
 		"CSGO_TeamID_142"       "Parivision"
 		"CSGO_TeamID_143"       "The Huns"
 		"CSGO_TeamID_144"       "RED Canids"
-
-
-
-
 		"Place_Name_1st"		"Juara"
 		"Place_Name_2nd"		"Finalis"
 		"Place_Name_3rd-4th"	"Semifinalis"
@@ -27774,8 +27770,13 @@ melawan FaZe."
 		"SFUI_MajorEventVenue_StreamTitle_25_2" "Budapest 2025 - StarLadder Major - Live Stream"
 
 		//
-		// 2025 StarLadder Budapest 2025 CS2 Major Championship Strings Block End
+//
+//
+//
+	//
+		// 2026 IEM Cologne 2026 CS2 Major Championship Strings Block End
 		// ======================================
+
 
 
 // ---------------------------------------------------------------------------------------------
@@ -33441,8 +33442,6 @@ melawan FaZe."
 		"store_nav_store"		"ALAT"
 		"store_nav_popular"		"BARU & POPULER"
 		"store_linked_item_tooltip"		"Klik untuk melihat kedua versi item ini"
-		"store_nav_more"		"Lihat Lebih Banyak"
-		"store_nav_shop_all"		"Lihat Semua"
 		"store_nav_section_coupon_nightmode2" "Kit Musik<br>NIGHTMODE II"
 
 		"StoreCheckout_NoItems"			"Keranjang belanjamu kosong!"
@@ -34414,6 +34413,7 @@ melawan FaZe."
 		"SFUI_Store_Offer_Days_Remaining_bid:f"		"{d:daysremaining} hari tersisa untuk menawar penawaran ini"
 		"SFUI_Store_Offer_Days_Remaining_last_claim:f"	"Kesempatan terakhir untuk mengeklaim penawaran ini"
 		"SFUI_Store_Offer_Days_Remaining_last_bid:f"	"Kesempatan terakhir untuk menawar penawaran ini"
+
 		"SFUI_Store_Last_Chance"                    "Kesempatan Terakhir"
 		"SFUI_Store_Limited_Time_Tagline"           "Untuk Mendapatkan Penawaran Ini"
 		"SFUI_Store_Limited_Bid_Tagline"			"Untuk Mendapatkan Penawaran Ini"
@@ -34962,7 +34962,6 @@ melawan FaZe."
 		"popup_scrape_sticker_level"		"Level Kikisan Stiker"
 		"SFUI_Sticker_RemoveImmediate_Desc" "Harap konfirmasikan bahwa kamu ingin melepas stiker ini dari item. Stiker yang dilepas akan dihancurkan."
 		"SFUI_Sticker_RemoveImmediate_Tooltip" "<b>Tekan</b> dan <b>tahan</b> untuk melepas stiker yang dipilih dari item.<br>Stiker yang dilepas akan dihancurkan."
-
 		"SFUI_Sticker_Remove_Desc"          "Mengikis stiker lebih dari ini akan membuat stiker terlepas dari item, dan stiker akan dihancurkan." 
 		"SFUI_Patch_Remove"           		"Lepas Patch"
 		"SFUI_Patch_Remove_Desc"			"Harap konfirmasikan bahwa kamu ingin melepas patch ini dari agent. Patch yang dilepas akan dihancurkan." 
@@ -35588,7 +35587,6 @@ melawan FaZe."
 		"CSGO_Fantasy_NoSTickers_In_Table" "Saat ini kamu tidak memiliki <b>%s1</b> stiker tanda tangan pemain sama sekali.\nKamu bisa membeli kapsul tanda tangan tim atau mendapatkan stiker tanda tangan langsung dari pasar komunitas."
 		"major_hub_souvenir_package_desc"	"Klik pertandingan mana pun dari daftar di bawah untuk mengeklaim suvenir atau beli seharga <span class=\"major-hub-store__souvenir__price\">{s:souvenir_price}</span>"
 		"major_hub_souvenir_package_desc_no_price"	"Klik di pertandingan mana pun yang telah selesai dari daftar di bawah untuk mengambil suvenir."
-		
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Journal
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -38919,9 +38917,6 @@ melawan FaZe."
 
 		"SFUI_UserAlertNoteType_1"			"Server di %s1 sedang penuh."
 		"SFUI_UserAlertNoteType_2"			"Server di %s1 sedang offline untuk maintenance."
-		"SFUI_UserAlertNoteType_LowPlayersR:f"	"Hanya {players} {players, plural, other{pemain}} yang kompatibel yang sedang mencari di wilayah {region}."
-		"SFUI_UserAlertNoteType_LowPlayersY:f"	"Hanya {players} {players, plural, other{pemain}} yang kompatibel yang sedang mencari di wilayahmu."
-
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"Gagal terhubung ke pertandingan."
 		"SFUI_QMM_ERROR_NotLoggedIn"		"Belum login ke layanan matchmaking Counter-Strike."
 		"SFUI_QMM_ERROR_NotVacVerified"		"VAC tidak dapat memverifikasi sesi permainanmu."
@@ -40900,10 +40895,6 @@ melawan FaZe."
 		"SFUI_ProPlayer_xielo" "Vladislav Lysov"
 		"SFUI_ProPlayer_xkacpersky" "Kacper Gabara"
 		"SFUI_ProPlayer_xotic" "Zack Elshani"
-
-
-
-
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Leaderboards
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -43550,7 +43541,6 @@ melawan FaZe."
 		//Sticker or Patch
 
 		"popup_can_stick_desc"			"Gunakan pada <b> {s:tool_target_name}</b>"
-
 		"popup_can_stick_title_patch" 							"Tempel Patch"
 		"popup_can_stick_scrape_full_patch"						"Lepas patch dari <b> {s:tool_target_name}</b>"
 		"popup_can_stick_scrape_patch"							"Kikis patch dari <b> {s:tool_target_name}</b>"
@@ -43635,8 +43625,7 @@ melawan FaZe."
 		"popup_totool_purchase_header"	"Beli"
 		"popup_totool_purchase_header2"	"BELI UNTUK MENGEKLAIM"
 		"popup_totool_decodeable_header_terminal"	"Buka Segel Terminal"
-
-		//Purchase
+//Purchase
 		"popup_cartpreview_button"		"Pratinjau"
 		"popup_cartpreview_title"		"Pratinjau"
 		"popup_purchase_title"			"Beli"
@@ -44329,7 +44318,6 @@ melawan FaZe."
 		"tooltip_inspect_weapon_model"	"Periksa model senjata"
 		"tooltip_inspect_weapon_model_faction"	"Periksa model pemain"
 		"tooltip_inspect_play_mvp_anthem"	"Mainkan musik MVP"
-
 		"tooltip_lookat_weapon_model"	"Animasi memeriksa sudut pandang orang pertama"
 		"tooltip_inspect_open_season_stats" "Lihat Statistik Musim"
 		
@@ -44473,7 +44461,6 @@ melawan FaZe."
 		"tooltip_prime"								"Akun dengan status Prime"
 
 		"tooltip_demo_highlights_toggle"			"Beralih ke sorotan"
-
 		"mainmenu_go_to_character_loadout"			"Lihat Agen di Perlengkapan"
 		"mainmenu_switch_vanity_to_t"				"Tampilkan Agen T yang Digunakan"
 		"mainmenu_switch_vanity_to_ct"				"Tampilkan Agen AT yang Digunakan"
@@ -45995,14 +45982,7 @@ melawan FaZe."
 		"pickem_swiss_group_13"									"1:3 - gugur"
 		"pickem_swiss_group_23"									"2:3 - gugur"
 		"pickem_swiss_group_03"									"0:3 - gugur"
-
-
-
-
-
-
-
-		// WATCH EVENTS
+// WATCH EVENTS
 
 		"eventsched_lan"												"Event LAN"
 		"eventsched_online"											"Event Online"
@@ -46806,8 +46786,8 @@ melawan FaZe."
 		"tooltip_short_viewaddon"			"Lihat Map Kustom"
 		"tooltip_short_kick_player"			"Keluarkan"
 
-// crow_mask_50516_comment
-// crow_mask_50517_comment
+// crow_mask_52326_comment
+// crow_mask_52327_comment
 }
 
 

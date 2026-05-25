@@ -5240,6 +5240,10 @@
 		"CSGO_TeamID_142"       "Parivision"
 		"CSGO_TeamID_143"       "The Huns"
 		"CSGO_TeamID_144"       "RED Canids"
+		"CSGO_TeamID_145"       "FUT"
+		"CSGO_TeamID_146"       "Gaimin Gladiators"
+		"CSGO_TeamID_147"       "Sinners"
+		"CSGO_TeamID_148"       "THUNDER dOWNUNDER"
 
 
 
@@ -28985,8 +28989,16 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"SFUI_MajorEventVenue_StreamTitle_25_2" "Boedapest 2025 - StarLadder Major - livestream"
 
 		//
-		// 2025 StarLadder Budapest 2025 CS2 Major Championship Strings Block End
+//
+//
+//
+	"CSGO_TournamentPass_cologne2026" "Toeschouwerspas Keulen 2026"
+	"CSGO_TournamentPass_cologne2026_Desc" "Dit is een verzegelde toeschouwerspas voor het IEM Keulen 2026 CS2 Major-kampioenschap. Zodra deze pas wordt ontzegeld, krijg je de Keulen 2026-munt die je voortgang tijdens het evenement bijhoudt en je volledige toegang geeft tot de Pick'Em-uitdaging voor Keulen 2026, Steam.tv-chatemblemen, muntuitdagingen en onbeperkte graffitiopties in de game tijdens het evenement.\n\nUpgrade je Keulen 2026-munt door muntuitdagingen te voltooien. Elke keer dat je je munt upgradet, verdien je 300 penningen van Keulen 2026.\n\n50% van de opbrengst van de verkoop van deze pas gaat naar de deelnemende spelers en organisaties."
+	"CSGO_Tournament_Event_Location_26"		"Keulen 2026"
+		//
+		// 2026 IEM Cologne 2026 CS2 Major Championship Strings Block End
 		// ======================================
+
 
 
 // ---------------------------------------------------------------------------------------------
@@ -34872,8 +34884,6 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"store_nav_store"		"GEREEDSCHAP"
 		"store_nav_popular"		"NIEUW EN POPULAIR"
 		"store_linked_item_tooltip"		"Klik om beide versies van dit voorwerp te bekijken."
-		"store_nav_more"		"Meer bekijken"
-		"store_nav_shop_all"		"Alles tonen"
 		"store_nav_section_coupon_nightmode2" "Muzieksets<br>NIGHTMODE II"
 
 		"StoreCheckout_NoItems"			"Je winkelwagen is leeg!"
@@ -35845,6 +35855,7 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"SFUI_Store_Offer_Days_Remaining_bid:f"		"{daysremaining, plural, one{Nog {d:daysremaining} dag om te bieden op dit aanbod} other{Nog {d:daysremaining} dagen om te bieden op dit aanbod}}"
 		"SFUI_Store_Offer_Days_Remaining_last_claim:f"	"Laatste kans om dit aanbod te claimen"
 		"SFUI_Store_Offer_Days_Remaining_last_bid:f"	"Laatste kans om te bieden op dit aanbod"
+
 		"SFUI_Store_Last_Chance"                    "Laatste kans"
 		"SFUI_Store_Limited_Time_Tagline"           "om deze aanbieding op te eisen"
 		"SFUI_Store_Limited_Bid_Tagline"			"om op deze aanbieding te bieden"
@@ -36393,7 +36404,6 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"popup_scrape_sticker_level"		"Krasniveau sticker"
 		"SFUI_Sticker_RemoveImmediate_Desc" "Bevestig dat je deze sticker van je voorwerp wilt verwijderen. De verwijderde sticker zal worden vernietigd."
 		"SFUI_Sticker_RemoveImmediate_Tooltip" "<b>Blijf</b> <b>indrukken</b> om de geselecteerde sticker van het voorwerp te verwijderen.<br>De verwijderde sticker wordt weggegooid."
-
 		"SFUI_Sticker_Remove_Desc"          "Als je deze sticker verder schraapt zal het worden verwijderd van het voorwerp en worden vernietigd." 
 		"SFUI_Patch_Remove"           		"Embleem verwijderen"
 		"SFUI_Patch_Remove_Desc"			"Bevestig dat je deze patch van je agent wilt verwijderen. De verwijderde patch zal worden vernietigd." 
@@ -37020,7 +37030,6 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"CSGO_Fantasy_NoSTickers_In_Table" "Je bent op dit moment niet in het bezit van handtekeningstickers van spelers van <b>%s1</b>.\nJe kunt team-handtekeningcapsules kopen of handtekeningstickers direct op de markt verkrijgen."
 		"major_hub_souvenir_package_desc"	"Klik op een van de onderstaande afgelopen wedstrijden om een souvenir op te eisen of te kopen voor <span class=\"major-hub-store__souvenir__price\">{s:souvenir_price}</span>"
 		"major_hub_souvenir_package_desc_no_price"	"Klik op een van de onderstaande afgelopen wedstrijden om een souvenir op te eisen."
-		
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Journal
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -40377,9 +40386,6 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 
 		"SFUI_UserAlertNoteType_1"			"De servers in %s1 ervaren een hoge last."
 		"SFUI_UserAlertNoteType_2"			"Servers in %s1 zijn offline voor onderhoud."
-		"SFUI_UserAlertNoteType_LowPlayersR:f"	"Slechts {players} compatibele {players, plural, one{speler} other{spelers}} in matchmaking in {region}."
-		"SFUI_UserAlertNoteType_LowPlayersY:f"	"Slechts {players} compatibele {players, plural, one{speler} other{spelers}} in matchmaking in jouw regio."
-
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"Verbinden met wedstrijd mislukt."
 		"SFUI_QMM_ERROR_NotLoggedIn"		"Niet ingelogd bij de Counter-Strike-matchmakingservice."
 		"SFUI_QMM_ERROR_NotVacVerified"		"VAC kan je spelsessie niet verifiëren."
@@ -41865,6 +41871,7 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"SFUI_ProPlayer_zonic" "Danny Sørensen"
 		"SFUI_ProPlayer_styko" "Martin Styk"
 		"SFUI_ProPlayer_zero" "Patrik Zudel"
+		"SFUI_ProPlayer_zerocn" "Su Jingshen"
 		"SFUI_ProPlayer_deadfox" "Bence Borocz"
 		"SFUI_ProPlayer_angel" "Kyrylo Karasov"
 		"SFUI_ProPlayer_sixer" "Christophe Xia"
@@ -42364,6 +42371,33 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"SFUI_ProPlayer_xielo" "Vladislav Lysov"
 		"SFUI_ProPlayer_xkacpersky" "Kacper Gabara"
 		"SFUI_ProPlayer_xotic" "Zack Elshani"
+		"SFUI_ProPlayer_asap" "Tyson Paterson"
+		"SFUI_ProPlayer_azuwu" "Oscar Bell"
+		"SFUI_ProPlayer_beastik" "Sebastian Daňo"
+		"SFUI_ProPlayer_cmtry" "Nikita Samolotov"
+		"SFUI_ProPlayer_dem0n" "Dmytro Myroshnychenko"
+		"SFUI_ProPlayer_doc" "Danilo Barros"
+		"SFUI_ProPlayer_dziugss" "Džiugas Steponavičius"
+		"SFUI_ProPlayer_gafolo" "Victor Andrade"
+		"SFUI_ProPlayer_gizmy" "Jack von Spreckelsen"
+		"SFUI_ProPlayer_gr1ks" "Gleb Gazin"
+		"SFUI_ProPlayer_huasopeek" "Matias Ibañez Hernandez"
+		"SFUI_ProPlayer_hypex" "Milan Polowiec"
+		"SFUI_ProPlayer_kisserek" "Kamil Banak"
+		"SFUI_ProPlayer_koala" "João Pfeffer"
+		"SFUI_ProPlayer_krabeni" "Aulon Fazlija"
+		"SFUI_ProPlayer_maxxkor" "Máximo Cortina"
+		"SFUI_ProPlayer_meyern" "Ignacio Meyer"
+		"SFUI_ProPlayer_modo" "Mădălin-Andrei Mirea"
+		"SFUI_ProPlayer_nilo" "Linus Bergman"
+		"SFUI_ProPlayer_rainwaker" "Aleks Petrov"
+		"SFUI_ProPlayer_rdnzao" "Daniel Monteiro"
+		"SFUI_ProPlayer_ryu" "Gytis Glušauskas"
+		"SFUI_ProPlayer_s1zzi" "Danylo Vinnyk"
+		"SFUI_ProPlayer_shock" "Max Kvapil"
+		"SFUI_ProPlayer_soulfly" "Caner Kesici"
+		"SFUI_ProPlayer_stressarn" "Jordan Manevski"
+		"SFUI_ProPlayer_tjp" "Tynan Purtell"
 
 
 
@@ -45015,7 +45049,6 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		//Sticker or Patch
 
 		"popup_can_stick_desc"			"Gebruik op <b> {s:tool_target_name}</b>"
-
 		"popup_can_stick_title_patch" 							"Embleem aanbrengen"
 		"popup_can_stick_scrape_full_patch"						"Verwijder een patch van <b> {s:tool_target_name}</b>"
 		"popup_can_stick_scrape_patch"							"Krab een patch van <b> {s:tool_target_name}</b> af"
@@ -45100,8 +45133,7 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"popup_totool_purchase_header"	"Kopen"
 		"popup_totool_purchase_header2"	"KOPEN OM OP TE EISEN"
 		"popup_totool_decodeable_header_terminal"	"Terminal ontzegelen"
-
-		//Purchase
+//Purchase
 		"popup_cartpreview_button"		"Voorbeeld"
 		"popup_cartpreview_title"		"Voorbeeld"
 		"popup_purchase_title"			"Kopen"
@@ -45794,7 +45826,6 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"tooltip_inspect_weapon_model"	"Wapenmodel bekijken"
 		"tooltip_inspect_weapon_model_faction"	"Spelermodel bekijken"
 		"tooltip_inspect_play_mvp_anthem"	"Overwinningsthema van de beste speler afspelen"
-
 		"tooltip_lookat_weapon_model"	"Animatie bij het bekijken in first-person"
 		"tooltip_inspect_open_season_stats" "Seizoensstatistieken bekijken"
 		
@@ -45938,7 +45969,6 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"tooltip_prime"								"Prime-account"
 
 		"tooltip_demo_highlights_toggle"			"Afspelen van highlights aan/uit"
-
 		"mainmenu_go_to_character_loadout"			"Agent in uitrusting tonen"
 		"mainmenu_switch_vanity_to_t"				"Terrorist met uitrusting tonen"
 		"mainmenu_switch_vanity_to_ct"				"CT-agent met uitrusting tonen"
@@ -47483,14 +47513,7 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"pickem_swiss_group_13"									"1:3 - uitgeschakeld"
 		"pickem_swiss_group_23"									"2:3 - uitgeschakeld"
 		"pickem_swiss_group_03"									"0:3 - uitgeschakeld"
-
-
-
-
-
-
-
-		// WATCH EVENTS
+// WATCH EVENTS
 
 		"eventsched_lan"												"LAN-evenement"
 		"eventsched_online"											"Online evenement"
@@ -48294,8 +48317,8 @@ openhagen 2024-munt.\n\n50% van de opbrengst van de verkoop van deze pas gaat na
 		"tooltip_short_viewaddon"			"Bekijk de aangepaste map"
 		"tooltip_short_kick_player"			"Verwijderen"
 
-// crow_mask_50516_comment
-// crow_mask_50517_comment
+// crow_mask_52326_comment
+// crow_mask_52327_comment
 }
 
 

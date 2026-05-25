@@ -5314,10 +5314,6 @@
 		"CSGO_TeamID_142"       "Parivision"
 		"CSGO_TeamID_143"       "The Huns"
 		"CSGO_TeamID_144"       "RED Canids"
-
-
-
-
 		"Place_Name_1st"		"ผู้ชนะเลิศ"
 		"Place_Name_2nd"		"ผู้เข้ารอบชิงชนะเลิศ"
 		"Place_Name_3rd-4th"	"ผู้เข้ารอบรองชนะเลิศ"
@@ -29215,8 +29211,13 @@
 		"SFUI_MajorEventVenue_StreamTitle_25_2" "Budapest 2025 - เมเจอร์ StarLadder - สตรีมสด"
 
 		//
-		// 2025 StarLadder Budapest 2025 CS2 Major Championship Strings Block End
+//
+//
+//
+	//
+		// 2026 IEM Cologne 2026 CS2 Major Championship Strings Block End
 		// ======================================
+
 
 
 // ---------------------------------------------------------------------------------------------
@@ -35142,8 +35143,6 @@
 		"store_nav_store"		"เครื่องมือ"
 		"store_nav_popular"		"ใหม่และ\nเป็นที่นิยม"
 		"store_linked_item_tooltip"		"คลิกเพื่อดูไอเท็มนี้ทั้งสองเวอร์ชัน"
-		"store_nav_more"		"ดูเพิ่มเติม"
-		"store_nav_shop_all"		"ดูสินค้าทั้งหมด"
 		"store_nav_section_coupon_nightmode2" "ชุดอุปกรณ์เพลง<br>NIGHTMODE II"
 
 		"StoreCheckout_NoItems"			"รถเข็นของคุณว่างเปล่า!"
@@ -36115,6 +36114,7 @@
 		"SFUI_Store_Offer_Days_Remaining_bid:f"		"คงเหลือ {d:daysremaining} วันเพื่อเสนอราคาข้อเสนอนี้"
 		"SFUI_Store_Offer_Days_Remaining_last_claim:f"	"โอกาสสุดท้ายในการรับข้อเสนอนี้"
 		"SFUI_Store_Offer_Days_Remaining_last_bid:f"	"โอกาสสุดท้ายในการเสนอราคาข้อเสนอนี้"
+
 		"SFUI_Store_Last_Chance"                    "โอกาสสุดท้าย"
 		"SFUI_Store_Limited_Time_Tagline"           "หากต้องการรับข้อเสนอนี้"
 		"SFUI_Store_Limited_Bid_Tagline"			"เสนอราคาให้ข้อเสนอนี้"
@@ -36663,7 +36663,6 @@
 		"popup_scrape_sticker_level"		"ระดับรอยขูดสติกเกอร์"
 		"SFUI_Sticker_RemoveImmediate_Desc" "โปรดยืนยันว่าคุณต้องการลบสติกเกอร์นี้ออกจากไอเท็ม สติกเกอร์ที่ถูกลบจะถูกทำลายถาวร"
 		"SFUI_Sticker_RemoveImmediate_Tooltip" "<b>กดค้างไว้</b>เพื่อลบสติกเกอร์ที่เลือกจากไอเท็ม<br>สติกเกอร์ที่ถูกลบจะถูกทำลายทิ้ง"
-
 		"SFUI_Sticker_Remove_Desc"          "การขูดสติกเกอร์นี้มากไปกว่านี้จะเป็นการเอามันออกไปจากไอเท็มและมันจะถูกทำลาย" 
 		"SFUI_Patch_Remove"           		"ถอดแพตช์ปัก"
 		"SFUI_Patch_Remove_Desc"			"กรุณายืนยันว่า คุณต้องการถอดแพตช์ปักนี้ออกจากเจ้าหน้าที่ของคุณ แพตช์ปักที่ถูกถอดออกจะถูกลบทิ้งไปถาวร" 
@@ -37289,7 +37288,6 @@
 		"CSGO_Fantasy_NoSTickers_In_Table" "คุณยังไม่มีสติกเกอร์ลายเซ็นผู้เล่น <b>%s1</b> เลยในขณะนี้ \nคุณสามารถซื้อแคปซูลลายเซ็นทีมหรือซื้อสติกเกอร์ลายเซ็นจากตลาดโดยตรงได้"
 		"major_hub_souvenir_package_desc"	"คลิกแมตช์ที่แข่งขันกันเสร็จแล้วด้านล่างเพื่อรับของที่ระลึกหรือสั่งซื้อในราคา <span class=\"major-hub-store__souvenir__price\">{s:souvenir_price}</span>"
 		"major_hub_souvenir_package_desc_no_price"	"คลิกแมตช์ที่แข่งขันกันเสร็จแล้วด้านล่างเพื่อรับของที่ระลึก"
-		
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Journal
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -40649,9 +40647,6 @@
 
 		"SFUI_UserAlertNoteType_1"			"เซิร์ฟเวอร์ใน %s1 กำลังประสบกับการโหลดอย่างหนัก"
 		"SFUI_UserAlertNoteType_2"			"เซิร์ฟเวอร์ใน %s1 กำลังออฟไลน์เพื่อทำการซ่อมบำรุง"
-		"SFUI_UserAlertNoteType_LowPlayersR:f"	"มี{players, plural, other{ผู้เล่น}}ที่เล่นด้วยกันได้ {players} คนเท่านั้นที่กำลังค้นหาแมตช์ในภูมิภาค {region}"
-		"SFUI_UserAlertNoteType_LowPlayersY:f"	"มี{players, plural, other{ผู้เล่น}}ที่เล่นด้วยกันได้ {players} คนเท่านั้นที่กำลังค้นหาแมตช์ในภูมิภาคของคุณ"
-
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"ล้มเหลวในการเชื่อมต่อไปยังแมตช์"
 		"SFUI_QMM_ERROR_NotLoggedIn"		"ไม่ได้เข้าสู่ระบบไปยังบริการการค้นหาแมตช์ Counter-Strike"
 		"SFUI_QMM_ERROR_NotVacVerified"		"VAC ไม่สามารถยืนยันเซสชันเกมของคุณได้"
@@ -42638,10 +42633,6 @@
 		"SFUI_ProPlayer_xielo" "Vladislav Lysov"
 		"SFUI_ProPlayer_xkacpersky" "Kacper Gabara"
 		"SFUI_ProPlayer_xotic" "Zack Elshani"
-
-
-
-
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Leaderboards
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -45289,7 +45280,6 @@
 		//Sticker or Patch
 
 		"popup_can_stick_desc"			"ใช้กับ <b> {s:tool_target_name}</b>"
-
 		"popup_can_stick_title_patch" 							"ใช้งานแพตช์ปัก"
 		"popup_can_stick_scrape_full_patch"						"ถอดแพตช์ปักออกจาก <b> {s:tool_target_name}</b>"
 		"popup_can_stick_scrape_patch"							"ขูดแพตช์ปักออกจาก <b> {s:tool_target_name}</b>"
@@ -45374,8 +45364,7 @@
 		"popup_totool_purchase_header"	"ซื้อ"
 		"popup_totool_purchase_header2"	"สั่งซื้อเพื่อรับ"
 		"popup_totool_decodeable_header_terminal"	"เปิดผนึกเทอร์มินัล"
-
-		//Purchase
+//Purchase
 		"popup_cartpreview_button"		"ตัวอย่าง"
 		"popup_cartpreview_title"		"ตัวอย่าง"
 		"popup_purchase_title"			"ซื้อ"
@@ -46068,7 +46057,6 @@
 		"tooltip_inspect_weapon_model"	"ตรวจสอบโมเดลอาวุธ"
 		"tooltip_inspect_weapon_model_faction"	"ตรวจสอบโมเดลผู้เล่น"
 		"tooltip_inspect_play_mvp_anthem"	"เล่นเพลงสรรเสริญ MVP"
-
 		"tooltip_lookat_weapon_model"	"แอนิเมชันตรวจสอบในมุมมองบุคคลที่หนึ่ง"
 		"tooltip_inspect_open_season_stats" "ดูสถิติฤดูกาล"
 		
@@ -46212,7 +46200,6 @@
 		"tooltip_prime"								"บัญชีไพรม์ถูกเปิดใช้งาน"
 
 		"tooltip_demo_highlights_toggle"			"สลับการเล่นไฮไลต์"
-
 		"mainmenu_go_to_character_loadout"			"ดูเจ้าหน้าที่ในชุดอุปกรณ์"
 		"mainmenu_switch_vanity_to_t"				"แสดงเจ้าหน้าที่ผู้ก่อการร้ายที่สวมใส่อยู่"
 		"mainmenu_switch_vanity_to_ct"				"แสดงเจ้าหน้าที่หน่วยต่อต้านผู้ก่อการร้ายที่สวมใส่อยู่"
@@ -47756,14 +47743,7 @@
 		"pickem_swiss_group_13"									"1:3 - ตกรอบ"
 		"pickem_swiss_group_23"									"2:3 - ตกรอบ"
 		"pickem_swiss_group_03"									"0:3 - ตกรอบ"
-
-
-
-
-
-
-
-		// WATCH EVENTS
+// WATCH EVENTS
 
 		"eventsched_lan"												"กิจกรรม LAN"
 		"eventsched_online"											"กิจกรรมออนไลน์"
@@ -48567,8 +48547,8 @@
 		"tooltip_short_viewaddon"			"ดูแผนที่แบบกำหนดเอง"
 		"tooltip_short_kick_player"			"เตะ"
 
-// crow_mask_50516_comment
-// crow_mask_50517_comment
+// crow_mask_52326_comment
+// crow_mask_52327_comment
 }
 
 

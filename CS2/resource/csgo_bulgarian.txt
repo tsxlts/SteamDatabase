@@ -5411,10 +5411,6 @@
 		"CSGO_TeamID_142"       "Parivision"
 		"CSGO_TeamID_143"       "The Huns"
 		"CSGO_TeamID_144"       "RED Canids"
-
-
-
-
 		"Place_Name_1st"		"Шампиони"
 		"Place_Name_2nd"		"Гранд финалисти"
 		"Place_Name_3rd-4th"	"Полуфиналисти"
@@ -29470,8 +29466,13 @@
 		"SFUI_MajorEventVenue_StreamTitle_25_2" "Budapest 2025 — StarLadder значителен шампионат — Излъчване на живо"
 
 		//
-		// 2025 StarLadder Budapest 2025 CS2 Major Championship Strings Block End
+//
+//
+//
+	//
+		// 2026 IEM Cologne 2026 CS2 Major Championship Strings Block End
 		// ======================================
+
 
 
 // ---------------------------------------------------------------------------------------------
@@ -36966,8 +36967,6 @@
 		"store_nav_store"		"ИНСТРУМЕНТИ"
 		"store_nav_popular"		"НОВИ И ПОПУЛЯРНИ"
 		"store_linked_item_tooltip"		"Кликнете, за да видите и двете версии на този артикул"
-		"store_nav_more"		"Вижте още"
-		"store_nav_shop_all"		"Пазаруване за всички"
 		"store_nav_section_coupon_nightmode2" "Музикални комплекти<br>NIGHTMODE II"
 
 		"StoreCheckout_NoItems"			"Кошницата Ви е празна!"
@@ -37963,6 +37962,7 @@
 		"SFUI_Store_Offer_Days_Remaining_bid:f"		"{daysremaining, plural, one{{d:daysremaining} оставащ ден за наддаване по тази оферта.} other{{d:daysremaining} оставащи дни за наддаване по тази оферта.}}"
 		"SFUI_Store_Offer_Days_Remaining_last_claim:f"	"Последен шанс да заявите тази оферта"
 		"SFUI_Store_Offer_Days_Remaining_last_bid:f"	"Последен шанс да наддавате за тази оферта"
+
 		"SFUI_Store_Last_Chance"                    "Последен шанс"
 		"SFUI_Store_Limited_Time_Tagline"           "да заявите тази оферта"
 		"SFUI_Store_Limited_Bid_Tagline"			"да наддавате по тази оферта"
@@ -38513,7 +38513,6 @@
 		"popup_scrape_sticker_level"		"Ниво за одраскване на стикера"
 		"SFUI_Sticker_RemoveImmediate_Desc" "Моля, потвърдете, че бихте искали да премахнете този стикер от артикула. Премахнатият стикер ще бъде унищожен."
 		"SFUI_Sticker_RemoveImmediate_Tooltip" "<b>Натиснете</b> и <b>задръжте</b>, за да премахнете избрания стикер от артикула.<br>Премахнатият стикер ще бъде унищожен."
-
 		"SFUI_Sticker_Remove_Desc"          "По-нататъшното одраскване на този стикер ще го премахне от артикула и той ще бъде унищожен." 
 		"SFUI_Patch_Remove"           		"Премахване на нашивка"
 		"SFUI_Patch_Remove_Desc"			"Моля, потвърдете, че бихте искали да премахнете тази нашивка от своя агент. Премахнатата нашивка ще бъде унищожена." 
@@ -39140,7 +39139,6 @@
 		"CSGO_Fantasy_NoSTickers_In_Table" "Понастоящем не притежавате никакви стикери с автографи на играчи от <b>%s1</b>.\nМожете да закупите отборни капсули с автографи или директно вземете стикери от пазара."
 		"major_hub_souvenir_package_desc"	"Кликнете върху някой завършен мач по-долу, така че да заявите или закупите сувенир за <span class=\"major-hub-store__souvenir__price\">{s:souvenir_price}</span>."
 		"major_hub_souvenir_package_desc_no_price"	"Кликнете върху някой завършен мач по-долу, така че да заявите сувенир."
-		
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Journal
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -42703,9 +42701,6 @@ Counter-Strike разполага с четири основни игрални 
 
 		"SFUI_UserAlertNoteType_1"			"Сървърите в региона на %s1 са под голямо натоварване."
 		"SFUI_UserAlertNoteType_2"			"Сървърите в региона на %s1 са извън линия поради профилактика."
-		"SFUI_UserAlertNoteType_LowPlayersR:f"	"Само {players} {players, plural, one{съвместим играч търси} other{съвместими играчи търсят}} в {region}."
-		"SFUI_UserAlertNoteType_LowPlayersY:f"	"Само {players} {players, plural, one{съвместим играч търси} other{съвместими играчи търсят}} в региона Ви."
-
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"Неуспешно свързване към мача."
 		"SFUI_QMM_ERROR_NotLoggedIn"		"Не сте влезли в Counter-Strike услугата за търсене на мачове."
 		"SFUI_QMM_ERROR_NotVacVerified"		"VAC няма възможност да потвърди игралната Ви сесия."
@@ -44706,10 +44701,6 @@ Counter-Strike разполага с четири основни игрални 
 		"SFUI_ProPlayer_xielo" "Владислав Люсов"
 		"SFUI_ProPlayer_xkacpersky" "Кацпер Габара"
 		"SFUI_ProPlayer_xotic" "Зак Елшани"
-
-
-
-
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Leaderboards
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -47364,7 +47355,6 @@ Counter-Strike разполага с четири основни игрални 
 		//Sticker or Patch
 
 		"popup_can_stick_desc"			"Използване върху <b>{s:tool_target_name}</b>"
-
 		"popup_can_stick_title_patch" 							"Прилагане на нашивка"
 		"popup_can_stick_scrape_full_patch"						"Премахване на нашивка от <b>{s:tool_target_name}</b>"
 		"popup_can_stick_scrape_patch"							"Одраскване на нашивка от <b>{s:tool_target_name}</b>"
@@ -47449,8 +47439,7 @@ Counter-Strike разполага с четири основни игрални 
 		"popup_totool_purchase_header"	"Покупка"
 		"popup_totool_purchase_header2"	"ЗАКУПУВАНЕ ЗА ЗАЯВЯВАНЕ"
 		"popup_totool_decodeable_header_terminal"	"Разпечатване на терминал"
-
-		//Purchase
+//Purchase
 		"popup_cartpreview_button"		"Преглед"
 		"popup_cartpreview_title"		"Преглед"
 		"popup_purchase_title"			"Покупка"
@@ -48145,7 +48134,6 @@ Counter-Strike разполага с четири основни игрални 
 		"tooltip_inspect_weapon_model"	"Оглед на оръжейния модел"
 		"tooltip_inspect_weapon_model_faction"	"Оглед на модела за играча"
 		"tooltip_inspect_play_mvp_anthem"	"Пускане на НЦИ химна"
-
 		"tooltip_lookat_weapon_model"	"Анимация за оглед от първо лице"
 		"tooltip_inspect_open_season_stats" "Преглед на статистиките за сезона"
 		
@@ -48291,7 +48279,6 @@ Counter-Strike разполага с четири основни игрални 
 		"tooltip_prime"								"Акаунт с вкл. първостепенен статус"
 
 		"tooltip_demo_highlights_toggle"			"Превключване на отличаването при възпроизвеждане"
-
 		"mainmenu_go_to_character_loadout"			"Преглед на агента в снаряжението"
 		"mainmenu_switch_vanity_to_t"				"Показване на екипирания Т агент"
 		"mainmenu_switch_vanity_to_ct"				"Показване на екипирания КТ агент"
@@ -49883,14 +49870,7 @@ Counter-Strike разполага с четири основни игрални 
 		"pickem_swiss_group_13"									"1:3 — елиминирани"
 		"pickem_swiss_group_23"									"2:3 — елиминирани"
 		"pickem_swiss_group_03"									"0:3 — елиминирани"
-
-
-
-
-
-
-
-		// WATCH EVENTS
+// WATCH EVENTS
 
 		"eventsched_lan"												"Събитие в локална мрежа"
 		"eventsched_online"											"Събитие на линия"
@@ -50704,8 +50684,8 @@ Counter-Strike разполага с четири основни игрални 
 		"tooltip_short_viewaddon"			"Преглед на персонализирана карта"
 		"tooltip_short_kick_player"			"Изритване"
 
-// crow_mask_50516_comment
-// crow_mask_50517_comment
+// crow_mask_52326_comment
+// crow_mask_52327_comment
 }
 
 

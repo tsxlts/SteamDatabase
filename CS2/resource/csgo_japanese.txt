@@ -5214,10 +5214,6 @@
 		"CSGO_TeamID_142"       "Parivision"
 		"CSGO_TeamID_143"       "The Huns"
 		"CSGO_TeamID_144"       "RED Canids"
-
-
-
-
 		"Place_Name_1st"		"優勝者"
 		"Place_Name_2nd"		"決勝進出者"
 		"Place_Name_3rd-4th"	"準決勝進出者"
@@ -27821,8 +27817,13 @@
 		"SFUI_MajorEventVenue_StreamTitle_25_2" "Budapest 2025 - StarLadder Major - ライブ配信"
 
 		//
-		// 2025 StarLadder Budapest 2025 CS2 Major Championship Strings Block End
+//
+//
+//
+	//
+		// 2026 IEM Cologne 2026 CS2 Major Championship Strings Block End
 		// ======================================
+
 
 
 // ---------------------------------------------------------------------------------------------
@@ -33585,8 +33586,6 @@
 		"store_nav_store"		"ツール"
 		"store_nav_popular"		"新作＆人気"
 		"store_linked_item_tooltip"		"クリックしてこのアイテムの両方のバージョンを表示"
-		"store_nav_more"		"続きを見る"
-		"store_nav_shop_all"		"すべて購入"
 		"store_nav_section_coupon_nightmode2" "NIGHTMODE  II <br>ミュージックキット"
 
 		"StoreCheckout_NoItems"			"ショッピングカートは空です！"
@@ -34558,6 +34557,7 @@
 		"SFUI_Store_Offer_Days_Remaining_bid:f"		"このオファーに入札できる期間は残り{d:daysremaining}日間です"
 		"SFUI_Store_Offer_Days_Remaining_last_claim:f"	"このオファーを受け取れるラストチャンスです"
 		"SFUI_Store_Offer_Days_Remaining_last_bid:f"	"このオファーに入札できるラストチャンスです"
+
 		"SFUI_Store_Last_Chance"                    "ラストチャンス"
 		"SFUI_Store_Limited_Time_Tagline"           "オファーを活用しよう"
 		"SFUI_Store_Limited_Bid_Tagline"			"オファーに入札しよう"
@@ -35106,7 +35106,6 @@
 		"popup_scrape_sticker_level"		"ステッカー削りレベル"
 		"SFUI_Sticker_RemoveImmediate_Desc" "このステッカーをアイテムから剥がしてもよいか確認してください。剥がされたステッカーは破棄されます。"
 		"SFUI_Sticker_RemoveImmediate_Tooltip" "<b>長押し</b>で選択したステッカーをアイテムから剥がします。<br>剥がしたステッカーは廃棄されます。"
-
 		"SFUI_Sticker_Remove_Desc"          "さらにこのステッカーを削ると、アイテムから剥がされて破棄されます。" 
 		"SFUI_Patch_Remove"           		"パッチを剥がす"
 		"SFUI_Patch_Remove_Desc"			"このパッチをエージェントから剥がしてもよいか確認してください。剥がされたパッチは破棄されます。" 
@@ -35734,7 +35733,6 @@
 		"CSGO_Fantasy_NoSTickers_In_Table" "現在 <b>%s1</b> 選手のサインステッカーを所有していません。\nマーケットでチームのサインカプセルを購入するかサインステッカーを入手する必要があります。"
 		"major_hub_souvenir_package_desc"	"終了した試合のいずれかをクリックして記念品を受け取るか、<span class=\"major-hub-store__souvenir__price\">{s:souvenir_price}</span>で1個購入しましょう。"
 		"major_hub_souvenir_package_desc_no_price"	"終了した試合のいずれかをクリックして記念品を受け取ろう。"
-		
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Journal
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -39077,9 +39075,6 @@
 
 		"SFUI_UserAlertNoteType_1"			"%s1 のサーバーには高い負荷がかかっています。"
 		"SFUI_UserAlertNoteType_2"			"%s1 のサーバーはメンテナンスのためオフラインになっています。"
-		"SFUI_UserAlertNoteType_LowPlayersR:f"	"{players}人のプレイ可能な{players, plural, other{プレイヤー}}が{region}で検索しています。"
-		"SFUI_UserAlertNoteType_LowPlayersY:f"	"{players}人のプレイ可能な{players, plural, other{プレイヤー}}がお住まいのリージョンで検索しています。"
-
 		"SFUI_QMM_ERROR_NoOngoingMatch"		"マッチへの接続に失敗しました。"
 		"SFUI_QMM_ERROR_NotLoggedIn"		"Counter-Strike マッチメイキングサービスにログインしていません。"
 		"SFUI_QMM_ERROR_NotVacVerified"		"VACはゲームセッションを確認できませんでした。"
@@ -41060,10 +41055,6 @@
 		"SFUI_ProPlayer_xielo" "Vladislav Lysov"
 		"SFUI_ProPlayer_xkacpersky" "Kacper Gabara"
 		"SFUI_ProPlayer_xotic" "Zack Elshani"
-
-
-
-
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Leaderboards
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -43711,7 +43702,6 @@
 		//Sticker or Patch
 
 		"popup_can_stick_desc"			"<b>{s:tool_target_name}</b> に使用"
-
 		"popup_can_stick_title_patch" 							"パッチを適用"
 		"popup_can_stick_scrape_full_patch"						"<b>{s:tool_target_name}</b> のパッチを剥がす"
 		"popup_can_stick_scrape_patch"							"<b>{s:tool_target_name}</b> のパッチを削る"
@@ -43796,8 +43786,7 @@
 		"popup_totool_purchase_header"	"購入"
 		"popup_totool_purchase_header2"	"購入して受け取る"
 		"popup_totool_decodeable_header_terminal"	"ターミナルを開く"
-
-		//Purchase
+//Purchase
 		"popup_cartpreview_button"		"プレビュー"
 		"popup_cartpreview_title"		"プレビュー"
 		"popup_purchase_title"			"購入"
@@ -44490,7 +44479,6 @@
 		"tooltip_inspect_weapon_model"	"武器のモデルを調べる"
 		"tooltip_inspect_weapon_model_faction"	"プレイヤーのモデルを調べる"
 		"tooltip_inspect_play_mvp_anthem"	"MVP 祝歌を再生する"
-
 		"tooltip_lookat_weapon_model"	"一人称視点の確認アニメーション"
 		"tooltip_inspect_open_season_stats" "シーズン戦績を見る"
 		
@@ -44634,7 +44622,6 @@
 		"tooltip_prime"								"プライム有効化済みアカウント"
 
 		"tooltip_demo_highlights_toggle"			"ハイライト再生切り替え"
-
 		"mainmenu_go_to_character_loadout"			"装備画面でエージェントを表示"
 		"mainmenu_switch_vanity_to_t"				"装備済みの T エージェントを表示"
 		"mainmenu_switch_vanity_to_ct"				"装備済みの CT エージェントを表示"
@@ -46161,14 +46148,7 @@
 		"pickem_swiss_group_13"									"1:3 - 敗退"
 		"pickem_swiss_group_23"									"2:3 - 敗退"
 		"pickem_swiss_group_03"									"0:3 - 敗退"
-
-
-
-
-
-
-
-		// WATCH EVENTS
+// WATCH EVENTS
 
 		"eventsched_lan"												"LAN イベント"
 		"eventsched_online"											"オンラインイベント"
@@ -46972,8 +46952,8 @@
 		"tooltip_short_viewaddon"			"カスタムマップを表示する"
 		"tooltip_short_kick_player"			"追放"
 
-// crow_mask_50516_comment
-// crow_mask_50517_comment
+// crow_mask_52326_comment
+// crow_mask_52327_comment
 }
 
 
