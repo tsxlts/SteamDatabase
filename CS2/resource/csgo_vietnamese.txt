@@ -5332,7 +5332,7 @@
 		"CSGO_TeamID_71"		"Immortals"
 		"CSGO_TeamID_72"		"Sprout Esports"
 		"CSGO_TeamID_73"		"Space Soldiers"
-		"CSGO_TeamID_74"		"Tyloo"
+		"CSGO_TeamID_74"		"TYLOO"
 		"CSGO_TeamID_75"		"Avangar"
 		"CSGO_TeamID_76"		"Quantum Bellator Fire"
 		"CSGO_TeamID_77"		"Misfits Gaming"
@@ -5400,9 +5400,17 @@
 		"CSGO_TeamID_139"       "Falcons"
 		"CSGO_TeamID_140"       "M80"
 		"CSGO_TeamID_141"       "Metizport"
-		"CSGO_TeamID_142"       "Parivision"
+		"CSGO_TeamID_142"       "PARIVISION"
 		"CSGO_TeamID_143"       "The Huns"
 		"CSGO_TeamID_144"       "RED Canids"
+		"CSGO_TeamID_145"       "FUT"
+		"CSGO_TeamID_146"       "Gaimin Gladiators"
+		"CSGO_TeamID_147"       "SINNERS"
+		"CSGO_TeamID_148"       "THUNDERdOWNUNDER"
+
+
+
+
 		"Place_Name_1st"		"Quán quân"
 		"Place_Name_2nd"		"Á quân"
 		"Place_Name_3rd-4th"	"Đội lọt vào bán kết"
@@ -29444,9 +29452,20 @@
 		"SFUI_MajorEventVenue_StreamTitle_25_2" "Budapest 2025 - Major StarLadder - Trực tiếp"
 
 		//
+		// 2025 StarLadder Budapest 2025 CS2 Major Championship Strings Block End
+		// ======================================
+
+
+		//
+		// 2026 IEM Cologne 2026 CS2 Major Championship Strings Block Begin
+		// ======================================
+
 //
+// Strings for all team stickers and capsules for Cologne 2026 (auto-generated section)
 //
-//
+	"CSGO_TournamentPass_cologne2026_store_title" "VẬT PHẨM COLOGNE 2026"
+	"CSGO_TournamentPass_cologne2026_store_desc" "Vé xem giải, hình dán, chữ ký và nhiều nữa"
+
 	//
 		// 2026 IEM Cologne 2026 CS2 Major Championship Strings Block End
 		// ======================================
