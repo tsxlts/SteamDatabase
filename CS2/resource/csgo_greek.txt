@@ -14745,10 +14745,6 @@
 	"CSGO_TournamentJournal_katowice2019_Silver" "Ασημένιο νόμισμα Katowice 2019"
 	"CSGO_TournamentJournal_katowice2019_Gold" "Χρυσό νόμισμα Katowice 2019"
 	"CSGO_TournamentJournal_katowice2019_Crystal" "Διαμαντένιο νόμισμα Katowice 2019"
-	"major_hub_pass_desc"  "Παίξτε Pick'Em με ενεργό πάσο για να κερδίσετε Πακέτα Σουβενίρ και να αναβαθμίσετε το Νόμισμα Πρωταθλήματος."
-
-
-
 	"CSGO_TournamentChallenge_katowice2019_activate_pass" "Ενεργοποιήστε το νόμισμά σας πριν λήξει το πρωτάθλημα"
 	"CSGO_TournamentChallenge_katowice2019_challengers_pickem" "Πετύχετε πέντε σωστές προβλέψεις Pick'Em για τη φάση Διεκδικητών"
 	"CSGO_TournamentChallenge_katowice2019_challengers_watchem" "Παρακολουθήστε ζωντανά τουλάχιστον έναν αγώνα κατά τη φάση Διεκδικητών"
@@ -47102,7 +47098,6 @@
 		"popup_title_stattrack_swap"		"Νέα τιμή StatTrak™"
 		"popup_title_quest_reward"			"Ανταμοιβή"
 		"popup_title_xpshopredeem"			"Αποκτήθηκε από το Οπλοστάσιο"
-
 		"popup_control_tooltip_rotate_weapon"		"Σύρετε το ποντίκι για περιστροφή όπλου"
 		"popup_control_tooltip_rotate_sticker"		"Κουνήστε τη ροδέλα του ποντικιού ενώ ο δείκτης βρίσκεται πάνω από ένα αυτοκόλλητο για να το περιστρέψετε"
 		"popup_control_tooltip_move_sticker"		"Κάντε κλικ και σύρετε ένα αυτοκόλλητο για να το μετακινήσετε πάνω στο όπλο"
@@ -47221,12 +47216,13 @@
 		"popup_can_wrap_sticker_button_tooltip"		"<b>Πατήστε</b> και <b>κρατήστε το πατημένο</b>, για να τοποθετήσετε αυτό το αυτοκόλλητο στο καρτελάκι."
 		"popup_can_wrap_sticker_button_negative" "Αφαίρεση τοποθετημένου αυτοκόλλητου"
 		"popup_can_wrap_sticker_button_negative_tooltip" "<b>Πατήστε</b> και <b>κρατήστε το πατημένο</b>, για να αφαιρέσετε το τοποθετημένο αυτοκόλλητο."
-		"popup_craft_souvenir_button"		"Μετατροπή σε Σουβενίρ"
+		"popup_craft_souvenir_button"				"Μετατροπή σε Σουβενίρ"
 		"popup_craft_souvenir_button_wipestickers"	"Αφαίρεση όλων των αυτοκόλλητων που εφαρμόστηκαν προηγουμένως"
-		"popup_craft_souvenir_button_spend"		"Μετατροπή σε Σουβενίρ {d:cost_souvenir} <img src='file://{images}/icons/ui/major_coin.svg' class='inline-coin-icon'/>"
+		"popup_craft_souvenir_button_spend"			"Μετατροπή σε Σουβενίρ {d:cost_souvenir} <img src='file://{images}/icons/ui/major_coin.svg' class='inline-coin-icon'/>"
 		"popup_craft_souvenir_button_tooltip"		"<b>Πατήστε</b> και <b>κρατήστε το πατημένο</b> για να μετατρέψετε αυτό το αντικείμενο μόνιμα σε Σουβενίρ."
+		"popup_craft_souvenir_reciept_total"		"Σύνολο"
 		"popup_craft_souvenir_player_tooltip"		"Επιλέξτε το αυτόγραφο παίκτη για το Σουβενίρ σας"
-		"popup_can_sticker_button"			"Εφαρμογή αυτοκόλλητου {d:sticker_count}/{d:max_stickers}"
+		"popup_can_sticker_button"					"Εφαρμογή αυτοκόλλητου {d:sticker_count}/{d:max_stickers}"
 
 		//Decodable
 		"popup_decodeable_xray_title"			"Προεπισκόπηση κιβωτίου"
@@ -50547,8 +50543,8 @@
 		"tooltip_short_viewaddon"			"Προβολή προσαρμοσμένου χάρτη"
 		"tooltip_short_kick_player"			"Αποβολή"
 
-// crow_mask_52331_comment
-// crow_mask_52332_comment
+// crow_mask_52337_comment
+// crow_mask_52338_comment
 }
 
 

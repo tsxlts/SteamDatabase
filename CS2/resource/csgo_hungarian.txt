@@ -5926,7 +5926,7 @@
 
 //////////////////
 
-	"csgo_thousands_separator"			" " // Note: This only supports , and .
+	"csgo_thousands_separator"			"  " // Note: This only supports , and .
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -14322,7 +14322,7 @@
 	"CSGO_TournamentJournal_katowice2019_Gold" "Katowice 2019 Arany Érme"
 	"CSGO_TournamentJournal_katowice2019_Crystal" "Katowice 2019 Gyémánt Érme"
 	"major_hub_pass_desc"  "Játssz Válassz! Kihívást aktív belépővel emlékcsomagok szerzéséhez és a bajnoksági érme fejlesztéséhez."
-
+	"major_hub_pass_desc_2"  "Játssz Válassz! Kihívást aktív belépővel a bajnoksági érme fejlesztéséhez és az emléktárgyak és matricák vásárlására használható Major zsetonok megszerzéséhez."
 
 
 	"CSGO_TournamentChallenge_katowice2019_activate_pass" "Aktiváld érmédet a bajnokság vége előtt"
@@ -37772,6 +37772,7 @@
 		"CSGO_Watch_External_Stream"		"Nézés a webböngésződben"
 		"CSGO_Watch_External_YouTube"		"YouTube"
 		"CSGO_Watch_External_Bilibili"		"Bilibili"
+		"CSGO_Watch_External_Douyu"			"Douyu"
 		"CSGO_Watch_External_Twitch"		"Twitch"
 		"CSGO_Watch_External_FaceIT"		"FaceIT"
 		"CSGO_Watch_External_SteamTV"		"Steam.tv"
@@ -46269,6 +46270,7 @@
 		"popup_title_stattrack_swap"		"Új StatTrak™ érték"
 		"popup_title_quest_reward"			"Jutalom"
 		"popup_title_xpshopredeem"			"Fegyvertárból kapva"
+		"popup_souviner_discount"			"-{d:discount}%"
 
 		"popup_control_tooltip_rotate_weapon"		"Húzd az egeret a fegyver forgatásához."
 		"popup_control_tooltip_rotate_sticker"		"Görgess az egérgörgővel matricára mutatáskor az elforgatásához."
@@ -46387,12 +46389,16 @@
 		"popup_can_wrap_sticker_button_tooltip"		"<b>Tartsd nyomva</b> e matrica bezárásához a tartóba."
 		"popup_can_wrap_sticker_button_negative" "Bezárt matrica kivétele"
 		"popup_can_wrap_sticker_button_negative_tooltip" "<b>Tartsd nyomva</b> a bezárt matrica kivételéhez."
-		"popup_craft_souvenir_button"		"Emléktárggyá alakítás"
+		"popup_craft_souvenir_button"				"Emléktárggyá alakítás"
 		"popup_craft_souvenir_button_wipestickers"	"Összes korábban felragasztott matrica eltávolítása"
-		"popup_craft_souvenir_button_spend"		"Emléktárggyá alakítás: {d:cost_souvenir} <img src='file://{images}/icons/ui/major_coin.svg' class='inline-coin-icon'/>"
+		"popup_craft_souvenir_button_spend"			"Emléktárggyá alakítás: {d:cost_souvenir} <img src='file://{images}/icons/ui/major_coin.svg' class='inline-coin-icon'/>"
 		"popup_craft_souvenir_button_tooltip"		"<b>Nyomd le</b>, és <b>tartsd nyomva</b> e tárgy véglegesen emléktárggyá alakításához."
+		"popup_craft_souvenir_reciept"				"Árlebontás"
+		"popup_craft_souvenir_reciept_total"		"Végösszeg"
+		"popup_craft_souvenir_reciept_discount"		"Fegyverritkasági kedvezmény"
+		"popup_craft_souvenir_reciept_your_price"	"A te árad"
 		"popup_craft_souvenir_player_tooltip"		"Játékos-aláírás kiválasztása az emléktárgyadhoz"
-		"popup_can_sticker_button"			"Matrica alkalmazása ({d:sticker_count}/{d:max_stickers})"
+		"popup_can_sticker_button"					"Matrica alkalmazása ({d:sticker_count}/{d:max_stickers})"
 
 		//Decodable
 		"popup_decodeable_xray_title"			"Tároló-előnézet"
@@ -49711,8 +49717,8 @@
 		"tooltip_short_viewaddon"			"Egyedi pálya megnézése"
 		"tooltip_short_kick_player"			"Kirúgás"
 
-// crow_mask_52331_comment
-// crow_mask_52332_comment
+// crow_mask_52337_comment
+// crow_mask_52338_comment
 }
 
 

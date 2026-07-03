@@ -13986,10 +13986,6 @@
 	"CSGO_TournamentJournal_katowice2019_Silver" "Silvermynt för Katowice 2019"
 	"CSGO_TournamentJournal_katowice2019_Gold" "Guldmynt för Katowice 2019"
 	"CSGO_TournamentJournal_katowice2019_Crystal" "Diamantmynt för Katowice 2019"
-	"major_hub_pass_desc"  "Spela Pick'Em med ett aktivt pass för att tjäna souvenirpaket och uppgradera mästerskapmyntet"
-
-
-
 	"CSGO_TournamentChallenge_katowice2019_activate_pass" "Aktivera ditt mynt innan turneringen är slut"
 	"CSGO_TournamentChallenge_katowice2019_challengers_pickem" "Få fem korrekta Pick'Em-förutsägelser för utmanaretappen"
 	"CSGO_TournamentChallenge_katowice2019_challengers_watchem" "Se minst en direktsänd match under utmanaretappen"
@@ -45931,7 +45927,6 @@ Om samma match redan laddats ner lokalt och filen blivit förstörd, radera då 
 		"popup_title_stattrack_swap"		"Nytt StatTrak™-värde"
 		"popup_title_quest_reward"			"Belöning"
 		"popup_title_xpshopredeem"			"Mottaget från vapenförrådet"
-
 		"popup_control_tooltip_rotate_weapon"		"Dra musen för att rotera vapnet"
 		"popup_control_tooltip_rotate_sticker"		"Skrolla med mushjulet medan du håller muspekaren över ett klistermärke för att rotera det"
 		"popup_control_tooltip_move_sticker"		"Klicka och dra ett klistermärke för att flytta det på vapnet"
@@ -46049,12 +46044,12 @@ Om samma match redan laddats ner lokalt och filen blivit förstörd, radera då 
 		"popup_can_wrap_sticker_button_tooltip"		"<b>Tryck</b> och <b>håll</b> för att försegla klistermärket i fodralet."
 		"popup_can_wrap_sticker_button_negative" "Ta ut förseglat klistermärke"
 		"popup_can_wrap_sticker_button_negative_tooltip" "<b>Tryck</b> och <b>håll</b> för att ta ut förseglat klistermärke."
-		"popup_craft_souvenir_button"		"Omvandla till souvenir"
+		"popup_craft_souvenir_button"				"Omvandla till souvenir"
 		"popup_craft_souvenir_button_wipestickers"	"Ta bort alla applicerade klistermärken"
-		"popup_craft_souvenir_button_spend"		"Omvandla till souvenir {d:cost_souvenir} <img src='file://{images}/icons/ui/major_coin.svg' class='inline-coin-icon'/>"
+		"popup_craft_souvenir_button_spend"			"Omvandla till souvenir {d:cost_souvenir} <img src='file://{images}/icons/ui/major_coin.svg' class='inline-coin-icon'/>"
 		"popup_craft_souvenir_button_tooltip"		"<b>Tryck</b> och <b>håll</b> för att permanent omvandla det här föremålet till en souvenir."
 		"popup_craft_souvenir_player_tooltip"		"Välj en spelarautograf till souveniren"
-		"popup_can_sticker_button"			"Applicera klistermärke {d:sticker_count}/{d:max_stickers}"
+		"popup_can_sticker_button"					"Applicera klistermärke {d:sticker_count}/{d:max_stickers}"
 
 		//Decodable
 		"popup_decodeable_xray_title"			"Förhandsvisning av behållare"
@@ -49375,8 +49370,8 @@ Om samma match redan laddats ner lokalt och filen blivit förstörd, radera då 
 		"tooltip_short_viewaddon"			"Visa anpassad bana"
 		"tooltip_short_kick_player"			"Sparka ut"
 
-// crow_mask_52331_comment
-// crow_mask_52332_comment
+// crow_mask_52337_comment
+// crow_mask_52338_comment
 }
 
 
