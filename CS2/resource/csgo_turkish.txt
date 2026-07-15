@@ -31251,6 +31251,7 @@ Bu çıkartma, forZe eSports için Berlin 2019'da oynayan profesyonel oyuncu And
 		"StickerKit_auto_racing_paper_bhop_hydraulics"							"Bunnyhop Hydraulics"
 		"StickerKit_auto_racing_paper_blaze_breeze"								"Alev Esintisi"
 		"StickerKit_auto_racing_paper_bomb_on_board"							"Sırtımda Bomba Var"
+		"StickerKit_auto_racing_paper_defusal_sprint"							"Tez İmha"
 		"StickerKit_auto_racing_paper_killometer"								"Kilometre"
 		"StickerKit_auto_racing_paper_run_boost"								"Koşarak Destekli Zıplama Kitleri"
 		"StickerKit_auto_racing_paper_sand_dune_baja_tour"						"Kumul Baja Turu"
@@ -47372,7 +47373,7 @@ Bu kasa Yaban Ateşi Koleksiyonu'ndan 16 adet topluluk yapımı silah tasarımı
 
 		"practicesettings_title"				"Seçenekler"
 
-		"practicesettings_grenades_tooltip"			"<b>Etkinleştirildiğinde</b>, el bombasının düşeceği konumu an be an gösterir ve el bombasının gittiği yolu parlak biz çizgiyle belirtir."
+		"practicesettings_grenades_tooltip"			"<b>Etkinleştirildiğinde</b>, el bombasının düşeceği konumu an be an gösterir ve el bombasının gittiği yolu parlak bir çizgiyle belirtir."
 		"practicesettings_grenades_button"			"El Bombası Kamerası"
 		"practicesettings_infammo_tooltip"			"<b>Etkinleştirildiğinde</b>, silahlar mermi tüketmez ve şarjörlerinin dolmasına gerek olmaz."
 		"practicesettings_infammo_button"			"Sınırsız Mermi"
